@@ -1082,7 +1082,7 @@
               </div>
             </div>
             <div class="color">
-              <div class="color-overview c-black-background p-t-3 p-r-5 p-b-3 p-l-5">
+              <div class="color-overview c-background-black p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$black</span>
                 <span class="hex f-small f-inverted">#000000</span>
               </div>
