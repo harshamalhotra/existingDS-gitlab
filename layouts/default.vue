@@ -34,8 +34,7 @@
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/layout/')">
           <summary class="nav-sidebar__section-summary">Layout</summary>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/layout/spacing">Spacing</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/layout/baseline-grid">Baseline grid</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/layout/responsive-ui">Responsive UI</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/layout/grid">Grid</nuxt-link>
         </details>
 
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/components/')">
