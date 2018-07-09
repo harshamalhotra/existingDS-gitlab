@@ -3,7 +3,7 @@
     <div class="md">
       <h1>Personas</h1>
     </div>
-    <div class="persona card m-b-8">
+    <div class="persona card m-b-8 m-t-6">
       <div class="card--header">
         <h2>Nazim Ahmad</h2>
       </div>
