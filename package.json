@@ -21,7 +21,8 @@
     "webpack": "^3.10.0"
   },
   "scripts": {
-    "start": "PORT=2018 nuxt",
-    "build": "NODE_ENV=production nuxt generate"
+    "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
+    "build": "NODE_ENV=production nuxt generate",
+    "test": "true"
   }
 }
