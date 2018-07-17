@@ -9,7 +9,7 @@
       <h3>Labels</h3>
       <p>Label positioning rules are the same as they are for forms. They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.</p>
       <p class="todo">Todo: Add live component block with code example (whitespace exmple)</p>
-      <p>Labels for the options need to be as short as possible and should only be one word whenever possible. Sometimes, that can be done by removing the repeating word in the options and using it as an outside label. For example, instead of having options “Show whitespace” and “Hide whitespace” use “Whitespace” as a label and only “Show” and “Hide” as options.</p>
+      <p>Labels for the options need to be as short as possible and should ideally be only one word. Sometimes, that can be done by removing the repeating word in the options and using it as an outside label. For example, instead of having options “Show whitespace” and “Hide whitespace” use “Whitespace” as a label and only “Show” and “Hide” as options.</p>
       <p>The outside label can be omitted in cases when it’s clear what the segmented control is referring to from the UI (for example, switching between a day, week or month view in a calendar UI).</p>
       <h3>Sizing</h3>
       <p>The options must be equal in width and prominence. If there are 3 options, each of them should take 33% of the total width of segmented control.</p>
