@@ -31,6 +31,11 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/cursors">Cursors</nuxt-link>
         </details>
 
+        <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/interaction/')">
+          <summary class="nav-sidebar__section-summary">Interaction</summary>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/interaction/drag-drop">Drag and drop</nuxt-link>
+        </details>
+
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/layout/')">
           <summary class="nav-sidebar__section-summary">Layout</summary>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/layout/spacing">Spacing</nuxt-link>
