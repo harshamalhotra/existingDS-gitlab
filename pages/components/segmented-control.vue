@@ -15,7 +15,7 @@
       <p>The options must be equal in width and prominence. If there are 3 options, each of them should take 33% of the total width of segmented control.</p>
       <h2>Design specification</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
-      <a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/segmented-control-spec-previews/">Sketch Measure Preview for the Date picker</a>
+      <a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/segmented-control-spec-previews/">Sketch Measure Preview for the Segmented control</a>
       <h2>Related patterns</h2>
       <ul>
         <li><a href="/components/buttons">Buttons</a></li>
