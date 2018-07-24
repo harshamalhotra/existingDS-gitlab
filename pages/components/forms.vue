@@ -50,8 +50,8 @@
       <p>We default to active buttons in forms and only disable them once clicked to avoid the possibility of submitting the form twice.</p>
       <p class="todo">Todo: Add live component block with code example (form button)</p>
       <h4>Required information</h4>
-      <p>We default to all information being optional unless stated otherwise (with "(Required)" added to the label of the corresponding input field).</p>
-      <p class="todo">Todo: Add live component block with code example (required)</p>
+      <p>We default to all information being required unless stated otherwise with "(Optional)" added to the label of the corresponding input field.</p>
+      <p class="todo">Todo: Add live component block with code example (optional)</p>
       <h3 id="help-text">Help text</h3>
       <p>Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word.</p>
       <p class="todo">Todo: Add live component block with code example (help text)</p>
