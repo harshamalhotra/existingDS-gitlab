@@ -48,7 +48,7 @@
       <p class="todo">Todo: Add live component block with code example (error state + message)</p>
       <h4>Form buttons</h4>
       <p>We don’t disable buttons as a form of validating forms. We default to active buttons in forms and disable them once clicked to avoid the possibility of submitting the form twice.</p>
-      <p>Disabling buttons by default can still make sense in some cases. Editing existing information in settings pages is a good example. In such cases, the buttons can be disabled by default but get enabled once a change has been made by the user. The change in the state of the button indicates the need for saving the changes and shouldn’t be tied to whether the information in the form is valid or not.</p>
+      <p>Disabling buttons by default can still make sense in some cases. Editing existing information within a form is a good example. In such cases, buttons are disabled by default and become enabled once a change has been made by the user. The state change indicates the need for saving the changes and shouldn’t be tied to whether the information in the form is valid or not.</p>
       <p class="todo">Todo: Add live component block with code example (form button)</p>
       <h4>Required information</h4>
       <p>We default to all information being required unless stated otherwise with "(Optional)" added to the label of the corresponding input field.</p>
