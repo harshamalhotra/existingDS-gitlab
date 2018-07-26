@@ -70,9 +70,7 @@
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/regions/')">
           <summary class="nav-sidebar__section-summary">Regions</summary>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/regions/empty-states">Empty states</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/regions/filters">Filters</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/regions/navigation">Navigation</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/regions/search">Search</nuxt-link>
         </details>
 
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/content/')">
