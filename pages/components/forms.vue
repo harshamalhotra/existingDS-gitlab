@@ -47,7 +47,8 @@
       <p>The error message shows up below the input field in error state and should be helpful and contextual, not generic. If there’s Help text below the input field, an error pushes it further down as it needs to show up immediately after the input.</p>
       <p class="todo">Todo: Add live component block with code example (error state + message)</p>
       <h4>Form buttons</h4>
-      <p>We default to active buttons in forms and only disable them once clicked to avoid the possibility of submitting the form twice.</p>
+      <p>We don’t disable buttons as a form of validating forms. We default to active buttons in forms and disable them once clicked to avoid the possibility of submitting the form twice.</p>
+      <p>Disabling buttons by default can still make sense in some cases. Editing existing information within a form is a good example. In such cases, buttons are disabled by default and become enabled once a change has been made by the user. The state change indicates the need for saving the changes and shouldn’t be tied to whether the information in the form is valid or not.</p>
       <p class="todo">Todo: Add live component block with code example (form button)</p>
       <h4>Required information</h4>
       <p>We default to all information being required unless stated otherwise with "(Optional)" added to the label of the corresponding input field.</p>
