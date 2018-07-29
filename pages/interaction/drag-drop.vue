@@ -10,7 +10,7 @@
         <li><strong>Non-draggable</strong> items look like a plain list.</li>
       </ul>
 
-      <p>Use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="_blank">system cursors</a> to indicate when an element is draggable. The <code>grab</code> cursor appears on hover when an element is draggable. Once it’s dragged, the cursor will change to <code>grabbing</code>. For areas where an element cannot be dropped, use the <code>not-allowed</code> cursor.
+      <p>Use <a href="/styles/cursors">system cursors</a> to indicate when an element is draggable. The <code>grab</code> cursor appears on hover when an element is draggable. Once it’s dragged, the cursor will change to <code>grabbing</code>. For areas where an element cannot be dropped, use the <code>not-allowed</code> cursor.
 
       <h2>Usage</h2>
       <p>This interaction model is used to transform the position of elements. Usually, these are items in collections with other similar items. When moving items across collections, the collections should be similar in content.</p>
