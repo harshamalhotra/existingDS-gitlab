@@ -20,6 +20,8 @@
       <p class="todo">Todo: Add live component block with code example (search by confirmation with history dropdown)</p>
       <h3 id="placeholder">Placeholder</h3>
       <p>Placeholder should either be a generic “Search” or a more specific ”Search projects”. “Filter” can also be used, depending on the use case in question. Words “Search” and “Filter” are exclusive and can’t be used in conjunction. The search patterns are one of those exceptions where the input field labels aren’t present at all. Because of that, a placeholder should always be there to clearly indicate to users that this is a search box.</p>
+      <h3>Positioning</h3>
+      <p>It’s a common practice to place the search box on the top right of the page, it’s where Internet users learned to expect it. When the search box is a simple search or filter, it should positioned on the top right and limited in width. More complex search boxes can be wider and positioned elsewhere.</p>
       <h2>Design specification</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
       <a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/search-spec-previews/">Sketch Measure Preview for search patterns</a>
