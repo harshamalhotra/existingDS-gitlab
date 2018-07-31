@@ -28,7 +28,6 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/motion">Motion</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/illustration">Illustration</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/typography">Typography</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/cursors">Cursors</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/interactions">Interactions</nuxt-link>
         </details>
 
