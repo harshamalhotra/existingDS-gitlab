@@ -21,14 +21,14 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/getting-started/contributing">Contributing</nuxt-link>
         </details>
 
-        <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/styles/')">
-          <summary class="nav-sidebar__section-summary">Styles</summary>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/colors">Colors</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/iconography">Iconography</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/motion">Motion</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/illustration">Illustration</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/typography">Typography</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/styles/interactions">Interactions</nuxt-link>
+        <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/foundations/')">
+          <summary class="nav-sidebar__section-summary">Foundations</summary>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/colors">Colors</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/iconography">Iconography</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/motion">Motion</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/illustration">Illustration</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/typography">Typography</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/interactions">Interactions</nuxt-link>
         </details>
 
         <details class="nav-sidebar__section" :open="$route.fullPath.startsWith('/layout/')">

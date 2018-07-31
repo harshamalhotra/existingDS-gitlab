@@ -44,32 +44,32 @@
         <tbody>
           <tr>
             <td><code>default</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-default.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-default.svg"></td>
             <td>The platform-dependent default cursor. Typically an arrow.</td>
           </tr>
           <tr>
             <td><code>pointer</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-pointer.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-pointer.svg"></td>
             <td>Indicates that you can click on an element to invoke a command or navigate, such as links and buttons.</td>
           </tr>
           <tr>
             <td><code>grab</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-grab.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-grab.svg"></td>
             <td>Indicates that you can grab and move an element around the screen.</td>
           </tr>
           <tr>
             <td><code>grabbing</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-grabbing.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-grabbing.svg"></td>
             <td>Indicates that you are actively moving an element around the screen.</td>
           </tr>
           <tr>
             <td><code>text</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-text.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-text.svg"></td>
             <td>Indicates that this is either text that you can select and copy, or a text field that you can click into to enter text.</td>
           </tr>
           <tr>
             <td><code>not-allowed</code></td>
-            <td align="center"><img src="~/assets/images/styles/cursors/cursors-notallowed.svg"></td>
+            <td align="center"><img src="~/assets/images/foundations/cursors/cursors-notallowed.svg"></td>
             <td>Indicates that an item may not be dropped at the current location or that the requested action will not be carried out.</td>
           </tr>
         </tbody>
