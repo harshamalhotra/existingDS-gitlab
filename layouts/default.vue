@@ -50,6 +50,7 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/date-picker">Date picker</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/dropdowns">Dropdowns</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/file-uploader">File uploader</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/filters">Filters</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/forms">Forms</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/labels">Labels</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/lists">Lists</nuxt-link>
@@ -60,6 +61,7 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/search">Search</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/segmented-control">Segmented control</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/skeleton-loader">Skeleton loader</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/sorting">Sorting</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/spinner">Spinner</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/tabs">Tabs</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/tags">Tags</nuxt-link>
