@@ -2,7 +2,7 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Search</h1>
-      <p>Search patterns enable users to trigger a search to find certain information or search through a list of information that is already displayed.</p>
+      <p>Search patterns enable users to trigger a search to find certain information or filter down a list of information that is already displayed.</p>
       <h2>Usage</h2>
       <p>Our search patterns fall into two groups:</p>
       <ul>
@@ -19,6 +19,7 @@
       <p class="todo">Todo: Add live component block with code example (search by confirmation with history dropdown)</p>
       <h3 id="placeholder">Placeholder</h3>
       <p>The placeholder in a search box should ideally be just “Search” because it should be clear what the user is searching through from the placement of the search box on the page. For example, a search box placed under a title “Labels” searches through labels. If that’s not possible, a more specific ”Search labels” placeholder can be used. The search patterns are one of those exceptions where the input field labels aren’t present at all. Because of that, a placeholder should always be there to clearly indicate to users that this is a search box.</p>
+      <p>Even though that the search patterns can be used for either filtering or searching for information, the placeholder should always used the word “Search”. This is another small detail that makes the pattern easier to recognize.</p>
       <h3>Positioning</h3>
       <p>It’s a common practice to place the search box on the top right of the page, it’s where Internet users learned to expect it. When the search box is a simple search or filter, it should positioned on the top right and limited in width. More complex search boxes can be wider and positioned elsewhere.</p>
       <h2>Design specification</h2>
