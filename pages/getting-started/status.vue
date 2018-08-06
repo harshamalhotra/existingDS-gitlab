@@ -45,27 +45,27 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../styles/Colors">Colors</a></td>
+            <td><a href="../../styles/Colors">Colors</a></td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="../styles/iconography">Iconography</a></td>
+            <td><a href="../../styles/iconography">Iconography</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/motion">Motion</a></td>
+            <td><a href="../../styles/motion">Motion</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/illustration">Illustration</a></td>
+            <td><a href="../../styles/illustration">Illustration</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/typography">Typography</a></td>
+            <td><a href="../../styles/typography">Typography</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/cursors">Cursors</a></td>
+            <td><a href="../../styles/cursors">Cursors</a></td>
             <td>🍊</td>
           </tr>
           <tr>
@@ -73,111 +73,111 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../components/alerts">Alerts</a></td>
+            <td><a href="../../components/alerts">Alerts</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/avatar">Avatars</a></td>
+            <td><a href="../../components/avatar">Avatars</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/badges">Badges</a></td>
+            <td><a href="../../components/badges">Badges</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/breadcrumbs">Breadcrumbs</a></td>
+            <td><a href="../../components/breadcrumbs">Breadcrumbs</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/buttons">Buttons</a></td>
+            <td><a href="../../components/buttons">Buttons</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/code-snippets">Code snippets</a></td>
+            <td><a href="../../components/code-snippets">Code snippets</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/data-tables">Data tables</a></td>
+            <td><a href="../../components/data-tables">Data tables</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/data-visualization">Data visualization</a></td>
+            <td><a href="../../components/data-visualization">Data visualization</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/date-picker">Date picker</a></td>
+            <td><a href="../../components/date-picker">Date picker</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/dropdowns">Dropdowns</a></td>
+            <td><a href="../../components/dropdowns">Dropdowns</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/file-uploader">File uploader</a></td>
+            <td><a href="../../components/file-uploader">File uploader</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/forms">Forms</a></td>
+            <td><a href="../../components/forms">Forms</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/forms">Forms</a></td>
+            <td><a href="../../components/forms">Forms</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/labels">Labels</a></td>
+            <td><a href="../../components/labels">Labels</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/lists">Lists</a></td>
+            <td><a href="../../components/lists">Lists</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/modals">Modals</a></td>
+            <td><a href="../../components/modals">Modals</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/notifications">Notifications</a></td>
+            <td><a href="../../components/notifications">Notifications</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/pagination">Pagination</a></td>
+            <td><a href="../../components/pagination">Pagination</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/popovers">Popovers</a></td>
+            <td><a href="../../components/popovers">Popovers</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/search">Search</a></td>
+            <td><a href="../../components/search">Search</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/segmented-contro.">Segmented control</a></td>
+            <td><a href="../../components/segmented-contro.">Segmented control</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/skeleton-loader">Skeleton loader</a></td>
+            <td><a href="../../components/skeleton-loader">Skeleton loader</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/spinner">Spinner</a></td>
+            <td><a href="../../components/spinner">Spinner</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/tabs">Tabs</a></td>
+            <td><a href="../../components/tabs">Tabs</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../components/tags">Tags</a></td>
+            <td><a href="../../components/tags">Tags</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/toggles">Toggles</a></td>
+            <td><a href="../../components/toggles">Toggles</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/tooltips">Tooltips</a></td>
+            <td><a href="../../components/tooltips">Tooltips</a></td>
             <td>🍊</td>
           </tr>
           <tr>
@@ -185,19 +185,19 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../regions/empty-states">Empty states</a></td>
+            <td><a href="../../regions/empty-states">Empty states</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/filters">Filters</a></td>
+            <td><a href="../../regions/filters">Filters</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/navigation">Navigation</a></td>
+            <td><a href="../../regions/navigation">Navigation</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/search">Search</a></td>
+            <td><a href="../../regions/search">Search</a></td>
             <td>🍊</td>
           </tr>
           <tr>
@@ -205,15 +205,15 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../content/voice-tone">Voice & tone</a></td>
+            <td><a href="../../content/voice-tone">Voice & tone</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../content/terminology">Terminology</a></td>
+            <td><a href="../../content/terminology">Terminology</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../content/punctuation">Punctuation</a></td>
+            <td><a href="../../content/punctuation">Punctuation</a></td>
             <td>🍊</td>
           </tr>
           <tr>
@@ -221,15 +221,15 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../components/a11y">Accessibility</a></td>
+            <td><a href="../../components/a11y">Accessibility</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/i18n">Internationalization</a></td>
+            <td><a href="../../components/i18n">Internationalization</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/helping-users">Helping users</a></td>
+            <td><a href="../../components/helping-users">Helping users</a></td>
             <td>✅</td>
           </tr>
         </tbody>
@@ -246,27 +246,27 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../styles/Colors">Colors</a></td>
+            <td><a href="../../styles/Colors">Colors</a></td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="../styles/iconography">Iconography</a></td>
+            <td><a href="../../styles/iconography">Iconography</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/motion">Motion</a></td>
+            <td><a href="../../styles/motion">Motion</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/illustration">Illustration</a></td>
+            <td><a href="../../styles/illustration">Illustration</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/typography">Typography</a></td>
+            <td><a href="../../styles/typography">Typography</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../styles/cursors">Cursors</a></td>
+            <td><a href="../../styles/cursors">Cursors</a></td>
             <td>🍊</td>
           </tr>
         </tbody>
@@ -282,19 +282,19 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../regions/empty-states">Empty states</a></td>
+            <td><a href="../../regions/empty-states">Empty states</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/filters">Filters</a></td>
+            <td><a href="../../regions/filters">Filters</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/xx">Navigation</a></td>
+            <td><a href="../../regions/xx">Navigation</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../regions/xx">Search</a></td>
+            <td><a href="../../regions/xx">Search</a></td>
             <td>🍊</td>
           </tr>
         </tbody>
@@ -310,15 +310,15 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../content/voice-tone">Voice & tone</a></td>
+            <td><a href="../../content/voice-tone">Voice & tone</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../content/terminology">Terminology</a></td>
+            <td><a href="../../content/terminology">Terminology</a></td>
             <td>🍊</td>
           </tr>
           <tr>
-            <td><a href="../content/punctuation">Punctuation</a></td>
+            <td><a href="../../content/punctuation">Punctuation</a></td>
             <td>🍊</td>
           </tr>
           <tr>
@@ -338,15 +338,15 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../components/accessibility">Accessibility</a></td>
+            <td><a href="../../components/accessibility">Accessibility</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/internationalization">Internationalization</a></td>
+            <td><a href="../../components/internationalization">Internationalization</a></td>
             <td>🛑</td>
           </tr>
           <tr>
-            <td><a href="../components/helping-users">Helping users</a></td>
+            <td><a href="../../components/helping-users">Helping users</a></td>
             <td>✅</td>
           </tr>
         </tbody>
