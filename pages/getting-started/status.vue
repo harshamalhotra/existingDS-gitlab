@@ -45,7 +45,7 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../../styles/Colors">Colors</a></td>
+            <td><a href="../../styles/colors">Colors</a></td>
             <td>✅</td>
           </tr>
           <tr>
