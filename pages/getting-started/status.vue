@@ -36,7 +36,7 @@
         </tbody>
       </table>
       
-      <h2>Components</h2>
+      <h2>Status</h2>
       <!-- <p>A paragraph.</p> -->
       <table class="m-t-6 m-b-6" style="width: 65%;">
         <tbody>
