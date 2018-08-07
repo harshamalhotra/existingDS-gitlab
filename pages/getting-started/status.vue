@@ -153,7 +153,7 @@
             <td>🚫</td>
           </tr>
           <tr>
-            <td><a href="../../components/segmented-contro.">Segmented control</a></td>
+            <td><a href="../../components/segmented-control">Segmented control</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
@@ -221,16 +221,16 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../../components/a11y">Accessibility</a></td>
+            <td><a href="../../usability/a11y">Accessibility</a></td>
             <td>🚫</td>
           </tr>
           <tr>
-            <td><a href="../../components/i18n">Internationalization</a></td>
+            <td><a href="../../usability/i18n">Internationalization</a></td>
             <td>🚫</td>
           </tr>
           <tr>
-            <td><a href="../../components/helping-users">Helping users</a></td>
-            <td>✅</td>
+            <td><a href="../../usability/helping-users">Helping users</a></td>
+            <td>⚠️</td>
           </tr>
         </tbody>
       </table>
