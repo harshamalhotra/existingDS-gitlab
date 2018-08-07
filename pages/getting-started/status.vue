@@ -15,12 +15,12 @@
           </tr>
           <tr>
             <td>🚫</td>
-            <td>Planned</td>
-            <td>Upcoming shortly</td>
+            <td>Upcoming</td>
+            <td>Planned, not started yet</td>
           </tr>
           <tr>
             <td>⚠️</td>
-            <td>Work in progress</td>
+            <td>In progress</td>
             <td>Not finished yet</td>
           </tr>
           <tr>
@@ -30,8 +30,8 @@
           </tr>
           <tr>
             <td>✅</td>
-            <td>Ready</td>
-            <td>Ready to implement</td>
+            <td>Implemented</td>
+            <td>Ready to use</td>
           </tr>
         </tbody>
       </table>
