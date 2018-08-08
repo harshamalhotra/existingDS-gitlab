@@ -2,7 +2,7 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Search</h1>
-      <p>Search patterns enable users to trigger a search to find certain information or filter down a list of information that is already displayed.</p>
+      <p>Search patterns enable users to find certain information by adding criteria that match their query.</p>
       <h2>Usage</h2>
       <p>Our search patterns fall into two groups:</p>
       <ul>
@@ -10,16 +10,16 @@
         <li>Search by confirmation</li>
       </ul>
       <h3>Search by typing</h3>
-      <p>This pattern doesn’t have a button and the magnifying glass icon is placed inside and in the left corner of the search box. The search action is triggered immediately after users start typing. The fact that the search is happening in the background needs to be communicated by showing the spinner in the right corner of the search box. A clear icon needs to be present if the search box isn’t empty and when there is no search activity in the background. Clicking it clears the search box, focuses the input field (if not already focused) and hides itself.</p>
+      <p>This pattern doesn't use a button to trigger the search. The search action is triggered immediately after users start typing. In order to communicate that a search is being performed, a spinner is added in the right corner of the search box. A clear icon appears in the right corner when the search box contains content and there is no search activity happening in the background. Clicking the clear icon removes the content, focuses the input field (if not already), and hides itself. A magnifying glass icon is placed in the left corner of the search box to indicate to the user that the input is a search field.</p>
       <p class="todo">Todo: Add live component block with code example (search by typing)</p>
       <h3>Search by confirmation</h3>
-      <p>This pattern is visually different from the one above because the users interact with it differently. The magnifying glass icon is inside the button which triggers the search action. The presence of the button indicates the need for confirmation to trigger the search. Pressing ”Enter” must also trigger it. A clear icon needs to be present in the right corner if the search box isn’t empty. Clicking it clears the search box, focuses the input field (if not already focused) and hides itself.</p>
+      <p>This pattern is visually different from the one above because users interact with it differently. The magnifying glass icon is inside the button which triggers the search action. The presence of the button indicates the need for confirmation to trigger the search. Pressing “Enter” also triggers the action. A clear icon appears in the right corner when the search box contains content. Clicking the clear icon removes the content, focuses the input field (if not already), and hides itself.</p>
       <p class="todo">Todo: Add live component block with code example (search by confirmation)</p>
-      <p>This pattern is commonly used throughout our application in the following form:</p>
+      <p>A history dropdown is commonly used as an addition to the search by confirmation pattern:</p>
       <p class="todo">Todo: Add live component block with code example (search by confirmation with history dropdown)</p>
       <h3 id="placeholder">Placeholder</h3>
       <p>The placeholder in a search box should ideally be just “Search” because it should be clear what the user is searching through from the placement of the search box on the page. For example, a search box placed under a title “Labels” searches through labels. If that’s not possible, a more specific ”Search labels” placeholder can be used. The search patterns are one of those exceptions where the input field labels aren’t present at all. Because of that, a placeholder should always be there to clearly indicate to users that this is a search box.</p>
-      <p>Even though that the search patterns can be used for either filtering or searching for information, the placeholder should always used the word “Search”. This is another small detail that makes the pattern easier to recognize.</p>
+      <p>Even though the search patterns can be used for either filtering or searching for information, the placeholder should always used the word “Search”. This is another small detail that makes the pattern easier to recognize.</p>
       <h3>Positioning</h3>
       <p>It’s a common practice to place the search box on the top right of the page, it’s where Internet users learned to expect it. When the search box is a simple search or filter, it should positioned on the top right and limited in width. More complex search boxes can be wider and positioned elsewhere.</p>
       <h2>Design specification</h2>
