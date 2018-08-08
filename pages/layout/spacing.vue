@@ -21,7 +21,7 @@
         <span class="w-10 h-10 c-background-blue-300 d-inline-block" title="96px"></span>
         <span class="w-11 h-11 c-background-blue-300 d-inline-block" title="128px"></span>
         <span class="w-12 h-12 c-background-blue-300 d-inline-block" title="176px"></span>
-        <span class="w-13 h-13 c-background-blue-300 d-inline-block" title="256x"></span>
+        <span class="w-13 h-13 c-background-blue-300 d-inline-block" title="256px"></span>
       </div>
       <p class="todo">Todo: Add spacing class examples</p>
     </div>
