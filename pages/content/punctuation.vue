@@ -312,7 +312,7 @@
             <td>
               <code>&amp;#171;</code><br><br><code>&amp;#187;</code><br><br><code>&amp;#8249;</code><br><br><code>&amp;#8250;</code><br><br><code>&amp;lt;</code><br><br><code>&amp;gt;</code>
             </td>
-            <td>Omit from links or buttons that open another page or move to the next or previous step in a process. Also known as angle brackets, angular quote brackets, or guillemets. We use <a href="styles/iconography">icons</a> in place of written chevrons.</td>
+            <td>Omit from links or buttons that open another page or move to the next or previous step in a process. Also known as angle brackets, angular quote brackets, or guillemets. We use <a href="/foundations/iconography">icons</a> in place of written chevrons.</td>
           </tr>
           <tr>
             <td>Em dash</td>

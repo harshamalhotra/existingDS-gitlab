@@ -51,7 +51,7 @@
         <div class="w-13 h-3"></div>
       </div>
       <h3>Typography</h3>
-      <p>All typography aligns to a 4px baseline grid. This allows for readable line heights at all sizes. See our <a href="/styles/typography">typography styles</a> for more information about how to use our type scale.</p>
+      <p>All typography aligns to a 4px baseline grid. This allows for readable line heights at all sizes. See our <a href="/foundations/typography">typography</a> for more information about how to use our type scale.</p>
       <h4>UI typography</h4>
       <div class="baseline--typography distributed">
         <h1>Header 1</h1>
