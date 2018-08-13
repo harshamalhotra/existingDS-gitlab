@@ -3,7 +3,7 @@
     <div class="component md">
       <h1>Interactions</h1>
 
-      <h2>Drag and drop</h2>
+      <h2 id="drag-and-drop">Drag and drop</h2>
 
       <p>To move and reorder items in a collection or across similar collections, users can press and drag them to a new position.</p>
       <p>There is a clear affordance that distinguishes draggable items from non-draggable ones:</p>
