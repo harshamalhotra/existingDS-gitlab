@@ -57,7 +57,7 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/notifications">Notifications</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/pagination">Pagination</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/popovers">Popovers</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/progress-bards">Progress bars</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/progress-bars">Progress bars</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/search">Search</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/segmented-control">Segmented control</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/skeleton-loader">Skeleton loader</nuxt-link>
