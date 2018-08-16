@@ -3,8 +3,8 @@
     <div class="structure md">
       <h1>Design system structure</h1>
       <p>Our design system is broken down into the following sections:</p>
-      <h2>Styles</h2>
-      <p>Styles represent perceptual patterns. These are less tangible aspects of the design system. Together they create a certain aesthetic for the product. Examples include colors, typography, and icons.</p>
+      <h2>Foundations</h2>
+      <p>Foundations represent perceptual patterns. These are less tangible aspects of the design system. Together they create a certain aesthetic for the product. Examples include colors, typography, and icons.</p>
       <h2>Components</h2>
       <p>Components are the reusable building blocks of the interface. Examples include buttons, tabs, and input fields.</p>
       <h2>Regions</h2>

@@ -56,6 +56,9 @@
       <h3 id="help-text">Help text</h3>
       <p>Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word.</p>
       <p class="todo">Todo: Add live component block with code example (help text)</p>
+      <h3>Icons</h3>
+      <p>Icons can be placed inside input fields for various use cases. For example, date picker input fields come with a calendar icon, and dropdown input fields come with a downward facing chevron icon. The top right corner is the default position where icons should be placed and the <strong>$grey-700</strong> is the default color.</p>
+      <p class="todo">Todo: Add live component block with code example (input field with an icon)</p>
       <h2>Design specification</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
       <a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/forms-spec-previews/">Sketch Measure Preview for forms</a>

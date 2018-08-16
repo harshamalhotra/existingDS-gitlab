@@ -12,7 +12,7 @@
         <li>When you want to give a user a summary of extended information and the option to switch context if they want to dive in deeper.</li>
       </ol>
       <h2>Placement</h2>
-      <p>By default, popovers are placed below the referring element. However, when there isn’t enough space in the viewport, the popover is moved to the side or above as needed. If it blocks related content, the preferred popover placement can be manually set.</p>
+      <p>By default, popovers are placed above the referring element. However, when there isn’t enough space in the viewport, the popover is moved to the side or below as needed. If it blocks related content, the preferred popover placement can be manually set.</p>
       <h2>Demo</h2>
       <p class="todo">Todo: Add live component block with code example</p>
       <h2>Design specifications</h2>

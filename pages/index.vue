@@ -20,7 +20,7 @@
           <img src="../assets/images/principles/professional-productive.png" srcset="../assets/images/principles/professional-productive@2x.png 2x" class="a-center">
           <div class="principle__content m-l-5">
             <h2>Professional and productive</h2>
-            <p>GitLab is a tool to support what people do, day in, day out. We need to respect the importance of their work, and avoid gimicky details.</p>
+            <p>GitLab is an application to support what people do, day in, day out. We need to respect the importance of their work, and avoid gimicky details.</p>
           </div>
         </div>
         <div class="principle m-b-7">
@@ -41,7 +41,7 @@
           <img src="../assets/images/principles/immediately-recognize.png" srcset="../assets/images/principles/immediately-recognize@2x.png 2x">
           <div class="principle__content m-l-5">
             <h2>Immediately recognizable</h2>
-            <p>When you look at any screen, you should know immediately that it is GitLab. Our personality is strong and consistent across product and marketing experiences.</p>
+            <p>When you look at any screen, you should know immediately that this is GitLab. Our personality is strong and consistent across product and marketing experiences.</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
       <div class="content limited distributed contributing-box__content">
         <img src="../assets/images/contribute.png" srcset="../assets/images/contribute@2x.png 2x" class="a-center d-block m-t-8 m-b-5">
         <h2 class="text-center">Everyone can contribute</h2>
-        <p class="a-center max-w-sm">In an effort to continue improving our design system, we encourage all feedback and ideas! If you are intersted in contributing, check out our <a href="/getting-started/contributing">guidelines</a> to get started. Have any questions? Open an issue on our <a href="https://gitlab.com/gitlab-org/design.gitlab.com/issues">GitLab issue tracker</a>.
+        <p class="a-center max-w-sm">In an effort to continue improving our design system, we encourage any feedback and ideas! If you are interested in contributing, check out our <a href="/getting-started/contributing">guidelines</a> to get started. Have any questions? Open an issue on our <a href="https://gitlab.com/gitlab-org/design.gitlab.com/issues">Design System issue tracker</a>.
         </p>
       </div>
     </div>
