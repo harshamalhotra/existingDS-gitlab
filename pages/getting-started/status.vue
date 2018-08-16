@@ -149,6 +149,10 @@
             <td>⚠️</td>
           </tr>
           <tr>
+            <td><a href="../../components/progress-bars">Progress bars</a></td>
+            <td>🚫</td>
+          </tr>
+          <tr>
             <td><a href="../../components/search">Search</a></td>
             <td>🚫</td>
           </tr>
