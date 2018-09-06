@@ -20,7 +20,7 @@
       <p>The width of an input field should reflect the expected content, for example postcode should be smaller than address.</p>
       <p class="todo">Todo: Add live component block with code example (inputs of different widths)</p>
       <h4>Predefined widths</h4>
-      <p>To encourage the usage of different input field widths, we use a set of predefined widths based on the 8 pixels grid. It’s ok to use a width that isn’t on this list but it should be based on the 8 pixels grid.</p>
+      <p>To encourage the usage of different input field widths, we use a set of predefined widths based on the 8 pixels grid. It’s okay to use a width that isn’t on this list but it should be based on the 8 pixels grid.</p>
       <p class="todo">Todo: Add live component block with code example (predefined widths + 100% width)</p>
       <h3>Text area</h3>
       <p>Text areas should be used when expected content is long. Predefined widths from the <strong>Input fields</strong> section apply to text area as well.</p>
@@ -51,13 +51,13 @@
       <p>Disabling buttons by default can still make sense in some cases. Editing existing information within a form is a good example. In such cases, buttons are disabled by default and become enabled once a change has been made by the user. The state change indicates the need for saving the changes and shouldn’t be tied to whether the information in the form is valid or not.</p>
       <p class="todo">Todo: Add live component block with code example (form button)</p>
       <h4>Required information</h4>
-      <p>We default to all information being required unless stated otherwise with "(Optional)" added to the label of the corresponding input field.</p>
+      <p>We default to all information being required unless stated otherwise with "(optional)" added to the label of the corresponding input field.</p>
       <p class="todo">Todo: Add live component block with code example (optional)</p>
       <h3 id="help-text">Help text</h3>
       <p>Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word.</p>
       <p class="todo">Todo: Add live component block with code example (help text)</p>
       <h3>Icons</h3>
-      <p>Icons can be placed inside input fields for various use cases. For example, date picker input fields come with a calendar icon, and dropdown input fields come with a downward facing chevron icon. The top right corner is the default position where icons should be placed and the <strong>$grey-700</strong> is the default color.</p>
+      <p>Icons can be placed inside input fields for various use cases. For example, date picker input fields come with a calendar icon, and dropdown input fields come with a downward facing chevron icon. The top right corner is the default position where icons should be placed and the <code>$grey-700</code> is the default color.</p>
       <p class="todo">Todo: Add live component block with code example (input field with an icon)</p>
       <h2>Design specification</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
