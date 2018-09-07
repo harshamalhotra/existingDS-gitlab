@@ -1121,10 +1121,10 @@
         </div>
       </div>
       <h2>Themes</h2>
-      <p>There are five different theme options for users to choose from that customize the appearance of the application header and navigation sidebar. These theme options make up four different color palettes:</p>
+      <p>There are ten different theme options that users can choose to customize the appearance of the application header and navigation sidebar. Each theme draws inspiration from one of our primary chromatic colors, the neutral palette, or the corporate indigo color. For each of these colors, there is a dark and a light theme, which result in the following palettes:</p>
       <div class="color-palette row m-b-6">
         <div class="indigo col col-25">
-          <h4>Indigo</h4>
+          <h4>Dark &amp; Light Indigo</h4>
           <div class="distributed palette">
             <div class="color">
               <div class="color-overview t-indigo-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1190,6 +1190,361 @@
               <div class="color-overview t-indigo-950 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$t-indigo-950</span>
                 <span class="hex f-small f-inverted">#1a1a40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blue col col-25">
+          <h4>Dark Blue</h4>
+          <div class="distributed palette">
+            <div class="color">
+              <div class="color-overview t-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-blue-50</span>
+                <span class="hex f-small">#f4f8fc</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-blue-100</span>
+                <span class="hex f-small">#e6edf5</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-blue-200</span>
+                <span class="hex f-small">#c8d7e6</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-blue-300</span>
+                <span class="hex f-small">#97b3cf</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-blue-400</span>
+                <span class="hex f-small">#648cb4</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-500</span>
+                <span class="hex f-small f-inverted">#4a79a8</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-600</span>
+                <span class="hex f-small f-inverted">#3e6fa0</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-700</span>
+                <span class="hex f-small f-inverted">#305c88</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-800</span>
+                <span class="hex f-small f-inverted">#25496e</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-900</span>
+                <span class="hex f-small f-inverted">#1a3652</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-blue-950</span>
+                <span class="hex f-small f-inverted">#0f2235</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="light-blue col col-25">
+          <h4>Light Blue</h4>
+          <div class="distributed palette">
+            <div class="color">
+              <div class="color-overview t-light-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-blue-50</span>
+                <span class="hex f-small">#f2faf6</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-blue-100</span>
+                <span class="hex f-small">#e4f3ea</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-blue-200</span>
+                <span class="hex f-small">#c0dfcd</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-blue-300</span>
+                <span class="hex f-small">#8ac2a1</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-blue-400</span>
+                <span class="hex f-small">#52a274</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-500</span>
+                <span class="hex f-small f-inverted">#35935c</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-600</span>
+                <span class="hex f-small f-inverted">#288a50</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-700</span>
+                <span class="hex f-small f-inverted">#1c7441</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-800</span>
+                <span class="hex f-small f-inverted">#25496e</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-900</span>
+                <span class="hex f-small f-inverted">#1a3652</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-blue-950</span>
+                <span class="hex f-small f-inverted">#0f2235</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="green col col-25">
+          <h4>Dark &amp; Light Green</h4>
+          <div class="distributed palette">
+            <div class="color">
+              <div class="color-overview t-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-green-50</span>
+                <span class="hex f-small">#f2faf6</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-green-100</span>
+                <span class="hex f-small">#e4f3ea</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-green-200</span>
+                <span class="hex f-small">#c0dfcd</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-green-300</span>
+                <span class="hex f-small">#8ac2a1</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-green-400</span>
+                <span class="hex f-small">#52a274</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-500</span>
+                <span class="hex f-small f-inverted">#35935c</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-600</span>
+                <span class="hex f-small f-inverted">#288a50</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-700</span>
+                <span class="hex f-small f-inverted">#1c7441</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-800</span>
+                <span class="hex f-small f-inverted">#145d33</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-900</span>
+                <span class="hex f-small f-inverted">#0d4524</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-green-950</span>
+                <span class="hex f-small f-inverted">#072d16</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="red col col-25">
+          <h4>Dark Red</h4>
+          <div class="distributed palette">
+            <div class="color">
+              <div class="color-overview t-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-red-50</span>
+                <span class="hex f-small">#fcf4f2</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-100 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-red-100</span>
+                <span class="hex f-small">#fae9e6</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-200 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-red-200</span>
+                <span class="hex f-small">#ebcac5</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-red-300</span>
+                <span class="hex f-small">#d99b91</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-400 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-red-400</span>
+                <span class="hex f-small">#b0655a</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-500 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-500</span>
+                <span class="hex f-small f-inverted">#ad4a3b</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-600 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-600</span>
+                <span class="hex f-small f-inverted">#9e4133</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-700 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-700</span>
+                <span class="hex f-small f-inverted">#912f20</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-800 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-800</span>
+                <span class="hex f-small f-inverted">#78291d</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-900 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-900</span>
+                <span class="hex f-small f-inverted">#691a16</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-red-950 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-red-950</span>
+                <span class="hex f-small f-inverted">#36140f</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="light-red col col-25">
+          <h4>Light Red</h4>
+          <div class="distributed palette">
+            <div class="color">
+              <div class="color-overview t-light-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-red-50</span>
+                <span class="hex f-small">#fff6f5</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-100 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-red-100</span>
+                <span class="hex f-small">#fae2de</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-200 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-red-200</span>
+                <span class="hex f-small">#f7d5d0</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-red-300</span>
+                <span class="hex f-small">#d9796a</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-400 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable">$t-light-red-400</span>
+                <span class="hex f-small">#cf604e</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-500 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-500</span>
+                <span class="hex f-small f-inverted">#c24b38</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-600 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-600</span>
+                <span class="hex f-small f-inverted">#b03927</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-700 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-700</span>
+                <span class="hex f-small f-inverted">#a62e21</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-800 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-800</span>
+                <span class="hex f-small f-inverted">#78291d</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-900 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-900</span>
+                <span class="hex f-small f-inverted">#691a16</span>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-overview t-light-red-950 p-t-3 p-r-5 p-b-3 p-l-5">
+                <span class="variable f-inverted">$t-light-red-950</span>
+                <span class="hex f-small f-inverted">#36140f</span>
               </div>
             </div>
           </div>
@@ -1261,148 +1616,6 @@
               <div class="color-overview t-gray-950 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$t-gray-950</span>
                 <span class="hex f-small f-inverted">#1f1f1f</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blue col col-25">
-          <h4>Blue</h4>
-          <div class="distributed palette">
-            <div class="color">
-              <div class="color-overview t-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-blue-50</span>
-                <span class="hex f-small">#f4f8fc</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-blue-100</span>
-                <span class="hex f-small">#e6edf5</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-blue-200</span>
-                <span class="hex f-small">#c8d7e6</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-blue-300</span>
-                <span class="hex f-small">#97b3cf</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-blue-400</span>
-                <span class="hex f-small">#648cb4</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-500</span>
-                <span class="hex f-small f-inverted">#4a79a8</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-600</span>
-                <span class="hex f-small f-inverted">#3e6fa0</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-700</span>
-                <span class="hex f-small f-inverted">#305c88</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-800</span>
-                <span class="hex f-small f-inverted">#25496e</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-900</span>
-                <span class="hex f-small f-inverted">#1a3652</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-blue-950</span>
-                <span class="hex f-small f-inverted">#0f2235</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="green col col-25">
-          <h4>Green</h4>
-          <div class="distributed palette">
-            <div class="color">
-              <div class="color-overview t-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-green-50</span>
-                <span class="hex f-small">#f2faf6</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-green-100</span>
-                <span class="hex f-small">#e4f3ea</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-green-200</span>
-                <span class="hex f-small">#c0dfcd</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-green-300</span>
-                <span class="hex f-small">#8ac2a1</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable">$t-green-400</span>
-                <span class="hex f-small">#52a274</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-500</span>
-                <span class="hex f-small f-inverted">#35935c</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-600</span>
-                <span class="hex f-small f-inverted">#288a50</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-700</span>
-                <span class="hex f-small f-inverted">#1c7441</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-800</span>
-                <span class="hex f-small f-inverted">#145d33</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-900</span>
-                <span class="hex f-small f-inverted">#0d4524</span>
-              </div>
-            </div>
-            <div class="color">
-              <div class="color-overview t-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
-                <span class="variable f-inverted">$t-green-950</span>
-                <span class="hex f-small f-inverted">#072d16</span>
               </div>
             </div>
           </div>
