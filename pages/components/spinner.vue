@@ -35,13 +35,13 @@
       <p>This color is reserved for spinners on dark background only (buttons for example).</p>
       <h2>Design specification</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
-      <a href="">Sketch Measure Preview for search patterns</a>
+      <a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/spinner-spec-previews/">Sketch Measure Preview for search patterns</a>
       <h2>Related patterns</h2>
       <ul>
         <li><a href="/components/buttons">Buttons</a></li>
         <li><a href="/components/forms">Forms</a></li>
         <li><a href="/components/search">Search</a></li>
-        <li><a href="/components/search">Skeleton loading</a></li>
+        <li><a href="/components/skeleton-loader">Skeleton loading</a></li>
       </ul>
     </div>
   </div>
