@@ -5,7 +5,7 @@
       <p>Spinner is a simple animated element that tells users that loading or background activity is in progress.</p>
       <h2>Usage</h2>
       <p>Spinners attract attention because of their animation so they should be used sparingly. Ideally, only one spinner should be used at a time. If you’re in a position where you think you need more than one, consider using skeleton loading instead.</p>
-      <p>Spinners shouldn't be used in combination with skeleton loading (too much animation at once), either one or the other should be used.</p>
+      <p>Spinners shouldn’t be used in combination with skeleton loading, too much animation at once can be overwhelming. Either one or the other should be used.</p>
       <p>We use three spinner sizes:</p>
       <ul>
         <li><strong>Small</strong>: 16 pixels</li>
@@ -25,7 +25,7 @@
       <h4>Medium</h4>
       <p>This size is meant for general usage, general loading tasks.</p>
       <h4>Large</h4>
-      <p>This size is the most appropriate for indicating that loading is in progress for whole pages. Always consider using <a href="">skeleton loading</a> instead, it has a positive effect on perceived speed.</p>
+      <p>This size is the most appropriate for indicating that loading is in progress for whole pages. Always consider using <a href="/components/skeleton-loader">skeleton loader</a> instead, it has a positive effect on perceived speed.</p>
       <h3>Colors</h3>
       <h4>Orange</h4>
       <p>This is the primary color for the spinner and it should be used in most cases.</p>
@@ -41,7 +41,7 @@
         <li><a href="/components/buttons">Buttons</a></li>
         <li><a href="/components/forms">Forms</a></li>
         <li><a href="/components/search">Search</a></li>
-        <li><a href="/components/skeleton-loader">Skeleton loading</a></li>
+        <li><a href="/components/skeleton-loader">Skeleton loader</a></li>
       </ul>
     </div>
   </div>
