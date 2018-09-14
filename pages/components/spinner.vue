@@ -6,6 +6,7 @@
       <h2>Usage</h2>
       <p>Spinners attract attention because of their animation so they should be used sparingly. Ideally, only one spinner should be used at a time. <a href="/components/skeleton-loader">Skeleton loader</a> should be used for indicating the loading of whole pages, spinners should be used on a small scale for small changes in the UI.</p>
       <p>Spinners shouldn’t be used in combination with the skeleton loader, too much animation at once can be overwhelming. Either one or the other should be used.</p>
+      <p>Additionally, we add a 100 ms delay before showing the spinner to mitigate lots of unnecessary spinners showing up at the same time.</p>
       <p>We use three spinner sizes:</p>
       <ul>
         <li><strong>Small</strong>: 16 pixels</li>
@@ -23,9 +24,9 @@
       <h4>Small</h4>
       <p>With its size at 16 pixels this spinner size is perfect for placing it alongside text labels. This is also the size that can be used inside other elements such as buttons or input fields.</p>
       <h4>Medium</h4>
-      <p>This size can be used for indicating that loading is in progress for larger components (charts and other interactive elements).</p>
+      <p>This size can be used for indicating that loading is in progress for larger components (for example charts and other interactive elements).</p>
       <h4>Large</h4>
-      <p>This size is the largest we allow for our spinners. It can be used for indicating that loading is in progress for large components.</p>
+      <p>This size is the largest we allow for our spinners. It can be used for indicating that loading is in progress for content areas and sections of the UI.</p>
       <h3>Colors</h3>
       <h4>Orange</h4>
       <p>This is the primary color for the spinner and it should be used in most cases.</p>
