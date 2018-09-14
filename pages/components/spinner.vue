@@ -2,10 +2,10 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Spinner</h1>
-      <p>Spinner is a simple animated element that tells users that loading or background activity is in progress.</p>
+      <p>A spinner is a simple animated element that tells users that either saving or loading of information/data is in progress and is tied to user-triggered actions. In some cases of saving information the UI will reflect the change before the change is actually saved. In such cases, the spinner should be used to indicate background activity until information is successfully saved.</p>
       <h2>Usage</h2>
-      <p>Spinners attract attention because of their animation so they should be used sparingly. Ideally, only one spinner should be used at a time. If you’re in a position where you think you need more than one, consider using skeleton loading instead.</p>
-      <p>Spinners shouldn’t be used in combination with skeleton loading, too much animation at once can be overwhelming. Either one or the other should be used.</p>
+      <p>Spinners attract attention because of their animation so they should be used sparingly. Ideally, only one spinner should be used at a time. <a href="/components/skeleton-loader">Skeleton loader</a> should be used for indicating the loading of whole pages, spinners should be used on a small scale for small changes in the UI.</p>
+      <p>Spinners shouldn’t be used in combination with the skeleton loader, too much animation at once can be overwhelming. Either one or the other should be used.</p>
       <p>We use three spinner sizes:</p>
       <ul>
         <li><strong>Small</strong>: 16 pixels</li>
@@ -23,9 +23,9 @@
       <h4>Small</h4>
       <p>With its size at 16 pixels this spinner size is perfect for placing it alongside text labels. This is also the size that can be used inside other elements such as buttons or input fields.</p>
       <h4>Medium</h4>
-      <p>This size is meant for general usage, general loading tasks.</p>
+      <p>This size can be used for indicating that loading is in progress for larger components (charts and other interactive elements).</p>
       <h4>Large</h4>
-      <p>This size is the most appropriate for indicating that loading is in progress for whole pages. Always consider using <a href="/components/skeleton-loader">skeleton loader</a> instead, it has a positive effect on perceived speed.</p>
+      <p>This size is the largest we allow for our spinners. It can be used for indicating that loading is in progress for large components.</p>
       <h3>Colors</h3>
       <h4>Orange</h4>
       <p>This is the primary color for the spinner and it should be used in most cases.</p>
