@@ -1123,7 +1123,7 @@
       <h2>Themes</h2>
       <p>There are ten different theme options that users can choose to customize the appearance of the application header and navigation sidebar. Each theme draws inspiration from one of our primary chromatic colors, the neutral palette, or the corporate indigo color. For each of these colors, there is a dark and a light theme, which result in the following palettes:</p>
       <div class="color-palette row m-b-6">
-        <div class="indigo col col-25 m-t-7">
+        <div class="indigo col col-25">
           <h4>Dark &amp; Light Indigo</h4>
           <div class="distributed palette">
             <div class="color">
@@ -1194,7 +1194,7 @@
             </div>
           </div>
         </div>
-        <div class="blue col col-25 m-t-7">
+        <div class="blue col col-25">
           <h4>Dark Blue</h4>
           <div class="distributed palette">
             <div class="color">
@@ -1265,7 +1265,7 @@
             </div>
           </div>
         </div>
-        <div class="light-blue col col-25 m-t-7">
+        <div class="light-blue col col-25">
           <h4>Light Blue</h4>
           <div class="distributed palette">
             <div class="color">
@@ -1336,7 +1336,7 @@
             </div>
           </div>
         </div>
-        <div class="green col col-25 m-t-7">
+        <div class="green col col-25">
           <h4>Dark &amp; Light Green</h4>
           <div class="distributed palette">
             <div class="color">
