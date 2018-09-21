@@ -2,13 +2,8 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Alerts</h1>
-      <p>Component overview. A brief explanation of what the component is.</p>
+      <p>Alerts allow the application to pass along relevant information to the user without impeding their journey. Alerts are not error validation and should not be used to substitue this pattern.</p>
       <h2>Usage</h2>
-      <p>A summary of when and how the component is used.</p>
-      <!--
-        EXAMPLE TABLE, this can be used to highlight Do's & Don'ts or specfic rule sets
-        DO NOT add static images to any page at this time.
-      -->
       <table class="do-dont m-b-6">
         <thead>
           <tr>
@@ -18,27 +13,44 @@
         </thead>
         <tbody>
           <tr>
-            <td>Primary button</td>
-            <td>The primary call to action on the page.</td>
+            <td>Danger alerts</td>
+            <td>To be used for critical warnings that require the user's attention.</td>
           </tr>
           <tr>
-            <td>Secondary button</td>
-            <td>Secondary actions on the page.</td>
+            <td>Warning alerts</td>
+            <td>To be used for other non-critical warnings that require the users attention.</td>
+          </tr>
+          <tr>
+            <td>Information alerts</td>
+            <td>To be used to display important information to the user related to their task.</td>
+          </tr>
+          <tr>
+            <td>Tip alerts</td>
+            <td>To be used to display tips on using GitLab, new/unused features, and other marketing information.</td>
+          </tr>
+          <tr>
+            <td>Success alerts</td>
+            <td>To be used to alert the user that the action they have complete was successful.</td>
           </tr>
         </tbody>
       </table>
       <!--
-        SUB SECTIONS, use these to highlight component specific rules. You can add as many sub-sections as needed, use your best judgement
+        use these to highlight component specific rules. You can add as many sub-sections as needed, use your best judgement
         e.g. truncation rules
       -->
-      <h3>Sub section</h3>
-      <p>A summary of a specific usage guideline.</p>
+      <h3>Design flexibility</h3>
+      <p>The alert pattern is designed to be flexible and accounts for as many use cases as possible.</p>
+      <h4> Default alert </h4>
+      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <h4> Alert with title </h4>
+      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <h4> Alert with button</h4>
+      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <h4> Alert with title and button </h4>
       <p class="todo">An example of a live component to add related to a usage guideline</p>
       <!--
         DEMO, keep this section for all patterns, the code block demo will be added at a later date
       -->
-      <h2>Demo</h2>
-      <p class="todo">Todo: Add live component block with code example</p>
       <!--
         DESIGN SPECIFICATIONS, add a link here to the component-specific sketch-measure preview.
         All design specifications should live in the design repo under 'hosted/design-gitlab-specs/COMPONENTNAME-spec-previews'
@@ -56,7 +68,7 @@
       -->
       <h2>Related patterns</h2>
       <ul>
-        <li><a href="/">A related pattern</a></li>
+        <li><a href="/components/buttons">Buttons</a></li>
       </ul>
     </div>
   </div>
