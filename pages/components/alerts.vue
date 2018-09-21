@@ -1,7 +1,7 @@
 <template>
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
-      <h1>Alerts/h1>
+      <h1>Alerts</h1>
       <p>Component overview. A brief explanation of what the component is.</p>
       <h2>Usage</h2>
       <p>A summary of when and how the component is used.</p>
