@@ -2,7 +2,7 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Alerts</h1>
-      <p>Alerts allow the application to pass along relevant information to the user without impeding their journey. Alerts are not error validation and should not be used to substitue this pattern.</p>
+      <p>Alerts allow the application to pass along relevant information to the user without impeding their journey. Alerts are not error validation and should not be used as a substitute for errors.</p>
       <h2>Usage</h2>
       <table class="do-dont m-b-6">
         <thead>
@@ -41,13 +41,13 @@
       <h3>Design flexibility</h3>
       <p>The alert pattern is designed to be flexible and accounts for as many use cases as possible.</p>
       <h4> Default alert </h4>
-      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <p class="todo">An example of a live alert with title component to add related to a usage guideline</p>
       <h4> Alert with title </h4>
-      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <p class="todo">An example of a live alert with button component to add related to a usage guideline</p>
       <h4> Alert with button</h4>
-      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <p class="todo">An example of a live alert with button component to add related to a usage guideline</p>
       <h4> Alert with title and button </h4>
-      <p class="todo">An example of a live component to add related to a usage guideline</p>
+      <p class="todo">An example of a live alert with title and button component to add related to a usage guideline</p>
       <!--
         DEMO, keep this section for all patterns, the code block demo will be added at a later date
       -->
@@ -60,7 +60,7 @@
       -->
       <h2>Design specifications</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
-      <p><a href="#">Sketch Measure Preview for [Insert component name here]</a></p>
+      <p><a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/alerts-spec-previews/"> Sketch Measure Preview for Alerts</a></p>
       <!--
         RELATED PATTERNS should be similar in usage/type of pattern
         e.g. tooltips, popover, and modals are all similar constructs used for different purposes
