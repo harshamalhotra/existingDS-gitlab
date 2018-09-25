@@ -20,7 +20,7 @@
           <tr>
             <td>Checkmark dropdowns</td>
             <td>
-              <p>These dropdowns are used as inputs. The individual rows in these dropdowns can show a checkmark to indicate that they have been selected or enabled. A dash (<code>–</code>) should be used instead of a checkmark when the row's value is present in some of the elements the dropdown is modifying but not others.</p>
+              <p>These dropdowns are used as inputs. The individual rows in these dropdowns can show a checkmark to indicate that they have been selected or enabled. They are a collection of checkmarks. A dash (<code>–</code>) should be used instead of a checkmark when the row's value is present in some of the elements the dropdown is modifying but not others.</p>
           </td>
           </tr>
         </tbody>
@@ -42,7 +42,7 @@
       <h4>Fixed rows</h4>
       <p>A limited amount of rows that don't scroll can be fixed at the bottom of a dropdown. For example, the dropdown used to switch between issue boards has two fixed options at the bottom: <i>Create new board</i> and <i>Delete board</i>.</p>
       <p class="todo">An example of a dropdown with fixed rows.</p>
-      <!-- 
+      <!--
         DEMO, keep this section for all patterns, the code block demo will be added at a later date
       -->
       <h2>Demo</h2>
