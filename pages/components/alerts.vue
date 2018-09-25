@@ -34,16 +34,16 @@
           </tr>
         </tbody>
       </table>
-      <h3>Examples</h3>
+      <h2>Demo</h2>
       <p>The alert pattern is designed to be flexible and accounts for as many use cases as possible.</p>
-      <p class="todo">An example of a live alert with title component to add related to a usage guideline</p>
+      <p class="todo">An example of a live alert related to a usage guideline.</p>
       <h2>Design specifications</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
       <p><a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/alerts-spec-previews/"> Sketch Measure Preview for Alerts</a></p>
       <h2>Related patterns</h2>
       <ul>
-        <li>Toasts</li>
-        <li>Broadcast Messages</li>
+        <li><a href="/components/broadcast-messages">Broadcast messages</a></li>
+        <li><a href="/components/toasts">Toasts</a></li>
       </ul>
     </div>
   </div>
