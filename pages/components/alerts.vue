@@ -2,7 +2,7 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Alerts</h1>
-      <p>Alerts allow the application to pass along relevant information to the user without impeding their journey. Alerts are not error validation and should not be used as a substitute for errors.</p>
+      <p>Alerts allow the application to pass along relevant information to the user without impeding their journey. Alerts are not error validations and should not be used as a substitute for errors.</p>
       <h2>Usage</h2>
       <table class="do-dont m-b-6">
         <thead>
@@ -30,45 +30,20 @@
           </tr>
           <tr>
             <td>Success alerts</td>
-            <td>To be used to alert the user that the action they have complete was successful.</td>
+            <td>To be used to alert the user that the action they have completed was successful.</td>
           </tr>
         </tbody>
       </table>
-      <!--
-        use these to highlight component specific rules. You can add as many sub-sections as needed, use your best judgement
-        e.g. truncation rules
-      -->
-      <h3>Design flexibility</h3>
+      <h3>Examples</h3>
       <p>The alert pattern is designed to be flexible and accounts for as many use cases as possible.</p>
-      <h4> Default alert </h4>
       <p class="todo">An example of a live alert with title component to add related to a usage guideline</p>
-      <h4> Alert with title </h4>
-      <p class="todo">An example of a live alert with button component to add related to a usage guideline</p>
-      <h4> Alert with button</h4>
-      <p class="todo">An example of a live alert with button component to add related to a usage guideline</p>
-      <h4> Alert with title and button </h4>
-      <p class="todo">An example of a live alert with title and button component to add related to a usage guideline</p>
-      <!--
-        DEMO, keep this section for all patterns, the code block demo will be added at a later date
-      -->
-      <!--
-        DESIGN SPECIFICATIONS, add a link here to the component-specific sketch-measure preview.
-        All design specifications should live in the design repo under 'hosted/design-gitlab-specs/COMPONENTNAME-spec-previews'
-        *** If there are max-width, min-width, or other specs that should be known about this component,
-        please add it in Sketch Measur via a note.
-        This link must ALWAYS be included.
-      -->
       <h2>Design specifications</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
       <p><a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/alerts-spec-previews/"> Sketch Measure Preview for Alerts</a></p>
-      <!--
-        RELATED PATTERNS should be similar in usage/type of pattern
-        e.g. tooltips, popover, and modals are all similar constructs used for different purposes
-        Remove this section if there are no related patterns at this time.
-      -->
       <h2>Related patterns</h2>
       <ul>
-        <li><a href="/components/buttons">Buttons</a></li>
+        <li>Toasts</li>
+        <li>Broadcast Messages</li>
       </ul>
     </div>
   </div>
