@@ -356,7 +356,7 @@
             <div class="color">
               <div class="color-overview c-background-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$blue-400</span>
-                <span class="hex f-small">#2e87e0</span>
+                <span class="hex f-small">#418cd8</span>
               </div>
               <div class="color-details c-border-blue-400 p-t-6 p-r-5 p-b-6 p-l-5">
                 <div class="color-details--section">
@@ -603,7 +603,7 @@
             <div class="color">
               <div class="color-overview c-background-orange-400 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$orange-400</span>
-                <span class="hex f-small">#fca121</span>
+                <span class="hex f-small">#fca429</span>
               </div>
               <div class="color-details c-border-orange-400 p-t-6 p-r-5 p-b-6 p-l-5">
                 <div class="color-details--section">
@@ -828,7 +828,7 @@
             <div class="color">
               <div class="color-overview c-background-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$red-300</span>
-                <span class="hex f-small">#e67664</span>
+                <span class="hex f-small">#ea8271</span>
               </div>
               <div class="color-details c-border-red-300 p-t-6 p-r-5 p-b-6 p-l-5">
                 <div class="color-details--section">
