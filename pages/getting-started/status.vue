@@ -74,7 +74,7 @@
           </tr>
           <tr>
             <td><a href="../../components/alerts">Alerts</a></td>
-            <td>🚫</td>
+            <td>⚠️</td>
           </tr>
           <tr>
             <td><a href="../../components/avatar">Avatars</a></td>
@@ -87,6 +87,10 @@
           <tr>
             <td><a href="../../components/breadcrumbs">Breadcrumbs</a></td>
             <td>⚠️</td>
+          </tr>
+           <tr>
+            <td><a href="../../components/broadcast-messages">Broadcast messages</a></td>
+            <td>🚫</td>
           </tr>
           <tr>
             <td><a href="../../components/buttons">Buttons</a></td>
@@ -174,6 +178,10 @@
           </tr>
           <tr>
             <td><a href="../../components/tags">Tags</a></td>
+            <td>🚫</td>
+          </tr>
+           <tr>
+            <td><a href="../../components/toasts">Toasts</a></td>
             <td>🚫</td>
           </tr>
           <tr>
