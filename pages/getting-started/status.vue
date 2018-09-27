@@ -89,7 +89,7 @@
             <td>⚠️</td>
           </tr>
            <tr>
-            <td><a href="../../components/broadcast-messages">Broadcast-messages</a></td>
+            <td><a href="../../components/broadcast-messages">Broadcast messages</a></td>
             <td>🚫</td>
           </tr>
           <tr>
