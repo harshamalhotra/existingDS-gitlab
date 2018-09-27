@@ -225,7 +225,7 @@
         </ul>
       </div>
     </div>
-    <div class="persona card">
+    <div class="persona card m-b-8">
       <div class="card--header">
         <h2>Karolina Plaskaty</h2>
       </div>
@@ -280,6 +280,73 @@
           <li>To use a fast and intuitive version control platform.</li>
         </ul>
       </div>
+    </div>
+      <div class="persona card m-b-8">
+      <div class="card--header">
+        <h2>Parker</h2>
+      </div>
+      <div class="card--body md">
+        <table class="m-b-6">
+          <tbody>
+            <tr>
+              <th class="header">Job Title:</th>
+              <td>Product Manager</td>
+            </tr>
+            <tr>
+              <th class="header">Alternative Job Titles:</th>
+              <td>Program Manager, Project Manager, Technical Product Manager, Head of Product</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Job Summary</h3>
+        <p>I am responsible for defining and scoping features, incorporating company objectives into the product roadmap, and giving developers and designers the requirements they need to deliver strong features. Whether I’m making sure I have the right skill-sets on the team, prioritizing feature requests, or ensuring that we deliver on time, my job is to set my team up for success.</p>
+        <h3>Motivations</h3>
+        <ul>
+          <li>When company objectives shift, I want to have a standard process for communication in place, so that I can be in sync with all team members.</li>
+          <li>When development begins, I want to see an overview of all the relevant information related to a feature or project, so that I can monitor progress throughout a cycle.</li>
+          <li>When I’m planning for the next cycle, I want to see a history of how accurately the developers on my team estimated their capacity, so that I can be sure that key features will be delivered on time.</li>
+        </ul>
+        <h3>Frustrations</h3>
+        <ul>
+          <li>It can be difficult to know the status of certain requirements, when my team members do not take the time to update the various tools we use.</li>
+          <li>I often have trouble balancing feature requests with capacity.</li>
+          <li>It can be difficult to give clients a reasonable timeframe that is not off-base, since a cycle is often unpredictable.</li>
+          <li>It’s challenging to explain why certain features have been delayed or deprioritized, when customers and upper-level management are not working closely with the team.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="persona card">
+      <div class="card--header">
+        <h2>Delaney</h2>
+      </div>
+         <div class="card--body md">
+        <table class="m-b-6">
+          <tbody>
+            <tr>
+              <th class="header">Job Title:</th>
+              <td>Development Team Lead</td>
+            </tr>
+            <tr>
+              <th class="header">Alternative Job Titles:</th>
+              <td>Technical Manager, Software Engineering Team Lead, Technical Team Lead, Software Development Director, Development Lead</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Job Summary</h3>
+        <p>I am responsible for meeting with the product management team to discuss and schedule features, so we can convert concepts into practical solutions. I ensure that capacity is properly estimated, create program specifications, and often mentor junior developers.</p>
+        <h3>Motivations</h3>
+        <ul>
+          <li>When discussing feature requests, I want to receive clear requirements from the product and design teams, so my team can deliver on time and reduce back-and-forth communication.</li>
+          <li>When assessing team resources, I want to see a history of how accurately developers on my team have estimated their capacity, so that I can assign them to the right tasks.</li>
+          <li>When important deadlines are approaching, I want all team members to reliably update our tools, so that I can track progress without having to search for relevant information in other communication channels.</li>
+        </ul>
+        <h3>Frustrations</h3>
+        <ul>
+          <li>It can be difficult for my team to do thorough code reviews in a reasonable timeframe, while still making progress on their own assignments.</li>
+          <li>When demand surpasses our current capacity, it can be stressful to resolve issues while not creating new ones that result from hasty work.</li>
+          <li>I am not always aware of the best way to explain technical limitations to stakeholders who are not involved in the development process.</li>
+        </ul>
+     </div>
     </div>
   </div>
 </template>
