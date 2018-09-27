@@ -44,7 +44,7 @@
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/avatar">Avatar</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/badges">Badges</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/breadcrumbs">Breadcrumbs</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/broadcast-message">Broadcast messages</nuxt-link>
+          <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/broadcast-messages">Broadcast messages</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/buttons">Buttons</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/code-snippets">Code snippets</nuxt-link>
           <nuxt-link class="nav-sidebar__section-items-anchor" to="/components/data-tables">Data tables</nuxt-link>
