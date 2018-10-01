@@ -4,9 +4,13 @@
 
 1. Clone the project with `git clone git@gitlab.com:gitlab-org/design.gitlab.com.git`
 1. Install [yarn](https://yarnpkg.com/en/docs/install)
-1. Run `yarn`
+1. Run `yarn install`
 1. Run `yarn start` to start build & watch changes
 1. Open http://localhost:2018
+
+## Troubleshooting
+
+If you are having errors while performing `yarn install`, make sure you are using node 8.12.0 (LTS) before performing that step.
 
 ## Reviewing
 
