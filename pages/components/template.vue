@@ -52,7 +52,7 @@
       <!-- 
         RELATED PATTERNS should be similar in usage/type of pattern
         e.g. tooltips, popover, and modals are all similar constructs used for different purposes
-        Remove this section if there are no related patterns at this time.  
+        Remove this section if there are no related patterns at this time. Please list them in alphabetical order. 
       -->
       <h2>Related patterns</h2>
       <ul>
