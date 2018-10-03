@@ -35,37 +35,37 @@
           </tr>
         </tbody>
       </table>
-      
+
       <h2>Status</h2>
       <!-- <p>A paragraph.</p> -->
       <table class="m-t-6 m-b-6" style="width: 65%;">
         <tbody>
           <tr>
-            <th class="header">Styles</th>
+            <th class="header">Foundations</th>
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../../styles/colors">Colors</a></td>
+            <td><a href="../../foundations/colors">Colors</a></td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="../../styles/iconography">Iconography</a></td>
+            <td><a href="../../foundations/iconography">Iconography</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../styles/motion">Motion</a></td>
+            <td><a href="../../foundations/motion">Motion</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../styles/illustration">Illustration</a></td>
+            <td><a href="../../foundations/illustration">Illustration</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../styles/typography">Typography</a></td>
+            <td><a href="../../foundations/typography">Typography</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../styles/cursors">Cursors</a></td>
+            <td><a href="../../foundations/cursors">Cursors</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
@@ -364,5 +364,5 @@
         </tbody>
       </table> -->
     </div>
-  </div> 
+  </div>
 </template>
