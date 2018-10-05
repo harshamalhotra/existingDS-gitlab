@@ -30,12 +30,10 @@
 
       <h3>Hover, Active, and Focus</h3>
       <p>Buttons change depending on the user's interaction with them. In hover, active, and focus states the buttons will have a thicker border and their background color will change. For the focus state, buttons will get an additional blue glow indicating that they are in focus.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h3>Disabled</h3>
       <p>Disabled buttons prevent the user from performing an action. They are there to let the user know a certain action would be possible if circumstances were different. All buttons regardless of style are styled the same way when in the disabled state. Additionally they will show the "not-allowed" cursor style when hovered upon and have a faded text color.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h2>Styles</h2>
@@ -43,7 +41,6 @@
 
       <h3>Neutral</h3>
       <p>The neutral button style is used most often and is generally picked when using tertiary buttons. It features grayscale colors with a white background.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h3>Elementary</h3>
@@ -51,12 +48,10 @@
 
       <h4>Info</h4>
       <p>Buttons that represent activation or informative processes. They are represented in a blue color.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h4>Success</h4>
       <p>Buttons that represent positive actions such as the creation or addition of items. They are represented in a green color.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h4>Warning</h4>
@@ -71,16 +66,14 @@
   
       <h3>Dashed</h3>
       <p>Dashed button styles are used when something has not yet been created. Their action will lead the user to create the missing item, after which it will replace the dashed button with a link to the item.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h3>Dark and Inverted</h3>
       <p>Some circumstances are exceptions in that they require a different button style than normal to still be accessible. When the UI is darker than normal, a dark or inverted button style may be required. These button styles are only possible for tertiary button types.</p>
-
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h2>Variations</h2>
-      <p>Buttons come in many different variations which fit different situations. Some can require a dropdown while others require less width or a certain type of information and action combo.</p>
+      <p>Buttons come in many different variations to fit different situations. Some trigger a dropdown while others combine multiple similar actions together</p>
 
       <h3>Text</h3>
       <p>The default variation is the text button. They contain a text label and have no special interactions.</p>
@@ -108,7 +101,7 @@
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h3>Ellipsis</h3>
-      <p>Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space contraints.</p>
+      <p>Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.</p>
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h3>Group</h3>
@@ -151,7 +144,7 @@
 
       <h2>Labels</h2>
       <p>Button labels should be short and concise while conveying what happens when the button is clicked. Buttons use <a href="/content/punctuation">sentence case</a> and a normal font weight. An icon can be used in place of text.</p>
-      <p>Please note to <strong>not</strong> mix buttons with text labels with buttons with icon labels.</p>
+      <p>Please note to <strong>not</strong> mix text and icon label buttons together within the same interface.</p>
       
       <h2>Design specifications</h2>
       <p>Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:</p>
