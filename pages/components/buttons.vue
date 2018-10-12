@@ -93,7 +93,7 @@
       <p class="todo">Todo: Add live component block with code example</p>
 
       <h4>Split dropdown</h4>
-      <p>Dropdown buttons may be split if there are multiple similar actions being grouped together. The text button will default to the most common option and an attached dropdown button allows the user to change the default. Clicking the chevron icon within the dropdown button triggers a menu of related actions. It is attached to the right of the text button.</p>
+      <p>Dropdown buttons may be split when its options are actions. The text button will allow immediate access to the most common option and an attached dropdown button to either change the default action or directly access a list of related actions. The dropdown button is attached to the right of the text button and has a chevron icon as its label.</p>
       <p class="todo">Todo: Add live component block with code example</p>
       
       <h4>Icon dropdown</h4>
