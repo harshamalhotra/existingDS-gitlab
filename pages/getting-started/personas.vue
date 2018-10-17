@@ -16,7 +16,7 @@
     <li><a href="#persona-sidney">Sidney</a>, Systems Administrator</li>
     <li><a href="#persona-sam">Sam</a>, Security Analyst</li>
   </ul>
-  </div>
+    </div>
     <div class="persona card m-b-8" id="persona-parker">
       <div class="card--header">
         <h2>Parker</h2>
