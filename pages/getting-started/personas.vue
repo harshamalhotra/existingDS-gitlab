@@ -1,8 +1,8 @@
 <template>
   <div class="personas content limited m-t-7 m-b-7">
     <div class="md">
-<h1>Personas</h1>
-<h2>Table of content</h2>
+      <h1>Personas</h1>
+      <h2>Table of content</h2>
 <div class="m-b-6">
   <h3>Dev</h3>
   <ul>
@@ -16,7 +16,7 @@
     <li><a href="#persona-sidney">Sidney</a>, Systems Administrator</li>
     <li><a href="#persona-sam">Sam</a>, Security Analyst</li>
   </ul>
-</div>
+  </div>
     <div class="persona card m-b-8" id="persona-parker">
       <div class="card--header">
         <h2>Parker</h2>
