@@ -55,7 +55,7 @@
         <div class="card--header">
           <h2>Delaney</h2>
         </div>
-           <div class="card--body md">
+        <div class="card--body md">
           <table class="m-b-6">
             <tbody>
               <tr>
@@ -82,13 +82,13 @@
             <li>When demand surpasses our current capacity, it can be stressful to resolve issues while not creating new ones that result from hasty work.</li>
             <li>I am not always aware of the best way to explain technical limitations to stakeholders who are not involved in the development process.</li>
           </ul>
-       </div>
+        </div>
       </div>
       <div class="persona card m-b-8" id="persona-devon">
         <div class="card--header">
           <h2>Devon</h2>
         </div>
-           <div class="card--body md">
+        <div class="card--body md">
           <table class="m-b-6">
             <tbody>
               <tr>
@@ -124,7 +124,7 @@
         <div class="card--header">
           <h2>Sasha</h2>
         </div>
-           <div class="card--body md">
+        <div class="card--body md">
           <table class="m-b-6">
             <tbody>
               <tr>
@@ -153,13 +153,13 @@
             <li>I’m frustrated when I come across brittle code and something that should be an easy fix requires a lot of rework.</li>
             <li>I’m concerned that by taking longer than expected on a task I may be judged or seen as blocking others’ work.</li>
           </ul>
-       </div>
+        </div>
       </div>
       <div class="persona card m-b-8" id="persona-sidney">
         <div class="card--header">
           <h2>Sidney</h2>
         </div>
-           <div class="card--body md">
+        <div class="card--body md">
           <table class="m-b-6">
             <tbody>
               <tr>
@@ -187,41 +187,40 @@
             <li>I'm frustrated when I get inundated by requests from people who have not followed the correct process.</li>
             <li>I'm frustrated when developers do not implement my recommendations, and I’m responsible for fixing their preventable problems anyway.</li>
           </ul>
-          </div>
         </div>
-        <div class="persona card m-b-8" id="persona-sam">
-          <div class="card--header">
-            <h2>Sam</h2>
-          </div>
-             <div class="card--body md">
-            <table class="m-b-6">
-              <tbody>
-                <tr>
-                  <th class="header">Job Title:</th>
-                  <td>Security Analyst</td>
-                </tr>
-                <tr>
-                  <th class="header">Alternative Job Titles:</th>
-                  <td>Security Engineer, Security Consultant, or an Application Security Specialist</td>
-                </tr>
-              </tbody>
-            </table>
-            <h3>Job Summary</h3>
-            <p>I wear lots of hats, but the majority of my time is spent monitoring and flagging events, running down high priority tasks and working with other teams to implement new systems.</p>
-            <h3>Motivations</h3>
-            <ul>
-              <li>When I’m monitoring my dashboards, I want to see everything I am monitoring in one tool, so I can do my job easier and more efficiently.</li>
-              <li>When security testing, I want to be more proactive than reactive, so I can anticipate potential threats or vulnerabilities before the bad guys do.</li>
-              <li>When on the job, I want to stay up to date on the latest information and education in information security, so I can grow in my career.</li>
-            </ul>
-            <h3>Frustrations</h3>
-            <ul>
-              <li>I’m frustrated I don’t have the resources to complete this project to its specifications.</li>
-              <li>I’m frustrated when I know how to fix a security issue but the red tape at my company doesn’t allow me to in a timely manner.</li>
-              <li>I’m concerned that what I don’t know, I don’t know and my company can be attacked in any manner of ways at any time.</li>
-              <li>I’m concerned that I might miss something and my company may become compromised because of it.</li>
-            </ul>
-          </div>
+      </div>
+      <div class="persona card m-b-8" id="persona-sam">
+        <div class="card--header">
+          <h2>Sam</h2>
+        </div>
+        <div class="card--body md">
+          <table class="m-b-6">
+            <tbody>
+              <tr>
+                <th class="header">Job Title:</th>
+                <td>Security Analyst</td>
+              </tr>
+              <tr>
+                <th class="header">Alternative Job Titles:</th>
+                <td>Security Engineer, Security Consultant, or an Application Security Specialist</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Job Summary</h3>
+          <p>I wear lots of hats, but the majority of my time is spent monitoring and flagging events, running down high priority tasks and working with other teams to implement new systems.</p>
+          <h3>Motivations</h3>
+          <ul>
+            <li>When I’m monitoring my dashboards, I want to see everything I am monitoring in one tool, so I can do my job easier and more efficiently.</li>
+            <li>When security testing, I want to be more proactive than reactive, so I can anticipate potential threats or vulnerabilities before the bad guys do.</li>
+            <li>When on the job, I want to stay up to date on the latest information and education in information security, so I can grow in my career.</li>
+          </ul>
+          <h3>Frustrations</h3>
+          <ul>
+            <li>I’m frustrated I don’t have the resources to complete this project to its specifications.</li>
+            <li>I’m frustrated when I know how to fix a security issue but the red tape at my company doesn’t allow me to in a timely manner.</li>
+            <li>I’m concerned that what I don’t know, I don’t know and my company can be attacked in any manner of ways at any time.</li>
+            <li>I’m concerned that I might miss something and my company may become compromised because of it.</li>
+          </ul>
         </div>
       </div>
     </div>
