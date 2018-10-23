@@ -15,8 +15,8 @@
       <h3>Links</h3>
       <p>For more information about the UX Design department, check out the following links.</p>
       <ul>
-        <li><a href="https://about.gitlab.com/handbook/ux/">UX Handbook</a></li>
-        <li><a href="https://gitlab.com/gitlab-org/design.gitlab.com">GitLab Design System Project</a></li>
+        <li><a href="https://about.gitlab.com/handbook/engineering/ux/">UX Handbook</a></li>
+        <li><a href="https://gitlab.com/gitlab-org/design.gitlab.com">GitLab Design System project</a></li>
         <li><a href="https://docs.gitlab.com/ce/development/ux_guide/">UX Guide <strong>(deprecated)</strong></a></li>
         <li><a href="https://dribbble.com/gitlab">GitLab Dribbble</a></li>
       </ul>
