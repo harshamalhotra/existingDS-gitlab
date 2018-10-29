@@ -94,6 +94,7 @@
 
       <h4>Split dropdown</h4>
       <p>Dropdown buttons may be split when its options are actions. The text button will allow immediate access to the most common option and an attached dropdown button to either change the default action or directly access a list of related actions. The dropdown button is attached to the right of the text button and has a chevron icon as its label.</p>
+      <p>If the dropdown menu has no related actions available, a split dropdown button should be converted back to just a text button.</p>
       <p class="todo">Todo: Add live component block with code example</p>
       
       <h4>Icon dropdown</h4>
