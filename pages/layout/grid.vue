@@ -10,9 +10,12 @@
       <p class="todo">Todo: Define breakpoints</p>
 
       <h2>Page containers</h2>
-      <p>Users can choose between two kinds of <a href="https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width" target="_blank">layout width</a> which set the behavior of page containers: <strong>fixed</strong> (default) or <strong>fluid</strong>.
-      <p>The <strong>fluid</strong> layout does not impose any width restrictions to page containers, so elements expand across the screen to fill all available space.
-      <p>The <strong>fixed</strong> layout applies the ideal maximum width to page containers according to the elements being displayed so they can be experienced using the most appropriate width.</p>
+      <p>Users can choose between two kinds of <a 
+        href="https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width" 
+        target="_blank"
+      >layout width</a> which set the behavior of page containers: <strong>fixed</strong> (default) or <strong>fluid</strong>.
+      </p><p>The <strong>fluid</strong> layout does not impose any width restrictions to page containers, so elements expand across the screen to fill all available space.
+      </p><p>The <strong>fixed</strong> layout applies the ideal maximum width to page containers according to the elements being displayed so they can be experienced using the most appropriate width.</p>
 
       <p><a href="/components/breadcrumbs">Breadcrumbs</a> always share the width of the page container that follows it.</p>
 
@@ -27,7 +30,7 @@
 
       <h2>Baseline grid</h2>
       <p>Adhering to a baseline grid allows us to be more efficient by removing decision making while maintaining a consistent rhythm between components and typography.
-      <h3>Components</h3>
+      </p><h3>Components</h3>
       <p>Using a baseline grid of 8px allows flexibility when scaling and defining our <a href="/layout/spacing">spacing</a> without overloading the system with options. By using multiples of 8 to define dimensions, padding, and margins of components, we ensure every UI element aligns to the pixel grid.</p>
       <div class="baseline a-center m-b-6">
         <div class="w-13 h-3"></div>

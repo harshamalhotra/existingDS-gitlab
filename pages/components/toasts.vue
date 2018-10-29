@@ -40,10 +40,10 @@
       <p>There are some adjustments necessary for toasts displayed on smaller screens.</p>
       <p class="todo">Todo: Add an example of a live component related to mobile guidelines</p>
       <ul>
-          <li>The width of the toast is full (100%).</li> 
-          <li>The toast does not have rounded corners.</li>
-          <li>If the message has only one line and the only action is to dismiss, the toasts retain the dismiss icon.</li>
-          <li>If the message wraps onto another line, place the action buttons below the message, aligned to the right, with the “Dismiss” action first.</li>
+        <li>The width of the toast is full (100%).</li> 
+        <li>The toast does not have rounded corners.</li>
+        <li>If the message has only one line and the only action is to dismiss, the toasts retain the dismiss icon.</li>
+        <li>If the message wraps onto another line, place the action buttons below the message, aligned to the right, with the “Dismiss” action first.</li>
       </ul>
       <h2>Demo</h2>
       <p class="todo">Todo: Add live component block with code example</p>
@@ -52,7 +52,7 @@
       <p><a href="https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/toasts-spec-previews/">Sketch Measure Preview for toasts</a></p>
       <h2>Animation Specifications</h2>
       <p>Specs: Ease-in(Show up) / Ease-out (Disappear) Time: 200 milliseconds Direction: Comes up from the bottom-left side of the screen.</p>
-       <p class="todo">Todo: Add link to animation example</p>
+      <p class="todo">Todo: Add link to animation example</p>
       <h2>Related patterns</h2>
       <ul>
         <li><a href="/components/modals">Modals</a></li>
