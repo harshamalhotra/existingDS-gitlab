@@ -17,7 +17,10 @@
           <li><a href="#persona-sam">Sam</a>, Security Analyst</li>
         </ul>
       </div>
-      <div class="persona card m-b-8" id="persona-parker">
+      <div 
+        id="persona-parker" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Parker</h2>
         </div>
@@ -51,7 +54,10 @@
           </ul>
         </div>
       </div>
-      <div class="persona card m-b-8" id="persona-delaney">
+      <div 
+        id="persona-delaney" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Delaney</h2>
         </div>
@@ -84,7 +90,10 @@
           </ul>
         </div>
       </div>
-      <div class="persona card m-b-8" id="persona-devon">
+      <div 
+        id="persona-devon" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Devon</h2>
         </div>
@@ -118,9 +127,12 @@
             <li>I dislike frequent context-switching and being responsible for some tasks that I feel I am not good at, because of the many hats my job requires me to wear.</li>
             <li>I'm frustrated by the politics of convincing people to adopt my recommendations.</li>
           </ul>
-       </div>
+        </div>
       </div>
-      <div class="persona card m-b-8" id="persona-sasha">
+      <div 
+        id="persona-sasha" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Sasha</h2>
         </div>
@@ -155,7 +167,10 @@
           </ul>
         </div>
       </div>
-      <div class="persona card m-b-8" id="persona-sidney">
+      <div 
+        id="persona-sidney" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Sidney</h2>
         </div>
@@ -189,7 +204,10 @@
           </ul>
         </div>
       </div>
-      <div class="persona card m-b-8" id="persona-sam">
+      <div 
+        id="persona-sam" 
+        class="persona card m-b-8"
+      >
         <div class="card--header">
           <h2>Sam</h2>
         </div>

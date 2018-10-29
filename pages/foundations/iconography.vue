@@ -4,7 +4,10 @@
       <h1>Iconography</h1>
       <p>One of our values is to create a distinguished GitLab personality that is strong and consistent. Iconography is a powerful visual cue to the user and should reflect our particular sense of style.</p>
       <h2>Icon viewer</h2>
-      <p>You can view all of the current icons in GitLab at the following link: <a href="http://gitlab-org.gitlab.io/gitlab-svgs/" target="_blank">GitLab SVGs</a></p>
+      <p>You can view all of the current icons in GitLab at the following link: <a 
+        href="http://gitlab-org.gitlab.io/gitlab-svgs/" 
+        target="_blank"
+      >GitLab SVGs</a></p>
       <h2>Usage</h2>
       <p>Icons are used to stress visual weight for elements with a high priority or to explain the universal knowledge in a simple way.</p>
       <p>The level of visual weight from heavy to light is: <strong>Icon + label > Icon > label.</strong></p>
@@ -26,7 +29,7 @@
         </tbody>
       </table>
       <p>Don't use different icons to refer to one specific meaning.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -41,7 +44,7 @@
         </tbody>
       </table>
       <p>Don't frequently use the combination of an icon and a label. Use the combination only for the elements with high priority. For instance, we use an icon + a label for the contextual navigation.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -56,7 +59,7 @@
         </tbody>
       </table>
       <p>Don't use an icon to explain a meaning which is not straight-forward. If an icon is not accompanied by a label, provide a quick explanation for users in a tooltip.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -71,7 +74,7 @@
         </tbody>
       </table>
       <p>Use whole pixels to create icons in order to align properly to a pixel grid. For additional details on grids, visit our <a href="/layout/baseline-grid">baseline grid guide</a>.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -86,7 +89,7 @@
         </tbody>
       </table>
       <p>Use rounded strokes.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -101,7 +104,7 @@
         </tbody>
       </table>
       <p>Simplify icons for clarity and legibility.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>
@@ -116,7 +119,7 @@
         </tbody>
       </table>
       <p>Make the icons front-face instead of different dimensions.</p>
-       <table class="do-dont m-b-6">
+      <table class="do-dont m-b-6">
         <thead>
           <tr>
             <th>Do</th>

@@ -21,7 +21,7 @@
             <td>Checkmark dropdowns</td>
             <td>
               <p>These dropdowns are used as inputs. The individual rows in these dropdowns can show a checkmark to indicate that they have been selected or enabled. They are a collection of checkmarks. A dash (<code>–</code>) should be used instead of a checkmark when the row's value is present in some of the elements the dropdown is modifying but not others.</p>
-          </td>
+            </td>
           </tr>
         </tbody>
       </table>

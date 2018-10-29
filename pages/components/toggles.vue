@@ -25,5 +25,5 @@
         <li><a href="/components/segmented-control">Segmented control</a></li>
       </ul>
     </div>
-   </div>
+  </div>
 </template>

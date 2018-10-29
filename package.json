@@ -1,28 +1,32 @@
 {
-  "dependencies": {
-    "@gitlab-org/csslab": "^0.0.4",
-    "@gitlab-org/gitlab-svgs": "^1.5.0",
-    "caniuse-lite": "^1.0.30000792",
-    "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "html-loader": "^0.5.1",
-    "markdown-loader": "^2.0.1",
-    "node-sass": "^4.9.3",
-    "nuxt": "^1.0.0-rc11",
-    "prismjs": "^1.8.3",
-    "sass-loader": "^6.0.6",
-    "vue": "^2.5.2",
-    "vue-loader": "^13.3.0",
-    "vue-server-renderer": "^2.5.13",
-    "vue-template-compiler": "^2.5.2"
-  },
-  "devDependencies": {
-    "babel-preset-vue": "^1.2.1",
-    "webpack": "^3.10.0"
-  },
+  "name": "design.gitlab.com",
+  "version": "1.0.0",
+  "description": "Design guidelines and UI components for GitLab",
+  "author": "GitLab",
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
+    "buildsingle": "nuxt build",
     "build": "NODE_ENV=production nuxt generate",
-    "test": "true"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@gitlab-org/gitlab-svgs": "^1.32.0",
+    "@nuxtjs/axios": "^5.0.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-beta",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@gitlab/eslint-config": "^1.1.1",
+    "eslint": "^5.7.0",
+    "eslint-loader": "^2.1.1",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0"
   }
 }
