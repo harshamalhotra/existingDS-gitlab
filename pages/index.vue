@@ -15,7 +15,7 @@
       <div class="overlay"></div>
     </div>
     <div class="content limited m-t-10 m-b-10">
-      <div class="distributed principles">
+      <div class="distributed principles a-center max-w-sm">
         <div class="principle m-b-7">
           <img 
             src="../assets/images/principles/professional-productive.png" 
@@ -23,7 +23,7 @@
             class="a-center"
           />
           <div class="principle__content m-l-5">
-            <h2>Professional and productive</h2>
+            <h2>Productive</h2>
             <p>GitLab is an application to support what people do, day in, day out. We need to respect the importance of their work, and avoid gimicky details.</p>
           </div>
         </div>
@@ -33,7 +33,7 @@
             srcset="../assets/images/principles/minimal-efficient@2x.png 2x"
           />
           <div class="principle__content m-l-5">
-            <h2>Minimal and efficient</h2>
+            <h2>Minimal</h2>
             <p>While work can get complicated, GitLab is about bringing a sharp focus, helping our customers know what matters now.</p>
           </div>
         </div>
@@ -43,18 +43,8 @@
             srcset="../assets/images/principles/human-quirky@2x.png 2x"
           />
           <div class="principle__content m-l-5">
-            <h2>Human and quirky</h2>
+            <h2>Human</h2>
             <p>We need to build empathy with our users, understand their state of mind, and connect with them on a human level. Quirkiness is part of our DNA; we should embrace it in the right moments and contexts.</p>
-          </div>
-        </div>
-        <div class="principle">
-          <img 
-            src="../assets/images/principles/immediately-recognize.png" 
-            srcset="../assets/images/principles/immediately-recognize@2x.png 2x"
-          />
-          <div class="principle__content m-l-5">
-            <h2>Immediately recognizable</h2>
-            <p>When you look at any screen, you should know immediately that this is GitLab. Our personality is strong and consistent across product and marketing experiences.</p>
           </div>
         </div>
       </div>

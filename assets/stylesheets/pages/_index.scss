@@ -39,21 +39,9 @@
 }
 
 .principles {
-  display: flex;
-  flex-wrap: wrap;
-
   .principle {
     display: flex;
     align-items: center;
-    width: 50%;
-
-    &:nth-child(odd) {
-      padding-right: $gl-spacing-5;
-    }
-
-    &:nth-child(even) {
-      padding-left: $gl-spacing-5;
-    }
   }
 }
 
