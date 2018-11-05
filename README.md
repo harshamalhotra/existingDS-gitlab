@@ -1,5 +1,7 @@
 # GitLab Design System
 
+You can view it at [design.gitlab.com](https://design.gitlab.com/).
+
 ## Quick start
 
 1. Clone the project with `git clone git@gitlab.com:gitlab-org/design.gitlab.com.git`
