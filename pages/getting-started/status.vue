@@ -91,6 +91,10 @@
             <td>🚫</td>
           </tr>
           <tr>
+            <td><a href="../../components/banners">Banners</a></td>
+            <td>🚫</td>
+          </tr>
+          <tr>
             <td><a href="../../components/breadcrumbs">Breadcrumbs</a></td>
             <td>⚠️</td>
           </tr>

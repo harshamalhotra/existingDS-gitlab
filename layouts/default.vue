@@ -102,6 +102,10 @@
           >Badges</nuxt-link>
           <nuxt-link 
             class="nav-sidebar__section-items-anchor" 
+            to="/components/banners"
+          >Banners</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
             to="/components/breadcrumbs"
           >Breadcrumbs</nuxt-link>
           <nuxt-link 
