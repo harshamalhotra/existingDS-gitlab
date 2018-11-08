@@ -101,6 +101,10 @@
           >Buttons</nuxt-link>
           <nuxt-link 
             class="nav-sidebar__section-items-anchor" 
+            to="/components/checkboxes"
+          >Checkboxes</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
             to="/components/code-snippets"
           >Code snippets</nuxt-link>
           <nuxt-link 
