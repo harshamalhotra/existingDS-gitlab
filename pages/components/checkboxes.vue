@@ -13,6 +13,8 @@
       <p>Checkbox labels are set in regular font weight, positioned to the right of the element, and should be as short as possible. If more, explanatory text is required, it should be added and styled as <a href="/components/forms#help-text">help text</a> below the label.</p>
       <h3>Visual Design</h3>
       <p>Checkboxes should use high-contrast colors to indicate the states - true or false. A checkmark and hyphen icon are used to differentiate between true or indeterminate.</p>
+      <h3>Interaction</h3>
+      <p>Users are able to select an option by clicking on either the checkbox itself or on its label.</p>
       <h2>Demo</h2>
       <p class="todo">Todo: Add live component block with code example</p>
       <h2>Design specifications</h2>
