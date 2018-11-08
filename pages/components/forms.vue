@@ -9,7 +9,7 @@
       <p class="todo">Todo: Add live component block with code example (Vertical form with stacked input fields)</p>
       <p class="todo">Todo: Add live component block with code example (Horizontal form)</p>
       <h3>Labels</h3>
-      <p>Input field and text area labels are set in bold and positioned above the form element by default. Labels must use the <strong>for</strong> attribute for accessibility reasons. Labels for <a href="#checkbox">checkboxes and radios</a> are set in regular font weight.</p>
+      <p>Input field and text area labels are set in bold and positioned above the form element by default. Labels must use the <strong>for</strong> attribute for accessibility reasons. Labels for <a href="#checkbox">checkboxes and radio buttons</a> are set in regular font weight.</p>
       <p>In rare cases and exceptions, the label can be placed to the left of the input field. Examples include single input fields (e.g. "Sort by" dropdowns) and horizontally distributed forms.</p>
       <p class="todo">Todo: Add live component block with code example (sort by dropdown)</p>
       <p class="todo">Todo: Add live component block with code example (horizontally distributed form)</p>
@@ -37,10 +37,10 @@
       <p class="todo">Todo: Add live component block with code example (placeholder)</p>
       <p>If a placeholder can’t be shortened but an explanation is needed, a <a href="#help-text">Help text</a> below the input should be used. An easy guideline to find out if the explanatory text is too long for a placeholder: if it resembles a sentence, use Help text below the input, if it’s just a few words (ideally up to two or three), consider using a placeholder.</p>
       <p class="todo">Todo: Add live component block with code example (help text)</p>
-      <h3 id="checkbox">Checkboxes and radios</h3>
-      <p>Checkbox and radio labels are set in regular font weight and should be as short as possible. If more, explanatory text is required, it should be added and styled as <a href="#help-text">Help text</a> below the label.</p>
-      <p class="todo">Todo: Add live component block with code example (checkbox & radio: active & disabled)</p>
-      <p class="todo">Todo: Add live component block with code example (checkbox & radio with help text below labels)</p>
+      <h3 id="checkbox">Checkboxes and radio buttons</h3>
+      <p>Checkbox and radio button labels are set in regular font weight and should be as short as possible. If more, explanatory text is required, it should be added and styled as <a href="#help-text">Help text</a> below the label.</p>
+      <p class="todo">Todo: Add live component block with code example (checkbox & radio button: active & disabled)</p>
+      <p class="todo">Todo: Add live component block with code example (checkbox & radio button: with help text below labels)</p>
       <h3>Validation</h3>
       <h4>Error messages and states</h4>
       <p>Error messages and validation should be shown inline and can, in general, happen either live or on form submission. Live validation should be seen as assisting the user to input the correct information and not as a way of preventing them from submitting the form with possibly incorrect information (live validation might be frontend-only but the user has no way of knowing that).</p>
