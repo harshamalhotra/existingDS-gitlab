@@ -42,13 +42,34 @@
           class="nav-sidebar__section"
         >
           <summary class="nav-sidebar__section-summary">Foundations</summary>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/colors">Colors</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/iconography">Iconography</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/motion">Motion</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/illustration">Illustration</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/typography">Typography</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/interactions">Interactions</nuxt-link>
-          <nuxt-link class="nav-sidebar__section-items-anchor" to="/foundations/saving-and-feedback">Saving and feedback</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/colors"
+          >Colors</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/iconography"
+          >Iconography</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/motion"
+          >Motion</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/illustration"
+          >Illustration</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/typography"
+          >Typography</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/interactions"
+          >Interactions</nuxt-link>
+          <nuxt-link
+            class="nav-sidebar__section-items-anchor"
+            to="/foundations/saving-and-feedback"
+          >Saving and feedback</nuxt-link>
         </details>
 
         <details 
