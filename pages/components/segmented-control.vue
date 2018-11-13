@@ -2,10 +2,11 @@
   <div class="content limited m-t-7 m-b-7">
     <div class="component md">
       <h1>Segmented control</h1>
-      <p>A segmented control allows users to choose one out of a range of available options. It’s commonly used as an alternative to dropdowns and radio selections.</p>
+      <p>A segmented control allows users to choose one out of a range of available options. It is a button group of equal options where only one can be selected and active. There must always be one option active.</p>
       <h2>Usage</h2>
-      <p>A segmented control is generally easier to use than the patterns that allow similar interactions but it comes with its own limitations. Because it takes up more space, a segmented control should only be used for up to 5 options but is ideal when there are 2 or 3. A segmented control should be used instead of a dropdown when there are only a few options and enough room to fit within the UI. It requires fewer interactions and is easier to use on mobile devices, thus having a smaller effect on the user’s cognitive load.</p>
-      <p>A segmented control is not a group of individual buttons that can be interacted with independently from each other. A segmented control is a group of equal options where only one can be selected and active. There’s no case where none of the options is active.</p>
+      <p>A segmented control is commonly used as an alternative to <a href="/components/dropdowns">dropdowns</a>, <a href="/components/radio-buttons">radio buttons</a>, or <a href="/components/toggles">toggles</a>, but it comes with its own limitations. Because it takes up more space, a segmented control should only be used for up to 5 options. It is ideal when there are 2 or 3 because they visually expose the options available to a user. A segmented control should be used instead of a dropdown when there are only a few options and enough room to fit within the UI. It requires fewer interactions and is easier to use on mobile devices, thus having a smaller effect on the user’s cognitive load. Results are effective and visible immediately similar to toggles.</p>
+      <p>A segmented control may replace a group of radio buttons or a toggle to allow users to choose between two or multiple options. In order to help choosing the right solution follow the table below.</p>
+      <p class="todo">Todo: Add replacement-comparison-table</p>
       <h3>Labels</h3>
       <p>Label positioning rules are the same as they are for <a href="/components/forms">forms</a>. They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.</p>
       <p>The label can be omitted in cases when it’s clear what the segmented control is referring to from the UI (for example, switching between a day, week or month view in a calendar UI).</p>
@@ -21,7 +22,8 @@
       <ul>
         <li><a href="/components/buttons">Buttons</a></li>
         <li><a href="/components/dropdowns">Dropdowns</a></li>
-        <li><a href="/components/forms">Forms</a></li>
+        <li><a href="/components/radio-buttons">Radio buttons</a></li>
+        <li><a href="/components/toggles">Toggles</a></li>
       </ul>
     </div>
   </div>
