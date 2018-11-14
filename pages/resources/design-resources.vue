@@ -25,7 +25,7 @@
       <p>We built an <a href="http://gitlab-org.gitlab.io/gitlab-svgs/">online viewer</a> of our GitLab SVGs that allows exploring and searching our icon library.</p>
       <h2>GitLab First Look</h2>
       <p>Here at GitLab, we regularly conduct user research to improve our product. You can help shape the future of GitLab. We want your feedback on how we can continue to improve GitLab. By joining GitLab First Look, you’ll be the first to see new features and your thoughts will drive product improvements for a better user experience.</p>
-      <p>To join or learn more about GitLab First Look, see <a href="https://about.gitlab.com/community/gitlab-first-look/index.html">GitLab UX Research</a>.</p>
+      <p><a href="https://about.gitlab.com/community/gitlab-first-look/index.html">Join or learn more about GitLab First Look.</a>.</p>
     </div>
-  </div>
+  </div> 
 </template>
