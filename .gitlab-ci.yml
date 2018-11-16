@@ -13,9 +13,12 @@ stages:
   yarn install
 
 .build_base: &build_base
+  stage: build
   before_script:
     - *install
-  stage: build
+  script:
+    - yarn run build
+    - utils/create-redirections.sh
   dependencies:
   artifacts:
     expire_in: 7 days
@@ -27,16 +30,12 @@ stages:
 
 build_branch:
   <<: *build_base
-  script:
-    - yarn run build
   except:
     - master
 
 build_master:
   <<: *build_base
   variables:
-  script:
-    - yarn run build
   only:
     - master
 
