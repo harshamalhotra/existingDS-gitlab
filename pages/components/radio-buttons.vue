@@ -26,5 +26,5 @@
         <li><a href="/components/toggles">Toggles</a></li>
       </ul>
     </div>
-   </div>
+  </div>
 </template>

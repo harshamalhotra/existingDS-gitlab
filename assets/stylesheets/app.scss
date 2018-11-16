@@ -1,21 +1,19 @@
-@import "variables";
+@import 'variables';
 
-@import "utilities/mixins";
+@import 'utilities/mixins';
 
-@import "framework/alignment";
-@import "framework/base";
-@import "framework/color";
-@import "framework/content";
-@import "framework/display";
-@import "framework/sidebar";
-@import "framework/sizing";
-@import "framework/spacing";
-@import "framework/typography";
+@import 'framework/alignment';
+@import 'framework/base';
+@import 'framework/color';
+@import 'framework/content';
+@import 'framework/display';
+@import 'framework/sidebar';
+@import 'framework/sizing';
+@import 'framework/spacing';
+@import 'framework/typography';
 
-@import "components/card";
-@import "components/table";
-
-@import "pages/index";
-@import "pages/p_baseline-grid";
-@import "pages/p_spacing";
-@import "pages/p-color";
+@import 'pages/index';
+@import 'pages/p_baseline-grid';
+@import 'pages/p_spacing';
+@import 'pages/p-color';
+@import 'pages/p_components';
