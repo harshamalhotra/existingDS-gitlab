@@ -1,8 +1,10 @@
+import serveStatic from 'serve-static'
+
 module.exports = {
-  mode: 'universal',
+  mode: 'SPA',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'GitLab Design System',
     meta: [
@@ -27,7 +29,8 @@ module.exports = {
         type: 'image/png',
         href: '/favicon-16x16.png',
         sizes: '16x16'
-      }
+      },
+      { rel: 'stylesheet', href: '/application.css' }
     ]
   },
 
@@ -35,45 +38,95 @@ module.exports = {
     dir: 'public'
   },
 
+  router: {
+    mode: 'hash'
+  },
+
+  render: {
+    ssr: false
+  },
+
+  axios: {
+    browserBaseURL: '/'
+  },
+
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [],
 
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [{ src: '~/plugins/gitlab-ui.js', ssr: false }],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '~/modules/content_preparer'
   ],
   /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
+   ** Axios module configuration
+   */
+  serverMiddleware: [],
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
+    watch: ['~/contents'],
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
+      config.resolve.alias.vue$ = 'vue/dist/vue.esm.js' // Full Vue version for being able to use dynamic templates
+
+      config.module.rules.splice(0, 1)
+
+      config.module.rules.push({
+        test: /\.md$/,
+        include: /static/,
+        loader: 'frontmatter-markdown-loader'
+      })
+
+      config.module.rules.push({
+        test: /\.js$/,
+        include: /node-modules/,
+        loader: 'babel-loader'
+      })
+
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'raw-loader'
+      })
+
+      config.module.rules.push({
+        test: /\.example\.vue$/,
+        loader: 'raw-loader'
+      })
+
+      config.module.rules.push({
+        test: /\.vue$/,
+        exclude: /\.example\.vue$/,
+        loader: 'vue-loader'
+      })
+
+      config.module.rules.push({
+        test: /\.css$/,
+        include: /node-modules/,
+        loader: 'css-loader'
+      })
+
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

@@ -47,7 +47,7 @@
       </ul>
       <h3>Mobile</h3>
       <p>On mobile, the layout is same as the one on desktop. It only scales down the illustrations and changes the width of paragraph.</p>
-      <p class="todo">Add Sketch Measure Preview for empty states</a></p>
+      <p class="todo">Add Sketch Measure Preview for empty states</p>
       <h2>Related patterns</h2>
       <ul>
         <li><a href="/components/banners">Banners</a></li>

@@ -4,20 +4,27 @@
   "description": "Design guidelines and UI components for GitLab",
   "author": "GitLab",
   "scripts": {
+    "prestart": "yarn run download-application-css",
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
+    "prebuild": "yarn run download-application-css",
     "build": "NODE_ENV=production nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "download-application-css": "sh utils/download-application-css.sh"
   },
   "dependencies": {
     "@gitlab-org/gitlab-svgs": "^1.32.0",
+    "@gitlab-org/gitlab-ui": "^1.10.2",
     "@nuxtjs/axios": "^5.0.0",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0"
+    "front-matter": "^3.0.0",
+    "frontmatter-markdown-loader": "^1.4.0",
+    "markdown-it": "^8.4.2",
+    "nuxt": "^2.0.0",
+    "vue-loader": "^15.4.2"
   },
   "devDependencies": {
     "@gitlab/eslint-config": "^1.1.1",
@@ -27,6 +34,7 @@
     "nodemon": "^1.11.0",
     "prettier": "1.14.3",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "serve-static": "^1.13.2"
   }
 }
