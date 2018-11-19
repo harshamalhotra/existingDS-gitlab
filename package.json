@@ -4,14 +4,11 @@
   "description": "Design guidelines and UI components for GitLab",
   "author": "GitLab",
   "scripts": {
-    "prestart": "yarn run download-application-css",
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
-    "prebuild": "yarn run download-application-css",
     "build": "NODE_ENV=production nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "download-application-css": "sh utils/download-application-css.sh"
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "@gitlab-org/gitlab-svgs": "^1.32.0",
