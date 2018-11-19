@@ -30,7 +30,7 @@ module.exports = {
         href: '/favicon-16x16.png',
         sizes: '16x16'
       },
-      { rel: 'stylesheet', href: '/application.css' }
+      { rel: 'stylesheet', href: 'https://gitlab-org.gitlab.io/gitlab-ce/application.css' }
     ]
   },
 
