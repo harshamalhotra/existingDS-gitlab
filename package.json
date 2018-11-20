@@ -31,7 +31,6 @@
     "nodemon": "^1.11.0",
     "prettier": "1.14.3",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0",
-    "serve-static": "^1.13.2"
+    "sass-loader": "^7.1.0"
   }
 }
