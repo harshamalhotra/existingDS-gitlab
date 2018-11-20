@@ -1,7 +1,7 @@
 import serveStatic from 'serve-static'
 
 module.exports = {
-  mode: 'SPA',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -30,7 +30,10 @@ module.exports = {
         href: '/favicon-16x16.png',
         sizes: '16x16'
       },
-      { rel: 'stylesheet', href: 'https://gitlab-org.gitlab.io/gitlab-ce/application.css' }
+      {
+        rel: 'stylesheet',
+        href: 'https://gitlab-org.gitlab.io/gitlab-ce/application.css'
+      }
     ]
   },
 
