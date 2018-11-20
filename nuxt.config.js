@@ -32,7 +32,10 @@ module.exports = {
         rel: 'stylesheet',
         href: 'https://gitlab-org.gitlab.io/gitlab-ce/application.css'
       }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'ui-indigo'
+    }
   },
 
   generate: {
@@ -72,8 +75,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
     '~/modules/content_preparer'
   ],
   /*

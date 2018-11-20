@@ -21,7 +21,7 @@ Defining context depends on the hierarchy of information displayed on the screen
 
 Please note that contexts may be temporary, such as a modal.
 
-[[Example:button-variants]]
+Todo: Add live component block with code example
 
 ### Secondary
 
@@ -189,7 +189,7 @@ Todo: Add live component block with code example
 
 Depending on the interface buttons may either use the medium or small size.
 
-[[Example:button-sizes]]
+Todo: Add live component block with code example
 
 ### Medium
 

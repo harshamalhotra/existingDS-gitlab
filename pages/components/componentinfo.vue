@@ -1,8 +1,12 @@
 <template>
   <div class="content limited m-t-7 m-b-7">
     <div v-if="componentAttributes">
-      <h1>{{ componentAttributes.name }}</h1>
-      <b-tabs class="pt-3">
+      <div class="md">
+        <h1>{{ componentAttributes.name }}</h1>
+      </div>
+      <b-tabs
+        nav-wrapper-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
+      >
         <b-tab 
           title="Design" 
           active 
