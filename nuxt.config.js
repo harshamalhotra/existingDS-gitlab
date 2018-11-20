@@ -1,5 +1,3 @@
-import serveStatic from 'serve-static'
-
 module.exports = {
   mode: 'SPA',
   /*
