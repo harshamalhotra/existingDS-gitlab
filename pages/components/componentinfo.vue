@@ -52,7 +52,7 @@
               :key="`props-${vueComponentName}`"
               class="component md mt-3"
             >
-              <h2>Component Properties</h2>
+              <h3>Component Properties</h3>
               <gl-component-documentation 
                 :key="`docs-${vueComponentName}`"
                 :component-name="vueComponentName" 
