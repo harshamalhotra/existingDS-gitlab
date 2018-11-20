@@ -81,11 +81,12 @@ module.exports = {
    */
   serverMiddleware: [],
 
+  watch: ['~/contents/'],
+
   /*
    ** Build configuration
    */
   build: {
-    watch: ['~/contents'],
     /*
      ** You can extend webpack config here
      */

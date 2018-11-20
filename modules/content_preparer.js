@@ -9,6 +9,7 @@ export default function() {
     if (!isClient) {
       return
     }
+
     const baseContentsDir = path.resolve(__dirname, '../static/contents/')
     const outputDir = path.join(baseContentsDir, 'components')
 
@@ -19,33 +20,40 @@ export default function() {
       fs.mkdirSync(outputDir)
     }
 
-    const baseComponentsDir = path.resolve(__dirname, '../contents/components/')
-    const convertComponent = componentFileName => (
-      err,
-      componentFileContent
-    ) => {
-      if (err) throw err
+    const componentInfos = []
 
+    const baseComponentsDir = path.resolve(__dirname, '../contents/components/')
+    const convertComponent = (componentFileName, componentFileContent) => {
       const content = fm(componentFileContent)
-      fs.writeFile(
+      fs.writeFileSync(
         `${outputDir}/${componentFileName.replace(/.md/g, '.json')}`,
-        JSON.stringify(content),
-        writeErr => {
-          if (writeErr) throw writeErr
-        }
+        JSON.stringify(content)
       )
+
+      componentInfos.push({
+        id: componentFileName.replace('.md', ''),
+        name: content.attributes.name,
+        hasVueComponent:
+          content.attributes.vueComponents &&
+          content.attributes.vueComponents.length > 0,
+        hasInfo: content.body.length > 0
+      })
     }
 
-    fs.readdir(baseComponentsDir, (err, items) => {
-      if (err) throw err
-
-      items.forEach(item => {
-        fs.readFile(
-          path.join(baseComponentsDir, item),
-          'utf8',
-          convertComponent(item)
-        )
-      })
+    const fileItems = fs.readdirSync(baseComponentsDir)
+    fileItems.forEach(item => {
+      const itemContent = fs.readFileSync(
+        path.join(baseComponentsDir, item),
+        'utf8'
+      )
+      convertComponent(item, itemContent)
     })
+
+    fs.writeFileSync(
+      path.resolve(__dirname, '../static/contents/contentTree.json'),
+      JSON.stringify({
+        components: componentInfos
+      })
+    )
   })
 }

@@ -1,0 +1,5 @@
+---
+name: Modal
+vueComponents: 
+  - GlModal
+---
