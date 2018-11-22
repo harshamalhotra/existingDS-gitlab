@@ -793,21 +793,6 @@
   resolved "https://registry.yarnpkg.com/@gitlab-org/gitlab-svgs/-/gitlab-svgs-1.32.0.tgz#a65ab7724fa7d55be8e5cc9b2dbe3f0757432fd3"
   integrity sha512-L3o8dFUd2nSkVZBwh2hCJWzNzADJ3dTBZxamND8NLosZK9/ohNhccmsQOZGyMCUHaOzm4vifaaXkAXh04UtMKA==
 
-"@gitlab-org/gitlab-ui@^1.10.2":
-  version "1.10.2"
-  resolved "https://registry.yarnpkg.com/@gitlab-org/gitlab-ui/-/gitlab-ui-1.10.2.tgz#2bcc90d5efb143289ecb2df0f71342f1e52e026f"
-  integrity sha512-2hrtW1zncqHdwC0INMkm6WAY/z5DHoqLXfV+VwfyZKpYTas2oh8vtqTfo1M6x/vcr9yJ9n5RfexT7FUZnmquhA==
-  dependencies:
-    babel-standalone "^6.26.0"
-    bootstrap-vue "^2.0.0-rc.11"
-    copy-to-clipboard "^3.0.8"
-    highlight.js "^9.13.1"
-    js-beautify "^1.8.8"
-    lodash "^4.17.11"
-    url-search-params-polyfill "^5.0.0"
-    vue "^2.5.16"
-    vue-loader "^15.4.2"
-
 "@gitlab/eslint-config@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@gitlab/eslint-config/-/eslint-config-1.1.1.tgz#0f4b096ba0870e7f7180eff8cf856dfc4d19f5fd"
@@ -820,6 +805,21 @@
     eslint-plugin-import "^2.14.0"
     eslint-plugin-promise "^4.0.1"
     eslint-plugin-vue "^5.0.0-beta.3"
+
+"@gitlab/ui@^1.12.0":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-1.12.0.tgz#14b8a1f03ddcd5cc69f74c1ee86be98a1ddb2064"
+  integrity sha512-aatnUInKFxsHnOEvSxO27KArUC5qgCZ//KTfZF1knzw7gJvU9pXxhP6jmUsDTkVYSJ3lDOJnLGQxfXUyjDn7SQ==
+  dependencies:
+    babel-standalone "^6.26.0"
+    bootstrap-vue "^2.0.0-rc.11"
+    copy-to-clipboard "^3.0.8"
+    highlight.js "^9.13.1"
+    js-beautify "^1.8.8"
+    lodash "^4.17.11"
+    url-search-params-polyfill "^5.0.0"
+    vue "^2.5.16"
+    vue-loader "^15.4.2"
 
 "@nuxt/babel-preset-app@^2.3.1":
   version "2.3.1"
@@ -3432,11 +3432,6 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
-estree-walker@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.2.1.tgz#bdafe8095383d8414d5dc2ecf4c9173b6db9412e"
-  integrity sha1-va/oCVOD2EFNXcLs9MkXO225QS4=
-
 esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
@@ -5371,7 +5366,7 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
-minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
+minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -7424,21 +7419,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
-
-rollup-plugin-string@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-string/-/rollup-plugin-string-2.0.2.tgz#f5323a22cfd738b450cbea62ab6593705eac744b"
-  integrity sha1-9TI6Is/XOLRQy+piq2WTcF6sdEs=
-  dependencies:
-    rollup-pluginutils "^1.5.0"
-
-rollup-pluginutils@^1.5.0:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-1.5.2.tgz#1e156e778f94b7255bfa1b3d0178be8f5c552408"
-  integrity sha1-HhVud4+UtyVb+hs9AXi+j1xVJAg=
-  dependencies:
-    estree-walker "^0.2.1"
-    minimatch "^3.0.2"
 
 run-async@^2.2.0:
   version "2.3.0"
