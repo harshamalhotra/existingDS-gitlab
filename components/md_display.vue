@@ -18,7 +18,10 @@ export default {
       typographer: true,
     })
     let mdOutput = md.render(this.md)
-    mdOutput = mdOutput.replace(/\[\[Example:(.*?)\]\]/g, '<gl-example-display exampleName="$1" />')
+    mdOutput = mdOutput.replace(
+      /\[\[Example:(.*?)\]\]/g,
+      '<div class="app-styles"><gl-example-display exampleName="$1" /></div>'
+    )
 
     // Format Todo Messages as before
     mdOutput = mdOutput.replace(/Todo:(.*?)\n/gm, '<p class="todo">Todo: $1</p>')

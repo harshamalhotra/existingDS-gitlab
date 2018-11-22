@@ -5,61 +5,64 @@
         <h1>{{ componentAttributes.name }}</h1>
       </div>
       <b-tabs
-        nav-wrapper-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
+        nav-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
+        nav-wrapper-class="app-styles"
       >
         <b-tab 
           title="Design" 
           active 
-          class="pt-3"
+          class="p-t-3"
         >
           <md-display :md="componentBody" />
         </b-tab>
         <b-tab 
           v-if="vueComponents && vueComponents.length > 0"
           title="Vue Component" 
-          class="pt-3"
+          class="app-styles"
         >
-          <template v-for="vueComponentName in vueComponents">
-            <div
-              :key="`header-${vueComponentName}`" 
-              class="component md mb-3"
-            >
-              <h2
-                :key="`hl-${vueComponentName}`"
-                class="mb-3"
-              >Vue Component - {{ vueComponentName }}</h2>
-              <b-alert 
-                v-if="!vueComponentDocumentations[vueComponentName].followsDesignSystem"
-                :key="`design-alert-${vueComponentName}`"
-                show
-                variant="warning"
-                class="mt-3 mb-3"
+          <div class="pt-3">
+            <template v-for="vueComponentName in vueComponents">
+              <div
+                :key="`header-${vueComponentName}`" 
+                class="component md mb-3"
               >
-                This component does not yet conform to the correct styling defined in our <a href="https://design.gitlab.com/">Design System</a>. Refer to the <a href="https://design.gitlab.com/">Design System</a> documentation when referencing visuals for this component.
-              </b-alert>
-            </div>
-            <gl-example-explorer
-              :key="`examples-${vueComponentName}`"
-              :component-name="vueComponentName"
-            />
-            <md-display
-              v-if="vueComponentDocumentations[vueComponentName] && vueComponentDocumentations[vueComponentName].description"
-              :key="`description-${vueComponentName}`"
-              :md="vueComponentDocumentations[vueComponentName].description" 
-              class="mt-3 mb-3"
-            />
-            <div
-              :key="`props-${vueComponentName}`"
-              class="component md mt-3"
-            >
-              <h3>Component Properties</h3>
-              <gl-component-documentation 
-                :key="`docs-${vueComponentName}`"
-                :component-name="vueComponentName" 
-                class="mt-3 component-documentation"
+                <h2
+                  :key="`hl-${vueComponentName}`"
+                  class="mb-3"
+                >Vue Component - {{ vueComponentName }}</h2>
+                <b-alert 
+                  v-if="!vueComponentDocumentations[vueComponentName].followsDesignSystem"
+                  :key="`design-alert-${vueComponentName}`"
+                  show
+                  variant="warning"
+                  class="mt-3 mb-3"
+                >
+                  This component does not yet conform to the correct styling defined in our <a href="https://design.gitlab.com/">Design System</a>. Refer to the <a href="https://design.gitlab.com/">Design System</a> documentation when referencing visuals for this component.
+                </b-alert>
+              </div>
+              <gl-example-explorer
+                :key="`examples-${vueComponentName}`"
+                :component-name="vueComponentName"
               />
-            </div>
-          </template>
+              <md-display
+                v-if="vueComponentDocumentations[vueComponentName] && vueComponentDocumentations[vueComponentName].description"
+                :key="`description-${vueComponentName}`"
+                :md="vueComponentDocumentations[vueComponentName].description" 
+                class="mt-3 mb-3"
+              />
+              <div
+                :key="`props-${vueComponentName}`"
+                class="component md mt-3"
+              >
+                <h3>Component Properties</h3>
+                <gl-component-documentation 
+                  :key="`docs-${vueComponentName}`"
+                  :component-name="vueComponentName" 
+                  class="mt-3 component-documentation"
+                />
+              </div>
+            </template>
+          </div>
         </b-tab>
       </b-tabs>
     </div>
