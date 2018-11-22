@@ -33,6 +33,7 @@
     "nodemon": "^1.11.0",
     "prettier": "1.14.3",
     "raw-loader": "^0.5.1",
+    "resolve-relative-url": "^1.0.0",
     "sass-loader": "^7.1.0"
   }
 }
