@@ -75,7 +75,7 @@
 <script>
 import * as Documentation from '@gitlab-org/gitlab-ui/documentation'
 
-import mdDisplay from '../../components/md_display.vue';
+import mdDisplay from '../../components/md_display.vue'
 
 export default {
   components: {
@@ -94,28 +94,29 @@ export default {
       componentBody: null,
       vueComponents: null,
       vueComponentDocumentations: {},
-    };
+    }
   },
   created() {
-    this.componentAttributes = this.frontmatterInfo.attributes;
+    this.componentAttributes = this.frontmatterInfo.attributes
 
-    this.vueComponents = this.frontmatterInfo.attributes.vueComponents;
+    this.vueComponents = this.frontmatterInfo.attributes.vueComponents
 
-    this.componentBody = this.frontmatterInfo.body;
+    this.componentBody = this.frontmatterInfo.body
 
     if (this.vueComponents) {
       this.vueComponents.forEach(vueComponentName => {
-        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`);
-        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1);
-        snakeName = snakeName.replace(/gl_/, '');
+        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`)
+        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1)
+        snakeName = snakeName.replace(/gl_/, '')
 
-      Object.keys(Documentation.ComponentDocumentations).forEach(component => {
-        if (component.startsWith(vueComponentName)) {
-          this.vueComponentDocumentations[vueComponentName] =
-            Documentation.ComponentDocumentations[component]
-        }
+        Object.keys(Documentation.ComponentDocumentations).forEach(component => {
+          if (component.startsWith(vueComponentName)) {
+            this.vueComponentDocumentations[vueComponentName] =
+              Documentation.ComponentDocumentations[component]
+          }
+        })
       })
-    })
+    }
   },
-};
+}
 </script>
