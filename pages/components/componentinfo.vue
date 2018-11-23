@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import * as Documentation from '@gitlab-org/gitlab-ui/documentation'
+import * as Documentation from '@gitlab/ui/documentation'
 
 import mdDisplay from '../../components/md_display.vue'
 
