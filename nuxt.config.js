@@ -1,3 +1,5 @@
+import postCssGitlab from './modules/postcss_gitlab'
+
 module.exports = {
   mode: 'spa',
   /*
@@ -29,10 +31,13 @@ module.exports = {
         sizes: '16x16'
       },
       {
-        rel: 'stylesheet',
-        href: 'https://gitlab-org.gitlab.io/gitlab-ce/application.css'
+        src:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
       }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'ui-indigo'
+    }
   },
 
   generate: {
@@ -59,7 +64,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['../assets/stylesheets/app.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -72,8 +77,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
     '~/modules/content_preparer'
   ],
   /*
@@ -87,6 +90,12 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    watch: ['~/contents'],
+
+    postcss: {
+      plugins: [postCssGitlab({ scopeSelector: 'app-styles' })],
+      order: ['postcss-gitlab', 'postcss-import', 'postcss-preset-env']
+    },
     /*
      ** You can extend webpack config here
      */
@@ -94,6 +103,14 @@ module.exports = {
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js' // Full Vue version for being able to use dynamic templates
 
       config.module.rules.splice(0, 1)
+
+      const sassRule = config.module.rules.find(
+        rule => rule.test.toString().indexOf('.scss') > -1
+      )
+
+      const cssSassLoader = sassRule.oneOf[1].use[1]
+      // This turns off the check for the failing imports on the live imported application.css
+      cssSassLoader.options.url = false
 
       config.module.rules.push({
         test: /\.md$/,

@@ -25,12 +25,15 @@
   },
   "devDependencies": {
     "@gitlab/eslint-config": "^1.1.1",
+    "clean-css": "^4.2.1",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
+    "lodash.trim": "^4.5.1",
     "node-sass": "^4.9.4",
     "nodemon": "^1.11.0",
     "prettier": "1.14.3",
     "raw-loader": "^0.5.1",
+    "resolve-relative-url": "^1.0.0",
     "sass-loader": "^7.1.0"
   }
 }

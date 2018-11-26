@@ -1,40 +1,39 @@
 <template>
   <div class="content limited m-t-7 m-b-7">
-    <div class="">
+    <div class>
       <h1>GitLab Components</h1>
-      <div
+      <table 
         v-if="contentTree"
-        class="mt-3"
+        class="m-t-6 m-b-6"
+        style="width:65%"
       >
-        <b-list-group>
-          <b-list-group-item 
+        <b-list-group tag="tbody">
+          <b-list-group-item
             v-for="component in contentTree.components"
             :key="component.id"
+            tag="tr"
           >
-            <nuxt-link 
-              :key="`link-${component.id}`"
-              :to="`/components/${component.id}`"
-              class="nav-sidebar__section-items-anchor"
-            >
-              {{ component.name }}
-            </nuxt-link>
-            <b-badge
-              v-if="component.hasVueComponent"
-              class="float-right ml-1"
-              variant="primary"
-            >
-              Vue
-            </b-badge>
-            <b-badge
-              v-if="!component.hasInfo"
-              class="float-right"
-              variant="warning"
-            >
-              To-Do
-            </b-badge>
+            <td>
+              <nuxt-link
+                :key="`link-${component.id}`"
+                :to="`/components/${component.id}`"
+              >{{ component.name }}</nuxt-link>
+            </td>
+            <td class="app-styles">
+              <b-badge
+                v-if="!component.hasInfo"
+                class="float-right ml-1"
+                variant="warning"
+              >To-Do</b-badge>
+              <b-badge
+                v-if="component.hasVueComponent"
+                class="float-right"
+                variant="primary"
+              >Vue</b-badge>
+            </td>
           </b-list-group-item>
         </b-list-group>
-      </div>
+      </table>
     </div>
   </div>
 </template>
@@ -43,19 +42,19 @@
 export default {
   data() {
     return {
-      contentTree: null,
-    };
+      contentTree: null
+    }
   },
   created() {
     this.$axios
       .$get(`/contents/contentTree.json`)
       .then(treeResult => {
-        this.contentTree = treeResult;
+        this.contentTree = treeResult
       })
       .catch(e => {
         // eslint-disable-next-line
-        console.log('Err : ', e);
-      });
-  },
-};
+        console.log('Err : ', e)
+      })
+  }
+}
 </script>
