@@ -73,7 +73,7 @@
           </tr>
         </tbody>
       </table>
-      <p>Use whole pixels to create icons in order to align properly to a pixel grid. For additional details on grids, visit our <a href="/layout/baseline-grid">baseline grid guide</a>.</p>
+      <p>Use whole pixels to create icons in order to align properly to a pixel grid. For additional details on grids, visit our <a href="/layout/grid">baseline grid guide</a>.</p>
       <table class="do-dont m-b-6">
         <thead>
           <tr>
