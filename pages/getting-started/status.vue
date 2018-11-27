@@ -71,8 +71,12 @@
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../foundations/cursors">Cursors</a></td>
-            <td>⚠️</td>
+            <td><a href="../../foundations/interactions">Interactions</a></td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="../../foundations/saving-and-feedback">Saving and feedback</a></td>
+            <td>🚫</td>
           </tr>
           <tr>
             <th class="header">Component</th>
