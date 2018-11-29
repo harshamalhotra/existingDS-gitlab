@@ -16,6 +16,12 @@
       <div class="nav-sidebar__body m-t-3 m-b-3">
         <template v-if="contentTree">
           <details 
+            :open="$route.fullPath.startsWith('/product')" 
+            class="nav-sidebar__section"
+          >
+            <summary class="nav-sidebar__section-summary">Product</summary>
+
+            <details 
             :open="$route.fullPath.startsWith('/getting-started')" 
             class="nav-sidebar__section"
           >
@@ -172,6 +178,9 @@
               to="/resources/design-resources"
             >Design resources</nuxt-link>
           </details>
+          
+          </details>
+
         </template>
         <template v-else>
           Loading ...
