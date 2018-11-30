@@ -281,24 +281,27 @@
             </li>
           </ul>
 
-          <details 
+          <ul
             :open="$route.fullPath.startsWith('/research/')" 
             class="nav-sidebar__section"
           >
-            <summary class="nav-sidebar__section-title">Research</summary>
+            <span class="nav-sidebar__section-title">Research</span>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/research/get-started"
             >Get started</nuxt-link>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/research/toolkit"
             >Toolkit</nuxt-link>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/research/first-look"
             >First look</nuxt-link>
-          </details>
+          </ul>
 
           <details 
             :open="$route.fullPath.startsWith('/accessibility/')" 
