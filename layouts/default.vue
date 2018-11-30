@@ -54,64 +54,64 @@
       </div>
       <div class="nav-sidebar__body m-t-3 m-b-3">
         <template v-if="contentTree">
-          <details 
+          <ul 
             :open="$route.fullPath.startsWith('/brand/')" 
             class="nav-sidebar__section"
           >
-            <summary class="nav-sidebar__section-title">Brand</summary>
-
-            <details 
+            <li>
+              <span class="nav-sidebar__section-title">Brand</span>
+              <details 
+                :open="$route.fullPath.startsWith('/brand/')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/brand-personality"
+                >Brand personality</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/tone-of-voice"
+                >Tone of voice</nuxt-link>
+              </details>
+              <details 
               :open="$route.fullPath.startsWith('/brand/')" 
               class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
-              <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/brand-personality"
-            >Brand personality</nuxt-link>
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/gitlab-logo"
+                >The GitLab logo</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/colors"
+                >Colors</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/typography"
+                >Typography</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/buttons"
+                >Buttons</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand/iconography"
+                >Iconography</nuxt-link>
+              </details>
+            </li>
             <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/tone-of-voice"
-            >Tone of voice</nuxt-link>
-            </details>
-
-            <details 
-              :open="$route.fullPath.startsWith('/brand/')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
-              <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/gitlab-logo"
-            >The GitLab logo</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/colors"
-            >Colors</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/typography"
-            >Typography</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/buttons"
-            >Buttons</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/brand/iconography"
-            >Iconography</nuxt-link>
-            </details>
-            
-            <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
               to="/brand/content"
             >Content</nuxt-link>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
               to="/brand/resources"
             >Resources</nuxt-link>
-
-          </details>
+          </ul>
 
           <details 
             class="nav-sidebar__section"
@@ -320,7 +320,7 @@
               to="/contribute/resources"
             >Resources</nuxt-link>
           </details>
-
+        
         </template>
         <template v-else>
           Loading ...
