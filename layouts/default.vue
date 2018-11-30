@@ -112,155 +112,163 @@
               to="/brand/resources"
             >Resources</nuxt-link>
           </ul>
-
-          <details 
+          <ul 
+            :open="$route.fullPath.startsWith('/product/')" 
             class="nav-sidebar__section"
           >
-            <summary class="nav-sidebar__section-title">Product</summary>
-            <details 
-              :open="$route.fullPath.startsWith('/getting-started/')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
+            <li>
+              <span class="nav-sidebar__section-title">Product</span>
+              <details 
+                :open="$route.fullPath.startsWith('/getting-started/')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
+                <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/structure"
+              >Structure</nuxt-link>
               <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/getting-started/structure"
-            >Structure</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/getting-started/personas"
-            >Personas</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/getting-started/contributing"
-            >Contributing</nuxt-link>
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/getting-started/status"
-            >Status</nuxt-link>
-            </details>
-
-            <details 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/personas"
+              >Personas</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/contributing"
+              >Contributing</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/status"
+              >Status</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
               :open="$route.fullPath.startsWith('/foundations/')" 
               class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/colors"
-              >Colors</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/iconography"
-              >Iconography</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/motion"
-              >Motion</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/illustration"
-              >Illustration</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/typography"
-              >Typography</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/interactions"
-              >Interactions</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/saving-and-feedback"
-              >Saving and feedback</nuxt-link>
-            </details>
-
-            <details 
-              :open="$route.fullPath.startsWith('/layout/')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Layout</summary>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/layout/spacing"
-              >Spacing</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/layout/grid"
-              >Grid</nuxt-link>
-            </details>
-
-            <details 
-              :open="$route.fullPath.startsWith('/components')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">
-                <nuxt-link 
-                  to="/components"
-                >
-                  Components
-                </nuxt-link>
-              </summary>
-              <nuxt-link 
-                v-for="component in contentTree.components"
-                :key="component.id"
-                :to="`/components/${component.id}`"
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
               >
-                {{ component.name }}
-              </nuxt-link>
-            </details>
-
-            <details 
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/colors"
+                >Colors</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/iconography"
+                >Iconography</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/motion"
+                >Motion</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/illustration"
+                >Illustration</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/typography"
+                >Typography</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/interactions"
+                >Interactions</nuxt-link>
+                <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                  to="/foundations/saving-and-feedback"
+                >Saving and feedback</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
+                :open="$route.fullPath.startsWith('/layout/')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Layout</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/layout/spacing"
+                >Spacing</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/layout/grid"
+                >Grid</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
+                :open="$route.fullPath.startsWith('/components')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">
+                  <nuxt-link 
+                    to="/components"
+                  >
+                    Components
+                  </nuxt-link>
+                </summary>
+                <nuxt-link 
+                  v-for="component in contentTree.components"
+                  :key="component.id"
+                  :to="`/components/${component.id}`"
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                >
+                  {{ component.name }}
+                </nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
               :open="$route.fullPath.startsWith('/regions/')" 
               class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Regions</summary>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/regions/empty-states"
-              >Empty states</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/regions/navigation"
-              >Navigation</nuxt-link>
-            </details>
-
-            <details 
-              :open="$route.fullPath.startsWith('/content/')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Content</summary>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/voice-tone"
-              >Voice &amp; tone</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/terminology"
-              >Terminology</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/punctuation"
-              >Punctuation</nuxt-link>
-            </details>
-
-            <details 
-              :open="$route.fullPath.startsWith('/usability/')" 
-              class="nav-sidebar__section"
-            >
-              <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Usability</summary>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/usability/i18n"
-              >Internationalization</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/usability/helping-users"
-              >Helping users</nuxt-link>
-            </details>
-
-            <details 
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Regions</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/regions/empty-states"
+                >Empty states</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/regions/navigation"
+                >Navigation</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
+                :open="$route.fullPath.startsWith('/content/')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Content</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/content/voice-tone"
+                >Voice &amp; tone</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/content/terminology"
+                >Terminology</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/content/punctuation"
+                >Punctuation</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
+                :open="$route.fullPath.startsWith('/usability/')" 
+                class="nav-sidebar__section"
+              >
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Usability</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/usability/i18n"
+                >Internationalization</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/usability/helping-users"
+                >Helping users</nuxt-link>
+              </details>
+            </li>
+            <li>
+              <details 
               :open="$route.fullPath.startsWith('/resources/')" 
               class="nav-sidebar__section"
             >
@@ -270,7 +278,8 @@
                 to="/resources/design-resources"
               >Design resources</nuxt-link>
             </details>
-          </details>
+            </li>
+          </ul>
 
           <details 
             :open="$route.fullPath.startsWith('/research/')" 
