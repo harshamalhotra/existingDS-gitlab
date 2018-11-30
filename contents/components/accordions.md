@@ -1,0 +1,5 @@
+---
+name: Accordions
+related:
+- modals
+---

@@ -6,8 +6,8 @@
         Check back here anytime to see current component status information.</p>
       <p>See more detailed progress on our Design System <a href="https://gitlab.com/gitlab-org/design.gitlab.com/issues">issue tracker</a>.</p>
       <h2>Legend</h2>
-      <table 
-        class="m-t-6 m-b-6" 
+      <table
+        class="m-t-6 m-b-6"
         style="width: 65%;"
       >
         <tbody>
@@ -41,8 +41,8 @@
 
       <h2>Status</h2>
       <!-- <p>A paragraph.</p> -->
-      <table 
-        class="m-t-6 m-b-6" 
+      <table
+        class="m-t-6 m-b-6"
         style="width: 65%;"
       >
         <tbody>
@@ -81,6 +81,10 @@
           <tr>
             <th class="header">Component</th>
             <th class="header">Status</th>
+          </tr>
+          <tr>
+            <td><a href="../../components/accordions">Accordions</a></td>
+            <td>🚫</td>
           </tr>
           <tr>
             <td><a href="../../components/alerts">Alerts</a></td>
