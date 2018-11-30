@@ -27,10 +27,13 @@
   }
 
   .nav-sidebar__section {
-    .nav-sidebar__section-summary {
+    .nav-sidebar__section-title, .nav-sidebar__section-summary {
       cursor: pointer;
       padding: $gl-spacing-3 $gl-spacing-5;
-      font-weight: $font-weight--bold;
+
+      &.nav-sidebar--indent-1 {
+        padding: $gl-spacing-3 $gl-spacing-6;
+      }
 
       &:hover {
         background-color: $black-o-06;
@@ -42,6 +45,10 @@
       }
     }
 
+    .nav-sidebar__section-title {
+      font-weight: $font-weight--bold;
+    }
+
     .nav-sidebar__section-items {
       @include unstyled-list;
     }
@@ -50,7 +57,15 @@
   .nav-sidebar__section-items-anchor {
     display: flex;
     color: $gray-900;
-    padding: $gl-spacing-3 $gl-spacing-8;
+    padding: $gl-spacing-3 $gl-spacing-5;
+
+    &.nav-sidebar--indent-1 {
+      padding: $gl-spacing-3 $gl-spacing-6;
+    }
+    
+    &.nav-sidebar--indent-2 {
+      padding: $gl-spacing-3 $gl-spacing-7;
+    }
 
     &.nuxt-link-active {
       box-shadow: inset ($border-width * 4) 0 0 $gray-700;
