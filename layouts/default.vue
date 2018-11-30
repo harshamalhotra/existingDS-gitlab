@@ -213,10 +213,6 @@
               <summary class="nav-sidebar__section-summary">Usability</summary>
               <nuxt-link 
                 class="nav-sidebar__section-items-anchor" 
-                to="/usability/a11y"
-              >Accessibility</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor" 
                 to="/usability/i18n"
               >Internationalization</nuxt-link>
               <nuxt-link 
@@ -235,8 +231,56 @@
                 to="/resources/design-resources"
               >Design resources</nuxt-link>
             </details>
-
         </details>
+        <details 
+          :open="$route.fullPath.startsWith('/research/')" 
+          class="nav-sidebar__section"
+        >
+          <summary class="nav-sidebar__section-summary">Research</summary>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/research/get-started"
+          >Get started</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/research/toolkit"
+          >Toolkit</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/research/first-look"
+          >First look</nuxt-link>
+        </details>
+
+        <details 
+          :open="$route.fullPath.startsWith('/accessibility/')" 
+          class="nav-sidebar__section"
+        >
+          <summary class="nav-sidebar__section-summary">Accessibility</summary>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/accessibility/a11y"
+          >Statement of compliance</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/accessibility/best-practices"
+          >Best practices</nuxt-link>
+        </details>
+
+        <details 
+          :open="$route.fullPath.startsWith('/contribute/')" 
+          class="nav-sidebar__section"
+        >
+          <summary class="nav-sidebar__section-summary">Contribute</summary>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/contribute/get-started"
+          >Get started</nuxt-link>
+          <nuxt-link 
+            class="nav-sidebar__section-items-anchor" 
+            to="/contribute/resources"
+          >Resources</nuxt-link>
+        </details>
+
         </template>
         <template v-else>
           Loading ...
