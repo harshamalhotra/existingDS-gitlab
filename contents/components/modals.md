@@ -63,6 +63,8 @@ The content in the body should never be ambiguous and unclear. Strive to be as c
 
 **Actions:**
 
+ There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use Set status and Remove status instead of simply, Save and Delete.
+
 Actions are always ordered from right to left, starting with affirmative actions and ending with dismissive actions. The order should be **dismissive action -> affirmative action**.  In cases where there are 2 affirmative actions the order should be, from left to right, **dismissive action -> secondary action -> primary action.**
 
 There will be some cases where no affirmative actions are designated for the modal. In these cases, an action bar should be used with a dismissive action. There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important to remember because some modals can be tall and we want to avoid making the user scroll up to close a modal.
