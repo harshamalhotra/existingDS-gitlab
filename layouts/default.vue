@@ -280,7 +280,6 @@
             </details>
             </li>
           </ul>
-
           <ul
             :open="$route.fullPath.startsWith('/research/')" 
             class="nav-sidebar__section"
@@ -302,37 +301,38 @@
               to="/research/first-look"
             >First look</nuxt-link>
           </ul>
-
-          <details 
+          <ul 
             :open="$route.fullPath.startsWith('/accessibility/')" 
             class="nav-sidebar__section"
           >
-            <summary class="nav-sidebar__section-title">Accessibility</summary>
+            <span class="nav-sidebar__section-title">Accessibility</span>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/accessibility/a11y"
             >Statement of compliance</nuxt-link>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/accessibility/best-practices"
             >Best practices</nuxt-link>
-          </details>
-
-          <details 
+          </ul>
+          <ul 
             :open="$route.fullPath.startsWith('/contribute/')" 
             class="nav-sidebar__section"
           >
-            <summary class="nav-sidebar__section-title">Contribute</summary>
+            <span class="nav-sidebar__section-title">Contribute</span>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/contribute/get-started"
             >Get started</nuxt-link>
             <nuxt-link 
+              tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/contribute/resources"
             >Resources</nuxt-link>
-          </details>
-        
+          </ul>
         </template>
         <template v-else>
           Loading ...
