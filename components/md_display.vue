@@ -1,5 +1,6 @@
 <script>
 import markdowner from 'markdown-it'
+import markdownAnchor from 'markdown-it-anchor'
 
 export default {
   props: {
@@ -16,6 +17,9 @@ export default {
     const md = markdowner({
       xhtmlOut: true,
       typographer: true,
+    }).use(markdownAnchor, {
+      permalink: true,
+      permalinkBefore: true
     })
     let mdOutput = md.render(this.md)
     mdOutput = mdOutput.replace(
