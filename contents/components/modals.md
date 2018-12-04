@@ -29,7 +29,7 @@ Todo: Add live component block with code example
 
 ## Design specifications
 
-### Placement
+### Positioning
 
 Modals should be pinned **64px** from the top of the viewport
 
@@ -53,21 +53,21 @@ Todo: Add live component block with code example
 
 There are three main sections of a modal:
 
-**Header:**
+#### Header:
 
 The header is either a question, descriptive phrase, or title. The header also contains the close icon in every instance.
 
-**Body**
+#### Body:
 
 The content in the body should never be ambiguous and unclear. Strive to be as concise as possible and provide the user with specific information in regards to their task. Do not ask a vague question or pose a vague statement, instead, explain what you are asking the user to do in a [voice and tone](/content/voice-tone) that's straightforward and easy to understand.
 
-**Actions:**
+#### Actions:
 
- There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use Set status and Remove status instead of simply, Save and Delete.
+There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. Button order and positioning should follow our [guidelines for buttons](/components/buttons).
 
-Actions are always ordered from right to left, starting with affirmative actions and ending with dismissive actions. The order should be **dismissive action -> affirmative action**.  In cases where there are 2 affirmative actions the order should be, from left to right, **dismissive action -> secondary action -> primary action.**
+When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use Set status and Remove status instead of simply, Save and Delete.
 
-There will be some cases where no affirmative actions are designated for the modal. In these cases, an action bar should be used with a dismissive action. There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important to remember because some modals can be tall and we want to avoid making the user scroll up to close a modal.
+There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important as some modals can be tall and we want to avoid making the user scroll up to close a modal.
 
 ### Behavior
 
@@ -75,7 +75,9 @@ There will be some cases where no affirmative actions are designated for the mod
 
 **Autofocus:**  The first focusable item should be auto-focused within the modal dialog so that the user can tab in the modal and not become stuck behind the overlay. This behavior follows the [accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) for modals.
 
-**Scrolling** The height of the modal is determined by the content. Some users have smaller screens, so for these instances where the content requires scrolling, it's best practice to extend the height of the modal below the window to avoid double scrolling. Alternatively, consider taking the user to another page in instances where a tall modal requires the user to scroll more than a few times to consume all the content.
+**Scrolling:** The height of the modal is determined by the content. Some users have smaller screens, so for these instances where the content requires scrolling, it's best practice to extend the height of the modal below the window to avoid double scrolling. Alternatively, consider taking the user to another page in instances where a tall modal requires the user to scroll more than a few times to consume all the content.
+
+**Animation:** Modals should always appear from the top of the viewport with an **0.15s** ease-in entry animation from the top to the bottom.
 
 [Sketch measure preview for modals](https://gitlab-org.gitlab.io/gitlab-design/hosted/andy/ce%23187-modal-documentation-spec-previews/)
 
