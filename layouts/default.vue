@@ -202,8 +202,7 @@
                   <nuxt-link 
                     to="/components"
                   >
-                    Components
-                  </nuxt-link>
+                    Components</nuxt-link>
                 </summary>
                 <nuxt-link 
                   v-for="component in contentTree.components"
