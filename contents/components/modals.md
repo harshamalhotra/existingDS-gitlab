@@ -71,7 +71,7 @@ There should always be multiple ways to close/dismiss this type of modal, includ
 
 ### Behavior
 
-**User Focus:** When a user opens a modal use the lightbox effect combined with an ease-in entry animation. This draws attention to the modal and while also indicating to the user that they cannot interact with the parent page. See more information on [motion and animation](component/motion) here.
+**User Focus:** When a user opens a modal use the lightbox effect combined with an ease-in entry animation. This draws attention to the modal and while also indicating to the user that they cannot interact with the parent page. See more information on [motion and animation](foundations/motion) here.
 
 **Autofocus:**  The first focusable item should be auto-focused within the modal dialog so that the user can tab in the modal and not become stuck behind the overlay. This behavior follows the [accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) for modals.
 
