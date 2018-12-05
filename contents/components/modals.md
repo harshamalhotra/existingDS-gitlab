@@ -71,13 +71,11 @@ There should always be multiple ways to close/dismiss this type of modal, includ
 
 ### Behavior
 
-**User Focus:** When you open a modal use a lightbox effect (darken the background to #000 at 50% opacity). This draws attention to the modal and indicates that the user cannot interact with the parent page.
+**User Focus:** When a user opens a modal use the lightbox effect combined with an ease-in entry animation. This draws attention to the modal and while also indicating to the user that they cannot interact with the parent page. See more information on [motion and animation](component/motion) here.
 
 **Autofocus:**  The first focusable item should be auto-focused within the modal dialog so that the user can tab in the modal and not become stuck behind the overlay. This behavior follows the [accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) for modals.
 
 **Scrolling:** The height of the modal is determined by the content. Some users have smaller screens, so for these instances where the content requires scrolling, it's best practice to extend the height of the modal below the window to avoid double scrolling. Alternatively, consider taking the user to another page in instances where a tall modal requires the user to scroll more than a few times to consume all the content.
-
-**Animation:** Modals should always appear from the top of the viewport with a **0.15s** ease-in entry animation starting from the top to the bottom. [See more information on animations here.](component/motion)
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
