@@ -77,7 +77,9 @@ There should always be multiple ways to close/dismiss this type of modal, includ
 
 **Scrolling:** The height of the modal is determined by the content. Some users have smaller screens, so for these instances where the content requires scrolling, it's best practice to extend the height of the modal below the window to avoid double scrolling. Alternatively, consider taking the user to another page in instances where a tall modal requires the user to scroll more than a few times to consume all the content.
 
-**Animation:** Modals should always appear from the top of the viewport with an **0.15s** ease-in entry animation from the top to the bottom.
+**Animation:** Modals should always appear from the top of the viewport with a **0.15s** ease-in entry animation starting from the top to the bottom. [See more information on animations here.](component/motion)
+
+Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [Sketch measure preview for modals](https://gitlab-org.gitlab.io/gitlab-design/hosted/andy/ce%23187-modal-documentation-spec-previews/)
 
