@@ -8,11 +8,11 @@
         <ul>
           <li><a href="#persona-parker">Parker</a>, Product Manager</li>
           <li><a href="#persona-delaney">Delaney</a>, Development Team Lead</li>
+          <li><a href="#persona-sasha">Sasha</a>, Software Developer</li>
         </ul>
         <h3>Ops</h3>
         <ul>
           <li><a href="#persona-devon">Devon</a>, DevOps Engineer</li>
-          <li><a href="#persona-sasha">Sasha</a>, Software Developer</li>
           <li><a href="#persona-sidney">Sidney</a>, Systems Administrator</li>
           <li><a href="#persona-sam">Sam</a>, Security Analyst</li>
         </ul>
@@ -145,7 +145,7 @@
               </tr>
               <tr>
                 <th class="header">Alternative Job Titles:</th>
-                <td>Digital Solutions Developer, Consultant, Database Developer, Mobile Developer</td>
+                <td>Software Engineer, Application Developer, Digital Solutions Developer, Consultant, Database Developer, Mobile Developer</td>
               </tr>
             </tbody>
           </table>
