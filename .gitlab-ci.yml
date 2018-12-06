@@ -19,7 +19,6 @@ stages:
     - *install
   script:
     - yarn run build
-    - utils/create-redirections.sh
   dependencies:
   artifacts:
     expire_in: 7 days
