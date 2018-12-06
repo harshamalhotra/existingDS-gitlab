@@ -1,4 +1,6 @@
 import postCssGitlab from './modules/postcss_gitlab'
+import { getComponentList } from './modules/content_preparer'
+const routes = getComponentList().map(c => `components/${c.id}`)
 
 module.exports = {
   mode: 'spa',
@@ -41,7 +43,8 @@ module.exports = {
   },
 
   generate: {
-    dir: 'public'
+    dir: 'public',
+    routes
   },
 
   render: {
