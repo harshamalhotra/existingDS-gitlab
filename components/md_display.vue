@@ -19,7 +19,8 @@ export default {
       typographer: true,
     }).use(markdownAnchor, {
       permalink: true,
-      permalinkBefore: true
+      permalinkBefore: true,
+      permalinkSymbol: '#'
     })
     let mdOutput = md.render(this.md)
     mdOutput = mdOutput.replace(
@@ -38,3 +39,15 @@ export default {
   },
 }
 </script>
+
+<style>
+.header-anchor {
+  margin-left: -1em;
+  visibility: hidden;
+}
+
+*:hover > .header-anchor {
+  visibility: visible;
+}
+
+</style>

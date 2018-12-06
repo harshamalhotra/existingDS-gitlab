@@ -1,7 +1,7 @@
 <template>
   <div class="content limited m-t-7 m-b-7">
     <div v-if="component">
-      <component 
+      <component
         :is="component"
         :frontmatter-info="fmResult"
       />
