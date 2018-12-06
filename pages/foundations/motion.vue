@@ -27,7 +27,7 @@
       <h4>Page autoscroll</h4>
       <p>To keep an active element visible, a page auto scroll transition can be used. An example of this includes clicking an issue board card that is out of screen.</p>
       <p class="todo">Todo: Add auto scroll example (issue board cards)</p>
-      <h4>Modal appearance<h4>
+      <h4>Modal appearance</h4>
       <p>Modals utilize a 200 milliseconds ease in from the top of the page to make their entry less abrupt to users. Learn more about <a href="/components/modals">modals</a>.</p>
       <p class="todo">Todo: Add modal appearance example</p>
     </div>
