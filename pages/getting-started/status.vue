@@ -111,6 +111,10 @@
             <td>🚫</td>
           </tr>
           <tr>
+            <td><a href="../../components/charts">Charts</a></td>
+            <td>⚠️</td>
+          </tr>
+          <tr>
             <td><a href="../../components/code-snippets">Code snippets</a></td>
             <td>🚫</td>
           </tr>
