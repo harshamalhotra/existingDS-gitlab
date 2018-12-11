@@ -198,12 +198,12 @@
                 :open="$route.fullPath.startsWith('/components')" 
                 class="nav-sidebar__section"
               >
-                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">
-                  <nuxt-link 
-                    to="/components"
-                  >
-                    Components</nuxt-link>
-                </summary>
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Components</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/components"
+                >
+                Components overview</nuxt-link>
                 <nuxt-link 
                   v-for="component in contentTree.components"
                   :key="component.id"
