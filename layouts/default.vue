@@ -77,29 +77,29 @@
             </li>
             <li>
                 <details 
-                :open="$route.fullPath.startsWith('/brand/foundations')" 
+                :open="$route.fullPath.startsWith('/foundations/')" 
                 class="nav-sidebar__section"
                 >
                   <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/foundations/gitlab-logo"
+                    to="/foundations/gitlab-logo"
                   >The GitLab logo</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/foundations/colors"
+                    to="/foundations/colors"
                   >Colors</nuxt-link>
                   <nuxt-link
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/foundations/typography"
+                    to="/foundations/typography"
                   >Typography</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/foundations/buttons"
+                    to="/foundations/buttons"
                   >Buttons</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/foundations/iconography"
+                    to="/foundations/iconography"
                   >Iconography</nuxt-link>
                 </details>
             </li>
