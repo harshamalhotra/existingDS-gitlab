@@ -75,29 +75,29 @@
                 >Tone of voice</nuxt-link>
               </details>
               <details 
-              :open="$route.fullPath.startsWith('/brand/')" 
+              :open="$route.fullPath.startsWith('/brand/foundations')" 
               class="nav-sidebar__section"
               >
                 <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand/gitlab-logo"
+                  to="/brand/foundations/gitlab-logo"
                 >The GitLab logo</nuxt-link>
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand/colors"
+                  to="/brand/foundations/colors"
                 >Colors</nuxt-link>
                 <nuxt-link
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand/typography"
+                  to="/brand/foundations/typography"
                 >Typography</nuxt-link>
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand/buttons"
+                  to="/brand/foundations/buttons"
                 >Buttons</nuxt-link>
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand/iconography"
+                  to="/brand/foundations/iconography"
                 >Iconography</nuxt-link>
               </details>
             </li>
