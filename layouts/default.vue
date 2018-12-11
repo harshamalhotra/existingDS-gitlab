@@ -74,6 +74,8 @@
                     to="/brand/tone-of-voice"
                   >Tone of voice</nuxt-link>
                 </details>
+            </li>
+            <li>
                 <details 
                 :open="$route.fullPath.startsWith('/brand/foundations')" 
                 class="nav-sidebar__section"
