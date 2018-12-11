@@ -55,13 +55,13 @@
       <div class="nav-sidebar__body m-b-3">
         <template v-if="contentTree">
           <ul 
-            :open="$route.fullPath.startsWith('/brand/')" 
+            :open="$route.fullPath.startsWith('/brand-personality/')" 
             class="nav-sidebar__section"
           >
             <li>
               <span class="nav-sidebar__section-title">Brand</span>
                 <details 
-                :open="$route.fullPath.startsWith('/brand/')" 
+                :open="$route.fullPath.startsWith('/brand-personality/')" 
                 class="nav-sidebar__section"
                 >
                 <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
