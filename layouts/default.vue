@@ -61,57 +61,57 @@
             <li>
               <span class="nav-sidebar__section-title">Brand</span>
                 <details 
-                  :open="$route.fullPath.startsWith('/brand/')" 
-                  class="nav-sidebar__section"
+                :open="$route.fullPath.startsWith('/brand/')" 
+                class="nav-sidebar__section"
                 >
-                  <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
-                  <nuxt-link 
-                    class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/brand-personality"
-                  >Brand personality</nuxt-link>
-                  <nuxt-link 
-                    class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/brand/tone-of-voice"
-                  >Tone of voice</nuxt-link>
+                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Get started</summary>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand-personality/brand-personality"
+                >Brand personality</nuxt-link>
+                <nuxt-link 
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                  to="/brand-personality/tone-of-voice"
+                >Tone of voice</nuxt-link>
                 </details>
             </li>
             <li>
                 <details 
-                :open="$route.fullPath.startsWith('/foundations/')" 
+                :open="$route.fullPath.startsWith('/brand-foundations/')" 
                 class="nav-sidebar__section"
                 >
                   <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Foundations</summary>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/foundations/gitlab-logo"
+                    to="/brand-foundations/gitlab-logo"
                   >The GitLab logo</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/foundations/colors"
+                    to="/brand-foundations/colors"
                   >Colors</nuxt-link>
                   <nuxt-link
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/foundations/typography"
+                    to="/brand-foundations/typography"
                   >Typography</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/foundations/buttons"
+                    to="/brand-foundations/buttons"
                   >Buttons</nuxt-link>
                   <nuxt-link 
                     class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                    to="/foundations/iconography"
+                    to="/brand-foundations/iconography"
                   >Iconography</nuxt-link>
                 </details>
             </li>
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
-              to="/brand/content"
+              to="/brand-content/content"
             >Content</nuxt-link>
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
-              to="/brand/resources"
+              to="/brand-resources/resources"
             >Resources</nuxt-link>
           </ul>
           <ul 
