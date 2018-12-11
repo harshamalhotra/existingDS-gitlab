@@ -52,7 +52,7 @@
           GitLab Design System
         </nuxt-link>
       </div>
-      <div class="nav-sidebar__body m-t-3 m-b-3">
+      <div class="nav-sidebar__body m-b-3">
         <template v-if="contentTree">
           <ul 
             :open="$route.fullPath.startsWith('/brand/')" 
