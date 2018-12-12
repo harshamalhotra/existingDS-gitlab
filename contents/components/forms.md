@@ -104,7 +104,7 @@ Todo: Add live component block with code example (optional)
 
 ### Help text
 
-Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word.
+Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word. Additionally, a [help link](/usability/helping-users) can be provided to give supplemental information.
 
 Todo: Add live component block with code example (help text)
 
