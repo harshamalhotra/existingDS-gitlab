@@ -195,10 +195,6 @@
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../components/tags">Tags</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
             <td><a href="../../components/toasts">Toasts</a></td>
             <td>🚫</td>
           </tr>
