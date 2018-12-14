@@ -101,6 +101,7 @@
   }
 
   .nav-sidebar__section-items-anchor {
+    cursor: pointer;
     display: flex;
     color: $gray-900;
     padding: $gl-spacing-3 $gl-spacing-5;
