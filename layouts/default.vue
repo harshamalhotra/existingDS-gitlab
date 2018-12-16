@@ -154,6 +154,10 @@
             >Accessibility</nuxt-link>
             <nuxt-link 
               class="nav-sidebar__section-items-anchor" 
+              to="/usability/vpat"
+            >VPAT</nuxt-link>
+            <nuxt-link 
+              class="nav-sidebar__section-items-anchor" 
               to="/usability/i18n"
             >Internationalization</nuxt-link>
             <nuxt-link 
