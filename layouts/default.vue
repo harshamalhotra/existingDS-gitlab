@@ -339,6 +339,11 @@
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+              to="/accessibility/vpat"
+            >VPAT</nuxt-link>
+            <nuxt-link 
+              tag="li"
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/accessibility/best-practices"
             >Best practices</nuxt-link>
           </ul>
