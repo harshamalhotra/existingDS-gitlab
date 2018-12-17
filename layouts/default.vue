@@ -377,45 +377,45 @@
 export default {
   data() {
     return {
-      contentTree: null
-    }
+      contentTree: null,
+    };
   },
   computed: {
     contentWrapper() {
-      return this.$route.fullPath === '/' ? '' : 'content'
-    }
+      return this.$route.fullPath === '/' ? '' : 'content';
+    },
   },
   created() {
     this.$axios
       .$get(`/contents/contentTree.json`)
       .then(treeResult => {
-        this.contentTree = treeResult
+        this.contentTree = treeResult;
       })
       .catch(e => {
         // eslint-disable-next-line
-        console.log('Err : ', e)
-      })
+        console.log('Err : ', e);
+      });
   },
   methods: {
     selectFirstSubItem(ev) {
-      const { target } = ev
+      const { target } = ev;
       if (target && target.parentNode) {
-        const detailsLinks = target.parentNode.querySelectorAll('a')
+        const detailsLinks = target.parentNode.querySelectorAll('a');
         if (detailsLinks.length > 0) {
-          const firstLink = detailsLinks[0].getAttribute('href')
+          const firstLink = detailsLinks[0].getAttribute('href');
           if (firstLink) {
-            const that = this
+            const that = this;
             setTimeout(() => {
               that.$router.push({
-                path: firstLink.replace(/#/, '')
-              })
-            }, 1)
+                path: firstLink.replace(/#/, ''),
+              });
+            }, 1);
           }
         }
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss">

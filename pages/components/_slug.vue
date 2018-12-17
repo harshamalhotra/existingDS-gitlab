@@ -15,25 +15,25 @@
 <script>
 const getPost = () => ({
   component: import(`./componentinfo.vue`),
-})
+});
 export default {
   data() {
     return {
       component: null,
       fmResult: null,
-    }
+    };
   },
   beforeCreate() {
     this.$axios
       .$get(`/contents/components/${this.$route.params.slug}.json`)
       .then(fmResult => {
-        this.fmResult = fmResult
-        this.component = () => getPost(this.$route.params.slug)
+        this.fmResult = fmResult;
+        this.component = () => getPost(this.$route.params.slug);
       })
       .catch(e => {
         // eslint-disable-next-line
-        console.log('Err : ', e)
-      })
+        console.log('Err : ', e);
+      });
   },
-}
+};
 </script>

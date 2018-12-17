@@ -1,7 +1,7 @@
-import postCssGitlab from './modules/postcss_gitlab'
-import { getComponentList } from './modules/content_preparer'
+import postCssGitlab from './modules/postcss_gitlab';
+import { getComponentList } from './modules/content_preparer';
 
-const routes = getComponentList().map(c => `components/${c.id}`)
+const routes = getComponentList().map(c => `components/${c.id}`);
 
 module.exports = {
   mode: 'spa',
@@ -16,8 +16,8 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Design guidelines and UI components for GitLab'
-      }
+        content: 'Design guidelines and UI components for GitLab',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -25,35 +25,34 @@ module.exports = {
         rel: 'icon',
         type: 'image/png',
         href: '/favicon-32x32.png',
-        sizes: '32x32'
+        sizes: '32x32',
       },
       {
         rel: 'icon',
         type: 'image/png',
         href: '/favicon-16x16.png',
-        sizes: '16x16'
+        sizes: '16x16',
       },
       {
-        src:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
-      }
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+      },
     ],
     bodyAttrs: {
-      class: 'ui-indigo'
-    }
+      class: 'ui-indigo',
+    },
   },
 
   generate: {
     dir: 'public',
-    routes
+    routes,
   },
 
   render: {
-    ssr: false
+    ssr: false,
   },
 
   axios: {
-    browserBaseURL: '/'
+    browserBaseURL: '/',
   },
 
   /*
@@ -77,7 +76,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    '~/modules/content_preparer'
+    '~/modules/content_preparer',
   ],
   /*
    ** Axios module configuration
@@ -94,57 +93,55 @@ module.exports = {
 
     postcss: {
       plugins: [postCssGitlab({ scopeSelector: 'app-styles' })],
-      order: ['postcss-gitlab', 'postcss-import', 'postcss-preset-env']
+      order: ['postcss-gitlab', 'postcss-import', 'postcss-preset-env'],
     },
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      config.resolve.alias.vue$ = 'vue/dist/vue.esm.js' // Full Vue version for being able to use dynamic templates
+      config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
 
-      config.module.rules.splice(0, 1)
+      config.module.rules.splice(0, 1);
 
-      const sassRule = config.module.rules.find(
-        rule => rule.test.toString().indexOf('.scss') > -1
-      )
+      const sassRule = config.module.rules.find(rule => rule.test.toString().indexOf('.scss') > -1);
 
-      const cssSassLoader = sassRule.oneOf[1].use[1]
+      const cssSassLoader = sassRule.oneOf[1].use[1];
       // This turns off the check for the failing imports on the live imported application.css
-      cssSassLoader.options.url = false
+      cssSassLoader.options.url = false;
 
       config.module.rules.push({
         test: /\.md$/,
         include: /static/,
-        loader: 'frontmatter-markdown-loader'
-      })
+        loader: 'frontmatter-markdown-loader',
+      });
 
       config.module.rules.push({
         test: /\.js$/,
         include: /node-modules/,
-        loader: 'babel-loader'
-      })
+        loader: 'babel-loader',
+      });
 
       config.module.rules.push({
         test: /\.md$/,
-        loader: 'raw-loader'
-      })
+        loader: 'raw-loader',
+      });
 
       config.module.rules.push({
         test: /\.example\.vue$/,
-        loader: 'raw-loader'
-      })
+        loader: 'raw-loader',
+      });
 
       config.module.rules.push({
         test: /\.vue$/,
         exclude: /\.example\.vue$/,
-        loader: 'vue-loader'
-      })
+        loader: 'vue-loader',
+      });
 
       config.module.rules.push({
         test: /\.css$/,
         include: /node-modules/,
-        loader: 'css-loader'
-      })
+        loader: 'css-loader',
+      });
 
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
@@ -152,9 +149,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+          exclude: /(node_modules)/,
+        });
       }
-    }
-  }
-}
+    },
+  },
+};
