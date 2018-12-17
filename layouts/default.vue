@@ -409,7 +409,7 @@ export default {
               that.$router.push({
                 path: firstLink.replace(/#/, '')
               })
-            }, 5)
+            }, 1)
           }
         }
       }
