@@ -1,18 +1,18 @@
 ---
 name: Labels
 related:
-  - tags
+  - badges
 ---
 
-Labels allow users to categorize UI objects using descriptive titles and customizable color. They provide a quick way to recognize which category or categories the labeled object belongs. Clicking on a label navigates the user to a filtered list view based on that label.
+Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
+
+Labels should not be confused with [badges](/components/badges). Badges highlight more generic object metadata that are not categories.
 
 ## Usage
 
-Labels are used to categorize issues, merge requests, and epics. They can be used to filter in list views. Upon hover, a tooltip containing a description of the label will appear.
+Labels are usually displayed in that object's detail page and in list views, next to the corresponding object. Clicking on a label navigates the user to a list view filtered by that label. Users can also manually filter lists and other types of views by labels.
 
-### User role labels
-
-User role labels are different from standard labels. They indicate the permission level of the user and differ visually. User labels lack color, use grayscale text, and have a border.
+In most places, a label's description is shown in a [tooltip](/components/tooltips) when hovering the label. But if the label's description appears on the page with no need for user interaction, do not show it in a tooltip.
 
 ## Demo
 

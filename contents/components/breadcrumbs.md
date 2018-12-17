@@ -1,5 +1,5 @@
 ---
-name: Navigation
+name: Breadcrumbs
 related:
   - navigation
 ---
