@@ -3,7 +3,7 @@
     <div class="accessibility md">
       <h1>GitLab Accessibility Statement</h1>
       <p>GitLab is committed to maintaining an accessible product to the widest possible audience. We are actively working to increase the accessibility and usability of our product.</p>
-      <p>GitLab is conformant with the <a href="/usability/vpat">Voluntary Product Accessibility Template (VPAT) 2.2</a> conducted December, 2018. This assessment aligns with the GitLab Enterprise Edition Premium version 11.6. For GitLab.com, this only includes the SaaS product and not other pages found on the GitLab.com domain.</p>
+      <p>GitLab is conformant with the <a href="/accessibility/vpat">Voluntary Product Accessibility Template (VPAT) 2.2</a> conducted December, 2018. This assessment aligns with the GitLab Enterprise Edition Premium version 11.6. For GitLab.com, this only includes the SaaS product and not other pages found on the GitLab.com domain.</p>
       <p>We aim to conform to level AA of the World Wide Web Consortium (W3C) <a 
         href="https://www.w3.org/TR/WCAG21/" 
         target="_blank"
