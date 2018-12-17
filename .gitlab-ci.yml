@@ -45,7 +45,7 @@ lint:
     - *install
   script:
     - yarn run lint
-    - yarn prettier --list-different "**/*.{js,vue}"
+    - yarn prettier --list-different --ignore-path .gitignore "**/*.{js,vue}"
 
 review:
   stage: deploy
