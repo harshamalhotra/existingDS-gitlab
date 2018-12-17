@@ -120,21 +120,29 @@ export default {
       })
     }
   },
+  methods: {
+    setActiveTab(tabEl) {
+      this.tabIndex = [...tabEl.parentNode.children].indexOf(tabEl)
+    }
+  },
   mounted() {
     if (this.$route.hash) {
       const targetAnchor = this.$el.querySelector(this.$route.hash)
 
-      if (targetAnchor) {
-        const containingTab = targetAnchor.closest('.js-gl-tab')
-
-        if (containingTab) {
-          this.tabIndex = [...containingTab.parentNode.children].indexOf(containingTab)
-
-          this.$nextTick(() => {
-            window.scrollTo(0, targetAnchor.offsetTop)
-          })
-        }
+      if (!targetAnchor) {
+        return
       }
+
+      const tabContainingAnchor = targetAnchor.closest('.js-gl-tab')
+      if (!tabContainingAnchor) {
+        return;
+      }
+
+      this.setActiveTab(tabContainingAnchor);
+
+      this.$nextTick(() => {
+        window.scrollTo(0, targetAnchor.offsetTop)
+      })
     }
   }
 }
