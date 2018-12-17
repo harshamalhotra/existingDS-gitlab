@@ -21,10 +21,6 @@
     }
   }
 
-  // .nav-sidebar__header {
-  //   border-bottom: $border-width solid $border-color;
-  // }
-
   .nav-sidebar__header-anchor {
     display: flex;
     align-items: center;
@@ -39,7 +35,8 @@
   }
 
   .nav-sidebar__section {
-    .nav-sidebar__section-title, .nav-sidebar__section-summary {
+    .nav-sidebar__section-title,
+    .nav-sidebar__section-summary {
       cursor: pointer;
       padding: $gl-spacing-3 $gl-spacing-5;
 
@@ -68,7 +65,7 @@
         float: right;
         transform: rotate(-45deg);
         width: 0.45em;
-        transform: rotate(135deg) translate(.4em,0px);
+        transform: rotate(135deg) translate(0.4em, 0px);
         border-color: $gray-400;
       }
     }
@@ -88,7 +85,7 @@
     }
   }
 
-  details[open="open"] {
+  details[open='open'] {
     background-color: $black-o-04;
 
     .nav-sidebar__section-summary {
@@ -109,7 +106,7 @@
     &.nav-sidebar--indent-1 {
       padding: $gl-spacing-3 $gl-spacing-6;
     }
-    
+
     &.nav-sidebar--indent-2 {
       padding: $gl-spacing-3 $gl-spacing-7;
     }
