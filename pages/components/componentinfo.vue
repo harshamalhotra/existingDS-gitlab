@@ -5,32 +5,33 @@
         <h1>{{ componentAttributes.name }}</h1>
       </div>
       <b-tabs
+        v-model="tabIndex"
         nav-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
         nav-wrapper-class="app-styles"
       >
-        <b-tab 
-          title="Design" 
-          active 
-          class="p-t-3"
+        <b-tab
+          title="Design"
+          active
+          class="p-t-3 js-gl-tab"
         >
           <md-display :md="componentBody" />
         </b-tab>
-        <b-tab 
+        <b-tab
           v-if="vueComponents && vueComponents.length > 0"
-          title="Vue Component" 
-          class="app-styles"
+          title="Vue Component"
+          class="app-styles js-gl-tab"
         >
           <div class="pt-3">
             <template v-for="vueComponentName in vueComponents">
               <div
-                :key="`header-${vueComponentName}`" 
+                :key="`header-${vueComponentName}`"
                 class="component md mb-3"
               >
                 <h2
                   :key="`hl-${vueComponentName}`"
                   class="mb-3"
                 >Vue Component - {{ vueComponentName }}</h2>
-                <b-alert 
+                <b-alert
                   v-if="!vueComponentDocumentations[vueComponentName].followsDesignSystem"
                   :key="`design-alert-${vueComponentName}`"
                   show
@@ -47,7 +48,7 @@
               <md-display
                 v-if="vueComponentDocumentations[vueComponentName] && vueComponentDocumentations[vueComponentName].description"
                 :key="`description-${vueComponentName}`"
-                :md="vueComponentDocumentations[vueComponentName].description" 
+                :md="vueComponentDocumentations[vueComponentName].description"
                 class="mt-3 mb-3"
               />
               <div
@@ -55,9 +56,9 @@
                 class="component md mt-3"
               >
                 <h3>Component Properties</h3>
-                <gl-component-documentation 
+                <gl-component-documentation
                   :key="`docs-${vueComponentName}`"
-                  :component-name="vueComponentName" 
+                  :component-name="vueComponentName"
                   class="mt-3 component-documentation"
                 />
               </div>
@@ -73,9 +74,9 @@
 </template>
 
 <script>
-import * as Documentation from '@gitlab/ui/documentation'
+import * as Documentation from '@gitlab/ui/documentation';
 
-import mdDisplay from '../../components/md_display.vue'
+import mdDisplay from '../../components/md_display.vue';
 
 export default {
   components: {
@@ -94,29 +95,55 @@ export default {
       componentBody: null,
       vueComponents: null,
       vueComponentDocumentations: {},
-    }
+      tabIndex: 0,
+    };
   },
   created() {
-    this.componentAttributes = this.frontmatterInfo.attributes
+    this.componentAttributes = this.frontmatterInfo.attributes;
 
-    this.vueComponents = this.frontmatterInfo.attributes.vueComponents
+    this.vueComponents = this.frontmatterInfo.attributes.vueComponents;
 
-    this.componentBody = this.frontmatterInfo.body
+    this.componentBody = this.frontmatterInfo.body;
 
     if (this.vueComponents) {
       this.vueComponents.forEach(vueComponentName => {
-        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`)
-        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1)
-        snakeName = snakeName.replace(/gl_/, '')
+        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`);
+        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1);
+        snakeName = snakeName.replace(/gl_/, '');
 
         Object.keys(Documentation.ComponentDocumentations).forEach(component => {
           if (component.startsWith(vueComponentName)) {
             this.vueComponentDocumentations[vueComponentName] =
-              Documentation.ComponentDocumentations[component]
+              Documentation.ComponentDocumentations[component];
           }
-        })
-      })
+        });
+      });
     }
   },
-}
+  methods: {
+    setActiveTab(tabEl) {
+      this.tabIndex = [...tabEl.parentNode.children].indexOf(tabEl);
+    },
+  },
+  mounted() {
+    if (this.$route.hash) {
+      const targetAnchor = this.$el.querySelector(this.$route.hash);
+
+      if (!targetAnchor) {
+        return;
+      }
+
+      const tabContainingAnchor = targetAnchor.closest('.js-gl-tab');
+      if (!tabContainingAnchor) {
+        return;
+      }
+
+      this.setActiveTab(tabContainingAnchor);
+
+      this.$nextTick(() => {
+        window.scrollTo(0, targetAnchor.offsetTop);
+      });
+    }
+  },
+};
 </script>

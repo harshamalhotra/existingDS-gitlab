@@ -82,130 +82,31 @@
             <th class="header">Component</th>
             <th class="header">Status</th>
           </tr>
-          <tr>
-            <td><a href="../../components/alerts">Alerts</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/avatar">Avatars</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/badges">Badges</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/banners">Banners</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/breadcrumbs">Breadcrumbs</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/broadcast-messages">Broadcast messages</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/buttons">Buttons</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/charts">Charts</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/code-snippets">Code snippets</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/data-tables">Data tables</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/data-visualization">Data visualization</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/date-picker">Date picker</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/dropdowns">Dropdowns</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/file-uploader">File uploader</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/forms">Forms</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/forms">Forms</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/labels">Labels</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/lists">Lists</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/modals">Modals</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/notifications">Notifications</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/pagination">Pagination</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/popovers">Popovers</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/progress-bars">Progress bars</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/search">Search</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/segmented-control">Segmented control</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/skeleton-loader">Skeleton loader</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/spinner">Spinner</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/tabs">Tabs</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/toasts">Toasts</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/toggles">Toggles</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/tooltips">Tooltips</a></td>
-            <td>⚠️</td>
-          </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree.components"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/components/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                <template v-if="component.hasInfo">
+                  ⚠️
+                </template>
+                <template v-else>
+                  🚫
+                </template>
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
           <tr>
             <th class="header">Regions</th>
             <th class="header">Status</th>
@@ -380,3 +281,24 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      contentTree: null,
+    };
+  },
+  created() {
+    this.$axios
+      .$get(`/contents/contentTree.json`)
+      .then(treeResult => {
+        this.contentTree = treeResult;
+      })
+      .catch(e => {
+        // eslint-disable-next-line
+        console.log('Err : ', e);
+      });
+  },
+};
+</script>

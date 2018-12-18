@@ -13,32 +13,17 @@ stages:
 .install: &install
   yarn install
 
-.build_base: &build_base
+build:
   stage: build
   before_script:
     - *install
   script:
     - yarn run build
-    - utils/create-redirections.sh
   dependencies:
   artifacts:
     expire_in: 7 days
     paths:
       - public/
-  tags:
-    - gitlab-design-review
-    - gitlab-design-deploy
-
-build_branch:
-  <<: *build_base
-  except:
-    - master
-
-build_master:
-  <<: *build_base
-  variables:
-  only:
-    - master
 
 lint:
   stage: test
@@ -46,6 +31,7 @@ lint:
     - *install
   script:
     - yarn run lint
+    - yarn prettier --list-different --ignore-path .gitignore "**/*.{js,vue}"
 
 review:
   stage: deploy
@@ -53,7 +39,7 @@ review:
   before_script: []
   cache: {}
   dependencies:
-    - build_branch
+    - build
   variables:
     GIT_STRATEGY: none
   script:
@@ -96,7 +82,7 @@ deploy:
   variables:
     GIT_STRATEGY: none
   dependencies:
-    - build_master
+    - build
   before_script: []
   script:
     - rsync --delete -avz public/ ~/public/

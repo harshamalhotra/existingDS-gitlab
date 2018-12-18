@@ -9,8 +9,16 @@
   top: 0;
   overflow-y: auto;
 
-  .nav-sidebar__header {
-    border-bottom: $border-width solid $border-color;
+  ul {
+    margin: 0;
+    padding: $gl-spacing-3 0 $gl-spacing-3 0;
+    border-top: $border-width solid $border-color;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .nav-sidebar__header-anchor {
@@ -27,10 +35,14 @@
   }
 
   .nav-sidebar__section {
+    .nav-sidebar__section-title,
     .nav-sidebar__section-summary {
       cursor: pointer;
       padding: $gl-spacing-3 $gl-spacing-5;
-      font-weight: $font-weight--bold;
+
+      &.nav-sidebar--indent-1 {
+        padding: $gl-spacing-3 $gl-spacing-6;
+      }
 
       &:hover {
         background-color: $black-o-06;
@@ -39,6 +51,32 @@
       a {
         display: flex;
         color: $gray-900;
+        text-decoration: none;
+      }
+    }
+
+    .nav-sidebar__section-summary {
+      &:after {
+        border-style: solid;
+        border-width: 0.15em 0.15em 0 0;
+        content: '';
+        display: block;
+        height: 0.45em;
+        float: right;
+        transform: rotate(-45deg);
+        width: 0.45em;
+        transform: rotate(135deg) translate(0.4em, 0px);
+        border-color: $gray-400;
+      }
+    }
+
+    .nav-sidebar__section-title {
+      font-weight: $font-weight--bold;
+      display: block;
+
+      &:hover {
+        background-color: transparent;
+        cursor: auto;
       }
     }
 
@@ -47,10 +85,31 @@
     }
   }
 
+  details[open='open'] {
+    background-color: $black-o-04;
+
+    .nav-sidebar__section-summary {
+      background-color: $black-o-06;
+
+      .nuxt-link-active {
+        font-weight: $font-weight--bold;
+      }
+    }
+  }
+
   .nav-sidebar__section-items-anchor {
+    cursor: pointer;
     display: flex;
     color: $gray-900;
-    padding: $gl-spacing-3 $gl-spacing-8;
+    padding: $gl-spacing-3 $gl-spacing-5;
+
+    &.nav-sidebar--indent-1 {
+      padding: $gl-spacing-3 $gl-spacing-6;
+    }
+
+    &.nav-sidebar--indent-2 {
+      padding: $gl-spacing-3 $gl-spacing-7;
+    }
 
     &.nuxt-link-active {
       box-shadow: inset ($border-width * 4) 0 0 $gray-700;
