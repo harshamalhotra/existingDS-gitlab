@@ -17,9 +17,9 @@
     <div class="content limited m-t-10 m-b-10">
       <div class="distributed principles a-center max-w-sm">
         <div class="principle m-b-7">
-          <img 
-            src="../assets/images/principles/professional-productive.png" 
-            srcset="../assets/images/principles/professional-productive@2x.png 2x" 
+          <img
+            src="../assets/images/principles/professional-productive.png"
+            srcset="../assets/images/principles/professional-productive@2x.png 2x"
             class="a-center"
           />
           <div class="principle__content m-l-5">
@@ -28,8 +28,8 @@
           </div>
         </div>
         <div class="principle m-b-7">
-          <img 
-            src="../assets/images/principles/minimal-efficient.png" 
+          <img
+            src="../assets/images/principles/minimal-efficient.png"
             srcset="../assets/images/principles/minimal-efficient@2x.png 2x"
           />
           <div class="principle__content m-l-5">
@@ -38,8 +38,8 @@
           </div>
         </div>
         <div class="principle">
-          <img 
-            src="../assets/images/principles/human-quirky.png" 
+          <img
+            src="../assets/images/principles/human-quirky.png"
             srcset="../assets/images/principles/human-quirky@2x.png 2x"
           />
           <div class="principle__content m-l-5">
@@ -51,9 +51,9 @@
     </div>
     <div class="content contribute p-t-8 p-b-8">
       <div class="content limited distributed contributing-box__content">
-        <img 
-          src="../assets/images/contribute.png" 
-          srcset="../assets/images/contribute@2x.png 2x" 
+        <img
+          src="../assets/images/contribute.png"
+          srcset="../assets/images/contribute@2x.png 2x"
           class="a-center d-block m-t-8 m-b-5"
         />
         <h2 class="text-center">Everyone can contribute</h2>
@@ -63,41 +63,41 @@
     </div>
     <div class="content limited p-t-10 p-b-10">
       <div class="resources d-flex">
-        <a 
-          href="https://gitlab.com/gitlab-org/design.gitlab.com" 
-          target="_blank" 
+        <a
+          href="https://gitlab.com/gitlab-org/design.gitlab.com"
+          target="_blank"
           class="card card--highlighted card--link text-center p-a-4"
         >
-          <img 
-            src="../assets/images/resources/r-gitlab.png" 
-            srcset="../assets/images/resources/r-gitlab@2x.png 2x" 
+          <img
+            src="../assets/images/resources/r-gitlab.png"
+            srcset="../assets/images/resources/r-gitlab@2x.png 2x"
             class="a-center d-block m-b-3"
           />
           View repository
         </a>
-        <a 
-          href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/gitlab-pattern-library.sketch" 
-          target="_blank" 
+        <a
+          href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/gitlab-pattern-library.sketch"
+          target="_blank"
           class="card card--highlighted card--link text-center m-l-5 p-a-4"
         >
-          <img 
-            src="../assets/images/resources/r-sketch.png" 
-            srcset="../assets/images/resources/r-sketch@2x.png 2x" 
+          <img
+            src="../assets/images/resources/r-sketch.png"
+            srcset="../assets/images/resources/r-sketch@2x.png 2x"
             class="a-center d-block m-b-3"
           />
           Download pattern library
         </a>
-        <a 
-          href="https://about.gitlab.com/researchpanel/" 
-          target="_blank" 
+        <a
+          href="https://about.gitlab.com/community/gitlab-first-look/"
+          target="_blank"
           class="card card--highlighted card--link text-center m-l-5 p-a-4"
         >
-          <img 
-            src="../assets/images/resources/r-research.png" 
-            srcset="../assets/images/resources/r-research@2x.png 2x" 
+          <img
+            src="../assets/images/resources/r-first-look.png"
+            srcset="../assets/images/resources/r-first-look@2x.png 2x"
             class="a-center d-block m-b-3"
           />
-          Join our research panel
+          Join GitLab First Look
         </a>
       </div>
     </div>
