@@ -1,5 +1,7 @@
 ---
 name: Popovers
+vueComponents: 
+  - GlPopover
 related:
   - tooltips
 ---
