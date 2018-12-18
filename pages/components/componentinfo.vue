@@ -74,9 +74,9 @@
 </template>
 
 <script>
-import * as Documentation from '@gitlab/ui/documentation'
+import * as Documentation from '@gitlab/ui/documentation';
 
-import mdDisplay from '../../components/md_display.vue'
+import mdDisplay from '../../components/md_display.vue';
 
 export default {
   components: {
@@ -95,45 +95,45 @@ export default {
       componentBody: null,
       vueComponents: null,
       vueComponentDocumentations: {},
-      tabIndex: 0
-    }
+      tabIndex: 0,
+    };
   },
   created() {
-    this.componentAttributes = this.frontmatterInfo.attributes
+    this.componentAttributes = this.frontmatterInfo.attributes;
 
-    this.vueComponents = this.frontmatterInfo.attributes.vueComponents
+    this.vueComponents = this.frontmatterInfo.attributes.vueComponents;
 
-    this.componentBody = this.frontmatterInfo.body
+    this.componentBody = this.frontmatterInfo.body;
 
     if (this.vueComponents) {
       this.vueComponents.forEach(vueComponentName => {
-        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`)
-        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1)
-        snakeName = snakeName.replace(/gl_/, '')
+        let snakeName = vueComponentName.replace(/([A-Z])/g, $1 => `_${$1.toLowerCase()}`);
+        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1);
+        snakeName = snakeName.replace(/gl_/, '');
 
         Object.keys(Documentation.ComponentDocumentations).forEach(component => {
           if (component.startsWith(vueComponentName)) {
             this.vueComponentDocumentations[vueComponentName] =
-              Documentation.ComponentDocumentations[component]
+              Documentation.ComponentDocumentations[component];
           }
-        })
-      })
+        });
+      });
     }
   },
   methods: {
     setActiveTab(tabEl) {
-      this.tabIndex = [...tabEl.parentNode.children].indexOf(tabEl)
-    }
+      this.tabIndex = [...tabEl.parentNode.children].indexOf(tabEl);
+    },
   },
   mounted() {
     if (this.$route.hash) {
-      const targetAnchor = this.$el.querySelector(this.$route.hash)
+      const targetAnchor = this.$el.querySelector(this.$route.hash);
 
       if (!targetAnchor) {
-        return
+        return;
       }
 
-      const tabContainingAnchor = targetAnchor.closest('.js-gl-tab')
+      const tabContainingAnchor = targetAnchor.closest('.js-gl-tab');
       if (!tabContainingAnchor) {
         return;
       }
@@ -141,9 +141,9 @@ export default {
       this.setActiveTab(tabContainingAnchor);
 
       this.$nextTick(() => {
-        window.scrollTo(0, targetAnchor.offsetTop)
-      })
+        window.scrollTo(0, targetAnchor.offsetTop);
+      });
     }
-  }
-}
+  },
+};
 </script>

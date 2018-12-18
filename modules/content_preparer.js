@@ -1,48 +1,44 @@
-import path from 'path'
-import fs from 'fs'
-import fm from 'front-matter'
+import path from 'path';
+import fs from 'fs';
+import fm from 'front-matter';
 
 export function getComponentList() {
-  const baseContentsDir = path.resolve(__dirname, '../static/contents/')
-  const outputDir = path.join(baseContentsDir, 'components')
+  const baseContentsDir = path.resolve(__dirname, '../static/contents/');
+  const outputDir = path.join(baseContentsDir, 'components');
 
   if (!fs.existsSync(baseContentsDir)) {
-    fs.mkdirSync(baseContentsDir)
+    fs.mkdirSync(baseContentsDir);
   }
   if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir)
+    fs.mkdirSync(outputDir);
   }
 
-  const componentInfos = []
+  const componentInfos = [];
 
-  const baseComponentsDir = path.resolve(__dirname, '../contents/components/')
+  const baseComponentsDir = path.resolve(__dirname, '../contents/components/');
   const convertComponent = (componentFileName, componentFileContent) => {
-    const content = fm(componentFileContent)
+    const content = fm(componentFileContent);
     fs.writeFileSync(
       `${outputDir}/${componentFileName.replace(/.md/g, '.json')}`,
-      JSON.stringify(content)
-    )
+      JSON.stringify(content),
+    );
 
     componentInfos.push({
       id: componentFileName.replace('.md', ''),
       name: content.attributes.name,
       hasVueComponent:
-        content.attributes.vueComponents &&
-        content.attributes.vueComponents.length > 0,
-      hasInfo: content.body.length > 0
-    })
-  }
+        content.attributes.vueComponents && content.attributes.vueComponents.length > 0,
+      hasInfo: content.body.length > 0,
+    });
+  };
 
-  const fileItems = fs.readdirSync(baseComponentsDir)
+  const fileItems = fs.readdirSync(baseComponentsDir);
   fileItems.forEach(item => {
-    const itemContent = fs.readFileSync(
-      path.join(baseComponentsDir, item),
-      'utf8'
-    )
-    convertComponent(item, itemContent)
-  })
+    const itemContent = fs.readFileSync(path.join(baseComponentsDir, item), 'utf8');
+    convertComponent(item, itemContent);
+  });
 
-  return componentInfos
+  return componentInfos;
 }
 
 export default function() {
@@ -50,14 +46,14 @@ export default function() {
   this.extendBuild((config, { isClient }) => {
     // As we only do static we also only need to prepare it for the client
     if (!isClient) {
-      return
+      return;
     }
 
     fs.writeFileSync(
       path.resolve(__dirname, '../static/contents/contentTree.json'),
       JSON.stringify({
-        components: getComponentList()
-      })
-    )
-  })
+        components: getComponentList(),
+      }),
+    );
+  });
 }

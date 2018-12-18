@@ -286,19 +286,19 @@
 export default {
   data() {
     return {
-      contentTree: null
-    }
+      contentTree: null,
+    };
   },
   created() {
     this.$axios
       .$get(`/contents/contentTree.json`)
       .then(treeResult => {
-        this.contentTree = treeResult
+        this.contentTree = treeResult;
       })
       .catch(e => {
         // eslint-disable-next-line
-        console.log('Err : ', e)
-      })
-  }
-}
+        console.log('Err : ', e);
+      });
+  },
+};
 </script>

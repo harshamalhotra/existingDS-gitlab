@@ -1,6 +1,6 @@
 <script>
-import markdowner from 'markdown-it'
-import markdownAnchor from 'markdown-it-anchor'
+import markdowner from 'markdown-it';
+import markdownAnchor from 'markdown-it-anchor';
 
 export default {
   props: {
@@ -11,7 +11,7 @@ export default {
   },
   render(createElement) {
     if (!this.md) {
-      return createElement('h4', "This component's documentation has not yet been added.")
+      return createElement('h4', "This component's documentation has not yet been added.");
     }
 
     const md = markdowner({
@@ -20,24 +20,24 @@ export default {
     }).use(markdownAnchor, {
       permalink: true,
       permalinkBefore: true,
-      permalinkSymbol: '#'
-    })
-    let mdOutput = md.render(this.md)
+      permalinkSymbol: '#',
+    });
+    let mdOutput = md.render(this.md);
     mdOutput = mdOutput.replace(
       /\[\[Example:(.*?)\]\]/g,
-      '<div class="app-styles"><gl-example-display exampleName="$1" /></div>'
-    )
+      '<div class="app-styles"><gl-example-display exampleName="$1" /></div>',
+    );
 
     // Format Todo Messages as before
-    mdOutput = mdOutput.replace(/Todo:(.*?)\n/gm, '<p class="todo">Todo: $1</p>')
+    mdOutput = mdOutput.replace(/Todo:(.*?)\n/gm, '<p class="todo">Todo: $1</p>');
 
     const dynamicElement = {
       template: `<div class="component md">${mdOutput}</div>`,
-    }
+    };
 
-    return createElement(dynamicElement)
+    return createElement(dynamicElement);
   },
-}
+};
 </script>
 
 <style>
@@ -49,5 +49,4 @@ export default {
 *:hover > .header-anchor {
   visibility: visible;
 }
-
 </style>
