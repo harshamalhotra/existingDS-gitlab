@@ -88,7 +88,7 @@
           Download pattern library
         </a>
         <a
-          href="https://about.gitlab.com/community/gitlab-first-look//"
+          href="https://about.gitlab.com/community/gitlab-first-look/"
           target="_blank"
           class="card card--highlighted card--link text-center m-l-5 p-a-4"
         >
