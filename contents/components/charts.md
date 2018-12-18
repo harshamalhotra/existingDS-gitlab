@@ -1,5 +1,7 @@
 ---
 name: Charts
+vueComponents:
+  - GlAreaChart
 ---
 
 Charts help users quickly digest, visualize and see trends in their data. 
@@ -47,6 +49,8 @@ The bars on a column chart are presented vertically rather than horizontally, an
 Todo: Add specific information about line charts
 
 ### Area charts
+
+[[Example:area-basic]]
 
 Todo: Add specific informationa about area charts
 

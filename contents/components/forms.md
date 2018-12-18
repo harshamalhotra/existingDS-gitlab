@@ -1,5 +1,7 @@
 ---
 name: Forms
+vueComponents:
+  - GlFormInput
 related:
   - buttons
   - dropdowns

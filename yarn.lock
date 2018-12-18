@@ -604,18 +604,20 @@
     eslint-plugin-promise "^4.0.1"
     eslint-plugin-vue "^5.0.0-beta.3"
 
-"@gitlab/ui@^1.12.0":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-1.13.1.tgz#30675b489f802fda2d8c80fc343efc913371b03a"
+"@gitlab/ui@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-1.16.2.tgz#fecba9f9198db9fa82e922d3c7fe11dd81e3e9a3"
+  integrity sha512-8m11f9ZQaQZyxmJ6YlgRp0wh94CY95L+Dz5nDFKakwgJA6U5XxQutL1Szip/SCq7u47MXkvQpo5kUQwoAz7K2Q==
   dependencies:
     babel-standalone "^6.26.0"
     bootstrap-vue "^2.0.0-rc.11"
     copy-to-clipboard "^3.0.8"
+    echarts "^4.2.0-rc.2"
     highlight.js "^9.13.1"
     js-beautify "^1.8.8"
     lodash "^4.17.11"
     url-search-params-polyfill "^5.0.0"
-    vue "^2.5.16"
+    vue "^2.5.21"
     vue-loader "^15.4.2"
 
 "@nuxt/babel-preset-app@2.3.4":
@@ -2502,6 +2504,13 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
+
+echarts@^4.2.0-rc.2:
+  version "4.2.0-rc.2"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.2.0-rc.2.tgz#6a98397aafa81b65cbf0bc15d9afdbfb244df91e"
+  integrity sha512-5Y4Kyi4eNsRM9Cnl7Q8C6PFVjznBJv1VIiMm/VSQ9zyqeo+ce1695GqUd9v4zfVx+Ow1gnwMJX67h0FNvarScw==
+  dependencies:
+    zrender "4.0.5"
 
 editorconfig@^0.15.0:
   version "0.15.2"
@@ -7208,9 +7217,14 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-vue@^2.5.16, vue@^2.5.17:
+vue@^2.5.17:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vue@^2.5.21:
+  version "2.5.21"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
+  integrity sha512-Aejvyyfhn0zjVeLvXd70h4hrE4zZDx1wfZqia6ekkobLmUZ+vNFQer53B4fu0EjWBSiqApxPejzkO1Znt3joxQ==
 
 vuex@^3.0.1:
   version "3.0.1"
@@ -7439,3 +7453,8 @@ yargs@^7.0.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
+
+zrender@4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.5.tgz#6e8f738971ce2cd624aac82b2156729b1c0e5a82"
+  integrity sha512-SintgipGEJPT9Sz2ABRoE4ZD7Yzy7oR7j7KP6H+C9FlbHWnLUfGVK7E8UV27pGwlxAMB0EsnrqhXx5XjAfv/KA==
