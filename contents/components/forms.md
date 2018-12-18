@@ -48,6 +48,10 @@ To encourage the usage of different input field widths, we use a set of predefin
 
 Todo: Add live component block with code example (predefined widths + 100% width)
 
+#### Clear icon
+
+A clear icon can appear in the right corner when the input field isn’t empty. It helps users clear the content with a single click. After removing the content it disappears and focus is placed on the input field. The clear icon isn’t necessary for the majority of input fields but is mandatory for [search boxes](/components/search).
+
 ### Text area
 
 Text areas should be used when expected content is long. Predefined widths from the **Input fields** section apply to text area as well.
