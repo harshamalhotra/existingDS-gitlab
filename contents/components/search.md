@@ -19,7 +19,7 @@ Our search patterns fall into two groups:
 
 ### Search by typing
 
-This pattern doesn't use a button to trigger the search. The search action is triggered immediately after users start typing. In order to communicate that a search is being performed, a spinner is added in the right corner of the search box. A clear icon appears in the right corner when the search box contains content and there is no search activity happening in the background. Clicking the clear icon removes the content, focuses the input field (if not already), and hides itself. A magnifying glass icon is placed in the left corner of the search box to indicate to the user that the input is a search field.
+This pattern doesn't use a button to trigger the search. The search action is triggered immediately after users start typing. In order to communicate that a search is being performed, a spinner is added in the right corner of the search box. A magnifying glass icon is placed in the left corner of the search box to indicate to the user that the input is a search field.
 
 Narrowing down a large list of results as a user types can create performance issues. Consider using the Search by confirmation pattern if performance is a concern.
 
@@ -27,7 +27,7 @@ Todo: Add live component block with code example (search by typing)
 
 ### Search by confirmation
 
-This pattern is visually different from the one above because users interact with it differently. The magnifying glass icon is inside the button which triggers the search action. The presence of the button indicates the need for confirmation to trigger the search. Pressing “Enter” also triggers the action. A clear icon appears in the right corner when the search box contains content. Clicking the clear icon removes the content, focuses the input field (if not already), and hides itself.
+This pattern is visually different from the one above because users interact with it differently. The magnifying glass icon is inside the button which triggers the search action. The presence of the button indicates the need for confirmation to trigger the search. Pressing “Enter” also triggers the action.
 
 Todo: Add live component block with code example (search by confirmation)
 
