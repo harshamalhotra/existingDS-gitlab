@@ -9,7 +9,7 @@
           <svg 
             width="24" 
             height="24" 
-            class="tanuki-logo m-r-2" 
+            class="tanuki-logo m-r-3" 
             viewBox="0 0 36 36"
           >
             <path
