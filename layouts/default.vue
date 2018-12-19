@@ -113,7 +113,10 @@
                 :open="$route.fullPath.startsWith('/brand-content/')" 
                 class="nav-sidebar__section"
                 >
-                <summary class="nav-sidebar__section-summary nav-sidebar--indent-1">Content</summary>
+                <summary
+                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
+                  @click="selectFirstSubItem"
+                >Content</summary>
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                   to="/brand-content/voice-tone"
