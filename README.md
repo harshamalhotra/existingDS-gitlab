@@ -14,6 +14,13 @@ You can view it at [design.gitlab.com](https://design.gitlab.com/).
 
 If you are having errors while performing `yarn install`, make sure you are using node 8.12.0 (LTS) before performing that step.
 
+## Writing component documentation
+
+When starting from scratch:
+1. Copy the contents from `pages/components/template.md`
+1. Paste the contents in an existing placeholder file in `contents/components/` or create a new file and call it `componentname.md`
+1. Edit and write your documentation
+
 ## Reviewing
 
 Each merge request for this repository will generate a [review app](https://docs.gitlab.com/ee/ci/review_apps/). Review apps create a new environment (dynamically) for each one of your branches. A Review App is then visible as a link when you visit the merge request relevant to the branch. That way, you are able to see live all changes introduced by the merge request changes.
