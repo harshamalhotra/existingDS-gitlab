@@ -63,7 +63,6 @@
         display: block;
         height: 0.45em;
         float: right;
-        transform: rotate(-45deg);
         width: 0.45em;
         transform: rotate(135deg) translate(0.4em, 0px);
         border-color: $gray-400;
@@ -90,6 +89,10 @@
 
     .nav-sidebar__section-summary {
       background-color: $black-o-06;
+
+      &:after {
+        transform: rotate(-45deg) translate(-0.4em, 0px);
+      }
 
       .nuxt-link-active {
         font-weight: $font-weight--bold;
