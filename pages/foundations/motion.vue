@@ -21,15 +21,13 @@
       <p class="todo">Todo: Add skeleton loader transition example</p>
       <h3>Moving transitions</h3>
       <p>When elements move on-screen, there should be a quick animation so it is clear to users what moved where. These types of animations use a 200 milliseconds transition time.</p>
+      <p class="todo">Todo: Add modal appearence example</p>
       <h4>Shifting elements</h4>
       <p>An example of a moving transition is when elements have to rearrange when you <a href="/foundations/interactions#drag-and-drop">drag an element</a>.</p>
       <p class="todo">Todo: Add drag animation example</p>
       <h4>Page autoscroll</h4>
       <p>To keep an active element visible, a page auto scroll transition can be used. An example of this includes clicking an issue board card that is out of screen.</p>
       <p class="todo">Todo: Add auto scroll example (issue board cards)</p>
-      <h4>Modal appearance</h4>
-      <p>Modals utilize a 200 milliseconds ease in from the top of the page to make their entry less abrupt to users. Learn more about <a href="/components/modals">modals</a>.</p>
-      <p class="todo">Todo: Add modal appearance example</p>
     </div>
   </div>
 </template>

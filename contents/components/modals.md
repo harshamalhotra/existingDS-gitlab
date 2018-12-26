@@ -3,9 +3,9 @@ name: Modals
 related:
   - accordions
   - buttons
-  - Popovers
-  - Toasts
-  - Tooltips
+  - popovers
+  - toasts
+  - tooltips
 ---
 
 Modals are used to reveal critical information, show information without losing context, or when the system requires a user response. Modals can also fragment a complex workflow into simpler steps and should serve a single purpose dedicated to completing the user's task.
@@ -17,7 +17,7 @@ Don’t surprise users by popping up a modal. Let a user’s action, such as a b
 
 **Expanding elements:** Utilize elements such as [accordions](/components/accordions), [tooltips](/components/tooltips), or other expanding non-modal patterns to convey your information.
 
-**Toasts:** Present your content using [toasts](/components/toasts) a brief, auto-expiring message for the user to consume while staying focused on their task.
+**Toasts:** Present your message within a [toast](/components/toasts), a brief, auto-expiring element for the user to consume while staying focused on their task.
 
 **New page:** Take the user to a different page so that the interaction may be isolated without losing access to core navigational elements within the application.
 
@@ -29,26 +29,6 @@ Todo: Add live component block with code example
 
 ## Specifications
 
-### Positioning
-
-Modals should be pinned **64px** from the top of the viewport.
-
-### Sizes
-
-There are 3 max-width sizes for the modals. All should be responsive and scale to full width for mobile viewports.
-
-**Small** 512px wide
-
-Todo: Add live component block with code example
-
-**Medium** 768px wide
-
-Todo: Add live component block with code example
-
-**Large** 990px wide
-
-Todo: Add live component block with code example
-
 ### Sections
 
 There are three main sections of a modal:
@@ -59,19 +39,19 @@ The header is either a question, a descriptive phrase, or title. The header also
 
 #### Body:
 
-The content in the body should never be ambiguous and unclear. Strive to be as concise as possible and provide the user with specific information in regards to their task. Do not ask a vague question or pose a vague statement, instead, explain what you are asking the user to do in a [voice and tone](/content/voice-tone) that's straightforward and easy to understand.
+The content in the body should never be ambiguous and unclear. Strive to be as concise as possible and provide the user with specific information in regards to their task. Do not ask a vague question or pose a vague statement. Instead, explain what you are asking the user to do in a [voice and tone](/content/voice-tone) that's straightforward and easy to understand.
 
 #### Actions:
 
 There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. Button order and positioning should follow our [guidelines for buttons](/components/buttons).
 
-When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use Set status and Remove status instead of simply, Save and Delete.
+When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use "Set status" and "Remove status" instead of simply, "Save" and "Delete".
 
 There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important as some modals can be tall and we want to avoid making the user scroll up to close a modal.
 
 ### Behavior
 
-**User Focus:** When a user opens a modal use the lightbox effect combined with an ease-in entry animation. This draws attention to the modal and while also indicating to the user that they cannot interact with the parent page. See guidelines for [motion](foundations/motion) for more information.
+**User Focus:** When a user opens a modal, use the lightbox effect combined with an ease-in entry animation. This draws attention to the modal, while also indicating to the user that they cannot interact with the parent page. See guidelines for [motion](foundations/motion) for more information.
 
 **Autofocus:**  The first focusable item should be auto-focused within the modal dialog so that the user can tab in the modal and not become stuck behind the overlay. This behavior follows the [accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) for modals.
 
@@ -85,8 +65,8 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 ## Resources
 
-[modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
+* [modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
 
-[Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
+* [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
 
-[Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
+* [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
