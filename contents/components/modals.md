@@ -17,7 +17,7 @@ Don’t surprise users by popping up a modal. Let a user’s action, such as a b
 
 **Expanding elements:** Utilize elements such as [accordions](/components/accordions), [tooltips](/components/tooltips), or other expanding non-modal patterns to convey your information.
 
-**Toasts:** Present your message within a [toast](/components/toasts), a brief, auto-expiring element for the user to consume while staying focused on their task.
+**Toasts:** Present your message within a [toast](/components/toasts); a brief, auto-expiring element for the user to consume while staying focused on their task.
 
 **New page:** Take the user to a different page so that the interaction may be isolated without losing access to core navigational elements within the application.
 
@@ -66,7 +66,5 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 ## Resources
 
 * [modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
-
 * [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
-
 * [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
