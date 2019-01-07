@@ -229,12 +229,12 @@
                   to="/components/status"
                 >Status</nuxt-link>
                 <nuxt-link 
-                  v-for="component in contentTree.components"
-                  :key="component.id"
-                  :to="`/components/${component.id}`"
+                  v-for="page in contentTree.components"
+                  :key="page.id"
+                  :to="`/components/${page.id}`"
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
                 >
-                  {{ component.name }}
+                  {{ page.name }}
                 </nuxt-link>
               </details>
             </li>
@@ -248,13 +248,13 @@
                   @click="selectFirstSubItem"
                 >Regions</summary>
                 <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/regions/empty-states"
-                >Empty states</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/regions/navigation"
-                >Navigation</nuxt-link>
+                  v-for="page in contentTree.regions"
+                  :key="page.id"
+                  :to="`/regions/${page.id}`"
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                >
+                  {{ page.name }}
+                </nuxt-link>
               </details>
             </li>
             <li>
