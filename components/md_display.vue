@@ -15,6 +15,7 @@ export default {
     }
 
     const md = markdowner({
+      html: true,
       xhtmlOut: true,
       typographer: true,
     }).use(markdownAnchor, {
