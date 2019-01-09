@@ -1,5 +1,7 @@
 ---
 name: Dropdowns
+vueComponents: 
+  - GlDropdown
 related: 
   - buttons
   - forms

@@ -1,5 +1,7 @@
 ---
 name: Badges
+vueComponents: 
+  - GlBadge
 related:
   - labels
 ---

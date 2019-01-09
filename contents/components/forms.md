@@ -2,6 +2,7 @@
 name: Forms
 vueComponents:
   - GlFormInput
+  - GlFormTextarea
 related:
   - buttons
   - dropdowns
