@@ -1,0 +1,5 @@
+---
+name: Tables
+vueComponents: 
+  - GlTable
+---

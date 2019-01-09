@@ -3,7 +3,7 @@ name: Spinner
 vueComponents: 
   - GlLoadingIcon
 related: 
-  - buttonsa
+  - buttons
   - forms
   - search
   - skeleton-loader
