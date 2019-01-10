@@ -299,25 +299,6 @@ export default {
         console.log('Err : ', e);
       });
   },
-  methods: {
-    selectFirstSubItem(ev) {
-      const { target } = ev;
-      if (target && target.parentNode) {
-        const detailsLinks = target.parentNode.querySelectorAll('a');
-        if (detailsLinks.length > 0) {
-          const firstLink = detailsLinks[0].getAttribute('href');
-          if (firstLink) {
-            const that = this;
-            setTimeout(() => {
-              that.$router.push({
-                path: firstLink.replace(/#/, ''),
-              });
-            }, 1);
-          }
-        }
-      }
-    },
-  },
 };
 </script>
 
