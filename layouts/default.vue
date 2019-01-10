@@ -59,33 +59,18 @@
           >
             <li>
               <span class="nav-sidebar__section-title">Brand</span>
-                <details 
-                :open="$route.fullPath.startsWith('/brand-get-started/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Get started</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-get-started/brand-personality"
-                >Brand personality</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-get-started/brand-personas-roles"
-                >Personas</nuxt-link>
-                </details>
             </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/brand-foundations/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Foundations</summary>
+            <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/brand-get-started/brand-personality"
+              >Brand personality</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/brand-get-started/brand-personas-roles"
+              >Personas</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations">
                 <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                   to="/brand-foundations/gitlab-logo"
@@ -106,23 +91,13 @@
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                   to="/brand-foundations/iconography"
                 >Iconography</nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/brand-content/')" 
-                class="nav-sidebar__section"
-                >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Content</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-content/voice-tone"
-                >Voice &amp; Tone</nuxt-link>
-              </details>
-            </li>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/brand-content/voice-tone"
+              >Voice &amp; Tone</nuxt-link>
+            </sub-menu>
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
@@ -135,185 +110,98 @@
           >
             <li>
               <span class="nav-sidebar__section-title">Product</span>
-              <details 
-                :open="$route.fullPath.startsWith('/getting-started/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Get started</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/getting-started/structure"
-                >Structure</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/getting-started/personas"
-                >Personas</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/getting-started/contributing"
-                >Contributing</nuxt-link>
-              </details>
             </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/foundations/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Foundations</summary>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/colors"
-                >Colors</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/iconography"
-                >Iconography</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/motion"
-                >Motion</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/illustration"
-                >Illustration</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/typography"
-                >Typography</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/interactions"
-                >Interactions</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                  to="/foundations/saving-and-feedback"
-                >Saving and feedback</nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/layout/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Layout</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/layout/spacing"
-                >Spacing</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/layout/grid"
-                >Grid</nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/components')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Components</summary>
-                <nuxt-link 
+            <sub-menu :content-tree="contentTree" category="getting-started" category-name="Get started">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/structure"
+              >Structure</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/personas"
+              >Personas</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/getting-started/contributing"
+              >Contributing</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="foundations">
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/colors"
+              >Colors</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/iconography"
+              >Iconography</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/motion"
+              >Motion</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/illustration"
+              >Illustration</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/typography"
+              >Typography</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/interactions"
+              >Interactions</nuxt-link>
+              <nuxt-link
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+                to="/foundations/saving-and-feedback"
+              >Saving and feedback</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="layout">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/layout/spacing"
+              >Spacing</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/layout/grid"
+              >Grid</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="components">
+              <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                   to="/components/status"
                 >Status</nuxt-link>
-                <nuxt-link 
-                  v-for="page in contentTree.components"
-                  :key="page.id"
-                  :to="`/components/${page.id}`"
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                >
-                  {{ page.name }}
-                </nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/regions/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Regions</summary>
-                <nuxt-link 
-                  v-for="page in contentTree.regions"
-                  :key="page.id"
-                  :to="`/regions/${page.id}`"
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                >
-                  {{ page.name }}
-                </nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/content/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Content</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/content/voice-tone"
-                >Voice &amp; tone</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/content/terminology"
-                >Terminology</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/content/punctuation"
-                >Punctuation</nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/usability/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Usability</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/usability/i18n"
-                >Internationalization</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/usability/helping-users"
-                >Helping users</nuxt-link>
-              </details>
-            </li>
-            <li>
-              <details 
-                :open="$route.fullPath.startsWith('/resources/')" 
-                class="nav-sidebar__section"
-              >
-                <summary
-                  class="nav-sidebar__section-summary nav-sidebar--indent-1"
-                  @click="selectFirstSubItem"
-                >Resources</summary>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/resources/design-resources"
-                >Design resources</nuxt-link>
-              </details>
-            </li>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="regions" />
+            <sub-menu :content-tree="contentTree" category="content">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/content/voice-tone"
+              >Voice &amp; tone</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/content/terminology"
+              >Terminology</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/content/punctuation"
+              >Punctuation</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="usability">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/usability/i18n"
+              >Internationalization</nuxt-link>
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/usability/helping-users"
+              >Helping users</nuxt-link>
+            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="resources">
+              <nuxt-link 
+                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+                to="/resources/design-resources"
+              >Design resources</nuxt-link>
+            </sub-menu>
           </ul>
           <ul
             :open="$route.fullPath.startsWith('/research/')" 
@@ -384,7 +272,12 @@
 </template>
 
 <script>
+import subMenu from '../components/sub_menu.vue';
+
 export default {
+  components: {
+    subMenu,
+  },
   data() {
     return {
       contentTree: null,
