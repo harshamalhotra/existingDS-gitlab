@@ -65,10 +65,6 @@
                 class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                 to="/brand-get-started/brand-personality"
               >Brand personality</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/brand-get-started/brand-personas-roles"
-              >Personas</nuxt-link>
             </sub-menu>
             <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations">
                 <nuxt-link 
@@ -116,10 +112,6 @@
                 class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                 to="/getting-started/structure"
               >Structure</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/getting-started/personas"
-              >Personas</nuxt-link>
               <nuxt-link 
                 class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
                 to="/getting-started/contributing"

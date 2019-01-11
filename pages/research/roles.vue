@@ -2,9 +2,7 @@
   <div class="personas content limited m-t-7 m-b-7">
     <div class="md">
       <h1>Enterprise IT Roles</h1>
-      <p>Roles are distinct from personas due to their specific job titles. These are the real people you will encounter while selling. For example, you will find a contact at an account with one of these specific roles. Understanding the challenges faced by each role in IT, along with what they care most about, is helpful to deliver the right value proposition to the right person.</p>
-      <h2>Roles we sell to</h2>
-      <p>While personas describe ideal targets, roles are the real people in job titles you will encounter while selling. Understanding the challenges faced by each role in IT, along with what they care most about, is helpful to deliver the right value proposition to the right person. It will help you know: </p>
+      <p>Roles are distinct from personas due to their specific job titles. These are the real people you will encounter while selling. For example, you are likely to find a contact at an account with one of these specific roles. Understanding the challenges faced by each role in IT, along with what they care most about, is helpful to deliver the right value proposition to the right person. These roles will help you know:</p>
       <ul>
         <li>if they are even someone who may have an interest in GitLab (don't waste time),</li>
         <li>what questions to ask to learn more and qualify the lead,</li>

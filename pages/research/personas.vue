@@ -2,8 +2,8 @@
   <div class="personas content limited m-t-7 m-b-7">
     <div class="md">
       <h1>Personas</h1>
-      <p>Personas are a generalized way of talking about the ideal target we are aiming to communicate with and design for. They help us define our messaging and marketing delivery. Keeping personas in mind allows us to use the correct language to address their specific problems and pain points. GitLab has both buyer and user persona types.</p>
-      <h2>Buyer personas</h2>
+      <p>Personas are a generalized way of talking about the ideal target we are aiming to communicate with and design for. They help us not only define our messaging and marketing delivery, but also our product. Keeping personas in mind allows us to use the correct language and make the best decisions to address their specific problems and pain points. GitLab has both <a href="#buyer-personas">buyer</a> and <a href="#user-personas">user</a> persona types.</p>
+      <h2 id="buyer-personas">Buyer personas</h2>
       <p>Buyer personas are the people who serve as the main buyer in an organization or a champion within an enterprise the drives the buying conversation and coordinates various teams to make a purchase.</p>
       <ul>
         <li>Director DevOps <a href="https://www.youtube.com/watch?v=qyELotxsQzY" target="_blank">video</a> , Director DevOps <a href="https://docs.google.com/presentation/d/1x-XUhAXkZxl8ZGe4ze9qcWMmrWITc7es1fYNY_OHQQA/" target="_blank">slide deck</a> or Director of IT
@@ -13,7 +13,7 @@
       </ul>
       <p>Also see the <a href="https://about.gitlab.com/handbook/ceo/pricing/#four-tiers" target="_blank">four tiers on our pricing page.</a></p>
 
-      <h2>User personas</h2>
+      <h2 id="user-personas">User personas</h2>
       <div class="m-b-6">
         <h3>Dev</h3>
         <ul>
