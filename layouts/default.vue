@@ -216,6 +216,16 @@
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+              to="/research/personas"
+            >Personas</nuxt-link>
+            <nuxt-link 
+              tag="li"
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+              to="/research/roles"
+            >Roles</nuxt-link>
+            <nuxt-link 
+              tag="li"
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
               to="/research/toolkit"
             >Toolkit</nuxt-link>
             <nuxt-link 
