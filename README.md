@@ -2,6 +2,10 @@
 
 You can view it at [design.gitlab.com](https://design.gitlab.com/).
 
+## Prerequisites
+
+Before you move on, make sure you have [Node](https://nodejs.org/en/) 8.x (LTS) and [Yarn](https://yarnpkg.com/) 1.10 or newer installed.
+
 ## Quick start
 
 1. Clone the project with `git clone git@gitlab.com:gitlab-org/design.gitlab.com.git`
@@ -9,10 +13,6 @@ You can view it at [design.gitlab.com](https://design.gitlab.com/).
 1. Run `yarn install`
 1. Run `yarn start` to start build & watch changes
 1. Open http://localhost:2018
-
-## Troubleshooting
-
-If you are having errors while performing `yarn install`, make sure you are using node 8.12.0 (LTS) before performing that step.
 
 ## Writing component documentation
 
