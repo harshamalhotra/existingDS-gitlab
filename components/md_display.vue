@@ -15,6 +15,7 @@ export default {
     }
 
     const md = markdowner({
+      html: true,
       xhtmlOut: true,
       typographer: true,
     }).use(markdownAnchor, {
@@ -32,7 +33,7 @@ export default {
     mdOutput = mdOutput.replace(/Todo:(.*?)\n/gm, '<p class="todo">Todo: $1</p>');
 
     const dynamicElement = {
-      template: `<div class="component md">${mdOutput}</div>`,
+      template: `<div class="component md  typography">${mdOutput}</div>`,
     };
 
     return createElement(dynamicElement);

@@ -2,9 +2,9 @@ import path from 'path';
 import fs from 'fs';
 import fm from 'front-matter';
 
-export function getComponentList() {
+export function getContentList(dirName) {
   const baseContentsDir = path.resolve(__dirname, '../static/contents/');
-  const outputDir = path.join(baseContentsDir, 'components');
+  const outputDir = path.join(baseContentsDir, dirName);
 
   if (!fs.existsSync(baseContentsDir)) {
     fs.mkdirSync(baseContentsDir);
@@ -15,9 +15,11 @@ export function getComponentList() {
 
   const componentInfos = [];
 
-  const baseComponentsDir = path.resolve(__dirname, '../contents/components/');
+  const baseComponentsDir = path.resolve(__dirname, `../contents/${dirName}/`);
   const convertComponent = (componentFileName, componentFileContent) => {
     const content = fm(componentFileContent);
+    // We don't actually need the raw frontmatter, good to save some bytes
+    delete content.frontmatter;
     fs.writeFileSync(
       `${outputDir}/${componentFileName.replace(/.md/g, '.json')}`,
       JSON.stringify(content),
@@ -49,11 +51,16 @@ export default function() {
       return;
     }
 
+    const treeObj = {};
+    const directories = fs.readdirSync(path.resolve(__dirname, '../contents/'));
+
+    directories.forEach(dir => {
+      treeObj[dir] = getContentList(dir);
+    });
+
     fs.writeFileSync(
       path.resolve(__dirname, '../static/contents/contentTree.json'),
-      JSON.stringify({
-        components: getComponentList(),
-      }),
+      JSON.stringify(treeObj),
     );
   });
 }

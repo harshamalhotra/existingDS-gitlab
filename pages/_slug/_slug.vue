@@ -7,14 +7,14 @@
       />
     </div>
     <div v-else>
-      Loading component ...
+      Loading page ...
     </div>
   </div>
 </template>
 
 <script>
 const getPost = () => ({
-  component: import(`../../components/componentinfo.vue`),
+  component: import('../../components/componentinfo.vue'),
 });
 export default {
   data() {
@@ -25,10 +25,10 @@ export default {
   },
   beforeCreate() {
     this.$axios
-      .$get(`/contents/components/${this.$route.params.slug}.json`)
+      .$get(`/contents${this.$route.path}.json`)
       .then(fmResult => {
         this.fmResult = fmResult;
-        this.component = () => getPost(this.$route.params.slug);
+        this.component = () => getPost(this.$route.path);
       })
       .catch(e => {
         // eslint-disable-next-line
