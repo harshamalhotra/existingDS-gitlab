@@ -50,8 +50,6 @@ Todo: Add specific information about line charts
 
 ### Area charts
 
-[[Example:area-basic]]
-
 Todo: Add specific informationa about area charts
 
 ### Pie charts
@@ -64,4 +62,6 @@ Todo: Add live component block with code example of all available chart types
 
 ## Design specifications
 
-Todo: Add sketch measure preview specs for each chart type
+[Column charts measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/)
+
+Todo: Add sketch measure preview specs for each additional chart type
