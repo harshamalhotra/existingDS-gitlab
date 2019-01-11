@@ -63,6 +63,15 @@
         ></span>
       </div>
       <p class="todo">Todo: Add spacing class examples</p>
+      <h2>Standard spacing guidelines</h2>
+      <p><code>8px</code> is the standard measurement used to separate related elements.</p>
+      <p class="todo">Todo: Add example of 8px spacing (buttons)</p>
+      <p><code>16px</code> is the standard measurement used to separate unrelated elements.</p>
+      <p class="todo">Todo: Add example of 16px spacing</p>
+      <p><code>24px</code> is the standard measurement used to separate sub-sections of content.</p>
+      <p class="todo">Todo: Add example of 24px spacing</p>
+      <p><code>32x</code> is the standard measurement used to separate sections of content.</p>
+      <p class="todo">Todo: Add example of 32px spacing</p>
     </div>
   </div>
 </template>
