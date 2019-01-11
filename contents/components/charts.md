@@ -50,6 +50,8 @@ Todo: Add specific information about line charts
 
 ### Area charts
 
+[[Example:area-basic]]
+
 Todo: Add specific informationa about area charts
 
 ### Pie charts
