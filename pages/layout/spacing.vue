@@ -63,6 +63,18 @@
         ></span>
       </div>
       <p class="todo">Todo: Add spacing class examples</p>
+      <h2>Standard spacing guidelines</h2>
+      <p><code>2px</code> or <code>4px</code> is used for spacing within a component.</p>
+      <p class="todo">Todo: Add example of 2px spacing</p>
+      <p class="todo">Todo: Add example of 4px spacing</p>
+      <p><code>8px</code> is used to separate related elements.</p>
+      <p class="todo">Todo: Add example of 8px spacing (buttons)</p>
+      <p><code>16px</code> is used to separate unrelated elements.</p>
+      <p class="todo">Todo: Add example of 16px spacing</p>
+      <p><code>24px</code> is used to separate sub-sections of content.</p>
+      <p class="todo">Todo: Add example of 24px spacing</p>
+      <p><code>32x</code> is used to separate sections of content.</p>
+      <p class="todo">Todo: Add example of 32px spacing</p>
     </div>
   </div>
 </template>
