@@ -64,6 +64,8 @@ Todo: Add live component block with code example of all available chart types
 
 ## Design specifications
 
+Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+
 [Column charts measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/)
 
 Todo: Add sketch measure preview specs for each additional chart type
