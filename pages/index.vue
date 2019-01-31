@@ -14,7 +14,7 @@
       />
       <div class="overlay"></div>
     </div>
-    <div class="content limited m-t-10 m-b-10">
+    <div class="content limited m-t-10">
       <div class="distributed principles a-center max-w-sm">
         <div class="principle m-b-7">
           <img
@@ -44,9 +44,19 @@
           />
           <div class="principle__content m-l-5">
             <h2>Human</h2>
-            <p>We need to build empathy with our users, understand their state of mind, and connect with them on a human level. Quirkiness is part of our DNA; we should embrace it in the right moments and contexts.</p>
+            <p>We need to build empathy with our users. This means we must understand their state of mind and connect with them on a human level.</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content limited p-b-10">
+      <div class="principle-action resources d-flex a-center m-t-8 m-b-5 text-center">
+        <a 
+          href="/get-started/principles" 
+          class="card card--highlighted card--link text-center p-a-4 a-center"
+        >
+          Learn more about our principles
+        </a>
       </div>
     </div>
     <div class="content contribute p-t-8 p-b-8">
