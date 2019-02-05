@@ -6,49 +6,18 @@
           to="/"
           class="nav-sidebar__header-anchor p-a-5"
         >
-          <svg 
-            width="24" 
-            height="24" 
-            class="tanuki-logo m-r-3" 
-            viewBox="0 0 36 36"
-          >
-            <path
-              class="tanuki-shape tanuki-left-ear"
-              fill="#e24329"
-              d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"
-            />
-            <path
-              class="tanuki-shape tanuki-right-ear"
-              fill="#e24329"
-              d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"
-            />
-            <path
-              class="tanuki-shape tanuki-nose"
-              fill="#e24329"
-              d="M18,34.38 3,14 33,14 Z"
-            />
-            <path
-              class="tanuki-shape tanuki-left-eye"
-              fill="#fc6d26"
-              d="M18,34.38 11.38,14 2,14 6,25Z"
-            />
-            <path
-              class="tanuki-shape tanuki-right-eye"
-              fill="#fc6d26"
-              d="M18,34.38 24.62,14 34,14 30,25Z"
-            />
-            <path
-              class="tanuki-shape tanuki-left-cheek"
-              fill="#fca326"
-              d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"
-            />
-            <path
-              class="tanuki-shape tanuki-right-cheek"
-              fill="#fca326"
-              d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"
-            />
+          <svg height="36" viewBox="0 0 376 342" xmlns="http://www.w3.org/2000/svg" class="tanuki-logo">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M185.398 341.13l68.013-209.322H117.39L185.4 341.13z" fill="#E24329" class="tanuki-shape tanuki-left-ear"/>
+              <path d="M185.398 341.13l-68.013-209.322h-95.32L185.4 341.128z" fill="#FC6D26" class="tanuki-shape tanuki-left-eye"/>
+              <path d="M22.066 131.808l-20.67 63.61c-1.884 5.803.18 12.16 5.117 15.744L185.398 341.13 22.066 131.807z" fill="#FCA326" class="tanuki-shape tanuki-left-cheek"/>
+              <path d="M22.066 131.808h95.32L76.42 5.735c-2.107-6.487-11.284-6.487-13.39 0L22.065 131.808z" fill="#E24329" class="tanuki-shape tanuki-nose"/>
+              <path d="M185.398 341.13l68.013-209.322h95.32L185.4 341.128z" fill="#FC6D26" class="tanuki-shape tanuki-right-eye"/>
+              <path d="M348.73 131.808l20.67 63.61c1.884 5.803-.18 12.16-5.117 15.744L185.398 341.13 348.73 131.807z" fill="#FCA326" class="tanuki-shape tanuki-right-cheek"/>
+              <path d="M348.73 131.808h-95.32L294.376 5.735c2.108-6.487 11.285-6.487 13.392 0l40.963 126.073z" fill="#E24329" class="tanuki-shape tanuki-right-ear"/>
+            </g>
           </svg>
-          GitLab Design System
+          <span class="m-l-4">GitLab Design System</span>
         </nuxt-link>
       </div>
       <div class="nav-sidebar__body m-b-3">

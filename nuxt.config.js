@@ -9,14 +9,14 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'GitLab Design System',
+    title: 'Pajamas Design System',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Design guidelines and UI components for GitLab',
+        content: 'Resources, components, and design guidelines behind GitLab',
       },
     ],
     link: [
@@ -58,7 +58,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: false,
 
   /*
    ** Global CSS
