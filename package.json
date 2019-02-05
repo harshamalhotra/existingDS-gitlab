@@ -1,7 +1,7 @@
 {
   "name": "design.gitlab.com",
   "version": "1.0.0",
-  "description": "Design guidelines and UI components for GitLab",
+  "description": "Resources, components, and design guidelines behind GitLab",
   "author": "GitLab",
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",

@@ -7,21 +7,15 @@
   
   @if $position == 'vertical' {
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   @else if $position == 'horizontal' {
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translate(-50%);
   }
   @else if $position == 'both' {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 }
@@ -50,4 +44,21 @@
 
 @mixin transition($property: all, $time: 0.2s, $method: linear) {
   transition: $property $time $method;
+}
+
+/*
+ * Animations
+ */
+
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin include-keyframes($animation-name) {
+  animation-name: $animation-name;
+  @include keyframes($animation-name) {
+    @content;
+  }
 }
