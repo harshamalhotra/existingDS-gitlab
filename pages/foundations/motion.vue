@@ -4,8 +4,8 @@
       <h1>Motion</h1>
       <p>Motion is a tool to help convey important relationships, changes, or transitions between elements. It is used sparingly and intentionally, highlighting the right elements at the right moment.</p>
       <h3>Timings</h3>
-      <p>The longer distance an object travels, the longer the timing is for the animation. Avoid large, full screen animations.</p>
-      <p>Subtle animations, or objects leaving the screen should take 100 milliseconds. Objects entering the screen, or motion we want to use to direct user attention take between 200 milliseconds. Avoid animations longer animations as they will make the experience appear sluggish. If a specific animation feels like it will need more than 400 milliseconds, revisit the animation to see if there is a simpler, easier, shorter transition to implement.</p>
+      <p>The farther an object travels, the longer the timing is for the animation. Avoid large, full screen animations.</p>
+      <p>Subtle animations, or objects leaving the screen should take 100 milliseconds. Objects entering the screen, or motion we want to use to direct user attention take 200 milliseconds. Avoid longer animations as they will make the experience appear sluggish. If a specific animation feels like it will need more than 400 milliseconds, revisit the animation to see if there is a simpler, easier, shorter transition to implement.</p>
       <h3>Easing</h3>
       <p>Easing specifies the rate of change of a parameter over time. Adding an easing curve makes the motion feel more natural, cohesive, and connected.</p>
       <p class="todo">Todo: Define easing standards</p>
@@ -17,7 +17,7 @@
       <p>When information is updating in place, a quick, subtle animation is needed. The previous content should cut out, and the new content should have a 200 milliseconds linear fade in.</p>
       <p class="todo">Todo: Add quick update example</p>
       <h3>Skeleton loading</h3>
-      <p>Skeleton loaders includes a horizontally pulsating animation that shows motion as if it's growing. It's timing is a slower linear 1s. Learn more about <a href="/components/skeleton-loader">skeleton loaders</a>.</p>
+      <p>Skeleton loaders use a horizontally pulsing animation with a linear 1s timing. Learn more about <a href="/components/skeleton-loader">skeleton loaders</a>.</p>
       <p class="todo">Todo: Add skeleton loader transition example</p>
       <h3>Moving transitions</h3>
       <p>When elements move on-screen, there should be a quick animation so it is clear to users what moved where. These types of animations use a 200 milliseconds transition time.</p>
