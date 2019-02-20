@@ -1,5 +1,5 @@
 ---
-name: Contributing
+name: Get Started
 ---
 
 Thank you for your interest in contributing to the Pajamas Design System! We welcome all feedback regarding designs, guidelines, and implementation. The following details how to contribute in an easy and efficient way.
