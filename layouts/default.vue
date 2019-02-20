@@ -202,22 +202,7 @@
               to="/accessibility/best-practices"
             >Best practices</nuxt-link>
           </ul>
-          <ul 
-            :open="$route.fullPath.startsWith('/contribute/')" 
-            class="nav-sidebar__section"
-          >
-            <span class="nav-sidebar__section-title">Contribute</span>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/contribute/get-started"
-            >Get started</nuxt-link>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/contribute/resources"
-            >Resources</nuxt-link>
-          </ul>
+          <menu-section :content-tree="contentTree" category="contribute" />
         </template>
         <template v-else>
           Loading ...
@@ -230,10 +215,12 @@
 
 <script>
 import subMenu from '../components/sub_menu.vue';
+import menuSection from '../components/menu_section.vue';
 
 export default {
   components: {
     subMenu,
+    menuSection,
   },
   data() {
     return {

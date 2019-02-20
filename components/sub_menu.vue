@@ -1,7 +1,7 @@
 <template>
   <li>
-    <details 
-      :open="$route.fullPath.startsWith(`/${category}`)" 
+    <details
+      :open="$route.fullPath.startsWith(`/${category}`)"
       class="nav-sidebar__section"
     >
       <summary
@@ -9,20 +9,23 @@
         @click="selectFirstSubItem"
       >{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</summary>
       <slot></slot>
-      <nuxt-link
+      <nav-sidebar-menu-item
         v-for="page in contentTree[category]"
         :key="page.id"
+        :name="page.name"
         :to="`/${category}/${page.id}`"
-        class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-      >
-        {{ page.name }}
-      </nuxt-link>
+      />
     </details>
   </li>
 </template>
 
 <script>
+import NavSidebarMenuItem from './nav_sidebar_menu_item.vue';
+
 export default {
+  components: {
+    NavSidebarMenuItem,
+  },
   props: {
     contentTree: {
       type: Object,
