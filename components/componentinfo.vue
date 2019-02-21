@@ -84,17 +84,14 @@
       <div v-else class="md typography">
         <h1>{{ componentAttributes.name }}</h1>
         <md-display :md="componentBody" />
-        <div class="m-t-6">
+        <div v-if="hasRelatedPatterns" class="m-t-6">
           <div class="md">
             <h2 id="related-patterns">Related patterns</h2>
-            <ul v-if="hasRelatedPatterns">
+            <ul>
               <li v-for="pattern in relatedPatterns" :key="pattern.slug">
                 <a :href="pattern.url">{{ pattern.label }}</a>
               </li>
             </ul>
-            <div v-else>
-              No related patterns known.
-            </div>
           </div>
         </div>
       </div>
