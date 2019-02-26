@@ -115,20 +115,7 @@
                 >Status</nuxt-link>
             </sub-menu>
             <sub-menu :content-tree="contentTree" category="regions" />
-            <sub-menu :content-tree="contentTree" category="content">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/voice-tone"
-              >Voice &amp; tone</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/terminology"
-              >Terminology</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/content/punctuation"
-              >Punctuation</nuxt-link>
-            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="content" />
             <sub-menu :content-tree="contentTree" category="usability" />
             <sub-menu :content-tree="contentTree" category="resources">
               <nuxt-link 
