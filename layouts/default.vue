@@ -76,7 +76,7 @@
             <li>
               <span class="nav-sidebar__section-title">Product</span>
             </li>
-            <sub-menu :content-tree="contentTree" category="get-started" />
+            <sub-menu :content-tree="contentTree" category="get-started" category-name="Get started" />
             <sub-menu :content-tree="contentTree" category="foundations">
               <nuxt-link
                 class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
