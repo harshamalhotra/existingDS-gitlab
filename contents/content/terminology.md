@@ -56,13 +56,13 @@ Activity refers to any action taken by a user that results in the creation of a 
 
 When using verbs or adjectives:
 
-<dl>
-  <dt class="p-b-5"><p>If the context clearly refers to the object, use them alone.</p></dt>
-  <dd class="p-t-5 p-b-5"><p><strong>Example:</strong> Edit or Closed</p></dd>
-  <dt class="p-t-5 p-b-5"><p>If the context isn’t clear enough, use them with the object.</p></dt>
-  <dd class="p-t-5 p-b-5"><p><strong>Example:</strong> Edit issue or Closed issues</p></dd>
-  <dt class="p-t-5 p-b-5"><p>Destruction buttons should be clear and always say what they are destroying.</p></dt>
-  <dd class="p-t-5 p-b-5"><p><strong>Example:</strong> Delete page instead of just Delete</p></dd>
-</dl>
+If the context clearly refers to the object, use them alone.
+* **Example:** Edit or Closed
+
+If the context isn’t clear enough, use them with the object.
+* **Example:** Edit issue or Closed issues
+
+Destruction buttons should be clear and always say what they are destroying.
+* **Example:** Delete page instead of just Delete
 
 Todo: Add comprehensive list of terminology Do/Don't
