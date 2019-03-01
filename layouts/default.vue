@@ -107,16 +107,7 @@
                 to="/foundations/saving-and-feedback"
               >Saving and feedback</nuxt-link>
             </sub-menu>
-            <sub-menu :content-tree="contentTree" category="layout">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/layout/spacing"
-              >Spacing</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/layout/grid"
-              >Grid</nuxt-link>
-            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="layout" />
             <sub-menu :content-tree="contentTree" category="components">
               <nuxt-link 
                   class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
