@@ -138,16 +138,7 @@
                 to="/content/punctuation"
               >Punctuation</nuxt-link>
             </sub-menu>
-            <sub-menu :content-tree="contentTree" category="usability">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/usability/i18n"
-              >Internationalization</nuxt-link>
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/usability/helping-users"
-              >Helping users</nuxt-link>
-            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="usability" />
             <sub-menu :content-tree="contentTree" category="resources">
               <nuxt-link 
                 class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
