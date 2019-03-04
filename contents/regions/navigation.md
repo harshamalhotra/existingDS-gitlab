@@ -10,7 +10,7 @@ Add global navigation example
 
 ## Contextual navigation
 
-The left-side sidebar consists of content that is contextual to each apge. These options change depending on if you are looking at a project, group, or settings page. There can be up to two levels of navigation. Each sub nav group should be a self-contained group of functionality. For example, everything related to the issue tracker should be under the 'Issue' tab, while everything relating to the wiki will be grouped under the 'Wiki' tab. The names used for each section should be short and easy to remember, ideally 1-2 words in length.
+The left-side sidebar consists of content that is contextual to each page. These options change depending on if you are looking at a project, group, or settings page. There can be up to two levels of navigation. Each sub nav group should be a self-contained group of functionality. For example, everything related to the issue tracker should be under the 'Issue' tab, while everything relating to the wiki will be grouped under the 'Wiki' tab. The names used for each section should be short and easy to remember, ideally 1-2 words in length.
 
 ### Behavior 
 
