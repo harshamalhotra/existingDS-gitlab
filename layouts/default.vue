@@ -130,12 +130,10 @@
               >Punctuation</nuxt-link>
             </sub-menu>
             <sub-menu :content-tree="contentTree" category="usability" />
-            <sub-menu :content-tree="contentTree" category="resources">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/resources/design-resources"
-              >Design resources</nuxt-link>
-            </sub-menu>
+            <nuxt-link 
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
+              to="/resources/design-resources"
+            >Design resources</nuxt-link>
           </ul>
           <ul
             :open="$route.fullPath.startsWith('/research/')" 
