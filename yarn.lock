@@ -624,6 +624,11 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/standalone@^7.0.0":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.3.4.tgz#b622c1e522acef91b2a14f22bdcdd4f935a1a474"
+  integrity sha512-4L9c5i4WlGqbrjOVX0Yp8TIR5cEiw1/tPYYZENW/iuO2uI6viY38U7zALidzNfGdZIwNc+A/AWqMEWKeScWkBg==
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -680,12 +685,12 @@
     eslint-plugin-promise "^4.0.1"
     eslint-plugin-vue "^5.0.0"
 
-"@gitlab/ui@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-2.0.4.tgz#ba86f6e5868ef7bc7f504cef9ca504c2d2f6bffd"
-  integrity sha512-dJ+KKpeqIAPYZtYZeciXhC/whNiGPVRjp5IgjQRddh3zsreqmfwQq58nSH7HepAAIepaqTe0UFuzBgrSWvVM6w==
+"@gitlab/ui@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-2.1.0.tgz#815d108633dca4215addbb61037c92805e86f055"
+  integrity sha512-wvmhS3giW7VDktylshuYXaVxMXDNKxHX42lT+ges3cS4enIiSObErWKpWsncMBxWe59ynI4psoMjuX7Q9OM7kg==
   dependencies:
-    babel-standalone "^6.26.0"
+    "@babel/standalone" "^7.0.0"
     bootstrap-vue "^2.0.0-rc.11"
     copy-to-clipboard "^3.0.8"
     echarts "^4.2.0-rc.2"
@@ -1482,11 +1487,6 @@ babel-runtime@^6.22.0:
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
-
-babel-standalone@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-standalone/-/babel-standalone-6.26.0.tgz#15fb3d35f2c456695815ebf1ed96fe7f015b6886"
-  integrity sha1-Ffs9NfLEVmlYFevx7Zb+fwFbaIY=
 
 balanced-match@^1.0.0:
   version "1.0.0"
