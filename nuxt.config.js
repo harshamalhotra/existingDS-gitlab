@@ -1,7 +1,11 @@
+import glob from 'glob';
 import postCssGitlab from './modules/postcss_gitlab';
 import { getContentList } from './modules/content_preparer';
 
-const routes = getContentList('components').map(c => `components/${c.id}`);
+const routes = [
+  ...getContentList('components').map(c => `components/${c.id}`),
+  ...glob.sync('**/*.md', { cwd: 'contents/' }).map(path => path.replace(/\.md$/, '')),
+];
 
 module.exports = {
   mode: 'spa',
