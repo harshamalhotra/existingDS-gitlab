@@ -8,7 +8,6 @@ const routes = [
 ];
 
 module.exports = {
-  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -49,10 +48,6 @@ module.exports = {
   generate: {
     dir: 'public',
     routes,
-  },
-
-  render: {
-    ssr: false,
   },
 
   axios: {
@@ -120,6 +115,12 @@ module.exports = {
       });
 
       config.module.rules.push({
+        test: /\.md$/,
+        include: /contents/,
+        loader: 'frontmatter-markdown-loader',
+      });
+
+      config.module.rules.push({
         test: /\.js$/,
         include: /node-modules/,
         loader: 'babel-loader',
@@ -127,6 +128,7 @@ module.exports = {
 
       config.module.rules.push({
         test: /\.md$/,
+        exclude: /contents/,
         loader: 'raw-loader',
       });
 
