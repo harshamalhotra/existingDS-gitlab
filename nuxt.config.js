@@ -1,10 +1,13 @@
+import glob from 'glob';
 import postCssGitlab from './modules/postcss_gitlab';
 import { getContentList } from './modules/content_preparer';
 
-const routes = getContentList('components').map(c => `components/${c.id}`);
+const routes = [
+  ...getContentList('components').map(c => `components/${c.id}`),
+  ...glob.sync('**/*.md', { cwd: 'contents/' }).map(path => path.replace(/\.md$/, '')),
+];
 
 module.exports = {
-  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -45,10 +48,6 @@ module.exports = {
   generate: {
     dir: 'public',
     routes,
-  },
-
-  render: {
-    ssr: false,
   },
 
   axios: {
@@ -116,6 +115,12 @@ module.exports = {
       });
 
       config.module.rules.push({
+        test: /\.md$/,
+        include: /contents/,
+        loader: 'frontmatter-markdown-loader',
+      });
+
+      config.module.rules.push({
         test: /\.js$/,
         include: /node-modules/,
         loader: 'babel-loader',
@@ -123,6 +128,7 @@ module.exports = {
 
       config.module.rules.push({
         test: /\.md$/,
+        exclude: /contents/,
         loader: 'raw-loader',
       });
 
