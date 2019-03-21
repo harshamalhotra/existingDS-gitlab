@@ -1,0 +1,11 @@
+# Markdown content pages
+- source: /contents\/(.+?)\..*/
+  public: '\1'
+
+# Vue content pages
+- source: /pages\/([a-z0-9-\/]+\/.+?)\..*/
+  public: '\1'
+
+# Homepage
+- source: /pages\/index\.vue/
+  public: '\/'
