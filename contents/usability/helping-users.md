@@ -12,7 +12,7 @@ Help comes in the form of various types of content designed to:
 
 ## Formatting help content
 
-If the most relevant information can be summarized succinctly, put the summary directly in the UI instead of using a Help link. However, you can use a Help link to provide supplemental information.
+If the most relevant information can be summarized succinctly, put the summary directly in the UI instead of using a Help link. However, you can use a Help link to provide supplemental information. Help links open up their page in a new tab.
 
 * **Example:** User cohorts show how active users are in the last 12 months. [More information](#)
 
