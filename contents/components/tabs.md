@@ -1,5 +1,8 @@
 ---
 name: Tabs
+vueComponents:
+  - GlTabs
+  - GlTab
 ---
 
 Tabs are used to divide content into meaningful, related sections. Tabs allow users to focus on one specific view at a time while maintaining sight of all the relevant content options available. Each tab, when active, will reveal it's own unique content.

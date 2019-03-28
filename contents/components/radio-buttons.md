@@ -1,5 +1,7 @@
 ---
 name: Radio buttons
+vueComponents:
+  - GlFormRadio
 related:
   - checkboxes
   - segmented-control

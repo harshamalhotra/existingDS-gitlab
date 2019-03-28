@@ -1,5 +1,7 @@
 ---
 name: Empty States
+vueComponents:
+  - GlEmptyState
 related: 
   - banners
   - buttons

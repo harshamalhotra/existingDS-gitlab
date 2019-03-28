@@ -1,6 +1,7 @@
 ---
 name: Forms
 vueComponents:
+  - GlFormGroup
   - GlFormInput
   - GlFormTextarea
 related:
