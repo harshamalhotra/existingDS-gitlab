@@ -2,6 +2,8 @@
 name: Charts
 vueComponents:
   - GlAreaChart
+  - GlColumnChart
+  - GlStackedColumnChart
 ---
 
 Charts help users quickly digest, visualize and see trends in their data. 

@@ -1,7 +1,8 @@
 ---
 name: Search
 vueComponents:
-  - GlSearchBox
+  - GlSearchBoxByClick
+  - GlSearchBoxByType
 related:
   - buttons
   - filters

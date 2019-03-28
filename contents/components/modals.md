@@ -1,5 +1,7 @@
 ---
 name: Modals
+vueComponents: 
+  - GlModal
 related:
   - accordions
   - buttons

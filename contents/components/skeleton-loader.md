@@ -2,6 +2,7 @@
 name: Skeleton Loader
 vueComponents: 
   - GlSkeletonLoading
+  - GlDashboardSkeleton
 related:
   - spinner
 ---

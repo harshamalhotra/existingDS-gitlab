@@ -1,5 +1,7 @@
 ---
 name: Breadcrumbs
+vueComponents:
+  - GlBreadcrumb
 related:
   - navigation
 ---
