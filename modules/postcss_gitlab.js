@@ -68,6 +68,11 @@ function postcssGitlabTransformations(options) {
       imports[imports.length] = getOnlineCSS(remoteFile, options).then(r => {
         const newNode = postcss.parse(r.body);
         return Promise.resolve(newNode).then(resultTree => {
+          // This removes a rule using image-set from gitlab-ce repo
+          // we don't need the styles from this, and it was causing invalid url() paths
+          resultTree.walkDecls('cursor', rule => {
+            rule.remove();
+          });
           atRule.replaceWith(resultTree);
         });
       });

@@ -102,12 +102,6 @@ module.exports = {
 
       config.module.rules.splice(0, 1);
 
-      const sassRule = config.module.rules.find(rule => rule.test.toString().indexOf('.scss') > -1);
-
-      const cssSassLoader = sassRule.oneOf[1].use[1];
-      // This turns off the check for the failing imports on the live imported application.css
-      cssSassLoader.options.url = false;
-
       config.module.rules.push({
         test: /\.md$/,
         include: /static/,
