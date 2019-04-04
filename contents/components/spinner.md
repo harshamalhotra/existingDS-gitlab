@@ -57,7 +57,7 @@ This is the primary color for the spinner and it should be used in most cases.
 
 #### Dark
 
-This is the secondary color for the spinner. It’s a great alternative for times when the spinner doesn’t need to stand out as much (background activity for example).
+This is the secondary color for the spinner. It’s a great alternative for times when the spinner doesn’t need to stand out as much. For example, when used to indicate background activity or when used within small elements such as icon buttons.
 
 #### Light
 
