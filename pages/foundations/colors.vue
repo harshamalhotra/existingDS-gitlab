@@ -20,8 +20,8 @@
       </ul>
       <p>Priorities skip weights because, in most situations, the contrast between two adjoining weights would be subtle. However, those shades are available to use when needed. Color priorities are meant to act as a guideline, not a strict set of rules.</p>
       <h3>Accessibility</h3>
-      <p>At GitLab, we are dedicated to continually improving the accessibility of the application. Currently, all chromatic colors pass the <a 
-        href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast" 
+      <p>At GitLab, we are dedicated to continually improving the accessibility of the application. Currently, all chromatic colors pass the <a
+        href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast"
         target="_blank"
       >Web Content Accessibility Guidelines (WCAG)</a> AA level for large text when used as a background color. Learn more in <a href="/accessibility/a11y">Accessibility</a>.</p>
       <div class="color-palette row m-b-9">
@@ -1281,49 +1281,49 @@
             <div class="color">
               <div class="color-overview t-light-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$t-light-blue-50</span>
-                <span class="hex f-small">#f2faf6</span>
+                <span class="hex f-small">#f2f7fc</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$t-light-blue-100</span>
-                <span class="hex f-small">#e4f3ea</span>
+                <span class="hex f-small">#ebf1f7</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$t-light-blue-200</span>
-                <span class="hex f-small">#c0dfcd</span>
+                <span class="hex f-small">#c9dcf2</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$t-light-blue-300</span>
-                <span class="hex f-small">#8ac2a1</span>
+                <span class="hex f-small">#83abd4</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable">$t-light-blue-400</span>
-                <span class="hex f-small">#52a274</span>
+                <span class="hex f-small">#4d86bf</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$t-light-blue-500</span>
-                <span class="hex f-small f-inverted">#35935c</span>
+                <span class="hex f-small f-inverted">#367cc2</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$t-light-blue-600</span>
-                <span class="hex f-small f-inverted">#288a50</span>
+                <span class="hex f-small f-inverted">#3771ab</span>
               </div>
             </div>
             <div class="color">
               <div class="color-overview t-light-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
                 <span class="variable f-inverted">$t-light-blue-700</span>
-                <span class="hex f-small f-inverted">#1c7441</span>
+                <span class="hex f-small f-inverted">#2261a1</span>
               </div>
             </div>
             <div class="color">
