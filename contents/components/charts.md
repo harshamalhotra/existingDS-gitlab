@@ -30,7 +30,7 @@ General content and style considerations for charts include:
 
 ## Types
 
-We currently support column charts, line charts, area charts and pie charts. More charting types will be added, in future.
+We currently support column charts, line charts, and area charts. More charting types will be added, in future.
 
 Column charts can be considered the 'default' chart type. If you are thinking about using a pie chart, consider that a column chart may tell the story more clearly.
 
@@ -48,13 +48,13 @@ The bars on a column chart are presented vertically rather than horizontally, an
 
 ### Line charts
 
-Todo: Add specific information about line charts
+Line charts are used to display continuous data. 
+
+They are useful when you are looking to identify trends or to see larger patterns in your data, and to see how your data changes over time. 
 
 ### Area charts
 
-[[Example:area-basic]]
-
-Todo: Add specific informationa about area charts
+Todo: Add specific information about area charts
 
 ### Pie charts
 
@@ -62,12 +62,17 @@ Todo: Add specific information about pie charts
 
 ## Demo
 
+[[Example:area-basic]]
+
 Todo: Add live component block with code example of all available chart types
+
 
 ## Design specifications
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [Column charts measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/)
+
+[Line chart measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23204-line-charts-spec-previews/)
 
 Todo: Add sketch measure preview specs for each additional chart type
