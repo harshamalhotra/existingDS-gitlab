@@ -685,10 +685,10 @@
     eslint-plugin-promise "^4.0.1"
     eslint-plugin-vue "^5.0.0"
 
-"@gitlab/ui@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-3.1.1.tgz#423b6d1586821723a24a254529014d057163cfe3"
-  integrity sha512-fSY3ckE4neXL2yscF/Qmx5Q30aEoGrDFW0Nk2qLzgUxl7vGg62cNHAlJdg+c8xFIFFEe8X4KPET5pLplHXHpzQ==
+"@gitlab/ui@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-3.6.0.tgz#23bc9d88e2330ef1d9d6e0a14a0b6563e9daf0c0"
+  integrity sha512-rearKWGnBQpN48z5wXZILUrZ+XmqDXJVTLmD/rfCU2azho1YPz6YhYI8BB0kdu3gZxBZd/ThNNXnp04BppPGww==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "^2.0.0-rc.11"
@@ -700,6 +700,7 @@
     url-search-params-polyfill "^5.0.0"
     vue "^2.5.21"
     vue-loader "^15.4.2"
+    vue-toasted "^1.1.26"
 
 "@nuxt/babel-preset-app@2.3.4":
   version "2.3.4"
@@ -8434,6 +8435,11 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   integrity sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
+
+vue-toasted@^1.1.26:
+  version "1.1.26"
+  resolved "https://registry.yarnpkg.com/vue-toasted/-/vue-toasted-1.1.26.tgz#1333d1a42157ab78389c3810023a49ba94e69c7b"
+  integrity sha512-Z4/gfPcqdzsRvif7UITrZOkh3C6jm0yQKJyr9kX31IGWXor5dNipE1Sc5SnlL5RLmY7vlLa+SqIjc9Gbpy7V0g==
 
 vue@^2.5.17, vue@^2.5.21:
   version "2.5.21"
