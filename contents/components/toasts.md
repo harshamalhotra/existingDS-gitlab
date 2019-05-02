@@ -1,5 +1,7 @@
 ---
 name: Toasts
+vueComponents: 
+  - GlToast
 related: 
   - modals
   - motion
@@ -11,14 +13,24 @@ Toasts are used to display system messages. The messages are short and straightf
 
 ## Usage
 
-Toasts appear with an ease-in animation from the bottom of the screen and stay fixed at its bottom-left corner. Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts will automatically disappear after a short length of time. This is true for all toasts, including those with action buttons. Hovering over a disappearing toast will cause it to remain until the cursor is moved.
+Toasts appear with an ease-in animation from the bottom of the screen and stay fixed at its bottom-left corner. Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts will automatically disappear after 5 seconds. This is true for all toasts, including those with action buttons. Hovering over a disappearing toast will cause it to remain until the cursor is moved.
+
+|Type|Purpose|
+|--- |--- |
+|Default toast|These toasts are used to display simple non-interactive messages.|
+|Action toasts|These toasts are used to display message with an optional user action (e.g. "Undo").|
+
+
+### Behavior
+
+By default, toasts are placed in the bottom left corner of the screen and will grow according to its contents. However, when toasts are viewed on mobile devices, the toast will take up the full width of the screen. All toasts have a "Dismiss" button.
 
 ### Dos and Dont's
 
 |Do|Don't|
 |--- |--- |
 |Show only one toast at a time.|Show a second toast before the first has timed out or been dismissed.|
-|Add a "Dismiss" button and an additional action button if appropriate.|Add more than one extra button in addition to the "Dismiss" button.|
+|Add an additional action button if appropriate.|Add more than one extra button in addition to the "Dismiss" button.|
 |Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
 |Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
 |Avoid using more than 2 lines of text for the toast message.|Use toast messages for messages that are longer than 3 lines of text.|
