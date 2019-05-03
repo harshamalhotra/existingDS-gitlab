@@ -13,7 +13,20 @@ related:
 Modals are used to reveal critical information, show information without losing context, or when the system requires a user response. Modals can also fragment a complex workflow into simpler steps and should serve a single purpose dedicated to completing the user's task.
 
 ## Usage
-Don’t surprise users by popping up a modal. Let a user’s action, such as a button click, following a link or selecting an option, trigger the modal. Uninvited modals may surprise the user and result in a quick dismissal of the window. Use modals sparingly because they interrupt the user's workflow. When designing an experience that incorporates the need for a modal consider one of the following before reverting to a modal:
+
+Use modals sparingly because they interrupt the user's workflow. Don’t surprise users by popping up a modal. Let a user’s action, such as a button click, following a link or selecting an option, trigger the modal. Uninvited modals may surprise the user and result in a quick dismissal of the window.
+
+### When to use
+
+Modals should be used when:
+
+- Critical information is being revealed
+- The system requires a user response
+- A non-revertible destructive action is about to take place and needs confirmation
+
+### Alternatives
+ 
+When designing an experience that incorporates the need for a modal, but does not match one of the use cases described above, consider one of the following before reverting to a modal:
 
 **Inline content:** Present your content inline to avoid disruption to the user's flow.
 
