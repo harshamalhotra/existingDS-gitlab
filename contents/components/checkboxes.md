@@ -1,5 +1,7 @@
 ---
 name: Checkboxes
+vueComponents:
+  - GlFormCheckbox
 related:
   - dropdowns
   - radio-buttons
