@@ -13,7 +13,7 @@ Toasts are used to display system messages. The messages are short and straightf
 
 ## Usage
 
-Toasts appear with an ease-in animation from the bottom of the screen and stay fixed at its bottom-left corner. Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts will automatically disappear after 5 seconds. This is true for all toasts, including those with action buttons. Hovering over a disappearing toast will cause it to remain until the cursor is moved.
+Toasts appear with an ease-in animation from the bottom of the screen and stay fixed at its bottom-left corner. Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts without actions will automatically disappear after five seconds. Hovering over a toast message will cause it to remain until the cursor is moved. Toasts with action buttons are only dismissed when the user performs the action, clicks the dismiss button, or navigates to another page.
 
 |Type|Purpose|
 |--- |--- |
@@ -21,15 +21,16 @@ Toasts appear with an ease-in animation from the bottom of the screen and stay f
 |Action toasts|These toasts are used to display message with an optional user action (e.g. "Undo").|
 
 
-### Behavior
+### Content
 
-By default, toasts are placed in the bottom left corner of the screen and will grow according to its contents. However, when toasts are viewed on mobile devices, the toast will take up the full width of the screen. All toasts have a "Dismiss" button.
+While the content within a toast should be concise, it should also be specific. Because toasts have the ability to stack, ambiguous copy could lead to confusion. Ensure every toast specifies the object the action was related to.
+
 
 ### Dos and Dont's
 
 |Do|Don't|
 |--- |--- |
-|Show only one toast at a time.|Show a second toast before the first has timed out or been dismissed.|
+|Stack toasts if more than one are on the screen at once.|Dismiss a toast prematurely if another toast is introduced.|
 |Add an additional action button if appropriate.|Add more than one extra button in addition to the "Dismiss" button.|
 |Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
 |Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
@@ -42,7 +43,6 @@ There are some adjustments necessary for toasts displayed on smaller screens.
 Todo: Add an example of a live component related to mobile guidelines
 
 *   The width of the toast is full (100%).
-*   The toast does not have rounded corners.
 *   If the message has only one line and the only action is to dismiss, the toasts retain the dismiss icon.
 *   If the message wraps onto another line, place the action buttons below the message, aligned to the right, with the “Dismiss” action first.
 
