@@ -40,7 +40,7 @@ While the content within a toast should be concise, it should also be specific. 
 
 There are some adjustments necessary for toasts displayed on smaller screens.
 
-Todo: Add an example of a live component related to mobile guidelines
+*Note: In order to see what toasts look like on mobile, you can either view the demo section below from a mobile device, or resize your browser to the desired mobile width.*
 
 *   The width of the toast is full (100%).
 *   If the message has only one line and the only action is to dismiss, the toasts retain the dismiss icon.
@@ -48,7 +48,9 @@ Todo: Add an example of a live component related to mobile guidelines
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:toast-default]]
+
+[[Example:toast-action]]
 
 ## Design specifications
 
@@ -60,4 +62,4 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 Specs: Ease-in(Show up) / Ease-out (Disappear) Time: 200 milliseconds Direction: Comes up from the bottom-left side of the screen.
 
-Todo: Add link to animation example
+[[Example:toast-default]]

@@ -37,6 +37,7 @@ module.exports = {
         sizes: '16x16',
       },
       {
+        rel: 'stylesheet',
         src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
       },
     ],

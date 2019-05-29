@@ -667,11 +667,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@gitlab-org/gitlab-svgs@^1.32.0":
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/@gitlab-org/gitlab-svgs/-/gitlab-svgs-1.34.0.tgz#f42ed3843b051f1d142ad007341980096dc75a16"
-  integrity sha512-LvpQ4ATi9z2328G+Tunv1LjH3vklZEieQpTng/ZludHWkelhjO542rNx90whsvzBkvv5dWqxP6dkdoOlJuHsvA==
-
 "@gitlab/eslint-config@^1.1.1":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@gitlab/eslint-config/-/eslint-config-1.4.0.tgz#2e59e55a7cd024e3a450d2a896060ec4d763a5dc"
@@ -685,10 +680,15 @@
     eslint-plugin-promise "^4.0.1"
     eslint-plugin-vue "^5.0.0"
 
-"@gitlab/ui@^3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-3.10.0.tgz#0f16772b7fe8052dabd37aba2ae436255b9e0f0a"
-  integrity sha512-po6fh2T8esa2Nach73AYLdoTg8N0YrRa5GkJk5GoxVrHYoAUD8T1Rn3pXXXKSsQdQcYjIZJ6uvY8sL+qg+Yjww==
+"@gitlab/svgs@^1.63.0":
+  version "1.63.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.63.0.tgz#9dd544026d203e4ce6efed72b05db68f710c4d49"
+  integrity sha512-YztrReFTg31B7v5wtUC5j15KHNcMebtW+kACytEU42XomMaIwk4USIbygqWlq0VRHA2VHJrHApfJHIjxiCCQcA==
+
+"@gitlab/ui@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-3.10.1.tgz#473e1383b05847d7226257228a8fd8d2905a9415"
+  integrity sha512-LReB+EIBvZlfeEX2s/azuz6NvegrwwzficvBxK5yPCztjDeegcEsTDlt0F32mX6DcvNFacuuAyWN8QtgpaWkhA==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.2.1"
@@ -699,7 +699,7 @@
     js-beautify "^1.8.8"
     lodash "^4.17.11"
     url-search-params-polyfill "^5.0.0"
-    vue "^2.5.21"
+    vue "^2.6.10"
     vue-loader "^15.4.2"
 
 "@gitlab/vue-toasted@^1.2.1":
@@ -8395,10 +8395,15 @@ vue-template-es2015-compiler@^1.6.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   integrity sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
 
-vue@^2.5.17, vue@^2.5.21:
+vue@^2.5.17:
   version "2.5.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
   integrity sha512-Aejvyyfhn0zjVeLvXd70h4hrE4zZDx1wfZqia6ekkobLmUZ+vNFQer53B4fu0EjWBSiqApxPejzkO1Znt3joxQ==
+
+vue@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 vuex@^3.0.1:
   version "3.0.1"
