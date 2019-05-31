@@ -21,7 +21,7 @@ Component overview. A brief explanation of what the component is.
 A summary of when and how the component is used.
 
 <!-- 
-  EXAMPLE TABLE, this can be used to highlight Do's & Don'ts or specfic rule sets
+  EXAMPLE TABLE, this can be used to highlight Do's & Don'ts or specific rule sets
   DO NOT add static images to any page at this time.
 -->
 

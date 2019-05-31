@@ -21,7 +21,7 @@
       <p class="todo">Todo: Add skeleton loader transition example</p>
       <h3>Moving transitions</h3>
       <p>When elements move on-screen, there should be a quick animation so it is clear to users what moved where. These types of animations use a 200 milliseconds transition time.</p>
-      <p class="todo">Todo: Add modal appearence example</p>
+      <p class="todo">Todo: Add modal appearance example</p>
       <h4>Shifting elements</h4>
       <p>An example of a moving transition is when elements have to rearrange when you <a href="/foundations/interactions#drag-and-drop">drag an element</a>.</p>
       <p class="todo">Todo: Add drag animation example</p>

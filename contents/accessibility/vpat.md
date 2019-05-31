@@ -1267,7 +1267,7 @@ Notes: The GitLab product is a web application and is not subject to the require
         Supports
       </td>
       <td>
-        <p>GitLab customers have access to electronic support. GitLab will provide support in any manner to accomodate the needs of users with disabilities.</p>
+        <p>GitLab customers have access to electronic support. GitLab will provide support in any manner to accommodate the needs of users with disabilities.</p>
       </td>
     </tr>
   </tbody>
