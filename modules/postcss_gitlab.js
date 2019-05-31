@@ -1,7 +1,5 @@
 import postcss from 'postcss';
-import trim from 'lodash.trim';
 import resolveRelative from 'resolve-relative-url';
-import assign from 'lodash.assign';
 import CleanCSS from 'clean-css';
 import sass from 'node-sass';
 
@@ -17,7 +15,7 @@ function cleanupRemoteFile(value) {
   if (value.substr(0, 3) === 'url') {
     value = value.substr(3);
   }
-  value = trim(value, '\'"()');
+  value = value.replace(/['"()]/g, '');
   return value;
 }
 
@@ -54,7 +52,7 @@ function getOnlineCSS(remoteUrl, options) {
 }
 
 function postcssGitlabTransformations(options) {
-  options = assign({}, defaults, options || {});
+  options = Object.assign({}, defaults, options || {});
   return function importUrl(tree, dummy, parentRemoteFile = tree.source.input.file) {
     const imports = [];
     tree.walkAtRules('import', atRule => {
