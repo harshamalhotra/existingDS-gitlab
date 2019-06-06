@@ -37,7 +37,7 @@ Users are able to select an option by clicking on either the checkbox itself or 
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:form-checkbox-checked]]
 
 ## Design specifications
 
