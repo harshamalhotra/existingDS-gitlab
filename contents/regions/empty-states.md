@@ -43,7 +43,7 @@ Empty states differ from banners in that they are not intended to promote or adv
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:empty-state-multiple-buttons]]
 
 ## Design specifications
 
