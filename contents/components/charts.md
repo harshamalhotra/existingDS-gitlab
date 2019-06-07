@@ -2,6 +2,7 @@
 name: Charts
 vueComponents:
   - GlAreaChart
+  - GlLineChart
   - GlColumnChart
   - GlStackedColumnChart
 ---
@@ -71,8 +72,11 @@ The zoom and scroll bar isn't added to all charts by default. In cases where the
 
 [[Example:area-basic]]
 
-Todo: Add live component block with code example of all available chart types
+[[Example:line-basic]]
 
+[[Example:column-basic]]
+
+[[Example:stacked-column-basic]]
 
 ## Design specifications
 
