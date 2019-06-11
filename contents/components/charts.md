@@ -22,7 +22,8 @@ In cases where the charting principles conflict, consider data representation ac
 
 Going forward, our charts will be built using [Echarts](https://ecomfe.github.io/echarts-doc/public/en/index.html). 
 
-General content and style considerations for charts include: 
+General content and style considerations for charts include:
+ 
 *   If there is more than one series being displayed, add a legend. 
 *   In legends, the text after the series name is optional. It allows for the possibility of complementing the series legend with additional useful calculations (total, etc).
 *   Use chart titles, category and value labels as necessary to clarify the content being shown (with units in parentheses, if required). Note that units aren't always necessary, for example, in the case of counts.
@@ -48,35 +49,31 @@ Column charts are used to compare values across categories. The categories are u
 
 The bars on a column chart are presented vertically rather than horizontally, and they can be stacked. Stacking can be useful for comparing multiple series. 
 
+[[Example:column-basic]]
+
+[[Example:stacked-column-basic]]
+
 ### Line charts
 
 Line charts are used to display continuous data. 
 
 They are useful when you are looking to identify trends or to see larger patterns in your data, and to see how your data changes over time. 
 
+[[Example:line-basic]]
+
 ### Area charts
 
-Todo: Add specific information about area charts
+Area charts are used to represent "[cumulated totals](http://www.vizwiz.com/2012/10/stacked-area-chart-vs-line-chart-great.html) using numbers or percentages."
 
-### Pie charts
+In instances where you want to see both the overall trend and the percent contribution, it is preferable to use a line chart rather than an area chart. It can be very difficult for our eyes to correctly assess the width of areas and how it trends.
 
-Todo: Add specific information about pie charts
+[[Example:area-basic]]
 
 ### Chart zooming and scrolling
 
 Our charting framework, [ECharts](https://ecomfe.github.io/echarts-doc/public/en/index.html), has a default mechanism for zooming and scrolling on graphs. 
 
 The zoom and scroll bar isn't added to all charts by default. In cases where the chart neatly fits its container, it needn't be displayed. However, in instances where the chart would otherwise overflow its container or where there is a large amount of data for users to explore, a zoom and scroll bar should be introduced. The zoom and scroll bar allows users more control over how much data is displayed at any one time, and gives them the ability dig into issues they are observing at a more granular level.
-
-## Demo
-
-[[Example:area-basic]]
-
-[[Example:line-basic]]
-
-[[Example:column-basic]]
-
-[[Example:stacked-column-basic]]
 
 ## Design specifications
 
@@ -86,6 +83,6 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 [Line chart measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23204-line-charts-spec-previews/)
 
-[Zoom and scroll measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23221-charts-scrolling-spec-previews/)
+[Area chart measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gitlab-design%23304-area-charts-spec-previews/)
 
-Todo: Add sketch measure preview specs for each additional chart type
+[Zoom and scroll measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23221-charts-scrolling-spec-previews/)
