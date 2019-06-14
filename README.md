@@ -4,7 +4,7 @@ Resources, components, and design guidelines behind GitLab. See [design.GitLab.c
 
 ## Prerequisites
 
-Before you move on, make sure you have [Node](https://nodejs.org/en/) 8.x (LTS) and [Yarn](https://yarnpkg.com/) 1.10 or newer installed.
+Before you move on, make sure you have [Node](https://nodejs.org/en/) 12.x and [Yarn](https://yarnpkg.com/) 1.10 or newer installed.
 
 ## Quick start
 
