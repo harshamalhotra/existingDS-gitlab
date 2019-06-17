@@ -24,7 +24,35 @@
           <tr>
             <td>⚠️</td>
             <td>In progress</td>
-            <td>Not finished yet</td>
+            <td>Create, Build, and Style stages are not yet finished</td>
+          </tr>
+          <tr>
+            <td>⚒</td>
+            <td>Built</td>
+            <td>Complete and ready to use but not yet in production</td>
+          </tr>
+          <tr>
+            <td>✅</td>
+            <td>Implemented</td>
+            <td>Implemented in production</td>
+          </tr>
+          <tr>
+            <td>❌</td>
+            <td>Deprecated</td>
+            <td>No longer in use</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table
+        class="m-t-6 m-b-6"
+        style="width: 65%;"
+      >
+        <tbody>
+          <tr>
+            <th class="header">Icon</th>
+            <th class="header">Badge</th>
+            <th class="header">Description</th>
           </tr>
           <tr>
             <td>🆕</td>
@@ -32,15 +60,14 @@
             <td>Newly available, implement with caution</td>
           </tr>
           <tr>
-            <td>✅</td>
-            <td>Implemented</td>
-            <td>Ready to use</td>
+            <td class="app-styles"><span class="badge badge-primary">Vue</span></td>
+            <td>Vue component</td>
+            <td>Exists within GitLab-UI</td>
           </tr>
         </tbody>
       </table>
 
       <h2>Status</h2>
-      <!-- <p>A paragraph.</p> -->
       <table
         class="m-t-6 m-b-6"
         style="width: 65%;"
