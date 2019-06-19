@@ -69,7 +69,8 @@ When a user returns to a list from a list entry using the back button in the bro
 ## Demo
 
 ### Pagination
-Todo: Add live component block with code example
+
+[[Example:pagination-basic]]
 
 ### Infinite Scroll
 Todo: Add live component block with code example
