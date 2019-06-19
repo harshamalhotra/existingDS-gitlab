@@ -29,6 +29,9 @@ Lists with **more than 20** items require pagination which is always located bel
 
 #### Behavior
 
+##### Anchoring
+Always anchor to the top of the list when the user interacts with the pagination component. Doing so reduces scrolling on the part of the user while keeping them on task. 
+
 ##### Truncation
 Truncation is shown using `…` when the number of pages exceeds the pagination display limit. By default `…` are shown after the **5th page** on large and medium viewports and after the **2nd page** on small and mobile viewports.
 
