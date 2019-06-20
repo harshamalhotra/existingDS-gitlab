@@ -1,8 +1,8 @@
 ---
 name: Spinner
-vueComponents: 
+vueComponents:
   - GlLoadingIcon
-related: 
+related:
   - buttons
   - forms
   - search
@@ -21,18 +21,18 @@ Additionally, we add a 100 ms delay before showing the spinner to mitigate lots 
 
 We use four spinner sizes:
 
-*   **Small**: 16 pixels
-*   **Medium**: 24 pixels
-*   **Large**: 32 pixels
-*   **Extra Large**: 64 pixels
+- **Small**: 16 pixels
+- **Medium**: 24 pixels
+- **Large**: 32 pixels
+- **Extra Large**: 64 pixels
 
 and three spinner colors:
 
-*   **Orange**: `$orange-600`
-*   **Dark**: `$grey-700`
-*   **Light**: white
+- **Orange**: `$orange-600`
+- **Dark**: `$grey-700`
+- **Light**: white
 
-Todo: Add live component block with code example (all spinner sizes and colors — [example](https://codepen.io/matejlatin/full/OoVoMO/))
+[[Example:loading-icon-all-options]]
 
 ### Sizes
 
