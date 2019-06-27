@@ -70,3 +70,10 @@ Use tables so that users can review, enter or edit uniform sets of data or optio
 * Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed)
 * `<caption>` should be used to provide a title for a table
 * `<caption>` should be an immediate child element of `<table>`
+
+## Design specifications
+
+Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following links:
+
+T0-DO: Add link to spec
+
