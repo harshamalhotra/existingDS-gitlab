@@ -77,7 +77,17 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     '~/modules/content_preparer',
+    '@gitlab/nuxt-edit-this-page',
   ],
+
+  /**
+   * Edit this page module configuration
+   * https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page
+   */
+  editThisPage: {
+    repo: 'git@gitlab.com:gitlab-org/design.gitlab.com.git',
+  },
+
   /*
    ** Axios module configuration
    */

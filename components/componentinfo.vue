@@ -1,5 +1,5 @@
 <template>
-  <div class="content limited m-t-7 m-b-7">
+  <div>
     <div v-if="componentAttributes">
       <div v-if="vueComponents && vueComponents.length > 0">
         <div class="md typography">
