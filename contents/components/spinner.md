@@ -21,11 +21,12 @@ Spinners shouldn’t be used in combination with the skeleton loader, too much a
 
 Additionally, we add a 100 ms delay before showing the spinner to mitigate lots of unnecessary spinners showing up at the same time.
 
-We use three spinner sizes:
+We use four spinner sizes:
 
 *   **Small**: 16 pixels
-*   **Medium**: 32 pixels
-*   **Large**: 64 pixels
+*   **Medium**: 24 pixels
+*   **Large**: 32 pixels
+*   **Extra Large**: 64 pixels
 
 and three spinner colors:
 
@@ -43,9 +44,13 @@ With its size at 16 pixels this spinner size is perfect for placing it alongside
 
 #### Medium
 
-This size can be used for indicating that loading is in progress for larger components (for example charts and other interactive elements).
+This size can be used alongside other icons with a similar size. For example, the icons in the merge request widget used to indicate pipeline stage status, security scanning, and more are using this size.
 
 #### Large
+
+This size can be used for indicating that loading is in progress for larger components (for example charts and other interactive elements).
+
+#### Extra Large
 
 This size is the largest we allow for our spinners. It can be used for indicating that loading is in progress for content areas and sections of the UI.
 
