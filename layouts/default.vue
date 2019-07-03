@@ -29,40 +29,9 @@
             <li>
               <span class="nav-sidebar__section-title">Brand</span>
             </li>
-            <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/brand-get-started/brand-personality"
-              >Brand personality</nuxt-link>
-            </sub-menu>
-            <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations">
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-foundations/gitlab-logo"
-                >The GitLab logo</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-foundations/colors"
-                >Colors</nuxt-link>
-                <nuxt-link
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-foundations/typography"
-                >Typography</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-foundations/buttons"
-                >Buttons</nuxt-link>
-                <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                  to="/brand-foundations/iconography"
-                >Iconography</nuxt-link>
-            </sub-menu>
-            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content">
-              <nuxt-link 
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-                to="/brand-content/voice-tone"
-              >Voice &amp; Tone</nuxt-link>
-            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started" />
+            <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations" />
+            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content" />
             <nuxt-link 
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 

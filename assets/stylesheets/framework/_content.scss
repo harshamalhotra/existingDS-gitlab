@@ -10,6 +10,10 @@
   &.limited {
     max-width: $page-width;
   }
+  
+  img {
+     max-width: 100%;
+  }
 }
 
 .todo {
