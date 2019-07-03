@@ -62,32 +62,14 @@
               to="/resources/design-resources"
             >Design resources</nuxt-link>
           </ul>
-          <ul
-            :open="$route.fullPath.startsWith('/research/')" 
-            class="nav-sidebar__section"
-          >
-            <span class="nav-sidebar__section-title">Research</span>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/research/get-started"
-            >Get started</nuxt-link>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/research/personas"
-            >Personas</nuxt-link>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/research/toolkit"
-            >Toolkit</nuxt-link>
-            <nuxt-link 
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
-              to="/research/first-look"
-            >First look</nuxt-link>
-          </ul>
+          <menu-section :content-tree="contentTree" category="research">
+            <li>
+              <a href="https://about.gitlab.com/community/gitlab-first-look/" target="_blank" rel="noopener" class="nav-sidebar__section-items-anchor nav-sidebar--indent-1">First Look</a>
+            </li>
+            <li>
+              <a href="https://about.gitlab.com/handbook/marketing/product-marketing/roles-personas/" target="_blank" rel="noopener" class="nav-sidebar__section-items-anchor nav-sidebar--indent-1">Personas</a>
+            </li>
+          </menu-section>
           <menu-section :content-tree="contentTree" category="accessibility" />
           <menu-section :content-tree="contentTree" category="contribute" />
         </template>

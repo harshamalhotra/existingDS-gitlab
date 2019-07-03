@@ -9,6 +9,12 @@
   top: 0;
   overflow-y: auto;
 
+  // Add an icon after links to external pages
+  a[target="_blank"]:after {
+    content: url(~assets/images/icons/external-link.svg);
+    margin: 0 $gl-spacing-2 0 $gl-spacing-2;
+  }
+
   ul {
     margin: 0;
     padding: $gl-spacing-3 0 $gl-spacing-3 0;

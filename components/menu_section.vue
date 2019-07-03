@@ -9,6 +9,7 @@
         {{ page.name }}
       </nuxt-link>
     </li>
+    <slot></slot>
   </ul>
 </template>
 
