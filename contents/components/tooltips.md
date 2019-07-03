@@ -20,6 +20,13 @@ By default, tooltips are placed on top of the referring element. However, when t
 
 Tooltips should have no space (0px) between themselves and their target. They remain in place while the cursor moves within the target. Tooltips should never obscur the target element.
 
+## Content alignment
+
+To optimize for readability, consider the following content alignment options:
+
+- For minimal text spanning a single line use center-alignment.
+- For text that requires multiple lines use left-alignment.
+
 ## Demo
 
 [[Example:tooltip-directive]]
