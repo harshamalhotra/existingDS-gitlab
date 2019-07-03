@@ -46,36 +46,7 @@
               <span class="nav-sidebar__section-title">Product</span>
             </li>
             <sub-menu :content-tree="contentTree" category="get-started" category-name="Get started" />
-            <sub-menu :content-tree="contentTree" category="foundations">
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/colors"
-              >Colors</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/iconography"
-              >Iconography</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/motion"
-              >Motion</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/illustration"
-              >Illustration</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/typography"
-              >Typography</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/interactions"
-              >Interactions</nuxt-link>
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/foundations/saving-and-feedback"
-              >Saving and feedback</nuxt-link>
-            </sub-menu>
+            <sub-menu :content-tree="contentTree" category="product-foundations" category-name="Foundations" />
             <sub-menu :content-tree="contentTree" category="layout" />
             <sub-menu :content-tree="contentTree" category="components">
               <nuxt-link 
