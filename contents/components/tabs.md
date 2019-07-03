@@ -13,7 +13,7 @@ There can only be one tab active at a given time. Tabs may be nested, with a max
 
 ### Tabs with counter badges
 
-Each tab may include a [badge](/components/badges) with a counter of how many items that particular view contains.
+Each tab may include a [badge](/components/badge) with a counter of how many items that particular view contains.
 
 If tabs contain such a badge, the “All” tab should have a badge that is the sum of the other tabs. A tab with a badge should not be included if it breaks this pattern.
 

@@ -1,5 +1,5 @@
 ---
-name: Badges
+name: Badge
 vueComponents: 
   - GlBadge
 related:

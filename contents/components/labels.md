@@ -1,12 +1,12 @@
 ---
 name: Labels
 related:
-  - badges
+  - badge
 ---
 
 Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
 
-Labels should not be confused with [badges](/components/badges). Badges highlight more generic object metadata that are not categories.
+Labels should not be confused with [badges](/components/badge). Badges highlight more generic object metadata that are not categories.
 
 ## Usage
 
