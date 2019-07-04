@@ -33,8 +33,8 @@ Tables take up the full width of their container they are in. However, it is imp
 
 Don’t simply shrink the entire table to fit the viewport, or apply a fixed width to the tables, to the point it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunk table view can create a cluttered interface. Use the responsive view of the tables instead.
 
-* A cell’s width and height will change according to its content
-* Don’t let the table break your layout by preventing horizontal scrolling
+* WIP: A cell’s width and height will change according to its content
+* WIP: Don’t let the table break your layout by preventing horizontal scrolling
 
 #### Truncation
 
@@ -62,18 +62,17 @@ Labels in a header should be short, descriptive, and relevant. Avoid headers whi
 
 Use title-case capitalization for table headers and labels.
 
-
 ### Content alignment
 
-Don't center text within tables. Left align content unless a different alignment helps with comprehension. For example, numeric data is easier to read when right aligned or is designed to a right-to-left audience, making it easier for the user to visually scan the data. To aid scanning on right-alignment, make sure you use the same number of decimal places for your numeric data.
+Left align content unless a different alignment helps with comprehension. For example, numeric data is easier to read when right aligned or is designed to a right-to-left audience, making it easier for the user to visually scan the data. To aid scanning on right-alignment, make sure you use the same number of decimal places for your numeric data.
 
-* Text in tables tends to end up in narrow columns – don't justify the text.
-* Always align column headers with column content. Right-align headings of numeric data and left-align headings of columns with text.
+Text in tables tends to end up in narrow columns – don't justify or center the text. 
+
+Always align column headers with column content. Right-align headings of numeric data and left-align headings of columns with text.
 
 Todo: Add live component block with code example of table alignment -- mixed data
 
 * TODO: Hyphenate
-
 
 ### Rows
 
@@ -82,7 +81,6 @@ Todo: Add live component block with code example of table alignment -- mixed dat
 ### Columns
 
 Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
-
 
 ### Interaction
 
@@ -95,7 +93,7 @@ Additional actions a user can take from an individual table row are displayed in
 
 ### Pagination
 
-* Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](https://design.gitlab.com/components/pagination)
+Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](https://design.gitlab.com/components/pagination)
 
 Todo: Add live component block with code example including pagination
 
