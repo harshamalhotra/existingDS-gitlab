@@ -114,6 +114,18 @@ export default {
       return this.$route.fullPath === '/' ? '' : 'content';
     },
   },
+  mounted() {
+    /**
+     * bootstrap-vue renders components outside of the usual DOM, in the body
+     * In order to apply our component-only styles, we are adding app-styles
+     * to the wrapper element
+     */
+    this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
+      setTimeout(() => {
+        document.getElementById(modalId).parentElement.classList.add('app-styles');
+      }, 0);
+    });
+  },
   created() {
     this.$axios
       .$get(`/contents/contentTree.json`)

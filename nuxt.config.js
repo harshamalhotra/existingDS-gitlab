@@ -1,10 +1,11 @@
 import glob from 'glob';
+import path from 'path';
 import postCssGitlab from './modules/postcss_gitlab';
 import { getContentList } from './modules/content_preparer';
 
 const routes = [
   ...getContentList('components').map(c => `components/${c.id}`),
-  ...glob.sync('**/*.md', { cwd: 'contents/' }).map(path => path.replace(/\.md$/, '')),
+  ...glob.sync('**/*.md', { cwd: 'contents/' }).map(filePath => filePath.replace(/\.md$/, '')),
 ];
 
 module.exports = {
@@ -35,10 +36,6 @@ module.exports = {
         type: 'image/png',
         href: '/favicon-16x16.png',
         sizes: '16x16',
-      },
-      {
-        rel: 'stylesheet',
-        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
       },
     ],
     bodyAttrs: {
@@ -104,6 +101,10 @@ module.exports = {
     postcss: {
       plugins: [postCssGitlab({ scopeSelector: 'app-styles' })],
       order: ['postcss-gitlab', 'postcss-import', 'postcss-preset-env'],
+    },
+
+    loaders: {
+      scss: { includePaths: [path.resolve(__dirname, 'node_modules')] },
     },
     /*
      ** You can extend webpack config here
