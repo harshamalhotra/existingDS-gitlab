@@ -24,10 +24,7 @@ By default, popovers are placed above the referring element. However, when there
 
 ## Content alignment
 
-To optimize for readability, consider the following content alignment options:
-
-- For minimal text spanning a single line use center-alignment.
-- For text that requires multiple lines use left-alignment.
+To optimize for readability content within popovers uses left-alignment.
 
 ## Demo
 

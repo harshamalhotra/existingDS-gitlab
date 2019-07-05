@@ -22,10 +22,7 @@ Tooltips should have no space (0px) between themselves and their target. They re
 
 ## Content alignment
 
-To optimize for readability, consider the following content alignment options:
-
-- For minimal text spanning a single line use center-alignment.
-- For text that requires multiple lines use left-alignment.
+Content within a tooltip uses center-alignment.
 
 ## Demo
 
