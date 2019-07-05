@@ -713,10 +713,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@^1.66.0":
-  version "1.66.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.66.0.tgz#3c02da455421ea241f32e915671842435df027ff"
-  integrity sha512-nxOoQPnofMs3BjRr3SVzQcclM0G6QFrLM8L4nnUCN+8Gxq2u8ukfSU5FCrkivXz+FP9Qo/FYilWV7CY8kDkt6A==
+"@gitlab/svgs@^1.67.0":
+  version "1.67.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.67.0.tgz#c7b94eca13b99fd3aaa737fb6dcc0abc41d3c579"
+  integrity sha512-hJOmWEs6RkjzyKkb1vc9wwKGZIBIP0coHkxu/KgOoxhBVudpGk4CH7xJ6UuB2TKpb0SEh5CC1CzRZfBYaFhsaA==
 
 "@gitlab/ui@^5.3.1":
   version "5.3.1"
