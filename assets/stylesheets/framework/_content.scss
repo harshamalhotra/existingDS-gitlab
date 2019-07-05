@@ -16,12 +16,40 @@
   }
 }
 
-.todo {
-  background-color: $blue-50;
+.admonition {
   padding: $gl-spacing-5;
-  color: $blue-600;
-  border: $border-width solid $blue-100;
+  border-width: $border-width;
+  border-style: solid;
   border-radius: $border-radius;
+
+  &.admonition--note {
+    background-color: $blue-50;
+    color: $blue-800;
+    border-color: $blue-100;
+  }
+  
+  &.admonition--tip {
+    background-color: $green-50;
+    color: $green-800;
+    border-color: $green-100;
+  }
+  
+  &.admonition--todo {
+    background-color: $gray-50;
+    color: $gray-800;
+    border-color: $gray-100;
+  }
+  
+  &.admonition--warning {
+    background-color: $orange-50;
+    color: $orange-800;
+    border-color: $orange-100;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: $font-weight--bold;
+  }
 }
 
 // simple grid workaround until bootstrap is reintroduced
