@@ -3,6 +3,8 @@ name: Tabs
 vueComponents:
   - GlTabs
   - GlTab
+related:
+  - /regions/navigation
 ---
 
 Tabs are used to divide content into meaningful, related sections. Tabs allow users to focus on one specific view at a time while maintaining sight of all the relevant content options available. Each tab, when active, will reveal it's own unique content.
@@ -34,7 +36,3 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 [Sketch Measure Preview for tabs](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tabs-spec-previews/)
 
 Todo: Add Sketch Measure Preview for fitted tabs
-
-## Related patterns
-
-* [Navigation](../regions/navigation)
