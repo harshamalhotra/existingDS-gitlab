@@ -10,7 +10,7 @@
   &.limited {
     max-width: $page-width;
   }
-  
+
   img {
      max-width: 100%;
   }
@@ -21,25 +21,26 @@
   border-width: $border-width;
   border-style: solid;
   border-radius: $border-radius;
+  display: block;
 
   &.admonition--note {
     background-color: $blue-50;
     color: $blue-800;
     border-color: $blue-100;
   }
-  
+
   &.admonition--tip {
     background-color: $green-50;
     color: $green-800;
     border-color: $green-100;
   }
-  
+
   &.admonition--todo {
     background-color: $gray-50;
     color: $gray-800;
     border-color: $gray-100;
   }
-  
+
   &.admonition--warning {
     background-color: $orange-50;
     color: $orange-800;
