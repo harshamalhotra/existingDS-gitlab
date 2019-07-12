@@ -1144,7 +1144,7 @@ There are ten different theme options that users can choose to customize the app
 
 <div class="color-palette row m-b-6">
   <div class="indigo col col-25">
-    <h4>Dark &amp; Light Indigo</h4>
+    <h4>Indigo</h4>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-indigo-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1357,7 +1357,7 @@ There are ten different theme options that users can choose to customize the app
     </div>
   </div>
   <div class="green col col-25">
-    <h4>Dark &amp; Light Green</h4>
+    <h4>Green</h4>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1570,7 +1570,7 @@ There are ten different theme options that users can choose to customize the app
     </div>
   </div>
   <div class="gray col col-25 m-t-7">
-    <h4>Dark &amp; Light</h4>
+    <h4>Gray</h4>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-gray-50 p-t-3 p-r-5 p-b-3 p-l-5">
