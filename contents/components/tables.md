@@ -12,24 +12,24 @@ Use tables so that users can review, enter or edit uniform sets of data or optio
 
 ### When to use tables
 
-*   To display large volumes of data
-*   When the data set will grown
-*   To compare data in a set to make sure that they are distinguishable
-*   To search, filter, or sort by all parameters in a data set
+*   To display large volumes of data.
+*   When the data set will grown.
+*   To compare data in a set to make sure that they are distinguishable.
+*   To search, filter, or sort by all parameters in a data set.
 
 Todo: Add live component block with code example
 
 ### When not to use tables
 
-*   To display a list of continuous, vertical indexes of text or images. Use [Lists](/components/lists) instead
-*   To display independent and contained content and actions on a single topic. Use [Cards](/components/cards) instead
-*   For hierarchical structures. Use [Tree](/components/tree) view instead
+*   To display a list of continuous, vertical indexes of text or images. Use [Lists](/components/lists) instead.
+*   To display independent and contained content and actions on a single topic. Use [Cards](/components/cards) instead.
+*   For hierarchical structures. Use [Tree](/components/tree) view instead.
 
 ## Table Anatomy
 
 ### Layout
 
-Tables take up the full width of their container they are in. However, it is important to note that wide tables make it difficult to read and scan small amounts of content as the data will be widely separated. To help with legibility, make sure the content is layed out and aligned properly.
+Tables take up the full width of the container they are in. However, it is important to note that wide tables make it difficult to read and scan small amounts of content as the data will be widely separated. For legibility, ensure content is laid out and aligned properly.
 
 Don’t simply shrink the entire table to fit the viewport, or apply a fixed width to the tables, to the point it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunk table view can create a cluttered interface. Use the responsive view of the tables instead.
 
@@ -114,13 +114,14 @@ Users could be viewing our application on any device, so we need to ensure our t
 
 ## Accessibility
 
-* Tables should be accessible to all users. Using proper semantic markup is a must so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
-* `<th>` shouldn’t contain heading elements
-* `<th>` should be descriptive and relevant
+Tables should be accessible to all users. Using proper semantic markup is a must so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
+
+* `<th>` shouldn’t contain heading elements.
+* `<th>` should be descriptive and relevant.
 * `<th>` should have the `scope` attribute defined to establish relationships between the table headings and rows/columns. e.g., `<th scope="col">`.
-* Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed)
-* `<caption>` should be used to provide a title for a table
-* `<caption>` should be an immediate child element of `<table>`
+* Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed).
+* `<caption>` should be used to provide a title for a table.
+* `<caption>` should be an immediate child element of `<table>`.
 
 ## Demo
 
