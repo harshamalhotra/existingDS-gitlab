@@ -4,7 +4,7 @@ vueComponents:
   - GlTable
 ---
 
-Tables are used to render tabular data in a basic grid in a way that is easy for people to scan it.
+Tables are used to render tabular data in a basic grid making it easier for people to scan.
 
 ## Usage
 
