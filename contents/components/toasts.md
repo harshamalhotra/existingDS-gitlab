@@ -7,7 +7,7 @@ related:
   - modals
   - motion
   - popovers
-  - tooltips
+  - tooltip
 ---
 
 Toasts are used to display system messages. The messages are short and straightforward. It may contain a dismiss button, and an action button depending on the situation.

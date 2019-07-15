@@ -1,5 +1,5 @@
 ---
-name: Tooltips
+name: Tooltip
 vueComponents: 
   - GlTooltip
 related:

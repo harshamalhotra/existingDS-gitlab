@@ -14,7 +14,7 @@ Badges should not be confused with [labels](/components/labels). Labels also sho
 
 ## Usage
 
-Information can be rendered in badges as icons, text, or both. If they only have an icon, provide a quick explanation for users in a [tooltip](/components/tooltips). Text badges can contain not only words, but also numbers. These act as _counters_ (e.g. number badges in [tabs](/components/tabs)).
+Information can be rendered in badges as icons, text, or both. If they only have an icon, provide a quick explanation for users in a [tooltip](/components/tooltip). Text badges can contain not only words, but also numbers. These act as _counters_ (e.g. number badges in [tabs](/components/tabs)).
 
 Badges should always link to the object they refer to unless the user is already seeing the most detailed state of that object (i.e. the object's detail page).
 

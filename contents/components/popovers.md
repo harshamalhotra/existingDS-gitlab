@@ -3,10 +3,10 @@ name: Popovers
 vueComponents: 
   - GlPopover
 related:
-  - tooltips
+  - tooltip
 ---
 
-Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal. Popovers are different from [tooltips](/components/tooltips), which do not provide rich markup and actionable items. Additionally, a popover can contain a header section with a different background color and images if needed.
+Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal. Popovers are different from [tooltips](/components/tooltip), which do not provide rich markup and actionable items. Additionally, a popover can contain a header section with a different background color and images if needed.
 
 Popovers fade in upon hover or touch of its trigger element. They fade out upon interacting with an area or element outside of the popover or its trigger, or on a delay of the cursor moving outside the popover or its trigger element.
 
