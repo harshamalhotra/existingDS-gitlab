@@ -7,6 +7,7 @@ variables:
 
 stages:
   - build
+  - review
   - test
   - deploy
 
@@ -25,16 +26,8 @@ build:
     paths:
       - public/
 
-lint:
-  stage: test
-  before_script:
-    - *install
-  script:
-    - yarn run lint
-    - yarn prettier --list-different --ignore-path .gitignore "**/*.{js,vue}"
-
 review:
-  stage: deploy
+  stage: review
   allow_failure: true
   before_script: []
   cache: {}
@@ -56,7 +49,7 @@ review:
     - gitlab-design-review
 
 review_stop:
-  stage: deploy
+  stage: review
   before_script: []
   artifacts: {}
   cache: {}
@@ -75,6 +68,13 @@ review_stop:
     - master@gitlab-org/design.gitlab.com
   tags:
     - gitlab-design-review
+
+test:
+  stage: test
+  before_script:
+    - *install
+  script:
+    - yarn run test
 
 deploy:
   stage: deploy

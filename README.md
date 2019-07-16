@@ -14,6 +14,14 @@ Before you move on, make sure you have [Node](https://nodejs.org/en/) 12.x and [
 1. Run `yarn start` to start build & watch changes
 1. Open http://localhost:2018
 
+## Linting
+
+We control this repositories code quality with automatic linting tools like `eslint` and `prettier`.
+
+If you change something in the code, you can run `yarn test` to see if your changes are up to code.
+
+A lot of failures are auto-fixable, so simply run `yarn run lint:fix` to fix errors automatically.
+
 ## Writing component documentation
 
 When starting from scratch:
