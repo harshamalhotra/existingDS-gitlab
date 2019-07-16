@@ -79,7 +79,7 @@ If a cell is empty or unavailable, keep the cell empty to reduce noise and help 
 
 #### Truncation
 
-To fit a long string of text into a table cell, you can shorten the text with an ellipsis ("...") to show exactly where the text is truncated. Truncated text should display a tooltip on hover with the full text on it. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
+To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. The truncated text should display a tooltip on hover with the full text in it. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
 
 ## Interaction
 
