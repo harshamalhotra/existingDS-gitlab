@@ -96,6 +96,9 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    // Per default nuxt doesn't output to the console on CI, this turns this on
+    quiet: false,
+
     watch: ['~/contents'],
 
     postcss: {
