@@ -117,7 +117,6 @@ Todo: Add description of how the table behabes on responsive views
 
 Using proper semantic markup is a must so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
 
-* Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed).
 * `<th>` shouldn’t contain heading elements.
 * `<th>` should be descriptive and relevant.
 * `<th>` should have the `scope` attribute defined to establish relationships between the table headings and rows/columns. e.g., `<th scope="col">`.
