@@ -13,7 +13,7 @@ Use tables so that users can review, enter or edit uniform sets of data or optio
 ### When to use tables
 
 *   To display large volumes of data.
-*   When the data set will grown.
+*   When the data set will continue to grown, e.g. a table used to display users, environments, etc.
 *   To compare data in a set to make sure that they are distinguishable.
 *   To search, filter, or sort by all parameters in a data set.
 
@@ -88,8 +88,6 @@ When including triggers to manipulate the data, such as filters, they should be 
 Additional actions that a user can take from an individual row are displayed in the far right column and are visible at all times (no on-hover visibility). If a table row requires more than three action buttons, try to use a “more” menu instead of a single or group buttons.
 
 It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
-
-## Actions
 
 Additional actions a user can take from an individual table row are displayed in the far right column. The actions are visible at all times. If there are two or more actions in a table row, consider using a button group or a "more menu" button with a dropdown list option.
 
