@@ -85,7 +85,7 @@ To fit a long string of text into a table cell, you can shorten the text with an
 
 When including triggers to manipulate the data, such as filters, they should be placed directly above the table.
 
-Additional actions that a user can take from an individual row are displayed in the far right column and are visible at all times (no on-hover visibility). If a table row require more than three action buttons, try to use a `more menu` instead of a single or group buttons.
+Additional actions that a user can take from an individual row are displayed in the far right column and are visible at all times (no on-hover visibility). If a table row requires more than three action buttons, try to use a “more” menu instead of a single or group buttons.
 
 It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
 
