@@ -115,7 +115,7 @@ Todo: Add description of how the table behabes on responsive views
 
 ## Accessibility
 
-Using proper semantic markup is a must so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
+Using proper semantic markup is a must so that the users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
 
 * `<th>` shouldn’t contain heading elements.
 * `<th>` should be descriptive and relevant.
