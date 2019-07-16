@@ -3,7 +3,7 @@ name: Empty States
 vueComponents:
   - GlEmptyState
 related: 
-  - banners
+  - banner
   - buttons
   - illustration
 ---
@@ -39,7 +39,7 @@ Empty states can be employed to:
 
 Empty states differ from banners in that they are not intended to promote or advertise new features or functionality.
 
-[See banners for more usage information](/components/banners)
+[See banners for more usage information](/components/banner)
 
 ## Demo
 

@@ -4,7 +4,7 @@ vueComponents:
   - GlPagination
 related:
   - buttons
-  - lists
+  - list
   - spinner
 ---
 
