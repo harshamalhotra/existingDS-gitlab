@@ -65,7 +65,7 @@ A table header is the row at the top of the table that helps identify the column
 
 Todo: Add live component block with code example including table header
 
-To avoid redundancy, do not use headers if all columns in a table have sef-descriptive content, like example names, dates, etc. For example, a header in Audit Events is redundant:
+To avoid redundancy, do not use headers if all columns in a table have self-descriptive content, like example names, dates, etc. For example, a header in Audit Events is redundant:
 
 Todo: Add live component block with code example of Audit Events table
 
