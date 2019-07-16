@@ -25,7 +25,6 @@ Todo: Add live component block with code example
 *   To display independent and contained content and actions on a single topic. Use [Cards](/components/cards) instead.
 *   For hierarchical structures. Use [Tree](/components/tree) view instead.
 
-
 ## Layout
 
 Tables take up the full width of the container they are in. However, it is important to note that wide tables make it difficult to read and scan small amounts of content as the data will be widely separated. For legibility, ensure content is laid out and aligned properly.
@@ -84,9 +83,11 @@ To fit a long string of text into a table cell, you can shorten the text with an
 
 ## Interaction
 
-* When including triggers to manipulate the data, they should be placed directly above the table.
-* TODO: Describe the behaviour of the mouse hover for table rows
-* TODO: Describe combination of commands/buttons with all the variety of states, which we used in table rows. 
+When including triggers to manipulate the data, such as filters, they should be placed directly above the table.
+
+Additional actions that a user can take from an individual row are displayed in the far right column and are visible at all times (no on-hover visibility). If a table row require more than three action buttons, try to use a `more menu` instead of a single or group buttons.
+
+It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
 
 ## Actions
 
@@ -116,10 +117,10 @@ Todo: Add description of how the table behabes on responsive views
 
 Using proper semantic markup is a must so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
 
+* Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed).
 * `<th>` shouldn’t contain heading elements.
 * `<th>` should be descriptive and relevant.
 * `<th>` should have the `scope` attribute defined to establish relationships between the table headings and rows/columns. e.g., `<th scope="col">`.
-* Table styles should meet WCAG 2 AA contrast guidelines (or even AAA depending on the level of compliance needed).
 * `<caption>` should be used to provide a title for a table.
 * `<caption>` should be an immediate child element of `<table>`.
 
