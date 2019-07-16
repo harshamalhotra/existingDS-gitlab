@@ -69,7 +69,7 @@ To avoid redundancy, do not use headers if all columns in a table have self-desc
 
 Todo: Add live component block with code example of Audit Events table
 
-Labels in a header should be short, descriptive, and relevant. Avoid headers which are too long for the content in the rows below. It is possible to hyphenate the text, but note that hyphens is language-sensitive. Its ability to find break opportunities depends on the language, defined in the lang attribute of a parent element and support depends on the specific browser.
+Labels in a header should be short, descriptive, and relevant. Avoid headers which are too long for the content in the rows below. It is possible to hyphenate the text, but note that hyphening is language-sensitive. Its ability to find break opportunities depends on the language, defined in the lang attribute of a parent element and support depends on the specific browser.
 
 Use title-case capitalization for table headers and labels.
 
