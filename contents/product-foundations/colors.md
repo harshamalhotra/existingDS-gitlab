@@ -1570,7 +1570,7 @@ There are ten different theme options that users can choose to customize the app
     </div>
   </div>
   <div class="gray col col-25 m-t-7">
-    <h4>Gray</h4>
+    <h4>Neutral</h4>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-gray-50 p-t-3 p-r-5 p-b-3 p-l-5">
