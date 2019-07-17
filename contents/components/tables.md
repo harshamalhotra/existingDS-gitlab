@@ -31,7 +31,7 @@ Tables take up the full width of the container they are in. However, it is impor
 
 Don’t simply shrink the entire table to fit the viewport, or apply a fixed width to the tables, to the point it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunk table view can create a cluttered interface. Use the responsive view of the tables instead.
 
-Don’t let the table break your layout by preventing horizontal scrolling. Consider designing your table and organizing the data to work well in [responsive views](/components/tables/#responsiveness).
+Prevent horizontal scrolling to ensure that you don’t let the table break your layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/tables/#responsiveness).
 
 ### Empty state
 
