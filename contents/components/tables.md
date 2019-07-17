@@ -101,7 +101,7 @@ Apply white space to tables so your reader can make sense of it. It is also impo
 
 To help with styling, allow horizontal lines between rows to visualy separate content. Avoid any border or frame surrounding the table. Tables should not be set to look like nets with every number enclosed. 
 
-Do not appply vertical lines between columns. In general, tables without vertical rules look better.
+Do not appply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 
 ## Responsiveness
 
