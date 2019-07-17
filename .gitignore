@@ -87,3 +87,6 @@ dist/
 public/
 
 /static/contents/
+
+#Heroku build pack files
+.heroku/
