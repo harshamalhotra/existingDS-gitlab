@@ -61,7 +61,7 @@ Rows can have a mix of read-only and editable cells with content populated by us
 
 ### Header
 
-A table header is the row at the top of the table that helps identify the columns below each of the headers. Column or row headers should always be used. The header provides clarity if the table is non-descriptive or ambiguous.
+A table header is the row at the top of the table that helps identify the columns below. Column or row headers should always be used. The header provides clarity if the table is non-descriptive or ambiguous.
 
 Todo: Add live component block with code example including table header
 
