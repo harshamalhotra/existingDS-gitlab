@@ -8,7 +8,7 @@ Tables are used to render tabular data in a basic grid making it easier for peop
 
 ## Usage
 
-Use tables so that users can review, enter or edit uniform sets of data or options. Tables are used for structured content, where each entry has the same attributes.
+Use tables so that users can review, enter, or edit uniform sets of data or options. Tables are used for structured content, where each entry has the same attributes.
 
 ### When to use tables
 
