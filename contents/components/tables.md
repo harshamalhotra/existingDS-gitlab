@@ -1,7 +1,9 @@
 ---
 name: Tables
-vueComponents: 
-  - GlTable
+related:
+  - broadcast-messages
+  - forms
+  - toasts
 ---
 
 Tables are used to render tabular data in a basic grid making it easier for people to scan it. Tables are constituted of cells, columns, and rows.
@@ -37,7 +39,7 @@ Prevent horizontal scrolling to ensure that you don’t let the table break your
 
 A table empty state is shown when there is no data yet. [See empty states guidelines](https://design.gitlab.com/regions/empty-states).
 
-## Content alignment
+### Content alignment
 
 Left align content by importance, based on the information needs of your users. In some circumstances, right aligning content helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-alignment, make sure you use the same number of decimal places for your numeric data. Tables may switch their alignment for right-to-left audiences, as well.
 
@@ -51,6 +53,16 @@ Text in tables tends to end up in narrow columns – don't justify or center the
 
 A cell’s width and height will change according to its content.
 
+It is possible to hyphenate the text inside table cells, but note that hyphening is language-sensitive. Its ability to find break opportunities depends on the language, defined in the lang attribute of a parent element and support depends on the specific browser.
+
+#### Truncation
+
+To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. The truncated text should display a tooltip on hover with the full text in it. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
+
+#### Empty values
+
+If a cell is empty or unavailable, keep the cell empty to reduce noise and help with legibility.
+
 ### Columns
 
 Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
@@ -61,35 +73,19 @@ Rows can have a mix of read-only and editable cells with content populated by us
 
 ### Header
 
-A table header is the row at the top of the table that helps identify the columns below. Column or row headers should always be used. The header provides clarity if the table is non-descriptive or ambiguous.
+A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if the table is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers which are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
 
-Todo: Add live component block with code example including table header
-
-To avoid redundancy, do not use headers if all columns in a table have self-descriptive content, like example names, dates, etc. For example, a header in Audit Events is redundant:
+Column or row headers should always be used, unless all columns in a table have self-descriptive content, like names, dates, etc. For example, a header in Audit Events is redundant:
 
 Todo: Add live component block with code example of Audit Events table
-
-Labels in a header should be short, descriptive, and relevant. Avoid headers which are too long for the content in the rows below. It is possible to hyphenate the text, but note that hyphening is language-sensitive. Its ability to find break opportunities depends on the language, defined in the lang attribute of a parent element and support depends on the specific browser.
-
-Use title-case capitalization for table headers and labels.
-
-#### Empty values
-
-If a cell is empty or unavailable, keep the cell empty to reduce noise and help with legibility.
-
-#### Truncation
-
-To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. The truncated text should display a tooltip on hover with the full text in it. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
 
 ## Interaction
 
 When including triggers to manipulate the data, such as filters, they should be placed directly above the table.
 
-Additional actions that a user can take from an individual row are displayed in the far right column and are visible at all times (no on-hover visibility). If a table row requires more than three action buttons, try to use a “more” menu instead of a single or group buttons.
+Additional actions a user can take from an individual table row are displayed in the far right column, and are visible at all times (no on-hover visibility). If there are two or more actions in a table row, consider using a button group or a "more menu" button with a dropdown list option.
 
 It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
-
-Additional actions a user can take from an individual table row are displayed in the far right column. The actions are visible at all times. If there are two or more actions in a table row, consider using a button group or a "more menu" button with a dropdown list option.
 
 ## Pagination
 
@@ -130,4 +126,3 @@ Todo: Add live component block with code example
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following links:
 
 Todo: Add link to spec
-
