@@ -4,7 +4,7 @@
       <h1>Component status</h1>
       <p>Components and their variants have statuses reflecting their state of completion, documented on this page. <br />
         Check back here anytime to see current component status information.</p>
-      <p>See more detailed progress on our Design System <a href="https://gitlab.com/gitlab-org/design.gitlab.com/issues">issue tracker</a>.</p>
+      <p>See more detailed progress on our Design System <a href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues">issue tracker</a>.</p>
       <h2>Legend</h2>
       <table
         class="m-t-6 m-b-6"

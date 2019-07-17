@@ -8,7 +8,7 @@ Before you move on, make sure you have [Node](https://nodejs.org/en/) 12.x and [
 
 ## Quick start
 
-1. Clone the project with `git clone git@gitlab.com:gitlab-org/design.gitlab.com.git`
+1. Clone the project with `git clone git@gitlab.com:gitlab-org/gitlab-services/design.gitlab.com.git`
 1. Install [yarn](https://yarnpkg.com/en/docs/install)
 1. Run `yarn install`
 1. Run `yarn start` to start build & watch changes

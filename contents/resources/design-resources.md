@@ -20,7 +20,7 @@ The project is primarily used by GitLab’s UX Design department to host design 
 For more information about the UX Design department, check out the following links.
 
 *   [UX Handbook](https://about.gitlab.com/handbook/engineering/ux/)
-*   [Pajamas Design System project](https://gitlab.com/gitlab-org/design.gitlab.com)
+*   [Pajamas Design System project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
 *   [GitLab Dribbble](https://dribbble.com/gitlab)
 
 ## GitLab SVG project

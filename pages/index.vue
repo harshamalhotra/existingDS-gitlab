@@ -67,7 +67,7 @@
           <div class="contribute-copy">
             <h2>Contributing to the design system</h2>
             <p class="max-w-sm">
-              We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our <a href="/contribute/get-started">guidelines</a> to get started. Have any questions? Open an issue on our <a target="_blank" href="https://gitlab.com/gitlab-org/design.gitlab.com/issues">Design System issue tracker</a>. Otherwise be sure to check out the resources below!
+              We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our <a href="/contribute/get-started">guidelines</a> to get started. Have any questions? Open an issue on our <a target="_blank" href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues">Design System issue tracker</a>. Otherwise be sure to check out the resources below!
             </p>
           </div>
           <div class="contribute-img text-center">
@@ -79,7 +79,7 @@
         </div>
         <div class="resources d-flex">
           <a
-            href="https://gitlab.com/gitlab-org/design.gitlab.com"
+            href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
             target="_blank"
             class="card card--highlighted card--link text-center p-a-4"
           >

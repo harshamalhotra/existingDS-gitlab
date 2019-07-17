@@ -14,4 +14,4 @@
 * [ ] Page link added to `layout/default.vue`
 <!-- For component pages only (pages/components/) -->
 * [ ] Depending on type of the page, content should follow the documentation template
-  * [Component page template](https://gitlab.com/gitlab-org/design.gitlab.com/blob/master/pages/components/template.vue)
+  * [Component page template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/blob/master/pages/components/template.vue)

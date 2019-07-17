@@ -84,7 +84,7 @@
         Edit <edit-this-page-link>this page</edit-this-page-link> &mdash;
         Open
         <edit-this-page-link
-          edit-url="https://gitlab.com/-/ide/project/gitlab-org/design.gitlab.com/edit/master/-"
+          edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/master/-"
         >
           Web IDE
         </edit-this-page-link> &mdash;

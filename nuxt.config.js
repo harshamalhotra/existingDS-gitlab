@@ -82,7 +82,7 @@ module.exports = {
    * https://gitlab.com/gitlab-org/frontend/nuxt-edit-this-page
    */
   editThisPage: {
-    repo: 'git@gitlab.com:gitlab-org/design.gitlab.com.git',
+    repo: 'git@gitlab.com:gitlab-org/gitlab-services/design.gitlab.com.git',
   },
 
   /*
