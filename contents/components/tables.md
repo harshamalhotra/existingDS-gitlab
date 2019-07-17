@@ -22,7 +22,7 @@ Todo: Add live component block with code example
 ### When not to use tables
 
 *   To display a list of continuous, vertical indexes of text or images. Use [Lists](/components/lists) instead.
-*   To display independent and contained content and actions on a single topic. Use [Cards](/components/cards) instead.
+*   To display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
 *   For hierarchical structures. Use the [Tree](/components/tree) view instead.
 
 ## Layout
