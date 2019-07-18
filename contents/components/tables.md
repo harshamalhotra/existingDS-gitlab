@@ -19,6 +19,8 @@ Use tables when:
 
 ### When to use tables
 
+Use tables to:
+
 *   Display large volumes of data.
 *   When the data set will continue to grow; for example, a table used to display users, environments, etc.
 *   Compare data in a set to in a way that makes each data point distinguishable.
@@ -27,7 +29,9 @@ Use tables when:
 Todo: Add live component block with code example
 
 ### When not to use tables
+
 Do not use tables to:
+
 *   Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/lists) instead.
 *   Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
 *   For hierarchical structures. Use the [Tree](/components/tree) view, instead.
@@ -95,6 +99,8 @@ It is also possible to use in-line links to provide additional information to ot
 ## Pagination
 
 Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](https://design.gitlab.com/components/pagination)
+
+Tables with more than 20 items require pagination which is always located below the table and takes the form of a button group. Pagination is generally not required on tables with 20 or fewer items.
 
 Todo: Add live component block with code example including pagination
 
