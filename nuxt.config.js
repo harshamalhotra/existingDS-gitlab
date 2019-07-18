@@ -37,6 +37,15 @@ module.exports = {
         href: '/favicon-16x16.png',
         sizes: '16x16',
       },
+      // this should be removed as soon as we switch from font icons to Icon component
+      // everywhere in project
+      // Related: https://gitlab.com/gitlab-org/gitlab-ui/merge_requests/644
+      {
+        rel: 'stylesheet',
+        href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+        integrity: 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN',
+        crossorigin: 'anonymous',
+      },
     ],
     bodyAttrs: {
       class: 'ui-indigo',
