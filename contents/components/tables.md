@@ -8,7 +8,7 @@ related:
   - tree
 ---
 
-Tables are used to render tabular data in a basic grid making it easier for people to scan it. Tables are constituted of cells, columns, and rows.
+Tables are used to render tabular data in a basic grid, making it easier for people to scan it. Tables are constituted of cells, columns, and rows.
 
 ## Usage
 
