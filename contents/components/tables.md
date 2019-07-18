@@ -50,11 +50,11 @@ A table's empty state displays when there is no data, yet. [See empty states gui
 
 ### Content alignment
 
-Left align content by importance, based on the information needs of your users. In some circumstances, right aligning content helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-alignment, make sure you use the same number of decimal places for your numeric data. Tables may switch their alignment for right-to-left audiences, as well.
+Left align content by importance, based on the information needs of your users. In some circumstances, right aligning data helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-aligned data, make sure to use the same number of decimal places for all numeric data. Tables may switch their alignment for right-to-left audiences, as well.
 
 Todo: Add live component block with code example of table alignment -- mixed data
 
-Text in tables tends to end up in narrow columns – don't justify or center the text, it causes confusion and harms readability.
+Text in tables tends to end up in narrow columns. Don't justify or center the text; it causes confusion and harms readability.
 
 ## Table anatomy
 
@@ -62,11 +62,11 @@ Text in tables tends to end up in narrow columns – don't justify or center the
 
 A cell’s width and height will change according to its content.
 
-It is possible to hyphenate the text inside table cells, but note that hyphening is language-sensitive. Its ability to find break opportunities depends on the language, defined in the lang attribute of a parent element and support depends on the specific browser.
+It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the lang attribute of a parent element, and support depends on the specific browser.
 
 #### Truncation
 
-To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. The truncated text should display a tooltip on hover with the full text in it. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
+To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. On hover, the truncated text should display a tooltip that includes the full text. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
 
 #### Empty values
 
@@ -82,9 +82,9 @@ Rows can have a mix of read-only and editable cells with content populated by us
 
 ### Header
 
-A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if the table is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers which are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
+A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
 
-Column or row headers should always be used, unless all columns in a table have self-descriptive content, like names, dates, etc. For example, a header in Audit Events is redundant:
+Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, etc. For example, a header in Audit Events is redundant:
 
 Todo: Add live component block with code example of Audit Events table
 
@@ -106,25 +106,25 @@ Todo: Add live component block with code example including pagination
 
 ## Styling
 
-Apply white space to tables so your reader can make sense of it. It is also important to separate the data so that each element can be individually identified and read as separate from the others.
+Use white space in tables to improve scannability, visually separating data elements so that each can be individually identified and read as separate from the others.
 
-To help with styling, allow horizontal lines between rows to visualy separate content. Avoid any border or frame surrounding the table. Tables should not be set to look like nets with every number enclosed. 
+To help with styling, use horizontal lines between rows to visually separate content. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed. 
 
 Do not appply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 
 ## Responsiveness
 
-Users could be viewing the application on any device, so ensure the table will be usable whether displayed on mobile, tablet or desktop.
+Users may view an application on any device, so ensure the table will be usable whether displayed on mobile, tablet, or desktop.
 
 Todo: Add description of how the table behabes on responsive views
 
 ## Accessibility
 
-Using proper semantic markup is a must so that the users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
+Use proper semantic markup, so that users of screen readers can navigate through the table one cell at a time, hearing column and row headers spoken to them.
 
-* `<th>` shouldn’t contain heading elements.
+* `<th>` should not contain heading elements.
 * `<th>` should be descriptive and relevant.
-* `<th>` should have the `scope` attribute defined to establish relationships between the table headings and rows/columns. e.g., `<th scope="col">`.
+* `<th>` should have a defined `scope` attribute to establish relationships between the table headings and rows/columns; for example, `<th scope="col">`.
 * `<caption>` should be used to provide a title for a table.
 * `<caption>` should be an immediate child element of `<table>`.
 
@@ -134,6 +134,6 @@ Todo: Add live component block with code example
 
 ## Design specifications
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following links:
+View the following links to see color, spacing, dimension, and layout-specific information pertaining to this component:
 
 Todo: Add link to spec
