@@ -22,7 +22,7 @@ Use tables when:
 *   Display large volumes of data.
 *   When the data set will continue to grow; for example, a table used to display users, environments, etc.
 *   Compare data in a set to in a way that makes each data point distinguishable.
-*   To search, filter, or sort by all parameters in a data set.
+*   Search, filter, or sort by all parameters in a data set.
 
 Todo: Add live component block with code example
 
