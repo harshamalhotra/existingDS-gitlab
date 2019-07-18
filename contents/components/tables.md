@@ -34,7 +34,7 @@ Do not use tables to:
 
 ## Layout
 
-Tables take up the full width of the container they are in. However, it is important to note that wide tables make it difficult to read and scan small amounts of content as the data will be widely separated. For legibility, ensure content is laid out and aligned properly.
+Tables take up the full width of their container element. However, it is important to note that wide tables make it difficult to read and scan small amounts of content, because the data is widely separated. For legibility, ensure content is laid out and aligned properly.
 
 Don’t simply shrink the entire table to fit the viewport, or apply a fixed width to the tables, to the point it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunk table view can create a cluttered interface. Use the responsive view of the tables instead.
 
