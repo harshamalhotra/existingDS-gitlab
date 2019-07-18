@@ -42,7 +42,7 @@ Prevent horizontal scrolling to ensure that you don’t let the table break your
 
 ### Empty state
 
-A table empty state is shown when there is no data yet. [See empty states guidelines](https://design.gitlab.com/regions/empty-states).
+A table's empty state displays when there is no data, yet. [See empty states guidelines](https://design.gitlab.com/regions/empty-states).
 
 ### Content alignment
 
