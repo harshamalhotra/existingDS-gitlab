@@ -8,29 +8,31 @@ related:
   - toggles
 ---
 
-Radio buttons are an input which acts as a select list. Every radio button acts as a boolean, but only one radio button can be selected at any time - one is active by default.
+A radio button typically represents a single option in a group of related choices. Each radio button is boolean and only one can be selected at a time.
 
 ## Usage
 
-Radio buttons can never be used alone and must always be used in group form. A vertical layout is preferred, with one choice per line. If you must use a horizontal layout, with multiple options per line, make sure to to space the buttons and labels enough so there is a clear separation between selections.
-
-Use radio buttons when there is a choice between two or multiple selections, it has a default state, and the user needs a confirmation of it being saved.
-
-Radio buttons may replace segmented controls, a list of checkboxes, or a toggle to allow users to choose between two or multiple options. For help with choosing the right solution, follow the table below.
+* Use radio buttons to present a set of options, where only one option can be selected at a time.
+* One radio button should be selected as the default choice by using the `checked` attribute.
+* Radio buttons may replace segmented controls, a list of checkboxes (when only one option can be selected), or a toggle to allow users to choose between two or more options. For help with choosing the right solution, follow the table below.
 
 Todo: Add replacement-comparison-table
 
-### Labels
-
-Radio button labels are set in regular font weight, positioned to the right of the element, and should be as short as possible. Group labels are set in bold font weight and positioned above the group of radio buttons. [Help text](/components/forms#help-text) can be added below the radio button labels or as a paragraph below the group label.
+### Legends, Labels, and Help Text
+* Radio button labels are set in regular font weight, positioned to the right of the element, and should be as short as possible.
+* Use a `fieldset` with `legend` (set in bold font weight and positioned above the group of radio buttons) to group a set of radio buttons. Some screen readers will announce the contents of the legend before each nested input to maintain context for a user.
+* [Help text](/components/forms#help-text) can be added below the radio button label or as a paragraph below the group.
 
 ### Visual Design
 
-Radio buttons should use high-contrast colors and a dot icon to indicate the states - selected and unselected.
+* Radio buttons use high-contrast colors for labels and default browser UI to indicate selected and unselected states.
+* A vertical (stacked) layout is preferred, with one radio button per line. For sets of two with short labels where wrapping or width constraints are not an issue the inline (horizontal) layout is acceptable.
+* Avoid mixing stacked and inline radio button groups within the same form or context.
 
 ### Interaction
 
-Users are able to select an option by clicking on either the radio button itself or on its label.
+* Users are able to select an option with click/tap on the radio button or its label.
+* Selecting one option unselects all others.
 
 ## Demo
 

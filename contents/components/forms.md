@@ -104,14 +104,6 @@ If a placeholder can’t be shortened but an explanation is needed, a [Help text
 
 Todo: Add live component block with code example (help text)
 
-### Checkboxes and radio buttons
-
-Checkbox and radio button labels are set in regular font weight and should be as short as possible. If more, explanatory text is required, it should be added and styled as [Help text](#help-text) below the label.
-
-Todo: Add live component block with code example (checkbox & radio button: active & disabled)
-
-Todo: Add live component block with code example (checkbox & radio button: with help text below labels)
-
 ### Validation
 
 #### Error messages and states
