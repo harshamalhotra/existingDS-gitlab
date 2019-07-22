@@ -49,7 +49,7 @@
                     variant="warning"
                     class="mt-3 mb-3"
                   >
-                    This component does not yet conform to the correct styling defined in our <a href="https://design.gitlab.com/">Design System</a>. Refer to the <a href="https://design.gitlab.com/">Design System</a> documentation when referencing visuals for this component.
+                    This component does not yet conform to the correct styling defined in our <a href="/">Design System</a>. Refer to the <a href="/">Design System</a> documentation when referencing visuals for this component.
                   </b-alert>
                 </div>
                 <gl-example-explorer
