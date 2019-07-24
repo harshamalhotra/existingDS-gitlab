@@ -11,7 +11,7 @@ export default {
   },
   render(createElement) {
     if (!this.md) {
-      return createElement('h4', "This component's documentation has not yet been added.");
+      return createElement('p', "This component's documentation has not yet been added.");
     }
 
     const md = markdowner({
