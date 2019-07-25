@@ -5,7 +5,7 @@
 .content {
   padding: 0 $gl-spacing-5;
   margin: 0 auto;
-  min-width: $page-width;
+  min-width: $page-width / 3;
 
   &.limited {
     max-width: $page-width;

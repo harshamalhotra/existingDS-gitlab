@@ -59,6 +59,7 @@
 
   .banner__header--description {
     font-weight: $font-weight--normal;
+    padding: 0 $gl-spacing-4;
   }
 }
 
@@ -85,15 +86,15 @@
 
 .index {
   p {
-    @include type-scale(1, 6, 2, 0); 
+    @include type-scale(1, 6, 2, 0);
   }
 
   h2 {
-    @include type-scale(4, 6, 3); 
+    @include type-scale(4, 6, 3);
   }
 
   h3 {
-    @include type-scale(6, 8, 2); 
+    @include type-scale(6, 8, 2);
   }
 }
 
@@ -102,6 +103,7 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .contribute-copy {
