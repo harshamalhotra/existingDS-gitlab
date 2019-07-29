@@ -25,12 +25,16 @@ export function getContentList(dirName) {
       JSON.stringify(content),
     );
 
+    const hasInfo = content.body.length > 0;
+    const status = content.attributes.status || (hasInfo ? 'in-progress' : 'upcoming')
+
     componentInfos.push({
       id: componentFileName.replace('.md', ''),
       name: content.attributes.name,
       hasVueComponent:
         content.attributes.vueComponents && content.attributes.vueComponents.length > 0,
-      hasInfo: content.body.length > 0,
+      hasInfo,
+      status
     });
   };
 

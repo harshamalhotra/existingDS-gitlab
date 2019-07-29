@@ -121,11 +121,20 @@
                 >{{ component.name }}</nuxt-link>
               </td>
               <td class="app-styles">
-                <template v-if="component.hasInfo">
+                <template v-if="component.status === 'upcoming'">
+                  🚫
+                </template>
+                <template v-else-if="component.status === 'in-progress'">
                   ⚠️
                 </template>
-                <template v-else>
-                  🚫
+                <template v-else-if="component.status === 'built'">
+                  ⚒
+                </template>
+                <template v-else-if="component.status === 'implemented'">
+                  ✅
+                </template>
+                <template v-else-if="component.status === 'deprecated'">
+                  ❌
                 </template>
                 <b-badge
                   v-if="component.hasVueComponent"
