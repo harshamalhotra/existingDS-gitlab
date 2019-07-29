@@ -11,8 +11,6 @@ related:
 
 A spinner is a simple animated element that tells users that either saving or loading of information/data is in progress and is tied to user-triggered actions. In some cases of saving information the UI will reflect the change before the change is actually saved. In such cases, the spinner should be used to indicate background activity until information is successfully saved.
 
-[[Example:loading-icon-basic]]
-
 ## Usage
 
 Spinners attract attention because of their animation so they should be used sparingly. Ideally, only one spinner should be used at a time. [Skeleton loader](/components/skeleton-loader) should be used for indicating the loading of whole pages, spinners should be used on a small scale for small changes in the UI.
