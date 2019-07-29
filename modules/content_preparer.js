@@ -26,7 +26,7 @@ export function getContentList(dirName) {
     );
 
     const hasInfo = content.body.length > 0;
-    const status = content.attributes.status || (hasInfo ? 'in-progress' : 'upcoming')
+    const status = content.attributes.status || (hasInfo ? 'in-progress' : 'upcoming');
 
     componentInfos.push({
       id: componentFileName.replace('.md', ''),
@@ -34,7 +34,7 @@ export function getContentList(dirName) {
       hasVueComponent:
         content.attributes.vueComponents && content.attributes.vueComponents.length > 0,
       hasInfo,
-      status
+      status,
     });
   };
 

@@ -1,8 +1,9 @@
 ---
 name: Toasts
-vueComponents: 
+status: implemented
+vueComponents:
   - GlToast
-related: 
+related:
   - modals
   - motion
   - popovers
