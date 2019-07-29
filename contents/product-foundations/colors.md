@@ -1303,7 +1303,7 @@ There are ten different theme options that users can choose to customize the app
       <div class="color">
         <div class="color-overview t-light-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-light-blue-200</span>
-          <span class="hex f-small">#c0dfcd</span>
+          <span class="hex f-small">#c9dcf2</span>
         </div>
       </div>
       <div class="color">
