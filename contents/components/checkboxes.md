@@ -13,7 +13,7 @@ A checkbox represents a single boolean option that can be checked, unchecked, or
 
 ## Usage
 
-* Use multiple checkboxes when a user can select one or more option, including all or none.
+* Use multiple checkboxes when a user can select one or more options, including all or none of the available options.
 * Use a single checkbox when the result of a checked/unchecked state is **not** effective or noticeable immediately, and the user needs a confirmation of it being saved. (Use a toggle when a state change has an immediate effect.)
 * Use a single checkbox when there is a choice between two options, e.g., checking an "Accept terms and agreements" checkbox means a user accepts, where unchecked indicates the user does not accept.
 * Checkboxes may replace toggles, segmented controls, or radio buttons (when multiple can be selected). For help with choosing the right solution, follow the table below.
