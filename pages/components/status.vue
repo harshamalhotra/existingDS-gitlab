@@ -121,21 +121,7 @@
                 >{{ component.name }}</nuxt-link>
               </td>
               <td class="app-styles">
-                <template v-if="component.status === 'upcoming'">
-                  🚫
-                </template>
-                <template v-else-if="component.status === 'in-progress'">
-                  ⚠️
-                </template>
-                <template v-else-if="component.status === 'built'">
-                  ⚒
-                </template>
-                <template v-else-if="component.status === 'implemented'">
-                  ✅
-                </template>
-                <template v-else-if="component.status === 'deprecated'">
-                  ❌
-                </template>
+                {{getStatusIcon(component.status)}}
                 <b-badge
                   v-if="component.hasVueComponent"
                   variant="primary"
@@ -319,6 +305,14 @@
 </template>
 
 <script>
+const statusIcons = {
+  upcoming: '🚫',
+  'in-progress': '⚠',
+  built: '⚒',
+  implemented: '✅',
+  deprecated: '❌',
+};
+
 export default {
   data() {
     return {
@@ -335,6 +329,11 @@ export default {
         // eslint-disable-next-line
         console.log('Err : ', e);
       });
+  },
+  methods: {
+    getStatusIcon(status) {
+      return statusIcons[status];
+    },
   },
 };
 </script>

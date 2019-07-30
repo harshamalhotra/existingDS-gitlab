@@ -1,6 +1,6 @@
 ---
 name: Component name
-#status: in-progress|built|implemented|deprecated (default: in-progress)
+# status: in-progress|built|implemented|deprecated (default: in-progress)
 vueComponents:
   - Related vue component name
 
