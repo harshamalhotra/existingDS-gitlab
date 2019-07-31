@@ -1,5 +1,6 @@
 ---
 name: Breadcrumbs
+status: built
 vueComponents:
   - GlBreadcrumb
 related:
@@ -69,7 +70,7 @@ Certain pages have special breadcrumb paths to make the breadcrumb labels intuit
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:breadcrumb-basic]]
 
 ## Design specifications
 
