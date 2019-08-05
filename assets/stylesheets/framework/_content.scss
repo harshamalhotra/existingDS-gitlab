@@ -53,11 +53,16 @@
   }
 }
 
-// simple grid workaround until bootstrap is reintroduced
+// Simple grid workaround until bootstrap is reintroduced
 
 .row {
   display: flex;
   flex-wrap: wrap;
+
+  // Center columns when not adding up to 100%
+  &.row-center {
+    justify-content: center;
+  }
 
   .col {
     padding-right: $gl-spacing-5;
@@ -70,6 +75,13 @@
       &:nth-child(2n+2) { padding-right: 0; }
     }
 
+    &.col-33 {
+      width: 33%;
+
+      &:nth-child(3n+1) { padding-left: 0; }
+      &:nth-child(3n) { padding-right: 0; }
+    }
+
     &.col-25 {
       width: 25%;
 
@@ -78,3 +90,26 @@
     }
   }
 }
+
+
+// Figure
+
+.figure {
+  display: block;
+  margin: 0;
+  // Using padding instead of margin because of the .md styles
+  padding-bottom: $gl-spacing-7;
+  text-align: center;
+}
+
+.figure-img {
+  display: inline-block;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.figure-caption {
+  font-size: $base-font-size;
+  line-height: 1.5;
+}
+
