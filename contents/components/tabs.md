@@ -1,5 +1,6 @@
 ---
 name: Tabs
+status: built
 vueComponents:
   - GlTabs
   - GlTab
@@ -27,7 +28,13 @@ When tabs are used in a narrow container, column, or space, the tabs themselves 
 
 ## Demo
 
-Todo: Add live component block with code example
+### Basic example
+
+[[Example:tabs-basic]]
+
+### Tabs with counter badges
+
+[[Example:tabs-with-counter-badges]]
 
 ## Design specifications
 
