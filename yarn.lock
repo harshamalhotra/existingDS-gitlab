@@ -718,17 +718,17 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.67.0.tgz#c7b94eca13b99fd3aaa737fb6dcc0abc41d3c579"
   integrity sha512-hJOmWEs6RkjzyKkb1vc9wwKGZIBIP0coHkxu/KgOoxhBVudpGk4CH7xJ6UuB2TKpb0SEh5CC1CzRZfBYaFhsaA==
 
-"@gitlab/ui@5.12":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.12.0.tgz#e44a227de3df287c63eb36162361fb451e344f69"
-  integrity sha512-QCKG3gaO4UL5yqGNqcioPPFz3rJl6J22tt8DwgARAFREGu20KK0VChHEY0xOyShCU595mKz0XgJZF+8NuxXUtw==
+"@gitlab/ui@5.14":
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.14.0.tgz#850214cfc6bb57f7ce672dc1cc60ea3d39ad41f3"
+  integrity sha512-JXUmk+hT4Rj2GBh0xAF43dYeloBEDX22rgeaDU6/RzD3JEA353yEm2+HOsBjPkQFDAh6Zp7OZSBuhDFrQe8sbg==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.2.1"
     bootstrap "4.3.1"
     bootstrap-vue "2.0.0-rc.27"
     copy-to-clipboard "^3.0.8"
-    echarts "^4.2.0-rc.2"
+    echarts "^4.2.1"
     highlight.js "^9.13.1"
     js-beautify "^1.8.8"
     lodash "^4.17.14"
@@ -3019,12 +3019,12 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-echarts@^4.2.0-rc.2:
-  version "4.2.0-rc.2"
-  resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.2.0-rc.2.tgz#6a98397aafa81b65cbf0bc15d9afdbfb244df91e"
-  integrity sha512-5Y4Kyi4eNsRM9Cnl7Q8C6PFVjznBJv1VIiMm/VSQ9zyqeo+ce1695GqUd9v4zfVx+Ow1gnwMJX67h0FNvarScw==
+echarts@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.2.1.tgz#9a8ea3b03354f86f824d97625c334cf16965ef03"
+  integrity sha512-pw4xScRPsLegD/cqEcoXRKeA2SD4+s+Kyo0Na166NamOWhzNl2yI5RZ2rE97tBlAopNmhyMeBVpAeD5qb+ee1A==
   dependencies:
-    zrender "4.0.5"
+    zrender "4.0.7"
 
 editorconfig@^0.15.2:
   version "0.15.2"
@@ -9006,7 +9006,7 @@ yargs@^7.0.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-zrender@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.5.tgz#6e8f738971ce2cd624aac82b2156729b1c0e5a82"
-  integrity sha512-SintgipGEJPT9Sz2ABRoE4ZD7Yzy7oR7j7KP6H+C9FlbHWnLUfGVK7E8UV27pGwlxAMB0EsnrqhXx5XjAfv/KA==
+zrender@4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.7.tgz#15ae960822f5efed410995d37e5107fe3de10e6d"
+  integrity sha512-TNloHe0ums6zxbHfnaCryM61J4IWDajZwNq6dHk9vfWhhysO/OeFvvR0drBs/nbXha2YxSzfQj2FiCd6RVBe+Q==
