@@ -24,15 +24,15 @@ Always capitalize the first word in bulleted lists. This includes sentences that
       <td>
         <p>This is an introductory stem:</p>
         <ul>
-          <li>This sentence completes the introductory stem, it is capitalized.</li>
-          <li>This sentence also completes the introductory stem, it is capitalized.</li>
+          <li>Completed by this capitalized sentence.</li>
+          <li>Also completed by this capitalized sentence.</li>
         </ul>
       </td>
       <td>
         <p>This is an introductory stem:</p>
         <ul>
-          <li>this sentence completes the introductory stem, it should be  capitalized.</li>
-          <li>this sentence also completes the introductory stem, it also should be capitalized.</li>
+          <li>completed by this uncapitalized sentence.</li>
+          <li>also completed by this uncapitalized sentence.</li>
         </ul>
       </td>
     </tr>
@@ -96,15 +96,15 @@ Use a period after every bullet point that completes the introductory stem.
       <td>
         <p>This is an introductory stem:</p>
         <ul>
-          <li>This sentence completes the introductory stem.</li>
-          <li>This sentence completes the introductory stem.</li>
+          <li>Completed by this sentence.</li>
+          <li>Also completed by this sentence.</li>
         </ul>
       </td>
       <td>
         <p>This is an introductory stem:</p>
         <ul>
-          <li>This sentence completes the introductory stem</li>
-          <li>This sentence completes the introductory stem</li>
+          <li>Completed by this sentence</li>
+          <li>Also completed by this sentence</li>
         </ul>
       </td>
     </tr>
@@ -154,6 +154,7 @@ Use all sentences or all fragments in a bulleted list, not a mixture.
       <td>
         <ul>
           <li>Consistency is key here.</li>
+          <li>Item.</li>
           <li>Don't mix sentences and individual items in a list.</li>
         </ul>
       </td>
@@ -209,8 +210,8 @@ Use punctuation to add clarity or be grammatically correct.
       <td>Comma</td>
       <td><strong>,</strong></td>
       <td></td>
-      <td>Place inside quotation marks.<br /><br />Use a <a 
-        href="https://en.wikipedia.org/wiki/Serial_comma" 
+      <td>Place inside quotation marks.<br /><br />Use a <a
+        href="https://en.wikipedia.org/wiki/Serial_comma"
         title="“Serial comma” in Wikipedia"
       >serial comma</a> in lists of three or more terms.</td>
     </tr>
