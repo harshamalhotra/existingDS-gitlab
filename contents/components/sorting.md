@@ -22,7 +22,7 @@ Sorting allows users to quickly re-organize similar content on a long list when 
 
 ### Sorting "don'ts"
 
-* When using the sorting component, make sure the list in the dropdown doesn't contain more than twenty items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns). 
+* When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns). 
 * If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
 
 ### Sorting vs filtering
@@ -41,10 +41,10 @@ The sort direction icon button allows users to change the direction of the sort,
 
 ## Demo
 
-TODO: Add in the example sort component.
+Todo: Add in the example sort component.
 
 ## Design specifications
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-TODO: Add in a link to the measure spec.
+Todo: Add in a link to the measure spec.

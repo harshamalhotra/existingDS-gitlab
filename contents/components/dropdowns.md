@@ -32,25 +32,25 @@ There are some special elements that can be included in dropdowns to better adap
 
 A header can be added to make the dropdown's purpose clear. For example, the header _Assign milestone_ can be added to make it clear that selecting an option will modify an issue's milestone instead of applying a filter.
 
-An example of a dropdown with a header.
+Todo: An example of a dropdown with a header.
 
 #### Section headers
 
 Section headers are used to categorize the options in a dropdown. A separator must always be included in between sections.
 
-An example of a dropdown with section headers.
+Todo: An example of a dropdown with section headers.
 
 #### Filter box
 
-If there are more than 20 elements in the list, it may be necessary to include a filter box.
+If there are more than 10 elements in the list, it may be necessary to include a filter box.
 
-An example of a dropdown with a filter box.
+Todo: An example of a dropdown with a filter box.
 
 #### Fixed rows
 
 A limited amount of rows that don't scroll can be fixed at the bottom of a dropdown. For example, the dropdown used to switch between issue boards has two fixed options at the bottom: _Create new board_ and _Delete board_.
 
-An example of a dropdown with fixed rows.
+Todo: An example of a dropdown with fixed rows.
 
 ## Demo
 
@@ -61,3 +61,7 @@ Todo: Add live component block with code example
 Color, spacing, dimension, and layout-specific information pertaining to this component can be viewed using the following link:
 
 [Sketch Measure Preview for Dropdowns](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/dropdown-spec-previews/)
+
+## Resources
+
+* [Drop down usability](https://baymard.com/blog/drop-down-usability)
