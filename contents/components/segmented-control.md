@@ -1,5 +1,7 @@
 ---
 name: Segmented control
+vueComponents:
+  - GlSegmentedControl
 related:
   - buttons
   - dropdowns
@@ -23,7 +25,7 @@ Label positioning rules are the same as they are for [forms](/components/forms).
 
 The label can be omitted in cases when it’s clear what the segmented control is referring to from the UI (for example, switching between a day, week or month view in a calendar UI).
 
-Todo: Add live component block with code example (whitespace exmple)
+[[Example:segmented-control-whitespace]]
 
 Button labels need to be as short as possible and should ideally be only one word. Sometimes, that can be done by removing the repeating word and using it as a label (above the segmented control). For example, instead of having button labels “Show whitespace” and “Hide whitespace” use “Whitespace” as a label and only “Show” and “Hide” as button labels.
 
