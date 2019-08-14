@@ -5,21 +5,21 @@
         <div class="md typography">
           <h1>{{ componentAttributes.name }}</h1>
         </div>
-        <b-tabs
+        <gl-tabs
           v-model="tabIndex"
           nav-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
           nav-wrapper-class="app-styles"
           lazy
         >
-          <b-tab
+          <gl-tab
             title="Design"
             active
             class="p-t-3 js-gl-tab"
           >
             <md-display :md="componentBody" />
             <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
-          </b-tab>
-          <b-tab
+          </gl-tab>
+          <gl-tab
             title="Vue Component"
             class="app-styles js-gl-tab"
           >
@@ -66,8 +66,8 @@
                 </div>
               </template>
             </div>
-          </b-tab>
-        </b-tabs>
+          </gl-tab>
+        </gl-tabs>
       </div>
       <div v-else class="md typography">
         <h1>{{ componentAttributes.name }}</h1>

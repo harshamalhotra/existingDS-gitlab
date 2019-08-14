@@ -26,16 +26,9 @@
 @import 'pages/p_components';
 
 /**
- In order to avoid side effects, the following CSS will be downloaded and wrapped with
- .app-styles {  }
- Every Vue component example will neatly be wrapped
- */
-@import url('https://gitlab-org.gitlab.io/gitlab-ce/application.css');
-
-/**
  Import GitLab UI component styles.
  At the moment we only import component specific styles in order to avoid side-effects
  */
 .app-styles {
-  @import '@gitlab/ui/scss/storybook';
+  @import '@gitlab/ui/scss/gitlab_ui';
 }

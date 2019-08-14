@@ -1,6 +1,5 @@
 import glob from 'glob';
 import path from 'path';
-import postCssGitlab from './modules/postcss_gitlab';
 import { getContentList } from './modules/content_preparer';
 
 const routes = [
@@ -111,8 +110,7 @@ module.exports = {
     watch: ['~/contents'],
 
     postcss: {
-      plugins: [postCssGitlab({ scopeSelector: 'app-styles' })],
-      order: ['postcss-gitlab', 'postcss-import', 'postcss-preset-env'],
+      order: ['postcss-preset-env'],
     },
 
     loaders: {
@@ -123,6 +121,7 @@ module.exports = {
      */
     extend(config, ctx) {
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
+      config.resolve.alias['bootstrap-vue/src/index'] = 'bootstrap-vue/src/index.scss';
 
       config.module.rules.splice(0, 1);
 
