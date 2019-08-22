@@ -88,21 +88,11 @@ Todo: Add live component block with code example (text area character counter)
 
 ### Placeholders
 
-Placeholders must not be used as a replacement for labels but as a supplement. Their usage should be limited even if used correctly. When they are used, they should be:
+Only use a placeholder if there isn't enough space for [Help text](#help-text). The [Search](/components/search) component is such an example.
 
-*   **Contextual**: Either an example or an explanation of the label, not a generic "Enter" or a repetition of the label.
-*   **Helpful**: If a placeholder doesn’t add value and make things easier for the user, it shouldn’t be used.
-*   **Short**: If a placeholder can’t be short, it should be turned into a [Help text](#help-text) below the form element.
-
-If the placeholder isn’t all of the above, it shouldn’t be used.
-
-If a placeholder is an example, it must start with "e.g.".
+When they are used, placeholders should follow the rules of [Help text](#help-text). They must not be used as a replacement for labels but as a supplement. If a placeholder can’t be short, but an explanation is needed, a [Help text](#help-text) below the input should be used. An easy guideline to find out if the explanatory text is too long for a placeholder: if it resembles a sentence, try to use Help text, if it’s just a few words (ideally up to two or three), it's ok to use a placeholder.
 
 Todo: Add live component block with code example (placeholder)
-
-If a placeholder can’t be shortened but an explanation is needed, a [Help text](#help-text) below the input should be used. An easy guideline to find out if the explanatory text is too long for a placeholder: if it resembles a sentence, use Help text below the input, if it’s just a few words (ideally up to two or three), consider using a placeholder.
-
-Todo: Add live component block with code example (help text)
 
 ### Validation
 
@@ -130,7 +120,13 @@ Todo: Add live component block with code example (optional)
 
 ### Help text
 
-Help text can be used as additional instructions to the user when filling in the form. It’s styled using the "Secondary" text style and should always be placed below the form element. In most cases, it should be a short sentence, not a paragraph or a single word. Additionally, a [help link](/usability/helping-users) can be provided to give supplemental information.
+Help text can be used as additional instructions to the user when filling in the form. It should be: 
+
+* **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "e.g.".
+* **Helpful**: If it doesn’t add value and make things easier for the user, it shouldn’t be used.
+* **Short**: It should be a short sentence or a small paragraph, not a single word or a big paragraph.
+
+It’s styled using the "Secondary" text style and should always be placed below the form element. Additionally, a [help link](/usability/helping-users) can be provided to give supplemental information. If there isn't enough space for help text, consider using a [placeholder](#placeholder).
 
 Todo: Add live component block with code example (help text)
 
