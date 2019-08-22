@@ -1,4 +1,4 @@
-table {
+table:not(.pika-table) {
   width: 100%;
   color: $text-color;
   border: $border-width solid $border-color;

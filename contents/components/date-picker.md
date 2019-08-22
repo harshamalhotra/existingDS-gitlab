@@ -1,5 +1,8 @@
 ---
 name: Date picker
+status: built
+vueComponents:
+  - GlDatepicker
 related:
   - forms
   - dropdowns
@@ -13,7 +16,7 @@ The date picker comes in two parts: the input field and the date picker dropdown
 
 The user should be able to input the date by either typing it in or choosing a day from the datepicker dropdown. The user must never be forced to use only one of the two input methods.
 
-Todo: Add live component block with code example (datepicker: input field + dropdown)
+[[Example:basic-date-picker]]
 
 ## Design specification
 
