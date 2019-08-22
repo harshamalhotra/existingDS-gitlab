@@ -20,7 +20,7 @@ Charts should be:
 
 In cases where the charting principles conflict, consider data representation accuracy over speed of delivery, speed over visual consistency, and consistency over interaction.
 
-Going forward, our charts will be built using [Echarts](https://ecomfe.github.io/echarts-doc/public/en/index.html). 
+Going forward, our charts will be built using [ECharts](https://echarts.apache.org/).
 
 General content and style considerations for charts include:
  
@@ -71,7 +71,7 @@ In instances where you want to see both the overall trend and the percent contri
 
 ### Chart zooming and scrolling
 
-Our charting framework, [ECharts](https://ecomfe.github.io/echarts-doc/public/en/index.html), has a default mechanism for zooming and scrolling on graphs. 
+Our charting framework, [ECharts](https://echarts.apache.org/), has a default mechanism for zooming and scrolling on graphs.
 
 The zoom and scroll bar isn't added to all charts by default. In cases where the chart neatly fits its container, it needn't be displayed. However, in instances where the chart would otherwise overflow its container or where there is a large amount of data for users to explore, a zoom and scroll bar should be introduced. The zoom and scroll bar allows users more control over how much data is displayed at any one time, and gives them the ability dig into issues they are observing at a more granular level.
 
