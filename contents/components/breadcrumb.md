@@ -1,5 +1,5 @@
 ---
-name: Breadcrumbs
+name: Breadcrumb
 status: built
 vueComponents:
   - GlBreadcrumb
@@ -11,7 +11,7 @@ Breadcrumbs assist users by helping them understand their current location in re
 
 ## Usage
 
-Breadcrumbs should appear on every page of the application, except for the register and profile screens. Breadcrumbs show the hierarchical progress from the highest page entity to the current page entity, one step at a time. They should not be used to replace the main navigation.
+A breadcrumb should appear on every page of the application, except for the register and profile screens. It should show the hierarchical progress from the highest page entity to the current page entity, one step at a time. It should not be used to replace the main navigation.
 
 ### Dos and Dont's
 
@@ -19,12 +19,12 @@ Breadcrumbs should appear on every page of the application, except for the regis
 |--- |--- |
 |Ignore the instance name in the breadcrumb line.|Include the instance name in the breadcrumb line.|
 |Keep breadcrumbs to one line by default.|Break breadcrumbs up onto separate lines.|
-|Use ellipses to hide multiple subgroups when there are more than three.|Show more than three subgroups by default.|
+|Use an ellipsis button to hide multiple subgroups when there are more than three.|Show more than three subgroups by default.|
 |Use chevrons between breadcrumb items.|Use slashes or other characters to separate breadcrumb items.|
 
 ### Individual pages
 
-For pages that present the details for an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumbs should include the ID for said element.
+For pages that present the details for an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID for said element.
 
 **Example:** MR !1234 in CE becomes _'GitLab.org > GitLab Community Edition > Merge Requests > !1234'_
 
@@ -36,7 +36,7 @@ For contextual pages within the navigation, the breadcrumb should only include t
 
 ### Truncation
 
-Breadcrumbs should use the following rules to truncate items:
+The breadcrumb should use the following rules to truncate items:
 
 *   Use an ellipsis button to hide groups when there are three or more subgroups in the path.
 *   Use an ellipsis button to hide all Wiki page breadcrumb items except the current page.
@@ -47,7 +47,7 @@ Breadcrumbs should use the following rules to truncate items:
 
 Certain pages have special breadcrumb paths to make the breadcrumb labels intuitive. These are defined as follows:
 
-|Path|Title in breadcrumbs|
+|Path|Title in breadcrumb|
 |--- |--- |
 |Group > Issues > List|Group > Issues|
 |Group > Issues > Boards|Group > Issue Boards|

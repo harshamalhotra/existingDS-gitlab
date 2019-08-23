@@ -20,7 +20,7 @@ The **fluid** layout does not impose any width restrictions to page containers, 
 
 The **fixed** layout applies the ideal maximum width to page containers according to the elements being displayed so they can be experienced using the most appropriate width.
 
-[Breadcrumbs](/components/breadcrumbs) always share the width of the page container that follows it.
+[Breadcrumbs](/components/breadcrumb) always share the width of the page container that follows it.
 
 ### Fixed layout
 
