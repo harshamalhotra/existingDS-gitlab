@@ -28,7 +28,7 @@ Users have different abilities depending on the access level they have in a part
 
 #### Comment
 
-A comment is a written piece of text that users of GitLab can create. Comments have author and timestamp meta data. Comments can be added in a variety of contexts, such as issues, merge requests, and discussions.
+A comment is a written piece of text that users of GitLab can create. Comments have author and timestamp metadata. Comments can be added in a variety of contexts, such as issues, merge requests, and discussions.
 
 #### Discussion
 

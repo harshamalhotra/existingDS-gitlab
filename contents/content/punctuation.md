@@ -41,9 +41,9 @@ Always capitalize the first word in bulleted lists. This includes sentences that
 
 ## Periods
 
-The period signals to a speaker or reader that the sentence has come to an end. They assist users in visually breaking up content and should be used appropriately. Follow these guidelines:
+A period signals to a speaker or reader that a sentence has come to an end, and it assists users in visually breaking up content. Follow these guidelines:
 
-Place periods after a link if it‘s followed by a sentence.
+Place periods after a link that is followed by a sentence.
 
 | Do | Don't |
 | --- | --- |
@@ -171,7 +171,7 @@ Use all sentences or all fragments in a bulleted list, not a mixture.
 
 ## Contractions
 
-We encourage the use of contractions to make writing simpler and easier to read. However, don’t make a sentence harder to understand just to follow this rule. For example, “do not” can give more emphasis than “don’t” when needed.
+We encourage the use of contractions to make writing simpler and easier to read. However, don’t make a sentence harder to understand just to follow this rule. For example, “do not” can give more emphasis than “don’t,” when needed.
 
 | Do | Don't |
 | --- | --- |
@@ -186,7 +186,7 @@ Use “1, 2, 3” instead of “one, two, three” for numbers. One exception is
 | 3 new commits | Three new commits |
 | Enter two 3s. | Enter 2 3s. |
 
-## Punctuation
+## Punctuation Overview
 
 Use punctuation to add clarity or be grammatically correct.
 
@@ -204,7 +204,7 @@ Use punctuation to add clarity or be grammatically correct.
       <td>Period</td>
       <td><strong>.</strong></td>
       <td></td>
-      <td>Use in lists or modals with full and multiple sentences, and any sentence followed by a link or inline code.<br /><br />Place inside quotation marks unless you’re telling the reader what to enter and it’s ambiguous whether to include the period.</td>
+      <td>Use in lists or modals with full and multiple sentences, and any sentence followed by a link or inline code.<br /><br />Place inside quotation marks, unless you’re telling the reader what to enter and it’s ambiguous whether to include the period.</td>
     </tr>
     <tr>
       <td>Comma</td>
@@ -219,7 +219,7 @@ Use punctuation to add clarity or be grammatically correct.
       <td>Exclamation point</td>
       <td><strong>!</strong></td>
       <td></td>
-      <td>Avoid exclamation points as they tend to come across as shouting. Some exceptions include greetings or congratulatory messages.</td>
+      <td>Avoid exclamation points, as they tend to come across as shouting. Some exceptions include greetings or congratulatory messages.</td>
     </tr>
     <tr>
       <td>Colon</td>
@@ -249,7 +249,7 @@ Use punctuation to add clarity or be grammatically correct.
         <strong>"</strong><br /><br /><strong>'</strong><br /><br /><strong>`</strong><br /><br /><strong>´</strong>
       </td>
       <td></td>
-      <td>Don’t use straight quotes or free-standing accents for primes or quotation marks.<br /><br />Proper typography never uses straight quotes. They are left over from the age of typewriters and their only modern use is for code.</td>
+      <td>Don’t use straight quotes or free-standing accents for primes or quotation marks.<br /><br />Proper typography never uses straight quotes. They are left over from the age of typewriters, and their only modern use is for code.</td>
     </tr>
     <tr>
       <td>Ellipsis</td>
@@ -289,7 +289,7 @@ Use punctuation to add clarity or be grammatically correct.
       <td>Parentheses</td>
       <td><strong>( )</strong></td>
       <td></td>
-      <td>Use only to define acronyms or jargon: “Secure web connections are based on a technology called SSL (the secure sockets layer).”<br /><br />Avoid other uses and instead rewrite the text, or use dashes or commas to set off the information. If parentheses are required: If the parenthetical is a complete, independent sentence, place the period inside the parentheses; if not, the period goes outside.</td>
+      <td>Use only to define acronyms or jargon: “Secure web connections are based on a technology called SSL (the secure sockets layer).”<br /><br />Avoid other uses, and instead rewrite the text or use dashes or commas to set off the information. If parentheses are required: If the parenthetical is a complete, independent sentence, place the period inside the parentheses; if not, the period goes outside.</td>
     </tr>
   </tbody>
 </table>
