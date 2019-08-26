@@ -22,8 +22,8 @@
       </div>
       <div class="nav-sidebar__body m-b-3">
         <template v-if="contentTree">
-          <ul 
-            :open="$route.fullPath.startsWith('/brand-get-started/')" 
+          <ul
+            :open="$route.fullPath.startsWith('/brand-get-started/')"
             class="nav-sidebar__section"
           >
             <li>
@@ -32,14 +32,14 @@
             <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started" />
             <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations" />
             <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content" />
-            <nuxt-link 
+            <nuxt-link
               tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
               to="/brand-resources/resources"
             >Resources</nuxt-link>
           </ul>
-          <ul 
-            :open="$route.fullPath.startsWith('/product/')" 
+          <ul
+            :open="$route.fullPath.startsWith('/product/')"
             class="nav-sidebar__section"
           >
             <li>
@@ -49,16 +49,16 @@
             <sub-menu :content-tree="contentTree" category="product-foundations" category-name="Foundations" />
             <sub-menu :content-tree="contentTree" category="layout" />
             <sub-menu :content-tree="contentTree" category="components">
-              <nuxt-link 
-                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2" 
+              <nuxt-link
+                  class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
                   to="/components/status"
                 >Status</nuxt-link>
             </sub-menu>
             <sub-menu :content-tree="contentTree" category="regions" />
             <sub-menu :content-tree="contentTree" category="content" />
             <sub-menu :content-tree="contentTree" category="usability" />
-            <nuxt-link 
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1" 
+            <nuxt-link
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
               to="/resources/design-resources"
             >Design resources</nuxt-link>
           </ul>
