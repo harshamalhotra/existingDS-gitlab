@@ -1,5 +1,5 @@
 ---
-name: Toasts
+name: Toast
 status: implemented
 vueComponents:
   - GlToast
@@ -18,8 +18,8 @@ Toasts appear with an ease-in animation from the bottom of the screen and stay f
 
 |Type|Purpose|
 |--- |--- |
-|Default toast|These toasts are used to display simple non-interactive messages.|
-|Action toasts|These toasts are used to display message with an optional user action (e.g. "Undo").|
+|Default toast|These toasts are used to display simple, non-interactive messages.|
+|Action toast|These toasts are used to display message with an optional user action (e.g. "Undo").|
 
 
 ### Content
@@ -31,20 +31,20 @@ While the content within a toast should be concise, it should also be specific. 
 
 |Do|Don't|
 |--- |--- |
-|Stack toasts if more than one are on the screen at once.|Dismiss a toast prematurely if another toast is introduced.|
+|Stack toasts if more than one are displayed on the screen at once.|Dismiss a toast prematurely if another toast is introduced.|
 |Add an additional action button if appropriate.|Add more than one extra button in addition to the "Dismiss" button.|
 |Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
 |Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
 |Avoid using more than 2 lines of text for the toast message.|Use toast messages for messages that are longer than 3 lines of text.|
 
-### Mobile toasts
+### Mobile toast
 
 There are some adjustments necessary for toasts displayed on smaller screens.
 
 *Note: In order to see what toasts look like on mobile, you can either view the demo section below from a mobile device, or resize your browser to the desired mobile width.*
 
 *   The width of the toast is full (100%).
-*   If the message has only one line and the only action is to dismiss, the toasts retain the dismiss icon.
+*   If the message has only one line and the only action is to dismiss, the toast retains the dismiss icon.
 *   If the message wraps onto another line, place the action buttons below the message, aligned to the right, with the “Dismiss” action first.
 
 ## Demo

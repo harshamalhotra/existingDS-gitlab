@@ -14,7 +14,7 @@ The guideline for choosing between the two methods of saving progress is: introd
 
 ### Manual
 
-Happens after the user confirms the changes (clicks on a button), ideally without reloading the page, and a [toast](/components/toasts) saying “Changes saved” should appear to confirm the changes were saved successfully.
+Happens after the user confirms the changes (clicks on a button), ideally without reloading the page, and a [toast](/components/toast) saying “Changes saved” should appear to confirm the changes were saved successfully.
 
 #### Safety measure
 
@@ -28,7 +28,7 @@ Auto-saving in forms usually works best when the form is long and the “Save ch
 
 If the change is triggered by a click event, we auto-save immediately after it happens. If it’s triggered by typing, the auto-save should happen on the blur event of that input field but also 3 seconds after the last key is pressed.
 
-To inform the user that the change has been saved, a [toast](/components/toasts) appears. The message is “Saving…” while the saving is in progress, “Change saved” if a single change was saved and “x changes saved” when more than one change was saved (instead of stacking messages up). The toast message should always have the option to undo the recent changes.
+To inform the user that the change has been saved, a [toast](/components/toast) appears. The message is “Saving…” while the saving is in progress, “Change saved” if a single change was saved and “x changes saved” when more than one change was saved (instead of stacking messages up). The toast message should always have the option to undo the recent changes.
 
 If a change fails to auto-save, we need to:
 
@@ -37,7 +37,7 @@ If a change fails to auto-save, we need to:
 
 We also need to warn the user if they try to leave the page before the changes are successfully saved, see the [Safety measure](#safety-measure) section.
 
-Todo: Add live component block with code example (toasts on screen as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#auto-save))
+Todo: Add live component block with code example (toast on screen as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#auto-save))
 
 ##### Guidelines
 
@@ -73,4 +73,4 @@ Todo: Add live component block with code example (example of newly added info as
 * [Buttons](/components/buttons)
 * [Forms](/components/forms)
 * [Spinner](/components/spinner)
-* [Toasts](/components/toasts)
+* [Toast](/components/toast)

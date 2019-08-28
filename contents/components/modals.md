@@ -6,7 +6,7 @@ related:
   - accordion
   - buttons
   - popovers
-  - toasts
+  - toast
   - tooltip
 ---
 
@@ -32,7 +32,7 @@ When designing an experience that incorporates the need for a modal, but does no
 
 **Expanding elements:** Utilize elements such as [accordions](/components/accordion), [tooltips](/components/tooltip), or other expanding non-modal patterns to convey your information.
 
-**Toasts:** Present your message within a [toast](/components/toasts); a brief, auto-expiring element for the user to consume while staying focused on their task.
+**Toast:** Present your message within a [toast](/components/toast); a brief, auto-expiring element for the user to consume while staying focused on their task.
 
 **New page:** Take the user to a different page so that the interaction may be isolated without losing access to core navigational elements within the application.
 
