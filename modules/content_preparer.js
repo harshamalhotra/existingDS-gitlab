@@ -47,24 +47,16 @@ export function getContentList(dirName) {
   return componentInfos;
 }
 
-export default function() {
-  // This iterates over all component frontmatter files and creates .json files out of it, which are then loaded by the UI
-  this.extendBuild((config, { isClient }) => {
-    // As we only do static we also only need to prepare it for the client
-    if (!isClient) {
-      return;
-    }
+export function writeContentTree(baseDirectory) {
+  const treeObj = {};
+  const directories = fs.readdirSync(path.resolve(baseDirectory, 'contents'));
 
-    const treeObj = {};
-    const directories = fs.readdirSync(path.resolve(__dirname, '../contents/'));
-
-    directories.forEach(dir => {
-      treeObj[dir] = getContentList(dir);
-    });
-
-    fs.writeFileSync(
-      path.resolve(__dirname, '../static/contents/contentTree.json'),
-      JSON.stringify(treeObj),
-    );
+  directories.forEach(dir => {
+    treeObj[dir] = getContentList(dir);
   });
+
+  fs.writeFileSync(
+    path.resolve(baseDirectory, 'content_tree.json'),
+    JSON.stringify(treeObj, null, 2),
+  );
 }

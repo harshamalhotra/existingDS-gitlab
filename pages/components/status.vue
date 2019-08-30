@@ -305,6 +305,8 @@
 </template>
 
 <script>
+import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
+
 const statusIcons = {
   upcoming: '🚫',
   'in-progress': '⚠',
@@ -316,19 +318,8 @@ const statusIcons = {
 export default {
   data() {
     return {
-      contentTree: null,
+      contentTree,
     };
-  },
-  created() {
-    this.$axios
-      .$get(`/contents/contentTree.json`)
-      .then(treeResult => {
-        this.contentTree = treeResult;
-      })
-      .catch(e => {
-        // eslint-disable-next-line
-        console.log('Err : ', e);
-      });
   },
   methods: {
     getStatusIcon(status) {

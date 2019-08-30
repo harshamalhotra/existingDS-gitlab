@@ -1,6 +1,6 @@
 import glob from 'glob';
 import path from 'path';
-import { getContentList } from './modules/content_preparer';
+import { getContentList, writeContentTree } from './modules/content_preparer';
 
 const routes = [
   ...getContentList('components').map(c => `components/${c.id}`),
@@ -81,7 +81,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    '~/modules/content_preparer',
     '@gitlab/nuxt-edit-this-page',
   ],
 
@@ -175,6 +174,16 @@ module.exports = {
           exclude: /(node_modules)/,
         });
       }
+    },
+  },
+
+  // see https://nuxtjs.org/api/configuration-hooks
+  hooks: {
+    build: {
+      before(builder) {
+        const { srcDir } = builder.nuxt.options;
+        writeContentTree(srcDir);
+      },
     },
   },
 };

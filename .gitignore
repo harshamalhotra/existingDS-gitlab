@@ -90,3 +90,6 @@ public/
 
 #Heroku build pack files
 .heroku/
+
+# GitLab specific
+content_tree.json

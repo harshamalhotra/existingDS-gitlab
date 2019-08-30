@@ -98,6 +98,7 @@
 <script>
 import subMenu from '../components/sub_menu.vue';
 import menuSection from '../components/menu_section.vue';
+import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
 
 export default {
   components: {
@@ -106,7 +107,7 @@ export default {
   },
   data() {
     return {
-      contentTree: null,
+      contentTree,
     };
   },
   computed: {
@@ -125,17 +126,6 @@ export default {
         document.getElementById(modalId).parentElement.classList.add('app-styles');
       }, 0);
     });
-  },
-  created() {
-    this.$axios
-      .$get(`/contents/contentTree.json`)
-      .then(treeResult => {
-        this.contentTree = treeResult;
-      })
-      .catch(e => {
-        // eslint-disable-next-line
-        console.log('Err : ', e);
-      });
   },
 };
 </script>
