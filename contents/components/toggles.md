@@ -2,7 +2,7 @@
 name: Toggles
 related:
   - checkboxes
-  - radio-buttons
+  - radio-button
   - segmented-control
 ---
 

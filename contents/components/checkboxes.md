@@ -4,18 +4,18 @@ vueComponents:
   - GlFormCheckbox
 related:
   - dropdowns
-  - radio-buttons
+  - radio-button
   - segmented-control
   - toggles
 ---
 
-A checkbox represents a single boolean option that can be checked, unchecked, or indeterminate. The indeterminate state occurs when sub-options are grouped under a parent option and sub-options are in both selected and unselected states.
+A checkbox represents a single boolean option that can be checked, unchecked, or indeterminate. The indeterminate state occurs when sub-options are grouped under a parent option, and sub-options are in both selected and unselected states.
 
 ## Usage
 
 - Use multiple checkboxes when a user can select one or more options, including all or none of the available options.
 - Use a single checkbox when the result of a checked/unchecked state is **not** effective or noticeable immediately, and the user needs a confirmation of it being saved. (Use a toggle when a state change has an immediate effect.)
-- Use a single checkbox when there is a choice between two options, e.g., checking an "Accept terms and agreements" checkbox means a user accepts, where unchecked indicates the user does not accept.
+- Use a single checkbox when there is a choice between two options. For example, checking an "Accept terms and agreements" checkbox means a user accepts, where unchecked indicates the user does not accept.
 - Checkboxes may replace toggles, segmented controls, or radio buttons (when multiple can be selected). For help with choosing the right solution, follow the table below.
 - An indeterminate state can’t be achieved within the markup alone and must be done programmatically.
 
