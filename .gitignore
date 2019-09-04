@@ -79,6 +79,7 @@ dist
 
 # IDE
 .idea
+.vscode
 
 storybook-static/
 bundle.js
