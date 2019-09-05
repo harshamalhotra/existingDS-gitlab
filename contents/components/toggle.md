@@ -1,5 +1,7 @@
 ---
-name: Toggle
+name: Toggles
+vueComponents:
+  - GlToggle
 related:
   - checkboxes
   - radio-button
@@ -30,7 +32,11 @@ Toggles should use high-contrast colors to indicate the states - On and Off.
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:toggle-default]]
+
+[[Example:toggle-disabled]]
+
+[[Example:toggle-loading]]
 
 ## Design specifications
 
