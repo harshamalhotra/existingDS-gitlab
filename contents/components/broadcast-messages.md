@@ -1,12 +1,12 @@
 ---
 name: Broadcast messages
 related:
-  - alerts
+  - alert
 ---
 
 Broadcast messages provide an efficient and prominent way to deliver critical messages at the instance level to all users. For example, a broadcast message can be used when an admin wants to announce that their platform will experience downtime during a specific period.
 
-Broadcast messages are created by an admin and not triggered by the system, like [alerts](/components/alerts).
+In comparison with an [alert](/components/alert), broadcast messages are created by an admin and not triggered by the system.
 
 ## Usage
 

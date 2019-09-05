@@ -1,5 +1,5 @@
 ---
-name: Alerts
+name: Alert
 related:
   - broadcast-messages
   - forms
@@ -10,14 +10,13 @@ Alerts allow the application to pass along relevant system information to the us
 
 ## Usage
 
-|Component type|Purpose|
+| Component type | Purpose |
 | --- | --- |
-|Danger alerts| To advise the user that their attention is needed to address a critical issue in the system. |
-|Warning alerts|To caution the user that their attention may be needed due to an issue in the system, however, it is not critical that they take action.|
-|Information alerts| To provide supplemental information to the user in regards to the action they are about to take.| 
-|Tip alerts| To educate the user about new or unused features, and other useful information.|
-|Success alerts| To reaffirm to the user that a prior action they have taken, often in a different location within the application, has been accepted by the system. |
-
+| Danger alert | To advise the user that their attention is needed to address a critical issue in the system. |
+| Warning alert | To caution the user that their attention may be needed due to an issue in the system, however, it is not critical that they take action. |
+| Information alert | To provide supplemental information to the user in regards to the action they are about to take. | 
+| Tip alert | To educate the user about new or unused features, and other useful information. |
+| Success alert | To reaffirm to the user that a prior action they have taken, often in a different location within the application, has been accepted by the system. |
 
 ### When to use alerts
 
@@ -27,7 +26,7 @@ Alerts should be used when the system needs to notify the user of its status or 
 | ----- | -------- | -------- |
 | Danger | Configuration issue | Use a danger alert when there is a configuration issue with the `.gitlab-ci.yml` file. |
 | Warning | Potential issue | Use a warning alert when the user has added an SSH key that doesn't appear to be public. |  
-| Information | Provide supplemental information | Use an information alert in Settings/Export-project to detail what will happen when a user exports a project.  |
+| Information | Provide supplemental information | Use an information alert in Settings/Export-project to detail what will happen when a user exports a project. |
 | Tip | Promotional offer  | Use a tip alert in Operations/Kubernetes to make the user aware of a GCP credit offer. |
 | Success | Subsequent confirmation of a proper configuration | Use a success alert in the pipeline view after the user activates SAST using the Web IDE and the SAST job runs properly for the first time. |
 
