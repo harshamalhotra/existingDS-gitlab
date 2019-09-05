@@ -1291,13 +1291,13 @@ There are ten different theme options that users can choose to customize the app
       <div class="color">
         <div class="color-overview t-light-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-light-blue-50</span>
-          <span class="hex f-small">#f2faf6</span>
+          <span class="hex f-small">#f2f7fc</span>
         </div>
       </div>
       <div class="color">
         <div class="color-overview t-light-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-light-blue-100</span>
-          <span class="hex f-small">#e4f3ea</span>
+          <span class="hex f-small">#ebf1f7</span>
         </div>
       </div>
       <div class="color">
@@ -1309,31 +1309,31 @@ There are ten different theme options that users can choose to customize the app
       <div class="color">
         <div class="color-overview t-light-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-light-blue-300</span>
-          <span class="hex f-small">#8ac2a1</span>
+          <span class="hex f-small">#83abd4</span>
         </div>
       </div>
       <div class="color">
         <div class="color-overview t-light-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-light-blue-400</span>
-          <span class="hex f-small">#52a274</span>
+          <span class="hex f-small">#4d86bf</span>
         </div>
       </div>
       <div class="color">
         <div class="color-overview t-light-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable f-inverted">$t-light-blue-500</span>
-          <span class="hex f-small f-inverted">#35935c</span>
+          <span class="hex f-small f-inverted">#367cc2</span>
         </div>
       </div>
       <div class="color">
         <div class="color-overview t-light-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable f-inverted">$t-light-blue-600</span>
-          <span class="hex f-small f-inverted">#288a50</span>
+          <span class="hex f-small f-inverted">#3771ab</span>
         </div>
       </div>
       <div class="color">
         <div class="color-overview t-light-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable f-inverted">$t-light-blue-700</span>
-          <span class="hex f-small f-inverted">#1c7441</span>
+          <span class="hex f-small f-inverted">#2261a1</span>
         </div>
       </div>
       <div class="color">
