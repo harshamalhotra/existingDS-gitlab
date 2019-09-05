@@ -49,7 +49,7 @@ Empty states differ from banners in that they are not intended to promote or adv
 
 ### Illustration Style
 
-[See illustration guidelines](/foundations/illustration)
+[See illustration guidelines](/product-foundations/illustration)
 
 ### Size
 
