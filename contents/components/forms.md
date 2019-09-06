@@ -48,7 +48,7 @@ Todo: Add live component block with code example (inputs of different widths)
 
 To encourage the usage of different input field widths, we use a set of predefined widths based on the 8 pixels grid. It’s okay to use a width that isn’t on this list but it should be based on the 8 pixels grid.
 
-Todo: Add live component block with code example (predefined widths + 100% width)
+Todo: Add live component block with code example (predefined widths from specs + 100% width)
 
 #### Clear icon
 
