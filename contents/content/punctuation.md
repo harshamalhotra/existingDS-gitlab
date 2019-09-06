@@ -6,7 +6,7 @@ name: Punctuation
 
 Use sentence case for titles, headings, labels, menu items, and buttons. Use title case when referring to [features](https://about.gitlab.com/features/) or [products](https://about.gitlab.com/products/). Note that some features are also objects (e.g. “Merge Requests” and “Merge requests”).
 
-| Do | Don't |
+| Do | Don’t |
 | --- | --- |
 | Add issues to the Issue Board feature in GitLab Hosted. | Add Issues to the Issue Board Feature in GitLab Hosted. |
 
@@ -16,7 +16,7 @@ Always capitalize the first word in bulleted lists. This includes sentences that
   <thead>
     <tr>
       <th>Do</th>
-      <th>Don't</th>
+      <th>Don’t</th>
     </tr>
   </thead>
   <tbody>
@@ -43,15 +43,15 @@ Always capitalize the first word in bulleted lists. This includes sentences that
 
 A period signals to a speaker or reader that a sentence has come to an end, and it assists users in visually breaking up content. Follow these guidelines:
 
-Place periods after a link that is followed by a sentence.
+Place a period after a link that is followed by a sentence.
 
-| Do | Don't |
+| Do | Don’t |
 | --- | --- |
 | Mention someone to notify them. [More information](#). This is another sentence. | Mention someone to notify them. [More information](#). |
 
 Place periods after sentences that follow a link.
 
-| Do | Don't |
+| Do | Don’t |
 | --- | --- |
 | Mention someone to notify them. [More information.](#)This is another sentence. | Mention someone to notify them [More information.](#) This is another sentence |
 
@@ -61,7 +61,7 @@ Use a period after every bullet point that is a sentence.
   <thead>
     <tr>
       <th>Do</th>
-      <th>Don't</th>
+      <th>Don’t</th>
     </tr>
   </thead>
   <tbody>
@@ -88,7 +88,7 @@ Use a period after every bullet point that completes the introductory stem.
   <thead>
     <tr>
       <th>Do</th>
-      <th>Don't</th>
+      <th>Don’t</th>
     </tr>
   </thead>
   <tbody>
@@ -117,7 +117,7 @@ Use no punctuation after bullets that are not sentences and do not complete the 
   <thead>
     <tr>
       <th>Do</th>
-      <th>Don't</th>
+      <th>Don’t</th>
     </tr>
   </thead>
   <tbody>
@@ -146,7 +146,7 @@ Use all sentences or all fragments in a bulleted list, not a mixture.
   <thead>
     <tr>
       <th>Do</th>
-      <th>Don't</th>
+      <th>Don’t</th>
     </tr>
   </thead>
   <tbody>
@@ -155,14 +155,14 @@ Use all sentences or all fragments in a bulleted list, not a mixture.
         <ul>
           <li>Consistency is key here.</li>
           <li>Item.</li>
-          <li>Don't mix sentences and individual items in a list.</li>
+          <li>Don’t mix sentences and individual items in a list.</li>
         </ul>
       </td>
       <td>
         <ul>
           <li>Consistency is key here.</li>
           <li>Item</li>
-          <li>Don't mix sentences and individual items in a list.</li>
+          <li>Don’t mix sentences and individual items in a list.</li>
         </ul>
       </td>
     </tr>
@@ -173,7 +173,7 @@ Use all sentences or all fragments in a bulleted list, not a mixture.
 
 We encourage the use of contractions to make writing simpler and easier to read. However, don’t make a sentence harder to understand just to follow this rule. For example, “do not” can give more emphasis than “don’t,” when needed.
 
-| Do | Don't |
+| Do | Don’t |
 | --- | --- |
 | it’s, can’t, wouldn’t, you’re, you’ve, haven’t, don’t | it is, cannot, would not, it’ll, should’ve |
 
@@ -181,12 +181,12 @@ We encourage the use of contractions to make writing simpler and easier to read.
 
 Use “1, 2, 3” instead of “one, two, three” for numbers. One exception is when mixing uses of numbers, such as “Enter two 3s.”
 
-| Do | Don't |
+| Do | Don’t |
 | --- | --- |
 | 3 new commits | Three new commits |
 | Enter two 3s. | Enter 2 3s. |
 
-## Punctuation Overview
+## Punctuation overview
 
 Use punctuation to add clarity or be grammatically correct.
 
