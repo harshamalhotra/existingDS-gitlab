@@ -53,7 +53,7 @@ Place periods after sentences that follow a link.
 
 | Do | Don’t |
 | --- | --- |
-| Mention someone to notify them. [More information.](#)This is another sentence. | Mention someone to notify them [More information.](#) This is another sentence |
+| Mention someone to notify them. [More information](#). This is another sentence. | Mention someone to notify them [More information](#). This is another sentence |
 
 Use a period after every bullet point that is a sentence.
 
