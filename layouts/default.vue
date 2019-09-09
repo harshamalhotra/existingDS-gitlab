@@ -29,9 +29,14 @@
             <li>
               <span class="nav-sidebar__section-title">Brand</span>
             </li>
-            <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started" />
+            <nuxt-link
+              tag="li"
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+              to="/brand-basics/basics"
+            >Basics</nuxt-link>
+            <!-- <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started" />
             <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations" />
-            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content" />
+            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content" /> -->
             <nuxt-link
               tag="li"
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
