@@ -9,7 +9,7 @@ related:
 
 Buttons execute an action, either in the background or foreground of an experience. Different button types help guide users through certain actions. Buttons express what action will occur when the user clicks or touches it either by text, icon, or both. Additional meaning can be derived from the button style.
 
-## Types
+## Categories
 
 Different button types bring varying emphasis to potential user actions. This makes the page comprehensive while guiding the user through performing a task.
 
@@ -57,7 +57,7 @@ Disabled buttons prevent the user from performing an action. They are there to l
 
 Todo: Add live component block with code example
 
-## Styles
+## Variants
 
 Buttons derive additional meaning from their presented style and help the user quickly presume any consequences that button may cause when clicked.
 
@@ -111,7 +111,7 @@ Some circumstances are exceptions in that they require a different button style 
 
 Todo: Add live component block with code example
 
-## Variations
+## Combinations
 
 Buttons come in many different variations to fit different situations. Some trigger a dropdown while others combine multiple similar actions together
 
@@ -132,6 +132,12 @@ Todo: Add live component block with code example
 Text button variations might be supplemented with an icon to both clarify an action and call attention to a button. Icons are always positioned to the left of the text label.
 
 Please note to **not** use two icons in the same button.
+
+Todo: Add live component block with code example
+
+### Emoji
+
+Emoji buttons provide the user with visual to signify what the emotion users have attributed to the parent object. They only contain an emoji label and convert to an active state when pressed.
 
 Todo: Add live component block with code example
 
@@ -182,6 +188,12 @@ Todo: Add live component block with code example
 ### Icon segmented control
 
 Icon segmented control variations function similar to segmented control button variations with the difference being an icon label. See [segmented control](/components/segmented-control) for more information.
+
+Todo: Add live component block with code example
+
+### Pagination
+
+Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages. See [pagination](/components/pagination) for more information.
 
 Todo: Add live component block with code example
 
