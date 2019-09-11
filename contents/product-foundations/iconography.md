@@ -48,7 +48,7 @@ Todo: Add specs for additional icon sizes
 
 ## Keylines
 
-A keyline grid is a set of guides to help maintain visual balance between icons. Use it as a starting point and guide, but not a hard rule. There are four basic shapes that represent common icon scale and placement. Squares can fill the live area, while circles and rectangles can extend into the padding, which allows icons to be proportionately consistent.
+A keyline grid is a set of guides to help maintain [optical balance](#optical-balance) (visual weight) between icons. Use it as a starting point and guide, but not a hard rule. There are four basic shapes that represent common icon scale and placement. Squares can fill the live area, while circles and rectangles can extend into the padding, which allows icons to be proportionately consistent.
 
 <figure class="figure" role="figure" aria-label="Keyline grid">
   <img class="figure-img" src="/img/icons-keylines.svg" alt="Icon keyline grid" role="img" />
@@ -65,9 +65,19 @@ A keyline grid is a set of guides to help maintain visual balance between icons.
   <figcaption class="figure-caption">Keyline icon examples</figcaption>
 </figure>
 
+### Optical balance
+
+In regard to icons, optical balance is the perceived size of an icon relative to other icons. The more that icons feel balanced with one another, the easier it will be to rely on other characteristics to provide visual hierarchy and flow in the UI. Icons that are not balanced can draw unnecessary attention to themselves, or seemingly disappear in the mix of other elements.
+
+Here are a few considerations when trying to achieve optical balance.
+
+* More detail equals more visual weight. As the *density* of the graphic increases, it will draw more attention. Try offsetting this by scaling detailed icons down.
+* Rotate narrow icons 45º, which allows them to scale and have more visual weight.
+* At times, optically adjusting an icon may mean less adherence to the grid or other spacing rules to the benefit of balance or clarity.
+
 ## Strokes
 
-All icons use a **2px** stroke weight and are most commonly aligned to the inside of shapes. Lines use rounded caps, unless doing so would misrepresent the metaphor. Round line joins are optional and also depend on the metaphor. For example, a checkmark is one continuous object and the round line infers fluidity, whereas clock hands are two joined objects and a miter join defines a joint.
+All icons use a **2px** stroke weight and are most commonly aligned to the inside of shapes. Lines use rounded caps, unless doing so would misrepresent the metaphor, or if you are trying to infer depth or element clipping. Round line joins are optional and also depend on the metaphor. For example, a checkmark is one continuous object and the round line infers fluidity, whereas clock hands are two joined objects and a miter join defines a joint.
 
 <div class="row">
   <div class="col col-33">
@@ -147,7 +157,7 @@ Use increments of **15º** to achieve consistency throughout the icon set. Angle
 
 ## Shape
 
-Sharp interior angles help icon clarity. A **1px** gap between elements is acceptable, but **2px** is preferred when possible.
+Sharp interior angles help icon clarity. A **1px** gap between elements is acceptable, but **2px** is preferred when possible — consistency will always help the icons feel more unified.
 
 <figure class="figure" role="figure" aria-label="Icon with sharp interior angles and at least 1px spacing between elements">
   <img class="figure-img" src="/img/icons-shape-corners.svg" alt="Icon shape settings" role="img" />
@@ -170,7 +180,34 @@ Simplify icons for clarity and legibility, avoiding embellishment or unnecessary
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Simplified icon"><img class="figure-img" src="/img/icons-shape-simple.svg" alt="Simple house icon" role="img" /><figcaption class="figure-caption">Simplified icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Overly complex icon"><img class="figure-img" src="/img/icons-shape-complex.svg" alt="Complex house icon" role="img" /><figcaption class="figure-caption">Overly complex icon</figcaption></figure> |
 
+Close counters that are less than `1px` to avoid distracting artifacts.
+
+| **Do** | **Don’t** |
+| --- | --- |
+| <figure class="figure" role="figure" aria-label="Icon with no small counters"><img class="figure-img" src="/img/icons-counter-do.svg" alt="Pencil icon" role="img" /><figcaption class="figure-caption">Icon with no small counters</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with small, distracting counter"><img class="figure-img" src="/img/icons-counter-dont.svg" alt="Pencil icon" role="img" /><figcaption class="figure-caption">Icon with small, distracting counter</figcaption></figure> |
+
+Use square caps and shape edges to directly indicate clipping or layering. Round should still be used when breaks and intersections are more stylistic.
+
+| **Do** | **Don’t** |
+| --- | --- |
+| <figure class="figure" role="figure" aria-label="Icon with square clipped cap"><img class="figure-img" src="/img/icons-clip-do.svg" alt="Duplicate icon" role="img" /><figcaption class="figure-caption">Icon with square clipped cap</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with round clipped cap"><img class="figure-img" src="/img/icons-clip-dont.svg" alt="Duplicate icon" role="img" /><figcaption class="figure-caption">Icon with round clipped cap</figcaption></figure> |
+
 ## Concepts
+
+### Design to the concept
+
+The guidelines are helpful constraints to help focus on the *concept* without overthinking *style*. On the other hand, it’s critical to not let the same guidelines negatively impact a metaphor. A great example is a shield icon. While the default border radius is `2px`, using that here could make the icon feel too friendly, when really we want to emphasize robust and accurate security.
+
+In another more literal example, an icon representing tabular data should have crisp edges. Why? Because the UI of tables in the product have crisp, 90º angles. This creates a 1:1 relationship between the icon and the object it represents, making it much easier for users to infer the intended meaning.
+
+As with all of the guidelines, there will always be some level of subjectivity. Use your best judgement, and test when necessary.
+
+| **Do** | **Don’t** |
+| --- | --- |
+| <figure class="figure" role="figure" aria-label="Crisp shield icon"><img class="figure-img" src="/img/icons-concept-style-do.svg" alt="Shield icon" role="img" /><figcaption class="figure-caption">Crisp shield icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Soft shield icon"><img class="figure-img" src="/img/icons-concept-style-dont.svg" alt="Shield icon" role="img" /><figcaption class="figure-caption">Friendly shield icon</figcaption></figure> |
+| <figure class="figure" role="figure" aria-label="Literal table icon"><img class="figure-img" src="/img/icons-concept-style-do-2.svg" alt="Table icon" role="img" /><figcaption class="figure-caption">Literal table icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Rounded table icon"><img class="figure-img" src="/img/icons-concept-style-dont-2.svg" alt="Table icon" role="img" /><figcaption class="figure-caption">Rounded table icon</figcaption></figure> |
+
+### Icon meaning
 
 Don’t use one icon to refer to multiple meanings. In some cases, there will still be areas in the UI where meaning will have to be inferred from context; for example, a × symbol may be used for closing a modal and at the same time represent a failed pipeline. In these instances, do everything possible to differentiate the icons.
 
@@ -189,6 +226,8 @@ Don’t use an icon to explain a meaning which is not straight-forward. If an ic
 | **Do** | **Don’t** |
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Icon meaning is available"><img class="figure-img" src="/img/icons-concept-clear.svg" alt="Got hook icon with label and tooltip" role="img" /><figcaption class="figure-caption">Icon meaning is available</figcaption></figure> | <figure class="figure" role="figure" aria-label="Is that a smiling cat?"><img class="figure-img" src="/img/icons-concept-unclear.svg" alt="Git hook icon" role="img" /><figcaption class="figure-caption">Is that a smiling cat?</figcaption></figure> |
+
+### Modern metaphors
 
 Try to avoid potentially antiquated concepts, especially when something more modern is recognizable.
 
@@ -219,3 +258,7 @@ Icons are used to stress visual weight for elements with a high priority or to e
 The level of visual weight from heavy to light is: **Icon + label > Icon > label.**
 
 Todo: Add live component block with code example
+
+### Referencing icons in code
+
+For more information on how icons are referenced in the product, go to [GitLab Docs - Icons and SVG Illustrations](https://docs.gitlab.com/ee/development/fe_guide/icons.html).
