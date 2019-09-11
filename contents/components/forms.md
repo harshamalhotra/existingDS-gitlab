@@ -118,6 +118,22 @@ We default to all information being required unless stated otherwise with "(opti
 
 Todo: Add live component block with code example (optional)
 
+### Disabling vs. hiding fields
+
+The user goal when interacting with a form should be taken into account when deciding whether a field needs to be disabled or hidden from the interface.
+
+**Disable** a field if a user does not have access grants for an item, but still needs disclosure to it. The field is still displayed in the form, but cannot be edited. If it can become editable to the user (depending on certain conditions, like pressing a button or completing another field), it should stay disabled until then.
+
+Disabled fields give extra thought for the user about why it is not available. The visual distinction between disabled/enabled fields should be very explicit and clear. Be sure to always include a [Help text](#help-text) below the field, explaining why it's disabled.
+
+**Hide** a field if a user doesn’t need disclosure or access to an item. This option is relevant specifically for system security measures when some information should not be available in the user interface.
+
+Hiding fields allows for progressive disclosure. For example, as the user enters data in a form or makes a selection, more fields may be displayed or hidden, but the user only has to focus on the necessary fields to complete a task.
+
+The page layout will need to adapt to display the revealed form fields, but this approach is more consistent, avoids distraction, and lowers the user's cognitive load.
+
+When in doubt, hide a field instead of disabling it.
+
 ### Help text
 
 Help text can be used as additional instructions to the user when filling in the form. It should be: 
