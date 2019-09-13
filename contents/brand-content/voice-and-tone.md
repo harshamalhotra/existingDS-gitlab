@@ -10,7 +10,7 @@ See [General editorial](https://about.gitlab.com/handbook/marketing/corporate-ma
 
 ### GitLab the community
 
-GitLab is an [open source project](https://gitlab.com/gitlab-org/gitlab-ce/) with a large community of contributors. Over 2,000 people worldwide have contributed to GitLab's source code.
+GitLab is an [open source project](https://gitlab.com/gitlab-org/gitlab/) with a large community of contributors. Over 2,000 people worldwide have contributed to GitLab's source code.
 
 ### GitLab the company
 

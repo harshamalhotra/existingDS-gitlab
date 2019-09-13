@@ -134,9 +134,9 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       <td>
         <p>The product does not include any audio-only or video-only media.</p>
         <p>However, users have the ability to upload their own media. The product does not provide capabilities for captioning user generated audio or video content: <a
-          href="https://gitlab.com/gitlab-org/gitlab-ce/issues/55398"
+          href="https://gitlab.com/gitlab-org/gitlab/issues/25796"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab-ce/issues/55398</a></p>
+        >https://gitlab.com/gitlab-org/gitlab/issues/25796</a></p>
       </td>
     </tr>
     <tr>
@@ -330,9 +330,9 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       <td>
         <p>The product uses a logical tab order and consistent keyboard keys to perform actions.</p>
         <p>One instance was found where on page load, the tabindex jumps to the search field instead of the first item in the global navigation: <a
-          href="https://gitlab.com/gitlab-org/gitlab-ce/issues/21383"
+          href="https://gitlab.com/gitlab-org/gitlab/issues/15732"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab-ce/issues/21383</a></p>
+        >https://gitlab.com/gitlab-org/gitlab/issues/15732</a></p>
       </td>
     </tr>
     <tr>
@@ -440,9 +440,9 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       <td>
         <p>The product has many instances of non-unique ID values.</p>
         <a
-          href="https://gitlab.com/gitlab-org/gitlab-ce/issues/31654"
+          href="https://gitlab.com/gitlab-org/gitlab/issues/17928"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab-ce/issues/31654</a>
+        >https://gitlab.com/gitlab-org/gitlab/issues/17928</a>
       </td>
     </tr>
     <tr>
@@ -596,9 +596,9 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       <td>
         <p>The product uses visual changes to elements to indicate the current focus position.</p>
         <p>A few instances were discovered in the issuable sidebar that did not have a visible focus state, including toggles: <a
-          href="https://gitlab.com/gitlab-org/gitlab-ce/issues/41998"
+          href="https://gitlab.com/gitlab-org/gitlab/issues/20666"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab-ce/issues/41998</a></p>
+        >https://gitlab.com/gitlab-org/gitlab/issues/20666</a></p>
       </td>
     </tr>
     <tr>
