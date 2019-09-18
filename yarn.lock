@@ -713,15 +713,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@^1.73.0":
-  version "1.73.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.73.0.tgz#e44b347e4be77b94474c80cf5c2ee26ca0325c2f"
-  integrity sha512-4on+l5CS8Ae8OOcrnxwkO5s2zq1kHl/YjnOrHaX7megr6jsTYsVzKGaEMe0ViMSIPXA2+QnGD6vElKMkeD2+YQ==
+"@gitlab/svgs@^1.74.0":
+  version "1.74.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.74.0.tgz#2883c47c476a08e8c9c3621117a544204f4c13a3"
+  integrity sha512-L/Jga3EzGgOWF1rdQrH8wNm4dBFXcAVPZnFOEvBoe5OoWZgR3Ac/5Bgz4fYXYyPEKYUSorO7eyE6OVSvjKoM7g==
 
-"@gitlab/ui@5.25":
-  version "5.25.2"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.25.2.tgz#599954fefcc228d31a398dbe3c1e2287a0fcdb3e"
-  integrity sha512-mwwvEhVTomnZQjG0dADD+9Kg1UHZXAIb4s5QwQxwpgTkemILYIb1r96oKWfmPe8Pl/xrzAoMUtGEPT3XbxDqYQ==
+"@gitlab/ui@5.26":
+  version "5.26.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.26.0.tgz#303dcb339947b04bd04378828bd6b6ee1509ea9e"
+  integrity sha512-F8zjN6oiXUy787/4xD+vApuqRxiNe5ZhWg96gT23cUk5SL1Oj4NyMETpAh0v9R9J/i70ETmBYW011EGogjlAVA==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.2.1"
