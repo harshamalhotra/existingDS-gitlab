@@ -6,7 +6,7 @@ related:
   - toast
 ---
 
-Alerts allow the application to pass along relevant system information to the user without impeding their journey. Alerts are system generated and may or may not be derived by a user's action. They are not [validation](https://design.gitlab.com/components/forms#validation) error messages, nor are they feedback notifications after the user takes action — see [toasts](https://design.gitlab.com/components/toast) for more information. Alerts may contain a dismiss button and an action button depending on the situation.
+Alerts allow the application to pass along relevant system information to the user without impeding their journey. Alerts are system generated and may or may not be derived by a user's action. They are not [validation](https://design.gitlab.com/components/forms#validation) error messages, nor are they feedback notifications after the user takes action — see [toasts](https://design.gitlab.com/components/toast) for more information. 
 
 ## Usage
 
@@ -17,6 +17,23 @@ Alerts allow the application to pass along relevant system information to the us
 | Information alert | To provide supplemental information to the user in regards to the action they are about to take. | 
 | Tip alert | To educate the user about new or unused features, and other useful information. |
 | Success alert | To reaffirm to the user that a prior action they have taken, often in a different location within the application, has been accepted by the system. |
+
+### Dismissal 
+Alerts may contain a dismiss action, as well as an additional action button, depending on the use case.
+
+#### Dismissible alerts
+Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert. 
+
+Use dismissible alerts when the user's task is not blocked if they do not take action. 
+
+* The user dismisses a system-generated alert notifying them their .gitlab-ci.yml config file has an issue. Alert reappears the next time the config problem stops a process from running.
+
+#### Non-dismissible alerts
+Non-dismissible alerts can only be removed after a system condition is met.
+
+Use non-dismissible alerts when the user is prevented from completing a task until a system-condition is met.
+
+* The user encounters an alert notifying them their license has expired. The alert is only removed when they have uploaded a new license in the admin area.
 
 ### When to use alerts
 
