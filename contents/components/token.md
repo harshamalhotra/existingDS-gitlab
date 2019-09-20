@@ -1,5 +1,7 @@
 ---
 name: Token
+vueComponents:
+  - GlToken
 related:
   - filters
   - buttons
@@ -41,11 +43,11 @@ Interactive tokens include a [remove](http://gitlab-org.gitlab.io/gitlab-svgs/?q
 
 It is also possible to display view-only tokens. View-only tokens don't include a remove icon and cannot be removed from the set. For example, you may use a view-only token when a user does not have permission to remove a token.
 
-Todo: Add live component block with code example of view-only token
-
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:token-view-only]]
+
+[[Example:token-basic]]
 
 ## Design specifications
 
