@@ -91,7 +91,7 @@
             View repository
           </a>
           <a
-            href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/gitlab-pattern-library.sketch"
+            href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/doc/sketch-ui-kit.md#files"
             target="_blank"
             class="card card--highlighted card--link text-center m-l-5 p-a-4"
           >
@@ -100,7 +100,7 @@
               srcset="../assets/images/resources/r-sketch@2x.png 2x"
               class="a-center d-block m-b-3"
             />
-            Download pattern library
+            Download GitLab Sketch UI Kit
           </a>
           <a
             href="https://about.gitlab.com/community/gitlab-first-look/"
