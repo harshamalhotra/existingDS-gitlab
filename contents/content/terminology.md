@@ -64,12 +64,15 @@ Activity refers to any action taken by a user that results in the creation of a 
 When using verbs or adjectives:
 
 If the context clearly refers to the object, use them alone.
-* **Example:** Edit or Closed
+* **Example:** `Edit` or `Closed`
 
 If the context isn’t clear enough, use them with the object.
-* **Example:** Edit issue or Closed issues
+* **Example:** `Edit issue` or `Closed issues`
 
 Destruction buttons should be clear and always say what they are destroying.
-* **Example:** Delete page instead of just Delete
+* **Example:** `Delete page` instead of just `Delete`
+
+Buttons that copy content to the clipboard don’t need the “to clipboard” part.
+* **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
 
 Todo: Add comprehensive list of terminology Do/Don’t
