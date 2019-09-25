@@ -5,7 +5,7 @@ vueComponents:
 related:
   - checkboxes
   - segmented-control
-  - toggles
+  - toggle
 ---
 
 A radio button typically represents a single option in a group of related choices. Each radio button is boolean and only one can be selected at a time.

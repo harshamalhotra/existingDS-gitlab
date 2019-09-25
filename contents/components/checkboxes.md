@@ -6,7 +6,7 @@ related:
   - dropdowns
   - radio-button
   - segmented-control
-  - toggles
+  - toggle
 ---
 
 A checkbox represents a single boolean option that can be checked, unchecked, or indeterminate. The indeterminate state occurs when sub-options are grouped under a parent option, and sub-options are in both selected and unselected states.

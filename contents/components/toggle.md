@@ -1,5 +1,5 @@
 ---
-name: Toggles
+name: Toggle
 related:
   - checkboxes
   - radio-button
