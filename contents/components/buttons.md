@@ -7,11 +7,11 @@ related:
   - segmented-control
 ---
 
-Buttons execute an action, either in the background or foreground of an experience. Different button types help guide users through certain actions. Buttons express what action will occur when the user clicks or touches it either by text, icon, or both. Additional meaning can be derived from the button style.
+Buttons execute an action, either in the background or foreground of an experience. Different button categories help guide users through certain actions. Buttons express what action will occur when the user clicks or touches it either by text, icon, or both. Additional meaning can be derived from the button style.
 
 ## Categories
 
-Different button types bring varying emphasis to potential user actions. This makes the page comprehensive while guiding the user through performing a task.
+Different button categories bring varying emphasis to potential user actions. This makes the page comprehensive while guiding the user through performing a task.
 
 ### Primary
 
@@ -31,13 +31,13 @@ Todo: Add live component block with code example
 
 ### Tertiary
 
-A tertiary button is the default button type. Tertiary buttons still have an outlined styling but cannot have one of the four elementary button styles. They are typically used for less important actions that are not promoted to the user.
+A tertiary button is the default button category. Tertiary buttons still have an outlined styling but cannot have one of the four elementary button styles. They are typically used for less important actions that are not promoted to the user.
 
 Todo: Add live component block with code example
 
 ### Link
 
-Todo: Add link type button documentation
+Todo: Add link category button documentation
 
 Todo: Add live component block with code example
 
@@ -87,7 +87,7 @@ Todo: Add live component block with code example
 
 Buttons that represent actions where the user should be cautious such as overriding certain rulesets. These actions can be undone or somehow rectified by the user if a mistake is made. They are represented in an orange color.
 
-Please note that often the secondary button type is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
+Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
 Todo: Add live component block with code example
 
@@ -95,7 +95,7 @@ Todo: Add live component block with code example
 
 Buttons that represent actions that are destructive, such as deleting content. These actions cannot be undone. They are represented in a red color.
 
-Please note that often the secondary button type is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
+Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
 Todo: Add live component block with code example
 
@@ -107,7 +107,7 @@ Todo: Add live component block with code example
 
 ### Dark and Inverted
 
-Some circumstances are exceptions in that they require a different button style than normal to still be accessible. When the UI is darker than normal, a dark or inverted button style may be required. These button styles are only possible for tertiary button types.
+Some circumstances are exceptions in that they require a different button style than normal to still be accessible. When the UI is darker than normal, a dark or inverted button style may be required. These button styles are only possible for tertiary category buttons.
 
 Todo: Add live component block with code example
 
