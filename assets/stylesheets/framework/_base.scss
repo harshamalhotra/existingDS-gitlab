@@ -4,11 +4,14 @@
 body,
 html {
   box-sizing: border-box;
-  font-size: $base-font-size;
   line-height: ($base-grid * 2);
   font-family: $font-family-sans;
   color: $text-color;
   margin: 0;
+}
+
+body {
+  font-size: $base-font-size;
 }
 
 *,
