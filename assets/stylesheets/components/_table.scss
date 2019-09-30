@@ -1,4 +1,4 @@
-table:not(.pika-table) {
+table:not(.pika-table):not(.gl-table) {
   width: 100%;
   color: $text-color;
   border: $border-width solid $border-color;
