@@ -62,7 +62,7 @@ $black-o-02: rgba($black, 0.02);
 $black-o-04: rgba($black, 0.04);
 $black-o-06: rgba($black, 0.06);
 $black-o-08: rgba($black, 0.08);
-$black-o-10: rgba($black, 0.1);
+$black-o-24: rgba($black, 0.24);
 
 $green-50: #f1fdf6;
 $green-100: #dcf5e7;
@@ -131,6 +131,7 @@ $t-indigo-a-02: rgba($t-indigo-200, 0.02);
 $t-indigo-a-04: rgba($t-indigo-200, 0.04);
 $t-indigo-a-06: rgba($t-indigo-200, 0.06);
 $t-indigo-a-08: rgba($t-indigo-200, 0.08);
+$t-indigo-a-24: rgba($t-indigo-200, 0.24);
 
 $t-gray-50: #fafafa;
 $t-gray-100: #f2f2f2;
@@ -147,6 +148,7 @@ $t-gray-a-02: rgba($black, 0.02);
 $t-gray-a-04: rgba($black, 0.04);
 $t-gray-a-06: rgba($black, 0.06);
 $t-gray-a-08: rgba($black, 0.08);
+$t-gray-a-24: rgba($black, 0.24);
 
 $t-blue-50: #f4f8fc;
 $t-blue-100: #e6edf5;
@@ -163,6 +165,7 @@ $t-blue-a-02: rgba($t-blue-200, 0.02);
 $t-blue-a-04: rgba($t-blue-200, 0.04);
 $t-blue-a-06: rgba($t-blue-200, 0.06);
 $t-blue-a-08: rgba($t-blue-200, 0.08);
+$t-blue-a-24: rgba($t-blue-200, 0.24);
 
 $t-light-blue-50: #f2f7fc;
 $t-light-blue-100: #ebf1f7;
@@ -175,6 +178,11 @@ $t-light-blue-700: #2261a1;
 $t-light-blue-800: $t-blue-800;
 $t-light-blue-900: $t-blue-900;
 $t-light-blue-950: $t-blue-950;
+$t-light-blue-a-02: rgba($t-light-blue-200, 0.02);
+$t-light-blue-a-04: rgba($t-light-blue-200, 0.04);
+$t-light-blue-a-06: rgba($t-light-blue-200, 0.06);
+$t-light-blue-a-08: rgba($t-light-blue-200, 0.08);
+$t-light-blue-a-24: rgba($t-light-blue-200, 0.24);
 
 $t-green-50: #f2faf6;
 $t-green-100: #e4f3ea;
@@ -191,6 +199,7 @@ $t-green-a-02: rgba($t-green-200, 0.02);
 $t-green-a-04: rgba($t-green-200, 0.04);
 $t-green-a-06: rgba($t-green-200, 0.06);
 $t-green-a-08: rgba($t-green-200, 0.08);
+$t-green-a-24: rgba($t-green-200, 0.24);
 
 $t-red-50: #fcf4f2;
 $t-red-100: #fae9e6;
@@ -203,6 +212,11 @@ $t-red-700: #912f20;
 $t-red-800: #78291d;
 $t-red-900: #691a16;
 $t-red-950: #36140f;
+$t-red-a-02: rgba($t-red-200, 0.02);
+$t-red-a-04: rgba($t-red-200, 0.04);
+$t-red-a-06: rgba($t-red-200, 0.06);
+$t-red-a-08: rgba($t-red-200, 0.08);
+$t-red-a-24: rgba($t-red-200, 0.24);
 
 $t-light-red-50: #fff6f5;
 $t-light-red-100: #fae2de;
@@ -215,6 +229,11 @@ $t-light-red-700: #a62e21;
 $t-light-red-800: $t-red-800;
 $t-light-red-900: $t-red-900;
 $t-light-red-950: $t-red-950;
+$t-light-red-a-02: rgba($t-light-red-200, 0.02);
+$t-light-red-a-04: rgba($t-light-red-200, 0.04);
+$t-light-red-a-06: rgba($t-light-red-200, 0.06);
+$t-light-red-a-08: rgba($t-light-red-200, 0.08);
+$t-light-red-a-24: rgba($t-light-red-200, 0.24);
 
 /*
  * Tanuki logo colors

@@ -1134,6 +1134,12 @@ Transparencies are used only to indicate hover and active states within themes. 
           <span class="hex f-small">rgba($black, 0.08)</span>
         </div>
       </div>
+      <div class="color">
+        <div class="color-overview t-gray-a-24 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$t-gray-a-24</span>
+          <span class="hex f-small">rgba($black, 0.24)</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
