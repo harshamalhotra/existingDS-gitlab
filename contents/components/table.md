@@ -4,7 +4,7 @@ vueComponents:
   - GlTable
 related:
   - cards
-  - lists
+  - list
   - tree
 ---
 
@@ -32,7 +32,7 @@ Todo: Add live component block with code example
 
 Do not use tables to:
 
-*   Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/lists) instead.
+*   Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/list) instead.
 *   Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
 *   For hierarchical structures. Use the [Tree](/components/tree) view instead.
 
