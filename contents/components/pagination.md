@@ -1,5 +1,6 @@
 ---
 name: Pagination
+status: built
 vueComponents:
   - GlPagination
 related:
