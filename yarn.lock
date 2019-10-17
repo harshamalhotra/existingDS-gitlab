@@ -718,10 +718,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.78.0.tgz#469493bd6cdd254eb5d1271edeab22bbbee2f4c4"
   integrity sha512-dBgEB/Q4FRD0NapmNrD86DF1FsV0uSgTx0UOJloHnGE2DNR2P1HQrCmLW2fX+QgN4P9CDAzdi2buVHuholofWw==
 
-"@gitlab/ui@5.33":
-  version "5.33.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.33.0.tgz#af3646d83829997e0b1cb1166c07e7655d9b4024"
-  integrity sha512-jaxjgEG5Chaf5uYNmIlQ6DoulZzNIQr93O/fU0E5bR0jH2E4DUtSnU9OTq2bBjH1UesfgLD4qXXzwWG11Yufcg==
+"@gitlab/ui@5.35":
+  version "5.35.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-5.35.0.tgz#843e9febf1d4ef9b846dc3280e32e3e626c6f9b1"
+  integrity sha512-PD9hqVlRhwYRPbL+u/gcHew8NfPXbphZ0CQqfIXaWUYdEOMksUtP6DnLToG6S321WjrCMD+IBHnVQxf2juZBxg==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.2.1"
@@ -731,6 +731,7 @@
     highlight.js "^9.13.1"
     js-beautify "^1.8.8"
     lodash "^4.17.14"
+    resize-observer-polyfill "^1.5.1"
     url-search-params-polyfill "^5.0.0"
     vue "^2.6.10"
     vue-loader "^15.4.2"
@@ -7308,6 +7309,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-from@^1.0.0:
   version "1.0.1"
