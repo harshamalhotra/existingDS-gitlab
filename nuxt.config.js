@@ -7,6 +7,8 @@ const routes = [
   ...glob.sync('**/*.md', { cwd: 'contents/' }).map(filePath => filePath.replace(/\.md$/, '')),
 ];
 
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
   /*
    ** Headers of the page
@@ -105,6 +107,10 @@ module.exports = {
   build: {
     // Per default nuxt doesn't output to the console on CI, this turns this on
     quiet: false,
+
+    // Enabling extractCSS in production ensures that we don't run into CSS ordering issues
+    // See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/418
+    extractCSS: isProd,
 
     watch: ['~/contents'],
 
