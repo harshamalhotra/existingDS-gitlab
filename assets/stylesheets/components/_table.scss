@@ -27,4 +27,8 @@ table:not(.pika-table):not(.gl-table) {
       border-right: $gl-spacing-1 solid $border-color--light;
     }
   }
+
+  td.f-bold{
+    font-weight: $font-weight--bold;
+  }
 }
