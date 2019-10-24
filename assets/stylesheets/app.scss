@@ -1,5 +1,5 @@
 @import 'variables';
-@import '@gitlab/ui/scss/variables';
+@import '@gitlab/ui/src/scss/variables';
 
 @import 'utilities/mixins';
 
@@ -30,5 +30,5 @@
  At the moment we only import component specific styles in order to avoid side-effects
  */
 .app-styles {
-  @import '@gitlab/ui/scss/gitlab_ui';
+  @import '@gitlab/ui/src/scss/gitlab_ui';
 }
