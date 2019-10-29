@@ -16,7 +16,7 @@ Forms allow for user input by mimicking paper forms where users fill in informat
 
 ### Layout
 
-Form elements should move in a single direction so they should only be distributed through one column when the progression of the form is vertical and through one row when the progression is horizontal. Horizontally stacking input fields in a vertically moving form is only acceptable when they’re related (e.g. Name and Surname).
+Form elements should move in a single direction so they should only be distributed through one column when the progression of the form is vertical and through one row when the progression is horizontal. Horizontally stacking input fields in a vertically moving form is only acceptable when they’re related, for example, name and surname.
 
 Todo: Add live component block with code example (Vertical form with stacked input fields)
 
@@ -26,7 +26,7 @@ Todo: Add live component block with code example (Horizontal form)
 
 Input field and text area labels are set in bold and positioned above the form element by default. Labels must use the **for** attribute for accessibility reasons. Labels for [checkboxes and radio buttons](#checkbox) are set in regular font weight.
 
-In rare cases and exceptions, the label can be placed to the left of the input field. Examples include single input fields (e.g. "Sort by" dropdowns) and horizontally distributed forms.
+In rare cases and exceptions, the label can be placed to the left of the input field. Examples include single input fields, for example "Sort by" dropdowns, and horizontally distributed forms.
 
 Todo: Add live component block with code example (sort by dropdown)
 
@@ -36,7 +36,7 @@ Todo: Add live component block with code example (horizontally distributed form)
 
 Todo: Add live component block with code example (input field types)
 
-Disabled input fields need an explanation on why they’re disabled and that comes as [Help text](#help-text) below.
+Disabled input fields need an explanation on why they’re disabled and that comes as [help text](#help-text) below.
 
 Todo: Add live component block with code example (disabled input)
 
@@ -88,9 +88,9 @@ Todo: Add live component block with code example (text area character counter)
 
 ### Placeholders
 
-Only use a placeholder if there isn't enough space for [Help text](#help-text). The [Search](/components/search) component is such an example.
+Only use a placeholder if there isn't enough space for [help text](#help-text). The [search](/components/search) component is such an example.
 
-When they are used, placeholders should follow the rules of [Help text](#help-text). They must not be used as a replacement for labels but as a supplement. If a placeholder can’t be short, but an explanation is needed, a [Help text](#help-text) below the input should be used. An easy guideline to find out if the explanatory text is too long for a placeholder: if it resembles a sentence, try to use Help text, if it’s just a few words (ideally up to two or three), it's ok to use a placeholder.
+When they are used, placeholders should follow the rules of [help text](#help-text). They must not be used as a replacement for labels but as a supplement. If a placeholder can’t be short, but an explanation is needed, a [help text](#help-text) below the input should be used. An easy guideline to find out if the explanatory text is too long for a placeholder: if it resembles a sentence, try to use Help text, if it’s just a few words (ideally up to two or three), it's ok to use a placeholder.
 
 Todo: Add live component block with code example (placeholder)
 
@@ -98,15 +98,15 @@ Todo: Add live component block with code example (placeholder)
 
 #### Error messages and states
 
-Error messages and validation should be shown inline and can, in general, happen either live or on form submission. Live validation should be seen as assisting the user to input the correct information and not as a way of preventing them from submitting the form with possibly incorrect information (live validation might be frontend-only but the user has no way of knowing that).
+Error messages and validation should be shown inline and can, in general, happen either live or on form submission. Live validation should be seen as assisting the user to input the correct information, and not as a way of preventing them from attempting to submit the form with possibly incorrect information. Live validation might be frontend-only, but the user has no way of knowing that. See also the [submit form buttons section](#submit-form-buttons) below.
 
-The error message shows up below the input field in error state and should be helpful and contextual, not generic. If there’s Help text below the input field, an error pushes it further down as it needs to show up immediately after the input.
+The error message shows up below the input field that is in an error state. If there is help text below the input field, the error message pushes it further down as the error message needs to show up immediately below the input. Under no circumstances should the error message be displayed in a tooltip.
 
 Todo: Add live component block with code example (error state + message)
 
-#### Form buttons
+#### Submit form buttons
 
-We don’t disable buttons as a form of validating forms. We default to active buttons in forms and disable them once clicked to avoid the possibility of submitting the form twice.
+We don’t disable the submit buttons as a way of validating forms. We default to active submit buttons in forms and disable them once clicked to avoid the possibility of submitting the form twice.
 
 Disabling buttons by default can still make sense in some cases. Editing existing information within a form is a good example. In such cases, buttons are disabled by default and become enabled once a change has been made by the user. The state change indicates the need for saving the changes and shouldn’t be tied to whether the information in the form is valid or not.
 
@@ -124,7 +124,7 @@ The user goal when interacting with a form should be taken into account when dec
 
 **Disable** a field if a user does not have access grants for an item, but still needs disclosure to it. The field is still displayed in the form, but cannot be edited. If it can become editable to the user (depending on certain conditions, like pressing a button or completing another field), it should stay disabled until then.
 
-Disabled fields give extra thought for the user about why it is not available. The visual distinction between disabled/enabled fields should be very explicit and clear. Be sure to always include a [Help text](#help-text) below the field, explaining why it's disabled.
+Disabled fields give extra thought for the user about why it is not available. The visual distinction between disabled/enabled fields should be very explicit and clear. Be sure to always include a [help text](#help-text) below the field, explaining why it's disabled.
 
 **Hide** a field if a user doesn’t need disclosure or access to an item. This option is relevant specifically for system security measures when some information should not be available in the user interface.
 
