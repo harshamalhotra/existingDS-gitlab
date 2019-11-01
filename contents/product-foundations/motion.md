@@ -4,17 +4,23 @@ name: Motion
 
 Motion is a tool to help convey important relationships, changes, or transitions between elements. It is used sparingly and intentionally, highlighting the right elements at the right moment.
 
-### Timings
-
-The farther an object travels, the longer the timing is for the animation. Avoid large, full screen animations.
-
-Subtle animations, or objects leaving the screen should take 100 milliseconds. Objects entering the screen, or motion we want to use to direct user attention take 200 milliseconds. Avoid longer animations as they will make the experience appear sluggish. If a specific animation feels like it will need more than 400 milliseconds, revisit the animation to see if there is a simpler, easier, shorter transition to implement.
-
-### Easing
+## Easing
 
 Easing specifies the rate of change of a parameter over time. Adding an easing curve makes the motion feel more natural, cohesive, and connected.
 
 Todo: Define easing standards
+
+## Timings
+
+The scale of an animation, it's easing curve, and the complexity of the element which is being animated should influence the total animation duration. This means the further the traveled distance and the more complex the animated object, the longer the timing for the animation should be.
+
+### Macro animations
+
+Macro animations cover larger scale objects or surface area such as page changes, drawer reveals, and scrolling or other movement across the screen, etc. We should be mindful with larger scale animations and make sure they convey enough meaning in order to add value towards the user experience. These animations may take up to 400ms.
+
+### Mircro animations
+
+Micro animations cover smaller scale objects or surface areas such as icons, color changes, buttons interactions, tooltips, etc. They are used to direct user attention and add a small amount of meaning which can help the user. We should be mindful with smaller scale animations and make sure they don't take too long as they will make the experience appear sluggish. If the complexity of an object requires a longer animation time please revisit it and look for an alternative solution. These animations may take up between 100ms and 200ms.
 
 ## Types of animations
 
@@ -53,3 +59,7 @@ Todo: Add drag animation example
 To keep an active element visible, a page auto scroll transition can be used. An example of this includes clicking an issue board card that is out of screen.
 
 Todo: Add auto scroll example (issue board cards)
+
+## Resources
+
+* [Spectrum design system - Adobe](https://spectrum.adobe.com/page/motion/)
