@@ -3,7 +3,7 @@ name: Toggles
 vueComponents:
   - GlToggle
 related:
-  - checkboxes
+  - checkbox
   - radio-button
   - segmented-control
 ---

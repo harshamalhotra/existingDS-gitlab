@@ -1,5 +1,5 @@
 ---
-name: Broadcast messages
+name: Broadcast message
 related:
   - alert
 ---

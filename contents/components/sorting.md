@@ -2,7 +2,7 @@
 name: Sorting
 related:
   - dropdowns
-  - filters
+  - filter
   - lists
 ---
 

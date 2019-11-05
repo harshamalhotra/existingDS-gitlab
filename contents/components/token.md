@@ -3,7 +3,7 @@ name: Token
 vueComponents:
   - GlToken
 related:
-  - filters
+  - filter
   - buttons
   - badge
   - labels
@@ -15,23 +15,23 @@ Tokens represent keywords and are used to add or filter objects. They allow user
 
 A token is used in a search query in places where the user is expected to include multiple queries.
 
-- Input tokens are used to add content. For example, these tokens are used when adding new users to a project. Multiple users can be added at once, and each inputted user is added as a token within the text field.
-- Filter tokens are used to narrow down content and are attached to a qualifier. [Filters](/components/filters) inherit these tokens.
+* Input tokens are used to add content. For example, these tokens are used when adding new users to a project. Multiple users can be added at once, and each inputted user is added as a token within the text field.
+* Filter tokens are used to narrow down content and are attached to a qualifier. [Filters](/components/filter) inherit these tokens.
 
 ### When to use tokens
 
 Use tokens to:
 
-- Enable dynamic user input and verify that input by converting text into tokens.
-- Allow users to manage, filter, and search options in a compact area.
+* Enable dynamic user input and verify that input by converting text into tokens.
+* Allow users to manage, filter, and search options in a compact area.
 
 ### When not to use tokens
 
 Do not use tokens to:
 
-- Categorize an object. Use [labels](https://design.gitlab.com/components/labels/) instead.
-- Highlight more generic object metadata, like an issue’s status, a member’s role, or if a branch is protected. Use [badges](https://design.gitlab.com/components/badge/) instead.
-- Display static action items persistently. Use [buttons](https://design.gitlab.com/components/buttons) instead.
+* Categorize an object. Use [labels](https://design.gitlab.com/components/labels/) instead.
+* Highlight more generic object metadata, like an issue’s status, a member’s role, or if a branch is protected. Use [badges](/components/badge/) instead.
+* Display static action items persistently. Use [buttons](https://design.gitlab.com/components/buttons) instead.
 
 ### Placement
 

@@ -3,7 +3,7 @@ name: Radio buttons
 vueComponents:
   - GlFormRadio
 related:
-  - checkboxes
+  - checkbox
   - segmented-control
   - toggle
 ---
@@ -18,7 +18,8 @@ A radio button typically represents a single option in a group of related choice
 
 Todo: Add replacement-comparison-table
 
-### Legends, Labels, and Help Text
+### Legends, Labels, and Help text
+
 * Radio button labels are set in regular font weight, positioned to the right of the element, and should be as short as possible.
 * Use a `fieldset` with `legend` (set in bold font weight and positioned above the group of radio buttons) to group a set of radio buttons. Some screen readers will announce the contents of the legend before each nested input to maintain context for a user.
 * [Help text](/components/forms#help-text) can be added below the radio button label or as a paragraph below the group.
