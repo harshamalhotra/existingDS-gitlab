@@ -78,32 +78,32 @@
             <th class="header">Status</th>
           </tr>
           <tr>
-            <td><a href="../../foundations/colors">Colors</a></td>
+            <td><a href="../../product-foundations/colors">Colors</a></td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="../../foundations/iconography">Iconography</a></td>
+            <td><a href="../../product-foundations/iconography">Iconography</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../foundations/motion">Motion</a></td>
+            <td><a href="../../product-foundations/illustration">Illustration</a></td>
             <td>⚠️</td>
           </tr>
           <tr>
-            <td><a href="../../foundations/illustration">Illustration</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../foundations/typography">Typography</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../foundations/interactions">Interactions</a></td>
+            <td><a href="../../product-foundations/interaction">Interaction</a></td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="../../foundations/saving-and-feedback">Saving and feedback</a></td>
+            <td><a href="../../product-foundations/motion">Motion</a></td>
+            <td>⚠️</td>
+          </tr>
+          <tr>
+            <td><a href="../../product-foundations/saving-and-feedback">Saving and feedback</a></td>
             <td>🚫</td>
+          </tr>
+          <tr>
+            <td><a href="../../product-foundations/typography">Typography</a></td>
+            <td>⚠️</td>
           </tr>
           <tr>
             <th class="header">Component</th>
