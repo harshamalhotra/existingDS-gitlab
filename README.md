@@ -37,3 +37,7 @@ Each merge request for this repository will generate a [review app](https://docs
 
 GitLab is an open source project and we are very happy to accept community
 contributions. Please refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for details.
+
+## Why is the design system called Pajamas?
+
+Pajamas is a nod to our fully remote culture. In addition, they are comfortable, reliable, and consistent! Read more about how we landed on the name Pajamas in the [original issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/138).
