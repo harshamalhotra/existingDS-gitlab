@@ -63,9 +63,7 @@ Max size on empty state illustrations is **512px wide by 512px tall**. Do not sc
 
 ### Description
 
-*   If the description needs to wrap on desktop, align it to the left.
-*   If the title needs to wrap on desktop, align both the title and description to the left.
-*   If the title and description do not wrap on desktop, center them horizontally.
+TODO: Determine text alignment for description of empty states
 
 ### Call to action
 
