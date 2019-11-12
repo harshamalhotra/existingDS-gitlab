@@ -63,7 +63,7 @@ Max size on empty state illustrations is **512px wide by 512px tall**. Do not sc
 
 ### Description
 
-TODO: Determine text alignment for description of empty states
+Todo: Determine text alignment for description of empty states. [Issue gitlab-design#238](https://gitlab.com/gitlab-org/gitlab-design/issues/238)
 
 ### Call to action
 
