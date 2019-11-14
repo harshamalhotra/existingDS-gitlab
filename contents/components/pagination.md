@@ -38,16 +38,6 @@ Truncation is shown using `…` when the number of pages exceeds the pagination 
 
 Double truncation occurs when the current page is separated by 5 or more pages from the first and last page on large and medium viewports. On small and mobile viewports, double truncation occurs when 1 or more pages separate the current page from the first and last page.
 
-###### Large/medium viewport example
-Todo: add truncation example on large/medium viewports
-
-Todo: add double truncation example on large/medium viewports
-
-###### Small/mobile viewport example
-Todo: add truncation example on small/mobile viewports
-
-Todo: add double truncation example on small/mobile viewports
-
 ### Infinite scroll
 Infinite scroll is triggered once the user has reached the 20th item of a list and there are more items to load. A [loading spinner](/components/spinner) appears at the bottom of the list for the duration of the load time.
 
@@ -73,7 +63,10 @@ When a user returns to a list from a list entry using the back button in the bro
 
 [[Example:pagination-basic]]
 
+[[Example:pagination-double-truncation]]
+
 ### Infinite Scroll
+
 Todo: Add live component block with code example
 
 ## Design specification
