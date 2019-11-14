@@ -1,5 +1,8 @@
 ---
 name: Banner
+status: built
+vueComponents:
+  - GlBanner
 related:
   - alert
   - broadcast-message
@@ -64,7 +67,18 @@ A banner should always include a [button](https://design.gitlab.com/components/b
 
 ## Demo
 
-Todo: add banner example
+### Basic Introduction
+
+[[Example:banner-introduction]]
+
+### Promotion with Illustration
+
+[[Example:banner-promotion-illustration]]
+
+### Basic Promotion
+
+[[Example:banner-promotion]]
+
 
 ## Design specifications
 
