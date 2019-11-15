@@ -1,5 +1,8 @@
 ---
 name: Alert
+status: built
+vueComponents:
+  - GlAlert
 related:
   - broadcast-message
   - forms
@@ -64,11 +67,17 @@ There are times when using an alternative component other than an alert is neces
 
 The alert pattern is designed to be flexible and accounts for as many use cases as possible.
 
-Todo: Add an example of a non-dismissible alert related to a usage guideline.
+### Basic example
 
-Todo: Add an example of a dismissible alert related to a usage guideline.
+[[Example:alert-default]]
 
-Todo: Add an example of an alert with an action button.
+### Non-dismissible
+
+[[Example:alert-non-dismissible]]
+
+### With actions
+
+[[Example:alert-actions]]
 
 ## Design specifications
 
