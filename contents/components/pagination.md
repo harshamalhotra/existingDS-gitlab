@@ -65,6 +65,8 @@ When a user returns to a list from a list entry using the back button in the bro
 
 [[Example:pagination-double-truncation]]
 
+[[Example:pagination-compact]]
+
 ### Infinite Scroll
 
 Todo: Add live component block with code example
