@@ -1,8 +1,8 @@
 ---
 name: Skeleton Loader
-vueComponents: 
-  - GlSkeletonLoading
-  - GlDashboardSkeleton
+status: built
+vueComponents:
+  - GlSkeletonLoader
 related:
   - spinner
 ---
@@ -15,9 +15,9 @@ Skeleton loaders are to be used when pages or sections can be progressively popu
 
 ### Presentation
 
-Skeleton objects are presented in grayscale and never use color. They use a pulsing wave effect [motion](/foundations/motion) to indicate they are loading. The animation transitions color horizontally from left to right, starting with `#f2f2f2` to `#fafafa`. 
+Skeleton objects are presented in grayscale and never use color. They use a pulsing wave effect [motion](/foundations/motion) to indicate they are loading. The animation transitions color horizontally from left to right, starting with `#f2f2f2` to `#fafafa`.
 
-[[Example:skeleton-loader-basic]]
+[[Example:issue-card-skeleton-basic]]
 
 ### Principles
 
@@ -29,11 +29,11 @@ When designing skeleton states not all components on the page need to be replace
 
 If content can be loaded instantly it is a good indicator that it does not need to be replaced, think of action-based components (e.g. buttons, input fields, checkboxes, toggles, etc.). Secondary dynamic content that is revealed upon user interaction should typically never be replaced by a skeleton state as those items should already be loaded in by the time the user is able to interact with them (e.g. toasts, dropdown menu's, modals, etc.).
 
-Skeleton objects should generally be visualized by simple primitives which mimic the original content in a recognizable way. It is recommended to use a more elaborate form if that is needed to make the component recognizable. 
+Skeleton objects should generally be visualized by simple primitives which mimic the original content in a recognizable way. It is recommended to use a more elaborate form if that is needed to make the component recognizable.
 
 ### Creating skeleton states
 
-Designers should provide additional skeleton state designs. Developers can then recreate those by applying the skeleton loader class to their elements.
+Designers should provide additional skeleton state designs. Developers can then recreate those by using the `<gl-skeleton-loader>` component.
 
 ## Design specifications
 
