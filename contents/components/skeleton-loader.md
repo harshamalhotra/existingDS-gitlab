@@ -33,13 +33,13 @@ Skeleton objects should generally be visualized by simple primitives which mimic
 
 ### Creating skeleton states
 
-Designers should provide additional skeleton state designs. Developers can then recreate those by using the `<gl-skeleton-loader>` component.
+Designers should provide additional skeleton state designs. Developers can then recreate those by using the `<gl-skeleton-loader>` component. Primitives should follow Pajama's [geometric progression](/layout/spacing#geometric-progression) and examples are available inside the pattern library.
 
 ## Design specifications
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-Todo: Add link to spec preview
+[Sketch Measure Preview for skeleton loaders](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/skeleton-loader-spec-previews/)
 
 ## Resources
 
