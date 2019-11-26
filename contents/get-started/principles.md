@@ -12,7 +12,7 @@ We take inspiration from other companies though our principles are defined by lo
 
 ## 1 Productive
 
-GitLab is an application to support what people do, day in, day out. We need to respect the importance of their work and avoid gimicky details.
+GitLab is an application to support what people do, day in, day out. We need to respect the importance of their work and avoid gimmicky details.
 
 <!--
  1. **Bold sub principle(s) title** Explanation, plus optional reference
@@ -39,7 +39,7 @@ We need to build empathy with our users. This means we must understand their sta
 
 ## Principle guidelines
 
-The principles defined should align to the following guidelines to assure they are to be most effective.
+The principles defined should align with the following guidelines to assure they are to be most effective.
 
 Note: The current principles in place may not yet conform to these guidelines, but will be updated to do so in the near future.
 

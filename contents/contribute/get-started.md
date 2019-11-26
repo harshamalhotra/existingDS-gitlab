@@ -6,7 +6,7 @@ Thank you for your interest in contributing to the Pajamas Design System! We wel
 
 ## Contribute an issue
 
-If you an interested in contributing to our design system, the first step is ensuring that an issue exists in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues). There are many applications that an issue can have, including:
+If you are interested in contributing to our design system, the first step is ensuring that an issue exists in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues). There are many applications that an issue can have, including:
 
 *   Submitting feature proposals
 *   Asking questions
