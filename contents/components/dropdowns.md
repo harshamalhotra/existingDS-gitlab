@@ -4,7 +4,10 @@ vueComponents:
   - GlDropdown
 related: 
   - buttons
+  - checkbox
+  - dropdowns
   - forms
+  - segmented-control
 ---
 
 Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/buttons) or [form inputs](/components/forms).
@@ -17,6 +20,18 @@ There are two main types of dropdowns:
 |--- |--- |
 |Plain dropdowns|These dropdowns usually present a list of actions. They can be thought of as a collection of buttons.|
 |Checkmark dropdowns|These dropdowns are used as inputs. The individual rows in these dropdowns can show a checkmark to indicate that they have been selected or enabled. They are a collection of checkmarks. A dash (–) should be used instead of a checkmark when the row's value is present in some of the elements the dropdown is modifying but not others.|
+
+Use the following table to see when a dropdown should be used over other alternative components.
+
+|  | [Single checkbox](/components/checkboxes) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkboxes) | [Multi-select dropdown](/components/dropdowns) |
+|---|---|---|---|---|---|---|---|
+| Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
+| Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
+| Pre-selected options | Possible | Possible | Possible | Yes, 1 | Yes, 1 | Possible | Possible |
+| Disabled options | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| Option descriptions | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| UI space | Little room | Not a problem | Little room | Not a problem | Not a problem | Not a problem | Little room |
+| Example | Accepting terms and conditions on sign up | Enabling/disabling project features | “Sort by” dropdowns | Project visibility setting | 7, 30, 90 days timeframe in analytics dashboards | Scopes selection in User settings > Applications | Add/remove labels |
 
 ### Behavior
 

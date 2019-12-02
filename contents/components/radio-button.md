@@ -4,6 +4,7 @@ vueComponents:
   - GlFormRadio
 related:
   - checkbox
+  - dropdowns
   - segmented-control
   - toggle
 ---
@@ -14,9 +15,18 @@ A radio button typically represents a single option in a group of related choice
 
 * Use radio buttons to present a set of options, where only one option can be selected at a time.
 * One radio button should be selected as the default choice by using the `checked` attribute.
-* Radio buttons may replace segmented controls, a list of checkboxes (when only one option can be selected), or a toggle to allow users to choose between two or more options. For help with choosing the right solution, follow the table below.
 
-Todo: Add replacement-comparison-table
+Use the following table to see when radio buttons should be used over other alternative components.
+
+|  | [Single checkbox](/components/checkboxes) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkboxes) | [Multi-select dropdown](/components/dropdowns) |
+|---|---|---|---|---|---|---|---|
+| Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
+| Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
+| Pre-selected options | Possible | Possible | Possible | Yes, 1 | Yes, 1 | Possible | Possible |
+| Disabled options | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| Option descriptions | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| UI space | Little room | Not a problem | Little room | Not a problem | Not a problem | Not a problem | Little room |
+| Example | Accepting terms and conditions on sign up | Enabling/disabling project features | “Sort by” dropdowns | Project visibility setting | 7, 30, 90 days timeframe in analytics dashboards | Scopes selection in User settings > Applications | Add/remove labels |
 
 ### Legends, Labels, and Help text
 

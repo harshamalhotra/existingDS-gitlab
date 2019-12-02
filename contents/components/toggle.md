@@ -16,9 +16,17 @@ Use toggles when there is a choice between two selections, it has a default stat
 
 Avoid using toggles when a submit button is needed. This confuses users and dilutes the experience by preventing instant results.
 
-Toggles may replace a segmented control, two radio buttons, or a single checkbox to allow users to choose between two opposing states. For help with choosing the right solution, follow the table below.
+Use the following table to see when a toggle should be used over other alternative components.
 
-Todo: Add replacement-comparison-table
+|  | [Single checkbox](/components/checkboxes) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkboxes) | [Multi-select dropdown](/components/dropdowns) |
+|---|---|---|---|---|---|---|---|
+| Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
+| Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
+| Pre-selected options | Possible | Possible | Possible | Yes, 1 | Yes, 1 | Possible | Possible |
+| Disabled options | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| Option descriptions | Possible | Possible | Possible | Possible | No | Possible | Possible |
+| UI space | Little room | Not a problem | Little room | Not a problem | Not a problem | Not a problem | Little room |
+| Example | Accepting terms and conditions on sign up | Enabling/disabling project features | “Sort by” dropdowns | Project visibility setting | 7, 30, 90 days timeframe in analytics dashboards | Scopes selection in User settings > Applications | Add/remove labels |
 
 ### Labels
 
