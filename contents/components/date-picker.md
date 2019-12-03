@@ -26,6 +26,8 @@ A combination of two date pickers can be used for selecting a range of dates. Th
 * Once a user selects the starting date (“From”), the date picker for the ending date (“To”) should only allow them to pick a date that is either equal or after that. The days preceding the start date should be disabled and thus not selectable. 
 * The default month shown in the date picker dropdown should be the current month (M). If the user picks a start date (“From”) that’s in the future (for example M+1), the default month shown for the ending date (“To”) date picker dropdown should be that same month (M+1) and not the current month (M). This doesn’t apply for starting dates selected in the past. 
 
+[[Example:basic-daterange-picker]]
+
 ## Design specification
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
