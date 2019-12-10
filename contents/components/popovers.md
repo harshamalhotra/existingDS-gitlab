@@ -1,6 +1,6 @@
 ---
 name: Popovers
-vueComponents: 
+vueComponents:
   - GlPopover
 related:
   - tooltip
@@ -28,7 +28,7 @@ To optimize for readability content within popovers uses left-alignment.
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:popover-basic]]
 
 ## Design specifications
 
