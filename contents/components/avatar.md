@@ -19,7 +19,7 @@ It is preferable that an avatar display an image. Images are personalized and ma
 
 Avatars may also be adjacent to a text alternative, such as a user or project name. In these cases, a null `alt` text should be used so that they can be ignored by assistive technologies.
 
-Todo: Add avatar with text demo
+[[Example:avatar-labeled]]
 
 ### Displaying multiple avatars
 
