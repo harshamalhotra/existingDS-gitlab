@@ -33,8 +33,8 @@
           </tr>
           <tr>
             <td>✅</td>
-            <td>Implemented</td>
-            <td>Implemented in production</td>
+            <td>Integrated</td>
+            <td>Integrated into production</td>
           </tr>
           <tr>
             <td>❌</td>
@@ -57,7 +57,7 @@
           <tr>
             <td>🆕</td>
             <td>New</td>
-            <td>Newly available, implement with caution</td>
+            <td>Newly available, integrate with caution</td>
           </tr>
           <tr>
             <td class="app-styles"><span class="badge badge-primary">Vue</span></td>
@@ -311,7 +311,7 @@ const statusIcons = {
   upcoming: '🚫',
   'in-progress': '⚠',
   built: '⚒',
-  implemented: '✅',
+  integrated: '✅',
   deprecated: '❌',
 };
 

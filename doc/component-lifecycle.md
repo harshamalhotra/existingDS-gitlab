@@ -9,8 +9,8 @@ The component lifecycle has the following stages:
 and documentation. The component is added to Pajamas. ~"pajamas::build"
 * **Style:** Each component is styled according to the design specs found in 
 Pajamas. Components function correctly and match usage guidelines. ~"pajamas::style"
-* **Implement:** The documented component is implemented into GitLab the 
-product. ~"pajamas::implement"
+* **Integrate:** The documented component is integrated into GitLab the 
+product. ~"pajamas::integrate"
 
 Some stages may happen in tandem, depending on how mature the component currently
 is. For example:
@@ -23,7 +23,7 @@ may come after the **build** stage.
 * If a component is brand new, the **create** stage may need some revisions as the 
 **build** and **style** stages progress.
 
-The **implement** stage will come last and could involve removing old HAML components
+The **integrate** stage will come last and could involve removing old HAML components
 in order to replace them with the newly defined Vue components.
 
 ## Determining whether a component should be included in Pajamas

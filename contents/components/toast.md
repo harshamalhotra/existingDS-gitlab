@@ -1,6 +1,6 @@
 ---
 name: Toast
-status: implemented
+status: integrated
 vueComponents:
   - GlToast
 related:
