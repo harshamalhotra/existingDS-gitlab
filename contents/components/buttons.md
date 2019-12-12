@@ -1,7 +1,8 @@
 ---
 name: Buttons
-vueComponents: 
-  - GlButton
+status: built
+vueComponents:
+  - GlNewButton
 related:
   - dropdowns
   - segmented-control
@@ -21,19 +22,19 @@ Defining context depends on the hierarchy of information displayed on the screen
 
 Please note that contexts may be temporary, such as a modal.
 
-Todo: Add live component block with code example
+[[Example:new-button-primary]]
 
 ### Secondary
 
 Secondary buttons represent supplementary actions that the user is motivated to take. The outlined styling places less emphasis on these buttons. Just like primary buttons, secondary buttons also require one of the four elementary button styles: Info (blue), Success (green), Warning (orange), or Danger (red).
 
-Todo: Add live component block with code example
+[[Example:new-button-secondary]]
 
 ### Tertiary
 
 A tertiary button is the default button category. Tertiary buttons still have an outlined styling but cannot have one of the four elementary button styles. They are typically used for less important actions that are not promoted to the user.
 
-Todo: Add live component block with code example
+[[Example:new-button-tertiary]]
 
 ### Link
 
@@ -49,13 +50,13 @@ Buttons change depending on the user's interaction or set behavior. This is to e
 
 Buttons change depending on the user's interaction with them. In hover, active, and focus states the buttons will have a thicker border and their background color will change. For the focus state, buttons will get an additional blue glow indicating that they are in focus.
 
-Todo: Add live component block with code example
+[[Example:new-button-variants]]
 
 ### Disabled
 
 Disabled buttons prevent the user from performing an action. They are there to let the user know a certain action would be possible if circumstances were different. All buttons regardless of style are styled the same way when in the disabled state. Additionally they will show the "not-allowed" cursor style when hovered upon and have a faded text color.
 
-Todo: Add live component block with code example
+[[Example:new-button-disabled]]
 
 ## Variants
 
@@ -65,7 +66,7 @@ Buttons derive additional meaning from their presented style and help the user q
 
 The neutral button style is used most often and is generally picked when using tertiary buttons. It features grayscale colors with a white background.
 
-Todo: Add live component block with code example
+[[Example:new-button-tertiary]]
 
 ### Elementary
 
@@ -75,13 +76,13 @@ Our elementary button styles all convey a different meaning due to their respect
 
 Buttons that represent activation or informative processes. They are represented in a blue color.
 
-Todo: Add live component block with code example
+[[Example:new-button-info]]
 
 #### Success
 
 Buttons that represent positive actions such as the creation or addition of items. They are represented in a green color.
 
-Todo: Add live component block with code example
+[[Example:new-button-success]]
 
 #### Warning
 
@@ -89,7 +90,7 @@ Buttons that represent actions where the user should be cautious such as overrid
 
 Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
-Todo: Add live component block with code example
+[[Example:new-button-warning]]
 
 #### Danger
 
@@ -97,13 +98,13 @@ Buttons that represent actions that are destructive, such as deleting content. T
 
 Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
-Todo: Add live component block with code example
+[[Example:new-button-danger]]
 
 ### Dashed
 
 Dashed button styles are used when something has not yet been created. Their action will lead the user to create the missing item, after which it will replace the dashed button with a link to the item.
 
-Todo: Add live component block with code example
+[[Example:new-button-dashed]]
 
 ### Dark and Inverted
 
@@ -119,13 +120,13 @@ Buttons come in many different variations to fit different situations. Some trig
 
 The default variation is the text button. They contain a text label and have no special interactions.
 
-Todo: Add live component block with code example
+[[Example:new-button-tertiary]]
 
 ### Icon
 
 Icon buttons provide the user with visual iconography to signify what the button does. They only contain an icon label and have no special interactions. They can be used when a text button variation would be too big or the meaning of an icon conveys what will happen in a more concise way.
 
-Todo: Add live component block with code example
+[[Example:new-button-icon]]
 
 ### Icon + text
 
@@ -133,13 +134,13 @@ Text button variations might be supplemented with an icon to both clarify an act
 
 Please note to **not** use two icons in the same button.
 
-Todo: Add live component block with code example
+[[Example:new-button-icon-and-text]]
 
 ### Emoji
 
 Emoji buttons provide the user with visual to signify what the emotion users have attributed to the parent object. They only contain an emoji label and convert to an active state when pressed.
 
-Todo: Add live component block with code example
+[[Example:new-button-emoji]]
 
 ### Dropdown
 
@@ -167,7 +168,7 @@ Todo: Add live component block with code example
 
 Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
 
-Todo: Add live component block with code example
+[[Example:new-button-ellipsis]]
 
 ### Group
 
@@ -203,25 +204,25 @@ Todo: Add live component block with code example
 
 Depending on the interface buttons may either use the medium or small size.
 
-Todo: Add live component block with code example
+[[Example:new-button-sizes]]
 
 ### Medium
 
 This is the default button size.
 
-Todo: Add live component block with code example
+[[Example:new-button-medium]]
 
 ### Small
 
 This is the alternative button size for use in tight spaces.
 
-Todo: Add live component block with code example
+[[Example:new-button-small]]
 
 ### Full width
 
 Buttons can be expanded to the full width of the parent container. This can be used for buttons embedded inside smaller width containers or to improve usability on mobile viewports.
 
-Todo: Add live component block with code example
+[[Example:new-button-full-width]]
 
 ## Order
 
