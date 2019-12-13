@@ -60,7 +60,7 @@ A small illustration may be used but is optional. Keep in mind size and placemen
 
 #### Call to action
 
-A banner should always include a [button](https://design.gitlab.com/components/buttons) as the primary call to action. Avoid using multiple buttons and linking the user to different pages. An exception can be made in cases where we need to [help users](https://design.gitlab.com/usability/helping-users) by linking to documentation.
+A banner should always include a [button](https://design.gitlab.com/components/button) as the primary call to action. Avoid using multiple buttons and linking the user to different pages. An exception can be made in cases where we need to [help users](https://design.gitlab.com/usability/helping-users) by linking to documentation.
 
 ## Demo
 

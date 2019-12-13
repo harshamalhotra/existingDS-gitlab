@@ -1,5 +1,5 @@
 ---
-name: Popovers
+name: Popover
 vueComponents:
   - GlPopover
 related:

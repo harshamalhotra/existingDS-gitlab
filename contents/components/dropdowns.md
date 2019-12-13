@@ -3,14 +3,14 @@ name: Dropdowns
 vueComponents: 
   - GlDropdown
 related: 
-  - buttons
+  - button
   - checkbox
   - dropdowns
   - forms
   - segmented-control
 ---
 
-Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/buttons) or [form inputs](/components/forms).
+Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/button) or [form inputs](/components/forms).
 
 ## Usage
 

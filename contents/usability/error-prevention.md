@@ -24,7 +24,7 @@ Destructive actions can introduce annoyance to the user when performed unintenti
 
 ### Low severity
 
-The destructive action can easily be undone and no actual data was lost. Consider adding no friction at all in order to streamline the interface, especially in places where the action needs to be performed in bulk. These kinds of destructive actions can be exempt of being [elementary](/components/buttons/#elementary) styled and can instead be [neutral](/components/buttons/#neutral) styled buttons.
+The destructive action can easily be undone and no actual data was lost. Consider adding no friction at all in order to streamline the interface, especially in places where the action needs to be performed in bulk. These kinds of destructive actions can be exempt of being [elementary](/components/button/#elementary) styled and can instead be [neutral](/components/button/#neutral) styled buttons.
 
 ## References
 

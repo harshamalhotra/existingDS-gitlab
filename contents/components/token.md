@@ -4,7 +4,7 @@ vueComponents:
   - GlToken
 related:
   - filter
-  - buttons
+  - button
   - badge
   - labels
 ---
@@ -31,7 +31,7 @@ Do not use tokens to:
 
 * Categorize an object. Use [labels](https://design.gitlab.com/components/labels/) instead.
 * Highlight more generic object metadata, like an issue’s status, a member’s role, or if a branch is protected. Use [badges](/components/badge/) instead.
-* Display static action items persistently. Use [buttons](https://design.gitlab.com/components/buttons) instead.
+* Display static action items persistently. Use [buttons](https://design.gitlab.com/components/button) instead.
 
 ### Placement
 

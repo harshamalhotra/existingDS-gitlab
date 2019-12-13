@@ -4,8 +4,8 @@ vueComponents:
   - GlModal
 related:
   - accordion
-  - buttons
-  - popovers
+  - button
+  - popover
   - toast
   - tooltip
 ---
@@ -58,7 +58,7 @@ The content in the body should never be ambiguous and unclear. Strive to be as c
 
 #### Actions:
 
-There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. Button order and positioning should follow our [guidelines for buttons](/components/buttons).
+There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. Button order and positioning should follow our [guidelines for buttons](/components/button).
 
 When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use "Set status" and "Remove status" instead of simply, "Save" and "Delete".
 

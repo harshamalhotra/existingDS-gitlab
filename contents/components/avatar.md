@@ -1,5 +1,5 @@
 ---
-name: Avatars
+name: Avatar
 vueComponents:
   - GlAvatar
 related:

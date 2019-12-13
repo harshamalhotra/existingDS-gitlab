@@ -3,7 +3,7 @@ name: Tooltip
 vueComponents: 
   - GlTooltip
 related:
-  - popovers
+  - popover
 ---
 
 Tooltips identify elements or provide additional, useful information about the referring elements. Tooltips are different from ALT-attributes, which are intended primarily for static images.
@@ -21,7 +21,7 @@ Use tooltips to:
 
 * Show the same data in a different format such as date or timestamps.
 * Display a full string of text that is shortened with an ellipsis (“…”).
-* Provide context for unlabeled items such as [icon buttons](components/buttons#icon).
+* Provide context for unlabeled items such as [icon buttons](components/button#icon).
 
 ### When not to use tooltips
 
@@ -32,7 +32,7 @@ Do not use tooltips to:
 * Display a sophisticated layout and formatting.
 * Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links or button.
 
-Consider using a [popover](/components/popovers) for the scenarios above.
+Consider using a [popover](/components/popover) for the scenarios above.
 
 ### Timing
 

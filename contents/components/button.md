@@ -1,5 +1,5 @@
 ---
-name: Buttons
+name: Button
 status: built
 vueComponents:
   - GlNewButton

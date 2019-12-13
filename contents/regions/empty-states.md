@@ -4,7 +4,7 @@ vueComponents:
   - GlEmptyState
 related: 
   - banner
-  - buttons
+  - button
   - illustration
 ---
 
@@ -27,7 +27,7 @@ Occasionally, this can also include a [help link](/usability/helping-users) to p
 
 Taking the form of a primary button with the option to add a secondary button, the text within should be direct and actionable.
 
-[See buttons for more usage information](/components/buttons)
+[See buttons for more usage information](/components/button)
 
 ### When to use an empty state
 
