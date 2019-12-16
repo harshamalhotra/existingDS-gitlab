@@ -24,7 +24,7 @@
           <div class="contribute-copy">
             <h2>Everyone can contribute</h2>
             <p class="max-w-sm">
-              GitLab is an <a target="_blank" href="https://about.gitlab.com/2016/07/20/gitlab-is-open-core-github-is-closed-source/">open core</a> product and has over 2000 community contributors. When everyone can contribute consumers become contributors and we greatly increase the rate of human progress.
+              GitLab is an <a target="_blank" href="https://about.gitlab.com/2016/07/20/gitlab-is-open-core-github-is-closed-source/">open core</a> product and has over 2000 community contributors. When everyone can contribute, consumers become contributors and we greatly increase the rate of human progress.
             </p>
             <p class="max-w-sm">
               To ensure that everyone can contribute to GitLab with confidence we provide everyone with the right resources and know-how. The Pajamas design system is the single source of truth for everything anyone needs to know about contributing to GitLab.
@@ -55,7 +55,7 @@
                Pajamas is here to make it as comfortable as possible for anyone to contribute towards GitLab. You will find information such as our principles, components, usage guidelines, branding, research methodologies, and more!
             </p>
             <p class="max-w-sm">
-               Start by looking into our <a href="/components/status">interface components documentation</a>, including live vue components.
+               Start by looking into our <a href="/components/status">interface components documentation</a>, including live Vue components.
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@
           <div class="contribute-copy">
             <h2>Contributing to the design system</h2>
             <p class="max-w-sm">
-              We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our <a href="/contribute/get-started">guidelines</a> to get started. Have any questions? Open an issue on our <a target="_blank" href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues">Design System issue tracker</a>. Otherwise be sure to check out the resources below!
+              We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our <a href="/contribute/get-started">guidelines</a> to get started. Have any questions? Open an issue on our <a target="_blank" href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues">Design System issue tracker</a>. Otherwise, be sure to check out the resources below!
             </p>
           </div>
           <div class="contribute-img text-center">
