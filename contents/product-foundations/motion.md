@@ -46,7 +46,7 @@ Todo: Add skeleton loader transition example
 
 When elements move on-screen, there should be a quick animation so it is clear to users what moved where. These types of animations use a 200 milliseconds transition time.
 
-Todo: Add modal appearence example
+Todo: Add modal appearance example
 
 #### Shifting elements
 
