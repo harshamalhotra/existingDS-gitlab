@@ -1,5 +1,6 @@
 ---
 name: Search
+status: built
 vueComponents:
   - GlSearchBoxByClick
   - GlSearchBoxByType
@@ -17,8 +18,8 @@ Search patterns enable users to find certain information by adding criteria that
 
 Our search patterns fall into two groups:
 
-*   Search by typing
-*   Search by confirmation
+- Search by typing
+- Search by confirmation
 
 ### Search by typing
 
@@ -26,17 +27,17 @@ This pattern doesn't use a button to trigger the search. The search action is tr
 
 Narrowing down a large list of results as a user types can create performance issues. Consider using the Search by confirmation pattern if performance is a concern.
 
-Todo: Add live component block with code example (search by typing)
+[[Example:search-box-by-type-loading]]
 
 ### Search by confirmation
 
 This pattern is visually different from the one above because users interact with it differently. The magnifying glass icon is inside the button which triggers the search action. The presence of the button indicates the need for confirmation to trigger the search. Pressing “Enter” also triggers the action.
 
-Todo: Add live component block with code example (search by confirmation)
+[[Example:search-box-by-click-v-model]]
 
 A history dropdown is commonly used as an addition to the search by confirmation pattern:
 
-Todo: Add live component block with code example (search by confirmation with history dropdown)
+[[Example:search-box-by-click-with-history]]
 
 ### Placeholder
 
