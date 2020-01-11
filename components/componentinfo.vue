@@ -114,6 +114,11 @@ export default {
       tabIndex: 0,
     };
   },
+  head() {
+    return {
+      title: this.frontmatterInfo.attributes.name,
+    };
+  },
   created() {
     this.componentAttributes = this.frontmatterInfo.attributes;
 
