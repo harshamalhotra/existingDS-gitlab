@@ -1,8 +1,8 @@
 ---
 name: Dropdowns
-vueComponents: 
-  - GlDropdown
-related: 
+vueComponents:
+  - GlNewDropdown
+related:
   - button
   - checkbox
   - dropdowns
@@ -67,9 +67,33 @@ A limited amount of rows that don't scroll can be fixed at the bottom of a dropd
 
 Todo: An example of a dropdown with fixed rows.
 
-## Demo
+## Button combinations
 
-Todo: Add live component block with code example
+Dropdown buttons come in a few different button combinations to fit different situations. Some offer additional options, while others save on space.
+
+### Dropdown
+
+Dropbown buttons trigger menus of options which can be either actions or input values.
+
+[[Example:new-dropdown-default]]
+
+#### Split dropdown
+
+Dropdown buttons may be split when there are multiple action options. The text button will allow immediate access to the most common option and an attached dropdown button is available to either change the default action. The dropdown button is attached to the right of the text button and has a chevron icon as its label.
+
+If the dropdown menu has no related actions available, a split dropdown button should be converted back to a text button.
+
+The currently selected action has a checkmark on the left side of the dropdown item. See also [checkmark dropdowns](/components/dropdowns).
+
+[[Example:new-dropdown-split]]
+
+#### Icon dropdown
+
+Icon dropdowns function similarly to other dropdown button combinations with the difference being an icon label.
+
+[[Example:new-dropdown-with-icon]]
+
+[[Example:new-dropdown-with-icon-and-split]]
 
 ## Design specifications
 

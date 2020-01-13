@@ -106,31 +106,25 @@ Dashed button styles are used when something has not yet been created. Their act
 
 [[Example:new-button-dashed]]
 
-### Dark and Inverted
-
-Some circumstances are exceptions in that they require a different button style than normal to still be accessible. When the UI is darker than normal, a dark or inverted button style may be required. These button styles are only possible for tertiary category buttons.
-
-Todo: Add live component block with code example
-
 ## Combinations
 
-Buttons come in many different variations to fit different situations. Some trigger a dropdown while others combine multiple similar actions together
+Buttons come in many different combinations to fit different situations. Some trigger a dropdown while others combine multiple similar actions together
 
 ### Text
 
-The default variation is the text button. They contain a text label and have no special interactions.
+The default combination is the text button. They contain a text label and have no special interactions.
 
 [[Example:new-button-tertiary]]
 
 ### Icon
 
-Icon buttons provide the user with visual iconography to signify what the button does. They only contain an icon label and have no special interactions. They can be used when a text button variation would be too big or the meaning of an icon conveys what will happen in a more concise way.
+Icon buttons provide the user with visual iconography to signify what the button does. They only contain an icon label and have no special interactions. They can be used when a text button would be too big or the meaning of an icon conveys what will happen in a more concise way.
 
 [[Example:new-button-icon]]
 
 ### Icon + text
 
-Text button variations might be supplemented with an icon to both clarify an action and call attention to a button. Icons are always positioned to the left of the text label.
+Text buttons might be supplemented with an icon to both clarify an action and call attention to a button. Icons are always positioned to the left of the text label.
 
 Please note to **not** use two icons in the same button.
 
@@ -144,9 +138,9 @@ Emoji buttons provide the user with visual to signify what the emotion users hav
 
 ### Dropdown
 
-Dropbown buttons trigger menus of options which can be either actions or input values. See [dropdowns](/components/dropdowns) for more information.
+Dropbown buttons trigger menus of options which can be either actions or input values. 
 
-Todo: Add live component block with code example
+[[Example:new-dropdown-default]]
 
 #### Split dropdown
 
@@ -156,13 +150,13 @@ If the dropdown menu has no related actions available, a split dropdown button s
 
 The currently selected action has a checkmark on the left side of the dropdown item. See also [checkmark dropdowns](/components/dropdowns).
 
-Todo: Add live component block with code example
+[[Example:new-dropdown-split]]
 
 #### Icon dropdown
 
-Icon dropdown variations function similar to dropdown button variations with the difference being an icon label.
+Icon dropdowns function similar to other dropdown button combinations with the difference being an icon label.
 
-Todo: Add live component block with code example
+[[Example:new-dropdown-with-icon]]
 
 ### Ellipsis
 
@@ -178,33 +172,31 @@ Todo: Add live component block with code example
 
 ### Icon group
 
-Icon group variations function similar to button group variations with the difference being an icon label.
+Icon groups function similar to button groups with the difference being an icon label.
 
 Todo: Add live component block with code example
 
 ### Segmented control
 
-A segmented control allows users to choose one out of a range of available options. It’s commonly used as an alternative to dropdowns and radio selections. See [segmented control](/components/segmented-control) for more information.
+A segmented control allows users to choose one out of a range of available options. It’s commonly used as an alternative to dropdowns and radio selections.
 
-Todo: Add live component block with code example
+See [segmented control](/components/segmented-control) for more information.
 
 ### Icon segmented control
 
-Icon segmented control variations function similar to segmented control button variations with the difference being an icon label. See [segmented control](/components/segmented-control) for more information.
+Icon segmented controls function similar to segmented control buttons with the difference being an icon label. 
 
-Todo: Add live component block with code example
+See [segmented control](/components/segmented-control) for more information.
 
 ### Pagination
 
-Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages. See [pagination](/components/pagination) for more information.
+Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages. 
 
-Todo: Add live component block with code example
+See [pagination](/components/pagination) for more information.
 
 ## Sizing
 
 Depending on the interface buttons may either use the medium or small size.
-
-[[Example:new-button-sizes]]
 
 ### Medium
 
