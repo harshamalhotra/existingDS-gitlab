@@ -19,7 +19,7 @@ Toasts appear with an ease-in animation from the bottom of the screen and stay f
 |Type|Purpose|
 |--- |--- |
 |Default toast|These toasts are used to display simple, non-interactive messages.|
-|Action toast|These toasts are used to display message with an optional user action (e.g. "Undo").|
+|Action toast|These toasts are used to display message with an optional user action (for example, "Undo").|
 
 
 ### Content

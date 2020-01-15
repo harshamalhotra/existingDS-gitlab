@@ -39,6 +39,14 @@ For each of these content types, look for ways you might rephrase text that seem
 | To link Sentry to GitLab, enter your Sentry URL and Auth Token. | In order to link Sentry to GitLab, enter your Sentry URL and Auth Token. |
 | Use this token to validate received payloads. | Use this token to validate the received payloads. |
 
+### Avoid Latin abbreviations
+
+While we aim to brief, we also avoid Latin abbreviations as they can be easily misinterpreted.
+
+* Instead of “i.e.”, use “that is.”
+* Instead of “e.g.”, use “for example.”
+* Instead of “etc.”, either use “and so on” or consider editing it out, since it can be vague.
+
 ## Clear error messages
 
 When something goes wrong, it's important for us to be clear about what happened, why it happened, and what the next steps to take may be. Vague messages frustrate users and can even block them from completing their task.

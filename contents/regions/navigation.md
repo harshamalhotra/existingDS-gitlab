@@ -22,7 +22,7 @@ Todo: Add global navigation example for extra large viewports (`1200px` and up)
 
 - On medium and large viewports (`768px` to `1199px`)
 
-There isn't enough room for the main page content to fit comfortably, so the sidebar is collapsed by default, regardless of the user's cookie preference. This is especially important when there is a right sidebar as well (e.g. issue detail page) or when there is a lot of horizontal content (e.g. pipelines table). When the user expands the sidebar, it overlaps the page instead of pushing the content. In these viewports, the toggle doesn't change the user's cookie, so their preference is only saved and used on extra large viewports.
+There isn't enough room for the main page content to fit comfortably, so the sidebar is collapsed by default, regardless of the user's cookie preference. This is especially important when there is a right sidebar as well (for example, issue detail page) or when there is a lot of horizontal content (for example, pipelines table). When the user expands the sidebar, it overlaps the page instead of pushing the content. In these viewports, the toggle doesn't change the user's cookie, so their preference is only saved and used on extra large viewports.
 
 Todo: Add global navigation example for medium and large viewports (`768px` to `1199px`)
 

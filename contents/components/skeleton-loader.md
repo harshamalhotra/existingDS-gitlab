@@ -24,10 +24,10 @@ Skeleton objects are presented in grayscale and never use color. They use a puls
 The skeleton state should always represent the page or section in a recognizable way.
 
 When designing skeleton states not all components on the page need to be replaced. Consider the following components when designing a skeleton state:
-* Container-based components (avatars, tiles, structured list, etc.)
-* Data-based components which pull in data (e.g., data tables), data indicators (e.g., status icons), and data-based text.
+* Container-based components (avatars, tiles, structured list, and so on)
+* Data-based components which pull in data (for example, data tables), data indicators (for example, status icons), and data-based text.
 
-If content can be loaded instantly it is a good indicator that it does not need to be replaced, think of action-based components (e.g. buttons, input fields, checkboxes, toggles, etc.). Secondary dynamic content that is revealed upon user interaction should typically never be replaced by a skeleton state as those items should already be loaded in by the time the user is able to interact with them (e.g. toasts, dropdown menu's, modals, etc.).
+If content can be loaded instantly it is a good indicator that it does not need to be replaced, think of action-based components (for example, buttons, input fields, checkboxes, toggles, and so on). Secondary dynamic content that is revealed upon user interaction should typically never be replaced by a skeleton state as those items should already be loaded in by the time the user is able to interact with them (for example, toasts, dropdown menu's, modals, and so on).
 
 Skeleton objects should generally be visualized by simple primitives which mimic the original content in a recognizable way. It is recommended to use a more elaborate form if that is needed to make the component recognizable.
 

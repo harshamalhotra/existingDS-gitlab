@@ -4,7 +4,7 @@ name: Punctuation
 
 ## Case
 
-Use sentence case for titles, headings, labels, menu items, and buttons. Use title case when referring to [features](https://about.gitlab.com/features/) or [products](https://about.gitlab.com/products/). Note that some features are also objects (e.g. “Merge Requests” and “Merge requests”).
+Use sentence case for titles, headings, labels, menu items, and buttons. Use title case when referring to [features](https://about.gitlab.com/features/) or [products](https://about.gitlab.com/products/). Note that some features are also objects (for example, “Merge Requests” and “Merge requests”).
 
 | Do | Don’t |
 | --- | --- |

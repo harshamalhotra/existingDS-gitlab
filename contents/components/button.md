@@ -218,7 +218,7 @@ Buttons can be expanded to the full width of the parent container. This can be u
 
 ## Order
 
-Buttons are ordered by importance from right to left. This means primary buttons are always on the right followed by secondary buttons etc. As an effect it means buttons with dismissive actions are on the left and buttons with affirmative actions are on the right. Depending on the context, the primary, affirmative action may be destructive.
+Buttons are ordered by importance from right to left. This means primary buttons are always on the right followed by secondary buttons, and so on. As an effect it means buttons with dismissive actions are on the left and buttons with affirmative actions are on the right. Depending on the context, the primary, affirmative action may be destructive.
 
 ## Positioning
 

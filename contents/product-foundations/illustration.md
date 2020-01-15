@@ -25,7 +25,7 @@ For consistency, choose colors from the following palette.
 | <div class="color-overview p-a-3" style="background-color:#f9e2d5;"><span class="variable">+80% White</span> <span class="hex f-small">#f9e2d5</span></div> | <div class="color-overview p-a-3" style="background-color:#e0dbf2;"><span class="variable">+80% White</span> <span class="hex f-small">#e0dbf2</span></div> | <div class="color-overview p-a-3" style="background-color:#f2f2f2;"><span class="variable">$gray-100</span> <span class="hex f-small">#f2f2f2</span></div> |
 | <div class="color-overview p-a-3" style="background-color:#fcf0ea;"><span class="variable">+90% White</span> <span class="hex f-small">#fcf0ea</span></div> | <div class="color-overview p-a-3" style="background-color:#efedf8;"><span class="variable">+90% White</span> <span class="hex f-small">#efedf8</span></div> |   |
 
-Todo: Consider palette updates. e.g., percentage of base swatch + white options.
+Todo: Consider palette updates. For example, percentage of base swatch + white options.
 
 ### Shape
 

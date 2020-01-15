@@ -27,7 +27,7 @@ Pagination is similar to infinite scroll, so use the table below as a guide for 
 
 ### Behavior
 
-Lists with **more than 20** items require pagination which is always located below the list and takes the form of a [button group](/components/button/#group). Pagination is generally not required on lists with **20 or fewer** items but can be considered depending on the context (i.e. the paginated list is embedded within another component).
+Lists with **more than 20** items require pagination which is always located below the list and takes the form of a [button group](/components/button/#group). Pagination is generally not required on lists with **20 or fewer** items but can be considered depending on the context (that is, the paginated list is embedded within another component).
 
 #### Anchoring
 

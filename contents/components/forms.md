@@ -138,7 +138,7 @@ When in doubt, hide a field instead of disabling it.
 
 Help text can be used as additional instructions to the user when filling in the form. It should be: 
 
-* **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "e.g.".
+* **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "For example,".
 * **Helpful**: If it doesn’t add value and make things easier for the user, it shouldn’t be used.
 * **Short**: It should be a short sentence or a small paragraph, not a single word or a big paragraph.
 

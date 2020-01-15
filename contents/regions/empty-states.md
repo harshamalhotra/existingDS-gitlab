@@ -35,7 +35,7 @@ Empty states can be employed to:
 
 *   Make users aware that a feature is not configured for use.
 *   Act as a placeholder for regions in the app left blank intentionally.
-*   Convey an error state, which will depend on the nature of the error and should be used judiciously. An example of this would be a server response error, i.e., 404 or 500.
+*   Convey an error state, which will depend on the nature of the error and should be used judiciously. An example of this would be a server response error, that is, 404 or 500.
 *   Display empty search results.
 
 Empty states differ from banners in that they are not intended to promote or advertise new features or functionality.

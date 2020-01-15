@@ -22,7 +22,7 @@ Use tables when:
 Use tables to:
 
 *   Display large volumes of data.
-*   When the data set will continue to grow; for example, a table used to display users, environments, etc.
+*   When the data set will continue to grow; for example, a table used to display users, environments, and so on.
 *   Compare data in a set to in a way that makes each data point distinguishable.
 *   Search, filter, or sort by all parameters in a data set.
 
@@ -84,7 +84,7 @@ Rows can have a mix of read-only and editable cells with content populated by us
 
 A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
 
-Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, etc. For example, a header in Audit Events is redundant:
+Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, and so on. For example, a header in Audit Events is redundant:
 
 Todo: Add live component block with code example of Audit Events table
 

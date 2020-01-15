@@ -27,7 +27,7 @@ Use messages like:
 
 ### Specific
 
-Generic error messages are not helpful, and they don't make sense out of context. Try to provide different errors for different messages and scenarios. For example, errors in text fields can be too long, too short, in the wrong format, etc.
+Generic error messages are not helpful, and they don't make sense out of context. Try to provide different errors for different messages and scenarios. For example, errors in text fields can be too long, too short, in the wrong format, and so on.
 
 Error messages for specific situations are more helpful to users.
 

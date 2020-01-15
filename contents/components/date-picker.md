@@ -12,7 +12,7 @@ Date picker allows users to choose and input a date through by manually typing t
 
 ## Usage
 
-The date picker comes in two parts: the input field and the date picker dropdown. The input field must use a placeholder text to indicate the expected format of time to be entered (e.g. "YYYY-MM-DD") and a calendar icon on the right edge to indicate that clicking on it will open a datepicker dropdown.
+The date picker comes in two parts: the input field and the date picker dropdown. The input field must use a placeholder text to indicate the expected format of time to be entered (for example, "YYYY-MM-DD") and a calendar icon on the right edge to indicate that clicking on it will open a datepicker dropdown.
 
 The user should be able to input the date by either typing it in or choosing a day from the datepicker dropdown. The user must never be forced to use only one of the two input methods.
 

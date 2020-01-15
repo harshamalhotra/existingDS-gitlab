@@ -20,7 +20,7 @@ An accordion can be used on its own or with [more accordions](#multiple-accordio
 
 ### Do not use an accordion when:
 
-* Displaying critical system information or a primary action to be taken on the page. (e.g. [alerts](/components/alert), confirmation or cancellation buttons).
+* Displaying critical system information or a primary action to be taken on the page. (for example, [alerts](/components/alert), confirmation or cancellation buttons).
 * Displaying navigation elements such as [tabs](/components/tabs).
 * Displaying links pointing to sections of the same page, instead use a [list](/components/list).
 * Creating hierarchy levels by nesting them within each other. If you need to add hierarchy to the content use a [tree](/components/tree).
@@ -61,7 +61,7 @@ The content in the accordion body should be visually different from the rest of 
 Users should be able to expand and collapse the body by clicking or tapping a single area containing the accordion header and icon. Changes to the accordion state are considered [macro animations](/product-foundations/motion/#macro-animations) and should follow the guidelines for this kind of animation.
 
 #### Multiple accordions
-In the case of a page layout built around several accordions following each other (e.g. FAQ page where each question is an accordion), changing one accordion state does not reflect on the other, each accordion would need to be expanded/collapsed individually by users.
+In the case of a page layout built around several accordions following each other (for example, FAQ page where each question is an accordion), changing one accordion state does not reflect on the other, each accordion would need to be expanded/collapsed individually by users.
 
 ## Accessibility
 

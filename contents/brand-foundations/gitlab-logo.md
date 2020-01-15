@@ -6,7 +6,7 @@ The GitLab logo consists of two components, the icon (the tanuki) and the wordma
 
 ![GitLab logo lockup](/img/brand/gitlab-lockup.png)
 
-GitLab is most commonly represented by the logo, and in some cases, the icon alone. GitLab is rarely represented by the wordmark alone as we'd like to build brand recognition of the icon alone (e.g. the Nike swoosh), and doing so by pairing it with the GitLab wordmark.
+GitLab is most commonly represented by the logo, and in some cases, the icon alone. GitLab is rarely represented by the wordmark alone as we'd like to build brand recognition of the icon alone (for example, the Nike swoosh), and doing so by pairing it with the GitLab wordmark.
 
 ## Logo safe space
 
