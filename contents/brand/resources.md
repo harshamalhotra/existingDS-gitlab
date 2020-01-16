@@ -1,5 +1,5 @@
 ---
-name: Brand resources
+name: Resources
 ---
 
 * [Corporate Marketing Handbook](https://about.gitlab.com/handbook/marketing/corporate-marketing/)

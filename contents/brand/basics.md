@@ -1,5 +1,5 @@
 ---
-name: Brand basics
+name: Basics
 ---
 
 Understanding the GitLab product begins with understanding the brand. The following 

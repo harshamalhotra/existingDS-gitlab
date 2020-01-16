@@ -22,27 +22,7 @@
       </div>
       <div class="nav-sidebar__body m-b-3">
         <template v-if="contentTree">
-          <ul
-            :open="$route.fullPath.startsWith('/brand-get-started/')"
-            class="nav-sidebar__section"
-          >
-            <li>
-              <span class="nav-sidebar__section-title">Brand</span>
-            </li>
-            <nuxt-link
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-              to="/brand-basics/basics"
-            >Basics</nuxt-link>
-            <!-- <sub-menu :content-tree="contentTree" category="brand-get-started" category-name="Get started" />
-            <sub-menu :content-tree="contentTree" category="brand-foundations" category-name="Foundations" />
-            <sub-menu :content-tree="contentTree" category="brand-content" category-name="Content" /> -->
-            <nuxt-link
-              tag="li"
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-              to="/brand-resources/resources"
-            >Resources</nuxt-link>
-          </ul>
+          <menu-section :content-tree="contentTree" category="brand" />
           <ul
             :open="$route.fullPath.startsWith('/product/')"
             class="nav-sidebar__section"
