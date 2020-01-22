@@ -1,5 +1,8 @@
 ---
 name: Broadcast message
+status: built
+vueComponents:
+  - GlBroadcastMessage
 related:
   - alert
 ---
@@ -18,7 +21,7 @@ Broadcast messages generally contain a small amount of content. It is a rare use
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:broadcast-message-basic-example]]
 
 ## Design specifications
 
