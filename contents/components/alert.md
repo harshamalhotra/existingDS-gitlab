@@ -9,27 +9,28 @@ related:
   - toast
 ---
 
-Alerts allow the application to pass along relevant system information to the user without impeding their journey. Alerts are system generated and may or may not be derived by a user's action. They are not [validation](https://design.gitlab.com/components/forms#validation) error messages, nor are they feedback notifications after the user takes action — see [toasts](https://design.gitlab.com/components/toast) for more information. 
+Alerts allow the application to pass along relevant system information to the user without impeding their journey. Alerts are system generated and may or may not be derived by a user's action. They are not [validation](https://design.gitlab.com/components/forms#validation) error messages, nor are they feedback notifications after the user takes action — see [toasts](https://design.gitlab.com/components/toast) for more information.
 
 ## Usage
 
 | Component type | Purpose |
 | --- | --- |
+| Error alert | To indicate that an action has failed, whether as a result of user action or otherwise. |
 | Danger alert | To advise the user that their attention is needed to address a critical issue in the system. |
 | Warning alert | To caution the user that their attention may be needed due to an issue in the system, however, it is not critical that they take action. |
 | Information alert | To provide supplemental information to the user in regards to the action they are about to take. | 
 | Tip alert | To educate the user about new or unused features, and other useful information. |
 | Success alert | To reaffirm to the user that a prior action they have taken, often in a different location within the application, has been accepted by the system. |
 
-### Dismissal 
+### Dismissal
 
 Alerts may contain a dismiss action, as well as an additional action button, depending on the use case.
 
 #### Dismissible alerts
 
-Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert. 
+Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert.
 
-Use dismissible alerts when the user's task is not blocked if they do not take action. 
+Use dismissible alerts when the user's task is not blocked if they do not take action.
 
 * The user dismisses a system-generated alert notifying them their `.gitlab-ci.yml` config file has an issue. Alert reappears the next time the config problem stops a process from running.
 
@@ -48,7 +49,7 @@ Alerts should be used when the system needs to notify the user of its status or 
 | Alert | Use case | Example |
 | ----- | -------- | -------- |
 | Danger | Configuration issue | Use a danger alert when there is a configuration issue with the `.gitlab-ci.yml` file. |
-| Warning | Potential issue | Use a warning alert when the user has added an SSH key that doesn't appear to be public. |  
+| Warning | Potential issue | Use a warning alert when the user has added an SSH key that doesn't appear to be public. |
 | Information | Provide supplemental information | Use an information alert in Settings/Export-project to detail what will happen when a user exports a project. |
 | Tip | Promotional offer | Use a tip alert in Operations/Kubernetes to make the user aware of a GCP credit offer. |
 | Success | Subsequent confirmation of a proper configuration | Use a success alert in the pipeline view after the user activates SAST using the Web IDE and the SAST job runs properly for the first time. |
