@@ -19,32 +19,32 @@ Tooltips display unique data, and shouldn’t repeat information that is shown n
 
 Use tooltips to:
 
-* Show the same data in a different format such as date or timestamps.
-* Display a full string of text that is shortened with an ellipsis (“…”).
+* Show the same data in a different format, such as date or timestamps.
+* Display a full string of text that is shortened with an ellipsis (`…`).
 * Provide context for unlabeled items such as [icon buttons](components/button#icon).
 
 ### When not to use tooltips
 
 Do not use tooltips to:
 
-* Display information required to a task completion such as password formatting hints.
-* Display more than a single line of information or dimensional data such as user name or status.
+* Display information required for task completion, such as password formatting hints.
+* Display more than a single line of information or dimensional data, such as user name or status.
 * Display a sophisticated layout and formatting.
-* Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links or button.
+* Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links, or buttons.
 
 Consider using a [popover](/components/popover) for the scenarios above.
 
 ### Timing
 
-When interacting with an element, the timing for summoning a tooltip might be different depending on the situation. A delay is preferred in situations where the information provided is secondary and not needed to gain an immediate understanding of the content or when it easily obscures essential information in an interaction heavy context. For example, a tooltip inside of a dropdown that contains additional content might obscure more important information like the row above or below. In these situations, a delay provides a more optimal user experience. Alternatively, the meaning of an icon button should be provided instantly in order to remove friction in understanding the content.
+When interacting with an element, the timing for summoning a tooltip might be different depending on the situation. A delay is preferred in situations where the information provided is secondary and not needed to gain an immediate understanding of the content or when it easily obscures essential information in an interaction-heavy context. For example, a tooltip inside of a dropdown that contains additional content might obscure more important information like the row above or below. In these situations, a delay provides a more optimal user experience. Alternatively, the meaning of an icon button should be provided instantly in order to remove friction in understanding the content.
 
 To support this, the component allows for either no delay (default) or a preset delay of 400ms.
 
 ## Placement
 
-By default, tooltips are placed on top of the referring element. However, when there isn’t enough space in the viewport, the tooltip is moved to the side or below as needed. If it blocks related content, the preferred tooltip placement can be manually set.
+By default, tooltips are placed on top of the referring element. When there isn’t enough space in the viewport, the tooltip is moved to the side or below as needed. If it blocks related content, the preferred tooltip placement can be manually set.
 
-Tooltips should have no space (0px) between themselves and their target. They remain in place while the cursor moves within the target. Tooltips should never obscur the target element.
+Tooltips should have no space (0px) between themselves and their target. They remain in place while the cursor moves within the target. Tooltips should never obscure the target element.
 
 ## Content alignment
 
