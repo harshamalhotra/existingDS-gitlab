@@ -77,43 +77,81 @@
             />
           </div>
         </div>
-        <div class="resources d-flex">
-          <a
-            href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
-            target="_blank"
-            class="card card--highlighted card--link text-center p-a-4"
-          >
-            <img
-              src="../assets/images/resources/r-gitlab.png"
-              srcset="../assets/images/resources/r-gitlab@2x.png 2x"
-              class="a-center d-block m-b-3"
-            />
-            View repository
-          </a>
-          <a
-            href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/doc/sketch-ui-kit.md#files"
-            target="_blank"
-            class="card card--highlighted card--link text-center m-l-5 p-a-4"
-          >
-            <img
-              src="../assets/images/resources/r-sketch.png"
-              srcset="../assets/images/resources/r-sketch@2x.png 2x"
-              class="a-center d-block m-b-3"
-            />
-            Download GitLab Sketch UI Kit
-          </a>
-          <a
-            href="https://about.gitlab.com/community/gitlab-first-look/"
-            target="_blank"
-            class="card card--highlighted card--link text-center m-l-5 p-a-4"
-          >
-            <img
-              src="../assets/images/resources/r-first-look.png"
-              srcset="../assets/images/resources/r-first-look@2x.png 2x"
-              class="a-center d-block m-b-3"
-            />
-            Join GitLab First Look
-          </a>
+        <div class="row m-t-8">
+          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+              target="_blank"
+              class="text-center"
+            >
+              <img
+                width="48"
+                height="48"
+                src="../assets/images/resources/r-solid.png"
+                class="a-center d-block"
+                alt=""
+              />
+              <span class="d-block p-a-3">
+                View the issue tracker
+              </span>
+            </a>
+          </div>
+          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+              target="_blank"
+              class="text-center"
+            >
+              <img
+                width="48"
+                height="48"
+                src="../assets/images/resources/r-outline.png"
+                class="a-center d-block"
+                alt=""
+              />
+              <span class="d-block p-a-3">
+                Explore the repository
+              </span>
+            </a>
+          </div>
+          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+            <a
+              href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/doc/sketch-ui-kit.md#files"
+              target="_blank"
+              class="text-center"
+            >
+              <img
+                width="48"
+                height="48"
+                src="../assets/images/resources/r-sketch.png"
+                class="a-center d-block"
+                alt=""
+              />
+              <span class="d-block p-a-3">
+                Download our Sketch UI Kit
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="m-t-9 d-flex justify-content-center">
+          <div class="">
+            <a
+              href="https://about.gitlab.com/community/gitlab-first-look/"
+              target="_blank"
+              class="d-flex align-items-center"
+            >
+              <img
+                width="48"
+                height="48"
+                src="../assets/images/resources/r-first-look.png"
+                class="d-block"
+                alt=""
+              >
+              <span class="p-a-3">
+                Join the GitLab First Look research program
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
