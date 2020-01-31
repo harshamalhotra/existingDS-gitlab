@@ -29,6 +29,7 @@ export default {
   beforeCreate() {
     this.$axios
       .$get(`/contents/components/${this.$route.params.slug}.json`)
+      // eslint-disable-next-line promise/always-return
       .then(fmResult => {
         this.fmResult = fmResult;
         this.component = () => getPost(this.$route.params.slug);
