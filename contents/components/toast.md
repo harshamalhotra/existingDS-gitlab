@@ -14,18 +14,18 @@ Toasts are used to display system messages. The messages are short and straightf
 
 ## Usage
 
-Toasts appear with an ease-in animation from the bottom of the screen and stay fixed at its bottom-left corner. Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts without actions will automatically disappear after five seconds. Hovering over a toast message will cause it to remain until the cursor is moved. Toasts with action buttons are only dismissed when the user performs the action, clicks the dismiss button, or navigates to another page.
+Toasts appear with an ease-in animation from the bottom of the viewport and stay fixed at its bottom-left corner.
+
+Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts without actions will automatically disappear after five seconds. Hovering over a toast message will cause it to remain until the cursor is moved. Toasts with action buttons are only dismissed when the user performs the action, clicks the dismiss button, or navigates to another page.
 
 |Type|Purpose|
 |--- |--- |
 |Default toast|These toasts are used to display simple, non-interactive messages.|
 |Action toast|These toasts are used to display message with an optional user action (for example, "Undo").|
 
-
 ### Content
 
 While the content within a toast should be concise, it should also be specific. Because toasts have the ability to stack, ambiguous copy could lead to confusion. Ensure every toast specifies the object the action was related to.
-
 
 ### Dos and Dont's
 
@@ -36,6 +36,7 @@ While the content within a toast should be concise, it should also be specific. 
 |Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
 |Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
 |Avoid using more than 2 lines of text for the toast message.|Use toast messages for messages that are longer than 3 lines of text.|
+|Toasts, when positioned in the bottom left corner of the viewport, overlap the sidebar navigation.|Toasts positioning will be relative to other onscreen elemenets like the sidebar navigation.|
 
 ### Mobile toast
 
