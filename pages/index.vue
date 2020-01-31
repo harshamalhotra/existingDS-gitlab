@@ -80,7 +80,7 @@
         <div class="row m-t-8">
           <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
             <a
-              href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+              href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues"
               target="_blank"
               class="text-center"
             >
