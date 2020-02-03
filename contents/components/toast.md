@@ -36,7 +36,7 @@ While the content within a toast should be concise, it should also be specific. 
 |Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
 |Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
 |Avoid using more than 2 lines of text for the toast message.|Use toast messages for messages that are longer than 3 lines of text.|
-|Toasts, when positioned in the bottom left corner of the viewport, overlap the sidebar navigation.|Toasts positioning will be relative to other onscreen elemenets like the sidebar navigation.|
+|Toasts, when positioned in the bottom left corner of the viewport, overlap the sidebar navigation.|Toasts positioning will be relative to other onscreen elements like the sidebar navigation.|
 
 ### Mobile toast
 
