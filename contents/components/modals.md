@@ -40,7 +40,7 @@ When designing an experience that incorporates the need for a modal, but does no
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:modal-sizes]]
 
 ## Specifications
 
