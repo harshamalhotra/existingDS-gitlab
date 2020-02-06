@@ -321,13 +321,13 @@ export default {
       contentTree,
     };
   },
-  head: {
-    title: 'Component status',
-  },
   methods: {
     getStatusIcon(status) {
       return statusIcons[status];
     },
+  },
+  head: {
+    title: 'Component status',
   },
 };
 </script>
