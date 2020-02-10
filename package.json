@@ -29,7 +29,7 @@
     "front-matter": "^3.0.0",
     "frontmatter-markdown-loader": "^1.4.0",
     "markdown-it": "^8.4.2",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.11.0",
     "pikaday": "1.8.0"
   },
   "devDependencies": {
@@ -46,6 +46,9 @@
     "raw-loader": "^0.5.1",
     "resolve-relative-url": "^1.0.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "2.6.11"
+  },
+  "resolutions": {
+    "vue": "2.6.11"
   }
 }
