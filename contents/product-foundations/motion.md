@@ -12,27 +12,27 @@ Todo: Define easing standards
 
 ## Timings
 
-The scale of an animation, it's easing curve, and the complexity of the element which is being animated should influence the total animation duration. This means the further the traveled distance and the more complex the animated object, the longer the timing for the animation should be.
+The scale of an animation, its easing curve, and the complexity of the element which is being animated should influence the total animation duration. This means the further the traveled distance and the more complex the animated object, the longer the timing for the animation should be.
 
 ### Macro animations
 
-Macro animations cover larger scale objects or surface area such as page changes, drawer reveals, and scrolling or other movement across the screen, and so on. We should be mindful with larger scale animations and make sure they convey enough meaning in order to add value towards the user experience. These animations may take up to 400ms.
+Macro animations cover larger scale objects or surface areas such as page changes, drawer reveals, and scrolling or other movements across the screen, and so on. We should be mindful of larger-scale animations and make sure they convey enough meaning to add value to the user experience. These animations may take up to 400ms.
 
-### Mircro animations
+### Micro animations
 
-Micro animations cover smaller scale objects or surface areas such as icons, color changes, buttons interactions, tooltips, and so on. They are used to direct user attention and add a small amount of meaning which can help the user. We should be mindful with smaller scale animations and make sure they don't take too long as they will make the experience appear sluggish. If the complexity of an object requires a longer animation time please revisit it and look for an alternative solution. These animations may take up between 100ms and 200ms.
+Micro animations cover smaller-scale objects or surface areas such as icons, color changes, buttons interactions, tooltips, and so on. They are used to direct user attention and add a small amount of meaning which can help the user. We should be mindful of smaller scale animations and make sure they don't take too long as they will make the experience appear sluggish. If the complexity of an object requires a longer animation time please revisit it and look for an alternative solution. These animations may take up between 100ms and 200ms.
 
 ## Types of animations
 
 ### Hover
 
-Interactive elements (links, buttons, and so on) should have a hover state. A subtle animation for this transition adds a polished feel. We use 100 milliseconds linear transition for a color hover effect.
+Interactive elements (links, buttons, and so on) should have a hover state. A subtle animation for this transition adds a polished feel. We use a 100ms linear transition for a color hover effect.
 
 Todo: Add hover example
 
 ### Quick update
 
-When information is updating in place, a quick, subtle animation is needed. The previous content should cut out, and the new content should have a 200 milliseconds linear fade in.
+When information is updating in place, a quick, subtle animation is needed. The previous content should cut out, and the new content should have a 200ms linear fade in.
 
 Todo: Add quick update example
 
@@ -54,11 +54,11 @@ An example of a moving transition is when elements have to rearrange when you [d
 
 Todo: Add drag animation example
 
-#### Page autoscroll
+#### Page auto-scroll
 
-To keep an active element visible, a page auto scroll transition can be used. An example of this includes clicking an issue board card that is out of screen.
+To keep an active element visible, a page auto-scroll transition can be used. An example of this includes clicking an issue board card that is out of the screen.
 
-Todo: Add auto scroll example (issue board cards)
+Todo: Add auto-scroll example (issue board cards)
 
 ## Resources
 
