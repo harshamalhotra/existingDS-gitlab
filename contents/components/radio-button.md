@@ -1,5 +1,6 @@
 ---
 name: Radio buttons
+status: built
 vueComponents:
   - GlFormRadio
 related:
