@@ -15,7 +15,7 @@ Alerts allow the application to pass along relevant system information to the us
 
 | Component type | Purpose |
 | --- | --- |
-| Error alert | To indicate that an action has failed, whether as a result of user action or otherwise. |
+| Error alert | To indicate that an action has failed. |
 | Danger alert | To advise the user that their attention is needed to address a critical issue in the system. |
 | Warning alert | To caution the user that their attention may be needed due to an issue in the system, however, it is not critical that they take action. |
 | Information alert | To provide supplemental information to the user in regards to the action they are about to take. | 
@@ -48,6 +48,7 @@ Alerts should be used when the system needs to notify the user of its status or 
 
 | Alert | Use case | Example |
 | ----- | -------- | -------- |
+| Error | Loading error | Use an error alert when the backend fails to load a long list of issue comments and the user must reload to try again. |
 | Danger | Configuration issue | Use a danger alert when there is a configuration issue with the `.gitlab-ci.yml` file. |
 | Warning | Potential issue | Use a warning alert when the user has added an SSH key that doesn't appear to be public. |
 | Information | Provide supplemental information | Use an information alert in Settings/Export-project to detail what will happen when a user exports a project. |
