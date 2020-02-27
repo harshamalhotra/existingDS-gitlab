@@ -25,7 +25,7 @@ The skeleton state should always represent the page or section in a recognizable
 
 When designing skeleton states not all components on the page need to be replaced. Consider the following components when designing a skeleton state:
 * Container-based components (avatars, tiles, structured list, and so on)
-* Data-based components which pull in data (for example, data tables), data indicators (for example, status icons), and data-based text.
+* Data-based components which pull in data (for example, tables), data indicators (for example, status icons), and data-based text.
 
 If content can be loaded instantly it is a good indicator that it does not need to be replaced, think of action-based components (for example, buttons, input fields, checkboxes, toggles, and so on). Secondary dynamic content that is revealed upon user interaction should typically never be replaced by a skeleton state as those items should already be loaded in by the time the user is able to interact with them (for example, toasts, dropdown menu's, modals, and so on).
 
