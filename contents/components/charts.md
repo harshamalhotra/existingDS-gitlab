@@ -5,6 +5,9 @@ vueComponents:
   - GlLineChart
   - GlColumnChart
   - GlStackedColumnChart
+related:
+  - popover
+
 ---
 
 Charts help users quickly digest, visualize and see trends in their data. 
@@ -38,10 +41,10 @@ Column charts can be considered the 'default' chart type. If you are thinking ab
 
 When choosing a chart type, first consider your data set. If you are hoping to show:
 
-*   a comparison of values across categories or across time, consider a column, bar, line or pie chart. 
-*   a distribution of values, consider a scatter chart, a line histogram, or a column histogram. 
-*   the relationship between values, which are usually presented on the x and y axes, consider a scatter chart or a bubble chart.  
-*   the composition of elements within the data set, consider a stacked column, stacked area, pie, or waterfall chart. 
+*   A comparison of values across categories or across time, consider a column, bar, line or pie chart. 
+*   A distribution of values, consider a scatter chart, a line histogram, or a column histogram. 
+*   The relationship between values, which are usually presented on the x and y axes, consider a scatter chart or a bubble chart.  
+*   The composition of elements within the data set, consider a stacked column, stacked area, pie, or waterfall chart. 
 
 ### Column charts
 
@@ -74,6 +77,15 @@ In instances where you want to see both the overall trend and the percent contri
 Our charting framework, [ECharts](https://echarts.apache.org/), has a default mechanism for zooming and scrolling on graphs.
 
 The zoom and scroll bar isn't added to all charts by default. In cases where the chart neatly fits its container, it needn't be displayed. However, in instances where the chart would otherwise overflow its container or where there is a large amount of data for users to explore, a zoom and scroll bar should be introduced. The zoom and scroll bar allows users more control over how much data is displayed at any one time, and gives them the ability to dig into issues they are observing at a more granular level.
+
+### Interaction
+
+#### Chart popovers
+
+By hovering over specific data points on charts, users will see a [popover](/components/popover/). The popovers for charts help provide users with more detailed information about both the values being hovered on and their corresponding positions on the x and y axes. The data displayed in the chart popovers is as follows:
+
+*   Popover header: x axis value (x axis title)
+*   Popover body: y axis title, value
 
 ## Design specifications
 
