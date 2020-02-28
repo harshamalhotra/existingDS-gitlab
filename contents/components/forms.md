@@ -62,19 +62,31 @@ Todo: Add live component block with code example (text area)
 
 ### Character counter
 
-The character counter lets users know that the amount of allowed text in an input field or a text area is limited. As users type, the counter lets them know how many characters remain before reaching the limited amount.
+We have two different character counters: one for limited length and one for recommended. The limited length character counter lets users know that the amount of allowed text in an input field or a text area is limited. As users type, the counter lets them know how many characters remain before reaching the limited amount. The recommended length character counter tells users when they reached and surpassed the recommended length in an input field or a text area.
 
 #### Interaction guidelines
 
-The interaction with a character counter should proceed like this:
+Users are allowed to keep typing when the limit or the recommended length is reached. This is to make inputting text more friendly to users and prevents them from losing any information. Some people look at the keyboard when they type so blocking the input would create a poor experience.
+
+##### Limited length
+
+The interaction with a character counter for a limited length should proceed like this:
 
 - The character counter is present by default (whenever there’s a limit) and shows the maximum number of characters available.
 - When the number of characters entered is 30 away from the limit, the counter changes its color to the `warning` style. It remains styled like this even when it reaches 0.
 - When the number of characters entered crosses the limit, the counter changes its color to `danger`, its font weight to bold, and counts the number of characters that are over the limit (for example **-23**).
+- The characters that are over the limit are also marked with a background set in `$red-200`.
+- While hovering over the limited length character counter a tooltip with the label “Characters left” must show up. Once over the limit, the label is changed to “Characters over limit”.
 
-Users are allowed to keep typing when the limit is reached. This is to make inputting text more friendly to users and prevents them from losing any information. Some people look at the keyboard when they type so blocking the input would create a poor experience. The characters that are over the limit are also marked with a background set in `$red-200`.
+##### Recommended length
 
-While hovering over the character counter a tooltip with the label “Characters left” must show up.
+The interaction with a character counter for a recommended length should proceed like this:
+
+- The character counter is *not* present by default.
+- When the number of characters entered is 30 away from the recommendation, the counter appears, styled with the `secondary` style. It remains styled like this even when it reaches 0.
+- When the number of characters entered crosses the recommendation, the counter changes its color to `info`, its font weight remains regular, and counts the number of characters that are over the limit (for example -23).
+- The characters that are over the recommended length are also marked with a background set in `$blue-100`.
+- While hovering over the recommended length character counter a tooltip with a label “Recommended characters left” must show up. Once over the recommended range, it changes to “Over recommended length”.
 
 #### Preventing text overlap
 
