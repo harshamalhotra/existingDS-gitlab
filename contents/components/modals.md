@@ -1,6 +1,7 @@
 ---
 name: Modals
-vueComponents: 
+status: built
+vueComponents:
   - GlModal
 related:
   - accordion
