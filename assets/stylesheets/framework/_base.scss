@@ -19,3 +19,7 @@ body {
 *::after {
   box-sizing: inherit;
 }
+
+[tabindex="-1"]:focus:not(.focus-visible) {
+  outline: 0 !important;
+}
