@@ -21,7 +21,7 @@ Use tooltips to:
 
 * Show the same data in a different format, such as date or timestamps.
 * Display a full string of text that is shortened with an ellipsis (`…`).
-* Provide context for unlabeled items such as [icon buttons](components/button#icon).
+* Provide context for unlabeled items such as [icon buttons](/components/button#icon).
 
 ### When not to use tooltips
 
