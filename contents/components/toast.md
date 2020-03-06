@@ -51,9 +51,9 @@ There are some adjustments necessary for toasts displayed on smaller screens.
 
 ## Demo
 
-[[Example:toast-default]]
+Todo: An example of a toast.
 
-[[Example:toast-action]]
+Todo: An example of a toast with actions.
 
 ## Design specifications
 
@@ -64,5 +64,3 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 ## Animation Specifications
 
 Specs: Ease-in(Show up) / Ease-out (Disappear) Time: 200 milliseconds Direction: Comes up from the bottom-left side of the screen.
-
-[[Example:toast-default]]
