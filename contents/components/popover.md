@@ -12,11 +12,11 @@ Popovers fade in upon hover or touch of its trigger element. They fade out upon 
 
 ## Usage
 
-A popover should be used:
+A popover should be used when:
 
-1.  When you don't want to let the user lose context, but still want to provide additional useful unique information about referring elements.
-2.  When it isn’t critical for the user to act upon the information.
-3.  When you want to give a user a summary of extended information and the option to switch context if they want to dive in deeper.
+* You don't want to let the user lose context, but still want to provide additional useful unique information about referring elements.
+* It isn’t critical for the user to act upon the information.
+* You want to give a user a summary of extended information and the option to switch context if they want to dive in deeper.
 
 ## Placement
 
@@ -25,6 +25,12 @@ By default, popovers are placed above the referring element. However, when there
 ## Content alignment
 
 To optimize for readability content within popovers uses left-alignment.
+
+## Sizing
+
+Popovers have a default width of `280px`, but they can be adapted to have different sizes, depending on the content being wrapped.
+
+Be mindful of the popover content that could overflow the viewport, and avoid popovers that flex 100% of the container width.
 
 ## Demo
 
