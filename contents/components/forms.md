@@ -38,7 +38,7 @@ Todo: Add live component block with code example (horizontally distributed form)
 
 Disabled input fields need an explanation on why they’re disabled and that comes as [help text](#help-text) below.
 
-Todo: Add live component block with code example (disabled input)
+[[Example:form-group-disabled]]
 
 The width of an input field should reflect the expected content, for example postcode should be smaller than address.
 
