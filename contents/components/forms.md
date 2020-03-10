@@ -114,7 +114,7 @@ Error messages and validation should be shown inline and can, in general, happen
 
 The error message shows up below the input field that is in an error state. If there is help text below the input field, the error message pushes it further down as the error message needs to show up immediately below the input. Under no circumstances should the error message be displayed in a tooltip.
 
-Todo: Add live component block with code example (error state + message)
+[[Example:form-group-validations]]
 
 #### Submit form buttons
 
