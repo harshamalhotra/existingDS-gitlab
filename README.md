@@ -1,6 +1,7 @@
 # Pajamas Design System
 
 Resources, components, and design guidelines behind GitLab. See [design.GitLab.com](https://design.gitlab.com).
+Read about the [Component Lifecycle](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/component-lifecycle.md).
 
 ## Prerequisites
 
