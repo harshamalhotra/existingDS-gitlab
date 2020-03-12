@@ -34,7 +34,7 @@ Todo: Add live component block with code example (horizontally distributed form)
 
 ### Input fields
 
-Todo: Add live component block with code example (input field types)
+[[Example:form-group]]
 
 Disabled input fields need an explanation on why they’re disabled and that comes as [help text](#help-text) below.
 
@@ -148,7 +148,7 @@ When in doubt, hide a field instead of disabling it.
 
 ### Help text
 
-Help text can be used as additional instructions to the user when filling in the form. It should be: 
+Help text can be used as additional instructions to the user when filling in the form. It should be:
 
 * **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "For example,".
 * **Helpful**: If it doesn’t add value and make things easier for the user, it shouldn’t be used.
