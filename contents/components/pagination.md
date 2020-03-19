@@ -9,21 +9,16 @@ related:
   - list
 ---
 
-Breaking up lists and distributing the results either by the use of pagination or by [infinite scroll](/components/infinite-scroll) helps the user parse a large number of items whenever there are too many results to show at once. We use both pagination and infinite scroll to segment results depending on the user’s task.
-
-## Definition
-
-Pagination breaks up results into several pages with controls for navigating to a specific page and to the next or previous pages.
+Pagination is used to help users parse a large number of items on a page, whenever there are too many results to show at once. Pagination breaks up results into several pages with controls for navigating forward and backward, or to a specific page. 
 
 ## Usage
 
-Pagination is similar to infinite scroll, so use the table below as a guide for choosing when to use either component.
+Use pagination to:
 
-| | Pagination | Infinite Scroll |
-| ----- | ---------- | --------------- |
-| **Description:** | Benefits users who are looking for a specific item in a list to complete their task. | Benefits users who are browsing through lists with content that updates frequently. |
-| **When to use:** | To be used on any list that can be sorted and/or filtered. | To be used on lists with no sort/filter functionality. Lists that only have a search function should use infinite scroll and not be considered in the sorted/filtered category. |
-| **Examples:** | Issues and Todos dashboards | Activity dashboards and the Commits page |
+* Present lists that contain specific items a user may need to find in order to complete their task. For example, Issues, Todos, Milestones, and Environments.
+* Navigate lists that can be sorted and/or filtered. 
+
+We use both pagination and infinite scroll to segment results depending on the user’s task. Compare these guidelines with the [infitnite scroll usage guidelines](/components/infinite-scroll#usage) if you are unsure of which to use.
 
 ### Behavior
 
