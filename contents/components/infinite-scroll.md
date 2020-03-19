@@ -9,21 +9,16 @@ related:
   - spinner
 ---
 
-Breaking up lists and distributing the results either by the use of [pagination](/components/pagination) or by infinite scroll helps the user parse a large number of items whenever there are too many results to show at once. We use both pagination and infinite scroll to segment results depending on the user’s task.
-
-## Definition
-
-Infinite scroll loads the next batch of items in a list once the user has reached the bottom of the page and thus removes the need for pagination.
+Use infinite scroll to help users parse a large number of items by breaking up lists and distributing the results. Infinite scroll loads the next batch of items in a list below the existing results, once the user has reached the bottom of the page. Infinite scroll removes the need for [pagination](/components/pagination).
 
 ## Usage
 
-Infinite scroll is similar to pagination, so use the table below as a guide for choosing when to use either component.
+Use infinite scroll to:
 
-| | Pagination | Infinite Scroll |
-| ----- | ---------- | --------------- |
-| **Description:** | Benefits users who are looking for a specific item in a list to complete their task. | Benefits users who are browsing through lists with content that updates frequently. |
-| **When to use:** | To be used on any list that can be sorted and/or filtered. | To be used on lists with no sort/filter functionality. Lists that only have a search function should use infinite scroll and not be considered in the sorted/filtered category. |
-| **Examples:** | Issues and Todos dashboards | Activity dashboards and the Commits page |
+* Present lists with content that updates frequently. For example, Activity and Commits.
+* Navigate lists when there is no sort/filter functionality. Lists that only have a search function should use infinite scroll.
+
+We use both infinite scroll and pagination to segment results depending on the user’s task. Compare these guidelines with the [pagination usage guidelines](/components/pagination#usage) if you are unsure of which to use.
 
 ### Behavior
 
