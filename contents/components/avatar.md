@@ -45,4 +45,4 @@ Todo: Add grid demo with expand/collapse
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for avatars](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/avatar-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1833%3A2845)
