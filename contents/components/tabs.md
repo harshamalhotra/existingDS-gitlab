@@ -40,6 +40,6 @@ When tabs are used in a narrow container, column, or space, the tabs themselves 
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for tabs](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tabs-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2497%3A25)
 
-Todo: Add Sketch Measure Preview for fitted tabs
+Todo: Add design for fitted tabs
