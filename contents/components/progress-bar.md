@@ -1,5 +1,5 @@
 ---
-name: Progress Bars
+name: Progress bar
 vueComponents: 
   - GlProgressBar
 ---
