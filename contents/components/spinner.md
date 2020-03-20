@@ -70,4 +70,4 @@ This color is reserved for spinners on dark background only (buttons for example
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for spinner](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/spinner-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2704%3A2279)
