@@ -76,4 +76,4 @@ Certain pages have special breadcrumb paths to make the breadcrumb labels intuit
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for breadcrumbs](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/breadcrumbs-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
