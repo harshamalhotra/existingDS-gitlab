@@ -39,7 +39,7 @@ Designers should provide additional skeleton state designs. Developers can then 
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for skeleton loaders](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/skeleton-loader-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2844%3A27)
 
 ## Resources
 
