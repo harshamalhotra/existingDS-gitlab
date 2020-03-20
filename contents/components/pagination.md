@@ -46,4 +46,4 @@ Double truncation occurs when the current page is separated by 5 or more pages f
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for pagination](https://gitlab-org.gitlab.io/gitlab-design/hosted/andy/ce%23133-Pagination-components-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2763%3A236)
