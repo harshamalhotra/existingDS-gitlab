@@ -1,5 +1,5 @@
 ---
-name: Skeleton Loader
+name: Skeleton loader
 status: built
 vueComponents:
   - GlSkeletonLoader
