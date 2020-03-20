@@ -1,5 +1,5 @@
 ---
-name: Data Visualization
+name: Data visualization
 vueComponents:
   - GlHeatmap
 related:
