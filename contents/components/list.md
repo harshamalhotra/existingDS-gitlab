@@ -41,4 +41,4 @@ Todo: Add component demo
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-Todo: Add Sketch Measure Preview for List
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2864%3A4)
