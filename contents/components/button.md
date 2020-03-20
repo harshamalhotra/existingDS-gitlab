@@ -236,4 +236,4 @@ Please note to **not** mix text and icon label buttons together within the same 
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for buttons](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/buttons-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2956%3A3357)
