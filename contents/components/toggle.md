@@ -18,7 +18,7 @@ Avoid using toggles when a submit button is needed. This confuses users and dilu
 
 Use the following table to see when a toggle should be used over other alternative components.
 
-|  | [Single checkbox](/components/checkboxes) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkboxes) | [Multi-select dropdown](/components/dropdowns) |
+|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdowns) |
 |---|---|---|---|---|---|---|---|
 | Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
 | Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
