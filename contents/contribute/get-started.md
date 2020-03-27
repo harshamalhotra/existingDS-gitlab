@@ -49,8 +49,8 @@ unnecessary work. It can be helpful to comment in the issue to verify that no on
 is working on it and that the issue is still relevant.
 2. Fork [this project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com).
 3. Make changes reflecting the issue you’ve chosen to work on.
-4. Create a merge request. The earlier you open a merge request, the sooner you 
-can get feedback. You can mark it as a Work in Progress to signal that you’re 
+4. Create a merge request using the [`component-guideline` template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/.gitlab/merge_request_templates/component-guideline.md). The earlier you open a merge request, the sooner you 
+can get feedback. You can mark it as a Work in Progress (WIP) to signal that you’re 
 not done yet.
 5. Get your merge request approved. If your changes involved a new guideline or 
 UX paradigm, then ping a [UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com) 
