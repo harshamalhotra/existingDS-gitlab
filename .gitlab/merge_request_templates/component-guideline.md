@@ -29,6 +29,6 @@
 [page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/pages/components/template.md
 [voice-and-tone]: https://design.gitlab.com/content/voice-tone
 [style-guide]: https://docs.gitlab.com/ee/development/documentation/styleguide.html#language
-[related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/bbcceb17a6f1ce2caca3eeb4de634cecde023886/pages/components/template.md#L13-15
+[related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/pages/components/template.md#L12
 [design-reviewer]: https://about.gitlab.com/handbook/engineering/ux/pajamas-design-system/design-review/#reviewer
-[pajamas-assignments]: hhttps://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
+[pajamas-assignments]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
