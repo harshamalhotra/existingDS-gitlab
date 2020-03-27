@@ -5,8 +5,9 @@ import markdownAnchor from 'markdown-it-anchor';
 export default {
   props: {
     md: {
-      default: '',
       type: String,
+      required: false,
+      default: '',
     },
   },
   render(createElement) {

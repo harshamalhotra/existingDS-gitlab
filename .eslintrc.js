@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@gitlab'],
+  extends: ['plugin:@gitlab/default'],
   rules: {
     'filenames/match-regex': 'off',
     'no-param-reassign': 'off',
