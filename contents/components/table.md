@@ -6,9 +6,10 @@ related:
   - cards
   - list
   - tree
+  - filter
 ---
 
-Tables are used to render tabular data in a basic grid, making it easier for people to scan it. Tables are constituted of cells, columns, and rows.
+Tables are used to render tabular data in a basic grid, making it easier for people to scan it. Tables are comprised of cells, columns, and rows.
 
 ## Usage
 
@@ -21,10 +22,10 @@ Use tables when:
 
 Use tables to:
 
-*   Display large volumes of data.
-*   When the data set will continue to grow; for example, a table used to display users, environments, and so on.
-*   Compare data in a set to in a way that makes each data point distinguishable.
-*   Search, filter, or sort by all parameters in a data set.
+* Display large volumes of data.
+* Display a data set that will continue to grow; for example, a table used to display users, environments, and so on.
+* Compare data in a set to in a way that makes each data point distinguishable.
+* Search, filter, or sort by all parameters in a data set.
 
 Todo: Add live component block with code example
 
@@ -32,25 +33,25 @@ Todo: Add live component block with code example
 
 Do not use tables to:
 
-*   Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/list) instead.
-*   Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
-*   For hierarchical structures. Use the [Tree](/components/tree) view instead.
+* Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/list) instead.
+* Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
+* For hierarchical structures. Use the [Tree](/components/tree) view instead.
 
 ## Layout
 
 Tables take up the full width of their container element. However, it is important to note that wide tables make it difficult to read and scan small amounts of content, because the data is widely separated. For legibility, ensure content is laid out and aligned properly.
 
-Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view, instead.
+Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 
 Prevent horizontal scrolling to ensure the table doesn't break the layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/tables/#responsiveness).
 
 ### Empty state
 
-A table's empty state displays when there is no data, yet. [See empty states guidelines](https://design.gitlab.com/regions/empty-states).
+A table's empty state displays when there is no data, yet. [See empty states guidelines](/regions/empty-states).
 
 ### Content alignment
 
-Left align content by importance, based on the information needs of your users. In some circumstances, right aligning data helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-aligned data, make sure to use the same number of decimal places for all numeric data. Tables may switch their alignment for right-to-left audiences, as well.
+Left align content by importance, based on the information needs of your users. In some circumstances, right aligning data helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-aligned data, make sure to use the same number of decimal places for all numeric data. Tables may switch their alignment for right-to-left audiences as well.
 
 Todo: Add live component block with code example of table alignment -- mixed data
 
@@ -62,11 +63,11 @@ Text in tables tends to end up in narrow columns. Don't justify or center the te
 
 A cell’s width and height will change according to its content.
 
-It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the lang attribute of a parent element, and support depends on the specific browser.
+It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the `lang` attribute of a parent element, and support depends on the specific browser.
 
 #### Truncation
 
-To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. On hover, the truncated text should display a tooltip that includes the full text. [See tooltips guidelines](https://design.gitlab.com/components/tooltips)
+To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. On hover, the truncated text should display a tooltip that includes the full text. [See tooltips guidelines](/components/tooltips)
 
 #### Empty values
 
@@ -75,6 +76,16 @@ If a cell is empty or unavailable, keep the cell empty to reduce noise and help 
 ### Columns
 
 Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
+
+#### Ordering & sorting
+
+The data set of a table is usually ordered by one specific column representing an attribute, such as status, last updated, or priority.
+
+Sorting is designed as a native functionality of tables, and should not be confused with the [list sorting](/components/sorting) component.
+
+When sorting is enabled for the table, a [sorting icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=sort) is displayed next to the column header. A sortable table is identified by the sorting icon that is present in the header cells. Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order. The sorting icon and functionality should not be visible on responsive tables.
+
+Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
 
 ### Rows
 
@@ -92,13 +103,13 @@ Todo: Add live component block with code example of Audit Events table
 
 When including triggers to manipulate the data, such as filters, they should be placed directly above the table.
 
-Additional actions a user can take from an individual table row are displayed in the far right column, and are visible at all times (no on-hover visibility). If there are two or more actions in a table row, consider using a button group or a "more menu" button with a dropdown list option.
+Additional actions a user can take from an individual table row are displayed in the far right column, and are visible at all times (no on-hover visibility). If there are two or more actions in a table row, consider using a button group or a ["more menu" button](/components/button#ellipsis) with a dropdown list option.
 
 It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
 
 ## Pagination
 
-Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](https://design.gitlab.com/components/pagination)
+Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](/components/pagination)
 
 Tables with more than 20 items require pagination which is always located below the table and takes the form of a button group. Pagination is generally not required on tables with 20 or fewer items.
 
@@ -137,3 +148,4 @@ Todo: Add live component block with code example
 View the following links to see color, spacing, dimension, and layout-specific information pertaining to this component:
 
 [Sketch Measure Preview for Tables](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tables-spec-previews/)
+
