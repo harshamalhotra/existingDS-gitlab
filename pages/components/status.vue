@@ -105,34 +105,26 @@ export default {
             <th class="header">Foundations</th>
             <th class="header">Status</th>
           </tr>
-          <tr>
-            <td><a href="../../product-foundations/colors">Colors</a></td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/iconography">Iconography</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/illustration">Illustration</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/interaction">Interaction</a></td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/motion">Motion</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/saving-and-feedback">Saving and feedback</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../product-foundations/typography">Typography</a></td>
-            <td>⚠️</td>
-          </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree['product-foundations']"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/product-foundations/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                {{getStatusIcon(component.status)}}
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
           <tr>
             <th class="header">Component</th>
             <th class="header">Status</th>
@@ -161,173 +153,100 @@ export default {
             <th class="header">Regions</th>
             <th class="header">Status</th>
           </tr>
-          <tr>
-            <td><a href="../../regions/empty-states">Empty states</a></td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/filters">Filters</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/navigation">Navigation</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/search">Search</a></td>
-            <td>⚠️</td>
-          </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree.regions"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/regions/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                {{getStatusIcon(component.status)}}
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
           <tr>
             <th class="header">Content</th>
             <th class="header">Status</th>
           </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree.content"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/content/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                {{getStatusIcon(component.status)}}
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
           <tr>
-            <td><a href="../../content/voice-tone">Voice & tone</a></td>
-            <td>⚠️</td>
+            <th class="header">Accessibility</th>
+            <th class="header">Status</th>
           </tr>
-          <tr>
-            <td><a href="../../content/terminology">Terminology</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../content/punctuation">Punctuation</a></td>
-            <td>⚠️</td>
-          </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree.accessibility"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/accessibility/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                {{getStatusIcon(component.status)}}
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
           <tr>
             <th class="header">Usability</th>
             <th class="header">Status</th>
           </tr>
-          <tr>
-            <td><a href="../../usability/a11y">Accessibility</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../usability/i18n">Internationalization</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../usability/helping-users">Helping users</a></td>
-            <td>⚠️</td>
-          </tr>
+          <template v-if="contentTree">
+            <tr
+              v-for="component in contentTree.usability"
+              :key="component.id"
+            >
+              <td>
+                <nuxt-link
+                  :key="`link-${component.id}`"
+                  :to="`/usability/${component.id}`"
+                >{{ component.name }}</nuxt-link>
+              </td>
+              <td class="app-styles">
+                {{getStatusIcon(component.status)}}
+                <b-badge
+                  v-if="component.hasVueComponent"
+                  variant="primary"
+                >Vue</b-badge>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
-
-
-      <!-- <h2>Styles</h2>
-      <table class="m-t-6 m-b-6">
-        <thead>
-          <tr>
-            <th class="header">Styles</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="../../styles/Colors">Colors</a></td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="../../styles/iconography">Iconography</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../styles/motion">Motion</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../styles/illustration">Illustration</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../styles/typography">Typography</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../styles/cursors">Cursors</a></td>
-            <td>⚠️</td>
-          </tr>
-        </tbody>
-      </table> -->
-
-      <!-- <h2>Regions</h2>
-      <table class="m-t-6 m-b-6">
-        <thead>
-          <tr>
-            <th class="header">Regions</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="../../regions/empty-states">Empty states</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/filters">Filters</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/xx">Navigation</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../regions/xx">Search</a></td>
-            <td>⚠️</td>
-          </tr>
-        </tbody>
-      </table> -->
-
-      <!-- <h2>Content</h2>
-      <table class="m-t-6 m-b-6">
-        <thead>
-          <tr>
-            <th class="header">Content</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="../../content/voice-tone">Voice & tone</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../content/terminology">Terminology</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td><a href="../../content/punctuation">Punctuation</a></td>
-            <td>⚠️</td>
-          </tr>
-          <tr>
-            <td>Search</td>
-            <td>⚠️</td>
-          </tr>
-        </tbody>
-      </table> -->
-
-      <!-- <h2>Usability</h2>
-      <table class="m-t-6 m-b-6">
-        <thead>
-          <tr>
-            <th class="header">Usability</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="../../components/accessibility">Accessibility</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/internationalization">Internationalization</a></td>
-            <td>🚫</td>
-          </tr>
-          <tr>
-            <td><a href="../../components/helping-users">Helping users</a></td>
-            <td>✅</td>
-          </tr>
-        </tbody>
-      </table> -->
     </div>
   </div>
 </template>

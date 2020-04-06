@@ -8,7 +8,6 @@ vueComponents:
   - GlStackedColumnChart
 related:
   - popover
-
 ---
 
 Charts help users quickly digest, visualize and see trends in their data.

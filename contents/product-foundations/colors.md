@@ -1,5 +1,6 @@
 ---
 name: Color
+status: integrated
 ---
 
 ## Chromatic palette
