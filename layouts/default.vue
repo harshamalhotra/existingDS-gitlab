@@ -39,6 +39,7 @@
                   to="/components/status"
                 >Status</nuxt-link>
             </sub-menu>
+            <sub-menu :content-tree="contentTree" category="data-visualization" category-name="Data visualization" />
             <sub-menu :content-tree="contentTree" category="regions" />
             <sub-menu :content-tree="contentTree" category="content" />
             <sub-menu :content-tree="contentTree" category="usability" />
