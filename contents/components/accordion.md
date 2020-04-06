@@ -32,7 +32,7 @@ An accordion can be used on its own or with [more accordions](#multiple-accordio
 | ------ | ------ |
 | Use icons and [animation](/product-foundations/motion) to easily reflect collapsed and expanded states. | Leave the header without icon or use a [button](/components/buttons) to trigger the expand/collapse action.|
 | Trigger collapsed and expanded states when clicking on either the header or icon. | Make the icon the only way to trigger collapsed and expanded states. | 
-| Use [chevron](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron) to indicate the expand/collapse behavior | Use an icon that can not reflect the transition like a [question mark](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question). | 
+| Use a [chevron icon](#icon) to indicate the expand/collapse behavior. | Use an icon that can not reflect the transition like a [question mark icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question). | 
 
 ## Specifications
 
@@ -40,11 +40,13 @@ An accordion can be used on its own or with [more accordions](#multiple-accordio
 
 To reduce cognitive load and time to task completion, the icon should be located before the header, so users always click on the same spot to expand/collapse the accordion. The icon should always reflect the state of the accordion (expanded or collapsed).
 
-The following icon should be used:
+The following icons should be used:
 
-TODO:
-Add chevron-right icon
-Add chevron-down icon
+| Collapsed state icon | Expanded state icon |
+| :---: | :---: |
+| <figure class="figure p-a-0" role="figure"><img class="figure-img p-a-5" src="/img/chevron-right.svg" alt="Chevron right icon" role="img" /><figcaption class="figure-caption">[`chevron-right`]( https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-right)</figcaption></figure> | <figure class="figure p-a-0" role="figure"><img class="figure-img p-a-5" src="/img/chevron-down.svg" alt="Chevron down icon" role="img" /><figcaption class="figure-caption">[`chevron-down`](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down)</figcaption></figure> |
+
+
 
 The affordance of the chevron means that additional information can be found "under" the header.
 
