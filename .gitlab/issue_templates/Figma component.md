@@ -39,10 +39,10 @@ the component in the Assets panel to ensure it aligns with what’s outlined in 
 1. [ ] **Assignee**: Publish the library changes along with a clear commit message.
 1. [ ] **Assignee**: Update component link in the issue.
 1. [ ] **Assignee**: Move your draft file to the **Component archive** Figma project.
-1. [ ] **Assignee**: Create a merge request in this repository with the [component-guideline template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/.gitlab/merge_request_templates/component-guideline.md) and link it here as a related merge request. 
-1. [ ] **Assignee**: Once the created merge request is merged, close this issue. 
+1. [ ] **Assignee**: Create a merge request in this repository with the [component-guideline template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/.gitlab/merge_request_templates/component-guideline.md) to create or update the component's documentation page. Link it here as a related merge request. 
+1. [ ] **Assignee**: Once the merge request is created, close this issue. 
 
- Add an agenda item to the next UX weekly call to inform everyone (if it's a new pattern, not yet used in the application).
+Add an agenda item to the next UX weekly call to inform everyone (if it's a new pattern, not yet used in the application).
 Use `View design in Pajamas UI Kit →` for the link text. This replaces any link to
 Sketch Measure specs. Anyone with the link should be able to view the file.
 
