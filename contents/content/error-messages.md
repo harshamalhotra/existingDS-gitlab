@@ -32,7 +32,7 @@ Generic error messages are not helpful, and they don't make sense out of context
 Error messages for specific situations are more helpful to users.
 
 - `Your project title needs to have at least 3 characters` is more specific and direct than `Name is too short`.
-- `Your display name can't be blank` is clearer and more specific than `Field is empty`. 
+- `Display name is required` is more specific than `Field is empty` and more succinct than `Your display name can't be blank`.
 
 ### Consistent
 
