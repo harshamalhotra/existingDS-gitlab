@@ -48,4 +48,4 @@ The options must be equal in width and prominence. If there are 3 options, each 
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[View component in Figma →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=425%3A135)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=425%3A135)
