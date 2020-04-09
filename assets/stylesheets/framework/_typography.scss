@@ -26,6 +26,18 @@ a {
   }
 }
 
+code {
+  color: $gray-950;
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  font-family: $font-family-monospace;
+  font-size: 90%;
+  padding: $gl-spacing-1 $gl-spacing-2;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  word-break: keep-all;
+}
+
 .label { @include type-scale(0, 4, 0, 0) }
 .f-display { @include type-scale(14, 12) }
 .f-small { @include type-scale(-1, 4, 0, 0) }
