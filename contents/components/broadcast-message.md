@@ -23,7 +23,15 @@ Broadcast messages generally contain a small amount of content. It is a rare use
 
 [[Example:broadcast-message-basic-example]]
 
-## Design specifications
+## Specifications
+
+* The content within a broadcast message should use the container width when user preference is set to use a [fixed width](https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width) layout.
+* The close button tooltip should read “Dismiss” on hover.
+
+### Design
+
+* Background uses `$[hue]-700` of chosen theme.
+* Border-bottom uses `$[hue]-900` of chosen theme.
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
