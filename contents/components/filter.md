@@ -15,11 +15,12 @@ Filters utilize our [search component](/component/search/) with three main [toke
 1. **key**: acts as the label of the filter value, for example, `assignee`
 1. **logical operator**: the condition that binds the key to the value, for example, `is` or `is not`
 1. **value**: the item that the condition will base results on, for example, a `@username`
+
 Visually and functionally, each part is a variant of a [token](/components/token/).
 
 ## Usage
 
-Filters are always used in combination with [search boxes](/components/search/), preferably with the [“search by confirmation”](/components/search/#search-by-confirmation) variant.
+Filters are always used in combination with the [“search by confirmation” search box](/components/search/#search-by-confirmation) pattern.
 
 Each filter can consist of only one value and can’t be repeated. For example, a list of issues can only be narrowed down by specifying one assignee.
 
