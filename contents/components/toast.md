@@ -55,12 +55,19 @@ Todo: An example of a toast.
 
 Todo: An example of a toast with actions.
 
-## Design specifications
+## Specifications
+
+* The dimensions of a toast are dependent on its contents with a max-width of `568px`.
+
+### Design
+
+* Action text is underlined when hovered.
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1602%3A7)
 
-## Animation Specifications
+### Animation
 
-Specs: Ease-in(Show up) / Ease-out (Disappear) Time: 200 milliseconds Direction: Comes up from the bottom-left side of the screen.
+* A toast message eases in and out with a speed of 200 milliseconds from the bottom-left side of the screen (centered at smaller breakpoints).
+
