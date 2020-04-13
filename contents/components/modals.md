@@ -5,7 +5,9 @@ vueComponents:
   - GlModal
 related:
   - accordion
+  - drawer
   - button
+  - drawer
   - popover
   - toast
   - tooltip
@@ -26,12 +28,12 @@ Modals should be used when:
 - A non-revertible destructive action is about to take place and needs confirmation
 
 ### Alternatives
- 
+
 When designing an experience that incorporates the need for a modal, but does not match one of the use cases described above, consider one of the following before reverting to a modal:
 
 **Inline content:** Present your content inline to avoid disruption to the user's flow.
 
-**Expanding elements:** Utilize elements such as [accordions](/components/accordion), [tooltips](/components/tooltip), or other expanding non-modal patterns to convey your information.
+**Expanding elements:** Utilize elements such as [popovers](/components/popover), [accordions](/components/accordion), or [drawers](/components/drawer) to present additional information while allowing the user to maintain focus on the page.
 
 **Toast:** Present your message within a [toast](/components/toast); a brief, auto-expiring element for the user to consume while staying focused on their task.
 
