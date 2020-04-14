@@ -14,12 +14,14 @@ Dropdowns lists (or simply dropdowns) are used to provide the user with a list o
 
 ## Usage
 
-There are two main types of dropdowns:
+There are three main types of dropdowns:
 
-|Type|Purpose|
-|--- |--- |
-|Plain dropdowns|These dropdowns usually present a list of actions. They can be thought of as a collection of buttons.|
-|Checkmark dropdowns|These dropdowns are used as inputs. The individual rows in these dropdowns can show a checkmark to indicate that they have been selected or enabled. They are a collection of checkmarks. A dash (–) should be used instead of a checkmark when the row's value is present in some of the elements the dropdown is modifying but not others.|
+| Type                       | Purpose                                                                                               | Behavior                                                                                                                                                                                                                                               |
+| -------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Plain dropdowns            | These dropdowns usually present a list of actions. They can be thought of as a collection of buttons or links. | If a user clicks a link inside a plain dropdown, it would navigate to the path specified in the link. If a user clicks a button with a function, it would complete that function and close the dropdown. Another way to close the dropdown is to click outside the dropdown container.                             |
+| Single-selection dropdowns | These dropdowns are used as a collection of single selection inputs.                                  | The radio button indicates that this is a single selection. After a user makes a selection, the dropdown will close and the request will update the content, if needed.                                                                                                |
+| Multi-selection dropdowns  | These dropdowns are used when selecting multiple items.                                   | Each item contains a checkbox and can be clicked to select that item. The dropdown stays open when making selections and each selection will send a request to update the content. The dropdown closes when a user clicks outside of the dropdown or if the user clicks the "x" icon in the top right corner. |
+
 
 Use the following table to see when a dropdown should be used over other alternative components.
 
@@ -39,6 +41,20 @@ By default, dropdowns are placed below and aligned to the left of the element th
 
 If there are more rows than fit the dropdown, an overlay with a fade effect will be added at the top or bottom of the dropdown to indicate there are more rows to be scrolled. When reaching the end of the scrollable area, the overlay will be removed.
 
+## Example
+
+#### Plain dropdown
+
+Todo: An example of a plain dropdown
+
+#### Single-selection dropdown
+
+Todo: An example of a single-selection dropdown
+
+#### Multi-selection dropdown
+
+Todo: An example of a multi-selection dropdown
+
 ### Accessories
 
 There are some special elements that can be included in dropdowns to better adapt them to different situations.
@@ -55,11 +71,11 @@ Section headers are used to categorize the options in a dropdown. A separator mu
 
 Todo: An example of a dropdown with section headers.
 
-#### Filter box
+#### Search box
 
-If there are more than 10 elements in the list, it may be necessary to include a filter box.
+If there are more than 10 elements in the list, it may be necessary to include a search box.
 
-Todo: An example of a dropdown with a filter box.
+Todo: An example of a dropdown with a search box.
 
 #### Fixed rows
 
