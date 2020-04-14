@@ -7,6 +7,12 @@ Read about the [Component Lifecycle](https://gitlab.com/gitlab-org/gitlab-servic
 
 Before you move on, make sure you have [Node](https://nodejs.org/en/) 12.x and [Yarn](https://yarnpkg.com/) 1.10 or newer installed.
 
+### Start using Git on the command line
+
+* [Start using Git](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+* [Command Line basic commands](https://docs.gitlab.com/ee/gitlab-basics/command-line-commands.html)
+* [Technical Tutorials for Product Designers](https://www.youtube.com/playlist?list=PL05JrBw4t0Kra6RseLWXFIXtu9UPzjzbT) on Unfiltered
+
 ## Quick start
 
 1. Clone the project with `git clone git@gitlab.com:gitlab-org/gitlab-services/design.gitlab.com.git`
