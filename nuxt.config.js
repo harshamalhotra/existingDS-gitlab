@@ -182,6 +182,12 @@ module.exports = {
         });
       }
     },
+
+    transpile: [
+      // GitLab UI needs to be transpiled as it uses some advanced syntax like the
+      // optional chaining operator
+      '@gitlab/ui',
+    ],
   },
 
   // see https://nuxtjs.org/api/configuration-hooks
