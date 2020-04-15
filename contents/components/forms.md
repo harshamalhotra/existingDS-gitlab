@@ -50,9 +50,16 @@ To encourage the usage of different input field widths, we use a set of predefin
 
 Todo: Add live component block with code example (predefined widths from specs + 100% width)
 
-#### Clear icon
+#### Clear button
 
-A clear icon can appear in the right corner when the input field isn’t empty. It helps users clear the content with a single click. After removing the content it disappears and focus is placed on the input field. The clear icon isn’t necessary for the majority of input fields but is mandatory for [search boxes](/components/search).
+A clear button can appear on the right side of an input field when it has content, to help a user clear the content with a single click. After removing the content, it disappears and the focus is placed on the input field. The clear button should be implemented as a button, accessible via keyboard, and its name announced as “Clear” for assistive technology. 
+
+The clear button can be useful for input fields that satisfy both of the following criteria:
+
+* The input field is filled-in repeatedly by the same user
+* The data to be entered differs significantly from one use of the input field to the next
+
+In practice, only certain input fields should have a clear button. For example, [search boxes](/components/search) tend to satisfy both of the criteria mentioned above, so using a clear button for them is desirable.
 
 ### Text area
 
