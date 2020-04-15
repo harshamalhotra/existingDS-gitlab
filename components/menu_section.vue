@@ -1,18 +1,3 @@
-<template>
-  <ul class="nav-sidebar__section">
-    <li><span class="nav-sidebar__section-title">{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</span></li>
-    <li v-for="page in contentTree[category]" :key="page.id">
-      <nuxt-link
-        :to="`/${category}/${page.id}`"
-        class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-      >
-        {{ page.name }}
-      </nuxt-link>
-    </li>
-    <slot></slot>
-  </ul>
-</template>
-
 <script>
 export default {
   props: {
@@ -32,3 +17,18 @@ export default {
   },
 };
 </script>
+
+<template>
+  <ul class="nav-sidebar__section">
+    <li><span class="nav-sidebar__section-title">{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</span></li>
+    <li v-for="page in contentTree[category]" :key="page.id">
+      <nuxt-link
+        :to="`/${category}/${page.id}`"
+        class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+      >
+        {{ page.name }}
+      </nuxt-link>
+    </li>
+    <slot></slot>
+  </ul>
+</template>

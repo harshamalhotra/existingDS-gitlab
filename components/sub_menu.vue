@@ -1,24 +1,3 @@
-<template>
-  <li>
-    <details
-      :open="$route.fullPath.startsWith(`/${category}`)"
-      class="nav-sidebar__section"
-    >
-      <summary
-        class="nav-sidebar__section-summary nav-sidebar--indent-1"
-        @click="selectFirstSubItem"
-      >{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</summary>
-      <slot></slot>
-      <nav-sidebar-menu-item
-        v-for="page in contentTree[category]"
-        :key="page.id"
-        :name="page.name"
-        :to="`/${category}/${page.id}`"
-      />
-    </details>
-  </li>
-</template>
-
 <script>
 import NavSidebarMenuItem from './nav_sidebar_menu_item.vue';
 
@@ -62,3 +41,24 @@ export default {
   },
 };
 </script>
+
+<template>
+  <li>
+    <details
+      :open="$route.fullPath.startsWith(`/${category}`)"
+      class="nav-sidebar__section"
+    >
+      <summary
+        class="nav-sidebar__section-summary nav-sidebar--indent-1"
+        @click="selectFirstSubItem"
+      >{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</summary>
+      <slot></slot>
+      <nav-sidebar-menu-item
+        v-for="page in contentTree[category]"
+        :key="page.id"
+        :name="page.name"
+        :to="`/${category}/${page.id}`"
+      />
+    </details>
+  </li>
+</template>

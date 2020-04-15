@@ -1,11 +1,3 @@
-<template>
-  <div class="content limited m-t-7 m-b-8">
-    <no-ssr>
-      <component-info :frontmatter-info="fmResult" />
-    </no-ssr>
-  </div>
-</template>
-
 <script>
 export default {
   components: {
@@ -20,3 +12,11 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="content limited m-t-7 m-b-8">
+    <no-ssr>
+      <component-info :frontmatter-info="fmResult" />
+    </no-ssr>
+  </div>
+</template>

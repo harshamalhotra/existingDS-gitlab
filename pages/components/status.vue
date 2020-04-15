@@ -1,3 +1,31 @@
+<script>
+import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
+
+const statusIcons = {
+  upcoming: '🚫',
+  'in-progress': '⚠',
+  built: '⚒',
+  integrated: '✅',
+  deprecated: '❌',
+};
+
+export default {
+  data() {
+    return {
+      contentTree,
+    };
+  },
+  methods: {
+    getStatusIcon(status) {
+      return statusIcons[status];
+    },
+  },
+  head: {
+    title: 'Component status',
+  },
+};
+</script>
+
 <template>
   <div class="content limited m-t-7 m-b-7">
     <div class="structure md">
@@ -303,31 +331,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
-
-const statusIcons = {
-  upcoming: '🚫',
-  'in-progress': '⚠',
-  built: '⚒',
-  integrated: '✅',
-  deprecated: '❌',
-};
-
-export default {
-  data() {
-    return {
-      contentTree,
-    };
-  },
-  methods: {
-    getStatusIcon(status) {
-      return statusIcons[status];
-    },
-  },
-  head: {
-    title: 'Component status',
-  },
-};
-</script>
