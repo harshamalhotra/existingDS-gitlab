@@ -71,9 +71,9 @@ In regard to icons, optical balance is the perceived size of an icon relative to
 
 Here are a few considerations when trying to achieve optical balance.
 
-* More detail equals more visual weight. As the *density* of the graphic increases, it will draw more attention. Try offsetting this by scaling detailed icons down.
-* Rotate narrow icons 45º, which allows them to scale and have more visual weight.
-* At times, optically adjusting an icon may mean less adherence to the grid or other spacing rules to the benefit of balance or clarity.
+- More detail equals more visual weight. As the *density* of the graphic increases, it will draw more attention. Try offsetting this by scaling detailed icons down.
+- Rotate narrow icons 45º, which allows them to scale and have more visual weight.
+- At times, optically adjusting an icon may mean less adherence to the grid or other spacing rules to the benefit of balance or clarity.
 
 ## Strokes
 

@@ -26,9 +26,9 @@ The **fixed** layout applies the ideal maximum width to page containers accordin
 
 In the fixed layout, there are three possible maximum widths for page containers. For each width, you must consider which one is best to consume and interact with the elements on the page. The following widths include a `16px` padding on both sides.
 
-*   **`990px`**: By default, all pages use this maximum width. It’s ideal for forms, simple pages, tables with few columns, or pages that focus on written content.
-*   **`1280px`**: For pages that have a lot of horizontal elements, such as content-heavy tables/lists or tables with a lot of columns.
-*   **Full-width** (100%): Exception for pages where the interaction benefits from more screen real-estate, such as charts/graphs and other data visualizations, or boards.
+- **`990px`**: By default, all pages use this maximum width. It’s ideal for forms, simple pages, tables with few columns, or pages that focus on written content.
+- **`1280px`**: For pages that have a lot of horizontal elements, such as content-heavy tables/lists or tables with a lot of columns.
+- **Full-width** (100%): Exception for pages where the interaction benefits from more screen real-estate, such as charts/graphs and other data visualizations, or boards.
 
 We recommend that you first try and use **`990px`** unless another width is more suited. A width can also be chosen based on consistency between similar views in different pages, even if another width would have been more suitable.
 

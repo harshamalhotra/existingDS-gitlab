@@ -12,11 +12,11 @@ If you are interested in contributing to our design system, the first step is
 ensuring that an issue exists in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues). 
 There are many applications that an issue can have, including:
 
-* Submitting feature proposals
-* Asking questions
-* Reporting bugs and malfunctions
-* Obtaining support
-* Enhancing code implementations
+- Submitting feature proposals
+- Asking questions
+- Reporting bugs and malfunctions
+- Obtaining support
+- Enhancing code implementations
 
 If you were unable to find a related issue in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues), 
 begin by [creating a new one](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new). 

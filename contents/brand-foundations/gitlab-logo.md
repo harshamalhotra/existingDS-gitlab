@@ -30,14 +30,14 @@ Under the Creative Commons license, you may use the GitLab trademark and logo so
 
 Your use of the GitLab trademark and logo:
 
-* May not be for commercial purposes;
-* May not suggest or imply that you or your use of the GitLab trademark or logo is endorsed by GitLab, or create confusion as to whether or not you or your use of the GitLab trademark or logo is endorsed by GitLab; and
-* May not suggest or imply or that you are affiliated with GitLab in any way, or create confusion as to whether or not you are affiliated with GitLab in any way.
+- May not be for commercial purposes;
+- May not suggest or imply that you or your use of the GitLab trademark or logo is endorsed by GitLab, or create confusion as to whether or not you or your use of the GitLab trademark or logo is endorsed by GitLab; and
+- May not suggest or imply or that you are affiliated with GitLab in any way, or create confusion as to whether or not you are affiliated with GitLab in any way.
 
 Examples of improper use of the GitLab trademark and logo:
 
-* The GitLab name may not be used in any root URL, including subdomains such as `gitlab.company.com` or `gitlab.citool.io`.
-* The GitLab trademark and/or logo may not be used as the primary or prominent feature on any non-GitLab materials.
+- The GitLab name may not be used in any root URL, including subdomains such as `gitlab.company.com` or `gitlab.citool.io`.
+- The GitLab trademark and/or logo may not be used as the primary or prominent feature on any non-GitLab materials.
 
 ## Using other logos
 

@@ -14,17 +14,17 @@ An accordion can be used on its own or with [more accordions](#multiple-accordio
 
 ### Use an accordion when:
 
-* Displaying and grouping additional information.
-* Adding granular control over the information on a given page.
-* Shortening pages to reduce scrolling.
+- Displaying and grouping additional information.
+- Adding granular control over the information on a given page.
+- Shortening pages to reduce scrolling.
 
 ### Do not use an accordion when:
 
-* Displaying critical system information or a primary action to be taken on the page. (for example, [alerts](/components/alert), confirmation or cancellation buttons).
-* Displaying navigation elements such as [tabs](/components/tabs).
-* Displaying links pointing to sections of the same page, instead use a [list](/components/list).
-* Creating hierarchy levels by nesting them within each other. If you need to add hierarchy to the content use a [tree](/components/tree).
-* Displaying a set of visual components following the same style, prefer using Collapsable.(TODO: Add link to collapsable).
+- Displaying critical system information or a primary action to be taken on the page. (for example, [alerts](/components/alert), confirmation or cancellation buttons).
+- Displaying navigation elements such as [tabs](/components/tabs).
+- Displaying links pointing to sections of the same page, instead use a [list](/components/list).
+- Creating hierarchy levels by nesting them within each other. If you need to add hierarchy to the content use a [tree](/components/tree).
+- Displaying a set of visual components following the same style, prefer using Collapsable.(TODO: Add link to collapsable).
 
 ### Dos and Dont's
 
@@ -69,10 +69,10 @@ In the case of a page layout built around several accordions following each othe
 
 Use proper semantic markup, so that users of screen readers are aware of the states of the accordion.
 
-* The `aria-controls` attribute should define that the header is acting as a trigger to reveal content (the accordion body).
-* The `aria-expanded` attribute should be used to indicate the state of the accordion.
-* After a user expands/collapses the accordion, the focus should remain on the area wrapping the header and the icon, so that the user can trigger the accordion using the keyboard.
-* The accordion should not rely on JavaScript to reveal the body content.
+- The `aria-controls` attribute should define that the header is acting as a trigger to reveal content (the accordion body).
+- The `aria-expanded` attribute should be used to indicate the state of the accordion.
+- After a user expands/collapses the accordion, the focus should remain on the area wrapping the header and the icon, so that the user can trigger the accordion using the keyboard.
+- The accordion should not rely on JavaScript to reveal the body content.
 
 ## Demo
 
@@ -86,7 +86,7 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 ## Resources
 
-* [NN/G: Progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/)
-* [Smashing Magazine - Designing The Perfect Accordion](https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/#top)
-* [NN/G: Accordions Are Not Always the Answer for Complex Content on Desktops](https://www.nngroup.com/articles/accordions-complex-content/)
-* [Viget - Testing Accordion Menu Designs & Iconography](https://www.viget.com/articles/testing-accordion-menu-designs-iconography/) 
+- [NN/G: Progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/)
+- [Smashing Magazine - Designing The Perfect Accordion](https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/#top)
+- [NN/G: Accordions Are Not Always the Answer for Complex Content on Desktops](https://www.nngroup.com/articles/accordions-complex-content/)
+- [Viget - Testing Accordion Menu Designs & Iconography](https://www.viget.com/articles/testing-accordion-menu-designs-iconography/) 

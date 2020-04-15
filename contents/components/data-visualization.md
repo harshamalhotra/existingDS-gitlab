@@ -12,27 +12,27 @@ Data visualizations pull insights from data sets into a narrative and allow user
 
 Data visualizations should be:
 
-*   Cohesive
-*   Structured
-*   Readable
-*   Understandable
+- Cohesive
+- Structured
+- Readable
+- Understandable
 
 When creating a data visualization, keep in mind: 
 
-*   In terms of cognition, visualizations where points are positioned along a common scale are most easily understood. 
-*   We are generally less adept at understanding lengths without a common base.
-*   We are often worst at perceiving angles, directions and areas (which is why pie charts, for example, are generally not a great way to present data).
+- In terms of cognition, visualizations where points are positioned along a common scale are most easily understood. 
+- We are generally less adept at understanding lengths without a common base.
+- We are often worst at perceiving angles, directions and areas (which is why pie charts, for example, are generally not a great way to present data).
 
 ## Types
 
 There are six main categories of data visualizations: 
 
-*   Hierarchical: shows portions of a whole (ex. treemaps, node, and sunburst diagrams).
-*   Relational: shows the flow of assets (ex. network diagrams, matrices, and sankey diagrams).
-*   Spatial: shows data that can be mapped (ex. location map)
-*   Temporal: shows changes in data over time (ex. timeline)
-*   Spatial-temporal: shows data that can be mapped over time (ex. heat map)
-*   Statistical graphics: shows the composition of data (ex. column charts, area charts, and line charts)
+- Hierarchical: shows portions of a whole (ex. treemaps, node, and sunburst diagrams).
+- Relational: shows the flow of assets (ex. network diagrams, matrices, and sankey diagrams).
+- Spatial: shows data that can be mapped (ex. location map)
+- Temporal: shows changes in data over time (ex. timeline)
+- Spatial-temporal: shows data that can be mapped over time (ex. heat map)
+- Statistical graphics: shows the composition of data (ex. column charts, area charts, and line charts)
 
 We have use cases for Relational, Statistical, and Spatial-temporal. The other categories will be built when there is an appropriate use case.
 

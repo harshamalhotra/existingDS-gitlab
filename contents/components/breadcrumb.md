@@ -38,10 +38,10 @@ For contextual pages within the navigation, the breadcrumb should only include t
 
 The breadcrumb should use the following rules to truncate items:
 
-*   Use an ellipsis button to hide groups when there are three or more subgroups in the path.
-*   Use an ellipsis button to hide all Wiki page breadcrumb items except the current page.
-*   The top-level group and the subgroup closest to the project are never collapsed.
-*   All breadcrumb items except the last one are truncated to 128px if there isn't enough horizontal space to fit them on one line.
+- Use an ellipsis button to hide groups when there are three or more subgroups in the path.
+- Use an ellipsis button to hide all Wiki page breadcrumb items except the current page.
+- The top-level group and the subgroup closest to the project are never collapsed.
+- All breadcrumb items except the last one are truncated to 128px if there isn't enough horizontal space to fit them on one line.
 
 ### Special breadcrumbs
 

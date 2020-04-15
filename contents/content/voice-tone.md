@@ -27,10 +27,10 @@ In general, text is burdensome and adds cognitive load. This load is even more p
 
 Brevity is especially important for:
 
-* Headers
-* Button text
-* Field labels
-* Error messages
+- Headers
+- Button text
+- Field labels
+- Error messages
 
 For each of these content types, look for ways you might rephrase text that seems too long. Also, eliminate unnecessary phrases like “in order to” and extra articles like “the” when they don’t add clarity.
 
@@ -43,9 +43,9 @@ For each of these content types, look for ways you might rephrase text that seem
 
 While we aim to brief, we also avoid Latin abbreviations as they can be easily misinterpreted.
 
-* Instead of “i.e.”, use “that is.”
-* Instead of “e.g.”, use “for example.”
-* Instead of “etc.”, either use “and so on” or consider editing it out, since it can be vague.
+- Instead of “i.e.”, use “that is.”
+- Instead of “e.g.”, use “for example.”
+- Instead of “etc.”, either use “and so on” or consider editing it out, since it can be vague.
 
 ## Clear error messages
 
@@ -121,8 +121,8 @@ For a status update on something that has just happened in response to a user ac
 
 There are two options:
 
-* When brevity is the priority, use only the noun and verb (omitting articles and prepositions); for example, “Pipeline scheduled.”
-* When you want to use a full phrase for a human feel, use a complete sentence; for example, “The pipeline has been scheduled.”
+- When brevity is the priority, use only the noun and verb (omitting articles and prepositions); for example, “Pipeline scheduled.”
+- When you want to use a full phrase for a human feel, use a complete sentence; for example, “The pipeline has been scheduled.”
 
 ### Distant past (earlier than instant feedback)
 

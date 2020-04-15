@@ -24,8 +24,8 @@ Skeleton objects are presented in grayscale and never use color. They use a puls
 The skeleton state should always represent the page or section in a recognizable way.
 
 When designing skeleton states not all components on the page need to be replaced. Consider the following components when designing a skeleton state:
-* Container-based components (avatars, tiles, structured list, and so on)
-* Data-based components which pull in data (for example, tables), data indicators (for example, status icons), and data-based text.
+- Container-based components (avatars, tiles, structured list, and so on)
+- Data-based components which pull in data (for example, tables), data indicators (for example, status icons), and data-based text.
 
 If content can be loaded instantly it is a good indicator that it does not need to be replaced, think of action-based components (for example, buttons, input fields, checkboxes, toggles, and so on). Secondary dynamic content that is revealed upon user interaction should typically never be replaced by a skeleton state as those items should already be loaded in by the time the user is able to interact with them (for example, toasts, dropdown menu's, modals, and so on).
 
@@ -43,5 +43,5 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 ## Resources
 
-* [UX collective [1]](https://uxdesign.cc/designing-a-skeleton-loader-6de1b4201c4e) [[2]](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
-* [Carbon design system loading pattern](https://www.carbondesignsystem.com/patterns/loading/)
+- [UX collective [1]](https://uxdesign.cc/designing-a-skeleton-loader-6de1b4201c4e) [[2]](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
+- [Carbon design system loading pattern](https://www.carbondesignsystem.com/patterns/loading/)

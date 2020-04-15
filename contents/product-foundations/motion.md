@@ -62,4 +62,4 @@ Todo: Add auto-scroll example (issue board cards)
 
 ## Resources
 
-* [Spectrum design system - Adobe](https://spectrum.adobe.com/page/motion/)
+- [Spectrum design system - Adobe](https://spectrum.adobe.com/page/motion/)

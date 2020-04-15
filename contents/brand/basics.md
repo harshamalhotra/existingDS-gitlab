@@ -12,12 +12,12 @@ for a fuller picture of the brand and access to related resources.
 
 ### Sections
 
-* [Brand personality](#brand-personality)
-* [GitLab logo](#gitlab-logo)
-* [Color](#color)
-* [Typography](#typography)
-* [Iconography](#iconography)
-* [Voice and tone](#voice-and-tone)
+- [Brand personality](#brand-personality)
+- [GitLab logo](#gitlab-logo)
+- [Color](#color)
+- [Typography](#typography)
+- [Iconography](#iconography)
+- [Voice and tone](#voice-and-tone)
 
 ## Brand personality
 GitLab’s brand has a personality that is reflected in everything we do. It doesn’t 
@@ -38,9 +38,9 @@ approved SVG versions of the logo should be used in the product without modifica
 </figure>
 
 **Logo resources**
-* [Corporate marketing - Brand guidelines](https://about.gitlab.com/handbook/marketing/corporate-marketing/#brand-guidelines)
-* [GitLab trademark & logo guidelines](https://about.gitlab.com/handbook/marketing/corporate-marketing/#brand-guidelines)
-* [Download GitLab logo files](https://about.gitlab.com/press/press-kit/)
+- [Corporate marketing - Brand guidelines](https://about.gitlab.com/handbook/marketing/corporate-marketing/#brand-guidelines)
+- [GitLab trademark & logo guidelines](https://about.gitlab.com/handbook/marketing/corporate-marketing/#brand-guidelines)
+- [Download GitLab logo files](https://about.gitlab.com/press/press-kit/)
 
 ## Color
 The GitLab brand utilizes a base palette of six colors. These colors have limited 
@@ -71,8 +71,8 @@ used as content (often called spot illustrations) to visually represent concepts
 In the product, icons are used for interaction, and rarely decoration alone.
 
 **Icon resources**
-* [Icon SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/)
-* [Product Foundations - Iconography](https://design.gitlab.com/product-foundations/iconography)
+- [Icon SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/)
+- [Product Foundations - Iconography](https://design.gitlab.com/product-foundations/iconography)
 
 ## Voice and tone
 In general, there are different ways to address the GitLab audience depending on 
@@ -81,5 +81,5 @@ utility instructions within the product. It’s important to know the platform a
 the audience context.
 
 **Voice and tone resources**
-* [Corporate marketing  - Tone of voice](https://about.gitlab.com/handbook/marketing/corporate-marketing/#tone-of-voice)
-* [Product Foundations - Voice and tone](https://design.gitlab.com/content/voice-tone)
+- [Corporate marketing  - Tone of voice](https://about.gitlab.com/handbook/marketing/corporate-marketing/#tone-of-voice)
+- [Product Foundations - Voice and tone](https://design.gitlab.com/content/voice-tone)

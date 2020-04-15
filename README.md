@@ -9,9 +9,9 @@ Before you move on, make sure you have [Node](https://nodejs.org/en/) 12.x and [
 
 ### Start using Git on the command line
 
-* [Start using Git](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
-* [Command Line basic commands](https://docs.gitlab.com/ee/gitlab-basics/command-line-commands.html)
-* [Technical Tutorials for Product Designers](https://www.youtube.com/playlist?list=PL05JrBw4t0Kra6RseLWXFIXtu9UPzjzbT) on Unfiltered
+- [Start using Git](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+- [Command Line basic commands](https://docs.gitlab.com/ee/gitlab-basics/command-line-commands.html)
+- [Technical Tutorials for Product Designers](https://www.youtube.com/playlist?list=PL05JrBw4t0Kra6RseLWXFIXtu9UPzjzbT) on Unfiltered
 
 ## Quick start
 

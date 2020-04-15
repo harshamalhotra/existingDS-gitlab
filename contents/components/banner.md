@@ -19,15 +19,15 @@ Designating the use of a banner should be the result of careful consideration an
 
 Use banners to:
 
-* Inform a user of a feature that has yet to be enabled. For example, Auto DevOps.
-* Promote a new feature. For example, a free trial of GitLab Ultimate by featuring the new squash commit functionality in merge requests.
+- Inform a user of a feature that has yet to be enabled. For example, Auto DevOps.
+- Promote a new feature. For example, a free trial of GitLab Ultimate by featuring the new squash commit functionality in merge requests.
 
 ### When not to use banners
 
 Do not use banners to:
 
-* Communicate when a feature has not yet been configured or used. For example, when the security dashboard needs further setup or no issues have been added to a project. Instead, use an [empty-state](https://design.gitlab.com/regions/empty-states).
-* Give tips and hints on the use of a feature. For example, configuring a review app. Instead, use a tip style [alert](/components/alert).
+- Communicate when a feature has not yet been configured or used. For example, when the security dashboard needs further setup or no issues have been added to a project. Instead, use an [empty-state](https://design.gitlab.com/regions/empty-states).
+- Give tips and hints on the use of a feature. For example, configuring a review app. Instead, use a tip style [alert](/components/alert).
 
 ### Dos and Dont's
 

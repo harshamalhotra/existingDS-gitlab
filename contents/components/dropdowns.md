@@ -119,4 +119,4 @@ Color, spacing, dimension, and layout-specific information pertaining to this co
 
 ## Resources
 
-* [Drop down usability](https://baymard.com/blog/drop-down-usability)
+- [Drop down usability](https://baymard.com/blog/drop-down-usability)

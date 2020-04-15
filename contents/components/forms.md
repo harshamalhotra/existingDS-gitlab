@@ -56,8 +56,8 @@ A clear button can appear on the right side of an input field when it has conten
 
 The clear button can be useful for input fields that satisfy both of the following criteria:
 
-* The input field is filled-in repeatedly by the same user
-* The data to be entered differs significantly from one use of the input field to the next
+- The input field is filled-in repeatedly by the same user
+- The data to be entered differs significantly from one use of the input field to the next
 
 In practice, only certain input fields should have a clear button. For example, [search boxes](/components/search) tend to satisfy both of the criteria mentioned above, so using a clear button for them is desirable.
 
@@ -157,9 +157,9 @@ When in doubt, hide a field instead of disabling it.
 
 Help text can be used as additional instructions to the user when filling in the form. It should be:
 
-* **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "For example,".
-* **Helpful**: If it doesn’t add value and make things easier for the user, it shouldn’t be used.
-* **Short**: It should be a short sentence or a small paragraph, not a single word or a big paragraph.
+- **Contextual**: An example or an explanation of the field, not a generic "Enter" or a repetition of the label. If it's an example, it must start with "For example,".
+- **Helpful**: If it doesn’t add value and make things easier for the user, it shouldn’t be used.
+- **Short**: It should be a short sentence or a small paragraph, not a single word or a big paragraph.
 
 It’s styled using the "Secondary" text style and should always be placed below the form element. Additionally, a [help link](/usability/helping-users) can be provided to give supplemental information. If there isn't enough space for help text, consider using a [placeholder](#placeholder).
 

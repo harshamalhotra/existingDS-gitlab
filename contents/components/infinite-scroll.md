@@ -15,8 +15,8 @@ Use infinite scroll to help users parse a large number of items by breaking up l
 
 Use infinite scroll to:
 
-* Present lists with content that updates frequently. For example, Activity and Commits.
-* Navigate lists when there is no sort/filter functionality. Lists that only have a search function should use infinite scroll.
+- Present lists with content that updates frequently. For example, Activity and Commits.
+- Navigate lists when there is no sort/filter functionality. Lists that only have a search function should use infinite scroll.
 
 We use both infinite scroll and pagination to segment results depending on the user’s task. Compare these guidelines with the [pagination usage guidelines](/components/pagination#usage) if you are unsure of which to use.
 

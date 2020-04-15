@@ -8,18 +8,18 @@ We have four primary chromatic colors and their derivatives, totaling 44 colors 
 
 Though deciding which color to use depends on the situation, here are some general guidelines for using the four primary colors:
 
-* **Blue** indicates a current or active state. It communicates: management, progress, connectivity, or organization.
-* **Green** indicates success. It communicates: save, create, add, available, done, approved, or resolved.
-* **Orange** indicates 'attention-required.' It communicates: warning, pending, missing, or impeded progress.
-* **Red** indicates a problem. It communicates: critical states, destructive actions, errors, fails, removals, or declines.
+- **Blue** indicates a current or active state. It communicates: management, progress, connectivity, or organization.
+- **Green** indicates success. It communicates: save, create, add, available, done, approved, or resolved.
+- **Orange** indicates 'attention-required.' It communicates: warning, pending, missing, or impeded progress.
+- **Red** indicates a problem. It communicates: critical states, destructive actions, errors, fails, removals, or declines.
 
 ### Color priorities
 
 Color priorities work similarly to font weights; different font weights can be used to create contrasting typography that communicates hierarchy. We apply this same logic to colors by tagging colors according to their priority: from 1 to 4\. These priorities can be used to make better choices. When choosing how to apply color to a UI component:
 
-* Priority 1 is equal to the color weight 500.
-* Priority 2 is equal to the color weights 300 and 700.
-* Priority 3 is equal to the color weights 100 and 900.
+- Priority 1 is equal to the color weight 500.
+- Priority 2 is equal to the color weights 300 and 700.
+- Priority 3 is equal to the color weights 100 and 900.
 
 Priorities skip weights because, in most situations, the contrast between two adjoining weights would be subtle. However, those shades are available to use when needed. Color priorities are meant to act as a guideline, not a strict set of rules.
 

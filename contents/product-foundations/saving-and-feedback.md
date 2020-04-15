@@ -47,8 +47,8 @@ Never apply to whole forms (example: adding a personal access token needs a name
 
 Saving drafts is a form of auto-saving changes. It’s best used for saving progress in cases when users are expected to spend longer time inputting data (example: editing issue description). Automatic saving of progress should be indicated by either of two states, labeled:
 
-* “Saving…”: the user made changes and there’s background activity in progress to save a draft of these changes. Should be combined with a [spinner](/components/spinner) to indicate background activity.
-* “Saved”: no recent changes made, all changes are successfully saved as a draft. Should be combined with a timestamp (example: “Saved just now” or “Saved 1 min ago”).
+- “Saving…”: the user made changes and there’s background activity in progress to save a draft of these changes. Should be combined with a [spinner](/components/spinner) to indicate background activity.
+- “Saved”: no recent changes made, all changes are successfully saved as a draft. Should be combined with a timestamp (example: “Saved just now” or “Saved 1 min ago”).
 
 Indicating the current status reassures the users that their progress won’t be lost. In some cases it might be necessary to clearly state that a “Draft” is being saved to avoid confusion (“Draft saved 1 min ago”).
 
@@ -70,7 +70,7 @@ Todo: Add live component block with code example (example of newly added info as
 
 ## Related patterns
 
-* [Buttons](/components/button)
-* [Forms](/components/forms)
-* [Spinner](/components/spinner)
-* [Toast](/components/toast)
+- [Buttons](/components/button)
+- [Forms](/components/forms)
+- [Spinner](/components/spinner)
+- [Toast](/components/toast)

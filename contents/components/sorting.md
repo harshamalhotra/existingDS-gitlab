@@ -8,22 +8,22 @@ related:
 
 Sorting allows users to quickly re-organize similar content on a long list when the default order may be insufficient for users to scan the data set. The sorting component is placed directly on top of the list view. Common use cases for sorting include arranging:
 
-*   Numbers in ascending or descending order.
-*   Characters in alphabetical or reverse-alphabetical order.
-*   Dates from most to least recent or the reverse.
+- Numbers in ascending or descending order.
+- Characters in alphabetical or reverse-alphabetical order.
+- Dates from most to least recent or the reverse.
 
 ## Usage
 
 ### Sorting "dos"
 
-* Use the sorting component when the list has pagination and spans multiple pages, as it can make it easier for users to digest and find relevant content.
-* A user's sort selections are meant to be persisted. If they make a sort selection and then leave the page, when they return to the page, their previous sort selections will be preserved.
-* Sorting can occur in tables and in lists. While sorting in lists relies on the sorting component described on this page, sorting within a table happens in the table header.
+- Use the sorting component when the list has pagination and spans multiple pages, as it can make it easier for users to digest and find relevant content.
+- A user's sort selections are meant to be persisted. If they make a sort selection and then leave the page, when they return to the page, their previous sort selections will be preserved.
+- Sorting can occur in tables and in lists. While sorting in lists relies on the sorting component described on this page, sorting within a table happens in the table header.
 
 ### Sorting "don'ts"
 
-* When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns). 
-* If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
+- When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns). 
+- If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
 
 ### Sorting vs filtering
 

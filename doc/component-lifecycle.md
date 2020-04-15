@@ -3,24 +3,24 @@ The goal of this process is to make it easy to: submit new designs (including do
 
 The component lifecycle has the following stages:
 
-* **Create:** A need for a component is identified. The component is added to the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit---Beta) in Figma and usage guidelines are written.
+- **Create:** A need for a component is identified. The component is added to the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit---Beta) in Figma and usage guidelines are written.
 ~"pajamas::create"
-* **Build:** The component is added to gitlab-ui, including examples 
+- **Build:** The component is added to gitlab-ui, including examples 
 and documentation. The component is added to Pajamas. ~"pajamas::build"
-* **Style:** Each component is styled according to the design specs found in 
+- **Style:** Each component is styled according to the design specs found in 
 Pajamas. Components function correctly and match usage guidelines. ~"pajamas::style"
-* **Integrate:** The documented component is integrated into GitLab the 
+- **Integrate:** The documented component is integrated into GitLab the 
 product. ~"pajamas::integrate"
 
 Some stages may happen in tandem, depending on how mature the component currently
 is. For example:
 
-* If the component is already in GitLab and widely used, **build** and
+- If the component is already in GitLab and widely used, **build** and
 **style** stages may happen together. This often involves migrating styles from GitLab
 to gitlab-ui.
-* If the component is not yet available as a Vue component, the **style** stage
+- If the component is not yet available as a Vue component, the **style** stage
 may come after the **build** stage.
-* If a component is brand new, the **create** stage may need some revisions as the 
+- If a component is brand new, the **create** stage may need some revisions as the 
 **build** and **style** stages progress.
 
 The **integrate** stage will come last and could involve removing old HAML components
@@ -31,11 +31,11 @@ in order to replace them with the newly defined Vue components.
 Adding, or not adding, a component to Pajamas should be a deliberate choice. To 
 help facilitate this decision, you should be able to answer the following questions:
 
-* Is this a new component or a variation of an existing one?
-* Why do existing components not support this use case?
-* Will this component be reused beyond the current scope? Is it relevant to multiple
+- Is this a new component or a variation of an existing one?
+- Why do existing components not support this use case?
+- Will this component be reused beyond the current scope? Is it relevant to multiple
 use cases?
-* Is the proposed component technically feasible?
+- Is the proposed component technically feasible?
 
 Not all components belong in the design system. These are occasional instances 
 where a component may live in only one area of the application and is not included 
@@ -46,11 +46,11 @@ If you are able to answer the above questions and are still unsure about whether
 a component should be added to Pajamas, use the following to help you make a
 decision:
 
-* If it's unknown whether the component will be used, then wait until we do know
+- If it's unknown whether the component will be used, then wait until we do know
 before putting it in Pajamas.
-* If the component is *only* relevant in one place (and we suspect it will only
+- If the component is *only* relevant in one place (and we suspect it will only
 ever be relevant in one place), do not add to Pajamas.
-* If we validate that it’s useful in more than just one place, add it to Pajamas.
+- If we validate that it’s useful in more than just one place, add it to Pajamas.
 
 We may find over time that a component we once considered unique is more broadly 
 relevant. In that case, we reevaluate the component to ensure it’s scalable, and 

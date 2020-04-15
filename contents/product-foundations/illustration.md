@@ -81,8 +81,8 @@ An illustration can be one of three sizes below, depending on the use case. It c
 
 #### Large
 
-* Dimensions: **430×380px** or less
-* Use: Empty states, error pages (for example, a 404 error)
+- Dimensions: **430×380px** or less
+- Use: Empty states, error pages (for example, a 404 error)
 
 <figure class="figure" role="figure" aria-label="Large illustration">
   <img class="figure-img p-a-5" src="/img/illus-lg.svg" alt="Merge request conversation" role="img" />
@@ -96,8 +96,8 @@ An illustration can be one of three sizes below, depending on the use case. It c
 
 #### Medium
 
-* Dimensions: **240×160px** or less
-* Use: Banner
+- Dimensions: **240×160px** or less
+- Use: Banner
 
 <figure class="figure" role="figure" aria-label="Medium “spot” illustration">
   <img class="figure-img p-a-5" src="/img/illus-md.svg" alt="Burndown chart" role="img" />
@@ -111,8 +111,8 @@ An illustration can be one of three sizes below, depending on the use case. It c
 
 #### Small
 
-* Dimensions **160×90px** or less
-* Use: Graphics for explanatory text or status
+- Dimensions **160×90px** or less
+- Use: Graphics for explanatory text or status
 
 <figure class="figure" role="figure" aria-label="Small “spot” illustration">  
   <img class="figure-img p-a-5" src="/img/illus-sm.svg" alt="Bookmarked code document" role="img" />
@@ -130,9 +130,9 @@ An illustration can be one of three sizes below, depending on the use case. It c
 
 Start by determining the size your illustration needs to be (large, medium, small), then use the dimensions listed below, or start with a template from the gitlab-illustration.sketch file.
 
-* Large: **430×380px** or less
-* Medium: **240×160px** or less
-* Small: **160×90px** or less
+- Large: **430×380px** or less
+- Medium: **240×160px** or less
+- Small: **160×90px** or less
 
 Todo: Add link to gitlab-illustration.sketch once it’s approved
 
@@ -160,11 +160,11 @@ Illustrations should be optimized for their intended use. Illustrations can be a
 
 A few tips:
 
-* Create illustrations at the intended size (don’t create them larger than needed).
-* Simplify shapes and strokes by removing redundant points.
-* Sketch can handle simple illustrations just fine, but for something more complex, consider using Adobe Illustrator, Inkscape, Affinity Designer, or Figma.
-* [SVGOMG](https://jakearchibald.github.io/svgomg/) can really help decrease file size. Just make sure none of the settings or features are counter to intended use.
-* Use the [SVGO Compressor](https://github.com/BohemianCoding/svgo-compressor) plugin when exporting SVG from Sketch.
+- Create illustrations at the intended size (don’t create them larger than needed).
+- Simplify shapes and strokes by removing redundant points.
+- Sketch can handle simple illustrations just fine, but for something more complex, consider using Adobe Illustrator, Inkscape, Affinity Designer, or Figma.
+- [SVGOMG](https://jakearchibald.github.io/svgomg/) can really help decrease file size. Just make sure none of the settings or features are counter to intended use.
+- Use the [SVGO Compressor](https://github.com/BohemianCoding/svgo-compressor) plugin when exporting SVG from Sketch.
 
 Todo: Add specific optimization notes for each use case
 
@@ -174,8 +174,8 @@ It’s critical to ensure our illustrations are accessible. Here are two methods
 
 **For SVG as `img src`:**
 
-* Include a relevant `alt` tag.
-* Add `role="img"` to prevent browsers from traversing the SVG.
+- Include a relevant `alt` tag.
+- Add `role="img"` to prevent browsers from traversing the SVG.
 
 Example:
 
@@ -185,10 +185,10 @@ Example:
 
 **For inline SVG:**
 
-* Within the SVG code add `title` and `desc` (optional) elements. They _must_ be the first nested items within the SVG.
-* Add unique IDs to the `title` and `desc`; for example, `<title id="uniqueTitleID">SVG Title</title>`.
-* On the `<svg>`, add an `aria-labelledby="uniqueTitleID uniqueDescID"` attribute.
-* Lastly, on the `<svg>`, add `role="img"` to prevent browsers from traversing the SVG.
+- Within the SVG code add `title` and `desc` (optional) elements. They _must_ be the first nested items within the SVG.
+- Add unique IDs to the `title` and `desc`; for example, `<title id="uniqueTitleID">SVG Title</title>`.
+- On the `<svg>`, add an `aria-labelledby="uniqueTitleID uniqueDescID"` attribute.
+- Lastly, on the `<svg>`, add `role="img"` to prevent browsers from traversing the SVG.
 
 Example:
 

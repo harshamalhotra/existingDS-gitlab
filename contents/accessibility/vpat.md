@@ -6,12 +6,12 @@ name: VPAT Conformance Report
 
 ### VPAT® Version 2.2 – July 2018
 
-* **Name of Product/Version:** GitLab Enterprise Edition 11.6
-* **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
-* **Date:** December, 2018
-* **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
-* **Notes:** This evaluation only refers to GitLab the product and does not include the about.gitlab.com website.
-* **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/), Lighthouse, and iOS VoiceOver.
+- **Name of Product/Version:** GitLab Enterprise Edition 11.6
+- **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
+- **Date:** December, 2018
+- **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
+- **Notes:** This evaluation only refers to GitLab the product and does not include the about.gitlab.com website.
+- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/), Lighthouse, and iOS VoiceOver.
 
 ### Applicable Standards/Guidelines
 
@@ -58,18 +58,18 @@ This report covers the degree of conformance for the following accessibility sta
 
 The terms used in the Conformance Level information are defined as follows:
 
-* **Supports:** The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
-* **Partially Supports:** Some functionality of the product does not meet the criterion.
-* **Does Not Support:** The majority of product functionality does not meet the criterion.
-* **Not Applicable:** The criterion is not relevant to the product.
-* **Not Evaluated:** The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Supports:** The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
+- **Partially Supports:** Some functionality of the product does not meet the criterion.
+- **Does Not Support:** The majority of product functionality does not meet the criterion.
+- **Not Applicable:** The criterion is not relevant to the product.
+- **Not Evaluated:** The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
 
 ## WCAG 2.0 Report
 
 Tables 1 and 2 also document conformance with:
 
-* Chapter 5 – 501.1 Scope, 504.2 Content Creation or Editing
-* Chapter 6 – 602.3 Electronic Support Documentation
+- Chapter 5 – 501.1 Scope, 504.2 Content Creation or Editing
+- Chapter 6 – 602.3 Electronic Support Documentation
 
 Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are scoped for full pages, complete processes, and accessibility-supported ways of using technology as documented in the [WCAG 2.0 Conformance Requirements](https://www.w3.org/TR/WCAG20/#conformance-reqs).
 

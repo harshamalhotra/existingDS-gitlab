@@ -21,9 +21,9 @@ A drawer is a convenient way to present context-specific information or to provi
 
 ### Example use cases
 
-* Show more information about an issue without taking the user to a new page.
-* Show more information about a feature without taking the user to the documentation.
-* Show more information about a vulnerability instead of using a [modal](/components/modals).
+- Show more information about an issue without taking the user to a new page.
+- Show more information about a feature without taking the user to the documentation.
+- Show more information about a vulnerability instead of using a [modal](/components/modals).
 
 ## Specifications
 
@@ -35,17 +35,17 @@ The header appears at the top of the drawer with a full-width horizontal break l
 
 ##### Title
 
-* Size and style can vary depending on the use case. By default, the drawer uses a `19px-bold weight font`.
-* The title should truncate **after 3 lines** to avoid pushing content too far down in the drawer.
+- Size and style can vary depending on the use case. By default, the drawer uses a `19px-bold weight font`.
+- The title should truncate **after 3 lines** to avoid pushing content too far down in the drawer.
 
 ##### Actions
 
-* Actions, either [buttons](/components/button) or links, are not required. The type of action utilized depends on the use case.
-* When used, actions are always left-aligned and placed below the title.
+- Actions, either [buttons](/components/button) or links, are not required. The type of action utilized depends on the use case.
+- When used, actions are always left-aligned and placed below the title.
 
 ##### Close icon
 
-* The close icon is always present, right-aligned in the header, and center-aligned vertically with the first line of the title.
+- The close icon is always present, right-aligned in the header, and center-aligned vertically with the first line of the title.
 
 #### Content
 
@@ -55,9 +55,9 @@ Content selection should be based on the experience you intend to promote. Conte
 
 The drawer will appear following the [motion guidelines](/product-foundations/motion).
 
-* 200ms with an ease-in animation.
-* By default, the drawer overflows all page content.
-* If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push all or some of the content rather than overflowing it.
+- 200ms with an ease-in animation.
+- By default, the drawer overflows all page content.
+- If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push all or some of the content rather than overflowing it.
 
 #### Opening
 
@@ -65,8 +65,8 @@ Like [modals](/components/modals), drawers should never take the user by surpris
 
 #### Closing
 
-* The primary way to close the drawer is by using the close icon in the header. All drawers should have this action.
-* The second way to close the drawer is by using the <kbd>esc</kbd> key. This is primarily meant to help with accessibility.
+- The primary way to close the drawer is by using the close icon in the header. All drawers should have this action.
+- The second way to close the drawer is by using the <kbd>esc</kbd> key. This is primarily meant to help with accessibility.
 
 #### Scrolling
 
@@ -88,9 +88,9 @@ The drawer maintains its behavior down to the smallest breakpoint, at which poin
 
 ### Accessibility
 
-* Drawer states (open/closed) should be announced by a screen reader.
-* The focus should move to the drawer once opened. An intentional keyboard trap keeps tab order (looped) within the drawer until it is closed. This is so a user cannot focus on anything outside the drawer.
-* The <kbd>esc</kbd> key should close the drawer along with the close icon.
+- Drawer states (open/closed) should be announced by a screen reader.
+- The focus should move to the drawer once opened. An intentional keyboard trap keeps tab order (looped) within the drawer until it is closed. This is so a user cannot focus on anything outside the drawer.
+- The <kbd>esc</kbd> key should close the drawer along with the close icon.
 
 ## Demo
 

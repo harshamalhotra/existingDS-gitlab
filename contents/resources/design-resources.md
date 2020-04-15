@@ -8,10 +8,10 @@ In progress design files are stored in the [GitLab Design](https://gitlab.com/gi
 
 ### Goals
 
-*   Jumpstart design work by using the pattern library and existing working files
-*   Enable frequent, stable, and consistent contributions
-*   Make GitLab’s design open, transparent, and open source
-*   Facilitate design handoffs and design–development communication design handoffs.
+- Jumpstart design work by using the pattern library and existing working files
+- Enable frequent, stable, and consistent contributions
+- Make GitLab’s design open, transparent, and open source
+- Facilitate design handoffs and design–development communication design handoffs.
 
 The project is primarily used by GitLab’s UX Design department to host design files and hand them off for implementation. To learn about the best practices to manage the project, including the repository’s organization, check out the [contribution guidelines](https://gitlab.com/gitlab-org/gitlab-design/blob/master/CONTRIBUTING.md).
 
@@ -19,10 +19,10 @@ The project is primarily used by GitLab’s UX Design department to host design 
 
 For more information about the UX Design department, check out the following links.
 
-*   [UX Handbook](https://about.gitlab.com/handbook/engineering/ux/)
-*   [Pajamas Design System project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
-*   [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit---Beta)
-*   [GitLab Dribbble](https://dribbble.com/gitlab)
+- [UX Handbook](https://about.gitlab.com/handbook/engineering/ux/)
+- [Pajamas Design System project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
+- [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit---Beta)
+- [GitLab Dribbble](https://dribbble.com/gitlab)
 
 ## GitLab SVG project
 

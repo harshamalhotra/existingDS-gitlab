@@ -8,8 +8,8 @@ To move and reorder items in a collection or across similar collections, users c
 
 There is a clear affordance that distinguishes draggable items from non-draggable ones:
 
-* **Draggable** items have rounded corners and a shadow.
-* **Non-draggable** items look like a plain list.
+- **Draggable** items have rounded corners and a shadow.
+- **Non-draggable** items look like a plain list.
 
 Use [system cursors](#cursors) to indicate when an element is draggable. The `grab` cursor appears on hover when an element is draggable. Once it’s dragged, the cursor will change to `grabbing`. For areas where an element cannot be dropped, use the `not-allowed` cursor.
 
@@ -31,8 +31,8 @@ Todo: Add design specs link
 
 ### Related patterns
 
-* [Table](/components/table)
-* [List](/components/list)
+- [Table](/components/table)
+- [List](/components/list)
 
 ## Cursors
 

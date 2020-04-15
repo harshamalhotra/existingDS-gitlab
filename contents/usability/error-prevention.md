@@ -6,9 +6,9 @@ Friction in the user interface is often regarded as something to avoid or resolv
 
 In cases where we are prioritizing error prevention, we can take steps to:
 
-* Assist users from accidentally clicking a destructive action.
-* Help users to understand what happens after they confirm their destructive action.
-* Provide alternative options to potentially resolve their problem without resorting to destructive action.
+- Assist users from accidentally clicking a destructive action.
+- Help users to understand what happens after they confirm their destructive action.
+- Provide alternative options to potentially resolve their problem without resorting to destructive action.
 
 ## Severity guidelines
 

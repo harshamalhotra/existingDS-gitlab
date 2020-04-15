@@ -4,10 +4,10 @@ name: Terminology
 
 For clear and consistent communication, it’s important to always use correct terminology. Remember: 
 
-* If you’re unsure which term to use, look for existing terminology in the product.
-* Never create a new term when an existing one is available to you.
-* Be extremely cautious when using [jargon](https://examples.yourdictionary.com/examples-of-jargon.html) and [colloquialisms](https://www.quickanddirtytips.com/education/grammar/writing-with-slang). They can confuse new users and cause problems with internationalization.
-* Consider [screen readers](https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/) and their ability to interpret non-standard terminology.
+- If you’re unsure which term to use, look for existing terminology in the product.
+- Never create a new term when an existing one is available to you.
+- Be extremely cautious when using [jargon](https://examples.yourdictionary.com/examples-of-jargon.html) and [colloquialisms](https://www.quickanddirtytips.com/education/grammar/writing-with-slang). They can confuse new users and cause problems with internationalization.
+- Consider [screen readers](https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/) and their ability to interpret non-standard terminology.
 
 Following are common terms you will find throughout GitLab.
 
@@ -64,15 +64,15 @@ Activity refers to any action taken by a user that results in the creation of a 
 When using verbs or adjectives:
 
 If the context clearly refers to the object, use them alone.
-* **Example:** `Edit` or `Closed`
+- **Example:** `Edit` or `Closed`
 
 If the context isn’t clear enough, use them with the object.
-* **Example:** `Edit issue` or `Closed issues`
+- **Example:** `Edit issue` or `Closed issues`
 
 Destruction buttons should be clear and always say what they are destroying.
-* **Example:** `Delete page` instead of just `Delete`
+- **Example:** `Delete page` instead of just `Delete`
 
 Buttons that copy content to the clipboard don’t need the “to clipboard” part.
-* **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
+- **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
 
 Todo: Add comprehensive list of terminology Do/Don’t

@@ -82,6 +82,6 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 ## Resources
 
-* [modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
-* [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
-* [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
+- [modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
+- [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
+- [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)

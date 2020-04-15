@@ -101,4 +101,4 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 ## Resources
 
-*   [A related resource used when writing this documentation](/)
+- [A related resource used when writing this documentation](/)

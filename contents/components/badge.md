@@ -23,9 +23,9 @@ Long text in badges should be avoided. When text overflows the badge width, it i
 ### Variations
 
 Depending on the context and the value of the badge's information, some style attributes can be changed from the defaults:
-* **Font weight**: Text is bold by default but some or all of it can be changed to regular weight. For example, non-active [tabs](/components/tabs) use regular weight but revert to the bold weight when active.
-* **Visual weight**: “Neutral average” is the default variation. Start with that and see if it works. If necessary, decrease or increase the visual weight of the badge by switching to “neutral soft” or “neutral loud” respectively. Be mindful of not attracting too much attention to the badge and prioritizing it over other surrounding elements.
-* **Color**: Neutral color (gray) variations are the default. If the kind of information being communicated aligns with our [guidelines for the four primary colors](/foundations/colors), the badge can adopt a more colorful variation. Color should be used with care and as a last resort for highlighting badges. Like the visual weight point before, start with “average” and be mindful when using the “loud” variation.
+- **Font weight**: Text is bold by default but some or all of it can be changed to regular weight. For example, non-active [tabs](/components/tabs) use regular weight but revert to the bold weight when active.
+- **Visual weight**: “Neutral average” is the default variation. Start with that and see if it works. If necessary, decrease or increase the visual weight of the badge by switching to “neutral soft” or “neutral loud” respectively. Be mindful of not attracting too much attention to the badge and prioritizing it over other surrounding elements.
+- **Color**: Neutral color (gray) variations are the default. If the kind of information being communicated aligns with our [guidelines for the four primary colors](/foundations/colors), the badge can adopt a more colorful variation. Color should be used with care and as a last resort for highlighting badges. Like the visual weight point before, start with “average” and be mindful when using the “loud” variation.
 
 ## Demo
 

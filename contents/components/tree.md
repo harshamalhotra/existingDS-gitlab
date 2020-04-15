@@ -16,13 +16,13 @@ Consider using a tree as a navigation pattern to map out the relationship and hi
 ### When to use trees
 
 Use trees to:
-* Create hierarchical structure to help users form a mental model of the relationship between elements.
+- Create hierarchical structure to help users form a mental model of the relationship between elements.
 
 ### When not to use trees
 
 Do not use trees to:
-*  Provide additional information about a specific element of the page, use an [accordion](/components/accordion) instead.
-*  To display a navigation location, use [breadcrumb](/components/breadcrumb) instead.
+- Provide additional information about a specific element of the page, use an [accordion](/components/accordion) instead.
+- To display a navigation location, use [breadcrumb](/components/breadcrumb) instead.
 
 ### Dos and Dont's
 
