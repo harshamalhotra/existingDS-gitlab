@@ -1,5 +1,7 @@
 import glob from 'glob';
 import path from 'path';
+import sass from 'sass';
+import fiber from 'fibers';
 import { getContentList, writeContentTree } from './modules/content_preparer';
 
 const routes = [
@@ -120,7 +122,13 @@ module.exports = {
     },
 
     loaders: {
-      scss: { includePaths: [path.resolve(__dirname, 'node_modules')] },
+      scss: {
+        implementation: sass,
+        sassOptions: {
+          includePaths: [path.resolve(__dirname, 'node_modules')],
+          fiber,
+        },
+      },
     },
     /*
      ** You can extend webpack config here
