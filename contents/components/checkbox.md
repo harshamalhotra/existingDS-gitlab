@@ -59,4 +59,4 @@ Use the following table to see when checkboxes should be used over other alterna
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for checkboxes](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/checkboxes-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=4347%3A7242)
