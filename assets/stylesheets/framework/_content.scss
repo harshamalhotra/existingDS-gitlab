@@ -95,11 +95,19 @@
 // Figure
 
 .figure {
+  border-radius: $border-radius;
   display: block;
   margin: 0;
   // Using padding instead of margin because of the .md styles
   padding-bottom: $gl-spacing-7;
   text-align: center;
+  
+  &--dark {
+    background-color: $gray-950;
+    color: $white;
+    margin-bottom: $gl-spacing-7;
+    padding: $gl-spacing-6 $gl-spacing-5;
+  }
 }
 
 .figure-img {
