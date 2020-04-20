@@ -1,5 +1,6 @@
 ---
 name: Labels
+status: integrated
 vueComponents:
   - GlLabel
 related:

@@ -1,6 +1,6 @@
 ---
 name: Modals
-status: built
+status: integrated
 vueComponents:
   - GlModal
 related:

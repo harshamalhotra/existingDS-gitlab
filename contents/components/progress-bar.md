@@ -1,5 +1,6 @@
 ---
 name: Progress bar
-vueComponents: 
+status: integrated
+vueComponents:
   - GlProgressBar
 ---

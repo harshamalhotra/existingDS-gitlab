@@ -1,5 +1,6 @@
 ---
 name: Avatar
+status: integrated
 vueComponents:
   - GlAvatar
 related:

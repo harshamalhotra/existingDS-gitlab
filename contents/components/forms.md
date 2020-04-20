@@ -1,5 +1,6 @@
 ---
 name: Forms
+status: integrated
 vueComponents:
   - GlFormGroup
   - GlFormInput

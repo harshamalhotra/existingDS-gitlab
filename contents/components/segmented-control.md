@@ -1,5 +1,6 @@
 ---
 name: Segmented control
+status: integrated
 vueComponents:
   - GlSegmentedControl
 related:

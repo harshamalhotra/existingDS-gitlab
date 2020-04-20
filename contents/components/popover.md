@@ -1,5 +1,6 @@
 ---
 name: Popover
+status: integrated
 vueComponents:
   - GlPopover
 related:

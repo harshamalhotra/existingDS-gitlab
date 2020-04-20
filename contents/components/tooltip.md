@@ -1,6 +1,7 @@
 ---
 name: Tooltip
-vueComponents: 
+status: integrated
+vueComponents:
   - GlTooltip
 related:
   - popover

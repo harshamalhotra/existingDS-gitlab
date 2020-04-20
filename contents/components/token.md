@@ -1,5 +1,6 @@
 ---
 name: Token
+status: integrated
 vueComponents:
   - GlToken
 related:

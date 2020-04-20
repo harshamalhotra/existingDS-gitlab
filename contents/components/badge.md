@@ -1,6 +1,7 @@
 ---
 name: Badge
-vueComponents: 
+status: integrated
+vueComponents:
   - GlBadge
 related:
   - labels

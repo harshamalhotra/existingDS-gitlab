@@ -1,5 +1,6 @@
 ---
 name: Data visualization
+status: integrated
 vueComponents:
   - GlHeatmap
 related:
@@ -17,15 +18,15 @@ Data visualizations should be:
 - Readable
 - Understandable
 
-When creating a data visualization, keep in mind: 
+When creating a data visualization, keep in mind:
 
-- In terms of cognition, visualizations where points are positioned along a common scale are most easily understood. 
+- In terms of cognition, visualizations where points are positioned along a common scale are most easily understood.
 - We are generally less adept at understanding lengths without a common base.
 - We are often worst at perceiving angles, directions and areas (which is why pie charts, for example, are generally not a great way to present data).
 
 ## Types
 
-There are six main categories of data visualizations: 
+There are six main categories of data visualizations:
 
 - Hierarchical: shows portions of a whole (ex. treemaps, node, and sunburst diagrams).
 - Relational: shows the flow of assets (ex. network diagrams, matrices, and sankey diagrams).
@@ -44,7 +45,7 @@ Todo: Create component for the Commit Graph in GitLab UI
 
 ### Spatial-temporal
 
-A heat map is an example of a spatial-temporal data visualization. 
+A heat map is an example of a spatial-temporal data visualization.
 
 Heat maps can be used to more quickly visualize and compare values in a dataset. In heat maps, data points are grouped and displayed using shades of color. Darker colors are generally used to communicate a higher density of data.
 

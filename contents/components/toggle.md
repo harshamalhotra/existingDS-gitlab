@@ -1,5 +1,6 @@
 ---
 name: Toggles
+status: integrated
 vueComponents:
   - GlToggle
 related:

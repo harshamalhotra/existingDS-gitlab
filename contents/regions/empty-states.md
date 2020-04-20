@@ -1,8 +1,9 @@
 ---
 name: Empty States
+status: integrated
 vueComponents:
   - GlEmptyState
-related: 
+related:
   - banner
   - button
 ---

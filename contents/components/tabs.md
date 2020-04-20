@@ -1,6 +1,6 @@
 ---
 name: Tabs
-status: built
+status: integrated
 vueComponents:
   - GlTabs
   - GlTab

@@ -1,6 +1,7 @@
 ---
 name: Tables
-vueComponents: 
+status: integrated
+vueComponents:
   - GlTable
 related:
   - cards
@@ -13,9 +14,9 @@ Tables are used to render tabular data in a basic grid, making it easier for peo
 
 ## Usage
 
-Use tables when: 
+Use tables when:
 
-- Users need to review, enter, or edit uniform sets of data or options. 
+- Users need to review, enter, or edit uniform sets of data or options.
 - Displaying structured content, where each entry has the same attributes.
 
 ### When to use tables
@@ -119,7 +120,7 @@ Todo: Add live component block with code example including pagination
 
 Use white space in tables to improve scannability, visually separating data elements so that each can be individually identified and read as separate from the others.
 
-To help with styling, use horizontal lines between rows to visually separate content. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed. 
+To help with styling, use horizontal lines between rows to visually separate content. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 
 Do not appply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 
@@ -148,4 +149,3 @@ Todo: Add live component block with code example
 View the following links to see color, spacing, dimension, and layout-specific information pertaining to this component:
 
 [Sketch Measure Preview for Tables](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tables-spec-previews/)
-

@@ -1,6 +1,6 @@
 ---
 name: Infinite scroll
-status: built
+status: integrated
 vueComponents:
   - GlInfiniteScroll
 related:

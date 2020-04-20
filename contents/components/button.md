@@ -1,6 +1,6 @@
 ---
 name: Button
-status: built
+status: integrated
 vueComponents:
   - GlNewButton
 related:
@@ -138,7 +138,7 @@ Emoji buttons provide the user with visual to signify what the emotion users hav
 
 ### Dropdown
 
-Dropbown buttons trigger menus of options which can be either actions or input values. 
+Dropbown buttons trigger menus of options which can be either actions or input values.
 
 [[Example:new-dropdown-default]]
 
@@ -184,13 +184,13 @@ See [segmented control](/components/segmented-control) for more information.
 
 ### Icon segmented control
 
-Icon segmented controls function similar to segmented control buttons with the difference being an icon label. 
+Icon segmented controls function similar to segmented control buttons with the difference being an icon label.
 
 See [segmented control](/components/segmented-control) for more information.
 
 ### Pagination
 
-Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages. 
+Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages.
 
 See [pagination](/components/pagination) for more information.
 

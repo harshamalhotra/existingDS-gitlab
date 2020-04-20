@@ -1,6 +1,6 @@
 ---
 name: Alert
-status: built
+status: integrated
 vueComponents:
   - GlAlert
 related:

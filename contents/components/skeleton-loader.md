@@ -1,6 +1,6 @@
 ---
 name: Skeleton loader
-status: built
+status: integrated
 vueComponents:
   - GlSkeletonLoader
 related:

@@ -1,5 +1,6 @@
 ---
 name: Spinner
+status: integrated
 vueComponents:
   - GlLoadingIcon
 related:
