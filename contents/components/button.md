@@ -2,7 +2,7 @@
 name: Button
 status: integrated
 vueComponents:
-  - GlNewButton
+  - GlButton
 related:
   - dropdowns
   - segmented-control
@@ -22,19 +22,19 @@ Defining context depends on the hierarchy of information displayed on the screen
 
 Please note that contexts may be temporary, such as a modal.
 
-[[Example:new-button-primary]]
+[[Example:button-primary]]
 
 ### Secondary
 
 Secondary buttons represent supplementary actions that the user is motivated to take. The outlined styling places less emphasis on these buttons. Just like primary buttons, secondary buttons also require one of the four elementary button styles: Info (blue), Success (green), Warning (orange), or Danger (red).
 
-[[Example:new-button-secondary]]
+[[Example:button-secondary]]
 
 ### Tertiary
 
 A tertiary button is the default button category. Tertiary buttons still have an outlined styling but cannot have one of the four elementary button styles. They are typically used for less important actions that are not promoted to the user.
 
-[[Example:new-button-tertiary]]
+[[Example:button-tertiary]]
 
 ### Link
 
@@ -50,13 +50,13 @@ Buttons change depending on the user's interaction or set behavior. This is to e
 
 Buttons change depending on the user's interaction with them. In hover, active, and focus states the buttons will have a thicker border and their background color will change. For the focus state, buttons will get an additional blue glow indicating that they are in focus.
 
-[[Example:new-button-variants]]
+[[Example:button-variants]]
 
 ### Disabled
 
 Disabled buttons prevent the user from performing an action. They are there to let the user know a certain action would be possible if circumstances were different. All buttons regardless of style are styled the same way when in the disabled state. Additionally they will show the "not-allowed" cursor style when hovered upon and have a faded text color.
 
-[[Example:new-button-disabled]]
+[[Example:button-disabled]]
 
 ## Variants
 
@@ -66,7 +66,7 @@ Buttons derive additional meaning from their presented style and help the user q
 
 The neutral button style is used most often and is generally picked when using tertiary buttons. It features grayscale colors with a white background.
 
-[[Example:new-button-tertiary]]
+[[Example:button-tertiary]]
 
 ### Elementary
 
@@ -76,13 +76,13 @@ Our elementary button styles all convey a different meaning due to their respect
 
 Buttons that represent activation or informative processes. They are represented in a blue color.
 
-[[Example:new-button-info]]
+[[Example:button-info]]
 
 #### Success
 
 Buttons that represent positive actions such as the creation or addition of items. They are represented in a green color.
 
-[[Example:new-button-success]]
+[[Example:button-success]]
 
 #### Warning
 
@@ -90,7 +90,7 @@ Buttons that represent actions where the user should be cautious such as overrid
 
 Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
-[[Example:new-button-warning]]
+[[Example:button-warning]]
 
 #### Danger
 
@@ -98,13 +98,13 @@ Buttons that represent actions that are destructive, such as deleting content. T
 
 Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
 
-[[Example:new-button-danger]]
+[[Example:button-danger]]
 
 ### Dashed
 
 Dashed button styles are used when something has not yet been created. Their action will lead the user to create the missing item, after which it will replace the dashed button with a link to the item.
 
-[[Example:new-button-dashed]]
+[[Example:button-dashed]]
 
 ## Combinations
 
@@ -114,13 +114,13 @@ Buttons come in many different combinations to fit different situations. Some tr
 
 The default combination is the text button. They contain a text label and have no special interactions.
 
-[[Example:new-button-tertiary]]
+[[Example:button-tertiary]]
 
 ### Icon
 
 Icon buttons provide the user with visual iconography to signify what the button does. They only contain an icon label and have no special interactions. They can be used when a text button would be too big or the meaning of an icon conveys what will happen in a more concise way.
 
-[[Example:new-button-icon]]
+[[Example:button-icon]]
 
 ### Icon + text
 
@@ -128,13 +128,13 @@ Text buttons might be supplemented with an icon to both clarify an action and ca
 
 Please note to **not** use two icons in the same button.
 
-[[Example:new-button-icon-and-text]]
+[[Example:button-icon-and-text]]
 
 ### Emoji
 
 Emoji buttons provide the user with visual to signify what the emotion users have attributed to the parent object. They only contain an emoji label and convert to an active state when pressed.
 
-[[Example:new-button-emoji]]
+[[Example:button-emoji]]
 
 ### Dropdown
 
@@ -162,7 +162,7 @@ Icon dropdowns function similar to other dropdown button combinations with the d
 
 Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
 
-[[Example:new-button-ellipsis]]
+[[Example:button-ellipsis]]
 
 ### Group
 
@@ -202,19 +202,19 @@ Depending on the interface buttons may either use the medium or small size.
 
 This is the default button size.
 
-[[Example:new-button-medium]]
+[[Example:button-medium]]
 
 ### Small
 
 This is the alternative button size for use in tight spaces.
 
-[[Example:new-button-small]]
+[[Example:button-small]]
 
 ### Full width
 
 Buttons can be expanded to the full width of the parent container. This can be used for buttons embedded inside smaller width containers or to improve usability on mobile viewports.
 
-[[Example:new-button-full-width]]
+[[Example:button-full-width]]
 
 ## Order
 
