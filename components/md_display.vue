@@ -2,6 +2,15 @@
 import markdowner from 'markdown-it';
 import markdownAnchor from 'markdown-it-anchor';
 
+const makeAdmonitions = (html, type) => {
+  const typeCapitalized = type.charAt(0).toUpperCase() + type.substring(1);
+  const pattern = new RegExp(`(<[^>]+>)?${typeCapitalized}:(.*?)(</[^>]+>)?\n`, 'gm');
+  return html.replace(
+    pattern,
+    `$1<span class="admonition admonition--${type}"><span>${typeCapitalized}: </span>$2</span>$3`,
+  );
+};
+
 export default {
   props: {
     md: {
@@ -31,22 +40,9 @@ export default {
     );
 
     // Format Todo Messages as before
-    mdOutput = mdOutput.replace(
-      /Note:(.*?)\n/gm,
-      '<span class="admonition admonition--note"><span>Note: </span>$1</span>',
-    );
-    mdOutput = mdOutput.replace(
-      /Tip:(.*?)\n/gm,
-      '<span class="admonition admonition--tip"><span>Tip: </span>$1</span>',
-    );
-    mdOutput = mdOutput.replace(
-      /Todo:(.*?)\n/gm,
-      '<span class="admonition admonition--todo"><span>Todo: </span>$1</span>',
-    );
-    mdOutput = mdOutput.replace(
-      /Warning:(.*?)\n/gm,
-      '<span class="admonition admonition--warning"><span>Warning: </span>$1</span>',
-    );
+    ['note', 'tip', 'todo', 'warning'].forEach(type => {
+      mdOutput = makeAdmonitions(mdOutput, type);
+    });
 
     const dynamicElement = {
       template: `<div class="component md  typography">${mdOutput}</div>`,
