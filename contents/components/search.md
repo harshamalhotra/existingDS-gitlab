@@ -55,4 +55,4 @@ It’s a common practice to place the search box on the top right of the page, i
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for search patterns](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/search-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4191%3A0)

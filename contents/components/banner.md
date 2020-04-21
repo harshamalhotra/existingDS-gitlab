@@ -84,4 +84,4 @@ A banner should always include a [button](https://design.gitlab.com/components/b
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for Banners](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/banners-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4845%3A7873)

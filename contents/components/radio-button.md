@@ -53,4 +53,4 @@ Use the following table to see when radio buttons should be used over other alte
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=3947%3A143)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4)
