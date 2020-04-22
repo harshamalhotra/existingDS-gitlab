@@ -88,16 +88,13 @@ Todo: Add live component block with code example
 ## Design specifications
 
 <!--
-  DESIGN SPECIFICATIONS, add a link here to the component-specific sketch-measure preview.
-  All design specifications should live in the design repo under 'hosted/design-gitlab-specs/COMPONENTNAME-spec-previews'
-  *** If there are max-width, min-width, or other specs that should be known about this component,
-  please add it in Sketch Measure via a note.
-  This link must ALWAYS be included.
+  DESIGN SPECIFICATIONS, add a link here to the component in the Pajamas UI Kit. In most cases this will be a link the component’s “Variants” frame. You can find this link by clicking on the “Variants” frame and then copying the link from the “Share” option.
+  *** Follow the “Figma component” issue template in Pajamas to create the component. 
 -->
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for INSERT NAME OF COMPONENT HERE](/)
+[View design in Pajamas UI Kit →](/)
 
 ## Resources
 
