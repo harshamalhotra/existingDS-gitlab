@@ -51,5 +51,21 @@
   },
   "resolutions": {
     "vue": "2.6.11"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/gitlab"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/gitlab"
+    ],
+    "success": false,
+    "fail": false
   }
 }
