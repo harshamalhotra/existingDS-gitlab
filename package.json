@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Resources, components, and design guidelines behind GitLab",
   "author": "GitLab",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git"
+  },
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
@@ -51,5 +55,21 @@
   },
   "resolutions": {
     "vue": "2.6.11"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/gitlab"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/gitlab"
+    ],
+    "success": false,
+    "fail": false
   }
 }
