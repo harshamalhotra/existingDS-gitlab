@@ -1,5 +1,6 @@
 ---
 name: Filter
+docs: in-progress
 related:
   - token
   - search
@@ -38,7 +39,7 @@ If a user selects a different value from the dropdown when editing a text string
 
 After a filter is successfully added, a dropdown with suggestions for other keys appears immediately.
 
-This is how a user should experience adding a filter: 
+This is how a user should experience adding a filter:
 
 1. The user clicks into a search box and a dropdown with the keys that can be used appears
 1. The user chooses the key of what they want to filter the list by (for example, `assignee`)

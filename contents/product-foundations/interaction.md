@@ -1,6 +1,5 @@
 ---
 name: Interactions
-status: integrated
 ---
 
 ## Drag and drop

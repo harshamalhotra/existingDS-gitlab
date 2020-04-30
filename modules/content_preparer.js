@@ -25,16 +25,17 @@ export function getContentList(dirName) {
       JSON.stringify(content),
     );
 
-    const hasInfo = content.body.length > 0;
-    const status = content.attributes.status || (hasInfo ? 'in-progress' : 'upcoming');
+    const { name, figma, docs, a11y, gitlab_ui, vueComponents } = content.attributes;
+    const id = componentFileName.replace('.md', '');
 
     componentInfos.push({
-      id: componentFileName.replace('.md', ''),
-      name: content.attributes.name,
-      hasVueComponent:
-        content.attributes.vueComponents && content.attributes.vueComponents.length > 0,
-      hasInfo,
-      status,
+      id,
+      name,
+      figma,
+      docs: docs || 'upcoming',
+      a11y: a11y || 'upcoming',
+      gitlab_ui,
+      hasVueComponent: vueComponents && vueComponents.length > 0,
     });
   };
 

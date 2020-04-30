@@ -1,6 +1,6 @@
 ---
 name: Charts
-status: integrated
+docs: complete
 vueComponents:
   - GlAreaChart
   - GlLineChart

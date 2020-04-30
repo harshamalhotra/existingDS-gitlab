@@ -1,5 +1,6 @@
 ---
 name: Card
+docs: in-progress
 related:
   - table
 ---
@@ -51,7 +52,7 @@ The header is **optional** and acts as the title of the proceeding body content.
 
 #### Body
 
-The card body is **always required**. The content in the body should never be ambiguous or unclear. Provide the user with content regarding a single topic and strive to be as concise as possible. For example, if a card's purpose is to communicate a pricing plan, the body would contain the plan's price point and key feature information. 
+The card body is **always required**. The content in the body should never be ambiguous or unclear. Provide the user with content regarding a single topic and strive to be as concise as possible. For example, if a card's purpose is to communicate a pricing plan, the body would contain the plan's price point and key feature information.
 
 Use multiple sections within the body when you have two or more related but distinct pieces of information to communicate to users. Multiple sections can help break up complicated concepts like pricing data. Content in this area could include media, and photos.
 
@@ -71,7 +72,7 @@ The card width is fluid by default. When presenting two or more static cards in 
 
 #### Interactions
 
-Dynamic cards can be draggable and re-ordered within a list. To help layer the component within this particular use-case, a drop shadow is required. A draggable card will maintain the ability to house individual links and actions. Its empty space becomes the trigger to enable the drag functionality. The cursor should change to a pointer hand icon to convey functionality. 
+Dynamic cards can be draggable and re-ordered within a list. To help layer the component within this particular use-case, a drop shadow is required. A draggable card will maintain the ability to house individual links and actions. Its empty space becomes the trigger to enable the drag functionality. The cursor should change to a pointer hand icon to convey functionality.
 
 When dragging the card to a new location, any cards positioned behind it should move to show their new placement as if the user were to let go of the selected card and drop it into the current position.
 
@@ -86,4 +87,3 @@ While the page is loading, cards should use the [skeleton loader component](/com
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [Sketch Measure Preview for Cards](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/card-spec-preview)
-

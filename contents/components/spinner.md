@@ -1,6 +1,7 @@
 ---
 name: Spinner
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A137
+docs: complete
 vueComponents:
   - GlLoadingIcon
 related:

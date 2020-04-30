@@ -1,6 +1,6 @@
 ---
 name: Tables
-status: integrated
+docs: in-progress
 vueComponents:
   - GlTable
 related:

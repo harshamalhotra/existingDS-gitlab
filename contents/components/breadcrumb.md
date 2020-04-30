@@ -1,6 +1,8 @@
 ---
 name: Breadcrumb
-status: built
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A5
+docs: complete
+gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/blob/master/src/components/base/breadcrumb
 vueComponents:
   - GlBreadcrumb
 related:

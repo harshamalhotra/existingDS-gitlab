@@ -1,6 +1,7 @@
 ---
 name: Banner
-status: built
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A4
+docs: complete
 vueComponents:
   - GlBanner
 related:

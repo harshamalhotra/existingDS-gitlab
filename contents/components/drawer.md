@@ -1,5 +1,6 @@
 ---
 name: Drawer
+docs: complete
 vueComponents:
   - GlDrawer
 related:

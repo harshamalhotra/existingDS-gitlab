@@ -1,6 +1,7 @@
 ---
 name: Date picker
-status: built
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A13
+docs: complete
 vueComponents:
   - GlDatepicker
 related:
@@ -24,9 +25,9 @@ When using the input field, users are able to enter a date in different formats.
 
 A combination of two date pickers can be used for selecting a range of dates. The user can do so by selecting a start and end date. When implementing a range date picker, the following guidelines should be followed:
 
-- The order of the “From” and “To” date input fields should match the user’s reading direction setting (left-to-right or right-to-left). On mobile devices, the two date input fields are full-width and stacked so the user’s reading direction shouldn’t have an effect on the order—the starting date field (“From”) is always on top, the ending date field (“To”) is always on the bottom. 
-- Once a user selects the starting date (“From”), the date picker for the ending date (“To”) should only allow them to pick a date that is either equal or after that. The days preceding the start date should be disabled and thus not selectable. 
-- The default month shown in the date picker dropdown should be the current month (M). If the user picks a start date (“From”) that’s in the future (for example M+1), the default month shown for the ending date (“To”) date picker dropdown should be that same month (M+1) and not the current month (M). This doesn’t apply for starting dates selected in the past. 
+- The order of the “From” and “To” date input fields should match the user’s reading direction setting (left-to-right or right-to-left). On mobile devices, the two date input fields are full-width and stacked so the user’s reading direction shouldn’t have an effect on the order—the starting date field (“From”) is always on top, the ending date field (“To”) is always on the bottom.
+- Once a user selects the starting date (“From”), the date picker for the ending date (“To”) should only allow them to pick a date that is either equal or after that. The days preceding the start date should be disabled and thus not selectable.
+- The default month shown in the date picker dropdown should be the current month (M). If the user picks a start date (“From”) that’s in the future (for example M+1), the default month shown for the ending date (“To”) date picker dropdown should be that same month (M+1) and not the current month (M). This doesn’t apply for starting dates selected in the past.
 
 [[Example:basic-daterange-picker]]
 

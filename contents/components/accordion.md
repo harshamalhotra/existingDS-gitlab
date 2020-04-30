@@ -1,5 +1,7 @@
 ---
 name: Accordion
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A0
+docs: in-progress
 related:
 - modals
 - tree
@@ -31,8 +33,8 @@ An accordion can be used on its own or with [more accordions](#multiple-accordio
 | Do | Don't |
 | ------ | ------ |
 | Use icons and [animation](/product-foundations/motion) to easily reflect collapsed and expanded states. | Leave the header without icon or use a [button](/components/buttons) to trigger the expand/collapse action.|
-| Trigger collapsed and expanded states when clicking on either the header or icon. | Make the icon the only way to trigger collapsed and expanded states. | 
-| Use a [chevron icon](#icon) to indicate the expand/collapse behavior. | Use an icon that can not reflect the transition like a [question mark icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question). | 
+| Trigger collapsed and expanded states when clicking on either the header or icon. | Make the icon the only way to trigger collapsed and expanded states. |
+| Use a [chevron icon](#icon) to indicate the expand/collapse behavior. | Use an icon that can not reflect the transition like a [question mark icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question). |
 
 ## Specifications
 
@@ -89,4 +91,4 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 - [NN/G: Progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/)
 - [Smashing Magazine - Designing The Perfect Accordion](https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/#top)
 - [NN/G: Accordions Are Not Always the Answer for Complex Content on Desktops](https://www.nngroup.com/articles/accordions-complex-content/)
-- [Viget - Testing Accordion Menu Designs & Iconography](https://www.viget.com/articles/testing-accordion-menu-designs-iconography/) 
+- [Viget - Testing Accordion Menu Designs & Iconography](https://www.viget.com/articles/testing-accordion-menu-designs-iconography/)

@@ -24,11 +24,28 @@ table:not(.pika-table):not(.gl-table) {
     &.header {
       font-weight: $font-weight--bold;
       background: $gray-50;
-      border-right: $gl-spacing-1 solid $border-color--light;
     }
   }
 
   td.f-bold{
     font-weight: $font-weight--bold;
+  }
+}
+
+.status-table {
+  table-layout: fixed;
+
+  th {
+    position: sticky;
+    top: -2px;
+  }
+
+  td:not(:first-child) {
+    color: $black;
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
 }

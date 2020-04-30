@@ -1,6 +1,7 @@
 ---
 name: Segmented control
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A135
+docs: complete
 vueComponents:
   - GlSegmentedControl
 related:

@@ -1,6 +1,7 @@
 ---
 name: Broadcast message
-status: built
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A6
+docs: complete
 vueComponents:
   - GlBroadcastMessage
 related:

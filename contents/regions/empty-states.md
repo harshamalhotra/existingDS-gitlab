@@ -1,6 +1,5 @@
 ---
 name: Empty States
-status: integrated
 vueComponents:
   - GlEmptyState
 related:

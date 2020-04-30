@@ -1,6 +1,8 @@
 ---
 name: Tabs
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A138
+docs: in-progress
+gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/tabs
 vueComponents:
   - GlTabs
   - GlTab

@@ -1,6 +1,7 @@
 ---
 name: Popover
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A131
+docs: complete
 vueComponents:
   - GlPopover
 related:

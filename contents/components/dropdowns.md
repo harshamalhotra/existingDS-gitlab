@@ -1,6 +1,6 @@
 ---
 name: Dropdowns
-status: integrated
+docs: in-progress
 vueComponents:
   - GlNewDropdown
 related:

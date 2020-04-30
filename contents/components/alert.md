@@ -1,6 +1,7 @@
 ---
 name: Alert
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A1
+docs: complete
 vueComponents:
   - GlAlert
 related:

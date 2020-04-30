@@ -1,6 +1,7 @@
 ---
 name: Forms
-status: integrated
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A10
+docs: in-progress
 vueComponents:
   - GlFormGroup
   - GlFormInput
@@ -53,7 +54,7 @@ Todo: Add live component block with code example (predefined widths from specs +
 
 #### Clear button
 
-A clear button can appear on the right side of an input field when it has content, to help a user clear the content with a single click. After removing the content, it disappears and the focus is placed on the input field. The clear button should be implemented as a button, accessible via keyboard, and its name announced as “Clear” for assistive technology. 
+A clear button can appear on the right side of an input field when it has content, to help a user clear the content with a single click. After removing the content, it disappears and the focus is placed on the input field. The clear button should be implemented as a button, accessible via keyboard, and its name announced as “Clear” for assistive technology.
 
 The clear button can be useful for input fields that satisfy both of the following criteria:
 

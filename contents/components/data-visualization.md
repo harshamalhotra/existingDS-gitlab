@@ -1,6 +1,6 @@
 ---
 name: Data visualization
-status: integrated
+docs: in-progress
 vueComponents:
   - GlHeatmap
 related:

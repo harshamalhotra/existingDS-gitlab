@@ -1,6 +1,9 @@
 ---
 name: Component name
-# status: in-progress|built|implemented|deprecated (default: in-progress)
+figma: Link to figma component in Pajamas UI Kit
+docs: upcoming | in-progress | complete
+a11y: upcoming | in-progress | complete
+gitlab_ui: Link to base folder in GitLab UI respository - Must be complete and conform to design system
 vueComponents:
   - Related vue component name
 
@@ -34,13 +37,13 @@ A summary of how the component should be used.
   DO NOT add static images to any page at this time.
 -->
 
-### Dos and Dont’s 
+### Dos and Dont’s
 
 <!--
   EXAMPLE TABLE, optionally, this can be used to highlight Do's & Don'ts
   Do is a guideline that should always be followed. On the other hand, you need a really unusual use case for breaking a Do guideline
   The Do's & Don'ts should be correlated
-  e.g. Use chevrons between breadcrumb items vs. Use slashes or other characters to separate breadcrumb items. 
+  e.g. Use chevrons between breadcrumb items vs. Use slashes or other characters to separate breadcrumb items.
 -->
 
 | Component type | Purpose |
@@ -89,7 +92,7 @@ Todo: Add live component block with code example
 
 <!--
   DESIGN SPECIFICATIONS, add a link here to the component in the Pajamas UI Kit. In most cases this will be a link the component’s “Variants” frame. You can find this link by clicking on the “Variants” frame and then copying the link from the “Share” option.
-  *** Follow the “Figma component” issue template in Pajamas to create the component. 
+  *** Follow the “Figma component” issue template in Pajamas to create the component.
 -->
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:

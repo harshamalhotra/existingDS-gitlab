@@ -1,5 +1,7 @@
 ---
 name: Sorting
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=2956%3A3038
+docs: in-progress
 related:
   - dropdowns
   - filter
@@ -22,14 +24,14 @@ Sorting allows users to quickly re-organize similar content on a long list when 
 
 ### Sorting "don'ts"
 
-- When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns). 
+- When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See dropdown guidelines](/components/dropdowns).
 - If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
 
 ### Sorting vs filtering
 
 Sorting and filtering are closely tied. Sorting can be used independently or in tandem with filtering.
 
-Filtering works by hiding part of the data that would otherwise be displayed on the list. Unlike filtering, sorting doesn't hide content, but rather re-orders it based on a specified criteria. Also, in contrast to filtering, sorting never produces zero search results. 
+Filtering works by hiding part of the data that would otherwise be displayed on the list. Unlike filtering, sorting doesn't hide content, but rather re-orders it based on a specified criteria. Also, in contrast to filtering, sorting never produces zero search results.
 
 ### Sorting component
 
