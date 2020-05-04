@@ -33,9 +33,9 @@ A lot of failures are auto-fixable, so simply run `yarn run lint:fix` to fix err
 
 We use conventional commits specifications to write meaningful commit messages that are used as part of our semantic release process. [Learn how to write conventional commits](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/commits.md).
 
-## Creating a Figma component
+## Contributing to our Pajamas UI Kit
 
-To create a new Figma component, [create an issue with the Figma component template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Figma%20component) and follow the steps in the template. 
+To contribute to our UI design library in Figma, [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit), [review our contributing guidelines](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/pajamas-ui-kit.md).
 
 ## Writing component documentation
 
