@@ -224,6 +224,8 @@ Buttons are ordered by importance from right to left. This means primary buttons
 
 Buttons are positioned towards the right and are placed next to each other when there are multiple. This applies to buttons with affirmative, dismissive, and destructive actions.
 
+An exception to this rule is the use of buttons in [alerts](/components/alert), which are always left-aligned.
+
 Please note to **not** place a button below another button if there is space to place them side by side.
 
 ## Labels
