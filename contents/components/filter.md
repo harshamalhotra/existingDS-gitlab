@@ -1,12 +1,14 @@
 ---
 name: Filter
 docs: in-progress
+gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/filtered_search
+vueComponents:
+  - GlFilteredSearch
 related:
   - token
   - search
   - list
   - dropdowns
-
 ---
 
 Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
@@ -54,7 +56,7 @@ Todo: Add accessibility guidelines and requirements
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:filtered-search]]
 
 ## Design specifications
 
