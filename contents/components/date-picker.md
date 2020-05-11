@@ -34,4 +34,4 @@ A combination of two date pickers can be used for selecting a range of dates. Th
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for the Date picker](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/datepicker-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4592%3A7453)

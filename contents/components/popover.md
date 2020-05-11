@@ -41,4 +41,4 @@ Be mindful of the popover content that could overflow the viewport, and avoid po
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for Popovers](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/popovers-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=439%3A65)
