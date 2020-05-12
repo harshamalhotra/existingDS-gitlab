@@ -1,3 +1,10 @@
+## [1.1.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.1.0...v1.1.1) (2020-05-12)
+
+
+### Bug Fixes
+
+* Update design spec links for several components ([d7755a1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d7755a1920a65e703027c9236abe64899cbd3c4d))
+
 # [1.1.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.0.0...v1.1.0) (2020-05-08)
 
 
