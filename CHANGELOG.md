@@ -1,3 +1,10 @@
+# [1.2.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.1.1...v1.2.0) (2020-05-13)
+
+
+### Features
+
+* **statustable:** Add new columns to component status table ([63dc07b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/63dc07b4d61268f1dc59157471a0bfeeff99daea))
+
 ## [1.1.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.1.0...v1.1.1) (2020-05-12)
 
 
