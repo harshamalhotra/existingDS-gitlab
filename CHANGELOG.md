@@ -1,3 +1,10 @@
+# [1.5.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.4.0...v1.5.0) (2020-05-14)
+
+
+### Features
+
+* **fileuploader:** Add documentation for file uploader ([9726a98](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9726a98dd79629b82c97984f686b50cb33e48193))
+
 # [1.4.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.3.0...v1.4.0) (2020-05-14)
 
 
