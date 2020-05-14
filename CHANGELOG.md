@@ -1,3 +1,10 @@
+# [1.4.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.3.0...v1.4.0) (2020-05-14)
+
+
+### Features
+
+* **filter:** Add vue component link and component example ([450ac8e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/450ac8e311ed6198abc175f0ffab6c6770ea1697))
+
 # [1.3.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.2.1...v1.3.0) (2020-05-14)
 
 
