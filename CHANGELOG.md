@@ -1,3 +1,10 @@
+## [1.2.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.2.0...v1.2.1) (2020-05-14)
+
+
+### Bug Fixes
+
+* **css:** Rename colour gray-0 to gray-10 ([f2376c8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f2376c8375f6dee1e87e46eb02e1ca4b06cf97f3))
+
 # [1.2.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.1.1...v1.2.0) (2020-05-13)
 
 
