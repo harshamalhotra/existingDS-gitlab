@@ -1,3 +1,10 @@
+# [1.3.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.2.1...v1.3.0) (2020-05-14)
+
+
+### Features
+
+* **sorting:** Add Pajamas UI Kit link for sorting component ([b94ef04](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b94ef04af5f4e03ade50463c353d370a8eef6fbc))
+
 ## [1.2.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.2.0...v1.2.1) (2020-05-14)
 
 
