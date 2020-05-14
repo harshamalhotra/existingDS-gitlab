@@ -64,11 +64,11 @@ Before        After (reflected below)
 900           900
 950           950
 
-† 500 and up passes 4.5:1 contrast ratio on $gray-0
+† 500 and up passes 4.5:1 contrast ratio on $gray-10
 */
 
 $white: #fff;
-$gray-0: #fafafa;
+$gray-10: #fafafa;
 $gray-50: #f0f0f0;
 $gray-100: #dbdbdb;
 $gray-200: #bfbfbf;
@@ -169,7 +169,7 @@ $t-indigo-a-06: rgba($t-indigo-200, 0.06);
 $t-indigo-a-08: rgba($t-indigo-200, 0.08);
 $t-indigo-a-24: rgba($t-indigo-200, 0.24);
 
-$t-gray-0: $gray-0;
+$t-gray-10: $gray-10;
 $t-gray-50: $gray-50;
 $t-gray-100: $gray-100;
 $t-gray-200: $gray-200;

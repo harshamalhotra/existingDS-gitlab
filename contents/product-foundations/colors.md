@@ -710,8 +710,8 @@ Our neutral palette is primarily used within components to help differentiate hi
         </div>
       </div>
       <div class="color">
-        <div class="color-overview c-background-gray-0 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-0</span>
+        <div class="color-overview c-background-gray-10 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$gray-10</span>
           <span class="hex f-small">#fafafa</span>
         </div>
       </div>
@@ -1266,8 +1266,8 @@ There are seven different theme options that users can choose to customize the a
     <h3>Neutral</h3>
     <div class="distributed palette">
       <div class="color">
-        <div class="color-overview c-background-gray-0 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-0</span>
+        <div class="color-overview c-background-gray-10 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$t-gray-10</span>
           <span class="hex f-small">#fafafa</span>
         </div>
       </div>
@@ -1367,4 +1367,4 @@ At GitLab, we are dedicated to continually improving the accessibility of the ap
 - **AA+** - Pass, large text only 3:1+
 - **F** - Doesn’t pass
 
-Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1f1f`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-0` (`#fafafa`) or lighter.
+Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1f1f`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fafafa`) or lighter.
