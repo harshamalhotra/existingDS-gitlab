@@ -1,3 +1,10 @@
+## [1.5.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.5.0...v1.5.1) (2020-05-15)
+
+
+### Bug Fixes
+
+* **Pajamas UI Kit:** Remove beta reference to correct resource anchor ([da74802](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/da74802b144d5e3f97828ce8df5e1ed8001b2b72))
+
 # [1.5.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.4.0...v1.5.0) (2020-05-14)
 
 
