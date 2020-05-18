@@ -1,21 +1,29 @@
 <script>
+import { GlBadge } from '@gitlab/ui';
 import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
 
 const statusIcons = {
-  upcoming: '🚫',
-  'in-progress': '⚠',
-  complete: '✅',
+  upcoming: 'muted',
+  'in-progress': 'info',
+  complete: 'success',
 };
 
 export default {
+  components: {
+    GlBadge,
+  },
   data() {
     return {
       contentTree,
     };
   },
   methods: {
-    getStatusIcon(status) {
+    getBadgeVariant(status) {
       return statusIcons[status];
+    },
+    readableString(status) {
+      const string = status.split('-').join(' ');
+      return string.charAt(0).toUpperCase() + string.slice(1);
     },
   },
   head: {
@@ -31,31 +39,6 @@ export default {
       <p>Components and their variants have statuses reflecting their state of completion, documented on this page. <br />
         Check back here anytime to see current component status information.</p>
       <p>See more detailed progress on our Design System <a href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues">issue tracker</a>.</p>
-      <h2>Legend</h2>
-      <table
-        class="m-t-6 m-b-6"
-        style="width: 50%;"
-      >
-        <tbody>
-          <tr>
-            <th class="header">Icon</th>
-            <th class="header">Status</th>
-          </tr>
-          <tr>
-            <td>🚫</td>
-            <td>Upcoming</td>
-          </tr>
-          <tr>
-            <td>⚠️</td>
-            <td>In progress</td>
-          </tr>
-          <tr>
-            <td>✅</td>
-            <td>Complete</td>
-          </tr>
-        </tbody>
-      </table>
-
       <h2>Status</h2>
       <table class="m-t-6 m-b-6 status-table">
         <template v-if="contentTree">
@@ -85,9 +68,9 @@ export default {
                   :href="component.figma"
                   target="_blank"
                   rel="noopener noreferrer"
-                >{{getStatusIcon('complete')}}</a>
+                ><gl-badge :variant="getBadgeVariant('complete')">Complete</gl-badge></a>
                 <div v-else>
-                  {{getStatusIcon('upcoming')}}
+                  <gl-badge :variant="getBadgeVariant('upcoming')">Upcoming</gl-badge>
                 </div>
               </td>
               <!-- Documentation -->
@@ -95,7 +78,7 @@ export default {
                 <nuxt-link
                   :key="`link-${component.id}`"
                   :to="`/components/${component.id}`"
-                >{{getStatusIcon(component.docs)}}</nuxt-link>
+                ><gl-badge :variant="getBadgeVariant(component.docs)">{{ readableString(component.docs) }}</gl-badge></nuxt-link>
               </td>
               <!-- Ready to use in production -->
               <!-- TODO: Add new link address after creating direct links to Vue component on pages -->
@@ -104,8 +87,8 @@ export default {
                   v-if="component.hasVueComponent"
                   :key="`link-${component.id}`"
                   :to="`/components/${component.id}`"
-                >{{getStatusIcon('complete')}}</nuxt-link>
-                <div v-else>{{getStatusIcon('upcoming')}}</div>
+                ><gl-badge :variant="getBadgeVariant('complete')">Complete</gl-badge></nuxt-link>
+                <div v-else><gl-badge :variant="getBadgeVariant('upcoming')">Upcoming</gl-badge></div>
               </td>
               <!-- GitLab UI -->
               <td class="app-styles">
@@ -114,14 +97,14 @@ export default {
                   :href="component.gitlab_ui"
                   target="_blank"
                   rel="noopener noreferrer"
-                >{{getStatusIcon('complete')}}</a>
+                ><gl-badge :variant="getBadgeVariant('complete')">Complete</gl-badge></a>
                 <div v-else>
-                  {{getStatusIcon('in-progress')}}
+                  <gl-badge :variant="getBadgeVariant('in-progress')">In progress</gl-badge>
                 </div>
               </td>
               <!-- Accessibility review -->
               <td class="app-styles">
-                <div>{{getStatusIcon(component.a11y)}}</div>
+                <div><gl-badge :variant="getBadgeVariant(component.a11y)">{{ readableString(component.a11y) }}</gl-badge></div>
               </td>
             </tr>
           </tbody>
