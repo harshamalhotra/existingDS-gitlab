@@ -63,4 +63,4 @@ When querying for a user, project, or group, an avatar token should be used. The
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for tokens](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tokens-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=6934%3A9243)
