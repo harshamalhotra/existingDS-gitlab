@@ -1,3 +1,10 @@
+# [1.8.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.7.0...v1.8.0) (2020-05-20)
+
+
+### Features
+
+* **progressbar:** Add documentation for progress bar ([cd2739b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cd2739b651cffe2ca6e82ff9e7dafcdef21d2674))
+
 # [1.7.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.6.0...v1.7.0) (2020-05-20)
 
 
