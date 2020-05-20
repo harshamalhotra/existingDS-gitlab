@@ -1,3 +1,10 @@
+# [1.6.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.5.1...v1.6.0) (2020-05-20)
+
+
+### Features
+
+* **token:** Add Pajamas UI Kit link for tokens ([296ffa1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/296ffa175ca182855d08f8648b9f5f9bf4e63265))
+
 ## [1.5.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.5.0...v1.5.1) (2020-05-15)
 
 
