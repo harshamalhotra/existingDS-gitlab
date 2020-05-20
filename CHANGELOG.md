@@ -1,3 +1,10 @@
+# [1.7.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.6.0...v1.7.0) (2020-05-20)
+
+
+### Features
+
+* **banner:** Add dismissal guidelines ([1dd8338](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1dd8338148342f41ecd75fcb900f481e3fc373cf))
+
 # [1.6.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.5.1...v1.6.0) (2020-05-20)
 
 
