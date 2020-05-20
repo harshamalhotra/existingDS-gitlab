@@ -1,3 +1,10 @@
+# [1.9.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.8.0...v1.9.0) (2020-05-20)
+
+
+### Features
+
+* **Sorting:** Refining sorting vs filtering guidelines ([53f1543](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/53f154311cdef36c08723d5eb40ce5a353e1830e))
+
 # [1.8.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.7.0...v1.8.0) (2020-05-20)
 
 
