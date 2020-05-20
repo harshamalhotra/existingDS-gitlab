@@ -50,6 +50,15 @@ Use a container to bound the banner within the page or page section. This is imp
 
 The dismiss action is always represented by the `Close` icon and anchored to the top right of the banner.
 
+Banner dismissal should work as follows:
+* Banner dismissal must be associated with the user in the system database. Dismissal must persist, even across version upgrades and clients.
+* Banners do not reappear by default. In rare circumstances, you may present the banner again to a user after some time has passed.
+* Banners should only be shown to users who are logged in.
+
+**Implementation Notes:**
+* The dismissal of the banner is achieved using the `UserCallout` model on the backend and the `PersistentUserCallout` JS file on the frontend. If both parameters are implemented correctly, the banner will adhere to the dismissal guidelines above.
+
+
 #### Header
 
 The header should always be present and written to follow our [voice and tone](https://design.gitlab.com/content/voice-tone/) guidelines.
