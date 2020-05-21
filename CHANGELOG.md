@@ -1,3 +1,10 @@
+# [1.10.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.9.0...v1.10.0) (2020-05-21)
+
+
+### Features
+
+* **tree:** Add design spec link for Tree component ([0e8def7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0e8def726a393f86224623c7b645340df7c99edd))
+
 # [1.9.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.8.0...v1.9.0) (2020-05-20)
 
 
