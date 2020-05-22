@@ -116,19 +116,19 @@
           </div>
           <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
             <a
-              href="https://gitlab.com/gitlab-org/gitlab-design/blob/master/doc/sketch-ui-kit.md#files"
+              href="https://www.figma.com/community/file/781156790581391771/"
               target="_blank"
               class="text-center"
             >
               <img
                 width="48"
                 height="48"
-                src="../assets/images/resources/r-sketch.png"
+                src="../assets/images/resources/r-figma.png"
                 class="a-center d-block"
                 alt=""
               />
               <span class="d-block p-a-3">
-                Download our Sketch UI Kit
+                Duplicate our Figma UI Kit
               </span>
             </a>
           </div>
