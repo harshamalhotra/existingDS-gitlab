@@ -58,9 +58,3 @@ TODO: Add design specs link
 ### Accessibility
 
 TODO: Add accessibility specs
-
-[Figma preview for INSERT NAME OF COMPONENT HERE](/)
-
-## Resources
-
-*   [A related resource used when writing this documentation](/) -->
