@@ -1,3 +1,10 @@
+## [1.10.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.0...v1.10.1) (2020-05-22)
+
+
+### Bug Fixes
+
+* **homepage:** Updated link to Figma UI Kit ([9d3eb22](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9d3eb224b39a9a0b1aa99282c989727509ea6f95))
+
 # [1.10.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.9.0...v1.10.0) (2020-05-21)
 
 
