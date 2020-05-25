@@ -1,3 +1,10 @@
+## [1.10.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.1...v1.10.2) (2020-05-25)
+
+
+### Bug Fixes
+
+* **file-uploader:** Remove broken anchors ([c430214](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c430214435bbe60bab3579258fb3742202a51fbb))
+
 ## [1.10.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.0...v1.10.1) (2020-05-22)
 
 
