@@ -1,3 +1,10 @@
+# [1.11.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.3...v1.11.0) (2020-05-27)
+
+
+### Features
+
+* **report:** Add report object documentation ([7293914](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7293914f01ae4db15d67a420d98d61bdab7e4fcb))
+
 ## [1.10.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.2...v1.10.3) (2020-05-27)
 
 
