@@ -1,3 +1,10 @@
+# [1.12.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.11.0...v1.12.0) (2020-05-27)
+
+
+### Features
+
+* Add param for vue component section ([879f0ea](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/879f0ea7a75a456396118030ea2d91e4c8220e70))
+
 # [1.11.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.3...v1.11.0) (2020-05-27)
 
 
