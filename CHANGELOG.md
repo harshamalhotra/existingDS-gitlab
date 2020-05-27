@@ -1,3 +1,10 @@
+## [1.10.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.2...v1.10.3) (2020-05-27)
+
+
+### Bug Fixes
+
+* **file-uploader:** Fix casing to ensure Todo banner is correctly parsed ([e9732b3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e9732b3386de7caeb8d001157c3031b921b6d7b6))
+
 ## [1.10.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.10.1...v1.10.2) (2020-05-25)
 
 
