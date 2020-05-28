@@ -108,7 +108,7 @@ export default {
           </gl-tab>
           <gl-tab
             title="Vue Component"
-            :active="this.$route.query.tab = 'vue'"
+            :active="this.$route.query.tab == 'vue'"
             class="app-styles js-gl-tab"
           >
             <div class="pt-3">
