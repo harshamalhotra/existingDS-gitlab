@@ -1,3 +1,10 @@
+## [1.12.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.0...v1.12.1) (2020-05-28)
+
+
+### Bug Fixes
+
+* Fix query url for vue ([ac11d9f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ac11d9fae1671e5cccf930c6239d27c05d0d9840))
+
 # [1.12.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.11.0...v1.12.0) (2020-05-27)
 
 
