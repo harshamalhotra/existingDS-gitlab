@@ -1,5 +1,7 @@
 .page {
-  padding-left: $nav-sidebar-width;
+  @media (min-width: 600px) {
+    padding-left: $nav-sidebar-width;
+  }
 }
 
 .content {
@@ -12,7 +14,7 @@
   }
 
   img {
-     max-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -71,26 +73,37 @@
     &.col-50 {
       width: 50%;
 
-      &:nth-child(2n+1) { padding-left: 0; }
-      &:nth-child(2n+2) { padding-right: 0; }
+      &:nth-child(2n + 1) {
+        padding-left: 0;
+      }
+      &:nth-child(2n + 2) {
+        padding-right: 0;
+      }
     }
 
     &.col-33 {
       width: 33%;
 
-      &:nth-child(3n+1) { padding-left: 0; }
-      &:nth-child(3n) { padding-right: 0; }
+      &:nth-child(3n + 1) {
+        padding-left: 0;
+      }
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
     }
 
     &.col-25 {
       width: 25%;
 
-      &:nth-child(4n+1) { padding-left: 0; }
-      &:nth-child(4n)   { padding-right: 0; }
+      &:nth-child(4n + 1) {
+        padding-left: 0;
+      }
+      &:nth-child(4n) {
+        padding-right: 0;
+      }
     }
   }
 }
-
 
 // Figure
 
@@ -101,7 +114,7 @@
   // Using padding instead of margin because of the .md styles
   padding-bottom: $gl-spacing-7;
   text-align: center;
-  
+
   &--dark {
     background-color: $gray-950;
     color: $white;
@@ -120,4 +133,3 @@
   font-size: $base-font-size;
   line-height: 1.5;
 }
-
