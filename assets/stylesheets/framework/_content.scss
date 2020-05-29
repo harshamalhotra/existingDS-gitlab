@@ -1,5 +1,17 @@
-.page {
+@mixin small-screen() {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin large-screen() {
   @media (min-width: 600px) {
+    @content;
+  }
+}
+
+.page {
+  @include large-screen {
     padding-left: $nav-sidebar-width;
   }
 }
@@ -8,6 +20,23 @@
   padding: 0 $gl-spacing-5;
   margin: 0 auto;
   min-width: $page-width / 3;
+
+  @include large-screen {
+    padding: 0 $gl-spacing-7;
+  }
+
+  @include small-screen {
+    &.main {
+      .limited {
+        margin-top: 0;
+      }
+
+      .md > h1 {
+        padding-top: $gl-spacing-3;
+        padding-left: $gl-spacing-8 - $gl-spacing-3;
+      }
+    }
+  }
 
   &.limited {
     max-width: $page-width;

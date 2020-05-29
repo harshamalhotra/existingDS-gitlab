@@ -1,12 +1,18 @@
+@mixin large-screen() {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
 .nav-sidebar__toggle {
   position: fixed;
   top: 1rem;
-  left: 0.75rem;
+  left: 0.5rem;
   z-index: $z-nav-sidebar + 1;
   background: none;
   border: 0;
 
-  @media (min-width: 600px) {
+  @include large-screen {
     display: none;
   }
 }
@@ -25,7 +31,7 @@
   transition: transform 0.1s ease-out;
   transform: translateX(-100%);
 
-  @media (min-width: 600px) {
+  @include large-screen {
     transform: translateX(0);
   }
   &.nav-sidebar--open {
@@ -56,6 +62,11 @@
 
   .nav-sidebar__header {
     border-bottom: 1px solid $border-color;
+    padding-left: 40px;
+
+    @include large-screen {
+      padding-left: 0;
+    }
   }
 
   .nav-sidebar__body {
