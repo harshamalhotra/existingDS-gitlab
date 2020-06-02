@@ -5,7 +5,10 @@ import fiber from 'fibers';
 import { getContentList, writeContentTree } from './modules/content_preparer';
 
 const routes = [
-  ...getContentList('components').map(c => `components/${c.id}`),
+  ...getContentList('components').reduce(
+    (acc, c) => [...acc, `components/${c.id}`, `components/${c.id}/code`],
+    [],
+  ),
   ...glob.sync('**/*.md', { cwd: 'contents/' }).map(filePath => filePath.replace(/\.md$/, '')),
 ];
 
@@ -59,6 +62,13 @@ module.exports = {
   generate: {
     dir: 'public',
     routes,
+  },
+
+  router: {
+    extendRoutes(originalRoutes) {
+      const sectionSlugRoute = originalRoutes.find(route => route.name === 'section-slug');
+      sectionSlugRoute.path += '/:tab?';
+    },
   },
 
   axios: {

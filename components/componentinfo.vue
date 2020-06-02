@@ -76,6 +76,15 @@ export default {
     setActiveTab(tabEl) {
       this.tabIndex = [...tabEl.parentNode.children].indexOf(tabEl);
     },
+    activateTab(tab = null) {
+      this.$router.push({
+        ...this.$route,
+        params: {
+          ...this.$route.params,
+          tab,
+        },
+      });
+    },
   },
   head() {
     return {
@@ -102,14 +111,16 @@ export default {
             title="Design"
             active
             class="p-t-3 js-gl-tab"
+            @click.prevent="activateTab()"
           >
             <md-display :md="componentBody" />
             <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
           </gl-tab>
           <gl-tab
             title="Vue Component"
-            :active="this.$route.query.tab == 'vue'"
+            :active="this.$route.params.tab === 'code'"
             class="app-styles js-gl-tab"
+            @click.prevent="activateTab('code')"
           >
             <div class="pt-3">
               <template v-for="vueComponentName in vueComponents">

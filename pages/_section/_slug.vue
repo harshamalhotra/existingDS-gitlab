@@ -8,7 +8,8 @@ export default {
   },
   asyncData({ route }) {
     const { path } = route;
-    return import(`~/contents${path}.md`).then(({ default: fmResult }) => ({ fmResult }));
+    const mdFile = path.replace(`/${route?.params?.tab}`, '');
+    return import(`~/contents${mdFile}.md`).then(({ default: fmResult }) => ({ fmResult }));
   },
 };
 </script>
