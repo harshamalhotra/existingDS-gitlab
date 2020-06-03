@@ -36,7 +36,7 @@ export default {
 
 <template>
   <div class="page">
-    <div v-if="open" class="nav-sidebar-overlay" @click="open = false"></div>
+    <div v-if="open" class="nav-sidebar__overlay" @click="open = false"></div>
     <button type="button" class="nav-sidebar__toggle" :aria-expanded="show" @click="open = !open">
       <svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Toggle menu</title>
