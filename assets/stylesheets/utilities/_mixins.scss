@@ -4,16 +4,14 @@
 
 @mixin center($position) {
   position: absolute;
-  
+
   @if $position == 'vertical' {
     top: 50%;
     transform: translateY(-50%);
-  }
-  @else if $position == 'horizontal' {
+  } @else if $position == 'horizontal' {
     left: 50%;
     transform: translate(-50%);
-  }
-  @else if $position == 'both' {
+  } @else if $position == 'both' {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -60,5 +58,23 @@
   animation-name: $animation-name;
   @include keyframes($animation-name) {
     @content;
+  }
+}
+
+@mixin media-sm-up() {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin media-sm-down() {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin hide-sm-up() {
+  @include media-sm-up() {
+    display: none;
   }
 }

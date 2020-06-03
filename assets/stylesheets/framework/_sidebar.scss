@@ -1,9 +1,3 @@
-@mixin large-screen() {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
 .nav-sidebar__toggle {
   position: fixed;
   top: 1rem;
@@ -12,9 +6,7 @@
   background: none;
   border: 0;
 
-  @include large-screen {
-    display: none;
-  }
+  @include hide-sm-up;
 }
 
 .nav-sidebar {
@@ -31,9 +23,10 @@
   transition: transform 0.1s ease-out;
   transform: translateX(-100%);
 
-  @include large-screen {
+  @include media-sm-up {
     transform: translateX(0);
   }
+
   &.nav-sidebar--open {
     transform: translateX(0);
   }
@@ -64,7 +57,7 @@
     border-bottom: 1px solid $border-color;
     padding-left: 40px;
 
-    @include large-screen {
+    @include media-sm-up {
       padding-left: 0;
     }
   }
@@ -177,6 +170,18 @@
       text-decoration: none;
     }
   }
+}
+
+.nav-sidebar__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $t-gray-a-24;
+  z-index: $z-nav-sidebar;
+
+  @include hide-sm-up;
 }
 
 // Hides summary arrow //
