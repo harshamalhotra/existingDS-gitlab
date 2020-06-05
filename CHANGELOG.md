@@ -1,3 +1,10 @@
+## [1.12.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.1...v1.12.2) (2020-06-05)
+
+
+### Bug Fixes
+
+* **Sorting:** Reformat docs only, no content change ([186a610](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/186a6103b8bf4af5a0741cc091ac2e076b554018))
+
 ## [1.12.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.0...v1.12.1) (2020-05-28)
 
 
