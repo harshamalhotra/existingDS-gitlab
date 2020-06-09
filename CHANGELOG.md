@@ -1,3 +1,10 @@
+# [1.13.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.2...v1.13.0) (2020-06-09)
+
+
+### Features
+
+* **tables:** Update table documentation layout ([1ba10f4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1ba10f46c70b0328586b90ab8d5539d4a6b38bd6))
+
 ## [1.12.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.1...v1.12.2) (2020-06-05)
 
 
