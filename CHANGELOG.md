@@ -1,3 +1,10 @@
+# [1.14.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.13.0...v1.14.0) (2020-06-09)
+
+
+### Features
+
+* **statustable:** Use gitlab badges for status table ([a1fa460](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a1fa4605638f30397a8f353b9764229cc9a6e29d))
+
 # [1.13.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.12.2...v1.13.0) (2020-06-09)
 
 
