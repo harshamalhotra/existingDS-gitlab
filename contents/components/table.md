@@ -10,7 +10,7 @@ related:
   - filter
 ---
 
-Tables are used to render tabular data in a basic grid, making it easier for people to scan it. Tables are comprised of cells, columns, and rows.
+Tables display tabular data in a basic grid comprised of cells, columns, and rows. This format makes it easy for users to scan large amounts of data.
 
 ## Usage
 
@@ -38,13 +38,75 @@ Do not use tables to:
 - Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
 - For hierarchical structures. Use the [Tree](/components/tree) view instead.
 
-## Layout
+### Basic table
+
+The basic table is the default option for this component. However, additional functionality can be added to enhance the table for different use cases.
+
+## Additional functionality
+
+### Search & filter
+
+Any filtering controls that manipulate the data set should be placed directly above the table with the option to clear all data. [See filter guidelines](/components/filter)
+
+### Ordering & sorting
+
+The data set of a table is usually ordered by one specific column representing an attribute, such as status, last updated, or priority.
+
+Sorting is designed as a native functionality of tables, and should not be confused with the [list sorting](/components/sorting) component.
+
+When sorting is enabled for the table, a [sorting icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=sort) is displayed next to the column header. A sortable table is identified by the sorting icon that is present in the header cells. Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order. The sorting icon and functionality should not be visible on responsive tables.
+
+Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
+
+### Pagination
+
+Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](/components/pagination)
+
+Tables with more than 20 items require pagination which is always located below the table and takes the form of a button group. Pagination is generally not required on tables with 20 or fewer items.
+
+Todo: Add live component block with code example including pagination
+
+### Additional actions
+
+It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
+
+Table rows can include additional actions located in their far-right column. These actions should be visible at all times rather than showing on-hover. If there are two or more actions in a table row, consider using a button group or a [“more menu” button](/components/button#ellipsis) with a dropdown list option.
+
+Todo: Add demo
+
+## Anatomy
+
+### Header
+
+A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
+
+Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, and so on. For example, a header in Audit Events is redundant:
+
+Todo: Add live component block with code example of Audit Events table
+
+### Cells
+
+A cell’s width and height will change according to its content.
+
+It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the `lang` attribute of a parent element, and support depends on the specific browser.
+
+### Columns
+
+Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
+
+### Rows
+
+Rows can have a mix of read-only and editable cells with content populated by users. When designing a table, make sure the cells work well together and fit nicely in the rows.
+
+### Layout
 
 Tables take up the full width of their container element. However, it is important to note that wide tables make it difficult to read and scan small amounts of content, because the data is widely separated. For legibility, ensure content is laid out and aligned properly.
 
 Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 
 Prevent horizontal scrolling to ensure the table doesn't break the layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/tables/#responsiveness).
+
+## Content
 
 ### Empty state
 
@@ -58,65 +120,15 @@ Todo: Add live component block with code example of table alignment -- mixed dat
 
 Text in tables tends to end up in narrow columns. Don't justify or center the text; it causes confusion and harms readability.
 
-## Table anatomy
-
-### Cells
-
-A cell’s width and height will change according to its content.
-
-It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the `lang` attribute of a parent element, and support depends on the specific browser.
-
 #### Truncation
 
 To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. On hover, the truncated text should display a tooltip that includes the full text. [See tooltips guidelines](/components/tooltips)
 
-#### Empty values
+#### Null values
 
 If a cell is empty or unavailable, keep the cell empty to reduce noise and help with legibility.
 
-### Columns
-
-Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
-
-#### Ordering & sorting
-
-The data set of a table is usually ordered by one specific column representing an attribute, such as status, last updated, or priority.
-
-Sorting is designed as a native functionality of tables, and should not be confused with the [list sorting](/components/sorting) component.
-
-When sorting is enabled for the table, a [sorting icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=sort) is displayed next to the column header. A sortable table is identified by the sorting icon that is present in the header cells. Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order. The sorting icon and functionality should not be visible on responsive tables.
-
-Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
-
-### Rows
-
-Rows can have a mix of read-only and editable cells with content populated by users. When designing a table, make sure the cells work well together and fit nicely in the rows.
-
-### Header
-
-A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
-
-Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, and so on. For example, a header in Audit Events is redundant:
-
-Todo: Add live component block with code example of Audit Events table
-
-## Interaction
-
-When including triggers to manipulate the data, such as filters, they should be placed directly above the table.
-
-Additional actions a user can take from an individual table row are displayed in the far right column, and are visible at all times (no on-hover visibility). If there are two or more actions in a table row, consider using a button group or a ["more menu" button](/components/button#ellipsis) with a dropdown list option.
-
-It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
-
-## Pagination
-
-Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](/components/pagination)
-
-Tables with more than 20 items require pagination which is always located below the table and takes the form of a button group. Pagination is generally not required on tables with 20 or fewer items.
-
-Todo: Add live component block with code example including pagination
-
-## Styling
+#### Styling
 
 Use white space in tables to improve scannability, visually separating data elements so that each can be individually identified and read as separate from the others.
 
@@ -149,3 +161,7 @@ Todo: Add live component block with code example
 View the following links to see color, spacing, dimension, and layout-specific information pertaining to this component:
 
 [Sketch Measure Preview for Tables](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/tables-spec-previews/)
+
+## Links
+
+- [Code Review Analytics + Table Component: Design evaluation & usability testing](https://gitlab.com/groups/gitlab-org/-/epics/2954)
