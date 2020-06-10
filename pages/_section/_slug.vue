@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="limited m-t-7 m-b-8">
+  <div class="content limited m-t-7 m-b-8">
     <no-ssr>
       <component-info :frontmatter-info="fmResult" />
     </no-ssr>
