@@ -1,3 +1,10 @@
+# [1.15.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.14.0...v1.15.0) (2020-06-10)
+
+
+### Features
+
+* **charts:** Add more options menu documentation ([4561b2a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4561b2a596583402a9e20a36fbcbbaac48f69b98))
+
 # [1.14.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.13.0...v1.14.0) (2020-06-09)
 
 
