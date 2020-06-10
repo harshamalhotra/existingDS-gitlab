@@ -40,7 +40,7 @@ export default {
     <button type="button" class="nav-sidebar__toggle" :aria-expanded="show" @click="open = !open">
       <svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Toggle menu</title>
-        <path fill="#bababa" d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" />
+        <path d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" />
       </svg>
     </button>
     <nav :class="{ 'nav-sidebar--open': open }" class="nav-sidebar">
