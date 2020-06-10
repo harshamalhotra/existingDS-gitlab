@@ -87,6 +87,10 @@ By hovering over specific data points on charts, users will see a [popover](/com
 - Popover header: x axis value (x axis title)
 - Popover body: y axis title, value
 
+#### More options menu
+
+A "more options" menu (vertical ellipses) can be used in the top righthand corner of charts. This provides users with access to additional chart functionality (such as copying chart embed code) which isn't directly displayed on or near the chart.
+
 ## Design specifications
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following links:
