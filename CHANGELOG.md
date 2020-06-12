@@ -1,3 +1,10 @@
+## [1.15.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.15.0...v1.15.1) (2020-06-12)
+
+
+### Bug Fixes
+
+* Add max width to page for better readability ([4ea9588](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4ea95882c34329da5cdd04f8706ce36e5bdfb90f))
+
 # [1.15.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.14.0...v1.15.0) (2020-06-10)
 
 
