@@ -1,3 +1,10 @@
+# [1.17.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.16.0...v1.17.0) (2020-06-15)
+
+
+### Features
+
+* **statustable:** Add gitlab ui link to mark toggles complete ([577ca1f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/577ca1f90e4a30a83dbee9582ec090232a6e6464))
+
 # [1.16.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.15.1...v1.16.0) (2020-06-15)
 
 
