@@ -1,5 +1,4 @@
 <script>
-import { GlBadge } from '@gitlab/ui';
 import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
 
 const statusIcons = {
@@ -9,9 +8,6 @@ const statusIcons = {
 };
 
 export default {
-  components: {
-    GlBadge,
-  },
   data() {
     return {
       contentTree,
