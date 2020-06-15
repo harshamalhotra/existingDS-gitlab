@@ -1,3 +1,10 @@
+# [1.16.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.15.1...v1.16.0) (2020-06-15)
+
+
+### Features
+
+* Add hover state to responsive hamburger menu ([8fe57cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8fe57cb0d1595024e2c38e6c3f16c141118bd229))
+
 ## [1.15.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.15.0...v1.15.1) (2020-06-12)
 
 
