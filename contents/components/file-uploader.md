@@ -16,7 +16,7 @@ After the upload begins, use the [spinner component](/components/spinner) and li
 | Component type | Purpose |
 | --- | --- |
 | Single file uploader | Uploads a single file. For example, an avatar for your profile, group, or project.  |
-| Multiple file uploader | Uploads one or more files in a single upload. For example, designs on the design tab or uploading multiple files to a directory. |
+| Multiple file uploader | Uploads one or more files in a single upload. For example, uploading multiple files to the design tab, a directory, or through the markdown textarea. |
 
 ### Dos and Dont’s - Single file uploader
 
