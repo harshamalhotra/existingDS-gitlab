@@ -1,3 +1,10 @@
+## [1.17.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.17.0...v1.17.1) (2020-06-16)
+
+
+### Bug Fixes
+
+* Resolve status.vue compiler issue ([5bc082a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5bc082a611b4c89588d4d4ba857a5b919b059789))
+
 # [1.17.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.16.0...v1.17.0) (2020-06-15)
 
 
