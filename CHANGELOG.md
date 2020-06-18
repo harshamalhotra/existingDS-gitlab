@@ -1,3 +1,10 @@
+# [1.18.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.17.1...v1.18.0) (2020-06-18)
+
+
+### Features
+
+* **toggles:** Update usage for left aligned labels ([1720a6b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1720a6be8010f2b8c5479efeffb0c849f856a4cf))
+
 ## [1.17.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.17.0...v1.17.1) (2020-06-16)
 
 
