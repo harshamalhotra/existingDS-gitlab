@@ -1,3 +1,10 @@
+## [1.18.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.18.0...v1.18.1) (2020-06-18)
+
+
+### Bug Fixes
+
+* **table:** Update & simplify table documentation ([22f1667](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/22f16674e5e89006e88d4175fb09a9feb2c359eb))
+
 # [1.18.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.17.1...v1.18.0) (2020-06-18)
 
 
