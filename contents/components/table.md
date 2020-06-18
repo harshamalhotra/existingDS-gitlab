@@ -4,29 +4,27 @@ docs: in-progress
 vueComponents:
   - GlTable
 related:
-  - cards
+  - card
   - list
   - tree
   - filter
+  - button
+  - tooltip
+  - pagination
+  - /regions/empty-states
 ---
 
-Tables display tabular data in a basic grid comprised of cells, columns, and rows. This format makes it easy for users to scan large amounts of data.
+Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
 
 ## Usage
-
-Use tables when:
-
-- Users need to review, enter, or edit uniform sets of data or options.
-- Displaying structured content, where each entry has the same attributes.
 
 ### When to use tables
 
 Use tables to:
 
-- Display large volumes of data.
-- Display a data set that will continue to grow; for example, a table used to display users, environments, and so on.
-- Compare data in a set to in a way that makes each data point distinguishable.
-- Search, filter, or sort by all parameters in a data set.
+- Display structured content, where each entry has the same attributes.
+- Let users review, enter, edit, or filter granular data sets.
+- Display a data set that will continue to grow (e.g. Issues, Environments, and User Profile pages).
 
 Todo: Add live component block with code example
 
@@ -35,7 +33,7 @@ Todo: Add live component block with code example
 Do not use tables to:
 
 - Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/list) instead.
-- Display contained content and actions on a single topic. Use [Cards](/components/cards) instead.
+- Display contained content and actions on a single topic. Use [Cards](/components/card) instead.
 - For hierarchical structures. Use the [Tree](/components/tree) view instead.
 
 ### Basic table
@@ -50,25 +48,24 @@ Any filtering controls that manipulate the data set should be placed directly ab
 
 ### Ordering & sorting
 
-The data set of a table is usually ordered by one specific column representing an attribute, such as status, last updated, or priority.
+Sorting is designed as a native functionality of tables. Tables use column sorting rather than [list sorting](/components/sorting).
 
-Sorting is designed as a native functionality of tables, and should not be confused with the [list sorting](/components/sorting) component.
 
-When sorting is enabled for the table, a [sorting icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=sort) is displayed next to the column header. A sortable table is identified by the sorting icon that is present in the header cells. Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order. The sorting icon and functionality should not be visible on responsive tables.
+The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [chevron down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) and [chevron up](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-up) icons.
+
+Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order.
 
 Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
 
+The sorting icon and functionality should not be visible on responsive tables.
+
 ### Pagination
 
-Tables can include pagination. Pagination works by presenting a set number of rows in a view, with the ability to navigate to another set. [See pagination guidelines](/components/pagination)
-
-Tables with more than 20 items require pagination which is always located below the table and takes the form of a button group. Pagination is generally not required on tables with 20 or fewer items.
+Tables displaying data sets with more than 20 items should use pagination. [See pagination guidelines](/components/pagination)
 
 Todo: Add live component block with code example including pagination
 
 ### Additional actions
-
-It is also possible to use in-line links to provide additional information to other items in the table or route the user to a different page.
 
 Table rows can include additional actions located in their far-right column. These actions should be visible at all times rather than showing on-hover. If there are two or more actions in a table row, consider using a button group or a [“more menu” button](/components/button#ellipsis) with a dropdown list option.
 
@@ -78,25 +75,19 @@ Todo: Add demo
 
 ### Header
 
-A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous. Labels in a header should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case capitalization for table headers and labels.
+A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous.
 
-Always use column or row headers, unless all columns in a table have self-descriptive content, like names, dates, and so on. For example, a header in Audit Events is redundant:
+Tables should always include table headers. For short tables and for tables whose data are self explanatory, column headers are sufficient. For long tables or tables where data may be confusing, it is best to include row and column headers.
 
-Todo: Add live component block with code example of Audit Events table
-
-### Cells
-
-A cell’s width and height will change according to its content.
-
-It is possible to hyphenate the text inside table cells, but note that hyphens are language sensitive. The ability to find break opportunities depends on the language, defined in the `lang` attribute of a parent element, and support depends on the specific browser.
+Headers should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case.
 
 ### Columns
 
-Avoid making all the columns an even width. The table columns should be sized according to the data they contain. Columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
+Columns should be ordered by priority or in a way that tells a story with the data. Size columns according to the data they contain rather than making them all an even width. For example, columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
 
 ### Rows
 
-Rows can have a mix of read-only and editable cells with content populated by users. When designing a table, make sure the cells work well together and fit nicely in the rows.
+Rows can have a mix of read-only and editable cells with content populated by users. See [additional actions](#additional-actions) on table rows.
 
 ### Layout
 
@@ -104,31 +95,36 @@ Tables take up the full width of their container element. However, it is importa
 
 Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 
-Prevent horizontal scrolling to ensure the table doesn't break the layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/tables/#responsiveness).
+Prevent horizontal scrolling to ensure the table doesn't break the layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/table/#responsiveness).
 
 ## Content
 
 ### Empty state
 
-A table's empty state displays when there is no data, yet. [See empty states guidelines](/regions/empty-states).
+A table's empty state displays when there is no data, yet. [See empty states guidelines](/regions/empty-states)
 
 ### Content alignment
 
-Left align content by importance, based on the information needs of your users. In some circumstances, right aligning data helps with comprehension. For example, numeric data is easier to read when right aligned. To aid scanning on right-aligned data, make sure to use the same number of decimal places for all numeric data. Tables may switch their alignment for right-to-left audiences as well.
+Align the table content by importance, based on the information needs of your users.
 
-Todo: Add live component block with code example of table alignment -- mixed data
+Left-align text content, rather than justifying or centering it, to avoid confusion or readability issues. Text in tables tends to end up in narrow columns. Don’t justify or center the text; it causes confusion and harms readability.
 
-Text in tables tends to end up in narrow columns. Don't justify or center the text; it causes confusion and harms readability.
+In some circumstances, right-aligning the text content helps with readability. For example, right-align the numeric data with a consistent number of decimal places to improve scannability.
 
-#### Truncation
+Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/usability/i18n).
 
-To fit a long string of text into a table cell, you can shorten the text with an ellipsis (“...”) to show exactly where the text is truncated. On hover, the truncated text should display a tooltip that includes the full text. [See tooltips guidelines](/components/tooltips)
+### Null values
 
-#### Null values
+Representing null values should be made on a case-by-case basis. Some ways of addressing this are: 
+- Keep the cell empty. For example, if no data is returned. 
+- Use text to indicate what is missing. For example, "Unassigned" if there is no assignee.
+- Use a dash ("-"). For example, if there is no data and a text explanation is not applicable.
 
-If a cell is empty or unavailable, keep the cell empty to reduce noise and help with legibility.
+### Truncation
 
-#### Styling
+Truncate long text strings with an ellipsis (“…”). On hover, the truncated text should display a tooltip including the full text. [See tooltip guidelines](/components/tooltip)
+
+### Styling
 
 Use white space in tables to improve scannability, visually separating data elements so that each can be individually identified and read as separate from the others.
 
@@ -138,9 +134,9 @@ Do not appply vertical lines between columns. In general, tables without vertica
 
 ## Responsiveness
 
-Users may view an application on any device, so ensure the table will be usable whether displayed on mobile, tablet, or desktop.
+Tables work across multiple screen sizes and conform to responsive guidelines. Prevent horizontal scrolling to ensure the table doesn’t break the layout.
 
-Todo: Add description of how the table behabes on responsive views
+Todo: Add description of how the table behaves on responsive views
 
 ## Accessibility
 
