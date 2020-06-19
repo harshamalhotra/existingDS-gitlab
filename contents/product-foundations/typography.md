@@ -4,7 +4,7 @@ name: Typography
 
 ## Typeface
 
-GitLab utilizes a system font stack. System fonts are the default fonts used by any given OS, helping performance by eliminating the need to download font files.
+GitLab utilizes a system font stack, which references the default system fonts used by any given OS. Using system fonts helps performance by eliminating the need to download font files, and maintains the language support of the user’s system.
 
 ### Body font stack
 
@@ -14,72 +14,57 @@ Todo: Add codeblock showing body font variable stack
 
 Todo: Add codeblock showing monospace variable stack
 
-## Typescale
+## UI typescale
 
-The default typography uses line-heights that align with our UI components. Margins are not included to allow for easier alignment with other UI elements. The following scale is used throughout the application:
+UI typography is used for any text within GitLab that is not markdown.
 
-<table class="type-scale m-b-6">
-<thead>
-<tr>
-<th>px</th>
-<th>Demo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>12px</td>
-<td class="ts-6">The platform for modern developers</td>
-</tr>
-<tr>
-<td>14px</td>
-<td class="ts-5">The platform for modern developers</td>
-</tr>
-<tr>
-<td>16px</td>
-<td class="ts-4">The platform for modern developers</td>
-</tr>
-<tr>
-<td>20px</td>
-<td class="ts-3">The platform for modern developers</td>
-</tr>
-<tr>
-<td>28px</td>
-<td class="ts-2">The platform for modern developers</td>
-</tr>
-<tr>
-<td>42px</td>
-<td class="ts-1">The platform for modern developers</td>
-</tr>
-</tbody>
-</table>
+### Base
 
-### Markdown
+`14px` is the base size of body copy for UI typography.
 
-Content written using markdown includes typography that contains fixed margins and increased line-heights to improve readability. GitLab uses two variations of typography when writing markdown: documentation markdown and compact markdown.
+### Label text
 
-#### Documentation markdown
+Our UI type scale includes “label” text which is used for short-form content. Label text differs from long-form text because it doesn’t include margins which allows for easier alignment with other UI elements.
 
-Documentation markdown is defined as any markdown that is written outside of issuable pages, such as a README or Wiki page.
+Long-form content includes copy in modals and empty states, whereas short-form content includes help text and popover messages.
 
-Todo: Show class used for markdown
+### Responsive
 
-#### Compact markdown
+The `h1` and `h2` headers within our UI type scale are responsive. All other type options within this scale are not dependent on screen size.
 
-Within certain views, the markdown type scale is decreased in order to more closely align copy with other UI components. Compact markdown is used for descriptions and comments on issue and merge request pages.
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A334)
 
-Todo: Show class used for compact markdown
+## Documentation markdown typescale
 
-## Body copy
+Documentation markdown is defined as any markdown that is written outside of issuable pages, such as a README or Wiki page. Content written using markdown includes typography that contains fixed margins and increased line-heights to improve readability. Label text is not available for documentation markdown because all markdown is considered long-form content.
 
-GitLab uses 14px as the base size for body copy. This is consistent throughout both the interface and within markdown content.
+### Base
 
-Todo: Show base font variable
+`16px` is the base size of body copy for documentation markdown.
+
+### Responsive
+
+The `h1`, `h2`, and `h3` headers within our documentation markdown scale are responsive. All other type options within this scale are not dependent on screen size.
+
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A2)
+
+## Compact markdown typescale
+
+Within certain views, the markdown type scale is decreased in order to more closely align copy with other UI components. Compact markdown is used for descriptions and comments on issue and merge request pages. Label text is not available for compact markdown because all markdown is long-form content.
+
+### Base
+
+`14px` is the base size of body copy for compact markdown.
+
+### Responsive
+
+The `h1` header within our compact markdown scale is responsive. All other type options within this scale are not dependent on screen size.
+
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A132)
 
 ## Font weight
 
 GitLab uses two font weights within the application: normal and bold. A bold font weight can be used to emphasize specific UI elements, such as a title or input label.
-
-Todo: Show variables for normal and bold typography
 
 Todo: Show class used for bold typography
 
@@ -87,16 +72,22 @@ Todo: Show class used for bold typography
 <thead>
 <tr>
 <th>Weight</th>
+<th>Variable</th>
+<th>Value</th>
 <th>Demo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Normal</td>
+<td>$gl-font-weight-normal</td>
+<td>400</td>
 <td>The platform for modern developers</td>
 </tr>
 <tr>
 <td>Bold</td>
+<td>$gl-font-weight-bold</td>
+<td>600</td>
 <td class="f-bold">The platform for modern developers</td>
 </tr>
 </tbody>
