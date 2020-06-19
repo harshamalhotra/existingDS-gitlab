@@ -1,3 +1,10 @@
+# [1.19.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.18.1...v1.19.0) (2020-06-19)
+
+
+### Features
+
+* **typography:** Add details about type scales ([ba524c2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ba524c2c43c0f44f67638d03644b3ccbe8085ebf))
+
 ## [1.18.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.18.0...v1.18.1) (2020-06-18)
 
 
