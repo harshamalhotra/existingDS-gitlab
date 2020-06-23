@@ -4,186 +4,17 @@ name: Color
 
 ## Chromatic palette
 
-We have four primary chromatic colors and their derivatives, totaling 44 colors for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in line with our brand styles.
+We have five primary chromatic hues and their color steps, totaling 55 color variables for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
 
-Though deciding which color to use depends on the situation, here are some general guidelines for using the four primary colors:
+Though deciding which color to use depends on the situation, here are some general guidelines for using the chromatic palette hues:
 
-- **Blue** indicates a current or active state. It communicates: management, progress, connectivity, or organization.
-- **Green** indicates success. It communicates: save, create, add, available, done, approved, or resolved.
-- **Orange** indicates 'attention-required.' It communicates: warning, pending, missing, or impeded progress.
-- **Red** indicates a problem. It communicates: critical states, destructive actions, errors, fails, removals, or declines.
+- **Blue** indicates a current or active state. It communicates management, progress, connectivity, or organization.
+- **Green** indicates success. It communicates save, create, add, available, done, approved, or resolved.
+- **Orange** indicates "attention-required." It communicates warning, pending, missing, or impeded progress.
+- **Red** indicates a problem. It communicates critical states, destructive actions, errors, fails, removals, or declines.
+- **Purple** is not assigned meaning in the same way the other chromatic hues are, like green for success or red for a problem. Purple, however, have meaning associated with the GitLab brand. It communicates brand affinity and relationship, and can be used for things like illustrations or company-related announcements in the product.
 
 <div class="row m-b-9">
-  <div class="col col-50 md p-b-7">
-    <h3>Green</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-50</span>
-          <span class="hex f-small">#ecf4ee</span>
-        </div>
-        <div class="color-details c-border-green-50 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-100</span>
-          <span class="hex f-small">#c3e6cd</span>
-        </div>
-        <div class="color-details c-border-green-100 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.5)</div>
-            <div class="f-inverted d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-200</span>
-          <span class="hex f-small">#91d4a8</span>
-        </div>
-        <div class="color-details c-border-green-200 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.1)</div>
-            <div class="f-inverted d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-300</span>
-          <span class="hex f-small">#52b87a</span>
-        </div>
-        <div class="color-details c-border-green-300 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.5)</div>
-            <div class="f-inverted d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.4)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-400</span>
-          <span class="hex f-small">#2da160</span>
-        </div>
-        <div class="color-details c-border-green-400 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.3)</div>
-            <div class="f-inverted d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.2)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-priority color-overview c-background-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-500</span>
-          <span class="hex f-small f-inverted">#108548</span>
-        </div>
-        <div class="color-details c-border-green-500 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.4)</div>
-            <div class="f-inverted d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (4.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-600</span>
-          <span class="hex f-small f-inverted">#217645</span>
-        </div>
-        <div class="color-details c-border-green-600 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.6)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-700</span>
-          <span class="hex f-small f-inverted">#24663b</span>
-        </div>
-        <div class="color-details c-border-green-700 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3)</div>
-            <div class="f-inverted d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.9)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-800</span>
-          <span class="hex f-small f-inverted">#0d532a</span>
-        </div>
-        <div class="color-details c-border-green-800 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.2)</div>
-            <div class="f-inverted d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-900</span>
-          <span class="hex f-small f-inverted">#0a4020</span>
-        </div>
-        <div class="color-details c-border-green-900 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.8)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-950</span>
-          <span class="hex f-small f-inverted">#072b15</span>
-        </div>
-        <div class="color-details c-border-green-950 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-            <div class="f-inverted d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.3)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="col col-50 md p-b-7">
     <h3>Blue</h3>
     <div class="distributed palette">
@@ -354,7 +185,177 @@ Though deciding which color to use depends on the situation, here are some gener
       </div>
     </div>
   </div>
-  <div class="col col-50 md m-t-7">
+  <div class="col col-50 md p-b-7">
+    <h3>Green</h3>
+    <div class="distributed palette">
+      <div class="color">
+        <div class="color-overview c-background-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$green-50</span>
+          <span class="hex f-small">#ecf4ee</span>
+        </div>
+        <div class="color-details c-border-green-50 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.7)</div>
+            <div class="f-inverted d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.1)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$green-100</span>
+          <span class="hex f-small">#c3e6cd</span>
+        </div>
+        <div class="color-details c-border-green-100 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.5)</div>
+            <div class="f-inverted d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$green-200</span>
+          <span class="hex f-small">#91d4a8</span>
+        </div>
+        <div class="color-details c-border-green-200 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.1)</div>
+            <div class="f-inverted d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$green-300</span>
+          <span class="hex f-small">#52b87a</span>
+        </div>
+        <div class="color-details c-border-green-300 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.5)</div>
+            <div class="f-inverted d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.4)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$green-400</span>
+          <span class="hex f-small">#2da160</span>
+        </div>
+        <div class="color-details c-border-green-400 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.3)</div>
+            <div class="f-inverted d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.2)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-priority color-overview c-background-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-500</span>
+          <span class="hex f-small f-inverted">#108548</span>
+        </div>
+        <div class="color-details c-border-green-500 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.4)</div>
+            <div class="f-inverted d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (4.7)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-600</span>
+          <span class="hex f-small f-inverted">#217645</span>
+        </div>
+        <div class="color-details c-border-green-600 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.7)</div>
+            <div class="f-inverted d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.6)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-700</span>
+          <span class="hex f-small f-inverted">#24663b</span>
+        </div>
+        <div class="color-details c-border-green-700 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3)</div>
+            <div class="f-inverted d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.9)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-800</span>
+          <span class="hex f-small f-inverted">#0d532a</span>
+        </div>
+        <div class="color-details c-border-green-800 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.2)</div>
+            <div class="f-inverted d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.1)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-900</span>
+          <span class="hex f-small f-inverted">#0a4020</span>
+        </div>
+        <div class="color-details c-border-green-900 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
+            <div class="f-inverted d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.8)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$green-950</span>
+          <span class="hex f-small f-inverted">#072b15</span>
+        </div>
+        <div class="color-details c-border-green-950 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
+            <div class="f-inverted d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.3)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col col-50 md m-t-7 p-b-7">
     <h3>Orange</h3>
     <div class="distributed palette">
       <div class="color">
@@ -689,6 +690,176 @@ Though deciding which color to use depends on the situation, here are some gener
             <div class="d-inline-block c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
             <div class="f-inverted d-inline-block c-background-red-950 c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
             <div class="d-inline-block c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.4)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col col-50 md m-t-7">
+    <h3>Purple</h3>
+    <div class="distributed palette">
+      <div class="color">
+        <div class="color-overview c-background-purple-50 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$purple-50</span>
+          <span class="hex f-small">#f4f0ff</span>
+        </div>
+        <div class="color-details c-border-purple-50 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-50 c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.75)</div>
+            <div class="f-inverted d-inline-block c-background-purple-50 c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.11)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-100 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$purple-100</span>
+          <span class="hex f-small">#e1d8f9</span>
+        </div>
+        <div class="color-details c-border-purple-100 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-100 c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.39)</div>
+            <div class="f-inverted d-inline-block c-background-purple-100 c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.36)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-200 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$purple-200</span>
+          <span class="hex f-small">#cbbbf2</span>
+        </div>
+        <div class="color-details c-border-purple-200 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-200 c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.92)</div>
+            <div class="f-inverted d-inline-block c-background-purple-200 c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.76)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-300 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$purple-300</span>
+          <span class="hex f-small">#ac93e6</span>
+        </div>
+        <div class="color-details c-border-purple-300 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-300 c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.07)</div>
+            <div class="f-inverted d-inline-block c-background-purple-300 c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.6)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-400 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable">$purple-400</span>
+          <span class="hex f-small">#9475db</span>
+        </div>
+        <div class="color-details c-border-purple-400 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-400 c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.82)</div>
+            <div class="f-inverted d-inline-block c-background-purple-400 c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.6)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-priority color-overview c-background-purple-500 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-500</span>
+          <span class="hex f-small f-inverted">#7b58cf</span>
+        </div>
+        <div class="color-details c-border-purple-500 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-500 c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.13)</div>
+            <div class="f-inverted d-inline-block c-background-purple-500 c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.07)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-600 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-600</span>
+          <span class="hex f-small f-inverted">#6b51b8</span>
+        </div>
+        <div class="color-details c-border-purple-600 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.49)</div>
+            <div class="f-inverted d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-700 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-700</span>
+          <span class="hex f-small f-inverted">#5943b6</span>
+        </div>
+        <div class="color-details c-border-purple-700 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-700 c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.9)</div>
+            <div class="f-inverted d-inline-block c-background-purple-700 c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (7.23)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-800 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-800</span>
+          <span class="hex f-small f-inverted">#453894</span>
+        </div>
+        <div class="color-details c-border-purple-800 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-800 c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.24)</div>
+            <div class="f-inverted d-inline-block c-background-purple-800 c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.34)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-900 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-900</span>
+          <span class="hex f-small f-inverted">#2f2a6b</span>
+        </div>
+        <div class="color-details c-border-purple-900 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-900 c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.66)</div>
+            <div class="f-inverted d-inline-block c-background-purple-900 c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.61)</div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div class="color-overview c-background-purple-950 p-t-3 p-r-5 p-b-3 p-l-5">
+          <span class="variable f-inverted">$purple-950</span>
+          <span class="hex f-small f-inverted">#232150</span>
+        </div>
+        <div class="color-details c-border-purple-950 p-t-6 p-r-5 p-b-6 p-l-5">
+          <div class="color-details--section">
+            <div class="f-bold m-b-2">Passing level and contrast ratio</div>
+            <div class="d-inline-block c-background-purple-950 c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.4)</div>
+            <div class="f-inverted d-inline-block c-background-purple-950 c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
+            <div class="d-inline-block c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (14.94)</div>
           </div>
         </div>
       </div>
