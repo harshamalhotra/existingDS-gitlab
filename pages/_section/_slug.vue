@@ -8,7 +8,7 @@ export default {
   },
   asyncData({ route }) {
     const { path } = route;
-    const mdFile = path.replace(`/${route?.params?.tab}`, '');
+    const mdFile = path.replace(new RegExp(`/${route?.params?.tab}/?`), '');
     return import(`~/contents${mdFile}.md`).then(({ default: fmResult }) => ({ fmResult }));
   },
 };
