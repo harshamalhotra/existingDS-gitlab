@@ -29,13 +29,13 @@ Infinite scroll is triggered once the user has reached the 20th item of a list a
 
 Always display a counter that details how many items have already loaded and how many items remain. This gives the user an indication of where they are relative to the list. The examples below show how to display different variations of list counts:
 
-Todo: add infinite scroll example with "Showing 60 of 100 items" in the list count
+[[Example:infinite-scroll-with-finite-total-items]]
 
-Todo: add infinite scroll example with "Showing 60 of 1,000+ items" in the list count
+[[Example:infinite-scroll-small-fetched-items]]
 
-Todo: add infinite scroll example with "Showing 1,200 of 1,000+ items"" in the list count
+[[Example:infinite-scroll-large-fetched-items]]
 
-Todo: add infinite scroll example with "Showing all items" in the list count
+[[Example:infinite-scroll-all-items]]
 
 #### Returning to a list
 
