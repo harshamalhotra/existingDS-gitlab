@@ -1,3 +1,10 @@
+# [1.21.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.20.0...v1.21.0) (2020-06-23)
+
+
+### Features
+
+* add infinite scroll examples ([abdd198](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/abdd198adec425c6807264c9fc782e9d76737089))
+
 # [1.20.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.19.0...v1.20.0) (2020-06-23)
 
 
