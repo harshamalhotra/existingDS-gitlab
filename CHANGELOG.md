@@ -1,3 +1,10 @@
+# [1.20.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.19.0...v1.20.0) (2020-06-23)
+
+
+### Features
+
+* **Color:** Document $purple- color variables ([4599d05](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4599d05f6714d81627d2095fb6fa298b87626640))
+
 # [1.19.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.18.1...v1.19.0) (2020-06-19)
 
 
