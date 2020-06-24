@@ -66,8 +66,6 @@ The `h1` header within our compact markdown scale is responsive. All other type 
 
 GitLab uses two font weights within the application: normal and bold. A bold font weight can be used to emphasize specific UI elements, such as a title or input label.
 
-Todo: Show class used for bold typography
-
 <table class="font-weight m-b-6">
 <thead>
 <tr>
