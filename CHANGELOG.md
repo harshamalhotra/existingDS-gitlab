@@ -1,3 +1,10 @@
+## [1.21.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.0...v1.21.1) (2020-06-25)
+
+
+### Bug Fixes
+
+* **typography:** Remove done todo related to showcasing bold variable ([ca2c3cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ca2c3cb70efb3984cfec4b5c4ead910242ffccfd))
+
 # [1.21.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.20.0...v1.21.0) (2020-06-23)
 
 
