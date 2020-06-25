@@ -1,3 +1,10 @@
+## [1.21.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.1...v1.21.2) (2020-06-25)
+
+
+### Bug Fixes
+
+* **research:** Correct research links in get started page ([263d29c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/263d29cecd2a8508f0f6211346c5099bfc591957))
+
 ## [1.21.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.0...v1.21.1) (2020-06-25)
 
 
