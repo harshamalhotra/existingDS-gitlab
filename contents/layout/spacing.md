@@ -10,7 +10,7 @@ We use 8px as the base for determining our spacial system. In order to create a 
 
 ### 12px outlier
 
-We include 12px as one of our measures but it should only be reserved for right and left padding of horizontal tabs, buttons, and inputs. This special padding amount allows for better alignment of stacked items while giving elements enough room to breathe. 12px should not be using for any other measurement other than those defined here.
+We include 12px as one of our measures, but it should only be reserved for right and left padding of horizontal tabs, buttons, and form elements. This special padding amount allows for better alignment of stacked items while giving elements enough room to breathe. 12px should not be using for any other measurement other than those defined here.
 
 ## Demo
 
