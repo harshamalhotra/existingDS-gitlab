@@ -1,3 +1,10 @@
+## [1.21.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.2...v1.21.3) (2020-06-26)
+
+
+### Bug Fixes
+
+* Added objects to PJs structure ([ae96b88](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ae96b88e8ff65d8e1b407d33ac8c397dca828392))
+
 ## [1.21.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.1...v1.21.2) (2020-06-25)
 
 
