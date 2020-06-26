@@ -16,6 +16,10 @@ Components are the reusable building blocks of the interface. Examples include b
 
 Regions are areas of the application that are formed by combining multiple components. Examples of this include the global header and contextual sidebar.
 
+## Objects
+
+Objects are the high-level building blocks of the product. Objects can be sketched out to describe how the product fits together. Examples include Issuables, Groups, and Reports.
+
 ## Content
 
 Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.
