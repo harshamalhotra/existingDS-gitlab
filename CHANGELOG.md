@@ -1,3 +1,10 @@
+## [1.21.4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.3...v1.21.4) (2020-06-26)
+
+
+### Bug Fixes
+
+* **charts:** Moves charts and data viz components to data viz section ([d3b7cc8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d3b7cc80bdf2ac11dc9cecf8767582e53adfad6a))
+
 ## [1.21.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.2...v1.21.3) (2020-06-26)
 
 
