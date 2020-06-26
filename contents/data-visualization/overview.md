@@ -1,10 +1,10 @@
 ---
-name: Data visualization
+name: Overview
 docs: in-progress
 vueComponents:
   - GlHeatmap
 related:
-  - charts
+  - /data-visualization/charts
 ---
 
 Data visualizations pull insights from data sets into a narrative and allow users to explore data themselves to discover their own insights.
@@ -55,7 +55,7 @@ Todo: Add demo for heat map when it's completed
 
 Charts are statistical graphics that help users quickly digest, visualize and see trends in their data.
 
-Full list of chart types and design specifications is detailed on the [Charts](/components/charts) component page.
+Full list of chart types and design specifications is detailed on the [Charts](/data-visualization/charts) component page.
 
 [[Example:stacked-column-basic]]
 

@@ -5,7 +5,7 @@ docs: in-progress
 vueComponents:
   - GlProgressBar
 related:
-  - charts
+  - /data-visualization/charts
   - skeleton-loader
 ---
 

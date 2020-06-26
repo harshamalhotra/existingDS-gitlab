@@ -39,7 +39,7 @@ When a user wishes to drill-down into the details of a metric or chart, the Repo
 - Metrics (optional)
 - [Tabs](/components/tabs) (optional)
 - [Filter](regions/filters) (optional)
-- [Chart](/components/charts) (optional)
+- [Chart](/data-visualization/charts) (optional)
 - [Table](/components/table)
 
 *Note: Variants of this object can be created by adding/removing the optional components/regions*
