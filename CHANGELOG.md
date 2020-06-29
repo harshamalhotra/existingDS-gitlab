@@ -1,3 +1,10 @@
+# [1.22.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.4...v1.22.0) (2020-06-29)
+
+
+### Features
+
+* **Path:** Add Path component documentation ([a5073af](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a5073af30722d289a9de3f2b6f76dcf51f7d1687))
+
 ## [1.21.4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.3...v1.21.4) (2020-06-26)
 
 
