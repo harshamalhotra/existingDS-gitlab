@@ -73,7 +73,13 @@ There should always be multiple ways to close/dismiss this type of modal, includ
 
 **Autofocus:**  The first focusable item should be auto-focused within the modal dialog so that the user can tab in the modal and not become stuck behind the overlay. This behavior follows the [accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) for modals. Additionally, this aims to allow the user to complete the modal's objective more efficiently.
 
-**Scrolling:** The height of the modal is determined by the content. Some users have smaller screens, so for these instances where the content requires scrolling, it's best practice to extend the height of the modal below the window to avoid double scrolling. Alternatively, consider taking the user to another page in instances where a tall modal requires the user to scroll more than a few times to consume all the content.
+**Scrolling:** 
+
+By default, the height of the modal is determined by the content. When modal content extends below the viewport, the viewport remains scrollable.
+
+If modal content exceeding the height of the viewport impedes a user’s ability to maintain context or see important actions, make the content within the modal scrollable. This is configurable and ensures that only the modal content is scrollable, not the page itself.
+
+On small screens where content requires scrolling and the user has to scroll more than a few times to consume all the modal content, consider opening the content in a new page instead.
 
 ## Design Specifications
 
