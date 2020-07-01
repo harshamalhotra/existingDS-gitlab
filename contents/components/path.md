@@ -1,6 +1,8 @@
 ---
 name: Path
 docs: in-progress
+vueComponents:
+  - GlPath
 related:
   - tabs
 ---
@@ -9,12 +11,14 @@ Paths are horizontal process flows composed of a series of stages. Like [tabs](/
 
 ## Usage
  
-### Dos and Dont’s
+### Do
 
-| Do | Don’t |
-|-----------------------|------------------------|
-| Use paths rather than tabs when there is a process with unique content at each stage, for example, a [DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/). | Nest paths. |
-|  | Use as an indicator of a user’s progress within a process, for example, in a checkout flow. |
+- Use paths rather than tabs when there is a process with unique content at each stage, for example, a [DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
+
+### Don't
+
+- Nest paths.
+- Use as an indicator of a user’s progress within a process, for example, in a checkout flow.
 
 ## Types
 
@@ -24,7 +28,7 @@ Paths are designed to be flexible. Therefore, there are a number of options and 
 
 A simple path only contains stages with labels.
 
-Todo: Add demo
+[[Example:path-basic]]
 
 ### Counter path
 
@@ -36,19 +40,17 @@ Todo: Add demo
 
 A metric path contains stages with an abbreviated metric, such as 12d or 1.5h. The metric can be an integer or float, but should be limited to 5 digits maximum (and fewer when possible). Don’t use multiple metric types on a single path. For example, 1d and 6kg. 
 
-Todo: Add demo
+[[Example:path-with-metric]]
 
 ### Combination path
 
 Some processes may be more complicated and require a path with a combination of icons, counters, and metrics. An icon can also be used at a specific stage, such as an “Overview,” to make it stand out more. Try to limit path complication by only using necessary attributes.
 
-Todo: Add demo
+[[Example:path-full]]
 
 ## Custom ordering
 
 Todo: Add usage documentation about custom ordering. See https://gitlab.com/gitlab-org/gitlab/-/issues/216227 for progress.
-
-Todo: Add demo when Value Stream Analytics functionality is released
 
 ## Specifications
 
