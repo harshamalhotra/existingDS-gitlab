@@ -90,6 +90,13 @@ feat(GlButton): add secondary variant usage guidelines
 > **Note:** Only `feat:`, `fix:`, and `perf:` types trigger a new release
 > If you're introducing a breaking change, the message body should start with [`BREAKING CHANGE:`](https://www.conventionalcommits.org/en/v1.0.0/#commit-message-with-description-and-breaking-change-footer),
 > this will trigger a major version bump (e.g. `v1.2.3` -> `v2.0.0`)
+>
+> An example of a breaking change in Pajamas is changing one of our foundational
+> guidelines, such as spacing or typography documentation, which would affect other components.
+> Adding a new component could be considered a breaking change if the component is
+> being introduced in order to replace an incorrect usage of an existing component
+> (for example, toasts were introduced to replace a use case that previously used alerts).
+> A new component is not a breaking change by default.
 
 ## Commitizen
 
