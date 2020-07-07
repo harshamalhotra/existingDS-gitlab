@@ -46,7 +46,7 @@ If there are more rows than fit the dropdown, an overlay with a fade effect will
 
 #### Plain dropdown
 
-Todo: An example of a plain dropdown
+[[Example:new-dropdown-default]]
 
 #### Single-selection dropdown
 
@@ -64,19 +64,19 @@ There are some special elements that can be included in dropdowns to better adap
 
 A header can be added to make the dropdown's purpose clear. For example, the header _Assign milestone_ can be added to make it clear that selecting an option will modify an issue's milestone instead of applying a filter.
 
-Todo: An example of a dropdown with a header.
+[[Example:new-dropdown-with-header]]
 
 #### Section headers
 
 Section headers are used to categorize the options in a dropdown. A separator must always be included in between sections.
 
-Todo: An example of a dropdown with section headers.
+[[Example:new-dropdown-with-section-headers]]
 
 #### Search box
 
 If there are more than 10 elements in the list, it may be necessary to include a search box.
 
-Todo: An example of a dropdown with a search box.
+[[Example:new-dropdown-with-search]]
 
 #### Fixed rows
 
