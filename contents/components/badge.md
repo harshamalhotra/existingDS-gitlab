@@ -1,7 +1,7 @@
 ---
 name: Badge
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
-docs: in-progress
+docs: complete
 vueComponents:
   - GlBadge
 related:
@@ -31,7 +31,17 @@ Depending on the context and the value of the badge's information, some style at
 
 ## Demo
 
-Todo: Add live component block with code example
+### Basic badge
+
+[[Example:badge-basic]]
+
+### Badge variants
+
+[[Example:badge-variants]]
+
+### Linked badges
+
+[[Example:badge-actions]]
 
 ## Design specifications
 
