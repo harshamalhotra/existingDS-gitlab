@@ -26,8 +26,6 @@ Use tables to:
 - Let users review, enter, edit, or filter granular data sets.
 - Display a data set that will continue to grow (e.g. Issues, Environments, and User Profile pages).
 
-Todo: Add live component block with code example
-
 ### When not to use tables
 
 Do not use tables to:
@@ -40,6 +38,8 @@ Do not use tables to:
 
 The basic table is the default option for this component. However, additional functionality can be added to enhance the table for different use cases.
 
+[[Example:table-basic]]
+
 ## Additional functionality
 
 ### Search & filter
@@ -49,7 +49,6 @@ Any filtering controls that manipulate the data set should be placed directly ab
 ### Ordering & sorting
 
 Sorting is designed as a native functionality of tables. Tables use column sorting rather than [list sorting](/components/sorting).
-
 
 The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [chevron down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) and [chevron up](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-up) icons.
 
@@ -115,8 +114,8 @@ Tables may switch their alignment for right-to-left audiences when designing for
 
 ### Null values
 
-Representing null values should be made on a case-by-case basis. Some ways of addressing this are: 
-- Keep the cell empty. For example, if no data is returned. 
+Representing null values should be made on a case-by-case basis. Some ways of addressing this are:
+- Keep the cell empty. For example, if no data is returned.
 - Use text to indicate what is missing. For example, "Unassigned" if there is no assignee.
 - Use a dash ("-"). For example, if there is no data and a text explanation is not applicable.
 
