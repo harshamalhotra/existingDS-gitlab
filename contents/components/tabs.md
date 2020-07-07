@@ -43,5 +43,3 @@ When tabs are used in a narrow container, column, or space, the tabs themselves 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2497%3A25)
-
-Todo: Add design for fitted tabs
