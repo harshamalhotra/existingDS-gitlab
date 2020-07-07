@@ -1,7 +1,7 @@
 ---
 name: Toast
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A139
-docs: in-progress
+docs: complete
 vueComponents:
   - GlToast
 related:
