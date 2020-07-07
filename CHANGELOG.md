@@ -1,3 +1,10 @@
+# [1.23.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.22.0...v1.23.0) (2020-07-07)
+
+
+### Features
+
+* **file-uploader:** Add design specs ([e431a67](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e431a67dda22b0bbafc0992a51fea06e4bd6b203))
+
 # [1.22.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.21.4...v1.22.0) (2020-06-29)
 
 
