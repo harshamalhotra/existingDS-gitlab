@@ -20,7 +20,11 @@ A progress bar indicates a percentage of completion. For example, time tracking 
 
 ## Demo
 
-[[Example:progress-bar-basic]]
+<!--
+  DEMO, keep this section for all patterns, the code block demo will be added at a later date
+-->
+
+Todo: Add live component block with code example
 
 ## Specifications
 
