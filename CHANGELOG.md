@@ -1,3 +1,10 @@
+# [1.25.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.24.0...v1.25.0) (2020-07-08)
+
+
+### Features
+
+* **interaction:** Adds recommendations on external links ([ebd6221](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ebd62218e1f173b22a9bc2820aacbe5bffaf364a))
+
 # [1.24.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.23.0...v1.24.0) (2020-07-08)
 
 
