@@ -52,3 +52,11 @@ The mouse cursor is key in helping users understand how to interact with element
 A sticky container is a div that sticks to the top or bottom of it's parent container. It contains actions or links that are relevant to the task someone is performing. Sticky containers are useful for long pages that contain lots of content that would push buttons or actions above or below the viewport. For example, when editing a wiki, the save changes button will always be visible even if the wiki content extends below the viewport.
 
 Use sticky containers with caution as they can easily crowd the interface and make it difficult to navigate the page by shrinking the content area.
+
+## Links to external resources
+
+- If a link goes to a resource outside of GitLab and doesn’t specify the destination in text, then show the [external-link icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~external-link) at the end of the text.
+    - Example:
+        - [View file in new page]() -- indicates the destination and doesn’t require an icon.
+        - [View file]() -- doesn’t indicate the destination and should have an icon.
+- When using the external link icon, ensure it is always displayed for better accessibility and to account for inline instances. Do not only show it on hover. The icon should use `aria-label="external link"`, or similar, to communicate the purpose to screen reader users.
