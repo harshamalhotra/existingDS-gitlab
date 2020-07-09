@@ -1,3 +1,10 @@
+## [1.25.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.25.0...v1.25.1) (2020-07-09)
+
+
+### Bug Fixes
+
+* **font-awesome:** Remove font awesome from repo ([26d2e47](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/26d2e47ad8ccc3e391ca24d100a8bb838dc72ec8))
+
 # [1.25.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.24.0...v1.25.0) (2020-07-08)
 
 
