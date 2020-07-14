@@ -65,7 +65,7 @@ We use the same types as [Angular's commit guidelines](https://github.com/angula
 - **feat:** A new feature (adding a new component page, providing new variants/usage guidelines for an existing component, etc.).
 - **fix:** A bug fix (correcting grammar, addressing broken links, etc.).
 When updating non-dev dependencies, mark your changes with the `fix:` type.
-- **docs:** Documentation-only changes. Since Pajamas is mostly documenation, the `doc:` type should be used for project documentation, not Pajamas documentation.
+- **docs:** Documentation-only changes. Since Pajamas is mostly documenation, the `docs:` type should be used for documentation for the Pajamas project (files in the `doc/` folder or README.md ), not Pajamas documentation.
 - **style:** Changes that do not affect the meaning of the code
 (whitespace, formatting, missing semicolons, etc). _Not_ to be used for CSS changes as those are
 meaningful changes, consider using `feat:` of `fix:` instead.
