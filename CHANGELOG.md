@@ -1,3 +1,10 @@
+# [1.27.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.26.0...v1.27.0) (2020-07-15)
+
+
+### Features
+
+* **broadcast:** Add anchor styling specification ([850e88d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/850e88dcae280cb907a0517aa0e1bc9af812f83a))
+
 # [1.26.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.25.1...v1.26.0) (2020-07-15)
 
 
