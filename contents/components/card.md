@@ -14,6 +14,7 @@ Cards are used to connect similar concepts and/or activities to help make it eas
 | Do | Don't |
 | --- | --- |
 | Use cards for snapshots or an overview of information. | Don't use a card for an entire workflow. Consider a dedicated content area (a drawer, [modal](/components/modals), or even a dedicated page) for deep dives. |
+| Use cards if you are displaying a discrete block of content as part of a broader set. For example, issues displayed on an issue board or pricing options displayed on pricing and marketing pages. | Use cards as a way of blocking information. For example, [forms](/components/forms) or single stats. |
 
 ### Types
 
