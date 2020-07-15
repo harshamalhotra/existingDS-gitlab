@@ -1,3 +1,10 @@
+# [1.26.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.25.1...v1.26.0) (2020-07-15)
+
+
+### Features
+
+* **card:** Add details for when and when not to use cards with examples ([e8d23d4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e8d23d4df0bc4e61f0ae09c48402cb7fb07f5332))
+
 ## [1.25.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.25.0...v1.25.1) (2020-07-09)
 
 
