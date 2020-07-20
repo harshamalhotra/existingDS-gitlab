@@ -54,7 +54,61 @@ The bars on a column chart are presented vertically rather than horizontally, an
 
 [[Example:column-basic]]
 
+#### Column chart variants
+
+##### Stacked
+
+Todo: add details
+
 [[Example:stacked-column-basic]]
+
+##### Grouped
+
+Todo: add details
+
+##### Grouped and stacked
+
+Grouped and stacked column charts display two dimensions of data (one nested within another) moving across a time series. 
+
+There are three dimensions displayed in total on grouped and stacked column charts:
+- **Groups**: The first dimension is represented by a group of columns.
+- **Stacks**: The second nested dimension is represented as a stacked column.
+- **Series**: The time series is represented across the x-axis.
+
+*Note: Try to avoid using more than 5 values in each dimension to prevent visual complexity in the charts.*
+
+There are two kinds of grouped and stacked column charts:
+- **Symmetric**: The number of stacks in each column is equal.
+- **Asymmetric**: The number of stacks in each columnn is not equal.
+
+Todo: Add symmetric example
+Todo: Add asymmetric example
+
+See [color](/data-visualization/color/) for a full description of data visualization color patterns.
+
+###### Cross-column colors
+
+Use cross-column colors to highlight the "Groups" dimension spanning across columns.
+
+Todo: Add example
+
+###### Graded transparency
+
+Use graded transparency to highlight the "Stacks" dimension within the columns whilst differentiating between the other columns.
+
+Todo: Add example
+
+###### Specific colors
+
+Specific colors may be used when values in a chart have certain colors associated with them. For example, merge request state or vulnerability status. Specific colors should be used sparingly.
+
+Todo: Add example
+
+##### 2 y-axes
+
+2 y-axis charts may be used when showing data sets at different orders of magnitude (for example, issues closed, 10; issues opened, 10; total issues 1,000). This helps to show the correlation between the two data sets whilst maintaining the visualisation at lower orders of magnitude at a usable and parsable size.
+
+Todo: add details
 
 ### Line charts
 
