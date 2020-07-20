@@ -17,7 +17,7 @@ Skeleton loaders are to be used when pages or sections can be progressively popu
 
 ### Presentation
 
-Skeleton objects are presented in grayscale and never use color. They use a pulsing wave effect [motion](/foundations/motion) to indicate they are loading. The animation transitions color horizontally from left to right, starting with [$gray-200](/product-foundations/colors#neutral-palette) to [$gray-100](/product-foundations/colors#neutral-palette).
+Skeleton objects are presented in grayscale and never use color. They use a pulsing wave effect [motion](/foundations/motion) to indicate they are loading. The animation transitions color horizontally from left to right, starting with [$gray-200](/product-foundations/colors#neutral-palette) to [$gray-100](/product-foundations/colors#neutral-palette). Use rounded corners, even for rectangular shapes. Shapes follow our [standard spacing guidelines](/layout/spacing#standard-spacing-guidelines).
 
 [[Example:issue-card-skeleton-basic]]
 
