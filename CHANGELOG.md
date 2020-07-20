@@ -1,3 +1,10 @@
+# [1.28.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.27.0...v1.28.0) (2020-07-20)
+
+
+### Features
+
+* **GlModal:** add modal scrollability guidelines ([6334f20](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6334f20352ab656e389d690754b7802148cdbe0a))
+
 # [1.27.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.26.0...v1.27.0) (2020-07-15)
 
 
