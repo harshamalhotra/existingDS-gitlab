@@ -1,3 +1,10 @@
+# [1.29.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.28.0...v1.29.0) (2020-07-20)
+
+
+### Features
+
+* **charts:** Add grouped stacked column chart docs ([75c3288](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/75c3288001ccb2fd1f450a79c1b26c6bdf6e0cf5))
+
 # [1.28.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.27.0...v1.28.0) (2020-07-20)
 
 
