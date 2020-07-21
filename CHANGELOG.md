@@ -1,3 +1,10 @@
+# [1.30.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.29.0...v1.30.0) (2020-07-21)
+
+
+### Features
+
+* **drag-drop:** Add more comprehensive docs for drag drop ([44e7ed7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/44e7ed7059b50dea2a6cd5da875e47adcfff878e))
+
 # [1.29.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.28.0...v1.29.0) (2020-07-20)
 
 
