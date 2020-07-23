@@ -1,3 +1,10 @@
+# [1.31.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.30.0...v1.31.0) (2020-07-23)
+
+
+### Features
+
+* **dropdowns:** Add Figma spec links ([7a66d53](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a66d53f1a6ca95715c41c524261f418839c57cc))
+
 # [1.30.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.29.0...v1.30.0) (2020-07-21)
 
 
