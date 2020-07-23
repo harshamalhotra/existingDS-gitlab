@@ -4,6 +4,7 @@ figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=
 docs: in-progress
 vueComponents:
   - GlButton
+  - GlButtonGroup
 related:
   - dropdowns
   - segmented-control
@@ -169,7 +170,7 @@ Ellipsis buttons allow for expanding content inline. It can be used when content
 
 Button groups merge frequently used buttons with a close relationship or similar actions together to aid with arrangement and spacing. Button groups are always displayed in a horizontal row.
 
-Todo: Add live component block with code example
+[[Example:button-group-basic]]
 
 ### Icon group
 
