@@ -116,7 +116,7 @@ Icon dropdowns function similarly to other dropdown button combinations with the
 
 Color, spacing, dimension, and layout-specific information pertaining to this component can be viewed using the following link:
 
-[Sketch Measure Preview for Dropdowns](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/dropdown-spec-previews/)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=12053%3A6)
 
 ## Resources
 
