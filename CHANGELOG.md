@@ -1,3 +1,10 @@
+## [1.31.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.31.0...v1.31.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* bind aria-expanded to open property ([6a4598f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6a4598f9245db00e4b461005aafc9a212abd80ec))
+
 # [1.31.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.30.0...v1.31.0) (2020-07-23)
 
 
