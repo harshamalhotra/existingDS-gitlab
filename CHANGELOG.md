@@ -1,3 +1,10 @@
+# [1.32.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.31.1...v1.32.0) (2020-07-24)
+
+
+### Features
+
+* **Buttons:** Including button group example ([087e60a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/087e60aecdfd59b1177d8f190737a8e3c0433d78))
+
 ## [1.31.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.31.0...v1.31.1) (2020-07-23)
 
 
