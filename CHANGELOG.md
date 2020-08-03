@@ -1,3 +1,10 @@
+# [1.33.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.32.0...v1.33.0) (2020-08-03)
+
+
+### Features
+
+* **Charts:** add popover text wrap info ([fe1443b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fe1443b4ffd21f79aae4dd1ca0e71bb8d4a1a84e))
+
 # [1.32.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.31.1...v1.32.0) (2020-07-24)
 
 
