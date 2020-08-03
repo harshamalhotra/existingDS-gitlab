@@ -138,8 +138,14 @@ The zoom bar is not added to all charts by default and shouldn't be used in case
 
 By hovering over specific data points on charts, users will see a [popover](/components/popover/). The popovers for charts help provide users with more detailed information about both the values being hovered on and their corresponding positions on the x and y axes. The data displayed in the chart popovers is as follows:
 
-- Popover header: x axis value (x axis title)
-- Popover body: y axis title, value
+- Popover header: x-axis value (x-axis title)
+- Popover body: y-axis title, value
+
+The [column chart measure spec](https://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/) shows examples of how popover content could be structured, in practice.
+
+##### Text wrapping in chart popovers
+
+The max-width of chart popovers is `512px`, with long chart values wrapping rather than truncating. When chart values in popovers wrap, break the word into two lines without using a hyphen.
 
 #### More options menu
 
