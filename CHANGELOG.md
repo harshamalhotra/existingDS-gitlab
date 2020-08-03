@@ -1,3 +1,10 @@
+# [1.34.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.33.0...v1.34.0) (2020-08-03)
+
+
+### Features
+
+* **alerts:** Document that alerts should be actionable ([393997f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/393997fd4dba82956e3d751bbedac3d4c6649301))
+
 # [1.33.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.32.0...v1.33.0) (2020-08-03)
 
 
