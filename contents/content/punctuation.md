@@ -4,11 +4,26 @@ name: Punctuation
 
 ## Case
 
-Use sentence case for titles, headings, labels, menu items, and buttons. Use title case when referring to [features](https://about.gitlab.com/features/) or [products](https://about.gitlab.com/products/). Note that some features are also objects (for example, “Merge Requests” and “Merge requests”).
+Use sentence case for:
 
-| Do | Don’t |
-| --- | --- |
-| Add issues to the Issue Board feature in GitLab Hosted. | Add Issues to the Issue Board Feature in GitLab Hosted. |
+- Titles, headings, labels, menu items, buttons, and microcopy. Capitalize individual terms that require it, as described below.
+
+Use lowercase for:
+
+- Most words, including [features](https://about.gitlab.com/features/) that:
+  - Match a type of object in GitLab. For example: issue(s), merge request(s), epic(s).
+  - Describe an action. For example: "You can reorder issues in an epic."
+
+Capitalize:
+
+- Features that are nouns naming a capability, methodology, or tool; not an object type.
+   - For example: GitLab CI/CD, Repository Mirroring, the Web IDE, Container Registry, Value Stream Analytics, the To-Do List.
+      - Exception: Use lowercase for capabilities that are common industry terms, for example, syntax highlighting.
+
+| Do                                                          | Don’t                                                       |
+|:------------------------------------------------------------|:------------------------------------------------------------|
+| Use epics to organize your issues.                          | Use Epics to organize your issues.                          |
+| The project's repository is replicated using Geo.           | The Project's Repository is replicated using Geo.           |
 
 Always capitalize the first word in bulleted lists. This includes sentences that complete an introductory stem.
 
