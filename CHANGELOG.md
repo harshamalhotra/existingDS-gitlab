@@ -1,3 +1,10 @@
+# [1.35.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.34.0...v1.35.0) (2020-08-04)
+
+
+### Features
+
+* **content:** Clarify case for features that are also objects ([eb3286a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eb3286a24bac073a478b09053b48ac2eba5c05ed))
+
 # [1.34.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.33.0...v1.34.0) (2020-08-03)
 
 
