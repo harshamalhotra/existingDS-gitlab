@@ -173,6 +173,26 @@ Icons can be placed inside input fields for various use cases. For example, date
 
 Todo: Add live component block with code example (input field with an icon)
 
+### Keyboard shortcuts
+
+#### <kbd>Enter</kbd> key
+
+When keyboard focus is inside an input field, pressing the <kbd>Enter</kbd> key should submit the form (provided there are no validation errors).
+
+This does not apply to mutli-line fields, such as Markdown editors, since these controls need to support the input of newlines.
+
+##### Exceptions
+
+There are some cases in which the submit-on-Enter behavior should be disabled. For example, if a form has a dropdown control that includes a search bar, pressing <kbd>Enter</kbd> inside the search bar should **not** submit the form.
+
+In general, this behavior should be disabled for input elements that do not directly edit a form’s data.
+
+##### Quick submit
+
+Forms should support the "quick submit" behavior, which allows forms to be submitted from any control (including Markdown editors) using <kbd>⌘</kbd> + <kbd>Enter</kbd> (or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>).
+
+Note to developers: the quick submit behavior can be automatically added to a form using the `js-quick-submit` CSS class implemented in [`quick_submit.js`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/assets/javascripts/behaviors/quick_submit.js).
+
 ## Design specification
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
