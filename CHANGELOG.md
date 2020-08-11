@@ -1,3 +1,10 @@
+# [1.36.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.35.0...v1.36.0) (2020-08-11)
+
+
+### Features
+
+* **forms:** Add recommended Enter key behavior ([b2aa4a4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2aa4a4c66b06e7e5e19ea761517da846f8851bc))
+
 # [1.35.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.34.0...v1.35.0) (2020-08-04)
 
 
