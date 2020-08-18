@@ -140,7 +140,7 @@ Emoji buttons provide the user with visual to signify what the emotion users hav
 
 ### Dropdown
 
-Dropbown buttons trigger menus of options which can be either actions or input values.
+Dropdown buttons trigger menus of options which can be either actions or input values. The only icon that should be present in the default dropdown is the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label.
 
 [[Example:new-dropdown-default]]
 
