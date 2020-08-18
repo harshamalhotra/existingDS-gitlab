@@ -1,3 +1,10 @@
+# [1.37.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.36.0...v1.37.0) (2020-08-18)
+
+
+### Features
+
+* **Buttons:** Clarify icon use in default dropdown button ([bca9210](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bca92109066305fa36311409046fea5b395f9503))
+
 # [1.36.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.35.0...v1.36.0) (2020-08-11)
 
 
