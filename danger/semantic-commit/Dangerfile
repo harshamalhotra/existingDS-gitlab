@@ -174,7 +174,7 @@ def lint_commit(commit)
   semantic_commit = match_semantic_commit(subject)
 
   if !semantic_commit
-    warn_commit(commit, 'The commit does not comply with conventional commits specifications.')
+    fail_commit(commit, 'The commit does not comply with conventional commits specifications.')
 
     failed = true
   elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
