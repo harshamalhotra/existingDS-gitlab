@@ -9,10 +9,10 @@ format that includes a **type**, a **scope**, and a **subject**:
 
 ```plaintext
 <type>(<scope>): <subject>
-<BLANK LINE>
-<body>
-<BLANK LINE>
-<footer>
+
+<body - optional>
+
+<footer - optional>
 ```
 
 The header is mandatory and the scope of the header is optional.
