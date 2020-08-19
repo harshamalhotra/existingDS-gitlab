@@ -1,3 +1,10 @@
+## [1.37.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.37.0...v1.37.1) (2020-08-19)
+
+
+### Bug Fixes
+
+* **GlDropdown:** Update GlNewDropdown with GlDropdown ([3b6f171](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3b6f17154c071d14aabd45f003f2b457e0c87cd2))
+
 # [1.37.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.36.0...v1.37.0) (2020-08-18)
 
 
