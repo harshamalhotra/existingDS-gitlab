@@ -1,3 +1,10 @@
+# [1.38.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.37.1...v1.38.0) (2020-08-19)
+
+
+### Features
+
+* **layers:** Add layers documentation ([862679f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/862679f1c5fc77824bfb4da9b8d8759261d67742))
+
 ## [1.37.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.37.0...v1.37.1) (2020-08-19)
 
 
