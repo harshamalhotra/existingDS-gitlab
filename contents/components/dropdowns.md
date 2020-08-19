@@ -2,7 +2,7 @@
 name: Dropdowns
 docs: in-progress
 vueComponents:
-  - GlNewDropdown
+  - GlDropdown
 related:
   - button
   - checkbox
