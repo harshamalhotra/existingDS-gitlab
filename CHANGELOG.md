@@ -1,3 +1,10 @@
+# [1.39.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.38.0...v1.39.0) (2020-08-20)
+
+
+### Features
+
+* **alert:** Add guidelines for global alerts ([a772a8e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a772a8ea15bb8257c17c35d7dd22e59d5c0b4248))
+
 # [1.38.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.37.1...v1.38.0) (2020-08-19)
 
 
