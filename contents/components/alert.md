@@ -51,6 +51,10 @@ Use non-dismissible alerts when the user is prevented from completing a task unt
 
 Place alerts on top of the page when they’re referring to something that happened on the page level, “Something went wrong while fetching latest comments.” on the issue page, for example. These alerts should be placed directly below the navigation bar and above the breadcrumbs with vertical spacing on top and bottom to separate it from the page content. Page-level alerts never appear below the breadcrumbs. Additionally, error alerts can be made sticky to make it more likely that the user notices them. The width of the page-level alerts should be restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
 
+### Global alerts
+
+Use a global alert when something affects the system at large. For example, “Your subscription has expired.” Global alerts are triggered by the system, and not by an admin. They’re positioned the same as page-level alerts, but they should be full width instead of being constrained by the page’s content container width. They should have top and bottom margin to separate the alert from other page content.
+
 ### Embedded alerts
 
 Place alerts within a section of the page or UI element when the user needs to be informed of the status of that particular area the alert is referring to. For example, if we want to show an alert inside a modal we first need to know its purpose. If the alert is informing the user of what will happen once they confirm an action by clicking the primary button in that modal, placing the alert at the bottom of the modal and above the action bar is the best option here. In most cases, sticky alerts should not be used.
