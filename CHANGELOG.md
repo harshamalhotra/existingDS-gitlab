@@ -1,3 +1,10 @@
+## [1.39.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.39.0...v1.39.1) (2020-08-24)
+
+
+### Bug Fixes
+
+* **tree:** Update broken link accordionS to accordion ([126b8e3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/126b8e364c6b05fc540100d0e2623b6077aedf2e))
+
 # [1.39.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.38.0...v1.39.0) (2020-08-20)
 
 
