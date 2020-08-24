@@ -190,6 +190,12 @@ Icon segmented controls function similar to segmented control buttons with the d
 
 See [segmented control](/components/segmented-control) for more information.
 
+### Loading
+
+Any button can utilize the `loading` property to turn a button’s state into a loading state. This state indicates that an action is in progress, and the button can’t be clicked while the state persists.
+
+[[Example:button-loading]]
+
 ### Pagination
 
 Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages.
