@@ -21,11 +21,28 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: 'gitlab,pajamas,design,system,guidelines' },
       {
         hid: 'description',
         name: 'description',
         content: 'Resources, components, and design guidelines behind GitLab',
       },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:creator', content: '@gitlab' },
+      { name: 'twitter:title', content: 'Pajamas Design System' },
+      {
+        name: 'twitter:description',
+        content: 'Resources, components, and design guidelines behind GitLab',
+      },
+      { name: 'twitter:image', content: 'https://design.gitlab.com/img/social/link-preview.png' },
+      { name: 'og:url', content: 'https://design.gitlab.com' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:title', content: 'Pajamas Design System' },
+      {
+        name: 'og:description',
+        content: 'Resources, components, and design guidelines behind GitLab',
+      },
+      { name: 'og:image', content: 'https://design.gitlab.com/img/social/link-preview.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
