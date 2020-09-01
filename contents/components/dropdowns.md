@@ -116,7 +116,7 @@ Icon dropdowns function similarly to other dropdown button combinations with the
 
 Color, spacing, dimension, and layout-specific information pertaining to this component can be viewed using the following link:
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=12053%3A6)
+[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A14)
 
 ## Resources
 
