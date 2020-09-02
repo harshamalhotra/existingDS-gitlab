@@ -37,14 +37,14 @@ Make sure the following are completed before closing the issue:
 1. [ ] **Maintainer**: Review and approve assignee’s changes.
 1. [ ] **Maintainer**: Add the changes or additions to the target file. For 
    example, you’d copy a final chart design from the working file and paste into the related location in the Data Visualization file.
-     [ ] Ensure that all styles and components now belong to the target file.
-     [ ] For changes to the **Component Library** file, view the components in the Assets panel to ensure they align with our [asset library structure guidelines][structure].
+     1. [ ] Ensure that all styles and components now belong to the target file.
+     1. [ ] For changes to the **Component Library** file, view the components in the Assets panel to ensure they align with our [asset library structure guidelines][structure].
 1. [ ] **Maintainer**: When applicable, [publish][publishing] any library 
    changes along with a clear commit message.
 1. [ ] **Assignee**: Move your working file to the shared Figma project:
-     [ ] For Component Library changes, move your file to the [**Component archive**][component-archive] project.
-     [ ] For all other changes, move your file to the [**Misc archive**][misc-archive] project.
-     [ ] If you’re a community contributor, we ask that you [transfer ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
+     1. [ ] For Component Library changes, move your file to the [**Component archive**][component-archive] project.
+     1. [ ] For all other changes, move your file to the [**Misc archive**][misc-archive] project.
+     1. [ ] If you’re a community contributor, we ask that you [transfer ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
 1. [ ] **Assignee** (or Maintainer, for community contributions): If it’s a new
    pattern or a significant change, add an agenda item to the next UX weekly call to inform the team.
 1. [ ] **Assignee**: When applicable, create a merge request in this repository 
