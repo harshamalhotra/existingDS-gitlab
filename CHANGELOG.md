@@ -1,3 +1,10 @@
+## [1.40.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.40.1...v1.40.2) (2020-09-03)
+
+
+### Bug Fixes
+
+* **skeleton-loader:** Update link to carbon DS loading guidelines ([f7d599a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f7d599ab8b1f7247cb510554b418394c985ffa46))
+
 ## [1.40.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.40.0...v1.40.1) (2020-09-02)
 
 
