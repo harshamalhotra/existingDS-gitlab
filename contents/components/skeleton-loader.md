@@ -46,4 +46,4 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 ## Resources
 
 - [UX collective [1]](https://uxdesign.cc/designing-a-skeleton-loader-6de1b4201c4e) [[2]](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
-- [Carbon design system loading pattern](https://www.carbondesignsystem.com/patterns/loading/)
+- [Carbon design system loading pattern](https://www.carbondesignsystem.com/patterns/loading-pattern/)
