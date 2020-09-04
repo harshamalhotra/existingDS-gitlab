@@ -804,10 +804,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.161.0.tgz#661e8d19862dfba0e4c558e2eb6d64b402c1453e"
   integrity sha512-qsbboEICn08ZoEoAX/TuYygsFaXlzsCY+CfmdOzqvJbOdfHhVXmrJBxd2hP2qqjTZm2PkbRRmn+03+ce1jvatQ==
 
-"@gitlab/ui@20.17.0":
-  version "20.17.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-20.17.0.tgz#5a148c778247efc08df5c093acf5e82069823970"
-  integrity sha512-yDZ+B9/rq7t6OqIHMxPk120KzAO7xM1JKlE9ahkDyijC7lohQy9ygQGFlvVHo1Bic4Y/IW7nzeeZErjzJ3PPtA==
+"@gitlab/ui@20.18.3":
+  version "20.18.3"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-20.18.3.tgz#14b1d6571756fbef7966d6658f56ca213ded15e8"
+  integrity sha512-yeXc40J8ifXm1aApuNNjEOZraDexYAyKZNRa05rLPXPppLnwZtx4Io5z9QiskN6fMiL648EgzC8JW576qtByCw==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.3.0"
@@ -817,7 +817,7 @@
     echarts "^4.2.1"
     highlight.js "^9.13.1"
     js-beautify "^1.8.8"
-    lodash "^4.17.14"
+    lodash "^4.17.20"
     portal-vue "^2.1.6"
     resize-observer-polyfill "^1.5.1"
     url-search-params-polyfill "^5.0.0"
@@ -5078,10 +5078,10 @@ lodash.upperfirst@4.3.1:
   resolved "https://registry.yarnpkg.com/lodash.upperfirst/-/lodash.upperfirst-4.3.1.tgz#1365edf431480481ef0d1c68957a5ed99d49f7ce"
   integrity sha1-E2Xt9DFIBIHvDRxolXpe2Z1J984=
 
-lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.5:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.20, lodash@^4.17.3, lodash@^4.17.5:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 loose-envify@^1.0.0:
   version "1.4.0"
