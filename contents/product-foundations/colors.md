@@ -791,15 +791,15 @@ Though deciding which color to use depends on the situation, here are some gener
       <div class="color">
         <div class="color-overview c-background-purple-600 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable f-inverted">$purple-600</span>
-          <span class="hex f-small f-inverted">#6b51b8</span>
+          <span class="hex f-small f-inverted">#694cc0</span>
         </div>
         <div class="color-details c-border-purple-600 p-t-6 p-r-5 p-b-6 p-l-5">
           <div class="color-details--section">
             <div class="f-bold m-b-2">Passing level and contrast ratio</div>
             <div class="d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.49)</div>
+            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.39)</div>
             <div class="f-inverted d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 m-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6)</div>
+            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.18)</div>
           </div>
         </div>
       </div>
