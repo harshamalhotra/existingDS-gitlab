@@ -1,3 +1,10 @@
+# [1.41.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.40.2...v1.41.0) (2020-09-09)
+
+
+### Features
+
+* **Color:** Update purple 600 hex ([aa628fd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aa628fd5877212defc3bbdfbbd5dca14b8ddd2eb))
+
 ## [1.40.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.40.1...v1.40.2) (2020-09-03)
 
 
