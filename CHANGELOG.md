@@ -1,3 +1,10 @@
+# [1.42.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.41.0...v1.42.0) (2020-09-09)
+
+
+### Features
+
+* **navigation:** define navigation related terms ([d68b212](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d68b212867a840fc680346b39998ad46ff865c2f))
+
 # [1.41.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.40.2...v1.41.0) (2020-09-09)
 
 
