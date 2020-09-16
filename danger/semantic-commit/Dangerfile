@@ -94,6 +94,13 @@ def lint_commit(commit)
     return { failed: false, release: NO_RELEASE }
   end
 
+  ## Suggestions applied through GitLab UI are not enforced for semantics as
+  ## long as the squash option is enabled.
+  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && gitlab.mr_json['squash']
+    appliedSuggestion = true
+    return { failed: false, release: NO_RELEASE }
+  end  
+
   release = NO_RELEASE
   failed = false
   subject, separator, details = commit.message.split("\n", 3)
@@ -107,14 +114,15 @@ def lint_commit(commit)
     failed = true
   end
 
-  # Fail if a suggestion commit is used and squash is not enabled
-  if commit.message.start_with?('Apply suggestion to') && !gitlab.mr_json['squash']
-    fail_commit(
+  # Warn if a suggestion commit is used and squash is not enabled.
+  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && !gitlab.mr_json['squash']
+    warn_commit(
       commit,
-      'If you are applying suggestions, squash needs to be enabled in the merge request'
+      'This MR contains applied suggestions, but the squash commits option is disabled. If you are a maintainer merging this MR, please enable the squash commits option before merging.'
     )
-
-    failed = true
+    
+    appliedSuggestion = true
+    failed = false
   end
 
   if subject.end_with?('.')
@@ -173,10 +181,12 @@ def lint_commit(commit)
 
   semantic_commit = match_semantic_commit(subject)
 
-  if !semantic_commit
+  if !semantic_commit && !appliedSuggestion
     fail_commit(commit, 'The commit does not comply with conventional commits specifications.')
 
     failed = true
+  elsif !semantic_commit && appliedSuggestion
+    release = NO_RELEASE
   elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
     warn_commit(
       commit,
