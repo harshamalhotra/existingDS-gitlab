@@ -1,3 +1,10 @@
+# [1.43.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.42.0...v1.43.0) (2020-09-21)
+
+
+### Features
+
+* **GLButton:** Allow for a neutral button to be the primary action ([36b09eb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/36b09ebecd637386c6f8e7553caef3302690aa7a))
+
 # [1.42.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.41.0...v1.42.0) (2020-09-09)
 
 
