@@ -102,7 +102,13 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     '@gitlab/nuxt-edit-this-page',
+    '@nuxtjs/sentry',
   ],
+
+  sentry: {
+    dsn: 'https://77ebbeb22fb243c786286ecd01caa19f@sentry.gitlab.net/109', // Enter your project's DSN here
+    disabled: !isProd,
+  },
 
   /**
    * Edit this page module configuration
