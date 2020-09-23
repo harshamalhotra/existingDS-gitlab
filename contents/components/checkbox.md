@@ -42,8 +42,7 @@ Use the following table to see when checkboxes should be used over other alterna
 ### Visual Design
 
 - Checkboxes use high-contrast colors for labels and default browser UI to indicate selected, unselected, and indeterminate states.
-- A vertical (stacked) layout is preferred, with one checkbox per line. For sets of two with short labels where wrapping or width constraints are not an issue the inline (horizontal) layout is acceptable.
-- Avoid mixing stacked and inline checkbox groups within the same form or context.
+- Options are stacked vertically, with one checkbox per line. 
 
 ### Interaction
 
@@ -55,8 +54,6 @@ Use the following table to see when checkboxes should be used over other alterna
 [[Example:form-checkbox-checked]]
 
 [[Example:form-checkbox-group-options-array]]
-
-[[Example:form-checkbox-group-stacked]]
 
 ## Design specifications
 
