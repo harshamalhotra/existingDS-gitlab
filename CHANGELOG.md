@@ -1,3 +1,10 @@
+## [1.43.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.43.0...v1.43.1) (2020-09-24)
+
+
+### Bug Fixes
+
+* **checkbox:** Remove horizontal layout option ([e59aab0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e59aab0f46608bb6d02401d381cad09d99c3899f))
+
 # [1.43.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.42.0...v1.43.0) (2020-09-21)
 
 
