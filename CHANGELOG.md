@@ -1,3 +1,10 @@
+# [1.44.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.43.1...v1.44.0) (2020-09-29)
+
+
+### Features
+
+* **Forms:** Document different validation types ([db3cf22](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/db3cf2274d15ec20964db0cd837e533ff34eb6f9))
+
 ## [1.43.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.43.0...v1.43.1) (2020-09-24)
 
 
