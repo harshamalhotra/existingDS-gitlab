@@ -117,13 +117,27 @@ Todo: Add live component block with code example (placeholder)
 
 ### Validation
 
-#### Error messages and states
+Validation should be shown inline and can happen in real-time or on form submission. Real-time validation should confirm correct content or assist a user to input the correct information to prevent them from attempting to submit the form with possibly incorrect information. Real-time validation might be frontend-only, but a user has no way of knowing that. Validation should always be visible and not placed in a tooltip. See also [submit form buttons](#submit-form-buttons) below.
 
-Error messages and validation should be shown inline and can, in general, happen either live or on form submission. Live validation should be seen as assisting the user to input the correct information, and not as a way of preventing them from attempting to submit the form with possibly incorrect information. Live validation might be frontend-only, but the user has no way of knowing that. See also the [submit form buttons section](#submit-form-buttons) below.
+When present, the validation message is placed directly below the input, and above any help text.
 
-The error message shows up below the input field that is in an error state. If there is help text below the input field, the error message pushes it further down as the error message needs to show up immediately below the input. Under no circumstances should the error message be displayed in a tooltip.
+#### Errors
+
+An error indicates content that can’t be submitted or was found to be invalid after submission and needs to be corrected. For example, an email address that doesn’t contain the '@' symbol. The input will have a red border to help visually emphasize what needs to be corrected.
 
 [[Example:form-group-validations]]
+
+#### Warnings
+
+A warning indicates content that may be formatted incorrectly or does not match the expected content. For example, an SSH key where the number of characters does not match the expected length.
+
+Todo: Add live component block with code example (warning)
+
+#### Success
+
+Success indicates content that is valid. For example, a URL that is formatted correctly or has been successfully pinged.
+
+Todo: Add live component block with code example (success)
 
 #### Submit form buttons
 
