@@ -224,19 +224,19 @@ Buttons can be expanded to the full width of the parent container. This can be u
 
 [[Example:button-full-width]]
 
-## Order
+## Ordering and positioning
 
-Buttons are ordered by importance from right to left. This means the primary action is the rightmost button, followed by secondary actions and so on to the left. Buttons with dismissive actions are generally on the left and buttons with affirmative actions are on the right. Depending on the context, the primary, affirmative action may be destructive.
+Historically, buttons have been ordered by importance from left to right. This means primary buttons on the left, followed by secondary buttons, and so on.
 
-Todo: Add a visual example of button order
+By default, all buttons are aligned to the left of their container. Deviate from this default if there's a strong reason.
 
-## Positioning
+In all cases, affirmative actions are positioned to the outer edge of a container. This means that on left-aligned buttons the affirmative action is the left-most action, and on right-aligned buttons, the affirmative action is the right-most action.
 
-Buttons are positioned towards the right and are placed next to each other when there are multiple. This applies to buttons with affirmative, dismissive, and destructive actions.
+An affirmative action is something that takes the users further in their journey (for example, Save or Delete), while a dismissive action takes a user back (for example, Cancel). Depending on the context, an affirmative action may be destructive.
 
-An exception to this rule is the use of buttons in [alerts](/components/alert), which are always left-aligned.
+Don’t place a button below another button if there is space to place them side by side.
 
-Please note to **not** place a button below another button if there is space to place them side by side.
+We are currently doing a [visual audit of button order and placement](https://gitlab.com/gitlab-org/gitlab-design/-/issues/1019) in order to determine the best guidelines that work in a variety of use cases. If you have use cases or additional thoughts, please contribute to the related issue.
 
 ## Labels
 
