@@ -1,3 +1,10 @@
+## [1.44.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.44.0...v1.44.1) (2020-09-30)
+
+
+### Bug Fixes
+
+* **buttons:** Update guidance on button positioning ([1d17a37](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1d17a37e7413d4f8f711d504371c5b12f9d3d5b5))
+
 # [1.44.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.43.1...v1.44.0) (2020-09-29)
 
 
