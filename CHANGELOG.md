@@ -1,3 +1,10 @@
+# [1.45.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.44.1...v1.45.0) (2020-09-30)
+
+
+### Features
+
+* **Tabs:** Updating fitted tab guidelines ([4a6eb8f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4a6eb8fc398e030df055a9f73e35b25397c88aed))
+
 ## [1.44.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.44.0...v1.44.1) (2020-09-30)
 
 
