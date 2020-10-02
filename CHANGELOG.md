@@ -1,3 +1,10 @@
+# [1.46.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.45.0...v1.46.0) (2020-10-02)
+
+
+### Features
+
+* Add initial gitpod configuration files ([a6ccb40](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a6ccb40c2672dace3286e86b66b7f200c0a7562f))
+
 # [1.45.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.44.1...v1.45.0) (2020-09-30)
 
 
