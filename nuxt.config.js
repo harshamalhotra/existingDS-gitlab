@@ -11,6 +11,16 @@ const routes = [
 
 const isProd = process.env.NODE_ENV === 'production';
 
+const cspPolicies = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  "style-src 'self' 'unsafe-inline'",
+  "object-src 'none'",
+  "img-src 'self' https: data:",
+  "child-src 'none'",
+  "connect-src 'self' https://sentry.gitlab.net",
+];
+
 module.exports = {
   /*
    ** Headers of the page
@@ -20,6 +30,10 @@ module.exports = {
       titleChunk ? `${titleChunk} | Pajamas Design System` : 'Pajamas Design System',
     meta: [
       { charset: 'utf-8' },
+      {
+        'http-equiv': 'Content-Security-Policy',
+        content: cspPolicies.join(';'),
+      },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'gitlab,pajamas,design,system,guidelines' },
       {
