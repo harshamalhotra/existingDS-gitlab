@@ -192,9 +192,15 @@ See [segmented control](/components/segmented-control) for more information.
 
 ### Loading
 
-Any button can utilize the `loading` property to turn a button’s state into a loading state. This state indicates that an action is in progress, and the button can’t be clicked while the state persists.
+Any button can utilize the `loading` property to turn a button’s state into a loading state. This state indicates that an action is in progress by adding a [spinner](/components/spinner), and the button can’t be clicked while the state persists.
+
+For [text buttons](#text) or [icon and text buttons](#icon-%2B-text), the spinner is added to the left of the button, before the icon or label.
 
 [[Example:button-loading]]
+
+For [icon buttons](#icon), the spinner replaces the icon.
+
+Todo: Add live component block with example of loading icon button
 
 ### Pagination
 
