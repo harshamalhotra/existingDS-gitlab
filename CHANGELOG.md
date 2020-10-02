@@ -1,3 +1,10 @@
+## [1.46.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.0...v1.46.1) (2020-10-02)
+
+
+### Reverts
+
+* Revert "Update nuxt.config.js" ([83da4b2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/83da4b2f549f2387744a5371b29cdcb7ebb17144))
+
 # [1.46.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.45.0...v1.46.0) (2020-10-02)
 
 
