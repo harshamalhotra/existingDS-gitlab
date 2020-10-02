@@ -20,11 +20,6 @@ module.exports = {
       titleChunk ? `${titleChunk} | Pajamas Design System` : 'Pajamas Design System',
     meta: [
       { charset: 'utf-8' },
-      {
-        'http-equiv': 'Content-Security-Policy',
-        content:
-          "default-src 'self'; img-src https://*; child-src 'none'; connect-src 'self' https://sentry.gitlab.net;",
-      },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'gitlab,pajamas,design,system,guidelines' },
       {
