@@ -1,3 +1,10 @@
+## [1.46.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.1...v1.46.2) (2020-10-05)
+
+
+### Bug Fixes
+
+* **deps:** upgrade Nuxt to v2.14.6 ([982106d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/982106ddb35de917e7785ca24d6387ff254ff3e3))
+
 ## [1.46.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.0...v1.46.1) (2020-10-02)
 
 
