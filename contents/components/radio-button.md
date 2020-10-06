@@ -50,9 +50,13 @@ Use the following table to see when radio buttons should be used over other alte
 
 ### Design
 
-- Radio buttons use custom styles (based on Bootstrap) instead of browser defaults, and label text uses high-contrast colors.
+- Radio buttons use high-contrast colors for labels and custom styles (based on Bootstrap) instead of browser defaults for the radio control.
 - Radio buttons are vertically stacked, with one radio button per line.
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4)
+
+### Accessibility
+
+Todo: Add accessibility specifications

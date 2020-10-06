@@ -39,15 +39,10 @@ Use the following table to see when checkboxes should be used over other alterna
 - Use a `fieldset` with `legend` (set in bold font weight and positioned above the group of checkboxes) to group a set of checkboxes. Some screen readers will announce the contents of the legend before each nested input to maintain context for a user.
 - [Help text](/components/forms#help-text) can be added below the checkbox label or as a paragraph below the group.
 
-### Visual Design
-
-- Checkboxes use high-contrast colors for labels and default browser UI to indicate selected, unselected, and indeterminate states.
-- Options are stacked vertically, with one checkbox per line. 
-
 ### Interaction
 
 - Users are able to select an option with click/tap on the checkbox or its label.
-- Checking one checkbox does not change the state of others, unless the parent was indeterminant and all children have the same state.
+- Checking one checkbox does not change the state of others, unless the parent was indeterminate and all children have the same state.
 
 ## Demo
 
@@ -55,8 +50,17 @@ Use the following table to see when checkboxes should be used over other alterna
 
 [[Example:form-checkbox-group-options-array]]
 
-## Design specifications
+## Specifications
+
+### Design
+
+- Checkboxes use high-contrast colors for labels and default browser UI to indicate selected, unselected, and indeterminate states.
+- Options are stacked vertically, with one checkbox per line.
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242)
+
+### Accessibility
+
+Todo: Add accessibility specifications
