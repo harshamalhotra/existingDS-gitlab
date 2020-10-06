@@ -1,3 +1,10 @@
+# [1.47.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.2...v1.47.0) (2020-10-06)
+
+
+### Features
+
+* **buttons:** Add info about icon only loading button ([e6642e6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e6642e6ac383e4b6ca0317cea15f6cf544e4d2b4))
+
 ## [1.46.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.1...v1.46.2) (2020-10-05)
 
 
