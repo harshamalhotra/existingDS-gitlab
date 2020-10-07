@@ -892,21 +892,21 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@1.170.0":
-  version "1.170.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.170.0.tgz#b40fb7a8af2545683e85c2257b34f78460ed1006"
-  integrity sha512-f3GYf/iEcZPxRARK6ufx0m9rQSpgnYcQFYUtM5uQs+oMTse9oSSk/pQ6Vru9mgIcxw3YiYVMjP/WsP5EgVABbw==
+"@gitlab/svgs@1.171.0":
+  version "1.171.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.171.0.tgz#abc3092bf804f0898301626130e0f3231834924a"
+  integrity sha512-TPfdqIxQDda+0CQHhb9XdF50lmqDmADu6yT8R4oZi6BoUtWLdiHbyFt+RnVU6t7EmjIKicNAii7Ga+f2ljCfUA==
 
-"@gitlab/ui@21.19.0":
-  version "21.19.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-21.19.0.tgz#4ca1e3f7b4531873d12fb15dd73aec0213cb1f12"
-  integrity sha512-tcEb382APXS6doa4Z6wL72hofLzugWXlyCN7ZlAZJzXf2KX+QqfjcB9F3FSdrkJDrDf6OAPEdm5tn/V7HzadGQ==
+"@gitlab/ui@21.21.0":
+  version "21.21.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-21.21.0.tgz#ce4bb746df85a889d217706733b8e50a1466fa1d"
+  integrity sha512-oJ+NSAh6v9UV7aOLu1IlAhxqyfZT6p1ysKkzroz8jaH3BbtIB5ycHrz4+DJdpZbj/SOF5C4THrx9j8Y84S+Q3A==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.3.0"
     bootstrap-vue "2.13.1"
     copy-to-clipboard "^3.0.8"
-    dompurify "^2.0.12"
+    dompurify "^2.1.1"
     echarts "^4.2.1"
     highlight.js "^9.13.1"
     js-beautify "^1.8.8"
@@ -3469,10 +3469,10 @@ domhandler@2.1:
   dependencies:
     domelementtype "1"
 
-dompurify@^2.0.12:
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.0.12.tgz#284a2b041e1c60b8e72d7b4d2fadad36141254ae"
-  integrity sha512-Fl8KseK1imyhErHypFPA8qpq9gPzlsJ/EukA6yk9o0gX23p1TzC+rh9LqNg1qvErRTc0UNMYlKxEGSfSh43NDg==
+dompurify@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.1.1.tgz#b5aa988676b093a9c836d8b855680a8598af25fe"
+  integrity sha512-NijiNVkS/OL8mdQL1hUbCD6uty/cgFpmNiuFxrmJ5YPH2cXrPKIewoixoji56rbZ6XBPmtM8GA8/sf9unlSuwg==
 
 domutils@1.1:
   version "1.1.6"
