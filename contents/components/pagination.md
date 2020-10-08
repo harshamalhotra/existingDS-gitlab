@@ -36,6 +36,10 @@ Truncation is shown using `…` when the number of pages exceeds the pagination 
 
 Double truncation occurs when the current page is separated by 5 or more pages from the first and last page on large and medium viewports. On small and mobile viewports, double truncation occurs when 1 or more pages separate the current page from the first and last page.
 
+#### Page counters
+
+When page counters are not available due to a technical restraint, the Compact Pagination component may be used without the page count.
+
 ## Demo
 
 [[Example:pagination-basic]]
