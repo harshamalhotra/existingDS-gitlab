@@ -1,3 +1,10 @@
+# [1.48.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.47.0...v1.48.0) (2020-10-08)
+
+
+### Features
+
+* **pagination:** Update pagination with page counters information ([9df1bb7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9df1bb7a3cb86257f0c3a89a621c77ee6758113a))
+
 # [1.47.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.46.2...v1.47.0) (2020-10-06)
 
 
