@@ -1,3 +1,10 @@
+# [1.49.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.48.0...v1.49.0) (2020-10-14)
+
+
+### Features
+
+* **settings:** Add new region page for Settings ([b56eb9c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b56eb9c05c1d12961ef09a0e7723f7867ae71a8c))
+
 # [1.48.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.47.0...v1.48.0) (2020-10-08)
 
 
