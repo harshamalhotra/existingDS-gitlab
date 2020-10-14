@@ -1,3 +1,10 @@
+# [1.50.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.49.0...v1.50.0) (2020-10-14)
+
+
+### Features
+
+* **Forms:** Sync specifications section between checkboxes and radios ([0079a79](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0079a79105794fef6c38b30e0ef86607b1a93bac))
+
 # [1.49.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.48.0...v1.49.0) (2020-10-14)
 
 
