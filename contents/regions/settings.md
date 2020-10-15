@@ -2,9 +2,9 @@
 name: Settings
 related:
   - accordion
-  - navigation
-  - content/voice-tone
-  - product-foundations/saving-and-feedback
+  - /regions/navigation
+  - /content/voice-tone
+  - /product-foundations/saving-and-feedback
 ---
 
 Settings allow users to specify preferences for how their instance should behave. Settings should be predictable, structured, and display a focused number of options.
