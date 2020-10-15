@@ -1,3 +1,10 @@
+## [1.50.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.50.0...v1.50.1) (2020-10-15)
+
+
+### Bug Fixes
+
+* **settings:** Fix path to related components and patterns ([608588b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/608588be0d9603ef7aab92a387f9cb468565c8a1))
+
 # [1.50.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.49.0...v1.50.0) (2020-10-14)
 
 
