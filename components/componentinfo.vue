@@ -5,6 +5,8 @@ import {
   GlExampleExplorer,
 } from '@gitlab/ui/documentation';
 
+import componentExamples from '../contents/examples';
+
 import mdDisplay from './md_display.vue';
 import RelatedPages from './related_pages.vue';
 
@@ -47,6 +49,10 @@ export default {
         Object.keys(ComponentDocumentations).forEach(component => {
           if (component.startsWith(vueComponentName)) {
             this.vueComponentDocumentations[vueComponentName] = ComponentDocumentations[component];
+            if (componentExamples[vueComponentName]) {
+              this.vueComponentDocumentations[vueComponentName].examples =
+                componentExamples[vueComponentName];
+            }
           }
         });
       });
