@@ -3,7 +3,19 @@ import subMenu from '../components/sub_menu.vue';
 import menuSection from '../components/menu_section.vue';
 import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
 
+const componentNameToLabelMap = {
+  dropdowns: 'dropdown',
+  forms: 'form',
+  labels: 'label',
+  modals: 'modal',
+  'radio-button': 'radio',
+  tables: 'table',
+  tabs: 'tab',
+  toggles: 'toggle',
+};
+
 export default {
+  gitlabOrgBaseUrl: 'https://gitlab.com/groups/gitlab-org/-/',
   components: {
     subMenu,
     menuSection,
@@ -17,6 +29,13 @@ export default {
   computed: {
     contentWrapper() {
       return this.$route.fullPath === '/' ? '' : 'content main';
+    },
+    componentLabel() {
+      const { section, slug } = this.$route.params;
+      if (section !== 'components') {
+        return null;
+      }
+      return componentNameToLabelMap[slug] || slug;
     },
   },
   mounted() {
@@ -110,15 +129,30 @@ export default {
     </nav>
     <div :class="contentWrapper">
       <nuxt />
-      <footer class="content footer limited m-b-7">
-        Edit <edit-this-page-link>this page</edit-this-page-link> &mdash;
-        Open
+      <footer class="content footer limited m-b-7 row justify-content-center">
+        <edit-this-page-link>Edit this page</edit-this-page-link>
+        <span class="footer-link-divider"></span>
         <edit-this-page-link
           edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/master/-"
         >
-          Web IDE
-        </edit-this-page-link> &mdash;
-        Please <nuxt-link to="/contribute/get-started">contribute</nuxt-link>
+          Open Web IDE
+        </edit-this-page-link>
+        <span class="footer-link-divider"></span>
+        <template v-if="componentLabel">
+          <a
+            :href="`${$options.gitlabOrgBaseUrl}issues?label_name%5B%5D=component%3A${componentLabel}`"
+          >
+            Related issues
+          </a>
+          <span class="footer-link-divider"></span>
+          <a
+            :href="`${$options.gitlabOrgBaseUrl}merge_requests?label_name%5B%5D=component%3A${componentLabel}`"
+          >
+            Related merge requests
+          </a>
+          <span class="footer-link-divider"></span>
+        </template>
+        <nuxt-link to="/contribute/get-started">Please contribute</nuxt-link>
       </footer>
     </div>
 
