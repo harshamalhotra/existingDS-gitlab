@@ -1,3 +1,10 @@
+# [1.51.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.50.1...v1.51.0) (2020-10-29)
+
+
+### Features
+
+* **GlTabs:** Add justified tabs example in docs ([672b885](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/672b885f3959d98b302af1ffeff59fe87a16a43c))
+
 ## [1.50.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.50.0...v1.50.1) (2020-10-15)
 
 
