@@ -1,3 +1,10 @@
+# [1.52.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.51.0...v1.52.0) (2020-10-30)
+
+
+### Features
+
+* **Forms:** Add docs for input description text ([a82561a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a82561a970e2b2e142971d2590f0db8ff6892b4a))
+
 # [1.51.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.50.1...v1.51.0) (2020-10-29)
 
 
