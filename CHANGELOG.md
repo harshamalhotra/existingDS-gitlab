@@ -1,3 +1,10 @@
+# [1.53.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.52.0...v1.53.0) (2020-11-02)
+
+
+### Features
+
+* **Buttons:** Initial draft for alignment and order ([7788c2e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7788c2ec2343db39a3b8d5f237226e9f99d7d9e2))
+
 # [1.52.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.51.0...v1.52.0) (2020-10-30)
 
 
