@@ -1,3 +1,10 @@
+# [1.54.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.53.0...v1.54.0) (2020-11-03)
+
+
+### Features
+
+* **content:** Include examples for sign-in and sign in ([0234666](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0234666371606cb2f03e5065c60b34da3e37c9d5))
+
 # [1.53.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.52.0...v1.53.0) (2020-11-02)
 
 
