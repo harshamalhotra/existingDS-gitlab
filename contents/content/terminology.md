@@ -2,7 +2,7 @@
 name: Terminology
 ---
 
-For clear and consistent communication, it’s important to always use correct terminology. Remember: 
+For clear and consistent communication, it’s important to always use correct terminology. Remember:
 
 - If you’re unsure which term to use, look for existing terminology in the product.
 - Never create a new term when an existing one is available to you.
@@ -76,3 +76,15 @@ Buttons that copy content to the clipboard don’t need the “to clipboard” p
 - **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
 
 Todo: Add comprehensive list of terminology Do/Don’t
+
+## Frequently confused nouns / verbs
+
+### Authentication: sign in and sign-in
+
+As noted in our [Documentation style guide](https://docs.gitlab.com/ee/development/documentation/styleguide.html#other-terms),
+we use "sign in" (verb) and "sign-in" (noun) instead of
+"log in" (verb) and "login" (noun).
+
+Usage: You can _sign in_ using the _sign-in_ screen.
+
+Related: You can _sign out_ through the _sign-out_ screen.
