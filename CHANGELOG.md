@@ -1,3 +1,10 @@
+## [1.54.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.0...v1.54.1) (2020-11-04)
+
+
+### Bug Fixes
+
+* **naming:** Use singular naming format for consistency ([04552d7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/04552d702e45392ab0b2d0661d6262c3fdf8013b))
+
 # [1.54.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.53.0...v1.54.0) (2020-11-03)
 
 
