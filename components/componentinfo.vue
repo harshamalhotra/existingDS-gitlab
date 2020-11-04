@@ -109,7 +109,6 @@ export default {
         </div>
         <gl-tabs
           v-model="tabIndex"
-          nav-class="top-area nav-links issues-state-filters mobile-separator nav nav-tabs"
           nav-wrapper-class="app-styles"
           lazy
         >
