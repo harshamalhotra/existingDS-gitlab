@@ -1,5 +1,5 @@
 ---
-name: Forms
+name: Form
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A10
 docs: in-progress
 vueComponents:
@@ -8,7 +8,7 @@ vueComponents:
   - GlFormTextarea
 related:
   - buttons
-  - dropdowns
+  - dropdown
   - date-picker
 ---
 

@@ -7,7 +7,7 @@ related:
   - card
   - tabs
   - breadcrumb
-  - dropdowns
+  - dropdown
   - sorting
 ---
 

@@ -3,7 +3,7 @@ name: Accordion
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A0
 docs: in-progress
 related:
-- modals
+- modal
 - tree
 - tabs
 ---
@@ -54,7 +54,7 @@ The affordance of the chevron means that additional information can be found "un
 
 ### Header
 
-Just like [modals](/components/modals/), the header of an accordion could be a question or a title. Either way, headers should give context about the underlying content in a concise and actionable way. Examples of headers can be "What can GitLab offer me?", or "More options".
+Just like [modals](/components/modal/), the header of an accordion could be a question or a title. Either way, headers should give context about the underlying content in a concise and actionable way. Examples of headers can be "What can GitLab offer me?", or "More options".
 
 ### Body
 

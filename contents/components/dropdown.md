@@ -6,12 +6,12 @@ vueComponents:
 related:
   - button
   - checkbox
-  - dropdowns
-  - forms
+  - dropdown
+  - form
   - segmented-control
 ---
 
-Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/button) or [form inputs](/components/forms).
+Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/button) or [form inputs](/components/form).
 
 ## Usage
 
@@ -26,7 +26,7 @@ There are three main types of dropdowns:
 
 Use the following table to see when a dropdown should be used over other alternative components.
 
-|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdowns) |
+|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdown) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdown) |
 |---|---|---|---|---|---|---|---|
 | Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
 | Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |

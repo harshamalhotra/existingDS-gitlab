@@ -6,7 +6,7 @@ gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/
 vueComponents:
   - GlFormCheckbox
 related:
-  - dropdowns
+  - dropdown
   - radio-button
   - segmented-control
   - toggle
@@ -23,7 +23,7 @@ A checkbox represents a single boolean option that can be checked, unchecked, or
 
 Use the following table to see when checkboxes should be used over other alternative components.
 
-|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdowns) |
+|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdown) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdown) |
 |---|---|---|---|---|---|---|---|
 | Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
 | Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
@@ -37,7 +37,7 @@ Use the following table to see when checkboxes should be used over other alterna
 
 - Checkbox labels are set in regular font weight, positioned to the right of the element, and should be as short as possible.
 - Use a `fieldset` with `legend` (set in bold font weight and positioned above the group of checkboxes) to group a set of checkboxes. Some screen readers will announce the contents of the legend before each nested input to maintain context for a user.
-- [Help text](/components/forms#help-text) can be added below the checkbox label or as a paragraph below the group.
+- [Help text](/components/form#help-text) can be added below the checkbox label or as a paragraph below the group.
 
 ### Interaction
 

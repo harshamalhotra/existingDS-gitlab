@@ -5,14 +5,14 @@ docs: complete
 vueComponents:
   - GlBadge
 related:
-  - labels
+  - label
 ---
 
 Badges highlight metadata of objects, the kind of information that always needs some context and isn't useful on its own. For example, they can be used to indicate an issue's status, a member's role, or if a branch is protected.
 
 Showing metadata does not require the use of badges, you can just use plain icons, text, or both. But if the metadata is worth highlighting or differentiating, badges can help.
 
-Badges should not be confused with [labels](/components/labels). Labels also show object metadata, but they are much more specific in usage and scope — they are editable objects for users to manually categorize other objects, like issues, merge requests, and epics.  Other terms that are commonly used to refer to badges: counters, statuses, chips, tags, metadata, lozenges, pills, and bubbles.
+Badges should not be confused with [labels](/components/label). Labels also show object metadata, but they are much more specific in usage and scope — they are editable objects for users to manually categorize other objects, like issues, merge requests, and epics.  Other terms that are commonly used to refer to badges: counters, statuses, chips, tags, metadata, lozenges, pills, and bubbles.
 
 ## Usage
 

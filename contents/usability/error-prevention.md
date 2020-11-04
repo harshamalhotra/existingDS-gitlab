@@ -16,7 +16,7 @@ Depending on the severity of destructiveness, we can implement the following fri
 
 ### High severity
 
-If a destructive action is difficult to undo or data will be lost permanently, strongly consider implementing a [modal](/components/modals) to confirm the action or guide the user to an alternative route.
+If a destructive action is difficult to undo or data will be lost permanently, strongly consider implementing a [modal](/components/modal) to confirm the action or guide the user to an alternative route.
 
 ### Medium severity
 

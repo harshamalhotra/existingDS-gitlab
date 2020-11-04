@@ -5,8 +5,8 @@ docs: complete
 vueComponents:
   - GlDatepicker
 related:
-  - forms
-  - dropdowns
+  - form
+  - dropdown
 ---
 
 Date picker allows users to choose and input a date through by manually typing the date into the input field or by using a calendar-like dropdown.

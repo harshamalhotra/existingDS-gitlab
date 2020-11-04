@@ -5,7 +5,7 @@ docs: in-progress
 vueComponents:
   - GlToast
 related:
-  - modals
+  - modal
   - motion
   - popovers
   - tooltip

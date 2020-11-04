@@ -7,7 +7,7 @@ vueComponents:
 related:
   - buttons
   - checkbox
-  - dropdowns
+  - dropdown
   - radio-button
   - toggle
 ---
@@ -16,11 +16,11 @@ A segmented control allows users to choose one out of a range of available optio
 
 ## Usage
 
-A segmented control is commonly used as an alternative to [dropdown](/components/dropdowns), [radio button](/components/radio-button), or [toggle](/components/toggle) components, but it comes with its own limitations. Because it takes up more space, a segmented control should only be used for up to 5 options. It is ideal when there are 2 or 3 because they visually expose the options available to a user. A segmented control should be used instead of a dropdown when there are only a few options and enough room to fit within the UI. It requires fewer interactions and is easier to use on mobile devices, thus having a smaller effect on the user’s cognitive load. Results are effective and visible immediately similar to a toggle.
+A segmented control is commonly used as an alternative to [dropdown](/components/dropdown), [radio button](/components/radio-button), or [toggle](/components/toggle) components, but it comes with its own limitations. Because it takes up more space, a segmented control should only be used for up to 5 options. It is ideal when there are 2 or 3 because they visually expose the options available to a user. A segmented control should be used instead of a dropdown when there are only a few options and enough room to fit within the UI. It requires fewer interactions and is easier to use on mobile devices, thus having a smaller effect on the user’s cognitive load. Results are effective and visible immediately similar to a toggle.
 
 Use the following table to see when a segmented control should be used over other alternative components.
 
-|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdowns) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdowns) |
+|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdown) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdown) |
 |---|---|---|---|---|---|---|---|
 | Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
 | Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
@@ -32,7 +32,7 @@ Use the following table to see when a segmented control should be used over othe
 
 ### Labels
 
-Label positioning rules are the same as they are for [forms](/components/forms). They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.
+Label positioning rules are the same as they are for [forms](/components/form). They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.
 
 The label can be omitted in cases when it’s clear what the segmented control is referring to from the UI (for example, switching between a day, week or month view in a calendar UI).
 

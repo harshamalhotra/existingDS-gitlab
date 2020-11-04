@@ -19,7 +19,7 @@ Happens after the user confirms the changes (clicks on a button), ideally withou
 
 #### Safety measure
 
-As we move towards using both methods for saving changes, it makes sense to add a safety measure when using the manual method. The user might just experience auto-saving on another page but on the current page they need to manually save their changes. The users can’t know which of the two methods is being used as there are no indicators in the UI, so it's possible that they make changes and try to navigate off the page (expecting that the changes were saved automatically). In such cases we should track the changes made and whether they were saved or not. If they weren’t saved, a [modal](/components/modals) should appear asking: “Your changes are not saved. Do you want to save them now?” and offer “Save changes” as the primary option and “Discard changes and leave page” as the secondary one.
+As we move towards using both methods for saving changes, it makes sense to add a safety measure when using the manual method. The user might just experience auto-saving on another page but on the current page they need to manually save their changes. The users can’t know which of the two methods is being used as there are no indicators in the UI, so it's possible that they make changes and try to navigate off the page (expecting that the changes were saved automatically). In such cases we should track the changes made and whether they were saved or not. If they weren’t saved, a [modal](/components/modal) should appear asking: “Your changes are not saved. Do you want to save them now?” and offer “Save changes” as the primary option and “Discard changes and leave page” as the secondary one.
 
 ### Auto-save
 
@@ -72,6 +72,6 @@ Todo: Add live component block with code example (example of newly added info as
 ## Related patterns
 
 - [Buttons](/components/button)
-- [Forms](/components/forms)
+- [Forms](/components/form)
 - [Spinner](/components/spinner)
 - [Toast](/components/toast)
