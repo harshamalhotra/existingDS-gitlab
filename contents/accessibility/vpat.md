@@ -1,17 +1,17 @@
 ---
-name: VPAT Conformance Report
+name: GitLab Accessibility Conformance Report
 ---
 
 ## Revised Section 508 Edition
 
-### VPAT® Version 2.2 – July 2018
+### Based on VPAT® Version 2.4
 
-- **Name of Product/Version:** GitLab Enterprise Edition 11.6
+- **Name of Product/Version:** GitLab 13.5
+- **Report Date:** December, 2020
 - **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
-- **Date:** December, 2018
 - **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
-- **Notes:** This evaluation only refers to GitLab the product and does not include the about.gitlab.com website.
-- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/), Lighthouse, and iOS VoiceOver.
+- **Notes:** This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
+- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), and iOS VoiceOver.
 
 ### Applicable Standards/Guidelines
 
@@ -26,10 +26,10 @@ This report covers the degree of conformance for the following accessibility sta
   </thead>
   <tbody>
     <tr>
-      <td>Web Content Accessibility Guidelines 2.0, at <a 
-        href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/"
+      <td><a 
+        href="http://www.w3.org/TR/2008/REC-WCAG20-20081211"
         target="_blank"
-      >http://www.w3.org/TR/2008/REC-WCAG20-20081211/</a></td>
+      >Web Content Accessibility Guidelines 2.0</a></td>
       <td>
         <ul>
           <li>Level A (Yes)</li>
@@ -40,14 +40,10 @@ This report covers the degree of conformance for the following accessibility sta
     </tr>
     <tr>
       <td>
-        <p><a
+        <a
           href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines"
           target="_blank"
-        >Revised Section 508 standards</a> as published by the U.S. Access Board in the Federal Register on January 18, 2017</p>
-        <p><a
-          href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/corrections-to-the-ict-final-rule"
-          target="_blank"
-        >Corrections to the ICT Final Rule</a> as published by the US Access Board in the Federal Register on January 22, 2018</p>
+        >Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018</a>
       </td>
       <td>(Yes)</td>
     </tr>
@@ -66,7 +62,7 @@ The terms used in the Conformance Level information are defined as follows:
 
 ## WCAG 2.0 Report
 
-Tables 1 and 2 also document conformance with:
+Tables 1 and 2 also document conformance with Revised Section 508:
 
 - Chapter 5 – 501.1 Scope, 504.2 Content Creation or Editing
 - Chapter 6 – 602.3 Electronic Support Documentation
@@ -95,15 +91,15 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         Does not support
       </td>
       <td>
-        <p>The product has many instances where non-text content does not have a text alternative.</p>
+        <p>The product has many instances where non-text content does not have a text alternative:
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >https://gitlab.com/groups/gitlab-org/-/epics/567</a>
+        >https://gitlab.com/groups/gitlab-org/-/epics/567</a>,
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/564"
           target="_blank"
-        >https://gitlab.com/groups/gitlab-org/-/epics/564</a>
+        >https://gitlab.com/groups/gitlab-org/-/epics/564</a></p>
       </td>
     </tr>
     <tr>
@@ -129,11 +125,12 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         >1.2.2 Captions (Prerecorded)</a> (Level A)
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
         <p>The product does not include any audio-only or video-only media.</p>
-        <p>However, users have the ability to upload their own media. The product does not provide capabilities for captioning user generated audio or video content: <a
+        <p>However, users have the ability to upload their own media. Captions are supported for videos provided by third-party tools that offer this capability. The product does not provide capabilities for captioning user generated audio or video content.
+        <a
           href="https://gitlab.com/gitlab-org/gitlab/issues/25796"
           target="_blank"
         >https://gitlab.com/gitlab-org/gitlab/issues/25796</a></p>
@@ -164,11 +161,11 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         Does not support
       </td>
       <td>
-        <p>The product has many instances where information, structure, and relationships can not be programmatically determined.</p>
+        <p>The product has many instances where information, structure, and relationships can not be programmatically determined:
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >https://gitlab.com/groups/gitlab-org/-/epics/567</a>
+        >https://gitlab.com/groups/gitlab-org/-/epics/567</a></p>
       </td>
     </tr>
     <tr>
@@ -207,10 +204,14 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         >1.4.1 Use of Color</a> (Level A)
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
-        <p>The product does not use colors as the only visual means of conveying information.</p>
+        <p>The product does not use colors as the only visual means of conveying information. The exception is for text links which do still rely on color:
+        <a
+          href="https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1084"
+          target="_blank"
+        >https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1084</a></p>
       </td>
     </tr>
     <tr>
@@ -225,6 +226,24 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       </td>
       <td>
         <p>The product does not include auto-playing audio or provide the ability for user generated audio to automatically play.</p>
+      </td>
+    </tr>
+     <tr>
+      <td>
+        <a 
+          href="www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
+          target="_blank"
+        >2.1.1 Keyboard</a> (Level A)
+      </td>
+      <td>
+        Does not support
+      </td>
+      <td>
+        <p>The product has many instances of content that is not operable through a keyboard:
+        <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/565"
+          target="_blank"
+        >https://gitlab.com/groups/gitlab-org/-/epics/565</a></p>
       </td>
     </tr>
     <tr>
@@ -403,10 +422,15 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         >3.3.1 Error Identification</a> (Level A)
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
         <p>The product describes input errors to the user and identifies which item the error originated from.</p>
+        <p>However, the identification and description of an error is not combined programmatically to help assistive technologies to identify an error and provide error information to the user:
+        <a
+          href="https://gitlab.com/gitlab-org/gitlab/-/issues/292301"
+          target="_blank"
+        >https://gitlab.com/gitlab-org/gitlab/-/issues/292301</a></p>
       </td>
     </tr>
     <tr>
@@ -438,11 +462,11 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         Does not support
       </td>
       <td>
-        <p>The product has many instances of non-unique ID values.</p>
+        <p>The product has many instances of non-unique ID values.
         <a
           href="https://gitlab.com/gitlab-org/gitlab/issues/17928"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab/issues/17928</a>
+        >https://gitlab.com/gitlab-org/gitlab/issues/17928</a></p>
       </td>
     </tr>
     <tr>
@@ -456,11 +480,11 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         Does not support
       </td>
       <td>
-        <p>The product has many instances where the name, role, or value cannot be programmatically determined or set.</p>
+        <p>The product has many instances where the name, role, or value cannot be programmatically determined or set.
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >https://gitlab.com/groups/gitlab-org/-/epics/567</a>
+        >https://gitlab.com/groups/gitlab-org/-/epics/567</a></p>
       </td>
     </tr>
   </tbody>
@@ -516,11 +540,11 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         Does not support
       </td>
       <td>
-        <p>The product has many instances where the contrast ratio of text is not at least 4.5:1.</p>
+        <p>The product has many instances where the contrast ratio of text is not at least 4.5:1.
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/562"
           target="_blank"
-        >https://gitlab.com/groups/gitlab-org/-/epics/562</a>
+        >https://gitlab.com/groups/gitlab-org/-/epics/562</a></p>
       </td>
     </tr>
     <tr>
@@ -531,10 +555,15 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         >1.4.4 Resize text</a> (Level AA)
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
         <p>The product supports the use of standard zoom capabilities built into modern web browsers.</p>
+        <p>However, there are a few instances where text is clipped or inaccessible when zoomed:
+        <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/563"
+          target="_blank"
+        >https://gitlab.com/groups/gitlab-org/-/epics/563</a></p>
       </td>
     </tr>
     <tr>
@@ -651,10 +680,15 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
         >3.3.3 Error Suggestion</a> (Level AA)
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
         <p>The product provides suggestion for how to mitigate input errors.</p>
+        <p>However, the identification and description of an error is not combined programmatically to help assistive technologies to identify an error and provide remedy suggestions to the user:
+        <a
+          href="https://gitlab.com/gitlab-org/gitlab/-/issues/292301"
+          target="_blank"
+        >https://gitlab.com/gitlab-org/gitlab/-/issues/292301</a></p>
       </td>
     </tr>
     <tr>
@@ -680,7 +714,7 @@ Notes: The GitLab product has not been evaluated for WCAG 2.0 Level AAA conforma
 
 ## Revised Section 508 Report
 
-### Chapter 3: Functional Performance Criteria (FPC)
+### Chapter 3: [Functional Performance Criteria](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria) (FPC)
 
 <table>
   <thead>
@@ -708,7 +742,7 @@ Notes: The GitLab product has not been evaluated for WCAG 2.0 Level AAA conforma
         302.2 With Limited Vision
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
         <p>The product does not override any built-in screen magnification provided by the browser or assistive device.</p>
@@ -719,10 +753,14 @@ Notes: The GitLab product has not been evaluated for WCAG 2.0 Level AAA conforma
         302.3 Without Perception of Color
       </td>
       <td>
-        Supports
+        Partially supports
       </td>
       <td>
-        <p>The product does not use colors as the only visual means of conveying information.</p>
+        <p>The product does not use colors as the only visual means of conveying information. The exception is for text links which do still rely on color:
+        <a
+          href="https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1084"
+          target="_blank"
+        >https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1084</a></p>
       </td>
     </tr>
     <tr>
@@ -798,11 +836,11 @@ Notes: The GitLab product has not been evaluated for WCAG 2.0 Level AAA conforma
   </tbody>
 </table>
 
-### Chapter 4: Hardware
+### Chapter 4: [Hardware](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#401-general)
 
 Notes: The GitLab product is a web application and is not subject to the requirements of this section.
 
-### Chapter 5: Software
+### Chapter 5: [Software](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#501-general)
 
 <table>
   <thead>
@@ -826,7 +864,7 @@ Notes: The GitLab product is a web application and is not subject to the require
     </tr>
     <tr>
       <td class="header">
-        502 Interoperability with Assistive Technology
+        <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#502-interoperability-assistive-technology" target="_blank">502 Interoperability with Assistive Technology</a>
       </td>
       <td class="header">
         Heading cell – no response required
@@ -1035,7 +1073,7 @@ Notes: The GitLab product is a web application and is not subject to the require
     </tr>
     <tr>
       <td class="header">
-        503 Applications
+        <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#503-applications" target="_blank">503 Applications</a>
       </td>
       <td class="header">
         Heading cell – no response required
@@ -1101,7 +1139,7 @@ Notes: The GitLab product is a web application and is not subject to the require
     </tr>
     <tr>
       <td class="header">
-        504 Authoring Tools
+        <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#504-authoring-tools" target="_blank">504 Authoring Tools</a>
       </td>
       <td class="header">
         Heading cell – no response required
@@ -1171,7 +1209,7 @@ Notes: The GitLab product is a web application and is not subject to the require
   </tbody>
 </table>
 
-### Chapter 6: Support Documentation and Services
+### Chapter 6: [Support Documentation and Services](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#601-general)
 
 <table>
   <thead>
@@ -1195,7 +1233,7 @@ Notes: The GitLab product is a web application and is not subject to the require
     </tr>
     <tr>
       <td class="header">
-        602 Support Documentation
+        <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#602-support-documentation" target="_blank">602 Support Documentation</a>
       </td>
       <td class="header">
         Heading cell – no response required
@@ -1239,7 +1277,7 @@ Notes: The GitLab product is a web application and is not subject to the require
     </tr>
     <tr>
       <td class="header">
-        603 Support Services
+        <a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#603-support-services" target="_blank">603 Support Services</a>
       </td>
       <td class="header">
         Heading cell – no response required
