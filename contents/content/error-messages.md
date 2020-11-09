@@ -52,7 +52,7 @@ Instead, use the same phrasal structure for all messages:
 
 Error messages can be used in the following scenarios:
 
-- Errors in forms: see [error messages and states in form validation](/components/forms#error-messages-and-states).
+- Errors in forms: see [form validations](/components/form/#validation).
 - Errors in the system or on a page: see [alert](https://design.gitlab.com/components/alert).
 
 ## Related patterns
