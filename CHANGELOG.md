@@ -1,3 +1,10 @@
+## [1.54.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.1...v1.54.2) (2020-11-09)
+
+
+### Bug Fixes
+
+* Correct anchor to form validations on content page ([47f357e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/47f357e40f9788a20fa589f0a6b354f6821100ff))
+
 ## [1.54.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.0...v1.54.1) (2020-11-04)
 
 
