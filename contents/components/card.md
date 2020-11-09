@@ -1,6 +1,9 @@
 ---
 name: Card
 docs: in-progress
+gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/blob/master/src/components/base/card
+vueComponents:
+  - GlCard
 related:
   - table
 ---
@@ -39,7 +42,7 @@ Todo: Add link to single stat component after it's been created
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:card-with-header-footer]]
 
 ## Specifications
 
