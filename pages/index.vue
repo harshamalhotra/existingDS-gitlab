@@ -24,7 +24,7 @@
           <div class="contribute-copy">
             <h2>Everyone can contribute</h2>
             <p class="max-w-sm">
-              GitLab is an <a target="_blank" href="https://about.gitlab.com/2016/07/20/gitlab-is-open-core-github-is-closed-source/">open core</a> product and has over 2000 community contributors. When everyone can contribute, consumers become contributors and we greatly increase the rate of human progress.
+              GitLab is an <a target="_blank" href="https://about.gitlab.com/2016/07/20/gitlab-is-open-core-github-is-closed-source/">open core</a> product and has over 3000 community contributors. When everyone can contribute, consumers become contributors and we greatly increase the rate of human progress.
             </p>
             <p class="max-w-sm">
               To ensure that everyone can contribute to GitLab with confidence we provide everyone with the right resources and know-how. The Pajamas design system is the single source of truth for everything anyone needs to know about contributing to GitLab.
