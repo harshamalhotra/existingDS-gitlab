@@ -1,3 +1,10 @@
+# [1.55.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.2...v1.55.0) (2020-11-13)
+
+
+### Features
+
+* **GlTooltip:** Update tooltip gitlab-ui status to complete ([abe961d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/abe961d1c18e97d867af2d13bea9d574716838a8))
+
 ## [1.54.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.1...v1.54.2) (2020-11-09)
 
 
