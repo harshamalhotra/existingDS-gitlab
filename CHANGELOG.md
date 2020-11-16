@@ -1,3 +1,10 @@
+# [1.56.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.55.0...v1.56.0) (2020-11-16)
+
+
+### Features
+
+* **Admonitions:** Update admonition styles to be more product-like ([68204e9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/68204e9ad41cf0e2cdc78c5d16fa1dc499e0b93c))
+
 # [1.55.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.54.2...v1.55.0) (2020-11-13)
 
 
