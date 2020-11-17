@@ -897,10 +897,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.175.0.tgz#734f341784af1cd1d62d160a17bcdfb61ff7b04d"
   integrity sha512-gXpc87TGSXIzfAr4QER1Qw1v3P47pBO6BXkma52blgwXVmcFNe3nhQzqsqt66wKNzrIrk3lAcB4GUyPHbPVXpg==
 
-"@gitlab/ui@23.10.0":
-  version "23.10.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-23.10.0.tgz#5c34e03f5f1430cfd7976e88d380db8c5f4162ac"
-  integrity sha512-si+wq5HEUOAF9SiSQdvg8EK4+cK1hkHcxWSlChuSMnqDU89Dc/40zngupTOGI2tgL5U3TaX72zMpTmSeykwi7Q==
+"@gitlab/ui@23.10.1":
+  version "23.10.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-23.10.1.tgz#fadc2e16df3a4ab58f315d4113079c448aada830"
+  integrity sha512-RP7l/Soo+NFAEgax7snuHlB3VNdRqd33QzIf0+1rHieVg6SxhzGtXEdLRLU3asWks00GVM4qRy8SiOL8m4D19g==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.3.0"
