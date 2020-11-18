@@ -1,3 +1,10 @@
+# [1.57.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.56.0...v1.57.0) (2020-11-18)
+
+
+### Features
+
+* mark Card component as built ([4444a75](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4444a75a2844caca215ff2b55e5382730e68328c))
+
 # [1.56.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.55.0...v1.56.0) (2020-11-16)
 
 
