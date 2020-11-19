@@ -1,3 +1,10 @@
+# [1.59.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.58.0...v1.59.0) (2020-11-19)
+
+
+### Features
+
+* **merge request:** add MR object docs ([3da5846](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3da5846b12ab838c273c9daccb5b77c8c1b15d31))
+
 # [1.58.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.57.0...v1.58.0) (2020-11-19)
 
 
