@@ -13,6 +13,7 @@
 - [ ] If creating a new page on Pajamas [from scratch][writing-documentation], follow the [page template structure][page-template]
 - [ ] Follow the [Pajamas Voice & Tone Guidelines][voice-and-tone] and [GitLab Documentation Style Guide][style-guide]
 - [ ] Link components to and from other [related components and patterns][related] on the `.md` file, where helpful
+- [ ] If [embedding a Figma file][figma-embed], follow the [Figma embed guide][figma-embed-guide]
 - [ ] Assign it to a reviewer. All GitLab designers are [reviewers][design-reviewer], but you can also assign it directly to a [maintainer or trainee maintainer][pajamas-assignments]
 - [ ] Apply the correct component label(s)
 - [ ] Select a milestone or due date
@@ -34,3 +35,5 @@
 [related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/pages/components/template.md#L12
 [design-reviewer]: https://about.gitlab.com/handbook/engineering/ux/pajamas-design-system/design-review/#reviewer
 [pajamas-assignments]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
+[figma-embed]: https://www.figma.com/developers/embed
+[figma-embed-guide]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/figma-embed.md
