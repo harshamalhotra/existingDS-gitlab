@@ -1,3 +1,10 @@
+# [1.58.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.57.0...v1.58.0) (2020-11-19)
+
+
+### Features
+
+* **GlBadge:** Add icon badge example and update font weight guidelines ([d721778](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d7217789ef11caa8dcac2bd5dfc0d7a12f2a85b4))
+
 # [1.57.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.56.0...v1.57.0) (2020-11-18)
 
 
