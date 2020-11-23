@@ -1,5 +1,5 @@
 ---
-name: Radio buttons
+name: Radio button
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4
 docs: complete
 gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/form/form_radio

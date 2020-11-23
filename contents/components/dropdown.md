@@ -1,5 +1,5 @@
 ---
-name: Dropdowns
+name: Dropdown
 docs: in-progress
 vueComponents:
   - GlDropdown

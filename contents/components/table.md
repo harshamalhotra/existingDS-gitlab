@@ -1,5 +1,5 @@
 ---
-name: Tables
+name: Table
 docs: in-progress
 vueComponents:
   - GlTable
