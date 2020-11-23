@@ -1,3 +1,10 @@
+# [1.60.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.59.0...v1.60.0) (2020-11-23)
+
+
+### Features
+
+* **content:** Configuration and settings examples ([e607187](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e60718719f61ea24998c10bc096a200b4da1bffa))
+
 # [1.59.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.58.0...v1.59.0) (2020-11-19)
 
 
