@@ -14,13 +14,15 @@ Help comes in the form of various types of content designed to:
 
 If the most relevant information can be summarized succinctly, put the summary directly in the UI instead of using a Help link. However, you can use a Help link to provide supplemental information. Help links open up their page in a new tab.
 
-- **Example:** User cohorts show how active users are in the last 12 months. [More information](#)
+Use a question to lead the user to helpful information.
 
-Don't use "Learn more about," "Tell me more about," or "Get help with this" phrasing. Phrase help links to indicate assistance and predict the results of the link. Help links should never read like action links, for example, “Open documentation.” As an exception, you can use "More information" to supplement instructions that are directly in the UI, especially if providing specific information in the Help link leads to unnecessary repetition or makes the link less compelling.
+- **Example:** User cohorts show how active users are in the last 12 months. [What kind of information is available?](#)
 
-- **Example:** [What are user cohorts?](#)
+If a question doesn't make sense, use the sentence, "Learn more." Do not use "More information" or other phrases, and always use a period.
 
-If there isn't space available for a Help link text, use the [question svg](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) (`#1068bf`) to link to the Help content. Use a tooltip to indicate the primary question answered by the help content.
+- **Example:** User cohorts show how active users are in the last 12 months. [Learn more](#).
+
+If no room is available for text, use the [question svg](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) (`#1068bf`) to link to the Help content. Use a tooltip to indicate the primary question answered by the help content.
 
 Todo: Add live component block with code example
 
