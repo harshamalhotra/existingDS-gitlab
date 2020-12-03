@@ -1,3 +1,10 @@
+# [1.61.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.60.0...v1.61.0) (2020-12-03)
+
+
+### Features
+
+* **GlPopover:** Update gitlab ui status to complete ([ef91724](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ef917248aa089ba0e655222879e601f422bc814a))
+
 # [1.60.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.59.0...v1.60.0) (2020-11-23)
 
 
