@@ -1,4 +1,4 @@
-# Pajamas UI Kit contribution guidelines
+# Pajamas UI Kit contribution and updating guidelines
 
 <!-- Table of contents generated with DocToc: https://github.com/thlorenz/doctoc -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -7,12 +7,14 @@
 
 - [Contributions to Pajamas UI Kit](#contributions-to-pajamas-ui-kit)
 - [Structure](#structure)
+  - [Files](#files)
+  - [Components](#components)
   - [Examples](#examples)
     - [Icons](#icons)
-    - [Alerts](#alerts)
+    - [Alert](#alert)
     - [Pagination](#pagination)
     - [Badge](#badge)
-    - [Buttons](#buttons)
+    - [Button](#button)
 - [Building components](#building-components)
   - [Base components](#base-components)
   - [Elements](#elements)
@@ -21,6 +23,8 @@
   - [Using Auto Layout](#using-auto-layout)
 - [Adding descriptions, notes, and annotations](#adding-descriptions-notes-and-annotations)
 - [Publishing changes](#publishing-changes)
+- [Sharing or linking to changes](#sharing-or-linking-to-changes)
+- [Updating the libraries locally](#updating-the-libraries-locally)
 - [Plugins](#plugins)
 - [Code of conduct](#code-of-conduct)
 
@@ -43,18 +47,36 @@ We accept contributions from wider community members who share a Figma [draft][f
 
 ## Structure
 
-With Figma, components are organized in the asset library by how they are structured and named in the file. The default hierarchy is **File/Page/Frame/Layer**. Depending on the complexity of the component, the slash convention could also be used on the frame. Here’s our working hierarchy for structure and naming, the file name has been left out for brevity:
+### Files
+
+The Pajamas UI Kit is comprised of several different files. These files organize separate, but related concepts. Each publishes an asset library that can be enabled in other design files.
+
+The current files are:
+
+- [**Component library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library): This is the main file for design components that are used in Pajamas and in all other files. The asset library is published as the "Component library" and enabled for all team files. This file has both typescale and data visualization enabled for use within, but those libraries are not published as part.
+- [**Typescale - Documentation Markdown**](https://www.figma.com/file/V3HKN83B7rf2T6sseLMrxa/Typescale-Documentation-Markdown): Documentation markdown is defined as any markdown that is written outside of issuable pages, such as a README or Wiki page. Content written using markdown includes typography that contains fixed margins and increased line-heights to improve readability. Published as the "Typescale - Documentation Markdown" library.
+- [**Typescale - Compact Markdown**](https://www.figma.com/file/mjAZxHkK95TlQ6L14aNp2M/Typescale-Compact-Markdown): Within certain views, the markdown type scale is decreased in order to more closely align copy with other UI components. Compact markdown is used for descriptions and comments on issue and merge request pages. Content written using markdown includes typography that contains fixed margins and increased line-heights to improve readability. Published as the "Typescale - Compact Markdown" library.
+- [**Data Visualization**](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization): Components, styles, and charts used within GitLab. Published as the "Data Visualization" library.
+- [**Product pages**](https://www.figma.com/file/tzpLCamRZNr2tTPwCP2UY4/Product-Pages): Components, layouts, regions, and page templates used within GitLab. Items herein are not globally used throughout the product and not included in the main component library. Published as the "Product Pages" library.
+- [**Figma for GitLab**](https://www.figma.com/file/73OcYdBfOaK2xlChC3tbNX/Figma-for-GitLab): An intro deck into how GitLab uses Figma.
+
+### Components
+
+With Figma, components are organized in the asset library by how they are structured and named in the file. The default hierarchy is **File/Page/Frame/Layer**. There are two methods for organizing components: 
+
+1. Using Figma's [Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants) feature. 
+2. Using a slash naming convention. 
+
+For the rest of this article, components created with Figma’s variants feature will be referred to as **variant** or **variants**. Here’s our working hierarchy for structure and naming, the file name has been left out for brevity:
 - **Page:** [Component]
-- **Frame:** [Category], [Group], or “Variants” (“Variants” is the default frame name)
-- **Layer:** [Breakpoint/Item/Size/State]
-   - Optional breakpoints (uppercase): XS, SM, MD, LG, XL, breakpoints can also use symbols to indicate range, such as ≥MD or ≤SM
-   - Optional sizes (lowercase): xs, sm, md, lg, xl, xxl
+- **Frame:** [Variant], [Category], [Group], or literally “Variants.” “Variants” is the default frame name when components aren’t created with the variants feature.
+- **Layer:** [Property=Value, Property=Value] as a variant or [Breakpoint/Item/Size/State] when manually organized.
+   - Optional breakpoints: XS, SM, MD, LG, XL, breakpoints can also use symbols to indicate range, such as ≥MD or ≤SM
+   - Optional sizes: XS, SM, MD, LG, XL, XXL
 
-For both breakpoints and sizes, numerically prefixing the abbreviations correctly orders them in the asset library in a way that helps a user understand hierarchy (see [examples](#examples) below).
+When creating a component as a variant, only a single instance of that component will be listed in the asset library. After adding the component to your design you’ll have the ability to choose the variant needed based on available properties (see [examples](#examples) below).
 
-Related components are placed within one parent frame (as opposed to one “floating” frame for each component). For example, all button variations are inside its “Variants” frame. This way, we can link to a single Figma frame as a design spec, in the [Pajamas documentation][pajamas], issues, merge requests, and other places.
-
-We aim to keep the hierarchy [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and focus on structure specific to component context. If we didn’t put variants within a frame, we’d prevent the naming from being verbose, but it’d be at the cost of not having a specific frame to link to as a design spec.
+If a component is not part of a variant container, numerically prefixing the breakpoint and size abbreviations correctly orders them in the asset library in a way that helps a user understand hierarchy (see [examples](#examples) below).
 
 ### Examples
 
@@ -65,49 +87,53 @@ We aim to keep the hierarchy [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_
 - **Layer:** Export
 - **Result:** Icons/Actions/Export
 
-#### Alerts
+#### Alert
 
-- **Page:** Alerts
-- **Frame:** Variants
+- **Page:** Alert
+- **Frame (container):** Alert
 - **Layer:** Danger
-- **Result:** Alerts/Variants/Danger
+- **Result:** Alert/Alert
 
 #### Pagination
 
 - **Page:** Pagination
-- **Frame:** Variants
-- **Layer:** ≤MD/Truncated
-- **Result:** Pagination/Variants/≤MD/Truncated
+- **Frame:** Pagination
+- **Layer:** Variant=Default, Breakpoint=≥MD, Truncation=None
+- **Result:** Pagination/Pagination
 
 #### Badge
 
 - **Page:** Badge
-- **Frame:** Variants
-- **Layer:** Info/01 md
-- **Result:** Badge/Variants/Info/01 md
+- **Frame:** Pipeline badge
+- **Layer:** Variant=Running, Size=SM
+- **Result:** Badge/Pipeline badge
 
-#### Buttons
+#### Button
 
-Buttons are an example of something more complex, not because of the component, but because of the amount of variants. Since we prefer to link to one design spec frame, we could have something like this:
+- **Page:** Button
+- **Frame:** Default
+- **Layer:** Category=Primary, Type=Dropdown split, Size=MD
+- **Result:** Button/Default
 
-- **Page:** Buttons
-- **Frame:** Variants
-- **Layer:** Info/Primary/Default
-- **Result:** Buttons/Variants/Info/Primary/Default
+| **Layers panel** | **Assets panel** |
+| ------ | ------ |
+| ![Component layer in the layers panel](images/alert-layer.png) | ![Component listed in the assets panel](images/alert-asset.png) |
 
 ## Building components
 
 ### Base components
 
-Some components are built from *base* components. Base components provide foundational configuration, structure, or other settings for components to be built from. They are not published to the library, because we only want the variants created *from* them to be available for direct use. A change to a base component should propagate to any components built from it. In other systems you may see them called primitives, or master components. We chose “base” to indicate a starting place.
+Some components are built from **base** components. Base components provide foundational configuration, structure, or other settings for components to be built from. They are not published to the library, because we only want the variants created from them to be available for direct use. A change to a base component should propagate to any components built from it. In other systems you may see them called primitives, or master components. We chose “base” to indicate a starting place.
+
+![Base button component with all configuration options](images/base-btn.png)
 
 ### Elements
 
-With a nod to [atomic design](https://bradfrost.com/blog/post/atomic-web-design/), an *element* is something that cannot be broken down any further, and is primarily used in the construction of other components. In other words, it’s rarely used alone. Since elements can be used and swapped in other components, they’re published to the library. A good example of an element is a checkbox, which could be used in forms with a label, or as part of a multiselect dropdown.
+With a nod to [atomic design](https://bradfrost.com/blog/post/atomic-web-design/), an **element** is something that cannot be broken down any further, and is primarily used in the construction of other components. In other words, it’s rarely used alone. Since elements can be used and swapped in other components, they’re published to the library. A good example of an element is a checkbox, which could be used in forms with a label, or as part of a multiselect dropdown.
 
 ### Variants
 
-A *variant* is the most common form of a component. It is available to use as-is from the asset library, and does not require style overrides, although they may be available. In most cases, the content can be overridden for the context. Variants are often built from a [base component](#base-components), but this isn’t required.
+A **variant** is the most common form of a component. It is available to use as-is from the asset library, and does not require style overrides, although they may be available. In most cases, the content can be overridden for the context. Variants are often built from a [base component](#base-components), but this isn’t required. A variant often has properties associated with it that can be quickly swapped in the properties panel.
 
 ### Using Constraints
 
@@ -115,7 +141,7 @@ Objects within a component will [use constraints][figma-docs-constraints] when t
 
 ### Using Auto Layout
 
-Components with [Auto Layout][figma-docs-auto-layout] dynamically resize based on the content within. This works well for components that need to maintain padding and spacing. With the current Auto Layout capabilities, a good rule of thumb is to use it when the component grows either vertically or horizontally, but not both. A button is a good candidate for Auto Layout, because it can resize horizontally based on label length, and whether or not icons are included.
+Components with [Auto Layout][figma-docs-auto-layout] dynamically resize based on the content within. This works well for components that need to maintain padding and spacing. A button is a good candidate for auto layout, because it can resize horizontally based on label length, and whether or not icons are included. Complex responsive-like components, like a modal, can be created with auto layout. 
 
 ## Adding descriptions, notes, and annotations
 
@@ -137,6 +163,11 @@ We use three primary methods to add descriptive, helper content for components a
    - Consider mentioning where the component is used in the product, or for what purpose.
    - Include usage notes that are applicable at the point of use.
    - Keep descriptions short, when possible.
+   - Add a documentation link (to Pajamas) when possible.
+
+| **Component description and link in library** | **Description and link when inspecting** |
+| ------ | ------ |
+| ![Editing component description in Figma properties panel](images/component-desc.png) | ![Reading component description in Figma inspect panel](images/component-inspect.png) |
 
 ## Publishing changes
 
@@ -145,6 +176,20 @@ Figma library updates are published by a [Figma maintainer][figma-maintainers], 
 - Changes should be reviewed by another designer in a draft before a Maintainer adds it to the Pajamas UI Kit file.
 - Before closing the Pajamas UI Kit file, changes should be published so other designers are aware of what’s been changed, and by whom. Because you cannot stage changes like you can with Git, it is important to publish changes so that additional unrelated changes can be published separately.
 - Use dashes to list items (no formatting options for the publish message field).
+
+## Sharing or linking to changes
+
+Because components can be in multiple frames on a page, it’s best to link to the entire page when referencing as a design spec in the [Pajamas documentation][pajamas]. Otherwise, you can link directly to the specific frame in issues, merge requests, and other places where a specific portion of the design is referenced.
+
+## Updating the libraries locally
+
+If you have any of the available libraries enabled in a file you’ll occasionally see a toast message in Figma notifying you that there are updates to those library assets. You can choose to update items individually or in a batch.
+
+![Component updates modal](images/update-modal.png)
+
+Not all updates will be desireable or immediately needed however, and some may even introduce breaking changes. For that reason it’s recommended to review the published notes in the [#design-system](https://gitlab.slack.com/archives/CDNNDD1T3) Slack channel (internal). If you’re still uncomfortable with how your work might be impacted, first make a duplicate of your file and test the updates there.
+
+![Library update message posted in Slack](images/slack-msg.png)
 
 ## Plugins
 
