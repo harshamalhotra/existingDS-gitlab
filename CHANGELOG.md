@@ -1,3 +1,10 @@
+# [1.62.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.61.0...v1.62.0) (2020-12-03)
+
+
+### Features
+
+* **docs:** Update Pajamas UI Kit with new details ([cbd1783](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cbd17831e3c72b39552b087163c1efd29e56f64d))
+
 # [1.61.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.60.0...v1.61.0) (2020-12-03)
 
 
