@@ -1,3 +1,10 @@
+# [1.63.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.62.0...v1.63.0) (2020-12-04)
+
+
+### Features
+
+* **Onboarding:** Add established onboarding patterns ([f95c4b5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f95c4b507e22439f983e0ace563ae741c445a8e5))
+
 # [1.62.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.61.0...v1.62.0) (2020-12-03)
 
 
