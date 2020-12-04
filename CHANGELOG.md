@@ -1,3 +1,10 @@
+# [1.64.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.63.0...v1.64.0) (2020-12-04)
+
+
+### Features
+
+* **alert:** Add guidelines around copy in Alert component ([9910416](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9910416387bfc7258532eb701511a8e702a81a5d))
+
 # [1.63.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.62.0...v1.63.0) (2020-12-04)
 
 
