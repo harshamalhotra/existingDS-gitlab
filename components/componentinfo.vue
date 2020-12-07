@@ -5,7 +5,7 @@ import {
   GlExampleExplorer,
 } from '@gitlab/ui/documentation';
 
-import componentExamples from '../contents/examples';
+import componentExamples from '../examples';
 
 import mdDisplay from './md_display.vue';
 import RelatedPages from './related_pages.vue';
