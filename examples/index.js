@@ -1,4 +1,5 @@
 import { camelCase, upperFirst } from 'lodash';
+import path from 'path';
 
 const context = require.context('.', true, /index\.js$/);
 const examples = {};
@@ -10,8 +11,7 @@ context.keys().forEach(key => {
     return;
   }
 
-  // Remove the trailing '/index.js'
-  const componentDir = key.slice(0, -9);
+  const componentDir = path.dirname(key);
   // Remove anything before the directory name
   const snakeCasedComponentName = componentDir.replace(/.*\//g, '');
   const pascalCasedComponentName = upperFirst(camelCase(snakeCasedComponentName));
