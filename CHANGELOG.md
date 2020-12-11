@@ -1,3 +1,10 @@
+# [1.65.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.64.0...v1.65.0) (2020-12-11)
+
+
+### Features
+
+* **buttons:** Correct button categories and simplify docs ([caf155b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/caf155be71897a267bb45124073082327c30cbd1))
+
 # [1.64.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.63.0...v1.64.0) (2020-12-04)
 
 
