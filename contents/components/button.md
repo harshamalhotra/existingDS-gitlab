@@ -6,7 +6,9 @@ vueComponents:
   - GlButton
   - GlButtonGroup
 related:
+  - tooltip
   - dropdown
+  - modal
   - segmented-control
   - spinner 
   - pagination
@@ -14,49 +16,49 @@ related:
   - /accessibility/best-practices
 ---
 
-Buttons execute an action, either in the background or foreground of an experience. Different button categories help guide users through certain actions. Buttons express what action will occur when the user clicks or touches it either by text, icon, or both. Additional meaning can be derived from the button style.
+Buttons execute an action, either in the background or foreground of an experience. Buttons express what action will occur either by text, icon, or both. Additional meaning can be derived from the button variant and occasionally [tooltips](/components/tooltip).
 
 ## Categories
 
-Different button categories bring varying emphasis to potential user actions. This makes the page comprehensive while guiding the user through performing a task.
+Different button categories bring varying emphasis to potential user actions. This makes the page comprehensive while guiding the user through performing a task. We have three button categories: Primary, Secondary, and Tertiary.
 
-### Primary
+### Action hierarchy
 
-Primary buttons are the single most important action that moves the task forward within a context and thus have the most emphasis placed upon them. There should only be one call to action in any given context. Primary buttons are recognized by their solid color, bold text labels, and must use one of the four elementary button styles: Info (blue), Success (green), Warning (orange), or Danger (red).
+Button categories are chosen based on the overall hierarchy on a given page, as well as the individual contexts found within. Defining context depends on the hierarchy of information displayed on the screen, the motivated user flow, and the available tasks. As an example: Settings pages may have multiple equally important contexts, each requiring its own primary button to complete its task.
 
-Defining context depends on the hierarchy of information displayed on the screen, the motivated user flow, and the available tasks. As an example; Settings pages may have multiple equally important contexts, each requiring its own primary button to complete its task.
+Note that contexts may be temporary, such as a modal.
 
-Please note that contexts may be temporary, such as a modal.
+|Category|Used for|How often|
+|--------|-----------|---------|
+|Primary |The single most important action that moves the task forward within a context|One per context|
+|Secondary|Supplementary actions that the user is motivated to take|One or more per context|
+|Tertiary|Less important actions that are not promoted to the user|Multiple|
 
 [[Example:button-primary]]
 
-### Secondary
-
-Secondary buttons represent supplementary actions that the user is motivated to take. The outlined styling places less emphasis on these buttons. Just like primary buttons, secondary buttons also require one of the four elementary button styles: Info (blue), Success (green), Warning (orange), or Danger (red).
-
 [[Example:button-secondary]]
-
-### Tertiary
-
-A tertiary button is the default button category. Tertiary buttons still have an outlined styling but cannot have one of the four elementary button styles. They are typically used for less important actions that are not promoted to the user.
 
 [[Example:button-tertiary]]
 
-### Link
+## Variants
 
-Todo: Add link category button documentation
+Buttons derive additional meaning from their presented style and help the user quickly presume any consequences that button may cause when clicked.
 
-Todo: Add live component block with code example
+|Variant|Used for|
+|-------|--------|
+|Default|Actions that may fall into any other variant but do not warrant prominence|
+|Dashed|Objects that have yet to be created|
+|Info|Activation or informative processes|
+|Success|Positive actions such as the creation or addition of items|
+|Warning|Actions that can be undone or rectified but warrant caution|
+|Danger|Destructive actions that cannot be undone|
+|Link|Actions that visually function as anchors|
+
+[[Example:button-variants]]
 
 ## States
 
-Buttons change depending on the user's interaction or set behavior. This is to ensure they are accessible and feel responsive in both desktop and mobile environments. Additionally, disabled and read-only buttons have specific styling and interaction restrictions that inform the user of their meaning.
-
-### Hover, Active, and Focus
-
-Buttons change depending on the user's interaction with them. In hover, active, and focus states the buttons will have a thicker border and their background color will change. For the focus state, buttons will get an additional blue glow indicating that they are in focus.
-
-[[Example:button-variants]]
+Button states change visually and/or programmatically depending on user interaction or a predetermined state. For example, programmatically moving focus to a button in a modal when it opens. This ensures they’re accessible and feel reactive for different modalities.
 
 ### Disabled
 
@@ -64,141 +66,11 @@ Disabled buttons prevent the user from performing an action. They are there to l
 
 [[Example:button-disabled]]
 
-## Variants
-
-Buttons derive additional meaning from their presented style and help the user quickly presume any consequences that button may cause when clicked.
-
-### Neutral
-
-The neutral button style is used most often and is generally picked when using tertiary buttons. It features grayscale colors with a white background.
-
-[[Example:button-tertiary]]
-
-### Elementary
-
-Our elementary button styles all convey a different meaning due to their respective styling. Their colors are aligned with our [four primary chromatic colors](/foundations/colors).
-
-#### Info
-
-Buttons that represent activation or informative processes. They are represented in a blue color.
-
-[[Example:button-info]]
-
-#### Success
-
-Buttons that represent positive actions such as the creation or addition of items. They are represented in a green color.
-
-[[Example:button-success]]
-
-#### Warning
-
-Buttons that represent actions where the user should be cautious such as overriding certain rulesets. These actions can be undone or somehow rectified by the user if a mistake is made. They are represented in an orange color.
-
-Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
-
-[[Example:button-warning]]
-
-#### Danger
-
-Buttons that represent actions that are destructive, such as deleting content. These actions cannot be undone. They are represented in a red color.
-
-Please note that often the secondary button category is the correct choice here as the user will mostly not be motivated to delete content when completing the task at hand.
-
-[[Example:button-danger]]
-
-### Dashed
-
-Dashed button styles are used when something has not yet been created. Their action will lead the user to create the missing item, after which it will replace the dashed button with a link to the item.
-
-[[Example:button-dashed]]
-
-## Combinations
-
-Buttons come in many different combinations to fit different situations. Some trigger a dropdown while others combine multiple similar actions together
-
-### Text
-
-The default combination is the text button. They contain a text label and have no special interactions.
-
-[[Example:button-tertiary]]
-
-### Icon
-
-Icon buttons provide the user with visual iconography to signify what the button does. They only contain an icon label and have no special interactions. They can be used when a text button would be too big or the meaning of an icon conveys what will happen in a more concise way.
-
-[[Example:button-icon]]
-
-### Icon + text
-
-Text buttons might be supplemented with an icon to both clarify an action and call attention to a button. Icons are always positioned to the left of the text label.
-
-Please note to **not** use two icons in the same button.
-
-[[Example:button-icon-and-text]]
-
-### Emoji
-
-Emoji buttons provide the user with visual to signify what the emotion users have attributed to the parent object. They only contain an emoji label and convert to an active state when pressed.
-
-[[Example:button-emoji]]
-
-### Dropdown
-
-Dropdown buttons trigger menus of options which can be either actions or input values. The only icon that should be present in the default dropdown is the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label.
-
-[[Example:new-dropdown-default]]
-
-#### Split dropdown
-
-Dropdown buttons may be split when its options are actions. The text button will allow immediate access to the most common option and an attached dropdown button to either change the default action or directly access a list of related actions. The dropdown button is attached to the right of the text button and has a chevron icon as its label.
-
-If the dropdown menu has no related actions available, a split dropdown button should be converted back to just a text button.
-
-The currently selected action has a checkmark on the left side of the dropdown item. See also [checkmark dropdowns](/components/dropdown).
-
-[[Example:new-dropdown-split]]
-
-#### Icon dropdown
-
-Icon dropdowns function similar to other dropdown button combinations with the difference being an icon label.
-
-[[Example:new-dropdown-with-icon]]
-
-### Ellipsis
-
-Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
-
-[[Example:button-ellipsis]]
-
-### Group
-
-Button groups merge frequently used buttons with a close relationship or similar actions together to aid with arrangement and spacing. Button groups are always displayed in a horizontal row.
-
-[[Example:button-group-basic]]
-
-### Icon group
-
-Icon groups function similar to button groups with the difference being an icon label.
-
-Todo: Add live component block with code example
-
-### Segmented control
-
-A segmented control allows users to choose one out of a range of available options. It’s commonly used as an alternative to dropdowns and radio selections.
-
-See [segmented control](/components/segmented-control) for more information.
-
-### Icon segmented control
-
-Icon segmented controls function similar to segmented control buttons with the difference being an icon label.
-
-See [segmented control](/components/segmented-control) for more information.
-
 ### Loading
 
-Any button can utilize the `loading` property to turn a button’s state into a loading state. This state indicates that an action is in progress by adding a [spinner](/components/spinner), and the button can’t be clicked while the state persists.
+Any button can utilize the `loading` property to turn a button’s state into a loading state. The loading status is indicated by the use of a [spinner](/components/spinner), and the button is disabled while the state persists.
 
-For [text buttons](#text) or [icon and text buttons](#icon-%2B-text), the spinner is added to the left of the button, before the icon or label.
+For [buttons containing text](#combinations), the spinner is added to the left of the button, before the icon or label.
 
 [[Example:button-loading]]
 
@@ -206,33 +78,73 @@ For [icon buttons](#icon), the spinner replaces the icon.
 
 Todo: Add live component block with example of loading icon button
 
-### Pagination
+### Selected
 
-Pagination is a specific example of a [segmented control](/components/pagination). It indicates the number of pages available, what page the user is on, and controls for navigating between pages.
+Selected buttons act like a toggle that indicate whether or not an option is in a selected state. To indicate to screen readers that the button functions as a toggle it should have `aria-pressed="true"` to align with the visually selected state, otherwise `aria-pressed="false"`.
 
-See [pagination](/components/pagination) for more information.
+[[Example:button-selected]]
+
+## Combinations
+
+Buttons can contain different content depending on the situation. For example, some buttons only have text, while others only have an icon. A combination may be used when space allows and more emphasis is required. Icons are always positioned to the left of text. Two icons should never be used in the same button, unless it is an [icon dropdown](#text-%2B-icon-dropdowns).
+
+[[Example:button-basic]]
+
+[[Example:button-icon]]
+
+[[Example:button-icon-and-text]]
+
+### Label
+
+A button may also be attached to a label, such as a commit SHA.
+
+[[Example:button-label]]
+
+### Emoji
+
+Emoji buttons provide the user with a visual to indicate what emotion has been attributed to the parent object. They only contain an emoji character and convert to a [selected](#selected) state when pressed.
+
+[[Example:button-emoji]]
+
+## Dropdown buttons
+
+Dropdown buttons trigger option menus. 
+
+### Text and icon dropdowns
+
+A dropdown button is identified by the use of a [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
+
+[[Example:new-dropdown-default]]
+
+[[Example:new-dropdown-with-icon]]
+
+### Split dropdown
+
+Dropdown buttons may be split when additional related actions are available. The text button will allow immediate access to the most common option and an attached dropdown button to change the default action.
+
+If the dropdown menu has no related actions available, a split dropdown button should be converted back to a text button.
+
+[[Example:new-dropdown-split]]
+
+## Ellipsis
+
+Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
+
+[[Example:button-ellipsis]]
+
+## Group
+
+Button groups visually group buttons that have similar or related actions together to emphasize the relationship and aid with arrangement and spacing.
+
+[Pagination](/components/pagination) and [segmented controls](/components/segmented-control) are specific types of button groups.
+
+[[Example:button-group-basic]]
 
 ## Sizing
 
-Depending on the interface buttons may either use the medium or small size.
+Depending on the interface buttons may either use the medium or small size. Block buttons expand to fill the width of their parent container. This can be used for buttons embedded inside smaller width containers or to improve usability on mobile viewports.
 
-### Medium
-
-This is the default button size.
-
-[[Example:button-medium]]
-
-### Small
-
-This is the alternative button size for use in tight spaces.
-
-[[Example:button-small]]
-
-### Full width
-
-Buttons can be expanded to the full width of the parent container. This can be used for buttons embedded inside smaller width containers or to improve usability on mobile viewports.
-
-[[Example:button-full-width]]
+[[Example:button-sizes]]
 
 ## Alignment and order
 
