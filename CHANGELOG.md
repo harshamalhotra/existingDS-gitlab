@@ -1,3 +1,10 @@
+# [1.66.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.65.0...v1.66.0) (2020-12-14)
+
+
+### Features
+
+* **spinner:** Remove orange color option ([234fce8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/234fce87c36ad02ca30a97c90aeccde8501ed3c4))
+
 # [1.65.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.64.0...v1.65.0) (2020-12-11)
 
 
