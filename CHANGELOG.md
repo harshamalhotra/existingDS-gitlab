@@ -1,3 +1,10 @@
+## [1.67.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.67.0...v1.67.1) (2020-12-14)
+
+
+### Bug Fixes
+
+* **naming:** Use singular naming format for consistency ([aba3966](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aba396657020982104b5d425539f28a9fddab445))
+
 # [1.67.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.66.0...v1.67.0) (2020-12-14)
 
 
