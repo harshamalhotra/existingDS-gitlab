@@ -21,52 +21,25 @@ Spinners shouldn’t be used in combination with the skeleton loader, too much a
 
 Additionally, we add a 100 ms delay before showing the spinner to mitigate lots of unnecessary spinners showing up at the same time.
 
-We use four spinner sizes:
-
-- **Small**: 16 pixels
-- **Medium**: 24 pixels
-- **Large**: 32 pixels
-- **Extra Large**: 64 pixels
-
-and three spinner colors:
-
-- **Orange**: `$orange-600`
-- **Dark**: `$grey-700`
-- **Light**: white
-
-[[Example:loading-icon-all-options]]
-
 ### Sizes
 
-#### Small
-
-With its size at 16 pixels this spinner size is perfect for placing it alongside text labels. This is also the size that can be used inside other elements such as buttons or input fields.
-
-#### Medium
-
-This size can be used alongside other icons with a similar size. For example, the icons in the merge request widget used to indicate pipeline stage status, security scanning, and more are using this size.
-
-#### Large
-
-This size can be used for indicating that loading is in progress for larger components (for example charts and other interactive elements).
-
-#### Extra Large
-
-This size is the largest we allow for our spinners. It can be used for indicating that loading is in progress for content areas and sections of the UI.
+|Name|Size|Use|
+|----|----|---|
+|Small|16px|Alongside text labels or inside other UI elements, such as buttons.|
+|Medium|24px|Alongside larger visual elements, such as merge widget status icons.|
+|Large|32px|To indicate larger components are loading, such as charts.|
+|Extra large|64px|To indicate large areas of the UI is loading, such as content areas.|
 
 ### Colors
 
-#### Orange
+Two colors are available to choose from, depending on the background color:
 
-This is the primary color for the spinner and it should be used in most cases.
+|Color|Use|
+|-----|---|
+|Dark| For [neutral](/foundations/colors#neutral-palette) backgrounds that are `$gray-200` or lighter, or [chromatic](/foundations/colors#chromatic-palette) backgrounds that are `300` or lighter.|
+|Light|For [neutral or chromatic](/foundations/colors) backgrounds that are `400` or darker.|
 
-#### Dark
-
-This is the secondary color for the spinner. It’s a great alternative for times when the spinner doesn’t need to stand out as much. For example, when used to indicate background activity or when used within small elements such as icon buttons.
-
-#### Light
-
-This color is reserved for spinners on dark background only (buttons for example).
+[[Example:loading-icon-all-options]]
 
 ## Design specification
 
