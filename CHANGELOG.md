@@ -1,3 +1,10 @@
+# [1.67.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.66.0...v1.67.0) (2020-12-14)
+
+
+### Features
+
+* **vpat:** Update VPAT template to use 508 Edition 2.4 ([1fb7b0c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1fb7b0ccad24055d604a9e86c46ecb3fa0088a4b))
+
 # [1.66.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.65.0...v1.66.0) (2020-12-14)
 
 
