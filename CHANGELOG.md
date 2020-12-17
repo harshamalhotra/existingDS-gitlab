@@ -1,3 +1,10 @@
+# [1.68.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.67.1...v1.68.0) (2020-12-17)
+
+
+### Features
+
+* **Accessibility:** Initial addition of accessibility audit guides ([1bff76b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1bff76b4890ea082f470d32c725558ae6578fa8c))
+
 ## [1.67.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.67.0...v1.67.1) (2020-12-14)
 
 
