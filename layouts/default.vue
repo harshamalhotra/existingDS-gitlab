@@ -119,7 +119,9 @@ export default {
               <a href="https://about.gitlab.com/handbook/marketing/product-marketing/roles-personas/" target="_blank" rel="noopener" class="nav-sidebar__section-items-anchor nav-sidebar--indent-1">Personas</a>
             </li>
           </menu-section>
-          <menu-section :content-tree="contentTree" category="accessibility" />
+          <menu-section :content-tree="contentTree" category="accessibility">
+            <sub-menu :content-tree="contentTree" category="accessibility-audits" category-name="Audit guides" />
+          </menu-section>
           <menu-section :content-tree="contentTree" category="contribute" />
         </template>
         <template v-else>
