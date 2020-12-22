@@ -1,3 +1,10 @@
+## [1.68.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.68.0...v1.68.1) (2020-12-22)
+
+
+### Bug Fixes
+
+* avoid loading examples from a similarly named component ([3a0242f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3a0242f5ab16dea52afb75a6e84aaa153031623c))
+
 # [1.68.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.67.1...v1.68.0) (2020-12-17)
 
 
