@@ -2,6 +2,8 @@
 name: Accordion
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A0
 docs: in-progress
+vueComponents:
+  - GlAccordion
 related:
 - modal
 - tree
@@ -78,7 +80,7 @@ Use proper semantic markup, so that users of screen readers are aware of the sta
 
 ## Demo
 
-Todo: Add live component block with code example
+[[Example:accordion-basic]]
 
 ## Design specifications
 
