@@ -47,7 +47,7 @@ export default {
         snakeName = snakeName.replace(/gl_/, '');
 
         Object.keys(ComponentDocumentations).forEach(component => {
-          if (component.startsWith(vueComponentName)) {
+          if (component === `${vueComponentName}Documentation`) {
             this.vueComponentDocumentations[vueComponentName] = ComponentDocumentations[component];
             if (componentExamples[vueComponentName]) {
               this.vueComponentDocumentations[vueComponentName].examples =
