@@ -40,7 +40,7 @@ export default {
     );
 
     // Format Todo Messages as before
-    ['note', 'tip', 'todo', 'warning'].forEach(type => {
+    ['note', 'tip', 'todo', 'warning'].forEach((type) => {
       mdOutput = makeAdmonitions(mdOutput, type);
     });
 

@@ -44,14 +44,13 @@ export default {
 
 <template>
   <li>
-    <details
-      :open="$route.fullPath.startsWith(`/${category}`)"
-      class="nav-sidebar__section"
-    >
+    <details :open="$route.fullPath.startsWith(`/${category}`)" class="nav-sidebar__section">
       <summary
         class="nav-sidebar__section-summary nav-sidebar--indent-1"
         @click="selectFirstSubItem"
-      >{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</summary>
+      >
+        {{ categoryName || category.charAt(0).toUpperCase() + category.slice(1) }}
+      </summary>
       <slot></slot>
       <nav-sidebar-menu-item
         v-for="page in contentTree[category]"

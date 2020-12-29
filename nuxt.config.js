@@ -5,8 +5,8 @@ import fiber from 'fibers';
 import { getContentList, writeContentTree } from './modules/content_preparer';
 
 const routes = [
-  ...getContentList('components').map(c => `components/${c.id}`),
-  ...glob.sync('**/*.md', { cwd: 'contents/' }).map(filePath => filePath.replace(/\.md$/, '')),
+  ...getContentList('components').map((c) => `components/${c.id}`),
+  ...glob.sync('**/*.md', { cwd: 'contents/' }).map((filePath) => filePath.replace(/\.md$/, '')),
 ];
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -26,7 +26,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: titleChunk =>
+    titleTemplate: (titleChunk) =>
       titleChunk ? `${titleChunk} | Pajamas Design System` : 'Pajamas Design System',
     meta: [
       { charset: 'utf-8' },
@@ -85,7 +85,7 @@ module.exports = {
 
   router: {
     extendRoutes(originalRoutes) {
-      const sectionSlugRoute = originalRoutes.find(route => route.name === 'section-slug');
+      const sectionSlugRoute = originalRoutes.find((route) => route.name === 'section-slug');
       sectionSlugRoute.path += '/:tab?';
     },
   },

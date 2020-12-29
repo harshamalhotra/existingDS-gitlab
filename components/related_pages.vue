@@ -12,7 +12,7 @@ export default {
       return this.relatedPatterns && this.relatedPatterns.length > 0;
     },
     relatedPatterns() {
-      return this.related.map(item => {
+      return this.related.map((item) => {
         let slug;
         let url;
         if (item.startsWith('/')) {

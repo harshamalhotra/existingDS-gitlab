@@ -20,7 +20,11 @@ export default {
 
 <template>
   <ul class="nav-sidebar__section">
-    <li><span class="nav-sidebar__section-title">{{ categoryName || (category.charAt(0).toUpperCase() + category.slice(1)) }}</span></li>
+    <li>
+      <span class="nav-sidebar__section-title">{{
+        categoryName || category.charAt(0).toUpperCase() + category.slice(1)
+      }}</span>
+    </li>
     <li v-for="page in contentTree[category]" :key="page.id">
       <nuxt-link
         :to="`/${category}/${page.id}`"

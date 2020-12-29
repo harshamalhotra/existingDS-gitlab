@@ -4,7 +4,7 @@ import path from 'path';
 const context = require.context('.', true, /index\.js$/);
 const examples = {};
 
-context.keys().forEach(key => {
+context.keys().forEach((key) => {
   // require.context also catches this very file, so we skip it to make sure the only index.js files
   // we loop through are example ones.
   if (key === './index.js') {

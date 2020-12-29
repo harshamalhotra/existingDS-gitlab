@@ -40,7 +40,7 @@ export function getContentList(dirName) {
   };
 
   const fileItems = fs.readdirSync(baseComponentsDir);
-  fileItems.forEach(item => {
+  fileItems.forEach((item) => {
     const itemContent = fs.readFileSync(path.join(baseComponentsDir, item), 'utf8');
     convertComponent(item, itemContent);
   });
@@ -52,7 +52,7 @@ export function writeContentTree(baseDirectory) {
   const treeObj = {};
   const directories = fs.readdirSync(path.resolve(baseDirectory, 'contents'));
 
-  directories.forEach(dir => {
+  directories.forEach((dir) => {
     treeObj[dir] = getContentList(dir);
   });
 

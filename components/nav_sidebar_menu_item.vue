@@ -15,10 +15,7 @@ export default {
 
 <template>
   <li>
-    <nuxt-link
-      :to="to"
-      class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-    >
+    <nuxt-link :to="to" class="nav-sidebar__section-items-anchor nav-sidebar--indent-2">
       {{ name }}
     </nuxt-link>
   </li>
