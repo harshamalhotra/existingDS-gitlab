@@ -10,115 +10,124 @@ related:
   - toast
 ---
 
-Alerts allow the application to pass along relevant system information to the user without impeding their journey. Alerts are system generated and may or may not be derived by a user's action. They are not [validation](/components/form#validation) error messages, nor are they feedback notifications after the user takes action — see [toasts](/components/toast) for more information.
+Alerts provide relevant information to the user without impeding their task. Alerts are system generated and may or may not result from a user's action.
 
 ## Usage
 
-| Component type | Purpose |
-| --- | --- |
-| Error alert | To indicate that an action has failed. |
-| Danger alert | To advise the user that their attention is needed to address a critical issue in the system. |
-| Warning alert | To caution the user that their attention may be needed due to an issue in the system, however, it is not critical that they take action. |
-| Information alert | To provide supplemental information to the user in regards to the action they are about to take. | 
-| Tip alert | To educate the user about new or unused features, and other useful information. |
-| Success alert | To reaffirm to the user that a prior action they have taken, often in a different location within the application, has been accepted by the system. |
+### When to use an alert
 
-### Actionable
+Determining which alert variant to use can sometimes be tricky. See the purpose and examples for each variant below to get a better understanding of when to use each.
 
-Where possible, ensure alerts are actionable so they can be easily resolved.
+| Variant | Purpose | Example |
+| ------ | ------ | ------ |
+| Error | Advise the user that their attention is needed to address or be aware of a critical issue in the system. | An error alert is present when the backend fails to load a long list of issue comments and the user must reload to try again. |
+| Danger | Advise the user that their attention is needed to address or be aware of a critical issue that relates to the current context. | A danger alert appears when there is a configuration issue with the **.gitlab-ci.yml** file. |
+| Warning | Caution the user that their attention or action may be needed within the current context, but it may not be critical. | A warning alert appears when the user has added an SSH key that doesn't appear to be public. |
+| Success | Reaffirm to the user that a prior action they have taken, often in a different location within the application, has been successful. | A success alert appears in the pipeline view after the user activates SAST using the Web IDE and the SAST job runs properly for the first time. |
+| Information | Provide supplemental information to the user in regards to the current context or action they are about to take. | An information alert appears in **Settings/Export-project** to detail what will happen when a project is exported. |
+| Tip | Educate the user about new or unused features, and other useful information. | A tip alert appears in **Operations/Kubernetes** to make the user aware of a GCP credit offer. |
 
-### Dismissal
+[[Example:alert-variants]]
 
-Alerts may contain a dismiss action, as well as an additional action button, depending on the use case.
+### When not to use an alert
 
-#### Dismissible alerts
+There are times when using a component other than an alert is necessary to provide the best experience. See the purpose and examples for the following components to get a better idea of when not to use an alert and what to use instead. 
 
-Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert.
+| Component | Purpose | Example | Why an alert was not used |
+| ------ | ------ | ------ | ------ |
+| [Broadcast Message](/components/broadcast-message) | Deliver critical, user-generated messages to all users. | A broadcast message is present when an admin relays a critical message to all users at the instance level. | Broadcast messages are created by an admin and not the system. System-generated and user-generated messages are visually differentiated, so a broadcast message is used in this case. |
+| [Validation error](/components/form#validation) | Notification of invalid data. | An error message appears when invalid characters are entered into a form field. | A validation error is tied to a specific invalid data that the user entered or left empty. An alert should be present though to indicate that a validation error has occurred. See the [accessibility](#accessibility) section for details. |
+| [Toast](/components/toast) | Immediate confirmation of an action. | A toast appears when a vulnerability is dismissed and no longer appears in a list. |  A toast message immediately affirms that the system recognized the action and that no further action is needed. |
 
-Use dismissible alerts when the user's task is not blocked if they do not take action.
+### Placement
 
-- The user dismisses a system-generated alert notifying them their `.gitlab-ci.yml` config file has an issue. Alert reappears the next time the config problem stops a process from running.
+#### Global error
 
-#### Non-dismissible alerts
+An error alert happens in a global context that impacts the entire experience and is placed directly below the navigation bar. For example, an alert that states “Your subscription has expired” after a user has authenticated. Only the error alert uses `position: sticky`, while other alert variants are contextual within a page and scroll with content.
 
-Non-dismissible alerts can only be removed after a system condition is met.
+<figure class="figure" role="figure" aria-label="Full-width sticky error alert under the navigation">
+  <img class="figure-img" src="/img/alert-global.png" alt="Error alert position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">Full-width sticky error alert under the navigation</figcaption>
+</figure>
 
-Use non-dismissible alerts when the user is prevented from completing a task until a system-condition is met.
+#### Page-level
 
-- The user encounters an alert notifying them their license has expired. The alert is only removed when they have uploaded a new license in the admin area.
+Place an alert at the top of a page, directly below the navigation bar and above the breadcrumbs, when it refers to something that happened at the page level. For example, an alert that states “Something went wrong while fetching latest comments” on an issue page. Page-level alerts are restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
 
-### Page-level alerts
+<figure class="figure" role="figure" aria-label="Page-level alert in the main content area with space above and below">
+  <img class="figure-img" src="/img/alert-page-level.png" alt="Page-level alert position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">Page-level alert in the main content area with space above and below</figcaption>
+</figure>
 
-Place alerts on top of the page when they’re referring to something that happened on the page level, “Something went wrong while fetching latest comments.” on the issue page, for example. These alerts should be placed directly below the navigation bar and above the breadcrumbs with vertical spacing on top and bottom to separate it from the page content. Page-level alerts never appear below the breadcrumbs. Additionally, error alerts can be made sticky to make it more likely that the user notices them. The width of the page-level alerts should be restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
+#### In-page
 
-### Global alerts
+Place an alert within a section of the page when the message is specific to that content. For example, an alert that states “You have used 50374 out of 50000 of your shared Runners pipeline minutes” within an individual CI/CD job page. 
 
-Use a global alert when something affects the system at large. For example, “Your subscription has expired.” Global alerts are triggered by the system, and not by an admin. They’re positioned the same as page-level alerts, but they should be full width instead of being constrained by the page’s content container width. They should have top and bottom margin to separate the alert from other page content.
+<figure class="figure" role="figure" aria-label="In-page alert contextually placed with space above and below">
+  <img class="figure-img" src="/img/alert-in-page.png" alt="In-page alert position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">In-page alert contextually placed with space above and below</figcaption>
+</figure>
 
-### Embedded alerts
+### Multiple alerts
 
-Place alerts within a section of the page or UI element when the user needs to be informed of the status of that particular area the alert is referring to. For example, if we want to show an alert inside a modal we first need to know its purpose. If the alert is informing the user of what will happen once they confirm an action by clicking the primary button in that modal, placing the alert at the bottom of the modal and above the action bar is the best option here. In most cases, sticky alerts should not be used.
+Todo: Determine pattern for multiple alerts that occur in the same area of a page.
 
-### When to use alerts
+## Specifications
 
-Alerts should be used when the system needs to notify the user of its status or to provide the user with information about their current experience. Deciding when to use a broadcast message, error, toast, or an alert can be tricky. See the below use cases to get a better understanding of when to use an alert:
+### Alert structure
 
-| Alert | Use case | Example |
-| ----- | -------- | -------- |
-| Error | Loading error | Use an error alert when the backend fails to load a long list of issue comments and the user must reload to try again. |
-| Danger | Configuration issue | Use a danger alert when there is a configuration issue with the `.gitlab-ci.yml` file. |
-| Warning | Potential issue | Use a warning alert when the user has added an SSH key that doesn't appear to be public. |
-| Information | Provide supplemental information | Use an information alert in Settings/Export-project to detail what will happen when a user exports a project. |
-| Tip | Promotional offer | Use a tip alert in Operations/Kubernetes to make the user aware of a GCP credit offer. |
-| Success | Subsequent confirmation of a proper configuration | Use a success alert in the pipeline view after the user activates SAST using the Web IDE and the SAST job runs properly for the first time. |
+All copy within an alert should be short, actionable, and use clear language. Be sure to keep translations in mind when writing copy.
 
-### When not to use alerts
+<figure class="figure" role="figure" aria-label="Alert structure">
+  <img class="figure-img" src="/img/alert-diagram.svg" alt="Numbered diagram of an alert structure" role="img" />
+</figure>
 
-There are times when using an alternative component other than an alert is necessary to provide the best experience to the user. See the following use cases to get a better idea of when not to use an alert: 
+1. **Icon**
+   - Each variant has an icon (required) associated with it:
+     - [error](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~error) icon for error and danger alerts.
+     - [warning](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~warning) icon for the warning alert.
+     - [check-circle](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~check-circle) icon for the success alert.
+     - [information-o](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o) icon for the information alert.
+     - [bulb](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~bulb) icon for the tip alert.
+1. **Title**
+   - A title (optional) conveys what event triggered the alert.
+   - Be brief and keep the title to a single line by utilizing a sentence fragment.
+   - Avoid using punctuation such as periods, commas, or semicolons.
+   - Use a full stop only when the title is a full sentence.
+1. **Dismissal**
+   - A close (×) button (optional) positioned at the top right closes an alert.
+   - An alert can be permanently dismissed by a user with an explicit [action button](#actions) only when the alert relates to their individual instance and wasn't triggered by a system condition.
+   - Allow an alert to be dismissed when a task isn't blocked if no action is taken.
+   - Don't use a dismiss button or action when the user is prevented from completing a task until a system-condition is met.
+   - Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert.
+   - Non-dismissible alerts can only be removed after a system condition is met.   
+   - Alerts may contain a dismiss action (in addition to the close button), as well as an additional action button below the body content, depending on the use case.
+1. **Message**
+   - Alert body copy (required) clarifies what needs to be done. For example, providing next steps, troubleshooting actions, or links to learn about or remedy the event that triggered the alert.
+   - Avoid paraphrasing the title if one is included. Write the body copy as if the title was the first sentence of this message.
+   - Keep to one or two sentences when possible.
+   - Use sentence case and appropriate punctuation based on our [punctuation guidelines](/content/punctuation). 
+1. **Actions**
+   - Buttons (optional) can be used to provide explicit action(s) the user can take to either remedy the alert or continue with a task.
+   - Up to two actions can be used at a time where the primary action uses the info button variant and the secondary action uses the default button variant.
+   - Buttons are always left aligned, except in right-to-left languages where they are right aligned and the order is the same. See [button alignment and order](/components/button#alignment-and-order) for more details.
 
-| Component | Use case | Example | Why an alert was not used |
-| ---- | ---- | ---- | ---- |
-| [Broadcast Message](https://design.gitlab.com/components/broadcast-message) | Deliver critical, user-generated messages to all users | Use a broadcast message when an admin wants to relay a critical message to all users at the instance level. | Broadcast messages are created by an admin and not the system. We want to differentiate between system-generated and user-generated messages, hence a broadcast message is used in this case. |
-| [Validation error](https://design.gitlab.com/components/form#validation) | Notification of an invalid action | Use an error when the user has entered invalid characters into the project name field. | A validation error is tied to a specific invalid action that the user performed, whereas danger alerts inform users of when something has gone wrong separate from any immediate action the user has taken. |
-| [Toast](https://design.gitlab.com/components/toast) | Immediate confirmation of an action | Use a toast when the user has dismissed a vulnerability and it no longer appears in the list. |  We want to immediately reaffirm to the user the system recognized their action and that no further action is needed on their part. |
+### Design
 
-### Copy and content guidelines
-All copy within an alert should be short, actionable, and use clear language. Be sure to keep translations in mind when writing copy. 
+- The contents of an alert are constrained by a `max-width` variable that:
+  - Prevents the line length (measure) of the text from being too wide and impacting readability.
+  - Keeps short alert content and the close button more central in the layout, preventing it from getting lost in a user's peripheral vision or too stretched out in a wide viewport.
+  <figure class="figure" role="figure" aria-label="An alert background fills container width after content reaches max-width">
+    <img class="figure-img" src="/img/alert-max-width.png" alt="Alert with left and right content edges marked to show max-width" role="img" style="width:100%; max-width:332px; height:auto" />
+    <figcaption class="figure-caption">An alert background fills container width after content reaches max-width</figcaption>
+  </figure>
+- Color, spacing, dimension, and layout information can be viewed in the [Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A278)
 
-#### Titles
+### Accessibility
 
-- Alert titles are optional. When used, they should convey to the user what event triggered the alert.
-- Be brief. Keep titles to a single line by utilizing a sentence fragment.
-- Avoid using punctuation such as periods, commas, or semicolons.
-- Use a full stop only when the title is a full sentence. 
-
-
-#### Body copy
-
-- Alert body copy should clarify to the user what they need to do. For example, providing next steps, troubleshooting actions, or links needed for the user to learn about or remedy the event that triggered the alert.
-- Avoid paraphrasing the title if one is included. Write the body copy as if the title was the first sentence of this message.
-- Keep to one or two sentences when possible.
-- Use sentence case and appropriate punctuation.
-
-
-## Demo
-
-The alert pattern is designed to be flexible and accounts for as many use cases as possible.
-
-### Basic example
-
-[[Example:alert-default]]
-
-### Non-dismissible
-
-[[Example:alert-non-dismissible]]
-
-### With actions
-
-[[Example:alert-actions]]
-
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A278)
+- Alerts should receive focus and leverage `aria-live` to announce their presence and allow a user to interact with them immediately.
+- Alerts are separate from, but complimentary to [validation](/components/form#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.
+<figure class="figure" role="figure" aria-label="An alert that links to form errors">
+  <img class="figure-img" src="/img/alert-form-validation.png" alt="Alert with arrow pointing to an input with an error" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">An alert that links to form errors</figcaption>
+</figure>
