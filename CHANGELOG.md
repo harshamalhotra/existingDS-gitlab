@@ -1,3 +1,10 @@
+# [1.69.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.68.1...v1.69.0) (2021-01-06)
+
+
+### Features
+
+* **Alert:** Initial docs update progress ([ab696ca](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ab696ca4ad6c252ee34995c08c75b083531a7433))
+
 ## [1.68.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.68.0...v1.68.1) (2020-12-22)
 
 
