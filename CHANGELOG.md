@@ -1,3 +1,10 @@
+# [1.70.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.69.0...v1.70.0) (2021-01-08)
+
+
+### Features
+
+* **spacing:** Add spacing conversion table ([c8fd901](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c8fd9018ccbf4d3c0cc3da89d9086df05dd77432))
+
 # [1.69.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.68.1...v1.69.0) (2021-01-06)
 
 
