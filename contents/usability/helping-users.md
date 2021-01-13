@@ -20,7 +20,7 @@ Use a question to lead the user to helpful information.
 
 If a question doesn't make sense, use the sentence, "Learn more." Do not use "More information" or other phrases, and always use a period.
 
-- **Example:** User cohorts show how active users are in the last 12 months. [Learn more](#).
+- **Example:** User cohorts show how active users are in the last 12 months. [Learn more.](#)
 
 If no room is available for text, use the [question svg](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) (`#1068bf`) to link to the Help content. Use a tooltip to indicate the primary question answered by the help content.
 
