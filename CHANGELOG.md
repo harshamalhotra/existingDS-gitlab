@@ -1,3 +1,10 @@
+## [1.70.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.70.0...v1.70.1) (2021-01-20)
+
+
+### Bug Fixes
+
+* **Accordion:** update status of docs and GitLab ui ([f16554d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f16554deb27cc697d5f8c453db37f4a3b3f91b62))
+
 # [1.70.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.69.0...v1.70.0) (2021-01-08)
 
 
