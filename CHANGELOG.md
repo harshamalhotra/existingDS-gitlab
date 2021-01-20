@@ -1,3 +1,10 @@
+# [1.71.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.70.1...v1.71.0) (2021-01-20)
+
+
+### Features
+
+* **GlModal:** Update gitlab-ui status to complete ([ae85c67](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ae85c679047c22e5fcd6283e6794bfe0603583dc))
+
 ## [1.70.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.70.0...v1.70.1) (2021-01-20)
 
 
