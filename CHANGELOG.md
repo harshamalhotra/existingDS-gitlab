@@ -1,3 +1,10 @@
+# [1.72.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.71.0...v1.72.0) (2021-01-21)
+
+
+### Features
+
+* **voice-tone:** Add active & passive voice example ([e4b555a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e4b555ae7827868d35a6b078dd050bd3bde3e0f2))
+
 # [1.71.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.70.1...v1.71.0) (2021-01-20)
 
 
