@@ -28,7 +28,7 @@ Button categories are chosen based on the overall hierarchy on a given page, as 
 
 Note that contexts may be temporary, such as a modal.
 
-|Category|Used for|How often|
+|Category|Purpose|How often|
 |--------|-----------|---------|
 |Primary |The single most important action that moves the task forward within a context|One per context|
 |Secondary|Supplementary actions that the user is motivated to take|One or more per context|
@@ -42,19 +42,27 @@ Note that contexts may be temporary, such as a modal.
 
 ## Variants
 
-Buttons derive additional meaning from their presented style and help the user quickly presume any consequences that button may cause when clicked.
+The visual style of a button helps a user identify what type of action it performs as well as its importance compared to other buttons in the same context.
 
-|Variant|Used for|
+|Variant|Purpose|Example|
+|-------|--------|-------|
+|Confirm|A positive or negative non-destructive action that is confirmation of what the user desires to take place (replaces `info`, `success`, and `warning`).|The **New issue** button when creating a new issue from the Issues list.|
+|Default|An action that doesn’t warrant prominence, typically when a primary variant is already used in the same context.|The **Cancel** button when leaving a modal.|
+|Dashed|An object that has yet to be created.|The **Add LICENSE** button on a project that doesn't contain a license.|
+|Danger|A destructive action that can't be undone or has potentially detrimental consequences.|The **Delete account** button when deleting an account.|
+|Link|An action that is visually styled like an anchor link.|The **Edit** links in the issue sidebar.|
+
+[[Example:button-variants]]
+
+### Deprecated variants
+
+These variants have been deprecated, don‘t use in production.
+
+|Variant|Purpose|
 |-------|--------|
-|Default|Actions that may fall into any other variant but do not warrant prominence|
-|Dashed|Objects that have yet to be created|
 |Info|Activation or informative processes|
 |Success|Positive actions such as the creation or addition of items|
 |Warning|Actions that can be undone or rectified but warrant caution|
-|Danger|Destructive actions that cannot be undone|
-|Link|Actions that visually function as anchors|
-
-[[Example:button-variants]]
 
 ## States
 
