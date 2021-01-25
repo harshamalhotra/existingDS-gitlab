@@ -30,7 +30,7 @@ export default {
       <gl-form-input v-model="name" type="text" required />
     </gl-form-group>
 
-    <gl-button :disabled="formClean || submitDisabled" type="submit" variant="success"
+    <gl-button :disabled="formClean || submitDisabled" type="submit" variant="confirm"
       >Submit</gl-button
     >
   </gl-form>

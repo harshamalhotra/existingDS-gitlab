@@ -13,6 +13,9 @@ export default {
       contentTree,
     };
   },
+  head: {
+    title: 'Component status',
+  },
   methods: {
     getBadgeVariant(status) {
       return statusIcons[status];
@@ -21,9 +24,6 @@ export default {
       const string = status.split('-').join(' ');
       return string.charAt(0).toUpperCase() + string.slice(1);
     },
-  },
-  head: {
-    title: 'Component status',
   },
 };
 </script>
