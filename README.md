@@ -46,6 +46,12 @@ When starting from scratch:
 1. Paste the contents in an existing placeholder file in `contents/components/` or create a new file and call it `componentname.md`
 1. Edit and write your documentation
 
+## Writing component examples
+
+Component examples can be included in component docs and are available in the **Vue component**
+tab when they are associated with a documentation page.
+
+[Learn how to write and use component examples](/doc/component-examples.md).
 ## Reviewing
 
 Each merge request for this repository will generate a [review app](https://docs.gitlab.com/ee/ci/review_apps/). Review apps create a new environment (dynamically) for each one of your branches. A Review App is then visible as a link when you visit the merge request relevant to the branch. That way, you are able to see live all changes introduced by the merge request changes.
