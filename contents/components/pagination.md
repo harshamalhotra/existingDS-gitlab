@@ -15,12 +15,20 @@ Pagination is used to help users parse a large number of items on a page, whenev
 
 ## Usage
 
-Use pagination to:
+When to use pagination
 
-- Present lists that contain specific items a user may need to find in order to complete their task. For example, Issues, Todos, Milestones, and Environments.
-- Navigate lists that can be sorted and/or filtered.
+- Presenting lists that contain specific items a user may need to find in order to complete their task. For example, Issues, Todos, Milestones, and Environments.
+- Navigating lists that can be sorted and/or filtered.
 
-We use both pagination and infinite scroll to segment results depending on the user’s task. Compare these guidelines with the [infitnite scroll usage guidelines](/components/infinite-scroll#usage) if you are unsure of which to use.
+There are two types of pagination, **offset**, and **keyset** (sometimes called cursor-based). General use is outlined below, but either can be used for any scenario since factors like performance, number of results returned, user expectations, and how data is queried will ultimately help determine the best approach.
+
+#### Offset pagination
+
+Offset pagination allows a user to navigation page by page within a defined set of pages. The page number is visible and can be directly clicked in the pagination component. This method is good when records aren't added or subtracted to the results as a user navigates through the them.
+
+#### Keyset pagination
+
+Keyset pagination only has **Prev** and **Next** options and no page numbers. It's ideal for paginating results that may have dynamic additions or subtractions as a user can only move to the previous or next set of results, regardless of where it is in the set. Keyset pagination is a good alternative to [infitnite scroll](/components/infinite-scroll#usage) since it can provide a more predictive and accessible experience.
 
 ### Behavior
 
@@ -36,10 +44,6 @@ Truncation is shown using `…` when the number of pages exceeds the pagination 
 
 Double truncation occurs when the current page is separated by 5 or more pages from the first and last page on large and medium viewports. On small and mobile viewports, double truncation occurs when 1 or more pages separate the current page from the first and last page.
 
-#### Page counters
-
-When page counters are not available due to a technical restraint, the Compact Pagination component may be used without the page count.
-
 ## Demo
 
 [[Example:pagination-basic]]
@@ -50,6 +54,4 @@ When page counters are not available due to a technical restraint, the Compact P
 
 ## Design specification
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2763%3A236)
+Color, spacing, dimension, and layout information can be viewed in the [Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2763%3A236)
