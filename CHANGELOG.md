@@ -1,3 +1,17 @@
+# [2.0.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.72.0...v2.0.0) (2021-01-28)
+
+
+### Features
+
+* **GlButton:** Update button variants and add deprecated variants ([0e50563](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0e505630542404fd4b06a76b8715f9d0552949ba))
+
+
+### BREAKING CHANGES
+
+* **GlButton:** Updates button variants docs and gitlab-ui examples.
+This change deprecates info, success, and warning button variants
+and adds the confirm variant.
+
 # [1.72.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.71.0...v1.72.0) (2021-01-21)
 
 
