@@ -1,3 +1,10 @@
+# [2.1.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.0.0...v2.1.0) (2021-02-02)
+
+
+### Features
+
+* **Pagination:** Documenting pagination types ([c738f26](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c738f260ba84f3771a358ab6d5c7acb8b9bda723))
+
 # [2.0.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v1.72.0...v2.0.0) (2021-01-28)
 
 
