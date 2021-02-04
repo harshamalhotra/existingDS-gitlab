@@ -1,5 +1,5 @@
-import { camelCase, upperFirst } from 'lodash';
 import path from 'path';
+import { camelCase, upperFirst } from 'lodash';
 
 const context = require.context('.', true, /index\.js$/);
 const examples = {};
