@@ -20,6 +20,11 @@ stages:
 
 workflow:
   rules:
+    # AutoDevops doesn't use MR pipelines, so we can skip the execution of them
+    # in order to avoid duplication of e.g. untamper-my-lockfile
+    - if: '$CI_MERGE_REQUEST_IID'
+      when: never
+
     - if: '$BUILDPACK_URL || $AUTO_DEVOPS_EXPLICITLY_ENABLED == "1"'
 
     - exists:
