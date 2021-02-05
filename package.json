@@ -54,6 +54,7 @@
     "vue-template-compiler": "2.6.12"
   },
   "resolutions": {
+    "chokidar": "^3.4.0",
     "vue": "2.6.12"
   },
   "release": {
