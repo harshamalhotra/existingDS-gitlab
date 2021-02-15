@@ -275,6 +275,12 @@ Button alignment should be reversed for [Right-to-left languages](/usability/i18
 
 Button labels should be short and concise while conveying what happens when the button is clicked. Buttons use [sentence case](/content/punctuation) and a normal font weight. An icon can be used in place of text.
 
+For button actions that do not immediately perform an action, append an ellipsis (`...`) to the button label text. For example, when committing a change in the Web IDE you are asked to select a branch before the action occurs.
+
+| Direct action | Subsequent action needed |
+| ------ | ------ |
+| <img src="/img/buttons-label.png" alt="A green confirmation button labeled save changes"> | <img src="/img/buttons-label-ellipsis.png" alt="a blue primary action button labeled commit..."> |
+
 Please note to **not** mix text and icon label buttons together within the same interface.
 
 ## Design specifications
