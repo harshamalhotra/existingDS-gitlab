@@ -1,3 +1,10 @@
+## [2.2.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.2.0...v2.2.1) (2021-02-16)
+
+
+### Bug Fixes
+
+* Update VPAT statement of compliance date and version ([81ccb7e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/81ccb7e6ee2099f33f21a1b2740df85ee51433e2))
+
 # [2.2.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.1.0...v2.2.0) (2021-02-16)
 
 
