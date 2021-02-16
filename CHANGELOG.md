@@ -1,3 +1,10 @@
+# [2.2.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.1.0...v2.2.0) (2021-02-16)
+
+
+### Features
+
+* add single stat component page and content ([90a33ac](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/90a33acc30d35bc02c81c0c37d2510421c69979b))
+
 # [2.1.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.0.0...v2.1.0) (2021-02-02)
 
 
