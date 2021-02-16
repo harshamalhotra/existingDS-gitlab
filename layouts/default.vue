@@ -1,6 +1,6 @@
 <script>
-import subMenu from '../components/sub_menu.vue';
 import menuSection from '../components/menu_section.vue';
+import subMenu from '../components/sub_menu.vue';
 import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
 
 const componentNameToLabelMap = {

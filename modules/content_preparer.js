@@ -1,5 +1,5 @@
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
 import fm from 'front-matter';
 
 export function getContentList(dirName) {
