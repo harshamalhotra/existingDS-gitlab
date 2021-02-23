@@ -1,3 +1,10 @@
+# [2.3.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.2.1...v2.3.0) (2021-02-23)
+
+
+### Features
+
+* **Alert:** Add sticky usage docs ([4e88fd7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4e88fd7fc51d9334bc970581496683f036de3a55))
+
 ## [2.2.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.2.0...v2.2.1) (2021-02-16)
 
 
