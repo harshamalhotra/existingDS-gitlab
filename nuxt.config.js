@@ -17,7 +17,7 @@ const cspPolicies = [
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
-  "child-src 'none' https://www.figma.com",
+  'child-src https://www.figma.com',
   "connect-src 'self' https://sentry.gitlab.net",
 ];
 
