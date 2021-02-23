@@ -20,7 +20,6 @@ Determining which alert variant to use can sometimes be tricky. See the purpose 
 
 | Variant | Purpose | Example |
 | ------ | ------ | ------ |
-| Error | Advise the user that their attention is needed to address or be aware of a critical issue in the system. | An error alert is present when the backend fails to load a long list of issue comments and the user must reload to try again. |
 | Danger | Advise the user that their attention is needed to address or be aware of a critical issue that relates to the current context. | A danger alert appears when there is a configuration issue with the **.gitlab-ci.yml** file. |
 | Warning | Caution the user that their attention or action may be needed within the current context, but it may not be critical. | A warning alert appears when the user has added an SSH key that doesn't appear to be public. |
 | Success | Reaffirm to the user that a prior action they have taken, often in a different location within the application, has been successful. | A success alert appears in the pipeline view after the user activates SAST using the Web IDE and the SAST job runs properly for the first time. |
@@ -41,18 +40,18 @@ There are times when using a component other than an alert is necessary to provi
 
 ### Placement
 
-#### Global error
+#### Global
 
-An error alert happens in a global context that impacts the entire experience and is placed directly below the navigation bar. For example, an alert that states “Your subscription has expired” after a user has authenticated. Only the error alert uses `position: sticky`, while other alert variants are contextual within a page and scroll with content.
+A global alert impacts the entire experience, is full-width, and is placed directly below the navigation bar. For example, after a user has authenticated an alert appears that states, “Your subscription has expired.”
 
-<figure class="figure" role="figure" aria-label="Full-width sticky error alert under the navigation">
-  <img class="figure-img" src="/img/alert-global.png" alt="Error alert position" role="img" style="width:100%; max-width:332px; height:auto" />
-  <figcaption class="figure-caption">Full-width sticky error alert under the navigation</figcaption>
+<figure class="figure" role="figure" aria-label="Full-width danger alert under the global navigation and above the contextual navigation">
+  <img class="figure-img" src="/img/alert-global.png" alt="Global alert position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">Full-width danger alert under the global navigation and above the contextual navigation</figcaption>
 </figure>
 
 #### Page-level
 
-Place an alert at the top of a page, directly below the navigation bar and above the breadcrumbs, when it refers to something that happened at the page level. For example, an alert that states “Something went wrong while fetching latest comments” on an issue page. Page-level alerts are restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
+A page-level alert appears at the top of a page, directly below the navigation bar and above the breadcrumbs. For example, an alert on an issue page might state, “Something went wrong while fetching latest comments.” Page-level alerts are restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
 
 <figure class="figure" role="figure" aria-label="Page-level alert in the main content area with space above and below">
   <img class="figure-img" src="/img/alert-page-level.png" alt="Page-level alert position" role="img" style="width:100%; max-width:332px; height:auto" />
@@ -67,6 +66,10 @@ Place an alert within a section of the page when the message is specific to that
   <img class="figure-img" src="/img/alert-in-page.png" alt="In-page alert position" role="img" style="width:100%; max-width:332px; height:auto" />
   <figcaption class="figure-caption">In-page alert contextually placed with space above and below</figcaption>
 </figure>
+
+#### Sticky positioning
+
+A "sticky" alert uses `position: sticky` to keep critical information in view as the page scrolls. It can be helpful when an alert is added without a page refresh and its position would otherwise be out of view. This typically is reserved for errors, as they need to be addressed by users. Only one sticky alert should be used at a time.
 
 ### Multiple alerts
 
@@ -126,6 +129,7 @@ All copy within an alert should be short, actionable, and use clear language. Be
 ### Accessibility
 
 - Alerts should receive focus and leverage `aria-live` to announce their presence and allow a user to interact with them immediately.
+- Ensure that if sticky positioning is used the user can still access and view focusable elements they may be covering.
 - Alerts are separate from, but complimentary to [validation](/components/form#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.
 <figure class="figure" role="figure" aria-label="An alert that links to form errors">
   <img class="figure-img" src="/img/alert-form-validation.png" alt="Alert with arrow pointing to an input with an error" role="img" style="width:100%; max-width:332px; height:auto" />
