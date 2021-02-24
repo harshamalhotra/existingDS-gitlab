@@ -1,3 +1,10 @@
+## [2.3.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.3.0...v2.3.1) (2021-02-24)
+
+
+### Bug Fixes
+
+* **csp:** remove invalid attribute from Content Security Policy ([e5e4d53](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e5e4d53116bace0afd199f254f3fb34c9c7c2adc))
+
 # [2.3.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.2.1...v2.3.0) (2021-02-23)
 
 
