@@ -1,7 +1,7 @@
 ---
 name: Infinite scroll
 docs: complete
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/infinite_scroll
+gitlab_ui: /components/infinite-scroll/code
 vueComponents:
   - GlInfiniteScroll
 related:

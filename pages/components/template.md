@@ -3,7 +3,7 @@ name: Component name
 figma: Link to figma component in Pajamas UI Kit
 docs: upcoming | in-progress | complete
 a11y: upcoming | in-progress | complete
-gitlab_ui: Link to base folder in GitLab UI respository - Must be complete and conform to design system
+gitlab_ui: Relative link to that component‘s /code tab. For example, /component/popover/code.
 vueComponents:
   - Related vue component name
 

@@ -2,7 +2,7 @@
 name: Checkbox
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242
 docs: complete
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/form/form_checkbox
+gitlab_ui: /components/checkbox/code
 vueComponents:
   - GlFormCheckbox
 related:

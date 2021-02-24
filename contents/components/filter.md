@@ -1,7 +1,7 @@
 ---
 name: Filter
 docs: in-progress
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/filtered_search
+gitlab_ui: /components/filter/code
 vueComponents:
   - GlFilteredSearch
 related:

@@ -1,7 +1,7 @@
 ---
 name: Token
 docs: complete
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/base/token
+gitlab_ui: /components/token/code
 vueComponents:
   - GlToken
 related:

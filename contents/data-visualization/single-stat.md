@@ -3,7 +3,7 @@ name: Single stat
 figma: https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=275%3A731
 docs: complete
 a11y: upcoming
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/tree/master/src/components/charts/single_stat
+gitlab_ui: /components/single-stat/code
 vueComponents:
   - GlSingleStat
 

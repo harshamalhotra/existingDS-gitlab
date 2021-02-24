@@ -1,7 +1,7 @@
 ---
 name: Card
 docs: in-progress
-gitlab_ui: https://gitlab.com/gitlab-org/gitlab-ui/-/blob/master/src/components/base/card
+gitlab_ui: /components/card/code
 vueComponents:
   - GlCard
 related:

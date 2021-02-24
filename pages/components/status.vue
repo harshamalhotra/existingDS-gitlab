@@ -97,11 +97,7 @@ export default {
               </td>
               <!-- GitLab UI -->
               <td class="app-styles">
-                <a
-                  v-if="component.gitlab_ui"
-                  :href="component.gitlab_ui"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a v-if="component.gitlab_ui" :href="component.gitlab_ui" rel="noopener noreferrer"
                   ><gl-badge :variant="getBadgeVariant('complete')">Complete</gl-badge></a
                 >
                 <div v-else>
