@@ -32,10 +32,7 @@ export default {
       permalink: true,
       permalinkBefore: true,
       permalinkSymbol: '#',
-      slugify: (s) => {
-        s = s.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '-');
-        return encodeURIComponent(s);
-      },
+      slugify: (s) => encodeURIComponent(s.toLowerCase().replace(/[^a-z0-9]+/g, '-')),
     });
     let mdOutput = md.render(this.md);
     mdOutput = mdOutput.replace(
