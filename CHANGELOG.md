@@ -1,3 +1,10 @@
+# [2.4.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.3.1...v2.4.0) (2021-02-25)
+
+
+### Features
+
+* Add documentation about using button labels ([3dcdc6e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3dcdc6e9bad9bf377bdcd4be32b499ad49f35c67))
+
 ## [2.3.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.3.0...v2.3.1) (2021-02-24)
 
 
