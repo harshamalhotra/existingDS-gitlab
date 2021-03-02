@@ -1,3 +1,10 @@
+# [2.5.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.4.0...v2.5.0) (2021-03-02)
+
+
+### Features
+
+* **Button:** Link to button Vue tab ([cbf9d91](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cbf9d91e5d367536c78b6709b29044d896efec62))
+
 # [2.4.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.3.1...v2.4.0) (2021-02-25)
 
 
