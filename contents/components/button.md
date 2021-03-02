@@ -2,6 +2,7 @@
 name: Button
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A7
 docs: in-progress
+gitlab_ui: /components/button/code
 vueComponents:
   - GlButton
   - GlButtonGroup
