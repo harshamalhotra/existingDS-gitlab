@@ -23,31 +23,6 @@ Icon elements are aligned to the pixel grid to avoid subpixel antialiasing and b
 | :---: | :---: |
 | <figure class="figure" role="figure" aria-label="Icon aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-do.svg" alt="Crisp icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon aligned to the pixel grid</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-dont.svg" alt="Blurry icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon not horizontally aligned to the pixel grid</figcaption></figure> |
 
-### 12 pixel grid
-
-The **12px** icon size is used for small, complimentary icons commonly used to indicate status where text or other context is available. Due to their small target size, these icons aren’t interactive unless paired with text or within a larger element. Icons that use a **12×12 pixel** base grid have a **10px** live area surrounded on all sides by **1px** for padding and optical sizing.
-
-<div class="row">
-  <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="12 pixel icon at 100%">
-      <img class="figure-img" src="/img/icons-12-100-scale.svg" alt="12px icon grid at 100% scale" role="img" />
-      <figcaption class="figure-caption">12 pixel icon at 100%</figcaption>
-    </figure>
-  </div>
-  <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="Grid 10×10 pixel live area">
-      <img class="figure-img" src="/img/icons-12-grid-layout.svg" alt="Icon live area" role="img" />
-      <figcaption class="figure-caption">Grid 10×10 pixel live area</figcaption>
-    </figure>
-  </div>
-  <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="1px icon padding">
-      <img class="figure-img" src="/img/icons-12-padding.svg" alt="Icon padding" role="img" />
-      <figcaption class="figure-caption">1px icon padding</figcaption>
-    </figure>
-  </div>
-</div>
-
 ### 16 pixel grid
 
 The **16px** icon size is the default, and most icons are created at this size. Icons that use a **16×16 pixel** base grid have a **14px** live area surrounded on all sides by **1px** for padding and optical sizing.
@@ -68,6 +43,31 @@ The **16px** icon size is the default, and most icons are created at this size. 
   <div class="col col-33">
     <figure class="figure" role="figure" aria-label="1px icon padding">
       <img class="figure-img" src="/img/icons-padding.svg" alt="Icon padding" role="img" />
+      <figcaption class="figure-caption">1px icon padding</figcaption>
+    </figure>
+  </div>
+</div>
+
+### 12 pixel grid
+
+The **12px** icon size is used for small, complimentary icons commonly used to indicate status where text or other context is available. Due to their small target size, these icons aren’t interactive unless paired with text or within a larger element. Icons that use a **12×12 pixel** base grid have a **10px** live area surrounded on all sides by **1px** for padding and optical sizing.
+
+<div class="row">
+  <div class="col col-33">
+    <figure class="figure" role="figure" aria-label="12 pixel icon at 100%">
+      <img class="figure-img" src="/img/icons-12-100-scale.svg" alt="12px icon grid at 100% scale" role="img" />
+      <figcaption class="figure-caption">12 pixel icon at 100%</figcaption>
+    </figure>
+  </div>
+  <div class="col col-33">
+    <figure class="figure" role="figure" aria-label="Grid 10×10 pixel live area">
+      <img class="figure-img" src="/img/icons-12-grid-layout.svg" alt="Icon live area" role="img" />
+      <figcaption class="figure-caption">Grid 10×10 pixel live area</figcaption>
+    </figure>
+  </div>
+  <div class="col col-33">
+    <figure class="figure" role="figure" aria-label="1px icon padding">
+      <img class="figure-img" src="/img/icons-12-padding.svg" alt="Icon padding" role="img" />
       <figcaption class="figure-caption">1px icon padding</figcaption>
     </figure>
   </div>
