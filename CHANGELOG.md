@@ -1,3 +1,10 @@
+# [2.6.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.5.0...v2.6.0) (2021-03-10)
+
+
+### Features
+
+* **Icons:** Update layout docs ([1597494](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/15974946d273b0c21dffd72b8120d78ad7712b46))
+
 # [2.5.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.4.0...v2.5.0) (2021-03-02)
 
 
