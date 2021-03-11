@@ -1,3 +1,10 @@
+## [2.6.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.0...v2.6.1) (2021-03-11)
+
+
+### Bug Fixes
+
+* **button:** Replace incorrect confirm button image with vue component ([1ab9432](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1ab9432c3acdd4ada64ac7984ac5118ba4305fad))
+
 # [2.6.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.5.0...v2.6.0) (2021-03-10)
 
 
