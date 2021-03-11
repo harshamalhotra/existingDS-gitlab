@@ -58,6 +58,21 @@ Sorting can be disabled to prevent users from changing the sorting order of a co
 
 The sorting icon and functionality should not be visible on responsive tables.
 
+To enable sorting for a particular table column, add `sortable` as a property in your `fields` data, like so:
+
+```
+fields: [
+    {
+      key: 'first_name',
+      label: 'First name',
+      sortable: true,
+    },
+    ...
+]
+```
+
+[[Example:table-sortable]]
+
 ### Pagination
 
 Tables displaying data sets with more than 20 items should use pagination. [See pagination guidelines](/components/pagination)
