@@ -22,7 +22,6 @@ For more information about the UX Design department, check out the following lin
 - [UX Handbook](https://about.gitlab.com/handbook/engineering/ux/)
 - [Pajamas Design System project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
 - [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit)
-- [GitLab Dribbble](https://dribbble.com/gitlab)
 
 ## GitLab SVG project
 
