@@ -1,3 +1,10 @@
+## [2.6.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.1...v2.6.2) (2021-03-16)
+
+
+### Bug Fixes
+
+* **icons:** Move default pixel grid to top ([c412530](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c412530f8bd0d01c629096069c9e482b949c9289))
+
 ## [2.6.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.0...v2.6.1) (2021-03-11)
 
 
