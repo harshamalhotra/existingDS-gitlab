@@ -1,3 +1,10 @@
+## [2.6.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.2...v2.6.3) (2021-03-17)
+
+
+### Bug Fixes
+
+* **resources:** Removes Dribbble as resource since it is deprecated ([8c347ba](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8c347ba9f58d8a9971701ee360cdad89a1e12205))
+
 ## [2.6.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.1...v2.6.2) (2021-03-16)
 
 
