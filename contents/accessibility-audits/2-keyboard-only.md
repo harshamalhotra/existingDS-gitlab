@@ -2,9 +2,9 @@
 name: Keyboard-only
 ---
 
-**Principle:** All function and content can be accessed by keyboard alone.
+**Principle:** All interactive elements can be accessed by keyboard alone.
 
-Using a keyboard is a fundamental aspect of accessibility. In fact, many other technologies and hardware emulate keyboard functionality. Users with a wide range of disabilities — or no disability at all — rely on a keyboard. When testing with a keyboard keep in mind that all function and content should be accessible. Sometimes this is the same content for all users, like a heading or a button, and other times it’s different, like alt text to describe an image or a transcript in place of watching a video.
+Using a keyboard is a fundamental aspect of accessibility. In fact, many other technologies and hardware emulate keyboard functionality. Users with a wide range of disabilities — or no disability at all — rely on a keyboard. When testing, keep in mind that all interactive elements should be accessible with the keyboard.
 
 **Sections**
 
@@ -17,14 +17,14 @@ Using a keyboard is a fundamental aspect of accessibility. In fact, many other t
 
 ## Keyboarding basics
 
-- Use the `Tab` key to navigate in a linear direction through focusable elements like links, forms, and buttons.
+- Use the `Tab` key to navigate in a linear direction through focusable elements like links, form controls, and buttons.
 - The `Enter` key (and sometimes `Spacebar`) selects an element.
-- Arrow keys are used to move within certain elements or element groups like a radio button group or set of tabs.
+- Arrow keys are used to move within certain elements, element groups, and widgets. For example, within form `select` elements, radio button groups, and a set of tabs.
 - For a more comprehensive list of actions, review this table of [common keyboard interactions](https://webaim.org/techniques/keyboard/#testing).
 
 ## Focus order
 
-The focus order is the sequence that a keyboard user tabs through focusable elements. In most cases the focus order and DOM order should be the same. Visually reordering elements with CSS, like floats, flexbox, or grid can be problematic for focus order, so ensure content makes sense both visually and linearly in the markup. To learn more about what elements should be focusable by default read this [Introduction to Focus](https://developers.google.com/web/fundamentals/accessibility/focus/).
+The focus order is the sequence that a keyboard user tabs through focusable elements. In most cases the focus order and DOM order should be the same. Visually reordering elements with CSS, such as with floats, flexbox, or grid, can be problematic for focus order, so ensure content makes sense both visually and linearly in the markup. To learn more about what elements should be focusable by default read this [Introduction to Focus](https://developers.google.com/web/fundamentals/accessibility/focus/).
 
 <figure class="figure" role="figure" aria-label="Example tab order moving through navigation">
   <img class="figure-img" src="/img/a11y-tab-order.png" alt="Example navigation with tab order overlays" role="img" style="width:100%; max-width:640px; height:auto" />
@@ -39,9 +39,16 @@ Some HTML elements, like form elements and buttons, receive focus by default bec
 
 ### Expected behavior
 
-- Only elements that receive focus by default, or those with a positive `tabindex` are focusable.
-- Focus order follows the DOM order, and in most cases matches the reading order.
-- When an interactive component is in an expanded state that reveals more focusable elements, the focus should move through those elements before moving on.
+- Only interactive elements are focusable, not static content.
+- Focus order follows the DOM order and reading order.
+- When a navigational menu is in an expanded state that reveals more links, the focus should move through those links before moving on.
+- For widgets such as assignee dropdowns:
+  - Its popup element appears either on focus, or when pressing `Enter`, `Space`, or `Down Arrow`.
+  - The arrow keys move focus within the widget.
+  - `Enter` accepts the selected value and optionally closes the popup. Focus remains on the widget.
+  - `Esc` closes the popup and focus remains on the widget.
+  - `Tab` leaves the widget and focus moves to the next interactive element or widget.
+    `Tab` should not move focus within a widget since widgets are treated as a single interactive element.
 - The focus order of a page should complete a loop and return back to the browser’s address bar.
 
 ### Identifying problems
