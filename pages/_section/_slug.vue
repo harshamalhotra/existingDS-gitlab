@@ -1,4 +1,6 @@
 <script>
+import { mapState } from 'vuex';
+
 export default {
   components: {
     ComponentInfo: () => (process.browser ? import('../../components/componentinfo.vue') : null),
@@ -6,10 +8,8 @@ export default {
   editThisPage: {
     resolve: ({ route }) => `contents${route.path.replace(/\/+$/, '')}.md`,
   },
-  asyncData({ route }) {
-    const { path } = route;
-    const mdFile = path.replace(new RegExp(`/${route?.params?.tab}/?`), '');
-    return import(`~/contents${mdFile}.md`).then(({ default: fmResult }) => ({ fmResult }));
+  computed: {
+    ...mapState(['frontmatter']),
   },
 };
 </script>
@@ -17,7 +17,7 @@ export default {
 <template>
   <div class="content limited m-t-7 m-b-8">
     <no-ssr>
-      <component-info :frontmatter-info="fmResult" />
+      <component-info :frontmatter-info="frontmatter" />
     </no-ssr>
   </div>
 </template>

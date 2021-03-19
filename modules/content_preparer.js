@@ -1,3 +1,4 @@
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import fm from 'front-matter';
@@ -18,6 +19,16 @@ export function getContentList(dirName) {
   const baseComponentsDir = path.resolve(__dirname, `../contents/${dirName}/`);
   const convertComponent = (componentFileName, componentFileContent) => {
     const content = fm(componentFileContent);
+    const filePath = path.resolve(baseComponentsDir, componentFileName);
+    try {
+      const gitLastUpdate = execSync(`git log -1 --pretty=format:%aI "${filePath}"`).toString();
+      content.lastUpdatedAt = gitLastUpdate;
+    } catch (error) {
+      /* eslint-disable no-console */
+      console.error(`Could not retrieve last update date for ${filePath}`);
+      console.error(error);
+      /* eslint-enable no-console */
+    }
     // We don't actually need the raw frontmatter, good to save some bytes
     delete content.frontmatter;
     fs.writeFileSync(

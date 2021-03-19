@@ -1,4 +1,6 @@
 <script>
+import moment from 'moment';
+import { mapState } from 'vuex';
 import menuSection from '../components/menu_section.vue';
 import subMenu from '../components/sub_menu.vue';
 import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
@@ -27,6 +29,14 @@ export default {
     };
   },
   computed: {
+    ...mapState(['frontmatter']),
+    lastUpdatedAt() {
+      const { lastUpdatedAt } = this.frontmatter;
+      if (!lastUpdatedAt) {
+        return null;
+      }
+      return moment(lastUpdatedAt).format('LLLL');
+    },
     contentWrapper() {
       return this.$route.fullPath === '/' ? '' : 'content main';
     },
@@ -219,6 +229,9 @@ export default {
         </template>
         <nuxt-link to="/contribute/get-started">Please contribute</nuxt-link>
       </footer>
+      <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
+        Last updated at: <time :datetime="frontmatter.lastUpdatedAt">{{ lastUpdatedAt }}</time>
+      </p>
     </div>
   </div>
 </template>
