@@ -70,7 +70,7 @@ determine when and how a component should be added to Pajamas. Additionally, [se
 
 Next are the **build** and **style** stages. This occurs
 in the [gitLab-ui project](https://gitlab.com/gitlab-org/gitlab-ui) and follows
-the [**build** and **style** diagram](https://gitlab.com/gitlab-org/gitlab-ui/blob/master/doc/component-lifecycle.md).
+the [**build** and **style** diagram](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/doc/component-lifecycle.md).
 
 ## Completing a component
 
