@@ -1,3 +1,10 @@
+# [2.7.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.3...v2.7.0) (2021-03-25)
+
+
+### Features
+
+* **GlPopover:** Update popover docs to specify hover focus ([9a6feaf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9a6feafb4978bfdb5efb9907409e1013c1bb65aa))
+
 ## [2.6.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.2...v2.6.3) (2021-03-17)
 
 
