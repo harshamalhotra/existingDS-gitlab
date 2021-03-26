@@ -1,3 +1,10 @@
+# [2.9.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.8.0...v2.9.0) (2021-03-26)
+
+
+### Features
+
+* **accessibility:** Add accessibility checklist items to best practices ([a70d9ec](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a70d9ecd255cbef3106f3d94a51298b68cc3d1bf))
+
 # [2.8.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.7.0...v2.8.0) (2021-03-26)
 
 
