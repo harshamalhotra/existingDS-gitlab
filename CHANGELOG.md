@@ -1,3 +1,10 @@
+# [2.8.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.7.0...v2.8.0) (2021-03-26)
+
+
+### Features
+
+* **Glbanner:** Add temp dismissal guidelines ([a4dae84](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a4dae843673245e7ac538bda74192fbf3881fc42))
+
 # [2.7.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.6.3...v2.7.0) (2021-03-25)
 
 
