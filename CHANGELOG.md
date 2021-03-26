@@ -1,3 +1,10 @@
+# [2.10.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.9.0...v2.10.0) (2021-03-26)
+
+
+### Features
+
+* **accessibility:** Update keyboard only page ([b226080](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b226080a4f2fcd989a02a633cb3dd7d595142727))
+
 # [2.9.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.8.0...v2.9.0) (2021-03-26)
 
 
