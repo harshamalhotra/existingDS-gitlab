@@ -1,3 +1,10 @@
+## [2.10.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.10.0...v2.10.1) (2021-03-26)
+
+
+### Bug Fixes
+
+* **accessibility:** Use relative links for best practice checklist ([079fbf5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/079fbf5eefd49c2f651f94aed5955ba23b52e22e))
+
 # [2.10.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.9.0...v2.10.0) (2021-03-26)
 
 
