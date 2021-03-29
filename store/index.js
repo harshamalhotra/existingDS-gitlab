@@ -1,18 +1,18 @@
-const defaultFrontmatter = Object.freeze({
+const getDefaultFrontmatter = () => ({
   attributes: {},
   body: '',
   lastUpdatedAt: '',
 });
 
 export const state = () => ({
-  frontmatter: defaultFrontmatter,
+  frontmatter: getDefaultFrontmatter(),
 });
 
 export const mutations = {
-  resetFrontmatter(s) {
-    s.frontmatter = defaultFrontmatter;
+  resetFrontmatter(currentState) {
+    currentState.frontmatter = getDefaultFrontmatter();
   },
-  setFrontmatter(s, frontmatter) {
-    s.frontmatter = frontmatter;
+  setFrontmatter(currentState, frontmatter) {
+    currentState.frontmatter = frontmatter;
   },
 };

@@ -1,5 +1,4 @@
 <script>
-import moment from 'moment';
 import { mapState } from 'vuex';
 import menuSection from '../components/menu_section.vue';
 import subMenu from '../components/sub_menu.vue';
@@ -35,7 +34,14 @@ export default {
       if (!lastUpdatedAt) {
         return null;
       }
-      return moment(lastUpdatedAt).format('LLLL');
+      return new Date(lastUpdatedAt).toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+      });
     },
     contentWrapper() {
       return this.$route.fullPath === '/' ? '' : 'content main';
@@ -204,34 +210,38 @@ export default {
     </nav>
     <div :class="contentWrapper">
       <nuxt />
-      <footer class="content footer limited m-b-7 row justify-content-center">
-        <edit-this-page-link>Edit this page</edit-this-page-link>
-        <span class="footer-link-divider"></span>
-        <edit-this-page-link
-          edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/master/-"
-        >
-          Open Web IDE
-        </edit-this-page-link>
-        <span class="footer-link-divider"></span>
-        <template v-if="componentLabel">
-          <a
-            :href="`${$options.gitlabOrgBaseUrl}issues?label_name%5B%5D=component%3A${componentLabel}`"
-          >
-            Related issues
-          </a>
+      <footer class="content footer limited m-b-7">
+        <div class="row justify-content-center">
+          <edit-this-page-link>Edit this page</edit-this-page-link>
           <span class="footer-link-divider"></span>
-          <a
-            :href="`${$options.gitlabOrgBaseUrl}merge_requests?label_name%5B%5D=component%3A${componentLabel}`"
+          <edit-this-page-link
+            edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/master/-"
           >
-            Related merge requests
-          </a>
+            Open Web IDE
+          </edit-this-page-link>
           <span class="footer-link-divider"></span>
-        </template>
-        <nuxt-link to="/contribute/get-started">Please contribute</nuxt-link>
+          <template v-if="componentLabel">
+            <a
+              :href="`${$options.gitlabOrgBaseUrl}issues?label_name%5B%5D=component%3A${componentLabel}`"
+            >
+              Related issues
+            </a>
+            <span class="footer-link-divider"></span>
+            <a
+              :href="`${$options.gitlabOrgBaseUrl}merge_requests?label_name%5B%5D=component%3A${componentLabel}`"
+            >
+              Related merge requests
+            </a>
+            <span class="footer-link-divider"></span>
+          </template>
+          <nuxt-link to="/contribute/get-started">Please contribute</nuxt-link>
+        </div>
+        <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
+          Last updated at:&nbsp;<time :datetime="frontmatter.lastUpdatedAt">{{
+            lastUpdatedAt
+          }}</time>
+        </p>
       </footer>
-      <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
-        Last updated at: <time :datetime="frontmatter.lastUpdatedAt">{{ lastUpdatedAt }}</time>
-      </p>
     </div>
   </div>
 </template>
