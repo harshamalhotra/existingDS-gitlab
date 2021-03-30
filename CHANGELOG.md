@@ -1,3 +1,10 @@
+# [2.12.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.11.0...v2.12.0) (2021-03-30)
+
+
+### Features
+
+* **DataViz:** Clarify system status colors in Pajamas ([ce1fdca](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ce1fdcaf202639c125138f2cac43eb87906ac161))
+
 # [2.11.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.10.1...v2.11.0) (2021-03-30)
 
 
