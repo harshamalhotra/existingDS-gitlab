@@ -498,6 +498,13 @@ Todo: Include example of chart with divergent data
 
 **Potential applications:** butterfly charts, choropleth maps, sparklines, etc.
 
+### Data associated with system status
+
+Colors are often associated with system status in data visualizations (for example, green for success and red for failure). However, because using green and red together can be problematic for some color blindness conditions, try to utilize the recommended palette as a first pass.
+If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types. 
+
+Todo: Include example of recommended color combinations
+
 ## Accessibility
 
 At GitLab, we are dedicated to continually improving the accessibility of the application. Color is no exception. Every step of every hue in the data visualization palette has been evaluated to satisfy a 3:1 contrast ratio against a light or dark surface.
