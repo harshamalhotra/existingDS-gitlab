@@ -8,7 +8,7 @@ Data visualization is critical content within GitLab. The presentation and inter
 
 The data visualization palette is designed specifically for conveying different types of data. The meaning is derived from the data itself, not by color as a first measure. The palette is versatile enough to be applied in a number of [data types](#data-types) in both light and dark UI.
 
-View the [Color](/product-foundations/colors) section of Foundations for details about the UI, neutral, and theme palettes.
+View the [Foundations > Color](/product-foundations/colors) section for details about the UI, neutral, and theme palettes.
 
 ### Hues, steps, and variables
 
