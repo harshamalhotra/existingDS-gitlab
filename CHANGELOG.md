@@ -1,3 +1,10 @@
+# [2.11.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.10.1...v2.11.0) (2021-03-30)
+
+
+### Features
+
+* **GlButton:** Add guidelines around not grouping danger buttons ([a4992f2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a4992f21a5549dbf5734e6e378eee280ce3b8d1d))
+
 ## [2.10.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.10.0...v2.10.1) (2021-03-26)
 
 
