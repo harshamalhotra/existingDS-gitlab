@@ -1,3 +1,10 @@
+# [2.13.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.12.0...v2.13.0) (2021-03-31)
+
+
+### Features
+
+* **Color:** Better color palette cross-links ([07e5269](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/07e52690106782d49d87908f1bc759ef0c37726e))
+
 # [2.12.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.11.0...v2.12.0) (2021-03-30)
 
 
