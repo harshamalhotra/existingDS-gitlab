@@ -1,3 +1,10 @@
+# [2.15.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.14.0...v2.15.0) (2021-04-01)
+
+
+### Features
+
+* **table:** Update column sorting icons ([b2bc7f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2bc7f53896ce9aa42051dddd3d42237bc39e968))
+
 # [2.14.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.13.0...v2.14.0) (2021-04-01)
 
 
