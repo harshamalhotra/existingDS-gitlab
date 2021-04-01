@@ -1,3 +1,10 @@
+# [2.14.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.13.0...v2.14.0) (2021-04-01)
+
+
+### Features
+
+* **GlBanner:** Separate content sections for banner dismissal options ([34e6d44](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/34e6d44a5a000b68c8ed7277406ad19dd6ec8ab9))
+
 # [2.13.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.12.0...v2.13.0) (2021-03-31)
 
 
