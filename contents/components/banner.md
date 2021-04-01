@@ -7,6 +7,7 @@ vueComponents:
 related:
   - alert
   - broadcast-message
+  - button
   - empty-states
 ---
 
@@ -46,7 +47,11 @@ Do not use banners to:
 
 Banners appear within containers in the page or section. This is important for dismissible elements as it gives the banner a temporal visual affordance, indicating to users that this component is not permanent.
 
-#### Dismiss action
+#### Dismiss
+
+Users are able to permanently dismiss banners by default. Banners may also be dismissed temporarily, depending on the use case.
+
+##### Permanent dismissal
 
 The dismiss action is always represented by the `Close` icon and anchored to the top right of the banner.
 
@@ -58,11 +63,14 @@ Banner dismissal should work as follows:
 **Implementation Notes:**
 * The dismissal of the banner is achieved using the `UserCallout` model on the backend and the `PersistentUserCallout` JS file on the frontend. If both parameters are implemented correctly, the banner will adhere to the dismissal guidelines above.
 
-You may also introduce the option to temporarily dismiss the banner by including a secondary or tertiary button placed alongside the primary action button, following the [button](https://design.gitlab.com/components/button#alignment-and-order) guidelines.
+##### Temporary dismissal
+To introduce temporary dismissal, include a secondary or tertiary button placed alongside the primary action button. Follow the [button](/components/button#alignment-and-order) alignment and order guidelines.
 
 Temporary dismissals should work as follows: 
 * Banners dismissed temporarily will reappear after **7 days**.
 * After a banner is dismissed temporarily, use a [toast](/components/toast) message to let the user know they will see the banner again in 7 days.
+
+TODO: Include implementation notes, see [#839](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/839)
 
 #### Header
 
