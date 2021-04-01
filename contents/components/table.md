@@ -50,7 +50,7 @@ Any filtering controls that manipulate the data set should be placed directly ab
 
 Sorting is designed as a native functionality of tables. Tables use column sorting rather than [list sorting](/components/sorting).
 
-The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [chevron down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) and [chevron up](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-up) icons.
+The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [arrow down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=arrow-down) and [arrow up](https://gitlab-org.gitlab.io/gitlab-svgs/?q=arrow-up) icons.
 
 Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order.
 
@@ -71,7 +71,7 @@ fields: [
 ]
 ```
 
-[[Example:table-sortable]]
+Todo: Add column sorting example
 
 ### Pagination
 
