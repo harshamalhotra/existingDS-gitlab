@@ -1,3 +1,10 @@
+## [2.15.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.0...v2.15.1) (2021-04-05)
+
+
+### Bug Fixes
+
+* Highlight cross-link text as note ([38878cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/38878cda0cabb1f7a3c9f5d7102440a91016bee3))
+
 # [2.15.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.14.0...v2.15.0) (2021-04-01)
 
 
