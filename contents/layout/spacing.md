@@ -58,7 +58,7 @@ Todo: Add example of 32px spacing
 
 ## GitLab UI spacing variable conversion
 
-The table below is a reference to assist with mapping the spacing rules to [gitlab-ui variables](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/master/src/scss/variables.scss).
+The table below is a reference to assist with mapping the spacing rules to [gitlab-ui variables](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/src/scss/variables.scss).
 
 The table is based on the configuration of `1rem = 16px` and `$grid-size = 8px`.
 
