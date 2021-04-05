@@ -1,3 +1,10 @@
+## [2.15.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.1...v2.15.2) (2021-04-05)
+
+
+### Bug Fixes
+
+* **Spacing:** fix link to gitlab-ui variables ([dbb3411](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dbb3411b381f78f3c6d9a70df9e7a600ec5bf7fe))
+
 ## [2.15.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.0...v2.15.1) (2021-04-05)
 
 
