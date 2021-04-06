@@ -109,7 +109,7 @@ export default {
         </div>
         <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles" lazy>
           <gl-tab title="Design" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
-            <md-display :md="componentBody" />
+            <md-display :prerendered-md="componentBody" />
             <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
           </gl-tab>
           <gl-tab
@@ -165,7 +165,7 @@ export default {
       </div>
       <div v-else class="md typography">
         <h1>{{ componentAttributes.name }}</h1>
-        <md-display :md="componentBody" />
+        <md-display :prerendered-md="componentBody" />
         <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
       </div>
     </div>
