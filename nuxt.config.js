@@ -169,7 +169,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    extend(config) {
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
       config.resolve.alias['bootstrap-vue/src/index'] = 'bootstrap-vue/src/index.scss';
 
@@ -215,16 +215,6 @@ module.exports = {
         include: /node-modules/,
         loader: 'css-loader',
       });
-
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        });
-      }
     },
 
     transpile: [
