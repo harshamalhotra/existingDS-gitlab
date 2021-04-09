@@ -1,3 +1,10 @@
+# [2.16.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.2...v2.16.0) (2021-04-09)
+
+
+### Features
+
+* **UserHelp:** Clarify usage of help icon ([27c623a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/27c623a3a2553fa966acf45c240ab8e8c80cd304))
+
 ## [2.15.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.1...v2.15.2) (2021-04-05)
 
 
