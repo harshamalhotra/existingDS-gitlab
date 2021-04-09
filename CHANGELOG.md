@@ -1,3 +1,10 @@
+# [2.17.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.16.0...v2.17.0) (2021-04-09)
+
+
+### Features
+
+* **GlTooltip:** Add docs around default delay ([6808b1d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6808b1d32cc3f84c10a434cb0c269b0ba6ebc972))
+
 # [2.16.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.15.2...v2.16.0) (2021-04-09)
 
 
