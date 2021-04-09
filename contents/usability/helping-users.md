@@ -22,7 +22,11 @@ If a question doesn't make sense, use the sentence, "Learn more." Do not use "Mo
 
 - **Example:** User cohorts show how active users are in the last 12 months. [Learn more.](#)
 
-If no room is available for text, use the [question svg](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) (`#1068bf`) to link to the Help content. Use a tooltip to indicate the primary question answered by the help content.
+If no room is available for text, then use an icon.
+
+| Do | Don't |
+| - | - |
+| <div class="app-styles"><gl-icon name="question-o" class="gl-text-blue-600" /></div>Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon in `$blue-600` (`#1078bf`) | <div class="app-styles"><gl-icon name="question" /></div>Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) or a color other than blue |
 
 Todo: Add live component block with code example
 
