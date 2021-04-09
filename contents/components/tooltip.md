@@ -11,12 +11,27 @@ related:
 
 Tooltips identify elements or provide additional, useful information about the referring elements. Tooltips are different from ALT-attributes, which are intended primarily for static images.
 
-Tooltips fade in upon hover or touch of its trigger element. They fade out upon interacting with an area or element outside of the tooltip or its trigger, or on a delay of the cursor moving outside the tooltip or its trigger element.
+A tooltip fades in upon hover or focus on the trigger element. It remains open until the cursor moves outside of itself or the trigger, or focus is moved away from the trigger.
 
 ## Usage
 
-
 Tooltips display unique data, and shouldn’t repeat information that is shown near the referring element. Information provided in a tooltip should be short and concise. The text will wrap when the content is wider than the max-width.
+
+A tooltip has a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
+
+- A user doesn’t accidentally hover an element with a tooltip, which might cover an adjacent element they intended to select.
+- The UI isn't constantly showing tooltips when a user is moving their mouse over the page.
+
+Overriding the `show` delay for a tooltip is strongly discouraged for the reasons above, but there are useful circumstances for a tooltip to appear instantly. For example, pipeline icons that are visually the same, but have unique tooltip text that a user relies on to determine the pipeline status. Here, a delay would make it cumbersome to decipher the pipeline while hovering from one icon to the next. To shorten the delay in these cases, utilize `ds###` in the tooltip directive, where `###` is the milliseconds of delay. 
+
+Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
+
+```
+<gl-button 
+  v-gl-tooltip.ds0
+  ...
+/>
+```
 
 ### When to use tooltips
 
