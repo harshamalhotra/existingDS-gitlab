@@ -58,6 +58,9 @@
     "vue": "2.6.12"
   },
   "release": {
+    "branches": [
+      "main"
+    ],
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/git",

@@ -146,12 +146,10 @@ danger-review:
   image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
   stage: pre-build
   dependencies: []
-  only:
-    variables:
-      - $DANGER_GITLAB_API_TOKEN
-  except:
-    refs:
-      - master
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
+    - if: '$DANGER_GITLAB_API_TOKEN'
   script:
     - danger --fail-on-errors=true
 
@@ -176,3 +174,6 @@ semantic-release:
   allow_failure: true
   script:
     - semantic-release --debug
+  only:
+    refs:
+      - main
