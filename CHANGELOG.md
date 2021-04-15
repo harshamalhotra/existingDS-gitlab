@@ -1,3 +1,10 @@
+## [2.17.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.17.0...v2.17.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **Table:** Updated Sketch measure link to new Figma component ([f336b3c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f336b3c8fb29d4d589d4e58d1ec68a19a084407c))
+
 # [2.17.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.16.0...v2.17.0) (2021-04-09)
 
 
