@@ -55,13 +55,13 @@ Make sure the following are completed before closing the issue:
 
 /label ~"UX" ~"Figma"
 
-[annotation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/pajamas-ui-kit.md#adding-descriptions-notes-and-annotations
-[building]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/pajamas-ui-kit.md#building-components
+[annotation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#adding-descriptions-notes-and-annotations
+[building]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#building-components
 [foundations-team]: https://about.gitlab.com/company/team/?department=fe-ux-foundations-team
 [figma-maintainer]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
-[publishing]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/pajamas-ui-kit.md#publishing-changes
-[structure]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/pajamas-ui-kit.md#structure
-[component-guideline-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/.gitlab/merge_request_templates/component-guideline.md
+[publishing]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#publishing-changes
+[structure]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#structure
+[component-guideline-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/.gitlab/merge_request_templates/component-guideline.md
 [component-archive]: https://www.figma.com/files/project/5472112/Component-archive
 [misc-archive]: https://www.figma.com/files/project/10620392/Misc-archive
 [new-gitlab-ui-issue]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new

@@ -26,14 +26,14 @@
 
 /label ~"Pajamas"
 
-[commits]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/commits.md
+[commits]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md
 [transparency]: https://about.gitlab.com/handbook/values/#say-why-not-just-what
 [writing-documentation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com#writing-component-documentation
-[page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/pages/components/template.md
+[page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md
 [voice-and-tone]: https://design.gitlab.com/content/voice-tone
 [style-guide]: https://docs.gitlab.com/ee/development/documentation/styleguide.html#language
-[related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/pages/components/template.md#L12
+[related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md#L12
 [design-reviewer]: https://about.gitlab.com/handbook/engineering/ux/pajamas-design-system/design-review/#reviewer
 [pajamas-assignments]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
 [figma-embed]: https://www.figma.com/developers/embed
-[figma-embed-guide]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/master/doc/figma-embed.md
+[figma-embed-guide]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/figma-embed.md

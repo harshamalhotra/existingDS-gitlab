@@ -212,10 +212,14 @@ export default {
       <nuxt />
       <footer class="content footer limited m-b-7">
         <div class="row justify-content-center">
-          <edit-this-page-link>Edit this page</edit-this-page-link>
+          <edit-this-page-link
+            edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/"
+          >
+            Edit this page
+          </edit-this-page-link>
           <span class="footer-link-divider"></span>
           <edit-this-page-link
-            edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/master/-"
+            edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/main/-"
           >
             Open Web IDE
           </edit-this-page-link>

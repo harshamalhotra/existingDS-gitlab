@@ -29,7 +29,7 @@ Use the term members when discussing the people who are a part of a project or a
 
 #### Roles
 
-Users have different abilities depending on the access level they have in a particular group or project. These permission levels are defined under a set of roles. These roles include administrator, owner, master, developer, reporter, and guest.
+Users have different abilities depending on the access level they have in a particular group or project. These permission levels are defined under a set of roles. These roles include administrator, owner, maintainer, developer, reporter, and guest.
 
 ### Comments & Discussions
 
