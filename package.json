@@ -34,7 +34,7 @@
     "front-matter": "^3.0.0",
     "frontmatter-markdown-loader": "^1.4.0",
     "markdown-it": "^8.4.2",
-    "nuxt": "^2.14.6",
+    "nuxt": "2.15.4",
     "pikaday": "1.8.0"
   },
   "devDependencies": {
