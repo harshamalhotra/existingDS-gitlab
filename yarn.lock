@@ -919,10 +919,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@1.189.0":
-  version "1.189.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.189.0.tgz#1ba972bfbcf46e52321c50fd57d00315535c3d1b"
-  integrity sha512-64QcwA0E1aR9cK6PepGiH494de7oIrXRydaWWS0RH2OtSnd0OfzfcZtZI6V0yLpJRgE3uZZ3sK95kFu+vFXH9g==
+"@gitlab/svgs@1.191.0":
+  version "1.191.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.191.0.tgz#87d4eed7adfa0004a13736eb1c667ef4d3fe2a5c"
+  integrity sha512-xYMBPB687zQmKXTj0KRWYJNQeYwKAVv1aCyB2FwfycNKW6bPFizNnSE7xC3Cgj8TKk624I4aPEZBO+fuGPaAFw==
 
 "@gitlab/ui@29.7.3":
   version "29.7.3"
