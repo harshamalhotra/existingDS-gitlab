@@ -5,7 +5,7 @@ docs: complete
 vueComponents:
   - GlLoadingIcon
 related:
-  - buttons
+  - button
   - form
   - search
   - skeleton-loader

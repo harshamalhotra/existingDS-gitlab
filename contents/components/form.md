@@ -7,7 +7,7 @@ vueComponents:
   - GlFormInput
   - GlFormTextarea
 related:
-  - buttons
+  - button
   - dropdown
   - date-picker
 ---

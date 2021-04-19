@@ -7,7 +7,7 @@ vueComponents:
   - GlSearchBoxByClick
   - GlSearchBoxByType
 related:
-  - buttons
+  - button
   - filter
   - form
   - sorting

@@ -5,7 +5,7 @@ docs: complete
 vueComponents:
   - GlSegmentedControl
 related:
-  - buttons
+  - button
   - checkbox
   - dropdown
   - radio-button
