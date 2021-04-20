@@ -24,4 +24,19 @@ const toggleActiveNavItem = (state, navItem) => {
   }
 };
 
-export default { resetFrontmatter, setFrontmatter, setActiveNavItem, toggleActiveNavItem };
+export const toggleSidebar = (state) => {
+  state.sidebarOpen = !state.sidebarOpen;
+};
+
+export const closeSidebar = (state) => {
+  state.sidebarOpen = false;
+};
+
+export default {
+  resetFrontmatter,
+  setFrontmatter,
+  setActiveNavItem,
+  toggleActiveNavItem,
+  toggleSidebar,
+  closeSidebar,
+};

@@ -22,13 +22,8 @@ export default {
     MenuItem,
     Search,
   },
-  data() {
-    return {
-      open: false,
-    };
-  },
   computed: {
-    ...mapState(['frontmatter']),
+    ...mapState(['frontmatter', 'sidebarOpen']),
     lastUpdatedAt() {
       const { lastUpdatedAt } = this.frontmatter;
       if (!lastUpdatedAt) {
@@ -70,15 +65,20 @@ export default {
     this.setActiveNavItem(this.$route.fullPath);
   },
   methods: {
-    ...mapMutations(['setActiveNavItem']),
+    ...mapMutations(['setActiveNavItem', 'toggleSidebar', 'closeSidebar']),
   },
 };
 </script>
 
 <template>
   <div class="page">
-    <div v-if="open" class="nav-sidebar__overlay" @click="open = false"></div>
-    <button type="button" class="nav-sidebar__toggle" :aria-expanded="open" @click="open = !open">
+    <div v-if="sidebarOpen" class="nav-sidebar__overlay" @click="closeSidebar"></div>
+    <button
+      type="button"
+      class="nav-sidebar__toggle"
+      :aria-expanded="sidebarOpen"
+      @click="toggleSidebar"
+    >
       <svg
         width="32"
         height="32"
@@ -92,7 +92,7 @@ export default {
         />
       </svg>
     </button>
-    <nav :class="{ 'nav-sidebar--open': open }" class="nav-sidebar">
+    <nav :class="{ 'nav-sidebar--open': sidebarOpen }" class="nav-sidebar">
       <div class="nav-sidebar__header">
         <nuxt-link to="/" class="nav-sidebar__header-anchor p-a-5">
           <svg
