@@ -1,3 +1,10 @@
+# [2.18.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.17.1...v2.18.0) (2021-04-20)
+
+
+### Features
+
+* render markdown at build time ([5e78c04](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5e78c04240faef196765bbe50c19f379132f5f3f))
+
 ## [2.17.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.17.0...v2.17.1) (2021-04-15)
 
 
