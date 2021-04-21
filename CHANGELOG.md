@@ -1,3 +1,10 @@
+## [2.18.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.0...v2.18.1) (2021-04-21)
+
+
+### Bug Fixes
+
+* update broken links to button component ([acf8a3f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/acf8a3f76b7f4dcee00ddf79ce7265e04d9b53a5))
+
 # [2.18.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.17.1...v2.18.0) (2021-04-20)
 
 
