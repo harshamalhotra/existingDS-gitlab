@@ -15,9 +15,10 @@
     "eslint:fix": "yarn run eslint --fix",
     "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
+    "markdown-lint": "bash ./scripts/markdown_lint.sh",
     "test": "bash ./scripts/test.sh",
     "lint:fix": "yarn run eslint:fix && yarn run prettier-all-save",
-    "precommit": "npm run test"
+    "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi"
   },
   "engines": {
     "yarn": "^1.10.0"
@@ -38,6 +39,7 @@
     "pikaday": "1.8.0"
   },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
     "@gitlab/eslint-plugin": "8.1.0",
     "clean-css": "^4.2.1",
     "eslint": "7.21.0",

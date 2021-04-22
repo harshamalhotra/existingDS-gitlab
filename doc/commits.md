@@ -150,3 +150,22 @@ f 51fa598 Commit 5
 ```
 
 After saving this, Git will automatically open editors for you to rewrite the commits marked with `r`.
+
+## I'm seeing error upon committing changes
+
+We're using [lefthook] to run a few lint tasks when changes are committed. This is to reduce the
+likelihood of badly formatted code landing on the remote and triggering timely and costly
+pipelines that would fail anyways.
+
+If your commit command is erroring out, you likely need to fix some formatting issues manually.
+Inspect the command's output to find out what needs fixing, apply and stage the required changes,
+then try committing again.
+
+If you'd like to bypass the verification step when committing, you can do so by setting the
+`LEFTHOOK` env variable to `0` when running the `git` command. For example:
+
+```sh
+LEFTHOOK=0 git commit -m "chore: reticulate splines"
+```
+
+[lefthook]: https://www.npmjs.com/package/@arkweid/lefthook
