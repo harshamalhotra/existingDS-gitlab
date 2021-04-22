@@ -924,14 +924,14 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.191.0.tgz#87d4eed7adfa0004a13736eb1c667ef4d3fe2a5c"
   integrity sha512-xYMBPB687zQmKXTj0KRWYJNQeYwKAVv1aCyB2FwfycNKW6bPFizNnSE7xC3Cgj8TKk624I4aPEZBO+fuGPaAFw==
 
-"@gitlab/ui@29.8.0":
-  version "29.8.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-29.8.0.tgz#f37eb971d2ba8c1091efcff2fceb73ff0f18bd11"
-  integrity sha512-kN2o2UntJUormSh152HQkNKyZSSdCO1jiDtM5pxMhOwIKjHTVPNAqmvLmcY8AEoCT8ovE2TrrSM0F60GFRjDlw==
+"@gitlab/ui@29.8.1":
+  version "29.8.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-29.8.1.tgz#9bac442e0579e7eb5610a3e08c481bb272514559"
+  integrity sha512-Pn1n4K2MR42YoQI+8i9Hs5ljtb2TQWhx1ectEsft/xMLS8TTm8okM553sM9Z7kf1coizFKILQOmz+E5RwcnOsQ==
   dependencies:
     "@babel/standalone" "^7.0.0"
     "@gitlab/vue-toasted" "^1.3.0"
-    bootstrap-vue "2.14.0"
+    bootstrap-vue "2.15.0"
     copy-to-clipboard "^3.0.8"
     dompurify "^2.2.7"
     echarts "^4.9.0"
@@ -2203,21 +2203,21 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-vue@2.14.0, bootstrap-vue@^2.0.0-beta:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.14.0.tgz#de88b607627431980b707e6f069f13ef8cc897bd"
-  integrity sha512-sqbS7iHYCZEj/dDx4Yaze99HcX6bZjO4bSWZ0xSgJwtWQlbfB2VDJ9Qjzjp9XI8TT32wYNGAMpnXpYjQvv5qyQ==
+bootstrap-vue@2.15.0, bootstrap-vue@^2.0.0-beta:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.15.0.tgz#0dfc12c054496c0f10efed510da1def41697cf3c"
+  integrity sha512-ncxWkDG0mKFVot314wWKJELi+ESO7k6ngV//qvJFs9iVzlFI8Hx3rBVbpcPW2vrJ+0vitH8N2SOwn4fdQ3frMQ==
   dependencies:
     "@nuxt/opencollective" "^0.3.0"
-    bootstrap ">=4.4.1 <5.0.0"
+    bootstrap ">=4.5.0 <5.0.0"
     popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
 
-"bootstrap@>=4.4.1 <5.0.0", bootstrap@^4.1.3:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.0.tgz#97d9dbcb5a8972f8722c9962483543b907d9b9ec"
-  integrity sha512-Z93QoXvodoVslA+PWNdk23Hze4RBYIkpb5h8I2HY2Tu2h7A0LpAgLcyrhrSUyo2/Oxm2l1fRZPs1e5hnxnliXA==
+"bootstrap@>=4.5.0 <5.0.0", bootstrap@^4.1.3:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
+  integrity sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
 
 boxen@^1.2.1:
   version "1.3.0"
