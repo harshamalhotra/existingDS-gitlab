@@ -17,12 +17,12 @@ A breadcrumb should appear on every page of the application, except for the regi
 
 ### Dos and Dont's
 
-|Do|Don't|
-|--- |--- |
-|Ignore the instance name in the breadcrumb line.|Include the instance name in the breadcrumb line.|
-|Keep breadcrumbs to one line by default.|Break breadcrumbs up onto separate lines.|
-|Use an ellipsis button to hide multiple subgroups when there are more than three.|Show more than three subgroups by default.|
-|Use chevrons between breadcrumb items.|Use slashes or other characters to separate breadcrumb items.|
+| Do                                                      | Don't                                                                |
+| ------------------------------------------------------- | -------------------------------------------------------------------- |
+| Ignore the GitLab instance name in the breadcrumb line. | Include the GitLab instance name in the breadcrumb line.             |
+| Keep breadcrumbs to one line by default.                | Break breadcrumbs up onto separate lines.                            |
+| Use an ellipsis button to hide multiple subgroups when there are more than three. | Show more than three subgroups by default. |
+| Use chevrons between breadcrumb items.                  | Use slashes or other characters to separate breadcrumb items.        |
 
 ### Individual pages
 
@@ -49,26 +49,26 @@ The breadcrumb should use the following rules to truncate items:
 
 Certain pages have special breadcrumb paths to make the breadcrumb labels intuitive. These are defined as follows:
 
-|Path|Title in breadcrumb|
-|--- |--- |
-|Group > Issues > List|Group > Issues|
-|Group > Issues > Boards|Group > Issue Boards|
-|Group > Settings > General|Group > General Settings|
-|Group > Settings > CI / CD|Group > CI / CD Settings|
-|Group > Project > Repository > Files|Group > Project > Repository|
-|Group > Project > Repository > Compare|Group > Project > Compare Revisions|
-|Group > Project > Repository > Charts|Group > Project > Contribution Charts|
-|Group > Project > Issues > List|Group > Project > Issues|
-|Group > Project > Issues > Boards|Group > Project > Issue Boards|
-|Group > Project > CI / CD > Charts|Group > Project > CI/CD Charts|
-|Group > Project > Settings > General|Group > Project > General Settings|
-|Group > Project > Settings > Integrations|Group > Project > Integration Settings|
-|Group > Project > Settings > Repository|Group > Project > Repository Settings|
-|Group > Project > Settings > CI / CD|Group > Project > CI/CD Settings|
-|User Settings > Profile|User settings > Edit Profile|
-|User Settings > Password|User settings > Edit Password|
-|Admin Area > System Hooks > Edit|Admin Area > System Hooks > Edit System Hook|
-|Admin Area > Label > Edit|Admin Area > Labels > Edit Label|
+| Path                                      | Title in breadcrumb                          |
+| ----------------------------------------- | -------------------------------------------- |
+| Group > Issues > List                     | Group > Issues                               |
+| Group > Issues > Boards                   | Group > Issue Boards                         |
+| Group > Settings > General                | Group > General Settings                     |
+| Group > Settings > CI / CD                | Group > CI / CD Settings                     |
+| Group > Project > Repository > Files      | Group > Project > Repository                 |
+| Group > Project > Repository > Compare    | Group > Project > Compare Revisions          |
+| Group > Project > Repository > Charts     | Group > Project > Contribution Charts        |
+| Group > Project > Issues > List           | Group > Project > Issues                     |
+| Group > Project > Issues > Boards         | Group > Project > Issue Boards               |
+| Group > Project > CI / CD > Charts        | Group > Project > CI/CD Charts               |
+| Group > Project > Settings > General      | Group > Project > General Settings           |
+| Group > Project > Settings > Integrations | Group > Project > Integration Settings       |
+| Group > Project > Settings > Repository   | Group > Project > Repository Settings        |
+| Group > Project > Settings > CI / CD      | Group > Project > CI/CD Settings             |
+| User Settings > Profile                   | User settings > Edit Profile                 |
+| User Settings > Password                  | User settings > Edit Password                |
+| Admin Area > System Hooks > Edit          | Admin Area > System Hooks > Edit System Hook |
+| Admin Area > Label > Edit                 | Admin Area > Labels > Edit Label             |
 
 ## Demo
 
