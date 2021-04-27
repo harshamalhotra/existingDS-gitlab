@@ -16,7 +16,7 @@ The language of the conceptual model diagram is meant to be as simple and access
 
 [View conceptual model in Figma →](https://www.figma.com/file/J68bePHXIN5OPWqaFFY9ri/Conceptual-model?node-id=51%3A18)
 
-<div class="figma-embed">
+<div class="figma-embed" aria-label="Conceptual diagram connecting objects, along with their attributes and actions, to the primary merge request object." role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D51%253A18" allowfullscreen></iframe>
 </div>
 
@@ -33,6 +33,6 @@ It's a visualization of the record layout, overlayed with the concepts of the MR
 
 [View semantic layout in Figma →](https://www.figma.com/file/shVF8UZwrQtkNfMDjcrsyH/Semantic-layouts?node-id=50%3A217)
 
-<div class="figma-embed">
+<div class="figma-embed" aria-label="A layout of a merge request with overlays to highlight different sections that represent objects within the merge request." role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FshVF8UZwrQtkNfMDjcrsyH%2FSemantic-layouts%3Fnode-id%3D50%253A217" allowfullscreen></iframe>
 </div>
