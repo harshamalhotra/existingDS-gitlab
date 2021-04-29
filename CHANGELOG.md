@@ -1,3 +1,10 @@
+## [2.18.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.1...v2.18.2) (2021-04-29)
+
+
+### Bug Fixes
+
+* **navigation:** Update nav terms to align with tech writing ([ac507ec](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ac507ec513df4587448653416fd4320b62f354fc))
+
 ## [2.18.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.0...v2.18.1) (2021-04-21)
 
 
