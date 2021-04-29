@@ -26,7 +26,7 @@ If no room is available for text, then use an icon.
 
 | Do | Don't |
 | - | - |
-| <div class="app-styles"><gl-icon name="question-o" class="gl-text-blue-600" /></div>Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon in `$blue-600` (`#1078bf`) | <div class="app-styles"><gl-icon name="question" /></div>Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) or a color other than blue |
+| <div class="app-styles"><gl-icon name="question-o" class="gl-text-blue-600" /></div>Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon at the default 16px size in `$blue-600` (`#1078bf`). | <div class="app-styles"><gl-icon name="question" size="12" /></div>Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question), resize it, or use a color other than blue. |
 
 Todo: Add live component block with code example
 
