@@ -28,6 +28,8 @@ Going forward, our charts will be built using [ECharts](https://echarts.apache.o
 General content and style considerations for charts include:
 
 - If there is more than one series being displayed, add a legend.
+- We have two legend types: default and tabular. The default legend option works best for simple charts. If a chart has many series, or if you want to display multiple values for a series (for example, average, median, and maximum), use the tabular chart legend for better readability.
+- Line and area charts use the series label with the rectangular color chip to match the line colors in the chart, while column and heat map charts use the square color chip to match the fill and stroke color of the elements in the visualization. The fill of the chip should match the fill of the column and the border of the chip should match the border of the column. 
 - In legends, the text after the series name is optional. It allows for the possibility of complementing the series legend with additional useful calculations (total, etc).
 - Use chart titles, category and value labels as necessary to clarify the content being shown (with units in parentheses, if required). Note that units aren't always necessary, for example, in the case of counts.
 - The default color order for charts with multiple series is blue, green, orange, then purple (see spec measure details for further information). If you need additional color options, utilize the 500 version of any of the color palette options at a 20% opacity. In addition, if you have charts that feature positive and negative values, feel free to utilize a green/red version of the chart to make the data gains (greens) and losses (reds) more immediately apparent. This variation of a column chart is usually known as a waterfall chart.
@@ -146,6 +148,10 @@ The [column chart measure spec](https://gitlab-org.gitlab.io/gitlab-design/hoste
 ##### Text wrapping in chart popovers
 
 The max-width of chart popovers is `512px`, with long chart values wrapping rather than truncating. When chart values in popovers wrap, break the word into two lines without using a hyphen.
+
+#### Chart legends
+
+Chart data can be toggled on and off by clicking its related item in the legend.
 
 #### More options menu
 
