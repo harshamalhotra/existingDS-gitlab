@@ -1,3 +1,10 @@
+## [2.18.4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.3...v2.18.4) (2021-05-04)
+
+
+### Bug Fixes
+
+* **Iconography:** Add icon meaning details ([973b8ed](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/973b8edc887d4c4a2cb582af78ec5e2dd5b29ff7))
+
 ## [2.18.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.2...v2.18.3) (2021-05-04)
 
 
