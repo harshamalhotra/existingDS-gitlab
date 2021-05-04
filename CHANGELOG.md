@@ -1,3 +1,10 @@
+## [2.18.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.2...v2.18.3) (2021-05-04)
+
+
+### Bug Fixes
+
+* **charts:** updating chart component guidelines ([e275229](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e27522960185c43996d01b3660ed7fd708c38256))
+
 ## [2.18.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.1...v2.18.2) (2021-04-29)
 
 
