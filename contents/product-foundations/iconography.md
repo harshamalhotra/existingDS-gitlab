@@ -240,6 +240,8 @@ As with all of the guidelines, there will always be some level of subjectivity. 
 
 ### Icon meaning
 
+GitLab icons should reflect positive or neutral metaphors. Avoid concepts related to violence or that generally have a negative meaning. Ask yourself, will this icon benefit all users? Is there any potential that its meaning could be confusing or cause anxiety? If there's any doubt, explore other options that are at least neutral in meaning.
+
 Don’t use one icon to refer to multiple meanings. In some cases, there will still be areas in the UI where meaning will have to be inferred from context; for example, a × symbol may be used for closing a modal and at the same time represent a failed pipeline. In these instances, do everything possible to differentiate the icons.
 
 | **Do** | **Don’t** |
