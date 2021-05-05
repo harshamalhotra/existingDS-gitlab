@@ -2,7 +2,6 @@
 name: Toggle
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140
 docs: complete
-gitlab_ui: /components/toggle/code
 vueComponents:
   - GlToggle
 related:
