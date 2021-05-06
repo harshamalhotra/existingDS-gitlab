@@ -32,6 +32,11 @@ table:not(.pika-table):not(.gl-table) {
   }
 }
 
+th,
+td {
+  vertical-align: top;
+}
+
 .status-table {
   table-layout: fixed;
 

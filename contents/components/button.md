@@ -25,7 +25,7 @@ Different button categories bring varying emphasis to potential user actions. Th
 
 ### Action hierarchy
 
-Button categories are chosen based on the overall hierarchy on a given page, as well as the individual contexts found within. Defining context depends on the hierarchy of information displayed on the screen, the motivated user flow, and the available tasks. As an example: Settings pages may have multiple equally important contexts, each requiring its own primary button to complete its task.
+Button categories are chosen based on the overall hierarchy on a given page, as well as the individual contexts found within. Defining context depends on the hierarchy of information displayed on the screen, the motivated user flow, and the available tasks. For example, a settings page may have multiple equally important contexts, each requiring its own primary button to complete a task.
 
 Note that contexts may be temporary, such as a modal.
 
@@ -34,6 +34,8 @@ Note that contexts may be temporary, such as a modal.
 |Primary |The single most important action that moves the task forward within a context|One per context|
 |Secondary|Supplementary actions that the user is motivated to take|One or more per context|
 |Tertiary|Less important actions that are not promoted to the user|Multiple|
+
+Too many secondary actions in a single view can flip the intended hierarchy. For example, a list of items where each has a secondary danger button can be overwhelming and distracting, especially when that action is repetitive and understood. In cases like these it may be better to use the tertiary category or the default variant in order to preserve the intended hierarchy.
 
 [[Example:button-primary]]
 
@@ -50,7 +52,7 @@ The visual style of a button helps a user identify what type of action it perfor
 |Confirm|A positive or negative non-destructive action that is confirmation of what the user desires to take place (replaces `info`, `success`, and `warning`).|The **New issue** button when creating a new issue from the Issues list.|
 |Default|An action that doesn’t warrant prominence, typically when a primary variant is already used in the same context.|The **Cancel** button when leaving a modal.|
 |Dashed|An object that has yet to be created.|The **Add LICENSE** button on a project that doesn't contain a license.|
-|Danger|A destructive action that can't be undone or has potentially detrimental consequences.|The **Delete account** button when deleting an account.|
+|Danger|A final destructive action that can't be undone or has potentially detrimental consequences. If an action opens an interstitial that contains the destructive action, then only use danger for the final action.|The **Delete account** button when deleting an account.|
 |Link|An action that is visually styled like an anchor link.|The **Edit** links in the issue sidebar.|
 
 [[Example:button-variants]]
