@@ -1,3 +1,10 @@
+# [2.19.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.4...v2.19.0) (2021-05-06)
+
+
+### Features
+
+* **Buttons:** Add hierarchy and variant details ([42d82ac](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/42d82acd1e1c4d235df6d7246dcf1afbcec4c2ae))
+
 ## [2.18.4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.3...v2.18.4) (2021-05-04)
 
 
