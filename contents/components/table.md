@@ -22,6 +22,7 @@ Tables display tabular data in a basic grid composed of cells, columns, and rows
 
 Use tables to:
 
+- Display tabular data for comparison. 
 - Display structured content, where each entry has the same attributes.
 - Let users review, enter, edit, or filter granular data sets.
 - Display a data set that will continue to grow (e.g. Issues, Environments, and User Profile pages).
@@ -30,6 +31,7 @@ Use tables to:
 
 Do not use tables to:
 
+- Create page layout or design structure.
 - Display a list of continuous, vertical indexes of text or images. Use [Lists](/components/list) instead.
 - Display contained content and actions on a single topic. Use [Cards](/components/card) instead.
 - For hierarchical structures. Use the [Tree](/components/tree) view instead.
@@ -109,7 +111,7 @@ Tables take up the full width of their container element. However, it is importa
 
 Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 
-Prevent horizontal scrolling to ensure the table doesn't break the layout. Tables work across multiple screen sizes and conform to [responsive guidelines](/components/table/#responsiveness).
+Tables work across multiple screen sizes and conform to [responsive guidelines](/components/table/#responsiveness).
 
 ## Content
 
@@ -144,13 +146,17 @@ Use white space in tables to improve scannability, visually separating data elem
 
 To help with styling, use horizontal lines between rows to visually separate content. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 
-Do not appply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
+Do not apply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 
 ## Responsiveness
 
-Tables work across multiple screen sizes and conform to responsive guidelines. Prevent horizontal scrolling to ensure the table doesn’t break the layout.
+At smaller breakpoints tables can either maintain a tabular layout and scroll horizontally to view the overflow without breaking the page layout, or each row can be transformed into its own group where header content is present within each group.
 
-Todo: Add description of how the table behaves on responsive views
+- If the data in each row needs to be compared to data in other rows then maintain the tabular layout.
+- If the content simply shares headers and can live on its own without comparison, transform each row into its own group.
+- If a row has embedded actions that could be missed when overflowing in the default tabular layout, transform each row into its own group so the actions can always be visible.
+
+Todo: Add responsive table examples
 
 ## Accessibility
 
@@ -159,8 +165,8 @@ Use proper semantic markup, so that users of screen readers can navigate through
 - `<th>` should not contain heading elements.
 - `<th>` should be descriptive and relevant.
 - `<th>` should have a defined `scope` attribute to establish relationships between the table headings and rows/columns; for example, `<th scope="col">`.
-- `<caption>` should be used to provide a title for a table.
-- `<caption>` should be an immediate child element of `<table>`.
+- `<caption>` must be used to provide a title for a table.
+- `<caption>` must be an immediate child element of `<table>`.
 
 ## Demo
 
