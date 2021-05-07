@@ -1,3 +1,10 @@
+# [2.20.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.19.0...v2.20.0) (2021-05-07)
+
+
+### Features
+
+* **Table:** Add responsive details ([4bc0837](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4bc0837ca6f4af98c93c5cc8bb3d6f8c82c99999))
+
 # [2.19.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.18.4...v2.19.0) (2021-05-06)
 
 
