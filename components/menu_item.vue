@@ -84,7 +84,8 @@ export default {
       class="nav-sidebar__section"
     >
       <summary
-        class="nav-sidebar__section-summary nav-sidebar--indent-1"
+        class="nav-sidebar__section-summary"
+        :class="`nav-sidebar--indent-${depth}`"
         @click="selectFirstSubItem"
       >
         {{ item.title }}

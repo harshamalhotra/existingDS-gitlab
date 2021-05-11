@@ -1,5 +1,0 @@
----
-name: Content
----
-
-Coming soon

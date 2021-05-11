@@ -1,5 +1,0 @@
----
-name: Visual
----
-
-Coming soon

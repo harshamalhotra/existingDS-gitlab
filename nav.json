@@ -313,7 +313,7 @@
           },
           {
             "title": "Internationalization",
-            "path": "internationalization"
+            "path": "i18n"
           },
           {
             "title": "Onboarding users",

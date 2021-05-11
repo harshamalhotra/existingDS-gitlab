@@ -1,9 +1,8 @@
 <script>
 import { mapState } from 'vuex';
-import menuSection from '../components/menu_section.vue';
+import MenuItem from '../components/menu_item.vue';
 import Search from '../components/search/search.vue';
-import subMenu from '../components/sub_menu.vue';
-import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
+import nav from '../nav.json';
 
 const componentNameToLabelMap = {
   dropdowns: 'dropdown',
@@ -17,16 +16,15 @@ const componentNameToLabelMap = {
 };
 
 export default {
+  nav,
   gitlabOrgBaseUrl: 'https://gitlab.com/groups/gitlab-org/-/',
   components: {
-    subMenu,
-    menuSection,
+    MenuItem,
     Search,
   },
   data() {
     return {
       open: false,
-      contentTree,
     };
   },
   computed: {
@@ -145,75 +143,7 @@ export default {
         </template>
       </client-only>
       <div class="nav-sidebar__body m-b-3">
-        <template v-if="contentTree">
-          <menu-section :content-tree="contentTree" category="brand" />
-          <ul :open="$route.fullPath.startsWith('/product/')" class="nav-sidebar__section">
-            <li>
-              <span class="nav-sidebar__section-title">Product</span>
-            </li>
-            <sub-menu
-              :content-tree="contentTree"
-              category="get-started"
-              category-name="Get started"
-            />
-            <sub-menu
-              :content-tree="contentTree"
-              category="product-foundations"
-              category-name="Foundations"
-            />
-            <sub-menu :content-tree="contentTree" category="layout" />
-            <sub-menu :content-tree="contentTree" category="components">
-              <nuxt-link
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-                to="/components/status"
-                >Status</nuxt-link
-              >
-            </sub-menu>
-            <sub-menu
-              :content-tree="contentTree"
-              category="data-visualization"
-              category-name="Data visualization"
-            />
-            <sub-menu :content-tree="contentTree" category="regions" />
-            <sub-menu :content-tree="contentTree" category="objects" />
-            <sub-menu :content-tree="contentTree" category="content" />
-            <sub-menu :content-tree="contentTree" category="usability" />
-            <nuxt-link
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-              to="/resources/design-resources"
-              >Design resources</nuxt-link
-            >
-          </ul>
-          <menu-section :content-tree="contentTree" category="research">
-            <li>
-              <a
-                href="https://about.gitlab.com/community/gitlab-first-look/"
-                target="_blank"
-                rel="noopener"
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-                >First Look</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://about.gitlab.com/handbook/marketing/product-marketing/roles-personas/"
-                target="_blank"
-                rel="noopener"
-                class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
-                >Personas</a
-              >
-            </li>
-          </menu-section>
-          <menu-section :content-tree="contentTree" category="accessibility">
-            <sub-menu
-              :content-tree="contentTree"
-              category="accessibility-audits"
-              category-name="Audit guides"
-            />
-          </menu-section>
-          <menu-section :content-tree="contentTree" category="contribute" />
-        </template>
-        <template v-else> Loading ... </template>
+        <menu-item v-for="item in $options.nav" :key="item.title" :item="item" />
       </div>
     </nav>
     <div :class="contentWrapper">
