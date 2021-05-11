@@ -5,4 +5,19 @@ module.exports = {
     'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.spec.js', 'tests/jest_setup.js'],
+      extends: ['plugin:@gitlab/jest'],
+      rules: {
+        'promise/always-return': 'off',
+        'jest/expect-expect': [
+          'warn',
+          {
+            assertFunctionNames: ['expect*'],
+          },
+        ],
+      },
+    },
+  ],
 };

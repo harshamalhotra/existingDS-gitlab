@@ -1,0 +1,1166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default layout renders sidebar properly 1`] = `
+<nav
+  class="nav-sidebar"
+>
+  <div
+    class="nav-sidebar__header"
+  >
+    <nuxt-link-stub
+      class="nav-sidebar__header-anchor p-a-5"
+      to="/"
+    >
+      <svg
+        class="tanuki-logo"
+        height="36"
+        viewBox="0 0 376 342"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            class="tanuki-shape tanuki-left-ear"
+            d="M185.398 341.13l68.013-209.322H117.39L185.4 341.13z"
+            fill="#E24329"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-left-eye"
+            d="M185.398 341.13l-68.013-209.322h-95.32L185.4 341.128z"
+            fill="#FC6D26"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-left-cheek"
+            d="M22.066 131.808l-20.67 63.61c-1.884 5.803.18 12.16 5.117 15.744L185.398 341.13 22.066 131.807z"
+            fill="#FCA326"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-nose"
+            d="M22.066 131.808h95.32L76.42 5.735c-2.107-6.487-11.284-6.487-13.39 0L22.065 131.808z"
+            fill="#E24329"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-right-eye"
+            d="M185.398 341.13l68.013-209.322h95.32L185.4 341.128z"
+            fill="#FC6D26"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-right-cheek"
+            d="M348.73 131.808l20.67 63.61c1.884 5.803-.18 12.16-5.117 15.744L185.398 341.13 348.73 131.807z"
+            fill="#FCA326"
+          />
+           
+          <path
+            class="tanuki-shape tanuki-right-ear"
+            d="M348.73 131.808h-95.32L294.376 5.735c2.108-6.487 11.285-6.487 13.392 0l40.963 126.073z"
+            fill="#E24329"
+          />
+        </g>
+      </svg>
+       
+      <span
+        class="m-l-4"
+      >
+        GitLab Design System
+      </span>
+    </nuxt-link-stub>
+  </div>
+   
+  <client-only-stub>
+    <search-stub />
+  </client-only-stub>
+   
+  <div
+    class="nav-sidebar__body m-b-3"
+  >
+    <ul
+      class="nav-sidebar__section"
+    >
+      <li>
+        <span
+          class="nav-sidebar__section-title"
+        >
+          Brand
+        </span>
+      </li>
+       
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/brand/basics"
+        >
+          
+      Basics
+    
+        </nuxt-link-stub>
+      </li>
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/brand/resources"
+        >
+          
+      Resources
+    
+        </nuxt-link-stub>
+      </li>
+       
+    </ul>
+     
+    <ul
+      class="nav-sidebar__section"
+    >
+      <li>
+        <span
+          class="nav-sidebar__section-title"
+        >
+          Product
+        </span>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Get started
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/get-started/principles"
+            >
+              
+    Principles
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/get-started/structure"
+            >
+              
+    Structure
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Foundations
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/colors"
+            >
+              
+    Color
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/iconography"
+            >
+              
+    Iconography
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/illustration"
+            >
+              
+    Illustration
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/interaction"
+            >
+              
+    Interactions
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/motion"
+            >
+              
+    Motion
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/saving-and-feedback"
+            >
+              
+    Saving and feedback
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/product-foundations/typography"
+            >
+              
+    Typography
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Layout
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/layout/grid"
+            >
+              
+    Grid
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/layout/layers"
+            >
+              
+    Layers
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/layout/spacing"
+            >
+              
+    Spacing
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Components
+    
+          </summary>
+           
+          <nuxt-link-stub
+            class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+            to="/components/status"
+          >
+            Status
+          </nuxt-link-stub>
+           
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/accordion"
+            >
+              
+    Accordion
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/alert"
+            >
+              
+    Alert
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/avatar"
+            >
+              
+    Avatar
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/badge"
+            >
+              
+    Badge
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/banner"
+            >
+              
+    Banner
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/breadcrumb"
+            >
+              
+    Breadcrumb
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/broadcast-message"
+            >
+              
+    Broadcast message
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/button"
+            >
+              
+    Button
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/card"
+            >
+              
+    Card
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/checkbox"
+            >
+              
+    Checkbox
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/date-picker"
+            >
+              
+    Date picker
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/drawer"
+            >
+              
+    Drawer
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/dropdown"
+            >
+              
+    Dropdown
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/file-uploader"
+            >
+              
+    File uploader
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/filter"
+            >
+              
+    Filter
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/form"
+            >
+              
+    Form
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/infinite-scroll"
+            >
+              
+    Infinite scroll
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/label"
+            >
+              
+    Label
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/list"
+            >
+              
+    List
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/markdown"
+            >
+              
+    Markdown
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/modal"
+            >
+              
+    Modal
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/pagination"
+            >
+              
+    Pagination
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/path"
+            >
+              
+    Path
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/popover"
+            >
+              
+    Popover
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/progress-bar"
+            >
+              
+    Progress bar
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/radio-button"
+            >
+              
+    Radio button
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/search"
+            >
+              
+    Search
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/segmented-control"
+            >
+              
+    Segmented control
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/skeleton-loader"
+            >
+              
+    Skeleton loader
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/socks"
+            >
+              
+    Socks
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/sorting"
+            >
+              
+    Sorting
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/spinner"
+            >
+              
+    Spinner
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/table"
+            >
+              
+    Table
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/tabs"
+            >
+              
+    Tabs
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/toast"
+            >
+              
+    Toast
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/toggle"
+            >
+              
+    Toggle
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/token"
+            >
+              
+    Token
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/tooltip"
+            >
+              
+    Tooltip
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/components/tree"
+            >
+              
+    Tree
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Data visualization
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/data-visualization/charts"
+            >
+              
+    Charts
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/data-visualization/color"
+            >
+              
+    Color
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/data-visualization/overview"
+            >
+              
+    Overview
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/data-visualization/single-stat"
+            >
+              
+    Single stat
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Regions
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/regions/empty-states"
+            >
+              
+    Empty States
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/regions/filters"
+            >
+              
+    Filters
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/regions/navigation"
+            >
+              
+    Navigation
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/regions/search"
+            >
+              
+    Search
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/regions/settings"
+            >
+              
+    Settings
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Objects
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/objects/merge-request"
+            >
+              
+    Merge request
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/objects/report"
+            >
+              
+    Report
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Content
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/content/error-messages"
+            >
+              
+    Error messages
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/content/punctuation"
+            >
+              
+    Punctuation
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/content/terminology"
+            >
+              
+    Terminology
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/content/voice-tone"
+            >
+              
+    Voice and tone
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Usability
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/usability/error-prevention"
+            >
+              
+    Error prevention
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/usability/helping-users"
+            >
+              
+    Helping users
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/usability/i18n"
+            >
+              
+    Internationalization
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/usability/onboarding-users"
+            >
+              
+    Onboarding users
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+       
+      <nuxt-link-stub
+        class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+        to="/resources/design-resources"
+      >
+        Design resources
+      </nuxt-link-stub>
+    </ul>
+     
+    <ul
+      class="nav-sidebar__section"
+    >
+      <li>
+        <span
+          class="nav-sidebar__section-title"
+        >
+          Research
+        </span>
+      </li>
+       
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/research/get-started"
+        >
+          
+      Get started
+    
+        </nuxt-link-stub>
+      </li>
+       
+      <li>
+        <a
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          href="https://about.gitlab.com/community/gitlab-first-look/"
+          rel="noopener"
+          target="_blank"
+        >
+          First Look
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          href="https://about.gitlab.com/handbook/marketing/product-marketing/roles-personas/"
+          rel="noopener"
+          target="_blank"
+        >
+          Personas
+        </a>
+      </li>
+    </ul>
+     
+    <ul
+      class="nav-sidebar__section"
+    >
+      <li>
+        <span
+          class="nav-sidebar__section-title"
+        >
+          Accessibility
+        </span>
+      </li>
+       
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/accessibility/a11y"
+        >
+          
+      Statement of compliance
+    
+        </nuxt-link-stub>
+      </li>
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/accessibility/best-practices"
+        >
+          
+      Best practices
+    
+        </nuxt-link-stub>
+      </li>
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/accessibility/vpat"
+        >
+          
+      GitLab Accessibility Conformance Report
+    
+        </nuxt-link-stub>
+      </li>
+       
+      <li>
+        <details
+          class="nav-sidebar__section"
+        >
+          <summary
+            class="nav-sidebar__section-summary nav-sidebar--indent-1"
+          >
+            
+      Audit guides
+    
+          </summary>
+            
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/accessibility-audits/accessibility-audits"
+            >
+              
+    Accessibility audits
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/accessibility-audits/content"
+            >
+              
+    Content
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/accessibility-audits/keyboard-only"
+            >
+              
+    Keyboard-only
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/accessibility-audits/screen-readers"
+            >
+              
+    Screen readers
+  
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/accessibility-audits/visual"
+            >
+              
+    Visual
+  
+            </nuxt-link-stub>
+          </li>
+        </details>
+      </li>
+    </ul>
+     
+    <ul
+      class="nav-sidebar__section"
+    >
+      <li>
+        <span
+          class="nav-sidebar__section-title"
+        >
+          Contribute
+        </span>
+      </li>
+       
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/contribute/get-started"
+        >
+          
+      Get started
+    
+        </nuxt-link-stub>
+      </li>
+      <li>
+        <nuxt-link-stub
+          class="nav-sidebar__section-items-anchor nav-sidebar--indent-1"
+          to="/contribute/lifecycle"
+        >
+          
+      Component lifecycle
+    
+        </nuxt-link-stub>
+      </li>
+       
+    </ul>
+  </div>
+</nav>
+`;

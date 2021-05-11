@@ -16,3 +16,6 @@ yarn run prettier
 
 echo "Ensuring that markdown files end with an empty line"
 yarn run markdown-lint
+
+echo "Running unit tests"
+yarn run test:unit

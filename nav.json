@@ -1,0 +1,399 @@
+[
+  {
+    "title": "Brand",
+    "path": "brand",
+    "items": [
+      {
+        "title": "Basics",
+        "path": "basics"
+      },
+      {
+        "title": "Resources",
+        "path": "resources"
+      }
+    ]
+  },
+  {
+    "title": "Product",
+    "items": [
+      {
+        "title": "Get started",
+        "path": "get-started",
+        "items": [
+          {
+            "title": "Principles",
+            "path": "principles"
+          },
+          {
+            "title": "Structure",
+            "path": "structure"
+          }
+        ]
+      },
+      {
+        "title": "Foundations",
+        "path": "product-foundations",
+        "items": [
+          {
+            "title": "Color",
+            "path": "colors"
+          },
+          {
+            "title": "Iconography",
+            "path": "iconography"
+          },
+          {
+            "title": "Illustration",
+            "path": "illustration"
+          },
+          {
+            "title": "Interactions",
+            "path": "interaction"
+          },
+          {
+            "title": "Motion",
+            "path": "motion"
+          },
+          {
+            "title": "Saving and feedback",
+            "path": "saving-and-feedback"
+          },
+          {
+            "title": "Typography",
+            "path": "typography"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "path": "layout",
+        "items": [
+          {
+            "title": "Grid",
+            "path": "grid"
+          },
+          {
+            "title": "Layers",
+            "path": "layers"
+          },
+          {
+            "title": "Spacing",
+            "path": "spacing"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "path": "components",
+        "items": [
+          {
+            "title": "Status",
+            "path": "status"
+          },
+          {
+            "title": "Accordion",
+            "path": "accordion"
+          },
+          {
+            "title": "Alert",
+            "path": "alert"
+          },
+          {
+            "title": "Avatar",
+            "path": "avatar"
+          },
+          {
+            "title": "Badge",
+            "path": "badge"
+          },
+          {
+            "title": "Banner",
+            "path": "banner"
+          },
+          {
+            "title": "Breadcrumb",
+            "path": "breadcrumb"
+          },
+          {
+            "title": "Broadcast message",
+            "path": "broadcast-message"
+          },
+          {
+            "title": "Button",
+            "path": "button"
+          },
+          {
+            "title": "Card",
+            "path": "card"
+          },
+          {
+            "title": "Checkbox",
+            "path": "checkbox"
+          },
+          {
+            "title": "Date picker",
+            "path": "date-picker"
+          },
+          {
+            "title": "Drawer",
+            "path": "drawer"
+          },
+          {
+            "title": "Dropdown",
+            "path": "dropdown"
+          },
+          {
+            "title": "File uploader",
+            "path": "file-uploader"
+          },
+          {
+            "title": "Filter",
+            "path": "filter"
+          },
+          {
+            "title": "Form",
+            "path": "form"
+          },
+          {
+            "title": "Infinite scroll",
+            "path": "infinite-scroll"
+          },
+          {
+            "title": "Label",
+            "path": "label"
+          },
+          {
+            "title": "List",
+            "path": "list"
+          },
+          {
+            "title": "Markdown",
+            "path": "markdown"
+          },
+          {
+            "title": "Modal",
+            "path": "modal"
+          },
+          {
+            "title": "Pagination",
+            "path": "pagination"
+          },
+          {
+            "title": "Path",
+            "path": "path"
+          },
+          {
+            "title": "Popover",
+            "path": "popover"
+          },
+          {
+            "title": "Progress bar",
+            "path": "progress-bar"
+          },
+          {
+            "title": "Radio button",
+            "path": "radio-button"
+          },
+          {
+            "title": "Search",
+            "path": "search"
+          },
+          {
+            "title": "Segmented control",
+            "path": "segmented-control"
+          },
+          {
+            "title": "Skeleton loader",
+            "path": "skeleton-loader"
+          },
+          {
+            "title": "Socks",
+            "path": "socks"
+          },
+          {
+            "title": "Sorting",
+            "path": "sorting"
+          },
+          {
+            "title": "Spinner",
+            "path": "spinner"
+          },
+          {
+            "title": "Table",
+            "path": "table"
+          },
+          {
+            "title": "Tabs",
+            "path": "tabs"
+          },
+          {
+            "title": "Toast",
+            "path": "toast"
+          },
+          {
+            "title": "Toggle",
+            "path": "toggle"
+          },
+          {
+            "title": "Token",
+            "path": "token"
+          },
+          {
+            "title": "Tooltip",
+            "path": "tooltip"
+          },
+          {
+            "title": "Tree",
+            "path": "tree"
+          }
+        ]
+      },
+      {
+        "title": "Data visualization",
+        "path": "data-visualization",
+        "items": [
+          {
+            "title": "Charts",
+            "path": "charts"
+          },
+          {
+            "title": "Color",
+            "path": "color"
+          },
+          {
+            "title": "Overview",
+            "path": "overview"
+          },
+          {
+            "title": "Single stat",
+            "path": "single-stat"
+          }
+        ]
+      },
+      {
+        "title": "Regions",
+        "path": "regions",
+        "items": [
+          { "title": "Empty States", "path": "empty-states" },
+          { "title": "Filters", "path": "filters" },
+          { "title": "Navigation", "path": "navigation" },
+          { "title": "Search", "path": "search" },
+          { "title": "Settings", "path": "settings" }
+        ]
+      },
+      {
+        "title": "Objects",
+        "path": "objects",
+        "items": [
+          { "title": "Merge request", "path": "merge-request" },
+          { "title": "Report", "path": "report" }
+        ]
+      },
+      {
+        "title": "Content",
+        "path": "content",
+        "items": [
+          { "title": "Error messages", "path": "error-messages" },
+          { "title": "Punctuation", "path": "punctuation" },
+          { "title": "Terminology", "path": "terminology" },
+          { "title": "Voice and tone", "path": "voice-tone" }
+        ]
+      },
+      {
+        "title": "Usability",
+        "path": "usability",
+        "items": [
+          {
+            "title": "Error prevention",
+            "path": "error-prevention"
+          },
+          {
+            "title": "Helping users",
+            "path": "helping-users"
+          },
+          {
+            "title": "Internationalization",
+            "path": "internationalization"
+          },
+          {
+            "title": "Onboarding users",
+            "path": "onboarding-users"
+          }
+        ]
+      },
+      {
+        "title": "Design resources",
+        "path": "resources/design-resources"
+      }
+    ]
+  },
+  {
+    "title": "Research",
+    "path": "research",
+    "items": [
+      {
+        "title": "Get started",
+        "path": "get-started"
+      },
+      {
+        "title": "First look",
+        "path": "https://about.gitlab.com/community/gitlab-first-look/"
+      },
+      {
+        "title": "Personas",
+        "path": "https://about.gitlab.com/handbook/marketing/strategic-marketing/roles-personas/"
+      }
+    ]
+  },
+  {
+    "title": "Accessibility",
+    "items": [
+      {
+        "title": "Statement of compliance",
+        "path": "accessibility/a11y"
+      },
+      {
+        "title": "Best practices",
+        "path": "accessibility/best-practices"
+      },
+      {
+        "title": "GitLab Accessibility Conformance Report",
+        "path": "accessibility/vpat"
+      },
+      {
+        "title": "Audit guides",
+        "path": "accessibility-audits",
+        "items": [
+          {
+            "title": "Accessibility audits",
+            "path": "accessibility-audits"
+          },
+          {
+            "title": "Keyboard-only",
+            "path": "keyboard-only"
+          },
+          {
+            "title": "Screen readers",
+            "path": "screen-readers"
+          },
+          {
+            "title": "Visual",
+            "path": "visual"
+          },
+          {
+            "title": "Content",
+            "path": "content"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Contribute",
+    "path": "contribute",
+    "items": [
+      { "title": "Get started", "path": "get-started" },
+      { "title": "Component lifecycle", "path": "lifecycle" }
+    ]
+  }
+]
