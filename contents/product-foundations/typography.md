@@ -1,5 +1,7 @@
 ---
 name: Typography
+related:
+  - /components/markdown
 ---
 
 ## Typeface
@@ -16,7 +18,7 @@ Todo: Add codeblock showing monospace variable stack
 
 ## UI typescale
 
-UI typography is used for any text within GitLab that is not markdown.
+UI typography is used for any text within GitLab that is not [Markdown](/components/markdown).
 
 ### Base
 
@@ -33,34 +35,6 @@ Long-form content includes copy in modals and empty states, whereas short-form c
 The `h1` and `h2` headers within our UI type scale are responsive. All other type options within this scale are not dependent on screen size.
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A334)
-
-## Documentation markdown typescale
-
-Documentation markdown is defined as any markdown that is written outside of issuable pages, such as a README or Wiki page. Content written using markdown includes typography that contains fixed margins and increased line-heights to improve readability. Label text is not available for documentation markdown because all markdown is considered long-form content.
-
-### Base
-
-`16px` is the base size of body copy for documentation markdown.
-
-### Responsive
-
-The `h1`, `h2`, and `h3` headers within our documentation markdown scale are responsive. All other type options within this scale are not dependent on screen size.
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A2)
-
-## Compact markdown typescale
-
-Within certain views, the markdown type scale is decreased in order to more closely align copy with other UI components. Compact markdown is used for descriptions and comments on issue and merge request pages. Label text is not available for compact markdown because all markdown is long-form content.
-
-### Base
-
-`14px` is the base size of body copy for compact markdown.
-
-### Responsive
-
-The `h1` header within our compact markdown scale is responsive. All other type options within this scale are not dependent on screen size.
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A132)
 
 ## Font weight
 
