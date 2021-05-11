@@ -1,3 +1,10 @@
+# [2.21.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.20.0...v2.21.0) (2021-05-11)
+
+
+### Features
+
+* **Markdown:** Add page about text components ([7b45453](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7b4545313d6f6e1a0357925b38326031b779a421))
+
 # [2.20.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.19.0...v2.20.0) (2021-05-07)
 
 
