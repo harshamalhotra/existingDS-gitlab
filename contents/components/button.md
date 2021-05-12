@@ -52,7 +52,7 @@ The visual style of a button helps a user identify what type of action it perfor
 |Confirm|A positive or negative non-destructive action that is confirmation of what the user desires to take place (replaces `info`, `success`, and `warning`).|The **New issue** button when creating a new issue from the Issues list.|
 |Default|An action that doesn’t warrant prominence, typically when a primary variant is already used in the same context.|The **Cancel** button when leaving a modal.|
 |Dashed|An object that has yet to be created.|The **Add LICENSE** button on a project that doesn't contain a license.|
-|Danger|A final destructive action that can't be undone or has potentially detrimental consequences. If an action opens an interstitial that contains the destructive action, then only use danger for the final action.|The **Delete account** button when deleting an account.|
+|Danger|An action that is destructive and undoable or has potentially detrimental consequences. In a long list of items where each contains a destructive button, use the `default` variant to avoid having many danger buttons overwhelm the page. Any final confirmation that is destructive must contain the `danger` button variant (unless a browser dialog is used).|The **Delete account** button when deleting an account.|
 |Link|An action that is visually styled like an anchor link.|The **Edit** links in the issue sidebar.|
 
 [[Example:button-variants]]
