@@ -76,4 +76,6 @@ export function writeContentTree(baseDirectory) {
     path.resolve(baseDirectory, 'content_tree.json'),
     JSON.stringify(treeObj, null, 2),
   );
+
+  return treeObj;
 }

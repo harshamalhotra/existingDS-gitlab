@@ -1,6 +1,7 @@
 <script>
 import { mapState } from 'vuex';
 import menuSection from '../components/menu_section.vue';
+import Search from '../components/search/search.vue';
 import subMenu from '../components/sub_menu.vue';
 import contentTree from '../content_tree.json'; // eslint-disable-line import/no-unresolved
 
@@ -20,6 +21,7 @@ export default {
   components: {
     subMenu,
     menuSection,
+    Search,
   },
   data() {
     return {
@@ -136,6 +138,12 @@ export default {
           <span class="m-l-4">GitLab Design System</span>
         </nuxt-link>
       </div>
+      <client-only>
+        <search />
+        <template #placeholder>
+          <div class="gl-py-6"></div>
+        </template>
+      </client-only>
       <div class="nav-sidebar__body m-b-3">
         <template v-if="contentTree">
           <menu-section :content-tree="contentTree" category="brand" />
