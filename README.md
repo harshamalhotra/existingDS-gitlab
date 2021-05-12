@@ -36,6 +36,9 @@ When starting from scratch:
 1. Copy the contents from `pages/components/template.md`
 1. Paste the contents in an existing placeholder file in `contents/components/` or create a new file and call it `componentname.md`
 1. Edit and write your documentation
+1. Include your new page in the navigation. [Learn more about populating the navbar].
+
+[Learn more about populating the navbar]: /doc/navbar.md
 
 ### Writing component examples
 
