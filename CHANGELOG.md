@@ -1,3 +1,10 @@
+# [2.22.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.21.1...v2.22.0) (2021-05-13)
+
+
+### Features
+
+* **Charts:** Adding more chart types ([8995608](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8995608b9a133df246eae4ee85747ce01a21da08))
+
 ## [2.21.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.21.0...v2.21.1) (2021-05-13)
 
 
