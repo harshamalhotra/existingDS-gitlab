@@ -1,3 +1,10 @@
+## [2.21.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.21.0...v2.21.1) (2021-05-13)
+
+
+### Bug Fixes
+
+* **merge request:** Describe Figma embeds ([d29e286](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d29e286f4ef6e1931130cc4651830d1b78f8ad1b))
+
 # [2.21.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.20.0...v2.21.0) (2021-05-11)
 
 
