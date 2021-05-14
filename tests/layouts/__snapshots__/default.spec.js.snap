@@ -606,6 +606,14 @@ exports[`default layout renders sidebar properly 1`] = `
           <li>
             <nuxt-link-stub
               class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
+              to="/data-visualization/overview"
+            >
+              Overview
+            </nuxt-link-stub>
+          </li>
+          <li>
+            <nuxt-link-stub
+              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
               to="/data-visualization/charts"
             >
               Charts
@@ -617,14 +625,6 @@ exports[`default layout renders sidebar properly 1`] = `
               to="/data-visualization/color"
             >
               Color
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor nav-sidebar--indent-2"
-              to="/data-visualization/overview"
-            >
-              Overview
             </nuxt-link-stub>
           </li>
           <li>

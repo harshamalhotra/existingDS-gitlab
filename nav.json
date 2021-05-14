@@ -253,16 +253,16 @@
         "path": "data-visualization",
         "items": [
           {
+            "title": "Overview",
+            "path": "overview"
+          },
+          {
             "title": "Charts",
             "path": "charts"
           },
           {
             "title": "Color",
             "path": "color"
-          },
-          {
-            "title": "Overview",
-            "path": "overview"
           },
           {
             "title": "Single stat",
