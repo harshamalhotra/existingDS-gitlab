@@ -19,10 +19,19 @@ The user settings menu is the rightmost menu which contains items related to the
 The help menu is the dropdown with the question mark icon and contains links to docs and support. 
 
 ## Left sidebar
-The left sidebar refers to the content that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. There can be up to two levels of navigation. Each sub nav group should be a self-contained group of functionality. For example, everything related to the issue tracker should be under the 'Issues' nav item, while everything relating to the wiki will be grouped under the 'Wiki' nav item. The names used for each section should be short and easy to remember, ideally 1-2 words in length.
+The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each nav item should be short and easy to remember, ideally 1-2 words in length. There can be up to two levels of navigation: product landing pages and sub nav group. 
 
-### Product Landing Pages
+### Product landing pages
 Product landing pages are the top level pages in the left sidebar for Projects and Groups. For example, the Issue List page is the landing page for issues. These pages are used to display the most important functionality for that navigation category and when appropriate, facilitate navigation into related functionality.
+
+### Sub nav group
+
+Each sub nav group should be a self-contained group of functionality, for example:
+
+- Items related to planning and managing issues should be under the `Issues` nav item.
+- Viewing and editing pipelines should be under the `CI/CD` nav item.
+
+The default active item should be the first sub nav group item.
 
 ### Behavior 
 
