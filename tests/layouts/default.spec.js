@@ -1,7 +1,7 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import DefaultLayout from '../../layouts/default.vue';
-import { state } from '../../store';
+import state from '../../store/state';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
