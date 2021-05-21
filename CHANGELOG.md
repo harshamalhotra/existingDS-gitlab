@@ -1,3 +1,10 @@
+## [2.23.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.23.0...v2.23.1) (2021-05-21)
+
+
+### Bug Fixes
+
+* **issue-templates:** Add issue template cross links ([9529381](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/952938127142117d92dd64f974d663abe615fdef))
+
 # [2.23.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.22.0...v2.23.0) (2021-05-21)
 
 
