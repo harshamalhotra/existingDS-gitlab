@@ -7,4 +7,7 @@ export default {
   setFrontmatter(state, frontmatter) {
     state.frontmatter = frontmatter;
   },
+  setActiveNavItem(state, navItem) {
+    state.activeNavItem = navItem;
+  },
 };

@@ -1,5 +1,5 @@
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 import MenuItem from '../components/menu_item.vue';
 import Search from '../components/search/search.vue';
 import nav from '../nav.json';
@@ -65,6 +65,12 @@ export default {
         document.getElementById(modalId).parentElement.classList.add('app-styles');
       }, 0);
     });
+  },
+  created() {
+    this.setActiveNavItem(this.$route.fullPath);
+  },
+  methods: {
+    ...mapMutations(['setActiveNavItem']),
   },
 };
 </script>

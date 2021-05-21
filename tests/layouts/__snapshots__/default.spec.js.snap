@@ -119,699 +119,122 @@ exports[`default layout renders sidebar properly 1`] = `
         </span>
       </li>
        
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Get started
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/get-started/principles"
-            >
-              Principles
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/get-started/structure"
-            >
-              Structure
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Get started
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Foundations
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/colors"
-            >
-              Color
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/iconography"
-            >
-              Iconography
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/illustration"
-            >
-              Illustration
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/interaction"
-            >
-              Interactions
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/motion"
-            >
-              Motion
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/saving-and-feedback"
-            >
-              Saving and feedback
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/product-foundations/typography"
-            >
-              Typography
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Foundations
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Layout
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/layout/grid"
-            >
-              Grid
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/layout/layers"
-            >
-              Layers
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/layout/spacing"
-            >
-              Spacing
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Layout
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Components
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/status"
-            >
-              Status
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/accordion"
-            >
-              Accordion
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/alert"
-            >
-              Alert
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/avatar"
-            >
-              Avatar
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/badge"
-            >
-              Badge
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/banner"
-            >
-              Banner
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/breadcrumb"
-            >
-              Breadcrumb
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/broadcast-message"
-            >
-              Broadcast message
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/button"
-            >
-              Button
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/card"
-            >
-              Card
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/checkbox"
-            >
-              Checkbox
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/date-picker"
-            >
-              Date picker
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/drawer"
-            >
-              Drawer
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/dropdown"
-            >
-              Dropdown
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/file-uploader"
-            >
-              File uploader
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/filter"
-            >
-              Filter
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/form"
-            >
-              Form
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/infinite-scroll"
-            >
-              Infinite scroll
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/label"
-            >
-              Label
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/list"
-            >
-              List
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/markdown"
-            >
-              Markdown
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/modal"
-            >
-              Modal
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/pagination"
-            >
-              Pagination
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/path"
-            >
-              Path
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/popover"
-            >
-              Popover
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/progress-bar"
-            >
-              Progress bar
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/radio-button"
-            >
-              Radio button
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/search"
-            >
-              Search
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/segmented-control"
-            >
-              Segmented control
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/skeleton-loader"
-            >
-              Skeleton loader
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/socks"
-            >
-              Socks
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/sorting"
-            >
-              Sorting
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/spinner"
-            >
-              Spinner
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/table"
-            >
-              Table
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/tabs"
-            >
-              Tabs
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/toast"
-            >
-              Toast
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/toggle"
-            >
-              Toggle
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/token"
-            >
-              Token
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/tooltip"
-            >
-              Tooltip
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/components/tree"
-            >
-              Tree
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Components
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Data visualization
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/data-visualization/overview"
-            >
-              Overview
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/data-visualization/charts"
-            >
-              Charts
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/data-visualization/color"
-            >
-              Color
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/data-visualization/single-stat"
-            >
-              Single stat
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Data visualization
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Regions
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/regions/empty-states"
-            >
-              Empty States
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/regions/filters"
-            >
-              Filters
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/regions/navigation"
-            >
-              Navigation
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/regions/search"
-            >
-              Search
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/regions/settings"
-            >
-              Settings
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Regions
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Objects
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/objects/merge-request"
-            >
-              Merge request
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/objects/report"
-            >
-              Report
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Objects
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Content
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/content/error-messages"
-            >
-              Error messages
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/content/punctuation"
-            >
-              Punctuation
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/content/terminology"
-            >
-              Terminology
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/content/voice-tone"
-            >
-              Voice and tone
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Content
+        </a>
+         
+        <!---->
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Usability
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/usability/error-prevention"
-            >
-              Error prevention
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/usability/helping-users"
-            >
-              Helping users
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/usability/i18n"
-            >
-              Internationalization
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/usability/onboarding-users"
-            >
-              Onboarding users
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Usability
+        </a>
+         
+        <!---->
       </li>
       <li>
         <nuxt-link-stub
@@ -897,59 +320,18 @@ exports[`default layout renders sidebar properly 1`] = `
           GitLab Accessibility Conformance Report
         </nuxt-link-stub>
       </li>
-      <li>
-        <details
-          class="nav-sidebar__section"
+      <li
+        class="nav-sidebar__section"
+      >
+        <a
+          class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
+          href="#"
+          role="button"
         >
-          <summary
-            class="nav-sidebar__section-summary tree-indent-1"
-          >
-            
-      Audit guides
-    
-          </summary>
-           
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/accessibility-audits/accessibility-audits"
-            >
-              Accessibility audits
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/accessibility-audits/keyboard-only"
-            >
-              Keyboard-only
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/accessibility-audits/screen-readers"
-            >
-              Screen readers
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/accessibility-audits/visual"
-            >
-              Visual
-            </nuxt-link-stub>
-          </li>
-          <li>
-            <nuxt-link-stub
-              class="nav-sidebar__section-items-anchor tree-indent-2"
-              to="/accessibility-audits/content"
-            >
-              Content
-            </nuxt-link-stub>
-          </li>
-        </details>
+          Audit guides
+        </a>
+         
+        <!---->
       </li>
     </ul>
     <ul

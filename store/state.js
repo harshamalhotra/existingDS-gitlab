@@ -6,4 +6,5 @@ export const getDefaultFrontmatter = () => ({
 
 export default () => ({
   frontmatter: getDefaultFrontmatter(),
+  activeNavItem: '',
 });

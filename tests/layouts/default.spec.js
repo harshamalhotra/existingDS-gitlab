@@ -1,6 +1,8 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import DefaultLayout from '../../layouts/default.vue';
+import actions from '../../store/actions';
+import mutations from '../../store/mutations';
 import state from '../../store/state';
 
 const localVue = createLocalVue();
@@ -13,6 +15,8 @@ describe('default layout', () => {
   const createComponent = () => {
     store = new Vuex.Store({
       state: state(),
+      actions,
+      mutations,
     });
     wrapper = mount(DefaultLayout, {
       localVue,
