@@ -1,3 +1,10 @@
+# [2.23.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.22.0...v2.23.0) (2021-05-21)
+
+
+### Features
+
+* **GlButton:** Update split dropdown docs based on latest research ([efaa941](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/efaa941afc3e94fe220583469a70be721bd19e51))
+
 # [2.22.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.21.1...v2.22.0) (2021-05-13)
 
 
