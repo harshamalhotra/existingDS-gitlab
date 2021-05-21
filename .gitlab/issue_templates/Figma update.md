@@ -47,10 +47,9 @@ Make sure the following are completed before closing the issue:
      1. [ ] If you’re a community contributor, we ask that you [transfer ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
 1. [ ] **Assignee** (or Maintainer, for community contributions): If it’s a new
    pattern or a significant change, add an agenda item to the next UX weekly call to inform the team.
-1. [ ] **Assignee**: When applicable, create a merge request in this repository 
-   with the [component-guideline template][component-guideline-template]
-   to create or update the component’s documentation page. 
-1. [ ] **Assignee**: When applicable, [create an issue in GitLab UI][new-gitlab-ui-issue] to build or update the component code. Mark the new issue as related to this one.
+1. [ ] **Assignee**: When applicable, [create an MR in this repository][new-gitlab-ui-mr] and apply the "component-guideline" template 
+   to create or update the component’s documentation page. If you do not have capacity, [create an issue in this repository using the "Component documentation" issue template][pajamas-component-documentation-template]. Bring the issue to your team planning session for prioritization and scheduling. Mark the new issue as related to this one.
+1. [ ] **Assignee**: When applicable, [create an issue in GitLab UI using the "Component" issue template][gitlab-ui-component-template] to build or update the component code. Bring the issue to your team planning session for prioritization and scheduling. Mark the new issue as related to this one.
 1. [ ] **Assignee**: 🎉 Congrats, you made it! You can now close this issue.
 
 /label ~"UX" ~"Figma"
@@ -64,4 +63,7 @@ Make sure the following are completed before closing the issue:
 [component-guideline-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/.gitlab/merge_request_templates/component-guideline.md
 [component-archive]: https://www.figma.com/files/project/5472112/Component-archive
 [misc-archive]: https://www.figma.com/files/project/10620392/Misc-archive
-[new-gitlab-ui-issue]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new
+[gitlab-ui-component-template]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new?issuable_template=Component
+[pajamas-component-documentation-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Component%20documentation
+[new-gitlab-ui-mr]: https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/new
+
