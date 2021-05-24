@@ -1,3 +1,10 @@
+# [2.24.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.23.1...v2.24.0) (2021-05-24)
+
+
+### Features
+
+* **GlButton:** Add language around groups of danger buttons ([0f59e7d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f59e7dac9b580d2ba34f58771a8c56cf134c2f2))
+
 ## [2.23.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.23.0...v2.23.1) (2021-05-21)
 
 
