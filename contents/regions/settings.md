@@ -29,6 +29,12 @@ Admin, group, project, and user settings utilize full pages to group different c
 
 Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [voice and tone](/content/voice-tone) guidelines. 
 
+### Locked settings
+
+Settings can be locked by admins or group owners. To visualize this, disable the setting option and add a lock icon with a [popover](/components/popover) to explain the nature of the restriction.
+
+![locked-setting-example.png](/img/locked-setting-example.png)
+
 ### Saving settings
 
 To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/product-foundations/saving-and-feedback#saving-progress).
