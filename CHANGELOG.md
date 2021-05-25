@@ -1,3 +1,10 @@
+# [2.25.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.24.0...v2.25.0) (2021-05-25)
+
+
+### Features
+
+* **Settings:** Adding a lock icon to settings to show state ([faaad59](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/faaad591a75e3000114cd20c12d7e454e28be373))
+
 # [2.24.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.23.1...v2.24.0) (2021-05-24)
 
 
