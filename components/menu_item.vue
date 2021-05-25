@@ -85,7 +85,7 @@ export default {
     >
       <summary
         class="nav-sidebar__section-summary"
-        :class="`nav-sidebar--indent-${depth}`"
+        :class="`tree-indent-${depth}`"
         @click="selectFirstSubItem"
       >
         {{ item.title }}
@@ -104,14 +104,14 @@ export default {
         :href="path"
         target="_blank"
         rel="noopener"
-        :class="`nav-sidebar--indent-${depth}`"
+        :class="`tree-indent-${depth}`"
         class="nav-sidebar__section-items-anchor"
         >{{ item.title }}</a
       >
       <nuxt-link
         v-else
         :to="path"
-        :class="`nav-sidebar--indent-${depth}`"
+        :class="`tree-indent-${depth}`"
         class="nav-sidebar__section-items-anchor"
         >{{ item.title }}</nuxt-link
       >
