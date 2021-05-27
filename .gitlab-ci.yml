@@ -123,8 +123,6 @@ variables:
 
   DANGER_GITLAB_API_TOKEN: $GITLAB_TOKEN
 
-  CS_MAJOR_VERSION: 4 # remove from %14.0; https://gitlab.com/gitlab-org/gitlab/-/issues/327071
-
 include:
   - template: Jobs/Build.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Build.gitlab-ci.yml
   - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.gitlab-ci.yml
