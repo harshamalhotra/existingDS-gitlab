@@ -1,3 +1,10 @@
+# [2.26.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.25.0...v2.26.0) (2021-06-02)
+
+
+### Features
+
+* Support deeper nesting in left sidebar ([9a39965](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9a3996594f8db1ece12d9f52e141d404996957df))
+
 # [2.25.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.24.0...v2.25.0) (2021-05-25)
 
 
