@@ -75,14 +75,22 @@ export default {
   >
     <a
       v-if="hasChildren"
-      role="button"
+      role="menuitem"
       href="#"
       class="nav-sidebar__section-toggle gl-display-block"
       :class="`tree-indent-${depth}`"
+      :aria-expanded="isExpanded"
+      :aria-haspopup="true"
       @click.prevent="toggleActiveNavItem(nextBasePath)"
       >{{ item.title }}</a
     >
-    <ul v-if="isExpanded" class="nav-sidebar__section-submenu" :class="`tree-indent-${depth}`">
+    <ul
+      v-if="isExpanded"
+      class="nav-sidebar__section-submenu"
+      :class="`tree-indent-${depth}`"
+      :aria-label="item.title"
+      role="menu"
+    >
       <menu-item
         v-for="child in item.items"
         :key="child.title"
@@ -104,6 +112,7 @@ export default {
     >
     <nuxt-link
       v-else
+      role="menuitem"
       :to="path"
       :class="`tree-indent-${depth}`"
       class="nav-sidebar__section-items-anchor"

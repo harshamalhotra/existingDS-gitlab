@@ -94,6 +94,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/brand/basics"
         >
           Basics
@@ -102,6 +103,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/brand/resources"
         >
           Resources
@@ -123,9 +125,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Get started
         </a>
@@ -136,9 +139,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Foundations
         </a>
@@ -149,9 +153,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Layout
         </a>
@@ -162,9 +167,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Components
         </a>
@@ -175,9 +181,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Data visualization
         </a>
@@ -188,9 +195,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Regions
         </a>
@@ -201,9 +209,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Objects
         </a>
@@ -214,9 +223,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Content
         </a>
@@ -227,9 +237,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Usability
         </a>
@@ -239,6 +250,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/resources/design-resources"
         >
           Design resources
@@ -259,6 +271,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/research/get-started"
         >
           Get started
@@ -299,6 +312,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/accessibility/a11y"
         >
           Statement of compliance
@@ -307,6 +321,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/accessibility/best-practices"
         >
           Best practices
@@ -315,6 +330,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/accessibility/vpat"
         >
           GitLab Accessibility Conformance Report
@@ -324,9 +340,10 @@ exports[`default layout renders sidebar properly 1`] = `
         class="nav-sidebar__section"
       >
         <a
+          aria-haspopup="true"
           class="nav-sidebar__section-toggle gl-display-block tree-indent-1"
           href="#"
-          role="button"
+          role="menuitem"
         >
           Audit guides
         </a>
@@ -348,6 +365,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/contribute/get-started"
         >
           Get started
@@ -356,6 +374,7 @@ exports[`default layout renders sidebar properly 1`] = `
       <li>
         <nuxt-link-stub
           class="nav-sidebar__section-items-anchor tree-indent-1"
+          role="menuitem"
           to="/contribute/lifecycle"
         >
           Component lifecycle
