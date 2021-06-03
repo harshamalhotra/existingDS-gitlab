@@ -42,6 +42,15 @@ For each of these content types, look for ways you might rephrase text that seem
 | To link Sentry to GitLab, enter your Sentry URL and Auth Token. | In order to link Sentry to GitLab, enter your Sentry URL and Auth Token. |
 | Use this token to validate received payloads. | Use this token to validate the received payloads. |
 
+### Customer perspective
+
+Instead of talking about how GitLab has implemented a feature, write about the action the user wants to take.
+
+| Do  | Don’t |
+| --- |  ---  |
+| [ ] Users can request access | [ ] Allow users to request access |
+| [ ] Users can request access | [ ] Prevent users from requesting access |
+
 ### Avoid Latin abbreviations
 
 While we aim to brief, we also avoid Latin abbreviations as they can be easily misinterpreted.
