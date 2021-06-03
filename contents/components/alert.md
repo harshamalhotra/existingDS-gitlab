@@ -74,7 +74,7 @@ A "sticky" alert uses `position: sticky` to keep critical information in view as
 
 ### Multiple alerts
 
-Todo: Determine pattern for multiple alerts that occur in the same area of a page.
+Multiple alerts should be avoided if at all possible, but if necessary ensure the [placement](#placement) of each is in the same context as the content it relates to. When multiple alerts are present in the same location, order them from most to least severe.
 
 ## Specifications
 
