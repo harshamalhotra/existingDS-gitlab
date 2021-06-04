@@ -1,3 +1,10 @@
+# [2.27.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.26.0...v2.27.0) (2021-06-04)
+
+
+### Features
+
+* **alert:** Add guidelines for showing multiple alerts ([2e7628c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2e7628cfe8d08abbabdbdafb590f3c5197fd9c74))
+
 # [2.26.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.25.0...v2.26.0) (2021-06-02)
 
 
