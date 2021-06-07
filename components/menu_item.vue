@@ -1,5 +1,5 @@
 <script>
-import { mapState, mapActions, mapMutations } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'MenuItem',
@@ -49,8 +49,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['toggleActiveNavItem']),
-    ...mapMutations(['setActiveNavItem']),
+    ...mapMutations(['setActiveNavItem', 'toggleActiveNavItem']),
   },
 };
 </script>
