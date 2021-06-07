@@ -1,3 +1,10 @@
+# [2.28.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.27.0...v2.28.0) (2021-06-07)
+
+
+### Features
+
+* **toggle:** Add clarity around when to use a toggle vs. other components ([c346a44](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c346a44ad54eb59eef63dce38320bf3e0cfedc7a))
+
 # [2.27.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.26.0...v2.27.0) (2021-06-04)
 
 
