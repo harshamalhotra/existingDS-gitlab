@@ -4,6 +4,7 @@ import glob from 'glob';
 import { startCase } from 'lodash';
 import { parse } from 'node-html-parser';
 import sass from 'sass';
+import webpack from 'webpack';
 import { getContentList, writeContentTree } from './modules/content_preparer';
 
 const routes = [
@@ -218,6 +219,10 @@ module.exports = {
         include: /node-modules/,
         loader: 'css-loader',
       });
+
+      // Silence webpack warnings about moment/pikaday not being able to resolve.
+      // Pikaday is a dependency of gitlab-ui.
+      config.plugins.push(new webpack.IgnorePlugin(/moment/, /pikaday/));
     },
 
     transpile: [
