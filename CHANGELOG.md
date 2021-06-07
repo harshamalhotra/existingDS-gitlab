@@ -1,3 +1,10 @@
+# [2.29.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.28.0...v2.29.0) (2021-06-07)
+
+
+### Features
+
+* **checkbox:** Added checkbox guidance about positive state ([a304e62](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a304e622c099c430c0165767f10f7eacccb0b1c1))
+
 # [2.28.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.27.0...v2.28.0) (2021-06-07)
 
 
