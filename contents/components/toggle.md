@@ -14,21 +14,27 @@ A toggle is a visual switch which acts as a boolean.
 
 ## Usage
 
-Use toggles when there is a choice between two selections, it has a default state, the results are effective and noticeable immediately, and there is **no need** for a user to click a submit button.
+### Use a toggle when:
 
-Avoid using toggles when a submit button is needed. This confuses users and dilutes the experience by preventing instant results.
+- There's a binary choice for enabling a setting ([ux-research#1215](https://gitlab.com/gitlab-org/ux-research/-/issues/1215#note_492752885)). For examples, choices that follow a pattern of on/off, true/false, enable/disable, or activate/deactivate.
+- The item being toggled has a default state. For example, notifications default to off for a merge request you haven't participated in. 
+- The result of changing the toggle state is immediately effective and there's **no need** for an additional action to apply or save a change.
 
-Use the following table to see when a toggle should be used over other alternative components.
+Consider providing feedback of the toggle state change by using a [toast](/components/toast).
 
-|  | [Single checkbox](/components/checkbox) | [Toggle](/components/toggle) | [Single-select dropdown](/components/dropdown) | [Radio buttons](/components/radio-button) | [Segmented control](/components/segmented-control) | [Multiple checkboxes](/components/checkbox) | [Multi-select dropdown](/components/dropdown) |
-|---|---|---|---|---|---|---|---|
-| Available options | 1 | 1 | >1 or unknown | >1 and <6 | >1 and <6 | >1 and <6 | >1 or unknown |
-| Selectable options | 1 | 1 | 1 | 1 | 1 | >1 or even all | >1 or even all |
-| Pre-selected options | Possible | Possible | Possible | Yes, 1 | Yes, 1 | Possible | Possible |
-| Disabled options | Possible | Possible | Possible | Possible | No | Possible | Possible |
-| Option descriptions | Possible | Possible | Possible | Possible | No | Possible | Possible |
-| UI space | Little room | Not a problem | Little room | Not a problem | Not a problem | Not a problem | Little room |
-| Example | Accepting terms and conditions on sign up | Enabling/disabling project features | “Sort by” dropdowns | Project visibility setting | 7, 30, 90 days timeframe in analytics dashboards | Scopes selection in User settings > Applications | Add/remove labels |
+### Do not use a toggle when:
+
+- A submit button is needed to apply or save a selection.
+- When the setting exists within a form that has other elements, like text inputs or checkboxes, that need to be saved or submitted.
+- Two choices don't map to a boolean relationship like on/off.
+- There are more than two choices.
+
+If the scenario doesn't align with the usage outlined above, consider using a:
+
+- [Checkbox](/components/checkbox) when multiple items can be selected, including nested items, and the result of the selection has to be saved or submitted.
+- [Radio button](/components/radio-button) when only one item can be selected and the result of the selection has to be saved or submitted.
+- [Dropdown](/components/dropdown) to make a selection from a list of items.
+- [Segmented control](/components/segmented-control) to change a content view or preference in the context of that content.
 
 ### Labels
 
@@ -53,3 +59,4 @@ Toggles should use high-contrast colors to indicate the states - On and Off.
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A282)
+
