@@ -144,7 +144,7 @@ Truncate long text strings with an ellipsis (“…”). On hover, the truncated
 
 Use white space in tables to improve scannability, visually separating data elements so that each can be individually identified and read as separate from the others.
 
-To help with styling, use horizontal lines between rows to visually separate content. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
+To help with styling, use horizontal lines between rows to visually separate content, including the last row item. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 
 Do not apply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 
