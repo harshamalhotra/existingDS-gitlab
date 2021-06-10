@@ -108,12 +108,12 @@ export default {
           <h1>{{ componentAttributes.name }}</h1>
         </div>
         <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles" lazy>
-          <gl-tab title="Design" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
+          <gl-tab title="Usage" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
             <md-display :prerendered-md="componentBody" />
             <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
           </gl-tab>
           <gl-tab
-            title="Vue Component"
+            title="Implementation"
             :active="this.$route.params.tab === 'code'"
             class="app-styles js-gl-tab"
             @click.prevent="activateTab('code')"

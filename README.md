@@ -33,18 +33,17 @@ We use conventional commits specifications to write meaningful commit messages t
 ### Writing component documentation
 
 When starting from scratch:
+
 1. Copy the contents from `pages/components/template.md`
 1. Paste the contents in an existing placeholder file in `contents/components/` or create a new file and call it `componentname.md`
 1. Edit and write your documentation
 1. Include your new page in the navigation. [Learn more about populating the navbar].
 
-[Learn more about populating the navbar]: /doc/navbar.md
+[learn more about populating the navbar]: /doc/navbar.md
 
 ### Writing component examples
 
-Component examples can be included in component docs and are available in the **Vue component**
-tab when they are associated with a documentation page. Component examples should be used over static images
-whenever possible.
+Component examples can be included in component docs and are available in the **Implementation** tab when they are associated with a documentation page. Component examples should be used over static images whenever possible.
 
 [Learn how to write and use component examples](/doc/component-examples.md).
 

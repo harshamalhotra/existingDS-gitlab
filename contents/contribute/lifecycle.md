@@ -7,24 +7,24 @@ The goal of this process is to make it easy to: submit new designs (including do
 The component lifecycle has the following stages:
 
 - **Create:** A need for a component is identified. The component is added to the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) in Figma and usage guidelines are written.
-~"pajamas::create"
+  ~"pajamas::create"
 - **Build:** The component is added to gitlab-ui, including examples
-and documentation. The component is added to Pajamas. ~"pajamas::build"
+  and documentation. The component is added to Pajamas. ~"pajamas::build"
 - **Style:** Each component is styled according to the design specs found in
-Pajamas. Components function correctly and match usage guidelines. ~"pajamas::style"
+  Pajamas. Components function correctly and match usage guidelines. ~"pajamas::style"
 - **Integrate:** The documented component is integrated into GitLab the
-product. ~"pajamas::integrate"
+  product. ~"pajamas::integrate"
 
 Some stages may happen in tandem, depending on how mature the component currently
 is. For example:
 
 - If the component is already in GitLab and widely used, **build** and
-**style** stages may happen together. This often involves migrating styles from GitLab
-to gitlab-ui.
+  **style** stages may happen together. This often involves migrating styles from GitLab
+  to gitlab-ui.
 - If the component is not yet available as a Vue component, the **style** stage
-may come after the **build** stage.
+  may come after the **build** stage.
 - If a component is brand new, the **create** stage may need some revisions as the
-**build** and **style** stages progress.
+  **build** and **style** stages progress.
 
 The **integrate** stage will come last and could involve removing old HAML components
 in order to replace them with the newly defined Vue components.
@@ -37,7 +37,7 @@ help facilitate this decision, you should be able to answer the following questi
 - Is this a new component or a variation of an existing one?
 - Why do existing components not support this use case?
 - Will this component be reused beyond the current scope? Is it relevant to multiple
-use cases?
+  use cases?
 - Is the proposed component technically feasible?
 
 Not all components belong in the design system. These are occasional instances
@@ -50,9 +50,9 @@ a component should be added to Pajamas, use the following to help you make a
 decision:
 
 - If it's unknown whether the component will be used, then wait until we do know
-before putting it in Pajamas.
-- If the component is *only* relevant in one place (and we suspect it will only
-ever be relevant in one place), do not add to Pajamas.
+  before putting it in Pajamas.
+- If the component is _only_ relevant in one place (and we suspect it will only
+  ever be relevant in one place), do not add to Pajamas.
 - If we validate that it’s useful in more than just one place, add it to Pajamas.
 
 We may find over time that a component we once considered unique is more broadly
@@ -75,12 +75,11 @@ the [**build** and **style** diagram](https://gitlab.com/gitlab-org/gitlab-ui/-/
 ## Completing a component
 
 Once a component has gone through the **create**, **build**, and **style** stages,
-it can then be marked as *Complete* on our [status page](https://design.gitlab.com/components/status).
+it can then be marked as _Complete_ on our [status page](https://design.gitlab.com/components/status).
 
-A completed component should not have the warning alert on the Vue tab.
+A completed component should not have the warning alert on the **Implementation** tab.
 
-An MR should be created to add any necessary demos to the Design tab. To prevent
-confusion, we should omit demos until styles are correct.
+An MR should be created to add any necessary demos to the **Usage** tab. To prevent confusion, we should omit demos until styles are correct.
 
 Once a component is complete, add it to the [Engineering Week in Review](https://docs.google.com/document/d/1Oglq0-rLbPFRNbqCDfHT0-Y3NkVEiHj6UukfYijHyUs/edit).
 in order to keep the department informed.

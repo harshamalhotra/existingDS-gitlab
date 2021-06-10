@@ -2,7 +2,7 @@
 
 Component examples are a handy way of demonstrating how a GitLab UI component implements Pajamas
 specifications. They can be included in documentation pages and can be browsed through in the
-**Vue Component** tab when properly linked to a page.
+**Implementation** tab when properly linked to a page.
 
 ## Writing examples
 
@@ -10,18 +10,19 @@ All examples are located in the `/examples/` directory. To create examples for
 a new component, do the following:
 
 1. Create a new directory in `/examples/`. It doesn't matter how deep in the files structure the
-new directory is, as long as it descends from `/examples/`. A good practice would be to mimick
-GitLab UI's files structure, but it is not a requirement. The directory name should be the GitLab UI
-component's name in snake_case, without the `Gl` prefix. For example, you would create a
-`broadcast_message/` directory for the `GlBroadcastMessage` component.
+   new directory is, as long as it descends from `/examples/`. A good practice would be to mimick
+   GitLab UI's files structure, but it is not a requirement. The directory name should be the GitLab UI
+   component's name in snake_case, without the `Gl` prefix. For example, you would create a
+   `broadcast_message/` directory for the `GlBroadcastMessage` component.
 2. In the new directory, create `.vue` files for all of your examples. Examples are basic Vue Single
-File Components. By convention, those files should be named like
-`<component_name>.<example_id>.example.vue`, for example `broadcast_message.basic.example.vue`.
-   * You don't need to explicitly import/register GitLab UI components in examples as they are globally available.
-   * Example templates are visible in the **Vue Component** tab. Keep in mind that, while you can use `<script>` tags in your examples, their content will not be visible in the source panel. Thus, try to rely on the `<template>` as much as possible to make examples more relevant.
+   File Components. By convention, those files should be named like
+   `<component_name>.<example_id>.example.vue`, for example `broadcast_message.basic.example.vue`.
+
+   - You don't need to explicitly import/register GitLab UI components in examples as they are globally available.
+   - Example templates are visible in the **Implementation** tab. Keep in mind that, while you can use `<script>` tags in your examples, their content will not be visible in the source panel. Thus, try to rely on the `<template>` as much as possible to make examples more relevant.
 
 3. Create an `index.js` file in the new directory. This is where you'll register all of your
-examples to make them available in the docs. Here's how this file should look:
+   examples to make them available in the docs. Here's how this file should look:
 
 ```javascript
 // Import all of your examples at the top
@@ -37,7 +38,7 @@ export default [
         // Give your example an ID. Keep this unique across all examples
         id: 'my-component-default',
 
-        // The name will appear in the examples selector in the Vue Component tab
+        // The name will appear in the examples selector in the Implementation tab
         name: 'Default',
 
         // The example component as imported at the top
@@ -62,7 +63,7 @@ example with `[[Example:my-component-default]]`.
 
 ## Enabling the examples selector
 
-To enable the examples selector in a page's **Vue Component** tab, add the component's name to the
+To enable the examples selector in a page's **Implementation** tab, add the component's name to the
 page's frontmatter, in the `vueComponents` section. For example, to associate `GlBroadcastMessage`'s
 examples to `broadcast-message.md`, you would update the frontmatter as follows:
 
