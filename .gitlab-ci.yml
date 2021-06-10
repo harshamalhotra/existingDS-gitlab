@@ -123,6 +123,9 @@ variables:
 
   DANGER_GITLAB_API_TOKEN: $GITLAB_TOKEN
 
+  # If this variable is not present, the migration jobs will not show up.
+  MIGRATE_HELM_2TO3: "true"
+
 include:
   - template: Jobs/Build.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Build.gitlab-ci.yml
   - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.gitlab-ci.yml
@@ -139,6 +142,11 @@ include:
     file: '/semantic-release/.gitlab-ci-template.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
     file: .gitlab-ci-template.yml
+  - remote: https://gitlab.com/hfyngvason/ci-templates/-/raw/master/Helm-2to3.gitlab-ci.yml
+
+.auto-deploy:
+  variables:
+    AUTO_DEVOPS_FORCE_DEPLOY_V2: 1
 
 danger-review:
   image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
