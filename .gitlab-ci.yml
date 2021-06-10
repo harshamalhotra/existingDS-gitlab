@@ -123,9 +123,6 @@ variables:
 
   DANGER_GITLAB_API_TOKEN: $GITLAB_TOKEN
 
-  # If this variable is not present, the migration jobs will not show up.
-  MIGRATE_HELM_2TO3: "true"
-
 include:
   - template: Jobs/Build.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Build.gitlab-ci.yml
   - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.gitlab-ci.yml
