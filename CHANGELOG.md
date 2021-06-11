@@ -1,3 +1,10 @@
+# [2.30.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.29.0...v2.30.0) (2021-06-11)
+
+
+### Features
+
+* **Table:** Add border guideline for last row item ([94dd7a3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/94dd7a320214cfae3db1b9367ddc3ee8c077a6c9))
+
 # [2.29.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.28.0...v2.29.0) (2021-06-07)
 
 
