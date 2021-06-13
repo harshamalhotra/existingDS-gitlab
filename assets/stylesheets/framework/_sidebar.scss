@@ -91,13 +91,9 @@
       padding-top: $gl-spacing-3;
       padding-bottom: $gl-spacing-3;
       padding-right: $gl-spacing-5;
-
-      &,
-      a {
-        display: flex;
-        color: $gray-900;
-        text-decoration: none;
-      }
+      display: flex;
+      color: $gray-900;
+      text-decoration: none;
     }
 
     .nav-sidebar__section-toggle {
