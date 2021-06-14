@@ -87,7 +87,8 @@
 
   .nav-sidebar__section {
     .nav-sidebar__section-title,
-    .nav-sidebar__section-toggle {
+    .nav-sidebar__section-toggle,
+    .nav-sidebar__section-items-anchor {
       padding-top: $gl-spacing-3;
       padding-bottom: $gl-spacing-3;
       padding-right: $gl-spacing-5;
@@ -145,11 +146,6 @@
 
   .nav-sidebar__section-items-anchor {
     cursor: pointer;
-    display: flex;
-    color: $gray-900;
-    padding-top: $gl-spacing-3;
-    padding-bottom: $gl-spacing-3;
-    padding-right: $gl-spacing-5;
 
     &.nuxt-link-active {
       box-shadow: inset ($border-width * 4) 0 0 $gray-700;
