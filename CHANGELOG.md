@@ -1,3 +1,10 @@
+# [2.31.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.30.0...v2.31.0) (2021-06-15)
+
+
+### Features
+
+* **voice-tone:** Added guidance about allow and prevent ([516e2c3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/516e2c349ff15adf2fda00d2c3fb49f813f7ab15))
+
 # [2.30.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.29.0...v2.30.0) (2021-06-11)
 
 
