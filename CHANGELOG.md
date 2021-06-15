@@ -1,3 +1,10 @@
+# [2.32.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.31.0...v2.32.0) (2021-06-15)
+
+
+### Features
+
+* **Toggle:** Update description and help text ([93bf824](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/93bf8246e17a4a454b600d3f2b6361f88f810096))
+
 # [2.31.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.30.0...v2.31.0) (2021-06-15)
 
 
