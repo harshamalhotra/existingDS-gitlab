@@ -32,7 +32,17 @@ Modals should be used when:
 
 When designing an experience that incorporates the need for a modal, but does not match one of the use cases described above, consider one of the following before reverting to a modal:
 
-**Inline content:** Present your content inline to avoid disruption to the user's flow.
+**Inline content:** Present your content inline to avoid disruption to the user’s flow.
+
+**Inline editing:** Edit your content inline to avoid showing a modal or bringing user’s to a new page. Take this table example:
+
+![Content before edit mode](/img/modal/inline-editing-1.svg)
+
+When clicking the `edit` button, users will be put in an "edit mode" for this row, which will make text fields editable through a form input:
+
+![Inline content in edit mode](/img/modal/inline-editing-2.svg)
+
+Once editing is complete, they can `save` their changes and be brought back to the original state, without leaving the page.
 
 **Expanding elements:** Utilize elements such as [popovers](/components/popover), [accordions](/components/accordion), or [drawers](/components/drawer) to present additional information while allowing the user to maintain focus on the page.
 
