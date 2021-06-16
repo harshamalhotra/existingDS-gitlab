@@ -106,6 +106,7 @@ All copy within an alert should be short, actionable, and use clear language. Be
    - Dismissible alerts can be removed by the user and can reappear if an action or system event reproduces the alert.
    - Non-dismissible alerts can only be removed after a system condition is met.   
    - Alerts may contain a dismiss action (in addition to the close button), as well as an additional action button below the body content, depending on the use case.
+   - By default, if a user dismisses an alert, it won't show again unless they're on a different device.
 1. **Message**
    - Alert body copy (required) clarifies what needs to be done. For example, providing next steps, troubleshooting actions, or links to learn about or remedy the event that triggered the alert.
    - Avoid paraphrasing the title if one is included. Write the body copy as if the title was the first sentence of this message.
