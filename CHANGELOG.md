@@ -1,3 +1,12 @@
+## [2.32.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.32.0...v2.32.1) (2021-06-17)
+
+
+### Bug Fixes
+
+* **Alert:** Clarify existing point ([dc2a1f4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dc2a1f4886890cff1571ed66b17970a730245484))
+* **Alert:** Remove initial change ([75a1e3f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/75a1e3faf15b86ea625a44ea0bc3300b8ab28dee))
+* **Alert:** Specify when dismissals reappear ([9f40154](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9f4015455f015d81a0edc235375afeb8b6a54fcb))
+
 # [2.32.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.31.0...v2.32.0) (2021-06-15)
 
 
