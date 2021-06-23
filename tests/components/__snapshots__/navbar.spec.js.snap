@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`default layout renders sidebar properly 1`] = `
+exports[`navbar component renders sidebar properly 1`] = `
 <nav
   class="nav-sidebar"
 >

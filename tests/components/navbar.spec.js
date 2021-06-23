@@ -1,13 +1,13 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import DefaultLayout from '../../layouts/default.vue';
+import Navbar from '../../components/navbar.vue';
 import mutations from '../../store/mutations';
 import state from '../../store/state';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
-describe('default layout', () => {
+describe('navbar component', () => {
   let wrapper;
   let store;
 
@@ -16,7 +16,7 @@ describe('default layout', () => {
       state: state(),
       mutations,
     });
-    wrapper = mount(DefaultLayout, {
+    wrapper = mount(Navbar, {
       localVue,
       store,
       stubs: {
