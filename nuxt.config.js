@@ -78,6 +78,7 @@ module.exports = {
     ],
     bodyAttrs: {
       class: 'ui-indigo',
+      tabindex: '-1',
     },
   },
 

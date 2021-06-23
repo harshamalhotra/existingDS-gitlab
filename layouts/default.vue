@@ -152,7 +152,7 @@ export default {
         <menu-item v-for="item in $options.nav" :key="item.title" :item="item" />
       </div>
     </nav>
-    <div :class="contentWrapper">
+    <main :class="contentWrapper">
       <nuxt />
       <footer class="content footer limited m-b-7">
         <div class="row justify-content-center">
@@ -190,7 +190,7 @@ export default {
           }}</time>
         </p>
       </footer>
-    </div>
+    </main>
   </div>
 </template>
 
