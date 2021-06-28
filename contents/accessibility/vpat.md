@@ -6,7 +6,7 @@ name: GitLab Accessibility Conformance Report
 
 ### Based on VPAT® Version 2.4
 
-- **Name of Product/Version:** GitLab 13.5
+- **Name of Product/Version:** GitLab 13.5. GitLab released version 14.0 on June 22, 2021. There are no material differences in the VPAT conformance levels between 13.5 and 14.0.
 - **Report Date:** December, 2020
 - **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 - **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
