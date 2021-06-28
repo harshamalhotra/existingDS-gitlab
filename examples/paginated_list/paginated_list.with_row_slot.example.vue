@@ -16,7 +16,7 @@
       { id: 'thud' },
     ]"
   >
-    <template slot-scope="{ listItem }">
+    <template #default="{ listItem }">
       <gl-button variant="confirm" class="order-1" @click="alert">
         {{ listItem.id }}
       </gl-button>
