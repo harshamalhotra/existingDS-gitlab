@@ -1,3 +1,10 @@
+# [2.34.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.33.0...v2.34.0) (2021-06-29)
+
+
+### Features
+
+* **Navigation:** add top-menu variant guideline ([2dd5177](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2dd5177c3e1931bf4ae6c832458ae06623c2843d))
+
 # [2.33.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.32.1...v2.33.0) (2021-06-29)
 
 
