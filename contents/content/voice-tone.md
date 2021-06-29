@@ -48,8 +48,10 @@ Instead of talking about how GitLab has implemented a feature, write about the a
 
 | Do  | Don’t |
 | --- |  ---  |
-| [ ] Users can request access | [ ] Allow users to request access |
-| [ ] Users can request access | [ ] Prevent users from requesting access |
+| Users can request access | Allow users to request access |
+| Users can request access | Prevent users from requesting access |
+| Users must be verified to commit | Reject unverified users |
+| Users must have a GitLab account to commit | Check whether the commit author is a GitLab user |
 
 ### Avoid Latin abbreviations
 
