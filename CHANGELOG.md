@@ -1,3 +1,10 @@
+# [2.33.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.32.1...v2.33.0) (2021-06-29)
+
+
+### Features
+
+* **voice-tone:** Updated examples for customer perspective ([310e558](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/310e55813a16adfb5a75984ddbd6e66a5acd5be8))
+
 ## [2.32.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.32.0...v2.32.1) (2021-06-17)
 
 
