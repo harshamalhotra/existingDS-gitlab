@@ -1,3 +1,10 @@
+# [2.36.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.35.0...v2.36.0) (2021-06-30)
+
+
+### Features
+
+* **vpat:** Add language regarding 14.0 version in VPAT ([275c8b3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/275c8b35925f98f780d6d0bcf476c9bec0870522))
+
 # [2.35.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.34.0...v2.35.0) (2021-06-30)
 
 
