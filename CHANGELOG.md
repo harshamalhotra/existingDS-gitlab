@@ -1,3 +1,10 @@
+# [2.35.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.34.0...v2.35.0) (2021-06-30)
+
+
+### Features
+
+* **Modal:** Add inline editing examples under alternatives ([9797fca](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9797fca696e0d2de40c3c1d479571fd1a354cdb6))
+
 # [2.34.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.33.0...v2.34.0) (2021-06-29)
 
 
