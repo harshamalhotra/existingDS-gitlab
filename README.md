@@ -47,6 +47,22 @@ Component examples can be included in component docs and are available in the **
 
 [Learn how to write and use component examples](/doc/component-examples.md).
 
+### Adding images
+
+- When adding images to documentation, wrap the image in a `<figure>` element with a nested `<figcaption>` that explains the figure content in text form for all users.
+- If using an `svg` in an `img`, be sure to add `role="img"` to the element.
+- The `aria-label` on the `<figure>` and `<figcaption>` should be the same content.
+- `<figcaption>` is not a replacement for `alt` text, and when an image is present it must contain meaningful `alt` text.
+
+For more background on the following example structure, refer to ["How do you figure?"](https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html), by Scott O'Hara.
+
+```
+<figure class="figure" role="figure" aria-label="Brief explanation on the figure content (same as figcaption)">
+  <img class="figure-img" src="/img/file-name.svg" alt="Description of the visual" role="img" />
+  <figcaption class="figure-caption">Brief explanation on the figure content (same as figure aria-label)</figcaption>
+</figure>
+```
+
 ### Linting
 
 We control code quality with automatic linting tools like `eslint` and `prettier`.
