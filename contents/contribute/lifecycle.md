@@ -2,32 +2,48 @@
 name: Component lifecycle
 ---
 
-The goal of this process is to make it easy to: submit new designs (including documentation), propose changes to existing designs, and translate component designs into built components.
+The component lifecycle is a flexible set of guidelines to help product teams efficiently and iteratively add components to Pajamas. The goal of this process is to make it easy to submit new designs (including documentation), propose changes to existing designs, and translate component designs into built components.
 
-The component lifecycle has the following stages:
+The component lifecycle has the following stages (identified by labels):
 
-- **Create:** A need for a component is identified. The component is added to the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) in Figma and usage guidelines are written.
-  ~"pajamas::create"
-- **Build:** The component is added to gitlab-ui, including examples
-  and documentation. The component is added to Pajamas. ~"pajamas::build"
-- **Style:** Each component is styled according to the design specs found in
-  Pajamas. Components function correctly and match usage guidelines. ~"pajamas::style"
-- **Integrate:** The documented component is integrated into GitLab the
-  product. ~"pajamas::integrate"
+- **Define:** A need for a component or a gap within an existing component is identified and usage guidelines are written/updated within [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com). <span class="app-styles"><gl-label background-color="#8C73A1" title="pajamas::define" scoped /></span>
+- **Design:** The component is added to the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) in Figma. <span class="app-styles"><gl-label background-color="#7CA189" title="pajamas::design" scoped /></span>
+- **Build:** The component is added to [gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui), including examples
+  and documentation. The component is styled according to design specs found
+  in [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit).
+  Components function correctly, match usage guidelines, and are added to Pajamas. <span class="app-styles"><gl-label background-color="#6787BB" title="pajamas::build" scoped /></span>
+- **Integrate:** The documented component is integrated into [GitLab the
+  product](https://gitlab.com/gitlab-org/gitlab). This stage could involve removing old HAML components
+  in order to replace them with the newly defined Vue components. <span class="app-styles"><gl-label background-color="#A17A73" title="pajamas::integrate" scoped /></span>
 
-Some stages may happen in tandem, depending on how mature the component currently
+Stages may happen in tandem and in different orders, depending on how mature the component currently
 is. For example:
 
-- If the component is already in GitLab and widely used, **build** and
-  **style** stages may happen together. This often involves migrating styles from GitLab
-  to gitlab-ui.
-- If the component is not yet available as a Vue component, the **style** stage
-  may come after the **build** stage.
-- If a component is brand new, the **create** stage may need some revisions as the
-  **build** and **style** stages progress.
+- If the component is already in GitLab and widely used, the **build** stage would involve
+ migrating styles from GitLab to gitlab-ui. The **define** and **design** stages may occur at the same time, or even sometimes after.
+- If a component is brand new, the **define** and **design** stages may need some revisions as the
+  **build** stage progresses.
+- If a component is built in GitLab UI and included in Pajamas, it may be partially
+  **integrated** into the product, even if not all variants needed exist in Pajamas yet.
 
-The **integrate** stage will come last and could involve removing old HAML components
-in order to replace them with the newly defined Vue components.
+## Creating or updating a component
+
+There are three distinct areas that should be reviewed when adding or updating a component:
+
+1. [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
+1. [Pajamas UI Kit (Figma)](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit)
+1. [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui)
+
+The following diagram outlines the various component lifecycle stages and is available to help
+determine how to add or update a component in Pajamas, based on the current state
+of the component. This diagram is meant to be a guide and is flexible to account for the needs
+of your team.
+
+<div class="figma-embed" aria-label="Component lifecycle diagram depicting the various stages of contributing to Pajamas." role="img">
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fsd0mmLWaejswQUSJ3ei3kj%2FComponent-Lifecycle%3Fnode-id%3D77%253A2122" allowfullscreen></iframe>
+</div>
+
+[View component lifecycle in Figma →](https://www.figma.com/file/sd0mmLWaejswQUSJ3ei3kj/Component-Lifecycle?node-id=77%3A2122)
 
 ## Determining whether a component should be included in Pajamas
 
@@ -59,27 +75,41 @@ We may find over time that a component we once considered unique is more broadly
 relevant. In that case, we reevaluate the component to ensure it’s scalable, and
 we add it in.
 
-## Creating a new component
+## Viewing changes in Pajamas
 
-The following diagram outlines the **create** stage and is available to help
-determine when and how a component should be added to Pajamas. Additionally, [see the Component Lifecycle diagram on Figma](https://www.figma.com/file/5kvnjKbcQ8FlzdwrXM80hk/Component-lifecycle-gitlab-design-2053?node-id=1%3A207).
+When a change to GitLab UI is made, it will not be reflected in
+Pajamas until the package is updated. See 
+[Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/doc/updating-gitlab-ui-packages.md) for details.
 
-<img class="d-block a-center m-b-7" src="/img/component-lifecycle.svg" alt="Pajamas Create component lifecycle" role="img" />
+## Component status
 
-## Building and styling components
+Not all Pajamas components are fully integrated within the GitLab product at this 
+time. Some components may be partially integrated and others have been migrated 
+from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui). 
+To view which components have been fully integrated into the product, view our 
+[component status page](https://design.gitlab.com/components/status) within Pajamas.
 
-Next are the **build** and **style** stages. This occurs
-in the [gitLab-ui project](https://gitlab.com/gitlab-org/gitlab-ui) and follows
-the [**build** and **style** diagram](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/doc/component-lifecycle.md).
+GitLab UI components should be used within GitLab even if they do not yet fully 
+conform to design specs.
+
+## Complex components
+
+There are a few cases where components have been migrated from GitLab to
+GitLab UI, but do not yet reflect Pajamas documentation. When a complex component
+is difficult to style or update because many features use it, we recommend creating a migration plan and coordinating with the [Foundations team](https://about.gitlab.com/company/team/?department=fe-ux-foundations-team) on its rollout.
+
+In the past, a `New` version of the component has been created to allow the team to build and
+style the component according to design specs without causing inadvertent side effects to features
+that are already using the migrated Vue component. However, this has led to confusion about which components to use; technical debt involved in migrating the component and not allowing them both to flourish; and follow-on effects keeping other complex components up-to-date. Until there is an officially determined path, we recommend coordinating a plan with the wider group.
 
 ## Completing a component
 
-Once a component has gone through the **create**, **build**, and **style** stages,
+Once a component has gone through the **define**, **design**, and **build** stages,
 it can then be marked as _Complete_ on our [status page](https://design.gitlab.com/components/status).
 
 A completed component should not have the warning alert on the **Implementation** tab.
 
-An MR should be created to add any necessary demos to the **Usage** tab. To prevent confusion, we should omit demos until styles are correct.
+An MR should be created to add any necessary demos to the **Usage** tab. To prevent confusion, we should omit demos until the build phase is complete and the component matches style and usage documentation.
 
-Once a component is complete, add it to the [Engineering Week in Review](https://docs.google.com/document/d/1Oglq0-rLbPFRNbqCDfHT0-Y3NkVEiHj6UukfYijHyUs/edit).
+Once a component is complete, add it to the [Engineering Week in Review](https://docs.google.com/document/d/1Oglq0-rLbPFRNbqCDfHT0-Y3NkVEiHj6UukfYijHyUs/edit)
 in order to keep the department informed.
