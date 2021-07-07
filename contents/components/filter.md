@@ -48,7 +48,7 @@ This is how a user should experience adding a filter:
 1. The user chooses the logical operator (`is` or `is not`) from a dropdown
 1. The user chooses the value of the filter from a dropdown (for example, a `@username`)
 1. The user needs to repeat steps 1–4 for each filter they want to use
-1. Once done, the user needs to confirm the search to trigger it. They do so by clicking on the search button or by using their keyoboard.
+1. Once done, the user needs to confirm the search to trigger it. They do so by clicking on the search button or by using their keyboard.
 
 ## Accessibility guidelines
 
