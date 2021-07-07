@@ -1,3 +1,10 @@
+## [2.36.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.0...v2.36.1) (2021-07-07)
+
+
+### Bug Fixes
+
+* **lifecycle:** Correct description of build phase ([77f061e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/77f061e79c7b2f39ee2ce9f025bef7701ec6e21a))
+
 # [2.36.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.35.0...v2.36.0) (2021-06-30)
 
 
