@@ -1,3 +1,10 @@
+## [2.36.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.1...v2.36.2) (2021-07-08)
+
+
+### Bug Fixes
+
+* **lifecycle:** Use prototype link to fix links in figma embed ([9c72277](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9c722770fc22d4817553394494ef95523857ef83))
+
 ## [2.36.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.0...v2.36.1) (2021-07-07)
 
 
