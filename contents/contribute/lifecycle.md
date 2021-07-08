@@ -40,7 +40,7 @@ of the component. This diagram is meant to be a guide and is flexible to account
 of your team.
 
 <div class="figma-embed" aria-label="Component lifecycle diagram depicting the various stages of contributing to Pajamas." role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fsd0mmLWaejswQUSJ3ei3kj%2FComponent-Lifecycle%3Fnode-id%3D77%253A2122" allowfullscreen></iframe>
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fsd0mmLWaejswQUSJ3ei3kj%2FComponent-Lifecycle%3Fpage-id%3D0%253A1%26node-id%3D77%253A2122%26viewport%3D-2283%252C1047%252C0.36993077397346497%26scaling%3Dscale-down" allowfullscreen></iframe>
 </div>
 
 [View component lifecycle in Figma →](https://www.figma.com/file/sd0mmLWaejswQUSJ3ei3kj/Component-Lifecycle?node-id=77%3A2122)
