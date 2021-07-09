@@ -289,8 +289,7 @@
         "title": "Objects",
         "path": "objects",
         "items": [
-          { "title": "Merge request", "path": "merge-request" },
-          { "title": "Report", "path": "report" }
+          { "title": "Merge request", "path": "merge-request" }
         ]
       },
       {
