@@ -1,3 +1,10 @@
+# [2.38.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.37.0...v2.38.0) (2021-07-09)
+
+
+### Features
+
+* **badge:** Add definitions around badge size ([a40f1e6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a40f1e68a351142f09bf78828bba461f9407f801))
+
 # [2.37.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.2...v2.37.0) (2021-07-09)
 
 
