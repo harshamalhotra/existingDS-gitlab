@@ -1,3 +1,10 @@
+# [2.37.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.2...v2.37.0) (2021-07-09)
+
+
+### Features
+
+* **colorPicker:** Add color picker to docs ([f616b81](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f616b81ef5ef1ff1532ebd0739c694bb751f22e3))
+
 ## [2.36.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.36.1...v2.36.2) (2021-07-08)
 
 
