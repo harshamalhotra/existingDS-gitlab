@@ -131,6 +131,10 @@
             "path": "checkbox"
           },
           {
+            "title": "Color picker",
+            "path": "color-picker"
+          },
+          {
             "title": "Date picker",
             "path": "date-picker"
           },
