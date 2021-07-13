@@ -86,8 +86,6 @@ Pajamas until the package is updated. See
 Not all Pajamas components are fully integrated within the GitLab product at this 
 time. Some components may be partially integrated and others have been migrated 
 from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui). 
-To view which components have been fully integrated into the product, view our 
-[component status page](https://design.gitlab.com/components/status) within Pajamas.
 
 GitLab UI components should be used within GitLab even if they do not yet fully 
 conform to design specs.
@@ -103,9 +101,6 @@ style the component according to design specs without causing inadvertent side e
 that are already using the migrated Vue component. However, this has led to confusion about which components to use; technical debt involved in migrating the component and not allowing them both to flourish; and follow-on effects keeping other complex components up-to-date. Until there is an officially determined path, we recommend coordinating a plan with the wider group.
 
 ## Completing a component
-
-Once a component has gone through the **define**, **design**, and **build** stages,
-it can then be marked as _Complete_ on our [status page](https://design.gitlab.com/components/status).
 
 A completed component should not have the warning alert on the **Implementation** tab.
 

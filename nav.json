@@ -87,10 +87,6 @@
         "path": "components",
         "items": [
           {
-            "title": "Status",
-            "path": "status"
-          },
-          {
             "title": "Accordion",
             "path": "accordion"
           },

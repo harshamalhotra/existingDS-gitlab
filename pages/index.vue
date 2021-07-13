@@ -66,9 +66,7 @@
               guidelines, branding, research methodologies, and more!
             </p>
             <p class="max-w-sm">
-              Start by looking into our
-              <a href="/components/status">interface components documentation</a>, including live
-              Vue components.
+              Start by looking into the component documentation, including live examples.
             </p>
           </div>
         </div>
