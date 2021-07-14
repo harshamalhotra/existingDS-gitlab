@@ -1,3 +1,10 @@
+# [2.39.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.38.0...v2.39.0) (2021-07-14)
+
+
+### Features
+
+* **Color:** Add color theme notes ([73a71fb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/73a71fb782340f19e2f42facbd3a86686a757322))
+
 # [2.38.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.37.0...v2.38.0) (2021-07-09)
 
 
