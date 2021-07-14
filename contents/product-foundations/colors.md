@@ -875,6 +875,7 @@ Though deciding which color to use depends on the situation, here are some gener
 ## Neutral palette
 
 Our neutral palette is primarily used within components to help differentiate hierarchy. Shades of gray can be used as backgrounds, borders, and shadows to emphasize certain areas or set them apart.
+
     <div class="distributed palette neutral">
       <div class="color">
         <div class="color-overview c-white-background p-t-3 p-r-5 p-b-3 p-l-5">
@@ -968,6 +969,7 @@ Our neutral palette is primarily used within components to help differentiate hi
 ## Transparencies
 
 Transparencies are used only to indicate hover and active states within themes. Each theme has its own series of four transparencies to utilize with alpha levels ranging from 0.02 to 0.08.
+
     <div class="distributed palette neutral m-b-6">
       <div class="color">
         <div class="color-overview t-gray-a-02 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1005,11 +1007,15 @@ Transparencies are used only to indicate hover and active states within themes. 
 
 ## Themes
 
-There are seven different theme options that users can choose to customize the appearance of the application header and navigation sidebar. Each theme draws inspiration from one of our primary chromatic colors, the neutral palette, or the corporate indigo color.
+There are ten different theme options in GitLab that a user can choose from to customize the appearance of the application header and navigation sidebar. Each theme draws inspiration from one of our primary chromatic colors, the neutral palette, or the corporate indigo color.
+
+- Indigo and light indigo share the same `$t-indigo-` variables.
+- Green and light green share the same `$t-green-` variables.
+- Dark and light share the same `$t-gray-` variables.
 
 <div class="row m-b-6">
   <div class="col col-25 md p-b-7">
-    <h3>Indigo</h3>
+    <h3>Indigo / Light indigo</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-indigo-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1080,7 +1086,7 @@ There are seven different theme options that users can choose to customize the a
     </div>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Dark Blue</h3>
+    <h3>Blue</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1151,7 +1157,7 @@ There are seven different theme options that users can choose to customize the a
     </div>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Light Blue</h3>
+    <h3>Light blue</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-light-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1222,7 +1228,7 @@ There are seven different theme options that users can choose to customize the a
     </div>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Green</h3>
+    <h3>Green / Light green</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1293,7 +1299,7 @@ There are seven different theme options that users can choose to customize the a
     </div>
   </div>
   <div class="col col-25 md m-t-7">
-    <h3>Dark Red</h3>
+    <h3>Red</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1364,7 +1370,7 @@ There are seven different theme options that users can choose to customize the a
     </div>
   </div>
   <div class="col col-25 md m-t-7">
-    <h3>Light Red</h3>
+    <h3>Light red</h3>
     <div class="distributed palette">
       <div class="color">
         <div class="color-overview t-light-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1436,81 +1442,8 @@ There are seven different theme options that users can choose to customize the a
   </div>
 
   <div class="col col-25 md m-t-7">
-    <h3>Neutral</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-gray-10 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-10</span>
-          <span class="hex f-small">#fafafa</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-50</span>
-          <span class="hex f-small">#f0f0f0</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-100</span>
-          <span class="hex f-small">#dbdbdb</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-200</span>
-          <span class="hex f-small">#bfbfbf</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-300</span>
-          <span class="hex f-small">#999999</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-400</span>
-          <span class="hex f-small">#868686</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-500</span>
-          <span class="hex f-small f-inverted">#666666</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-600</span>
-          <span class="hex f-small f-inverted">#5e5e5e</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-700</span>
-          <span class="hex f-small f-inverted">#525252</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-800</span>
-          <span class="hex f-small f-inverted">#404040</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-900</span>
-          <span class="hex f-small f-inverted">#303030</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-gray-950</span>
-          <span class="hex f-small f-inverted">#1f1f1f</span>
-        </div>
-      </div>
-    </div>
+    <h3>Dark / Light</h3>
+    <p>The dark and light (gray) themes use the <a href="#neutral-palette">neutral palette</a>.</p>
   </div>
 </div>
 
