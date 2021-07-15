@@ -1,3 +1,10 @@
+## [2.39.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.0...v2.39.1) (2021-07-15)
+
+
+### Bug Fixes
+
+* **banner:** Update SVG URL in examples ([082151f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/082151f1f5db21882be7b4b5de64a77eb28b3ad8))
+
 # [2.39.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.38.0...v2.39.0) (2021-07-14)
 
 
