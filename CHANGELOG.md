@@ -1,3 +1,10 @@
+## [2.39.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.1...v2.39.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* **Color:** Reset html indentation ([aadae0a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aadae0a67cb2bbe38518aa2be494144234ee793a))
+
 ## [2.39.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.0...v2.39.1) (2021-07-15)
 
 
