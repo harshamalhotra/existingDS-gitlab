@@ -875,7 +875,6 @@ Though deciding which color to use depends on the situation, here are some gener
 ## Neutral palette
 
 Our neutral palette is primarily used within components to help differentiate hierarchy. Shades of gray can be used as backgrounds, borders, and shadows to emphasize certain areas or set them apart.
-
     <div class="distributed palette neutral">
       <div class="color">
         <div class="color-overview c-white-background p-t-3 p-r-5 p-b-3 p-l-5">
@@ -969,7 +968,6 @@ Our neutral palette is primarily used within components to help differentiate hi
 ## Transparencies
 
 Transparencies are used only to indicate hover and active states within themes. Each theme has its own series of four transparencies to utilize with alpha levels ranging from 0.02 to 0.08.
-
     <div class="distributed palette neutral m-b-6">
       <div class="color">
         <div class="color-overview t-gray-a-02 p-t-3 p-r-5 p-b-3 p-l-5">
