@@ -1,3 +1,10 @@
+# [2.40.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.2...v2.40.0) (2021-07-21)
+
+
+### Features
+
+* **UserHelp:** Encourage usage of popover with help icon ([7453343](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7453343b510ccaafc40fbb7da7ed5b7272af2358))
+
 ## [2.39.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.1...v2.39.2) (2021-07-21)
 
 
