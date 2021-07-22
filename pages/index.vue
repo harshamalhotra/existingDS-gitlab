@@ -80,7 +80,7 @@
             <p class="max-w-sm">
               We encourage any feedback and ideas towards the design system itself as well! If you
               are interested in contributing, check out our
-              <a href="/contribute/get-started">guidelines</a> to get started. Have any questions?
+              <a href="/get-started/contribute">guidelines</a> to get started. Have any questions?
               Open an issue on our
               <a
                 target="_blank"

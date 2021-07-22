@@ -1,5 +1,5 @@
 ---
-name: Get started
+name: Contribute
 ---
 
 Thank you for your interest in contributing to the Pajamas Design System! We
@@ -24,7 +24,7 @@ Creating an issue for each change allows us to easily track all proposals in one
 place. For changes that affect visual designs or user experiences, it can be
 helpful to include a mockup.
 
-Additionally, if you want to add a new component or edit an existing one, familiarize yourself with our [Component Lifecycle](https://design.gitlab.com/contribute/lifecycle/).
+Additionally, if you want to add a new component or edit an existing one, familiarize yourself with our [Component Lifecycle](lifecycle).
 
 ### UX proposals
 
@@ -43,20 +43,20 @@ to review and provide feedback.
 To make changes within our Design System, follow these instructions:
 
 1. Choose an issue to work on. If one does not exist, please review the
-contribution guidelines regarding creating a new one. This opens the conversation
-and allows feedback to happen early, preventing risks such as duplicated or
-unnecessary work. It can be helpful to comment in the issue to verify that no one
-is working on it and that the issue is still relevant.
+   contribution guidelines regarding creating a new one. This opens the conversation
+   and allows feedback to happen early, preventing risks such as duplicated or
+   unnecessary work. It can be helpful to comment in the issue to verify that no one
+   is working on it and that the issue is still relevant.
 1. Fork [this project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com).
 1. Make changes reflecting the issue you’ve chosen to work on.
 1. Create a merge request using the [`component-guideline` template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/.gitlab/merge_request_templates/component-guideline.md). The earlier you open a merge request, the sooner you
-can get feedback. You can mark it as a Work in Progress (WIP) to signal that you’re
-not done yet.
+   can get feedback. You can mark it as a Work in Progress (WIP) to signal that you’re
+   not done yet.
 1. We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) in Pajamas, so make sure you write commits this way in your merge request. [How to write conventional commits](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md).
 1. Get your merge request approved. If your changes involved a new guideline or
-UX paradigm, then ping a [UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-to approve your changes. If your changes involve an update to frontend implementation,
-ping a [frontend reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-to approve. Some merge requests will require both a UX and frontend approver.
+   UX paradigm, then ping a [UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
+   to approve your changes. If your changes involve an update to frontend implementation,
+   ping a [frontend reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
+   to approve. Some merge requests will require both a UX and frontend approver.
 1. Get your changes merged! After the necessary approvals have been added, a UX
-or frontend maintainer can then merge your merge request. 🙌
+   or frontend maintainer can then merge your merge request. 🙌

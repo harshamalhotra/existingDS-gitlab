@@ -21,12 +21,20 @@
         "path": "get-started",
         "items": [
           {
+            "title": "Contribute",
+            "path": "contribute"
+          },
+          {
             "title": "Principles",
             "path": "principles"
           },
           {
             "title": "Structure",
             "path": "structure"
+          },
+          {
+            "title": "Component lifecycle",
+            "path": "lifecycle"
           }
         ]
       },
@@ -385,14 +393,6 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "title": "Contribute",
-    "path": "contribute",
-    "items": [
-      { "title": "Get started", "path": "get-started" },
-      { "title": "Component lifecycle", "path": "lifecycle" }
     ]
   }
 ]

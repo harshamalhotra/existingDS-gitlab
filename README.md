@@ -2,7 +2,7 @@
 
 [GitLab's design system](https://design.gitlab.com/) is our single source of truth (SSOT) for resources, components, and design guidelines. Pajamas pulls in components from [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui), which are in turn used within the product. Our [Figma UI kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) is used as a reference for building SSOT components, but is not the SSOT itself.
 
-To learn more about how we create, build, style, and implement components, read the [Component Lifecycle](https://design.gitlab.com/contribute/lifecycle/) documentation.
+To learn more about how we create, build, style, and implement components, read the [Component Lifecycle](https://design.gitlab.com/get-started/lifecycle/) documentation.
 
 ## Prerequisites
 

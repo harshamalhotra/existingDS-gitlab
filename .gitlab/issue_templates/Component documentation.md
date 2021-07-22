@@ -13,7 +13,7 @@ Make sure the following are completed before closing the issue:
 1. [ ] When introducing a major or breaking change, communicate the changes within the Engineering Week in Review and UX Weekly meeting.
 1. [ ] 🎉 Congrats, you made it! You can now close this issue.
 
-<!-- 
+<!--
 ### Resources
 
 * [Compontent Lifecycle][component-lifecycle]
@@ -22,6 +22,6 @@ Make sure the following are completed before closing the issue:
 /label ~"pajamas::create"
 
 [gitlab-ui-mr]: https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/new
-[component-lifecycle]: https://design.gitlab.com/contribute/lifecycle
+[component-lifecycle]: https://design.gitlab.com/get-started/lifecycle
 [pajamas-figma-update-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Figma%20update
 [gitlab-ui-component-template]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new?issuable_template=Component
