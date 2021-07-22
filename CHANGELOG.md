@@ -1,3 +1,10 @@
+# [2.41.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.40.0...v2.41.0) (2021-07-22)
+
+
+### Features
+
+* **Navigation:** Move contributing content ([020505f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/020505ff7ec075e7e977c2d562e5ba6235ba4dab))
+
 # [2.40.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.39.2...v2.40.0) (2021-07-21)
 
 
