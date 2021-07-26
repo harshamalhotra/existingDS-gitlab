@@ -501,6 +501,9 @@ Todo: Include example of chart with divergent data
 ### Data associated with system status
 
 Colors are often associated with system status in data visualizations (for example, green for success and red for failure). However, because using green and red together can be problematic for some color blindness conditions, try to utilize the recommended palette as a first pass.
+
+When representing a success status alone against the generic data, use `$data-viz-blue-500` for all and `$data-viz-green-700` for success.
+
 If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types. 
 
 Todo: Include example of recommended color combinations
