@@ -315,6 +315,10 @@
             "path": "error-prevention"
           },
           {
+            "title": "Feature management",
+            "path": "feature-management"
+          },
+          {
             "title": "Helping users",
             "path": "helping-users"
           },
