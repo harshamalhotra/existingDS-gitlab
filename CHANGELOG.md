@@ -1,3 +1,10 @@
+# [2.43.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.42.0...v2.43.0) (2021-07-26)
+
+
+### Features
+
+* **usability:** Add guidelines for feature configuration and feature discovery moments ([1611377](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1611377b19d5c8033a1c6f235a65ccc36d582aa0))
+
 # [2.42.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.41.0...v2.42.0) (2021-07-26)
 
 
