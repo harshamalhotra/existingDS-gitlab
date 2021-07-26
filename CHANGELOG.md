@@ -1,3 +1,10 @@
+# [2.42.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.41.0...v2.42.0) (2021-07-26)
+
+
+### Features
+
+* **DataViz:** included note for all vs success ([6710f52](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6710f52c62948443ea50f4ee1edd8c9116f8dc6c))
+
 # [2.41.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.40.0...v2.41.0) (2021-07-22)
 
 
