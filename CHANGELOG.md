@@ -1,3 +1,10 @@
+# [2.44.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.43.0...v2.44.0) (2021-07-26)
+
+
+### Features
+
+* **type:** Structure all type content together under one sub-section ([052b65c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/052b65cccc55876de866db683fd12b43679807bb))
+
 # [2.43.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.42.0...v2.43.0) (2021-07-26)
 
 
