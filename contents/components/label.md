@@ -19,7 +19,11 @@ Labels are usually displayed in that object's detail page and in list views, nex
 
 In most places, a label's description is shown in a [tooltip](/components/tooltip) when hovering the label. But if the label's description appears on the page with no need for user interaction, do not show it in a tooltip.
 
-Scoped labels are a sub-type of labels, and their usage is determined by the user. A scoped label is differentiated from a regular label by the contrasting colors on the left and right sides of the label.
+### Scoped labels
+
+Scoped labels are a unique type of label, characterized by their mutually exclusive behavior. Each scoped label has a `key` and a `value`. An issue, epic, or merge request can only have one scoped label of a specific `key`. For example, if an issue has the label `workflow::ready for design`, it cannot have any other `workflow::` labels at the same time. Applying a second `workflow::` label will automatically replace the former. 
+
+A scoped label is visually differentiated from a regular label by the contrasting colors on the left and right sides of the label.
 
 ## Demo
 
