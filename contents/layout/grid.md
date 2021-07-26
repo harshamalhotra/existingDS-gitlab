@@ -66,7 +66,7 @@ When text is used within a UI element, set the line-height to be consistent with
 
 ### Typography
 
-All typography aligns to a 4px baseline grid. This allows for readable line heights at all sizes. See our [typography](/foundations/typography) for more information about how to use our type scale.
+All typography aligns to a 4px baseline grid. This allows for readable line heights at all sizes. See our [type scale documentation](/product-foundations/type-scales) for more information.
 
 #### UI typography
 

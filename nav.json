@@ -68,7 +68,20 @@
           },
           {
             "title": "Typography",
-            "path": "typography"
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "type-fundamentals"
+              },
+              {
+                "title": "Type Scales",
+                "path": "type-scales"
+              },
+              {
+                "title": "Markdown",
+                "path": "type-markdown"
+              }
+            ]
           }
         ]
       },
@@ -173,10 +186,6 @@
           {
             "title": "List",
             "path": "list"
-          },
-          {
-            "title": "Markdown",
-            "path": "markdown"
           },
           {
             "title": "Modal",

@@ -1,7 +1,8 @@
 ---
-name: Typography
+name: Type fundamentals
 related:
-  - /components/markdown
+  - /product-foundations/type-scales
+  - /product-foundations/type-markdown
 ---
 
 ## Typeface
@@ -15,26 +16,6 @@ Todo: Add codeblock showing body font variable stack
 ### Monospace font stack
 
 Todo: Add codeblock showing monospace variable stack
-
-## UI typescale
-
-UI typography is used for any text within GitLab that is not [Markdown](/components/markdown).
-
-### Base
-
-`14px` is the base size of body copy for UI typography.
-
-### Label text
-
-Our UI type scale includes “label” text which is used for short-form content. Label text differs from long-form text because it doesn’t include margins which allows for easier alignment with other UI elements.
-
-Long-form content includes copy in modals and empty states, whereas short-form content includes help text and popover messages.
-
-### Responsive
-
-The `h1` and `h2` headers within our UI type scale are responsive. All other type options within this scale are not dependent on screen size.
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A334)
 
 ## Font weight
 

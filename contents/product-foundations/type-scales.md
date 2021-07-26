@@ -1,12 +1,31 @@
 ---
-name: Markdown
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=19965%3A0
-docs: in-progress
+name: Type Scales
 related:
-  - /product-foundations/typography
+  - /product-foundations/type-fundamentals
+  - /product-foundations/type-markdown
 ---
 
-Markdown is used for formatting text content within GitLab.
+GitLab utilizes three type scales depending on the context: UI, Documentation Markdown, and Compact Markdown.
+
+## UI type scale
+
+UI typography is used for any text within GitLab that is not markdown.
+
+### Base
+
+`14px` is the base size of body copy for UI typography.
+
+### Label text
+
+Our UI type scale includes “label” text which is used for short-form content. Label text differs from long-form text because it doesn’t include margins which allows for easier alignment with other UI elements.
+
+Long-form content includes copy in modals and empty states, whereas short-form content includes help text and popover messages.
+
+### Responsive
+
+The `h1` and `h2` headers within our UI type scale are responsive. All other type options within this scale are not dependent on screen size.
+
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A334)
 
 ## Documentation Markdown type scale
 
@@ -36,18 +55,3 @@ Within certain views, the Markdown type scale is decreased in order to more clos
 The `h1` header within our compact Markdown scale is responsive. All other type options within this scale are not dependent on screen size.
 
 [View Compact Markdown type scale in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=542%3A132)
-
-
-## Inline code
-
-Highlight inline text as `<code>`. For example, a short line of code, a CSS class, or a variable. The size of the text will adjust based on the parent text size.
-
-[View inline code design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=29627%3A56)
-
-## Code blocks
-
-Wrap a block of `<code>` within a `<pre>` element. For example, multi-line code that has syntax highlighting. The size of the text will adjust based on the parent text size.
-
-A code block fits the width of the parent container and its content scrolls horizontally if it overflows the block.
-
-[View code block design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=19965%3A13)
