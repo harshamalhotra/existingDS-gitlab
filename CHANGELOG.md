@@ -1,3 +1,10 @@
+# [2.45.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.44.0...v2.45.0) (2021-07-27)
+
+
+### Features
+
+* **Popover:** Add delay docs for popovers ([250da4c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/250da4c93ad40c9c8ca65ab1a51b65e1ea6a5524))
+
 # [2.44.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.43.0...v2.44.0) (2021-07-26)
 
 
