@@ -17,7 +17,7 @@ A tooltip fades in upon hover or focus on the trigger element. It remains open u
 
 Tooltips display unique data, and shouldn’t repeat information that is shown near the referring element. Information provided in a tooltip should be short and concise. The text will wrap when the content is wider than the max-width.
 
-A tooltip has a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
+Similar to [popovers](/components/popover), a tooltip has a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
 
 - A user doesn’t accidentally hover an element with a tooltip, which might cover an adjacent element they intended to select.
 - The UI isn't constantly showing tooltips when a user is moving their mouse over the page.
@@ -51,12 +51,6 @@ Do not use tooltips to:
 - Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links, or buttons.
 
 Consider using a [popover](/components/popover) for the scenarios above.
-
-### Timing
-
-When interacting with an element, the timing for summoning a tooltip might be different depending on the situation. A delay is preferred in situations where the information provided is secondary and not needed to gain an immediate understanding of the content or when it easily obscures essential information in an interaction-heavy context. For example, a tooltip inside of a dropdown that contains additional content might obscure more important information like the row above or below. In these situations, a delay provides a more optimal user experience. Alternatively, the meaning of an icon button should be provided instantly in order to remove friction in understanding the content.
-
-To support this, the component allows for either no delay (default) or a preset delay of 400ms.
 
 ## Placement
 

@@ -21,6 +21,11 @@ A popover should be used when:
 - It isn’t critical for the user to act upon the information.
 - You want to give a user a summary of extended information and the option to switch context if they want to dive in deeper.
 
+Similar to [tooltips](/components/tooltip), popovers have a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
+
+- A user doesn’t accidentally hover an element with a popover, which might cover an adjacent element they intended to select.
+- The UI isn't constantly showing popovers when a user is moving their mouse over the page.
+
 ## Placement
 
 By default, popovers are placed above the referring element. However, when there isn’t enough space in the viewport, the popover is moved to the side or below as needed. If it blocks related content, the preferred popover placement can be manually set.
