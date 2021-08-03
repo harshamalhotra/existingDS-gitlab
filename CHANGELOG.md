@@ -1,3 +1,10 @@
+# [2.46.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.45.0...v2.46.0) (2021-08-03)
+
+
+### Features
+
+* **componentTemplate:** Update component page template ([fe27599](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fe275998c03ae090cb20e2c06f7b9f15e5925090))
+
 # [2.45.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.44.0...v2.45.0) (2021-07-27)
 
 
