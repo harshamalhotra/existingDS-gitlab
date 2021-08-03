@@ -993,10 +993,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.208.0.tgz#e298b4d38ac38b7186000cc21bafebebe0766a83"
   integrity sha512-dK2fXLCPOg0bchIqiNpVPY8RmEIpmR9wo/BHeLpf8NTcEjtAok87hJ+cwySbDvKeu10bSePsgl8NcST61GlNaA==
 
-"@gitlab/ui@31.7.0":
-  version "31.7.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-31.7.0.tgz#10f7e9071c431c9819202f161b79936105a62691"
-  integrity sha512-3Fp/qH2UP5lLajqlhJ4g3Xrazy4IiqF3/7hXcPWmxFphUm2zhM5NfXiLtX0pIS11fV14j5XYDpuhTQuc2QDOHg==
+"@gitlab/ui@32.0.0":
+  version "32.0.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.0.0.tgz#2bf8995e405f35c5fa9dcc2ad0de24d79dc9c006"
+  integrity sha512-GVQVx8Db9fb/BfYf7Vzdf6MxqLsF5RZta0VanwTm/asGdQxWG7I9fJIPUHqhCK3S9efZ83zXfZBF0M3uHuxveg==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "2.18.1"
@@ -1007,7 +1007,6 @@
     js-beautify "^1.8.8"
     lodash "^4.17.20"
     portal-vue "^2.1.6"
-    resize-observer-polyfill "^1.5.1"
     url-search-params-polyfill "^5.0.0"
     vue-runtime-helpers "^1.1.2"
 
@@ -9462,11 +9461,6 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
-
-resize-observer-polyfill@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
