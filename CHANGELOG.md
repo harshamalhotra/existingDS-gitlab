@@ -1,3 +1,10 @@
+# [2.47.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.46.0...v2.47.0) (2021-08-03)
+
+
+### Features
+
+* **Regions:** Add merge request reports ([545a255](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/545a25513cd84d8e2ab4d02cee432fb411b3cbe2))
+
 # [2.46.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.45.0...v2.46.0) (2021-08-03)
 
 
