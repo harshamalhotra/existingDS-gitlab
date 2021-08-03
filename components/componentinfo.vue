@@ -104,10 +104,11 @@ export default {
   <div>
     <div v-if="componentAttributes">
       <div v-if="vueComponents && vueComponents.length > 0">
-        <div class="md typography">
+        <div class="md typography gl-mb-6!">
           <h1>{{ componentAttributes.name }}</h1>
+          <p>{{ componentAttributes.description }}</p>
         </div>
-        <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles" lazy>
+        <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles gl-mb-5" lazy>
           <gl-tab title="Usage" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
             <md-display :prerendered-md="componentBody" />
             <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
