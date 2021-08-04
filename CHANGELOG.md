@@ -1,3 +1,10 @@
+## [2.47.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.47.0...v2.47.1) (2021-08-04)
+
+
+### Bug Fixes
+
+* **buttonImg:** Correct btn example visuals ([4d273ae](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4d273ae5b836b4891d18ac6ee430037eb059cd43))
+
 # [2.47.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.46.0...v2.47.0) (2021-08-03)
 
 
