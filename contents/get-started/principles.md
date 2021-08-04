@@ -36,47 +36,6 @@ We need to build empathy with our users. This means we must understand their sta
 1. **Bold sub principle(s) title** Explanation, plus optional reference
   - Example(s), plus link towards a reference in real-life
 -->
-
-## Principle guidelines
-
-The principles defined should align with the following guidelines to assure they are to be most effective.
-
-Note: The current principles in place may not yet conform to these guidelines, but will be updated to do so in the near future.
-
-### Origin and purpose
-
-Company values and purpose should inform principles, while principles should either inform the process or the desired output. Make sure that no conflicting principles are introduced.
-
-### Target audience
-
-Principles provide guidance to creators, ensuring they are focusing on the right problems for their users. Different internal teams (such as product, design, engineering, and marketing) sometimes require different sets of principles to guide them towards a shared outcome for the product end user. Ensure you are using the correct principles based on the task that you are performing.
-
-### Actionable and genuine
-
-Principles should be actionable and thus strike a balance between being too generic and too specific. Additionally, for them to be genuine and have context, they are required to have real-life examples.
-
-### Give direction by being opinionated
-
-When principles have a point of view, they give direction and keep teams on the path to achieving their vision. It defines a decision which otherwise could have diverged. By contrast, it is less useful to state things in principles that are logical and wished upon by default. An example of this would be “Useful,” of which the opposite would be “not useful.” Chances are slim that a company does not want to create a useful product.
-
-### Explicit hierarchy
-
-Each principle should be assigned a hierarchy position to resolve confusion about what to do in a specific circumstance while remaining consistent.
-
-### Memorable
-
-Similar to the [GitLab Company Values](https://about.gitlab.com/handbook/values/#about-our-values), principles are most effective when they are easy to remember. Because of this, the number of principles should be kept low. Three to five principles are ideal. Sub-principles are acceptable so long as they are aiding in making the principle more memorable.
-
-### Format
-
-```
-## Principle title (Number of hierarchy position)
-
-Intro stating why, how, and what of the principle.
-
-1. **Bold sub principle(s) title** Explanation, plus optional reference
-  - Example(s), plus link towards a reference in real-life
-```
     
 ## References
 
