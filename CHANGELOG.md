@@ -1,3 +1,10 @@
+# [2.48.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.47.1...v2.48.0) (2021-08-05)
+
+
+### Features
+
+* **principles:** Remove unused guidelines from docs ([5a8920c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5a8920cbb88dbefb0753356eb2d034a9cdababf3))
+
 ## [2.47.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.47.0...v2.47.1) (2021-08-04)
 
 
