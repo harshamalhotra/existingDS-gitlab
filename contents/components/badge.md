@@ -1,55 +1,83 @@
 ---
 name: Badge
+description: A badge highlights system generated metadata as an attribute of a larger object. 
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
 docs: complete
 vueComponents:
   - GlBadge
 related:
   - label
+  - button
+  - tabs
 ---
 
-Badges highlight metadata of objects, the kind of information that always needs some context and isn't useful on its own. For example, they can be used to indicate an issue's status, a member's role, or if a branch is protected.
+## Examples
 
-Showing metadata does not require the use of badges, you can just use plain icons, text, or both. But if the metadata is worth highlighting or differentiating, badges can help.
-
-Badges should not be confused with [labels](/components/label). Labels also show object metadata, but they are much more specific in usage and scope — they are editable objects for users to manually categorize other objects, like issues, merge requests, and epics.  Other terms that are commonly used to refer to badges: counters, statuses, chips, tags, metadata, lozenges, pills, and bubbles.
-
-## Usage
-
-Information can be rendered in badges as icons, text, or both. If they only have an icon, provide a quick explanation for users in a [tooltip](/components/tooltip). Text badges can contain not only words, but also numbers. These act as _counters_ (for example, number badges in [tabs](/components/tabs)).
-
-Badges should always link to the object they refer to unless the user is already seeing the most detailed state of that object (that is, the object's detail page).
-
-Long text in badges should be avoided. When text overflows the badge width, it is truncated and aided by a tooltip. Badge contents don't wrap.
-
-### Variations
-
-Depending on the context and the value of the badge's information, some style attributes can be changed from the defaults:
-- **Font weight**: Text is regular weight by default.
-- **Visual weight**: “Neutral average” is the default variation. Start with that and see if it works. If necessary, decrease or increase the visual weight of the badge by switching to “neutral soft” or “neutral loud” respectively. Be mindful of not attracting too much attention to the badge and prioritizing it over other surrounding elements.
-- **Color**: Neutral color (gray) variations are the default. If the kind of information being communicated aligns with our [guidelines for the four primary colors](/foundations/colors), the badge can adopt a more colorful variation. Color should be used with care and as a last resort for highlighting badges. Like the visual weight point before, start with “average” and be mindful when using the “loud” variation.
-- **Size**: There are 3 badge sizes - `sm`, `md`, and `lg`. Determining badge size depends on the surrounding content. Use the `sm` badge when content is crowded, `md` as the default, and `lg` in headers or titles where there is ample space. 
-
-## Demo
-
-### Basic badge
-
-[[Example:badge-basic]]
-
-### Badge variants
 
 [[Example:badge-variants]]
 
-### Linked badges
-
 [[Example:badge-actions]]
-
-### Badges with icons
 
 [[Example:badge-icon]]
 
-## Design specifications
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Globals-beta?node-id=1659%3A119)
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+## Structure
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Globals-beta?node-id=1659%3A119)
+<figure class="figure" role="figure" aria-label="Badge structure">
+  <img class="figure-img" src="/img/badge-structure.svg" alt="Numbered diagram of a badge structure" role="img" />
+</figure>
+
+1. **Container**: Wraps the content.
+1. **Icon** (optional): Supports or directly communicates the metadata meaning, always left aligned.
+1. **Text** (optional): Conveys the status or other attribute of the metadata.
+
+## Guidelines
+
+### When to use
+
+- Highlight system generated metadata that provides additional meaning or status to a primary object, like an issue or merge request.
+
+### When not to use
+
+- Showing metadata doesn't always require the use of a badge. If it doesn't need to be highlighted consider using a static icon or plain text.
+- A badge shouldn't be a standalone, floating element. If it can't be placed within direct relationship to the object it supports, consider using another method that provides more context for the metadata.
+- If the metadata is created and applied by a user, or customizable, use a [label](/components/label) instead.
+
+### Variants
+
+- **Neutral muted** (default): Metadata that requires the least amount of visual emphasis and has a neutral meaning.
+- **Neutral**: Metadata that has a neutral meaning.
+- **Info**: Metadata that's informative or new and also has a neutral meaning.
+- **Success**: Metadata that communicates success or completion with a positive meaning.
+- **Warning**: Metadata that requires attention and a slightly negative meaning.
+- **Danger**: Metadata that indicates a problem and has a negative meaning.
+
+### Sizes
+
+- **Small**: A small badge is ideal in condensed parts of the UI where space is limited.
+- **Medium** (default): Use the medium size where content has breathing room. The medium size also works well to provide sufficient affordance when only an icon is used.
+- **Large**: A large badge is used in headers or titles where there is ample space or the metadata needs additional prominence.
+
+### Behavior
+
+- A badge is static (non-interactive) by default.
+- A badge should link to the object it refers to if the user isn't seeing the most detailed state of that object (for example, the object's detail page).
+
+### Content
+
+- Information can be represented by an icon, text, or both together.
+- Avoid long text strings.
+- When text overflows the width, it's truncated and aided by a [tooltip](/components/tooltip) (content doesn't wrap).
+- Text can be emphasized with **bold** weight, but use sparingly.
+- Text can contain not only words, but also numbers which act as _counters_ (for example, a number badge in a [tab](/components/tabs)).
+- When only using an icon, provide a [tooltip](/components/tooltip) with a brief explanation.
+
+## Accessibility
+
+- When a badge only has an icon, the icon must use `aria-label` with text that identifies the metadata.
+- When an icon is present with text it must use `aria-hidden="true"` to avoid being announced by a screen reader.
+
+## Reference
+
+Other terms that are commonly used to refer to a badge: counter, status, chip, tag, metadata, lozenge, pill, and bubble.
