@@ -1,3 +1,10 @@
+# [2.49.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.48.0...v2.49.0) (2021-08-05)
+
+
+### Features
+
+* **Badge:** Update docs to utilize new template ([8a3796f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8a3796f7084e19dbfe0ffb0a4dc2bba80ab0781c))
+
 # [2.48.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.47.1...v2.48.0) (2021-08-05)
 
 
