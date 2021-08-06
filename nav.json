@@ -274,12 +274,12 @@
             "path": "overview"
           },
           {
-            "title": "Charts",
-            "path": "charts"
-          },
-          {
             "title": "Color",
             "path": "color"
+          },
+          {
+            "title": "Charts",
+            "path": "charts"
           },
           {
             "title": "Single stat",
