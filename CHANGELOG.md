@@ -1,3 +1,10 @@
+# [2.50.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.49.0...v2.50.0) (2021-08-06)
+
+
+### Features
+
+* **Settings:** Specify placement of messages ([9361590](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9361590a0d293e44fe4307a2721f18abcc83f945))
+
 # [2.49.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.48.0...v2.49.0) (2021-08-05)
 
 
