@@ -1,3 +1,10 @@
+# [2.51.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.50.0...v2.51.0) (2021-08-06)
+
+
+### Features
+
+* **data-viz:** Update navigation order for data-visualization ([ec44a91](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ec44a91fa03f6318094069f686712157278b550b))
+
 # [2.50.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.49.0...v2.50.0) (2021-08-06)
 
 
