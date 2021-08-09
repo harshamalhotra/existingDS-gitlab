@@ -1,104 +1,179 @@
+<!--
+  GENERAL NOTES:
+  - Use simple language and be concise.
+  - Use singular instead of plural when referencing a component.
+  - Use singular instead of plural when referencing a user.
+  - Remove all comments and extra space from a new document after content is added.
+  - Static visuals can be added to support a concept, but try to keep them
+    as simplified as possible. Examples can be viewed in Figma at
+    https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples?node-id=39%3A0.
+  - If content isn't available for a required section, add a todo for
+    future completion.
+-->
 ---
 name: Component name
-figma: Link to figma component in Pajamas UI Kit
-docs: upcoming | in-progress | complete
-a11y: upcoming | in-progress | complete
-gitlab_ui: Relative link to that component‘s /code tab. For example, /component/popover/code.
+description: 1–2 sentence description of the component (including the description here keeps it visible above the Usage and Implementation tabs).
 vueComponents:
-  - Related vue component name
-
+  - Vue component name
 <!--
-  RELATED VUE COMPONENTS should be added when available
-  Remove this section if there are no related vue components at this time. Please list them in alphabetical order.
--->
+  `vueComponents` is used to pull the component from Storybook in order to generate the Implementation tab. Removing this will remove the Implementation tab for the component. List in alphabetical order.
 
+  EXAMPLE:
+  vueComponents:
+    - GlAlert
+-->
 related:
   - Related component or pattern name
-
 <!--
-  RELATED PATTERNS should be similar in usage/type of pattern
-  e.g. tooltips, popover, and modals are all similar constructs used for different purposes
-  Remove this section if there are no related patterns at this time. Please list them in alphabetical order.
+  RELATED PATTERNS generates a list of links under a "Related" heading at the bottom of the rendered page. A related pattern should be similar in usage/type of pattern, or if the component is also part of another component. For example, a tooltip and a popover are similar constructs used for different purposes, or a button is its own component, but also present in a modal. Remove this section if there are no related patterns. List in order of most to least related. 
 
-  EXAMPLE RELATED PATTERNS, link to pages that are not components using 'directory/pattern-name'
+  EXAMPLE:
   related:
-    - /layout/grid
+    - /layout/grid (link to pages that are not components using '/directory/pattern-name')
     - badge
 -->
 ---
 
-Component overview. A brief explanation of what the component is.
+## Examples
+<!-- 
+  LIVE CODED EXAMPLES are included here.
 
-## Usage
-
-A summary of how the component should be used.
-
-<!--
-  DO NOT add static images to any page at this time.
+  EXAMPLE:
+  [[Example:alert-variants]]
 -->
 
-### Dos and Dont’s
-
+[View in Pajamas UI Kit →](link-to-page-or-frame)
 <!--
-  EXAMPLE TABLE, optionally, this can be used to highlight Do's & Don'ts
-  Do is a guideline that should always be followed. On the other hand, you need a really unusual use case for breaking a Do guideline
-  The Do's & Don'ts should be correlated
-  e.g. Use chevrons between breadcrumb items vs. Use slashes or other characters to separate breadcrumb items.
+  Update the design specifications link above to the component in the Pajamas UI Kit. In most cases this will be a link the component’s “Variants” frame. You can find this link by clicking on the “Variants” frame and then copying the link from the “Share” option. Follow the “Figma component” issue template in Pajamas to create the component.
 -->
 
-| Component type | Purpose |
-| --- | --- |
-| Primary button | The primary call to action on the page |
-| Secondary button | Secondary actions on the page |
-
-### When to use INSERT NAME OF COMPONENT HERE
-
+## Structure
 <!--
-  WHEN TO USE, optionally, highlight specific rule sets for when to use a component.
-  e.g. Use tables when:
-  - Users need to review, enter, or edit uniform sets of data or options
-  - Displaying structured content, where each entry has the same attributes
+  Include a simplified visual of the component with the sections and parts numbered to match the text reference below. Examples can be viewed in Figma at https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples?node-id=39%3A0. Request access if needed to create a new visual. An ordered list should match the numbering in the visual. The section or part name should be the first item and use **bold** formatting.
+
+  EXAMPLE:
+  1. **Icon**: Supports the variant meaning.
 -->
 
-### When not to use INSERT NAME OF COMPONENT HERE
+1. **{sectionOrPart}**: Description.
+1. …
 
+## Guidelines
 <!--
-  WHEN NOT TO USE, optionally, highlight specific rule sets for when not to use a component
-  e.g. Do not use tables to:
-  - Display a list of continuous, vertical indexes of text or images. Use Lists instead
-  - For hierarchical structures. Use the Tree view instead.
+  The Guidelines section contains the bulk of the page content. Sections are in the same order for every component and there's room where variable sections can be added.
 -->
 
-### Sub section
-
+### When to use
 <!--
-  SUB SECTIONS, use these to highlight component specific rules. You can add as many sub-sections as needed, use your best judgement
-  e.g. truncation rules
+  Include item(s) in a bulleted list that clarify when to use this component. Be direct and try not to reference specific parts of GitLab to keep these guides evergreen and applicable to any GitLab property.
+
+  EXAMPLE:
+  - Advise the user that they should be aware of, or address something related to their current context.
 -->
 
-A summary of a specific usage guideline.
+- Reason to use.
+- …
 
-Todo: Add live component block with code example
-
-## Demo
-
+### When not to use
 <!--
-  DEMO, keep this section for all patterns, the code block demo will be added at a later date
+  Include item(s) in a bulleted list that clarify when NOT to use this component. Be direct and try not to reference specific parts of GitLab to keep these guides evergreen and applicable to any GitLab property.
+
+  Here is a good place to reference an alternate component if it fits the use case better.
+
+  EXAMPLE:
+  - If you need to deliver an instance level message from an admin to all users, use a [broadcast message](/components/broadcast-message) instead.
 -->
 
-Todo: Add live component block with code example
+- Reason not to use.
+- …
 
-## Design specifications
-
+### Variants
 <!--
-  DESIGN SPECIFICATIONS, add a link here to the component in the Pajamas UI Kit. In most cases this will be a link the component’s “Variants” frame. You can find this link by clicking on the “Variants” frame and then copying the link from the “Share” option.
-  *** Follow the “Figma component” issue template in Pajamas to create the component.
+  If the component has no variants, change this heading to "Appearance."
+
+  EXAMPLES:
+  - **Danger**: Advise the user that their attention is needed to address or be aware of a critical issue that relates to the current context. The variant name should be the first item and use **bold** formatting.
+
+  -or-
+
+  ### Appearance
+
+  Background color is chosen by the admin from a set of swatches when creating the broadcast message.
 -->
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+1. **{variant}** description.
+1. …
 
-[View design in Pajamas UI Kit →](/)
+<!-- Begin variable content -->
 
-## Resources
+<!--
+  VARIABLE SECTIONS that relate to the component's visual appearance can be placed here. For example, sizes and states.
 
-- [A related resource used when writing this documentation](/)
+  ### Heading
+
+  - …
+  - …
+-->
+
+<!-- End variable content -->
+
+### Behavior
+<!--
+  Bulleted list of items that describe the component behavior.
+
+  EXAMPLE:
+  - Permanently dismissible only when the alert relates to a user’s individual instance and wasn’t triggered by a system condition.
+-->
+
+- …
+- …
+
+### Content
+<!--
+  Bulleted list of items that describe the content within the component. Use a subheading when multiple bullet points relate to one item.
+
+  EXAMPLES:
+  - All copy within an alert should be short, actionable, and use clear language.
+
+  -or-
+
+  #### Title
+  - Be brief and keep it to a single line by utilizing a sentence fragment.
+  - Avoid using punctuation such as periods, commas, or semicolons.
+-->
+
+- …
+- …
+
+<!-- Begin variable content -->
+
+<!--
+  VARIABLE SECTIONS that are unique to this component can be placed here. For example, alignment and combinations.
+
+  ### Heading
+
+  - …
+  - …
+-->
+
+<!-- End variable content -->
+
+### Accessibility
+<!--
+  Bulleted list of items that describe the accessibility considerations within the component.
+
+  EXAMPLE:
+  - An alert should receive focus and use `aria-live` to announce its presence and allow a user to interact with it immediately.
+-->
+
+- …
+- …
+
+## Reference
+<!--
+  An optional section for anecdotal comments on key decisions related to the component. This can also include notes about deprecated variants. Reference links should go to publicly available GitLab resources, like an issue, or the Docs site.
+-->
+
+<!--
+  The list of related components and meta information is automatically added from the frontmatter.
+-->
