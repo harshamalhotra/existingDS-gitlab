@@ -1,3 +1,10 @@
+# [2.52.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.51.0...v2.52.0) (2021-08-11)
+
+
+### Features
+
+* **markdown:** Underline links in body content ([90e7812](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/90e781237230cc1b4b7c06da2dd929ef772b3596))
+
 # [2.51.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.50.0...v2.51.0) (2021-08-06)
 
 
