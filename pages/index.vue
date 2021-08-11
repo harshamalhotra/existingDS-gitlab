@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="index typography">
     <nuxt-child />
     <div class="content banner">
       <div class="banner__header text-center">

@@ -36,7 +36,7 @@ export default {
 
 <template>
   <div v-if="hasRelatedPatterns">
-    <div class="md">
+    <div class="md typography">
       <h2 id="related-patterns">Related</h2>
       <ul>
         <li v-for="pattern in relatedPatterns" :key="pattern.slug">
