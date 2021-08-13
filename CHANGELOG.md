@@ -1,3 +1,10 @@
+# [2.53.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.52.0...v2.53.0) (2021-08-13)
+
+
+### Features
+
+* **button:** discourage small size icon buttons ([32600f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32600f5595a66c3cb9c96d284cd75ff19b0d60ba))
+
 # [2.52.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.51.0...v2.52.0) (2021-08-11)
 
 
