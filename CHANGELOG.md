@@ -1,3 +1,10 @@
+# [2.54.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.53.0...v2.54.0) (2021-08-16)
+
+
+### Features
+
+* **Avatar:** Update to utilize new content template ([5f79b76](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5f79b767291b2df5f857a5dfd4eb72d5c8f9ad39))
+
 # [2.53.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.52.0...v2.53.0) (2021-08-13)
 
 
