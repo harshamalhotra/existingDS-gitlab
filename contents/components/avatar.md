@@ -1,50 +1,95 @@
 ---
 name: Avatar
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A2
+description: An avatar represents a unique entity, like a person, group, or project.
 docs: in-progress
 vueComponents:
   - GlAvatar
 related:
-  - /layout/grid
   - badge
+  - breadcrumb
 ---
 
-Avatars are used to represent a unique entity, be it a person, a group, or a project.
-
-## Usage
-
-Avatars representing persons use a circular shape and avatars representing a group or a project use a rounded square shape. They come in a variety of sizes. The size of an avatar varies depending upon the element it resides in as well as the size of the viewport.
-
-It is preferable that an avatar display an image. Images are personalized and make good use of the ability of the human brain to recognize faces. Project and group avatars contain a fallback in the case an image is not provided. This fallback will display the first letter of the project or group name. Personal avatars have a [Gravatar](https://gravatar.com) fallback which contains either a configured image or a randomly generated image.
+## Examples
 
 [[Example:avatar-image]]
 
-Avatars may also be adjacent to a text alternative, such as a user or project name. In these cases, a null `alt` text should be used so that they can be ignored by assistive technologies.
-
 [[Example:avatar-labeled]]
 
-### Displaying multiple avatars
+Todo: Add group demo
 
-Some features, such as Issue assignees and Merge Request threads on diffs, require the display of multiple avatars, side by side.
+Todo: Add stack demo
 
-#### Overlap
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A2)
 
-When space is tight, overlap avatars slightly. Depending on the available space, if there are more than one or two avatars, use a [badge](/components/badge) after the last avatar item to display the number of additional avatars as a placeholder.
+## Structure
 
-Todo: Add overlap demo with badge count
+<figure class="figure" role="figure" aria-label="Avatar structure">
+  <img class="figure-img" src="/img/avatar-structure.svg" alt="Numbered diagram of an avatar structure" role="img" />
+</figure>
 
-#### Grid
+1. **Image or identicon**: A unique image or fallback representing the object. 
+1. **Label and sub-label** (optional): Text corresponding to the image or identicon.
 
-When space allows, display avatars in a [grid](/layout/grid).
+## Guidelines
 
-Todo: Add grid demo
+### When to use
 
-In areas where the avatar grid would expand multiple lines, provide a clickable option to expand and collapse the additional avatars.
+- Use an avatar to consistently represent a person, group, or project where the visual or semantic relationship provides context to the content it's in proximity to.
 
-Todo: Add grid demo with expand/collapse
+### When not to use
 
-## Design specifications
+- An avatar only represents a user, project, or group. Consider an [icon](/product-foundations/iconography) to visually represent interactive elements or other metaphors.
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+### Variants
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1833%3A2845)
+1. **Circle**: A circle is used for a person.
+1. **Square**: A rounded square is used for a group or project.
+
+### Sizes
+
+- The size of an avatar varies depending upon its context.
+- **Available sizes** (in pixels): 16, 24, 32, 48, 64, 96.
+
+### Behavior
+
+- A standalone avatar without adjacent descriptive text must use a [tooltip](/components/tooltip) clarifying what it represents.
+
+### Content
+
+- An avatar image is added to a profile, group, or project by a user.
+  - A circle avatar for a user has a [Gravatar](https://gravatar.com) fallback of either a configured or randomly generated image.
+  - A square avatar uses a text fallback (identicon) where the text character is an abbreviation of the object it represents.
+- A text label identifies the subject of the avatar.
+- A text sub-label provides content or metadata for the label.
+
+### Multiple avatars
+
+The following only applies to circle avatars.
+
+#### Group
+
+- A collection of avatars without labels can be grouped.
+- When the group wraps to more than one line use a text action to show and hide additional avatars.
+  - Use "+{#} more" to expand the group. Replace "#" with the number of avatars that aren't visible.
+  - Use "- show less" to collapse the group.
+
+<figure class="figure" role="figure" aria-label="Collapsed and expanded avatar group">
+  <img class="figure-img" src="/img/avatar-group.svg" alt="Two avatar group examples, one collapsed with an action to show more, and the other expanded with an action to show less." role="img" />
+  <figcaption class="figure-caption">Collapsed and expanded avatar group</figcaption>
+</figure>
+
+#### Stack
+
+- Avatars form a horizontal stack when space is especially limited.
+- The number of avatars in a stack is variable, but should never cause wrapping.
+- Use a [badge](/components/badge) after the last avatar to display the number of avatars that aren't visible. It can optionally be an action that leads a user to more context for all associated avatars. The badge and avatar sizes should be the same.
+
+<figure class="figure" role="figure" aria-label="A horizontal avatar stack">
+  <img class="figure-img" src="/img/avatar-stack.svg" alt="Three avatars slightly overlap each other in a horizontal row. A badge at the end includes the number of additional avatars that aren't visible" role="img" />
+  <figcaption class="figure-caption">A horizontal avatar stack</figcaption>
+</figure>
+
+### Accessibility
+
+- A standalone avatar image should use a descriptive `alt` tag where the content matches that of the tooltip. See the [behavior](#behavior) section for more about the use of a tooltip.
+- If an avatar image is adjacent to descriptive text, like a user or project name, it should use an empty `alt` tag so it can be ignored by a screen reader.
