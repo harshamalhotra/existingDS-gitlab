@@ -20,7 +20,7 @@ related:
 
 [[Example:badge-icon]]
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Globals-beta?node-id=1659%3A119)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A3)
 
 ## Structure
 
