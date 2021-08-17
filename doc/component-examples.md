@@ -54,13 +54,6 @@ You should now be ready to use your examples.
 If you're adding to an existing set of examples, just create new `.vue` files and update the
 `index.js` file in the appropriate directory.
 
-## Using examples in docs
-
-Component examples can easily be included in docs pages thanks to the `[[Example:<component_id>]]`
-shortcode. Simply replace `<component_id>` with the ID that's in the `index.js` entry file. For
-example, with the code snippet above, the ID is `my-component-default`, so you would include the
-example with `[[Example:my-component-default]]`.
-
 ## Enabling the examples selector
 
 To enable the examples selector in a page's **Implementation** tab, add the component's name to the
@@ -74,6 +67,15 @@ vueComponents:
   - GlBroadcastMessage
 ---
 ```
+
+> **Note:** You **must** register the component in the frontmatter for its examples to load in docs.
+
+## Using examples in docs
+
+Component examples can easily be included in docs pages thanks to the `[[Example:<component_id>]]`
+shortcode. Simply replace `<component_id>` with the ID that's in the `index.js` entry file. For
+example, with the code snippet above, the ID is `my-component-default`, so you would include the
+example with `[[Example:my-component-default]]`.
 
 ## FAQ
 

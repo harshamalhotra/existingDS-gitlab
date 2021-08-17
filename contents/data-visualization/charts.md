@@ -6,6 +6,7 @@ vueComponents:
   - GlLineChart
   - GlColumnChart
   - GlStackedColumnChart
+  - GlGaugeChart
 related:
   - popover
 ---
@@ -113,7 +114,7 @@ Scatter charts give a sense of the distribution and relative size of values.
 
 Gauge charts highlight the current value within the range of possible values for the metric.
 
-Todo: Add example gauge chart
+[[Example:gauge-basic]]
 
 ## Sparkline charts
 
