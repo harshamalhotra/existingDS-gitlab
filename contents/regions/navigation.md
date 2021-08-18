@@ -2,6 +2,7 @@
 name: Navigation
 ---
 
+Note: For guidance on how to propose a change to navigation menu items, see the [Navigation handbook page](https://about.gitlab.com/handbook/engineering/ux/navigation/).
 
 ## Top menu
 
@@ -54,4 +55,3 @@ Todo: Add left sidebar example for medium and large viewports (`768px` to `1199p
 The sidebar is hidden behind a “hamburger” icon. When pressed, the sidebar is shown expanded, overlapping the page with a semi-transparent overlay. Like the previous point, this behavior is not affected by the user's cookie preference and doesn't change that preference.
 
 Todo: Add left sidebar example for small and extra small viewports (up to `767px`)
-
