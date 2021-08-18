@@ -1,3 +1,10 @@
+# [2.55.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.54.0...v2.55.0) (2021-08-18)
+
+
+### Features
+
+* **Badge:** Update badge ui kit link ([2e19ccc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2e19ccccd1373d32f7a134498c69c8b3e8c672cc))
+
 # [2.54.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.53.0...v2.54.0) (2021-08-16)
 
 
