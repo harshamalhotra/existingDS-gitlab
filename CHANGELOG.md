@@ -1,3 +1,10 @@
+# [2.57.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.56.0...v2.57.0) (2021-08-19)
+
+
+### Features
+
+* **VPAT:** Update VPAT for GitLab v14.0 ([cb17864](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cb178645aaed5c691746e3cad5034fba4012a8f7))
+
 # [2.56.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.55.0...v2.56.0) (2021-08-19)
 
 
