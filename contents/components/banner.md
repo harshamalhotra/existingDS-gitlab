@@ -1,7 +1,6 @@
 ---
 name: Banner
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A4
-docs: complete
+description: A banner promotes awareness of a new feature or high-priority research initiative.
 vueComponents:
   - GlBanner
 related:
@@ -11,100 +10,66 @@ related:
   - empty-states
 ---
 
-Banners promote user awareness for new features or high-priority research initiatives. Unlike [alerts](/components/alert), banners are solely for in-product marketing or for conveying information about a priority feature or study to the user.
-
-## Usage
-
-Reserve banners for high priority features or initiatives that benefit the user. Banners can be placed either inline with the content or at the top of a page depending on the promotion and the context.
-
-### When to use banners
-
-Use banners to:
-
-- Inform a user of a feature that has yet to be enabled. For example, Auto DevOps.
-- Promote a new feature. For example, a free trial of GitLab Ultimate featuring the new squash commit functionality in merge requests.
-- Solicit user feedback. For example, evaluating a set of new features to help prioritize your roadmap through a survey. 
-
-### When not to use banners
-
-Do not use banners to:
-
-- Communicate when a feature has not yet been configured or used. For example, when the security dashboard needs further setup or no issues have been added to a project. Instead, use an [empty-state](https://design.gitlab.com/regions/empty-states).
-- Give tips and hints on the use of a feature. For example, configuring a review app. Instead, use a tip style [alert](/components/alert).
-
-### Dos and Dont's
-
-| Do | Don't |
-| ------ | ------ |
-| Use to promote a new or unconfigured feature. | Use to communicate system status or events to the user. Instead, use an [alert](/components/alert). |
-| Allow banners to be dismissible. | Use banners to communicate instruction or critical information that should not be dismissible by a user. |
-| Use sparingly and with consideration of other components in proximity. | Overuse and clutter the experience with promotions. |
-| Display to users who can take immediate action if they desire. | Display to users who cannot activate the feature or benefit from its use. |
-
-### Specifications
-
-#### Container
-
-Banners appear within containers in the page or section. This is important for dismissible elements as it gives the banner a temporal visual affordance, indicating to users that this component is not permanent.
-
-#### Dismiss
-
-Users are able to permanently dismiss banners by default. Banners may also be dismissed temporarily, depending on the use case.
-
-##### Permanent dismissal
-
-The dismiss action is always represented by the `Close` icon and anchored to the top right of the banner.
-
-Banner dismissal should work as follows:
-* Banner dismissal must be associated with the user in the system database. Dismissal must persist, even across version upgrades and clients.
-* Banners do not reappear by default. In rare circumstances, you may present the banner again to a user after some time has passed.
-* Banners should only be shown to users who are logged in.
-
-**Implementation Notes:**
-* The dismissal of the banner is achieved using the `UserCallout` model on the backend and the `PersistentUserCallout` JS file on the frontend. If both parameters are implemented correctly, the banner will adhere to the dismissal guidelines above.
-
-##### Temporary dismissal
-To introduce temporary dismissal, include a secondary or tertiary button placed alongside the primary action button. Follow the [button](/components/button#alignment-and-order) alignment and order guidelines.
-
-Temporary dismissals should work as follows: 
-* Banners dismissed temporarily will reappear after **7 days**.
-* After a banner is dismissed temporarily, use a [toast](/components/toast) message to let the user know they will see the banner again in 7 days.
-
-TODO: Include implementation notes, see [#839](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/839)
-
-#### Header
-
-The header should always be present and written to follow our [voice and tone](https://design.gitlab.com/content/voice-tone/) guidelines.
-
-#### Paragraph
-
-The supporting text should be concise and only include information specific to what is being promoted. The content should also follow our [voice and tone](https://design.gitlab.com/content/voice-tone/) guidelines.
-
-#### Illustration *(optional)*
-
-A small illustration may be used but is optional. Keep in mind size and placement when including an [illustration](https://design.gitlab.com/product-foundations/illustration).
-
-#### Call to action
-
-A banner should always include a [button](https://design.gitlab.com/components/button) as the primary call to action. Avoid using multiple buttons to link the user to different pages. An exception can be made in cases where we need to [help users](https://design.gitlab.com/usability/helping-users) by linking to documentation or allowing the user to temporarily dismiss the banner.
-
-## Demo
-
-### Basic Introduction
+## Examples
 
 [[Example:banner-introduction]]
 
-### Promotion with Illustration
-
 [[Example:banner-promotion-illustration]]
-
-### Basic Promotion
 
 [[Example:banner-promotion]]
 
-
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4845%3A7873)
+
+## Structure
+
+<figure class="figure" role="figure" aria-label="Banner structure">
+  <img class="figure-img" src="/img/banner-structure.svg" alt="Numbered diagram of a banner structure" role="img" />
+</figure>
+
+1. **Container**: Wraps the content.
+1. **Illustration** (optional): Compliments the content.
+1. **Title**: Header for the content.
+1. **Message**: Text content indicating the purpose and potential next steps.
+1. **Action**: A single button to provide an explicit action the user can take based on the message.
+1. **Dismissal**: Removes the banner for a user.
+
+## Guidelines
+
+### When to use 
+
+A banner should be used sparingly and with consideration of its impact to neighboring components and the overall user experience to:
+
+- Inform a user of a feature that isn't enabled.
+- Promote a new feature.
+- Solicit user feedback. 
+
+### When not to use
+
+- If you need to communicate that a feature hasn't been configured or used, consider using an [empty state](https://design.gitlab.com/regions/empty-states) instead.
+- If you're giving tips and hints for an existing or established feature, consider the [tip alert variant](/components/alert#variants) instead.
+- If you need to communicate system status, consider using an [alert](/components/alert) instead.
+- If a user can't take immediate action, activate a feature, or benefit from the content, then the banner shouldn't be displayed.
+
+### Variants
+
+- **Introduction**: Provide a basic introduction to help users get started with an existing feature. Illustration optional.
+- **Promotion**: A promotional message to encourage exploring or upgrading to a new feature. Illustration optional.
+
+### Behavior
+
+- A banner can always be dismissed.
+  - It doesn't reappear by default, but in rare circumstances the banner can reappear after 7 days have passed.
+- The action should direct a user to one of the following:
+  - Docs for an installation guide.
+  - Where they can upgrade their plan to enable a feature.
+  - A format for contributing or providing feedback.
+
+### Content
+
+- Title should be concise and indicate the purpose of the banner.
+- The message describes the benefits of performing the action.
+- An optional [illustration](/product-foundations/illustration) to support the message uses the [medium](/product-foundations/illustration#medium) illustration size.
+
+### Accessibility
+
+- When an illustration is used, it should be hidden from screen readers with `aria-hidden="true"`.
