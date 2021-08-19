@@ -6,12 +6,12 @@ name: GitLab Accessibility Conformance Report
 
 ### Based on VPAT® Version 2.4
 
-- **Name of Product/Version:** GitLab 13.5. GitLab released version 14.0 on June 22, 2021. There are no material differences in the VPAT conformance levels between 13.5 and 14.0.
-- **Report Date:** December, 2020
+- **Name of Product/Version:** GitLab 14.0
+- **Report Date:** August, 2021
 - **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 - **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
 - **Notes:** This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
-- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), and iOS VoiceOver.
+- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [NVDA](https://www.nvaccess.org/download/), and VoiceOver on macOS.
 
 ### Applicable Standards/Guidelines
 
@@ -348,10 +348,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       </td>
       <td>
         <p>The product uses a logical tab order and consistent keyboard keys to perform actions.</p>
-        <p>One instance was found where on page load, the tabindex jumps to the search field instead of the first item in the global navigation: <a
-          href="https://gitlab.com/gitlab-org/gitlab/issues/15732"
-          target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab/issues/15732</a></p>
+        <p>Some components use inconsistent or non-normative keyboard controls.</p>
       </td>
     </tr>
     <tr>
@@ -624,10 +621,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
       </td>
       <td>
         <p>The product uses visual changes to elements to indicate the current focus position.</p>
-        <p>A few instances were discovered in the issuable sidebar that did not have a visible focus state, including toggles: <a
-          href="https://gitlab.com/gitlab-org/gitlab/issues/20666"
-          target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab/issues/20666</a></p>
+        <p>There are instances where a state change happens but does not include a visible focus indicator. There are other instances where the default browser focus ring is present and may lack sufficient contrast.</p>
       </td>
     </tr>
     <tr>
