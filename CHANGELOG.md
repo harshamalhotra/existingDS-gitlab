@@ -1,3 +1,10 @@
+# [2.58.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.57.0...v2.58.0) (2021-08-19)
+
+
+### Features
+
+* **navigation:** Link to handbook guidance for nav changes ([4bb16e5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4bb16e56b3ca7efc9c563bead6c28ab9f33906b7))
+
 # [2.57.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.56.0...v2.57.0) (2021-08-19)
 
 
