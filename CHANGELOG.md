@@ -1,3 +1,10 @@
+# [2.56.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.55.0...v2.56.0) (2021-08-19)
+
+
+### Features
+
+* **Banner:** Update banner docs to new template ([7f33aea](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7f33aea1ca42606cc32d9eabebae35db581d5293))
+
 # [2.55.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.54.0...v2.55.0) (2021-08-18)
 
 
