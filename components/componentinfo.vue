@@ -7,11 +7,24 @@ import {
 
 import componentExamples from '../examples';
 
+import ContributeToComponent from './contribute_to_component.vue';
 import mdDisplay from './md_display.vue';
 import RelatedPages from './related_pages.vue';
 
+const componentNameToLabelMap = {
+  dropdowns: 'dropdown',
+  forms: 'form',
+  labels: 'label',
+  modals: 'modal',
+  'radio-button': 'radio',
+  tables: 'table',
+  tabs: 'tab',
+  toggles: 'toggle',
+};
+
 export default {
   components: {
+    ContributeToComponent,
     'md-display': mdDisplay,
     GlComponentDocumentation,
     GlExampleExplorer,
@@ -37,6 +50,15 @@ export default {
     return {
       title: this.frontmatterInfo.attributes.name,
     };
+  },
+  computed: {
+    componentLabel() {
+      const { section, slug } = this.$route.params;
+      if (section !== 'components') {
+        return null;
+      }
+      return componentNameToLabelMap[slug] || slug;
+    },
   },
   created() {
     this.componentAttributes = this.frontmatterInfo.attributes;
@@ -161,6 +183,15 @@ export default {
                 </div>
               </template>
             </div>
+          </gl-tab>
+          <gl-tab
+            v-if="componentLabel"
+            title="Contribute"
+            class="p-t-3 js-gl-tab"
+            :active="this.$route.params.tab === 'contribute'"
+            @click.prevent="activateTab('contribute')"
+          >
+            <contribute-to-component :component-label="componentLabel" />
           </gl-tab>
         </gl-tabs>
       </div>
