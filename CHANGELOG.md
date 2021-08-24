@@ -1,3 +1,10 @@
+# [2.59.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.58.0...v2.59.0) (2021-08-24)
+
+
+### Features
+
+* **contributeTab:** Add a contribute tab for components ([80e6ebf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/80e6ebff0ee4d22e69c3cd2f7787b8a92bcdb403))
+
 # [2.58.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.57.0...v2.58.0) (2021-08-19)
 
 
