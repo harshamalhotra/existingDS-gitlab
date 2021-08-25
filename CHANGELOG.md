@@ -1,3 +1,10 @@
+# [2.60.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.59.0...v2.60.0) (2021-08-25)
+
+
+### Features
+
+* **daterangePicker:** Add daterange indicator usage ([4965a81](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4965a8133de3e03a7b6d4957ed5f8c43a94cd3e2))
+
 # [2.59.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.58.0...v2.59.0) (2021-08-24)
 
 
