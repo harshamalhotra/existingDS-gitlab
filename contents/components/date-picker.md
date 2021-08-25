@@ -31,6 +31,10 @@ A combination of two date pickers can be used for selecting a range of dates. Th
 
 [[Example:basic-daterange-picker]]
 
+- When the date range has a limit on the number of selectable days, indicate that in the UI with text summarizing the number of days currently selected, followed by an [info icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o). The tooltip on the info icon should clarify the date range limit.
+
+Todo: Add example date range limit indicator
+
 ## Design specification
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
