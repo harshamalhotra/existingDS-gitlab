@@ -41,13 +41,14 @@ export function getContentList(dirName) {
       JSON.stringify(content),
     );
 
-    const { name, figma, docs, a11y, gitlab_ui, vueComponents } = content.attributes;
+    const { name, figma, description, docs, a11y, gitlab_ui, vueComponents } = content.attributes;
     const id = componentFileName.replace('.md', '');
 
     componentInfos.push({
       id,
       name,
       figma,
+      description,
       docs: docs || 'upcoming',
       a11y: a11y || 'upcoming',
       gitlab_ui,

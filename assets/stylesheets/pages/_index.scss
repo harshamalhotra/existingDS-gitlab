@@ -114,3 +114,15 @@
     width: 100%;
   }
 }
+
+.components-list {
+  gap: $gl-spacing-7;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  .component-card {
+    &:hover,
+    &:focus {
+      border-color: $gray-200;
+    }
+  }
+}
