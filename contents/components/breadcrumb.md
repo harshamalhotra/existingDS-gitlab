@@ -1,5 +1,6 @@
 ---
 name: Breadcrumb
+description: Breadcrumbs assist users by helping them understand their current location in relation the rest of the application. Breadcrumbs use page hierarchy to facilitate discovery without taking up too much space.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A5
 docs: complete
 gitlab_ui: /components/breadcrumb/code
@@ -8,8 +9,6 @@ vueComponents:
 related:
   - navigation
 ---
-
-Breadcrumbs assist users by helping them understand their current location in relation the rest of the application. Breadcrumbs use page hierarchy to facilitate discovery without taking up too much space.
 
 ## Usage
 

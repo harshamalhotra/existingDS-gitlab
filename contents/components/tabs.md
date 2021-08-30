@@ -1,5 +1,6 @@
 ---
 name: Tabs
+description: Tabs are used to divide content into meaningful, related sections.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A138
 docs: complete
 gitlab_ui: /components/tabs/code
@@ -10,7 +11,7 @@ related:
   - /regions/navigation
 ---
 
-Tabs are used to divide content into meaningful, related sections. Tabs allow users to focus on one specific view at a time while maintaining sight of all the relevant content options available. Each tab, when active, will reveal it's own unique content.
+Tabs allow users to focus on one specific view at a time while maintaining sight of all the relevant content options available. Each tab, when active, will reveal it's own unique content.
 
 ## Usage
 

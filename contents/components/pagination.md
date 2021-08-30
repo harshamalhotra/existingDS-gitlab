@@ -1,5 +1,6 @@
 ---
 name: Pagination
+description: Pagination is used to help users parse a large number of items on a page, whenever there are too many results to show at once. Pagination breaks up results into several pages with controls for navigating forward and backward, or to a specific page.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A130
 docs: complete
 gitlab_ui: /components/pagination/code
@@ -10,8 +11,6 @@ related:
   - infinite-scroll
   - list
 ---
-
-Pagination is used to help users parse a large number of items on a page, whenever there are too many results to show at once. Pagination breaks up results into several pages with controls for navigating forward and backward, or to a specific page.
 
 ## Usage
 

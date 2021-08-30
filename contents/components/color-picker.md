@@ -1,11 +1,10 @@
 ---
 name: Color picker
+description: A color picker allows users to customize a component by choosing a color option. It is only available in instances where a user is adding bespoke content that needs to be differentiated.
 docs: in-progress
 related:
   - form
 ---
-
-A color picker allows users to customize a component by choosing a color option. It is only available in instances where a user is adding bespoke content that needs to be differentiated.
 
 ## Usage
 

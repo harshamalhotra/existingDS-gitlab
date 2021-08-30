@@ -1,5 +1,6 @@
 ---
 name: Sorting
+description: Sorting allows users to quickly re-organize similar content on a long list when the default order may be insufficient for users to scan the data set.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=2956%3A3038
 docs: in-progress
 related:
@@ -7,12 +8,6 @@ related:
   - filter
   - lists
 ---
-
-Sorting allows users to quickly re-organize similar content on a long list when the default order may be insufficient for users to scan the data set. The sorting component is placed directly on top of the list view. Common use cases for sorting include arranging:
-
-- Numbers in ascending or descending order.
-- Characters in alphabetical or reverse-alphabetical order.
-- Dates from most to least recent or the reverse.
 
 ## Usage
 

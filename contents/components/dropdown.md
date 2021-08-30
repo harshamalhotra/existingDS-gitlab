@@ -1,5 +1,6 @@
 ---
 name: Dropdown
+description: Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown buttons or form inputs.
 docs: in-progress
 vueComponents:
   - GlDropdown
@@ -10,8 +11,6 @@ related:
   - form
   - segmented-control
 ---
-
-Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown [buttons](/components/button) or [form inputs](/components/form).
 
 ## Usage
 

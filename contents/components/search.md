@@ -1,5 +1,6 @@
 ---
 name: Search
+description: Search patterns enable users to find certain information by adding criteria that match their query.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4191%3A0
 docs: complete
 gitlab_ui: /components/search/code
@@ -13,8 +14,6 @@ related:
   - sorting
   - spinner
 ---
-
-Search patterns enable users to find certain information by adding criteria that match their query.
 
 ## Usage
 

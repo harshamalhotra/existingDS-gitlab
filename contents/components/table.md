@@ -1,5 +1,6 @@
 ---
 name: Table
+description: Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
 docs: in-progress
 vueComponents:
   - GlTable
@@ -13,8 +14,6 @@ related:
   - pagination
   - /regions/empty-states
 ---
-
-Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
 
 ## Usage
 

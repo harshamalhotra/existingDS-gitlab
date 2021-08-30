@@ -1,12 +1,11 @@
 ---
 name: Tree
+description: Trees provide a clear overview of a structure, apply parent-child hierarchy between elements, and use the concept of progressive disclosure to display this structure to users.
 docs: in-progress
 related:
 - accordion
 - breadcrumb
 ---
-
-Trees provide a clear overview of a structure, apply parent-child hierarchy between elements, and use the concept of progressive disclosure to display this structure to users.
 
 Just like [accordions](/components/accordion), trees are vertically stacked. Trees are composed of a main container (tree trunk) which groups related elements (branches), and their related items (leaves). Trees should visually reflect the hierarchy and relationship differences between its elements. See tree [specifications](#specifications) for more details.
 

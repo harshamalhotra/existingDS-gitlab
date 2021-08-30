@@ -1,13 +1,12 @@
 ---
 name: Path
+description: Paths are horizontal process flows composed of a series of stages.
 docs: in-progress
 vueComponents:
   - GlPath
 related:
   - tabs
 ---
-
-Paths are horizontal process flows composed of a series of stages. Like [tabs](/components/tabs), paths have one stage visible at a time, while keeping other stage links available.
 
 ## Usage
  

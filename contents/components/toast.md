@@ -1,5 +1,6 @@
 ---
 name: Toast
+description: Toasts are used to display system messages.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A139
 docs: in-progress
 vueComponents:
@@ -10,8 +11,6 @@ related:
   - popovers
   - tooltip
 ---
-
-Toasts are used to display system messages. The messages are short and straightforward. It may contain a dismiss button, and an action button depending on the situation.
 
 ## Usage
 

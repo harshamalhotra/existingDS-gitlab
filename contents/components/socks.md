@@ -1,11 +1,10 @@
 ---
 name: Socks
+description: Socks represent a unique way to warm your feet.
 docs: complete
 vueComponents: []
 related: []
----
-
-Socks represent a unique way to warm your feet.  
+--- 
 
 ## Usage
 

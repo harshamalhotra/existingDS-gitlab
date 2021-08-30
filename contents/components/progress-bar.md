@@ -1,5 +1,6 @@
 ---
 name: Progress bar
+description: A progress bar indicates a percentage of completion.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A132
 docs: in-progress
 vueComponents:
@@ -8,8 +9,6 @@ related:
   - /data-visualization/charts
   - skeleton-loader
 ---
-
-A progress bar indicates a percentage of completion. For example, time tracking in GitLab allows you to compare time spent against the estimated time to complete an issue or merge request. Time is just one measurable unit for progress, and a progress bar can be used as long as you can calculate a percentage of a total.
 
 ### Dos and Dont’s
 

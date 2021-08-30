@@ -1,5 +1,6 @@
 ---
 name: Date picker
+description: Date picker allows users to choose and input a date through by manually typing the date into the input field or by using a calendar-like dropdown.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A13
 docs: complete
 vueComponents:
@@ -8,8 +9,6 @@ related:
   - form
   - dropdown
 ---
-
-Date picker allows users to choose and input a date through by manually typing the date into the input field or by using a calendar-like dropdown.
 
 ## Usage
 

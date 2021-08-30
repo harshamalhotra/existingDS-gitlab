@@ -1,5 +1,6 @@
 ---
 name: Infinite scroll
+description: Infinite scroll helps users parse a large number of items by breaking up lists and distributing the results.
 docs: complete
 gitlab_ui: /components/infinite-scroll/code
 vueComponents:
@@ -9,8 +10,6 @@ related:
   - pagination
   - spinner
 ---
-
-Use infinite scroll to help users parse a large number of items by breaking up lists and distributing the results. Infinite scroll loads the next batch of items in a list below the existing results, once the user has reached the bottom of the page. Infinite scroll removes the need for [pagination](/components/pagination).
 
 ## Usage
 

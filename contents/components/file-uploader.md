@@ -1,9 +1,8 @@
 ---
 name: File uploader
+description: File uploaders are used to upload files from your computer or device. The accepted file types will be determined by the context of the file uploader.
 docs: in-progress
 ---
-
-File uploaders are used to upload files from your computer or device. The accepted file types will be determined by the context of the file uploader.
 
 ## Usage
 

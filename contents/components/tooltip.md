@@ -1,5 +1,6 @@
 ---
 name: Tooltip
+description: Tooltips identify elements or provide additional, useful information about the referring elements.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A142
 docs: complete
 gitlab_ui: /components/tooltip/code
@@ -9,7 +10,7 @@ related:
   - popover
 ---
 
-Tooltips identify elements or provide additional, useful information about the referring elements. Tooltips are different from ALT-attributes, which are intended primarily for static images.
+Tooltips are different from ALT-attributes, which are intended primarily for static images.
 
 A tooltip fades in upon hover or focus on the trigger element. It remains open until the cursor moves outside of itself or the trigger, or focus is moved away from the trigger.
 

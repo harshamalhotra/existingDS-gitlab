@@ -1,5 +1,6 @@
 ---
 name: Checkbox
+description: A checkbox represents a single boolean option that can be checked, unchecked, or indeterminate. The indeterminate state occurs when sub-options are grouped under a parent option, and sub-options are in both selected and unselected states.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242
 docs: complete
 gitlab_ui: /components/checkbox/code
@@ -11,8 +12,6 @@ related:
   - segmented-control
   - toggle
 ---
-
-A checkbox represents a single boolean option that can be checked, unchecked, or indeterminate. The indeterminate state occurs when sub-options are grouped under a parent option, and sub-options are in both selected and unselected states.
 
 ## Usage
 

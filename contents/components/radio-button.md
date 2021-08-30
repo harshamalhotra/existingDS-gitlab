@@ -1,5 +1,6 @@
 ---
 name: Radio button
+description: A radio button typically represents a single option in a group of related choices.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4
 docs: complete
 gitlab_ui: /components/radio-button/code
@@ -11,8 +12,6 @@ related:
   - segmented-control
   - toggle
 ---
-
-A radio button typically represents a single option in a group of related choices. Each radio button is boolean and only one can be selected at a time.
 
 ## Usage
 

@@ -1,5 +1,6 @@
 ---
 name: Skeleton loader
+description: A skeleton loader is used to let users know what kind of content is currently loading and to create a perception of decreased waiting time.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=2844%3A0
 docs: complete
 gitlab_ui: /components/skeleton-loader/code
@@ -8,8 +9,6 @@ vueComponents:
 related:
   - spinner
 ---
-
-A skeleton loader is used to let users know what kind of content is currently loading and to create a perception of decreased waiting time. The actual content should be loaded progressively, while still adhering to the structure and look of the complete view by showing animated placeholders (the so-called “bones” of the skeleton) until replaced.
 
 ## Usage
 

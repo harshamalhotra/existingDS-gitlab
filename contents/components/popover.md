@@ -1,5 +1,6 @@
 ---
 name: Popover
+description: Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A131
 docs: complete
 gitlab_ui: /components/popover/code
@@ -9,7 +10,7 @@ related:
   - tooltip
 ---
 
-Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal. Popovers are different from [tooltips](/components/tooltip), which do not provide rich markup and actionable items. Additionally, a popover can contain a header section with a different background color and images if needed.
+Popovers are different from [tooltips](/components/tooltip), which do not provide rich markup and actionable items. Additionally, a popover can contain a header section with a different background color and images if needed.
 
 By default, popovers fade in on hover or focus of its trigger element. They fade out upon interacting with an area or element outside of the popover or its trigger, or on a delay of the cursor moving outside the popover or its trigger element.
 

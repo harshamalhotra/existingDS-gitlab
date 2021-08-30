@@ -1,5 +1,6 @@
 ---
 name: Token
+description: Tokens represent keywords and are used to add or filter objects. They allow users to input information, converting their text to tokens.
 docs: complete
 gitlab_ui: /components/token/code
 vueComponents:
@@ -10,8 +11,6 @@ related:
   - badge
   - label
 ---
-
-Tokens represent keywords and are used to add or filter objects. They allow users to input information, converting their text to tokens.
 
 ## Usage
 

@@ -1,5 +1,6 @@
 ---
 name: Filter
+description: Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
 docs: in-progress
 gitlab_ui: /components/filter/code
 vueComponents:
@@ -10,8 +11,6 @@ related:
   - list
   - dropdowns
 ---
-
-Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
 
 Filters utilize our [search component](/component/search/) with three main [token](/components/token/) parts:
 

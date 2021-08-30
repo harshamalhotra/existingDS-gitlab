@@ -1,5 +1,6 @@
 ---
 name: Toggle
+description: A toggle is a visual switch which acts as a boolean.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140
 docs: complete
 vueComponents:
@@ -9,8 +10,6 @@ related:
   - radio-button
   - segmented-control
 ---
-
-A toggle is a visual switch which acts as a boolean.
 
 ## Usage
 

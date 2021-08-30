@@ -1,5 +1,6 @@
 ---
 name: Label
+description: Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A127
 docs: complete
 gitlab_ui: /components/label/code
@@ -8,8 +9,6 @@ vueComponents:
 related:
   - badge
 ---
-
-Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
 
 Labels should not be confused with [badges](/components/badge). Badges highlight more generic object metadata that are not categories.
 

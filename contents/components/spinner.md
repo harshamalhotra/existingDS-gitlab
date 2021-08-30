@@ -1,5 +1,6 @@
 ---
 name: Spinner
+description: A spinner is a simple animated element that tells users that either saving or loading of information/data is in progress and is tied to user-triggered actions.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A137
 docs: complete
 vueComponents:
@@ -11,7 +12,7 @@ related:
   - skeleton-loader
 ---
 
-A spinner is a simple animated element that tells users that either saving or loading of information/data is in progress and is tied to user-triggered actions. In some cases of saving information the UI will reflect the change before the change is actually saved. In such cases, the spinner should be used to indicate background activity until information is successfully saved.
+In some cases of saving information the UI will reflect the change before the change is actually saved. In such cases, the spinner should be used to indicate background activity until information is successfully saved.
 
 ## Usage
 

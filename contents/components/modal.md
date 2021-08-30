@@ -1,5 +1,6 @@
 ---
 name: Modal
+description: Modals are used to reveal critical information, show information without losing context, or when the system requires a user response. Modals can also fragment a complex workflow into simpler steps and should serve a single purpose dedicated to completing the user's task.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A129
 docs: complete
 gitlab_ui: /components/modal/code
@@ -13,8 +14,6 @@ related:
   - toast
   - tooltip
 ---
-
-Modals are used to reveal critical information, show information without losing context, or when the system requires a user response. Modals can also fragment a complex workflow into simpler steps and should serve a single purpose dedicated to completing the user's task.
 
 ## Usage
 
