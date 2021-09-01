@@ -8,22 +8,6 @@ const setFrontmatter = (state, frontmatter) => {
   state.frontmatter = frontmatter;
 };
 
-const setActiveNavItem = (state, navItem) => {
-  state.activeNavItem = navItem;
-};
-
-const toggleActiveNavItem = (state, navItem) => {
-  if (!navItem) {
-    setActiveNavItem(state, '');
-  }
-
-  if (state.activeNavItem.startsWith(navItem)) {
-    setActiveNavItem(state, '');
-  } else {
-    setActiveNavItem(state, navItem);
-  }
-};
-
 export const toggleSidebar = (state) => {
   state.sidebarOpen = !state.sidebarOpen;
 };
@@ -35,8 +19,6 @@ export const closeSidebar = (state) => {
 export default {
   resetFrontmatter,
   setFrontmatter,
-  setActiveNavItem,
-  toggleActiveNavItem,
   toggleSidebar,
   closeSidebar,
 };

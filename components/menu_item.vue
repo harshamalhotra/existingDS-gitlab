@@ -1,6 +1,4 @@
 <script>
-import { mapState, mapMutations } from 'vuex';
-
 export default {
   name: 'MenuItem',
 
@@ -19,14 +17,17 @@ export default {
       required: false,
       default: 0,
     },
+    navTree: {
+      type: Object,
+      required: true,
+    },
   },
   computed: {
-    ...mapState(['activeNavItem']),
     hasChildren() {
-      return this.item.items?.length;
+      return this.item.children?.length;
     },
     isExpanded() {
-      return this.activeNavItem.startsWith(this.nextBasePath);
+      return this.item.isActive;
     },
     nextBasePath() {
       let { basePath: nextBasePath } = this;
@@ -48,9 +49,6 @@ export default {
       return `${this.basePath}/${this.item.path}`;
     },
   },
-  methods: {
-    ...mapMutations(['setActiveNavItem', 'toggleActiveNavItem']),
-  },
 };
 </script>
 
@@ -60,11 +58,12 @@ export default {
       <span class="nav-sidebar__section-title">{{ item.title }}</span>
     </li>
     <menu-item
-      v-for="child in item.items"
-      :key="child.title"
+      v-for="child in item.children"
+      :key="child.id"
       :item="child"
       :depth="depth + 1"
       :base-path="nextBasePath"
+      :nav-tree="navTree"
     />
   </ul>
   <li
@@ -80,7 +79,7 @@ export default {
       :class="`tree-indent-${depth}`"
       :aria-expanded="isExpanded"
       :aria-haspopup="true"
-      @click.prevent="toggleActiveNavItem(nextBasePath)"
+      @click.prevent="navTree.toggleNode(item)"
       >{{ item.title }}</a
     >
     <ul
@@ -91,11 +90,12 @@ export default {
       role="menu"
     >
       <menu-item
-        v-for="child in item.items"
-        :key="child.title"
+        v-for="child in item.children"
+        :key="child.id"
         :item="child"
         :depth="depth + 1"
         :base-path="nextBasePath"
+        :nav-tree="navTree"
       />
     </ul>
   </li>
@@ -115,7 +115,7 @@ export default {
       :to="path"
       :class="`tree-indent-${depth}`"
       class="nav-sidebar__section-items-anchor"
-      @click.native="setActiveNavItem(nextBasePath)"
+      @click.prevent="navTree.activateNode(item)"
       >{{ item.title }}</nuxt-link
     >
   </li>

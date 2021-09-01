@@ -1,14 +1,19 @@
 <script>
 import { mapState } from 'vuex';
+import { NavTree } from '../helpers/navigation/NavTree';
 import nav from '../nav.json';
 import MenuItem from './menu_item.vue';
 import Search from './search/search.vue';
 
 export default {
-  nav,
   components: {
     MenuItem,
     Search,
+  },
+  data() {
+    return {
+      navTree: new NavTree(nav, this.$route.fullPath),
+    };
   },
   computed: {
     ...mapState(['sidebarOpen']),
@@ -74,7 +79,12 @@ export default {
       </template>
     </client-only>
     <div class="nav-sidebar__body m-b-3">
-      <menu-item v-for="item in $options.nav" :key="item.title" :item="item" />
+      <menu-item
+        v-for="item in navTree.topLevelNodes"
+        :key="item.id"
+        :item="item"
+        :nav-tree="navTree"
+      />
     </div>
   </nav>
 </template>
