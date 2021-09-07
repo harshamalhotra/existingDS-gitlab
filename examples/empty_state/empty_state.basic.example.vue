@@ -1,7 +1,10 @@
 <template>
   <gl-empty-state
-    title="The issue tracker is a place to add things that need to be improved or solved in a project"
-    svg-path="https://gitlab.com/gitlab-org/gitlab-svgs/raw/master/illustrations/issues.svg"
-    description="Issues can be bugs, tasks, or ideas to be discissed. Also, issues are searchable and filterable."
+    title="No issues found"
+    svg-path="https://gitlab.com/gitlab-org/gitlab-svgs/-/raw/main/illustrations/issues.svg"
+    svg-height="200"
+    primary-button-link="#"
+    primary-button-text="Create issue"
+    description="Issues can be bugs, tasks, or ideas to be discussed. Create an issue to get started."
   />
 </template>

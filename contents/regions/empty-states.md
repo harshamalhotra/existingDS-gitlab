@@ -7,45 +7,74 @@ related:
   - button
 ---
 
-An empty state is our way of communicating to the user that there is no content to load and what action they should take next. They are vital in making the experience feel more approachable and understandable.
+## Goals
 
-## Usage
+The primary goals of an empty state region should be to:
 
-Empty states are composed of 3 elements: the illustration, description, and call to action.
+- Increase feature adoption.
+- Improve learnability and feature discovery.
+- Improve usability.
 
-**1\. Illustration**
+## Solutions
 
-The [illustration](/product-foundations/illustration) should compliment the need for the empty state. It’s optional, but strongly recommended to help the user understand the situation and add personality.
+While we do provide a [fallback solution](#fallback) for empty state regions, *first* think about how to incorporate unique features in an empty state to achieve the above goals better than we can if we simply used our fallback solution. For example:
 
-**2\. Description**
+- In an epic with 0 related issues, *suggest* a few existing issues through keyword matching or other intelligent methods that could be added with a simple click. In this case, it could make it easier to add related issues without leaving the epic. This may `Increase feature adoption` more than simply telling users that no content exists. 
 
-A description includes a title and message. It should be clear, concise, and explain why the user is seeing this screen.
+This is just one example. Each case will be unique and should be thought of as a problem to solve while keeping the [3 main goals in mind](#goals). 
 
-Occasionally, the message can also include a [help link](/usability/helping-users) to provide supplemental information about the content.
+## Analytics & testing
 
-**3\. Call to action**
+All empty state solutions should include usage analytics so you and your team can measure and improve the empty state solution you've created over time. It‘s also important to think about this as a *solution*, much like any other solution being developed in your stage group, so continue to follow the [solution validation](https://about.gitlab.com/handbook/engineering/ux/ux-research-training/solution-validation-and-methods/) process.
 
-The call to action takes the form of a primary button, with the option to add a secondary button. The label should be direct and actionable.
+## Use cases
 
-### When to use an empty state
+### Blank content
 
-Empty states can be employed to:
+A `Blank content` empty state serves as a placeholder when no content exists on a page. It should contain a call to action that triggers the creation of content. 
 
-- Make users aware that a feature is not configured for use.
-- Act as a placeholder for regions in the app left blank intentionally.
-- Convey an error state, which will depend on the nature of the error and should be used judiciously. An example of this would be a server response error, that is, 404 or 500.
-- Display empty search results.
+#### Specifications
 
-Empty states differ from [banners](/components/banner) in that they are not intended to promote or advertise new features or functionality.
+- Appears when no content exists within a configured feature.
+- Contains a method for creating content.
 
-[See banners for more usage information](/components/banner)
+### Configuration required
 
-## Demo
+A `Configuration required` empty state serves as a placeholder for features that need to be configured first, before having the ability to create content.
 
-[[Example:empty-state-multiple-buttons]]
+#### Specifications
 
-## Design specifications
+- Contains a primary action for configuring a feature.
+- Contains a secondary action for inviting a member to configure a feature. The secondary action should read as `Invite member to configure`, which should trigger the invite modal, created by the [Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section).
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+Todo: Add link to process for implementing invite modal. 
 
-TODO: Add Figma specs for empty states
+### Higher tier feature
+
+A `Higher tier feature` empty state serves as a placeholder when a certain feature isn‘t available under the current tier. [The Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section) is the DRI for `Higher tier feature` empty state regions and should be involved in implementation of solutions for this type of empty state region.
+
+#### Specifications
+
+- Specifications and actions should be determined by [the Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section). If implementing a solution for this empty state region, collaborate with the Growth Product Designer and Product Manager. 
+
+Todo: Add specifications for Higher Tier empty state region.
+
+### Empty search results
+
+An `Empty search results` empty state serves as a placeholder when there are no search results after doing a search or filtering results.
+
+#### Specifications
+
+- Appears when no results are found after a search or filter.
+- Should describe that a search or filter came back with no results.
+- Does not contain a CTA.
+
+## Fallback
+
+If you're unable to come up with a solution to achieve one of the [3 goals of an empty state region](#goals), you can use the empty state fallback. Using the fallback should still achieve one of the three goals and should include a way to track conversion.
+
+[[Example:empty-state-basic]]
+
+## References
+
+- [Invited users are more likely to activate new stages](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/2526#note_691364062)
