@@ -25,7 +25,9 @@ The help menu is the dropdown with the question mark icon and contains links to 
 The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each nav item should be short and easy to remember, ideally 1-2 words in length. There can be up to two levels of navigation: product landing pages and sub nav group. 
 
 ### Product landing pages
-Product landing pages are the top level pages in the left sidebar for Projects and Groups. For example, the Issue List page is the landing page for issues. These pages are used to display the most important functionality for that navigation category and when appropriate, facilitate navigation into related functionality.
+Product landing pages are the top level pages in the left sidebar for Projects and Groups. For example, the Issue List page is the landing page for Issues. These pages are used to display the most important functionality for that navigation category and when appropriate, facilitate navigation into related functionality.
+
+In some cases, items within a sub nav group may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project. When this occurs, the top-level menu item should remain consistent, even if there is only one sub-menu item. The reason for top-level menu consistency is to reduce the cognitive effort needed from users to understand the navigation and task hierarchy. For example, we should not replace **CI/CD** with **Runners** or **Infrastructure** with **Terraform** as the top-level menu item in the sidebar.
 
 ### Sub nav group
 
