@@ -1,3 +1,10 @@
+## [2.60.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.60.0...v2.60.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* Description frontmatter wont display without vueComponent ([e77ad70](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e77ad70f16d5733c5315cd8a37a7d6bc4039cb02))
+
 # [2.60.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.59.0...v2.60.0) (2021-08-25)
 
 
