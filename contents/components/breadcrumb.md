@@ -1,55 +1,59 @@
 ---
 name: Breadcrumb
-description: Breadcrumbs assist users by helping them understand their current location in relation the rest of the application. Breadcrumbs use page hierarchy to facilitate discovery without taking up too much space.
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A5
-docs: complete
-gitlab_ui: /components/breadcrumb/code
+description: A breadcrumb is a navigational element to help a user understand the current location in the application as well as content structure and hierarchy.
 vueComponents:
   - GlBreadcrumb
 related:
-  - navigation
+  - avatar
+  - button
 ---
 
-## Usage
+## Examples
 
-A breadcrumb should appear on every page of the application, except for the register and profile screens. It should show the hierarchical progress from the highest page entity to the current page entity, one step at a time. It should not be used to replace the main navigation.
+[[Example:breadcrumb-basic]]
 
-### Dos and Dont's
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
 
-| Do                                                      | Don't                                                                |
-| ------------------------------------------------------- | -------------------------------------------------------------------- |
-| Ignore the GitLab instance name in the breadcrumb line. | Include the GitLab instance name in the breadcrumb line.             |
-| Keep breadcrumbs to one line by default.                | Break breadcrumbs up onto separate lines.                            |
-| Use an ellipsis button to hide multiple subgroups when there are more than three. | Show more than three subgroups by default. |
-| Use chevrons between breadcrumb items.                  | Use slashes or other characters to separate breadcrumb items.        |
 
-### Individual pages
+## Structure
 
-For pages that present the details for an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID for said element.
+<figure class="figure" role="figure" aria-label="Breadcrumb structure">
+  <img class="figure-img" src="/img/breadcrumb-structure.svg" alt="Numbered diagram of a breadcrumb structure" role="img" />
+</figure>
 
-**Example:** MR !1234 in CE becomes _'GitLab.org > GitLab Community Edition > Merge Requests > !1234'_
+1. **Avatar** (optional): Prefixes a group or project link.
+1. **Link**: Opens the page in the same window.
+1. **Separator**: The [chevron-right](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-right) icon is between each link.
 
-### Contextual pages
+## Guidelines
 
-For contextual pages within the navigation, the breadcrumb should only include the submenu title.
+### When to use
 
-**Example:** Overview > Details becomes just _'Details'_
+- A breadcrumb should exist on every page of the application, except for register and profile, to show the hierarchy of parent and child pages in the context of the current page where the current page is the last item in the list.
 
-### Truncation
+### When not to use
 
-The breadcrumb should use the following rules to truncate items:
+- If you need to link to sibling or related pages, use a form of [navigation](/regions/navigation) instead.
 
-- Use an ellipsis button to hide groups when there are three or more subgroups in the path.
-- Use an ellipsis button to hide all Wiki page breadcrumb items except the current page.
+### Behavior
+
+- Use an [ellipsis button](/components/button) to hide groups when there are three or more subgroups in the path.
+- Use an [ellipsis button](/components/button) to hide all Wiki page breadcrumb items except the current page.
 - The top-level group and the subgroup closest to the project are never collapsed.
-- All breadcrumb items except the last one are truncated to 128px if there isn't enough horizontal space to fit them on one line.
+- All breadcrumb items, except the last one, are truncated to 128px if there isn't enough horizontal space to fit them on one line.
 
-### Special breadcrumbs
+### Content
 
-Certain pages have special breadcrumb paths to make the breadcrumb labels intuitive. These are defined as follows:
+- Ignore the **GitLab** instance name in the breadcrumb.
+- For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge Requests > !1234**.
+- For a contextual page within the navigation, the breadcrumb should only include the submenu title. For example, **Overview > Details** becomes just **Details**.
 
-| Path                                      | Title in breadcrumb                          |
-| ----------------------------------------- | -------------------------------------------- |
+#### Special breadcrumbs
+
+Some pages have a special breadcrumb path to make the text intuitive. They are defined as follows:
+
+| Path | Title in breadcrumb |
+| ------ | ------ |
 | Group > Issues > List                     | Group > Issues                               |
 | Group > Issues > Boards                   | Group > Issue Boards                         |
 | Group > Settings > General                | Group > General Settings                     |
@@ -69,12 +73,8 @@ Certain pages have special breadcrumb paths to make the breadcrumb labels intuit
 | Admin Area > System Hooks > Edit          | Admin Area > System Hooks > Edit System Hook |
 | Admin Area > Label > Edit                 | Admin Area > Labels > Edit Label             |
 
-## Demo
+### Accessibility
 
-[[Example:breadcrumb-basic]]
-
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
+- A `nav` element with `aria-label="Breadcrumb"` wraps an ordered list to provide a navigation landmark.
+- `aria-current="page"` is on the last link to indicate that it's the current page.
+- See the [WAI-ARIA Authoring Practices Breadcrumb Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/breadcrumb/index.html) for more details.
