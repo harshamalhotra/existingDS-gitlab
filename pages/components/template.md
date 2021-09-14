@@ -49,7 +49,7 @@ related:
 
 ## Structure
 <!--
-  Include a simplified visual of the component with the sections and parts numbered to match the text reference below. Examples can be viewed in Figma at https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples?node-id=39%3A0. Request access if needed to create a new visual. An ordered list should match the numbering in the visual. The section or part name should be the first item and use **bold** formatting. Use the figure element to add the visual, like the below example:
+  Include a simplified visual of the component with the elements numbered to match the text reference below. Examples can be viewed in Figma at https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples?node-id=39%3A0. Request access if needed to create a new visual. An ordered list should match the numbering in the visual. Each list item should begin with element name in **bold** formatting. Use the `figure` element to add the visual, like the below example:
 
   <figure class="figure" role="figure" aria-label="Button structure">
     <img class="figure-img" src="/img/button-structure.svg" alt="Numbered diagram of a button structure" role="img" />
@@ -59,7 +59,7 @@ related:
   1. **Icon**: Supports the variant meaning.
 -->
 
-1. **{sectionOrPart}**: Description.
+1. **{element}**: Description.
 1. …
 
 ## Guidelines
