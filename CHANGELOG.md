@@ -1,3 +1,10 @@
+# [2.61.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.60.1...v2.61.0) (2021-09-14)
+
+
+### Features
+
+* **Breadcrumb:** Update content to utilize new template ([86345f4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/86345f431e4089dc0aa19d5bce30b65700404b42))
+
 ## [2.60.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.60.0...v2.60.1) (2021-09-08)
 
 
