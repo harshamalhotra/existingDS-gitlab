@@ -1,72 +1,64 @@
 ---
 name: Toast
-description: Toasts are used to display system messages.
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A139
-docs: in-progress
+description: A toast displays a short system message as a result of a user's action.
 vueComponents:
   - GlToast
 related:
+  - alert
   - modal
-  - motion
-  - popovers
+  - popover
   - tooltip
 ---
 
-## Usage
+## Examples
 
-Toasts appear with an ease-in animation from the bottom of the viewport and stay fixed at its bottom-left corner.
+Todo: Add toast examples.
 
-Users can exit the toast by clicking the “Dismiss” button. If left alone, toasts without actions will automatically disappear after five seconds. Hovering over a toast message will cause it to remain until the cursor is moved. Toasts with action buttons are only dismissed when the user performs the action, clicks the dismiss button, or navigates to another page.
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A139)
 
-|Type|Purpose|
-|--- |--- |
-|Default toast|These toasts are used to display simple, non-interactive messages.|
-|Action toast|These toasts are used to display message with an optional user action (for example, "Undo").|
+## Structure
+
+<figure class="figure" role="figure" aria-label="Toast structure">
+  <img class="figure-img" src="/img/toast-structure.svg" alt="Numbered diagram of a toast structure" role="img" />
+</figure>
+
+1. **Container**: Wraps the content.
+1. **Message**: Text content indicating the purpose and potential next steps.
+1. **Action** (optional): A single text action a user can take based on the content of the toast.
+1. **Dismiss button**: Removes the toast for a user.
+
+## Guidelines
+
+### When to use
+
+- Provide a contextual message based on a user's action in the same view the action took place.
+
+### When not to use
+
+- If you need to communicate an error to a user, consider using a [danger or warning alert](/components/alert#variants) instead.
+- If there's a page refresh, or a message needs to be communicated after a user visits a new page, consider using an [alert](/components/alert) instead.
+- If the action is irreversible, consider using a [modal](/components/modal) instead.
+
+### Behavior
+
+- A toast appears with an ease-in animation from the bottom of the viewport after a user's action.
+- A user can dismiss the toast by clicking the “dismiss” icon button.
+- If left alone, a toast without an action will disappear after five seconds.
+- Hovering over a toast causes it to remain until the cursor is moved.
+- A toast with an action is only dismissed when a user does one of the following:
+  - Clicks the action.
+  - Clicks the dismiss button.
+  - Navigates to another page.
 
 ### Content
 
-While the content within a toast should be concise, it should also be specific. Because toasts have the ability to stack, ambiguous copy could lead to confusion. Ensure every toast specifies the object the action was related to.
+- The message should be concise, specific, and use clear language.
 
-### Dos and Dont's
+### Placement
 
-|Do|Don't|
-|--- |--- |
-|Stack toasts if more than one are displayed on the screen at once.|Dismiss a toast prematurely if another toast is introduced.|
-|Add an additional action button if appropriate.|Add more than one extra button in addition to the "Dismiss" button.|
-|Always show a dismiss button.|Remove a user's ability to manually dismiss the message.|
-|Avoid using for irreversible actions.|Use for actions that will result in permanent deletion.|
-|Avoid using more than 2 lines of text for the toast message.|Use toast messages for messages that are longer than 3 lines of text.|
-|Avoid using toasts for error messages, use [error alerts](/components/alert) instead|Use toast messages for error reporting|
-|Toasts, when positioned in the bottom left corner of the viewport, overlap the sidebar navigation.|Toasts positioning will be relative to other onscreen elements like the sidebar navigation.|
+- Centered at the bottom of the viewport for smaller breakpoints and bottom left of the viewport for larger breakpoints.
+- Multiple toasts stack vertically from top to bottom with the oldest on top.
 
-### Mobile toast
+### Accessibility
 
-There are some adjustments necessary for toasts displayed on smaller screens.
-
-*Note: In order to see what toasts look like on mobile, you can either view the demo section below from a mobile device, or resize your browser to the desired mobile width.*
-
-- The width of the toast is full (100%).
-- If the message has only one line and the only action is to dismiss, the toast retains the dismiss icon.
-- If the message wraps onto another line, place the action buttons below the message, aligned to the right, with the “Dismiss” action first.
-
-## Demo
-
-Todo: An example of a toast.
-
-Todo: An example of a toast with actions.
-
-## Specifications
-
-- The dimensions of a toast are dependent on its contents with a max-width of `568px`.
-
-### Design
-
-- Action text is underlined when hovered.
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1602%3A7)
-
-### Animation
-
-- A toast message eases in and out with a speed of 200 milliseconds from the bottom-left side of the screen (centered at smaller breakpoints).
+Todo: Add accessibility requirements and considerations.
