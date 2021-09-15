@@ -1,3 +1,10 @@
+# [2.62.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.61.0...v2.62.0) (2021-09-15)
+
+
+### Features
+
+* **Toast:** Update content to utilize new template ([dd766e4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dd766e48a5407f92961d34ee0aa80e7c0787d58a))
+
 # [2.61.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.60.1...v2.61.0) (2021-09-14)
 
 
