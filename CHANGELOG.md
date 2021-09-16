@@ -1,3 +1,10 @@
+# [2.63.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.62.0...v2.63.0) (2021-09-16)
+
+
+### Features
+
+* **FileUploader:** Update file uploader docs to new template ([b07e353](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b07e353e4e1661ef33070a19a16ddd1e6cf62396))
+
 # [2.62.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.61.0...v2.62.0) (2021-09-15)
 
 
