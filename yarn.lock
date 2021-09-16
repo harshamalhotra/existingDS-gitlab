@@ -993,15 +993,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.212.0.tgz#21a5df04c52b10cc1b8521cd8ff7c7d6d13716db"
   integrity sha512-dv0bYTHA3hwi3mNU3bGMq1cd4HVKKFNwCNPgkF91JSp4Xt8DDtJ0Yq4X49ASsq4zCJ3odgkq2aPjEa/Sr5nINQ==
 
-"@gitlab/ui@32.10.2":
-  version "32.10.2"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.10.2.tgz#d663faaddd5aecf52e7e97b598dfb71a14da60c5"
-  integrity sha512-WJEVktJjwUoTrR9z8xa3gx73dWwLTq+wsXYH0mfRWzkXHnvjdDp3h8cYj3s1NZ0eAPQ6yVrkvYrTTgLVHZgSbA==
+"@gitlab/ui@32.11.0":
+  version "32.11.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.11.0.tgz#8c4a1724c1733a243f96e4a4813ae7f348502ba6"
+  integrity sha512-EqP5Ub/IWEi5ErX0txx5vsd6hF7d7dOT5GqaRX6rVaLsUhWLYQZ8ld2yEl5Hx7FLki1t3uag17KII5FcvRTDLg==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "2.18.1"
     copy-to-clipboard "^3.0.8"
-    dompurify "^2.3.1"
+    dompurify "^2.3.2"
     echarts "^4.9.0"
     highlight.js "^10.6.0"
     js-beautify "^1.8.8"
@@ -4292,10 +4292,10 @@ domhandler@^4.0.0, domhandler@^4.2.0:
   dependencies:
     domelementtype "^2.2.0"
 
-dompurify@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.1.tgz#a47059ca21fd1212d3c8f71fdea6943b8bfbdf6a"
-  integrity sha512-xGWt+NHAQS+4tpgbOAI08yxW0Pr256Gu/FNE2frZVTbgrBUn8M7tz7/ktS/LZ2MHeGqz6topj0/xY+y8R5FBFw==
+dompurify@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.2.tgz#c773efa410abb5c087c7caf44934fefa448f6e60"
+  integrity sha512-jXJnvWloI+scD+N5uBikpUMsYXZb0LCAXxLFAOLS5duCzKfXLqBCpuINvFOiI4eJgTLggrngljT18HNoakHUsA==
 
 domutils@1.1:
   version "1.1.6"
