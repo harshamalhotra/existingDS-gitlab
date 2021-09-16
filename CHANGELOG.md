@@ -1,3 +1,10 @@
+# [2.64.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.63.0...v2.64.0) (2021-09-16)
+
+
+### Features
+
+* **Components:** Add overview page for components ([274ed17](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/274ed17b49004cc74deb34e1377c68f020c34c09))
+
 # [2.63.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.62.0...v2.63.0) (2021-09-16)
 
 
