@@ -1,92 +1,67 @@
 ---
 name: Card
-description: Cards are a flexible component used to display content and actions in a variety of contexts. They are generally restricted to a single topic and it should be easy for users to scan relevant and actionable information. Content, such as images and text, should be positioned within them in a manner that demonstrates their intended hierarchy.
-docs: in-progress
-gitlab_ui: /components/card/code
+description: A card displays a single group of content within a set of similar groups.
 vueComponents:
   - GlCard
 related:
+  - list
   - table
 ---
 
-## Usage
-
-Cards are used to connect similar concepts and/or activities to help make it easier for users to browse, read, and learn more about GitLab. The use-cases vary from communicating pricing plans to organizing content within issue boards.
-
-| Do | Don't |
-| --- | --- |
-| Use cards for snapshots or an overview of information. | Don't use a card for an entire workflow. Consider a dedicated content area (a drawer, [modal](/components/modals), or even a dedicated page) for deep dives. |
-| Use cards if you are displaying a discrete block of content as part of a broader set. For example, issues displayed on an issue board or pricing options displayed on pricing and marketing pages. | Use cards as a way of blocking information. For example, [forms](/components/forms) or single stats. |
-
-### Types
-
-There are two main types of Cards: Static and Dynamic.
-
-| Card type | Purpose |
-| --- | --- |
-| Static Card | Single topic component to help compare and contrast similar pieces of information. |
-| Dynamic card | Can be draggable. For use in a multidisciplinary list to help users stay organized, such as on GitLab issue boards. |
-
-### Alternatives
-
-#### Table
-
-If the purpose of using the component is to compare and contrast several static (non-draggable) pieces of content, or if you're utilizing column headers to organize your content horizontally, a better option would be to structure the data within a [table component](/components/table).
-
-#### Single Stat
-
-If the purpose of using the component is to show a high level overview of incoming data such as Security vulnerabilities or Threat Monitoring statistics, use a single stat component.
-
-Todo: Add link to single stat component after it's been created
-
-## Demo
+## Examples
 
 [[Example:card-with-header-footer]]
 
-## Specifications
+Todo: Provide additional card examples.
 
-### Sections
+Todo: Add link to design specs.
 
-A card is a very flexible component - it is generally any information contained and repeated within square or rectangle containers. However, the card component is more commonly referred to as a container with three main sections: Header, body, and action(s). Dividers should be used between these sections.
+## Structure
 
-#### Header
+Todo: Add structure diagram based on design specs.
 
-The header is **optional** and acts as the title of the proceeding body content. An example could be the name of a pricing plan or a blog post title. Headings should set clear expectations about the card’s purpose.
+1. **Container**: Wraps the content.
+1. **Header** (optional): Contains the title.
+1. **Title** (optional): Conveys the purpose of the card.
+1. **Content**: Contains a wide variety of content types and controls depending on the purpose.
+1. **Actions** (optional): Buttons or links used to provide explicit action(s) the user can take related to the card content.
 
-#### Body
+## Guidelines
 
-The card body is **always required**. The content in the body should never be ambiguous or unclear. Provide the user with content regarding a single topic and strive to be as concise as possible. For example, if a card's purpose is to communicate a pricing plan, the body would contain the plan's price point and key feature information.
+### When to use
 
-Use multiple sections within the body when you have two or more related but distinct pieces of information to communicate to users. Multiple sections can help break up complicated concepts like pricing data. Content in this area could include media, and photos.
+- Display a single, concise group of content within a set of similar, related groups. As a set, each card is meaningful on its own, but also in relationship and comparison to other cards.
 
-#### Actions
+### When not to use
 
-The action section is **optional**. There should be no more than 3 actions. Actions should always be located within an action bar at the bottom of the Card. Button order and positioning should follow our [guidelines for buttons](/components/button).
-
-### Component Combinations
-
-Todo: Add more context here (e.g. cards and alerts) and examples
+- A card shouldn't be used for the sole purpose of styling a single block of content. Use available [utility classes](https://unpkg.com/browse/@gitlab/ui/src/scss/utilities.scss) instead.
+- If you're only displaying static text or items that don't require comparison or additional grouping, consider using a [list](/components/list) instead.
+- If you need to present or compare data, consider using a [table](/components/table) instead.
+- If you need to show a high level overview of a single data point, use a single stat component. Todo: Add link to single stat component after it's been created
 
 ### Behavior
 
-#### Responsiveness
+- Card width is fluid by default.
+- A card can be static or draggable when there is an option to reorder it within a set of other cards.
+  - When dragging the card to a new location, any cards positioned behind it should move to show their new placement as if the user were to let go of the selected card and drop it into the current position.
+  - For touch devices there should be a longer hold on the card in order to grab it and move it, so that the user intent isn't confused with scrolling.
 
-The card width is fluid by default. When presenting two or more static cards in a row, care must be taken to ensure the appropriate stacking occurs across breakpoints.
+### Content
 
-#### Interactions
+- All copy within a card should be short, actionable, and use clear language.
+- A card should utilize the [skeleton loader](/components/skeleton-loader/) pattern when possible to represent loading content within.
 
-Dynamic cards can be draggable and re-ordered within a list. To help layer the component within this particular use-case, a drop shadow is required. A draggable card will maintain the ability to house individual links and actions. Its empty space becomes the trigger to enable the drag functionality. The cursor should change to a pointer hand icon to convey functionality.
+#### Title
 
-When dragging the card to a new location, any cards positioned behind it should move to show their new placement as if the user were to let go of the selected card and drop it into the current position.
+- Be brief and keep it to a single line by utilizing a sentence fragment.
+- Avoid using punctuation such as periods, commas, or semicolons.
+- Use a full stop only when it's a full sentence.
 
-On mobile, there should be a longer hold on the card in order to grab it and move it, so as not to interfere with a lighter, quicker touch for scrolling.
+#### Body content
 
-#### Loading
+- Since a card can be used for many purposes, body content can be just about anything from an image to meta information and plain text.
+- Body content for each card within a set should follow a similar pattern and structure so that the cards are scannable and consistent.
 
-While the page is loading, cards should use the [skeleton loader component](/components/skeleton-loader).
+#### Actions
 
-## Design Specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[Sketch Measure Preview for Cards](https://gitlab-org.gitlab.io/gitlab-design/hosted/design-gitlab-specs/card-spec-preview)
+- Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See [button alignment and order](/components/button#alignment-and-order) for more details.
