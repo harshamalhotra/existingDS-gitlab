@@ -1,3 +1,10 @@
+# [2.65.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.64.0...v2.65.0) (2021-09-20)
+
+
+### Features
+
+* **Checkbox:** Update content to use new template ([ee73240](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ee732407705375222e81781d9be2845b44b2cace))
+
 # [2.64.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.63.0...v2.64.0) (2021-09-16)
 
 
