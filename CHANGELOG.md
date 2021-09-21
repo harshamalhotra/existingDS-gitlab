@@ -1,3 +1,10 @@
+# [2.66.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.65.0...v2.66.0) (2021-09-21)
+
+
+### Features
+
+* **navigation:** Clean up nav content to make it easier to read ([89b29f6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/89b29f613ee1a364c19a7132636790db64eb9558))
+
 # [2.65.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.64.0...v2.65.0) (2021-09-20)
 
 
