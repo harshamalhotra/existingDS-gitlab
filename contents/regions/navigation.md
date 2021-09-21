@@ -22,38 +22,34 @@ The user settings menu is the rightmost menu which contains items related to the
 The help menu is the dropdown with the question mark icon and contains links to docs and support. 
 
 ## Left sidebar
-The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each nav item should be short and easy to remember, ideally 1-2 words in length. There can be up to two levels of navigation: product landing pages and sub nav group. 
 
-### Product landing pages
-Product landing pages are the top level pages in the left sidebar for Projects and Groups. For example, the Issue List page is the landing page for Issues. These pages are used to display the most important functionality for that navigation category and when appropriate, facilitate navigation into related functionality.
+The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each nav item should be short and easy to remember, ideally 1-2 words in length. There can be up to two levels of navigation: top-level menu items and a sub-nav group. 
 
-In some cases, items within a sub nav group may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project. When this occurs, the top-level menu item should remain consistent, even if there is only one sub-menu item. The reason for top-level menu consistency is to reduce the cognitive effort needed from users to understand the navigation and task hierarchy. For example, we should not replace **CI/CD** with **Runners** or **Infrastructure** with **Terraform** as the top-level menu item in the sidebar.
+### Top-level menu items
 
-### Sub nav group
+A top-level menu item is the first anchor that appears within the left sidebar. These pages are used to display the most important functionality for that navigation category. A top-level menu item may contain a sub-nav group with multiple related items in it.
 
-Each sub nav group should be a self-contained group of functionality, for example:
+#### Sub-nav groups
+
+Each sub-nav group should be a self-contained group of functionality, for example:
 
 - Items related to planning and managing issues should be under the `Issues` nav item.
 - Viewing and editing pipelines should be under the `CI/CD` nav item.
 
-The default active item should be the first sub nav group item.
+The default active item should be the first sub-nav group item.
 
-### Behavior 
+In some cases, items within a sub-nav group may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project. 
 
-- On extra large viewports (`1200px` and up)
+When this occurs, the top-level menu item should remain consistent, even if there is only one sub-menu item. The reason for top-level menu consistency is to reduce the cognitive effort needed from users to understand the navigation and task hierarchy. For example, we should not replace **CI/CD** with **Runners** or **Infrastructure** with **Terraform** as the top-level menu item in the sidebar.
 
-The user can choose to have the sidebar always collapsed or expanded. Each time they press the toggle button, a cookie is set to remember their preference.
+### Behavior
 
-Todo: Add left sidebar example for extra large viewports (`1200px` and up)
+- A cookie is set to remember a user's preference between collapsed or expanded.
+- For medium and large viewports, the left sidebar is collapsed. When expanded manually, it overlaps the page content. The user's cookie preference is not overridden during this state.
+- For small and extra small viewports, the left sidebar is hidden behind a "hamburger" icon. When expanded, the sidebar overlaps the page and a semi-transparent overlay covers the page content. The user's cookie preference is not overridden during this state.
 
-- On medium and large viewports (`768px` to `1199px`)
+#### Breakpoints
 
-There isn't enough room for the main page content to fit comfortably, so the sidebar is collapsed by default, regardless of the user's cookie preference. This is especially important when there is a right sidebar as well (for example, issue detail page) or when there is a lot of horizontal content (for example, pipelines table). When the user expands the sidebar, it overlaps the page instead of pushing the content. In these viewports, the toggle doesn't change the user's cookie, so their preference is only saved and used on extra large viewports.
-
-Todo: Add left sidebar example for medium and large viewports (`768px` to `1199px`)
-
-- On small and extra small viewports (up to `767px`)
-
-The sidebar is hidden behind a “hamburger” icon. When pressed, the sidebar is shown expanded, overlapping the page with a semi-transparent overlay. Like the previous point, this behavior is not affected by the user's cookie preference and doesn't change that preference.
-
-Todo: Add left sidebar example for small and extra small viewports (up to `767px`)
+- Extra large viewports: `1200px` and up
+- Medium and large viewports: `768px` to `1199px`
+- Small and extra small viewports: up to `767px`
