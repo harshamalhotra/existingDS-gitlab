@@ -288,6 +288,10 @@
           {
             "title": "Single stat",
             "path": "single-stat"
+          },
+           {
+            "title": "Mini pipeline graph",
+            "path": "mini-pipeline-graph"
           }
         ]
       },
