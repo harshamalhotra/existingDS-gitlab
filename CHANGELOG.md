@@ -1,3 +1,10 @@
+# [2.67.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.66.0...v2.67.0) (2021-09-22)
+
+
+### Features
+
+* **mini pipeline graph:** Add intial docs ([0bea121](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0bea1213bf512fda4c3056779b990af56fb4a255))
+
 # [2.66.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.65.0...v2.66.0) (2021-09-21)
 
 
