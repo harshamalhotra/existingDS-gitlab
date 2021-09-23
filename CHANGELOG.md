@@ -1,3 +1,10 @@
+# [2.68.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.67.0...v2.68.0) (2021-09-23)
+
+
+### Features
+
+* **Card:** Use new content template ([9cd2d4e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9cd2d4e4e858f80473ab5c5b7f7ffbbdeb9061a0))
+
 # [2.67.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.66.0...v2.67.0) (2021-09-22)
 
 
