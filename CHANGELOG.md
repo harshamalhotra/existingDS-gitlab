@@ -1,3 +1,10 @@
+# [2.69.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.68.0...v2.69.0) (2021-09-23)
+
+
+### Features
+
+* **Drawer:** Update content to use new template ([2a574cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2a574cda3ce7a95c779db69ed630241632af758a))
+
 # [2.68.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.67.0...v2.68.0) (2021-09-23)
 
 
