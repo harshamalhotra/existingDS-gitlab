@@ -61,7 +61,6 @@ Todo: Add structure diagram based on design specs.
 - Be brief and keep it to a single line by utilizing a sentence fragment.
 - Avoid using punctuation such as periods, commas, or semicolons.
 - Use a full stop only when it's a full sentence.
-- The title truncates **after 3 lines** to avoid pushing content too far down in the drawer.
 
 #### Actions
 
