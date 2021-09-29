@@ -1,3 +1,11 @@
+# [2.70.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.69.0...v2.70.0) (2021-09-29)
+
+
+### Features
+
+* **Drawer:** Update docs remove note on truncation ([a61de85](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a61de8556505eae753a73b551a10e0406162cec4))
+* **Modal:** Update docs to use new template ([ba88f77](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ba88f7775ed3228cc33e1c424003258ab563e03d))
+
 # [2.69.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.68.0...v2.69.0) (2021-09-23)
 
 
