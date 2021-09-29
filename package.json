@@ -38,7 +38,8 @@
     "frontmatter-markdown-loader": "^1.4.0",
     "markdown-it": "^8.4.2",
     "nuxt": "2.15.7",
-    "pikaday": "1.8.0"
+    "pikaday": "1.8.0",
+    "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.2",
@@ -99,6 +100,8 @@
     "snapshotSerializers": [
       "jest-serializer-vue"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/tests/test_setup.js"]
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/test_setup.js"
+    ]
   }
 }

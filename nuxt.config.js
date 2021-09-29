@@ -16,12 +16,12 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const cspPolicies = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
   'child-src https://www.figma.com',
-  "connect-src 'self' https://sentry.gitlab.net",
+  "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com",
 ];
 
 module.exports = {
@@ -100,6 +100,13 @@ module.exports = {
   },
 
   /*
+   ** Pass environment variables to webpack's DefinePlugin
+   */
+  env: {
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+  },
+
+  /*
    ** Customize the progress-bar color
    */
   loading: false,
@@ -112,7 +119,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/gitlab-ui.js', ssr: false }],
+  plugins: [
+    { src: '~/plugins/gitlab-ui.js', ssr: false },
+    process.env.GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', ssr: false } : false,
+  ].filter(Boolean),
 
   /*
    ** Nuxt.js modules
