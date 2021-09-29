@@ -9,13 +9,22 @@ related:
 
 GitLab utilizes a system font stack, which references the default system fonts used by any given OS. Using system fonts helps performance by eliminating the need to download font files, and maintains the language support of the user’s system.
 
+The body font stack is used for all UI elements, except for code-related elements, which use the monospace font stack. Examples of code-related elements are: branch name, commit ID, and pipeline ID.
+
 ### Body font stack
 
-Todo: Add codeblock showing body font variable stack
+```
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+  'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+```
 
 ### Monospace font stack
 
-Todo: Add codeblock showing monospace variable stack
+```
+'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono',
+  'Courier New', 'andale mono', 'lucida console', monospace;
+```
 
 ## Font weight
 
