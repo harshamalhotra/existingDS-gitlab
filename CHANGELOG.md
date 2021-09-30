@@ -1,3 +1,10 @@
+## [2.71.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.71.0...v2.71.1) (2021-09-30)
+
+
+### Bug Fixes
+
+* Remove progress bar component broken page ([91ca7c7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/91ca7c74751b020223f86cef0feefd3166269417))
+
 # [2.71.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.70.0...v2.71.0) (2021-09-30)
 
 
