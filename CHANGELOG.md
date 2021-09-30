@@ -1,3 +1,10 @@
+# [2.72.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.71.1...v2.72.0) (2021-09-30)
+
+
+### Features
+
+* **navigation:** Add guidance around top-level menu item additions ([52b6e9a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/52b6e9a9b4b41faadbea2107f2beeed645f8ae29))
+
 ## [2.71.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.71.0...v2.71.1) (2021-09-30)
 
 
