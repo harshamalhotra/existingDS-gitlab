@@ -1,3 +1,10 @@
+# [2.73.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.72.0...v2.73.0) (2021-09-30)
+
+
+### Features
+
+* **Spinner:** Update content to utilize new template ([c698173](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c6981732b9194131957a4f4eeea5439b93c681ef))
+
 # [2.72.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.71.1...v2.72.0) (2021-09-30)
 
 
