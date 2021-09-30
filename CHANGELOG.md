@@ -1,3 +1,10 @@
+# [2.71.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.70.0...v2.71.0) (2021-09-30)
+
+
+### Features
+
+* **typography:** Add guidance on use of monospace ([f360f7e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f360f7ebffd7d5c1b5b73272b369958f8774d7c2))
+
 # [2.70.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.69.0...v2.70.0) (2021-09-29)
 
 
