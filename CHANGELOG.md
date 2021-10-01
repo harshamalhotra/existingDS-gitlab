@@ -1,3 +1,10 @@
+# [2.74.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.73.0...v2.74.0) (2021-10-01)
+
+
+### Features
+
+* **DatePicker:** Update content to utilize new template ([66a2579](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/66a257983cd4f07c1aaffccd45687fde2768e4eb))
+
 # [2.73.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.72.0...v2.73.0) (2021-09-30)
 
 
