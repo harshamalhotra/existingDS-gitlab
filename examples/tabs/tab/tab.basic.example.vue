@@ -1,5 +1,5 @@
 <template>
   <gl-tabs>
-    <gl-tab title="First">first content</gl-tab>
+    <gl-tab title="Tab">Tab panel</gl-tab>
   </gl-tabs>
 </template>
