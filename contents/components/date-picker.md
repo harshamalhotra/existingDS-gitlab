@@ -1,8 +1,6 @@
 ---
 name: Date picker
-description: Date picker allows users to choose and input a date through by manually typing the date into the input field or by using a calendar-like dropdown.
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A13
-docs: complete
+description: The date picker allows a user to choose and/or input a date by using a calendar dropdown or by typing the date into a text field.
 vueComponents:
   - GlDatepicker
 related:
@@ -10,32 +8,67 @@ related:
   - dropdown
 ---
 
-## Usage
-
-The date picker comes in two parts: the input field and the date picker dropdown. The input field must use a placeholder text to indicate the expected format of time to be entered (for example, "YYYY-MM-DD") and a calendar icon on the right edge to indicate that clicking on it will open a datepicker dropdown.
-
-The user should be able to input the date by either typing it in or choosing a day from the datepicker dropdown. The user must never be forced to use only one of the two input methods.
-
-When using the input field, users are able to enter a date in different formats. For example, the user can type `January 22, 2020` or `22/01/2020`. The datepicker will translate the format to GitLab's defaults (ISO 8601) in the API. The input field accepts all special characters and numbers.
+## Examples
 
 [[Example:basic-date-picker]]
 
-### Selecting a range of dates
-
-A combination of two date pickers can be used for selecting a range of dates. The user can do so by selecting a start and end date. When implementing a range date picker, the following guidelines should be followed:
-
-- The order of the “From” and “To” date input fields should match the user’s reading direction setting (left-to-right or right-to-left). On mobile devices, the two date input fields are full-width and stacked so the user’s reading direction shouldn’t have an effect on the order—the starting date field (“From”) is always on top, the ending date field (“To”) is always on the bottom.
-- Once a user selects the starting date (“From”), the date picker for the ending date (“To”) should only allow them to pick a date that is either equal or after that. The days preceding the start date should be disabled and thus not selectable.
-- The default month shown in the date picker dropdown should be the current month (M). If the user picks a start date (“From”) that’s in the future (for example M+1), the default month shown for the ending date (“To”) date picker dropdown should be that same month (M+1) and not the current month (M). This doesn’t apply for starting dates selected in the past.
-
 [[Example:basic-daterange-picker]]
 
-- When the date range has a limit on the number of selectable days, indicate that in the UI with text summarizing the number of days currently selected, followed by an [info icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o). The tooltip on the info icon should clarify the date range limit.
+Todo: Add example date range limit indicator.
 
-Todo: Add example date range limit indicator
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A13)
 
-## Design specification
+## Structure
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+<figure class="figure" role="figure" aria-label="Date picker structure">
+  <img class="figure-img" src="/img/date-picker-structure.svg" alt="Numbered diagram of a date picker structure" role="img" />
+</figure>
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4592%3A7453)
+1. **Label**: Text associated with the text field.
+1. **Text field**: Input element that gets populated with a date.
+1. **Calendar button**: Opens the calendar dropdown.
+1. **Clear button**: Clears the text field content.
+1. **Calendar dropdown**: Dropdown showing the month.
+
+Todo: Update structure with date range limit indicator.
+
+## Guidelines
+
+### When to use
+
+- Choose a date from a calendar to populate a text field.
+
+### When not to use
+
+- If a user needs to enter a familiar date, like a birthday, consider using a regular [text field](/components/form) without the date picker functionality instead (see note in the [Reference](#reference) section).
+
+### Variants
+
+- **Date picker**: Choose a single date.
+- **Date range picker**: Choose a start and end date.
+
+### Behavior
+
+- The user can either type a date into the text field or choose a day from the calendar dropdown which will populate the text field with the chosen date.
+- A user can enter a date in different formats. For example, `January 22, 2020` or `22/01/2020`. The date picker translates the format to GitLab's default (ISO 8601) in the API.
+- For date ranges, the date picker for the end ("To") date only allows a user to pick a date that is either equal to or after the start ("From") date. The days preceding the start date will be disabled.
+- For date ranges, the ending date month should initially default to the same month chosen for the start date.
+- On smaller viewports, the two date text fields in a date range picker are full-width and vertically stacked so the user’s language reading direction doesn’t have an effect on the order.
+
+### Content
+
+- The label for a date picker can specify what the date selection is for, while the date range picker labels should be "From" for the start date and "To" for the end date.
+- The text field uses "YYYY-MM-DD" as placeholder text to indicate the expected format of time to be entered.
+- The text field accepts all special characters and numbers.
+- The current month (MM) is the default month shown in the calendar dropdown.
+- The order of the “From” and “To” text fields should match the user’s reading language setting (left-to-right by default).
+- When the date range picker limits the number of selectable days, indicate it in the UI with text that summarizes the number of days currently selected, followed by an [info icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o). The tooltip on the info icon should clarify the date range limit.
+
+### Accessibility
+
+Todo: Add accessibility notes.
+
+## Reference
+
+- In Adrian Roselli's article, _[Maybe You Don't Need a Date Picker](https://adrianroselli.com/2019/07/maybe-you-dont-need-a-date-picker.html)_, he states that "Users generally do not want a complex date picker every time you ask for any date. At least not users with a keyboard." He follows the [robustness principle](https://en.wikipedia.org/wiki/Robustness_principle) where you should "be conservative in what you do, be liberal in what you accept from others" in his exploration. A date picker can simply be overwhelming for something as simple as entering a familiar date, especially for keyboard-only users. Anecdotally he backs this up with 20 years of research. To be clear though, he also mentions that a plain text field will not work "if you need to see chosen dates, unavailable dates, weekends, holidays, date spans, date ranges, dates where counts from start or end dates matter, and so on."
+- In HTML5 an input with `type="date"` is available, but [accessibility support](https://a11ysupport.io/tech/html/input(type-date)_element) for screen readers and voice control is inconsistent.
