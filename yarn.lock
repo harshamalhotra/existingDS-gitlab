@@ -988,20 +988,20 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@1.212.0":
-  version "1.212.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.212.0.tgz#21a5df04c52b10cc1b8521cd8ff7c7d6d13716db"
-  integrity sha512-dv0bYTHA3hwi3mNU3bGMq1cd4HVKKFNwCNPgkF91JSp4Xt8DDtJ0Yq4X49ASsq4zCJ3odgkq2aPjEa/Sr5nINQ==
+"@gitlab/svgs@1.213.0":
+  version "1.213.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.213.0.tgz#fcd9794049d2b15f5796dbab2a3d501679153582"
+  integrity sha512-3d9EGpEkPDeW92Xx3FueFCJFZ/yL+uv5MWCUHmSt1tP9YmUhMXw/51c43c5+V17FuCyvhJS5tm3aEg3VYoWIRA==
 
-"@gitlab/ui@32.11.0":
-  version "32.11.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.11.0.tgz#8c4a1724c1733a243f96e4a4813ae7f348502ba6"
-  integrity sha512-EqP5Ub/IWEi5ErX0txx5vsd6hF7d7dOT5GqaRX6rVaLsUhWLYQZ8ld2yEl5Hx7FLki1t3uag17KII5FcvRTDLg==
+"@gitlab/ui@32.15.0":
+  version "32.15.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.15.0.tgz#292518f1c52ef22d73cfded9d6f9f6d48a47efee"
+  integrity sha512-n7SwTA5Je+s/66cTXBhRdlxiJILGA+mXX6aevUFXzFvTn4a4yVb1wx4mmaMA/EB3vUxb8+u/z61CYZ4pd5JIbw==
   dependencies:
     "@babel/standalone" "^7.0.0"
-    bootstrap-vue "2.18.1"
+    bootstrap-vue "2.19.0"
     copy-to-clipboard "^3.0.8"
-    dompurify "^2.3.2"
+    dompurify "^2.3.3"
     echarts "^4.9.0"
     highlight.js "^10.6.0"
     js-beautify "^1.8.8"
@@ -2806,10 +2806,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-vue@2.18.1, bootstrap-vue@^2.0.0-beta:
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.18.1.tgz#4378d26b713d4255b45b42b3f852f6fa0a11d400"
-  integrity sha512-oYKAhEnNuCxtF4gxsdLzijhQpFk7UYPvzhwZvUbnPbZ1eWu2dsc3+fRkY9PMowt5OJRtuVb7ov3lpsI2fraYsA==
+bootstrap-vue@2.19.0, bootstrap-vue@^2.0.0-beta:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.19.0.tgz#5019df48251e552a5c34da57fc97dabebd53b02f"
+  integrity sha512-IjAXUSrRU5Qu9x3uwUcoj6LtysKbCVeWoJOsODyI/WokStUr95M+tTIajXUjIrB/Nsk0fS+RNvZnm2sWeNFrhg==
   dependencies:
     "@nuxt/opencollective" "^0.3.2"
     bootstrap ">=4.5.3 <5.0.0"
@@ -4292,10 +4292,10 @@ domhandler@^4.0.0, domhandler@^4.2.0:
   dependencies:
     domelementtype "^2.2.0"
 
-dompurify@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.2.tgz#c773efa410abb5c087c7caf44934fefa448f6e60"
-  integrity sha512-jXJnvWloI+scD+N5uBikpUMsYXZb0LCAXxLFAOLS5duCzKfXLqBCpuINvFOiI4eJgTLggrngljT18HNoakHUsA==
+dompurify@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.3.tgz#c1af3eb88be47324432964d8abc75cf4b98d634c"
+  integrity sha512-dqnqRkPMAjOZE0FogZ+ceJNM2dZ3V/yNOuFB7+39qpO93hHhfRpHw3heYQC7DPK9FqbQTfBKUJhiSfz4MvXYwg==
 
 domutils@1.1:
   version "1.1.6"
