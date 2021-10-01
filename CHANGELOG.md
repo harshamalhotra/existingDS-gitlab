@@ -1,3 +1,10 @@
+# [2.75.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.74.0...v2.75.0) (2021-10-01)
+
+
+### Features
+
+* **Tabs:** Update content to utilize new template ([979e1e5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/979e1e52c18f391ddc74c0137a552f3eac4c58c5))
+
 # [2.74.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.73.0...v2.74.0) (2021-10-01)
 
 
