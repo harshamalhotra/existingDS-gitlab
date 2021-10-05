@@ -84,6 +84,10 @@ export default {
           </edit-this-page-link>
           <span class="footer-link-divider"></span>
           <nuxt-link to="/get-started/contribute">Please contribute</nuxt-link>
+          <span class="footer-link-divider"></span>
+          <a href="https://about.gitlab.com/privacy/">Privacy policy</a>
+          <span class="footer-link-divider"></span>
+          <a href="https://about.gitlab.com/privacy/cookies/">Cookie policy</a>
         </div>
         <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
           Last updated at:&nbsp;<time :datetime="frontmatter.lastUpdatedAt">{{
