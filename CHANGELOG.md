@@ -1,3 +1,10 @@
+# [2.76.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.75.0...v2.76.0) (2021-10-05)
+
+
+### Features
+
+* **Footer:** Add policy links ([b5149af](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b5149afb5298d57b0da3ae4ef8b46b0e5d655b1b))
+
 # [2.75.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.74.0...v2.75.0) (2021-10-01)
 
 
