@@ -50,6 +50,7 @@ related:
 - A tab reveals its associated content (tab panel) when activated.
 - Only one tab can be active at a given time.
 - Tabs may be nested with a maximum nesting of two levels. This pattern should only be considered as a last resort due to the complexity it creates both in code and for the user experience.
+- Each tab at the parent level should have its own unique URL. When determining whether to implement unique URLs for child tabs, consider whether or not a user would want to bookmark or link to the tabbed content.
 
 ### Content
 
