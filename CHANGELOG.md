@@ -1,3 +1,10 @@
+# [2.77.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.76.0...v2.77.0) (2021-10-07)
+
+
+### Features
+
+* **tabs:** Adds URL guidelines to tab component ([c3281f6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c3281f6074926ee780540520d4a2a3c6a8633d72))
+
 # [2.76.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.75.0...v2.76.0) (2021-10-05)
 
 
