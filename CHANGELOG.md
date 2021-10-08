@@ -1,3 +1,10 @@
+# [2.78.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.77.2...v2.78.0) (2021-10-08)
+
+
+### Features
+
+* **navigation:** Add initial guidance for in-app messaging ([b5d894a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b5d894acfc230a0deb31b91811fc2ed41e5121e7))
+
 ## [2.77.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.77.1...v2.77.2) (2021-10-08)
 
 
