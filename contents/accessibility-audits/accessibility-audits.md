@@ -12,7 +12,7 @@ The following guides aren’t a replacement for thorough manual audits or user t
 
 ### Guides
 
-- [Keyboard-only](/accessibility-audits/2-keyboard-only)
-- Screen readers (coming soon)
 - Visual (coming soon)
-- Content (coming soon)
+- Semantics and content (coming soon)
+- [Keyboard-only](/accessibility-audits/keyboard-only)
+- Screen readers (coming soon)

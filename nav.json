@@ -398,20 +398,20 @@
             "path": "accessibility-audits"
           },
           {
+            "title": "Visual",
+            "path": "visual"
+          },
+          {
+            "title": "Semantics and content",
+            "path": "semantics-and-content"
+          },
+          {
             "title": "Keyboard-only",
             "path": "keyboard-only"
           },
           {
             "title": "Screen readers",
             "path": "screen-readers"
-          },
-          {
-            "title": "Visual",
-            "path": "visual"
-          },
-          {
-            "title": "Content",
-            "path": "content"
           }
         ]
       }
