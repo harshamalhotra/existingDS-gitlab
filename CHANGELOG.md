@@ -1,3 +1,10 @@
+## [2.77.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.77.0...v2.77.1) (2021-10-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v1.217.0 ([7184aa4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7184aa47dead5b297b70d7e6017dfa2c6e3bd803))
+
 # [2.77.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.76.0...v2.77.0) (2021-10-07)
 
 
