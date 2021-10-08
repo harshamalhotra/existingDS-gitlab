@@ -1,3 +1,10 @@
+## [2.77.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.77.1...v2.77.2) (2021-10-08)
+
+
+### Bug Fixes
+
+* **AccessibilityAudits:** Update links and order ([2691793](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/26917931bb82fb24fc95f3fc46e14c79e228369c))
+
 ## [2.77.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.77.0...v2.77.1) (2021-10-08)
 
 
