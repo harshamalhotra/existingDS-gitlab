@@ -1,3 +1,10 @@
+## [2.78.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.78.1...v2.78.2) (2021-10-11)
+
+
+### Bug Fixes
+
+* **Badge:** Add aria-label for icon-only badge ([3fe557b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3fe557b13fbc60e31a042059063323a478e18fcc))
+
 ## [2.78.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.78.0...v2.78.1) (2021-10-11)
 
 
