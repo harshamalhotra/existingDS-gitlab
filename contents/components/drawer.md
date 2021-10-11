@@ -36,7 +36,8 @@ Todo: Add structure diagram based on design specs.
 
 ### When not to use
 
-- If supplemental content isn't suited for small areas or is part of a flow, consider loading a new page, revealing content with an [accordion](/components/accordion), or using a [modal](/components/modal) instead.
+- If supplemental content isn't suited for small areas or is part of a flow, consider loading a new page or revealing content with an [accordion](/components/accordion) instead.
+- A drawer provides contextual information while also keeping the main object in view. If you need to view specific content while only maintaining underlying context, consider using a [modal](/components/modal) instead.
 - To confirm an action, consider using a [toast](/components/toast) or [modal](/components/modal) instead.
 
 ### Behavior
