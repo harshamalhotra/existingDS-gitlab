@@ -1,3 +1,10 @@
+# [2.80.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.79.0...v2.80.0) (2021-10-12)
+
+
+### Features
+
+* **Button:** Add badge in btn examples and docs ([06e02b2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/06e02b2912ba246e5fef2d9c1e72b6f39d2e06b7))
+
 # [2.79.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.78.2...v2.79.0) (2021-10-12)
 
 
