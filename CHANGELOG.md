@@ -1,3 +1,10 @@
+# [2.79.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.78.2...v2.79.0) (2021-10-12)
+
+
+### Features
+
+* **Tabs:** Add sr-only to badge counter ([b2e1c76](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2e1c76dbba4e91966ff55c01694e1d0c9072def))
+
 ## [2.78.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.78.1...v2.78.2) (2021-10-11)
 
 
