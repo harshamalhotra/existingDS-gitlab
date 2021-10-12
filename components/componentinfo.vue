@@ -126,7 +126,7 @@ export default {
   <div>
     <div v-if="componentAttributes">
       <div class="md typography gl-mb-6!">
-        <h1>{{ componentAttributes.name }}</h1>
+        <h1 id="skipTarget" tabindex="-1">{{ componentAttributes.name }}</h1>
         <p>{{ componentAttributes.description }}</p>
       </div>
       <div v-if="vueComponents && vueComponents.length > 0">

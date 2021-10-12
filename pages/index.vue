@@ -13,7 +13,7 @@
             fill="#fff"
           />
         </svg>
-        <h1 class="banner__header--title f-display f-inverted">Pajamas</h1>
+        <h1 id="skipTarget" class="banner__header--title f-display f-inverted">Pajamas</h1>
         <h2 class="banner__header--description f-inverted">
           Resources, components, and design guidelines behind GitLab
         </h2>

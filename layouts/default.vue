@@ -46,6 +46,7 @@ export default {
 
 <template>
   <div class="page">
+    <a href="#skipTarget" class="skip-link">Skip to main content</a>
     <div v-if="sidebarOpen" class="nav-sidebar__overlay" @click="closeSidebar"></div>
     <button
       type="button"
@@ -67,6 +68,7 @@ export default {
       </svg>
     </button>
     <navbar />
+
     <main :class="contentWrapper">
       <nuxt />
       <footer class="content footer limited m-b-7">
