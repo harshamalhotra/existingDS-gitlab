@@ -1,5 +1,4 @@
 import path from 'path';
-import fiber from 'fibers';
 import glob from 'glob';
 import { startCase } from 'lodash';
 import { parse } from 'node-html-parser';
@@ -177,7 +176,6 @@ module.exports = {
         implementation: sass,
         sassOptions: {
           includePaths: [path.resolve(__dirname, 'node_modules')],
-          fiber,
         },
       },
     },
