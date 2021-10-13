@@ -1,3 +1,10 @@
+# [2.81.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.80.0...v2.81.0) (2021-10-13)
+
+
+### Features
+
+* **Analytics:** Add Google Analytics to design.gitlab.com ([99a5a7a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/99a5a7a2ea508ce98c2ecd2437ecc0ff53df0079))
+
 # [2.80.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.79.0...v2.80.0) (2021-10-12)
 
 
