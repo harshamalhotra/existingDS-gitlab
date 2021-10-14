@@ -1,48 +1,59 @@
 ---
 name: Progress bar
 description: A progress bar indicates a percentage of completion.
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A132
-docs: in-progress
 related:
-  - /data-visualization/charts
+  - spinner
   - skeleton-loader
 ---
 
-### Dos and Dont’s
+## Examples
 
-| Do | Don‘t |
-| --- | --- |
-| Use a progress bar to display a percentage. | Use a progress bar as a placeholder to indicate content loading, use a [skeleton loader](/components/skeleton-loader) or [spinner](/components/spinner) instead. |
-| Include text below the progress bar to indicate total progress and the maximum potential progress |  |
+Todo: Add code example.
 
-## Demo
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A132)
 
-<!--
-  DEMO, keep this section for all patterns, the code block demo will be added at a later date
--->
+## Structure
 
-Todo: Add live component block with code example
+<figure class="figure" role="figure" aria-label="Progress bar structure">
+  <img class="figure-img" src="/img/progress-bar-structure.svg" alt="Numbered diagram of progress bar structure" role="img" />
+</figure>
 
-## Specifications
+1. **Progress indicator**: Solid shape indicating the current percent of completion.
+1. **Track**: Background indicating the available space the progress indicator can fill.
 
-### Design
+## Guidelines
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+### When to use
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4265%3A20)
+- To represent percentage of completion or progress of an activity, process, or task.
 
-## Accessibility
+### When not to use
 
-* Use the HTML `<progress>` element.
-* Use either a `<label>` element or `aria-label` with `<progress>` to identify what the progress is for.
+- To indicate that content is loading, use a [skeleton loader](/components/skeleton-loader) or [spinner](/components/spinner) instead. 
 
-**Example:**
+### Sizes
 
-`<label for="time">Time used</label>`
-`<progress id="time" value="67" max="100">67%</progress>`
+- Extra small
+- Small
+- Medium
 
-or
+Todo: Add size use cases.
 
-`<progress id="time" value="67" max="100" aria-label="Time used">67%</progress>`
+### Behavior
 
-The WAI-ARIA [`progressbar`](https://www.w3.org/TR/wai-aria-1.1/#progressbar) role can also be used.
+The progress indicator is a static representation of progress at a given point of time and doesn't animate.
+
+### Content
+
+- The progress bar component should be supported by visible text indicating what the bar is for, and the units of progress represented. See [Reference](#reference) for additional considerations.
+- The `aria-label` or `aria-labelledby` content should also clarify the purpose of the progress bar.
+
+### Accessibility
+
+- Progress bars aren't focusable elements, but they can be accessed with a screen reader's read/browse mode.
+- Use the HTML `<progress>` element in conjunction with either `aria-label` or `aria-labelledby`.
+- The WAI-ARIA [`progressbar`](https://www.w3.org/TR/wai-aria-1.1/#progressbar) role can also be used.
+
+## Reference
+
+Although browser support is good for `<progress>`, screen readers handle them inconsistently. You may want to consider hiding it from screen readers and relying on visible text instead. For more details, read Scott O'Hara's post, [Styles Progress Bar](https://scottaohara.github.io/a11y_styled_form_controls/src/progress-bar/).
