@@ -1,3 +1,10 @@
+# [2.82.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.81.0...v2.82.0) (2021-10-14)
+
+
+### Features
+
+* **ProgressBar:** Update content to utilize new template ([607b223](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/607b223d0c2849f06b1bfa607c92295f2e395040))
+
 # [2.81.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.80.0...v2.81.0) (2021-10-13)
 
 
