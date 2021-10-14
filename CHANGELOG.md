@@ -1,3 +1,10 @@
+## [2.82.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.82.0...v2.82.1) (2021-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v32.20.0 ([7a70572](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a7057235bd7975a7945be9dd999cf9973f6afe3))
+
 # [2.82.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.81.0...v2.82.0) (2021-10-14)
 
 
