@@ -9,6 +9,8 @@
     https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples?node-id=39%3A0.
   - If content isn't available for a required section, add a todo for
     future completion.
+  - Typographer quotes (also known as smart quotes) are added when markdown is converted,
+    so it isn't necessary to manually add or convert them.
 -->
 ---
 name: Component name
