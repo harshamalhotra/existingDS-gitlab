@@ -1,3 +1,10 @@
+# [2.84.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.83.0...v2.84.0) (2021-10-18)
+
+
+### Features
+
+* **Drawer:** Update when not to use conditions ([3ad509d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3ad509dd0deb0ee068bbf7b59e04257637996db6))
+
 # [2.83.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.82.1...v2.83.0) (2021-10-18)
 
 
