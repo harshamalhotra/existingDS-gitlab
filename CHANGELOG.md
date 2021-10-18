@@ -1,3 +1,10 @@
+# [2.83.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.82.1...v2.83.0) (2021-10-18)
+
+
+### Features
+
+* **Pagination:** Update content to utilize new template ([05ffe27](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/05ffe27d8c5f36ce90e17cc5934955823a9c013b))
+
 ## [2.82.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.82.0...v2.82.1) (2021-10-14)
 
 
