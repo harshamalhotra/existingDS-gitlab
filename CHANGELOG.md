@@ -1,3 +1,10 @@
+# [2.86.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.85.0...v2.86.0) (2021-10-20)
+
+
+### Features
+
+* **skipLink:** Styles and markup ([1a27a9f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1a27a9f0c356ff652aaf81516aca47fca57b0205))
+
 # [2.85.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.84.0...v2.85.0) (2021-10-20)
 
 
