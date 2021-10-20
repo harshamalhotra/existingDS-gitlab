@@ -1,3 +1,10 @@
+# [2.85.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.84.0...v2.85.0) (2021-10-20)
+
+
+### Features
+
+* **Navigation:** Rename sub-nav group to sub menu ([79bbd90](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/79bbd904bd393b3e35ae42b744495fe8b1433841))
+
 # [2.84.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.83.0...v2.84.0) (2021-10-18)
 
 
