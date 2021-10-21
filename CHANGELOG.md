@@ -1,3 +1,10 @@
+# [2.87.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.86.1...v2.87.0) (2021-10-21)
+
+
+### Features
+
+* **SkeletonLoader:** Update content to utilize new template ([ce68ed9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ce68ed941557c32ff3c9ff31cede9ebea839570b))
+
 ## [2.86.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.86.0...v2.86.1) (2021-10-21)
 
 
