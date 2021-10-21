@@ -13,6 +13,16 @@ const routes = [
 
 const isProd = process.env.NODE_ENV === 'production';
 
+const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID
+  ? process.env.GOOGLE_ANALYTICS_ID
+  : false;
+
+if (GOOGLE_ANALYTICS_ID) {
+  console.log(`GOOGLE_ANALYTICS_ID found and applied`);
+} else {
+  console.log(`GOOGLE_ANALYTICS_ID disabled`);
+}
+
 const cspPolicies = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
@@ -102,7 +112,7 @@ module.exports = {
    ** Pass environment variables to webpack's DefinePlugin
    */
   env: {
-    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+    GOOGLE_ANALYTICS_ID,
   },
 
   /*
@@ -120,7 +130,7 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/gitlab-ui.js', ssr: false },
-    process.env.GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', ssr: false } : false,
+    GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', ssr: false } : false,
   ].filter(Boolean),
 
   /*

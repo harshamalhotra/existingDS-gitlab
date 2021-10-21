@@ -1,4 +1,6 @@
 FROM node:14 AS builder
+ARG ga_id
+ENV GOOGLE_ANALYTICS_ID=$ga_id
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn
