@@ -1,3 +1,10 @@
+# [2.88.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.87.0...v2.88.0) (2021-10-21)
+
+
+### Features
+
+* **EmptyStates:** Add empty state variants ([ff4f81a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ff4f81a3b4165717f71c059da107e5ffb7087e5f))
+
 # [2.87.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.86.1...v2.87.0) (2021-10-21)
 
 
