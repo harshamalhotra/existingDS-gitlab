@@ -36,11 +36,11 @@ Everyone can contribute to GitLab, including our UI design library in Figma, [Pa
 
 1. [Create an issue][new-issue] (or assign yourself an existing one) for the work you’re doing. To create a new component or update an existing one, use the [Figma component issue template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new?issuable_template=Figma%20component).
 1. Choose one of the following based on your contribution:
-   - If you’re making updates (breaking changes) to an existing component in the [Pajamas UI Kit][ui-kit-figma], consider starting from an instance of that component in a [blank template][blank-template].
+   - If you’re making updates or breaking changes to an existing component in the [Pajamas UI Kit][ui-kit-figma], start with a [branch][figma-branch] of the UI kit. Include the issue or MR number in the branch name.
    - To create a new component, duplicate our [component template][component-template] to your drafts.
    - For all other changes, create a new file in your drafts.
 1. Review the [Structure](#structure) section to learn about how we structure and document our work within Figma.
-1. Share a link to your draft in the issue.
+1. Share a link to your branch or draft in the issue.
 1. High-five yourself and go brew some coffee while you wait for the review. Thanks!
 
 We accept contributions from wider community members who share a Figma [draft][figma-docs-drafts] with proposed changes. We also encourage design contributions/improvements to GitLab itself — use its [issue tracker][gitlab-issue-tracker] to add your ideas to an existing or new issue.
@@ -69,7 +69,7 @@ With Figma, components are organized in the asset library by how they are struct
 
 For the rest of this article, components created with Figma’s variants feature will be referred to as **variant** or **variants**. Here’s our working hierarchy for structure and naming, the file name has been left out for brevity:
 - **Page:** [Component]
-- **Frame:** [Variant], [Category], [Group], or literally “Variants.” “Variants” is the default frame name when components aren’t created with the variants feature.
+- **Frame:** [Component], [Category], [Group], [Elements] or literally “Variants.” “Variants” is the default frame name when components aren’t created with the variants feature.
 - **Layer:** [Property=Value, Property=Value] as a variant or [Breakpoint/Item/Size/State] when manually organized.
    - Optional breakpoints: XS, SM, MD, LG, XL, breakpoints can also use symbols to indicate range, such as ≥MD or ≤SM
    - Optional sizes: XS, SM, MD, LG, XL, XXL
@@ -77,6 +77,8 @@ For the rest of this article, components created with Figma’s variants feature
 When creating a component as a variant, only a single instance of that component will be listed in the asset library. After adding the component to your design you’ll have the ability to choose the variant needed based on available properties (see [examples](#examples) below).
 
 If a component is not part of a variant container, numerically prefixing the breakpoint and size abbreviations correctly orders them in the asset library in a way that helps a user understand hierarchy (see [examples](#examples) below).
+
+Lastly, when you create a component variant in Figma it automatically adds a border radius and dashed purple border to the frame. Remove both the border radius and border.
 
 ### Examples
 
@@ -91,7 +93,7 @@ If a component is not part of a variant container, numerically prefixing the bre
 
 - **Page:** Alert
 - **Frame (container):** Alert
-- **Layer:** Danger
+- **Layer:** Variant=Danger, Max-width=False
 - **Result:** Alert/Alert
 
 #### Pagination
@@ -123,7 +125,7 @@ If a component is not part of a variant container, numerically prefixing the bre
 
 ### Base components
 
-Some components are built from **base** components. Base components provide foundational configuration, structure, or other settings for components to be built from. They are not published to the library, because we only want the variants created from them to be available for direct use. A change to a base component should propagate to any components built from it. In other systems you may see them called primitives, or master components. We chose “base” to indicate a starting place.
+Some components are built from **base** components. Base components provide foundational configuration, structure, or other settings for components to be built from. They are not published to the library, because we only want the variants created from them to be available for direct use. A base component name is prefixed with "_Base" and the underscore prevents it from being published. A base component can also use variants. A change to a base component should propagate to any components built from it. In other systems you may see them called primitives, or master components. We chose “base” to indicate a starting place.
 
 ![Base button component with all configuration options](images/base-btn.png)
 
@@ -173,9 +175,9 @@ We use three primary methods to add descriptive, helper content for components a
 
 Figma library updates are published by a [Figma maintainer][figma-maintainers], regardless of how minor. To support our [transparency value][handbook-transparency], follow these best practices:
 
-- Changes should be reviewed by another designer in a draft before a Maintainer adds it to the Pajamas UI Kit file.
-- Before closing the Pajamas UI Kit file, changes should be published so other designers are aware of what’s been changed, and by whom. Because you cannot stage changes like you can with Git, it is important to publish changes so that additional unrelated changes can be published separately.
-- Use dashes to list items (no formatting options for the publish message field).
+- Changes should be reviewed by another designer in a branch or draft before a Maintainer adds it to the Pajamas UI Kit file.
+- Before closing the Pajamas UI Kit file, changes should be published so other designers are aware of what’s been changed, and by whom. It is possible to only publish selected changes.
+- Use dashes to list changes (no formatting options for the publish message field).
 
 ## Sharing or linking to changes
 
@@ -242,4 +244,4 @@ version 1.1.0, available at [http://contributor-covenant.org/version/1/1/0/](htt
 [sketch-figma-plugins]: https://gitlab.com/groups/gitlab-org/-/epics/2334#evaluate-sketchfigma-plugin-libraries
 [figma-maintainers]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com_maintainers_Figma
 [ui-kit-figma]: https://www.figma.com/community/file/781156790581391771
-[blank-template]: https://www.figma.com/file/v7I3e2CqmRagoi5jSzjROQ/Title-group-project-1337
+[figma-branch]: https://www.figma.com/best-practices/branching-in-figma/
