@@ -1,3 +1,10 @@
+# [2.89.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.88.0...v2.89.0) (2021-10-22)
+
+
+### Features
+
+* **Badge:** Update accessibility guides ([3200591](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32005910cf4a441cf20f91a5e97be5c5ba2adaa1))
+
 # [2.88.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.87.0...v2.88.0) (2021-10-21)
 
 
