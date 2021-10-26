@@ -19,7 +19,7 @@ Make sure the following are completed before closing the issue:
 * [Compontent Lifecycle][component-lifecycle]
 -->
 
-/label ~"pajamas::create"
+/label ~"pajamas::define"
 
 [gitlab-ui-mr]: https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/new
 [component-lifecycle]: https://design.gitlab.com/get-started/lifecycle
