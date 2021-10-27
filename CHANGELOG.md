@@ -1,3 +1,10 @@
+## [2.89.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.89.2...v2.89.3) (2021-10-27)
+
+
+### Bug Fixes
+
+* **issue-template:** Use correct label for component issue template ([f5baee1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f5baee161dbf8374e6beff629d8b9be2fd8cf98b))
+
 ## [2.89.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.89.1...v2.89.2) (2021-10-26)
 
 
