@@ -1,3 +1,10 @@
+# [2.90.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.89.3...v2.90.0) (2021-10-27)
+
+
+### Features
+
+* **Accordion:** Update accordion docs to new template ([28919ff](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/28919ff11c360bb35f699d84d76e2148d6e1450a))
+
 ## [2.89.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.89.2...v2.89.3) (2021-10-27)
 
 
