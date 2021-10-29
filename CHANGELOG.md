@@ -1,3 +1,10 @@
+## [2.90.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.90.0...v2.90.1) (2021-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([998f7cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/998f7cbee6ef17b4719aed23f9c51f9fdb1815ed))
+
 # [2.90.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.89.3...v2.90.0) (2021-10-27)
 
 
