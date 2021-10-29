@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "@gitlab/nuxt-edit-this-page": "1.0.0",
-    "@gitlab/svgs": "1.218.0",
-    "@gitlab/ui": "32.24.1",
+    "@gitlab/svgs": "1.219.0",
+    "@gitlab/ui": "32.29.1",
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/lunr-module": "^0.3.2",
     "@nuxtjs/sentry": "^4.3.5",
