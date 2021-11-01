@@ -25,6 +25,8 @@ related:
 1. **Title**: Identifies the title of the accordion.
 1. **Body**: Contains the content of an accordion. 
 
+## Guidelines
+
 ### When to use:
 
 - Displaying and grouping additional information.
