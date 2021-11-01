@@ -1,3 +1,10 @@
+# [2.92.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.91.0...v2.92.0) (2021-11-01)
+
+
+### Features
+
+* **EmptyStates:** Update doc with link to invite member modal component ([b0cec78](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b0cec78fe4bde0a3beb06e630610c4e6611a51ec))
+
 # [2.91.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.90.1...v2.91.0) (2021-11-01)
 
 
