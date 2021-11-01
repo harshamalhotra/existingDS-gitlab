@@ -1,3 +1,10 @@
+# [2.91.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.90.1...v2.91.0) (2021-11-01)
+
+
+### Features
+
+* **Accordion:** Add guidelines heading ([417823b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/417823bab35adf5103e63a9a4d57b1bea3534438))
+
 ## [2.90.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.90.0...v2.90.1) (2021-10-29)
 
 
