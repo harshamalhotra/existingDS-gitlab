@@ -1,3 +1,10 @@
+# [2.93.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.92.1...v2.93.0) (2021-11-02)
+
+
+### Features
+
+* **Tree:** Update content to utilize new template ([a2c5d1f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a2c5d1f5b1cb7ac55071d01ff4201473d05ecd07))
+
 ## [2.92.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.92.0...v2.92.1) (2021-11-02)
 
 
