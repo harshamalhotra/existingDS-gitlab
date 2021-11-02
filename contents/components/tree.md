@@ -1,62 +1,61 @@
 ---
 name: Tree
-description: Trees provide a clear overview of a structure, apply parent-child hierarchy between elements, and use the concept of progressive disclosure to display this structure to users.
-docs: in-progress
+description: A tree component structures parent and child nodes into a meaningful hierarchy.
 related:
 - accordion
 - breadcrumb
+- list
 ---
 
-Just like [accordions](/components/accordion), trees are vertically stacked. Trees are composed of a main container (tree trunk) which groups related elements (branches), and their related items (leaves). Trees should visually reflect the hierarchy and relationship differences between its elements. See tree [specifications](#specifications) for more details.
+## Examples
 
-## Usage
+Todo: Add tree example
 
-Consider using a tree as a navigation pattern to map out the relationship and hierarchy between multiple items. For example, a set of projects that are within the same group.
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A143)
 
-### When to use trees
+## Structure
 
-Use trees to:
-- Create hierarchical structure to help users form a mental model of the relationship between elements.
+<figure class="figure" role="figure" aria-label="Tree structure">
+  <img class="figure-img" src="/img/tree-structure.svg" alt="Numbered diagram of a tree structure" role="img" />
+</figure>
 
-### When not to use trees
+1. **Caret**: Identifies when the node is open or closed. Pointing down is open. Pointing right is closed. 
+1. **Icon**: Indicates what type of node it is.
+1. **Avatar**: Supporting visual for the node title.
+1. **Title**: Identifies the node.
+1. **Description** (optional): Describes the node.
+1. **Connector**: Visual aid to indicate hierarchy and connections.
 
-Do not use trees to:
-- Provide additional information about a specific element of the page, use an [accordion](/components/accordion) instead.
-- To display a navigation location, use [breadcrumb](/components/breadcrumb) instead.
+## Guidelines
 
-### Dos and Dont's
+### When to use
 
-| Dos | Donts |
-| ------ | ------ |
-| Even if the structure is complex, keep the depth of the hierarchy to 4 levels maximum. (for example, Tree trunk > Branch > Sub-branch > Leaf) | Nest more than 4 levels of hierarchy, as it can make part of the content harder to access. In this case, use a [list](https://design.gitlab.com/components/list). |
-| Use a logical order to sort branches/leaves within a tree (for example, start with the most valuable item from a user standpoint or use alphabetical order). | Leave the hierarchy structure unsorted. |
-| Visually differentiate the relationship between elements using margin and padding to create the hierarchy structure. | Align branches and leaves right under the tree trunk. |
-| Group related content as leaves under the same branch. (for example, Design > Research > Interviews - Personas - Experience Map) | Multiply branches if the content is similar and could be grouped as leaves under a same branch. |
+- Create hierarchical structure to view and access parent and child nodes.
 
-### Specifications
+### When not to use
 
-Tree trunks, branches, and leaves all possess a title. Additionally, they may also contain other descriptive elements such as a paragraph or label. Tree trunks and collapsible branches (branches that contain a leaf) should be paired with an icon that clearly signifies the change of state (expand/collapse). This state can be triggered by clicking either the icon, the title, or the row. Trees should visually reflect the hierarchy and relationship differences between its elements using spacing (margin/padding) and/or lines.
+- If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
+- To indicate page location in a navigational hierarchy, use a [breadcrumb](/components/breadcrumb) instead.
+- If you're organizing general content in a structured way, consider using the [list](/components/list) component instead.
 
-#### Tree trunk
+### Appearance
 
-The tree trunk is the starting point of the tree. Tree trunks' title informs the user of the content within the related branches and leaves. If the tree represents a navigation structure with anchors (for example, Group Link > Link project 1, Link project 2), clicking the title will navigate to the linked page.
+- A tree follows a top-down pattern and each consecutive nested node (level) is indented to communicate the hierarchy.
+- Collapsed and expanded nodes should be distinguishable.
 
-#### Branch
+### Behavior
 
-Branches are directly related to tree trunks. Expanding a branch element would unveil a leaf, if leaves are present.
+There are two primary interactions in a tree:
 
-#### Leaf
+1. Expanding and collapsing nodes.
+1. Links to node content.
 
-Leaves are the smallest element possible within the tree. The title should be as specific as possible about the underlying content (for example, "Charts"). Leaves should remain tied to a branch.
+### Content
 
-## Demo
+- The title should be clear and concise.
+- Additional content, like an [avatar](/components/avatar), [icon](https://gitlab-org.gitlab.io/gitlab-svgs/), [label](/components/label), or description can be attributes of the node.
 
-Using the hierarchy structure set up above, our overall tree should look like the following:
+### Accessibility
 
-Todo: add tree example
-
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=6175%3A17)
+- A tree view uses a containing element with the `tree` role. Nodes use the `treeitem` role.
+- See the [WAI-ARIA tree view documentation](https://www.w3.org/TR/wai-aria-practices/#TreeView) to learn more about computed and declared ARIA properties and how to control focus and selection of node items.
