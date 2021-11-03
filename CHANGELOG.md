@@ -1,3 +1,10 @@
+# [2.95.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.94.1...v2.95.0) (2021-11-03)
+
+
+### Features
+
+* **Token:** Update content to utilize new template ([abf5190](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/abf5190d653003ea02f2083c316973139aca4af0))
+
 ## [2.94.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.94.0...v2.94.1) (2021-11-03)
 
 
