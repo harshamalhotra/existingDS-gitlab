@@ -1,65 +1,66 @@
 ---
 name: Token
-description: Tokens represent keywords and are used to add or filter objects. They allow users to input information, converting their text to tokens.
-docs: complete
-gitlab_ui: /components/token/code
+description: A token represents a keyword used to add or filter objects.
 vueComponents:
   - GlToken
 related:
   - filter
-  - button
   - badge
   - label
 ---
 
-## Usage
-
-A token is used in a search query in places where the user is expected to include multiple queries.
-
-- Input tokens are used to add content. For example, these tokens are used when adding new users to a project. Multiple users can be added at once, and each inputted user is added as a token within the text field.
-- Filter tokens are used to narrow down content and are attached to a qualifier. [Filters](/components/filter) inherit these tokens.
-
-### When to use tokens
-
-Use tokens to:
-
-- Enable dynamic user input and verify that input by converting text into tokens.
-- Allow users to manage, filter, and search options in a compact area.
-
-### When not to use tokens
-
-Do not use tokens to:
-
-- Categorize an object. Use [labels](https://design.gitlab.com/components/label/) instead.
-- Highlight more generic object metadata, like an issue’s status, a member’s role, or if a branch is protected. Use [badges](/components/badge/) instead.
-- Display static action items persistently. Use [buttons](https://design.gitlab.com/components/button) instead.
-
-### Placement
-
-Tokens can be positioned inline with the text cursor in a field, or in a stacked list. Tokens can wrap to a new row.
-
-### Variants
-
-#### Interactive tokens
-
-Interactive tokens include a [remove](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~close) icon, positioned at the end of the token. When enabled, users can click the icon to remove the token from the set.
+## Examples
 
 [[Example:token-basic]]
 
-#### View-only tokens
-
-It is also possible to display view-only tokens. View-only tokens don't include a remove icon and cannot be removed from the set. For example, you may use a view-only token when a user does not have permission to remove a token.
-
 [[Example:token-view-only]]
-
-#### Avatar tokens
-
-When querying for a user, project, or group, an avatar token should be used. These can be either interactive or view-only.
 
 [[Example:token-with-avatar]]
 
-## Design specifications
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A141)
 
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
+## Structure
 
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=6934%3A9243)
+<figure class="figure" role="figure" aria-label="Token structure">
+  <img class="figure-img" src="/img/token-structure.svg" alt="Numbered diagram of a token structure" role="img" />
+</figure>
+
+1. **Container**: Wraps the content.
+1. **Avatar** (optional): Prefixes the text for a user, project, or group.
+1. **Text**: Represents the query.
+1. **Remove button** (optional): Permanently removes the token.
+
+## Guidelines
+
+### When to use
+
+- In a search query where the user is expected to include multiple queries.
+- To represent dynamic user input in a [filter](/components/filter) and verify the input by converting the text into a token.
+- Allow a user to manage, filter, and search in a compact area.
+
+### When not to use
+
+- If you need to categorize an object, use a [label](/components/label) instead.
+- To highlight more generic object metadata that is system-generated, use a [badge](/components/badge) instead.
+
+### Variants
+
+- **Interactive**: Include a [close](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~close) icon at the end of the token. When enabled, a user can click the icon to remove the token from the set.
+- **View-only**: Can't be removed.
+- **Avatar**: When querying for a user, project, or group, an avatar token should be used. These can be either interactive or view-only.
+
+### Placement
+
+- A token can be positioned inline with the text cursor in a field, or in a stacked list.
+- A token can wrap to a new row.
+
+### Behavior
+
+A token can be used to both add and filter content where:
+
+- An input token adds content in the form of an attribute attached to another object.
+- A filter token narrows down content and is attached to a qualifier. The [filter](/components/filter) inherits a filter token.
+
+### Accessibility
+
+Todo: Add accessibility requirements and considerations.
