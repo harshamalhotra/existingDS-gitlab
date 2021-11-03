@@ -171,7 +171,7 @@ Disabled fields give extra thought for the user about why it is not available. T
 
 **Hide** a field if a user doesn’t need disclosure or access to an item. This option is relevant specifically for system security measures when some information should not be available in the user interface.
 
-Hiding fields allows for progressive disclosure. For example, as the user enters data in a form or makes a selection, more fields may be displayed or hidden, but the user only has to focus on the necessary fields to complete a task.
+Hiding fields allows for progressive disclosure. For example, as the user enters data in a form or makes a selection, more fields may be displayed or hidden, but the user only has to focus on the necessary fields to complete a task. 
 
 The page layout will need to adapt to display the revealed form fields, but this approach is more consistent, avoids distraction, and lowers the user's cognitive load.
 
@@ -191,7 +191,11 @@ Todo: Add live component block with code example (help text)
 
 ### Icons
 
-Icons can be placed inside input fields for various use cases. For example, date picker input fields come with a calendar icon, and dropdown input fields come with a downward facing chevron icon. The top right corner is the default position where icons should be placed and the `$grey-700` is the default color.
+An icon can be placed inside input fields for various use cases. For example, date picker input fields come with a calendar icon, and dropdown input fields come with a downward facing chevron icon. Only use a single icon within a field.
+
+Eye icons can also be used within fields to indicate sensitive credentials or keys. When using this pattern to show/hide the content of an input form, use the eye icon for show and eye-slash icon for hide.
+
+The top right corner is the default position for icons and `$grey-700` is the default color.
 
 Todo: Add live component block with code example (input field with an icon)
 
