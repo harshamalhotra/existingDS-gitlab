@@ -1,3 +1,10 @@
+## [2.94.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.94.0...v2.94.1) (2021-11-03)
+
+
+### Bug Fixes
+
+* **form:** Remove unnecessary files ([14dbff3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/14dbff3ca35dff7fbd338a069be1ef691b8cebd8))
+
 # [2.94.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.93.0...v2.94.0) (2021-11-03)
 
 
