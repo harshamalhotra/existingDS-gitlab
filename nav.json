@@ -318,6 +318,7 @@
         "title": "Content",
         "path": "content",
         "items": [
+          { "title": "Date and Time", "path": "date-time" },
           { "title": "Error messages", "path": "error-messages" },
           { "title": "Punctuation", "path": "punctuation" },
           { "title": "Terminology", "path": "terminology" },
