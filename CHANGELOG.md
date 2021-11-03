@@ -1,3 +1,10 @@
+# [2.94.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.93.0...v2.94.0) (2021-11-03)
+
+
+### Features
+
+* **content:** Add date time format guidelines ([9166870](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/91668706863065bef5ff167f88895f4522221c87))
+
 # [2.93.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.92.1...v2.93.0) (2021-11-02)
 
 
