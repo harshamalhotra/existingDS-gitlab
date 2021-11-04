@@ -1,3 +1,10 @@
+# [2.96.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.95.0...v2.96.0) (2021-11-04)
+
+
+### Features
+
+* **Accordion:** Update accordion structure image ([06b694a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/06b694a97feb00950518789ef95a52e5444cad60))
+
 # [2.95.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.94.1...v2.95.0) (2021-11-03)
 
 
