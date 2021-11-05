@@ -19,9 +19,9 @@ export default {
       </p>
       <ul class="components-list mt-4 gl-display-grid gl-list-style-none gl-pl-0!">
         <li
-          class="gl-display-flex"
           v-for="component in $options.contentTree.components"
           :key="component.id"
+          class="gl-display-flex"
         >
           <nuxt-link
             class="component-card gl-text-decoration-none! gl-text-black-normal! gl-rounded-base gl-bg-white gl-p-5 gl-w-full gl-border-1 gl-border-solid gl-border-gray-100"

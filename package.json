@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git"
   },
+  "bugs": {
+    "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues"
+  },
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
