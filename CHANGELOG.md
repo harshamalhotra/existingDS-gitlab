@@ -1,3 +1,10 @@
+# [2.97.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.96.0...v2.97.0) (2021-11-08)
+
+
+### Features
+
+* **Toggle:** Update toggle docs to use new template ([980c7e4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/980c7e4c5337b2d05b718885917a6c9448788809))
+
 # [2.96.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.95.0...v2.96.0) (2021-11-04)
 
 
