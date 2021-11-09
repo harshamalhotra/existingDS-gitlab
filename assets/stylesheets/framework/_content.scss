@@ -72,11 +72,8 @@
 
 .admonition {
   padding: $gl-spacing-5;
-  display: block;
-
-  a {
-    text-decoration: underline;
-  }
+  display: flex;
+  font-size: $base-font-size;
 
   &.admonition--note {
     background-color: $blue-50;
@@ -94,7 +91,7 @@
     background-color: $orange-50;
   }
 
-  span {
+  .admonition-type {
     text-transform: uppercase;
     font-weight: $font-weight--bold;
   }
