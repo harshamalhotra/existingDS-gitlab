@@ -1,3 +1,10 @@
+# [2.99.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.98.0...v2.99.0) (2021-11-09)
+
+
+### Features
+
+* **InfiniteScroll:** Update infinite scroll docs to new template ([29ed7d2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/29ed7d2ad273bc7304056437708d1bff716db1ef))
+
 # [2.98.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.97.0...v2.98.0) (2021-11-09)
 
 
