@@ -1,3 +1,10 @@
+# [2.98.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.97.0...v2.98.0) (2021-11-09)
+
+
+### Features
+
+* Add open issue link to todos ([836af5a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/836af5a46bd9ed755490762bf2ba216b3acf7f7a))
+
 # [2.97.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.96.0...v2.97.0) (2021-11-08)
 
 
