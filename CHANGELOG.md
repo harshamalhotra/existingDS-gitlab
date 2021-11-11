@@ -1,3 +1,10 @@
+# [2.100.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.99.0...v2.100.0) (2021-11-11)
+
+
+### Features
+
+* **FileUploader:** Add multi file uploader to structure image ([aa4ce0d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aa4ce0d836a73c125adfd3845442e5baa917e361))
+
 # [2.99.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.98.0...v2.99.0) (2021-11-09)
 
 
