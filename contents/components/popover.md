@@ -31,6 +31,10 @@ Similar to [tooltips](/components/tooltip), popovers have a default delay of `50
 
 By default, popovers are placed above the referring element. However, when there isn’t enough space in the viewport, the popover is moved to the side or below as needed. If it blocks related content, the preferred popover placement can be manually set.
 
+## Content
+
+All copy within a popover should be short, actionable, and use clear language. The copy in the header should be shorter and even more concise than the copy in the body of the popover. The body can contain a link, for example, a "Learn more" link takes the user to the Docs page for more info. 
+
 ## Content alignment
 
 To optimize for readability content within popovers uses left-alignment.
