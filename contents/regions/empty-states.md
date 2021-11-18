@@ -77,6 +77,10 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 [[Example:empty-state-basic]]
 
+## Implementation
+
+Create an issue and [follow the Empty state issue template](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Empty%20state).
+
 ## References
 
 - [Invited users are more likely to activate new stages](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/2526#note_691364062)
