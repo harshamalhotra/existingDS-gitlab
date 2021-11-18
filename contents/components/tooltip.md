@@ -1,22 +1,57 @@
 ---
 name: Tooltip
 description: Tooltips identify elements or provide additional, useful information about the referring elements.
-figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A142
-docs: complete
-gitlab_ui: /components/tooltip/code
 vueComponents:
   - GlTooltip
 related:
   - popover
+  - button
 ---
 
-Tooltips are different from ALT-attributes, which are intended primarily for static images.
+## Examples
 
-A tooltip fades in upon hover or focus on the trigger element. It remains open until the cursor moves outside of itself or the trigger, or focus is moved away from the trigger.
+[[Example:tooltip-directive]]
 
-## Usage
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A142)
 
-Tooltips display unique data, and shouldn’t repeat information that is shown near the referring element. Information provided in a tooltip should be short and concise. The text will wrap when the content is wider than the max-width.
+## Structure
+
+Todo: Add tooltip structure image.
+
+## Guidelines
+
+### When to use
+
+- Show the same data in a different format, such as date or timestamps.
+- Display a full string of text that is shortened with an ellipsis (`…`).
+- Provide context for unlabelled items such as [icon buttons](/components/button).
+
+### When not to use
+
+Consider using a [popover](/components/popover) for the following scenarios:
+
+- Display information required for task completion, such as password formatting hints.
+- Display more than a single line of information or dimensional data, such as user name or status.
+- Display a sophisticated layout and formatting.
+- Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links, or buttons.
+
+### Appearance
+
+- By default, tooltips are placed on top of the referring element.
+- When there isn’t enough space in the viewport, the tooltip is moved to the side or below as needed.
+- If it blocks related content, the preferred tooltip placement can be manually set.
+- Should have no space (0px) between themselves and their target.
+- Remain in place while the cursor moves within the target. 
+- Should never obscure the target element.
+- Content within a tooltip uses center-alignment.
+- Wraps when the content is wider than the max-width.
+
+### Behavior
+
+- Fades in upon hover or focus on the trigger element. 
+- Remains open until the cursor moves outside of itself or the trigger, or focus is moved away from the trigger.
+
+#### Tooltip delay
 
 Similar to [popovers](/components/popover), a tooltip has a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
 
@@ -34,41 +69,11 @@ Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
 />
 ```
 
-### When to use tooltips
+### Content
 
-Use tooltips to:
+- Should be short and concise. 
+- Shouldn’t repeat information that is shown near the referring element.
 
-- Show the same data in a different format, such as date or timestamps.
-- Display a full string of text that is shortened with an ellipsis (`…`).
-- Provide context for unlabeled items such as [icon buttons](/components/button#icon).
+### Accessibility
 
-### When not to use tooltips
-
-Do not use tooltips to:
-
-- Display information required for task completion, such as password formatting hints.
-- Display more than a single line of information or dimensional data, such as user name or status.
-- Display a sophisticated layout and formatting.
-- Offer simple controls and/or actions that are closely tied to the element or object, such as searchable list, links, or buttons.
-
-Consider using a [popover](/components/popover) for the scenarios above.
-
-## Placement
-
-By default, tooltips are placed on top of the referring element. When there isn’t enough space in the viewport, the tooltip is moved to the side or below as needed. If it blocks related content, the preferred tooltip placement can be manually set.
-
-Tooltips should have no space (0px) between themselves and their target. They remain in place while the cursor moves within the target. Tooltips should never obscure the target element.
-
-## Content alignment
-
-Content within a tooltip uses center-alignment.
-
-## Demo
-
-[[Example:tooltip-directive]]
-
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-[View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=439%3A105)
+Todo: Update accessibility guidelines.
