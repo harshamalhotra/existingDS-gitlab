@@ -1,3 +1,16 @@
+# [2.101.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.100.0...v2.101.0) (2021-11-22)
+
+
+### Features
+
+* **Button:** Update ellipsis use docs ([a48af40](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a48af4047129a74285339630f9506083b5cf6bd0))
+* **date:** update timezone related info ([b2d1fe8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2d1fe85846827657b02f2f8cdb26e5dd20c710d))
+* **Dropdown:** Update content to utilize new template ([9086410](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9086410756576318b43d1cae6254320497177c96))
+* **EmptyState:** Add issue template link to empty state docs ([35eb527](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/35eb5274e3e458ae909fd7f18d23f430f6c96ad2))
+* **Form:** Update content to utilize new template ([0b5e826](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0b5e82643491a7f077581040d40b8d2f37ba2f9c))
+* **Table:** Update table docs to new template ([c594939](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c5949391719fbfccc10bd4f1da78cbfcb4eaafe5))
+* **Tooltip:** Update tooltip docs to new template ([f91409a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f91409aface12a2237dd8649cc0246b7d8fa6959))
+
 # [2.100.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.99.0...v2.100.0) (2021-11-11)
 
 
