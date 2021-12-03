@@ -73,7 +73,14 @@ An `Empty search results` empty state serves as a placeholder when there are no 
 
 ## Fallback
 
-If you're unable to come up with a solution to achieve one of the [3 goals of an empty state region](#goals), you can use the empty state fallback. Using the fallback should still achieve one of the three goals and should include a way to track conversion.
+If you're unable to come up with a solution to achieve one of the [3 goals of an empty state region](#goals), you can use the empty state fallback. Using the fallback should still achieve one of the three goals and should include a way to track conversion. 
+
+### Content
+
+- The title concisely states why the empty state is appearing.
+- The description tells a user what action to take to resolve the empty state.
+
+### Example
 
 [[Example:empty-state-basic]]
 
