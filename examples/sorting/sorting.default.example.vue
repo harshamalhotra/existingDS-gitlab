@@ -1,6 +1,5 @@
 <script>
 export default {
-  name: 'DefaultExample',
   data() {
     const sortOptions = [
       {
