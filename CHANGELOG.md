@@ -1,3 +1,20 @@
+# [2.102.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.101.1...v2.102.0) (2021-12-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v1.223.0 ([80229ae](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/80229ae3b63ccd97f58184918078ff5a0d147e29))
+* **deps:** update dependency @gitlab/ui to v32.42.0 ([5076b91](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5076b91f3d683142a59daa370ff35751074a53cb))
+
+
+### Features
+
+* **EmptyState:** Provide context for fallback content ([9611bce](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9611bce520df97993032de90f7cc0bf19b5c6b2f))
+* **GlFormRadio:** Update radio docs to new template ([6a35141](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6a35141789abe03570118ecaf91c64f6bb5c965f))
+* **Search:** Update search docs to new template ([fbc9ccb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fbc9ccb6980014e1e689cc19205a81eb623ac489))
+* **SegmentedControl:** Update docs to new template ([1f37684](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1f3768440fb0a0ed5dd6e29926667c47f1dc1a8b))
+* **Sorting:** Update sorting docs to new template ([2f7e4e0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2f7e4e03ba445ad1339acae725531e24f1c7d7bd))
+
 ## [2.101.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.101.0...v2.101.1) (2021-11-29)
 
 
