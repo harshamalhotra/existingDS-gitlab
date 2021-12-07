@@ -311,6 +311,7 @@
         "title": "Objects",
         "path": "objects",
         "items": [
+          { "title": "Overview", "path": "overview" },
           { "title": "Merge request", "path": "merge-request" }
         ]
       },
