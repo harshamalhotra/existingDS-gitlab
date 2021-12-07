@@ -18,7 +18,7 @@ Regions are areas of the application that are formed by combining multiple compo
 
 ## Objects
 
-Objects are the high-level building blocks of the product. Objects can be sketched out to describe how the product fits together. Examples include Issuables, Groups, and Reports.
+[Objects](/objects/overview) are the high-level building blocks of the product. Objects can be sketched out to describe how the product fits together. Examples include Issuables, Groups, and Reports.
 
 ## Content
 
