@@ -39,6 +39,7 @@
     "cross-env": "^5.2.0",
     "front-matter": "^3.0.0",
     "frontmatter-markdown-loader": "^1.4.0",
+    "iframe-resizer": "^4.3.2",
     "markdown-it": "^8.4.2",
     "nuxt": "2.15.7",
     "pikaday": "1.8.0",
@@ -90,6 +91,9 @@
     "fail": false
   },
   "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|css)$": "<rootDir>/tests/__mocks__/file_mock.js"
+    },
     "moduleFileExtensions": [
       "js",
       "json",
@@ -104,6 +108,9 @@
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/tests/test_setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@gitlab/ui|bootstrap-vue))"
     ]
   }
 }

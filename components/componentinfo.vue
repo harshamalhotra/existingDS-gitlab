@@ -59,6 +59,11 @@ export default {
       }
       return componentNameToLabelMap[slug] || slug;
     },
+    showTabs() {
+      return Boolean(
+        this.vueComponents?.length || this.frontmatterInfo?.attributes?.stories?.length,
+      );
+    },
   },
   created() {
     this.componentAttributes = this.frontmatterInfo.attributes;
@@ -129,7 +134,7 @@ export default {
         <h1 id="skipTarget" tabindex="-1">{{ componentAttributes.name }}</h1>
         <p>{{ componentAttributes.description }}</p>
       </div>
-      <div v-if="vueComponents && vueComponents.length > 0">
+      <div v-if="showTabs">
         <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles gl-mb-5" lazy>
           <gl-tab title="Usage" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
             <md-display :prerendered-md="componentBody" />
@@ -141,7 +146,14 @@ export default {
             class="app-styles js-gl-tab"
             @click.prevent="activateTab('code')"
           >
-            <div class="pt-3">
+            <div class="gl-pt-0">
+              <div
+                v-for="story in frontmatterInfo.attributes.stories"
+                :key="story"
+                class="container"
+              >
+                <story-viewer :story-name="story" view-mode="docs" />
+              </div>
               <template v-for="vueComponentName in vueComponents">
                 <div :key="`header-${vueComponentName}`" class="component md mb-3">
                   <h2 :key="`hl-${vueComponentName}`" class="mb-3">

@@ -1,5 +1,9 @@
 # Component examples
 
+> **Note:** This file documents how to import legacy examples in documentation pages. It is
+> recommended to leverage GitLab UI stories going forward.
+> [Read how to embed GitLab UI stories](./embed-gitlab-ui-stories.md).
+
 Component examples are a handy way of demonstrating how a GitLab UI component implements Pajamas
 specifications. They can be included in documentation pages and can be browsed through in the
 **Implementation** tab when properly linked to a page.

@@ -1,8 +1,8 @@
 ---
 name: Banner
 description: A banner promotes awareness of a new feature or high-priority research initiative.
-vueComponents:
-  - GlBanner
+stories:
+  - base-banner--default
 related:
   - alert
   - broadcast-message
@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-[[Example:banner-introduction]]
+[[Story:base-banner--introduction]]
 
-[[Example:banner-promotion-illustration]]
+[[Story:base-banner--default]]
 
-[[Example:banner-promotion]]
+[[Story:base-banner--no-image|Promotion]]
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4845%3A7873)
 

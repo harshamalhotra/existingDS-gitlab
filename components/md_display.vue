@@ -54,6 +54,16 @@ export default {
       mdOutput = this.prerenderedMd;
     }
 
+    // Load stories
+    mdOutput = mdOutput.replaceAll(
+      /\[\[Story:([^|]*?)(\|.*)?\]\]/g,
+      (tag, escapedStoryName, title) => {
+        const storyName = escapedStoryName.replace(/\\-/g, '-');
+        return `<story-viewer story-name="${storyName}" title="${title?.substring(1) ?? ''}" />`;
+      },
+    );
+
+    // Load examples
     mdOutput = mdOutput.replace(
       /\[\[Example:(.*?)\]\]/g,
       '<div class="app-styles"><gl-example-display exampleName="$1" /></div>',
@@ -65,7 +75,7 @@ export default {
     });
 
     const dynamicElement = {
-      template: `<div class="component md  typography">${mdOutput}</div>`,
+      template: `<div class="component md typography">${mdOutput}</div>`,
     };
 
     return createElement(dynamicElement);
