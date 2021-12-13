@@ -988,22 +988,23 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@1.225.0":
-  version "1.225.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.225.0.tgz#a77f7118903586c1770736201693dd4f861120d9"
-  integrity sha512-ws58e2iNxtPBZbKGL/6ghH2BCtpX18j8mXO3H3QG+ooJHMnWVo3tn6/NuYDT1LPWIndrZRUX+Vg/KoPRpbQOJw==
+"@gitlab/svgs@1.229.0":
+  version "1.229.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-1.229.0.tgz#1ee863320ea3e0ff6b670dac59373b8b49e31388"
+  integrity sha512-10OLT3gj9AQ5DmcqaRcblkIY1dwr0danjaKl+hzjcA9sjvGuTNn3P/rQZglFanM2eI6MkoHG1YP7UeSs7cFuCQ==
 
-"@gitlab/ui@32.43.2":
-  version "32.43.2"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.43.2.tgz#df1e86493354db61da60e2eb8e9e67c79e9c402c"
-  integrity sha512-BJZJeXqi9MrJ5xAQ8rA2t95udSxsRGPeeCzlb6HI26j8LAJpVj9ArbiehoMZ45aGpX0+gnElMUGNOcZ8XHlQqw==
+"@gitlab/ui@32.48.0":
+  version "32.48.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-32.48.0.tgz#d377275c1cb9e000f943efd8c94b52218bd0a572"
+  integrity sha512-I7mKwnAxuZbJb/n2Sq/PN5rCBcGlZy6hcj8KaXpcbVxrJxXoQWdZXHThidzyDcqqlzJZicX63kcWU9WNMhW91g==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "2.20.1"
     copy-to-clipboard "^3.0.8"
-    dompurify "^2.3.3"
+    dompurify "^2.3.4"
     echarts "^5.2.1"
     highlight.js "^10.6.0"
+    iframe-resizer "^4.3.2"
     js-beautify "^1.8.8"
     lodash "^4.17.20"
     portal-vue "^2.1.6"
@@ -4287,10 +4288,10 @@ domhandler@^4.0.0, domhandler@^4.2.0:
   dependencies:
     domelementtype "^2.2.0"
 
-dompurify@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.3.tgz#c1af3eb88be47324432964d8abc75cf4b98d634c"
-  integrity sha512-dqnqRkPMAjOZE0FogZ+ceJNM2dZ3V/yNOuFB7+39qpO93hHhfRpHw3heYQC7DPK9FqbQTfBKUJhiSfz4MvXYwg==
+dompurify@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.4.tgz#1cf5cf0105ccb4debdf6db162525bd41e6ddacc6"
+  integrity sha512-6BVcgOAVFXjI0JTjEvZy901Rghm+7fDQOrNIcxB4+gdhj6Kwp6T9VBhBY/AbagKHJocRkDYGd6wvI+p4/10xtQ==
 
 domutils@1.1:
   version "1.1.6"
