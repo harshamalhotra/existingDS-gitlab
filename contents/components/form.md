@@ -43,7 +43,7 @@ Todo: Make Forms it's own section with subpages for components and concepts.
 
 ### Form elements
 
-Forms may include a variety of elements. By default all information in forms is required unless stated otherwise with "(optional)" added to the label of the corresponding element.
+Forms may include a variety of elements. By default all information in forms is required unless stated otherwise with "(optional)" added to the label of the corresponding element. However, if your form is entirely optional except for 1-2 fields, you may opt to append "(required)" to the field label instead.
 
 #### Text
 
