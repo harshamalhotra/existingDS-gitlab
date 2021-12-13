@@ -1,3 +1,24 @@
+# [2.103.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.102.0...v2.103.0) (2021-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v32.43.1 ([c07c3d0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c07c3d0a81d76496316a736a0c73e56ae57f4bf1))
+* **deps:** update dependency @gitlab/ui to v32.43.2 ([7912609](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7912609b37166b191ce433dfa8fde8754fd54167))
+* **deps:** update gitlab ui/svg ([c4457e0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c4457e0ccec82997e6f0259712a2ad289bcdd3d9))
+* **help:** Fix referenced blue color ([0da07bb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0da07bb1c813e34e09ea83b87082726c4f1140f4))
+* **UI text:** Removed Please, added period, and updated examples ([eb8e17b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eb8e17b4630d4c7de7ddb85798569f2d210d8fe2))
+
+
+### Features
+
+* **Filter:** Update filter docs to new template ([6c2cfba](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6c2cfba0c77c15f3b55e180c84338ec33f67ca61))
+* **Illustration:** Update docs with new guides ([f6b6e0a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f6b6e0a89eef1b3c8ba5da63029fc9fd47c3e6e3))
+* **Label:** Update Label page to new template ([ee7e9de](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ee7e9dea8e477a6951e5684444ed2f24fc196df6))
+* **List:** Update list to use new template ([00bb642](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/00bb6427cfa7f22e1f5dbc2b2c6525343f8ad0d8))
+* **Path:** Update path to new template ([2214650](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/22146504dc0fbbfa044b5121890aa1afb08fa574))
+* **Popover:** Update popover docs to new template ([3ef5182](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3ef5182427e98b6b977b5f4d5fbfd7cc0fbbe8cc))
+
 # [2.102.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.101.1...v2.102.0) (2021-12-06)
 
 
