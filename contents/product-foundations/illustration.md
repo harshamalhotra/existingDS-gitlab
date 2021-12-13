@@ -12,6 +12,21 @@ One of our design goals is to convey GitLab’s distinct personality through ill
 1. **Be optimistic.** We take an open-minded, positive, and friendly approach. Those values are reflected in our illustrations with a light and airy feel.
 1. **Be helpful.** Our illustrations help users to understand concepts and guide them in the right direction.
 
+## Efficiency and reuse
+
+Practically, applying the principles gives us more leverage to think of the relationship of illustration to use case as a one-to-many instead of one-to-one. In other words, a single illustration could be used in multiple instances.
+
+For example, a single empty state illustration could be abstracted enough to be used in multiple empty state pages where the visual _impression_ is supported more fully by the content and context. The illustration doesn't have to do all the heavy lifting.
+
+To better support reuse, the [illustration library](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/Illustration-library?node-id=0%3A1) in Figma also contains dozens of small illustration components that represent concepts found throughout the product. These small illustrations can be used on their own, or as part of a larger illustration.
+
+<figure class="figure" role="figure" aria-label="An element and components combine as part of a larger illustration.">
+  <img class="figure-img p-a-5" src="/img/illus-reuse.svg" alt="Illustration elements and components assembled into larger illustration" role="img" />
+  <figcaption class="figure-caption">An element and components combine as part of a larger illustration.</figcaption>
+</figure>
+
+By combining a multipurpose mindset with reusable components, the time it takes to create a new illustration, and the resulting number of illustrations, should both be reduced. This is a win both for designers, and users where time and consistency matters.
+
 ## Style
 
 The illustration style is a derivative of the [GitLab Brand Standards](https://about.gitlab.com/handbook/marketing/corporate-marketing/brand-activation/brand-standards/#brand-resources), and is designed to work both in light and dark UI.
@@ -59,8 +74,9 @@ An illustration is primarily comprised of geometric shapes. Use circles, rectang
 
 ### Grid and size
 
-- An illustration can use either a large [isometric grid](#isometric-grid), or one of the three [focal point grid](#focal-point-grid) sizes to align with the use case.
-- Illustration dimensions don’t include padding and elements should go to the edge of the design frame, relying on CSS classes for padding.
+Using predefined grids and sizes not only helps illustrations feel more consistent and intentional throughout the product, they also add helpful and meaningful constraints to reduce the time it takes to create an illustration.
+
+An illustration can use either a large [isometric grid](#isometric-grid), or one of the three [focal point grid](#focal-point-grid) sizes to align with the use case.
 
 #### Isometric grid
 
@@ -71,7 +87,7 @@ An isometric grid provides depth to concepts which can convey process, relations
 - Three subgrids are available to handle different angles: ramp left, ramp right, and ramp forward.
 
 <figure class="figure" role="figure" aria-label="Isometric grid and subgrids">
-  <img class="figure-img p-a-5" src="/img/illus-isometric.svg" alt=" and subgrids lines and subgrid lines" role="img" />
+  <img class="figure-img p-a-5" src="/img/illus-isometric.svg" alt="Isometric grid lines and subgrid lines" role="img" />
   <figcaption class="figure-caption">Isometric grid and subgrids</figcaption>
 </figure>
 
@@ -82,7 +98,9 @@ An isometric grid provides depth to concepts which can convey process, relations
 
 #### Focal point grid
 
-A rule of thirds grid is a simple way to place elements with dedicated focal points.
+A focal point grid leverages the [rule of thirds](https://en.wikipedia.org/wiki/Rule_of_thirds) to place elements with dedicated focal points. The vertical and horizontal guides divide the frame into nine equal parts. When multiple objects are present, placing them at or near the point of intersection can provide balance and movement.
+
+Not all illustrations will have multiple objects or objects that need to align to an intersection point. Circular grid lines are also provided for centering within the frame.
 
 - **Large**: **288px × 288px** frame size. Used for feature promotion.
 - **Medium**: **144px × 144px** frame size. Used for empty states, error states, and banners.
@@ -98,9 +116,20 @@ A rule of thirds grid is a simple way to place elements with dedicated focal poi
   <figcaption class="figure-caption">Focal point grid example</figcaption>
 </figure>
 
+#### Size
+
+While an illustration will always be created using one of the grid sizes above, the final output dimensions follow these rules:
+
+- Small illustrations are always output at **72px × 72px**, even if that means there's extra white space in the frame. This helps ensure that when multiple small illustrations are present in the same context they will optically align. [Icons](/product-foundations/iconography) follow a similar approach.
+- Medium and large illustrations artwork must fill either the width, height, or both and the remaining whitespace be removed before exporting (frame cropped to artwork). Since only one illustration at these sizes should be present in a given context, this should create no alignment issues. Use [GitLab UI utility classes](https://unpkg.com/browse/@gitlab/ui@32.45.0/src/scss/utilities.scss) if additional space is needed in a page layout.
+
+## Contribute
+
+Everyone can contribute to GitLab, including our product illustration in Figma Get started with our [contribution guidelines](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/doc/illustration-contribution.md).
+
 ## Resources
 
 - [View the illustration file in Figma](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/WIP%3A-Illustration-library?node-id=441%3A2008).
 - [Go to the SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/illustrations) to view all of the current illustrations.
-
-Todo: Add link to contribution guide in the SVG project.
+- Learn more about [Creating Isometric Art](https://marmoset.co/posts/creating-isometric-art-hexels/).
+- Learn more about [Using the Rule of Thirds in Design](https://blog.thenounproject.com/using-the-rule-of-thirds-in-design/) and the [Effective Use of the Rule of Thirds in Design](https://www.framer.com/dictionary/rule-of-thirds/).
