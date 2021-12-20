@@ -1,3 +1,23 @@
+# [2.104.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.103.0...v2.104.0) (2021-12-20)
+
+
+### Bug Fixes
+
+* **card:** Add link to single stat ([937319d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/937319dd80ceabd4e01716bb34af4dd09e228f55))
+* **deps:** update dependency @gitlab/svgs to v2 ([1f2c310](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1f2c310329a7e9164cf3385a942d7825c930f496))
+* **deps:** update dependency @gitlab/ui to v32.50.0 ([30289da](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/30289daaaad915af8037e8ceefee2d57629f754e))
+* **deps:** update gitlab ui/svg ([30467d6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/30467d63884c35e9f7b9b02dfe06c6cd0a77f35f))
+* **deps:** update gitlab ui/svg ([bfb512b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bfb512bc72c964832fa9d7e51e1784b1889779fe))
+
+
+### Features
+
+* **Card:** Update card docs with new guidelines ([8e267bb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8e267bbe657967f68f9a3cbbd4abea4afba3b90b))
+* **color-picker:** Update color picker to new template ([60cd85e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/60cd85e319cc95fa950bdbfb13688361b74d2e1c))
+* **Form:** adding option for required field ([7369b24](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7369b24fe7776ea17d85c8a3746d2a95bdd579b9))
+* **Illustration:** Add more in-depth details ([6cea236](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6cea23625129be302c936a906f2489e9e16ebd9a))
+* **Socks:** Update socks to new template, have a laugh ([aa2facd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aa2facdc7126a962e718e6c10e4c6860ded8e6ff))
+
 # [2.103.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.102.0...v2.103.0) (2021-12-13)
 
 
