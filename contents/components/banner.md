@@ -30,8 +30,8 @@ related:
 1. **Illustration** (optional): Compliments the content.
 1. **Title**: Header for the content.
 1. **Message**: Text content indicating the purpose and potential next steps.
-1. **Action**: A single button to provide an explicit action the user can take based on the message.
 1. **Dismissal**: Removes the banner for a user.
+1. **Action**: A single button to provide an explicit action the user can take based on the message.
 
 ## Guidelines
 
