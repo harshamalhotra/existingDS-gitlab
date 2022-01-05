@@ -132,6 +132,14 @@ export default {
     <div v-if="componentAttributes">
       <div class="md typography gl-mb-6!">
         <h1 id="skipTarget" tabindex="-1">{{ componentAttributes.name }}</h1>
+        <div
+          v-if="componentAttributes.deprecated"
+          role="alert"
+          class="gl-bg-orange-50 gl-px-5 gl-py-3 gl-mb-3 gl-display-flex gl-align-items-center"
+        >
+          <span class="gl-text-orange-600 gl-mr-3">⚠️</span>
+          Please refrain from using this component - it is about to be deprecated!
+        </div>
         <p>{{ componentAttributes.description }}</p>
       </div>
       <div v-if="showTabs">
