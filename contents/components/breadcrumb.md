@@ -1,8 +1,8 @@
 ---
 name: Breadcrumb
 description: A breadcrumb is a navigational element to help a user understand the current location in the application as well as content structure and hierarchy.
-vueComponents:
-  - GlBreadcrumb
+stories:
+  - base-breadcrumb--default
 related:
   - avatar
   - button
@@ -10,7 +10,7 @@ related:
 
 ## Examples
 
-[[Example:breadcrumb-basic]]
+[[Story:base-breadcrumb--default]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
 
