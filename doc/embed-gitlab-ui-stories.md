@@ -71,3 +71,7 @@ with a local GitLab UI instance running at `http://localhost:9001`:
 ```sh
 GITLAB_UI_URL=http://localhost:9001 yarn start
 ```
+
+## Removing examples
+
+After replacing a component's examples (from the `/examples/` directory) with stories, be sure to remove the examples folder for that component.

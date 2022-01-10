@@ -1,4 +1,4 @@
-# Component examples
+# DEPRECATED: Component examples
 
 > **Note:** This file documents how to import legacy examples in documentation pages. It is
 > recommended to leverage GitLab UI stories going forward.
