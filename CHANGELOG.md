@@ -1,3 +1,17 @@
+# [2.105.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.104.0...v2.105.0) (2022-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v32.51.1 ([54a2c67](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/54a2c677328e2d16a22fb14c0cac5315be6edba2))
+* **deps:** update dependency @gitlab/ui to v32.51.2 ([ae899e8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ae899e8105e677fb85e0a6cd2cf23dcdadd59c43))
+
+
+### Features
+
+* **Banner:** Link to correct illustration content ([5b9fc30](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5b9fc3079db3547336942f6424eb57b713cdef88))
+* **Form:** Clarify text elements ([61ef0b4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/61ef0b4c215c86679258104eea932ec20faeb857))
+
 # [2.104.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.103.0...v2.104.0) (2021-12-20)
 
 
