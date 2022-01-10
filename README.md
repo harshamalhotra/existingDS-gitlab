@@ -41,11 +41,13 @@ When starting from scratch:
 
 [learn more about populating the navbar]: /doc/navbar.md
 
-### Writing component examples
+### Component stories
 
-Component examples can be included in component docs and are available in the **Implementation** tab when they are associated with a documentation page. Component examples should be used over static images whenever possible.
+Component stories use the [Component Story Format (CSF)](https://storybook.js.org/docs/react/api/csf) and are included in component docs available in the **Implementation** tab when they are associated with a documentation page. Static images aren't used to represent a final component.
 
-[Learn how to write and use component examples](/doc/component-examples.md).
+We're in the process of migrating non-CSF examples to CSF so that we can use Storybook as the single source of truth without duplicating examples in this project.
+
+[Learn how to embed component stories](/doc/embed-gitlab-ui-stories.md).
 
 ### Adding images
 
