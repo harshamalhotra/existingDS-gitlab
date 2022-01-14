@@ -2,18 +2,18 @@
 name: Voice and tone
 ---
 
-Copy and messaging are meaningful aspects of the GitLab experience and the conversation with our users. 
+Copy and messaging are meaningful aspects of the GitLab experience and the conversation with our users.
 
 The copy for GitLab is clear and direct. We strike a balance between professional and friendly. We can empathize with users (such as celebrating completing all items on the To-Do List) while remaining respectful to the importance of their work. We are a trusted, friendly, helpful, and understanding coworker.
 
 ## Active voice
 
-Whenever possible, write in [active voice](https://www.grammarly.com/blog/active-vs-passive-voice/), instead of passive voice. Active voice is easier for users to understand and often results in shorter content. 
+Whenever possible, write in [active voice](https://www.grammarly.com/blog/active-vs-passive-voice/), instead of passive voice. Active voice is easier for users to understand and often results in shorter content.
 
 - Passive voice: _Files are added by developers._
-- Active voice: _Developers add files._ 
+- Active voice: _Developers add files._
 
-Sometimes, using passive voice is appropriate. Make sure it’s an intentional choice that communicates the idea more clearly than active voice would&mdash;for example, when the system is the actor, rather than a person. 
+Sometimes, using passive voice is appropriate. Make sure it’s an intentional choice that communicates the idea more clearly than active voice would&mdash;for example, when the system is the actor, rather than a person.
 
 | Do  | Don’t |
 | --- |  ---  |
@@ -107,8 +107,8 @@ When writing an error message, leave out extraneous words like *sorry* and *plea
 
 ## Objective focused
 
-When users engage with our product, they’re focused on getting tasks done, thinking first in terms of the problem they’re trying to solve, and then how to solve it. 
-Objective-focused content that starts with the task first and then offers the solution can make it easier for users to quickly find and understand the information they need.  
+When users engage with our product, they’re focused on getting tasks done, thinking first in terms of the problem they’re trying to solve, and then how to solve it.
+Objective-focused content that starts with the task first and then offers the solution can make it easier for users to quickly find and understand the information they need.
 
 | Do | Don’t |
 | --- | --- |
@@ -162,3 +162,7 @@ Use the **present tense** with an imperative form (also known as a command).
 | --- | --- |
 | Click the Designs tab. | You will need to click the Designs tab. |
 | To see what’s changed, choose a branch or enter a commit. | Choosing a branch or entering a commit will show you what’s changed. |
+
+## Contractions
+
+Contractions are encouraged and can create a friendly and informal tone, especially in tutorials, instructional documentation, and user interfaces. To learn more about when to avoid contractions, please check the [GitLab Documentation Style Guide].(https://docs.gitlab.com/ee/development/documentation/styleguide/index.html#contractions)
