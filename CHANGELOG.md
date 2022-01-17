@@ -1,3 +1,17 @@
+# [2.106.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.105.0...v2.106.0) (2022-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v32.55.0 ([eefea18](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eefea18a86021e7a66ef9e528a7b92d436a73225))
+* **deps:** update gitlab ui/svg ([d190399](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d19039952eae6bc26109c345591f66dad798a1bc))
+
+
+### Features
+
+* **Breadcrumb:** Update example to use the GitLab UI story ([7b31fc0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7b31fc0aacac87c9384355de67a5ebe57e7b77b2))
+* **VoiceTone:** Add contractions reference ([f21793c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f21793cedebbbefd6669e61cf7ca75141326ea13))
+
 # [2.105.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.104.0...v2.105.0) (2022-01-10)
 
 
