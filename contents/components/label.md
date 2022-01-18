@@ -1,17 +1,17 @@
 ---
 name: Label
 description: Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
-vueComponents:
-  - GlLabel
+stories:
+  - base-label--default
 related:
   - badge
 ---
 
 ## Examples
 
-[[Example:label-basic]]
+[[Story:base-label--default|Default label]]
 
-[[Example:label-scoped]]
+[[Story:base-label--scoped|Scoped label]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A127)
 

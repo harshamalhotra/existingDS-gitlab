@@ -2,8 +2,8 @@
 name: Avatar
 description: An avatar represents a unique entity, like a person, group, or project.
 docs: in-progress
-vueComponents:
-  - GlAvatar
+stories:
+  - base-avatar--image
 related:
   - badge
   - breadcrumb
@@ -11,9 +11,9 @@ related:
 
 ## Examples
 
-[[Example:avatar-image]]
+[[Story:base-avatar--image|Avatar image]]
 
-[[Example:avatar-labeled]]
+[[Story:base-avatar-labeled--default|Labeled avatar]]
 
 Todo: Add group demo
 
