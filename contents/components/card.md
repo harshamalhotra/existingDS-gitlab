@@ -1,8 +1,8 @@
 ---
 name: Card
 description: A card displays a single group of content within a set of similar groups.
-vueComponents:
-  - GlCard
+stories:
+  - base-card--default
 related:
   - list
   - table
@@ -10,7 +10,7 @@ related:
 
 ## Examples
 
-[[Example:card-with-header-footer]]
+[[Story:base-card--default|Default card]]
 
 Todo: Provide additional card examples.
 

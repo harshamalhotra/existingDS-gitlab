@@ -3,15 +3,15 @@ name: Broadcast message
 description: A broadcast message delivers an instance level message from the admin to all users.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A6
 docs: complete
-vueComponents:
-  - GlBroadcastMessage
+stories:
+  - base-broadcast-message--default
 related:
   - alert
 ---
 
 ## Examples
 
-[[Example:broadcast-message-basic-example]]
+[[Story:base-broadcast-message--default|Default broadcast message]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1501%3A1583)
 
