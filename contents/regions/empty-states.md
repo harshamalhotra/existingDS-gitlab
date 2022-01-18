@@ -38,6 +38,15 @@ A `Blank content` empty state serves as a placeholder when no content exists on 
 - Appears when no content exists within a configured feature.
 - Contains a method for creating content.
 
+#### Content
+
+The title phrase should be a call to action that starts with an active verb. No period at the end of the phrase.
+
+Examples:
+
+- `Monitor vulnerabilities in your project`
+- `Get started with monitoring`
+
 ### Configuration required
 
 A `Configuration required` empty state serves as a placeholder for features that need to be configured first, before having the ability to create content.
@@ -51,6 +60,15 @@ Use the following implementation to trigger the invite modal:
 - [Initialize from a Vue component](http://gitlab.com/gitlab-org/gitlab/blob/81fc02642a748484af91e45abda84c24a54b7ac9/app/assets/javascripts/vue_shared/components/markdown/toolbar.vue#L70-70).
 - [Initialize as a separate button/link using haml](https://gitlab.com/gitlab-org/gitlab/blob/81fc02642a748484af91e45abda84c24a54b7ac9/app/views/projects/_invite_members_empty_project.html.haml#L6-13).
 
+#### Content
+
+The title phrase should be a call to action that starts with an active verb. No period at the end of the phrase.
+
+Examples:
+
+- `Monitor vulnerabilities in your project`
+- `Get started with monitoring`
+
 ### Higher tier feature
 
 A `Higher tier feature` empty state serves as a placeholder when a certain feature isn‘t available under the current tier. [The Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section) is the DRI for `Higher tier feature` empty state regions and should be involved in implementation of solutions for this type of empty state region.
@@ -60,6 +78,8 @@ A `Higher tier feature` empty state serves as a placeholder when a certain featu
 - Specifications and actions should be determined by [the Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section). If implementing a solution for this empty state region, collaborate with the Growth Product Designer and Product Manager. 
 
 Todo: Add specifications for Higher Tier empty state region.
+
+Todo: Add content for Higher Tier empty state region.
 
 ### Empty search results
 
@@ -71,14 +91,18 @@ An `Empty search results` empty state serves as a placeholder when there are no 
 - Should describe that a search or filter came back with no results.
 - Does not contain a CTA.
 
+#### Content
+
+The text should always be exactly:
+
+- For the title, `No results found`.
+- For the text underneath, `Edit your search and try again`.
+
+No period on the end of the phrase.
+
 ## Fallback
 
 If you're unable to come up with a solution to achieve one of the [3 goals of an empty state region](#goals), you can use the empty state fallback. Using the fallback should still achieve one of the three goals and should include a way to track conversion. 
-
-### Content
-
-- The title concisely states why the empty state is appearing.
-- The description tells a user what action to take to resolve the empty state.
 
 ### Example
 
