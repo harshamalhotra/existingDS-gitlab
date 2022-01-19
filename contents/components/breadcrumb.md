@@ -45,8 +45,9 @@ related:
 ### Content
 
 - Ignore the **GitLab** instance name in the breadcrumb.
-- For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge Requests > !1234**.
+- For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge requests > !1234**.
 - For a contextual page within the navigation, the breadcrumb should only include the submenu title. For example, **Overview > Details** becomes just **Details**.
+- [Use sentence case](../content/punctuation.md#case) for each breadcrumb element.
 
 #### Special breadcrumbs
 
@@ -55,23 +56,23 @@ Some pages have a special breadcrumb path to make the text intuitive. They are d
 | Path | Title in breadcrumb |
 | ------ | ------ |
 | Group > Issues > List                     | Group > Issues                               |
-| Group > Issues > Boards                   | Group > Issue Boards                         |
-| Group > Settings > General                | Group > General Settings                     |
-| Group > Settings > CI / CD                | Group > CI / CD Settings                     |
+| Group > Issues > Boards                   | Group > Issue boards                         |
+| Group > Settings > General                | Group > General settings                     |
+| Group > Settings > CI / CD                | Group > CI / CD settings                     |
 | Group > Project > Repository > Files      | Group > Project > Repository                 |
-| Group > Project > Repository > Compare    | Group > Project > Compare Revisions          |
-| Group > Project > Repository > Charts     | Group > Project > Contribution Charts        |
+| Group > Project > Repository > Compare    | Group > Project > Compare revisions          |
+| Group > Project > Repository > Charts     | Group > Project > Contribution charts        |
 | Group > Project > Issues > List           | Group > Project > Issues                     |
-| Group > Project > Issues > Boards         | Group > Project > Issue Boards               |
-| Group > Project > CI / CD > Charts        | Group > Project > CI/CD Charts               |
-| Group > Project > Settings > General      | Group > Project > General Settings           |
-| Group > Project > Settings > Integrations | Group > Project > Integration Settings       |
-| Group > Project > Settings > Repository   | Group > Project > Repository Settings        |
-| Group > Project > Settings > CI / CD      | Group > Project > CI/CD Settings             |
-| User Settings > Profile                   | User settings > Edit Profile                 |
-| User Settings > Password                  | User settings > Edit Password                |
-| Admin Area > System Hooks > Edit          | Admin Area > System Hooks > Edit System Hook |
-| Admin Area > Label > Edit                 | Admin Area > Labels > Edit Label             |
+| Group > Project > Issues > Boards         | Group > Project > Issue boards               |
+| Group > Project > CI / CD > Charts        | Group > Project > CI/CD charts               |
+| Group > Project > Settings > General      | Group > Project > General settings           |
+| Group > Project > Settings > Integrations | Group > Project > Integration settings       |
+| Group > Project > Settings > Repository   | Group > Project > Repository settings        |
+| Group > Project > Settings > CI / CD      | Group > Project > CI/CD settings             |
+| User settings > Profile                   | User settings > Edit profile                 |
+| User settings > Password                  | User settings > Edit password                |
+| Admin area > System hooks > Edit          | Admin area > System hooks > Edit system hook |
+| Admin area > Label > Edit                 | Admin area > Labels > Edit label             |
 
 ### Accessibility
 
