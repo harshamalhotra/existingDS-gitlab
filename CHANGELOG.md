@@ -1,3 +1,12 @@
+# [2.107.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.106.0...v2.107.0) (2022-01-24)
+
+
+### Features
+
+* **Breadcrumb:** Improve style compliance ([38489e7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/38489e71242e0d12f27d970c5d7f6e3f0f5a55d8))
+* **structure:** Add more details to objects definition ([ed56878](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ed56878a940224e4385141d98f542b761bcdaa7e))
+* **UI text:** Added content guidance for blank states ([53cabe0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/53cabe0c286bf09139874914b61ca9b0a85baf42))
+
 # [2.106.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.105.0...v2.106.0) (2022-01-17)
 
 
