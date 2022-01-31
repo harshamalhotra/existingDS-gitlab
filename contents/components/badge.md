@@ -3,8 +3,8 @@ name: Badge
 description: A badge highlights system generated metadata as an attribute of a larger object. 
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
 docs: complete
-vueComponents:
-  - GlBadge
+stories:
+  - base-badge--default
 related:
   - label
   - button
@@ -13,12 +13,11 @@ related:
 
 ## Examples
 
+[[Story:base-badge--variants|Badge variants]]
 
-[[Example:badge-variants]]
+[[Story:base-badge--actionable|Actionable badges]]
 
-[[Example:badge-actions]]
-
-[[Example:badge-icon]]
+[[Story:base-badge--badge-icon|With icons]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A3)
 
