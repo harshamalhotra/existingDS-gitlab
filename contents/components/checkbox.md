@@ -1,8 +1,8 @@
 ---
 name: Checkbox
 description: A checkbox form element represents a boolean option.
-vueComponents:
-  - GlFormCheckbox
+stories:
+  - base-form-form-checkbox--default
 related:
   - radio-button
   - toggle
@@ -12,9 +12,7 @@ related:
 
 ## Examples
 
-[[Example:form-checkbox-checked]]
-
-[[Example:form-checkbox-group-options-array]]
+[[Story:base-form-form-checkbox--default|Checkbox]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242)
 
