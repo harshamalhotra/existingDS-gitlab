@@ -43,6 +43,7 @@ Todo: Add structure image.
 ### Behavior
 
 - By default, popovers fade in on hover or focus of its trigger element. 
+- Occasionally, a popover can fade in on page load. These should be used sparingly (no more than one per page), and always contain a dismiss button. Consider using these popovers to highlight a new feature or area.
 - They fade out upon interacting with an area or element outside of the popover or its trigger, or on a delay of the cursor moving outside the popover or its trigger element.
 - Similar to [tooltips](/components/tooltip), popovers have a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
   - A user doesn’t accidentally hover an element with a popover, which might cover an adjacent element they intended to select.
