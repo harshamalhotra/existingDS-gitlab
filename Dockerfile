@@ -1,4 +1,4 @@
-FROM node:14 AS builder
+FROM node:16 AS builder
 ARG ga_id
 ENV GOOGLE_ANALYTICS_ID=$ga_id
 WORKDIR /app
