@@ -68,13 +68,6 @@ related:
 
 - All copy within an alert should be short, actionable, and use clear language.
 - Keep translations in mind when writing copy and follow [voice and tone](/content/voice-tone) guidelines.
-- The contents of an alert are constrained by a `max-width` variable that:
-  - Prevents the line length (measure) of the text from being too wide and impacting readability.
-  - Keeps short alert content and the close button more central in the layout, preventing it from getting lost in a user's peripheral vision or too stretched out in a wide viewport.
-  <figure class="figure" role="figure" aria-label="An alert background fills container width after content reaches max-width">
-    <img class="figure-img" src="/img/alert-max-width.png" alt="Alert with left and right content edges marked to show max-width" role="img" style="width:100%; max-width:332px; height:auto" />
-    <figcaption class="figure-caption">An alert background fills container width after content reaches max-width</figcaption>
-  </figure>
 
 #### Title
 
