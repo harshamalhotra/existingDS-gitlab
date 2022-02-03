@@ -23,7 +23,7 @@ function makeAdmonitions(html, type) {
   }
   return html.replace(
     pattern,
-    `$1<span class="admonition admonition--${type}"><span>${typeCapitalized}: </span>$2</span>$3`,
+    `$1<span class="admonition admonition--${type} gl-rounded-base"><span class="admonition-type">${typeCapitalized}: </span>$2</span>$3`,
   );
 }
 
