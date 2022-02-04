@@ -22,6 +22,22 @@ Using a keyboard is a fundamental aspect of accessibility. In fact, many other t
 - Arrow keys are used to move within certain elements, element groups, and widgets. For example, within form `select` elements, radio button groups, and a set of tabs.
 - For a more comprehensive list of actions, review this table of [common keyboard interactions](https://webaim.org/techniques/keyboard/#testing).
 
+If you're testing in Safari or Firefox in macOS, you'll likely have to update a few settings so that all focusable elements can receive focus; details below. The [resources](#resources) section contains additional links with more details on enabling keyboard navigation for focusable elements.
+
+**For Firefox:**
+
+1. Go to **System Preferences > Keyboard > Shortcuts**.
+1. Check the "Use keyboard navigation to move focus between controls" option.
+
+<img class="d-block a-center m-t-7 m-b-7" style="width:100%; max-width:668px;" src="/img/a11y-keyboard-macos.png" alt="macOS keyboard settings" />
+
+**For Safari:**
+
+1. Open **Preferences > Advanced**.
+1. Check the "Press Tab to highlight each item on a webpage" option.
+
+<img class="d-block a-center m-t-7 m-b-7" style="width:100%; max-width:792px;" src="/img/a11y-keyboard-safari.png" alt="Safari browser advanced settings" />
+
 ## Focus order
 
 The focus order is the sequence that a keyboard user tabs through focusable elements. In most cases the focus order and DOM order should be the same. Visually reordering elements with CSS, such as with floats, flexbox, or grid, can be problematic for focus order, so ensure content makes sense both visually and linearly in the markup. To learn more about what elements should be focusable by default read this [Introduction to Focus](https://developers.google.com/web/fundamentals/accessibility/focus/).
@@ -130,3 +146,5 @@ Skip links are anchor links placed before a section that allow a user to bypass 
 - [“Skip Navigation” Links](https://webaim.org/techniques/skipnav/) - A comprehensive article about skip links.
 - [Controlling focus with tabindex — A11ycasts #04](https://www.youtube.com/watch?v=Pe0Ce1WtnUM) - Learn how to add keyboard support for custom elements.
 - [Roving tabindex — A11ycasts #06](https://www.youtube.com/watch?v=uCIC2LNt0bk) - Learn how to add deep keyboard support for custom controls.
+- [No, tabbing is not broken. Yes, I was confused too.](https://www.scottohara.me/blog/2014/10/03/link-tabbing-firefox-osx.html) - Learn how to enable full keyboard navigation for focusable elements in macOS Safari and Firefox.
+- [Browser keyboard navigation in macOS](https://www.a11yproject.com/posts/macos-browser-keyboard-navigation/) - Learn how to enable full keyboard navigation for focusable elements in macOS Safari and Firefox.
