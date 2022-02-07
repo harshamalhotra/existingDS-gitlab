@@ -1,3 +1,19 @@
+# [2.108.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.107.0...v2.108.0) (2022-02-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v36 ([ceb9b08](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ceb9b08766f8e102a93b40c407ab330700012c3e))
+* Native M1 support ([0114857](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/01148572e9dfda124b25f614136e3c460cca8324))
+* **deps:** update dependency @gitlab/ui to v35 ([33a479b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/33a479babf21f7f31fc9ffb6c93d52265988d797))
+
+
+### Features
+
+* **A11yGuides:** Add browser settings to keyboard audit ([1b541cf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1b541cf0f14df15ffe177e4102d903d76094a6bd))
+* **Alert:** Allow fluid layout to determine width ([38a585c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/38a585c42e6e29d9bfb5b2899523c4be17312a67))
+* **documentation:** Add additional behaviour info for popovers ([1f3c768](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1f3c768fec7097a8b2fe257ca933370e54f8c54a))
+
 # [2.107.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.106.0...v2.107.0) (2022-01-24)
 
 
