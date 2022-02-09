@@ -993,10 +993,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.5.0.tgz#e0569916fa858462b1801cc90ef8dd9706a12e96"
   integrity sha512-cH/EBs//wdkH6kG+kDpvRCIl63/A8JgjAhBJ+ZWucPgtNCDD6x6RDMGdQrxSqhYwcCKDoLStfcxmblBkuiSRXQ==
 
-"@gitlab/ui@36.3.0":
-  version "36.3.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-36.3.0.tgz#2bc1fc6a09ee2ba3a1d3bfff650d0ce2f64b3c5e"
-  integrity sha512-f3nnXQsYOjta6n8JRl3zJY9QNy7GAA4ofHF/y3e7a0riwEoyzvchZHI+Kx+MoA5cE+SN64LywbUpFOaAExrgfQ==
+"@gitlab/ui@36.4.0":
+  version "36.4.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-36.4.0.tgz#47449c8212ad4a84d9e80659dab6d69ca84a4403"
+  integrity sha512-VxgM/qGiQYGmYus/SR2bPLWxvE6RI0h823U+hENJVWhscjxxnlW3K8lbQS3DTb0WmtXiWjdib9GWNWPhY4yErA==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "2.20.1"
