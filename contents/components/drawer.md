@@ -14,7 +14,7 @@ related:
 
 [[Example:drawer]]
 
-Todo: Add link to design specs.
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=48150%3A59274)
 
 ## Structure
 
