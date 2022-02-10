@@ -47,8 +47,15 @@ Forms may include a variety of elements. By default all information in forms is 
 
 #### Text
 
-- **Label**: Clearly and concisely identifies an input and indicates if it's optional. For example: _Phone number (optional)_
-- **Description**: Clarifies and explains the purpose or intent of an input. Positioned directly below a label. For example, _A phone number is required for security purposes._
+- **Label**:
+  - Clearly and concisely identifies an input.
+  - If a field is optional, add the suffix "(optional)". For example, _Phone number (optional)_
+  - Don't use punctuation. Special characters are allowed for formatting (-:;).
+- **Description**:
+  - Clarifies and explains the purpose or intent of an input. For example, _A phone number is required for security purposes._
+  - Avoid repetitive or unnecessary text. For example, _This setting is..._ or _Use this setting to..._
+  - Positioned directly below a label.
+  - Don't use "allow" unless you're specifically talking about security. For example, _Allows users to fork the repo_ should be _Users can fork the repo_.
 - **Help**: Provides contextual examples, formatting information, details about the input state, validation messages, or any combination of these options. Positioned directly below an input. May include a [help link](/usability/helping-users) when necessary. For example: _Must have 11 digits including the country code. For example, +1-234-567-8901. Learn more._
 - **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
 
