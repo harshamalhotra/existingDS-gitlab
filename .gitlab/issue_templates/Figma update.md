@@ -25,10 +25,10 @@ a checklist of variations, states, and breakpoints to the description so that re
 Make sure the following are completed before closing the issue:
 
 1. [ ] **Assignee**: Design in your working file. When applicable, follow our 
-   [structure][structure], [building][building], and [annotation][annotation] guidelines. If you have any questions, reach out to a [FE/UX Foundations designer][foundations-team].
+   [structure][structure], [building][building], and [annotation][annotation] guidelines. If you have any questions, reach out to a [Foundations designer][foundations-team].
 1. [ ] **Assignee**: Update the link to the working file in the issue 
    description.
-1. [ ] **Assignee**: Ask a [FE/UX Foundations designer][foundations-team]
+1. [ ] **Assignee**: Ask a [Foundations designer][foundations-team]
    to review your design (ensure they have edit permissions in Figma).
 1. [ ] **Reviewer**: Review and approve assignee’s design. Specific design 
    questions can be addressed with comments in Figma. Comment in this issue when the content is less specific to the design or requires greater visibility.
@@ -57,7 +57,7 @@ Make sure the following are completed before closing the issue:
 
 [annotation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#adding-descriptions-notes-and-annotations
 [building]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#building-components
-[foundations-team]: https://about.gitlab.com/company/team/?department=fe-ux-foundations-team
+[foundations-team]: https://about.gitlab.com/company/team/?department=ecosystem-foundations-team
 [figma-maintainer]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
 [publishing]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#publishing-changes
 [structure]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#structure
