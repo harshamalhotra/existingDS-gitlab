@@ -1,3 +1,18 @@
+# [2.109.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.108.0...v2.109.0) (2022-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.3.0 ([c3e9d79](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c3e9d790f093aa1fa2989b40e91b635f3223b169))
+* **deps:** update dependency @gitlab/ui to v36.4.0 ([ff57348](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ff573488639e90eb94331ce173678b5da8157f78))
+* **deps:** update gitlab ui/svg ([ad5de34](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ad5de349a63639ddf245bd35533aef8506f53666))
+
+
+### Features
+
+* **Form:** Improve UI text criteria ([59162fe](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/59162fe243873a5a749407da69c645cff0cfad59))
+* **tabs:** Updated guidelines for tab usage ([85abdf2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/85abdf254e394ca9e3956fc532801dc772468b2c))
+
 # [2.108.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.107.0...v2.108.0) (2022-02-07)
 
 
