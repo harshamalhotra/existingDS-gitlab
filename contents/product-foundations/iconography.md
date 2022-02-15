@@ -2,6 +2,8 @@
 name: Iconography
 ---
 
+Note: Icons have recently been refreshed to be more balanced with other UI elements while addressing other considerations. Updates to the following guidelines are forthcoming. Read more about the changes in this [blog post](https://about.gitlab.com/blog/2021/12/17/hey-icons-lighten-up/) and take some time to familiarize yourself with the new icons in the [GitLab SVGs project](https://gitlab-org.gitlab.io/gitlab-svgs/).
+
 One of our values is to create a distinct GitLab personality that is strong and consistent. Iconography is a powerful visual cue to the user and should reflect our particular sense of style.
 
 Icons take inspiration from elements expressed by our tanuki logomark.
