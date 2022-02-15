@@ -384,6 +384,10 @@
         "path": "accessibility/a11y"
       },
       {
+        "title": "Inclusive design principles",
+        "path": "accessibility/inclusive-design-principles"
+      },
+      {
         "title": "Best practices",
         "path": "accessibility/best-practices"
       },
