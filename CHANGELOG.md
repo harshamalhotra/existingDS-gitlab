@@ -1,3 +1,16 @@
+# [2.110.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.109.0...v2.110.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* **modal:** Update structure image to reflect unboxing ([95ffeb9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/95ffeb9829fce05c682057d3a02468c8f028186f))
+
+
+### Features
+
+* **A11y:** Add inclusive design principles ([6761478](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/676147853a2bdbfd8ee6e2f9e2ece71efb967dd4))
+* **Iconography:** Add note about icon updates ([b49dc2e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b49dc2e48ea1859e1ac23d250bc29a98ec99237d))
+
 # [2.109.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.108.0...v2.109.0) (2022-02-14)
 
 
