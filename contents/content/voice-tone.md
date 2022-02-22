@@ -165,4 +165,4 @@ Use the **present tense** with an imperative form (also known as a command).
 
 ## Contractions
 
-Contractions are encouraged and can create a friendly and informal tone, especially in tutorials, instructional documentation, and user interfaces. To learn more about when to avoid contractions, please check the [GitLab Documentation Style Guide].(https://docs.gitlab.com/ee/development/documentation/styleguide/index.html#contractions)
+Contractions are encouraged and can create a friendly and informal tone, especially in tutorials, instructional documentation, and user interfaces. To learn more about when to avoid contractions, please check the [GitLab Documentation Style Guide](https://docs.gitlab.com/ee/development/documentation/styleguide/index.html#contractions).
