@@ -47,7 +47,6 @@ Todo: Add or refactor examples to compare offset and keyset pagination.
 
 ### When not to use
 
-- If content is not part of the same set, consider using [navigation](/regions/navigation) instead.
 - If the content is not part of the same set, consider using [navigation](/regions/navigation) instead.
 - If you need to navigate between steps in a flow, consider using the [path](/components/path) component or [buttons](/components/button) instead.
 
