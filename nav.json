@@ -312,6 +312,7 @@
         "path": "objects",
         "items": [
           { "title": "Overview", "path": "overview" },
+          { "title": "Job", "path": "job" },
           { "title": "Merge request", "path": "merge-request" }
         ]
       },
