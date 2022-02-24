@@ -18,7 +18,9 @@ related:
 
 ## Structure
 
-Todo: Add structure diagram based on design specs.
+<figure class="figure" role="figure" aria-label="Drawer structure">
+  <img class="figure-img" src="/img/drawer-structure.svg" alt="Numbered diagram of a drawer structure" role="img" />
+</figure>
 
 1. **Container**: Wraps the content.
 1. **Header**: Contains the title, close button, and actions.
