@@ -993,15 +993,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.5.0.tgz#e0569916fa858462b1801cc90ef8dd9706a12e96"
   integrity sha512-cH/EBs//wdkH6kG+kDpvRCIl63/A8JgjAhBJ+ZWucPgtNCDD6x6RDMGdQrxSqhYwcCKDoLStfcxmblBkuiSRXQ==
 
-"@gitlab/ui@36.4.0":
-  version "36.4.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-36.4.0.tgz#47449c8212ad4a84d9e80659dab6d69ca84a4403"
-  integrity sha512-VxgM/qGiQYGmYus/SR2bPLWxvE6RI0h823U+hENJVWhscjxxnlW3K8lbQS3DTb0WmtXiWjdib9GWNWPhY4yErA==
+"@gitlab/ui@37.0.0":
+  version "37.0.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-37.0.0.tgz#75a4fe340950623f9c232218762a5ceaf3609982"
+  integrity sha512-He4tu3Sd7zkGBZzIk1IHjq8adkzGsN5Z/0XWD8V+NoJcjQWn/+6fzr5g2bq1s6krD+FgfZAppez5MKR/bdC8eg==
   dependencies:
     "@babel/standalone" "^7.0.0"
     bootstrap-vue "2.20.1"
     copy-to-clipboard "^3.0.8"
-    dompurify "^2.3.5"
+    dompurify "^2.3.6"
     echarts "^5.2.1"
     highlight.js "^10.6.0"
     iframe-resizer "^4.3.2"
@@ -4312,10 +4312,10 @@ domhandler@^4.0.0, domhandler@^4.2.0:
   dependencies:
     domelementtype "^2.2.0"
 
-dompurify@^2.3.5:
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.5.tgz#c83ed5a3ae5ce23e52efe654ea052ffb358dd7e3"
-  integrity sha512-kD+f8qEaa42+mjdOpKeztu9Mfx5bv9gVLO6K9jRx4uGvh6Wv06Srn4jr1wPNY2OOUGGSKHNFN+A8MA3v0E0QAQ==
+dompurify@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.6.tgz#2e019d7d7617aacac07cbbe3d88ae3ad354cf875"
+  integrity sha512-OFP2u/3T1R5CEgWCEONuJ1a5+MFKnOYpkywpUSxv/dj1LeBT1erK+JwM7zK0ROy2BRhqVCf0LRw/kHqKuMkVGg==
 
 domutils@1.1:
   version "1.1.6"
