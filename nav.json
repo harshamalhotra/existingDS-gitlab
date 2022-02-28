@@ -90,6 +90,10 @@
         "path": "layout",
         "items": [
           {
+            "title": "Responsive-first",
+            "path": "responsive-first"
+          },
+          {
             "title": "Grid",
             "path": "grid"
           },
