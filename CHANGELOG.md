@@ -1,3 +1,20 @@
+# [2.111.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.110.0...v2.111.0) (2022-02-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.6.0 ([05d435c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/05d435cabda85e2ec20c3b137e2e94a08a2df2ae))
+* **deps:** update dependency @gitlab/ui to v37 ([18b7ab4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/18b7ab4d9b3a7b5bafb47bab9ab675842a6eec00))
+* fixes voice tone url typo ([1af7298](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1af72984289800ca92d8b5623dba882b60736079))
+* remove a duplicate line of text ([f98f215](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f98f215d3bb5433afbe27ad9ef7f8e73c210511f))
+
+
+### Features
+
+* **drawer:** add structure diagram ([94f96c9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/94f96c9a557989c0a8fed75cb688407ace6c53b2))
+* **issue-template:** Add Object documentation issue template ([3b0f932](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3b0f932c6c5dc7da03b196034949bca12d67cbac))
+* **object:** Add Job object to Objects in Pajamas ([a68fbd9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a68fbd9455a7d23c82e1abc1519951d28bcb47db))
+
 # [2.110.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.109.0...v2.110.0) (2022-02-21)
 
 
