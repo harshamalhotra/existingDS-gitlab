@@ -19,12 +19,15 @@ There are many applications that an issue can have, including:
 - Enhancing code implementations
 
 If you were unable to find a related issue in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues),
-begin by [creating a new one](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new).
-Creating an issue for each change allows us to easily track all proposals in one
-place. For changes that affect visual designs or user experiences, it can be
-helpful to include a mockup.
+begin by creating a new one. Creating an issue for each change allows us to
+easily track all proposals in one place. For changes that affect visual designs
+or user experiences, it can be helpful to include a mockup.
 
-Additionally, if you want to add a new component or edit an existing one, familiarize yourself with our [Component Lifecycle](lifecycle).
+To contribute an issue, follow one of these paths depending on its nature:
+
+1. **Component**: Get familiar with our [Component lifecycle](lifecycle).
+1. **Object**: Create an issue with the [“Object documentation” template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Object%20documentation) and follow its instructions.
+1. Everything else: [Create an issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new) with no template.
 
 ### UX proposals
 
