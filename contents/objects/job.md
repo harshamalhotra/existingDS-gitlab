@@ -16,7 +16,7 @@ The language of the conceptual model diagram is meant to be as simple and access
 [View conceptual model in Figma →](https://www.figma.com/file/J68bePHXIN5OPWqaFFY9ri/Conceptual-model?node-id=4488%3A462)
 
 <div class="figma-embed" aria-label="Conceptual diagram that is a reflection of the Job object actions, attributes and its object relationships." role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D4488%253A462" allowfullscreen></iframe>
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D4488%253A461" allowfullscreen></iframe>
 </div>
 
 ## Layouts
