@@ -48,9 +48,8 @@ Make sure the following are completed before closing the issue:
      1. [ ] If you’re a community contributor, please consider [transfering ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
 1. [ ] **Assignee** (or Maintainer, for community contributions): If it’s a new
    pattern or a significant change, add an agenda item to the next UX weekly call to inform the team.
-1. [ ] **Assignee**: When applicable, [create an MR in this repository][new-gitlab-ui-mr] and apply the "component-guideline" template 
-   to create or update the component’s documentation page. If you do not have capacity, [create an issue in this repository using the "Component documentation" issue template][pajamas-component-documentation-template]. Bring the issue to your team planning session for prioritization and scheduling. Mark the new issue as related to this one.
-1. [ ] **Assignee**: When applicable, [create an issue in GitLab UI using the "Component" issue template][gitlab-ui-component-template] to build or update the component code. Bring the issue to your team planning session for prioritization and scheduling. Mark the new issue as related to this one.
+1. [ ] **Assignee**: When applicable, add or update relevant documentation and create an MR with your changes using the `Documentation` MR template. If you do not have the capacity, [create another issue using the `Component documentation` issue template][issue-component-template] so we don't forget about it. Mark the new issue as related to this one. Bring the issue to your team planning session for prioritization and scheduling. 
+1. [ ] **Assignee**: When applicable, [create a GitLab UI issue using the `Component` issue template][gitlab-ui-component-template] to build or update the component code. Mark the new issue as related to this one. Bring the issue to your team planning session for prioritization and scheduling. 
 1. [ ] **Assignee**: 🎉 Congrats, you made it! You can now close this issue.
 
 /label ~"UX" ~"Figma"
@@ -65,6 +64,4 @@ Make sure the following are completed before closing the issue:
 [component-archive]: https://www.figma.com/files/project/5472112/Component-archive
 [misc-archive]: https://www.figma.com/files/project/10620392/Misc-archive
 [gitlab-ui-component-template]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new?issuable_template=Component
-[pajamas-component-documentation-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Component%20documentation
-[new-gitlab-ui-mr]: https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/new
-
+[issue-component-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Component%20documentation

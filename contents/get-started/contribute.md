@@ -52,10 +52,12 @@ To make changes within our Design System, follow these instructions:
    is working on it and that the issue is still relevant.
 1. Fork [this project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com).
 1. Make changes reflecting the issue you’ve chosen to work on.
-1. Create a merge request using the [`component-guideline` template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/.gitlab/merge_request_templates/component-guideline.md). The earlier you open a merge request, the sooner you
-   can get feedback. You can mark it as a Work in Progress (WIP) to signal that you’re
-   not done yet.
-1. We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) in Pajamas, so make sure you write commits this way in your merge request. [How to write conventional commits](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md).
+1. Create a merge request using the `Documentation` template. The earlier you
+   open a merge request, the sooner you can get feedback. You can mark it as a
+   draft to signal that you’re not done yet.
+1. We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+   in Pajamas, so make sure you write commits this way in your merge request.
+   [How to write conventional commits](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md).
 1. Get your merge request approved. If your changes involved a new guideline or
    UX paradigm, then ping a [UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
    to approve your changes. If your changes involve an update to frontend implementation,
