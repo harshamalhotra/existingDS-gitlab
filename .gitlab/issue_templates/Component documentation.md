@@ -8,15 +8,15 @@ Make sure the following are completed before closing the issue:
 
 1. [ ] Assign the correct component label to this issue.
 1. [ ] Create an MR with the additions or updates needed.
-1. [ ] When applicable, [create a new Pajamas issue using the "Figma update" issue template][pajamas-figma-update-template] to update the component in Figma. Bring the issue to your team planning session for prioritization and scheduling. Mark the issue as related to this one.
-1. [ ] When applicable, [create an MR in GitLab UI][gitlab-ui-mr] to update the component. If you do not have capacity or are unable to update the component directly, [create a new GitLab UI issue using the "Component"][gitlab-ui-component-template] issue template. Bring the issue to your team planning session for prioritization and scheduling. Mark the issue as related to this one.
+1. [ ] When applicable, [create an issue using the `Figma update` issue template][pajamas-figma-update-template] to update the component in Figma, and mark it as related to this one. Bring the issue to your team planning session for prioritization and scheduling.
+1. [ ] When applicable, [create an MR in GitLab UI][gitlab-ui-mr] to update the component. If you do not have capacity or are unable to update the component directly, [create a GitLab UI issue using the `Component` issue template][gitlab-ui-component-template]. Mark the new issue as related to this one. Bring the issue to your team planning session for prioritization and scheduling. Mark the issue as related to this one.
 1. [ ] When introducing a major or breaking change, communicate the changes within the Engineering Week in Review and UX Weekly meeting.
 1. [ ] 🎉 Congrats, you made it! You can now close this issue.
 
 <!--
 ### Resources
 
-* [Compontent Lifecycle][component-lifecycle]
+* [Component Lifecycle][component-lifecycle]
 -->
 
 /label ~"pajamas::define"
