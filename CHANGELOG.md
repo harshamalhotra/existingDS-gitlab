@@ -1,3 +1,18 @@
+# [2.112.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.111.0...v2.112.0) (2022-03-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v37.1.0 ([5e50da7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5e50da7639f9c8b727e85c6ff4d3f49d6ed86cdc))
+* **deps:** update dependency @gitlab/ui to v37.2.0 ([1bb221c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1bb221c3a174443c0c8aa1141636b5a20020f9c0))
+* **object:** Scope job Figma embed to page ([c8c8d4d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c8c8d4d558b2c0fa24c758c789307ee601b593f9))
+
+
+### Features
+
+* **docs:** Update NVDA testing guide ([d052ae2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d052ae260f99bae6b3c6e4d65e169224edc0273b))
+* **Layout:** Add a new page to layout section ([c2842c7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c2842c70d92e59398b7a892ddb741a4630d277e7))
+
 # [2.111.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.110.0...v2.111.0) (2022-02-28)
 
 
