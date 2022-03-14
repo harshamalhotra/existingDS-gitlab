@@ -1,3 +1,15 @@
+# [2.113.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.112.0...v2.113.0) (2022-03-14)
+
+
+### Bug Fixes
+
+* **docs:** Correct new Figma issue link ([b2ab48e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2ab48edfd71ffca03a8fcaff5bad9d4d4d70774))
+
+
+### Features
+
+* **drawer:** update when not to use popover docs ([757e226](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/757e226a782d07f26de7dd2c096ae7625f37e0cd))
+
 # [2.112.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.111.0...v2.112.0) (2022-03-07)
 
 
