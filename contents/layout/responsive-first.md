@@ -6,8 +6,10 @@ We take a [responsive-first](/layout/grid#responsive-ui) approach that considers
 
 ## Reflow
 
-As content reflows responsively to leverage available space, the hierarchy, structure, and relationships remain intact and clear within any viewport. In almost all cases the visual order should match the DOM order. Reflow isn't limited to just wrapping. For example, a list of actions could be grouped into a single dropdown when space is limited.
-
+When the content on a page reflows to fit the available space, the hierarchy, structure, and relationships should remain intact and clear within any viewport. 
+- The visual order should match the [DOM order](https://www.w3.org/WAI/WCAG21/Techniques/css/C27). 
+- Reflow isn't limited to content wrapping. For example, you might consider grouping a list of actions into a single dropdown in smaller viewports.
+- Content should not abruptly rearrange as that can be disorienting for users and cause the page to re-load, which may negatively impact the perceived performance of a page. 
 ## Truncation
 
 Individual lines of text can be truncated with an ellipsis when length or wrapping would break a component, negatively impact surrounding content, or cause some content to flow off screen. When text is truncated, there must be a method, like a [tooltip](/components/tooltip) to easily view and access all of the content for both sighted and unsighted users, as well as those using assistive technology.
