@@ -45,19 +45,23 @@ related:
 ### Behavior
 
 - The drawer follows the [motion guidelines](/product-foundations/motion) and slides in from the right side of the viewport.
-  - 200ms with an ease-in animation.
+  - `200ms` with an ease-in animation.
   - By default, the drawer is above all page content.
   - If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push some or all of the content rather than covering it.
+- Only one drawer can be open on a page at a time.
 - A drawer should never take the user by surprise — let a user’s action open it.
 - A drawer can be closed with the close button or the <kbd>esc</kbd> key.
 - When content overflows the drawer height, it scrolls vertically under the header.
+- If the content within the drawer container exceeds the height, then a scrim (gradient overlay) appears at the bottom of the container as an overflow affordance. The scrim is removed when a user has scrolled to the end of the content.
 - The drawer maintains its behavior down to the smallest breakpoint, at which point it takes up the full viewport width.
+- The drawer should have a width of `400px`.
 
 ### Content
 
 - All copy within a drawer should be short, actionable, and use clear language.
 - The drawer should utilize the [skeleton loader](/components/skeleton-loader/) pattern when possible to represent loading content.
 - If an empty state is required, please follow the [empty-state](/regions/empty-states) guidelines.
+- Left aligned, except in right-to-left languages where the content is right aligned.
 
 #### Title
 
