@@ -1,6 +1,9 @@
 ---
 name: Drawer
 description: A drawer presents context-specific information and/or actions without leaving the current page.
+figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=44560%3A56734
+docs: in-progress
+gitlab_ui: /components/drawer/code
 vueComponents:
   - GlDrawer
 related:
@@ -8,6 +11,9 @@ related:
   - toast
   - accordion
   - skeleton-loader
+  - button
+  - /product-foundations/motion
+  - /regions/empty-states
 ---
 
 ## Examples
