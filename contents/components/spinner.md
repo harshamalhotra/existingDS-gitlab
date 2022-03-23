@@ -35,7 +35,8 @@ related:
 ### When not to use
 
 - Ideally, only one spinner should be used at a time. If a larger section of content is loading, consider using a larger size spinner instead of multiple smaller ones or a [skeleton loader](/components/skeleton-loader) instead.
-- A spinner shouldn’t be used in combination with a [skeleton loader](/components/skeleton-loader), choose the one that fits the use case best.
+- In combination with a [skeleton loader](/components/skeleton-loader). Choose one or the other, whichever fits the use case best.
+- If user action is required before content can be displayed.
 
 ### Appearance
 
@@ -48,6 +49,10 @@ related:
 - **Medium**: 24px, used within larger visual elements, like merge widget status icons.
 - **Large**: 32px, indicates larger components are loading, like a [chart](/data-visualization/charts).
 - **Extra large**: 64px, indicates a large content area of the UI is loading.
+
+### Content
+
+The default visible `Loading...` text isn't part of the component itself. However, you may consider replacing that message with something more descriptive when the action is dependent on GitLab. For an in-product example, see the updated ['merge active' status message](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/60521).
 
 ### Behavior
 
