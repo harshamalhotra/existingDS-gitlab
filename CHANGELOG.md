@@ -1,3 +1,17 @@
+# [2.115.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.114.0...v2.115.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v38.0.1 ([7a6269b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a6269b0e7c1f87ef7edac858364ccd167cf27ec))
+
+
+### Features
+
+* **drawer:** update status and links in the docs ([b7f068c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b7f068c78cae63e682633ac264e332b67a1ba513))
+* **Drawer:** Update behavior and content docs ([81f93da](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/81f93daf4d6c8ccd008d8dd38a482a17bcbc80c8))
+* **Spinner:** update usage guidance ([8cb3ed0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8cb3ed0148e9730ab6aa0499275d07e868d4e1b1))
+
 # [2.114.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.113.0...v2.114.0) (2022-03-21)
 
 
