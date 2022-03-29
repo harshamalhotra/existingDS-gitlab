@@ -15,7 +15,7 @@ format that includes a **type**, a **scope**, and a **subject**:
 <footer - optional>
 ```
 
-The header is mandatory and the scope of the header is optional.
+The header is mandatory and the scope of the header is optional. The subject must not end with a period.
 Each line in the commit message should be no longer than 72 characters.
 
 When opening an MR, make sure you do at least one of the following:
