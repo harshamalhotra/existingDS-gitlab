@@ -12,9 +12,9 @@ Though deciding which color to use depends on the situation, here are some gener
 
 - **Blue** indicates a current or active state. It communicates management, progress, connectivity, or organization.
 - **Green** indicates success. It communicates save, create, add, available, done, approved, or resolved.
-- **Orange** indicates "attention-required." It communicates warning, pending, missing, or impeded progress.
-- **Red** indicates a problem. It communicates critical states, destructive actions, errors, fails, removals, or declines.
-- **Purple** is not assigned meaning in the same way the other chromatic hues are, like green for success or red for a problem. Purple, however, have meaning associated with the GitLab brand. It communicates brand affinity and relationship, and can be used for things like illustrations or company-related announcements in the product.
+- **Orange** indicates attention is required. It communicates warning, pending, missing, or impeded progress.
+- **Red** indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
+- **Purple** is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
 <div class="row m-b-9">
   <div class="col col-50 md p-b-7">
@@ -874,7 +874,7 @@ Though deciding which color to use depends on the situation, here are some gener
 
 ## Neutral palette
 
-Our neutral palette is primarily used within components to help differentiate hierarchy. Shades of gray can be used as backgrounds, borders, and shadows to emphasize certain areas or set them apart.
+The neutral palette is primarily used within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
     <div class="distributed palette neutral">
       <div class="color">
         <div class="color-overview c-white-background p-t-3 p-r-5 p-b-3 p-l-5">
@@ -965,9 +965,9 @@ Our neutral palette is primarily used within components to help differentiate hi
 
   <div class="col col-50 md">
 
-## Transparencies
+## Transparency
 
-Transparencies are used only to indicate hover and active states within themes. Each theme has its own series of four transparencies to utilize with alpha levels ranging from 0.02 to 0.08.
+Transparency is used only to indicate hover and active states within themes. Each theme has a series of four transparencies to utilize alpha levels ranging from 0.02 to 0.08.
     <div class="distributed palette neutral m-b-6">
       <div class="color">
         <div class="color-overview t-gray-a-02 p-t-3 p-r-5 p-b-3 p-l-5">
@@ -1005,7 +1005,7 @@ Transparencies are used only to indicate hover and active states within themes. 
 
 ## Themes
 
-There are ten different theme options in GitLab that a user can choose from to customize the appearance of the application header and navigation sidebar. Each theme draws inspiration from one of our primary chromatic colors, the neutral palette, or the corporate indigo color.
+A user may choose between ten different themes to customize the appearance of the application header and navigation sidebar in GitLab. Each theme draws inspiration from one of the primary chromatic colors, the neutral palette, or the corporate indigo color.
 
 - Indigo and light indigo share the same `$t-indigo-` variables.
 - Green and light green share the same `$t-green-` variables.
@@ -1445,18 +1445,6 @@ There are ten different theme options in GitLab that a user can choose from to c
   </div>
 </div>
 
-## Usage
-
-### Color priorities
-
-Color priorities work similarly to font weights; different font weights can be used to create contrasting typography that communicates hierarchy. We apply this same logic to colors by tagging colors according to their priority: from 1 to 4. These priorities can be used to make better choices. When choosing how to apply color to a UI component:
-
-- Priority 1 is equal to the color weight 500.
-- Priority 2 is equal to the color weights 300 and 700.
-- Priority 3 is equal to the color weights 100 and 900.
-
-Priorities skip steps because, in most situations, the contrast between two adjoining steps would be too subtle. However, those steps are available to use when needed. Color priorities are meant to act as a guideline, not a strict set of rules.
-
 ## Accessibility
 
 At GitLab, we are dedicated to continually improving the accessibility of the application. Pajamas satisfies the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast) AA level for normal text. Learn more in [Accessibility](/accessibility/a11y).
@@ -1472,3 +1460,5 @@ At GitLab, we are dedicated to continually improving the accessibility of the ap
 - **F** - Doesn’t pass
 
 Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1f1f`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fafafa`) or lighter.
+
+Use colors at least two steps apart to ensure distinguishable contrast for states and border/fill combinations.
