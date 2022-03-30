@@ -1,9 +1,8 @@
 ---
 name: Tabs
 description: Tabs divide content into meaningful, related sections.
-vueComponents:
-  - GlTabs
-  - GlTab
+stories:
+  - base-tabs--default
 related:
   - accordion
   - path
@@ -11,11 +10,11 @@ related:
 
 ## Examples
 
-[[Example:tabs-basic]]
+[[Story:base-tabs--default]]
 
-[[Example:justified-tabs]]
+[[Story:base-tabs--justified-tabs]]
 
-[[Example:tabs-with-counter-badges]]
+[[Story:base-tabs--with-counter-badges]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A138)
 
