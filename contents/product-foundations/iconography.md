@@ -2,28 +2,26 @@
 name: Iconography
 ---
 
-Note: Icons have recently been refreshed to be more balanced with other UI elements while addressing other considerations. Updates to the following guidelines are forthcoming. Read more about the changes in this [blog post](https://about.gitlab.com/blog/2021/12/17/hey-icons-lighten-up/) and take some time to familiarize yourself with the new icons in the [GitLab SVGs project](https://gitlab-org.gitlab.io/gitlab-svgs/).
-
 One of our values is to create a distinct GitLab personality that is strong and consistent. Iconography is a powerful visual cue to the user and should reflect our particular sense of style.
 
-Icons take inspiration from elements expressed by our tanuki logomark.
+Icons take inspiration from elements expressed as part of the GitLab brand.
 
-<img class="d-block a-center m-b-7" src="/img/icons-tanuki.svg" alt="Tanuki logomark" role="img" />
-
-1. **Balance and structure.** Regardless of symmetry, icons should feel complete and in control. Icons act as visual anchors or guides and should be designed to either stop or direct the eye.
-1. **Modern and approachable.** Border radius and open counters help our icons combine beauty and utility with a touch of personality.
-1. **Crisp and intentional.** Icon elements should have purpose and place.
-1. **Simple and concise.** Design to minimize time to comprehension. In the same way the concept of “invisible UI” moves a user to task completion without getting hung up on visual elements or controls, icons should move users to concept and action without extra time spent deciphering a metaphor.
+- **Balance and structure.** Regardless of symmetry, icons should feel complete and in control. Icons act as visual anchors or guides and should be designed to either stop or direct the eye.
+- **Modern and approachable.** Border radius and open counters help our icons combine beauty and utility with a touch of personality.
+- **Crisp and intentional.** Icon elements should have purpose and place.
+- **Simple and concise.** Design to minimize time to comprehension. In the same way the concept of “invisible UI” moves a user to task completion without getting hung up on visual elements or controls, icons should move users to concept and action without extra time spent deciphering a metaphor.
 
 ## Layout
 
 ### Pixel grid
 
-Icon elements are aligned to the pixel grid to avoid subpixel antialiasing and be as crisp as possible on all screens and resolutions. Elements within an icon, such as curves or diagonal lines, won’t always align exactly to the grid, and in these instances it’s better for the element to feel natural rather than forced.
+Icon elements are aligned to the pixel grid. Elements within an icon, such as curves or diagonal lines, won’t always align exactly to the grid, and in these instances it’s better for the element to feel natural rather than forced.
+
+Alignment considerations for a **1.5px** stroke are covered in the [Strokes](#strokes) section below.
 
 | **Do** | **Don’t** |
 | :---: | :---: |
-| <figure class="figure" role="figure" aria-label="Icon aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-do.svg" alt="Crisp icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon aligned to the pixel grid</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-dont.svg" alt="Blurry icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon not horizontally aligned to the pixel grid</figcaption></figure> |
+| <figure class="figure" role="figure" aria-label="Icon aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-do.svg" alt="Crisp icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon outside edges aligned to the pixel grid</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-dont.svg" alt="Blurry icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon edges not horizontally aligned to the pixel grid</figcaption></figure> |
 
 ### 16 pixel grid
 
@@ -110,13 +108,25 @@ Here are a few considerations when trying to achieve optical balance.
 
 ## Strokes
 
-All icons use a **2px** stroke weight and are most commonly aligned to the inside of shapes. Lines use rounded caps, unless doing so would misrepresent the metaphor, or if you are trying to infer depth or element clipping. Round line joins are optional and also depend on the metaphor. For example, a checkmark is one continuous object and the round line infers fluidity, whereas clock hands are two joined objects and a miter join defines a joint.
+All icons use a **1.5px** stroke weight. Lines use rounded caps, unless doing so would misrepresent the metaphor, or if you are trying to infer depth or element clipping. Round line joins are optional and also depend on the metaphor. For example, a checkmark is one continuous object and the round line infers fluidity, whereas clock hands are two joined objects and a miter join defines a joint.
+
+A **1.5px** stroke:
+
+- Is more balanced with other UI elements and is similarly weighted to regular system font weights at body text sizes.
+- Provides more room to convey abstract concepts and metaphors by allowing for both more detail where needed and extra space between elements for clarity.
+- Works well in both light and dark UI.
+
+Since icons use a **1.5px** stroke, there are a few alignment considerations:
+
+- A stroke is either aligned to inside or center.
+- Outside edges of closed shapes should align to whole pixels.
+- A line should have at least one edge aligned to a whole pixel. This won't always be possible when two lines comprise an element that has to be centered within the grid or to other elements, but the line end points should always terminate on a whole pixel.
 
 <div class="row">
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="2px stroke weight and rounded stroke caps">
+    <figure class="figure" role="figure" aria-label="1.5px stroke weight and rounded stroke caps">
       <img class="figure-img" src="/img/icons-strokes.svg" alt="Icon stroke settings" role="img" />
-      <figcaption class="figure-caption">2px stroke weight and rounded stroke caps</figcaption>
+      <figcaption class="figure-caption">1.5px stroke weight inside aligned and rounded stroke caps</figcaption>
     </figure>
   </div>
   <div class="col col-33">
@@ -127,7 +137,7 @@ All icons use a **2px** stroke weight and are most commonly aligned to the insid
   </div>
   <div class="col col-33">
     <figure class="figure" role="figure" aria-label="Line with mitar join">
-      <img class="figure-img" src="/img/icons-line-mitar.svg" alt="Line with mitar (square) join" role="img" />
+      <img class="figure-img" src="/img/icons-line-miter.svg" alt="Line with mitar (square) join" role="img" />
       <figcaption class="figure-caption">Line with miter join</figcaption>
     </figure>
   </div>
@@ -135,7 +145,16 @@ All icons use a **2px** stroke weight and are most commonly aligned to the insid
 
 ## Border radius
 
-The default border radius is **2px**, with **0px**, **1px**, or multiples of **2px** allowed to better represent the metaphor or parts of it. Clarity should always override consistency, and the guides are flexible when necessary.
+To have parity between inside and center aligned strokes with a **1.5px** weight, the border radius options are:
+
+| **Stroke aligned inside** | **Stroke aligned center** |  **Result** |
+| ------ | ------ | ------ |
+| 0px | 0px | <img src="/img/icons-0-inside.svg" alt="0 border radius example" role="img" /> |
+| 1px | 0.25px |  <img src="/img/icons-1-inside.svg" alt="1 pixel border radius example" role="img" /> |
+| 2px (default) | 1.25px |  <img src="/img/icons-2-inside.svg" alt="2 pixel border radius example" role="img" /> |
+| 3px | 2.25px |  <img src="/img/icons-3-inside.svg" alt="3 pixel border radius example" role="img" /> |
+
+Clarity should always override consistency, and the guides are flexible when necessary to best represent the metaphor or parts of it.
 
 <figure class="figure" role="figure" aria-label="Border radius options, 2px is default">
   <img class="figure-img" src="/img/icons-border-radius.svg" alt="Icons with 0px, 1px, 2px, 4px, 6px, and 100% border radius options" role="img" />
@@ -146,13 +165,13 @@ The default border radius is **2px**, with **0px**, **1px**, or multiples of **2
   <div class="col col-50">
     <figure class="figure" role="figure" aria-label="A combination of 2px and 4px border radius helps the elements fit together better.">
       <img class="figure-img" src="/img/icons-border-radius-example.svg" alt="Icon with 2px and 4px border radius" role="img" />
-      <figcaption class="figure-caption">A combination of 2px and 4px border radius helps the elements fit together better.</figcaption>
+      <figcaption class="figure-caption">A combination of 1px and 2px border radius helps the elements fit together better.</figcaption>
     </figure>
   </div>
   <div class="col col-50">
     <figure class="figure" role="figure" aria-label="A combination of 0px and 4px best represents the subject matter.">
       <img class="figure-img" src="/img/icons-border-radius-alternates.svg" alt="Icon with 0px and 4px border radius" role="img" />
-      <figcaption class="figure-caption">A combination of 0px and 4px best represents the subject matter.</figcaption>
+      <figcaption class="figure-caption">A combination of 0px and 3px best represents the subject matter.</figcaption>
     </figure>
   </div>
   <div class="col col-50">
@@ -173,20 +192,10 @@ The default border radius is **2px**, with **0px**, **1px**, or multiples of **2
 
 Use increments of **15º** to achieve consistency throughout the icon set. Angles can be combined in an icon to create more dynamic shapes and movement, while remaining consistent as a whole.
 
-<div class="row">
-  <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="15º angle increments">
-      <img class="figure-img" src="/img/icons-angles.svg" alt="Angle settings" role="img" />
-      <figcaption class="figure-caption">15º angle increments</figcaption>
-    </figure>
-  </div>
-  <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="Icon with multiple angles">
-      <img class="figure-img" src="/img/icons-angles-example.svg" alt="Icon with multiple angles" role="img" />
-      <figcaption class="figure-caption">Icon with multiple angles</figcaption>
-    </figure>
-  </div>
-</div>
+<figure class="figure" role="figure" aria-label="15º angle increments">
+  <img class="figure-img" src="/img/icons-angles.svg" alt="Angle settings" role="img" />
+  <figcaption class="figure-caption">15º angle increments</figcaption>
+</figure>
 
 ## Shape
 
@@ -201,10 +210,6 @@ Design most icons in 2D. Depth and perspective should only be used when it’s a
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon with no depth"><img class="figure-img" src="/img/icons-depth-do.svg" alt="2D icon" role="img" /><figcaption class="figure-caption">Icon with no depth</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with unnecessary depth"><img class="figure-img" src="/img/icons-depth-dont.svg" alt="3D icon" role="img" /><figcaption class="figure-caption">Icon with unnecessary depth</figcaption></figure> |
-
-| **Do** | **Don’t** |
-| --- | --- |
 | <figure class="figure" role="figure" aria-label="Icon with depth clarifies concept"><img class="figure-img" src="/img/icons-depth-do-2.svg" alt="3D box icon" role="img" /><figcaption class="figure-caption">Icon with depth clarifies concept</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with no depth is too vague"><img class="figure-img" src="/img/icons-depth-dont-2.svg" alt="Square icon" role="img" /><figcaption class="figure-caption">Icon with no depth is too vague</figcaption></figure> |
 
 Simplify icons for clarity and legibility, avoiding embellishment or unnecessary details.
@@ -213,7 +218,7 @@ Simplify icons for clarity and legibility, avoiding embellishment or unnecessary
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Simplified icon"><img class="figure-img" src="/img/icons-shape-simple.svg" alt="Simple house icon" role="img" /><figcaption class="figure-caption">Simplified icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Overly complex icon"><img class="figure-img" src="/img/icons-shape-complex.svg" alt="Complex house icon" role="img" /><figcaption class="figure-caption">Overly complex icon</figcaption></figure> |
 
-Close counters that are less than `1px` to avoid distracting artifacts.
+Remove or close counters that are less than `1px` to avoid distracting artifacts.
 
 | **Do** | **Don’t** |
 | --- | --- |
@@ -248,7 +253,7 @@ Don’t use one icon to refer to multiple meanings. In some cases, there will st
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon represents “podcast”"><img class="figure-img" src="/img/icons-concept-dup.svg" alt="Podcast icon" role="img" /><figcaption class="figure-caption">Icon represents “podcast”</figcaption></figure> | <figure class="figure" role="figure" aria-label="Podcast icon used for “messages”"><img class="figure-img" src="/img/icons-concept-dup-dont.svg" alt="Podcast icon" role="img" /><figcaption class="figure-caption">Podcast icon used for “messages”</figcaption></figure> |
+| <figure class="figure" role="figure" aria-label="Icon represents “menu”"><img class="figure-img" src="/img/icons-concept-dup.svg" alt="Menu icon" role="img" /><figcaption class="figure-caption">Icon represents “menu”</figcaption></figure> | <figure class="figure" role="figure" aria-label="menu icon used for “list”"><img class="figure-img" src="/img/icons-concept-dup-dont.svg" alt="menu icon" role="img" /><figcaption class="figure-caption">Menu icon used for “list”</figcaption></figure> |
 
 Don’t use different icons to refer to one specific meaning.
 
@@ -268,23 +273,7 @@ Try to avoid potentially antiquated concepts, especially when something more mod
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Flat screen TV"><img class="figure-img" src="/img/icons-concept-new.svg" alt="Flat screen TV with play symbol" role="img" /><figcaption class="figure-caption">Flat screen TV</figcaption></figure> | <figure class="figure" role="figure" aria-label="Old tube TV"><img class="figure-img" src="/img/icons-concept-old.svg" alt="Tube TV with antenna" role="img" /><figcaption class="figure-caption">Old tube TV</figcaption></figure> |
-
-## Icons with other elements
-
-Todo: Add notes on aligning icons to other elements
-
-Todo: Add image examples
-
-Don’t frequently use the combination of an icon and a label. Use the combination only for the elements with high priority. For example, we use an icon + a label for the contextual navigation.
-
-| **Do** | **Don’t** |
-| --- | --- |
-| Todo: Add example | Todo: Add example |
-
-## Icon viewer
-
-You can view all of the current icons in GitLab at the following link: [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/)
+| <figure class="figure" role="figure" aria-label="Flat screen display"><img class="figure-img" src="/img/icons-concept-new.svg" alt="Flat screen display with play symbol" role="img" /><figcaption class="figure-caption">Flat screen display</figcaption></figure> | <figure class="figure" role="figure" aria-label="Old tube TV"><img class="figure-img" src="/img/icons-concept-old.svg" alt="Tube TV with antenna" role="img" /><figcaption class="figure-caption">Old tube TV</figcaption></figure> |
 
 ## Usage
 
@@ -292,8 +281,11 @@ Icons are used to stress visual weight for elements with a high priority or to e
 
 The level of visual weight from heavy to light is: **Icon + label > Icon > label.**
 
-Todo: Add live component block with code example
-
 ### Referencing icons in code
 
 For more information on how icons are referenced in the product, go to [GitLab Docs - Icons and SVG Illustrations](https://docs.gitlab.com/ee/development/fe_guide/icons.html).
+
+## Resources
+
+- You can view all of the current icons at the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) site.
+- View the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715/GitLab-Product-Icons) Figma file.
