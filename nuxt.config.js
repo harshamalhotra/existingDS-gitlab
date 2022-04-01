@@ -134,7 +134,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/gitlab-ui.js', ssr: false },
+    { src: '~/plugins/gitlab_ui.js', ssr: false },
     GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', ssr: false } : false,
   ].filter(Boolean),
 

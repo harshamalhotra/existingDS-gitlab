@@ -1,4 +1,4 @@
-import { Node } from './NavNode';
+import { Node } from './nav_node';
 
 export class NavTree {
   constructor(items, initialRoute) {
