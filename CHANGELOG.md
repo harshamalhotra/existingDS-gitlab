@@ -1,3 +1,18 @@
+# [2.116.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.115.0...v2.116.0) (2022-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([fe94ffd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fe94ffdb938f6625824c650c87c81cbf60e61c8c))
+* **Documentation:** Adding guidance that I learned from a failing pipeline ([7b5d995](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7b5d995398521e2544578292e58d3c843781c437))
+
+
+### Features
+
+* **Color:** Text and use updates ([c7ccf21](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c7ccf215008bd8f757199a9e430243071256bbef))
+* **FeatureManagement:** add guidelines for highlighting higher tier features ([3bf052c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3bf052c0467bd74b86da704bcdd826fbb3425491))
+* **Iconography:** Update icon guidelines ([c55bfd7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c55bfd74a251927e29718427ae9945f4aedb34ae))
+
 # [2.115.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.114.0...v2.115.0) (2022-03-28)
 
 
