@@ -33,7 +33,13 @@ There are two main ways to document objects, each with its purpose: the [concept
 
 ### Conceptual model
 
-The conceptual model is the visual representation of [object thinking](#object-thinking). It helps us visualize GitLab's objects and their relationships, and unlocks the benefits of object thinking. The result is an easy-to-navigate map of GitLab's object architecture. As an example, see the [merge request conceptual model diagram](/objects/merge-request#conceptual-model).
+The conceptual model is the visual representation of [object thinking](#object-thinking). It helps us visualize GitLab's objects and their relationships, and unlocks the benefits of object thinking. The result is an easy-to-navigate diagram of GitLab's object architecture. To better understand this visualization, see below the annotated example of a tweet or the GitLab-specific example of a [merge request](/objects/merge-request#conceptual-model).
+
+[View tweet conceptual model in Figma →](https://www.figma.com/file/J68bePHXIN5OPWqaFFY9ri/Conceptual-model?node-id=51%3A18)
+
+<div class="figma-embed" aria-label="Example conceptual model diagram connecting objects, along with their attributes and actions, to the primary tweet object. Each element is annotated with an explanation of the diagram's visual and written language." role="img">
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D5823%253A553" allowfullscreen></iframe>
+</div>
 
 For each object, we document its _attributes_, _actions_, and how it relates to other objects in the system. The resulting diagram is independent of how we represent the objects in the UI or implement them in code. It should be as simple and accessible as possible, even if people aren't familiar with these kinds of diagrams. Learn more about conceptual models in [“Object Modeling for Designers”](https://medium.com/@hpadkisson/object-modeling-for-designers-an-introduction-7871bdcf8baf).
 
