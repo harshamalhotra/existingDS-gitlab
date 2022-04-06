@@ -22,19 +22,19 @@ const GITLAB_UI_URL = (
 ).replace(/\/+$/, '');
 
 if (GOOGLE_ANALYTICS_ID) {
-  console.log(`GOOGLE_ANALYTICS_ID found and applied`);
+  console.log(`GOOGLE_ANALYTICS_ID found and applied`); // eslint-disable-line no-console
 } else {
-  console.log(`GOOGLE_ANALYTICS_ID disabled`);
+  console.log(`GOOGLE_ANALYTICS_ID disabled`); // eslint-disable-line no-console
 }
 
 const cspPolicies = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com/",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.cookielaw.org",
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
   `frame-src https://www.figma.com ${new URL(GITLAB_UI_URL).origin}`,
-  "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com",
+  "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com",
 ];
 
 module.exports = {
@@ -89,6 +89,29 @@ module.exports = {
         sizes: '16x16',
       },
     ],
+    script: [
+      {
+        src:
+          'https://cdn.cookielaw.org/consent/7f944245-c5cd-4eed-a90e-dd955adfdd08/OtAutoBlock.js',
+      },
+      {
+        src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
+        charset: 'UTF-8',
+        'data-domain-script': '7f944245-c5cd-4eed-a90e-dd955adfdd08',
+      },
+      {
+        hid: 'cookie-banner-callback',
+        innerHTML: `
+          function OptanonWrapper() {
+            if (typeof window.gtagOneTrustCallback == 'function') {
+              window.gtagOneTrustCallback();
+            }
+          }`,
+      },
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'cookie-banner-callback': ['innerHTML'],
+    },
     bodyAttrs: {
       class: 'ui-indigo',
       tabindex: '-1',

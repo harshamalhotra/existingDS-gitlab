@@ -89,7 +89,7 @@ export default {
           <span class="footer-link-divider"></span>
           <a href="https://about.gitlab.com/privacy/">Privacy policy</a>
           <span class="footer-link-divider"></span>
-          <a href="https://about.gitlab.com/privacy/cookies/">Cookie policy</a>
+          <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
         </div>
         <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
           Last updated at:&nbsp;<time :datetime="frontmatter.lastUpdatedAt">{{
