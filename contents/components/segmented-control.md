@@ -2,8 +2,8 @@
 name: Segmented control
 description: A segmented control allows users to choose one out of a range of available options. It is a button group of equal options where only one can be selected and active. There must always be one option active.
 deprecated: true
-vueComponents:
-  - GlSegmentedControl
+stories:
+  - base-segmented-control--default
 related:
   - button
   - checkbox
@@ -16,7 +16,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="segmented-control-whitespace"></example-display>
+<story-viewer story-name="base-segmented-control--default"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A135)
 
