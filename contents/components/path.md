@@ -1,19 +1,17 @@
 ---
 name: Path
 description: Paths are horizontal process flows composed of a series of stages.
-vueComponents:
-  - GlPath
+stories:
+  - base-path--default
 related:
   - tabs
 ---
 
 ## Examples
 
-[[Example:path-basic]]
+[[Story:base-path--default]]
 
-[[Example:path-with-metric]]
-
-[[Example:path-full]]
+[[Story:base-path--all-options]]
 
 Todo: Add to Pajamas UI Kit.
 
