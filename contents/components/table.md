@@ -1,8 +1,8 @@
 ---
 name: Table
 description: Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
-vueComponents:
-  - GlTable
+stories:
+  - base-table-table--default
 related:
   - card
   - list
@@ -16,7 +16,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="table-basic"></example-display>
+<story-viewer story-name="base-table-table--default"></story-viewer>
 
 <todo>Add column sorting example.</todo>
 
