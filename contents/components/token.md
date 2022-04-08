@@ -1,8 +1,8 @@
 ---
 name: Token
 description: A token represents a keyword used to add or filter objects.
-vueComponents:
-  - GlToken
+stories:
+  - base-token--default
 related:
   - filter
   - badge
@@ -11,11 +11,11 @@ related:
 
 ## Examples
 
-[[Example:token-basic]]
+[[Story:base-token--default]]
 
-[[Example:token-view-only]]
+[[Story:base-token--view-only]]
 
-[[Example:token-with-avatar]]
+[[Story:base-token--with-avatar]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A141)
 
