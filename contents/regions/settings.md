@@ -8,7 +8,7 @@ related:
   - /product-foundations/saving-and-feedback
 ---
 
-[Settings](/content/terminology#settings-%26-configuration) is an area in the product to allow users to configure how their instance should behave.
+[Settings](/content/terminology#settings-%26-configuration) is an area in the product that allows users to configure how their instance should behave.
 
 There are several areas within GitLab to manage settings:
 
@@ -17,25 +17,22 @@ There are several areas within GitLab to manage settings:
 - Project or Group settings
 - Feature settings
 
+Settings visibility and access depend on the [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) users have in a particular GitLab instance, group, or project.
+
+- **User settings:** Preferences that you have an ownership of as an individual user. Accessible via the top navigation, under Profile > Preferences. Example setting: Changing how the date and time are displayed.
+- **Group settings:** Settings for group features, or settings that apply to projects within a group. Group settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/regions/navigation#left-sidebar). Example setting: Configuring an integration that all projects in the group will inherit.
+- **Project settings:** Settings for project features. Project settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/regions/navigation#left-sidebar). Example setting: Enabling protected branches.
+
 ## Usage
 
-### Placement of settings options
+### Placement of settings
 
-Settings can be accessed through the [top menu](/regions/navigation#top-menu), [left sidebar](/regions/navigation#left-sidebar), or contextual options on feature pages.
+When considering where to place a setting within the product, consider the following:
 
-### Linking to settings from a feature page
+- **Access:** Which [persona](https://about.gitlab.com/handbook/product/personas/) performs the JTBD related to the setting? What [role](https://docs.gitlab.com/ee/user/permissions.html) or permission does that persona have?
+- **Flexibility and control:** At what namespace level (for example, admin, group, or project) should the setting be available? Should the setting cascade down to children namespaces? Should there be a way to override a setting set at a parent namespace?
 
-Consider making configuration options more discoverable to users by linking to settings from the feature page.
-
-- Use an icon-only [button](/components/button) with the [settings icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=settings) that, when hovered, shows a [tooltip](/components/tooltip) with the text `Configure in settings`.
-
-<figure class="figure" role="figure" aria-label="Settings button with tooltip on hover">
-  <img class="figure-img" src="/img/settings-hover.svg" alt="Settings button with tooltip on hover" role="img" />
-  <figcaption class="figure-caption">Settings button with tooltip on hover</figcaption>
-</figure>
-
-- Place it at the page-level, in the top right corner of the page, below the breadcrumbs. This sets the expectation that the settings apply to the page as a whole.
-- Navigate to the specific configuration section of that page in the settings area. Doing so makes the result of clicking the button predictable and prevents users from needing to navigate away from their task. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section of settings.
+It should be clear when settings cascade, at which level the setting is set at, and when they can be overridden.
 
 ### Grouping
 
@@ -57,6 +54,20 @@ To keep the experience of settings consistent, avoid using a combination of manu
 
 - Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#in-page) when data is saved asynchronously.
 - Use a [toast](/components/toast) for success messages that provide immediate confirmation of an action (for example, saving).
+
+### Linking to settings from a feature page
+
+Consider making configuration options more discoverable to users by linking to settings from the feature page.
+
+- Use an icon-only [button](/components/button) with the [settings icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=settings) that, when hovered, shows a [tooltip](/components/tooltip) with the text `Configure in settings`.
+
+<figure class="figure" role="figure" aria-label="Settings button with tooltip on hover">
+  <img class="figure-img" src="/img/settings-hover.svg" alt="Settings button with tooltip on hover" role="img" />
+  <figcaption class="figure-caption">Settings button with tooltip on hover</figcaption>
+</figure>
+
+- Place it at the page-level, in the top right corner of the page, below the breadcrumbs. This sets the expectation that the settings apply to the page as a whole.
+- Navigate to the specific configuration section of that page in the settings area. Doing so makes the result of clicking the button predictable and prevents users from needing to navigate away from their task. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section of settings.
 
 ## Design specifications
 
