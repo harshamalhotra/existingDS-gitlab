@@ -1,8 +1,8 @@
 ---
 name: Popover
 description: Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal.
-vueComponents:
-  - GlPopover
+stories:
+  - base-popover--default
 related:
   - tooltip
   - modal
@@ -11,7 +11,7 @@ related:
 
 ## Examples
 
-[[Example:popover-basic]]
+[[Story:base-popover--default]]
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A131)
 
