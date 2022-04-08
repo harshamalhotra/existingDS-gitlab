@@ -1,7 +1,7 @@
 ---
 name: Empty States
-vueComponents:
-  - GlEmptyState
+stories:
+  - regions-empty-state--default
 related:
   - banner
   - button
@@ -106,7 +106,7 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 ### Example
 
-[[Example:empty-state-basic]]
+[[Story:regions-empty-state--default]]
 
 ## Implementation
 
