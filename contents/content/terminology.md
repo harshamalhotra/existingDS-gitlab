@@ -97,7 +97,7 @@ Destruction buttons should be clear and always say what they are destroying.
 Buttons that copy content to the clipboard don’t need the “to clipboard” part.
 - **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
 
-Todo: Add comprehensive list of terminology Do/Don’t
+<todo>Add comprehensive list of terminology Do/Don’t</todo>
 
 ## Frequently confused words
 

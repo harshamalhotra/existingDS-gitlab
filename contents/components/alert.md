@@ -14,7 +14,7 @@ related:
 
 ## Examples
 
-[[Story:base-alert--variants]]
+<story-viewer story-name="base-alert--variants"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A278)
 

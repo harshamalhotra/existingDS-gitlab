@@ -10,7 +10,7 @@ related:
 
 ## Examples
 
-[[Story:base-breadcrumb--default]]
+<story-viewer story-name="base-breadcrumb--default"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
 

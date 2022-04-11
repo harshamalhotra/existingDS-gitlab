@@ -11,7 +11,7 @@ Error messages are an indication of system status. They let users know that they
 
 Error messages can be persistent, dismissible, or temporary. In order to be effective, error messages should be concise, specific, and consistent.
 
-Todo: Add guidelines on when an error message should be persistent, dismissible, or temporary.
+<todo>Add guidelines on when an error message should be persistent, dismissible, or temporary.</todo>
 
 ## Error message guidelines
 

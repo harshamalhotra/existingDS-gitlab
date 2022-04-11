@@ -12,23 +12,23 @@ related:
 
 ## Examples
 
-[[Example:filtered-search]]
+<example-display  example-name="filtered-search"></example-display>
 
-Todo: Add Filter to Pajamas UI Kit.
+<todo>Add Filter to Pajamas UI Kit.</todo>
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
 ### When to use
 
-Todo: Add when to use.
+<todo>Add when to use.</todo>
 
 ### When not to use
 
-Todo: Add when not to use.
+<todo>Add when not to use.</todo>
 
 ### Appearance
 
@@ -68,4 +68,4 @@ Todo: Add when not to use.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

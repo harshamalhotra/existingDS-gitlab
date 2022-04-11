@@ -18,7 +18,7 @@ related:
 
 ## Examples
 
-[[Example:drawer]]
+<example-display  example-name="drawer"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=48150%3A59274)
 

@@ -60,7 +60,7 @@ An optional maximum height can be applied to the nested content when level 1 is 
   <figcaption class="figure-caption">Overflow example with scrim overlay to indicate scrolling for the combined levels 2 and 3</figcaption>
 </figure>
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 1. A maximum height is set for the expanded level 2 and level 3 area with overflow scrolling set to `auto`.
 1. A scrim visual indicator overlays the bottom of the scroll area when the content height exceeds the maximum height. The scrim is hidden once the end of the scrolling content is reached.
@@ -82,7 +82,7 @@ The container wraps one or more widgets.
   <figcaption class="figure-caption">The container that groups merge request widgets with a slightly rounded border radius and light border</figcaption>
 </figure>
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ### Level 1
 
@@ -98,7 +98,7 @@ Level 1 is the parent level of the widget and has the primary status in text and
   <figcaption class="figure-caption">The default layout of level 1 in a widget</figcaption>
 </figure>
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ### Level 2
 
@@ -119,7 +119,7 @@ Level 2 has a status that may be the same or different from the parent, as well 
   <figcaption class="figure-caption">The default layout of level 2 in a widget</figcaption>
 </figure>
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ### Level 3
 
@@ -136,7 +136,7 @@ Level 3 has a status that may be the same or different from the level 2 parent. 
   <figcaption class="figure-caption">The default layout of level 3 in a widget</figcaption>
 </figure>
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ## Content sections
 
@@ -188,7 +188,7 @@ Since everything in a widget is technically content, identifying a specific _sub
 1. **Text** - identifies the item, what it means for a user, and how to remedy problems. It can contain inline links and formatting to emphasize text.
 1. **Meta** - supplemental text, links, and badges that add meaningful context to an item. Text can include formatting for emphasis.
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ### Actions
 
@@ -209,7 +209,7 @@ Actions available for level 1 and level 2 and always use the tertiary confirm or
 1. **Tertiary button** - actions that can be taken on or from the widget, like “Manage licenses” or “View report”.
 1. **Expand/collapse button** - toggles the visibility of level 2 and level 3 items when present. On hover/focus a [tooltip](/components/tooltip/) reads “Show {widget} details” when collapsed and “Hide {widget} details” when expanded.
 
-Todo: Replace static visual with live example
+<todo>Replace static visual with live example</todo>
 
 ## Accessibility
 

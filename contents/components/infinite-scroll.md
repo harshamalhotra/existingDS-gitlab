@@ -12,17 +12,17 @@ related:
 
 ## Examples
 
-[[Example:infinite-scroll-basic]]
+<example-display  example-name="infinite-scroll-basic"></example-display>
 
-[[Example:infinite-scroll-with-finite-total-items]]
+<example-display  example-name="infinite-scroll-with-finite-total-items"></example-display>
 
-[[Example:infinite-scroll-small-fetched-items]]
+<example-display  example-name="infinite-scroll-small-fetched-items"></example-display>
 
-[[Example:infinite-scroll-large-fetched-items]]
+<example-display  example-name="infinite-scroll-large-fetched-items"></example-display>
 
-[[Example:infinite-scroll-all-items]]
+<example-display  example-name="infinite-scroll-all-items"></example-display>
 
-Todo: Add infinite scroll to Pajamas UI Kit
+<todo>Add infinite scroll to Pajamas UI Kit</todo>
 
 ## Structure
 
@@ -60,4 +60,4 @@ Always display a counter that details how many items have already loaded and how
 
 ### Accessibility
 
-Todo: Add accessibility guidelines
+<todo>Add accessibility guidelines</todo>

@@ -76,10 +76,10 @@ vueComponents:
 
 ## Using examples in docs
 
-Component examples can easily be included in docs pages thanks to the `[[Example:<component_id>]]`
-shortcode. Simply replace `<component_id>` with the ID that's in the `index.js` entry file. For
+Component examples can easily be included in docs pages thanks to the `<example-display example-name="<component_id>"></example-display>`
+component. Simply replace `<component_id>` with the ID that's in the `index.js` entry file. For
 example, with the code snippet above, the ID is `my-component-default`, so you would include the
-example with `[[Example:my-component-default]]`.
+example with `<example-display example-name="my-component-default"></example-display>`.
 
 ## FAQ
 

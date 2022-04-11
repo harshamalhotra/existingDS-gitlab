@@ -7,23 +7,23 @@ related:
 
 ## Examples
 
-Todo: Add example.
+<todo>Add example.</todo>
 
-Todo: Add to Pajamas UI kit.
+<todo>Add to Pajamas UI kit.</todo>
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
 ### When to use
 
-Todo: Add when to use.
+<todo>Add when to use.</todo>
 
 ### When not to use
 
-Todo: Add when not to use.
+<todo>Add when not to use.</todo>
 
 ### Behavior
 
@@ -45,4 +45,4 @@ Todo: Add when not to use.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

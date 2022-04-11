@@ -8,13 +8,13 @@ related:
 
 ## Examples
 
-Todo: Add updated examples once complete in GitLab UI.
+<todo>Add updated examples once complete in GitLab UI.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A14)
 
 ## Structure
 
-Todo: Add structure visual and element list.
+<todo>Add structure visual and element list.</todo>
 
 ## Guidelines
 

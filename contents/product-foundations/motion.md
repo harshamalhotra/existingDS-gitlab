@@ -8,7 +8,7 @@ Motion is a tool to help convey important relationships, changes, or transitions
 
 Easing specifies the rate of change of a parameter over time. Adding an easing curve makes the motion feel more natural, cohesive, and connected.
 
-Todo: Define easing standards
+<todo>Define easing standards</todo>
 
 ## Timings
 
@@ -28,37 +28,37 @@ Micro animations cover smaller-scale objects or surface areas such as icons, col
 
 Interactive elements (links, buttons, and so on) should have a hover state. A subtle animation for this transition adds a polished feel. We use a 100ms linear transition for a color hover effect.
 
-Todo: Add hover example
+<todo>Add hover example</todo>
 
 ### Quick update
 
 When information is updating in place, a quick, subtle animation is needed. The previous content should cut out, and the new content should have a 200ms linear fade in.
 
-Todo: Add quick update example
+<todo>Add quick update example</todo>
 
 ### Skeleton loading
 
 Skeleton loaders use a horizontally pulsing animation with a linear 1s timing. Learn more about [skeleton loaders](/components/skeleton-loader).
 
-Todo: Add skeleton loader transition example
+<todo>Add skeleton loader transition example</todo>
 
 ### Moving transitions
 
 When elements move on-screen, there should be a quick animation so it is clear to users what moved where. These types of animations use a 200 milliseconds transition time.
 
-Todo: Add modal appearance example
+<todo>Add modal appearance example</todo>
 
 #### Shifting elements
 
 An example of a moving transition is when elements have to rearrange when you [drag an element](/foundations/interactions#drag-and-drop).
 
-Todo: Add drag animation example
+<todo>Add drag animation example</todo>
 
 #### Page auto-scroll
 
 To keep an active element visible, a page auto-scroll transition can be used. An example of this includes clicking an issue board card that is out of the screen.
 
-Todo: Add auto-scroll example (issue board cards)
+<todo>Add auto-scroll example (issue board cards)</todo>
 
 ## Resources
 

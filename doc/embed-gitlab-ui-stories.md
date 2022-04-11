@@ -18,13 +18,13 @@ technical documentation. Stories support two view modes than we can both leverag
 
 ## Embedding component examples in a docs page
 
-To include examples with the `story` view mode, use the `[[Story:]]` short code anywhere in a
+To include examples with the `story` view mode, use the `story-viewer` component anywhere in a
 component's Markdown docs file.
 
-The shortcode requires a story ID to be passed after the semi-colon:
+The component requires a story ID to be passed as the `story-name` prop:
 
 ```markdown
-[[Story:base-alert--default]]
+<story-viewer story-name="base-alert--default"></story-viewer>
 ```
 
 To find a story's ID, open it in GitLab UI's Storybook. The ID is whatever is after `/story/`
@@ -39,11 +39,10 @@ The story ID is `base-alert--default`.
 ### Custom title
 
 Stories included in Pajamas docs pages are rendered in a card where the title defaults to the story
-ID. To use a custom title, append a vertical bar (`|`) to the story ID in the shortcode and add your
-title after it:
+ID. To use a custom title, pass it as the `title` prop:
 
 ```markdown
-[[Story:base-alert--default|My custom title]]
+<story-viewer story-name="base-alert--default" title="My custom title"></story-viewer>
 ```
 
 ## Embedding GitLab UI docs pages

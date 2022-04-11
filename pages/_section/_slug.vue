@@ -8,6 +8,15 @@ export default {
   editThisPage: {
     resolve: ({ route }) => `contents${route.path.replace(/\/+$/, '')}.md`,
   },
+  async asyncData({ $content, route }) {
+    const path = route.path.replace(/^\/+/, '').replace(/\/(code|contribute)$/, '');
+    const page = await $content(path)
+      .fetch()
+      .catch((err) => {
+        console.log(`Could not load content for ${path}`, err);
+      });
+    return { page };
+  },
   computed: {
     ...mapState(['frontmatter']),
   },
@@ -17,7 +26,7 @@ export default {
 <template>
   <div class="content limited m-t-7 m-b-8">
     <no-ssr>
-      <component-info :frontmatter-info="frontmatter" />
+      <component-info :frontmatter-info="frontmatter" :page="page" />
     </no-ssr>
   </div>
 </template>

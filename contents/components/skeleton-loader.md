@@ -9,9 +9,9 @@ related:
 
 ## Examples
 
-[[Example:default-skeleton-basic]]
+<example-display  example-name="default-skeleton-basic"></example-display>
 
-[[Example:issue-card-skeleton-basic]]
+<example-display  example-name="issue-card-skeleton-basic"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=2844%3A0)
 

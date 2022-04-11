@@ -8,7 +8,7 @@ related:
 
 ## Examples
 
-Todo: Add code example.
+<todo>Add code example.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A132)
 
@@ -37,7 +37,7 @@ Todo: Add code example.
 - Small
 - Medium
 
-Todo: Add size use cases.
+<todo>Add size use cases.</todo>
 
 ### Behavior
 

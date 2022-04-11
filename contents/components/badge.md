@@ -13,11 +13,11 @@ related:
 
 ## Examples
 
-[[Story:base-badge--variants|Badge variants]]
+<story-viewer story-name="base-badge--variants" title="Badge variants"></story-viewer>
 
-[[Story:base-badge--actionable|Actionable badges]]
+<story-viewer story-name="base-badge--actionable" title="Actionable badges"></story-viewer>
 
-[[Story:base-badge--badge-icon|With icons]]
+<story-viewer story-name="base-badge--badge-icon" title="With icons"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A3)
 

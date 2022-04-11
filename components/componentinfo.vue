@@ -35,6 +35,11 @@ export default {
       type: Object,
       required: true,
     },
+    page: {
+      type: Object,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {
@@ -48,7 +53,7 @@ export default {
   },
   head() {
     return {
-      title: this.frontmatterInfo.attributes.name,
+      title: this.page.name,
     };
   },
   computed: {
@@ -60,18 +65,15 @@ export default {
       return componentNameToLabelMap[slug] || slug;
     },
     showTabs() {
-      return Boolean(
-        this.vueComponents?.length || this.frontmatterInfo?.attributes?.stories?.length,
-      );
+      return Boolean(this.vueComponents?.length || this.page?.stories?.length);
     },
   },
   created() {
-    this.componentAttributes = this.frontmatterInfo.attributes;
+    this.componentAttributes = this.page;
 
-    this.vueComponents = this.frontmatterInfo.attributes.vueComponents;
+    this.vueComponents = this.page.vueComponents;
 
     this.componentBody = this.frontmatterInfo.body;
-
     if (this.vueComponents) {
       this.vueComponents.forEach((vueComponentName) => {
         let snakeName = vueComponentName.replace(/([A-Z])/g, ($1) => `_${$1.toLowerCase()}`);
@@ -145,8 +147,10 @@ export default {
       <div v-if="showTabs">
         <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles gl-mb-5" lazy>
           <gl-tab title="Usage" active class="p-t-3 js-gl-tab" @click.prevent="activateTab()">
-            <md-display :prerendered-md="componentBody" />
-            <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
+            <div v-if="page" class="component md typography">
+              <nuxt-content :document="page" />
+            </div>
+            <related-pages :related="page.related" class="m-t-6" />
           </gl-tab>
           <gl-tab
             title="Implementation"
@@ -155,11 +159,7 @@ export default {
             @click.prevent="activateTab('code')"
           >
             <div class="gl-pt-0">
-              <div
-                v-for="story in frontmatterInfo.attributes.stories"
-                :key="story"
-                class="container"
-              >
+              <div v-for="story in page.stories" :key="story" class="container">
                 <story-viewer :story-name="story" view-mode="docs" />
               </div>
               <template v-for="vueComponentName in vueComponents">
@@ -216,8 +216,8 @@ export default {
         </gl-tabs>
       </div>
       <div v-else class="md typography">
-        <md-display :prerendered-md="componentBody" />
-        <related-pages :related="frontmatterInfo.attributes.related" class="m-t-6" />
+        <nuxt-content :document="page" />
+        <related-pages :related="page.related" class="m-t-6" />
       </div>
     </div>
     <div v-else>Loading ...</div>

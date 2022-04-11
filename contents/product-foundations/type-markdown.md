@@ -11,7 +11,7 @@ Each markdown scale utilizes GitLab Flavored Markdown (GFM) and is used to view 
 
 ## Blockquote
 
-Todo: Add blockquote
+<todo>Add blockquote</todo>
 
 ## Code
 
@@ -31,88 +31,88 @@ Highlight inline text as `<code>`. For example, a short line of code, a CSS clas
 
 ### Inline diffs
 
-Todo: Add inline diffs
+<todo>Add inline diffs</todo>
 
 ### Syntax highlight code block
 
-Todo: Add syntax highlight code block
+<todo>Add syntax highlight code block</todo>
 
 ## Collapsible content
 
-Todo: Add collapsible content
+<todo>Add collapsible content</todo>
 
 ## Color chips
 
-Todo: Add color chips
+<todo>Add color chips</todo>
 
 ## Diagrams (mermaid)
 
-Todo: Add mermaid diagrams
+<todo>Add mermaid diagrams</todo>
 
 ## Emoji
 
-Todo: Add emoji
+<todo>Add emoji</todo>
 
 ## Footnotes
 
-Todo: Add footnotes
+<todo>Add footnotes</todo>
 
 ## Horizontal rule
 
-Todo: Add horizontal rule
+<todo>Add horizontal rule</todo>
 
 ## Labels
 
-Todo: Add labels
+<todo>Add labels</todo>
 
 ## Lists
 
 ### Unordered list
 
-Todo: Add unordered lists
+<todo>Add unordered lists</todo>
 
 ### Ordered list
 
-Todo: Add ordered lists
+<todo>Add ordered lists</todo>
 
 ### Table
 
-Todo: Add tables
+<todo>Add tables</todo>
 
 ### Task list
 
-Todo: Add task lists
+<todo>Add task lists</todo>
 
 ### Definition list
 
-Todo: Add definition lists
+<todo>Add definition lists</todo>
 
 ## Math (KaTeX)
 
-Todo: Add KaTeX math
+<todo>Add KaTeX math</todo>
 
 ## Media
 
 ### Images
 
-Todo: Add images
+<todo>Add images</todo>
 
 ### Embedded video
 
-Todo: Add embedded video
+<todo>Add embedded video</todo>
 
 ### Embedded audio
 
-Todo: Add embedded audio
+<todo>Add embedded audio</todo>
 
 ## Table of contents
 
-Todo: Add horizontal rule
+<todo>Add horizontal rule</todo>
 
 ## Super/subscript
 
-Todo: Add super/subscript
+<todo>Add super/subscript</todo>
 
 ## User/group mentions
 
-Todo: Add user/group mentions
+<todo>Add user/group mentions</todo>
