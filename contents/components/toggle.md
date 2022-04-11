@@ -11,11 +11,11 @@ related:
 
 ## Examples
 
-[[Example:toggle-default]]
+<example-display  example-name="toggle-default"></example-display>
 
-[[Example:toggle-disabled]]
+<example-display  example-name="toggle-disabled"></example-display>
 
-[[Example:toggle-loading]]
+<example-display  example-name="toggle-loading"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140)
 

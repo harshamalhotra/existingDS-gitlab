@@ -14,27 +14,27 @@ related:
 
 ## Examples
 
-[[Example:search-box-by-type-loading]]
+<example-display  example-name="search-box-by-type-loading"></example-display>
 
-[[Example:search-box-by-click-v-model]]
+<example-display  example-name="search-box-by-click-v-model"></example-display>
 
-[[Example:search-box-by-click-with-history]]
+<example-display  example-name="search-box-by-click-with-history"></example-display>
 
-Todo: Add to Pajamas UI Kit.
+<todo>Add to Pajamas UI Kit.</todo>
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
 ### When to use
 
-Todo: Add when to use.
+<todo>Add when to use.</todo>
 
 ### When not to use
 
-Todo: Add when not to use.
+<todo>Add when not to use.</todo>
 
 ### Variants
 

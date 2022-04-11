@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-[[Story:base-banner--introduction]]
+<story-viewer story-name="base-banner--introduction"></story-viewer>
 
-[[Story:base-banner--default]]
+<story-viewer story-name="base-banner--default"></story-viewer>
 
-[[Story:base-banner--no-image|Promotion]]
+<story-viewer story-name="base-banner--no-image" title="Promotion"></story-viewer>
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4845%3A7873)
 

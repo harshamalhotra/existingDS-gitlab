@@ -10,11 +10,11 @@ related:
 
 ## Examples
 
-[[Story:base-tabs--default]]
+<story-viewer story-name="base-tabs--default"></story-viewer>
 
-[[Story:base-tabs--justified-tabs]]
+<story-viewer story-name="base-tabs--justified-tabs"></story-viewer>
 
-[[Story:base-tabs--with-counter-badges]]
+<story-viewer story-name="base-tabs--with-counter-badges"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A138)
 

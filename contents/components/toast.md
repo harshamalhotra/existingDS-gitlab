@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-Todo: Add toast examples.
+<todo>Add toast examples.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A139)
 
@@ -61,4 +61,4 @@ Todo: Add toast examples.
 
 ### Accessibility
 
-Todo: Add accessibility requirements and considerations.
+<todo>Add accessibility requirements and considerations.</todo>

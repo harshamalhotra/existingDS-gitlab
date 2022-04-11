@@ -10,11 +10,11 @@ related:
 
 ## Examples
 
-[[Example:basic-date-picker]]
+<example-display  example-name="basic-date-picker"></example-display>
 
-[[Example:basic-daterange-picker]]
+<example-display  example-name="basic-daterange-picker"></example-display>
 
-Todo: Add example date range limit indicator.
+<todo>Add example date range limit indicator.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A13)
 
@@ -30,7 +30,7 @@ Todo: Add example date range limit indicator.
 1. **Clear button**: Clears the text field content.
 1. **Calendar dropdown**: Dropdown showing the month.
 
-Todo: Update structure with date range limit indicator.
+<todo>Update structure with date range limit indicator.</todo>
 
 ## Guidelines
 
@@ -66,7 +66,7 @@ Todo: Update structure with date range limit indicator.
 
 ### Accessibility
 
-Todo: Add accessibility notes.
+<todo>Add accessibility notes.</todo>
 
 ## Reference
 

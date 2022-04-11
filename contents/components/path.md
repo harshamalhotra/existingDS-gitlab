@@ -9,15 +9,15 @@ related:
 
 ## Examples
 
-[[Story:base-path--default]]
+<story-viewer story-name="base-path--default"></story-viewer>
 
-[[Story:base-path--all-options]]
+<story-viewer story-name="base-path--all-options"></story-viewer>
 
-Todo: Add to Pajamas UI Kit.
+<todo>Add to Pajamas UI Kit.</todo>
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
@@ -27,7 +27,7 @@ Todo: Add structure image.
 
 ### When not to use
 
-Todo: Add when not to use.
+<todo>Add when not to use.</todo>
 
 ### Variants
 

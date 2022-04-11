@@ -48,7 +48,7 @@ When choosing a chart type, first consider your data set. If you are hoping to s
 
 While most charts only have a single x and y axis, two y-axis charts may occasionally be used; for example, when showing data sets at different orders of magnitude (for example, issues closed, 10; issues opened, 10; total issues 1,000). In this instance, the second y-axis shows how the two data sets are related while ensuring the visualisation at both orders of magnitude is still usable and parsable.
 
-Todo: Add example
+<todo>Add example</todo>
 
 ## Column charts
 
@@ -56,13 +56,13 @@ Column charts are the default chart type, and they are used to compare values ac
 
 The bars on a column chart are presented vertically rather than horizontally, and they can be stacked. 
 
-[[Example:column-basic]]
+<example-display  example-name="column-basic"></example-display>
 
 ### Grouped and stacked column charts
 
 It may sometimes be necessary to stack values in a column or to have groups of columns within your chart, for example when there are two dimensions of data (one nested within another) moving across time. Stacked columns can be either symmetric or asymmetric, meaning the number of stacks may or may not be equal across groups.
 
-[[Example:stacked-column-basic]]
+<example-display  example-name="stacked-column-basic"></example-display>
 
 #### Color in stacked and grouped charts
 
@@ -78,9 +78,9 @@ When there are three dimensions of data you want to display, it's also possible 
 - Open and closed MRs in a separate, stacked column.
 - Both columns of data across time (on the x-axis).
 
-*Note: Since a grouped and stacked chart already contains a lot of information, avoid using more than 5 values in each dimension.*
+<note>Since a grouped and stacked chart already contains a lot of information, avoid using more than 5 values in each dimension.</note>
 
-Todo: Add example
+<todo>Add example</todo>
 
 ## Line charts
 
@@ -88,7 +88,7 @@ Line charts are used to display continuous data.
 
 They are useful when you are looking to identify trends or to see larger patterns in your data, and to see how your data changes over time.
 
-[[Example:line-basic]]
+<example-display  example-name="line-basic"></example-display>
 
 ## Area charts
 
@@ -96,31 +96,31 @@ Area charts are used to represent "[cumulated totals](http://www.vizwiz.com/2012
 
 In instances where you want to see both the overall trend and the percent contribution, it is preferable to use a line chart rather than an area chart. It can be very difficult for our eyes to correctly assess the width of areas and how it trends.
 
-[[Example:area-basic]]
+<example-display  example-name="area-basic"></example-display>
 
 ## Bar charts
 
 Bar charts are a variation of column charts, where the columns are horizontal rather than vertical. It can be used for the same purposes as column charts, which is to compare values across categories.
 
-[[Example:bar-basic]]
+<example-display  example-name="bar-basic"></example-display>
 
 ## Scatter charts
 
 Scatter charts give a sense of the distribution and relative size of values.
 
-[[Example:discrete-scatter-basic]]
+<example-display  example-name="discrete-scatter-basic"></example-display>
 
 ## Gauge charts
 
 Gauge charts highlight the current value within the range of possible values for the metric.
 
-[[Example:gauge-basic]]
+<example-display  example-name="gauge-basic"></example-display>
 
 ## Sparkline charts
 
 Sparkline charts give a quick indication of trend and a summary of the current value. They are particularly useful when space is limited.
 
-[[Example:sparkline-basic]]
+<example-display  example-name="sparkline-basic"></example-display>
 
 ## Interaction
 

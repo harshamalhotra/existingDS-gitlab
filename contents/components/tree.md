@@ -9,7 +9,7 @@ related:
 
 ## Examples
 
-Todo: Add tree example
+<todo>Add tree example</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A143)
 

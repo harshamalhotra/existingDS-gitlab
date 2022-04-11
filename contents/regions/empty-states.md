@@ -77,9 +77,9 @@ A `Higher tier feature` empty state serves as a placeholder when a certain featu
 
 - Specifications and actions should be determined by [the Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section). If implementing a solution for this empty state region, collaborate with the Growth Product Designer and Product Manager. 
 
-Todo: Add specifications for Higher Tier empty state region.
+<todo>Add specifications for Higher Tier empty state region.</todo>
 
-Todo: Add content for Higher Tier empty state region.
+<todo>Add content for Higher Tier empty state region.</todo>
 
 ### Empty search results
 
@@ -106,7 +106,7 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 ### Example
 
-[[Story:regions-empty-state--default]]
+<story-viewer story-name="regions-empty-state--default"></story-viewer>
 
 ## Implementation
 

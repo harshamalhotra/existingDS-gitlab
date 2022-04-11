@@ -16,13 +16,13 @@ related:
 
 ## Examples
 
-[[Example:segmented-control-whitespace]]
+<example-display  example-name="segmented-control-whitespace"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A135)
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
@@ -32,7 +32,7 @@ Todo: Add structure image.
 
 ### When not to use
 
-Todo: Add when not to use items.
+<todo>Add when not to use items.</todo>
 
 ### Appearance
 
@@ -57,4 +57,4 @@ Todo: Add when not to use items.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

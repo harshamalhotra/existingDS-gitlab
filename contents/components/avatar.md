@@ -11,13 +11,13 @@ related:
 
 ## Examples
 
-[[Story:base-avatar--image|Avatar image]]
+<story-viewer story-name="base-avatar--image" title="Avatar image"></story-viewer>
 
-[[Story:base-avatar-labeled--default|Labeled avatar]]
+<story-viewer story-name="base-avatar-labeled--default" title="Labeled avatar"></story-viewer>
 
-Todo: Add group demo
+<todo>Add group demo</todo>
 
-Todo: Add stack demo
+<todo>Add stack demo</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A2)
 

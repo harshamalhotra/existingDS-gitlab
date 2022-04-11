@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-[[Example:loading-icon-all-options]]
+<example-display  example-name="loading-icon-all-options"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=19944%3A0)
 

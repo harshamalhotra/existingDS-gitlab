@@ -4,7 +4,7 @@ name: Color
 
 ## Data visualization palette
 
-Note: View the [Foundations > Color](/product-foundations/colors) section for details about the UI, neutral, and theme palettes.
+<note>View the [Foundations > Color](/product-foundations/colors) section for details about the UI, neutral, and theme palettes.</note>
 
 Data visualization is critical content within GitLab. The presentation and interpretation of this content relies on visual nuance that is separate from the rest of the UI.
 
@@ -433,7 +433,7 @@ Sequential data uses steps within a single hue, and color lightness to indicate 
   <figcaption class="figure-caption">Default color sequence in a dark UI</figcaption>
 </figure>
 
-Todo: Include example of chart with sequential data
+<todo>Include example of chart with sequential data</todo>
 
 **Potential applications:** stacked bar charts, heat maps, choropleth maps, funnels, cycle diagrams, clusters, pyramids, etc.
 
@@ -465,9 +465,9 @@ Blue is always the default starting point, and `$data-viz-blue-500` is the base 
   <figcaption class="figure-caption">Chevron-skipping pattern in a dark UI</figcaption>
 </figure>
 
-Todo: Include example of chart with categorical data
+<todo>Include example of chart with categorical data</todo>
 
-Todo: Add a sequence generator
+<todo>Add a sequence generator</todo>
 
 **Potential applications:** bar charts, pie charts, line graphs, stacked area charts, etc.
 
@@ -494,7 +494,7 @@ There are two divergent options, choose the one that works best with the type of
   <figcaption class="figure-caption">Cool to warm, and cool divergent sequences in a dark UI</figcaption>
 </figure>
 
-Todo: Include example of chart with divergent data
+<todo>Include example of chart with divergent data</todo>
 
 **Potential applications:** butterfly charts, choropleth maps, sparklines, etc.
 
@@ -506,7 +506,7 @@ When representing a success status alone against the generic data, use `$data-vi
 
 If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types. 
 
-Todo: Include example of recommended color combinations
+<todo>Include example of recommended color combinations</todo>
 
 ## Accessibility
 

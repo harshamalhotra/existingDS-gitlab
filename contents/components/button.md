@@ -20,43 +20,43 @@ related:
 
 ## Examples
 
-[[Example:button-primary]]
+<example-display  example-name="button-primary"></example-display>
 
-[[Example:button-secondary]]
+<example-display  example-name="button-secondary"></example-display>
 
-[[Example:button-tertiary]]
+<example-display  example-name="button-tertiary"></example-display>
 
-[[Example:button-variants]]
+<example-display  example-name="button-variants"></example-display>
 
-[[Example:button-sizes]]
+<example-display  example-name="button-sizes"></example-display>
 
-[[Example:button-selected]]
+<example-display  example-name="button-selected"></example-display>
 
-[[Example:button-loading]]
+<example-display  example-name="button-loading"></example-display>
 
-Todo: Add live component block with example of loading icon button
+<todo>Add live component block with example of loading icon button</todo>
 
-[[Example:button-disabled]]
+<example-display  example-name="button-disabled"></example-display>
 
-[[Example:button-icon]]
+<example-display  example-name="button-icon"></example-display>
 
-[[Example:button-icon-and-text]]
+<example-display  example-name="button-icon-and-text"></example-display>
 
-[[Example:button-emoji]]
+<example-display  example-name="button-emoji"></example-display>
 
-[[Example:button-label]]
+<example-display  example-name="button-label"></example-display>
 
-[[Example:badge-button]]
+<example-display  example-name="badge-button"></example-display>
 
-[[Example:new-dropdown-default]]
+<example-display  example-name="new-dropdown-default"></example-display>
 
-[[Example:new-dropdown-with-icon]]
+<example-display  example-name="new-dropdown-with-icon"></example-display>
 
-[[Example:new-dropdown-split]]
+<example-display  example-name="new-dropdown-split"></example-display>
 
-[[Example:button-ellipsis]]
+<example-display  example-name="button-ellipsis"></example-display>
 
-[[Example:button-group-basic]]
+<example-display  example-name="button-group-basic"></example-display>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2956%3A3357)
 

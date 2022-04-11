@@ -67,7 +67,7 @@ Tables 1 and 2 also document conformance with Revised Section 508:
 - Chapter 5 – 501.1 Scope, 504.2 Content Creation or Editing
 - Chapter 6 – 602.3 Electronic Support Documentation
 
-Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are scoped for full pages, complete processes, and accessibility-supported ways of using technology as documented in the [WCAG 2.0 Conformance Requirements](https://www.w3.org/TR/WCAG20/#conformance-reqs).
+<note>When reporting on conformance with the WCAG 2.0 Success Criteria, they are scoped for full pages, complete processes, and accessibility-supported ways of using technology as documented in the [WCAG 2.0 Conformance Requirements](https://www.w3.org/TR/WCAG20/#conformance-reqs).</note>
 
 ### Table 1: Success Criteria, Level A
 

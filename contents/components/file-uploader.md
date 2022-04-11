@@ -6,7 +6,7 @@ docs: in-progress
 
 ## Examples
 
-Todo: Add examples.
+<todo>Add examples.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=8000%3A0)
 
@@ -36,7 +36,7 @@ Todo: Add examples.
 
 ### Variants
 
-Todo: Add file uploader variants.
+<todo>Add file uploader variants.</todo>
 
 ### Behavior
 
@@ -46,4 +46,4 @@ Todo: Add file uploader variants.
 
 ### Accessibility
 
-Todo: Add accessibility specs.
+<todo>Add accessibility specs.</todo>

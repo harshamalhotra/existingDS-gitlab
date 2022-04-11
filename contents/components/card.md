@@ -10,15 +10,15 @@ related:
 
 ## Examples
 
-[[Story:base-card--default|Default card]]
+<story-viewer story-name="base-card--default" title="Default card"></story-viewer>
 
-Todo: Provide additional card examples.
+<todo>Provide additional card examples.</todo>
 
-Todo: Add link to design specs.
+<todo>Add link to design specs.</todo>
 
 ## Structure
 
-Todo: Add structure diagram based on design specs.
+<todo>Add structure diagram based on design specs.</todo>
 
 1. **Container**: Wraps the content.
 1. **Header** (optional): Contains the title.
@@ -85,4 +85,4 @@ There are two different variants for the cards: vertical and horizontal.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

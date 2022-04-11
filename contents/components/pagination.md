@@ -13,13 +13,13 @@ related:
 
 ## Examples
 
-[[Example:pagination-basic]]
+<example-display  example-name="pagination-basic"></example-display>
 
-[[Example:pagination-double-truncation]]
+<example-display  example-name="pagination-double-truncation"></example-display>
 
-[[Example:pagination-compact]]
+<example-display  example-name="pagination-compact"></example-display>
 
-Todo: Add or refactor examples to compare offset and keyset pagination.
+<todo>Add or refactor examples to compare offset and keyset pagination.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A130)
 
@@ -84,4 +84,4 @@ Keyset pagination only has **Prev** and **Next** options and no page numbers. It
 
 ## Reference
 
-Todo: Add reference for the "more than 20" pagination item count requirements.
+<todo>Add reference for the "more than 20" pagination item count requirements.</todo>

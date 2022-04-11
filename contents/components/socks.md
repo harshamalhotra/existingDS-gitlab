@@ -9,7 +9,7 @@ description: Socks represent a unique way to warm your feet.
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
@@ -30,11 +30,11 @@ Todo: Add structure image.
 
 ### Appearance
 
-Todo: Add appearance.
+<todo>Add appearance.</todo>
 
 ### Behavior
 
-Todo: Add behavior.
+<todo>Add behavior.</todo>
 
 ### Accessibility
 

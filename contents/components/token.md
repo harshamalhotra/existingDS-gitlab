@@ -11,11 +11,11 @@ related:
 
 ## Examples
 
-[[Story:base-token--default]]
+<story-viewer story-name="base-token--default"></story-viewer>
 
-[[Story:base-token--view-only]]
+<story-viewer story-name="base-token--view-only"></story-viewer>
 
-[[Story:base-token--with-avatar]]
+<story-viewer story-name="base-token--with-avatar"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A141)
 
@@ -63,4 +63,4 @@ A token can be used to both add and filter content where:
 
 ### Accessibility
 
-Todo: Add accessibility requirements and considerations.
+<todo>Add accessibility requirements and considerations.</todo>

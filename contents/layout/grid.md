@@ -10,7 +10,7 @@ GitLab is a responsive experience that works well across all screen sizes, from 
 
 These breakpoints define specifications for different screens, devices, and orientations.
 
-Todo: Define breakpoints
+<todo>Define breakpoints</todo>
 
 ## Page containers
 

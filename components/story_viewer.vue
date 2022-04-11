@@ -55,7 +55,7 @@ export default {
 </script>
 
 <template>
-  <div class="app-styles">
+  <div class="app-styles gl-mb-5">
     <story-iframe v-if="isDocsMode" :url="iFrameUrl" />
     <gl-card v-else>
       <template #header>

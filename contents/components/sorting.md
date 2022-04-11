@@ -11,13 +11,13 @@ related:
 
 ## Examples
 
-[[Example:sorting-default]]
+<example-display  example-name="sorting-default"></example-display>
 
-Todo: Add to Pajamas UI kit.
+<todo>Add to Pajamas UI kit.</todo>
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
@@ -46,4 +46,4 @@ Todo: Add structure image.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

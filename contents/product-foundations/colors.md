@@ -4,7 +4,7 @@ name: Color
 
 ## Chromatic palette
 
-Note: View the [Data visualization > Color](/data-visualization/color) section for details about the data visualization palette.
+<note>View the [Data visualization > Color](/data-visualization/color) section for details about the data visualization palette.</note>
 
 We have five primary chromatic hues and their color steps, totaling 55 color variables for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
 

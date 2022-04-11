@@ -16,19 +16,19 @@ related:
 
 ## Examples
 
-[[Example:table-basic]]
+<example-display  example-name="table-basic"></example-display>
 
-Todo: Add column sorting example.
+<todo>Add column sorting example.</todo>
 
-Todo: Add pagination example.
+<todo>Add pagination example.</todo>
 
-Todo: Add responsive table examples.
+<todo>Add responsive table examples.</todo>
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A11)
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines 
 

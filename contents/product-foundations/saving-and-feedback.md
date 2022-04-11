@@ -38,7 +38,7 @@ If a change fails to auto-save, we need to:
 
 We also need to warn the user if they try to leave the page before the changes are successfully saved, see the [Safety measure](#safety-measure) section.
 
-Todo: Add live component block with code example (toast on screen as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#auto-save))
+<todo>Add live component block with code example (toast on screen as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#auto-save))</todo>
 
 ##### Guidelines
 
@@ -53,7 +53,7 @@ Saving drafts is a form of auto-saving changes. It’s best used for saving prog
 
 Indicating the current status reassures the users that their progress won’t be lost. In some cases it might be necessary to clearly state that a “Draft” is being saved to avoid confusion (“Draft saved 1 min ago”).
 
-Todo: Add live component block with code example (text area with saving draft indicator as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#saving-drafts))
+<todo>Add live component block with code example (text area with saving draft indicator as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#saving-drafts))</todo>
 
 ##### Guidelines
 
@@ -67,7 +67,7 @@ The new information should be reflected in the UI immediately but we should also
 
 Once the change is successfully saved, the opacity changes to 100% and the spinner disappears. There is no way of handling errors for such cases, we keep persisting until it gets successfully saved. To avoid loss of progress and changes, this method can be complemented with a [safety measure](#safety-measure) similar to the one described above: if changes aren’t successfully changed when the user tries to close the page, show a warning.
 
-Todo: Add live component block with code example (example of newly added info as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#round-trip-server-processing-versus-instant-feedback))
+<todo>Add live component block with code example (example of newly added info as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#round-trip-server-processing-versus-instant-feedback))</todo>
 
 ## Related patterns
 

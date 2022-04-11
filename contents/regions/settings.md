@@ -73,4 +73,4 @@ Consider making configuration options more discoverable to users by linking to s
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
 
-Todo: Add Figma specs for settings
+<todo>Add Figma specs for settings</todo>

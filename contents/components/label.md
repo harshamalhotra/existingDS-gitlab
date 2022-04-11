@@ -9,21 +9,21 @@ related:
 
 ## Examples
 
-[[Story:base-label--default|Default label]]
+<story-viewer story-name="base-label--default" title="Default label"></story-viewer>
 
-[[Story:base-label--scoped|Scoped label]]
+<story-viewer story-name="base-label--scoped" title="Scoped label"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A127)
 
 ## Structure
 
-Todo: Add structure image.
+<todo>Add structure image.</todo>
 
 ## Guidelines
 
 ### When to use
 
-Todo: Add when to use.
+<todo>Add when to use.</todo>
 
 ### When not to use
 
@@ -47,4 +47,4 @@ Todo: Add when to use.
 
 ### Accessibility
 
-Todo: Add accessibility guidelines.
+<todo>Add accessibility guidelines.</todo>

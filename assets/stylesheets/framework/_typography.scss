@@ -44,7 +44,8 @@ code {
 
 /*  MD Typography */
 
-.md {
+.md,
+.md .nuxt-content {
   @include type-scale(1, 7, 0, 0);
 
   > h1 {
@@ -161,13 +162,36 @@ code {
   p  { @include type-scale(0, 6, 2, 0); }
 }
 
-.md, .md.compact, .distributed {
+.md, .md.compact, .distributed, .md .nuxt-content {
   > *:first-child {
     margin-top: 0;
   }
 
   > *:last-child {
     margin-bottom: 0;
+  }
+}
+
+.nuxt-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    > a {
+      margin-left: -1em;
+      padding-right: $gl-spacing-3;
+      visibility: hidden;
+
+      &::before {
+        content: '#';
+      }
+    }
+
+    &:hover > a {
+      visibility: visible;
+    }
   }
 }
 

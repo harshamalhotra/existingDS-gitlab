@@ -34,16 +34,6 @@ export function getContentList(dirName) {
     delete content.frontmatter;
 
     const md = initMarkdownIt();
-
-    // Story names can contain double dashes (--). However, markdown-it replace those with hypens
-    // (–), breaking the logic that render the embedded iframes. To prevent this from happening, we
-    // escape dashes in story names by prepending a \ to each of them, which can then be removed at
-    // render time.
-    const matches = content.body.match(/\[\[Story:(.*)\]\]/g);
-    matches?.forEach((match) => {
-      const replacement = match.replace(/-/g, '\\-');
-      content.body = content.body.replace(match, replacement);
-    });
     content.body = md.render(content.body);
 
     fs.writeFileSync(

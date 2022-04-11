@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-[[Story:base-form-form-checkbox--default|Checkbox]]
+<story-viewer story-name="base-form-form-checkbox--default" title="Checkbox"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242)
 
