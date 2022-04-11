@@ -1,3 +1,21 @@
+# [2.117.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.116.0...v2.117.0) (2022-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v38.6.0 ([3b93b79](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3b93b7993df61fe3c75bcfbd264ceebfa01dfb2b))
+* **deps:** update gitlab ui/svg ([1d40ba7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1d40ba7dc7e5a5e7640bc0c578e899d20aa7ad75))
+* **objects:** Embed conceptual model example ([dcb7067](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dcb706796e098f2b08d356e9ee1327128db73e24))
+
+
+### Features
+
+* **empty-state:** Update search filter guidelines ([e5e366e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e5e366e394a4a694e6fff4a905a994453933ffeb))
+* **HelpingUsers:** Use ARIA labels with "Learn more" links ([4b6bdd1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4b6bdd1e33df4df875a5bab9ffe1585b0df01a42))
+* **OneTrust:** Implement cookie consent modal ([accb590](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/accb590260ff4cba3252d9c21bc077917220c608))
+* **Settings:** add guidance about linking from feature page to Settings ([f81c9cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f81c9cb0b2ce65172b5760a2c677f44da58ef992))
+* **Settings:** explain areas of settings within product ([98fc001](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/98fc0014115d9fba23383dd0b60d233c58fba0eb))
+
 # [2.116.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.115.0...v2.116.0) (2022-04-04)
 
 
