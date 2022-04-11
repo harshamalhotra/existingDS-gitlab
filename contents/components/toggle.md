@@ -3,6 +3,8 @@ name: Toggle
 description: A toggle is a visual switch which acts as a boolean.
 vueComponents:
   - GlToggle
+stories:
+  - base-toggle--default
 related:
   - checkbox
   - radio-button
@@ -11,11 +13,11 @@ related:
 
 ## Examples
 
-<example-display  example-name="toggle-default"></example-display>
+<story-viewer story-name="base-toggle--default" title="Default"></story-viewer>
 
-<example-display  example-name="toggle-disabled"></example-display>
+<story-viewer story-name="base-toggle--default" title="Disabled Toggle" :args-disabled="true"></story-viewer>
 
-<example-display  example-name="toggle-loading"></example-display>
+<story-viewer story-name="base-toggle--default" title="Loading Toggle" :args-is-loading="true"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140)
 

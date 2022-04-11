@@ -18,6 +18,7 @@ describe('story viewer component', () => {
   const findStoryIframe = () => wrapper.findComponent(StoryIframe);
   const findStoryTitle = () => findByTestId('story-title');
   const findStoryLink = () => findByTestId('story-link');
+  const getIFrameURL = () => findStoryIframe().props('url');
 
   const createComponent = (props = {}) => {
     wrapper = shallowMount(StoryViewer, {
@@ -46,9 +47,37 @@ describe('story viewer component', () => {
     });
 
     it('renders an iframe with the proper URL', () => {
-      expect(findStoryIframe().props('url')).toBe(
+      expect(getIFrameURL()).toBe(
         `${$gitlabUiUrl}/iframe.html?id=${storyName}&viewMode=${viewMode}&isEmbeddedStory=1`,
       );
+    });
+  });
+
+  describe('custom storybook arguments are added to the URL', () => {
+    const getIFrameArgs = () => new URL(getIFrameURL()).searchParams.get('args');
+
+    it('renders none with no args', () => {
+      createComponent({});
+
+      expect(getIFrameArgs()).toBe(null);
+    });
+
+    it('combines args properly when given', () => {
+      createComponent({
+        'args-foo': 'bar',
+        'args-is-loading': true,
+      });
+
+      expect(getIFrameArgs()).toBe(`foo:bar;isLoading:true`);
+    });
+
+    it('renders only args with `args-` prefix', () => {
+      createComponent({
+        'args-foo': 'bar',
+        'is-loading': true,
+      });
+
+      expect(getIFrameArgs()).toBe(`foo:bar`);
     });
   });
 
