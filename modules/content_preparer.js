@@ -64,19 +64,3 @@ export function getContentList(dirName) {
 
   return componentInfos;
 }
-
-export function writeContentTree(baseDirectory) {
-  const treeObj = {};
-  const directories = fs.readdirSync(path.resolve(baseDirectory, 'contents'));
-
-  directories.forEach((dir) => {
-    treeObj[dir] = getContentList(dir);
-  });
-
-  fs.writeFileSync(
-    path.resolve(baseDirectory, 'content_tree.json'),
-    JSON.stringify(treeObj, null, 2),
-  );
-
-  return treeObj;
-}

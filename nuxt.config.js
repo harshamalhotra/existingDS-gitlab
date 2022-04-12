@@ -1,10 +1,8 @@
 import path from 'path';
 import glob from 'glob';
-import { startCase } from 'lodash';
-import { parse } from 'node-html-parser';
 import sass from 'sass';
 import webpack from 'webpack';
-import { getContentList, writeContentTree } from './modules/content_preparer';
+import { getContentList } from './modules/content_preparer';
 
 const routes = [
   ...getContentList('components').map((c) => `components/${c.id}`),
@@ -170,6 +168,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@gitlab/nuxt-edit-this-page',
     '@nuxtjs/sentry',
+    '~/modules/nuxt_lunr_content_bridge.js',
     '@nuxtjs/lunr-module',
     '@nuxt/content',
   ],
@@ -287,42 +286,5 @@ module.exports = {
   },
 
   // see https://nuxtjs.org/api/configuration-hooks
-  hooks: {
-    build: {
-      before(builder) {
-        const { srcDir } = builder.nuxt.options;
-        const contentTree = writeContentTree(srcDir);
-
-        Object.keys(contentTree).forEach((section) => {
-          contentTree[section].forEach((page) => {
-            const route = `/${section}/${page.id}`;
-            const contentsFile = `./static/contents/${section}/${page.id}.json`;
-            import(contentsFile)
-              .then((data) => {
-                const { body } = data;
-                const html = parse(`<div>${body}</div>`);
-                const text = html.textContent;
-                const words = text.split(' ').filter((term) => term.match(/^[a-z]{2,}$/i));
-                const cleanText = words.join(' ');
-                return builder.nuxt.callHook('lunr:document', {
-                  document: {
-                    id: page.id,
-                    title: page.name,
-                    body: cleanText,
-                  },
-                  meta: {
-                    title: `${startCase(section)} > ${page.name}`,
-                    route,
-                  },
-                });
-              })
-              .catch((error) => {
-                // eslint-disable-next-line no-console
-                console.error(`Could not load contents from ${contentsFile}`, error);
-              });
-          });
-        });
-      },
-    },
-  },
+  hooks: {},
 };
