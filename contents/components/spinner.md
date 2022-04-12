@@ -1,8 +1,8 @@
 ---
 name: Spinner
 description: A spinner is an animated element that appears after a user's action to indicate that saving or loading is in progress.
-vueComponents:
-  - GlLoadingIcon
+stories:
+  - base-loading-icon--default
 related:
   - skeleton-loader
   - button
@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="loading-icon-all-options"></example-display>
+<story-viewer story-name="base-loading-icon--default" title="Default"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=19944%3A0)
 
