@@ -2,10 +2,8 @@ import path from 'path';
 import glob from 'glob';
 import sass from 'sass';
 import webpack from 'webpack';
-import { getContentList } from './modules/content_preparer';
 
 const routes = [
-  ...getContentList('components').map((c) => `components/${c.id}`),
   ...glob.sync('**/*.md', { cwd: 'contents/' }).map((filePath) => filePath.replace(/\.md$/, '')),
 ];
 
