@@ -1,8 +1,8 @@
 ---
 name: Pagination
 description: Pagination breaks up content into multiple pages with controls for navigating those pages.
-vueComponents:
-  - GlPagination
+stories:
+  - base-pagination--default
 related:
   - button
   - list
@@ -13,11 +13,11 @@ related:
 
 ## Examples
 
-<example-display  example-name="pagination-basic"></example-display>
+<story-viewer story-name="base-pagination--default" title="Default pagination"></story-viewer>
 
-<example-display  example-name="pagination-double-truncation"></example-display>
+<story-viewer story-name="base-pagination--default" title="Truncated on both sides" :args-initial-page="10"></story-viewer>
 
-<example-display  example-name="pagination-compact"></example-display>
+<story-viewer story-name="base-pagination--compact" title="Compact pagination"></story-viewer>
 
 <todo>Add or refactor examples to compare offset and keyset pagination.</todo>
 
