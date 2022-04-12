@@ -6,13 +6,23 @@ export default {
   editThisPage: {
     resolve: ({ route }) => `contents${route.path.replace(/\/+$/, '')}.md`,
   },
-  async asyncData({ $content, route }) {
+  async asyncData({ $content, route, error }) {
     const path = route.path.replace(/^\/+/, '').replace(/\/(code|contribute)$/, '');
+
     const page = await $content(path)
       .fetch()
-      .catch((err) => {
-        console.log(`Could not load content for ${path}`, err);
+      .catch((e) => {
+        error({ statusCode: 404, path, message: `${path} not found`, stack: e.stack });
       });
+
+    if (Array.isArray(page)) {
+      error({
+        statusCode: 500,
+        path,
+        message: `@nuxt/content returned an array of pages instead of a single page for '${path}'`,
+      });
+    }
+
     return { page };
   },
 };
