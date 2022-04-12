@@ -31,10 +31,6 @@ export default {
     RelatedPages,
   },
   props: {
-    frontmatterInfo: {
-      type: Object,
-      required: true,
-    },
     page: {
       type: Object,
       required: false,
@@ -67,13 +63,26 @@ export default {
     showTabs() {
       return Boolean(this.vueComponents?.length || this.page?.stories?.length);
     },
+    lastUpdatedAt() {
+      const { lastGitUpdate } = this.page || {};
+      if (!lastGitUpdate) {
+        return null;
+      }
+      return new Date(lastGitUpdate).toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+      });
+    },
   },
   created() {
     this.componentAttributes = this.page;
 
     this.vueComponents = this.page.vueComponents;
 
-    this.componentBody = this.frontmatterInfo.body;
     if (this.vueComponents) {
       this.vueComponents.forEach((vueComponentName) => {
         let snakeName = vueComponentName.replace(/([A-Z])/g, ($1) => `_${$1.toLowerCase()}`);
@@ -219,6 +228,9 @@ export default {
         <nuxt-content :document="page" />
         <related-pages :related="page.related" class="m-t-6" />
       </div>
+      <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5">
+        Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
+      </p>
     </div>
     <div v-else>Loading ...</div>
   </div>

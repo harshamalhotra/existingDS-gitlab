@@ -2,10 +2,8 @@ import path from 'path';
 import glob from 'glob';
 import sass from 'sass';
 import webpack from 'webpack';
-import { getContentList } from './modules/content_preparer';
 
 const routes = [
-  ...getContentList('components').map((c) => `components/${c.id}`),
   ...glob.sync('**/*.md', { cwd: 'contents/' }).map((filePath) => filePath.replace(/\.md$/, '')),
 ];
 
@@ -122,7 +120,7 @@ module.exports = {
   },
 
   router: {
-    middleware: ['frontmatter', 'navigation'],
+    middleware: ['navigation'],
     extendRoutes(originalRoutes) {
       const sectionSlugRoute = originalRoutes.find((route) => route.name === 'section-slug');
       sectionSlugRoute.path += '/:tab?';
@@ -168,6 +166,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@gitlab/nuxt-edit-this-page',
     '@nuxtjs/sentry',
+    '~/modules/nuxt_content_extension.js',
     '~/modules/nuxt_lunr_content_bridge.js',
     '@nuxtjs/lunr-module',
     '@nuxt/content',

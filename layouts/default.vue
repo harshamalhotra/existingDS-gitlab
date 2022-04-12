@@ -7,21 +7,7 @@ export default {
     Navbar,
   },
   computed: {
-    ...mapState(['frontmatter', 'sidebarOpen']),
-    lastUpdatedAt() {
-      const { lastUpdatedAt } = this.frontmatter;
-      if (!lastUpdatedAt) {
-        return null;
-      }
-      return new Date(lastUpdatedAt).toLocaleString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-      });
-    },
+    ...mapState(['sidebarOpen']),
     contentWrapper() {
       return this.$route.fullPath === '/' ? '' : 'content main';
     },
@@ -91,11 +77,6 @@ export default {
           <span class="footer-link-divider"></span>
           <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
         </div>
-        <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5 p-b-5">
-          Last updated at:&nbsp;<time :datetime="frontmatter.lastUpdatedAt">{{
-            lastUpdatedAt
-          }}</time>
-        </p>
       </footer>
     </main>
   </div>
