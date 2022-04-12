@@ -1,8 +1,8 @@
 ---
 name: Sorting
 description: Sorting allows users to quickly re-organize similar content on a long list when the default order may be insufficient for users to scan the data set.
-vueComponents: 
-  - GlSorting
+stories:
+  - base-sorting--default
 related:
   - dropdown
   - filter
@@ -11,7 +11,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="sorting-default"></example-display>
+<story-viewer story-name="base-sorting--default" title="Default" iframe-padding="0 0 75px 0"></story-viewer>
 
 <todo>Add to Pajamas UI kit.</todo>
 
