@@ -23,6 +23,11 @@ export default {
       required: false,
       default: null,
     },
+    iframePadding: {
+      type: String,
+      required: false,
+      default: null,
+    },
     viewMode: {
       type: String,
       required: false,
@@ -70,7 +75,7 @@ export default {
 
 <template>
   <div class="app-styles gl-mb-5">
-    <story-iframe v-if="isDocsMode" :url="iFrameUrl" />
+    <story-iframe v-if="isDocsMode" :url="iFrameUrl" :iframe-padding="iframePadding" />
     <gl-card v-else>
       <template #header>
         <div class="row">
@@ -85,7 +90,7 @@ export default {
           </div>
         </div>
       </template>
-      <story-iframe :url="iFrameUrl" />
+      <story-iframe :url="iFrameUrl" :iframe-padding="iframePadding" />
     </gl-card>
   </div>
 </template>

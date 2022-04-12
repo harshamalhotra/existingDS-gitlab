@@ -11,6 +11,11 @@ export default {
       type: String,
       required: true,
     },
+    iframePadding: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {
@@ -23,10 +28,17 @@ export default {
         'gl-opacity-0': !this.loaded,
       };
     },
+    iframeResizeOptions() {
+      const options = {};
+      if (this.iframePadding) {
+        options.bodyPadding = this.iframePadding;
+      }
+      return options;
+    },
   },
   methods: {
     iFrameLoaded({ target }) {
-      iframeResize({}, target);
+      iframeResize(this.iframeResizeOptions, target);
       this.loaded = true;
     },
   },
