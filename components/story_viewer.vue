@@ -58,7 +58,6 @@ export default {
       const url = new URL(`${this.$gitlabUiUrl}/iframe.html`);
       url.searchParams.append('id', this.storyName);
       url.searchParams.append('viewMode', this.viewMode);
-      url.searchParams.append('isEmbeddedStory', 1);
       if (this.storyBookArgs) {
         url.searchParams.append('args', this.storyBookArgs);
       }
