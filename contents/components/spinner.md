@@ -45,7 +45,7 @@ related:
 
 ### Sizes
 
-- **Small**: 16px, used with text labels or inside other UI elements, like buttons.
+- **Small**: 16px, used with text labels or inside other UI elements, like a [button](/components/button#states).
 - **Medium**: 24px, used within larger visual elements, like merge widget status icons.
 - **Large**: 32px, indicates larger components are loading, like a [chart](/data-visualization/charts).
 - **Extra large**: 64px, indicates a large content area of the UI is loading.
