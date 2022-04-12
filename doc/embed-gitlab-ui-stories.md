@@ -45,6 +45,19 @@ ID. To use a custom title, pass it as the `title` prop:
 <story-viewer story-name="base-alert--default" title="My custom title"></story-viewer>
 ```
 
+### Storybook controls
+
+Storybook's [controls](https://storybook.js.org/docs/vue/essentials/controls) provide a way to
+interact with components' props. The `story-viewer` can pass controls' values to embedded stories.
+This is useful when we need to demonstrate a component's use cases without adding a full-blown story
+to GitLab UI. Controls must be passes as props to `story-viewer`. The prop name is the control's
+kebab-cased name, prefixed with `args-`. For example, to set `GlToggle`'s `isLoading` control to
+`true`, you would provide the `args-is-loading` prop like so:
+
+```html
+<story-viewer story-name="base-toggle--default" :args-is-loading="true"></story-viewer>
+```
+
 ## Embedding GitLab UI docs pages
 
 To include GitLab UI docs pages, list story IDs in the frontmatter's `stories` section. The docs

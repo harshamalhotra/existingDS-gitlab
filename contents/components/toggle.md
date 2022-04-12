@@ -1,8 +1,6 @@
 ---
 name: Toggle
 description: A toggle is a visual switch which acts as a boolean.
-vueComponents:
-  - GlToggle
 stories:
   - base-toggle--default
 related:

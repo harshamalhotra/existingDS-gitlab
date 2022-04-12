@@ -48,7 +48,7 @@ describe('story viewer component', () => {
 
     it('renders an iframe with the proper URL', () => {
       expect(getIFrameURL()).toBe(
-        `${$gitlabUiUrl}/iframe.html?id=${storyName}&viewMode=${viewMode}&isEmbeddedStory=1`,
+        `${$gitlabUiUrl}/iframe.html?id=${storyName}&viewMode=${viewMode}`,
       );
     });
   });
