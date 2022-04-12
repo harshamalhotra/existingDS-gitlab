@@ -31,10 +31,6 @@ export default {
     RelatedPages,
   },
   props: {
-    frontmatterInfo: {
-      type: Object,
-      required: true,
-    },
     page: {
       type: Object,
       required: false,
@@ -87,7 +83,6 @@ export default {
 
     this.vueComponents = this.page.vueComponents;
 
-    this.componentBody = this.frontmatterInfo.body;
     if (this.vueComponents) {
       this.vueComponents.forEach((vueComponentName) => {
         let snakeName = vueComponentName.replace(/([A-Z])/g, ($1) => `_${$1.toLowerCase()}`);

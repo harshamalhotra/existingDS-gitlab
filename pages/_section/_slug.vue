@@ -1,6 +1,4 @@
 <script>
-import { mapState } from 'vuex';
-
 export default {
   components: {
     ComponentInfo: () => (process.browser ? import('../../components/componentinfo.vue') : null),
@@ -17,16 +15,13 @@ export default {
       });
     return { page };
   },
-  computed: {
-    ...mapState(['frontmatter']),
-  },
 };
 </script>
 
 <template>
   <div class="content limited m-t-7 m-b-8">
     <no-ssr>
-      <component-info :frontmatter-info="frontmatter" :page="page" />
+      <component-info :page="page" />
     </no-ssr>
   </div>
 </template>

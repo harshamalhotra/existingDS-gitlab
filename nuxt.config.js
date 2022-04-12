@@ -122,7 +122,7 @@ module.exports = {
   },
 
   router: {
-    middleware: ['frontmatter', 'navigation'],
+    middleware: ['navigation'],
     extendRoutes(originalRoutes) {
       const sectionSlugRoute = originalRoutes.find((route) => route.name === 'section-slug');
       sectionSlugRoute.path += '/:tab?';
