@@ -1,8 +1,13 @@
 <script>
-import contentTree from '../../content_tree.json'; // eslint-disable-line import/no-unresolved
-
 export default {
-  contentTree,
+  async asyncData({ $content }) {
+    const componentList = await $content('components')
+      .only(['name', 'description', 'path'])
+      .sortBy('name')
+      .fetch();
+
+    return { componentList };
+  },
   head: {
     title: 'Components overview',
   },
@@ -18,14 +23,10 @@ export default {
         more about how to use them for your design or development project.
       </p>
       <ul class="components-list mt-4 gl-display-grid gl-list-style-none gl-pl-0!">
-        <li
-          v-for="component in $options.contentTree.components"
-          :key="component.id"
-          class="gl-display-flex"
-        >
+        <li v-for="component in componentList" :key="component.path" class="gl-display-flex">
           <nuxt-link
             class="component-card gl-text-decoration-none! gl-text-black-normal! gl-rounded-base gl-bg-white gl-p-5 gl-w-full gl-border-1 gl-border-solid gl-border-gray-100"
-            :to="`/components/${component.id}`"
+            :to="component.path"
           >
             <h3 class="component-name">{{ component.name }}</h3>
             <p class="component-description gl-mb-0 gl-mt-2 gl-reset-line-height gl-font-lg">
