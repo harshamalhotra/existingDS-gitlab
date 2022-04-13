@@ -1,17 +1,17 @@
 ---
 name: Skeleton loader
 description: A skeleton loader is a simplified preview of loading content.
-vueComponents:
-  - GlSkeletonLoader
+stories:
+  - base-skeleton-loader--default
 related:
   - spinner
 ---
 
 ## Examples
 
-<example-display  example-name="default-skeleton-basic"></example-display>
+<story-viewer story-name="base-skeleton-loader--default" title="Basic skeleton loader"></story-viewer>
 
-<example-display  example-name="issue-card-skeleton-basic"></example-display>
+<story-viewer story-name="base-skeleton-loader--with-custom-shapes" title="With custom shapes"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=2844%3A0)
 
