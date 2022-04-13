@@ -238,19 +238,7 @@ module.exports = {
       });
 
       config.module.rules.push({
-        test: /\.md$/,
-        exclude: /contents/,
-        loader: 'raw-loader',
-      });
-
-      config.module.rules.push({
-        test: /\.example\.vue$/,
-        loader: 'raw-loader',
-      });
-
-      config.module.rules.push({
         test: /\.vue$/,
-        exclude: /\.example\.vue$/,
         loader: 'vue-loader',
       });
 
