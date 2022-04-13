@@ -1,13 +1,24 @@
 <script>
+/*
+We only need the "section" and "slug" of the routes to find the file.
+Currently the "third" component is the "tab" (e.g. implementation on component pages)
+and that is handled inside `componentinfo.vue` until we have better routing:
+https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1293
+*/
+const getPathFromRoute = (route) => {
+  const { section, slug } = route.params;
+  return [section, slug].filter(Boolean).join('/');
+};
+
 export default {
   components: {
     ComponentInfo: () => (process.browser ? import('../../components/componentinfo.vue') : null),
   },
   editThisPage: {
-    resolve: ({ route }) => `contents${route.path.replace(/\/+$/, '')}.md`,
+    resolve: ({ route }) => `contents/${getPathFromRoute(route)}.md`,
   },
   async asyncData({ $content, route, error }) {
-    const path = route.path.replace(/^\/+/, '').replace(/\/(code|contribute)$/, '');
+    const path = getPathFromRoute(route);
 
     const page = await $content(path)
       .fetch()
