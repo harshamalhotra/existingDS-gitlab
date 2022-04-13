@@ -1,9 +1,9 @@
 ---
 name: Search
 description: Search patterns enable users to find certain information by adding criteria that match their query.
-vueComponents:
-  - GlSearchBoxByClick
-  - GlSearchBoxByType
+stories:
+  - base-search-box-by-click--default
+  - base-search-box-by-type--default
 related:
   - button
   - filter
@@ -14,11 +14,9 @@ related:
 
 ## Examples
 
-<example-display  example-name="search-box-by-type-loading"></example-display>
+<story-viewer story-name="base-search-box-by-click--history" title="Search by click with history" iframe-padding="0 0 200px 0"></story-viewer>
 
-<example-display  example-name="search-box-by-click-v-model"></example-display>
-
-<example-display  example-name="search-box-by-click-with-history"></example-display>
+<story-viewer story-name="base-search-box-by-type--default" title="Search by type"></story-viewer>
 
 <todo>Add to Pajamas UI Kit.</todo>
 
