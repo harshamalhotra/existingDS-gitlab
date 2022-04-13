@@ -1,8 +1,8 @@
 ---
 name: Toast
 description: A toast displays a short system message as a result of a user's action.
-vueComponents:
-  - GlToast
+stories:
+  - base-toast--default
 related:
   - alert
   - modal
@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-<todo>Add toast examples.</todo>
+<story-viewer story-name="base-toast--default" title="Default Toast" iframe-padding="0 0 100px 0"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A139)
 
