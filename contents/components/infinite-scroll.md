@@ -1,8 +1,8 @@
 ---
 name: Infinite scroll
 description: Infinite scroll helps users parse a large number of items by breaking up lists and distributing the results.
-vueComponents:
-  - GlInfiniteScroll
+stories:
+  - base-infinite-scroll--default
 related:
   - list
   - pagination
@@ -10,17 +10,12 @@ related:
 ---
 
 
+
+
+
 ## Examples
 
-<example-display  example-name="infinite-scroll-basic"></example-display>
-
-<example-display  example-name="infinite-scroll-with-finite-total-items"></example-display>
-
-<example-display  example-name="infinite-scroll-small-fetched-items"></example-display>
-
-<example-display  example-name="infinite-scroll-large-fetched-items"></example-display>
-
-<example-display  example-name="infinite-scroll-all-items"></example-display>
+<story-viewer story-name="base-infinite-scroll--default" title="Default"></story-viewer>
 
 <todo>Add infinite scroll to Pajamas UI Kit</todo>
 
