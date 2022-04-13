@@ -27,9 +27,6 @@ export default {
   },
   data() {
     return {
-      componentName: this.$route.params.componentinfo,
-      componentAttributes: null,
-      componentBody: null,
       tabIndex: 0,
     };
   },
@@ -63,9 +60,6 @@ export default {
         minute: 'numeric',
       });
     },
-  },
-  created() {
-    this.componentAttributes = this.page;
   },
   mounted() {
     if (this.$route.hash) {
@@ -106,18 +100,18 @@ export default {
 
 <template>
   <div>
-    <div v-if="componentAttributes">
+    <div v-if="page">
       <div class="md typography gl-mb-6!">
-        <h1 id="skipTarget" tabindex="-1">{{ componentAttributes.name }}</h1>
+        <h1 id="skipTarget" tabindex="-1">{{ page.name }}</h1>
         <div
-          v-if="componentAttributes.deprecated"
+          v-if="page.deprecated"
           role="alert"
           class="gl-bg-orange-50 gl-px-5 gl-py-3 gl-mb-3 gl-display-flex gl-align-items-center"
         >
           <span class="gl-text-orange-600 gl-mr-3">⚠️</span>
           Please refrain from using this component - it is about to be deprecated!
         </div>
-        <p>{{ componentAttributes.description }}</p>
+        <p>{{ page.description }}</p>
       </div>
       <div v-if="showTabs">
         <gl-tabs v-model="tabIndex" nav-wrapper-class="app-styles gl-mb-5" lazy>
