@@ -1,8 +1,8 @@
 ---
 name: Radio button
 description: A radio button typically represents a single option in a group of related choices.
-vueComponents:
-  - GlFormRadio
+stories:
+  - base-form-form-radio--default
 related:
   - checkbox
   - dropdown
@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="form-radio-group-stacked"></example-display>
+<story-viewer story-name="base-form-form-radio--default" title="Radio button"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4)
 
