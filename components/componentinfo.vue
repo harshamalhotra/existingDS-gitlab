@@ -1,14 +1,5 @@
 <script>
-import {
-  ComponentDocumentations,
-  GlComponentDocumentation,
-  GlExampleExplorer,
-} from '@gitlab/ui/documentation';
-
-import componentExamples from '../examples';
-
 import ContributeToComponent from './contribute_to_component.vue';
-import mdDisplay from './md_display.vue';
 import RelatedPages from './related_pages.vue';
 
 const componentNameToLabelMap = {
@@ -25,9 +16,6 @@ const componentNameToLabelMap = {
 export default {
   components: {
     ContributeToComponent,
-    'md-display': mdDisplay,
-    GlComponentDocumentation,
-    GlExampleExplorer,
     RelatedPages,
   },
   props: {
@@ -42,8 +30,6 @@ export default {
       componentName: this.$route.params.componentinfo,
       componentAttributes: null,
       componentBody: null,
-      vueComponents: null,
-      vueComponentDocumentations: {},
       tabIndex: 0,
     };
   },
@@ -61,7 +47,7 @@ export default {
       return componentNameToLabelMap[slug] || slug;
     },
     showTabs() {
-      return Boolean(this.vueComponents?.length || this.page?.stories?.length);
+      return Boolean(this.page?.stories?.length);
     },
     lastUpdatedAt() {
       const { lastGitUpdate } = this.page || {};
@@ -80,26 +66,6 @@ export default {
   },
   created() {
     this.componentAttributes = this.page;
-
-    this.vueComponents = this.page.vueComponents;
-
-    if (this.vueComponents) {
-      this.vueComponents.forEach((vueComponentName) => {
-        let snakeName = vueComponentName.replace(/([A-Z])/g, ($1) => `_${$1.toLowerCase()}`);
-        if (snakeName.indexOf('_') === 0) snakeName = snakeName.substr(1);
-        snakeName = snakeName.replace(/gl_/, '');
-
-        Object.keys(ComponentDocumentations).forEach((component) => {
-          if (component === `${vueComponentName}Documentation`) {
-            this.vueComponentDocumentations[vueComponentName] = ComponentDocumentations[component];
-            if (componentExamples[vueComponentName]) {
-              this.vueComponentDocumentations[vueComponentName].examples =
-                componentExamples[vueComponentName];
-            }
-          }
-        });
-      });
-    }
   },
   mounted() {
     if (this.$route.hash) {
@@ -171,46 +137,6 @@ export default {
               <div v-for="story in page.stories" :key="story" class="container">
                 <story-viewer :story-name="story" view-mode="docs" />
               </div>
-              <template v-for="vueComponentName in vueComponents">
-                <div :key="`header-${vueComponentName}`" class="component md mb-3">
-                  <h2 :key="`hl-${vueComponentName}`" class="mb-3">
-                    Vue Component - {{ vueComponentName }}
-                  </h2>
-                  <b-alert
-                    v-if="!vueComponentDocumentations[vueComponentName].followsDesignSystem"
-                    :key="`design-alert-${vueComponentName}`"
-                    show
-                    variant="warning"
-                    class="mt-3 mb-3"
-                  >
-                    This component does not yet conform to the correct styling defined in our
-                    <a href="/">Design System</a>. Refer to the
-                    <a href="/">Design System</a> documentation when referencing visuals for this
-                    component.
-                  </b-alert>
-                </div>
-                <gl-example-explorer
-                  :key="`examples-${vueComponentName}`"
-                  :component-name="vueComponentName"
-                />
-                <md-display
-                  v-if="
-                    vueComponentDocumentations[vueComponentName] &&
-                    vueComponentDocumentations[vueComponentName].description
-                  "
-                  :key="`description-${vueComponentName}`"
-                  :md="vueComponentDocumentations[vueComponentName].description"
-                  class="mt-3 mb-3"
-                />
-                <div :key="`props-${vueComponentName}`" class="component md mt-3">
-                  <h3>Component Properties</h3>
-                  <gl-component-documentation
-                    :key="`docs-${vueComponentName}`"
-                    :component-name="vueComponentName"
-                    class="mt-3 component-documentation"
-                  />
-                </div>
-              </template>
             </div>
           </gl-tab>
           <gl-tab
