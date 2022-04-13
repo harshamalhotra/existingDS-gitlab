@@ -1,10 +1,11 @@
 ---
 name: Form
 description: A form is for capturing and submitting user input.
-vueComponents:
-  - GlFormGroup
-  - GlFormInput
-  - GlFormTextarea
+stories:
+  - base-form-form--default
+  - base-form-form-group--default
+  - base-form-form-input--default
+  - base-form-form-textarea--default
 related:
   - file-uploader
   - date-picker
@@ -15,11 +16,11 @@ related:
 
 ## Examples
 
-<example-display  example-name="form-group"></example-display>
+<story-viewer story-name="base-form-form-group--default" title="Default form group"></story-viewer>
 
-<example-display  example-name="form-group-disabled"></example-display>
+<story-viewer story-name="base-form-form-group--disabled" title="Disabled form group"></story-viewer>
 
-<example-display  example-name="form-group-validations"></example-display>
+<story-viewer story-name="base-form-form-group--with-validations" title="Form group with validations"></story-viewer>
 
 <todo>Add additional examples to demonstrate different configurations and capabilities.</todo>
 
