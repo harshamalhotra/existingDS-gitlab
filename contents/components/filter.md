@@ -1,8 +1,8 @@
 ---
 name: Filter
 description: Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
-vueComponents:
-  - GlFilteredSearch
+stories:
+  - base-filtered-search--default
 related:
   - token
   - search
@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-<example-display  example-name="filtered-search"></example-display>
+<story-viewer story-name="base-filtered-search--default" title="Filtered search"></story-viewer>
 
 <todo>Add Filter to Pajamas UI Kit.</todo>
 
