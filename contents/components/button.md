@@ -4,10 +4,9 @@ description: A button indicates a distinct action and executes a function. Text,
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A7
 docs: in-progress
 gitlab_ui: /components/button/code
-vueComponents:
-  - GlButton
-  - GlButtonGroup
-  - GlBadge
+stories:
+  - base-button--default
+  - base-button-group--default
 related:
   - dropdown
   - segmented-control
@@ -20,43 +19,35 @@ related:
 
 ## Examples
 
-<example-display  example-name="button-primary"></example-display>
+<story-viewer story-name="base-button--all-variants-and-categories" title="All variants and categories"></story-viewer>
 
-<example-display  example-name="button-secondary"></example-display>
+<story-viewer story-name="base-button--sizes" title="All sizes"></story-viewer>
 
-<example-display  example-name="button-tertiary"></example-display>
+<story-viewer story-name="base-button--default" title="Selected button" :args-selected="true"></story-viewer>
 
-<example-display  example-name="button-variants"></example-display>
-
-<example-display  example-name="button-sizes"></example-display>
-
-<example-display  example-name="button-selected"></example-display>
-
-<example-display  example-name="button-loading"></example-display>
+<story-viewer story-name="base-button--default" title="Loading button" :args-loading="true"></story-viewer>
 
 <todo>Add live component block with example of loading icon button</todo>
 
-<example-display  example-name="button-disabled"></example-display>
+<story-viewer story-name="base-button--default" title="Disabled button" :args-disabled="true"></story-viewer>
 
-<example-display  example-name="button-icon"></example-display>
+<story-viewer story-name="base-button--icon-button" title="Icon buttons"></story-viewer>
 
-<example-display  example-name="button-icon-and-text"></example-display>
+<story-viewer story-name="base-button--emojis" title="Emoji buttons"></story-viewer>
 
-<example-display  example-name="button-emoji"></example-display>
+<story-viewer story-name="base-button--label-button" title="Label button"></story-viewer>
 
-<example-display  example-name="button-label"></example-display>
+<story-viewer story-name="base-button--badges" title="Buttons with badges"></story-viewer>
 
-<example-display  example-name="badge-button"></example-display>
+<story-viewer story-name="base-button--dropdown-button" title="Dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<example-display  example-name="new-dropdown-default"></example-display>
+<story-viewer story-name="base-button--dropdown-icon-button" title="Icon dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<example-display  example-name="new-dropdown-with-icon"></example-display>
+<story-viewer story-name="base-button--dropdown-split-button" title="Split dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<example-display  example-name="new-dropdown-split"></example-display>
+<story-viewer story-name="base-button--ellipsis" title="Buttons with badges"></story-viewer>
 
-<example-display  example-name="button-ellipsis"></example-display>
-
-<example-display  example-name="button-group-basic"></example-display>
+<story-viewer story-name="base-button-group--default" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2956%3A3357)
 
