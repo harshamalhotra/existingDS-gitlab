@@ -1,8 +1,9 @@
 ---
 name: Date picker
 description: The date picker allows a user to choose and/or input a date by using a calendar dropdown or by typing the date into a text field.
-vueComponents:
-  - GlDatepicker
+stories:
+  - base-datepicker--default
+  - base-daterange-picker--default
 related:
   - form
   - dropdown
@@ -10,9 +11,9 @@ related:
 
 ## Examples
 
-<example-display  example-name="basic-date-picker"></example-display>
+<story-viewer story-name="base-datepicker--default" title="Date picker"></story-viewer>
 
-<example-display  example-name="basic-daterange-picker"></example-display>
+<story-viewer story-name="base-daterange-picker--default" title="Date range picker" iframe-padding="10px 0 300px 0"></story-viewer>
 
 <todo>Add example date range limit indicator.</todo>
 
