@@ -232,18 +232,6 @@ module.exports = {
       config.module.rules.splice(0, 1);
 
       config.module.rules.push({
-        test: /\.md$/,
-        include: /static/,
-        loader: 'frontmatter-markdown-loader',
-      });
-
-      config.module.rules.push({
-        test: /\.md$/,
-        include: /contents/,
-        loader: 'frontmatter-markdown-loader',
-      });
-
-      config.module.rules.push({
         test: /\.js$/,
         include: /node-modules/,
         loader: 'babel-loader',
