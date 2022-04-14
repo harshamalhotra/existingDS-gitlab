@@ -3,7 +3,7 @@ import { mapState } from 'vuex';
 import { NavTree } from '../helpers/navigation/nav_tree';
 import nav from '../nav.json';
 import MenuItem from './menu_item.vue';
-import Search from './search/search.vue';
+import Search from './search/search_box.vue';
 
 export default {
   components: {

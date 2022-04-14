@@ -12,7 +12,7 @@ const getPathFromRoute = (route) => {
 
 export default {
   components: {
-    ComponentInfo: () => (process.browser ? import('../../components/componentinfo.vue') : null),
+    ComponentInfo: () => (process.browser ? import('../../components/component_info.vue') : null),
   },
   editThisPage: {
     resolve: ({ route }) => `contents/${getPathFromRoute(route)}.md`,
