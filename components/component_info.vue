@@ -123,7 +123,7 @@ export default {
           </gl-tab>
           <gl-tab
             title="Implementation"
-            :active="this.$route.params.tab === 'code'"
+            :active="$route.params.tab === 'code'"
             class="app-styles js-gl-tab"
             @click.prevent="activateTab('code')"
           >
@@ -137,7 +137,7 @@ export default {
             v-if="componentLabel"
             title="Contribute"
             class="p-t-3 js-gl-tab"
-            :active="this.$route.params.tab === 'contribute'"
+            :active="$route.params.tab === 'contribute'"
             @click.prevent="activateTab('contribute')"
           >
             <contribute-to-component :component-label="componentLabel" />
