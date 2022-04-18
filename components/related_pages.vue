@@ -40,7 +40,7 @@ export default {
       <h2 id="related-patterns">Related</h2>
       <ul>
         <li v-for="pattern in relatedPatterns" :key="pattern.slug">
-          <a :href="pattern.url">{{ pattern.label }}</a>
+          <nuxt-link :to="pattern.url">{{ pattern.label }}</nuxt-link>
         </li>
       </ul>
     </div>
