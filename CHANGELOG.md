@@ -1,3 +1,21 @@
+# [2.118.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.117.0...v2.118.0) (2022-04-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v38.10.1 ([630e317](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/630e317ac2a3bba6935331867c072e23b5d34209))
+* **deps:** update dependency @gitlab/ui to v38.10.2 ([c7a0c91](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c7a0c91b2bc16bf80da21cf6f62009dabc95a8e6))
+* Routing to `/get-started/contribute` ([4353709](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/435370959400336096ff45e9838a93b86c9094f7))
+* **deps:** update dependency @gitlab/ui to v38.9.0 ([837a541](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/837a5412e7c236a740bb8baf6a7519de3a166f34))
+
+
+### Features
+
+* **layers:** Update info to match figma specs ([2d49dee](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2d49deea52fae1f7987e8bd9c296afdb5107379c))
+* Allow to supply padding to iframe ([d422006](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d422006e5378e7489650b29cc11ee9f3cb3541cc))
+* Better error page ([f99d969](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f99d96998f5baa153caa27acf5f060660b1e45a1))
+* **spinner:** Link to spinner docs to button example ([91ba552](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/91ba552897fb881d22f101c434c1f815a0d09329))
+
 # [2.117.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.116.0...v2.117.0) (2022-04-11)
 
 
