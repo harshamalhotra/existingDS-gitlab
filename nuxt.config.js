@@ -127,10 +127,6 @@ module.exports = {
     },
   },
 
-  axios: {
-    browserBaseURL: '/',
-  },
-
   /*
    ** Pass environment variables to webpack's DefinePlugin
    */
@@ -162,8 +158,6 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
     '@gitlab/nuxt-edit-this-page',
     '@nuxtjs/sentry',
     '~/modules/nuxt_content_extension.js',
@@ -193,11 +187,6 @@ module.exports = {
     liveEdit: true,
     dir: 'contents',
   },
-
-  /*
-   ** Axios module configuration
-   */
-  serverMiddleware: [],
 
   /*
    ** Build configuration
