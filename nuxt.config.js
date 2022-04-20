@@ -90,11 +90,13 @@ module.exports = {
         src:
           'https://cdn.cookielaw.org/consent/7f944245-c5cd-4eed-a90e-dd955adfdd08/OtAutoBlock.js',
       },
-      {
-        src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
-        charset: 'UTF-8',
-        'data-domain-script': '7f944245-c5cd-4eed-a90e-dd955adfdd08',
-      },
+      isProd
+        ? {
+            src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
+            charset: 'UTF-8',
+            'data-domain-script': '7f944245-c5cd-4eed-a90e-dd955adfdd08',
+          }
+        : {},
       {
         hid: 'cookie-banner-callback',
         innerHTML: `
