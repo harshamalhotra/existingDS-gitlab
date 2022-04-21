@@ -87,8 +87,7 @@ module.exports = {
     ],
     script: [
       {
-        src:
-          'https://cdn.cookielaw.org/consent/7f944245-c5cd-4eed-a90e-dd955adfdd08/OtAutoBlock.js',
+        src: 'https://cdn.cookielaw.org/consent/7f944245-c5cd-4eed-a90e-dd955adfdd08/OtAutoBlock.js',
       },
       isProd
         ? {
