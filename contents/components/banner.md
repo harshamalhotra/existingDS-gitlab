@@ -7,7 +7,7 @@ related:
   - alert
   - broadcast-message
   - button
-  - empty-states
+  - /regions/empty-states
 ---
 
 ## Examples

@@ -83,7 +83,7 @@ export default {
       >{{ item.title }}</a
     >
     <ul
-      v-if="isExpanded"
+      v-show="isExpanded"
       class="nav-sidebar__section-submenu"
       :class="`tree-indent-${depth}`"
       :aria-label="item.title"

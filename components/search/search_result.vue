@@ -1,5 +1,10 @@
 <script>
+import { GlDropdownItem } from '../../helpers/gitlab_ui';
+
 export default {
+  components: {
+    GlDropdownItem,
+  },
   props: {
     meta: {
       type: Object,

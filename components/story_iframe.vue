@@ -1,6 +1,6 @@
 <script>
-import { GlLoadingIcon } from '@gitlab/ui';
 import { iframeResize } from 'iframe-resizer';
+import { GlLoadingIcon } from '../helpers/gitlab_ui';
 
 export default {
   components: {

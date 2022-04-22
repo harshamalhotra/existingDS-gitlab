@@ -1,5 +1,5 @@
 <script>
-import { GlIcon } from '@gitlab/ui';
+import { GlIcon } from '../helpers/gitlab_ui';
 import packageJson from '../package.json';
 
 const {

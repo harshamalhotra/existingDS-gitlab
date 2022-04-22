@@ -1,7 +1,7 @@
 ---
 name: Error messages
 related:
-  - forms
+  - form
   - alert
   - broadcast-message
   - banner

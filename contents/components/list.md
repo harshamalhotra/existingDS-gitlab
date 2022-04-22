@@ -2,7 +2,7 @@
 name: List
 description: A list consists of related pieces of information grouped together, clearly associated to each other. Lists are easy to read and maintain, and they provide a good structural point of view for interface elements.
 related:
-  - navigation
+  - /regions/navigation
   - card
   - tabs
   - breadcrumb
