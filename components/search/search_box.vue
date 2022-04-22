@@ -1,5 +1,6 @@
 <script>
 import lunr from 'lunr';
+import { GlSearchBoxByType, GlDropdownItem } from '../../helpers/gitlab_ui';
 import SearchResult from './search_result.vue';
 
 const STATUS_SEARCHING = 'STATUS_SEARCHING';
@@ -13,6 +14,8 @@ const STATUS_MESSAGE = {
 
 export default {
   components: {
+    GlSearchBoxByType,
+    GlDropdownItem,
     SearchResult,
   },
   data() {

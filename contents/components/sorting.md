@@ -6,7 +6,7 @@ stories:
 related:
   - dropdown
   - filter
-  - lists
+  - list
 ---
 
 ## Examples

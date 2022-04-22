@@ -1,0 +1,24 @@
+<script>
+import RelatedPages from '../../../components/related_pages.vue';
+
+export default {
+  components: {
+    RelatedPages,
+  },
+  props: {
+    page: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script>
+
+<template>
+  <div class="p-t-3">
+    <div class="component md typography">
+      <nuxt-content :document="page" />
+    </div>
+    <related-pages :related="page.related" class="m-t-6" />
+  </div>
+</template>

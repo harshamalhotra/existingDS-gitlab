@@ -73,6 +73,9 @@ describe('navbar component', () => {
             section: '',
           },
         },
+        $router: {
+          afterEach: () => {},
+        },
       },
     });
   };

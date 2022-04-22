@@ -1,11 +1,6 @@
 import path from 'path';
-import glob from 'glob';
 import sass from 'sass';
 import webpack from 'webpack';
-
-const routes = [
-  ...glob.sync('**/*.md', { cwd: 'contents/' }).map((filePath) => filePath.replace(/\.md$/, '')),
-];
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -34,6 +29,8 @@ const cspPolicies = [
 ];
 
 module.exports = {
+  target: 'static',
+
   /*
    ** Headers of the page
    */
@@ -117,15 +114,10 @@ module.exports = {
 
   generate: {
     dir: 'public',
-    routes,
   },
 
   router: {
     middleware: ['navigation'],
-    extendRoutes(originalRoutes) {
-      const sectionSlugRoute = originalRoutes.find((route) => route.name === 'section-slug');
-      sectionSlugRoute.path += '/:tab?';
-    },
   },
 
   /*
@@ -150,9 +142,9 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/gitlab_ui.js', ssr: false },
-    { src: '~/plugins/register_global_components.js', ssr: false },
-    GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', ssr: false } : false,
+    { src: '~/plugins/gitlab_ui.js' },
+    { src: '~/plugins/register_global_components.js' },
+    GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', mode: 'client' } : false,
   ].filter(Boolean),
 
   /*
@@ -247,6 +239,7 @@ module.exports = {
       // GitLab UI needs to be transpiled as it uses some advanced syntax like the
       // optional chaining operator
       '@gitlab/ui',
+      'bootstrap-vue',
     ],
   },
 

@@ -1,11 +1,10 @@
 import { Node } from './nav_node';
 
 export class NavTree {
-  constructor(items, initialRoute) {
+  constructor(items) {
     this.nodes = [];
 
     this.initNodes(items);
-    this.activateNodeWithRoute(initialRoute);
   }
 
   get topLevelNodes() {
@@ -40,7 +39,7 @@ export class NavTree {
     if (!route) {
       return;
     }
-    const fragments = route.replace(/^\//, '').split('/').reverse();
+    const fragments = route.replace(/^\//, '').split('/').reverse().filter(Boolean);
     const activeNode = this.getNodeWithPaths(fragments);
     if (!activeNode) {
       return;

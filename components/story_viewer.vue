@@ -1,6 +1,6 @@
 <script>
-import { GlCard, GlIcon, GlLink } from '@gitlab/ui';
 import { camelCase } from 'lodash';
+import { GlCard, GlIcon, GlLink } from '../helpers/gitlab_ui';
 import StoryIframe from './story_iframe.vue';
 
 const VIEW_MODE_STORY = 'story';

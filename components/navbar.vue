@@ -12,11 +12,25 @@ export default {
   },
   data() {
     return {
-      navTree: new NavTree(nav, this.$route.fullPath),
+      navTree: new NavTree(nav),
     };
   },
   computed: {
     ...mapState(['sidebarOpen']),
+  },
+  mounted() {
+    this.$router.afterEach(() => {
+      this.$nextTick(this.updateActiveNavItem);
+    });
+    this.updateActiveNavItem();
+  },
+  methods: {
+    updateActiveNavItem() {
+      const [activeLink] = [...this.$el.querySelectorAll('.nuxt-link-active')].reverse();
+      if (activeLink) {
+        this.navTree.activateNodeWithRoute(activeLink.getAttribute('href'));
+      }
+    },
   },
 };
 </script>
