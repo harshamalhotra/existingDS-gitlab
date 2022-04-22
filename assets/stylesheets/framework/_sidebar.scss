@@ -5,12 +5,12 @@
   z-index: $z-nav-sidebar + 1;
   background: none;
   border: 0;
-  fill: $gray-200;
+  fill: $gray-900;
 
   @include hide-sm-up;
 
   &:hover {
-    fill: $gray-300;
+    fill: $gray-950;
     cursor: pointer;
   }
 }
@@ -106,7 +106,7 @@
 
       &:after {
         border-style: solid;
-        border-width: 0.15em 0.15em 0 0;
+        border-width: 1.5px 1.5px 0 0;
         content: '';
         display: block;
         height: 0.45em;
