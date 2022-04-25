@@ -1,3 +1,20 @@
+# [2.119.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.118.0...v2.119.0) (2022-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.10.0 ([14529c2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/14529c2b21b83bbd905f2fac95df49717ded0b3c))
+* **deps:** update dependency @gitlab/ui to v38.12.0 ([0b8f6a7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0b8f6a75d9dfda61a762a481ddd773c9c49ff516))
+* **deps:** update dependency @gitlab/ui to v39 ([47d8014](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/47d801402e86696850e2f0b38f25870f6acc4801))
+* **deps:** update gitlab ui/svg ([6dd4ce9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6dd4ce9776b57c64ac0fd9fd0ab2a63a8ea33e6b))
+* **deps:** upgrade Nuxt ([9e8ea53](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9e8ea53e44c034076e8dc9c8bb5163ada093f4e0))
+
+
+### Features
+
+* Full static site generation ([882aff6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/882aff61aa5653ae7cacbe1f4a9e3bcb754d6c49))
+* **PajamasUI:** Use light stroke icons ([e4c053e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e4c053e98531ec023edc6f28d61eba6ca01a9e02))
+
 # [2.118.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.117.0...v2.118.0) (2022-04-18)
 
 
