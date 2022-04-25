@@ -133,6 +133,8 @@ By hovering over specific data points on charts, users will see a [popover](/com
 
 The [column chart measure spec](https://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/) shows examples of how popover content could be structured, in practice.
 
+Placement is set to the right by default to avoid obstructing y-axis data but can be adjusted if doing so would make the chart easier to read. The popover placement should dynamically shift depending on the selected element and space available in the chart.
+
 #### Text wrapping in chart popovers
 
 The max-width of chart popovers is `512px`, with long chart values wrapping rather than truncating. When chart values in popovers wrap, break the word into two lines without using a hyphen.
