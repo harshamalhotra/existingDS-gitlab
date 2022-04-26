@@ -1,15 +1,50 @@
 [
   {
     "title": "Brand",
-    "path": "brand",
     "items": [
       {
-        "title": "Basics",
-        "path": "basics"
+        "title": "Overview",
+        "path": "brand/overview"
       },
       {
-        "title": "Resources",
-        "path": "resources"
+        "title": "Logo",
+        "path": "brand-logo",
+        "items": [
+          {
+            "title": "Core logo",
+            "path": "core-logo"
+          },
+          {
+            "title": "Logomark",
+            "path": "logomark"
+          },
+          {
+            "title": "Co-branding",
+            "path": "co-branding"
+          }
+        ]
+      },
+      {
+        "title": "Brand Design",
+        "path": "brand-design",
+        "items": [
+          {
+            "title": "Color",
+            "path": "color"
+          },
+          {
+            "title": "Typography",
+            "path": "typography"
+          },
+          {
+            "title": "Marketing illustrations",
+            "path": "marketing-illustrations"
+          },
+          {
+            "title": "Photography",
+            "path": "photography"
+          }
+        ]
       }
     ]
   },
