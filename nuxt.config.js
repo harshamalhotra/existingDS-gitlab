@@ -28,7 +28,8 @@ const cspPolicies = [
   "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com",
 ];
 
-module.exports = {
+// eslint-disable-next-line import/no-default-export
+export default {
   target: 'static',
 
   /*
