@@ -75,7 +75,10 @@ Use sticky containers with caution as they can easily crowd the interface and ma
 
 ## Links
 
-- By default, any links that keep the user within GitLab should open in the same page rather than in a new tab or window. This is the default browser behavior and still allows a user to open the link elsewhere if preferred.
+- By default, any links that keep the user within GitLab, including GitLab documentation, should open in the same window rather than in a new window. This is the default browser behavior and gives a user more control while still allowing them to open the link in a new window if preferred.
+  - Arbitrarily opening links in a new window goes against accessibility recommendations.
+    - [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html) 
+    - [When to use target=”_blank”](https://css-tricks.com/use-target_blank/)
 - If a link goes to a resource outside of GitLab and doesn’t specify the destination in text, then show the [external-link icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~external-link) at the end of the text.
     - Example:
         - [Open configuration instructions in a new page]() -- indicates the destination and doesn’t require an icon.
