@@ -1038,10 +1038,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.11.0.tgz#06edc30c58a539b2cb60ef30d61ce470c0f57f2b"
   integrity sha512-IkiMrt3NY4IHonEgSHfv6JoJ+3McppZpt7XYgG6QtVtiCHFuwbkTH+gLMeZHG127AjtuHr54wS/cYp4MSNZZ4Q==
 
-"@gitlab/ui@39.3.1":
-  version "39.3.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-39.3.1.tgz#333d10724748da9356af2b1150cee58d86264b90"
-  integrity sha512-6Tqa2sPxPBkC6svKwgyqRo/ONo8tuO7rITHecKuPYcnoRfZjxxzzEK2aPI+0Cdi/Jl478WWh6lT/T1jB065vNw==
+"@gitlab/ui@39.3.2":
+  version "39.3.2"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-39.3.2.tgz#cea886a8e966e76ed99ae6199eaa29c19ef88349"
+  integrity sha512-Ec7zZlmX1AitWQI56z3YVPf53M6b/w0fSA8rEs26TbHWJXN9rMWzX7VadX9fW4xb9FYUasLSSoaY/ZhKGJtwBw==
   dependencies:
     bootstrap-vue "2.20.1"
     dompurify "^2.3.6"
