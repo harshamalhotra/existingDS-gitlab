@@ -1038,11 +1038,12 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.11.0.tgz#06edc30c58a539b2cb60ef30d61ce470c0f57f2b"
   integrity sha512-IkiMrt3NY4IHonEgSHfv6JoJ+3McppZpt7XYgG6QtVtiCHFuwbkTH+gLMeZHG127AjtuHr54wS/cYp4MSNZZ4Q==
 
-"@gitlab/ui@39.3.2":
-  version "39.3.2"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-39.3.2.tgz#cea886a8e966e76ed99ae6199eaa29c19ef88349"
-  integrity sha512-Ec7zZlmX1AitWQI56z3YVPf53M6b/w0fSA8rEs26TbHWJXN9rMWzX7VadX9fW4xb9FYUasLSSoaY/ZhKGJtwBw==
+"@gitlab/ui@39.4.0":
+  version "39.4.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-39.4.0.tgz#7afacad3556c8bcfc136d38922c15a3fe7cd5cd5"
+  integrity sha512-OZRGLS/308paAHRSoiDCR+ZDuXZkE4tzFRdHlTBO0P6/7ZKLtIL6koNWa0Lpedlr2BfmGxkjvAsotvHk2F9U1w==
   dependencies:
+    "@popperjs/core" "^2.11.2"
     bootstrap-vue "2.20.1"
     dompurify "^2.3.6"
     echarts "^5.2.1"
@@ -1732,6 +1733,11 @@
   version "1.0.0-next.12"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
+
+"@popperjs/core@^2.11.2":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
 "@sentry/browser@^5.23.0":
   version "5.23.0"
