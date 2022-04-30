@@ -28,7 +28,16 @@ related:
 
 ## Structure
 
-<todo>Add structure image.</todo>
+<figure class="figure" role="figure" aria-label="Table structure">
+  <img class="figure-img" src="/img/table-structure.svg" alt="Numbered diagram of a table structure" role="img" />
+</figure>
+
+1. **Caption**: Provides a meaningful description for a table. A caption should only be optional when a heading directly precedes the table and provides clear enough context for it.
+1. **Header cell**: Can be used to sort table content.
+1. **Icon**: Indicates sort direction:
+   - [arrow-up](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~arrow-up) icon for sorting ascending.
+   - [arrow-down](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~arrow-down) icon for sorting descending.
+1. **Body cell**: Supports text, buttons, links, and text accompanied by other common elements like an avatar or icon.
 
 ## Guidelines 
 
@@ -48,7 +57,9 @@ related:
 
 ### Variants
 
-- **Basic table**: The basic table is the default option for this component. However, additional functionality can be added to enhance the table for different use cases.
+- **Basic**: A basic table is the default option for this component, however, additional functionality can be added to enhance the table for different use cases.
+- **Striped**: A striped table adds zebra-striping to the entire table, starting with the the header row. The alternating row background colors can be helpful to differentiate row content.
+- **Condensed**: A condensed table cuts the body cell padding in half. Use a condensed table when the content presented is data heavy and text only. For example, displaying log files. 
 
 ### Appearance 
 
@@ -57,17 +68,29 @@ related:
 - Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 - Order the table content by importance, based on the information needs of your users.
 - Text in tables tends to end up in narrow columns. Left-align text content, rather than justifying or centering it, to avoid confusion or readability issues. 
+- The **Label** text styles from the [UI type scale](/product-foundations/type-scales#ui-type-scale) are used for product tables since the content is more data rich and requires less line height. 
+- The `Paragraph` text styles from the [Documentation Markdown](https://design.gitlab.com/product-foundations/type-scales#documentation-markdown-type-scale) and [Compact Markdown](https://design.gitlab.com/product-foundations/type-scales#compact-markdown-type-scale) type scales are used for markdown tables in GitLab issues, merge requests, and documentation.
 - In some circumstances, right-aligning the text content helps with readability. For example, right-align the numeric data with a consistent number of decimal places to improve scannability.
 - Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/usability/i18n).
 - Use white space in tables to improve [scannability](https://www.nngroup.com/articles/how-users-read-on-the-web/), visually separating data elements so that each can be individually identified and read as separate from the others.
 - To help with styling, use horizontal lines between rows to visually separate content, including the last row item. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 - Do not apply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
+- By default, row content is vertically `top` aligned. However, in some cases it does makes sense to vertically `center` align content. Use your best judgement on when this is an exception. 
+- As general rule, consider that alignment within a table is more important than consistency from table to table. 
+
+| **Do** | **Don’t** |
+| :---: | :---: |
+| <figure class="figure" role="figure" aria-label="Table row content vertially aligned to top"><img class="figure-img" src="/img/table-valign-top-do.svg" alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" role="img" /><figcaption class="figure-caption">Top align in most cases</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/table-valign-top-dont.svg" alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" role="img" /><figcaption class="figure-caption">Avoid middle align</figcaption></figure> |
 
 ### Behavior 
 
 #### Search & filter
 
 - Any filtering controls that manipulate the data set should be placed directly above the table with the option to clear all data. [See filter guidelines](/components/filter).
+
+#### New row
+
+- When a new row is dynamically added by the system, the background color of the row should be set to `$green-50` in order to highlight the addition.
 
 #### Ordering & sorting
 
@@ -92,6 +115,7 @@ fields: [
 #### Pagination
 
 - Tables displaying data sets with more than 20 items should use pagination. [See pagination guidelines](/components/pagination)
+- If a condensed table is used, data sets with more than 40 items should use [pagination](/components/pagination).
 
 #### Additional actions
 
@@ -107,7 +131,18 @@ At smaller breakpoints, tables can either maintain a tabular layout and scroll h
 - If the content simply shares headers and can live on its own without comparison, transform each row into its own group.
 - If a row has embedded actions that could be missed when overflowing in the default tabular layout, transform each row into its own group so the actions can always be visible.
 
+#### Interactive tables
+
+If table cells needs to be navigable (not just some of the content within), consider extending the table as a [grid](https://www.w3.org/TR/wai-aria-practices-1.2/#grid) composite widget.
+
+#### Selecting rows
+
+<todo>Add behavior guidelines for selectable rows.</todo>
+
 ### Content
+
+#### Caption
+- A `<caption>` provides a meaningful description for a table.
 
 #### Header
 
