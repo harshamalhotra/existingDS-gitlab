@@ -1,3 +1,22 @@
+# [2.120.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.119.0...v2.120.0) (2022-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v39.4.0 ([3c85b2a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3c85b2aa114c11b73344c3d80621145f343c48fd))
+* Clarify links section on interaction page ([58db96d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/58db96dfd95acd414b9a0ded941b38850eb23622))
+* **deps:** update dependency @gitlab/ui to v39.2.1 ([d0790ce](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d0790ce1bbae83b6c39b2b64f5a47fba59516d47))
+* **deps:** update dependency @gitlab/ui to v39.3.2 ([8632b21](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8632b215305b5a1358939ff5ef4338dfd9802bc1))
+* **deps:** update gitlab ui/svg ([a5d45de](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a5d45de5f0c8030cf8760134844a37492145c558))
+
+
+### Features
+
+* **Brand:** Update brand section content ([86af851](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/86af85158233790d2ad1781a4176871a4ca905ff))
+* **Charts:** add popover positioning details ([3289ba3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3289ba3461afccaf9901926b8496ab760aa4102d))
+* **merge-request-reports:** add modal from inline link guidelines ([d74efa7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d74efa7c8a5e5136f8b2e732b6bd1d833d722802))
+* **Table:** Guideline updates ([327e9fc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/327e9fc98625d16df1d663ef7c89dcaeb1fdcf9a))
+
 # [2.119.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.118.0...v2.119.0) (2022-04-25)
 
 
