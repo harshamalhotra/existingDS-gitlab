@@ -25,7 +25,7 @@ or user experiences, it can be helpful to include a mockup.
 
 To contribute an issue, follow one of these paths depending on its nature:
 
-1. **Component**: Get familiar with our [Component lifecycle](lifecycle).
+1. **Component**: Get familiar with our [Component lifecycle](/get-started/lifecycle/).
 1. **Object**: Create an issue with the [“Object documentation” template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Object%20documentation) and follow its instructions.
 1. Everything else: [Create an issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new) with no template.
 
