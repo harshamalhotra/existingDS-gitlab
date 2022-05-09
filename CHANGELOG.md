@@ -1,3 +1,13 @@
+## [2.120.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.120.0...v2.120.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v39.5.0 ([bf852f9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bf852f98d85b9da0a77b9ec70fe48d82b71b5cb9))
+* **deps:** update dependency @gitlab/ui to v39.7.0 ([f493b4e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f493b4e2f37ee7dbfb75fa5d70fa72456a00af98))
+* **deps:** update gitlab ui/svg ([88084f8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/88084f8c6350cf34c2d485c799c28f41ec4d4499))
+* **Documentation:** Change assigned TW to Russell Dickenson ([273ccbc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/273ccbcf848da92bdfa9c954542baae6c45be732))
+
 # [2.120.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.119.0...v2.120.0) (2022-05-02)
 
 
