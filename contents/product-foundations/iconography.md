@@ -249,25 +249,39 @@ As with all of the guidelines, there will always be some level of subjectivity. 
 
 GitLab icons should reflect positive or neutral metaphors. Avoid concepts related to violence or that generally have a negative meaning. Ask yourself, will this icon benefit all users? Is there any potential that its meaning could be confusing or cause anxiety? If there's any doubt, explore other options that are at least neutral in meaning.
 
-Don’t use one icon to refer to multiple meanings. In some cases, there will still be areas in the UI where meaning will have to be inferred from context; for example, a × symbol may be used for closing a modal and at the same time represent a failed pipeline. In these instances, do everything possible to differentiate the icons.
+#### Specific meaning, specific icon
+
+Using an icon consistently to represent a single concept or action helps with overall learnability for a user. For example, the icon used to represent a feature or an object shouldn't be used to refer to other unrelated concepts or actions in the UI.
+
+Avoid using different icons to refer to one specific meaning.
 
 | **Do** | **Don’t** |
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Icon represents “menu”"><img class="figure-img" src="/img/icons-concept-dup.svg" alt="Menu icon" role="img" /><figcaption class="figure-caption">Icon represents “menu”</figcaption></figure> | <figure class="figure" role="figure" aria-label="menu icon used for “list”"><img class="figure-img" src="/img/icons-concept-dup-dont.svg" alt="menu icon" role="img" /><figcaption class="figure-caption">Menu icon used for “list”</figcaption></figure> |
 
-Don’t use different icons to refer to one specific meaning.
-
 | **Do** | **Don’t** |
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Correct icon for “full screen”"><img class="figure-img" src="/img/icons-concept-meaning-do.svg" alt="Full screen icon" role="img" /><figcaption class="figure-caption">Correct icon for “full screen”</figcaption></figure> | <figure class="figure" role="figure" aria-label="Different icon for “full screen”"><img class="figure-img" src="/img/icons-concept-meaning-dont.svg" alt="Alternate full screen icon" role="img" /><figcaption class="figure-caption">Different icon for “full screen”</figcaption></figure> |
 
-Don’t use an icon to explain a meaning which is not straight-forward. If an icon is not accompanied by a label, provide a quick explanation for users in a tooltip.
+#### Icons with multiple meanings
+
+There are, however, several icons whose design doesn't match a single metaphor, but multiple. In these cases, meaning must be provided in context. Examples of these cases are: 
+
+- An '×' icon in a close button on a modal can also represent a failed status.
+- An 'eye' icon to indicate a confidential issue can also be used to show a password, or to view a preview of an object.
+- A 'chevron' icon in a [dropdown button](/components/button#dropdown-buttons) can also represent the expanded state of an [accordion](/components/accordion).
+
+In addition to context, ensure that `aria-label` attributes and/or tooltips are used to communicate the icon meaning.
+
+#### Unique metaphors and concepts
+
+If an icon is not accompanied by a label or its use isn't clear based on the immediately surrounding context, then provide a quick explanation in a tooltip.
 
 | **Do** | **Don’t** |
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Icon meaning is available"><img class="figure-img" src="/img/icons-concept-clear.svg" alt="Got hook icon with label and tooltip" role="img" /><figcaption class="figure-caption">Icon meaning is available</figcaption></figure> | <figure class="figure" role="figure" aria-label="Is that a smiling cat?"><img class="figure-img" src="/img/icons-concept-unclear.svg" alt="Git hook icon" role="img" /><figcaption class="figure-caption">Is that a smiling cat?</figcaption></figure> |
 
-### Modern metaphors
+#### Modern metaphors
 
 Try to avoid potentially antiquated concepts, especially when something more modern is recognizable.
 
