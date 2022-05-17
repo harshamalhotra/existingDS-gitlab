@@ -214,7 +214,7 @@ Multiple alignments can be combined within a single screen, but not within an in
 
 ### Order
 
-- In all cases, affirmative actions are positioned to the outer edge of a container. This means that on left-aligned buttons the affirmative action is the left-most action, and on right-aligned buttons, the affirmative action is the right-most action.
+- Affirmative actions are positioned to the outer edge of a container. This means that on left-aligned buttons the affirmative action is the left-most action, and on right-aligned buttons, the affirmative action is the right-most action.
 - An affirmative action is something that takes the users further in their journey (for example, Save or Delete), while a dismissive action takes a user back (for example, Cancel). Depending on the context, an affirmative action may be destructive.
   <div class="row">
     <div class="col col-50">
@@ -231,6 +231,7 @@ Multiple alignments can be combined within a single screen, but not within an in
     </div>
   </div>
 - The visual hierarchy is primary buttons on the outer edge, followed by secondary buttons, and so on.
+- One exception to the visual hierarchy is an ellipsis button. When using an ellipsis button, place it on the outer edge.
   <div class="row">
     <div class="col col-50">
       <figure class="figure" role="figure" aria-label="Hierarchy from left to right for left alignment">
