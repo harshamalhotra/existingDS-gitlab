@@ -389,6 +389,10 @@
           {
             "title": "Onboarding users",
             "path": "onboarding-users"
+          },
+          {
+            "title": "Progressive disclosure",
+            "path": "progressive-disclosure"
           }
         ]
       },
