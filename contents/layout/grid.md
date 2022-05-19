@@ -10,7 +10,11 @@ GitLab is a responsive experience that works well across all screen sizes, from 
 
 These breakpoints define specifications for different screens, devices, and orientations.
 
-<todo>Define breakpoints</todo>
+- **`xs`**: <576px
+- **`sm`**: ≥576px
+- **`md`**: ≥768px
+- **`lg`**: ≥992px
+- **`xl`**: ≥1200px
 
 ## Page containers
 
