@@ -1,3 +1,28 @@
+# [2.121.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.120.1...v2.121.0) (2022-05-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.13.0 ([be4cc31](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/be4cc3103f3cf5f828c3972053f343f47e82d9e0))
+* **deps:** update dependency @gitlab/ui to v40 ([14408bc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/14408bcfa14319e09becdb8e8a6dc2a185ea31c9))
+* **deps:** update dependency @gitlab/ui to v40.1.0 ([5a2a2d3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5a2a2d3118c587ebed58fa6f2017d600e52cd8c3))
+* **deps:** update dependency @gitlab/ui to v40.2.1 ([b2e5c19](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b2e5c190fb6f245eabfc3f1393aa671a8e73e286))
+* **deps:** update dependency @gitlab/ui to v40.2.2 ([503318b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/503318b570b3e06abdc900ee31d0bd06b738c28d))
+* **deps:** update dependency @gitlab/ui to v40.3.0 ([55dbbeb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/55dbbeb58a10ca1ecdad684251e7032b44b4bda6))
+* **deps:** update dependency @gitlab/ui to v40.4.0 ([0aa854a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0aa854a4065ab4c95f6b2998a7c4a8aa7eda052d))
+* **deps:** update dependency @gitlab/ui to v40.5.0 ([a0b134e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a0b134e03a95ada15490d26ee9b2f30e8c3d6a35))
+* **deps:** update dependency @gitlab/ui to v40.6.0 ([28111b5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/28111b5ada8d6254aa9ae62e7c273fff5b19a831))
+* **deps:** update dependency @gitlab/ui to v40.6.2 ([e6b15ac](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e6b15ace95a27c1dbc2c0fb53279b27ec5dc85cf))
+* **deps:** update gitlab ui/svg ([7a49f5d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a49f5d39fa63e1385880c3909e876ca3a730ead))
+
+
+### Features
+
+* **Button:** Update guidelines Ellipsis buttons as outer most exception. ([cfeb7f1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cfeb7f1ec7191fc8a2d111aafd33f997b8770a65))
+* **Iconography:** Update guidelines ([ca609dd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ca609dd1bd32f6be54115accccc2e122fb1d5339))
+* **Settings:** Add more information about setting inheritance ([d6878f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d6878f5fe6d4f70fe9a4193b85a94f04bb6521af))
+* **Usability:** add page for progressive disclosure ([983779e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/983779e1cb7d5204dc494395c764a062e783c872))
+
 ## [2.120.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.120.0...v2.120.1) (2022-05-09)
 
 
