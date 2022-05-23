@@ -204,7 +204,24 @@
           },
           {
             "title": "Dropdown",
-            "path": "dropdown"
+            "items": [
+              {
+                "title": "Disclosure",
+                "path": "dropdown-disclosure"
+              },
+              {
+                "title": "Listbox",
+                "path": "dropdown-listbox"
+              },
+              {
+                "title": "Combobox",
+                "path": "dropdown-combobox"
+              },
+              {
+                "title": "Menu",
+                "path": "dropdown-menu"
+              }
+            ]
           },
           {
             "title": "File uploader",
