@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-new-dropdowns-listbox--default" title="Default listbox" iframe-padding="0 0 240px 0"></story-viewer>
+<story-viewer story-name="base-new-dropdowns-listbox--default" title="Default listbox"></story-viewer>
 
 <note>Listbox styles will be updated to match the UI kit.</note>
 

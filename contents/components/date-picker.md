@@ -13,7 +13,7 @@ related:
 
 <story-viewer story-name="base-datepicker--default" title="Date picker"></story-viewer>
 
-<story-viewer story-name="base-daterange-picker--default" title="Date range picker" iframe-padding="10px 0 300px 0"></story-viewer>
+<story-viewer story-name="base-daterange-picker--default" title="Date range picker"></story-viewer>
 
 <todo>Add example date range limit indicator.</todo>
 
