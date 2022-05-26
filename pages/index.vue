@@ -3,23 +3,47 @@
     <nuxt-child />
     <div class="content banner">
       <div class="banner__header text-center">
-        <svg width="66" height="121" fill="none" class="animated fadeInDown">
+        <svg
+          width="66"
+          height="121"
+          fill="none"
+          class="animated fadeInDown"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
-            d="M25.8883 119.627l-14.5792-7.903C4.36013 107.909 0 100.552 0 92.5126V59.1303h29.9759v58.0447c0 2.18-2.1801 3.542-4.0876 2.452z"
-            fill="#999"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="m26.052 120.631-14.617-7.95a21.948 21.948 0 0 1-8.344-8.045A21.994 21.994 0 0 1 0 93.457V59.678h30.165v58.496a2.753 2.753 0 0 1-1.336 2.438 2.731 2.731 0 0 1-2.777.019Z"
+            fill="#DEC9F0"
           />
           <path
-            d="M44.8276 77.9334L6.54019 87.4712C0 89.1062 0 91.8313 0 91.8313V36.9209c0-12.5353 8.44775-23.4357 20.5744-26.4332L61.9956.132348c1.7713-.545016 3.4063.817524 3.4063 2.588822V51.5001c0 12.5354-8.4477 23.4357-20.5743 26.4333z"
-            fill="#fff"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M45.042 78.614 6.527 88.225C0 89.887 0 92.633 0 92.633V37.16a27.488 27.488 0 0 1 5.81-16.9 27.42 27.42 0 0 1 14.963-9.74L62.4.085a2.738 2.738 0 0 1 3.164 1.513c.177.386.263.808.25 1.233v49.186a27.488 27.488 0 0 1-5.822 16.874 27.42 27.42 0 0 1-14.95 9.724Z"
+            fill="url(#a)"
           />
+          <defs>
+            <linearGradient
+              id="a"
+              x1="0"
+              y1="46.331"
+              x2="65.815"
+              y2="46.331"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#7144C6" />
+              <stop offset=".59" stop-color="#8045C9" />
+              <stop offset="1" stop-color="#8E46CC" />
+            </linearGradient>
+          </defs>
         </svg>
-        <h1 id="skipTarget" class="banner__header--title f-display f-inverted">Pajamas</h1>
-        <h2 class="banner__header--description f-inverted">
+
+        <h1 id="skipTarget" class="banner__header--title f-display">Pajamas</h1>
+        <p class="banner__header--description">
           Resources, components, and design guidelines behind GitLab
-        </h2>
+        </p>
       </div>
-      <img src="../assets/images/cover.png" class="banner__image animated" />
-      <div class="overlay"></div>
+      <img src="../assets/images/cover-gradient.png" class="banner__image animated" />
     </div>
     <div class="p-t-10 p-b-10">
       <div class="content limited distributed contributing-box__content">

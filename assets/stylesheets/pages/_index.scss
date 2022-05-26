@@ -58,18 +58,9 @@
   }
 
   .banner__header--description {
-    font-weight: $font-weight--normal;
+    font-size: 1.375rem;
     padding: 0 $gl-spacing-4;
   }
-}
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(135deg, rgba(115, 67, 198, .9) 0%, rgba(141, 70, 204, .75) 100%);
 }
 
 .bg-dark {
