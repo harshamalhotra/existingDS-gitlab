@@ -1,3 +1,20 @@
+# [2.122.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.121.0...v2.122.0) (2022-05-30)
+
+
+### Bug Fixes
+
+* Add GitLab Pages Auth site to CSP ([052fd4f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/052fd4f19139693b793120fee801f26d05841e12))
+* Remove extra padding from stories' container ([b37fe85](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b37fe85b659fd50047cbdef7f1e2cd899f5c6b3b))
+* **deps:** update dependency @gitlab/ui to v40.6.3 ([4e3c84f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4e3c84fee40e6db17f4eb0cfed8f2b6ce309717b))
+* **deps:** update dependency @gitlab/ui to v40.6.4 ([7ec9f52](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7ec9f5241467080e4d5073c1222f10cbc152eef8))
+* **deps:** update dependency @gitlab/ui to v40.6.5 ([d41a123](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d41a123e45976ff3404c9f5e209e946ed8cc5877))
+
+
+### Features
+
+* **Dropdown:** Support new variants ([2ec416f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2ec416fc4f949757ff8a1af55b50392c178596c5))
+* **Homepage:** Update banner design to match brand ([a5c2f67](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a5c2f678240ab25f56c4f44128dd11ef15b9bded))
+
 # [2.121.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.120.1...v2.121.0) (2022-05-23)
 
 
