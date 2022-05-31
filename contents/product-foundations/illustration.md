@@ -20,23 +20,29 @@ For example, a single empty state illustration could be abstracted enough to be 
 
 To better support reuse, the [illustration library](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/Illustration-library?node-id=0%3A1) in Figma also contains dozens of small illustration components that represent concepts found throughout the product. These small illustrations can be used on their own, or as part of a larger illustration.
 
-<figure class="figure" role="figure" aria-label="An element and components combine as part of a larger illustration.">
+<figure class="figure" role="figure" aria-label="Elements come together as part of a larger illustration.">
   <img class="figure-img p-a-5" src="/img/illus-reuse.svg" alt="Illustration elements and components assembled into larger illustration" role="img" />
-  <figcaption class="figure-caption">An element and components combine as part of a larger illustration.</figcaption>
+  <figcaption class="figure-caption">Elements come together as part of a larger illustration.</figcaption>
 </figure>
 
-By combining a multipurpose mindset with reusable components, the time it takes to create a new illustration, and the resulting number of illustrations, should both be reduced. This is a win both for designers, and users where time and consistency matters.
+By combining a multipurpose mindset with reusable components, the time it takes to create a new illustration, and the resulting number of illustrations, should both be reduced. This is a win both for designers and users where time and consistency matters.
 
 ## Style
 
-The illustration style is a derivative of the [GitLab Brand Standards](https://about.gitlab.com/handbook/marketing/corporate-marketing/brand-activation/brand-standards/#brand-resources), and is designed to work both in light and dark UI.
+Product illustration style derives from the [GitLab Brand Design marketing illustrations](/brand-design/marketing-illustrations) guidelines. It's designed to work in both light and dark UI by placing most objects in or above containers with solid fills.
+
+Use [brand colors](/brand-design/color) to create continuity with the larger GitLab brand. White, charcoal, and purple are used most frequently; the remaining colors are used to highlight and accent objects within an illustration. Specific uses are listed below.
 
 ### Fill
 
-A solid fill gives an element visual weight, emphasis, and dimension.
+All shapes have a solid fill, or overlap an element with a fill, so that they remain visible against any background color.
 
-- Three steps for each hue provides a base (default) along with a highlight and shadow so that individual objects can have dimension and separate objects of the same hue can come forward or recede by comparison to each other.
-- Transparency is used for fills, containers, and backgrounds where the object recedes in both light/dark UI. The transparency allows it to blend with the background so the effect is similar regardless of theme.
+- White is used for a majority of fills.
+- Purple 01p may be used to highlight the main ‘action’ or emphasis of the illustration.
+- Primary oranges and Purple 02p are used sparingly in favor of the secondary palette.
+- Secondary purples are used for background fills and muted elements. Note that muted elements will appear much stronger on a dark surface unless place on or over a container with a lighter fill.
+- Teals are useful to communicate positive actions or success.
+- The remaining colors in the secondary palette are used as highlights, shadows, and accents to differentiate objects within the illustration.
 
 <div class="figma-embed" aria-label="Illustration color palette" role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Fpage-id%3D947%253A12232%26node-id%3D947%253A12407%26viewport%3D241%252C48%252C1%26scaling%3Dmin-zoom%26starting-point-node-id%3D947%253A12407%26hotspot-hints%3D0" allowfullscreen></iframe>
@@ -44,16 +50,15 @@ A solid fill gives an element visual weight, emphasis, and dimension.
 
 ### Stroke
 
-A stroke encapsulates an element, whether filled or not, and is used for line work.
+A stroke encapsulates most elements and is used for line work and depicting motion or action.
 
-- The default stroke is **4px**, but **2px** can be used for the occasional detail.
-- Similar to a transparent fill, a transparent stroke blends with the background so receding effect is similar regardless of theme.
-- A dashed stroke makes connections and infers empty or unpopulated elements.
-- A line uses rounded caps, unless doing so would misrepresent the object.
-- Round line joins are optional and also depend on the object.
-- Align the stroke to the center or inside of the shape.
+- All strokes use a **2px** weight and are aligned to the center or inside of the shape.
+- A dashed stroke makes connections and conveys empty or unpopulated elements.
+- A line uses square caps. Miter line joins are the default, but a bevel can be used if the resulting point is too extreme.
+- Charcoal is used for object strokes and small fill areas. Note that these strokes may not be visible on a dark surface and in most cases should overlap a background container.
+- Purple 04s can be used on strokes that make connections, depict motion, or represent unpopulated elements.
 
-<div class="figma-embed" aria-label="Stroke color palette and stules" role="img">
+<div class="figma-embed" aria-label="Stroke color palette and styles" role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Fpage-id%3D947%253A12232%26node-id%3D1018%253A12285%26viewport%3D241%252C48%252C1%26scaling%3Dmin-zoom%26starting-point-node-id%3D1018%253A12285%26hotspot-hints%3D0" allowfullscreen></iframe>
 </div>
 
@@ -63,8 +68,8 @@ An illustration is primarily comprised of geometric shapes. Use circles, rectang
 
 ### Border radius
 
-- Use a multiple of **2px** to keep values even when scaling up or down between grid sizes.
-- Use minimal or no border radius to represent sharp corners, and anywhere between **4px** to **12px** for softer, rounded objects.
+- Corners and angles have no border radius by default, but a border radius between **4px** to **16px** can be used for softer, rounded objects.
+- When possible, apply a border radius to the bottom right corner of a shape to create an upward sweep and add a bit of personality.
 
 ### Content
 
@@ -77,24 +82,6 @@ An illustration is primarily comprised of geometric shapes. Use circles, rectang
 Using predefined grids and sizes not only helps illustrations feel more consistent and intentional throughout the product, they also add helpful and meaningful constraints to reduce the time it takes to create an illustration.
 
 An illustration can use either a large [isometric grid](#isometric-grid), or one of the three [focal point grid](#focal-point-grid) sizes to align with the use case.
-
-#### Isometric grid
-
-An isometric grid provides depth to concepts which can convey process, relationship, and parts. An isometric illustration isn't necessarily more complex, it's just leveraging dimension as an added attribute.
-
-- **Large** (only): **288px × 288px** frame size. Used for feature promotion.
-- An isometric grid uses guides that are rotated **30º** from the horizontal plane.
-- Three subgrids are available to handle different angles: ramp left, ramp right, and ramp forward.
-
-<figure class="figure" role="figure" aria-label="Isometric grid and subgrids">
-  <img class="figure-img p-a-5" src="/img/illus-isometric.svg" alt="Isometric grid lines and subgrid lines" role="img" />
-  <figcaption class="figure-caption">Isometric grid and subgrids</figcaption>
-</figure>
-
-<figure class="figure" role="figure" aria-label="Isometric illustration example">
-  <img class="figure-img p-a-5" src="/img/illus-isometric-example.svg" alt="Document scan text example" role="img" />
-  <figcaption class="figure-caption">Isometric illustration example</figcaption>
-</figure>
 
 #### Focal point grid
 
@@ -116,6 +103,20 @@ Not all illustrations will have multiple objects or objects that need to align t
   <figcaption class="figure-caption">Focal point grid example</figcaption>
 </figure>
 
+#### Isometric grid
+
+An isometric grid provides depth to concepts which can convey process, relationship, and parts. An isometric illustration isn't necessarily more complex, it's just leveraging dimension as an added attribute.
+
+- **Large** (only): **288px × 288px** frame size. Used for feature promotion.
+- An isometric grid uses guides that are rotated **30º** from the horizontal plane.
+- Three subgrids are available to handle different angles: ramp left, ramp right, and ramp forward.
+
+<figure class="figure" role="figure" aria-label="Isometric grid and subgrids">
+  <img class="figure-img p-a-5" src="/img/illus-isometric.svg" alt="Isometric grid lines and subgrid lines" role="img" />
+  <figcaption class="figure-caption">Isometric grid and subgrids</figcaption>
+</figure>
+
+<todo>Add isometric example</todo>
 #### Size
 
 While an illustration will always be created using one of the grid sizes above, the final output dimensions follow these rules:
