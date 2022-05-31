@@ -4,7 +4,6 @@ description: A card displays a single group of content within a set of similar g
 stories:
   - base-card--default
 related:
-  - list
   - table
 ---
 
@@ -36,7 +35,7 @@ related:
 ### When not to use
 
 - A card shouldn't be used for the sole purpose of styling a single block of content. Use available [utility classes](https://unpkg.com/browse/@gitlab/ui/src/scss/utilities.scss) instead.
-- If you're only displaying static text or items that don't require comparison or additional grouping, consider using a [list](/components/list) instead.
+- If you're only displaying static text or items that don't require comparison or additional grouping, consider using a semantic HTML list instead.
 - If you need to present or compare data, consider using a [table](/components/table) instead.
 - If you need to show a high level overview of a single data point, use a [single stat](/data-visualization/single-stat) component.
 

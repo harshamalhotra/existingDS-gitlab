@@ -244,10 +244,6 @@
             "path": "label"
           },
           {
-            "title": "List",
-            "path": "list"
-          },
-          {
             "title": "Modal",
             "path": "modal"
           },
