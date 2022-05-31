@@ -5,7 +5,6 @@ stories:
   - base-pagination--default
 related:
   - button
-  - list
   - path
   - /regions/navigation
   - infinite-scroll

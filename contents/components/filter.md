@@ -6,7 +6,6 @@ stories:
 related:
   - token
   - search
-  - list
   - dropdown
 ---
 

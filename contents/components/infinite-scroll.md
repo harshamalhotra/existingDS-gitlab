@@ -4,7 +4,6 @@ description: Infinite scroll helps users parse a large number of items by breaki
 stories:
   - base-infinite-scroll--default
 related:
-  - list
   - pagination
   - spinner
 ---

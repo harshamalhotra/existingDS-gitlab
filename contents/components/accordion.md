@@ -37,7 +37,7 @@ related:
 
 - Displaying critical system information or a primary action to be taken on the page. (for example, [alerts](/components/alert), confirmation or cancellation buttons).
 - Displaying navigation elements such as [tabs](/components/tabs).
-- Displaying links pointing to sections of the same page, instead use a [list](/components/list).
+- Displaying links pointing to sections of the same page, instead use a semantic HTML list.
 - Creating hierarchy levels by nesting them within each other. If you need to add hierarchy to the content use a [tree](/components/tree).
 - Displaying a set of visual components following the same style, prefer using Collapsable.(TODO: Add link to collapsable).
 

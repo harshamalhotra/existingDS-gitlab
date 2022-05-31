@@ -4,7 +4,6 @@ description: A tree component structures parent and child nodes into a meaningfu
 related:
 - accordion
 - breadcrumb
-- list
 ---
 
 ## Examples
@@ -36,7 +35,7 @@ related:
 
 - If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
 - To indicate page location in a navigational hierarchy, use a [breadcrumb](/components/breadcrumb) instead.
-- If you're organizing general content in a structured way, consider using the [list](/components/list) component instead.
+- If you're organizing general content in a structured way, consider using a semantic HTML list instead.
 
 ### Appearance
 

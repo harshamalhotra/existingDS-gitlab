@@ -52,7 +52,7 @@ Be cautious when allowing drag and drop in a large collection with dozens or hun
 ### Related patterns
 
 - [Table](/components/table)
-- [List](/components/list)
+- List
 
 ## Cursors
 
