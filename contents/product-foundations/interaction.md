@@ -25,6 +25,10 @@ Items contained in a list can be draggable to help a user manually reorder them.
 
 On drag, draggable items should be minimized to only show their title. For example, if you’re dragging an epic swimlane in an issue board, it would only show its title on drag and it would hide the rest of its content until it‘s dropped. This allows more drop areas to be visible and not be blocked by large draggable items.
 
+Draggable items should not impede other functionality, like scrolling on mobile or activating a link within it.
+
+If items can be reordered with a mouse, they should also be able to be reordered by keyboard.
+
 #### On drop
 
 - When dragging an item over a droppable area, a solid blue line should appear to show that an item can be dropped in that area.
