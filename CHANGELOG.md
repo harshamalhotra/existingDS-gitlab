@@ -1,3 +1,24 @@
+# [2.123.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.122.0...v2.123.0) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.15.0 ([717867f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/717867fa7b8374c31fa266595bd644af5e10337b))
+* **deps:** update dependency @gitlab/ui to v40.6.6 ([ff639d8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ff639d870314e95fba42702dc4f010db31445ceb))
+* **deps:** update dependency @gitlab/ui to v40.7.1 ([1df2e59](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1df2e59da5acffde715607714e424471b5129e0d))
+* **deps:** update dependency @gitlab/ui to v41 ([261de45](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/261de4503ee17e9def83a2a7b990ccf59c6029f4))
+* **deps:** update dependency @gitlab/ui to v41.1.0 ([ddee5b0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ddee5b0caedcfaa352dac7aef497b8b1fe10a37e))
+* **deps:** update dependency @gitlab/ui to v41.2.0 ([a59fa9c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a59fa9cf10002e6e2f947d19bb87a28c7da06cd7))
+
+
+### Features
+
+* **Drawer:** Add help drawer guidelines ([32c4a38](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32c4a38564b86f4f6db3effa23404d8411628052))
+* **Drawer:** Add help drawer guidelines ([9bc463f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9bc463f066326d0662cbe94acd78ab27d8d08a80))
+* **Illustration:** Update guidelines to align with brand ([5e2301d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5e2301dabbda639c40a6138d027d1effa912b9c6))
+* **Interactions:** Add new use considerations ([cf8945a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cf8945a6520db7c175adeb14b22be222efe5162f))
+* **List:** Deprecate list as a component ([557fdde](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/557fddec43682ad9ef4fdc930d4347bb53d84aac))
+
 # [2.122.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.121.0...v2.122.0) (2022-05-30)
 
 
