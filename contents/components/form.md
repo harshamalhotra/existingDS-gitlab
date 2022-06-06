@@ -107,7 +107,7 @@ Form components may display the following behaviors:
 
 Validation is shown inline and may happen in real-time or on form submission. Real-time validation should confirm correct content or help prevent users from submitting the form with incorrect information.
 
-Validation should always be visible and not placed in a tooltip. The validation message is placed directly below the input, and above any help text.
+A validation message should always be visible and not placed in a tooltip. The message is placed directly below the input and above any help text.
 
 There are three types of validation messages:
 
