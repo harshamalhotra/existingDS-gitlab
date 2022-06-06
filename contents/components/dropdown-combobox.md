@@ -42,6 +42,12 @@ While the term "dropdown" generally refers to an element that reveals a related 
 - All panels can be closed by clicking outside of them, using the <kbd>esc</kbd> key, or by focus moving to an element outside of the component.
 - A limited amount of options that don't scroll can be fixed at the bottom of a dropdown panel.
 
+#### Validation
+
+Error validation is shown inline and may happen in real-time or on submission if used in a form. Real-time validation should help a user understand and remedy the error if possible.
+
+A validation message should always be visible and not placed in a tooltip. The message is placed directly below the trigger element, similar to [form validation](/components/form/#validation), and both are presented in an error state, which changes the text and border color of the trigger element to red.
+
 ### Content
 
 - Placeholder text in the input should only be used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) input, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose.
