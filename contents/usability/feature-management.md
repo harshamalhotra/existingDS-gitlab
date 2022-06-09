@@ -41,6 +41,8 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 * Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
 * When using the icon only badge, use a [tooltip](/components/tooltip) to display the tier name.
+* Tier badge should only be displayed if the active plan is lower than that of the feature. For example if the active plan is Ultimate, and the related feature is also Ultimate, there is no need to display the tier badge.
+* For trials, the tier badge should always be displayed.
 
 #### Behaviour
 
