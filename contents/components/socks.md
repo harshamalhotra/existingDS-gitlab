@@ -5,7 +5,7 @@ description: Socks represent a unique way to warm your feet.
 
 ## Examples
 
-![GitLab socks](/img/component-socks.png)
+![GitLab socks](/img/component-socks.jpg)
 
 ## Structure
 
