@@ -1,3 +1,17 @@
+# [2.124.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.123.0...v2.124.0) (2022-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([a202a1a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a202a1a60c7ae75c6249902495e31462077d8153))
+
+
+### Features
+
+* **Dropdowns:** Add validation notes ([ab0d2cc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ab0d2cc7f39bd8eb7a132f8c4438843a2cb6ba3a))
+* **empty-state:** add considerations to Blank content use case ([d9333e6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d9333e61f3e4fcc42a7e3bab7ff74e5e5697a88b))
+* **FeatureManagement:** Usage update ([f120b89](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f120b890e8f81a7c9680709aab254f9fba843578))
+
 # [2.123.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.122.0...v2.123.0) (2022-06-06)
 
 
