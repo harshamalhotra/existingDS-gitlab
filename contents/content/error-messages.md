@@ -17,9 +17,13 @@ Error messages can be persistent, dismissible, or temporary. In order to be effe
 
 ### Concise
 
-Describe the error message and always inform users what has happened, and how to resolve it. The general [voice and tone](/content/voice-tone/#clear-error-messages) guidelines for GitLab’s public communications should apply to all error messages.
+An error message should be helpful and clear. Describe the error, inform users about what has happened, and if possible, how to resolve it. The general [voice and tone](/content/voice-tone/#clear-error-messages) guidelines for GitLab’s public communications should apply to all error messages. An overly familiar tone of voice can be perceived as careless in the context of error resolution, especially if the error can't be easily resolved by the user.
 
-Use messages like:
+Avoid using messages like:
+
+- Whoops, GitLab is currently unavailable.
+
+Instead, use messages like:
 
 - An error occurred while importing the project to GitLab. For more information, see how to [import your project from GitHub to GitLab](https://docs.gitlab.com/ee/user/project/import/github.html).
 - The project name must be 40 characters or fewer.
