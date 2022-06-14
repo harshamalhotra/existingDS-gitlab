@@ -4,6 +4,11 @@ name: Marketing illustrations
 
 ## Overview
 
+<figure class="figure" role="figure" aria-label="Illustration sample">
+  <img class="figure-img p-a-5 img-50" src="/img/brand/marketing-illustrations.svg" alt="GitLab illustration banner sample" role="img" />
+  <figcaption class="figure-caption">Illustration banner sample</figcaption>
+</figure>
+
 Illustrations are the primary visual tool that we use throughout our marketing materials to depict GitLab’s values, features, user outcomes, and abstract concepts. The illustrations are an extension of our unique iconography system, and both reinforce our brand personality and are inspired by our values in the following ways:
 
 - Overlapping elements with overlays, which highlight collaboration and transparency

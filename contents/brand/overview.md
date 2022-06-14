@@ -42,19 +42,20 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 - [CMYK swatches](https://drive.google.com/file/d/1jHEZsVcdw4i-qJlgcCTfLBDn6XS08eVx/view?usp=sharing)
 
 **Marketing illustrations**
-- [Illustration library](https://drive.google.com/drive/folders/1GLoJ1Ua55vqTcYVfobcRunu9r7mQiLDq?usp=sharing)
+- [Illustration library](https://drive.google.com/drive/folders/1GLoJ1Ua55vqTcYVfobcRunu9r7mQiLDq?usp=sharing) (Internal access only)
 - [RGB swatches, secondary palette](https://drive.google.com/file/d/1kCcvxYMKPkDCEFQd6imQcHhFGC14Hgte/view?usp=sharing)
 - [CMYK swatches - secondary palette](https://drive.google.com/file/d/1J2ZutCXZPJHQc9fgHvJYaVFSkOtlyn4t/view?usp=sharing)
 
 **Marketing icons**
-- [Icon library](https://drive.google.com/drive/u/1/folders/1dsRceA94H8CI0q7JAeWwEuWoNUuqdGq-)
-- [Software development lifecycle](https://drive.google.com/drive/u/1/folders/15kLTAKngeVEE7dWbP471EVKfhF25kSnN)
+- [Icon library](https://drive.google.com/drive/folders/1dsRceA94H8CI0q7JAeWwEuWoNUuqdGq-?usp=sharing) (Internal access only)
+- [Software development lifecycle](https://drive.google.com/drive/folders/15kLTAKngeVEE7dWbP471EVKfhF25kSnN?usp=sharing) (Internal access only)
 
 **Photography**
-- [Photo library](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing)
+- [Photo library](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing) (Internal access only)
 - [Adobe stock](https://stock.adobe.com/)
 
 **Templates**
+- [General GitLab-themed deck template](https://docs.google.com/presentation/d/1xuw2RrjoSPx69p9v7aacrustmVto8cKWaFn_YK7Riug/edit#slide=id.g1287bf62b57_0_209) with [instructions](https://about.gitlab.com/handbook/tools-and-tips/#google-slides)
 - [GitLab pitch deck template](https://docs.google.com/presentation/d/1vtFnh8DU6ZZzASTHg83UrhM6LJWqo5lq9mJDAY2ILpw/edit?usp=sharing)
 
 **Quick links**
