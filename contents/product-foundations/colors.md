@@ -885,7 +885,7 @@ The neutral palette is primarily used within components to help differentiate hi
       <div class="color">
         <div class="color-overview c-background-gray-10 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$gray-10</span>
-          <span class="hex f-small">#fafafa</span>
+          <span class="hex f-small">#f5f5f5</span>
         </div>
       </div>
       <div class="color">
