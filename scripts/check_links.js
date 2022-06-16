@@ -1,4 +1,4 @@
-const consola = require('consola');
+/* eslint-disable no-console */
 
 // gitlab.com pages tend to throw 503 errors against this sort of scan, so we cannot confidently
 // rely on that error code to report broken links. For now, we only consider 404 errors to avoid
@@ -11,7 +11,7 @@ async function checkLinks() {
   const checker = new linkinator.LinkChecker();
 
   checker.on('pagestart', (url) => {
-    consola.info(`Scanning ${url}`);
+    console.log(`Scanning ${url}`);
   });
 
   const result = await checker.check({
@@ -23,14 +23,14 @@ async function checkLinks() {
   const succeeded = brokenLinks.length === 0;
 
   if (succeeded) {
-    consola.success('Links appear to be okay.');
+    console.log('Links appear to be okay.');
     process.exitCode = 0;
   } else {
-    consola.error('Some links appear to be broken:');
+    console.error('Some links appear to be broken:');
     brokenLinks.forEach((link) => {
-      consola.log(`URL: ${link.url}`);
-      consola.log(`Status code: ${link.status}`);
-      consola.log(`Parent: ${link.parent}\n`);
+      console.log(`URL: ${link.url}`);
+      console.log(`Status code: ${link.status}`);
+      console.log(`Parent: ${link.parent}\n`);
     });
     process.exitCode = 1;
   }
