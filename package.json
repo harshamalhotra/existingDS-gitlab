@@ -23,7 +23,7 @@
     "test:unit": "jest",
     "lint:fix": "yarn run eslint:fix && yarn run prettier-all-save",
     "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi",
-    "check-links": "start-server-and-test 'http-server ./public -c-1 --silent' 8080 'node ./scripts/check_links.js'",
+    "check-links": "start-server-and-test 'http-server ./public -c-1 --silent' 8080 'node ./scripts/check_links.mjs'",
     "precheck-links": "yarn build"
   },
   "engines": {

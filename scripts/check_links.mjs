@@ -1,4 +1,6 @@
 /* eslint-disable no-console */
+// const linkinator = await import('linkinator');
+import { LinkChecker } from 'linkinator'
 
 // gitlab.com pages tend to throw 503 errors against this sort of scan, so we cannot confidently
 // rely on that error code to report broken links. For now, we only consider 404 errors to avoid
@@ -7,8 +9,7 @@ const FAILURE_CODES = [404];
 
 async function checkLinks() {
   // eslint-disable-next-line import/no-unresolved
-  const linkinator = await import('linkinator');
-  const checker = new linkinator.LinkChecker();
+  const checker = new LinkChecker();
 
   checker.on('pagestart', (url) => {
     console.log(`Scanning ${url}`);
