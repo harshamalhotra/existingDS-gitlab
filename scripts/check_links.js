@@ -26,11 +26,12 @@ async function checkLinks() {
     console.log('Links appear to be okay.');
     process.exitCode = 0;
   } else {
-    console.error('Some links appear to be broken:');
+    const linksString = brokenLinks.length > 1 ? 'links appear' : 'link appears';
+    console.error(`\n${brokenLinks.length} ${linksString} to be broken:\n`);
     brokenLinks.forEach((link) => {
-      console.log(`URL: ${link.url}`);
-      console.log(`Status code: ${link.status}`);
-      console.log(`Parent: ${link.parent}\n`);
+      console.log(`Broken URL: ${link.url}`);
+      console.log(`  Status code: ${link.status}`);
+      console.log(`  Appears in: ${link.parent}\n`);
     });
     process.exitCode = 1;
   }
