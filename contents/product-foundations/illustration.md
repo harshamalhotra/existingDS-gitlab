@@ -81,7 +81,7 @@ An illustration is primarily comprised of geometric shapes. Use circles, rectang
 
 Using predefined grids and sizes not only helps illustrations feel more consistent and intentional throughout the product, they also add helpful and meaningful constraints to reduce the time it takes to create an illustration.
 
-An illustration can use either a large [isometric grid](#isometric-grid), or one of the three [focal point grid](#focal-point-grid) sizes to align with the use case.
+An illustration can use either a large [isometric grid](#isometric-grid), or one of the four [focal point grid](#focal-point-grid) sizes to align with the use case.
 
 #### Focal point grid
 
@@ -92,10 +92,11 @@ Not all illustrations will have multiple objects or objects that need to align t
 - **Large**: **288px × 288px** frame size. Used for feature promotion.
 - **Medium**: **144px × 144px** frame size. Used for empty states, error states, and banners.
 - **Small** ("spot" illustration): **72px × 72px** frame size. Used when space is limited.
+- **Extra small**: **36px × 36px** frame size. Used for individual illustration elements that are combined with other elements to form a larger composition, or to connect other elements in the UI.
 
 <figure class="figure" role="figure" aria-label="Focal point grid sizes: large, medium, and small">
   <img class="figure-img p-a-5" src="/img/illus-focal-point.svg" alt="Large, medium, and small focal point grid sizes" role="img" />
-  <figcaption class="figure-caption">Focal point grid sizes: large, medium, and small</figcaption>
+  <figcaption class="figure-caption">Focal point grid sizes: large, medium, small, and extra small</figcaption>
 </figure>
 
 <figure class="figure" role="figure" aria-label="Focal point grid example">
@@ -122,7 +123,7 @@ An isometric grid provides depth to concepts which can convey process, relations
 While an illustration will always be created using one of the grid sizes above, the final output dimensions follow these rules:
 
 - Small illustrations are always output at **72px × 72px**, even if that means there's extra white space in the frame. This helps ensure that when multiple small illustrations are present in the same context they will optically align. [Icons](/product-foundations/iconography) follow a similar approach.
-- Medium and large illustrations artwork must fill either the width, height, or both and the remaining whitespace be removed before exporting (frame cropped to artwork). Since only one illustration at these sizes should be present in a given context, this should create no alignment issues. Use [GitLab UI utility classes](https://unpkg.com/browse/@gitlab/ui@32.45.0/src/scss/utilities.scss) if additional space is needed in a page layout.
+- Large, medium, and extra small illustrations must fill either the width or the height of the frame (or both), and any remaining whitespace must be removed before exporting (frame cropped to artwork) to prevent alignment issues. Use [GitLab UI utility classes](https://unpkg.com/browse/@gitlab/ui@32.45.0/src/scss/utilities.scss) if additional space is needed in a page layout.
 
 ## Contribute
 
