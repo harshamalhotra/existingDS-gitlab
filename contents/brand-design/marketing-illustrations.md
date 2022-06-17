@@ -5,7 +5,7 @@ name: Marketing illustrations
 ## Overview
 
 <figure class="figure" role="figure" aria-label="Illustration sample">
-  <img class="figure-img p-a-5 img-50" src="/img/brand/marketing-illustrations.svg" alt="GitLab illustration banner sample" role="img" />
+  <img class="figure-img p-a-5" src="/img/brand/marketing-illustrations.svg" alt="GitLab illustration banner sample" role="img" />
   <figcaption class="figure-caption">Illustration banner sample</figcaption>
 </figure>
 
