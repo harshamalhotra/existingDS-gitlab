@@ -1,11 +1,13 @@
 /* eslint-disable no-console */
 // const linkinator = await import('linkinator');
-import { LinkChecker } from 'linkinator'
+import { LinkChecker } from 'linkinator';
 
 // gitlab.com pages tend to throw 503 errors against this sort of scan, so we cannot confidently
 // rely on that error code to report broken links. For now, we only consider 404 errors to avoid
 // false positives.
 const FAILURE_CODES = [404];
+const SITE_HOST = 'localhost:8080';
+const ALLOWED_HOST_PATTERNS = [SITE_HOST, /gitlab\.io$/, /gitlab\.com$/];
 
 async function checkLinks() {
   // eslint-disable-next-line import/no-unresolved
@@ -16,8 +18,14 @@ async function checkLinks() {
   });
 
   const result = await checker.check({
-    path: 'http://localhost:8080/',
+    path: `http://${SITE_HOST}`,
     recurse: true,
+    linksToSkip: (rawUrl) =>
+      new Promise((resolve) => {
+        const url = new URL(rawUrl);
+        const allowed = ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
+        resolve(!allowed);
+      }),
   });
 
   const brokenLinks = result.links.filter((link) => FAILURE_CODES.includes(link.status));
