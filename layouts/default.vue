@@ -41,7 +41,7 @@ export default {
 
     <main :class="contentWrapper">
       <nuxt />
-      <footer class="content footer limited m-b-7">
+      <footer class="content footer limited gl-mb-7">
         <div class="row justify-content-center">
           <edit-this-page-link
             edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/"
