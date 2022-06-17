@@ -29,14 +29,14 @@ If you're testing in Safari or Firefox in macOS, you'll likely have to update a 
 1. Go to **System Preferences > Keyboard > Shortcuts**.
 1. Check the "Use keyboard navigation to move focus between controls" option.
 
-<img class="d-block a-center m-t-7 m-b-7" style="width:100%; max-width:668px;" src="/img/a11y-keyboard-macos.png" alt="macOS keyboard settings" />
+<img class="d-block a-center gl-mt-7 m-b-7" style="width:100%; max-width:668px;" src="/img/a11y-keyboard-macos.png" alt="macOS keyboard settings" />
 
 **For Safari:**
 
 1. Open **Preferences > Advanced**.
 1. Check the "Press Tab to highlight each item on a webpage" option.
 
-<img class="d-block a-center m-t-7 m-b-7" style="width:100%; max-width:792px;" src="/img/a11y-keyboard-safari.png" alt="Safari browser advanced settings" />
+<img class="d-block a-center gl-mt-7 m-b-7" style="width:100%; max-width:792px;" src="/img/a11y-keyboard-safari.png" alt="Safari browser advanced settings" />
 
 ## Focus order
 

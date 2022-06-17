@@ -357,7 +357,7 @@ Though deciding which color to use depends on the situation, here are some gener
       </div>
     </div>
   </div>
-  <div class="col col-50 md m-t-7 p-b-7">
+  <div class="col col-50 md gl-mt-7 p-b-7">
     <h3>Orange</h3>
     <div class="distributed palette">
       <div class="color">
@@ -527,7 +527,7 @@ Though deciding which color to use depends on the situation, here are some gener
       </div>
     </div>
   </div>
-  <div class="col col-50 md m-t-7">
+  <div class="col col-50 md gl-mt-7">
     <h3>Red</h3>
     <div class="distributed palette">
       <div class="color">
@@ -697,7 +697,7 @@ Though deciding which color to use depends on the situation, here are some gener
       </div>
     </div>
   </div>
-  <div class="col col-50 md m-t-7">
+  <div class="col col-50 md gl-mt-7">
     <h3>Purple</h3>
     <div class="distributed palette">
       <div class="color">
@@ -1296,7 +1296,7 @@ A user may choose between ten different themes to customize the appearance of th
       </div>
     </div>
   </div>
-  <div class="col col-25 md m-t-7">
+  <div class="col col-25 md gl-mt-7">
     <h3>Red</h3>
     <div class="distributed palette">
       <div class="color">
@@ -1367,7 +1367,7 @@ A user may choose between ten different themes to customize the appearance of th
       </div>
     </div>
   </div>
-  <div class="col col-25 md m-t-7">
+  <div class="col col-25 md gl-mt-7">
     <h3>Light red</h3>
     <div class="distributed palette">
       <div class="color">
@@ -1439,7 +1439,7 @@ A user may choose between ten different themes to customize the appearance of th
     </div>
   </div>
 
-  <div class="col col-25 md m-t-7">
+  <div class="col col-25 md gl-mt-7">
     <h3>Dark / Light</h3>
     <p>The dark and light (gray) themes use the <a href="#neutral-palette">neutral palette</a>.</p>
   </div>
