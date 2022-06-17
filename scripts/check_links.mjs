@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-// const linkinator = await import('linkinator');
+// eslint-disable-next-line import/no-unresolved
 import { LinkChecker } from 'linkinator';
 
 // gitlab.com pages tend to throw 503 errors against this sort of scan, so we cannot confidently
@@ -10,7 +10,6 @@ const SITE_HOST = 'localhost:8080';
 const ALLOWED_HOST_PATTERNS = [SITE_HOST, /gitlab\.io$/, /gitlab\.com$/];
 
 async function checkLinks() {
-  // eslint-disable-next-line import/no-unresolved
   const checker = new LinkChecker();
 
   checker.on('pagestart', (url) => {
