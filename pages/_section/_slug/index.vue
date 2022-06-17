@@ -19,6 +19,6 @@ export default {
     <div class="component md typography">
       <nuxt-content :document="page" />
     </div>
-    <related-pages :related="page.related" class="m-t-6" />
+    <related-pages :related="page.related" class="gl-mt-6" />
   </div>
 </template>
