@@ -968,7 +968,7 @@ The neutral palette is primarily used within components to help differentiate hi
 ## Transparency
 
 Transparency is used only to indicate hover and active states within themes. Each theme has a series of four transparencies to utilize alpha levels ranging from 0.02 to 0.08.
-    <div class="distributed palette neutral m-b-6">
+    <div class="distributed palette neutral gl-mb-6">
       <div class="color">
         <div class="color-overview t-gray-a-02 p-t-3 p-r-5 p-b-3 p-l-5">
           <span class="variable">$t-gray-a-02</span>
@@ -1011,7 +1011,7 @@ A user may choose between ten different themes to customize the appearance of th
 - Green and light green share the same `$t-green-` variables.
 - Dark and light share the same `$t-gray-` variables.
 
-<div class="row m-b-6">
+<div class="row gl-mb-6">
   <div class="col col-25 md p-b-7">
     <h3>Indigo / Light indigo</h3>
     <div class="distributed palette">

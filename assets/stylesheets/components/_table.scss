@@ -4,7 +4,7 @@ table:not(.pika-table):not(.gl-table) {
   border: $border-width solid $border-color;
   border-collapse: collapse;
   text-align: left;
-  @extend .m-b-6;
+  @extend .gl-mb-6;
 
   thead {
     background: $gray-50;

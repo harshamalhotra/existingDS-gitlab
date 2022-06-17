@@ -31,7 +31,7 @@ The body font stack is used for all UI elements, except for code-related element
 
 GitLab uses two font weights within the application: normal and bold. A bold font weight can be used to emphasize specific UI elements, such as a title or input label.
 
-<table class="font-weight m-b-6">
+<table class="font-weight gl-mb-6">
 <thead>
 <tr>
 <th>Weight</th>
@@ -60,7 +60,7 @@ GitLab uses two font weights within the application: normal and bold. A bold fon
 
 There are a number of text colors defined in GitLab. Which color is used when depends on the location and purpose of the text.
 
-<table class="font-weight m-b-6">
+<table class="font-weight gl-mb-6">
 <thead>
 <tr>
 <th>Type</th>
