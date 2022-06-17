@@ -21,9 +21,9 @@ Proper color proportions are essential to maintaining GitLab’s look and feel. 
 | ------ | ------ | ------ | ------ | ------ |
 | <div class="color-overview p-a-3" style="background-color:#ffffff;"><span class="variable">White</span> </div> | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0 | White |
 | <div class="color-overview p-a-3 f-inverted" style="background-color:#171321;"><span class="variable">Charcoal</span> </div> | #171321 | 23, 19, 33 | 90, 68, 41, 90 | 433 C / 4280 U |
-| <div class="color-overview p-a-3" style="background-color:#FCA326;"><span class="variable">Orange 01p</span> </div> | #FCA326 | 252, 161, 33 | 0, 35, 81, 1 | 1375 C / 1365 U |
-| <div class="color-overview p-a-3" style="background-color:#FC6D26;"><span class="variable">Orange 02p</span> </div> | #FC6D26 | 252, 109, 38 | 0, 57, 85, 1 | 158 C / 144 U |
-| <div class="color-overview p-a-3 f-inverted" style="background-color:#E24329;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41 | 0, 70, 82, 11 | 7579 C / 1665 U |
+| <div class="color-overview p-a-3" style="background-color:#FCA326;"><span class="variable">Orange 01p</span> </div> | #FCA326 | 252, 161, 33 | 0, 40, 80, 5 | 1375 C / 1365 U |
+| <div class="color-overview p-a-3" style="background-color:#FC6D26;"><span class="variable">Orange 02p</span> </div> | #FC6D26 | 252, 109, 38 | 0, 60, 80, 5 | 158 C / 144 U |
+| <div class="color-overview p-a-3 f-inverted" style="background-color:#E24329;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41 | 0, 75, 80, 10 | 7579 C / 1665 U |
 | <div class="color-overview p-a-3" style="background-color:#A989F5;"><span class="variable">Purple 01p</span> </div> | #A989F5 | 169, 137, 245 | 40, 44, 0, 0 | 2645 C / 2645 CU |
 | <div class="color-overview p-a-3 f-inverted" style="background-color:#7759C2;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194 | 58, 76, 0, 0 | 2587 C / 2593 U |
 | <div class="color-overview p-a-3" style="background-color:#D1D0D3;"><span class="variable">Gray 01</span> </div> | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16 | Cool Gray 3 C /  Cool Gray 2 U |
