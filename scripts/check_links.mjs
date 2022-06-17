@@ -19,12 +19,10 @@ async function checkLinks() {
   const result = await checker.check({
     path: `http://${SITE_HOST}`,
     recurse: true,
-    linksToSkip: (rawUrl) =>
-      new Promise((resolve) => {
-        const url = new URL(rawUrl);
-        const allowed = ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
-        resolve(!allowed);
-      }),
+    linksToSkip: async (rawUrl) => {
+      const url = new URL(rawUrl);
+      return !ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
+    },
   });
 
   const brokenLinks = result.links.filter((link) => FAILURE_CODES.includes(link.status));
