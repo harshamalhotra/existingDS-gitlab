@@ -9,7 +9,7 @@ Layers addresses dimensional hierarchy and content relationships — not just to
 ### Small
 
 <figure class="figure" role="figure" aria-label="Small shadow example with elevation">
-  <img class="figure-img m-b-5" src="/img/layers/layers-shadow-small.png" alt="Small shadow example with elevation" role="img" />
+  <img class="figure-img gl-mb-5" src="/img/layers/layers-shadow-small.png" alt="Small shadow example with elevation" role="img" />
   <figcaption class="figure-caption">Small shadow example with elevation</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Surfaces that need an indication they can be manually interacted with. For examp
 ### Medium
 
 <figure class="figure" role="figure" aria-label="Medium shadow example with elevation">
-  <img class="figure-img m-b-5" src="/img/layers/layers-shadow-medium.png" alt="Medium shadow example with elevation" role="img" />
+  <img class="figure-img gl-mb-5" src="/img/layers/layers-shadow-medium.png" alt="Medium shadow example with elevation" role="img" />
   <figcaption class="figure-caption">Medium shadow example with elevation</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Surfaces that need boundary definition and appear on hover. For example, [popove
 ### Large
 
 <figure class="figure" role="figure" aria-label="Large shadow example with elevation">
-  <img class="figure-img m-b-5" src="/img/layers/layers-shadow-large.png" alt="Large shadow example with elevation" role="img" />
+  <img class="figure-img gl-mb-5" src="/img/layers/layers-shadow-large.png" alt="Large shadow example with elevation" role="img" />
   <figcaption class="figure-caption">Large shadow example with elevation</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ Layers that need to appear above a layer with an existing elevation should follo
 - Content scrolls beneath static elements
 
 <figure class="figure" role="figure" aria-label="Stacking layers example with elevation">
-  <img class="figure-img m-b-5" src="/img/layers/layers-scrolling.png" alt="Stacking layers example with elevation" role="img" />
+  <img class="figure-img gl-mb-5" src="/img/layers/layers-scrolling.png" alt="Stacking layers example with elevation" role="img" />
   <figcaption class="figure-caption">Stacking layers example with elevation</figcaption>
 </figure>
 
@@ -104,6 +104,6 @@ Layers that can be moved or dragged by the user use the large shadow to create a
 ### Use case 
 
 <figure class="figure" role="figure" aria-label="Interactive layers example with elevation">
-  <img class="figure-img m-b-5" src="/img/layers/layers-interactive.png" alt="Interactive layers example with elevation" role="img" />
+  <img class="figure-img gl-mb-5" src="/img/layers/layers-interactive.png" alt="Interactive layers example with elevation" role="img" />
   <figcaption class="figure-caption">Interactive layers example with elevation</figcaption>
 </figure>

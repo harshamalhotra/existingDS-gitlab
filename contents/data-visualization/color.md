@@ -455,13 +455,13 @@ Blue is always the default starting point, and `$data-viz-blue-500` is the base 
 
 <figure class="figure" role="figure" aria-label="Chevron-skipping pattern in a light UI">
   <img class="m-b-6" src="/img/dv-chevron-light-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
-  <img class="m-b-5" src="/img/dv-chips-light-ui.svg" alt="Step order from chevron-pattern for color sequence" role="img" />
+  <img class="gl-mb-5" src="/img/dv-chips-light-ui.svg" alt="Step order from chevron-pattern for color sequence" role="img" />
   <figcaption class="figure-caption">Chevron-skipping pattern in a light UI</figcaption>
 </figure>
 
 <figure class="figure figure--dark" role="figure" aria-label="Chevron-skipping pattern in a dark UI">
   <img class="m-b-6" src="/img/dv-chevron-dark-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
-  <img class="m-b-5" src="/img/dv-chips-dark-ui.svg" alt="Step order from chevron pattern" role="img" />
+  <img class="gl-mb-5" src="/img/dv-chips-dark-ui.svg" alt="Step order from chevron pattern" role="img" />
   <figcaption class="figure-caption">Chevron-skipping pattern in a dark UI</figcaption>
 </figure>
 
