@@ -173,7 +173,7 @@ check_links:
   needs: []
   allow_failure: true
   script:
-    - yarn
+    - yarn install --frozen-lockfile
     - yarn check-links
 
 semantic-release:
