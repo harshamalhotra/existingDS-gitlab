@@ -49,7 +49,7 @@ export default {
         <div class="gl-py-6"></div>
       </template>
     </client-only>
-    <div class="nav-sidebar__body m-b-3">
+    <div class="nav-sidebar__body gl-mb-3">
       <menu-item
         v-for="item in navTree.topLevelNodes"
         :key="item.id"

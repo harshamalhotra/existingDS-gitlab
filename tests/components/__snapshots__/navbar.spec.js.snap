@@ -30,7 +30,7 @@ exports[`navbar component renders sidebar properly 1`] = `
   </client-only-stub>
    
   <div
-    class="nav-sidebar__body m-b-3"
+    class="nav-sidebar__body gl-mb-3"
   >
     <ul
       class="nav-sidebar__section"
