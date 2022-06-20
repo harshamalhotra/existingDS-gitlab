@@ -167,6 +167,15 @@ sast:
   tags:
     - gitlab-org-docker
 
+check_links:
+  image: node:16
+  stage: test
+  needs: []
+  allow_failure: true
+  script:
+    - yarn install --frozen-lockfile
+    - yarn check-links
+
 semantic-release:
   extends: .semantic-release
   allow_failure: true

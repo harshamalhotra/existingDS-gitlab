@@ -14,7 +14,7 @@
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
     "build": "bash ./scripts/build.sh",
-    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "eslint": "eslint --ext .js,.mjs,.vue --ignore-path .gitignore .",
     "eslint:fix": "yarn run eslint --fix",
     "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
@@ -22,7 +22,9 @@
     "test": "bash ./scripts/test.sh",
     "test:unit": "jest",
     "lint:fix": "yarn run eslint:fix && yarn run prettier-all-save",
-    "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi"
+    "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi",
+    "check-links": "start-server-and-test 'http-server ./public -c-1 --silent' 8080 'node ./scripts/check_links.mjs'",
+    "precheck-links": "yarn build"
   },
   "engines": {
     "yarn": "^1.10.0"
@@ -49,11 +51,14 @@
     "@vue/test-utils": "1.3.0",
     "babel-core": "^7.0.0-bridge.0",
     "eslint": "8.17.0",
+    "http-server": "^14.1.0",
     "jest": "27.5.1",
     "jest-serializer-vue": "^2.0.2",
+    "linkinator": "^3.1.0",
     "prettier": "2.6.2",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
+    "start-server-and-test": "^1.14.0",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "2.6.12"
   },
