@@ -14,7 +14,7 @@
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
     "build": "bash ./scripts/build.sh",
-    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "eslint": "eslint --ext .js,.mjs,.vue --ignore-path .gitignore .",
     "eslint:fix": "yarn run eslint --fix",
     "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
