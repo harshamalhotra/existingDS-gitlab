@@ -1,3 +1,24 @@
+# [2.125.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.124.0...v2.125.0) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v2.19.0 ([f3cac8a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f3cac8a90cbbccf1f2d58c2166fac005163f6d9c))
+* **deps:** update dependency @gitlab/svgs to v2.20.0 ([91cd6e6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/91cd6e6212f676c9e1b0f16db281a4173a2791de))
+* **deps:** update dependency @gitlab/ui to v41.10.0 ([deeae43](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/deeae4310a66c1efff11c8005346df826e886bf1))
+* **deps:** update dependency @gitlab/ui to v41.6.0 ([644f4ae](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/644f4ae8af288be381ccf4552594087c25dfeac4))
+* **deps:** update dependency @gitlab/ui to v41.9.0 ([2c2ed08](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2c2ed080e32f37bc2df5f1d591f4010ea9d1c4d5))
+* **deps:** update dependency @gitlab/ui to v41.9.1 ([624da57](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/624da5790ec7d041ced1ae613f1298131bcfbe96))
+* **deps:** update dependency @gitlab/ui to v42 ([4cbb15d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4cbb15d5f0a86b4ac9188338b48de84773b251e8))
+* **Socks:** Optimise image size ([86d7445](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/86d7445ed02f826083261464b1d882ece4b3bb17))
+
+
+### Features
+
+* **Brand:** Edits to brand guidelines ([1bf0b60](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1bf0b604edcca3fe18c5c3baab56c0c3e2682d66))
+* **Color:** Update $gray-10 from #fafafa to #f5f5f5 ([ab07b01](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ab07b01ac3d13c80a6c9101116e2af01b8727b1e)), closes [#f5f5f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/f5f5f5)
+* **Illustration:** Add XS grid size ([8410a5e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8410a5e8c62c7e2d4c0fe176e9421e64c42259f4))
+
 # [2.124.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.123.0...v2.124.0) (2022-06-13)
 
 
