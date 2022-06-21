@@ -211,3 +211,16 @@
     height: 100%;
   }
 }
+
+// Compact table
+
+.table-compact {
+  font-size: $base-font-size;
+  line-height: 1.5;
+ 
+  p, ul {
+    // Repeat line height for specificity
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
+}

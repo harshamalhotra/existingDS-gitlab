@@ -1,17 +1,23 @@
 ---
-name: GitLab Accessibility Conformance Report
+name: GitLab Accessibility Conformance Report Revised Section 508 Edition
 ---
 
-## Revised Section 508 Edition
+**Based on Version 2.4Rev**, March 2022 ([template](https://www.itic.org/policy/accessibility/vpat))
 
-### Based on VPAT® Version 2.4
-
-- **Name of Product/Version:** GitLab 14.0
-- **Report Date:** August, 2021
+- **Name of Product/Version:** GitLab 15.0
+- **Report Date:** Revised June, 2022
 - **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 - **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
-- **Notes:** This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
-- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of static analysis tools and manual testing with assistive technologies. These tools include: [Axe plugin for Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [NVDA](https://www.nvaccess.org/download/), and VoiceOver on macOS.
+- **Notes:**
+  - This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
+  - The latest revision evaluates GitLab 15.0 and supersedes earlier versions of this report.
+  - **Table 3: Success Criteria, Level AAA** has been removed because the GitLab product has not been evaluated for WCAG 2.0 Level AAA conformance.
+  - **Chapter 4: Hardware** has been removed because the GitLab product is a web application and is not subject to the requirements of this section.
+  - GitLab supports the current and previous major version along with current minor version of the following browsers: Mozilla Firefox, Google Chrome, Chromium, Apple Safari, Microsoft Edge.
+  - GitLab does not support running with JavaScript disabled in the browser because several features require JavaScript extensively.
+  - View [GitLab installation minimum requirements](https://docs.gitlab.com/ee/install/requirements.html) for both the supported operating systems and the minimum requirements needed to install and use GitLab.
+  - Known accessibility issues are linked in the tables below and may also be found by searching [GitLab.com](https://gitlab.com/) (account required).
+- **Evaluation Methods Used:** Conformance to the listed accessibility standards has been evaluated by GitLab using a combination of analysis tools and manual testing with assistive technologies. These tools include, but are not limited to: [axe DevTools®](https://www.deque.com/axe/devtools/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [NVDA](https://www.nvaccess.org/download/), and VoiceOver on macOS.
 
 ### Applicable Standards/Guidelines
 
@@ -43,7 +49,7 @@ This report covers the degree of conformance for the following accessibility sta
         <a
           href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines"
           target="_blank"
-        >Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018</a>
+        >Revised Section 508 standards</a> - published January 18, 2017 and corrected January 22, 2018
       </td>
       <td>(Yes)</td>
     </tr>
@@ -71,7 +77,7 @@ Tables 1 and 2 also document conformance with Revised Section 508:
 
 ### Table 1: Success Criteria, Level A
 
-<table class="m-b-6">
+<table class="m-b-6 table-compact">
   <thead>
     <tr>
       <th>Criteria</th>
@@ -85,10 +91,17 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#text-equiv-all"
           target="_blank"
-        >1.1.1 Non-text Content</a> (Level A)
+        >1.1.1 Non-text Content</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
         <p>The product has many instances where non-text content does not have a text alternative:
@@ -107,7 +120,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"
           target="_blank"
-        >1.2.1 Audio-only and Video-only (Prerecorded)</a> (Level A)
+        >1.2.1 Audio-only and Video-only (Prerecorded)</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -122,7 +142,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#media-equiv-captions"
           target="_blank"
-        >1.2.2 Captions (Prerecorded)</a> (Level A)
+        >1.2.2 Captions (Prerecorded)</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -141,7 +168,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc"
           target="_blank"
-        >1.2.3 Audio Description or Media Alternative (Prerecorded)</a> (Level A)
+        >1.2.3 Audio Description or Media Alternative (Prerecorded)</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Not applicable
@@ -155,10 +189,17 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"
           target="_blank"
-        >1.3.1 Info and Relationships</a> (Level A)
+        >1.3.1 Info and Relationships</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
         <p>The product has many instances where information, structure, and relationships can not be programmatically determined:
@@ -173,7 +214,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"
           target="_blank"
-        >1.3.2 Meaningful Sequence</a> (Level A)
+        >1.3.2 Meaningful Sequence</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -187,7 +235,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"
           target="_blank"
-        >1.3.3 Sensory Characteristics</a> (Level A)
+        >1.3.3 Sensory Characteristics</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -201,7 +256,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"
           target="_blank"
-        >1.4.1 Use of Color</a> (Level A)
+        >1.4.1 Use of Color</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -219,7 +281,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio"
           target="_blank"
-        >1.4.2 Audio Control</a> (Level A)
+        >1.4.2 Audio Control</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Not applicable
@@ -233,10 +302,17 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
           target="_blank"
-        >2.1.1 Keyboard</a> (Level A)
+        >2.1.1 Keyboard</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
         <p>The product has many instances of content that is not operable through a keyboard:
@@ -251,7 +327,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping"
           target="_blank"
-        >2.1.2 No Keyboard Trap</a> (Level A)
+        >2.1.2 No Keyboard Trap</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -269,7 +352,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors"
           target="_blank"
-        >2.2.1 Timing Adjustable</a> (Level A)
+        >2.2.1 Timing Adjustable</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -283,7 +373,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#time-limits-pause"
           target="_blank"
-        >2.2.2 Pause, Stop, Hide</a> (Level A)
+        >2.2.2 Pause, Stop, Hide</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -298,7 +395,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#seizure-does-not-violate"
           target="_blank"
-        >2.3.1 Three Flashes or Below Threshold</a> (Level A)
+        >2.3.1 Three Flashes or Below Threshold</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -313,7 +417,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip"
           target="_blank"
-        >2.4.1 Bypass Blocks</a> (Level A)
+        >2.4.1 Bypass Blocks</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software) – Does not apply to non-web software</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs) – Does not apply to non-web docs</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -327,7 +438,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title"
           target="_blank"
-        >2.4.2 Page Titled</a> (Level A)
+        >2.4.2 Page Titled</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -341,7 +459,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order"
           target="_blank"
-        >2.4.3 Focus Order</a> (Level A)
+        >2.4.3 Focus Order</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -356,7 +481,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs"
           target="_blank"
-        >2.4.4 Link Purpose (In Context)</a> (Level A)
+        >2.4.4 Link Purpose (In Context)</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -374,7 +506,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id"
           target="_blank"
-        >3.1.1 Language of Page</a> (Level A)
+        >3.1.1 Language of Page</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -388,7 +527,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"
           target="_blank"
-        >3.2.1 On Focus</a> (Level A)
+        >3.2.1 On Focus</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -402,7 +548,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change"
           target="_blank"
-        >3.2.2 On Input</a> (Level A)
+        >3.2.2 On Input</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -416,7 +569,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"
           target="_blank"
-        >3.3.1 Error Identification</a> (Level A)
+        >3.3.1 Error Identification</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -425,9 +585,9 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <p>The product describes input errors to the user and identifies which item the error originated from.</p>
         <p>However, the identification and description of an error is not combined programmatically to help assistive technologies to identify an error and provide error information to the user:
         <a
-          href="https://gitlab.com/gitlab-org/gitlab/-/issues/292301"
+          href="https://gitlab.com/groups/gitlab-org/-/epics/7341"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab/-/issues/292301</a></p>
+        >https://gitlab.com/groups/gitlab-org/-/epics/7341</a></p>
       </td>
     </tr>
     <tr>
@@ -435,7 +595,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"
           target="_blank"
-        >3.3.2 Labels or Instructions</a> (Level A)
+        >3.3.2 Labels or Instructions</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -453,13 +620,20 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses"
           target="_blank"
-        >4.1.1 Parsing</a> (Level A)
+        >4.1.1 Parsing</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
-        <p>The product has many instances of non-unique ID values.
+        <p>The product has instances of non-unique ID values. Some of which are related to <code>.js-</code> prefixed IDs used specifically for JavaScript.
         <a
           href="https://gitlab.com/gitlab-org/gitlab/issues/17928"
           target="_blank"
@@ -471,10 +645,17 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#ensure-compat-rsv"
           target="_blank"
-        >4.1.2 Name, Role, Value</a> (Level A)
+        >4.1.2 Name, Role, Value</a> (Level A)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
         <p>The product has many instances where the name, role, or value cannot be programmatically determined or set.
@@ -489,7 +670,7 @@ Tables 1 and 2 also document conformance with Revised Section 508:
 
 ### Table 2: Success Criteria, Level AA
 
-<table>
+<table class="table-compact">
   <thead>
     <tr>
       <th>Criteria</th>
@@ -503,7 +684,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions"
           target="_blank"
-        >1.2.4 Captions (Live)</a> (Level AA)
+        >1.2.4 Captions (Live)</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Not applicable
@@ -517,7 +705,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"
           target="_blank"
-        >1.2.5 Audio Description (Prerecorded)</a> (Level AA)
+        >1.2.5 Audio Description (Prerecorded)</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Not applicable
@@ -531,13 +726,20 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"
           target="_blank"
-        >1.4.3 Contrast (Minimum)</a> (Level AA)
+        >1.4.3 Contrast (Minimum)</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
-        Does not support
+        Partially supports
       </td>
       <td>
-        <p>The product has many instances where the contrast ratio of text is not at least 4.5:1.
+        <p>The product has some instances where the contrast ratio of text (enabled) is not at least 4.5:1.
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/562"
           target="_blank"
@@ -549,7 +751,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"
           target="_blank"
-        >1.4.4 Resize text</a> (Level AA)
+        >1.4.4 Resize text</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -568,7 +777,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation"
           target="_blank"
-        >1.4.5 Images of Text</a> (Level AA)
+        >1.4.5 Images of Text</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -582,7 +798,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc"
           target="_blank"
-        >2.4.5 Multiple Ways</a> (Level AA)
+        >2.4.5 Multiple Ways</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software) – Does not apply to non-web software</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs) – Does not apply to non-web docs</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -596,14 +819,21 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"
           target="_blank"
-        >2.4.6 Headings and Labels</a> (Level AA)
+        >2.4.6 Headings and Labels</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
       </td>
       <td>
         <p>The product uses descriptive headings and labels to describe the purpose or topic on a page.</p>
-        <p>A few instances were discovered where headings could be utilized to better describe the sections of the page: <a
+        <p>A few instances are known where headings could be utilized to better describe the sections of the page: <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/566"
           target="_blank"
         >https://gitlab.com/groups/gitlab-org/-/epics/566</a></p>
@@ -614,7 +844,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible"
           target="_blank"
-        >2.4.7 Focus Visible</a> (Level AA)
+        >2.4.7 Focus Visible</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -629,13 +866,20 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id"
           target="_blank"
-        >3.1.2 Language of Parts</a> (Level AA)
+        >3.1.2 Language of Parts</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Does not support
       </td>
       <td>
-        <p>The product uses the language attribute on the HTML element to specify the default language of a page. However, there is no mechanism to specify different languages for subsets of a page.</p>
+        <p>The product uses the language attribute on the HTML element to specify the default language of a page. However, there is no mechanism to specify different languages for subsets of a page. For example, if a user were to enter a comment in a different language.</p>
       </td>
     </tr>
     <tr>
@@ -643,7 +887,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations"
           target="_blank"
-        >3.2.3 Consistent Navigation</a> (Level AA)
+        >3.2.3 Consistent Navigation</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software) – Does not apply to non-web software</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs) – Does not apply to non-web docs</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -657,7 +908,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality"
           target="_blank"
-        >3.2.4 Consistent Identification</a> (Level AA)
+        >3.2.4 Consistent Identification</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software) – Does not apply to non-web software</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs) – Does not apply to non-web docs</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -671,7 +929,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"
           target="_blank"
-        >3.3.3 Error Suggestion</a> (Level AA)
+        >3.3.3 Error Suggestion</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Partially supports
@@ -680,9 +945,9 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <p>The product provides suggestion for how to mitigate input errors.</p>
         <p>However, the identification and description of an error is not combined programmatically to help assistive technologies to identify an error and provide remedy suggestions to the user:
         <a
-          href="https://gitlab.com/gitlab-org/gitlab/-/issues/292301"
+          href="https://gitlab.com/groups/gitlab-org/-/epics/7341"
           target="_blank"
-        >https://gitlab.com/gitlab-org/gitlab/-/issues/292301</a></p>
+        >https://gitlab.com/groups/gitlab-org/-/epics/7341</a></p>
       </td>
     </tr>
     <tr>
@@ -690,7 +955,14 @@ Tables 1 and 2 also document conformance with Revised Section 508:
         <a 
           href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible"
           target="_blank"
-        >3.3.4 Error Prevention (Legal, Financial, Data)</a> (Level AA)
+        >3.3.4 Error Prevention (Legal, Financial, Data)</a> (Level AA)<br>
+        Also applies to:<br>
+        Revised Section 508
+        <ul>
+          <li>501 (Web)(Software)</li>
+          <li>504.2 (Authoring Tool)</li>
+          <li>602.3 (Support Docs)</li>
+        </ul>
       </td>
       <td>
         Supports
@@ -710,7 +982,7 @@ Notes: The GitLab product has not been evaluated for WCAG 2.0 Level AAA conforma
 
 ### Chapter 3: [Functional Performance Criteria](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria) (FPC)
 
-<table>
+<table class="table-compact">
   <thead>
     <tr>
       <th>Criteria</th>
@@ -836,7 +1108,7 @@ Notes: The GitLab product is a web application and is not subject to the require
 
 ### Chapter 5: [Software](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#501-general)
 
-<table>
+<table class="table-compact">
   <thead>
     <tr>
       <th>Criteria</th>
@@ -1205,7 +1477,7 @@ Notes: The GitLab product is a web application and is not subject to the require
 
 ### Chapter 6: [Support Documentation and Services](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#601-general)
 
-<table>
+<table class="table-compact">
   <thead>
     <tr>
       <th>Criteria</th>
