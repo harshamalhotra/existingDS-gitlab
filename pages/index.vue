@@ -117,7 +117,7 @@
             <img src="../assets/images/pajamas_stars.svg" class="p-a-10" />
           </div>
         </div>
-        <div class="row m-t-8">
+        <div class="row gl-mt-9">
           <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
             <a
               href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues"
