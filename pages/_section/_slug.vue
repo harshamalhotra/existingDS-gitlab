@@ -105,7 +105,7 @@ export default {
 </script>
 
 <template>
-  <div class="content limited gl-mt-7 m-b-8">
+  <div class="content limited gl-mt-7 gl-mb-9">
     <div class="md typography gl-mb-6!">
       <h1 id="skipTarget" tabindex="-1">{{ page.name }}</h1>
       <div

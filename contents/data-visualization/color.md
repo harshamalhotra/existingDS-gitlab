@@ -19,7 +19,7 @@ There are 5 hues, each with 11 steps for a total of 55 variables. The palette is
 
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
 
-<div class="color-palette row m-b-8">
+<div class="color-palette row gl-mb-9">
   <div class="data-vis-blue col col-50">
     <h4 id="set-blue">Blue</h4>
     <div class="distributed palette">
