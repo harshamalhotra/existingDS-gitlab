@@ -16,7 +16,7 @@ Though deciding which color to use depends on the situation, here are some gener
 - **Red** indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
 - **Purple** is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
-<div class="row m-b-9">
+<div class="row gl-mb-11">
   <div class="col col-50 md p-b-7">
     <h3>Blue</h3>
     <div class="distributed palette">
@@ -869,7 +869,7 @@ Though deciding which color to use depends on the situation, here are some gener
   </div>
 </div>
 
-<div class="row m-b-9">
+<div class="row gl-mb-11">
   <div class="col col-50 md">
 
 ## Neutral palette
