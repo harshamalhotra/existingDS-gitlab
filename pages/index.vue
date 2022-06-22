@@ -167,7 +167,7 @@
             </a>
           </div>
         </div>
-        <div class="m-t-9 d-flex justify-content-center">
+        <div class="gl-mt-11 d-flex justify-content-center">
           <div class="">
             <a
               href="https://about.gitlab.com/community/gitlab-first-look/"
