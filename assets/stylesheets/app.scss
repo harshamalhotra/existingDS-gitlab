@@ -1,7 +1,6 @@
 @import 'variables';
 @import '@gitlab/ui/src/scss/variables';
 @import '@gitlab/ui/src/scss/utility-mixins';
-@import '@gitlab/ui/src/scss/utilities';
 
 @import 'utilities/mixins';
 
@@ -27,6 +26,8 @@
 
 @import 'pages/p-color';
 @import 'pages/p_components';
+
+@import '@gitlab/ui/src/scss/utilities';
 
 /**
  Import GitLab UI component styles.
