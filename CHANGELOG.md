@@ -1,3 +1,19 @@
+# [2.126.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.125.0...v2.126.0) (2022-06-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v42.6.0 ([d2849f4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d2849f4b1295110fcb37089d9f89bb586b49e383))
+* **deps:** update dependency @gitlab/ui to v42.7.0 ([d932915](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d932915fc76a532e42a8b29c4d2d06beeabf3073))
+* **deps:** update dependency @gitlab/ui to v42.9.0 ([c9900b9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c9900b9a927d608f061cd05563c581e27c5a9f39))
+* **deps:** update gitlab ui/svg ([364302a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/364302aeff44784dd9c5b61635dacda990bb0375))
+* Links within headlines ([356a9a7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/356a9a7119ebddc765d661eccde2baf937a93b09))
+
+
+### Features
+
+* **VPAT:** Evaluate GitLab v15.0 ([cb7d5da](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cb7d5da9cf2eaf0a0f35aa753cc82fd4687b9b0c))
+
 # [2.125.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.124.0...v2.125.0) (2022-06-20)
 
 
