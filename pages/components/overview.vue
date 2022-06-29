@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div class="content limited gl-mt-7 gl-mb-7 app-styles">
+  <div class="content limited gl-my-7 app-styles">
     <div class="structure md">
       <h1>Pajamas components</h1>
       <p class="mt-4">

@@ -39,7 +39,7 @@ Ensuring proper clear space between the logomark and surrounding elements preser
 
 ## Incorrect usage
 
-<img class="d-block a-center gl-mt-7 gl-mb-7" src="/img/brand/tanuki-incorrect-usage.svg" alt="Logomark incorrect usage" role="img" />
+<img class="d-block a-center gl-my-7" src="/img/brand/tanuki-incorrect-usage.svg" alt="Logomark incorrect usage" role="img" />
 
 1. Do not apply a stroke to the mark
 1. Do not apply color to the mark
