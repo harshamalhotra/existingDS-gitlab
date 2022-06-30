@@ -105,8 +105,8 @@ export default {
 </script>
 
 <template>
-  <div class="content limited m-t-7 m-b-8">
-    <div class="md typography gl-mb-6!">
+  <div class="content limited gl-mt-7 gl-mb-9">
+    <div class="md typography gl-mb-6">
       <h1 id="skipTarget" tabindex="-1">{{ page.name }}</h1>
       <div
         v-if="page.deprecated"
@@ -133,7 +133,7 @@ export default {
       </gl-nav>
     </div>
     <nuxt-child :page="page" :component-label="componentLabel" />
-    <p v-if="lastUpdatedAt" class="row justify-content-center m-t-5">
+    <p v-if="lastUpdatedAt" class="row justify-content-center gl-mt-5">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
   </div>

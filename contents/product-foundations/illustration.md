@@ -4,7 +4,7 @@ name: Illustration
 
 One of our design goals is to convey GitLab’s distinct personality through illustration that is aesthetically refined, visually consistent, and reflective of our particular sense of style.
 
-<img class="d-block a-center m-t-7" src="/img/illus-group.svg" alt="Collection of GitLab illustrations" />
+<img class="d-block a-center gl-mt-7" src="/img/illus-group.svg" alt="Collection of GitLab illustrations" />
 
 ## Principles
 

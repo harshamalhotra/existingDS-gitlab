@@ -14,7 +14,7 @@ We include 12px as one of our measures, but it should only be reserved for right
 
 ## Demo
 
-<div class="spacing-demo m-b-6">
+<div class="spacing-demo gl-mb-6">
   <span class="w-1 h-1 c-background-blue-300 d-inline-block" title="2px"></span>
   <span class="w-2 h-2 c-background-blue-300 d-inline-block" title="4px"></span>
   <span class="w-3 h-3 c-background-blue-300 d-inline-block" title="8px"></span>

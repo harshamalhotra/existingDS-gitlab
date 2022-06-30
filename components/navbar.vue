@@ -40,7 +40,7 @@ export default {
     <div class="nav-sidebar__header">
       <nuxt-link to="/" class="nav-sidebar__header-anchor p-a-5">
         <img src="/gitlab-tanuki.svg" alt="GitLab tanuki mark" role="img" />
-        <span class="m-l-4">GitLab Design System</span>
+        <span class="gl-ml-4">GitLab Design System</span>
       </nuxt-link>
     </div>
     <client-only>
@@ -49,7 +49,7 @@ export default {
         <div class="gl-py-6"></div>
       </template>
     </client-only>
-    <div class="nav-sidebar__body m-b-3">
+    <div class="nav-sidebar__body gl-mb-3">
       <menu-item
         v-for="item in navTree.topLevelNodes"
         :key="item.id"
