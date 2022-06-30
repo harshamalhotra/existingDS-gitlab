@@ -47,7 +47,7 @@ related:
 - There are more than two choices.
 - If multiple items can be selected, including nested items, and the result of the selection has to be saved or submitted, consider using a [checkbox](/components/checkbox) instead.
 - If only one item can be selected and the result of the selection has to be saved or submitted, consider using a [radio button](/components/radio-button) instead.
-- If making a selection from a list of items, consider using a [dropdown](/components/dropdown) instead.
+- If making a selection from a list of items, consider using a [listbox](/components/dropdown-listbox) instead.
 - If changing a content view or preference in the context of that content, consider using a [segmented control](/components/segmented-control) instead.
 
 ### Appearance
