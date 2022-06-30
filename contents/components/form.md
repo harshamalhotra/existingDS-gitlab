@@ -75,7 +75,7 @@ See the [radio button](/components/radio-button) component page for details.
 
 #### Select
 
-The `<select>` element creates a dropdown of options. See the [dropdown](/components/dropdown) component documentation for dropdowns that are not part of a form. For example, navigation or menus.
+The `<select>` element creates a dropdown of options. See the dropdown component documentation for dropdowns that are not part of a form. For example, a [listbox](/components/dropdown-listbox).
 
 #### Buttons
 
