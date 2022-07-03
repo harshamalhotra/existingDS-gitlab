@@ -74,686 +74,234 @@ Though deciding which color to use depends on the situation, here are some gener
       },
     ]"
     show-contrast-scores></foundations-color-palette>
-  <div class="col col-50 md p-b-7">
-    <h3>Green</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-50</span>
-          <span class="hex f-small">#ecf4ee</span>
-        </div>
-        <div class="color-details c-border-green-50 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-50 c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-100</span>
-          <span class="hex f-small">#c3e6cd</span>
-        </div>
-        <div class="color-details c-border-green-100 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.5)</div>
-            <div class="f-inverted d-inline-block c-background-green-100 c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-200</span>
-          <span class="hex f-small">#91d4a8</span>
-        </div>
-        <div class="color-details c-border-green-200 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.1)</div>
-            <div class="f-inverted d-inline-block c-background-green-200 c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-300</span>
-          <span class="hex f-small">#52b87a</span>
-        </div>
-        <div class="color-details c-border-green-300 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.5)</div>
-            <div class="f-inverted d-inline-block c-background-green-300 c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.4)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$green-400</span>
-          <span class="hex f-small">#2da160</span>
-        </div>
-        <div class="color-details c-border-green-400 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.3)</div>
-            <div class="f-inverted d-inline-block c-background-green-400 c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.2)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-priority color-overview c-background-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-500</span>
-          <span class="hex f-small f-inverted">#108548</span>
-        </div>
-        <div class="color-details c-border-green-500 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.4)</div>
-            <div class="f-inverted d-inline-block c-background-green-500 c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (4.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-600</span>
-          <span class="hex f-small f-inverted">#217645</span>
-        </div>
-        <div class="color-details c-border-green-600 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-600 c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.6)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-700</span>
-          <span class="hex f-small f-inverted">#24663b</span>
-        </div>
-        <div class="color-details c-border-green-700 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3)</div>
-            <div class="f-inverted d-inline-block c-background-green-700 c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.9)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-800</span>
-          <span class="hex f-small f-inverted">#0d532a</span>
-        </div>
-        <div class="color-details c-border-green-800 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.2)</div>
-            <div class="f-inverted d-inline-block c-background-green-800 c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-900</span>
-          <span class="hex f-small f-inverted">#0a4020</span>
-        </div>
-        <div class="color-details c-border-green-900 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-            <div class="f-inverted d-inline-block c-background-green-900 c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.8)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$green-950</span>
-          <span class="hex f-small f-inverted">#072b15</span>
-        </div>
-        <div class="color-details c-border-green-950 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-            <div class="f-inverted d-inline-block c-background-green-950 c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-green-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.3)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col col-50 md gl-mt-7 p-b-7">
-    <h3>Orange</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-orange-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$orange-50</span>
-          <span class="hex f-small">#fdf1dd</span>
-        </div>
-        <div class="color-details c-border-orange-50 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-50 c-border-orange-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.8)</div>
-            <div class="f-inverted d-inline-block c-background-orange-50 c-border-orange-50 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$orange-100</span>
-          <span class="hex f-small">#f5d9a8</span>
-        </div>
-        <div class="color-details c-border-orange-100 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-100 c-border-orange-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.3)</div>
-            <div class="f-inverted d-inline-block c-background-orange-100 c-border-orange-100 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$orange-200</span>
-          <span class="hex f-small">#e9be74</span>
-        </div>
-        <div class="color-details c-border-orange-200 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-200 c-border-orange-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12)</div>
-            <div class="f-inverted d-inline-block c-background-orange-200 c-border-orange-200 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$orange-300</span>
-          <span class="hex f-small">#d99530</span>
-        </div>
-        <div class="color-details c-border-orange-300 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-300 c-border-orange-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.2)</div>
-            <div class="f-inverted d-inline-block c-background-orange-300 c-border-orange-300 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.5)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$orange-400</span>
-          <span class="hex f-small">#c17d10</span>
-        </div>
-        <div class="color-details c-border-orange-400 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-400 c-border-orange-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.2)</div>
-            <div class="f-inverted d-inline-block c-background-orange-400 c-border-orange-400 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-priority color-overview c-background-orange-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-500</span>
-          <span class="hex f-small">#ab6100</span>
-        </div>
-        <div class="color-details c-border-orange-500 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-500 c-border-orange-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.4)</div>
-            <div class="f-inverted d-inline-block c-background-orange-500 c-border-orange-500 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (4.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-600</span>
-          <span class="hex f-small">#9e5400</span>
-        </div>
-        <div class="color-details c-border-orange-600 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-600 c-border-orange-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.7)</div>
-            <div class="f-inverted d-inline-block c-background-orange-600 c-border-orange-600 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.6)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-700</span>
-          <span class="hex f-small f-inverted">#8f4700</span>
-        </div>
-        <div class="color-details c-border-orange-700 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-700 c-border-orange-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3)</div>
-            <div class="f-inverted d-inline-block c-background-orange-700 c-border-orange-700 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.8)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-800</span>
-          <span class="hex f-small f-inverted">#703800</span>
-        </div>
-        <div class="color-details c-border-orange-800 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-800 c-border-orange-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.2)</div>
-            <div class="f-inverted d-inline-block c-background-orange-800 c-border-orange-800 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-900</span>
-          <span class="hex f-small f-inverted">#5c2900</span>
-        </div>
-        <div class="color-details c-border-orange-900 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-900 c-border-orange-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-            <div class="f-inverted d-inline-block c-background-orange-900 c-border-orange-900 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.8)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-orange-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$orange-950</span>
-          <span class="hex f-small f-inverted">#421f00</span>
-        </div>
-        <div class="color-details c-border-orange-950 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-orange-950 c-border-orange-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-orange-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.4)</div>
-            <div class="f-inverted d-inline-block c-background-orange-950 c-border-orange-950 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-orange-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (14.7)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col col-50 md gl-mt-7">
-    <h3>Red</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$red-50</span>
-          <span class="hex f-small">#fcf1ef</span>
-        </div>
-        <div class="color-details c-border-red-50 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-50 c-border-red-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.9)</div>
-            <div class="f-inverted d-inline-block c-background-red-50 c-border-red-50 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$red-100</span>
-          <span class="hex f-small">#fdd4cd</span>
-        </div>
-        <div class="color-details c-border-red-100 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-100 c-border-red-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.4)</div>
-            <div class="f-inverted d-inline-block c-background-red-100 c-border-red-100 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$red-200</span>
-          <span class="hex f-small">#fcb5aa</span>
-        </div>
-        <div class="color-details c-border-red-200 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-200 c-border-red-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.3)</div>
-            <div class="f-inverted d-inline-block c-background-red-200 c-border-red-200 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$red-300</span>
-          <span class="hex f-small">#f57f6c</span>
-        </div>
-        <div class="color-details c-border-red-300 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-300 c-border-red-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.1)</div>
-            <div class="f-inverted d-inline-block c-background-red-300 c-border-red-300 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.5)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$red-400</span>
-          <span class="hex f-small">#ec5941</span>
-        </div>
-        <div class="color-details c-border-red-400 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-400 c-border-red-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6)</div>
-            <div class="f-inverted d-inline-block c-background-red-400 c-border-red-400 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.4)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-priority color-overview c-background-red-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-500</span>
-          <span class="hex f-small f-inverted">#dd2b0e</span>
-        </div>
-        <div class="color-details c-border-red-500 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-500 c-border-red-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.4)</div>
-            <div class="f-inverted d-inline-block c-background-red-500 c-border-red-500 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (4.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-600</span>
-          <span class="hex f-small f-inverted">#c91c00</span>
-        </div>
-        <div class="color-details c-border-red-600 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-600 c-border-red-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.6)</div>
-            <div class="f-inverted d-inline-block c-background-red-600 c-border-red-600 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.7)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-700</span>
-          <span class="hex f-small f-inverted">#ae1800</span>
-        </div>
-        <div class="color-details c-border-red-700 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-700 c-border-red-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-700 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.9)</div>
-            <div class="f-inverted d-inline-block c-background-red-700 c-border-red-700 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (7.1)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-800</span>
-          <span class="hex f-small f-inverted">#8d1300</span>
-        </div>
-        <div class="color-details c-border-red-800 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-800 c-border-red-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.2)</div>
-            <div class="f-inverted d-inline-block c-background-red-800 c-border-red-800 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.4)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-900</span>
-          <span class="hex f-small f-inverted">#660e00</span>
-        </div>
-        <div class="color-details c-border-red-900 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-900 c-border-red-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.6)</div>
-            <div class="f-inverted d-inline-block c-background-red-900 c-border-red-900 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.9)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-red-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$red-950</span>
-          <span class="hex f-small f-inverted">#4d0a00</span>
-        </div>
-        <div class="color-details c-border-red-950 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-red-950 c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.3)</div>
-            <div class="f-inverted d-inline-block c-background-red-950 c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-red-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.4)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col col-50 md gl-mt-7">
-    <h3>Purple</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview c-background-purple-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$purple-50</span>
-          <span class="hex f-small">#f4f0ff</span>
-        </div>
-        <div class="color-details c-border-purple-50 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-50 c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (18.75)</div>
-            <div class="f-inverted d-inline-block c-background-purple-50 c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-50 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.11)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$purple-100</span>
-          <span class="hex f-small">#e1d8f9</span>
-        </div>
-        <div class="color-details c-border-purple-100 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-100 c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (15.39)</div>
-            <div class="f-inverted d-inline-block c-background-purple-100 c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-100 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.36)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$purple-200</span>
-          <span class="hex f-small">#cbbbf2</span>
-        </div>
-        <div class="color-details c-border-purple-200 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-200 c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (11.92)</div>
-            <div class="f-inverted d-inline-block c-background-purple-200 c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-200 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.76)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$purple-300</span>
-          <span class="hex f-small">#ac93e6</span>
-        </div>
-        <div class="color-details c-border-purple-300 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-300 c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (8.07)</div>
-            <div class="f-inverted d-inline-block c-background-purple-300 c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-300 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.6)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$purple-400</span>
-          <span class="hex f-small">#9475db</span>
-        </div>
-        <div class="color-details c-border-purple-400 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-400 c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.82)</div>
-            <div class="f-inverted d-inline-block c-background-purple-400 c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-400 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.6)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-priority color-overview c-background-purple-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-500</span>
-          <span class="hex f-small f-inverted">#7b58cf</span>
-        </div>
-        <div class="color-details c-border-purple-500 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-500 c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (4.13)</div>
-            <div class="f-inverted d-inline-block c-background-purple-500 c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-500 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (5.07)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-600</span>
-          <span class="hex f-small f-inverted">#694cc0</span>
-        </div>
-        <div class="color-details c-border-purple-600 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA+ (3.39)</div>
-            <div class="f-inverted d-inline-block c-background-purple-600 c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-600 p-t-2 p-r-3 p-b-2 p-l-3 pass">AA (6.18)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-700</span>
-          <span class="hex f-small f-inverted">#5943b6</span>
-        </div>
-        <div class="color-details c-border-purple-700 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-700 c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.9)</div>
-            <div class="f-inverted d-inline-block c-background-purple-700 c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-700 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (7.23)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-800</span>
-          <span class="hex f-small f-inverted">#453894</span>
-        </div>
-        <div class="color-details c-border-purple-800 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-800 c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (2.24)</div>
-            <div class="f-inverted d-inline-block c-background-purple-800 c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-800 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (9.34)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-900</span>
-          <span class="hex f-small f-inverted">#2f2a6b</span>
-        </div>
-        <div class="color-details c-border-purple-900 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-900 c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.66)</div>
-            <div class="f-inverted d-inline-block c-background-purple-900 c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-900 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (12.61)</div>
-          </div>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-purple-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$purple-950</span>
-          <span class="hex f-small f-inverted">#232150</span>
-        </div>
-        <div class="color-details c-border-purple-950 p-t-6 p-r-5 p-b-6 p-l-5">
-          <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
-            <div class="d-inline-block c-background-purple-950 c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3">Text</div>
-            <div class="d-inline-block c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 fail">F (1.4)</div>
-            <div class="f-inverted d-inline-block c-background-purple-950 c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 gl-ml-3">Text</div>
-            <div class="d-inline-block c-border-purple-950 p-t-2 p-r-3 p-b-2 p-l-3 pass">AAA (14.94)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <foundations-color-palette
+    class="col col-50 md p-b-7"
+    background-class-prefix="c-background-"
+    name="Green"
+    :shades="[
+      {
+        name: 'green-50',
+        code: '#ecf4ee',
+      },
+      {
+        name: 'green-100',
+        code: '#c3e6cd',
+      },
+      {
+        name: 'green-200',
+        code: '#91d4a8',
+      },
+      {
+        name: 'green-300',
+        code: '#52b87a',
+      },
+      {
+        name: 'green-400',
+        code: '#2da160',
+      },
+      {
+        name: 'green-500',
+        code: '#108548',
+        classes: ['color-priority', 'f-inverted']
+      },
+      {
+        name: 'green-600',
+        code: '#217645',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'green-700',
+        code: '#24663b',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'green-800',
+        code: '#0d532a',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'green-900',
+        code: '#0a4020',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'green-950',
+        code: '#072b15',
+        classes: ['f-inverted']
+      },
+    ]"
+    show-contrast-scores></foundations-color-palette>
+  <foundations-color-palette
+    class="col col-50 md gl-mt-7 p-b-7"
+    background-class-prefix="c-background-"
+    name="Orange"
+    :shades="[
+      {
+        name: 'orange-50',
+        code: '#fdf1dd',
+      },
+      {
+        name: 'orange-100',
+        code: '#f5d9a8',
+      },
+      {
+        name: 'orange-200',
+        code: '#e9be74',
+      },
+      {
+        name: 'orange-300',
+        code: '#d99530',
+      },
+      {
+        name: 'orange-400',
+        code: '#c17d10',
+      },
+      {
+        name: 'orange-500',
+        code: '#ab6100',
+        classes: ['color-priority', 'f-inverted']
+      },
+      {
+        name: 'orange-600',
+        code: '#9e5400',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'orange-700',
+        code: '#8f4700',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'orange-800',
+        code: '#703800',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'orange-900',
+        code: '#5c2900',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'orange-950',
+        code: '#421f00',
+        classes: ['f-inverted']
+      },
+    ]"
+    show-contrast-scores></foundations-color-palette>
+  <foundations-color-palette
+    class="col col-50 md gl-mt-7"
+    background-class-prefix="c-background-"
+    name="Red"
+    :shades="[
+      {
+        name: 'red-50',
+        code: '#fcf1ef',
+      },
+      {
+        name: 'red-100',
+        code: '#fdd4cd',
+      },
+      {
+        name: 'red-200',
+        code: '#fcb5aa',
+      },
+      {
+        name: 'red-300',
+        code: '#f57f6c',
+      },
+      {
+        name: 'red-400',
+        code: '#ec5941',
+      },
+      {
+        name: 'red-500',
+        code: '#dd2b0e',
+        classes: ['color-priority', 'f-inverted']
+      },
+      {
+        name: 'red-600',
+        code: '#c91c00',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'red-700',
+        code: '#ae1800',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'red-800',
+        code: '#8d1300',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'red-900',
+        code: '#660e00',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'red-950',
+        code: '#4d0a00',
+        classes: ['f-inverted']
+      },
+    ]"
+    show-contrast-scores></foundations-color-palette>
+  <foundations-color-palette
+    class="col col-50 md gl-mt-7"
+    background-class-prefix="c-background-"
+    name="Purple"
+    :shades="[
+      {
+        name: 'purple-50',
+        code: '#f4f0ff',
+      },
+      {
+        name: 'purple-100',
+        code: '#e1d8f9',
+      },
+      {
+        name: 'purple-200',
+        code: '#cbbbf2',
+      },
+      {
+        name: 'purple-300',
+        code: '#ac93e6',
+      },
+      {
+        name: 'purple-400',
+        code: '#9475db',
+      },
+      {
+        name: 'purple-500',
+        code: '#7b58cf',
+        classes: ['color-priority', 'f-inverted']
+      },
+      {
+        name: 'purple-600',
+        code: '#694cc0',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'purple-700',
+        code: '#5943b6',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'purple-800',
+        code: '#453894',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'purple-900',
+        code: '#2f2a6b',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'purple-950',
+        code: '#232150',
+        classes: ['f-inverted']
+      },
+    ]"
+    show-contrast-scores></foundations-color-palette>
 </div>
 
 <div class="row gl-mb-11">
@@ -762,92 +310,75 @@ Though deciding which color to use depends on the situation, here are some gener
 ## Neutral palette
 
 The neutral palette is primarily used within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
-    <div class="distributed palette neutral">
-      <div class="color">
-        <div class="color-overview c-white-background p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$white</span>
-          <span class="hex f-small">#ffffff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-10 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-10</span>
-          <span class="hex f-small">#f5f5f5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-50</span>
-          <span class="hex f-small">#f0f0f0</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-100</span>
-          <span class="hex f-small">#dbdbdb</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-200</span>
-          <span class="hex f-small">#bfbfbf</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-300</span>
-          <span class="hex f-small">#999999</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$gray-400</span>
-          <span class="hex f-small">#868686</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-500</span>
-          <span class="hex f-small f-inverted">#666666</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-600</span>
-          <span class="hex f-small f-inverted">#5e5e5e</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-700</span>
-          <span class="hex f-small f-inverted">#525252</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-800</span>
-          <span class="hex f-small f-inverted">#404040</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-900</span>
-          <span class="hex f-small f-inverted">#303030</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-gray-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$gray-950</span>
-          <span class="hex f-small f-inverted">#1f1f1f</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview c-background-black p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$black</span>
-          <span class="hex f-small f-inverted">#000000</span>
-        </div>
-      </div>
-    </div>
+
+<foundations-color-palette
+    background-class-prefix="c-background-"
+    :shades="[
+      {
+        name: 'white',
+        code: '#ffffff',
+      },
+      {
+        name: 'gray-10',
+        code: '#f5f5f5',
+      },
+      {
+        name: 'gray-50',
+        code: '#f0f0f0',
+      },
+      {
+        name: 'gray-100',
+        code: '#dbdbdb',
+      },
+      {
+        name: 'gray-200',
+        code: '#bfbfbf',
+      },
+      {
+        name: 'gray-300',
+        code: '#999999',
+      },
+      {
+        name: 'gray-400',
+        code: '#868686',
+      },
+      {
+        name: 'gray-500',
+        code: '#666666',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'gray-600',
+        code: '#5e5e5e',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'gray-700',
+        code: '#525252',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'gray-800',
+        code: '#404040',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'gray-900',
+        code: '#303030',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'gray-950',
+        code: '#1f1f1f',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'black',
+        code: '#000000',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
+
   </div>
 
   <div class="col col-50 md">
@@ -855,38 +386,31 @@ The neutral palette is primarily used within components to help differentiate hi
 ## Transparency
 
 Transparency is used only to indicate hover and active states within themes. Each theme has a series of four transparencies to utilize alpha levels ranging from 0.02 to 0.08.
-    <div class="distributed palette neutral gl-mb-6">
-      <div class="color">
-        <div class="color-overview t-gray-a-02 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-a-02</span>
-          <span class="hex f-small">rgba($black, 0.02)</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-gray-a-04 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-a-04</span>
-          <span class="hex f-small">rgba($black, 0.04)</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-gray-a-06 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-a-06</span>
-          <span class="hex f-small">rgba($black, 0.06)</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-gray-a-08 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-a-08</span>
-          <span class="hex f-small">rgba($black, 0.08)</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-gray-a-24 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-gray-a-24</span>
-          <span class="hex f-small">rgba($black, 0.24)</span>
-        </div>
-      </div>
-    </div>
+
+<foundations-color-palette
+    :shades="[
+      {
+        name: 't-gray-a-02',
+        code: 'rgba($black, 0.02)',
+      },
+      {
+        name: 't-gray-a-04',
+        code: 'rgba($black, 0.04)',
+      },
+      {
+        name: 't-gray-a-06',
+        code: 'rgba($black, 0.06)',
+      },
+      {
+        name: 't-gray-a-08',
+        code: 'rgba($black, 0.08)',
+      },
+      {
+        name: 't-gray-a-24',
+        code: 'rgba($black, 0.24)',
+      },
+    ]"></foundations-color-palette>
+
   </div>
 </div>
 
@@ -900,430 +424,346 @@ A user may choose between ten different themes to customize the appearance of th
 
 <div class="row gl-mb-6">
   <div class="col col-25 md p-b-7">
-    <h3>Indigo / Light indigo</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-indigo-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-indigo-50</span>
-          <span class="hex f-small">#f1f1ff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-indigo-100</span>
-          <span class="hex f-small">#dbdbf8</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-indigo-200</span>
-          <span class="hex f-small">#c7c7f2</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-indigo-300</span>
-          <span class="hex f-small">#a2a2e6</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-indigo-400</span>
-          <span class="hex f-small">#8181d7</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-500</span>
-          <span class="hex f-small f-inverted">#6666c4</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-600</span>
-          <span class="hex f-small f-inverted">#5252b5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-700</span>
-          <span class="hex f-small f-inverted">#41419f</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-800</span>
-          <span class="hex f-small f-inverted">#303083</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-900</span>
-          <span class="hex f-small f-inverted">#222261</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-indigo-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-indigo-950</span>
-          <span class="hex f-small f-inverted">#14143d</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Indigo / Light indigo"
+      class="md"
+      :shades="[
+        {
+          name: 't-indigo-50',
+          code: '#f1f1ff',
+        },
+        {
+          name: 't-indigo-100',
+          code: '#dbdbf8',
+        },
+        {
+          name: 't-indigo-200',
+          code: '#c7c7f2',
+        },
+        {
+          name: 't-indigo-300',
+          code: '#a2a2e6',
+        },
+        {
+          name: 't-indigo-400',
+          code: '#8181d7',
+        },
+        {
+          name: 't-indigo-500',
+          code: '#6666c4',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-indigo-600',
+          code: '#5252b5',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-indigo-700',
+          code: '#41419f',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-indigo-800',
+          code: '#303083',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-indigo-900',
+          code: '#222261',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-indigo-950',
+          code: '#14143d',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Blue</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-blue-50</span>
-          <span class="hex f-small">#cdd8e3</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-blue-100</span>
-          <span class="hex f-small">#b9cadc</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-blue-200</span>
-          <span class="hex f-small">#a6bdd5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-blue-300</span>
-          <span class="hex f-small">#81a5c9</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-blue-400</span>
-          <span class="hex f-small">#628eb9</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-500</span>
-          <span class="hex f-small f-inverted">#4977a5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-600</span>
-          <span class="hex f-small f-inverted">#346596</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-700</span>
-          <span class="hex f-small f-inverted">#235180</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-800</span>
-          <span class="hex f-small f-inverted">#153c63</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-900</span>
-          <span class="hex f-small f-inverted">#0b2640</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-blue-950</span>
-          <span class="hex f-small f-inverted">#04101c</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Blue"
+      class="md"
+      :shades="[
+        {
+          name: 't-blue-50',
+          code: '#cdd8e3',
+        },
+        {
+          name: 't-blue-100',
+          code: '#b9cadc',
+        },
+        {
+          name: 't-blue-200',
+          code: '#a6bdd5',
+        },
+        {
+          name: 't-blue-300',
+          code: '#81a5c9',
+        },
+        {
+          name: 't-blue-400',
+          code: '#628eb9',
+        },
+        {
+          name: 't-blue-500',
+          code: '#4977a5',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-blue-600',
+          code: '#346596',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-blue-700',
+          code: '#235180',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-blue-800',
+          code: '#153c63',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-blue-900',
+          code: '#0b2640',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-blue-950',
+          code: '#04101c',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Light blue</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-light-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-blue-50</span>
-          <span class="hex f-small">#dde6ee</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-blue-100</span>
-          <span class="hex f-small">#c1d4e6</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-blue-200</span>
-          <span class="hex f-small">#a0bedc</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-blue-300</span>
-          <span class="hex f-small">#74a3d3</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-blue-400</span>
-          <span class="hex f-small">#4f8bc7</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-500</span>
-          <span class="hex f-small f-inverted">#3476b9</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-600</span>
-          <span class="hex f-small f-inverted">#2268ae</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-700</span>
-          <span class="hex f-small f-inverted">#145aa1</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-800</span>
-          <span class="hex f-small f-inverted">#0e4d8d</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-900</span>
-          <span class="hex f-small f-inverted">#0c4277</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-blue-950</span>
-          <span class="hex f-small f-inverted">#0a3764</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Light blue"
+      class="md"
+      :shades="[
+        {
+          name: 't-light-blue-50',
+          code: '#dde6ee',
+        },
+        {
+          name: 't-light-blue-100',
+          code: '#c1d4e6',
+        },
+        {
+          name: 't-light-blue-200',
+          code: '#a0bedc',
+        },
+        {
+          name: 't-light-blue-300',
+          code: '#74a3d3',
+        },
+        {
+          name: 't-light-blue-400',
+          code: '#4f8bc7',
+        },
+        {
+          name: 't-light-blue-500',
+          code: '#3476b9',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-blue-600',
+          code: '#2268ae',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-blue-700',
+          code: '#145aa1',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-blue-800',
+          code: '#0e4d8d',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-blue-900',
+          code: '#0c4277',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-blue-950',
+          code: '#0a3764',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <h3>Green / Light green</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-green-50</span>
-          <span class="hex f-small">#dde9de</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-green-100</span>
-          <span class="hex f-small">#b1d6b5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-green-200</span>
-          <span class="hex f-small">#8cc497</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-green-300</span>
-          <span class="hex f-small">#69af7d</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-green-400</span>
-          <span class="hex f-small">#499767</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-500</span>
-          <span class="hex f-small f-inverted">#308258</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-600</span>
-          <span class="hex f-small f-inverted">#25744c</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-700</span>
-          <span class="hex f-small f-inverted">#1b653f</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-800</span>
-          <span class="hex f-small f-inverted">#155635</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-900</span>
-          <span class="hex f-small f-inverted">#0e4328</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-green-950</span>
-          <span class="hex f-small f-inverted">#052e19</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Green / Light green"
+      class="md"
+      :shades="[
+        {
+          name: 't-green-50',
+          code: '#dde9de',
+        },
+        {
+          name: 't-green-100',
+          code: '#b1d6b5',
+        },
+        {
+          name: 't-green-200',
+          code: '#8cc497',
+        },
+        {
+          name: 't-green-300',
+          code: '#69af7d',
+        },
+        {
+          name: 't-green-400',
+          code: '#499767',
+        },
+        {
+          name: 't-green-500',
+          code: '#308258',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-green-600',
+          code: '#25744c',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-green-700',
+          code: '#1b653f',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-green-800',
+          code: '#155635',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-green-900',
+          code: '#0e4328',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-green-950',
+          code: '#052e19',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
   <div class="col col-25 md gl-mt-7">
-    <h3>Red</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-red-50</span>
-          <span class="hex f-small">#f4e9e7</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-red-100</span>
-          <span class="hex f-small">#ecd3d0</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-red-200</span>
-          <span class="hex f-small">#e3bab5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-red-300</span>
-          <span class="hex f-small">#d59086</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-red-400</span>
-          <span class="hex f-small">#c66e60</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-500</span>
-          <span class="hex f-small f-inverted">#ad4a3b</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-600</span>
-          <span class="hex f-small f-inverted">#a13322</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-700</span>
-          <span class="hex f-small f-inverted">#8f2110</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-800</span>
-          <span class="hex f-small f-inverted">#761405</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-900</span>
-          <span class="hex f-small f-inverted">#580d02</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-red-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-red-950</span>
-          <span class="hex f-small f-inverted">#380700</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Red"
+      class="md"
+      :shades="[
+        {
+          name: 't-red-50',
+          code: '#f4e9e7',
+        },
+        {
+          name: 't-red-100',
+          code: '#ecd3d0',
+        },
+        {
+          name: 't-red-200',
+          code: '#e3bab5',
+        },
+        {
+          name: 't-red-300',
+          code: '#d59086',
+        },
+        {
+          name: 't-red-400',
+          code: '#c66e60',
+        },
+        {
+          name: 't-red-500',
+          code: '#ad4a3b',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-red-600',
+          code: '#a13322',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-red-700',
+          code: '#8f2110',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-red-800',
+          code: '#761405',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-red-900',
+          code: '#580d02',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-red-950',
+          code: '#380700',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
   <div class="col col-25 md gl-mt-7">
-    <h3>Light red</h3>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview t-light-red-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-red-50</span>
-          <span class="hex f-small">#faf2f1</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-red-100</span>
-          <span class="hex f-small">#f6d9d5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-red-200</span>
-          <span class="hex f-small">#ebada2</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-red-300</span>
-          <span class="hex f-small">#e07f6f</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$t-light-red-400</span>
-          <span class="hex f-small">#d36250</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-500</span>
-          <span class="hex f-small f-inverted">#c24b38</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-600</span>
-          <span class="hex f-small f-inverted">#b53a26</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-700</span>
-          <span class="hex f-small f-inverted">#a02e1c</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-800</span>
-          <span class="hex f-small f-inverted">#8b2212</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-900</span>
-          <span class="hex f-small f-inverted">#751709</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview t-light-red-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$t-light-red-950</span>
-          <span class="hex f-small f-inverted">#5c1105</span>
-        </div>
-      </div>
-    </div>
+    <foundations-color-palette
+      name="Light red"
+      class="md"
+      :shades="[
+        {
+          name: 't-light-red-50',
+          code: '#faf2f1',
+        },
+        {
+          name: 't-light-red-100',
+          code: '#f6d9d5',
+        },
+        {
+          name: 't-light-red-200',
+          code: '#ebada2',
+        },
+        {
+          name: 't-light-red-300',
+          code: '#e07f6f',
+        },
+        {
+          name: 't-light-red-400',
+          code: '#d36250',
+        },
+        {
+          name: 't-light-red-500',
+          code: '#c24b38',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-red-600',
+          code: '#b53a26',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-red-700',
+          code: '#a02e1c',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-red-800',
+          code: '#8b2212',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-red-900',
+          code: '#751709',
+          classes: ['f-inverted']
+        },
+        {
+          name: 't-light-red-950',
+          code: '#5c1105',
+          classes: ['f-inverted']
+        },
+      ]"></foundations-color-palette>
   </div>
 
   <div class="col col-25 md gl-mt-7">
