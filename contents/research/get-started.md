@@ -8,8 +8,6 @@ The [UX Research handbook](https://about.gitlab.com/handbook/engineering/ux/ux-r
 
 Helpful Links:
 * [GitLab UX Research Project](https://gitlab.com/gitlab-org/ux-research#about)
-* [UX Research Training](https://about.gitlab.com/handbook/engineering/ux/ux-research-training/)
+* [UX Research Training](https://about.gitlab.com/handbook/engineering/ux/ux-research/#ux-research-training)
 * [UX Department Handbook](https://about.gitlab.com/handbook/engineering/ux/)
 * [Contributing to UX Design](https://about.gitlab.com/community/contribute/ux-design/)
-
-

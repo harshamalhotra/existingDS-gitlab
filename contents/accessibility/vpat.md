@@ -300,7 +300,7 @@ Tables 1 and 2 also document conformance with Revised Section 508:
      <tr>
       <td>
         <a 
-          href="www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
+          href="https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
           target="_blank"
         >2.1.1 Keyboard</a> (Level A)<br>
         Also applies to:<br>

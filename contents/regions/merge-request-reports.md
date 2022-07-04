@@ -225,7 +225,7 @@ The following provides guidance on roles, keyboarding, and content for screen re
 
 ### Landmark
 
-The widget area is an important enough section of a merge request page that it should be identified as its own [landmark region](https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/region.html). It contains the unordered list where each widget is a list item. See the [notes](#notes) section below for markup recommendations.
+The widget area is an important enough section of a merge request page that it should be identified as its own [landmark region](https://w3c.github.io/aria-practices/examples/landmarks/region.html). It contains the unordered list where each widget is a list item. See the [notes](#notes) section below for markup recommendations.
 
 <figure class="figure" role="figure" aria-label="A basic merge request report region is contained within a border highlighting the parent div that has an assigned role of region">
   <img class="figure-img" src="/img/mrw-a11y-landmark.png" alt="Merge request landmark highlight" role="img" />
