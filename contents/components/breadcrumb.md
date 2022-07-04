@@ -47,7 +47,7 @@ related:
 - Ignore the **GitLab** instance name in the breadcrumb.
 - For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge requests > !1234**.
 - For a contextual page within the navigation, the breadcrumb should only include the submenu title. For example, **Overview > Details** becomes just **Details**.
-- [Use sentence case](../content/punctuation.md#case) for each breadcrumb element.
+- [Use sentence case](../content/punctuation#case) for each breadcrumb element.
 
 #### Special breadcrumbs
 
@@ -78,4 +78,4 @@ Some pages have a special breadcrumb path to make the text intuitive. They are d
 
 - A `nav` element with `aria-label="Breadcrumb"` wraps an ordered list to provide a navigation landmark.
 - `aria-current="page"` is on the last link to indicate that it's the current page.
-- See the [WAI-ARIA Authoring Practices Breadcrumb Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/breadcrumb/index.html) for more details.
+- See the [WAI-ARIA Authoring Practices Breadcrumb Example](https://w3c.github.io/aria-practices/examples/breadcrumb/index.html) for more details.

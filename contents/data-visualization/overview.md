@@ -39,7 +39,7 @@ We have use cases for Relational, Statistical, and Spatial-temporal. The other c
 
 ### Relational
 
-The GitLab [commit graph](https://gitlab.com/gitlab-org/gitlab-ui/-/network/master) is an example of a relational data visualization, as it shows how all of the individual commits are related to the master.
+The GitLab [commit graph](https://gitlab.com/gitlab-org/gitlab-ui/-/network/main) is an example of a relational data visualization, as it shows how all of the individual commits are related to the master.
 
 <todo>Create component for the Commit Graph in GitLab UI</todo>
 

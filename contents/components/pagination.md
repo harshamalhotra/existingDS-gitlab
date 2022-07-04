@@ -76,7 +76,7 @@ Keyset pagination only has **Prev** and **Next** options and no page numbers. It
 ### Accessibility
 
 - Since pagination is a form of navigation, there are a few helpful considerations:
-  - Wrap the list in a `<nav>` element with `aria-label` so it can easily be navigated to as a [landmark](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/navigation.html).
+  - Wrap the list in a `<nav>` element with `aria-label` so it can easily be navigated to as a [landmark](https://w3c.github.io/aria-practices/examples/landmarks/main.html).
   - Use `aria-current="page"` on the active page link.
   - Each link should have `aria-label` to clarify what the page number means. For example, `<a href="/p3" aria-label="Page 3">3</a>`.
 - When navigating with pagination, the focus and scroll position should be at the top of the new page content so a user can continue moving through the results.

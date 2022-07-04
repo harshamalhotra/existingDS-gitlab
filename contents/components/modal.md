@@ -95,5 +95,5 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 
 - [modalzmodalzmodalz](https://modalzmodalzmodalz.com/)
 - [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
-- [Accessibility guidelines](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html)
+- [Accessibility guidelines](https://w3c.github.io/aria-practices/examples/dialog-modal/dialog.html)
 - [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)

@@ -134,4 +134,4 @@ Everyone can contribute to GitLab, including our product illustration in Figma G
 - [View the illustration file in Figma](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/WIP%3A-Illustration-library?node-id=441%3A2008).
 - [Go to the SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/illustrations) to view all of the current illustrations.
 - Learn more about [Creating Isometric Art](https://marmoset.co/posts/creating-isometric-art-hexels/).
-- Learn more about [Using the Rule of Thirds in Design](https://blog.thenounproject.com/using-the-rule-of-thirds-in-design/) and the [Effective Use of the Rule of Thirds in Design](https://www.framer.com/dictionary/rule-of-thirds/).
+- Learn more about [Using the Rule of Thirds in Design](https://blog.thenounproject.com/using-the-rule-of-thirds-in-design/) and the [Effective Use of the Rule of Thirds in Design](https://web.archive.org/web/20220411034105/https://www.framer.com/dictionary/rule-of-thirds/).

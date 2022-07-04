@@ -103,7 +103,7 @@ Buttons that copy content to the clipboard don’t need the “to clipboard” p
 
 ### Authentication: sign in and sign-in
 
-As noted in our [Documentation style guide](https://docs.gitlab.com/ee/development/documentation/styleguide.html#other-terms),
+As noted in our [Documentation style guide](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html#sign-in),
 we use `sign in` (verb) and `sign-in` (noun) instead of
 `log in` (verb) and `login` (noun).
 
