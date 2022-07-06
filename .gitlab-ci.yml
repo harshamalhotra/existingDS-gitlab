@@ -138,7 +138,7 @@ include:
   - project: 'gitlab-org/frontend/frontend-build-images'
     file: '/semantic-release/.gitlab-ci-template.rules.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
-    file: 'templates/merge_request_pipelines.yml'
+    file: 'templates/branch_pipelines.yml'
 
 danger-review:
   image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
@@ -186,3 +186,7 @@ semantic-release:
     # This allows us to have a weekly release cadence:
     # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/pipeline_schedules
     - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+untamper-my-lockfile:
+  rules:
+    - if: "$CI_COMMIT_BRANCH"

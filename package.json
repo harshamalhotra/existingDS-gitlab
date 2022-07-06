@@ -32,7 +32,7 @@
   "dependencies": {
     "@gitlab/nuxt-edit-this-page": "1.0.0",
     "@gitlab/svgs": "2.25.0",
-    "@gitlab/ui": "42.13.0",
+    "@gitlab/ui": "42.12.0",
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/lunr-module": "^0.3.2",
     "@nuxtjs/sentry": "^4.3.5",
@@ -50,7 +50,7 @@
     "@gitlab/eslint-plugin": "12.3.0",
     "@vue/test-utils": "1.3.0",
     "babel-core": "^7.0.0-bridge.0",
-    "eslint": "8.19.0",
+    "eslint": "8.18.0",
     "http-server": "^14.1.0",
     "jest": "27.5.1",
     "jest-serializer-vue": "^2.0.2",
@@ -60,11 +60,11 @@
     "sass-loader": "^8.0.2",
     "start-server-and-test": "^1.14.0",
     "vue-jest": "^3.0.7",
-    "vue-template-compiler": "2.6.14"
+    "vue-template-compiler": "2.6.12"
   },
   "resolutions": {
     "chokidar": "3.5.3",
-    "vue": "2.6.14"
+    "vue": "2.6.12"
   },
   "release": {
     "branches": [
