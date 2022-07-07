@@ -9,11 +9,6 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@arkweid/lefthook@^0.7.7":
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/@arkweid/lefthook/-/lefthook-0.7.7.tgz#12951b09b955d8054885ffe929aa07a49f39027c"
-  integrity sha512-Eq30OXKmjxIAIsTtbX2fcF3SNZIXS8yry1u8yty7PQFYRctx04rVlhOJCEB2UmfTh8T2vrOMC9IHHUvvo5zbaQ==
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1012,6 +1007,11 @@
     js-yaml "^4.1.0"
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
+
+"@evilmartians/lefthook@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.0.4.tgz#6f2c68f7c492ee7f07d24dbda88908232c4582cb"
+  integrity sha512-BithCdjVebJ7/4NoU/gyoIUHdAnMvZ/k+HrkXHYag7FAMdGpKCNi0tysywJSSRhFZUrfrhfd7gnxKYZDj+j84A==
 
 "@gitlab/eslint-plugin@13.0.0":
   version "13.0.0"
