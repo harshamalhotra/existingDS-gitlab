@@ -27,7 +27,7 @@
     "precheck-links": "yarn build"
   },
   "engines": {
-    "yarn": "^1.10.0"
+    "yarn": "^1.22.19"
   },
   "dependencies": {
     "@gitlab/nuxt-edit-this-page": "1.0.0",
