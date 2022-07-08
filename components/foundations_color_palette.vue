@@ -19,6 +19,17 @@ export default {
     shades: {
       type: Array,
       required: true,
+      validator: (shades) => {
+        const hasInvalidClass = shades.some(
+          (shade) => shade.classes !== undefined && !Array.isArray(shade.classes),
+        );
+        if (hasInvalidClass) {
+          // eslint-disable-next-line no-console
+          console.error('shades[].classes should be an array');
+          return false;
+        }
+        return true;
+      },
     },
     showContrastScores: {
       type: Boolean,
@@ -38,7 +49,7 @@ export default {
       <div v-for="shade in shades" :key="shade.name" class="color">
         <div
           class="color-overview p-t-3 p-r-5 p-b-3 p-l-5"
-          :class="[`${backgroundClassPrefix}${shade.name}`, ...shade.class]"
+          :class="[`${backgroundClassPrefix}${shade.name}`, ...shade.classes]"
         >
           <span class="variable">${{ shade.name }}</span>
           <span class="hex f-small">{{ shade.code }}</span>

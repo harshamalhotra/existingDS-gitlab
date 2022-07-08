@@ -45,32 +45,32 @@ Though deciding which color to use depends on the situation, here are some gener
       {
         name: 'blue-500',
         code: '#1f75cb',
-        class: 'color-priority f-inverted'
+        classes: ['color-priority', 'f-inverted']
       },
       {
         name: 'blue-600',
         code: '#1068bf',
-        class: 'f-inverted'
+        classes: ['f-inverted']
       },
       {
         name: 'blue-700',
         code: '#0b5cad',
-        class: 'f-inverted'
+        classes: ['f-inverted']
       },
       {
         name: 'blue-800',
         code: '#064787',
-        class: 'f-inverted'
+        classes: ['f-inverted']
       },
       {
         name: 'blue-900',
         code: '#033464',
-        class: 'f-inverted'
+        classes: ['f-inverted']
       },
       {
         name: 'blue-950',
         code: '#002850',
-        class: 'f-inverted'
+        classes: ['f-inverted']
       },
     ]"
     show-contrast-scores></foundations-color-palette>

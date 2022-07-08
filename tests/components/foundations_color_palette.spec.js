@@ -6,17 +6,17 @@ const shades = [
   {
     name: 'blue-50',
     code: '#e9f3fc',
-    class: 'foo',
+    classes: ['foo'],
   },
   {
     name: 'blue-100',
     code: '#cbe2f9',
-    class: 'bar',
+    classes: ['bar'],
   },
   {
     name: 'blue-200',
     code: '#9dc7f1',
-    class: 'buzz',
+    classes: ['buzz'],
   },
 ];
 
@@ -80,7 +80,7 @@ describe('foundations-color-palette component', () => {
     it("applies shade's classes", () => {
       createComponent();
 
-      expect(wrapper.find(`.color-overview.${shade.name}.${shade.class}`).exists()).toBe(true);
+      expect(wrapper.find(`.color-overview.${shade.name}.${shade.classes[0]}`).exists()).toBe(true);
     });
 
     it('applies provided class prefix', () => {
@@ -89,7 +89,9 @@ describe('foundations-color-palette component', () => {
       });
 
       expect(
-        wrapper.find(`.color-overview.shade-class-prefix-${shade.name}.${shade.class}`).exists(),
+        wrapper
+          .find(`.color-overview.shade-class-prefix-${shade.name}.${shade.classes[0]}`)
+          .exists(),
       ).toBe(true);
     });
   });
