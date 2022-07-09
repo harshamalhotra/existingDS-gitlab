@@ -57,7 +57,7 @@
     "linkinator": "^3.1.0",
     "prettier": "2.7.1",
     "sass": "^1.26.3",
-    "sass-loader": "^10.0.0",
+    "sass-loader": "^10.3.1",
     "start-server-and-test": "^1.14.0",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "2.7.3"
