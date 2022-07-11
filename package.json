@@ -60,12 +60,12 @@
     "sass-loader": "^10.0.0",
     "start-server-and-test": "^1.14.0",
     "vue-jest": "^3.0.7",
-    "vue-template-compiler": "2.7.3"
+    "vue-template-compiler": "2.7.4"
   },
   "resolutions": {
     "chokidar": "3.5.3",
-    "vue": "2.7.3",
-    "vue-server-renderer": "2.7.3"
+    "vue": "2.7.4",
+    "vue-server-renderer": "2.7.4"
   },
   "release": {
     "branches": [
