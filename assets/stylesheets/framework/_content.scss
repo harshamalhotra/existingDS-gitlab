@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Skip link
 
 .skip-link {
@@ -42,7 +44,7 @@
 .content {
   padding: 0 $gl-spacing-5;
   margin: 0 auto;
-  min-width: $page-width / 3;
+  min-width: math.div($page-width, 3);
 
   @include media-sm-up {
     padding: 0 $gl-spacing-7;
