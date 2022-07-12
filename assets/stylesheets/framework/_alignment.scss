@@ -1,7 +1,9 @@
+@use "sass:math";
+
 .a-center {
   margin: 0 auto;
 }
 
 .max-w-sm {
-  max-width: ($page-width / 3) * 2;
+  max-width: math.div($page-width, 3) * 2;
 }
