@@ -27,6 +27,8 @@ Make sure the following are completed before closing the issue:
 
 <details><summary>Getting started:</summary>
 
+1. [ ] Title the issue using this structure "Figma > [Component name] - [Description]". For example, Figma > Badges - Fix icon override bug.
+1. [ ] Add the relevant [component label](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/labels?subscribed=&search=component%3A). For example ~"component:badge".
 1. [ ] If you’re making updates or breaking changes to an existing component in the [Pajamas UI Kit](https://www.figma.com/community/file/781156790581391771), start with a [branch](https://www.figma.com/best-practices/branching-in-figma/) of the UI kit. Prefix the branch name with the issue, MR, or epic number, and add your GitLab username as the suffix. For example, `#860-table-component-updates-lvanc`. 
 1. [ ] When applicable, follow our [structure][structure], [building][building], and [annotation][annotation] guidelines. If you have any questions, reach out to a [Foundations designer][foundations-team].
 1. [ ] Update the link to the working file under the **Figma link** section below.
@@ -113,3 +115,7 @@ Once the Reviewer or Maintainer has approved your update, consider the following
 [misc-archive]: https://www.figma.com/files/project/10620392/Misc-archive
 [gitlab-ui-component-template]: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/new?issuable_template=Component
 [issue-component-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Component%20documentation
+
+<!-- Do not delete below this line -->
+
+/labels ~Figma ~"Pajamas UI Kit" ~"pajamas::design"
