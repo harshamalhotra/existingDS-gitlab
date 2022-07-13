@@ -71,20 +71,15 @@ In some cases users might need to reference additional information for completin
 
 ### Content guidelines
 
-Drawer content should always be related to a specific context or task in the UI. The drawer header should reflect the context or task the user is performing.
-
-Drawer content is stored as Markdown in the GitLab repository `/doc` directory, rather than hard-coded in the product code. The drawer content is either:
-
-- Pulled directly from the GitLab documentation, in which case it will be visible in the UI and on `docs.gitlab.com`.
-- Displayed only in the drawer. In this case, the content is stored in the `/doc/drawers` folder and is not displayed on `docs.gitlab.com`.
-
-[This merge request](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/82516) shows an example of how to pull docs content into a drawer.
+- Drawer content should always be related to a specific context or task in the UI. The drawer header should reflect the context or task the user is performing.
+- Drawer content is stored as Markdown in the [GitLab repository `/doc` directory](https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc), rather than hard-coded in the product code. The drawer content is either:
+  - Pulled directly from the GitLab documentation, in which case it will be visible in the UI and on `docs.gitlab.com`. [This merge request](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/82516) shows an example of how to pull docs content into a drawer.
+  - Displayed only in the drawer. In this case, the content is stored in the `/doc/drawers` folder and is not displayed on `docs.gitlab.com`.
+- When the content can be pulled into the drawer from documentation without hurting the legibility of content, then pull it directly from the documentation.
+- When content is too long or is formatted in a way that hurts the legibility of content, then customize the content and store it in a markdown file.
+- When writing custom content, use the [documentation topic types guidelines](https://docs.gitlab.com/ee/development/documentation/structure.html) and general [drawer content guidelines](/components/drawer/#content). You should collaborate with a technical writer when defining the content, and a technical writer review is required on related merge requests.
 
 <todo>Add a live example.</todo>
-
-When the content can be pulled into the drawer from documentation without hurting the legibility of content, then pull it directly from the documentation. When content is too long or is formatted in a way that hurts the legibility of content, then customize the content and store it in a markdown file.
-
-When writing custom content, use the [documentation topic types guidelines](https://docs.gitlab.com/ee/development/documentation/structure.html) and general [drawer content guidelines](/components/drawer/#content). You should collaborate with a technical writer when defining the content, and a technical writer review is required on related merge requests.
 
 ### Linking to documentation in a drawer
 
