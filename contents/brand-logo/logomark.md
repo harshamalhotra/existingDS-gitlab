@@ -11,7 +11,7 @@ The tanuki is known for being fast, efficient, and collaborative. It is thought 
 The tanuki logomark can be used when the core logo has already been presented to provide context. It should never be obscured or hard to recognize.
 
 <figure class="figure" role="figure" aria-label="Tanuki logomark sizing">
-  <img class="figure-img p-a-5" src="/img/brand/tanuki-scalability.svg" alt="Logomark sizing" role="img" />
+  <img class="figure-img p-a-5 img-75" src="/img/brand/tanuki-scalability.svg" alt="Logomark sizing" role="img" />
   <figcaption class="figure-caption">Tanuki logomark sizing</figcaption>
 </figure>
 
