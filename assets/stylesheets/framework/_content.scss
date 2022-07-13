@@ -71,6 +71,10 @@
     max-width: 100%;
   }
 
+  .img-25 {
+    max-width: 25%;
+  }
+
   .img-50 {
     max-width: 50%;
   }
@@ -219,7 +223,7 @@
 .table-compact {
   font-size: $base-font-size;
   line-height: 1.5;
- 
+
   p, ul {
     // Repeat line height for specificity
     line-height: 1.5;
