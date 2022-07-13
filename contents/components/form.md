@@ -24,7 +24,7 @@ related:
 
 <todo>Add additional examples to demonstrate different configurations and capabilities.</todo>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A10)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=49840%3A75722)
 
 ## Structure
 
