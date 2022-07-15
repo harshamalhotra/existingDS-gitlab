@@ -20,364 +20,286 @@ There are 5 hues, each with 11 steps for a total of 55 variables. The palette is
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
 
 <div class="color-palette row gl-mb-9">
-  <div class="data-vis-blue col col-50">
-    <h4 id="set-blue">Blue</h4>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview data-viz-blue-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-blue-50</span>
-          <span class="hex f-small">#e9ebff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-blue-100</span>
-          <span class="hex f-small">#d4dcfa</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-blue-200</span>
-          <span class="hex f-small">#b7c6ff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-blue-300</span>
-          <span class="hex f-small">#97acff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-blue-400</span>
-          <span class="hex f-small">#748eff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-500</span>
-          <span class="hex f-small f-inverted">#5772ff</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-600</span>
-          <span class="hex f-small f-inverted">#445cf2</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-700</span>
-          <span class="hex f-small f-inverted">#3547de</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-800</span>
-          <span class="hex f-small f-inverted">#232fcf</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-900</span>
-          <span class="hex f-small f-inverted">#1e23a8</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-blue-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-blue-950</span>
-          <span class="hex f-small f-inverted">#11118a</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <foundations-color-palette
+    class="data-vis-blue col col-50"
+    name="Blue"
+    :shades="[
+      {
+        name: 'data-viz-blue-50',
+        code: '#e9ebff',
+      },
+      {
+        name: 'data-viz-blue-100',
+        code: '#d4dcfa',
+      },
+      {
+        name: 'data-viz-blue-200',
+        code: '#b7c6ff',
+      },
+      {
+        name: 'data-viz-blue-300',
+        code: '#97acff',
+      },
+      {
+        name: 'data-viz-blue-400',
+        code: '#748eff',
+      },
+      {
+        name: 'data-viz-blue-500',
+        code: '#5772ff',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-blue-600',
+        code: '#445cf2',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-blue-700',
+        code: '#3547de',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-blue-800',
+        code: '#232fcf',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-blue-900',
+        code: '#1e23a8',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-blue-950',
+        code: '#11118a',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
 
-  <div class="data-vis-orange col col-50">
-    <h4 id="set-orange">Orange</h4>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview data-viz-orange-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-orange-50</span>
-          <span class="hex f-small">#fae8d1</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-orange-100</span>
-          <span class="hex f-small">#f7d8b5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-orange-200</span>
-          <span class="hex f-small">#f3c291</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-orange-300</span>
-          <span class="hex f-small">#eb9a5c</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-orange-400</span>
-          <span class="hex f-small">#e17223</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-500</span>
-          <span class="hex f-small f-inverted">#d14e00</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-600</span>
-          <span class="hex f-small f-inverted">#b24800</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-700</span>
-          <span class="hex f-small f-inverted">#944100</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-800</span>
-          <span class="hex f-small f-inverted">#6f3500</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-900</span>
-          <span class="hex f-small f-inverted">#5c2b00</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-orange-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-orange-950</span>
-          <span class="hex f-small f-inverted">#421e00</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <foundations-color-palette
+    class="data-vis-orange col col-50"
+    name="Orange"
+    :shades="[
+      {
+        name: 'data-viz-orange-50',
+        code: '#fae8d1',
+      },
+      {
+        name: 'data-viz-orange-100',
+        code: '#f7d8b5',
+      },
+      {
+        name: 'data-viz-orange-200',
+        code: '#f3c291',
+      },
+      {
+        name: 'data-viz-orange-300',
+        code: '#eb9a5c',
+      },
+      {
+        name: 'data-viz-orange-400',
+        code: '#e17223',
+      },
+      {
+        name: 'data-viz-orange-500',
+        code: '#d14e00',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-orange-600',
+        code: '#b24800',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-orange-700',
+        code: '#944100',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-orange-800',
+        code: '#6f3500',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-orange-900',
+        code: '#5c2b00',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-orange-950',
+        code: '#421e00',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
+  
+  <foundations-color-palette
+    class="data-vis-aqua col col-50"
+    name="Aqua"
+    :shades="[
+      {
+        name: 'data-viz-aqua-50',
+        code: '#b8fff2',
+      },
+      {
+        name: 'data-viz-aqua-100',
+        code: '#93fae7',
+      },
+      {
+        name: 'data-viz-aqua-200',
+        code: '#5eebdf',
+      },
+      {
+        name: 'data-viz-aqua-300',
+        code: '#25d2d2',
+      },
+      {
+        name: 'data-viz-aqua-400',
+        code: '#0bb6c6',
+      },
+      {
+        name: 'data-viz-aqua-500',
+        code: '#0094b6',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-aqua-600',
+        code: '#0080a1',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-aqua-700',
+        code: '#006887',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-aqua-800',
+        code: '#004d67',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-aqua-900',
+        code: '#003f57',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-aqua-950',
+        code: '#00293d',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
 
-  <div class="data-vis-aqua col col-50">
-    <h4 id="set-aqua">Aqua</h4>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview data-viz-aqua-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-aqua-50</span>
-          <span class="hex f-small">#b8fff2</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-aqua-100</span>
-          <span class="hex f-small">#93fae7</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-aqua-200</span>
-          <span class="hex f-small">#5eebdf</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-aqua-300</span>
-          <span class="hex f-small">#25d2d2</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-aqua-400</span>
-          <span class="hex f-small">#0bb6c6</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-500</span>
-          <span class="hex f-small f-inverted">#0094b6</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-600</span>
-          <span class="hex f-small f-inverted">#0080a1</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-700</span>
-          <span class="hex f-small f-inverted">#006887</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-800</span>
-          <span class="hex f-small f-inverted">#004d67</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-900</span>
-          <span class="hex f-small f-inverted">#003f57</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-aqua-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-aqua-950</span>
-          <span class="hex f-small f-inverted">#00293d</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <foundations-color-palette
+    class="data-vis-green col col-50"
+    name="Green"
+    :shades="[
+      {
+        name: 'data-viz-green-50',
+        code: '#ddfab7',
+      },
+      {
+        name: 'data-viz-green-100',
+        code: '#c9f097',
+      },
+      {
+        name: 'data-viz-green-200',
+        code: '#b0de73',
+      },
+      {
+        name: 'data-viz-green-300',
+        code: '#94c25e',
+      },
+      {
+        name: 'data-viz-green-400',
+        code: '#83ab4a',
+      },
+      {
+        name: 'data-viz-green-500',
+        code: '#608b2f',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-green-600',
+        code: '#487900',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-green-700',
+        code: '#366800',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-green-800',
+        code: '#275600',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-green-900',
+        code: '#1a4500',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-green-950',
+        code: '#0f3300',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
 
-  <div class="data-vis-green col col-50">
-    <h4 id="set-green">Green</h4>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview data-viz-green-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-green-50</span>
-          <span class="hex f-small">#ddfab7</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-green-100</span>
-          <span class="hex f-small">#c9f097</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-green-200</span>
-          <span class="hex f-small">#b0de73</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-green-300</span>
-          <span class="hex f-small">#94c25e</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-green-400</span>
-          <span class="hex f-small">#83ab4a</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-500</span>
-          <span class="hex f-small f-inverted">#608b2f</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-600</span>
-          <span class="hex f-small f-inverted">#487900</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-700</span>
-          <span class="hex f-small f-inverted">#366800</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-800</span>
-          <span class="hex f-small f-inverted">#275600</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-900</span>
-          <span class="hex f-small f-inverted">#1a4500</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-green-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-green-950</span>
-          <span class="hex f-small f-inverted">#0f3300</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <foundations-color-palette
+    class="data-vis-magenta col col-50"
+    name="Magenta"
+    :shades="[
+      {
+        name: 'data-viz-magenta-50',
+        code: '#ffe3eb',
+      },
+      {
+        name: 'data-viz-magenta-100',
+        code: '#ffc9d9',
+      },
+      {
+        name: 'data-viz-magenta-200',
+        code: '#fcacc5',
+      },
+      {
+        name: 'data-viz-magenta-300',
+        code: '#ff85af',
+      },
+      {
+        name: 'data-viz-magenta-400',
+        code: '#f2639a',
+      },
+      {
+        name: 'data-viz-magenta-500',
+        code: '#d84280',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-magenta-600',
+        code: '#c52c6b',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-magenta-700',
+        code: '#b31756',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-magenta-800',
+        code: '#950943',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-magenta-900',
+        code: '#7a0033',
+        classes: ['f-inverted']
+      },
+      {
+        name: 'data-viz-magenta-950',
+        code: '#570028',
+        classes: ['f-inverted']
+      },
+    ]"></foundations-color-palette>
 
-  <div class="data-vis-magenta col col-50">
-    <h4 id="set-magenta">Magenta</h4>
-    <div class="distributed palette">
-      <div class="color">
-        <div class="color-overview data-viz-magenta-50 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-magenta-50</span>
-          <span class="hex f-small">#ffe3eb</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-100 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-magenta-100</span>
-          <span class="hex f-small">#ffc9d9</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-200 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-magenta-200</span>
-          <span class="hex f-small">#fcacc5</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-300 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-magenta-300</span>
-          <span class="hex f-small">#ff85af</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-400 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable">$data-viz-magenta-400</span>
-          <span class="hex f-small">#f2639a</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-500 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-500</span>
-          <span class="hex f-small f-inverted">#d84280</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-600 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-600</span>
-          <span class="hex f-small f-inverted">#c52c6b</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-700 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-700</span>
-          <span class="hex f-small f-inverted">#b31756</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-800 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-800</span>
-          <span class="hex f-small f-inverted">#950943</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-900 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-900</span>
-          <span class="hex f-small f-inverted">#7a0033</span>
-        </div>
-      </div>
-      <div class="color">
-        <div class="color-overview data-viz-magenta-950 p-t-3 p-r-5 p-b-3 p-l-5">
-          <span class="variable f-inverted">$data-viz-magenta-950</span>
-          <span class="hex f-small f-inverted">#570028</span>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
