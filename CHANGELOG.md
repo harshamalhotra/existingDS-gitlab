@@ -1,3 +1,29 @@
+# [2.127.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.126.0...v2.127.0) (2022-07-18)
+
+
+### Bug Fixes
+
+* **deps:** deduplicate deps in yarn.lock ([2a71fbc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2a71fbc7244745c92b76030e685b4aa14d84e210))
+* **deps:** update dependency @gitlab/svgs to v2.24.0 ([ed7871a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ed7871a5bbe4140aa9c100f606ea5866ef8b9414))
+* **deps:** update dependency @gitlab/svgs to v2.25.0 ([33e505b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/33e505bbc4112e373595d10c18b472f119eef296))
+* **deps:** update dependency @gitlab/ui to v42.11.0 ([8805e55](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8805e554db71de8c0cacafeaf90fa43480c552d7))
+* **deps:** update dependency @gitlab/ui to v42.13.0 ([2a0ff4b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2a0ff4bd9e22523fe3dbd0f981a7c141d8e5f84d))
+* **deps:** update dependency @gitlab/ui to v42.17.0 ([d0be02a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d0be02aff244da1701b99403874cf0077111b86d))
+* **deps:** update dependency @nuxtjs/sentry to ^4.5.0 ([33e1c17](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/33e1c1788ba08fbba00b6e50b898efc5b47930c2))
+* **deps:** update dependency bootstrap to ^4.6.1 ([462d87c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/462d87ca0c17a952581a53ca4b35cc59e8327c40))
+* **deps:** update gitlab ui/svg ([9f6a98c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9f6a98c5307699669f1b68208b435ec8ec60ca11))
+* **deps:** update gitlab ui/svg ([fffa380](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fffa380fc18abf68932100d152dfe537fca7d7cc))
+* **deps:** update gitlab ui/svg ([05a6370](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/05a6370889bb875f9c772cc4bba88d2c0a2495ba))
+* **deps:** Update vue and dependencies to 2.6.14 ([ccf92fb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ccf92fbcb69c4162902867dd97766e02f6e7cce4))
+* **dropdown:** Ensure dropdown links navigate to specific dropdown type ([3bf8ad3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3bf8ad331d7df2d2112eef9d073da7837b9f397d))
+* **Help:** Refactor content guidelines ([5299fbe](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5299fbe2265d957d9e9c19cecf51a5b13700b376))
+* fix broken links ([0504a43](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0504a43211aa3ee50d4a173e18997055a1e9c578))
+
+
+### Features
+
+* **Brand:** Update images in brand guidelines ([3ba55be](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3ba55beb364272a60092da27caa2ac93ab8a8cc3))
+
 # [2.126.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.125.0...v2.126.0) (2022-06-27)
 
 
