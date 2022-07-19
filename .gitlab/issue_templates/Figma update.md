@@ -62,6 +62,7 @@ Ask a [Foundations designer][foundations-team] to review your design.
 1. [ ] Ensure the designer that will be reviewing your file has edit permissions in Figma.
 1. [ ] From the dropdown to the right of the file name, select "Request review".
 1. [ ] Then from the modal window, remember to include a description of the changes being made and select a reviewer from the right hand column. 
+1. [ ] Consider [creating a new version](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Create_a_new_version) (optional) titled "Review requested" in the history which will create a reference point in the file's history.
 
 Once your file is in review, you should see a yellow "In review" badge to the right of the file name.
 
