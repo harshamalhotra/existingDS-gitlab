@@ -253,7 +253,7 @@ GitLab icons should reflect positive or neutral metaphors. Avoid concepts relate
 
 Using an icon consistently to represent a single concept or action helps with overall learnability for a user. For example, the icon used to represent a feature or an object shouldn't be used to refer to other unrelated concepts or actions in the UI.
 
-Avoid using different icons to refer to one specific meaning.
+Avoid using different icons to refer to one specific meaning. For example, [pencil](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~pencil) should be used for editing or updating an item, rather than [pencil-square](https://gitlab-org.gitlab.io/gitlab-svgs/?q=pencil-square) which is used for composing.
 
 | **Do** | **Don’t** |
 | --- | --- |
