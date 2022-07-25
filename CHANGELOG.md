@@ -1,3 +1,17 @@
+# [2.128.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.127.0...v2.128.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bootstrap to ^4.6.2 ([72e8a3d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/72e8a3dd0472ce563679ccfd90cbbc7ff373e8ee))
+* **deps:** update gitlab ui/svg ([18e0e8c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/18e0e8c82719e86781caaad513b68fed0e9181ca))
+* **deps:** update gitlab ui/svg ([218cc86](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/218cc8691797c7c8d1317f22ddb532ac7d652774))
+
+
+### Features
+
+* table actions and icon use updates ([61eaa68](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/61eaa68f53d504976f8d8a08bb4c26e1fad37db7))
+
 # [2.127.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.126.0...v2.127.0) (2022-07-18)
 
 
