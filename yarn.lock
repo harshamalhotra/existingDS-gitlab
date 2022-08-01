@@ -1036,19 +1036,19 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@2.30.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.30.0.tgz#bb73b2d16868b17e7e2dbb73653b7ab84f3cbd05"
-  integrity sha512-XtYXba8XMAMHJz66H/lVZpXy77Z+ATlvbuvsR9cvM479lUEbrIcdAVOPV6zjPJiIxCUA5Yx1lUfWhgAwLEvRgw==
+"@gitlab/svgs@2.32.0":
+  version "2.32.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-2.32.0.tgz#eb66dc76cc6242d97d16e05acb0dbad4f56555a0"
+  integrity sha512-ElblTUE26pddJS6EzHHtMHPkZ7JPB7vt3C2RoY9W3JPPSrcsOudeeLN5oW7Pz3MoXR3G0U/Wg+Bhe4M1STD+tA==
 
-"@gitlab/ui@42.22.1":
-  version "42.22.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-42.22.1.tgz#7ed942f87cd0767c9f8932b69d32c1846bfb388d"
-  integrity sha512-AYdFA1I1fwciwIpfMdBIKjDLUWd4/69Z6asNKLJUf9EGfWS3mUSD0PMMorLxrl+1S5vB07wOo4N9ebSMW3DUMg==
+"@gitlab/ui@42.25.0":
+  version "42.25.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-42.25.0.tgz#d79873347be9868c4d3d3123295ce1f12967f330"
+  integrity sha512-yxSQeLbhrPD4KKQPCo+glarlhoa4cj46j7mgQtTRbJFw2ZWPcpJ4xuujCb8GoyGPlHpWaS8VJyv3l+hwBQs3qg==
   dependencies:
     "@popperjs/core" "^2.11.2"
     bootstrap-vue "2.20.1"
-    dompurify "^2.3.9"
+    dompurify "^2.3.10"
     echarts "^5.3.2"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
@@ -4921,7 +4921,7 @@ domhandler@^5.0.1, domhandler@^5.0.2:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^2.3.9:
+dompurify@^2.3.10:
   version "2.3.10"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.10.tgz#901f7390ffe16a91a5a556b94043314cd4850385"
   integrity sha512-o7Fg/AgC7p/XpKjf/+RC3Ok6k4St5F7Q6q6+Nnm3p2zGWioAY6dh0CbbuwOhH2UcSzKsdniE/YnE2/92JcsA+g==
