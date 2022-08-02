@@ -48,7 +48,7 @@ export default {
     <div class="distributed palette">
       <div v-for="shade in shades" :key="shade.name" class="color">
         <div
-          class="color-overview p-t-3 p-r-5 p-b-3 p-l-5"
+          class="color-overview gl-px-5 gl-py-3"
           :class="[`${backgroundClassPrefix}${shade.name}`, ...shade.classes]"
         >
           <span class="variable">${{ shade.name }}</span>
@@ -56,11 +56,11 @@ export default {
         </div>
         <div
           v-if="showContrastScores"
-          class="color-details p-t-6 p-r-5 p-b-6 p-l-5"
+          class="color-details gl-px-5 gl-py-6"
           :class="`c-border-${shade.name}`"
         >
           <div class="color-details--section">
-            <div class="f-bold gl-mb-2">Passing level and contrast ratio</div>
+            <div class="gl-font-weight-bold gl-mb-2">Passing level and contrast ratio</div>
             <color-contrast-score :bg-color-hex="shade.code" :name="shade.name" />
             <color-contrast-score :bg-color-hex="shade.code" :name="shade.name" with-white-text />
           </div>

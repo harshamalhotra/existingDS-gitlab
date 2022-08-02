@@ -20,7 +20,7 @@ There are 5 hues, each with 11 steps for a total of 55 variables. The palette is
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
 
 <div class="color-palette row gl-mb-9">
-  <foundations-color-palette
+  <color-palette
     class="data-vis-blue col col-50"
     name="Blue"
     :shades="[
@@ -74,9 +74,9 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
         code: '#11118a',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
-  <foundations-color-palette
+  <color-palette
     class="data-vis-orange col col-50"
     name="Orange"
     :shades="[
@@ -130,9 +130,9 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
         code: '#421e00',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
   
-  <foundations-color-palette
+  <color-palette
     class="data-vis-aqua col col-50"
     name="Aqua"
     :shades="[
@@ -186,9 +186,9 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
         code: '#00293d',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
-  <foundations-color-palette
+  <color-palette
     class="data-vis-green col col-50"
     name="Green"
     :shades="[
@@ -242,9 +242,9 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
         code: '#0f3300',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
-  <foundations-color-palette
+  <color-palette
     class="data-vis-magenta col col-50"
     name="Magenta"
     :shades="[
@@ -298,7 +298,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
         code: '#570028',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
   </div>
 </div>
