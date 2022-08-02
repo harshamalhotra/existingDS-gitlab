@@ -57,7 +57,8 @@ export default {
     <iframe
       :src="url"
       :class="iFrameClass"
-      class="gl-border-none gl-min-w-full responsive-iframe"
+      class="gl-border-none gl-min-w-full responsive-iframe optanon-category-C0001"
+      data-ot-ignore="💩"
       @load="iFrameLoaded"
     ></iframe>
   </div>
