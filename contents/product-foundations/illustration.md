@@ -1,5 +1,8 @@
 ---
 name: Illustration
+tabs:
+- route: section-slug-illustrations
+  title: Illustration explorer (beta)
 ---
 
 One of our design goals is to convey GitLab’s distinct personality through illustration that is aesthetically refined, visually consistent, and reflective of our particular sense of style.

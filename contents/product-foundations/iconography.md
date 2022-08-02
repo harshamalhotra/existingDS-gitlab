@@ -1,5 +1,8 @@
 ---
 name: Iconography
+tabs:
+  - route: section-slug-icons
+    title: Icon explorer (beta)
 ---
 
 One of our values is to create a distinct GitLab personality that is strong and consistent. Iconography is a powerful visual cue to the user and should reflect our particular sense of style.
