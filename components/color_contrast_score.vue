@@ -100,15 +100,15 @@ export default {
 </script>
 
 <template>
-  <div class="d-inline-block">
+  <div class="gl-display-inline-block">
     <div
-      class="d-inline-block p-t-2 p-r-3 p-b-2 p-l-3"
+      class="gl-display-inline-block gl-px-3 gl-py-2"
       :class="[`c-border-${name}`, `c-background-${name}`, withWhiteText ? 'f-inverted' : '']"
     >
       Text
     </div>
     <div
-      class="d-inline-block p-t-2 p-r-3 p-b-2 p-l-3"
+      class="gl-display-inline-block gl-px-3 gl-py-2"
       data-testid="contrast-score"
       :class="[`c-border-${name}`, contrast.level.class]"
     >
