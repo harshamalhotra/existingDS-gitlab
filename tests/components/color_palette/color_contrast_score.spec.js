@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import ColorContrastScore from '../../components/color_contrast_score.vue';
+import ColorContrastScore from '../../../components/color_palette/color_contrast_score.vue';
 
 describe('color-contrast-score component', () => {
   let wrapper;

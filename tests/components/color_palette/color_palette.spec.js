@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
-import FoundationsColorPalette from '../../components/foundations_color_palette.vue';
-import ColorContrastScore from '../../components/color_contrast_score.vue';
+import FoundationsColorPalette from '../../../components/color_palette/color_palette.vue';
+import ColorContrastScore from '../../../components/color_palette/color_contrast_score.vue';
 
 const shades = [
   {
@@ -20,7 +20,7 @@ const shades = [
   },
 ];
 
-describe('foundations-color-palette component', () => {
+describe('color-palette component', () => {
   let wrapper;
 
   // Finders

@@ -17,7 +17,7 @@ Though deciding which color to use depends on the situation, here are some gener
 - **Purple** is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
 <div class="row gl-mb-11">
-  <foundations-color-palette
+  <color-palette
     class="col col-50 md p-b-7"
     background-class-prefix="c-background-"
     name="Blue"
@@ -73,8 +73,8 @@ Though deciding which color to use depends on the situation, here are some gener
         classes: ['f-inverted']
       },
     ]"
-    show-contrast-scores></foundations-color-palette>
-  <foundations-color-palette
+    show-contrast-scores></color-palette>
+  <color-palette
     class="col col-50 md p-b-7"
     background-class-prefix="c-background-"
     name="Green"
@@ -130,8 +130,8 @@ Though deciding which color to use depends on the situation, here are some gener
         classes: ['f-inverted']
       },
     ]"
-    show-contrast-scores></foundations-color-palette>
-  <foundations-color-palette
+    show-contrast-scores></color-palette>
+  <color-palette
     class="col col-50 md gl-mt-7 p-b-7"
     background-class-prefix="c-background-"
     name="Orange"
@@ -187,8 +187,8 @@ Though deciding which color to use depends on the situation, here are some gener
         classes: ['f-inverted']
       },
     ]"
-    show-contrast-scores></foundations-color-palette>
-  <foundations-color-palette
+    show-contrast-scores></color-palette>
+  <color-palette
     class="col col-50 md gl-mt-7"
     background-class-prefix="c-background-"
     name="Red"
@@ -244,8 +244,8 @@ Though deciding which color to use depends on the situation, here are some gener
         classes: ['f-inverted']
       },
     ]"
-    show-contrast-scores></foundations-color-palette>
-  <foundations-color-palette
+    show-contrast-scores></color-palette>
+  <color-palette
     class="col col-50 md gl-mt-7"
     background-class-prefix="c-background-"
     name="Purple"
@@ -301,7 +301,7 @@ Though deciding which color to use depends on the situation, here are some gener
         classes: ['f-inverted']
       },
     ]"
-    show-contrast-scores></foundations-color-palette>
+    show-contrast-scores></color-palette>
 </div>
 
 <div class="row gl-mb-11">
@@ -311,7 +311,7 @@ Though deciding which color to use depends on the situation, here are some gener
 
 The neutral palette is primarily used within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
 
-<foundations-color-palette
+<color-palette
     background-class-prefix="c-background-"
     :shades="[
       {
@@ -377,7 +377,7 @@ The neutral palette is primarily used within components to help differentiate hi
         code: '#000000',
         classes: ['f-inverted']
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
   </div>
 
@@ -387,7 +387,7 @@ The neutral palette is primarily used within components to help differentiate hi
 
 Transparency is used only to indicate hover and active states within themes. Each theme has a series of four transparencies to utilize alpha levels ranging from 0.02 to 0.08.
 
-<foundations-color-palette
+<color-palette
     :shades="[
       {
         name: 't-gray-a-02',
@@ -409,7 +409,7 @@ Transparency is used only to indicate hover and active states within themes. Eac
         name: 't-gray-a-24',
         code: 'rgba($black, 0.24)',
       },
-    ]"></foundations-color-palette>
+    ]"></color-palette>
 
   </div>
 </div>
@@ -424,7 +424,7 @@ A user may choose between ten different themes to customize the appearance of th
 
 <div class="row gl-mb-6">
   <div class="col col-25 md p-b-7">
-    <foundations-color-palette
+    <color-palette
       name="Indigo / Light indigo"
       class="md"
       :shades="[
@@ -478,10 +478,10 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#14143d',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <foundations-color-palette
+    <color-palette
       name="Blue"
       class="md"
       :shades="[
@@ -535,10 +535,10 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#04101c',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <foundations-color-palette
+    <color-palette
       name="Light blue"
       class="md"
       :shades="[
@@ -592,10 +592,10 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#0a3764',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
   <div class="col col-25 md p-b-7">
-    <foundations-color-palette
+    <color-palette
       name="Green / Light green"
       class="md"
       :shades="[
@@ -649,10 +649,10 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#052e19',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
   <div class="col col-25 md gl-mt-7">
-    <foundations-color-palette
+    <color-palette
       name="Red"
       class="md"
       :shades="[
@@ -706,10 +706,10 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#380700',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
   <div class="col col-25 md gl-mt-7">
-    <foundations-color-palette
+    <color-palette
       name="Light red"
       class="md"
       :shades="[
@@ -763,7 +763,7 @@ A user may choose between ten different themes to customize the appearance of th
           code: '#5c1105',
           classes: ['f-inverted']
         },
-      ]"></foundations-color-palette>
+      ]"></color-palette>
   </div>
 
   <div class="col col-25 md gl-mt-7">
