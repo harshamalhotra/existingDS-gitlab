@@ -146,6 +146,7 @@ export default {
     { src: '~/plugins/gitlab_ui.js' },
     { src: '~/plugins/register_global_components.js' },
     GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', mode: 'client' } : false,
+    { src: '~/plugins/skip_one_trust_directive.js' },
   ].filter(Boolean),
 
   /*
