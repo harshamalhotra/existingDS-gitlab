@@ -19,6 +19,7 @@ async function checkLinks() {
   const result = await checker.check({
     path: `http://${SITE_HOST}`,
     recurse: true,
+    timeout: 60 * 1000, // Time out after 1mn to prevent hanging pipelines
     linksToSkip: async (rawUrl) => {
       const url = new URL(rawUrl);
       return !ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
