@@ -55,10 +55,10 @@ export default {
       Loading story...
     </div>
     <iframe
+      v-skip-one-trust
       :src="url"
       :class="iFrameClass"
-      class="gl-border-none gl-min-w-full responsive-iframe optanon-category-C0001"
-      data-ot-ignore="💩"
+      class="gl-border-none gl-min-w-full responsive-iframe"
       @load="iFrameLoaded"
     ></iframe>
   </div>
