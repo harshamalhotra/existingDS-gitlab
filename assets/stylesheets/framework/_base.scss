@@ -10,6 +10,19 @@ html {
   margin: 0;
 }
 
+:root {
+  --default-fg: #{$gray-950};
+  --default-bg: #{$white};
+  --inverse-fg: var(--default-bg);
+  --inverse-bg: var(--default-fg);
+  --indigo-fg: #{$t-indigo-200};
+  --indigo-bg: #{$t-indigo-800};
+  --gray-fg: #{$gray-500};
+  --gray-bg: #{$gray-10};
+  --red-fg: #{$red-500};
+  --red-bg: #{$red-100};
+}
+
 body {
   font-size: $base-font-size;
 }

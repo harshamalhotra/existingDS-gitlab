@@ -64,20 +64,29 @@ export default {
       }
       return componentNameToLabelMap[slug] || slug;
     },
-    showTabs() {
+    hasStories() {
       return Boolean(this.page?.stories?.length);
     },
+    showTabs() {
+      return this.hasStories || Boolean(this.page?.tabs?.length);
+    },
     tabs() {
-      const tabs = [
+      let { tabs = [] } = this.page;
+
+      tabs = [
         {
           route: 'section-slug',
           title: 'Usage',
         },
-        {
+        ...tabs,
+      ];
+      if (this.hasStories) {
+        tabs.push({
           route: 'section-slug-code',
           title: 'Implementation',
-        },
-      ];
+        });
+      }
+
       if (this.componentLabel) {
         tabs.push({
           route: 'section-slug-contribute',
