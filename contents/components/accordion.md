@@ -51,7 +51,7 @@ The following icons should be used:
 
 | Collapsed state icon | Expanded state icon |
 | :---: | :---: |
-| <figure class="figure p-a-0" role="figure"><img class="figure-img p-a-5" src="/img/chevron-right.svg" alt="Chevron right icon" role="img" /><figcaption class="figure-caption">[`chevron-right`]( https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-right)</figcaption></figure> | <figure class="figure p-a-0" role="figure"><img class="figure-img p-a-5" src="/img/chevron-down.svg" alt="Chevron down icon" role="img" /><figcaption class="figure-caption">[`chevron-down`](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down)</figcaption></figure> |
+| <figure class="figure gl-p-0" role="figure"><img class="figure-img gl-p-5" src="/img/chevron-right.svg" alt="Chevron right icon" role="img" /><figcaption class="figure-caption">[`chevron-right`]( https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-right)</figcaption></figure> | <figure class="figure gl-p-0" role="figure"><img class="figure-img gl-p-5" src="/img/chevron-down.svg" alt="Chevron down icon" role="img" /><figcaption class="figure-caption">[`chevron-down`](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down)</figcaption></figure> |
 
 The affordance of the chevron means that additional information can be found "under" the header.
 

@@ -22,7 +22,7 @@ Refer to the guidelines below when working with typography:
 - Small titles and copy in buttons should use Inter Semi Bold.
 
 <figure class="figure" role="figure" aria-label="Inter typography samples">
-  <img class="figure-img p-a-5" src="/img/brand/typography.svg" alt="Typography samples" role="img" />
+  <img class="figure-img gl-p-5" src="/img/brand/typography.svg" alt="Typography samples" role="img" />
   <figcaption class="figure-caption">Inter typography samples</figcaption>
 </figure>
 
@@ -46,6 +46,6 @@ Follow these guidelines to properly achieve the type repetitions effect:
 1. Keep the font weight and color the same throughout, although opacity changes can be applied to the repetitions.
 
 <figure class="figure" role="figure" aria-label="Type repetition settings">
-  <img class="figure-img p-a-5" src="/img/brand/type-repetitions.svg" alt="Type repetitions" role="img" />
+  <img class="figure-img gl-p-5" src="/img/brand/type-repetitions.svg" alt="Type repetitions" role="img" />
   <figcaption class="figure-caption">Type repetition settings</figcaption>
 </figure>

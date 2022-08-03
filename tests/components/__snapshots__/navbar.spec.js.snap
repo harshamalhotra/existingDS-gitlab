@@ -8,7 +8,7 @@ exports[`navbar component renders sidebar properly 1`] = `
     class="nav-sidebar__header"
   >
     <nuxt-link-stub
-      class="nav-sidebar__header-anchor p-a-5"
+      class="nav-sidebar__header-anchor gl-p-5"
       to="/"
     >
       <img
