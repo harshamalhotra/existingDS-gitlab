@@ -9,7 +9,7 @@ name: Photography
 ## Customer and contributor portraits
 
 <figure class="figure" role="figure" aria-label="Customer portrait samples">
-  <img class="figure-img p-a-5" src="/img/brand/adobe-stock-portrait-samples.jpg" alt="Portraits of smiling individuals" role="img" />
+  <img class="figure-img gl-p-5" src="/img/brand/adobe-stock-portrait-samples.jpg" alt="Portraits of smiling individuals" role="img" />
   <figcaption class="figure-caption">Customer portrait samples</figcaption>
 </figure>
 
@@ -18,7 +18,7 @@ Customers and contributors are our heroes, so their portraits should feel heroic
 ## Metaphors
 
 <figure class="figure" role="figure" aria-label="Metaphor photo samples">
-  <img class="figure-img p-a-5" src="/img/brand/stock-metaphor-samples.jpg" alt="Aerial views that create abstract patterns and representations" role="img" />
+  <img class="figure-img gl-p-5" src="/img/brand/stock-metaphor-samples.jpg" alt="Aerial views that create abstract patterns and representations" role="img" />
   <figcaption class="figure-caption">Metaphor photo samples</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Metaphorical photography allows us to convey intricate ideas in an abstract way.
 ## Collaboration
 
 <figure class="figure" role="figure" aria-label="Collaboration photo samples">
-  <img class="figure-img p-a-5" src="/img/brand/stock-collaboration-samples.jpg" alt="Overhead views of people collaborating around various devices and technology" role="img" />
+  <img class="figure-img gl-p-5" src="/img/brand/stock-collaboration-samples.jpg" alt="Overhead views of people collaborating around various devices and technology" role="img" />
   <figcaption class="figure-caption">Collaboration photo samples</figcaption>
 </figure>
 

@@ -18,7 +18,7 @@ Though deciding which color to use depends on the situation, here are some gener
 
 <div class="row gl-mb-11">
   <color-palette
-    class="col col-50 md p-b-7"
+    class="col col-50 md gl-pb-7"
     background-class-prefix="c-background-"
     name="Blue"
     :shades="[
@@ -75,7 +75,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md p-b-7"
+    class="col col-50 md gl-pb-7"
     background-class-prefix="c-background-"
     name="Green"
     :shades="[
@@ -132,7 +132,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md gl-mt-7 p-b-7"
+    class="col col-50 md gl-mt-7 gl-pb-7"
     background-class-prefix="c-background-"
     name="Orange"
     :shades="[
@@ -423,7 +423,7 @@ A user may choose between ten different themes to customize the appearance of th
 - Dark and light share the same `$t-gray-` variables.
 
 <div class="row gl-mb-6">
-  <div class="col col-25 md p-b-7">
+  <div class="col col-25 md gl-pb-7">
     <color-palette
       name="Indigo / Light indigo"
       class="md"
@@ -480,7 +480,7 @@ A user may choose between ten different themes to customize the appearance of th
         },
       ]"></color-palette>
   </div>
-  <div class="col col-25 md p-b-7">
+  <div class="col col-25 md gl-pb-7">
     <color-palette
       name="Blue"
       class="md"
@@ -537,7 +537,7 @@ A user may choose between ten different themes to customize the appearance of th
         },
       ]"></color-palette>
   </div>
-  <div class="col col-25 md p-b-7">
+  <div class="col col-25 md gl-pb-7">
     <color-palette
       name="Light blue"
       class="md"
@@ -594,7 +594,7 @@ A user may choose between ten different themes to customize the appearance of th
         },
       ]"></color-palette>
   </div>
-  <div class="col col-25 md p-b-7">
+  <div class="col col-25 md gl-pb-7">
     <color-palette
       name="Green / Light green"
       class="md"

@@ -15,5 +15,5 @@ export default {
 </script>
 
 <template>
-  <contribute-to-component :component-label="componentLabel" class="p-t-3" />
+  <contribute-to-component :component-label="componentLabel" class="gl-pt-3" />
 </template>

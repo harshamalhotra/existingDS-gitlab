@@ -45,7 +45,7 @@
       </div>
       <img src="../assets/images/cover-gradient.png" class="banner__image animated" />
     </div>
-    <div class="p-t-10 p-b-10">
+    <div class="gl-pt-13 gl-pb-13">
       <div class="content limited distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-copy">
@@ -70,17 +70,17 @@
             <img
               src="../assets/images/contribute.png"
               srcset="../assets/images/contribute@2x.png 2x"
-              class="p-a-8"
+              class="gl-p-9"
             />
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-dark p-t-8 p-b-8">
+    <div class="bg-dark gl-pt-9 gl-pb-9">
       <div class="content limited distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-img text-center">
-            <img src="../assets/images/content.svg" class="p-a-8" />
+            <img src="../assets/images/content.svg" class="gl-p-9" />
           </div>
           <div class="contribute-copy">
             <h2>Everything you need</h2>
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="p-t-6 p-b-10">
+    <div class="gl-pt-6 gl-pb-13">
       <div class="content limited distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-copy">
@@ -114,7 +114,7 @@
             </p>
           </div>
           <div class="contribute-img text-center">
-            <img src="../assets/images/pajamas_stars.svg" class="p-a-10" />
+            <img src="../assets/images/pajamas_stars.svg" class="gl-p-13" />
           </div>
         </div>
         <div class="row gl-mt-9">
@@ -131,7 +131,7 @@
                 class="a-center d-block"
                 alt=""
               />
-              <span class="d-block p-a-3"> View the issue tracker </span>
+              <span class="d-block gl-p-3"> View the issue tracker </span>
             </a>
           </div>
           <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
@@ -147,7 +147,7 @@
                 class="a-center d-block"
                 alt=""
               />
-              <span class="d-block p-a-3"> Explore the repository </span>
+              <span class="d-block gl-p-3"> Explore the repository </span>
             </a>
           </div>
           <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
@@ -163,7 +163,7 @@
                 class="a-center d-block"
                 alt=""
               />
-              <span class="d-block p-a-3"> Duplicate our Figma UI Kit </span>
+              <span class="d-block gl-p-3"> Duplicate our Figma UI Kit </span>
             </a>
           </div>
         </div>
@@ -181,7 +181,7 @@
                 class="d-block"
                 alt=""
               />
-              <span class="p-a-3"> Join the GitLab First Look research program </span>
+              <span class="gl-p-3"> Join the GitLab First Look research program </span>
             </a>
           </div>
         </div>
