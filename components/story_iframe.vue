@@ -59,6 +59,7 @@ export default {
       :src="url"
       :class="iFrameClass"
       class="gl-border-none gl-min-w-full responsive-iframe"
+      allow="clipboard-write"
       @load="iFrameLoaded"
     ></iframe>
   </div>
