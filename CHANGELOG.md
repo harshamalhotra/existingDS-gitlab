@@ -1,3 +1,18 @@
+# [2.129.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.128.0...v2.129.0) (2022-08-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3 ([a37a0b1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a37a0b1df39ba96e438a869b6e44f4622657c374))
+* **deps:** update dependency @gitlab/ui to v43 ([0f0c58b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f0c58ba958557788923ac627a92dc822f38796e))
+* Make iframe loading more stable ([15be271](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/15be27162585b06eb2d390cf0191890100a5622c))
+* **deps:** update gitlab ui/svg ([b456782](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b45678275049f6d1f2257bc570c2f03660c53147))
+
+
+### Features
+
+* Icon and Illustration explorer (beta) ([9562d3d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9562d3dd031ff2d685e97a52c1c1695613777e43))
+
 # [2.128.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.127.0...v2.128.0) (2022-07-25)
 
 
