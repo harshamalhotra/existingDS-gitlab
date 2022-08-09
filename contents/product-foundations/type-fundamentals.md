@@ -27,6 +27,12 @@ The body font stack is used for all UI elements, except for code-related element
   'Courier New', 'andale mono', 'lucida console', monospace;
 ```
 
+## Font size
+
+The [UI type scale](/product-foundations/type-scales#ui-type-scale) includes 12px (0.75rem) as the smallest size option across all of the type scales. Legibility is impacted more at smaller sizes as system font, browser rendering, screen resolution, type styles, and other factors influence the presentation of text. Therefore, use small text in limited capacity for short meta content and actions.
+
+View the [type scales](/product-foundations/type-scales) page for additional details about body and heading font sizes.
+
 ## Font weight
 
 GitLab uses two font weights within the application: normal and bold. A bold font weight can be used to emphasize specific UI elements, such as a title or input label.
