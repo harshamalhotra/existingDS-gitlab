@@ -49,6 +49,10 @@ related:
 - If the content is not part of the same set, consider using [navigation](/regions/navigation) instead.
 - If you need to navigate between steps in a flow, consider using the [path](/components/path) component or [buttons](/components/button) instead.
 
+### Appearance
+
+- There is 24px [spacing](/layout/spacing#standard-spacing-guidelines) between pagination and the element it relates to.
+
 ### Types of pagination
 
 There are two types of pagination, **offset**, and **keyset** (sometimes called cursor-based). General use is outlined below, but either can be used for any scenario since factors like performance, the number of results returned, user expectations, and how data is queried will ultimately help determine the best approach.
