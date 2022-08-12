@@ -17,13 +17,13 @@ The wordmark is a modified version of [Inter Semi Bold](https://fonts.google.com
 
 ## Clear space
 
-Clear space is the area, equal to the x-height, surrounding the entire logo; the x-height is measured by the height of the letter a from the wordmark.
+Clear space is the area, equal to the x-height, surrounding the entire logo; the x-height is measured by the height of the letter 'a' from the wordmark.
 
 This area should be kept free of any visual elements, including text, graphics, borders, patterns, and other logos. Ensuring proper clear space between the logo and surrounding elements preserves the visual integrity of our brand.
 
 <figure class="figure" role="figure" aria-label="with clear space equal to the width of the lowercase 'a' from the wordmark">
   <img class="figure-img gl-p-5 img-50" src="/img/brand/core-logo-clearspace.svg" alt="GitLab logo with clear space" role="img" />
-  <figcaption class="figure-caption">GitLab logo with clear space equal to the width of the lowercase "a" from the wordmark</figcaption>
+  <figcaption class="figure-caption">GitLab logo with clear space equal to the width of the lowercase 'a' from the wordmark</figcaption>
 </figure>
 
 ## Scalability

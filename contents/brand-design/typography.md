@@ -15,11 +15,11 @@ Refer to the guidelines below when working with typography:
 - Left-align all copy. Never force-justify, center-align, or right-align typography, unless the written language dictates otherwise.
 - Default to sentence case unless working with a tagline or different tiers of information.
 - Keep text solid-filled and refrain from adding strokes to outline the type.
-- Display headlines should use Inter Semi Bold with 95% leading and 4.5% tracking.
-- Subheaders and intro/outro paragraphs should use Inter Regular with 110% leading, -2% tracking, and optical kerning.
+- Display headlines should use Inter Semi Bold with 105% leading and -45 tracking (-4.5% in Figma).
+- Subheaders and intro/outro paragraphs should use Inter Regular with 110% leading, -20 tracking (-2% in Figma), and optical kerning.
 - Body copy should use Inter Regular with 135% leading, 0 tracking, and auto kerning.
 - Captions and labels should use Inter Italic with 135% leading, 0 tracking, and auto kerning.
-- Small titles and copy in buttons should use Inter Semi Bold.
+- Call-to-actions and buttons should use Inter Semi Bold.
 
 <figure class="figure" role="figure" aria-label="Inter typography samples">
   <img class="figure-img gl-p-5" src="/img/brand/typography.svg" alt="Typography samples" role="img" />
