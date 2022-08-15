@@ -1,3 +1,13 @@
+# [2.130.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.129.0...v2.130.0) (2022-08-15)
+
+
+### Features
+
+* **Brand:** Update to branded lockups guidelines ([5d84552](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5d8455221c275fd24dda989dd88bbd6400cbf097))
+* **ErrorPrevention:** Add modal usage guidelines ([6b0bcdb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6b0bcdba7f47c8887c0cd134eda4e49a72e1e059))
+* **helping-users:** update reference drawer docs ([02b4627](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/02b46275ef622c029d73d13445b24a13459a30ae))
+* **pagination:** add appearance guidelines ([d7eba5c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d7eba5c999d9ef432f729fe35e734b84ee623654))
+
 # [2.129.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.128.0...v2.129.0) (2022-08-08)
 
 
