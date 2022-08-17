@@ -22,13 +22,21 @@ related:
 
 <story-viewer story-name="base-form-form-group--with-validations" title="Form group with validations"></story-viewer>
 
-<todo>Add additional examples to demonstrate different configurations and capabilities.</todo>
-
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=49840%3A75722)
 
 ## Structure
 
-<todo>Add form structure visual and item list.</todo>
+<figure class="figure" role="figure" aria-label="Form structure">
+  <img class="figure-img" src="/img/form-structure.svg" alt="Numbered diagram of a form" role="img" />
+</figure>
+
+1. **Label**: Clearly and concisely identifies an input.
+1. **Inputs**: Allows a user to enter content or select options through a variety of inputs.
+1. **Placeholder** (optional): Hints at what should be entered into a field.
+1. **Description** (optional): Clarifies the purpose or intent of an input.
+1. **Validation message**: Appears if the input is invalid, acceptable, or needs awareness.
+1. **Help text** (optional): Provides contextual examples, formatting information, details about the input field state.
+1. **Actions**: Used to submit or cancel a form.
 
 ## Guidelines
 
