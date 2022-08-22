@@ -1,3 +1,11 @@
+## [2.130.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.130.0...v2.130.1) (2022-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([b027795](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b0277950786609dfb2eda79bb28eb1f702bb5d2a))
+* **Form:** Improve documentation of the Form component ([8e2b8cf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8e2b8cfbca093aa67fbb43171aa47f1c4c053b71))
+
 # [2.130.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.129.0...v2.130.0) (2022-08-15)
 
 
