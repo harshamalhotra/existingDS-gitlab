@@ -31,7 +31,7 @@ related:
 
 ### Appearance
 
-- Filters utilize our [search component](/components/search/) with three main [token](/components/token/) parts:
+- Filters utilize our [search component](/components/search/) with three main [token](/components/token/) parts which form a query:
   1. **key**: acts as the label of the filter value, for example, `assignee`.
   1. **logical operator**: the condition that binds the key to the value, for example, `is` or `is not`.
   1. **value**: the item that the condition will base results on, for example, a `@username`.
@@ -40,22 +40,27 @@ related:
 
 ### Behavior
 
-- Clicking on any of the three parts of a filter opens a corresponding dropdown for selecting the value for that part of the filter. For example, if a user clicks on the value part of the filter, the value dropdown appears.
-- If clicking the operator, the operator dropdown appears and the value part of the filter is removed if the operator is changed.
-- If clicking the key, the key dropdown appears and the operator and the value of the filter are removed if the key is changed.
+- Clicking on any of the three parts of a query opens a corresponding dropdown for that part of the query. For example, if a user clicks on the value part of the query, the value dropdown appears.
+- If the operator is selected, the related dropdown appears and the value part of the query is removed if the operator is changed.
+- If the key is selected, the related dropdown appears and the operator and the value of the query are removed if the key is changed.
 - The text content of the clicked part (operator or key) becomes editable and the text cursor is immediately placed at the end of that text string so that users can either type or select a suggestion from a dropdown.
 - Certain keys are compatible so the operator and value don’t need to be removed in the event of change (for example, changing the key from author to assignee).
 - If a user selects a different value from the dropdown when editing a text string, that new value replaces the old one.
 - If the user clicks anywhere outside the dropdown or the search box, the string is turned back to a token with whatever its value was at the time of the event.
 - If a user tries to edit a key with an invalid value, the token is removed and converted to a plain text string.
 - If a user tries to edit an operator with an invalid value, the first option is chosen and the invalid text becomes the value text string.
-- After a filter is successfully added, a dropdown with suggestions for other keys appears immediately.
-- The experience of adding a filter should be as follows:
+- After a query is successfully added, a dropdown with suggestions for other keys appears immediately.
+- If a query is deleted by interaction through the keyboard, the input should remain focused and a new dropdown should appear.
+- Clicking the clear button inside the input clears all filters, keeps the input focused, and shows a dropdown.
+- Pressing the <kbd>Esc</kbd> key on the keyboard hides the dropdown. Pressing the <kbd>↓</kbd> key or clicking inside the input shows it again. If there's a string already in the input it can be:
+  - Turned into a token if it's a valid match for a value.
+  - Turned into raw text on all other occasions.
+- The experience of adding a query should be as follows:
   1. The user clicks into a search box and a dropdown with the keys that can be used appears.
   1. The user chooses the key of what they want to filter the list by (for example, `assignee`).
   1. The user chooses the logical operator (`is` or `is not`) from a dropdown.
-  1. The user chooses the value of the filter from a dropdown (for example, a `@username`).
-  1. The user needs to repeat steps 1–4 for each filter they want to use.
+  1. The user chooses an option from the dropdown to define the value part of the query (for example, a `@username`).
+  1. The user needs to repeat steps 1–4 for each query they want to add.
   1. Once done, the user needs to confirm the search to trigger it. They do so by clicking on the search button or by using their keyboard.
 
 ### Content
