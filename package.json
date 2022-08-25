@@ -43,7 +43,7 @@
     "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.10",
+    "@babel/core": "7.18.13",
     "@babel/preset-env": "7.18.10",
     "@evilmartians/lefthook": "^1.1.0",
     "@gitlab/eslint-plugin": "16.0.0",
