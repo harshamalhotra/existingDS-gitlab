@@ -1,3 +1,15 @@
+# [2.131.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.130.1...v2.131.0) (2022-08-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v43.7.1 ([fa84d51](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fa84d51c1c6b581c1fe33ea966cf70b058b728d1))
+
+
+### Features
+
+* **GlFilteredSearch:** add more interaction guidelines ([2d27cc1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2d27cc1d881077be73d4498311f6f8146d7c7112))
+
 ## [2.130.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.130.0...v2.130.1) (2022-08-22)
 
 
