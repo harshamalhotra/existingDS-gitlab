@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <SvgAlbum
+  <svg-album
     :elements="Object.freeze($options.illustrations.illustrations)"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
     class="illustrations-explorer"
@@ -37,5 +37,5 @@ export default {
       <img alt="" :src="imagePath(entry.name)" />
     </template>
     <template #no-result> No illustrations found. Click here to reset your search! </template>
-  </SvgAlbum>
+  </svg-album>
 </template>

@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <SvgAlbum
+  <svg-album
     :elements="Object.freeze($options.icons)"
     :size-options="$options.sizeOptions"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
@@ -41,5 +41,5 @@ export default {
       <svg-icon :icon="entry.name" :class="className" />
     </template>
     <template #no-result>No icons found. Click here to reset your search!</template>
-  </SvgAlbum>
+  </svg-album>
 </template>
