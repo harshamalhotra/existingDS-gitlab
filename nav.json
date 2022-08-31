@@ -416,24 +416,6 @@
     ]
   },
   {
-    "title": "Research",
-    "path": "research",
-    "items": [
-      {
-        "title": "Get started",
-        "path": "get-started"
-      },
-      {
-        "title": "First look",
-        "path": "https://about.gitlab.com/community/gitlab-first-look/"
-      },
-      {
-        "title": "Personas",
-        "path": "https://about.gitlab.com/handbook/marketing/strategic-marketing/roles-personas/"
-      }
-    ]
-  },
-  {
     "title": "Accessibility",
     "items": [
       {
