@@ -72,9 +72,10 @@ When this occurs, the top-level menu item should remain consistent, even if ther
 
 ### Behavior
 
+- When navigating using the left sidebar, the sidebar always persists in order to maintain the user's context. The only exception to this rule is for integrations that utilize the [external link icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~external-link).
 - A cookie is set to remember a user's preference between collapsed or expanded.
 - For medium and large viewports, the left sidebar is collapsed. When expanded manually, it overlaps the page content. The user's cookie preference is not overridden during this state.
-- For small and extra small viewports, the left sidebar is hidden behind a "hamburger" icon. When expanded, the sidebar overlaps the page and a semi-transparent overlay covers the page content. The user's cookie preference is not overridden during this state.
+- For small and extra small viewports, the left sidebar is hidden behind a [sidebar icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sidebar). When expanded, the sidebar overlaps the page and a semi-transparent overlay covers the page content. The user's cookie preference is not overridden during this state.
 
 #### Breakpoints
 
