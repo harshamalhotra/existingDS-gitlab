@@ -4,13 +4,13 @@ name: Navigation
 
 <note>For guidance on how to propose a change to navigation menu items, see the [Navigation handbook page](https://about.gitlab.com/handbook/engineering/ux/navigation/).</note>
 
-## Top menu
+## Top bar
 
-The top menu refers to the top horizontal navigation. The items in the top menu include a list of pages that allow you to view global content throughout GitLab. For example, you can view your todos, issues, and merge requests across projects and groups. You can also create new groups and projects, as well as search the application. 
+The top bar refers to the top horizontal navigation. The items in the top bar include a list of pages that allow you to view global content throughout GitLab. For example, you can view your todos, issues, and merge requests across projects and groups. You can also create new groups and projects, as well as search the application. 
 
-The top menu navigation items are replaced by exit links during scenarios that have a business impact. This includes signing up, purchasing a subscription, and starting a trial. By doing so, we facilitate task completion and reduce user errors, such as accidentally navigating away.
+The top bar navigation items are replaced by exit links during scenarios that have a business impact. This includes signing up, purchasing a subscription, and starting a trial. By doing so, we facilitate task completion and reduce user errors, such as accidentally navigating away.
 
-<todo>Add top menu example</todo>
+<todo>Add top bar example</todo>
 
 ### GitLab Start Page
 The GitLab Start Page is the page users see at the top level of GitLab.com or their instance, and it's where users are directed after logging in. This page is considered navigation, as it is meant to help users orient themselves upon logging in. Currently this page is configurable in User Settings.
