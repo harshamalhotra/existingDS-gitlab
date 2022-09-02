@@ -17,7 +17,18 @@ related:
 
 ## Structure
 
-<todo>Add structure image.</todo>
+<figure class="figure" role="figure" aria-label="Filter structure">
+  <img class="figure-img" src="/img/filter-structure.svg" alt="Numbered diagram of a filter structure" role="img" />
+</figure>
+
+1. **Input**: The input field of the filter.
+2. **Query**: Consists of three main token parts: key (3), logical operator (4), and value (5).
+3. **Key**: acts as the label of the filter value, for example, `assignee`.
+4. **Logical operator**: the condition that binds the key to the value, for example, `is` or `is not`.
+5. **Value**: the item that the condition will base results on, for example, a `@username`.
+6. **Raw text**: Additional raw text can be typed into the filter
+7. **Clear button**: Clears the entire input field (all queries and raw text).
+8. **Search button**: Triggers the search.
 
 ## Guidelines
 
@@ -31,12 +42,9 @@ related:
 
 ### Appearance
 
-- Filters utilize our [search component](/components/search/) with three main [token](/components/token/) parts which form a query:
-  1. **key**: acts as the label of the filter value, for example, `assignee`.
-  1. **logical operator**: the condition that binds the key to the value, for example, `is` or `is not`.
-  1. **value**: the item that the condition will base results on, for example, a `@username`.
-- Filters are positioned inline with the text cursor in a search box. The search box becomes horizontally scrollable when the filters can’t fit in it.
-- Filters include a [remove icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~close) which, when clicked, removes the whole filter from the search box.
+- Filters utilize the [search component](/components/search/) with three main [token](/components/token/) parts that form a query (see [Structure](#structure)).
+- Queries are positioned inline with the text cursor in the input field. The input field scrolls horizontally when the queries overflow the width.
+- Queries include a [remove icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~close) that removes the whole query from the search box when clicked.
 
 ### Behavior
 
