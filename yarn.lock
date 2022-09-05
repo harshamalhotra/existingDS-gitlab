@@ -1040,19 +1040,19 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.2.0.tgz#1ff40355642600e8807775f2b137c184e46380e9"
-  integrity sha512-djAEmvB3AljQaVKwEoNWls8Q6oWwGvUVrmtBe3ykyPF/E50QVmiM2kXIko2BAEPzmIKhaH9YchowfYqJX3y2vg==
+"@gitlab/svgs@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.3.0.tgz#99b044484fcf3d5a6431281e320e2405540ff5a9"
+  integrity sha512-S8Hqf+ms8aNrSgmci9SVoIyj/0qQnizU5uV5vUPAOwiufMDFDyI5qfcgn4EYZ6mnju3LiO+ReSL/PPTD4qNgHA==
 
-"@gitlab/ui@43.9.1":
-  version "43.9.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-43.9.1.tgz#8864687ebaffe3ff71b8d6087ce55e3e52e57a79"
-  integrity sha512-1Rn4ZEOyQ0flDsAbxsFSnHNFqO0I2kuJjdkXfiEI21g0pdZ3LrdNwE0WcoRZWQd+nQQ0XbvzRaqmxN53rTY21g==
+"@gitlab/ui@43.11.0":
+  version "43.11.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-43.11.0.tgz#f519a682f1691d5c5c7994f65afad4315058f5be"
+  integrity sha512-Zmw6DndZ2epUliQ1Rv9/THamCXuNcF8cIqMkgowvrsaS1xRjAp/NYTheMCzuQIMD9B+K+NqG2Tc+/vEa1Qe4lg==
   dependencies:
     "@popperjs/core" "^2.11.2"
     bootstrap-vue "2.20.1"
-    dompurify "^2.3.10"
+    dompurify "^2.4.0"
     echarts "^5.3.2"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
@@ -4937,10 +4937,10 @@ domhandler@^5.0.1, domhandler@^5.0.2:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.10.tgz#901f7390ffe16a91a5a556b94043314cd4850385"
-  integrity sha512-o7Fg/AgC7p/XpKjf/+RC3Ok6k4St5F7Q6q6+Nnm3p2zGWioAY6dh0CbbuwOhH2UcSzKsdniE/YnE2/92JcsA+g==
+dompurify@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.0.tgz#c9c88390f024c2823332615c9e20a453cf3825dd"
+  integrity sha512-Be9tbQMZds4a3C6xTmz68NlMfeONA//4dOavl/1rNw50E+/QO0KVpbcU0PcaW0nsQxurXls9ZocqFxk8R2mWEA==
 
 domutils@1.1:
   version "1.1.6"
