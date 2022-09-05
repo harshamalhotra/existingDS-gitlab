@@ -1,3 +1,20 @@
+# [2.132.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.131.0...v2.132.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([28b4d6e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/28b4d6e502b10dac8df5ba843497366e2ce5b305))
+* **deps:** update gitlab ui/svg ([5577519](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/55775199fd33ab048dc4787db91809eaace8b1f7))
+
+
+### Features
+
+* **Alert:** Add when not to use guidelines ([66961c0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/66961c014b343cf472b5a2d9f6eb06f7a04bc047))
+* **GlFilteredSearch:** Add structure image and notes ([47f09b8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/47f09b81fe9cfd15eb5ea6e359bb3ed38ff5bd6b))
+* **nav:** Add guidance around persisting left sidebar ([8e583d8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8e583d854873f0bc6445fde25ee5d488285bc2b0))
+* **nav:** Replace top menu term with top bar ([063e962](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/063e96237ad89b34c195e5d33e52801d4d1b869b))
+* **Research:** Remove research content and links ([a796410](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a796410d9908157a86f36165d9c0c025a7738769))
+
 # [2.131.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.130.1...v2.131.0) (2022-08-29)
 
 
