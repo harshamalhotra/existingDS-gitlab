@@ -4,7 +4,7 @@ name: Feature management
 
 ## Configuration
 
-The ability to configure features by disabling unwanted functionality is [possible at the project level](https://docs.gitlab.com/ee/user/project/settings/#sharing-and-permissions). Admin users cannot disable features at the instance or group levels, as they do not know what functionality end users may need.
+Disabling unwanted [features is possible in projects](https://docs.gitlab.com/ee/user/project/settings/#sharing-and-permissions), but adding more to this list is not recommended. Disabled features may adversely impact the the [System Usability Scale](https://about.gitlab.com/handbook/engineering/ux/performance-indicators/system-usability-scale/), since it may lead to an unexpected and inconsistent user experience. Admin users cannot disable features at the instance or group levels, as they do not know what functionality end users may need.
 
 ## Discovery moments
 
