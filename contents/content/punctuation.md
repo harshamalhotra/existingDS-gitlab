@@ -56,7 +56,15 @@ Always capitalize the first word in bulleted lists. This includes sentences that
 
 ## Periods
 
-A period signals to a speaker or reader that a sentence has come to an end, and it assists users in visually breaking up content. Follow these guidelines:
+A period signals to a speaker or reader that a sentence has come to an end, and it assists users in visually breaking up content.
+
+- Do **not** use periods:
+  - For the label of a UI element. For example, for the label associated with a checkbox, text box, or button.
+  - For the title of a UI element. For example, for the title of a banner, warning, broadcast message, dialog box, or modal.
+- Use periods:
+  - For additional help text. For example, for text in banners, warnings, and for the extra description below a checkbox or text box.
+
+Follow these additional guidelines:
 
 Use periods with links that are full sentences.
 
