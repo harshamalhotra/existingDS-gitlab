@@ -1,3 +1,12 @@
+# [2.133.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.132.0...v2.133.0) (2022-09-12)
+
+
+### Features
+
+* **Form:** Update form svg ([4051f3b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4051f3be4cb245e720ceaa17006591dc3c3d5791))
+* **line-chart:** Add no data guidelines ([7e2a074](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7e2a0745e37e702c4e8140360bcede3f3c32f5c2))
+* **nav:** Replace term for GitLab Start Page ([2e8b960](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2e8b960dc0c239d1d4d8ee49af4306f6234ec261))
+
 # [2.132.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.131.0...v2.132.0) (2022-09-05)
 
 
