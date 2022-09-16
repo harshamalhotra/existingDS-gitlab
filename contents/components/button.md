@@ -126,7 +126,7 @@ States change visually and/or programmatically depending on user interaction or 
 
 - Only use icons from [GitLab's SVG library](http://gitlab-org.gitlab.io/gitlab-svgs/).
 - Icons use the default size (16×16px).
-- An icon can be used in place of text. If the action may not be universally understood consider using a [tooltip](/components/tooltip) to provide the action is text form.
+- An icon can be used in place of text. In these cases, use a [tooltip](/components/tooltip) to provide context, unless the action may be universally understood, like a closing action using the [close icon](/product-foundations/iconography/icons?q=%7Eclose).
 
 #### Badges
 

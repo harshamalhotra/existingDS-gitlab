@@ -24,9 +24,11 @@ related:
 
 - Show the same data in a different format, such as date or timestamps.
 - Display a full string of text that is shortened with an ellipsis (`…`).
-- Provide context for unlabelled items such as [icon buttons](/components/button).
+- Provide context for unlabelled items such as [icon buttons](/components/button), except for [certain cases](#when-not-to-use).
 
 ### When not to use
+
+- For [icon buttons](/components/button) that may be universally understood, like a closing action using the [close icon](https://design.gitlab.com/product-foundations/iconography/icons?q=%7Eclose).
 
 Consider using a [popover](/components/popover) for the following scenarios:
 
