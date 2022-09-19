@@ -1,3 +1,17 @@
+# [2.134.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.133.0...v2.134.0) (2022-09-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v43.14.0 ([476d6ed](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/476d6edded545ba0a05fc3d90ce21cbb3d0ea963))
+
+
+### Features
+
+* **alert:** Removed bullet about punctuation ([afc1124](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/afc1124056f33bcb4d77f617e8a776430c668eed))
+* **Navigation:** Highlight level details ([4028e38](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4028e387585ac7502bd8bf51455790895381b71c))
+* **Usability:** Avoid disabling features in projects ([576c11a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/576c11ab701b63eb0bcfa1fb64f462f8048c086c))
+
 # [2.133.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.132.0...v2.133.0) (2022-09-12)
 
 
