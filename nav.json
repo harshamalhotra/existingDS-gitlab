@@ -352,7 +352,7 @@
         "path": "regions",
         "items": [
           { "title": "Empty States", "path": "empty-states" },
-          { "title": "Filters", "path": "filters" },
+          { "title": "Filtering", "path": "filtering" },
           { "title": "Merge request reports", "path": "merge-request-reports" },
           { "title": "Navigation", "path": "navigation" },
           { "title": "Search", "path": "search" },
