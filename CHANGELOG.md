@@ -1,3 +1,15 @@
+# [2.135.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.134.0...v2.135.0) (2022-09-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v43.17.1 ([785b5a3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/785b5a352631db8559c220090ec64d977119ceac))
+
+
+### Features
+
+* **Filtering:** Add initial guidelines ([578858f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/578858fdac6e1992a66ba8f3b53a25eba1ce17a9))
+
 # [2.134.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.133.0...v2.134.0) (2022-09-19)
 
 
