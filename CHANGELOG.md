@@ -1,3 +1,10 @@
+## [2.135.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.135.0...v2.135.1) (2022-10-03)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([178a058](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/178a058cbf995bf4caa43bfe6e4c8d93fd4d05fb))
+
 # [2.135.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.134.0...v2.135.0) (2022-09-26)
 
 
