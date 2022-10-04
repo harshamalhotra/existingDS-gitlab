@@ -11,7 +11,7 @@ Giving appropriate and timely feedback for user-made changes is vital to making 
 
 ## Saving progress
 
-The guideline for choosing between the two methods of saving progress is: introduce automatic saving of changes if you believe that it will improve the user’s experience in the given case. If you think it may add confusion to the process, default to saving manually. Automatically saving changes can be sensitive and comes with its own set of guidelines. Consider these guidelines when deciding between the two methods.
+When deciding between the two methods for saving progress, introduce automatic saving of changes if it will improve the user’s experience, else to avoid confusion, default to saving manually. Automatically saving changes can be sensitive and comes with its own set of guidelines. Consider these guidelines when deciding between the two methods.
 
 ### Manual
 
