@@ -70,6 +70,21 @@ A banner should be used sparingly and with consideration of its impact to neighb
 - The message describes the benefits of performing the action.
 - An optional [illustration](/product-foundations/illustration) to support the message uses the [medium](/product-foundations/illustration#grid-and-size) illustration size.
 
+### Placement
+
+- Similar to [alert placement](/components/alert#placement), the content within the banner will determine its placement on the page.
+- Generally speaking, an introduction banner should be used at the page-level and relate to all content on the page, whereas a promotion banner can either be used at the page-level or in-page level. If in-page level is used, the banner should be placed directly above the content it relates to.
+
+<figure class="figure" role="figure" aria-label="Introduction banner at the top of the page">
+  <img class="figure-img" src="/img/banner-page-level.png" alt="Page level banner position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">Introduction banner at the top of the page</figcaption>
+</figure>
+
+<figure class="figure" role="figure" aria-label="In-page banner above the content it relates to">
+  <img class="figure-img" src="/img/banner-in-page.png" alt="Page level banner position" role="img" style="width:100%; max-width:332px; height:auto" />
+  <figcaption class="figure-caption">In-page banner above the content it relates to</figcaption>
+</figure>
+
 ### Accessibility
 
 - When an illustration is used, it should be hidden from screen readers with `aria-hidden="true"`.
