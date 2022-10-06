@@ -377,7 +377,8 @@ The neutral palette is primarily used within components to help differentiate hi
         code: '#000000',
         classes: ['f-inverted']
       },
-    ]"></color-palette>
+    ]"
+    show-contrast-scores></color-palette>
 
   </div>
 
