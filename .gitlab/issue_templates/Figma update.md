@@ -119,4 +119,4 @@ Once the Reviewer or Maintainer has approved your update, consider the following
 
 <!-- Do not delete below this line -->
 
-/labels ~Figma ~"Pajamas UI Kit" ~"pajamas::design"
+/label ~Figma ~"Pajamas UI Kit" ~"pajamas::design"
