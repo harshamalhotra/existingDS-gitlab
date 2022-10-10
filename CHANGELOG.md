@@ -1,3 +1,17 @@
+# [2.136.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.135.1...v2.136.0) (2022-10-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v43.21.0 ([7c51aea](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7c51aea1f2f02b5fe290f351b1d8c0e93f678baa))
+* **Saving:** Improving sentence structure ([88e9ba2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/88e9ba25d2dae03212e2c06cbec53cc976d7c16a))
+
+
+### Features
+
+* **Banner:** Update banner placement guidance ([17f37f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/17f37f594ca70f66423014bc1f7cbf34494517c9))
+* **Color:** Add contrast info to neutral color palette ([e552a7a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e552a7aaa88569bd0013f0692b1dd733bfe6ef46))
+
 ## [2.135.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.135.0...v2.135.1) (2022-10-03)
 
 
