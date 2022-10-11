@@ -2,11 +2,17 @@
 name: Navigation
 ---
 
-<note>For guidance on how to propose a change to navigation menu items, see the [Navigation handbook page](https://about.gitlab.com/handbook/engineering/ux/navigation/).</note>
+This page describes the navigation guidelines that apply to the GitLab user interface.
+
+For help with other aspects of GitLab's navigation, refer to the following resources:
+
+- [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
+- [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research-training/evaluating-navigation/).
+- [How to use navigational elements for feature discovery](https://about.gitlab.com/handbook/product/product-principles/#navigation).
 
 ## Top bar
 
-The top bar refers to the top horizontal navigation. The items in the top bar include a list of pages that allow you to view global content throughout GitLab. For example, you can view your todos, issues, and merge requests across projects and groups. You can also create new groups and projects, as well as search the application. 
+The top bar refers to the top horizontal navigation. The items in the top bar include a list of pages that allow you to view global content throughout GitLab. For example, you can view your todos, issues, and merge requests across projects and groups. You can also create new groups and projects, as well as search the application.
 
 The top bar navigation items are replaced by exit links during scenarios that have a business impact. This includes signing up, purchasing a subscription, and starting a trial. By doing so, we facilitate task completion and reduce user errors, such as accidentally navigating away.
 
@@ -20,7 +26,7 @@ The dashboard is the page users see at the top level of GitLab.com or their inst
 The user settings menu is the rightmost menu which contains items related to the logged-in user.
 
 ### Help menu
-The help menu is the dropdown with the question mark icon and contains links to docs and support. 
+The help menu is the dropdown with the question mark icon and contains links to docs and support.
 
 ## Left sidebar
 
@@ -69,7 +75,7 @@ Each submenu should be a self-contained group of functionality, for example:
 
 The default active item should be the first submenu item.
 
-In some cases, items within a submenu may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project. 
+In some cases, items within a submenu may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project.
 
 When this occurs, the top-level menu item should remain consistent, even if there is only one submenu item. The reason for top-level menu consistency is to reduce the cognitive effort needed from users to understand the navigation and task hierarchy. For example, we should not replace **CI/CD** with **Runners** or **Infrastructure** with **Terraform** as the top-level menu item in the sidebar.
 
