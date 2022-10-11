@@ -63,12 +63,6 @@
   }
 }
 
-.bg-dark {
-  background: $gray-50;
-  border-top: $border-width solid $gray-100;
-  border-bottom: $border-width solid $gray-100;
-}
-
 .index {
   p {
     @include type-scale(1, 6, 2, 0);

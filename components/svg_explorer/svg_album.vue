@@ -110,7 +110,7 @@ export default {
     </header>
     <section class="svg-list" :class="selectedClass + '-list'">
       <aside>
-        <label v-if="sizeOptions.length" class="d-block gl-mb-3">
+        <label v-if="sizeOptions.length" class="gl-display-block gl-mb-3">
           <strong>Select a size:</strong>
           <select v-model="selectedClass">
             <option

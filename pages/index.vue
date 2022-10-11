@@ -2,7 +2,7 @@
   <div class="index typography">
     <nuxt-child />
     <div class="content banner">
-      <div class="banner__header text-center">
+      <div class="banner__header gl-text-center">
         <svg
           width="66"
           height="121"
@@ -66,7 +66,7 @@
               of truth for everything anyone needs to know about contributing to GitLab.
             </p>
           </div>
-          <div class="contribute-img text-center">
+          <div class="contribute-img gl-text-center">
             <img
               src="../assets/images/contribute.png"
               srcset="../assets/images/contribute@2x.png 2x"
@@ -76,10 +76,12 @@
         </div>
       </div>
     </div>
-    <div class="bg-dark gl-pt-9 gl-pb-9">
+    <div
+      class="gl-bg-gray-50 gl-border-gray-100 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
+    >
       <div class="content limited distributed contributing-box__content">
         <div class="contribute-row">
-          <div class="contribute-img text-center">
+          <div class="contribute-img gl-text-center">
             <img src="../assets/images/content.svg" class="gl-p-9" />
           </div>
           <div class="contribute-copy">
@@ -113,77 +115,75 @@
               >. Otherwise, be sure to check out the resources below!
             </p>
           </div>
-          <div class="contribute-img text-center">
+          <div class="contribute-img gl-text-center">
             <img src="../assets/images/pajamas_stars.svg" class="gl-p-13" />
           </div>
         </div>
         <div class="row gl-mt-9">
-          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+          <div class="col col-33">
             <a
               href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues"
               target="_blank"
-              class="text-center"
+              class="gl-text-center"
             >
               <img
                 width="48"
                 height="48"
                 src="../assets/images/resources/r-solid.png"
-                class="a-center d-block"
+                class="gl-mx-auto gl-display-block"
                 alt=""
               />
-              <span class="d-block gl-p-3"> View the issue tracker </span>
+              <span class="gl-display-block gl-p-3"> View the issue tracker </span>
             </a>
           </div>
-          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+          <div class="col col-33">
             <a
               href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
               target="_blank"
-              class="text-center"
+              class="gl-text-center"
             >
               <img
                 width="48"
                 height="48"
                 src="../assets/images/resources/r-outline.png"
-                class="a-center d-block"
+                class="gl-mx-auto gl-display-block"
                 alt=""
               />
-              <span class="d-block gl-p-3"> Explore the repository </span>
+              <span class="gl-display-block gl-p-3"> Explore the repository </span>
             </a>
           </div>
-          <div class="col col-33 d-flex flex-column align-items-center justify-content-center">
+          <div class="col col-33">
             <a
               href="https://www.figma.com/community/file/781156790581391771/"
               target="_blank"
-              class="text-center"
+              class="gl-text-center"
             >
               <img
                 width="48"
                 height="48"
                 src="../assets/images/resources/r-figma.png"
-                class="a-center d-block"
+                class="gl-mx-auto gl-display-block"
                 alt=""
               />
-              <span class="d-block gl-p-3"> Duplicate our Figma UI Kit </span>
+              <span class="gl-display-block gl-p-3"> Duplicate our Figma UI Kit </span>
             </a>
           </div>
         </div>
-        <div class="gl-mt-11 d-flex justify-content-center">
-          <div class="">
-            <a
-              href="https://about.gitlab.com/community/gitlab-first-look/"
-              target="_blank"
-              class="d-flex align-items-center"
-            >
-              <img
-                width="48"
-                height="48"
-                src="../assets/images/resources/r-first-look.png"
-                class="d-block"
-                alt=""
-              />
-              <span class="gl-p-3"> Join the GitLab First Look research program </span>
-            </a>
-          </div>
+        <div class="gl-mt-11">
+          <a
+            href="https://about.gitlab.com/community/gitlab-first-look/"
+            target="_blank"
+            class="gl--flex-center"
+          >
+            <img
+              width="48"
+              height="48"
+              src="../assets/images/resources/r-first-look.png"
+              class="gl-display-block"
+              alt=""
+            />
+            <span class="gl-p-3"> Join the GitLab First Look research program </span>
+          </a>
         </div>
       </div>
     </div>

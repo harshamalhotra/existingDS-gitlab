@@ -142,7 +142,7 @@ export default {
       </gl-nav>
     </div>
     <nuxt-child :page="page" :component-label="componentLabel" />
-    <p v-if="lastUpdatedAt" class="row justify-content-center gl-mt-5">
+    <p v-if="lastUpdatedAt" class="row gl-justify-content-center gl-mt-5">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
   </div>

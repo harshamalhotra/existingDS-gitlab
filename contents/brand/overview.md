@@ -2,7 +2,7 @@
 name: Overview
 ---
 
-<img class="d-block a-center gl-mb-7 img-25" src="/img/brand/gitlab-logo.svg" alt="GitLab logo" role="img" />
+<img class="gl-display-block gl-mx-auto gl-mb-7 img-25" src="/img/brand/gitlab-logo.svg" alt="GitLab logo" role="img" />
 
 These guidelines set the standard for upholding a cohesive brand image. Our brand, like our product and company, has arrived to where it is today through the collaboration of numerous contributors and iterative processes. It exists as the creative expression of our company mission, vision, and [values](https://about.gitlab.com/handbook/values/).
 

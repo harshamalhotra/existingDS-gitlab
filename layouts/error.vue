@@ -18,7 +18,7 @@ export default {
 </script>
 <template>
   <div class="index typography">
-    <h1 class="text-center">{{ title }}</h1>
+    <h1 class="gl-text-center">{{ title }}</h1>
     <NuxtLink to="/">Back to a safe haven!</NuxtLink>
     <pre v-if="details" class="text-left">{{ details }}</pre>
   </div>
