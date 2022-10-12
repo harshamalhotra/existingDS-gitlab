@@ -61,7 +61,7 @@ The full color logo is the default logo to be used, however, there are times tha
 
 ## Incorrect usage
 
-<img class="d-block a-center gl-my-7" src="/img/brand/core-logo-incorrect-usage.svg" alt="GitLab logo incorrect usage" role="img" />
+<img class="gl-display-block gl-mx-auto gl-my-7" src="/img/brand/core-logo-incorrect-usage.svg" alt="GitLab logo incorrect usage" role="img" />
 
 1. Do not apply a stroke to the logo
 1. Do not recolor any part of the logo

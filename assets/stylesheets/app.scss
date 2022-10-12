@@ -8,8 +8,6 @@
 @import 'framework/base';
 @import 'framework/color';
 @import 'framework/content';
-@import 'framework/display';
-@import 'framework/flex';
 @import 'framework/footer';
 @import 'framework/sidebar';
 @import 'framework/sizing';
@@ -29,10 +27,10 @@
 
 @import '@gitlab/ui/src/scss/utilities';
 
+@import '@gitlab/ui/src/scss/gitlab_ui';
 /**
  Import GitLab UI component styles.
  At the moment we only import component specific styles in order to avoid side-effects
  */
 .app-styles {
-  @import '@gitlab/ui/src/scss/gitlab_ui';
 }

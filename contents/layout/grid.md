@@ -44,7 +44,7 @@ Adhering to a baseline grid allows us to be more efficient by removing decision 
 
 Using a baseline grid of 8px allows flexibility when scaling and defining our [spacing](/layout/spacing) without overloading the system with options. By using multiples of 8 to define dimensions, padding, and margins of components, we ensure every UI element aligns to the pixel grid.
 
-<div class="baseline a-center gl-mb-6">
+<div class="baseline gl-mx-auto gl-mb-6">
   <div class="w-13 h-3"></div>
   <div class="w-13 h-5 c-blue-background-300"></div>
   <div class="w-13 h-3"></div>
@@ -57,7 +57,7 @@ Using a baseline grid of 8px allows flexibility when scaling and defining our [s
 
 When text is used within a UI element, set the line-height to be consistent with the baseline grid and use padding to define the size of the component.
 
-<div class="baseline a-center">
+<div class="baseline gl-mx-auto">
   <div class="w-13 h-3"></div>
   <div class="w-13 h-3 c-orange-background-200"></div>
   <div class="w-13 h-3 c-green-background-200"></div>
