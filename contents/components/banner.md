@@ -63,6 +63,7 @@ A banner should be used sparingly and with consideration of its impact to neighb
   - Docs for an installation guide.
   - Where they can upgrade their plan to enable a feature.
   - A format for contributing or providing feedback.
+- When using a banner to solicit feedback, ensure a clear metric of success is set to remove the banner once complete. For example, using a banner to collect survey responses and removing the banner once 100 responses are collected.
 
 ### Content
 
