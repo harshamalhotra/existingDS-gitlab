@@ -31,7 +31,6 @@ const cspPolicies = [
 // eslint-disable-next-line import/no-default-export
 export default {
   target: 'static',
-
   /*
    ** Headers of the page
    */
@@ -115,6 +114,7 @@ export default {
 
   generate: {
     dir: 'public',
+    fallback: 'error.html',
   },
 
   router: {
