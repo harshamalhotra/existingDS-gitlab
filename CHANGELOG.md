@@ -1,3 +1,18 @@
+# [2.137.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.136.0...v2.137.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v44 ([e6207cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e6207cdb1482afafc30d3d99a10afec99e6f9cd0))
+* **deps:** update dependency @gitlab/ui to v46 ([04b5557](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/04b5557c0e669c0b80bfa5b77bc2a12c9819deed))
+
+
+### Features
+
+* **ErrorPage:** Format better error page ([616ecad](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/616ecad5ce76d22095862f54b7cbea320520f413))
+* **GlBanner:** add removal guidelines ([aa5e7b9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aa5e7b983fb491d9b6ab895209a5fe63ea614f77))
+* **nav:** Add cross-links to navigation pages ([d35aef3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d35aef35582a7e6eec3c4db72961ea4f99946c2a))
+
 # [2.136.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.135.1...v2.136.0) (2022-10-10)
 
 
