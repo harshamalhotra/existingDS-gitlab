@@ -181,6 +181,9 @@ export default {
   content: {
     liveEdit: true,
     dir: 'contents',
+    markdown: {
+      remarkPlugins: ['~~/remark-plugins/mermaid.js'],
+    },
   },
 
   /*
