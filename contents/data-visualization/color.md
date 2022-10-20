@@ -30,7 +30,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-blue-100',
-        code: '#d4dcfa',
+        code: '#d2dcff',
       },
       {
         name: 'data-viz-blue-200',
@@ -42,36 +42,36 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-blue-400',
-        code: '#748eff',
+        code: '#7992f5',
       },
       {
         name: 'data-viz-blue-500',
-        code: '#5772ff',
+        code: '#617ae2',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-blue-600',
-        code: '#445cf2',
+        code: '#4e65cd',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-blue-700',
-        code: '#3547de',
+        code: '#3f51ae',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-blue-800',
-        code: '#232fcf',
+        code: '#374291',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-blue-900',
-        code: '#1e23a8',
+        code: '#303470',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-blue-950',
-        code: '#11118a',
+        code: '#2a2b59',
         classes: ['f-inverted']
       },
     ]"></color-palette>
@@ -86,33 +86,33 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-orange-100',
-        code: '#f7d8b5',
+        code: '#f5d6b3',
       },
       {
         name: 'data-viz-orange-200',
-        code: '#f3c291',
+        code: '#eebd8c',
       },
       {
         name: 'data-viz-orange-300',
-        code: '#eb9a5c',
+        code: '#e99b60',
       },
       {
         name: 'data-viz-orange-400',
-        code: '#e17223',
+        code: '#e07e41',
       },
       {
         name: 'data-viz-orange-500',
-        code: '#d14e00',
+        code: '#c95d2e',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-orange-600',
-        code: '#b24800',
+        code: '#b14f18',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-orange-700',
-        code: '#944100',
+        code: '#92430a',
         classes: ['f-inverted']
       },
       {
@@ -122,12 +122,12 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-orange-900',
-        code: '#5c2b00',
+        code: '#5e2f05',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-orange-950',
-        code: '#421e00',
+        code: '#4b2707',
         classes: ['f-inverted']
       },
     ]"></color-palette>
@@ -138,52 +138,52 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
     :shades="[
       {
         name: 'data-viz-aqua-50',
-        code: '#b8fff2',
+        code: '#b5fefd',
       },
       {
         name: 'data-viz-aqua-100',
-        code: '#93fae7',
+        code: '#93f2ef',
       },
       {
         name: 'data-viz-aqua-200',
-        code: '#5eebdf',
+        code: '#5edee3',
       },
       {
         name: 'data-viz-aqua-300',
-        code: '#25d2d2',
+        code: '#32c5d2',
       },
       {
         name: 'data-viz-aqua-400',
-        code: '#0bb6c6',
+        code: '#00acc4',
       },
       {
         name: 'data-viz-aqua-500',
-        code: '#0094b6',
+        code: '#0090b1',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-aqua-600',
-        code: '#0080a1',
+        code: '#007b9b',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-aqua-700',
-        code: '#006887',
+        code: '#006381',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-aqua-800',
-        code: '#004d67',
+        code: '#00516c',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-aqua-900',
-        code: '#003f57',
+        code: '#004059',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-aqua-950',
-        code: '#00293d',
+        code: '#00344b',
         classes: ['f-inverted']
       },
     ]"></color-palette>
@@ -198,11 +198,11 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-green-100',
-        code: '#c9f097',
+        code: '#c6ed94',
       },
       {
         name: 'data-viz-green-200',
-        code: '#b0de73',
+        code: '#b0d97b',
       },
       {
         name: 'data-viz-green-300',
@@ -210,16 +210,16 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-green-400',
-        code: '#83ab4a',
+        code: '#81ac41',
       },
       {
         name: 'data-viz-green-500',
-        code: '#608b2f',
+        code: '#619025',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-green-600',
-        code: '#487900',
+        code: '#4e7f0e',
         classes: ['f-inverted']
       },
       {
@@ -239,7 +239,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-green-950',
-        code: '#0f3300',
+        code: '#133a03',
         classes: ['f-inverted']
       },
     ]"></color-palette>
@@ -254,7 +254,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-magenta-100',
-        code: '#ffc9d9',
+        code: '#ffccdb',
       },
       {
         name: 'data-viz-magenta-200',
@@ -262,40 +262,40 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
       },
       {
         name: 'data-viz-magenta-300',
-        code: '#ff85af',
+        code: '#f88aaf',
       },
       {
         name: 'data-viz-magenta-400',
-        code: '#f2639a',
+        code: '#e86e9a',
       },
       {
         name: 'data-viz-magenta-500',
-        code: '#d84280',
+        code: '#cf4d81',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-magenta-600',
-        code: '#c52c6b',
+        code: '#b93d71',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-magenta-700',
-        code: '#b31756',
+        code: '#9a2e5d',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-magenta-800',
-        code: '#950943',
+        code: '#7c214f',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-magenta-900',
-        code: '#7a0033',
+        code: '#661e3a',
         classes: ['f-inverted']
       },
       {
         name: 'data-viz-magenta-950',
-        code: '#570028',
+        code: '#541d31',
         classes: ['f-inverted']
       },
     ]"></color-palette>
