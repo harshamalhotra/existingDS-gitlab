@@ -1,3 +1,18 @@
+# [2.138.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.137.0...v2.138.0) (2022-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v46.1.0 ([6e00419](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6e004199b446070498a040ecec548b958193e258))
+* **deps:** update dependency @gitlab/ui to v48 ([b381941](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b3819410cdb782ecc60d04bebb26407c2c60f385))
+
+
+### Features
+
+* **Color:** Update data viz hex values ([2eb46cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2eb46cdd0af712ad832fa23928de087154c4982a))
+* **Error prevention:** Update guidelines for high severity ([323cdcb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/323cdcbe45c27ec11473ffc79f17b4fe18fc641a))
+* add Mermaid diagram capabilities ([fa19ce1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fa19ce143ce1e7436e94dd6d83184baccefa9ccf))
+
 # [2.137.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.136.0...v2.137.0) (2022-10-17)
 
 
