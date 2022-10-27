@@ -95,7 +95,7 @@ Use the visual style (variant) in combination with an icon or label to identify 
 - **Confirm**: Indicate a positive or negative non-destructive action that is confirmation of what the user desires to take place.
 - **Danger**: Highlight an action that is destructive and undoable or has potentially detrimental consequences. In a long list of items where each contains a destructive action, use the `default` variant to avoid having many danger buttons overwhelm the page. Any final confirmation that is destructive must use the `danger` variant (unless a browser dialog is used).
 - **Dashed**: Highlight an action to indicate an object has yet to be created.
-- **Link**: Visually style an action like an anchor link when using a link isn't possible.
+- **Link**: Visually style an action like an anchor link when using a [link](/components/link) isn't possible.
 
 ### Sizes
 

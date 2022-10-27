@@ -244,6 +244,10 @@
             "path": "label"
           },
           {
+            "title": "Link",
+            "path": "link"
+          },
+          {
             "title": "Modal",
             "path": "modal"
           },
