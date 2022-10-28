@@ -13,7 +13,8 @@ Refer to the guidelines below when working with typography:
 - Alternate between different sizes and weights to establish layout hierarchy.
 - Keep the font size consistent within each block of copy.
 - Left-align all copy. Never force-justify, center-align, or right-align typography, unless the written language dictates otherwise.
-- Default to sentence case unless working with a tagline or different tiers of information.
+- Default to sentence case unless working with a tagline/headline or different tiers of information.
+- No ALL-CAPS please.
 - Keep text solid-filled and refrain from adding strokes to outline the type.
 - Display headlines should use Inter Semi Bold with 105% leading and -45 tracking (-4.5% in Figma).
 - Subheaders and intro/outro paragraphs should use Inter Regular with 110% leading, -20 tracking (-2% in Figma), and optical kerning.
