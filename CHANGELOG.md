@@ -1,3 +1,10 @@
+## [2.138.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.138.0...v2.138.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.5.0 ([eba14bc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eba14bc3f248d0c85f3a53adb7a5641ee421b781))
+
 # [2.138.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.137.0...v2.138.0) (2022-10-24)
 
 
