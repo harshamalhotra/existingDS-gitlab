@@ -1,5 +1,5 @@
 <script>
-import PageNotFound from '../components/page_not_found.vue';
+import NotFound from '../components/error/not_found.vue';
 
 /**
  * This component is a special 404 page just for nginx,
@@ -7,10 +7,10 @@ import PageNotFound from '../components/page_not_found.vue';
  * layouts/error.vue
  */
 export default {
-  components: { PageNotFound },
+  components: { NotFound },
   layout: 'no_footer',
 };
 </script>
 <template>
-  <page-not-found />
+  <not-found />
 </template>
