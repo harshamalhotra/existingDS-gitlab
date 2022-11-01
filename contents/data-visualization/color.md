@@ -19,9 +19,9 @@ There are 5 hues, each with 11 steps for a total of 55 variables. The palette is
 
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
 
-<div class="color-palette row gl-mb-9">
+<div class="gl-display-grid gl-grid-template-columns-2 gl-gap-7 gl-mb-9">
   <color-palette
-    class="data-vis-blue col col-50"
+    class="md"
     name="Blue"
     :shades="[
       {
@@ -77,7 +77,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
     ]"></color-palette>
 
   <color-palette
-    class="data-vis-orange col col-50"
+    class="md"
     name="Orange"
     :shades="[
       {
@@ -133,7 +133,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
     ]"></color-palette>
   
   <color-palette
-    class="data-vis-aqua col col-50"
+    class="md"
     name="Aqua"
     :shades="[
       {
@@ -189,7 +189,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
     ]"></color-palette>
 
   <color-palette
-    class="data-vis-green col col-50"
+    class="md"
     name="Green"
     :shades="[
       {
@@ -245,7 +245,7 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
     ]"></color-palette>
 
   <color-palette
-    class="data-vis-magenta col col-50"
+    class="md"
     name="Magenta"
     :shades="[
       {
