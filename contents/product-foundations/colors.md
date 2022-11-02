@@ -16,9 +16,9 @@ Though deciding which color to use depends on the situation, here are some gener
 - **Red** indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
 - **Purple** is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
-<div class="row gl-mb-11">
+<div class="gl-display-grid gl-grid-template-columns-2 gl-gap-7 gl-mb-11">
   <color-palette
-    class="col col-50 md gl-pb-7"
+    class="md"
     background-class-prefix="c-background-"
     name="Blue"
     :shades="[
@@ -75,7 +75,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md gl-pb-7"
+    class="md"
     background-class-prefix="c-background-"
     name="Green"
     :shades="[
@@ -132,7 +132,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md gl-mt-7 gl-pb-7"
+    class="md"
     background-class-prefix="c-background-"
     name="Orange"
     :shades="[
@@ -189,7 +189,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md gl-mt-7"
+    class="md"
     background-class-prefix="c-background-"
     name="Red"
     :shades="[
@@ -246,7 +246,7 @@ Though deciding which color to use depends on the situation, here are some gener
     ]"
     show-contrast-scores></color-palette>
   <color-palette
-    class="col col-50 md gl-mt-7"
+    class="md"
     background-class-prefix="c-background-"
     name="Purple"
     :shades="[
@@ -304,8 +304,8 @@ Though deciding which color to use depends on the situation, here are some gener
     show-contrast-scores></color-palette>
 </div>
 
-<div class="row gl-mb-11">
-  <div class="col col-50 md">
+<div class="gl-display-grid gl-grid-template-columns-2 gl-gap-7 gl-mb-11">
+  <div class="md">
 
 ## Neutral palette
 
@@ -382,7 +382,7 @@ The neutral palette is primarily used within components to help differentiate hi
 
   </div>
 
-  <div class="col col-50 md">
+  <div class="md">
 
 ## Transparency
 
@@ -423,351 +423,338 @@ A user may choose between ten different themes to customize the appearance of th
 - Green and light green share the same `$t-green-` variables.
 - Dark and light share the same `$t-gray-` variables.
 
-<div class="row gl-mb-6">
-  <div class="col col-25 md gl-pb-7">
-    <color-palette
-      name="Indigo / Light indigo"
-      class="md"
-      :shades="[
-        {
-          name: 't-indigo-50',
-          code: '#f1f1ff',
-        },
-        {
-          name: 't-indigo-100',
-          code: '#dbdbf8',
-        },
-        {
-          name: 't-indigo-200',
-          code: '#c7c7f2',
-        },
-        {
-          name: 't-indigo-300',
-          code: '#a2a2e6',
-        },
-        {
-          name: 't-indigo-400',
-          code: '#8181d7',
-        },
-        {
-          name: 't-indigo-500',
-          code: '#6666c4',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-indigo-600',
-          code: '#5252b5',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-indigo-700',
-          code: '#41419f',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-indigo-800',
-          code: '#303083',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-indigo-900',
-          code: '#222261',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-indigo-950',
-          code: '#14143d',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-  <div class="col col-25 md gl-pb-7">
-    <color-palette
-      name="Blue"
-      class="md"
-      :shades="[
-        {
-          name: 't-blue-50',
-          code: '#cdd8e3',
-        },
-        {
-          name: 't-blue-100',
-          code: '#b9cadc',
-        },
-        {
-          name: 't-blue-200',
-          code: '#a6bdd5',
-        },
-        {
-          name: 't-blue-300',
-          code: '#81a5c9',
-        },
-        {
-          name: 't-blue-400',
-          code: '#628eb9',
-        },
-        {
-          name: 't-blue-500',
-          code: '#4977a5',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-blue-600',
-          code: '#346596',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-blue-700',
-          code: '#235180',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-blue-800',
-          code: '#153c63',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-blue-900',
-          code: '#0b2640',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-blue-950',
-          code: '#04101c',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-  <div class="col col-25 md gl-pb-7">
-    <color-palette
-      name="Light blue"
-      class="md"
-      :shades="[
-        {
-          name: 't-light-blue-50',
-          code: '#dde6ee',
-        },
-        {
-          name: 't-light-blue-100',
-          code: '#c1d4e6',
-        },
-        {
-          name: 't-light-blue-200',
-          code: '#a0bedc',
-        },
-        {
-          name: 't-light-blue-300',
-          code: '#74a3d3',
-        },
-        {
-          name: 't-light-blue-400',
-          code: '#4f8bc7',
-        },
-        {
-          name: 't-light-blue-500',
-          code: '#3476b9',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-blue-600',
-          code: '#2268ae',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-blue-700',
-          code: '#145aa1',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-blue-800',
-          code: '#0e4d8d',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-blue-900',
-          code: '#0c4277',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-blue-950',
-          code: '#0a3764',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-  <div class="col col-25 md gl-pb-7">
-    <color-palette
-      name="Green / Light green"
-      class="md"
-      :shades="[
-        {
-          name: 't-green-50',
-          code: '#dde9de',
-        },
-        {
-          name: 't-green-100',
-          code: '#b1d6b5',
-        },
-        {
-          name: 't-green-200',
-          code: '#8cc497',
-        },
-        {
-          name: 't-green-300',
-          code: '#69af7d',
-        },
-        {
-          name: 't-green-400',
-          code: '#499767',
-        },
-        {
-          name: 't-green-500',
-          code: '#308258',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-green-600',
-          code: '#25744c',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-green-700',
-          code: '#1b653f',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-green-800',
-          code: '#155635',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-green-900',
-          code: '#0e4328',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-green-950',
-          code: '#052e19',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-  <div class="col col-25 md gl-mt-7">
-    <color-palette
-      name="Red"
-      class="md"
-      :shades="[
-        {
-          name: 't-red-50',
-          code: '#f4e9e7',
-        },
-        {
-          name: 't-red-100',
-          code: '#ecd3d0',
-        },
-        {
-          name: 't-red-200',
-          code: '#e3bab5',
-        },
-        {
-          name: 't-red-300',
-          code: '#d59086',
-        },
-        {
-          name: 't-red-400',
-          code: '#c66e60',
-        },
-        {
-          name: 't-red-500',
-          code: '#ad4a3b',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-red-600',
-          code: '#a13322',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-red-700',
-          code: '#8f2110',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-red-800',
-          code: '#761405',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-red-900',
-          code: '#580d02',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-red-950',
-          code: '#380700',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-  <div class="col col-25 md gl-mt-7">
-    <color-palette
-      name="Light red"
-      class="md"
-      :shades="[
-        {
-          name: 't-light-red-50',
-          code: '#faf2f1',
-        },
-        {
-          name: 't-light-red-100',
-          code: '#f6d9d5',
-        },
-        {
-          name: 't-light-red-200',
-          code: '#ebada2',
-        },
-        {
-          name: 't-light-red-300',
-          code: '#e07f6f',
-        },
-        {
-          name: 't-light-red-400',
-          code: '#d36250',
-        },
-        {
-          name: 't-light-red-500',
-          code: '#c24b38',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-red-600',
-          code: '#b53a26',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-red-700',
-          code: '#a02e1c',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-red-800',
-          code: '#8b2212',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-red-900',
-          code: '#751709',
-          classes: ['f-inverted']
-        },
-        {
-          name: 't-light-red-950',
-          code: '#5c1105',
-          classes: ['f-inverted']
-        },
-      ]"></color-palette>
-  </div>
-
-  <div class="col col-25 md gl-mt-7">
+<div class="gl-display-grid gl-grid-template-columns-4 gl-gap-7 gl-mb-6">
+  <color-palette
+    name="Indigo / Light indigo"
+    class="md"
+    :shades="[
+      {
+        name: 't-indigo-50',
+        code: '#f1f1ff',
+      },
+      {
+        name: 't-indigo-100',
+        code: '#dbdbf8',
+      },
+      {
+        name: 't-indigo-200',
+        code: '#c7c7f2',
+      },
+      {
+        name: 't-indigo-300',
+        code: '#a2a2e6',
+      },
+      {
+        name: 't-indigo-400',
+        code: '#8181d7',
+      },
+      {
+        name: 't-indigo-500',
+        code: '#6666c4',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-indigo-600',
+        code: '#5252b5',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-indigo-700',
+        code: '#41419f',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-indigo-800',
+        code: '#303083',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-indigo-900',
+        code: '#222261',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-indigo-950',
+        code: '#14143d',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Blue"
+    class="md"
+    :shades="[
+      {
+        name: 't-blue-50',
+        code: '#cdd8e3',
+      },
+      {
+        name: 't-blue-100',
+        code: '#b9cadc',
+      },
+      {
+        name: 't-blue-200',
+        code: '#a6bdd5',
+      },
+      {
+        name: 't-blue-300',
+        code: '#81a5c9',
+      },
+      {
+        name: 't-blue-400',
+        code: '#628eb9',
+      },
+      {
+        name: 't-blue-500',
+        code: '#4977a5',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-blue-600',
+        code: '#346596',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-blue-700',
+        code: '#235180',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-blue-800',
+        code: '#153c63',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-blue-900',
+        code: '#0b2640',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-blue-950',
+        code: '#04101c',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Light blue"
+    class="md"
+    :shades="[
+      {
+        name: 't-light-blue-50',
+        code: '#dde6ee',
+      },
+      {
+        name: 't-light-blue-100',
+        code: '#c1d4e6',
+      },
+      {
+        name: 't-light-blue-200',
+        code: '#a0bedc',
+      },
+      {
+        name: 't-light-blue-300',
+        code: '#74a3d3',
+      },
+      {
+        name: 't-light-blue-400',
+        code: '#4f8bc7',
+      },
+      {
+        name: 't-light-blue-500',
+        code: '#3476b9',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-blue-600',
+        code: '#2268ae',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-blue-700',
+        code: '#145aa1',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-blue-800',
+        code: '#0e4d8d',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-blue-900',
+        code: '#0c4277',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-blue-950',
+        code: '#0a3764',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Green / Light green"
+    class="md"
+    :shades="[
+      {
+        name: 't-green-50',
+        code: '#dde9de',
+      },
+      {
+        name: 't-green-100',
+        code: '#b1d6b5',
+      },
+      {
+        name: 't-green-200',
+        code: '#8cc497',
+      },
+      {
+        name: 't-green-300',
+        code: '#69af7d',
+      },
+      {
+        name: 't-green-400',
+        code: '#499767',
+      },
+      {
+        name: 't-green-500',
+        code: '#308258',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-600',
+        code: '#25744c',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-700',
+        code: '#1b653f',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-800',
+        code: '#155635',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-900',
+        code: '#0e4328',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-950',
+        code: '#052e19',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Red"
+    class="md"
+    :shades="[
+      {
+        name: 't-red-50',
+        code: '#f4e9e7',
+      },
+      {
+        name: 't-red-100',
+        code: '#ecd3d0',
+      },
+      {
+        name: 't-red-200',
+        code: '#e3bab5',
+      },
+      {
+        name: 't-red-300',
+        code: '#d59086',
+      },
+      {
+        name: 't-red-400',
+        code: '#c66e60',
+      },
+      {
+        name: 't-red-500',
+        code: '#ad4a3b',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-red-600',
+        code: '#a13322',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-red-700',
+        code: '#8f2110',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-red-800',
+        code: '#761405',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-red-900',
+        code: '#580d02',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-red-950',
+        code: '#380700',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Light red"
+    class="md"
+    :shades="[
+      {
+        name: 't-light-red-50',
+        code: '#faf2f1',
+      },
+      {
+        name: 't-light-red-100',
+        code: '#f6d9d5',
+      },
+      {
+        name: 't-light-red-200',
+        code: '#ebada2',
+      },
+      {
+        name: 't-light-red-300',
+        code: '#e07f6f',
+      },
+      {
+        name: 't-light-red-400',
+        code: '#d36250',
+      },
+      {
+        name: 't-light-red-500',
+        code: '#c24b38',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-red-600',
+        code: '#b53a26',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-red-700',
+        code: '#a02e1c',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-red-800',
+        code: '#8b2212',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-red-900',
+        code: '#751709',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-light-red-950',
+        code: '#5c1105',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <div class="md">
     <h3>Dark / Light</h3>
     <p>The dark and light (gray) themes use the <a href="#neutral-palette">neutral palette</a>.</p>
   </div>
