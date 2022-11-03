@@ -320,56 +320,56 @@ The neutral palette is primarily used within components to help differentiate hi
       },
       {
         name: 'gray-10',
-        code: '#f5f5f5',
+        code: '#fbfafd',
       },
       {
         name: 'gray-50',
-        code: '#f0f0f0',
+        code: '#ececef',
       },
       {
         name: 'gray-100',
-        code: '#dbdbdb',
+        code: '#dcdcde',
       },
       {
         name: 'gray-200',
-        code: '#bfbfbf',
+        code: '#bfbfc3',
       },
       {
         name: 'gray-300',
-        code: '#999999',
+        code: '#a4a3a8',
       },
       {
         name: 'gray-400',
-        code: '#868686',
+        code: '#89888d',
       },
       {
         name: 'gray-500',
-        code: '#666666',
+        code: '#737278',
         classes: ['f-inverted']
       },
       {
         name: 'gray-600',
-        code: '#5e5e5e',
+        code: '#626168',
         classes: ['f-inverted']
       },
       {
         name: 'gray-700',
-        code: '#525252',
+        code: '#535158',
         classes: ['f-inverted']
       },
       {
         name: 'gray-800',
-        code: '#404040',
+        code: '#434248',
         classes: ['f-inverted']
       },
       {
         name: 'gray-900',
-        code: '#303030',
+        code: '#333238',
         classes: ['f-inverted']
       },
       {
         name: 'gray-950',
-        code: '#1f1f1f',
+        code: '#1f1e24',
         classes: ['f-inverted']
       },
       {
@@ -392,23 +392,27 @@ Transparency is used only to indicate hover and active states within themes. Eac
     :shades="[
       {
         name: 't-gray-a-02',
-        code: 'rgba($black, 0.02)',
+        code: 'rgba($gray-950, 0.02)',
       },
       {
         name: 't-gray-a-04',
-        code: 'rgba($black, 0.04)',
+        code: 'rgba($gray-950, 0.04)',
       },
       {
         name: 't-gray-a-06',
-        code: 'rgba($black, 0.06)',
+        code: 'rgba($gray-950, 0.06)',
       },
       {
         name: 't-gray-a-08',
-        code: 'rgba($black, 0.08)',
+        code: 'rgba($gray-950, 0.08)',
+      },
+      {
+        name: 't-gray-a-16',
+        code: 'rgba($gray-950, 0.16)',
       },
       {
         name: 't-gray-a-24',
-        code: 'rgba($black, 0.24)',
+        code: 'rgba($gray-950, 0.24)',
       },
     ]"></color-palette>
 
@@ -774,6 +778,6 @@ At GitLab, we are dedicated to continually improving the accessibility of the ap
 - **AA+** - Pass, large text only 3:1+
 - **F** - Doesn’t pass
 
-Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1f1f`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fafafa`) or lighter.
+Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1e24`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fbfafd`) or lighter.
 
 Use colors at least two steps apart to ensure distinguishable contrast for states and border/fill combinations.
