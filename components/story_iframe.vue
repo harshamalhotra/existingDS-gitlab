@@ -1,10 +1,14 @@
 <script>
 import { iframeResize } from 'iframe-resizer';
 import { GlLoadingIcon } from '../helpers/gitlab_ui';
+import { SkipOneTrustDirective } from '../directives/skip_one_trust_directive';
 
 export default {
   components: {
     GlLoadingIcon,
+  },
+  directives: {
+    skipOneTrust: SkipOneTrustDirective,
   },
   props: {
     url: {
