@@ -41,32 +41,7 @@
   }
 }
 
-.content {
-  padding: 0 $gl-spacing-5;
-  margin: 0 auto;
-  min-width: math.div($page-width, 3);
-
-  @include media-sm-up {
-    padding: 0 $gl-spacing-7;
-  }
-
-  @include media-sm-down {
-    &.main {
-      .limited {
-        margin-top: 0;
-      }
-
-      .md > h1 {
-        padding-top: $gl-spacing-3;
-        padding-left: $gl-spacing-8 - $gl-spacing-3;
-      }
-    }
-  }
-
-  &.limited {
-    max-width: $page-width;
-  }
-
+.main {
   img {
     max-width: 100%;
   }
@@ -81,6 +56,25 @@
 
   .img-75 {
     max-width: 75%;
+  }
+
+  @include media-sm-down {
+    .md > h1 {
+      padding-top: $gl-spacing-4;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $page-width;
+  padding-left: $gl-spacing-5;
+  padding-right: $gl-spacing-5;
+  width: 100%;
+
+  @include media-sm-up {
+    padding-left: $gl-spacing-7;
+    padding-right: $gl-spacing-7;
   }
 }
 

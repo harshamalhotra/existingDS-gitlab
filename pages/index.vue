@@ -1,7 +1,7 @@
 <template>
   <div class="index typography">
     <nuxt-child />
-    <div class="content banner">
+    <div class="banner">
       <div class="banner__header gl-text-center">
         <svg
           width="66"
@@ -46,7 +46,7 @@
       <img src="../assets/images/cover-gradient.png" class="banner__image animated" />
     </div>
     <div class="gl-pt-13 gl-pb-13">
-      <div class="content limited distributed contributing-box__content">
+      <div class="container distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-copy">
             <h2>Everyone can contribute</h2>
@@ -79,7 +79,7 @@
     <div
       class="gl-bg-gray-50 gl-border-gray-100 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
     >
-      <div class="content limited distributed contributing-box__content">
+      <div class="container distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-img gl-text-center">
             <img src="../assets/images/content.svg" class="gl-p-9" />
@@ -99,7 +99,7 @@
       </div>
     </div>
     <div class="gl-pt-6 gl-pb-13">
-      <div class="content limited distributed contributing-box__content">
+      <div class="container distributed contributing-box__content">
         <div class="contribute-row">
           <div class="contribute-copy">
             <h2>Contributing to the design system</h2>
