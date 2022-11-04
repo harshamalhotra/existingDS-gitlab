@@ -14,7 +14,7 @@ The data visualization palette is designed specifically for conveying different 
 
 There are 5 hues, each with 11 steps for a total of 55 variables. The palette is designed for both light and dark UI where:
 
-* Steps `50`—`500` meet or exceed a 3:1 contrast ratio on a dark `$gray-950` (`#1f1f1f`) surface.
+* Steps `50`—`500` meet or exceed a 3:1 contrast ratio on a dark `$gray-950` (`#1f1e24`) surface.
 * Steps `500`—`950` meet or exceed a 3:1 contrast ratio on a light `$white` (`#ffffff`) surface.
 
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
@@ -324,7 +324,7 @@ Per [WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast](https://www.w3.org/WA
 #### Surfaces
 
 * In a light UI, all data visualization should be on a `$white` (`#ffffff`) surface.
-* In a dark UI, all data visualization should be on a `$gray-950` (`#1f1f1f`) surface.
+* In a dark UI, all data visualization should be on a `$gray-950` (`#1f1e24`) surface.
 
 #### Visual separators
 
@@ -435,7 +435,7 @@ If it's necessary to show success and failure states together in the same graph,
 At GitLab, we are dedicated to continually improving the accessibility of the application. Color is no exception. Every step of every hue in the data visualization palette has been evaluated to satisfy a 3:1 contrast ratio against a light or dark surface.
 
 * For light UI, that is a contrast ratio of at least 3:1 on `$white` (`#ffffff`).
-* For a dark UI, that is a contrast ratio of at least 3:1 on `$gray-950` (`#1f1f1f`)
+* For a dark UI, that is a contrast ratio of at least 3:1 on `$gray-950` (`#1f1e24`)
 
 ## Resources
 

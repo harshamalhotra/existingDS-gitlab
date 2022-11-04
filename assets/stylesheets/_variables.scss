@@ -44,49 +44,27 @@ $nav-sidebar-width: 256px;
  * Colors
  */
 
-/*
-Neutral palette mapping
-
-Old variables are mapped to new variables by approximating the closest variable, erring on the side of shifting darker (with the exception of old 400). There is currently nothing mapped to 600 and 800, which makes them a good use case for subtle nuance in the UI.
-
-
-Before        After (reflected below)
--------------------------------------
-50            0
-100           50
-200           100
-300           200
-400           200
-500           300
-600           400
-700           500†
-800           700
-900           900
-950           950
-
-† 500 and up passes 4.5:1 contrast ratio on $gray-10
-*/
-
 $white: #fff;
-$gray-10: #f5f5f5;
-$gray-50: #f0f0f0;
-$gray-100: #dbdbdb;
-$gray-200: #bfbfbf;
-$gray-300: #999;
-$gray-400: #868686;
-$gray-500: #666;
-$gray-600: #5e5e5e;
-$gray-700: #525252;
-$gray-800: #404040;
-$gray-900: #303030;
-$gray-950: #1f1f1f;
+$gray-10: #fbfafd;
+$gray-50: #ececef;
+$gray-100: #dcdcde;
+$gray-200: #bfbfc3;
+$gray-300: #a4a3a8;
+$gray-400: #89888d;
+$gray-500: #737278;
+$gray-600: #626168;
+$gray-700: #535158;
+$gray-800: #434248;
+$gray-900: #333238;
+$gray-950: #1f1e24;
 $black: #000;
 
-$black-o-02: rgba($black, 0.02);
-$black-o-04: rgba($black, 0.04);
-$black-o-06: rgba($black, 0.06);
-$black-o-08: rgba($black, 0.08);
-$black-o-24: rgba($black, 0.24);
+$t-gray-a-02: rgba($gray-950, 0.02);
+$t-gray-a-04: rgba($gray-950, 0.04);
+$t-gray-a-06: rgba($gray-950, 0.06);
+$t-gray-a-08: rgba($gray-950, 0.08);
+$t-gray-a-16: rgba($gray-950, 0.16);
+$t-gray-a-24: rgba($gray-950, 0.24);
 
 $green-50: #ecf4ee;
 $green-100: #c3e6cd;

@@ -80,7 +80,7 @@
     padding: $gl-spacing-5;
 
     &:hover {
-      background-color: $black-o-06;
+      background-color: $t-gray-a-06;
       text-decoration: none;
     }
   }
@@ -101,7 +101,7 @@
       display: block;
 
       &:hover {
-        background-color: $black-o-06;
+        background-color: $t-gray-a-06;
       }
 
       &:after {
@@ -149,11 +149,11 @@
 
     &.nuxt-link-active {
       box-shadow: inset ($border-width * 4) 0 0 $gray-700;
-      background-color: $black-o-06;
+      background-color: $t-gray-a-06;
     }
 
     &:hover {
-      background-color: $black-o-04;
+      background-color: $t-gray-a-04;
       text-decoration: none;
     }
   }
