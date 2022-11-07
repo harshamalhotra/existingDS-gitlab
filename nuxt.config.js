@@ -24,7 +24,9 @@ const cspPolicies = [
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
-  `frame-src https://www.figma.com https://projects.gitlab.io ${new URL(GITLAB_UI_URL).origin}`,
+  `frame-src https://www.figma.com https://projects.gitlab.io ${
+    new URL(GITLAB_UI_URL).origin
+  } https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app`,
   "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com",
 ];
 

@@ -80,12 +80,18 @@ export default {
         },
         ...tabs,
       ];
+
       if (this.hasStories) {
         tabs.push({
           route: 'section-slug-code',
-          title: 'Implementation',
+          title: 'Implementation (Vue.js)',
         });
       }
+
+      tabs.push({
+        route: 'section-slug-lookbook',
+        title: 'Implementation (ViewComponent)',
+      });
 
       if (this.componentLabel) {
         tabs.push({
