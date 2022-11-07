@@ -1,3 +1,15 @@
+# [2.139.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.138.1...v2.139.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v49 ([e87f76f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e87f76f54591a833b887438d457e6269f7be66f8))
+
+
+### Features
+
+* **Color:** Update neutral palette ([7002d5e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7002d5eb09753a62bad47800137482dca51b770a))
+
 ## [2.138.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.138.0...v2.138.1) (2022-10-31)
 
 
