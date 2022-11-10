@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div class="gl-pt-3">
+  <div>
     <div class="component md typography">
       <nuxt-content :document="page" />
     </div>

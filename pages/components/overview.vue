@@ -15,13 +15,15 @@ export default {
 </script>
 
 <template>
-  <div class="container gl-py-7 app-styles">
-    <div class="structure md">
-      <h1>Pajamas components</h1>
-      <p class="mt-4">
+  <div class="container gl-py-7">
+    <div class="md typography gl-mb-5">
+      <h1 id="skipTarget" tabindex="-1">Pajamas components</h1>
+      <p>
         Pajamas components are written in Vue and designed in Figma. Select a component to learn
         more about how to use them for your design or development project.
       </p>
+    </div>
+    <div class="typography md app-styles">
       <ul class="components-list mt-4 gl-display-grid gl-list-style-none gl-pl-0!">
         <li v-for="component in componentList" :key="component.path" class="gl-display-flex">
           <nuxt-link
