@@ -115,7 +115,7 @@ export default {
 
 <template>
   <div class="container gl-py-7">
-    <div class="md typography gl-mb-6">
+    <div class="md typography gl-mb-5">
       <h1 id="skipTarget" tabindex="-1">{{ page.name }}</h1>
       <div
         v-if="page.deprecated"
@@ -125,7 +125,7 @@ export default {
         <span class="gl-text-orange-600 gl-mr-3">⚠️</span>
         Please refrain from using this component - it is about to be deprecated!
       </div>
-      <p>{{ page.description }}</p>
+      <p v-if="page.description">{{ page.description }}</p>
     </div>
     <div v-if="showTabs" class="app-styles">
       <gl-nav class="gl-tabs-nav gl-mb-5!">
