@@ -12,6 +12,10 @@ const GITLAB_UI_URL = (
   process.env.GITLAB_UI_URL || 'https://gitlab-org.gitlab.io/gitlab-ui'
 ).replace(/\/+$/, '');
 
+const LOOKBOOK_URL = (
+  process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app'
+).replace(/\/+$/, '');
+
 if (GOOGLE_ANALYTICS_ID) {
   console.log(`GOOGLE_ANALYTICS_ID found and applied`); // eslint-disable-line no-console
 } else {
@@ -24,9 +28,9 @@ const cspPolicies = [
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
-  `frame-src https://www.figma.com https://projects.gitlab.io ${
-    new URL(GITLAB_UI_URL).origin
-  } https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app`,
+  `frame-src https://www.figma.com https://projects.gitlab.io ${new URL(GITLAB_UI_URL).origin} ${
+    new URL(LOOKBOOK_URL).origin
+  }`,
   "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com",
 ];
 
@@ -129,6 +133,7 @@ export default {
   env: {
     GOOGLE_ANALYTICS_ID,
     GITLAB_UI_URL,
+    LOOKBOOK_URL,
   },
 
   /*
@@ -145,7 +150,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/gitlab_ui.js' },
+    { src: '~/plugins/expose_env_vars.js' },
     { src: '~/plugins/register_global_components.js' },
     GOOGLE_ANALYTICS_ID ? { src: '~/plugins/gtag.js', mode: 'client' } : false,
   ].filter(Boolean),

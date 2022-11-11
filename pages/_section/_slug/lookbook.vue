@@ -12,8 +12,6 @@ const NAME_MAPPING = {
   spinner: 'spinner',
 };
 
-const LOOKBOOK_URL = 'https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app';
-
 export default {
   components: {
     StoryIframe,
@@ -29,10 +27,10 @@ export default {
       return NAME_MAPPING[this.page.slug];
     },
     lookbookInspectUrl() {
-      return `${LOOKBOOK_URL}/lookbook/inspect/pajamas/${this.lookbookComponentName}`;
+      return `${this.$lookbookUrl}/lookbook/inspect/pajamas/${this.lookbookComponentName}`;
     },
     lookbookPreviewUrl() {
-      return `${LOOKBOOK_URL}/lookbook/preview/pajamas/${this.lookbookComponentName}/default?_display=`;
+      return `${this.$lookbookUrl}/lookbook/preview/pajamas/${this.lookbookComponentName}/default?_display=`;
     },
   },
 };
