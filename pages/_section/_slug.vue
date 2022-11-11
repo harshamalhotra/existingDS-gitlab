@@ -90,7 +90,7 @@ export default {
 
       tabs.push({
         route: 'section-slug-lookbook',
-        title: 'Implementation (ViewComponent)',
+        title: 'Implementation (Rails)',
       });
 
       if (this.componentLabel) {
