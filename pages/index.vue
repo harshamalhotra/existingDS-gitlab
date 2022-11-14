@@ -4,6 +4,7 @@
     <div class="banner">
       <div class="banner__header gl-text-center">
         <svg
+          aria-hidden="true"
           width="66"
           height="121"
           fill="none"
@@ -37,20 +38,27 @@
             </linearGradient>
           </defs>
         </svg>
-
         <h1 id="skipTarget" class="banner__header--title f-display">Pajamas</h1>
         <p class="banner__header--description">
           Resources, components, and design guidelines behind GitLab
         </p>
       </div>
-      <img src="../assets/images/cover-gradient.png" class="banner__image animated" />
+      <img alt="" src="../assets/images/cover-gradient.png" class="banner__image animated" />
     </div>
-    <div class="gl-pt-13 gl-pb-13">
-      <div class="container distributed contributing-box__content">
-        <div class="contribute-row">
-          <div class="contribute-copy">
+    <div class="gl-pt-11 gl-pb-11">
+      <div class="container distributed">
+        <div class="two-column two-column--alt">
+          <div class="two-column-start">
+            <img
+              alt=""
+              class="two-column-image"
+              src="../assets/images/contribute.png"
+              srcset="../assets/images/contribute@2x.png 2x"
+            />
+          </div>
+          <div class="two-column-end">
             <h2>Everyone can contribute</h2>
-            <p class="max-w-sm">
+            <p>
               GitLab is an
               <a
                 target="_blank"
@@ -60,50 +68,48 @@
               product and has over 3000 community contributors. When everyone can contribute,
               consumers become contributors and we greatly increase the rate of human progress.
             </p>
-            <p class="max-w-sm">
+            <p>
               To ensure that everyone can contribute to GitLab with confidence we provide everyone
               with the right resources and know-how. The Pajamas design system is the single source
               of truth for everything anyone needs to know about contributing to GitLab.
             </p>
           </div>
-          <div class="contribute-img gl-text-center">
-            <img
-              src="../assets/images/contribute.png"
-              srcset="../assets/images/contribute@2x.png 2x"
-              class="gl-p-9"
-            />
-          </div>
         </div>
       </div>
     </div>
     <div
-      class="gl-bg-gray-50 gl-border-gray-100 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
+      class="gl-bg-gray-10 gl-border-gray-50 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
     >
-      <div class="container distributed contributing-box__content">
-        <div class="contribute-row">
-          <div class="contribute-img gl-text-center">
-            <img src="../assets/images/content.svg" class="gl-p-9" />
+      <div class="container distributed">
+        <div class="two-column">
+          <div class="two-column-start">
+            <img alt="" class="two-column-image" src="../assets/images/content.svg" />
           </div>
-          <div class="contribute-copy">
+          <div class="two-column-end">
             <h2>Everything you need</h2>
-            <p class="max-w-sm">
+            <p>
               Pajamas is here to make it as comfortable as possible for anyone to contribute towards
               GitLab. You will find information such as our principles, components, usage
               guidelines, branding, research methodologies, and more!
             </p>
-            <p class="max-w-sm">
-              Start by looking into the component documentation, including live examples.
-            </p>
+            <p>Start by looking into the component documentation, including live examples.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="gl-pt-6 gl-pb-13">
-      <div class="container distributed contributing-box__content">
-        <div class="contribute-row">
-          <div class="contribute-copy">
+    <div class="gl-pt-11 gl-pb-11">
+      <div class="container distributed">
+        <div class="two-column two-column--alt">
+          <div class="two-column-start">
+            <img
+              alt=""
+              class="two-column-image two-column-image--small"
+              src="../assets/images/pajamas_stars.svg"
+            />
+          </div>
+          <div class="two-column-end">
             <h2>Contributing to the design system</h2>
-            <p class="max-w-sm">
+            <p>
               We encourage any feedback and ideas towards the design system itself as well! If you
               are interested in contributing, check out our
               <a href="/get-started/contribute">guidelines</a> to get started. Have any questions?
@@ -115,10 +121,11 @@
               >. Otherwise, be sure to check out the resources below!
             </p>
           </div>
-          <div class="contribute-img gl-text-center">
-            <img src="../assets/images/pajamas_stars.svg" class="gl-p-13" />
-          </div>
         </div>
+      </div>
+    </div>
+    <div class="gl-pt-9 gl-pb-9">
+      <div class="container distributed">
         <div class="row gl-mt-9">
           <div class="col col-33">
             <a
