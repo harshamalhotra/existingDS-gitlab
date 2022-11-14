@@ -1,3 +1,16 @@
+# [2.140.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.139.0...v2.140.0) (2022-11-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v49.8.0 ([e5ef8a7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e5ef8a7ade1f1d8b671ca3e6033b5af3174c1557))
+* **deps:** update gitlab ui/svg ([adae8b7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/adae8b75d20727bac4cf4b89cee9eee54eea52f0))
+
+
+### Features
+
+* Add iframe to show ViewComponent previews ([c3d5ade](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c3d5adea15fd3e4e384f788c9d6be33de4ba638c))
+
 # [2.139.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.138.1...v2.139.0) (2022-11-07)
 
 
