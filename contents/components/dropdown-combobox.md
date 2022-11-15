@@ -29,7 +29,7 @@ While the term "dropdown" generally refers to an element that reveals a related 
 
 ### When not to use
 
-- If a user is selecting a single text option from a group of options within a [form](/components/form), consider using a `<select>` element, [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
+- If a user is selecting a single text option from a group of options within a [form](/patterns/forms), consider using a [select](/components/select), [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
 - If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
 
 ### Behavior
@@ -46,7 +46,7 @@ While the term "dropdown" generally refers to an element that reveals a related 
 
 Error validation is shown inline and may happen in real-time or on submission if used in a form. Real-time validation should help a user understand and remedy the error if possible.
 
-A validation message should always be visible and not placed in a tooltip. The message is placed directly below the trigger element, similar to [form validation](/components/form/#validation), and both are presented in an error state, which changes the text and border color of the trigger element to red.
+A validation message should always be visible and not placed in a tooltip. The message is placed directly below the trigger element, similar to [form validation](/patterns/forms/#validation), and both are presented in an error state, which changes the text and border color of the trigger element to red.
 
 ### Content
 

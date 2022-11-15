@@ -9,7 +9,6 @@ stories:
 related:
   - broadcast-message
   - toast
-  - form
 ---
 
 ## Examples
@@ -68,7 +67,7 @@ related:
 ### Content
 
 - All copy within an alert should be short, actionable, and use clear language.
-- Keep translations in mind when writing copy and follow [voice and tone](/content/voice-tone) guidelines.
+- Keep translations in mind when writing copy and follow [voice and tone](/content/voice-and-tone) guidelines.
 
 #### Title
 
@@ -88,7 +87,7 @@ related:
 - Up to two actions can be used at a time.
 - Primary action uses the **confirm** button variant.
 - Secondary action uses the **default** button variant.
-- Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See [button alignment and order](/components/button#alignment-and-order) for more details.
+- Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See button [alignment](/components/button#alignment) and [order](/components/button#order) for more details.
 
 ### Placement
 
@@ -124,4 +123,4 @@ related:
 
 - An alert should receive focus and use `aria-live` to announce its presence and allow a user to interact with it immediately.
 - If sticky positioning is used, the user must still be able to access and view focusable elements the alert may be covering.
-- An alert is separate from, but complimentary to [validation](/components/form#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.
+- An alert is separate from, but complimentary to [validation](/patterns/forms#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.

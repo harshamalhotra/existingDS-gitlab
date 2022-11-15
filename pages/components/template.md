@@ -31,7 +31,7 @@ related:
 
   EXAMPLE:
   related:
-    - /layout/grid (link to pages that are not components using '/directory/pattern-name')
+    - /product-foundations/layout (link to pages that are not components using '/directory/pattern-name')
     - badge
 -->
 ---

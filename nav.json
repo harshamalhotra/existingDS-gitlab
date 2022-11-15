@@ -56,20 +56,28 @@
         "path": "get-started",
         "items": [
           {
-            "title": "Contribute",
-            "path": "contribute"
+            "title": "Navigating Pajamas",
+            "path": "navigating-pajamas"
+          },
+          {
+            "title": "Contributing",
+            "path": "contributing"
           },
           {
             "title": "Principles",
             "path": "principles"
           },
           {
-            "title": "Structure",
-            "path": "structure"
-          },
-          {
             "title": "Component lifecycle",
             "path": "lifecycle"
+          },
+          {
+            "title": "Design resources",
+            "path": "design-resources"
+          },
+          {
+            "title": "Repository",
+            "path": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
           }
         ]
       },
@@ -79,27 +87,7 @@
         "items": [
           {
             "title": "Color",
-            "path": "colors"
-          },
-          {
-            "title": "Iconography",
-            "path": "iconography"
-          },
-          {
-            "title": "Illustration",
-            "path": "illustration"
-          },
-          {
-            "title": "Interactions",
-            "path": "interaction"
-          },
-          {
-            "title": "Motion",
-            "path": "motion"
-          },
-          {
-            "title": "Saving and feedback",
-            "path": "saving-and-feedback"
+            "path": "color"
           },
           {
             "title": "Typography",
@@ -117,28 +105,30 @@
                 "path": "type-markdown"
               }
             ]
-          }
-        ]
-      },
-      {
-        "title": "Layout",
-        "path": "layout",
-        "items": [
-          {
-            "title": "Responsive-first",
-            "path": "responsive-first"
-          },
-          {
-            "title": "Grid",
-            "path": "grid"
-          },
-          {
-            "title": "Layers",
-            "path": "layers"
           },
           {
             "title": "Spacing",
             "path": "spacing"
+          },
+          {
+            "title": "Layout",
+            "path": "layout"
+          },
+          {
+            "title": "Elevation",
+            "path": "elevation"
+          },
+          {
+            "title": "Motion",
+            "path": "motion"
+          },
+          {
+            "title": "Iconography",
+            "path": "iconography"
+          },
+          {
+            "title": "Illustration",
+            "path": "illustration"
           }
         ]
       },
@@ -187,16 +177,8 @@
             "path": "card"
           },
           {
-            "title": "Checkbox",
-            "path": "checkbox"
-          },
-          {
             "title": "Color picker",
             "path": "color-picker"
-          },
-          {
-            "title": "Date picker",
-            "path": "date-picker"
           },
           {
             "title": "Drawer",
@@ -224,16 +206,49 @@
             ]
           },
           {
-            "title": "File uploader",
-            "path": "file-uploader"
-          },
-          {
-            "title": "Filter",
-            "path": "filter"
-          },
-          {
-            "title": "Form",
-            "path": "form"
+            "title": "Form elements",
+            "items": [
+              {
+                "title": "Checkbox",
+                "path": "checkbox"
+              },
+              {
+                "title": "Date picker",
+                "path": "date-picker"
+              },
+              {
+                "title": "File uploader",
+                "path": "file-uploader"
+              },
+              {
+                "title": "Filter",
+                "path": "filter"
+              },
+              {
+                "title": "Radio button",
+                "path": "radio-button"
+              },
+              {
+                "title": "Search",
+                "path": "search"
+              },
+              {
+                "title": "Select",
+                "path": "select"
+              },
+              {
+                "title": "Textarea",
+                "path": "textarea"
+              },
+              {
+                "title": "Text input",
+                "path": "text-input"
+              },
+              {
+                "title": "Token",
+                "path": "token"
+              }
+            ]
           },
           {
             "title": "Infinite scroll",
@@ -266,14 +281,6 @@
           {
             "title": "Progress bar",
             "path": "progress-bar"
-          },
-          {
-            "title": "Radio button",
-            "path": "radio-button"
-          },
-          {
-            "title": "Search",
-            "path": "search"
           },
           {
             "title": "Segmented control",
@@ -312,10 +319,6 @@
             "path": "toggle"
           },
           {
-            "title": "Token",
-            "path": "token"
-          },
-          {
             "title": "Tooltip",
             "path": "tooltip"
           },
@@ -323,6 +326,54 @@
             "title": "Tree",
             "path": "tree"
           }
+        ]
+      },
+      {
+        "title": "Patterns",
+        "path": "patterns",
+        "items": [
+          {
+            "title": "Empty States",
+            "path": "empty-states"
+          },
+          {
+            "title": "Filtering",
+            "path": "filtering"
+          },
+          {
+            "title": "Forms",
+            "path": "forms"
+          },
+          {
+            "title": "Merge request reports",
+            "path": "merge-request-reports"
+          },
+          {
+            "title": "Navigation",
+            "path": "navigation"
+          },
+          {
+            "title": "Searching",
+            "path": "searching"
+          }
+        ]
+      },
+      {
+        "title": "Objects",
+        "path": "objects",
+        "items": [
+          {
+            "title": "Overview",
+            "path": "overview"
+          },
+          {
+            "title": "Job",
+            "path": "job"
+          },
+          {
+            "title": "Merge request",
+            "path": "merge-request"
+           }
         ]
       },
       {
@@ -352,125 +403,126 @@
         ]
       },
       {
-        "title": "Regions",
-        "path": "regions",
-        "items": [
-          { "title": "Empty States", "path": "empty-states" },
-          { "title": "Filtering", "path": "filtering" },
-          { "title": "Merge request reports", "path": "merge-request-reports" },
-          { "title": "Navigation", "path": "navigation" },
-          { "title": "Search", "path": "search" },
-          { "title": "Settings", "path": "settings" }
-        ]
-      },
-      {
-        "title": "Objects",
-        "path": "objects",
-        "items": [
-          { "title": "Overview", "path": "overview" },
-          { "title": "Job", "path": "job" },
-          { "title": "Merge request", "path": "merge-request" }
-        ]
-      },
-      {
         "title": "Content",
         "path": "content",
         "items": [
-          { "title": "Date and Time", "path": "date-time" },
-          { "title": "Error messages", "path": "error-messages" },
-          { "title": "Punctuation", "path": "punctuation" },
-          { "title": "Terminology", "path": "terminology" },
-          { "title": "Voice and tone", "path": "voice-tone" }
-        ]
-      },
-      {
-        "title": "Usability",
-        "path": "usability",
-        "items": [
           {
-            "title": "Error prevention",
-            "path": "error-prevention"
+            "title": "Terminology",
+            "path": "terminology"
           },
           {
-            "title": "Feature management",
-            "path": "feature-management"
+            "title": "Voice and tone",
+            "path": "voice-and-tone"
           },
           {
-            "title": "Helping users",
-            "path": "helping-users"
+            "title": "Punctuation",
+            "path": "punctuation"
           },
           {
             "title": "Internationalization",
             "path": "i18n"
           },
           {
-            "title": "Onboarding users",
-            "path": "onboarding-users"
+            "title": "Date and time",
+            "path": "date-and-time"
+          }
+        ]
+      },
+      {
+        "title": "Usability and interaction",
+        "path": "usability",
+        "items": [
+          {
+            "title": "Affordance",
+            "path": "affordance"
+          },
+          {
+            "title": "Contextual help and info",
+            "path": "contextual-help"
+          },
+          {
+            "title": "Destructive actions",
+            "path": "destructive-actions"
+          },
+          {
+            "title": "Drag and drop",
+            "path": "drag-and-drop"
+          },
+          {
+            "title": "Feature management",
+            "path": "feature-management"
+          },
+          {
+            "title": "Onboarding",
+            "path": "onboarding"
           },
           {
             "title": "Progressive disclosure",
             "path": "progressive-disclosure"
+          },
+          {
+            "title": "Saving and feedback",
+            "path": "saving-and-feedback"
+          },
+          {
+            "title": "Settings management",
+            "path": "settings-management"
           }
         ]
       },
       {
-        "title": "Design resources",
-        "path": "resources/design-resources"
-      }
-    ]
-  },
-  {
-    "title": "Accessibility",
-    "items": [
-      {
-        "title": "Statement of compliance",
-        "path": "accessibility/a11y"
-      },
-      {
-        "title": "Inclusive design principles",
-        "path": "accessibility/inclusive-design-principles"
-      },
-      {
-        "title": "Best practices",
-        "path": "accessibility/best-practices"
-      },
-      {
-        "title": "GitLab VPAT®",
-        "path": "vpat",
+        "title": "Accessibility",
+        "path": "accessibility",
         "items": [
           {
-            "title": "GitLab Accessibility Conformance Report Revised Section 508 Edition",
-            "path": "508"
+            "title": "Statement of compliance",
+            "path": "a11y"
           },
           {
-            "title": "GitLab Accessibility Conformance Report WCAG Edition",
-            "path": "wcag"
-          }
-        ]
-      },
-      {
-        "title": "Audit guides",
-        "path": "accessibility-audits",
-        "items": [
-          {
-            "title": "Accessibility audits",
-            "path": "accessibility-audits"
+            "title": "Inclusive design principles",
+            "path": "inclusive-design-principles"
           },
           {
-            "title": "Visual",
-            "path": "visual"
+            "title": "Best practices",
+            "path": "best-practices"
           },
           {
-            "title": "Semantics and content",
-            "path": "semantics-and-content"
+            "title": "GitLab VPAT®",
+            "items": [
+              {
+                "title": "GitLab Accessibility Conformance Report Revised Section 508 Edition",
+                "path": "508"
+              },
+              {
+                "title": "GitLab Accessibility Conformance Report WCAG Edition",
+                "path": "wcag"
+              }
+            ]
           },
           {
-            "title": "Keyboard-only",
-            "path": "keyboard-only"
-          },
-          {
-            "title": "Screen readers",
-            "path": "screen-readers"
+            "title": "Audit guides",
+            "items": [
+              {
+                "title": "Overview",
+                "path": "audits"
+              },
+              {
+                "title": "Visual",
+                "path": "visual"
+              },
+              {
+                "title": "Semantics and content",
+                "path": "semantics-and-content"
+              },
+              {
+                "title": "Keyboard-only",
+                "path": "keyboard-only"
+              },
+              {
+                "title": "Screen readers",
+                "path": "screen-readers"
+              }
+            ]
           }
         ]
       }

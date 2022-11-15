@@ -7,7 +7,7 @@ related:
   - alert
   - broadcast-message
   - button
-  - /regions/empty-states
+  - /patterns/empty-states
 ---
 
 ## Examples
@@ -45,7 +45,7 @@ A banner should be used sparingly and with consideration of its impact to neighb
 
 ### When not to use
 
-- If you need to communicate that a feature hasn't been configured or used, consider using an [empty state](https://design.gitlab.com/regions/empty-states) instead.
+- If you need to communicate that a feature hasn't been configured or used, consider using an [empty state](/patterns/empty-states) instead.
 - If you're giving tips and hints for an existing or established feature, consider the [tip alert variant](/components/alert#variants) instead.
 - If you need to communicate system status, consider using an [alert](/components/alert) instead.
 - If a user can't take immediate action, activate a feature, or benefit from the content, then the banner shouldn't be displayed.

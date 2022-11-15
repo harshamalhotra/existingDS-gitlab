@@ -3,7 +3,7 @@ name: Type fundamentals
 related:
   - /product-foundations/type-scales
   - /product-foundations/type-markdown
-  - /product-foundations/colors
+  - /product-foundations/color
 ---
 
 ## Typeface

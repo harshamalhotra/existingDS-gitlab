@@ -7,7 +7,7 @@ related:
   - radio-button
   - toggle
   - segmented-control
-  - dropdown
+  - select
 ---
 
 ## Examples
@@ -60,7 +60,7 @@ related:
 
 - Use a `fieldset` with `legend` to group a set of checkboxes with a clear name and purpose.
 - A text label is positioned to the right of the checkbox element (for left-to-right languages), and should be as concise as possible.
-- [Help text](/components/form#help-text) can be added below the checkbox label or as a paragraph below the group.
+- [Help text](/patterns/forms#text) can be added below the checkbox label or as a paragraph below the group.
 
 ### Accessibility
 

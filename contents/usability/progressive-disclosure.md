@@ -1,8 +1,8 @@
 ---
 name: Progressive disclosure
 related:
-  - /usability/error-prevention
-  - /usability/onboarding-users
+  - /usability/destructive-actions
+  - /usability/onboarding
   - accordion
   - button
   - modal
@@ -12,14 +12,14 @@ related:
 
 Progressive disclosure is an interaction pattern that defers less important information and features to secondary screens. By initially only showing the most important information, users are less likely to become overwhelmed when there is a large amount of content to consume. Using a trigger to reveal an object hidden from view, it can reduce the amount of content on the page at any one time without sacrificing features.
 
-When employing progressive disclosure, display key information prominently to reduce cognitive load, and reveal additional information only upon request. Keeping the interface simple in this way allows users to focus their attention and also helps with new user [onboarding](onboarding-users).
+When employing progressive disclosure, display key information prominently to reduce cognitive load, and reveal additional information only upon request. Keeping the interface simple in this way allows users to focus their attention and also helps with new user [onboarding](onboarding).
 
 ## Best practices
 
 Best practices for progressive disclosure include:
 
 - Clearly distinguishing between the primary and secondary actions. Determine which actions are most important using a combination of available user research and usage data.
-- Creating clear trigger actions for secondary content. Use established calls to action such as [links](/product-foundations/interaction#links) or [buttons](/components/button) that set the expectation for what to do next.
+- Creating clear trigger actions for secondary content. Use established calls to action such as [links](/components/link) or [buttons](/components/button) that set the expectation for what to do next.
 - Avoiding multiple levels of disclosure. If an interaction has three or more levels of disclosure, it could be a sign that the feature is too complex.
 
 ## Examples

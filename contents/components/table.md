@@ -10,7 +10,7 @@ related:
   - button
   - tooltip
   - pagination
-  - /regions/empty-states
+  - /patterns/empty-states
 ---
 
 ## Examples
@@ -70,15 +70,15 @@ related:
 - The **Label** text styles from the [UI type scale](/product-foundations/type-scales#ui-type-scale) are used for product tables since the content is more data rich and requires less line height. 
 - The `Paragraph` text styles from the [Documentation Markdown](https://design.gitlab.com/product-foundations/type-scales#documentation-markdown-type-scale) and [Compact Markdown](https://design.gitlab.com/product-foundations/type-scales#compact-markdown-type-scale) type scales are used for markdown tables in GitLab issues, merge requests, and documentation.
 - In some circumstances, right-aligning the text content helps with readability. For example, right-align the numeric data with a consistent number of decimal places to improve scannability.
-- Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/usability/i18n).
+- Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/content/i18n).
 - Use white space in tables to improve [scannability](https://www.nngroup.com/articles/how-users-read-on-the-web/), visually separating data elements so that each can be individually identified and read as separate from the others.
 - To help with styling, use horizontal lines between rows to visually separate content, including the last row item. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 - Do not apply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
 - By default, row content is vertically `top` aligned. However, in some cases it does makes sense to vertically `center` align content. Use your best judgement on when this is an exception. 
 - As general rule, consider that alignment within a table is more important than consistency from table to table. 
 
-| **Do** | **Don’t** |
-| :---: | :---: |
+|                                                                                                                                                                             **Do**                                                                                                                                                                             |                                                                                                                                                                             **Don’t**                                                                                                                                                                             |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <figure class="figure" role="figure" aria-label="Table row content vertially aligned to top"><img class="figure-img" src="/img/table-valign-top-do.svg" alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" role="img" /><figcaption class="figure-caption">Top align in most cases</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/table-valign-top-dont.svg" alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" role="img" /><figcaption class="figure-caption">Avoid middle align</figcaption></figure> |
 
 ### Behavior 
@@ -159,7 +159,7 @@ If table cells needs to be navigable (not just some of the content within), cons
 
 #### Empty state
 
-- A table's empty state displays when there is no data, yet. [See empty states guidelines](/regions/empty-states)
+- A table's empty state displays when there is no data, yet. [See empty states guidelines](/patterns/empty-states)
 
 #### Null values
 

@@ -7,11 +7,13 @@ stories:
 related:
   - button
   - checkbox
-  - dropdown
+  - dropdown-listbox
+  - dropdown-disclosure
+  - dropdown-menu
   - radio-button
+  - select 
   - toggle
   - tabs
-  - form 
 ---
 
 ## Examples
@@ -43,7 +45,7 @@ related:
 
 #### Labels
 
-- Label positioning rules are the same as they are for [forms](/components/form). They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.
+- Label positioning rules are the same as they are for [forms](/patterns/forms). They can be placed to the left of segmented control when there’s a lack of vertical space. But by default, the label comes above the segmented control.
 - The label can be omitted in cases when it’s clear what the segmented control is referring to from the UI (for example, switching between a day, week or month view in a calendar UI).
 - Alternatively, icons can be used to replace button labels.
 

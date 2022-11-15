@@ -8,7 +8,9 @@ stories:
   - base-button--default
   - base-button-group--default
 related:
-  - dropdown
+  - dropdown-listbox
+  - dropdown-disclosure
+  - dropdown-menu
   - segmented-control
   - pagination
   - tooltip
@@ -175,7 +177,7 @@ Multiple alignments can be combined within a single screen, but not within an in
     <img class="figure-img" src="/img/buttons-center-alignment.png" alt="Centered buttons at the bottom of empty state content" role="img" style="width:100%; max-width:332px; height:auto" />
     <figcaption class="figure-caption">Center-aligned buttons in an empty state</figcaption>
   </figure>
-- **Right to left languages**: Reverse button alignment for [right-to-left languages](/usability/i18n) while maintaining the same order.
+- **Right to left languages**: Reverse button alignment for [right-to-left languages](/content/i18n) while maintaining the same order.
 - **Additional considerations:**
   <div class="gl-display-grid gl-grid-template-columns-2 gl-column-gap-6 gl-mt-6">
     <figure class="figure" role="figure" aria-label="Keep buttons visually grouped"><img class="figure-img" src="/img/buttons-do-group.svg" alt="Buttons in a group" role="img" /><figcaption class="figure-caption"><strong>Do</strong>: Keep buttons visually grouped</figcaption></figure>

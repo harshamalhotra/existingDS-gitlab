@@ -7,7 +7,6 @@ related:
   - skeleton-loader
   - button
   - search
-  - form
 ---
 
 ## Examples
@@ -40,8 +39,8 @@ related:
 
 ### Appearance
 
-- **Dark**: For [neutral](/product-foundations/colors#neutral-palette) backgrounds that are `$gray-200` or lighter, or [chromatic](/product-foundations/colors#chromatic-palette) backgrounds that are `300` or lighter.
-- **Light**: For [neutral or chromatic](/product-foundations/colors) backgrounds that are `400` or darker.
+- **Dark**: For [neutral](/product-foundations/color#neutral-palette) backgrounds that are `$gray-200` or lighter, or [chromatic](/product-foundations/color#chromatic-palette) backgrounds that are `300` or lighter.
+- **Light**: For [neutral or chromatic](/product-foundations/color) backgrounds that are `400` or darker.
 
 ### Sizes
 

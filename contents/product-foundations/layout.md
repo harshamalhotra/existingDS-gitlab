@@ -1,12 +1,33 @@
 ---
-name: Grid
+name: Layout
 ---
 
-## Responsive UI
+## Responsive-first
+
+We take a [responsive-first](/product-foundations/layout#responsive-ui) approach that considers each component and content block in light of its ability to adapt and function regardless of viewport or layout. Content and functionality are designed to be available and useful independent of page constraints. By default, content should [reflow](#reflow), but [truncation](#truncation) or [visual affordance](#visual-affordance) indicating behavior can also be used to keep the overall experience robust.
+
+### Reflow
+
+When the content on a page reflows to fit the available space, the hierarchy, structure, and relationships should remain intact and clear within any viewport. 
+- The visual order should match the [DOM order](https://www.w3.org/WAI/WCAG21/Techniques/css/C27). 
+- Reflow isn't limited to content wrapping. For example, you might consider grouping a list of actions into a single dropdown in smaller viewports.
+- Content should not abruptly rearrange as that can be disorienting for users and cause the page to re-load, which may negatively impact the perceived performance of a page. 
+
+### Truncation
+
+Individual lines of text can be truncated with an ellipsis when length or wrapping would break a component, negatively impact surrounding content, or cause some content to flow off screen. When text is truncated, there must be a method, like a [tooltip](/components/tooltip) to easily view and access all of the content for both sighted and unsighted users, as well as those using assistive technology.
+
+### Visual affordance
+
+Similar to how an ellipsis provides a visual indicator for text truncation, providing visual affordance for other components and content helps a user understand when there's a behavior that allows them to access additional content or controls. For example, a scrim (gradient overlay) at the bottom of a dropdown panel indicates scrolling. [View scrim in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=12053%3A184)
+
+## Grid
+
+### Responsive UI
 
 GitLab is a responsive experience that works well across all screen sizes, from mobile devices to large monitors. In order to provide a great user experience, the core functionality (browsing files, creating issues, writing comments, and so on) is available at all resolutions. However, due to size limitations, some secondary functionality may be hidden on smaller screens. This functionality is limited to rare actions that aren’t necessary on small devices.
 
-### Breakpoints
+#### Breakpoints
 
 These breakpoints define specifications for different screens, devices, and orientations.
 
@@ -16,7 +37,7 @@ These breakpoints define specifications for different screens, devices, and orie
 - **`lg`**: ≥992px
 - **`xl`**: ≥1200px
 
-## Page containers
+### Page containers
 
 Users can choose between two kinds of [layout width](https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width) which set the behavior of page containers: **fixed** (default) or **fluid**.
 
@@ -26,7 +47,7 @@ The **fixed** layout applies the ideal maximum width to page containers accordin
 
 [Breadcrumbs](/components/breadcrumb) always share the width of the page container that follows it.
 
-### Fixed layout
+#### Fixed layout
 
 In the fixed layout, there are three possible maximum widths for page containers. For each width, you must consider which one is best to consume and interact with the elements on the page. The following widths include a `16px` padding on both sides.
 
@@ -36,13 +57,13 @@ In the fixed layout, there are three possible maximum widths for page containers
 
 We recommend that you first try and use **`990px`** unless another width is more suited. A width can also be chosen based on consistency between similar views in different pages, even if another width would have been more suitable.
 
-## Baseline grid
+### Baseline grid
 
 Adhering to a baseline grid allows us to be more efficient by removing decision making while maintaining a consistent rhythm between components and typography.
 
-### Components
+#### Components
 
-Using a baseline grid of 8px allows flexibility when scaling and defining our [spacing](/layout/spacing) without overloading the system with options. By using multiples of 8 to define dimensions, padding, and margins of components, we ensure every UI element aligns to the pixel grid.
+Using a baseline grid of 8px allows flexibility when scaling and defining our [spacing](/product-foundations/spacing) without overloading the system with options. By using multiples of 8 to define dimensions, padding, and margins of components, we ensure every UI element aligns to the pixel grid.
 
 <div class="baseline gl-mx-auto gl-mb-6">
   <div class="w-13 h-3"></div>
@@ -68,11 +89,11 @@ When text is used within a UI element, set the line-height to be consistent with
   <div class="w-13 h-3"></div>
 </div>
 
-### Typography
+#### Typography
 
 All typography aligns to a 4px baseline grid. This allows for readable line heights at all sizes. See our [type scale documentation](/product-foundations/type-scales) for more information.
 
-#### UI typography
+##### UI typography
 
 <div class="baseline--typography distributed">
   <h1>Header 1</h1>
@@ -84,7 +105,7 @@ All typography aligns to a 4px baseline grid. This allows for readable line heig
   <p>Paragraph</p>
 <span class="label">Label</span></div>
 
-#### Markdown
+##### Markdown
 
 <div class="baseline--typography">
   <h1>Header 1</h1>
@@ -96,7 +117,7 @@ All typography aligns to a 4px baseline grid. This allows for readable line heig
   <p>Paragraph</p>
 </div>
 
-#### Compact markdown
+##### Compact markdown
 
 <div class="baseline--typography md compact">
   <h1>Header 1</h1>
@@ -107,3 +128,9 @@ All typography aligns to a 4px baseline grid. This allows for readable line heig
   <h6>Header 6</h6>
   <p>Paragraph</p>
 </div>
+
+## Sticky containers
+
+A sticky container is a div that sticks to the top or bottom of it's parent container. It contains actions or links that are relevant to the task someone is performing. Sticky containers are useful for long pages that contain lots of content that would push buttons or actions above or below the viewport. For example, when editing a wiki, the save changes button will always be visible even if the wiki content extends below the viewport.
+
+Use sticky containers with caution as they can easily crowd the interface and make it difficult to navigate the page by shrinking the content area.

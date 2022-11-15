@@ -4,7 +4,10 @@ description: Sorting allows users to quickly re-organize similar content on a lo
 stories:
   - base-sorting--default
 related:
-  - dropdown
+  - dropdown-listbox
+  - dropdown-disclosure
+  - dropdown-combobox
+  - dropdown-menu
   - filter
 ---
 

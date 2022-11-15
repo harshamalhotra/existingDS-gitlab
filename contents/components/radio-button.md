@@ -5,10 +5,9 @@ stories:
   - base-form-form-radio--default
 related:
   - checkbox
-  - dropdown
   - segmented-control
+  - select
   - toggle
-  - form
 ---
 
 ## Examples
@@ -54,7 +53,7 @@ related:
 
 #### Help text
 
-- [Help text](/components/form#help-text) can be added below the radio button label or as a paragraph below the group.
+- [Help text](/patterns/forms#text) can be added below the radio button label or as a paragraph below the group.
 
 ### Accessibility
 

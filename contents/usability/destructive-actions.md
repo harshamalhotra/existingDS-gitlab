@@ -1,5 +1,5 @@
 ---
-name: Error prevention
+name: Destructive actions
 ---
 
 Friction in the user interface is often regarded as something to avoid or resolve. However, it can be useful when preventing a user from completing a destructive action when the consequences may be unknown.

@@ -1,5 +1,5 @@
 ---
-name: Helping users
+name: Contextual help and info
 related:
   - tooltip
   - popover

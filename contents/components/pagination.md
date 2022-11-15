@@ -6,7 +6,7 @@ stories:
 related:
   - button
   - path
-  - /regions/navigation
+  - /patterns/navigation
   - infinite-scroll
 ---
 
@@ -46,12 +46,12 @@ related:
 
 ### When not to use
 
-- If the content is not part of the same set, consider using [navigation](/regions/navigation) instead.
+- If the content is not part of the same set, consider using [navigation](/patterns/navigation) instead.
 - If you need to navigate between steps in a flow, consider using the [path](/components/path) component or [buttons](/components/button) instead.
 
 ### Appearance
 
-- There is 24px [spacing](/layout/spacing#standard-spacing-guidelines) between pagination and the element it relates to.
+- There is 24px [spacing](/product-foundations/spacing#standard-spacing-guidelines) between pagination and the element it relates to.
 
 ### Types of pagination
 
