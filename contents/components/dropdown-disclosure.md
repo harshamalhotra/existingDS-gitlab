@@ -24,14 +24,14 @@ related:
 
 ### When to use
 
-- Use a disclosure dropdown to toggle a panel of links (`<a>`) or actions (`<button>`) that can be performed in a specific context, including [navigation](/regions/navigation).
+- Use a disclosure dropdown to toggle a panel of links (`<a>`) or actions (`<button>`) that can be performed in a specific context, including [navigation](/patterns/navigation).
 - In the instance where a combination of links and actions are present in the dropdown, a disclosure is preferred over other dropdown options that are more semantically prescriptive.
 
 ### When not to use
 
 - If the options within the panel are selectable, refer to the [listbox](/components/dropdown-listbox) component.
 - If the options within the panel _only_ perform app-like JavaScript actions, consider using a [menu](/components/dropdown-menu) instead.
-- If a user is selecting a single text option from a group of options within a [form](/components/form), consider using a `<select>` element, [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
+- If a user is selecting a single text option from a group of options within a [form](/patterns/forms), consider using a [select](/components/select), [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
 - If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
 
 ### Trigger button variants

@@ -1,5 +1,5 @@
 ---
-name: Search
+name: Searching
 ---
 
 ## Global search
@@ -8,4 +8,4 @@ name: Search
 
 ## List search
 
-There are several core lists in the GitLab experience, such as the Issue list and the Merge Request list. You are also able to filter and search these lists. [More information regarding filter.](/regions/filters)
+There are several core lists in the GitLab experience, such as the Issue list and the Merge Request list. You are also able to filter and search these lists. [More information regarding filter.](/patterns/filtering)

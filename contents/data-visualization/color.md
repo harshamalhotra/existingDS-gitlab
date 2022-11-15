@@ -4,7 +4,7 @@ name: Color
 
 ## Data visualization palette
 
-<note>View the [Foundations > Color](/product-foundations/colors) section for details about the UI, neutral, and theme palettes.</note>
+<note>View the [Foundations > Color](/product-foundations/color) section for details about the UI, neutral, and theme palettes.</note>
 
 Data visualization is critical content within GitLab. The presentation and interpretation of this content relies on visual nuance that is separate from the rest of the UI.
 
@@ -340,7 +340,7 @@ Pattern fills can create accessibility issues of their own, namely cognitive, an
 
 Sequential data uses steps within a single hue, and color lightness to indicate a range from low to high.
 
-[Blue](#set-blue) is the default hue for charts with a single data range, and `$data-viz-blue-500` is the base step for both light and dark UI. Others hues can be used instead by following a similar pattern.
+Blue is the default hue for charts with a single data range, and `$data-viz-blue-500` is the base step for both light and dark UI. Others hues can be used instead by following a similar pattern.
 
 * Steps in a light UI go from `500` (low) to `950` (high) so that the higher the value, the darker it is and the more contrast it has against the light surface.
 * Steps in a dark UI go from `500` (low) to `50` (high) so that the higher the value, the lighter is is and the more contrast it has against the dark surface.

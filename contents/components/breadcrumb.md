@@ -33,7 +33,7 @@ related:
 
 ### When not to use
 
-- If you need to link to sibling or related pages, use a form of [navigation](/regions/navigation) instead.
+- If you need to link to sibling or related pages, use a form of [navigation](/patterns/navigation) instead.
 
 ### Behavior
 
@@ -53,8 +53,8 @@ related:
 
 Some pages have a special breadcrumb path to make the text intuitive. They are defined as follows:
 
-| Path | Title in breadcrumb |
-| ------ | ------ |
+| Path                                      | Title in breadcrumb                          |
+| ----------------------------------------- | -------------------------------------------- |
 | Group > Issues > List                     | Group > Issues                               |
 | Group > Issues > Boards                   | Group > Issue boards                         |
 | Group > Settings > General                | Group > General settings                     |

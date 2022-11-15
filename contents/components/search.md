@@ -7,9 +7,9 @@ stories:
 related:
   - button
   - filter
-  - form
   - sorting
   - spinner
+  - text-input
 ---
 
 ## Examples
@@ -51,4 +51,4 @@ related:
 
 ### Content
 
-While search results aren't part of the component itself, the [Empty States](/regions/empty-states#empty-search-results) page has additional guidance on what to display if the search returns no results.
+While search results aren't part of the component itself, the [Empty States](/patterns/empty-states#empty-search-results) page has additional guidance on what to display if the search returns no results.

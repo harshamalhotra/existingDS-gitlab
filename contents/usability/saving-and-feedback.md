@@ -72,6 +72,6 @@ Once the change is successfully saved, the opacity changes to 100% and the spinn
 ## Related patterns
 
 - [Buttons](/components/button)
-- [Forms](/components/form)
+- [Forms](/patterns/forms)
 - [Spinner](/components/spinner)
 - [Toast](/components/toast)

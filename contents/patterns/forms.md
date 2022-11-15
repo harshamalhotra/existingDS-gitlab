@@ -1,5 +1,5 @@
 ---
-name: Form
+name: Forms
 description: A form is for capturing and submitting user input.
 stories:
   - base-form-form--default
@@ -65,7 +65,7 @@ Forms may include a variety of elements. By default all information in forms is 
   - Avoid repetitive or unnecessary text. For example, _This setting is..._ or _Use this setting to..._
   - Positioned directly below a label.
   - Don't use "allow" unless you're specifically talking about security. For example, _Allows users to fork the repo_ should be _Users can fork the repo_.
-- **Help**: Provides contextual examples, formatting information, details about the input state, validation messages, or any combination of these options. Positioned directly below an input. May include a [help link](/usability/helping-users) when necessary. For example: _Must have 11 digits including the country code. For example, +1-234-567-8901. Learn more._
+- **Help**: Provides contextual examples, formatting information, details about the input state, validation messages, or any combination of these options. Positioned directly below an input. May include a [help link](/usability/contextual-help) when necessary. For example: _Must have 11 digits including the country code. For example, +1-234-567-8901. Learn more._
 - **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
 
 #### Field
@@ -99,7 +99,7 @@ By default a form flows top to bottom in a single column. Inline inputs in a ver
 
 In rare cases, a `<label>` can be placed to the left of the input. For example, in a [filter](/components/filter) section or a [date picker](/components/date-picker).
 
-Input and selection controls can be any width that uses a [base-8 progression](/layout/spacing). There are also five preset sizes that can be used to normalize the width in any form. When considering responsive behavior, these should be regarded as maximum widths.
+Input and selection controls can be any width that uses a [base-8 progression](/product-foundations/spacing). There are also five preset sizes that can be used to normalize the width in any form. When considering responsive behavior, these should be regarded as maximum widths.
 
   - **Extra small**: 80px wide
   - **Small**: 160px wide
@@ -153,6 +153,60 @@ Including help text below a field explaining why it's disabled can be useful, bu
 A Form should support the "quick submit" behavior, which allows it to be submitted from any control (including Markdown editors) using <kbd>⌘</kbd> + <kbd>Enter</kbd> (or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>).
 
 Note to developers: the quick submit behavior can be automatically added to a form using the `js-quick-submit` CSS class implemented in [`quick_submit.js`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/assets/javascripts/behaviors/quick_submit.js).
+
+### Error messages
+
+Error messages are an indication of system status. They let users know that they have encountered a problem and provide ways to resolve it, teaching them to avoid future impediments. Whenever possible, the system should keep potential errors to a minimum. See [destructive actions](/usability/destructive-actions) guidelines.
+
+Error messages can be persistent, dismissible, or temporary. In order to be effective, error messages should be concise, specific, and consistent.
+
+<todo>Add guidelines on when an error message should be persistent, dismissible, or temporary.</todo>
+
+#### Error message guidelines
+
+##### Concise
+
+An error message should be helpful and clear. Describe the error, inform users about what has happened, and if possible, how to resolve it. The general [voice and tone](/content/voice-and-tone/#clear-error-messages) guidelines for GitLab’s public communications should apply to all error messages. An overly familiar tone of voice can be perceived as careless in the context of error resolution, especially if the error can't be easily resolved by the user.
+
+Avoid using messages like:
+
+- Whoops, GitLab is currently unavailable.
+
+Instead, use messages like:
+
+- An error occurred while importing the project to GitLab. For more information, see how to [import your project from GitHub to GitLab](https://docs.gitlab.com/ee/user/project/import/github.html).
+- The project name must be 40 characters or fewer.
+- Your email is required to sign up with GitLab.
+
+##### Specific
+
+Generic error messages are not helpful, and they don't make sense out of context. Try to provide different errors for different messages and scenarios. For example, errors in text fields can be too long, too short, in the wrong format, and so on.
+
+Error messages for specific situations are more helpful to users.
+
+- `Your project title needs to have at least 3 characters` is more specific and direct than `Name is too short`.
+- `Display name is required` is more specific than `Field is empty` and more succinct than `Your display name can't be blank`.
+
+##### Consistent
+
+To reduce the cognitive effort needed from users to understand the error, use a contextual error message with the same phrasal structure for error messages. All messages should look, sound, and mean the same, according to the component they're displayed in.
+
+Avoid writing different messages that have the same meaning:
+
+- Your password needs to have at least 8 characters.
+- Your password should not have less than 8 characters.
+- Your password has fewer than 8 characters.
+
+Instead, use the same phrasal structure for all messages:
+
+- Your project title needs to have at least 3 characters.
+
+#### Error messages and scenarios
+
+Error messages can be used in the following scenarios:
+
+- Errors in forms: see [form validations](#validation).
+- Errors in the system or on a page: see [alert](https://design.gitlab.com/components/alert).
 
 ### Accessibility
 

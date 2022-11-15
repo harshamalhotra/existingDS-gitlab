@@ -51,7 +51,7 @@ Contains a small amount of text content that uses the container width when user 
 
 ### Placement
 
-- Located at the top of the page, above the [global navigation](/regions/navigation).
+- Located at the top of the page, above the [global navigation](/patterns/navigation).
 - Multiple broadcast messages stack vertically.
 
 ### Accessibility

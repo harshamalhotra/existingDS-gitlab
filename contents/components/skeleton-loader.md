@@ -40,14 +40,14 @@ related:
 ### Appearance
 
 - Comprised of one or more basic, grayscale shapes that have a horizontally pulsing [motion](/product-foundations/motion#skeleton-loading) to indicate they are loading.
-- Use rounded corners, even for rectangular shapes. Shapes follow the [standard spacing guidelines](/layout/spacing#standard-spacing-guidelines).
+- Use rounded corners, even for rectangular shapes. Shapes follow the [standard spacing guidelines](/product-foundations/spacing#standard-spacing-guidelines).
 - Each shape should represent content in a recognizable way. For example, a long rectangle for a line of text or a circle for an avatar.
 
 ### Custom skeleton loaders
 
 To create a new skeleton loader:
 
-1. Start by designing with the variants in the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=2844%3A27) and use spacing that follows the [geometric progression](/layout/spacing#geometric-progression).
+1. Start by designing with the variants in the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=2844%3A27) and use spacing that follows the [geometric progression](/product-foundations/spacing#geometric-progression).
 1. Output an SVG of the skeleton loader.
 1. Use the `<gl-skeleton-loader>` component and customize the SVG properties.
 

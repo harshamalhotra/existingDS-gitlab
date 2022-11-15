@@ -1,5 +1,5 @@
 ---
-name: Accessibility audits
+name: Overview
 ---
 
 ## An introduction to performing website audits
@@ -14,5 +14,5 @@ The following guides aren’t a replacement for thorough manual audits or user t
 
 - Visual (coming soon)
 - Semantics and content (coming soon)
-- [Keyboard-only](/accessibility-audits/keyboard-only)
+- [Keyboard-only](/accessibility/keyboard-only)
 - Screen readers (coming soon)

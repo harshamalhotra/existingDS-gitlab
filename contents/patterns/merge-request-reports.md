@@ -29,7 +29,7 @@ Each widget is laid out as a grid with three possible horizontal levels and thre
 
 ### Grid
 
-The widgets use [our 8px spacing system](/layout/spacing/) to align elements within. External spacing is always greater than or equal to internal spacing, meaning that as nesting increases, space decreases. This helps identify content relationships and makes the higher levels more scannable. Widget content nests up to two levels deep.
+The widgets use [our 8px spacing system](/product-foundations/spacing/) to align elements within. External spacing is always greater than or equal to internal spacing, meaning that as nesting increases, space decreases. This helps identify content relationships and makes the higher levels more scannable. Widget content nests up to two levels deep.
 
 - Level 1 adjusts vertical spacing responsively to keep more widgets in view at smaller breakpoints.
 - All levels adjust horizontal spacing responsively to provide more room for the subject at smaller breakpoints.
@@ -177,7 +177,7 @@ Each widget has rules that determine its status. The icon at the top level of ea
 Since everything in a widget is technically content, identifying a specific _subject_ section allows us to focus on the text and meta information that identifies the item, what it means for a user, and how to remedy problems.
 
 - Section title, description, and meta information are optional, but the main text is required.
-- Follow the [voice and tone](/content/voice-tone) guidelines for writing all text content.
+- Follow the [voice and tone](/content/voice-and-tone) guidelines for writing all text content.
 
 <figure class="figure" role="figure" aria-label="Example options and formatting within the subject area with numbered markers corresponding to the list that follows">
   <img class="figure-img" src="/img/mrw-subject.png" alt="Merge request widget subject styles" role="img" />

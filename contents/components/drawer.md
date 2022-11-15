@@ -13,7 +13,7 @@ related:
   - skeleton-loader
   - button
   - /product-foundations/motion
-  - /regions/empty-states
+  - /patterns/empty-states
 ---
 
 ## Examples
@@ -66,7 +66,7 @@ related:
 
 - All copy within a drawer should be short, actionable, and use clear language.
 - The drawer should utilize the [skeleton loader](/components/skeleton-loader/) pattern when possible to represent loading content.
-- If an empty state is required, please follow the [empty-state](/regions/empty-states) guidelines.
+- If an empty state is required, please follow the [empty-state](/patterns/empty-states) guidelines.
 - Left aligned, except in right-to-left languages where the content is right aligned.
 - For drawers that show documentation, the content is stored in a markdown file in the `gitlab` repo.
   For details, see the [contribution documentation](https://docs.gitlab.com/ee/development/documentation/drawers.html).
@@ -79,7 +79,7 @@ related:
 
 #### Actions
 
-- Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See [button alignment and order](/components/button#alignment-and-order) for more details.
+- Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See button [alignment](/components/button#alignment) and [order](/components/button#order) for more details.
 
 ### Accessibility
 

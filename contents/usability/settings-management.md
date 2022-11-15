@@ -1,14 +1,14 @@
 ---
-name: Settings
+name: Settings management
 related:
   - accordion
-  - /regions/navigation
-  - /content/voice-tone
+  - /patterns/navigation
+  - /content/voice-and-tone
   - /content/terminology
-  - /product-foundations/saving-and-feedback
+  - /usability/saving-and-feedback
 ---
 
-[Settings](/content/terminology#settings-%26-configuration) is an area in the product that allows users to configure how their instance should behave.
+[Settings](/content/terminology#settings--configuration) is an area in the product that allows users to configure how their instance should behave.
 
 There are several areas within GitLab to manage settings:
 
@@ -20,8 +20,8 @@ There are several areas within GitLab to manage settings:
 Settings visibility and access depend on the [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) users have in a particular GitLab instance, group, or project.
 
 - **User settings:** Preferences that you have an ownership of as an individual user. Accessible via the top navigation, under Profile > Preferences. Example setting: Changing how the date and time are displayed.
-- **Group settings:** Settings for group features, or settings that apply to projects within a group. Group settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/regions/navigation#left-sidebar). Example setting: Configuring an integration that all projects in the group will inherit.
-- **Project settings:** Settings for project features. Project settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/regions/navigation#left-sidebar). Example setting: Enabling protected branches.
+- **Group settings:** Settings for group features, or settings that apply to projects within a group. Group settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/patterns/navigation#left-sidebar). Example setting: Configuring an integration that all projects in the group will inherit.
+- **Project settings:** Settings for project features. Project settings are only visible to [maintainers](https://docs.gitlab.com/ee/user/permissions.html) and above, and are accessed via the Settings section in the [left sidebar](/patterns/navigation#left-sidebar). Example setting: Enabling protected branches.
 
 ## Usage
 
@@ -46,15 +46,15 @@ When a child setting is enforced from a parent, make this clear in the child set
 
 Admin, group, project, and user settings utilize full pages to group different categories inside [accordions](/components/accordion). This is different from feature settings which live next to a specific UI element. On settings pages, the most frequently used options should be made easily available to users by not collapsing the content. Horizontal separators are placed between each category to give elements enough room to breathe.
 
-Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [voice and tone](/content/voice-tone) guidelines.
+Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [voice and tone](/content/voice-and-tone) guidelines.
 
 ### Saving settings
 
-To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/product-foundations/saving-and-feedback#saving-progress).
+To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/usability/saving-and-feedback#saving-progress).
 
 ### User feedback
 
-- Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#in-page) when data is saved asynchronously.
+- Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#placement) when data is saved asynchronously.
 - Use a [toast](/components/toast) for success messages that provide immediate confirmation of an action (for example, saving).
 
 ### Linking to settings from a feature page

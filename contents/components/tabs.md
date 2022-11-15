@@ -43,7 +43,7 @@ related:
 - When presenting a filtered view of content, consider using the [filter](/components/filter) component instead.
 - If content from multiple tabs should be viewed at the same time, consider using an [accordion](/components/accordion) instead.
 - If content is part of a flow, consider using the [path](/components/path) component instead.
-- Avoid confusing tabs with navigation. Tabs help users remain in the same context; use [navigation](/regions/navigation) for changing context.
+- Avoid confusing tabs with navigation. Tabs help users remain in the same context; use [navigation](/patterns/navigation) for changing context.
 
 ### Behavior
 
