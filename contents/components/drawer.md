@@ -68,6 +68,8 @@ related:
 - The drawer should utilize the [skeleton loader](/components/skeleton-loader/) pattern when possible to represent loading content.
 - If an empty state is required, please follow the [empty-state](/regions/empty-states) guidelines.
 - Left aligned, except in right-to-left languages where the content is right aligned.
+- For drawers that show documentation, the content is stored in a markdown file in the `gitlab` repo.
+  For details, see the [contribution documentation](https://docs.gitlab.com/ee/development/documentation/drawers.html).
 
 #### Title
 
