@@ -50,3 +50,24 @@ Higher tier features should be easy to identify from the rest of the interface. 
 * Can be removed from the UI via group or instance level settings.
 
 <todo>Add links to the documentation.</todo>
+
+### Highlighting Alpha and Beta features
+
+Similar to higher tier features, Alpha and Beta features should be easily identifiable. When a feature can be enabled via a setting, consider adding a badge next to the setting header. Include a link
+to the [feature management documentation](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) in a [popover](/components/popover).
+
+| Alpha | Beta |
+| ------ | ------ |
+| Features in Alpha aren't fully tested and may break. | Features in Beta may still contain bugs or inconsistencies. |
+| <figure class="figure" role="figure" aria-label="Alpha feature badge"><img class="figure-img" src="/img/alpha-feature-badge.svg" alt="Alpha feature badge" role="img" /></figure> | <figure class="figure" role="figure" aria-label="Beta feature badge"><img class="figure-img" src="/img/beta-feature-badge.svg" alt="Beta feature badge" role="img" /></figure> |
+
+#### Specification
+
+* Component name: [`GlBadge`](https://design.gitlab.com/components/badge/code)
+* Variant: `Info`
+* Size: `MD`
+
+#### How to use
+
+* Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
+* When the feature is no longer Alpha or Beta, make sure the badge is removed.
