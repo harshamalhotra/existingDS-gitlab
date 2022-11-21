@@ -1,3 +1,14 @@
+# [2.141.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.140.0...v2.141.0) (2022-11-21)
+
+
+### Features
+
+* **drawer:** Include when to utilize markdown for drawers ([0f1ffa8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f1ffa8a0f2c5f93bd2bdcfaf697fe6910aa339b))
+* **Feature management:** Document beta features ([b166ce0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b166ce09b01094748bb4615f5dccbbafb27e63a0))
+* **HelpingUsers:** Add info icon context ([74682f7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/74682f71d9b2fa29d22066a47b2264e3ca83e732))
+* **voice-tone:** Point to TW word list and remove duplication ([668c885](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/668c885832de07e422bb431bca214e6d5216c792))
+* Update Pajamas navigation URLs and pages ([0f45e5d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f45e5d2d75904b5f11901832c53d739e62de669))
+
 # [2.140.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.139.0...v2.140.0) (2022-11-14)
 
 
