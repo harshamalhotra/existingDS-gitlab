@@ -1,6 +1,6 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import Navbar from '../../components/navbar.vue';
+import Sidebar from '../../components/sidebar.vue';
 import mutations from '../../store/mutations';
 import state from '../../store/state';
 
@@ -51,7 +51,7 @@ jest.mock('../../nav.json', () => navMock);
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
-describe('navbar component', () => {
+describe('sidebar component', () => {
   let wrapper;
   let store;
 
@@ -60,7 +60,7 @@ describe('navbar component', () => {
       state: state(),
       mutations,
     });
-    wrapper = mount(Navbar, {
+    wrapper = mount(Sidebar, {
       localVue,
       store,
       stubs: {

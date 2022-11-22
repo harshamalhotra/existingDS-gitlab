@@ -1,39 +1,52 @@
-.nav-sidebar__toggle {
-  position: fixed;
-  top: 1rem;
-  left: 0.5rem;
-  z-index: $z-nav-sidebar + 1;
+.sidebar__toggle {
   background: none;
   border: 0;
   fill: $gray-900;
-
+  left: 0;
+  margin: 0;
+  padding: $gl-spacing-5;
+  position: fixed;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 0.1s ease-out;
+  z-index: $z-sidebar + 1;
   @include hide-sm-up;
 
-  &:hover {
-    fill: $gray-950;
+  &.sidebar--open {
+    background-color: $gray-10;
+    transform: translateX($sidebar-width);
+  }
+
+  svg {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
     cursor: pointer;
+    fill: $gray-950;
   }
 }
 
-.nav-sidebar {
-  position: fixed;
-  z-index: $z-nav-sidebar;
-  background-color: $white;
-  border-right: 1px solid $border-color;
-  width: $nav-sidebar-width;
-  height: 100%;
-  left: 0;
-  top: 0;
+.sidebar {
+  background-color: $gray-10;
   display: flex;
   flex-direction: column;
-  transition: transform 0.1s ease-out;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
   transform: translateX(-100%);
+  transition: transform 0.1s ease-out;
+  width: $sidebar-width;
+  z-index: $z-sidebar;
 
   @include media-sm-up {
+    border-right: 1px solid $gray-50;
     transform: translateX(0);
   }
 
-  &.nav-sidebar--open {
+  &.sidebar--open {
     transform: translateX(0);
   }
 
@@ -42,150 +55,134 @@
     content: url(~assets/images/icons/external-link.svg);
     margin: 0 $gl-spacing-2 0 $gl-spacing-2;
   }
-
-  ul {
-    margin: 0;
-    padding: $gl-spacing-3 0 $gl-spacing-3 0;
-    border-top: $border-width solid $border-color;
-
-    &:first-child,
-    &.nav-sidebar__section-submenu {
-      border-top: 0;
-    }
-
-    li {
-      @include unstyled-list;
-    }
-  }
-
-  .nav-sidebar__header {
-    border-bottom: 1px solid $border-color;
-    padding-left: 40px;
-
-    @include media-sm-up {
-      padding-left: 0;
-    }
-  }
-
-  .nav-sidebar__body {
-    flex: 1;
-    overflow: auto;
-  }
-
-  .nav-sidebar__header-anchor {
-    display: flex;
-    align-items: center;
-    color: $gitlab-logo-grey;
-    font-size: 16px;
-    padding: $gl-spacing-5;
-
-    &:hover {
-      background-color: $t-gray-a-06;
-      text-decoration: none;
-    }
-  }
-
-  .nav-sidebar__section {
-    .nav-sidebar__section-title,
-    .nav-sidebar__section-toggle,
-    .nav-sidebar__section-items-anchor {
-      padding-top: $gl-spacing-3;
-      padding-bottom: $gl-spacing-3;
-      padding-right: $gl-spacing-5;
-      display: flex;
-      color: $gray-900;
-      text-decoration: none;
-    }
-
-    .nav-sidebar__section-toggle {
-      display: block;
-
-      &:hover {
-        background-color: $t-gray-a-06;
-      }
-
-      &:after {
-        border-style: solid;
-        border-width: 1.5px 1.5px 0 0;
-        content: '';
-        display: block;
-        height: 0.45em;
-        float: right;
-        width: 0.45em;
-        transform: rotate(135deg) translate(0.4em, 0px);
-        border-color: $gray-400;
-      }
-    }
-
-    .nav-sidebar__section-submenu {
-      padding: 0;
-    }
-
-    .nav-sidebar__section-title {
-      font-weight: $font-weight--bold;
-      display: block;
-      padding-left: $gl-spacing-5;
-    }
-  }
-
-  .nav-sidebar__section--expanded {
-    background-color: $gray-10;
-
-    > .nav-sidebar__section-toggle {
-      background-color: $gray-100;
-
-      &:after {
-        transform: rotate(-45deg) translate(-0.4em, 0px);
-      }
-
-      .nuxt-link-active {
-        font-weight: $font-weight--bold;
-      }
-    }
-  }
-
-  .nav-sidebar__section-items-anchor {
-    cursor: pointer;
-
-    &.nuxt-link-active {
-      box-shadow: inset ($border-width * 4) 0 0 $gray-700;
-      background-color: $t-gray-a-06;
-    }
-
-    &:hover {
-      background-color: $t-gray-a-04;
-      text-decoration: none;
-    }
-  }
 }
 
-.nav-sidebar__overlay {
+.sidebar__overlay {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: $t-gray-a-24;
-  z-index: $z-nav-sidebar;
+  z-index: $z-sidebar;
 
   @include hide-sm-up;
 }
 
-// Hides summary arrow //
-details > summary:first-of-type {
-  list-style-type: none;
-}
+.sidebar__logo {
+  align-items: center;
+  border-radius: $border-radius;
+  color: $gray-900;
+  display: flex;
+  font-weight: $font-weight--bold;
+  gap: $gl-spacing-2;
+  padding: $gl-spacing-3;
 
-// Hides summary arrow on chrome //
-summary {
-  &::-webkit-details-marker {
-    display: none;
+  &:hover,
+  &:focus {
+    background-color: $gray-50;
+    text-decoration: none;
   }
 }
 
-// indent utilities //
-@for $i from 0 through 8 {
-  .tree-indent-#{$i + 1} {
-    padding-left: $gl-spacing-6 + $gl-spacing-3 * $i;
+.sidebar__nav {
+  ul {
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      @include unstyled-list;
+    }
+  }
+
+  > ul > li + li {
+    &::before {
+      border-top: 1px solid $gray-50;
+      content: '';
+      display: block;
+      margin: $gl-spacing-3;
+    }
+  }
+}
+
+.sidebar__nav-toggle,
+.sidebar__nav-anchor {
+  border-radius: $border-radius;
+  color: $gray-900;
+  display: block;
+  padding: $gl-spacing-3;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-50;
+  }
+
+  &:active {
+    background-color: $gray-100;
+  }
+}
+
+.sidebar__nav-toggle,
+.sidebar__nav-option {
+  margin-bottom: 1px !important;
+}
+
+.sidebar__nav-toggle {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 100%;
+  text-align: left;
+  width: 100%;
+
+  svg {
+    fill: $gray-400;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.sidebar__nav-toggle-inner {
+  align-items: center;
+  display: flex;
+  gap: $gl-spacing-2;
+
+  > span {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+.sidebar__nav-toggle--expanded {
+  color: $white;
+  background-color: $gray-800;
+
+  svg {
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $gray-700;
+  }
+
+  &:active {
+    background-color: $gray-900;
+  }
+}
+
+.sidebar__nav-anchor {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.nuxt-link-active {
+    background-color: $gray-50;
   }
 }
