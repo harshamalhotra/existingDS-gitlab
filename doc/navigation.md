@@ -1,10 +1,10 @@
 # Navbar configuration
 
-## How to populate the navbar
+## How to populate the navigation
 
-The navbar is populated via a [JSON configuration file](../nav.json).
+The navigation is populated via a [JSON configuration file](../nav.json).
 
-The configuration file consists of a list of objects that each define a single item in the navbar.
+The configuration file consists of a list of objects that each define a single item in the navigation.
 Each item should have a `title` and a `path`. In the example below, **My page** can be accessed at
 `/my-page`:
 
@@ -17,10 +17,10 @@ Each item should have a `title` and a `path`. In the example below, **My page** 
 ]
 ```
 
-Each item can have children that will be nested in a `<details>` element. Such items should define
+Each item can have children that will be toggled with a `<button>`. Such items should define
 an `items` property. `path` is optional for parent items. In the following example,
 **My nested page** is accessible at `/my-nested-page` and is nested under **My category** in the
-navbar:
+navigation:
 
 ```json
 [
@@ -82,7 +82,7 @@ Only one level of nesting is supported. In other words, the following `nav.json`
 
 ## Tying the navigation items to Markdown contents
 
-When configuring paths in the navbar, make sure that they match the Markdown contents structure.
+When configuring paths in the navigation, make sure that they match the Markdown contents structure.
 
 For example, if you had the following structure in the `contents/` directory:
 

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sidebar component renders sidebar properly 1`] = `
+<nav
+  aria-labelledby="nav-heading"
+  class="sidebar__nav"
+>
+  <h2
+    class="gl-sr-only"
+    id="nav-heading"
+  >
+    Main navigation
+  </h2>
+   
+  <ul>
+    <li>
+      <div
+        aria-hidden="true"
+        class="gl-font-sm gl-font-weight-bold gl-px-3 gl-py-2"
+      >
+        
+    Top-level item 1
+  
+      </div>
+       
+      <ul
+        aria-label="Top-level item 1"
+      >
+        <li
+          class="sidebar__nav-option"
+        >
+          <nuxt-link-stub
+            class="sidebar__nav-anchor"
+            to="/top1/second1"
+          >
+            
+    Second-level item 1
+  
+          </nuxt-link-stub>
+        </li>
+        <li>
+          <button
+            aria-controls="item-second2"
+            class="sidebar__nav-toggle"
+          >
+            <span
+              class="sidebar__nav-toggle-inner"
+            >
+              <span>
+                Second-level item 2
+              </span>
+               
+              <svg>
+                <use
+                  xlink:href="#chevron-down"
+                />
+              </svg>
+            </span>
+          </button>
+           
+          <ul
+            aria-label="Second-level item 2"
+            class="gl-ml-4!"
+            id="item-second2"
+            style="display: none;"
+          >
+            <li
+              class="sidebar__nav-option"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor"
+                to="/top1/second2/third1"
+              >
+                
+    Third-level item 1
+  
+              </nuxt-link-stub>
+            </li>
+            <li
+              class="sidebar__nav-option"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor"
+                to="/top1/second2/third2"
+              >
+                
+    Third-level item 2
+  
+              </nuxt-link-stub>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <div
+        aria-hidden="true"
+        class="gl-font-sm gl-font-weight-bold gl-px-3 gl-py-2"
+      >
+        
+    Top-level item 2
+  
+      </div>
+       
+      <ul
+        aria-label="Top-level item 2"
+      >
+        <li>
+          <button
+            aria-controls="item-undefined"
+            class="sidebar__nav-toggle"
+          >
+            <span
+              class="sidebar__nav-toggle-inner"
+            >
+              <span>
+                Second-level item without path
+              </span>
+               
+              <svg>
+                <use
+                  xlink:href="#chevron-down"
+                />
+              </svg>
+            </span>
+          </button>
+           
+          <ul
+            aria-label="Second-level item without path"
+            class="gl-ml-4!"
+            id="item-undefined"
+            style="display: none;"
+          >
+            <li
+              class="sidebar__nav-option"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor"
+                to="/top2/third2"
+              >
+                
+    Third-level item 3
+  
+              </nuxt-link-stub>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+`;

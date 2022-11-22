@@ -194,19 +194,16 @@ export default {
     @keydown.down.prevent="keyDown"
     @keydown.esc="closeResults"
   >
-    <div class="gl-p-3 gl-inset-border-b-1-gray-200">
-      <gl-search-box-by-type
-        ref="input"
-        v-model="searchText"
-        aria-label="Search"
-        aria-haspopup="true"
-        :aria-expanded="resultsVisible"
-        autocomplete="off"
-        spellcheck="false"
-        @focus="onFocus"
-      />
-    </div>
-
+    <gl-search-box-by-type
+      ref="input"
+      v-model="searchText"
+      aria-label="Search"
+      aria-haspopup="true"
+      :aria-expanded="resultsVisible"
+      autocomplete="off"
+      spellcheck="false"
+      @focus="onFocus"
+    />
     <ul v-if="resultsVisible" role="menu" tabindex="-1" class="gl-new-dropdown dropdown-menu show">
       <div class="gl-new-dropdown-inner">
         <div ref="results" class="gl-new-dropdown-contents">

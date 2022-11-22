@@ -30,14 +30,14 @@
     left: $gl-spacing-1;
     text-align: center;
     white-space: normal;
-    width: $nav-sidebar-width - $gl-spacing-2;
+    width: $sidebar-width - $gl-spacing-2;
     z-index: $z-nav-skip-link;
   }
 }
 
 .page {
   @include media-sm-up {
-    padding-left: $nav-sidebar-width;
+    padding-left: $sidebar-width;
   }
 }
 
