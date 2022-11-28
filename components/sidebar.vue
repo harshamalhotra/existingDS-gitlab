@@ -2,11 +2,13 @@
 import { mapState } from 'vuex';
 import { NavTree } from '../helpers/navigation/nav_tree';
 import nav from '../nav.json';
+import Logo from './logo.vue';
 import MenuItem from './menu_item.vue';
 import Search from './search/search_box.vue';
 
 export default {
   components: {
+    Logo,
     MenuItem,
     Search,
   },
@@ -37,11 +39,8 @@ export default {
 
 <template>
   <aside :class="{ 'sidebar--open': sidebarOpen }" class="sidebar">
-    <div class="gl-p-3">
-      <nuxt-link to="/" class="sidebar__logo">
-        <img src="/pajamas-logo.svg" alt="Pajamas logo" role="img" width="24" height="24" />
-        <span>Pajamas Design System</span>
-      </nuxt-link>
+    <div class="sidebar__header">
+      <logo />
     </div>
     <div class="gl-pb-3 gl-px-4">
       <client-only>

@@ -1,0 +1,36 @@
+.navbar {
+  align-items: center;
+  background: $gray-10;
+  border-bottom: 1px solid $gray-50;
+  box-shadow: 0px 2px 8px 0px rgba($gray-950, 0.16);
+  display: flex;
+  gap: $gl-spacing-3;
+  justify-content: space-between;
+  left: 0;
+  padding: $gl-spacing-3;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $z-sidebar - 1;
+  @include hide-sm-up;
+}
+
+.navbar__toggle {
+  background: none;
+  border: 0;
+  color: currentColor;
+  margin: 0;
+  padding: $gl-spacing-4;
+
+  svg {
+    display: block;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $gray-950;
+  }
+}
+

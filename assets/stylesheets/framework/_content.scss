@@ -39,9 +39,20 @@
   @include media-sm-up {
     padding-left: $sidebar-width;
   }
+
+  @include media-sm-down {
+    padding-top: $navbar-height;
+  }
 }
 
 .main {
+  &.sidebar--open {
+    @include media-sm-down {
+      position: fixed;
+      overflow: hidden;
+    }
+  }
+
   img {
     max-width: 100%;
   }
@@ -56,12 +67,6 @@
 
   .img-75 {
     max-width: 75%;
-  }
-
-  @include media-sm-down {
-    .md > h1 {
-      padding-top: $gl-spacing-4;
-    }
   }
 }
 

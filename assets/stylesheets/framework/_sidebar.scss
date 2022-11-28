@@ -1,33 +1,3 @@
-.sidebar__toggle {
-  background: none;
-  border: 0;
-  fill: $gray-900;
-  left: 0;
-  margin: 0;
-  padding: $gl-spacing-5;
-  position: fixed;
-  top: 0;
-  transform: translateX(0);
-  transition: transform 0.1s ease-out;
-  z-index: $z-sidebar + 1;
-  @include hide-sm-up;
-
-  &.sidebar--open {
-    background-color: $gray-10;
-    transform: translateX($sidebar-width);
-  }
-
-  svg {
-    display: block;
-  }
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    fill: $gray-950;
-  }
-}
-
 .sidebar {
   background-color: $gray-10;
   display: flex;
@@ -35,19 +5,22 @@
   height: 100%;
   left: 0;
   position: fixed;
-  top: 0;
-  transform: translateX(-100%);
-  transition: transform 0.1s ease-out;
-  width: $sidebar-width;
+  width: 100%;
   z-index: $z-sidebar;
 
   @include media-sm-up {
     border-right: 1px solid $gray-50;
-    transform: translateX(0);
+    top: 0;
+    width: $sidebar-width;
   }
 
-  &.sidebar--open {
-    transform: translateX(0);
+  @include media-sm-down {
+    display: none;
+    top: $navbar-height;
+
+    &.sidebar--open {
+      display: flex;
+    }
   }
 
   // Add an icon after links to external pages
@@ -57,31 +30,11 @@
   }
 }
 
-.sidebar__overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: $t-gray-a-24;
-  z-index: $z-sidebar;
-
-  @include hide-sm-up;
-}
-
-.sidebar__logo {
-  align-items: center;
-  border-radius: $border-radius;
-  color: $gray-900;
-  display: flex;
-  font-weight: $font-weight--bold;
-  gap: $gl-spacing-2;
+.sidebar__header {
   padding: $gl-spacing-3;
 
-  &:hover,
-  &:focus {
-    background-color: $gray-50;
-    text-decoration: none;
+  @include media-sm-down {
+    display: none;
   }
 }
 
