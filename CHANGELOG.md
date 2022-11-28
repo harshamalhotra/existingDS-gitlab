@@ -1,3 +1,16 @@
+# [2.142.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.141.0...v2.142.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.11.0 ([b7ef7a6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b7ef7a666e0d74ab73d024e2b76a5dcff36d8396))
+* **deps:** update gitlab ui/svg ([295e59c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/295e59cd8ee90b428b65c2ae13abc7f5afceaf4c))
+
+
+### Features
+
+* **Settings:** Add layout guidelines for Settings ([3b51b6f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3b51b6fef16142dc467407539196a9f92baa1223))
+
 # [2.141.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.140.0...v2.141.0) (2022-11-21)
 
 
