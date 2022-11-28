@@ -1,0 +1,15 @@
+.logo {
+  align-items: center;
+  border-radius: $border-radius;
+  color: currentColor;
+  display: flex;
+  font-weight: $font-weight--bold;
+  gap: $gl-spacing-2;
+  padding: $gl-spacing-3;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-50;
+    text-decoration: none;
+  }
+}
