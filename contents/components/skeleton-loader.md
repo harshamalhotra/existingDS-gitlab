@@ -27,12 +27,15 @@ related:
 
 ### When to use
 
+- Use the skeleton loader when loading content and a loading [spinner](/components/spinner) is not prominent enough.
+- Use when there is more than a single content element loading at the same time that requires an indicator.
 - Offer a simplified preview of loading content to help manage user expectations while decreasing perceived load time.
 - Avatars, cards, charts, content blocks, lists, and tables are good candidates for a skeleton state.
 
 ### When not to use
 
 - Instantly loading content doesn't need a skeleton loader.
+- For an inline action or feedback, like an [alert](/components/alert), consider a [spinner](/components/spinner) or no loading state instead.
 - Dynamic content revealed upon user interaction shouldn't be replaced by a skeleton loader, as the content should already be loaded by the time the user is able to interact with it. For example, content within a toast message, dropdown menu, or modal.
 - For background processes, a loading state tied to a specific component, or a piece of existing content, use a [spinner](/components/spinner) instead.
 - A skeleton loader shouldn’t be used in combination with a [spinner](/components/spinner), choose the one that fits the use case best.
