@@ -1,5 +1,7 @@
 ---
 name: Feature management
+related:
+  - form
 ---
 
 ## Configuration
@@ -71,3 +73,17 @@ to the [feature management documentation](https://docs.gitlab.com/ee/policy/alph
 
 * Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
 * When the feature is no longer Alpha or Beta, make sure the badge is removed.
+
+## Visibility
+
+Feature visibility is dependent on a user's permissions or subscription levels, and on which features they've chosen to enable.
+
+### When to hide a feature
+
+* A feature is hidden when the user shouldn't have access to it due to a lack of permissions. Hiding the feature is recommended because the user doesn't need to be aware of the functionality, and there is no UI that would allow them to obtain access. For example, we should hide the delete branch button if the user's role does not allow deletion of branches.
+
+### When to keep a feature visible
+
+* When the user has access to a feature but it's not currently enabled. In this scenario, a feature may be visible but disabled. When a feature is disabled, there should be an explanation for why it's disabled, or controls that allow a user to enable or request access to the feature.
+* When child-level settings are enabled from a parent level. In this scenario, a feature may be disabled or replaced with a read-only equivalent. There should be text explaining that the setting is configured at the parent level.
+* Avoid using a [tooltip](/components/tooltip) to explain why an element is disabled as keyboard users can't move focus to the trigger to reveal the message. Exposing the message in the UI is preferred. For example, instead of disabling the merge button on a merge request with outstanding approvals, the button is replaced with copy to explain the state, _Merge blocked: all required approvals must be given_.
