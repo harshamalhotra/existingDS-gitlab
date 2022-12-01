@@ -51,6 +51,7 @@ related:
 - **Success**: Metadata that communicates success or completion with a positive meaning.
 - **Warning**: Metadata that requires attention and a slightly negative meaning.
 - **Danger**: Metadata that indicates a problem and has a negative meaning.
+- **Tier**: Metadata that indicates which product tier an entity belongs to
 
 ### Sizes
 
