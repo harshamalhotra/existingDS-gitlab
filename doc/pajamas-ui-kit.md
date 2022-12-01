@@ -4,7 +4,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Contributions to Pajamas UI Kit](#contributions-to-pajamas-ui-kit)
 - [Structure](#structure)
   - [Files](#files)
@@ -23,6 +22,7 @@
   - [Using Auto Layout](#using-auto-layout)
 - [Adding descriptions, notes, and annotations](#adding-descriptions-notes-and-annotations)
 - [Publishing changes](#publishing-changes)
+- [Changelog](#changelog)
 - [Sharing or linking to changes](#sharing-or-linking-to-changes)
 - [Updating the libraries locally](#updating-the-libraries-locally)
 - [Plugins](#plugins)
@@ -62,17 +62,18 @@ The current files are:
 
 ### Components
 
-With Figma, components are organized in the asset library by how they are structured and named in the file. The default hierarchy is **File/Page/Frame/Layer**. There are two methods for organizing components: 
+With Figma, components are organized in the asset library by how they are structured and named in the file. The default hierarchy is **File/Page/Frame/Layer**. There are two methods for organizing components:
 
-1. Using Figma's [Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants) feature. 
-2. Using a slash naming convention. 
+1. Using Figma's [Variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants) feature.
+2. Using a slash naming convention.
 
 For the rest of this article, components created with Figma’s variants feature will be referred to as **variant** or **variants**. Here’s our working hierarchy for structure and naming, the file name has been left out for brevity:
+
 - **Page:** [Component]
 - **Frame:** [Component], [Category], [Group], [Elements] or literally “Variants.” “Variants” is the default frame name when components aren’t created with the variants feature.
 - **Layer:** [Property=Value, Property=Value] as a variant or [Breakpoint/Item/Size/State] when manually organized.
-   - Optional breakpoints: XS, SM, MD, LG, XL, breakpoints can also use symbols to indicate range, such as ≥MD or ≤SM
-   - Optional sizes: XS, SM, MD, LG, XL, XXL
+  - Optional breakpoints: XS, SM, MD, LG, XL, breakpoints can also use symbols to indicate range, such as ≥MD or ≤SM
+  - Optional sizes: XS, SM, MD, LG, XL, XXL
 
 When creating a component as a variant, only a single instance of that component will be listed in the asset library. After adding the component to your design you’ll have the ability to choose the variant needed based on available properties (see [examples](#examples) below).
 
@@ -143,7 +144,7 @@ Objects within a component will [use constraints][figma-docs-constraints] when t
 
 ### Using Auto Layout
 
-Components with [Auto Layout][figma-docs-auto-layout] dynamically resize based on the content within. This works well for components that need to maintain padding and spacing. A button is a good candidate for auto layout, because it can resize horizontally based on label length, and whether or not icons are included. Complex responsive-like components, like a modal, can be created with auto layout. 
+Components with [Auto Layout][figma-docs-auto-layout] dynamically resize based on the content within. This works well for components that need to maintain padding and spacing. A button is a good candidate for auto layout, because it can resize horizontally based on label length, and whether or not icons are included. Complex responsive-like components, like a modal, can be created with auto layout.
 
 ## Adding descriptions, notes, and annotations
 
@@ -179,6 +180,19 @@ Figma library updates are published by a [Figma maintainer][figma-maintainers], 
 - Before closing the Pajamas UI Kit file, changes should be published so other designers are aware of what’s been changed, and by whom. It is possible to only publish selected changes.
 - Use dashes to list changes (no formatting options for the publish message field).
 
+## Changelog
+
+Changes to the Pajamas UI Kit files are documented in the [file history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) and we're currently leveraging this as the changelog.
+
+Figma will automatically update the history with:
+
+- Autosaved versions
+- Merged branches
+- Created branches
+- Branch updates from main
+
+It's also possible to manually [add a new version](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Create_a_new_version) that includes a title and description. This can be done to intentionally create a version to track specific changes to a component or styles.
+
 ## Sharing or linking to changes
 
 Because components can be in multiple frames on a page, it’s best to link to the entire page when referencing as a design spec in the [Pajamas documentation][pajamas]. Otherwise, you can link directly to the specific frame in issues, merge requests, and other places where a specific portion of the design is referenced.
@@ -196,8 +210,6 @@ Not all updates will be desireable or immediately needed however, and some may e
 ## Plugins
 
 We don’t use plugins for critical actions or capabilities, to avoid making any part of the design process reliant on plugin updates or functionality. Rather, we believe that each user should determine which plugins to use for their own workflow.
-
-That being said, we have put together [a table of plugins][sketch-figma-plugins] we have used in Sketch, along with options in Figma.
 
 ## Code of conduct
 
@@ -230,18 +242,14 @@ This Code of Conduct is adapted from the [Contributor Covenant](http://contribut
 version 1.1.0, available at [http://contributor-covenant.org/version/1/1/0/](http://contributor-covenant.org/version/1/1/0/).
 
 [component-template]: https://www.figma.com/file/OmvFfWkqEsdGhXAND133ou/Component-template?node-id=0%3A1
-[contributing]: /CONTRIBUTING.md
 [figma-article-layout-grid]: https://www.figma.com/blog/everything-you-need-to-know-about-layout-grids-in-figma/
 [figma-docs-auto-layout]: https://help.figma.com/article/453-auto-layout
 [figma-docs-constraints]: https://help.figma.com/article/54-constraints
 [figma-docs-drafts]: https://help.figma.com/hc/en-us/articles/360041543473#drafts
-[figma-pilot-epic]: https://gitlab.com/groups/gitlab-org/-/epics/2334
 [handbook-transparency]: https://about.gitlab.com/handbook/values/#transparency
 [gitlab-issue-tracker]: https://gitlab.com/gitlab-org/gitlab/issues
 [new-issue]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new
 [pajamas]: https://design.gitlab.com/
-[sketch-docs]: /doc/sketch-ui-kit.md
-[sketch-figma-plugins]: https://gitlab.com/groups/gitlab-org/-/epics/2334#evaluate-sketchfigma-plugin-libraries
 [figma-maintainers]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com_maintainers_Figma
 [ui-kit-figma]: https://www.figma.com/community/file/781156790581391771
 [figma-branch]: https://www.figma.com/best-practices/branching-in-figma/
