@@ -98,11 +98,13 @@ Once the Reviewer or Maintainer has approved your update, consider the following
 
 1. [ ] Review and approve assignee’s changes.
    questions can be addressed with comments in Figma. Comment in this issue when the content is less specific to the design or requires greater visibility.
+1. [ ] Consider adding a new version to the file's [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) to indicate the state prior to merging the changes. The name of the version and description of the changes are saved in the file history and provide a meaningful reference point.
 1. [ ] Merge the branch or add the changes or additions to the
    target file.
      1. [ ] Ensure that all styles and components now belong to the target file.
      1. [ ] For changes to the **Component Library** file, view the components in the Assets panel to ensure they align with our [asset library structure guidelines][structure].
 1. [ ] When applicable, [publish][publishing] any library changes along with a clear commit message.
+1. [ ] If the file's version history isn't clear, [name the latest version](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Name_an_existing_version) and update the details so it's clear what change had been made.
 
 </details>
 
