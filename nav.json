@@ -453,6 +453,10 @@
             "path": "feature-management"
           },
           {
+            "title": "Loading",
+            "path": "loading"
+          },
+          {
             "title": "Onboarding",
             "path": "onboarding"
           },
