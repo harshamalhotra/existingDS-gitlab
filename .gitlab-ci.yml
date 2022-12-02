@@ -150,8 +150,29 @@ danger-review:
     - danger --fail-on-errors=true
 
 build:
+  needs: []
   tags:
     - gitlab-org-docker
+
+review:
+  needs: [build]
+
+dast_environment_deploy:
+  needs: [build]
+
+dast:
+  needs:
+    - job: review
+      optional: true
+    - job: dast_environment_deploy
+      optional: true
+
+browser_performance:
+  needs:
+    - job: review
+      optional: true
+    - job: production
+      optional: true
 
 code_quality:
   tags:
