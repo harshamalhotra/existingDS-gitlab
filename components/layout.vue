@@ -36,7 +36,7 @@ export default {
           Open Web IDE
         </edit-this-page-link>
         <span class="footer-link-divider"></span>
-        <nuxt-link to="/get-started/contribute">Please contribute</nuxt-link>
+        <nuxt-link to="/get-started/contributing">Please contribute</nuxt-link>
         <span class="footer-link-divider"></span>
         <a href="https://about.gitlab.com/privacy/">Privacy policy</a>
         <span class="footer-link-divider"></span>

@@ -15,8 +15,8 @@ export default {
     <h2>Contribute to Pajamas components</h2>
     <p>
       Use an
-      <nuxt-link to="/get-started/contribute#contribute-an-issue">issue</nuxt-link> or
-      <nuxt-link to="/get-started/contribute#contribute-a-merge-request">merge request</nuxt-link>
+      <nuxt-link to="/get-started/contributing#contribute-an-issue">issue</nuxt-link> or
+      <nuxt-link to="/get-started/contributing#contribute-a-merge-request">merge request</nuxt-link>
       to collaborate on the <strong>{{ componentLabel }}</strong> component.
     </p>
 
@@ -42,6 +42,6 @@ export default {
       </li>
     </ul>
 
-    <nuxt-link to="/get-started/contribute">Learn more about contributing to Pajamas</nuxt-link>
+    <nuxt-link to="/get-started/contributing">Learn more about contributing to Pajamas</nuxt-link>
   </div>
 </template>

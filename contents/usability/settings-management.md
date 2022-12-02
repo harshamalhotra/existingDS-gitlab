@@ -73,7 +73,7 @@ Consider making configuration options more discoverable to users by linking to s
 
 ## Layout
 
-- Setting form elements use the [form layout sizes](/components/form#layout).
+- Setting form elements use the [form layout sizes](/patterns/forms#layout).
 - When scrolling, the headings of each section remain sticky to provide context of the section form.
 
 ### Two column
