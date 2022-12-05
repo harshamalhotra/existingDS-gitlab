@@ -1,3 +1,19 @@
+# [2.143.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.142.0...v2.143.0) (2022-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v51 ([d2b788b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d2b788b51350c5db0cc3d967ebdd038041b76d57))
+* Adjust a few links links ([75848da](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/75848daa6047a5dcb93e19776f6a204915f71bbd))
+* **deps:** update dependency @gitlab/ui to v50 ([998d4ed](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/998d4ed8c104a85f09e883e7674d38ddfc6806b0))
+
+
+### Features
+
+* **Feature Management:** Add visibility guidance ([66718af](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/66718af35b4edc9a1caaa974add15e0cb4c35fc4))
+* **LoadMore:** Add component guidelines ([04b335f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/04b335f497c94c1e2f16d7b2f42b11929cff6b29))
+* **UIKitContribution:** Add changelog notes ([d7e5485](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d7e548589a808f33874be440a546c34c302ee76e))
+
 # [2.142.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.141.0...v2.142.0) (2022-11-28)
 
 
