@@ -1,5 +1,5 @@
 <!--
-Thanks for your interest in contributing to Pajamas! Learn more about contributing in https://design.gitlab.com/get-started/contribute
+Thanks for your interest in contributing to Pajamas! Learn more about contributing in https://design.gitlab.com/get-started/contributing
 
 This merge request template is for any kind of updates to the documentation available in the Pajamas website (https://design.gitlab.com), such as component guidelines or object pages.
 

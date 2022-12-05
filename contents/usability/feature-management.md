@@ -1,7 +1,7 @@
 ---
 name: Feature management
 related:
-  - form
+  - /patterns/forms
 ---
 
 ## Configuration
