@@ -19,8 +19,7 @@ The component lifecycle has the following stages (identified by labels):
 Stages may happen in tandem and in different orders, depending on how mature the component currently
 is. For example:
 
-- If the component is already in GitLab and widely used, the **build** stage would involve
- migrating styles from GitLab to gitlab-ui. The **define** and **design** stages may occur at the same time, or even sometimes after.
+- If the component is already in GitLab and widely used, the **build** stage would involve migrating styles from GitLab to gitlab-ui. The **define** and **design** stages may occur at the same time, or even sometimes after.
 - If a component is brand new, the **define** and **design** stages may need some revisions as the
   **build** stage progresses.
 - If a component is built in GitLab UI and included in Pajamas, it may be partially
