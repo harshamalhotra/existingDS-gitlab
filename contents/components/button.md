@@ -128,7 +128,6 @@ States change visually and/or programmatically depending on user interaction or 
 
 - Only use icons from [GitLab's SVG library](http://gitlab-org.gitlab.io/gitlab-svgs/).
 - Icons use the default size (16×16px).
-- An icon can be used in place of text. In these cases, use a [tooltip](/components/tooltip) to provide context, unless the action may be universally understood, like a closing action using the [close icon](/product-foundations/iconography/icons?q=%7Eclose).
 
 #### Badges
 
@@ -231,9 +230,15 @@ A dropdown button triggers an option menu.
 - **Text and icon dropdowns**: A dropdown button uses the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
 - **Split dropdown**: A dropdown button is split when additional related actions are available. The left half displays the default action and the additional related actions are contained within the attached dropdown on the right half. The options available in the dropdown perform the action on click.
 
+### Icon-only buttons
+
+- An icon can be used in place of text.
+- Use a [tooltip](/components/tooltip) to provide context, unless the action may be universally understood, like a closing action using the [close icon](/product-foundations/iconography/icons?q=%7Eclose).
+- An icon-only button shouldn't be used to toggle between two states. If the icon and action of the button change after clicking it, it can be difficult to determine if the icon represents the current or future state. For example, a button that uses the [eye](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~eye) icon and changes to [eye-slash](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~eye-slash) when clicked doesn't make it clear on its own whether or not it represents that an object _is_ confidential or _will be_ as a result of clicking. Use a [toggle](/components/toggle) or [checkbox](/components/checkbox) with a label to more clearly indicate alternating states. Note that this scenario is different than an icon-only button with a [selected state](#states), as there the icon doesn't change.
+
 ### Ellipsis
 
-Ellipsis buttons allow for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
+An ellipsis button is a specific kind of icon-only button that allows for expanding content inline. It can be used when content is hidden for the purpose of not overloading the user or because of initial space constraints.
 
 ### Group
 
