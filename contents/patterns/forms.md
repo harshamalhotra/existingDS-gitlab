@@ -117,10 +117,9 @@ Validation is shown inline and may happen in real-time or on form submission. Re
 
 A validation message should always be visible and not placed in a tooltip. The message is placed directly below the input and above any help text.
 
-There are three types of validation messages:
+There are two types of validation messages:
 
   - **Error**: Indicates content that can’t be submitted, or was invalid and in need of correction.
-  - **Warning**: Indicates content that may be formatted incorrectly or does not match the expected content.
   - **Success**: Indicates content that is valid. In most cases a success message isn't shown.
 
 #### Text limits
@@ -130,11 +129,9 @@ Text limits are indicated through a character counter. A user may keep typing wh
 There are two kinds of character counters:
 
 - **Limited length**: Indicates the total number of characters allowed. When a limit is in place, the counter should be visible by default, and include a scrim (gradient overlay) to prevent collisions with characters in the input. As a user types, the counter shows how many characters remain before reaching the limit.
-  - When the number of characters is 30 from the limit, the counter color changes to the `warning` style. It remains styled this way even when the counter reaches 0.
   - When the number of characters crosses the limit, the counter color changes to `danger`, and its font weight to bold. The counter then displays the number of characters over the limit (for example **-23**) with a `$red-200` background color.
   - Hovering over the counter reveals a tooltip that says, “Characters left”. Once over the limit, the text changes to, “Characters over limit”.
 - **Recommended length**: Indicates how close a user is to reaching (or surpassing) a recommended character length for the field. This type of counter is *not* present by default.
-  - When the number of characters is 30 away from the recommended length, the counter appears within the text area, below the characters, in a `secondary` style. It remains styled like this even when the counter reaches 0.
   - When the number of characters crosses the recommendation, the counter color changes to `info`. The count displays the number of characters over the limit (for example -23) with a `$blue-100` background color.
   - Hovering over the counter reveals a tooltip that says, “Recommended characters left”. Once over the recommended range, the text changes to, “Over recommended length”.
 
