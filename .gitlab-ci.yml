@@ -186,6 +186,10 @@ sast:
   tags:
     - gitlab-org-docker
 
+semgrep-sast:
+  variables:
+    SAST_EXPERIMENTAL_FEATURES: 'true'
+
 check_links:
   image: node:16
   stage: test
