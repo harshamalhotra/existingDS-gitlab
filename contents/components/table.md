@@ -100,14 +100,14 @@ related:
 - The sorting icon and functionality should not be visible on responsive tables.
 - To enable sorting for a particular table column, add `sortable` as a property in your `fields` data, like so:
 
-```
+```js
 fields: [
-    {
-      key: 'first_name',
-      label: 'First name',
-      sortable: true,
-    },
-    ...
+  {
+    key: 'first_name',
+    label: 'First name',
+    sortable: true,
+  },
+  ...
 ]
 ```
 
