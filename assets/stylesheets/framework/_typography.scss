@@ -38,6 +38,17 @@ code {
   word-break: keep-all;
 }
 
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+  background-color: $gray-10 !important;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+
+  code {
+    background-color: $gray-10 !important;
+  }
+}
+
 .label { @include type-scale(0, 4, 0, 0) }
 .f-display { @include type-scale(14, 12) }
 .f-small { @include type-scale(-1, 4, 0, 0) }

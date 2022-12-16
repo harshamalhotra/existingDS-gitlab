@@ -64,7 +64,7 @@ Overriding the `show` delay for a tooltip is strongly discouraged for the reason
 
 Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
 
-```
+```vue
 <gl-button 
   v-gl-tooltip.ds0
   ...
