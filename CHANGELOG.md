@@ -1,3 +1,19 @@
+# [2.144.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.143.1...v2.144.0) (2022-12-19)
+
+
+### Bug Fixes
+
+* Fix pre code block styles ([7081830](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7081830878b8bba6f7cff9f1b50f6d2a5d45c5c4))
+* **ComponentLifecycle:** Fix inadvertent return ([5d613e0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5d613e086f93fd4731f5438a47faccc46357b826))
+* **deps:** update dependency @gitlab/ui to v52 ([1b69472](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1b69472fbd12bc19068bf27964db8924245faef4))
+
+
+### Features
+
+* **Button:** Add note for icon indicating action ([fb584da](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fb584daca8040ed25c43086cdafa8cae20bc86f3))
+* **DestructiveActions:** Update severity guides for errors ([d493554](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d49355454ff642003e0c8d252865c87bee14124c))
+* **Forms:** Remove warning validation ([ac8ba02](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ac8ba025fd57aaa1a7bf41dac53dd96b8b61e540))
+
 ## [2.143.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.143.0...v2.143.1) (2022-12-12)
 
 
