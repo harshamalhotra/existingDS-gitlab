@@ -27,6 +27,9 @@ export default {
     },
   },
   computed: {
+    depthClass() {
+      return `sidebar__nav--depth-${this.depth}`;
+    },
     hasChildren() {
       return this.item.children?.length;
     },
@@ -61,7 +64,7 @@ export default {
 
 <template>
   <li v-if="depth === 0">
-    <div aria-hidden="true" class="gl-font-sm gl-font-weight-bold gl-px-3 gl-py-2">
+    <div aria-hidden="true" class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2">
       {{ item.title }}
     </div>
     <ul :aria-label="item.title">
@@ -81,14 +84,14 @@ export default {
       :class="{ 'sidebar__nav-toggle--expanded': isExpanded }"
       :aria-expanded="isExpanded"
       :aria-controls="itemId"
-      @click.prevent="navTree.toggleNode(item)"
+      @click.prevent="item.toggle()"
     >
       <span class="sidebar__nav-toggle-inner">
         <span>{{ item.title }}</span>
         <svg-icon icon="chevron-down" />
       </span>
     </button>
-    <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" class="gl-ml-4!">
+    <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" :class="depthClass">
       <menu-item
         v-for="child in item.children"
         :key="child.id"

@@ -58,12 +58,12 @@
   }
 }
 
-.sidebar__nav-toggle,
-.sidebar__nav-anchor {
+.sidebar__nav-anchor,
+.sidebar__nav-toggle {
   border-radius: $border-radius;
   color: $gray-900;
   display: block;
-  padding: $gl-spacing-3;
+  padding: $gl-spacing-3 $gl-spacing-3 $gl-spacing-3 $gl-spacing-4;
 
   &:hover,
   &:focus {
@@ -75,8 +75,22 @@
   }
 }
 
-.sidebar__nav-toggle,
-.sidebar__nav-option {
+.sidebar__nav--depth-1 {
+  .sidebar__nav-anchor,
+  .sidebar__nav-toggle {
+    padding-left: $gl-spacing-6;
+  }
+}
+
+.sidebar__nav--depth-2 {
+  .sidebar__nav-anchor,
+  .sidebar__nav-toggle {
+    padding-left: $gl-spacing-6 + $gl-spacing-5;
+  }
+}
+
+.sidebar__nav-option,
+.sidebar__nav-toggle {
   margin-bottom: 1px !important;
 }
 
@@ -111,20 +125,13 @@
 }
 
 .sidebar__nav-toggle--expanded {
-  color: $white;
-  background-color: $gray-800;
+  background-color: $gray-10;
+  position: sticky;
+  top: -$gl-spacing-3;
+  z-index: $z-sidebar;
 
   svg {
     transform: rotate(180deg);
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $gray-700;
-  }
-
-  &:active {
-    background-color: $gray-900;
   }
 }
 
@@ -137,6 +144,19 @@
   }
 
   &.nuxt-link-active {
+    position: relative;
     background-color: $gray-50;
+
+    &::before {
+      content: '';
+      background-color: $purple-500;
+      border-radius: $border-radius;
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      bottom: 3px;
+      width: 3px;
+    }
   }
 }

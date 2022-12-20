@@ -16,7 +16,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
     <li>
       <div
         aria-hidden="true"
-        class="gl-font-sm gl-font-weight-bold gl-px-3 gl-py-2"
+        class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2"
       >
         
     Top-level item 1
@@ -60,7 +60,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
            
           <ul
             aria-label="Second-level item 2"
-            class="gl-ml-4!"
+            class="sidebar__nav--depth-1"
             id="item-second2"
             style="display: none;"
           >
@@ -95,7 +95,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
     <li>
       <div
         aria-hidden="true"
-        class="gl-font-sm gl-font-weight-bold gl-px-3 gl-py-2"
+        class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2"
       >
         
     Top-level item 2
@@ -127,7 +127,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
            
           <ul
             aria-label="Second-level item without path"
-            class="gl-ml-4!"
+            class="sidebar__nav--depth-1"
             id="item-undefined"
             style="display: none;"
           >

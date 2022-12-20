@@ -44,38 +44,7 @@ export class NavTree {
     if (!activeNode) {
       return;
     }
-    this.activateNode(activeNode);
-  }
-
-  /**
-   * Toggles a node's state.
-   *
-   * @param {Node} node
-   */
-  toggleNode(node) {
-    if (!node.isActive) {
-      return this.activateNode(node);
-    }
-    return node.deactivate();
-  }
-
-  /**
-   * Activates a node.
-   * This starts by deactivating all nodes so that only one branch can be expanded at a time. The
-   * given node and all of its parents are then activated.
-   *
-   * @param {Node} node
-   */
-  activateNode(node) {
-    this.deactivateAllNodes();
-    node.activate();
-  }
-
-  /**
-   * Deactives all nodes.
-   */
-  deactivateAllNodes() {
-    this.nodes.filter(({ isActive }) => isActive).forEach((node) => node.deactivate());
+    activeNode.activate();
   }
 
   /**

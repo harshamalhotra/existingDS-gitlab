@@ -14,6 +14,16 @@ export class Node {
   }
 
   /**
+   * Toggles the node's state
+   */
+  toggle() {
+    if (!this.isActive) {
+      return this.activate();
+    }
+    return this.deactivate();
+  }
+
+  /**
    * Activates the node and its parent.
    */
   activate() {
