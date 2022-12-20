@@ -50,7 +50,7 @@ export default {
         </template>
       </client-only>
     </div>
-    <div class="gl-flex-grow-1 gl-overflow-auto gl-p-3">
+    <div class="gl-flex-grow-1 gl-overflow-auto gl-py-3 gl-px-2">
       <nav class="sidebar__nav" aria-labelledby="nav-heading">
         <h2 id="nav-heading" class="gl-sr-only">Main navigation</h2>
         <ul>

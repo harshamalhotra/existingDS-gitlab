@@ -1,11 +1,30 @@
 .logo {
-  align-items: center;
   border-radius: $border-radius;
   color: currentColor;
   display: flex;
-  font-weight: $font-weight--bold;
-  gap: $gl-spacing-2;
+  gap: $gl-spacing-3;
   padding: $gl-spacing-3;
+
+  strong {
+    font-size: 20px;
+    font-weight: $font-weight--bold;
+    line-height: 24px;
+
+    @include media-sm-up {
+      font-size: 22px;
+    }
+  }
+
+  small {
+    color: $gray-500;
+    display: none;
+    font-size: 12px;
+    margin-top: $gl-spacing-2;
+
+    @include media-sm-up {
+      display: block;
+    }
+  }
 
   &:hover,
   &:focus {

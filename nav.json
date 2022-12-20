@@ -494,11 +494,11 @@
             "title": "GitLab VPAT®",
             "items": [
               {
-                "title": "GitLab Accessibility Conformance Report Revised Section 508 Edition",
+                "title": "Section 508 Edition",
                 "path": "508"
               },
               {
-                "title": "GitLab Accessibility Conformance Report WCAG Edition",
+                "title": "WCAG Edition",
                 "path": "wcag"
               }
             ]
