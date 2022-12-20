@@ -2,8 +2,6 @@
 name: Photography
 ---
 
-## Overview
-
 [Photography](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing) is how we frame DevOps in the real world. It is a useful tool for brand storytelling that allows users to see our product in action. It is important to keep visual consistency among all images, whether selecting stock photography or curating photos in-house. Images should be crisp with true-to-life colors and a natural editing style. When featuring subjects, include people from diverse backgrounds, ages, body types, races, and genders.
 
 ## Customer and contributor portraits

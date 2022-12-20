@@ -41,6 +41,10 @@
             "path": "marketing-illustrations"
           },
           {
+            "title": "Motion",
+            "path": "motion"
+          },
+          {  
             "title": "Photography",
             "path": "photography"
           }
