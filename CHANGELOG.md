@@ -1,3 +1,15 @@
+# [2.145.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.144.0...v2.145.0) (2022-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([ad8a5e9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ad8a5e985f1b0a3927d5687c440cc79ca50433f7))
+
+
+### Features
+
+* **Brand:** New motion guidelines + content edits ([5d44804](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5d448045e19b1911e1065ee4acc4e40f7bec4d73))
+
 # [2.144.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.143.1...v2.144.0) (2022-12-19)
 
 
