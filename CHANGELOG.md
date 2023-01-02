@@ -1,3 +1,12 @@
+## [2.145.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.145.0...v2.145.1) (2023-01-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v52.7.1 ([ccdc9e8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ccdc9e8dddce53e4aafdd759e0d46255bbeae9b3))
+* **deps:** update dependency @gitlab/ui to v52.7.2 ([672da4f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/672da4f6386105839f6c971bea89143ad2fca0de))
+* **deps:** update dependency @nuxtjs/sentry to v7 ([45aec34](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/45aec3459b24406a9159a1d8828b5fd884dbfdbc))
+
 # [2.145.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.144.0...v2.145.0) (2022-12-26)
 
 
