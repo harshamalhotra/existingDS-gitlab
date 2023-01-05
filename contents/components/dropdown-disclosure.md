@@ -2,9 +2,7 @@
 name: Disclosure
 description: A disclosure widget includes a button that opens a panel of links or actions.
 related:
-  - dropdown-listbox
   - dropdown-combobox
-  - dropdown-menu
   - button
   - accordion
 ---
@@ -17,10 +15,18 @@ related:
 
 ## Structure
 
-<todo>Add structure visual and element list.</todo>
+<figure class="figure" role="figure" aria-label="Disclosure widget structure">
+  <img class="figure-img" src="/img/dropdown-disclosure-structure.svg" alt="Numbered diagram of a disclosure widget structure" role="img" />
+</figure>
+
+1. **Button**: Triggers the panel to open or close.
+1. **Panel**: Wraps the content.
+1. **Action**: Button or link styled as an option.
+1. **Scrim**: Gradient overlay when items overflow the panel.
+1. **Header** (optional): Provides more context for the actions.
+1. **Custom content** (optional): Custom content included in a slot.
 
 ## Guidelines
-
 
 ### When to use
 
@@ -29,8 +35,7 @@ related:
 
 ### When not to use
 
-- If the options within the panel are selectable, refer to the [listbox](/components/dropdown-listbox) component.
-- If the options within the panel _only_ perform app-like JavaScript actions, consider using a [menu](/components/dropdown-menu) instead.
+- If the options within the panel are selectable instead of directly performing an action, refer to the [combobox](/components/dropdown-combobox) component.
 - If a user is selecting a single text option from a group of options within a [form](/patterns/forms), consider using a [select](/components/select), [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
 - If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
 
@@ -44,8 +49,9 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 
 ### Behavior
 
-- By default, the dropdown panel opens below and is aligned to the left of the trigger button. However, when there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the trigger.
-- If the content within the dropdown panel exceeds the maximum height then a scrim (gradient overlay) appears at the bottom of the panel as an overflow affordance. When a user has scrolled to the bottom of the overflowed content the scrim is removed.
+- By default, the panel opens below and is aligned to the left of the trigger button. However, when there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the trigger.
+- The "tip" of the panel points at the trigger and is center-aligned with it by default.
+- If the content within the panel exceeds the maximum height then a scrim (gradient overlay) appears at the bottom of the panel as an overflow affordance. When a user has scrolled to the bottom of the overflowed content the scrim is removed.
 - When a link is selected the user is taken to the destination.
 - When an action is selected that impacts the current view, the panel is closed and the action performed.
 - When an action option is selected that causes a page refresh or other change of context the panel returns to a closed state.
@@ -54,12 +60,11 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 
 ### Content
 
-- Link and button text should be concise and clearly indicate the link destination or action it performs.
+- Text should be concise and clearly indicate the link destination or action it performs.
 
 ### Accessibility
 
-- See the [WAI-ARIA Disclosure (Show/Hide) documentation](https://www.w3.org/TR/wai-aria-practices/#disclosure) for more details.
-- When options in a panel are filtered, a screen reader should announce how many options are now available via `aria-live`.
+- See the [WAI-ARIA Disclosure (Show/Hide) documentation](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/) for more details.
 
 ## Reference
 
