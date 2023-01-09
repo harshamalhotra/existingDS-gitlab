@@ -1,3 +1,15 @@
+# [2.146.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.145.1...v2.146.0) (2023-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/sentry to ^7.0.1 ([38efa52](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/38efa52b19926c93ddecc7c193664487dc1b0921))
+
+
+### Features
+
+* **Dropdown:** Update docs to align with use ([d08b507](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d08b507afff84328ad6d71e890e03dcc24959036))
+
 ## [2.145.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.145.0...v2.145.1) (2023-01-02)
 
 
