@@ -56,7 +56,7 @@ related:
   - If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push some or all of the content rather than covering it.
 - Only one drawer can be open on a page at a time.
 - A drawer should never take the user by surprise — let a user’s action open it.
-- A drawer can be closed with the close button or the <kbd>esc</kbd> key.
+- A drawer can be closed with the close button or the <kbd>Esc</kbd> key.
 - When content overflows the drawer height, it scrolls vertically under the header.
 - If the content within the drawer container exceeds the height, then a scrim (gradient overlay) appears at the bottom of the container as an overflow affordance. The scrim is removed when a user has scrolled to the end of the content.
 - The drawer maintains its behavior down to the smallest breakpoint, at which point it takes up the full viewport width.
@@ -85,4 +85,4 @@ related:
 
 - Drawer states (expanded/collapsed) should be announced by a screen reader.
 - The focus should move to the drawer once opened. An intentional keyboard trap keeps tab order (looped) within the drawer until it is closed. This is so a user cannot focus on anything outside or under the drawer.
-- The <kbd>esc</kbd> key should close the drawer along with activating the close icon button.
+- The <kbd>Esc</kbd> key should close the drawer along with activating the close icon button.

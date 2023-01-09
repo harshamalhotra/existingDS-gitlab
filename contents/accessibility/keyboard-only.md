@@ -17,8 +17,8 @@ Using a keyboard is a fundamental aspect of accessibility. In fact, many other t
 
 ## Keyboarding basics
 
-- Use the `Tab` key to navigate in a linear direction through focusable elements like links, form controls, and buttons.
-- The `Enter` key (and sometimes `Spacebar`) selects an element.
+- Use the <kbd>Tab</kbd> key to navigate in a linear direction through focusable elements like links, form controls, and buttons.
+- The <kbd>Enter</kbd> key (and sometimes <kbd>Space</kbd>) selects an element.
 - Arrow keys are used to move within certain elements, element groups, and widgets. For example, within form `select` elements, radio button groups, and a set of tabs.
 - For a more comprehensive list of actions, review this table of [common keyboard interactions](https://webaim.org/techniques/keyboard/#testing).
 
@@ -59,12 +59,12 @@ Some HTML elements, like form elements and buttons, receive focus by default bec
 - Focus order follows the DOM order and reading order.
 - When a navigational menu is in an expanded state that reveals more links, the focus should move through those links before moving on.
 - For widgets such as assignee dropdowns:
-  - Its popup element appears either on focus, or when pressing `Enter`, `Space`, or `Down Arrow`.
+  - Its popup element appears either on focus, or when pressing <kbd>Enter</kbd>, <kbd>Space</kbd>, or <kbd>↓</kbd>.
   - The arrow keys move focus within the widget.
-  - `Enter` accepts the selected value and optionally closes the popup. Focus remains on the widget.
-  - `Esc` closes the popup and focus remains on the widget.
-  - `Tab` leaves the widget and focus moves to the next interactive element or widget.
-    `Tab` should not move focus within a widget since widgets are treated as a single interactive element.
+  - <kbd>Enter</kbd> accepts the selected value and optionally closes the popup. Focus remains on the widget.
+  - <kbd>Esc</kbd> closes the popup and focus remains on the widget.
+  - <kbd>Tab</kbd> leaves the widget and focus moves to the next interactive element or widget.
+    <kbd>Tab</kbd> should not move focus within a widget since widgets are treated as a single interactive element.
 - The focus order of a page should complete a loop and return back to the browser’s address bar.
 
 ### Identifying problems
@@ -115,7 +115,7 @@ A keyboard trap keeps the focus order looping within a section. A modal, for exa
 
 ### Expected behavior
 
-- After encountering a keyboard trap a user should be able to “untrap” the focus with the `Esc` key, a close button, or other action that navigates the user away from the current experience.
+- After encountering a keyboard trap a user should be able to “untrap” the focus with the <kbd>Esc</kbd> key, a close button, or other action that navigates the user away from the current experience.
 - When the user exits the keyboard trap (without page reload or navigating away) the focus should return to the previously focused element, usually the one that triggered the keyboard trap in the first place.
 
 ### Identifying problems
