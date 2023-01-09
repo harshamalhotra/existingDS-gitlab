@@ -55,7 +55,7 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 - When a link is selected the user is taken to the destination.
 - When an action is selected that impacts the current view, the panel is closed and the action performed.
 - When an action option is selected that causes a page refresh or other change of context the panel returns to a closed state.
-- All panels can be closed by clicking outside of them, using the <kbd>esc</kbd> key, or by focus moving to an element outside of the component.
+- All panels can be closed by clicking outside of them, using the <kbd>Esc</kbd> key, or by focus moving to an element outside of the component.
 - A limited amount of options that don't scroll can be fixed at the bottom of a dropdown panel.
 
 ### Content
