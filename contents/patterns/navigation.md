@@ -7,7 +7,7 @@ This page describes the navigation guidelines that apply to the GitLab user inte
 For help with other aspects of GitLab's navigation, refer to the following resources:
 
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
-- [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research-training/evaluating-navigation/).
+- [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
 - [How to use navigational elements for feature discovery](https://about.gitlab.com/handbook/product/product-principles/#navigation).
 
 ## Top bar
