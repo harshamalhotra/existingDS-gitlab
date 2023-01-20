@@ -4,7 +4,6 @@ description: Sorting allows users to quickly re-organize similar content on a lo
 stories:
   - base-sorting--default
 related:
-  - dropdown-listbox
   - dropdown-disclosure
   - dropdown-combobox
   - dropdown-menu
@@ -31,17 +30,17 @@ related:
 
 ### When not to use
 
-- When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See listbox guidelines](/components/dropdown-listbox).
+- When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See combobox guidelines](/components/dropdown-combobox).
 - If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
 
-### Appearance 
+### Appearance
 
 - The sorting component is comprised of two parts: a dropdown, and a sort direction icon button.
 
 ### Behavior
 
-- The dropdown allows users to choose their sorting criteria, whether it be by label, date, or popularity. 
-- As soon as an item in the dropdown is selected, the list content re-sorts automatically. 
+- The dropdown allows users to choose their sorting criteria, whether it be by label, date, or popularity.
+- As soon as an item in the dropdown is selected, the list content re-sorts automatically.
 - The sort dropdown allows for sorting by a single selected item.
 - The sort direction icon button allows users to change the direction of the sort, from ascending to descending or vice-versa.
 - The default sort order on a list is determined by the designer on a page-by-page basis.

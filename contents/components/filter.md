@@ -6,7 +6,6 @@ stories:
 related:
   - token
   - search
-  - dropdown-listbox
   - dropdown-disclosure
   - dropdown-combobox
   - dropdown-menu

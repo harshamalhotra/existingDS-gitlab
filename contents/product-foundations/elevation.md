@@ -48,7 +48,6 @@ Surfaces that need boundary definition and appear on hover. For example, [popove
 * [Date picker](/components/date-picker)
 * Dropdown
     * [Disclosure](/components/dropdown-disclosure)
-    * [Listbox](/components/dropdown-listbox)
     * [Combobox](/components/dropdown-combobox)
     * [Menu](/components/dropdown-menu)
 * *Nagivation: Flyout Menus*
@@ -73,7 +72,7 @@ Surfaces that need boundary definition and appear on hover. For example, [popove
 
 #### Definition
 
-Large surfaces that present additional context to the user. 
+Large surfaces that present additional context to the user.
 
 #### Components
 
@@ -105,7 +104,7 @@ Layers that need to appear above a layer with an existing elevation should follo
 
 Layers that can be moved or dragged by the user use the large shadow to create a greater sense of depth in the UI and define the element from other elements that may have an existing elevation.
 
-### Use case 
+### Use case
 
 <figure class="figure" role="figure" aria-label="Interactive layers example with elevation">
   <img class="figure-img gl-mb-5" src="/img/layers/layers-interactive.png" alt="Interactive layers example with elevation" role="img" />

@@ -7,11 +7,10 @@ stories:
 related:
   - button
   - checkbox
-  - dropdown-listbox
   - dropdown-disclosure
   - dropdown-menu
   - radio-button
-  - select 
+  - select
   - toggle
   - tabs
 ---
@@ -41,7 +40,7 @@ related:
 #### Buttons (Options)
 
 - Each button must be equal in width and prominence.
-- Button labels should ideally be only one word. 
+- Button labels should ideally be only one word.
 
 #### Labels
 
