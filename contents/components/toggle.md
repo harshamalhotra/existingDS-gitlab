@@ -27,7 +27,7 @@ related:
 
 1. **Label**: Describes the control when the toggle is on.
 1. **Description**: (optional) Provides more context for the label.
-1. **Switch**: Visual indication of whether the toggle is on or off. 
+1. **Switch**: Visual indication of whether the toggle is on or off.
 1. **Body**: Containing body for the switch to move on and off.
 1. **Help text**: Clarifies the outcome of changing the toggle state.
 
@@ -36,7 +36,7 @@ related:
 ### When to use
 
 - There's a binary choice for enabling a setting ([ux-research#1215](https://gitlab.com/gitlab-org/ux-research/-/issues/1215#note_492752885)). For examples, choices that follow a boolean relationship like on/off, true/false, enable/disable, or activate/deactivate.
-- The item being toggled has a default state. For example, notifications default to off for a merge request you haven't participated in. 
+- The item being toggled has a default state. For example, notifications default to off for a merge request you haven't participated in.
 - The result of changing the toggle state is immediately effective and there's **no need** for an additional action to apply or save a change.
 
 ### When not to use
@@ -47,7 +47,7 @@ related:
 - There are more than two choices.
 - If multiple items can be selected, including nested items, and the result of the selection has to be saved or submitted, consider using a [checkbox](/components/checkbox) instead.
 - If only one item can be selected and the result of the selection has to be saved or submitted, consider using a [radio button](/components/radio-button) instead.
-- If making a selection from a list of items, consider using a [listbox](/components/dropdown-listbox) instead.
+- If making a selection from a list of items, consider using a [combobox](/components/dropdown-combobox) instead.
 - If changing a content view or preference in the context of that content, consider using a [segmented control](/components/segmented-control) instead.
 
 ### Appearance
