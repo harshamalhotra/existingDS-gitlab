@@ -1,3 +1,18 @@
+# [2.147.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.146.1...v2.147.0) (2023-01-23)
+
+
+### Bug Fixes
+
+* Clarify selection in decision tree ([ccde999](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ccde999014fd86d11c4bb90135f296748f95d560))
+* **deps:** update .tool-versions node to 16.15.0 ([5d5744f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5d5744ff02929298b5728f2db87f6ba3407b43ab))
+* **deps:** update gitlab ui/svg ([72370ee](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/72370ee8bbeed74f18a53471db5855ebe71083cb))
+
+
+### Features
+
+* **combobox:** Fix broken links to listbox ([a656625](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a65662538e3b96728e451fd870de3d10377638d0))
+* **DateTime:** update with the API information ([dd841ba](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dd841baa202b024d89c46c0c1ab7e737df9b91e0))
+
 ## [2.146.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.146.0...v2.146.1) (2023-01-16)
 
 
