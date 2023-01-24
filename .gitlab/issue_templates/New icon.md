@@ -69,7 +69,7 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app and test that it matches your expectations.
 1. [ ] Assign the MR to be reviewed and merged by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
 1. [ ] Add a read only (FYI) agenda item to the next [UX weekly
-       call](https://docs.google.com/document/d/1fSRyTboySDpWPrQiiFIcIOhg09-9G54haIippIVtcCY)
+       call](https://docs.google.com/document/d/1Y_t6Oq4vqwA2eHPaXx0H6HkZiZ4um_lWHsqJIDstnEE)
        to inform everyone of the new icon, linking to this issue.
 
 If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/README.md) have been followed.
