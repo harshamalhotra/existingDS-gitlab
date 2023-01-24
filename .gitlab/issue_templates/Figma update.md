@@ -36,7 +36,7 @@ Make sure the following are completed before closing the issue:
    to the shared Figma project:
      1. For Component library changes, move your file to the [**Component archive**][component-archive] project.
      1. For all other changes, move your file to the [**Misc archive**][misc-archive] project.
-     1. If you’re a community contributor, please consider [transferring ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
+     1. If you’re a community contributor, please consider [transferring ownership of your draft file](https://help.figma.com/hc/en-us/articles/360038512093) to the maintainer so they can move it to our archive, along with its version history and comments.
 </details>
 
 <details><summary>Prior to review:</summary>
@@ -50,8 +50,6 @@ The purpose of these tasks is to ensure consistency with the rest of the compone
 1. [ ] **Variants**: Remove the default dashed purple stroke, border radius, and padding from all variants.
 1. [ ] **Variants**: Reorder variants in properties panel to match visual order. In the case of Auto Layout, Figma will determine layer order.
 1. [ ] **Comments**: Make sure all comments and discussion are resolved.
-
-If any of these tasks are unclear, see the [Table component](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=47785%3A58915) for reference. 
 
 </details>
 
@@ -110,7 +108,7 @@ Once the Reviewer or Maintainer has approved your update, consider the following
 
 [annotation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#adding-descriptions-notes-and-annotations
 [building]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#building-components
-[foundations-team]: https://about.gitlab.com/company/team/?department=ecosystem-foundations-team
+[foundations-team]: https://about.gitlab.com/company/team/?department=manage-foundations-team
 [figma-maintainer]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
 [publishing]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#publishing-changes
 [structure]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md#structure
