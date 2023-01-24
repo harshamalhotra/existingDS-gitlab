@@ -292,6 +292,15 @@ Try to avoid potentially antiquated concepts, especially when something more mod
 | --- | --- |
 | <figure class="figure" role="figure" aria-label="Flat screen display"><img class="figure-img" src="/img/icons-concept-new.svg" alt="Flat screen display with play symbol" role="img" /><figcaption class="figure-caption">Flat screen display</figcaption></figure> | <figure class="figure" role="figure" aria-label="Old tube TV"><img class="figure-img" src="/img/icons-concept-old.svg" alt="Tube TV with antenna" role="img" /><figcaption class="figure-caption">Old tube TV</figcaption></figure> |
 
+### Naming
+
+Existing [GitLab SVGs icons](http://gitlab-org.gitlab.io/gitlab-svgs/) haven't historically followed a naming convention, so you may encounter different patterns until we're able to address them individually. Use the following guidelines for new icons:
+
+- When an icon represents a recognizable object, use the name of the object. For example, an icon of a pencil that represents editing is named 'pencil'.
+- When an icon represents an abstract metaphor or concept, choose a name that best represents the concept or use case. For example, an icon made of stacked shapes to represent an epic is named 'epic'.
+- The file name should be lowercase and use hyphens as a separator between terms. For example, 'cloud-gear'.
+- Icons in the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715) Figma file contain keywords and usage details in the component description (each icon is a component) to help unite naming with use and concepts. We hope to eventually have similar capabilities in the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) website. 
+
 ## Usage
 
 Icons are used to stress visual weight for elements with a high priority or to explain the universal knowledge in a simple way.
