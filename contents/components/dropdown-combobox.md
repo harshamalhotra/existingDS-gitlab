@@ -61,6 +61,11 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 - **Dropdown button**: A dropdown button has a [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
 - **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://gitlab-org.gitlab.io/gitlab-svgs/?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no visible text.
 
+### Size
+
+- **Trigger**: The [text input](/components/text-input) or [button](/components/button) width is determined by the properties available for each of those components.
+- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger and to keep panels consistent throughout the UI.
+
 ### Behavior
 
 - By default, the panel opens below and is aligned to the left of the text input or button. However, when there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the text input or button.

@@ -47,6 +47,11 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 - **Split dropdown button**: A split dropdown button is a special button group with two segments. The left text button is for the most common option and an attached dropdown button to the right opens a panel with additional options.
 - **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://gitlab-org.gitlab.io/gitlab-svgs/?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no text.
 
+### Size
+
+- **Trigger**: The [button](/components/button) width is determined by its available properties.
+- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger button and to keep panels consistent throughout the UI.
+
 ### Behavior
 
 - By default, the panel opens below and is aligned to the left of the trigger button. However, when there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the trigger.
