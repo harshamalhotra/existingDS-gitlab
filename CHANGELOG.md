@@ -1,3 +1,19 @@
+# [2.148.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.147.0...v2.148.0) (2023-01-30)
+
+
+### Bug Fixes
+
+* Update template links ([3ba92cf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3ba92cfc4a8b56a60fa65c11c92ac536ccf2a635))
+* **deps:** update gitlab ui/svg ([63c736a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/63c736a9dbb08f7679cf4afb2c8ff69be7dde961))
+
+
+### Features
+
+* **dropdown:** Update design spec to include min/max size ([d66c0ec](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d66c0ec34f5303d0c830f0259881c5fd1033b9cf))
+* **Icons:** Add naming considerations ([0ad4f3b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0ad4f3b94b9dac2edf84ac52bc75725f4049bcb9))
+* **Obfuscation:** add obfuscation guidelines ([bfe9a78](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bfe9a781ae04b8915acee470f01aee2c1def668a))
+* **Settings:** linking to detail page ([898ee84](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/898ee846946b3d8d94a36a24aa35426615f102ca))
+
 # [2.147.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.146.1...v2.147.0) (2023-01-23)
 
 
