@@ -25,6 +25,7 @@
 - [Changelog](#changelog)
 - [Sharing or linking to changes](#sharing-or-linking-to-changes)
 - [Updating the libraries locally](#updating-the-libraries-locally)
+- [Deprecation](#deprecation)
 - [Plugins](#plugins)
 - [Code of conduct](#code-of-conduct)
 
@@ -206,6 +207,24 @@ If you have any of the available libraries enabled in a file you’ll occasional
 Not all updates will be desireable or immediately needed however, and some may even introduce breaking changes. For that reason it’s recommended to review the published notes in the [#design-system](https://gitlab.slack.com/archives/CDNNDD1T3) Slack channel (internal). If you’re still uncomfortable with how your work might be impacted, first make a duplicate of your file and test the updates there.
 
 ![Library update message posted in Slack](images/slack-msg.png)
+
+## Deprecation
+
+When a component or style is deprecated it should remain available for at least one milestone before fully being removed from the UI kit. After that, it can be accessed through the file history and a read only (FYI) agenda item should be added to the next [UX weekly call](https://docs.google.com/document/d/1Y_t6Oq4vqwA2eHPaXx0H6HkZiZ4um_lWHsqJIDstnEE) to inform everyone of the deprecation and how to proceed.
+
+For a component:
+
+- Move it to the **DEPRECATED** section at the bottom of the page list.
+- Append '(⚠️ DEPRECATED)' to the page name.
+- When the component has been deprecated due to breaking changes in a newer version, link to the new version from the deprecated page.
+- Deprecated pages have a `$red-100` (`#FDD4CD`) background color and `$red-700` (`#AE1800`) for page headings and descriptions that aren't part of the component.
+- In the component configuration, add '⚠️ DEPRECATED' to the 'How to use this component' field, and add the link to the new component (if applicable) to the 'Link to documentation' field.
+
+For a style:
+
+- Move the style to the **⚠️ DEPRECATED** section at the bottom of the style list.
+- Maintain the style name and structure. For example, 'UI/Display/md' → '⚠️ DEPRECATED/UI/Display/md'.
+- In the style editor, add '⚠️ DEPRECATED' to the description field.
 
 ## Plugins
 
