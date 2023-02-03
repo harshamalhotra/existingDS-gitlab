@@ -69,6 +69,7 @@ related:
 #### Description
 
 - Optional: Provides more context for the label.
+- Only available using a vertical layout.
 
 #### Help text
 
