@@ -1,4 +1,7 @@
 /* eslint-disable import/no-commonjs */
+// Remove after update to webpack@5:
+// https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/347
+require('./build_scripts/patched_crypto');
 
 const baseDir = process.env.CI ? '/gitlab-svgs/' : '/';
 
