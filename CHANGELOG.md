@@ -1,3 +1,21 @@
+# [2.149.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.148.0...v2.149.0) (2023-02-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v53 ([940e23e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/940e23e78acff168d68d73be75accaf977ea0be5))
+* **deps:** update dependency @gitlab/ui to v54 ([7d119bd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7d119bd312fe29d86c61035283af55195ecd554a))
+* **deps:** update dependency @nuxtjs/sentry to ^7.0.3 ([9f4bf9b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9f4bf9bc77e7257ab54b04852e472a50b872b4ce))
+* **deps:** update dependency iframe-resizer to ^4.3.3 ([f8ea889](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f8ea88927d90770aeb39dadca31653bf4e8f84ee))
+* **deps:** update gitlab ui/svg ([274c991](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/274c99107450501a0b3751e1e82d8d9d5da98bfd))
+
+
+### Features
+
+* **Filtering:** Document filtering patterns ([3d79935](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3d7993579729dec74ae01ad30b248540271b593d))
+* **Toggle:** Specify when description text is used ([8a6a7d9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8a6a7d964e6393d6fe313d8ca0dedadcca4d3095))
+* **WorkItemObject:** add hierarchy guidelines ([b487ea7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b487ea7f322e77f992df6fde197d8bfa8fb84ed2))
+
 # [2.148.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.147.0...v2.148.0) (2023-01-30)
 
 
