@@ -6,25 +6,23 @@ related:
   - /product-foundations/color
 ---
 
-## Typeface
+## Typefaces
 
-GitLab utilizes a system font stack, which references the default system fonts used by any given OS. Using system fonts helps performance by eliminating the need to download font files, and maintains the language support of the user’s system.
+GitLab Sans, based on the [Inter](https://rsms.me/inter/) typeface, is used for most UI elements, with system fonts used as a back-up. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is used for code-related elements, for example, code blocks, branch names, commit IDs, and pipeline IDs. The fonts are available to download in [this package](https://www.npmjs.com/package/@gitlab/fonts).
 
-The body font stack is used for all UI elements, except for code-related elements, which use the monospace font stack. Examples of code-related elements are: branch name, commit ID, and pipeline ID.
-
-### Body font stack
+### Sans serif font stack
 
 ```css
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
-  'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  'Noto Color Emoji';
+font-family: 'GitLab Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans',
+  Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji';
 ```
 
 ### Monospace font stack
 
 ```css
-font-family: 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono',
-  'Courier New', 'andale mono', 'lucida console', monospace;
+font-family: 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas',
+  'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace;
 ```
 
 ## Font size
@@ -96,6 +94,3 @@ There are a number of text colors defined in GitLab. Which color is used when de
 </tr>
 </tbody>
 </table>
-
-
-
