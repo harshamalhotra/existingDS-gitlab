@@ -50,7 +50,7 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 ### Size
 
 - **Trigger**: The [button](/components/button) width is determined by its available properties.
-- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger button and to keep panels consistent throughout the UI.
+- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger button and to keep panels consistent throughout the UI. The height of the panel is initially set to the height of its content (dynamic height) when less than the maximum, but can optionally be set to always use a fixed height.
 
 ### Behavior
 
