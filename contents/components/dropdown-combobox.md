@@ -9,7 +9,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-new-dropdowns-listbox--default" title="Default listbox (in progress)"></story-viewer>
+<story-viewer story-name="base-new-dropdowns-listbox--search" title="Default listbox (in progress)"></story-viewer>
 
 <note>Listbox styles will be updated to match the UI kit.</note>
 

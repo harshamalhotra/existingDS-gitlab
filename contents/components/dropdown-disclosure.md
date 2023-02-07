@@ -9,7 +9,7 @@ related:
 
 ## Examples
 
-<todo>Add updated examples once complete in GitLab UI.</todo>
+<story-viewer story-name="base-new-dropdowns-disclosure--default" title="Default disclosure (in progress)"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A14)
 
