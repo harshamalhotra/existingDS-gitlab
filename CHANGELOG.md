@@ -1,3 +1,22 @@
+# [2.150.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.149.0...v2.150.0) (2023-02-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.20.0 ([af97148](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/af97148f39bce2f22f86a0526fd1d7a552906a05))
+* **deps:** update dependency @gitlab/ui to v54.4.0 ([e916a82](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e916a824e171b31f9fc99f6a37bfd50644c06fcc))
+* **deps:** update dependency @gitlab/ui to v55 ([657a09e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/657a09e851868b981fe6136d7cd76f8f705221ec))
+* **deps:** update dependency nuxt to v2.16.0 ([7548b1c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7548b1c314d42811a2ff77fb860e348b4414dcac))
+
+
+### Features
+
+* **Dropdown:** Document height options ([c6e97bc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c6e97bc2f97de46ca6eb9ad79dddb742fbc67551))
+* **Label:** clarify behaviour on a view that can be filtered ([e76b08b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e76b08b720193e54bb6ba282b2158efe7bdeda49))
+* **Link:** Document link appearance ([165053b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/165053bc75f08c5d0b0461b11c275d24c36f3ef2))
+* **Modal:** specify dropdown usage in modal window ([396d361](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/396d36189dbd36f787bfa4dcdaa056b6a07f6c05))
+* **Typography:** Update font stacks ([0467b65](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0467b65ccdb22924ddcea4a26d0818e5974567ae))
+
 # [2.149.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.148.0...v2.149.0) (2023-02-06)
 
 
