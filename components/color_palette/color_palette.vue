@@ -37,6 +37,17 @@ export default {
       default: false,
     },
   },
+  methods: {
+    getShadeClasses(shade) {
+      const classes = [`${this.backgroundClassPrefix}${shade.name}`];
+
+      if (shade.classes) {
+        classes.push(...shade.classes);
+      }
+
+      return classes;
+    },
+  },
 };
 </script>
 
@@ -47,10 +58,7 @@ export default {
     </slot>
     <div class="distributed palette">
       <div v-for="shade in shades" :key="shade.name" class="color">
-        <div
-          class="color-overview gl-px-5 gl-py-3"
-          :class="[`${backgroundClassPrefix}${shade.name}`, ...shade.classes]"
-        >
+        <div class="color-overview gl-px-5 gl-py-3" :class="getShadeClasses(shade)">
           <span class="variable">${{ shade.name }}</span>
           <span class="hex f-small">{{ shade.code }}</span>
         </div>

@@ -67,7 +67,7 @@ It may sometimes be necessary to stack values in a column or to have groups of c
 
 #### Color in stacked and grouped charts
 
-When utilizing stacked and grouped charts, you may choose not to follow the standard [color sequencing patterns](https://design.gitlab.com/data-visualization/color#color-sequence) when doing so provides an extra indicator that items in different groups are related. In addition, graded transparency may help to highlight differences in stacked variables while still differentiating stacks from groups in your chart.
+When utilizing stacked and grouped charts, you may choose not to follow the standard [color sequencing patterns](/data-visualization/color#color-sequence) when doing so provides an extra indicator that items in different groups are related. In addition, graded transparency may help to highlight differences in stacked variables while still differentiating stacks from groups in your chart.
 
 Specific colors may be used when values in a chart have certain colors associated with them in the product; for example, merge request state or vulnerability status. Specific colors should, however, be used sparingly in favor of following the more general [color](/data-visualization/color) guidelines for data visualizations.
 
@@ -132,9 +132,7 @@ By hovering over specific data points on charts, users will see a [popover](/com
 - Popover header: x-axis value (x-axis title)
 - Popover body: y-axis title, value
 
-The [column chart measure spec](https://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/) shows examples of how popover content could be structured, in practice.
-
-Placement is set to the right by default to avoid obstructing y-axis data but can be adjusted if doing so would make the chart easier to read. The popover placement should dynamically shift depending on the selected element and space available in the chart.
+Hovering over any of the charts on this page reveals a visual example of how popover content is structured in charts. Placement is set to the right by default to avoid obstructing y-axis data but can be adjusted if doing so would make the chart easier to read. The popover placement should dynamically shift depending on the selected element and space available in the chart.
 
 #### Text wrapping in chart popovers
 
@@ -160,13 +158,7 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 
 [Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=3%3A0)
 
-[Column charts measure spec →](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23195-column-chart-design-spec-previews/)
-
 [Line chart in Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=63%3A697)
-
-[Area chart measure spec →](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gitlab-design%23304-area-charts-spec-previews/)
-
-[Zoom bar measure spec →](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gd%23221-charts-scrolling-spec-previews/)
 
 ## Related
 

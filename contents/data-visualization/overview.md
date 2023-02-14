@@ -63,4 +63,4 @@ Full list of chart types and design specifications is detailed on the [Charts](/
 
 Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following links:
 
-[Heat map measure spec](http://gitlab-org.gitlab.io/gitlab-design/hosted/amelia/gitlab-design%23306-add-heat-maps-to-pattern-library-spec-previews/)
+[Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=3%3A0&t=eUwyBziODXxctWco-1)
