@@ -53,6 +53,7 @@ There are four categories of links in GitLab. Although all links are navigationa
 - A link opens the destination in the same window by default.
 - Native controls to open a link in a new tab or window aren't suppressed.
 - A link can use `target="_blank"` if it's intentional that the user cannot use the browser's back function to return to the reference, and that it's clear to the user they are leaving the current experience.
+- Text [truncation](/product-foundations/layout#truncation) guidelines also apply to links.
 
 ### Content
 
