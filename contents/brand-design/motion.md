@@ -18,7 +18,7 @@ Video producers can create large-scale, custom illustrations as part of a video 
   <figcaption class="figure-caption">Illustration animation example</figcaption>
 </figure>
 
-<todo>Add motion sample of illustration animation.</todo>
+<vimeo-player title="Illustration" video-id="791344150"></vimeo-player>
 
 #### Easing
 
@@ -37,7 +37,7 @@ Both interactive and expressive motion come with unique parameters to create sca
 - Motion should be swift at 0.65 seconds.
 - Purposeful motion embraces the design elements and formulates a short visual narrative.
 
-<todo>Add iconography animation example.</todo>
+<vimeo-player video-id="791341802"></vimeo-player>
 
 ### Dot animations
 
@@ -48,7 +48,7 @@ Both interactive and expressive motion come with unique parameters to create sca
 
 Voice over example: “No more stitching point solutions. All you need is GitLab.”
 
-<todo>Add dot animation motion sample.</todo>
+<vimeo-player title="Dot animations" video-id="791329958"></vimeo-player>
 
 ## Frame composition
 
@@ -59,7 +59,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 
 **Motion sample:** The text above is in section 1-2 while iconography occupies space in sections 2-2 and 2-3.
 
-<todo>Add frame composition motion sample that demonstrates the frame grid and movement within different sections.</todo>
+<vimeo-player title="Frame composition" video-id="791336183"></vimeo-player>
 
 ## Tanuki + DevOps loop
 
@@ -67,9 +67,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - It should animate on using a stroke reveal using Interactive Ease.
 - Don't use any other reveals such as fading on logo, having the logo move in from outside the frame, or scaling to reveal the logo.
 
-<todo>Add reference for _interactive ease_.</todo>
-<todo>Add trace logo animation example.</todo>
-<todo>Add link to trace logo animation file.</todo>
+<vimeo-player title="Tanuki" video-id="791334272"></vimeo-player>
 
 ## Gradients
 
