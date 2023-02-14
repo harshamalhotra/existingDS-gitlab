@@ -24,13 +24,13 @@ if (GOOGLE_ANALYTICS_ID) {
 
 const cspPolicies = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.cookielaw.org",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.cookielaw.org https://player.vimeo.com",
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
   `frame-src https://www.figma.com https://projects.gitlab.io ${new URL(GITLAB_UI_URL).origin} ${
     new URL(LOOKBOOK_URL).origin
-  }`,
+  } https://player.vimeo.com`,
   "connect-src 'self' https://sentry.gitlab.net https://www.google-analytics.com https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com",
 ];
 

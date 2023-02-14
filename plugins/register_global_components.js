@@ -4,6 +4,7 @@ import Note from '../components/note.vue';
 import Todo from '../components/todo.vue';
 import ColorPalette from '../components/color_palette/color_palette.vue';
 import MermaidDiagram from '../components/mermaid_diagram.vue';
+import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
   StoryViewer,
@@ -11,4 +12,5 @@ Object.entries({
   Todo,
   ColorPalette,
   MermaidDiagram,
+  VimeoPlayer,
 }).forEach(([componentName, component]) => Vue.component(componentName, component));
