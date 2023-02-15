@@ -17,9 +17,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Skeleton loader structure">
-  <img class="figure-img" src="/img/skeleton-loader-structure.svg" alt="Numbered diagram of a skeleton loader structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a skeleton loader structure" label="Skeleton loader structure" src="/img/skeleton-loader-structure.svg"></figure-img>
 
 1. **Shapes**: Simple shapes represent different content types in a single skeleton loader.
 

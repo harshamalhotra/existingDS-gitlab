@@ -23,10 +23,7 @@ For example, a single empty state illustration could be abstracted enough to be 
 
 To better support reuse, the [illustration library](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/Illustration-library?node-id=0%3A1) in Figma also contains dozens of small illustration components that represent concepts found throughout the product. These small illustrations can be used on their own, or as part of a larger illustration.
 
-<figure class="figure" role="figure" aria-label="Elements come together as part of a larger illustration.">
-  <img class="figure-img gl-p-5" src="/img/illus-reuse.svg" alt="Illustration elements and components assembled into larger illustration" role="img" />
-  <figcaption class="figure-caption">Elements come together as part of a larger illustration.</figcaption>
-</figure>
+<figure-img alt="Illustration elements and components assembled into larger illustration" label="Elements come together as part of a larger illustration." src="/img/illus-reuse.svg"></figure-img>
 
 By combining a multipurpose mindset with reusable components, the time it takes to create a new illustration, and the resulting number of illustrations, should both be reduced. This is a win both for designers and users where time and consistency matters.
 
@@ -97,15 +94,9 @@ Not all illustrations will have multiple objects or objects that need to align t
 - **Small** ("spot" illustration): **72px × 72px** frame size. Used when space is limited.
 - **Extra small**: **36px × 36px** frame size. Used for individual illustration elements that are combined with other elements to form a larger composition, or to connect other elements in the UI.
 
-<figure class="figure" role="figure" aria-label="Focal point grid sizes: large, medium, and small">
-  <img class="figure-img gl-p-5" src="/img/illus-focal-point.svg" alt="Large, medium, and small focal point grid sizes" role="img" />
-  <figcaption class="figure-caption">Focal point grid sizes: large, medium, small, and extra small</figcaption>
-</figure>
+<figure-img alt="Large, medium, and small focal point grid sizes" label="Focal point grid sizes: large, medium, and small" src="/img/illus-focal-point.svg"></figure-img>
 
-<figure class="figure" role="figure" aria-label="Focal point grid example">
-  <img class="figure-img gl-p-5" src="/img/illus-focal-point-example.svg" alt="Example medium illustration that uses the focal point grid" role="img" />
-  <figcaption class="figure-caption">Focal point grid example</figcaption>
-</figure>
+<figure-img alt="Example medium illustration that uses the focal point grid" label="Focal point grid example" src="/img/illus-focal-point-example.svg"></figure-img>
 
 #### Isometric grid
 
@@ -115,10 +106,7 @@ An isometric grid provides depth to concepts which can convey process, relations
 - An isometric grid uses guides that are rotated **30º** from the horizontal plane.
 - Three subgrids are available to handle different angles: ramp left, ramp right, and ramp forward.
 
-<figure class="figure" role="figure" aria-label="Isometric grid and subgrids">
-  <img class="figure-img gl-p-5" src="/img/illus-isometric.svg" alt="Isometric grid lines and subgrid lines" role="img" />
-  <figcaption class="figure-caption">Isometric grid and subgrids</figcaption>
-</figure>
+<figure-img alt="Isometric grid lines and subgrid lines" label="Isometric grid and subgrids" src="/img/illus-isometric.svg"></figure-img>
 
 <todo>Add isometric example</todo>
 #### Size

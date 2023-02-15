@@ -17,9 +17,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Spinner structure">
-  <img class="figure-img" src="/img/spinner-structure.svg" alt="Numbered diagram of a spinner structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a spinner structure" label="Spinner structure" src="/img/spinner-structure.svg"></figure-img>
 
 1. **Track**: Background that the segment travels on during the looped animation. 
 1. **Segment**: Animated element of the spinner.

@@ -46,30 +46,20 @@ In situations where the filter component isn’t used (levels 1-4), search is pl
 
 This pattern is recommended for cases when a single filter can be selected in each dropdown. For example, when a list of issues can only be filtered by one assignee.
 
-<figure role="figure" aria-label="Tabs, search, filter, and sorting placement" class="figure">
-  <img src="/img/filtering-medium-complexity-placement-example.png" alt="Two tabs with search below on the left, dropdowns for fitlers to the right of search, and sorting dropdown right-aligned to the filters" role="img" class="figure-img">
-</figure>
+<figure-img alt="Two tabs with search below on the left, dropdowns for fitlers to the right of search, and sorting dropdown right-aligned to the filters" label="Tabs, search, filter, and sorting placement" src="/img/filtering-medium-complexity-placement-example.png"></figure-img>
 
 When the filters do not fit on the same line as search, all dropdowns are placed below and separated by a horizontal rule. The sorting dropdown is inline but to the right of the filter dropdowns, the search remains limited in width.
 
-<figure role="figure" aria-label="Tabs, search, filter, and sorting placement when filter dropdowns are in their own row" class="figure">
-  <img src="/img/5-filters-in-new-line.png" alt="Two tabs with search below on the left, dropdowns for fitlers below in its own row, and sorting dropdown right-aligned to the filters" role="img" class="figure-img">
-</figure>
+<figure-img alt="Two tabs with search below on the left, dropdowns for fitlers below in its own row, and sorting dropdown right-aligned to the filters" label="Tabs, search, filter, and sorting placement when filter dropdowns are in their own row" src="/img/5-filters-in-new-line.png"></figure-img>
 
 On small screens the filter and sort dropdowns get pushed below the search and are full width. The functionality of toggling the visibility of filters can be added to make the UI less overwhelming. Trigger the visibility of the filters using an icon button with a filter icon and the label _Filters_. If filters are applied and then hidden, the button reflects the number of filters applied in a badge to the right of the button label. 
 
 <div class="row">
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="Tabs, search, filters, and sorting UI placement on mobile devices">
-      <img class="figure-img" src="/img/filtering-medium-complexity-placement-example--mobile.png" alt="Two tabs with search below, followed by filter and sort dropdowns each in new line" role="img" style="width:100%; max-width:332px; height:auto" />
-      <figcaption class="figure-caption">Tabs, search, filters, and sorting placement on mobile devices</figcaption>
-    </figure>
+    <figure-img alt="Two tabs with search below, followed by filter and sort dropdowns each in new line" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile.png"></figure-img>
   </div>
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="Tabs, search, filters, and sorting UI placement on mobile devices">
-      <img class="figure-img" src="/img/filtering-medium-complexity-placement-example--mobile--filters-hidden.png" alt="Two tabs with search below and a filters button to the right of it" role="img" style="width:100%; max-width:332px; height:auto" />
-      <figcaption class="figure-caption">Example of the button for toggling the visibility of filters</figcaption>
-    </figure>
+    <figure-img alt="Two tabs with search below and a filters button to the right of it" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile--filters-hidden.png"></figure-img>
   </div>
 </div>
 

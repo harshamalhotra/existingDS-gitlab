@@ -23,9 +23,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Avatar structure">
-  <img class="figure-img" src="/img/avatar-structure.svg" alt="Numbered diagram of an avatar structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of an avatar structure" label="Avatar structure" src="/img/avatar-structure.svg"></figure-img>
 
 1. **Image or identicon**: A unique image or fallback representing the object. 
 1. **Label and sub-label** (optional): Text corresponding to the image or identicon.
@@ -73,10 +71,7 @@ The following only applies to circle avatars.
   - Use "+{#} more" to expand the group. Replace "#" with the number of avatars that aren't visible.
   - Use "- show less" to collapse the group.
 
-<figure class="figure" role="figure" aria-label="Collapsed and expanded avatar group">
-  <img class="figure-img" src="/img/avatar-group.svg" alt="Two avatar group examples, one collapsed with an action to show more, and the other expanded with an action to show less." role="img" />
-  <figcaption class="figure-caption">Collapsed and expanded avatar group</figcaption>
-</figure>
+<figure-img alt="Two avatar group examples, one collapsed with an action to show more, and the other expanded with an action to show less." label="Collapsed and expanded avatar group" src="/img/avatar-group.svg"></figure-img>
 
 #### Stack
 
@@ -84,10 +79,7 @@ The following only applies to circle avatars.
 - The number of avatars in a stack is variable, but should never cause wrapping.
 - Use a [badge](/components/badge) after the last avatar to display the number of avatars that aren't visible. It can optionally be an action that leads a user to more context for all associated avatars. The badge and avatar sizes should be the same.
 
-<figure class="figure" role="figure" aria-label="A horizontal avatar stack">
-  <img class="figure-img" src="/img/avatar-stack.svg" alt="Three avatars slightly overlap each other in a horizontal row. A badge at the end includes the number of additional avatars that aren't visible" role="img" />
-  <figcaption class="figure-caption">A horizontal avatar stack</figcaption>
-</figure>
+<figure-img alt="Three avatars slightly overlap each other in a horizontal row. A badge at the end includes the number of additional avatars that aren't visible" label="A horizontal avatar stack" src="/img/avatar-stack.svg"></figure-img>
 
 ### Accessibility
 

@@ -15,9 +15,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Disclosure widget structure">
-  <img class="figure-img" src="/img/dropdown-disclosure-structure.svg" alt="Numbered diagram of a disclosure widget structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a disclosure widget structure" label="Disclosure widget structure" src="/img/dropdown-disclosure-structure.svg"></figure-img>
 
 1. **Button**: Triggers the panel to open or close.
 1. **Panel**: Wraps the content.

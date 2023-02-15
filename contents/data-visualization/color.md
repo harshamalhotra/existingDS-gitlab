@@ -345,15 +345,9 @@ Blue is the default hue for charts with a single data range, and `$data-viz-blue
 * Steps in a light UI go from `500` (low) to `950` (high) so that the higher the value, the darker it is and the more contrast it has against the light surface.
 * Steps in a dark UI go from `500` (low) to `50` (high) so that the higher the value, the lighter is is and the more contrast it has against the dark surface.
 
-<figure class="figure" role="figure" aria-label="Default color sequence in a light UI">
-  <img src="/img/dv-sequential-blue-light-ui.svg" alt="Default color sequence" role="img" />
-  <figcaption class="figure-caption">Default color sequence in a light UI</figcaption>
-</figure>
+<figure-img label="Default color sequence in a light UI" src="/img/dv-sequential-blue-light-ui.svg"></figure-img>
 
-<figure class="figure figure--dark" role="figure" aria-label="Default color sequence in a dark UI">
-  <img src="/img/dv-sequential-blue-dark-ui.svg" alt="Default color sequence" role="img" />
-  <figcaption class="figure-caption">Default color sequence in a dark UI</figcaption>
-</figure>
+<figure-img dark label="Default color sequence in a dark UI" src="/img/dv-sequential-blue-dark-ui.svg"></figure-img>
 
 <todo>Include example of chart with sequential data</todo>
 
@@ -375,17 +369,15 @@ The default sequence loops through different steps of each hue in the following 
 
 Blue is always the default starting point, and `$data-viz-blue-500` is the base step for both light and dark UI.
 
-<figure class="figure" role="figure" aria-label="Chevron-skipping pattern in a light UI">
-  <img class="gl-mb-6" src="/img/dv-chevron-light-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
-  <img class="gl-mb-5" src="/img/dv-chips-light-ui.svg" alt="Step order from chevron-pattern for color sequence" role="img" />
-  <figcaption class="figure-caption">Chevron-skipping pattern in a light UI</figcaption>
-</figure>
+<figure-img label="Chevron-skipping pattern in a light UI">
+  <img class="gl-mb-5" src="/img/dv-chevron-light-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
+  <img src="/img/dv-chips-light-ui.svg" alt="Step order from chevron-pattern for color sequence" role="img" />
+</figure-img>
 
-<figure class="figure figure--dark" role="figure" aria-label="Chevron-skipping pattern in a dark UI">
-  <img class="gl-mb-6" src="/img/dv-chevron-dark-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
-  <img class="gl-mb-5" src="/img/dv-chips-dark-ui.svg" alt="Step order from chevron pattern" role="img" />
-  <figcaption class="figure-caption">Chevron-skipping pattern in a dark UI</figcaption>
-</figure>
+<figure-img dark label="Chevron-skipping pattern in a dark UI">
+  <img class="gl-mb-5" src="/img/dv-chevron-dark-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
+  <img src="/img/dv-chips-dark-ui.svg" alt="Step order from chevron pattern" role="img" />
+</figure-img>
 
 <todo>Include example of chart with categorical data</todo>
 
@@ -406,15 +398,9 @@ There are two divergent options, choose the one that works best with the type of
 * A cool to warm hue transition is helpful for showing a decrease vs. increase from a central point, where the warm steps show the increase.
 * A cool to cool hue transition could be useful for showing data based on a central point, where either end of the range does not necessarily have positive or negative connotation.
 
-<figure class="figure" role="figure" aria-label="Cool to warm, and cool divergent sequences in a light UI">
-  <img class="gl-mb-6" src="/img/dv-divergent-light-ui.svg" alt="Divergent pattern for color sequence" role="img" />
-  <figcaption class="figure-caption">Cool to warm, and cool divergent sequences in a light UI</figcaption>
-</figure>
+<figure-img label="Cool to warm, and cool divergent sequences in a light UI" src="/img/dv-divergent-light-ui.svg"></figure-img>
 
-<figure class="figure figure--dark" role="figure" aria-label="Cool to warm, and cool divergent sequences in a dark UI">
-  <img class="gl-mb-6" src="/img/dv-divergent-dark-ui.svg" alt="Divergent pattern for color sequence" role="img" />
-  <figcaption class="figure-caption">Cool to warm, and cool divergent sequences in a dark UI</figcaption>
-</figure>
+<figure-img dark label="Cool to warm, and cool divergent sequences in a dark UI" src="/img/dv-divergent-dark-ui.svg"></figure-img>
 
 <todo>Include example of chart with divergent data</todo>
 

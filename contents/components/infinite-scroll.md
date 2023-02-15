@@ -20,9 +20,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Infinite scroll structure">
-  <img class="figure-img" src="/img/infinite-scroll-structure.svg" alt="Numbered diagram of an infinite scroll structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of an infinite scroll structure" label="Infinite scroll structure" src="/img/infinite-scroll-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Item**: Item within the infinite scroll list.

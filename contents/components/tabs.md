@@ -20,9 +20,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Tabs structure">
-  <img class="figure-img" src="/img/tabs-structure.svg" alt="Numbered diagram of tabs structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of tabs structure" label="Tabs structure" src="/img/tabs-structure.svg"></figure-img>
 
 1. **Tab group**: Contains all tabs.
 1. **Tab**: Contains text label and badge.

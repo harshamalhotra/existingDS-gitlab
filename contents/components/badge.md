@@ -23,9 +23,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Badge structure">
-  <img class="figure-img" src="/img/badge-structure.svg" alt="Numbered diagram of a badge structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a badge structure" label="Badge structure" src="/img/badge-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Icon** (optional): Supports or directly communicates the metadata meaning, always left aligned.

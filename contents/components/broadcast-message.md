@@ -17,9 +17,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Broadcast message structure">
-  <img class="figure-img" src="/img/broadcast-message-structure.svg" alt="Numbered diagram of the broadcast message structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of the broadcast message structure" label="Broadcast message structure" src="/img/broadcast-message-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Icon**: The [bullhorn](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~bullhorn) icon indicates an announcement.

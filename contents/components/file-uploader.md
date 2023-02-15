@@ -12,9 +12,7 @@ docs: in-progress
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="File uploader structure">
-  <img class="figure-img" src="/img/file-uploader-structure.svg" alt="Numbered diagram of a file uploader structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a file uploader structure" label="File uploader structure" src="/img/file-uploader-structure.svg"></figure-img>
 
 1. **Title**: Gives context to the file uploader.
 1. **Choose file**: Button that triggers the file upload process.

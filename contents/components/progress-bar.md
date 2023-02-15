@@ -16,9 +16,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Progress bar structure">
-  <img class="figure-img" src="/img/progress-bar-structure.svg" alt="Numbered diagram of progress bar structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of progress bar structure" label="Progress bar structure" src="/img/progress-bar-structure.svg"></figure-img>
 
 1. **Progress indicator**: Solid shape indicating the current percent of completion.
 1. **Track**: Background indicating the available space the progress indicator can fill.

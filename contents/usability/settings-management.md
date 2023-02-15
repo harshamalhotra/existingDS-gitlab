@@ -40,7 +40,7 @@ When a parent setting can be overridden, make that clear in the parent setting's
 
 When a child setting is enforced from a parent, make this clear in the child setting's UI. For example, consider disabling the child setting and adding a lock icon with a [popover](/components/popover) to explain the nature of the restriction:
 
-<figure class="figure" role="figure" aria-label="Example of locked setting"><img class="figure-img" src="/img/locked-setting-example.png" alt="Example of locked setting" role="img" /><figcaption class="figure-caption"></figcaption></figure>
+<figure-img label="Example of locked setting" src="/img/locked-setting-example.png"></figure-img>
 
 ### Grouping
 
@@ -65,10 +65,7 @@ Consider making configuration options more discoverable to users by linking to s
 
 - Use an icon-only [button](/components/button) with the [settings icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=settings) that, when hovered, shows a [tooltip](/components/tooltip) with the text `Configure in settings`.
 
-<figure class="figure" role="figure" aria-label="Settings button with tooltip on hover">
-  <img class="figure-img" src="/img/settings-hover.svg" alt="Settings button with tooltip on hover" role="img" />
-  <figcaption class="figure-caption">Settings button with tooltip on hover</figcaption>
-</figure>
+<figure-img label="Settings button with tooltip on hover" src="/img/settings-hover.svg"></figure-img>
 
 - Place it at the page-level, in the top right corner of the page, below the breadcrumbs. This sets the expectation that the settings apply to the page as a whole.
 - Navigate to the specific configuration section of that page in the settings area. Doing so makes the result of clicking the button predictable and prevents users from needing to navigate away from their task. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section of settings.
@@ -85,7 +82,7 @@ The two column layout is the default recommendation because it optimizes for ind
 * **First column:** Contains the section title and an optional description. Occupies 1/3 of the width. 
 * **Second column:** Contains the settings form content. Occupies 2/3 of the width.
 
-<figure class="figure" role="figure" aria-label="Example of 2 column settings layout"><img class="figure-img" src="/img/settings-2-column.png" alt="Example of 2 column settings layout" role="img" /><figcaption class="figure-caption"></figcaption></figure>
+<figure-img label="Example of 2 column settings layout" src="/img/settings-2-column.png"></figure-img>
 
 For breakpoints less than equal to the `lg` breakpoint (≤ 992px), the section heading and description will be stacked on top of the settings form content.
 
@@ -93,7 +90,7 @@ For breakpoints less than equal to the `lg` breakpoint (≤ 992px), the section 
 
 The single column layout is recommended for the page when one of the settings section's form content cannot fit within the two column layout. 
 
-<figure class="figure" role="figure" aria-label="Example of 1 column settings layout"><img class="figure-img" src="/img/settings-1-column.png" alt="Example of 1 column settings layout" role="img" /><figcaption class="figure-caption"></figcaption></figure>
+<figure-img label="Example of 1 column settings layout" src="/img/settings-1-column.png"></figure-img>
 
 ## Design specifications
 

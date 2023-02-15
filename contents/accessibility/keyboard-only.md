@@ -29,23 +29,20 @@ If you're testing in Safari or Firefox in macOS, you'll likely have to update a 
 1. Go to **System Preferences > Keyboard > Shortcuts**.
 1. Check the "Use keyboard navigation to move focus between controls" option.
 
-<img class="gl-display-block gl-mx-auto gl-my-7" style="width:100%; max-width:668px;" src="/img/a11y-keyboard-macos.png" alt="macOS keyboard settings" />
+<figure-img label="macOS keyboard settings" src="/img/a11y-keyboard-macos.png" width="668"></figure-img>
 
 **For Safari:**
 
 1. Open **Preferences > Advanced**.
 1. Check the "Press Tab to highlight each item on a webpage" option.
 
-<img class="gl-display-block gl-mx-auto gl-my-7" style="width:100%; max-width:792px;" src="/img/a11y-keyboard-safari.png" alt="Safari browser advanced settings" />
+<figure-img label="Safari browser advanced settings" src="/img/a11y-keyboard-safari.png" width="792"></figure-img>
 
 ## Focus order
 
 The focus order is the sequence that a keyboard user tabs through focusable elements. In most cases the focus order and DOM order should be the same. Visually reordering elements with CSS, such as with floats, flexbox, or grid, can be problematic for focus order, so ensure content makes sense both visually and linearly in the markup. To learn more about what elements should be focusable by default read this [Introduction to Focus](https://developers.google.com/web/fundamentals/accessibility/focus/).
 
-<figure class="figure" role="figure" aria-label="Example tab order moving through navigation">
-  <img class="figure-img" src="/img/a11y-tab-order.png" alt="Example navigation with tab order overlays" role="img" style="width:100%; max-width:640px; height:auto" />
-  <figcaption class="figure-caption">Example tab order moving through navigation</figcaption>
-</figure>
+<figure-img alt="Example navigation with tab order overlays" label="Example tab order moving through navigation" src="/img/a11y-tab-order.png" width="640"></figure-img>
 
 Some HTML elements, like form elements and buttons, receive focus by default because they have native event handling. In these cases nothing has to be done for them to be in the focus order. That being said, it’s possible to use the `tabindex` attribute to make elements focusable.
 
@@ -88,10 +85,7 @@ Some HTML elements, like form elements and buttons, receive focus by default bec
 
 Every focusable element must have a visible focus state for keyboard navigation. Typically a focused element has a stronger border, glow, or shadow to highlight it. Browsers provide a focus ring by default, but this can be removed or enhanced with CSS.
 
-<figure class="figure" role="figure" aria-label="Buttons with custom and default focus rings">
-  <img class="figure-img" src="/img/a11y-focus-ring.png" alt="One button with a custom focus ring, and another with browser default" role="img" style="width:100%; max-width:299px; height:auto" />
-  <figcaption class="figure-caption">Buttons with custom and browser default focus rings</figcaption>
-</figure>
+<figure-img alt="One button with a custom focus ring, and another with browser default" label="Buttons with custom and default focus rings" src="/img/a11y-focus-ring.png" width="299"></figure-img>
 
 ### Expected behavior
 
@@ -108,10 +102,7 @@ An element has focus, but there’s no visual indication.
 
 A keyboard trap keeps the focus order looping within a section. A modal, for example, uses a keyboard trap to prevent a user from focusing on content elsewhere in the page — content that could even be hidden by the modal itself. There should never be a keyboard trap that a user can’t get out of.
 
-<figure class="figure" role="figure" aria-label="A modal with a keyboard trap and multiple ways to dismiss">
-  <img class="figure-img" src="/img/a11y-keyboard-trap.png" alt="A modal with overlays showing how focus is trapped within the modal" role="img" style="width:100%; max-width:560px; height:auto" />
-  <figcaption class="figure-caption">A modal with a keyboard trap and multiple ways to dismiss</figcaption>
-</figure>
+<figure-img alt="A modal with overlays showing how focus is trapped within the modal" label="A modal with a keyboard trap and multiple ways to dismiss" src="/img/a11y-keyboard-trap.png" width="560"></figure-img>
 
 ### Expected behavior
 
@@ -129,10 +120,7 @@ A keyboard trap keeps the focus order looping within a section. A modal, for exa
 
 Skip links are anchor links placed before a section that allow a user to bypass blocks of repeating page sections (typically navigation), and "skip" to the main content. They’re typically not visible until they receive focus, and then they’re visible for all users.
 
-<figure class="figure" role="figure" aria-label="Skip link with focus in GitLab’s primary navigation">
-  <img class="figure-img" src="/img/a11y-skip-link.png" alt="Skip link visible when focused in the GitLab header navigation" role="img" style="width:100%; max-width:816px; height:auto" />
-  <figcaption class="figure-caption">Skip link with focus in GitLab’s primary navigation</figcaption>
-</figure>
+<figure-img alt="Skip link visible when focused in the GitLab header navigation" label="Skip link with focus in GitLab’s primary navigation" src="/img/a11y-skip-link.png" width="816"></figure-img>
 
 ### Expected behavior
 

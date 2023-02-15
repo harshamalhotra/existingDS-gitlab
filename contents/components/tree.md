@@ -14,9 +14,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Tree structure">
-  <img class="figure-img" src="/img/tree-structure.svg" alt="Numbered diagram of a tree structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a tree structure" label="Tree structure" src="/img/tree-structure.svg"></figure-img>
 
 1. **Caret**: Identifies when the node is open or closed. Pointing down is open. Pointing right is closed. 
 1. **Icon**: Indicates what type of node it is.

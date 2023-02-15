@@ -20,9 +20,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Date picker structure">
-  <img class="figure-img" src="/img/date-picker-structure.svg" alt="Numbered diagram of a date picker structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a date picker structure" label="Date picker structure" src="/img/date-picker-structure.svg"></figure-img>
 
 1. **Label**: Text associated with the text field.
 1. **Text field**: Input element that gets populated with a date.

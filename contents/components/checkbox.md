@@ -18,9 +18,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Checkbox structure">
-  <img class="figure-img" src="/img/checkbox-structure.svg" alt="Numbered diagram of a checkbox structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a checkbox structure" label="Checkbox structure" src="/img/checkbox-structure.svg"></figure-img>
 
 1. **Legend** (optional): A title for a group of checkboxes.
 1. **Checkbox**: The element that provides the visual affordance for the control.
