@@ -129,6 +129,15 @@
 .typography {
   a {
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $blue-600;
+    }
+
+    &:active {
+      color: $blue-700;
+    }
   }
 }
 
