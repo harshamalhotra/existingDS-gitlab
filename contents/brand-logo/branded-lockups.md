@@ -13,10 +13,7 @@ Co-branded lockups are created by the Brand Design team for approved GitLab part
 
 Ensure proper clear space (x-height equal to the height of the letter 'a' from our wordmark) around all sides of both logos.
 
-<figure class="figure" role="figure" aria-label="Co-branding lockup with clear space equal to the width of the lowercase 'a' from the wordmar">
-  <img class="figure-img gl-p-5" src="/img/brand/co-branding.svg" alt="Co-branding guidelines" role="img" />
-  <figcaption class="figure-caption">Co-branding lockup with clear space equal to the width of the lowercase 'a' from the GitLab wordmark</figcaption>
-</figure>
+<figure-img label="Co-branding lockup with clear space equal to the width of the lowercase 'a' from the wordmark" src="/img/brand/co-branding.svg"></figure-img>
 
 ## Program lockups
 
@@ -33,13 +30,7 @@ For GitLab team members looking to create a lockup for their program, please acc
 
 Ensure proper clear space (x-height equal to the height of the logomark) around all sides of the lockup. Program lockups should always be accompanied by the GitLab logo and never exceed 75% of the width of the GitLab logo on any given asset. 
 
-<figure class="figure" role="figure" aria-label="Program lockup">
-  <img class="figure-img gl-p-5 img-50" src="/img/brand/program-lockup-clearspace.svg" alt="Program lockup" role="img" />
-  <figcaption class="figure-caption">Program lockup with clear space equal to the height of the logomark</figcaption>
-</figure>
+<figure-img label="Program lockup with clear space equal to the height of the logomark" src="/img/brand/program-lockup-clearspace.svg" width="480"></figure-img>
 
-<figure class="figure" role="figure" aria-label="Program lockup mockup">
-  <img class="figure-img gl-p-5 img-50" src="/img/brand/program-lockup-mockup.png" alt="Logomark construction" role="img" />
-  <figcaption class="figure-caption">Mockup of program lockup paired with the GitLab logo and branding</figcaption>
-</figure>
+<figure-img label="Mockup of program lockup paired with the GitLab logo and branding" src="/img/brand/program-lockup-mockup.png" width="480"></figure-img>
 

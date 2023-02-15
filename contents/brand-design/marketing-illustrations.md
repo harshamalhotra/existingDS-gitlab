@@ -2,10 +2,7 @@
 name: Marketing illustrations
 ---
 
-<figure class="figure" role="figure" aria-label="Illustration sample">
-  <img class="figure-img gl-p-5" src="/img/brand/marketing-illustrations.png" alt="GitLab illustration banner sample" role="img" />
-  <figcaption class="figure-caption">Illustration banner sample</figcaption>
-</figure>
+<figure-img alt="GitLab illustration banner sample" label="Illustration sample" src="/img/brand/marketing-illustrations.png"></figure-img>
 
 Illustrations are the primary visual tool that we use throughout our marketing materials to depict GitLab’s values, features, user outcomes, and abstract concepts. The illustrations are an extension of our unique iconography system, and both reinforce our brand personality and are inspired by our values in the following ways:
 
@@ -32,10 +29,7 @@ When building illustrations, use this [template](https://drive.google.com/file/d
 1. **Corners** use a mix of angles and curves. Rounded corners are used sparingly as a small addition of personality; the radius should be consistent throughout the illustration.
 1. **Color** is used intentionally, with white and purples from the [secondary palette](https://drive.google.com/file/d/1kCcvxYMKPkDCEFQd6imQcHhFGC14Hgte/view?usp=sharing) making up the majority of the composition. The remaining colors in that palette are used as highlights and accents to differentiate objects within the illustration.
 
-<figure class="figure" role="figure" aria-label="Illustration sample">
-  <img class="figure-img gl-p-5 img-50" src="/img/brand/illustrations.svg" alt="GitLab illustration sample" role="img" />
-  <figcaption class="figure-caption">Illustration sample</figcaption>
-</figure>
+<figure-img alt="GitLab illustration sample" label="Illustration sample" src="/img/brand/illustrations.svg" width="480"></figure-img>
 
 ## Marketing icons
 
@@ -49,7 +43,4 @@ The marketing icons are created using the 8px grid system found within this [tem
 
 [This specific set of icons](https://drive.google.com/drive/folders/1AkJxuyB8kIGvV7e0dH6sbq5alLshuG-i?usp=sharing) represents each stage of our software development lifecycle at each stage of the process. They are designed to be presented as a set when referring to the entire journey of the lifecycle or individually when referring to a specific stage.
 
-<figure class="figure" role="figure" aria-label="Software development lifecycle icon set">
-  <img class="figure-img gl-p-5" src="/img/brand/sdlc-icon-set.svg" alt="10 icons, one for each development stage" role="img" />
-  <figcaption class="figure-caption">Software development lifecycle icon set</figcaption>
-</figure>
+<figure-img alt="10 icons, one for each development stage" label="Software development lifecycle icon set" src="/img/brand/sdlc-icon-set.svg"></figure-img>

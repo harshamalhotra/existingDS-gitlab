@@ -13,10 +13,7 @@ Video producers can create large-scale, custom illustrations as part of a video 
 - Each layer can have its own unique motion type which combine to create harmony.
 - Strokes and lines are animated independently with a stroke reveal effect.
 
-<figure class="figure" role="figure" aria-label="Illustration animation example">
-  <img class="figure-img gl-p-5" src="/img/brand/illustration-animation-example.png" alt="Illustration animation example with motion details" role="img" />
-  <figcaption class="figure-caption">Illustration animation example</figcaption>
-</figure>
+<figure-img alt="Illustration animation example with motion details" label="Illustration animation example" src="/img/brand/illustration-animation-example.png"></figure-img>
 
 <vimeo-player title="Illustration" video-id="791344150"></vimeo-player>
 
@@ -24,10 +21,7 @@ Video producers can create large-scale, custom illustrations as part of a video 
 
 Both interactive and expressive motion come with unique parameters to create scalable consistency in their use.
 
-<figure class="figure" role="figure" aria-label="Illustration easing example">
-  <img class="figure-img gl-p-5 img-50" src="/img/brand/illustration-easing-specs.svg" alt="Illustration easing example with After Effects specs" role="img" />
-  <figcaption class="figure-caption">Illustration easing example</figcaption>
-</figure>
+<figure-img alt="Illustration easing example with After Effects specs" label="Illustration easing example" src="/img/brand/illustration-easing-specs.svg" width="480"></figure-img>
 
 ### Iconography
 
@@ -83,10 +77,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 
 [Download the gradient file](https://drive.google.com/file/d/13PPVVsDp6ySALH-14pQrzcDXYWD6qRwU/view) 
 
-<figure class="figure" role="figure" aria-label="Gradient example">
-  <img class="figure-img gl-p-5" src="/img/brand/gradient-1.png" alt="Soft gradient example" role="img" />
-  <figcaption class="figure-caption">Gradient example</figcaption>
-</figure>
+<figure-img alt="Soft gradient example" label="Gradient example" src="/img/brand/gradient-1.png"></figure-img>
 
 ### Option 2
 
@@ -94,10 +85,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - Blur at 71% with 3 iterations.
 - Animate turbulent displacement evolution to create subtle animation.
 
-<figure class="figure" role="figure" aria-label="Gradient example">
-  <img class="figure-img gl-p-5" src="/img/brand/gradient-2.png" alt="Organic gradient example" role="img" />
-  <figcaption class="figure-caption">Gradient example</figcaption>
-</figure>
+<figure-img alt="Organic gradient example" label="Gradient example" src="/img/brand/gradient-2.png"></figure-img>
 
 ### Gradients on text
 
@@ -105,10 +93,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - The gradient can be used on keywords, whole phrases, and text repetitions.
 - The text masks out the gradient.
 
-<figure class="figure" role="figure" aria-label="Gradient text example">
-  <img class="figure-img gl-p-5" src="/img/brand/gradient-type.png" alt="Gradient on text example" role="img" />
-  <figcaption class="figure-caption">Gradient text example</figcaption>
-</figure>
+<figure-img alt="Gradient on text example" label="Gradient text example" src="/img/brand/gradient-type.png"></figure-img>
 
 ### Incorrect use of gradients
 
@@ -147,10 +132,7 @@ The example below uses the following steps:
 1. The stroke begins to animate as “innovation” moves to meet the other words.
 1. Once in place the opacity transitions from 30% to 100%.
 
-<figure class="figure" role="figure" aria-label="Outline reveals example">
-  <img class="figure-img gl-p-5" src="/img/brand/outline-reveal-tech-spec.png" alt="Outline reveals on text example" role="img" />
-  <figcaption class="figure-caption">Outline reveals example</figcaption>
-</figure>
+<figure-img alt="Outline reveals on text example" label="Outline reveals example" src="/img/brand/outline-reveal-tech-spec.png"></figure-img>
 
 <todo>Add outline reveal motion samples.</todo>
 
@@ -159,10 +141,7 @@ The example below uses the following steps:
 - Type repetitions add visual interest while drawing attention to areas of emphasis. They are a more dynamic, spirited way to emphasize text. They can be used to emphasize a single word or a whole phrase and can animate in a variety of ways.
 - Slide the text lines upward into position behind masks one line at a time, transitioning opacity from 0-100 using our interactive ease.
 
-<figure class="figure" role="figure" aria-label="Type repetitions">
-  <img class="figure-img gl-p-5" src="/img/brand/type-repetitions-motion.svg" alt="Type repetition with breakdown specs" role="img" />
-  <figcaption class="figure-caption">Type repetitions</figcaption>
-</figure>
+<figure-img alt="Type repetition with breakdown specs" label="Type repetitions" src="/img/brand/type-repetitions-motion.svg"></figure-img>
 
 <todo>Add reference for _interactive ease_.</todo>
 <todo>Add type repetition motion sample.</todo>
@@ -196,9 +175,6 @@ The example below uses the following steps:
   - Lower third remains onscreen for 4-5 seconds. 
   - **Transition out:** Animate opacity from 100% to 0% over 1 second.
 
-<figure class="figure" role="figure" aria-label="Lower thirds example">
-  <img class="figure-img gl-p-5" src="/img/brand/lower-thirds.png" alt="Lower thirds motion example with specs" role="img" />
-  <figcaption class="figure-caption">Lower thirds example</figcaption>
-</figure>
+<figure-img alt="Lower thirds motion example with specs" label="Lower thirds example" src="/img/brand/lower-thirds.png"></figure-img>
 
 <todo>Add motion sample.</todo>

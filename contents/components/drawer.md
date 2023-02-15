@@ -24,9 +24,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Drawer structure">
-  <img class="figure-img" src="/img/drawer-structure.svg" alt="Numbered diagram of a drawer structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a drawer structure" label="Drawer structure" src="/img/drawer-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Header**: Contains the title, close button, and actions.

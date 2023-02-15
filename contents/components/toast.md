@@ -18,9 +18,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Toast structure">
-  <img class="figure-img" src="/img/toast-structure.svg" alt="Numbered diagram of a toast structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a toast structure" label="Toast structure" src="/img/toast-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Message**: Text content indicating the purpose and potential next steps.

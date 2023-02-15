@@ -26,9 +26,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Form structure">
-  <img class="figure-img" src="/img/form-structure.svg" alt="Numbered diagram of a form" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a form" label="Form structure" src="/img/form-structure.svg"></figure-img>
 
 1. **Label**: Clearly and concisely identifies an input.
 1. **Inputs**: Allows a user to enter content or select options through a variety of inputs.

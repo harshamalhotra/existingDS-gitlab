@@ -19,9 +19,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Alert structure">
-  <img class="figure-img" src="/img/alert-structure.svg" alt="Numbered diagram of an alert structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of an alert structure" label="Alert structure" src="/img/alert-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Icon**: Supports the variant meaning.
@@ -92,20 +90,11 @@ related:
 ### Placement
 
 - **Global**: Impacts the entire experience, is full-width, and is placed directly below the navigation bar.
-  <figure class="figure" role="figure" aria-label="Full-width danger alert under the global navigation and above the contextual navigation">
-    <img class="figure-img" src="/img/alert-global.png" alt="Global alert position" role="img" style="width:100%; max-width:332px; height:auto" />
-    <figcaption class="figure-caption">Full-width danger alert under the global navigation and above the contextual navigation</figcaption>
-  </figure>
+  <figure-img alt="Global alert position" label="Full-width danger alert under the global navigation and above the contextual navigation" src="/img/alert-global.png" width="332"></figure-img>
 - **Page-level**: Appears at the top of a page, directly below the navigation bar and above the breadcrumbs, and restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
-  <figure class="figure" role="figure" aria-label="Page-level alert in the main content area with space above and below">
-    <img class="figure-img" src="/img/alert-page-level.png" alt="Page-level alert position" role="img" style="width:100%; max-width:332px; height:auto" />
-    <figcaption class="figure-caption">Page-level alert in the main content area with space above and below</figcaption>
-  </figure>
+  <figure-img alt="Page-level alert position" label="Page-level alert in the main content area with space above and below" src="/img/alert-page-level.png" width="332"></figure-img>
 - **In-page**: Within a section of the page when the message is specific to that content.
-  <figure class="figure" role="figure" aria-label="In-page alert contextually placed with space above and below">
-    <img class="figure-img" src="/img/alert-in-page.png" alt="In-page alert position" role="img" style="width:100%; max-width:332px; height:auto" />
-    <figcaption class="figure-caption">In-page alert contextually placed with space above and below</figcaption>
-  </figure>
+  <figure-img alt="In-page alert position" label="In-page alert contextually placed with space above and below" src="/img/alert-in-page.png" width="332"></figure-img>
 
 #### Sticky positioning
 

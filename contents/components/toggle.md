@@ -21,9 +21,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Toggle structure">
-  <img class="figure-img" src="/img/toggle-structure.svg" alt="Numbered diagram of a toggle structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a toggle structure" label="Toggle structure" src="/img/toggle-structure.svg"></figure-img>
 
 1. **Label**: Describes the control when the toggle is on.
 1. **Description**: (optional) Provides more context for the label.

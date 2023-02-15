@@ -24,7 +24,7 @@ Alignment considerations for a **1.5px** stroke are covered in the [Strokes](#st
 
 | **Do** | **Don’t** |
 | :---: | :---: |
-| <figure class="figure" role="figure" aria-label="Icon aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-do.svg" alt="Crisp icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon outside edges aligned to the pixel grid</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/icons-pixel-grid-dont.svg" alt="Blurry icon on pixel grid" role="img" /><figcaption class="figure-caption">Icon edges not horizontally aligned to the pixel grid</figcaption></figure> |
+| <figure-img alt="Crisp icon on pixel grid" label="Icon outside edges aligned to the pixel grid" src="/img/icons-pixel-grid-do.svg"></figure-img> | <figure-img alt="Blurry icon on pixel grid" label="Icon edges not horizontally aligned to the pixel grid<" src="/img/icons-pixel-grid-dont.svg"></figure-img> |
 
 ### 16 pixel grid
 
@@ -32,22 +32,13 @@ The **16px** icon size is the default, and most icons are created at this size. 
 
 <div class="row">
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="16 pixel icon at 100%">
-      <img class="figure-img" src="/img/icons-100-scale.svg" alt="16px icon grid at 100% scale" role="img" />
-      <figcaption class="figure-caption">16 pixel icon at 100%</figcaption>
-    </figure>
+    <figure-img alt="16px icon grid at 100% scale" label="16 pixel icon at 100%" src="/img/icons-100-scale.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="Grid 14×14 pixel live area">
-      <img class="figure-img" src="/img/icons-grid-layout.svg" alt="Icon live area" role="img" />
-      <figcaption class="figure-caption">Grid 14×14 pixel live area</figcaption>
-    </figure>
+    <figure-img alt="Icon live area" label="Grid 14×14 pixel live area" src="/img/icons-grid-layout.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="1px icon padding">
-      <img class="figure-img" src="/img/icons-padding.svg" alt="Icon padding" role="img" />
-      <figcaption class="figure-caption">1px icon padding</figcaption>
-    </figure>
+    <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-padding.svg"></figure-img>
   </div>
 </div>
 
@@ -57,22 +48,13 @@ The **12px** icon size is used for small, complimentary icons commonly used to i
 
 <div class="row">
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="12 pixel icon at 100%">
-      <img class="figure-img" src="/img/icons-12-100-scale.svg" alt="12px icon grid at 100% scale" role="img" />
-      <figcaption class="figure-caption">12 pixel icon at 100%</figcaption>
-    </figure>
+    <figure-img alt="12px icon grid at 100% scale" label="12 pixel icon at 100%" src="/img/icons-12-100-scale.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="Grid 10×10 pixel live area">
-      <img class="figure-img" src="/img/icons-12-grid-layout.svg" alt="Icon live area" role="img" />
-      <figcaption class="figure-caption">Grid 10×10 pixel live area</figcaption>
-    </figure>
+    <figure-img alt="Icon live area" label="Grid 10×10 pixel live area" src="/img/icons-12-grid-layout.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="1px icon padding">
-      <img class="figure-img" src="/img/icons-12-padding.svg" alt="Icon padding" role="img" />
-      <figcaption class="figure-caption">1px icon padding</figcaption>
-    </figure>
+    <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-12-padding.svg"></figure-img>
   </div>
 </div>
 
@@ -84,20 +66,11 @@ In nearly all instances icons should be used at the size they were created at an
 
 A keyline grid is a set of guides to help maintain [optical balance](#optical-balance) (visual weight) between icons. Use it as a starting point and guide, but not a hard rule. There are four basic shapes that represent common icon scale and placement. Squares can fill the live area, while circles and rectangles can extend into the padding, which allows icons to be proportionately consistent.
 
-<figure class="figure" role="figure" aria-label="Keyline grid">
-  <img class="figure-img" src="/img/icons-keylines.svg" alt="Icon keyline grid" role="img" />
-  <figcaption class="figure-caption">Keyline grid</figcaption>
-</figure>
+<figure-img alt="Icon keyline grid" label="Keyline grid" src="/img/icons-keylines.svg"></figure-img>
 
-<figure class="figure" role="figure" aria-label="Keyline icon shapes">
-  <img class="figure-img" src="/img/icons-keyline-shapes.svg" alt="Icon keyline shapes" role="img" />
-  <figcaption class="figure-caption">Keyline icon shapes</figcaption>
-</figure>
+<figure-img alt="Icon keyline shapes" label="Keyline icon shapes" src="/img/icons-keyline-shapes.svg"></figure-img>
 
-<figure class="figure" role="figure" aria-label="Keyline icon examples">
-  <img class="figure-img" src="/img/icons-keyline-examples.svg" alt="Icon keyline examples" role="img" />
-  <figcaption class="figure-caption">Keyline icon examples</figcaption>
-</figure>
+<figure-img alt="Icon keyline examples" label="Keyline icon examples" src="/img/icons-keyline-examples.svg"></figure-img>
 
 ### Optical balance
 
@@ -127,22 +100,13 @@ Since icons use a **1.5px** stroke, there are a few alignment considerations:
 
 <div class="row">
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="1.5px stroke weight and rounded stroke caps">
-      <img class="figure-img" src="/img/icons-strokes.svg" alt="Icon stroke settings" role="img" />
-      <figcaption class="figure-caption">1.5px stroke weight inside aligned and rounded stroke caps</figcaption>
-    </figure>
+    <figure-img alt="Icon stroke settings" label="1.5px stroke weight and rounded stroke caps" src="/img/icons-strokes.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="Line with round join">
-      <img class="figure-img" src="/img/icons-line-round-join.svg" alt="Line with rounded join" role="img" />
-      <figcaption class="figure-caption">Line with round join</figcaption>
-    </figure>
+    <figure-img alt="Line with rounded join" label="Line with round join" src="/img/icons-line-round-join.svg"></figure-img>
   </div>
   <div class="col col-33">
-    <figure class="figure" role="figure" aria-label="Line with mitar join">
-      <img class="figure-img" src="/img/icons-line-miter.svg" alt="Line with mitar (square) join" role="img" />
-      <figcaption class="figure-caption">Line with miter join</figcaption>
-    </figure>
+    <figure-img alt="Line with mitar (square) join" label="Line with mitar join" src="/img/icons-line-miter.svg"></figure-img>
   </div>
 </div>
 
@@ -152,42 +116,27 @@ To have parity between inside and center aligned strokes with a **1.5px** weight
 
 | **Stroke aligned inside** | **Stroke aligned center** |  **Result** |
 | ------ | ------ | ------ |
-| 0px | 0px | <img src="/img/icons-0-inside.svg" alt="0 border radius example" role="img" /> |
-| 1px | 0.25px |  <img src="/img/icons-1-inside.svg" alt="1 pixel border radius example" role="img" /> |
-| 2px (default) | 1.25px |  <img src="/img/icons-2-inside.svg" alt="2 pixel border radius example" role="img" /> |
-| 3px | 2.25px |  <img src="/img/icons-3-inside.svg" alt="3 pixel border radius example" role="img" /> |
+| 0px | 0px | <img alt="0 border radius example" role="img" src="/img/icons-0-inside.svg" /> |
+| 1px | 0.25px |  <img alt="1 pixel border radius example" role="img" src="/img/icons-1-inside.svg" /> |
+| 2px (default) | 1.25px |  <img alt="2 pixel border radius example" role="img" src="/img/icons-2-inside.svg" /> |
+| 3px | 2.25px |  <img alt="3 pixel border radius example" role="img" src="/img/icons-3-inside.svg" /> |
 
 Clarity should always override consistency, and the guides are flexible when necessary to best represent the metaphor or parts of it.
 
-<figure class="figure" role="figure" aria-label="Border radius options, 2px is default">
-  <img class="figure-img" src="/img/icons-border-radius.svg" alt="Icons with 0px, 1px, 2px, 4px, 6px, and 100% border radius options" role="img" />
-  <figcaption class="figure-caption">Border radius options, 2px is default</figcaption>
-</figure>
+<figure-img alt="Icons with 0px, 1px, 2px, 4px, 6px, and 100% border radius options" label="Border radius options, 2px is default" src="/img/icons-border-radius.svg"></figure-img>
 
 <div class="row">
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="A combination of 2px and 4px border radius helps the elements fit together better.">
-      <img class="figure-img" src="/img/icons-border-radius-example.svg" alt="Icon with 2px and 4px border radius" role="img" />
-      <figcaption class="figure-caption">A combination of 1px and 2px border radius helps the elements fit together better.</figcaption>
-    </figure>
+    <figure-img alt="Icon with 2px and 4px border radius" label="A combination of 2px and 4px border radius helps the elements fit together better." src="/img/icons-border-radius-example.svg"></figure-img>
   </div>
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="A combination of 0px and 4px best represents the subject matter.">
-      <img class="figure-img" src="/img/icons-border-radius-alternates.svg" alt="Icon with 0px and 4px border radius" role="img" />
-      <figcaption class="figure-caption">A combination of 0px and 3px best represents the subject matter.</figcaption>
-    </figure>
+    <figure-img alt="Icon with 0px and 4px border radius" label="A combination of 0px and 4px best represents the subject matter." src="/img/icons-border-radius-alternates.svg"></figure-img>
   </div>
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="A 1px border radius works well for angles that are less than 90º.">
-      <img class="figure-img" src="/img/icons-border-radius-angle.svg" alt="Icon with 1px border radius" role="img" />
-      <figcaption class="figure-caption">A 1px border radius works well for angles that are less than 90º.</figcaption>
-    </figure>
+    <figure-img alt="Icon with 1px border radius" label="A 1px border radius works well for angles that are less than 90º." src="/img/icons-border-radius-angle.svg"></figure-img>
   </div>
   <div class="col col-50">
-    <figure class="figure" role="figure" aria-label="This icon does not use a border radius because in doing so features critical to the meaning would be lost.">
-      <img class="figure-img" src="/img/icons-border-radius-none.svg" alt="Icon with no border radius" role="img" />
-      <figcaption class="figure-caption">This icon does not use a border radius, because doing so risks losing features critical to the icon’s meaning.</figcaption>
-    </figure>
+    <figure-img alt="Icon with no border radius" label="This icon does not use a border radius because in doing so features critical to the meaning would be lost." src="/img/icons-border-radius-none.svg"></figure-img>
   </div>
 </div>
 
@@ -195,43 +144,37 @@ Clarity should always override consistency, and the guides are flexible when nec
 
 Use increments of **15º** to achieve consistency throughout the icon set. Angles can be combined in an icon to create more dynamic shapes and movement, while remaining consistent as a whole.
 
-<figure class="figure" role="figure" aria-label="15º angle increments">
-  <img class="figure-img" src="/img/icons-angles.svg" alt="Angle settings" role="img" />
-  <figcaption class="figure-caption">15º angle increments</figcaption>
-</figure>
+<figure-img alt="Angle settings" label="15º angle increments" src="/img/icons-angles.svg"></figure-img>
 
 ## Shape
 
 Sharp interior angles help icon clarity. A **1px** gap between elements is acceptable, but **2px** is preferred when possible — consistency will always help the icons feel more unified.
 
-<figure class="figure" role="figure" aria-label="Icon with sharp interior angles and at least 1px spacing between elements">
-  <img class="figure-img" src="/img/icons-shape-corners.svg" alt="Icon shape settings" role="img" />
-  <figcaption class="figure-caption">Icon with sharp interior angles and at least 1px spacing between elements</figcaption>
-</figure>
+<figure-img alt="Icon shape settings" label="Icon with sharp interior angles and at least 1px spacing between elements" src="/img/icons-shape-corners.svg"></figure-img>
 
 Design most icons in 2D. Depth and perspective should only be used when it’s absolutely necessary to clarify a concept, and even then **2px** strokes are used to add dimension instead of larger fill areas.
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon with depth clarifies concept"><img class="figure-img" src="/img/icons-depth-do-2.svg" alt="3D box icon" role="img" /><figcaption class="figure-caption">Icon with depth clarifies concept</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with no depth is too vague"><img class="figure-img" src="/img/icons-depth-dont-2.svg" alt="Square icon" role="img" /><figcaption class="figure-caption">Icon with no depth is too vague</figcaption></figure> |
+| <figure-img alt="3D box icon" label="Icon with depth clarifies concept" src="/img/icons-depth-do-2.svg"></figure-img>| <figure-img alt="Square icon" label="Icon with no depth is too vague" src="/img/icons-depth-dont-2.svg"></figure-img> |
 
 Simplify icons for clarity and legibility, avoiding embellishment or unnecessary details.
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Simplified icon"><img class="figure-img" src="/img/icons-shape-simple.svg" alt="Simple house icon" role="img" /><figcaption class="figure-caption">Simplified icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Overly complex icon"><img class="figure-img" src="/img/icons-shape-complex.svg" alt="Complex house icon" role="img" /><figcaption class="figure-caption">Overly complex icon</figcaption></figure> |
+| <figure-img alt="Simple house icon" label="Simplified icon" src="/img/icons-shape-simple.svg"></figure-img> | <figure-img alt="Complex house icon" label="Overly complex icon" src="/img/icons-shape-complex.svg"></figure-img> |
 
 Remove or close counters that are less than `1px` to avoid distracting artifacts.
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon with no small counters"><img class="figure-img" src="/img/icons-counter-do.svg" alt="Pencil icon" role="img" /><figcaption class="figure-caption">Icon with no small counters</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with small, distracting counter"><img class="figure-img" src="/img/icons-counter-dont.svg" alt="Pencil icon" role="img" /><figcaption class="figure-caption">Icon with small, distracting counter</figcaption></figure> |
+| <figure-img alt="Pencil icon" label="Icon with no small counters" src="/img/icons-counter-do.svg"></figure-img> | <figure-img alt="Pencil icon" label="Icon with small, distracting counter" src="/img/icons-counter-dont.svg"></figure-img> |
 
 Use square caps and shape edges to directly indicate clipping or layering. Round should still be used when breaks and intersections are more stylistic.
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon with square clipped cap"><img class="figure-img" src="/img/icons-clip-do.svg" alt="Duplicate icon" role="img" /><figcaption class="figure-caption">Icon with square clipped cap</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon with round clipped cap"><img class="figure-img" src="/img/icons-clip-dont.svg" alt="Duplicate icon" role="img" /><figcaption class="figure-caption">Icon with round clipped cap</figcaption></figure> |
+| <figure-img alt="Duplicate icon" label="Icon with square clipped cap" src="/img/icons-clip-do.svg"></figure-img> | <figure-img alt="Duplicate icon" label="Icon with round clipped cap" src="/img/icons-clip-dont.svg"></figure-img> |
 
 ## Concepts
 
@@ -245,8 +188,8 @@ As with all of the guidelines, there will always be some level of subjectivity. 
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Crisp shield icon"><img class="figure-img" src="/img/icons-concept-style-do.svg" alt="Shield icon" role="img" /><figcaption class="figure-caption">Crisp shield icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Soft shield icon"><img class="figure-img" src="/img/icons-concept-style-dont.svg" alt="Shield icon" role="img" /><figcaption class="figure-caption">Friendly shield icon</figcaption></figure> |
-| <figure class="figure" role="figure" aria-label="Literal table icon"><img class="figure-img" src="/img/icons-concept-style-do-2.svg" alt="Table icon" role="img" /><figcaption class="figure-caption">Literal table icon</figcaption></figure> | <figure class="figure" role="figure" aria-label="Rounded table icon"><img class="figure-img" src="/img/icons-concept-style-dont-2.svg" alt="Table icon" role="img" /><figcaption class="figure-caption">Rounded table icon</figcaption></figure> |
+| <figure-img alt="Shield icon" label="Crisp shield icon" src="/img/icons-concept-style-do.svg"></figure-img>| <figure-img alt="Shield icon" label="Soft shield icon" src="/img/icons-concept-style-dont.svg"></figure-img> |
+| <figure-img alt="Table icon" label="Literal table icon" src="/img/icons-concept-style-do-2.svg"></figure-img> | <figure-img alt="Table icon" label="Rounded table icon" src="/img/icons-concept-style-dont-2.svg"></figure-img> |
 
 ### Icon meaning
 
@@ -260,11 +203,11 @@ Avoid using different icons to refer to one specific meaning. For example, [penc
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon represents “menu”"><img class="figure-img" src="/img/icons-concept-dup.svg" alt="Menu icon" role="img" /><figcaption class="figure-caption">Icon represents “menu”</figcaption></figure> | <figure class="figure" role="figure" aria-label="menu icon used for “list”"><img class="figure-img" src="/img/icons-concept-dup-dont.svg" alt="menu icon" role="img" /><figcaption class="figure-caption">Menu icon used for “list”</figcaption></figure> |
+| <figure-img alt="Menu icon" label="Icon represents “menu”" src="/img/icons-concept-dup.svg"></figure-img> | <figure-img alt="Menu icon" label="menu icon used for “list”" src="/img/icons-concept-dup-dont.svg"></figure-img> |
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Correct icon for “full screen”"><img class="figure-img" src="/img/icons-concept-meaning-do.svg" alt="Full screen icon" role="img" /><figcaption class="figure-caption">Correct icon for “full screen”</figcaption></figure> | <figure class="figure" role="figure" aria-label="Different icon for “full screen”"><img class="figure-img" src="/img/icons-concept-meaning-dont.svg" alt="Alternate full screen icon" role="img" /><figcaption class="figure-caption">Different icon for “full screen”</figcaption></figure> |
+| <figure-img alt="Full screen icon" label="Correct icon for “full screen”" src="/img/icons-concept-meaning-do.svg"></figure-img> | <figure-img alt="Alternate full screen icon" label="Different icon for “full screen”" src="/img/icons-concept-meaning-dont.svg"></figure-img> |
 
 #### Icons with multiple meanings
 
@@ -282,7 +225,7 @@ If an icon is not accompanied by a label or its use isn't clear based on the imm
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Icon meaning is available"><img class="figure-img" src="/img/icons-concept-clear.svg" alt="Got hook icon with label and tooltip" role="img" /><figcaption class="figure-caption">Icon meaning is available</figcaption></figure> | <figure class="figure" role="figure" aria-label="Is that a smiling cat?"><img class="figure-img" src="/img/icons-concept-unclear.svg" alt="Git hook icon" role="img" /><figcaption class="figure-caption">Is that a smiling cat?</figcaption></figure> |
+| <figure-img alt="Got hook icon with label and tooltip" label="Icon meaning is available" src="/img/icons-concept-clear.svg"></figure-img> | <figure-img alt="Git hook icon" label="Is that a smiling cat?" src="/img/icons-concept-unclear.svg"></figure-img> |
 
 #### Modern metaphors
 
@@ -290,7 +233,7 @@ Try to avoid potentially antiquated concepts, especially when something more mod
 
 | **Do** | **Don’t** |
 | --- | --- |
-| <figure class="figure" role="figure" aria-label="Flat screen display"><img class="figure-img" src="/img/icons-concept-new.svg" alt="Flat screen display with play symbol" role="img" /><figcaption class="figure-caption">Flat screen display</figcaption></figure> | <figure class="figure" role="figure" aria-label="Old tube TV"><img class="figure-img" src="/img/icons-concept-old.svg" alt="Tube TV with antenna" role="img" /><figcaption class="figure-caption">Old tube TV</figcaption></figure> |
+| <figure-img alt="Flat screen display with play symbol" label="Flat screen display" src="/img/icons-concept-new.svg"></figure-img> | <figure-img alt="Tube TV with antenna" label="Old tube TV" src="/img/icons-concept-old.svg"></figure-img> |
 
 ### Naming
 

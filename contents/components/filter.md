@@ -19,9 +19,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Filter structure">
-  <img class="figure-img" src="/img/filter-structure.svg" alt="Numbered diagram of a filter structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a filter structure" label="Filter structure" src="/img/filter-structure.svg"></figure-img>
 
 1. **Input**: The input field of the filter.
 2. **Query**: Consists of three main token parts: key (3), logical operator (4), and value (5).

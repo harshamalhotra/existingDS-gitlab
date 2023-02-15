@@ -23,9 +23,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Modal structure">
-  <img class="figure-img" src="/img/modal-structure.svg" alt="Numbered diagram of a modal structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a modal structure" label="Modal structure" src="/img/modal-structure.svg"></figure-img>
 
 1. **Backdrop**: Transparent overlay that contains the modal dialog.
 1. **Title**: A question or descriptive phrase that conveys an overview of the purpose.
@@ -54,15 +52,11 @@ related:
 
 For simple edits, consider inline editing:
 
-<figure class="figure" role="figure" aria-label="Inline editing before editing">
-  <img class="figure-img" src="/img/modal/inline-editing-1.svg" alt="Inline editing before editing" role="img" />
-</figure>
+<figure-img label="Inline editing before editing" src="/img/modal/inline-editing-1.svg"></figure-img>
 
 Clicking the "edit" button places a user in an "edit mode" for this row, which utilizes form inputs to edit text fields:
 
-<figure class="figure" role="figure" aria-label="Inline editing during editing">
-  <img class="figure-img" src="/img/modal/inline-editing-2.svg" alt="Inline editing during editing" role="img" />
-</figure>
+<figure-img label="Inline editing during editing" src="/img/modal/inline-editing-2.svg"></figure-img>
 
 ### Sizes
 

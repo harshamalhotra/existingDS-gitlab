@@ -17,9 +17,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Breadcrumb structure">
-  <img class="figure-img" src="/img/breadcrumb-structure.svg" alt="Numbered diagram of a breadcrumb structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a breadcrumb structure" label="Breadcrumb structure" src="/img/breadcrumb-structure.svg"></figure-img>
 
 1. **Avatar** (optional): Prefixes a group or project link.
 1. **Link**: Opens the page in the same window.

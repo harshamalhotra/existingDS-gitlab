@@ -22,9 +22,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Banner structure">
-  <img class="figure-img" src="/img/banner-structure.svg" alt="Numbered diagram of a banner structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a banner structure" label="Banner structure" src="/img/banner-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Illustration** (optional): Compliments the content.
@@ -76,15 +74,9 @@ A banner should be used sparingly and with consideration of its impact to neighb
 - Similar to [alert placement](/components/alert#placement), the content within the banner will determine its placement on the page.
 - Generally speaking, an introduction banner should be used at the page-level and relate to all content on the page, whereas a promotion banner can either be used at the page-level or in-page level. If in-page level is used, the banner should be placed directly above the content it relates to.
 
-<figure class="figure" role="figure" aria-label="Introduction banner at the top of the page">
-  <img class="figure-img" src="/img/banner-page-level.png" alt="Page level banner position" role="img" style="width:100%; max-width:332px; height:auto" />
-  <figcaption class="figure-caption">Introduction banner at the top of the page</figcaption>
-</figure>
+<figure-img alt="Page level banner position" label="Introduction banner at the top of the page" src="/img/banner-page-level.png" width="332"></figure-img>
 
-<figure class="figure" role="figure" aria-label="In-page banner above the content it relates to">
-  <img class="figure-img" src="/img/banner-in-page.png" alt="Page level banner position" role="img" style="width:100%; max-width:332px; height:auto" />
-  <figcaption class="figure-caption">In-page banner above the content it relates to</figcaption>
-</figure>
+<figure-img alt="Page level banner position" label="In-page banner above the content it relates to" src="/img/banner-in-page.png" width="332"></figure-img>
 
 ### Accessibility
 

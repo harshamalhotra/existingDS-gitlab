@@ -21,9 +21,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Token structure">
-  <img class="figure-img" src="/img/token-structure.svg" alt="Numbered diagram of a token structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a token structure" label="Token structure" src="/img/token-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
 1. **Avatar** (optional): Prefixes the text for a user, project, or group.

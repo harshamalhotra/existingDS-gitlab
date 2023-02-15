@@ -27,9 +27,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Table structure">
-  <img class="figure-img" src="/img/table-structure.svg" alt="Numbered diagram of a table structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a table structure" label="Table structure" src="/img/table-structure.svg"></figure-img>
 
 1. **Caption**: Provides a meaningful description for a table. A caption should only be optional when a heading directly precedes the table and provides clear enough context for it.
 1. **Header cell**: Can be used to sort table content.
@@ -79,7 +77,7 @@ related:
 
 |                                                                                                                                                                             **Do**                                                                                                                                                                             |                                                                                                                                                                             **Don’t**                                                                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <figure class="figure" role="figure" aria-label="Table row content vertially aligned to top"><img class="figure-img" src="/img/table-valign-top-do.svg" alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" role="img" /><figcaption class="figure-caption">Top align in most cases</figcaption></figure> | <figure class="figure" role="figure" aria-label="Icon not horizontally aligned to the pixel grid"><img class="figure-img" src="/img/table-valign-top-dont.svg" alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" role="img" /><figcaption class="figure-caption">Avoid middle align</figcaption></figure> |
+| <figure-img alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" label="Table row content vertially aligned to top" src="/img/table-valign-top-do.svg"></figure-img> | <figure-img alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" label="Icon not horizontally aligned to the pixel grid" src="/img/table-valign-top-dont.svg"></figure-img> |
 
 ### Behavior 
 

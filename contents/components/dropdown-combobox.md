@@ -19,9 +19,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Combobox widget structure">
-  <img class="figure-img" src="/img/dropdown-combobox-structure.svg" alt="Numbered diagram of a combobox widget structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of a combobox widget structure" label="Combobox widget structure" src="/img/dropdown-combobox-structure.svg"></figure-img>
 
 1. **Text input or button**: Triggers the panel to open or close.
 1. **Panel**: Wraps the content.

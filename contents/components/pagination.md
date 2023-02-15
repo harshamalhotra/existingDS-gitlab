@@ -24,9 +24,7 @@ related:
 
 ## Structure
 
-<figure class="figure" role="figure" aria-label="Pagination structure">
-  <img class="figure-img" src="/img/pagination-structure.svg" alt="Numbered diagram of pagination structure" role="img" />
-</figure>
+<figure-img alt="Numbered diagram of pagination structure" label="Pagination structure" src="/img/pagination-structure.svg"></figure-img>
 
 1. **Previous icon**: A [chevron-left](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-left) icon as part of the "previous page" link.
 1. **Previous label**: Text that indicates navigating to the previous page.

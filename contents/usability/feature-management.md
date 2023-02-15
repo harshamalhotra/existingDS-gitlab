@@ -26,9 +26,7 @@ Use input data to determine where, when, and why a feature discovery moment is n
 
 Higher tier features should be easy to identify from the rest of the interface. Consider using the following badge to highlight them: 
 
-<figure class="figure" role="figure" aria-label="Higher tier feature badge">
-  <img class="figure-img" src="/img/higher-tier-feature-badges.svg" alt="Premium feature badge" role="img" />
-</figure>
+<figure-img alt="Premium feature badge" label="Higher tier feature badge" src="/img/higher-tier-feature-badges.svg"></figure-img>
 
 <todo>Replace badge image with live example or link once the new variant has been added to GitLab UI.</todo>
  
@@ -61,7 +59,7 @@ to the [feature management documentation](https://docs.gitlab.com/ee/policy/alph
 | Alpha | Beta |
 | ------ | ------ |
 | Features in Alpha aren't fully tested and may break. | Features in Beta may still contain bugs or inconsistencies. |
-| <figure class="figure" role="figure" aria-label="Alpha feature badge"><img class="figure-img" src="/img/alpha-feature-badge.svg" alt="Alpha feature badge" role="img" /></figure> | <figure class="figure" role="figure" aria-label="Beta feature badge"><img class="figure-img" src="/img/beta-feature-badge.svg" alt="Beta feature badge" role="img" /></figure> |
+| <figure-img label="Alpha feature badge" src="/img/alpha-feature-badge.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/beta-feature-badge.svg"></figure-img> |
 
 #### Specification
 
