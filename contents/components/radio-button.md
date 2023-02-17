@@ -1,6 +1,7 @@
 ---
 name: Radio button
 description: A radio button typically represents a single option in a group of related choices.
+componentLabel: form-radio-button
 stories:
   - base-form-form-radio--default
 related:

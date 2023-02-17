@@ -1,6 +1,7 @@
 ---
 name: Search
 description: Search patterns enable users to find certain information by adding criteria that match their query.
+componentLabel: form-search
 stories:
   - base-search-box-by-click--default
   - base-search-box-by-type--default

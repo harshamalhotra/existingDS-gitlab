@@ -1,6 +1,7 @@
 ---
 name: Select
-description: 
+description: An HTML element, typically used in a form.
+componentLabel: form-select
 ---
 
 ## Examples

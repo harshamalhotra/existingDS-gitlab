@@ -1,6 +1,7 @@
 ---
 name: Textarea
-description: 
+description: A component for the HTML textarea element.
+componentLabel: form-textarea
 ---
 
 ## Examples
