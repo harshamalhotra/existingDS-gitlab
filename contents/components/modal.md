@@ -72,10 +72,7 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
   - When modal content extends below the viewport, the viewport remains scrollable.
   - If modal content exceeding the height of the viewport impedes a user’s ability to maintain context or see important actions, the content within the modal is scrollable.
 - On small screens where content requires scrolling, consider opening the content in a new page instead.
-- When dropdowns are present in modals, take care to ensure the dropdown is visible by:
-  - Allowing dropdowns to extend outside the boundary of the modal if needed. 
-  - Positioning the dropdown above rather than below the trigger if it keeps the dropdown within the viewport.
-  - If keeping the modal and dropdown inside the viewport is not possible, allow the modal overlay to scroll rather than the modal itself. Leave space between the bottom of the dropdown and the edge of the viewport where possible.
+- Avoid making the modal content area scrollable. This allows dropdowns and similar popups to extend outside the boundary of the modal when necessary and to re-position as needed depending on available space.
 
 ### Content
 
