@@ -1,6 +1,7 @@
 ---
 name: Filter
 description: Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
+componentLabel: form-filter
 stories:
   - base-filtered-search--default
 related:

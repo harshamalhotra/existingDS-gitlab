@@ -1,6 +1,7 @@
 ---
 name: Token
 description: A token represents a keyword used to add or filter objects.
+componentLabel: form-token
 stories:
   - base-token--default
 related:

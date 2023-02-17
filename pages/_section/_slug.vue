@@ -62,38 +62,41 @@ export default {
       if (section !== 'components') {
         return null;
       }
+      if (this.page.componentLabel !== undefined) {
+        return this.page.componentLabel;
+      }
       return componentNameToLabelMap[slug] || slug;
     },
     hasStories() {
       return Boolean(this.page?.stories?.length);
     },
     showTabs() {
-      return this.hasStories || Boolean(this.page?.tabs?.length);
+      return Boolean(this.tabs.length);
     },
     tabs() {
       let { tabs = [] } = this.page;
 
-      tabs = [
-        {
-          route: 'section-slug',
-          title: 'Usage',
-        },
-        ...tabs,
-      ];
-
-      if (this.hasStories) {
-        tabs.push({
-          route: 'section-slug-code',
-          title: 'Implementation (Vue.js)',
-        });
-      }
-
-      tabs.push({
-        route: 'section-slug-lookbook',
-        title: 'Implementation (Rails)',
-      });
-
       if (this.componentLabel) {
+        tabs = [
+          {
+            route: 'section-slug',
+            title: 'Usage',
+          },
+          ...tabs,
+        ];
+
+        if (this.hasStories) {
+          tabs.push({
+            route: 'section-slug-code',
+            title: 'Implementation (Vue.js)',
+          });
+
+          tabs.push({
+            route: 'section-slug-lookbook',
+            title: 'Implementation (Rails)',
+          });
+        }
+
         tabs.push({
           route: 'section-slug-contribute',
           title: 'Contribute',

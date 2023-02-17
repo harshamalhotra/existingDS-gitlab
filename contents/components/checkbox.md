@@ -1,6 +1,7 @@
 ---
 name: Checkbox
 description: A checkbox form element represents a boolean option.
+componentLabel: form-checkbox
 stories:
   - base-form-form-checkbox--default
 related:

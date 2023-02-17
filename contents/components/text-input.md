@@ -1,6 +1,7 @@
 ---
 name: Text input
-description: 
+description: A component for the HTML input type="text" element.
+componentLabel: form-text-input
 ---
 
 ## Examples

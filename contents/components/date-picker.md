@@ -1,6 +1,7 @@
 ---
 name: Date picker
 description: The date picker allows a user to choose and/or input a date by using a calendar dropdown or by typing the date into a text field.
+componentLabel: form-date-picker
 stories:
   - base-datepicker--default
   - base-daterange-picker--default
