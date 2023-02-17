@@ -28,18 +28,15 @@ export default {
     };
   },
   computed: {
-    lookbookComponentName() {
+    componentName() {
       return NAME_MAPPING[this.page.slug];
     },
-    lookbookInspectUrl() {
-      return `${this.$lookbookUrl}/inspect/pajamas/${this.lookbookComponentName}`;
-    },
-    lookbookPreviewUrl() {
-      return `${this.$lookbookUrl}/preview/pajamas/${this.lookbookComponentName}/default?_display=`;
+    inspectUrl() {
+      return `${this.$lookbookUrl}/inspect/pajamas/${this.componentName}`;
     },
     previewName() {
       const capitalizedComponentName =
-        this.lookbookComponentName.charAt(0).toUpperCase() + this.lookbookComponentName.slice(1);
+        this.componentName.charAt(0).toUpperCase() + this.componentName.slice(1);
       return `Pajamas::${capitalizedComponentName}ComponentPreview`;
     },
   },
@@ -48,12 +45,12 @@ export default {
 
 <template>
   <div class="app-styles gl-pt-0 gl-pb-4">
-    <div v-if="lookbookComponentName">
+    <div v-if="componentName">
       <lookbook-embed :app="$lookbookUrl" :preview="previewName" panels="params,notes,*" />
       <p class="gl-pt-4">
         <b>
-          Find <a :href="lookbookInspectUrl">more scenarios</a> of the
-          {{ lookbookComponentName }} component in our Lookbook.
+          Find <a :href="inspectUrl">more scenarios</a> of the {{ componentName }} component in our
+          Lookbook.
         </b>
       </p>
     </div>
