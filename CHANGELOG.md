@@ -1,3 +1,22 @@
+# [2.151.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.150.0...v2.151.0) (2023-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v55.3.1 ([97c51c7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/97c51c70cf59cbb837f3ffe3684b233d7f6c7063))
+* Add missing "Contribute" tabs ([0fbce90](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0fbce90ccde6de11a2f761382a57f8d0cfe0ed30))
+* **deps:** update dependency nuxt to v2.16.1 ([a225056](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a225056184466d859dc355c17b926fcdb73749a4))
+* Add figure-img component ([b9b2a33](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b9b2a33cb10f701f377781cace2d799b4152828d))
+* Update or remove broken links ([0593427](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0593427580639de9f38882e9ba64899e8192b40c))
+
+
+### Features
+
+* **BrandMotion:** Embed video samples ([05b61d7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/05b61d7c32958f078a39da4add9854b1885ef969))
+* **Link:** include truncation reference ([8878cfa](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8878cfaa24da6a544012749673faa33fe5e230bc))
+* **Modal:** specify dropdown usage in modal window version two ([56d4092](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/56d40929dea05644785fa3b4e2d83ce9b9dd2313))
+* **Tooltip:** Add tooltip structure diagram ([fb6f50a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fb6f50a0f7a54b74c36f4d705dc54dc8c8f9d813))
+
 # [2.150.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.149.0...v2.150.0) (2023-02-13)
 
 
