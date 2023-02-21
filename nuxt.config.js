@@ -110,6 +110,9 @@ export default {
             }
           }`,
       },
+      {
+        src: `${LOOKBOOK_URL}/../lookbook-assets/js/lookbook-core.js`,
+      },
     ],
     __dangerouslyDisableSanitizersByTagID: {
       'cookie-banner-callback': ['innerHTML'],
@@ -262,4 +265,10 @@ export default {
 
   // see https://nuxtjs.org/api/configuration-hooks
   hooks: {},
+
+  vue: {
+    config: {
+      ignoredElements: [/^lookbook-embed/],
+    },
+  },
 };

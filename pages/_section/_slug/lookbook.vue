@@ -17,16 +17,6 @@ export default {
       required: true,
     },
   },
-  head() {
-    return {
-      script: [
-        {
-          src: `${this.$lookbookUrl}/../lookbook-assets/js/lookbook-core.js`,
-          body: true,
-        },
-      ],
-    };
-  },
   computed: {
     componentName() {
       return NAME_MAPPING[this.page.slug];
@@ -39,6 +29,10 @@ export default {
         this.componentName.charAt(0).toUpperCase() + this.componentName.slice(1);
       return `Pajamas::${capitalizedComponentName}ComponentPreview`;
     },
+  },
+  async mounted() {
+    await this.$nextTick();
+    window.Lookbook.initEmbeds();
   },
 };
 </script>
