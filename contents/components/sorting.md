@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-sorting--default" title="Default" iframe-padding="0 0 75px 0"></story-viewer>
+<story-viewer story-name="base-sorting--default" title="Default" iframe-padding="0 0 100px 0"></story-viewer>
 
 <todo>Add to Pajamas UI kit.</todo>
 
