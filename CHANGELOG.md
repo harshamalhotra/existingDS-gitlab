@@ -1,3 +1,13 @@
+## [2.151.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.151.0...v2.151.1) (2023-02-27)
+
+
+### Bug Fixes
+
+* update dropdowns decision tree ([499f6aa](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/499f6aab7f92b7804f804c4f0bbb1c4e268fe6db))
+* **deps:** update dependency @gitlab/ui to v56 ([51f116c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/51f116c172c40abf4bf7576bb844a5be8a2bc8dd))
+* **deps:** update dependency @nuxtjs/sentry to ^7.0.4 ([bc81c2f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bc81c2faa0c0d73ed51e45d6a900291b25a6d1d0))
+* **deps:** update dependency iframe-resizer to ^4.3.4 ([e96e515](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e96e515141d04e6128e9857a06c9f2d10537a1ee))
+
 # [2.151.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.150.0...v2.151.0) (2023-02-20)
 
 
