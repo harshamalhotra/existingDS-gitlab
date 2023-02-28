@@ -254,6 +254,7 @@ export default {
       // optional chaining operator
       '@gitlab/ui',
       'bootstrap-vue',
+      'mermaid',
     ],
   },
 
