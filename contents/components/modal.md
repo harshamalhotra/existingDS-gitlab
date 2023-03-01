@@ -60,19 +60,20 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 
 ### Sizes
 
-- **Small**: Small modals are used for simple tasks with little content.
-- **Default**: Default modals are used in most use cases.
-- **Large**: Large modals are used for lots of content, tabbed content, or content that requires a larger container.
+- **Small**: A small modal is used for simple tasks with little content.
+- **Medium (default)**: A medium modal is used for most use cases.
+- **Large**: A large modal is used for wide content that might use tabs or a table or otherwise benefit from a wider container.
 
 ### Behavior
 
-- Utilizes the lightbox effect when opened.
-- The first focusable item should be auto-focused within the modal dialog.
+- Opens on top of all other content with a transparent backdrop behind to cover it.
+- Top-aligned at the extra-small (xs) breakpoint and otherwise vertically centered in the viewport.
+- Always center horizontally and scale down responsively when the page is narrower than the modal's max width.
 - The height of the modal is determined by the content.
   - When modal content extends below the viewport, the viewport remains scrollable.
-  - If modal content exceeding the height of the viewport impedes a user’s ability to maintain context or see important actions, the content within the modal is scrollable.
+  - If modal content exceeds the height of the viewport and impedes a user’s ability to maintain context or see important actions, the content within the modal can be made scrollable. However, this should be avoided, if possible, because doing so impacts the ability for [dropdowns](/components/dropdown-overview) and other popups ([tooltips](/components/tooltip) and [popovers](/components/popover)) to extend outside the boundary of the modal when necessary and to reposition as needed depending on available space.
 - On small screens where content requires scrolling, consider opening the content in a new page instead.
-- Avoid making the modal content area scrollable. This allows dropdowns and similar popups to extend outside the boundary of the modal when necessary and to re-position as needed depending on available space.
+- The first focusable item should be auto-focused within the modal dialog.
 
 ### Content
 
