@@ -333,6 +333,10 @@
         "path": "patterns",
         "items": [
           {
+            "title": "Dashboards",
+            "path": "dashboards"
+          },
+          {
             "title": "Empty States",
             "path": "empty-states"
           },

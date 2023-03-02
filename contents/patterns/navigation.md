@@ -18,9 +18,13 @@ The top bar navigation items are replaced by exit links during scenarios that ha
 
 <todo>Add top bar example</todo>
 
-### Dashboard
+### Homepage
 
-The dashboard is the page users see at the top level of GitLab.com or their instance, and it's where users are directed after logging in. This page is considered navigation, as it is meant to help users orient themselves upon logging in. Currently this page is [configurable in User Settings](https://docs.gitlab.com/ee/user/profile/preferences.html#default-dashboard).
+The homepage is the first page a user sees at the top level of GitLab.com or their instance after logging in. It's also where a user is directed after clicking the GitLab or instance logo in the navigation. This page is meant to help the user orient themself upon logging in. Currently this page is [configurable in User Settings](https://docs.gitlab.com/ee/user/profile/preferences.html#default-dashboard).
+
+### Landing page
+
+A landing page is the page directly tied to a link in the navigation. Typically, a landing page is action-oriented and contains overview and/or summary content, but it can also be a [dashboard](/patterns/dashboards) for analysis-oriented tasks.
 
 ### User settings menu
 The user settings menu is the rightmost menu which contains items related to the logged-in user.
