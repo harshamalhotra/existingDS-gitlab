@@ -44,7 +44,7 @@ There are four categories of links in GitLab. Although all links are navigationa
 - An inline text link is always underlined and `$blue-500` at rest. On hover or focus, the color darkens and the underline persists. It appears this way regardless of formatting applied (bold, italic, or monospace) or parent text element (heading, paragraph, list, or code).
 - A UI link is always `$blue-500` at rest with no underline. On hover, the color darkens and an underline appears.
 - As meta links can represent a wide variety of content, their styles can also adapt for each context. The attribute all meta links share is an underline only on hover or focus. At rest they can be `$blue-500`, `$gray-900`, or `$gray-700`. On hover, the color darkens. Similar to inline links they appear this way regardless of formatting applied (bold, italic, monospace). Because of the available styling, which overlaps with static text, it's critical to ensure that users understand what is linked and what isn't in each context. Additionally, similar types of linked meta content should be styled the same throughout the product.
-- A mention link is always `$blue-500` and has a background color behind the link at rest; `$blue-100` for any user, and `$orange-50` for the current user. On hover or focus the text is underlined.
+- A mention link is always `$blue-700` and has a background color behind the link at rest; `$blue-100` for any user, and `$orange-100` for the current user. On hover or focus the text is underlined.
 
 <todo>Add visual example of link appearance.</todo>
 
