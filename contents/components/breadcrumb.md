@@ -14,6 +14,7 @@ related:
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2560%3A2230)
 
+<note>The breadcrumb design will be updated as part of [gitlab-ui/#2141](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2141).</note>
 
 ## Structure
 
@@ -21,7 +22,7 @@ related:
 
 1. **Avatar** (optional): Prefixes a group or project link.
 1. **Link**: Opens the page in the same window.
-1. **Separator**: The [chevron-right](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-right) icon is between each link.
+1. **Separator**: A forward slash character `/` separates each link.
 
 ## Guidelines
 
@@ -32,6 +33,13 @@ related:
 ### When not to use
 
 - If you need to link to sibling or related pages, use a form of [navigation](/patterns/navigation) instead.
+
+### Appearance
+
+- An avatar can appear to the left of the text for any group, project, or user link in the breadcrumb.
+- A bottom border may be applied to a parent container to visually distinguish the breadcrumb from the content of the page.
+
+<todo>Update border related appearance notes as a result of [!3262](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3263#note_1283440645).</todo>
 
 ### Behavior
 
@@ -75,5 +83,6 @@ Some pages have a special breadcrumb path to make the text intuitive. They are d
 ### Accessibility
 
 - A `nav` element with `aria-label="Breadcrumb"` wraps an ordered list to provide a navigation landmark.
+- Ensure the last item in a breadcrumb is a link (rather than plain text) so it's included in the focus order. Added benefits of doing so include making it easy to generate a pristine page link (without a trailing anchor reference to a heading, diff, comment, or other location within the page) or to refresh the page.
 - `aria-current="page"` is on the last link to indicate that it's the current page.
 - See the [WAI-ARIA Authoring Practices Breadcrumb Example](https://w3c.github.io/aria-practices/examples/breadcrumb/index.html) for more details.
