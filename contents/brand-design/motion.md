@@ -13,13 +13,13 @@ Video producers can create large-scale, custom illustrations as part of a video 
 - Each layer can have its own unique motion type which combine to create harmony.
 - Strokes and lines are animated independently with a stroke reveal effect.
 
-<figure-img alt="Illustration animation example with motion details" label="Illustration animation example" src="/img/brand/illustration-animation-example.png"></figure-img>
+<figure-img alt="Deconstructed layered illustration animation example with motion details" label="Illustration animation example" src="/img/brand/illustration-animation-deconstructed.png"></figure-img>
 
 <vimeo-player title="Illustration" video-id="791344150"></vimeo-player>
 
 #### Easing
 
-Both interactive and expressive motion come with unique parameters to create scalable consistency in their use.
+Both interactive and expressive motion come with unique parameters to create scalable consistency in their use. Interactive ease is a standard ease in and out and the Expressive ease is an overshoot and snap back. Input the following data in the [flow plugin](https://aescripts.com/flow/) to achieve Interactive and Expressive easing.
 
 <figure-img alt="Illustration easing example with After Effects specs" label="Illustration easing example" src="/img/brand/illustration-easing-specs.svg" width="480"></figure-img>
 
@@ -51,14 +51,12 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - Points of interest like text, icons, or footage can appear and move between sections to allow for more negative space between the assets.
 - Avoid diagonal movement.
 
-**Motion sample:** The text above is in section 1-2 while iconography occupies space in sections 2-2 and 2-3.
-
 <vimeo-player title="Frame composition" video-id="791336183"></vimeo-player>
 
 ## Tanuki + DevOps loop
 
 - Whenever introducing the GitLab logo in video, the trace logo animation may be used.
-- It should animate on using a stroke reveal using Interactive Ease.
+- It should animate on using a stroke reveal using Interactive ease.
 - Don't use any other reveals such as fading on logo, having the logo move in from outside the frame, or scaling to reveal the logo.
 
 <vimeo-player title="Tanuki" video-id="791334272"></vimeo-player>
@@ -77,7 +75,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 
 [Download the gradient file](https://drive.google.com/file/d/13PPVVsDp6ySALH-14pQrzcDXYWD6qRwU/view) 
 
-<figure-img alt="Soft gradient example" label="Gradient example" src="/img/brand/gradient-1.png"></figure-img>
+<figure-img alt="4 color, soft gradient example with motion details" label="Gradient example" src="/img/brand/gradient-1.png"></figure-img>
 
 ### Option 2
 
@@ -85,40 +83,38 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - Blur at 71% with 3 iterations.
 - Animate turbulent displacement evolution to create subtle animation.
 
-<figure-img alt="Organic gradient example" label="Gradient example" src="/img/brand/gradient-2.png"></figure-img>
+<figure-img alt="3-5 color, organic gradient example with subtle animation" label="Gradient example" src="/img/brand/gradient-2.png"></figure-img>
 
 ### Gradients on text
 
-- Emphasize words or phrases by filling the text with the gradient.
+- Emphasize words or phrases by filling the text with one of the gradient options.
 - The gradient can be used on keywords, whole phrases, and text repetitions.
 - The text masks out the gradient.
 
-<figure-img alt="Gradient on text example" label="Gradient text example" src="/img/brand/gradient-type.png"></figure-img>
+<figure-img alt="Example of gradient masked over text" label="Gradient text example" src="/img/brand/gradient-type.png"></figure-img>
 
 ### Incorrect use of gradients
 
 - Be careful not to go too heavy with one particular color.
 - Don't overuse motion with gradients; keep movement subtle.
 
-<todo>Add motion sample of incorrect gradients.</todo>
-
 ## Typographic animations
 
 ### Snap edits
 
 - Use quick snap edits in typographic animations to elicit excitement and draw attention to specific words.
-- Use in lieu of any large-scale drifts, move ins, zooms, etc.
+- Use in lieu of any large-scale drifts, move ins, or zooms.
+- Create a snap by jumping the text’s position in the middle of a scale animation.
 
-<todo>Add simple snap and complex snap motion samples.</todo>
+<vimeo-player title="Snap edits" video-id="791341810"></vimeo-player>
 
 ### Motion and scaling
 
-- Use **subtle drifts** to maintain movement and avoid dead frames when a more subdued treatment is required.
+- Use subtle drifts to maintain movement and avoid dead frames when a more subdued treatment is required.
 - Use for moments of pause to let words sink in.
 - Drifts utilize a 2-5% scale or position change.
 
-<todo>Add position drift and scale drift motion samples.</todo>
-<todo>Add figure and text with detailed specs.</todo>
+<vimeo-player title="Drifts" video-id="791341794"></vimeo-player>
 
 ### Outline reveals
 
@@ -132,19 +128,20 @@ The example below uses the following steps:
 1. The stroke begins to animate as “innovation” moves to meet the other words.
 1. Once in place the opacity transitions from 30% to 100%.
 
-<figure-img alt="Outline reveals on text example" label="Outline reveals example" src="/img/brand/outline-reveal-tech-spec.png"></figure-img>
+<figure-img alt="Three frames showing text revealed by a stroke outline" label="Outline reveals example" src="/img/brand/outline-reveal-tech-spec.png"></figure-img>
 
-<todo>Add outline reveal motion samples.</todo>
+<vimeo-player title="Text outlines" video-id="791331656"></vimeo-player>
 
 ### Type repetitions
 
-- Type repetitions add visual interest while drawing attention to areas of emphasis. They are a more dynamic, spirited way to emphasize text. They can be used to emphasize a single word or a whole phrase and can animate in a variety of ways.
-- Slide the text lines upward into position behind masks one line at a time, transitioning opacity from 0-100 using our interactive ease.
+- [Type repetitions](/brand-design/typography#type-repetitions) add visual interest while drawing attention to areas of emphasis. They are a more dynamic, spirited way to emphasize text. They can be used to emphasize a single word or a whole phrase and can animate in a variety of ways.
+- Slide the text lines upward into position behind masks one line at a time, transitioning opacity from 0-100 using Interactive ease.
 
-<figure-img alt="Type repetition with breakdown specs" label="Type repetitions" src="/img/brand/type-repetitions-motion.svg"></figure-img>
+<vimeo-player title="Type repetitions" video-id="791340089"></vimeo-player>
 
-<todo>Add reference for _interactive ease_.</todo>
-<todo>Add type repetition motion sample.</todo>
+<figure-img alt="Type repetition with breakdown specs" label="Type repetitions" src="/img/brand/type-repetition-motion.svg"></figure-img>
+
+<vimeo-player title="Type repetitions" video-id="791340089"></vimeo-player>
 
 ## Transitions
 
@@ -153,17 +150,14 @@ The example below uses the following steps:
 - In addition to straight cuts, when moving from animation to footage, footage to animation, or footage to footage, use the DevOps loop transition.
 - The tanuki should never be used as a transition mask. Use only the loop itself.
 
-<todo>Add a reference for the _DevOps loop transition_.</todo>
-<todo>Add motion sample.</todo>
+<vimeo-player title="Partial transition" video-id="791341092"></vimeo-player>
 
 ### DevOps loop sections as mask
 
 - In the DevOps loop transition, the loop is split into sections that are animated as masks to reveal another layer.
 - DevOps loop transitions can be colorful and utilize solid colors as well as gradients.
 
-**Note:** The orange in the motion sample is only used to differentiate the sections.
-
-<todo>Add motion sample.</todo>
+<vimeo-player title="Masked transition" video-id="795681210"></vimeo-player>
 
 ## Lower thirds
 
@@ -175,6 +169,12 @@ The example below uses the following steps:
   - Lower third remains onscreen for 4-5 seconds. 
   - **Transition out:** Animate opacity from 100% to 0% over 1 second.
 
-<figure-img alt="Lower thirds motion example with specs" label="Lower thirds example" src="/img/brand/lower-thirds.png"></figure-img>
+<vimeo-player title="Masked transition" video-id="791331388"></vimeo-player>
 
-<todo>Add motion sample.</todo>
+<figure-img alt="Lower thirds motion example with specs" label="Lower thirds example" src="/img/brand/lower-thirds-sample.png"></figure-img>
+
+**Motion details:** Use white text for lower thirds on a dark background. Use Charcoal copy on light backgrounds. Animate opacity 0% > 100%. Duration of transition: 1 second.
+- **Name:** Inter Semi Bold, 60px (header)
+- **Organization and title:** Inter Regular, 40px (subheader)
+
+
