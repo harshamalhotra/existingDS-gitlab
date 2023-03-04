@@ -75,7 +75,7 @@ Level 1 is the parent level of the widget and has the primary status in text and
 
 - Top border `1px` `$gray-100` for `n+1`
 - `$white` background
-- Collapsed by default
+- Collapsed by default with the exception of a merge widget that details reasons a merge request is blocked. Try to limit the number of expanded ones to avoid an overwhelming page.
 - Status icon: required
 
 <figure-img alt="Merge request widget level 1" label="The default layout of level 1 in a widget" src="/img/mrw-level-1.png"></figure-img>
