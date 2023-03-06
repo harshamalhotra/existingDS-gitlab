@@ -39,7 +39,7 @@
     "bootstrap": "^4.6.2",
     "iframe-resizer": "^4.3.5",
     "mermaid": "^10.0.2",
-    "nuxt": "2.16.1",
+    "nuxt": "2.16.2",
     "pikaday": "1.8.0",
     "vue-gtag": "^1.16.1"
   },
