@@ -16,7 +16,7 @@ The tanuki logomark can be used when the core logo has already been presented to
 
 DevOps is at our core, and the logomark represents adaptability, iteration, development, and – like the DevOps loop – momentum.
 
-The construction of the GitLab tanuki was based on an infinity loop, representing the limitless possibilities of The DevOps Platform.
+The construction of the GitLab tanuki was based on an infinity loop, representing the limitless possibilities of The DevSecOps Platform.
 
 <figure-img label="Logomark construction" src="/img/brand/tanuki-construction.svg" width="480"></figure-img>
 

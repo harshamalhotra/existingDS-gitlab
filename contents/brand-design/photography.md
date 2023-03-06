@@ -20,4 +20,4 @@ Metaphorical photography allows us to convey intricate ideas in an abstract way.
 
 <figure-img alt="Overhead views of people collaborating around various devices and technology" label="Collaboration photo samples" src="/img/brand/stock-collaboration-samples.jpg"></figure-img>
 
-Collaboration is a common theme at GitLab, as it highlights our mission that _everyone can contribute_. Capture collaborative scenes top-down or over a subject’s shoulder to show their working environment in a positive light. Subjects should be using their devices in a natural, candid way to show GitLab and DevOps as a normal part of everyday life. This technique draws attention to the working environment, rather than to the individual.
+Collaboration is a common theme at GitLab, as it highlights our mission that _everyone can contribute_. Capture collaborative scenes top-down or over a subject’s shoulder to show their working environment in a positive light. Subjects should be using their devices in a natural, candid way to show GitLab and DevSecOps as a normal part of everyday life. This technique draws attention to the working environment, rather than to the individual.
