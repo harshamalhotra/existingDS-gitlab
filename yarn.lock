@@ -6666,10 +6666,10 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha512-DUNFN5j7Tln0D+TxzloUjKB+CtVu6myn0JEFak6dG18mNt9YkQ6lzGCdafwofISZ1lLF3xRHJ98VKy9ynkcFaA==
 
-iframe-resizer@^4.3.2, iframe-resizer@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.3.4.tgz#6395c4bc8264db3f28eb1e6776c2570be28def80"
-  integrity sha512-l4tLVWLrK87+i/0/63XpOJIOHHYC+f4P/QNsS1zZm5JHcldR7krohBZLV7tVyAAsZ8sa1bmiDUjK4YRhyu7NBg==
+iframe-resizer@^4.3.2, iframe-resizer@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.3.5.tgz#d8bdc843f36eaebe2dd7b258e7234f438073cf8b"
+  integrity sha512-pziqOCczYtbVFgzU3KcjQDS+pMhj4QgL7JutUVazt73xeIWtx+CSRlFQp7aJ2i1bUSZwgbjSP2dez4yelV76yw==
 
 ignore@^5.2.0, ignore@^5.2.4:
   version "5.2.4"
