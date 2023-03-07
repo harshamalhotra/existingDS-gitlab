@@ -35,7 +35,7 @@
     "@gitlab/ui": "56.2.0",
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/lunr-module": "^0.3.2",
-    "@nuxtjs/sentry": "^7.0.4",
+    "@nuxtjs/sentry": "^7.1.2",
     "bootstrap": "^4.6.2",
     "iframe-resizer": "^4.3.5",
     "mermaid": "^10.0.2",
