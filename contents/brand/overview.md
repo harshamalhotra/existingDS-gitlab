@@ -8,7 +8,7 @@ These guidelines set the standard for upholding a cohesive brand image. Our bran
 
 At GitLab, we’ve created an environment where everyone can contribute, even when it comes to our brand. In 2015, the brand first emerged through the collaborative efforts of the wider GitLab community. After our company went public in 2021, we took a closer look at all its components and began a larger iteration to align our image with the next chapter of our journey. With this creative refresh we put the product at the center of our brand and refined each element to work seamlessly together.
 
-Our product propels users into the future of DevOps. With that purpose in mind, we’ve designed our brand to embody the efficiency, innovation, modern-edge, and simplicity of our all-in-one DevOps Platform.
+Our product propels users into the future of DevOps. With that purpose in mind, we’ve designed our brand to embody the efficiency, innovation, modern-edge, and simplicity of our single application DevSecOps Platform.
 
 ## Brand principles
 
@@ -16,7 +16,7 @@ Our designs are inspired by four key principles that allow us to create a multit
 
 - **Human** - We are a people-first company with a community-centric product. We strive for open and approachable designs that prioritize inclusivity, accessibility, and transparency.
 - **Reliable** - We maintain a consistent brand image that reinforces our trustworthiness and echoes the efficiency and productivity our product and company are known for.
-- **Dynamic** - We are risk-takers that have paved the way with a comprehensive DevOps Platform. We create modern and innovative designs where multiple pieces work together to tell a meaningful story.
+- **Dynamic** - We are risk-takers that have paved the way with a comprehensive DevSecOps Platform. We create modern and innovative designs where multiple pieces work together to tell a meaningful story.
 - **Clear** - We streamline the complex and show intricate concepts in a minimal way. We aim for simplified designs and messaging that are confident, clean, and informative, keeping many audiences in mind.
 
 ## Tone of voice
@@ -27,10 +27,10 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 
 | **Sample headline** | **Approach** |
 | ------ | ------ |
-| _The One DevOps Platform grows with you._ | **Human**. We invite others because we value inclusivity and transparency. We are approachable, relatable, and collaborative. |
+| _The DevSecOps Platform grows with you._ | **Human**. We invite others because we value inclusivity and transparency. We are approachable, relatable, and collaborative. |
 | _Powerful, scalable, end-to-end automation is certain with GitLab._ | **Reliable**. We provide others with trustworthy and knowledgeable resources. We are helpful, confident, and consistent. |
-| _A community of big ideas for better DevOps._ | **Dynamic**. We are dedicated to positive change. We are iterative, clever, and curious. |
-| _GitLab. The One DevOps Platform._ | **Clear**. We are concise and straight to the point. We are efficient, informative, and organized. |
+| _A community of big ideas for better DevSecOps._ | **Dynamic**. We are dedicated to positive change. We are iterative, clever, and curious. |
+| _GitLab. The DevSecOps Platform._ | **Clear**. We are concise and straight to the point. We are efficient, informative, and organized. |
 
 ## Resources
 
