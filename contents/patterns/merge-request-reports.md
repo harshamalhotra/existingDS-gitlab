@@ -178,7 +178,7 @@ Actions available for level 1 and level 2 and always use the tertiary confirm or
 1. **Download dropdown** - ability to download assets related to the widget. On hover/focus a [tooltip](/components/tooltip/) reads “{widget} downloads”.
 1. **Tertiary button** - actions that can be taken on or from the widget, like “Manage licenses” or “View report”.
 1. **Expand/collapse button** - toggles the visibility of level 2 and level 3 items when present. On hover/focus a [tooltip](/components/tooltip/) reads “Show {widget} details” when collapsed and “Hide {widget} details” when expanded.
-1. **Inline links** - can be used to provide more information about level 3 items. For example, by linking to another page or by triggering a [modal](/components/modal).
+1. **Inline links** - can be used to provide more information about level 3 items. For example, by linking to another page or by triggering a [drawer](/components/drawer).
 
 <todo>Replace static visual with live example</todo>
 
