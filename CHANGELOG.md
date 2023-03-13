@@ -1,3 +1,35 @@
+# [2.152.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.151.1...v2.152.0) (2023-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/sentry to ^7.1.2 ([5a771f9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5a771f9de8dd67b1f554dd25bf4980de63818d74))
+* **deps:** update dependency @nuxtjs/sentry to ^7.1.3 ([bec34ff](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bec34ffaccac44f36d8c49cd004fcf4cdfd6d3af))
+* **deps:** update dependency iframe-resizer to ^4.3.5 ([680236a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/680236a9f2fc3733e4a2ef729e3500779712c955))
+* **deps:** update dependency mermaid to ^10.0.2 ([2283f60](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2283f60e9dbe8ae45e15075636c39f611900d021))
+* **deps:** update dependency mermaid to ^9.4.0 ([cbcf0b3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cbcf0b39f89bd4dd4a90b7a0e76b721b857e925d))
+* **deps:** update dependency mermaid to v10 ([eb76310](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eb76310ba1b987cbc381b23db3b6ef4d50819d0d))
+* **deps:** update dependency nuxt to v2.16.2 ([72344cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/72344cdfaf270436b197cbc9eb32eb1e3eac4d71))
+* **deps:** update gitlab ui/svg ([21dc4d4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/21dc4d4fadb9078a272d34044fba1f1e88c39cca))
+* **deps:** update gitlab ui/svg ([0c4d047](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0c4d04780448edcebc506bd9911875f69da02ea9))
+* **Link:** fix mention link styles ([0dcdaaa](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0dcdaaa1bc8b93597d8805b9cdd83fa3b27a219b))
+
+
+### Features
+
+* **Brand:** updated DevSecOps messaging ([f1d08c4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f1d08c45ebabf605d7db667ed3e1dae6e6ade5ac))
+* **BrandMarketingIllustrations:** Add diagram guidelines ([8fd7123](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8fd7123b233d6e7d5e73603bf2ee8790bc09816e))
+* **BrandMotion:** Update and add examples ([12b7a36](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/12b7a367342d5a0d4d10b602e379e470742b265b))
+* **Breadcrumb:** Add guideline for bottom border ([602c4d2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/602c4d2ff4cc7d55d3f6c232274e1db1fa46f7dc))
+* **Checkbox:** Clarify parent state implication ([337924d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/337924da6ffbbe992867b6a1e632b0c4bcedbfdf))
+* **Dashboard:** Init dashboard definitions ([0275df0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0275df0104790877c7b7d780b9fa7bafed2807c5))
+* **GlLink:** add component structure diagram ([8ab209b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8ab209bc7117b06ba8f12390592203834ac98193))
+* **Link:** Updated inline text link guidance ([e89d5b8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e89d5b8ef7e36b3eb862f7a59fb766edef628089))
+* **merge request reports:** Replace modal with drawer ([56b1469](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/56b1469558799d22695f609fed113e4c28c7d339))
+* **Modal:** Update to align with specs ([16fa9ce](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/16fa9cece7f0a046f3c382c3904a9b5bdae62493))
+* **MRWidget:** Change collapsed by default behavior ([37282b7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/37282b7160bce4621229d9d282b11ed81f671eae))
+* **nav:** Remove process content for navigation additions ([e776aee](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e776aee623e1c2969ad69991c2f7944de1ef4a4e))
+
 ## [2.151.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.151.0...v2.151.1) (2023-02-27)
 
 
