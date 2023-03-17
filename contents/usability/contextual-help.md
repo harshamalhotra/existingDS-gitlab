@@ -6,44 +6,57 @@ related:
   - drawer
 ---
 
-Help content should be used as a fallback to help users complete and better understand tasks, with the primary method of understanding being the UI itself. Embedding help content directly within the feature it serves is the best way to assist users who have hit a roadblock. Affordance is higher when help content is available in context.
+The UI should be self-explanatory. If extra help content is required, it should be in the UI as well,
+as either UI text or within a [drawer](/components/drawer). Affordance is higher when help content is available in context.
 
-Help comes in the form of various types of content designed to:
+Help content can:
 
-- Assist users unable to complete a task.
+- Assist users who are unable to complete a task.
 - Help users to understand a concept in more detail.
 - Provide additional technical details not available in the UI.
 
+In some situations, you can link from the UI to the GitLab product documentation.
+
+## When to use a link to documentation
+
+You may need to use a link to the product documentation if:
+
+- Users require information that can't be communicated in the available space. (For example, a list of variables that are defined fully in the documentation.)
+- The UI is part of a larger workflow.
+
 ## Formatting help content
 
-If the most relevant information can be summarized succinctly, put the summary directly in the UI instead of using a help link. However, you can use a help link to provide supplemental information.
+Help links open in a new tab to ensure:
 
-Help links open in a new tab. Doing so makes the result of clicking the links predictable and prevents users from needing to immediately navigate away from their task.
+- The result of clicking links is predictable.
+- The user does not need to navigate away from their task.
 
-To learn how to link to GitLab docs in various programming languages, see [Linking to /help](https://docs.gitlab.com/ee/development/documentation/#linking-to-help).
+To learn how to link to GitLab documentation in various programming languages, see [Linking to /help](https://docs.gitlab.com/ee/development/documentation/#linking-to-help).
 
 ### Link text
 
-Phrase the link as the question that will be answered by the linked content.
+In most cases, phrase the link as a question.
 
-- **Example:** A merge request approval is required. [Who can approve](#)?
+- Example: A merge request approval is required. [Who can approve](#)?
 
-If you can't determine a useful question, use `Learn more`. However, be aware that `Learn more` is not descriptive or meaningful, and should be used sparingly.
+If you can't determine a useful question, use `Learn more`. However, be aware that `Learn more` is not descriptive or meaningful, and **should be used sparingly**.
 
-- **Example:** Approve a merge request. [Learn more](#).
+- Example: Approve a merge request. [Learn more](#).
 
-For screen reader users, add an [aria-label](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8) with a full-sentence description. Punctuation should not be part of the link.
+Note: The punctuation is not part of the link.
+
+For screen reader users, add an [aria-label](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8) with a full-sentence description.
 
 ### External links
 
 If the help content is outside of the GitLab instance, make that clear in the link text and use the external link icon. The icon should use `aria-label="(external link)"`, or similar, to communicate the purpose to screen reader users.
 
-- **Example:** Learn how to use minikube in the <a href="#" class="gl-link">Kubernetes documentation <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" style="vertical-align: text-bottom" role="img" aria-label="(external link)">
+- Example: Learn how to use minikube in the <a href="#" class="gl-link">Kubernetes documentation <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" style="vertical-align: text-bottom" role="img" aria-label="(external link)">
   <path fill="#000000" fill-rule="evenodd" d="M5,2 C5.55228,2 6,2.44772 6,3 C6,3.55228 5.55228,4 5,4 L4,4 L4,12 L12,12 L12,11 C12,10.4477 12.4477,10 13,10 C13.5523,10 14,10.4477 14,11 L14,12 C14,13.1046 13.1046,14 12,14 L4,14 C2.89543,14 2,13.1046 2,12 L2,4 C2,2.89543 2.89543,2 4,2 L5,2 Z M15,1 L15,5.99814453 C15,6.55043453 14.5523,6.99814453 14,6.99814453 C13.4477,6.99814453 13,6.55043453 13,5.99814453 L13,4.41419 L8.71571,8.69846 C8.32519,9.08899 7.69202,9.08899 7.3015,8.69846 C6.91097,8.30794 6.91097,7.67477 7.3015,7.28425 L11.5858,3 L9.99619141,3 C9.44391141,3 8.99619141,2.55228 8.99619141,2 C8.99619141,1.44772 9.44391141,1 9.99619141,1 L15,1 Z" style="fill: currentColor;"></path></svg></a>.
 
 ### Help icon
 
-If that's not possible and space is tight, use the [help icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) that, when hovered or focused on, shows the summary in a [popover](/components/popover). The popover title should be the question that is answered by the summary. A `Learn more` link can be added to the popover to associate additional, relevant information.
+If link text is not possible and space is tight, use the [help icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) that, when hovered or focused on, shows the summary in a [popover](/components/popover). The popover title should be the question that is answered by the summary. A `Learn more` link can be added to the popover to associate additional, relevant information.
 
 |                                                                                                                                                                                        Do                                                                                                                                                                                         |                                                                                                                                                             Don't                                                                                                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
