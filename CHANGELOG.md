@@ -1,3 +1,19 @@
+# [2.153.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.152.0...v2.153.0) (2023-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v56.4.1 ([0491654](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0491654176b56fb40b3d214311b0ba6ed4642167))
+* **deps:** update dependency @nuxtjs/sentry to ^7.1.4 ([2b295eb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2b295ebc04ec92937c581d5b6d8b5bc290c46ac2))
+* **deps:** update dependency iframe-resizer to ^4.3.6 ([071901b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/071901befe47904de4ebe856c5c1c83bebd4c8ac))
+* **deps:** update gitlab ui/svg ([f5c7be5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f5c7be5bf51ccffe0e2848b5058c46f5b77bce7a))
+* **help:** clarify when to use learn more ([77974f4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/77974f404e12480b7ced6332be33ceafdc69b3e9))
+
+
+### Features
+
+* **Affordance:** Add visibility notes ([8cf052b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8cf052b389c53c998da3f90cf5e959033062ff7a))
+
 # [2.152.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.151.1...v2.152.0) (2023-03-13)
 
 
