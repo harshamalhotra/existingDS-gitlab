@@ -4,7 +4,7 @@ name: Marketing illustrations
 
 <figure-img alt="GitLab illustration banner sample" label="Illustration sample" src="/img/brand/marketing-illustrations.png"></figure-img>
 
-Illustrations are the primary visual tool that we use throughout our marketing materials to depict GitLab’s values, features, user outcomes, and abstract concepts. The illustrations are an extension of our unique iconography system, and both reinforce our brand personality and are inspired by our values in the following ways:
+[Illustrations](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) are the primary visual tool that we use throughout our marketing materials to depict GitLab’s values, features, user outcomes, and abstract concepts. The illustrations are an extension of our unique iconography system, and both reinforce our brand personality and are inspired by our values in the following ways:
 
 - Overlapping elements with overlays, which highlight collaboration and transparency
 - Intentional color application, driven by results
@@ -14,7 +14,7 @@ Illustrations are the primary visual tool that we use throughout our marketing m
 
 An illustration typically accompanies copy; the two together are necessary and should balance and complement one another. An illustration should elevate the message and act as a form of brand storytelling, adding clarity and context to complex ideas.
 
-When building illustrations, use this [template](https://drive.google.com/file/d/15DiL1BM9L9PeGpLuLMTl8YyUU03-Tlgw/view?usp=sharing) and adhere to the following guidelines to maintain visual consistency:
+When building illustrations, use this [template](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/assets/illustration-library/_artwork/gitlab-illustration-source-file-1.7.ai) and adhere to the following guidelines to maintain visual consistency:
 
 1. **Solid-filled shapes and Charcoal linework** are combined and balanced throughout.
 1. **Shapes** add weight to the piece and create the overall composition of the illustration.
@@ -33,7 +33,7 @@ When building illustrations, use this [template](https://drive.google.com/file/d
 
 ## Marketing icons
 
-Marketing icons are the building blocks of our illustration style and are used as singular units. They should be straightforward, only visualizing a single topic or call to action. Icons are quickly identifiable, representing common items in a redacted way. They take a secondary role to the copy and are used at small scales ranging from 24px - 216px; anything larger should default to an illustration and anything intended for functional use within the product should use the [Product icon set](/product-foundations/iconography) instead.
+[Marketing icons](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/marketing-icons) are the building blocks of our illustration style and are used as singular units. They should be straightforward, only visualizing a single topic or call to action. Icons are quickly identifiable, representing common items in a redacted way. They take a secondary role to the copy and are used at small scales ranging from 24px - 216px; anything larger should default to an illustration and anything intended for functional use within the product should use the [Product icon set](/product-foundations/iconography) instead.
 
 ### Construction
 
@@ -41,13 +41,13 @@ The marketing icons are created using the 8px grid system found within this [tem
 
 ### Software development lifecycle
 
-[This specific set of icons](https://drive.google.com/drive/folders/1AkJxuyB8kIGvV7e0dH6sbq5alLshuG-i?usp=sharing) represents each stage of our software development lifecycle at each stage of the process. They are designed to be presented as a set when referring to the entire journey of the lifecycle or individually when referring to a specific stage.
+[This specific set of icons](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/software-development-lifecycle-icons) represents each stage of our software development lifecycle at each stage of the process. They are designed to be presented as a set when referring to the entire journey of the lifecycle or individually when referring to a specific stage.
 
 <figure-img alt="10 icons, one for each development stage" label="Software development lifecycle icon set" src="/img/brand/sdlc-icon-set.svg"></figure-img>
 
 ## Marketing diagrams
 
-Diagrams are used to illustrate the functionality of the GitLab product. They act like a manual, representing complex ideas step-by-step. They should be structured and visually clear, while using as minimal detail as possible.
+[Diagrams](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/diagrams) are used to illustrate the functionality of the GitLab product. They act like a manual, representing complex ideas step-by-step. They should be structured and visually clear, while using as minimal detail as possible.
 
 ### Color
 

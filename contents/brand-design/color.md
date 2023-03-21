@@ -8,7 +8,7 @@ Charcoal and White provide a structured visual weight and are used in all brande
 
 Proper color proportions are essential to maintaining GitLab’s look and feel. White should be the most used color, followed by Charcoal; this combination uplevels the maturity of our brand and is accentuated by the gradient. The oranges and purples of the palette should be used sparingly as subtle pops and accents. The cool gray scale should be used even less and applied to differentiate information and/or create a hierarchy.
 
-[Color swatches](https://drive.google.com/drive/folders/19GvtyyW638cq4p96hj8w5yloSNuIBFjg?usp=sharing) are denoted with a _P_ (for primary palette), _G_ (for gradients), or _S_ (for secondary palette, which is reserved for illustration usage). Refer to the [color usage](#color-usage) section for more information on when to use digital vs. print colors.
+[Color swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/color-palettes) are denoted with a _P_ (for primary palette), _G_ (for gradients), or _S_ (for secondary palette, which is reserved for illustration usage). Refer to the [color usage](#color-usage) section for more information on when to use digital vs. print colors.
 
 <figure-img label="Color use ratios" src="/img/brand/color-usage.svg"></figure-img>
 

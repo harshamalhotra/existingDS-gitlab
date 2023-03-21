@@ -38,17 +38,20 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 - [Press kit](https://about.gitlab.com/press/press-kit/)
 
 **Color**
-- [RGB swatches](https://drive.google.com/file/d/1Ihb3DiRcm94KegtPFR3yXeTkXsoeGNJL/view?usp=sharing)
-- [CMYK swatches](https://drive.google.com/file/d/1jHEZsVcdw4i-qJlgcCTfLBDn6XS08eVx/view?usp=sharing)
+- [RGB swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-hex-rgb.ase)
+- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-pms-cmyk.ase)
 
 **Marketing illustrations**
-- [Illustration library](https://drive.google.com/drive/folders/1GLoJ1Ua55vqTcYVfobcRunu9r7mQiLDq?usp=sharing) (Internal access only)
-- [RGB swatches, secondary palette](https://drive.google.com/file/d/1kCcvxYMKPkDCEFQd6imQcHhFGC14Hgte/view?usp=sharing)
-- [CMYK swatches - secondary palette](https://drive.google.com/file/d/1J2ZutCXZPJHQc9fgHvJYaVFSkOtlyn4t/view?usp=sharing)
+- [Illustration library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) (Internal access only)
+- [RGB swatches, secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-hex-rgb.ase)
+- [CMYK swatches - secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-pms-cmyk.ase)
 
 **Marketing icons**
-- [Icon library](https://drive.google.com/drive/folders/1dsRceA94H8CI0q7JAeWwEuWoNUuqdGq-?usp=sharing) (Internal access only)
-- [Software development lifecycle](https://drive.google.com/drive/folders/15kLTAKngeVEE7dWbP471EVKfhF25kSnN?usp=sharing) (Internal access only)
+- [Icon library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/marketing-icons) (Internal access only)
+- [Software development lifecycle](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/software-development-lifecycle-icons) (Internal access only)
+
+**Diagrams**
+- [Diagram library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/diagrams) (Internal access only)
 
 **Photography**
 - [Photo library](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing) (Internal access only)
