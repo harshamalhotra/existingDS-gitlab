@@ -1221,15 +1221,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@3.24.0":
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.24.0.tgz#bc8265919aa04b06cd08be91637471bad195936d"
-  integrity sha512-R4s5qJUFUIbPflknpw1aI/PchiNq65vY7LVsJZnQkY+vi+AgmsETdut/AdferbGWmeWMU0q2wuVu9phE8lDUgA==
+"@gitlab/svgs@3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.31.0.tgz#37e0a189def22400758267a84b61840a74aaf937"
+  integrity sha512-VzbMlj7TSroWvHDBMvCF4EDOnozFah5wPSyI+YJ+eefQoX0Fzu6RIZ9h8+lhnRzffygcValdVNdnuzMbXB+Q/g==
 
-"@gitlab/ui@58.1.0":
-  version "58.1.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-58.1.0.tgz#91b6021bf498d6873335be3ccb6288cf4db1bbe0"
-  integrity sha512-Eyo680ihNcACD98GbpGeRk414Buhra09AZflf0I0Rf1AMbu8kKJJx8b+1PZX2JJeNeul4A2vsg71jZGOZC9mew==
+"@gitlab/ui@58.4.0":
+  version "58.4.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-58.4.0.tgz#103b2573b564c2c6ed6564de9c061abd5980a8aa"
+  integrity sha512-uBMo4kyda0SS9NaywdaEKFsg+ZfCE06NvP7MIuvMGVzvbNvcgjEE5tTR1flc9v/3qhVwilFJ7CGX/eqe2NEdJA==
   dependencies:
     "@popperjs/core" "^2.11.2"
     bootstrap-vue "2.23.1"
