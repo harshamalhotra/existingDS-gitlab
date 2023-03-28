@@ -38,16 +38,19 @@ related:
 There are four categories of links in GitLab. Although all links are navigational, those that persist from page to page and guide users through the application – such as [navigation](/patterns/navigation), [breadcrumbs](/components/breadcrumb), and [pagination](/components/pagination) – are described separately, and not included as part of the link component.
 
 1. **Inline text link**: Link that appears within body text, like a paragraph or sentence. In order to distinguish a linked reference from surrounding content, a link within body copy must be underlined. Inline text links can be user-generated, for example, referencing an issue with "#3126" in the markdown editor of a merge request description where the link's primary function is linking to the referred issue. They can also be in text generated from a source file, for example, a "learn more about pipelines" link in the paragraph of an empty state template.
-1. **User interface (UI) link**: Standalone link in the UI. User interface links are not user-generated. For example, a link in the system notes that compares the changes in a new commit to a previous one. The placement, color, and actionable text all provide link affordance. A button using the [link variant](/components/button#variants) has a similar style, but is used for an action and not a link.
+1. **User interface (UI) link**: Standalone link in the UI. User interface links are not user-generated. For example, a link in the system notes that compares the changes in a new commit to a previous one. The placement, color, and actionable text all provide link affordance. A [link button](/components/button#variants) has a similar style, but is used for an action and not a link.
 1. **Meta link**: Standalone text or text within a short string of system-generated content may contain multiple meta links. Meta links share a meaningful datapoint or reference, and are only links secondarily. For example, the primary function of including "%15.8" in a string is to communicate the milestone, though it can also link to more information about it.
 1. **Mention**: Indicates when a user is "@" mentioned in the content. The username links to the user's profile. A mention link can be within body or meta content.
 
 ### Appearance
 
-- An inline text link is always underlined and `$blue-500` at rest. On hover or focus, the color darkens and the underline persists. It appears this way regardless of formatting applied (bold, italic, or monospace) or parent text element (heading, paragraph, list, or code).
+- An inline text link is always underlined and `$blue-700` at rest. On hover, the color darkens and the underline persists. It appears this way regardless of formatting applied (bold, italic, or monospace) or parent text element (heading, paragraph, list, or code).
 - A UI link is always `$blue-500` at rest with no underline. On hover, the color darkens and an underline appears.
-- As meta links can represent a wide variety of content, their styles can also adapt for each context. The attribute all meta links share is an underline only on hover or focus. At rest they can be `$blue-500`, `$gray-900`, or `$gray-700`. On hover, the color darkens. Similar to inline links they appear this way regardless of formatting applied (bold, italic, monospace). Because of the available styling, which overlaps with static text, it's critical to ensure that users understand what is linked and what isn't in each context. Additionally, similar types of linked meta content should be styled the same throughout the product.
-- A mention link is always `$blue-700` and has a background color behind the link at rest; `$blue-100` for any user, and `$orange-100` for the current user. On hover or focus the text is underlined.
+- As meta links can represent a wide variety of content, their styles can also adapt for each context. The attribute all meta links share is an underline only on hover. At rest they can be `$blue-500`, `$gray-900`, or `$gray-700`. On hover, the color darkens. Similar to inline links they appear this way regardless of formatting applied (bold, italic, monospace). Because of the available styling, which overlaps with static text, it's critical to ensure that users understand what is linked and what isn't in each context. Additionally, similar types of linked meta content should be styled the same throughout the product.
+- A mention link is always `$blue-700` and has a background color behind the link at rest; `$blue-100` for any user, and `$orange-100` for the current user. When embedded in body text and on hover the text is underlined.
+- An inline or mention link uses a darker blue to ensure sufficient contrast on surfaces that use a `50` or `100` step from the chromatic or neutral [color palettes](/product-foundations/color), while a UI or meta link uses a more vibrant blue and relies on CSS blend modes to increase contrast on different surfaces.
+- Although a UI or blue meta link has a style similar to a [link button](/components/button#variants), select the correct component based on meaning rather than by appearance alone (see [When to use](#when-to-use) above).
+- All links have a visible focus state (see [Accessibility](#accessibility) notes below).
 
 <todo>Add visual example of link appearance.</todo>
 
@@ -68,4 +71,27 @@ There are four categories of links in GitLab. Although all links are navigationa
 
 ### Accessibility
 
-<todo>Add accessibility guidlines.</todo>
+For all links:
+
+- All links and their states must have a contrast ratio of at least 4.5:1 against the background color ([Understanding WCAG SC 1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)).
+- A link must have a visible focus state ([Understanding WCAG SC 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)).
+
+For inline text links:
+
+- Color can't be the only way to visually distinguish a link. The link color doesn't have at least a 3:1 contrast ratio from surrounding text, therefore, an underline is used for all states as a visual means to indicate it ([Understanding WCAG SC 1.4.1 Use of Color](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)).
+- Since an underline is used as a required graphical element to distinguish a link, it must have at least a 3:1 contrast ratio against the background color for all states ([Understanding WCAG SC 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast)).
+
+For user interface links:
+
+- The placement and text of a link should identify itself as such in a predictable way.
+- An underline is not required at rest, but present for hover.
+- Consecutive interface links should have sufficient space between them so that they appear as separate elements and not one continuous sentence or link.
+
+For meta links:
+
+- As mentioned in the [categories](#categories) section, the main purpose of a meta link is first and foremost as content. It's not necessary for the text to be linked, but it is so that a user could get more information if desired. Therefore, the visual emphasis that would come from an underline is not used, even if the link is within a string of unlinked text. An underline is present on hover. This is an intentional decision to visually simplify certain sections in the UI that contain multiple meta links and may change in the future. More discussion and consideration can be found [this issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1266).
+
+For mention links:
+
+- When the link is within body copy, follow the above guides for inline text links. The background color and/or `@` prefix don't qualify for sufficient contrast or visual distinction in this context.
+- When the link is used as meta information, that is, first and foremost as content where linking to a user isn't necessary or consequential, then follow the above guides for meta links.
