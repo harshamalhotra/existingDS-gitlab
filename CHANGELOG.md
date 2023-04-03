@@ -1,3 +1,19 @@
+# [2.154.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.153.0...v2.154.0) (2023-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v58 ([f54c7ef](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f54c7efc3e3b5169cf5ff8e72974126a4bb885be))
+* **deps:** update dependency @nuxtjs/sentry to ^7.1.5 ([ff05419](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ff054199697301dea814896e426cb5242e965ec6))
+* **deps:** update dependency nuxt to v2.16.3 ([05dfd29](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/05dfd292e81b47c7926df9e70052be60bd65163d))
+* **deps:** update gitlab ui/svg ([9885fbf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9885fbf032a520d5b54388f15becb459a29cc33d))
+
+
+### Features
+
+* **BrandIllustrations:** Link to GitLab hosted files instead of GDrive ([77bb946](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/77bb946f81bc10330f6ee8a2e6b67f7790e6d1ed))
+* **Link:** Add a11y docs ([53748cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/53748cb93af9a064e5928228a7b96fe03ce30a16))
+
 # [2.153.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.152.0...v2.153.0) (2023-03-20)
 
 
