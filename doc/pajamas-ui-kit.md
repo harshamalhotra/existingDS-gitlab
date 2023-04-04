@@ -21,9 +21,10 @@
   - [Using Constraints](#using-constraints)
   - [Using Auto Layout](#using-auto-layout)
 - [Adding descriptions, notes, and annotations](#adding-descriptions-notes-and-annotations)
-- [Publishing changes](#publishing-changes)
-- [Changelog](#changelog)
-- [Sharing or linking to changes](#sharing-or-linking-to-changes)
+- [Releasing a new version](#releasing-a-new-version)
+  - [Breaking changes](#breaking-changes)
+  - [Publishing](#publishing)
+- [Sharing or linking to designs](#sharing-or-linking-to-designs)
 - [Updating the libraries locally](#updating-the-libraries-locally)
 - [Deprecation](#deprecation)
 - [Plugins](#plugins)
@@ -173,28 +174,42 @@ We use three primary methods to add descriptive, helper content for components a
 | ------ | ------ |
 | ![Editing component description in Figma properties panel](images/component-desc.png) | ![Reading component description in Figma inspect panel](images/component-inspect.png) |
 
-## Publishing changes
+## Releasing a new version
+
+The Pajamas UI Kit will have a new release (version) published at the end of each milestone. At the moment there's no formal version numbering.
+
+- At minimum, a text release post (format TBD) will be published to document the changes that happened during the milestone.
+- When possible, a video will accompany the release to highlight any changes, demonstrate how to triage impact, and how to work with new features.
+- New .fig files will be saved and updated in the [ui-kit](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/ui-kit) folder of the repo. These leverage the git history to track versions.
+- The [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) of a Figma file will summarize all updates along with notes on [breaking changes](#breaking-changes). Figma will automatically update the history with:
+  - Autosaved versions
+  - Merged branches
+  - Created branches
+  - Branch updates from main
+- Maintainers may also edit the version history or manually [add a new version](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Create_a_new_version). The new version includes a title and description, and is used to track specific changes to a component or styles.
+- We favor continuous delivery, so bug fixes, patches, and other minor updates that don’t include breaking changes can be published at any time during the milestone, and files can be updated on the [community page](https://www.figma.com/@GitLabDesign) if necessary. They will also be summarized in the release notes.
+- Changes within files that don't impact components or styles, like updating an instance, are immediately available in the file and everything else will be available when the next version is released.
+
+### Breaking changes
+
+A breaking change is anything that would require a designer to take any action after updating. Examples include, but aren't limited to, changed dimensions, incompatibility with previously used properties, and lost overrides.
+
+Breaking changes have different levels of impact. Each breaking change must include a level and explanation of the impact of the change. If a breaking change to a single component or other design asset includes multiple changes at different levels of impact, default to using the highest impact.
+
+- **Low impact**: A change has been made that has a low likelihood of introducing regression. For example, Auto Layout replaces a spacer component where the resulting spacing isn’t changed.
+- **Medium impact**: A change has been made which requires validating the impact. For example, the size of a component has changed and may require layout adjustments in a design.
+- **High impact**: A change has been made that breaks overrides, introduces new features that aren’t backwards compatible, or requires a designer to validate instances in their designs. For example, a new property causes text content to be lost, requiring it to be re-added. High impact changes require a new version of the component, where the previous version is deprecated but is available for at least a milestone (see current notes on [deprecation](#deprecation)).
+- **Extreme impact**: A change that requires an entirely new component library file and associated library. For example, styles are moved to their own file with an independent library consumed by the component library.
+
+### Publishing
 
 Figma library updates are published by a [Figma maintainer][figma-maintainers], regardless of how minor. To support our [transparency value][handbook-transparency], follow these best practices:
 
 - Changes should be reviewed by another designer in a branch or draft before a Maintainer adds it to the Pajamas UI Kit file.
-- Before closing the Pajamas UI Kit file, changes should be published so other designers are aware of what’s been changed, and by whom. It is possible to only publish selected changes.
-- Use dashes to list changes (no formatting options for the publish message field).
+- Use dashes to list changes in the publish description field.
+- Community files follow the same release cadence and can be published there after publishing library updates for the organization.
 
-## Changelog
-
-Changes to the Pajamas UI Kit files are documented in the [file history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) and we're currently leveraging this as the changelog.
-
-Figma will automatically update the history with:
-
-- Autosaved versions
-- Merged branches
-- Created branches
-- Branch updates from main
-
-It's also possible to manually [add a new version](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Create_a_new_version) that includes a title and description. This can be done to intentionally create a version to track specific changes to a component or styles.
-
-## Sharing or linking to changes
+## Sharing or linking to designs
 
 Because components can be in multiple frames on a page, it’s best to link to the entire page when referencing as a design spec in the [Pajamas documentation][pajamas]. Otherwise, you can link directly to the specific frame in issues, merge requests, and other places where a specific portion of the design is referenced.
 
@@ -204,9 +219,7 @@ If you have any of the available libraries enabled in a file you’ll occasional
 
 ![Component updates modal](images/update-modal.png)
 
-Not all updates will be desireable or immediately needed however, and some may even introduce breaking changes. For that reason it’s recommended to review the published notes in the [#design-system](https://gitlab.slack.com/archives/CDNNDD1T3) Slack channel (internal). If you’re still uncomfortable with how your work might be impacted, first make a duplicate of your file and test the updates there.
-
-![Library update message posted in Slack](images/slack-msg.png)
+Not all updates will be desireable or immediately needed however, and some may even introduce [breaking changes](#breaking-changes). For that reason it’s recommended to review the release notes. If you’re still uncomfortable with how your work might be impacted, first make a duplicate of your file and test the updates there or ask a maintainer.
 
 ## Deprecation
 
