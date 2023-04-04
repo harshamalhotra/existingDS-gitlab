@@ -7,6 +7,13 @@ const {
 } = packageJson;
 
 export default {
+  props: {
+    issue: {
+      type: String,
+      default: '',
+      required: false,
+    },
+  },
   components: {
     GlIcon,
   },
@@ -31,6 +38,7 @@ export default {
     <span class="gl-mr-auto">
       <slot></slot>
     </span>
-    <a class="gl-link" :href="newIssueUrl">Create an issue</a>
+    <a v-if="issue" class="gl-link" :href="issue">View issue</a>
+    <a v-else class="gl-link" :href="newIssueUrl">Create an issue</a>
   </span>
 </template>

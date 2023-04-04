@@ -13,7 +13,7 @@ related:
 
 <todo>Provide additional card examples.</todo>
 
-<todo>Add link to design specs.</todo>
+<todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1446">Complete [design specs](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1427) after use case and requirements are finalized.</todo>
 
 ## Structure
 
