@@ -90,6 +90,10 @@
         "path": "product-foundations",
         "items": [
           {
+            "title": "Design tokens",
+            "path": "design-tokens"
+          },
+          {
             "title": "Color",
             "path": "color"
           },
