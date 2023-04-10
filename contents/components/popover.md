@@ -44,19 +44,24 @@ related:
 
 ### Behavior
 
-- By default, popovers fade in on hover or focus of its trigger element. 
-- Occasionally, a popover can fade in on page load. These should be used sparingly (no more than one per page), and always contain a dismiss button. Consider using these popovers to highlight a new feature or area.
-- They fade out upon interacting with an area or element outside of the popover or its trigger, or on a delay of the cursor moving outside the popover or its trigger element.
-- Similar to [tooltips](/components/tooltip), popovers have a default delay of `500ms` on `show` to help confirm hover intent and ensure that:
-  - A user doesn’t accidentally hover an element with a popover, which might cover an adjacent element they intended to select.
-  - The UI isn‘t constantly showing popovers when a user is moving their mouse over the page.
+- A popover is opened by clicking on an element that has the sole purpose of triggering it.
+- When the popover is visible, the <kbd>Tab</kbd> key moves focus through any interactive elements within it.
+- A popover can be dismissed by:
+    - Clicking on the close button within it.
+    - Clicking outside of it.
+    - The <kbd>Tab</kbd> key moving focus to another element. 
+    - The <kbd>Esc</kbd> key being pressed.
 
 ### Content
 
+- A popover can contain interactive content such as a [link](/components/link) or [button](/components/button).
+- A popover can contain rich content like an [avatar](/components/avatar).
 - All copy within a popover should be short, actionable, and use clear language. 
 - The copy in the header should be shorter and even more concise than the copy in the body of the popover. 
-- The body can contain a link, for example, a "Learn more" link takes the user to the Docs page for more info. 
+- The body can contain a link.
 
 ### Accessibility
 
-<todo>Add accessibility guidelines.</todo>
+When the popover is visible:
+- The focus can move to the next logical interactive element in the DOM and doesn't loop in the popover.
+- The content within is next in the reading order from the trigger element and not appended to the DOM.
