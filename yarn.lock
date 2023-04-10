@@ -1227,10 +1227,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@3.36.0":
-  version "3.36.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.36.0.tgz#2fc363008a060d41d0d0d2dfdfdeff892bc8842e"
-  integrity sha512-jlokfIwWwaFydzOYBe9W+8Iw4z7mmFqwkdg584sithgMKqYKUkofDGcgW5EHLnU9CESHVkqedpp3vVU4toebgA==
+"@gitlab/svgs@3.38.0":
+  version "3.38.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.38.0.tgz#5c316bc139b3017eea92bb8d603c7ff26fa9ddb7"
+  integrity sha512-yDkZnuYDQlBB7Eb7noSHGlNpZE6KgM6kX2zB0bmGdHBY2w4wbnjgCR8INYFblH19QGlIToxoW3rOL9iobu4Puw==
 
 "@gitlab/ui@60.0.0":
   version "60.0.0"
