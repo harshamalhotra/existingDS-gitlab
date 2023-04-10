@@ -1,3 +1,18 @@
+# [2.155.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.154.0...v2.155.0) (2023-04-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v59 ([e0e5ba5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e0e5ba5409afd7f71c97516d6e95a105b42e65bb))
+* **deps:** update dependency @gitlab/ui to v60 ([9ce9511](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9ce95116d4fc83775a7f907ceb517bc03c60424c))
+* **deps:** update dependency mermaid to ^10.1.0 ([c93ba80](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c93ba80486b0456f5014fad3e4d7f92dc1f0e469))
+* **deps:** update gitlab ui/svg ([2855bec](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2855becbc8afb5a1744a80e71216e54b96ff4d44))
+
+
+### Features
+
+* **DesignTokens:** add placeholder design tokens page ([a61cf9a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a61cf9a321f996851501a682340b67613d5eeab4))
+
 # [2.154.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.153.0...v2.154.0) (2023-04-03)
 
 
