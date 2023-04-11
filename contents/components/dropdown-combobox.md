@@ -76,7 +76,6 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
   - An optional text input _within_ the panel can limit available options when a term is entered.
   - When an option is selected in a single select context, the panel is closed and the control updated.
   - When one or more options are selected in a multiselect context, the panel stays open until the user closes it by one of the available methods. An 'Apply' button is not necessary. Depending on the logic, the selection may sync with the database on each selection and update the UI in real-time, or it may sync with the database after the panel is closed and then update the UI.
-
 - Combobox:
   - A user can either type a term in the text input or select an available option.
   - The text input can use autocomplete capability based on available options.
