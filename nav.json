@@ -44,7 +44,7 @@
             "title": "Motion",
             "path": "motion"
           },
-          {  
+          {
             "title": "Photography",
             "path": "photography"
           }
@@ -381,11 +381,11 @@
           {
             "title": "Merge request",
             "path": "merge-request"
-           },
-           {
-             "title": "Work item",
-             "path": "work-item"
-            }
+          },
+          {
+            "title": "Work item",
+            "path": "work-item"
+          }
         ]
       },
       {
@@ -408,7 +408,7 @@
             "title": "Single stat",
             "path": "single-stat"
           },
-           {
+          {
             "title": "Mini pipeline graph",
             "path": "mini-pipeline-graph"
           }
@@ -444,6 +444,10 @@
         "title": "Usability and interaction",
         "path": "usability",
         "items": [
+          {
+            "title": "AI-human interaction",
+            "path": "ai-human-interaction"
+          },
           {
             "title": "Affordance",
             "path": "affordance"
