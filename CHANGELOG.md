@@ -1,3 +1,17 @@
+# [2.156.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.155.0...v2.156.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* Remove empty line in list ([ef729d3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ef729d3d89f05ca1b5db0bef77703a5545d242e6))
+* **deps:** update dependency @gitlab/svgs to v3.38.0 ([93976e9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/93976e964db8ef0e0b125c6f39d9c3eb2eb32285))
+
+
+### Features
+
+* **DropdownCombobox:** Add apply condition ([b34e9c9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b34e9c9b6a984623d7871b27222d3a3341fa23e4))
+* **Popover:** Update popover trigger guidance ([308f0d5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/308f0d524648c2f32b4729249f3074bd8e7e56c4))
+
 # [2.155.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.154.0...v2.155.0) (2023-04-10)
 
 
