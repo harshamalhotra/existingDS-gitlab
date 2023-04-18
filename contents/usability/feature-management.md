@@ -51,15 +51,15 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 <todo>Add links to the documentation.</todo>
 
-### Highlighting Alpha and Beta features
+### Highlighting feature versions
 
-Similar to higher tier features, Alpha and Beta features should be easily identifiable. When a feature can be enabled via a setting, consider adding a badge next to the setting header. Include a link
+Similar to higher tier features, feature versions like Experiment and Beta should be easily identifiable. When a feature can be enabled via a setting, consider adding a badge next to the setting header. Include a link
 to the [feature management documentation](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) in a [popover](/components/popover).
 
-| Alpha | Beta |
+| Experiment | Beta |
 | ------ | ------ |
-| Features in Alpha aren't fully tested and may break. | Features in Beta may still contain bugs or inconsistencies. |
-| <figure-img label="Alpha feature badge" src="/img/alpha-feature-badge.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/beta-feature-badge.svg"></figure-img> |
+| Features in [Experiment](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) aren't fully tested and may break. | Features in [Beta](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) may still contain bugs or inconsistencies. |
+| <figure-img label="Experiment feature badge" src="/img/experiment-feature-badge.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/beta-feature-badge.svg"></figure-img> |
 
 #### Specification
 
@@ -70,7 +70,7 @@ to the [feature management documentation](https://docs.gitlab.com/ee/policy/alph
 #### How to use
 
 * Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
-* When the feature is no longer Alpha or Beta, make sure the badge is removed.
+* When the feature becomes Generally Available, make sure the badge is removed.
 
 ## Visibility
 
