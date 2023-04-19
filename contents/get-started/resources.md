@@ -1,5 +1,5 @@
 ---
-name: Design resources
+name: Resources
 ---
 
 ## Design project

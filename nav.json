@@ -76,8 +76,54 @@
             "path": "lifecycle"
           },
           {
-            "title": "Design resources",
-            "path": "design-resources"
+            "title": "Pajamas UI Kit (Figma)",
+            "items": [
+              {
+                "title": "File structure",
+                "path": "uik-file-structure"
+              },
+              {
+                "title": "Release process",
+                "path": "uik-release-process"
+              },
+              {
+                "title": "Release notes",
+                "path": "uik-release-notes"
+              },
+              {
+                "title": "Roadmap",
+                "path": "uik-roadmap"
+              }
+            ]
+          },
+          {
+            "title": "Figma guides",
+            "items": [
+              {
+                "title": "Components",
+                "path": "uik-components"
+              },
+              {
+                "title": "Libraries",
+                "path": "uik-libraries"
+              },
+              {
+                "title": "Annotation",
+                "path": "uik-annotation"
+              },
+              {
+                "title": "Sharing",
+                "path": "uik-sharing"
+              },
+              {
+                "title": "Breaking changes",
+                "path": "uik-breaking-changes"
+              }
+            ]
+          },
+          {
+            "title": "Resources",
+            "path": "resources"
           },
           {
             "title": "Repository",
