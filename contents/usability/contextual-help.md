@@ -6,22 +6,20 @@ related:
   - drawer
 ---
 
-The UI should be self-explanatory. If extra help content is required, it should be in the UI as well,
-as either UI text or within a [drawer](/components/drawer). Affordance is higher when help content is available in context.
+The UI should be self-explanatory. If extra help is required, it should be **in the UI itself**,
+as either UI text or as text within a [drawer](/components/drawer).
 
-Help content can:
-
-- Assist users who are unable to complete a task.
-- Help users to understand a concept in more detail.
-- Provide additional technical details not available in the UI.
-
-In some situations, you can link from the UI to the GitLab product documentation.
+Affordance is higher when help content is available in context.
 
 ## When to use a link to documentation
 
-You may need to use a link to the product documentation if:
+Documentation can change, and links from the UI to the documentation [can become out-of-date or circular](https://youtu.be/L2D_8BuUFNE).
+You should avoid links from the UI to the documentation if you can.
+
+However, you can link from the UI to the docs if:
 
 - Users require information that can't be communicated in the available space. (For example, a list of variables that are defined fully in the documentation.)
+- To use the feature, users need to understand a concept in more detail.
 - The UI is part of a larger workflow.
 
 ## Formatting help content
