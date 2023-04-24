@@ -1,3 +1,24 @@
+# [2.157.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.156.0...v2.157.0) (2023-04-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v61 ([9547bb2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9547bb2e3b810bd79bbaa0a4b53fefbfd5ddec99))
+* **deps:** update dependency @gitlab/ui to v61.3.0 ([500cf7c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/500cf7ce890e604a1e0c5bf1910f76031f6a61e5))
+* **deps:** update dependency @gitlab/ui to v62 ([dab7879](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dab787947652016703ec4c2545b8ba5042446105))
+* **deps:** update dependency @nuxtjs/sentry to ^7.1.13 ([7d1a99c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7d1a99c32c00477c506d38cacc5e9d5f150e7202))
+* **deps:** update dependency @nuxtjs/sentry to ^7.2.2 ([84b1ff0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/84b1ff0c1e8addd5191c4f84dee3b7d89e60b9ef))
+* **deps:** update gitlab ui/svg ([ff9fc48](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ff9fc48d9f3bed31c5258fb5c6c79889299dec32))
+* **FeatMgmt:** Remove external link icon from examples ([efc3db4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/efc3db44c6879eb1d17d5640214c665f07828f87))
+* **FeatMgmt:** Rename Alpha to Experiment feature version ([efaad05](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/efaad05efaae97dcb265034b7848d4de92f46082))
+* **help:** add additional help guidance ([1708532](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1708532395ebcf015132a09b8771bd97d6eb75ce))
+
+
+### Features
+
+* **GetStarted:** Add UI kit content ([32bd9b6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32bd9b6fcc6ebb77c8e5228b343b634a02a58c10))
+* **UIKit:** Release notes and guides ([00b9e08](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/00b9e088ec8c4b9c4c402a9eda7819bbe76a9060))
+
 # [2.156.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.155.0...v2.156.0) (2023-04-17)
 
 
