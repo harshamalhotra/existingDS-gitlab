@@ -764,14 +764,27 @@ A user may choose between ten different themes to customize the appearance of th
   </div>
 </div>
 
+## Interactive states
+
+Color changes can be used to emphasize user actions. When used, they must be combined with other visual feedback. For example, `:focus` color changes are normally accompanied with a focus ring.
+
+Typical state changes (light UI):
+
+- `:hover` a color becomes one step darker than at rest.
+- `:focus` a color becomes one step darker than at rest, matching `:hover` color.
+- `:active` a color becomes two steps darker than at rest.
+ 
+  <figure-img alt="Example button state color changes" label="A primary confirm button example with a $blue-500 fill at rest (1), a $blue-600 fill for hover and focus (2, 3), and a $blue-700 fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state." src="/img/color-interactive.svg"></figure-img>
+- Where there aren't enough steps to follow this pattern, prioritize `:hover` and `:focus` becoming a step darker.
+
 ## Accessibility
+
+### Text presentation
 
 At GitLab, we are dedicated to continually improving the accessibility of the application. Pajamas satisfies the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast) AA level for normal text. Learn more in [Accessibility](/accessibility/a11y).
 
 - **Normal text** must have a contrast ratio of at least 4.5:1.
 - **Large text** is defined as `14pt` Bold (`18.5px`) or `18pt` (`24px`) and must have a contrast ratio of at least 3:1.
-
-### Passing level and contrast ratio
 
 - **AAA** - Pass 7:1+
 - **AA** - Pass 4.5:1+
@@ -780,4 +793,4 @@ At GitLab, we are dedicated to continually improving the accessibility of the ap
 
 Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1e24`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fbfafd`) or lighter.
 
-Use colors at least two steps apart to ensure distinguishable contrast for states and border/fill combinations.
+Color should never be the only visual means of communicating information ([WCAG 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color)).
