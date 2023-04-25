@@ -1,17 +1,17 @@
 ---
 name: Path
 description: Paths are horizontal process flows composed of a series of stages.
-stories:
-  - base-path--default
+components:
+  - base-path
 related:
   - tabs
 ---
 
 ## Examples
 
-<story-viewer story-name="base-path--default"></story-viewer>
+<story-viewer component="base-path"></story-viewer>
 
-<story-viewer story-name="base-path--all-options"></story-viewer>
+<story-viewer component="base-path" story="all-options"></story-viewer>
 
 <todo>Add to Pajamas UI Kit.</todo>
 

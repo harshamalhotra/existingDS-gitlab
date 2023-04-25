@@ -14,9 +14,14 @@ export default {
     StoryIframe,
   },
   props: {
-    storyName: {
+    component: {
       type: String,
       required: true,
+    },
+    story: {
+      type: String,
+      required: false,
+      default: 'default',
     },
     title: {
       type: String,
@@ -38,6 +43,10 @@ export default {
   computed: {
     isDocsMode() {
       return this.viewMode === VIEW_MODE_DOCS;
+    },
+    storyName() {
+      const suffix = this.isDocsMode ? 'docs' : this.story;
+      return `${this.component}--${suffix}`;
     },
     cardTitle() {
       return this.title || this.storyName;

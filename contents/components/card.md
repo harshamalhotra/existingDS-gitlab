@@ -1,15 +1,15 @@
 ---
 name: Card
 description: A card displays a single group of content within a set of similar groups.
-stories:
-  - base-card--default
+components:
+  - base-card
 related:
   - table
 ---
 
 ## Examples
 
-<story-viewer story-name="base-card--default" title="Default card"></story-viewer>
+<story-viewer component="base-card" title="Default card"></story-viewer>
 
 <todo>Provide additional card examples.</todo>
 

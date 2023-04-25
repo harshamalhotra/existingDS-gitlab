@@ -1,8 +1,8 @@
 ---
 name: Toggle
 description: A toggle is a visual switch which acts as a boolean.
-stories:
-  - base-toggle--default
+components:
+  - base-toggle
 related:
   - checkbox
   - radio-button
@@ -11,11 +11,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-toggle--default" title="Default"></story-viewer>
+<story-viewer component="base-toggle" title="Default"></story-viewer>
 
-<story-viewer story-name="base-toggle--default" title="Disabled Toggle" :args-disabled="true"></story-viewer>
+<story-viewer component="base-toggle" title="Disabled Toggle" :args-disabled="true"></story-viewer>
 
-<story-viewer story-name="base-toggle--default" title="Loading Toggle" :args-is-loading="true"></story-viewer>
+<story-viewer component="base-toggle" title="Loading Toggle" :args-is-loading="true"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140)
 

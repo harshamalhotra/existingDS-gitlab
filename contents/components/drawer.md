@@ -4,8 +4,8 @@ description: A drawer presents context-specific information and/or actions witho
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=44560%3A56734
 docs: in-progress
 gitlab_ui: /components/drawer/code
-stories:
-  - base-drawer--default
+components:
+  - base-drawer
 related:
   - modal
   - toast
@@ -18,7 +18,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-drawer--default" title="Default" iframe-padding="200px 0"></story-viewer>
+<story-viewer component="base-drawer" title="Default" iframe-padding="200px 0"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=48150%3A59274)
 

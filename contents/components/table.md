@@ -1,8 +1,8 @@
 ---
 name: Table
 description: Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
-stories:
-  - base-table-table--default
+components:
+  - base-table-table
 related:
   - card
   - tree
@@ -15,7 +15,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-table-table--default"></story-viewer>
+<story-viewer component="base-table-table"></story-viewer>
 
 <todo>Add column sorting example.</todo>
 

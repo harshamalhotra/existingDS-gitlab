@@ -1,8 +1,8 @@
 ---
 name: Progress bar
 description: A progress bar indicates a percentage of completion.
-stories:
-  - base-progress-bar--default
+components:
+  - base-progress-bar
 related:
   - spinner
   - skeleton-loader
@@ -10,7 +10,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-progress-bar--default"></story-viewer>
+<story-viewer component="base-progress-bar"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A132)
 

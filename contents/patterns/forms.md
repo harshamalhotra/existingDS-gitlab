@@ -1,11 +1,11 @@
 ---
 name: Forms
 description: A form is for capturing and submitting user input.
-stories:
-  - base-form-form--default
-  - base-form-form-group--default
-  - base-form-form-input--default
-  - base-form-form-textarea--default
+components:
+  - base-form-form
+  - base-form-form-group
+  - base-form-form-input
+  - base-form-form-textarea
 related:
   - file-uploader
   - date-picker
@@ -16,11 +16,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-form-form-group--default" title="Default form group"></story-viewer>
+<story-viewer component="base-form-form-group" title="Default form group"></story-viewer>
 
-<story-viewer story-name="base-form-form-group--disabled" title="Disabled form group"></story-viewer>
+<story-viewer component="base-form-form-group" story="disabled" title="Disabled form group"></story-viewer>
 
-<story-viewer story-name="base-form-form-group--with-validations" title="Form group with validations"></story-viewer>
+<story-viewer component="base-form-form-group" story="with-validations" title="Form group with validations"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=49840%3A75722)
 

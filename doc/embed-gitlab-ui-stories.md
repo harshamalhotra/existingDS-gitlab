@@ -21,20 +21,29 @@ technical documentation. Stories support two view modes than we can both leverag
 To include examples with the `story` view mode, use the `story-viewer` component anywhere in a
 component's Markdown docs file.
 
-The component requires a story ID to be passed as the `story-name` prop:
+The component requires the component's ID to be passed as the `component` prop:
 
 ```markdown
-<story-viewer story-name="base-alert--default"></story-viewer>
+<story-viewer component="base-alert"></story-viewer>
 ```
 
-To find a story's ID, open it in GitLab UI's Storybook. The ID is whatever is after `/story/`
-or `/docs/` in the URL `path` parameter. Consider the following URL for example:
+Optionally, a specific story can be rendered by providing the story's ID as the `story` prop:
+
+```markdown
+<story-viewer component="base-alert" story="variants"></story-viewer>
+```
+
+If omitted, `story` defaults to `'default'`, which is the most commonly used story ID.
+
+To find a story's ID and its corresponding component's ID, open it in GitLab UI's Storybook.
+The component ID is whatever is after `/story/` or `/docs/` and before the `--` in the URL's `path`
+parameter. The story ID is what after the `--`. Consider the following URL for example:
 
 ```plaintext
 https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/base-alert--default
 ```
 
-The story ID is `base-alert--default`.
+The component ID is `base-alert` and the story ID is `default`.
 
 ### Custom title
 
@@ -42,7 +51,7 @@ Stories included in Pajamas docs pages are rendered in a card where the title de
 ID. To use a custom title, pass it as the `title` prop:
 
 ```markdown
-<story-viewer story-name="base-alert--default" title="My custom title"></story-viewer>
+<story-viewer component="base-alert" title="My custom title"></story-viewer>
 ```
 
 ### Storybook controls
@@ -55,19 +64,19 @@ kebab-cased name, prefixed with `args-`. For example, to set `GlToggle`'s `isLoa
 `true`, you would provide the `args-is-loading` prop like so:
 
 ```html
-<story-viewer story-name="base-toggle--default" :args-is-loading="true"></story-viewer>
+<story-viewer component="base-toggle" :args-is-loading="true"></story-viewer>
 ```
 
 ## Embedding GitLab UI docs pages
 
-To include GitLab UI docs pages, list story IDs in the frontmatter's `stories` section. The docs
+To include GitLab UI docs pages, list component IDs in the frontmatter's `component` section. The docs
 pages will be available in the component's **Implementation** tab. Multiple story IDs can be
 provided, docs pages will be rendered one after the other in the **Implementation** tab.
 
 ```markdown
 ---
-stories:
-  - base-alert--default
+components:
+  - base-alert
 ---
 ```
 

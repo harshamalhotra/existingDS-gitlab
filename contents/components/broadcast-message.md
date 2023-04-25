@@ -3,15 +3,15 @@ name: Broadcast message
 description: A broadcast message delivers an instance level message from the admin to all users.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A6
 docs: complete
-stories:
-  - base-broadcast-message--default
+components:
+  - base-broadcast-message
 related:
   - alert
 ---
 
 ## Examples
 
-<story-viewer story-name="base-broadcast-message--default" title="Default broadcast message"></story-viewer>
+<story-viewer component="base-broadcast-message" title="Default broadcast message"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=1501%3A1583)
 

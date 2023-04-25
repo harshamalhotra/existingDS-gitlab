@@ -2,8 +2,8 @@
 name: Avatar
 description: An avatar represents a unique entity, like a person, group, or project.
 docs: in-progress
-stories:
-  - base-avatar--image
+components:
+  - base-avatar
 related:
   - badge
   - breadcrumb
@@ -11,9 +11,9 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-avatar--image" title="Avatar image"></story-viewer>
+<story-viewer component="base-avatar" story="image" title="Avatar image"></story-viewer>
 
-<story-viewer story-name="base-avatar-labeled--default" title="Labeled avatar"></story-viewer>
+<story-viewer component="base-avatar-labeled" title="Labeled avatar"></story-viewer>
 
 <todo>Add group demo</todo>
 

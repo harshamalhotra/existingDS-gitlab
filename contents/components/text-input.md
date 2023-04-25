@@ -6,7 +6,7 @@ componentLabel: form-text-input
 
 ## Examples
 
-<story-viewer story-name="base-form-form-input--default" title="Text input"></story-viewer>
+<story-viewer component="base-form-form-input" title="Text input"></story-viewer>
 
 ## Structure
 

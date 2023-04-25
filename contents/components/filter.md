@@ -2,8 +2,8 @@
 name: Filter
 description: Filters allow a user to narrow down content by taking an existing list and removing items based on criteria that matches or doesn’t.
 componentLabel: form-filter
-stories:
-  - base-filtered-search--default
+components:
+  - base-filtered-search
 related:
   - token
   - search
@@ -14,7 +14,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-filtered-search--default" title="Filtered search"></story-viewer>
+<story-viewer component="base-filtered-search" title="Filtered search"></story-viewer>
 
 <todo>Add Filter to Pajamas UI Kit.</todo>
 

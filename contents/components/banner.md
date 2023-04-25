@@ -1,8 +1,8 @@
 ---
 name: Banner
 description: A banner promotes awareness of a new feature or high-priority research initiative.
-stories:
-  - base-banner--default
+components:
+  - base-banner
 related:
   - alert
   - broadcast-message
@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-banner--introduction"></story-viewer>
+<story-viewer component="base-banner" story="introduction"></story-viewer>
 
-<story-viewer story-name="base-banner--default"></story-viewer>
+<story-viewer component="base-banner"></story-viewer>
 
-<story-viewer story-name="base-banner--no-image" title="Promotion"></story-viewer>
+<story-viewer component="base-banner" story="no-image" title="Promotion"></story-viewer>
 
 [View design in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4845%3A7873)
 

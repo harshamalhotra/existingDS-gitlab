@@ -7,7 +7,7 @@ describe('story viewer component', () => {
   let wrapper;
 
   // Props
-  const storyName = 'base-component--default';
+  const component = 'base-component';
 
   // Mocks
   const $gitlabUiUrl = 'http://gitlab-ui.test';
@@ -23,7 +23,7 @@ describe('story viewer component', () => {
   const createComponent = (props = {}) => {
     wrapper = shallowMount(StoryViewer, {
       propsData: {
-        storyName,
+        component,
         ...props,
       },
       mocks: {
@@ -39,16 +39,23 @@ describe('story viewer component', () => {
     wrapper.destroy();
   });
 
-  describe.each(['story', 'docs'])('with view mode %s', (viewMode) => {
+  describe.each`
+    viewMode   | story         | expectedPath
+    ${'story'} | ${undefined}  | ${`${component}--default`}
+    ${'story'} | ${'variants'} | ${`${component}--variants`}
+    ${'docs'}  | ${undefined}  | ${`${component}--docs`}
+    ${'docs'}  | ${'variants'} | ${`${component}--docs`}
+  `('with view mode $viewMode and story $story', ({ viewMode, story, expectedPath }) => {
     beforeEach(() => {
       createComponent({
         viewMode,
+        story,
       });
     });
 
     it('renders an iframe with the proper URL', () => {
       expect(getIFrameURL()).toBe(
-        `${$gitlabUiUrl}/iframe.html?id=${storyName}&viewMode=${viewMode}`,
+        `${$gitlabUiUrl}/iframe.html?id=${expectedPath}&viewMode=${viewMode}`,
       );
     });
   });
@@ -88,7 +95,7 @@ describe('story viewer component', () => {
 
     it('renders a link to Storybook', () => {
       expect(findStoryLink().attributes('href')).toBe(
-        `${$gitlabUiUrl}/?path=%2Fstory%2F${storyName}`,
+        `${$gitlabUiUrl}/?path=%2Fstory%2F${component}--default`,
       );
     });
 
@@ -99,10 +106,10 @@ describe('story viewer component', () => {
       expect(card.findComponent(StoryIframe).exists()).toBe(true);
     });
 
-    it("renders the story's ID as the default title", () => {
+    it("renders the story's name as the default title", () => {
       createComponent();
 
-      expect(findStoryTitle().text()).toBe(storyName);
+      expect(findStoryTitle().text()).toBe(`${component}--default`);
     });
 
     it('renders the custom title if provided', () => {

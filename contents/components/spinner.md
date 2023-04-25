@@ -1,8 +1,8 @@
 ---
 name: Spinner
 description: A spinner is an animated element that appears after a user's action to indicate that saving or loading is in progress.
-stories:
-  - base-loading-icon--default
+components:
+  - base-loading-icon
 related:
   - skeleton-loader
   - button
@@ -11,7 +11,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-loading-icon--default" title="Default"></story-viewer>
+<story-viewer component="base-loading-icon" title="Default"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=19944%3A0)
 

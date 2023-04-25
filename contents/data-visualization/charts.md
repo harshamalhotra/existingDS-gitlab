@@ -1,12 +1,12 @@
 ---
 name: Charts
 docs: complete
-stories:
-  - charts-area-chart--default
-  - charts-line-chart--default
-  - charts-column-chart--default
-  - charts-stacked-column-chart--stacked
-  - charts-gauge-chart--default
+components:
+  - charts-area-chart
+  - charts-line-chart
+  - charts-column-chart
+  - charts-stacked-column-chart
+  - charts-gauge-chart
 related:
   - popover
 ---
@@ -57,13 +57,13 @@ Column charts are the default chart type, and they are used to compare values ac
 
 The bars on a column chart are presented vertically rather than horizontally, and they can be stacked. 
 
-<story-viewer story-name="charts-column-chart--default" title="Basic Column Chart"></story-viewer>
+<story-viewer component="charts-column-chart" title="Basic Column Chart"></story-viewer>
 
 ### Grouped and stacked column charts
 
 It may sometimes be necessary to stack values in a column or to have groups of columns within your chart, for example when there are two dimensions of data (one nested within another) moving across time. Stacked columns can be either symmetric or asymmetric, meaning the number of stacks may or may not be equal across groups.
 
-<story-viewer story-name="charts-stacked-column-chart--stacked" title="Stacked Column Chart"></story-viewer>
+<story-viewer component="charts-stacked-column-chart" story="stacked" title="Stacked Column Chart"></story-viewer>
 
 #### Color in stacked and grouped charts
 
@@ -89,7 +89,7 @@ Line charts are used to display continuous data.
 
 They are useful when you are looking to identify trends or to see larger patterns in your data, and to see how your data changes over time.
 
-<story-viewer story-name="charts-line-chart--default" title="Line Chart"></story-viewer>
+<story-viewer component="charts-line-chart" title="Line Chart"></story-viewer>
 
 ## Area charts
 
@@ -97,31 +97,31 @@ Area charts are used to represent "[cumulated totals](http://www.vizwiz.com/2012
 
 In instances where you want to see both the overall trend and the percent contribution, it is preferable to use a line chart rather than an area chart. It can be very difficult for our eyes to correctly assess the width of areas and how it trends.
 
-<story-viewer story-name="charts-area-chart--default" title="Area Chart"></story-viewer>
+<story-viewer component="charts-area-chart" title="Area Chart"></story-viewer>
 
 ## Bar charts
 
 Bar charts are a variation of column charts, where the columns are horizontal rather than vertical. It can be used for the same purposes as column charts, which is to compare values across categories.
 
-<story-viewer story-name="charts-bar-chart--default" title="Bar Chart"></story-viewer>
+<story-viewer component="charts-bar-chart" title="Bar Chart"></story-viewer>
 
 ## Scatter charts
 
 Scatter charts give a sense of the distribution and relative size of values.
 
-<story-viewer story-name="charts-discrete-scatter-chart--default" title="Scatter Chart"></story-viewer>
+<story-viewer component="charts-discrete-scatter-chart" title="Scatter Chart"></story-viewer>
 
 ## Gauge charts
 
 Gauge charts highlight the current value within the range of possible values for the metric.
 
-<story-viewer story-name="charts-gauge-chart--default" title="Gauge Chart"></story-viewer>
+<story-viewer component="charts-gauge-chart" title="Gauge Chart"></story-viewer>
 
 ## Sparkline charts
 
 Sparkline charts give a quick indication of trend and a summary of the current value. They are particularly useful when space is limited.
 
-<story-viewer story-name="charts-sparkline-chart--default" title="Sparkline Chart"></story-viewer>
+<story-viewer component="charts-sparkline-chart" title="Sparkline Chart"></story-viewer>
 
 ## Interaction
 

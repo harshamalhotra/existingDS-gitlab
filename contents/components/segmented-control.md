@@ -2,8 +2,8 @@
 name: Segmented control
 description: A segmented control allows users to choose one out of a range of available options. It is a button group of equal options where only one can be selected and active. There must always be one option active.
 deprecated: true
-stories:
-  - base-segmented-control--default
+components:
+  - base-segmented-control
 related:
   - button
   - checkbox
@@ -17,7 +17,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-segmented-control--default"></story-viewer>
+<story-viewer component="base-segmented-control"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A135)
 

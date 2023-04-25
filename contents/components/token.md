@@ -2,8 +2,8 @@
 name: Token
 description: A token represents a keyword used to add or filter objects.
 componentLabel: form-token
-stories:
-  - base-token--default
+components:
+  - base-token
 related:
   - filter
   - badge
@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-token--default"></story-viewer>
+<story-viewer component="base-token"></story-viewer>
 
-<story-viewer story-name="base-token--view-only"></story-viewer>
+<story-viewer component="base-token" story="view-only"></story-viewer>
 
-<story-viewer story-name="base-token--with-avatar"></story-viewer>
+<story-viewer component="base-token" story="with-avatar"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A141)
 

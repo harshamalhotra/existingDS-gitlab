@@ -11,8 +11,8 @@ export default {
 
 <template>
   <div class="app-styles gl-pt-0">
-    <div v-for="story in page.stories" :key="story" class="container">
-      <story-viewer :story-name="story" view-mode="docs" />
+    <div v-for="story in page.components" :key="story" class="container">
+      <story-viewer :component="story" view-mode="docs" />
     </div>
   </div>
 </template>

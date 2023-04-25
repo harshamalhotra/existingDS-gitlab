@@ -67,8 +67,8 @@ export default {
       }
       return componentNameToLabelMap[slug] || slug;
     },
-    hasStories() {
-      return Boolean(this.page?.stories?.length);
+    hasComponents() {
+      return Boolean(this.page?.components?.length);
     },
     showTabs() {
       return Boolean(this.tabs.length);
@@ -85,7 +85,7 @@ export default {
           ...tabs,
         ];
 
-        if (this.hasStories) {
+        if (this.hasComponents) {
           tabs.push({
             route: 'section-slug-code',
             title: 'Implementation (Vue.js)',

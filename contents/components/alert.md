@@ -4,8 +4,8 @@ description: An alert is a system generated, contextual, and timely message to a
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A1
 docs: complete
 gitlab_ui: /components/alert/code
-stories:
-  - base-alert--default
+components:
+  - base-alert
 related:
   - broadcast-message
   - toast
@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-alert--variants"></story-viewer>
+<story-viewer component="base-alert" story="variants"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A278)
 

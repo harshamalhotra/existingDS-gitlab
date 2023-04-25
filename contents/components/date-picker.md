@@ -2,18 +2,18 @@
 name: Date picker
 description: The date picker allows a user to choose and/or input a date by using a calendar dropdown or by typing the date into a text field.
 componentLabel: form-date-picker
-stories:
-  - base-datepicker--default
-  - base-daterange-picker--default
+components:
+  - base-datepicker
+  - base-daterange-picker
 related:
   - text-input
 ---
 
 ## Examples
 
-<story-viewer story-name="base-datepicker--default" title="Date picker"></story-viewer>
+<story-viewer component="base-datepicker" title="Date picker"></story-viewer>
 
-<story-viewer story-name="base-daterange-picker--default" title="Date range picker"></story-viewer>
+<story-viewer component="base-daterange-picker" title="Date range picker"></story-viewer>
 
 <todo>Add example date range limit indicator.</todo>
 

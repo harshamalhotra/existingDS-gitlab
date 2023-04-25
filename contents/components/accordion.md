@@ -1,8 +1,8 @@
 ---
 name: Accordion
 description: An accordion is used to show and hide content. 
-stories:
-  - base-accordion--default
+components:
+  - base-accordion
 related:
 - modal
 - tree
@@ -11,7 +11,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-accordion--default" title="Default accordion"></story-viewer>
+<story-viewer component="base-accordion" title="Default accordion"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A0)
 

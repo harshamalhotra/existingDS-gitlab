@@ -1,8 +1,8 @@
 ---
 name: Tabs
 description: Tabs divide content into meaningful, related sections.
-stories:
-  - base-tabs--default
+components:
+  - base-tabs
 related:
   - accordion
   - path
@@ -10,11 +10,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-tabs--default"></story-viewer>
+<story-viewer component="base-tabs"></story-viewer>
 
-<story-viewer story-name="base-tabs--justified-tabs"></story-viewer>
+<story-viewer component="base-tabs" story="justified-tabs"></story-viewer>
 
-<story-viewer story-name="base-tabs--with-counter-badges"></story-viewer>
+<story-viewer component="base-tabs" story="with-counter-badges"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A138)
 

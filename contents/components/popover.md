@@ -1,8 +1,8 @@
 ---
 name: Popover
 description: Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. They inform the user of additional information within the context of their original view, but without forcing the user to act upon it like a modal.
-stories:
-  - base-popover--default
+components:
+  - base-popover
 related:
   - tooltip
   - modal
@@ -11,7 +11,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-popover--default"></story-viewer>
+<story-viewer component="base-popover"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A131)
 
