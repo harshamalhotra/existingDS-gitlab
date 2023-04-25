@@ -1,11 +1,5 @@
 # Embed GitLab UI stories
 
-> **Note:** The approach documented here assumes that the stories you are embedding have been
-> migrated to the Component Story Format (CSF). While it is technically possible to embed non-CSF
-> stories, the result will most likely not look right and you might prefer to follow the
-> [legacy approach](./component-examples.md) for including component examples instead.
-> If you'd like to help migrate stories to CSF, please head to the [migration epic](https://gitlab.com/groups/gitlab-org/-/epics/5651).
-
 GitLab UI stories can be embedded inside component docs pages to provide usage examples or to expose
 technical documentation. Stories support two view modes than we can both leverage in Pajamas:
 
