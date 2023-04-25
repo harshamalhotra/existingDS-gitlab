@@ -54,6 +54,9 @@ export default {
     storyUrl() {
       const url = new URL(this.$gitlabUiUrl);
       url.searchParams.append('path', `/${this.viewMode}/${this.storyName}`);
+      if (this.storyBookArgs) {
+        url.searchParams.append('args', this.storyBookArgs);
+      }
 
       return url.href;
     },

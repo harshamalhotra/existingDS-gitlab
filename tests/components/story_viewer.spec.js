@@ -86,6 +86,17 @@ describe('story viewer component', () => {
 
       expect(getIFrameArgs()).toBe(`foo:bar`);
     });
+
+    it('renders a link to Storybook', () => {
+      createComponent({
+        'args-foo': 'bar',
+        'is-loading': true,
+      });
+
+      expect(findStoryLink().attributes('href')).toBe(
+        `${$gitlabUiUrl}/?path=%2Fstory%2F${component}--default&args=foo%3Abar`,
+      );
+    });
   });
 
   describe('story mode', () => {
