@@ -1,8 +1,8 @@
 ---
 name: Tooltip
 description: Tooltips identify elements or provide additional, useful information about the referring elements.
-stories:
-  - base-tooltip--top-default
+components:
+  - base-tooltip
 related:
   - popover
   - button
@@ -10,7 +10,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-tooltip--top-default" title="Default"></story-viewer>
+<story-viewer component="base-tooltip" story="top-default" title="Default"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A142)
 

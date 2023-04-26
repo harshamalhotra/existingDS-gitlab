@@ -6,7 +6,7 @@ componentLabel: form-select
 
 ## Examples
 
-<story-viewer story-name="base-form-form-select--default" title="Select"></story-viewer>
+<story-viewer component="base-form-form-select" title="Select"></story-viewer>
 
 ## Structure
 

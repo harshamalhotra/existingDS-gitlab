@@ -4,8 +4,8 @@ description: A modal is used to reveal critical information, show information wi
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A129
 docs: complete
 gitlab_ui: /components/modal/code
-stories:
-  - base-modal--default
+components:
+  - base-modal
 related:
   - accordion
   - button
@@ -17,7 +17,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-modal--default" title="Opened modal" iframe-padding="120px 0px"></story-viewer>
+<story-viewer component="base-modal" title="Opened modal" iframe-padding="120px 0px"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4263%3A21)
 

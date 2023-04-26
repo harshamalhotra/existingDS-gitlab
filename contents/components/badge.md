@@ -3,8 +3,8 @@ name: Badge
 description: A badge highlights system generated metadata as an attribute of a larger object. 
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
 docs: complete
-stories:
-  - base-badge--default
+components:
+  - base-badge
 related:
   - label
   - button
@@ -13,11 +13,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-badge--variants" title="Badge variants"></story-viewer>
+<story-viewer component="base-badge" story="variants" title="Badge variants"></story-viewer>
 
-<story-viewer story-name="base-badge--actionable" title="Actionable badges"></story-viewer>
+<story-viewer component="base-badge" story="actionable" title="Actionable badges"></story-viewer>
 
-<story-viewer story-name="base-badge--badge-icon" title="With icons"></story-viewer>
+<story-viewer component="base-badge" story="badge-icon" title="With icons"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A3)
 

@@ -2,8 +2,8 @@
 name: Checkbox
 description: A checkbox form element represents a boolean option.
 componentLabel: form-checkbox
-stories:
-  - base-form-form-checkbox--default
+components:
+  - base-form-form-checkbox
 related:
   - radio-button
   - toggle
@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-form-form-checkbox--default" title="Checkbox"></story-viewer>
+<story-viewer component="base-form-form-checkbox" title="Checkbox"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242)
 

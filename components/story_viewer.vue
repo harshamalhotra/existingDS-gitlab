@@ -14,9 +14,14 @@ export default {
     StoryIframe,
   },
   props: {
-    storyName: {
+    component: {
       type: String,
       required: true,
+    },
+    story: {
+      type: String,
+      required: false,
+      default: 'default',
     },
     title: {
       type: String,
@@ -39,12 +44,19 @@ export default {
     isDocsMode() {
       return this.viewMode === VIEW_MODE_DOCS;
     },
+    storyName() {
+      const suffix = this.isDocsMode ? 'docs' : this.story;
+      return `${this.component}--${suffix}`;
+    },
     cardTitle() {
       return this.title || this.storyName;
     },
     storyUrl() {
       const url = new URL(this.$gitlabUiUrl);
       url.searchParams.append('path', `/${this.viewMode}/${this.storyName}`);
+      if (this.storyBookArgs) {
+        url.searchParams.append('args', this.storyBookArgs);
+      }
 
       return url.href;
     },

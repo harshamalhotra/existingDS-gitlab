@@ -1,8 +1,8 @@
 ---
 name: Overview
 docs: in-progress
-stories:
-  - charts-heatmap--default
+components:
+  - charts-heatmap
 related:
   - /data-visualization/charts
 ---
@@ -49,7 +49,7 @@ A heat map is an example of a spatial-temporal data visualization.
 
 Heat maps can be used to more quickly visualize and compare values in a dataset. In heat maps, data points are grouped and displayed using shades of color. Darker colors are generally used to communicate a higher density of data.
 
-<story-viewer story-name="charts-heatmap--default" title="Heat Map"></story-viewer>
+<story-viewer component="charts-heatmap" title="Heat Map"></story-viewer>
 
 ### Statistical graphics
 
@@ -57,7 +57,7 @@ Charts are statistical graphics that help users quickly digest, visualize and se
 
 Full list of chart types and design specifications is detailed on the [Charts](/data-visualization/charts) component page.
 
-<story-viewer story-name="charts-stacked-column-chart--stacked" title="Stacked column chart"></story-viewer>
+<story-viewer component="charts-stacked-column-chart" story="stacked" title="Stacked column chart"></story-viewer>
 
 ## Design specifications
 

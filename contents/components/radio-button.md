@@ -2,8 +2,8 @@
 name: Radio button
 description: A radio button typically represents a single option in a group of related choices.
 componentLabel: form-radio-button
-stories:
-  - base-form-form-radio--default
+components:
+  - base-form-form-radio
 related:
   - checkbox
   - segmented-control
@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-form-form-radio--default" title="Radio button"></story-viewer>
+<story-viewer component="base-form-form-radio" title="Radio button"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4)
 

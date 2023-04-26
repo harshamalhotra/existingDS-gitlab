@@ -1,15 +1,15 @@
 ---
 name: Link
 description: A link is a navigational element that takes a user to another URL, an element within a page, or a file.
-stories:
-  - base-link--default-link
+components:
+  - base-link
 related:
   - button
 ---
 
 ## Examples
 
-<story-viewer story-name="base-link--default-link" title="Link"></story-viewer>
+<story-viewer component="base-link" story="default-link" title="Link"></story-viewer>
 
 <todo>Add Figma link once available in the Pajamas UI Kit.</todo>
 

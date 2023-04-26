@@ -2,9 +2,9 @@
 name: Search
 description: Search patterns enable users to find certain information by adding criteria that match their query.
 componentLabel: form-search
-stories:
-  - base-search-box-by-click--default
-  - base-search-box-by-type--default
+components:
+  - base-search-box-by-click
+  - base-search-box-by-type
 related:
   - button
   - filter
@@ -15,9 +15,9 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-search-box-by-click--history" title="Search by click with history" iframe-padding="0 0 200px 0"></story-viewer>
+<story-viewer component="base-search-box-by-click" story="history" title="Search by click with history" iframe-padding="0 0 200px 0"></story-viewer>
 
-<story-viewer story-name="base-search-box-by-type--default" title="Search by type"></story-viewer>
+<story-viewer component="base-search-box-by-type" title="Search by type"></story-viewer>
 
 <todo>Add to Pajamas UI Kit.</todo>
 

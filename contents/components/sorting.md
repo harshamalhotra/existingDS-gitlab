@@ -1,8 +1,8 @@
 ---
 name: Sorting
 description: Sorting allows users to quickly re-organize similar content on a long list when the default order may be insufficient for users to scan the data set.
-stories:
-  - base-sorting--default
+components:
+  - base-sorting
 related:
   - dropdown-disclosure
   - dropdown-combobox
@@ -12,7 +12,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-sorting--default" title="Default" iframe-padding="0 0 100px 0"></story-viewer>
+<story-viewer component="base-sorting" title="Default" iframe-padding="0 0 100px 0"></story-viewer>
 
 <todo>Add to Pajamas UI kit.</todo>
 

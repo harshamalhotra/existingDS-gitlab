@@ -1,8 +1,8 @@
 ---
 name: Infinite scroll
 description: Infinite scroll helps users parse a large number of items by breaking up lists and distributing the results.
-stories:
-  - base-infinite-scroll--default
+components:
+  - base-infinite-scroll
 related:
   - pagination
   - spinner
@@ -14,7 +14,7 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-infinite-scroll--default" title="Default"></story-viewer>
+<story-viewer component="base-infinite-scroll" title="Default"></story-viewer>
 
 <todo>Add infinite scroll to Pajamas UI Kit</todo>
 

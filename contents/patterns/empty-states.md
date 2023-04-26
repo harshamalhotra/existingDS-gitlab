@@ -1,7 +1,7 @@
 ---
 name: Empty States
-stories:
-  - regions-empty-state--default
+components:
+  - regions-empty-state
 related:
   - banner
   - button
@@ -107,7 +107,7 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 ### Example
 
-<story-viewer story-name="regions-empty-state--default"></story-viewer>
+<story-viewer component="regions-empty-state"></story-viewer>
 
 ## Implementation
 

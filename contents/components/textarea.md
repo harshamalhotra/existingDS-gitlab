@@ -6,7 +6,7 @@ componentLabel: form-textarea
 
 ## Examples
 
-<story-viewer story-name="base-form-form-textarea--default" title="Textarea"></story-viewer>
+<story-viewer component="base-form-form-textarea" title="Textarea"></story-viewer>
 
 ## Structure
 

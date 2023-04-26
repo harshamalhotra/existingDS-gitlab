@@ -4,8 +4,8 @@ figma: https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node
 docs: complete
 a11y: upcoming
 gitlab_ui: /components/single-stat/code
-stories:
-  - charts-single-stat--default
+components:
+  - charts-single-stat
 ---
 
 The single stat component displays the title and value of a metric.
@@ -30,25 +30,25 @@ A single stat can be used by itself or side-by-side with other single stats to d
 
 The default pattern for displaying a metric.
 
-<story-viewer story-name="charts-single-stat--default" title="Default" :args-value="100000" ></story-viewer>
+<story-viewer component="charts-single-stat" title="Default" :args-value="100000" ></story-viewer>
 
 ### Title icon
 
 A single stat with a title icon to convey extra meaning to the metric.
 
-<story-viewer story-name="charts-single-stat--with-title-icon" title="With Title Icon"></story-viewer>
+<story-viewer component="charts-single-stat" story="with-title-icon" title="With Title Icon"></story-viewer>
 
 ### Meta icon
 
 A single stat with an icon which can be used to convey status or trend.
 
-<story-viewer story-name="charts-single-stat--with-meta-icon" title="With Meta Icon"></story-viewer>
+<story-viewer component="charts-single-stat" story="with-meta-icon" title="With Meta Icon"></story-viewer>
 
 ### Badge
 
 A single stat with a badge which can be used to convey status or trend in more detail.
 
-<story-viewer story-name="charts-single-stat--with-meta-icon" title="With Badge" args-variant="info" args-meta-text="through the roof" args-meta-icon="rocket"></story-viewer>
+<story-viewer component="charts-single-stat" story="with-meta-icon" title="With Badge" args-variant="info" args-meta-text="through the roof" args-meta-icon="rocket"></story-viewer>
 
 ## Design specifications
 

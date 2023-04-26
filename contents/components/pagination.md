@@ -1,8 +1,8 @@
 ---
 name: Pagination
 description: Pagination breaks up content into multiple pages with controls for navigating those pages.
-stories:
-  - base-pagination--default
+components:
+  - base-pagination
 related:
   - button
   - path
@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-pagination--default" title="Default pagination"></story-viewer>
+<story-viewer component="base-pagination" title="Default pagination"></story-viewer>
 
-<story-viewer story-name="base-pagination--default" title="Truncated on both sides" :args-initial-page="10"></story-viewer>
+<story-viewer component="base-pagination" title="Truncated on both sides" :args-initial-page="10"></story-viewer>
 
-<story-viewer story-name="base-pagination--compact" title="Compact pagination"></story-viewer>
+<story-viewer component="base-pagination" story="compact" title="Compact pagination"></story-viewer>
 
 <todo>Add or refactor examples to compare offset and keyset pagination.</todo>
 

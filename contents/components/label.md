@@ -1,17 +1,17 @@
 ---
 name: Label
 description: Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
-stories:
-  - base-label--default
+components:
+  - base-label
 related:
   - badge
 ---
 
 ## Examples
 
-<story-viewer story-name="base-label--default" title="Default label"></story-viewer>
+<story-viewer component="base-label" title="Default label"></story-viewer>
 
-<story-viewer story-name="base-label--scoped" title="Scoped label"></story-viewer>
+<story-viewer component="base-label" story="scoped" title="Scoped label"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A127)
 

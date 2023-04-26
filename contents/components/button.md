@@ -4,9 +4,9 @@ description: A button indicates a distinct action and executes a function. Text,
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A7
 docs: in-progress
 gitlab_ui: /components/button/code
-stories:
-  - base-button--default
-  - base-button-group--default
+components:
+  - base-button
+  - base-button-group
 related:
   - dropdown-disclosure
   - dropdown-menu
@@ -20,35 +20,35 @@ related:
 
 ## Examples
 
-<story-viewer story-name="base-button--all-variants-and-categories" title="All variants and categories"></story-viewer>
+<story-viewer component="base-button" story="all-variants-and-categories" title="All variants and categories"></story-viewer>
 
-<story-viewer story-name="base-button--sizes" title="All sizes"></story-viewer>
+<story-viewer component="base-button" story="sizes" title="All sizes"></story-viewer>
 
-<story-viewer story-name="base-button--default" title="Selected button" :args-selected="true"></story-viewer>
+<story-viewer component="base-button" title="Selected button" :args-selected="true"></story-viewer>
 
-<story-viewer story-name="base-button--default" title="Loading button" :args-loading="true"></story-viewer>
+<story-viewer component="base-button" title="Loading button" :args-loading="true"></story-viewer>
 
 <todo>Add live component block with example of loading icon button</todo>
 
-<story-viewer story-name="base-button--default" title="Disabled button" :args-disabled="true"></story-viewer>
+<story-viewer component="base-button" title="Disabled button" :args-disabled="true"></story-viewer>
 
-<story-viewer story-name="base-button--icon-button" title="Icon buttons"></story-viewer>
+<story-viewer component="base-button" story="icon-button" title="Icon buttons"></story-viewer>
 
-<story-viewer story-name="base-button--emojis" title="Emoji buttons"></story-viewer>
+<story-viewer component="base-button" story="emojis" title="Emoji buttons"></story-viewer>
 
-<story-viewer story-name="base-button--label-button" title="Label button"></story-viewer>
+<story-viewer component="base-button" story="label-button" title="Label button"></story-viewer>
 
-<story-viewer story-name="base-button--badges" title="Buttons with badges"></story-viewer>
+<story-viewer component="base-button" story="badges" title="Buttons with badges"></story-viewer>
 
-<story-viewer story-name="base-button--dropdown-button" title="Dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
+<story-viewer component="base-button" story="dropdown-button" title="Dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<story-viewer story-name="base-button--dropdown-icon-button" title="Icon dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
+<story-viewer component="base-button" story="dropdown-icon-button" title="Icon dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<story-viewer story-name="base-button--dropdown-split-button" title="Split dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
+<story-viewer component="base-button" story="dropdown-split-button" title="Split dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<story-viewer story-name="base-button--ellipsis" title="Buttons with badges"></story-viewer>
+<story-viewer component="base-button" story="ellipsis" title="Buttons with badges"></story-viewer>
 
-<story-viewer story-name="base-button-group--default" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
+<story-viewer component="base-button-group" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit-Beta?node-id=2956%3A3357)
 
