@@ -36,12 +36,3 @@ At the moment we only import component specific styles in order to avoid side-ef
 .app-styles {
   @import '@gitlab/ui/src/scss/gitlab_ui';
 }
-
-// TODO: Move the following utils to GitLab UI
-.gl-gap-7 {
-  gap: $gl-spacing-scale-7;
-}
-
-.gl-grid-template-columns-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
