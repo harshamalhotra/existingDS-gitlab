@@ -774,7 +774,11 @@ Typical state changes (light UI):
 - `:focus` a color becomes one step darker than at rest, matching `:hover` color.
 - `:active` a color becomes two steps darker than at rest.
  
-  <figure-img alt="Example button state color changes" label="A primary confirm button example with a $blue-500 fill at rest (1), a $blue-600 fill for hover and focus (2, 3), and a $blue-700 fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state." src="/img/color-interactive.svg"></figure-img>
+  <figure-img alt="Example button state color changes" label="Interactive color state example" src="/img/color-interactive.svg">
+    <template #caption>
+      A primary confirm button example with a <code>$blue-500</code> fill at rest (1), a <code>$blue-600</code> fill for hover and focus (2, 3), and a <code>$blue-700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
+    </template>
+  </figure-img>
 - Where there aren't enough steps to follow this pattern, prioritize `:hover` and `:focus` becoming a step darker.
 
 ## Accessibility
