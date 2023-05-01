@@ -1,3 +1,11 @@
+# [2.158.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.157.0...v2.158.0) (2023-05-01)
+
+
+### Features
+
+* **color:** document first iteration of color interaction guidelines ([66d93c1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/66d93c16c74e56e05b3ed301e8ff28c302cda666))
+* **FigmaGuides:** Init UI kit property naming style guide ([faa784a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/faa784a97594978ba56ca658d6a89ce92de65f5a))
+
 # [2.157.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.156.0...v2.157.0) (2023-04-24)
 
 
