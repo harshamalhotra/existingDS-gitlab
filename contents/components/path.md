@@ -23,11 +23,12 @@ related:
 
 ### When to use
 
-- As an indicator of a user’s progress within a process, for example, in a checkout flow.
+- When there is a process with unique content at each stage, for example, a [DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/). 
 
 ### When not to use
 
-<todo>Add when not to use.</todo>
+- To indicate a user’s progress within a process, for example, in a checkout flow, use a [progress bar](/components/progress-bar).
+
 
 ### Variants
 
