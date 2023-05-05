@@ -1951,17 +1951,17 @@
     lunr "^2.3.9"
     lunr-languages "^1.4.0"
 
-"@nuxtjs/sentry@^7.2.2":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-7.2.2.tgz#1549ce4f353a067bb9aa872af932187ca1d76d6d"
-  integrity sha512-HlXlC06w5wvAkK/PINyWBxgoRNINkfyPTQc0uIuy9UspyfxoYdWcghDxMcS3pDpIx6gpcZloDwxx6V4gE5HsFg==
+"@nuxtjs/sentry@^7.2.3":
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-7.2.3.tgz#baee67312ed7a3535695ca2df5b594a492c92568"
+  integrity sha512-wPePSzz1Gq8JRB9ThXkyxU8WW/aXH0bl1J0XJ0nWeozEewnE7uI9WWWhDLrCYvyxOkCy0xHbDm2Zq6TLjZNZvQ==
   dependencies:
     "@sentry/core" "^7.48.0"
     "@sentry/integrations" "^7.48.0"
     "@sentry/node" "^7.48.0"
     "@sentry/utils" "^7.48.0"
     "@sentry/vue" "^7.48.0"
-    consola "^2.0.0"
+    consola "^3.0.0"
     defu "^6.0.0"
     hash-sum "^2.0.0"
     lodash.mergewith "^4.6.2"
@@ -4128,10 +4128,15 @@ connect@^3.7.0:
     parseurl "~1.3.3"
     utils-merge "1.0.1"
 
-consola@^2.0.0, consola@^2.15.0, consola@^2.15.3, consola@^2.6.0:
+consola@^2.15.0, consola@^2.15.3, consola@^2.6.0:
   version "2.15.3"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
   integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
+
+consola@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-3.1.0.tgz#dfdfa62ceb68bc1f06e4a76ad688566bd8813baf"
+  integrity sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==
 
 console-browserify@^1.1.0:
   version "1.1.0"
