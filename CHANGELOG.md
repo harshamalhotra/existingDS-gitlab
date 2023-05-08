@@ -1,3 +1,17 @@
+# [2.159.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.158.0...v2.159.0) (2023-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/sentry to ^7.2.3 ([7abb675](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7abb67520d48c9dfb550942a41be7061d1d304b9))
+* **deps:** update gitlab ui/svg ([e2841f0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e2841f06b0479a6dfcb25d7c4acfc996c55311e7))
+
+
+### Features
+
+* **AIHumanInteraction:** add guidance on transparency ([a840a6e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a840a6e0d8dc2c44378c6c180f98528ce3f5e683))
+* **GlPath:** update usage guidelines ([a2fecc8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a2fecc89e7ca736dfd5b4529b1c6ae80f648cc46))
+
 # [2.158.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.157.0...v2.158.0) (2023-05-01)
 
 
