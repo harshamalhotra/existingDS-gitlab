@@ -53,24 +53,25 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 ### Highlighting feature versions
 
-Similar to higher tier features, feature versions like Experiment and Beta should be easily identifiable. When a feature can be enabled via a setting, consider adding a badge next to the setting header. Include a link
-to the [feature management documentation](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) in a [popover](/components/popover).
+Similar to higher tier features, feature versions like Experiment and Beta should be easily identifiable, using a [badge](/components/badge/) with an explanation in a [popover](/components/popover):
 
 | Experiment | Beta |
 | ------ | ------ |
-| Features in [Experiment](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) aren't fully tested and may break. | Features in [Beta](https://docs.gitlab.com/ee/policy/alpha-beta-support.html) may still contain bugs or inconsistencies. |
 | <figure-img label="Experiment feature badge" src="/img/experiment-feature-badge.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/beta-feature-badge.svg"></figure-img> |
+| **What's an Experiment**<br>An Experiment is a feature that's in the process of being developed. It's not production-ready. We encourage users to try Experimental features and provide feedback.<br><br>An Experiment:<ul><li>May have performance or stability issues</li><li>Can cause data loss</li><li>Has no support and might not be documented</li><li>Can be removed at any time</li></ul> | **What's Beta?**<br>A Beta feature is not production-ready, but is unlikely to change drastically before it's released. We encourage users to try Beta features and provide feedback.<br><br>A Beta feature:<ul><li>May have performance or stability issues</li><li>Should not cause data loss</li><li>Is supported by a commercially reasonable effort</li><li>Is complete or near completion</li></ul> |
 
+<todo>Replace badges with live example or link once a dedicated component has been added to GitLab UI.</todo>
 #### Specification
 
 * Component name: [`GlBadge`](https://design.gitlab.com/components/badge/code)
-* Variant: `Info`
-* Size: `MD`
+* Variant: `neutral`
+* Size: `md` or `sm`
 
 #### How to use
 
-* Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
-* When the feature becomes Generally Available, make sure the badge is removed.
+* Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature. 
+* When placing the badge, consider the available space and opt for a small badge if needed. The badge can be displayed either before or after the user interacts with the feature.
+* When the feature becomes Generally Available, make sure the badge is removed.  
 
 ## Visibility
 
