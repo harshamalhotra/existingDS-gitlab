@@ -2,9 +2,14 @@
 name: Release process
 ---
 
-The Pajamas UI Kit will have a new release (version) published at the end of each milestone. At the moment there's no formal version numbering.
+The Pajamas UI Kit will have a new release (version) published at the end of each milestone. At the moment there's no formal version numbering other than the milestone number.
 
-- At minimum, a text release post (format TBD) will be published to document the changes that happened during the milestone.
+- At minimum, an update to the [release notes](/get-started/uik-release-notes) will be published to document the changes that happened during the milestone.
+- Release notes categories are:
+  - Additions - New components, icons, variants, icons, and illustrations.
+  - Enhancements - Improvements to everything from leveraging Figma features to component, workflow, and documentation. Breaking changes can also be due to an enhancement.
+  - Changes - Neutral or breaking changes and deprecation mentions. Also consider mentioning deprecations that will happen in the next release. 
+  - Fixes - Squashing bugs, errors, or otherwise broken items.
 - When possible, a video will accompany the release to highlight any changes, demonstrate how to triage impact, and how to work with new features.
 - New .fig files will be saved and updated in the [ui-kit](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/ui-kit) folder of the repo. These leverage the git history to track versions.
 - The [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) of a Figma file will summarize all updates along with notes on [breaking changes](uik-breaking-changes). Figma will automatically update the history with:

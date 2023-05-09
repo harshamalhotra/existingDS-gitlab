@@ -17,14 +17,28 @@ When a component or style is deprecated it should remain available for at least 
 
 For a component:
 
-- Move it to the **DEPRECATED** section at the bottom of the page list.
-- Append '(⚠️ DEPRECATED)' to the page name.
+- In a new branch, move the component page to the **DEPRECATED** section at the bottom of the page list.
+- Append '(⚠️ DEPRECATED)' to the page name. Note that even though the whole component page is being moved, there may be some things that can be reused and moved into the new version of the component. Be sure that components are linked and referenced from the correct location — the assets panel is a helpful place to test references.
+- Append '(⚠️ DEPRECATED)' to the the component and any base components in the page.
 - When the component has been deprecated due to breaking changes in a newer version, link to the new version from the deprecated page.
 - Deprecated pages have a `$red-100` (`#FDD4CD`) background color and `$red-700` (`#AE1800`) for page headings and descriptions that aren't part of the component.
 - In the component configuration, add '⚠️ DEPRECATED' to the 'How to use this component' field, and add the link to the new component (if applicable) to the 'Link to documentation' field.
 
 For a style:
 
-- Move the style to the **⚠️ DEPRECATED** section at the bottom of the style list.
+- In a new branch, move the style to the **⚠️ DEPRECATED** section at the bottom of the style list.
 - Maintain the style name and structure. For example, 'UI/Display/md' → '⚠️ DEPRECATED/UI/Display/md'.
 - In the style editor, add '⚠️ DEPRECATED' to the description field.
+
+## Helpful tips
+
+Before making a change to a component:
+
+- In a new branch create an example for each possible component configuration and make changes to the supported overrides. A supported override is a change that's explicitly provided as a property, like toggling icon visibility or editing text, or inherently part of the component use, like changing a label color or swapping an avatar image. The [Regressor](https://www.figma.com/community/plugin/1213220990852681773) plugin\* is helpful for quickly generating a matrix of component configurations. The matrix of configurations and overrides can help you catch where overrides break or where there's regression in positioning or other attributes and behavior.
+- The [Visual Difference](https://www.figma.com/community/plugin/1077953882260191737) plugin\* is helpful to take before and after snapshots of your matrix in order to detect visual changes.
+
+For deprecated components:
+
+- Make sure the link to the deprecated component is intact. That is, make sure you aren't just creating a new component called **DEPRECATED**.
+
+\* Plugins aren't required, but they can benefit certain workflows.
