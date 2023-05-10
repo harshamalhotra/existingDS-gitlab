@@ -44,5 +44,8 @@ Help the user build a mental model of the system:
 
 ## References
 
-- [Guidelines for Human-AI Interaction, Microsoft](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf)
+- [Conversational Experience Design, SAP](https://experience.sap.com/conversational-ux/)
+- [Designing Intelligent Systems, Fiori for Web Design Guidelines, SAP](https://experience.sap.com/fiori-design-web/designing-intelligent-systems/)
+- [Human-AI eXperience (HAX) Toolkit, Microsoft](https://www.microsoft.com/en-us/haxtoolkit/)
 - [People + AI Guidebook, Google](https://pair.withgoogle.com/guidebook)
+- [Responsible bots: 10 guidelines for developers of conversational AI, Microsoft](https://www.microsoft.com/en-us/research/uploads/prod/2018/11/Bot_Guidelines_Nov_2018.pdf)
