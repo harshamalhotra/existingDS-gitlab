@@ -6,15 +6,25 @@ As Artificial Intelligence (AI) continues to advance, it brings both exciting op
 
 ## Guidelines
 
-**Start with the user, not the technology.** AI technology should be leveraged to enhance the user experience, rather than be the primary focus. Design with a deep understanding of the user's needs, goals, and pain points. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to _____?", ask yourself "How might we help users _____?".
+### Start with the user, not the technology
 
-**Understand when to automate.** Understand if a task is a good fit for AI or if it is better done by a human. First, understand if a user's need will be helped by automation. Users may not want automation in high stakes tasks, tasks where they will be held responsible for the result, or tasks that they enjoy doing. Tasks that are a good fit for automation are tedious, error-prone, boring, low stakes, and free up the user's time. If users will benefit from automation, consider if the problem could be addressed with pre-defined rules (_if this, then that_). Understand the strengths and weaknesses of AI. AI can be helpful for processing large amounts of information, pattern finding, prediction, classification, and recommendations. Given good training data, AI can be more accurate and faster than a human at completing tasks. AI is less helpful for tasks requiring empathy, emotional intelligence, morality, common sense, predicability, contextual understanding, intuition, and creativity.
+AI technology should be leveraged to enhance the user experience, rather than be the primary focus. Design with a deep understanding of the user's needs, goals, and pain points. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to _____?", ask yourself "How might we help users _____?".
 
-**Understand risk.** Understand the consequences to users if the system's recommendation is incorrect. Clarify the system's limitations in high stakes situations. If a high stakes feature is powered by AI, design for potential negative impact. For example, a user should explicitly opt-in to a high stakes AI-powered feature.
+### Understand when to automate
 
-**Communicate confidence.** Users rely on the system to make decisions, but they should not trust the system entirely. Communicating confidence allows users to know how much scrutiny they should put recommendations under.
+Understand if a task is a good fit for AI or if it is better done by a human. First, understand if a user's need will be helped by automation. Users may not want automation in high stakes tasks, tasks where they will be held responsible for the result, or tasks that they enjoy doing. Tasks that are a good fit for automation are tedious, error-prone, boring, low stakes, and free up the user's time. If users will benefit from automation, consider if the problem could be addressed with pre-defined rules (_if this, then that_). Understand the strengths and weaknesses of AI. AI can be helpful for processing large amounts of information, pattern finding, prediction, classification, and recommendations. Given good training data, AI can be more accurate and faster than a human at completing tasks. AI is less helpful for tasks requiring empathy, emotional intelligence, morality, common sense, predicability, contextual understanding, intuition, and creativity.
 
-**Be transparent.** Establish trust by ensuring the user always knows when they are interacting with AI, and when content or recommendations come from AI. Some third party AI services require us to disclose that a user is interacting with an AI system.
+### Understand risk
+
+Understand the consequences to users if the system's recommendation is incorrect. Clarify the system's limitations in high stakes situations. If a high stakes feature is powered by AI, design for potential negative impact. For example, a user should explicitly opt-in to a high stakes AI-powered feature.
+
+### Communicate confidence
+
+Users rely on the system to make decisions, but they should not trust the system entirely. Communicating confidence allows users to know how much scrutiny they should put recommendations under.
+
+### Be transparent
+
+Establish trust by ensuring the user always knows when they are interacting with AI, and when content or recommendations come from AI. Some third party AI services require us to disclose that a user is interacting with an AI system.
 
 In the UI, use active phrases such as:
 * AI created this summary.
@@ -28,13 +38,21 @@ Help the user build a mental model of the system:
 * Explain what data the system is trained on and what it's optimized for. 
 * Tell the user how their data is used and processed.
 
-**Set the right expectations.** The interface should clearly communicate the AI's capabilities, limitations, and the scope of its decision-making authority. If a feature is experimental or beta, [clearly communicate that in the UI](/usability/feature-management#highlighting-feature-versions).
+### Set the right expectations
 
-**Give the user control** The user should be able to decide whether to follow the AI's recommendations or not. There should be an easy way to undo system actions. Do not collect user data without asking the user's permission.
+The interface should clearly communicate the AI's capabilities, limitations, and the scope of its decision-making authority. If a feature is experimental or beta, [clearly communicate that in the UI](/usability/feature-management#highlighting-feature-versions).
 
-**Fail gracefully.** When your system is not certain of the user's intent or has low confidence, make sure there is a path forward that does not rely on AI. Explain why the system was not able to provide a recommendation. Errors are also opportunities to learn more about your user's mental models and improve the system's ability to make recommendations. Consider designing a feedback mechanism that presents as a cue for adjustment rather than an error state.
+### Give the user control
 
-**Encourage feedback.** Design mechanisms to collect implicit and explicit feedback to improve the system.
+The user should be able to decide whether to follow the AI's recommendations or not. There should be an easy way to undo system actions. Do not collect user data without asking the user's permission.
+
+### Fail gracefully
+
+When your system is not certain of the user's intent or has low confidence, make sure there is a path forward that does not rely on AI. Explain why the system was not able to provide a recommendation. Errors are also opportunities to learn more about your user's mental models and improve the system's ability to make recommendations. Consider designing a feedback mechanism that presents as a cue for adjustment rather than an error state.
+
+### Encourage feedback
+
+Design mechanisms to collect implicit and explicit feedback to improve the system.
 
 ## Related patterns
 
