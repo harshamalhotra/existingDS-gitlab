@@ -13,7 +13,7 @@ const GITLAB_UI_URL = (
 ).replace(/\/+$/, '');
 
 const LOOKBOOK_URL = (
-  process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app'
+  process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app/lookbook'
 ).replace(/\/+$/, '');
 
 if (GOOGLE_ANALYTICS_ID) {
@@ -24,7 +24,9 @@ if (GOOGLE_ANALYTICS_ID) {
 
 const cspPolicies = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.cookielaw.org https://player.vimeo.com",
+  `script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.cookielaw.org https://player.vimeo.com ${
+    new URL(LOOKBOOK_URL).origin
+  }`,
   "style-src 'self' 'unsafe-inline'",
   "object-src 'none'",
   "img-src 'self' https: data:",
@@ -107,6 +109,9 @@ export default {
               window.gtagOneTrustCallback();
             }
           }`,
+      },
+      {
+        src: `${LOOKBOOK_URL}/../lookbook-assets/js/lookbook-core.js`,
       },
     ],
     __dangerouslyDisableSanitizersByTagID: {
@@ -260,4 +265,10 @@ export default {
 
   // see https://nuxtjs.org/api/configuration-hooks
   hooks: {},
+
+  vue: {
+    config: {
+      ignoredElements: [/^lookbook-embed/],
+    },
+  },
 };
