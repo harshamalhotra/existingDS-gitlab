@@ -25,15 +25,15 @@ export default {
     <footer class="footer container gl-pb-7">
       <div class="row gl-justify-content-center">
         <edit-this-page-link
-          edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/"
+          edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main"
         >
-          Edit this page
+          View page source
         </edit-this-page-link>
         <span class="footer-link-divider"></span>
         <edit-this-page-link
           edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/main/-"
         >
-          Open Web IDE
+          Open in Web IDE
         </edit-this-page-link>
         <span class="footer-link-divider"></span>
         <nuxt-link to="/get-started/contributing">Please contribute</nuxt-link>
