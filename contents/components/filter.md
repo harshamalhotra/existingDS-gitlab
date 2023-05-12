@@ -68,7 +68,7 @@ related:
   1. The user clicks into a search box and a dropdown with the keys that can be used appears.
   1. The user chooses the key of what they want to filter the list by (for example, `assignee`).
   1. The user chooses the logical operator (`is` or `is not`) from a dropdown.
-  1. The user chooses an option from the dropdown to define the value part of the query (for example, a `@username`).
+  1. The user defines the value part of the query (for example, choosing a @username from a dropdown or typing a text value).
   1. The user needs to repeat steps 1–4 for each query they want to add.
   1. Once done, the user needs to confirm the search to trigger it. They do so by clicking on the search button or by using their keyboard.
 
