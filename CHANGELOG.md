@@ -1,3 +1,24 @@
+# [2.160.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.159.0...v2.160.0) (2023-05-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/sentry to ^7.2.6 ([60e39e9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/60e39e9f0721e643c0282dd573b0e31fab1d8e62))
+* Initialize embeds on component mount ([0029670](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/00296705d6019c2eb554ceeafc226456bd426c40)), closes [/github.com/ViewComponent/lookbook/discussions/310#discussioncomment-5020784](https://gitlab.com//github.com/ViewComponent/lookbook/discussions/310/issues/discussioncomment-5020784)
+* **deps:** update gitlab ui/svg ([5ffed1c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5ffed1c3b6cc6dff3ce86f6541e4ddb737227144))
+
+
+### Features
+
+* **AIHumanInteraction:** Add headings to guidelines ([1b48401](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1b48401022ee267a6a3ccecbc7a1d2b36deba463))
+* **AIHumanInteraction:** Add more references ([6dea173](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6dea173c542e36a448e6bfc54b2f36187db22288))
+* **BreakingChanges:** Add helpful tips ([b13ba54](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b13ba546e446ae48d33da6dc7223bd6857660f19))
+* **DropdownCombobox:** Clarify actions and options ([efbc122](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/efbc122e525ef8c5854ef6ca2e26ec0a011a96f6))
+* **FeatMgmt:** Update badge and popover of feature versions ([a253a5f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a253a5fc5d8152060e499da9c90eb60d6cbf1ce0))
+* **GlFilteredSearch:** Clarify use of text values ([d8f1d35](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d8f1d35cff0260ecc3576270b90a7e3b2bf6497b))
+* **Layout:** Relabel edit links ([433cc94](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/433cc94f22360c0c033038e4df7387ce76f751e8))
+* Use new Lookbook preview embeds ([f0ac09c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f0ac09c5bbf78f947d60a1e0ed5b394cdcfde049))
+
 # [2.159.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.158.0...v2.159.0) (2023-05-08)
 
 
