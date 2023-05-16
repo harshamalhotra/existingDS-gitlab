@@ -2,7 +2,9 @@
 name: AI-human interaction
 ---
 
-As Artificial Intelligence (AI) continues to advance, it brings both exciting opportunities and new challenges for product design. Although designing for AI still requires adhering to human-centered design principles, additional considerations such as ethics, privacy, trust, and transparency must be taken into account. The guidelines for AI-human interaction are crucial in ensuring that AI systems prioritize the user's needs, behave ethically, and safeguard the user's privacy, while also building trust in the technology.
+As Artificial Intelligence (AI) continues to advance, it brings both exciting opportunities and new challenges for product design. Although designing for AI still requires adhering to human-centered design principles, additional considerations such as ethics, privacy, trust, and transparency must be taken into account.
+
+This page is divided into two main sections: [Guidelines](#guidelines) and [Framework](#framework) for AI.
 
 ## Guidelines
 
@@ -53,6 +55,33 @@ When your system is not certain of the user's intent or has low confidence, make
 ### Encourage feedback
 
 Design mechanisms to collect implicit and explicit feedback to improve the system.
+
+## Framework
+
+To help you put the [guidelines](#guidelines) into practice, the framework materializes them into standard patterns that address the most common UX challenges. Follow the progress in the [framework epic](https://gitlab.com/groups/gitlab-org/-/epics/10334).
+
+### Dimensions
+
+These dimensions can assist you in choosing the most appropriate pattern for the problem you are solving.
+
+- **Mode**: What's the emphasis and persistence of the AI-human interaction relative to the main context and the user journey?
+   - Focused: AI is the main context, with a dedicated focus.
+   - Supportive: AI complements the main context and accompanies users along their journey to help them achieve their goals.
+   - Integrated: AI is blended into specific moments of the users flow to help them complete small, discrete tasks.
+- **Approach**: What should AI focus on improving?
+   - Automate tasks: improve _efficiency_ by replacing human decision-making and actions, always done with human awareness and consent.
+   - Augment capabilities: improve _effectiveness_ by supporting and improving human decision-making and actions.
+- **Interactivity**: How does the system surface AI to engage with the user?
+   - Proactive: triggered without user interaction.
+   - Reactive: triggered by user interaction.
+- **Task**: What's the user task that AI can assist with?
+   - Classification: categorize, suggest, rank, match.
+   - Generation: summarize, explain, create.
+   - Prediction (or regression): forecast continuous, non-categorical data, like numerical values.
+
+### Patterns
+
+<todo>Add content about each pattern. In the meantime, you can see some of the patterns we have identified in this [video](https://youtu.be/UXCz2xst_zg) ([slides](https://docs.google.com/presentation/d/1rO2BpI2WZC9Dxhv7oVR6XHk8GMb77AswESYcDANnQhA/edit?usp=sharing) and [internal Figma file](https://www.figma.com/file/s4TP1i2Akd1VTh4jhbg234/AI-prioritized-prototypes?type=design&node-id=2766-82606&t=zllXY21ifWzgeCq1-4)).</todo>
 
 ## Related patterns
 
