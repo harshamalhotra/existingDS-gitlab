@@ -5,7 +5,7 @@ description: A dashboard is a root level container that has multiple panels, and
 
 ## Layout
 
-- **Grid** Rows and columns used to align and snap elements based on sequence and position.
+- **Grid**: Rows and columns used to align and snap elements based on sequence and position.
 - **Panel**: The basic building block of a dashboard. Each panel is composed of a title, description, and visualization which can be configured or modified through options. Panels can be moved and resized to arrange them within a dashboard.
 
 <todo>Add visual examples for dashboard and panel content and concepts.</todo>
