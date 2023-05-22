@@ -1213,10 +1213,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.46.0.tgz#741fea428ce9cac9fd8ccdb65a7b863ab5f7773d"
   integrity sha512-+NEdjNTBCTnJIjQKomf6yasT3ezg8UNBGJVUDf+ZgXgENKbwOjV9ngcVeHQMZM4hDaQSaJx08fagyadCcTw0Ow==
 
-"@gitlab/ui@62.10.0":
-  version "62.10.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-62.10.0.tgz#b93b4dca47a8ca0e4f6bf2ab1e49b783c348d27c"
-  integrity sha512-Ektyickh1tem5L7WTWFmmie5T5heQE3TaPj55xqs53nljl92ZHq8za703uINnvE2j2SSuMyRqtAhHjglB+wRmA==
+"@gitlab/ui@63.1.0":
+  version "63.1.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-63.1.0.tgz#6a03318ee58c58828bf862e3279ced7536afa388"
+  integrity sha512-JSdcswD2DhEuLHvbZ/7ezkHckRsj155dLmxb/DxH2A8UaZNMV+szRLKroovKuqblPQil3dL4qxPaAIlv8XSw2g==
   dependencies:
     "@popperjs/core" "^2.11.2"
     bootstrap-vue "2.23.1"
