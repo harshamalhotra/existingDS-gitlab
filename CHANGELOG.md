@@ -1,3 +1,17 @@
+# [2.161.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.160.0...v2.161.0) (2023-05-22)
+
+
+### Bug Fixes
+
+* **Dashboards:** Add missing colon to text ([34cae63](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/34cae63631eb47c8caa3a6138f978ca36107f357))
+* **deps:** update gitlab ui/svg ([619a6f2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/619a6f2c756beff7c94e40fea45f80700d3b1b62))
+
+
+### Features
+
+* **AIHumanInteraction:** Add framework initial content ([22da43f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/22da43f585dbb27779ef1e9e039325f11d958e98))
+* **AIHumanInteraction:** Passive voice for UI text ([1d5f19b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1d5f19bd51ad88776df2fe9993237e731609ff64))
+
 # [2.160.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.159.0...v2.160.0) (2023-05-15)
 
 
