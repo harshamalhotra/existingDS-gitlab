@@ -16,7 +16,7 @@
 
 ## Checklists
 
-Make sure the following are completed before closing the issue:
+**After all of the following tasks are complete you can close this issue:**
 
 ### Assignee tasks:
 
@@ -29,7 +29,7 @@ Make sure the following are completed before closing the issue:
 1. [ ] If work was not done in a branch (a merged branch will automatically be archived), move your working file to the shared Figma project:
      1. For all other changes, move your file to the [**Misc archive**][misc-archive] project.
      1. If you’re a community contributor, please consider [transferring ownership of your draft file](https://help.figma.com/hc/en-us/articles/360040530853) to the maintainer so they can move it to our archive, along with its version history and comments.
-1. [ ] When applicable, follow our [iconography][iconography] guidelines.
+1. [ ] When applicable, follow our [iconography][iconography] guidelines. For third-party trademarks, please review the [third-party trademark usage guidelines](https://about.gitlab.com/handbook/legal/policies/product-third-party-trademarks-guidelines/).
 1. [ ] Ask a [Foundations designer][foundations-team] to review your design.
     - If you’re a community contributor, ensure the designer that will be reviewing your file has edit permissions in Figma.
     - If you’re a GitLab team member, request a [review in Figma](https://help.figma.com/hc/en-us/articles/5691414603543-Request-a-branch-review).
@@ -79,8 +79,6 @@ If you run into any problems, ensure that all other steps in the project [README
 </details>
 
 ---
-
-1. [ ]  🎉 Congrats, you made it! You can now close this issue.
 
 ## Links / references
 
