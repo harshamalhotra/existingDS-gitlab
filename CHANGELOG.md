@@ -1,3 +1,12 @@
+## [2.161.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.0...v2.161.1) (2023-05-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.47.0 ([d683dd0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d683dd03bb563c136f42882d0ed6b7400dcaae1a))
+* **deps:** update dependency @gitlab/ui to v63 ([8922d93](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8922d93b97084bed97b47054f570d592f7b308df))
+* **deps:** update gitlab ui/svg ([31a626e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/31a626e125af12176568fc7df7466b48ea19a992))
+
 # [2.161.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.160.0...v2.161.0) (2023-05-22)
 
 
