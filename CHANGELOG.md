@@ -1,3 +1,14 @@
+## [2.161.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.1...v2.161.2) (2023-06-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v64 ([9785668](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9785668f0a90e3b56f65d752923b59e209bf7f02))
+* **deps:** update dependency @nuxtjs/sentry to ^7.3.0 ([e4a971e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e4a971e9eb618d8540426fe21db8c58ea078c58b))
+* **deps:** update dependency mermaid to ^10.2.0 ([7a7a94b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a7a94b67d11eee3ecea22551d120fa2bad833d0))
+* **deps:** update dependency mermaid to ^10.2.2 ([0270524](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0270524a0249849d58cc109133c0ffc2a49f29c8))
+* **deps:** update gitlab ui/svg ([e3cee90](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e3cee90a00ff87600a9deadcbf8ec1b0ace4777b))
+
 ## [2.161.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.0...v2.161.1) (2023-05-29)
 
 
