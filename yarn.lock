@@ -1281,6 +1281,18 @@
   resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.4.1.tgz#38ae63503193883ce7b53a8d56ae397c5c99e9f3"
   integrity sha512-9DV4lN4BK7M+NPHgxbWF52ikLDy1k2R27/Wlb24tWaYjY0ZrA+FPDZn/uoJtgEEDxoipEFhtc9jpP+x/4YN4mg==
 
+"@floating-ui/core@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.2.6.tgz#d21ace437cc919cdd8f1640302fa8851e65e75c0"
+  integrity sha512-EvYTiXet5XqweYGClEmpu3BoxmsQ4hkj3QaYA6qEnigCWffTP3vNRwBReTdrwDwo7OoJ3wM8Uoe9Uk4n+d4hfg==
+
+"@floating-ui/dom@1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.2.9.tgz#b9ed1c15d30963419a6736f1b7feb350dd49c603"
+  integrity sha512-sosQxsqgxMNkV3C+3UqTS6LxP7isRLwX8WMepp843Rb3/b0Wz8+MdUkxJksByip3C2WwLugLHN1b4ibn//zKwQ==
+  dependencies:
+    "@floating-ui/core" "^1.2.6"
+
 "@gitlab/eslint-plugin@19.0.0":
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/@gitlab/eslint-plugin/-/eslint-plugin-19.0.0.tgz#bbf5b535876421f000255f0e9ac8f971b8aa6042"
@@ -1305,12 +1317,12 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.49.0.tgz#5ac366ce709c20f3a94f108556d00c3baf637e1e"
   integrity sha512-2HkBtkf4X7NtTgd+1b7pnmeTRFDYoEmXduNov4yWRFB7UHy3SlGcmeH7HHWfXKwjr52iuYrmwdqSsXQUV3sbvg==
 
-"@gitlab/ui@63.4.0":
-  version "63.4.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-63.4.0.tgz#7ffafc0c29d45de449f8b77044d39b728fff84f5"
-  integrity sha512-Qz4kQiCLUmheeUf84z42vXz57kmf+29jIhwsSO5n1aijEDuFFB9o5/gxKc4ldoa7x2OJdqH67OtBs5p3cqmIDw==
+"@gitlab/ui@64.2.0":
+  version "64.2.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-64.2.0.tgz#527e4fb59c48cd4689396dc1b64b7b1a96f76033"
+  integrity sha512-mNGKmYqVfeXJiFZw6Hics4Oz1GsLZurzOCzL50pBk0UytCOaToY8PFvGmEPwWhhm8LxXJ+tgY6CvAXA7K2JMcw==
   dependencies:
-    "@popperjs/core" "^2.11.2"
+    "@floating-ui/dom" "1.2.9"
     bootstrap-vue "2.23.1"
     dompurify "^2.4.5"
     echarts "^5.3.2"
@@ -2066,11 +2078,6 @@
   version "1.0.0-next.12"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
-
-"@popperjs/core@^2.11.2":
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
-  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
 "@sentry-internal/tracing@7.53.1":
   version "7.53.1"
