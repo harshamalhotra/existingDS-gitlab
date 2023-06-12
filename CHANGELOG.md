@@ -1,3 +1,10 @@
+## [2.161.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.2...v2.161.3) (2023-06-12)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([90738d0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/90738d0bf2c29dbbd13925931c499d779199effb))
+
 ## [2.161.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.1...v2.161.2) (2023-06-05)
 
 
