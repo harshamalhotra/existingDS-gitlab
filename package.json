@@ -38,7 +38,7 @@
     "@nuxtjs/sentry": "^7.3.0",
     "bootstrap": "^4.6.2",
     "iframe-resizer": "^4.3.6",
-    "mermaid": "^10.2.2",
+    "mermaid": "^10.2.3",
     "nuxt": "2.16.3",
     "pikaday": "1.8.0",
     "vue-gtag": "^1.16.1"
