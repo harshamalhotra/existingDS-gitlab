@@ -2,9 +2,43 @@
 name: Release notes
 ---
 
+## 16.2
+
+[_Draft: 16.2 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3430)
+
 ## 16.1
 
-[_Draft: 16.1 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3402)
+<small>Published 2023-06-19</small>
+
+<note>16.2 will update the font files we use in Figma to align GitLab Sans to the most recent version of Inter. It brings clearer rendering of characters, especially at higher weights. You might notice some line lengths increasing, this is expected. It is not possible for us to update the fonts in an opt-in way, and so there will be some disruption. More details to follow, but if you have concerns please reach out to a Foundations designer.</note>
+
+### Additions
+
+- Added the following icons: [**quick-actions**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~quick-actions), [**markdown-mark**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~markdown-mark), [**markdown-mark-solid**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~markdown-mark-solid), [**tanuki-ai**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~tanuki-ai)
+
+### Enhancements
+
+- Updated the following icons to improve optical sizing in relation to other icons: [**comment**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~comment), [**comment-dots**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~comment-dots), [**comment-lines**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~comment-lines), [**comment-next**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~comment-next), [**details-block**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~details-block), [**list-bulleted**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~list-bulleted), [**list-numbered**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~list-numbered)
+
+### Changes
+
+- Changed avatar group [**User text inline**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=1833-2791&t=I66Ypa7hnKqrP9um-11) instance to include user handle inline too in support of [!3486](https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/3486).
+
+### Fixes
+
+- Fixed the pixel alignment of the [**table**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~table) icon.
+- [**❖&nbsp;Menu&nbsp;item**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=50570-81619&t=l2mFoV6DmqQb81L1-4), [**❖&nbsp;_Base&nbsp;Sidebar/Flyout&nbsp;menu/Menu&nbsp;items**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=43519-45367&t=l2mFoV6DmqQb81L1-4), and [stacked avatar instances](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=36196-30381&t=l2mFoV6DmqQb81L1-4) use the correct badge component.
+- [**❖&nbsp;_Base/Color&nbsp;swatch**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65858-133015&t=l2mFoV6DmqQb81L1-4) uses the correct checkbox component.
+
+### Removals
+
+- The following have been permanently removed. This will help streamline future updates and limit the scope of upcoming type scale work. All related pages, components, and styles are included in the removal. See [#1622](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1622) for details. Please refer to the Figma file history if you need to retrieve an old design artifact.
+  - Badge (⚠️ DEPRECATED), use [**❖&nbsp;Badge**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=59780%3A92312&t=mhPqIFOuQslBIb44-1)
+  - Breadcrumb (⚠️ DEPRECATED), use [**❖&nbsp;Breadcrumb**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425%3A5&t=mhPqIFOuQslBIb44-1)
+  - Dropdown (⚠️ DEPRECATED), use [**❖&nbsp;Dropdown**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-14&t=mhPqIFOuQslBIb44-11)
+  - Forms (⚠️ DEPRECATED), use [**Forms**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840%3A75722&t=mhPqIFOuQslBIb44-1)
+  - Segmented control (⚠️ DEPRECATED), use [**❖&nbsp;Button group**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=20378-296&t=mhPqIFOuQslBIb44-11)
+  - Typography (⚠️ DEPRECATED), use [**Typography**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=440-0&t=mhPqIFOuQslBIb44-11)
 
 ## 16.0
 
@@ -16,7 +50,7 @@ name: Release notes
 - Added the following illustrations: [**empty-labels-starred-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations/empty-state/empty-labels-starred-md.svg), [**empty-friends-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-friends-md.svg), [**empty-groups-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-groups-md.svg), [**empty-issues-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-issues-md.svg), [**empty-merge-requests-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-merge-requests-md.svg), [**empty-pipeline-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-pipeline-md.svg), [**search-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/search-sm.svg), [**secure-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations/secure-sm.svg).
 
 ### Enhancements
-- Added text properties to **❖ Link / UI link** and **❖ Link / Mention** allowing link content to be editable from the side bar.
+- Added text properties to **❖&nbsp;Link&nbsp;/&nbsp;UI link** and **❖&nbsp;Link&nbsp;/&nbsp;Mention** allowing link content to be editable from the side bar.
 
 ### Changes
 - Changed [link component](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=81916-116837) color for interactive states based on guidelines changes in [!3327](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3327).
