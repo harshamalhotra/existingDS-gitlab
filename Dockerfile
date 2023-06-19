@@ -3,8 +3,8 @@ FROM registry.gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/main:lates
 RUN mkdir -p /cache_nuxt
 
 FROM node:16 AS builder
-ARG ga_id
-ENV GOOGLE_ANALYTICS_ID=$ga_id
+ARG gitlab_analytics_id
+ENV GITLAB_ANALYTICS_ID=$gitlab_analytics_id
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn
