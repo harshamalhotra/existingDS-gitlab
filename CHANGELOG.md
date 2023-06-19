@@ -1,3 +1,16 @@
+# [2.162.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.3...v2.162.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mermaid to ^10.2.3 ([dda9c2b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dda9c2b4173d8ac6bb87c9f6204051b253a331b5))
+
+
+### Features
+
+* **Modal:** Clarify guidelines and structure ([2bf152c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2bf152cf80512e91840a7a576d639957ce02d274))
+* **Spinner:** Update a11y notes ([0cefd32](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0cefd322838af603c525d23fb56f65a5227d409d))
+
 ## [2.161.3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.2...v2.161.3) (2023-06-12)
 
 
