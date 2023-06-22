@@ -7,15 +7,15 @@ const {
 } = packageJson;
 
 export default {
+  components: {
+    GlIcon,
+  },
   props: {
     issue: {
       type: String,
       default: '',
       required: false,
     },
-  },
-  components: {
-    GlIcon,
   },
   computed: {
     newIssueUrl() {
