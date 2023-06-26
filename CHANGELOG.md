@@ -1,3 +1,15 @@
+# [2.163.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.162.0...v2.163.0) (2023-06-26)
+
+
+### Bug Fixes
+
+* Correct privacy link ([be38d80](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/be38d8052114ab5b2e9bb707dca76896c599f42d))
+
+
+### Features
+
+* Dogfood GitLab analytics ([8147c74](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8147c7468d4a63e964dd6372590736131224f0d6))
+
 # [2.162.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.161.3...v2.162.0) (2023-06-19)
 
 
