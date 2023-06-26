@@ -38,7 +38,7 @@ export default {
         <span class="footer-link-divider"></span>
         <nuxt-link to="/get-started/contributing">Please contribute</nuxt-link>
         <span class="footer-link-divider"></span>
-        <a href="https://about.gitlab.com/privacy/">Privacy policy</a>
+        <a href="https://about.gitlab.com/privacy/">Privacy statement</a>
         <span class="footer-link-divider"></span>
         <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
       </div>
