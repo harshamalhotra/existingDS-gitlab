@@ -1,0 +1,40 @@
+/* -------------------------------------------------------
+GitLab Sans variable font.
+*/
+@font-face {
+  font-family: 'GitLab Sans';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular'; /* stylelint-disable property-no-unknown */
+  src: url('~@gitlab/fonts/gitlab-sans/GitLabSans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GitLab Sans';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Regular'; /* stylelint-disable property-no-unknown */
+  src: url('~@gitlab/fonts/gitlab-sans/GitLabSans-Italic.woff2') format('woff2');
+}
+
+/* -------------------------------------------------------
+Monospaced font: GitLab Mono.
+*/
+@font-face {
+  font-family: 'GitLab Mono';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('~@gitlab/fonts/gitlab-mono/GitLabMono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GitLab Mono';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: url('~@gitlab/fonts/gitlab-mono/GitLabMono-Italic.woff2') format('woff2');
+}
+
