@@ -38,13 +38,13 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 - [Press kit](https://about.gitlab.com/press/press-kit/)
 
 **Color**
-- [RGB swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-hex-rgb.ase)
-- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-pms-cmyk.ase)
+- [RGB swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-hex-rgb.ase) (Internal access only)
+- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-pms-cmyk.ase) (Internal access only)
 
 **Marketing illustrations**
 - [Illustration library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) (Internal access only)
-- [RGB swatches, secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-hex-rgb.ase)
-- [CMYK swatches - secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-pms-cmyk.ase)
+- [RGB swatches, secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-hex-rgb.ase) (Internal access only)
+- [CMYK swatches - secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-pms-cmyk.ase) (Internal access only)
 
 **Marketing icons**
 - [Icon library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/marketing-icons) (Internal access only)
