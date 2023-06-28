@@ -48,7 +48,7 @@ Admin, group, project, and user settings utilize full pages to group different c
 
 Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [voice and tone](/content/voice-and-tone) guidelines.
 
-Configuration of settings can happen directly within the accordion or can be deferred to a secondary screen using the principles of [progressive disclosure](/usability/progressive-disclosure). For example, consider placing configuration options in a [modal](/components/modal) or on a linked detail page to avoid overwhelming users. 
+Configuration of settings can happen directly within the accordion or can be deferred to a secondary screen using the principles of [progressive disclosure](/usability/progressive-disclosure). For example, consider placing configuration options in a [modal](/components/modal) or on a linked detail page to avoid overwhelming users.
 
 ### Saving settings
 
@@ -74,23 +74,10 @@ Consider making configuration options more discoverable to users by linking to s
 
 - Setting form elements use the [form layout sizes](/patterns/forms#layout).
 - When scrolling, the headings of each section remain sticky to provide context of the section form.
+- A sticky footer containing action buttons (for example, Save and Cancel) should appear when a setting has been changed.
+- Settings should appear stacked in a single column.
 
-### Two column
-
-The two column layout is the default recommendation because it optimizes for individual section height and readable character length. On breakpoints less than or equal to `lg` (≤ 992px), a two column layout is collapsed to use a [single column](#single-column).
-
-* **First column:** Contains the section title and an optional description. Occupies 1/3 of the width. 
-* **Second column:** Contains the settings form content. Occupies 2/3 of the width.
-
-<figure-img label="Example of 2 column settings layout" src="/img/settings-2-column.png"></figure-img>
-
-For breakpoints less than equal to the `lg` breakpoint (≤ 992px), the section heading and description will be stacked on top of the settings form content.
-
-### Single column
-
-The single column layout is recommended for the page when one of the settings section's form content cannot fit within the two column layout. 
-
-<figure-img label="Example of 1 column settings layout" src="/img/settings-1-column.png"></figure-img>
+<figure-img label="Example of settings layout" src="/img/settings-1-column.png"></figure-img>
 
 ## Design specifications
 
