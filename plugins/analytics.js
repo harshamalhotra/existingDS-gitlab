@@ -21,6 +21,7 @@ const createClientIfNecessary = () => {
   glClient = glClientSDK({
     appId: process.env.GITLAB_ANALYTICS_ID,
     host: process.env.GITLAB_ANALYTICS_URL,
+    hasCookieConsent: true,
   });
 };
 
