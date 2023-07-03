@@ -1,3 +1,17 @@
+# [2.164.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.163.0...v2.164.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* **Analaytics:** Enable cookies when consented ([b4c5611](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b4c56113e6823684fd20b468f89ff0b00827bb5d))
+* **Overview:** added access levels to overview page links ([b885a6c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b885a6c947f4d55abf3b515461832f260722430c))
+* **Settings:** update settings layout documentation ([f245638](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f245638dc929a12d5c147502e53afa6c223beaaf))
+
+
+### Features
+
+* Use GitLab Sans and GitLab Mono as new fonts ([d248b74](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d248b746c4516b51fd5294ec2334148a3ed13aaf))
+
 # [2.163.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.162.0...v2.163.0) (2023-06-26)
 
 
