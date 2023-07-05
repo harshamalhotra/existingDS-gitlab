@@ -773,13 +773,13 @@ Typical state changes (light UI):
 - `:hover` a color becomes one step darker than at rest.
 - `:focus` a color becomes one step darker than at rest, matching `:hover` color.
 - `:active` a color becomes two steps darker than at rest.
- 
-  <figure-img alt="Example button state color changes" label="Interactive color state example" src="/img/color-interactive.svg">
-    <template #caption>
-      A primary confirm button example with a <code>$blue-500</code> fill at rest (1), a <code>$blue-600</code> fill for hover and focus (2, 3), and a <code>$blue-700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
-    </template>
-  </figure-img>
 - Where there aren't enough steps to follow this pattern, prioritize `:hover` and `:focus` becoming a step darker.
+
+<figure-img alt="Example button state color changes" label="Interactive color state example" src="/img/color-interactive.svg">
+  <template #caption>
+    A primary confirm button example with a <code>$blue-500</code> fill at rest (1), a <code>$blue-600</code> fill for hover and focus (2, 3), and a <code>$blue-700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
+  </template>
+</figure-img>
 
 ## Accessibility
 
@@ -787,13 +787,12 @@ Typical state changes (light UI):
 
 At GitLab, we are dedicated to continually improving the accessibility of the application. Pajamas satisfies the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast) AA level for normal text. Learn more in [Accessibility](/accessibility/a11y).
 
-- **Normal text** must have a contrast ratio of at least 4.5:1.
-- **Large text** is defined as `14pt` Bold (`18.5px`) or `18pt` (`24px`) and must have a contrast ratio of at least 3:1.
-
-- **AAA** - Pass 7:1+
-- **AA** - Pass 4.5:1+
-- **AA+** - Pass, large text only 3:1+
-- **F** - Doesn’t pass
+- **Normal text** - Must have a contrast ratio of at least 4.5:1.
+- **Large text** - Defined as `14pt` Bold (`18.5px`) or `18pt` (`24px`) and must have a contrast ratio of at least 3:1.
+- **AAA** - Pass 7:1+.
+- **AA** - Pass 4.5:1+.
+- **AA+** - Pass, large text only 3:1+.
+- **F** - Doesn’t pass.
 
 Contrast ratios for each color step are calculated using white (`#fff`) and black (`#000`). The `50–400` steps all meet a 4.5:1 contrast ratio or higher against $gray-950 (`#1f1e24`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fbfafd`) or lighter.
 
