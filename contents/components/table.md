@@ -65,8 +65,8 @@ related:
 - Don’t simply shrink an entire table to fit the viewport or apply a fixed width to a table to the point that it compromises legibility. The same way stretching tables 100% to the width of the viewport is not recommended, a small, shrunken table view can create a cluttered interface. Use a responsive table view instead.
 - Order the table content by importance, based on the information needs of your users.
 - Text in tables tends to end up in narrow columns. Left-align text content, rather than justifying or centering it, to avoid confusion or readability issues. 
-- The **Label** text styles from the [UI type scale](/product-foundations/type-scales#ui-type-scale) are used for product tables since the content is more data rich and requires less line height. 
-- The `Paragraph` text styles from the [Documentation Markdown](https://design.gitlab.com/product-foundations/type-scales#documentation-markdown-type-scale) and [Compact Markdown](https://design.gitlab.com/product-foundations/type-scales#compact-markdown-type-scale) type scales are used for markdown tables in GitLab issues, merge requests, and documentation.
+- The **label** [text styles](/product-foundations/type-fundamentals#type-scales) are used for product tables since the content is more data rich and requires less line height.
+- The **paragraph** [text styles](/product-foundations/type-fundamentals#type-scales) are used for Markdown tables in GitLab issues, merge requests, and documentation.
 - In some circumstances, right-aligning the text content helps with readability. For example, right-align the numeric data with a consistent number of decimal places to improve scannability.
 - Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/content/i18n).
 - Use white space in tables to improve [scannability](https://www.nngroup.com/articles/how-users-read-on-the-web/), visually separating data elements so that each can be individually identified and read as separate from the others.
