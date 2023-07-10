@@ -1,3 +1,18 @@
+# [2.165.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.164.0...v2.165.0) (2023-07-10)
+
+
+### Bug Fixes
+
+* **Color:** States and a11y lists rendering ([9c596b3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9c596b3b2ec395287ee4e00a5ec204b35fa601be))
+* **deps:** update dependency @nuxtjs/sentry to ^7.3.1 ([61e3f73](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/61e3f73c9e3418b66aa7d234e4c680bd6c6cd271))
+* **deps:** update dependency mermaid to ^10.2.4 ([40b20ad](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/40b20ad1bfb477948ad05b43aa91add0069a4fdd))
+
+
+### Features
+
+* **Typography:** Update approach for headings and type in general ([1f7679e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1f7679e5af397092805f23dfa19d5e80662d53f1))
+* **VPAT:** 16.0 evaluation ([56b4f6d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/56b4f6d23bb4232078e73f2fd2d82bfcf939a133))
+
 # [2.164.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.163.0...v2.164.0) (2023-07-03)
 
 
