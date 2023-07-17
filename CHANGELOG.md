@@ -1,3 +1,10 @@
+# [2.166.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.165.0...v2.166.0) (2023-07-17)
+
+
+### Features
+
+* **Layout:** remove references to baseline grid ([0f1f7bf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f1f7bfb45b91f70a20b141d2bb47421878d0361))
+
 # [2.165.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.164.0...v2.165.0) (2023-07-10)
 
 
