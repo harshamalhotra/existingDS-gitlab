@@ -60,7 +60,7 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 </thead>
 <tbody>
 <tr>
-<td><code class="gl-white-space-nowrap">size-text-100</code></td>
+<td><code class="gl-white-space-nowrap">$size-text-100</code></td>
 <td>12px</td>
 <td>12px</td>
 <td>12px</td>
