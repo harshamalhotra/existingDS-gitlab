@@ -85,7 +85,7 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 <td>16px</td>
 <td>16px</td>
 <td>16px</td>
-<td>Level 4 headings, level 2 headings within components (<a href="/components/alert">alert</a>, <a href="/components/banner">banner</a>, <a href="/components/modal">modal</a>), large body text</td>
+<td>Level 4 headings, large body text</td>
 </tr>
 <tr>
 <td><code>$size-text-500</code></td>
