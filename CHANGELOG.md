@@ -1,3 +1,18 @@
+# [2.167.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.166.0...v2.167.0) (2023-07-24)
+
+
+### Bug Fixes
+
+* Correct variable formatting ([70a0d47](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/70a0d47c4d770e238b53f2cc10eb842a67da977c))
+* **deps:** update dependency nuxt to ^2.17.1 ([8614548](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/861454840216cbefe023a5ff8327ab7e9c24523e))
+* Remove copy about performance issues of alpha ([ab003c8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ab003c827c7bd2995f5c98207593df12d82b62ab))
+
+
+### Features
+
+* **TypeScale:** Removing heading ref ([30f6848](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/30f6848b1c454743b991ae376b9615b4cf62df08))
+* Update settings sticky header docs ([55938f6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/55938f6d56e87d12be4fa68c13734d684f2e0028))
+
 # [2.166.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.165.0...v2.166.0) (2023-07-17)
 
 
