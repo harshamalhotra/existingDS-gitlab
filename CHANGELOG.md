@@ -1,3 +1,11 @@
+## [2.167.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.0...v2.167.1) (2023-07-31)
+
+
+### Bug Fixes
+
+* **dashboards:** Replace references of charts for visualizations ([7d4b18b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7d4b18bb37d03158a41fed231b3102ad0f4be134))
+* **deps:** update dependency mermaid to ^10.3.0 ([d6256b9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d6256b9f4c7d5b877a360d779a9f0245c7d885c5))
+
 # [2.167.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.166.0...v2.167.0) (2023-07-24)
 
 
