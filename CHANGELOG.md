@@ -1,3 +1,10 @@
+## [2.167.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.1...v2.167.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v65 ([dfe9d10](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dfe9d103b325d6c5cc7214963346ed3b3e885257))
+
 ## [2.167.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.0...v2.167.1) (2023-07-31)
 
 
