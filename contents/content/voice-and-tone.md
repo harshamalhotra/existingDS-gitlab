@@ -20,6 +20,8 @@ Sometimes, using passive voice is appropriate. Make sure it’s an intentional c
 | **(Active voice)** Ask someone with write access to this repository to merge this request. | This request can be merged by someone with write access to this repository. |
 | **(Passive voice)** The Kubernetes cluster is being created on Google Kubernetes Engine. | We are creating the Kubernetes cluster on Google Kubernetes Engine. |
 
+It's fine to use passive voice for [actions performed by GitLab](#actions-performed-by-gitlab).
+
 ## Brevity
 
 Users will skim content, rather than read text carefully. Copy should be concise and short whenever possible. A long message or label is a red flag hinting at a design that needs improvement.
@@ -65,7 +67,7 @@ While we aim to brief, we also avoid Latin abbreviations as they can be easily m
 
 When something goes wrong, it's important for us to be clear about what happened, why it happened, and what the next steps to take may be. Vague messages frustrate users and can even block them from completing their task.
 
-When writing an error message, leave out extraneous words like *sorry* and *please*. This makes errors easier to read and understand.
+When writing an error message, leave out extraneous words like "sorry" and "please." This makes errors easier to read and understand.
 
 | Do  | Don’t |
 | --- |  ---  |
@@ -126,6 +128,16 @@ To write in second person, focus on eliminating words like “can” or “will�
 | Do | Don’t |
 | --- | --- |
 | To get started, link this page to your Jaeger server. | Users can get started by linking this page to their Jaeger server. |
+
+### Actions performed by GitLab
+
+When describing something that GitLab, the application, does, it's fine to use the passive voice.
+Avoid using "we" or "GitLab" where possible.
+
+| Do | Don’t |
+| --- | --- |
+| A connection to the specified host could not be made. | We were not able to make a connection to the specified host. |
+| The verification email wasn't received in time. | We did not receive the verification email we sent out in time. |
 
 ## Verb tenses
 
