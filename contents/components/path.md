@@ -5,6 +5,7 @@ components:
   - base-path
 related:
   - tabs
+  - stepper
 ---
 
 ## Examples
@@ -27,8 +28,8 @@ related:
 
 ### When not to use
 
-- To indicate a user’s progress within a process, for example, in a checkout flow, use a [progress bar](/components/progress-bar).
-
+- To segment tasks that are related and linear, use a [stepper](/components/stepper) instead.
+- To represent percentage of completion or progress of an activity, process, or task, use a [progress bar](/components/progress-bar) instead.
 
 ### Variants
 
