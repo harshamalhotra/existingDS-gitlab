@@ -6,6 +6,7 @@ components:
 related:
   - spinner
   - skeleton-loader
+  - stepper
 ---
 
 ## Examples
@@ -30,6 +31,7 @@ related:
 ### When not to use
 
 - To indicate that content is loading, use a [skeleton loader](/components/skeleton-loader) or [spinner](/components/spinner) instead. 
+- To segment tasks that are related and linear, use a [stepper](/components/stepper) instead.
 
 ### Sizes
 
