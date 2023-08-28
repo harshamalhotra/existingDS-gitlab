@@ -243,6 +243,10 @@ export default {
       config.module.rules.push({
         test: /\.vue$/,
         loader: 'vue-loader',
+        options: {
+          // https://vue-loader.vuejs.org/options.html#prettify
+          prettify: false,
+        },
       });
 
       config.module.rules.push({
