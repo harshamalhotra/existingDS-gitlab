@@ -1,3 +1,22 @@
+# [2.168.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.2...v2.168.0) (2023-08-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v66 ([7bff4b0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7bff4b0f3d130964dcf0b0ba316c65a309e506df))
+* **deps:** update dependency @nuxtjs/sentry to ^7.4.0 ([7df6d68](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7df6d6886d7e30bca225358540f891dcedea8b34))
+* **deps:** update dependency mermaid to ^10.3.1 ([9c6d689](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9c6d6899a3ee3efe1093c33d28468ce34dd4ad6c))
+* **deps:** update gitlab packages ([a3fc214](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a3fc214572cb2dca5c279055081aa125faac275c))
+* **Keyboard-only:** Update keyboard trap image ([3eab29b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3eab29bd3fdc833504f1c6898f64204427430437))
+
+
+### Features
+
+* **AI:** Expand on transparency and expectations ([d11d839](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d11d839e521ee555e07d09543827c38bbe0c6f84))
+* **ContextualHelp:** Clarify external link icon ([ae32dc5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ae32dc5f4103fe90c784e185ed11995bf406db48))
+* **GlStepper:** add usage guidelines ([eb78b45](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eb78b45529965fd84bc45d3b0ab6920ae5278075))
+* **VoiceTone:** Add doc for actions by GitLab ([52d055c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/52d055c0edd4e9337cc7896a7e76700f7f9e11f6))
+
 ## [2.167.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.1...v2.167.2) (2023-08-07)
 
 
