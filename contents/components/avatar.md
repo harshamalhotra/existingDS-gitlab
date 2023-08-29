@@ -15,11 +15,12 @@ related:
 
 <story-viewer component="base-avatar-labeled" title="Labeled avatar"></story-viewer>
 
-<todo>Add group demo</todo>
+<story-viewer component="base-avatar-avatars-inline" title="Group" :args-collapsed="false"></story-viewer>
 
-<todo>Add stack demo</todo>
+<story-viewer component="base-avatar-avatars-inline" title="Stack"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A2)
+
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-2)
 
 ## Structure
 
