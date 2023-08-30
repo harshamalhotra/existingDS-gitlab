@@ -102,6 +102,21 @@ export default {
           title: 'Contribute',
         });
       }
+
+      if (this.page.foundationLabel) {
+        tabs = [
+          {
+            route: 'section-slug',
+            title: 'Overview',
+          },
+          ...tabs,
+        ];
+
+        tabs.push({
+          route: 'section-slug-contribute',
+          title: 'Contribute',
+        });
+      }
       return tabs;
     },
     lastUpdatedAt() {
@@ -150,7 +165,11 @@ export default {
         </gl-nav-item>
       </gl-nav>
     </div>
-    <nuxt-child :page="page" :component-label="componentLabel" />
+    <nuxt-child
+      :page="page"
+      :component-label="componentLabel"
+      :foundation-label="page.foundationLabel"
+    />
     <p v-if="lastUpdatedAt" class="row gl-justify-content-center gl-mt-5">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
