@@ -10,7 +10,13 @@ related:
 
 ## Examples
 
-<story-viewer component="base-tooltip" story="top-default" title="Default"></story-viewer>
+<story-viewer component="base-tooltip" story="top-default" title="Top (default)"></story-viewer>
+
+<story-viewer component="base-tooltip" story="right" title="Right"></story-viewer>
+
+<story-viewer component="base-tooltip" story="bottom" title="Bottom"></story-viewer>
+
+<story-viewer component="base-tooltip" story="left" title="Left"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A142)
 
