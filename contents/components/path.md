@@ -10,9 +10,9 @@ related:
 
 ## Examples
 
-<story-viewer component="base-path"></story-viewer>
+<story-viewer component="base-path" title="Path"></story-viewer>
 
-<story-viewer component="base-path" story="all-options"></story-viewer>
+<story-viewer component="base-path" story="with-popovers" title="With popovers" iframe-padding="64px 1rem"></story-viewer>
 
 <todo>Add to Pajamas UI Kit.</todo>
 
