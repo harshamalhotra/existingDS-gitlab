@@ -11,11 +11,13 @@ related:
 
 ## Examples
 
-<story-viewer component="base-toggle" title="Default"></story-viewer>
+<story-viewer component="base-toggle" title="Toggle"></story-viewer>
 
 <story-viewer component="base-toggle" title="Disabled Toggle" :args-disabled="true"></story-viewer>
 
 <story-viewer component="base-toggle" title="Loading Toggle" :args-is-loading="true"></story-viewer>
+
+<story-viewer component="base-toggle" story="label-position-left" title="Label positioned left"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140)
 
