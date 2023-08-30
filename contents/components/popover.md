@@ -11,7 +11,9 @@ related:
 
 ## Examples
 
-<story-viewer component="base-popover"></story-viewer>
+<story-viewer component="base-popover" title="Popover"></story-viewer>
+
+<story-viewer component="base-popover" story="with-close-button" args-triggers="click" title="With close"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A131)
 
