@@ -61,6 +61,10 @@ Communicate widely any additions or changes to these labels, as other projects a
 - User bookmarks
 - Spreadsheets
 
+### Foundation labels
+
+Foundation content can have a corresponding [label](https://gitlab.com/gitlab-org/gitlab/-/labels?subscribed=&search=foundation::) that is prefixed with 'foundation::'. In the 'Contribute' tab found on a foundation page, issues and merge requests are automatically linked to the correct foundation label. To do this, add `foundationLabel:` followed by the label name without 'foundation::' to the frontmatter. For example, `foundationLabel: iconography` will correctly reference items using the 'foundation::iconography' label.
+
 ### Adding images
 
 When adding images to documentation, use the `<figure-img>` component to:
