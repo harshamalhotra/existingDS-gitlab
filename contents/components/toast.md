@@ -12,7 +12,11 @@ related:
 
 ## Examples
 
-<story-viewer component="base-toast" title="Default Toast" iframe-padding="0 0 100px 0"></story-viewer>
+<story-viewer component="base-toast" title="Toast" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
+
+<story-viewer component="base-toast" story="with-actions" title="With action" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
+
+<story-viewer component="base-toast" story="with-long-content" title="With long content" args-action="false" iframe-padding="1rem 1rem 240px 1rem"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A139)
 
