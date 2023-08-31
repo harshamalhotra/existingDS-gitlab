@@ -2113,10 +2113,10 @@
     lunr "^2.3.9"
     lunr-languages "^1.4.0"
 
-"@nuxtjs/sentry@^7.4.0":
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-7.4.0.tgz#229e66f568b68fb99477e095ef1a8d31b4596869"
-  integrity sha512-ZHy14tVtKUKc/JQ+S5gOy4ocTih9O2chjrti5I/95uLmSPjEa2b920VtVjjRvrHVKYjgLdNQwjFk4Bu8RxNOsw==
+"@nuxtjs/sentry@^7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-7.5.0.tgz#3be2f1f4887e495f23a18613aca2efba79ff2728"
+  integrity sha512-biirs9mCZ6MZVO9d7iYLu/agYPAnV8pH9aCOu+xqH5dgY1aLTv+mqzS4jEebi53eW7Aw4DcKsIwe8uhZAZQkAw==
   dependencies:
     "@sentry/core" "^7.63.0"
     "@sentry/integrations" "^7.63.0"
