@@ -15,7 +15,7 @@ related:
 
 <story-viewer component="base-daterange-picker" title="Date range picker"></story-viewer>
 
-<todo>Add example date range limit indicator.</todo>
+<story-viewer component="base-daterange-picker" story="with-dates-selected-and-tooltip" title="Date range picker with range limit"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A13)
 
