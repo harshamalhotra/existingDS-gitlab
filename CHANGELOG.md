@@ -1,3 +1,20 @@
+# [2.169.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.168.0...v2.169.0) (2023-09-04)
+
+
+### Bug Fixes
+
+* **Avatar:** Add group and stack live examples ([dda5c03](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dda5c03d8034aa38a63ab4c10e940e3bdf31265c))
+* **deps:** update dependency @gitlab/svgs to v3.60.0 ([35a7509](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/35a750968ebc45aef6b3f5d145283f4d6da0efbc))
+* **deps:** update dependency @nuxtjs/sentry to ^7.5.0 ([4e6648c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4e6648c8555a31c26a331c048907a6a71c90ba9d))
+* **deps:** update dependency mermaid to ^10.4.0 ([31ca4ef](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/31ca4eff7adc2116a0722711f2f7c2db1b479ced))
+* **deps:** update gitlab ui/svg ([ce6617f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ce6617fbb69fa22b38603d54e134a19447a72175))
+* resolve local build syntax error ([035dce0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/035dce060f9bf5fc4925ff24104ce3d4cc62f593))
+
+
+### Features
+
+* **DatePicker:** Add example for date range limit indicator ([4435906](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/44359069c1ac5a8bce823d8c07918868a4423320))
+
 # [2.168.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.167.2...v2.168.0) (2023-08-28)
 
 
