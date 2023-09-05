@@ -12,11 +12,11 @@ related:
 
 ## Examples
 
-<story-viewer component="base-token"></story-viewer>
+<story-viewer component="base-token" title="Interactive"></story-viewer>
 
-<story-viewer component="base-token" story="view-only"></story-viewer>
+<story-viewer component="base-token" story="view-only" title="View-only"></story-viewer>
 
-<story-viewer component="base-token" story="with-avatar"></story-viewer>
+<story-viewer component="base-token" story="with-avatar" title="Avatar"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A141)
 

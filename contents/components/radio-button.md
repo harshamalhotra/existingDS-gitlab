@@ -13,7 +13,9 @@ related:
 
 ## Examples
 
-<story-viewer component="base-form-form-radio" title="Radio button"></story-viewer>
+<story-viewer component="base-form-form-radio" title="Radio button states"></story-viewer>
+
+<story-viewer component="base-form-form-radio-group" title="Radio button group"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=3947%3A4)
 

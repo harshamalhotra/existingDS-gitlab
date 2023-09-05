@@ -9,11 +9,21 @@ related:
 
 ## Examples
 
-<story-viewer component="base-new-dropdowns-listbox" story="search" title="Default listbox (in progress)"></story-viewer>
+<story-viewer component="base-new-dropdowns-listbox" title="Simple listbox"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="header-and-footer" args-block="false" title="Listbox with header and footer actions"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="header-actions" args-block="false" title="Listbox with header action"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="groups" args-block="false" title="Listbox with groups"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="searchable" title="Listbox with search"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="searchable-groups" title="Listbox with searchable groups"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-listbox" story="custom-list-item" title="Listbox with custom list option"></story-viewer>
 
 <note>Listbox styles will be updated to match the UI kit.</note>
-
-<todo>Add more updated examples once complete in GitLab UI.</todo>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425%3A14&t=rmPjyHqeWCnLnYDJ-11)
 

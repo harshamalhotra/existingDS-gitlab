@@ -9,7 +9,15 @@ related:
 
 ## Examples
 
-<story-viewer component="base-new-dropdowns-disclosure" title="Default disclosure (in progress)"></story-viewer>
+<story-viewer component="base-new-dropdowns-disclosure" title="Simple disclosure"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-disclosure" story="custom-list-item" args-placement="left" title="Disclosure with custom list item"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-disclosure" story="groups" title="Disclosure with groups"></story-viewer>
+
+<story-viewer component="base-new-dropdowns-disclosure" story="custom-groups-items-and-toggle" title="Disclosure with complex content"></story-viewer>
+
+<note>Disclosure styles will be updated to match the UI kit.</note>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A14)
 

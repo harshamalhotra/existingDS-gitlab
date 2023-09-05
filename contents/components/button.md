@@ -46,7 +46,7 @@ related:
 
 <story-viewer component="base-button" story="dropdown-split-button" title="Split dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<story-viewer component="base-button" story="ellipsis" title="Buttons with badges"></story-viewer>
+<story-viewer component="base-button" story="ellipsis" title="Ellipsis button"></story-viewer>
 
 <story-viewer component="base-button-group" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
 
