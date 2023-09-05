@@ -19,7 +19,7 @@ related:
 
 <story-viewer component="base-search-box-by-type" title="Search by type"></story-viewer>
 
-<todo>Add to Pajamas UI Kit.</todo>
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=49871-77784)
 
 ## Structure
 

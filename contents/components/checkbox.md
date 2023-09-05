@@ -13,7 +13,9 @@ related:
 
 ## Examples
 
-<story-viewer component="base-form-form-checkbox" title="Checkbox"></story-viewer>
+<story-viewer component="base-form-form-checkbox" title="Checkbox states"></story-viewer>
+
+<story-viewer component="base-form-form-checkbox-tree" title="Checkbox tree"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4347%3A7242)
 
