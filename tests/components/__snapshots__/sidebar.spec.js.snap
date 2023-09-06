@@ -52,7 +52,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
                
               <svg>
                 <use
-                  xlink:href="#chevron-down"
+                  xlink:href="#chevron-right"
                 />
               </svg>
             </span>
@@ -119,7 +119,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
                
               <svg>
                 <use
-                  xlink:href="#chevron-down"
+                  xlink:href="#chevron-right"
                 />
               </svg>
             </span>

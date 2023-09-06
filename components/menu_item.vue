@@ -88,7 +88,7 @@ export default {
     >
       <span class="sidebar__nav-toggle-inner">
         <span>{{ item.title }}</span>
-        <svg-icon icon="chevron-down" />
+        <svg-icon icon="chevron-right" />
       </span>
     </button>
     <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" :class="depthClass">
