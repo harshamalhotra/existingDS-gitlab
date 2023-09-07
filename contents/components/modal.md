@@ -19,6 +19,10 @@ related:
 
 <story-viewer component="base-modal" title="Opened modal" iframe-padding="120px 0px"></story-viewer>
 
+<story-viewer component="base-modal" story="with-scrolling-content" title="With scrolling content" iframe-padding="240px 0px"></story-viewer>
+
+<story-viewer component="base-modal" story="without-a-footer" title="Without actions" iframe-padding="120px 0px"></story-viewer>
+
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4263%3A21)
 
 ## Structure

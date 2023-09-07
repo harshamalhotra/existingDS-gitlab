@@ -9,9 +9,11 @@ related:
 
 ## Examples
 
-<story-viewer component="base-label" title="Default label"></story-viewer>
+<story-viewer component="base-label" title="Label"></story-viewer>
 
-<story-viewer component="base-label" story="scoped" title="Scoped label"></story-viewer>
+<story-viewer component="base-label" story="scoped" title="Scoped"></story-viewer>
+
+<story-viewer component="base-label" story="with-close-button" title="With close"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A127)
 

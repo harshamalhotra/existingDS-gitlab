@@ -12,11 +12,13 @@ related:
 
 ## Examples
 
-<story-viewer component="base-pagination" title="Default pagination"></story-viewer>
+<story-viewer component="base-pagination" title="Offset pagination"></story-viewer>
 
-<story-viewer component="base-pagination" title="Truncated on both sides" :args-initial-page="10"></story-viewer>
+<story-viewer component="base-pagination" title="Offset pagination truncated on both sides" args-page="10"></story-viewer>
 
-<story-viewer component="base-pagination" story="compact" title="Compact pagination"></story-viewer>
+<story-viewer component="base-pagination" story="compact" title="Compact offset pagination"></story-viewer>
+
+<story-viewer component="base-keyset-pagination" title="Keyset pagination" args-hasPreviousPage="false"></story-viewer>
 
 <todo>Add or refactor examples to compare offset and keyset pagination.</todo>
 
