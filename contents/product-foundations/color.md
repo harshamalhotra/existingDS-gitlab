@@ -427,7 +427,7 @@ A user may choose between ten different themes to customize the appearance of th
 - Green and light green share the same `$t-green-` variables.
 - Dark and light share the same `$t-gray-` variables.
 
-<div class="gl-display-grid gl-grid-template-columns-4 gl-gap-7 gl-mb-6">
+<div class="gl-display-grid gl-grid-template-columns-2 gl-gap-7 gl-mb-11">
   <color-palette
     name="Indigo / Light indigo"
     class="md"
@@ -480,6 +480,61 @@ A user may choose between ten different themes to customize the appearance of th
       {
         name: 't-indigo-950',
         code: '#14143d',
+        classes: ['f-inverted']
+      },
+    ]"></color-palette>
+  <color-palette
+    name="Green / Light green"
+    class="md"
+    :shades="[
+      {
+        name: 't-green-50',
+        code: '#dde9de',
+      },
+      {
+        name: 't-green-100',
+        code: '#b1d6b5',
+      },
+      {
+        name: 't-green-200',
+        code: '#8cc497',
+      },
+      {
+        name: 't-green-300',
+        code: '#69af7d',
+      },
+      {
+        name: 't-green-400',
+        code: '#499767',
+      },
+      {
+        name: 't-green-500',
+        code: '#308258',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-600',
+        code: '#25744c',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-700',
+        code: '#1b653f',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-800',
+        code: '#155635',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-900',
+        code: '#0e4328',
+        classes: ['f-inverted']
+      },
+      {
+        name: 't-green-950',
+        code: '#052e19',
         classes: ['f-inverted']
       },
     ]"></color-palette>
@@ -590,61 +645,6 @@ A user may choose between ten different themes to customize the appearance of th
       {
         name: 't-light-blue-950',
         code: '#0a3764',
-        classes: ['f-inverted']
-      },
-    ]"></color-palette>
-  <color-palette
-    name="Green / Light green"
-    class="md"
-    :shades="[
-      {
-        name: 't-green-50',
-        code: '#dde9de',
-      },
-      {
-        name: 't-green-100',
-        code: '#b1d6b5',
-      },
-      {
-        name: 't-green-200',
-        code: '#8cc497',
-      },
-      {
-        name: 't-green-300',
-        code: '#69af7d',
-      },
-      {
-        name: 't-green-400',
-        code: '#499767',
-      },
-      {
-        name: 't-green-500',
-        code: '#308258',
-        classes: ['f-inverted']
-      },
-      {
-        name: 't-green-600',
-        code: '#25744c',
-        classes: ['f-inverted']
-      },
-      {
-        name: 't-green-700',
-        code: '#1b653f',
-        classes: ['f-inverted']
-      },
-      {
-        name: 't-green-800',
-        code: '#155635',
-        classes: ['f-inverted']
-      },
-      {
-        name: 't-green-900',
-        code: '#0e4328',
-        classes: ['f-inverted']
-      },
-      {
-        name: 't-green-950',
-        code: '#052e19',
         classes: ['f-inverted']
       },
     ]"></color-palette>
