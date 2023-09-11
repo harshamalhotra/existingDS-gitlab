@@ -50,13 +50,10 @@ td {
 // Compact table
 
 .table-compact {
-  font-size: $base-font-size;
-  line-height: 1.5;
 
   p,
   ul {
-    // Repeat line height for specificity
-    line-height: 1.5;
+    @include type-scale(0, 6, 0, 0);
     margin-bottom: 0.5em;
   }
 

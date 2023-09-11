@@ -67,7 +67,7 @@ pre[class*="language-"],
 
 .md,
 .md .nuxt-content {
-  @include type-scale(1, 7, 0, 0);
+  @include type-scale(0, 6, 0, 0);
 
   > h1 { @include type-scale(14, 12, 2); }
 
@@ -86,7 +86,7 @@ pre[class*="language-"],
     color: $text-color--secondary;
   }
 
-  > p  { @include type-scale(1, 7, 2, 0) }
+  > p  { @include type-scale(0, 6, 2, 0) }
 
   > blockquote,
   > ul,
@@ -102,13 +102,13 @@ pre[class*="language-"],
   }
 
   > blockquote {
-    border-left: ($border-width * 2) solid $border-color;
+    border-left: ($border-width * 2) solid $purple-300;
     color: $text-color--secondary;
     margin-left: 0;
     margin-right: 0;
     padding-left: $gl-spacing-5;
 
-    > p  { @include type-scale(1, 7, 0, 0) }
+    > p  { @include type-scale(0, 6, 0, 0) }
   }
 }
 

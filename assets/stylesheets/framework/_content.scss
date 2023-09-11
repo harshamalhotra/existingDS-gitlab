@@ -145,12 +145,10 @@
 // Keyboard
 
 kbd {
-  display: inline-block;
   padding: 3px 5px;
   line-height: 1;
-  font-size: $base-font-size;
+  font-size: 0.875em;
   color: $gray-700;
-  vertical-align: unset;
   background-color: $gray-10;
   border-width: 1px;
   border-style: solid;
