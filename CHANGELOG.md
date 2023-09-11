@@ -1,3 +1,26 @@
+# [2.170.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.169.0...v2.170.0) (2023-09-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v66.5.0 ([1bb1f68](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1bb1f6879d3dfe86cbe6d5016e5e79961e9e4623))
+* **Label:** Add story with close ([6d33018](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6d33018702963992a476e4d0c04ac52d257df31b))
+* **Modal:** Add scrolling content and without actions stories ([8d2ff3c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8d2ff3c28d403472f0ec8574e20fa43b6521e816))
+* **Pagination:** Retitle and fix pagination examples ([67eba03](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/67eba03c4bfd30f1b9e5aef2b442e6899c9c0230))
+* **Path:** Fix and retitle stories ([bd2bfe7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bd2bfe765f36081321acd27ac900953717abfd8e))
+* **Popover:** Add story with close button ([50d44fb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/50d44fb6cc7d46df6cb620d2383d4fc3d43609e1))
+* **Stories:** Update multiple component stories ([7c74131](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7c741313ebb39302ebf6e23b54113b89ea18e6db))
+* **Toast:** Add action and long content stories ([1712681](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1712681802ef641df93a3ce418c01dd896753c07))
+* **Toggle:** Add left label position story ([bc6e09c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bc6e09cd605933a54790c778ea6ad14fb2cf2fa8))
+* **Tooltip:** Add right, bottom, and left stories ([a2f98f7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a2f98f70131c7a9b3bc1e12aabab3b2e797e5550))
+
+
+### Features
+
+* **DesignTokens:** Initial docs ([a5a9eeb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a5a9eeb1ca6590a3db86e8086f2402f5d3336c94))
+* **Nav:** Update chevron direction ([af4bcd2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/af4bcd2351fe6c6bd7e8f47db6955aea4ff4af3a))
+* **PajamasPres:** Font size and measure ([3aa2d3d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3aa2d3da387268cf15bf2fbf33c6817941340292))
+
 # [2.169.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.168.0...v2.169.0) (2023-09-04)
 
 
