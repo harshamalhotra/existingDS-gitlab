@@ -65,7 +65,7 @@
                 href="https://about.gitlab.com/2016/07/20/gitlab-is-open-core-github-is-closed-source/"
                 >open core</a
               >
-              product and has over 3000 community contributors. When everyone can contribute,
+              product and has over 4,000 community contributors. When everyone can contribute,
               consumers become contributors and we greatly increase the rate of human progress.
             </p>
             <p>
