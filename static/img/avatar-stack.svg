@@ -1,9 +1,1 @@
-<svg width="104" height="80" viewBox="0 0 104 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="104" height="80" fill="white"/>
-<circle cx="88" cy="40" r="16" fill="#BFBFBF"/>
-<circle cx="64" cy="40" r="15.5" fill="#E9F3FC" stroke="#BFBFBF"/>
-<circle cx="40" cy="40" r="15.5" fill="#E9F3FC" stroke="#BFBFBF"/>
-<circle cx="16" cy="40" r="15.5" fill="#E9F3FC" stroke="#BFBFBF"/>
-<path d="M85.004 39.524V36.458H84.052V39.524H81V40.476H84.052V43.542H85.004V40.476H88.056V39.524H85.004Z" fill="#5E5E5E"/>
-<rect x="90.056" y="36" width="9" height="8" rx="2" fill="#5E5E5E"/>
-</svg>
+<svg width="104" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h104v80H0z"/><rect x="72" y="24" width="32" height="32" rx="16" fill="#BFBFC3"/><path d="M84.976 39.524v-3.066h-.952v3.066h-3.052v.952h3.052v3.066h.952v-3.066h3.052v-.952h-3.052Z" fill="#535158"/><rect x="90.028" y="36" width="9" height="8" rx="2" fill="#535158"/><rect x="48.5" y="24.5" width="31" height="31" rx="15.5" fill="#E9F3FC"/><rect x="48.5" y="24.5" width="31" height="31" rx="15.5" stroke="#BFBFC3"/><rect x="24.5" y="24.5" width="31" height="31" rx="15.5" fill="#E9F3FC"/><rect x="24.5" y="24.5" width="31" height="31" rx="15.5" stroke="#BFBFC3"/><rect x=".5" y="24.5" width="31" height="31" rx="15.5" fill="#E9F3FC"/><rect x=".5" y="24.5" width="31" height="31" rx="15.5" stroke="#BFBFC3"/></svg>
