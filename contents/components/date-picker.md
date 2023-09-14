@@ -17,7 +17,7 @@ related:
 
 <story-viewer component="base-daterange-picker" story="with-dates-selected-and-tooltip" args-start-picker-class=" " args-end-picker-class=" " args-label-class=" " title="Date range picker with maximum range indicator"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A13)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-13&mode=dev)
 
 ## Structure
 

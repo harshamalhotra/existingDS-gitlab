@@ -109,6 +109,8 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 <story-viewer component="regions-empty-state"></story-viewer>
 
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48911-75349&mode=dev)
+
 ## Implementation
 
 Create an issue and [follow the Empty state issue template](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Empty%20state).

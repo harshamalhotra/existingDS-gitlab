@@ -20,7 +20,7 @@ related:
 <story-viewer component="base-avatar-avatars-inline" title="Stack"></story-viewer>
 
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-2)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-2&mode=dev)
 
 ## Structure
 

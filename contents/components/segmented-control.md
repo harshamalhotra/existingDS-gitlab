@@ -19,8 +19,6 @@ related:
 
 <story-viewer component="base-segmented-control"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A135)
-
 ## Structure
 
 <todo>Add structure image.</todo>
