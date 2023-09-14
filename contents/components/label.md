@@ -15,7 +15,7 @@ related:
 
 <story-viewer component="base-label" story="with-close-button" title="With close"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A127)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-127&mode=dev)
 
 ## Structure
 

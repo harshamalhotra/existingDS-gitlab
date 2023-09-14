@@ -19,7 +19,7 @@ related:
 
 <story-viewer component="base-badge" story="badge-icon" title="With icons"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=425%3A3)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=59780-92312&mode=dev)
 
 ## Structure
 

@@ -23,7 +23,7 @@ related:
 
 <story-viewer component="base-modal" story="without-a-footer" title="Without actions" iframe-padding="120px 0px"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=4263%3A21)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-129&mode=dev)
 
 ## Structure
 

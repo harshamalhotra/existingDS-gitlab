@@ -19,7 +19,7 @@ related:
 
 <story-viewer component="base-toggle" story="label-position-left" title="Label positioned left"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A140)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-140&mode=dev)
 
 ## Structure
 
