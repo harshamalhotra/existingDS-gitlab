@@ -9,6 +9,8 @@ Giving appropriate and timely feedback for user-made changes is vital to making 
 
 [Instant feedback](#instant-feedback), on the other hand, is giving the user immediate positive feedback without waiting for the return of data from the server, expecting that the change they made will be successfully saved. It has a positive effect on the perceived speed of the application.
 
+[Delayed feedback](#delayed-feedback) can help ensure a response reduces interruptions and is appropriate. A slower response is better if it leads to more accurate and useful feedback or suggestions. This helps a user satisfy their query or complete a task with less errors or ambiguity.
+
 ## Saving progress
 
 When deciding between the two methods for saving progress, introduce automatic saving of changes if it will improve the user’s experience, else to avoid confusion, default to saving manually. Automatically saving changes can be sensitive and comes with its own set of guidelines. Consider these guidelines when deciding between the two methods.
@@ -68,6 +70,17 @@ The new information should be reflected in the UI immediately but we should also
 Once the change is successfully saved, the opacity changes to 100% and the spinner disappears. There is no way of handling errors for such cases, we keep persisting until it gets successfully saved. To avoid loss of progress and changes, this method can be complemented with a [safety measure](#safety-measure) similar to the one described above: if changes aren’t successfully changed when the user tries to close the page, show a warning.
 
 <todo>Add live component block with code example (example of newly added info as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#round-trip-server-processing-versus-instant-feedback))</todo>
+
+## Delayed feedback
+
+Delayed feedback, or debouncing, can improve performance and the user experience by reducing interruptions during content entry. For example, it could be helpful to wait a short amount of time before validating an email address. Similarly, a small delay before checking the server for a query match benefits a user who has paused typing.
+
+In general, consider using:
+
+- A faster `250ms` debounce period for results that will have low performance impact and where the response can feel more responsive. This could be helpful for [search](/components/search).
+- A slower `500ms` debounce period when the performance impact could be high, or the additional delay benefits the user based on the situation and content being entered. This could be helpful for [form validation](/patterns/forms#validation).
+
+These are just suggestions, however, and you may find that you need faster or slower debounce periods in some cases.
 
 ## Related patterns
 

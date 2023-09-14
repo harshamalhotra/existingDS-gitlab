@@ -123,6 +123,8 @@ There are two types of validation messages:
   - **Error**: Indicates content that can’t be submitted, or was invalid and in need of correction.
   - **Success**: Indicates content that is valid. In most cases a success message isn't shown.
 
+Consider using a slower [debounce period](/usability/saving-and-feedback#delayed-feedback) during real-time validation to prevent interrupting or frustrating a user while they're entering content.
+
 #### Text limits
 
 Text limits are indicated through a character counter. A user may keep typing when the limit is reached, though that might impact successful form submission.
