@@ -2,14 +2,41 @@
 name: Release notes
 ---
 
+## 16.5
+
+[_Draft: 16.5 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3543)
+
 ## 16.4
 
-<!-- 🚧 Update MR link before publishing 🚧 -->
-[_Draft: 16.4 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3488)
+<small>Published 2023-09-18</small>
+
+### Additions
+
+- Add [**❖&nbsp;Deprecated&nbsp;component**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96846-7111&mode=dev&t=II2cG0v81YYjiISQ-4) utility component, to mark variants as deprecated in a non-destructive way.
+- Add [**❖&nbsp;Simple&nbsp;action&nbsp;list**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96856-7469&mode=design&t=II2cG0v81YYjiISQ-4) dropdown list example to make it faster to build flat and grouped action lists.
+
+### Changes
+
+- Update [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60828-98007&mode=dev&t=II2cG0v81YYjiISQ-4) dropdown element to have more separation between actions and selectable options. Property naming also updated to match naming guidelines.
+- [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60828-98007&mode=dev&t=II2cG0v81YYjiISQ-4) dropdown element has multiple changes:
+  - Increase separation between actions and selectable options.
+  - Add variants for all 'checked' option state and selected combinations, including prototyping features.
+  - Update interactive state styles for checked options.
+  - Add destructive and disabled [state documentation](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65182-99449&mode=design&t=QCgwyA33tKeMfCu7-4). These states are not able to be added to the Figma component because of a technical limitation.
+  - Property naming updated to match naming guidelines.
+- Update [**❖&nbsp;Footer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=61252-96383&mode=design&t=II2cG0v81YYjiISQ-4) dropdown element to make clear the buttons here are actions, not options.
+- Update [**❖&nbsp;Checkbox**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49856%3A76501&mode=dev) icons to match production.
+
+### Fixes
+
+- Fixed the [**❖&nbsp;Danger&nbsp;button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=21920%3A273&mode=dev) tertiary hover and focus state background colors to use the correct style.
+
+### Deprecations
+
+- Deprecate multiple ❖&nbsp;Option variants when `Is action:true` and `Is selected:true` as this is not a possible combination. Use `Is action:false` and `Is selected:true` (most common), or `Is action:true` and `Is selected:false` instead.
 
 ## 16.3
 
-<!-- 🚧 Update date before publishing 🚧 -->
 <small>Published 2023-08-22</small>
 
 <note>When possible, links in the release notes will open in Figma's [Dev Mode](https://www.figma.com/dev-mode/) for faster inspection, and to prevent unwanted editing of objects when a user has edit permissions.</note>
