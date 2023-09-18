@@ -65,7 +65,12 @@ Communicate widely any additions or changes to these labels, as other projects a
 
 Foundation content can have a corresponding [label](https://gitlab.com/gitlab-org/gitlab/-/labels?subscribed=&search=foundation::) that is prefixed with 'foundation::'. In the 'Contribute' tab found on a foundation page, issues and merge requests are automatically linked to the correct foundation label. To do this, add `foundationLabel:` followed by the label name without 'foundation::' to the frontmatter. For example, `foundationLabel: iconography` will correctly reference items using the 'foundation::iconography' label.
 
-### Adding images
+### Adding graphics and images
+
+Add graphics and images to optionally support, but not replace, text content. Acceptable formats include JPEG, PNG, and SVG.
+
+- Use JPEG and PNG formats for photography and complex images. Optimize images through a tool like [ImageOptim](https://imageoptim.com/mac) before uploading.
+- Use SVG for illustration, iconography, small vector-based graphics, and simple UI representation. Optimize graphics through a tool like [SVGOMG](https://jakearchibald.github.io/svgomg/) or the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin for Figma.
 
 When adding images to documentation, use the `<figure-img>` component to:
 
