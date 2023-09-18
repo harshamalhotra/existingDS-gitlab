@@ -1,3 +1,16 @@
+# [2.171.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.170.0...v2.171.0) (2023-09-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency iframe-resizer to ^4.3.7 ([32d8b20](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32d8b20b1277cb991645de8581813f4cd3f6e457))
+* **deps:** update gitlab ui/svg ([5753720](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5753720a0396a89c7dc8681d63a93f6016322842))
+
+
+### Features
+
+* **DelayedResponse:** Standardize delay timing ([a88cf55](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a88cf554051b3b00d2aa10b6b527f93d01e5ca28))
+
 # [2.170.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.169.0...v2.170.0) (2023-09-11)
 
 
