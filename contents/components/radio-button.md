@@ -21,7 +21,12 @@ related:
 
 ## Structure
 
-<todo>Add structure image.</todo>
+<figure-img alt="Numbered diagram of a radio button structure" label="Radio button structure" src="/img/radio-button-structure.svg"></figure-img>
+
+1. **Legend**: A title for a group of radio buttons.
+1. **Radio button**: The input element that provides the visual affordance for the control.
+1. **Label**: Text indicating the option.
+1. **Help text** (optional): Used to further clarify an option.
 
 ## Guidelines
 
