@@ -2,7 +2,7 @@
 name: Overview
 ---
 
-## An introduction to performing website audits
+## An introduction to evaluating accessibility
 
 At GitLab we believe that everyone can contribute, and part of delivering on that promise is ensuring accessible experiences. While many accessibility issues can be determined with automated tools, most require manual testing and validation.
 
@@ -12,7 +12,7 @@ The following guides aren’t a replacement for thorough manual audits or user t
 
 ### Guides
 
-- Visual (coming soon)
+- [Visual](/accessibility/visual)
 - Semantics and content (coming soon)
 - [Keyboard-only](/accessibility/keyboard-only)
 - Screen readers (coming soon)

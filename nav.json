@@ -566,11 +566,11 @@
             ]
           },
           {
-            "title": "Audit guides",
+            "title": "Evaluating accessibility",
             "items": [
               {
                 "title": "Overview",
-                "path": "audits"
+                "path": "evaluation"
               },
               {
                 "title": "Visual",
