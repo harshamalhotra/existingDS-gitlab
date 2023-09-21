@@ -2,7 +2,7 @@
 name: Progressive disclosure
 related:
   - /usability/destructive-actions
-  - /usability/onboarding
+  - /usability/feature-discovery
   - accordion
   - button
   - modal
@@ -12,7 +12,7 @@ related:
 
 Progressive disclosure is an interaction pattern that defers less important information and features to secondary screens. By initially only showing the most important information, users are less likely to become overwhelmed when there is a large amount of content to consume. Using a trigger to reveal an object hidden from view, it can reduce the amount of content on the page at any one time without sacrificing features.
 
-When employing progressive disclosure, display key information prominently to reduce cognitive load, and reveal additional information only upon request. Keeping the interface simple in this way allows users to focus their attention and also helps with new user [onboarding](onboarding).
+When employing progressive disclosure, display key information prominently to reduce cognitive load, and reveal additional information only upon request. Keeping the interface simple in this way allows a user to focus their attention and also helps with new user [onboarding](/usability/feature-discovery).
 
 ## Best practices
 
