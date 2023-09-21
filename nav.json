@@ -507,6 +507,10 @@
             "path": "drag-and-drop"
           },
           {
+            "title": "Feature discovery",
+            "path": "feature-discovery"
+          },
+          {
             "title": "Feature management",
             "path": "feature-management"
           },
@@ -517,10 +521,6 @@
           {
             "title": "Obfuscation",
             "path": "obfuscation"
-          },
-          {
-            "title": "Onboarding",
-            "path": "onboarding"
           },
           {
             "title": "Progressive disclosure",
