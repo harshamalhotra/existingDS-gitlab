@@ -197,11 +197,14 @@ pre[class*="language-"],
   h3,
   h4,
   h5,
-  h6 {
+  h6 { 
+    position: relative;
+
     > a[aria-hidden] {
-      margin-left: -1em;
-      padding-right: $gl-spacing-3;
+      left: -1em;
+      width: 1em;
       visibility: hidden;
+      position: absolute;
 
       &::before {
         content: '#';
