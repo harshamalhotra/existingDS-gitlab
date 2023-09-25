@@ -58,7 +58,7 @@
     "jest-serializer-vue": "^3.1.0",
     "linkinator": "^5.0.2",
     "prettier": "3.0.3",
-    "sass": "^1.67.0",
+    "sass": "^1.68.0",
     "sass-loader": "^10.4.1",
     "start-server-and-test": "^2.0.1",
     "vue-jest": "^3.0.7",
