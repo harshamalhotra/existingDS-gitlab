@@ -1,3 +1,21 @@
+# [2.172.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.171.0...v2.172.0) (2023-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([192940f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/192940f8c9a882411aee09874d282771199bf8d1))
+* Align headings and content ([41cc67f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/41cc67ffe41f4f8b901b39333a781366bf35d6c7))
+* **ReleaseNotes:** Remove duplicate item ([0d72b93](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0d72b93307b520f60729aae049ae04216fdde649))
+
+
+### Features
+
+* **A11yEval:** Accessibility visual eval ([5d9a383](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5d9a383e6f9b4ffceb46f9378787ccd1b880c793))
+* **Drawer:** Update button placement guidelines ([13d5409](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/13d5409060d65584bf94592efdea86306c5d98e4))
+* **Photography:** adding do/don't guidelines ([893edc6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/893edc6b1ff4eee15784af47a9f4c9728da4a2a5))
+* **RadioButton:** Add structure image ([81bc372](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/81bc372c9ad1093a395e2c53016ce3ea8eb11566))
+* **ReleaseNotes:** Pajamas UI Kit 16.4 release notes ([9991741](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/99917414e2ae71f219306beded00c8773ce1a7fc))
+
 # [2.171.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.170.0...v2.171.0) (2023-09-18)
 
 
