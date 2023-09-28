@@ -81,6 +81,7 @@ related:
 - Be brief and keep it to a single line by utilizing a sentence fragment.
 - Avoid using punctuation such as periods, commas, or semicolons.
 - Use a full stop only when it's a full sentence.
+- Title should use a level 2 (`h2`) heading.
 
 #### Actions
 
