@@ -1,3 +1,10 @@
+## [2.172.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.172.0...v2.172.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **GLDrawer:** add drawer title size spec ([b552074](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b552074115156ac4ed1a9e45330be0c03c010174))
+
 # [2.172.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.171.0...v2.172.0) (2023-09-25)
 
 
