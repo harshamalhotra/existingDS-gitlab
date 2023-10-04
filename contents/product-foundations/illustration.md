@@ -67,6 +67,12 @@ A stroke encapsulates most elements and is used for line work and depicting moti
 
 An illustration is primarily comprised of geometric shapes. Use circles, rectangles, squares, and triangles for base elements, with lines and organic shapes for details as needed.
 
+There are two container shapes: leaf and round.
+
+<figure-img alt="Example of the leaf and round container shapes, colored with Purple 02s, one of the recommended colors for background fills. The leaf shape is a square with rounded top-right and bottom-left corners. The round shape is a circle." label="Container shapes: leaf and round" src="/img/illus-shapes.svg"></figure-img>
+
+<todo>Define shapes usage, see https://gitlab-org.gitlab.io/gitlab-svgs/illustrations for current exploration.</todo>
+
 ### Border radius
 
 - Corners and angles have no border radius by default, but a border radius between **4px** to **16px** can be used for softer, rounded objects.
@@ -91,8 +97,8 @@ A focal point grid leverages the [rule of thirds](https://en.wikipedia.org/wiki/
 Not all illustrations will have multiple objects or objects that need to align to an intersection point. Circular grid lines are also provided for centering within the frame.
 
 - **Large**: **288px × 288px** frame size. Used for feature promotion.
-- **Medium**: **144px × 144px** frame size. Used for empty states, error states, and banners.
-- **Small** ("spot" illustration): **72px × 72px** frame size. Used when space is limited.
+- **Medium**: **144px × 144px** frame size. Used for empty states and error states.
+- **Small** ("spot" illustration): **72px × 72px** frame size. Used for banners and when space is limited.
 - **Extra small**: **36px × 36px** frame size. Used for individual illustration elements that are combined with other elements to form a larger composition, or to connect other elements in the UI.
 
 <figure-img alt="Large, medium, and small focal point grid sizes" label="Focal point grid sizes: large, medium, and small" src="/img/illus-focal-point.svg"></figure-img>
