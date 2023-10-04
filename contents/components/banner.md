@@ -67,7 +67,7 @@ A banner should be used sparingly and with consideration of its impact to neighb
 
 - Title should be concise and indicate the purpose of the banner.
 - The message describes the benefits of performing the action.
-- An optional [illustration](/product-foundations/illustration) to support the message uses the [medium](/product-foundations/illustration#grid-and-size) illustration size.
+- An optional [illustration](/product-foundations/illustration) to support the message uses the [small](/product-foundations/illustration#grid-and-size) illustration size and [round](/product-foundations/illustration#shape) container shape.
 
 ### Placement
 
