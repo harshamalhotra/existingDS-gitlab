@@ -88,4 +88,4 @@ Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
 
 ### Accessibility
 
-<todo>Update accessibility guidelines.</todo>
+- Tooltips should not auto-dismiss as it would violate [WCAG 1.4.13 Content on Hover or Focus](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus)
