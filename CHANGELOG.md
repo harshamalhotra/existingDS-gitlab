@@ -1,3 +1,16 @@
+# [2.173.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.172.1...v2.173.0) (2023-10-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mermaid to ^10.5.0 ([4310498](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/43104989f29fa623d54fda950163349c56fa07be))
+
+
+### Features
+
+* **Tooltip:** Add auto-dismiss violates a11y ([f85c8ba](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f85c8baaa84963f14cf03d5975a1d56e3236aaeb))
+* **Tooltip:** Add newline at eof ([f62d116](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f62d1167b5225dc8c73bb1daf342c3cac46f9189))
+
 ## [2.172.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.172.0...v2.172.1) (2023-10-02)
 
 
