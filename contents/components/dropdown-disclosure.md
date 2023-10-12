@@ -5,17 +5,19 @@ related:
   - dropdown-combobox
   - button
   - accordion
+components:
+  - base-dropdown-disclosure-dropdown
 ---
 
 ## Examples
 
-<story-viewer component="base-new-dropdowns-disclosure" title="Simple disclosure"></story-viewer>
+<story-viewer component="base-dropdown-disclosure-dropdown" title="Simple disclosure"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-disclosure" story="custom-list-item" args-placement="left" title="Disclosure with custom list item"></story-viewer>
+<story-viewer component="base-dropdown-disclosure-dropdown" story="custom-list-item" args-placement="left" title="Disclosure with custom list item"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-disclosure" story="groups" title="Disclosure with groups"></story-viewer>
+<story-viewer component="base-dropdown-disclosure-dropdown" story="groups" title="Disclosure with groups"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-disclosure" story="custom-groups-items-and-toggle" title="Disclosure with complex content"></story-viewer>
+<story-viewer component="base-dropdown-disclosure-dropdown" story="custom-groups-items-and-toggle" title="Disclosure with complex content"></story-viewer>
 
 <note>Disclosure styles will be updated to match the UI kit.</note>
 
