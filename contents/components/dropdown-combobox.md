@@ -9,19 +9,19 @@ related:
 
 ## Examples
 
-<story-viewer component="base-new-dropdowns-listbox" title="Simple listbox"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" title="Simple listbox"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="header-and-footer" args-block="false" title="Listbox with header and footer actions"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="header-and-footer" args-block="false" title="Listbox with header and footer actions"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="header-actions" args-block="false" title="Listbox with header action"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="header-actions" args-block="false" title="Listbox with header action"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="groups" args-block="false" title="Listbox with groups"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="groups" args-block="false" title="Listbox with groups"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="searchable" title="Listbox with search"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="searchable" title="Listbox with search"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="searchable-groups" title="Listbox with searchable groups"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="searchable-groups" title="Listbox with searchable groups"></story-viewer>
 
-<story-viewer component="base-new-dropdowns-listbox" story="custom-list-item" title="Listbox with custom list option"></story-viewer>
+<story-viewer component="base-dropdown-collapsible-listbox" story="custom-list-item" title="Listbox with custom list option"></story-viewer>
 
 <note>Listbox styles will be updated to match the UI kit.</note>
 
