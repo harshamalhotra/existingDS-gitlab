@@ -5,6 +5,8 @@ related:
   - dropdown-disclosure
   - button
   - accordion
+components:
+  - base-dropdown-collapsible-listbox
 ---
 
 ## Examples

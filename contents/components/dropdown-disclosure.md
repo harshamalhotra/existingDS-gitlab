@@ -5,6 +5,8 @@ related:
   - dropdown-combobox
   - button
   - accordion
+components:
+  - base-dropdown-disclosure-dropdown
 ---
 
 ## Examples
