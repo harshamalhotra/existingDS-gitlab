@@ -1,5 +1,9 @@
 ---
 name: AI-human interaction
+related:
+  - /usability/contextual-help
+  - /usability/destructive-actions
+  - /usability/saving-and-feedback
 ---
 
 As Artificial Intelligence (AI) continues to advance, it brings both exciting opportunities and new challenges for product design. Although designing for AI still requires adhering to human-centered design principles, additional considerations such as ethics, privacy, trust, and transparency must be taken into account.
@@ -101,13 +105,15 @@ These dimensions can assist you in choosing the most appropriate pattern for the
 
 ### Patterns
 
-<todo>Add content about each pattern. In the meantime, you can see some of the patterns we have identified in this [video](https://youtu.be/UXCz2xst_zg) ([slides](https://docs.google.com/presentation/d/1rO2BpI2WZC9Dxhv7oVR6XHk8GMb77AswESYcDANnQhA/edit?usp=sharing) and [internal Figma file](https://www.figma.com/file/s4TP1i2Akd1VTh4jhbg234/AI-prioritized-prototypes?type=design&node-id=2766-82606&t=zllXY21ifWzgeCq1-4)).</todo>
+<todo>Add documented patterns. Follow the progress in the [framework epic](https://gitlab.com/groups/gitlab-org/-/epics/10334).</todo>
 
-## Related patterns
+While we don't have documented patterns, we share some potential patterns in this [video](https://youtu.be/UXCz2xst_zg) ([slides](https://docs.google.com/presentation/d/1rO2BpI2WZC9Dxhv7oVR6XHk8GMb77AswESYcDANnQhA/edit?usp=sharing) and [internal Figma file](https://www.figma.com/file/s4TP1i2Akd1VTh4jhbg234/AI-prioritized-prototypes?type=design&node-id=2766-82606&t=zllXY21ifWzgeCq1-4)).
 
-- [Destructive actions](/usability/destructive-actions)
-- [Saving and feedback](/usability/saving-and-feedback)
-- [Contextual help and info](/usability/contextual-help)
+As inspiration for **integrated** mode patterns, you can find some explorations in [this Figma file](https://www.figma.com/file/s32hZcNQ0mQupGuEB5jUMH/Integrated-mode-AI-UX-patterns-design.gitlab.com%231615?type=design&node-id=1-2&mode=design):
+
+<div class="figma-embed" aria-label="Examples of integrated mode patterns, showing how the AI-human interaction guidelines could be applied to a button, form, or static content." role="img">
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fs32hZcNQ0mQupGuEB5jUMH%2FIntegrated-mode-AI-UX-patterns-design.gitlab.com%25231615%3Ftype%3Ddesign%26node-id%3D1%253A2%26mode%3Ddesign%26t%3DeWpvomQy7PhbCp4J-1" allowfullscreen></iframe>
+</div>
 
 ## References
 
