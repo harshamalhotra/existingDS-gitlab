@@ -1,3 +1,18 @@
+# [2.174.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.173.0...v2.174.0) (2023-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v66.34.0 ([b0edf1b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b0edf1b81c885998d98c409033921c95cc6ca04a))
+* **deps:** update gitlab ui/svg ([c2098b5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c2098b5c865a0b224cac07a78a27f5ce185a61fa))
+* add dropdown implementation tabs ([c73ef53](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c73ef5321202717f3748034d1308f0056d685043))
+* **deps:** update gitlab ui/svg ([15990f0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/15990f0e20b6553c2cfb21dc9a8cb505bd0949d7))
+
+
+### Features
+
+* **AI:** Link to integrated AI examples ([52cc9aa](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/52cc9aa90ebc24f0549e78bbc5b23931ac4e00ce))
+
 # [2.173.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.172.1...v2.173.0) (2023-10-09)
 
 
