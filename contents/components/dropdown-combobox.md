@@ -61,8 +61,12 @@ components:
 
 ### Variants
 
+There are two combobox variants that vary based on how they are triggered, whether through a button or a text input.
+See [diagram](/components/dropdown-overview#which-component-should-you-use) for additional help in choosing between them.
+
 - **Collapsible listbox** (`GlCollapsibleListbox`, most common): A button triggers a panel of single or multiselect options.
 - **Combobox** (`GlFormCombobox`): A text input triggers a panel of options. An optional button next to the input can also trigger the panel.
+
 
 #### Trigger buttons
 
