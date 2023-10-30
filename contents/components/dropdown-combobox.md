@@ -36,7 +36,7 @@ components:
 1. **Text input or button**: Triggers the panel to open or close.
 1. **Panel**: Wraps the content.
 1. **Header** (optional): Provides more context for the options.
-1. **Header action** (optional, within header for multiselect only): Changes the selected state of all options.
+1. **Header action** (optional): Changes the selected state of options.
 1. **Listbox**: A group of options.
 1. **Option**: Item available for selection.
 1. **Scrim**: Gradient overlay when items overflow the panel.
