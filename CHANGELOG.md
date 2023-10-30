@@ -1,3 +1,17 @@
+# [2.175.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.174.0...v2.175.0) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mermaid to ^10.5.1 ([2923686](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2923686826a720564472ba77b05628118777d95a))
+* **deps:** update dependency mermaid to ^10.6.0 ([d8d6b85](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d8d6b853cb752b2cd91762925327b332839421ed))
+* **deps:** update dependency nuxt to ^2.17.2 ([8033332](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/803333218a4dd8e71bc8a3fc86651eacbd1332d2))
+
+
+### Features
+
+* **UIkitComponents:** Document order ([bc26036](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bc260368aadc7771e78c634e9316ca82046767fb))
+
 # [2.174.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.173.0...v2.174.0) (2023-10-23)
 
 
