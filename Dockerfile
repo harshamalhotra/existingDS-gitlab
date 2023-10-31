@@ -2,7 +2,7 @@ FROM registry.gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/main:lates
 # Ensure that a folder exists, if it doesn't our COPY command later on will fail
 RUN mkdir -p /cache_nuxt
 
-FROM node:16 AS builder
+FROM node:18 AS builder
 ARG gitlab_analytics_id
 ENV GITLAB_ANALYTICS_ID=$gitlab_analytics_id
 WORKDIR /app
