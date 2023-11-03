@@ -2141,7 +2141,7 @@
     lunr "^2.3.9"
     lunr-languages "^1.4.0"
 
-"@nuxtjs/sentry@^8.0.0":
+"@nuxtjs/sentry@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-8.0.1.tgz#f52c30e3b2922aaee6a2f0d052169ec135797d84"
   integrity sha512-Yn9IoXuFlkNtPFgO2ITWZ3EjKmUkmlIcriCvfxXYwMnA9ZUYbK/floIaZ/9j8q0+ARUBd7afnWuI9JvgIXqsjQ==
