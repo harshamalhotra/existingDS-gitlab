@@ -21,3 +21,4 @@ public/
 svgpreviewer/static/dist
 
 .DS_Store
+.tmp/
