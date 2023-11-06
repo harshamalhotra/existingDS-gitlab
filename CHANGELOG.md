@@ -1,3 +1,19 @@
+# [2.176.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.175.0...v2.176.0) (2023-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.2.10 ([6e6b585](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6e6b5854b4f077e18fb49a29525ca27f23d22e36))
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.2.9 ([52b28ed](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/52b28ed4de5981eda570697ca3fea2fdddb53fe1))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.1 ([81af5b4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/81af5b451e46f9f07f121e0a974049f46d575f75))
+* **deps:** update dependency @nuxtjs/sentry to v8 ([f39554e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f39554eec5c8144c6f8efc6d77e37ee45febe074))
+* **deps:** update gitlab ui/svg ([bdc1797](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bdc1797057c649a812ed2b8eee32b5938d626bd8))
+
+
+### Features
+
+* **Dropdown:** Update header action docs ([20a2b03](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/20a2b03a68a5e0d88e46ac1a5c7a998e0bfaf5e3))
+
 # [2.175.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.174.0...v2.175.0) (2023-10-30)
 
 
