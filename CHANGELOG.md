@@ -1,3 +1,13 @@
+## [2.176.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.176.0...v2.176.1) (2023-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.69.0 ([8655e7f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8655e7fd72a36d864658cd97136ec11e864c2377))
+* **deps:** update dependency @gitlab/ui to v67 ([87f65bb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/87f65bba613c2ae72df92bcbce5b7f539dc7274d))
+* **deps:** update dependency @gitlab/ui to v68 ([7a5fc22](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7a5fc22cb39c17200ed23b2c0a70b1e35c919e32))
+* **deps:** update dependency mermaid to ^10.6.1 ([1293761](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/12937619e0371cebc7f01104f91a99fed394273d))
+
 # [2.176.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.175.0...v2.176.0) (2023-11-06)
 
 
