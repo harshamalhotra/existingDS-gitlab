@@ -1,5 +1,6 @@
 <script>
 import { GlNav, GlNavItem } from '../../helpers/gitlab_ui';
+import { buildMeta } from '../../helpers/seo';
 
 /*
 We only need the "section" and "slug" of the routes to find the file.
@@ -54,6 +55,11 @@ export default {
   head() {
     return {
       title: this.page.name,
+      meta: buildMeta({
+        titleChunk: this.page.name,
+        path: this.page.path,
+        description: this.page.description,
+      }),
     };
   },
   computed: {

@@ -1,6 +1,7 @@
 import path from 'path';
 import sass from 'sass';
 import webpack from 'webpack';
+import { buildMeta, getAbsoluteURI, titleTemplate } from './helpers/seo';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -44,8 +45,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: (titleChunk) =>
-      titleChunk ? `${titleChunk} | Pajamas Design System` : 'Pajamas Design System',
+    titleTemplate,
     meta: [
       { charset: 'utf-8' },
       {
@@ -54,27 +54,12 @@ export default {
       },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'gitlab,pajamas,design,system,guidelines' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Resources, components, and design guidelines behind GitLab',
-      },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:creator', content: '@gitlab' },
-      { name: 'twitter:title', content: 'Pajamas Design System' },
-      {
-        name: 'twitter:description',
-        content: 'Resources, components, and design guidelines behind GitLab',
-      },
-      { name: 'twitter:image', content: 'https://design.gitlab.com/img/social/link-preview.png' },
-      { name: 'og:url', content: 'https://design.gitlab.com' },
+      { name: 'twitter:image', content: getAbsoluteURI('/img/social/link-preview.png') },
       { name: 'og:type', content: 'website' },
-      { name: 'og:title', content: 'Pajamas Design System' },
-      {
-        name: 'og:description',
-        content: 'Resources, components, and design guidelines behind GitLab',
-      },
-      { name: 'og:image', content: 'https://design.gitlab.com/img/social/link-preview.png' },
+      { name: 'og:image', content: getAbsoluteURI('/img/social/link-preview.png') },
+      ...buildMeta(),
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
