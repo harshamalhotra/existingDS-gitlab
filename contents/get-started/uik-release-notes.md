@@ -2,20 +2,39 @@
 name: Release notes
 ---
 
+## 16.7
+
+[_Draft: 16.7 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3612)
+
 ## 16.6
 
-<!-- 🚧 Update MR link before publishing 🚧 -->
-[_Draft: 16.6 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3576)
+<small>Published 2023-11-17</small>
 
+### Additions
+
+- Added [**x**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~x) icon to replace the twitter icon.
+- Added the following illustrations: [**empty-access-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-access-md.svg), [**empty-chart-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-chart-md), [**empty-dashboard-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-dashboard-md), [**empty-devops-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-devops-md), [**empty-epic-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-epic-md), [**empty-geo-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-geo-md), [**empty-job-canceled-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-canceled-md), [**empty-job-not-triggered-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-not-triggered-md), [**empty-job-pending-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-pending-md), [**empty-job-scheduled-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-scheduled-md), [**empty-job-skipped-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-skipped-md), [**add-user-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/add-user-sm.svg), [**chart-bar-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/chart-bar-sm), [**chat-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/chat-sm), [**cloud-check-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/cloud-check-sm), [**merge-requests-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/merge-requests-sm), [**milestone-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/milestone-sm), [**pipeline-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/pipeline-sm).
+
+### Enhancements
+
+- Improved organization of icons in the [**GitLab Product Icons**](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file to align with a recent Pajamas update to document [icon collections](https://design.gitlab.com/product-foundations/iconography#icon-collections).
+
+### Changes
+
+- Updated the twitter icon to use the new "X" logomark and renamed it to [**x**](https://www.figma.com/file/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?type=design&node-id=5441-445&mode=dev). The name in the SVGs repo will remain unchanged for the time being so the visual can propagate more easily. Migration to the new x.svg icon is in progress.
+- Updated the following issue-type icons to use the default stroke style: [**issue-type-enhancement**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-enhancement), [**issue-type-feature-flag**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-feature-flag), [**issue-type-feature**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-feature), [**issue-type-incident**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-incident), [**issue-type-issue**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-issue), [**issue-type-key-result**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-keyresult), [**issue-type-maintenance**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-maintenance), [**issue-type-objective**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-objective), [**issue-type-requirements**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-requirements), [**issue-type-task**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-task), [**issue-type-test-case**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-test-case), [**issue-type-ticket**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-ticket).
+- Updated the [**sort-lowest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-lowest) icon arrow direction.
+- Minor changes to the line placement within the [**sort-lowest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-lowest) and [**sort-highest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-highest) icons.
+- Updated the default [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425%3A4&mode=design&t=FlHqwVl4tjEmkjyD-1) background color from `white` to `$gray-10` to offset it more from the background.
+- Updated the [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425%3A4&mode=design&t=FlHqwVl4tjEmkjyD-1) illustration to use the `sm` size instead of `md`.
 
 ## 16.5
 
-<!-- 🚧 Update date before publishing 🚧 -->
 <small>Published 2023-10-24</small>
 
 ### Additions
 
-- Add [**❖&nbsp;_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=dev) for use in dropdown dividers. This also enabled removing an old link to a deprecated navigation dividing line component.
+- Added [**❖&nbsp;_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=dev) for use in dropdown dividers. Removed an old link to a deprecated dividing line component as part of this change.
 
 ### Enhancements
 
@@ -23,7 +42,7 @@ name: Release notes
   - `Type=Full page, Breakpoint=xs-md`
   - `Type=Full page, Breakpoint=lg+`
   - `Type=Inline, Breakpoint=xs-md`
-- [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=102241-821&mode=dev) now has a `size` property, enabling fast supported size selection.
+- [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=102241-821&mode=dev) now has a `size` property, enabling faster selection of supported sizes.
 
 ### Changes
 
@@ -40,8 +59,8 @@ name: Release notes
 
 ### Additions
 
-- Add [**❖&nbsp;Deprecated&nbsp;component**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96846-7111&mode=dev&t=II2cG0v81YYjiISQ-4) utility component, to mark variants as deprecated in a non-destructive way.
-- Add [**❖&nbsp;Simple&nbsp;action&nbsp;list**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96856-7469&mode=design&t=II2cG0v81YYjiISQ-4) dropdown list example to make it faster to build flat and grouped action lists.
+- Added [**❖&nbsp;Deprecated&nbsp;component**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96846-7111&mode=dev&t=II2cG0v81YYjiISQ-4) utility component, to mark variants as deprecated in a non-destructive way.
+- Added [**❖&nbsp;Simple&nbsp;action&nbsp;list**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96856-7469&mode=design&t=II2cG0v81YYjiISQ-4) dropdown list example to make it faster to build flat and grouped action lists.
 
 ### Changes
 
