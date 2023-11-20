@@ -1,3 +1,18 @@
+# [2.177.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.176.1...v2.177.0) (2023-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v69 ([be38c87](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/be38c8776f23f2a1ffadba50e71cd6642d3358b4))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.2 ([5c20e35](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5c20e354340f9f656298e2c2efab29cacf9cc2cd))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.3 ([dca0d30](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dca0d30100a435acf938f3fd885fd6e051476e25))
+* **deps:** update dependency iframe-resizer to ^4.3.9 ([b01de39](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b01de39e13891db178cf965ff2a6d32755dabcc8))
+
+
+### Features
+
+* **icons:** using pipeline and status icons ([0cfeaaf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0cfeaaf8bd32987a546bff580abb8693b9b5a5a2))
+
 ## [2.176.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.176.0...v2.176.1) (2023-11-13)
 
 
