@@ -15,7 +15,10 @@ When the content on a page reflows to fit the available space, the hierarchy, st
 
 ### Truncation
 
-Individual lines of text can be truncated with an ellipsis when length or wrapping would break a component, negatively impact surrounding content, or cause some content to flow off screen. When text is truncated, there must be a method, like a [tooltip](/components/tooltip) to easily view and access all of the content for both sighted and unsighted users, as well as those using assistive technology.
+Content can be truncated when length or wrapping would break a component, negatively impact surrounding content, or cause some content to flow off screen. When content is truncated, there must be a method to easily view and access all of the content for both sighted and unsighted users, as well as those using assistive technology. Use your judgment on how to truncate content in your specific situation, but here are a few methods depending on the content kind, usage, and potential size.
+
+- Show in [tooltip](/components/tooltip): When the truncated content is just text or users don't need access to the raw content, but just to glance at it (for example, to reference or view non-critical information).
+- Show with [ellipsis button](/components/button#ellipsis): When the truncated content is text and other media, or is very long/spans multiple lines, or users need access to the raw content (for example, to compare or view critical information).
 
 ### Visual affordance
 
