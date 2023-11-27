@@ -1,3 +1,11 @@
+## [2.177.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.177.0...v2.177.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.71.0 ([a0cf243](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/a0cf2433dcb26bccf5a11c690eaf0610ec08c756))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.4 ([046670b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/046670b4b61a5ec6f7dd5d2bf3ebc611647fd8fb))
+
 # [2.177.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.176.1...v2.177.0) (2023-11-20)
 
 
