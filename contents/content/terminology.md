@@ -54,25 +54,3 @@ Buttons that copy content to the clipboard don’t need the “to clipboard” p
 
 <todo>Add comprehensive list of terminology Do/Don’t</todo>
 
-## Frequently confused words
-
-### Authentication: sign in and sign-in
-
-As noted in our [Documentation style guide](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html#sign-in),
-we use `sign in` (verb) and `sign-in` (noun) instead of
-`log in` (verb) and `login` (noun).
-
-- **Usage:** You can _sign in_ using the _sign-in_ screen.
-- **Related:** You can _sign out_ through the _sign-out_ screen.
-
-### Download and Export
-
-Use `Download` when saving a copy of data to the user's device. The data is already represented by files in GitLab.
-
-- **Example:** I want to download pipeline artifacts.
-
-Use `Export` when translating data into one (or more) standard format(s), which can then be imported elsewhere.
-The data is _not_ represented by files in GitLab, but needs to be translated into files. Often there are some export
-options to tweak the output. 
-
-- **Example:** I want to export the content of a Vulnerability Report to CSV format.
