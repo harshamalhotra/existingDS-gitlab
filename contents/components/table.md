@@ -83,11 +83,11 @@ related:
 
 #### Search & filter
 
-- Any filtering controls that manipulate the data set should be placed directly above the table with the option to clear all data. [See filter guidelines](/components/filter).
+Any filtering controls that manipulate the data set should be placed directly above the table with the option to clear all data. [See filter guidelines](/components/filter).
 
 #### New row
 
-- When a new row is dynamically added by the system, the background color of the row should be set to `$green-50` in order to highlight the addition.
+When a new row is dynamically added by the system, the background color of the row should be set to `$green-50` in order to highlight the addition.
 
 #### Ordering & sorting
 
@@ -139,7 +139,7 @@ If table cells needs to be navigable (not just some of the content within), cons
 ### Content
 
 #### Caption
-- A `<caption>` provides a meaningful description for a table.
+A `<caption>` provides a meaningful description for a table.
 
 #### Header
 
@@ -149,15 +149,15 @@ If table cells needs to be navigable (not just some of the content within), cons
 
 #### Columns
 
-- Columns should be ordered by priority or in a way that tells a story with the data. Size columns according to the data they contain rather than making them all an even width. For example, columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
+Columns should be ordered by priority or in a way that tells a story with the data. Size columns according to the data they contain rather than making them all an even width. For example, columns of small content should be narrow, while columns of paragraphs should be relatively wide. Allow the browser to lay out the tables according to the viewport size.
 
 #### Rows
 
-- Rows can have a mix of read-only and editable cells with content populated by users. See [additional actions](#additional-actions) on table rows.
+Rows can have a mix of read-only and editable cells with content populated by users. See [additional actions](#additional-actions) on table rows.
 
 #### Empty state
 
-- A table's empty state displays when there is no data, yet. [See empty states guidelines](/patterns/empty-states)
+A table's empty state displays when there is no data, yet. [See empty states guidelines](/patterns/empty-states)
 
 #### Null values
 
@@ -167,9 +167,9 @@ Representing null values should be made on a case-by-case basis. Some ways of ad
 - Use text to indicate what is missing. For example, "Unassigned" if there is no assignee.
 - Use a dash ("-"). For example, if there is no data and a text explanation is not applicable.
 
-#### Truncation
+#### Long content
 
-- Truncate long text strings with an ellipsis (“…”). On hover, the truncated text should display a tooltip including the full text. [See tooltip guidelines](/components/tooltip)
+Lengthy content should be truncated according to the [layout guidelines](/product-foundations/layout#truncation).
 
 ### Accessibility
 

@@ -53,7 +53,7 @@ related:
 ### Content
 
 - A text label should be concise and indicate what is in the related tab panel.
-- Text truncation is triggered for longer labels.
+- Truncate longer labels, showing the full text in a [tooltip](/components/tooltip).
 - Each tab can include a [badge](/components/badge) with a count of how many items the related tab panel contains.
   - If an “All” tab exists, it should have a badge that is the sum of the other tab badges.
   - A badge that includes a numeric count should be followed by a `<span>` with the `sr-only` class providing a text description of what's being counted.
