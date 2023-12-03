@@ -30,7 +30,7 @@
     "yarn": "^1.22.19"
   },
   "dependencies": {
-    "@gitlab/application-sdk-browser": "^0.2.10",
+    "@gitlab/application-sdk-browser": "^0.2.11",
     "@gitlab/fonts": "^1.3.0",
     "@gitlab/nuxt-edit-this-page": "1.0.0",
     "@gitlab/svgs": "3.71.0",
