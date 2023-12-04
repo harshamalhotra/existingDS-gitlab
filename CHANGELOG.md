@@ -1,3 +1,23 @@
+# [2.178.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.177.1...v2.178.0) (2023-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.2.11 ([ab6542a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ab6542ab4fddcf5a84a51702cfac19b8243152d4))
+* **deps:** update dependency @gitlab/ui to v70 ([65503f5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/65503f5e0a9812ef53653e53aabd991811f3fe32))
+* **deps:** update dependency @gitlab/ui to v71 ([94621cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/94621cd56dbac40e6915afb62428e4150f4b0396))
+* **deps:** update dependency @gitlab/ui to v71.2.0 ([8cc39cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8cc39cbf50081bc4353dcc0740afd45e1c7cdbdf))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.6 ([f14b726](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f14b726d6c8fc47523213b6c856c690feb33c577))
+
+
+### Features
+
+* **content:** Removed frequently confused words ([95fbead](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/95fbeadef22dba37d980be3832111e8b6850c41a))
+* **Layout:** Clarify tabs truncation with tooltip ([5996aed](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5996aed8771857de0d397ecf7a32ec9d85713574))
+* **Layout:** Improve text with Amelia's suggestions ([ba504cc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ba504ccdf62f985e3c8dc13196357f2f1d6e557b))
+* **Layout:** Suggest ellipsis button for truncation ([0a2aa1c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0a2aa1ca49f1c5169ae28f096cf3131a78d2910a))
+* **Layout:** Update tab truncation to be a guideline ([b7236b6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b7236b633cd8d17b6b0a1b5508fc30d56db21645))
+
 ## [2.177.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.177.0...v2.177.1) (2023-11-27)
 
 
