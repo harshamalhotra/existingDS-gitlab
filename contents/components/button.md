@@ -120,6 +120,8 @@ States change visually and/or programmatically depending on user interaction or 
 - Use [sentence case](/content/punctuation).
 - Append an ellipsis (…) to the button label text when the action will require additional input from the user before final completion. Does not apply to [danger actions](#variants).
 - Try not to use text-only and icon-only buttons in the same context.
+- For destructive actions, use clear text and always indicate what is being destroyed. For example, use **Delete page** instead of just **Delete**.
+- For buttons that copy content to the clipboard, don't use **to clipboard**. For example, use **Copy branch name** instead of **Copy branch name to clipboard**.
 
 #### Icons
 

@@ -45,12 +45,3 @@ If the context clearly refers to the object, use them alone.
 
 If the context isn’t clear enough, use them with the object.
 - **Example:** `Edit issue` or `Closed issues`
-
-Destruction buttons should be clear and always say what they are destroying.
-- **Example:** `Delete page` instead of just `Delete`
-
-Buttons that copy content to the clipboard don’t need the “to clipboard” part.
-- **Example:** `Copy branch name` instead of `Copy branch name to clipboard`
-
-<todo>Add comprehensive list of terminology Do/Don’t</todo>
-
