@@ -36,7 +36,7 @@ const optimizeSVGs = async (basePath, destPath, globPattern, statsFilePath = nul
     };
   };
 
-  const illustrations = await Promise.all(files.map(optimizeSVG));
+  const illustrations = await Promise.all(files.map((file) => optimizeSVG(file)));
 
   if (statsFilePath) {
     await writeFile(
