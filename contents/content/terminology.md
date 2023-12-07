@@ -14,28 +14,6 @@ In addition:
 
 Use the following guidance in addition to the guidance in the word list.
 
-## Settings & Configuration
-
-The term "Settings" should be used within the product for consistent language.
-
-| Do  | Don’t |
-| --- |  ---  |
-| Configure the settings. | Configure the configuration. |
-| Set the `Show default award emojis` setting to `true`.  | Set the `Show default award emojis` property to `true`.<br />Set the `Show default award emojis` configuration to `true`. |
-| The script deploys our setup configuration. | The script deploys our setup settings. |
-
-### Settings
-
-A setting changes the default behavior of the product. A setting consists of a key/value pair, typically represented by a label with one or more options.
-
-### Configuration
-
-A configuration is a collection of settings commonly associated with setup and installation to determine the foundation of execution.
-
-### Preferences
-
-Preferences are a collection of user-specific, system-level settings like theme and layout.
-
 ## Verbs & adjectives
 
 When using verbs or adjectives:
