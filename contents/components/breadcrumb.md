@@ -52,6 +52,7 @@ related:
 
 - Ignore the **GitLab** instance name in the breadcrumb.
 - For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge requests > !1234**.
+- For a page that allows users to create a new item, the last element of the breadcrumb should include the word _New_ followed by the name of the element. For example: **GitLab.org > GitLab > Issues > New** becomes **GitLab.org > GitLab > Issues > New issue**. Only using the label _New_ may cause confusion when translating GitLab into different languages. 
 - For a contextual page within the navigation, the breadcrumb should only include the submenu title. For example, **Overview > Details** becomes just **Details**.
 - [Use sentence case](/content/punctuation#case) for each breadcrumb element.
 
