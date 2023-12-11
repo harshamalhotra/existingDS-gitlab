@@ -65,3 +65,21 @@ We recommend that you first try and use **`990px`** unless another width is more
 A sticky container is a div that sticks to the top or bottom of it's parent container. It contains actions or links that are relevant to the task someone is performing. Sticky containers are useful for long pages that contain lots of content that would push buttons or actions above or below the viewport. For example, when editing a wiki, the save changes button will always be visible even if the wiki content extends below the viewport.
 
 Use sticky containers with caution as they can easily crowd the interface and make it difficult to navigate the page by shrinking the content area.
+
+## Cascading alignment
+
+For layouts that are tabular or mimic a table row, often a single alignment rule applied to all cells or columns may not produce the most scannable outcome. With cascading alignment, the goal is to optically align content in the way that best supports a linear reading flow while maintaining balance. The alignment "cascades" from one element to the next based on the preceding element. For example, **B** aligns with **A**, and **C** aligns with **B**.
+
+<div class="figma-embed" aria-label="Cascading alignment demo 1" role="img">
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A696%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1" allowfullscreen></iframe>
+</div>
+
+This type of layout is optional, and you should use your best judgement considering the user's task, the content, and other factors that might impact layout, like reflow and responsive behavior.
+
+In the two column example, the second column's content vertically aligns with the content in the first. In the three column example, the third column's content vertically aligns with the content in the second. In both examples, when the height of the content is greater than the height of the content in the columns to the left, the content is top-aligned, extending below where necessary. This satisfies the goal of a reasonable linear reading flow where the eye doesn't have to bounce around as much.
+
+<div class="figma-embed" aria-label="Cascading alignment demo 2" role="img">
+  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A656%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1" allowfullscreen></iframe>
+</div>
+
+<todo>Add live demo. An example that accomplishes this with CSS grid can be viewed in [Codepen](https://codepen.io/lostsatellites/pen/ZEwVOgz).</todo>
