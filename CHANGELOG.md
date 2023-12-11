@@ -1,3 +1,18 @@
+# [2.179.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.178.0...v2.179.0) (2023-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([2a069ff](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2a069ff5aa78bf38753d31c3e77972cb3330590d))
+
+
+### Features
+
+* **breadcrumbs:** Edit guidelines for naming breadcrumbs ([e90b7cc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e90b7ccdd53eabf7a31d86fc7d8d3e695af46d0d))
+* **content:** Moved button details ([f5c34a7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f5c34a75ec0bc16392fdca394f4ed9a8eaf16a7d))
+* **content:** Removed duplicate sections ([07bcbf4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/07bcbf42e5ab610d18cb2522c7aa98a30b27bfa2))
+* **content:** Removed settings, preferences, configuration ([1a2418f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1a2418fff49c759dc4812154922d9329ddb42869))
+
 # [2.178.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.177.1...v2.178.0) (2023-12-04)
 
 
