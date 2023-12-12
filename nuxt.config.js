@@ -2,6 +2,7 @@ import path from 'path';
 import sass from 'sass';
 import webpack from 'webpack';
 import { buildMeta, getAbsoluteURI, titleTemplate } from './helpers/seo';
+import fixUrlInReviewApp from './helpers/fix_url_in_review_app';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -9,6 +10,8 @@ const GITLAB_ANALYTICS_ID = process.env.GITLAB_ANALYTICS_ID ?? false;
 const GITLAB_ANALYTICS_URL = GITLAB_ANALYTICS_ID
   ? 'https://collector.prod-1.gl-product-analytics.com'
   : '';
+
+const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL ? process.env.CI_ENVIRONMENT_URL : false;
 
 const GITLAB_UI_URL = (
   process.env.GITLAB_UI_URL || 'https://gitlab-org.gitlab.io/gitlab-ui'
@@ -62,17 +65,17 @@ export default {
       ...buildMeta(),
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: fixUrlInReviewApp('/favicon.ico') },
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/favicon-32x32.png',
+        href: fixUrlInReviewApp('/favicon-32x32.png'),
         sizes: '32x32',
       },
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/favicon-16x16.png',
+        href: fixUrlInReviewApp('/favicon-16x16.png'),
         sizes: '16x16',
       },
     ],
@@ -116,6 +119,7 @@ export default {
 
   router: {
     middleware: ['navigation'],
+    base: CI_ENVIRONMENT_URL ? new URL(CI_ENVIRONMENT_URL).pathname : '/',
   },
 
   /*
@@ -126,6 +130,7 @@ export default {
     GITLAB_ANALYTICS_ID,
     GITLAB_UI_URL,
     LOOKBOOK_URL,
+    CI_ENVIRONMENT_URL,
   },
 
   /*
@@ -180,7 +185,8 @@ export default {
     liveEdit: true,
     dir: 'contents',
     markdown: {
-      remarkPlugins: ['~~/remark-plugins/mermaid.js'],
+      remarkPlugins: ['~~/nuxt-content-plugins/mermaid.js'],
+      rehypePlugins: ['~~/nuxt-content-plugins/fix_review_urls.js'],
     },
   },
 

@@ -1,6 +1,7 @@
 <script>
 import lunr from 'lunr';
 import { GlSearchBoxByType, GlDropdownItem } from '../../helpers/gitlab_ui';
+import fixUrlInReviewApp from '../../helpers/fix_url_in_review_app';
 import SearchResult from './search_result.vue';
 
 const STATUS_SEARCHING = 'STATUS_SEARCHING';
@@ -29,7 +30,7 @@ export default {
     };
   },
   async fetch() {
-    const url = `/_nuxt/search-index/en.json`;
+    const url = fixUrlInReviewApp(`/_nuxt/search-index/en.json`);
     try {
       const searchJson = await fetch(url).then((res) => {
         if (res.status === 200) {
