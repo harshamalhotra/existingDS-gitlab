@@ -79,6 +79,17 @@ container_scanning:
 
 review:
   needs: [build]
+  variables:
+    CI_COMMIT_REF_NAME: "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+
+stop_review:
+  variables:
+    CI_COMMIT_REF_NAME: "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+      when: manual
 
 test:
   needs: []
