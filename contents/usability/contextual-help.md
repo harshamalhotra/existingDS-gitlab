@@ -90,7 +90,7 @@ In some cases users might need to reference additional information for completin
 
 - Drawer content should always be related to a specific context or task in the UI. The drawer header should reflect the context or task the user is performing.
 - Drawer content is stored as Markdown in the [GitLab repository `/doc` directory](https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc), rather than hard-coded in the product code.
-- When writing drawer content, use the [documentation topic types guidelines](https://docs.gitlab.com/ee/development/documentation/structure.html) and general [drawer content guidelines](/components/drawer/#content).
+- When writing drawer content, use the [documentation topic types guidelines](https://docs.gitlab.com/ee/development/documentation/topic_types/) and general [drawer content guidelines](/components/drawer/#content).
 - You should collaborate with a technical writer when defining the content, and a technical writer review is required on related merge requests.
 
 <todo>Add a live example.</todo>
