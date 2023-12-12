@@ -66,18 +66,6 @@ include:
   - project: gitlab-org/frontend/untamper-my-lockfile
     file: 'templates/branch_pipelines.yml'
 
-danger-review:
-  image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
-  stage: pre-build
-  dependencies: []
-  rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-      when: never
-    - if: '$DANGER_GITLAB_API_TOKEN'
-  script:
-    - danger_id=$(echo -n ${DANGER_GITLAB_API_TOKEN} | md5sum | awk '{print $1}' | cut -c5-10)
-    - danger --fail-on-errors=true --verbose --danger_id="${danger_id}"
-
 ## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
 # TODO: pages-phase-3
 
@@ -122,6 +110,28 @@ sast:
   # This can be executed immediately
   needs: []
 
+untamper-my-lockfile:
+  rules:
+    - if: "$CI_COMMIT_BRANCH"
+
+###############
+#
+## Custom Jobs
+#
+###############
+
+danger-review:
+  image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
+  stage: pre-build
+  dependencies: []
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
+    - if: '$DANGER_GITLAB_API_TOKEN'
+  script:
+    - danger_id=$(echo -n ${DANGER_GITLAB_API_TOKEN} | md5sum | awk '{print $1}' | cut -c5-10)
+    - danger --fail-on-errors=true --verbose --danger_id="${danger_id}"
+
 check_links:
   image: node:18.16
   stage: test
@@ -141,7 +151,3 @@ semantic-release:
     # This allows us to have a weekly release cadence:
     # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/pipeline_schedules
     - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
-untamper-my-lockfile:
-  rules:
-    - if: "$CI_COMMIT_BRANCH"
