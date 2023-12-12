@@ -20,12 +20,7 @@ stages:
 
 workflow:
   rules:
-    # AutoDevops doesn't use MR pipelines, so we can skip the execution of them
-    # in order to avoid duplication of e.g. untamper-my-lockfile
-    # TODO: pages-phase-1 (Switch to MR pipelines)
     - if: '$CI_MERGE_REQUEST_IID'
-      when: never
-    - if: '$CI_COMMIT_BRANCH'
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
 
 default:
@@ -64,7 +59,7 @@ include:
   - project: 'gitlab-org/frontend/frontend-build-images'
     file: '/semantic-release/.gitlab-ci-template.rules.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
-    file: 'templates/branch_pipelines.yml'
+    file: 'templates/merge_request_pipelines.yml'
 
 ## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
 # TODO: pages-phase-3
@@ -73,6 +68,8 @@ build:
   needs: []
   tags:
     - gitlab-org-docker
+  rules:
+    - when: always
 
 container_scanning:
   needs: [build]
@@ -81,9 +78,22 @@ container_scanning:
 
 review:
   needs: [build]
+  variables:
+    CI_COMMIT_REF_NAME: "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+
+stop_review:
+  variables:
+    CI_COMMIT_REF_NAME: "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+      when: manual
 
 test:
   needs: []
+  rules:
+    - when: always
 
 ###############
 #
@@ -97,10 +107,14 @@ browser_performance:
       optional: true
     - job: production
       optional: true
+  rules:
+    - when: always
 
 code_quality:
   tags:
     - gitlab-org-docker
+  rules:
+    - when: always
 
 dependency_scanning:
   # This can be executed immediately
@@ -109,10 +123,6 @@ dependency_scanning:
 sast:
   # This can be executed immediately
   needs: []
-
-untamper-my-lockfile:
-  rules:
-    - if: "$CI_COMMIT_BRANCH"
 
 ###############
 #
@@ -125,9 +135,7 @@ danger-review:
   stage: pre-build
   dependencies: []
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-      when: never
-    - if: '$DANGER_GITLAB_API_TOKEN'
+    - if: '$CI_MERGE_REQUEST_IID && $DANGER_GITLAB_API_TOKEN'
   script:
     - danger_id=$(echo -n ${DANGER_GITLAB_API_TOKEN} | md5sum | awk '{print $1}' | cut -c5-10)
     - danger --fail-on-errors=true --verbose --danger_id="${danger_id}"
