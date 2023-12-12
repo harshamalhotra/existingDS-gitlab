@@ -24,10 +24,12 @@ workflow:
       variables:
         PAGES_ENV_NAME: "pages-review/MR-$CI_MERGE_REQUEST_IID"
         PAGES_PREFIX: '${CI_ENVIRONMENT_SLUG}'
+        CACHE_PREFIX: '${CI_MERGE_REQUEST_IID}'
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
       variables:
         PAGES_ENV_NAME: "pages"
         PAGES_PREFIX: "" # no prefix
+        CACHE_PREFIX: 'main'
 
 default:
   image: alpine:latest
@@ -138,9 +140,21 @@ danger-review:
     - apk add --no-cache bash git
     - yarn install --frozen-lockfile
 
+.build_cache:
+  variables:
+    CACHE_POLICY: pull
+  cache:
+    - key: "${CACHE_PREFIX}-nuxt"
+      fallback_keys:
+        - main-nuxt
+      paths:
+        - node_modules/
+      policy: $CACHE_POLICY
+
 check_links:
   extends:
     - .node-job
+    - .build_cache
   stage: test
   allow_failure: true
   script:
@@ -160,9 +174,12 @@ semantic-release:
 pages:
   extends:
     - .node-job
+    - .build_cache
   stage: deploy
   pages:
     path_prefix: "${PAGES_PREFIX}"
+  variables:
+    CACHE_POLICY: pull-push
   script:
     - apk add --no-cache gzip brotli
     - bash ./scripts/build.sh
