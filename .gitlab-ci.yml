@@ -1,11 +1,12 @@
 # This file is basically the AutoDevops template (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/ci/templates/Auto-DevOps.gitlab-ci.yml)
 # plus some defaults (e.g. tags).
 
+# TODO: pages-phase-3, cleanup unneeded stages
 stages:
   - pre-build
   - build
   - test
-  - deploy  # dummy stage to follow the template guidelines
+  - deploy
   - review
   - staging
   - canary
@@ -49,14 +50,17 @@ variables:
   DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
 
 include:
-  - template: Jobs/Build.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Build.gitlab-ci.yml
-  - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.gitlab-ci.yml
-  - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
-  - template: Jobs/Deploy.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Deploy.gitlab-ci.yml
-  - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
-  - template: Security/Container-Scanning.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Security/Container-Scanning.gitlab-ci.yml
-  - template: Security/Dependency-Scanning.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Security/Dependency-Scanning.gitlab-ci.yml
-  - template: Security/SAST.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Security/SAST.gitlab-ci.yml
+  # These templates can be removed once we switch away from AutoDevOps to pages
+  # TODO: pages-phase-3
+  - template: Jobs/Build.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Build.latest.gitlab-ci.yml
+  - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.latest.gitlab-ci.yml
+  - template: Jobs/Container-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Container-Scanning.latest.gitlab-ci.yml
+  - template: Jobs/Deploy.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Deploy.gitlab-ci.yml
+  # These templates we should retain after the switch to pages
+  - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
+  - template: Verify/Browser-Performance.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Verify/Browser-Performance.latest.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
+  - template: Jobs/SAST.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml
   - project: 'gitlab-org/frontend/frontend-build-images'
     file: '/semantic-release/.gitlab-ci-template.rules.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
@@ -74,13 +78,30 @@ danger-review:
     - danger_id=$(echo -n ${DANGER_GITLAB_API_TOKEN} | md5sum | awk '{print $1}' | cut -c5-10)
     - danger --fail-on-errors=true --verbose --danger_id="${danger_id}"
 
+## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
+# TODO: pages-phase-3
+
 build:
   needs: []
   tags:
     - gitlab-org-docker
 
+container_scanning:
+  needs: [build]
+  tags:
+    - gitlab-org-docker
+
 review:
   needs: [build]
+
+test:
+  needs: []
+
+###############
+#
+## Overrides for jobs from templates
+#
+###############
 
 browser_performance:
   needs:
@@ -94,16 +115,12 @@ code_quality:
     - gitlab-org-docker
 
 dependency_scanning:
-  tags:
-    - gitlab-org-docker
+  # This can be executed immediately
+  needs: []
 
 sast:
-  tags:
-    - gitlab-org-docker
-
-semgrep-sast:
-  variables:
-    SAST_EXPERIMENTAL_FEATURES: 'true'
+  # This can be executed immediately
+  needs: []
 
 check_links:
   image: node:18.16
