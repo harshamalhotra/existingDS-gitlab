@@ -43,7 +43,7 @@ related:
 ### When to use
 
 - Display additional or supplemental information to the user about an element or item.
-- Make simple, contextual tasks available.
+- Make simple, contextual tasks available, for example adding or editing items within forms that would create scrolling or other usability issues if presented inline or in a modal.
 
 ### When not to use
 
