@@ -8,7 +8,7 @@ set -euo pipefail; IFS=$'\n\t'
 
 # Setting the NODE_ENV to production if it isn't set
 export NODE_ENV=${NODE_ENV:-production}
-CI_JOB_NAME=${CI_JOB_NAME:-pages}
+CI_JOB_NAME=${CI_JOB_NAME:-hiob}
 CI_ENVIRONMENT_NAME=${CI_ENVIRONMENT_NAME:-fallback}
 
 if [[ "$NODE_ENV" == "test" ]]; then

@@ -11,7 +11,7 @@ const GITLAB_ANALYTICS_URL = GITLAB_ANALYTICS_ID
   ? 'https://collector.prod-1.gl-product-analytics.com'
   : '';
 
-const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL ? process.env.CI_ENVIRONMENT_URL : false;
+const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL || false;
 
 const GITLAB_UI_URL = (
   process.env.GITLAB_UI_URL || 'https://gitlab-org.gitlab.io/gitlab-ui'
