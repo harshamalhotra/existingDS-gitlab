@@ -11,6 +11,9 @@ const visitCodeBlock = (ast) => {
   });
 };
 
+/**
+ * This is a REMARK plugin (working on Markdown)
+ */
 const mermaidPlugin = () => {
   return function transformer(ast, vFile, next) {
     visitCodeBlock(ast);
