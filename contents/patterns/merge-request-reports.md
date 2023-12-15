@@ -247,3 +247,16 @@ The widgets are organized in an unordered list, which has the benefit of providi
 
 1. The widget group is wrapped in a `<div>` that functions as a [landmark](#landmark).
 1. Each level is a `<ul>` with `<li>`s for individual reports. A title and description for a report are contained within that report’s `<li>`.
+
+## Content
+
+### Empty state
+
+Merge request report widgets use an adapted version of the [configuration required](/patterns/empty-states#configuration-required) empty state. 
+
+- Use [level 1 layout](/patterns/merge-request-reports#level-1) with an info status icon.
+- Use a title and succinct description as the subject.
+
+<todo issue="gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1750">Add a visual example</todo>
+
+Note that different from other "configuration required" empty states, the action to configure a feature is presented in a tertiary confirm button. This is done to avoid distracting users from the merge workflow.
