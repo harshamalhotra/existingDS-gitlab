@@ -1,3 +1,18 @@
+# [2.180.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.179.0...v2.180.0) (2023-12-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v71.11.0 ([ad0335b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ad0335b384bb759745e486872aaf605b86128c21))
+
+
+### Features
+
+* **content:** Removing information about case and bullets ([2c2790a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2c2790a0fedac11bc129434229e464d991efcc19))
+* **Drawer:** Enhancing guidelines for drawer usage ([c0f8993](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c0f899314dc8bb8d2b63413bd84e44e2b0b7be24))
+* **Empty state:** Update guideline for merge status report ([1bcd734](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1bcd7340b7a3d40277c7f954731b97aea6f8d918))
+* **Layout:** Add cascading alignment ([19dd315](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/19dd31545dda62d1ba18374ef29bee1a9acdbbce))
+
 # [2.179.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.178.0...v2.179.0) (2023-12-11)
 
 
