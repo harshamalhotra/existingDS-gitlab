@@ -2,9 +2,17 @@
 name: Release notes
 ---
 
+## 16.8
+
+[_Draft: 16.8 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3669)
+
 ## 16.7
 
-[_Draft: 16.7 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3612)
+<small>Published 2023-12-19</small>
+
+### Additions
+
+- Added the following illustration: [**purchase-success-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations/purchase-success-md.svg)
 
 ## 16.6
 
