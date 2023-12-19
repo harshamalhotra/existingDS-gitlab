@@ -186,10 +186,12 @@ There are a number of text colors defined in GitLab. Color choice depends on the
 <tr>
 <td>Tertiary</td>
 <td><code>$gray-400</code></td>
-<td class="gl-text-gray-400">Placeholder or disabled</td>
+<td class="gl-text-gray-400">Input placeholder or disabled (inactive or non-operable)</td>
 </tr>
 </tbody>
 </table>
+
+The tertiary text color (`$gray-400`) has a 3.52 contrast ratio on white, which falls short of the 4.5:1 ratio needed to pass [WCAG 2.2 SC 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Inactive components are not required to have sufficient contrast, but we try to get as close as possible while still visually differentiating active and inactive text. Refer to the [Forms](/patterns/forms#form-elements) pattern details for more information about placeholder text.
 
 ## Semantics
 
