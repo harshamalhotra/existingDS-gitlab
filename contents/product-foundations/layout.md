@@ -76,7 +76,11 @@ For layouts that are tabular or mimic a table row, often a single alignment rule
 
 This type of layout is optional, and you should use your best judgement considering the user's task, the content, and other factors that might impact layout, like reflow and responsive behavior.
 
-In the two column example, the second column's content vertically aligns with the content in the first. In the three column example, the third column's content vertically aligns with the content in the second. In both examples, when the height of the content is greater than the height of the content in the columns to the left, the content is top-aligned, extending below where necessary. This satisfies the goal of a reasonable linear reading flow where the eye doesn't have to bounce around as much.
+In the two column example that follows, vertically centering the content with the avatar works well until the content becomes taller than the avatar, at which point it's more scannable to top align and have content extend below.
+
+The three column example that follows is similar, where vertically centering provides optimal linear scanning between all three columns. However, once the third column's content is taller than the avatar in the second, top alignment is used to anchor the third column to the second.
+
+In both examples the goal is to choose the ideal alignment to the left element in a way that visually anchors the content and limits the eye from bouncing around as much as possible.
 
 <div class="figma-embed" aria-label="Cascading alignment demo 2" role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A656%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1" allowfullscreen></iframe>
