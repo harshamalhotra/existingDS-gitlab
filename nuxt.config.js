@@ -261,7 +261,17 @@ export default {
   },
 
   // see https://nuxtjs.org/api/configuration-hooks
-  hooks: {},
+  hooks: {
+    /*
+    If one defines `base` in the nuxt config, nuxt also adds a
+    <base> element which messes with anchor links. See also:
+    https://github.com/nuxt/content/issues/376
+    https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1754
+    */
+    'vue-renderer:ssr:templateParams': (params) => {
+      params.HEAD = params.HEAD.replace(/<base.+?>/, '');
+    },
+  },
 
   vue: {
     config: {
