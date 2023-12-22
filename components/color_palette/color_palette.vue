@@ -54,7 +54,7 @@ export default {
 <template>
   <div>
     <slot name="header">
-      <h3 v-if="name" data-testid="name">{{ name }}</h3>
+      <h4 v-if="name" data-testid="name">{{ name }}</h4>
     </slot>
     <div class="distributed palette">
       <div v-for="shade in shades" :key="shade.name" class="color">
