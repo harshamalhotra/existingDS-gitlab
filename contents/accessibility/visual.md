@@ -77,7 +77,7 @@ A consistent use of color will help a user identify interactive, status, or othe
 - Even though logos don't need to meet the contrast ratio, they should have appropriate `alt` text. If possible though, it's better when a logo is legible and easily distinguished from its surroundings.
 - Decorative text that conveys no information is excluded. For example, words that form a graphical pattern or that are part of a larger illustration where they are inconsequential.
 - Color can not be the only attribute that conveys meaning.
-- The [chromatic color palette](/product-foundations/color#chromatic-palette) is used consistently and aligns with prescribed meanings.
+- The [UI color palette](/product-foundations/color#ui) is used consistently and aligns with prescribed meanings.
 
 ## Page flow
 

@@ -2,13 +2,32 @@
 name: Color
 ---
 
-## Chromatic palette
+## Color use
 
-<note>View the [Data visualization > Color](/data-visualization/color) section for details about the data visualization palette.</note>
+There are three color palettes used in the product:
+
+1. [UI](#ui) - For all surfaces, content, and UI elements.
+1. [Themes](#themes) - For user preferences and to differentiate GitLab instances.
+1. [Data visualization](/data-visualization/color) - For all data visualization, including charts and graphs.
+
+The main function of color is to optimize the visual presentation of content by establishing a meaningful hierarchy, indicating interaction, and communicating meaning. The following concepts help to think about color use consistently, regardless of mode or context.
+
+### Concepts
+
+- Surfaces are top lit by a single, invisible, white-light source.
+- Surfaces reflect light and don't emit it.
+- Forward elements are lighter and receding ones are darker.
+- In a light UI, surfaces are made of light materials and text uses darker colors.
+- In a dark UI, surfaces are made of dark materials and text uses lighter colors.
+- UI elements, like buttons and alerts, rely on chromatic hues and neutrals for meaning and hierarchy, and adapt contrast based on the surface.
+
+## UI
+
+### Chromatic
 
 We have five primary chromatic hues and their color steps, totaling 55 color variables for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
 
-Though deciding which color to use depends on the situation, here are some general guidelines for using the chromatic palette hues:
+Though deciding which color to use depends on the situation, here are some general guidelines for using the chromatic hues:
 
 - **Blue** indicates a current or active state. It communicates management, progress, connectivity, or organization.
 - **Green** indicates success. It communicates save, create, add, available, done, approved, or resolved.
@@ -307,9 +326,9 @@ Though deciding which color to use depends on the situation, here are some gener
 <div class="gl-display-grid gl-grid-template-columns-2 gl-gap-7 gl-mb-11">
   <div class="md">
 
-## Neutral palette
+### Neutral
 
-The neutral palette is primarily used within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
+Neutrals are primarily used for surfaces and within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
 
 <color-palette
     background-class-prefix="c-background-"
@@ -384,9 +403,9 @@ The neutral palette is primarily used within components to help differentiate hi
 
   <div class="md">
 
-## Transparency
+### Transparency
 
-Transparency is used only to indicate hover and active states within themes. Each theme has a series of four transparencies to utilize alpha levels ranging from 0.02 to 0.08.
+Transparency is used only to effectively shade an element in relation to the surface below.
 
 <color-palette
     :shades="[
@@ -421,7 +440,7 @@ Transparency is used only to indicate hover and active states within themes. Eac
 
 ## Themes
 
-A user may choose between ten different themes to customize the appearance of the application header and navigation sidebar in GitLab. Each theme draws inspiration from one of the primary chromatic colors, the neutral palette, or the corporate indigo color.
+A user may choose between ten different themes to customize the appearance of the navigation in GitLab. Each theme draws inspiration from one of the hues in the UI palette.
 
 - Indigo and light indigo share the same `$t-indigo-` variables.
 - Green and light green share the same `$t-green-` variables.

@@ -37,7 +37,7 @@ related:
 
 ### Appearance
 
-- **Dark**: For [neutral](/product-foundations/color#neutral-palette) backgrounds that are `$gray-200` or lighter, or [chromatic](/product-foundations/color#chromatic-palette) backgrounds that are `300` or lighter.
+- **Dark**: For [neutral](/product-foundations/color#neutral) backgrounds that are `$gray-200` or lighter, or [chromatic](/product-foundations/color#chromatic) backgrounds that are `300` or lighter.
 - **Light**: For [neutral or chromatic](/product-foundations/color) backgrounds that are `400` or darker.
 
 ### Sizes
