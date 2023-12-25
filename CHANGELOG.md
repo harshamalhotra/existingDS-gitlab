@@ -1,3 +1,18 @@
+# [2.181.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.180.0...v2.181.0) (2023-12-25)
+
+
+### Bug Fixes
+
+* Make anchor links work ([c66224e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c66224e4bcc2a64b9257c508ecb48d78f8c1e20d))
+
+
+### Features
+
+* **Color:** Clarify palette and concepts ([4a96005](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4a960054a95dcc15ca14e19f21b466e02d2238cb))
+* **Layout:** Clarify cascading layout ([10b6c7e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/10b6c7ea1a07abb711e0cec63f4c6bb508bcfa68))
+* **TypeFundamentals:** Add contrast notes ([0c36fd5](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0c36fd58d1a19b5c12910c258be9c86c7cc158ad))
+* **UIKitReleaseNotes:** 16.7 release notes ([eee67ea](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/eee67ea8f754af5bd433e4fc91611b8104aa77ad))
+
 # [2.180.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.179.0...v2.180.0) (2023-12-18)
 
 
