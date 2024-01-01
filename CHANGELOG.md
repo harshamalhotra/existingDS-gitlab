@@ -1,3 +1,11 @@
+## [2.181.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.181.0...v2.181.1) (2024-01-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v72 ([466d5e6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/466d5e60b89c72eee459824d045615032e6e61d3))
+* **deps:** update gitlab ui/svg ([af60826](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/af60826992474901a57bf9dc7e440bdb1dd6252b))
+
 # [2.181.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.180.0...v2.181.0) (2023-12-25)
 
 
