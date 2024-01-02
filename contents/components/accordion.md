@@ -19,7 +19,7 @@ related:
 
 <figure-img alt="Numbered diagram of an accordion structure" label="Accordion structure" src="/img/accordion-structure.svg"></figure-img>
 
-1. **Caret**: Identifies when the accordion is open or closed. Pointing down in open. Pointing right is closed. 
+1. **Caret**: Identifies when the accordion is open or closed. Pointing down is open. Pointing right is closed. 
 1. **Title**: Identifies the title of the accordion.
 1. **Body**: Contains the content of an accordion. 
 
