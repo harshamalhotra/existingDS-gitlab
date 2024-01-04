@@ -3,12 +3,11 @@ name: Settings management
 related:
   - accordion
   - /patterns/navigation
-  - /content/voice-and-tone
-  - /content/terminology
+  - /content/ui-text
   - /usability/saving-and-feedback
 ---
 
-[Settings](/content/terminology#settings--configuration) is an area in the product that allows users to configure how their instance should behave.
+Settings is an area in the product that allows users to configure how their instance should behave.
 
 There are several areas within GitLab to manage settings:
 
@@ -46,7 +45,7 @@ When a child setting is enforced from a parent, make this clear in the child set
 
 Admin, group, project, and user settings utilize full pages to group different categories inside [accordions](/components/accordion). This is different from feature settings which live next to a specific UI element. On settings pages, the most frequently used options should be made easily available to users by not collapsing the content. Horizontal separators are placed between each category to give elements enough room to breathe.
 
-Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [voice and tone](/content/voice-and-tone) guidelines.
+Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [UI text](/content/ui-text) guidelines.
 
 Configuration of settings can happen directly within the accordion or can be deferred to a secondary screen using the principles of [progressive disclosure](/usability/progressive-disclosure). For example, consider placing configuration options in a [modal](/components/modal) or on a linked detail page to avoid overwhelming users.
 

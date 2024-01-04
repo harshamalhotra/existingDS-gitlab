@@ -166,7 +166,7 @@ Error messages can be persistent, dismissible, or temporary. In order to be effe
 
 ##### Concise
 
-An error message should be helpful and clear. Describe the error, inform users about what has happened, and if possible, how to resolve it. The general [voice and tone](/content/voice-and-tone/#clear-error-messages) guidelines for GitLab’s public communications should apply to all error messages. An overly familiar tone of voice can be perceived as careless in the context of error resolution, especially if the error can't be easily resolved by the user.
+An error message should be helpful and clear. Describe the error, inform users about what has happened, and if possible, how to resolve it. The general [UI text](/content/ui-text) guidelines for GitLab’s public communications should apply to all error messages. An overly familiar tone of voice can be perceived as careless in the context of error resolution, especially if the error can't be easily resolved by the user.
 
 Avoid using messages like:
 

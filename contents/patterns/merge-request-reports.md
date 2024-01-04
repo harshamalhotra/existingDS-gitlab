@@ -153,7 +153,7 @@ Each widget has rules that determine its status. The icon at the top level of ea
 Since everything in a widget is technically content, identifying a specific _subject_ section allows us to focus on the text and meta information that identifies the item, what it means for a user, and how to remedy problems.
 
 - Section title, description, and meta information are optional, but the main text is required.
-- Follow the [voice and tone](/content/voice-and-tone) guidelines for writing all text content.
+- Follow the [UI text](/content/ui-text) guidelines for writing all text content.
 
 <figure-img alt="Merge request widget subject styles" label="Example options and formatting within the subject area with numbered markers corresponding to the list that follows" src="/img/mrw-subject.png"></figure-img>
 

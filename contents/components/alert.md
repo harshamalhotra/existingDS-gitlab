@@ -65,7 +65,7 @@ related:
 ### Content
 
 - All copy within an alert should be short, actionable, and use clear language.
-- Keep translations in mind when writing copy and follow [voice and tone](/content/voice-and-tone) guidelines.
+- Keep translations in mind when writing copy and follow [UI text](/content/ui-text) guidelines.
 
 #### Title
 
