@@ -461,12 +461,12 @@
         "path": "content",
         "items": [
           {
-            "title": "Terminology",
-            "path": "terminology"
+            "title": "UI text",
+            "path": "ui-text"
           },
           {
-            "title": "Voice and tone",
-            "path": "voice-and-tone"
+            "title": "Verb tenses",
+            "path": "verb-tenses"
           },
           {
             "title": "Punctuation",
