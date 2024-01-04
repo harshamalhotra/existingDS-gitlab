@@ -54,7 +54,7 @@ related:
 
 ### Content
 
-- The message should be concise, specific, and use clear language.
+- The message should be a concise full sentence that ends with a period.
 
 ### Placement
 
