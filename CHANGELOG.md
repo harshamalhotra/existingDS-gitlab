@@ -1,3 +1,16 @@
+# [2.182.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.181.1...v2.182.0) (2024-01-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v72.4.0 ([aef6c5c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aef6c5c4f9906d9169fc429b5f03e2d58cdeb45a))
+* Correct typo in data viz types section ([8a01edf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8a01edf971939f1f687d8091abcf1109511c9422))
+
+
+### Features
+
+* **content:** Creating central UI text guidance ([9563a5d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9563a5dbb3bad791829c65005a7098020911d27f))
+
 ## [2.181.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.181.0...v2.181.1) (2024-01-01)
 
 
