@@ -75,7 +75,7 @@ For all links:
 
 - All links and their states must have a contrast ratio of at least 4.5:1 against the background color ([Understanding WCAG SC 1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)).
 - A link must have a visible focus state ([Understanding WCAG SC 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)).
-- As noted above, links open in the same window by default. Forcing a link to open in a new tab or window can be an unexpected change of context for some users. Additionally, it may prevent the use of a browser's back capability, making it difficult to return to the previous context.
+- As noted above, links open in the same window by default. Forcing a link to open in a new tab or window can be an unexpected change of context for some users. Additionally, it may prevent the use of a browser's back capability, making it difficult to return to the previous context ([Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html)). Also, consider these articles: [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), [External links: In or Out](https://www.digitala11y.com/external-links-in-or-out/).
 
 For inline text links:
 
