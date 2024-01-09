@@ -56,9 +56,9 @@ There are four categories of links in GitLab. Although all links are navigationa
 
 ### Behavior
 
-- A link opens the destination in the same window by default.
-- Native controls to open a link in a new tab or window aren't suppressed.
+- A link opens the destination in the same window by default. By doing so a user can still choose to open the link in a new tab or window, whereas using `target="_blank"` removes all other methods.
 - A link can use `target="_blank"` if it's intentional that the user cannot use the browser's back function to return to the reference, and that it's clear to the user they are leaving the current experience.
+- Native controls to open a link in a new tab or window aren't suppressed.
 - Text [truncation](/product-foundations/layout#truncation) guidelines also apply to links.
 
 ### Content
@@ -75,6 +75,7 @@ For all links:
 
 - All links and their states must have a contrast ratio of at least 4.5:1 against the background color ([Understanding WCAG SC 1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)).
 - A link must have a visible focus state ([Understanding WCAG SC 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)).
+- As noted above, links open in the same window by default. Forcing a link to open in a new tab or window can be an unexpected change of context for some users. Additionally, it may prevent the use of a browser's back capability, making it difficult to return to the previous context.
 
 For inline text links:
 
