@@ -28,9 +28,3 @@ For more information about the UX Design department, check out the following lin
 All GitLab SVG assets (icons and illustrations) are managed in the [GitLab SVG](https://gitlab.com/gitlab-org/gitlab-svgs) project. This project automates creating an SVG sprite out of icons and optimizing SVG based illustrations.
 
 We built an [online viewer](http://gitlab-org.gitlab.io/gitlab-svgs/) of our GitLab SVGs that allows exploring and searching our icon library.
-
-## GitLab First Look
-
-Here at GitLab, we regularly conduct user research to improve our product. You can help shape the future of GitLab. We want your feedback on how we can continue to improve GitLab. By joining GitLab First Look, you’ll be the first to see new features and your thoughts will drive product improvements for a better user experience.
-
-[Join or learn more about GitLab First Look](https://about.gitlab.com/community/gitlab-first-look/index.html)
