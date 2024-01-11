@@ -176,22 +176,6 @@
             </a>
           </div>
         </div>
-        <div class="gl-mt-11">
-          <a
-            href="https://about.gitlab.com/community/gitlab-first-look/"
-            target="_blank"
-            class="gl--flex-center"
-          >
-            <img
-              width="48"
-              height="48"
-              src="../assets/images/resources/r-first-look.png"
-              class="gl-display-block"
-              alt=""
-            />
-            <span class="gl-p-3"> Join the GitLab First Look research program </span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
