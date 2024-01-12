@@ -144,9 +144,15 @@ Hide an element if a user doesn't need access to it.
 
 Disable an element with the `disabled` attribute if the user lacks permission to interact with it, but still needs to know it exists. If an element is already populated, but the user doesn't have permission to edit it, use the `readonly` attribute.
 
-By default a submit button is enabled. Don't disable submit buttons as a way of validating forms. However, disabling a submit button may still make sense in some cases. For example, when editing content and a required change is still incomplete, or after the submit button has already been clicked, which prevents form re-submission.
+By default a submit button is enabled. Do not use a disabled submit button to visualize form validation or if a change is incomplete. A disabled submit button can be problematic in a form for a variety of reasons:
 
-Including help text below a field explaining why it's disabled can be useful, but note that a disabled element isn't in the focus order. However, the content will still be discoverable with other screen reader methods.
+- There is no mechanism to attempt to proceed or remediate unknown errors.
+- A disabled button can be missed by a screen reader, leaving a user unsure of what to do next.
+- Disabled elements typically have lower contrast, which are difficult to distinguish for those with visual impairments.
+
+Consider using a contextual message to indicate if additional action is needed instead. 
+
+There are conditions where it may make sense to use the `disabled` prop on a submit button, such as after a user submits a form to prevent re-submission. Including help text below a field explaining why it's disabled can be useful, but note that a disabled element isn't in the focus order. However, the content will still be discoverable with other screen reader methods.
 
 #### Quick submit
 
