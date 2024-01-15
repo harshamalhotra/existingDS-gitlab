@@ -1,3 +1,13 @@
+# [2.183.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.182.0...v2.183.0) (2024-01-15)
+
+
+### Features
+
+* **Colors:** use colors from gitlab-ui design tokens ([c6adce8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c6adce8ea3d8ac4a14336e017ff3912c5ff308be))
+* **Forms:** Remove disable submit example ([9e7dcd3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9e7dcd32b31937b5a79536cf63a96bb6e1f4ebdf))
+* **Link:** Clarify link behavior ([dc57469](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/dc574695423c58fe3922dd9c73820dd7f5bd1f10))
+* **Link:** Include references ([96b516f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/96b516f67eea238707f991c4213472af636e3df2))
+
 # [2.182.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.181.1...v2.182.0) (2024-01-08)
 
 
