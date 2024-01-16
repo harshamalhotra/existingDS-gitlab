@@ -8184,10 +8184,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha512-8ZmlJFVK9iCmtLz19HpSsR8HaAMWBT284VMNednLwlIMDP2hJDCIhUp0IZ2xUcZ+Ob6BM0VvCSJwzASDM45NLQ==
 
-linkinator@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-6.0.3.tgz#552965bafb37a8747858b2c02a70b3c148b68909"
-  integrity sha512-QAcefOkkumXa5NciVhICPkSR5SMk6LFISe/FIX8vvPdLHLUqdXU06Dq/nuOPA5V89iv2gV9FDufYA7adxIcvOw==
+linkinator@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-6.0.4.tgz#2a4a9f76732b0f8968abf35ed09d57a3a8be3427"
+  integrity sha512-gxZ9ePUBeoaCk29p+2gAwrRIVnKOqAV8ZVCEM8N7MvpwbccDBQiKjXFyS6nQx56K1CCZLboan2i5iJfpWCsnSQ==
   dependencies:
     chalk "^5.0.0"
     escape-html "^1.0.3"
@@ -8196,7 +8196,7 @@ linkinator@^6.0.3:
     htmlparser2 "^9.0.0"
     marked "^10.0.0"
     meow "^13.0.0"
-    mime "^3.0.0"
+    mime "^4.0.0"
     server-destroy "^1.0.1"
     srcset "^5.0.0"
 
@@ -9006,10 +9006,10 @@ mime@1.6.0, mime@^1.6.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
-mime@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-3.0.0.tgz#b374550dca3a0c18443b0c950a6a58f1931cf7a7"
-  integrity sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==
+mime@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-4.0.1.tgz#ad7563d1bfe30253ad97dedfae2b1009d01b9470"
+  integrity sha512-5lZ5tyrIfliMXzFtkYyekWbtRXObT9OWa8IwQ5uxTBDHucNNwniRqo0yInflj+iYi5CBa6qxadGzGarDfuEOxA==
 
 mime@~2.5.2:
   version "2.5.2"
