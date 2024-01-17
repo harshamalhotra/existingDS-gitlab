@@ -16,7 +16,16 @@ componentLabel: form-select
 
 ## Guidelines
 
-<todo>Add guidelines.</todo>
+### When to use
+- To indicate a selection of a single item from a list of options.
+- To present sort options when the sort order button isn't required (see the [sorting](/components/sorting) component for a comparison).
+
+### When not to use
+
+- If there are five or less options to select from or the user needs to easily see all of options, then consider using [radio buttons](/components/radio-button) instead.
+- If more than one option can be selected, consider using [checkboxes](/components/checkbox) instead.
+- If the option is a binary decision that takes immediate effect, consider using a [toggle](/components/toggle) instead.
+- If selecting from a list of options outside of a [form](/patterns/form) or for more complex interactions, then a combobox is preferred.
 
 ### Appearance
 
