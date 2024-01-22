@@ -1,3 +1,21 @@
+# [2.184.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.183.0...v2.184.0) (2024-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.3.0 ([e433810](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e4338102cea393fc21fafcf06535ae94668ae0b0))
+* **deps:** update dependency @gitlab/ui to v72.8.1 ([0c207f7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0c207f7bfd34bba79d183a43dec861a31800b604))
+* **deps:** update dependency @gitlab/ui to v72.9.0 ([101041a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/101041a0d09bdf4b2592f5873fd0f150e3bbebe3))
+* **deps:** update dependency mermaid to ^10.7.0 ([417074e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/417074edfea670a4b1ceec1feb90d622c73cd3a4))
+* **deps:** update dependency nuxt to ^2.17.3 ([aff58c2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aff58c2f250512bb49129622e2b7beb7e307c813))
+* **deps:** update gitlab ui/svg ([e59f1b1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e59f1b125b2d7989387cfd80984a1e704f2df6fa))
+
+
+### Features
+
+* **ReleaseNotes:** 16.8 release ([3893400](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/38934004896b0568056bea6ca31daf6e62f856cc))
+* **Select:** Add guidelines for select ([fffc491](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fffc491bd767d207da4e73c4a10ab8300f0e2351))
+
 # [2.183.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.182.0...v2.183.0) (2024-01-15)
 
 
