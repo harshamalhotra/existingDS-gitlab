@@ -28,33 +28,35 @@ related:
 
 ### When to use
 
-- A breadcrumb should exist on every page of the application, except for register and profile, to show the hierarchy of parent and child pages in the context of the current page where the current page is the last item in the list.
+- A breadcrumb should exist on every page of the application, except for the register and sign in page, to show the hierarchy in the context of the current page.
 
 ### When not to use
 
-- If you need to link to sibling or related pages, use a form of [navigation](/patterns/navigation) instead.
+- If you need to link to sibling or related pages.
 
 ### Appearance
 
-- An avatar can appear to the left of the text for any group, project, or user link in the breadcrumb.
+- An avatar can appear to the left of the text for any group or project in the breadcrumb.
 - A bottom border may be applied to a parent container to visually distinguish the breadcrumb from the content of the page.
 
 <todo>Update border related appearance notes as a result of [!3262](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3263#note_1283440645).</todo>
 
 ### Behavior
 
-- Use an [ellipsis button](/components/button) to hide groups when there are three or more subgroups in the path.
-- Use an [ellipsis button](/components/button) to hide all Wiki page breadcrumb items except the current page.
-- The top-level group and the subgroup closest to the project are never collapsed.
-- All breadcrumb items, except the last one, are truncated to 128px if there isn't enough horizontal space to fit them on one line.
+- The full breadcrumb path should remain visible when there's enough horizontal space to fit on one line.
+- When space is limited, use an [ellipsis button](/components/button) to collapse links from left to right.
+- Collapsed items are revealed with a flat hierarchy in a [simple disclosure dropdown](/components/dropdown-disclosure) when selecting the ellipsis button.
+- All but the last breadcrumb item is truncated to 128px if there isn't enough horizontal space to fit them on one line.
 
 ### Content
 
 - Ignore the **GitLab** instance name in the breadcrumb.
-- For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last element of the breadcrumb should include the ID of the element. For example, merge request **!1234** becomes **GitLab.org > GitLab > Merge requests > !1234**.
-- For a page that allows users to create a new item, the last element of the breadcrumb should include the word _New_ followed by the name of the element. For example: **GitLab.org > GitLab > Issues > New** becomes **GitLab.org > GitLab > Issues > New issue**. Only using the label _New_ may cause confusion when translating GitLab into different languages. 
-- For a contextual page within the navigation, the breadcrumb should only include the submenu title. For example, **Overview > Details** becomes just **Details**.
+- Every item must contain a link to the page it's associated with.
+- The breadcrumb should include the name of the context matching the navigation sidebar.
+- For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last breadcrumb element should include the element's ID. For example, merge request **!1234** is represented as **GitLab.org / GitLab / Merge requests / !1234**.
+- For a page that allows a user to create a new item, the last breadcrumb element should include the word _New_ followed by the name of the element. For example, **GitLab.org / GitLab / Issues / New** becomes **GitLab.org / GitLab / Issues / New issue**. Only using the _New_ text may cause confusion when translating GitLab into different languages. 
 - [Use sentence case](/content/punctuation#case) for each breadcrumb element.
+- Collection titles that group primary navigation sections are not included in the breadcrumb.
 
 #### Special breadcrumbs
 
@@ -62,24 +64,18 @@ Some pages have a special breadcrumb path to make the text intuitive. They are d
 
 | Path                                      | Title in breadcrumb                          |
 | ----------------------------------------- | -------------------------------------------- |
-| Group > Issues > List                     | Group > Issues                               |
-| Group > Issues > Boards                   | Group > Issue boards                         |
-| Group > Settings > General                | Group > General settings                     |
-| Group > Settings > CI / CD                | Group > CI / CD settings                     |
-| Group > Project > Repository > Files      | Group > Project > Repository                 |
-| Group > Project > Repository > Compare    | Group > Project > Compare revisions          |
-| Group > Project > Repository > Charts     | Group > Project > Contribution charts        |
-| Group > Project > Issues > List           | Group > Project > Issues                     |
-| Group > Project > Issues > Boards         | Group > Project > Issue boards               |
-| Group > Project > CI / CD > Charts        | Group > Project > CI/CD charts               |
-| Group > Project > Settings > General      | Group > Project > General settings           |
-| Group > Project > Settings > Integrations | Group > Project > Integration settings       |
-| Group > Project > Settings > Repository   | Group > Project > Repository settings        |
-| Group > Project > Settings > CI / CD      | Group > Project > CI/CD settings             |
-| User settings > Profile                   | User settings > Edit profile                 |
-| User settings > Password                  | User settings > Edit password                |
-| Admin area > System hooks > Edit          | Admin area > System hooks > Edit system hook |
-| Admin area > Label > Edit                 | Admin area > Labels > Edit label             |
+| Group / Settings / General                | Group / General settings                     |
+| Group / Settings / CI/CD                  | Group / CI/CD settings                       |
+| Group / Project / Repository / Compare    | Group / Project / Compare revisions          |
+| Group / Project / Repository graph        | Group / Project / Graph                      |
+| Group / Project / Settings / General      | Group / Project / General settings           |
+| Group / Project / Settings / Integrations | Group / Project / Integration settings       |
+| Group / Project / Settings / Repository   | Group / Project / Repository settings        |
+| Group / Project / Settings / CI/CD        | Group / Project / CI/CD settings             |
+| User settings / Profile                   | User settings / Edit profile                 |
+| User settings / Password                  | User settings / Edit password                |
+| Admin area / System hooks / Edit          | Admin area / System hooks / Edit system hook |
+| Admin area / Labels / Edit                | Admin area / Labels / Edit label             |
 
 ### Accessibility
 
