@@ -7,6 +7,47 @@ name: Release notes
 <!-- Update draft link once MR is created -->
 [_Draft: 16.9 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3688)
 
+## 16.8.1
+
+<small>Published 2024-01-29</small>
+
+<note>Special spooky update to address [ghost changes (#1766)](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1766) 👻</note>
+
+### Changes
+
+- Non-visual and dependancy updates have been published for:
+  - **❖ Alert (⚠️ DEPRECATED)**
+  - **❖ Banner**
+  - **❖ Breadcrumb**
+  - **❖ Broadcast message**
+  - **❖ Button / Default**
+  - **❖ Drawer**
+  - **❖ Dropdown**
+  - **❖ Option**
+  - **❖ Create label**
+  - **❖ Create tag**
+  - **❖ Extended**
+  - **❖ Icon list**
+  - **❖ Lables**
+  - **❖ Multiple groups**
+  - **❖ Pipeline**
+  - **❖ Simple action list**
+  - **❖ Simple option list**
+  - **❖ Users**
+  - **❖ Empty state**
+  - **❖ Drag & Drop (Square)**
+  - **❖ Markdown**
+  - **❖ Upload**
+  - **❖ MR widget**
+  - **❖ MR widget expand**
+  - **❖ Modal**
+  - **❖ Header (⚠️ DEPRECATED)**
+  - **❖ Popover**
+  - **❖ Body row**
+  - **❖ Header row**
+  - **❖ Table**
+  - **❖ Token**
+
 ## 16.8
 
 <!-- Update publish date-->
