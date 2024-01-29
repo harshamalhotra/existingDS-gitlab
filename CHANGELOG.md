@@ -1,3 +1,16 @@
+# [2.185.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.184.0...v2.185.0) (2024-01-29)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([aa6a07b](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/aa6a07b6ade3071bd412a5bc6feb4c93ee852291))
+
+
+### Features
+
+* **Breadcrumb:** Update behavior guidelines ([b6c9b24](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b6c9b2469e4a6ad5e59ec35d1e2bc68d4d38d0a1))
+* **RadioButton:** Add guidelines to avoid nesting elements ([95bf710](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/95bf710bf830fa339bbd3586305bf26b3f29e4d0))
+
 # [2.184.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.183.0...v2.184.0) (2024-01-22)
 
 
