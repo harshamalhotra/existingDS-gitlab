@@ -5,8 +5,8 @@ body,
 html {
   box-sizing: border-box;
   line-height: ($base-grid * 2);
-  font-family: $font-family-sans;
-  color: $text-color;
+  font-family: $gl-regular-font;
+  color: $gl-text-color;
   margin: 0;
 }
 

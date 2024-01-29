@@ -146,7 +146,7 @@ export default {
 <template>
   <div class="container gl-py-7">
     <div class="md typography gl-mb-5">
-      <h1 id="skipTarget" tabindex="-1">{{ page.name }}</h1>
+      <h1 id="skipTarget" class="gl-heading-0 gl-mt-0! gl-mb-4!" tabindex="-1">{{ page.name }}</h1>
       <div
         v-if="page.deprecated"
         role="alert"

@@ -14,20 +14,20 @@ Proper color proportions are essential to maintaining GitLab’s look and feel. 
 
 ### Primary color palette
 
-| **Swatch** | **HEX** | **RGB** | **CMYK** | **PMS** |
-| ------ | ------ | ------ | ------ | ------ |
-| <div class="color-overview gl-p-3" style="background-color:#ffffff;"><span class="variable">White</span> </div> | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0 | White |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#171321;"><span class="variable">Charcoal</span> </div> | #171321 | 23, 19, 33 | 90, 68, 41, 90 | 433 C / 4280 U |
-| <div class="color-overview gl-p-3" style="background-color:#FCA326;"><span class="variable">Orange 01p</span> </div> | #FCA326 | 252, 161, 33 | 0, 40, 80, 5 | 1375 C / 1365 U |
-| <div class="color-overview gl-p-3" style="background-color:#FC6D26;"><span class="variable">Orange 02p</span> </div> | #FC6D26 | 252, 109, 38 | 0, 60, 80, 5 | 158 C / 144 U |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#E24329;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41 | 0, 75, 80, 10 | 7579 C / 1665 U |
-| <div class="color-overview gl-p-3" style="background-color:#A989F5;"><span class="variable">Purple 01p</span> </div> | #A989F5 | 169, 137, 245 | 40, 44, 0, 0 | 2645 C / 2645 CU |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#7759C2;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194 | 58, 76, 0, 0 | 2587 C / 2593 U |
-| <div class="color-overview gl-p-3" style="background-color:#D1D0D3;"><span class="variable">Gray 01</span> </div> | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16 | Cool Gray 3 C /  Cool Gray 2 U |
-| <div class="color-overview gl-p-3" style="background-color:#A2A1A6;"><span class="variable">Gray 02</span> </div> | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#74717A;"><span class="variable">Gray 03</span> </div> | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#45424D;"><span class="variable">Gray 04</span> </div> | #45424D | 69, 66, 77 | 41, 28, 22, 70 | 7540 C / 419 U |
-| <div class="color-overview gl-p-3 f-inverted" style="background-color:#2B2838;"><span class="variable">Gray 05</span> </div> | #2B2838 | 43, 40, 56 | 94, 77, 53, 94 | 426 C / Black 6 U |
+| **Swatch**                                                                                                                         | **HEX** | **RGB**       | **CMYK**       | **PMS**                        |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ------------------------------ |
+| <div class="color-overview gl-p-3" style="background-color:#ffffff;"><span class="variable">White</span> </div>                    | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0     | White                          |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#171321;"><span class="variable">Charcoal</span> </div>   | #171321 | 23, 19, 33    | 90, 68, 41, 90 | 433 C / 4280 U                 |
+| <div class="color-overview gl-p-3" style="background-color:#FCA326;"><span class="variable">Orange 01p</span> </div>               | #FCA326 | 252, 161, 33  | 0, 40, 80, 5   | 1375 C / 1365 U                |
+| <div class="color-overview gl-p-3" style="background-color:#FC6D26;"><span class="variable">Orange 02p</span> </div>               | #FC6D26 | 252, 109, 38  | 0, 60, 80, 5   | 158 C / 144 U                  |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#E24329;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41   | 0, 75, 80, 10  | 7579 C / 1665 U                |
+| <div class="color-overview gl-p-3" style="background-color:#A989F5;"><span class="variable">Purple 01p</span> </div>               | #A989F5 | 169, 137, 245 | 40, 44, 0, 0   | 2645 C / 2645 CU               |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#7759C2;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194  | 58, 76, 0, 0   | 2587 C / 2593 U                |
+| <div class="color-overview gl-p-3" style="background-color:#D1D0D3;"><span class="variable">Gray 01</span> </div>                  | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16    | Cool Gray 3 C /  Cool Gray 2 U |
+| <div class="color-overview gl-p-3" style="background-color:#A2A1A6;"><span class="variable">Gray 02</span> </div>                  | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U                  |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#74717A;"><span class="variable">Gray 03</span> </div>    | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U                  |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#45424D;"><span class="variable">Gray 04</span> </div>    | #45424D | 69, 66, 77    | 41, 28, 22, 70 | 7540 C / 419 U                 |
+| <div class="color-overview gl-p-3 gl-text-white" style="background-color:#2B2838;"><span class="variable">Gray 05</span> </div>    | #2B2838 | 43, 40, 56    | 94, 77, 53, 94 | 426 C / Black 6 U              |
 
 ## Gradients
 
@@ -39,11 +39,11 @@ Apply the gradient using points. Use between 3-5 colors. To achieve softer color
 
 ### Gradient color palette
 
-| **Swatch** | **HEX** | **RGB** | **CMYK** | **PMS** |
-| ------ | ------ | ------ | ------ | ------ |
-| <div class="color-overview gl-p-3" style="background-color:#FFD1BF;"><span class="variable">Orange 01g</span> </div> | #FFD1BF | 255, 209, 191 | 0, 20, 21, 0 | 489 C / 489 U |
+| **Swatch**                                                                                                           | **HEX** | **RGB**       | **CMYK**     | **PMS**         |
+| -------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | ------------ | --------------- |
+| <div class="color-overview gl-p-3" style="background-color:#FFD1BF;"><span class="variable">Orange 01g</span> </div> | #FFD1BF | 255, 209, 191 | 0, 20, 21, 0 | 489 C / 489 U   |
 | <div class="color-overview gl-p-3" style="background-color:#CEB3EF;"><span class="variable">Purple 01g</span> </div> | #CEB3EF | 206, 179, 239 | 24, 29, 0, 0 | 2635 C / 2635 U |
-| <div class="color-overview gl-p-3" style="background-color:#FFB9C9;"><span class="variable">Pink 01g</span> </div> | #FFB9C9 | 255, 185, 201 | 0, 33, 10, 0 | 1767 C / 1767 U |
+| <div class="color-overview gl-p-3" style="background-color:#FFB9C9;"><span class="variable">Pink 01g</span> </div>   | #FFB9C9 | 255, 185, 201 | 0, 33, 10, 0 | 1767 C / 1767 U |
 
 ## Contrast and accessibility
 
