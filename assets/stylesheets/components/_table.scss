@@ -1,6 +1,6 @@
 table:not(.pika-table):not(.gl-table) {
   width: 100%;
-  color: $text-color;
+  color: $gl-text-color;
   border: $border-width solid $border-color;
   border-collapse: collapse;
   text-align: left;
@@ -11,7 +11,7 @@ table:not(.pika-table):not(.gl-table) {
     border-bottom: ($border-width * 2) solid $border-color;
 
     th {
-      font-weight: $font-weight--bold;
+      font-weight: $gl-font-weight-bold;
     }
   }
 
@@ -19,16 +19,12 @@ table:not(.pika-table):not(.gl-table) {
   td {
     border: $border-width solid $border-color;
     padding: $gl-spacing-3;
-    font-weight: $font-weight--normal;
+    font-weight: $gl-font-weight-normal;
 
     &.header {
-      font-weight: $font-weight--bold;
+      font-weight: $gl-font-weight-bold;
       background: $gray-50;
     }
-  }
-
-  td.f-bold{
-    font-weight: $font-weight--bold;
   }
 }
 

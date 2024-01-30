@@ -46,7 +46,7 @@
       <img alt="" src="../assets/images/cover-gradient.png" class="banner__image animated" />
     </div>
     <div class="gl-pt-11 gl-pb-11">
-      <div class="container distributed">
+      <div class="container">
         <div class="two-column two-column--alt">
           <div class="two-column-start">
             <img
@@ -80,7 +80,7 @@
     <div
       class="gl-bg-gray-10 gl-border-gray-50 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
     >
-      <div class="container distributed">
+      <div class="container">
         <div class="two-column">
           <div class="two-column-start">
             <img alt="" class="two-column-image" src="../assets/images/content.svg" />
@@ -98,7 +98,7 @@
       </div>
     </div>
     <div class="gl-pt-11 gl-pb-11">
-      <div class="container distributed">
+      <div class="container">
         <div class="two-column two-column--alt">
           <div class="two-column-start">
             <img
@@ -125,7 +125,7 @@
       </div>
     </div>
     <div class="gl-pt-9 gl-pb-9">
-      <div class="container distributed">
+      <div class="container">
         <div class="row gl-mt-9">
           <div class="col col-33">
             <a

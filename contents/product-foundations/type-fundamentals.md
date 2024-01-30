@@ -150,7 +150,7 @@ GitLab uses contrasting font weights to support visual hierarchy within the appl
 <td>Body copy and data tables</td>
 </tr>
 <tr>
-<td class="f-bold">600</td>
+<td style="font-weight:600;">600</td>
 <td>Headings and specific UI elements, such as an input label</td>
 </tr>
 <tr>
