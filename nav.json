@@ -151,6 +151,10 @@
                 "path": "type-fundamentals"
               },
               {
+                "title": "Headings",
+                "path": "type-headings"
+              },
+              {
                 "title": "Markdown",
                 "path": "type-markdown"
               }

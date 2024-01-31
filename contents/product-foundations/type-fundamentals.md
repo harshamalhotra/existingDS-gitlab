@@ -1,6 +1,7 @@
 ---
 name: Type fundamentals
 related:
+  - /product-foundations/type-headings
   - /product-foundations/type-markdown
   - /product-foundations/color
 ---
@@ -120,19 +121,6 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 
 Note that in implementation the variables use rem values ([relative units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units)) instead of pixels ([absolute units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units)), so that text respects browser settings for size and scale.
 
-### Contextual adjustments
-
-By default, heading levels are mapped to the dynamic scale. However, in some cases, visual hierarchy can be established aside from [semantics](#semantics). For example:
-
-- In an [alert](/components/alert), its container already has sectioning affordances like color, spacing, and iconography. Because of this, a level 2 heading in the alert doesn't need the same emphasis as a level 2 heading for a content section elsewhere on the page.
-- Similarly, in a [card](/components/card), the properties of the card itself indicate a section. Because of this, a level 3 heading may not require the same sectioning effect as a level 3 heading in body content.
-
-When in doubt, use the scale by default, consider the full page context, and reference existing patterns.
-
-<todo>Provide more guidelines and examples of scale overrides.</todo>
-
-<todo>Add UI kit links after [#1527](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1527) has been completed.</todo>
-
 ## Font weight
 
 GitLab uses contrasting font weights to support visual hierarchy within the application. Generally, three weights are used by default: **400**, **600**, and **700**.
@@ -192,12 +180,3 @@ There are a number of text colors defined in GitLab. Color choice depends on the
 </table>
 
 The tertiary text color (`$gray-400`) has a 3.52 contrast ratio on white, which falls short of the 4.5:1 ratio needed to pass [WCAG 2.2 SC 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Inactive components are not required to have sufficient contrast, but we try to get as close as possible while still visually differentiating active and inactive text. Refer to the [Forms](/patterns/forms#form-elements) pattern details for more information about placeholder text.
-
-## Semantics
-
-- Every page should have a level 1 (`h1`) heading. It can be visually hidden if the context of the page is clear for all users, but it must be present in the DOM.
-- Headings should not skip levels, with the following exceptions:
-  - When an alert, or other messaging component, gets inserted before the main page content. These components are designed to use a level 2 (`h2`) heading.
-  - When a heading is used to identify a region, like navigation. Generally, a level 2 (`h2`) heading is used.
-  - In user-generated Markdown content a user can order headings as they like. The visual appearance of a heading is the only guide provided for choosing the correct hierarchy.
-- Styles correspond with semantics by default, for example, an `h3` is larger and has more visual weight than an `h4`.
