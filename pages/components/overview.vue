@@ -17,7 +17,7 @@ export default {
 <template>
   <div class="container gl-py-7">
     <div class="md typography gl-mb-5">
-      <h1 id="skipTarget" class="gl-heading-0 gl-mt-0! gl-mb-4!" tabindex="-1">
+      <h1 id="skipTarget" class="gl-heading-display gl-mt-0! gl-mb-4!" tabindex="-1">
         Pajamas components
       </h1>
       <p>
