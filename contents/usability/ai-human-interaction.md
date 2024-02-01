@@ -54,6 +54,12 @@ In the UI, use the [`tanuki-ai`](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~ta
 - Show only one icon per context. For example, use only one instance of the icon in the header of a list or table, and not multiple instances for each child item.
 - The icon is preferably shown _before_ the user interacts with the AI-assisted feature. For example, in the button that triggers the action. However, the icon can be shown _after_ user interaction, if more appropriate.
 
+#### Illustration
+
+The [`tanuki-ai-md`](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-md.svg) and [`tanuki-ai-sm`](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-sm.svg) illustrations serve the purpose of promoting and associating AI related features within the UI.
+
+_The illustration is currently a [work in progress](https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/400), and its final version is still in development._
+
 #### Color
 
 In the UI, there is _no specific color_ associated with AI or GitLab Duo — this differs from marketing, that has specific colors for the [GitLab Duo visual identity](https://docs.google.com/presentation/d/1G849KWal8XDAEdusoR5YN8ZrZlvcgFVnqr4Nsjdy9Rc/edit#slide=id.g252cac05ee9_0_17). The color of the icon or actions of AI-assisted features follow the component-specific guidelines, like [button](/components/button) variants.
