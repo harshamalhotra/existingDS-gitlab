@@ -18,7 +18,7 @@ related:
 
 <story-viewer component="base-banner" story="no-image" title="Promotion"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-4&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-4&mode=design)
 
 ## Structure
 

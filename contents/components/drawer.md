@@ -24,7 +24,7 @@ related:
 
 <story-viewer component="base-drawer" story="with-scrim-and-static-content" title="Documentation content" iframe-padding="200px 0"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=44560-56734&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=44560-56734&mode=design)
 
 ## Structure
 

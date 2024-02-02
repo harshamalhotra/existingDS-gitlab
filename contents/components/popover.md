@@ -15,7 +15,7 @@ related:
 
 <story-viewer component="base-popover" story="with-close-button" args-triggers="click" title="With close"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-131&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-131&mode=design)
 
 ## Structure
 
