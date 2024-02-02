@@ -86,7 +86,7 @@ name: Release notes
 
 ### Changes
 
-- Updated the twitter icon to use the new "X" logomark and renamed it to [**x**](https://www.figma.com/file/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?type=design&node-id=5441-445&mode=dev). The name in the SVGs repo will remain unchanged for the time being so the visual can propagate more easily. Migration to the new x.svg icon is in progress.
+- Updated the twitter icon to use the new "X" logomark and renamed it to [**x**](https://www.figma.com/file/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?type=design&node-id=5441-445&mode=design). The name in the SVGs repo will remain unchanged for the time being so the visual can propagate more easily. Migration to the new x.svg icon is in progress.
 - Updated the following issue-type icons to use the default stroke style: [**issue-type-enhancement**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-enhancement), [**issue-type-feature-flag**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-feature-flag), [**issue-type-feature**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-feature), [**issue-type-incident**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-incident), [**issue-type-issue**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-issue), [**issue-type-key-result**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-keyresult), [**issue-type-maintenance**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-maintenance), [**issue-type-objective**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-objective), [**issue-type-requirements**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-requirements), [**issue-type-task**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-task), [**issue-type-test-case**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-test-case), [**issue-type-ticket**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~issue-type-ticket).
 - Updated the [**sort-lowest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-lowest) icon arrow direction.
 - Minor changes to the line placement within the [**sort-lowest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-lowest) and [**sort-highest**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sort-highest) icons.
@@ -99,24 +99,24 @@ name: Release notes
 
 ### Additions
 
-- Added [**❖&nbsp;_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=dev) for use in dropdown dividers. Removed an old link to a deprecated dividing line component as part of this change.
+- Added [**❖&nbsp;_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=design) for use in dropdown dividers. Removed an old link to a deprecated dividing line component as part of this change.
 
 ### Enhancements
 
-- The following [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=dev) variants now reflow correctly when changing width:
+- The following [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=design) variants now reflow correctly when changing width:
   - `Type=Full page, Breakpoint=xs-md`
   - `Type=Full page, Breakpoint=lg+`
   - `Type=Inline, Breakpoint=xs-md`
-- [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=102241-821&mode=dev) now has a `size` property, enabling faster selection of supported sizes.
+- [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=102241-821&mode=design) now has a `size` property, enabling faster selection of supported sizes.
 
 ### Changes
 
-- Breaking (medium): Update [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=dev) to have maximum line length. Some instances might now be taller if text wraps.
-- Update [**❖&nbsp;Avatar**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19910-0&mode=dev) identicons and text fallbacks to use the [dynamic type scale](https://design.gitlab.com/product-foundations/type-fundamentals#type-scales).
-- Update [**❖&nbsp;Popover**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-91946&mode=dev) titles to use styles from the heading scale. Component now follows property naming guidelines.
-- Update [**Dropdown&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=61256-135451&mode=dev) dropdown element color for consistent borders in dropdowns. Now uses **❖&nbsp;_Base/Dividing&nbsp;line**.
-- Update [**Utility&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=72160-103548&mode=dev) documentation utility component, removing an old link to a deprecated navigation dividing line component.
-- Refactor [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65765%3A98174&mode=dev) to remove an unnecessary 2px spacing so that it's easier to align lists.
+- Breaking (medium): Update [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=design) to have maximum line length. Some instances might now be taller if text wraps.
+- Update [**❖&nbsp;Avatar**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19910-0&mode=design) identicons and text fallbacks to use the [dynamic type scale](https://design.gitlab.com/product-foundations/type-fundamentals#type-scales).
+- Update [**❖&nbsp;Popover**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-91946&mode=design) titles to use styles from the heading scale. Component now follows property naming guidelines.
+- Update [**Dropdown&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=61256-135451&mode=design) dropdown element color for consistent borders in dropdowns. Now uses **❖&nbsp;_Base/Dividing&nbsp;line**.
+- Update [**Utility&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=72160-103548&mode=design) documentation utility component, removing an old link to a deprecated navigation dividing line component.
+- Refactor [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65765%3A98174&mode=design) to remove an unnecessary 2px spacing so that it's easier to align lists.
 
 ## 16.4
 
@@ -124,23 +124,23 @@ name: Release notes
 
 ### Additions
 
-- Added [**❖&nbsp;Deprecated&nbsp;component**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96846-7111&mode=dev&t=II2cG0v81YYjiISQ-4) utility component, to mark variants as deprecated in a non-destructive way.
+- Added [**❖&nbsp;Deprecated&nbsp;component**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96846-7111&mode=design&t=II2cG0v81YYjiISQ-4) utility component, to mark variants as deprecated in a non-destructive way.
 - Added [**❖&nbsp;Simple&nbsp;action&nbsp;list**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96856-7469&mode=design&t=II2cG0v81YYjiISQ-4) dropdown list example to make it faster to build flat and grouped action lists.
 
 ### Changes
 
-- [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60828-98007&mode=dev&t=II2cG0v81YYjiISQ-4) dropdown element has multiple changes:
+- [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60828-98007&mode=design&t=II2cG0v81YYjiISQ-4) dropdown element has multiple changes:
   - Increase separation between actions and selectable options.
   - Add variants for all 'checked' option state and selected combinations, including prototyping features.
   - Update interactive state styles for checked options.
   - Add destructive and disabled [state documentation](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65182-99449&mode=design&t=QCgwyA33tKeMfCu7-4). These states are not able to be added to the Figma component because of a technical limitation.
   - Property naming updated to match naming guidelines.
 - Update [**❖&nbsp;Footer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=61252-96383&mode=design&t=II2cG0v81YYjiISQ-4) dropdown element to make clear the buttons here are actions, not options.
-- Update [**❖&nbsp;Checkbox**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49856%3A76501&mode=dev) icons to match production.
+- Update [**❖&nbsp;Checkbox**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49856%3A76501&mode=design) icons to match production.
 
 ### Fixes
 
-- Fixed the [**❖&nbsp;Danger&nbsp;button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=21920%3A273&mode=dev) tertiary hover and focus state background colors to use the correct style.
+- Fixed the [**❖&nbsp;Danger&nbsp;button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=21920%3A273&mode=design) tertiary hover and focus state background colors to use the correct style.
 
 ### Deprecations
 
@@ -150,38 +150,36 @@ name: Release notes
 
 <small>Published 2023-08-22</small>
 
-<note>When possible, links in the release notes will open in Figma's [Dev Mode](https://www.figma.com/dev-mode/) for faster inspection, and to prevent unwanted editing of objects when a user has edit permissions.</note>
-
 ### Additions
 
 - Added component-specific heading text styles for alert, banner, drawer, and modal. More details in [#1652](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1652) and in the **Changes** section below.
 
 ### Enhancements
 
-- Improved instances for the [**alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95997%3A103802&mode=dev), [**banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=57885%3A91856&mode=dev), [**drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150%3A59211&mode=dev), [**dropdown**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=65182%3A99209&mode=dev), [**modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=4263%3A5&mode=dev), and [**tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=29835%3A71&mode=dev) components to make it easier to understand options, behavior, and usage.
+- Improved instances for the [**alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95997%3A103802&mode=design), [**banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=57885%3A91856&mode=design), [**drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150%3A59211&mode=design), [**dropdown**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=65182%3A99209&mode=design), [**modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=4263%3A5&mode=design), and [**tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=29835%3A71&mode=design) components to make it easier to understand options, behavior, and usage.
 - Updated [**dropdown types**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=96234-7530&mode=design&t=LZ783BAyUqhLzr02-4) to include more examples.
-- Added extra characters to the [**GitLab Mono font test**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=455%3A18&mode=dev) to make it easier to see when an old version of the font is loaded.
+- Added extra characters to the [**GitLab Mono font test**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=455%3A18&mode=design) to make it easier to see when an old version of the font is loaded.
 
 ### Changes
 
-- Breaking (high): The [**❖&nbsp;Alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95988%3A11501&mode=dev) component title now has a dedicated text style that leverages the latest type scale updates. To accommodate this change, the component has been reworked to allow the title and body text to vertically align with the alert icon. The max-width variants have also been removed as they have low usage and weren't in line with current guidelines. The [previous version of the alert](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425%3A1&mode=dev) has been deprecated, but will still be available for at least a milestone.
-- [**❖Skeleton&nbsp;loader**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-0&mode=dev) variants now reflect current heading and paragraph appearance.
-  - Breaking (high): New components created for [headings](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94794-93366&mode=dev). Existing skeleton loader heading variants have been deprecated.
+- Breaking (high): The [**❖&nbsp;Alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95988%3A11501&mode=design) component title now has a dedicated text style that leverages the latest type scale updates. To accommodate this change, the component has been reworked to allow the title and body text to vertically align with the alert icon. The max-width variants have also been removed as they have low usage and weren't in line with current guidelines. The [previous version of the alert](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425%3A1&mode=design) has been deprecated, but will still be available for at least a milestone.
+- [**❖Skeleton&nbsp;loader**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-0&mode=design) variants now reflect current heading and paragraph appearance.
+  - Breaking (high): New components created for [headings](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94794-93366&mode=design). Existing skeleton loader heading variants have been deprecated.
   - Paragraph variants (representing lines of text) updated:
-    - Added [**❖&nbsp;Text/Paragraph/1&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94992-89&mode=dev).
-    - Renamed **❖&nbsp;Text/Paragraph/Short** →  [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=dev).
-    - Renamed **❖&nbsp;Text/Paragraph/Long** →  [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=dev).
-    - Breaking (medium): Updated [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=dev) and [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=dev) to use paragraph spacing and visual weight.
-- Breaking (medium): [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=dev) updated to use Figma's new max-width auto layout feature — no more manually controlling width using line-breaks or resizing the component! This update changes the position of existing tooltips if they are longer than 1 line.
-- Breaking (low): The [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=19944%3A6&mode=dev), [**❖&nbsp;Drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150%3A59274&mode=dev), and [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=4263%3A22&mode=dev) component titles now have dedicated text styles that leverage the latest type scale updates. As a result of these changes, component instances may change height and design elements may need to be repositioned within your design files. More details for the reason behind the change in [!11014](https://gitlab.com/groups/gitlab-org/-/epics/11014). New styles:
+    - Added [**❖&nbsp;Text/Paragraph/1&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94992-89&mode=design).
+    - Renamed **❖&nbsp;Text/Paragraph/Short** →  [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=design).
+    - Renamed **❖&nbsp;Text/Paragraph/Long** →  [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=design).
+    - Breaking (medium): Updated [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=design) and [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=design) to use paragraph spacing and visual weight.
+- Breaking (medium): [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=design) updated to use Figma's new max-width auto layout feature — no more manually controlling width using line-breaks or resizing the component! This update changes the position of existing tooltips if they are longer than 1 line.
+- Breaking (low): The [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=19944%3A6&mode=design), [**❖&nbsp;Drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150%3A59274&mode=design), and [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=4263%3A22&mode=design) component titles now have dedicated text styles that leverage the latest type scale updates. As a result of these changes, component instances may change height and design elements may need to be repositioned within your design files. More details for the reason behind the change in [!11014](https://gitlab.com/groups/gitlab-org/-/epics/11014). New styles:
   - `Component / Banner title (h2) / ≥xl breakpoint`
   - `Component / Banner title (h2) / ≥md breakpoint`
   - `Component / Drawer title (h2) / ≥xl breakpoint`
   - `Component / Drawer title (h2) / ≥md breakpoint`
   - `Component / Modal title (h2) / ≥xl breakpoint`
   - `Component / Modal title (h2) / ≥md breakpoint`
-- The [**❖&nbsp;Tabs**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95175%3A1172&mode=dev) component now uses `$blue-500` for the active state of a tab and box shadows were replaced with strokes. See [#1669](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1669) for more details.
-- Layout renamed to [**Elevation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49138-75722&mode=dev) to match documentation. Updated page layout to use recent documentation styles.
+- The [**❖&nbsp;Tabs**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95175%3A1172&mode=design) component now uses `$blue-500` for the active state of a tab and box shadows were replaced with strokes. See [#1669](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1669) for more details.
+- Layout renamed to [**Elevation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49138-75722&mode=design) to match documentation. Updated page layout to use recent documentation styles.
 - Avatar text style naming updated to match convention established in [#1652](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1652).
 - Updated UI kit utilities:
   - Differentiated utility styles and components that help organize content within UI kit files from styles and components that are part of the system. Components will also be published as part of the **📙&nbsp;Component&nbsp;library** so they can be used in all UI kit files. More details in [#1657](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1657).
@@ -190,20 +188,20 @@ name: Release notes
 
 ### Deprecations
 
-- [**❖&nbsp;Alert&nbsp;(⚠️&nbsp;DEPRECATED)**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-1&mode=dev). Use [**❖&nbsp;Alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95988%3A11501&mode=dev).
-- Skeleton loader [heading variants](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94794-93349&mode=dev). Use latest [**❖Skeleton&nbsp;loader**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-0&mode=dev) variants.
+- [**❖&nbsp;Alert&nbsp;(⚠️&nbsp;DEPRECATED)**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-1&mode=design). Use [**❖&nbsp;Alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=95988%3A11501&mode=design).
+- Skeleton loader [heading variants](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94794-93349&mode=design). Use latest [**❖Skeleton&nbsp;loader**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-0&mode=design) variants.
 - `Tab / Active (⚠️ DEPRECATED)` effect style. Use a bottom stroke instead.
 - `Tab / Hover (⚠️ DEPRECATED)` effect style. Use a bottom stroke instead. 
 
 ### Removals
 
-- `Tooltip > Max-width` grid style removed. Use max-width auto layout rules built into [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=dev) instead. (Sorry, this accidentally skipped the deprecation process.)
+- `Tooltip > Max-width` grid style removed. Use max-width auto layout rules built into [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=design) instead. (Sorry, this accidentally skipped the deprecation process.)
 
 ## 16.2
 
 <small>Published 2023-07-17</small>
 
-<note>Breaking (low): GitLab Figma Organization custom fonts updated to latest version of `@gitlab/fonts` 2023-07-13. Change applied automatically to all files. Investigations found no feasible way to make this change opt in. In some situations, editing text in existing files will require updating to use the latest type styles from the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=dev).</note>
+<note>Breaking (low): GitLab Figma Organization custom fonts updated to latest version of `@gitlab/fonts` 2023-07-13. Change applied automatically to all files. Investigations found no feasible way to make this change opt in. In some situations, editing text in existing files will require updating to use the latest type styles from the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=design).</note>
 
 ### Additions
 
@@ -214,18 +212,18 @@ name: Release notes
 - Breaking (medium): All UI kit files updated to use `@gitlab/fonts` v1.3.0.
   - To use the fonts outside the GitLab organisation in Figma, [download the fonts](https://gitlab-org.gitlab.io/frontend/fonts/).
   - The updated font versions have slightly different spacing between glyphs. When a components size is set by its content there can be a dimension change. The following components have been identified as seeing, in most instances, a ±1–4px width change.
-    - [**Badge**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60387-98708&mode=dev)
-    - [**❖&nbsp;Breadcrumb**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=86530-117981&mode=dev)
-    - [**Button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-5&mode=dev)
-    - [**❖&nbsp;Form&nbsp;group**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49856-76520&mode=dev) when a prefix or suffix is present
-    - [**❖&nbsp;Label**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19904-3&mode=dev)
-    - [**Link**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=dev)
-    - [**❖&nbsp;Pagination**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48275-166113&mode=dev)
-    - [**❖&nbsp;Severity&nbsp;status**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=21336-4&mode=dev)
-    - [**❖Tabs**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-138&mode=dev)
-    - [**❖&nbsp;Toast**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=20171-225&mode=dev)
-    - [**❖&nbsp;Token**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=20182-267&mode=dev)
-    - [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=dev)
+    - [**Badge**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=60387-98708&mode=design)
+    - [**❖&nbsp;Breadcrumb**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=86530-117981&mode=design)
+    - [**Button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-5&mode=design)
+    - [**❖&nbsp;Form&nbsp;group**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49856-76520&mode=design) when a prefix or suffix is present
+    - [**❖&nbsp;Label**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19904-3&mode=design)
+    - [**Link**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=design)
+    - [**❖&nbsp;Pagination**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48275-166113&mode=design)
+    - [**❖&nbsp;Severity&nbsp;status**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=21336-4&mode=design)
+    - [**❖Tabs**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-138&mode=design)
+    - [**❖&nbsp;Toast**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=20171-225&mode=design)
+    - [**❖&nbsp;Token**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=20182-267&mode=design)
+    - [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=design)
 - Breaking (medium): Type scale for UI heading elements updated. New scale optimized to create visual heirarchy across pages. Read the Pajamas [type fundamentals](/product-foundations/type-fundamentals) and follow progress in the [implementation epic](https://gitlab.com/groups/gitlab-org/gitlab-services/-/epics/19).
   - Updated styles:
     - `UI / Display / ≥xl breakpoint`
@@ -243,10 +241,10 @@ name: Release notes
     - `UI / h6 / ≥xl breakpoint`
     - `UI / h6 / ≥md breakpoint`
   - The new heading type scale uses sizes smaller than the sizes used in the UI kit before. When a component size is set by its content there are some dimension changes. The following components have been identified as seeing, in most instances, a 1–8px height reduction.
-    - [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-6&mode=dev)
-    - [**❖&nbsp;Drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48150-59274&mode=dev)
-    - [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=4263-22&mode=dev)
-    - [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=dev)
+    - [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-6&mode=design)
+    - [**❖&nbsp;Drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48150-59274&mode=design)
+    - [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=4263-22&mode=design)
+    - [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=design)
 - Font weight for all text styles updated to use `400`, `600` or `700`.
   - Changed styles:
     - `UI / Paragraph / Bold lg`
@@ -270,9 +268,9 @@ name: Release notes
 
 ### Deprecations
 
-- [**Navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=3946%3A112&mode=dev) page and all components deprecated.
-- [**Documentation markdown type scale**](https://www.figma.com/file/V3HKN83B7rf2T6sseLMrxa/Type-scale---Documentation-Markdown?type=design) file and library since type scales have been updated and will only exist in the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=dev).
-- [**Compact markdown type scale**](https://www.figma.com/file/mjAZxHkK95TlQ6L14aNp2M/Type-scale---Compact-Markdown?type=design) file and library since type scales have been updated and will only exist in the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=dev).
+- [**Navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=3946%3A112&mode=design) page and all components deprecated.
+- [**Documentation markdown type scale**](https://www.figma.com/file/V3HKN83B7rf2T6sseLMrxa/Type-scale---Documentation-Markdown?type=design) file and library since type scales have been updated and will only exist in the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=design).
+- [**Compact markdown type scale**](https://www.figma.com/file/mjAZxHkK95TlQ6L14aNp2M/Type-scale---Compact-Markdown?type=design) file and library since type scales have been updated and will only exist in the [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=440%3A0&mode=design).
 
 ## 16.1
 
