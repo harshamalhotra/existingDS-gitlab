@@ -23,9 +23,18 @@ While we do provide a [fallback solution](#fallback) for empty state regions, *f
 
 This is just one example. Each case will be unique and should be thought of as a problem to solve while keeping the [3 main goals in mind](#goals). 
 
-## Analytics & testing
+## Analytics and testing
 
 All empty state solutions should include usage analytics so you and your team can measure and improve the empty state solution you've created over time. It‘s also important to think about this as a *solution*, much like any other solution being developed in your stage group, so continue to follow the [solution validation](https://about.gitlab.com/handbook/product/ux/ux-research/solution-validation-and-methods/) process.
+
+
+## Considerations
+
+- Be aware of surrounding page elements. Since an empty state includes one or more actions, the rest of the page can likely be more sparse to emphasize the action the user should take.
+- If possible, use one primary [button](/components/button) per context to emphasize the main action you'd like a user to take. Some pages include a primary button in the header that may need to be hidden when the empty state is active.
+- Use a [text link](https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/regions-empty-state--custom-actions) instead of a button to direct a user to things like documentation and resources that support the main action.
+- Avoid duplicating content elsewhere in the page that's already present in the empty state heading and description.
+
 
 ## Use cases
 
