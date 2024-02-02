@@ -218,7 +218,7 @@ An ellipsis button is a specific kind of icon-only button that allows for expand
 
 ### Group
 
-Button groups visually group buttons that have similar or related actions together to emphasize the relationship and aid with arrangement and spacing.
+Button groups visually group buttons that have similar or related actions together to emphasize the relationship and aid with arrangement and spacing. When button groups are used to select an option from a series of options, a single button in a button group can act as an indicator of the currently selected state.
 
 [Pagination](/components/pagination) and [segmented controls](/components/segmented-control) are specific types of button groups.
 
