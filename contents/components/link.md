@@ -11,7 +11,7 @@ related:
 
 <story-viewer component="base-link" story="default-link" title="Link"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=design)
 
 ## Structure
 

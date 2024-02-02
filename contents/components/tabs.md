@@ -16,7 +16,7 @@ related:
 
 <story-viewer component="base-tabs" story="with-counter-badges"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-138&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-138&mode=design)
 
 ## Structure
 

@@ -50,7 +50,7 @@ related:
 
 <story-viewer component="base-button-group" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-7&mode=dev)
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-7&mode=design)
 
 ## Structure
 
