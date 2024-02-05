@@ -1,3 +1,20 @@
+# [2.186.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.185.0...v2.186.0) (2024-02-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v73 ([01226cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/01226cda04c6673210563e328d1da14783e7c9e9))
+* **deps:** update gitlab ui/svg ([9756d32](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9756d32a94f903a5773be3208503e0d98f30716b))
+
+
+### Features
+
+* **Button:** Button groups can be used as options ([15d7747](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/15d77472805c17e155be6de037cd429c98001154))
+* **EmptyStates:** Add additional considerations ([bf35be4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/bf35be4ad3155635d65f68b8d96fda856e2e5a49))
+* **Headings:** add heading scale documentation ([ecc73a8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ecc73a8219c1373ddcf277388bb36c3c211e01c6))
+* **ReleaseNotes:** 16.8.1 release - ghost changes ([683fc72](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/683fc7210b8c997b3055b2ea3610ce4c95f1e04c))
+* **Typography:** use gl-heading styles ([f145a98](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f145a9834b597b35451a436e3d6fe7df9cc8004b))
+
 # [2.185.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.184.0...v2.185.0) (2024-01-29)
 
 
