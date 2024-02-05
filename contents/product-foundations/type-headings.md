@@ -9,6 +9,8 @@ related:
 
 <todo>Add visual example</todo>
 
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=72017-103312&mode=design&t=CutnGvd6oRdmrYue-4)
+
 ## Guidelines
 
 ### Semantics
@@ -30,8 +32,6 @@ By default, heading levels are mapped to the heading scale. However, in some cas
 When in doubt, use the scale by default, consider the full page context, and reference existing patterns.
 
 <todo>Provide more guidelines and examples of scale overrides.</todo>
-
-<todo>Add UI kit links after [#1527](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1527) has been completed.</todo>
 
 ## Implementation
 
