@@ -31,20 +31,25 @@ By default, heading levels are mapped to the heading scale. However, in some cas
 
 When in doubt, use the scale by default, consider the full page context, and reference existing patterns.
 
+#### Display heading
+
+A display style can be applied to a level 1 heading to emphasize the text in a more promotional manner. The larger size and weight creates a stronger visual anchor compared to other text on the page.
+
 <todo>Provide more guidelines and examples of scale overrides.</todo>
 
 ## Implementation
 
 ### Classes
 
-There are two sets of heading mixins and utility classes:
+Heading mixins and utility classes:
 
 - `gl-heading-{1-6}` mixins and classes are the preferred approach to implementing heading typography. Usage should align with semantic heading levels, for example, `<h2 class="gl-heading-2">...</h2>`.
+- `gl-heading-display` class is available to create a [display heading](#display-heading).
 - `gl-heading-scale-{100-800}` mixins and classes are available for [contextual adjustments](#contextual-adjustments) where the semantic heading scale doesn't provide the desired visual hierarchy. However, the recommendation is to use the default scale and avoid contextual adjustments as much as possible.
 
 #### Margins
 
-The `gl-heading-{1-6}` mixins and classes provide a default `margin-bottom` (and reset Bootstrap's `margin-top`). In order to opt-out of the margin, add a `gl-mb-0!` class:
+The `gl-heading-{1-6}` and `gl-heading-display` mixins and classes provide a default `margin-bottom` and remove `margin-top`. In order to opt-out of the margin, add a `gl-mb-0!` class:
 
 ```html
 <h2 class="gl-heading-2">...</h2> <!-- has margin -->
