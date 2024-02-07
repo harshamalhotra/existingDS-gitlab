@@ -103,12 +103,9 @@ An `Empty search results` empty state serves as a placeholder when there are no 
 
 #### Content
 
-- When using the [filter component](/components/filter), the text should always be exactly:
+- When using the [filter component](/components/filter) or [search component](/components/search), the text should always be exactly:
   - For the title, `No results found`.
-  - For the text underneath, `Edit your search filter and try again`.
-- When using the [search component](/components/search), the text should always be exactly:
-  - For the title, `No results found`.
-  - For the text underneath, `Edit your search and try again`.
+  - For the text underneath, `Edit your criteria and try again.`.
 
 ## Fallback
 
