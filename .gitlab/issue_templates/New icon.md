@@ -65,7 +65,8 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 
 1. [ ] Create a new merge request (MR) from this issue.
 1. [ ] Checkout the new branch locally.
-1. [ ] Export the icon component from the Pajamas UI Kit (in Figma) to the **/sprite_icons** folder in your local instance of the repo. The file name should be lowercase, and use hyphens as a separator between terms.
+1. [ ] Export the icon component from the Pajamas UI Kit (in Figma). Consider using the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin with the default settings when exporting the icon. 
+1. [ ] Add the file to the **/sprite_icons** folder in your local instance of the repo. The file name should be lowercase, and use hyphens as a separator between terms.
 1. [ ] Open the SVG you just exported in your code editor and remove `fill="none"` from the `<svg>` element.
 1. [ ] In a terminal window, run `yarn run dev` to preview the SVG library locally. Find the new icon and test it out by changing settings in the **Icon configuration** panel of the site. The icon should change color and size with no issues.
 1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app and test that it matches your expectations.
