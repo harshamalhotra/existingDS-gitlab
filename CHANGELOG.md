@@ -1,3 +1,20 @@
+# [2.187.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.186.0...v2.187.0) (2024-02-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v74 ([2a595b9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2a595b914df1bdf476781ddea05d260f14fb33bc))
+* **deps:** update dependency @nuxtjs/sentry to ^8.0.7 ([7f62de8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7f62de8591056d1b5bfc8b838e140c99d64648b7))
+* remove double new line ([12b5136](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/12b5136064e065be9b20184a155cbeacefa5cedb))
+* **deps:** update dependency mermaid to ^10.8.0 ([3e8da71](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3e8da710122f335e3c39d69fc0555919034b72b8))
+
+
+### Features
+
+* **EmptyState:** Change 'no results' text for searching and filtering ([4dbfda7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4dbfda74aa2b2794154bb27adfe6747d7cd17c77))
+* **featureMgmt:** Update UI text ([32f7cdc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/32f7cdc637cc23f5448b804f5f1a2be7bb5857e3))
+* **Headings:** Add display heading guidance ([4c6f784](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/4c6f784ebd49beca4db8589a59a36306769576c8))
+
 # [2.186.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.185.0...v2.186.0) (2024-02-05)
 
 
