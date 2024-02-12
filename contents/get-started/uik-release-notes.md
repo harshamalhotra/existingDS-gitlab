@@ -4,8 +4,20 @@ name: Release notes
 
 ## 16.9
 
-<!-- Update draft link once MR is created -->
-[_Draft: 16.9 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3688)
+<!-- Update publish date-->
+<small>Published 2024-02-12</small>
+
+### Additions
+
+- Added the following icons: [**dash-circle**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~dash-circle), [**partner-verified**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~partner-verified).
+- Added the following illustrations: [**empty-job-failed-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-failed-md.svg), [**empty-job-manual-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-job-manual-md.svg), [**tanuki-ai-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-md.svg), [**tanuki-ai-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-sm.svg), [**empty-devops-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/devops-sm.svg).
+
+### Removals
+
+- Removed a number of unused and out-of-date illustrations and replaced them with updated versions. Refer to these MRs for a full list: [!991](https://gitlab.com/gitlab-org/gitlab-svgs/-/merge_requests/991), [!1005](https://gitlab.com/gitlab-org/gitlab-svgs/-/merge_requests/1005).
+- The following elements have been permanently removed to streamline future updates and limit the scope of upcoming design token work. All related pages, components, and styles are included in the removal. Please refer to the Figma file history if you need to retrieve an old design artifact.
+  - Alert (⚠️ DEPRECATED), use [**❖&nbsp;Alert**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=95988-11501&mode=design&t=pOLKkgUyFwpTsdSO-11).
+  - Skeleton loader (⚠️ DEPRECATED), use [**❖&nbsp;Skeleton&nbsp;loader**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-27&mode=design&t=pOLKkgUyFwpTsdSO-11).
 
 ## 16.8.1
 
@@ -50,7 +62,6 @@ name: Release notes
 
 ## 16.8
 
-<!-- Update publish date-->
 <small>Published 2024-01-12</small>
 
 ### Additions
