@@ -93,7 +93,7 @@ When a new row is dynamically added by the system, the background color of the r
 
 - Sorting is designed as a native functionality of tables. Tables use column sorting rather than [list sorting](/components/sorting).
 - The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [arrow down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=arrow-down) and [arrow up](https://gitlab-org.gitlab.io/gitlab-svgs/?q=arrow-up) icons.
-- Clicking the icon will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order.
+- Clicking the column header will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order.
 - Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
 - The sorting icon and functionality should not be visible on responsive tables.
 - To enable sorting for a particular table column, add `sortable` as a property in your `fields` data, like so:
