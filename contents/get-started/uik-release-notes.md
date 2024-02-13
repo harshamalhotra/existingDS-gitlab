@@ -2,9 +2,12 @@
 name: Release notes
 ---
 
+## 16.10
+
+_[Draft: 16.10 release notes](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3738)_
+
 ## 16.9
 
-<!-- Update publish date-->
 <small>Published 2024-02-12</small>
 
 ### Additions
