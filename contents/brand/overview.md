@@ -38,8 +38,8 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 - [Press kit](https://about.gitlab.com/press/press-kit/)
 
 **Color**
-- [RGB swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-hex-rgb.ase) (Internal access only)
-- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-primary-color-palette-pms-cmyk.ase) (Internal access only)
+- [RGB swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-rgb.ase) (Internal access only)
+- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-cmyk-pms.ase) (Internal access only)
 
 **Marketing illustrations**
 - [Illustration library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) (Internal access only)
