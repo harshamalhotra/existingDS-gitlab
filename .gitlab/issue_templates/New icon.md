@@ -64,12 +64,15 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 <!-- This checklist helps streamline the process of getting an icon from Figma to the library. -->
 
 1. [ ] Create a new merge request (MR) from this issue.
-1. [ ] Checkout the new branch locally.
-1. [ ] Export the icon component from the Pajamas UI Kit (in Figma). Consider using the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin with the default settings when exporting the icon. 
-1. [ ] Add the file to the **/sprite_icons** folder in your local instance of the repo. The file name should be lowercase, and use hyphens as a separator between terms.
-1. [ ] Open the SVG you just exported in your code editor and remove `fill="none"` from the `<svg>` element.
-1. [ ] In a terminal window, run `yarn run dev` to preview the SVG library locally. Find the new icon and test it out by changing settings in the **Icon configuration** panel of the site. The icon should change color and size with no issues.
-1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app and test that it matches your expectations.
+1. [ ] Assign a label to the MR, such as ~foundation::iconography, and any other relevant labels as needed.
+1. [ ] Open the branch in the Web IDE.
+1. [ ] In Figma, export the icon component from the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file. The parent frame of the icon should not have "Clip content" checked in the Design panel. Consider using the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin to export an optimized SVG file (the plugin settings can also control what attributes are included or removed).
+1. [ ] In the Web IDE, upload the file to the **/sprite_icons** folder. The file name should be lowercase, and use hyphens as a separator between terms.
+1. [ ] Open the icon file and:
+   - Ensure that the `viewBox` attribute is present and matches the icon frame dimensions (either `viewBox="0 0 12 12"` or `viewBox="0 0 16 16"`). 
+   - Remove any `desc` or `clipPath` attributes.
+   - Remove the `fill="none"` attribute from the `<svg>` element.
+1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app by changing settings in the **Icon configuration** panel of the site. The icon should change color and size with no issues.
 1. [ ] Assign the MR to be reviewed and merged by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
 1. [ ] Add a reference to the change in the [Pajamas UI Kit release notes](https://design.gitlab.com/get-started/uik-release-notes) by adding a commit to the current draft MR.
 
