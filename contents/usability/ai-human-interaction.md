@@ -37,7 +37,7 @@ Establish trust by ensuring the user always knows when they are interacting with
 
 #### Name
 
-To communicate the suite of AI capabilities and identify specific AI-assisted features, use the [GitLab Duo](https://docs.google.com/presentation/d/1G849KWal8XDAEdusoR5YN8ZrZlvcgFVnqr4Nsjdy9Rc/edit#slide=id.g249996547b6_0_20) name. It's an extension of our brand that acts as an “umbrella” for all AI capabilities across GitLab.
+To communicate the suite of AI capabilities and identify specific AI-assisted features, use the [GitLab Duo](https://docs.google.com/presentation/d/1G849KWal8XDAEdusoR5YN8ZrZlvcgFVnqr4Nsjdy9Rc/edit#slide=id.g249996547b6_0_20) name. It's an extension of our brand that acts as an “umbrella” for all AI capabilities across GitLab. For variations of the GitLab Duo name, such as features or add-on, see the technical writing [word list](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html).
 
 - Show the “GitLab Duo” name at least once per AI-assisted feature. The name can be shown _before_ or _after_ user interaction.
 - A call-to-action can optionally have the “GitLab Duo” name in its label, if reasonable. For example, “Ask GitLab Duo” or “Tell GitLab Duo what you're looking for…”
