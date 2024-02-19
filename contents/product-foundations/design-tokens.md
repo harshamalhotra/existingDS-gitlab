@@ -2,7 +2,7 @@
 name: Design tokens
 ---
 
-Design tokens capture decisions and intent in code. They abstract out variables like color, typography, and spacing for consistent and meaningful use across tools and platforms. 
+Design tokens capture decisions and intent in code. They abstract out variables like color, typography, and spacing for consistent and meaningful use across tools and platforms.
 
 ## Why we use design tokens
 

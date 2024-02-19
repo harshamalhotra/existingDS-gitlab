@@ -53,4 +53,3 @@ A single stat with a badge which can be used to convey status or trend in more d
 ## Design specifications
 
 Color, spacing, dimension, and layout information can be viewed in the [Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=275%3A731)
-

@@ -16,7 +16,7 @@ related:
 
 <figure-img alt="Numbered diagram of a tree structure" label="Tree structure" src="/img/tree-structure.svg"></figure-img>
 
-1. **Caret**: Identifies when the node is open or closed. Pointing down is open. Pointing right is closed. 
+1. **Caret**: Identifies when the node is open or closed. Pointing down is open. Pointing right is closed.
 1. **Icon**: Indicates what type of node it is.
 1. **Avatar**: Supporting visual for the node title.
 1. **Title**: Identifies the node.

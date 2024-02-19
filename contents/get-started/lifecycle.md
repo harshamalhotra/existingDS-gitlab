@@ -77,16 +77,16 @@ we add it in.
 ## Viewing changes in Pajamas
 
 When a change to GitLab UI is made, it will not be reflected in
-Pajamas until the package is updated. See 
+Pajamas until the package is updated. See
 [Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/doc/updating-gitlab-ui-packages.md) for details.
 
 ## Component status
 
-Not all Pajamas components are fully integrated within the GitLab product at this 
-time. Some components may be partially integrated and others have been migrated 
-from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui). 
+Not all Pajamas components are fully integrated within the GitLab product at this
+time. Some components may be partially integrated and others have been migrated
+from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui).
 
-GitLab UI components should be used within GitLab even if they do not yet fully 
+GitLab UI components should be used within GitLab even if they do not yet fully
 conform to design specs.
 
 ## Complex components

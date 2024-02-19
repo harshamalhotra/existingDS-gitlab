@@ -35,11 +35,11 @@ To learn how to link to GitLab documentation in various programming languages, s
 
 In most cases, phrase the link as a question.
 
-- Example: A merge request approval is required. [Who can approve](#)?
+- Example: A merge request approval is required. [Who can approve](https://docs.gitlab.com)?
 
 If you can't determine a useful question, use `Learn more`. However, be aware that `Learn more` is not descriptive or meaningful, and **should be used sparingly**.
 
-- Example: Approve a merge request. [Learn more](#).
+- Example: Approve a merge request. [Learn more](https://docs.gitlab.com).
 
 Note: The punctuation is not part of the link.
 

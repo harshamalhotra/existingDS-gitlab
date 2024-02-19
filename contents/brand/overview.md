@@ -35,32 +35,40 @@ Our brand principles extend to our voice and [communications](https://about.gitl
 ## Resources
 
 **Logo**
+
 - [Press kit](https://about.gitlab.com/press/press-kit/)
 
 **Color**
+
 - [RGB swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-rgb.ase) (Internal access only)
 - [CMYK swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-cmyk-pms.ase) (Internal access only)
 
 **Marketing illustrations**
+
 - [Illustration library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) (Internal access only)
 - [RGB swatches, secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-hex-rgb.ase) (Internal access only)
 - [CMYK swatches - secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-pms-cmyk.ase) (Internal access only)
 
 **Marketing icons**
+
 - [Icon library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/marketing-icons) (Internal access only)
 - [Software development lifecycle](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/icon-library/software-development-lifecycle-icons) (Internal access only)
 
 **Diagrams**
+
 - [Diagram library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/diagrams) (Internal access only)
 
 **Photography**
+
 - [Photo library](https://drive.google.com/drive/folders/1VHErs-KSNX1FIIVgXJR3OmIzwU7M4E1M?usp=sharing) (Internal access only)
 - [Adobe stock](https://stock.adobe.com/)
 
 **Templates**
+
 - [General GitLab-themed deck template](https://docs.google.com/presentation/d/1xuw2RrjoSPx69p9v7aacrustmVto8cKWaFn_YK7Riug/edit#slide=id.g1287bf62b57_0_209) with [instructions](https://about.gitlab.com/handbook/tools-and-tips/#google-slides)
 - [GitLab pitch deck template](https://docs.google.com/presentation/d/1vtFnh8DU6ZZzASTHg83UrhM6LJWqo5lq9mJDAY2ILpw/edit?usp=sharing)
 
 **Quick links**
+
 - [Corporate Marketing handbook](https://about.gitlab.com/handbook/marketing/corporate-marketing/)
 - [Brand Design handbook](https://about.gitlab.com/handbook/marketing/corporate-marketing/brand-activation/brand-design/)

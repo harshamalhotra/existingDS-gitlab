@@ -9,6 +9,7 @@ The motion guidelines follow a sleek, clean aesthetic allowing video producers t
 ### Illustration
 
 Video producers can create large-scale, custom illustrations as part of a video concept. The illustrations should adhere to brand guidelines and match the [marketing illustration](/brand-design/marketing-illustrations) style.
+
 - Illustrations are assembled from multiple layers revealed in sequence.
 - Each layer can have its own unique motion type which combine to create harmony.
 - Strokes and lines are animated independently with a stroke reveal effect.
@@ -73,7 +74,7 @@ Voice over example: “No more stitching point solutions. All you need is GitLab
 - If the tanuki is placed on the background, it should be within the white area for legibility.
 - The gradient can also be used inside text and linework of icons.
 
-[Download the gradient file](https://drive.google.com/file/d/13PPVVsDp6ySALH-14pQrzcDXYWD6qRwU/view) 
+[Download the gradient file](https://drive.google.com/file/d/13PPVVsDp6ySALH-14pQrzcDXYWD6qRwU/view)
 
 <figure-img alt="4 color, soft gradient example with motion details" label="Gradient example" src="/img/brand/gradient-1.png"></figure-img>
 
@@ -166,7 +167,7 @@ The example below uses the following steps:
 - Avoid mixing colors and refer to brand [typography guidelines](https://design.gitlab.com/brand-design/typography) if needed.
 - Lower thirds use the following flow:
   - **Transition in:** Animate opacity from 0% to 100% over 1 second.
-  - Lower third remains onscreen for 4-5 seconds. 
+  - Lower third remains onscreen for 4-5 seconds.
   - **Transition out:** Animate opacity from 100% to 0% over 1 second.
 
 <vimeo-player title="Masked transition" video-id="791331388"></vimeo-player>
@@ -174,7 +175,6 @@ The example below uses the following steps:
 <figure-img alt="Lower thirds motion example with specs" label="Lower thirds example" src="/img/brand/lower-thirds-sample.png"></figure-img>
 
 **Motion details:** Use white text for lower thirds on a dark background. Use Charcoal copy on light backgrounds. Animate opacity 0% > 100%. Duration of transition: 1 second.
+
 - **Name:** Inter Semi Bold, 60px (header)
 - **Organization and title:** Inter Regular, 40px (subheader)
-
-

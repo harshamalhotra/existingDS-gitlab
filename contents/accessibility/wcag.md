@@ -31,7 +31,7 @@ This report covers the degree of conformance for the following accessibility sta
   </thead>
   <tbody>
     <tr>
-      <td><a 
+      <td><a
         href="http://www.w3.org/TR/2008/REC-WCAG20-20081211"
         target="_blank"
       >Web Content Accessibility Guidelines 2.0</a> or WCAG 2.0 (ISO/IEC 40500)</td>
@@ -44,7 +44,7 @@ This report covers the degree of conformance for the following accessibility sta
       </td>
     </tr>
     <tr>
-      <td><a 
+      <td><a
         href="https://www.w3.org/TR/WCAG21/"
         target="_blank"
       >Web Content Accessibility Guidelines 2.1</a> or WCAG 2.1</td>
@@ -86,7 +86,7 @@ The terms used in the Conformance Level information are defined as follows:
   <tbody>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#text-equiv-all"
           target="_blank"
         >1.1.1 Non-text Content</a> (Level A)
@@ -110,7 +110,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"
           target="_blank"
         >1.2.1 Audio-only and Video-only (Prerecorded)</a> (Level A)
@@ -128,7 +128,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#media-equiv-captions"
           target="_blank"
         >1.2.2 Captions (Prerecorded)</a> (Level A)
@@ -146,7 +146,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc"
           target="_blank"
         >1.2.3 Audio Description or Media Alternative (Prerecorded)</a> (Level A)
@@ -164,7 +164,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"
           target="_blank"
         >1.3.1 Info and Relationships</a> (Level A)
@@ -185,7 +185,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"
           target="_blank"
         >1.3.2 Meaningful Sequence</a> (Level A)
@@ -199,7 +199,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"
           target="_blank"
         >1.3.3 Sensory Characteristics</a> (Level A)
@@ -213,7 +213,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"
           target="_blank"
         >1.4.1 Use of Color</a> (Level A)
@@ -234,7 +234,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio"
           target="_blank"
         >1.4.2 Audio Control</a> (Level A)
@@ -248,7 +248,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
      <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
           target="_blank"
         >2.1.1 Keyboard</a> (Level A)
@@ -269,7 +269,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping"
           target="_blank"
         >2.1.2 No Keyboard Trap</a> (Level A)
@@ -290,7 +290,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts"
           target="_blank"
         >2.1.4 Character Key Shortcuts</a> (Level A 2.1 only)
@@ -300,7 +300,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors"
           target="_blank"
         >2.2.1 Timing Adjustable</a> (Level A)
@@ -314,7 +314,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#time-limits-pause"
           target="_blank"
         >2.2.2 Pause, Stop, Hide</a> (Level A)
@@ -328,7 +328,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#seizure-does-not-violate"
           target="_blank"
         >2.3.1 Three Flashes or Below Threshold</a> (Level A)
@@ -342,7 +342,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip"
           target="_blank"
         >2.4.1 Bypass Blocks</a> (Level A)
@@ -356,7 +356,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title"
           target="_blank"
         >2.4.2 Page Titled</a> (Level A)
@@ -370,7 +370,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order"
           target="_blank"
         >2.4.3 Focus Order</a> (Level A)
@@ -387,7 +387,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs"
           target="_blank"
         >2.4.4 Link Purpose (In Context)</a> (Level A)
@@ -408,7 +408,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#pointer-gestures"
           target="_blank"
         >2.5.1 Pointer Gestures</a> (Level A 2.1 only)
@@ -418,7 +418,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#pointer-cancellation"
           target="_blank"
         >2.5.2 Pointer Cancellation</a> (Level A 2.1 only)
@@ -437,7 +437,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#label-in-name"
           target="_blank"
         >2.5.3 Label in Name</a> (Level A 2.1 only)
@@ -447,7 +447,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#motion-actuation"
           target="_blank"
         >2.5.4 Motion Actuation</a> (Level A 2.1 only)
@@ -457,7 +457,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id"
           target="_blank"
         >3.1.1 Language of Page</a> (Level A)
@@ -471,7 +471,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"
           target="_blank"
         >3.2.1 On Focus</a> (Level A)
@@ -485,7 +485,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change"
           target="_blank"
         >3.2.2 On Input</a> (Level A)
@@ -499,7 +499,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"
           target="_blank"
         >3.3.1 Error Identification</a> (Level A)
@@ -520,7 +520,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"
           target="_blank"
         >3.3.2 Labels or Instructions</a> (Level A)
@@ -541,7 +541,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses"
           target="_blank"
         >4.1.1 Parsing</a> (Level A)
@@ -562,7 +562,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#ensure-compat-rsv"
           target="_blank"
         >4.1.2 Name, Role, Value</a> (Level A)
@@ -597,7 +597,7 @@ The terms used in the Conformance Level information are defined as follows:
   <tbody>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions"
           target="_blank"
         >1.2.4 Captions (Live)</a> (Level AA)
@@ -611,7 +611,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"
           target="_blank"
         >1.2.5 Audio Description (Prerecorded)</a> (Level AA)
@@ -629,7 +629,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#orientation"
           target="_blank"
         >1.3.4 Orientation</a> (Level AA 2.1 only)
@@ -639,7 +639,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
           target="_blank"
         >1.3.5 Identify Input Purpose</a> (Level AA 2.1 only)
@@ -658,7 +658,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"
           target="_blank"
         >1.4.3 Contrast (Minimum)</a> (Level AA)
@@ -679,7 +679,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"
           target="_blank"
         >1.4.4 Resize text</a> (Level AA)
@@ -700,7 +700,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation"
           target="_blank"
         >1.4.5 Images of Text</a> (Level AA)
@@ -719,7 +719,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#reflow"
           target="_blank"
         >1.4.10 Reflow</a> (Level AA 2.1 only)
@@ -729,7 +729,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
           target="_blank"
         >1.4.11 Non-text Contrast</a> (Level AA 2.1 only)
@@ -748,7 +748,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#text-spacing"
           target="_blank"
         >1.4.12 Text Spacing</a> (Level AA 2.1 only)
@@ -758,7 +758,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
           target="_blank"
         >1.4.13 Content on Hover or Focus</a> (Level AA 2.1 only)
@@ -768,7 +768,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc"
           target="_blank"
         >2.4.5 Multiple Ways</a> (Level AA)
@@ -782,7 +782,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"
           target="_blank"
         >2.4.6 Headings and Labels</a> (Level AA)
@@ -803,7 +803,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible"
           target="_blank"
         >2.4.7 Focus Visible</a> (Level AA)
@@ -822,7 +822,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id"
           target="_blank"
         >3.1.2 Language of Parts</a> (Level AA)
@@ -839,7 +839,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations"
           target="_blank"
         >3.2.3 Consistent Navigation</a> (Level AA)
@@ -853,7 +853,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality"
           target="_blank"
         >3.2.4 Consistent Identification</a> (Level AA)
@@ -867,7 +867,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"
           target="_blank"
         >3.3.3 Error Suggestion</a> (Level AA)
@@ -888,7 +888,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible"
           target="_blank"
         >3.3.4 Error Prevention (Legal, Financial, Data)</a> (Level AA)
@@ -902,7 +902,7 @@ The terms used in the Conformance Level information are defined as follows:
     </tr>
     <tr>
       <td>
-        <a 
+        <a
           href="https://www.w3.org/TR/WCAG21/#status-messages"
           target="_blank"
         >4.1.3 Status Messages</a> (Level AA 2.1 only)

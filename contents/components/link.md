@@ -18,7 +18,7 @@ related:
 <figure-img alt="Numbered diagram of a link structure" label="Link structure" src="/img/link-structure.svg"></figure-img>
 
 1. **Text**: Specifies or references the link's destination.
-1. **Icon** (optional): Indicates the destination is on an external domain. 
+1. **Icon** (optional): Indicates the destination is on an external domain.
 
 ## Guidelines
 

@@ -81,7 +81,7 @@ Everyone can contribute to GitLab, including our UI design library in Figma. To 
 
 We accept contributions from wider community members who share a Figma [draft](https://help.figma.com/hc/en-us/articles/360041543473#drafts) with proposed changes.
 
-We also encourage design contributions/improvements to GitLab itself — use its [issue tracker][gitlab-issue-tracker] to add your ideas to an existing or new issue and refer to this guide on [design and user interface changes](https://docs.gitlab.com/ee/development/contributing/design.html#design-and-user-interface-changes).
+We also encourage design contributions/improvements to GitLab itself — use its [issue tracker](https://gitlab.com/gitlab-org/gitlab/-/issues) to add your ideas to an existing or new issue and refer to this guide on [design and user interface changes](https://docs.gitlab.com/ee/development/contributing/design.html#design-and-user-interface-changes).
 
 For the design of GitLab, please see this guide on [design and user interface changes](https://docs.gitlab.com/ee/development/contributing/design.html#design-and-user-interface-changes).
 

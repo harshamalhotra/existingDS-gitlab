@@ -19,7 +19,7 @@ related:
 
 <figure-img alt="Numbered diagram of a spinner structure" label="Spinner structure" src="/img/spinner-structure.svg"></figure-img>
 
-1. **Track**: Background that the segment travels on during the looped animation. 
+1. **Track**: Background that the segment travels on during the looped animation.
 1. **Segment**: Animated element of the spinner.
 
 ## Guidelines
@@ -61,4 +61,3 @@ The default visible `Loading...` text isn't part of the component itself. Howeve
 - Since the spinner contains no text content, `aria-label` is used to provide a short message, for example, `aria-label="Loading"`.
 - The spinner animation is currently not changed by `perfers-reduced-motion` because it can be considered essential to understanding the state of the application. See _Note 4_ in [Understanding WCAG SC 2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html).
 - See the [WAI-ARIA `status` documentation](https://www.w3.org/TR/wai-aria-1.1/#status) for more details.
-

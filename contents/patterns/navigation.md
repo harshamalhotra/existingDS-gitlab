@@ -26,9 +26,11 @@ The homepage is the first page a user sees at the top level of GitLab.com or the
 A landing page is the page directly tied to a link in the navigation. Typically, a landing page is action-oriented and contains overview and/or summary content, but it can also be a [dashboard](/patterns/dashboards) for analysis-oriented tasks.
 
 ### User settings menu
+
 The user settings menu is the rightmost menu which contains items related to the logged-in user.
 
 ### Help menu
+
 The help menu is the dropdown with the question mark icon and contains links to docs and support.
 
 ## Left sidebar

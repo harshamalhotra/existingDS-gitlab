@@ -39,7 +39,6 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
 
 <story-viewer component="tokens-color-data-viz-light" story="data-viz-magenta" title="Tokens"></story-viewer>
 
-
 ## Usage
 
 ### Color sequence
@@ -149,7 +148,7 @@ Colors are often associated with system status in data visualizations (for examp
 
 When representing a success status alone against the generic data, use `$data-viz-blue-500` for all and `$data-viz-green-700` for success.
 
-If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types. 
+If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types.
 
 <todo>Include example of recommended color combinations</todo>
 

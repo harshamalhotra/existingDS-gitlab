@@ -27,14 +27,14 @@ related:
 1. **Active indicator**: Highlights the active tab.
 1. **Label**: Text representing the content of the tab panel.
 1. **Badge** (optional): Counts the number of items within the tab panel.
-1. **Overflow indicator**: Chevron that dynamically appears on either side of the tab group when the combined tab width is greater than the tab group width. Enables scrolling to view tabs that aren't immediately visible. 
+1. **Overflow indicator**: Chevron that dynamically appears on either side of the tab group when the combined tab width is greater than the tab group width. Enables scrolling to view tabs that aren't immediately visible.
 1. **Tab panel**: Contains the content related to the active tab.
 
 ## Guidelines
 
 ### When to use
 
--  To show one content section at a time while maintaining a view of related options.
+- To show one content section at a time while maintaining a view of related options.
 
 ### When not to use
 

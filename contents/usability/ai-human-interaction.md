@@ -70,8 +70,8 @@ The interface should clearly communicate AI capabilities, limitations, and the s
 
 - Clearly highlight if a feature is an [Experiment or Beta](/usability/feature-management#highlighting-feature-versions).
 - Follow the [disclaimer guidelines](#disclaimer).
-- Use clear, simple language to explain what the system is doing and how it arrived at its recommendations. 
-- Explain what data the system is trained on and what it's optimized for. 
+- Use clear, simple language to explain what the system is doing and how it arrived at its recommendations.
+- Explain what data the system is trained on and what it's optimized for.
 - Tell the user how their data is used and processed.
 
 ### Give the user control
@@ -95,19 +95,19 @@ To help you put the [guidelines](#guidelines) into practice, the framework mater
 These dimensions can assist you in choosing the most appropriate pattern for the problem you are solving.
 
 - **Mode**: What's the emphasis and persistence of the AI-human interaction relative to the main context and the user journey?
-   - Focused: AI is the main context, with a dedicated focus.
-   - Supportive: AI complements the main context and accompanies users along their journey to help them achieve their goals.
-   - Integrated: AI is blended into specific moments of the users flow to help them complete small, discrete tasks.
+  - Focused: AI is the main context, with a dedicated focus.
+  - Supportive: AI complements the main context and accompanies users along their journey to help them achieve their goals.
+  - Integrated: AI is blended into specific moments of the users flow to help them complete small, discrete tasks.
 - **Approach**: What should AI focus on improving?
-   - Automate tasks: improve _efficiency_ by replacing human decision-making and actions, always done with human awareness and consent.
-   - Augment capabilities: improve _effectiveness_ by supporting and improving human decision-making and actions.
+  - Automate tasks: improve _efficiency_ by replacing human decision-making and actions, always done with human awareness and consent.
+  - Augment capabilities: improve _effectiveness_ by supporting and improving human decision-making and actions.
 - **Interactivity**: How does the system surface AI to engage with the user?
-   - Proactive: triggered without user interaction.
-   - Reactive: triggered by user interaction.
+  - Proactive: triggered without user interaction.
+  - Reactive: triggered by user interaction.
 - **Task**: What's the user task that AI can assist with?
-   - Classification: categorize, suggest, rank, match.
-   - Generation: summarize, explain, create.
-   - Prediction (or regression): forecast continuous, non-categorical data, like numerical values.
+  - Classification: categorize, suggest, rank, match.
+  - Generation: summarize, explain, create.
+  - Prediction (or regression): forecast continuous, non-categorical data, like numerical values.
 
 ### Patterns
 

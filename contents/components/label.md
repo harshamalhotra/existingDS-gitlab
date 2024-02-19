@@ -29,7 +29,7 @@ related:
 
 ### When not to use
 
-- If displaying more generic object metadata that are not categories, consider using [badges](/components/badge). 
+- If displaying more generic object metadata that are not categories, consider using [badges](/components/badge).
 
 ### Variants
 

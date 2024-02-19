@@ -102,11 +102,11 @@ If the form must be completed in a linear order or has conditional logic, consid
 
 Input and selection controls can be any width that uses a [base-8 progression](/product-foundations/spacing). There are also five preset sizes that can be used to normalize the width in any form. When considering responsive behavior, these should be regarded as maximum widths.
 
-  - **Extra small**: 80px wide
-  - **Small**: 160px wide
-  - **Medium**: 240px
-  - **Large**: 320px
-  - **Extra large**: 560px
+- **Extra small**: 80px wide
+- **Small**: 160px wide
+- **Medium**: 240px
+- **Large**: 320px
+- **Extra large**: 560px
 
 ### Behavior
 
@@ -120,8 +120,8 @@ A validation message should always be visible and not placed in a tooltip. The m
 
 There are two types of validation messages:
 
-  - **Error**: Indicates content that can’t be submitted, or was invalid and in need of correction.
-  - **Success**: Indicates content that is valid. In most cases a success message isn't shown.
+- **Error**: Indicates content that can’t be submitted, or was invalid and in need of correction.
+- **Success**: Indicates content that is valid. In most cases a success message isn't shown.
 
 Consider using a slower [debounce period](/usability/saving-and-feedback#delayed-feedback) during real-time validation to prevent interrupting or frustrating a user while they're entering content.
 
@@ -134,7 +134,7 @@ There are two kinds of character counters:
 - **Limited length**: Indicates the total number of characters allowed. When a limit is in place, the counter should be visible by default, and include a scrim (gradient overlay) to prevent collisions with characters in the input. As a user types, the counter shows how many characters remain before reaching the limit.
   - When the number of characters crosses the limit, the counter color changes to `danger`, and its font weight to bold. The counter then displays the number of characters over the limit (for example **-23**) with a `$red-200` background color.
   - Hovering over the counter reveals a tooltip that says, “Characters left”. Once over the limit, the text changes to, “Characters over limit”.
-- **Recommended length**: Indicates how close a user is to reaching (or surpassing) a recommended character length for the field. This type of counter is *not* present by default.
+- **Recommended length**: Indicates how close a user is to reaching (or surpassing) a recommended character length for the field. This type of counter is **not** present by default.
   - When the number of characters crosses the recommendation, the counter color changes to `info`. The count displays the number of characters over the limit (for example -23) with a `$blue-100` background color.
   - Hovering over the counter reveals a tooltip that says, “Recommended characters left”. Once over the recommended range, the text changes to, “Over recommended length”.
 
@@ -150,7 +150,7 @@ By default a submit button is enabled. Do not use a disabled submit button to vi
 - A disabled button can be missed by a screen reader, leaving a user unsure of what to do next.
 - Disabled elements typically have lower contrast, which are difficult to distinguish for those with visual impairments.
 
-Consider using a contextual message to indicate if additional action is needed instead. 
+Consider using a contextual message to indicate if additional action is needed instead.
 
 There are conditions where it may make sense to use the `disabled` prop on a submit button, such as after a user submits a form to prevent re-submission. Including help text below a field explaining why it's disabled can be useful, but note that a disabled element isn't in the focus order. However, the content will still be discoverable with other screen reader methods.
 

@@ -67,9 +67,11 @@ For each of these content types, look for ways you might rephrase text that seem
 Sometimes an extra word or two are required for clarity.
 
 For example, if the context clearly refers to the object, you can use a verb or adjective by itself.
+
 - **Example:** `Edit` or `Closed`
 
 If the context isn’t clear enough, use an object.
+
 - **Example:** `Edit issue` or `Closed issues`
 
 ## Clear error messages

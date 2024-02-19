@@ -19,19 +19,19 @@ related:
 
 <figure-img alt="Numbered diagram of an accordion structure" label="Accordion structure" src="/img/accordion-structure.svg"></figure-img>
 
-1. **Caret**: Identifies when the accordion is open or closed. Pointing down is open. Pointing right is closed. 
+1. **Caret**: Identifies when the accordion is open or closed. Pointing down is open. Pointing right is closed.
 1. **Title**: Identifies the title of the accordion.
-1. **Body**: Contains the content of an accordion. 
+1. **Body**: Contains the content of an accordion.
 
 ## Guidelines
 
-### When to use:
+### When to use
 
 - Displaying and grouping additional information.
 - Adding granular control over the information on a given page.
 - Shortening pages to reduce scrolling.
 
-### When not to use:
+### When not to use
 
 - Displaying critical system information or a primary action to be taken on the page. (for example, [alerts](/components/alert), confirmation or cancellation buttons).
 - Displaying navigation elements such as [tabs](/components/tabs).

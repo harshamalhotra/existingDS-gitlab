@@ -27,4 +27,3 @@ This layout is shown below, with details about the meaning and purpose of each e
 <div class="figma-embed" aria-label="A layout of a job with overlays to highlight the actions, attributes, and object relationships within that layout." role="img">
   <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FshVF8UZwrQtkNfMDjcrsyH%2FSemantic-layouts%3Fnode-id%3D4636%253A208" allowfullscreen></iframe>
 </div>
-

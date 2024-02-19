@@ -35,7 +35,7 @@ To satisfy [WCAG 2.1 SC 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/
 
 #### Points vs. pixels
 
-WCAG uses points instead of pixels when referencing text size, noted in [WCAG 2.1 Understanding Docs](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html#intent): 
+WCAG uses points instead of pixels when referencing text size, noted in [WCAG 2.1 Understanding Docs](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html#intent):
 
 > The ratio between sizes in points and CSS pixels is 1pt = 1.333px, therefore 14pt and 18pt are equivalent to approximately 18.5px and 24px.
 
@@ -55,14 +55,13 @@ Similarly, linked text that isn't underlined (or distinguished in a similar way)
 
 Logos and text in logos are an exception to the contrast criteria, but when in our control we also aim for at least a **3:1** contrast ratio.
 
-
 ### Meaning
 
 Color doesn't always have to be associated with meaning, but when it is it can't be the only means of conveying the meaning. For example, a red border on an invalid form field is insufficient by itself to indicate an error, but if error text and even an error icon is present, then the red border isn't the only way the error is communicated. Likewise, an icon that only changes color to indicate a status is insufficient, but if the icon itself were to change, or it was paired with a clear text message, then color alone isn't being relied on. Not all users discern colors in the same way, so it's imperative that color is used to enhance meaning along with other elements.
 
 Color shouldn't be used as the only means of conveying the meaning of content. For example, a red border on an invalid form field is insufficient by itself to indicate an error. If accompanied by error text and an error icon, then the red border isn't the only way the error is communicated.
 
-Likewise, an icon that only changes color to indicate a status is insufficient. If the icon itself were to change, or it is paired with a meaningful text, then color alone isn't being relied on. 
+Likewise, an icon that only changes color to indicate a status is insufficient. If the icon itself were to change, or it is paired with a meaningful text, then color alone isn't being relied on.
 
 Not all users discern colors in the same way, so it's imperative that color is used to enhance meaning along with other elements. Refer to the [WCAG SC 1.4.1 Use of Color (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html) docs for more information.
 
@@ -97,7 +96,7 @@ Text scaling is a capability that many users take advantage of either through br
 
 ### Expected results
 
-- If a user updated a system setting to increase text size, all text content should be readable and available up to 200 percent. 
+- If a user updated a system setting to increase text size, all text content should be readable and available up to 200 percent.
   - Text that truncates should still easily be available in it's full form regardless of modality (mouse, keyboard, touch).
   - Text should reflow appropriately and be legible, scrollable, and not have any loss in function or impede the legibility or function of other elements.
 - System and browser settings are different, however, the above also applies when a user has updated browser settings to increase text or UI size up to 200 percent.

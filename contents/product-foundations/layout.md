@@ -8,16 +8,17 @@ We take a [responsive-first](/product-foundations/layout#responsive-ui) approach
 
 ### Reflow
 
-When the content on a page reflows to fit the available space, the hierarchy, structure, and relationships should remain intact and clear within any viewport. 
-- The visual order should match the [DOM order](https://www.w3.org/WAI/WCAG21/Techniques/css/C27). 
+When the content on a page reflows to fit the available space, the hierarchy, structure, and relationships should remain intact and clear within any viewport.
+
+- The visual order should match the [DOM order](https://www.w3.org/WAI/WCAG21/Techniques/css/C27).
 - Reflow isn't limited to content wrapping. For example, you might consider grouping a list of actions into a single dropdown in smaller viewports.
-- Content should not abruptly rearrange as that can be disorienting for users and cause the page to re-load, which may negatively impact the perceived performance of a page. 
+- Content should not abruptly rearrange as that can be disorienting for users and cause the page to re-load, which may negatively impact the perceived performance of a page.
 
 ### Truncation
 
 Content can be truncated when length or wrapping would break a component, negatively impact surrounding content, or cause some content to flow off screen. When content is truncated, there must be a method to easily view and access all of the content for both sighted and unsighted users, as well as those using assistive technology. Use your judgment on how to truncate content in your specific situation, but here are a few methods depending on the content type, usage, and size.
 
-- Show in [tooltip](/components/tooltip): Use when truncated text is non-critical or providing reference information, or when users don't need access to the raw content. 
+- Show in [tooltip](/components/tooltip): Use when truncated text is non-critical or providing reference information, or when users don't need access to the raw content.
 - Show with [ellipsis button](/components/button#ellipsis): Use for longer spans of text, or when users need access to raw content to compare or view critical information.
 
 ### Visual affordance

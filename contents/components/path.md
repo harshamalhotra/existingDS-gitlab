@@ -24,7 +24,7 @@ related:
 
 ### When to use
 
-- When there is a process with unique content at each stage, for example, a [DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/). 
+- When there is a process with unique content at each stage, for example, a [DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 
 ### When not to use
 
@@ -35,7 +35,7 @@ related:
 
 1. **Simple Path**: A simple path only contains stages with labels.
 1. **Counter Path**: A counter path contains stages with a counter [badge](/components/badge) showing the number of items it contains. If there are any ”All,” “Overview,” or “Summary” stages, then the counter of that stage should equal the sum total of all the others. Counters shouldn’t be included if they break this pattern.
-1. **Metric Path**: A metric path contains stages with an abbreviated metric, such as 12d or 1.5h. The metric can be an integer or float, but should be limited to 5 digits maximum (and fewer when possible). Don’t use multiple metric types on a single path. For example, 1d and 6kg. 
+1. **Metric Path**: A metric path contains stages with an abbreviated metric, such as 12d or 1.5h. The metric can be an integer or float, but should be limited to 5 digits maximum (and fewer when possible). Don’t use multiple metric types on a single path. For example, 1d and 6kg.
 1. **Combination Path**: Some processes may be more complicated and require a path with a combination of icons, counters, and metrics. An icon can also be used at a specific stage, such as an “Overview,” to make it stand out more. Try to limit path complication by only using necessary attributes.
 
 ### Accessibility

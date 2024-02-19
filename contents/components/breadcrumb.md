@@ -54,7 +54,7 @@ related:
 - Every item must contain a link to the page it's associated with.
 - The breadcrumb should include the name of the context matching the navigation sidebar.
 - For a page that presents the details of an individual item (issue, merge request, snippet, pipeline, job, milestone, commit, tag, environment, cluster, pipeline schedule), the last breadcrumb element should include the element's ID. For example, merge request **!1234** is represented as **GitLab.org / GitLab / Merge requests / !1234**.
-- For a page that allows a user to create a new item, the last breadcrumb element should include the word _New_ followed by the name of the element. For example, **GitLab.org / GitLab / Issues / New** becomes **GitLab.org / GitLab / Issues / New issue**. Only using the _New_ text may cause confusion when translating GitLab into different languages. 
+- For a page that allows a user to create a new item, the last breadcrumb element should include the word _New_ followed by the name of the element. For example, **GitLab.org / GitLab / Issues / New** becomes **GitLab.org / GitLab / Issues / New issue**. Only using the _New_ text may cause confusion when translating GitLab into different languages.
 - [Use sentence case](/content/punctuation#case) for each breadcrumb element.
 - Collection titles that group primary navigation sections are not included in the breadcrumb.
 
