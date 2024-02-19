@@ -44,7 +44,7 @@ Offering choice is about _access_, not options or feature bloat. For example, dr
 
 > Help users focus on core tasks, features, and information by prioritizing them within the content and layout.
 
-Leveraging things like page layout, visual weight, and semantics leads to a more meaningful and actionable experience. 
+Leveraging things like page layout, visual weight, and semantics leads to a more meaningful and actionable experience.
 
 ## Add value
 

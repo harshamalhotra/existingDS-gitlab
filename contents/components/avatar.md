@@ -19,14 +19,13 @@ related:
 
 <story-viewer component="base-avatar-avatars-inline" title="Stack"></story-viewer>
 
-
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-2&mode=design)
 
 ## Structure
 
 <figure-img alt="Numbered diagram of an avatar structure" label="Avatar structure" src="/img/avatar-structure.svg"></figure-img>
 
-1. **Image or identicon**: A unique image or fallback representing the object. 
+1. **Image or identicon**: A unique image or fallback representing the object.
 1. **Label and sub-label** (optional): Text corresponding to the image or identicon.
 
 ## Guidelines

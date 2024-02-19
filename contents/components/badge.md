@@ -76,7 +76,7 @@ related:
 - When a badge only has an icon, the icon must use `aria-label` with text that identifies the metadata.
 - When an icon is present with text it must use `aria-hidden="true"` to avoid being announced by a screen reader.
 - When a badge is used as meta information to support content it's inline with, ensure that its meaning is clear. If necessary, add `sr-only` text after the badge. For example, `<gl-badge>9</gl-badge><span class="sr-only">to-do's</span>` clarifies what "9" quantifies.
-- If a badge isn't inline with the content it supports, use `aria-describedby="badgeID"` to associate the content with the badge, where `badgeID` is the unique ID of the badge. Note that `aria-describedby` support is mostly on focusable elements and headings. 
+- If a badge isn't inline with the content it supports, use `aria-describedby="badgeID"` to associate the content with the badge, where `badgeID` is the unique ID of the badge. Note that `aria-describedby` support is mostly on focusable elements and headings.
 
 ## Reference
 

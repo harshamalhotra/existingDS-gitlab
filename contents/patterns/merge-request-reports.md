@@ -252,7 +252,7 @@ The widgets are organized in an unordered list, which has the benefit of providi
 
 ### Empty state
 
-Merge request report widgets use an adapted version of the [configuration required](/patterns/empty-states#configuration-required) empty state. 
+Merge request report widgets use an adapted version of the [configuration required](/patterns/empty-states#configuration-required) empty state.
 
 - Use [level 1 layout](/patterns/merge-request-reports#level-1) with an info status icon.
 - Use a title and succinct description as the subject.

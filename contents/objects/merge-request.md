@@ -18,7 +18,7 @@ The conceptual model diagram below shows how objects, along with their attribute
 
 ## Semantic layout
 
-MR attributes and actions can be embedded in related objects, like issue or pipeline. 
+MR attributes and actions can be embedded in related objects, like issue or pipeline.
 
 The MR object is primarily represented in the UI using a **record** layout.
 This layout is shown below, with details about the meaning and purpose of each element. [Learn more about semantic layouts](/objects/overview#semantic-layouts).

@@ -33,13 +33,13 @@ related:
 
 ## Guidelines
 
-### When to use 
+### When to use
 
 A banner should be used sparingly and with consideration of its impact to neighboring components and the overall user experience to:
 
 - Inform a user of a feature that isn't enabled.
 - Promote a new feature.
-- Solicit user feedback. 
+- Solicit user feedback.
 
 ### When not to use
 

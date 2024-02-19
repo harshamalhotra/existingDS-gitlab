@@ -6,7 +6,7 @@ name: Affordance
 
 If a control or action is critical to a task, and cannot be achieved in another way, then it should be visible by default for all users and modalities (mouse, keyboard, touch, voice). While there may be an option for toggling visibility of such controls and actions, a user should be aware they exist before toggling them off.
 
-It may be possible to hide a control if the ability to access the same information or complete the same task are available nearby elsewhere, and if hiding it by default provides a better overall experience for all users and modalities. For example, hovering or focusing on an item in an email inbox list may reveal controls, like delete, that are also available when viewing the individual email itself. 
+It may be possible to hide a control if the ability to access the same information or complete the same task are available nearby elsewhere, and if hiding it by default provides a better overall experience for all users and modalities. For example, hovering or focusing on an item in an email inbox list may reveal controls, like delete, that are also available when viewing the individual email itself.
 
 ## Cursors
 

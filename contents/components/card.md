@@ -51,7 +51,7 @@ There are two different variants for the cards: vertical and horizontal.
 - Card width is fluid by default.
 - A card can be static or draggable when there is an option to reorder it within a set of other cards.
   - When dragging a card, any adjacent cards should remain visible.
-  - For touch devices, there should be a longer hold on the card to avoid collision with the act of scrolling. 
+  - For touch devices, there should be a longer hold on the card to avoid collision with the act of scrolling.
   - When a card is currently being dragged, there should be an indication it's in a draggable state.
 - If a card contains an action, a button or link inside the card should trigger the action, not the entire card.
 
@@ -73,14 +73,14 @@ There are two different variants for the cards: vertical and horizontal.
 
 #### Image
 
-- For horizontal layout, the image should be top/left-aligned with the content container. 
+- For horizontal layout, the image should be top/left-aligned with the content container.
 - For vertical layout, the image should be center-aligned with the content container.
 
 #### Button
 
 - Buttons are left aligned, except in right-to-left languages where they are right aligned and should follow the [alignment and order guidelines for buttons](https://design.gitlab.com/components/button#alignment).
 - Contains the primary and secondary action (if applicable) for a card.
-- Located below the content. 
+- Located below the content.
 
 ### Accessibility
 

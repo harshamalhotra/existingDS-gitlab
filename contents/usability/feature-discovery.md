@@ -12,13 +12,12 @@ New features can enhance the experience and unlock significant value for users. 
 2. Their motivation for the task.
 3. The prompt that triggers the behavior.
 
-
 Prompts to trigger the desired behavior succeed when motivation and ability are high enough. We can improve a user's _ability_ to perform a task by guiding them using discovery patterns and boost their _motivation_ by clearly communicating the value of a task. Keeping these principles in mind helps us to improve both the experience and make it more likely that a user achieves their desired outcome.
 
 **Before introducing new feature discovery patterns consider the following:**
 
 * Why does this feature need to be promoted? Is it a value driver that leads to an increase in conversion?
-* Is it possible to design the feature so that it doesn't need to be actively promoted? 
+* Is it possible to design the feature so that it doesn't need to be actively promoted?
 * Does the discovery pattern need to be shown to all users or only a subset? Who is the target [user persona](https://about.gitlab.com/handbook/marketing/strategic-marketing/roles-personas/#user-personas) or user role?
 * If a feature is already being promoted on the page, will the new notice compete with it? Should it replace it instead?
 * If two features need a discovery pattern, can they be bundled into one? This may be possible, for example, if they are part of the same [Job to be Done](https://about.gitlab.com/handbook/engineering/ux/jobs-to-be-done/).
@@ -29,13 +28,13 @@ Use input data to determine where, when, and why a feature discovery pattern is 
 
 ### Contextual notices
 
-Contextual notices are unobtrusive messages that appear when a user interacts with specific UI elements. They relate directly to an action that a user or namespace has performed. Once dismissed, the notice does not reappear unless the user attempts to re-engage with that feature. 
+Contextual notices are unobtrusive messages that appear when a user interacts with specific UI elements. They relate directly to an action that a user or namespace has performed. Once dismissed, the notice does not reappear unless the user attempts to re-engage with that feature.
 
 <figure-img alt="Contextual menu example" label="Contextual menus can reveal additional features relevant to the selected item" src="/img/contextual-menu-example.png" width="340"></figure-img>
 
 ### Contextual links
 
-Alongside relevant features, in-page [links](/components/link) allow a user to directly access or enable a feature without navigating through multiple layers of menus. 
+Alongside relevant features, in-page [links](/components/link) allow a user to directly access or enable a feature without navigating through multiple layers of menus.
 
 <img class="gl-display-block gl-mx-auto gl-mt-7" src="/img/contextual-link-example.png" alt="Contextual link example" />
 
@@ -47,7 +46,7 @@ Design elements, like [icons](/product-foundations/iconography/icons) and [badge
 
 ### Banners
 
-A [banner](/components/banner) can promote awareness of a new feature, but should be used sparingly. A banner that doesn't match the user's current context can feel irrelevant and contribute to banner blindness or fatigue. A user might start ignoring _all_ banners without fully reading the content. 
+A [banner](/components/banner) can promote awareness of a new feature, but should be used sparingly. A banner that doesn't match the user's current context can feel irrelevant and contribute to banner blindness or fatigue. A user might start ignoring _all_ banners without fully reading the content.
 
 <story-viewer component="base-banner" story="no-image" title="Promotion"></story-viewer>
 

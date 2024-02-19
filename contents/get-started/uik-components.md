@@ -120,8 +120,9 @@ Here are the standard properties and value ordering that can be used. If you nee
 
 Some properties directly relate to others. They can always be available, or conditionally available based on the value of another property.
 
-- Ensure a related property is directly below the main property and prefix it with `↳`. There can be multiple related properties. For example:  
-  ```
+- Ensure a related property is directly below the main property and prefix it with `↳`. There can be multiple related properties. For example:
+
+  ```plaintext
   Has label = "true"
   ↳ Text = "Text property"
   ```

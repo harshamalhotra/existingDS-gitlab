@@ -37,8 +37,8 @@ related:
 
 ### Appearance
 
-- By default, popovers are placed above the referring element. 
-- When there isn’t enough space in the viewport, the popover is moved to the side or below as needed. 
+- By default, popovers are placed above the referring element.
+- When there isn’t enough space in the viewport, the popover is moved to the side or below as needed.
 - If a popover blocks related content, the placement can be manually set to avoid this.
 - To optimize for readability, content within popovers uses left-alignment.
 - Be mindful of the popover content that could overflow the viewport, and avoid popovers that flex 100% of the container width.
@@ -49,21 +49,22 @@ related:
 - A popover is opened by clicking on an element that has the sole purpose of triggering it.
 - When the popover is visible, the <kbd>Tab</kbd> key moves focus through any interactive elements within it.
 - A popover can be dismissed by:
-    - Clicking on the close button within it.
-    - Clicking outside of it.
-    - The <kbd>Tab</kbd> key moving focus to another element. 
-    - The <kbd>Esc</kbd> key being pressed.
+  - Clicking on the close button within it.
+  - Clicking outside of it.
+  - The <kbd>Tab</kbd> key moving focus to another element.
+  - The <kbd>Esc</kbd> key being pressed.
 
 ### Content
 
 - A popover can contain interactive content such as a [link](/components/link) or [button](/components/button).
 - A popover can contain rich content like an [avatar](/components/avatar).
-- All copy within a popover should be short, actionable, and use clear language. 
-- The copy in the header should be shorter and even more concise than the copy in the body of the popover. 
+- All copy within a popover should be short, actionable, and use clear language.
+- The copy in the header should be shorter and even more concise than the copy in the body of the popover.
 - The body can contain a link.
 
 ### Accessibility
 
 When the popover is visible:
+
 - The focus can move to the next logical interactive element in the DOM and doesn't loop in the popover.
 - The content within is next in the reading order from the trigger element and not appended to the DOM.

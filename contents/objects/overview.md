@@ -5,6 +5,7 @@ name: Objects overview
 Objects are the building blocks of GitLab. They exist within users' mental models for our product, and are consistently referenced across all levels of the product stack: database, code, user interface (UI), documentation, customer support, sales, marketing, and more.
 
 Examples of objects from products you may know:
+
 * Facebook: friend, post, message, event, page, group.
 * Airbnb: listing, host, guest, trip, experience.
 * Slack: team, member, channel, message, reaction, thread.
@@ -53,6 +54,6 @@ To add or update an object's documentation, conceptual model, or semantic layout
 
 ## Learn more
 
-- The role of objects in a design system: [“The full stack design system”](https://www.intercom.com/blog/the-full-stack-design-system/)
-- Primer on conceptual models: [“Object Modeling for Designers”](https://medium.com/@hpadkisson/object-modeling-for-designers-an-introduction-7871bdcf8baf)
-- Deep-dive on conceptual models and their role in an interaction design framework: “UX Magic” [book](https://www.amazon.com/UX-Magic-Daniel-Rosenberg-ebook/dp/B083QJ8RZ2), [14-min overview article](https://medium.com/the-interaction-design-foundation/the-magic-of-semantic-interaction-design-1864ccafdc51), [1-hour master class](https://www.youtube.com/watch?v=CXkpjzEaHpU).
+* The role of objects in a design system: [“The full stack design system”](https://www.intercom.com/blog/the-full-stack-design-system/)
+* Primer on conceptual models: [“Object Modeling for Designers”](https://medium.com/@hpadkisson/object-modeling-for-designers-an-introduction-7871bdcf8baf)
+* Deep-dive on conceptual models and their role in an interaction design framework: “UX Magic” [book](https://www.amazon.com/UX-Magic-Daniel-Rosenberg-ebook/dp/B083QJ8RZ2), [14-min overview article](https://medium.com/the-interaction-design-foundation/the-magic-of-semantic-interaction-design-1864ccafdc51), [1-hour master class](https://www.youtube.com/watch?v=CXkpjzEaHpU).

@@ -54,12 +54,12 @@ The marketing icons are created using the 8px grid system found within this [tem
 - Diagrams use plenty of white space to make the story easy to follow and understand.
 - Orange 03p or Teal 02s can be used sparingly on icons to denote a positive or negative association. **Example:** Orange 03p for an X, or Teal 02s for a check mark.
 - With white backgrounds, use Charcoal for the linework and type.
-   - Gray 03 can be used for dashed lines and motion lines
-   - Purple 01s can be used to add depth to elements or as an extra layer of color in the background.
+  - Gray 03 can be used for dashed lines and motion lines
+  - Purple 01s can be used to add depth to elements or as an extra layer of color in the background.
 - With Charcoal backgrounds, use white for the linework and type.
-   - Gray 03 can be used for dashed lines and motion lines.
-   - Purple 01s can be used in parts of the linework to highlight and/or direct the user’s eye through the flow of the diagram.
-   - Gray 05 can be used to add depth to elements or used as an extra layer of color in the background.
+  - Gray 03 can be used for dashed lines and motion lines.
+  - Purple 01s can be used in parts of the linework to highlight and/or direct the user’s eye through the flow of the diagram.
+  - Gray 05 can be used to add depth to elements or used as an extra layer of color in the background.
 
 ### Linework
 
@@ -70,11 +70,11 @@ The marketing icons are created using the 8px grid system found within this [tem
 ### Marketing icons
 
 - Lines should break before touching an icon, unless the icon is contained within a circle.
-- When using an icon within a circle, ensure the icon has 25% padding around it. 
+- When using an icon within a circle, ensure the icon has 25% padding around it.
 
 ### Logo
 
 - A single-color tanuki (either Charcoal or Orange 02p) can be used sparingly in diagrams to denote a product feature.
-- When representing how the GitLab product works in conjunction with or compared to another product, use the core logo. 
+- When representing how the GitLab product works in conjunction with or compared to another product, use the core logo.
 
 <figure-img alt="A light and dark background version of a diagram detailing the DevOps lifecycle journey" label="Diagram sample" src="/img/brand/diagram.svg"></figure-img>

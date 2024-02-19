@@ -249,7 +249,7 @@ Avoid using different icons to refer to one specific meaning. For example, [penc
 
 #### Icons with multiple meanings
 
-There are, however, several icons whose design doesn't match a single metaphor, but multiple. In these cases, meaning must be provided in context. Examples of these cases are: 
+There are, however, several icons whose design doesn't match a single metaphor, but multiple. In these cases, meaning must be provided in context. Examples of these cases are:
 
 - An '×' icon in a close button on a modal can also represent a failed status.
 - An 'eye' icon to indicate a confidential issue can also be used to show a password, or to view a preview of an object.
@@ -280,7 +280,7 @@ Existing [GitLab SVGs icons](http://gitlab-org.gitlab.io/gitlab-svgs/) haven't h
 - When an icon represents a recognizable object, use the name of the object. For example, an icon of a pencil that represents editing is named 'pencil'.
 - When an icon represents an abstract metaphor or concept, choose a name that best represents the concept or use case. For example, an icon made of stacked shapes to represent an epic is named 'epic'.
 - The file name should be lowercase and use hyphens as a separator between terms. For example, 'cloud-gear'.
-- Icons in the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715) Figma file contain keywords and usage details in the component description (each icon is a component) to help unite naming with use and concepts. We hope to eventually have similar capabilities in the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) website. 
+- Icons in the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715) Figma file contain keywords and usage details in the component description (each icon is a component) to help unite naming with use and concepts. We hope to eventually have similar capabilities in the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) website.
 
 ## Usage
 

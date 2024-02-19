@@ -113,7 +113,7 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 - Within a listbox:
   - Section titles can categorize options into meaningful groups.
   - Option text should be concise and clearly indicate the choice it represents.
-  - When possible, the order of options should follow numeric (Option 1, Option 2, Option 3…), alpha (Option A, Option B, Option C…), or natural (Option 1–3, Option 4–7, Option 8–11…) ordering. 
+  - When possible, the order of options should follow numeric (Option 1, Option 2, Option 3…), alpha (Option A, Option B, Option C…), or natural (Option 1–3, Option 4–7, Option 8–11…) ordering.
 - Actions within a footer should be concise and relate to the options.
 
 ### Accessibility

@@ -36,7 +36,7 @@ We need to build empathy with our users. This means we must understand their sta
 1. **Bold sub principle(s) title** Explanation, plus optional reference
   - Example(s), plus link towards a reference in real-life
 -->
-    
+
 ## References
 
 - [Design systems handbook - Design better](https://www.designbetter.co/design-systems-handbook/expanding-design-system)

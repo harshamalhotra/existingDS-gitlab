@@ -49,21 +49,20 @@ The table is based on the configuration of `1rem = 16px` and `$grid-size = 8px`.
 | Spacing variable name | Pixel size |
 | ------ | ------ |
 | $gl-spacing-scale-1 | 2 px |
-| $gl-spacing-scale-2	| 4 px |
-| $gl-spacing-scale-3	| 8 px |
-| $gl-spacing-scale-4	| 12 px |
-| $gl-spacing-scale-5	| 16 px |
-| $gl-spacing-scale-6	| 24 px |
-| $gl-spacing-scale-7	| 32 px |
-| $gl-spacing-scale-8	| 40 px |
-| $gl-spacing-scale-9	| 48 px |
+| $gl-spacing-scale-2 | 4 px |
+| $gl-spacing-scale-3 | 8 px |
+| $gl-spacing-scale-4 | 12 px |
+| $gl-spacing-scale-5 | 16 px |
+| $gl-spacing-scale-6 | 24 px |
+| $gl-spacing-scale-7 | 32 px |
+| $gl-spacing-scale-8 | 40 px |
+| $gl-spacing-scale-9 | 48 px |
 | $gl-spacing-scale-10 | 56 px |
-| $gl-spacing-scale-11	| 64 px |
-| $gl-spacing-scale-11-5	| 72 px |
-| $gl-spacing-scale-12	| 80 px |
-| $gl-spacing-scale-13	| 96 px |
-| $gl-spacing-scale-15	| 120 px |
-| $gl-spacing-scale-20	| 160 px |
+| $gl-spacing-scale-11 | 64 px |
+| $gl-spacing-scale-11-5 | 72 px |
+| $gl-spacing-scale-12 | 80 px |
+| $gl-spacing-scale-13 | 96 px |
+| $gl-spacing-scale-15 | 120 px |
+| $gl-spacing-scale-20 | 160 px |
 
 <note>Anytime you see a spacing variable, the number will correspond with the spacing scale here. For example, `.gl-pr-4` uses `$gl-spacing-scale-4` which equals `12px`.</note>
-

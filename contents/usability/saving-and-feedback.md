@@ -42,7 +42,7 @@ We also need to warn the user if they try to leave the page before the changes a
 
 <todo>Add live component block with code example (toast on screen as designed in [this issue](https://gitlab.com/gitlab-org/gitlab-design/issues/121#auto-save))</todo>
 
-##### Guidelines
+#### Guidelines
 
 Never apply to whole forms (example: adding a personal access token needs a name, expiration date, and access scope; it doesn’t make sense to auto-save the token name field individually). The auto-save method should ideally be only used for data that affects the user editing it. Auto-saving shouldn’t be applied to data that might have financial, security, or privacy impacts, example: changing password or changing the confidentiality of an issue.
 

@@ -7,7 +7,7 @@ gitlab_ui: upcoming
 
 ---
 
-A mini pipeline graph is a visualization of a CI/CD pipeline. 
+A mini pipeline graph is a visualization of a CI/CD pipeline.
 
 ## Usage
 

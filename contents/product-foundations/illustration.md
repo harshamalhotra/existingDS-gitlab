@@ -116,6 +116,7 @@ An isometric grid provides depth to concepts which can convey process, relations
 <figure-img alt="Isometric grid lines and subgrid lines" label="Isometric grid and subgrids" src="/img/illus-isometric.svg"></figure-img>
 
 <todo>Add isometric example</todo>
+
 #### Size
 
 While an illustration will always be created using one of the grid sizes above, the final output dimensions follow these rules:

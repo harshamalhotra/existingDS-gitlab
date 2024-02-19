@@ -111,7 +111,7 @@ Green and light green share the same `$theme-green-` SCSS variables.
 
 ### Dark / Light
 
-The dark and light (gray) themes use the [neutral palette](#neutral-palette).
+The dark and light (gray) themes use the [neutral palette](#neutral).
 
 ## Interactive states
 

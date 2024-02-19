@@ -151,6 +151,13 @@ danger-review:
         - node_modules/
       policy: $CACHE_POLICY
 
+check_markdown:
+  extends:
+    - .node-job
+  stage: test
+  script:
+    - yarn markdown-lint
+
 check_links:
   extends:
     - .node-job

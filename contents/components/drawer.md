@@ -35,7 +35,7 @@ related:
 1. **Title**: Conveys the purpose of the drawer.
 1. **Close button**: Closes the drawer.
 1. **Top-level actions** (optional): Buttons or links used to provide explicit action(s) the user can take related to the entire drawer content.
-1. **Content**: Contains a wide variety of content types and controls depending on the purpose, related content, and contextual user tasks. 
+1. **Content**: Contains a wide variety of content types and controls depending on the purpose, related content, and contextual user tasks.
 1. **Contextual actions** (optional): Buttons or links used to provide contextual action(s) in relation to the content within the drawer.
 
 ## Guidelines
