@@ -1,3 +1,19 @@
+# [2.188.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.187.0...v2.188.0) (2024-02-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.3.1 ([b4cc05f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b4cc05f9309fb6ce551ed8bb899820f6e0a4e038))
+* **deps:** update dependency @gitlab/ui to v74.7.0 ([f223548](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f223548ef3cf20ed4c00ece572e410eb83c5c34e))
+* Switch from clicking icon to row ([e8a39f1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/e8a39f165d272a202f2ed9c0bf72ba7559b864cf))
+
+
+### Features
+
+* add duo pro add on definition ([01b6651](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/01b66512e0dadffd61017be52f9e529572db915d))
+* **BrandColor:** updating color palette ([45c0097](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/45c0097a3835a1754dad14d190d1f0c09e9b3d3c))
+* **ReleaseNotes:** 16.9 release notes ([b5e89ab](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b5e89abc294026d6dff35c30fee3fe85667305f3))
+
 # [2.187.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.186.0...v2.187.0) (2024-02-12)
 
 
