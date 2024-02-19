@@ -1424,16 +1424,18 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.83.0.tgz#5d6799e5fe3fb564b7e4190d90876469bd1608ba"
   integrity sha512-881f6OsxREgBXYn9fkg+XGweBFbrGdrssrIzFIZFSG95GF/K+HILw1mXZ9nq7C5Xb5JDWPKJGYnKuHw5vvWm5Q==
 
-"@gitlab/ui@74.3.1":
-  version "74.3.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-74.3.1.tgz#74f068caaf793b48bb1151b16813e7e1a4e46ada"
-  integrity sha512-gKjUIy6NIvQXcCMxqcrDAIDlP3fbzR7nRnhTm4VUJRgUmr9NBL103j/6p83Kz5/X6Y8tnmu3Ero/X8UhbU2ffQ==
+"@gitlab/ui@74.7.0":
+  version "74.7.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-74.7.0.tgz#58493e867cfa0fc6e8ea035dc7e89f7a3748bc24"
+  integrity sha512-IXDyfv/Jb0bFBJOaAOl1cb4pI4WXucPi74hcIBYaWcDerBKhrGlcJwA0mvx3VcesFa8s2mwQUNcZ1FAXiUwqFA==
   dependencies:
     "@floating-ui/dom" "1.4.3"
     bootstrap-vue "2.23.1"
     echarts "^5.3.2"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
+    marked "^12.0.0"
+    marked-bidi "^1.0.8"
     portal-vue "^2.1.6"
     vue-runtime-helpers "^1.1.2"
 
@@ -8474,10 +8476,20 @@ markdown-table@^2.0.0:
   dependencies:
     repeat-string "^1.0.0"
 
+marked-bidi@^1.0.8:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/marked-bidi/-/marked-bidi-1.0.9.tgz#16ca7d87f9acc87f8ce1ec34b34c1c20e825720b"
+  integrity sha512-nVFPysVKno/KBRF2vPurez/nmN3sdhB+Sm0qBxJgqPkk0ltYUs96SNswE4YcGUcCq8Smk0mHmURM/y15zKt7eA==
+
 marked@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-10.0.0.tgz#7fe1805bb908433d760e2de0fcc8841a2b2d745c"
   integrity sha512-YiGcYcWj50YrwBgNzFoYhQ1hT6GmQbFG8SksnYJX1z4BXTHSOrz1GB5/Jm2yQvMg4nN1FHP4M6r03R10KrVUiA==
+
+marked@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.0.tgz#051ea8c8c7f65148a63003df1499515a2c6de716"
+  integrity sha512-Vkwtq9rLqXryZnWaQc86+FHLC6tr/fycMfYAhiOIXkrNmeGAyhSxjqu0Rs1i0bBqw5u0S7+lV9fdH2ZSVaoa0w==
 
 md5.js@^1.3.4:
   version "1.3.5"
