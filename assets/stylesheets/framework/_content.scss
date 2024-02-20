@@ -127,17 +127,19 @@
 
 // Links in body content
 
-.typography {
+.typography,
+.app-styles.admonition {
   a {
+    color: $blue-700;
     text-decoration: underline;
 
     &:hover,
     &:focus {
-      color: $blue-600;
+      color: $blue-800;
     }
 
     &:active {
-      color: $blue-700;
+      color: $blue-900;
     }
   }
 }
