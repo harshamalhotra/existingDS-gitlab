@@ -29,7 +29,7 @@ export default {
 
 <template>
   <span
-    class="admonition admonition--todo gl-rounded-base app-styles gl-rounded-base gl-flex-wrap gl-mb-5"
+    class="app-styles admonition admonition--todo gl-rounded-base gl-rounded-base gl-flex-wrap gl-mb-5"
   >
     <div class="gl-display-flex gl-align-items-center">
       <gl-icon name="document" :size="16" class="gl-mr-3 gl-text-gray-500" />
