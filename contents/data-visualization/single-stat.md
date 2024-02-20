@@ -50,6 +50,12 @@ A single stat with a badge which can be used to convey status or trend in more d
 
 <story-viewer component="charts-single-stat" story="with-meta-icon" title="With Badge" args-variant="info" args-meta-text="through the roof" args-meta-icon="rocket"></story-viewer>
 
+### Link
+
+A single stat that navigates to detailed information about a metric.
+
+<todo>Add linked single stat example.</todo>
+
 ## Design specifications
 
 Color, spacing, dimension, and layout information can be viewed in the [Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=275%3A731)
