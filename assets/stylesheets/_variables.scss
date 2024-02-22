@@ -18,22 +18,6 @@ $gl-spacing-11: 128px;
 $gl-spacing-12: 176px;
 $gl-spacing-13: 256px;
 
-$sizes: (
-  1: 2px,
-  2: 4px,
-  3: 8px,
-  4: 12px,
-  5: 16px,
-  6: 24px,
-  7: 32px,
-  8: 48px,
-  9: 64px,
-  10: 96px,
-  11: 128px,
-  12: 176px,
-  13: 256px
-);
-
 /*
  * Framework
  */
@@ -43,26 +27,14 @@ $page-width: 54rem;
 $sidebar-width: 256px;
 
 /*
- * Tanuki logo colors
- */
-
-$tanuki-red: #e24329;
-$tanuki-orange: #fc6d26;
-$tanuki-yellow: #fca326;
-$gitlab-logo-grey: #8c929d;
-
-/*
  * Typography
  */
 
 $base-font-size: 14px;
-$lg-font-size: 16px;
-$base-grid: 8px;
-$base-grid--typography: 4px;
 $anchor-color: $blue-600;
 
 /*
- * UI elements
+ * Border
  */
 
 $border-color: $gray-100;
@@ -70,7 +42,7 @@ $border-width: 1px;
 $border-radius: $gl-spacing-2;
 
 /*
- * Z Indexs
+ * Z Indexes
  */
 
 $z-nav-skip-link: 500;

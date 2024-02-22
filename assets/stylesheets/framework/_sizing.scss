@@ -1,7 +1,0 @@
-// from https://github.com/twbs/bootstrap/blob/v4-dev/scss/utilities/_sizing.scss
-
-@each $prop, $abbrev in (width: w, height: h) {
-  @each $size, $length in $sizes {
-    .#{$abbrev}-#{$size} { #{$prop}: $length; }
-  }
-}

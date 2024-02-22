@@ -6,26 +6,17 @@
 
 @import 'framework/fonts';
 @import 'framework/base';
-@import 'framework/color';
 @import 'framework/skip-link';
 @import 'framework/content';
 @import 'framework/footer';
 @import 'framework/logo';
 @import 'framework/navbar';
 @import 'framework/sidebar';
-@import 'framework/sizing';
 @import 'framework/typography';
 
-@import 'components/card';
-@import 'components/logo';
 @import 'components/table';
 
 @import 'pages/index';
-@import 'pages/p_baseline-grid';
-@import 'pages/p_spacing';
-
-@import 'pages/p-color';
-@import 'pages/p_components';
 @import 'pages/p_icons_explorer';
 
 @import '@gitlab/ui/src/scss/utilities';
