@@ -67,7 +67,7 @@ Neutrals are primarily used for surfaces and within components to help different
 
 ### Transparency
 
-Transparency is used only to effectively shade an element in relation to the surface below.
+Transparency is used only to effectively shade an element in relation to the surface below. See [blend modes and opacity](#blend-modes-and-opacity).
 
 #### Gray
 
@@ -129,6 +129,14 @@ Typical state changes (light UI):
     A primary confirm button example with a <code>$blue-500</code> fill at rest (1), a <code>$blue-600</code> fill for hover and focus (2, 3), and a <code>$blue-700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
   </template>
 </figure-img>
+
+## Blend modes and opacity
+
+It's preferred to used solid colors (no transparency or effects) for the highest level of predictability and consistency. However, there are limited instances where transparency (alpha) or `mix-blend-mode` can be used. For example, a component or element that can be placed on multiple surface colors, where the surface color may conflict with the component color or reduce contrast below a [satisfactory contrast ratio](/accessibility/visual#contrast).
+
+A [tertiary button](/components/button#categories) is one component that uses a `mix-blend-mode` because the background on hover can be the same, or have similar lightness to, the surface color. Likewise, the chevron icons in the [navigation left sidebar](/patterns/navigation) in GitLab use `mix-blend-mode` to maintain at least a 3:1 contrast ratio against various theme background colors.
+
+If a specific hex value is desired, use a solid color instead of approximating it with transparency or a blend mode.
 
 ## Accessibility
 
