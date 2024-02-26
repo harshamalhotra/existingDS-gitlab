@@ -1,3 +1,24 @@
+# [2.189.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.188.0...v2.189.0) (2024-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/application-sdk-browser to ^0.3.2 ([fa8bab3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/fa8bab3c08f693d970fb12c95acc3d27e0898e75))
+* **deps:** update dependency @gitlab/svgs to v3.85.0 ([9fa13ba](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/9fa13ba9ef4328bd60710b0cec3b4c4538195dba))
+* **deps:** update dependency @gitlab/ui to v75 ([d9275b0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d9275b097e42ccf5939c951898586c7f627120ea))
+* **deps:** update dependency @gitlab/ui to v76 ([b8eaa8c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b8eaa8c2c36516bb7a5532498bdb584f5db51416))
+* **Search:** Fix icon position typo ([1d18560](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1d18560aeb4e8b88ce6f183f396d9f8980e0e542))
+* Update admonition links ([99017e2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/99017e29ea892d8357b505470913e3f5f1872e0d))
+
+
+### Features
+
+* **Color:** Document alpha and blend mode ([984af9e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/984af9ebf7fe2465aa82016b0dfc1729bca479bd))
+* add documentation about acceptance of terms ([d24a3cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d24a3cd96849dec94ddd97af4ecb765ee06970aa))
+* **DesignTokens:** Add initial usage guidelines ([0a266cb](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0a266cba9fe6cbdcfc7869e3e6972d06f6fbba9c))
+* **Popover:** Docs cleanup ([b21419d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b21419d0ba008c25e19a303a9ddb32284203f6bd))
+* **SingleStat:** Add link variant usage guidelines ([0e6ba05](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0e6ba0511a85ba9b9dc58c57b2716dccf03883a7))
+
 # [2.188.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.187.0...v2.188.0) (2024-02-19)
 
 
