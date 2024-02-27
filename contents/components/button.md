@@ -225,6 +225,10 @@ Button groups visually group buttons that have similar or related actions togeth
 ### Accessibility
 
 - Maintain parity between focus order and visual order (don't use CSS to reorder buttons).
+- A visible focus state must always be present, regardless of the mode of operation (mouse, keyboard, other). We currently rely on `:focus` for this state. In the future, we may explore the use of [`:focus-visible`](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible), but more research needs to happen first, specifically around browser heuristics. Many kinds of users benefit from visible focus indicators (like a focus ring), not just keyboard users. From [Understanding SC 2.4.7](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html) (for [Focus Visible](https://www.w3.org/TR/WCAG22/#focus-visible) (Level AA)): "People with attention limitations, short term memory limitations, or limitations in executive processes benefit by being able to discover where the focus is located." Matsuko's [Understanding Visible Focus Indicators](https://craftcms.com/blog/understanding-visible-focus-indicators) lists additional examples of users that benefit from visible focus indicators:
+  - Users using alternative input devices, such as keyboards and switches.
+  - Users with low vision.
+  - Users with cognitive disabilities, especially those that affect memory or attention such as dementia and ADHD (Attention-Deficit/Hyperactivity Disorder).
 - Icon-only buttons must use `aria-label` to indicate the action.
 - When an icon is used with a text label, the icon should be hidden from screen readers with `aria-hidden="true"`.
 
