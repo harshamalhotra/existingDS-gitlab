@@ -95,6 +95,10 @@ Objective-focused content that starts with the task first and then offers the so
 | Monitor your errors by integrating with Sentry | Integrate with Sentry to monitor your errors |
 | To see what’s changed, choose a branch or enter a commit. | Choose a branch or enter a commit to see what's changed. |
 
+## Capitalization
+
+Use sentence case for field labels and column headings. Avoid title case.
+
 ## Other resources
 
 - Capitalization of [feature names](https://docs.gitlab.com/ee/development/documentation/styleguide/#feature-names) and [other terms](https://docs.gitlab.com/ee/development/documentation/styleguide/#other-terms)
