@@ -1,7 +1,7 @@
 @mixin type-scale($scale, $line-height, $margin-bottom: 0, $margin-top: 24px) {
   font-size: $base-font-size + ($scale * 2);
-  line-height: $line-height * $base-grid--typography;
-  margin-bottom: $margin-bottom * $base-grid;
+  line-height: $line-height * 4px;
+  margin-bottom: $margin-bottom * 8px;
   margin-top: $margin-top;
 }
 

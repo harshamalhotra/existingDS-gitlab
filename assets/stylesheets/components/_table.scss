@@ -33,16 +33,6 @@ td {
   vertical-align: top;
 }
 
-.status-table {
-  table-layout: fixed;
-
-  th {
-    position: sticky;
-    top: -2px;
-    z-index: 100;
-  }
-}
-
 // Compact table
 
 .table-compact {
