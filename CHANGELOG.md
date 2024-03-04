@@ -1,3 +1,15 @@
+# [2.190.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.189.0...v2.190.0) (2024-03-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v77 ([f06f9cd](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f06f9cda9166f57af825483b880202865550a0d7))
+
+
+### Features
+
+* **Button:** Add focus note ([20b3301](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/20b330147f948b2a16dfe740f1a20fb6ad11bc4c))
+
 # [2.189.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.188.0...v2.189.0) (2024-02-26)
 
 
