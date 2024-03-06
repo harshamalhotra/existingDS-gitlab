@@ -161,6 +161,7 @@ export default {
     '~/modules/nuxt_content_extension.js',
     '~/modules/nuxt_lunr_content_bridge.js',
     '@nuxtjs/lunr-module',
+    '@nuxtjs/tailwindcss',
     '@nuxt/content',
   ],
 
