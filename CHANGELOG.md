@@ -1,3 +1,11 @@
+## [2.190.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.190.0...v2.190.1) (2024-03-11)
+
+
+### Bug Fixes
+
+* add tailwindcss config ([611789c](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/611789c27e7dbb03d94f459ca8350c97c3ac1530))
+* **deps:** update dependency @gitlab/svgs to v3.88.0 ([183e97e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/183e97eb71f7bd688f506f5ee31fb4f62213a796))
+
 # [2.190.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.189.0...v2.190.0) (2024-03-04)
 
 
