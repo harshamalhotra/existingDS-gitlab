@@ -173,8 +173,13 @@
             "path": "elevation"
           },
           {
-            "title": "Motion",
-            "path": "motion"
+            "title": "Animation",
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "animation-fundamentals"
+              }
+            ]
           },
           {
             "title": "Iconography",
