@@ -1,3 +1,12 @@
+## [2.190.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.190.1...v2.190.2) (2024-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/svgs to v3.91.0 ([9383552](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/938355231e90bcb4981599398b274abb5de675db))
+* **deps:** update dependency @gitlab/ui to v78 ([d8e6e91](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d8e6e917374c3169e31067209d0740caf3529183))
+* **deps:** update dependency mermaid to ^10.9.0 ([55cb67e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/55cb67e910cb4ce39ed4b8147b9f724e292834be))
+
 ## [2.190.1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.190.0...v2.190.1) (2024-03-11)
 
 
