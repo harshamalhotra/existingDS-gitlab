@@ -4,7 +4,7 @@ name: Release notes
 
 ## 16.11
 
-_[Draft: 16.11 release notes](ADD LINK BEFORE MERGE)_
+_[Draft: 16.11 release notes](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3777)_
 
 ## 16.10
 
