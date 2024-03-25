@@ -1,3 +1,17 @@
+# [2.191.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.190.2...v2.191.0) (2024-03-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v78.2.3 ([431ada8](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/431ada8e23e1ccaa2f1a0d4eb74623931af8f406))
+* Include draft notes link ([2518645](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2518645d19e1e8bf79b96ee8a34ae5876d3fa89f))
+
+
+### Features
+
+* **brand:** Update deck templates ([d6131d7](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d6131d73c662925cb5d5d8abdf0e31cbb50c3060))
+* **ReleaseNotes:** 16.10 release notes ([c76083d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c76083d0ca33a1224eca0915411e2404f2d7a986))
+
 ## [2.190.2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.190.1...v2.190.2) (2024-03-18)
 
 
