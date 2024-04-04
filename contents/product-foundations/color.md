@@ -6,26 +6,32 @@ name: Color
 
 There are three color palettes used in the product:
 
-1. [UI](#ui) - For all surfaces, content, and UI elements.
+1. [UI](#ui) - For all surfaces, content, and user interface (UI) elements.
 1. [Themes](#themes) - For user preferences and to differentiate GitLab instances.
 1. [Data visualization](/data-visualization/color) - For all data visualization, including charts and graphs.
 
-The main function of color is to optimize the visual presentation of content by establishing a meaningful hierarchy, indicating interaction, and communicating meaning. The following concepts help to think about color use consistently, regardless of mode or context.
+Colors are [constant design tokens](/product-foundations/design-tokens#constant-design-tokens) that keep use predictable and consistent. The main function of color is to optimize the visual presentation of content by establishing a meaningful hierarchy, indicating interaction, and communicating meaning. The following principles help to think about color use consistently.
 
-### Concepts
+### Design principles
 
-- Surfaces are top lit by a single, invisible, white-light source.
-- Surfaces reflect light and don't emit it.
+The same palettes are used for light and dark UI, though they may be applied differently in each. The following principles and considerations apply generally, and to light and dark UI respectively.
+
+- Surfaces are top lit by a single, invisible, pure white light source.
+- Surfaces reflect light and don't emit it or glow.
 - Forward elements are lighter and receding ones are darker.
-- In a light UI, surfaces are made of light materials and text uses darker colors.
-- In a dark UI, surfaces are made of dark materials and text uses lighter colors.
 - UI elements, like buttons and alerts, rely on chromatic hues and neutrals for meaning and hierarchy, and adapt contrast based on the surface.
+
+| Light UI | Dark UI |
+| ------ | ------ |
+| Surfaces are made of light materials and text uses darker colors. | Surfaces are made of dark materials and text uses lighter colors. Some elements will feel dimmed, while others feel inverted. |
+| Shadows and borders are stronger indicators of depth than brightness. | Brightness is a stronger indicator of depth than shadows or borders. |
+| More color may be needed to indicate meaning or draw attention to an element as more light is being cast from the display. | Color stands out more in dark UI, and as a result, less of it may be needed to convey the same meaning or draw the same amount of attention as in light UI. |
 
 ## UI
 
 ### Chromatic
 
-We have five primary chromatic hues and their color steps, totaling 55 color variables for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
+We have five primary chromatic color ramps that include a total 55 colors for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
 
 Though deciding which color to use depends on the situation, here are some general guidelines for using the chromatic hues:
 
