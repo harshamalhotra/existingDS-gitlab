@@ -2,9 +2,23 @@
 name: Release notes
 ---
 
+## 17.0
+
+[_Draft: 17.0 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3801)
+
 ## 16.11
 
-_[Draft: 16.11 release notes](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3777)_
+<!-- Update publish date-->
+<small>Published 2024-04-15</small>
+
+### Additions
+
+- Added the following icons: [**milestone**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~milestone), [**regular expression**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~regular-expression).
+- Added the following illustrations: [**cloud-tanuki-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/cloud-tanuki-sm.svg), [**cloud-user-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/cloud-user-sm.svg).
+
+### Changes
+
+- Moved [**Button group**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=117033%3A15878) components to their own page.
 
 ## 16.10
 
@@ -29,7 +43,7 @@ _[Draft: 16.11 release notes](https://gitlab.com/gitlab-org/gitlab-services/desi
 - Updated **Table** / [**_Base&nbsp;header&nbsp;cell**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48707-59823&mode=design&t=ETApnqRp7cnd70Dz-11) sortable variants to use glyphs (↑, ↓) instead of icon buttons. The glyph color is the same as the text. More details in [#1780](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1780).
 - Updated **❖&nbsp;Table** [Configuration: Sortable (on hover) instance](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49122-76749&mode=design&t=ETApnqRp7cnd70Dz-11) cell background so that it doesn't reflect a color change on hover. More details in [#1780](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1780).
 
-## Fixes
+### Fixes
 
 - Updated the sm tertiary dropdown [**❖&nbsp;Button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=13756-14840&mode=design&t=3ryi0NDtczpu54o3-4) icon from upload to chevron-down to appear as a dropdown.
 
