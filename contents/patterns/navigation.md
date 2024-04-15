@@ -2,9 +2,7 @@
 name: Navigation
 ---
 
-This page describes the navigation guidelines that apply to the GitLab user interface.
-
-For help with other aspects of GitLab's navigation, refer to the following resources:
+The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. Utilize the following resources for any change to this region:
 
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
