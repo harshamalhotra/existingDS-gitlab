@@ -1,3 +1,17 @@
+# [2.194.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.193.0...v2.194.0) (2024-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update gitlab ui/svg ([79f82a1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/79f82a182f217068625cccc1d98f9160e05ed129))
+* **deps:** update gitlab ui/svg ([759fce9](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/759fce99ed033ff7a9aa625383ddcabb18565e17))
+
+
+### Features
+
+* **ReleaseNotes:** 16.11 Pajamas UI Kit release ([6e20c3f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6e20c3f3eeac70556ebdc13b4a0a88572cc40b40))
+* **Settings:** Rewrite intro to settings management ([ca21b35](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/ca21b35c997d771e7890f72f3d802f25e33f4545))
+
 # [2.193.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.192.0...v2.193.0) (2024-04-08)
 
 
