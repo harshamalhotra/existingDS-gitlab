@@ -30,14 +30,6 @@ When a child setting is enforced from a parent, make this clear in the child set
 
 <figure-img label="Example of locked setting" src="/img/locked-setting-example.png"></figure-img>
 
-### Grouping
-
-Admin, group, project, and user settings utilize full pages to group different categories inside [accordions](/components/accordion). This is different from feature settings which live next to a specific UI element. On settings pages, the most frequently used options should be made easily available to users by not collapsing the content. Horizontal separators are placed between each category to give elements enough room to breathe.
-
-Each category displays a title and a brief explanation of what users should expect when the the accordion is expanded. Use consistent terms and follow the [UI text](/content/ui-text) guidelines.
-
-Configuration of settings can happen directly within the accordion or can be deferred to a secondary screen using the principles of [progressive disclosure](/usability/progressive-disclosure). For example, consider placing configuration options in a [modal](/components/modal) or on a linked detail page to avoid overwhelming users.
-
 ### Saving settings
 
 To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/usability/saving-and-feedback#saving-progress).
@@ -58,14 +50,21 @@ Consider making configuration options more discoverable to users by linking to s
 - Place it at the page-level, in the top right corner of the page, below the breadcrumbs. This sets the expectation that the settings apply to the page as a whole.
 - Navigate to the specific configuration section of that page in the settings area. Doing so makes the result of clicking the button predictable and prevents users from needing to navigate away from their task. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section of settings.
 
+## Guidelines
+
+- Use consistent terms and follow the [UI text](/content/ui-text) guidelines.
+- Configuration of settings can happen directly within an accordion section or can be deferred to a secondary screen using the principles of [progressive disclosure](/usability/progressive-disclosure). For example, consider placing configuration options in a linked page to avoid overwhelming users and impacting the page performance.
+
 ## Layout
 
-- Setting form elements use the [form layout sizes](/patterns/forms#layout).
-- When a settings page contains multiple sections, each section header remains sticky on scroll to provide context.
-- A sticky footer containing action buttons (for example, Save and Cancel) should appear when a setting has been changed.
-- Settings should appear stacked in a single column.
-
 <figure-img label="Example of settings layout" src="/img/settings-1-column.png"></figure-img>
+
+- Settings should appear stacked in a single column.
+- Group unique sections on a setting page inside [accordions](/components/accordion). Use a title and a brief explanation of what users should expect when the the accordion is expanded.
+- Horizontal separators are placed between each section to give elements enough room to breathe.
+- When a settings page contains multiple sections, each section header remains sticky on scroll to provide context.
+- Setting form elements use the [form layout sizes](/patterns/forms#layout).
+- A sticky footer containing action buttons (for example, Save and Cancel) should appear when a setting has been changed.
 
 ## Design specifications
 
