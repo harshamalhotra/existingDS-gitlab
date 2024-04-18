@@ -408,6 +408,10 @@
             "path": "forms"
           },
           {
+            "title": "Keyboard shortcuts",
+            "path": "keyboard-shortcuts"
+          },
+          {
             "title": "Merge request reports",
             "path": "merge-request-reports"
           },
