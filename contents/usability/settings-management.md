@@ -30,17 +30,6 @@ When a child setting is enforced from a parent, make this clear in the child set
 
 <figure-img label="Example of locked setting" src="/img/locked-setting-example.png"></figure-img>
 
-## Behavior
-
-### Saving settings
-
-To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/usability/saving-and-feedback#saving-progress).
-
-### User feedback
-
-- Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#placement) when data is saved asynchronously.
-- Use a [toast](/components/toast) for success messages that provide immediate confirmation of an action (for example, saving).
-
 ### Surfacing settings
 
 Consider making configuration options more discoverable to users by linking to settings from the feature page.
@@ -51,6 +40,17 @@ Consider making configuration options more discoverable to users by linking to s
 
 - Place it at the page-level, in the top right corner of the page, below the breadcrumbs. This sets the expectation that the settings apply to the page as a whole.
 - Navigate to the specific configuration section of that page in the settings area. Doing so makes the result of clicking the button predictable and prevents users from needing to navigate away from their task. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section of settings.
+
+## Behavior
+
+### Saving settings
+
+To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/usability/saving-and-feedback#saving-progress).
+
+### User feedback
+
+- Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#placement) when data is saved asynchronously.
+- Use a [toast](/components/toast) for success messages that provide immediate confirmation of an action (for example, saving).
 
 ## Structure
 
