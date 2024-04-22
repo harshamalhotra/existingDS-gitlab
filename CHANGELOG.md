@@ -1,3 +1,21 @@
+# [2.195.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.194.0...v2.195.0) (2024-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency iframe-resizer to ^4.3.10 ([acb3654](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/acb365470b8d7dd5b40454126886a3f1ae5399f0))
+* **deps:** update gitlab ui/svg ([0c035a0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0c035a04279b0483d7ef80d4fa0c4a5de35a19ef))
+
+
+### Features
+
+* **Navigation:** Update intro section ([502e9cc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/502e9cc8beb163f1f8dddbbeeb1ae59528aa500e))
+* **Settings:** Consolidate bullets in structure ([8d408b2](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8d408b2c54609327132b5fdea6027ed979de4bd5))
+* **Settings:** Move surfacing to guidelines ([0f9a110](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0f9a1103a3a837a5b46025aa6699197b71f8b7c8))
+* **Settings:** Redistributed grouping content ([3f885f6](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/3f885f61f02dd0f194758c14ad61805650b3682c))
+* **Settings:** Restructure headings and move content ([6f70412](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/6f704122b3315ec0b304f393f44e371273ccbadd))
+* **Shortcuts:** Add a new page for keyboard shortcuts ([5c88e83](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/5c88e83d20d2a532100b4236148a8916132b5a95))
+
 # [2.194.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.193.0...v2.194.0) (2024-04-15)
 
 
