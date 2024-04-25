@@ -81,7 +81,11 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 
 ### Behavior
 
-- By default, the panel opens below and is aligned to the left of the text input or button. However, when there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the text input or button. There will always be some padding between the vertical edges of the panel and the vertical edges of the viewport.
+- By default, the panel opens below and is aligned to the left of the trigger button.
+- The panel can be positioned to the right of the trigger button if it makes more sense in the layout.
+- When there isn't enough space in the viewport, the panel uses edge detection to position it above and/or aligned to the right of the trigger.
+- When the panel's boundaries wouldn't allow it to flip to the other side of the trigger button when there isn't enough space, it shifts along the x-axis.
+- There will always be some padding between the vertical edges of the panel and the vertical edges of the viewport.
 - The tip of the panel points at the trigger and is center-aligned with it by default.
 - If the content within the panel exceeds the maximum height then a scrim (gradient overlay) appears at the bottom of the panel as an overflow affordance. When a user has scrolled to the bottom of the overflowed content the scrim is removed.
 - A panel is closed by clicking outside of it, using the <kbd>Esc</kbd> key, or by focus moving to an element outside of the component.
