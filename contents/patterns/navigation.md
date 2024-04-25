@@ -7,14 +7,6 @@ The navigation namely refers to the persistent left sidebar where a user can acc
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
 
-## Top bar
-
-The top bar refers to the top horizontal navigation. The items in the top bar include a list of pages that allow you to view global content throughout GitLab. For example, you can view your todos, issues, and merge requests across projects and groups. You can also create new groups and projects, as well as search the application.
-
-The top bar navigation items are replaced by exit links during scenarios that have a business impact. This includes signing up, purchasing a subscription, and starting a trial. By doing so, we facilitate task completion and reduce user errors, such as accidentally navigating away.
-
-<todo>Add top bar example</todo>
-
 ### Homepage
 
 The homepage is the first page a user sees at the top level of GitLab.com or their instance after logging in. It's also where a user is directed after clicking the GitLab or instance logo in the navigation. This page is meant to help the user orient themself upon logging in. Currently this page is [configurable in User Settings](https://docs.gitlab.com/ee/user/profile/preferences.html#default-dashboard).
