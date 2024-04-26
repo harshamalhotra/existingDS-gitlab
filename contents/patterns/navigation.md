@@ -1,5 +1,5 @@
 ---
-name: Navigation
+name: Navigation sidebar
 ---
 
 The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. Utilize the following resources for any change to this region:
