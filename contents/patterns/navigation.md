@@ -7,14 +7,6 @@ The navigation namely refers to the persistent left sidebar where a user can acc
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
 
-### User settings menu
-
-The user settings menu is the rightmost menu which contains items related to the logged-in user.
-
-### Help menu
-
-The help menu is the dropdown with the question mark icon and contains links to docs and support.
-
 ## Left sidebar
 
 The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each navigation item should be short and easy to remember, ideally 1-2 words in length.
