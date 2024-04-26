@@ -22,7 +22,7 @@ flowchart TD;
   A[Is the user performing an action/workflow, or<br>selecting one or more options?] --> |Action or workflow|B[Use GlDisclosureDropdown];
   A --> |Selecting one or more options|C[Does the user need to be able to<br>enter a custom item string?];
   C --> |Yes|D[Does GlFormCombobox support<br>the required features? See &8901];
-  C --> |No|E[Use GlCollapsibleListBox];
+  C --> |No|E[Use GlCollapsibleListbox];
   D --> |Yes|H[Use GlFormCombobox];
   D --> |No|I[This probably can't be implemented<br>or migrated yet];
 ```
