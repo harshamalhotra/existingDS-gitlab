@@ -1,3 +1,19 @@
+# [2.196.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.195.0...v2.196.0) (2024-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v79 ([df8d992](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/df8d992f859761cb45516757be016febdc914448))
+* **deps:** update dependency iframe-resizer to ^4.3.11 ([0536d3f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/0536d3f20b484d4474e40d9430fd2da195bc5fc0))
+* **Dropdown:** fix typo in docs ([b4a2ecc](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b4a2eccee05d47d608c3d777a6c644698a1b1beb))
+
+
+### Features
+
+* **Banner:** Add guideline on promotion duration ([f76abfe](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f76abfe08e6fc52f960b7f99e1031f552ca20408))
+* **Dropdown:** Note viewport padding ([f6264bf](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/f6264bf394e2c0c1fb900cd729a1a3cec856ef97))
+* **Navigation:** Remove top bar reference ([cb8db7e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/cb8db7e814e70a856dc157f9c9e4474e7ed3a547))
+
 # [2.195.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.194.0...v2.195.0) (2024-04-22)
 
 
