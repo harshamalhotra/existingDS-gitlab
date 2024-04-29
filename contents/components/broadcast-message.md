@@ -49,7 +49,7 @@ Contains a small amount of text content that uses the container width when user 
 
 ### Placement
 
-- Located at the top of the page, above the [global navigation](/patterns/navigation).
+- At the top of every page.
 - Multiple broadcast messages stack vertically.
 
 ### Accessibility

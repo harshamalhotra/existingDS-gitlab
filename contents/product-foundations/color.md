@@ -140,7 +140,7 @@ Typical state changes (light UI):
 
 It's preferred to used solid colors (no transparency or effects) for the highest level of predictability and consistency. However, there are limited instances where transparency (alpha) or `mix-blend-mode` can be used. For example, a component or element that can be placed on multiple surface colors, where the surface color may conflict with the component color or reduce contrast below a [satisfactory contrast ratio](/accessibility/visual#contrast).
 
-A [tertiary button](/components/button#categories) is one component that uses a `mix-blend-mode` because the background on hover can be the same, or have similar lightness to, the surface color. Likewise, the chevron icons in the [navigation left sidebar](/patterns/navigation) in GitLab use `mix-blend-mode` to maintain at least a 3:1 contrast ratio against various theme background colors.
+A [tertiary button](/components/button#categories) is one component that uses a `mix-blend-mode` because the background on hover can be the same, or have similar lightness to, the surface color. Likewise, the chevron icons in the [navigation sidebar](/usability/navigation-sidebar) in GitLab use `mix-blend-mode` to maintain at least a 3:1 contrast ratio against various theme background colors.
 
 If a specific hex value is desired, use a solid color instead of approximating it with transparency or a blend mode.
 

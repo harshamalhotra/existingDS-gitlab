@@ -35,7 +35,7 @@ related:
 
 ### Categories
 
-There are four categories of links in GitLab. Although all links are navigational, those that persist from page to page and guide users through the application – such as [navigation](/patterns/navigation), [breadcrumbs](/components/breadcrumb), and [pagination](/components/pagination) – are described separately, and not included as part of the link component.
+There are four categories of links in GitLab. Although all links are navigational, those that persist from page to page and guide users through the application – such as those within the [navigation sidebar](/usability/navigation-sidebar), [breadcrumbs](/components/breadcrumb), and [pagination](/components/pagination) – are described separately, and not included as part of the link component.
 
 1. **Inline text link**: Link that appears within body text, like a paragraph or sentence. In order to distinguish a linked reference from surrounding content, a link within body copy must be underlined. Inline text links can be user-generated, for example, referencing an issue with "#3126" in the markdown editor of a merge request description where the link's primary function is linking to the referred issue. They can also be in text generated from a source file, for example, a "learn more about pipelines" link in the paragraph of an empty state template.
 1. **User interface (UI) link**: Standalone link in the UI. User interface links are not user-generated. For example, a link in the system notes that compares the changes in a new commit to a previous one. The placement, color, and actionable text all provide link affordance. A [link button](/components/button#variants) has a similar style, but is used for an action and not a link.

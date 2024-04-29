@@ -18,7 +18,7 @@ description: A dashboard is a root level container that has multiple panels, and
 
 ### When not to use
 
-- If content is action-oriented and presented in a list, table, or board, then a general [landing page](/patterns/navigation#landing-page) may be more appropriate.
+- If content is action-oriented and presented in a list, table, or board, then a general landing page may be more appropriate.
 
 ### Behavior
 

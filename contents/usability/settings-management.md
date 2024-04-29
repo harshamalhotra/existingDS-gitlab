@@ -2,7 +2,7 @@
 name: Settings management
 related:
   - accordion
-  - /patterns/navigation
+  - /usability/navigation-sidebar
   - /content/ui-text
   - /usability/saving-and-feedback
 ---
