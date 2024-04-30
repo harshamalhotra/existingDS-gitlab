@@ -416,10 +416,6 @@
             "path": "merge-request-reports"
           },
           {
-            "title": "Navigation",
-            "path": "navigation"
-          },
-          {
             "title": "Searching",
             "path": "searching"
           }
@@ -530,6 +526,10 @@
           {
             "title": "Loading",
             "path": "loading"
+          },
+          {
+            "title": "Navigation sidebar",
+            "path": "navigation-sidebar"
           },
           {
             "title": "Obfuscation",
