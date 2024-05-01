@@ -179,6 +179,10 @@ semantic-release:
     - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 pages:
+  # Temporarily disable this job in merge requests.
+  # See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1821
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
   extends:
     - .node-job
     - .build_cache
