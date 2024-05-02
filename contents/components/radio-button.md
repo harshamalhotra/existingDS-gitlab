@@ -32,7 +32,7 @@ related:
 
 ### When to use
 
-- Use radio buttons to present a set of options, where only one option can be selected at a time.
+- Use a radio button group for a set of options, where only one option can be selected at a time.
 
 ### When not to use
 
@@ -45,9 +45,8 @@ related:
 
 ### Behavior
 
-- One radio button should be selected as the default choice by using the `checked` attribute.
-- Users are able to select an option with click/tap on the radio button or its label.
-- Selecting one option unselects all others.
+- In a radio button group, only one option can be selected at a time and there must be a default selected option.
+- To pick an option, the user can select the radio button or its content.
 
 ### Content
 
@@ -65,6 +64,6 @@ related:
 
 ### Accessibility
 
-- Do not include nested or additional elements within a radio group. Nesting may prevent a screen reader user from discovering nested controls or content.
+- Do not nest or add other elements within a radio button group. Keep the radio button group as a single cohesive unit to ensure the user can properly traverse the controls.
 
 <todo>Add additional accessibility specifications.</todo>
