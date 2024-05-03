@@ -55,6 +55,7 @@ pre[class*="language-"],
   border-radius: $border-radius;
 
   code {
+    padding: 0;
     background-color: $gray-10 !important;
   }
 }
