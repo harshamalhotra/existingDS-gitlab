@@ -1,3 +1,18 @@
+# [2.197.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.196.0...v2.197.0) (2024-05-06)
+
+
+### Features
+
+* **Navigation:** Move from patterns to usability ([8544b1d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/8544b1d2f36b9b2fd36667ddb323f903821b6702))
+* **Navigation:** Relocate navigation content ([721d68d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/721d68d843b862bdf2ee8bd599a8a20a635528d6))
+* **Navigation:** Remove non-sidebar content ([16cb2c3](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/16cb2c341e37f3e99db27f1c5aade151d7ba0a68))
+* **Navigation:** Remove solution specific content ([2d559d1](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/2d559d10a6f280df05cac5adbabec43cbb7cfd52))
+* **Navigation:** Restructure page hierarchy ([7b64b1e](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/7b64b1e30c0fe181cb82a79ed989f994c317167a))
+* **Navigation:** Small formatting tweak ([1a9d267](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/1a9d267f2d7532c2041ee3f2f5fe3b113f783e7e))
+* **Navigation:** Update referenced links ([2166534](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/21665348a6937368daab3e80a085e1140492765e))
+* **Navigation:** Update url redirect ([b9816d4](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/b9816d4c22f70248e4170c5985dbe40ddedcdabc))
+* **RadioButton:** Improve guidelines to avoid nesting elements ([07cb78d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/07cb78de5d8da283bf252cc2b3e0882e862da3ae))
+
 # [2.196.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.195.0...v2.196.0) (2024-04-29)
 
 
