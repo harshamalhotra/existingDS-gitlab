@@ -1,4 +1,6 @@
 <script>
+import fixUrlInReviewApp from '../helpers/fix_url_in_review_app';
+
 export default {
   props: {
     alt: {
@@ -41,6 +43,12 @@ export default {
     style() {
       return this.width ? `width:100%; max-width:${this.width}px` : '';
     },
+    fixedSrc() {
+      if (this.src) {
+        return fixUrlInReviewApp(this.src);
+      }
+      return this.src;
+    },
   },
 };
 </script>
@@ -55,7 +63,7 @@ export default {
     role="figure"
   >
     <slot></slot>
-    <img v-if="src" class="figure-img" :src="src" :alt="altText" role="img" :style="style" />
+    <img v-if="src" class="figure-img" :src="fixedSrc" :alt="altText" role="img" :style="style" />
     <figcaption class="figure-caption">
       <template v-if="!hasCaptionSlot">{{ label }}</template>
       <slot name="caption"></slot>
