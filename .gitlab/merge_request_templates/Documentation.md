@@ -22,6 +22,7 @@ Follow the checklist at the bottom of this template to use it appropriately.
 - [ ] Related pages are cross-linked, where helpful. Component pages have [related components and patterns][related] defined in their Markdown front matter.
 - [ ] If [embedding a Figma file][figma-embed], it follows the [Figma embed guide][figma-embed-guide].
 - [ ] Review requested from any [GitLab designer][design-reviewer] or directly from a [maintainer or trainee maintainer][pajamas-assignments].
+- [ ] Maintainer review follows the [Pajamas UX maintainer review checklist][pajamas-maintainer-checklist].
 
 ### Links
 
@@ -42,3 +43,4 @@ Follow the checklist at the bottom of this template to use it appropriately.
 [pajamas-assignments]: https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com
 [figma-embed]: https://www.figma.com/developers/embed
 [figma-embed-guide]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/figma-embed.md
+[pajamas-maintainer-checklist]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/maintainer-checklist.md
