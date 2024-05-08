@@ -5,6 +5,7 @@
 - If you know of any related or similar issues/MRs, note them and verify the proposed changes all work together seamlessly.
 - It's okay (and preferred) to ask others for help when you don't know something yourself.
 - If the updates refer specifically to designs that have been created, double check everything matches what's in Figma. Create follow up issues as needed.
+- Supporting visuals are as simplified as possible and follow conventions set in the [Pajamas visual examples](https://www.figma.com/file/2XRq1MnIG69iti76Mh9HpJ/Pajamas-visual-examples) Figma file.
 - Component demos should be used whenever possible. If not possible yet, a TODO should be used instead.
 - Add related components as applicable (alternative components or components that are usually paired).
 - If the status page is being updated, ensure the related content pages match the updated status. (For example, complete vue docs should not have the banner that states the component does not conform to pajamas. A separate issue/MR should be created to remove the banner if we are updating the status to complete. Complete usage docs should also not have todo banners.)
@@ -26,6 +27,9 @@
 - Use full, descriptive sentences so that readers don't have to go back and reference the section title to understand the content within a section. For example, rather than `Use to highlight...`, instead try: `Use cross-column colors to highlight...`
 - Content that is similar or related in meaning is grouped together, if possible.
 - Terminology, such as technical or GitLab-specific, is used correctly.
+- Components and users are referenced using the singular instead of plural. For example, instead of `Badges can have an icon`, use `A badge can have an icon`; instead of `Users can press the element`, use `A user can press the element`.
+- Component documentation follows the [component template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md?plain=1). An empty or incomplete required section has a todo for future completion.
+- Extra spaces and comments have been removed.
 
 ## For the MR itself, ensure
 - That at least the first commit message is formatted according to [conventional commit standards](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md)
