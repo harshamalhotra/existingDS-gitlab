@@ -137,7 +137,20 @@
         "items": [
           {
             "title": "Design tokens",
-            "path": "design-tokens"
+            "items": [
+              {
+                "title": "Overview",
+                "path": "design-tokens"
+              },
+              {
+                "title": "Reading design tokens",
+                "path": "design-tokens-reading"
+              },
+              {
+                "title": "Using design tokens",
+                "path": "design-tokens-using"
+              }
+            ]
           },
           {
             "title": "Color",
