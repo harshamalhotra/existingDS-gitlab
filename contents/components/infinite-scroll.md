@@ -1,6 +1,7 @@
 ---
 name: Infinite scroll
 description: Infinite scroll helps users parse a large number of items by breaking up lists and distributing the results.
+deprecated: true
 components:
   - base-infinite-scroll
 related:
@@ -28,6 +29,8 @@ related:
 1. **Count**: Text displaying number of shown items out of total number of items in the list.
 
 ## Guidelines
+
+Based on an [accessibility evaluation](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1196), there are accessibility concerns for infinite scrolling and it should be replaced with a [load more pattern](usability/loading#loading-more) or [pagination](/components/pagination).
 
 ### When to use
 
