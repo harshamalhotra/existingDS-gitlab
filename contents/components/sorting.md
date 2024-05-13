@@ -32,6 +32,7 @@ related:
 
 - When using the sorting component, make sure the list in the dropdown doesn't contain more than 10 items, otherwise it will create usability problems. [See combobox guidelines](/components/dropdown-combobox).
 - If a list is static, easy to search/scan, or where the data set won't grow, the sorting component is unnecessary.
+- For tables, use [table sorting](/components/table#ordering--sorting) instead of list sorting.
 
 ### Appearance
 
