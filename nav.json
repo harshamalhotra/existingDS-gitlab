@@ -149,6 +149,10 @@
               {
                 "title": "Using design tokens",
                 "path": "design-tokens-using"
+              },
+              {
+                "title": "All design tokens",
+                "path": "design-tokens-directory"
               }
             ]
           },
