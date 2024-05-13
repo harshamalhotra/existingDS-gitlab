@@ -1,3 +1,19 @@
+# [2.198.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.197.0...v2.198.0) (2024-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @gitlab/ui to v80 ([627cc1d](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/627cc1d4bf8a944420880a874feca28ba2e97703))
+* **deps:** update gitlab ui/svg ([119d876](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/119d8760852157e672292dcea61d7dd9799978ce))
+
+
+### Features
+
+* **DesignTokens:** Init token section ([c9a8e49](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c9a8e4903627be5f024161db86349b7c6de96dde))
+* **Dropdown:** Duplicate changes to disclosure ([c25f167](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/c25f167eaa8846d6db0a37fc306c485d094206ba))
+* **dropdowns:** add more information about positioning behavior ([512979f](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/512979fed991ede0f4e6408a47adc6b68a8ab675))
+* **InfiniteScroll:** Mark for depreciation due to accessibility concerns ([d2d4b7a](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/commit/d2d4b7a0ccd540d79be7843b7f16b54d382690d6))
+
 # [2.197.0](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/compare/v2.196.0...v2.197.0) (2024-05-06)
 
 
