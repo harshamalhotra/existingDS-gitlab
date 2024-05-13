@@ -43,6 +43,7 @@ related:
 - As soon as an item in the dropdown is selected, the list content re-sorts automatically.
 - The sort dropdown allows for sorting by a single selected item.
 - The sort direction icon button allows users to change the direction of the sort, from ascending to descending or vice-versa.
+- In a table, the criteria used to sort should always be displayed in order to reinforce user's action and provide a visual feedback.
 - The default sort order on a list is determined by the designer on a page-by-page basis.
 
 ### Accessibility
