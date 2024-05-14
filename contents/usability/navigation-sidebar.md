@@ -2,10 +2,11 @@
 name: Navigation sidebar
 ---
 
-The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. Utilize the following resources for any change to this region:
+The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. In order to ensure a familiar user experience, minimize disruption, and properly introduce changes we utilize the following resources to guide any change to this region:
 
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
+- [How to communicate a change in the app](/usability/navigation-sidebar#communicating-changes-to-users).
 
 ## Layout
 
@@ -43,13 +44,21 @@ When this occurs, the top-level menu item should remain consistent, even if ther
 - Medium and large viewports: `768px` to `1199px`
 - Small and extra small viewports: up to `767px`
 
-### Messaging changes to users
+### Communicating changes to users
 
-Continuously improving the navigation ensures the best possible user experience. To minimize disruption and properly introduce users to changes, follow these guidelines.
+The navigation helps orient users, so we want to avoid users wondering, "[Who moved my cheese?](https://uxmag.com/articles/who-moved-my-virtual-cheese)" Once a change to the navigation has been validated and approved, select one of the following approaches for communicating the change to users based on the assumed level of disruption:
 
-Use these approaches based on item usage:
+- **None:** No in-app messaging is necessary if a change will likely go unnoticed.
+- **Minimal:** Use an informative component like a [toast](/components/toast), [alert](/components/alert), or [popover](/components/popover) for a set duration.
+- **Significant:** A temporary opt-in method must be provided for at least two milestones.
 
-- **None required:** No in-app messaging is required if an item has less than 0.025% of clicks per active user per month.
-- **Subsequent:** An in-app [toast](/components/toast) with a confirm action is required after moving a top-level menu item if that item has between 0.026%-0.099% of clicks per active user per month. The toast should appear after first navigating to a screen that includes the sidebar with the navigation change. After dismissal, the toast should not reappear even when navigating to a new group or project with the navigation change.
-- **Advanced:** An advanced page-level info [alert](/components/alert) is required if an item has equal to or greater than 0.1% of clicks per active user per month. Advanced notice should be in place for at least one milestone.
-- **Temporary opt-in:** If more than five top-level navigation items are being changed that have a combined 5% of clicks per active users per month, a temporary opt-in method should be provided for at least two milestones. Temporary opt-in provides time to communicate major navigation overhauls while also allowing a user to preview changes.
+<note> All changes impacting the navigation sidebar must be in the release notes. </note>
+
+#### How to evaluate disruption
+
+Determining how impactful a disruption may be depends on the scope of the change and is subjective. Try to use objective measures to balance observations and opinions to make an educated guess.
+
+- Look at user behavior as an indicator. For example, the volume of page visits or clicks within the navigation sidebar can give you an impression of how many will be affected.
+- Think about the types of users being affected. For example, a change might not matter to most, but it might require an administrator to make unfamiliar adjustments to their workflow.
+- Consider how much is changing in the navigation sidebar. For example, moving multiple items, changing the information architecture, or repositioning key functionality disrupts learned behaviors.
+- How accustomed users are to something can influence their sensitivity to change. For example, removing a button that has been in place for years might be controversial.
