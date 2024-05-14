@@ -1,5 +1,5 @@
 ---
-name: GitLab Voluntary Product Accessibility Template (VPAT®)
+name: GitLab accessibility conformance reports
 ---
 
 **Reports**
