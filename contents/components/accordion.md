@@ -63,7 +63,7 @@ The content in the accordion body should be visually different from the rest of 
 
 #### Interaction
 
-Users should be able to expand and collapse the body by clicking or tapping a single area containing the accordion header and icon. Changes to the accordion state are considered [macro animations](/product-foundations/motion/#macro-animations) and should follow the guidelines for this kind of animation.
+Users should be able to expand and collapse the body by clicking or tapping a single area containing the accordion header and icon. Changing the accordion state will trigger an [animation](/product-foundations/animation-fundamentals).
 
 #### Multiple accordions
 

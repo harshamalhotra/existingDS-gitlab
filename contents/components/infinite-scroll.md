@@ -30,7 +30,7 @@ related:
 
 ## Guidelines
 
-Based on an [accessibility evaluation](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1196), there are accessibility concerns for infinite scrolling and it should be replaced with a [load more pattern](usability/loading#loading-more) or [pagination](/components/pagination).
+Based on an [accessibility evaluation](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1196), there are accessibility concerns for infinite scrolling and it should be replaced with a [load more pattern](/usability/loading#loading-more) or [pagination](/components/pagination).
 
 ### When to use
 

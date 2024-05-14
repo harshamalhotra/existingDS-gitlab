@@ -9,7 +9,6 @@ components:
   - base-button-group
 related:
   - dropdown-disclosure
-  - dropdown-menu
   - segmented-control
   - pagination
   - tooltip

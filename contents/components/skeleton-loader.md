@@ -40,7 +40,7 @@ related:
 
 ### Appearance
 
-- Comprised of one or more basic, grayscale shapes that have a horizontally pulsing [motion](/product-foundations/motion#skeleton-loading) to indicate they are loading.
+- Comprised of one or more basic, grayscale shapes that have a horizontally pulsing [motion](/product-foundations/animation-fundamentals#skeleton-loading) to indicate they are loading.
 - Use rounded corners, even for rectangular shapes. Shapes follow the [standard spacing guidelines](/product-foundations/spacing#standard-spacing-guidelines).
 - Each shape should represent content in a recognizable way. For example, a long rectangle for a line of text or a circle for an avatar.
 

@@ -26,7 +26,7 @@ componentLabel: form-select
 - If there are five or less options to select from or the user needs to easily see all of options, then consider using [radio buttons](/components/radio-button) instead.
 - If more than one option can be selected, consider using [checkboxes](/components/checkbox) instead.
 - If the option is a binary decision that takes immediate effect, consider using a [toggle](/components/toggle) instead.
-- If selecting from a list of options outside of a [form](/patterns/form) or for more complex interactions, then a combobox is preferred.
+- If selecting from a list of options outside of a [form](/patterns/forms) or for more complex interactions, then a combobox is preferred.
 
 ### Appearance
 

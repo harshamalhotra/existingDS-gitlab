@@ -6,7 +6,6 @@ components:
 related:
   - dropdown-disclosure
   - dropdown-combobox
-  - dropdown-menu
   - filter
 ---
 
