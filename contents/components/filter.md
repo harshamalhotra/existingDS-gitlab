@@ -9,7 +9,6 @@ related:
   - search
   - dropdown-disclosure
   - dropdown-combobox
-  - dropdown-menu
 ---
 
 ## Examples

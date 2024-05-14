@@ -12,7 +12,7 @@ related:
   - accordion
   - skeleton-loader
   - button
-  - /product-foundations/motion
+  - /product-foundations/animation-fundamentals
   - /patterns/empty-states
 ---
 
@@ -53,7 +53,7 @@ related:
 
 ### Behavior
 
-- The drawer follows the [motion guidelines](/product-foundations/motion) and slides in from the right side of the viewport.
+- The drawer follows the [motion guidelines](/product-foundations/animation-fundamentals) and slides in from the right side of the viewport.
   - `200ms` with an ease-in animation.
   - By default, the drawer is above all page content.
   - If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push some or all of the content rather than covering it.

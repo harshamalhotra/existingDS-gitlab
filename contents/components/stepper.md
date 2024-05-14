@@ -3,7 +3,6 @@ name: Stepper
 description: A stepper separates structured workflows into meaningful, ordered steps.
 related:
   - progress-bar
-  - form
   - path
 ---
 

@@ -8,7 +8,6 @@ related:
   - button
   - checkbox
   - dropdown-disclosure
-  - dropdown-menu
   - radio-button
   - select
   - toggle

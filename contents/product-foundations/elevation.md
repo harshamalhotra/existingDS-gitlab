@@ -43,7 +43,6 @@ Surfaces that need boundary definition and appear on hover. For example, [popove
 * Dropdown
   * [Disclosure](/components/dropdown-disclosure)
   * [Combobox](/components/dropdown-combobox)
-  * [Menu](/components/dropdown-menu)
 * *Nagivation: Flyout Menus*
 * *Stacked elevation components*
 * *Cards when dragged*
