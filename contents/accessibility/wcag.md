@@ -2,7 +2,7 @@
 name: GitLab Accessibility Conformance Report WCAG Edition
 ---
 
-**Based on Version 2.4Rev**, March 2022 ([template](https://www.itic.org/policy/accessibility/vpat))
+**Based on Version 2.5**, November 2023 ([template](https://www.itic.org/policy/accessibility/vpat))
 
 - **Name of Product/Version:** GitLab Enterprise Edition Premium version 16.0
 - **Report Date:** Revised July, 2023
@@ -11,7 +11,7 @@ name: GitLab Accessibility Conformance Report WCAG Edition
 - **Notes:**
   - This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
   - The latest revision evaluates **GitLab Enterprise Edition Premium version 16.0** and supersedes earlier versions of this report.
-  - **Table 3: Success Criteria, Level AAA** has been removed because the GitLab product has not been evaluated for WCAG 2.0 Level AAA conformance.
+  - **Table 3: Success Criteria, Level AAA** has been removed because the GitLab product has not been evaluated for WCAG 2.2 Level AAA conformance.
   - GitLab supports the current and previous major version along with current minor version of the following browsers: Mozilla Firefox, Google Chrome, Chromium, Apple Safari, Microsoft Edge.
   - GitLab does not support running with JavaScript disabled in the browser because several features require JavaScript extensively.
   - View [GitLab installation minimum requirements](https://docs.gitlab.com/ee/install/requirements.html) for both the supported operating systems and the minimum requirements needed to install and use GitLab.
@@ -34,7 +34,7 @@ This report covers the degree of conformance for the following accessibility sta
       <td><a
         href="http://www.w3.org/TR/2008/REC-WCAG20-20081211"
         target="_blank"
-      >Web Content Accessibility Guidelines 2.0</a> or WCAG 2.0 (ISO/IEC 40500)</td>
+      >Web Content Accessibility Guidelines 2.0</a></td>
       <td>
         <ul>
           <li>Level A (Yes)</li>
@@ -47,7 +47,20 @@ This report covers the degree of conformance for the following accessibility sta
       <td><a
         href="https://www.w3.org/TR/WCAG21/"
         target="_blank"
-      >Web Content Accessibility Guidelines 2.1</a> or WCAG 2.1</td>
+      >Web Content Accessibility Guidelines 2.1</a></td>
+      <td>
+        <ul>
+          <li>Level A (Yes)</li>
+          <li>Level AA (Yes)</li>
+          <li>Level AAA (No)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a
+        href="https://www.w3.org/TR/WCAG22/"
+        target="_blank"
+      >Web Content Accessibility Guidelines 2.2</a></td>
       <td>
         <ul>
           <li>Level A (Yes)</li>
@@ -67,7 +80,7 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports:** Some functionality of the product does not meet the criterion.
 - **Does Not Support:** The majority of product functionality does not meet the criterion.
 - **Not Applicable:** The criterion is not relevant to the product.
-- **Not Evaluated:** The product has not been evaluated against the criterion. This can only be used in WCAG 2.x Level AAA.
+- **Not Evaluated:** The product has not been evaluated against the criterion. This can only be used in WCAG Level AAA criteria.
 
 ## WCAG 2.x Report
 
@@ -293,7 +306,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts"
           target="_blank"
-        >2.1.4 Character Key Shortcuts</a> (Level A 2.1 only)
+        >2.1.4 Character Key Shortcuts</a> (Level A 2.1 and 2.2)
       </td>
       <td>Supports</td>
       <td>The product contains a mechanism to turn all shortcuts off.</td>
@@ -411,7 +424,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#pointer-gestures"
           target="_blank"
-        >2.5.1 Pointer Gestures</a> (Level A 2.1 only)
+        >2.5.1 Pointer Gestures</a> (Level A 2.1 and 2.2)
       </td>
       <td>Not applicable</td>
       <td>This criterion is not relevant because the product does not use pointer gestures.</td>
@@ -421,7 +434,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#pointer-cancellation"
           target="_blank"
-        >2.5.2 Pointer Cancellation</a> (Level A 2.1 only)
+        >2.5.2 Pointer Cancellation</a> (Level A 2.1 and 2.2)
       </td>
       <td>Partially supports</td>
       <td>
@@ -440,7 +453,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#label-in-name"
           target="_blank"
-        >2.5.3 Label in Name</a> (Level A 2.1 only)
+        >2.5.3 Label in Name</a> (Level A 2.1 and 2.2)
       </td>
       <td>Supports</td>
       <td>The product has controls where the accessible name matches visible label.</td>
@@ -450,7 +463,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#motion-actuation"
           target="_blank"
-        >2.5.4 Motion Actuation</a> (Level A 2.1 only)
+        >2.5.4 Motion Actuation</a> (Level A 2.1 and 2.2)
       </td>
       <td>Not applicable</td>
       <td>This criterion is not relevant because the product does not use motion actuation.</td>
@@ -500,6 +513,19 @@ The terms used in the Conformance Level information are defined as follows:
     <tr>
       <td>
         <a
+          href="https://www.w3.org/TR/WCAG22/#consistent-help"
+          target="_blank"
+        >3.2.6 Consistent Help</a> (Level A 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
           href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"
           target="_blank"
         >3.3.1 Error Identification</a> (Level A)
@@ -542,22 +568,29 @@ The terms used in the Conformance Level information are defined as follows:
     <tr>
       <td>
         <a
+          href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"
+          target="_blank"
+        >3.3.7 Redundant Entry</a> (Level A 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
           href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses"
           target="_blank"
-        >4.1.1 Parsing</a> (Level A)
+        >4.1.1 Parsing</a> (Level A)<br>
+         WCAG 2.0 and 2.1 – Always answer ‘Supports’<br>
+         WCAG 2.2 (obsolete and removed) - Does not apply
       </td>
       <td>
-        Partially supports
+        Supports
       </td>
-      <td>
-        <p>The product has instances of non-unique ID values.</p>
-        <ul>
-          <li>Known instances are related to <code>.js-</code> prefixed IDs used specifically for JavaScript and are tracked in the <a
-          href="https://gitlab.com/gitlab-org/gitlab/issues/17928"
-          target="_blank"
-        >#17928</a> issue.</li>
-          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
-        </ul>
+      <td>For WCAG 2.0 and 2.1, the September 2023 errata update indicates this criterion is always supported. See the <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial" target="_blank">WCAG 2.0 Editorial Errata</a> and the <a href="https://www.w3.org/WAI/WCAG21/errata/#editorial" target="_blank">WCAG 2.1 Editorial Errata</a>.
       </td>
     </tr>
     <tr>
@@ -632,7 +665,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#orientation"
           target="_blank"
-        >1.3.4 Orientation</a> (Level AA 2.1 only)
+        >1.3.4 Orientation</a> (Level AA 2.1 and 2.2)
       </td>
       <td>Supports</td>
       <td>The product is responsive to variable viewport sizes and orientations.</td>
@@ -642,7 +675,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
           target="_blank"
-        >1.3.5 Identify Input Purpose</a> (Level AA 2.1 only)
+        >1.3.5 Identify Input Purpose</a> (Level AA 2.1 and 2.2)
       </td>
       <td>Partially supports</td>
       <td>
@@ -722,7 +755,7 @@ The terms used in the Conformance Level information are defined as follows:
         <a
           href="https://www.w3.org/TR/WCAG21/#reflow"
           target="_blank"
-        >1.4.10 Reflow</a> (Level AA 2.1 only)
+        >1.4.10 Reflow</a> (Level AA 2.1 and 2.2)
       </td>
       <td>Supports</td>
       <td>The product is responsive to variable viewport sizes.</td>
@@ -823,6 +856,45 @@ The terms used in the Conformance Level information are defined as follows:
     <tr>
       <td>
         <a
+          href="https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum"
+          target="_blank"
+        >2.4.11 Focus Not Obscured (Minimum)</a> (Level AA 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.w3.org/TR/WCAG22/#dragging-movements"
+          target="_blank"
+        >2.5.7 Dragging Movements</a> (Level AA 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.w3.org/TR/WCAG22/#target-size-minimum"
+          target="_blank"
+        >2.5.8 Target Size (Minimum)</a> (Level AA 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
           href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id"
           target="_blank"
         >3.1.2 Language of Parts</a> (Level AA)
@@ -903,9 +975,22 @@ The terms used in the Conformance Level information are defined as follows:
     <tr>
       <td>
         <a
+          href="https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum"
+          target="_blank"
+        >3.3.8 Accessible Authentication (Minimum)</a> (Level AA 2.2 only)
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
           href="https://www.w3.org/TR/WCAG21/#status-messages"
           target="_blank"
-        >4.1.3 Status Messages</a> (Level AA 2.1 only)
+        >4.1.3 Status Messages</a> (Level AA 2.1 and 2.2)
       </td>
       <td>Partially supports</td>
       <td>
