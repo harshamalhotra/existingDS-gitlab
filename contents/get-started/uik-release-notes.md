@@ -2,13 +2,35 @@
 name: Release notes
 ---
 
+## 17.1
+
+[_Draft: 17.1 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3846)
+
 ## 17.0
 
-[_Draft: 17.0 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3801)
+<!-- Update publish date-->
+<small>Published 2024-05-14</small>
+
+### Additions
+
+- Added [**Navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=107958-34) components, including:
+  - [**❖&nbsp;Navigation&nbsp;/&nbsp;Project&nbsp;navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=107958%3A2300&mode=dev&t=dhSrpEWep5xpbMeB-1)
+  - [**❖&nbsp;Navigation&nbsp;/&nbsp;Group&nbsp;navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=118382%3A8241&mode=dev&t=1z5mcG90JxppszZc-1)
+  - [**❖&nbsp;Navigation&nbsp;/&nbsp;Admin&nbsp;navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=117918%3A4864&mode=dev&t=dhSrpEWep5xpbMeB-1)
+- Added an [annotations and utilities library](https://www.figma.com/file/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities). The library is optional as it's not automatically enabled for everyone by default. It launches with [**❖&nbsp;Design&nbsp;token**](https://www.figma.com/file/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?type=design&node-id=2002-34), which is a utility used to annotate where design tokens are used in a design. Expect more tools to help document and present design decisions to be added in upcoming milestones. Learn more about our upcoming [plans for the UI kit](https://gitlab.com/groups/gitlab-org/gitlab-services/-/epics/22).
+
+### Changes
+
+- Added an additional property to the **❖&nbsp;Navigation** sub-component [**❖&nbsp;_Page**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=107958%3A2360&t=BJeCsFnYIyQZulYc-1) to support different hover interactions.
+
+### Fixes
+
+- Updated the min width in the [**❖&nbsp;Dropdown**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/📙-Component-library?type=design&node-id=61252-95177&mode=design&t=6uorytul0fvm1FFl-11) description to match code implementation.
+- Corrected icon colors in [**❖&nbsp;Button**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7) components to match code implementation for all states.
+- Updated the [**❖&nbsp;Navigation&nbsp;/&nbsp;Admin&nbsp;navigation**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=117918%3A4864&mode=dev&t=dhSrpEWep5xpbMeB-1) to use the correct icons.
 
 ## 16.11
 
-<!-- Update publish date-->
 <small>Published 2024-04-15</small>
 
 ### Additions
@@ -22,7 +44,6 @@ name: Release notes
 
 ## 16.10
 
-<!-- Update publish date-->
 <small>Published 2024-03-15</small>
 
 ### Additions
