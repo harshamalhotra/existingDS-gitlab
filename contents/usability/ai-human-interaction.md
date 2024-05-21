@@ -68,7 +68,7 @@ In the UI, there is _no specific color_ associated with AI or GitLab Duo — thi
 
 The interface should clearly communicate AI capabilities, limitations, and the scope of its decision-making authority. Users need to understand a system's capabilities and limits to understand how much trust to put into the system. To help the user build a mental model of the system:
 
-- Clearly highlight if a feature is an [Experiment or Beta](/usability/feature-management#highlighting-feature-versions).
+- Clearly highlight if a feature is an [experiment or beta](/usability/feature-management#highlighting-feature-versions).
 - Follow the [disclaimer guidelines](#disclaimer).
 - Use clear, simple language to explain what the system is doing and how it arrived at its recommendations.
 - Explain what data the system is trained on and what it's optimized for.

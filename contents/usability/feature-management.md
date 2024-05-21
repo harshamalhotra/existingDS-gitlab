@@ -44,7 +44,7 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 ### Highlighting feature versions
 
-Experiment and Beta features are subject to legal terms, which must be displayed next to the settings to enable said feature. Use the following UI text:
+Experiment and beta features are subject to legal terms, which must be displayed next to the settings to enable said feature. Use the following UI text:
 
 | Number of features | Group setting | User setting |
 |-|-|-|
@@ -53,12 +53,12 @@ Experiment and Beta features are subject to legal terms, which must be displayed
 
 <figure-img label="Example of legal disclaimer" src="/img/legal-disclaimer-exp-beta.svg"></figure-img>
 
-Similar to higher tier features, feature versions like Experiment and Beta should be easily identifiable, using a [badge](/components/badge/) with an explanation in a [popover](/components/popover):
+Similar to higher tier features, feature versions like experiment and beta should be easily identifiable, using a [badge](/components/badge/) with an explanation in a [popover](/components/popover):
 
 | Experiment | Beta |
 | ------ | ------ |
-| <figure-img label="Experiment feature badge" src="/img/experiment-feature-badge.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/beta-feature-badge.svg"></figure-img> |
-| <strong>What's an Experiment?</strong><br>An Experiment is not yet production-ready, but is released for initial testing and feedback during development. <br><br>Experiments:<ul><li>Might be unstable or cause data loss.</li><li>Are not supported and might not be documented.</li><li>Could be changed or removed at any time.</li><li>Are subject to the <a href="https://handbook.gitlab.com/handbook/legal/testing-agreement/">GitLab Testing Agreement</a>.</li></ul> | <strong>What's a Beta feature?</strong><br>A Beta feature is not yet production-ready, but is ready for testing and unlikely to change significantly before it's released.<br><br>Beta features:<ul><li>Have a low risk of data loss, but might still be unstable.</li><li>Are supported on a commercially-reasonable effort basis.</li><li>Have a near complete user experience.</li><li>Are subject to the <a href="https://handbook.gitlab.com/handbook/legal/testing-agreement/">GitLab Testing Agreement</a>.</li></ul> |
+| <figure-img label="Experiment feature badge" src="/img/feature-badge-experiment.svg"></figure-img> | <figure-img label="Beta feature badge" src="/img/feature-badge-beta.svg"></figure-img> |
+| <strong>What's an experiment?</strong><br>An experiment is not yet production-ready, but is released for initial testing and feedback during development. <br><br>Experiments:<ul><li>Might be unstable or cause data loss.</li><li>Are not supported and might not be documented.</li><li>Could be changed or removed at any time.</li><li>Are subject to the <a href="https://handbook.gitlab.com/handbook/legal/testing-agreement/">GitLab Testing Agreement</a>.</li></ul> | <strong>What's a beta?</strong><br>A beta feature is not yet production-ready, but is ready for testing and unlikely to change significantly before it's released.<br><br>Beta features:<ul><li>Have a low risk of data loss, but might still be unstable.</li><li>Are supported on a commercially-reasonable effort basis.</li><li>Have a near complete user experience.</li><li>Are subject to the <a href="https://handbook.gitlab.com/handbook/legal/testing-agreement/">GitLab Testing Agreement</a>.</li></ul> |
 
 <todo>Replace badges with live example or link once a dedicated component has been added to GitLab UI.</todo>
 
