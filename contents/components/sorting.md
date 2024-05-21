@@ -42,6 +42,7 @@ related:
 - As soon as an item in the dropdown is selected, the list content re-sorts automatically.
 - The sort dropdown allows for sorting by a single selected item.
 - The sort direction icon button allows users to change the direction of the sort, from ascending to descending or vice-versa.
+- Avoid using invisible attributes for sorting because it lacks visual reinforcement of the user's action, which can be confusing.
 - The default sort order on a list is determined by the designer on a page-by-page basis.
 
 ### Accessibility
