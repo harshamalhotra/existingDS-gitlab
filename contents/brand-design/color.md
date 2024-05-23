@@ -4,13 +4,9 @@ name: Color
 
 ## Primary colors
 
-Charcoal and White provide a structured visual weight and are used in all branded materials. The remaining colors in the primary palette are used for accents and reinforcing elements, such as graphics and illustrations.
+Charcoal and White are the base colors used in all branded materials. The remaining oranges and purples in the primary palette are used in reinforcing elements, such as graphics and illustrations.
 
-Proper color proportions are essential to maintaining GitLab’s look and feel. White should be the most used color, followed by Charcoal; this combination uplevels the maturity of our brand and is accentuated by the gradient. The oranges and purples of the palette should be used sparingly as subtle pops and accents. The cool gray scale should be used even less and applied to differentiate information and/or create a hierarchy.
-
-[Color swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes) are denoted with a _P_ (for primary palette), _G_ (for gradients), or _S_ (for secondary palette, which is reserved for illustration usage). Refer to the [color usage](#color-usage) section for more information on when to use digital vs. print colors.
-
-<figure-img label="Color use ratios" src="/img/brand/color-usage.svg"></figure-img>
+[Color swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes) are denoted with a _p_ (for primary palette), _g_ (for gradients), or _s_ (for secondary palette). Refer to the [color usage](#color-usage) section for more information on when to use digital vs. print colors.
 
 ### Primary color palette
 
@@ -23,6 +19,23 @@ Proper color proportions are essential to maintaining GitLab’s look and feel. 
 | <div class="gl-p-3 gl-text-white" style="background-color:#E24329;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41   | 0, 75, 80, 10  | 7417 C / 1665 U                |
 | <div class="gl-p-3" style="background-color:#A989F5;"><span class="variable">Purple 01p</span> </div>               | #A989F5 | 169, 137, 245 | 53, 55, 0, 0   | 2655 C / 2645 CU               |
 | <div class="gl-p-3 gl-text-white" style="background-color:#7759C2;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194  | 64, 70, 0, 0   | 2665 C / 2593 U                |
+
+## Secondary colors
+
+The secondary palette expands upon our oranges and purples to provide more color varieties. These additional hues can be used to highlight various elements and add visual depth where needed. This palette also introduces teal, which has a positive connotation, especially when used to reference product features. The cool grays offer neutral color options to be used for differentiating information and/or establishing hierarchy.
+
+### Secondary color palette
+
+| **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**                        |
+| ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ------------------------------ |
+| <div class="gl-p-3" style="background-color:#CEB3EF;"><span class="variable">Purple 01s</span> </div>                  | #CEB3EF | 206, 179, 239 | 13, 24, 0, 6    | 2635 C |
+| <div class="gl-p-3" style="background-color:#5943B6;"><span class="variable">Purple 02s</span> </div>                  | #5943B6 | 89, 67, 182 | 36, 45, 0, 29 | 2725 C                  |
+| <div class="gl-p-3 gl-text-white" style="background-color:#2F2A6B;"><span class="variable">Purple 03s</span> </div>    | #2F2A6B | 47, 42, 107 | 17, 19, 0, 64 | 274 C                  |
+| <div class="gl-p-3 gl-text-white" style="background-color:#232150;"><span class="variable">Purple 04s</span> </div>    | #232150 | 35, 33, 80    | 18, 18, 0, 69 | 275 C                 |
+| <div class="gl-p-3" style="background-color:#FDF1DD;"><span class="variable">Orange 01s</span> </div>    | #FDF1DD | 253, 241, 221    | 0, 5, 13, 1 | 7506 C             |
+| <div class="gl-p-3" style="background-color:#C5F4EC;"><span class="variable">Teal 01s</span> </div>    | #C5F4EC | 197, 244, 236    | 18, 0, 3, 4 | 317 C             |
+| <div class="gl-p-3" style="background-color:#6FDAC9;"><span class="variable">Teal 02s</span> </div>                  | #6FDAC9 | 111, 218, 201 | 42, 0, 7, 15    | 3242 C |
+| <div class="gl-p-3" style="background-color:#10B1B1;"><span class="variable">Teal 03s</span> </div>                  | #10B1B1 | 16, 177, 177 | 63, 0, 0, 31 | 7476 C                  |
 | <div class="gl-p-3" style="background-color:#D1D0D3;"><span class="variable">Gray 01</span> </div>                  | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16    | Cool Gray 3 C /  Cool Gray 2 U |
 | <div class="gl-p-3" style="background-color:#A2A1A6;"><span class="variable">Gray 02</span> </div>                  | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U                  |
 | <div class="gl-p-3 gl-text-white" style="background-color:#74717A;"><span class="variable">Gray 03</span> </div>    | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U                  |
