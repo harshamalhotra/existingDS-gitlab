@@ -8,28 +8,25 @@ The navigation namely refers to the persistent left sidebar where a user can acc
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
 - [How to communicate a change in the app](/usability/navigation-sidebar#communicating-changes-to-users).
 
-## Layout
+## Structure
 
-The left sidebar refers to the navigation that is contextual to each page. These options change depending on if you are looking at a project, a group, or a settings page. The names used for each navigation item should be short and easy to remember, ideally 1-2 words in length.
+We use a vertical style of navigation for [several key benefits highlighted by Nielsen Norman Group](https://www.nngroup.com/articles/vertical-nav/). The navigation sidebar is designed to be contextually specific:
 
-There are two levels of navigation: [top level](#top-level-menu-items) and a [submenu](#submenu-items).
+- The header area is always the same, while the elements in the body of the navigation sidebar will change depending on the user's context.
+- The names used for each navigation item should be short and easy to remember, ideally just 1-2 words.
+- There are two levels of navigation: [top-level items](#top-level-items) and [sub-level items](#sub-level-items). There is not a third level of depth.
 
-### Top-level menu items
+### Top-level items
 
-A top-level menu item is the first anchor that appears within the left sidebar. These items are used to display the most important functionality for that navigation category. A top-level menu item may contain related submenu items.
+A top-level item is designated with a unique icon or avatar, and may contain related sub-level items.
 
-### Submenu items
+### Sub-level items
 
-Each submenu should be a self-contained group of functionality, for example:
+Each group of sub-level items should reflect its top-level item.
 
-- Items related to planning and managing issues should be under the `Issues` nav item.
-- Viewing and editing pipelines should be under the `CI/CD` nav item.
+Items within a sub-level group may change depending on the context, permissions, and roles. For example, the admin area may include less or more items under a top-level item than a group or project.
 
-The default active item should be the first submenu item.
-
-In some cases, items within a submenu may change depending on the context, permissions, and roles. For example, the admin area may include more or less items under a top-level menu item than a group or project.
-
-When this occurs, the top-level menu item should remain consistent, even if there is only one submenu item. The reason for top-level menu consistency is to reduce the cognitive effort needed from users to understand the navigation and task hierarchy. For example, we should not replace **CI/CD** with **Runners** or **Infrastructure** with **Terraform** as the top-level menu item in the sidebar.
+Top-level item naming and positioning should remain consistent across similar contexts like groups and projects, even with only one sub-level item. Top-level consistency reduces the cognitive effort needed to understand the navigation and task hierarchy.
 
 ## Behavior
 
