@@ -30,16 +30,22 @@ Top-level item naming and positioning should remain consistent across similar co
 
 ## Behavior
 
-- When navigating using the left sidebar, the sidebar always persists in order to maintain the user's context. The only exception to this rule is for integrations that utilize the [external link icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~external-link).
-- A cookie is set to remember a user's preference between collapsed or expanded.
-- For medium and large viewports, the left sidebar is collapsed. When expanded manually, it overlaps the page content. The user's cookie preference is not overridden during this state.
-- For small and extra small viewports, the left sidebar is hidden behind a [sidebar icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sidebar). When expanded, the sidebar overlaps the page and a semi-transparent overlay covers the page content. The user's cookie preference is not overridden during this state.
+- The navigation sidebar is always available unless navigating is not needed or beneficial. The `minimal` page layout is an alternative option that removes the navigation elements.
+- The user's preference is set with a cookie to keep the navigation sidebar hidden or visible. It will be visible regardless of the cookie when the user needs the navigation sidebar to complete a task.
+- While hidden, hovering over the left edge of the page or the [sidebar icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sidebar) button reveals the sidebar as an overlay that can lock in place or be used to navigate without disrupting the page content.
+- Pinned items uniquely persist, allowing users to surface important links across groups and projects.
 
 ### Breakpoints
 
-- Extra large viewports: `1200px` and up
-- Medium and large viewports: `768px` to `1199px`
-- Small and extra small viewports: up to `767px`
+A single vertical navigation sidebar allows the user experience to transition across each breakpoint with minimal logic.
+
+#### Extra large viewports: `1200px` and up
+
+The navigation sidebar is visible by default, though users can choose to hide it to give focus to the body of the page and minimize distractions.
+
+#### Large, medium, small, and extra small viewports: `1199px` and below
+
+The navigation sidebar is hidden by default. When revealed by selecting the [sidebar icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~sidebar) button, it overlaps the page content with a semi-transparent overlay that covers the background. The user's cookie preference does not change within this breakpoint.
 
 ### Communicating changes to users
 
