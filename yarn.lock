@@ -7439,10 +7439,10 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha512-DUNFN5j7Tln0D+TxzloUjKB+CtVu6myn0JEFak6dG18mNt9YkQ6lzGCdafwofISZ1lLF3xRHJ98VKy9ynkcFaA==
 
-iframe-resizer@^4.3.2, iframe-resizer@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.4.0.tgz#05a242167fc2db5e986368e7bb99ba66ea1de629"
-  integrity sha512-NiEEfDgcFd7T5FVp64CKbp/w0FYOGhCe5wIDT045h8kcrywF2bhesaHU0y5pfrDMeUrPjmX15ovSwpHUwq4ryg==
+iframe-resizer@^4.3.2, iframe-resizer@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.4.2.tgz#4d319d42c5e16439f5c3ad530dc64ac51e99bcfd"
+  integrity sha512-2SupFCq9V9osWac4q+PodF0E9QdWY5A9VdCpKrrE7HlDrcIsaTp7D6k14mkGXWoWMS9jCavYusik25wTc0YB2Q==
 
 ignore@^5.2.0, ignore@^5.2.4, ignore@^5.3.0, ignore@^5.3.1:
   version "5.3.1"
