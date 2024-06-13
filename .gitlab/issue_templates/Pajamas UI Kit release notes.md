@@ -16,6 +16,7 @@ Release notes cover all files in the Figma UI kit. These include those used by G
 - [Product Pages](https://www.figma.com/design/tzpLCamRZNr2tTPwCP2UY4/Product-Pages)
 - [Type scale - Compact Markdown](https://www.figma.com/design/mjAZxHkK95TlQ6L14aNp2M/Type-scale---Compact-Markdown)
 - [Type scale - Documentation Markdown](https://www.figma.com/design/V3HKN83B7rf2T6sseLMrxa/Type-scale---Documentation-Markdown)
+- [GitLab Product Illustrations](https://www.figma.com/design/1ui9w228X0S5WxaD0SRdIA/GitLab-Product-Illustrations?m=auto&node-id=0-1&t=vlm6Z1nH72oWFBqR-1)
 </td>
 <td>
 
