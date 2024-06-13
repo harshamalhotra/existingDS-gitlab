@@ -28,14 +28,14 @@ The secondary palette expands upon our oranges and purples to provide more color
 
 | **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**                        |
 | ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ------------------------------ |
-| <div class="gl-p-3" style="background-color:#CEB3EF;"><span class="variable">Purple 01s</span> </div>                  | #CEB3EF | 206, 179, 239 | 13, 24, 0, 6    | 2635 C |
-| <div class="gl-p-3" style="background-color:#5943B6;"><span class="variable">Purple 02s</span> </div>                  | #5943B6 | 89, 67, 182 | 36, 45, 0, 29 | 2725 C                  |
-| <div class="gl-p-3 gl-text-white" style="background-color:#2F2A6B;"><span class="variable">Purple 03s</span> </div>    | #2F2A6B | 47, 42, 107 | 17, 19, 0, 64 | 274 C                  |
-| <div class="gl-p-3 gl-text-white" style="background-color:#232150;"><span class="variable">Purple 04s</span> </div>    | #232150 | 35, 33, 80    | 18, 18, 0, 69 | 275 C                 |
-| <div class="gl-p-3" style="background-color:#FDF1DD;"><span class="variable">Orange 01s</span> </div>    | #FDF1DD | 253, 241, 221    | 0, 5, 13, 1 | 7506 C             |
-| <div class="gl-p-3" style="background-color:#C5F4EC;"><span class="variable">Teal 01s</span> </div>    | #C5F4EC | 197, 244, 236    | 18, 0, 3, 4 | 317 C             |
-| <div class="gl-p-3" style="background-color:#6FDAC9;"><span class="variable">Teal 02s</span> </div>                  | #6FDAC9 | 111, 218, 201 | 42, 0, 7, 15    | 3242 C |
-| <div class="gl-p-3" style="background-color:#10B1B1;"><span class="variable">Teal 03s</span> </div>                  | #10B1B1 | 16, 177, 177 | 63, 0, 0, 31 | 7476 C                  |
+| <div class="gl-p-3" style="background-color:#CEB3EF;"><span class="variable">Purple 01s</span> </div>                  | #CEB3EF | 206, 179, 239 | 24, 29, 0, 0    | 2635 C |
+| <div class="gl-p-3 gl-text-white" style="background-color:#5943B6;"><span class="variable">Purple 02s</span> </div>                  | #5943B6 | 89, 67, 182 | 77, 82, 0, 0 | 2097 C                  |
+| <div class="gl-p-3 gl-text-white" style="background-color:#2F2A6B;"><span class="variable">Purple 03s</span> </div>    | #2F2A6B | 47, 42, 107 | 98, 98, 27, 15 | 273 C                  |
+| <div class="gl-p-3 gl-text-white" style="background-color:#232150;"><span class="variable">Purple 04s</span> </div>    | #232150 | 35, 33, 80    | 85, 82, 42, 38 | 275 C                 |
+| <div class="gl-p-3" style="background-color:#FDF1DD;"><span class="variable">Orange 01s</span> </div>    | #FDF1DD | 253, 241, 221    | 1, 4, 12, 0 | 7506 C             |
+| <div class="gl-p-3" style="background-color:#C5F4EC;"><span class="variable">Teal 01s</span> </div>    | #C5F4EC | 197, 244, 236    | 20, 0, 11, 0 | 317 C             |
+| <div class="gl-p-3" style="background-color:#6FDAC9;"><span class="variable">Teal 02s</span> </div>                  | #6FDAC9 | 111, 218, 201 | 51, 0, 29, 0    | 3242 C |
+| <div class="gl-p-3" style="background-color:#10B1B1;"><span class="variable">Teal 03s</span> </div>                  | #10B1B1 | 16, 177, 177 | 75, 5, 35, 0 | 7710 C                  |
 | <div class="gl-p-3" style="background-color:#D1D0D3;"><span class="variable">Gray 01</span> </div>                  | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16    | Cool Gray 3 C /  Cool Gray 2 U |
 | <div class="gl-p-3" style="background-color:#A2A1A6;"><span class="variable">Gray 02</span> </div>                  | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U                  |
 | <div class="gl-p-3 gl-text-white" style="background-color:#74717A;"><span class="variable">Gray 03</span> </div>    | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U                  |
