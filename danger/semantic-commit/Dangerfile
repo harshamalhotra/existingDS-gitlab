@@ -96,7 +96,7 @@ def lint_commit(commit)
 
   ## Suggestions applied through GitLab UI are not enforced for semantics as
   ## long as the squash option is enabled.
-  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && gitlab.mr_json['squash']
+  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && helper.squash_mr?
     appliedSuggestion = true
     return { failed: false, release: NO_RELEASE }
   end  
@@ -115,7 +115,7 @@ def lint_commit(commit)
   end
 
   # Warn if a suggestion commit is used and squash is not enabled.
-  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && !gitlab.mr_json['squash']
+  if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && !helper.squash_mr?
     warn_commit(
       commit,
       'This MR contains applied suggestions, but the squash commits option is disabled. If you are a maintainer merging this MR, please enable the squash commits option before merging.'
@@ -238,7 +238,7 @@ def lint_commits(commits)
     MARKDOWN
   end
 
-  return if gitlab.mr_json['squash']
+  return if helper.squash_mr?
 
   type, bump = get_release_info(max_release[:release])
 
@@ -253,41 +253,40 @@ def lint_commits(commits)
   end
 end
 
-def lint_mr(mr)
-  if mr && mr['squash']
-    release = NO_RELEASE
-    mr_title = mr['title'][/(^WIP: +)?(.*)/, 2]
-    semantic_commit = match_semantic_commit(mr_title)
+def lint_mr(mr_title)
+  return if mr_title.empty?
 
-    if !semantic_commit
-      warn(
-        'Your MR has **Squash commits when merge request is accepted** enabled but its title does not comply with conventional commits specifications'
-      )
-    elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
-      warn(
-        "The semantic commit type `#{semantic_commit[:type]}` is not a well-known semantic commit type."
-      )
-    elsif semantic_commit[:type] == 'feat'
-      release = MINOR_RELEASE
-    elsif %w[perf fix].include?(semantic_commit[:type])
-      release = PATCH_RELEASE
-    end
+  release = NO_RELEASE
+  semantic_commit = match_semantic_commit(mr_title[/(^WIP: +)?(.*)/, 2])
 
-    type, bump = get_release_info(release)
+  if !semantic_commit
+    warn(
+      'Your MR has **Squash commits when merge request is accepted** enabled but its title does not comply with conventional commits specifications'
+    )
+  elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
+    warn(
+      "The semantic commit type `#{semantic_commit[:type]}` is not a well-known semantic commit type."
+    )
+  elsif semantic_commit[:type] == 'feat'
+    release = MINOR_RELEASE
+  elsif %w[perf fix].include?(semantic_commit[:type])
+    release = PATCH_RELEASE
+  end
 
-    if type && bump
-      add_release_type_markdown(type)
-      markdown(<<~MARKDOWN)
-        This Merge Request will trigger a _#{type}_ of Pajamas Design System based on its title.
+  type, bump = get_release_info(release)
 
-        #{bump}
-      MARKDOWN
-    end
+  if type && bump
+    add_release_type_markdown(type)
+    markdown(<<~MARKDOWN)
+      This Merge Request will trigger a _#{type}_ of Pajamas Design System based on its title.
+
+      #{bump}
+    MARKDOWN
   end
 end
 
 lint_commits(git.commits)
-lint_mr(gitlab.mr_json)
+lint_mr(helper.mr_title) if helper.squash_mr?
 
 if git.commits.length > 10
   warn(

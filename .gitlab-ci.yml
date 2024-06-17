@@ -67,6 +67,7 @@ include:
     file: '/semantic-release/.gitlab-ci-template.rules.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
     file: 'templates/merge_request_pipelines.yml'
+  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.2.0
 
 ## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
 # TODO: pages-phase-3
@@ -124,14 +125,7 @@ sast:
 ###############
 
 danger-review:
-  image: registry.gitlab.com/gitlab-org/gitlab-build-images:danger
   stage: pre-build
-  dependencies: []
-  rules:
-    - if: '$CI_MERGE_REQUEST_IID && $DANGER_GITLAB_API_TOKEN'
-  script:
-    - danger_id=$(echo -n ${DANGER_GITLAB_API_TOKEN} | md5sum | awk '{print $1}' | cut -c5-10)
-    - danger --fail-on-errors=true --verbose --danger_id="${danger_id}"
 
 .node-job:
   image: node:20.13-alpine
