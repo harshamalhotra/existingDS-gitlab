@@ -6,7 +6,7 @@ Animation is a tool to help convey important relationships, changes, or transiti
 
 ## Types of animation
 
-1. **Feedback**: Confirm a user interaction with a control or other interactive element.
+1. **[Feedback](/product-foundations/animation-feedback)**: Confirm a user interaction with an interactive element.
 1. **Focus**: Highlight important content outside of a user's current context.
 1. **Explanation**: Show a user an element's properties, and its relationship to other elements.
 1. **Engagement**: Help a user feel supported while waiting.
@@ -30,7 +30,7 @@ Easing specifies the rate of change of a parameter over time. Adding an easing c
 | --- | --- | --- | --- |
 | <video tabindex="0" preload="true" controls="" loop="true" playsinline="true" aria-label="Linear easing" width="400"><source src="/video/easing-linear.mp4"></video> | `$gl-easing-linear` | `linear` |  |
 | <video tabindex="0" preload="true" controls="" loop="true" playsinline="true" aria-label="Default easing" width="400"><source src="/video/easing-default.mp4"></video> | `$gl-easing-default` | `ease` | Hover animation |
-| <video tabindex="0" preload="true" controls="" loop="true" playsinline="true" aria-label="Ease-out easing" width="400"><source src="/video/easing-out-cubic.mp4"></video> | `$gl-easing-out-cubic` | `cubic-bezier(0.22, 0.61, 0.36, 1)` | Focus animation |
+| <video tabindex="0" preload="true" controls="" loop="true" playsinline="true" aria-label="Ease-out easing" width="400"><source src="/video/easing-out-cubic.mp4"></video> | `$gl-easing-out-cubic` | `cubic-bezier(0.22, 0.61, 0.36, 1)` | Focus and action animation |
 
 <todo>Update the table with [other animation types](#types-of-animation).</todo>
 
@@ -40,7 +40,8 @@ The duration is the time an animation takes from start to finish. The animated e
 
 | Value | Use |
 | --- | --- |
-| `200ms` | Color changes, keyboard focus |
+| `100ms` | List item hover and focus transition |
+| `200ms` | Hover and focus transition of interactive elements |
 | `500ms` | Action feedback |
 | `600ms` | Position changes, complex transitions |
 
