@@ -68,9 +68,19 @@ Lastly, when you create a component variant in Figma it automatically adds a bor
 
 ### Base components
 
-Some components are built from **base** components. Base components provide foundational configuration, structure, or other settings for components to be built from. They are not published to the library, because we only want the variants created from them to be available for direct use. A base component name is prefixed with "_Base" and the underscore prevents it from being published. A base component can also use variants. A change to a base component should propagate to any components built from it. In other systems you may see them called primitives, or master components. We chose "base" to indicate a starting place.
+We don't use base components in the UI kit. Previously, they were the recommended approach for creating a foundation for component configuration and structure. Figma features like [multi-edit](https://help.figma.com/hc/en-us/articles/21635177948567-Edit-objects-on-the-canvas-in-bulk) now make it easier to maintain larger component matrixes. By no longer using base components we gain the following benefits:
 
-![Base button component with all configuration options](/img/base-btn.png)
+- Reduce file bloat and improve prototype performance.
+- Allow more isolated component updates, reducing the frequency and impact of breaking changes.
+- Improve override persistence for nested component instances.
+
+Base components often contained all possible component options, which caused components built using them to contain many hidden layers and properties. These hidden elements led to file bloat and prototype performance issues.
+
+A flatter component structure allows more direct component updates, minimizing the number of variants that need to change.
+
+Components nested within other components preserve overrides less readily than components nested at the top level. Avoid base components to reduce issues with override persistence.
+
+Base components are currently being replaced as part of [&22](https://gitlab.com/groups/gitlab-org/gitlab-services/-/epics/22).
 
 ### Elements
 
