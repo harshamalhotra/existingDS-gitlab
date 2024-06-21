@@ -4,13 +4,13 @@ name: GitLab Accessibility Conformance Report WCAG Edition
 
 **Based on Version 2.5**, November 2023 ([template](https://www.itic.org/policy/accessibility/vpat))
 
-- **Name of Product/Version:** GitLab Enterprise Edition Premium version 16.0
-- **Report Date:** Revised July, 2023
+- **Name of Product/Version:** GitLab Enterprise Edition Premium version 17.0
+- **Report Date:** Revised June, 2024
 - **Product Description:** From project planning and source code management to CI/CD and monitoring, GitLab is a single application for [the entire DevOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 - **Contact information:** [ux@gitlab.com](mailto:ux@gitlab.com)
 - **Notes:**
   - This evaluation only refers to GitLab the product and does not include the [about.gitlab.com](https://about.gitlab.com/) or [docs.gitlab.com](https://docs.gitlab.com/ee/) websites.
-  - The latest revision evaluates **GitLab Enterprise Edition Premium version 16.0** and supersedes earlier versions of this report.
+  - The latest revision evaluates whether or not previous findings are still valid as of GitLab Enterprise Edition Premium version 17.0, but does not provide new evaluations. New success criteria from the VPAT 2.5 template have also been added. This revision supersedes earlier versions of this report.
   - **Table 3: Success Criteria, Level AAA** has been removed because the GitLab product has not been evaluated for WCAG 2.2 Level AAA conformance.
   - GitLab supports the current and previous major version along with current minor version of the following browsers: Mozilla Firefox, Google Chrome, Chromium, Apple Safari, Microsoft Edge.
   - GitLab does not support running with JavaScript disabled in the browser because several features require JavaScript extensively.
@@ -113,11 +113,11 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >!567</a> and
+        >&567</a> and
         <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/564"
           target="_blank"
-        >!564</a> epics and will continue to be addressed.</li>
+        >&564</a> epics and will continue to be addressed.</li>
         </ul>
       </td>
     </tr>
@@ -191,7 +191,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >!567</a> epic and will continue to be addressed.</li>
+        >&567</a> epic and will continue to be addressed.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -275,7 +275,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Know instances are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/565"
           target="_blank"
-        >!565</a> epic.</li>
+        >&565</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -296,7 +296,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances where a user cannot navigate away from focused file editors are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/627"
           target="_blank"
-        >!627</a> epic.</li>
+        >&627</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -414,7 +414,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances of unclear product links are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/620"
           target="_blank"
-        >!620</a> epic.</li>
+        >&620</a> epic.</li>
           <li>A user can add a link with <a href="https://docs.gitlab.com/ee/user/markdown.html">GitLab Flavored Markdown</a>, however, there is no mechanism to verify that the user has made a link's purpose clear. Therefore, we classify this as partially supports.</li>
         </ul>
       </td>
@@ -436,16 +436,9 @@ The terms used in the Conformance Level information are defined as follows:
           target="_blank"
         >2.5.2 Pointer Cancellation</a> (Level A 2.1 and 2.2)
       </td>
-      <td>Partially supports</td>
+      <td>Supports</td>
       <td>
-        <p>The product has some instances where down-events are initialized without a method to easily undo or abort.</p>
-        <ul>
-          <li>Known instances are tracked in the <a
-          href="https://gitlab.com/groups/gitlab-org/-/epics/8761"
-          target="_blank"
-        >!8761</a> epic.</li>
-          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
-        </ul>
+        <p>The product has no known instances where down-events are initialized without a method to easily undo or abort.</p>
       </td>
     </tr>
     <tr>
@@ -518,9 +511,10 @@ The terms used in the Conformance Level information are defined as follows:
         >3.2.6 Consistent Help</a> (Level A 2.2 only)
       </td>
       <td>
+        Supports
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>Help is available in a consistent location.</p>
       </td>
     </tr>
     <tr>
@@ -539,7 +533,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances where the identification and description of an error is not always combined programmatically to help assistive technologies to identify an error are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/7341"
           target="_blank"
-        >!7341</a> epic.</li>
+        >&7341</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -560,7 +554,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances where a label is not present are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/621"
           target="_blank"
-        >!621</a> epic.</li>
+        >&621</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -573,9 +567,10 @@ The terms used in the Conformance Level information are defined as follows:
         >3.3.7 Redundant Entry</a> (Level A 2.2 only)
       </td>
       <td>
+        Supports
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>The product doesn't prevent redundant entry when available.</p>
       </td>
     </tr>
     <tr>
@@ -609,7 +604,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Know instances are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/567"
           target="_blank"
-        >!567</a> epic.</li>
+        >&567</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -677,16 +672,9 @@ The terms used in the Conformance Level information are defined as follows:
           target="_blank"
         >1.3.5 Identify Input Purpose</a> (Level AA 2.1 and 2.2)
       </td>
-      <td>Partially supports</td>
+      <td>Supports</td>
       <td>
-        <p>The product mostly uses input types and has some instances of autocomplete attributes on input fields.</p>
-        <ul>
-          <li>Known instances where input fields do not implement identifying expected form input data are tracked in the <a
-          href="https://gitlab.com/groups/gitlab-org/-/epics/8762"
-          target="_blank"
-        >!8762</a> epic.</li>
-          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
-        </ul>
+        <p>The product uses inputs that have a clear purpose.</p>
       </td>
     </tr>
     <tr>
@@ -705,7 +693,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/562"
           target="_blank"
-        >!562</a> epic.</li>
+        >&562</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -726,7 +714,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances where text is clipped or inaccessible when zoomed are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/563"
           target="_blank"
-        >!563</a> epic.</li>
+        >&563</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -745,7 +733,7 @@ The terms used in the Conformance Level information are defined as follows:
         <p>The product may include decorative images or illustrations that contain text.</p>
         <ul>
           <li>An image of text may be added in user generated content with <a href="https://docs.gitlab.com/ee/user/markdown.html">GitLab Flavored Markdown</a> and there is the capability to add alternative text.</li>
-          <li>Known instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/10943">!10943</a> epic.</li>
+          <li>Known instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/10943">&10943</a> epic.</li>
           <li>There is no mechanism to verify that the user has included alternative text, or that if included, it's accurate. Therefore, we classify this as partially supports.</li>
         </ul>
       </td>
@@ -774,7 +762,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances are being tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/8763"
           target="_blank"
-        >!8763</a> epic.</li>
+        >&8763</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -821,17 +809,10 @@ The terms used in the Conformance Level information are defined as follows:
         >2.4.6 Headings and Labels</a> (Level AA)
       </td>
       <td>
-        Partially supports
+        Supports
       </td>
       <td>
-        <p>In most instances the product uses descriptive headings and labels to describe the purpose or topic on a page.</p>
-        <ul>
-          <li>Know instances where headings and labels could be improved are tracked in the <a
-          href="https://gitlab.com/groups/gitlab-org/-/epics/566"
-          target="_blank"
-        >!566</a> epic.</li>
-          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
-        </ul>
+        <p>The product uses descriptive headings and labels to describe the purpose or topic on a page.</p>
       </td>
     </tr>
     <tr>
@@ -861,9 +842,17 @@ The terms used in the Conformance Level information are defined as follows:
         >2.4.11 Focus Not Obscured (Minimum)</a> (Level AA 2.2 only)
       </td>
       <td>
+        Partially supports
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>The product has some instances where focus may be obscured.</p>
+        <ul>
+          <li>Known instances are being tracked in the <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/14070"
+          target="_blank"
+        >&14070</a> epic.</li>
+          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
+        </ul>
       </td>
     </tr>
     <tr>
@@ -874,9 +863,17 @@ The terms used in the Conformance Level information are defined as follows:
         >2.5.7 Dragging Movements</a> (Level AA 2.2 only)
       </td>
       <td>
+        Does not support
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>Dragging movements in the product cannot be done without dragging a single pointer.</p>
+        <ul>
+          <li>Known instances are being tracked in the <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/14073"
+          target="_blank"
+        >&14073</a> epic.</li>
+          <li>Until a majority of known instances have been addressed, we will classify this as does not support.</li>
+        </ul>
       </td>
     </tr>
     <tr>
@@ -887,9 +884,17 @@ The terms used in the Conformance Level information are defined as follows:
         >2.5.8 Target Size (Minimum)</a> (Level AA 2.2 only)
       </td>
       <td>
+        Partially supports
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>The product has some instances where a target size may be too small.</p>
+        <ul>
+          <li>Known instances are being tracked in the <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/14071"
+          target="_blank"
+        >&14071</a> epic.</li>
+          <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
+        </ul>
       </td>
     </tr>
     <tr>
@@ -953,7 +958,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances where error remedies are not provided or are not programmatically associated to help assistive technologies are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/7341"
           target="_blank"
-        >!7341</a> epic.</li>
+        >&7341</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
@@ -980,9 +985,10 @@ The terms used in the Conformance Level information are defined as follows:
         >3.3.8 Accessible Authentication (Minimum)</a> (Level AA 2.2 only)
       </td>
       <td>
+        Supports
       </td>
       <td>
-        <p>NEW in WCAG 2.2, will be updated for the 17.0 release.</p>
+        <p>The product does not prevent the use of copy/paste, password managers, or showing hidden characters. Additionally, authentication steps don't rely on cognitive function tests" or object recognition.</p>
       </td>
     </tr>
     <tr>
@@ -999,7 +1005,7 @@ The terms used in the Conformance Level information are defined as follows:
           <li>Known instances of visual responses to user actions that use a status message, but are not perceptive to assistive technologies are tracked in the <a
           href="https://gitlab.com/groups/gitlab-org/-/epics/8764"
           target="_blank"
-        >!8764</a> epic.</li>
+        >&8764</a> epic.</li>
           <li>Until all known instances have been addressed, we will classify this as partially supports.</li>
         </ul>
       </td>
