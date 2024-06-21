@@ -67,7 +67,7 @@ include:
     file: '/semantic-release/.gitlab-ci-template.rules.yml'
   - project: gitlab-org/frontend/untamper-my-lockfile
     file: 'templates/merge_request_pipelines.yml'
-  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.2.0
+  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.0
 
 ## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
 # TODO: pages-phase-3
