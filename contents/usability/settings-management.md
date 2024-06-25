@@ -1,10 +1,14 @@
 ---
 name: Settings management
 related:
-  - accordion
+  - tooltip
+  - popover
+  - alert
+  - toast
   - /usability/navigation-sidebar
   - /content/ui-text
   - /usability/saving-and-feedback
+  - /usability/progressive-disclosure
 ---
 
 Settings allow users to control how the platform's features or capabilities should behave or appear. They are configurable options and attributes, which present choices to the user to modify baseline functionality.
@@ -28,7 +32,7 @@ A child namespace will typically inherit its values from its parent namespace. I
 #### Examples
 
 - When a parent setting is overridable, making that clear in the parent setting's UI may necessitate adding informative text.
-- When a parent setting is enforced, making this clear in the child setting's UI may require changing the child setting state to disabled and adding a lock icon with a [popover](/components/popover) to explain the nature of the restriction:
+- When a parent setting is enforced, making this clear in the child setting's UI may require changing the child setting state to disabled and adding a lock icon with a [popover](/components/popover) or [tooltip](/components/tooltip) to explain the nature of the restriction:
 
 <figure-img label="Example of locked setting" src="/img/locked-setting-example.png"></figure-img>
 
