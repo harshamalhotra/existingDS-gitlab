@@ -60,11 +60,16 @@ Forms may include a variety of elements. By default all information in forms is 
   - If a field is optional, add the suffix "(optional)". For example, _Phone number (optional)_
   - Don't use punctuation. Special characters are allowed for formatting (-:;).
 - **Description**:
-  - Clarifies and explains the purpose or intent of an input. For example, _A phone number is required for security purposes._
+  - Clarify and explain the purpose or intent of an input. For example, _Required for security purposes._
   - Avoid repetitive or unnecessary text. For example, _This setting is..._ or _Use this setting to..._
   - Positioned directly below a label.
   - Don't use "allow" unless you're specifically talking about security. For example, _Allows users to fork the repo_ should be _Users can fork the repo_.
-- **Help**: Provides contextual examples, formatting information, details about the input state, validation messages, or any combination of these options. Positioned directly below an input. May include a [help link](/usability/contextual-help) when necessary. For example: _Must have 11 digits including the country code. For example, +1-234-567-8901. Learn more._
+- **Help**:
+  - Provide examples, expected format, input state, validation messages, or any combination of these.
+  - Positioned directly below an input.
+  - You can omit examples or expected format if the user typically copies an already validated value to paste into the input. For example, the user copies and pastes their Google Cloud project ID, which was validated when their project was created in Google Cloud.
+  - May include a [help link](/usability/contextual-help) when necessary.
+  - For example: _Must be 11 digits including the country code. Example: `+1-234-567-8901`. Learn more._
 - **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
 
 #### Field
@@ -182,7 +187,7 @@ Instead, use messages like:
 
 - An error occurred while importing the project to GitLab. For more information, see how to [import your project from GitHub to GitLab](https://docs.gitlab.com/ee/user/project/import/github.html).
 - The project name must be 40 characters or fewer.
-- Your email is required to sign up with GitLab.
+- Email is required.
 
 ##### Specific
 
@@ -190,7 +195,7 @@ Generic error messages are not helpful, and they don't make sense out of context
 
 Error messages for specific situations are more helpful to users.
 
-- `Your project title needs to have at least 3 characters` is more specific and direct than `Name is too short`.
+- `Project title must have at least 3 characters.` is more specific and direct than `Name is too short`.
 - `Display name is required` is more specific than `Field is empty` and more succinct than `Your display name can't be blank`.
 
 ##### Consistent
@@ -199,13 +204,13 @@ To reduce the cognitive effort needed from users to understand the error, use a 
 
 Avoid writing different messages that have the same meaning:
 
-- Your password needs to have at least 8 characters.
-- Your password should not have less than 8 characters.
-- Your password has fewer than 8 characters.
+- Password must be at least 8 characters.
+- Password should not be less than 8 characters.
+- Password has fewer than 8 characters.
 
 Instead, use the same phrasal structure for all messages:
 
-- Your project title needs to have at least 3 characters.
+- Password must be at least 3 characters.
 
 #### Error messages and scenarios
 
