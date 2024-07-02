@@ -8730,7 +8730,7 @@ linkify-it@^5.0.0:
   dependencies:
     uc.micro "^2.0.0"
 
-linkinator@^6.0.6:
+linkinator@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-6.1.0.tgz#28ee9c7612f1f6c1b659a86296efcbc396afcdc5"
   integrity sha512-Snumf1hRc9VycBhjMQS2nkc7NHc7OnBD66zSajSbttv+AvbpqV/HeaDJPxHLJl1TTSmfdjMLOYC8wedowKdpag==
