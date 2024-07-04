@@ -39,49 +39,49 @@ Though deciding which color to use depends on the situation, here are some gener
 
 Blue indicates a current or active state. It communicates management, progress, connectivity, or organization.
 
-<story-viewer component="tokens-color-base-light" story="blue" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="blue" title="Tokens"></story-viewer>
 
 #### Green
 
 Green indicates success. It communicates save, create, add, available, done, approved, or resolved.
 
-<story-viewer component="tokens-color-base-light" story="green" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="green" title="Tokens"></story-viewer>
 
 #### Orange
 
 Orange indicates attention is required. It communicates warning, pending, missing, or impeded progress.
 
-<story-viewer component="tokens-color-base-light" story="orange" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="orange" title="Tokens"></story-viewer>
 
 #### Red
 
 Red indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
 
-<story-viewer component="tokens-color-base-light" story="red" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="red" title="Tokens"></story-viewer>
 
 #### Purple
 
 Purple is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
-<story-viewer component="tokens-color-base-light" story="purple" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="purple" title="Tokens"></story-viewer>
 
 #### Neutral
 
 Neutrals are primarily used for surfaces and within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
 
-<story-viewer component="tokens-color-base-light" story="gray" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="neutral" title="Tokens"></story-viewer>
 
-### Transparency
+### Alpha
 
-Transparency is used only to effectively shade an element in relation to the surface below. See [blend modes and opacity](#blend-modes-and-opacity).
+Alpha colors are used only to effectively shade an element in relation to the surface below. See [blend modes and opacity](#blend-modes-and-opacity).
 
-#### Gray
+#### Dark
 
-<story-viewer component="tokens-color-transparency" story="gray" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-alpha" story="dark" title="Tokens"></story-viewer>
 
-#### White
+#### Light
 
-<story-viewer component="tokens-color-transparency" story="white" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-alpha" story="light" title="Tokens"></story-viewer>
 
 ## Themes
 
@@ -91,29 +91,29 @@ A user may choose between ten different themes to customize the appearance of th
 
 Indigo and light indigo share the same `$theme-indigo-` SCSS variables.
 
-<story-viewer component="tokens-color-themes-light" story="theme-indigo" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-indigo" title="Tokens"></story-viewer>
 
 ### Green / Light green
 
 Green and light green share the same `$theme-green-` SCSS variables.
 
-<story-viewer component="tokens-color-themes-light" story="theme-green" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-green" title="Tokens"></story-viewer>
 
 ### Blue
 
-<story-viewer component="tokens-color-themes-light" story="theme-blue" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-blue" title="Tokens"></story-viewer>
 
 ### Light blue
 
-<story-viewer component="tokens-color-themes-light" story="theme-light-blue" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-light-blue" title="Tokens"></story-viewer>
 
 ### Red
 
-<story-viewer component="tokens-color-themes-light" story="theme-red" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-red" title="Tokens"></story-viewer>
 
 ### Light red
 
-<story-viewer component="tokens-color-themes-light" story="theme-light-red" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="theme-light-red" title="Tokens"></story-viewer>
 
 ### Dark / Light
 
