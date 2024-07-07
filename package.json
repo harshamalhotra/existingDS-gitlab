@@ -39,7 +39,7 @@
     "@nuxtjs/lunr-module": "^0.3.2",
     "@nuxtjs/sentry": "^8.0.7",
     "bootstrap": "^4.6.2",
-    "iframe-resizer": "^4.4.2",
+    "iframe-resizer": "^4.4.4",
     "mermaid": "^10.9.1",
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0"
