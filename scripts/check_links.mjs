@@ -20,6 +20,12 @@ async function checkLinks() {
     path: `http://${SITE_HOST}`,
     recurse: true,
     timeout: 60 * 1000, // Time out after 1mn to prevent hanging pipelines
+    urlRewriteExpressions: [
+      {
+        pattern: /https:\/\/design\.gitlab\.com/,
+        replacement: `http://${SITE_HOST}`,
+      },
+    ],
     linksToSkip: async (rawUrl) => {
       const url = new URL(rawUrl);
       return !ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
