@@ -2,13 +2,54 @@
 name: Release notes
 ---
 
+## 17.3
+
+[_Draft: 17.3 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3939)
+
 ## 17.2
 
-[_Draft: 17.2 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3886)
+<small>Published 2024-07-12</small>
+
+<note>Speed up common color decisions through our design tokens Figma library, now in open beta. Start using it today, and let us know what you think in the [feedback issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1870).</note>
+
+### Additions
+
+- Added [**❖&nbsp;Avatar**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120518-1434&m=design). Component now includes multiple options for people, logo, and fallback states to chose from.
+- Added [**❖&nbsp;Avatar-labeled**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120518-1489&t=gt0xr6Kwr1Zg3tWb-4). The new avatar, but now includes text labels. Choose a stacked or inline label, with or without a sub-label, change the size or shape… the possibilities are (almost) endless.
+- Added [**❖&nbsp;Label**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120776-3617&t=gt0xr6Kwr1Zg3tWb-4). This new version of the component includes many long awaited features including: a remove button, a single place to change color, a single size, and options for lighter labels and darker labels. Happy labelling.
+- Added [**❖&nbsp;Profile&nbsp;navigation**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=119486-16353&t=r5eNZvmP0hqq3rhR-4).
+- Added [**❖&nbsp;User&nbsp;settings&nbsp;navigation**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=120077-12557&t=g77WTJQQTCbubeMt-1).
+- Added opt in [**Beta:&nbsp;Design&nbsp;tokens**](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?m=auto) library file. Using design tokens as Figma variables is moving to open-beta following a successful invite-only pilot. In the future, color styles will be removed from the component library and these Figma variables will be updated to support dark mode.
+- Added the following icons: [**insert**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~insert).
+- Added the following illustrations: [**empty-variables-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-state/empty-variables-md.svg), [**variables-sm.svg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/variables-sm.svg).
+
+### Enhancements
+
+- Updated [**❖&nbsp;Banner**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-4) to make illustrations easier to swap. Property names are now also more consistent with other components.
+
+### Changes
+
+- Updated [**Color**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=581-1&t=kEI3wvJ1158SVYZV-1) foundation:
+  - Renamed "gray" color ramp styles to "neutral", "white" to "neutral-0", and "black" to "neutral-1000" to align with design token work
+  - Updated hex values for neutral 700–1000 (see [#2751](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2751) for details)
+  - Removed contrast ratios from color chips since they are present in [Pajamas](https://design.gitlab.com/product-foundations/color) and plugins or native apps can also inspect ratios.
+  - Other miscellaneous auto layout and layer naming improvements
+- Breaking (low): Remove hidden title layer from the `Has title:false` **❖ Alert** variant.
+- Updated **❖&nbsp;Alert**, **❖&nbsp;Avatar**, **❖&nbsp;Avatar-labeled**, **❖&nbsp;Banner**, **❖&nbsp;Label**, and **❖&nbsp;Focus&nbsp;ring** to use design tokens.
+- Updated icons in [**GitLab&nbsp;Product&nbsp;Icons**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto) to not use styles from **📙&nbsp;Component&nbsp;Library**.
+- Note: As **❖&nbsp;Focus&nbsp;ring**, icons, and neutral colors are used in nearly every component, nearly every component was 'modified' in this release.
+
+### Deprecations
+
+- Deprecated **❖&nbsp;Avatar**. Use the new [**❖&nbsp;Avatar**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120518-1434&t=gt0xr6Kwr1Zg3tWb-4) and [**❖&nbsp;Avatar-labeled**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120518-1489&t=gt0xr6Kwr1Zg3tWb-4) instead.
+- Deprecated [**❖&nbsp;Breadcrumb**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=425-5&t=DC92KFBAiBwU50Ng-1). New version of component will have properties for:
+  - number of page levels
+  - show ellipsis button for narrow viewports
+- Deprecated **❖&nbsp;Label**. Use the new [**❖&nbsp;Label**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120776-3617&t=gt0xr6Kwr1Zg3tWb-4) instead.
+- Deprecated `Focus ring` layer styles.
 
 ## 17.1
 
-<!-- Update publish date-->
 <small>Published 2024-06-18</small>
 
 ### Additions
