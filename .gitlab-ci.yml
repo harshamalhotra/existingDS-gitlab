@@ -175,6 +175,8 @@ pages:
   extends:
     - .node-job
     - .build_cache
+  rules:
+    - if: "$GITLAB_FEATURES =~ /pages_multiple_versions/"
   stage: deploy
   pages:
     path_prefix: "${PAGES_PREFIX}"
