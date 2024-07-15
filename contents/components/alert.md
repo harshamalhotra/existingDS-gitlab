@@ -89,18 +89,18 @@ related:
 
 ### Placement
 
-- **Global**: Impacts the entire experience, is full-width, and is placed directly below the navigation bar.
-  <figure-img alt="Global alert position" label="Full-width danger alert under the global navigation and above the contextual navigation" src="/img/alert-global.png" width="332"></figure-img>
-- **Page-level**: Appears at the top of a page, directly below the navigation bar and above the breadcrumbs, and restricted to the content container width which can be either fixed or fluid, depending on user’s preference.
-  <figure-img alt="Page-level alert position" label="Page-level alert in the main content area with space above and below" src="/img/alert-page-level.png" width="332"></figure-img>
+- **Global**: Impacts the entire experience, is always full-width, and is placed directly below the breadcrumb bar.
+  <figure-img alt="Global alert position" label="Full-width danger alert" src="/img/alert-global.svg" width="332"></figure-img>
+- **Page-level**: Appears near the top of a page, directly above a header section, and is restricted to the content container width, which can be either fixed or fluid, depending on a user’s preference.
+  <figure-img alt="Page-level alert position" label="Page-level danger alert in the main content area with space above and below" src="/img/alert-page-level.svg" width="332"></figure-img>
 - **In-page**: Within a section of the page when the message is specific to that content.
-  <figure-img alt="In-page alert position" label="In-page alert contextually placed with space above and below" src="/img/alert-in-page.png" width="332"></figure-img>
+  <figure-img alt="In-page alert position" label="In-page danger alert contextually placed with space above and below" src="/img/alert-in-page.svg" width="332"></figure-img>
 
 #### Sticky positioning
 
 - Uses `position: sticky` to keep critical information in view as the page scrolls.
 - Helpful when an alert is added without a page refresh and its position would otherwise be out of view.
-- Typically is reserved for errors, as they need to be addressed by users.
+- Usually is reserved for errors, as they need to be addressed by users.
 - Only one sticky alert should be used at a time.
 
 #### Multiple alerts
