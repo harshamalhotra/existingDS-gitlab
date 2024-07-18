@@ -4,6 +4,7 @@ related:
   - /usability/contextual-help
   - /usability/destructive-actions
   - /usability/saving-and-feedback
+  - /patterns/slash-commands
 ---
 
 As AI continues to advance, it brings both exciting opportunities and new challenges for product design. Although designing for AI still requires adhering to human-centered design principles, additional considerations such as ethics, privacy, trust, and transparency must be taken into account.
@@ -14,7 +15,7 @@ This page is divided into two main sections: [Guidelines](#guidelines) and [Fram
 
 ### Start with the user, not the technology
 
-AI technology should be leveraged to enhance the user experience, rather than be the primary focus. Design with a deep understanding of the user's needs, goals, and pain points. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to _____?", ask yourself "How might we help users _____?".
+AI technology should be leveraged to enhance the user experience, rather than be the primary focus. Design with a deep understanding of the user's needs, goals, and pain points. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to **\_**?", ask yourself "How might we help users **\_**?".
 
 ### Understand when to automate
 
