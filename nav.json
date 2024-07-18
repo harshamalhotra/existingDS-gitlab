@@ -447,6 +447,15 @@
             "path": "forms"
           },
           {
+            "title": "GitLab Duo",
+            "items": [
+              {
+                "title": "Slash commands in GitLab Duo Chat",
+                "path": "slash-commands"
+              }
+            ]
+          },
+          {
             "title": "Keyboard shortcuts",
             "path": "keyboard-shortcuts"
           },
