@@ -49,6 +49,8 @@ related:
 - Only one tab can be active at a given time.
 - Tabs may be nested with a maximum nesting of two levels. This pattern should only be considered as a last resort due to the complexity it creates both in code and for the user experience.
 - Each tab at the parent level should have its own unique URL. When determining whether to implement unique URLs for child tabs, consider whether or not a user would want to bookmark or link to the tabbed content.
+- Tabs should ideally scroll horizontally when adapting to the browser size or when a large number of tab buttons are needed.
+  - Currently, due to [technical limitations](https://gitlab-org.gitlab.io/gitlab-ui/?path=/docs/base-tabs--docs#scrollable-tab-buttons), when adding buttons to the tab group, tabs will wrap when they overflow the container.
 
 ### Content
 
