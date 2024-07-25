@@ -20,6 +20,30 @@ We've scoped these Figma variables by limiting the properties they can be applie
 
 <note>A pilot for design tokens in code has been completed as part of this [issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1776), and we're currently doing more exploration with a small subset of components as part of this [issue](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2583). More details about officially using design tokens will be coming soon, but in the meantime carry on with your typical development process.</note>
 
-## Patterns and matching
+## Concepts
+
+### Actions
+
+Actions are interactive elements that trigger or represent user actions. `action.*` design tokens give a common visual style for interactive elements across the GitLab UI.
+
+To create bespoke interactive elements, combine background, foreground, and border color tokens. Note that in some modes, borders might not be visible by default. This is intentional to provide accessible boundaries in modes like Windows High Contrast Mode.
+
+Action tokens support three contexts:
+
+- `neutral`: Default for most actions
+- `confirm`: For positive outcome actions
+- `danger`: For potentially destructive actions
+
+Interactivity can be communicated through implementing states such as `hover`, `focus`, and `active`.
+
+Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), or [tabs](/components/tabs)) that already implement action tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components/overview).
+
+Form elements and user inputs should use [`control.*` design tokens](#controls) instead of action design tokens.
+
+### Controls
+
+<todo>Document control design tokens</todo>
+
+### Patterns and matching
 
 <todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1816">Document token pairing for color patterns and token matching for conceptual patterns.</todo>
