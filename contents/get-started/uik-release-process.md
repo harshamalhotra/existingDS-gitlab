@@ -10,6 +10,10 @@ The Pajamas UI Kit will have a new release (version) published at the end of eac
   - Enhancements - Improvements to everything from leveraging Figma features to component, workflow, and documentation. Breaking changes can also be due to an enhancement.
   - Changes - Neutral or breaking changes and deprecation mentions. Also consider mentioning deprecations that will happen in the next release.
   - Fixes - Squashing bugs, errors, or otherwise broken items.
+- Use the simple present tense with an implied subject when adding to the release notes. This will help the notes feel concise and relevant. For example:
+  - Adds [itemName].
+  - Fixes [itemName].
+  - Changes [itemName].
 - When possible, a video will accompany the release to highlight any changes, demonstrate how to triage impact, and how to work with new features.
 - New .fig files will be saved and updated in the [ui-kit](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/ui-kit) folder of the repo. These leverage the git history to track versions.
 - The [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history) of a Figma file will summarize all updates along with notes on [breaking changes](uik-breaking-changes). Figma will automatically update the history with:
