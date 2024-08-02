@@ -78,7 +78,7 @@
       </div>
     </div>
     <div
-      class="gl-bg-gray-10 gl-border-gray-50 gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
+      class="gl-bg-subtle gl-border-default gl-border-solid gl-border-0 gl-border-t-1 gl-border-b-1 gl-pt-9 gl-pb-9"
     >
       <div class="container">
         <div class="two-column">

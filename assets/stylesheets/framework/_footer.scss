@@ -14,7 +14,7 @@
 #ot-sdk-btn.ot-sdk-show-settings,
 #ot-sdk-btn.optanon-show-settings {
     background-color: inherit !important;
-    color: $anchor-color !important;
+    color: var(--gl-text-color-link) !important;
     border: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -25,7 +25,7 @@
 
     &:hover {
         background-color: inherit !important;
-        color: $anchor-color !important;
+        color: var(--gl-text-color-link) !important;
         text-decoration: underline;
     }
 }

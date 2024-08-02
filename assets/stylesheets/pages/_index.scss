@@ -136,7 +136,7 @@
   .component-card {
     &:hover,
     &:focus {
-      border-color: $gray-200;
+      border-color: var(--gl-border-color-strong);
     }
   }
 }

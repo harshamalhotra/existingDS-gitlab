@@ -29,7 +29,7 @@ export default {
       <ul class="components-list mt-4 gl-display-grid gl-list-style-none gl-pl-0!">
         <li v-for="component in componentList" :key="component.path" class="gl-display-flex">
           <nuxt-link
-            class="component-card gl-text-decoration-none! gl-text-black-normal! gl-rounded-base gl-bg-white gl-p-5 gl-w-full gl-border-1 gl-border-solid gl-border-gray-100"
+            class="component-card gl-text-decoration-none! !gl-text-default gl-rounded-base gl-bg-default gl-p-5 gl-w-full gl-border-1 gl-border-solid gl-border-default"
             :to="component.path"
           >
             <h3 class="component-name">{{ component.name }}</h3>

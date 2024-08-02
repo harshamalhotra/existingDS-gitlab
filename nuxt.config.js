@@ -107,7 +107,7 @@ export default {
       'cookie-banner-callback': ['innerHTML'],
     },
     bodyAttrs: {
-      class: 'ui-indigo',
+      class: 'gl-bg-default gl-text-default',
       tabindex: '-1',
     },
   },

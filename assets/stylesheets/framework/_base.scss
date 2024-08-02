@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   line-height: 16px;
   font-family: $gl-regular-font;
-  color: $gl-text-color;
+  color: var(--gl-text-color-default);
   margin: 0;
 }
 
