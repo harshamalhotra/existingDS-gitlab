@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: $gray-10;
+  background-color: var(--gl-background-color-subtle);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -9,7 +9,7 @@
   z-index: $z-sidebar;
 
   @include media-sm-up {
-    border-right: 1px solid $gray-50;
+    border-right: 1px solid var(--gl-border-color-default);
     top: 0;
     width: $sidebar-width;
   }
@@ -52,7 +52,7 @@
 
   > ul > li + li {
     &::before {
-      border-top: 1px solid $gray-50;
+      border-top: 1px solid var(--gl-border-color-default);
       content: '';
       display: block;
       margin: $gl-spacing-3;
@@ -63,17 +63,17 @@
 .sidebar__nav-anchor,
 .sidebar__nav-toggle {
   border-radius: $border-radius;
-  color: $gray-900;
+  color: var(--gl-action-neutral-foreground-color-default);
   display: block;
   padding: $gl-spacing-3 $gl-spacing-3 $gl-spacing-3 $gl-spacing-4;
 
   &:hover,
   &:focus {
-    background-color: $gray-50;
+    background-color: var(--gl-action-neutral-background-color-hover);
   }
 
   &:active {
-    background-color: $gray-100;
+    background-color: var(--gl-action-neutral-background-color-active);
   }
 }
 
@@ -107,7 +107,7 @@
   width: 100%;
 
   svg {
-    fill: $gray-400;
+    fill: currentColor;
     flex-grow: 0;
     flex-shrink: 0;
     height: 16px;
@@ -127,7 +127,7 @@
 }
 
 .sidebar__nav-toggle--expanded {
-  background-color: $gray-10;
+  background-color: var(--gl-background-color-subtle);
   position: sticky;
   top: -$gl-spacing-3;
   z-index: $z-sidebar;
@@ -147,7 +147,7 @@
 
   &.nuxt-link-active {
     position: relative;
-    background-color: $gray-50;
+    background-color: var(--gl-action-neutral-background-color-active);
 
     &::before {
       content: '';

@@ -16,7 +16,7 @@
   }
 
   small {
-    color: $gray-500;
+    color: var(--gl-text-color-subtle);
     display: none;
     font-size: 12px;
     margin-top: $gl-spacing-2;
@@ -28,7 +28,11 @@
 
   &:hover,
   &:focus {
-    background-color: $gray-50;
+    background-color: var(--gl-action-neutral-background-color-hover);
     text-decoration: none;
+  }
+
+  &:active {
+    background-color: var(--gl-action-neutral-background-color-active);
   }
 }

@@ -1,5 +1,5 @@
 <script>
-import { GlNav, GlNavItem } from '../../helpers/gitlab_ui';
+import { GlAlert, GlNav, GlNavItem } from '../../helpers/gitlab_ui';
 import { buildMeta } from '../../helpers/seo';
 
 /*
@@ -26,6 +26,7 @@ const componentNameToLabelMap = {
 
 export default {
   components: {
+    GlAlert,
     GlNav,
     GlNavItem,
   },
@@ -149,13 +150,10 @@ export default {
       <h1 id="skipTarget" class="gl-heading-display gl-mt-0! gl-mb-4!" tabindex="-1">
         {{ page.name }}
       </h1>
-      <div
-        v-if="page.deprecated"
-        role="alert"
-        class="gl-bg-orange-50 gl-px-5 gl-py-3 gl-mb-3 gl-display-flex gl-align-items-center"
-      >
-        <span class="gl-text-orange-600 gl-mr-3">⚠️</span>
-        Please refrain from using this component - it is about to be deprecated!
+      <div v-if="page.deprecated" class="app-styles gl-mb-3">
+        <gl-alert :dismissible="false" variant="warning">
+          Please refrain from using this component - it is about to be deprecated!
+        </gl-alert>
       </div>
       <p v-if="page.description">{{ page.description }}</p>
     </div>
