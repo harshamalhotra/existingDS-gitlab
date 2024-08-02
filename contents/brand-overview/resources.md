@@ -10,14 +10,15 @@ On this page you will find the most up-to-date brand assets. If you have questio
 
 ## Color
 
-- [RGB swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-rgb.ase) (Internal access only)
-- [CMYK swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/blob/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes/gitlab-cmyk-pms.ase) (Internal access only)
+- [RGB and CMYK swatch downloads](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/f81b3dc6fa86539e2ae5c9243f8b195c3f81abac/brand/brand-assets/brand-color-palettes) (Internal access only)
+
+## Typography
+
+- [Font downloads](https://gitlab-org.gitlab.io/frontend/fonts/) for GitLab Sans and GitLab Mono
 
 ## Marketing illustrations
 
 - [Illustration library](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/tree/master/design/_resources/_designer-resources/assets/illustration-library) (Internal access only)
-- [RGB swatches, secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-hex-rgb.ase) (Internal access only)
-- [CMYK swatches - secondary palette](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/design/_resources/_designer-resources/color-palettes/gitlab-secondary-color-palette-pms-cmyk.ase) (Internal access only)
 
 ## Marketing icons
 
