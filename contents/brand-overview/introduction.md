@@ -1,5 +1,5 @@
 ---
-name: Overview
+name: Introduction
 ---
 
 <img class="gl-display-block gl-mx-auto gl-mb-7 img-25" src="/img/brand/gitlab-logo.svg" alt="GitLab logo" role="img" />
