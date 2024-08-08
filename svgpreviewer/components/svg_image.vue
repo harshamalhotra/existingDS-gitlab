@@ -60,10 +60,12 @@ export default {
 <template>
   <div class="image-wrapper">
     <div class="image-base" @click="copyImage">
-      <svg v-if="imageSprite" :class="[imageClass]">
-        <use v-bind="{ 'xlink:href': spritePath }" />
-      </svg>
-      <img v-else :class="[imageClass]" :src="imagePath" />
+      <div class="image-view">
+        <svg v-if="imageSprite" :class="[imageClass]">
+          <use v-bind="{ 'xlink:href': spritePath }" />
+        </svg>
+        <img v-else :class="[imageClass]" :src="imagePath" />
+      </div>
       <div class="image-name">
         {{ imageName }}
         <span v-if="imageSize"> ({{ kbSize }}Kb) </span>
@@ -107,6 +109,8 @@ svg {
 }
 
 .image-base {
+  display: flex;
+  flex-direction: column;
   padding: 20px 20px 0;
   flex-grow: 1;
 }
@@ -117,7 +121,14 @@ svg {
 }
 
 .image-base img {
-  height: 200px;
+  max-width: 288px;
+}
+
+.image-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .image-name {

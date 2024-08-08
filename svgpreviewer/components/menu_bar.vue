@@ -76,6 +76,9 @@
               <nuxt-link to="/illustrations">Illustrations</nuxt-link>
             </li>
             <li>
+              <nuxt-link to="/logos">Logos</nuxt-link>
+            </li>
+            <li>
               <nuxt-link to="/render_tests">Render tests</nuxt-link>
             </li>
             <li>

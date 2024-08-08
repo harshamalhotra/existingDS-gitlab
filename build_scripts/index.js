@@ -5,6 +5,7 @@ const { optimizeSVGs } = require('./src/svg_optimization');
 const { createIconSprite } = require('./src/svg_sprite_icons');
 const { copyFolderRecursive, copyFile } = require('./src/utils');
 const { collectIllustrations } = require('./src/illustrations');
+const { collectLogos } = require('./src/logos');
 
 const BASE_PATH = path.join(__dirname, '..');
 
@@ -50,6 +51,7 @@ async function buildFiles() {
   console.log('Optimized file icons');
 
   await collectIllustrations(BASE_PATH, DIST_PATH);
+  await collectLogos(BASE_PATH, DIST_PATH);
 
   console.log('Copying files to dist ...');
   await copyFolderRecursive(DIST_PATH, STATIC_PATH);
