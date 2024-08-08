@@ -2,16 +2,26 @@ const { existsSync, statSync } = require('fs');
 const { copyFile, lstat, mkdir, readdir } = require('fs/promises');
 const path = require('path');
 
+const compareByName = (a, b) => {
+  if (a.name === b.name) {
+    return 0;
+  }
+
+  return a.name < b.name ? -1 : 1;
+};
+
 const utils = {
   getIllustrationStats(illustrations) {
     return {
       illustrationCount: illustrations.length,
-      illustrations: illustrations.sort((a, b) => {
-        if (a.name === b.name) {
-          return 0;
-        }
-        return a.name < b.name ? -1 : 1;
-      }),
+      illustrations: illustrations.sort(compareByName),
+    };
+  },
+
+  getLogoStats(logos) {
+    return {
+      logoCount: logos.length,
+      logos: logos.sort(compareByName),
     };
   },
 
