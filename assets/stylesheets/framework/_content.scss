@@ -23,14 +23,6 @@
   .img-25 {
     max-width: 25%;
   }
-
-  .img-50 {
-    max-width: 50%;
-  }
-
-  .img-75 {
-    max-width: 75%;
-  }
 }
 
 .container {
@@ -72,56 +64,6 @@
   .admonition-type {
     text-transform: uppercase;
     font-weight: $gl-font-weight-bold;
-  }
-}
-
-// Simple grid workaround until bootstrap is reintroduced
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-
-  // Center columns when not adding up to 100%
-  &.row-center {
-    justify-content: center;
-  }
-
-  .col {
-    padding-right: $gl-spacing-5;
-    padding-left: $gl-spacing-5;
-
-    &.col-50 {
-      width: 50%;
-
-      &:nth-child(2n + 1) {
-        padding-left: 0;
-      }
-      &:nth-child(2n + 2) {
-        padding-right: 0;
-      }
-    }
-
-    &.col-33 {
-      width: 33%;
-
-      &:nth-child(3n + 1) {
-        padding-left: 0;
-      }
-      &:nth-child(3n) {
-        padding-right: 0;
-      }
-    }
-
-    &.col-25 {
-      width: 25%;
-
-      &:nth-child(4n + 1) {
-        padding-left: 0;
-      }
-      &:nth-child(4n) {
-        padding-right: 0;
-      }
-    }
   }
 }
 

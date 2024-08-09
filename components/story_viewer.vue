@@ -90,11 +90,11 @@ export default {
     <story-iframe v-if="isDocsMode" :url="iFrameUrl" :iframe-padding="iframePadding" />
     <gl-card v-else>
       <template #header>
-        <div class="row">
-          <div class="col">
+        <div class="gl-flex gl-gap-3">
+          <div>
             <strong data-testid="story-title">{{ cardTitle }}</strong>
           </div>
-          <div class="gl-text-right col">
+          <div class="gl-ml-auto gl-text-right">
             <gl-link :href="storyUrl" target="_blank" data-testid="story-link">
               Open in Storybook
               <gl-icon name="external-link" />
