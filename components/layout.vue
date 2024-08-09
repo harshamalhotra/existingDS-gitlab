@@ -23,7 +23,7 @@ export default {
       <nuxt />
     </main>
     <footer class="footer container gl-pb-7">
-      <div class="row gl-justify-content-center">
+      <div class="gl-flex gl-flex-wrap gl-justify-content-center">
         <edit-this-page-link
           edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main"
         >

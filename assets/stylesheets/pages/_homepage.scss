@@ -1,0 +1,24 @@
+.homepage-hero {
+  border-radius: 1rem;
+}
+
+:root:not(.gl-dark) {
+  .homepage-hero {
+    background-image: url('~@/assets/images/cover-gradient.png');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+:root.gl-dark {
+  .homepage-hero {
+    background-color: var(--gl-color-brand-gray-05);
+  }
+
+  .homepage-hero-heading {
+    background: linear-gradient(123deg, var(--gl-color-brand-orange-01p), var(--gl-color-brand-purple-01p) 45.5%, var(--gl-color-brand-purple-02p));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
