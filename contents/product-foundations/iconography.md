@@ -40,11 +40,11 @@ As the largest of the four collections, comprising of several subcategories, the
 
 ### Status icons
 
-These smaller icons complement text or relevant content to indicate the general status, health, or the trend direction of an object. Due to their small size, these icons aren’t interactive unless paired with text or contained within an element, like a [badge](/components/badge) component, giving them a larger target size.
+These smaller icons complement text or relevant content to indicate the general status, health, or the trend direction of an object. Due to their small size, these icons aren’t interactive unless paired with text or contained within an element, like a [badge](/components/badge) component, giving them a larger target size. These icons are prefixed with [status-](https://gitlab-org.gitlab.io/gitlab-svgs/?q=status-).
 
 ### Pipeline icons
 
-These icons represent the status of a pipeline, like running and pending. There are both bordered and borderless versions of each icon. They use a separate grid from all other icons and are also used to generate favicons associated with web pages. Although a pipeline status can overlap conceptually with status elsewhere in the product, these icons are strictly limited to the pipeline context.
+These icons represent the status of a pipeline, like running and pending. There are both bordered and borderless versions of each icon. They use a separate grid from all other icons and are also used to generate favicons associated with web pages. Although a pipeline status can overlap conceptually with status elsewhere in the product, these icons are strictly limited to the pipeline context. These icons are prefixed with [status_](https://gitlab-org.gitlab.io/gitlab-svgs/?q=status_).
 
 ### File and folder type icons
 
