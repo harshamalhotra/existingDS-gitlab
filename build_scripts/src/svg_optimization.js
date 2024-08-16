@@ -6,6 +6,7 @@ const SVGO = require('svgo');
 
 const { getIllustrationStats, getFilesizeInBytes } = require('./utils');
 
+// eslint-disable-next-line max-params
 const optimizeSVGs = async (basePath, destPath, globPattern, statsFilePath = null) => {
   const files = glob.sync(globPattern, {});
   const svgo = new SVGO({
