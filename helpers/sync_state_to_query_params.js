@@ -39,6 +39,7 @@ export const mapQueryFieldsToData = (fields) =>
  * @returns {Object}
  */
 export const mapQueryFieldsToComputed = (fields) =>
+  // eslint-disable-next-line max-params
   fields.reduce((acc, { field, param, default: defaultValue }, idx, array) => {
     acc[field] = {
       get() {
