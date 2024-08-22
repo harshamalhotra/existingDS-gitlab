@@ -13,7 +13,7 @@ related:
 
 ## Examples
 
-<story-viewer component="base-filtered-search" title="Filtered search"></story-viewer>
+<story-viewer component="base-filtered-search" title="Filtered search" story="with-terms-as-tokens"></story-viewer>
 
 <todo>Add Filter to Pajamas UI Kit.</todo>
 
@@ -54,6 +54,7 @@ related:
 - The text content of the clicked part (operator or key) becomes editable and the text cursor is immediately placed at the end of that text string so that users can either type or select a suggestion from a dropdown.
 - Certain keys are compatible so the operator and value don’t need to be removed in the event of change (for example, changing the key from author to assignee).
 - If a user selects a different value from the dropdown when editing a text string, that new value replaces the old one.
+- Raw text appears within a token after tabbing or clicking outside of the search box. Setting the `terms-as-tokens` prop to `true` will enable the correct [term rendering and interaction behavior](https://gitlab-org.gitlab.io/gitlab-ui/?path=/docs/base-filtered-search--docs#improve-space-handling).
 - If the user clicks anywhere outside the dropdown or the search box, the string is turned back to a token with whatever its value was at the time of the event.
 - If a user tries to edit a key with an invalid value, the token is removed and converted to a plain text string.
 - If a user tries to edit an operator with an invalid value, the first option is chosen and the invalid text becomes the value text string.
