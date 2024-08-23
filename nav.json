@@ -450,6 +450,10 @@
             "title": "GitLab Duo",
             "items": [
               {
+                "title": "Calls to action",
+                "path": "calls-to-action"
+              },
+              {
                 "title": "Slash commands in GitLab Duo Chat",
                 "path": "slash-commands"
               }
