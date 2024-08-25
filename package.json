@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
-    "@babel/preset-env": "7.25.3",
+    "@babel/preset-env": "7.25.4",
     "@evilmartians/lefthook": "^1.7.14",
     "@gitlab/eslint-plugin": "20.0.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
