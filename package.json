@@ -119,7 +119,7 @@
       "<rootDir>/tests/test_setup.js"
     ],
     "transformIgnorePatterns": [
-      "/node_modules/(?!(@gitlab/ui|bootstrap-vue))"
+      "/node_modules/(?!@gitlab/ui)"
     ],
     "testEnvironment": "jsdom"
   }
