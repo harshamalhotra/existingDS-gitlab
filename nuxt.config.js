@@ -222,7 +222,6 @@ export default {
      */
     extend(config) {
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
-      config.resolve.alias['bootstrap-vue/src/index'] = 'bootstrap-vue/src/index.scss';
 
       config.module.rules.splice(0, 1);
 
@@ -253,10 +252,9 @@ export default {
     },
 
     transpile: [
-      // GitLab UI needs to be transpiled as it uses some advanced syntax like the
+      // These need to be transpiled as they use some advanced syntax like the
       // optional chaining operator
       '@gitlab/ui',
-      'bootstrap-vue',
       'mermaid',
     ],
   },
