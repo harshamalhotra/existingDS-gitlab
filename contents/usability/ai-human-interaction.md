@@ -4,7 +4,7 @@ related:
   - /usability/contextual-help
   - /usability/destructive-actions
   - /usability/saving-and-feedback
-  - /patterns/slash-commands
+  - /patterns/duo-slash-commands
 ---
 
 As AI continues to advance, it brings both exciting opportunities and new challenges for product design. Although designing for AI still requires adhering to human-centered design principles, additional considerations such as ethics, privacy, trust, and transparency must be taken into account.

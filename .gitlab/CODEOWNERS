@@ -1,17 +1,28 @@
-# Engineering
+^[Engineering] @psimyn @gitlab-org/maintainers/frontend
+*
 
-* @psimyn @gitlab-org/maintainers/frontend
+[UX maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly
+/contents/ 
+/pages/
 
-# UX
+^[UX trainee maintainers] @aregnery @danmh 
+/contents/ 
+/pages/
 
-/contents/ @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly
-/pages/ @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly
+^[UX reviewers] @gitlab-com/gitlab-ux/designers
+/contents/
+/pages/
 
-# Figma
-#
+# [Figma]
 # While no Figma files are committed to this repo, the following maintainers are available to support any needs related to Figma:
 # @jeldergl @lvanc @seggenberger @danmh @katiemacoy
 
-# Tech writing
+[Technical Writing][1] @fneill @sselhorn
+/contents/content/
 
-/contents/content @rdickenson
+^[Objects] @pedroms
+/contents/objects/
+
+^[AI] @aregnery @emilybauman @jackib @katiemacoy @nicollem @pedroms @timnoah
+/contents/usability/ai-human-interaction.md
+/contents/patterns/duo-*
