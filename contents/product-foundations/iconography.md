@@ -254,6 +254,9 @@ There are, however, several icons whose design doesn't match a single metaphor, 
 - An '×' icon in a close button on a modal can also represent a failed status.
 - An 'eye' icon to indicate a confidential issue can also be used to show a password, or to view a preview of an object.
 - A 'chevron' icon in a [dropdown button](/components/button#dropdown-buttons) can also represent the expanded state of an [accordion](/components/accordion).
+- An `x` and the [remove](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~remove) icon could both be used to represent delete or remove:
+    - Use remove icon when you are deleting or destroying the object
+    - Use `x` when you are disconnecting a relationship between objects.
 
 In addition to context, ensure that `aria-label` attributes and/or tooltips are used to communicate the icon meaning.
 
