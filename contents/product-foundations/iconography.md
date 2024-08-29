@@ -251,12 +251,10 @@ Avoid using different icons to refer to one specific meaning. For example, [penc
 
 There are, however, several icons whose design doesn't match a single metaphor, but multiple. In these cases, meaning must be provided in context. Examples of these cases are:
 
-- An '×' icon in a close button on a modal can also represent a failed status.
 - An 'eye' icon to indicate a confidential issue can also be used to show a password, or to view a preview of an object.
 - A 'chevron' icon in a [dropdown button](/components/button#dropdown-buttons) can also represent the expanded state of an [accordion](/components/accordion).
-- An `x` and the [remove](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~remove) icon could both be used to represent delete or remove:
-  - Use remove icon when you are deleting or destroying the object
-  - Use `x` when you are disconnecting a relationship between objects.
+- An '×' icon can indicate a failed status, or when used in buttons, it can signal the action of closing a modal window or removing a connection between objects.
+- A [remove](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~remove) icon typically represents permanently deleting an object.
 
 In addition to context, ensure that `aria-label` attributes and/or tooltips are used to communicate the icon meaning.
 
