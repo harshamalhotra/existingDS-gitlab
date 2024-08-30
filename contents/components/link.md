@@ -11,6 +11,8 @@ related:
 
 <story-viewer component="base-link" story="default-link" title="Link"></story-viewer>
 
+<todo>Add examples for all link variants.</todo>
+
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=design)
 
 ## Structure
@@ -44,15 +46,12 @@ There are four categories of links in GitLab. Although all links are navigationa
 
 ### Appearance
 
-- An inline text link is always underlined and `$blue-700` at rest. On hover, the color darkens and the underline persists. It appears this way regardless of formatting applied (bold, italic, or monospace) or parent text element (heading, paragraph, list, or code).
-- A UI link is always `$blue-500` at rest with no underline. On hover, the color darkens and an underline appears.
-- As meta links can represent a wide variety of content, their styles can also adapt for each context. The attribute all meta links share is an underline only on hover. At rest they can be `$blue-500`, `$gray-900`, or `$gray-700`. On hover, the color darkens. Similar to inline links they appear this way regardless of formatting applied (bold, italic, monospace). Because of the available styling, which overlaps with static text, it's critical to ensure that users understand what is linked and what isn't in each context. Additionally, similar types of linked meta content should be styled the same throughout the product.
-- A mention link is always `$blue-700` and has a background color behind the link at rest; `$blue-100` for any user, and `$orange-100` for the current user. When embedded in body text and on hover the text is underlined.
-- An inline or mention link uses a darker blue to ensure sufficient contrast on surfaces that use a `50` or `100` step from the [UI color palette](/product-foundations/color#ui), while a UI or meta link uses a more vibrant blue and relies on CSS blend modes to increase contrast on different surfaces.
-- Although a UI or blue meta link has a style similar to a [link button](/components/button#variants), select the correct component based on meaning rather than by appearance alone (see [When to use](#when-to-use) above).
-- All links have a visible focus state (see [Accessibility](#accessibility) notes below).
-
-<todo>Add visual example of link appearance.</todo>
+- An inline text link should always be underlined to distinguish it from surrounding text, regardless of formatting applied (bold, italic, or monospace) or parent text element (heading, paragraph, list, or code).
+- A UI link has no underline at rest, but is underlined for hover, focus, and active states.
+- Meta links represent a wide variety of content and their style adapts for each context. Meta links don't have an underline at rest, but are underlined for hover, focus, and active states. Similar to inline links, they appear this way regardless of formatting applied (bold, italic, monospace). Because of the available styling, which can appear similar to unlinked text, it's critical to ensure that users understand what is linked and what isn't in each context. Additionally, similar types of linked meta content should be styled the same throughout the product.
+- A mention link has a background color that depends on whether it's for the current user or another user. When embedded in body text and on hover the text is underlined.
+- Although a UI or meta link can have a style similar to a [link button](/components/button#variants), select the correct component based on meaning rather than by appearance alone. See [When to use](#when-to-use) above.
+- All links have a visible focus state. See [Accessibility](#accessibility) notes below.
 
 ### Behavior
 
@@ -75,12 +74,12 @@ For all links:
 
 - All links and their states must have a contrast ratio of at least 4.5:1 against the background color ([Understanding WCAG SC 1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)).
 - A link must have a visible focus state ([Understanding WCAG SC 2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)).
-- As noted above, links open in the same window by default. Forcing a link to open in a new tab or window can be an unexpected change of context for some users. Additionally, it may prevent the use of a browser's back capability, making it difficult to return to the previous context ([Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html)). Also, consider these articles: [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), [External links: In or Out](https://www.digitala11y.com/external-links-in-or-out/).
+- As noted above, links open in the same window by default. Forcing a link to open in a new tab or window can be an unexpected change of context for some users. Additionally, it may prevent the use of a browser's back capability, making it difficult to return to the previous context. See [Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html). Also, consider these articles: [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), [External links: In or Out](https://www.digitala11y.com/external-links-in-or-out/).
 
 For inline text links:
 
-- Color can't be the only way to visually distinguish a link. The link color doesn't have at least a 3:1 contrast ratio from surrounding text, therefore, an underline is used for all states as a visual means to indicate it ([Understanding WCAG SC 1.4.1 Use of Color](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)).
-- Since an underline is used as a required graphical element to distinguish a link, it must have at least a 3:1 contrast ratio against the background color for all states ([Understanding WCAG SC 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast)).
+- Color can't be the only way to visually distinguish a link. The link color doesn't have at least a 3:1 contrast ratio from surrounding text, therefore, an underline is used for all states as a visual means to indicate it. See [Understanding WCAG SC 1.4.1 Use of Color](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html).
+- Since an underline is used as a required graphical element to distinguish a link, it must have at least a 3:1 contrast ratio against the background color for all states. See [Understanding WCAG SC 1.4.11 Non-text Contrast](https://www.w3.org/TR/WCAG21/#non-text-contrast).
 
 For user interface links:
 
