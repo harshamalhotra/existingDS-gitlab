@@ -26,7 +26,6 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 * Component name: [`GlBadge`](https://design.gitlab.com/components/badge/code)
 * Variant: `Tier`
-* Size: `MD`
 * Icon: `16`
 
 #### How to use
@@ -67,12 +66,11 @@ Similar to higher tier features, feature versions like experiment and beta shoul
 
 * Component name: [`GlBadge`](https://design.gitlab.com/components/badge/code)
 * Variant: `neutral`
-* Size: `md` or `sm`
 
 #### How to use
 
 * Ensure there is a clear connection between the badge and the feature being highlighted. For example, place the badge next to the name of the feature.
-* When placing the badge, consider the available space and opt for a small badge if needed. The badge can be displayed either before or after the user interacts with the feature.
+* When placing the badge, consider the available space. The badge can be displayed either before or after the user interacts with the feature.
 * When the feature becomes Generally Available, make sure the badge is removed.  
 
 ## Visibility
