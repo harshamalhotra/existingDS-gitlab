@@ -199,7 +199,7 @@ Multiple alignments can be combined within a single screen, but not within an in
 Buttons can contain different content depending on the situation. For example, some buttons only have text, while others only have an icon. A combination may be used when space allows and more emphasis is required. Icons are always positioned to the left of text. Two icons should never be used in the same button, unless it is an icon dropdown.
 
 - **Label**: A button may also be attached to a label, such as a commit SHA.
-- **Emoji**: An emoji button provides a user with a visual to indicate what emotion has been attributed to the parent object. It only contains an emoji character and uses the [selected state](#states) when pressed.
+- **Emoji**: An emoji button allows a user to react to content with an emoji. The button uses the medium (default) size and is displayed with a count of how many times the reaction has been applied. A selected state visually indicates when the current user has added the reaction.
 
 ### Dropdown buttons
 
