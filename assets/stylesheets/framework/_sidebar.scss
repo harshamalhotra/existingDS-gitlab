@@ -127,10 +127,6 @@
 }
 
 .sidebar__nav-toggle--expanded {
-  background-color: var(--gl-background-color-subtle);
-  position: sticky;
-  top: -$gl-spacing-3;
-  z-index: $z-sidebar;
 
   svg {
     transform: rotate(90deg);
