@@ -31,6 +31,7 @@ related:
 
 1. **Label**: Clearly and concisely identifies an input.
 1. **Inputs**: Allows a user to enter content or select options through a variety of inputs.
+1. **Optional suffix** (optional): Indicate that a field isn't required.
 1. **Placeholder** (optional): Hints at what should be entered into a field.
 1. **Description** (optional): Clarifies the purpose or intent of an input.
 1. **Validation message**: Appears if the input is invalid, acceptable, or needs awareness.
