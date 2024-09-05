@@ -468,6 +468,10 @@
             "path": "merge-request-reports"
           },
           {
+            "title": "Notifications",
+            "path": "notifications"
+          },
+          {
             "title": "Searching",
             "path": "searching"
           }
