@@ -38,14 +38,12 @@ Centered placement should be reserved for times when the logo needs to be the ma
 
 Right-aligned corner placement (top or bottom) can be used in specific cases when left-aligned or centered doesn't work with the design layout or output medium. Right-aligned is only decided on a case-by-case basis and when there is valid reason for its usage.
 
-## Logo variations
+## Variations
 
-The full color logo is the default logo to be used, however, there are times that the one color variation of the logo and logomark can be used. The one color variation can be considered when…
+The full color logo is the default logo to be used, however, there are times when the one color variation of the logo can be used. Consider using either the white or charcoal one color version when:
 
-- Restricted to a single-color use (i.e. print/merchandise applications)
-- Additional logo brand awareness needed in combination with the the full color logo (i.e. large event booths)
-
-<figure-img label="Single color GitLab logo variations" src="/img/brand/core-logo-logo-variations.svg"></figure-img>
+- Restricted to a single-color use, such as swag
+- Brand awareness has already been established, such as a product release graphic
 
 ## Incorrect usage
 
