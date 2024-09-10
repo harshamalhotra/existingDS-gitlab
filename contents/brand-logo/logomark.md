@@ -28,6 +28,15 @@ Ensuring proper clear space between the logomark and surrounding elements preser
 
 <figure-img label="Clear space around the logomark equal to the lowercase 'a' from the wordmark" src="/img/brand/tanuki-clearspace.svg" width="480"></figure-img>
 
+## Variations
+
+The logomark should be used in full color by default, but there are times when a one color variation can be used. Consider the following:
+
+- Default to full color usage for brand awareness.
+- Charcoal or white should be the second alternative to full color. Consider these options when brand presence is already well-established or when usage is restricted to a single color.
+- Orange 02p, Purple 01p, and Purple 02p are the other single color exceptions. These can be used occasionally and with discretion. Some examples include: an orange tanuki for browser favicons or a purple tanuki on swag for a pop of color.
+- Note: If you need to use the tanuki in a color other than what is listed above, please [reach out to the brand team](https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/design/#contacting-the-team) for approval.
+
 ## Incorrect usage
 
 <figure-img label="Logomark incorrect usage" src="/img/brand/tanuki-incorrect-usage.svg"></figure-img>
