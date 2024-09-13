@@ -200,7 +200,7 @@ Buttons can contain different content depending on the situation. For example, s
 
 ### Dropdown buttons
 
-A dropdown button triggers a panel with a [disclosure](/components/dropdown-disclosure) or [combobox](/dropdown-combobox). [Which component should you use?](/dropdown-overview#which-component-should-you-use)
+A dropdown button triggers a panel with a [disclosure](/components/dropdown-disclosure) or [combobox](/components/dropdown-combobox). [Which component should you use?](/components/dropdown-overview#which-component-should-you-use)
 
 - **Text and icon dropdowns**: A dropdown button uses the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
 - **Split dropdown**: A dropdown button is split when additional related actions are available. The left half displays the default action and the additional related actions are contained within the attached dropdown on the right half. The options available in the dropdown perform the action on click.
