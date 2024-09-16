@@ -23,7 +23,7 @@ workflow:
     - if: '$CI_MERGE_REQUEST_IID'
       variables:
         PAGES_ENV_NAME: "pages-review/MR-$CI_MERGE_REQUEST_IID"
-        PAGES_PREFIX: '${CI_ENVIRONMENT_SLUG}'
+        PAGES_PREFIX: 'review-mr-${CI_MERGE_REQUEST_IID}'
         CACHE_PREFIX: '${CI_MERGE_REQUEST_IID}'
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
       variables:
@@ -175,11 +175,11 @@ pages:
   extends:
     - .node-job
     - .build_cache
-  rules:
-    - if: "$GITLAB_FEATURES =~ /pages_multiple_versions/"
   stage: deploy
+  publish: public
   pages:
     path_prefix: "${PAGES_PREFIX}"
+    expire_in: "1 week"
   variables:
     CACHE_POLICY: pull-push
   script:
@@ -195,4 +195,3 @@ pages:
   environment:
     name: "${PAGES_ENV_NAME}"
     url: "${CI_PAGES_URL}/${PAGES_PREFIX}"
-  publish: public
