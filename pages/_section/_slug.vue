@@ -37,11 +37,13 @@ export default {
   async asyncData({ $content, route, error }) {
     const path = getPathFromRoute(route);
 
-    const page = await $content(path)
-      .fetch()
-      .catch((e) => {
-        error({ statusCode: 404, path, message: `${path} not found`, stack: e.stack });
-      });
+    let page = null;
+
+    try {
+      page = await $content(path).fetch();
+    } catch (e) {
+      error({ statusCode: 404, path, message: `${path} not found`, stack: e.stack });
+    }
 
     if (Array.isArray(page)) {
       error({
@@ -52,6 +54,11 @@ export default {
     }
 
     return { page };
+  },
+  data() {
+    return {
+      page: {},
+    };
   },
   head() {
     return {

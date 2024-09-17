@@ -114,7 +114,7 @@ export default {
 
   generate: {
     dir: 'public',
-    fallback: 'error.html',
+    fallback: '404.html',
   },
 
   router: {
@@ -131,6 +131,7 @@ export default {
     GITLAB_UI_URL,
     LOOKBOOK_URL,
     CI_ENVIRONMENT_URL,
+    NODE_ENV: process.env.NODE_ENV,
   },
 
   /*

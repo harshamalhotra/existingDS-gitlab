@@ -11,19 +11,27 @@ export default {
   props: {
     error: {
       type: Object,
-      required: true,
+      required: false,
+      default: null,
     },
   },
   computed: {
     details() {
-      return [this.error?.message, this.error?.stack].filter(Boolean).join('\n');
+      return [this.error?.message, this.error?.stack].filter(Boolean).join('\n\n');
+    },
+    showDefaultError() {
+      // 404s in production, we want to render our 404 page
+      if (this.error?.statusCode === 404 && process.env.NODE_ENV === 'production') {
+        return false;
+      }
+      return true;
     },
   },
 };
 </script>
 <template>
-  <not-found v-if="error.statusCode === 404" />
-  <default v-else>
+  <default v-if="showDefaultError">
     <template v-if="details" #details>{{ details }}</template>
   </default>
+  <not-found v-else />
 </template>

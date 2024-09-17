@@ -38,7 +38,9 @@ export default {
       </svg>
     </template>
     <template #title>An error occurred</template>
-    <template #text><nuxt-link to="/">Go to homepage</nuxt-link> or try refreshing.</template>
+    <template #text>
+      <p><nuxt-link to="/">Go to homepage</nuxt-link> or try refreshing.</p>
+    </template>
     <template #details><slot name="details"></slot></template>
   </layout>
 </template>
