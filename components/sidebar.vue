@@ -42,7 +42,7 @@ export default {
     <div class="sidebar__header">
       <logo />
     </div>
-    <div class="gl-pb-3 gl-px-4">
+    <div class="gl-px-4 gl-pb-3">
       <client-only>
         <search />
         <template #placeholder>
@@ -50,7 +50,7 @@ export default {
         </template>
       </client-only>
     </div>
-    <div class="gl-grow gl-overflow-auto gl-py-3 gl-px-2">
+    <div class="gl-grow gl-overflow-auto gl-px-2 gl-py-3">
       <nav class="sidebar__nav" aria-labelledby="nav-heading">
         <h2 id="nav-heading" class="gl-sr-only">Main navigation</h2>
         <ul>

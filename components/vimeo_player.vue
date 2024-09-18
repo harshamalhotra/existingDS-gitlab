@@ -39,7 +39,7 @@ export default {
     <iframe
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen
-      class="gl-absolute gl-top-0 gl-right-0 gl-bottom-0 gl-left-0 gl-w-full gl-h-full"
+      class="gl-absolute gl-bottom-0 gl-left-0 gl-right-0 gl-top-0 gl-h-full gl-w-full"
       frameborder="0"
       :src="src"
       :title="title"

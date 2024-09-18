@@ -154,7 +154,7 @@ export default {
 <template>
   <div class="container gl-py-7">
     <div class="md typography gl-mb-5">
-      <h1 id="skipTarget" class="gl-heading-display !gl-mt-0 !gl-mb-4" tabindex="-1">
+      <h1 id="skipTarget" class="gl-heading-display !gl-mb-4 !gl-mt-0" tabindex="-1">
         {{ page.name }}
       </h1>
       <div v-if="page.deprecated" class="app-styles gl-mb-3">
@@ -183,7 +183,7 @@ export default {
       :component-label="componentLabel"
       :foundation-label="page.foundationLabel"
     />
-    <p v-if="lastUpdatedAt" class="gl-text-center gl-mt-5">
+    <p v-if="lastUpdatedAt" class="gl-mt-5 gl-text-center">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
   </div>

@@ -129,7 +129,7 @@
     <slot name="text"></slot>
     <pre
       v-if="$scopedSlots.details"
-      class="gl-text-left gl-text-sm gl-text-gray-500 gl-grow gl-overflow-scroll gl-max-w-1/2"
+      class="gl-max-w-1/2 gl-grow gl-overflow-scroll gl-text-left gl-text-sm gl-text-gray-500"
     ><slot name="details"></slot></pre>
   </div>
 </template>
