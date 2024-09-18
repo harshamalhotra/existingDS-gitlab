@@ -144,6 +144,10 @@ export default {
    */
   css: ['../assets/stylesheets/app.scss'],
 
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'last' }],
+  },
+
   /*
    ** Plugins to load before mounting the App
    */
