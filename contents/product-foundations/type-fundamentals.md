@@ -51,8 +51,8 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 <thead>
 <tr>
 <th rowspan="2">Variable</th>
-<th colspan="2" class="gl-white-space-nowrap">Dynamic scale</th>
-<th rowspan="2" class="gl-white-space-nowrap">Fixed scale</th>
+<th colspan="2" class="gl-whitespace-nowrap">Dynamic scale</th>
+<th rowspan="2" class="gl-whitespace-nowrap">Fixed scale</th>
 <th rowspan="2">Use</th>
 </tr>
 <th>Min</th>
@@ -61,7 +61,7 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 </thead>
 <tbody>
 <tr>
-<td><code class="gl-white-space-nowrap">$size-text-100</code></td>
+<td><code class="gl-whitespace-nowrap">$size-text-100</code></td>
 <td>12px</td>
 <td>12px</td>
 <td>12px</td>

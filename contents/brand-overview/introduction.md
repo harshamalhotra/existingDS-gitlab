@@ -2,7 +2,7 @@
 name: Introduction
 ---
 
-<img class="gl-display-block gl-mx-auto gl-mb-7 img-25" src="/img/brand/gitlab-logo.svg" alt="GitLab logo" role="img" />
+<img class="gl-block gl-mx-auto gl-mb-7 img-25" src="/img/brand/gitlab-logo.svg" alt="GitLab logo" role="img" />
 
 The [GitLab](https://about.gitlab.com/company/) brand exists as the creative expression of our company [mission](https://handbook.gitlab.com/handbook/company/mission/), [vision](https://handbook.gitlab.com/handbook/company/vision/), and [values](https://about.gitlab.com/handbook/values/). Our brand guidelines are a comprehensive resource that outlines the brand’s creative components.
 

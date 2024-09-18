@@ -49,11 +49,11 @@ Heading mixins and utility classes:
 
 #### Margins
 
-The `gl-heading-{1-6}` and `gl-heading-display` mixins and classes provide a default `margin-bottom` and remove `margin-top`. In order to opt-out of the margin, add a `gl-mb-0!` class:
+The `gl-heading-{1-6}` and `gl-heading-display` mixins and classes provide a default `margin-bottom` and remove `margin-top`. In order to opt-out of the margin, add a `!gl-mb-0` class:
 
 ```html
 <h2 class="gl-heading-2">...</h2> <!-- has margin -->
-<h2 class="gl-heading-2 gl-mb-0!">...</h2> <!-- to remove margin -->
+<h2 class="gl-heading-2 !gl-mb-0">...</h2> <!-- to remove margin -->
 ```
 
 `gl-heading-scale-{100-800}` mixins and classes do not provide margins.
