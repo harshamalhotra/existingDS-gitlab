@@ -2,9 +2,81 @@
 name: Release notes
 ---
 
+## 17.5
+
+[_Draft: 17.5 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4052)
+
 ## 17.4
 
-[_Draft: 17.4 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3991)
+<small>Published 2024-09-16</small>
+
+### Additions
+
+- Adds icons: [**calendar-overdue**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~calendar-overdue), [**tanuki-ai-off**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~tanuki-ai-off).
+- Adds illustrations: [**empty-cloud-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-cloud-md), [**empty-epic-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-epic-add-md), [**empty-issues-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-issues-add-md), [**empty-key-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-key-md), [**empty-labels-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-labels-add-md), [**empty-organizations-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-organizations-add-md), [**empty-secure-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-secure-add-md), [**empty-subgroup-add-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-subgroup-add-md), [**empty-user-alert-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-user-alert-md), [**empty-user-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-user-md), [**status-alert-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-alert-md), [**status-alert-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-alert-sm), [**status-fail-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-fail-md), [**status-fail-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-fail-sm), [**status-new-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-new-md), [**status-new-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-new-sm), [**status-nothing-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-nothing-md), [**status-nothing-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-nothing-sm), [**status-settings-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-settings-md), [**status-settings-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-settings-sm), [**status-success-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-success-md) and [**status-success-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=status-success-sm).
+- Breaking (high): Adds all-new [**❖&nbsp;Button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=122559-8763&). This powerhouse component unifies multiple button types, offering unprecedented flexibility and ease of use. Highlights include:
+  - Seamless switching between 12(!) styles.
+  - Four of your favorite button types - text, icon only, dropdown, and icon only dropdown.
+  - Built-in icon picker for lightning-fast customization ⚡️
+  These changes make it easier to create and edit buttons while maintaining consistency across designs. The new Button component replaces several previous button components, offering a more streamlined and flexible approach to button use in your Figma artifacts.
+- Breaking (high): Adds [**❖&nbsp;Split&nbsp;dropdown&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123024-2869), [**❖&nbsp;Emoji&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123515-16040), and [**❖&nbsp;Ellipsis&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123733-4517) for specialized button needs. Full features detailed in the [instances](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7).
+- Adds [**❖&nbsp;Sorting**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123918-20385). While button-like in appearance, this component is purpose-built for sorting interactions, offering a distinct set of features tailored for this specific use case.
+- Breaking (high): Adds [**❖&nbsp;Tab&nbsp;group**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123608-8100). Choose the number of tabs, current tab, justification style, and more from the property panel of this completely rearchitected component. Need something else? This release also adds [**❖&nbsp;Tab&nbsp;item**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123607-1296&t=AE3du9yzDlchT7UE-4) to allow you to go where tab group can't.
+- Breaking (high): Adds [**❖ Tree row**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123674-393), we've planted the seed for heirarchy by rethinking this component from the soil up. No longer do you need to leaf through multiple components to get to the root of it all. Stem spacing confusion by branching out with [**❖ Tree connector**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123676-558). Just line it up to the top left for perfect spacing every time — treemendous!
+
+### Enhancements
+
+- You asked, we delivered. [**Avatars**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=120518-1378) have more photo and new illustration profile picture options built in.
+
+### Changes
+
+- Breaking (medium): Changes some [**❖&nbsp;Badge**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121748-1095&t=7o3kOm8LY0kYnQbR-4) properties to use Figma variables. Take care if using custom size overrides, such as those found in issue and pipeline statuses, as these will be reset.
+- Updated illustrations: [**empty-epic-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-epic-md), [**empty-issues-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-issues-md), [**empty-labels-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-labels-md), [**empty-organizations-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-organizations-md), [**empty-secure-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-secure-md), [**empty-subgroup-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=empty-subgroup-md) and [**rocket-launch-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=rocket-launch-md).
+- Updates **❖&nbsp;Label**, combining interactive states into a single property to match other components.
+- Updates **Button** components, **Link** components, **❖&nbsp;Sorting**, **Tab** components, and **Tree** components to use design tokens.
+- Updates deprecated component descriptions to link to current component version.
+
+### Fixes
+
+- Fixes old **❖&nbsp;Code** and Color chip component usage in instances.
+- Fixes [**Documentation**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=96698-362) utilities to use new **❖&nbsp;Doc&nbsp;divider** instead of the deprecated **Divider** that's from the deprecated navigation.
+
+### Deprecations
+
+- Deprecates **Button** components. Use new [**Button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7) components instead. Components deprecated:
+  - **❖&nbsp;_Base Button**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Default**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Confirm**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Danger**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Loading**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Disabled**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Selected**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Dashed**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Emoji**
+  - **❖&nbsp;Button&nbsp;/&nbsp;Link**
+- Deprecates **Tabs** components. Use new [**❖ Tab group**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123608-8100) component instead. Components deprecated:
+  - **❖&nbsp;Tab&nbsp;-&nbsp;Base**
+  - **❖&nbsp;Fitted&nbsp;tab&nbsp;-&nbsp;Base**
+  - **❖&nbsp;Fitted&nbsp;tab&nbsp;group&nbsp;-&nbsp;3&nbsp;up**
+  - **❖&nbsp;Fitted&nbsp;tab&nbsp;group&nbsp;-&nbsp;2&nbsp;up**
+  - **❖&nbsp;Fitted&nbsp;active**
+  - **❖&nbsp;Fitted&nbsp;default**
+  - **❖&nbsp;Tab&nbsp;group**
+  - **❖&nbsp;Active**
+  - **❖&nbsp;Hover**
+  - **❖&nbsp;Default**
+- Deprecates **Tree** components. Use new [**Tree**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123602-116112) components instead. Components deprecated:
+  - **❖&nbsp;Connector**
+  - **❖&nbsp;Branch&nbsp;-&nbsp;Base**
+  - **❖&nbsp;Row**
+- Deprecates **issue-block** icon. Use new [**entity-blocked**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~entity-blocked) instead.
+
+### Removals
+
+- Removes **Page&nbsp;layouts** page that relied on the old navigation design.
+- Removes deprecated **Navigation** components and removes remaining usage from instances.
+- Removes deprecated **Breadcrumb** components and removes remaining usage from instances.
+- Removes deprecated **Label** components and removes remaining usage from instances.
 
 ## 17.3
 
