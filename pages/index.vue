@@ -8,7 +8,7 @@
           <h1 id="skipTarget" class="gl-my-3! gl-heading-display homepage-hero-heading">
             Pajamas Design System
           </h1>
-          <p class="gl-font-lg">Resources, components, and design guidelines behind GitLab</p>
+          <p class="gl-text-lg">Resources, components, and design guidelines behind GitLab</p>
         </div>
       </div>
     </section>

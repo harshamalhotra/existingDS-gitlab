@@ -154,7 +154,7 @@ export default {
 <template>
   <div class="container gl-py-7">
     <div class="md typography gl-mb-5">
-      <h1 id="skipTarget" class="gl-heading-display gl-mt-0! gl-mb-4!" tabindex="-1">
+      <h1 id="skipTarget" class="gl-heading-display !gl-mt-0 !gl-mb-4" tabindex="-1">
         {{ page.name }}
       </h1>
       <div v-if="page.deprecated" class="app-styles gl-mb-3">
@@ -165,7 +165,7 @@ export default {
       <p v-if="page.description">{{ page.description }}</p>
     </div>
     <div v-if="showTabs" class="app-styles">
-      <gl-nav class="gl-tabs-nav gl-mb-5!">
+      <gl-nav class="gl-tabs-nav !gl-mb-5">
         <gl-nav-item
           v-for="tab in tabs"
           :key="tab.route"

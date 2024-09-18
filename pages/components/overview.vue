@@ -17,7 +17,7 @@ export default {
 <template>
   <div class="container gl-py-7">
     <div class="gl-mb-5">
-      <h1 id="skipTarget" class="gl-heading-display gl-mt-0! gl-mb-4!" tabindex="-1">
+      <h1 id="skipTarget" class="gl-heading-display !gl-mt-0 !gl-mb-4" tabindex="-1">
         Pajamas components
       </h1>
       <p class="gl-text-lg gl-leading-24">
@@ -25,7 +25,7 @@ export default {
         more about how to use them for your design or development project.
       </p>
     </div>
-    <ul class="gl-grid lg:gl-grid-cols-3 gl-gap-5 gl-list-none gl-m-0 gl-p-0!">
+    <ul class="gl-grid lg:gl-grid-cols-3 gl-gap-5 gl-list-none gl-m-0 !gl-p-0">
       <li v-for="component in componentList" :key="component.path" class="gl-flex">
         <nuxt-link
           class="!gl-no-underline !gl-text-default gl-rounded-base gl-bg-default gl-p-5 gl-w-full gl-border-1 gl-border-solid gl-border-default hover:gl-border-strong"

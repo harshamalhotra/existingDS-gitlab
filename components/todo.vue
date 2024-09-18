@@ -31,7 +31,7 @@ export default {
   <span
     class="app-styles admonition admonition--todo gl-rounded-base gl-rounded-base gl-flex-wrap gl-mb-5"
   >
-    <div class="gl-display-flex gl-align-items-center">
+    <div class="gl-flex gl-items-center">
       <gl-icon name="document" :size="16" class="gl-mr-3 gl-text-gray-500" />
       <span class="gl-mr-2 admonition-type">TODO: </span>
     </div>

@@ -53,7 +53,7 @@ export default {
   <div class="gl-relative">
     <div
       v-if="!loaded"
-      class="gl-display-flex gl-flex-direction-column gl-align-items-center gl-justify-content-center gl-absolute gl-top-0 gl-right-0 gl-bottom-0 gl-left-0"
+      class="gl-flex gl-flex-col gl-items-center gl-justify-center gl-absolute gl-top-0 gl-right-0 gl-bottom-0 gl-left-0"
     >
       <gl-loading-icon size="lg" class="gl-mb-3" />
       Loading story...
