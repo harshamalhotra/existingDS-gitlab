@@ -8,6 +8,13 @@ export default {
     Navbar,
     Sidebar,
   },
+  props: {
+    noFooter: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
   computed: {
     ...mapState(['sidebarOpen']),
   },
@@ -22,7 +29,7 @@ export default {
     <main class="main" :class="{ 'sidebar--open': sidebarOpen }">
       <nuxt />
     </main>
-    <footer class="footer container gl-pb-7">
+    <footer v-if="!noFooter" class="footer container gl-pb-7">
       <div class="gl-flex gl-flex-wrap gl-justify-content-center">
         <edit-this-page-link
           edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main"
