@@ -146,6 +146,10 @@ Place all functional controls in the main component, not in the sub-component. F
 
 Always provide basic or example sub-component options for a component with slots. These should be published as part of the library and added to the component as [preferred values](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties#preferred), ensuring designers can easily see and select them. Include variations such as small content, large content, or real product content examples. Additionally, include an obvious "build your own" option in the slot choices to encourage customization when needed.
 
+### Using Figma variables
+
+When building components, set properties with [design tokens](https://design.gitlab.com/product-foundations/design-tokens-using) where possible. Only create new [Figma variables](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma) in the UI kit to keep [integrated components](#integrated-components) in sync.
+
 ### Naming properties
 
 Use the following guidelines and principles when naming properties. Consistent naming will make components easier to maintain and use.
