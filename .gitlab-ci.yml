@@ -1,10 +1,5 @@
-# This file is basically the AutoDevops template (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/ci/templates/Auto-DevOps.gitlab-ci.yml)
-# plus some defaults (e.g. tags).
-
-# TODO: pages-phase-3, cleanup unneeded stages
 stages:
   - pre-build
-  - build
   - test
   - deploy
   - performance
@@ -52,13 +47,6 @@ include:
 
 ## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
 # TODO: pages-phase-3
-
-build:
-  needs: []
-  tags:
-    - gitlab-org-docker
-  rules:
-    - when: always
 test:
   needs: []
   rules:
