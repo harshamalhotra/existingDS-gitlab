@@ -7,16 +7,7 @@ stages:
   - build
   - test
   - deploy
-  - review
-  - staging
-  - canary
-  - production
-  - incremental rollout 10%
-  - incremental rollout 25%
-  - incremental rollout 50%
-  - incremental rollout 100%
   - performance
-  - cleanup
 
 workflow:
   rules:
@@ -37,16 +28,6 @@ default:
     - gitlab-org
 
 variables:
-  # These templates can be removed once we switch away from AutoDevOps to pages
-  # TODO: pages-phase-3
-  POSTGRES_USER: user
-  POSTGRES_PASSWORD: testing-password
-  POSTGRES_ENABLED: "true"
-  POSTGRES_DB: $CI_ENVIRONMENT_SLUG
-  POSTGRES_VERSION: 9.6.2
-  ROLLOUT_RESOURCE_TYPE: deployment
-  REVIEW_DISABLED: "true"
-
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
@@ -54,10 +35,7 @@ variables:
 include:
   # These templates can be removed once we switch away from AutoDevOps to pages
   # TODO: pages-phase-3
-  - template: Jobs/Build.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Build.latest.gitlab-ci.yml
   - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.latest.gitlab-ci.yml
-  - template: Jobs/Container-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Container-Scanning.latest.gitlab-ci.yml
-  - template: Jobs/Deploy.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Deploy.gitlab-ci.yml
   # These templates we should retain after the switch to pages
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
@@ -81,12 +59,6 @@ build:
     - gitlab-org-docker
   rules:
     - when: always
-
-container_scanning:
-  needs: [build]
-  tags:
-    - gitlab-org-docker
-
 test:
   needs: []
   rules:
