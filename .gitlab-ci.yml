@@ -28,10 +28,6 @@ variables:
   DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
 
 include:
-  # These templates can be removed once we switch away from AutoDevOps to pages
-  # TODO: pages-phase-3
-  - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.latest.gitlab-ci.yml
-  # These templates we should retain after the switch to pages
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
   - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
@@ -43,14 +39,6 @@ include:
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.1
     inputs:
       job_stage: "pre-build"
-
-
-## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
-# TODO: pages-phase-3
-test:
-  needs: []
-  rules:
-    - when: always
 
 ###############
 #
@@ -119,6 +107,13 @@ check_links:
   allow_failure: true
   script:
     - yarn check-links
+
+test:
+  extends:
+    - .node-job
+  stage: test
+  script:
+    - yarn test
 
 semantic-release:
   extends: .semantic-release
