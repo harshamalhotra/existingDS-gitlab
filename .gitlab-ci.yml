@@ -1,22 +1,8 @@
-# This file is basically the AutoDevops template (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/ci/templates/Auto-DevOps.gitlab-ci.yml)
-# plus some defaults (e.g. tags).
-
-# TODO: pages-phase-3, cleanup unneeded stages
 stages:
   - pre-build
-  - build
   - test
   - deploy
-  - review
-  - staging
-  - canary
-  - production
-  - incremental rollout 10%
-  - incremental rollout 25%
-  - incremental rollout 50%
-  - incremental rollout 100%
   - performance
-  - cleanup
 
 workflow:
   rules:
@@ -37,28 +23,11 @@ default:
     - gitlab-org
 
 variables:
-  # These templates can be removed once we switch away from AutoDevOps to pages
-  # TODO: pages-phase-3
-  POSTGRES_USER: user
-  POSTGRES_PASSWORD: testing-password
-  POSTGRES_ENABLED: "true"
-  POSTGRES_DB: $CI_ENVIRONMENT_SLUG
-  POSTGRES_VERSION: 9.6.2
-  ROLLOUT_RESOURCE_TYPE: deployment
-  REVIEW_DISABLED: "true"
-
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
 
 include:
-  # These templates can be removed once we switch away from AutoDevOps to pages
-  # TODO: pages-phase-3
-  - template: Jobs/Build.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Build.latest.gitlab-ci.yml
-  - template: Jobs/Test.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab-foss/blob/master/lib/gitlab/ci/templates/Jobs/Test.latest.gitlab-ci.yml
-  - template: Jobs/Container-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Container-Scanning.latest.gitlab-ci.yml
-  - template: Jobs/Deploy.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Deploy.gitlab-ci.yml
-  # These templates we should retain after the switch to pages
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
   - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
@@ -70,27 +39,6 @@ include:
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.1
     inputs:
       job_stage: "pre-build"
-
-
-## Overrides for jobs that can be removed in Phase 3 of the AutoDevOps to pages migration
-# TODO: pages-phase-3
-
-build:
-  needs: []
-  tags:
-    - gitlab-org-docker
-  rules:
-    - when: always
-
-container_scanning:
-  needs: [build]
-  tags:
-    - gitlab-org-docker
-
-test:
-  needs: []
-  rules:
-    - when: always
 
 ###############
 #
@@ -144,13 +92,6 @@ sast:
         - node_modules/
       policy: $CACHE_POLICY
 
-check_markdown:
-  extends:
-    - .node-job
-  stage: test
-  script:
-    - yarn markdown-lint
-
 check_links:
   extends:
     - .node-job
@@ -159,6 +100,13 @@ check_links:
   allow_failure: true
   script:
     - yarn check-links
+
+lint_and_test:
+  extends:
+    - .node-job
+  stage: test
+  script:
+    - yarn test
 
 semantic-release:
   extends: .semantic-release

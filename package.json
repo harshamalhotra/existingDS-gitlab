@@ -19,7 +19,7 @@
     "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
     "markdown-lint": "markdownlint-cli2 'contents/**/*.md'",
-    "test": "bash ./scripts/test.sh",
+    "test": "node_modules/.bin/lefthook run test-in-ci --no-tty --colors true",
     "test:unit": "jest",
     "lint:fix": "yarn run eslint:fix && yarn run prettier-all-save",
     "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi",

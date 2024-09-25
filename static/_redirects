@@ -1,0 +1,50 @@
+# See: https://docs.gitlab.com/ee/user/project/pages/redirects.html
+# Please append new redirects at the bottom
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3119
+/accessibility-audits/accessibility-audits /accessibility/audits 301
+/accessibility-audits/keyboard-only /accessibility/keyboard-only 301
+/accessibility-audits/screen-readers /accessibility/screen-readers 301
+/accessibility-audits/semantics-and-content /accessibility/semantics-and-content 301
+/accessibility-audits/visual /accessibility/visual 301
+/components/form /patterns/forms 301
+/components/form/code /patterns/forms/code 301
+/components/form/contribute /patterns/forms/contribute 301
+/content/date-time /content/date-and-time 301
+/content/error-messages /patterns/forms 301
+/content/voice-tone /content/voice-and-tone 301
+/get-started/contribute /get-started/contributing 301
+/get-started/structure /get-started/navigating-pajamas 301
+/layout/grid /product-foundations/layout 301
+/layout/layers /product-foundations/elevation 301
+/layout/responsive-first /product-foundations/layout 301
+/layout/spacing /product-foundations/spacing 301
+/product-foundations/colors /product-foundations/color 301
+/product-foundations/interaction /usability/affordance 301
+/product-foundations/saving-and-feedback /usability/saving-and-feedback 301
+/regions/empty-states /patterns/empty-states 301
+/regions/empty-states/code /patterns/empty-states/code 301
+/regions/filtering /patterns/filtering 301
+/regions/merge-request-reports /patterns/merge-request-reports 301
+/regions/search /patterns/searching 301
+/regions/settings /usability/settings-management 301
+/resources/design-resources /get-started/design-resources 301
+/usability/error-prevention /usability/destructive-actions 301
+/usability/helping-users /usability/contextual-help 301
+/usability/i18n /content/i18n 301
+/vpat/508 /accessibility/508 301
+/vpat/wcag /accessibility/wcag 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3825
+/patterns/navigation /usability/navigation-sidebar 301
+/regions/navigation /usability/navigation-sidebar 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3504
+/usability/onboarding-users /usability/feature-discovery 301
+/usability/onboarding /usability/feature-discovery 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3635
+/product-foundations/motion /product-foundations/animation-fundamentals 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3845
+/accessibility/vpat /accessibility/acr 301
