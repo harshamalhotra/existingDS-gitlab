@@ -2,20 +2,20 @@
   <div class="index typography">
     <nuxt-child />
     <section aria-labelledby="skipTarget" class="homepage-hero gl-m-5">
-      <div class="container gl-grid gl-place-items-center gl-text-center gl-min-h-48">
+      <div class="container gl-grid gl-min-h-48 gl-place-items-center gl-text-center">
         <div>
           <img src="../assets/pajamas-logo.svg" alt="" width="56" height="96" />
-          <h1 id="skipTarget" class="gl-my-3! gl-heading-display homepage-hero-heading">
+          <h1 id="skipTarget" class="gl-my-3! homepage-hero-heading gl-heading-display">
             Pajamas Design System
           </h1>
-          <p class="gl-font-lg">Resources, components, and design guidelines behind GitLab</p>
+          <p class="gl-text-lg">Resources, components, and design guidelines behind GitLab</p>
         </div>
       </div>
     </section>
 
     <section aria-labelledby="everyone-can-contribute" class="gl-my-10">
       <div class="container">
-        <div class="gl-grid lg:gl-grid-cols-2 gl-gap-7 gl-place-items-center">
+        <div class="gl-grid gl-place-items-center gl-gap-7 lg:gl-grid-cols-2">
           <div class="lg:gl-order-last">
             <img
               alt=""
@@ -25,7 +25,7 @@
           </div>
           <div>
             <h2 id="everyone-can-contribute" class="gl-heading-2">Everyone can contribute</h2>
-            <p class="gl-text-base gl-leading-20 gl-mb-3">
+            <p class="gl-mb-3 gl-text-base gl-leading-20">
               GitLab is an
               <a
                 target="_blank"
@@ -47,13 +47,13 @@
 
     <section aria-labelledby="everything-you-need" class="gl-my-10">
       <div class="container">
-        <div class="gl-grid lg:gl-grid-cols-2 gl-gap-7 gl-place-items-center">
+        <div class="gl-grid gl-place-items-center gl-gap-7 lg:gl-grid-cols-2">
           <div>
             <img alt="" src="../assets/images/content.svg" />
           </div>
           <div>
             <h2 id="everything-you-need" class="gl-heading-2">Everything you need</h2>
-            <p class="gl-text-base gl-leading-20 gl-mb-3">
+            <p class="gl-mb-3 gl-text-base gl-leading-20">
               Pajamas is here to make it as comfortable as possible for anyone to contribute towards
               GitLab. You will find information such as our principles, components, usage
               guidelines, branding, research methodologies, and more!
@@ -68,7 +68,7 @@
 
     <section aria-labelledby="contributing" class="gl-my-10">
       <div class="container">
-        <div class="gl-grid lg:gl-grid-cols-2 gl-gap-7 gl-place-items-center">
+        <div class="gl-grid gl-place-items-center gl-gap-7 lg:gl-grid-cols-2">
           <div class="lg:gl-order-last">
             <img alt="" src="../assets/images/pajamas_stars.svg" />
           </div>
@@ -92,7 +92,7 @@
 
     <nav class="gl-my-10">
       <div class="container">
-        <ul class="gl-grid gl-grid-cols-3 gl-gap-3 gl-list-none gl-m-0 gl-p-0">
+        <ul class="gl-m-0 gl-grid gl-list-none gl-grid-cols-3 gl-gap-3 gl-p-0">
           <li>
             <a
               href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues"
@@ -106,7 +106,7 @@
                 class="gl-mx-auto gl-block"
                 alt=""
               />
-              <span class="gl-block gl-mt-3">View the issue tracker</span>
+              <span class="gl-mt-3 gl-block">View the issue tracker</span>
             </a>
           </li>
           <li>
@@ -122,7 +122,7 @@
                 class="gl-mx-auto gl-block"
                 alt=""
               />
-              <span class="gl-block gl-mt-3">Explore the repository</span>
+              <span class="gl-mt-3 gl-block">Explore the repository</span>
             </a>
           </li>
           <li>
@@ -138,7 +138,7 @@
                 class="gl-mx-auto gl-block"
                 alt=""
               />
-              <span class="gl-block gl-mt-3">Duplicate our Figma UI Kit</span>
+              <span class="gl-mt-3 gl-block">Duplicate our Figma UI Kit</span>
             </a>
           </li>
         </ul>

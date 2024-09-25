@@ -64,7 +64,7 @@ export default {
 
 <template>
   <li v-if="depth === 0">
-    <div aria-hidden="true" class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2">
+    <div aria-hidden="true" class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold">
       {{ item.title }}
     </div>
     <ul :aria-label="item.title">

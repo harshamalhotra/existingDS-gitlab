@@ -124,29 +124,29 @@ Each widget has rules that determine its status. The icon at the top level of ea
 
 #### Level 1
 
-- <img class="gl-vertical-align-middle" src="/img/mr-status-failed-1.svg" alt="Failed status icon" role="img"> Failed
-- <img class="gl-vertical-align-middle" src="/img/mr-status-warning-1.svg" alt="Warning status icon" role="img"> Warning
-- <img class="gl-vertical-align-middle" src="/img/mr-status-success-1.svg" alt="Success status icon" role="img"> Success
-- <img class="gl-vertical-align-middle" src="/img/mr-status-neutral-1.svg" alt="Neutral status icon" role="img"> Neutral
-- <img class="gl-vertical-align-middle" src="/img/mr-status-loading-1.svg" alt="Loading status icon" role="img"> Loading ([spinner](/components/spinner))
+- <img class="gl-align-middle" src="/img/mr-status-failed-1.svg" alt="Failed status icon" role="img"> Failed
+- <img class="gl-align-middle" src="/img/mr-status-warning-1.svg" alt="Warning status icon" role="img"> Warning
+- <img class="gl-align-middle" src="/img/mr-status-success-1.svg" alt="Success status icon" role="img"> Success
+- <img class="gl-align-middle" src="/img/mr-status-neutral-1.svg" alt="Neutral status icon" role="img"> Neutral
+- <img class="gl-align-middle" src="/img/mr-status-loading-1.svg" alt="Loading status icon" role="img"> Loading ([spinner](/components/spinner))
 
 #### Level 2–3 general
 
-- <img class="gl-vertical-align-middle" src="/img/mr-status-failed.svg" alt="Failed status icon" role="img"> Failed
-- <img class="gl-vertical-align-middle" src="/img/mr-status-error.svg" alt="Error status icon" role="img"> Error
-- <img class="gl-vertical-align-middle" src="/img/mr-status-warning.svg" alt="Warning status icon" role="img"> Warning
-- <img class="gl-vertical-align-middle" src="/img/mr-status-notice.svg" alt="Notice status icon" role="img"> Notice
-- <img class="gl-vertical-align-middle" src="/img/mr-status-success.svg" alt="Success status icon" role="img"> Success
-- <img class="gl-vertical-align-middle" src="/img/mr-status-neutral.svg" alt="Neutral status icon" role="img"> Neutral
+- <img class="gl-align-middle" src="/img/mr-status-failed.svg" alt="Failed status icon" role="img"> Failed
+- <img class="gl-align-middle" src="/img/mr-status-error.svg" alt="Error status icon" role="img"> Error
+- <img class="gl-align-middle" src="/img/mr-status-warning.svg" alt="Warning status icon" role="img"> Warning
+- <img class="gl-align-middle" src="/img/mr-status-notice.svg" alt="Notice status icon" role="img"> Notice
+- <img class="gl-align-middle" src="/img/mr-status-success.svg" alt="Success status icon" role="img"> Success
+- <img class="gl-align-middle" src="/img/mr-status-neutral.svg" alt="Neutral status icon" role="img"> Neutral
 
 #### Level 2–3 severity
 
-- <img class="gl-vertical-align-middle" src="/img/mr-status-critical.svg" alt="Severity critical status icon" role="img"> Critical
-- <img class="gl-vertical-align-middle" src="/img/mr-status-high.svg" alt="Severity high status icon" role="img"> High
-- <img class="gl-vertical-align-middle" src="/img/mr-status-medium.svg" alt="Severity medium status icon" role="img"> Medium
-- <img class="gl-vertical-align-middle" src="/img/mr-status-low.svg" alt="Severity low status icon" role="img"> Low
-- <img class="gl-vertical-align-middle" src="/img/mr-status-info.svg" alt="Severity info status icon" role="img"> Info
-- <img class="gl-vertical-align-middle" src="/img/mr-status-unknown.svg" alt="Severity unknown status icon" role="img"> Unknown
+- <img class="gl-align-middle" src="/img/mr-status-critical.svg" alt="Severity critical status icon" role="img"> Critical
+- <img class="gl-align-middle" src="/img/mr-status-high.svg" alt="Severity high status icon" role="img"> High
+- <img class="gl-align-middle" src="/img/mr-status-medium.svg" alt="Severity medium status icon" role="img"> Medium
+- <img class="gl-align-middle" src="/img/mr-status-low.svg" alt="Severity low status icon" role="img"> Low
+- <img class="gl-align-middle" src="/img/mr-status-info.svg" alt="Severity info status icon" role="img"> Info
+- <img class="gl-align-middle" src="/img/mr-status-unknown.svg" alt="Severity unknown status icon" role="img"> Unknown
 
 ### Subject
 
@@ -188,10 +188,10 @@ The following provides guidance on roles, keyboarding, and content for screen re
 
 **Legend**
 
-- <img class="gl-vertical-align-middle" src="/img/a11y-annotation-region.svg" alt="Region marker" role="img"> Region
-- <img class="gl-vertical-align-middle" src="/img/a11y-annotation-tab-order.svg" alt="Tab order marker" role="img"> Tab order
-- <img class="gl-vertical-align-middle" src="/img/a11y-annotation-screen-reader.svg" alt="Screen reader marker" role="img"> Screen reader
-- <img class="gl-vertical-align-middle" src="/img/a11y-annotation-note.svg" alt="Note marker" role="img"> Note
+- <img class="gl-align-middle" src="/img/a11y-annotation-region.svg" alt="Region marker" role="img"> Region
+- <img class="gl-align-middle" src="/img/a11y-annotation-tab-order.svg" alt="Tab order marker" role="img"> Tab order
+- <img class="gl-align-middle" src="/img/a11y-annotation-screen-reader.svg" alt="Screen reader marker" role="img"> Screen reader
+- <img class="gl-align-middle" src="/img/a11y-annotation-note.svg" alt="Note marker" role="img"> Note
 
 ### Landmark
 

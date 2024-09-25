@@ -16,7 +16,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
     <li>
       <div
         aria-hidden="true"
-        class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2"
+        class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
       >
         
     Top-level item 1
@@ -95,7 +95,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
     <li>
       <div
         aria-hidden="true"
-        class="gl-font-sm gl-font-weight-bold gl-pl-4 gl-pr-3 gl-py-2"
+        class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
       >
         
     Top-level item 2
