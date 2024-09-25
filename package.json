@@ -69,7 +69,7 @@
     "vue-template-compiler": "2.7.16"
   },
   "resolutions": {
-    "chokidar": "4.0.0",
+    "chokidar": "4.0.1",
     "sass-loader": "^10.5.2",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16"
