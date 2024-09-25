@@ -92,13 +92,6 @@ sast:
         - node_modules/
       policy: $CACHE_POLICY
 
-check_markdown:
-  extends:
-    - .node-job
-  stage: test
-  script:
-    - yarn markdown-lint
-
 check_links:
   extends:
     - .node-job
@@ -108,7 +101,7 @@ check_links:
   script:
     - yarn check-links
 
-test:
+lint_and_test:
   extends:
     - .node-job
   stage: test

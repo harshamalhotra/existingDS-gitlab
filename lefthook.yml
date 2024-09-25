@@ -1,5 +1,5 @@
 # Lefthook guide:
-# https://github.com/Arkweid/lefthook/blob/master/docs/full_guide.md
+# https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 pre-commit:
   parallel: true
   commands:
@@ -12,3 +12,17 @@ pre-commit:
     markdown-lint:
       glob: "*.md"
       run: yarn markdown-lint
+
+# This is a non git-hook-target which we use in CI
+# in order to parallelize linting / spec execution
+test-in-ci:
+  parallel: true
+  commands:
+    eslint:
+      run: yarn run eslint
+    markdownlint:
+      run: yarn run markdown-lint
+    prettier:
+      run: yarn run prettier
+    unit_tests:
+      run: yarn run test:unit
