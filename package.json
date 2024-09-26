@@ -74,25 +74,6 @@
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16"
   },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/git",
-      "@semantic-release/gitlab"
-    ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/git"
-    ],
-    "publish": [
-      "@semantic-release/gitlab"
-    ],
-    "success": false,
-    "fail": false
-  },
   "jest": {
     "globals": {
       "vue-jest": {
