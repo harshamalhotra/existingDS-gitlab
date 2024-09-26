@@ -51,12 +51,6 @@ related:
 - **Danger**: Metadata that is critical or problematic. Has a strongly negative meaning.
 - **Tier**: Metadata that indicates which product tier an entity belongs to.
 
-### Sizes
-
-- **Small**: A small badge is ideal in condensed parts of the UI where space is limited.
-- **Medium** (default): Use the medium size where content has breathing room. The medium size also works well to provide sufficient affordance when only an icon is used.
-- **Large**: A large badge is used in headers or titles where there is ample space or the metadata needs additional prominence.
-
 ### Behavior
 
 - A badge is static (non-interactive) by default.
