@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
-URL_CONVENTIONAL_COMMITS = 'https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/README.md#conventional-commits'
+URL_COMMITS = 'https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md#squashing'
+URL_AMEND_COMMITS = 'https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md#amending'
+URL_SQUASH_COMMITS = 'https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md#squashing'
+URL_COMMIT_TYPES = 'https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md#what-types-can-i-use-for-my-commit-messages'
 SEMANTIC_COMMIT_TYPES = %w[build chore ci docs feat fix perf refactor revert style test].freeze
 
 COMMIT_SUBJECT_MAX_LENGTH = 72
@@ -58,7 +61,7 @@ def lint_commit(commit)
   if subject.length > COMMIT_SUBJECT_MAX_LENGTH
     fail_commit(
       commit,
-      "The commit subject may not be longer than #{COMMIT_SUBJECT_MAX_LENGTH} characters"
+      "Commit subject must have less than #{COMMIT_SUBJECT_MAX_LENGTH} characters."
     )
 
     failed = true
@@ -68,7 +71,7 @@ def lint_commit(commit)
   if commit.message.match(/^.*?\bApply\b.*?\bsuggestion\b.*?$/m) && !helper.squash_mr?
     warn_commit(
       commit,
-      'This MR contains applied suggestions, but the squash commits option is disabled. If you are a maintainer merging this MR, please enable the squash commits option before merging.'
+      'Merge request has applied suggestions, but **Squash commits when merge request is accepted** is disabled. Before merging this, you should enable the squash commits option.'
     )
     
     appliedSuggestion = true
@@ -76,14 +79,14 @@ def lint_commit(commit)
   end
 
   if subject.end_with?('.')
-    fail_commit(commit, 'The commit subject must not end with a period')
+    fail_commit(commit, 'Commit subject must not end with a period.')
     failed = true
   end
 
   if separator && !separator.empty?
     fail_commit(
       commit,
-      'The commit subject and body must be separated by a blank line'
+      'Commit subject and body must be separated by a blank line.'
     )
 
     failed = true
@@ -102,7 +105,7 @@ def lint_commit(commit)
 
     fail_commit(
       commit,
-      "The commit body should not contain more than #{COMMIT_BODY_MAX_LENGTH} characters per line"
+      "Commit body must have less than #{COMMIT_BODY_MAX_LENGTH} characters per line."
     )
 
     failed = true
@@ -111,8 +114,7 @@ def lint_commit(commit)
   if !details && too_many_changed_lines?(commit)
     fail_commit(
       commit,
-      'Commits that change 30 or more lines across at least three files ' \
-        'must describe these changes in the commit body'
+      'Commit must be [amended](#{URL_AMEND_COMMITS}) to describe changes in the commit body as it changes 30 or more lines across at least three files.'
     )
 
     failed = true
@@ -121,9 +123,9 @@ def lint_commit(commit)
   if commit.message.match?(%r{([\w\-\/]+)?(#|!|&|%)\d+\b})
     fail_commit(
       commit,
-      'Use full URLs instead of short references ' \
+      'Commit must use full URLs instead of short references ' \
         '(`gitlab-org/gitlab-ce#123` or `!123`), as short references are ' \
-        'displayed as plain text outside of GitLab'
+        'displayed as plain text outside of GitLab.'
     )
 
     failed = true
@@ -132,13 +134,13 @@ def lint_commit(commit)
   semantic_commit = match_semantic_commit(subject)
 
   if !semantic_commit && !appliedSuggestion
-    fail_commit(commit, 'The commit does not comply with conventional commits specifications.')
+    fail_commit(commit, 'Commit must meet our [Git commit message standards](#{URL_COMMITS}).')
 
     failed = true
   elsif semantic_commit && !appliedSuggestion && !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
     warn_commit(
       commit,
-      "The semantic commit type `#{semantic_commit[:type]}` is not a well-known semantic commit type."
+      "Commit should have a [common semantic commit type](#{URL_COMMIT_TYPES})."
     )
 
     failed = true
@@ -156,11 +158,14 @@ def lint_commits(commits)
     markdown(<<~MARKDOWN)
       ## Commit message standards
 
-      One or more commit messages do not meet our Git commit message standards.
-      For more information on how to write a good commit message, take a look at
-      [Conventional commits](#{URL_CONVENTIONAL_COMMITS}).
+      One or more commit messages do not meet our
+      [Git commit message standards](#{URL_COMMITS}).
+      You should either:
+      - [Amend the commit messages](#{URL_AMEND_COMMITS})
+      - Edit this merge request to enable **Squash commits when merge request is accepted**
+      and ensure its title complies with the standards.
 
-      Here is an example of a good commit message:
+      **Good** commit message example:
 
           feat(progressbar): Improve rendering performance in Edge
 
@@ -171,7 +176,7 @@ def lint_commits(commits)
           By utilizing the better-math library we avoid those calculation errors
           and we can achieve 120 rendering frames per second again.
 
-      This is an example of a bad commit message:
+      **Bad** commit message example:
 
           fixed progressbar
 
@@ -188,11 +193,11 @@ def lint_mr(mr_title)
 
   if !semantic_commit
     warn(
-      'Your MR has **Squash commits when merge request is accepted** enabled but its title does not comply with conventional commits specifications'
+      'Merge request title should meet our [Git commit message standards](#{URL_COMMITS}), since **Squash commits when merge request is accepted** is enabled.'
     )
   elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
     warn(
-      "The semantic commit type `#{semantic_commit[:type]}` is not a well-known semantic commit type."
+      "Merge request title should have a [common semantic commit type](#{URL_COMMIT_TYPES})."
     )
   end
 end
@@ -202,7 +207,7 @@ lint_mr(helper.mr_title) if helper.squash_mr?
 
 if git.commits.length > 10
   warn(
-    'This merge request includes more than 10 commits. ' \
-      'Please rebase these commits into a smaller number of commits.'
+    'Merge request has more than 10 commits. ' \
+      'You should [squash them](#{URL_SQUASH_COMMITS}) into a smaller number.'
   )
 end
