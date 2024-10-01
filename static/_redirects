@@ -48,3 +48,6 @@
 
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3845
 /accessibility/vpat /accessibility/acr 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4085
+/components/overview /components 301

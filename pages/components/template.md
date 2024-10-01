@@ -14,7 +14,8 @@
 -->
 ---
 name: Component name
-description: 1–2 sentence description of the component (including the description here keeps it visible above the Usage and Implementation tabs).
+summary: 1-2 sentence description to display on the collection page.
+description: 1–2 sentence description of the component (including the description here keeps it visible above the Usage and Implementation tabs). Used as fallback on the collection page if no summary is present.
 vueComponents:
   - Vue component name
 <!--

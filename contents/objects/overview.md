@@ -46,7 +46,7 @@ For each object, we document its _attributes_, _actions_, and how it relates to 
 
 ### Semantic layouts
 
-Objects can be presented in the UI through different visual layouts. To give meaning to each part of those visual layouts, from the smallest [components](/components/overview) to the largest regions, we can document them as “semantic layouts”. In practice, a semantic layout places the objects (and their relationships, attributes, and actions) over the layout, so we can see their meaning and purpose. As an example, see the [merge request semantic layout](/objects/merge-request#semantic-layout).
+Objects can be presented in the UI through different visual layouts. To give meaning to each part of those visual layouts, from the smallest [components](/components) to the largest regions, we can document them as “semantic layouts”. In practice, a semantic layout places the objects (and their relationships, attributes, and actions) over the layout, so we can see their meaning and purpose. As an example, see the [merge request semantic layout](/objects/merge-request#semantic-layout).
 
 ## Contribute
 
