@@ -235,10 +235,6 @@
         "path": "components",
         "items": [
           {
-            "title": "Overview",
-            "path": "overview"
-          },
-          {
             "title": "Accordion",
             "path": "accordion"
           },

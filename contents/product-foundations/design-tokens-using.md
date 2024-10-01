@@ -38,7 +38,7 @@ Action tokens support three contexts:
 
 Interactivity can be communicated through implementing states such as `hover`, `focus`, and `active`.
 
-Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), or [tabs](/components/tabs)) that already implement action tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components/overview).
+Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), or [tabs](/components/tabs)) that already implement action tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
 
 ### Controls
 

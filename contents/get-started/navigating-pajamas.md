@@ -8,7 +8,7 @@ Our design system is broken down into the following sections:
 
 Foundational items communicate the opinionated way in which basic visual design attributes, elements, and concepts come together to create a distinct GitLab personality that’s expressed in the UI. For example, color, typography, and iconography.
 
-## Components
+## [Components](/components)
 
 A component is a UI element that serves a singular purpose or function. Two or more simple components can combine to form a composite component that still has a single function. For example, an avatar, button, or combobox.
 
