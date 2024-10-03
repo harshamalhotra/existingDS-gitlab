@@ -11,10 +11,10 @@ The absolute format clarifies the precise date and time that something occurred.
 
 We can either display a [localized time and date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) based on the user's location or use a non-localized format following the [ISO 8601 standard](https://www.iso.org/iso-8601-date-and-time-format.html).
 
-- Localized dates display the day, month, and full year by default (for example: Jan 03, 2022). The date can be shortened to the day and month when space is tight (Jan 03). If the date is shortened, show the full date and time data in a tooltip, along with the timezone (Jan 03, 2022 11:00am UTC-8).
-  - Use the `numeric` value of the `year` [parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters) to display the year in full (for example: 2022). The `2-digit` value may be used instead to display the shortened version of the year if there is limited space (22).
+- Localized dates display the day, month, and full year by default (for example: Jan 3, 2022). The date can be shortened to the day and month when space is tight (Jan 3). If the date is shortened, show the full date and time data in a tooltip, along with the timezone (Jan 3, 2022 11:00am UTC-8).
+  - Use the `numeric` value of the `year` [parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters) to display the year in full (for example: 2022). The shortened version of the year may be used instead if there is limited space (22).
   - For the `month` parameter, use the `short` value (for example: Mar). Note that the API will auto-adjust to `full` if the language can't be shortened.
-  - For the `day` parameter, use the `2-digit` value. (For example: 01)
+  - For the `day` parameter, use the `numeric` value. (For example: 1)
   - For `timeZoneName`, use either `short` (for example: UTC-8) or `long` (for example: Pacific Standard Time), depending on space and what is needed to make the time zone clear in context.
 - ISO 8601 format is displayed YYYY-MM-DD. Time can also be appended to the end of the date if necessary (HH:MM:SS).
 
@@ -29,7 +29,7 @@ When using the relative format, always display the absolute time in a tooltip fo
 ### Which format to use when
 
 - Display date and time information in the absolute format unless [users specify they want to use relative formatting](https://docs.gitlab.com/ee/user/profile/preferences.html#use-relative-times) instead.
-- If it's possible to detect the browser settings, display the localized time, for example, Jan 03, 2021. Otherwise, fall back to displaying the date in ISO 8601: YYYY-MM-DD (time is optionally appended after the date, HH:MM:SS).
+- If it's possible to detect the browser settings, display the localized time, for example, Jan 3, 2021. Otherwise, fall back to displaying the date in ISO 8601: YYYY-MM-DD (time is optionally appended after the date, HH:MM:SS).
 
 ```mermaid
 graph TD
@@ -39,8 +39,8 @@ graph TD
     D{"Does user set<br>'Use relative format'<br>in preferences?<br>(on by default)"}:::decision
     E{"Can browser detect<br>user's region<br>automatically?"}:::decision
     F{"Is there limited<br>space to display?"}:::decision
-    G["Use Absolute:<br>localized normal format, Ex: Jan 02, 2021<br>(European style)"]:::ending
-    H["Use Absolute:<br>localized format (shortened), Ex: Jan 02<br>(European style)"]:::ending
+    G["Use Absolute:<br>localized normal format, Ex: Jan 2, 2021<br>(European style)"]:::ending
+    H["Use Absolute:<br>localized format (shortened), Ex: Jan 2<br>(European style)"]:::ending
     I["Use Absolute:<br>ISO 8601 format, Ex: YYYY-MM-DD"]:::ending
     J["Use Relative format<br>Ex: 30 minutes ago"]:::ending
 
