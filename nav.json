@@ -11,16 +11,26 @@
             "path": "introduction"
           },
           {
-            "title": "Brand voice",
-            "path": "brand-voice"
-          },
-          {
             "title": "Brand extensions",
             "path": "brand-extensions"
           },
           {
             "title": "Resources",
             "path": "resources"
+          }
+        ]
+      },
+      {
+        "title": "Brand Messaging",
+        "path": "brand-messaging",
+        "items": [
+          {
+            "title": "Brand voice",
+            "path": "brand-voice"
+          },
+          {
+            "title": "Style and formatting",
+            "path": "style-formatting"
           }
         ]
       },
