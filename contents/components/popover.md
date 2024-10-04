@@ -48,6 +48,7 @@ related:
 ### Behavior
 
 - A popover is opened by clicking on an element that has the sole purpose of triggering it.
+- A popover is opened by a user action. Do not show a popover on page load.
 - When the popover is visible, the <kbd>Tab</kbd> key moves focus through any interactive elements within it.
 - A popover can be dismissed by:
   - Clicking on the close button within it.
