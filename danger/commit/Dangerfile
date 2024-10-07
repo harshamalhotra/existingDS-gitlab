@@ -114,7 +114,7 @@ def lint_commit(commit)
   if !details && too_many_changed_lines?(commit)
     fail_commit(
       commit,
-      'Commit must be [amended](#{URL_AMEND_COMMITS}) to describe changes in the commit body as it changes 30 or more lines across at least three files.'
+      "Commit must be [amended](#{URL_AMEND_COMMITS}) to describe changes in the commit body as it changes 30 or more lines across at least three files."
     )
 
     failed = true
@@ -134,7 +134,7 @@ def lint_commit(commit)
   semantic_commit = match_semantic_commit(subject)
 
   if !semantic_commit && !appliedSuggestion
-    fail_commit(commit, 'Commit must meet our [Git commit message standards](#{URL_COMMITS}).')
+    fail_commit(commit, "Commit must meet our [Git commit message standards](#{URL_COMMITS}).")
 
     failed = true
   elsif semantic_commit && !appliedSuggestion && !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
@@ -189,25 +189,40 @@ end
 def lint_mr(mr_title)
   return if mr_title.empty?
 
-  semantic_commit = match_semantic_commit(mr_title[/(^WIP: +)?(.*)/, 2])
+  semantic_commit = match_semantic_commit(mr_title[/\A(?i)(\[draft\]|\(draft\)|draft:)?\s?(.*)/, 2])
 
   if !semantic_commit
-    warn(
-      'Merge request title should meet our [Git commit message standards](#{URL_COMMITS}), since **Squash commits when merge request is accepted** is enabled.'
+    fail(
+      "Merge request title should meet our [Git commit message standards](#{URL_COMMITS}), since **Squash commits when merge request is accepted** is enabled."
     )
   elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
     warn(
       "Merge request title should have a [common semantic commit type](#{URL_COMMIT_TYPES})."
     )
   end
+
+  if mr_title.length > COMMIT_SUBJECT_MAX_LENGTH
+    fail(
+      "Merge request title must have less than #{COMMIT_SUBJECT_MAX_LENGTH} characters."
+    )
+  end
+
+  if mr_title.end_with?('.')
+    fail(
+      'Merge request title must not end with a period.'
+    )
+  end
 end
 
-lint_commits(git.commits)
-lint_mr(helper.mr_title) if helper.squash_mr?
+if helper.squash_mr?
+  lint_mr(helper.mr_title)
+else
+  lint_commits(git.commits)
+end
 
 if git.commits.length > 10
   warn(
-    'Merge request has more than 10 commits. ' \
-      'You should [squash them](#{URL_SQUASH_COMMITS}) into a smaller number.'
+    "Merge request has more than 10 commits. " \
+      "You should [squash them](#{URL_SQUASH_COMMITS}) into a smaller number."
   )
 end
