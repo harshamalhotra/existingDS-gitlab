@@ -1,5 +1,6 @@
 ---
 name: Keyboard shortcuts
+summary: Improve user productivity and accessibility by optimizing flows with a keyboard.
 related:
   - button
   - tooltip

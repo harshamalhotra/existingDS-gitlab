@@ -1,5 +1,6 @@
 ---
 name: Forms
+summary: Guidelines for creating structured interfaces to capture, validate, and submit manual user input.
 description: A form is for capturing and submitting user input.
 components:
   - base-form-form

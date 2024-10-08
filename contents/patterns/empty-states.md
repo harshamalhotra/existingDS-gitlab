@@ -1,5 +1,6 @@
 ---
 name: Empty States
+summary: Informative and actionable regions aimed at improving feature adoption and usability when no content exists yet.
 components:
   - regions-empty-state
 related:

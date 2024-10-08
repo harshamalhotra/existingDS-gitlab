@@ -1,5 +1,6 @@
 ---
 name: Filtering
+summary: Element combinations to narrow down a data list based on specific criteria.
 related:
   - filter
   - search

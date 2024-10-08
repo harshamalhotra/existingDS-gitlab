@@ -12,7 +12,7 @@ Foundational items communicate the opinionated way in which basic visual design 
 
 A component is a UI element that serves a singular purpose or function. Two or more simple components can combine to form a composite component that still has a single function. For example, an avatar, button, or combobox.
 
-## Patterns
+## [Patterns](/patterns)
 
 A pattern combines components and/or content elements into a repeatable, consistent group that has a shared purpose, content association, or both. For example, filtering, forms, or navigation.
 

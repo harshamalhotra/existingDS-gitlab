@@ -1,5 +1,6 @@
 ---
 name: Notifications
+summary: Recommendations for timely and relevant system-generated updates to keep users informed.
 description: A notification is a user or system-generated update pushed to users.
 ---
 
