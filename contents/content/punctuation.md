@@ -1,5 +1,6 @@
 ---
 name: Punctuation
+summary: Apply punctuation marks consistently and purposefully to enhance clarity and readability in UI text and documentation.
 ---
 
 ## Periods
