@@ -4,7 +4,7 @@ name: Navigating Pajamas
 
 Our design system is broken down into the following sections:
 
-## Foundations
+## [Foundations](/product-foundations)
 
 Foundational items communicate the opinionated way in which basic visual design attributes, elements, and concepts come together to create a distinct GitLab personality that’s expressed in the UI. For example, color, typography, and iconography.
 
