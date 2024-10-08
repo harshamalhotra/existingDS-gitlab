@@ -1,5 +1,6 @@
 ---
 name: How to write UI text
+summary: The UI copy prioritizes user objectives, balances professionalism with empathy, and aims for clarity, conciseness, and consistency.
 ---
 
 Copy and messaging are meaningful aspects of the GitLab experience and the conversation with our users.

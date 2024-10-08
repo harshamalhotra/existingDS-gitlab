@@ -1,5 +1,6 @@
 ---
 name: Verb tenses
+summary: Select the appropriate verb tense for UI text to convey timing accurately and provide clear instructions across different scenarios.
 ---
 
 Depending on when you show a status or error message, you might use one of many different verb tenses.

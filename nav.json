@@ -544,10 +544,6 @@
             "path": "punctuation"
           },
           {
-            "title": "Internationalization",
-            "path": "i18n"
-          },
-          {
             "title": "Date and time",
             "path": "date-and-time"
           }
