@@ -1,5 +1,6 @@
 ---
-name: Calls to action
+name: Calls to action for GitLab Duo
+summary: Guidelines for designing and implementing AI-specific interactive elements that prompt user actions within GitLab.
 related:
   - /usability/ai-human-interaction
   - /usability/feature-management

@@ -1,5 +1,6 @@
 ---
 name: Searching
+summary: Guidelines for different types of searches.
 ---
 
 ## Global search

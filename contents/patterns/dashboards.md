@@ -1,5 +1,6 @@
 ---
 name: Dashboards
+summary: Guidelines for designing interfaces that present multiple panels of content and data for analysis and decision-making.
 description: A dashboard is a root level container that has multiple panels, and is analysis focused.
 ---
 
