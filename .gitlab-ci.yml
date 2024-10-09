@@ -114,7 +114,8 @@ pages:
   publish: public
   pages:
     path_prefix: "${PAGES_PREFIX}"
-    expire_in: "1 week"
+    # TODO: Move to a variable once https://gitlab.com/gitlab-org/gitlab/-/issues/492289 is fixed
+    expire_in: "4 weeks"
   variables:
     CACHE_POLICY: pull-push
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
@@ -137,3 +138,4 @@ pages:
   environment:
     name: "${PAGES_ENV_NAME}"
     url: "${CURRENT_PAGES_URL}/${PAGES_PREFIX}"
+    auto_stop_in: "4 weeks"
