@@ -117,6 +117,13 @@ pages:
     expire_in: "1 week"
   variables:
     CACHE_POLICY: pull-push
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+  # Set the correct URL in the canonical pages project
+  rules:
+    - if: '$CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+      variables:
+        CURRENT_PAGES_URL: "https://design.gitlab.com"
   script:
     - apk add --no-cache gzip brotli
     - bash ./scripts/build.sh
@@ -129,4 +136,4 @@ pages:
       - environment_url.txt
   environment:
     name: "${PAGES_ENV_NAME}"
-    url: "${CI_PAGES_URL}/${PAGES_PREFIX}"
+    url: "${CURRENT_PAGES_URL}/${PAGES_PREFIX}"
