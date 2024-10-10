@@ -30,8 +30,4 @@ Content includes documentation relating to our writing style. This includes the 
 
 ## [Usability](/usability)
 
-Principles and best practices for designing cohesive, user-centered interactions throughout GitLab.
-
-## Resources
-
-Our resources section contains relevant and useful links that aide in the creation of our design system, as well as GitLab design as a whole.
+Usability guidelines include documentation that affects the ease-of-use for different types of users. This includes accessibility and internationalization.
