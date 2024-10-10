@@ -24,6 +24,10 @@ A template prescribes layout and behavior for a page or common content layout. F
 
 An [object](/objects/overview) is a conceptual building block or concept that defines how we think about something independent of its visual representation or interaction model. For example, a [job](/objects/job), [merge request](/objects/merge-request), or repository.
 
+## [Data visualization](/data-visualization/)
+
+A data visualization pulls insights from a data set into a narrative, allowing a user to explore data and discover insights.
+
 ## [Content](/content)
 
 Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.
