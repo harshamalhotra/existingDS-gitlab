@@ -20,7 +20,7 @@ A pattern combines components and/or content elements into a repeatable, consist
 
 A template prescribes layout and behavior for a page or common content layout. For example, an issuable, settings, or search results.
 
-## Objects
+## [Objects](/objects)
 
 An [object](/objects/overview) is a conceptual building block or concept that defines how we think about something independent of its visual representation or interaction model. For example, a [job](/objects/job), [merge request](/objects/merge-request), or repository.
 
