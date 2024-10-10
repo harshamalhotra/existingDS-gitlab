@@ -12,12 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* UI Typography */
 
-h1 { @include gl-heading-1 }
-h2 { @include gl-heading-2 }
-h3 { @include gl-heading-3 }
-h4 { @include gl-heading-4 }
-h5 { @include gl-heading-5 }
-h6 { @include gl-heading-6 }
+h1 { @apply gl-heading-1 }
+h2 { @apply gl-heading-2 }
+h3 { @apply gl-heading-3 }
+h4 { @apply gl-heading-4 }
+h5 { @apply gl-heading-5 }
+h6 { @apply gl-heading-6 }
 p  { @include type-scale(0, 4, 0, 0) }
 
 a {
@@ -74,17 +74,17 @@ pre[class*="language-"],
 .md .nuxt-content {
   @include type-scale(0, 6, 0, 0);
 
-  > h1 { @include gl-mt-7 }
+  > h1 { @apply gl-mt-7 }
 
   > h2,
   > h3 {
-    @include gl-mt-6;
+    @apply gl-mt-6;
   }
 
   > h4,
   > h5,
   > h6 {
-    @include gl-mt-5;
+    @apply gl-mt-5;
   }
 
   > p  { @include type-scale(0, 6, 2, 0) }
