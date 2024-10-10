@@ -16,10 +16,6 @@ A component is a UI element that serves a singular purpose or function. Two or m
 
 A pattern combines components and/or content elements into a repeatable, consistent group that has a shared purpose, content association, or both. For example, filtering, forms, or navigation.
 
-## Page templates
-
-A template prescribes layout and behavior for a page or common content layout. For example, an issuable, settings, or search results.
-
 ## [Objects](/objects)
 
 An [object](/objects/overview) is a conceptual building block or concept that defines how we think about something independent of its visual representation or interaction model. For example, a [job](/objects/job), [merge request](/objects/merge-request), or repository.
