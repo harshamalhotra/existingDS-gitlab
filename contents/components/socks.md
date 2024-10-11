@@ -19,6 +19,7 @@ description: Socks represent a unique way to warm your feet.
 - To create separation between your feet and your shoes.
 - To show off your quirky personality.
 - To walk around the house without waking up anyone.
+- To free your house-elf.
 
 ### When not to use
 
