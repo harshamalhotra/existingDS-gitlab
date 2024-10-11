@@ -2,9 +2,35 @@
 name: Release notes
 ---
 
+## 17.6
+
+[_Draft: 17.6 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4106)
+
 ## 17.5
 
-[_Draft: 17.5 release notes_](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4052)
+<small>Published 2024-10-11</small>
+
+### Additions
+
+- Adds **❖&nbsp;Empty&nbsp;state** [search product examples](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=74155-102783&t=tzJb0RWWdNOQA8bU-1).
+- Adds icons: [**resize**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto&node-id=1-1037&t=EjNPtuAD76KsfJG8-1) and [**thumbs-down**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto&node-id=1-234&t=9pu9UXkFE9Y9uaz6-1).
+
+### Changes
+
+- Changes [**shadows**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=94196-93324&t=tzJb0RWWdNOQA8bU-1) to use design tokens, changes shadow size and shape.
+- Changes [deprecated product icons](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=7433-494) to make them easier to recognize as deprecated.
+
+### Fixes
+
+- Fixes an issue where the **thumbs-down** icon would flip in component insertion.
+
+### Deprecations
+
+- Deprecates **thumbs-down** icon. Use new [**thumbs-down**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto&node-id=1-234&t=9pu9UXkFE9Y9uaz6-1) icon instead.
+
+### Removals
+
+- Removes illustrations: error-403, error-404, empty-serverless-lg, empty-escalation, empty-state-clusters, docker-empty-state, docker-error-state, deploy-board, Dependency-list-empty-state, analytics/no-access, productivity-analytics-empty-state, multi-editor_all_changes_committed_empty, and tracing.
 
 ## 17.4
 
