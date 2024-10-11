@@ -2,7 +2,7 @@
 name: Inclusive design principles
 ---
 
-We aim to provide access to content and functionality that enables consumption and contribution for everyone. In support of [our mission](https://about.gitlab.com/company/mission/) and [values](https://about.gitlab.com/handbook/values/) we've included the Inclusive Design Principles from [inclusivedesignprinciples.org](https://inclusivedesignprinciples.org/) here as a reference to help inform our work and process.
+We aim to provide access to content and functionality that enables consumption and contribution for everyone. In support of [our mission](https://about.gitlab.com/company/mission/) and [values](https://about.gitlab.com/handbook/values/) we've included the Inclusive Design Principles from [inclusivedesignprinciples.info](https://inclusivedesignprinciples.info/) here as a reference to help inform our work and process.
 
 > These Inclusive Design Principles are about putting people first. It's about designing for the needs of people with permanent, temporary, situational, or changing disabilities — all of us really.
 
@@ -50,13 +50,13 @@ Leveraging things like page layout, visual weight, and semantics leads to a more
 
 > Consider the value of features and how they improve the experience for different users.
 
-Of course, all of these principles in and of themselves add value, but we can also add value by leveraging device capabilities or removing friction points throughout an experience. Even our concept of the [Minimal Viable Change](https://about.gitlab.com/handbook/product/product-principles/#the-minimal-viable-change-mvc) is designed to "deliver the smallest possible solution that offers value to our users."
+Of course, all of these principles in and of themselves add value, but we can also add value by leveraging device capabilities or removing friction points throughout an experience. Even our concept of the [Minimal Valuable Change](https://about.gitlab.com/handbook/product/product-principles/#the-minimal-viable-change-mvc) is designed to "deliver the smallest possible solution that offers value to our users."
 
 > Do a little and do it well, for as many people as you can. – Heydon Pickering
 
 ## Resources
 
-- [inclusivedesignprinciples.org](https://inclusivedesignprinciples.org/)
+- [inclusivedesignprinciples.info](https://inclusivedesignprinciples.info/)
 - [GitLab product principles](https://about.gitlab.com/handbook/product/product-principles/#our-product-principles)
 - [Accessibility Fundamentals Overview](https://www.w3.org/WAI/fundamentals/)
 - [Inclusive Design](https://www.microsoft.com/design/inclusive/) from Microsoft
