@@ -1,5 +1,6 @@
 ---
 name: Navigation sidebar
+summary: Follow the guidance on the structure and behavior of the navigation sidebar to improve user orientation and workflow.
 ---
 
 The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. In order to ensure a familiar user experience, minimize disruption, and properly introduce changes we utilize the following resources to guide any change to this region:

@@ -1,5 +1,6 @@
 ---
 name: Settings management
+summary: Empower users to control platform behavior and appearance while maintaining system-wide consistency.
 related:
   - tooltip
   - popover

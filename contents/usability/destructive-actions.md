@@ -1,5 +1,6 @@
 ---
 name: Destructive actions
+summary: Emphasize the importance of appropriate friction to prevent accidental actions and help users understand consequences.
 ---
 
 Friction in the user interface is often regarded as something to avoid or resolve. However, it can be useful to prevent a user from completing a destructive action when the consequences may be unknown.

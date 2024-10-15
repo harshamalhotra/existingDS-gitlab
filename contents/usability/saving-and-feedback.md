@@ -1,5 +1,6 @@
 ---
 name: Saving and feedback
+summary: Discover strategies for preserving user progress and communicating system responses effectively.
 status: in-progress
 ---
 
