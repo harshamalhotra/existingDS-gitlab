@@ -1,5 +1,6 @@
 ---
 name: Drag and drop
+summary: Provide an intuitive way for users to reorganize content, enhancing control over layout and order.
 ---
 
 To move and reorder items in a collection or across similar collections, users can press and drag them to a new position.

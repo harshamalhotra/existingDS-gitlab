@@ -28,9 +28,9 @@ An [object](/objects/overview) is a conceptual building block or concept that de
 
 Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.
 
-## Usability
+## [Usability](/usability)
 
-Usability guidelines include documentation that affects the ease-of-use for different types of users. This includes accessibility and internationalization.
+Principles and best practices for designing cohesive, user-centered interactions throughout GitLab.
 
 ## Resources
 

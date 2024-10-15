@@ -1,5 +1,6 @@
 ---
 name: AI-human interaction
+summary: Design AI-powered features that balance user needs, transparency, and ethical considerations.
 related:
   - /usability/contextual-help
   - /usability/destructive-actions
