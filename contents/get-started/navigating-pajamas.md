@@ -16,13 +16,13 @@ A component is a UI element that serves a singular purpose or function. Two or m
 
 A pattern combines components and/or content elements into a repeatable, consistent group that has a shared purpose, content association, or both. For example, filtering, forms, or navigation.
 
-## Page templates
-
-A template prescribes layout and behavior for a page or common content layout. For example, an issuable, settings, or search results.
-
-## Objects
+## [Objects](/objects)
 
 An [object](/objects/overview) is a conceptual building block or concept that defines how we think about something independent of its visual representation or interaction model. For example, a [job](/objects/job), [merge request](/objects/merge-request), or repository.
+
+## [Data visualization](/data-visualization/)
+
+A data visualization pulls insights from a data set into a narrative, allowing a user to explore data and discover insights.
 
 ## [Content](/content)
 
@@ -30,8 +30,4 @@ Content includes documentation relating to our writing style. This includes the 
 
 ## [Usability](/usability)
 
-Principles and best practices for designing cohesive, user-centered interactions throughout GitLab.
-
-## Resources
-
-Our resources section contains relevant and useful links that aide in the creation of our design system, as well as GitLab design as a whole.
+Usability guidelines include documentation that affects the ease-of-use for different types of users. This includes accessibility and internationalization.

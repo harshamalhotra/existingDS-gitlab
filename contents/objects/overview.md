@@ -1,5 +1,5 @@
 ---
-name: Objects overview
+name: Overview
 ---
 
 Objects are the building blocks of GitLab. They exist within users' mental models for our product, and are consistently referenced across all levels of the product stack: database, code, user interface (UI), documentation, customer support, sales, marketing, and more.
