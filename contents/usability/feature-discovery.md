@@ -7,6 +7,8 @@ related:
   - /patterns/empty-states
 ---
 
+<note>Help improve this page's content by giving feedback. [Take a short survey.](https://docs.google.com/forms/d/e/1FAIpQLSfzGq1myYmQRnXmliyMCnf_a7XJMu729kXoG5SD6exzkmsFhQ/viewform?usp=sf_link)</note>
+
 New features can enhance the experience and unlock significant value for users. However, a user’s context plays a significant role in how they engage with new functionality. According to the [FOGG Behavior Model](https://behaviormodel.org/), three factors impact people's behavior with regards to completion of tasks:
 
 1. Their ability to perform the task.
@@ -17,11 +19,11 @@ Prompts to trigger the desired behavior succeed when motivation and ability are 
 
 **Before introducing new feature discovery patterns consider the following:**
 
-* Why does this feature need to be promoted? Is it a value driver that leads to an increase in conversion?
-* Is it possible to design the feature so that it doesn't need to be actively promoted?
-* Does the discovery pattern need to be shown to all users or only a subset? Who is the target [user persona](https://about.gitlab.com/handbook/marketing/strategic-marketing/roles-personas/#user-personas) or user role?
-* If a feature is already being promoted on the page, will the new notice compete with it? Should it replace it instead?
-* If two features need a discovery pattern, can they be bundled into one? This may be possible, for example, if they are part of the same [Job to be Done](https://about.gitlab.com/handbook/engineering/ux/jobs-to-be-done/).
+- Why does this feature need to be promoted? Is it a value driver that leads to an increase in conversion?
+- Is it possible to design the feature so that it doesn't need to be actively promoted?
+- Does the discovery pattern need to be shown to all users or only a subset? Who is the target [user persona](https://about.gitlab.com/handbook/marketing/strategic-marketing/roles-personas/#user-personas) or user role?
+- If a feature is already being promoted on the page, will the new notice compete with it? Should it replace it instead?
+- If two features need a discovery pattern, can they be bundled into one? This may be possible, for example, if they are part of the same [Job to be Done](https://about.gitlab.com/handbook/engineering/ux/jobs-to-be-done/).
 
 Use input data to determine where, when, and why a feature discovery pattern is needed. After introducing a new discovery pattern, measure its effect on both conversion and adoption before making it a permanent part of the product.
 
@@ -57,8 +59,8 @@ A well-designed onboarding process can be an effective way to introduce a user t
 
 ### Guidelines for onboarding experiences
 
-* Identify the value that you're trying to give to the user and work backwards from that. Having a new feature that you want to showcase alone isn't a good reason for onboarding. What is the user-facing value of the new feature? How will they benefit from it?
-* Provide a "No, thanks" option that allows users to opt out.
+- Identify the value that you're trying to give to the user and work backwards from that. Having a new feature that you want to showcase alone isn't a good reason for onboarding. What is the user-facing value of the new feature? How will they benefit from it?
+- Provide a "No, thanks" option that allows users to opt out.
 
 ### Think about the user's context
 
@@ -70,7 +72,7 @@ The following patterns can be used as initial prompts to start the onboarding fl
 
 | Pattern name    | Intrusion | Effectiveness | Notes and recommendations                                                                                                                                                                                       |
 | --------------- | --------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Popover         | High      | High          | No major changes to the UI required. Use at the beginning or end, not in the middle, of a complex flow or task. Use to guide a user through different pages.                                                     |
+| Popover         | High      | High          | No major changes to the UI required. Use at the beginning or end, not in the middle, of a complex flow or task. Use to guide a user through different pages.                                                    |
 | UI modification | Medium    | Medium        | Not a reusable component. Can be used in combination with others but generally requires significant changes to UI. For example, an empty pipeline widget when no pipeline is present on the Merge Request page. |
 | Banner          | Low       | Low           | Might require significant changes to the UI. For example, displacement of default elements.                                                                                                                     |
 | Empty state     | Low       | High          | Empty states can be used as great starting points for onboarding flows. They’re not intrusive as there’s no content to show; they can give context, explain the value, and provide a CTA.                       |
@@ -79,9 +81,9 @@ The following patterns can be used as initial prompts to start the onboarding fl
 
 Consider the following recommendations to make your initial prompts more effective and contextual.
 
-* Always explain why the initial prompt is shown (for example, _you don’t have a pipeline to check the quality of your code, we can show you how to set it up quickly._)
-* What is the value that the user will get from it (for example, _it will make your code more secure and robust._)
-* Avoid generic CTA copy like “Let’s go” or “Show me how”. Use something that will tell the user what value they’ll get out of it so that even if they only scan through the copy of the prompt, they’ll still have a good idea of what it is they’re doing and what the result will be. Good example: ”Secure your code”.
+- Always explain why the initial prompt is shown (for example, _you don’t have a pipeline to check the quality of your code, we can show you how to set it up quickly._)
+- What is the value that the user will get from it (for example, _it will make your code more secure and robust._)
+- Avoid generic CTA copy like “Let’s go” or “Show me how”. Use something that will tell the user what value they’ll get out of it so that even if they only scan through the copy of the prompt, they’ll still have a good idea of what it is they’re doing and what the result will be. Good example: ”Secure your code”.
 
 ### Follow-up prompts
 
