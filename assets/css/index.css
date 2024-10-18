@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Inter variable font. */
+
+@font-face {
+  font-family: 'GitLab Sans';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('../../node_modules/@gitlab/fonts/gitlab-sans/GitLabSans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GitLab Sans';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Regular';
+  src: url('../../node_modules/@gitlab/fonts/gitlab-sans/GitLabSans-Italic.woff2') format('woff2');
+}
+
+
+/* Monospaced font: GitLab Mono. */
+@font-face {
+  font-family: 'GitLab Mono';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('../../node_modules/@gitlab/fonts/gitlab-mono/GitLabMono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GitLab Mono';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: url('../../node_modules/@gitlab/fonts/gitlab-mono/GitLabMono-Italic.woff2') format('woff2');
+}
+
+body {
+  @apply gl-text-base gl-font-regular gl-text-default;
+}
+
+a,
+button,
+input,
+textarea,
+[tabindex="-1"] {
+  @apply focus:gl-outline-none focus:gl-ring-2 focus:gl-ring-blue-500 focus:gl-ring-offset-2;
+}
+
+a.with-link-styles {
+  @apply gl-text-link hover:gl-underline;
+}
+
+.gl-button:hover:not(:focus) {
+  @apply gl-ring-1 gl-ring-inset gl-ring-gray-400;
+}

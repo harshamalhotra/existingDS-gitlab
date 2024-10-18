@@ -1,0 +1,50 @@
+image: node:23.0.0
+
+stages:
+  - lint
+  - test
+  - deploy
+
+.common:
+  before_script:
+    - echo 'yarn-offline-mirror ".yarn-cache/"' >> .yarnrc
+    - echo 'yarn-offline-mirror-pruning true' >> .yarnrc
+    - yarn install --frozen-lockfile --no-progress
+  cache:
+    key:
+      files:
+        - yarn.lock
+    paths:
+      - .yarn-cache/
+
+eslint:
+  stage: lint
+  extends:
+    - .common
+  script:
+    - yarn build
+    - yarn lint
+
+vitest:
+  stage: test
+  extends:
+    - .common
+  script:
+    - yarn test
+
+pages:
+  stage: deploy
+  extends:
+    - .common
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      # The directory that contains the built files to be published
+      - .output/public
+  # The directory that contains the built files to be published
+  publish: .output/public
+  rules:
+    # This ensures that only pushes to the default branch 
+    # will trigger a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
