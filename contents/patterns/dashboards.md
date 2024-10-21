@@ -27,7 +27,7 @@ The following interactions are available:
 
 - **Alerting**: Enable a panel to notify a user, so they can act on data from their existing data sources.
 - **Archive**: Remove something from a current view to be organized and managed in a separate view. This change is recorded in the versioning area.
-- **Duplicate**: Create an identical copy of any dashboard or panel.
+- **Make a copy**: Create an identical copy of any dashboard or panel.
 - **Embed**: Insert panels into different mediums.
 - **Export**: Make data available as CSV file, static image of a visualization being shown, or static PDF of a visualization/dashboard (important for data analysis and accessibility).
 - **Lock**: One or more elements are temporarily unavailable for changes to be made.
