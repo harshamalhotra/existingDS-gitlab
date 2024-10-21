@@ -34,10 +34,7 @@ If the change is triggered by a click event, we auto-save immediately after it h
 
 To inform the user that the change has been saved, a [toast](/components/toast) appears. The message is “Saving…” while the saving is in progress, “Change saved” if a single change was saved and “x changes saved” when more than one change was saved (instead of stacking messages up). The toast message should always have the option to undo the recent changes.
 
-If a change fails to auto-save, we need to:
-
-1. Keep re-trying until successful.
-2. Inform the user with a toast saying “Failed to save x changes. Retrying…” with the option to retry manually. This message should remain visible until the changes are successfully saved.
+If a change fails to auto-save, we need to inform the user with a toast saying “Failed to save x changes.” with the option to retry manually. This message should remain visible until the changes are successfully saved.
 
 We also need to warn the user if they try to leave the page before the changes are successfully saved, see the [Safety measure](#safety-measure) section.
 
