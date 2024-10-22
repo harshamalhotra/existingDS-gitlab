@@ -12301,7 +12301,7 @@ sass-loader@10.1.1, sass-loader@^10.5.2:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.80.2:
+sass@^1.80.3:
   version "1.80.3"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.80.3.tgz#3f63dd527647d2b3de35f36acb971bda80517423"
   integrity sha512-ptDWyVmDMVielpz/oWy3YP3nfs7LpJTHIJZboMVs8GEC9eUmtZTZhMHlTW98wY4aEorDfjN38+Wr/XjskFWcfA==
