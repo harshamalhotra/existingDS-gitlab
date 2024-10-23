@@ -465,6 +465,10 @@
                 "path": "duo-calls-to-action"
               },
               {
+                "title": "Feedback",
+                "path": "duo-feedback"
+              },
+              {
                 "title": "Slash commands in GitLab Duo Chat",
                 "path": "duo-slash-commands"
               }
