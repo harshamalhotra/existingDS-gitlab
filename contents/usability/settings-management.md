@@ -12,67 +12,72 @@ related:
   - /usability/progressive-disclosure
 ---
 
-Settings allow users to control how the platform's features or capabilities should behave or appear. They are configurable options and attributes, which present choices to the user to modify baseline functionality.
+Settings allow a user to control how the platform's features or capabilities should behave or appear. A user can modify these configurable options to adjust baseline functionality.
 
-Admin, groups, projects, and users have dedicated areas to aggregate their settings. [Permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) dictate which settings users have access to.
+The Admin area, group, project, and user have dedicated areas to aggregate their settings, while [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) dictate which settings a user can access.
 
 ## Considerations
 
-### Implementation
+When adding a setting to the product, consider these questions:
 
-When considering how to construct a setting within the product, use these questions to help guide your decision-making:
+- **Necessity:** Is this control necessary or just nice to have? Remember to strive for [convention over configuration](https://handbook.gitlab.com/handbook/product/product-principles/#convention-over-configuration).
+- **Access:** Which type of user is responsible for making configuration decisions? Only specific [roles](https://docs.gitlab.com/ee/user/permissions.html) can manage settings. Avoid placing a setting only in the Admin area, as only Administrators on self-managed instances can view it.
+- **Availability:** In which namespace should this setting be available? There is a difference in [functionality between user and group namespaces](https://docs.gitlab.com/ee/user/namespace/#types-of-namespaces).
+- **Flexibility and control:** Is this setting intended to set a default value or enforce a specific configuration? A setting's wording and UI elements should reflect its capability.
+- **Inheritance:** Will a child namespace inherit its values from its parent namespace? While there is a standardized model for implementing [cascading settings](https://docs.gitlab.com/ee/development/cascading_settings.html), it does not solve all configuration challenges.
+- **Relationship:** How does this setting relate to others? Evaluating where users expect to find it in a workflow or user journey can help identify effective placement.
 
-- **Access:** Which type of user is responsible for making configuration decisions? Only specific [roles](https://docs.gitlab.com/ee/user/permissions.html) can manage settings.
-- **Availability**: In which [namespace](https://docs.gitlab.com/ee/user/namespace/#types-of-namespaces) should this setting be available?
-- **Flexibility and control:** Is this setting intended to set a default value or enforce a specific configuration?
+## Patterns
 
-### Inheritance
+The current settings structure is less than ideal, which means most solutions have drawbacks. The combination of powerful administration features with simple configuration options can result in an overwhelming and complex user experience. It requires a strong familiarity with GitLab's structure and feature set.
 
-A child namespace will typically inherit its values from its parent namespace. Inheriting values allows for rudimentary control over child namespaces and flexibility to deviate from default values. It may be required to clarify the state in the UI depending on how a setting will be inherited, controlled, adjusted, restricted, or banned.
+There is no perfect solution that will address all usability challenges with settings, so a reasonable approach is to examine what already exists for extrapolation. This section outlines patterns that can optimize the user experience of settings within the given constraints.
 
-#### Examples
+### Clarify setting restrictions
 
-- When a parent setting is overridable, making that clear in the parent setting's UI may necessitate adding informative text.
-- When a parent setting is enforced, making this clear in the child setting's UI may require changing the child setting state to disabled and adding a lock icon with a [popover](/components/popover) or [tooltip](/components/tooltip) to explain the nature of the restriction:
+A user should never wonder why they cannot change something.
+
+- If a setting depends on another configuration or is limited to a specific role, then provide an explanation to minimize the need for cross-referencing documentation.
+- A parent setting should indicate if it can be overridden, which may require adding informative text.
+- If a child setting is inherited and not changeable, clearly indicate that in the UI. One pattern for indicating this restriction is to disable the child setting and introduce a [popover](/components/popover) or [tooltip](/components/tooltip) to explain why the setting isn't editable.
 
 <figure-img label="Example of locked setting" src="/img/locked-setting-example.png"></figure-img>
 
-### Surfacing settings
+### Changes should be saved in a sensible manner
 
-Consider making configuration options more discoverable to users by linking to settings from the feature page.
+Ideally, the experience of saving a settings selection should be consistent, but not all settings can be treated the same. The impact of a change to a theme color is far less consequential than an adjustment to the default branch. The necessity for a `Save changes` button should match the expected user experience.
 
-#### Pattern
+Full guidelines for [saving progress](/usability/saving-and-feedback#saving-progress) are described separately, but remember never to use a combination of manual and auto-save within the same form.
+
+### Shortcuts to relevant settings
+
+To make configuration options more discoverable, add links to relevant settings from the feature page.
+
+- Add a cross-link to the top right corner of a page, below the breadcrumbs. This placement sets the expectation that the settings apply only to that specific feature.
+- Redirect a user to the specific configuration section in the dedicated settings area. For example, a user who selects the settings link on the **Package Registry** page will be redirected to the **Settings / Packages and registries** section.
+- It's recommended to use the icon-only [button](/components/button/#icon-only-buttons), with the [settings icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=settings) and a [tooltip](/components/tooltip) stating, "Configure in settings."
 
 <figure-img label="Settings button with tooltip on hover" src="/img/settings-hover.svg"></figure-img>
 
-- Add a cross-link to the top right corner of a page, below the breadcrumbs. This placement sets the expectation that the settings apply only to that specific feature.
-- It's recommended to use the icon-only [button](/components/button) with the [settings icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=settings) that, when hovered, shows a [tooltip](/components/tooltip) with the text `Configure in settings`.
-- Redirect a user to the specific configuration section in the dedicated settings area. For example, navigating via the Package Registry page will end up on the **Settings > Packages & Registries** section in settings.
+## Additional guidance
 
-## Behavior
+### Avoid new navigation entries
 
-### Saving settings
+Proposals to add new setting pages to the navigation sidebar often aim to boost discoverability. To increase discoverability, consider the use of in-page [shortcuts](#shortcuts-to-relevant-settings) to highlight settings elsewhere. Any changes to the navigation should be justified through an [evaluation](https://handbook.gitlab.com/handbook/product/ux/navigation/#how-do-i-evaluate-navigation-changes) to prevent bloat.
 
-To keep the experience of settings consistent, avoid using a combination of manual and auto-save in form options. Learn more about [saving progress](/usability/saving-and-feedback#saving-progress).
+### Check the URL structure
 
-### User feedback
+Thoughtfully construct the URL to match the page it maps to since it will be painful to change later.
 
-- Use an [alert](/components/alert) for validation messages that are not directly correlated with an input (for example, failures). These alerts utilize [in-page placement](/components/alert#placement) when data is saved asynchronously.
-- Use a [toast](/components/toast) for success messages that provide immediate confirmation of an action (for example, saving).
+### Maintain consistency and adhere to the knowledge structure
 
-## Structure
+Consider settings as features that introduce capabilities into GitLab, so consistency and logical organization are crucial for effective settings management. Users expect to find settings in predictable locations, so it's important to integrate each one within the broader information architecture.
 
-<figure-img label="Example of settings layout" src="/img/settings-1-column.png"></figure-img>
+- Group related options logically and position them where users would intuitively look for them.
+- Ensure consistent placement of settings across different GitLab areas (such as Admin area, group, project, and user settings).
+- Align the UI treatment with similar configuration options throughout the platform.
+- When you introduce new settings or capabilities, adhere to the [established knowledge structure](https://handbook.gitlab.com/handbook/product/product-principles/#principled-adherence-to-the-established-knowledge-architecture).
 
-- Settings should appear stacked in a single column.
-- Related settings should be grouped together into expandable sections. Use a title and a brief explanation of what users should expect when a section is expanded. Configuration of settings can happen directly within a section or can be deferred to a linked, secondary screen following the principles of [progressive disclosure](/usability/progressive-disclosure) to avoid overwhelming users and impacting the page performance.
-- Horizontal separators are placed between each section to give elements enough room to breathe.
-- When a settings page contains multiple sections, each section header remains sticky on scroll to provide context.
-- Setting form elements use the [form layout sizes](/patterns/forms#layout).
-- A sticky footer containing action buttons (for example, Save and Cancel) should appear when a setting has been changed.
+### Avoid direct links to docs
 
-## Design specifications
-
-Color, spacing, dimension, and layout specific information pertaining to this component can be viewed using the following link:
-
-<todo>Add Figma specs for settings</todo>
+It is not an encouraged pattern to link to documentation from settings, because the UI should be self-explanatory. Follow [when to use a link to documentation](/usability/contextual-help#when-to-use-a-link-to-documentation) for guidance.
