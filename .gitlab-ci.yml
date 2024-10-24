@@ -38,6 +38,8 @@ pages:
     - .common
   script:
     - yarn build
+  variables:
+    NODE_ENV: 'ci_production'
   artifacts:
     paths:
       # The directory that contains the built files to be published
