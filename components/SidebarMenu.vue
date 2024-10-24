@@ -1,6 +1,6 @@
 <template>
   <TransitionRoot as="template" :show="isSidebarOpen">
-    <Dialog class="gl-z-50 gl-relative lg:gl-hidden" @close="closeSidebar">
+    <Dialog class="gl-z-50 gl-relative md:gl-hidden" @close="closeSidebar">
       <TransitionChild
         as="template"
         class="gl-opacity-0"
@@ -70,7 +70,7 @@
 
   <!-- Static sidebar for desktop -->
   <div
-    class="lg:gl-z-50 gl-hidden lg:gl-fixed lg:gl-inset-y-0 lg:gl-flex lg:gl-w-34 lg:gl-flex-col"
+    class="md:gl-z-50 gl-hidden md:gl-fixed md:gl-inset-y-0 md:gl-flex md:gl-w-34 md:gl-flex-col"
     data-testid="desktopSidebar"
   >
     <!-- Sidebar component, swap this element with another sidebar if you like -->
@@ -86,11 +86,11 @@
   </div>
 
   <div
-    class="gl-z-40 gl-sticky gl-top-0 gl-flex gl-items-center gl-justify-between gl-gap-x-6 gl-bg-white gl-px-4 gl-py-4 gl-shadow-sm sm:gl-px-6 lg:gl-hidden"
+    class="gl-z-40 gl-fixed gl-top-0 gl-flex gl-h-[3.25rem] gl-w-full gl-items-center gl-justify-between gl-gap-x-6 gl-bg-white gl-px-4 gl-shadow-sm md:gl-hidden"
   >
     <button
       type="button"
-      class="-gl-m-2 gl-p-2 gl-text-gray-700 lg:gl-hidden"
+      class="-gl-m-2 gl-p-2 gl-text-gray-700 md:gl-hidden"
       @click="openSidebar"
     >
       <span class="gl-sr-only">Open sidebar</span>

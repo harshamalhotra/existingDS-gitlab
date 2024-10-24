@@ -41,6 +41,10 @@
   src: url('../../node_modules/@gitlab/fonts/gitlab-mono/GitLabMono-Italic.woff2') format('woff2');
 }
 
+#__nuxt {
+  @apply gl-h-full;
+}
+
 body {
   @apply gl-text-base gl-font-regular gl-text-default;
 }
