@@ -79,8 +79,10 @@ describe("SidebarMenu", () => {
 
     await user.keyboard("{Escape}");
 
-    expect(
-      screen.queryByRole("combobox", { name: "Search..." }),
-    ).not.toBeInTheDocument();
+    await waitFor(() => {
+      expect(
+        screen.queryByRole("combobox", { name: "Search..." }),
+      ).not.toBeInTheDocument();
+    });
   });
 });
