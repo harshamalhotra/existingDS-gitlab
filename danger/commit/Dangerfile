@@ -160,10 +160,11 @@ def lint_commits(commits)
 
       One or more commit messages do not meet our
       [Git commit message standards](#{URL_COMMITS}).
-      You should either:
-      - [Amend the commit messages](#{URL_AMEND_COMMITS})
-      - Edit this merge request to enable **Squash commits when merge request is accepted**
-      and ensure its title complies with the standards.
+      You must either:
+      - [Amend the commit messages](#{URL_AMEND_COMMITS}).
+      - Edit the merge request title to comply with the standards,
+      enable **Squash commits when merge request is accepted**
+      and retry the `danger-review` CI job.
 
       **Good** commit message example:
 
@@ -183,6 +184,15 @@ def lint_commits(commits)
     MARKDOWN
   end
 
+  if git.commits.length > 10
+    warn(
+      "Merge request has more than 10 commits. " \
+        "You should [manually squash them](#{URL_SQUASH_COMMITS}) into a smaller " \
+        "number, or enable **Squash commits when merge request is accepted** " \
+        "and retry the `danger-review` CI job."
+    )
+  end
+
   return if helper.squash_mr?
 end
 
@@ -193,23 +203,23 @@ def lint_mr(mr_title)
 
   if !semantic_commit
     fail(
-      "Merge request title should meet our [Git commit message standards](#{URL_COMMITS}), since **Squash commits when merge request is accepted** is enabled."
+      "Merge request title must meet our [Git commit message standards](#{URL_COMMITS}), since **Squash commits when merge request is accepted** is enabled. After you fix it, retry the `danger-review` CI job."
     )
   elsif !SEMANTIC_COMMIT_TYPES.include?(semantic_commit[:type])
     warn(
-      "Merge request title should have a [common semantic commit type](#{URL_COMMIT_TYPES})."
+      "Merge request title should have a [common semantic commit type](#{URL_COMMIT_TYPES}). After you fix it, retry the `danger-review` CI job."
     )
   end
 
   if mr_title.length > COMMIT_SUBJECT_MAX_LENGTH
     fail(
-      "Merge request title must have less than #{COMMIT_SUBJECT_MAX_LENGTH} characters."
+      "Merge request title must have less than #{COMMIT_SUBJECT_MAX_LENGTH} characters. After you fix it, retry the `danger-review` CI job."
     )
   end
 
   if mr_title.end_with?('.')
     fail(
-      'Merge request title must not end with a period.'
+      'Merge request title must not end with a period. After you fix it, retry the `danger-review` CI job.'
     )
   end
 end
@@ -218,11 +228,4 @@ if helper.squash_mr?
   lint_mr(helper.mr_title)
 else
   lint_commits(git.commits)
-end
-
-if git.commits.length > 10
-  warn(
-    "Merge request has more than 10 commits. " \
-      "You should [squash them](#{URL_SQUASH_COMMITS}) into a smaller number."
-  )
 end
