@@ -34,7 +34,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         class: "h-full bg-white",
       },
-      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      link: [
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: `${process.env.NUXT_APP_BASE_URL || ""}/favicon.svg`,
+        },
+      ],
     },
   },
   runtimeConfig: {
