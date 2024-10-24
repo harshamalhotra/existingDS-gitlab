@@ -24,7 +24,7 @@ workflow:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 default:
-  image: node:20.15.0-buster
+  image: node:20.18.0-buster
   tags:
     - gitlab-org
 
