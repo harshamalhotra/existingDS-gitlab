@@ -36,16 +36,10 @@ export default defineNuxtConfig({
       },
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
     },
-    baseURL:
-      process.env.NODE_ENV === "ci_production"
-        ? "/frontend/tailwind-documentation/"
-        : null,
   },
   runtimeConfig: {
     public: {
-      isProduction: ["ci_production", "production", "test"].includes(
-        process.env.NODE_ENV,
-      ),
+      isProduction: ["production", "test"].includes(process.env.NODE_ENV),
     },
   },
   devtools: { enabled: true },
