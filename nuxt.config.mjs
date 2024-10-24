@@ -29,10 +29,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       bodyAttrs: {
-        class: "h-full",
+        class: "gl-h-full",
       },
       htmlAttrs: {
-        class: "h-full bg-white",
+        class: "gl-h-full",
       },
       link: [
         {

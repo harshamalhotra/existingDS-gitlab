@@ -10,6 +10,7 @@
           class="with-link-styles"
           :href="tailwindDocsLink + '#using-negative-values'"
           target="_blank"
+          rel="noopener noreferrer"
           >Learn more.</a
         >
       </p>

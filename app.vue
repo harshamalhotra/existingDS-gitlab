@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="gl-h-full">
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtPage class="gl-h-full" />
     </NuxtLayout>
   </div>
 </template>
