@@ -29,12 +29,12 @@
       <tbody class="gl-divide-y gl-divide-gray-200">
         <tr v-for="(properties, className) in utilities" :key="className">
           <td
-            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-blue-300 gl-font-monospace"
+            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-blue-600 gl-font-monospace"
           >
             {{ className }}
           </td>
           <td
-            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-purple-500 gl-font-monospace"
+            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-purple-600 gl-font-monospace"
           >
             <div
               v-for="(value, property) in properties"
