@@ -9,7 +9,7 @@
 import { CATEGORY_LAYOUT } from "../constants";
 
 definePageMeta({
-  title: "Overscroll behavior",
+  title: "Overscroll Behavior",
   category: CATEGORY_LAYOUT,
 });
 </script>

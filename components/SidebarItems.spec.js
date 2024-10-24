@@ -5,8 +5,12 @@ import SidebarItems from "./SidebarItems.vue";
 import { CATEGORY_LAYOUT, CATEGORY_FLEXBOX_AND_GRID } from "~/constants";
 
 describe("SidebarItems", () => {
+  const defaultProps = {
+    pathFromSearch: "",
+  };
+
   it("renders categories and category items", async () => {
-    await renderSuspended(SidebarItems);
+    await renderSuspended(SidebarItems, { props: defaultProps });
 
     const categoryLayout = screen.getByText(CATEGORY_LAYOUT);
 
