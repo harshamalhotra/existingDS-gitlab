@@ -1,4 +1,6 @@
 import { defineNuxtConfig } from "nuxt/config";
+import camelCase from "lodash/camelCase";
+import MiniSearch from "minisearch";
 import resolveTailwindUtils from "./resolve-tailwind-utils.mjs";
 import fs from "node:fs";
 import path from "node:path";
@@ -37,7 +39,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      isProduction: process.env.NODE_ENV === "production",
+      isProduction: process.env.NODE_ENV === "production" || "test",
     },
   },
   devtools: { enabled: true },
@@ -67,12 +69,16 @@ export default defineNuxtConfig({
   nitro: {
     static: true,
     prerender: {
-      ignore: ["/utilities.json"],
+      ignore: ["/utilities.json", "./search-index.json"],
     },
   },
   hooks: {
-    "nitro:build:public-assets"() {
-      const utilities = Object.values(resolveTailwindUtils())
+    "nitro:build:public-assets"(nitro) {
+      const resolvedUtilities = resolveTailwindUtils();
+      const outputPath = path.join(__dirname, ".output", "public");
+
+      // Write utilities to JSON file
+      const utilitiesForJson = Object.values(resolvedUtilities)
         .flatMap(({ utilities }) => utilities)
         .reduce(
           (accumulator, utilities) => ({ ...accumulator, ...utilities }),
@@ -80,8 +86,56 @@ export default defineNuxtConfig({
         );
 
       fs.writeFileSync(
-        path.join(__dirname, ".output", "public", "utilities.json"),
-        JSON.stringify(utilities, null, 2),
+        path.join(outputPath, "utilities.json"),
+        JSON.stringify(utilitiesForJson, null, 2),
+      );
+
+      // Create search index
+      const searchDocuments = nitro._prerenderedRoutes.flatMap((page) => {
+        const pageName = page.route.replace("/", "");
+        try {
+          const pageAsString = fs.readFileSync(
+            path.join(__dirname, "pages", `${pageName}.vue`),
+            { encoding: "utf8" },
+          );
+          const title = pageAsString.match(/title: "(.+)"/)?.[1];
+          const utilities = resolvedUtilities[camelCase(pageName)]?.utilities;
+          const selectors = Object.keys(utilities).map(
+            (selectors) => selectors,
+          );
+          const uniqueSelectors = [...new Set(selectors)];
+          const properties = Object.values(utilities).flatMap(
+            (propertiesAndValues) => Object.keys(propertiesAndValues),
+          );
+          const uniqueProperties = [...new Set(properties)];
+
+          if (!title || !utilities) {
+            return [];
+          }
+
+          return [
+            {
+              id: pageName,
+              title,
+              text: [...uniqueSelectors, ...uniqueProperties].join(" "),
+              path: page.route,
+            },
+          ];
+        } catch {
+          return [];
+        }
+      });
+
+      const miniSearch = new MiniSearch({
+        fields: ["title", "text"],
+        storeFields: ["title", "text", "path"],
+      });
+
+      miniSearch.addAll(searchDocuments);
+
+      fs.writeFileSync(
+        path.join(outputPath, "search-index.json"),
+        JSON.stringify(miniSearch),
       );
     },
   },

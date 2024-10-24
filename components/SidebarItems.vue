@@ -31,18 +31,40 @@
 <script setup>
 import { CATEGORIES } from "../constants";
 
+const props = defineProps({
+  pathFromSearch: {
+    type: String,
+    required: true,
+  },
+});
+
 defineEmits(["itemClick"]);
 
 const route = useRoute();
 const router = useRouter();
 const routerLinks = useTemplateRef("routerLink");
 
-onMounted(() => {
+const scrollToActiveLink = (path) => {
   const activeRouterLink = routerLinks.value.find(
-    (routerLink) => routerLink.to === route.path,
+    (routerLink) => routerLink.to === path,
   );
 
   activeRouterLink?.$el?.scrollIntoView({ block: "center" });
+};
+
+watch(
+  () => props.pathFromSearch,
+  (newPath) => {
+    if (newPath === "") {
+      return;
+    }
+
+    scrollToActiveLink(newPath);
+  },
+);
+
+onMounted(() => {
+  scrollToActiveLink(route.path);
 });
 
 const sidebarItems = computed(() =>

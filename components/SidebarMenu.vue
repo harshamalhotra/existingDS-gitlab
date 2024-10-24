@@ -25,9 +25,7 @@
           leave-from="gl-translate-x-0"
           leave-to="-gl-translate-x-full"
         >
-          <DialogPanel
-            class="gl-mr-16 gl-relative gl-flex gl-w-full gl-max-w-xs gl-flex-1"
-          >
+          <DialogPanel class="gl-mr-16 gl-flex gl-w-full gl-max-w-xs gl-flex-1">
             <TransitionChild
               as="template"
               class="gl-opacity-0"
@@ -39,7 +37,7 @@
               leave-to="gl-opacity-0"
             >
               <div
-                class="gl-w-16 gl-absolute gl-right-5 gl-top-0 gl-z-1 gl-flex gl-justify-center gl-pt-5"
+                class="gl-w-16 gl-absolute gl-right-3 gl-top-3 gl-z-1 gl-flex gl-justify-center"
               >
                 <button
                   type="button"
@@ -58,8 +56,11 @@
             <div
               class="gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-bg-white"
             >
-              <SidebarLogo />
-              <SidebarItems @item-click="closeSidebar" />
+              <SidebarLogo :showSearchButton="false" />
+              <SidebarItems
+                :pathFromSearch="pathFromSearch"
+                @itemClick="closeSidebar"
+              />
             </div>
           </DialogPanel>
         </TransitionChild>
@@ -76,13 +77,16 @@
     <div
       class="gl-border-r gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-border-gray-200 gl-bg-white"
     >
-      <SidebarLogo />
-      <SidebarItems @item-click="closeSidebar" />
+      <SidebarLogo :showSearchButton="isSearchReady" @openSearch="openSearch" />
+      <SidebarItems
+        :pathFromSearch="pathFromSearch"
+        @itemClick="closeSidebar"
+      />
     </div>
   </div>
 
   <div
-    class="gl-z-40 gl-sticky gl-top-0 gl-flex gl-items-center gl-gap-x-6 gl-bg-white gl-px-4 gl-py-4 gl-shadow-sm sm:gl-px-6 lg:gl-hidden"
+    class="gl-z-40 gl-sticky gl-top-0 gl-flex gl-items-center gl-justify-between gl-gap-x-6 gl-bg-white gl-px-4 gl-py-4 gl-shadow-sm sm:gl-px-6 lg:gl-hidden"
   >
     <button
       type="button"
@@ -92,7 +96,15 @@
       <span class="gl-sr-only">Open sidebar</span>
       <BarsIcon class="gl-h-6 gl-w-6" aria-hidden="true" />
     </button>
+    <OpenSearchButton v-if="isSearchReady" @openSearch="openSearch" />
   </div>
+  <SearchPalette
+    :open="isSearchOpen"
+    @searchPathChange="onSearchPathChange"
+    @close="closeSearch"
+    @open="openSearch"
+    @ready="onSearchReady"
+  />
 </template>
 
 <script setup>
@@ -106,7 +118,20 @@ import {
 import BarsIcon from "~/assets/icons/bars.svg";
 import XMarkIcon from "~/assets/icons/x-mark.svg";
 
+const route = useRoute();
 const isSidebarOpen = ref(false);
+const isSearchOpen = ref(false);
+const isSearchReady = ref(false);
+const pathFromSearch = ref("");
+
+watch(
+  () => route.path,
+  (newPath) => {
+    if (newPath !== pathFromSearch.value) {
+      pathFromSearch.value = "";
+    }
+  },
+);
 
 const openSidebar = () => {
   isSidebarOpen.value = true;
@@ -114,5 +139,21 @@ const openSidebar = () => {
 
 const closeSidebar = () => {
   isSidebarOpen.value = false;
+};
+
+const openSearch = () => {
+  isSearchOpen.value = true;
+};
+
+const closeSearch = () => {
+  isSearchOpen.value = false;
+};
+
+const onSearchReady = () => {
+  isSearchReady.value = true;
+};
+
+const onSearchPathChange = (searchPath) => {
+  pathFromSearch.value = searchPath;
 };
 </script>

@@ -9,7 +9,7 @@
 import { CATEGORY_LAYOUT } from "../constants";
 
 definePageMeta({
-  title: "Object fit",
+  title: "Object Fit",
   category: CATEGORY_LAYOUT,
 });
 </script>

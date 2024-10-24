@@ -81,3 +81,15 @@ export const CUSTOM_UTILS_PAGES = {
   textAlign: [".text-align-inherit"],
   wordBreak: [".break-anywhere", ".wrap-anywhere"],
 };
+
+// TODO: make search results available in development
+export const MOCK_SEARCH_RESULTS_FOR_DEVELOPMENT = [
+  {
+    title: "Padding",
+    path: "/padding",
+  },
+  {
+    title: "Border Collapse",
+    path: "/border-collapse",
+  },
+];
