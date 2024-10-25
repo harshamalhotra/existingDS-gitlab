@@ -3,7 +3,7 @@
   <div class="gl-h-full gl-pt-[3.25rem] md:gl-pt-0">
     <SidebarMenu />
     <div class="gl-flex gl-h-full gl-flex-col gl-pt-7 md:gl-pl-34">
-      <main class="gl-shrink-0 gl-grow">
+      <main class="gl-container gl-mx-auto gl-shrink-0 gl-grow">
         <div class="gl-px-4 sm:gl-px-6 md:gl-px-8">
           <slot />
         </div>
