@@ -4,13 +4,16 @@ name: Principles
 
 Principles act as a reusable standard for teams to measure their work. They replace subjective ideals with a shared understanding of what the result must do for users. Just as guardrails keep you safe and on the road, principles keep teams on the path to achieving their vision. By achieving alignment, principles enable us to scale and build velocity.
 
-There are two kinds of principles; The principles that guide the process and principles that define the output. The process principles are described in our [handbook](https://about.gitlab.com/handbook/product/#product-principles), while the outcome principles are detailed here.
+There are two kinds of principles:
 
-We take inspiration from other companies though our principles are defined by looking inward. This helps to determine which are most actionable and effective. Just like the rest of our work, we continually adjust our principles and strive always to make them better. Our principle guidelines are defined at the bottom of this page, so everyone is welcome to suggest improvements by opening an issue and/or creating a merge request in our [repository](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)!
+- The principles that guide the process, which are defined in the [handbook](https://about.gitlab.com/handbook/product/#product-principles).
+- The principles that define the output, which are described on this page.
+
+Though we take inspiration from other companies, our principles are defined by looking inward. This perspective ensures they are actionable and effective. Just like the rest of our work, we continually adjust our principles and always strive to make them better. Everyone is welcome to suggest improvements by opening an issue and creating a merge request in our [repository](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)!
 
 ## Sophisticated simplicity
 
-GitLab is a platform that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product. That is through thoughtful choices that streamline complex workflows and functionality, which allow the user to stay focused on what matters most.
+GitLab is a platform that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product: we make thoughtful choices that streamline complex workflows and functionality. These choices help the user stay focused on what matters most.
 
 There are three principles that help support us in this work.
 
