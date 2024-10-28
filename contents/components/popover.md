@@ -19,7 +19,13 @@ related:
 
 ## Structure
 
-<todo>Add structure image.</todo>
+<figure-img alt="Numbered diagram of a popover structure" label="Popover structure" src="/img/popover-structure.svg"></figure-img>
+
+1. **Container**: Wraps the content.
+1. **Title** (optional): Header for the content.
+1. **Dismissal** (optional): Icon to dismiss the popover.
+1. **Content**: Additional information about an element.
+1. **Tip**: Points to the referring element.
 
 ## Guidelines
 
