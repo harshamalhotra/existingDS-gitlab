@@ -54,8 +54,7 @@ A single stat with a badge which can be used to convey status or trend in more d
 
 A single stat that navigates to detailed information about a metric.
 
-<todo>Add linked single stat example.</todo>
-<todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1555">Add linked single stat example after design direction is complete.</todo>
+<todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1555">Complete design spec and add "linked" single stat example.</todo>
 
 ## Design specifications
 
