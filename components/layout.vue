@@ -34,7 +34,7 @@ export default {
         <edit-this-page-link
           edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main"
         >
-          View page source
+          Page source
         </edit-this-page-link>
         <span class="footer-link-divider"></span>
         <edit-this-page-link
@@ -43,11 +43,11 @@ export default {
           Open in Web IDE
         </edit-this-page-link>
         <span class="footer-link-divider"></span>
-        <nuxt-link to="/get-started/contributing">Please contribute</nuxt-link>
+        <nuxt-link to="/get-started/contributing">Contribute</nuxt-link>
         <span class="footer-link-divider"></span>
         <a href="https://about.gitlab.com/privacy/">Privacy statement</a>
         <span class="footer-link-divider"></span>
-        <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
+        <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie settings</button>
       </div>
     </footer>
   </div>

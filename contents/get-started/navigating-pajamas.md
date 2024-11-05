@@ -28,6 +28,6 @@ A data visualization pulls insights from a data set into a narrative, allowing a
 
 Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.
 
-## [Usability](/usability)
+## [Usability and interaction](/usability)
 
 Usability guidelines include documentation that affects the ease-of-use for different types of users. This includes accessibility and internationalization.
