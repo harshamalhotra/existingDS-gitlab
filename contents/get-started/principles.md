@@ -53,7 +53,7 @@ Empathy for the user starts with a deep understanding of their needs and goals. 
 
 | Do                                                                                                                                              | Don't                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Focus on the user's intended outcomes, and on what they seek to ultimately achieve. |  Focus on the implementation of trending features to drive adoption and visibility in the market. |
+| Let the user's needs and intended outcomes drive the change. | Let the popularity or impressiveness of a feature or technology drive the change. |
 | Prioritize user value. | Prioritize technical feasibility or development speed. |
 | Design for current essential needs. | Design to accommodate future, potential needs. |
 
