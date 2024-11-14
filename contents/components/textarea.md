@@ -28,4 +28,21 @@ componentLabel: form-textarea
 
 ### Accessibility
 
-<todo>Add accessibility.</todo>
+- When using `GlFormGroup`, the `label` prop alone does not give the input an accessible name.
+- The `label-for` prop must also be provided to give the input an accessible name.
+
+#### Textarea with label
+
+```html
+<gl-form-group :label="__('Issue description')" label-for="issue-description">
+  <gl-form-textarea id="issue-description" v-model="description" />
+</gl-form-group>
+```
+
+#### Textarea with hidden label
+
+```html
+<gl-form-group :label="__('Issue description')" label-for="issue-description" label-sr-only>
+  <gl-form-textarea id="issue-description" v-model="description" />
+</gl-form-group>
+```
