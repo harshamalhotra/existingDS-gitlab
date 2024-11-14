@@ -326,10 +326,6 @@
                 "path": "date-picker"
               },
               {
-                "title": "File uploader",
-                "path": "file-uploader"
-              },
-              {
                 "title": "Filter",
                 "path": "filter"
               },

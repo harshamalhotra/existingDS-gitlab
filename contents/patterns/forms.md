@@ -8,7 +8,6 @@ components:
   - base-form-form-input
   - base-form-form-textarea
 related:
-  - file-uploader
   - date-picker
   - color-picker
   - search
