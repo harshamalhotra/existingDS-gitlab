@@ -89,3 +89,19 @@ Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
 ### Accessibility
 
 - Tooltips should not auto-dismiss as it would violate [WCAG 1.4.13 Content on Hover or Focus](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus)
+- When adding tooltips, ensure that the element with the tooltip can receive focus so a keyboard user can see the tooltip.
+- If the element is a static one, such as an icon, enclose it in a button which already is focusable so we don't have to add `tabindex=0` to the icon.
+
+The following code snippet is a good example of an icon with a tooltip.
+
+- It's automatically focusable, as it is a button.
+- It's given an accessible name with `aria-label`, as it is a button with no text.
+
+```html
+<button
+  v-gl-tooltip
+  :title="__('Tooltip text')"
+  :aria-label="__('Warning')"
+  :icon="warning"
+/>
+```
