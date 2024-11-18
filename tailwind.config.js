@@ -4,12 +4,12 @@ import tailwindDefaults from "@gitlab/ui/tailwind.defaults";
 export default {
   presets: [tailwindDefaults],
   corePlugins: {
-    /*
-     * Disable preflight styles so that `@tailwind base` compiles to CSS vars declarations without
-     * any of the resets which we don't need.
-     * More on this at https://tailwindcss.com/docs/preflight.
-     */
     preflight: true,
+    ringOffsetColor: true,
+    ringOpacity: true,
+    ringWidth: true,
+    ringColor: true,
+    ringOffsetWidth: true,
   },
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -21,6 +21,12 @@ export default {
     "./error.vue",
   ],
   theme: {
+    ringColor: ({ theme }) => ({
+      ...theme("colors"),
+    }),
+    outlineColor: ({ theme }) => ({
+      ...theme("colors"),
+    }),
     extend: {},
   },
   plugins: [require("@tailwindcss/forms")],

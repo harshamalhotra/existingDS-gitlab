@@ -9,7 +9,8 @@
 import { CATEGORY_BORDERS } from "../constants";
 
 definePageMeta({
-  title: "Ring Offset Color",
+  title: "Focus Ring",
   category: CATEGORY_BORDERS,
+  tailwindDocsLink: null,
 });
 </script>

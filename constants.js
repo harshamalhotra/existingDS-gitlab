@@ -78,6 +78,7 @@ export const CUSTOM_UTILS_PAGES = {
   ],
   fontFamily: [".font-monospace"],
   float: [".clearfix"],
+  focusRing: [".focus", ".focus-inset"],
   textAlign: [".text-align-inherit"],
   wordBreak: [".break-anywhere", ".wrap-anywhere"],
 };
