@@ -30,10 +30,10 @@ When you plan to add a slash command, inform the [Duo Chat group](https://handbo
 Slash commands should not be tied to specific features. Try to start slash commands with a verb that can apply to multiple contexts.
 
 - Use the same command for different use cases to keep the list small and learnable, instead of a command for a specific feature.
-  - **Do**: `/troubleshoot <URL>` Suggest a fix to a vulnerability, code, or pipeline.
-  - **Don't**: `/troubleshoot_pipeline <URL>` Suggest a fix for a failing pipeline.
+  - **Do**: `/troubleshoot` Use an action verb that is applicable to multiple workflows. In this case, it could troubleshoot vulnerabilities, code, or jobs.
+  - **Don't**: `/troubleshoot_job` Create a slash command that is specific to one worklow.
 - When a command is more than one word, use an underscore to denote spaces. For example, `/new_conversation`.
-- Some commands accept optional arguments, or additional information such as a link, reference, or free text. The syntax of the commands follows this structure: `/<action verb> <optional reference> <optional instructions>`. For example, `/summarize #14023 in 5 bullet points`.
+- Some commands accept optional arguments, or additional information such as a link, reference, or free text. The syntax of the commands follows this structure: `/slash_command` `optional reference` `optional instructions`. For example, `/summarize` `#14023` `in 5 bullet points`.
 
 ## Menu layout
 
