@@ -7,9 +7,10 @@
 </template>
 
 <script setup>
-import allUtilities from "virtual:tailwind-utils";
+import { resolvedUtilities, resolvedVariants } from "virtual:tailwind-utils";
 
-provide("allUtilities", allUtilities);
+provide("resolvedUtilities", resolvedUtilities);
+provide("resolvedVariants", resolvedVariants);
 
 const route = useRoute();
 

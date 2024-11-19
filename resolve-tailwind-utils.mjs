@@ -15,6 +15,7 @@ const resolveTailwindUtils = () => {
   });
 
   const resolvedUtilities = {};
+  const resolvedVariants = {};
 
   const prefixSelector = (selector) => {
     return selector.replace(".", resolvedConfig.prefix);
@@ -102,30 +103,49 @@ const resolveTailwindUtils = () => {
     addUtilities(pluginName, utilities, supportsNegativeValues);
   };
 
+  const sharedPluginConfig = {
+    theme: (key, defaultValue) => {
+      return resolvedConfig.theme[key] || defaultValue;
+    },
+    config: (option, defaultValue) => {
+      return option ? resolvedConfig[option] || defaultValue : { future: {} };
+    },
+  };
+
+  // Resolve core plugin utilities
   resolvedConfig.corePlugins.forEach((pluginName) => {
     const plugin = corePlugins.corePlugins[pluginName];
 
     plugin({
+      ...sharedPluginConfig,
       addDefaults: noop,
       addComponents: addUtilities.bind(null, pluginName),
       corePlugins: () => true,
-      config: (option, defaultValue) => {
-        return option ? resolvedConfig[option] || defaultValue : { future: {} };
-      },
       addUtilities: addUtilities.bind(null, pluginName),
-      theme: (key, defaultValue) => {
-        return resolvedConfig.theme[key] || defaultValue;
-      },
       matchUtilities: matchUtilities.bind(null, pluginName),
     });
   });
 
+  // Resolve custom utilities
   tailwindDefaultsPreset.plugins[0].handler({
     addComponents: addCustomUtilities,
     addUtilities: addCustomUtilities,
   });
 
-  return resolvedUtilities;
+  // Resolve breakpoints
+  corePlugins.variantPlugins.screenVariants({
+    ...sharedPluginConfig,
+    matchVariant: noop,
+    addVariant: (variantName, variantValue) => {
+      if (!resolvedVariants.breakpoints) {
+        resolvedVariants.breakpoints = {};
+      }
+
+      resolvedVariants.breakpoints[variantName] = variantValue;
+    },
+  });
+
+  return { resolvedUtilities, resolvedVariants };
 };
 
 export default resolveTailwindUtils;

@@ -18,7 +18,12 @@ function resolveTailwindUtilsVite() {
     },
     load(id) {
       if (id === resolvedVirtualModuleId) {
-        return `export default ${JSON.stringify(resolveTailwindUtils())}`;
+        const { resolvedUtilities, resolvedVariants } = resolveTailwindUtils();
+
+        return `
+          export const resolvedUtilities = ${JSON.stringify(resolvedUtilities)};
+          export const resolvedVariants = ${JSON.stringify(resolvedVariants)};
+        `;
       }
     },
   };

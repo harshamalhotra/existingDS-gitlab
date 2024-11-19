@@ -59,7 +59,7 @@
 <script setup>
 import camelCase from "lodash/camelCase";
 
-const allUtilities = inject("allUtilities");
+const resolvedUtilities = inject("resolvedUtilities");
 const route = useRoute();
 
 const props = defineProps({
@@ -70,5 +70,7 @@ const props = defineProps({
   },
 });
 
-const utilities = computed(() => allUtilities[camelCase(route.name)].utilities);
+const utilities = computed(
+  () => resolvedUtilities[camelCase(route.name)].utilities,
+);
 </script>
