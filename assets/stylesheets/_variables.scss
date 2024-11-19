@@ -1,42 +1,10 @@
-@import '@gitlab/ui/dist/tokens/scss/tokens';
-
-/*
- * Measures
- */
-
-$gl-spacing-1: 2px;
-$gl-spacing-2: 4px;
-$gl-spacing-3: 8px;
-$gl-spacing-4: 12px;
-$gl-spacing-5: 16px;
-$gl-spacing-6: 24px;
-$gl-spacing-7: 32px;
-$gl-spacing-8: 48px;
-$gl-spacing-9: 64px;
-$gl-spacing-10: 96px;
-$gl-spacing-11: 128px;
-$gl-spacing-12: 176px;
-$gl-spacing-13: 256px;
-
 /*
  * Framework
  */
 
-$navbar-height: 56px;
+$navbar-height: 3.5rem;
 $page-width: 54rem;
-$sidebar-width: 256px;
-
-/*
- * Typography
- */
-
-$base-font-size: 14px;
-
-/*
- * Border
- */
-
-$border-radius: $gl-spacing-2;
+$sidebar-width: 16rem;
 
 /*
  * Z Indexes

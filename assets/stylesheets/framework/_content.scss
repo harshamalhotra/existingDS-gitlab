@@ -28,20 +28,20 @@
 .container {
   margin: 0 auto;
   max-width: $page-width;
-  padding-left: $gl-spacing-5;
-  padding-right: $gl-spacing-5;
+  padding-left: $gl-spacing-scale-5;
+  padding-right: $gl-spacing-scale-5;
   width: 100%;
 
   @include media-sm-up {
-    padding-left: $gl-spacing-7;
-    padding-right: $gl-spacing-7;
+    padding-left: $gl-spacing-scale-7;
+    padding-right: $gl-spacing-scale-7;
   }
 }
 
 .admonition {
-  padding: $gl-spacing-5;
+  padding: $gl-spacing-scale-5;
   display: block;
-  font-size: $base-font-size;
+  font-size: $gl-font-size;
   line-height: 1.5;
 
   &.admonition--note {
@@ -102,16 +102,16 @@ kbd {
 // Figure
 
 .figure {
-  border-radius: $border-radius;
+  border-radius: $gl-border-radius-base;
   display: block;
-  margin: $gl-spacing-7 auto;
+  margin: $gl-spacing-scale-7 auto;
   text-align: center;
 
   &--dark {
     background-color: $gray-950;
     color: $white;
-    margin-bottom: $gl-spacing-7;
-    padding: $gl-spacing-6 $gl-spacing-5;
+    margin-bottom: $gl-spacing-scale-7;
+    padding: $gl-spacing-scale-6 $gl-spacing-scale-5;
   }
 }
 
@@ -122,9 +122,9 @@ kbd {
 }
 
 .figure-caption {
-  font-size: $base-font-size;
+  font-size: $gl-font-size;
   line-height: 1.5;
-  margin-top: $gl-spacing-3;
+  margin-top: $gl-spacing-scale-3;
 }
 
 // Figma embeds
@@ -134,7 +134,7 @@ kbd {
   position: relative;
   padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
   height: 0;
-  margin-bottom: $gl-spacing-6;
+  margin-bottom: $gl-spacing-scale-6;
   overflow: hidden;
 
   iframe {
