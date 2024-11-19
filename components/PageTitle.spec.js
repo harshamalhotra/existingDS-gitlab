@@ -12,7 +12,7 @@ const defaultRoute = {
 };
 
 const defaultProvide = {
-  allUtilities: {
+  resolvedUtilities: {
     flex: {
       supportsNegativeValues: false,
       utilities: {

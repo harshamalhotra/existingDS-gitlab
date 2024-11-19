@@ -12,7 +12,7 @@ const defaultRoute = {
 };
 
 const defaultProvide = {
-  allUtilities: {
+  resolvedUtilities: {
     backgroundColor: {
       supportsNegativeValues: false,
       utilities: {

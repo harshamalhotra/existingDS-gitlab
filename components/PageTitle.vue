@@ -29,7 +29,7 @@
 import camelCase from "lodash/camelCase";
 
 const route = useRoute();
-const allUtilities = inject("allUtilities");
+const resolvedUtilities = inject("resolvedUtilities");
 
 const shouldShowTailwindDocsLink = computed(
   () => route.meta.tailwindDocsLink !== null,
@@ -42,6 +42,6 @@ const tailwindDocsLink = computed(() => {
 });
 
 const supportsNegativeValues = computed(
-  () => allUtilities[camelCase(route.name)].supportsNegativeValues,
+  () => resolvedUtilities[camelCase(route.name)]?.supportsNegativeValues,
 );
 </script>
