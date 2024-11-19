@@ -111,6 +111,17 @@ export default defineNuxtConfig({
           );
           const title = pageAsString.match(/title: "(.+)"/)?.[1];
           const utilities = resolvedUtilities[camelCase(pageName)]?.utilities;
+
+          if (!utilities) {
+            return [
+              {
+                id: pageName,
+                title,
+                path: page.route,
+              },
+            ];
+          }
+
           const selectors = Object.keys(utilities).map(
             (selectors) => selectors,
           );
@@ -119,10 +130,6 @@ export default defineNuxtConfig({
             (propertiesAndValues) => Object.keys(propertiesAndValues),
           );
           const uniqueProperties = [...new Set(properties)];
-
-          if (!title || !utilities) {
-            return [];
-          }
 
           return [
             {
