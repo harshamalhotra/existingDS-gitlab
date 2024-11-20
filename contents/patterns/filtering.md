@@ -28,14 +28,14 @@ For example, in a list of members where name, username, and join date are the da
 
 Consult the table below for general guidance on common filtering patterns in the product, and examples of which-components-to-use-when, based on data complexity:
 
-| Data complexity from 1 (low) to 5 (high) | Data examples | Components |
-|-----------------------|---------------|-----------------------------|
-| 1 | Member name, username | Search |
-| 2 | Member name, username, join date | Search, sorting |
-| 3 | Member name, username, join date, status | Tabs, search, sorting |
-| 4 | Member name, username, join date, status, role | Tabs, search, dropdowns, sorting |
-| 4 | List of projects or groups | Tabs, search, dropdowns, sorting |
-| 5 | Lists of issues or merge requests | Tabs, filter, sorting |
+| Data complexity from 1 (low) to 5 (high) | Data examples                                  | Components                       |
+| ---------------------------------------- | ---------------------------------------------- | -------------------------------- |
+| 1                                        | Member name, username                          | Search                           |
+| 2                                        | Member name, username, join date               | Search, sorting                  |
+| 3                                        | Member name, username, join date, status       | Tabs, search, sorting            |
+| 4                                        | Member name, username, join date, status, role | Tabs, search, dropdowns, sorting |
+| 4                                        | List of projects or groups                     | Tabs, search, dropdowns, sorting |
+| 5                                        | Lists of issues or merge requests              | Tabs, filter, sorting            |
 
 ## Placement guidelines
 
@@ -55,13 +55,9 @@ When the filters do not fit on the same line as search, all dropdowns are placed
 
 On small screens the filter and sort dropdowns get pushed below the search and are full width. The functionality of toggling the visibility of filters can be added to make the UI less overwhelming. Trigger the visibility of the filters using an icon button with a filter icon and the label _Filters_. If filters are applied and then hidden, the button reflects the number of filters applied in a badge to the right of the button label.
 
-<div class="row">
-  <div class="col col-50">
-    <figure-img alt="Two tabs with search below, followed by filter and sort dropdowns each in new line" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile.png"></figure-img>
-  </div>
-  <div class="col col-50">
-    <figure-img alt="Two tabs with search below and a filters button to the right of it" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile--filters-hidden.png"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-2">
+  <figure-img alt="Two tabs with search below, followed by filter and sort dropdowns each in new line" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile.png"></figure-img>
+  <figure-img alt="Two tabs with search below and a filters button to the right of it" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile--filters-hidden.png"></figure-img>
 </div>
 
 ### Adding multiple filters within a dropdown

@@ -19,19 +19,11 @@ Icons take inspiration from elements expressed as part of the GitLab brand.
 
 There are four icon collections used in the product (not including the Web IDE): UI, status, pipeline, file and folder icons. The design guidelines covered in the sections below only apply to UI and status icons.
 
-<div class="row">
-  <div class="col col-25">
-    <figure-img alt="Example UI icon" label="UI" src="/img/icons-collection-ui.svg"></figure-img>
-  </div>
-  <div class="col col-25">
-    <figure-img alt="Example status icon" label="Status" src="/img/icons-collection-status.svg"></figure-img>
-  </div>
-  <div class="col col-25">
-    <figure-img alt="Example pipeline icon" label="Pipeline" src="/img/icons-collection-pipeline.svg"></figure-img>
-  </div>
-  <div class="col col-25">
-    <figure-img alt="Example file icon" label="File and Folder" src="/img/icons-collection-file-folder.svg"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-4">
+  <figure-img alt="Example UI icon" label="UI" src="/img/icons-collection-ui.svg"></figure-img>
+  <figure-img alt="Example status icon" label="Status" src="/img/icons-collection-status.svg"></figure-img>
+  <figure-img alt="Example pipeline icon" label="Pipeline" src="/img/icons-collection-pipeline.svg"></figure-img>
+  <figure-img alt="Example file icon" label="File and Folder" src="/img/icons-collection-file-folder.svg"></figure-img>
 </div>
 
 ### UI icons
@@ -66,32 +58,20 @@ In nearly all instances icons should be used at the size they were created at an
 
 The **16px** icon size is the default, and most UI icons are created at this size. Icons using this **16×16 pixel** grid have a **14px** live area surrounded on all sides by **1px** for padding and optical sizing.
 
-<div class="row">
-  <div class="col col-33">
-    <figure-img alt="16px icon grid at 100% scale" label="16 pixel icon at 100%" src="/img/icons-100-scale.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Icon live area" label="Grid 14×14 pixel live area" src="/img/icons-grid-layout.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-padding.svg"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
+  <figure-img alt="16px icon grid at 100% scale" label="16 pixel icon at 100%" src="/img/icons-100-scale.svg"></figure-img>
+  <figure-img alt="Icon live area" label="Grid 14×14 pixel live area" src="/img/icons-grid-layout.svg"></figure-img>
+  <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-padding.svg"></figure-img>
 </div>
 
 ### 12 pixel grid
 
 The **12px** grid is used for all status icons, and some UI icons. Icons using this **12×12 pixel** grid have a **10px** live area surrounded on all sides by **1px** for padding and optical sizing.
 
-<div class="row">
-  <div class="col col-33">
-    <figure-img alt="12px icon grid at 100% scale" label="12 pixel icon at 100%" src="/img/icons-12-100-scale.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Icon live area" label="Grid 10×10 pixel live area" src="/img/icons-12-grid-layout.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-12-padding.svg"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
+  <figure-img alt="12px icon grid at 100% scale" label="12 pixel icon at 100%" src="/img/icons-12-100-scale.svg"></figure-img>
+  <figure-img alt="Icon live area" label="Grid 10×10 pixel live area" src="/img/icons-12-grid-layout.svg"></figure-img>
+  <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-12-padding.svg"></figure-img>
 </div>
 
 ## Keylines
@@ -132,16 +112,10 @@ Since icons use a **1.5px** stroke, there are a few alignment considerations:
 - Outside edges of closed shapes should align to whole pixels.
 - A line should have at least one edge aligned to a whole pixel. This won't always be possible when two lines comprise an element that has to be centered within the grid or to other elements, but the line end points should always terminate on a whole pixel.
 
-<div class="row">
-  <div class="col col-33">
-    <figure-img alt="Icon stroke settings" label="1.5px stroke weight and rounded stroke caps" src="/img/icons-strokes.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Line with rounded join" label="Line with round join" src="/img/icons-line-round-join.svg"></figure-img>
-  </div>
-  <div class="col col-33">
-    <figure-img alt="Line with mitar (square) join" label="Line with mitar join" src="/img/icons-line-miter.svg"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
+  <figure-img alt="Icon stroke settings" label="1.5px stroke weight and rounded stroke caps" src="/img/icons-strokes.svg"></figure-img>
+  <figure-img alt="Line with rounded join" label="Line with round join" src="/img/icons-line-round-join.svg"></figure-img>
+  <figure-img alt="Line with mitar (square) join" label="Line with mitar join" src="/img/icons-line-miter.svg"></figure-img>
 </div>
 
 ## Fills
@@ -163,19 +137,11 @@ Clarity should always override consistency, and the guides are flexible when nec
 
 <figure-img alt="Icons with 0px, 1px, 2px, 4px, 6px, and 100% border radius options" label="Border radius options, 2px is default" src="/img/icons-border-radius.svg"></figure-img>
 
-<div class="row">
-  <div class="col col-50">
-    <figure-img alt="Icon with 2px and 4px border radius" label="A combination of 2px and 4px border radius helps the elements fit together better." src="/img/icons-border-radius-example.svg"></figure-img>
-  </div>
-  <div class="col col-50">
-    <figure-img alt="Icon with 0px and 4px border radius" label="A combination of 0px and 4px best represents the subject matter." src="/img/icons-border-radius-alternates.svg"></figure-img>
-  </div>
-  <div class="col col-50">
-    <figure-img alt="Icon with 1px border radius" label="A 1px border radius works well for angles that are less than 90º." src="/img/icons-border-radius-angle.svg"></figure-img>
-  </div>
-  <div class="col col-50">
-    <figure-img alt="Icon with no border radius" label="This icon does not use a border radius because in doing so features critical to the meaning would be lost." src="/img/icons-border-radius-none.svg"></figure-img>
-  </div>
+<div class="gl-grid gl-gap-5 lg:gl-grid-cols-2">
+  <figure-img alt="Icon with 2px and 4px border radius" label="A combination of 2px and 4px border radius helps the elements fit together better." src="/img/icons-border-radius-example.svg"></figure-img>
+  <figure-img alt="Icon with 0px and 4px border radius" label="A combination of 0px and 4px best represents the subject matter." src="/img/icons-border-radius-alternates.svg"></figure-img>
+  <figure-img alt="Icon with 1px border radius" label="A 1px border radius works well for angles that are less than 90º." src="/img/icons-border-radius-angle.svg"></figure-img>
+  <figure-img alt="Icon with no border radius" label="This icon does not use a border radius because in doing so features critical to the meaning would be lost." src="/img/icons-border-radius-none.svg"></figure-img>
 </div>
 
 ## Angles
