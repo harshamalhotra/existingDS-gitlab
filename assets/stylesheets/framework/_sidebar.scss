@@ -26,12 +26,12 @@
   // Add an icon after links to external pages
   a[target='_blank']:after {
     content: url(~assets/images/icons/external-link.svg);
-    margin: 0 $gl-spacing-2 0 $gl-spacing-2;
+    margin: 0 $gl-spacing-scale-2 0 $gl-spacing-scale-2;
   }
 }
 
 .sidebar__header {
-  padding: $gl-spacing-3;
+  padding: $gl-spacing-scale-3;
 
   @include media-sm-down {
     display: none;
@@ -55,17 +55,17 @@
       border-top: 1px solid var(--gl-border-color-default);
       content: '';
       display: block;
-      margin: $gl-spacing-3;
+      margin: $gl-spacing-scale-3;
     }
   }
 }
 
 .sidebar__nav-anchor,
 .sidebar__nav-toggle {
-  border-radius: $border-radius;
+  border-radius: $gl-border-radius-base;
   color: var(--gl-action-neutral-foreground-color-default);
   display: block;
-  padding: $gl-spacing-3 $gl-spacing-3 $gl-spacing-3 $gl-spacing-4;
+  padding: $gl-spacing-scale-3 $gl-spacing-scale-3 $gl-spacing-scale-3 $gl-spacing-scale-4;
 
   &:hover,
   &:focus {
@@ -80,14 +80,14 @@
 .sidebar__nav--depth-1 {
   .sidebar__nav-anchor,
   .sidebar__nav-toggle {
-    padding-left: $gl-spacing-6;
+    padding-left: $gl-spacing-scale-6;
   }
 }
 
 .sidebar__nav--depth-2 {
   .sidebar__nav-anchor,
   .sidebar__nav-toggle {
-    padding-left: $gl-spacing-6 + $gl-spacing-5;
+    padding-left: $gl-spacing-scale-6 + $gl-spacing-scale-5;
   }
 }
 
@@ -118,7 +118,7 @@
 .sidebar__nav-toggle-inner {
   align-items: center;
   display: flex;
-  gap: $gl-spacing-2;
+  gap: $gl-spacing-scale-2;
 
   > span {
     flex-grow: 1;
@@ -148,7 +148,7 @@
     &::before {
       content: '';
       background-color: $purple-500;
-      border-radius: $border-radius;
+      border-radius: $gl-border-radius-base;
       display: block;
       position: absolute;
       top: 3px;

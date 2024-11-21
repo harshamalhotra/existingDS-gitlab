@@ -1,5 +1,5 @@
 @mixin type-scale($scale, $line-height, $margin-bottom: 0, $margin-top: 24px) {
-  font-size: $base-font-size + ($scale * 2);
+  font-size: $gl-font-size + ($scale * 2);
   line-height: $line-height * 4px;
   margin-bottom: $margin-bottom * 8px;
   margin-top: $margin-top;
@@ -42,10 +42,10 @@ button {
 code {
   color: var(--gl-text-color-default);
   background-color: var(--gl-background-color-strong);
-  border-radius: $border-radius;
+  border-radius: $gl-border-radius-base;
   font-family: $gl-monospace-font;
   font-size: 90%;
-  padding: $gl-spacing-1 $gl-spacing-2;
+  padding: $gl-spacing-scale-1 $gl-spacing-scale-2;
   white-space: pre-wrap;
   word-wrap: normal;
   word-break: keep-all;
@@ -55,7 +55,7 @@ pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
   background-color: var(--gl-background-color-subtle) !important;
   border: 1px solid var(--gl-border-color-default);
-  border-radius: $border-radius;
+  border-radius: $gl-border-radius-base;
   text-shadow: none !important;
 
   code {
@@ -97,7 +97,7 @@ pre[class*="language-"],
   }
 
   > ul, > ol {
-    padding-left: $gl-spacing-6;
+    padding-left: $gl-spacing-scale-6;
 
     ul, ol { margin-bottom: 0; }
   }
@@ -107,7 +107,7 @@ pre[class*="language-"],
     color: var(--gl-text-color-subtle);
     margin-left: 0;
     margin-right: 0;
-    padding-left: $gl-spacing-5;
+    padding-left: $gl-spacing-scale-5;
 
     > p  { @include type-scale(0, 6, 0, 0) }
   }

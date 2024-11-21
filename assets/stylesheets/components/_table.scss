@@ -17,7 +17,7 @@ table:not(.pika-table):not(.gl-table) {
   th,
   td {
     border: 1px solid var(--gl-border-color-default);
-    padding: $gl-spacing-3;
+    padding: $gl-spacing-scale-3;
     font-weight: $gl-font-weight-normal;
 
     &.header {
