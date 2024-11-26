@@ -10,6 +10,7 @@ related:
 
 ## Goals
 
+An empty state serves as a placeholder when there are no results or information to be displayed.
 The primary goals of an empty state region should be to:
 
 - Increase feature adoption.
@@ -35,35 +36,55 @@ All empty state solutions should include usage analytics so you and your team ca
 - Use a [text link](https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/regions-empty-state--custom-actions) instead of a button to direct a user to things like documentation and resources that support the main action.
 - Avoid duplicating content elsewhere in the page that's already present in the empty state heading and description.
 
-## Use cases
+## Content guidelines
+
+Generally, an empty state message consists of a:
+
+- **Title** that describes the problem. Try to limit to 5 words (not counting articles or prepositions). Don't end with a period.
+- **Description** that explains in full sentences what actions the user can take.
+- (Optional) **Button** that serves as a call to action (CTA) and directs the user to take an action.
+
+An empty state message should:
+
+- **Be simple and clear:** Use concise and easily understandable language. Also consult the [word list](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html).
+- **Provide guidance and motivation:** Offer clear instructions on how to proceed or resolve the empty state. Encourage users to take action with motivating language.
+- **Align with the brand voice and tone:** Keep the tone friendly, supportive, and empathetic.
+- **Use visual elements effectively:** Complement the text with appropriate visual elements (for example, [illustrations](../product-foundations/illustration/)). Ensure visual elements enhance the message and don't distract from it.
+
+Furthermore, there are different types of empty states with additional guidelines.
 
 ### Blank content
 
-A `Blank content` empty state serves as a placeholder when no content exists on a page. It should contain a call to action that triggers the creation of content.
-
-#### Specifications
+A `Blank content` empty state:
 
 - Appears when no content exists within a configured feature.
 - Contains a method for creating content.
-- Hides unnecessary UI elements unless lazy loading is populating content or there's content on the page that’s hidden but accessible through the UI (for example, archived content).
+- Hides unnecessary UI elements, unless there's content on the page that's hidden, but accessible through the UI (for example, archived content).
 
 #### Content
 
-The title phrase should be a call to action that starts with an active verb. No period at the end of the phrase.
+- **Title:** A CTA that starts with an active verb.
+- **Description:** A sentence that starts with an active verb and encourages the user to use a feature.
+- (Optional) **Button:** One or more buttons that align with the title's verb and empty state's purpose.
 
-Examples:
+#### Examples
 
-- `Monitor vulnerabilities in your project`
-- `Get started with monitoring`
+For Issue Analytics:
+
+> **Analyze issues in your project** (or **Get started with issue analytics**)
+>
+> Create issues for projects in your group to track and see metrics for them.
+>
+> \[Create issue\]
 
 ### Configuration required
 
-A `Configuration required` empty state serves as a placeholder for features that need to be configured first, before having the ability to create content.
+A `Configuration required` empty state appears for features that need to be configured before being used.
+The empty state message includes a:
 
-#### Specifications
-
-- Contains a primary action for configuring a feature.
-- Contains a secondary action for inviting a member to configure a feature. The secondary action should read as `Invite member to configure`, which should trigger the invite modal.
+- Primary action for configuring a feature.
+- Secondary action for inviting a member to configure a feature.
+  The secondary action should read as `Invite member to configure` and trigger the invite modal.
 
 Use the following implementation to trigger the invite modal:
 
@@ -72,40 +93,41 @@ Use the following implementation to trigger the invite modal:
 
 #### Content
 
-The title phrase should be a call to action that starts with an active verb. No period at the end of the phrase.
+- **Title:** A CTA that starts with an active verb.
+- **Description:** A CTA sentence that invites the user to start the configuration for a feature.
+- (Optional) **Button:** A primary action to start configuration, and optionally a secondary action to delegate configuration to another team member.
 
-Examples:
+#### Example
 
-- `Monitor vulnerabilities in your project`
-- `Get started with monitoring`
+> **Get started with product analytics**
+>
+> Configure product analytics to track events within your project applications.
+>
+> \[Configure\]
 
 ### Higher tier feature
 
-A `Higher tier feature` empty state serves as a placeholder when a certain feature isn‘t available under the current tier. [The Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section) is the DRI for `Higher tier feature` empty state regions and should be involved in implementation of solutions for this type of empty state region.
-
-#### Specifications
-
-- Specifications and actions should be determined by [the Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section). If implementing a solution for this empty state region, collaborate with the Growth Product Designer and Product Manager.
+A `Higher tier feature` empty state serves as a placeholder when a certain feature isn‘t available under the current tier.
+[The Growth team](https://about.gitlab.com/handbook/product/categories/#growth-section) is the DRI for `Higher tier feature` empty state regions. If you have to implement a solution for this empty state region, collaborate with the Growth Product Designer and Product Manager.
 
 <todo>Add specifications for Higher Tier empty state region.</todo>
 
-<todo>Add content for Higher Tier empty state region.</todo>
+#### Content
+
+- **Title:** `Feature not available`
+- **Description:** `This feature is available only on GitLab <tier>.`
 
 ### Empty search results
 
-An `Empty search results` empty state serves as a placeholder when there are no search results after doing a search or filtering results.
-
-#### Specifications
-
-- Appears when no results are found after a search or filter.
-- Should describe that a search or filter came back with no results.
-- Does not contain a CTA.
+An `Empty search results` empty state appears when there are no search results after doing a search or filtering results.
+This empty state does not contain a CTA.
 
 #### Content
 
-- When using the [filter component](/components/filter) or [search component](/components/search), the text should always be exactly:
-  - For the title, `No results found`.
-  - For the text underneath, `Edit your criteria and try again.`.
+When using the [filter component](/components/filter) or [search component](/components/search), use exactly:
+
+- **Title:** `No results found`
+- **Description:** `Edit your search and try again.`
 
 ## Fallback
 
