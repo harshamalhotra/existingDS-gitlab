@@ -744,10 +744,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@gitlab/eslint-plugin@20.7.0":
-  version "20.7.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/eslint-plugin/-/eslint-plugin-20.7.0.tgz#fff5c0dde0e7f5143c32533672565a9c572ad5f6"
-  integrity sha512-KDViCLWuIb2Kw5/xS4lf67zNINXsAu8YmQMx2G6NDUTFWnGMTA7v1LdCtNkCpnbQZ77nuX61b/EmzeEozpdYhg==
+"@gitlab/eslint-plugin@20.7.1":
+  version "20.7.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/eslint-plugin/-/eslint-plugin-20.7.1.tgz#89dfb95bf6ffec50bd7d9bace42622634a529cf0"
+  integrity sha512-BSB5SC86ITaauEab0HMWLTiaA1QgFlwz5keoO8YQ0JSjPaKusVOGDYDoxQHtZVuRBVfYQi0Cwf5dSWiHJWAeEw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^7.14.1"
     eslint-config-airbnb-base "^15.0.0"
