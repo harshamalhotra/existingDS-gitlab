@@ -100,7 +100,7 @@ The `<select>` element creates a dropdown of options. See the dropdown component
 
 ### Layout
 
-By default a form flows top to bottom in a single column. Inline inputs in a vertical form are only acceptable when they’re related, for example, name and surname. In a tabular layout, a form can use both columns and rows.
+By default a form flows top to bottom in a single, left-aligned column. Inline inputs in a vertical form are only acceptable when they’re related, for example, name and surname. In a tabular layout, a form can use both columns and rows.
 
 In rare cases, a `<label>` can be placed to the left of the input. For example, in a [filter](/components/filter) section or a [date picker](/components/date-picker).
 
