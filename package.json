@@ -61,7 +61,7 @@
     "markdownlint-cli2": "^0.15.0",
     "prettier": "3.4.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "sass": "^1.81.0",
+    "sass": "^1.81.1",
     "sass-loader": "^10.5.2",
     "start-server-and-test": "^2.0.8",
     "unist-util-visit": "^2.0.3",
