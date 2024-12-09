@@ -1409,17 +1409,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.122.0.tgz#f3d21ff18d60510c4b6983a211dfbc39304a517b"
   integrity sha512-2ED6E6aYTpzOv4Tz2zFtPnBP/ZTSR1mNebHYkMfm+kx9u61ILwfVJjaQ3vu73BviToAs9+1bs7RIe3iAtzCB2g==
 
-"@gitlab/ui@103.7.1":
-  version "103.7.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-103.7.1.tgz#7df2ab802aad48a946100d73d3fc9fa1733bb9bb"
-  integrity sha512-ThpGdWWLdWN0j2q3RhQ63625KbeK2BXinhk3iQyy//z08sxZJYXWwcdFF88TImPtBVV7p5e/01Mb6WhqI/H8wg==
+"@gitlab/ui@105.0.1":
+  version "105.0.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-105.0.1.tgz#d5eb9d38539f506d1ed8f397d37d3901210683fd"
+  integrity sha512-hho0fIi8S6mRdJY5KASLwWeeqmJ0vZzRRJetjR9rKi4bKIfK5LAkrl41TgFE/Ou0Non913efpV8Xkpf4CO7zWA==
   dependencies:
     "@floating-ui/dom" "1.4.3"
     echarts "^5.3.2"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
-    marked "^12.0.0"
-    marked-bidi "^1.0.8"
     popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
@@ -9146,16 +9144,6 @@ markdownlint@0.36.1:
   dependencies:
     markdown-it "14.1.0"
     markdownlint-micromark "0.1.12"
-
-marked-bidi@^1.0.8:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/marked-bidi/-/marked-bidi-1.0.9.tgz#16ca7d87f9acc87f8ce1ec34b34c1c20e825720b"
-  integrity sha512-nVFPysVKno/KBRF2vPurez/nmN3sdhB+Sm0qBxJgqPkk0ltYUs96SNswE4YcGUcCq8Smk0mHmURM/y15zKt7eA==
-
-marked@^12.0.0:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.2.tgz#b31578fe608b599944c69807b00f18edab84647e"
-  integrity sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==
 
 marked@^13.0.0:
   version "13.0.1"
