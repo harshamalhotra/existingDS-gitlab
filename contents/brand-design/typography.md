@@ -8,19 +8,21 @@ name: Typography
 
 ### GitLab Sans usage
 
-Refer to the guidelines below when working with GitLab Sans:
+In general, the following guidelines apply to all text:
 
-- Different sizes and weights can be used to establish layout hierarchy.
 - Keep the font size consistent within each block of copy.
 - Left-align all copy. Never force-justify, center-align, or right-align, unless the written language dictates otherwise.
 - Default to sentence case, and refrain from using all-caps.
 - Keep text solid-filled, with the exception of motion graphics.
 - Default to white or Charcoal for copy; refer to the color guidelines for exceptions.
-- Headlines use GitLab Sans Bold with 105% leading and -45 tracking (-4.5% in Figma).
-- Subheaders and intro/outro paragraphs use GitLab Sans Regular with 110% leading, -20 tracking (-2% in Figma), and optical kerning.
-- Body copy uses GitLab Sans Regular with 135% leading, 0 tracking, and auto kerning.
-- Call-to-actions and buttons use GitLab Sans SemiBold.
 - If GitLab Sans is not available (such as Google applications), use Inter instead.
+
+Refer to the guidelines illustrated below to add hierarchy to your messaging:
+
+- **Headlines** use GitLab Sans Bold with 105% leading and -45 tracking (-4.5% in Figma).
+- **Subheaders and intro/outro paragraphs** use GitLab Sans Regular with 110% leading, -20 tracking (-2% in Figma), and optical kerning.
+- **Body copy** uses GitLab Sans Regular with 135% leading, 0 tracking, and auto kerning.
+- **Call-to-actions and buttons** use GitLab Sans SemiBold.
 
 <figure-img alt="Typography samples" label="GitLab Sans typography samples" src="/img/brand/typography.svg"></figure-img>
 
