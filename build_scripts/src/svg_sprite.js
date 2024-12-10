@@ -6,8 +6,11 @@ const SVGSpriter = require('svg-sprite');
 const { getFilesizeInBytes } = require('./utils');
 
 // eslint-disable-next-line max-params
-const createIconSprite = (BASE_PATH, destPath, globPattern, targetFile) => {
+const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additionalGlobPattern) => {
   const spriteFiles = glob.sync(globPattern);
+
+  if (additionalGlobPattern)
+    spriteFiles.push(...glob.sync(additionalGlobPattern))
 
   const spriter = new SVGSpriter({
     dest: destPath,
@@ -104,4 +107,4 @@ const createIconSprite = (BASE_PATH, destPath, globPattern, targetFile) => {
   });
 };
 
-module.exports = { createIconSprite };
+module.exports = { createSvgSprite };
