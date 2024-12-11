@@ -834,17 +834,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/fonts/-/fonts-1.3.0.tgz#df89c1bb6714e4a8a5d3272568aa4de7fb337267"
   integrity sha512-DoMUIN3DqjEn7wvcxBg/b7Ite5fTdF5EmuOZoBRo2j0UBGweDXmNBi+9HrTZs4cBU660dOxcf1hATFcG3npbPg==
 
-"@gitlab/ui@103.1.0":
-  version "103.1.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-103.1.0.tgz#7b446e72873ed9608211482b1f80419a0def3d4c"
-  integrity sha512-KpmJHY1+armClHecG1FoLrERpYgDK4GesbB82HsYEF1EydSZeyQPrrQEYdY83rqF1POYXBHOEzugmteOA5nUvg==
+"@gitlab/ui@105.1.1":
+  version "105.1.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-105.1.1.tgz#deb27dbe0a00bbdf88300848d01e39b7814524e0"
+  integrity sha512-5AOVdqy3NL/LIUCEnsgkpbDjYcZJbYWUOnu9qi19wSFzwuvZN+Pb94firIkB/8dwmxTwPM7RDg3HU0msUTBt7Q==
   dependencies:
     "@floating-ui/dom" "1.4.3"
     echarts "^5.3.2"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
-    marked "^12.0.0"
-    marked-bidi "^1.0.8"
     popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
@@ -5127,16 +5125,6 @@ make-dir@^3.1.0:
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
   dependencies:
     semver "^6.0.0"
-
-marked-bidi@^1.0.8:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/marked-bidi/-/marked-bidi-1.0.11.tgz#affe201eb03934e23b044f0bed3aff10db2ba6bf"
-  integrity sha512-BhyTTQsBoscpUzdg93JTfgGvDI/JfPfDIm9ocNNpZUxNbpYuyWwFnGVaYWUUY0cgyUs7QK8oWfK6BC7oynFMJQ==
-
-marked@^12.0.0:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.2.tgz#b31578fe608b599944c69807b00f18edab84647e"
-  integrity sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==
 
 mdn-data@2.0.28:
   version "2.0.28"
