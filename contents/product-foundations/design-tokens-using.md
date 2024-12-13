@@ -8,13 +8,31 @@ Using design tokens as Figma variables is moving to open-beta following a succes
 
 It's easy to opt in to the beta.
 
-1. Add [Beta:&nbsp;Design&nbsp;tokens&nbsp;library](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?node-id=2194-34&t=S8Qzj2r4h5sg8dIK-0) to your files. ([How do I add a library to my file?](https://help.figma.com/hc/en-us/articles/1500008731201-Enable-or-disable-a-library-in-a-design-file))
-1. Use colors as Figma variables instead of styles from **📙&nbsp;Component&nbsp;library**. ([How do I apply a Figma variable?](https://help.figma.com/hc/en-us/articles/15343107263511-Apply-variables-to-designs))
+1. Add [Beta: Design tokens library](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?node-id=2194-34&t=S8Qzj2r4h5sg8dIK-0) to your files. ([How do I add a library to my file?](https://help.figma.com/hc/en-us/articles/1500008731201-Enable-or-disable-a-library-in-a-design-file))
+1. Use colors as Figma variables instead of styles from **📙&nbsp;Component library**. ([How do I apply a Figma variable?](https://help.figma.com/hc/en-us/articles/15343107263511-Apply-variables-to-designs))
 1. Let us know how you get on in the [feedback issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1870). No problem too big, no feedback too small.
 
-In the future, color styles will be removed from the component library and these Figma variables will be updated to support dark mode.
-
 We've scoped these Figma variables by limiting the properties they can be applied to. This helps cut out the guess work when designing and supports recommended usage. For example, `text.color.default` can only be applied as a fill to a text element and not to a stroke or shape layer.
+
+### Work with dark mode
+
+To enable switching between light and dark modes in Figma, use **Beta: Design tokens library** with **📙&nbsp;Component library**. These libraries use Figma variables that adapt to the selected mode and sync directly with our design tokens in code.
+
+Components in **📙&nbsp;Component library** are built using these variables from **Beta: Design tokens library**. Unlike color styles from  **📙&nbsp;Component library**, when you switch mode, variables automatically update to their scheme-specific values.
+
+By default, Figma uses **Auto** mode which defaults to light theme. To change the mode, select **Apply variable mode** in either:
+
+- the Page sidebar when nothing is selected
+- the Appearance sidebar when an object is selected
+
+<div class="gl-grid gl-gap-12 lg:gl-grid-cols-2">
+  <figure-img alt="Screenshot of Figma user interface sidebar cropped to the page section" label="'Apply variable mode' button in the Page sidebar" src="/img/design-tokens-figma-page-mode-select.png"></figure-img>
+  <figure-img alt="Screenshot of Figma user interface sidebar cropped to the appearance section" label="'Apply variable mode' button in the frame appearance section" src="/img/design-tokens-figma-frame-appearance-mode-select.png"></figure-img>
+</div>
+
+You should set the mode at the page or parent frame level. Elements with the **Auto** mode inherit the mode from their parent, which allows styles to cascade. In the GitLab product, the mode applies to the entire user interface.
+
+If you design outside the design system, use color styles from **📙&nbsp;Component library**. For example, use `purple-400`. These colors remain static across modes, so document any special behaviors during [handoff](https://docs.gitlab.com/ee/development/contributing/design.html#handoff).
 
 ## In code
 
