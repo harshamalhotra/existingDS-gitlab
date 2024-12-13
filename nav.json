@@ -65,8 +65,25 @@
             "path": "typography"
           },
           {
-            "title": "Marketing illustrations",
-            "path": "marketing-illustrations"
+            "title": "Visual design",
+            "items": [
+              {
+                "title": "Core elements",
+                "path": "visual-design-core-elements"
+              },
+              {
+                "title": "Icons",
+                "path": "visual-design-brand-icons"
+              },
+              {
+                "title": "Illustrations",
+                "path": "visual-design-brand-illustrations"
+              },
+              {
+                "title": "Diagrams",
+                "path": "visual-design-diagrams-infographics"
+              }
+            ]
           },
           {
             "title": "Motion",
