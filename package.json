@@ -63,7 +63,7 @@
     "prettier-plugin-tailwindcss": "^0.6.9",
     "sass": "^1.82.0",
     "sass-loader": "^10.5.2",
-    "start-server-and-test": "^2.0.8",
+    "start-server-and-test": "^2.0.9",
     "unist-util-visit": "^2.0.3",
     "vue-template-compiler": "2.7.16"
   },
