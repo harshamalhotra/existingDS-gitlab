@@ -4,21 +4,18 @@ name: Using design tokens
 
 ## In design
 
-Using design tokens as Figma variables is moving to open-beta following a successful invite-only pilot.
+Using design tokens as Figma variables is now GA.
 
-It's easy to opt in to the beta.
-
-1. Add [Beta: Design tokens library](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?node-id=2194-34&t=S8Qzj2r4h5sg8dIK-0) to your files. ([How do I add a library to my file?](https://help.figma.com/hc/en-us/articles/1500008731201-Enable-or-disable-a-library-in-a-design-file))
-1. Use colors as Figma variables instead of styles from **📙&nbsp;Component library**. ([How do I apply a Figma variable?](https://help.figma.com/hc/en-us/articles/15343107263511-Apply-variables-to-designs))
+1. Use colors from [Design tokens](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Design-tokens?node-id=2194-34&t=S8Qzj2r4h5sg8dIK-0) as Figma variables instead of styles from **📙&nbsp;Component library**. ([How do I apply a Figma variable?](https://help.figma.com/hc/en-us/articles/15343107263511-Apply-variables-to-designs))
 1. Let us know how you get on in the [feedback issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1870). No problem too big, no feedback too small.
 
 We've scoped these Figma variables by limiting the properties they can be applied to. This helps cut out the guess work when designing and supports recommended usage. For example, `text.color.default` can only be applied as a fill to a text element and not to a stroke or shape layer.
 
 ### Work with dark mode
 
-To enable switching between light and dark modes in Figma, use **Beta: Design tokens library** with **📙&nbsp;Component library**. These libraries use Figma variables that adapt to the selected mode and sync directly with our design tokens in code.
+To enable switching between light and dark modes in Figma, use **Design tokens library** with **📙&nbsp;Component library**. These libraries use Figma variables that adapt to the selected mode and sync directly with our design tokens in code.
 
-Components in **📙&nbsp;Component library** are built using these variables from **Beta: Design tokens library**. Unlike color styles from  **📙&nbsp;Component library**, when you switch mode, variables automatically update to their scheme-specific values.
+Components in **📙&nbsp;Component library** are built using these variables from **Design tokens library**. Unlike color styles from  **📙&nbsp;Component library**, when you switch mode, variables automatically update to their scheme-specific values.
 
 By default, Figma uses **Auto** mode which defaults to light theme. To change the mode, select **Apply variable mode** in either:
 
