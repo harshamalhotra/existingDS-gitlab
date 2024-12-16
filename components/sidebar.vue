@@ -2,13 +2,13 @@
 import { mapState } from 'vuex';
 import { NavTree } from '../helpers/navigation/nav_tree';
 import nav from '../nav.json';
-import Logo from './logo.vue';
+import Navbar from './navbar.vue';
 import MenuItem from './menu_item.vue';
 import Search from './search/search_box.vue';
 
 export default {
   components: {
-    Logo,
+    Navbar,
     MenuItem,
     Search,
   },
@@ -39,9 +39,7 @@ export default {
 
 <template>
   <aside :class="{ 'sidebar--open': sidebarOpen }" class="sidebar">
-    <div class="sidebar__header">
-      <logo />
-    </div>
+    <navbar class="gl-hidden md:gl-flex" />
     <div class="gl-px-4 gl-pb-3">
       <client-only>
         <search />
