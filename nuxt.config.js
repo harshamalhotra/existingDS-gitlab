@@ -153,6 +153,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/expose_env_vars.js' },
+    { src: '~/plugins/load_dark_mode.js' },
     { src: '~/plugins/register_global_components.js' },
     GITLAB_ANALYTICS_ID ? { src: '~/plugins/analytics.js', mode: 'client' } : false,
   ].filter(Boolean),

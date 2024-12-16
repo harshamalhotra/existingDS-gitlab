@@ -24,7 +24,9 @@ export default {
 <template>
   <div class="page">
     <a href="#skipTarget" class="skip-link">Skip to main content</a>
-    <navbar />
+    <navbar
+      class="gl-border-b gl-fixed gl-left-0 gl-right-0 gl-top-0 gl-z-200 gl-bg-subtle gl-shadow-sm md:gl-hidden"
+    />
     <sidebar />
     <main class="main" :class="{ 'sidebar--open': sidebarOpen }">
       <nuxt />
