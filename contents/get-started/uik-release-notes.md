@@ -2,6 +2,46 @@
 name: Release notes
 ---
 
+## 17.7
+
+<small>Published 2024-12-17</small>
+
+Dark mode is now fully supported in the component library. All components have been updated to support both light and dark themes through color tokens, ensuring seamless switching between modes while maintaining accessibility standards. Create consistent dark theme experiences using system components and design tokens.
+
+### Changes
+
+**[Component library](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ)**
+
+- Updates red 300 style hex value to match red 300 design token constant.
+- Changes color styles to be linked to constant design tokens.
+- Update color style names to match constants in Figma.
+- Refactor Color page chips to show all transparencies.
+- Reset [**❖&nbsp;Popover**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-131&node-type=canvas&t=syEEokKptoVKbvfR-11) and [**❖&nbsp;Accordion**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-0&node-type=canvas&t=syEEokKptoVKbvfR-11) component styles to default.
+
+**[Design tokens](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?m=auto)**
+
+- The design tokens library is now out of beta and will be available by default for all new files created under the R&D workspace. Learn more in [using design tokens in design](https://design.gitlab.com/product-foundations/design-tokens-using#in-design).
+
+**[Product illustrations (Figma)](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA)**
+
+- Illustrations now use design tokens to change color mode.
+- Changes a stroke width to a variable to support dark theme.
+
+### Fixes
+
+**[Component library](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ)**
+
+- Fixes neutral 50 and 100 chips in the color ramp that were using incorrect styles.
+- Fixes [**❖&nbsp;Token**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-141&node-type=canvas&t=syEEokKptoVKbvfR-11) 'states' instances.
+
+### Deprecations
+
+**[Component library](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ)**
+
+- Deprecate constants no longer supported: `$t-indigo-gradient`, `$alpha-dark-64`.
+
+## 17.6
+
 <small>Published 2024-11-12</small>
 
 ### Additions
