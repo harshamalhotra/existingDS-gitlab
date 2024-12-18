@@ -13,7 +13,7 @@ User-provided feedback should always be aggregated with other data, such as user
 
 ## Guidelines
 
-Use `GlDuoUserFeedback` from [gitlab-ui](https://gitlab-org.gitlab.io/gitlab-ui/?path=/docs/experimental-duo-duo-user-feedback--docs) to collect feedback from the user on AI output.
+Use `GlDuoUserFeedback` from [Duo UI](https://gitlab-org.gitlab.io/duo-ui/?path=/docs/duo-user-feedback--docs) to collect feedback from the user on AI output.
 
 <figure-img alt="Modal with multiple checkboxes, a disclaimer about visibility, and a free text field." label="Example of the feedback form with generic content." src="/img/duo-feedback-modal.png"></figure-img>
 
