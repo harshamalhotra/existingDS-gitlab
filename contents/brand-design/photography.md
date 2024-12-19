@@ -39,3 +39,29 @@ Metaphorical photography allows us to convey intricate ideas in an abstract way.
 <figure-img alt="Overhead views of people collaborating around various devices and technology" label="Collaboration photo samples" src="/img/brand/stock-collaboration-samples.jpg"></figure-img>
 
 Collaboration is a common theme at GitLab, as it highlights our mission that _everyone can contribute_. Capture collaborative scenes top-down or over a subject’s shoulder to show their working environment in a positive light. Subjects should be using their devices in a natural, candid way to show GitLab and DevSecOps as a normal part of everyday life. This technique draws attention to the working environment, rather than to the individual.
+
+## Design applications
+
+### Graphic overlays
+
+In moderation, graphics and icons can overlay a photo to better merge the image into the design. Typically the graphic elements are used to convey movement and speed, and they complement the subject matter in the photo. Minimal detail should be used to achieve this effect.
+
+<figure-img alt="Two examples of photos with graphic overlays" label="Graphic overlay samples" src="/img/brand/photo-graphic-overlays.png"></figure-img>
+
+### Text overlays
+
+Occasionally, text can be used over photography when the image is suitable for legibility. Text should either be white or charcoal, whichever creates better contrast against the background. To ensure readability, it is best to place the text over the portion of the image that contains the least details. Ideally, this area would be blurred, contain minimal detail, and a single color behind the text. To reduce noise, do not pair graphic overlays with text on a single image.
+
+<figure-img alt="Two examples of photos with text overlays" label="Text overlay samples" src="/img/brand/photo-text-overlays.png"></figure-img>
+
+### Contained crop
+
+Images can be contained within shapes. This works well when complemented with the other graphical elements in the design. When containing a headshot in a shape, circles and curved containers from our core elements work best.
+
+<figure-img alt="Two examples of photos with contained crops" label="Contained crop samples" src="/img/brand/photo-contained-crop.png"></figure-img>
+
+### Masked crop
+
+Objects within an image can be masked to create an asymmetrical crop. Doing so can draw focus to certain elements of the photo to aid in storytelling. Either people or technology are subjects that work well to isolate from the background with this type of crop. This crop works well in larger spaces, such as an ebook or slide deck, because it allows the image to feel dynamic with the content and layout.
+
+<figure-img alt="Two examples of photos with masked crops" label="Masked crop samples" src="/img/brand/photo-masked-crop.png"></figure-img>
