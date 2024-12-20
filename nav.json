@@ -192,8 +192,12 @@
                 "path": "design-tokens-reading"
               },
               {
-                "title": "Using design tokens",
+                "title": "Design tokens usage guide",
                 "path": "design-tokens-using"
+              },
+              {
+                "title": "Design tokens technical implementation",
+                "path": "design-tokens-technical-implementation"
               },
               {
                 "title": "All design tokens",
