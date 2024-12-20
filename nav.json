@@ -188,15 +188,15 @@
                 "path": "design-tokens"
               },
               {
-                "title": "Reading design tokens",
+                "title": "Reading guide",
                 "path": "design-tokens-reading"
               },
               {
-                "title": "Design tokens usage guide",
+                "title": "Usage guide",
                 "path": "design-tokens-using"
               },
               {
-                "title": "Design tokens technical implementation",
+                "title": "Technical implementation",
                 "path": "design-tokens-technical-implementation"
               },
               {
