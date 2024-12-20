@@ -2,7 +2,29 @@
 name: Brand voice
 ---
 
-GitLab’s brand voice represents and expresses who we are as a brand. It is a core part of our brand identity, informed by our [brand personality](/brand-overview/introduction/#brand-personality). Our brand voice should come through clearly and consistently in everything we do, from our communications to our designs.
+GitLab’s brand voice represents and expresses who we are as a brand. It is a core part of our brand identity, informed by our brand personality. Our brand voice should come through clearly and consistently in everything we do, from our communications to our designs.
+
+We have three key personality traits that bring our brand to life in both our messaging and designs:
+
+<figure-img alt="Graphic of the three personality traits: visionary, empathetic, and intentional" label="GitLab brand personality traits" src="/img/brand/brand-personality.svg"></figure-img>
+
+### 1. Visionary
+
+We are confident, sophisticated technical experts and category creators. We are committed to enabling and empowering our customers and community. We embrace new challenges, energizing our customers to navigate their own journeys with confidence. We lead by example through continuous innovation and a bias for action. We believe we are most successful when everyone can contribute.
+
+*Example: We created the category.*
+
+### 2. Empathetic
+
+We are thoughtful, collaborative, and considerate, as well as approachable and inclusive on a global scale. We are dedicated to understanding and supporting the diverse needs of our team and customers and crafting solutions to help them succeed.
+
+*Example: The GitLab Community; our mission enabling everyone to contribute*
+
+### 3. Intentional
+
+We are purposeful, direct, and transparent. We communicate with clarity and focus to create a reliable experience for our customers.
+
+*Example: Our monthly release post*
 
 ## How our brand voice comes to life
 
