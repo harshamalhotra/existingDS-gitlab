@@ -13,18 +13,18 @@ Though we take inspiration from other companies, our principles are defined by l
 
 ## Sophisticated simplicity
 
-GitLab is a platform that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product: we make thoughtful choices that streamline complex workflows and functionality. These choices help the user stay focused on what matters most.
+GitLab is a product that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product: we make thoughtful choices that streamline complex workflows and functionality. These choices help the user stay focused on what matters most.
 
 There are three principles that help support us in this work.
 
-### Prioritize the platform
+### Prioritize the product
 
-Though the platform is made of many tools, everything should function seamlessly together. Design with this mindset to ensure that you are creating a more connected and coherent experience across the product.
+Though the product is made of many tools, everything should function seamlessly together. Design with this mindset to ensure that you are creating a more connected and coherent experience across the product.
 
 | Do                                                                                                                                              | Don't                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Optimize connections between capabilities. | Optimize for an isolated use of tools.  |
-| Use patterns consistently across the platform. | Use different patterns based on product area.  |
+| Use patterns consistently across the product. | Use different patterns based on product area.  |
 | Optimize the broader user journey, even when it crosses product groups, or when you're focused on a particular step of that journey. | Optimize for individual interactions or features.  |
 
 <!--
