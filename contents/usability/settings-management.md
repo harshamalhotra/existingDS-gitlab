@@ -1,6 +1,6 @@
 ---
 name: Settings management
-summary: Empower users to control platform behavior and appearance while maintaining system-wide consistency.
+summary: Empower users to control product behavior and appearance while maintaining system-wide consistency.
 related:
   - tooltip
   - popover
@@ -12,7 +12,7 @@ related:
   - /usability/progressive-disclosure
 ---
 
-Settings allow a user to control how the platform's features or capabilities should behave or appear. A user can modify these configurable options to adjust baseline functionality.
+Settings allow a user to control how the product's features or capabilities should behave or appear. A user can modify these configurable options to adjust baseline functionality.
 
 The Admin area, group, project, and user have dedicated areas to aggregate their settings, while [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html) dictate which settings a user can access.
 
@@ -75,7 +75,7 @@ Consider settings as features that introduce capabilities into GitLab, so consis
 
 - Group related options logically and position them where users would intuitively look for them.
 - Ensure consistent placement of settings across different GitLab areas (such as Admin area, group, project, and user settings).
-- Align the UI treatment with similar configuration options throughout the platform.
+- Align the UI treatment with similar configuration options throughout the product.
 - When you introduce new settings or capabilities, adhere to the [established knowledge structure](https://handbook.gitlab.com/handbook/product/product-principles/#principled-adherence-to-the-established-knowledge-architecture).
 
 ### Avoid direct links to docs
