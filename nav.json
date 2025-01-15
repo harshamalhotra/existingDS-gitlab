@@ -124,6 +124,10 @@
             "title": "Pajamas UI Kit (Figma)",
             "items": [
               {
+                "title": "Contributing",
+                "path": "uik-contributing"
+              },
+              {
                 "title": "File structure",
                 "path": "uik-file-structure"
               },
