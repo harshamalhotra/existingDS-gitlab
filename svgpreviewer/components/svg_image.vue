@@ -64,7 +64,7 @@ export default {
         <svg v-if="imageSprite" :class="[imageClass]">
           <use v-bind="{ 'xlink:href': spritePath }" />
         </svg>
-        <img v-else :class="[imageClass]" :src="imagePath" />
+        <img v-else :class="[imageClass]" :src="imagePath" :alt="imageName" />
       </div>
       <div class="image-name">
         {{ imageName }}
