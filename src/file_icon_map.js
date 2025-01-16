@@ -121,6 +121,7 @@ const fileExtensionIcons = {
   jsp: 'java',
   c: 'c',
   m: 'c',
+  matlab: 'matlab',
   h: 'h',
   cc: 'cpp',
   cpp: 'cpp',
