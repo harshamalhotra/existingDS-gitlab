@@ -13,6 +13,6 @@ The following guides aren’t a replacement for thorough manual audits or user t
 ### Guides
 
 - [Visual](/accessibility/visual)
-- Semantics and content (coming soon)
+- [Content and semantics](/accessibility/content-and-semantics)
 - [Keyboard-only](/accessibility/keyboard-only)
-- Screen readers (coming soon)
+- [Screen readers](/accessibility/screen-readers)

@@ -100,6 +100,10 @@ Objective-focused content that starts with the task first and then offers the so
 
 Use sentence case for field labels and column headings. Avoid title case.
 
+## Calls to action
+
+A call to action (CTA) should clearly communicate the result of that action. For more details, learn [how calls to action impact a screen reader user](/accessibility/screen-readers#calls-to-action) along with how to make them effective for all users.
+
 ## Other resources
 
 - Capitalization of [feature names](https://docs.gitlab.com/ee/development/documentation/styleguide/#feature-names) and [other terms](https://docs.gitlab.com/ee/development/documentation/styleguide/#other-terms)
