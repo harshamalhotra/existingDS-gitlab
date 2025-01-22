@@ -40,11 +40,19 @@ However, there are times when you might need to change how something behaves in 
 This is the preferred method.
 Use the [@apply method](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) to specify dark variants inline. For example, to override a subtle background in dark mode:
 
+```html
+<div class="gl-bg-subtle dark:gl-bg-neutral-900">
+  <!-- Content -->
+</div>
+```
+
 ```css
-.my-class {
-  @apply gl-bg-subtle dark:gl-bg-neutral-900
+.my-component-class {
+  @apply gl-bg-subtle dark:gl-bg-neutral-900;
 }
 ```
+
+See the [SCSS style guide](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) for additional guidance on utility classes in HTML directly (preferred) vs. component classes (when necessary).
 
 Always override a semantic token with specific color token:
 
