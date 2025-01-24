@@ -71,7 +71,9 @@ describe("SidebarMenu", () => {
 
     await flushPromises();
 
-    await user.click(screen.getAllByRole("button", { name: "Search ⌘ K" })[0]);
+    await user.click(
+      screen.getAllByRole("button", { name: "Search Ctrl K" })[0],
+    );
 
     expect(
       screen.getByRole("combobox", { name: "Search..." }),
