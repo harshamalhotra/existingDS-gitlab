@@ -12,9 +12,9 @@
 </template>
 
 <script setup>
-import { IS_MAC } from "./utils/environment";
+import { isMac } from "./utils/environment";
 
 const emit = defineEmits(["openSearch"]);
 
-const modifierKey = ref(IS_MAC ? "⌘" : "Ctrl");
+const modifierKey = ref(isMac() ? "⌘" : "Ctrl");
 </script>
