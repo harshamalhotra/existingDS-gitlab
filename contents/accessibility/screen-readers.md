@@ -19,7 +19,7 @@ While this guide doesn't cover specific screen reader usage (see [resources](#re
 
 ## Alternative text
 
-Alternative text provides crucial information about images to screen reader users by providing a concise description of the image or its purpose. It also serves as fallback content when an image fails to load. Every image requires an `alt` attribute, though its content depends on context.
+Alternative text, or alt text, provides crucial information about images to screen reader users by providing a concise description of the image or its purpose. It also serves as fallback content when an image fails to load. Every image requires an `alt` attribute, though its content depends on context. Refer to Deque's [List of Axe HTML 4.10 rules](https://dequeuniversity.com/rules/axe/html/4.10) to learn what elements require the use of `alt` in addition to `<img>`.
 
 ### Expected behavior
 
@@ -28,20 +28,20 @@ Alternative text provides crucial information about images to screen reader user
 - Functional images describe their purpose (for example, `alt="next page"` for a navigation arrow).
 - Complex images like charts have equivalent text content available.
 - Context-specific descriptions that avoid redundant phrases like "image of".
-- Inline SVGs are handled differently and use appropriate `title` and `desc` elements. Deque has a helpful post for [creating accessible SVGs](https://www.deque.com/blog/creating-accessible-svgs/).
+- Inline SVGs are handled differently and use appropriate `<title>` and `<desc>` elements. Deque has a helpful post for [creating accessible SVGs](https://www.deque.com/blog/creating-accessible-svgs/).
 
 ### Identifying problems
 
 - Missing `alt` attributes on an image:
-  - Add appropriate alt text to all `img` elements.
+  - Add appropriate alt text to all `<img>` elements.
   - Use empty alt (`alt=""`) for decorative images.
 - Redundant or uninformative alt text:
   - Remove phrases like "image of" or "picture of".
   - Focus on conveying the image's purpose or content within the surrounding context.
 - Lack of text alternatives for complex visuals:
   - Provide detailed descriptions in adjacent content.
-  - Use `figure` and `figcaption` for charts and graphs.
-  - Consider using accessible SVG with `title` and `desc` elements.
+  - Use `<figure>` and `<figcaption>` for charts and graphs.
+  - Consider using accessible SVG with `<title>` and `<desc>` elements.
 - Background images containing important content:
   - Move important images to foreground HTML elements or provide equivalent content in accessible text.
 - Incorrect use of empty alt text on meaningful images:
@@ -54,18 +54,18 @@ Screen reader users need clear guidance about form expectations and relationship
 ### Expected behavior
 
 - A form control has an associated label describing its purpose.
-- Related controls are grouped with appropriate `legend` elements (this may not be announced by every screen reader).
+- Related controls are grouped with appropriate `<legend>` elements (this may not be announced by every screen reader).
 - For a form control that needs a description or formatting example use `aria-describedby`.
 - A custom control matches native control behavior and announcement.
 
 ### Identifying problems
 
 - Form controls lack proper labels:
-  - Add `label` elements with meaningful text and ensure labels are properly associated using `for` attributes.
+  - Add `<label>` elements with meaningful text and ensure labels are properly associated using `for` attributes.
   - Use `aria-label` when visible labels aren't possible.
 - Missing group labels for related controls:
-  - Wrap related controls in `fieldset` elements.
-  - Add descriptive `legend` elements.
+  - Wrap related controls in `<fieldset>` elements.
+  - Add descriptive `<legend>` elements.
 - Unclear formatting requirements:
   - Add help text using `aria-describedby`.
 - Custom controls that don't match expected behavior:
@@ -84,7 +84,7 @@ Repeated CTAs often make sense for visual users when the layout associates each 
 - The content of a CTA clearly communicates the result of that action.
 - Repeated CTAs leverage `aria-label` or `aria-describedby` to add unique context.
 - CTAs are focusable, using button and anchor elements.
-- External links or actions that change the page layout are indicated or understood within the context so a user doesn't unexpectedly find themselves in a new place.
+- External links or actions that change the page layout are indicated or described within the context so a user doesn't unexpectedly find themselves in a new place.
 
 ### Identifying problems
 
@@ -104,7 +104,7 @@ Repeated CTAs often make sense for visual users when the layout associates each 
 
 ## Page structure
 
-Semantic markup (see [MDN definition](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)) and proper heading hierarchy provide crucial navigation paths for screen reader users. These structural elements allow users to understand content organization and quickly move to desired sections.
+Semantic markup (see [MDN definition of HTML semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)) and proper heading hierarchy provide crucial navigation paths for screen reader users. These structural elements allow users to understand content organization and quickly move to desired sections.
 
 ### Expected behavior
 
@@ -116,8 +116,8 @@ Semantic markup (see [MDN definition](https://developer.mozilla.org/en-US/docs/G
 ### Identifying problems
 
 - Non-semantic markup for structural elements:
-  - Replace `div` elements with appropriate semantic elements.
-  - Use HTML5 landmarks (`main`, `nav`, `aside`).
+  - Replace `<div>` elements with appropriate semantic elements.
+  - Use HTML5 landmarks (`<main>`, `<nav>`, `<aside>`).
   - Add ARIA roles when semantic elements aren't possible.
 - Missing ARIA roles on custom elements:
   - Add appropriate ARIA roles to clarify purpose.
