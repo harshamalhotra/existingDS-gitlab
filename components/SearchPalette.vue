@@ -105,6 +105,7 @@ import {
 } from "@headlessui/vue";
 import MiniSearch from "minisearch";
 import hotkeys from "hotkeys-js";
+import { isMac } from "./utils/environment";
 import SearchIcon from "../assets/icons/search.svg";
 import { MOCK_SEARCH_RESULTS_FOR_DEVELOPMENT } from "../constants";
 
@@ -176,7 +177,8 @@ const fetchSearchIndex = async () => {
 };
 
 const setupHotKeys = () => {
-  hotkeys("command+k,command+p", (event) => {
+  const keys = isMac() ? "command+k,command+p" : "ctrl+k";
+  hotkeys(keys, (event) => {
     event.preventDefault();
     emit("open");
   });

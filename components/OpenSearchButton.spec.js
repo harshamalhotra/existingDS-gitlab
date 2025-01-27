@@ -9,7 +9,7 @@ describe("OpenSearchButton", () => {
       const user = userEvent.setup();
       const { emitted } = render(OpenSearchButton);
 
-      await user.click(screen.getByRole("button", { name: "Search ⌘ K" }));
+      await user.click(screen.getByRole("button", { name: "Search Ctrl K" }));
       expect(emitted().openSearch).toEqual([[]]);
     });
   });

@@ -10,7 +10,7 @@ describe("SidebarLogo", () => {
       await renderSuspended(SidebarLogo, { props: { showSearchButton: true } });
 
       expect(
-        screen.getByRole("button", { name: "Search ⌘ K" }),
+        screen.getByRole("button", { name: "Search Ctrl K" }),
       ).toBeInTheDocument();
     });
 
@@ -21,7 +21,7 @@ describe("SidebarLogo", () => {
           props: { showSearchButton: true },
         });
 
-        await user.click(screen.getByRole("button", { name: "Search ⌘ K" }));
+        await user.click(screen.getByRole("button", { name: "Search Ctrl K" }));
         expect(emitted().openSearch).toEqual([[]]);
       });
     });

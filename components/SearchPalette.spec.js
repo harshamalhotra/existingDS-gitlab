@@ -82,10 +82,7 @@ describe("SearchPalette", () => {
 
       await flushPromises();
 
-      expect(hotkeys).toHaveBeenCalledWith(
-        "command+k,command+p",
-        expect.any(Function),
-      );
+      expect(hotkeys).toHaveBeenCalledWith("ctrl+k", expect.any(Function));
     });
 
     describe("when keyboard shortcut are pressed", () => {
