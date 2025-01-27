@@ -175,6 +175,28 @@ Additional considerations:
 
 When in doubt, consider whether the information represents the current state of something (status) or is communicating a change or the result of an event (feedback). Remember that the primary goal is to provide clear, consistent, and meaningful information to the user in the context of GitLab.
 
+### Visually defining content areas
+
+A region is the loosest form of visual organization through boundaries formed by white space, typography, backgrounds, and dividers. A container creates more explicit grouping with backgrounds and borders to define clear bounds and aid visual hierarchy. Regions and containers can both be nested to create the desired hierarchy in a given layout.
+
+- Use `background.color.default` and `border.color.default` by default when a background or border is needed.
+- Presentational attributes such as `subtle` and `strong` establish visual hierarchy without specific meaning.
+- Semantic attributes such as `section`, `overlap`, and `disabled` indicate a container's purpose in the interface.
+
+#### Sections
+
+A section is a specific type of container that completely encloses its content. Sections must:
+
+- Include borders on all sides using `border.color.section`.
+- Use `background.color.section` as its background color.
+- Only include `section` borders within its boundaries.
+- Not include nested sections.
+
+Optionally, sections can also:
+
+- Use `background.color.subtle` for nested containers when visual hierarchy is needed.
+- Use `feedback` and `status` backgrounds for feedback and status regions.
+
 ### Patterns and matching
 
 <todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1816">Document token pairing for color patterns and token matching for conceptual patterns.</todo>
