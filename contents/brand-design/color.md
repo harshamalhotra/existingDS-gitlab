@@ -4,17 +4,17 @@ name: Color
 
 This page includes [color swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes) for our brand colors. The colors are denoted with a *p* for primary, and *s* for secondary. Default to the following applications when using primary and secondary colors:
 
-- Backgrounds can use gradients or select solid colors: white, Charcoal, or purple
-- Graphical elements should default to colors in the primary palette; the colors in the secondary palette can be used as additional accents.
-- Headlines and body copy should use white or charcoal.
-- Calls to action (CTAs) and buttons should use white or charcoal.
-- Colors other than white or Charcoal should not be applied in sentences or large bodies of copy.
-- Hyperlinks commonly use Purple 01p on dark backgrounds or Purple 02p on light backgrounds.
-- Other text, such as small titles or data points, can have color applied sparingly and with discretion for accessibility with a contrast minimum of 1.4.3 (Level AA) according to [WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum).
+- **Backgrounds** can use gradients or select solid colors: white, Charcoal, or purple
+- **Graphical elements** should default to colors in the primary palette; the colors in the secondary palette can be used as additional accents.
+- **Headlines and body copy** should use white or charcoal.
+- **Calls to action (CTAs) and buttons** should use white or charcoal.
+- **Hyperlinks** commonly use Purple 01p on dark backgrounds or Purple 02p on light backgrounds.
+- **Small titles and data points** can have color applied sparingly and with discretion for accessibility with a contrast minimum of 1.4.3 (Level AA) according to [WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum).
+- `NOTE:` Colors other than white or Charcoal should not be applied in sentences or large bodies of copy.
 
 ## Primary colors
 
-The primary palette features colors from our core logo and signature purple. These colors are most frequently used and associated with our brand.
+The primary palette features colors from our core logo and our signature purple. These colors are most frequently used and associated with our brand.
 
 ### Primary color palette
 
@@ -57,11 +57,26 @@ The secondary palette expands upon our oranges and purples to provide more color
 
 ## Gradients
 
-The main gradient for our core brand consists of Orange 02p, Purple 01p, and Pink 01s with a white base fill. In some cases, custom gradients can be created for a more curated aesthetic to differentiate an asset from general-branded designs. Follow the parameters below to ensure visual consistency across all gradients:
+Gradients are an essential part of our brand and a key way that we incorporate color into marketing collateral. They help create a sense of movement and motion while also providing depth to an asset. Linear gradients are often used on graphics and linework, while freeform gradients are used to add visual interest to the background.
 
-- All gradients should feel organic and not distract from other elements on the design.
-- All gradients should be generated using the freeform gradient feature in Illustrator, or by creating layered radial gradients in Figma.
-- Gradients should be limited to no more than 3 colors, not including the base fill.
+### Linear gradients
+
+Our brand colors can be categorized into three color families: *purple*, *orange*, and *teal*. One-step or two-step gradients can be created within their respective color family, meaning that the hues within a single gradient are only one or two shades away from one another. Follow the steps below for creating these types of gradients:
+
+- Start by selecting a color family. Then choose a color within the family.
+- From that color you can move either one or two tones away to select the second color for the gradient.
+- While the direction of the gradient can vary, the gradient should be set to linear.
+- `NOTE:` our AI gradient is an exception from the usual one-step and two-step gradients. This linear gradient goes from Orange 01p to Purple 01p and should only be used for content focused on AI and/or GitLab Duo.
+
+<figure-img alt="Examples of approved linear gradients" label="One-step and two-step gradient examples" src="/img/brand/linear-gradients.svg"></figure-img>
+
+### Freeform gradients
+
+Freeform gradients are generally reserved for backgrounds. The default freeform gradient for our core brand consists of Orange 02p, Purple 01p, and Pink 01s with a white base fill. In some cases, these colors can be customized to create a more curated aesthetic to differentiate an asset from general-branded designs. Follow the parameters below to ensure visual consistency across all freeform gradients:
+
+- The gradient should feel organic and not distract from other elements on the design.
+- The gradient should use the freeform gradient feature in Illustrator, or by creating layered radial gradients in Figma.
+- They should be limited to no more than 3 colors, not including the base fill.
 - Colors should feel soft and gently blur into one another; in most cases, keeping opacities below 30% achieves this look.
 - Purple should always be included as one of the gradient’s colors.
 - Charcoal and gray should not be used.
@@ -69,9 +84,15 @@ The main gradient for our core brand consists of Orange 02p, Purple 01p, and Pin
 - Dark-mode gradients should use Purple 04s as the base fill.
 - When adding text or our logo, ensure that they are placed on a part of the gradient that provides adequate contrast.
 
+<figure-img alt="Freeform gradient sample" label="Example of the default freeform gradient" src="/img/brand/freeform-gradient.png"></figure-img>
+
 ## Contrast and accessibility
 
 Using color combinations that have sufficient contrast benefits everyone and preserves readability. A contrast ratio of 4.5:1 or higher is preferred for text and UI elements, but 3:1 can be used for larger text. Illustrations are an exception and will use a larger range of the palette, although even the key elements should still be legible. Color accessibility enables people with visual impairments or color vision deficiencies to interact with digital experiences in the same way as their non-visually-impaired counterparts. For more information about color contrast in a digital context, view the [WCAG Success Criterion 1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG21/#contrast-minimum) guidelines.
+
+Below are the approved font color pairings for optimal contrast and accessibility. Always pair copy with a high-contrast background; this applies to gradient backgrounds as well.
+
+<figure-img alt="Contrast examples for typography" label="Accessible font color pairings" src="/img/brand/colors-accessibility.svg"></figure-img>
 
 ## Terminology
 
