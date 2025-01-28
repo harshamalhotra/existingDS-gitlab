@@ -29,22 +29,36 @@ For example, to change the caret color of an input (don't actually do this), use
 
 Remember to use them [semantically](/product-foundations/design-tokens#semantic-design-tokens). Don't use `info` if you only want the color `blue`. In different modes, `info` may be a different color. So only use that token if the element it applies to is an informational element.
 
-## Dark mode
+## Dark mode overrides
 
 When you use design tokens correctly (focusing on their semantic meaning rather than specific colors), dark mode for your UI elements works out of the box.
 
 However, there are times when you might need to change how something behaves in dark mode. Before implementing a custom dark mode style, ask yourself three times: "Do I really need to deviate from the standard pattern?" Consult with the design systems team, they can help determine if this is truly a gap in our design system that needs addressing.
 
-### Using @apply
+Note that overrides are not ideal and should be used sparingly, because:
 
-This is the preferred method.
-Use the [@apply method](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) to specify dark variants inline. For example, to override a subtle background in dark mode:
+- They do not scale as we add new modes. For instance, if we add a high contrast mode, we'd need a `high-contrast:` modifier in addition.
+- They do not reflect changes to design token values, because the override uses a constant value.
+
+### Using CSS utilities
+
+If you must use an override, this is the preferred method. Add a class with the `dark:` modifier. For example, to override a subtle background in dark mode:
 
 ```html
 <div class="gl-bg-subtle dark:gl-bg-neutral-900">
   <!-- Content -->
 </div>
 ```
+
+Always override a semantic token with specific color token:
+
+- ✅ `class="gl-bg-subtle dark:gl-bg-neutral-900"`
+- ❌ `class="gl-bg-neutral-10 dark:gl-bg-neutral-900"`
+- ❌ `class="gl-bg-subtle dark:gl-bg-section"`
+
+### Using @apply
+
+If you must use an override and using a utility class isn't practical, use the [@apply method](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) to specify dark variants inline. For example, to override a subtle background in dark mode:
 
 ```css
 .my-component-class {
@@ -59,8 +73,6 @@ Always override a semantic token with specific color token:
 - ✅ `@apply gl-bg-subtle dark:gl-bg-neutral-900`
 - ❌ `@apply gl-bg-neutral-10 dark:gl-bg-neutral-900`
 - ❌ `@apply gl-bg-subtle dark:gl-bg-section`
-
-Whilst this is the preferred method, it still comes with side-effects and should only be used when necessary.
 
 ### Legacy Approaches
 
