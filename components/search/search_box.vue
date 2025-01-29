@@ -205,7 +205,12 @@ export default {
       spellcheck="false"
       @focus="onFocus"
     />
-    <ul v-if="resultsVisible" role="menu" tabindex="-1" class="gl-new-dropdown dropdown-menu show">
+    <ul
+      v-if="resultsVisible"
+      role="menu"
+      tabindex="-1"
+      class="gl-new-dropdown dropdown-menu show !gl-bg-overlap !gl-shadow-sm"
+    >
       <div class="gl-new-dropdown-inner">
         <div ref="results" class="gl-new-dropdown-contents">
           <gl-dropdown-item v-if="statusMsg">
