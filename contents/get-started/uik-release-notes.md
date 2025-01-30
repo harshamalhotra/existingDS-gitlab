@@ -2,6 +2,12 @@
 name: Release notes
 ---
 
+## 17.8
+
+<small>Published 2025-01-10</small>
+
+Several small design token (variable) updates from the [design tokens](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?m=auto) library.
+
 ## 17.7
 
 <small>Published 2024-12-17</small>
