@@ -32,35 +32,22 @@ When using the relative format, always display the absolute time in a tooltip fo
 - Display date and time information in the absolute format unless [users specify they want to use relative formatting](https://docs.gitlab.com/ee/user/profile/preferences.html#use-relative-times) instead.
 - If it's possible to detect the browser settings, display the localized time, for example, Jan 3, 2021. Otherwise, fall back to displaying the date in ISO 8601: YYYY-MM-DD (time is optionally appended after the date, HH:MM:SS).
 
-```mermaid
-graph TD
-    A["Which date/time<br>format to use?"]:::start
-    B{"Does the<br>situation meet exceptions<br>for always use absolute<br>format?"}:::decision
-    C{"Does the<br>situation meet exceptions<br>for always use relative<br>format?"}:::decision
-    D{"Does user set<br>'Use relative format'<br>in preferences?<br>(on by default)"}:::decision
-    E{"Can browser detect<br>user's region<br>automatically?"}:::decision
-    F{"Is there limited<br>space to display?"}:::decision
-    G["Use Absolute:<br>localized normal format, Ex: Jan 2, 2021<br>(European style)"]:::ending
-    H["Use Absolute:<br>localized format (shortened), Ex: Jan 2<br>(European style)"]:::ending
-    I["Use Absolute:<br>ISO 8601 format, Ex: YYYY-MM-DD"]:::ending
-    J["Use Relative format<br>Ex: 30 minutes ago"]:::ending
-
-    A --> B
-    B -->|Yes| E
-    B -->|No| C
-    C -->|Yes| J
-    C -->|No| D
-    D -->|Yes| J
-    D -->|No| E
-    E -->|Yes| F
-    E -->|No| I
-    F -->|Yes| H
-    F -->|No| G
-
-classDef start fill:#DCFBFC, stroke:#20757D
-classDef decision fill:#FEF3D7, stroke:#DAA520
-classDef ending fill:#D7BED7, stroke:#63397
-```
+1. Start: Which date/time format to use?
+1. Does the situation meet the exceptions for always using absolute format?
+   - **YES**: → Skip to question 5
+   - **NO**: → Continue to next question
+1. Does the situation meet the exceptions for always using relative format?
+   - **YES**: → Use relative format (For example, 30 minutes ago)
+   - **NO**: → Continue to next question
+1. Does user set "Use relative format" in preferences? (On by default)
+   - **YES**: → Use relative format (For example, 30 minutes ago)
+   - **NO**: → Continue to next question
+1. Can browser detect user's region automatically?
+   - **YES**: → Continue to next question
+   - **NO**: → Use absolute: ISO 8601 format (For example, YYYY-MM-DD)
+1. Is there limited space to display?
+   - **YES**: → Use absolute: localized shortened format (For example, Jan 2 in European style)
+   - **NO**: → Use absolute: localized normal format (For example, Jan 2, 2021 in European style)
 
 ### Exceptions
 

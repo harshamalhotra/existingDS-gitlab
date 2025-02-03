@@ -15,17 +15,17 @@ A [disclosure widget](/components/dropdown-disclosure) is a type of dropdown tha
 
 A [combobox](/components/dropdown-combobox) is a type of dropdown that includes a panel of options typically opened by a button or text input. Think _a user needs to select an option_ when you consider a combobox. A combobox is the more complex of the two and includes two different implementations, `GlCollapsibleListbox` and `GlFormCombobox`. In addition to the listbox of options with particular semantics, a combobox includes the following optional features: header, section titles, and a fixed footer with related actions.
 
-## Which component should you use?
+## When to use either component
 
-```mermaid
-flowchart TD;
-  A[Is the user performing an action/workflow, or<br>selecting one or more options?] --> |Action or workflow|B[Use GlDisclosureDropdown];
-  A --> |Selecting one or more options|C[Does the user need to be able to<br>enter a custom item string?];
-  C --> |Yes|D[Does GlFormCombobox support<br>the required features? See &8901];
-  C --> |No|E[Use GlCollapsibleListbox];
-  D --> |Yes|H[Use GlFormCombobox];
-  D --> |No|I[This probably can't be implemented<br>or migrated yet];
-```
+1. Start: Is the user performing an action/workflow, or selecting one or more options?
+   - If action or workflow: → Use `GlDisclosureDropdown`
+   - If selecting one or more options: → Continue to question 2
+1. Does the user need to be able to enter a custom item string?
+   - **YES**: → Continue to question 3
+   - **NO**: → Use `GlCollapsibleListbox`
+1. Does `GlFormCombobox` support the required features? See [#8901](https://gitlab.com/groups/gitlab-org/-/epics/8901)
+   - **YES**: → Use `GlFormCombobox`
+   - **NO**: → This diagram probably can't be implemented or migrated yet
 
 ## Related
 

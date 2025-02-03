@@ -192,7 +192,6 @@ export default {
     liveEdit: true,
     dir: 'contents',
     markdown: {
-      remarkPlugins: ['~~/nuxt-content-plugins/mermaid.js'],
       rehypePlugins: ['~~/nuxt-content-plugins/fix_review_urls.js'],
     },
   },
@@ -261,7 +260,6 @@ export default {
       // These need to be transpiled as they use some advanced syntax like the
       // optional chaining operator
       '@gitlab/ui',
-      'mermaid',
     ],
   },
 
