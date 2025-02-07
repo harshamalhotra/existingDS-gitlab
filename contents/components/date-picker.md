@@ -11,6 +11,8 @@ related:
 
 ## Examples
 
+### GlDatepicker
+
 <story-viewer component="base-datepicker" title="Date picker"></story-viewer>
 
 <story-viewer component="base-daterange-picker" title="Date range picker"></story-viewer>
@@ -18,6 +20,12 @@ related:
 <story-viewer component="base-daterange-picker" story="with-dates-selected-and-tooltip" title="Date range picker with maximum range indicator"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-13&mode=design)
+
+### GlFormDate
+
+`GlFormDate` uses native browser `<input type="date">` date picker interface. Styling options are restricted and determined by browser and operating system. It provides improved accessibility for keyboard and screen reader users, and improved mobile touch controls.
+
+<story-viewer component="base-form-form-date" title="Form date input"></story-viewer>
 
 ## Structure
 
@@ -40,6 +48,17 @@ related:
 ### When not to use
 
 - If a user needs to enter a familiar date, like a birthday, consider using a regular [text input](/components/text-input) without the date picker functionality instead (see note in the [Reference](#reference) section).
+
+### When to use either component
+
+Use the following guidelines to choose the right component in most cases:
+
+1. Does choosing a date perform an immediate action?
+   - **YES**: → Use `GlDatepicker`
+   - **NO**: → Use `GlFormDate`
+1. Is the date part of a submittable form?
+   - **YES**: → Use `GlFormDate`
+   - **NO**: → Use `GlDatepicker`
 
 ### Variants
 
