@@ -24,7 +24,7 @@ workflow:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 default:
-  image: node:20.18.2-bookworm
+  image: node:20.18.3-bookworm
   tags:
     - gitlab-org
 
