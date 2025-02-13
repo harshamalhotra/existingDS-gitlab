@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import FigmaEmbed from '../components/figma_embed.vue';
 import FigureImg from '../components/figure_img.vue';
 import StoryViewer from '../components/story_viewer.vue';
 import Note from '../components/note.vue';
@@ -6,6 +7,7 @@ import Todo from '../components/todo.vue';
 import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
+  FigmaEmbed,
   FigureImg,
   StoryViewer,
   Note,

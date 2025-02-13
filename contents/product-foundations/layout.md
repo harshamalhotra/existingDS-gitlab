@@ -71,9 +71,7 @@ Use sticky containers with caution as they can easily crowd the interface and ma
 
 For layouts that are tabular or mimic a table row, often a single alignment rule applied to all cells or columns may not produce the most scannable outcome. With cascading alignment, the goal is to optically align content in the way that best supports a linear reading flow while maintaining balance. The alignment "cascades" from one element to the next based on the preceding element. For example, **B** aligns with **A**, and **C** aligns with **B**.
 
-<div class="figma-embed" aria-label="Cascading alignment demo 1" role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A696%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1" allowfullscreen></iframe>
-</div>
+<figma-embed label="Cascading alignment demo 1" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A696%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1"></figma-embed>
 
 This type of layout is optional, and you should use your best judgement considering the user's task, the content, and other factors that might impact layout, like reflow and responsive behavior.
 
@@ -83,8 +81,6 @@ The three column example that follows is similar, where vertically centering pro
 
 In both examples the goal is to choose the ideal alignment to the left element in a way that visually anchors the content and limits the eye from bouncing around as much as possible.
 
-<div class="figma-embed" aria-label="Cascading alignment demo 2" role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A656%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1" allowfullscreen></iframe>
-</div>
+<figma-embed label="Cascading alignment demo 2" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2XRq1MnIG69iti76Mh9HpJ%2FPajamas-visual-examples%3Ftype%3Ddesign%26node-id%3D22364%253A656%26mode%3Ddesign%26t%3DcBlAHP3Ol5JxVR79-1"></figma-embed>
 
 <todo>Add live demo. An example that accomplishes this with CSS grid can be viewed in [Codepen](https://codepen.io/lostsatellites/pen/ZEwVOgz).</todo>
