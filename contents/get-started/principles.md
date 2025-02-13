@@ -21,41 +21,112 @@ There are three principles that help support us in this work.
 
 Though the product is made of many tools, everything should function seamlessly together. Design with this mindset to ensure that you are creating a more connected and coherent experience across the product.
 
-| Do                                                                                                                                              | Don't                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Optimize connections between capabilities. | Optimize for an isolated use of tools.  |
-| Use patterns consistently across the product. | Use different patterns based on product area.  |
-| Optimize the broader user journey, even when it crosses product groups, or when you're focused on a particular step of that journey. | Optimize for individual interactions or features.  |
+<grid>
+  <do>
 
-<!--
- 1. **Bold sub principle(s) title** Explanation, plus optional reference
-  - Example(s), plus link towards a reference in real-life
--->
+  Optimize connections between capabilities.
+
+  </do>
+  <dont>
+  
+  Optimize for an isolated use of tools.
+  
+  </dont>
+  <do>
+
+  Use patterns consistently across the product.
+
+  </do>
+  <dont>
+  
+  Use different patterns based on product area.
+  
+  </dont>
+  <do>
+
+  Optimize the broader user journey, even when it crosses product groups, or when you're focused on a particular step of that journey.
+
+  </do>
+  <dont>
+  
+  Optimize for individual interactions or features.
+  
+  </dont>
+</grid>
 
 ### Support learning
 
 Design to promote the user's learning and proficiency as they interact and explore. Seek to help them minimize mistakes.
 
-| Do                                                                                                                                              | Don't                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Clearly explain how recommendations are generated, especially with [AI features](/usability/ai-human-interaction#be-transparent). | Omit explanations for recommendations to simplify the experience. |
-| Communicate the status of processes that happen in the background. | Only communicate about processes that happen in the foreground, as a direct result of the user's actions. |
-| Ensure the user has all the information needed to proceed with confidence. | Delegate key information to the documentation to minimize the UI. |
+<grid>
+  <do>
 
-<!--
-1. **Bold sub principle(s) title** Explanation, plus optional reference
-  - Example(s), plus link towards a reference in real-life
--->
+  Clearly explain how recommendations are generated, especially with [AI features](/usability/ai-human-interaction#be-transparent).
+
+  </do>
+  <dont>
+  
+  Omit explanations for recommendations to simplify the experience.
+  
+  </dont>
+  <do>
+
+  Communicate the status of processes that happen in the background.
+
+  </do>
+  <dont>
+  
+  Only communicate about processes that happen in the foreground, as a direct result of the user's actions
+  
+  </dont>
+  <do>
+
+  Ensure the user has all the information needed to proceed with confidence.
+
+  </do>
+  <dont>
+  
+  Delegate key information to the documentation to minimize the UI.
+  
+  </dont>
+</grid>
 
 ### Focus on outcomes
 
 Empathy for the user starts with a deep understanding of their needs and goals. Design for the broader outcomes that the user seeks to achieve, instead of the isolated actions or discrete features used to complete specific tasks.
 
-| Do                                                                                                                                              | Don't                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Let the user's needs and intended outcomes drive the change. | Let the popularity or impressiveness of a feature or technology drive the change. |
-| Prioritize user value. | Prioritize technical feasibility or development speed. |
-| Design for current essential needs. | Design to accommodate future, potential needs. |
+<grid>
+  <do>
+
+  Let the user's needs and intended outcomes drive the change.
+
+  </do>
+  <dont>
+  
+  Let the popularity or impressiveness of a feature or technology drive the change.
+  
+  </dont>
+  <do>
+
+  Prioritize user value.
+
+  </do>
+  <dont>
+  
+  Prioritize technical feasibility or development speed.
+  
+  </dont>
+  <do>
+
+  Design for current essential needs.
+  
+  </do>
+  <dont>
+  
+  Design to accommodate future, potential needs.
+  
+  </dont>
+</grid>
 
 ## References
 

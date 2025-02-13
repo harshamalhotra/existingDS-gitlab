@@ -19,12 +19,12 @@ Icons take inspiration from elements expressed as part of the GitLab brand.
 
 There are four icon collections used in the product (not including the Web IDE): UI, status, pipeline, file and folder icons. The design guidelines covered in the sections below only apply to UI and status icons.
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-4">
+<grid columns="4">
   <figure-img alt="Example UI icon" label="UI" src="/img/icons-collection-ui.svg"></figure-img>
   <figure-img alt="Example status icon" label="Status" src="/img/icons-collection-status.svg"></figure-img>
   <figure-img alt="Example pipeline icon" label="Pipeline" src="/img/icons-collection-pipeline.svg"></figure-img>
   <figure-img alt="Example file icon" label="File and Folder" src="/img/icons-collection-file-folder.svg"></figure-img>
-</div>
+</grid>
 
 ### UI icons
 
@@ -50,29 +50,34 @@ Alignment considerations for a **1.5px** stroke are covered in the [Strokes](#st
 
 In nearly all instances icons should be used at the size they were created at and not scaled. This keeps the icons crisp and consistent in the UI.
 
-| **Do** | **Don’t** |
-| :---: | :---: |
-| <figure-img alt="Crisp icon on pixel grid" label="Icon outside edges aligned to the pixel grid" src="/img/icons-pixel-grid-do.svg"></figure-img> | <figure-img alt="Blurry icon on pixel grid" label="Icon edges not horizontally aligned to the pixel grid<" src="/img/icons-pixel-grid-dont.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Crisp icon on pixel grid" label="Icon outside edges aligned to the pixel grid" src="/img/icons-pixel-grid-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Blurry icon on pixel grid" label="Icon edges not horizontally aligned to the pixel grid" src="/img/icons-pixel-grid-dont.svg"></figure-img>
+  </dont>
+</grid>
 
 ### 16 pixel grid
 
 The **16px** icon size is the default, and most UI icons are created at this size. Icons using this **16×16 pixel** grid have a **14px** live area surrounded on all sides by **1px** for padding and optical sizing.
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
-  <figure-img alt="16px icon grid at 100% scale" label="16 pixel icon at 100%" src="/img/icons-100-scale.svg"></figure-img>
-  <figure-img alt="Icon live area" label="Grid 14×14 pixel live area" src="/img/icons-grid-layout.svg"></figure-img>
-  <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-padding.svg"></figure-img>
-</div>
+<grid columns="3">
+  <figure-img class="!gl-my-0" alt="16px icon grid at 100% scale" label="16 pixel icon at 100%" src="/img/icons-100-scale.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon live area" label="Grid 14×14 pixel live area" src="/img/icons-grid-layout.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon padding" label="1px icon padding" src="/img/icons-padding.svg"></figure-img>
+</grid>
 
 ### 12 pixel grid
 
 The **12px** grid is used for all status icons, and some UI icons. Icons using this **12×12 pixel** grid have a **10px** live area surrounded on all sides by **1px** for padding and optical sizing.
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
-  <figure-img alt="12px icon grid at 100% scale" label="12 pixel icon at 100%" src="/img/icons-12-100-scale.svg"></figure-img>
-  <figure-img alt="Icon live area" label="Grid 10×10 pixel live area" src="/img/icons-12-grid-layout.svg"></figure-img>
-  <figure-img alt="Icon padding" label="1px icon padding" src="/img/icons-12-padding.svg"></figure-img>
-</div>
+<grid columns="3">
+  <figure-img class="!gl-my-0" alt="12px icon grid at 100% scale" label="12 pixel icon at 100%" src="/img/icons-12-100-scale.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon live area" label="Grid 10×10 pixel live area" src="/img/icons-12-grid-layout.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon padding" label="1px icon padding" src="/img/icons-12-padding.svg"></figure-img>
+</grid>
 
 ## Keylines
 
@@ -112,11 +117,11 @@ Since icons use a **1.5px** stroke, there are a few alignment considerations:
 - Outside edges of closed shapes should align to whole pixels.
 - A line should have at least one edge aligned to a whole pixel. This won't always be possible when two lines comprise an element that has to be centered within the grid or to other elements, but the line end points should always terminate on a whole pixel.
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-3">
-  <figure-img alt="Icon stroke settings" label="1.5px stroke weight and rounded stroke caps" src="/img/icons-strokes.svg"></figure-img>
-  <figure-img alt="Line with rounded join" label="Line with round join" src="/img/icons-line-round-join.svg"></figure-img>
-  <figure-img alt="Line with mitar (square) join" label="Line with mitar join" src="/img/icons-line-miter.svg"></figure-img>
-</div>
+<grid columns="3">
+  <figure-img class="!gl-my-0" alt="Icon stroke settings" label="1.5px stroke weight and rounded stroke caps" src="/img/icons-strokes.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Line with rounded join" label="Line with round join" src="/img/icons-line-round-join.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Line with mitar (square) join" label="Line with mitar join" src="/img/icons-line-miter.svg"></figure-img>
+</grid>
 
 ## Fills
 
@@ -126,23 +131,23 @@ Using a stroke (outline) is the default design approach, however a limited numbe
 
 To have parity between inside and center aligned strokes with a **1.5px** weight, the border radius options are:
 
-| **Stroke aligned inside** | **Stroke aligned center** |  **Result** |
-| ------ | ------ | ------ |
-| 0px | 0px | <img alt="0 border radius example" role="img" src="/img/icons-0-inside.svg" /> |
-| 1px | 0.25px |  <img alt="1 pixel border radius example" role="img" src="/img/icons-1-inside.svg" /> |
-| 2px (default) | 1.25px |  <img alt="2 pixel border radius example" role="img" src="/img/icons-2-inside.svg" /> |
-| 3px | 2.25px |  <img alt="3 pixel border radius example" role="img" src="/img/icons-3-inside.svg" /> |
+| **Stroke aligned inside** | **Stroke aligned center** | **Result**                                                                           |
+| ------------------------- | ------------------------- | ------------------------------------------------------------------------------------ |
+| 0px                       | 0px                       | <img alt="0 border radius example" role="img" src="/img/icons-0-inside.svg" />       |
+| 1px                       | 0.25px                    | <img alt="1 pixel border radius example" role="img" src="/img/icons-1-inside.svg" /> |
+| 2px (default)             | 1.25px                    | <img alt="2 pixel border radius example" role="img" src="/img/icons-2-inside.svg" /> |
+| 3px                       | 2.25px                    | <img alt="3 pixel border radius example" role="img" src="/img/icons-3-inside.svg" /> |
 
 Clarity should always override consistency, and the guides are flexible when necessary to best represent the metaphor or parts of it.
 
 <figure-img alt="Icons with 0px, 1px, 2px, 4px, 6px, and 100% border radius options" label="Border radius options, 2px is default" src="/img/icons-border-radius.svg"></figure-img>
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-2">
-  <figure-img alt="Icon with 2px and 4px border radius" label="A combination of 2px and 4px border radius helps the elements fit together better." src="/img/icons-border-radius-example.svg"></figure-img>
-  <figure-img alt="Icon with 0px and 4px border radius" label="A combination of 0px and 4px best represents the subject matter." src="/img/icons-border-radius-alternates.svg"></figure-img>
-  <figure-img alt="Icon with 1px border radius" label="A 1px border radius works well for angles that are less than 90º." src="/img/icons-border-radius-angle.svg"></figure-img>
-  <figure-img alt="Icon with no border radius" label="This icon does not use a border radius because in doing so features critical to the meaning would be lost." src="/img/icons-border-radius-none.svg"></figure-img>
-</div>
+<grid>
+  <figure-img class="!gl-my-0" alt="Icon with 2px and 4px border radius" label="A combination of 2px and 4px border radius helps the elements fit together better." src="/img/icons-border-radius-example.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon with 0px and 4px border radius" label="A combination of 0px and 4px best represents the subject matter." src="/img/icons-border-radius-alternates.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon with 1px border radius" label="A 1px border radius works well for angles that are less than 90º." src="/img/icons-border-radius-angle.svg"></figure-img>
+  <figure-img class="!gl-my-0" alt="Icon with no border radius" label="This icon does not use a border radius because in doing so features critical to the meaning would be lost." src="/img/icons-border-radius-none.svg"></figure-img>
+</grid>
 
 ## Angles
 
@@ -158,27 +163,47 @@ Sharp interior angles help icon clarity. A **1px** gap between elements is accep
 
 Design most icons in 2D. Depth and perspective should only be used when it’s absolutely necessary to clarify a concept, and even then **2px** strokes are used to add dimension instead of larger fill areas.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="3D box icon" label="Icon with depth clarifies concept" src="/img/icons-depth-do-2.svg"></figure-img>| <figure-img alt="Square icon" label="Icon with no depth is too vague" src="/img/icons-depth-dont-2.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="3D box icon" label="Icon with depth clarifies concept" src="/img/icons-depth-do-2.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Square icon" label="Icon with no depth is too vague" src="/img/icons-depth-dont-2.svg"></figure-img>
+  </dont>
+</grid>
 
 Simplify icons for clarity and legibility, avoiding embellishment or unnecessary details.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Simple house icon" label="Simplified icon" src="/img/icons-shape-simple.svg"></figure-img> | <figure-img alt="Complex house icon" label="Overly complex icon" src="/img/icons-shape-complex.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Simple house icon" label="Simplified icon" src="/img/icons-shape-simple.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Complex house icon" label="Overly complex icon" src="/img/icons-shape-complex.svg"></figure-img>
+  </dont>
+</grid>
 
 Remove or close counters that are less than `1px` to avoid distracting artifacts.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Pencil icon" label="Icon with no small counters" src="/img/icons-counter-do.svg"></figure-img> | <figure-img alt="Pencil icon" label="Icon with small, distracting counter" src="/img/icons-counter-dont.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Pencil icon" label="Icon with no small counters" src="/img/icons-counter-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Pencil icon" label="Icon with small, distracting counter" src="/img/icons-counter-dont.svg"></figure-img>
+  </dont>
+</grid>
 
 Use square caps and shape edges to directly indicate clipping or layering. Round should still be used when breaks and intersections are more stylistic.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Duplicate icon" label="Icon with square clipped cap" src="/img/icons-clip-do.svg"></figure-img> | <figure-img alt="Duplicate icon" label="Icon with round clipped cap" src="/img/icons-clip-dont.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Duplicate icon" label="Icon with square clipped cap" src="/img/icons-clip-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Duplicate icon" label="Icon with round clipped cap" src="/img/icons-clip-dont.svg"></figure-img>
+  </dont>
+</grid>
 
 ## Concepts
 
@@ -190,10 +215,20 @@ In another more literal example, an icon representing tabular data should have c
 
 As with all of the guidelines, there will always be some level of subjectivity. Use your best judgement, and test when necessary.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Shield icon" label="Crisp shield icon" src="/img/icons-concept-style-do.svg"></figure-img>| <figure-img alt="Shield icon" label="Soft shield icon" src="/img/icons-concept-style-dont.svg"></figure-img> |
-| <figure-img alt="Table icon" label="Literal table icon" src="/img/icons-concept-style-do-2.svg"></figure-img> | <figure-img alt="Table icon" label="Rounded table icon" src="/img/icons-concept-style-dont-2.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Shield icon" label="Crisp shield icon" src="/img/icons-concept-style-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Shield icon" label="Soft shield icon" src="/img/icons-concept-style-dont.svg"></figure-img>
+  </dont>
+  <do>
+    <figure-img class="!gl-my-0" alt="Table icon" label="Literal table icon" src="/img/icons-concept-style-do-2.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Table icon" label="Rounded table icon" src="/img/icons-concept-style-dont-2.svg"></figure-img>
+  </dont>
+</grid>
 
 ### Icon meaning
 
@@ -205,13 +240,20 @@ Using an icon consistently to represent a single concept or action helps with ov
 
 Avoid using different icons to refer to one specific meaning. For example, [pencil](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~pencil) should be used for editing or updating an item, rather than [pencil-square](https://gitlab-org.gitlab.io/gitlab-svgs/?q=pencil-square) which is used for composing.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Menu icon" label="Icon represents “menu”" src="/img/icons-concept-dup.svg"></figure-img> | <figure-img alt="Menu icon" label="menu icon used for “list”" src="/img/icons-concept-dup-dont.svg"></figure-img> |
-
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Full screen icon" label="Correct icon for “full screen”" src="/img/icons-concept-meaning-do.svg"></figure-img> | <figure-img alt="Alternate full screen icon" label="Different icon for “full screen”" src="/img/icons-concept-meaning-dont.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Menu icon" label="Icon represents “menu”" src="/img/icons-concept-dup.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Menu icon" label="menu icon used for “list”" src="/img/icons-concept-dup-dont.svg"></figure-img>
+  </dont>
+  <do>
+    <figure-img class="!gl-my-0" alt="Full screen icon" label="Correct icon for “full screen”" src="/img/icons-concept-meaning-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Alternate full screen icon" label="Different icon for “full screen”" src="/img/icons-concept-meaning-dont.svg"></figure-img>
+  </dont>
+</grid>
 
 #### Icons with multiple meanings
 
@@ -228,17 +270,27 @@ In addition to context, ensure that `aria-label` attributes and/or tooltips are 
 
 If an icon is not accompanied by a label or its use isn't clear based on the immediately surrounding context, then provide a quick explanation in a tooltip.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Got hook icon with label and tooltip" label="Icon meaning is available" src="/img/icons-concept-clear.svg"></figure-img> | <figure-img alt="Git hook icon" label="Is that a smiling cat?" src="/img/icons-concept-unclear.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Got hook icon with label and tooltip" label="Icon meaning is available" src="/img/icons-concept-clear.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Git hook icon" label="Is that a smiling cat?" src="/img/icons-concept-unclear.svg"></figure-img>
+  </dont>
+</grid>
 
 #### Modern metaphors
 
 Try to avoid potentially antiquated concepts, especially when something more modern is recognizable.
 
-| **Do** | **Don’t** |
-| --- | --- |
-| <figure-img alt="Flat screen display with play symbol" label="Flat screen display" src="/img/icons-concept-new.svg"></figure-img> | <figure-img alt="Tube TV with antenna" label="Old tube TV" src="/img/icons-concept-old.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="Flat screen display with play symbol" label="Flat screen display" src="/img/icons-concept-new.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="Tube TV with antenna" label="Old tube TV" src="/img/icons-concept-old.svg"></figure-img>
+  </dont>
+</grid>
 
 ### Naming
 

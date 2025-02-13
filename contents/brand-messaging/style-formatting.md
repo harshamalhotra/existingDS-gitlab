@@ -20,8 +20,18 @@ If you only use an acronym or initialism once in a piece of content, you probabl
 
 Only capitalize the words that make up an acronym or initialism if it’s a proper noun.
 
-- ✅ *Dynamic application security testing (DAST)* examines applications for vulnerabilities like these in deployed environments.
-- ✅ *GitLab Dynamic Application Security Testing (DAST)* includes the following analyzers.
+<grid columns="1">
+  <do>
+  
+  *Dynamic application security testing (DAST)* examines applications for vulnerabilities like these in deployed environments.
+  
+  </do>
+  <do>
+  
+  *GitLab Dynamic Application Security Testing (DAST)* includes the following analyzers.
+  
+  </do>
+</grid>
 
 ### Contractions
 
@@ -31,24 +41,44 @@ We favor contractions (*can’t, didn’t, it’s, we’re*) to sound more human
 
 If a numbered or bulleted list reads as a continuous sentence, don’t capitalize the first letter of each item in the list, and don’t include punctuation at the end of each item.
 
-- ✅ GitLab Duo is unique because we:
-  - do not use your content to train models
-  - are transparent about all AI models used by GitLab Duo
-  - use the right AI model for each task, ensuring you always stay ahead of the curve
+<do>
+
+GitLab Duo is unique because we:
+
+- do not use your content to train models
+- are transparent about all AI models used by GitLab Duo
+- use the right AI model for each task, ensuring you always stay ahead of the curve
+
+</do>
 
 If each item in the list reads as its own sentence, capitalize and punctuate as you would free-standing sentences.
 
-- ✅ Here are three reasons GitLab Duo is unique:
-  - GitLab Duo features do not use your content to train models.
-  - Our publicly available documentation describes all AI models used by GitLab Duo.
-  - We use the right AI model for each task, ensuring you always stay ahead of the curve.
+<do>
+
+Here are three reasons GitLab Duo is unique:
+
+- GitLab Duo features do not use your content to train models.
+- Our publicly available documentation describes all AI models used by GitLab Duo.
+- We use the right AI model for each task, ensuring you always stay ahead of the curve.
+
+</do>
 
 ### Pronouns
 
 Unless referring to someone in particular, use gender-neutral pronouns (*they, them*).
 
-- ✅ With GitLab, a developer can integrate security into *their* workflow.
-- ❌ With GitLab, a developer can integrate security into *his/her* workflow.
+<grid>
+  <do>
+  
+  With GitLab, a developer can integrate security into *their* workflow.
+  
+  </do>
+  <dont>
+  
+  With GitLab, a developer can integrate security into *his/her* workflow.
+  
+  </dont>
+</grid>
 
 ### Quotations
 
@@ -56,13 +86,15 @@ Use double quotation marks (" ") for direct quotes, and single quotation marks (
 
 Include periods and commas inside ending quotation marks. Any punctuation that is part of the quotation should be included inside of the quotation marks. Any punctuation that is not part of the quotation (aside from periods and commas, as noted above) should be outside of the quotation marks.
 
-- ✅ Recently, an article was published stating, "Software is eating the world."
-- ✅ What do you think of the claim, "Software is eating the world"?
-- ✅ "Do you agree that software is eating the world?" wrote the author.
+<grid columns="3">
+  <do>Recently, an article was published stating, "Software is eating the world."</do>
+  <do>What do you think of the claim, "Software is eating the world"?</do>
+  <do>"Do you agree that software is eating the world?" wrote the author.</do>
+</grid>
 
 When including direct quotations from interviewees in blog posts, use present tense for verbs such as *says* and *explains*.
 
-- ✅ "Ruby was optimized for the developer, not for running it in production," says Sid.
+<do>"Ruby was optimized for the developer, not for running it in production," says Sid.</do>
 
 The exception would be when quoting from an event that was obviously in the past; in that case use the past tense so the reader is not confused or misled.
 
@@ -74,8 +106,10 @@ We use American English by default on the GitLab blog and marketing site. Please
 
 Generally, use [active voice](https://www.grammarly.com/blog/active-vs-passive-voice/) where possible. Using active voice ensures that your sentence includes a clear subject and verb.
 
-- ✅ The GitLab community submitted 1 million merge requests in March 2019.
-- ❌ One million merge requests were submitted in March 2019.
+<grid>
+  <do>The GitLab community submitted 1 million merge requests in March 2019.</do>
+  <dont>One million merge requests were submitted in March 2019.</dont>
+</grid>
 
 There may be limited cases where passive voice is the better option. Use your best judgment in each case, and if you decide to use passive voice, try to be aware of why you’re making that choice.
 
@@ -85,12 +119,22 @@ There may be limited cases where passive voice is the better option. Use your be
 
 Ensure you style brand names according to the company’s brand guidelines.
 
-- ✅ WiFi Tribe, DigitalOcean
+<do>WiFi Tribe, DigitalOcean</do>
 
 If the word the forms part of a brand or publication's name, capitalize it. Omit *The* if including it would make the sentence awkward.
 
-- ✅ We spoke to a reporter from *The Wall Street Journal*.
-- ✅ We spoke to a *Wall Street Journal* reporter.
+<grid columns="1">
+  <do>
+  
+  We spoke to a reporter from *The Wall Street Journal*.
+  
+  </do>
+  <do>
+  
+  We spoke to a *Wall Street Journal* reporter.
+  
+  </do>
+</grid>
 
 ### GitLab feature names
 
@@ -100,27 +144,35 @@ Generally, GitLab feature names are lowercase, but there are exceptions. Refer t
 
 Capitalize the name of the element, but not the word after (*team, department*, etc.).
 
-- ✅ Engineering team, Security department
-- ❌ Engineering Team, security department
+<grid>
+  <do>Engineering team, Security department</do>
+  <dont>Engineering Team, security department</dont>
+</grid>
 
 ### Job titles
 
 Use lowercase for job titles in sentences, regardless of whether they appear before or after a person's name.
 
-- ✅ John Smith, director of engineering, led the project.
-- ❌ John Smith, Director of Engineering, led the project.
+<grid>
+  <do>John Smith, director of engineering, led the project.</do>
+  <dont>John Smith, Director of Engineering, led the project.</dont>
+</grid>
 
 Capitalize the title when the person's name and title appear as a standalone (such as in the lower third of a video, a nametag, or attribution on a pull quote).
 
-- ✅ John Smith, Director of Engineering, XYZ Corporation
-- ❌ John Smith, director of engineering, XYZ Corporation
+<grid>
+  <do>John Smith, Director of Engineering, XYZ Corporation</do>
+  <dont>John Smith, director of engineering, XYZ Corporation</dont>
+</grid>
 
 ### Titles and headers
 
 Generally, use sentence case (capitalize only the first word and any proper nouns) for all headlines, titles, and subheads. There may be exceptions where title case is preferred from a design standpoint.
 
-- ✅ Remediating vulnerabilities with GitLab's security insights and AI
-- ❌ Remediating Vulnerabilities with GitLab's Security Insights and AI
+<grid>
+  <do>Remediating vulnerabilities with GitLab's security insights and AI</do>
+  <dont>Remediating Vulnerabilities with GitLab's Security Insights and AI</dont>
+</grid>
 
 ## Dates and times
 
@@ -128,9 +180,11 @@ Generally, use sentence case (capitalize only the first word and any proper noun
 
 For external-facing content, spell out the month and use a comma before the year. If the sentence continues after the year, also include a comma after the year. When you are only stating the month and the year, you don't need a comma after the month.
 
-- ✅ Release date: November 16, 2023
-- ✅ On November 16, 2023, we released GitLab 16.6.
-- ✅ We released Gitlab 16.6 in November 2023.
+<grid columns="1">
+  <do>Release date: November 16, 2023</do>
+  <do>On November 16, 2023, we released GitLab 16.6.</do>
+  <do>We released Gitlab 16.6 in November 2023.</do>
+</grid>
 
 For internal content, use ISO format (*2023-11-16*). In content geared toward a specific region, use the format preferred in that region.
 
@@ -158,14 +212,14 @@ Ampersands may be used sparingly where character counts are very tight, such as 
 
 If a colon is used to introduce a complete sentence (including a question), capitalize the first word after the colon.
 
-- ✅ AI isn’t just another fad: It’s seeing real adoption among practitioners.
-- ❌ AI isn’t just another fad: it’s seeing real adoption among practitioners.
-
-- ✅ We aimed to explore several topics: Where are things improving, and where are teams still running into roadblocks?
-- ❌ We aimed to explore several topics: where are things improving, and where are teams still running into roadblocks?
-
-- ✅ One thing stood out in the survey responses: the importance of security.
-- ❌ One thing stood out in the survey responses: The importance of security.
+<grid>
+  <do>AI isn’t just another fad: It’s seeing real adoption among practitioners.</do>
+  <dont>AI isn’t just another fad: it’s seeing real adoption among practitioners.</dont>
+  <do>We aimed to explore several topics: Where are things improving, and where are teams still running into roadblocks?</do>
+  <dont>We aimed to explore several topics: where are things improving, and where are teams still running into roadblocks?</dont>
+  <do>One thing stood out in the survey responses: the importance of security.</do>
+  <dont>One thing stood out in the survey responses: The importance of security.</dont>
+</grid>
 
 Always capitalize the first word after a colon in a title, even if it’s not a complete sentence.
 
@@ -173,8 +227,10 @@ Always capitalize the first word after a colon in a title, even if it’s not a 
 
 Our default is to use serial (Oxford) commas. In content geared towards a specific region, feel free to use what is most common in that region.
 
-- ✅ AI can help DevSecOps teams write code, resolve security vulnerabilities, accelerate code review, and improve collaboration.
-- ❌ AI can help DevSecOps teams write code, resolve security vulnerabilities, accelerate code review and improve collaboration.
+<grid>
+  <do>AI can help DevSecOps teams write code, resolve security vulnerabilities, accelerate code review, and improve collaboration.</do>
+  <dont>AI can help DevSecOps teams write code, resolve security vulnerabilities, accelerate code review and improve collaboration.</dont>
+</grid>
 
 ### Dashes
 

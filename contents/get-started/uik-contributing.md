@@ -24,17 +24,22 @@ The review request description field is used to automatically generate [release 
 
 #### Examples
 
-Do:
+<grid>
+  <do>
+  
+  ```markdown
+  - Adds multiple-choice icon
+  ```
+  
+  </do>
+  <dont>
 
-```markdown
-- Adds multiple-choice icon
-```
+  ```markdown
+  - Hey can you take a look at this? I added a new icon
+  ```
 
-Don't:
-
-```markdown
-- Hey can you take a look at this? I added a new icon
-```
+  </dont>
+</grid>
 
 #### Multiple-line merge descriptions
 

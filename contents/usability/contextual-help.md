@@ -61,10 +61,24 @@ When linking to third-party documentation, outside the GitLab instance, make tha
 
 If link text is not possible and space is tight, use the [help icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) that, when hovered or focused on, shows the summary in a [popover](/components/popover). The popover title should be the question that is answered by the summary. A `Learn more` link can be added to the popover to associate additional, relevant information.
 
-| Do                                                                                                                                                                                         | Don't                                                                                                                                                                                                |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon in `variant='info'` or `icon.color.info`                                                    | Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) or a variant other than info                                                                                 |
-| <figure-img alt="Popover with link to documentation" label="Show information in the popover with a link to documentation" src="/img/help-popover-with-link.png"  width="312"></figure-img> | <figure-img alt="Popover with link to documentation" label="Use the icon as a link or with a tooltip" src="/img/help-tooltip.png" alt="Popover with link to documentation" width="280"></figure-img> |
+<grid>
+  <do>
+  
+  Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon in `variant='info'` or `icon.color.info`
+  
+  </do>
+  <dont>
+  
+  Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) or a variant other than info
+  
+  </dont>
+  <do>
+    <figure-img alt="Popover with link to documentation" label="Show information in the popover with a link to documentation" src="/img/help-popover-with-link.png"  width="312"></figure-img>
+  </do>
+  <dont>
+    <figure-img alt="Popover with link to documentation" label="Use the icon as a link or with a tooltip" src="/img/help-tooltip.png" alt="Popover with link to documentation" width="280"></figure-img>
+  </dont>
+</grid>
 
 ### Info icon
 

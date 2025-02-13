@@ -58,10 +58,12 @@ Brevity is especially important for:
 
 For each of these content types, look for ways you might rephrase text that seems too long. Also, eliminate unnecessary phrases like “in order to” and extra articles like “the” when they don’t add clarity.
 
-| Do  | Don’t |
-| --- |  ---  |
-| To link Sentry to GitLab, enter your Sentry URL and Auth Token. | In order to link Sentry to GitLab, enter your Sentry URL and Auth Token. |
-| Use this token to validate received payloads. | Use this token to validate the received payloads. |
+<grid>
+  <do>To link Sentry to GitLab, enter your Sentry URL and Auth Token.</do>
+  <dont>In order to link Sentry to GitLab, enter your Sentry URL and Auth Token.</dont>
+  <do>Use this token to validate received payloads.</do>
+  <dont>Use this token to validate the received payloads.</dont>
+</grid>
 
 ### When extra words provide clarity
 
@@ -81,20 +83,24 @@ When something goes wrong, it's important for us to be clear about what happened
 
 When writing an error message, leave out extraneous words like "sorry" and "please." This makes errors easier to read and understand.
 
-| Do  | Don’t |
-| --- |  ---  |
-| Unable to complete your request. Enter a valid email address. | 400 Bad Request |
-| Enter your email address to sign up with GitLab. | Please enter your email address to sign up with GitLab. |
+<grid>
+  <do>Unable to complete your request. Enter a valid email address.</do>
+  <dont>400 Bad Request</dont>
+  <do>Enter your email address to sign up with GitLab.</do>
+  <dont>Please enter your email address to sign up with GitLab.</dont>
+</grid>
 
 ## Objective-focused
 
 When users engage with our product, they’re focused on getting tasks done, thinking first in terms of the problem they’re trying to solve, and then how to solve it.
 Objective-focused content that starts with the task first and then offers the solution can make it easier for users to quickly find and understand the information they need.
 
-| Do | Don’t |
-| --- | --- |
-| Monitor your errors by integrating with Sentry | Integrate with Sentry to monitor your errors |
-| To see what’s changed, choose a branch or enter a commit. | Choose a branch or enter a commit to see what's changed. |
+<grid>
+  <do>Monitor your errors by integrating with Sentry</do>
+  <dont>Integrate with Sentry to monitor your errors</dont>
+  <do>To see what’s changed, choose a branch or enter a commit.</do>
+  <dont>Choose a branch or enter a commit to see what's changed.</dont>
+</grid>
 
 ## Capitalization
 

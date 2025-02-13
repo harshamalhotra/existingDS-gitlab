@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import FigmaEmbed from '../components/figma_embed.vue';
+import Grid from '../components/grid.vue';
+import Do from '../components/do.vue';
+import Dont from '../components/dont.vue';
 import FigureImg from '../components/figure_img.vue';
 import StoryViewer from '../components/story_viewer.vue';
 import Note from '../components/note.vue';
@@ -8,6 +11,9 @@ import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
   FigmaEmbed,
+  Grid,
+  Do,
+  Dont,
   FigureImg,
   StoryViewer,
   Note,

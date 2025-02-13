@@ -55,10 +55,10 @@ When the filters do not fit on the same line as search, all dropdowns are placed
 
 On small screens the filter and sort dropdowns get pushed below the search and are full width. The functionality of toggling the visibility of filters can be added to make the UI less overwhelming. Trigger the visibility of the filters using an icon button with a filter icon and the label _Filters_. If filters are applied and then hidden, the button reflects the number of filters applied in a badge to the right of the button label.
 
-<div class="gl-grid gl-gap-5 lg:gl-grid-cols-2">
+<grid>
   <figure-img alt="Two tabs with search below, followed by filter and sort dropdowns each in new line" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile.png"></figure-img>
   <figure-img alt="Two tabs with search below and a filters button to the right of it" label="Tabs, search, filters, and sorting UI placement on mobile devices" src="/img/filtering-medium-complexity-placement-example--mobile--filters-hidden.png"></figure-img>
-</div>
+</grid>
 
 ### Adding multiple filters within a dropdown
 
