@@ -116,9 +116,7 @@ While we don't have documented patterns, we share some potential patterns in thi
 
 As inspiration for **integrated** mode patterns, you can find some explorations in [this Figma file](https://www.figma.com/file/s32hZcNQ0mQupGuEB5jUMH/Integrated-mode-AI-UX-patterns-design.gitlab.com%231615?type=design&node-id=1-2&mode=design):
 
-<div class="figma-embed" aria-label="Examples of integrated mode patterns, showing how the AI-human interaction guidelines could be applied to a button, form, or static content." role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fs32hZcNQ0mQupGuEB5jUMH%2FIntegrated-mode-AI-UX-patterns-design.gitlab.com%25231615%3Ftype%3Ddesign%26node-id%3D1%253A2%26mode%3Ddesign%26t%3DeWpvomQy7PhbCp4J-1" allowfullscreen></iframe>
-</div>
+<figma-embed label="Examples of integrated mode patterns, showing how the AI-human interaction guidelines could be applied to a button, form, or static content." src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fs32hZcNQ0mQupGuEB5jUMH%2FIntegrated-mode-AI-UX-patterns-design.gitlab.com%25231615%3Ftype%3Ddesign%26node-id%3D1%253A2%26mode%3Ddesign%26t%3DeWpvomQy7PhbCp4J-1"></figma-embed>
 
 ## References
 

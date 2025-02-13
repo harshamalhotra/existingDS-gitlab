@@ -38,9 +38,7 @@ The conceptual model is the visual representation of [object thinking](#object-t
 
 [View tweet conceptual model in Figma →](https://www.figma.com/file/J68bePHXIN5OPWqaFFY9ri/Conceptual-model?node-id=51%3A18)
 
-<div class="figma-embed" aria-label="Example conceptual model diagram connecting objects, along with their attributes and actions, to the primary tweet object. Each element is annotated with an explanation of the diagram's visual and written language." role="img">
-  <iframe frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D5823%253A553" allowfullscreen></iframe>
-</div>
+<figma-embed label="Example conceptual model diagram connecting objects, along with their attributes and actions, to the primary tweet object. Each element is annotated with an explanation of the diagram's visual and written language." src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJ68bePHXIN5OPWqaFFY9ri%2FConceptual-model%3Fnode-id%3D5823%253A553"></figma-embed>
 
 For each object, we document its _attributes_, _actions_, and how it relates to other objects in the system. The resulting diagram is independent of how we represent the objects in the UI or implement them in code. It should be as simple and accessible as possible, even if people aren't familiar with these kinds of diagrams. Learn more about conceptual models in [“Object Modeling for Designers”](https://medium.com/@hpadkisson/object-modeling-for-designers-an-introduction-7871bdcf8baf).
 
