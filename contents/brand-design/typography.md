@@ -4,7 +4,9 @@ name: Typography
 
 ## Primary typeface
 
-[GitLab Sans](https://gitlab-org.gitlab.io/frontend/fonts/) is the default typeface for all GitLab materials. It is free for download and features a tall x-height to aid in readability. Although it comes in an array of weights, we primarily use Bold and Regular to preserve simplicity.
+**GitLab Sans** is the default typeface for all GitLab materials. It is free for download and features a tall x-height to aid in readability. Although it comes in an array of weights, we primarily use Bold and Regular to preserve simplicity.
+
+**[Download our font families here →](https://gitlab-org.gitlab.io/frontend/fonts/)**
 
 ### GitLab Sans usage
 
@@ -28,7 +30,7 @@ Refer to the guidelines illustrated below to add hierarchy to your messaging:
 
 ## Secondary typeface
 
-[GitLab Mono](https://gitlab-org.gitlab.io/frontend/fonts/) is used sparingly alongside GitLab Sans. This font is visually reminiscent of code and can be used to provide more depth to the typography of any asset. It is best used for secondary elements such as labels, code snippets, callouts, select taglines, and numerical statistics.
+**GitLab Mono** is used sparingly alongside GitLab Sans. This font is visually reminiscent of code and can be used to provide more depth to the typography of any asset. It is best used for secondary elements such as labels, code snippets, callouts, select taglines, and numerical statistics.
 
 ### GitLab Mono usage
 
