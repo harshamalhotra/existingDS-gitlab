@@ -189,7 +189,7 @@ export default {
    * https://content.nuxtjs.org/
    */
   content: {
-    liveEdit: true,
+    liveEdit: false,
     dir: 'contents',
     markdown: {
       rehypePlugins: ['~~/nuxt-content-plugins/fix_review_urls.js'],
