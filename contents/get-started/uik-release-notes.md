@@ -2,6 +2,51 @@
 name: Release notes
 ---
 
+## 17.9
+
+<small>Published 2025-02-18</small>
+
+### Additions
+
+**[Annotations](https://www.figma.com/file/dWP1ldkBU4jeUqx5rO3jrn)**
+
+- Adds [**design status**](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?m=auto&node-id=2084-34&t=snYVq3uSs77s6OkA-1), an optional tool to manage design progress and milestones. Available to copy into your files for transparent status sharing.
+
+**[Product icons (Figma)](https://www.figma.com/file/h4YjjttHL5YI0mXZfQ4uuU)**
+
+- Adds [**duo-chat-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~duo-chat-new) icon.
+
+### Changes
+
+**[Component library](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ)**
+
+- Updates variables from design token library in [**banner**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=126604-7807&p=f&t=ySP3eq9nA4WgueJj-11), [**dropdown**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14&p=f&t=ySP3eq9nA4WgueJj-11), and [**❖&nbsp;Link&nbsp;/&nbsp;Mention**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=86229-117442&t=ySP3eq9nA4WgueJj-11).
+
+**[Product illustrations (Figma)](https://www.figma.com/design/1ui9w228X0S5WxaD0SRdIA/GitLab-Product-Illustrations?m=auto)**
+
+- File now included as part of the UI kit project. Library access remains unchanged.
+
+**[Patterns & page templates](https://www.figma.com/file/Amn6vBN9edRtuaTgy6ygkl)**
+
+- Patterns & page templates is now live. Containing shared global resources that includes components and design assets owned by feature teams, maintained in a shared space due to their wide usage. The file also contains globally useful abstractions and combinations that promote a more consistent UI. Published as the "Patterns and Page Templates" library, although many assets are only available as "sticker sheets" to copy/paste. Initial release includes:
+  - Empty states
+  - Merge request reports
+  - Navigation
+
+### Removals
+
+**[Component library](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ)**
+
+- Removes the following deprecated component pages and assets because updated versions have been available for some time:
+  - Alert (⚠️ DEPRECATED)
+  - Banner (⚠️ DEPRECATED)
+  - Drawer (⚠️ DEPRECATED)
+  - Tree (⚠️ DEPRECATED)
+- Removes the following deprecated pattern pages and assets because new assets have been available for some time in the [patterns & page templates](https://www.figma.com/file/Amn6vBN9edRtuaTgy6ygkl) file:
+  - Empty states (⚠️ DEPRECATED)
+  - Merge request reports (⚠️ DEPRECATED)
+  - Navigation (⚠️ DEPRECATED)
+
 ## 17.8
 
 <small>Published 2025-01-10</small>
