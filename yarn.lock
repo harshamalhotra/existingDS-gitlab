@@ -1320,7 +1320,7 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@evilmartians/lefthook@^1.10.11":
+"@evilmartians/lefthook@^1.11.0":
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.0.tgz#98a60d4cc7f13dfdb52daffe02f39b26a4380de1"
   integrity sha512-co2BCOPWncxTh9hDlNnSyfNMDxaoqxAUkuc5m0trR1f0iqGttcF8omZvdz9RF42y39WhhFkiU0+2hnYtCyqGnA==
