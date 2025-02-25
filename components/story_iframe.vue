@@ -20,6 +20,10 @@ export default {
       required: false,
       default: null,
     },
+    title: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
@@ -64,6 +68,7 @@ export default {
       :class="iFrameClass"
       class="responsive-iframe gl-min-w-full gl-border-none"
       allow="clipboard-write"
+      :title="title"
       @load="iFrameLoaded"
     ></iframe>
   </div>

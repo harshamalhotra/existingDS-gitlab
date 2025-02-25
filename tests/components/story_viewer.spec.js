@@ -1,5 +1,5 @@
 import { GlCard } from '@gitlab/ui';
-import { shallowMount } from '@vue/test-utils';
+import { mount, shallowMount } from '@vue/test-utils';
 import StoryViewer from '../../components/story_viewer.vue';
 import StoryIframe from '../../components/story_iframe.vue';
 
@@ -20,8 +20,8 @@ describe('story viewer component', () => {
   const findStoryLink = () => findByTestId('story-link');
   const getIFrameURL = () => findStoryIframe().props('url');
 
-  const createComponent = (props = {}) => {
-    wrapper = shallowMount(StoryViewer, {
+  const createComponent = (props = {}, mountFn = shallowMount) => {
+    wrapper = mountFn(StoryViewer, {
       propsData: {
         component,
         ...props,
@@ -121,6 +121,14 @@ describe('story viewer component', () => {
       createComponent();
 
       expect(findStoryTitle().text()).toBe(`${component}--default`);
+    });
+
+    it('renders story iframe with a title that matches the story card title', () => {
+      createComponent({}, mount);
+      const storyIframe = findStoryIframe();
+      const iframeDom = storyIframe.get('iframe');
+
+      expect(findStoryTitle().text()).toBe(iframeDom.attributes('title'));
     });
 
     it('renders the custom title if provided', () => {

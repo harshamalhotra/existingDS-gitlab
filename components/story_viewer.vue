@@ -87,7 +87,12 @@ export default {
 
 <template>
   <div class="app-styles gl-mb-5">
-    <story-iframe v-if="isDocsMode" :url="iFrameUrl" :iframe-padding="iframePadding" />
+    <story-iframe
+      v-if="isDocsMode"
+      :url="iFrameUrl"
+      :iframe-padding="iframePadding"
+      :title="cardTitle"
+    />
     <gl-card v-else>
       <template #header>
         <div class="gl-flex gl-gap-3">
@@ -102,7 +107,7 @@ export default {
           </div>
         </div>
       </template>
-      <story-iframe :url="iFrameUrl" :iframe-padding="iframePadding" />
+      <story-iframe :url="iFrameUrl" :iframe-padding="iframePadding" :title="cardTitle" />
     </gl-card>
   </div>
 </template>
