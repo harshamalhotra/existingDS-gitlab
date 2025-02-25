@@ -1,4 +1,5 @@
 const fileExtensionIcons = {
+  astro: 'astro',
   html: 'html',
   htm: 'html',
   html_vm: 'html',
@@ -11,6 +12,7 @@ const fileExtensionIcons = {
   mkd: 'markdown',
   mkdn: 'markdown',
   rst: 'markdown',
+  mdx: 'mdx',
   blink: 'blink',
   css: 'css',
   scss: 'sass',
@@ -349,6 +351,8 @@ const twoFileExtensionIcons = {
   'YAML-tmLanguage': 'yaml',
   'sln.dotsettings': 'settings',
   'sln.dotsettings.user': 'settings',
+  'd.dts': 'typescript-def',
+  'd.mts': 'typescript-def',
   'd.ts': 'typescript-def',
   'code-workplace': 'vscode',
   '7z': 'zip',
