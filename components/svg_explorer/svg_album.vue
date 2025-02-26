@@ -1,29 +1,42 @@
 <script>
-import { GlSearchBoxByType } from '../../helpers/gitlab_ui';
+import {
+  GlButton,
+  GlEmptyState,
+  GlSearchBoxByType,
+  GlFormGroup,
+  GlFormSelect,
+} from '../../helpers/gitlab_ui';
 import {
   mapQueryFieldsToComputed,
   mapQueryFieldsToData,
 } from '../../helpers/sync_state_to_query_params';
 import SvgCard from './svg_card.vue';
 
-const DEFAULT_ICON_SIZE = 'image-sm';
-const DEFAULT_COLORING = 'default';
+const DEFAULT_ICON_SIZE = 16;
 
 const queryFields = [
   { field: 'searchString', param: 'q', default: '' },
-  { field: 'selectedClass', param: 'size', default: DEFAULT_ICON_SIZE },
-  { field: 'selectedColor', param: 'color', default: DEFAULT_COLORING },
+  { field: 'selectedSize', param: 'size', default: DEFAULT_ICON_SIZE },
 ];
 
 export default {
   components: {
+    GlButton,
+    GlEmptyState,
     GlSearchBoxByType,
+    GlFormGroup,
+    GlFormSelect,
     SvgCard,
   },
   props: {
     elements: {
       type: Array,
       required: true,
+    },
+    layout: {
+      type: String,
+      required: false,
+      default: 'icons',
     },
     sizeOptions: {
       type: Array,
@@ -52,15 +65,6 @@ export default {
 
         return isVisible ? name : [];
       });
-    },
-    colors() {
-      return [
-        { value: DEFAULT_COLORING, name: 'Default' },
-        { value: 'inverse', name: 'Inverse' },
-        { value: 'indigo', name: 'Indigo' },
-        { value: 'gray', name: 'Gray' },
-        { value: 'red', name: 'Red' },
-      ];
     },
     copyStatusText() {
       switch (this.copyStatus) {
@@ -91,62 +95,64 @@ export default {
 </script>
 
 <template>
-  <div class="svg-album">
-    <header class="app-styles gl-mb-4">
-      <h5 class="subtitle">
-        <slot name="header"></slot>
-      </h5>
-      <div class="gl-mb-3">{{ copyStatusText }}</div>
+  <div>
+    <header class="gl-mb-5">
+      <div class="gl-mb-4">
+        <h2 class="gl-heading-3 !gl-mb-1">
+          <slot name="header"></slot>
+        </h2>
+        <div>{{ copyStatusText }}</div>
+      </div>
       <client-only>
-        <gl-search-box-by-type
-          ref="input"
-          v-model="searchString"
-          aria-label="Search"
-          autocomplete="off"
-          spellcheck="false"
-          :is-loading="false"
-        />
+        <div class="app-styles gl-flex gl-gap-3 sm:gl-flex-row">
+          <gl-form-group class="!gl-mb-0 gl-grow" label="Search" label-for="search">
+            <gl-search-box-by-type
+              id="search"
+              ref="input"
+              v-model="searchString"
+              autocomplete="off"
+              spellcheck="false"
+              :is-loading="false"
+            />
+          </gl-form-group>
+          <gl-form-group
+            v-if="sizeOptions.length"
+            class="!gl-mb-0"
+            label="Select a size"
+            label-for="size"
+          >
+            <gl-form-select id="size" v-model="selectedSize" :options="sizeOptions" />
+          </gl-form-group>
+        </div>
       </client-only>
     </header>
-    <section class="svg-list" :class="selectedClass + '-list'">
-      <aside>
-        <label v-if="sizeOptions.length" class="gl-mb-3 gl-block">
-          <strong>Select a size:</strong>
-          <select v-model="selectedClass">
-            <option
-              v-for="opt in sizeOptions"
-              :key="opt.value"
-              :value="opt.value"
-              :selected="opt.default"
-            >
-              {{ opt.label }}
-            </option>
-          </select>
-        </label>
-        <strong>Select a color combination</strong>
-        <div v-for="color in colors" :key="color.value">
-          <input :id="color.value" v-model="selectedColor" type="radio" :value="color.value" />
-          <label :for="color.value">
-            {{ color.name }}
-          </label>
-        </div>
-      </aside>
-      <svg-card
-        v-for="entry in elements"
-        v-show="filteredElements.includes(entry.name)"
-        :key="entry.name"
-        :image="entry.name"
-        :image-size="entry.size"
-        :class="selectedColor"
-        :source-path="sourcePath"
-        @imageCopied="setCopyStatus"
-        @permalinkSelected="setSearchString"
+    <div class="app-styles">
+      <div
+        v-if="filteredElements.length"
+        class="gl-grid gl-grid-cols-2 gl-gap-5 gl-p-0"
+        :class="{
+          'sm:gl-grid-cols-4 lg:gl-grid-cols-6': layout === 'icons',
+          'sm:gl-grid-cols-3': layout === 'illustrations',
+        }"
       >
-        <slot name="figure" :entry="entry" :class-name="selectedClass"></slot>
-      </svg-card>
-      <button v-if="filteredElements.length === 0" href="" @click.prevent="resetSearch">
-        <slot name="no-result"></slot>
-      </button>
-    </section>
+        <svg-card
+          v-for="entry in elements"
+          v-show="filteredElements.includes(entry.name)"
+          :key="entry.name"
+          :image="entry.name"
+          :image-size="entry.size"
+          :source-path="sourcePath"
+          @imageCopied="setCopyStatus"
+          @permalinkSelected="setSearchString"
+        >
+          <slot name="figure" :entry="entry" :size="Number(selectedSize)"></slot>
+        </svg-card>
+      </div>
+      <gl-empty-state v-else title="No results found">
+        <template #actions>
+          <gl-button @click.prevent="resetSearch">Reset search</gl-button>
+        </template>
+      </gl-empty-state>
+    </div>
   </div>
 </template>

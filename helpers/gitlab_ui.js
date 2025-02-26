@@ -15,3 +15,6 @@ export { default as GlLink } from '@gitlab/ui/dist/components/base/link/link';
 export { default as GlNav } from '@gitlab/ui/dist/components/base/nav/nav';
 export { default as GlNavItem } from '@gitlab/ui/dist/components/base/nav/nav_item';
 export { default as GlButton } from '@gitlab/ui/dist/components/base/button/button';
+export { default as GlFormGroup } from '@gitlab/ui/dist/components/base/form/form_group/form_group';
+export { default as GlFormSelect } from '@gitlab/ui/dist/components/base/form/form_select/form_select';
+export { default as GlEmptyState } from '@gitlab/ui/dist/components/regions/empty_state/empty_state';

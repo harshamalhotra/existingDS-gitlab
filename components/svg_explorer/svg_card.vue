@@ -1,11 +1,12 @@
 <script>
+import { GlButton, GlCard } from '../../helpers/gitlab_ui';
 import copyToClipboard from '../../helpers/copy_to_clipboard';
 import { bytesToKiloBytes } from '../../helpers/unit_utils';
-import SvgIcon from './svg_icon.vue';
 
 export default {
   components: {
-    SvgIcon,
+    GlButton,
+    GlCard,
   },
   props: {
     image: {
@@ -46,24 +47,41 @@ export default {
 </script>
 
 <template>
-  <div class="image-wrapper">
-    <div class="image-base" @click="copyImage">
-      <slot></slot>
-      <div class="image-name">
-        {{ imageName }}
-        <span v-if="imageSize"> ({{ kbSize }}) </span>
+  <gl-card body-class="gl-grow" footer-class="!gl-p-3">
+    <template #default>
+      <div
+        class="gl-flex gl-flex-col gl-items-center gl-justify-center gl-gap-3"
+        @click="copyImage"
+      >
+        <slot></slot>
+        <div class="gl-text-center gl-text-subtle">
+          {{ imageName }}
+          <span v-if="imageSize"> ({{ kbSize }}) </span>
+        </div>
       </div>
-    </div>
-    <div class="image-actions">
-      <a title="Copy to clipboard" @click="copyImage">
-        <svg-icon icon="copy-to-clipboard" class="image-sm" />
-      </a>
-      <a title="Permalink" @click="selectPermalink">
-        <svg-icon icon="link" class="image-sm" />
-      </a>
-      <a title="Open source" target="_blank" :href="sourceLink">
-        <svg-icon icon="external-link" class="image-sm" />
-      </a>
-    </div>
-  </div>
+    </template>
+    <template #footer>
+      <div class="gl-flex gl-justify-center">
+        <gl-button
+          aria-label="Copy to clipboard"
+          category="tertiary"
+          icon="copy-to-clipboard"
+          @click="copyImage"
+        />
+        <gl-button
+          aria-label="Permalink"
+          category="tertiary"
+          icon="link"
+          @click="selectPermalink"
+        />
+        <gl-button
+          aria-label="Open source"
+          category="tertiary"
+          icon="external-link"
+          target="_blank"
+          :href="sourceLink"
+        />
+      </div>
+    </template>
+  </gl-card>
 </template>
