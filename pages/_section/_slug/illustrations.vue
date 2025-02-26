@@ -30,12 +30,11 @@ export default {
   <svg-album
     :elements="Object.freeze($options.illustrations.illustrations)"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
-    class="illustrations-explorer"
+    layout="illustrations"
   >
     <template #header> {{ $options.illustrations.illustrationCount }} Illustrations</template>
     <template #figure="{ entry }">
       <img alt="" :src="imagePath(entry.name)" />
     </template>
-    <template #no-result> No illustrations found. Click here to reset your search! </template>
   </svg-album>
 </template>

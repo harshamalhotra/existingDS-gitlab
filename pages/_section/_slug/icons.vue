@@ -1,17 +1,18 @@
 <script>
 import iconData from '@gitlab/svgs/dist/icons.json';
-import SvgIcon from '../../../components/svg_explorer/svg_icon.vue';
+import { GlIcon } from '../../../helpers/gitlab_ui';
 import SvgAlbum from '../../../components/svg_explorer/svg_album.vue';
 import { bytesToKiloBytes } from '../../../helpers/unit_utils';
 
 const sizeOptions = [
-  { value: 'image-xs', label: 'Extra Small (12px)' },
-  { value: 'image-sm', label: 'Small (Default 16px)', default: true },
-  { value: 'image-md', label: 'Medium (32px)' },
-  { value: 'image-lg', label: 'Large (48px)' },
-  { value: 'image-xl', label: 'Extra Large (72px)' },
-  { value: 'image-hu', label: 'Huge (256px)' },
-  { value: 'image-nav', label: 'Sidemenu' },
+  { value: 8, text: '8' },
+  { value: 12, text: '12' },
+  { value: 14, text: '14' },
+  { value: 16, text: '16', default: true },
+  { value: 24, text: '24' },
+  { value: 32, text: '32' },
+  { value: 48, text: '48' },
+  { value: 72, text: '72' },
 ];
 
 export default {
@@ -19,7 +20,7 @@ export default {
   icons: iconData.icons.map((name) => ({ name })),
   components: {
     SvgAlbum,
-    SvgIcon,
+    GlIcon,
   },
   computed: {
     kbSize() {
@@ -34,12 +35,10 @@ export default {
     :elements="Object.freeze($options.icons)"
     :size-options="$options.sizeOptions"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
-    class="icons-explorer"
   >
     <template #header>{{ $options.icons.length }} Icons ({{ kbSize }})</template>
-    <template #figure="{ entry, className }">
-      <svg-icon :icon="entry.name" :class="className" />
+    <template #figure="{ entry, size }">
+      <gl-icon :name="entry.name" :size="size" />
     </template>
-    <template #no-result>No icons found. Click here to reset your search!</template>
   </svg-album>
 </template>

@@ -1,10 +1,10 @@
 <script>
-import SvgIcon from './svg_explorer/svg_icon.vue';
+import { GlIcon } from '../helpers/gitlab_ui';
 
 export default {
   name: 'MenuItem',
   components: {
-    SvgIcon,
+    GlIcon,
   },
   props: {
     item: {
@@ -88,7 +88,7 @@ export default {
     >
       <span class="sidebar__nav-toggle-inner">
         <span>{{ item.title }}</span>
-        <svg-icon icon="chevron-right" />
+        <gl-icon name="chevron-right" />
       </span>
     </button>
     <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" :class="depthClass">
