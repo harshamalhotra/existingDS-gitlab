@@ -1,19 +1,18 @@
 <script>
-import { GlIcon } from '../helpers/gitlab_ui';
+import { GlBadge } from '../helpers/gitlab_ui';
 
 export default {
   components: {
-    GlIcon,
+    GlBadge,
   },
 };
 </script>
 
 <template>
   <div class="md">
-    <strong class="app-styles gl-mb-2 gl-flex gl-items-center gl-gap-2 gl-font-bold gl-text-danger">
-      <gl-icon name="close" variant="danger" />
-      Don’t:
-    </strong>
+    <div class="app-styles gl-mb-2">
+      <gl-badge icon="close" variant="danger">Don’t</gl-badge>
+    </div>
     <slot></slot>
   </div>
 </template>
