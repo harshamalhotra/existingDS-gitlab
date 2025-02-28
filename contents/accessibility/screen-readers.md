@@ -10,12 +10,29 @@ While this guide doesn't cover specific screen reader usage (see [resources](#re
 
 **Sections**
 
+- [Screen reader and browser combinations](#screen-reader-and-browser-combinations)
 - [Alternative text](#alternative-text)
 - [Form controls](#form-controls)
 - [Calls to action](#calls-to-action)
 - [Page structure](#page-structure)
 - [Dynamic content](#dynamic-content)
 - [Resources](#resources)
+
+## Screen reader and browser combinations
+
+The following browser and screen reader combinations are recommended based on compatibility and use. For more information see Deque's [Recommended screen reader and browser combinations](https://dequeuniversity.com/screenreaders/forms-guide#desktop-forms-guide-recommended) and WebAIM's [Screen Reader User Survey #10 Results](https://webaim.org/projects/screenreadersurvey10/#browsercombos)).
+
+**macOS**
+
+- [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) with Safari
+
+**Windows**
+
+- [JAWS](https://www.freedomscientific.com/Products/Blindness/JAWS) with Chrome, also works well with Firefox and Edge
+- [NVDA](https://www.nvaccess.org/) with Chrome, also works well with Firefox and Edge
+- [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) with Edge
+
+Testing with more than one of these combinations helps you catch more issues and understand different user experiences. For setup guidance, see Sara Soueidan's post on [setting up a screen reader testing environment on your computer](https://www.sarasoueidan.com/blog/testing-environment-setup/#which-browser-and-screen-reader-pairings-should-you-test-on%3F). [Assistiv Labs](https://assistivlabs.com/) lets you remotely test multiple combinations without local setup.
 
 ## Alternative text
 
@@ -161,6 +178,6 @@ Screen readers must announce dynamic content changes to keep users informed. Thi
 - [Introduction to NVDA](https://webaim.org/articles/nvda/)
 - [Introduction to VoiceOver](https://webaim.org/articles/voiceover/)
 - [WebAIM Alternative Text Guide](https://webaim.org/techniques/alttext/)
-- [WebAIM Screen Reader Survey Results](https://webaim.org/projects/screenreadersurvey7/)
+- [WebAIM Screen Reader Survey Results](https://webaim.org/projects/screenreadersurvey10/)
 - [Getting Started with ARIA](https://a11yproject.com/posts/getting-started-aria/)
 - [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
