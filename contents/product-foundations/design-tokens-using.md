@@ -22,10 +22,10 @@ By default, Figma uses **Auto** mode which defaults to light theme. To change th
 - the Page sidebar when nothing is selected
 - the Appearance sidebar when an object is selected
 
-<div class="gl-grid gl-gap-12 lg:gl-grid-cols-2">
+<grid>
   <figure-img alt="Screenshot of Figma user interface sidebar cropped to the page section" label="'Apply variable mode' button in the Page sidebar" src="/img/design-tokens-figma-page-mode-select.png"></figure-img>
   <figure-img alt="Screenshot of Figma user interface sidebar cropped to the appearance section" label="'Apply variable mode' button in the frame appearance section" src="/img/design-tokens-figma-frame-appearance-mode-select.png"></figure-img>
-</div>
+</grid>
 
 You should set the mode at the page or parent frame level. Elements with the **Auto** mode inherit the mode from their parent, which allows styles to cascade. In the GitLab product, the mode applies to the entire user interface.
 

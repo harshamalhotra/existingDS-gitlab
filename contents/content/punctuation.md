@@ -17,132 +17,107 @@ Follow these additional guidelines:
 
 Use periods with links that are full sentences.
 
-| Do | Don’t |
-| --- | --- |
-| Mention someone to notify them. [Learn more](https://docs.gitlab.com). This is another sentence. | Mention someone to notify them. [More](https://docs.gitlab.com). |
+<grid>
+<do>
+
+Mention someone to notify them. [Learn more](https://docs.gitlab.com). This is another sentence.
+
+</do>
+<dont>
+
+Mention someone to notify them. [More](https://docs.gitlab.com).
+
+</dont>
+</grid>
 
 Use a period after every bullet point that is a sentence.
 
-<table>
-  <thead>
-    <tr>
-      <th>Do</th>
-      <th>Don’t</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-          <li>This is a complete sentence.</li>
-          <li>This is also a complete sentence.</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>This is a complete sentence, it needs a period</li>
-          <li>This is also a complete sentence, it also needs a period</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<grid>
+<do>
+
+- This is a complete sentence.
+- This is also a complete sentence.
+
+</do>
+<dont>
+
+- This is a complete sentence, it needs a period
+- This is also a complete sentence, it also needs a period
+
+</dont>
+</grid>
 
 Use a period after every bullet point that completes the introductory stem.
 
-<table>
-  <thead>
-    <tr>
-      <th>Do</th>
-      <th>Don’t</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <p>This is an introductory stem:</p>
-        <ul>
-          <li>Completed by this sentence.</li>
-          <li>Also completed by this sentence.</li>
-        </ul>
-      </td>
-      <td>
-        <p>This is an introductory stem:</p>
-        <ul>
-          <li>Completed by this sentence</li>
-          <li>Also completed by this sentence</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<grid>
+<do>
+
+This is an introductory stem:
+
+- Completed by this sentence.
+- Also completed by this sentence.
+
+</do>
+<dont>
+
+This is an introductory stem:
+
+- Completed by this sentence
+- Also completed by this sentence.
+
+</dont>
+</grid>
 
 Use no punctuation after bullets that are not sentences and do not complete the stem.
 
-<table>
-  <thead>
-    <tr>
-      <th>Do</th>
-      <th>Don’t</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <p>These are just words in a list:</p>
-        <ul>
-          <li>One item</li>
-          <li>Two item</li>
-        </ul>
-      </td>
-      <td>
-        <p>These are just words in a list:</p>
-        <ul>
-          <li>One item.</li>
-          <li>Two item.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<grid>
+<do>
+
+These are just words in a list:
+
+- One item
+- Two item
+
+</do>
+<dont>
+
+These are just words in a list:
+
+- One item.
+- Two item.
+
+</dont>
+</grid>
 
 Use all sentences or all fragments in a bulleted list, not a mixture.
 
-<table>
-  <thead>
-    <tr>
-      <th>Do</th>
-      <th>Don’t</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-          <li>Consistency is key here.</li>
-          <li>Item.</li>
-          <li>Don’t mix sentences and individual items in a list.</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>Consistency is key here.</li>
-          <li>Item</li>
-          <li>Don’t mix sentences and individual items in a list.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<grid>
+<do>
+
+- Consistency is key here.
+- Item.
+- Don’t mix sentences and individual items in a list.
+
+</do>
+<dont>
+
+- Consistency is key here.
+- Item
+- Don’t mix sentences and individual items in a list.
+
+</dont>
+</grid>
 
 ## Numbers
 
 Use “1, 2, 3” instead of “one, two, three” for numbers. One exception is when mixing uses of numbers, such as “Enter two 3s.”
 
-| Do | Don’t |
-| --- | --- |
-| 3 new commits | Three new commits |
-| Enter two 3s. | Enter 2 3s. |
+<grid>
+  <do>3 new commits</do>
+  <dont>Three new commits</dont>
+  <do>Enter two 3s.</do>
+  <dont>Enter 2 3s.</dont>
+</grid>
 
 ## Punctuation overview
 

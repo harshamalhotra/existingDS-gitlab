@@ -75,9 +75,14 @@ related:
 - By default, row content is vertically `top` aligned. However, in some cases it does makes sense to vertically `center` align content. Use your best judgement on when this is an exception.
 - As general rule, consider that alignment within a table is more important than consistency from table to table.
 
-|                                                                                                                                                                             **Do**                                                                                                                                                                             |                                                                                                                                                                             **Don’t**                                                                                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <figure-img alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" label="Table row content vertially aligned to top" src="/img/table-valign-top-do.svg"></figure-img> | <figure-img alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" label="Icon not horizontally aligned to the pixel grid" src="/img/table-valign-top-dont.svg"></figure-img> |
+<grid>
+  <do>
+    <figure-img class="!gl-my-0" alt="A table row example with multiple lines that wrap with a green line highlighting the top alignment" label="Table row content vertially aligned to top" src="/img/table-valign-top-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img class="!gl-my-0" alt="An incorrect table row example with a single line with a red line highlighting the middle alignment" label="Icon not horizontally aligned to the pixel grid" src="/img/table-valign-top-dont.svg"></figure-img>
+  </dont>
+</grid>
 
 ### Behavior
 
