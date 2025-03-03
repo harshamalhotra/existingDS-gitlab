@@ -1,0 +1,21 @@
+// OneTrust button in footer
+
+//sass-lint:disable no-important
+#ot-sdk-btn.ot-sdk-show-settings,
+#ot-sdk-btn.optanon-show-settings {
+  background-color: inherit !important;
+  color: var(--gl-text-color-link) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: inherit !important;
+  font-family: $gl-regular-font !important;
+  line-height: 1.5 !important;
+  text-decoration: none;
+
+  &:hover {
+    background-color: inherit !important;
+    color: var(--gl-text-color-link) !important;
+    text-decoration: underline;
+  }
+}

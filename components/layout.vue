@@ -2,11 +2,13 @@
 import { mapState } from 'vuex';
 import Navbar from './navbar.vue';
 import Sidebar from './sidebar.vue';
+import FooterNav from './footer_nav.vue';
 
 export default {
   components: {
     Navbar,
     Sidebar,
+    FooterNav,
   },
   props: {
     noFooter: {
@@ -31,27 +33,7 @@ export default {
     <main class="main" :class="{ 'sidebar--open': sidebarOpen }">
       <nuxt />
     </main>
-    <footer v-if="!noFooter" class="footer container gl-pb-7">
-      <div class="gl-flex gl-flex-wrap gl-justify-center">
-        <edit-this-page-link
-          edit-url="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main"
-        >
-          Page source
-        </edit-this-page-link>
-        <span class="footer-link-divider"></span>
-        <edit-this-page-link
-          edit-url="https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/main/-"
-        >
-          Open in Web IDE
-        </edit-this-page-link>
-        <span class="footer-link-divider"></span>
-        <nuxt-link to="/get-started/contributing">Contribute</nuxt-link>
-        <span class="footer-link-divider"></span>
-        <a href="https://about.gitlab.com/privacy/">Privacy statement</a>
-        <span class="footer-link-divider"></span>
-        <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie settings</button>
-      </div>
-    </footer>
+    <footer-nav v-if="!noFooter" />
   </div>
 </template>
 
