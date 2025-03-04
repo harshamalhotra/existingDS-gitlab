@@ -38,7 +38,7 @@ const shouldShowTailwindDocsLink = computed(
 const tailwindDocsLink = computed(() => {
   const path = route.meta.tailwindDocsLink || route.path;
 
-  return `https://tailwindcss.com/docs${path}`;
+  return `https://v3.tailwindcss.com/docs${path}`;
 });
 
 const supportsNegativeValues = computed(
