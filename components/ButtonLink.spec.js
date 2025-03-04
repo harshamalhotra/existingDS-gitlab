@@ -5,7 +5,7 @@ import ButtonLink from "./ButtonLink.vue";
 describe("ButtonLink", () => {
   it("renders the page title", () => {
     render(ButtonLink, {
-      props: { href: "https://tailwindcss.com/docs/flex" },
+      props: { href: "https://v3.tailwindcss.com/docs/flex" },
       slots: {
         default: "Official Tailwind Documentation",
       },
@@ -13,6 +13,6 @@ describe("ButtonLink", () => {
 
     expect(
       screen.getByRole("link", { name: "Official Tailwind Documentation" }),
-    ).toHaveAttribute("href", "https://tailwindcss.com/docs/flex");
+    ).toHaveAttribute("href", "https://v3.tailwindcss.com/docs/flex");
   });
 });

@@ -66,7 +66,7 @@ describe("PageTitle", () => {
       expect(screen.getByText("Supports negative values.")).toBeInTheDocument();
       expect(screen.getByRole("link", { name: "Learn more." })).toHaveAttribute(
         "href",
-        "https://tailwindcss.com/docs/margin#using-negative-values",
+        "https://v3.tailwindcss.com/docs/margin#using-negative-values",
       );
     });
   });
@@ -80,7 +80,7 @@ describe("PageTitle", () => {
 
       expect(
         screen.getByRole("link", { name: "Official Tailwind Documentation" }),
-      ).toHaveAttribute("href", "https://tailwindcss.com/docs/flex");
+      ).toHaveAttribute("href", "https://v3.tailwindcss.com/docs/flex");
     });
   });
 
@@ -100,7 +100,7 @@ describe("PageTitle", () => {
 
       expect(
         screen.getByRole("link", { name: "Official Tailwind Documentation" }),
-      ).toHaveAttribute("href", "https://tailwindcss.com/docs/grid-column");
+      ).toHaveAttribute("href", "https://v3.tailwindcss.com/docs/grid-column");
     });
   });
 });
