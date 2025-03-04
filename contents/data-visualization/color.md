@@ -21,23 +21,23 @@ Because the `500` step has at least a 3:1 contrast ratio on both light and dark 
 
 ### Blue
 
-<story-viewer component="tokens-color-data-viz-light" story="data-viz-blue" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="data-blue" title="Tokens"></story-viewer>
 
 ### Orange
 
-<story-viewer component="tokens-color-data-viz-light" story="data-viz-orange" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="data-orange" title="Tokens"></story-viewer>
 
 ### Aqua
 
-<story-viewer component="tokens-color-data-viz-light" story="data-viz-aqua" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="data-aqua" title="Tokens"></story-viewer>
 
 ### Green
 
-<story-viewer component="tokens-color-data-viz-light" story="data-viz-green" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="data-green" title="Tokens"></story-viewer>
 
 ### Magenta
 
-<story-viewer component="tokens-color-data-viz-light" story="data-viz-magenta" title="Tokens"></story-viewer>
+<story-viewer component="tokens-color-constant" story="data-magenta" title="Tokens"></story-viewer>
 
 ## Usage
 
