@@ -834,10 +834,10 @@
   resolved "https://registry.yarnpkg.com/@gitlab/fonts/-/fonts-1.3.0.tgz#df89c1bb6714e4a8a5d3272568aa4de7fb337267"
   integrity sha512-DoMUIN3DqjEn7wvcxBg/b7Ite5fTdF5EmuOZoBRo2j0UBGweDXmNBi+9HrTZs4cBU660dOxcf1hATFcG3npbPg==
 
-"@gitlab/ui@107.6.1":
-  version "107.6.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-107.6.1.tgz#36de8f7425f19a6cdbcea8ea3d4c845fe3cdfc4f"
-  integrity sha512-R2HMMadSrsv+GfWOTOYRetnnacWZduwPbrtEKvogRsZc2ovDg7/RBEnOVfEn6Vw5hHMTddsSexUD8tZFUuWFfA==
+"@gitlab/ui@109.0.0":
+  version "109.0.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-109.0.0.tgz#349f26cc90b57c066ab8c00017545270fc843b4f"
+  integrity sha512-WHJeEoigQWbSz0NCwZj9KGRhWZsSGBgabMZmeGkuGsxzIvNP6oIV8roCt8EbeVYbvXmjWA6D6wtxIU2t6RE1iw==
   dependencies:
     "@floating-ui/dom" "1.4.3"
     echarts "^5.3.2"
