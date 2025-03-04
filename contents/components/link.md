@@ -9,9 +9,17 @@ related:
 
 ## Examples
 
-<story-viewer component="base-link" story="default-link" title="Link"></story-viewer>
+<story-viewer component="base-link" story="inline-link" title="Inline Text Link"></story-viewer>
 
-<todo>Add examples for all link variants.</todo>
+<story-viewer component="base-link" story="inline-external-link" title="Inline Text Link (external url)"></story-viewer>
+
+<story-viewer component="base-link" story="default" title="UI Link"></story-viewer>
+
+<story-viewer component="base-link" story="meta-link" title="Meta Link"></story-viewer>
+
+<story-viewer component="base-link" story="mention-link" title="Mention Link"></story-viewer>
+
+<story-viewer component="base-link" story="mention-link-current-user" title="Mention Link (current user)"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=design)
 
