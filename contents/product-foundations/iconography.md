@@ -307,6 +307,10 @@ Icons are used to stress visual weight for elements with a high priority or to e
 
 The level of visual weight from heavy to light is: **Icon + label > Icon > label.**
 
+### Color inheritance
+
+Icons inherit the color of their parent element. This aligns with the web's default behavior and creates a more consistent implementation across the product. Use explicit color variants for icons only when they require a color that differs from the parent element.
+
 ### Referencing icons in code
 
 For more information on how icons are referenced in the product, go to [GitLab Docs - Icons and SVG Illustrations](https://docs.gitlab.com/ee/development/fe_guide/icons.html).
