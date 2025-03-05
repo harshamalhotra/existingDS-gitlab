@@ -3,7 +3,7 @@ Thanks for your interest in contributing to Pajamas! Learn more about contributi
 
 This merge request template is for any kind of updates to the documentation available in the Pajamas website (https://design.gitlab.com), such as component guidelines or object pages.
 
-Follow the checklist at the bottom of this template to use it appropriately.
+Follow the checklist in this template to use it appropriately.
 -->
 
 ### What does this MR do?
@@ -30,7 +30,7 @@ Follow the checklist at the bottom of this template to use it appropriately.
 
 <!-- Do not edit or remove the lines below -->
 
-/label ~"Pajamas"
+/label ~"Pajamas" ~"pajamas::define" ~"type::maintenance" ~component:
 
 [commits]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md
 [transparency]: https://about.gitlab.com/handbook/values/#say-why-not-just-what
