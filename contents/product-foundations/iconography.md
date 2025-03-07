@@ -263,6 +263,7 @@ There are, however, several icons whose design doesn't match a single metaphor, 
 - A 'chevron' icon in a [dropdown button](/components/button#dropdown-buttons) can also represent the expanded state of an [accordion](/components/accordion).
 - An '×' icon can indicate a failed status or, when used as a button, closing a modal window or removing a connection between objects.
 - A [remove](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~remove) icon typically represents permanently deleting an object or, in the case of tokens, revoking access.
+- A [lock](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~lock) icon represents editing restrictions (read-only, file locking) and access restriction (private projects, setting set by admin/parent group).
 
 In addition to context, ensure that `aria-label` attributes and/or tooltips are used to communicate the icon meaning.
 
