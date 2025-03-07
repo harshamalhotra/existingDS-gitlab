@@ -210,6 +210,7 @@ export default {
     :no-fade="true"
     active-nav-item-class="gl-tab-nav-item-active"
     :content-class="[contentClass, 'gl-tab-content']"
+    nav-wrapper-class="gl-tabs-wrapper"
     :nav-class="[navClass, 'gl-tabs-nav']"
     :justified="justified"
     :value="activeTabIndex"
@@ -222,8 +223,8 @@ export default {
       <slot :name="slot"></slot>
     </template>
 
-    <template v-if="hasActions" #tabs-start>
-      <div data-testid="actions-tabs-start" class="gl-actions-tabs-start">
+    <template v-if="hasActions" #toolbar-start>
+      <div role="toolbar" data-testid="actions-tabs-start" class="gl-actions-tabs-start">
         <gl-button
           v-if="actionPrimary"
           data-testid="action-primary"
@@ -250,8 +251,8 @@ export default {
         </gl-button>
       </div>
     </template>
-    <template v-if="hasActions" #tabs-end>
-      <div data-testid="actions-tabs-end" class="gl-actions-tabs-end">
+    <template v-if="hasActions" #toolbar-end>
+      <div role="toolbar" data-testid="actions-tabs-end" class="gl-actions-tabs-end">
         <gl-button
           v-if="actionPrimary"
           data-testid="action-primary"
