@@ -3,19 +3,13 @@
  */
 
 @mixin media-sm-up() {
-  @media (min-width: 650px) {
+  @media (min-width: 576px) {
     @content;
   }
 }
 
 @mixin media-sm-down() {
-  @media (max-width: 649px) {
+  @media (max-width: 575px) {
     @content;
-  }
-}
-
-@mixin hide-sm-up() {
-  @include media-sm-up() {
-    display: none;
   }
 }

@@ -1,8 +1,17 @@
+<script>
+import PageContainer from '../components/page_container.vue';
+
+export default {
+  components: {
+    PageContainer,
+  },
+};
+</script>
 <template>
   <div class="index typography">
     <nuxt-child />
     <section aria-labelledby="skipTarget" class="homepage-hero gl-m-5">
-      <div class="container gl-grid gl-min-h-48 gl-place-items-center gl-text-center">
+      <page-container class="gl-grid gl-min-h-48 gl-place-items-center gl-text-center">
         <div>
           <img src="../assets/pajamas-logo.svg" alt="" width="56" height="96" />
           <h1 id="skipTarget" class="gl-my-3! homepage-hero-heading gl-heading-display">
@@ -10,11 +19,11 @@
           </h1>
           <p class="gl-text-lg">Resources, components, and design guidelines behind GitLab</p>
         </div>
-      </div>
+      </page-container>
     </section>
 
     <section aria-label="Content" class="gl-my-8">
-      <div class="container">
+      <page-container>
         <div class="gl-grid gl-gap-7 gl-p-0 lg:gl-grid-cols-2">
           <div>
             <h2>Brand</h2>
@@ -32,11 +41,11 @@
             </p>
           </div>
         </div>
-      </div>
+      </page-container>
     </section>
 
     <section aria-labelledby="contribute" class="gl-my-8">
-      <div class="container">
+      <page-container>
         <div
           class="gl-rounded-lg gl-border-1 gl-border-solid gl-border-default gl-bg-subtle gl-p-5 lg:-gl-mx-5"
         >
@@ -87,7 +96,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </page-container>
     </section>
   </div>
 </template>

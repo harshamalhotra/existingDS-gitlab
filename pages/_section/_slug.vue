@@ -1,5 +1,7 @@
 <script>
-import { GlAlert, GlNav, GlNavItem } from '../../helpers/gitlab_ui';
+import { GlNav, GlNavItem } from '../../helpers/gitlab_ui';
+import PageContainer from '../../components/page_container.vue';
+import PageHeader from '../../components/page_header.vue';
 import { buildMeta } from '../../helpers/seo';
 
 /*
@@ -26,9 +28,10 @@ const componentNameToLabelMap = {
 
 export default {
   components: {
-    GlAlert,
     GlNav,
     GlNavItem,
+    PageContainer,
+    PageHeader,
   },
   scrollToTop: true,
   editThisPage: {
@@ -152,18 +155,12 @@ export default {
 </script>
 
 <template>
-  <div class="container gl-py-7">
-    <div class="md typography gl-mb-5">
-      <h1 id="skipTarget" class="gl-heading-display !gl-mb-4 !gl-mt-0" tabindex="-1">
-        {{ page.name }}
-      </h1>
-      <div v-if="page.deprecated" class="app-styles gl-mb-3">
-        <gl-alert :dismissible="false" variant="warning">
-          Please refrain from using this component - it is about to be deprecated!
-        </gl-alert>
-      </div>
-      <p v-if="page.description">{{ page.description }}</p>
-    </div>
+  <page-container class="gl-py-7">
+    <page-header
+      :heading="page.name"
+      :description="page.description"
+      :deprecated="page.deprecated"
+    />
     <div v-if="showTabs" class="app-styles">
       <gl-nav class="gl-tabs-nav !gl-mb-5">
         <gl-nav-item
@@ -186,5 +183,5 @@ export default {
     <p v-if="lastUpdatedAt" class="gl-mt-5 gl-text-center">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
-  </div>
+  </page-container>
 </template>

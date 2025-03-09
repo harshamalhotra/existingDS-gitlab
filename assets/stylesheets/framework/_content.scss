@@ -25,19 +25,6 @@
   }
 }
 
-.container {
-  margin: 0 auto;
-  max-width: $page-width;
-  padding-left: $gl-spacing-scale-5;
-  padding-right: $gl-spacing-scale-5;
-  width: 100%;
-
-  @include media-sm-up {
-    padding-left: $gl-spacing-scale-7;
-    padding-right: $gl-spacing-scale-7;
-  }
-}
-
 .admonition {
   padding: $gl-spacing-scale-5;
   display: block;
