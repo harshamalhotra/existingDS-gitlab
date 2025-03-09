@@ -1,8 +1,5 @@
 @import 'variables';
-@import '@gitlab/ui/src/tokens/build/css/tokens.css';
-@import '@gitlab/ui/src/tokens/build/css/tokens.dark.css';
-@import '@gitlab/ui/src/scss/variables';
-@import '@gitlab/ui/src/scss/mixins';
+@import '@gitlab/ui/src/scss/gitlab_ui';
 
 @import 'utilities/mixins';
 
@@ -19,11 +16,3 @@
 @import 'framework/typography';
 
 @import 'pages/homepage';
-
-/**
-Import GitLab UI component styles.
-At the moment we only import component specific styles in order to avoid side-effects
-*/
-.app-styles {
-  @import '@gitlab/ui/src/scss/gitlab_ui';
-}

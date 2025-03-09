@@ -42,7 +42,7 @@ related:
   LIVE CODED EXAMPLES are included here.
 
   EXAMPLE:
-  <gl-example-display class="app-styles gl-mb-5"  example-name="alert-variants"></gl-example-display>
+  <gl-example-display class="gl-mb-5"  example-name="alert-variants"></gl-example-display>
 -->
 
 [View in Pajamas UI Kit →](link-to-page-or-frame)

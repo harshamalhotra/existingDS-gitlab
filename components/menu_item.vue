@@ -95,7 +95,7 @@ export default {
       :aria-controls="itemId"
       @click.prevent="item.toggle()"
     >
-      <span class="app-styles gl-flex gl-items-center gl-gap-2">
+      <span class="gl-flex gl-items-center gl-gap-2">
         <span class="gl-shrink gl-grow">{{ item.title }}</span>
         <gl-icon :class="{ 'gl-rotate-90': isExpanded }" name="chevron-right" />
       </span>
@@ -117,7 +117,7 @@ export default {
       :href="path"
       target="_blank"
       rel="noopener"
-      class="app-styles sidebar__nav-anchor gl-flex gl-gap-2 gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+      class="sidebar__nav-anchor gl-flex gl-gap-2 gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
       :class="depthClass"
     >
       <span>{{ item.title }}</span>

@@ -29,7 +29,7 @@ export default {
 
 <template>
   <span
-    class="app-styles gl-mb-5 gl-flex gl-flex-wrap gl-gap-2 gl-rounded-base gl-bg-feedback-neutral gl-p-5 gl-text-base gl-leading-20 gl-text-feedback-neutral"
+    class="gl-mb-5 gl-flex gl-flex-wrap gl-gap-2 gl-rounded-base gl-bg-feedback-neutral gl-p-5 gl-text-base gl-leading-20 gl-text-feedback-neutral"
   >
     <div class="gl-flex gl-items-center gl-gap-3">
       <gl-icon name="document" :size="16" class="gl-fill-feedback-neutral" />

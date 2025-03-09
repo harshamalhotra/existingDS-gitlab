@@ -161,20 +161,18 @@ export default {
       :description="page.description"
       :deprecated="page.deprecated"
     />
-    <div v-if="showTabs" class="app-styles">
-      <gl-nav class="gl-tabs-nav !gl-mb-5">
-        <gl-nav-item
-          v-for="tab in tabs"
-          :key="tab.route"
-          exact
-          :to="{ name: tab.route, params: $route.params }"
-          link-classes="gl-tab-nav-item"
-          active-class="gl-tab-nav-item-active"
-        >
-          {{ tab.title }}
-        </gl-nav-item>
-      </gl-nav>
-    </div>
+    <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
+      <gl-nav-item
+        v-for="tab in tabs"
+        :key="tab.route"
+        exact
+        :to="{ name: tab.route, params: $route.params }"
+        link-classes="gl-tab-nav-item"
+        active-class="gl-tab-nav-item-active"
+      >
+        {{ tab.title }}
+      </gl-nav-item>
+    </gl-nav>
     <nuxt-child
       :page="page"
       :component-label="componentLabel"

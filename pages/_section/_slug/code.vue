@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="app-styles gl-pt-0">
+  <div class="gl-pt-0">
     <div v-for="story in page.components" :key="story">
       <story-viewer :component="story" view-mode="docs" />
     </div>

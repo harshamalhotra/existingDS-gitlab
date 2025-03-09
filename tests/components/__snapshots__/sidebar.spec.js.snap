@@ -51,7 +51,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
             class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
-              class="app-styles gl-flex gl-items-center gl-gap-2"
+              class="gl-flex gl-items-center gl-gap-2"
             >
               <span
                 class="gl-shrink gl-grow"
@@ -130,7 +130,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
             class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
-              class="app-styles gl-flex gl-items-center gl-gap-2"
+              class="gl-flex gl-items-center gl-gap-2"
             >
               <span
                 class="gl-shrink gl-grow"
