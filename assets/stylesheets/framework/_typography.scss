@@ -31,13 +31,6 @@ p {
   @apply gl-leading-24;
 }
 
-a {
-  @apply gl-text-link;
-  @apply gl-no-underline;
-  @apply hover:gl-text-link;
-  @apply hover:gl-underline;
-}
-
 .typography a {
   @apply gl-underline;
 }
