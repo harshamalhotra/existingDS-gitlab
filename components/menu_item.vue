@@ -30,7 +30,14 @@ export default {
   },
   computed: {
     depthClass() {
-      return `sidebar__nav--depth-${this.depth}`;
+      switch (this.depth) {
+        case 2:
+          return 'gl-pl-6';
+        case 3:
+          return 'gl-pl-8';
+        default:
+          return null;
+      }
     },
     hasChildren() {
       return this.item.children?.length;
@@ -65,11 +72,11 @@ export default {
 </script>
 
 <template>
-  <li v-if="depth === 0">
+  <li v-if="depth === 0" class="gl-m-0 gl-list-none gl-p-0">
     <div aria-hidden="true" class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold">
       {{ item.title }}
     </div>
-    <ul :aria-label="item.title">
+    <ul :aria-label="item.title" class="gl-m-0 gl-pl-0">
       <menu-item
         v-for="child in item.children"
         :key="child.id"
@@ -80,20 +87,20 @@ export default {
       />
     </ul>
   </li>
-  <li v-else-if="hasChildren">
+  <li v-else-if="hasChildren" class="gl-m-0 gl-list-none gl-p-0">
     <button
-      class="sidebar__nav-toggle"
-      :class="{ 'sidebar__nav-toggle--expanded': isExpanded }"
+      class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+      :class="depthClass"
       :aria-expanded="isExpanded"
       :aria-controls="itemId"
       @click.prevent="item.toggle()"
     >
-      <span class="sidebar__nav-toggle-inner">
-        <span>{{ item.title }}</span>
-        <gl-icon name="chevron-right" />
+      <span class="app-styles gl-flex gl-items-center gl-gap-2">
+        <span class="gl-shrink gl-grow">{{ item.title }}</span>
+        <gl-icon :class="{ 'gl-rotate-90': isExpanded }" name="chevron-right" />
       </span>
     </button>
-    <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" :class="depthClass">
+    <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" class="gl-m-0 gl-pl-0">
       <menu-item
         v-for="child in item.children"
         :key="child.id"
@@ -104,20 +111,23 @@ export default {
       />
     </ul>
   </li>
-  <li v-else class="sidebar__nav-option">
+  <li v-else class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0">
     <a
       v-if="isExternalLink"
       :href="path"
       target="_blank"
       rel="noopener"
-      class="sidebar__nav-anchor"
+      class="app-styles sidebar__nav-anchor gl-flex gl-gap-2 gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+      :class="depthClass"
     >
-      {{ item.title }}
+      <span>{{ item.title }}</span>
+      <gl-icon name="external-link" />
     </a>
     <nuxt-link
       v-else
       :to="path"
-      class="sidebar__nav-anchor"
+      class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+      :class="depthClass"
       @click.prevent="navTree.activateNode(item)"
     >
       {{ item.title }}

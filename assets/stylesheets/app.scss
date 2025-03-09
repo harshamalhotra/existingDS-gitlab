@@ -8,16 +8,18 @@
 
 @import 'framework/fonts';
 @import 'framework/base';
-@import 'framework/skip-link';
-@import 'framework/content';
+@import 'framework/skip_link';
 @import 'framework/one_trust';
+@import 'framework/page';
+@import 'framework/main';
+@import 'framework/markdown';
 @import 'framework/logo';
 @import 'framework/sidebar';
+@import 'framework/table';
 @import 'framework/typography';
 
-@import 'components/table';
-
 @import 'pages/homepage';
+
 /**
 Import GitLab UI component styles.
 At the moment we only import component specific styles in order to avoid side-effects

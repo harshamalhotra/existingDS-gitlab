@@ -1,0 +1,51 @@
+.md,
+.md .nuxt-content {
+  @apply gl-text-base;
+  @apply gl-leading-24;
+
+  > h1 {
+    @apply gl-mt-7
+  }
+
+  > h2,
+  > h3 {
+    @apply gl-mt-6;
+  }
+
+  > h4,
+  > h5,
+  > h6 {
+    @apply gl-mt-5;
+  }
+
+  > p {
+    @apply gl-mb-5;
+    @apply last:gl-mb-0;
+  }
+
+  > blockquote,
+  > ul,
+  > ol {
+    @apply gl-mb-5;
+    @apply gl-mt-0;
+  }
+
+  > ul,
+  > ol {
+    @apply gl-pl-6;
+
+    ul,
+    ol {
+      @apply gl-mb-0;
+    }
+  }
+
+  > blockquote {
+    @apply gl-text-subtle;
+    @apply gl-mx-0;
+    @apply gl-pl-5;
+    @apply gl-border-l-2;
+    @apply gl-border-l-solid;
+    @apply gl-border-purple-500;
+  }
+}

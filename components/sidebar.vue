@@ -51,7 +51,7 @@ export default {
     <div class="gl-grow gl-overflow-auto gl-px-2 gl-py-3">
       <nav class="sidebar__nav" aria-labelledby="nav-heading">
         <h2 id="nav-heading" class="gl-sr-only">Main navigation</h2>
-        <ul>
+        <ul class="gl-m-0 gl-pl-0">
           <menu-item
             v-for="item in navTree.topLevelNodes"
             :key="item.id"

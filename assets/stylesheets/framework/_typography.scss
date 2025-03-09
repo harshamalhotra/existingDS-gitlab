@@ -1,16 +1,23 @@
-@mixin type-scale($scale, $line-height, $margin-bottom: 0, $margin-top: 24px) {
-  font-size: $gl-font-size + ($scale * 2);
-  line-height: $line-height * 4px;
-  margin-bottom: $margin-bottom * 8px;
-  margin-top: $margin-top;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  color: var(--gl-text-color-heading);
-  font-weight: $gl-font-weight-bold;
-}
+  @apply gl-relative;
+  @apply gl-text-heading;
+  @apply gl-font-bold;
 
-/* UI Typography */
+  > a[aria-hidden] {
+    left: -1em;
+    width: 1em;
+    visibility: hidden;
+    position: absolute;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  &:hover > a[aria-hidden] {
+    visibility: visible;
+  }
+}
 
 h1 { @apply gl-heading-1 }
 h2 { @apply gl-heading-2 }
@@ -18,127 +25,64 @@ h3 { @apply gl-heading-3 }
 h4 { @apply gl-heading-4 }
 h5 { @apply gl-heading-5 }
 h6 { @apply gl-heading-6 }
-p  { @include type-scale(0, 4, 0, 0) }
 
-a {
-  text-decoration: none;
-  color: var(--gl-text-color-link);
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &:focus {
-    @include gl-focus;
-  }
+p {
+  @apply gl-text-base;
+  @apply gl-leading-24;
 }
 
+a {
+  @apply gl-text-link;
+  @apply gl-no-underline;
+  @apply hover:gl-text-link;
+  @apply hover:gl-underline;
+}
+
+.typography a {
+  @apply gl-underline;
+}
+
+a,
 button {
   &:focus {
     @include gl-focus;
   }
 }
 
+kbd {
+  padding: 3px 5px;
+  line-height: 1;
+  font-size: 0.875em;
+  @apply gl-text-subtle;
+  @apply gl-bg-subtle;
+  @apply gl-border;
+  border-image: none;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 var(--gl-border-color-default);
+}
+
 code {
-  color: var(--gl-text-color-default);
-  background-color: var(--gl-background-color-strong);
-  border-radius: $gl-border-radius-base;
-  font-family: $gl-monospace-font;
+  @apply gl-text-default;
+  @apply gl-bg-strong;
+  @apply gl-rounded-base;
+  @apply gl-font-monospace;
+  @apply gl-px-2;
+  @apply gl-py-1;
+  @apply gl-whitespace-pre-wrap;
+  @apply gl-break-keep;
   font-size: 90%;
-  padding: $gl-spacing-scale-1 $gl-spacing-scale-2;
-  white-space: pre-wrap;
   word-wrap: normal;
-  word-break: keep-all;
 }
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-  background-color: var(--gl-background-color-subtle) !important;
-  border: 1px solid var(--gl-border-color-default);
-  border-radius: $gl-border-radius-base;
+  @apply gl-border;
+  @apply gl-rounded-base;
+  @apply gl-bg-subtle #{!important};
   text-shadow: none !important;
 
   code {
-    padding: 0;
-    background-color: var(--gl-background-color-subtle) !important;
+    @apply gl-p-0;
+    @apply gl-bg-subtle #{!important};
   }
-}
-
-.label { @include type-scale(0, 4, 0, 0) }
-.f-display { @include type-scale(14, 12) }
-.f-small { @include type-scale(-1, 4, 0, 0) }
-
-/*  MD Typography */
-
-.md,
-.md .nuxt-content {
-  @include type-scale(0, 6, 0, 0);
-
-  > h1 { @apply gl-mt-7 }
-
-  > h2,
-  > h3 {
-    @apply gl-mt-6;
-  }
-
-  > h4,
-  > h5,
-  > h6 {
-    @apply gl-mt-5;
-  }
-
-  > p  { @include type-scale(0, 6, 2, 0) }
-
-  > blockquote,
-  > ul,
-  > ol {
-    margin-bottom: 16px;
-    margin-top: 0;
-  }
-
-  > ul, > ol {
-    padding-left: $gl-spacing-scale-6;
-
-    ul, ol { margin-bottom: 0; }
-  }
-
-  > blockquote {
-    border-left: 2px solid $purple-500;
-    color: var(--gl-text-color-subtle);
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: $gl-spacing-scale-5;
-
-    > p  { @include type-scale(0, 6, 0, 0) }
-  }
-}
-
-.nuxt-content {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    position: relative;
-
-    > a[aria-hidden] {
-      left: -1em;
-      width: 1em;
-      visibility: hidden;
-      position: absolute;
-
-      &::before {
-        content: '#';
-      }
-    }
-
-    &:hover > a[aria-hidden] {
-      visibility: visible;
-    }
-  }
-}
-
-p:last-child {
-  margin-bottom: 0;
 }

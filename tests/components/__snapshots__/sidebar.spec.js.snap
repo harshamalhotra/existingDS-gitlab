@@ -12,8 +12,12 @@ exports[`sidebar component renders sidebar properly 1`] = `
     Main navigation
   </h2>
    
-  <ul>
-    <li>
+  <ul
+    class="gl-m-0 gl-pl-0"
+  >
+    <li
+      class="gl-m-0 gl-list-none gl-p-0"
+    >
       <div
         aria-hidden="true"
         class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
@@ -25,12 +29,13 @@ exports[`sidebar component renders sidebar properly 1`] = `
        
       <ul
         aria-label="Top-level item 1"
+        class="gl-m-0 gl-pl-0"
       >
         <li
-          class="sidebar__nav-option"
+          class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
         >
           <nuxt-link-stub
-            class="sidebar__nav-anchor"
+            class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
             to="/top1/second1"
           >
             
@@ -38,15 +43,19 @@ exports[`sidebar component renders sidebar properly 1`] = `
   
           </nuxt-link-stub>
         </li>
-        <li>
+        <li
+          class="gl-m-0 gl-list-none gl-p-0"
+        >
           <button
             aria-controls="item-second-level-item-2-1"
-            class="sidebar__nav-toggle"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
-              class="sidebar__nav-toggle-inner"
+              class="app-styles gl-flex gl-items-center gl-gap-2"
             >
-              <span>
+              <span
+                class="gl-shrink gl-grow"
+              >
                 Second-level item 2
               </span>
                
@@ -65,15 +74,15 @@ exports[`sidebar component renders sidebar properly 1`] = `
            
           <ul
             aria-label="Second-level item 2"
-            class="sidebar__nav--depth-1"
+            class="gl-m-0 gl-pl-0"
             id="item-second-level-item-2-1"
             style="display: none;"
           >
             <li
-              class="sidebar__nav-option"
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor"
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top1/second2/third1"
               >
                 
@@ -82,10 +91,10 @@ exports[`sidebar component renders sidebar properly 1`] = `
               </nuxt-link-stub>
             </li>
             <li
-              class="sidebar__nav-option"
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor"
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top1/second2/third2"
               >
                 
@@ -97,7 +106,9 @@ exports[`sidebar component renders sidebar properly 1`] = `
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="gl-m-0 gl-list-none gl-p-0"
+    >
       <div
         aria-hidden="true"
         class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
@@ -109,16 +120,21 @@ exports[`sidebar component renders sidebar properly 1`] = `
        
       <ul
         aria-label="Top-level item 2"
+        class="gl-m-0 gl-pl-0"
       >
-        <li>
+        <li
+          class="gl-m-0 gl-list-none gl-p-0"
+        >
           <button
             aria-controls="item-second-level-item-without-path-2"
-            class="sidebar__nav-toggle"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
-              class="sidebar__nav-toggle-inner"
+              class="app-styles gl-flex gl-items-center gl-gap-2"
             >
-              <span>
+              <span
+                class="gl-shrink gl-grow"
+              >
                 Second-level item without path
               </span>
                
@@ -137,15 +153,15 @@ exports[`sidebar component renders sidebar properly 1`] = `
            
           <ul
             aria-label="Second-level item without path"
-            class="sidebar__nav--depth-1"
+            class="gl-m-0 gl-pl-0"
             id="item-second-level-item-without-path-2"
             style="display: none;"
           >
             <li
-              class="sidebar__nav-option"
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor"
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top2/third2"
               >
                 
