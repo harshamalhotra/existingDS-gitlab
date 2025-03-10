@@ -178,7 +178,7 @@ export default {
       :component-label="componentLabel"
       :foundation-label="page.foundationLabel"
     />
-    <p v-if="lastUpdatedAt" class="gl-mt-5 gl-text-center">
+    <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
   </page-container>
