@@ -1320,10 +1320,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@evilmartians/lefthook@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.2.tgz#64e17a25d352a25074e85c6b4798a6554cd8cf64"
-  integrity sha512-8jTMnouJ+OBJmC7CKtI8Fj6lZ8aLC0W01QMsWkZdfdfZmVZ4x1LLGTRhSDb6o6Ooz/455CzRyMvtKuwARr+EHQ==
+"@evilmartians/lefthook@^1.11.3":
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.3.tgz#95c654b1aeac812efb34cda3d34f38dc3c9c3b25"
+  integrity sha512-ic3gCgCnm7XQCxGLsnLXU+33J86iFuC5r4JYSWrMXo0rTjGT6EqKKpSDuA0r/1F14VZmdgmvRUTXTBOvXA2UXA==
 
 "@floating-ui/core@^1.3.1":
   version "1.5.3"
