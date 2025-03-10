@@ -55,7 +55,7 @@ kbd {
 }
 
 code {
-  @apply gl-text-default;
+  @apply gl-text-default #{!important};
   @apply gl-bg-strong;
   @apply gl-rounded-base;
   @apply gl-font-monospace;
@@ -63,7 +63,7 @@ code {
   @apply gl-py-1;
   @apply gl-whitespace-pre-wrap;
   @apply gl-break-keep;
-  font-size: 90%;
+  font-size: 90% !important;
   word-wrap: normal;
 }
 
