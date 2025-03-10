@@ -24,7 +24,6 @@ The p HTML element represents a paragraph. Paragraphs are usually represented in
 
 > The blockquote HTML element indicates that the enclosed text is an extended quotation.
 > Usually, this is rendered visually by indentation.
-> 
 > A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the cite element.
 
 The p HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
@@ -36,10 +35,10 @@ The p HTML element represents a paragraph. Paragraphs are usually represented in
 ### Lists
 
 - Unordered list item
-   - Child unordered list item
-      - Grandchild unordered list item
-      - Grandchild unordered list item
-   - Child unordered list item
+  - Child unordered list item
+    - Grandchild unordered list item
+    - Grandchild unordered list item
+  - Child unordered list item
 - Unordered list item
 - Unordered list item
 
