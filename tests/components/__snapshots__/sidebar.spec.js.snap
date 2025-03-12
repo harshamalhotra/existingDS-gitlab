@@ -40,7 +40,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
         </li>
         <li>
           <button
-            aria-controls="item-second2"
+            aria-controls="item-second-level-item-2-1"
             class="sidebar__nav-toggle"
           >
             <span
@@ -66,7 +66,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
           <ul
             aria-label="Second-level item 2"
             class="sidebar__nav--depth-1"
-            id="item-second2"
+            id="item-second-level-item-2-1"
             style="display: none;"
           >
             <li
@@ -112,7 +112,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
       >
         <li>
           <button
-            aria-controls="item-undefined"
+            aria-controls="item-second-level-item-without-path-2"
             class="sidebar__nav-toggle"
           >
             <span
@@ -138,7 +138,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
           <ul
             aria-label="Second-level item without path"
             class="sidebar__nav--depth-1"
-            id="item-undefined"
+            id="item-second-level-item-without-path-2"
             style="display: none;"
           >
             <li

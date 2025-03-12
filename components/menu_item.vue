@@ -1,5 +1,7 @@
 <script>
+import uniqueId from 'lodash/uniqueId';
 import { GlIcon } from '../helpers/gitlab_ui';
+import { slugify } from '../helpers/slugify';
 
 export default {
   name: 'MenuItem',
@@ -40,7 +42,7 @@ export default {
       return this.item.path && this.item.path.startsWith('http');
     },
     itemId() {
-      return `item-${this.item.path}`;
+      return uniqueId(`item-${slugify(this.item.title)}-`);
     },
     nextBasePath() {
       let { basePath: nextBasePath } = this;
