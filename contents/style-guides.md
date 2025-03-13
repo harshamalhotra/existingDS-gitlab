@@ -1,16 +1,12 @@
 ---
-name: Brand applications
+name: Style guides
 ---
 
-Brand Applications are purpose-built style guides that govern specific expressions of our brand identity. While each application has its own distinct requirements and guidelines, they all align with and support our core brand standards.
+Below are purpose-built style guides that govern specific visual systems within our brand identity. While each application has its own distinct requirements and guidelines, they all align with and support our core brand standards.
 
 Each style guide provides targeted guidance to ensure our brand remains both consistent and contextually appropriate across environments and audiences. Whether you're creating internal touchpoints, developing co-branded partner materials, or developing materials for product or marketing initiatives, you'll find clear, actionable guidelines here.
 
-## Style guides
-
-Below are style guides for the existing brand extensions.
-
-### GitLab Duo
+## GitLab Duo
 
 GitLab Duo is the suite of AI capabilities powering GitLab’s DevSecOps workflows. The unique creative styling for GitLab Duo visualizes AI's role in our product, inspired by its intricacies and a sense of forward movement.
 
@@ -18,7 +14,7 @@ GitLab Duo is the suite of AI capabilities powering GitLab’s DevSecOps workflo
 
 <figure-img alt="GitLab Duo banner" src="/img/brand/gitlab-duo-hero.png"></figure-img>
 
-### Team Expressions
+## Team Expressions
 
 The Team Expressions Style Guide details the creative styling for internal GitLab teams, communities, departments, global locations, and team member resource groups (TMRGs).
 

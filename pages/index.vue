@@ -30,7 +30,7 @@ export default {
             <p class="gl-text-base gl-leading-20">
               Guidelines, resources, and system behind the brand personality and visual identity of
               GitLab.
-              <nuxt-link to="/brand-overview/introduction">Introduction →</nuxt-link>
+              <nuxt-link to="/brand-introduction">Introduction →</nuxt-link>
             </p>
           </div>
           <div>
