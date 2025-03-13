@@ -3,22 +3,8 @@
     "title": "Brand",
     "items": [
       {
-        "title": "Overview",
-        "path": "brand-overview",
-        "items": [
-          {
-            "title": "Introduction",
-            "path": "introduction"
-          },
-          {
-            "title": "Brand applications",
-            "path": "brand-applications"
-          },
-          {
-            "title": "Resources",
-            "path": "resources"
-          }
-        ]
+        "title": "Introduction",
+        "path": "brand-introduction"
       },
       {
         "title": "Messaging",
@@ -94,6 +80,14 @@
             "path": "photography"
           }
         ]
+      },
+      {
+        "title": "Style guides",
+        "path": "style-guides"
+      },
+      {
+        "title": "Resources",
+        "path": "resources"
       }
     ]
   },
