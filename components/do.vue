@@ -10,7 +10,7 @@ export default {
 
 <template>
   <div class="md">
-    <div class="app-styles gl-mb-2">
+    <div class="gl-mb-2">
       <gl-badge icon="check" variant="success">Do</gl-badge>
     </div>
     <slot></slot>

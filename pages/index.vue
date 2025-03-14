@@ -17,7 +17,9 @@ export default {
           <h1 id="skipTarget" class="gl-my-3! homepage-hero-heading gl-heading-display">
             Pajamas Design System
           </h1>
-          <p class="gl-text-lg">Resources, components, and design guidelines behind GitLab</p>
+          <p class="gl-mb-0 gl-text-lg">
+            Resources, components, and design guidelines behind GitLab
+          </p>
         </div>
       </page-container>
     </section>
@@ -27,7 +29,7 @@ export default {
         <div class="gl-grid gl-gap-7 gl-p-0 lg:gl-grid-cols-2">
           <div>
             <h2>Brand</h2>
-            <p class="gl-text-base gl-leading-20">
+            <p class="gl-mb-0 gl-text-base gl-leading-20">
               Guidelines, resources, and system behind the brand personality and visual identity of
               GitLab.
               <nuxt-link to="/brand-introduction">Introduction →</nuxt-link>
@@ -35,7 +37,7 @@ export default {
           </div>
           <div>
             <h2>Product</h2>
-            <p class="gl-text-base gl-leading-20">
+            <p class="gl-mb-0 gl-text-base gl-leading-20">
               Foundations, components, patterns, content, and guidelines for building the GitLab UI.
               <nuxt-link to="/get-started/navigating-pajamas">Get started →</nuxt-link>
             </p>

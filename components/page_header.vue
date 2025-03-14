@@ -30,7 +30,7 @@ export default {
     <h1 id="skipTarget" class="gl-heading-display" tabindex="-1">
       {{ heading }}
     </h1>
-    <div v-if="deprecated" class="app-styles gl-mb-3">
+    <div v-if="deprecated" class="gl-mb-3">
       <gl-alert :dismissible="false" variant="warning">
         Please refrain from using this component - it is deprecated and will be removed.
       </gl-alert>

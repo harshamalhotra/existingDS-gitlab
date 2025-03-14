@@ -1,30 +1,14 @@
-/* Defaults
-   ========================================================================== */
-
 body,
 html {
-  box-sizing: border-box;
-  line-height: 16px;
-  font-family: $gl-regular-font;
-  color: var(--gl-text-color-default);
-  margin: 0;
-}
-
-:root {
-  --default-fg: #{$gray-950};
-  --default-bg: #{$white};
-  --inverse-fg: var(--default-bg);
-  --inverse-bg: var(--default-fg);
-  --indigo-fg: #{$theme-indigo-200};
-  --indigo-bg: #{$theme-indigo-800};
-  --gray-fg: #{$gray-500};
-  --gray-bg: #{$gray-10};
-  --red-fg: #{$red-500};
-  --red-bg: #{$red-100};
+  @apply gl-box-border;
+  @apply gl-leading-normal;
+  @apply gl-font-regular;
+  @apply gl-text-default;
+  @apply gl-m-0;
 }
 
 body {
-  font-size: $gl-font-size;
+  @apply gl-text-base;
 }
 
 * {
@@ -34,7 +18,7 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  @apply gl-box-border;
 }
 
 [tabindex="-1"]:focus:not(.focus-visible) {

@@ -28,10 +28,12 @@ export default {
 </script>
 
 <template>
-  <span class="app-styles admonition admonition--todo gl-mb-5 gl-flex-wrap gl-rounded-base">
-    <div class="gl-flex gl-items-center">
-      <gl-icon name="document" :size="16" class="gl-mr-3 gl-text-gray-500" />
-      <span class="admonition-type gl-mr-2">TODO: </span>
+  <span
+    class="gl-mb-5 gl-flex gl-flex-wrap gl-gap-2 gl-rounded-base gl-bg-feedback-neutral gl-p-5 gl-text-base gl-leading-20 gl-text-feedback-neutral"
+  >
+    <div class="gl-flex gl-items-center gl-gap-3">
+      <gl-icon name="document" :size="16" class="gl-fill-feedback-neutral" />
+      <span class="gl-font-bold">TODO: </span>
     </div>
     <span class="gl-mr-auto">
       <slot></slot>

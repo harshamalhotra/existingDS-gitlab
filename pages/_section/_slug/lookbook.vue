@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <div class="app-styles gl-pb-4 gl-pt-0">
+  <div class="gl-pb-4 gl-pt-0">
     <div v-if="componentName">
       <lookbook-embed :app="$lookbookUrl" :preview="previewName" panels="params,notes,*" />
       <p class="gl-pt-4">

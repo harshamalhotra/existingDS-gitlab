@@ -104,7 +104,7 @@ export default {
         <div>{{ copyStatusText }}</div>
       </div>
       <client-only>
-        <div class="app-styles gl-flex gl-gap-3 sm:gl-flex-row">
+        <div class="gl-flex gl-gap-3 sm:gl-flex-row">
           <gl-form-group class="!gl-mb-0 gl-grow" label="Search" label-for="search">
             <gl-search-box-by-type
               id="search"
@@ -126,33 +126,31 @@ export default {
         </div>
       </client-only>
     </header>
-    <div class="app-styles">
-      <div
-        v-if="filteredElements.length"
-        class="gl-grid gl-grid-cols-2 gl-gap-5 gl-p-0"
-        :class="{
-          'sm:gl-grid-cols-4 lg:gl-grid-cols-6': layout === 'icons',
-          'sm:gl-grid-cols-3': layout === 'illustrations',
-        }"
+    <div
+      v-if="filteredElements.length"
+      class="gl-grid gl-grid-cols-2 gl-gap-5 gl-p-0"
+      :class="{
+        'sm:gl-grid-cols-4 lg:gl-grid-cols-6': layout === 'icons',
+        'sm:gl-grid-cols-3': layout === 'illustrations',
+      }"
+    >
+      <svg-card
+        v-for="entry in elements"
+        v-show="filteredElements.includes(entry.name)"
+        :key="entry.name"
+        :image="entry.name"
+        :image-size="entry.size"
+        :source-path="sourcePath"
+        @imageCopied="setCopyStatus"
+        @permalinkSelected="setSearchString"
       >
-        <svg-card
-          v-for="entry in elements"
-          v-show="filteredElements.includes(entry.name)"
-          :key="entry.name"
-          :image="entry.name"
-          :image-size="entry.size"
-          :source-path="sourcePath"
-          @imageCopied="setCopyStatus"
-          @permalinkSelected="setSearchString"
-        >
-          <slot name="figure" :entry="entry" :size="Number(selectedSize)"></slot>
-        </svg-card>
-      </div>
-      <gl-empty-state v-else title="No results found">
-        <template #actions>
-          <gl-button @click.prevent="resetSearch">Reset search</gl-button>
-        </template>
-      </gl-empty-state>
+        <slot name="figure" :entry="entry" :size="Number(selectedSize)"></slot>
+      </svg-card>
     </div>
+    <gl-empty-state v-else title="No results found">
+      <template #actions>
+        <gl-button @click.prevent="resetSearch">Reset search</gl-button>
+      </template>
+    </gl-empty-state>
   </div>
 </template>

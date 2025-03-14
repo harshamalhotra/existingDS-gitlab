@@ -189,7 +189,7 @@ export default {
 <template>
   <div
     ref="lunr"
-    class="app-styles gl-relative"
+    class="gl-relative"
     @keydown.enter.prevent="keyEnter"
     @keydown.up.prevent="keyUp"
     @keydown.down.prevent="keyDown"

@@ -1,11 +1,4 @@
 .logo {
-  &:hover,
-  &:focus {
-    background-color: var(--gl-action-neutral-background-color-hover);
-    text-decoration: none;
-  }
-
-  &:active {
-    background-color: var(--gl-action-neutral-background-color-active);
-  }
+  @include gl-action-neutral-colors;
+  @apply hover:gl-no-underline;
 }

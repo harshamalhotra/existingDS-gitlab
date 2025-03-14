@@ -56,15 +56,22 @@ export default {
 <template>
   <figure
     :aria-label="label"
-    class="figure"
+    class="gl-mx-auto gl-my-7 gl-block gl-rounded-base gl-text-center"
     :class="{
-      'figure--dark': dark,
+      'gl-mb-7 gl-bg-neutral-950 gl-px-5 gl-py-6 gl-text-neutral-0': dark,
     }"
     role="figure"
   >
     <slot></slot>
-    <img v-if="src" class="figure-img" :src="fixedSrc" :alt="altText" role="img" :style="style" />
-    <figcaption class="figure-caption">
+    <img
+      v-if="src"
+      class="gl-mx-auto gl-my-0 gl-inline-block gl-leading-1"
+      :src="fixedSrc"
+      :alt="altText"
+      role="img"
+      :style="style"
+    />
+    <figcaption class="gl-mt-3 gl-text-base gl-leading-20">
       <template v-if="!hasCaptionSlot">{{ label }}</template>
       <slot name="caption"></slot>
     </figcaption>

@@ -161,26 +161,24 @@ export default {
       :description="page.description"
       :deprecated="page.deprecated"
     />
-    <div v-if="showTabs" class="app-styles">
-      <gl-nav class="gl-tabs-nav !gl-mb-5">
-        <gl-nav-item
-          v-for="tab in tabs"
-          :key="tab.route"
-          exact
-          :to="{ name: tab.route, params: $route.params }"
-          link-classes="gl-tab-nav-item"
-          active-class="gl-tab-nav-item-active"
-        >
-          {{ tab.title }}
-        </gl-nav-item>
-      </gl-nav>
-    </div>
+    <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
+      <gl-nav-item
+        v-for="tab in tabs"
+        :key="tab.route"
+        exact
+        :to="{ name: tab.route, params: $route.params }"
+        link-classes="gl-tab-nav-item"
+        active-class="gl-tab-nav-item-active"
+      >
+        {{ tab.title }}
+      </gl-nav-item>
+    </gl-nav>
     <nuxt-child
       :page="page"
       :component-label="componentLabel"
       :foundation-label="page.foundationLabel"
     />
-    <p v-if="lastUpdatedAt" class="gl-mt-5 gl-text-center">
+    <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">
       Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
     </p>
   </page-container>

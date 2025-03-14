@@ -1,0 +1,10 @@
+.main {
+  &.sidebar--open {
+    @apply gl-fixed;
+    @apply gl-overflow-hidden;
+  }
+
+  img {
+    @apply gl-max-w-full;
+  }
+}
