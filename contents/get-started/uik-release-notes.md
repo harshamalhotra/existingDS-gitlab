@@ -2,6 +2,55 @@
 name: Release notes
 ---
 
+## 17.10
+
+<small>Published 2025-03-14</small>
+
+Spring is approaching in some parts of the world and we couldn't help but tidy up our release notes corner. This milestone marks our first step toward more engaging and helpful notes. Puns will be used. Changes will be logged. Credit will be given. Rest API assured we've got some automation in here for efficiency sake, but we're excited about the work and want to share that side of things with you too. With that, here are the highlights and particulars to pay attention to in this release.
+
+- **Work items icons debut:** Updates and additions to our product icons family. Is that a coffee cup or an issue icon? You don't have to worry anymore, it's a work item. More updates to come in the next milestone as well as updates in the SVGs library.
+- **Modal Improvements:** Don't dismiss the fixes that popped up this release, give them a go and let us know what other improvements you'd like to see.
+- **Spring cleaning:** Multiple deprecated items have been removed, making our library lighter and more maintainable so we have more time to write these highlights. Most, if not all, of these things have had replacements for some time, but if you need any help migrating to a new version or replacement reach out in Slack.
+- **Contributors:** We want to give credit to every one who contributes to the UI kit during the milestone. Inclusion is automated based on who created a branch that got merged and the maintainers who provide reviews and final merging. That doesn't cover everyone though, so we're trying to be mindful to add anyone we know to have contributed in a meaningful way. If you or someone you know contributed and got missed, just let us know and we'll be sure to make an update. Thank you for continuing to make these resources better with each release!
+
+**💡 Figma tip:** You can now lock the aspect ratio when resizing elements on the canvas. This is helpful for maintaining the proportions of containers and media. [Here's how to do it ↗︎](https://www.youtube.com/watch?v=SITklmLqXo4)
+
+### Changelog
+
+#### ➕ Additions
+
+- (Product Icons): Adds [**work-items**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=930-1284&t=54zN16OqLtNRmY3J-11) icon.
+
+#### 🔄 Changes
+
+- (Component Library): Updates instances of issue related icons with new designs from the product icons library.
+- (Data Visualization): Changes variables and components based on upstream library updates. Component updates are in instances and not published.
+- (Data Visualization): Changes color styles to use variables instead of hex values.
+- (Design Tokens): Updates icon variables to reference text counterparts where possible and the [design token table](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Design-tokens?node-id=2195-80&t=JIhiuthFgkBsB3Wu-11) to reflect the changes. Learn about the color changes in [!4981](https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/4981).
+- (Patterns & Page Templates): Changes variables based on upstream library updates.
+- (Patterns & Page Templates): Migrates page template components to not use deprecated components.
+- (Product Icons): Updates [**issues**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11), [**issue-new**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11), and [**issue-type-issue**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11) icons with new design.
+- (Product Illustrations):  Changes variables based on upstream library updates in a prior release.
+
+#### 🛠️ Fixes
+
+- (Component Library): Fixes [**❖&nbsp;Modal**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=125537-3862&t=Xy8KHK6cNrwR9op4-11) issues, including: add example content slot components; update component description to simplify and remove incorrect deprecated warning; and fix prop order.
+- (Data Visualization): Fixes some things that were broken after the 17.7 release due to library changes not propagating correctly.
+- (Patterns & Page Templates): Fixes problem where some [page template components](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=6-34&p=f&t=sr1k60LCXfaoV8EX-11) were published and had similar names to other components. Those components are no longer published and the names have been scoped to the page templates.
+
+#### 🗑️ Removals
+
+- (Component Library): Removes deprecated modal page and component.
+- (Component Library): Removes deprecated file uploader component and documentation.
+- (Component Library): Removes deprecated icon grids now that they've been added directly in the product icon file along with the remaining two deprecated grid styles.
+- (Component Library): Removes deprecated status page and components.
+- (Component Library): Removes deprecated progress bar page and components.
+- (Data Visualization): Removes transparent white 8% style in favor of alpha variable.
+
+#### 🤝 Contributors
+
+Dan Mizzi-Harris, Emily Bauman, Jeremy Elder, Julia Miocene, Libor Vanc, Nick Brandt, Nick Leonard, Sascha Eggenberger
+
 ## 17.9
 
 <small>Published 2025-02-18</small>
