@@ -43,7 +43,7 @@
     "pikaday": "1.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.26.9",
+    "@babel/core": "7.26.10",
     "@babel/preset-env": "7.26.9",
     "@evilmartians/lefthook": "^1.11.3",
     "@gitlab/eslint-plugin": "20.7.1",
