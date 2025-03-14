@@ -37,7 +37,7 @@ Complete the following items for each release:
 
 - [ ] Ensure all merges have a description of the merge in the [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history).
 - [ ] Generate the release notes with the [Figma release notes automation](https://gitlab.com/figma-release-notes-automation/figma-release-notes-automation.)
-- [ ] Review and edit the release notes:
+- [ ] Review and edit the release notes in a new draft merge request:
   - Ensure all changes to the Figma UI kit files are documented in the release notes.
   - Check updates to the release notes for accuracy.
   - Include reference links when necessary.
@@ -51,7 +51,7 @@ Complete the following items for each release:
 
 **Publish release notes:**
 
-- [ ] Create a [new issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Pajamas%20UI%20Kit%20release%20notes) and draft merge request for next milestone's release notes, assigning to a DRI for the release.
+- [ ] Create a [new issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Pajamas%20UI%20Kit%20release%20notes) for next milestone's release notes, assigning to a DRI for the release.
 - [ ] Proceed with a maintainer review and merge of the release notes.
 
 **Wrap up:**
