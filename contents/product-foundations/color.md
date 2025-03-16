@@ -89,13 +89,13 @@ A user may choose between ten different themes to customize the appearance of th
 
 ### Indigo / Light indigo
 
-Indigo and light indigo share the same `$theme-indigo-` SCSS variables.
+Indigo and light indigo share the same `color.theme-indigo.*` design tokens.
 
 <story-viewer component="tokens-color-constant" story="theme-indigo" title="Tokens"></story-viewer>
 
 ### Green / Light green
 
-Green and light green share the same `$theme-green-` SCSS variables.
+Green and light green share the same `color.theme-green.*` design tokens.
 
 <story-viewer component="tokens-color-constant" story="theme-green" title="Tokens"></story-viewer>
 
@@ -132,7 +132,7 @@ Typical state changes (light UI):
 
 <figure-img alt="Example button state color changes" label="Interactive color state example" src="/img/color-interactive.svg">
   <template #caption>
-    A primary confirm button example with a <code>$blue-500</code> fill at rest (1), a <code>$blue-600</code> fill for hover and focus (2, 3), and a <code>$blue-700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
+    A primary confirm button example with a <code>color.blue.500</code> fill at rest (1), a <code>color.blue.600</code> fill for hover and focus (2, 3), and a <code>color.blue.700</code> fill when active (4). The color changes are combined with other visual feedback (cursor, focus ring) to communicate information about the interactive state.
   </template>
 </figure-img>
 
@@ -157,6 +157,6 @@ At GitLab, we are dedicated to continually improving the accessibility of the ap
 - **AA+** - Pass, large text only 3:1+.
 - **F** - Doesn’t pass.
 
-Contrast ratios for each color step are calculated against light (`$white`/`#fff`) and dark (`$gray-950`/`#1f1e24`) foreground colors. The `50–400` steps all meet a 4.5:1 contrast ratio or higher against `$gray-950` (`#1f1e24`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `$gray-10` (`#fbfafd`) or lighter.
+Contrast ratios for each color step are calculated against light (`color.neutral.0`/`#fff`) and dark (`color.neutral.950`/`#18171d`) foreground colors. The `50–400` steps all meet a 4.5:1 contrast ratio or higher against `color.neutral.950` (`#18171d`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `color.neutral.10` (`#fbfafd`) or lighter.
 
 Color should never be the only visual means of communicating information ([WCAG 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color)).

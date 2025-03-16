@@ -74,7 +74,7 @@ Below is what the json input looks like, followed by a few examples of the desig
   "color": {
     "neutral": {
       "950": {
-        "$value": "#1f1e24",
+        "$value": "#18171d",
         "$type": "color"
       }
     }
@@ -95,28 +95,28 @@ Below is what the json input looks like, followed by a few examples of the desig
 #### CSS
 
 ```css
---color-neutral-950: #1f1e24;
+--color-neutral-950: #18171d;
 --text-color-strong: var(--gl-color-neutral-950);
 ```
 
 #### SCSS
 
 ```scss
-$color-neutral-950: #1f1e24 !default;
+$color-neutral-950: #18171d !default;
 $text-color-strong: $gl-color-neutral-950 !default;
 ```
 
 #### JavaScript
 
 ```js
-export const COLOR_NEUTRAL_950 = "#1f1e24";
-export const TEXT_COLOR_STRONG = "#1f1e24";
+export const COLOR_NEUTRAL_950 = "#18171d";
+export const TEXT_COLOR_STRONG = "#18171d";
 ```
 
 #### Figma variables
 
 ```text
-color/neutral/950: #1f1e24
+color/neutral/950: #18171d
 text/color/strong: color/neutral/950
 ```
 

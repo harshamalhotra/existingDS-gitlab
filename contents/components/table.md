@@ -92,7 +92,7 @@ Any filtering controls that manipulate the data set should be placed directly ab
 
 #### New row
 
-When a new row is dynamically added by the system, the background color of the row should be set to `$green-50` in order to highlight the addition.
+When a new row is dynamically added by the system, the background color of the row should be set to `feedback.success.background.color` in order to highlight the addition.
 
 #### Ordering & sorting
 

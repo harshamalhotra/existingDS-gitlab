@@ -14,8 +14,8 @@ The data visualization palette is designed specifically for conveying different 
 
 There are 5 hues, each with 11 steps for a total of 55 variables. The palette is designed for both light and dark UI where:
 
-* Steps `50`—`500` meet or exceed a 3:1 contrast ratio on a dark `$gray-950` (`#1f1e24`) surface.
-* Steps `500`—`950` meet or exceed a 3:1 contrast ratio on a light `$white` (`#ffffff`) surface.
+* Steps `50`—`500` meet or exceed a 3:1 contrast ratio on a dark `color.neutral.950` (`#18171d`) surface.
+* Steps `500`—`950` meet or exceed a 3:1 contrast ratio on a light `color.neutral.0` (`#ffffff`) surface.
 
 Because the `500` step has at least a 3:1 contrast ratio on both light and dark surfaces, there are 30 total variables that can be used for each surface.
 
@@ -59,8 +59,7 @@ Per [WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast](https://www.w3.org/WA
 
 #### Surfaces
 
-* In a light UI, all data visualization should be on a `$white` (`#ffffff`) surface.
-* In a dark UI, all data visualization should be on a `$gray-950` (`#1f1e24`) surface.
+* All data visualization should be on a `background.color.default` surface.
 
 #### Visual separators
 
@@ -76,7 +75,7 @@ Pattern fills can create accessibility issues of their own, namely cognitive, an
 
 Sequential data uses steps within a single hue, and color lightness to indicate a range from low to high.
 
-Blue is the default hue for charts with a single data range, and `$data-viz-blue-500` is the base step for both light and dark UI. Others hues can be used instead by following a similar pattern.
+Blue is the default hue for charts with a single data range, and `color.data-blue.500` is the base step for both light and dark UI. Others hues can be used instead by following a similar pattern.
 
 * Steps in a light UI go from `500` (low) to `950` (high) so that the higher the value, the darker it is and the more contrast it has against the light surface.
 * Steps in a dark UI go from `500` (low) to `50` (high) so that the higher the value, the lighter is is and the more contrast it has against the dark surface.
@@ -103,7 +102,7 @@ The default sequence loops through different steps of each hue in the following 
 1. Green
 1. Magenta
 
-Blue is always the default starting point, and `$data-viz-blue-500` is the base step for both light and dark UI.
+Blue is always the default starting point, and `color.data-blue.500` is the base step for both light and dark UI.
 
 <figure-img label="Chevron-skipping pattern in a light UI">
   <img class="gl-mb-5" src="/img/dv-chevron-light-ui.svg" alt="Chevron-skipping pattern for color sequence" role="img" />
@@ -146,18 +145,17 @@ There are two divergent options, choose the one that works best with the type of
 
 Colors are often associated with system status in data visualizations (for example, green for success and red for failure). However, because using green and red together can be problematic for some color blindness conditions, try to utilize the recommended palette as a first pass.
 
-When representing a success status alone against the generic data, use `$data-viz-blue-500` for all and `$data-viz-green-700` for success.
+When representing a success status alone against the generic data, use `color.data-blue.500` for all and `color.data-green.700` for success.
 
-If it's necessary to show success and failure states together in the same graph, `$data-viz-green-500` and `$data-viz-magenta-600` is the recommended combination (`$data-viz-green-500` and `$data-viz-magenta-400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types.
+If it's necessary to show success and failure states together in the same graph, `color.data-green.500` and `color.data-magenta.600` is the recommended combination (`color.data-green.500` and `color.data-magenta.400` in a dark UI). To avoid indicating status by color alone, use text and additional visual indicators when possible to clarify the status. To ensure sufficient contrast ratio, follow the [color guidelines](#usage) for specific data types.
 
 <todo>Include example of recommended color combinations</todo>
 
 ## Accessibility
 
-At GitLab, we are dedicated to continually improving the accessibility of the application. Color is no exception. Every step of every hue in the data visualization palette has been evaluated to satisfy a 3:1 contrast ratio against a light or dark surface.
+At GitLab, we are dedicated to continually improving the accessibility of the application. Color is no exception. Every step of every hue in the data visualization palette has been evaluated to satisfy a 3:1 contrast ratio against a background surface.
 
-* For light UI, that is a contrast ratio of at least 3:1 on `$white` (`#ffffff`).
-* For a dark UI, that is a contrast ratio of at least 3:1 on `$gray-950` (`#1f1e24`)
+* That is a contrast ratio of at least 3:1 on `background.color.default`.
 
 ## Resources
 
