@@ -41,7 +41,7 @@ Semantic design tokens reference constant design tokens to encapsulate global de
 
 ### Contextual design tokens
 
-Contextual design tokens are the most specific of the three categories. These design tokens are useful for capturing specific design intent for components, patterns, and experiments. They can reference either semantic or constant design tokens. In the first example that follows, the contextual design token `avatar.fallback.background.purple` references the constant design token `color.purple.50`, which in turn references the `#f4f0ff` hex value. In the second example, the constant design token `alert.warning.title.color` references the semantic design token `text.color.heading`, which in turn references the constant design token `color.neutral.950`, that finally resolves to the `#1f1e24` hex value.
+Contextual design tokens are the most specific of the three categories. These design tokens are useful for capturing specific design intent for components, patterns, and experiments. They can reference either semantic or constant design tokens. In the first example that follows, the contextual design token `avatar.fallback.background.purple` references the constant design token `color.purple.50`, which in turn references the `#f4f0ff` hex value. In the second example, the constant design token `alert.warning.title.color` references the semantic design token `text.color.heading`, which in turn references the constant design token `color.neutral.950`, that finally resolves to the `#18171d` hex value.
 
 <img class="gl-block gl-mx-auto gl-my-7" src="/img/design-tokens-contextual.svg" alt="Example contextual design tokens " />
 

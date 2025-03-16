@@ -62,8 +62,8 @@ In addition to external spacing being greater than internal spacing, widgets use
 
 The container wraps one or more widgets.
 
-- `1px` `$gray-100` inset border
-- `$white` background
+- `1px` `border.color.section` inset border
+- `background.color.section` background
 - `4px` border radius
 
 <figure-img alt="Merge request widget container shape" label="The container that groups merge request widgets with a slightly rounded border radius and light border" src="/img/mrw-container.png"></figure-img>
@@ -74,8 +74,8 @@ The container wraps one or more widgets.
 
 Level 1 is the parent level of the widget and has the primary status in text and icon form, as well as optional controls and actions that apply to the entire widget. The status icon is surrounded by a highlight to make it a stronger visual anchor while emphasizing the status. The primary status is determined by the widget's rules and influenced by level 2 statuses if present. The expand/collapse control is only visible when this level contains children.
 
-- Top border `1px` `$gray-100` for `n+1`
-- `$white` background
+- Top border `1px` `border.color.section` for `n+1`
+- `background.color.section` background
 - Collapsed by default with the exception of a merge widget that details reasons a merge request is blocked. Try to limit the number of expanded ones to avoid an overwhelming page.
 - Status icon: required
 
@@ -88,9 +88,9 @@ Level 1 is the parent level of the widget and has the primary status in text and
 Level 2 has a status that may be the same or different from the parent, as well as optional controls and actions that apply to itself. Its influence on the parent status will depend on the type of widget and the applicable rules. Likewise, its status will be determined by applicable rules and influenced by level 3 status if present.
 
 - Content indented and left-aligned to the level 1 subject.
-- Full width `1px` `$gray-100` top border for `n+1`
-- Top border inset (`16px` left and right padding) `1px` `$gray-100` for `n+1`
-- `$gray-10` background
+- Full width `1px` `border.color.section` top border for `n+1`
+- Top border inset (`16px` left and right padding) `1px` `border.color.section` for `n+1`
+- `background.color.subtle` background
 - Level 3 children are always visible
 - Status icon: optional
 - Actions: optional
@@ -106,7 +106,7 @@ Level 2 has a status that may be the same or different from the parent, as well 
 Level 3 has a status that may be the same or different from the level 2 parent. Its influence on the level 2 parent status will depend on the type of widget and the applicable rules.
 
 - Content indented and left-aligned to the level 2 subject.
-- `$gray-10` background
+- `background.color.subtle` background
 - Status icon: optional
 - Actions: inline text links only
 - Section title and description: optional

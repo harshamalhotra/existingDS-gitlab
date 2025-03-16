@@ -22,7 +22,7 @@ For a component:
 - Append '(⚠️ DEPRECATED)' to the component name and any base components in the page.
 - In the properties panel include '(⚠️ DEPRECATED)' at the start of the 'Description' field. If applicable, include a note about what to use instead in the description, and add a link to the new component in the 'Link' field.
 - When the component has been deprecated due to breaking changes in a newer version, link to the new version from the deprecated page.
-- Deprecated pages have a `$red-100` (`#FDD4CD`) background color and `$red-700` (`#AE1800`) for page headings and descriptions that aren't part of the component.
+- Deprecated pages have a `color.red.100` (`#FDD4CD`) background color and use `color.red.700` (`#AE1800`) for page headings and descriptions that aren't part of the component.
 
 For a style:
 
