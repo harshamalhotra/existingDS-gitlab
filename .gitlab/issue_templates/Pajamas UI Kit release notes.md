@@ -36,8 +36,8 @@ Complete the following items for each release:
 **Figma release notes tasks:**
 
 - [ ] Ensure all merges have a description of the merge in the [version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history).
-- [ ] Generate the release notes with the [Figma release notes automation](https://gitlab.com/figma-release-notes-automation/figma-release-notes-automation.)
-- [ ] Review and edit the release notes in a new draft merge request:
+- [ ] Generate the release notes with the [UI kit release notes automation](https://gitlab.com/gitlab-org/foundations/design-system/ui-kit-release-notes).
+- [ ] Review and edit the release notes:
   - Ensure all changes to the Figma UI kit files are documented in the release notes.
   - Check updates to the release notes for accuracy.
   - Include reference links when necessary.
