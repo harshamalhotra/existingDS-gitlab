@@ -247,7 +247,16 @@
           },
           {
             "title": "Iconography",
-            "path": "iconography"
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "iconography"
+              },
+              {
+                "title": "Animated icons",
+                "path": "iconography-animated"
+              }
+            ]
           },
           {
             "title": "Illustration",
