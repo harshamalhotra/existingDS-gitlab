@@ -1,7 +1,7 @@
 <script>
 import SvgImage from './svg_image.vue';
 
-const DEFAULT_COLORING = 'light';
+const DEFAULT_COLORING = 'default';
 
 export default {
   components: {
@@ -43,8 +43,11 @@ export default {
     },
     colors() {
       return [
-        { value: DEFAULT_COLORING, name: 'Light' },
-        { value: 'dark', name: 'Dark' },
+        { value: DEFAULT_COLORING, name: 'Default' },
+        { value: 'gray', name: 'Gray' },
+        { value: 'inverse', name: 'Inverse' },
+        { value: 'indigo', name: 'Indigo' },
+        { value: 'red', name: 'Red' },
       ];
     },
     countName() {
@@ -135,7 +138,7 @@ export default {
         <aside>
           <h3>{{ pageName }} configuration</h3>
           <label>
-            <strong> Select a color mode:</strong>
+            <strong> Select a background color:</strong>
           </label>
           <select v-model="selectedColor" class="form-control select-control chevron-down">
             <template v-for="color in colors">
@@ -149,8 +152,7 @@ export default {
           v-for="(svg, index) in filteredSVGs"
           :key="index"
           :image="svg.name"
-          :class="[selectedColor, svg.size]"
-          image-sprite="dist/illustrations.svg"
+          :class="selectedColor"
           source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
           @imageCopied="setCopyStatus"
           @permalinkSelected="setSearchString"
@@ -223,93 +225,28 @@ export default {
   fill: black;
 }
 
-.image-wrapper.sm .image-view svg {
-  width: 72px;
-  aspect-ratio: 1/1;
+.image-wrapper.default .image-base {
+  color: var(--default-fg);
+  background-color: var(--default-bg);
 }
 
-.image-wrapper.md .image-view svg {
-  width: 144px;
-  aspect-ratio: 1/1;
+.image-wrapper.inverse .image-base {
+  color: var(--inverse-fg);
+  background-color: var(--inverse-bg);
 }
 
-.image-wrapper.lg .image-view svg {
-  width: 288px;
-  aspect-ratio: 1/1;
+.image-wrapper.indigo .image-base {
+  color: var(--indigo-fg);
+  background-color: var(--indigo-bg);
 }
 
-.image-wrapper.light .image-base {
-  background-color: #ffffff;
-
-  --gl-illustration-stroke-color-default: #171321;
-  --gl-illustration-stroke-width-default: 2;
-  --gl-illustration-fill-color-default: #fff;
-  --gl-illustration-status-fill-color-neutral: #aea5d6;
-  --gl-illustration-status-fill-color-success: #6fdac9;
-  --gl-illustration-status-fill-color-warning: #fca326;
-  --gl-illustration-status-fill-color-danger: #ff9d73;
-  --gl-illustration-accent-stroke-color-orange: #ff9d73;
-  --gl-illustration-accent-stroke-color-teal: #6fdac9;
-  --gl-illustration-accent-stroke-color-strong: #aea5d6;
-  --gl-illustration-accent-fill-color-subtle: #d0c5e2;
-  --gl-illustration-accent-fill-color-strong: #aea5d6;
-  --gl-illustration-accent-fill-color-orange: #ff9d73;
-  --gl-illustration-accent-fill-color-teal: #6fdac9;
-  --gl-illustration-base-fill-color: #e7e4f2;
-  --gl-illustration-isometric-stroke-color-default: #171321;
-  --gl-illustration-isometric-stroke-width-default: 2;
-  --gl-illustration-isometric-glyph-top-fill-color: #c5f4ec;
-  --gl-illustration-isometric-glyph-front-fill-color: #fff;
-  --gl-illustration-isometric-glyph-side-fill-color: #6fdac9;
-  --gl-illustration-isometric-glyph-shadow-fill-color: #10b1b1;
-  --gl-illustration-isometric-object-top-fill-color: #ff9d73;
-  --gl-illustration-isometric-object-front-fill-color: #ffc2a8;
-  --gl-illustration-isometric-object-side-fill-color: #ff7b42;
-  --gl-illustration-isometric-object-highlight-fill-color: #fff;
-  --gl-illustration-isometric-object-shadow-fill-color: #e24329;
-  --gl-illustration-isometric-accent-top-fill-color: #45424d;
-  --gl-illustration-isometric-accent-front-fill-color: #74717a;
-  --gl-illustration-isometric-accent-side-fill-color: #2b2838;
-  --gl-illustration-isometric-base-top-fill-color: #e7e4f2;
-  --gl-illustration-isometric-base-front-fill-color: #d5d0e8;
-  --gl-illustration-isometric-base-side-fill-color: #aea5d6;
+.image-wrapper.gray .image-base {
+  color: var(--gray-fg);
+  background-color: var(--gray-bg);
 }
 
-.image-wrapper.dark .image-base {
-  background-color: #28272d;
-  color: #fff;
-
-  --gl-illustration-stroke-color-default: #e3e3e8;
-  --gl-illustration-stroke-width-default: 1.5;
-  --gl-illustration-fill-color-default: #423f4f;
-  --gl-illustration-status-fill-color-neutral: #6f6796;
-  --gl-illustration-status-fill-color-success: #3b8581;
-  --gl-illustration-status-fill-color-warning: #ab752f;
-  --gl-illustration-status-fill-color-danger: #aa563a;
-  --gl-illustration-accent-stroke-color-orange: #e3865f;
-  --gl-illustration-accent-stroke-color-teal: #6baea3;
-  --gl-illustration-accent-stroke-color-strong: #aea5d6;
-  --gl-illustration-accent-fill-color-subtle: #5c5371;
-  --gl-illustration-accent-fill-color-strong: #6f6796;
-  --gl-illustration-accent-fill-color-orange: #aa563a;
-  --gl-illustration-accent-fill-color-teal: #3b8581;
-  --gl-illustration-base-fill-color: #32303c;
-  --gl-illustration-isometric-stroke-color-default: #e3e3e8;
-  --gl-illustration-isometric-stroke-width-default: 1.5;
-  --gl-illustration-isometric-glyph-top-fill-color: #5a566c;
-  --gl-illustration-isometric-glyph-front-fill-color: #423f4f;
-  --gl-illustration-isometric-glyph-side-fill-color: #373441;
-  --gl-illustration-isometric-glyph-shadow-fill-color: #292730;
-  --gl-illustration-isometric-object-top-fill-color: #aa563a;
-  --gl-illustration-isometric-object-front-fill-color: #a54623;
-  --gl-illustration-isometric-object-side-fill-color: #8f4424;
-  --gl-illustration-isometric-object-highlight-fill-color: #423f4f;
-  --gl-illustration-isometric-object-shadow-fill-color: #3d2b2a;
-  --gl-illustration-isometric-accent-top-fill-color: #6d6972;
-  --gl-illustration-isometric-accent-front-fill-color: #49474d;
-  --gl-illustration-isometric-accent-side-fill-color: #212023;
-  --gl-illustration-isometric-base-top-fill-color: #32303c;
-  --gl-illustration-isometric-base-front-fill-color: #2b2932;
-  --gl-illustration-isometric-base-side-fill-color: #23222b;
+.image-wrapper.red .image-base {
+  color: var(--red-fg);
+  background-color: var(--red-bg);
 }
 </style>
