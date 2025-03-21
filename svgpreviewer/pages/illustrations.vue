@@ -1,24 +1,25 @@
 <script>
 import illustrations from '../static/dist/illustrations.json';
-import IllustrationLayout from '../components/illustration_layout.vue';
+import SvgAlbum from '../components/svg_album.vue';
 
 export default {
   name: 'IllustrationPage',
   components: {
-    IllustrationLayout,
+    SvgAlbum,
   },
   data() {
     return {
-      illustrations,
+      items: illustrations.illustrations,
     };
   },
 };
 </script>
 
 <template>
-  <illustration-layout
-    :svgs="illustrations.illustrations"
-    name="Illustration"
-    plural-name="Illustrations"
+  <svg-album
+    :elements="items"
+    layout="illustrations"
+    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
+    title="Illustration"
   />
 </template>
