@@ -43,12 +43,12 @@ export default {
     },
   },
 
-  css: ['@/assets/app.css'],
+  css: ['@/assets/app.scss'],
 
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/tailwindcss'],
+  // modules: ['@nuxtjs/tailwindcss'],
 
   /*
    ** Customize the progress bar color
