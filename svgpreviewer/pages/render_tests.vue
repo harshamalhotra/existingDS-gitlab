@@ -6,7 +6,7 @@ export default {
 };
 </script>
 <template>
-  <div style="margin: 10rem">
+  <div>
     <p>
       Below you can see different renderings for different approaches to svg sprites. It would make
       sense to switch to stacked rendering because it allows us to re-use the sprite icon in CSS,

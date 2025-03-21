@@ -45,10 +45,14 @@ export default {
 
   css: ['@/assets/app.scss'],
 
+  tailwindcss: {
+    cssPath: ['~/assets/tailwind.css', { injectPosition: 'last' }],
+  },
+
   /*
    ** Nuxt.js modules
    */
-  // modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss'],
 
   /*
    ** Customize the progress bar color

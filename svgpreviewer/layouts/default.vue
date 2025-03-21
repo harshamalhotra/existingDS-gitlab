@@ -12,6 +12,8 @@ export default {
 <template>
   <div>
     <menu-bar />
-    <nuxt />
+    <div class="gl-m-auto gl-max-w-7xl gl-px-5 gl-py-7">
+      <nuxt />
+    </div>
   </div>
 </template>
