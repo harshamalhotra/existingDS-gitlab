@@ -43,7 +43,7 @@ export default {
     },
   },
 
-  css: ['bootstrap/dist/css/bootstrap.css', '@/assets/gitlab-application.css', '@/assets/app.css'],
+  css: ['@/assets/app.css'],
 
   /*
    ** Nuxt.js modules
