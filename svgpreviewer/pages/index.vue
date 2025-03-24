@@ -1,5 +1,5 @@
 <script>
-import icons from '../static/dist/icons_individual.json';
+import icons from '../static/dist/icons.json';
 import SvgAlbum from '../components/svg_album.vue';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      items: icons.illustrations,
+      items: icons.icons,
       sizeOptions: [
         { value: 8, text: '8' },
         { value: 12, text: '12' },
@@ -27,8 +27,9 @@ export default {
 
 <template>
   <svg-album
-    :elements="items"
+    :items="items"
     :size-options="sizeOptions"
+    image-sprite="dist/icons.svg"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
     title="Icon"
   />

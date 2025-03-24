@@ -30,7 +30,7 @@ export default {
     SvgCard,
   },
   props: {
-    elements: {
+    items: {
       type: Array,
       required: true,
     },
@@ -38,6 +38,11 @@ export default {
       type: String,
       required: false,
       default: 'icons',
+    },
+    imageSprite: {
+      type: String,
+      required: false,
+      default: '',
     },
     sizeOptions: {
       type: Array,
@@ -69,13 +74,16 @@ export default {
   computed: {
     ...mapQueryFieldsToComputed(queryFields),
     filteredItems() {
-      return this.elements.flatMap(({ name }) => {
-        const isVisible = this.searchString?.startsWith('~')
-          ? `~${name}` === this.searchString
-          : name.includes(this.searchString);
-
-        return isVisible ? name : [];
-      });
+      if (this.imageSprite) {
+        if (this.searchString && this.searchString.startsWith('~')) {
+          return this.items.filter((icon) => `~${icon}` === this.searchString);
+        }
+        return this.items.filter((icon) => icon.includes(this.searchString));
+      }
+      if (this.searchString && this.searchString.startsWith('~')) {
+        return this.items.filter((icon) => `~${icon.name}` === this.searchString);
+      }
+      return this.items.filter((icon) => icon.name.includes(this.searchString));
     },
     copyStatusText() {
       switch (this.copyStatus) {
@@ -153,17 +161,16 @@ export default {
       }"
     >
       <svg-card
-        v-for="entry in elements"
-        v-show="filteredItems.includes(entry.name)"
-        :key="entry.name"
-        :image="entry.name"
-        :image-size="entry.size"
+        v-for="entry in filteredItems"
+        :key="imageSprite ? entry : entry.name"
+        :image="imageSprite ? entry : entry.name"
+        :image-size="imageSprite ? null : entry.size"
+        :image-sprite="imageSprite"
+        :size="Number(selectedSize)"
         :source-path="sourcePath"
         @imageCopied="setCopyStatus"
         @permalinkSelected="setSearchString"
-      >
-        <slot name="figure" :entry="entry" :size="Number(selectedSize)"></slot>
-      </svg-card>
+      />
     </div>
     <gl-empty-state v-else title="No results found">
       <template #actions>

@@ -17,7 +17,7 @@ export default {
 
 <template>
   <svg-album
-    :elements="items"
+    :items="items"
     layout="illustrations"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
     title="Logo"

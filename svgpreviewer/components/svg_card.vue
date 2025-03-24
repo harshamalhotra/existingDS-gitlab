@@ -28,6 +28,11 @@ export default {
       required: false,
       default: 0,
     },
+    size: {
+      type: Number,
+      required: false,
+      default: 0,
+    },
     sourcePath: {
       type: String,
       required: false,
@@ -64,19 +69,27 @@ export default {
 </script>
 
 <template>
-  <gl-card body-class="gl-grow" footer-class="!gl-p-3">
+  <gl-card
+    body-class="gl-grow gl-flex gl-flex-col gl-items-center gl-justify-center"
+    footer-class="!gl-p-3"
+  >
     <template #default>
       <div
         class="gl-flex gl-flex-col gl-items-center gl-justify-center gl-gap-3"
         @click="copyImage"
       >
-        <svg v-if="imageSprite" :class="[imageClass]">
+        <svg
+          v-if="imageSprite"
+          :class="['gl-fill-current', imageClass]"
+          :height="size > 0 ? size : null"
+          :width="size > 0 ? size : null"
+        >
           <use v-bind="{ 'xlink:href': spritePath }" />
         </svg>
-        <img v-else :class="[imageClass]" :src="imagePath" :alt="imageName" />
-        <div class="gl-text-center gl-text-subtle">
+        <img v-else :class="['gl-max-w-full', imageClass]" :src="imagePath" :alt="imageName" />
+        <div class="gl-text-center gl-text-sm gl-text-subtle">
           {{ imageName }}
-          <span v-if="imageSize"> ({{ kbSize }}) </span>
+          <span v-if="imageSize"> <br />({{ kbSize }}) </span>
         </div>
       </div>
     </template>

@@ -1,5 +1,5 @@
 <script>
-import icons from '../static/dist/file_icons/file_icons_individual.json';
+import icons from '../static/dist/file_icons/file_icons.json';
 import SvgAlbum from '../components/svg_album.vue';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      items: icons.illustrations,
+      items: icons.icons,
     };
   },
 };
@@ -17,7 +17,8 @@ export default {
 
 <template>
   <svg-album
-    :elements="items"
+    :items="items"
+    image-sprite="dist/file_icons/file_icons.svg"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/file_icons/"
     title="File icon"
   />
