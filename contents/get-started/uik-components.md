@@ -186,3 +186,28 @@ Some properties directly relate to others. They can always be available, or cond
   Has label = "true"
   ↳ Text = "Text property"
   ```
+
+## Moving components
+
+When moving a component between libraries, care must be taken to minimize impact to UI kit consumers.
+
+- **Critical**: Publish order matters. Publish destination library before source library to avoid broken references.
+- Components migrated to inactive libraries show as available updates. This allows confident migration to a library not enabled by default.
+- Overrides are preserved throughout migrations. Making component updates at the same time is not recommended to limit the chance of breaking changes.
+- Component references update only after consumers update from destination library.
+- Multiple instances across files maintain integrity when migration workflow is followed correctly.
+- If a reference becomes broken, the swap library feature can reconnect components but this is on a per-file basis.
+
+### Recommended workflow
+
+The merge and publish order is critical to prevent disruption to consumers. The following workflow gives room for recovery, but the steps should be followed closely.
+
+1. Create a branch in both the source and destination files.
+1. Cut component from source library branch, paste in destination library branch. Avoid component changes to simplify migration.
+1. Proceed with reviews for approval, but do not merge. Branch reviews will show "Removed" in source and "Added" in destination.
+1. After approval, merge destination library branch.
+1. Publish destination library with 'Move to this file' option.
+1. After approval, merge source library branch (component will show as removed).
+1. Check source library for publish options. The moved component should not be there.
+   - **⚠️ If it is, STOP. Publishing here creates a point of no return.**
+1. Check consuming files for updates from destination library.
