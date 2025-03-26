@@ -102,7 +102,7 @@ The following code snippet is a good example of an icon with a tooltip.
   v-gl-tooltip
   class="gl-border-0 gl-bg-transparent gl-p-0 gl-leading-0"
   :title="__('Tooltip text')"
-  :aria-label="__('Warning')"
+  :aria-label="__('Tooltip text')"
 >
   <gl-icon name="warning" />
 </button>
