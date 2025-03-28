@@ -9,6 +9,7 @@ import './build_scripts/patched_crypto';
 
 const baseDir = process.env.CI ? '/gitlab-svgs/' : '/';
 
+// eslint-disable-next-line import/no-default-export
 export default {
   server: {
     port: 3333,
@@ -85,6 +86,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config) {
+      // eslint-disable-next-line no-param-reassign
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
 
       config.module.rules.splice(0, 1);

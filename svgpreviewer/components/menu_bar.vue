@@ -13,8 +13,8 @@ export default {
 <template>
   <header class="gl-py-3">
     <div class="gl-m-auto gl-max-w-7xl gl-px-5">
-      <div class="gl-flex gl-flex-wrap gl-justify-between gl-gap-3">
-        <div class="gl-flex gl-gap-3">
+      <div class="gl-flex gl-flex-wrap gl-items-center gl-justify-between gl-gap-3">
+        <div class="gl-flex gl-items-center gl-gap-3">
           <nuxt-link
             to="/"
             class="gl-flex gl-items-center gl-gap-2 gl-font-bold gl-text-inherit gl-no-underline"
@@ -52,27 +52,27 @@ export default {
         </div>
         <ul class="gl-m-0 gl-flex gl-list-none gl-flex-wrap gl-p-0">
           <li>
-            <nuxt-link to="/" v-slot="{ navigate }" custom>
+            <nuxt-link #default="{ navigate }" to="/" custom>
               <gl-button category="tertiary" @click="navigate"> Icons </gl-button>
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/file_icons" v-slot="{ navigate }" custom>
+            <nuxt-link #default="{ navigate }" to="/file_icons" custom>
               <gl-button category="tertiary" @click="navigate"> File icons </gl-button>
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/illustrations" v-slot="{ navigate }" custom>
+            <nuxt-link #default="{ navigate }" to="/illustrations" custom>
               <gl-button category="tertiary" @click="navigate"> Illustrations </gl-button>
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/logos" v-slot="{ navigate }" custom>
+            <nuxt-link #default="{ navigate }" to="/logos" custom>
               <gl-button category="tertiary" @click="navigate"> Logos </gl-button>
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/render_tests" v-slot="{ navigate }" custom>
+            <nuxt-link #default="{ navigate }" to="/render_tests" custom>
               <gl-button category="tertiary" @click="navigate"> Render tests </gl-button>
             </nuxt-link>
           </li>
