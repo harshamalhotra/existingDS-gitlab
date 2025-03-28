@@ -156,8 +156,8 @@ export default {
       v-if="filteredItems.length"
       class="gl-grid gl-grid-cols-2 gl-gap-5 gl-p-0"
       :class="{
-        'sm:gl-grid-cols-4 lg:gl-grid-cols-6': layout === 'icons',
-        'sm:gl-grid-cols-3': layout === 'illustrations',
+        'sm:gl-grid-cols-4 lg:gl-grid-cols-8': layout === 'icons',
+        'sm:gl-grid-cols-4': layout === 'illustrations',
       }"
     >
       <svg-card
