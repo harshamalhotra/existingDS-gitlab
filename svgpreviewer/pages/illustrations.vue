@@ -21,5 +21,6 @@ export default {
     layout="illustrations"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
     title="Illustration"
+    copy-message="Click an illustration to copy the path"
   />
 </template>

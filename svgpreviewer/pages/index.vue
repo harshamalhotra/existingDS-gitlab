@@ -32,5 +32,6 @@ export default {
     image-sprite="dist/icons.svg"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
     title="Icon"
+    copy-message="Click an icon to copy the name"
   />
 </template>

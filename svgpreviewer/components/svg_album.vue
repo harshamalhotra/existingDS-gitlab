@@ -64,6 +64,11 @@ export default {
       required: false,
       default: 'Icon',
     },
+    copyMessage: {
+      type: String,
+      required: false,
+      default: 'Click entry to copy their name',
+    },
   },
   data() {
     return {
@@ -92,7 +97,7 @@ export default {
         case -1:
           return "Copying didn't work :-(";
         default:
-          return 'Click entry to copy their name';
+          return this.copyMessage;
       }
     },
     kbSize() {

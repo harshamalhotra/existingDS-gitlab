@@ -21,5 +21,6 @@ export default {
     image-sprite="dist/file_icons/file_icons.svg"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/file_icons/"
     title="File icon"
+    copy-message="Click a file icon to copy the name"
   />
 </template>
