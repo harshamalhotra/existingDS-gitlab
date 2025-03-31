@@ -13,7 +13,6 @@ export default {
       sizeOptions: [
         { value: 12, text: '12' },
         { value: 16, text: '16 (Default)', default: true },
-        { value: 24, text: '24' },
       ],
     };
   },
