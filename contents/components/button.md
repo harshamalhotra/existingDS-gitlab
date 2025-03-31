@@ -226,6 +226,8 @@ Button groups visually group buttons that have similar or related actions togeth
 
 [Pagination](/components/pagination) and [segmented controls](/components/segmented-control) are specific types of button groups.
 
+With three or more actions, show them in a [disclosure dropdown](/components/dropdown-disclosure) if appropriate for your context. A button group can make it easier to notice and access the actions, but it can also take up unnecessary space in the UI.
+
 ### Accessibility
 
 - Maintain parity between focus order and visual order (don't use CSS to reorder buttons).
