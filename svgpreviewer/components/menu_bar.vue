@@ -1,13 +1,13 @@
 <script>
 import { GlButton } from '../helpers/gitlab_ui';
 import DarkModeToggle from './dark_mode_toggle.vue';
-import Logo from './logo.vue';
+import GitlabLogo from './gitlab-logo.vue';
 
 export default {
   components: {
     GlButton,
     DarkModeToggle,
-    Logo,
+    GitlabLogo,
   },
 };
 </script>
@@ -20,7 +20,7 @@ export default {
           to="/"
           class="gl-flex gl-items-center gl-gap-2 gl-font-bold gl-text-inherit gl-no-underline hover:gl-text-inherit hover:gl-no-underline"
         >
-          <logo />
+          <gitlab-logo />
           <span
             class="gl-ml-2 gl-inline-block gl-border-l-1 gl-border-default gl-pl-3 gl-border-l-solid"
           >
