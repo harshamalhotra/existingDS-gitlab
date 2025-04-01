@@ -1,20 +1,26 @@
 <script>
 import logos from '../static/dist/logos.json';
-import IllustrationLayout from '../components/illustration_layout.vue';
+import SvgAlbum from '../components/svg_album.vue';
 
 export default {
   name: 'LogosPage',
   components: {
-    IllustrationLayout,
+    SvgAlbum,
   },
   data() {
     return {
-      logos,
+      items: logos.logos,
     };
   },
 };
 </script>
 
 <template>
-  <illustration-layout :svgs="logos.logos" name="Logo" plural-name="Logos" />
+  <svg-album
+    :items="items"
+    layout="illustrations"
+    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
+    title="Logo"
+    copy-message="Click a logo to copy the path"
+  />
 </template>

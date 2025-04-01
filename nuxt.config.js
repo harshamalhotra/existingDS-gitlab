@@ -1,11 +1,16 @@
+import path from 'path';
+import sass from 'sass';
+import webpack from 'webpack';
+
 /* eslint-disable import/no-commonjs */
 // Remove after update to webpack@5:
 // https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/347
-require('./build_scripts/patched_crypto');
+import './build_scripts/patched_crypto';
 
 const baseDir = process.env.CI ? '/gitlab-svgs/' : '/';
 
-module.exports = {
+// eslint-disable-next-line import/no-default-export
+export default {
   server: {
     port: 3333,
   },
@@ -39,7 +44,16 @@ module.exports = {
     },
   },
 
-  css: ['bootstrap/dist/css/bootstrap.css', '@/assets/gitlab-application.css'],
+  css: ['@/assets/app.scss'],
+
+  tailwindcss: {
+    cssPath: ['~/assets/tailwind.css', { injectPosition: 'last' }],
+  },
+
+  /*
+   ** Nuxt.js modules
+   */
+  modules: ['@nuxtjs/tailwindcss'],
 
   /*
    ** Customize the progress bar color
@@ -56,5 +70,62 @@ module.exports = {
   /*
    ** Build configuration
    */
-  build: {},
+  build: {
+    postcss: {
+      order: ['postcss-preset-env'],
+    },
+    loaders: {
+      scss: {
+        implementation: sass,
+        sassOptions: {
+          includePaths: [path.resolve(__dirname, 'node_modules')],
+        },
+      },
+    },
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config) {
+      // eslint-disable-next-line no-param-reassign
+      config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
+
+      config.module.rules.splice(0, 1);
+
+      config.module.rules.push({
+        test: /\.js$/,
+        include: /node-modules/,
+        loader: 'babel-loader',
+      });
+
+      config.module.rules.push({
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          // https://vue-loader.vuejs.org/options.html#prettify
+          prettify: false,
+        },
+      });
+
+      config.module.rules.push({
+        test: /\.css$/,
+        include: /node-modules/,
+        loader: 'css-loader',
+      });
+
+      // Silence webpack warnings about moment/pikaday not being able to resolve.
+      // Pikaday is a dependency of gitlab-ui.
+      config.plugins.push(new webpack.IgnorePlugin(/moment/, /pikaday/));
+    },
+    transpile: [
+      // These need to be transpiled as they use some advanced syntax like the
+      // optional chaining operator
+      '@gitlab/ui',
+    ],
+  },
+
+  vue: {
+    config: {
+      ignoredElements: [/^lookbook-embed/],
+    },
+  },
 };
