@@ -17,12 +17,7 @@ export default {
 </script>
 
 <template>
-  <gl-button
-    :aria-label="isDarkMode ? 'Dark Mode' : 'Light Mode'"
-    class="btn-icon"
-    category="tertiary"
-    @click="toggleDarkMode"
-  >
+  <gl-button aria-label="Toggle theme" class="btn-icon" category="tertiary" @click="toggleDarkMode">
     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
       <path
         v-if="isDarkMode"

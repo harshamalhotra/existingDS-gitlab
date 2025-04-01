@@ -101,8 +101,7 @@ export default {
       }
     },
     kbSize() {
-      if (!this.spriteSize) return null;
-      return `(${bytesToKiloBytes(this.spriteSize)}kb)`;
+      return this.spriteSize ? `(${bytesToKiloBytes(this.spriteSize)}kb)` : '';
     },
     pageTitle() {
       return this.filteredItems.length === 1 ? this.title : `${this.title}s`;
@@ -129,7 +128,7 @@ export default {
   <div>
     <header class="gl-mb-5">
       <div class="gl-mb-4">
-        <h2 class="gl-heading-3 !gl-mb-1">
+        <h2 class="gl-heading-3 gl-mb-1">
           {{ filteredItems.length }} {{ pageTitle }} {{ kbSize }}
         </h2>
         <div>{{ copyStatusText }}</div>
@@ -143,7 +142,6 @@ export default {
               v-model="searchString"
               autocomplete="off"
               spellcheck="false"
-              :is-loading="false"
             />
           </gl-form-group>
           <gl-form-group

@@ -21,11 +21,7 @@ export default {
           class="gl-flex gl-items-center gl-gap-2 gl-font-bold gl-text-inherit gl-no-underline hover:gl-text-inherit hover:gl-no-underline"
         >
           <gitlab-logo />
-          <span
-            class="gl-ml-2 gl-inline-block gl-border-l-1 gl-border-default gl-pl-3 gl-border-l-solid"
-          >
-            SVGs
-          </span>
+          <span class="gl-border-l gl-ml-2 gl-inline-block gl-pl-3"> SVGs </span>
         </nuxt-link>
         <div class="gl-flex gl-items-center gl-gap-3">
           <ul class="gl-m-0 gl-flex gl-list-none gl-flex-wrap gl-p-0">
