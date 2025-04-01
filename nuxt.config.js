@@ -122,10 +122,4 @@ export default {
       '@gitlab/ui',
     ],
   },
-
-  vue: {
-    config: {
-      ignoredElements: [/^lookbook-embed/],
-    },
-  },
 };
