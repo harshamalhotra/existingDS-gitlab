@@ -55,9 +55,9 @@ export default {
       default: '',
     },
     spriteSize: {
-      type: String,
+      type: Number,
       required: false,
-      default: '',
+      default: null,
     },
     title: {
       type: String,
