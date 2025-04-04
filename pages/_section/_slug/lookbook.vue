@@ -1,7 +1,7 @@
 <script>
 const NAME_MAPPING = {
   alert: 'alert',
-  // avatar: 'avatar',
+  avatar: 'avatar',
   badge: 'badge',
   banner: 'banner',
   button: 'button',
