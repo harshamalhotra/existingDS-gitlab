@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@gitlab/svgs": "^3.126.0",
-    "@gitlab/ui": "^112.1.2",
+    "@gitlab/ui": "^112.2.0",
     "@nuxtjs/tailwindcss": "6.11.4",
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0"
