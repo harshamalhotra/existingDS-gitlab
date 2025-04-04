@@ -6,19 +6,17 @@ const SVGSpriter = require('svg-sprite');
 const { getFilesizeInBytes } = require('./utils');
 
 // eslint-disable-next-line max-params
-const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additionalGlobPattern) => {
+const createImageSprite = (BASE_PATH, destPath, globPattern, targetFile, extraGlobPattern) => {
   const spriteFiles = glob.sync(globPattern);
-
-  if (additionalGlobPattern)
-    spriteFiles.push(...glob.sync(additionalGlobPattern))
+  spriteFiles.push(...glob.sync(extraGlobPattern));
 
   const spriter = new SVGSpriter({
     dest: destPath,
     shape: {
       dimension: {
-        maxWidth: 200,
-        maxHeight: 200,
-        attributes: false,
+        maxWidth: 288,
+        maxHeight: 288,
+        attributes: true,
       },
       transform: [
         {
@@ -39,15 +37,10 @@ const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additiona
     },
     mode: {
       inline: true, // Prepare for inline embedding
-      symbol: {
-        example: false,
-        dest: '',
-        sprite: `${targetFile}.svg`,
-      },
       stack: {
         example: false,
         dest: '',
-        sprite: `${targetFile}-stacked.svg`,
+        sprite: `${targetFile}.svg`,
       },
     },
     svg: {
@@ -55,18 +48,32 @@ const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additiona
     },
   });
 
-  const icons = [];
+  const illustrations = [];
+
+  function getIllustrationInfo(name) {
+    let size = 0;
+
+    if (name.endsWith('-lg')) size = 288;
+    else if (name.endsWith('-md')) size = 144;
+    else if (name.endsWith('-sm')) size = 72;
+
+    if (size !== 0) return { name, svg_size: size };
+    return false;
+  }
 
   spriteFiles.forEach((file) => {
     const filePath = path.resolve(file);
-    spriter.add(
-      filePath,
-      null,
-      fs.readFileSync(filePath, {
-        encoding: 'utf-8',
-      }),
-    );
-    icons.push(path.basename(file, '.svg'));
+    const illustrationInfo = getIllustrationInfo(path.basename(file, '.svg'));
+    if (illustrationInfo) {
+      spriter.add(
+        filePath,
+        null,
+        fs.readFileSync(filePath, {
+          encoding: 'utf-8',
+        }),
+      );
+      illustrations.push(illustrationInfo);
+    }
   });
 
   // Compile the sprite
@@ -86,16 +93,16 @@ const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additiona
           });
         });
 
-        // Save the Icons in here to a json so we can then display a nice help sprite sheet in GitLab
-        const iconsInfo = {
-          iconCount: icons.length,
+        // Save the Illustrations in here to a json so we can then display a nice help sprite sheet in GitLab
+        const illustrationsInfo = {
+          iconCount: illustrations.length,
           spriteSize: getFilesizeInBytes(path.join(destPath, `${targetFile}.svg`)),
-          icons,
+          illustrations,
         };
 
         fs.writeFileSync(
           path.join(destPath, `${targetFile}.json`),
-          JSON.stringify(iconsInfo, null, 2),
+          JSON.stringify(illustrationsInfo, null, 2),
           'utf8',
         );
       } catch (e) {
@@ -107,4 +114,4 @@ const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additiona
   });
 };
 
-module.exports = { createSvgSprite };
+module.exports = { createImageSprite };

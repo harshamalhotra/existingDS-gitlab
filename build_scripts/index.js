@@ -2,7 +2,8 @@ const path = require('path');
 const rimraf = require('rimraf');
 
 const { optimizeSVGs } = require('./src/svg_optimization');
-const { createSvgSprite } = require('./src/svg_sprite');
+const { createIconSprite } = require('./src/icon_sprite');
+const { createImageSprite } = require('./src/illustration_sprite');
 const { copyFolderRecursive, copyFile } = require('./src/utils');
 const { collectIllustrations } = require('./src/illustrations');
 const { collectLogos } = require('./src/logos');
@@ -15,7 +16,7 @@ const STATIC_PATH = path.normalize(path.join(BASE_PATH, 'svgpreviewer', 'static'
 
 async function buildFiles() {
   console.log('Creating Icon Sprite...');
-  await createSvgSprite(
+  await createIconSprite(
     BASE_PATH,
     DIST_PATH,
     path.join(BASE_PATH, 'sprite_icons', '*.svg'),
@@ -24,7 +25,7 @@ async function buildFiles() {
   console.log('Created Icon Sprite');
 
   console.log('Creating File Icon Sprite...');
-  await createSvgSprite(
+  await createIconSprite(
     BASE_PATH,
     FILE_ICONS_DIST_PATH,
     path.join(BASE_PATH, 'file_icons', '*.svg'),
@@ -33,7 +34,7 @@ async function buildFiles() {
   console.log('Created File Icon Sprite');
 
   console.log('Creating Illustration Sprite...');
-  await createSvgSprite(
+  await createImageSprite(
     BASE_PATH,
     DIST_PATH,
     path.join(BASE_PATH, 'illustrations', '*.svg'),

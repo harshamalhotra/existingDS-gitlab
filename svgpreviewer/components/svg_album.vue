@@ -69,6 +69,11 @@ export default {
       required: false,
       default: 'Click entry to copy their name',
     },
+    sizeInJson: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   data() {
     return {
@@ -79,7 +84,7 @@ export default {
   computed: {
     ...mapQueryFieldsToComputed(queryFields),
     filteredItems() {
-      if (this.imageSprite) {
+      if (this.imageSprite && !this.sizeInJson) {
         if (this.searchString && this.searchString.startsWith('~')) {
           return this.items.filter((icon) => `~${icon}` === this.searchString);
         }
@@ -165,11 +170,11 @@ export default {
     >
       <svg-card
         v-for="entry in filteredItems"
-        :key="imageSprite ? entry : entry.name"
-        :image="imageSprite ? entry : entry.name"
+        :key="imageSprite && !sizeInJson ? entry : entry.name"
+        :image="imageSprite && !sizeInJson ? entry : entry.name"
         :image-size="imageSprite ? null : entry.size"
         :image-sprite="imageSprite"
-        :size="Number(selectedSize)"
+        :size="sizeInJson ? entry.svg_size : Number(selectedSize)"
         :source-path="sourcePath"
         @imageCopied="setCopyStatus"
         @permalinkSelected="setSearchString"
