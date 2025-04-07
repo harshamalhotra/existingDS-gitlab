@@ -61,7 +61,7 @@ Design to promote the user's learning and proficiency as they interact and explo
 <grid>
   <do>
 
-  Clearly explain how recommendations are generated, especially with [AI features](/usability/ai-human-interaction#be-transparent).
+  Clearly explain how recommendations are generated, especially with [AI features](/patterns/ai-human-interaction#be-transparent).
 
   </do>
   <dont>

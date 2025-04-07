@@ -6,10 +6,10 @@ related:
   - popover
   - alert
   - toast
-  - /usability/navigation-sidebar
+  - /patterns/navigation-sidebar
   - /content/ui-text
-  - /usability/saving-and-feedback
-  - /usability/progressive-disclosure
+  - /patterns/saving-and-feedback
+  - /patterns/progressive-disclosure
 ---
 
 Settings allow a user to control how the product's features or capabilities should behave or appear. A user can modify these configurable options to adjust baseline functionality.
@@ -47,7 +47,7 @@ A user should never wonder why they cannot change something.
 
 Ideally, the experience of saving a settings selection should be consistent, but not all settings can be treated the same. The impact of a change to a theme color is far less consequential than an adjustment to the default branch. The necessity for a `Save changes` button should match the expected user experience.
 
-Full guidelines for [saving progress](/usability/saving-and-feedback#saving-progress) are described separately, but remember never to use a combination of manual and auto-save within the same form.
+Full guidelines for [saving progress](/patterns/saving-and-feedback#saving-progress) are described separately, but remember never to use a combination of manual and auto-save within the same form.
 
 ### Shortcuts to relevant settings
 
@@ -80,4 +80,4 @@ Consider settings as features that introduce capabilities into GitLab, so consis
 
 ### Avoid direct links to docs
 
-It is not an encouraged pattern to link to documentation from settings, because the UI should be self-explanatory. Follow [when to use a link to documentation](/usability/contextual-help#when-to-use-a-link-to-documentation) for guidance.
+It is not an encouraged pattern to link to documentation from settings, because the UI should be self-explanatory. Follow [when to use a link to documentation](/patterns/contextual-help#when-to-use-a-link-to-documentation) for guidance.

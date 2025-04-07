@@ -51,3 +51,19 @@
 
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4085
 /components/overview /components 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4361
+/usability/affordance /patterns/affordance 301
+/usability/ai-human-interaction /patterns/ai-human-interaction 301
+/usability/contextual-help /patterns/contextual-help 301
+/usability/destructive-actions /patterns/destructive-actions 301
+/usability/drag-and-drop /patterns/drag-and-drop 301
+/usability/feature-discovery /patterns/feature-discovery 301
+/usability/feature-management /patterns/feature-management 301
+/usability/loading /patterns/loading 301
+/usability/navigation-sidebar /patterns/navigation-sidebar 301
+/usability/obfuscation /patterns/obfuscation 301
+/usability/progressive-disclosure /patterns/progressive-disclosure 301
+/usability/saving-and-feedback /patterns/saving-and-feedback 301
+/usability/settings-management /patterns/settings-management 301
+/usability /patterns 301

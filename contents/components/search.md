@@ -52,7 +52,7 @@ Itâ€™s a common practice to place the search box on the top right of the page â€
 
 ### Behavior
 
-Search by typing variant uses delayed feedback to reduce the server load. Use a faster [debounce period](/usability/saving-and-feedback#delayed-feedback) when possible to make search results feel quick and responsive.
+Search by typing variant uses delayed feedback to reduce the server load. Use a faster [debounce period](/patterns/saving-and-feedback#delayed-feedback) when possible to make search results feel quick and responsive.
 
 ### Content
 

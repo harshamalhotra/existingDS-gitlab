@@ -4,7 +4,7 @@ summary: Discover strategies for configuring, highlighting, and controlling the 
 related:
   - /components/button
   - /patterns/forms
-  - /usability/feature-discovery
+  - /patterns/feature-discovery
   - /patterns/duo-calls-to-action
 ---
 
@@ -14,7 +14,7 @@ Disabling unwanted [features is possible in projects](https://docs.gitlab.com/ee
 
 ## Discovery moments
 
-[Feature discovery](/usability/feature-discovery) moments are notices presented in the UI that inform a user of additional features. These could be features available in higher tiers, or free features that unlock significant value to a user.
+[Feature discovery](/patterns/feature-discovery) moments are notices presented in the UI that inform a user of additional features. These could be features available in higher tiers, or free features that unlock significant value to a user.
 
 ### Highlighting higher tier features
 

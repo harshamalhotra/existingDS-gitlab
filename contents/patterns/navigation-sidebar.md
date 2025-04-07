@@ -7,7 +7,7 @@ The navigation namely refers to the persistent left sidebar where a user can acc
 
 - [How to propose a change to navigation](https://about.gitlab.com/handbook/product/ux/navigation/).
 - [How to conduct user research of a proposed change to navigation](https://about.gitlab.com/handbook/product/ux/ux-research/evaluating-navigation/).
-- [How to communicate a change in the app](/usability/navigation-sidebar#communicating-changes-to-users).
+- [How to communicate a change in the app](/patterns/navigation-sidebar#communicating-changes-to-users).
 
 ## Structure
 

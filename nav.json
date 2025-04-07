@@ -457,12 +457,40 @@
         "path": "patterns",
         "items": [
           {
+            "title": "AI-human interaction",
+            "path": "ai-human-interaction"
+          },
+          {
+            "title": "Affordance",
+            "path": "affordance"
+          },
+          {
+            "title": "Contextual help and info",
+            "path": "contextual-help"
+          },
+          {
             "title": "Dashboards",
             "path": "dashboards"
           },
           {
+            "title": "Destructive actions",
+            "path": "destructive-actions"
+          },
+          {
+            "title": "Drag and drop",
+            "path": "drag-and-drop"
+          },
+          {
             "title": "Empty States",
             "path": "empty-states"
+          },
+          {
+            "title": "Feature discovery",
+            "path": "feature-discovery"
+          },
+          {
+            "title": "Feature management",
+            "path": "feature-management"
           },
           {
             "title": "Filtering",
@@ -494,16 +522,40 @@
             "path": "keyboard-shortcuts"
           },
           {
+            "title": "Loading",
+            "path": "loading"
+          },
+          {
             "title": "Merge request reports",
             "path": "merge-request-reports"
+          },
+          {
+            "title": "Navigation sidebar",
+            "path": "navigation-sidebar"
           },
           {
             "title": "Notifications",
             "path": "notifications"
           },
           {
+            "title": "Obfuscation",
+            "path": "obfuscation"
+          },
+          {
+            "title": "Progressive disclosure",
+            "path": "progressive-disclosure"
+          },
+          {
+            "title": "Saving and feedback",
+            "path": "saving-and-feedback"
+          },
+          {
             "title": "Searching",
             "path": "searching"
+          },
+          {
+            "title": "Settings management",
+            "path": "settings-management"
           }
         ]
       },
@@ -570,64 +622,6 @@
           {
             "title": "Date and time",
             "path": "date-and-time"
-          }
-        ]
-      },
-      {
-        "title": "Usability and interaction",
-        "path": "usability",
-        "items": [
-          {
-            "title": "AI-human interaction",
-            "path": "ai-human-interaction"
-          },
-          {
-            "title": "Affordance",
-            "path": "affordance"
-          },
-          {
-            "title": "Contextual help and info",
-            "path": "contextual-help"
-          },
-          {
-            "title": "Destructive actions",
-            "path": "destructive-actions"
-          },
-          {
-            "title": "Drag and drop",
-            "path": "drag-and-drop"
-          },
-          {
-            "title": "Feature discovery",
-            "path": "feature-discovery"
-          },
-          {
-            "title": "Feature management",
-            "path": "feature-management"
-          },
-          {
-            "title": "Loading",
-            "path": "loading"
-          },
-          {
-            "title": "Navigation sidebar",
-            "path": "navigation-sidebar"
-          },
-          {
-            "title": "Obfuscation",
-            "path": "obfuscation"
-          },
-          {
-            "title": "Progressive disclosure",
-            "path": "progressive-disclosure"
-          },
-          {
-            "title": "Saving and feedback",
-            "path": "saving-and-feedback"
-          },
-          {
-            "title": "Settings management",
-            "path": "settings-management"
           }
         ]
       },

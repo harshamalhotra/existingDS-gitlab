@@ -14,7 +14,7 @@ A component is a UI element that serves a singular purpose or function. Two or m
 
 ## [Patterns](/patterns)
 
-A pattern combines components and/or content elements into a repeatable, consistent group that has a shared purpose, content association, or both. For example, filtering, forms, or navigation.
+Patterns help users accomplish tasks effectively by using elements in predictable combinations and creating repeatable interaction flows.
 
 ## [Objects](/objects)
 
@@ -27,7 +27,3 @@ A data visualization pulls insights from a data set into a narrative, allowing a
 ## [Content](/content)
 
 Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.
-
-## [Usability and interaction](/usability)
-
-Usability guidelines include documentation that affects the ease-of-use for different types of users. This includes accessibility and internationalization.

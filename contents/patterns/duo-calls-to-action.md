@@ -2,8 +2,8 @@
 name: Calls to action for GitLab Duo
 summary: Guidelines for designing and implementing AI-specific interactive elements that prompt user actions within GitLab.
 related:
-  - /usability/ai-human-interaction
-  - /usability/feature-management
+  - /patterns/ai-human-interaction
+  - /patterns/feature-management
   - /components/button
   - /components/link
 ---
@@ -33,7 +33,7 @@ There is no specific color associated with AI or GitLab Duo. The color of the ic
 
 ### Label
 
-Avoid CTA labels with "GitLab Duo" or "AI" to keep them simple and brief. Instead, indicate that the feature is AI-powered through onboarding, supplemental UI copy, or iconography. For guidance on how to use "GitLab Duo" in the UI, refer to the [AI transparency guidelines](/usability/ai-human-interaction#be-transparent).
+Avoid CTA labels with "GitLab Duo" or "AI" to keep them simple and brief. Instead, indicate that the feature is AI-powered through onboarding, supplemental UI copy, or iconography. For guidance on how to use "GitLab Duo" in the UI, refer to the [AI transparency guidelines](/patterns/ai-human-interaction#be-transparent).
 
 <grid>
   <do>
@@ -46,7 +46,7 @@ Avoid CTA labels with "GitLab Duo" or "AI" to keep them simple and brief. Instea
 
 ### Feature maturity
 
-When a feature is experimental or beta, display that information with a badge outside of the CTA. See also: [how to highlight feature versions](/usability/feature-management#highlighting-feature-versions).
+When a feature is experimental or beta, display that information with a badge outside of the CTA. See also: [how to highlight feature versions](/patterns/feature-management#highlighting-feature-versions).
 
 <grid>
   <do>
