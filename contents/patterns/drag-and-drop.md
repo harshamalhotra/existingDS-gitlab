@@ -10,7 +10,7 @@ There is a clear affordance that distinguishes draggable items from non-draggabl
 - **Draggable** items have rounded corners, a shadow, and a handle should appear to the left of the title of the draggable item.
 - **Non-draggable** items look like a plain list.
 
-Use [system cursors](/usability/affordance#cursors) to indicate when an element is draggable. The `grab` cursor appears on hover when an element is draggable. Once it’s dragged, the cursor will change to `grabbing`. For areas where an element cannot be dropped, use the `not-allowed` cursor.
+Use [system cursors](/patterns/affordance#cursors) to indicate when an element is draggable. The `grab` cursor appears on hover when an element is draggable. Once it’s dragged, the cursor will change to `grabbing`. For areas where an element cannot be dropped, use the `not-allowed` cursor.
 
 <todo>Add visual example of non draggable item</todo>
 

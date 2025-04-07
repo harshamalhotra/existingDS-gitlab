@@ -69,7 +69,7 @@ Forms may include a variety of elements. By default all information in forms is 
   - Provide examples, expected format, input state, validation messages, or any combination of these.
   - Positioned directly below an input.
   - You can omit examples or expected format if the user typically copies an already validated value to paste into the input. For example, the user copies and pastes their Google Cloud project ID, which was validated when their project was created in Google Cloud.
-  - May include a [help link](/usability/contextual-help) when necessary.
+  - May include a [help link](/patterns/contextual-help) when necessary.
   - For example: _Must be 11 digits including the country code. Example: `+1-234-567-8901`. Learn more._
 - **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
 
@@ -129,7 +129,7 @@ There are two types of validation messages:
 - **Error**: Indicates content that can’t be submitted, or was invalid and in need of correction.
 - **Success**: Indicates content that is valid. In most cases a success message isn't shown.
 
-Consider using a slower [debounce period](/usability/saving-and-feedback#delayed-feedback) during real-time validation to prevent interrupting or frustrating a user while they're entering content.
+Consider using a slower [debounce period](/patterns/saving-and-feedback#delayed-feedback) during real-time validation to prevent interrupting or frustrating a user while they're entering content.
 
 #### Text limits
 
@@ -168,7 +168,7 @@ Note to developers: the quick submit behavior can be automatically added to a fo
 
 ### Error messages
 
-Error messages are an indication of system status. They let users know that they have encountered a problem and provide ways to resolve it, teaching them to avoid future impediments. Whenever possible, the system should keep potential errors to a minimum. See [destructive actions](/usability/destructive-actions) guidelines.
+Error messages are an indication of system status. They let users know that they have encountered a problem and provide ways to resolve it, teaching them to avoid future impediments. Whenever possible, the system should keep potential errors to a minimum. See [destructive actions](/patterns/destructive-actions) guidelines.
 
 Error messages can be persistent, dismissible, or temporary. In order to be effective, error messages should be concise, specific, and consistent.
 

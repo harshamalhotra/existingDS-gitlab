@@ -2,7 +2,7 @@
 name: Slash commands in GitLab Duo Chat
 summary: A method for communicating with and discovering GitLab Duo Chat functionality.
 related:
-  - /usability/ai-human-interaction
+  - /patterns/ai-human-interaction
 ---
 
 ## Overview

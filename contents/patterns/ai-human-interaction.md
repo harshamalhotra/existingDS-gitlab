@@ -2,9 +2,9 @@
 name: AI-human interaction
 summary: Design AI-powered features that balance user needs, transparency, and ethical considerations.
 related:
-  - /usability/contextual-help
-  - /usability/destructive-actions
-  - /usability/saving-and-feedback
+  - /patterns/contextual-help
+  - /patterns/destructive-actions
+  - /patterns/saving-and-feedback
   - /patterns/duo-slash-commands
 ---
 
@@ -35,7 +35,7 @@ But if the fix unintentionally worsens the security, the cost might outweight th
 To mitigate high risk situations:
 
 - [Set the right expectations](#set-the-right-expectations).
-- Design for potential negative impact. For example, a user should explicitly opt in to a high risk AI-powered feature. For more information, see [destructive actions](/usability/destructive-actions).
+- Design for potential negative impact. For example, a user should explicitly opt in to a high risk AI-powered feature. For more information, see [destructive actions](/patterns/destructive-actions).
 
 ### Communicate confidence
 
@@ -67,7 +67,7 @@ _The illustration is currently a [work in progress](https://gitlab.com/gitlab-or
 
 The interface should clearly communicate AI capabilities, limitations, and the scope of its decision-making authority. Users need to understand a system's capabilities and limits to understand how much trust to put into the system. To help the user build a mental model of the system:
 
-- Clearly highlight if a feature is an [experiment or beta](/usability/feature-management#highlighting-feature-versions).
+- Clearly highlight if a feature is an [experiment or beta](/patterns/feature-management#highlighting-feature-versions).
 - Follow the [disclaimer guidelines](#disclaimer).
 - Use clear, simple language to explain what the system is doing and how it arrived at its recommendations.
 - Explain what data the system is trained on and what it's optimized for.

@@ -23,6 +23,6 @@
 ^[Objects] @pedroms
 /contents/objects/
 
-^[AI] @aregnery @emilybauman @jackib @katiemacoy @nicollem @pedroms @timnoah
-/contents/usability/ai-human-interaction.md
+^[AI] @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/ai-human-interaction.md
 /contents/patterns/duo-*

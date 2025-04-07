@@ -47,7 +47,7 @@ related:
 - If you need to deliver an instance level message from an admin to all users, use a [broadcast message](/components/broadcast-message) instead.
 - If you are immediately confirming a user's action while they remain in the same view, use a [toast](/components/toast) instead.
 - If you are promoting, soliciting feedback, or informing a user about a feature, use a [banner](/components/banner) instead.
-- If you need to display static documentation, warnings, or contextual information that's always present, use [contextual help and info](/usability/contextual-help) patterns instead. These can be styled using [feedback and status](/product-foundations/design-tokens-using#choosing-between-feedback-and-status) utility classes. Alerts include focus management and semantic ARIA roles that are intended for dynamic notifications, not static content.
+- If you need to display static documentation, warnings, or contextual information that's always present, use [contextual help and info](/patterns/contextual-help) patterns instead. These can be styled using [feedback and status](/product-foundations/design-tokens-using#choosing-between-feedback-and-status) utility classes. Alerts include focus management and semantic ARIA roles that are intended for dynamic notifications, not static content.
 
 ### Variants
 
