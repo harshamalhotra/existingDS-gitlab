@@ -5,7 +5,7 @@ const { optimizeSVGs } = require('./svg_optimization');
 const { getIllustrationStats } = require('./utils');
 
 const collectIllustrations = async (basePath, distPath) => {
-  const statsFile = path.join(distPath, 'illustrations.json');
+  const statsFile = path.join(distPath, 'illustrations_individual.json');
 
   console.log('Optimizing SVG illustrations...');
   const childSVGs = await optimizeSVGs(

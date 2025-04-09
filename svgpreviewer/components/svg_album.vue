@@ -79,16 +79,15 @@ export default {
   computed: {
     ...mapQueryFieldsToComputed(queryFields),
     filteredItems() {
-      if (this.imageSprite) {
-        if (this.searchString && this.searchString.startsWith('~')) {
-          return this.items.filter((icon) => `~${icon}` === this.searchString);
-        }
-        return this.items.filter((icon) => icon.includes(this.searchString));
-      }
       if (this.searchString && this.searchString.startsWith('~')) {
-        return this.items.filter((icon) => `~${icon.name}` === this.searchString);
+        return this.items.filter(
+          (item) => `~${item.name ? item.name : item}` === this.searchString,
+        );
       }
-      return this.items.filter((icon) => icon.name.includes(this.searchString));
+      return this.items.filter((item) => {
+        const name = item.name ? item.name : item;
+        return name.includes(this.searchString);
+      });
     },
     copyStatusText() {
       switch (this.copyStatus) {
@@ -165,11 +164,11 @@ export default {
     >
       <svg-card
         v-for="entry in filteredItems"
-        :key="imageSprite ? entry : entry.name"
-        :image="imageSprite ? entry : entry.name"
+        :key="entry.name ? entry.name : entry"
+        :image="entry.name ? entry.name : entry"
         :image-size="imageSprite ? null : entry.size"
         :image-sprite="imageSprite"
-        :size="Number(selectedSize)"
+        :size="entry.svg_size ? entry.svg_size : Number(selectedSize)"
         :source-path="sourcePath"
         @imageCopied="setCopyStatus"
         @permalinkSelected="setSearchString"

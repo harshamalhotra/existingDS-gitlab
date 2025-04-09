@@ -6,19 +6,52 @@ const SVGSpriter = require('svg-sprite');
 const { getFilesizeInBytes } = require('./utils');
 
 // eslint-disable-next-line max-params
-const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additionalGlobPattern) => {
-  const spriteFiles = glob.sync(globPattern);
+const createSvgSprite = ({
+  destPath,
+  globPatterns,
+  targetFile,
+  addDimension = false,
+  svgSizes = {},
+} = {}) => {
+  const spriteFiles = [];
 
-  if (additionalGlobPattern)
-    spriteFiles.push(...glob.sync(additionalGlobPattern))
+  globPatterns.forEach((pattern) => {
+    spriteFiles.push(...glob.sync(pattern));
+  });
+
+  function getSpriteModes() {
+    if (addDimension) {
+      return {
+        inline: true, // Prepare for inline embedding
+        stack: {
+          example: false,
+          dest: '',
+          sprite: `${targetFile}.svg`,
+        },
+      };
+    }
+    return {
+      inline: true, // Prepare for inline embedding
+      symbol: {
+        example: false,
+        dest: '',
+        sprite: `${targetFile}.svg`,
+      },
+      stack: {
+        example: false,
+        dest: '',
+        sprite: `${targetFile}-stacked.svg`,
+      },
+    };
+  }
 
   const spriter = new SVGSpriter({
     dest: destPath,
     shape: {
       dimension: {
-        maxWidth: 200,
-        maxHeight: 200,
-        attributes: false,
+        maxWidth: 288,
+        maxHeight: 288,
+        attributes: addDimension,
       },
       transform: [
         {
@@ -37,36 +70,41 @@ const createSvgSprite = (BASE_PATH, destPath, globPattern, targetFile, additiona
         },
       ],
     },
-    mode: {
-      inline: true, // Prepare for inline embedding
-      symbol: {
-        example: false,
-        dest: '',
-        sprite: `${targetFile}.svg`,
-      },
-      stack: {
-        example: false,
-        dest: '',
-        sprite: `${targetFile}-stacked.svg`,
-      },
-    },
+    mode: getSpriteModes(),
     svg: {
       namespaceClassnames: false,
     },
   });
 
+  function getSvgNameAndSize(name) {
+    let size = 0;
+
+    if (name.endsWith('-lg')) size = svgSizes.lg;
+    else if (name.endsWith('-md')) size = svgSizes.md;
+    else if (name.endsWith('-sm')) size = svgSizes.sm;
+
+    if (size !== 0) return { name, svg_size: size };
+    return false;
+  }
+
   const icons = [];
 
   spriteFiles.forEach((file) => {
     const filePath = path.resolve(file);
-    spriter.add(
-      filePath,
-      null,
-      fs.readFileSync(filePath, {
-        encoding: 'utf-8',
-      }),
-    );
-    icons.push(path.basename(file, '.svg'));
+    const svgInfo = addDimension
+      ? getSvgNameAndSize(path.basename(file, '.svg'))
+      : path.basename(file, '.svg');
+
+    if (svgInfo) {
+      spriter.add(
+        filePath,
+        null,
+        fs.readFileSync(filePath, {
+          encoding: 'utf-8',
+        }),
+      );
+      icons.push(svgInfo);
+    }
   });
 
   // Compile the sprite

@@ -9,7 +9,8 @@ export default {
   },
   data() {
     return {
-      items: illustrations.illustrations,
+      items: illustrations.icons,
+      spriteSize: illustrations.spriteSize,
     };
   },
 };
@@ -19,7 +20,9 @@ export default {
   <svg-album
     :items="items"
     layout="illustrations"
+    image-sprite="dist/illustrations.svg"
     source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
+    :sprite-size="spriteSize"
     title="Illustration"
     copy-message="Click an illustration to copy the path"
   />
