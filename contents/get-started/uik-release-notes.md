@@ -2,6 +2,49 @@
 name: Release notes
 ---
 
+## 17.11
+
+<small>Published 2025-04-11</small>
+
+In this release we're continuing the spring cleaning theme. April deprecations bring May implementations! With the latest batch of removals hopefully it's easier for you to find and implement the latest supported components. At the same time, it helps reduce our maintenance overhead so we can focus on future improvements. Here are the highlights from this release:
+
+- **Deprecation removal:** When things are deprecated we keep them around for a few milestones to give you time to migrate to the latest assets. We've had many things hanging around for too long and they've finally been ushered out. Some of these were rather large component sets so finding what you need in the component library should faster and more efficient.
+- **Filter builder pattern:** Copy and paste this new pattern to quickly mock up layouts that include filtering. If there's a pattern you'd like to see added, create an issue and ping the design system team to get started.
+
+**💡 Figma tip:** Okay, so instead of highlighting something specific, here's a simple tip to keep up to date with all new features—check Figma's [release notes](https://www.figma.com/release-notes/). Sometimes features are apparent in the UI, and other times not so much. This is a great way to learn about them straight from the source. Stay tuned for more frequent feature releases as we near Figma's annual [Config](https://config.figma.com/) conference too.
+
+### Changelog
+
+#### ➕ Additions
+
+- (Patterns & Page Templates): Adds [**filter builder**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1485-14186&p=f&t=4MfuaVZA5G8gh4pR-11) pattern.
+
+#### 🔄 Changes
+
+- (Data Visualization): Updates deprecated instances of buttons, dropdown, and tooltips to use the latest supported components.
+- (Component Library): Breaking(medium): Fix padding and clear button visibility for [**❖&nbsp;Text/Search**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=49871-77784&t=5QLYWiucYKw8bj8A-11) in the _Submit, Filled_ variant. Updating this component will cause the clear button to appear in some circumstances and disrupt some existing layouts.
+- (Product Icons): Updates "Issue types" category to "Work items" and renames icons with `issue-type-*` to `work-item-*`. This change has only been completed in Figma with updates the SVG library and product coming soon.
+
+#### 🛠️ Fixes
+
+- (Component Library): Fixes some dropdown list example descriptions that were incorrectly marked as deprecated.
+- (Component Library): Fixes emoji and ellipsis button variant descriptions by removing individual variant descriptions and relying on a single component description.
+
+#### 🗑️ Removals
+
+- (Data Visualization): Removes blank chart pages (bar, gauge, pie).
+- (Component Library): Removes deprecated avatar page and styles.
+- (Component Library): Removes deprecated button page.
+- (Component Library): Removes deprecated button group page.
+- (Component Library): Removes deprecated dropdown page and deprecated component variants.
+- (Component Library): Removes deprecated tooltip page.
+- (Component Library): Removes deprecated token page.
+- (Component Library): Removes deprecated tabs page and styles.
+
+#### Contributors
+
+Dan Mizzi-Harris, Jeremy Elder, Julia Miocene, Libor Vanc, Nick Brandt, Sascha Eggenberger
+
 ## 17.10
 
 <small>Published 2025-03-14</small>
