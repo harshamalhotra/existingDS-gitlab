@@ -5,6 +5,8 @@ name: Contributing
 Thank you for your interest in contributing to the Pajamas Design System! We
 welcome all feedback regarding designs, guidelines, and implementation. The
 following details how to contribute easily and efficiently.
+You can also read through the [category direction for the design system](https://about.gitlab.com/direction/foundations/design_system/)
+for broader focus areas that you can contribute to.
 
 ## Contribute an issue
 
