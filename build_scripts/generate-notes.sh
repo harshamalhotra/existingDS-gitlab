@@ -65,4 +65,13 @@ while read STATUS SOURCE TARGET; do
   fi
 done  < <(git diff "$LAST_TAG..HEAD" --name-status --diff-filter=ADMR -- sprite_icons illustrations build_scripts/file_icons_version | sort)
 
+if git log "$LAST_TAG..HEAD" --grep "^fix:" --no-merges --format=%s | grep "^fix:" > /dev/null; then
+  echo ""
+  echo "## Fixes"
+  echo ""
+  while read commit; do
+    echo "  - $commit"
+  done < <(git log "$LAST_TAG..HEAD" --grep "^fix:" --no-merges --oneline)
+fi
+
 exit 0
