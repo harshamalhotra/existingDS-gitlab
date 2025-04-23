@@ -46,8 +46,9 @@ components:
 - If the options within the panel are selectable instead of directly performing an action, refer to the [combobox](/components/dropdown-combobox) component.
 - If a user is selecting a single text option from a group of options within a [form](/patterns/forms), consider using a [select](/components/select), [radio group](/components/radio-button), or [checkboxes](/components/checkbox) instead.
 - If you need a way for a user to expand or collapse a content section, use an [accordion](/components/accordion) instead.
-- If there is only ever a single option, display that option directly. For example, if the only option is **Remove**, use a [button](/components/button) instead.
-- With two or fewer links or actions, show them directly as a [button group](/components/button/#group) if appropriate for your context. A disclosure dropdown can help free up space in the UI, but it can also add unnecessary steps to access options. For example, if the only options are **Edit** and **Delete**, you can use a group of [icon-only buttons](/components/button/#icon-only-buttons).
+- With two or fewer links or actions, consider showing them directly as a [button group](/components/button/#group) if appropriate for your context. A disclosure dropdown can help free up space in the UI, but it can also add unnecessary steps to access options. For example, if the only options are **Edit** and **Delete**, you could use a group of [icon-only buttons](/components/button/#icon-only-buttons).
+- If there is only ever a single option, display that option directly. For example, if the only option is **Edit**, use a [button](/components/button) instead.
+  - An exception applies when a [destructive action](/patterns/destructive-actions) is the only option in a dropdown, either to deliberately increase friction against accidental clicks or to avoid competing with a primary action.
 
 ### Trigger button variants
 
