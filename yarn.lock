@@ -1287,30 +1287,10 @@
     lodash "^4.17.21"
     vue-eslint-parser "^9.4.3"
 
-"@gitlab/svgs@^3.126.0", "@gitlab/svgs@^3.127.0":
-  version "3.127.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.127.0.tgz#d7efb48d6a49f50200eac623a704d9c5b0bf1933"
-  integrity sha512-mwiz8ZieX7FNHOu5WS8WMSUfEyEGzhv95Yk/tUfHjQfhsM3aPH3ZGJwIeOQ+yEoiBuLw8RmGBw8kLmZklfi8Bw==
-  dependencies:
-    "@gitlab/svgs" "^3.126.0"
-    "@gitlab/ui" "^112.3.2"
-    "@nuxtjs/tailwindcss" "6.11.4"
-    nuxt "^2.18.1"
-    pikaday "1.8.0"
-
-"@gitlab/ui@^112.3.2":
-  version "112.3.3"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-112.3.3.tgz#3fea0bcc66e728feb854b4dc128259d20f8019fd"
-  integrity sha512-kK8TMEWa/RbadR6z7ceifdbXYG0EMjB6r+YfmZgqtkJxjjNrZYocKNe7kF0bSeugBz6DtpsKswNeIRBzUfxHcQ==
-  dependencies:
-    "@floating-ui/dom" "1.4.3"
-    echarts "^5.3.2"
-    iframe-resizer "^4.3.2"
-    lodash "^4.17.20"
-    popper.js "^1.16.1"
-    portal-vue "^2.1.7"
-    vue-functional-data-merge "^3.1.0"
-    vue-runtime-helpers "^1.1.2"
+"@gitlab/svgs@^3.127.1":
+  version "3.127.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.127.1.tgz#fbb18bc1dff7917ee0a71d182ea37e90569a59fd"
+  integrity sha512-4se/K7xRPMmjirOpvGjvT7BvwN20ztsVr+vXA8BmNL1be+iqS94GTWy101DS/Z6ZcTiRZQfgfV4LE5g5ArEmWg==
 
 "@gitlab/ui@^113.0.0":
   version "113.0.0"
