@@ -51,7 +51,7 @@ function svg_update() {
 }
 
 while read STATUS SOURCE TARGET; do
-  if [ "$SOURCE" == "build_scripts/file_icons_version" ]; then
+  if [ "$SOURCE" == "build_scripts/file_icons_version" ] || [ "$SOURCE" == "src/file_icon_map.js" ]; then
     case "$STATUS" in
         A)
             echo "  - Added file icons";;
@@ -63,7 +63,7 @@ while read STATUS SOURCE TARGET; do
   else
     svg_update "$STATUS" "$SOURCE" "$TARGET"
   fi
-done  < <(git diff "$LAST_TAG..HEAD" --name-status --diff-filter=ADMR -- sprite_icons illustrations build_scripts/file_icons_version | sort)
+done  < <(git diff "$LAST_TAG..HEAD" --name-status --diff-filter=ADMR -- sprite_icons illustrations build_scripts/file_icons_version src/file_icon_map.js | sort)
 
 if git log "$LAST_TAG..HEAD" --grep "^fix:" --no-merges --format=%s | grep "^fix:" > /dev/null; then
   echo ""
