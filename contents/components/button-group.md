@@ -16,9 +16,11 @@ related:
 
 ## Examples
 
-<story-viewer component="base-button-group" title="Button Group"></story-viewer>
+<story-viewer component="base-button-group" title="Actions"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A7)
+<story-viewer component="base-button-group" story="interactive-selected" title="Options"></story-viewer>
+
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=117033-15878)
 
 ## Structure
 
