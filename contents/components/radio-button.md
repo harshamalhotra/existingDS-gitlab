@@ -6,9 +6,9 @@ components:
   - base-form-form-radio
 related:
   - checkbox
-  - segmented-control
   - select
   - toggle
+  - button-group
 ---
 
 ## Examples
@@ -36,7 +36,7 @@ related:
 
 ### When not to use
 
-<todo>Add when not to use.</todo>
+- If selecting an option would change the state or view of other content and is not within a form, consider using a [button group](/components/button-group) instead.
 
 ### Appearance
 

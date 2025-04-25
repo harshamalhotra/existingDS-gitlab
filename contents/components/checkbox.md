@@ -7,8 +7,8 @@ components:
 related:
   - radio-button
   - toggle
-  - segmented-control
   - select
+  - button-group
 ---
 
 ## Examples
@@ -38,7 +38,7 @@ related:
 
 - If only one option in a set can be selected, use [radio buttons](/components/radio-button) instead.
 - If you are wanting to have a change immediately applied when an option is selected, consider using a [toggle](/components/toggle) instead.
-- If selecting an option would change the state or view of other content, consider using a [segmented control](/components/segmented-control) instead.
+- If selecting an option from a group would change the state or view of other content, consider using a [button group](/components/button-group) instead.
 - If choices exist outside of a form and as a menu of options, use a [combobox](/components/dropdown-combobox) instead.
 
 ### Appearance

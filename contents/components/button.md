@@ -6,10 +6,10 @@ docs: in-progress
 gitlab_ui: /components/button/code
 components:
   - base-button
-  - base-button-group
 related:
+  - button-group
   - dropdown-disclosure
-  - segmented-control
+  - dropdown-menu
   - pagination
   - tooltip
   - spinner
@@ -43,11 +43,9 @@ related:
 
 <story-viewer component="base-button" story="dropdown-icon-button" title="Icon dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
-<story-viewer component="base-button" story="dropdown-split-button" title="Split dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
+<story-viewer component="base-button" story="dropdown-split-button" title="Split dropdown button"></story-viewer>
 
 <story-viewer component="base-button" story="ellipsis" title="Ellipsis button"></story-viewer>
-
-<story-viewer component="base-button-group" title="Button Group" iframe-padding="0 0 50px 0"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-7&mode=design)
 
@@ -69,7 +67,7 @@ related:
 
 ### When not to use
 
-- If you are directing a user to a new location, consider using an anchor (`<a>`) element, which can also be styled like a button when actions and destinations are present in the same set of controls.
+- If you are directing a user to a new location, consider using a link (`<a href="">`) element or the [link](/components/link) component, which can also be styled like a button when actions and destinations are present in the same set of controls.
 
 ### Categories
 
@@ -205,10 +203,8 @@ Buttons can contain different content depending on the situation. For example, s
 
 ### Dropdown buttons
 
-A dropdown button triggers a panel with a [disclosure](/components/dropdown-disclosure) or [combobox](/components/dropdown-combobox). [Which dropdown panel should you use?](/components/dropdown-overview#which-component-should-you-use)
-
-- **Text and icon dropdowns**: A dropdown button uses the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
-- **Split dropdown**: A dropdown button is split when additional related actions are available. The left half displays the default action and the additional related actions are contained within the attached dropdown on the right half. The options available in the dropdown perform the action on click.
+- A dropdown button triggers a [dropdown](/components/dropdown-overview) and uses the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
+- A dropdown button is split when additional related actions are available. The left half displays the default action and the additional related actions are contained within the attached dropdown on the right half. The options available in the dropdown perform the action on click.
 
 ### Icon-only buttons
 
@@ -222,9 +218,7 @@ An ellipsis button is a specific kind of icon-only button that allows for expand
 
 ### Group
 
-Button groups visually group buttons that have similar or related actions together to emphasize the relationship and aid with arrangement and spacing. When button groups are used to select an option from a series of options, a single button in a button group can act as an indicator of the currently selected state.
-
-[Pagination](/components/pagination) and [segmented controls](/components/segmented-control) are specific types of button groups.
+See the [button group](/components/button-group) component.
 
 With three or more actions, show them in a [disclosure dropdown](/components/dropdown-disclosure) if appropriate for your context. A button group can make it easier to notice and access the actions, but it can also take up unnecessary space in the UI.
 
