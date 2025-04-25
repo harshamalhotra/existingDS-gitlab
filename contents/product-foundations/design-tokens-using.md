@@ -51,9 +51,9 @@ Our design tokens are organized into conceptual categories that reflect their pu
 
 Actions are interactive elements that trigger or represent user actions. `action.*` design tokens give a common visual style for interactive elements across the GitLab UI.
 
-To create bespoke interactive elements, combine background, foreground, and border color tokens. Note that in some modes, borders might not be visible by default. This is intentional to provide accessible boundaries in modes like Windows High Contrast Mode.
+To create bespoke interactive elements, combine background, foreground, and border color design tokens. Note that in some modes, borders might not be visible by default. This is intentional to provide accessible boundaries in modes like Windows High Contrast Mode.
 
-Action tokens support three contexts:
+Action design tokens support three contexts:
 
 - `neutral`: Default for most actions.
 - `confirm`: For positive outcome actions.
@@ -61,11 +61,21 @@ Action tokens support three contexts:
 
 Interactivity can be communicated through implementing states such as `hover`, `focus`, and `active`.
 
-Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), or [tabs](/components/tabs)) that already implement action tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
+Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), and [tabs](/components/tabs)) that already implement action design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
 
 ### Controls
 
-<todo>Document control design tokens.</todo>
+Controls enable user input and selection, typically within a [form](/patterns/forms). `control.*` design tokens apply consistent styling to form elements across the GitLab UI. They're also used for elements that appear or function like a form control, even though the underlying code or semantics may not always match a native HTML form element.
+
+Control design tokens support implementations of:
+
+- Input fields (text, email, password, and more).
+- Checkboxes and radio buttons.
+- Textareas and multiline inputs.
+- Select menus.
+- Form element validation, readonly, and disabled states.
+
+Consider using existing GitLab components (such as [checkbox](/components/checkbox), [radio button](/components/radio-button), [select](/components/select), [textarea](/components/textarea), and [text input](/components/text-input)) that already implement control design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
 
 ### Feedback
 
