@@ -6,7 +6,7 @@ components:
 related:
   - checkbox
   - radio-button
-  - segmented-control
+  - button-group
 ---
 
 ## Examples
@@ -48,7 +48,7 @@ related:
 - If multiple items can be selected, including nested items, and the result of the selection has to be saved or submitted, consider using a [checkbox](/components/checkbox) instead.
 - If only one item can be selected and the result of the selection has to be saved or submitted, consider using a [radio button](/components/radio-button) instead.
 - If making a selection from a list of items, consider using a [combobox](/components/dropdown-combobox) instead.
-- If changing a content view or preference in the context of that content, consider using a [segmented control](/components/segmented-control) instead.
+- If changing the content view or presentation in the context of that content, consider using a [button group](/components/button-group) instead.
 
 ### Appearance
 

@@ -5,6 +5,7 @@ components:
   - base-pagination
 related:
   - button
+  - button-group
   - path
   - infinite-scroll
 ---

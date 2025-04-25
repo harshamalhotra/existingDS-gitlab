@@ -124,7 +124,7 @@ fields: [
 - A table row can include additional actions in the far-right column.
 - Ensure that the column has a header with "Actions" as the visible text.
 - These actions should be visible at all times rather than showing on-hover.
-- If there are two or more actions in a table row, consider using a button group or a [“more menu” button](/components/button#ellipsis) with a dropdown list option.
+- If there are two or more actions in a table row, consider using a [button group](/components/button-group) or a [“more menu” button](/components/button#ellipsis) with a dropdown list option.
 
 #### Responsiveness
 

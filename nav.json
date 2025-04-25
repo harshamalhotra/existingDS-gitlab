@@ -295,6 +295,10 @@
                 "path": "button"
               },
               {
+                "title": "Button group",
+                "path": "button-group"
+              },
+              {
                 "title": "Sorting",
                 "path": "sorting"
               }
@@ -401,10 +405,6 @@
           {
             "title": "Progress bar",
             "path": "progress-bar"
-          },
-          {
-            "title": "Segmented control",
-            "path": "segmented-control"
           },
           {
             "title": "Skeleton loader",
