@@ -2,6 +2,29 @@
 name: Branded lockups
 ---
 
+## Tagline lockup
+
+“Software. Faster.” is a core promise to our customers. The precise, deliberate structure, with a period creating a momentary pause between words, reflects two truths: what we help teams build (“Software”) and the key advantage we deliver (“Faster”). Together, they capture our value proposition with precision and clarity.
+
+The simplicity of the tagline is intentional: While GitLab offers a comprehensive AI-powered DevSecOps platform with robust security capabilities built in, our tagline focuses on the ultimate outcome - helping teams deliver better software at greater velocity.
+
+The directness of the tagline aligns with our brand personality:
+
+- **Visionary:** We focus on the outcome that matters most to software teams.
+- **Empathetic:** We understand speed is critical but must be achieved without compromise.
+- **Intentional:** We communicate our value clearly and without unnecessary complexity.
+
+The tagline lockup features our core logo paired with our tagline. This lockup has two formats: *stacked* and *horizontal*. Use the version that fits the dimensions of the asset the best. In the case of the horizontal format, contain the lockup within a stroked box using our AI gradient (Orange 01p - Purple 01p). This helps unify the logo and tagline, while also conveying that AI permeates our product.
+
+Consider the following when using the tagline lockup:
+
+- Default to full color.
+- Limit the lockup to a single instance on any given asset.
+- The lockup can and should be present on an asset even when the core logo is already used elsewhere in the creative.
+- Use the lockup to further our message of “Software. Faster.” If this is already mentioned within the headline of the asset, then the lockup is not needed.
+
+<figure-img label="Tagline lockup showing clear space and construction for both stacked and horizontal formats" src="/img/brand/tagline-lockups.svg"></figure-img>
+
 ## Co-branded lockups
 
 Co-branded lockups are created by the Brand Design team for approved GitLab partnerships, events, and campaigns. We default to the partner company’s co-branding lockup standards, but adhere to the following when such standards do not exist:
