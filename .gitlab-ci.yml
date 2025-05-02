@@ -33,6 +33,7 @@ include:
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@2.1.0
     inputs:
       job_stage: "pre-build"
+      gitlab_dangerfiles_version: "4.9.0"
 
 ###############
 #
