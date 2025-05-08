@@ -96,7 +96,7 @@ While you'll see this pattern in our codebase, we are actively phasing it out. I
 
 Design tokens are a product of the design system, not a store of every variable or style that changes across modes.
 
-If you cannot use an existing design token or override its value in dark mode, this is the preferred method for you to author and maintain your own styles that might change across mode.
+If you cannot use an existing design token or override its value in dark mode, this is the preferred method for you to author and maintain your own styles that might change across modes.
 
 Add your variables to a `root.css` file in your project, for example [root.scss](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/assets/stylesheets/root.scss) in GitLab, using the following structure:
 
