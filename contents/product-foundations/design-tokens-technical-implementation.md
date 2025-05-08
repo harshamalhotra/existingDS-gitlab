@@ -91,3 +91,32 @@ In the olden days, you could add dark mode overrides with the `.gl-dark` selecto
 ```
 
 While you'll see this pattern in our codebase, we are actively phasing it out. If you believe you have a legitimate reason to use `.gl-dark`, reach out to the design system team - this likely indicates a gap in our design system that we need to fix.
+
+## Bespoke dark mode solutions
+
+Design tokens are a product of the design system, not a store of every variable or style that changes across modes.
+
+If you cannot use an existing design token or override its value in dark mode, this is the preferred method for you to author and maintain your own styles that might change across mode.
+
+Add your variables to a `root.css` file in your project, for example [root.scss](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/assets/stylesheets/root.scss) in GitLab, using the following structure:
+
+```css
+:root {
+
+  /**
+   * <Name of styles>
+   * Discussion: <#issue>
+   * Owner: <stage:group>
+   */
+  --example-icon-color: var(--gl-color-green-700);
+
+  &.gl-dark {
+    --example-icon-color: var(--gl-color-green-300);
+```
+
+This approach:
+
+- limits tech and design debt creation by making decisions visible.
+- centralizes information for the design systems team to inform our roadmap.
+- keeps teams moving quickly on fast-moving and experimental work.
+- simplifies the transition to design tokens if the attributes become part of the design system.
