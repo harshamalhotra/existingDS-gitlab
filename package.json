@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Resources, components, and design guidelines behind GitLab",
   "author": "GitLab",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git"
