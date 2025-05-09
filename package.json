@@ -17,7 +17,7 @@
     "build": "bash ./scripts/build.sh",
     "eslint": "eslint --ext .js,.mjs,.vue --ignore-path .gitignore .",
     "eslint:fix": "yarn run eslint --fix",
-    "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
+    "prettier": "prettier --list-different '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
     "markdown-lint": "markdownlint-cli2 'contents/**/*.md'",
     "test": "node_modules/.bin/lefthook run test-in-ci --no-tty --colors true",
