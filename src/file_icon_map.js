@@ -399,6 +399,7 @@ const twoFileExtensionIcons = {
   'actions.ts': 'ngrx-actions',
   'effects.ts': 'ngrx-effects',
   'drone.yml': 'drone',
+  'gitlab-ci.yml': 'gitlab',
 };
 
 const fileNameIcons = {
@@ -557,7 +558,6 @@ const fileNameIcons = {
   'fuse.js': 'fusebox',
   procfile: 'heroku',
   '.editorconfig': 'editorconfig',
-  '.gitlab-ci.yml': 'gitlab',
   '.bowerrc': 'bower',
   'bower.json': 'bower',
   '.eslintrc.js': 'eslint',
