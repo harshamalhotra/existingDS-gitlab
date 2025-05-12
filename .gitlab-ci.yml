@@ -67,44 +67,7 @@ publish-to-npm-dry-run:
   script:
     - semantic-release --branches "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" --dry-run --no-ci
 
-.review-app:
-  extends: .rules:only-mrs
-  stage: deploy
-  tags:
-    - nginx
-    - review-apps
-    - deploy
-
-review:
-  extends: .review-app
-  needs:
-    - build-and-check
-  script:
-    # We need to move the contents of the public folder from ./ to ./gitlab-svgs/, so it matches
-    # gitlab-pages. Nuxt is not that smart when it comes to static links.
-    # See this comment: https://gitlab.com/gitlab-org/gitlab-svgs/merge_requests/158/diffs#note_111939228
-    # Hopefully this can be resolved once https://gitlab.com/gitlab-org/gitlab-svgs/issues/30 is fixed
-    # and we include the CSS properly
-    - mv public gitlab-svgs
-    - mkdir -p /srv/nginx/pages/$CI_COMMIT_REF_SLUG/public
-    - rsync -av --delete gitlab-svgs /srv/nginx/pages/$CI_COMMIT_REF_SLUG/public
-  environment:
-    name: review/$CI_COMMIT_REF_SLUG
-    url: http://$CI_COMMIT_REF_SLUG.$APPS_DOMAIN/gitlab-svgs/
-    on_stop: review_stop
-
-review_stop:
-  extends: .review-app
-  stage: deploy
-  script:
-    - rm -rf public /srv/nginx/pages/$CI_COMMIT_REF_SLUG
-  when: manual
-  environment:
-    name: review/$CI_COMMIT_REF_SLUG
-    action: stop
-
-pages:
-  extends: .rules:only-default-branch
+.pages:
   stage: deploy
   needs:
     - build-and-check
@@ -116,6 +79,30 @@ pages:
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|json\|css\|svg\|xml\)$' -exec gzip --force --keep '{}' \;
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|json\|css\|svg\|xml\)$' -exec brotli --force --keep '{}' \;
     - ls -alth public/
+  environment:
+    url: '${CI_PAGES_URL}'
+  pages:
+    publish: public
   artifacts:
     paths:
       - public
+
+pages:
+  extends:
+    - .pages
+    - .rules:only-default-branch
+  pages:
+    expire_in: never
+  environment:
+    name: 'pages'
+
+review-app:
+  extends:
+    - .pages
+    - .rules:only-mrs
+  pages:
+    path_prefix: '$CI_ENVIRONMENT_SLUG'
+    expire_in: '2 weeks'
+  environment:
+    name: 'review/mr-$CI_MERGE_REQUEST_IID'
+    auto_stop_in: '2 weeks'
