@@ -2,6 +2,46 @@
 name: Release notes
 ---
 
+## 18.0
+
+<small>Published 2025-05-12</small>
+
+This release brings important color updates across our UI kit. Since these changes affect nearly every component, you'll want to update your files as soon as possible.
+
+We identified that highly saturated colors in our 600–950 range weren't performing optimally against dark surfaces. By reducing saturation in these specific values, we've significantly improved dark mode experiences.
+
+Also, we've made design tokens easier to use in Figma. Semantic design tokens now appear first in the picker and have been moved to the **Design token** library.
+
+Full highlights:
+
+- Reduce saturation in the 600–950 chromatic hue values in order to have the colors work better in dark mode against darker surfaces.
+- Reordered semantic design tokens to appear first in the style picker.
+- Updated dark mode styles for selected buttons.
+- Refined dropdown styles for improved visual hierarchy.
+
+**💡 Figma updates:** Figma recently launched new products and features including changes to the editor UI. See everything announced at Config 2025 at [config.new](https://config.new).
+
+### Changelog
+
+#### ➕ Additions
+
+- (Product Illustrations): Adds [**package-sm**](https://www.figma.com/design/1ui9w228X0S5WxaD0SRdIA/GitLab-Product-Illustrations?node-id=7320-1269&t=vP66JWHcINQDQM3H-4) illustration.
+
+#### 🔄 Changes
+
+- (Design Tokens): Reduces saturation in the 600–950 chromatic hue values in order to have the colors work better in dark mode against darker surfaces.
+- (Design tokens): Moves [constant](/product-foundations/design-tokens#constant-design-tokens) color styles from [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ) to [**Design&nbsp;tokens**](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD) library.
+- (Component Library): Updates [**❖&nbsp;Button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=122559-8763&t=ad6mk81EhMpPFpIH-4) selected styles.
+- (Component Library): Updates [**Dropdown**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14) component styles.
+
+#### 🛠️ Fixes
+
+- (Product icons): Fixes **face-neutral** mouth color.
+
+#### Contributors
+
+Dan Mizzi-Harris, Ian Gloude, Jeremy Elder, Julia Miocene, Libor Vanc
+
 ## 17.11
 
 <small>Published 2025-04-11</small>
