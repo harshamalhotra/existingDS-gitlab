@@ -24,25 +24,33 @@ workflow:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 default:
-  image: node:20.19.0-bookworm
   tags:
     - gitlab-org
 
-build-and-check:
-  stage: build
-  cache:
+.node:
+  image: node:20.19.0-bookworm
+  cache: &global_cache
     paths:
       - node_modules/
-  script:
+    policy: pull
+  before_script:
     - yarn install --frozen-lockfile
+
+
+build-and-check:
+  extends:
+    - .node
+  stage: build
+  cache:
+    <<: *global_cache
+    policy: pull-push
+  script:
     - bash ./build_scripts/build-svgs.sh
     - echo "Starting Checks"
     - bash ./build_scripts/svg-lint.sh
     - yarn run lint
-    - yarn run generate
   artifacts:
     paths:
-      - public
       - dist
 
 .publish:
@@ -68,10 +76,14 @@ publish-to-npm-dry-run:
     - semantic-release --branches "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" --dry-run --no-ci
 
 .pages:
+  extends:
+    - .node
   stage: deploy
   needs:
     - build-and-check
   script:
+    # Build pages site
+    - yarn run generate
     - apt-get update
     - apt-get install -y brotli gzip
     # See: https://docs.gitlab.com/ee/user/project/pages/introduction.html#serving-compressed-assets
