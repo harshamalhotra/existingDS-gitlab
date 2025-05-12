@@ -82,6 +82,8 @@ publish-to-npm-dry-run:
   needs:
     - build-and-check
   script:
+    # Move static assets to svgpreviewer directory
+    - cp -r dist/ svgpreviewer/static/
     # Build pages site
     - yarn run generate
     - apt-get update
