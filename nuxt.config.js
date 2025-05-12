@@ -1,13 +1,14 @@
 import path from 'path';
 import sass from 'sass';
 import webpack from 'webpack';
+import fixUrlInReviewApp from './svgpreviewer/helpers/fix_url_in_review_app';
 
 /* eslint-disable import/no-commonjs */
 // Remove after update to webpack@5:
 // https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/347
 import './build_scripts/patched_crypto';
 
-const baseDir = process.env.CI ? '/gitlab-svgs/' : '/';
+const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL || false;
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -36,7 +37,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: `${baseDir}favicon.ico`,
+        href: fixUrlInReviewApp(`/favicon.ico`),
       },
     ],
     bodyAttrs: {
@@ -64,7 +65,7 @@ export default {
   },
 
   router: {
-    base: baseDir,
+    base: CI_ENVIRONMENT_URL ? new URL(CI_ENVIRONMENT_URL).pathname : '/',
   },
 
   /*
