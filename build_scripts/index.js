@@ -67,7 +67,7 @@ async function buildFiles() {
   await collectIllustrations(BASE_PATH, DIST_PATH);
   await collectLogos(BASE_PATH, DIST_PATH);
 
-  console.log('Copying files to dist ...');
+  console.log('Copying files to static asset paths for previewer ...');
   await copyFolderRecursive(DIST_PATH, STATIC_PATH);
 
   console.log('Copying file_icons notice');

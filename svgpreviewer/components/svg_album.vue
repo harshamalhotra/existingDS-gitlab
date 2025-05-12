@@ -100,7 +100,7 @@ export default {
       }
     },
     kbSize() {
-      return this.spriteSize ? `(${bytesToKiloBytes(this.spriteSize)}kb)` : '';
+      return this.spriteSize ? `(${bytesToKiloBytes(this.spriteSize)})` : '';
     },
     pageTitle() {
       return this.filteredItems.length === 1 ? this.title : `${this.title}s`;
