@@ -18,7 +18,7 @@ const GITLAB_UI_URL = (
 ).replace(/\/+$/, '');
 
 const LOOKBOOK_URL = (
-  process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-5zzu3ebmza-ue.a.run.app/lookbook'
+  process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-qv5xk62rgq-uc.a.run.app/lookbook'
 ).replace(/\/+$/, '');
 
 if (GITLAB_ANALYTICS_ID) {
