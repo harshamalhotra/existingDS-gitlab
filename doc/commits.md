@@ -30,7 +30,7 @@ There are multipe ways to squash commits. One typical workflow is as follows:
 
 ### Amending
 
-If you need to amend your commit in order to follow the above conventional commit guidelines, reference the [Git guidelines on rewriting history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
+If you need to amend your commit in order to follow the above commit message guidelines, reference the [Git guidelines on rewriting history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
 
 A typical workflow is as follows:
 
