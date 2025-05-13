@@ -211,3 +211,32 @@ The merge and publish order is critical to prevent disruption to consumers. The 
 1. Check source library for publish options. The moved component should not be there.
    - **⚠️ If it is, STOP. Publishing here creates a point of no return.**
 1. Check consuming files for updates from destination library.
+
+## Moving styles
+
+When moving a style between libraries, care must be taken to minimize impact to UI kit consumers.
+
+- **Critical**: Publish order matters. Publish destination library before source library to avoid broken references.
+- Styles migrated to inactive libraries show as available updates. This allows confident migration to a library not enabled by default.
+- Making style updates at the same time is not recommended to limit the chance of breaking changes.
+- Style references update instantly when publishing the destination library.
+- Multiple styles across files maintain integrity when migration workflow is followed correctly.
+- If a reference becomes broken, the process to resolve is unknown to us.
+
+### Key differences from moving components
+
+Moving styles between libraries differs significantly from moving components. You have less room for recovery, and you cannot work in branches.
+
+- Work in the main file, not in a branch.
+- Publish only the destination library.
+- Style references update automatically without consumer action (though they appear as having available updates).
+- Breaking references leaves no known reconnection path.
+
+### Recommended workflow
+
+1. Open source and destination files, not in a branch.
+1. Cut style from source library branch, paste in destination library branch. Avoid style changes to simplify migration.
+1. Publish destination library with 'Move to this file' option.
+1. Check source library for publish options. The moved component should not be there.
+   - **⚠️ If it is, STOP. Something has gone wrong.**
+1. Check consuming files for updates from destination library.
