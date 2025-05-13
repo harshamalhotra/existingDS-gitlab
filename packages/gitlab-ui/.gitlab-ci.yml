@@ -1,8 +1,6 @@
 include:
   - project: gitlab-org/frontend/frontend-build-images
     file: /semantic-release/.gitlab-ci-template.rules.yml
-  - project: gitlab-org/frontend/untamper-my-lockfile
-    file: 'templates/merge_request_pipelines.yml'
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.0
 
 .is-merge-train: &is-merge-train
@@ -65,6 +63,18 @@ include:
     - <<: *is-gitlab-ui-mr
       when: manual
       allow_failure: true
+
+ui:untamper-my-lockfile:
+  extends: untamper-my-lockfile
+  script:
+    - untamper-my-lockfile --lockfile packages/gitlab-ui/yarn.lock
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+      changes:
+        - packages/gitlab-ui/yarn.lock
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      changes:
+        - packages/gitlab-ui/yarn.lock
 
 # As we are caching based on the contents of our CI config and dependency lock file
 # We only need to execute when these change. However, we give a manual job as an escape hatch
