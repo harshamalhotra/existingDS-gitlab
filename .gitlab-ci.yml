@@ -28,7 +28,7 @@ default:
     - gitlab-org
 
 .node:
-  image: node:20.19.0-bookworm
+  image: node:20.19.1-bookworm
   cache: &global_cache
     paths:
       - node_modules/
