@@ -339,6 +339,16 @@ const fileExtensionIcons = {
   cu: 'cuda',
   cuh: 'cuda',
   log: 'log',
+  'code-workplace': 'vscode',
+  '7z': 'zip',
+  'c++': 'cpp',
+  'vbox-prev': 'virtual',
+  'ng-template': 'angular',
+  'YAML-tmLanguage': 'yaml',
+};
+
+const threeFileExtensionIcons = {
+  'sln.dotsettings.user': 'settings',
 };
 
 const twoFileExtensionIcons = {
@@ -348,16 +358,10 @@ const twoFileExtensionIcons = {
   'mdown.rendered': 'markdown',
   'mkd.rendered': 'markdown',
   'mkdn.rendered': 'markdown',
-  'YAML-tmLanguage': 'yaml',
   'sln.dotsettings': 'settings',
-  'sln.dotsettings.user': 'settings',
   'd.dts': 'typescript-def',
   'd.mts': 'typescript-def',
   'd.ts': 'typescript-def',
-  'code-workplace': 'vscode',
-  '7z': 'zip',
-  'c++': 'cpp',
-  'vbox-prev': 'virtual',
   'js.map': 'javascript-map',
   'css.map': 'css-map',
   'spec.ts': 'test-ts',
@@ -372,11 +376,8 @@ const twoFileExtensionIcons = {
   'spec.js': 'test-js',
   'test.js': 'test-js',
   'js.snap': 'test-js',
-  // 'routing.ts': 'angular-routing',
-  // 'routing.js': 'angular-routing',
   'module.ts': 'angular',
   'module.js': 'angular',
-  'ng-template': 'angular',
   'component.ts': 'angular-component',
   'component.js': 'angular-component',
   'guard.ts': 'angular-guard',
@@ -602,18 +603,35 @@ const fileNameIcons = {
   '.prettierrc.yml': 'prettier',
   '.prettierignore': 'prettier',
   'nodemon.json': 'nodemon',
-  // '.sonarrc': 'sonar',
   browserslist: 'browserlist',
   '.browserslistrc': 'browserlist',
   '.snyk': 'snyk',
   '.drone.yml': 'drone',
 };
 
-function getIconForFile(name) {
+const getPosition = (array, depth) => {
+  const index = array.length - depth;
+  if (!(index in array)) return undefined;
+  // + 1 skips the dot character
+  return array[index] + 1;
+};
+
+const getDeepExtensionIcon = (table, name, position) => {
+  if (!position) return undefined;
+  return table[name.substring(position)];
+};
+
+function getIconForFile(name = '') {
+  const directMatch = fileNameIcons[name];
+  if (directMatch) return directMatch;
+
+  const dotPositions = [...name.matchAll(/\./g)].map((match) => match.index);
+  if (dotPositions.length === 0) return '';
+
   return (
-    fileNameIcons[name] ||
-    twoFileExtensionIcons[name ? name.split('.').slice(-2).join('.') : ''] ||
-    fileExtensionIcons[name ? name.split('.').pop().toLowerCase() : ''] ||
+    getDeepExtensionIcon(threeFileExtensionIcons, name, getPosition(dotPositions, 3)) ||
+    getDeepExtensionIcon(twoFileExtensionIcons, name, getPosition(dotPositions, 2)) ||
+    fileExtensionIcons[name.substring(getPosition(dotPositions, 1)).toLowerCase()] ||
     ''
   );
 }
