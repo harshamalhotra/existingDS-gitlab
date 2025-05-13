@@ -62,8 +62,7 @@ code_quality:
   rules:
     - when: always
 
-dependency_scanning:
-  # This can be executed immediately
+gemnasium-dependency_scanning:
   needs: []
 
 sast:

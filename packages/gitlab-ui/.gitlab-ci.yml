@@ -2,7 +2,6 @@ variables:
   GITLAB_ADVANCED_SAST_ENABLED: 'true'
 
 include:
-  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml
   - template: Jobs/SAST.latest.gitlab-ci.yml
   - template: Jobs/Secret-Detection.latest.gitlab-ci.yml
   - project: gitlab-org/frontend/frontend-build-images
@@ -20,9 +19,6 @@ include:
   if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-ui"'
 
 # Execute the security scanners immediately
-gemnasium-dependency_scanning:
-  needs: []
-
 semgrep-sast:
   needs: []
 
