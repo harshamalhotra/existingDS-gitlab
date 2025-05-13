@@ -46,7 +46,7 @@ Complete the following items for each release:
 
 **Publish Figma libraries:**
 
-- [ ] **⚠️ Important:** If components have been moved between libraries, publish these components first by following the [moving components recommended workflow](https://design.gitlab.com/get-started/uik-components#recommended-workflow). 
+- [ ] **⚠️ Important:** If components or styles have been moved between libraries, publish them first by following the [moving components](https://design.gitlab.com/get-started/uik-components#moving-components) and [moving styles](https://design.gitlab.com/get-started/uik-components#moving-styles) recommended workflows. 
 - [ ] Publish any libraries with changes. When applicable, the **Design tokens** library should be published first, followed by the **:orange_book: Component library**.
 - [ ] Check for incoming updates to other Figma UI kit files that consume the published libraries. Review, apply, and publish these updates. Add release notes when needed.
 
