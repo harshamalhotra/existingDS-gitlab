@@ -69,17 +69,6 @@ secret_detection:
     <<: *cache-template
     policy: pull
 
-# Only start pipelines on Merge Requests or the default branch
-workflow:
-  rules:
-    # Commits on default branch
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-      when: always
-    # MR-Pipelines
-    - if: $CI_MERGE_REQUEST_IID
-      when: always
-    - when: never
-
 # Only run on GitLab UI default branches
 .rules:gitlab-ui-default-branch:
   rules:
