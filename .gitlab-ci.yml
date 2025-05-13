@@ -31,6 +31,7 @@ variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
+  GITLAB_ADVANCED_SAST_ENABLED: 'true'
 
 include:
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
@@ -65,8 +66,10 @@ code_quality:
 gemnasium-dependency_scanning:
   needs: []
 
-sast:
-  # This can be executed immediately
+semgrep-sast:
+  needs: []
+
+gitlab-advanced-sast:
   needs: []
 
 ###############
