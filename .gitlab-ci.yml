@@ -1,7 +1,10 @@
 stages:
   - pre-build
   - test
+  - build
   - deploy
+  - publish
+  - manual
 
 workflow:
   rules:

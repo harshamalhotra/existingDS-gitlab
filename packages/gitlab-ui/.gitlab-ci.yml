@@ -1,11 +1,3 @@
-stages:
-  - pre-build
-  - test
-  - build
-  - deploy
-  - publish
-  - manual
-
 default:
   interruptible: true
   artifacts:
