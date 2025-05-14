@@ -37,6 +37,7 @@
     # and makes all other jobs potentially slower, if no cache exists
     CYPRESS_INSTALL_BINARY: 0
   before_script:
+    - cd packages/gitlab-ui
     - apt-get update
     - apt-get install -y make
     - yarn install --frozen-lockfile
@@ -268,7 +269,7 @@ bootstrap-vue:
   needs: []
   stage: test
   script:
-    - cd src/vendor/bootstrap-vue
+    - cd packages/gitlab-ui/src/vendor/bootstrap-vue
     - yarn install --check-files --frozen-lockfile --non-interactive
     - yarn run test
 
