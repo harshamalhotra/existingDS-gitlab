@@ -1,6 +1,3 @@
-include:
-  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.0
-
 .is-merge-train: &is-merge-train
   if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
 
@@ -439,8 +436,3 @@ update_deployments:
         paths:
           - bin/update_deployments.mjs
         compare_to: 'refs/heads/main'
-
-danger-review:
-  before_script:
-    - '[[ ! -f "Gemfile" ]] && bundle init && bundle add gitlab-dangerfiles'
-    - bundle install
