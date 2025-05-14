@@ -10,7 +10,7 @@ This release brings important color updates across our UI kit. Since these chang
 
 We identified that highly saturated colors in our 600–950 range weren't performing optimally against dark surfaces. By reducing saturation in these specific values, we've significantly improved dark mode experiences.
 
-Also, we've made design tokens easier to use in Figma. Semantic design tokens now appear first in the picker and have been moved to the **Design token** library.
+Also, we've made design tokens easier to use in Figma. Semantic design tokens now appear first in the picker and color styles (chromatic, theme, and brand constants) have been moved to the **Design token** library.
 
 Full highlights:
 
