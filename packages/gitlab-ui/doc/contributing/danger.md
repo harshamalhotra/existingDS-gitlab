@@ -13,8 +13,3 @@ whether some reviews can be skipped altogether.
 Danger also picks a Product Designer to review MRs that have a `~"component:*"` label. Whenever
 possible, Danger picks the expert Product Designer for a given component. Otherwise, any UX
 Foundations designer can be assigned.
-
-## Semantic commits
-
-Danger checks commit formatting to ensure that they follow our [commit conventions](./commits.md)
-and to give some hints on what kind of version will be released when they are merged.

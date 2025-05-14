@@ -12,7 +12,7 @@ git checkout "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
 
 echo "Creating chore commit..."
 git add .
-git commit -m 'chore: update snapshots'
+git commit -m 'Update test snapshots'
 
 #
 # Utilizing CI_MERGE_REQUEST_SOURCE_PROJECT_PATH in order to be able to push to forks

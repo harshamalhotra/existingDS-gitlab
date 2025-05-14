@@ -4,11 +4,9 @@ The following provides guidance for engineers adding new components to GitLab UI
 
 ## Merge Request guidelines
 
-Create a Merge Request in GitLab UI with your new component code. Use the
-commit message `feat([ComponentName]): Implement [ComponentName] component`.
-This creates a conventional commit used by the
-[npm release CI job](https://gitlab.com/gitlab-org/gitlab-ui/pipelines) to
-create a new version of the GitLab UI package.
+Create a Merge Request in GitLab UI with your new component code. Ensure that
+the merge request causes a new minor version of the `@gitlab/ui` to be
+released.
 
 Run the manual CI job (`update_screenshots`) to generate the baseline snapshots used by the visual
 tests. You can find it in last stage of

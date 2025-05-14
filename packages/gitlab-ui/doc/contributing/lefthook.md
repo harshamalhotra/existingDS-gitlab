@@ -16,7 +16,7 @@ If you'd like to bypass the verification step when committing, you can do so by 
 `LEFTHOOK` variable to `0` when running the `git` command. For example:
 
 ```sh
-LEFTHOOK=0 git commit -m "chore: reticulate splines"
+LEFTHOOK=0 git commit -m "Implement GlFoo component"
 ```
 
 [lefthook]: https://www.npmjs.com/package/@arkweid/lefthook
