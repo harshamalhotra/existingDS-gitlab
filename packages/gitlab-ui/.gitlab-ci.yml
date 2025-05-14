@@ -24,11 +24,11 @@
 # could mean changing something in our caching logic
 .cache-template: &cache-template
   paths:
-    - node_modules/
+    - packages/gitlab-ui/node_modules/
   key:
     files:
-      - .gitlab-ci.yml
-      - yarn.lock
+      - packages/gitlab-ui/.gitlab-ci.yml
+      - packages/gitlab-ui/yarn.lock
     prefix: node_modules
 
 .yarn_install:
@@ -84,8 +84,8 @@ populate_npm_cache:
     policy: push
   rules:
     - changes:
-        - .gitlab-ci.yml
-        - yarn.lock
+        - packages/gitlab-ui/.gitlab-ci.yml
+        - packages/gitlab-ui/yarn.lock
       when: always
     - when: never
 
@@ -97,9 +97,9 @@ yarn_deduplicate:
     - yarn yarn-deduplicate --strategy fewer --list --fail
   rules:
     - changes:
-        - .gitlab-ci.yml
-        - package.json
-        - yarn.lock
+        - packages/gitlab-ui/.gitlab-ci.yml
+        - packages/gitlab-ui/package.json
+        - packages/gitlab-ui/yarn.lock
       when: always
 
 .build_test_storybook:
@@ -110,7 +110,7 @@ yarn_deduplicate:
   artifacts:
     when: always
     paths:
-      - storybook/
+      - packages/gitlab-ui/storybook/
 
 build_test_storybook:
   extends: [.build_test_storybook]
@@ -136,9 +136,9 @@ build_package:
     reports:
       dotenv: build_package.env
     paths:
-      - bin/migrate_custom_utils_to_tw.bundled.mjs
-      - dist
-      - $TAR_ARCHIVE_NAME
+      - packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
+      - packages/gitlab-ui/dist
+      - packages/gitlab-ui/$TAR_ARCHIVE_NAME
 
 .build_storybook:
   extends: [.node, .yarn_install]
@@ -148,7 +148,7 @@ build_package:
     - bin/build-storybook-static.sh
   artifacts:
     paths:
-      - public
+      - packages/gitlab-ui/public
 
 build_storybook:
   extends: [.build_storybook]
@@ -164,7 +164,7 @@ build_tailwind_config_viewer:
     - yarn tailwind-config-viewer:export
   artifacts:
     paths:
-      - tailwind-config-viewer-static/
+      - packages/gitlab-ui/tailwind-config-viewer-static/
 
 lint:
   extends: [.node, .yarn_install]
@@ -227,8 +227,8 @@ check_tokens_build:
   artifacts:
     when: always
     paths:
-      - tests/__image_snapshots__/
-      - tests/results.json
+      - packages/gitlab-ui/tests/__image_snapshots__/
+      - packages/gitlab-ui/tests/results.json
 
 visual:
   extends: [.visual]
@@ -255,7 +255,7 @@ visual_vue3:
     when: on_failure
     expire_in: 1 week
     paths:
-      - cypress
+      - packages/gitlab-ui/cypress
 
 integration_tests:
   extends: [.integration_tests]
@@ -294,7 +294,7 @@ bootstrap-vue_vue3:
     reports:
       coverage_report:
         coverage_format: cobertura
-        path: $COVERAGE_DIR/cobertura-coverage.xml
+        path: packages/gitlab-ui/$COVERAGE_DIR/cobertura-coverage.xml
 
 unit_tests_vue2:
   extends: [.unit_tests]
@@ -319,11 +319,11 @@ merge_coverage_reports:
     name: coverage
     when: always
     paths:
-      - coverage/
+      - packages/gitlab-ui/coverage/
     reports:
       coverage_report:
         coverage_format: cobertura
-        path: coverage/cobertura-coverage.xml
+        path: packages/gitlab-ui/coverage/cobertura-coverage.xml
 
 # Manual jobs cannot depend on failing jobs
 # So we need to introduce an intermediary job which re-exposes the artifacts
@@ -340,7 +340,7 @@ screenshot_collector:
   artifacts:
     when: always
     paths:
-      - tests/
+      - packages/gitlab-ui/tests/
 
 update_screenshots:
   extends:
@@ -362,13 +362,13 @@ update_screenshots:
   script:
     - echo "Deploying to Pages"
     - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
-    - mv ./tailwind-config-viewer-static ./public/tailwind-config-viewer
+    - mv ./packages/gitlab-ui/tailwind-config-viewer-static ./public/tailwind-config-viewer
   environment:
     url: '${CI_PAGES_URL}'
   publish: public
   artifacts:
     paths:
-      - public
+      - packages/gitlab-ui/public
 
 pages:
   extends:
@@ -435,5 +435,5 @@ update_deployments:
       when: manual
       changes:
         paths:
-          - bin/update_deployments.mjs
+          - packages/gitlab-ui/bin/update_deployments.mjs
         compare_to: 'refs/heads/main'
