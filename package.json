@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Resources, components, and design guidelines behind GitLab",
   "author": "GitLab",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git"
@@ -14,9 +15,9 @@
     "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
     "buildsingle": "nuxt build",
     "build": "bash ./scripts/build.sh",
-    "eslint": "eslint --ext .js,.mjs,.vue --ignore-path .gitignore .",
+    "eslint": "eslint --ext .js,.mjs,.vue .",
     "eslint:fix": "yarn run eslint --fix",
-    "prettier": "prettier --list-different --ignore-path .gitignore '**/*.{js,vue}'",
+    "prettier": "prettier --list-different '**/*.{js,vue}'",
     "prettier-all-save": "yarn run prettier --write",
     "markdown-lint": "markdownlint-cli2 'contents/**/*.md'",
     "test": "node_modules/.bin/lefthook run test-in-ci --no-tty --colors true",
@@ -98,6 +99,9 @@
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/tests/test_setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/packages/"
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!@gitlab/ui)"
