@@ -32,5 +32,4 @@
 - Extra spaces and comments have been removed.
 
 ## For the MR itself, ensure
-- That at least the first commit message is formatted according to [conventional commit standards](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md)
 - That you review the MR locally, either through checking out the branch or looking at the review app to ensure the content is formatted appropriately.

@@ -26,10 +26,6 @@ Ensure you have [Node](https://nodejs.org/en/) 12.x and [Yarn](https://yarnpkg.c
 
 Alternatively, you can also [open this repository in Gitpod](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/) to make and preview changes directly in your browser.
 
-### Conventional commits
-
-We use conventional commits specifications to write meaningful commit messages that are used as part of our semantic release process. [Learn how to write conventional commits](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md).
-
 ### Writing component documentation
 
 When starting from scratch:
