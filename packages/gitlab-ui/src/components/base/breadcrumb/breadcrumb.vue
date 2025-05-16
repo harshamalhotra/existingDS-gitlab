@@ -81,23 +81,11 @@ export default {
     breadcrumbStyle() {
       return this.resizeDone ? {} : { opacity: 0 };
     },
-    itemStyle() {
-      /**
-       * If the last/only item, which is always visible, has a very long title,
-       * it could overflow the breadcrumb component. This CSS makes sure it
-       * shows an ellipsis instead.
-       * But this CSS cannot be active while we do the size calculation, as that
-       * would then not take the real unshrunk width of that item into account.
-       */
+    itemClass() {
       if (this.resizeDone && this.fittingItems.length === 1) {
-        return {
-          'flex-shrink': 1,
-          'text-overflow': 'ellipsis',
-          'overflow-x': 'hidden',
-          'text-wrap': 'nowrap',
-        };
+        return 'gl-breadcrumb-only-item';
       }
-      return {};
+      return '';
     },
     dropdownSize() {
       return this.size === 'sm' ? 'small' : 'medium';
@@ -231,11 +219,10 @@ export default {
         :key="index"
         :text="item.text"
         :href="item.href"
-        :style="itemStyle"
         :to="item.to"
         :size="size"
         :aria-current="getAriaCurrentAttr(index)"
-        :class="hideItemClass(item)"
+        :class="[hideItemClass(item), itemClass]"
         ><gl-avatar
           v-if="item.avatarPath"
           :src="item.avatarPath"
