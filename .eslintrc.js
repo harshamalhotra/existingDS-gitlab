@@ -28,5 +28,11 @@ module.exports = {
         'import/no-default-export': 'off',
       },
     },
+    {
+      files: ['scripts/**/*'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
   ],
 };

@@ -152,3 +152,15 @@ review-app:
     name: "pages-review/MR-${CI_MERGE_REQUEST_IID}"
     url: "${CURRENT_PAGES_URL}"
     auto_stop_in: "2 weeks"
+
+# Do not use `needs` (https://docs.gitlab.com/ci/yaml/needs/) on this job.
+# It should only run if all previous stages have passed.
+publish_npm_packages:
+  extends:
+    - .node-job
+  stage: deploy
+  resource_group: publish_npm_packages
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  script:
+    - node ./scripts/publish_npm_packages.mjs
