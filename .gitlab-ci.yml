@@ -2,7 +2,6 @@ stages:
   - pre-build
   - test
   - deploy
-  - performance
 
 workflow:
   rules:
@@ -25,7 +24,6 @@ variables:
 
 include:
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
-  - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Browser-Performance-Testing.gitlab-ci.yml
   - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
   - template: Jobs/SAST.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml
   - project: gitlab-org/frontend/untamper-my-lockfile
@@ -40,17 +38,6 @@ include:
 ## Overrides for jobs from templates
 #
 ###############
-
-browser_performance:
-  needs:
-    - job: review-app
-      optional: true
-    - job: production
-      optional: true
-  tags:
-    - gitlab-org-docker
-  rules:
-    - when: always
 
 code_quality:
   tags:
