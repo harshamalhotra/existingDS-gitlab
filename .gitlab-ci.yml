@@ -166,4 +166,4 @@ publish_npm_packages:
   rules:
     - <<: *is-design-gitlab-com-default-branch
   script:
-    - node ./scripts/publish_npm_packages.mjs
+    - ./scripts/publish_npm_packages.mjs
