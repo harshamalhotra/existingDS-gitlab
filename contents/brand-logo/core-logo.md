@@ -32,7 +32,7 @@ The minimum size is 20px for digital and 0.4” (11mm) for print.
 
 The GitLab logo and tanuki logomark are bold, eye-catching devices, so their placement requires thought and care. Alone, these assets can anchor text or expand to become the hero. They should not be overused or excessively repeated in a single asset.
 
-**Lefft-aligned placement** should be the default, either at the top or bottom corner of an asset, depending on which location balances the design and surrounding elements best. This placement allows the copy to be the main focus.
+**Left-aligned placement** should be the default, either at the top or bottom corner of an asset, depending on which location balances the design and surrounding elements best. This placement allows the copy to be the main focus.
 
 **Centered placement** should be reserved for times when the logo needs to be the main focus (i.e. video bumpers/end slates). In these cases, the logo is typically scaled larger.
 
