@@ -18,6 +18,9 @@ default:
   tags:
     - gitlab-org
 
+.is-design-gitlab-com-default-branch: &is-design-gitlab-com-default-branch
+  if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
 variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
@@ -161,6 +164,6 @@ publish_npm_packages:
   stage: deploy
   resource_group: publish_npm_packages
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - <<: *is-design-gitlab-com-default-branch
   script:
     - node ./scripts/publish_npm_packages.mjs
