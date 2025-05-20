@@ -17,6 +17,9 @@ default:
   tags:
     - gitlab-org
 
+.is-design-gitlab-com-default-branch: &is-design-gitlab-com-default-branch
+  if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
 variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
@@ -60,7 +63,6 @@ sast:
 ###############
 .node-job:
   image: node:20.13-alpine
-  needs: []
   before_script:
     - apk add --no-cache bash git
     - yarn install --frozen-lockfile
@@ -81,6 +83,7 @@ check_links:
     - .node-job
     - .build_cache
   stage: test
+  needs: []
   allow_failure: true
   script:
     - yarn check-links
@@ -89,6 +92,7 @@ lint_and_test:
   extends:
     - .node-job
   stage: test
+  needs: []
   script:
     - yarn test
 
@@ -97,6 +101,7 @@ lint_and_test:
     - .node-job
     - .build_cache
   stage: deploy
+  needs: []
   publish: public
   variables:
     CACHE_POLICY: pull-push
@@ -137,3 +142,15 @@ review-app:
     name: "pages-review/MR-${CI_MERGE_REQUEST_IID}"
     url: "${CURRENT_PAGES_URL}"
     auto_stop_in: "2 weeks"
+
+# Do not use `needs` (https://docs.gitlab.com/ci/yaml/needs/) on this job.
+# It should only run if all previous stages have passed.
+publish_npm_packages:
+  extends:
+    - .node-job
+  stage: deploy
+  resource_group: publish_npm_packages
+  rules:
+    - <<: *is-design-gitlab-com-default-branch
+  script:
+    - ./scripts/publish_npm_packages.mjs
