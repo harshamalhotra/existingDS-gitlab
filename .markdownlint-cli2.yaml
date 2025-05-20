@@ -8,3 +8,4 @@ config:
   no-duplicate-heading:
     siblings_only: true
   no-emphasis-as-heading: false
+  descriptive-link-text: false
