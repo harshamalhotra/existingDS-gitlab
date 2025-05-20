@@ -1,8 +1,11 @@
 {
-  "name": "@gitlab/release-tooling-test",
+  "name": "@gitlab-org/release-tooling-test",
   "description": "A package for testing internal release tooling.",
   "author": "GitLab",
   "license": "MIT",
   "version": "1.0.0",
-  "files": []
+  "files": [],
+  "publishConfig": {
+    "@gitlab-org:registry": "https://gitlab.com/api/v4/projects/4456656/packages/npm/"
+  }
 }

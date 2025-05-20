@@ -158,6 +158,7 @@ function gitPush() {
 
 function publish() {
   run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${process.env.NPM_TOKEN}`]);
+  run('npm', ['config', 'set', `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${process.env.GITLAB_TOKEN}`]);
   runChangesetWithWorkspacesHackForYarnV1(['publish']);
 }
 
