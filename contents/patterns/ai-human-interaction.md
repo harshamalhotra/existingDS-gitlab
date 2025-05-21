@@ -85,6 +85,27 @@ When your system is not certain of the user's intent or has low confidence, make
 
 Design mechanisms to collect implicit and explicit feedback to improve the system.
 
+### Keep UI text consistent
+
+When AI functionality is exposed in GitLab, UI text should primarily use third person following GitLab standards. For example:
+
+- "Use GitLab Duo to find vulnerabilities in your application"
+- "Ask Amazon Q to upgrade Java"
+- "Troubleshoot your pipeline"
+
+For most AI features and functionality, including GitLab Duo Workflow, maintain this third-person approach to keep consistency with GitLab's voice.
+
+However, certain exceptions apply when interacting with GitLab Duo Chat or GitLab Duo with Amazon Q. These interactions are direct and conversational in nature, where first person may be appropriate. For example, GitLab Duo may respond with:
+
+- "I'm working on your request."
+- "I could not find an answer to your question."
+
+The surrounding UI for these direct conversational features may also use first person. For example:
+
+- "I am GitLab Duo Chat. How can I help you today?"
+
+In all other AI-related interfaces and functionality, maintain third-person phrasing to align with GitLab's standard voice and tone.
+
 ## Framework
 
 To help you put the [guidelines](#guidelines) into practice, the framework materializes them into standard patterns that address the most common UX challenges. Follow the progress in the [framework epic](https://gitlab.com/groups/gitlab-org/-/epics/10334).
