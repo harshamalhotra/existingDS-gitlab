@@ -142,11 +142,16 @@ function getReleases() {
   return status.releases;
 }
 
-function gitCommit({ message = 'Update packages for release [skip ci]', pathspec = '.' } = {}) {
+function gitCommit({ message = 'Update packages for release [skip ci]' } = {}) {
   run('git', ['config', '--global', 'user.email', 'gitlab-bot@gitlab.com']);
   run('git', ['config', '--global', 'user.name', 'GitLab Bot']);
 
-  run('git', ['add', pathspec]);
+  // Stage modified and deleted files only.
+  run('git', ['add', '--update']);
+
+  // Stage new package changelog files, if any.
+  run('git', ['add', 'packages/*/CHANGELOG.md'], { throwOnFailure: false });
+
   run('git', ['status']);
   run('git', ['commit', '-m', message]);
 }
