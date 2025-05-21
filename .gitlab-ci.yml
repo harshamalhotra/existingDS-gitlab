@@ -42,6 +42,13 @@ include:
 #
 ###############
 
+# TODO: Remove this override for danger-review once GitLab UI is merged.
+danger-review:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_LABELS =~ /pipeline:skip-danger/
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
 code_quality:
   tags:
     - gitlab-org-docker
