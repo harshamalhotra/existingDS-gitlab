@@ -1,0 +1,44 @@
+{
+  "line-height": {
+    "12": {
+      "$value": "0.75rem",
+      "$type": "dimension"
+    },
+    "16": {
+      "$value": "1rem",
+      "$type": "dimension"
+    },
+    "20": {
+      "$value": "1.25rem",
+      "$type": "dimension"
+    },
+    "24": {
+      "$value": "1.5rem",
+      "$type": "dimension"
+    },
+    "28": {
+      "$value": "1.75rem",
+      "$type": "dimension"
+    },
+    "32": {
+      "$value": "2rem",
+      "$type": "dimension"
+    },
+    "36": {
+      "$value": "2.25rem",
+      "$type": "dimension"
+    },
+    "42": {
+      "$value": "2.625rem",
+      "$type": "dimension"
+    },
+    "44": {
+      "$value": "2.75rem",
+      "$type": "dimension"
+    },
+    "52": {
+      "$value": "3.25rem",
+      "$type": "dimension"
+    }
+  }
+}
