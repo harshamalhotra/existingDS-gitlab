@@ -378,6 +378,8 @@ pages:
     expire_in: never
   environment:
     name: 'pages'
+  rules:
+    - when: never
 
 review-app:
   extends:
@@ -389,6 +391,8 @@ review-app:
   environment:
     name: 'review/mr-$CI_MERGE_REQUEST_IID'
     auto_stop_in: '2 weeks'
+  rules:
+    - when: never
 
 create_integration_branch:
   extends:
