@@ -1,6 +1,13 @@
 ^[Engineering] @psimyn @gitlab-org/maintainers/frontend
 *
 
+# We don't want GitLab UI files to receive changes while we're in the process
+# of merging the repositories. For now, require approval from a few people
+# familiar with the effort.
+# See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2033
+[GitLab UI] @markrian @leipert @samdbeckham
+/packages/gitlab-ui/
+
 [UX maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly @danmh @aregnery
 /contents/ 
 /pages/
