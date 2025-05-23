@@ -162,7 +162,7 @@ ui:build_tailwind_config_viewer:
     paths:
       - packages/gitlab-ui/tailwind-config-viewer-static/
 
-lint:
+ui:lint:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
   stage: test
