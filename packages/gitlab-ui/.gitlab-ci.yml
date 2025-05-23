@@ -11,7 +11,7 @@
 .ui:playwright:
   image: mcr.microsoft.com/playwright:v1.52.0-jammy
 
-.node:
+.ui:node:
   image: node:22.15.1-bookworm
 
 .use_vue3:
@@ -71,7 +71,7 @@ ui:untamper-my-lockfile:
 # As we are caching based on the contents of our CI config and dependency lock file
 # We only need to execute when these change. However, we give a manual job as an escape hatch
 populate_npm_cache:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   stage: pre-build
   script:
     - echo "successfully installed dependencies"
@@ -86,7 +86,7 @@ populate_npm_cache:
     - when: never
 
 yarn_deduplicate:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   stage: test
   needs: []
   script:
@@ -99,7 +99,7 @@ yarn_deduplicate:
       when: always
 
 .build_test_storybook:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   stage: pre-build
   script:
     - yarn storybook:build:test
@@ -115,7 +115,7 @@ build_test_storybook_vue3:
   extends: [.use_vue3, .build_test_storybook]
 
 build_package:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   variables:
     TAR_ARCHIVE_NAME: gitlab-ui.$CI_COMMIT_REF_SLUG.tgz
   needs: []
@@ -137,7 +137,7 @@ build_package:
       - packages/gitlab-ui/$TAR_ARCHIVE_NAME
 
 .build_storybook:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs: []
   stage: build
   script:
@@ -153,7 +153,7 @@ build_storybook_vue3:
   extends: [.build_storybook, .use_vue3]
 
 build_tailwind_config_viewer:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs: []
   stage: build
   script:
@@ -163,7 +163,7 @@ build_tailwind_config_viewer:
       - packages/gitlab-ui/tailwind-config-viewer-static/
 
 lint:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs: []
   stage: test
   variables:
@@ -182,7 +182,7 @@ lint:
       codequality: gl-code-quality-report-eslint.json
 
 stylelint:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs: []
   stage: test
   variables:
@@ -194,13 +194,13 @@ stylelint:
       codequality: '$STYLELINT_CODE_QUALITY_REPORT'
 
 check_translations_dictionary:
-  extends: [.node, '.yarn_install']
+  extends: [.ui:node, '.yarn_install']
   needs: []
   script:
     - ./bin/check_translations_dict.sh
 
 check_tokens_build:
-  extends: [.node, '.yarn_install']
+  extends: [.ui:node, '.yarn_install']
   needs: []
   script:
     - ./bin/check_tokens_build.sh
@@ -235,7 +235,7 @@ visual_vue3:
 
 .integration_tests:
   image: cypress/browsers:node-22.11.0-chrome-131.0.6778.85-1-ff-132.0.2-edge-131.0.2903.70-1
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   variables:
     # Allow these jobs to install cypress binaries
     CYPRESS_INSTALL_BINARY: ''
@@ -261,7 +261,7 @@ integration_tests_vue3:
   needs: [build_test_storybook_vue3]
 
 bootstrap-vue:
-  extends: [.node]
+  extends: [.ui:node]
   needs: []
   stage: test
   script:
@@ -273,7 +273,7 @@ bootstrap-vue_vue3:
   extends: [bootstrap-vue, .use_vue3]
 
 .unit_tests:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs: []
   stage: test
   variables:
@@ -305,7 +305,7 @@ unit_tests_vue3:
     COVERAGE_DIR: 'coverage/vue3'
 
 merge_coverage_reports:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   needs:
     - unit_tests_vue2
     - unit_tests_vue3
@@ -341,7 +341,7 @@ screenshot_collector:
 
 update_screenshots:
   extends:
-    - .node
+    - .ui:node
     - .rules:ui:design-gitlab-com-mr-manual
   when: manual
   needs:
@@ -393,7 +393,7 @@ ui:review-app:
 
 create_integration_branch:
   extends:
-    - .node
+    - .ui:node
     - .rules:ui:design-gitlab-com-mr-manual
   stage: manual
   needs:
@@ -421,7 +421,7 @@ duo_job:
       allow_failure: false
 
 update_deployments:
-  extends: [.node, .yarn_install]
+  extends: [.ui:node, .yarn_install]
   stage: manual
   allow_failure: true
   needs:
