@@ -367,7 +367,7 @@ update_screenshots:
     paths:
       - packages/gitlab-ui/public
 
-pages:
+ui:pages:
   extends:
     - .ui:pages
   pages:
