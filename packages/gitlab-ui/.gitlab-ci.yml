@@ -290,7 +290,7 @@ bootstrap-vue_vue3:
     expire_in: 7d
     when: always
     paths:
-      - $COVERAGE_DIR/
+      - packages/gitlab-ui/$COVERAGE_DIR/
     reports:
       coverage_report:
         coverage_format: cobertura
