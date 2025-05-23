@@ -114,7 +114,7 @@ ui:build_test_storybook:
 ui:build_test_storybook_vue3:
   extends: [.ui:use_vue3, .ui:build_test_storybook]
 
-build_package:
+ui:build_package:
   extends: [.ui:node, .ui:yarn_install]
   variables:
     TAR_ARCHIVE_NAME: gitlab-ui.$CI_COMMIT_REF_SLUG.tgz
@@ -397,14 +397,14 @@ create_integration_branch:
     - .rules:ui:design-gitlab-com-mr-manual
   stage: manual
   needs:
-    - build_package
+    - ui:build_package
   script:
     - bin/create_integration_branch.mjs
 
 duo_job:
   stage: deploy
   needs:
-    - build_package
+    - ui:build_package
   trigger:
     project: gitlab-org/duo-ui
     branch: main

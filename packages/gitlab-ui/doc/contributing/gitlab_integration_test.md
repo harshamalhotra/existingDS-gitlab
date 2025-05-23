@@ -26,7 +26,7 @@ the following command `yalc publish --push`.
 ## Using the remote development package
 
 This approach relies on the development package that's built and published as an artifact by the
-`build_package` CI job. This is especially useful if the changes you are making in GitLab UI require
+`ui:build_package` CI job. This is especially useful if the changes you are making in GitLab UI require
 some code to be migrated in GitLab as you will be able to open a GitLab MR to preemptively integrate
 your changes before they are released with a new version of `@gitlab/ui`.
 
