@@ -2,16 +2,11 @@
 
 We use the [Storybook Test Runner](https://github.com/storybookjs/test-runner)
 addon to generate and compare image snapshots based on [storybook](https://github.com/storybookjs/storybook)
-stories. `Storybook Test Runner` runs in every pipeline in either of the following jobs:
+stories. `Storybook Test Runner` runs in every pipeline with the following job:
 
-* The `visual` job runs visual regression tests against all stories. It always runs on the
+* The `ui:visual` job runs visual regression tests against all stories. It always runs on the
   default branch, in merge trains, and can be run manually in other branches.
   This job can take a while to complete and should only be run when absolutely needed.
-* The `visual_minimal` job runs in MR pipelines and only tests the components that actually changed
-  in the branch to avoid a time-consuming full visual regression testing suite.
-  Note that if the changes affect a component that wasn't actually touched, `visual_minimal`
-  might not report it. In such case, you might want to run the `visual` job manually to confirm that
-  no regression is being introduced.
 
 When component or dependency updates result in user-facing changes, visual regression tests fail.
 
@@ -20,12 +15,12 @@ Before proceeding make sure that the updated image snapshots:
 * Still comply with the design system guidelines.
 * Do not include any unexpected visual elements.
 
-To inspect the image snapshots causing the pipeline to fail, browse the failing `visual` or `visual_minimal`
+To inspect the image snapshots causing the pipeline to fail, browse the failing `ui:visual`
 job's artifacts. The relevant snapshots are added in the `tests/__image_snapshots__/__diff_output__`
 directory.
 
 Once you have confirmed that visual differences are expected and aren't regressions, trigger the
-manual CI job `update_screenshots` to regenerate the snapshots.
+manual CI job `ui:update_screenshots` to regenerate the snapshots.
 
 ## Excluding stories from visual testing
 
