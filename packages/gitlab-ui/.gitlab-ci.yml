@@ -391,7 +391,7 @@ ui:review-app:
   rules:
     - when: never
 
-create_integration_branch:
+ui:create_integration_branch:
   extends:
     - .ui:node
     - .rules:ui:design-gitlab-com-mr-manual

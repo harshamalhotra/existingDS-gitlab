@@ -43,13 +43,13 @@ Your development flow would then look like this:
    build.
 1. Get your GitLab MR merged.
 
-To help with this process, GitLab UI exposes a `create_integration_branch` manual CI job that will
+To help with this process, GitLab UI exposes a `ui:create_integration_branch` manual CI job that will
 automatically create (or update) an integration branch and install the `@gitlab/ui` development build.
 
 ![Create integration branch CI job location](../images/create_integration_branch.png 'Create integration branch CI job location')
 
 You would then only need to create a new Merge Request from that branch by following the link at
-the end of the `create_integration_branch` job's output.
+the end of the `ui:create_integration_branch` job's output.
 
 ![Integration branch link location](../images/integration_branch_job_log.png 'Integration branch link location')
 
@@ -59,7 +59,7 @@ their own verifications.
 
 ## The GitLab UI Integrations fork
 
-When running the `create_integration_branch` CI job, integration branches are created
+When running the `ui:create_integration_branch` CI job, integration branches are created
 in a [fork of GitLab](https://gitlab.com/gitlab-org/frontend/gitlab-ui-integrations).
 The fork is set up to mirror the `master` branch from the GitLab repository.
 We are using a fork to circumvent issues where pushing directly to the GitLab repository could
