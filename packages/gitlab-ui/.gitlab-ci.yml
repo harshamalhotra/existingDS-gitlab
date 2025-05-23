@@ -226,10 +226,10 @@ ui:check_tokens_build:
       - packages/gitlab-ui/tests/__image_snapshots__/
       - packages/gitlab-ui/tests/results.json
 
-visual:
+ui:visual:
   extends: [.ui:visual]
 
-visual_vue3:
+ui:visual_vue3:
   needs: [ui:build_test_storybook_vue3]
   extends: [.ui:visual, .ui:use_vue3]
 
@@ -333,7 +333,7 @@ screenshot_collector:
     - cd packages/gitlab-ui
     - find tests
   needs:
-    - job: visual
+    - job: ui:visual
   artifacts:
     when: always
     paths:
