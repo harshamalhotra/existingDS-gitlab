@@ -199,7 +199,7 @@ ui:check_translations_dictionary:
   script:
     - ./bin/check_translations_dict.sh
 
-check_tokens_build:
+ui:check_tokens_build:
   extends: [.ui:node, '.ui:yarn_install']
   needs: []
   script:
