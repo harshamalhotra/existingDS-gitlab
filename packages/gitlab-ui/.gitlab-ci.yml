@@ -1,10 +1,11 @@
-.is-merge-train: &is-merge-train
-  if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
+.ui:is-design-gitlab-com-default-branch: &ui-is-design-gitlab-com-default-branch
+  if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
 
-# Only run on merge requests that come from GitLab UI or
-# from forks when a GitLab UI team member triggered a pipeline
-.is-gitlab-ui-mr: &is-gitlab-ui-mr
-  if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-ui"'
+.ui:is-design-gitlab-com-mr: &ui-is-design-gitlab-com-mr
+  if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
+.ui:is-merge-train: &ui-is-merge-train
+  if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
 
 # Execute the security scanners immediately
 .playwright:
@@ -45,18 +46,13 @@
     <<: *cache-template
     policy: pull
 
-# Only run on GitLab UI default branches
-.rules:gitlab-ui-default-branch:
+.rules:ui:design-gitlab-com-mr:
   rules:
-    - if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-ui"'
+    - <<: *ui-is-design-gitlab-com-mr
 
-.rules:gitlab-ui-mr:
+.rules:ui:design-gitlab-com-mr-manual:
   rules:
-    - <<: *is-gitlab-ui-mr
-
-.rules:gitlab-ui-mr-manual:
-  rules:
-    - <<: *is-gitlab-ui-mr
+    - <<: *ui-is-design-gitlab-com-mr
       when: manual
       allow_failure: true
 
@@ -219,8 +215,8 @@ check_tokens_build:
   script:
     - yarn test:visual
   rules:
-    - !reference ['.rules:gitlab-ui-default-branch', rules]
-    - <<: *is-merge-train
+    - <<: *ui-is-design-gitlab-com-default-branch
+    - <<: *ui-is-merge-train
       when: always
     - if: '$CI_MERGE_REQUEST_IID'
       when: always
@@ -346,7 +342,7 @@ screenshot_collector:
 update_screenshots:
   extends:
     - .node
-    - .rules:gitlab-ui-mr-manual
+    - .rules:ui:design-gitlab-com-mr-manual
   when: manual
   needs:
     - job: screenshot_collector
@@ -374,18 +370,18 @@ update_screenshots:
 pages:
   extends:
     - .ui:pages
-    - .rules:gitlab-ui-default-branch
   pages:
     expire_in: never
   environment:
     name: 'pages'
   rules:
     - when: never
+    - <<: *ui-is-design-gitlab-com-default-branch
 
 ui:review-app:
   extends:
     - .ui:pages
-    - .rules:gitlab-ui-mr
+    - .rules:ui:design-gitlab-com-mr
   pages:
     path_prefix: '$CI_ENVIRONMENT_SLUG'
     expire_in: '2 weeks'
@@ -398,7 +394,7 @@ ui:review-app:
 create_integration_branch:
   extends:
     - .node
-    - .rules:gitlab-ui-mr-manual
+    - .rules:ui:design-gitlab-com-mr-manual
   stage: manual
   needs:
     - build_package
