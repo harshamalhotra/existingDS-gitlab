@@ -253,10 +253,10 @@ ui:visual_vue3:
     paths:
       - packages/gitlab-ui/cypress
 
-integration_tests:
+ui:integration_tests:
   extends: [.ui:integration_tests]
 
-integration_tests_vue3:
+ui:integration_tests_vue3:
   extends: [.ui:integration_tests, .ui:use_vue3]
   needs: [ui:build_test_storybook_vue3]
 
