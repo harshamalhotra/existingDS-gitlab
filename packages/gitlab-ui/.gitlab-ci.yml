@@ -420,7 +420,7 @@ ui:duo_job:
       when: always
       allow_failure: false
 
-update_deployments:
+ui:update_deployments:
   extends: [.ui:node, .ui:yarn_install]
   stage: manual
   allow_failure: true
