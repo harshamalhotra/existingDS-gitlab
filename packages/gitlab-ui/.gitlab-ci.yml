@@ -304,7 +304,7 @@ ui:unit_tests_vue3:
     ARTIFACT_NAME: 'coverage-vue3'
     COVERAGE_DIR: 'coverage/vue3'
 
-merge_coverage_reports:
+ui:merge_coverage_reports:
   extends: [.ui:node, .ui:yarn_install]
   needs:
     - ui:unit_tests_vue2
