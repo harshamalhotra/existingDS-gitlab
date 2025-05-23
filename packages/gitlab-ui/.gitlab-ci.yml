@@ -339,7 +339,7 @@ ui:screenshot_collector:
     paths:
       - packages/gitlab-ui/tests/
 
-update_screenshots:
+ui:update_screenshots:
   extends:
     - .ui:node
     - .rules:ui:design-gitlab-com-mr-manual

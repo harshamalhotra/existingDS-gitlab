@@ -20,7 +20,7 @@ job's artifacts. The relevant snapshots are added in the `tests/__image_snapshot
 directory.
 
 Once you have confirmed that visual differences are expected and aren't regressions, trigger the
-manual CI job `update_screenshots` to regenerate the snapshots.
+manual CI job `ui:update_screenshots` to regenerate the snapshots.
 
 ## Excluding stories from visual testing
 
