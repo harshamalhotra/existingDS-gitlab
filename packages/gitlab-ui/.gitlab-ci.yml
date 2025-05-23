@@ -8,7 +8,7 @@
   if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
 
 # Execute the security scanners immediately
-.playwright:
+.ui:playwright:
   image: mcr.microsoft.com/playwright:v1.52.0-jammy
 
 .node:
@@ -207,7 +207,7 @@ check_tokens_build:
 
 .visual:
   extends:
-    - .playwright
+    - .ui:playwright
     - .yarn_install
   needs: [build_test_storybook]
   parallel: 2
