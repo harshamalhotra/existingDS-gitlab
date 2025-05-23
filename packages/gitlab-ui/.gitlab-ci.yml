@@ -292,13 +292,13 @@ ui:bootstrap-vue_vue3:
         coverage_format: cobertura
         path: packages/gitlab-ui/$COVERAGE_DIR/cobertura-coverage.xml
 
-unit_tests_vue2:
+ui:unit_tests_vue2:
   extends: [.ui:unit_tests]
   variables:
     ARTIFACT_NAME: 'coverage-vue2'
     COVERAGE_DIR: 'coverage/vue2'
 
-unit_tests_vue3:
+ui:unit_tests_vue3:
   extends: [.ui:unit_tests, .ui:use_vue3]
   variables:
     ARTIFACT_NAME: 'coverage-vue3'
@@ -307,8 +307,8 @@ unit_tests_vue3:
 merge_coverage_reports:
   extends: [.ui:node, .ui:yarn_install]
   needs:
-    - unit_tests_vue2
-    - unit_tests_vue3
+    - ui:unit_tests_vue2
+    - ui:unit_tests_vue3
   script:
     - yarn run merge-cobertura -o coverage/cobertura-coverage.xml package1=coverage/vue2/cobertura-coverage.xml package2=coverage/vue3/cobertura-coverage.xml
   artifacts:
