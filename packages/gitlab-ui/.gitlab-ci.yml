@@ -334,6 +334,7 @@ screenshot_collector:
     GIT_STRATEGY: none
   when: always
   script:
+    - cd packages/gitlab-ui
     - find tests
   needs:
     - job: visual
