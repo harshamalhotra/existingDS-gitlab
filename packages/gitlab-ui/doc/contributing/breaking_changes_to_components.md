@@ -69,7 +69,7 @@ When making breaking changes, it's important to test them against the duo-ui pro
 We have a CI pipeline setup that automatically tests integration with duo-ui on every MR.
 Here's how it works:
 
-1. Every MR automatically runs a `duo_job` that tests integration with duo-ui
+1. Every MR automatically runs a `ui:duo_job` that tests integration with duo-ui
 2. By default, if the duo-ui integration fails, it will fail the entire pipeline
 3. If you need to make breaking changes that will temporarily break duo-ui, you can:
    - Add the `duo-ui-allowed-to-fail` label to your MR

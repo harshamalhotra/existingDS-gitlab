@@ -401,7 +401,7 @@ ui:create_integration_branch:
   script:
     - bin/create_integration_branch.mjs
 
-duo_job:
+ui:duo_job:
   stage: deploy
   needs:
     - ui:build_package
