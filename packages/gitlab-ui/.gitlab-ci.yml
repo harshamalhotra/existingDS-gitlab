@@ -272,7 +272,7 @@ ui:bootstrap-vue:
 ui:bootstrap-vue_vue3:
   extends: [ui:bootstrap-vue, .ui:use_vue3]
 
-.unit_tests:
+.ui:unit_tests:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
   stage: test
@@ -293,13 +293,13 @@ ui:bootstrap-vue_vue3:
         path: packages/gitlab-ui/$COVERAGE_DIR/cobertura-coverage.xml
 
 unit_tests_vue2:
-  extends: [.unit_tests]
+  extends: [.ui:unit_tests]
   variables:
     ARTIFACT_NAME: 'coverage-vue2'
     COVERAGE_DIR: 'coverage/vue2'
 
 unit_tests_vue3:
-  extends: [.unit_tests, .ui:use_vue3]
+  extends: [.ui:unit_tests, .ui:use_vue3]
   variables:
     ARTIFACT_NAME: 'coverage-vue3'
     COVERAGE_DIR: 'coverage/vue3'
