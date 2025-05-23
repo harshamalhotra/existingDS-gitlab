@@ -181,7 +181,7 @@ ui:lint:
     reports:
       codequality: gl-code-quality-report-eslint.json
 
-stylelint:
+ui:stylelint:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
   stage: test
