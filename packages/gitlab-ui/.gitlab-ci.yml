@@ -193,7 +193,7 @@ ui:stylelint:
     reports:
       codequality: '$STYLELINT_CODE_QUALITY_REPORT'
 
-check_translations_dictionary:
+ui:check_translations_dictionary:
   extends: [.ui:node, '.ui:yarn_install']
   needs: []
   script:
