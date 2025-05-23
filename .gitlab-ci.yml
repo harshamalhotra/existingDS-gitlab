@@ -29,6 +29,12 @@ default:
 .is-design-gitlab-com-default-branch: &is-design-gitlab-com-default-branch
   if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
 
+.is-design-gitlab-com-mr: &is-design-gitlab-com-mr
+  if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
+.is-merge-train: &is-merge-train
+  if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
+
 variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
