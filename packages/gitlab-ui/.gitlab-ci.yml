@@ -205,7 +205,7 @@ ui:check_tokens_build:
   script:
     - ./bin/check_tokens_build.sh
 
-.visual:
+.ui:visual:
   extends:
     - .ui:playwright
     - .ui:yarn_install
@@ -227,11 +227,11 @@ ui:check_tokens_build:
       - packages/gitlab-ui/tests/results.json
 
 visual:
-  extends: [.visual]
+  extends: [.ui:visual]
 
 visual_vue3:
   needs: [ui:build_test_storybook_vue3]
-  extends: [.visual, .ui:use_vue3]
+  extends: [.ui:visual, .ui:use_vue3]
 
 .integration_tests:
   image: cypress/browsers:node-22.11.0-chrome-131.0.6778.85-1-ff-132.0.2-edge-131.0.2903.70-1
