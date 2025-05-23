@@ -146,21 +146,71 @@ ui:build_package:
     paths:
       - packages/gitlab-ui/public
 
-ui:build_storybook:
-  extends: [.ui:build_storybook]
+.ui:pages:
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+  pages:
+    path_prefix: '$PAGES_PREFIX'
+    expire_in: never
+    publish: packages/gitlab-ui/public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
 
-ui:build_storybook_vue3:
-  extends: [.ui:build_storybook, .ui:use_vue3]
+.ui:pages-review:
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+  pages:
+    # Review App: /review-mr-1234
+    # SB review app: /review-mr-1234-storybook
+    path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
+    expire_in: "2 weeks"
+  environment:
+    name: "$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}"
+    url: "${CURRENT_PAGES_URL}"
+    auto_stop_in: "2 weeks"
 
-ui:build_tailwind_config_viewer:
-  extends: [.ui:node, .ui:yarn_install]
+ui:pages_storybook:
+  extends: [.ui:build_storybook, .ui:pages]
+  variables:
+    PAGES_PREFIX: 'storybook'
+
+ui:pages_storybook_review:
+  extends: [ui:pages_storybook, .ui:pages-review]
+
+ui:pages_storybook_vue3:
+  extends: [.ui:build_storybook, .ui:use_vue3, .ui:pages]
+  variables:
+    PAGES_PREFIX: 'storybook-vue3'
+
+ui:pages_storybook_vue3_review:
+  extends: [ui:pages_storybook_vue3, .ui:pages-review]
+
+ui:pages_tailwind_config_viewer:
+  extends: [.ui:node, .ui:yarn_install, .ui:pages]
   needs: []
   stage: build
   script:
     - yarn tailwind-config-viewer:export
   artifacts:
     paths:
-      - packages/gitlab-ui/tailwind-config-viewer-static/
+      - packages/gitlab-ui/tailwind-config-viewer-static
+  pages:
+    publish: packages/gitlab-ui/tailwind-config-viewer-static
+  variables:
+    PAGES_PREFIX: 'tailwind'
+
+ui:pages_tailwind_config_viewer_review:
+  extends: [ui:pages_tailwind_config_viewer, .ui:pages-review]
 
 ui:lint:
   extends: [.ui:node, .ui:yarn_install]
@@ -349,47 +399,6 @@ ui:update_screenshots:
   stage: manual
   script:
     - ./bin/update-screenshots.sh
-
-.ui:pages:
-  stage: deploy
-  needs:
-    - ui:build_storybook
-    - ui:build_storybook_vue3
-    - ui:build_tailwind_config_viewer
-  script:
-    - echo "Deploying to Pages"
-    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
-    - mv ./packages/gitlab-ui/tailwind-config-viewer-static ./public/tailwind-config-viewer
-  environment:
-    url: '${CI_PAGES_URL}'
-  publish: public
-  artifacts:
-    paths:
-      - packages/gitlab-ui/public
-
-ui:pages:
-  extends:
-    - .ui:pages
-  pages:
-    expire_in: never
-  environment:
-    name: 'pages'
-  rules:
-    - when: never
-    - <<: *ui-is-design-gitlab-com-default-branch
-
-ui:review-app:
-  extends:
-    - .ui:pages
-    - .rules:ui:design-gitlab-com-mr
-  pages:
-    path_prefix: '$CI_ENVIRONMENT_SLUG'
-    expire_in: '2 weeks'
-  environment:
-    name: 'review/mr-$CI_MERGE_REQUEST_IID'
-    auto_stop_in: '2 weeks'
-  rules:
-    - when: never
 
 ui:create_integration_branch:
   extends:

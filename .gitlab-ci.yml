@@ -133,6 +133,7 @@ lint_and_test:
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
     # CURRENT_PAGES_URL is set in the canonical project
     CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+    GITLAB_UI_URL: "${CI_PAGES_URL}/storybook"
   script:
     - apk add --no-cache gzip brotli
     - bash ./scripts/build.sh
@@ -160,6 +161,10 @@ review-app:
     - .pages
   rules:
     - if: '$CI_MERGE_REQUEST_IID'
+  variables:
+    # Review App: /review-mr-1234
+    # SB review app: /review-mr-1234-storybook
+    GITLAB_UI_URL: "${CI_PAGES_URL}-storybook"
   pages:
     path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}'
     expire_in: "2 weeks"
