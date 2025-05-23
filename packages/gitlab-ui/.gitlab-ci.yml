@@ -23,7 +23,7 @@
 # The latter is obvious, because it updates when we update dependencies
 # The former is to invalidate caches, in case we touch our CI config, which
 # could mean changing something in our caching logic
-.cache-template: &cache-template
+.ui:cache-template: &ui-cache-template
   paths:
     - packages/gitlab-ui/node_modules/
   key:
@@ -43,7 +43,7 @@
     - apt-get install -y make
     - yarn install --frozen-lockfile
   cache:
-    <<: *cache-template
+    <<: *ui-cache-template
     policy: pull
 
 .rules:ui:design-gitlab-com-mr:
@@ -76,7 +76,7 @@ populate_npm_cache:
   script:
     - echo "successfully installed dependencies"
   cache:
-    <<: *cache-template
+    <<: *ui-cache-template
     policy: push
   rules:
     - changes:
