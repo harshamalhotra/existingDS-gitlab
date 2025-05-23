@@ -152,7 +152,7 @@ ui:build_storybook:
 ui:build_storybook_vue3:
   extends: [.ui:build_storybook, .ui:use_vue3]
 
-build_tailwind_config_viewer:
+ui:build_tailwind_config_viewer:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
   stage: build
@@ -355,7 +355,7 @@ update_screenshots:
   needs:
     - ui:build_storybook
     - ui:build_storybook_vue3
-    - build_tailwind_config_viewer
+    - ui:build_tailwind_config_viewer
   script:
     - echo "Deploying to Pages"
     - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
