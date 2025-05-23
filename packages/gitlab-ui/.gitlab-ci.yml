@@ -70,7 +70,7 @@ ui:untamper-my-lockfile:
 
 # As we are caching based on the contents of our CI config and dependency lock file
 # We only need to execute when these change. However, we give a manual job as an escape hatch
-populate_npm_cache:
+ui:populate_npm_cache:
   extends: [.ui:node, .ui:yarn_install]
   stage: pre-build
   script:
