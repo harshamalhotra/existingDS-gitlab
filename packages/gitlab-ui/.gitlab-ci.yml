@@ -146,10 +146,10 @@ ui:build_package:
     paths:
       - packages/gitlab-ui/public
 
-build_storybook:
+ui:build_storybook:
   extends: [.ui:build_storybook]
 
-build_storybook_vue3:
+ui:build_storybook_vue3:
   extends: [.ui:build_storybook, .ui:use_vue3]
 
 build_tailwind_config_viewer:
@@ -353,8 +353,8 @@ update_screenshots:
 .ui:pages:
   stage: deploy
   needs:
-    - build_storybook
-    - build_storybook_vue3
+    - ui:build_storybook
+    - ui:build_storybook_vue3
     - build_tailwind_config_viewer
   script:
     - echo "Deploying to Pages"
