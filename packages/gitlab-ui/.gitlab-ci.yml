@@ -136,7 +136,7 @@ ui:build_package:
       - packages/gitlab-ui/dist
       - packages/gitlab-ui/$TAR_ARCHIVE_NAME
 
-.build_storybook:
+.ui:build_storybook:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
   stage: build
@@ -147,10 +147,10 @@ ui:build_package:
       - packages/gitlab-ui/public
 
 build_storybook:
-  extends: [.build_storybook]
+  extends: [.ui:build_storybook]
 
 build_storybook_vue3:
-  extends: [.build_storybook, .ui:use_vue3]
+  extends: [.ui:build_storybook, .ui:use_vue3]
 
 build_tailwind_config_viewer:
   extends: [.ui:node, .ui:yarn_install]
