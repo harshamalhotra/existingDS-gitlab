@@ -62,10 +62,9 @@ Set the `STORYBOOK_HOST` and `STORYBOOK_PORT` environment variables.
 
 ## Does GitLab UI have a changelog/version history?
 
-Yes! We generate changelogs automatically based on GitLab UI's
-[conventional commits](https://www.conventionalcommits.org/) history.
-Changelogs can be found in the [releases page](https://gitlab.com/gitlab-org/gitlab-ui/-/releases)
-or in the [CHANGELOG.md](./CHANGELOG.md) file.
+Yes! Changelogs can be found in the [releases
+page](https://gitlab.com/gitlab-org/gitlab-ui/-/releases) or in the
+[CHANGELOG.md](./CHANGELOG.md) file.
 
 ## I've added some files to GitLab UI but they aren't published in the npm package, why is that?
 
@@ -79,14 +78,6 @@ Wrapping the components is an implementation of the [adapter design pattern](htt
 We do this so that we can easily switch out Bootstrap Vue for another library (if we need to) and
 also to encapsulate the logic used for setting the styles/CSS class names. Developers should be able
 to easily import GitLab UI without worrying about the internal logic and styling setup.
-
-## Why are we using `semantic-release` and how does it work?
-
-We chose to use [semantic-release](https://github.com/semantic-release/semantic-release) to handle
-our npm publishing because it was the most widely used tool for publishing and gave easy support for
-managing changelogs.
-
-Read more about GitLab UI's [commits guidelines](./doc/contributing/commits.md).
 
 ## Why did we decide to go for Rollup instead of Webpack?
 

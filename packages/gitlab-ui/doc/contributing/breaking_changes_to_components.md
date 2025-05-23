@@ -57,8 +57,8 @@ of the steps in this process would be unnecessary overhead; it might be easier
 to immediately upgrade those uses to the new implementation in the same
 integration MR that bumps `@gitlab/ui` to the new major version.
 
-Remember to follow our [commit conventions](./commits.md) to ensure the major
-version number of GitLab UI is incremented with any breaking changes.
+Remember to ensure the major version number of GitLab UI is incremented with
+any breaking changes.
 
 [integration MRs]: ./gitlab_integration_test.md#using-the-remote-development-package
 [script]: https://gitlab.com/gitlab-org/frontend/playground/create-migrate-deprecated-component-issues

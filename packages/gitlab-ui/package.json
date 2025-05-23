@@ -207,27 +207,5 @@
     "webpack": "^5.9.0",
     "yargs": "^17.3.1",
     "yarn-deduplicate": "^6.0.2"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/gitlab"
-    ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "publish": [
-      "@semantic-release/npm",
-      "@semantic-release/gitlab"
-    ],
-    "success": false,
-    "fail": false
   }
 }

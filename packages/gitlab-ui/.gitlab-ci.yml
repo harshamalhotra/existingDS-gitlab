@@ -1,31 +1,3 @@
-stages:
-  - pre-build
-  - test
-  - build
-  - deploy
-  - publish
-  - manual
-
-default:
-  interruptible: true
-  artifacts:
-    expire_in: 30 days
-  tags:
-    - gitlab-org
-
-variables:
-  GITLAB_ADVANCED_SAST_ENABLED: 'true'
-
-include:
-  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml
-  - template: Jobs/SAST.latest.gitlab-ci.yml
-  - template: Jobs/Secret-Detection.latest.gitlab-ci.yml
-  - project: gitlab-org/frontend/frontend-build-images
-    file: /semantic-release/.gitlab-ci-template.rules.yml
-  - project: gitlab-org/frontend/untamper-my-lockfile
-    file: 'templates/merge_request_pipelines.yml'
-  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.4.0
-
 .is-merge-train: &is-merge-train
   if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
 
@@ -35,18 +7,6 @@ include:
   if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-ui"'
 
 # Execute the security scanners immediately
-gemnasium-dependency_scanning:
-  needs: []
-
-semgrep-sast:
-  needs: []
-
-gitlab-advanced-sast:
-  needs: []
-
-secret_detection:
-  needs: []
-
 .playwright:
   image: mcr.microsoft.com/playwright:v1.52.0-jammy
 
@@ -64,11 +24,11 @@ secret_detection:
 # could mean changing something in our caching logic
 .cache-template: &cache-template
   paths:
-    - node_modules/
+    - packages/gitlab-ui/node_modules/
   key:
     files:
-      - .gitlab-ci.yml
-      - yarn.lock
+      - packages/gitlab-ui/.gitlab-ci.yml
+      - packages/gitlab-ui/yarn.lock
     prefix: node_modules
 
 .yarn_install:
@@ -77,23 +37,13 @@ secret_detection:
     # and makes all other jobs potentially slower, if no cache exists
     CYPRESS_INSTALL_BINARY: 0
   before_script:
+    - cd packages/gitlab-ui
     - apt-get update
     - apt-get install -y make
     - yarn install --frozen-lockfile
   cache:
     <<: *cache-template
     policy: pull
-
-# Only start pipelines on Merge Requests or the default branch
-workflow:
-  rules:
-    # Commits on default branch
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-      when: always
-    # MR-Pipelines
-    - if: $CI_MERGE_REQUEST_IID
-      when: always
-    - when: never
 
 # Only run on GitLab UI default branches
 .rules:gitlab-ui-default-branch:
@@ -110,6 +60,18 @@ workflow:
       when: manual
       allow_failure: true
 
+ui:untamper-my-lockfile:
+  extends: untamper-my-lockfile
+  script:
+    - untamper-my-lockfile --lockfile packages/gitlab-ui/yarn.lock
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+      changes:
+        - packages/gitlab-ui/yarn.lock
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      changes:
+        - packages/gitlab-ui/yarn.lock
+
 # As we are caching based on the contents of our CI config and dependency lock file
 # We only need to execute when these change. However, we give a manual job as an escape hatch
 populate_npm_cache:
@@ -122,8 +84,8 @@ populate_npm_cache:
     policy: push
   rules:
     - changes:
-        - .gitlab-ci.yml
-        - yarn.lock
+        - packages/gitlab-ui/.gitlab-ci.yml
+        - packages/gitlab-ui/yarn.lock
       when: always
     - when: never
 
@@ -135,9 +97,9 @@ yarn_deduplicate:
     - yarn yarn-deduplicate --strategy fewer --list --fail
   rules:
     - changes:
-        - .gitlab-ci.yml
-        - package.json
-        - yarn.lock
+        - packages/gitlab-ui/.gitlab-ci.yml
+        - packages/gitlab-ui/package.json
+        - packages/gitlab-ui/yarn.lock
       when: always
 
 .build_test_storybook:
@@ -148,7 +110,7 @@ yarn_deduplicate:
   artifacts:
     when: always
     paths:
-      - storybook/
+      - packages/gitlab-ui/storybook/
 
 build_test_storybook:
   extends: [.build_test_storybook]
@@ -174,9 +136,9 @@ build_package:
     reports:
       dotenv: build_package.env
     paths:
-      - bin/migrate_custom_utils_to_tw.bundled.mjs
-      - dist
-      - $TAR_ARCHIVE_NAME
+      - packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
+      - packages/gitlab-ui/dist
+      - packages/gitlab-ui/$TAR_ARCHIVE_NAME
 
 .build_storybook:
   extends: [.node, .yarn_install]
@@ -186,7 +148,7 @@ build_package:
     - bin/build-storybook-static.sh
   artifacts:
     paths:
-      - public
+      - packages/gitlab-ui/public
 
 build_storybook:
   extends: [.build_storybook]
@@ -202,7 +164,7 @@ build_tailwind_config_viewer:
     - yarn tailwind-config-viewer:export
   artifacts:
     paths:
-      - tailwind-config-viewer-static/
+      - packages/gitlab-ui/tailwind-config-viewer-static/
 
 lint:
   extends: [.node, .yarn_install]
@@ -265,8 +227,8 @@ check_tokens_build:
   artifacts:
     when: always
     paths:
-      - tests/__image_snapshots__/
-      - tests/results.json
+      - packages/gitlab-ui/tests/__image_snapshots__/
+      - packages/gitlab-ui/tests/results.json
 
 visual:
   extends: [.visual]
@@ -293,7 +255,7 @@ visual_vue3:
     when: on_failure
     expire_in: 1 week
     paths:
-      - cypress
+      - packages/gitlab-ui/cypress
 
 integration_tests:
   extends: [.integration_tests]
@@ -307,7 +269,7 @@ bootstrap-vue:
   needs: []
   stage: test
   script:
-    - cd src/vendor/bootstrap-vue
+    - cd packages/gitlab-ui/src/vendor/bootstrap-vue
     - yarn install --check-files --frozen-lockfile --non-interactive
     - yarn run test
 
@@ -328,11 +290,11 @@ bootstrap-vue_vue3:
     expire_in: 7d
     when: always
     paths:
-      - $COVERAGE_DIR/
+      - packages/gitlab-ui/$COVERAGE_DIR/
     reports:
       coverage_report:
         coverage_format: cobertura
-        path: $COVERAGE_DIR/cobertura-coverage.xml
+        path: packages/gitlab-ui/$COVERAGE_DIR/cobertura-coverage.xml
 
 unit_tests_vue2:
   extends: [.unit_tests]
@@ -357,11 +319,11 @@ merge_coverage_reports:
     name: coverage
     when: always
     paths:
-      - coverage/
+      - packages/gitlab-ui/coverage/
     reports:
       coverage_report:
         coverage_format: cobertura
-        path: coverage/cobertura-coverage.xml
+        path: packages/gitlab-ui/coverage/cobertura-coverage.xml
 
 # Manual jobs cannot depend on failing jobs
 # So we need to introduce an intermediary job which re-exposes the artifacts
@@ -372,13 +334,14 @@ screenshot_collector:
     GIT_STRATEGY: none
   when: always
   script:
+    - cd packages/gitlab-ui
     - find tests
   needs:
     - job: visual
   artifacts:
     when: always
     paths:
-      - tests/
+      - packages/gitlab-ui/tests/
 
 update_screenshots:
   extends:
@@ -391,7 +354,7 @@ update_screenshots:
   script:
     - ./bin/update-screenshots.sh
 
-.pages:
+.ui:pages:
   stage: deploy
   needs:
     - build_storybook
@@ -400,26 +363,28 @@ update_screenshots:
   script:
     - echo "Deploying to Pages"
     - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
-    - mv ./tailwind-config-viewer-static ./public/tailwind-config-viewer
+    - mv ./packages/gitlab-ui/tailwind-config-viewer-static ./public/tailwind-config-viewer
   environment:
     url: '${CI_PAGES_URL}'
   publish: public
   artifacts:
     paths:
-      - public
+      - packages/gitlab-ui/public
 
 pages:
   extends:
-    - .pages
+    - .ui:pages
     - .rules:gitlab-ui-default-branch
   pages:
     expire_in: never
   environment:
     name: 'pages'
+  rules:
+    - when: never
 
-review-app:
+ui:review-app:
   extends:
-    - .pages
+    - .ui:pages
     - .rules:gitlab-ui-mr
   pages:
     path_prefix: '$CI_ENVIRONMENT_SLUG'
@@ -427,6 +392,8 @@ review-app:
   environment:
     name: 'review/mr-$CI_MERGE_REQUEST_IID'
     auto_stop_in: '2 weeks'
+  rules:
+    - when: never
 
 create_integration_branch:
   extends:
@@ -473,55 +440,5 @@ update_deployments:
       when: manual
       changes:
         paths:
-          - bin/update_deployments.mjs
+          - packages/gitlab-ui/bin/update_deployments.mjs
         compare_to: 'refs/heads/main'
-
-.snippets:
-  # The usage of these snippets can be removed after we had the first proper release
-  # after the bootstrap-vue merge
-  forget-about-bootstrap-vue:
-    - git fetch origin orphaned-semantic-commit
-    # Replace bootstrap-vue@2.23.1 with orphaned commit
-    # This should prevent semantic-release from traversing bootstrap(-vue)?'s history
-    #             <bootstrap(_vue)?_commit_sha>            <orphaned_commit_sha>
-    - git replace a1cebda1ef6e9579e742fdf3937a28643c8e31ec 936121d1c483f2279e9a3601c6442c7c2b65ed21
-    - git replace e1fa01d280bbed0ce43e6541d1d75f4474eff1fd 936121d1c483f2279e9a3601c6442c7c2b65ed21
-
-danger-review:
-  before_script:
-    - !reference [.snippets, forget-about-bootstrap-vue]
-    - '[[ ! -f "Gemfile" ]] && bundle init && bundle add gitlab-dangerfiles'
-    - bundle install
-
-publish_to_npm:
-  extends:
-    - .semantic-release
-    - .rules:gitlab-ui-default-branch
-  before_script:
-    - !reference [.snippets, forget-about-bootstrap-vue]
-  # We need to run `publish` after pages, so that pages will get deployed
-  # properly, as the publish-to-npm step will create a new commit and this
-  # could lead to a side-effect where pages don't get published because of
-  # the commit being made before `pages` had a chance to run
-  stage: publish
-  # This job doesn't use the DAG feature, because we don't want it to
-  # run in case another job in the previous stages fails
-  dependencies:
-    - build_package
-
-publish-to-npm-dry-run:
-  extends:
-    - publish_to_npm
-  rules:
-    # semantic-release is not playing well with pipelines from forks.
-    # even if triggered by a project member. So let's not run it on
-    # e.g. renovate MRs which come from forks
-    - if: '$CI_MERGE_REQUEST_SOURCE_PROJECT_ID != $CI_MERGE_REQUEST_ID'
-      when: never
-    - !reference ['.rules:gitlab-ui-mr', rules]
-  stage: deploy
-  dependencies: []
-  needs:
-    - build_package
-  script:
-    - semantic-release --branches "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" --dry-run --no-ci
