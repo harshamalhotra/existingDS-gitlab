@@ -354,7 +354,7 @@ update_screenshots:
   script:
     - ./bin/update-screenshots.sh
 
-.pages:
+.ui:pages:
   stage: deploy
   needs:
     - build_storybook
@@ -373,7 +373,7 @@ update_screenshots:
 
 pages:
   extends:
-    - .pages
+    - .ui:pages
     - .rules:gitlab-ui-default-branch
   pages:
     expire_in: never
@@ -382,9 +382,9 @@ pages:
   rules:
     - when: never
 
-review-app:
+ui:review-app:
   extends:
-    - .pages
+    - .ui:pages
     - .rules:gitlab-ui-mr
   pages:
     path_prefix: '$CI_ENVIRONMENT_SLUG'
