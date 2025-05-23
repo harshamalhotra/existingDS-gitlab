@@ -93,6 +93,27 @@ Examples of custom feedback elements:
 - An inline update providing compliance check feedback, or discovery of a new vulnerability.
 - An addition to a collaboration activity stream.
 
+### Highlighting
+
+Highlighting is a way to emphasize or draw attention to content without implying any particular meaning. `highlight.*` design tokens help a user identify relevant information or relationships within the interface.
+
+Highlight design tokens support two contexts:
+
+- `match`: Drawing attention to matched results.
+- `target`: Identifying referenced (targeted) elements or visualizing relationships between content or elements when one or more is the target.
+
+Use highlight design tokens when:
+
+- Temporary visual emphasis is needed that is informational rather than interactive.
+- Visually connecting related elements without changing their meaning.
+
+Examples of highlight elements:
+
+- Matched search terms, filtered results, or autocomplete suggestions.
+- Indicating which element is referenced in the URL.
+- Highlighting a row on hover to emphasize the relationship of content within.
+- Indicating which element is related to another that currently has the user's attention.
+
 ### Status
 
 `status.*` design tokens represent the current state or condition of an element or system. A status item provides static information that doesn't typically require immediate action.
