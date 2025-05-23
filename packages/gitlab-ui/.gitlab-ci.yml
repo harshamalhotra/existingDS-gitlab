@@ -98,7 +98,7 @@ ui:yarn_deduplicate:
         - packages/gitlab-ui/yarn.lock
       when: always
 
-.build_test_storybook:
+.ui:build_test_storybook:
   extends: [.ui:node, .ui:yarn_install]
   stage: pre-build
   script:
@@ -108,11 +108,11 @@ ui:yarn_deduplicate:
     paths:
       - packages/gitlab-ui/storybook/
 
-build_test_storybook:
-  extends: [.build_test_storybook]
+ui:build_test_storybook:
+  extends: [.ui:build_test_storybook]
 
-build_test_storybook_vue3:
-  extends: [.ui:use_vue3, .build_test_storybook]
+ui:build_test_storybook_vue3:
+  extends: [.ui:use_vue3, .ui:build_test_storybook]
 
 build_package:
   extends: [.ui:node, .ui:yarn_install]
@@ -209,7 +209,7 @@ check_tokens_build:
   extends:
     - .ui:playwright
     - .ui:yarn_install
-  needs: [build_test_storybook]
+  needs: [ui:build_test_storybook]
   parallel: 2
   stage: test
   script:
@@ -230,7 +230,7 @@ visual:
   extends: [.visual]
 
 visual_vue3:
-  needs: [build_test_storybook_vue3]
+  needs: [ui:build_test_storybook_vue3]
   extends: [.visual, .ui:use_vue3]
 
 .integration_tests:
@@ -239,7 +239,7 @@ visual_vue3:
   variables:
     # Allow these jobs to install cypress binaries
     CYPRESS_INSTALL_BINARY: ''
-  needs: [build_test_storybook]
+  needs: [ui:build_test_storybook]
   parallel:
     matrix:
       - SUITE: ['cy:edge', 'cy:run']
@@ -258,7 +258,7 @@ integration_tests:
 
 integration_tests_vue3:
   extends: [.integration_tests, .ui:use_vue3]
-  needs: [build_test_storybook_vue3]
+  needs: [ui:build_test_storybook_vue3]
 
 bootstrap-vue:
   extends: [.ui:node]
