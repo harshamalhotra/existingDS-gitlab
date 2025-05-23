@@ -260,7 +260,7 @@ ui:integration_tests_vue3:
   extends: [.ui:integration_tests, .ui:use_vue3]
   needs: [ui:build_test_storybook_vue3]
 
-bootstrap-vue:
+ui:bootstrap-vue:
   extends: [.ui:node]
   needs: []
   stage: test
@@ -269,8 +269,8 @@ bootstrap-vue:
     - yarn install --check-files --frozen-lockfile --non-interactive
     - yarn run test
 
-bootstrap-vue_vue3:
-  extends: [bootstrap-vue, .ui:use_vue3]
+ui:bootstrap-vue_vue3:
+  extends: [ui:bootstrap-vue, .ui:use_vue3]
 
 .unit_tests:
   extends: [.ui:node, .ui:yarn_install]
