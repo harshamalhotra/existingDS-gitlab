@@ -14,7 +14,7 @@
 .ui:node:
   image: node:22.15.1-bookworm
 
-.use_vue3:
+.ui:use_vue3:
   variables:
     VUE_VERSION: '3'
 
@@ -112,7 +112,7 @@ build_test_storybook:
   extends: [.build_test_storybook]
 
 build_test_storybook_vue3:
-  extends: [.use_vue3, .build_test_storybook]
+  extends: [.ui:use_vue3, .build_test_storybook]
 
 build_package:
   extends: [.ui:node, .yarn_install]
@@ -150,7 +150,7 @@ build_storybook:
   extends: [.build_storybook]
 
 build_storybook_vue3:
-  extends: [.build_storybook, .use_vue3]
+  extends: [.build_storybook, .ui:use_vue3]
 
 build_tailwind_config_viewer:
   extends: [.ui:node, .yarn_install]
@@ -231,7 +231,7 @@ visual:
 
 visual_vue3:
   needs: [build_test_storybook_vue3]
-  extends: [.visual, .use_vue3]
+  extends: [.visual, .ui:use_vue3]
 
 .integration_tests:
   image: cypress/browsers:node-22.11.0-chrome-131.0.6778.85-1-ff-132.0.2-edge-131.0.2903.70-1
@@ -257,7 +257,7 @@ integration_tests:
   extends: [.integration_tests]
 
 integration_tests_vue3:
-  extends: [.integration_tests, .use_vue3]
+  extends: [.integration_tests, .ui:use_vue3]
   needs: [build_test_storybook_vue3]
 
 bootstrap-vue:
@@ -270,7 +270,7 @@ bootstrap-vue:
     - yarn run test
 
 bootstrap-vue_vue3:
-  extends: [bootstrap-vue, .use_vue3]
+  extends: [bootstrap-vue, .ui:use_vue3]
 
 .unit_tests:
   extends: [.ui:node, .yarn_install]
@@ -299,7 +299,7 @@ unit_tests_vue2:
     COVERAGE_DIR: 'coverage/vue2'
 
 unit_tests_vue3:
-  extends: [.unit_tests, .use_vue3]
+  extends: [.unit_tests, .ui:use_vue3]
   variables:
     ARTIFACT_NAME: 'coverage-vue3'
     COVERAGE_DIR: 'coverage/vue3'
