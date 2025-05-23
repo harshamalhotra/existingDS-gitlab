@@ -6,7 +6,7 @@ import lockfile from '@yarnpkg/lockfile';
 
 const gitlabAPI = setupGitLabAPI(axios);
 
-const gitlabUIProject = encodeURIComponent('gitlab-org/gitlab-ui');
+const gitlabUIProject = encodeURIComponent('gitlab-org/gitlab-services/design.gitlab.com');
 
 async function ensureEnvironment(project, options) {
   const { name, ...rest } = options;
