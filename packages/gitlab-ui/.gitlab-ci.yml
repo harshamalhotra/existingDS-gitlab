@@ -233,7 +233,7 @@ ui:visual_vue3:
   needs: [ui:build_test_storybook_vue3]
   extends: [.ui:visual, .ui:use_vue3]
 
-.integration_tests:
+.ui:integration_tests:
   image: cypress/browsers:node-22.11.0-chrome-131.0.6778.85-1-ff-132.0.2-edge-131.0.2903.70-1
   extends: [.ui:node, .ui:yarn_install]
   variables:
@@ -254,10 +254,10 @@ ui:visual_vue3:
       - packages/gitlab-ui/cypress
 
 integration_tests:
-  extends: [.integration_tests]
+  extends: [.ui:integration_tests]
 
 integration_tests_vue3:
-  extends: [.integration_tests, .ui:use_vue3]
+  extends: [.ui:integration_tests, .ui:use_vue3]
   needs: [ui:build_test_storybook_vue3]
 
 bootstrap-vue:
