@@ -1,4 +1,4 @@
-const visit = require('unist-util-visit');
+const { visit } = require('unist-util-visit');
 const fixUrlInReviewApp = require('../helpers/fix_url_in_review_app');
 
 const elementsWhichNeedSourceFixing = (node, index, parent) => {
