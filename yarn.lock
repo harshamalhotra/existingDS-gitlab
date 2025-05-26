@@ -1566,18 +1566,18 @@
   resolved "https://registry.yarnpkg.com/@gitlab/nuxt-edit-this-page/-/nuxt-edit-this-page-1.0.0.tgz#e926b8eab7a0d8c688c1649c8f2dc081533b0510"
   integrity sha512-SDW2EkSNGEmIvLRGSuLMBA/fmwjcRuX+hcDNPKcpoqU6WBvQxoFzrHKhoB9jz5p/JSRPAwr/O+igYheyeWqZuw==
 
-"@gitlab/svgs@3.131.0":
-  version "3.131.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.131.0.tgz#65ae8c79dd3b3880296d4d6bcf7a8173bef173c3"
-  integrity sha512-AVWts6hg9XU0mWPW2J1E5LcPKFVC5CHLJouMBOq0Gn4ILFVdsiHZygQ2KD1qV1zZPsga9m4cPj71aQnal1hxBA==
+"@gitlab/svgs@3.134.0":
+  version "3.134.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.134.0.tgz#d377ed04560e096155e6f2ff96532b32f65f5db9"
+  integrity sha512-j80CQRNCdBIF0bykqWHCafYh/NaZg67Z5aZ9Whq28V+Od9l1KTn4Qb1SEd71hRLfDEkFQibdBc4L+CVVR98Q/w==
 
-"@gitlab/ui@114.0.1":
-  version "114.0.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-114.0.1.tgz#847f1ab2ce56bcb504b95c9c7535799fb4defa0c"
-  integrity sha512-JvXGyIqye/MuM7s2NqGWfd6rsPYv2+o/r//nxzS7ginRM/yJQbSNIJo+yPuxOREqnONmzuqCpeigYyBcPE2PHw==
+"@gitlab/ui@114.1.0":
+  version "114.1.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-114.1.0.tgz#f44eb6640ca9dc2bee91723e6fd55f467da9e7ea"
+  integrity sha512-kfBkMd32U8poFpu9pJz//4EjABh69xUokPV+BQPbmw4l94SW54da6FpIYxjouaK0oxu7BzVFmJSOi0yU5fmPPg==
   dependencies:
     "@floating-ui/dom" "1.7.0"
-    echarts "^5.3.2"
+    echarts "^5.6.0"
     iframe-resizer "^4.3.2"
     lodash "^4.17.20"
     popper.js "^1.16.1"
@@ -5736,13 +5736,13 @@ eastasianwidth@^0.2.0:
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
-echarts@^5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.3.2.tgz#0a7b3be8c48a48b2e7cb1b82121df0c208d42d2c"
-  integrity sha512-LWCt7ohOKdJqyiBJ0OGBmE9szLdfA9sGcsMEi+GGoc6+Xo75C+BkcT/6NNGRHAWtnQl2fNow05AQjznpap28TQ==
+echarts@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.6.0.tgz#2377874dca9fb50f104051c3553544752da3c9d6"
+  integrity sha512-oTbVTsXfKuEhxftHqL5xprgLoc0k7uScAwtryCgWF6hPYFLRwOUHiFmHGCBKP5NPFNkDVopOieyUqYGH8Fa3kA==
   dependencies:
     tslib "2.3.0"
-    zrender "5.3.1"
+    zrender "5.6.1"
 
 editorconfig@^0.15.3:
   version "0.15.3"
@@ -14464,10 +14464,10 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zrender@5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-5.3.1.tgz#fa8e63ac7e719cfd563831fe8c42a9756c5af384"
-  integrity sha512-7olqIjy0gWfznKr6vgfnGBk7y4UtdMvdwFmK92vVQsQeDPyzkHW1OlrLEKg6GHz1W5ePf0FeN1q2vkl/HFqhXw==
+zrender@5.6.1:
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-5.6.1.tgz#e08d57ecf4acac708c4fcb7481eb201df7f10a6b"
+  integrity sha512-OFXkDJKcrlx5su2XbzJvj/34Q3m6PvyCZkVPHGYpcCJ52ek4U/ymZyfuV1nKE23AyBJ51E/6Yr0mhZ7xGTO4ag==
   dependencies:
     tslib "2.3.0"
 
