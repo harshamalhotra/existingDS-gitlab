@@ -36,6 +36,8 @@ variables:
 include:
   - local: packages/gitlab-ui/.gitlab-ci.yml
     rules:
+      - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+        when: always
       - changes:
           - packages/gitlab-ui/**/*
   - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
@@ -178,13 +180,19 @@ review-app:
 publish_npm_packages:
   extends:
     - .node-job
-  # We need to run `publish` after pages, so that pages will get deployed
-  # properly, as the publish-to-npm step will create a new commit and this
-  # could lead to a side-effect where pages don't get published because of
-  # the commit being made before `pages` had a chance to run
+  dependencies:
+    - ui:build_package
+    # We need to run `publish_npm_packages` after the pages deploy, so that
+    # pages will get deployed properly.
+    # The publish-to-npm step will create a new commit and this
+    # could lead to a side-effect where pages don't get published because of
+    # the new commit being made before `pages` had a chance to run
+    - production
   stage: publish
   resource_group: publish_npm_packages
   rules:
     - <<: *is-design-gitlab-com-default-branch
   script:
+    # Remove pages artifacts
+    - rm -rf public
     - ./scripts/publish_npm_packages.mjs
