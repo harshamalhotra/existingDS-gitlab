@@ -12,7 +12,11 @@
     "*.css",
     "*.scss"
   ],
-  "repository": "git@gitlab.com:gitlab-org/gitlab-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git",
+    "directory": "packages/gitlab-ui"
+  },
   "author": "GitLab",
   "private": false,
   "files": [
