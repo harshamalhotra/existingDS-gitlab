@@ -1,7 +1,7 @@
-import { GlLoadingIcon } from '@gitlab/ui';
 import { mount, createLocalVue } from '@vue/test-utils';
 import { iframeResize } from 'iframe-resizer';
 import Vuex from 'vuex';
+import { GlLoadingIcon } from '../../helpers/gitlab_ui';
 import StoryIframe from '../../components/story_iframe.vue';
 
 jest.mock('iframe-resizer');
