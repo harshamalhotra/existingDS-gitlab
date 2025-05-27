@@ -48,7 +48,19 @@ const postCssPlugin = ({ useSass = true } = {}) =>
     minimize: true,
     sourceMap: true,
     ...(useSass
-      ? { use: [['sass', { includePaths: [path.resolve(__dirname, 'node_modules')] }]] }
+      ? {
+          use: [
+            [
+              'sass',
+              {
+                includePaths: [
+                  path.resolve(__dirname, 'node_modules'),
+                  path.resolve(__dirname, '../../node_modules'),
+                ],
+              },
+            ],
+          ],
+        }
       : {}),
   });
 
