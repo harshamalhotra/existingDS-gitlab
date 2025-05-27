@@ -73,19 +73,6 @@ ui:populate_npm_cache:
       when: always
     - when: never
 
-ui:yarn_deduplicate:
-  extends: [.ui:node, .ui:yarn_install]
-  stage: test
-  needs: []
-  script:
-    - yarn yarn-deduplicate --strategy fewer --list --fail
-  rules:
-    - changes:
-        - packages/gitlab-ui/.gitlab-ci.yml
-        - packages/gitlab-ui/package.json
-        - packages/gitlab-ui/yarn.lock
-      when: always
-
 .ui:build_test_storybook:
   extends: [.ui:node, .ui:yarn_install]
   stage: pre-build
