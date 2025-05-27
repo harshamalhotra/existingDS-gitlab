@@ -6,10 +6,10 @@ copy-fonts: static/fonts/GitLabSans.woff2 static/fonts/GitLabSans-Italic.woff2 \
 	static/fonts/GitLabMono.woff2 static/fonts/GitLabMono-Italic.woff2
 
 static/fonts/GitLabSans%: static/fonts
-	cp node_modules/@gitlab/fonts/gitlab-sans/$(notdir $@) $@
+	cp ../../node_modules/@gitlab/fonts/gitlab-sans/$(notdir $@) $@
 
 static/fonts/GitLabMono%: static/fonts
-	cp node_modules/@gitlab/fonts/gitlab-mono/$(notdir $@) $@
+	cp ../../node_modules/@gitlab/fonts/gitlab-mono/$(notdir $@) $@
 
 static/fonts:
 	mkdir -p static/fonts
@@ -35,6 +35,6 @@ tokens_build_script := ./bin/build_tokens.mjs
 .PHONY: tokens
 tokens: $(tokens_built_files)
 
-$(tokens_built_files): $(tokens_src_files) $(tokens_build_script) package.json yarn.lock
+$(tokens_built_files): $(tokens_src_files) $(tokens_build_script) package.json ../../yarn.lock
 	node $(tokens_build_script)
 	@test -f $@ || (echo "Error: $@ was not created" && exit 1)
