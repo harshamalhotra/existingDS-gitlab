@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 // eslint-disable-next-line import/no-unresolved
 import { LinkChecker } from 'linkinator';
 

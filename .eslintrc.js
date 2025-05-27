@@ -32,6 +32,13 @@ module.exports = {
       files: ['scripts/**/*'],
       rules: {
         'no-console': 'off',
+        'import/extensions': [
+          'error',
+          'never',
+          {
+            mjs: 'always',
+          },
+        ],
       },
     },
   ],
