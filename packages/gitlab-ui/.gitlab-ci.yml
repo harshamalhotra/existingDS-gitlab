@@ -25,12 +25,13 @@
 # could mean changing something in our caching logic
 .ui:cache-template: &ui-cache-template
   paths:
+    - node_modules/
     - packages/gitlab-ui/node_modules/
   key:
     files:
       - packages/gitlab-ui/.gitlab-ci.yml
-      - packages/gitlab-ui/yarn.lock
-    prefix: node_modules
+      - yarn.lock
+    prefix: ui_node_modules
 
 .ui:yarn_install:
   variables:
@@ -69,7 +70,8 @@ ui:populate_npm_cache:
   rules:
     - changes:
         - packages/gitlab-ui/.gitlab-ci.yml
-        - packages/gitlab-ui/yarn.lock
+        - .gitlab-ci.yml
+        - yarn.lock
       when: always
     - when: never
 
