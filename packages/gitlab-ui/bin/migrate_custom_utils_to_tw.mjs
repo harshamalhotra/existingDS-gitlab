@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable no-continue, no-nested-ternary, no-await-in-loop */
-import yargs from 'yargs';
-import { hideBin } from 'yargs/helpers';
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import readline from 'node:readline/promises';
+import { hideBin } from 'yargs/helpers';
+import yargs from 'yargs';
 import { format, resolveConfig } from 'prettier';
 import { sync as globbySync } from 'globby';
 import * as tailwindPlugin from 'prettier-plugin-tailwindcss';

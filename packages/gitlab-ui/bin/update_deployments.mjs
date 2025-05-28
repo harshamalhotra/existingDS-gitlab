@@ -33,7 +33,7 @@ async function getGitLabUIVersionFromYarnLock(project, ref = 'master') {
     `/projects/${project}/repository/files/yarn.lock/raw`,
     { params: { ref } }
   );
-  let json = lockfile.parse(file);
+  const json = lockfile.parse(file);
   if (json.type === 'success') {
     for (const [key, value] of Object.entries(json.object)) {
       if (key.startsWith('@gitlab/ui')) {

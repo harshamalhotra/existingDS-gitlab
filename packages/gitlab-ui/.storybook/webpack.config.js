@@ -3,8 +3,8 @@ require('./patched_crypto');
 const path = require('path');
 const webpack = require('webpack');
 const sass = require('sass');
-const { USE_VUE_3 } = require('../use_vue3');
 const { sync } = require('glob');
+const { USE_VUE_3 } = require('../use_vue3');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -98,7 +98,7 @@ module.exports = ({ config }) => {
         {
           loader: 'style-loader',
           options: {
-            insert: function (styles) {
+            insert (styles) {
               document.head.appendChild(styles);
             },
           },
