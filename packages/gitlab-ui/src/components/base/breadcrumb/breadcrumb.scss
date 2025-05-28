@@ -33,8 +33,9 @@ $breadcrumb-max-width: $grid-size * 16;
     text-decoration-thickness: auto;
     text-decoration-style: solid;
     text-decoration-color: transparent;
-    transition: box-shadow $gl-transition-duration-medium $gl-easing-out-cubic,
-                text-decoration-color $gl-transition-duration-medium $gl-easing-out-cubic;
+    transition:
+      box-shadow $gl-transition-duration-medium $gl-easing-out-cubic,
+      text-decoration-color $gl-transition-duration-medium $gl-easing-out-cubic;
     @include gl-prefers-reduced-motion-transition;
 
     &:hover {
@@ -66,4 +67,19 @@ $breadcrumb-max-width: $grid-size * 16;
 
 .gl-breadcrumb-item-md {
   @apply gl-text-base;
+
+  /**
+   * If the last/only item, which is always visible, has a very long title,
+   * it could overflow the breadcrumb component. This CSS makes sure it
+   * shows an ellipsis instead.
+   * But this CSS cannot be active while we do the size calculation, as that
+   * would then not take the real unshrunk width of that item into account.
+   */
+  &.gl-breadcrumb-only-item {
+    @apply gl-max-w-full gl-shrink;
+
+    a {
+      @apply gl-max-w-full gl-overflow-hidden gl-text-ellipsis gl-text-nowrap;
+    }
+  }
 }
