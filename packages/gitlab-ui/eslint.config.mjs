@@ -26,7 +26,6 @@ export default [
       '**/.cypress_cache',
       'src/vendor/',
       '.storybook/docs/',
-      'bin/**/*.mjs',
     ],
   },
   ...pluginStorybook.configs['flat/csf'],
@@ -175,6 +174,9 @@ export default [
     files: ['bin/**/*.{js,mjs}'],
     rules: {
       'no-console': 'off',
+      'import/no-unresolved': 'off',
+      'import/extensions': 'off',
+      'no-param-reassign': 'off',
     },
   },
 ];
