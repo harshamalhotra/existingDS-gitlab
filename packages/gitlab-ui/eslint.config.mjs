@@ -23,6 +23,7 @@ export default [
       'public/',
       '**/.cypress_cache',
       'src/vendor/',
+      '.storybook/docs/'
     ],
   },
   ...compat.extends('plugin:@gitlab/default', 'plugin:storybook/csf', 'plugin:@gitlab/jest'),
