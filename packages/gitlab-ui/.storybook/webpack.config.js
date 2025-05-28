@@ -100,7 +100,7 @@ module.exports = ({ config }) => {
         {
           loader: 'style-loader',
           options: {
-            insert (styles) {
+            insert(styles) {
               document.head.appendChild(styles);
             },
           },
