@@ -5,6 +5,7 @@ import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 // eslint-disable-next-line import/no-unresolved
 import pluginCypress from 'eslint-plugin-cypress/flat';
+import pluginStorybook from 'eslint-plugin-storybook';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -28,7 +29,8 @@ export default [
       'bin/**/*.mjs',
     ],
   },
-  ...compat.extends('plugin:@gitlab/default', 'plugin:storybook/csf', 'plugin:@gitlab/jest'),
+  ...pluginStorybook.configs['flat/csf'],
+  ...compat.extends('plugin:@gitlab/default', 'plugin:@gitlab/jest'),
   {
     rules: {
       'import/no-extraneous-dependencies': 'off',
