@@ -3,6 +3,8 @@ stages:
   - test
   - build
   - deploy
+  # The publish stage must always be the last stage containing non-manual jobs.
+  # See the publish_npm_packages job.
   - publish
   - manual
 
@@ -180,19 +182,13 @@ review-app:
 publish_npm_packages:
   extends:
     - .node-job
-  dependencies:
-    - ui:build_package
-    # We need to run `publish_npm_packages` after the pages deploy, so that
-    # pages will get deployed properly.
-    # The publish-to-npm step will create a new commit and this
-    # could lead to a side-effect where pages don't get published because of
-    # the new commit being made before `pages` had a chance to run
-    - production
+  # We need to run `publish` after pages, so that pages will get deployed
+  # properly, as the publish-to-npm step will create a new commit and this
+  # could lead to a side-effect where pages don't get published because of
+  # the commit being made before `pages` had a chance to run
   stage: publish
   resource_group: publish_npm_packages
   rules:
     - <<: *is-design-gitlab-com-default-branch
   script:
-    # Remove pages artifacts
-    - rm -rf public
     - ./scripts/publish_npm_packages.mjs
