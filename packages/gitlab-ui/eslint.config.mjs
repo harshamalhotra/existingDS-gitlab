@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
+// eslint-disable-next-line import/no-unresolved
 import pluginCypress from 'eslint-plugin-cypress/flat';
 
 const filename = fileURLToPath(import.meta.url);

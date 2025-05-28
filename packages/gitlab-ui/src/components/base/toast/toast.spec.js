@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { mount } from '@vue/test-utils';
 import { waitForAnimationFrame } from '../../../utils/test_utils';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import GlToast from './toast';
 
 Vue.use(GlToast);
