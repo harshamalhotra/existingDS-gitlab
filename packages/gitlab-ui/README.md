@@ -128,6 +128,8 @@ can be formatted for different uses. Read more on this in the [design tokens doc
 See [Updating GitLab UI Packages](doc/updating-gitlab-ui-packages.md) for information on how the
 `@gitlab/ui` package is kept up to date in various projects.
 
+To publish new versions of GitLab UI, see [publishing packages](../../doc/publishing-packages.md).
+
 ## Contributing guide
 
 Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to add new components and

@@ -90,6 +90,12 @@ If you change something in the code, you can run `yarn test` to see if your chan
 
 Each merge request for this repository will generate a [review app](https://docs.gitlab.com/ee/ci/review_apps/). Review apps create a new environment (dynamically) for each one of your branches. A Review App is then visible as a link when you visit the merge request relevant to the branch. That way, you are able to see live all changes introduced by the merge request changes.
 
+### Publishing packages
+
+To publish new versions of packages, like `@gitlab/ui`, we use
+[changesets](https://github.com/changesets/changesets). Learn how to [create
+changesets and publish packages](/doc/publishing-packages.md).
+
 ## Contributing
 
 GitLab is an open source project and we are very happy to accept community
