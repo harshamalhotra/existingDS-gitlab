@@ -82,9 +82,7 @@ export default [
   {
     files: ['**/*.spec.js', 'tests/jest_setup.js', 'tests/__helpers__/*.js'],
 
-    ...jestConfig[0],
-    ...jestConfig[1],
-    ...jestConfig[2],
+    ...jestConfig.reduce((acc, config) => ({ ...acc, ...config }), {}),
 
     settings: {
       'import/resolver': {
