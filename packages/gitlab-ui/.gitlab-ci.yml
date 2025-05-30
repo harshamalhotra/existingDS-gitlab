@@ -398,6 +398,7 @@ ui:update_screenshots:
     - job: ui:screenshot_collector
   stage: manual
   script:
+    - cd packages/gitlab-ui
     - ./bin/update-screenshots.sh
 
 ui:create_integration_branch:
