@@ -23010,6 +23010,112 @@
       }
     }
   },
+  "highlight": {
+    "match": {
+      "background": {
+        "color": {
+          "$value": "#e9be74",
+          "$type": "color",
+          "$description": "Used for temporary visual emphasis of backgrounds of matched search terms, filtered results, or autocomplete suggestions without implying any particular state or meaning.",
+          "filePath": "src/tokens/semantic/highlight.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": {
+              "default": "{color.orange.500}",
+              "dark": "{color.orange.200}"
+            },
+            "$type": "color",
+            "$description": "Used for temporary visual emphasis of backgrounds of matched search terms, filtered results, or autocomplete suggestions without implying any particular state or meaning."
+          },
+          "name": "HIGHLIGHT_MATCH_BACKGROUND_COLOR",
+          "attributes": {},
+          "path": [
+            "highlight",
+            "match",
+            "background",
+            "color"
+          ]
+        }
+      },
+      "text": {
+        "color": {
+          "$value": "#18171d",
+          "$type": "color",
+          "$description": "Used for text within temporarily highlighted matches to maintain readability while drawing attention without conveying status.",
+          "filePath": "src/tokens/semantic/highlight.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": {
+              "default": "{color.neutral.0}",
+              "dark": "{color.neutral.950}"
+            },
+            "$type": "color",
+            "$description": "Used for text within temporarily highlighted matches to maintain readability while drawing attention without conveying status."
+          },
+          "name": "HIGHLIGHT_MATCH_TEXT_COLOR",
+          "attributes": {},
+          "path": [
+            "highlight",
+            "match",
+            "text",
+            "color"
+          ]
+        }
+      }
+    },
+    "target": {
+      "background": {
+        "color": {
+          "$value": "#1d283e",
+          "$type": "color",
+          "$description": "Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action.",
+          "filePath": "src/tokens/semantic/highlight.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": {
+              "default": "{color.blue.50}",
+              "dark": "{color.blue.950}"
+            },
+            "$type": "color",
+            "$description": "Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action."
+          },
+          "name": "HIGHLIGHT_TARGET_BACKGROUND_COLOR",
+          "attributes": {},
+          "path": [
+            "highlight",
+            "target",
+            "background",
+            "color"
+          ]
+        }
+      },
+      "border": {
+        "color": {
+          "$value": "#2f5ca0",
+          "$type": "color",
+          "$description": "Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states.",
+          "filePath": "src/tokens/semantic/highlight.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": {
+              "default": "{color.blue.200}",
+              "dark": "{color.blue.700}"
+            },
+            "$type": "color",
+            "$description": "Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states."
+          },
+          "name": "HIGHLIGHT_TARGET_BORDER_COLOR",
+          "attributes": {},
+          "path": [
+            "highlight",
+            "target",
+            "border",
+            "color"
+          ]
+        }
+      }
+    }
+  },
   "icon": {
     "color": {
       "default": {
