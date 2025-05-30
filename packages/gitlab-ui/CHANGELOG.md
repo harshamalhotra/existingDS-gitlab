@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.3.0
+
+### Minor Changes
+
+- 9cc0aa8: GlFilteredSearch: Add 'token-complete' and 'token-destroy' events.
+
 ## 114.2.0
 
 ### Minor Changes
