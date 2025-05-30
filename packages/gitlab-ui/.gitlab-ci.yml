@@ -229,7 +229,7 @@ ui:lint:
       || echo "No Vue component contains <style tags"
   artifacts:
     reports:
-      codequality: gl-code-quality-report-eslint.json
+      codequality: packages/gitlab-ui/gl-code-quality-report-eslint.json
 
 ui:stylelint:
   extends: [.ui:node, .ui:yarn_install]
