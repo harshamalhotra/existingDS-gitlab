@@ -1,5 +1,18 @@
 # @gitlab/ui
 
+## 114.2.0
+
+### Minor Changes
+
+- a4e4e22: GlTable: allow for using TH elements as row headers with TD-like styling.
+- a290099: DesignTokens: Add highlight design tokens
+
+  Introduce two types of highlights: "match" highlighting for search results
+  and autocomplete suggestions, and "target" highlighting for referenced
+  elements like URL anchors and emphasizing relationships.
+
+  Added in https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4480
+
 ## 114.1.2
 
 ### Patch Changes
