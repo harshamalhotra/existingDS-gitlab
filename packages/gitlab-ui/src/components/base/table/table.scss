@@ -10,37 +10,35 @@ table.gl-table {
       @apply gl-leading-normal;
       @apply gl-text-base;
       @apply gl-align-top;
-    }
-
-    th {
-      @apply gl-text-heading gl-font-bold;
-
-      .gl-table-th-sort-icon-wrapper {
-        @apply gl-ml-2;
-      }
-
-      &.gl-table-th-align-right > div {
-        @apply gl-flex-row-reverse;
-
-        .gl-table-th-sort-icon-wrapper {
-          @apply gl-ml-0 gl-mr-2;
-        }
-      }
-
-      [name='sort-icon'] {
-        user-select: none;
-        color: var(--gl-table-sorting-icon-color);
-      }
-    }
-
-    td {
       @apply gl-text-default;
+      @apply gl-font-normal;
     }
 
     &:focus-visible {
       @apply gl-focus;
       position: relative;
       z-index: 1;
+    }
+  }
+
+  thead tr th {
+    @apply gl-text-heading gl-font-bold;
+
+    .gl-table-th-sort-icon-wrapper {
+      @apply gl-ml-2;
+    }
+
+    &.gl-table-th-align-right > div {
+      @apply gl-flex-row-reverse;
+
+      .gl-table-th-sort-icon-wrapper {
+        @apply gl-ml-0 gl-mr-2;
+      }
+    }
+
+    [name='sort-icon'] {
+      user-select: none;
+      color: var(--gl-table-sorting-icon-color);
     }
   }
 
@@ -74,7 +72,8 @@ table.gl-table {
         @apply gl-block;
       }
 
-      > td[data-label] {
+      > td[data-label],
+      > th[data-label] {
         @apply gl-border-l-1 gl-border-r-1 gl-border-l-solid gl-border-r-solid;
 
         &::before {
