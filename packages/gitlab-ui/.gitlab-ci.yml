@@ -241,7 +241,7 @@ ui:stylelint:
     - yarn stylelint --custom-formatter=@studiometa/stylelint-formatter-gitlab
   artifacts:
     reports:
-      codequality: '$STYLELINT_CODE_QUALITY_REPORT'
+      codequality: 'packages/gitlab-ui/$STYLELINT_CODE_QUALITY_REPORT'
 
 ui:check_translations_dictionary:
   extends: [.ui:node, '.ui:yarn_install']
