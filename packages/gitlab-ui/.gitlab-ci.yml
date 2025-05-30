@@ -124,13 +124,13 @@ ui:build_package:
     - yarn build
     - npm pack
     - mv *.tgz $TAR_ARCHIVE_NAME
-    - DEPENDENCY_URL="$CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw/$TAR_ARCHIVE_NAME"
+    - DEPENDENCY_URL="$CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw/packages/gitlab-ui/$TAR_ARCHIVE_NAME"
     - echo "The package.json dependency URL is $DEPENDENCY_URL"
     - echo "DEPENDENCY_URL=$DEPENDENCY_URL" > build_package.env
   artifacts:
     when: always
     reports:
-      dotenv: build_package.env
+      dotenv: packages/gitlab-ui/build_package.env
     paths:
       - packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
       - packages/gitlab-ui/dist
@@ -408,6 +408,7 @@ ui:create_integration_branch:
   needs:
     - ui:build_package
   script:
+    - cd packages/gitlab-ui
     - bin/create_integration_branch.mjs
 
 ui:duo_job:
