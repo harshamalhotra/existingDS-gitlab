@@ -331,7 +331,11 @@ export default {
         return;
       }
 
-      this.tokens.splice(idx, 1);
+      const [destroyedToken] = this.tokens.splice(idx, 1);
+      /**
+       * Emitted when a token is destroyed, with the token as the payload.
+       */
+      this.$emit('token-destroy', destroyedToken);
 
       // First, attempt to honor the user's activation intent behind the
       // destruction of the token, if any. Otherwise, try to maintain the
@@ -371,6 +375,11 @@ export default {
     },
 
     completeToken() {
+      /**
+       * Emitted when a token is completed, with the token as the payload.
+       */
+      this.$emit('token-complete', this.activeToken);
+
       if (this.activeTokenIdx === this.lastTokenIdx - 1) {
         this.activeTokenIdx = this.lastTokenIdx;
       } else {

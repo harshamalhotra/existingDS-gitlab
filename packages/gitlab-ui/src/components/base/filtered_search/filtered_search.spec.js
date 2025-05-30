@@ -442,6 +442,36 @@ describe('Filtered search', () => {
       wrapper.findComponent(GlFilteredSearchTerm).vm.$emit('submit');
       expect(wrapper.emitted('submit')).toBeDefined();
     });
+
+    it('emits "token-complete" event when token is complete', async () => {
+      const token = { type: 'faketoken', value: '' };
+      createComponent({
+        value: ['one', token],
+      });
+
+      await nextTick();
+      wrapper.findComponent(FakeToken).vm.$emit('activate');
+      await nextTick();
+
+      expect(wrapper.emitted('token-complete')).toBeUndefined();
+      wrapper.findComponent(FakeToken).vm.$emit('complete');
+      expect(wrapper.emitted('token-complete')).toMatchObject([[token]]);
+    });
+
+    it('emits "token-destroy" event when token is destroyed', async () => {
+      const token = { type: 'faketoken', value: '' };
+      createComponent({
+        value: ['one', token],
+      });
+
+      await nextTick();
+      wrapper.findComponent(FakeToken).vm.$emit('activate');
+      await nextTick();
+
+      expect(wrapper.emitted('token-destroy')).toBeUndefined();
+      wrapper.findComponent(FakeToken).vm.$emit('destroy');
+      expect(wrapper.emitted('token-destroy')).toMatchObject([[token]]);
+    });
   });
 
   it('normalizes term tokens to strings on submit', () => {
