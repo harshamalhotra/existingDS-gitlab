@@ -1,3 +1,4 @@
+/* global jest, beforeEach, afterEach */
 /* eslint-disable class-methods-use-this, max-classes-per-file, camelcase */
 import isMatch from 'lodash/isMatch';
 

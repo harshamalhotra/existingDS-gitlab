@@ -15,8 +15,12 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
+const jestConfig = compat.extends('plugin:@gitlab/jest');
+const cypressConfig = pluginCypress.configs.recommended;
+cypressConfig.languageOptions.ecmaVersion = 'latest';
+
+/** @type { import("eslint").Linter.FlatConfig } */
 export default [
-  pluginCypress.configs.recommended,
   {
     ignores: [
       'node_modules/',
@@ -29,7 +33,7 @@ export default [
     ],
   },
   ...pluginStorybook.configs['flat/csf'],
-  ...compat.extends('plugin:@gitlab/default', 'plugin:@gitlab/jest'),
+  ...compat.extends('plugin:@gitlab/default'),
   {
     rules: {
       'import/no-extraneous-dependencies': 'off',
@@ -77,6 +81,10 @@ export default [
   },
   {
     files: ['**/*.spec.js', 'tests/jest_setup.js', 'tests/__helpers__/*.js'],
+
+    ...jestConfig[0],
+    ...jestConfig[1],
+    ...jestConfig[2],
 
     settings: {
       'import/resolver': {
@@ -160,15 +168,7 @@ export default [
   },
   {
     files: ['cypress/**/*.js'],
-    plugins: {
-      cypress: pluginCypress,
-    },
-    rules: {
-      'jest/expect-expect': 'off',
-      'jest/no-identical-title': 'off',
-      'jest/valid-describe-callback': 'off',
-      'jest/valid-expect': 'off',
-    },
+    ...cypressConfig,
   },
   {
     files: ['bin/**/*.{js,mjs}'],
