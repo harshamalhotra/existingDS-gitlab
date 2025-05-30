@@ -20,11 +20,11 @@
 /packages/gitlab-ui/src/tokens
 
 [UX maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly @danmh @aregnery
-/contents/ 
+/contents/
 /pages/
 
 ^[UX trainee maintainers]
-/contents/ 
+/contents/
 /pages/
 
 ^[UX reviewers] @gitlab-com/gitlab-ux/designers
