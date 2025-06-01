@@ -51,7 +51,7 @@ $gl-drawer-scrim-gradient: linear-gradient(
   .gl-drawer-body > * {
     @apply gl-border-b;
     @apply gl-mx-5;
-  
+
     &:last-child {
       @apply gl-border-none;
     }
@@ -112,6 +112,7 @@ $gl-drawer-scrim-gradient: linear-gradient(
 
 .gl-drawer-body {
   @apply gl-grow;
+  min-height: 0;
   // prevent safari bug where box shadow is visible
   // above the drawer when hovering interactive elements
   // see https://gitlab.com/gitlab-org/gitlab/-/issues/366558
