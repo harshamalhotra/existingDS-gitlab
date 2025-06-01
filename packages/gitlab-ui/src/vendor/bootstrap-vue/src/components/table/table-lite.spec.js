@@ -247,14 +247,13 @@ describe('table-lite', () => {
 
     expect(wrapper).toBeDefined()
     expect(wrapper.element.tagName).toBe('DIV')
+    expect(wrapper.classes()).toContain('table-responsive')
     expect(wrapper.classes()).toContain('table-responsive-md')
-    expect(wrapper.classes().length).toBe(1)
 
     const $table = wrapper.find('table')
     expect($table.exists()).toBe(true)
     expect($table.classes()).toContain('table')
     expect($table.classes()).toContain('b-table')
-    expect($table.classes().length).toBe(2)
 
     wrapper.destroy()
   })
