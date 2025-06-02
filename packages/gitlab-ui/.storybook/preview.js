@@ -1,8 +1,7 @@
-import Vue from 'vue';
-import { h } from '@vue/compat';
 import { useArgs } from '@storybook/preview-api';
 
-import 'iframe-resizer/js/iframeResizer.contentWindow.min.js';
+import 'iframe-resizer/js/iframeResizer.contentWindow.min';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import setConfigs from '../src/config';
 import logoWithBlackText from '../static/img/_logo_with_black_text.svg';
 import logoWithWhiteText from '../static/img/_logo_with_white_text.svg';
@@ -10,17 +9,19 @@ import logoWithWhiteText from '../static/img/_logo_with_white_text.svg';
 import '../src/scss/bootstrap.scss';
 import '../src/scss/storybook.scss';
 
-let decorators = [
+const decorators = [
   (story, context) => {
-    const [_, updateArgs] = useArgs();
+    const [, updateArgs] = useArgs();
     return story({ ...context, updateArgs });
   },
   () => ({
     template: '<story />',
     mounted() {
-      this.$nextTick().then(() => {
-        this.$el.parentElement.classList.add('vue-component-mounted');
-      });
+      this.$nextTick()
+        .then(() => {
+          return this.$el.parentElement.classList.add('vue-component-mounted');
+        })
+        .catch(() => {});
     },
   }),
 ];
@@ -90,6 +91,7 @@ const parameters = {
 if (process.env.IS_VISUAL_TEST) {
   parameters.layout = 'fullscreen';
 } else {
+  // eslint-disable-next-line global-require
   const { page } = require('./docs/page');
   parameters.docs = { page };
 }

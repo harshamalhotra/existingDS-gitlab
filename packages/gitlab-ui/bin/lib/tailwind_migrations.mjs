@@ -12,9 +12,8 @@ function tailwindClassToImportant(klass) {
   }
   if (klass.includes('!gl-')) {
     return klass;
-  } else {
-    return klass.replace(/(^|:)(-?gl-)/, '$1!$2');
   }
+  return klass.replace(/(^|:)(-?gl-)/, '$1!$2');
 }
 
 function filterOutNonStringValues(rawMigrations) {
@@ -26,7 +25,7 @@ function addImportantVariants(rawMigrations) {
     acc.set(from, to);
     // Handle classes which are replaced with multiple classes in HAML
     if (to.includes(' ')) {
-      acc.set('\\.' + from, '.' + to.replace(/ /g, '.'));
+      acc.set(`\\.${from}`, `.${to.replace(/ /g, '.')}`);
     }
 
     const importantFrom = legacyClassToImportant(from);
@@ -35,7 +34,7 @@ function addImportantVariants(rawMigrations) {
       const importantTo = tailwindClassToImportant(to);
       acc.set(importantFrom, importantTo);
       if (to.includes(' ')) {
-        acc.set('\\.' + importantFrom, '.' + importantTo.replace(/ /g, '.'));
+        acc.set(`\\.${importantFrom}`, `.${importantTo.replace(/ /g, '.')}`);
       }
     }
 

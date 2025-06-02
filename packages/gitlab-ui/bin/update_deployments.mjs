@@ -17,6 +17,7 @@ async function ensureEnvironment(project, options) {
     for (const key in rest) {
       if (currentEnv[key] !== rest[key]) {
         console.warn(`Environment ${name} (${currentEnv.id}) needs an update:`);
+        // eslint-disable-next-line no-await-in-loop
         const { data } = await gitlabAPI.put(`${envBase}/${currentEnv.id}`, rest);
         return data;
       }
@@ -33,7 +34,7 @@ async function getGitLabUIVersionFromYarnLock(project, ref = 'master') {
     `/projects/${project}/repository/files/yarn.lock/raw`,
     { params: { ref } }
   );
-  let json = lockfile.parse(file);
+  const json = lockfile.parse(file);
   if (json.type === 'success') {
     for (const [key, value] of Object.entries(json.object)) {
       if (key.startsWith('@gitlab/ui')) {
@@ -64,7 +65,7 @@ async function createDeploymentIfNecessary(envName, version) {
     return;
   }
 
-  const deployment = await gitlabAPI.post(`/projects/${gitlabUIProject}/deployments`, {
+  await gitlabAPI.post(`/projects/${gitlabUIProject}/deployments`, {
     environment: envName,
     sha,
     ref: 'main',

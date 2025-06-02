@@ -3,8 +3,8 @@ require('./patched_crypto');
 const path = require('path');
 const webpack = require('webpack');
 const sass = require('sass');
-const { USE_VUE_3 } = require('../use_vue3');
 const { sync } = require('glob');
+const { USE_VUE_3 } = require('../use_vue3');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -49,6 +49,7 @@ function mapStoriesToSourceFile() {
         (f) => f.endsWith(`${base}.vue`) || f.endsWith(`${base}.js`) || f.endsWith(`${base}.json`)
       );
       if (!match && !process.env.CI) {
+        // eslint-disable-next-line no-console
         console.warn(`Did not find source for ${file}`);
       } else {
         storyToSource[file] = match;
@@ -60,6 +61,7 @@ function mapStoriesToSourceFile() {
 }
 
 module.exports = ({ config }) => {
+  // eslint-disable-next-line no-param-reassign
   config.module.rules = [
     {
       test: /\.vue$/,
@@ -98,7 +100,7 @@ module.exports = ({ config }) => {
         {
           loader: 'style-loader',
           options: {
-            insert: function (styles) {
+            insert: function insert(styles) {
               document.head.appendChild(styles);
             },
           },
@@ -139,13 +141,16 @@ module.exports = ({ config }) => {
     })
   );
 
+  // eslint-disable-next-line no-param-reassign
   config.resolve.extensions = ['.css', ...config.resolve.extensions];
 
+  // eslint-disable-next-line no-param-reassign
   config.resolve.alias['@gitlab/ui'] = path.join(__dirname, 'src', 'index.js');
 
   // disable HMR in test environment because this breaks playwright's networkidle setting
   // which is needed for visual regression tests to function
   if (process.env.NODE_ENV === 'test') {
+    // eslint-disable-next-line no-param-reassign
     config.entry = config.entry.filter(
       (singleEntry) => !singleEntry.includes('/webpack-hot-middleware/')
     );
@@ -153,9 +158,11 @@ module.exports = ({ config }) => {
 
   // Filter out the progress plugin on CI, as it is very verbose
   if (process.env.CI) {
+    // eslint-disable-next-line no-console
     console.log(
       'Webpack compilation will start soon - ProgressPlugin disabled on CI due to too much output'
     );
+    // eslint-disable-next-line no-param-reassign
     config.plugins = config.plugins.filter(
       (plugin) => plugin.constructor.name !== 'ProgressPlugin'
     );

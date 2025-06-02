@@ -1,4 +1,5 @@
 import Vue from 'vue';
+// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import translationKeys from '../translations';
 import { BVConfigPlugin } from './vendor/bootstrap-vue/src/bv-config';
 import { tooltipDelay } from './utils/constants';
