@@ -1,7 +1,5 @@
-/* eslint-disable import/extensions */
 import { parseMigrations, runMigrations, runSCSSMigrations } from './tailwind_migrations.mjs';
 import { tailwindEquivalents } from './tailwind_equivalents.mjs';
-/* eslint-enable  import/extensions */
 
 describe('runMigrations', () => {
   let migrationsToDo;

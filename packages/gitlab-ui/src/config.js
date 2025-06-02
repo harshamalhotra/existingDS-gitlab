@@ -1,5 +1,4 @@
 import Vue from 'vue';
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import translationKeys from '../translations';
 import { BVConfigPlugin } from './vendor/bootstrap-vue/src/bv-config';
 import { tooltipDelay } from './utils/constants';
@@ -30,7 +29,7 @@ try {
   if (glTooltipDelay) {
     tooltipGlobalConfig.delay = JSON.parse(glTooltipDelay);
   }
-} catch (e) {
+} catch {
   // localStorage doesn't exist (or the value is not properly formatted)
 }
 

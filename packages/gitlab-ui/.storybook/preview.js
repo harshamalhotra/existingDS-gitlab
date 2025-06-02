@@ -1,7 +1,6 @@
 import { useArgs } from '@storybook/preview-api';
 
 import 'iframe-resizer/js/iframeResizer.contentWindow.min';
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import setConfigs from '../src/config';
 import logoWithBlackText from '../static/img/_logo_with_black_text.svg';
 import logoWithWhiteText from '../static/img/_logo_with_white_text.svg';
@@ -96,4 +95,5 @@ if (process.env.IS_VISUAL_TEST) {
   parameters.docs = { page };
 }
 
+// eslint-disable-next-line import/no-default-export
 export default { decorators, parameters };

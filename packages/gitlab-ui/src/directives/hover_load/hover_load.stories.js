@@ -1,7 +1,6 @@
 import { HoverLoadDirective } from './hover_load';
 import readme from './hover_load.md';
 
-// eslint-disable-next-line no-script-url
 const generateProps = ({ endpoint = 'some/endpoint' } = {}) => ({
   endpoint,
 });
@@ -28,7 +27,7 @@ export const Default = (_args, { argTypes }) => ({
     >
         Hover me to preload
     </a>
-    
+
     <span>(Preloaded: {{isPreloaded}})</span>
     </div>
     `,

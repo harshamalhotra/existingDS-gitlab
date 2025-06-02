@@ -1,5 +1,5 @@
 /* global jest, beforeEach, afterEach */
-/* eslint-disable class-methods-use-this, max-classes-per-file, camelcase */
+/* eslint-disable class-methods-use-this, max-classes-per-file */
 import isMatch from 'lodash/isMatch';
 
 /**
@@ -27,7 +27,6 @@ class MockObserver {
 
   takeRecords() {}
 
-  // eslint-disable-next-line camelcase
   $_triggerObserve(nodeParam, { entry = {}, options = {} } = {}) {
     const nodes = this.$_getNodesFromParam(nodeParam);
 
@@ -38,7 +37,6 @@ class MockObserver {
     });
   }
 
-  // eslint-disable-next-line camelcase
   $_hasObserver(node, options = {}) {
     return this.$_observers.some(
       ([obvNode, obvOptions]) => node === obvNode && isMatch(options, obvOptions)

@@ -29,7 +29,7 @@ const isSafeURL = (url) => {
   try {
     const parsedURL = new URL(url, getBaseURL());
     return ['http:', 'https:', 'mailto:', 'ftp:'].includes(parsedURL.protocol);
-  } catch (e) {
+  } catch {
     return false;
   }
 };

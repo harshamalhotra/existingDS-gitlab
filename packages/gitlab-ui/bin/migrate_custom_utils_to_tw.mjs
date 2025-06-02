@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable no-continue, no-nested-ternary, no-await-in-loop */
+/* eslint-disable no-nested-ternary, no-await-in-loop */
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import readline from 'node:readline/promises';
