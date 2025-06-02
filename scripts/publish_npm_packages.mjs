@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import defaultChangelogFunctions from '@changesets/changelog-git';
 import {
   ROOT,
   printDiagnostics,
@@ -11,7 +12,10 @@ import {
 const CHANGESET_DIR = join(ROOT, '.changeset');
 
 // Changesets fails if this is an absolute path.
-const CHANGESET_STATUS_FILE = relative(process.cwd(), join(CHANGESET_DIR, 'status.json'));
+const CHANGESET_RELEASE_PLAN_FILE = relative(
+  process.cwd(),
+  join(CHANGESET_DIR, 'release_plan.json'),
+);
 
 function isEnvironmentOkay() {
   const { env } = process;
@@ -59,7 +63,7 @@ function ensureDefaultBranch() {
   run('git', ['checkout', process.env.CI_DEFAULT_BRANCH]);
 }
 
-function getReleases() {
+function getReleasePlan() {
   const changesetFiles = readdirSync(CHANGESET_DIR).filter(
     (name) => name.endsWith('.md') && name !== 'README.md',
   );
@@ -68,17 +72,76 @@ function getReleases() {
     console.log(`Found changeset files:\n${changesetFiles.join('\n')}`);
   } else {
     console.log('No changesets found.');
-    return [];
+    return null;
   }
 
   // We know there are changeset files, so we expect this command to succeed.
-  runChangesetWithWorkspacesHackForYarnV1(['status', `--output=${CHANGESET_STATUS_FILE}`]);
+  runChangesetWithWorkspacesHackForYarnV1(['status', `--output=${CHANGESET_RELEASE_PLAN_FILE}`]);
 
-  const status = JSON.parse(readFileSync(CHANGESET_STATUS_FILE, 'utf8'));
+  const releasePlan = JSON.parse(readFileSync(CHANGESET_RELEASE_PLAN_FILE, 'utf8'));
 
-  console.log('Changeset status:', status);
+  console.log('Changesets release plan:', releasePlan);
 
-  return status.releases;
+  return releasePlan;
+}
+
+function releaseSection(type, lines) {
+  const typeCapitalized = `${type.charAt(0).toUpperCase()}${type.slice(1)}`;
+
+  return `### ${typeCapitalized} changes\n\n${lines.join('\n')}`;
+}
+
+async function createRelease({ tag, description }) {
+  const { env } = process;
+  const url = `${env.CI_API_V4_URL}/projects/${env.CI_PROJECT_ID}/releases`;
+
+  console.log(`Creating release via ${url}...`);
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'private-token': env.GITLAB_TOKEN },
+    body: JSON.stringify({ tag_name: tag, description }),
+  });
+
+  if (!response.ok) {
+    const responseBody = JSON.stringify(await response.json(), null, 2);
+
+    throw new Error(
+      `Failed to create release for tag ${tag}: ${response.status}: ${response.statusText}, body: ${responseBody}`,
+    );
+  }
+
+  console.log(`Successfully created release at ${url}/${encodeURIComponent(tag)}`);
+}
+
+async function createReleases({ changesets, releases }) {
+  for (const release of releases) {
+    const releaseDescriptionObject = {
+      major: [],
+      minor: [],
+      patch: [],
+    };
+
+    for (const changeset of changesets) {
+      const { type } =
+        changeset.releases.find((rel) => rel.name === release.name && rel.type !== 'none') ?? {};
+
+      if (type) {
+        releaseDescriptionObject[type].push(
+          // eslint-disable-next-line no-await-in-loop
+          await defaultChangelogFunctions.getReleaseLine(changeset, type),
+        );
+      }
+    }
+
+    const description = Object.entries(releaseDescriptionObject)
+      .filter(([, lines]) => lines.length > 0)
+      .map(([type, lines]) => releaseSection(type, lines))
+      .join('\n\n');
+
+    // eslint-disable-next-line no-await-in-loop
+    await createRelease({ tag: `${release.name}@${release.newVersion}`, description });
+  }
 }
 
 function gitCommit({ message = 'Update packages for release [skip ci]' } = {}) {
@@ -111,7 +174,7 @@ function publish() {
   runChangesetWithWorkspacesHackForYarnV1(['publish']);
 }
 
-function main() {
+async function main() {
   if (!isEnvironmentOkay()) {
     process.exitCode = 1;
     return;
@@ -119,7 +182,8 @@ function main() {
 
   ensureDefaultBranch();
 
-  if (getReleases().length === 0) {
+  const releasePlan = getReleasePlan();
+  if (!releasePlan || releasePlan.releases.length === 0) {
     console.log('Nothing to publish.');
     return;
   }
@@ -132,10 +196,12 @@ function main() {
   publish();
 
   gitPush();
+
+  await createReleases(releasePlan);
 }
 
 try {
-  main();
+  await main();
 } catch (error) {
   process.exitCode = 1;
   printDiagnostics();

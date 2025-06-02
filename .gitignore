@@ -92,5 +92,5 @@ public/
 # GitLab specific
 content_tree.json
 
-# Ignore status JSON for CI releases
-.changeset/status.json
+# Ignore changesets release plan JSON for CI releases
+.changeset/release_plan.json

@@ -192,3 +192,7 @@ publish_npm_packages:
     - <<: *is-design-gitlab-com-default-branch
   script:
     - ./scripts/publish_npm_packages.mjs
+  artifacts:
+    paths:
+      # Expose release plan for debugging, or for retroactive release creation
+      - .changeset/release_plan.json
