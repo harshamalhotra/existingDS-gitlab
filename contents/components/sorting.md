@@ -13,7 +13,7 @@ related:
 
 <story-viewer component="base-sorting" title="Default" iframe-padding="0 0 100px 0"></story-viewer>
 
-<todo>Add to Pajamas UI kit.</todo>
+[View in Pajamas UI Kit →](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123918-16146)
 
 ## Structure
 

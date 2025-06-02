@@ -15,7 +15,7 @@ related:
 
 <story-viewer component="base-filtered-search" title="Filtered search" story="with-terms-as-tokens"></story-viewer>
 
-<todo>Add Filter to Pajamas UI Kit.</todo>
+[View in Pajamas UI Kit →](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1485-14186)
 
 ## Structure
 
