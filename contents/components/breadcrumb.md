@@ -39,8 +39,6 @@ related:
 - An avatar can appear to the left of the text for any group or project in the breadcrumb.
 - A bottom border may be applied to a parent container to visually distinguish the breadcrumb from the content of the page.
 
-<todo>Update border related appearance notes as a result of [!3262](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3263#note_1283440645).</todo>
-
 ### Behavior
 
 - The full breadcrumb path should remain visible when there's enough horizontal space to fit on one line.
