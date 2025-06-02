@@ -26,6 +26,16 @@ Ensure you have [Node](https://nodejs.org/en/) 12.x and [Yarn](https://yarnpkg.c
 
 Alternatively, you can also [open this repository in Gitpod](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/) to make and preview changes directly in your browser.
 
+#### Start docs with local GitLab UI
+
+To develop with local GitLab UI components and see live component stories, use `yarn start:full`. This command:
+
+- Starts the documentation site on `http://localhost:2018`.
+- Starts GitLab UI's Storybook on `http://localhost:9001`.
+- Automatically links the documentation site to use your local Storybook instance.
+
+This is useful when you're making changes to GitLab UI components and want to see how they appear in both Storybook and the documentation.
+
 ### Writing component documentation
 
 When starting from scratch:
