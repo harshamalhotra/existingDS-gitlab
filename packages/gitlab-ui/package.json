@@ -158,7 +158,7 @@
     "entities": "^4.5.0",
     "esbuild": "^0.18.0",
     "eslint": "9.28.0",
-    "eslint-formatter-gitlab": "^5.1.0",
+    "eslint-formatter-gitlab": "^6.0.0",
     "eslint-import-resolver-jest": "3.0.2",
     "eslint-plugin-cypress": "5.0.1",
     "eslint-plugin-storybook": "0.12.0",
