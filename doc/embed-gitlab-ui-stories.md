@@ -34,7 +34,7 @@ The component ID is whatever is after `/story/` or `/docs/` and before the `--` 
 parameter. The story ID is what after the `--`. Consider the following URL for example:
 
 ```plaintext
-https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/base-alert--default
+https://design.gitlab.com/storybook?path=/story/base-alert--default
 ```
 
 The component ID is `base-alert` and the story ID is `default`.
@@ -76,7 +76,7 @@ components:
 
 ## Embed from another GitLab UI instance
 
-By default, Pajamas attempts to import stories from GitLab UI's [hosted Storybook](https://gitlab-org.gitlab.io/gitlab-ui/).
+By default, Pajamas attempts to import stories from GitLab UI's [hosted Storybook](https://design.gitlab.com/storybook).
 This means that the stories you are embedding need to have been merged in GitLab UI's `main` branch
 and deployed to the live app. If you'd like to import stories from some other GitLab UI instance,
 provide the `GITLAB_UI_URL` variable when running Pajamas. This can be useful if you are building

@@ -73,7 +73,7 @@ Also, make sure to mention (if relevant):
 - Edge cases.
 - Deprecation warnings.
 
-Example of well-written documentation: [base alert default component](https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/base-alert--default).
+Example of well-written documentation: [base alert default component](https://design.gitlab.com/storybook?path=/story/base-alert--default).
 
 ## Markdownlint
 

@@ -62,6 +62,6 @@ To create a new skeleton loader:
 
 ## Reference
 
-- The [Skeleton Loading](https://gitlab-org.gitlab.io/gitlab-ui/?path=/story/base-skeleton-loading--default) component has been deprecated in favor of the Skeleton Loader.
+- The [Skeleton Loading](https://design.gitlab.com/storybook?path=/story/base-skeleton-loading--default) component has been deprecated in favor of the Skeleton Loader.
 - [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a), by Bill Chung.
 - [More Accessibile Skeletons](https://adrianroselli.com/2020/11/more-accessible-skeletons.html), by Adrian Roselli.

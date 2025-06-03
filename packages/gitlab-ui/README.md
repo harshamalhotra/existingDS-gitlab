@@ -6,7 +6,7 @@ design system. GitLab UI is written in [Vue.js](https://vuejs.org) and its objec
 - Create reusable UI components to accelerate frontend development.
 - Create UI consistency for all components within GitLab.
 
-See <https://gitlab-org.gitlab.io/gitlab-ui/> for documentation.
+See <https://design.gitlab.com/storybook> for documentation.
 
 ## Usage
 
@@ -53,7 +53,7 @@ or newer.
 
 ```sh
 # Clone the project
-git clone git@gitlab.com:gitlab-org/gitlab-ui.git
+git clone git@gitlab.com:gitlab-org/gitlab-services/design.gitlab.com.git
 
 # Navigate to the root of the project
 cd gitlab-ui
