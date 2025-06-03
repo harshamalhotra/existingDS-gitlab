@@ -59,7 +59,6 @@ const buildTranslationsObject = (files) => {
         const translationKey = node.arguments[0].value;
         const translationValue = getDefaultValueAsJavaScript(node);
         findings.push(`'${translationKey}': ${translationValue},`);
-        // eslint-disable-next-line no-console
         console.warn(
           `Found translation key '${translationKey}' in ${path.relative(process.cwd(), file)}`
         );

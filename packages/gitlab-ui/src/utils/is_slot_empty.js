@@ -30,6 +30,5 @@ export function isVnodeEmpty(vnode) {
 export function isSlotEmpty(vueInstance, slot, slotArgs) {
   const slotContent = vueInstance.$scopedSlots[slot]?.(slotArgs);
 
-  // eslint-disable-next-line unicorn/no-array-callback-reference
   return isVnodeEmpty(slotContent);
 }

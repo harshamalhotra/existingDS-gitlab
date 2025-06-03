@@ -211,7 +211,6 @@ const LabelToken = {
     },
     containerStyle() {
       if (this.activeLabel) {
-        // eslint-disable-next-line camelcase
         const { color, text_color } = this.activeLabel;
 
         // eslint-disable-next-line camelcase

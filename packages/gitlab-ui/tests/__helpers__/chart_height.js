@@ -1,4 +1,3 @@
-/* eslint-disable jest/no-export */
 import { HEIGHT_AUTO_CLASSES } from '~/utils/charts/constants';
 
 /**

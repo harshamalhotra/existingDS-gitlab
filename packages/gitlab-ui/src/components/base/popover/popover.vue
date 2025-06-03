@@ -1,7 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import { BPopover } from '../../../vendor/bootstrap-vue/src/components/popover/popover';
-// eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import tooltipMixin from '../../mixins/tooltip_mixin';
 import CloseButton from '../../shared_components/close_button/close_button.vue';
 import { popoverPlacements } from '../../../utils/constants';

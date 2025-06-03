@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
-
 import fs from 'node:fs';
 import path from 'node:path';
 import { tmpdir } from 'node:os';

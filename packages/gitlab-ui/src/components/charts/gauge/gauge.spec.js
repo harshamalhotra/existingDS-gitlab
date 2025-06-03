@@ -239,7 +239,6 @@ describe('gauge component', () => {
         createComponent({ thresholds: ['not a number', NaN, undefined] });
 
         await wrapper.vm.$nextTick();
-        // eslint-disable-next-line jest/no-standalone-expect
         expect(wrapper).toHaveLoggedVueWarnings();
       });
 

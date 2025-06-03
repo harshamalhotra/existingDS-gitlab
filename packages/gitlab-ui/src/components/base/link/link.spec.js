@@ -520,7 +520,6 @@ describe('link component', () => {
           stubs: { RouterLink: RouterLinkStub },
         });
 
-        // eslint-disable-next-line jest/no-standalone-expect
         expect(wrapper.find('a').classes()).toEqual(
           expect.arrayContaining(['active', 'exact-active'])
         );

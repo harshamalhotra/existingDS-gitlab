@@ -3,8 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
-// eslint-disable-next-line import/no-unresolved
-import pluginCypress from 'eslint-plugin-cypress/flat';
+import pluginCypress from 'eslint-plugin-cypress';
 import pluginStorybook from 'eslint-plugin-storybook';
 
 const filename = fileURLToPath(import.meta.url);
@@ -19,7 +18,8 @@ const jestConfig = compat.extends('plugin:@gitlab/jest');
 const cypressConfig = pluginCypress.configs.recommended;
 cypressConfig.languageOptions.ecmaVersion = 'latest';
 
-/** @type { import("eslint").Linter.FlatConfig } */
+/** @type { import("eslint").Linter.Config } */
+// eslint-disable-next-line import/no-default-export
 export default [
   {
     ignores: [

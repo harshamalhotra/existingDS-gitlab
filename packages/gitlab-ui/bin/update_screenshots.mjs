@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console, no-await-in-loop */
+/* eslint-disable no-await-in-loop */
 
 // Note: This script has no dependencies except node built-ins.
 // If we can, we should keep it so, then we don't need to yarn install
