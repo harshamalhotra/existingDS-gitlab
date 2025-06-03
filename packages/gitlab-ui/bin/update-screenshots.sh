@@ -20,6 +20,10 @@ git commit -m 'Update test snapshots'
 #
 echo "Pushing to branch ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME} on ${CI_MERGE_REQUEST_SOURCE_PROJECT_PATH}"
 
+# The GITLAB_TOKEN_MR token should:
+# - have limited scope (`write_repository` only)
+# - *not* be "protected" (https://docs.gitlab.com/ci/variables/#protect-a-cicd-variable)
+# as it is needs to be available in merge request pipelines.
 git push \
-  "https://gitlab-bot:${GITLAB_TOKEN}@gitlab.com/${CI_MERGE_REQUEST_SOURCE_PROJECT_PATH}.git" \
+  "https://gitlab-bot:${GITLAB_TOKEN_MR}@gitlab.com/${CI_MERGE_REQUEST_SOURCE_PROJECT_PATH}.git" \
   "HEAD:${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}" >/dev/null 2>&1
