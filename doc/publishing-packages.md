@@ -10,7 +10,7 @@
 
 ## Process
 
-If your changes warrant a new release of a package, you need to add a changeset file. A changeset file is markdown describing your changes, with frontmatter that indicates which,package should be released, the type of version bump to use. The description will be added to the changelog during the release process.
+If your changes warrant a new release of a package, you need to add a changeset file. A changeset file is markdown describing your changes, with frontmatter that indicates the type of version bumps to use on which packages. The description will be added to the changelog during the release process.
 
 ### 1. Make your changes
 
