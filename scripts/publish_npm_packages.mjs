@@ -2,6 +2,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import defaultChangelogFunctions from '@changesets/changelog-git';
+import chalk from 'chalk';
 import {
   ROOT,
   printDiagnostics,
@@ -26,22 +27,32 @@ function isEnvironmentOkay() {
     messages.push('This script should only be run in CI.');
   }
 
-  if (!env.CI_COMMIT_BRANCH) {
-    messages.push('This script should only run in branch pipelines.');
-  }
+  if (env.DRY_RUN) {
+    if (!env.CI_MERGE_REQUEST_IID) {
+      messages.push('This script should only run in merge request pipelines.');
+    }
 
-  if (env.CI_COMMIT_BRANCH !== env.CI_DEFAULT_BRANCH) {
-    messages.push(
-      `This script should only run on pipelines for the default branch: CI_COMMIT_BRANCH=${env.CI_COMMIT_BRANCH}, CI_DEFAULT_BRANCH=${env.CI_DEFAULT_BRANCH}`,
-    );
-  }
+    if (!env.GITLAB_TOKEN_MR) {
+      messages.push('GITLAB_TOKEN_MR is not defined.');
+    }
+  } else {
+    if (!env.CI_COMMIT_BRANCH) {
+      messages.push('This script should only run in branch pipelines.');
+    }
 
-  if (!env.GITLAB_TOKEN) {
-    messages.push('GITLAB_TOKEN is not defined.');
-  }
+    if (env.CI_COMMIT_BRANCH !== env.CI_DEFAULT_BRANCH) {
+      messages.push(
+        `This script should only run on pipelines for the default branch: CI_COMMIT_BRANCH=${env.CI_COMMIT_BRANCH}, CI_DEFAULT_BRANCH=${env.CI_DEFAULT_BRANCH}`,
+      );
+    }
 
-  if (!env.NPM_TOKEN) {
-    messages.push('NPM_TOKEN is not defined.');
+    if (!env.GITLAB_TOKEN) {
+      messages.push('GITLAB_TOKEN is not defined.');
+    }
+
+    if (!env.NPM_TOKEN) {
+      messages.push('NPM_TOKEN is not defined.');
+    }
   }
 
   messages.forEach((message) => {
@@ -52,16 +63,30 @@ function isEnvironmentOkay() {
 }
 
 function gitUrl() {
-  return `https://gitlab-bot:${env.GITLAB_TOKEN}@gitlab.com/${env.CI_PROJECT_PATH}.git`;
+  const token = env.GITLAB_TOKEN || env.GITLAB_TOKEN_MR;
+  return `https://gitlab-bot:${token}@gitlab.com/${env.CI_PROJECT_PATH}.git`;
 }
 
 /**
- * Changesets needs git to be checked out on the default branch, not on a
- * detached commit sha.
+ * Changesets needs git to be checked out on the branch, not on a detached
+ * commit sha. In other words, HEAD must point to the branch name, not its
+ * commit sha.
+ *
+ * For dry runs, there also needs to exist a local branch for the default
+ * branch so that it can compare the source branch against it.
  */
-function ensureDefaultBranch() {
-  run('git', ['fetch', gitUrl(), env.CI_DEFAULT_BRANCH]);
-  run('git', ['checkout', env.CI_DEFAULT_BRANCH]);
+function ensureBranches() {
+  let branch = env.CI_DEFAULT_BRANCH;
+
+  if (env.DRY_RUN) {
+    // Ensure a local default branch exists and points to the remote default branch.
+    run('git', ['branch', env.CI_DEFAULT_BRANCH, `origin/${env.CI_DEFAULT_BRANCH}`]);
+    branch = env.CI_MERGE_REQUEST_SOURCE_BRANCH_NAME;
+  }
+
+  // Ensure HEAD points to the actual branch.
+  run('git', ['fetch', gitUrl(), branch]);
+  run('git', ['checkout', branch]);
 }
 
 function getReleasePlan() {
@@ -84,6 +109,18 @@ function getReleasePlan() {
   console.log('Changesets release plan:', releasePlan);
 
   return releasePlan;
+}
+
+/**
+ * Pretty-print the release plan JSON.
+ * @param {object} releasePlan The release plan.
+ */
+function printReleasePlan({ releases }) {
+  const releaseLines = releases.map(
+    ({ name, type, oldVersion, newVersion }) =>
+      `${chalk.bold(name)} ${chalk.yellow(oldVersion)} ⟶ ${chalk.green(newVersion)} (${type})`,
+  );
+  console.log(releaseLines.join('\n'));
 }
 
 function releaseSection(type, lines) {
@@ -180,7 +217,7 @@ async function main() {
     return;
   }
 
-  ensureDefaultBranch();
+  ensureBranches();
 
   const releasePlan = getReleasePlan();
   if (!releasePlan || releasePlan.releases.length === 0) {
@@ -190,6 +227,14 @@ async function main() {
 
   // Process changeset files and update package changelogs
   runChangesetWithWorkspacesHackForYarnV1(['version']);
+
+  if (env.DRY_RUN) {
+    console.log('Diff of changes that would be made if this were on the default branch:');
+    run('git', ['diff', '--color=always']);
+    console.log('The following packages would be released:');
+    printReleasePlan(releasePlan);
+    return;
+  }
 
   gitCommit();
 
