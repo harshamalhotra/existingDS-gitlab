@@ -93,8 +93,7 @@
 
 @if $bv-enable-table-sticky {
   .b-table-sticky-header,
-  .table-responsive,
-  [class*="table-responsive-"] {
+  .table-responsive {
     // Move the table bottom margin to the wrapper
     margin-bottom: $spacer;
 
@@ -137,8 +136,7 @@
     // Sticky columns only work when table has sticky
     // headers and/or is responsive
     .b-table-sticky-header,
-    .table-responsive,
-    [class*="table-responsive-"] {
+    .table-responsive {
       > .table.b-table {
         > thead,
         > tbody,

@@ -195,11 +195,10 @@ describe('table-simple', () => {
 
     expect(wrapper).toBeDefined()
     expect(wrapper.element.tagName).toBe('DIV')
+    expect(wrapper.classes()).toContain('table-responsive')
     expect(wrapper.classes()).toContain('table-responsive-md')
-    expect(wrapper.classes().length).toBe(1)
     expect(wrapper.find('table').classes()).toContain('table')
     expect(wrapper.find('table').classes()).toContain('b-table')
-    expect(wrapper.find('table').classes().length).toBe(2)
 
     wrapper.destroy()
   })

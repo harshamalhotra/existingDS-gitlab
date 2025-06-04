@@ -70,7 +70,7 @@ export const tableRendererMixin = extend({
         isResponsive === true
           ? 'table-responsive'
           : isResponsive
-            ? `table-responsive-${this.responsive}`
+            ? `table-responsive table-responsive-${this.responsive}`
             : ''
       ].filter(identity)
     },
