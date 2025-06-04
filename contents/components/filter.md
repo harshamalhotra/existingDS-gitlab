@@ -48,6 +48,7 @@ related:
 
 ### Behavior
 
+- The input field of the filter can be focused by using a [keyboard shortcut](https://docs.gitlab.com/user/shortcuts).
 - Clicking on any of the three parts of a query opens a corresponding dropdown for that part of the query. For example, if a user clicks on the value part of the query, the value dropdown appears.
 - If the operator is selected, the related dropdown appears and the value part of the query is removed if the operator is changed.
 - If the key is selected, the related dropdown appears and the operator and the value of the query are removed if the key is changed.
