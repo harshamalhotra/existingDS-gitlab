@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.5.0
+
+### Minor Changes
+
+- 1468779: GlDrawer: Allow content to shrink
+
 ## 114.4.0
 
 ### Minor Changes
