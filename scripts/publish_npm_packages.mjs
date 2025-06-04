@@ -9,6 +9,8 @@ import {
   runChangesetWithWorkspacesHackForYarnV1,
 } from './lib/shared.mjs';
 
+const { env } = process;
+
 const CHANGESET_DIR = join(ROOT, '.changeset');
 
 // Changesets fails if this is an absolute path.
@@ -18,7 +20,6 @@ const CHANGESET_RELEASE_PLAN_FILE = relative(
 );
 
 function isEnvironmentOkay() {
-  const { env } = process;
   const messages = [];
 
   if (!env.CI) {
@@ -51,7 +52,7 @@ function isEnvironmentOkay() {
 }
 
 function gitUrl() {
-  return `https://gitlab-bot:${process.env.GITLAB_TOKEN}@gitlab.com/${process.env.CI_PROJECT_PATH}.git`;
+  return `https://gitlab-bot:${env.GITLAB_TOKEN}@gitlab.com/${env.CI_PROJECT_PATH}.git`;
 }
 
 /**
@@ -59,8 +60,8 @@ function gitUrl() {
  * detached commit sha.
  */
 function ensureDefaultBranch() {
-  run('git', ['fetch', gitUrl(), process.env.CI_DEFAULT_BRANCH]);
-  run('git', ['checkout', process.env.CI_DEFAULT_BRANCH]);
+  run('git', ['fetch', gitUrl(), env.CI_DEFAULT_BRANCH]);
+  run('git', ['checkout', env.CI_DEFAULT_BRANCH]);
 }
 
 function getReleasePlan() {
@@ -92,7 +93,6 @@ function releaseSection(type, lines) {
 }
 
 async function createRelease({ tag, description }) {
-  const { env } = process;
   const url = `${env.CI_API_V4_URL}/projects/${env.CI_PROJECT_ID}/releases`;
 
   console.log(`Creating release via ${url}...`);
@@ -159,17 +159,17 @@ function gitCommit({ message = 'Update packages for release [skip ci]' } = {}) {
 }
 
 function gitPush() {
-  const refspec = `HEAD:${process.env.CI_COMMIT_BRANCH}`;
+  const refspec = `HEAD:${env.CI_COMMIT_BRANCH}`;
 
   run('git', ['push', '--follow-tags', gitUrl(), refspec]);
 }
 
 function publish() {
-  run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${process.env.NPM_TOKEN}`]);
+  run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${env.NPM_TOKEN}`]);
   run('npm', [
     'config',
     'set',
-    `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${process.env.GITLAB_TOKEN}`,
+    `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${env.GITLAB_TOKEN}`,
   ]);
   runChangesetWithWorkspacesHackForYarnV1(['publish']);
 }
