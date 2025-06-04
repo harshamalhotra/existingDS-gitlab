@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.4.0
+
+### Minor Changes
+
+- 050b00b: GlTable: Improve Bootstrap table selector performance
+
 ## 114.3.0
 
 ### Minor Changes
