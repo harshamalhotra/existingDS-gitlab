@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import defaultChangelogFunctions from '@changesets/changelog-git';
 import chalk from 'chalk';
@@ -97,6 +97,9 @@ function getReleasePlan() {
   if (changesetFiles.length > 0) {
     console.log(`Found changeset files:\n${changesetFiles.join('\n')}`);
   } else {
+    // Create an empty release plan file anyway, to avoid a spurious warning in
+    // job log about missing artifacts.
+    writeFileSync(CHANGESET_RELEASE_PLAN_FILE, '');
     console.log('No changesets found.');
     return null;
   }
