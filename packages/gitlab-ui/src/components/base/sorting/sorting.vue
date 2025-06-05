@@ -1,4 +1,5 @@
 <script>
+import uniqueId from 'lodash/uniqueId';
 import { GlTooltipDirective } from '../../../directives/tooltip/tooltip';
 import GlButton from '../button/button.vue';
 import GlButtonGroup from '../button_group/button_group.vue';
@@ -94,7 +95,15 @@ export default {
       default: false,
     },
   },
+  data() {
+    return {
+      sortingListboxId: uniqueId('sorting-listbox-'),
+    };
+  },
   computed: {
+    sortingListboxLabel() {
+      return translate('GlSorting.sortByLabel', 'Sort by:');
+    },
     localSortDirection() {
       return this.isAscending ? 'sort-lowest' : 'sort-highest';
     },
@@ -146,8 +155,10 @@ export default {
       :class="dropdownClass"
       placement="bottom-end"
       :block="block"
+      :toggle-aria-labelled-by="sortingListboxId"
       @select="onSortByChanged"
     />
+    <span :id="sortingListboxId" class="gl-sr-only">{{ sortingListboxLabel }}</span>
     <gl-button
       v-gl-tooltip
       :title="sortDirectionText"
