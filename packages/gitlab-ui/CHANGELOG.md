@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.6.0
+
+### Minor Changes
+
+- 8880253: GlSorting: Add visually hidden label to sort toggle
+
 ## 114.5.0
 
 ### Minor Changes
