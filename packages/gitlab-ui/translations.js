@@ -31,6 +31,7 @@ export default {
   'GlProgressBar.ariaLabel': 'Progress bar',
   'GlSearchBoxByType.clearButtonTitle': 'Clear',
   'GlSearchBoxByType.input.placeholder': 'Search',
+  'GlSorting.sortByLabel': 'Sort by:',
   'GlSorting.sortAscending': 'Sort direction: ascending',
   'GlSorting.sortDescending': 'Sort direction: descending',
   'GlToken.closeButtonTitle': 'Remove',
