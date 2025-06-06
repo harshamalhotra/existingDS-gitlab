@@ -1,6 +1,6 @@
 # Pajamas Design System
 
-[GitLab's design system](https://design.gitlab.com/) is our single source of truth (SSOT) for resources, components, and design guidelines. Pajamas pulls in components from [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui), which are in turn used within the product. Our [Figma UI kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) is used as a reference for building SSOT components, but is not the SSOT itself.
+[GitLab's design system](https://design.gitlab.com/) is our single source of truth (SSOT) for resources, components, and design guidelines. Pajamas pulls in components from [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui), which are in turn used within the product. Our [Figma UI kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) is used as a reference for building SSOT components, but is not the SSOT itself.
 
 To learn more about how we create, build, style, and implement components, read the [Component Lifecycle](https://design.gitlab.com/get-started/lifecycle/) documentation.
 
@@ -63,7 +63,7 @@ In the 'Contribute' tab found on a component page, issues and merge requests are
 
 Communicate widely any additions or changes to these labels, as other projects and tools rely on them and may need to be updated. Such projects and tools include:
 - [Pajamas Adoption Scanner](https://gitlab.com/gitlab-org/frontend/pajamas-adoption-scanner)
-- [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui)
+- [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui)
 - User bookmarks
 - Spreadsheets
 

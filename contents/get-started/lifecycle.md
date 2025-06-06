@@ -8,7 +8,7 @@ The component lifecycle has the following stages (identified by labels):
 
 - **Define:** A need for a component or a gap within an existing component is identified and usage guidelines are written/updated within [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com). <gl-label background-color="#8C73A1" title="pajamas::define" scoped />
 - **Design:** The component is added to or modified in the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) in Figma. <gl-label background-color="#7CA189" title="pajamas::design" scoped />
-- **Build:** The component is added to [Gitlab UI](https://gitlab.com/gitlab-org/gitlab-ui), including
+- **Build:** The component is added to [Gitlab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui), including
   documentation. The component is styled according to design specs found
   in [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit).
   Components function correctly, match usage guidelines, and are added to Pajamas. <gl-label background-color="#6787BB" title="pajamas::build" scoped />
@@ -31,7 +31,7 @@ There are three distinct areas that should be reviewed when adding or updating a
 
 1. [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
 1. [Pajamas UI Kit (Figma)](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit)
-1. [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui)
+1. [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui)
 
 The following diagram outlines the various component lifecycle stages and is available to help
 determine how to add or update a component in Pajamas, based on the current state
@@ -76,13 +76,13 @@ we add it in.
 
 When a change to GitLab UI is made, it will not be reflected in
 Pajamas until the package is updated. See
-[Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/doc/updating-gitlab-ui-packages.md) for details.
+[Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/doc/updating-gitlab-ui-packages.md) for details.
 
 ## Component status
 
 Not all Pajamas components are fully integrated within the GitLab product at this
 time. Some components may be partially integrated and others have been migrated
-from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-ui).
+from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui).
 
 GitLab UI components should be used within GitLab even if they do not yet fully
 conform to design specs.

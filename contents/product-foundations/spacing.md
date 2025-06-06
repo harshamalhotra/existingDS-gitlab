@@ -42,7 +42,7 @@ We include 12px as one of our measures, but it should only be reserved for right
 
 ## GitLab UI spacing variable conversion
 
-The table below is a reference to assist with mapping the spacing rules to [gitlab-ui variables](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/src/scss/variables.scss).
+The table below is a reference to assist with mapping the spacing rules to [gitlab-ui variables](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/src/scss/variables.scss).
 
 The table is based on the configuration of `1rem = 16px` and `$grid-size = 8px`.
 

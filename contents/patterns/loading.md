@@ -30,7 +30,7 @@ In Pajamas, the following methods indicate and initiate loading:
 
 ## Loading more
 
-The load more interaction is [a more accessible alternative](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1196#results) to [infinite scroll](/components/infinite-scroll). It allows a user to load more results by clicking a 'Load more' [button](/components/button). The button text can optionally include the number of items that will be loaded, for example, 'Load 20 more'.
+The load more interaction is [a more accessible alternative](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2726#results) to [infinite scroll](/components/infinite-scroll). It allows a user to load more results by clicking a 'Load more' [button](/components/button). The button text can optionally include the number of items that will be loaded, for example, 'Load 20 more'.
 
 The load more interaction can be used for a set of similar items:
 
