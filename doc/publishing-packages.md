@@ -119,6 +119,10 @@ If a merge request is merged that didn't include a changeset but should have, cr
 
 Include a link to the original merge request in the changeset description.
 
+## Checking what a merge request would release
+
+In merge request pipelines, the `publish_npm_packages_dry_run` job log indicates which packages would be released as a result of the merge request.
+
 ## Further reading
 
 - [Changesets documentation](https://github.com/changesets/changesets/tree/main/docs)

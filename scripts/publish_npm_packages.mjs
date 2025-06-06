@@ -1,13 +1,16 @@
 #!/usr/bin/env node
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import defaultChangelogFunctions from '@changesets/changelog-git';
+import chalk from 'chalk';
 import {
   ROOT,
   printDiagnostics,
   run,
   runChangesetWithWorkspacesHackForYarnV1,
 } from './lib/shared.mjs';
+
+const { env } = process;
 
 const CHANGESET_DIR = join(ROOT, '.changeset');
 
@@ -18,29 +21,38 @@ const CHANGESET_RELEASE_PLAN_FILE = relative(
 );
 
 function isEnvironmentOkay() {
-  const { env } = process;
   const messages = [];
 
   if (!env.CI) {
     messages.push('This script should only be run in CI.');
   }
 
-  if (!env.CI_COMMIT_BRANCH) {
-    messages.push('This script should only run in branch pipelines.');
-  }
+  if (env.DRY_RUN) {
+    if (!env.CI_MERGE_REQUEST_IID) {
+      messages.push('This script should only run in merge request pipelines.');
+    }
 
-  if (env.CI_COMMIT_BRANCH !== env.CI_DEFAULT_BRANCH) {
-    messages.push(
-      `This script should only run on pipelines for the default branch: CI_COMMIT_BRANCH=${env.CI_COMMIT_BRANCH}, CI_DEFAULT_BRANCH=${env.CI_DEFAULT_BRANCH}`,
-    );
-  }
+    if (!env.GITLAB_TOKEN_MR) {
+      messages.push('GITLAB_TOKEN_MR is not defined.');
+    }
+  } else {
+    if (!env.CI_COMMIT_BRANCH) {
+      messages.push('This script should only run in branch pipelines.');
+    }
 
-  if (!env.GITLAB_TOKEN) {
-    messages.push('GITLAB_TOKEN is not defined.');
-  }
+    if (env.CI_COMMIT_BRANCH !== env.CI_DEFAULT_BRANCH) {
+      messages.push(
+        `This script should only run on pipelines for the default branch: CI_COMMIT_BRANCH=${env.CI_COMMIT_BRANCH}, CI_DEFAULT_BRANCH=${env.CI_DEFAULT_BRANCH}`,
+      );
+    }
 
-  if (!env.NPM_TOKEN) {
-    messages.push('NPM_TOKEN is not defined.');
+    if (!env.GITLAB_TOKEN) {
+      messages.push('GITLAB_TOKEN is not defined.');
+    }
+
+    if (!env.NPM_TOKEN) {
+      messages.push('NPM_TOKEN is not defined.');
+    }
   }
 
   messages.forEach((message) => {
@@ -51,16 +63,30 @@ function isEnvironmentOkay() {
 }
 
 function gitUrl() {
-  return `https://gitlab-bot:${process.env.GITLAB_TOKEN}@gitlab.com/${process.env.CI_PROJECT_PATH}.git`;
+  const token = env.GITLAB_TOKEN || env.GITLAB_TOKEN_MR;
+  return `https://gitlab-bot:${token}@gitlab.com/${env.CI_PROJECT_PATH}.git`;
 }
 
 /**
- * Changesets needs git to be checked out on the default branch, not on a
- * detached commit sha.
+ * Changesets needs git to be checked out on the branch, not on a detached
+ * commit sha. In other words, HEAD must point to the branch name, not its
+ * commit sha.
+ *
+ * For dry runs, there also needs to exist a local branch for the default
+ * branch so that it can compare the source branch against it.
  */
-function ensureDefaultBranch() {
-  run('git', ['fetch', gitUrl(), process.env.CI_DEFAULT_BRANCH]);
-  run('git', ['checkout', process.env.CI_DEFAULT_BRANCH]);
+function ensureBranches() {
+  let branch = env.CI_DEFAULT_BRANCH;
+
+  if (env.DRY_RUN) {
+    // Ensure a local default branch exists and points to the remote default branch.
+    run('git', ['branch', env.CI_DEFAULT_BRANCH, `origin/${env.CI_DEFAULT_BRANCH}`]);
+    branch = env.CI_MERGE_REQUEST_SOURCE_BRANCH_NAME;
+  }
+
+  // Ensure HEAD points to the actual branch.
+  run('git', ['fetch', gitUrl(), branch]);
+  run('git', ['checkout', branch]);
 }
 
 function getReleasePlan() {
@@ -71,6 +97,9 @@ function getReleasePlan() {
   if (changesetFiles.length > 0) {
     console.log(`Found changeset files:\n${changesetFiles.join('\n')}`);
   } else {
+    // Create an empty release plan file anyway, to avoid a spurious warning in
+    // job log about missing artifacts.
+    writeFileSync(CHANGESET_RELEASE_PLAN_FILE, '');
     console.log('No changesets found.');
     return null;
   }
@@ -85,6 +114,18 @@ function getReleasePlan() {
   return releasePlan;
 }
 
+/**
+ * Pretty-print the release plan JSON.
+ * @param {object} releasePlan The release plan.
+ */
+function printReleasePlan({ releases }) {
+  const releaseLines = releases.map(
+    ({ name, type, oldVersion, newVersion }) =>
+      `${chalk.bold(name)} ${chalk.yellow(oldVersion)} ⟶ ${chalk.green(newVersion)} (${type})`,
+  );
+  console.log(releaseLines.join('\n'));
+}
+
 function releaseSection(type, lines) {
   const typeCapitalized = `${type.charAt(0).toUpperCase()}${type.slice(1)}`;
 
@@ -92,7 +133,6 @@ function releaseSection(type, lines) {
 }
 
 async function createRelease({ tag, description }) {
-  const { env } = process;
   const url = `${env.CI_API_V4_URL}/projects/${env.CI_PROJECT_ID}/releases`;
 
   console.log(`Creating release via ${url}...`);
@@ -159,17 +199,17 @@ function gitCommit({ message = 'Update packages for release [skip ci]' } = {}) {
 }
 
 function gitPush() {
-  const refspec = `HEAD:${process.env.CI_COMMIT_BRANCH}`;
+  const refspec = `HEAD:${env.CI_COMMIT_BRANCH}`;
 
   run('git', ['push', '--follow-tags', gitUrl(), refspec]);
 }
 
 function publish() {
-  run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${process.env.NPM_TOKEN}`]);
+  run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${env.NPM_TOKEN}`]);
   run('npm', [
     'config',
     'set',
-    `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${process.env.GITLAB_TOKEN}`,
+    `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${env.GITLAB_TOKEN}`,
   ]);
   runChangesetWithWorkspacesHackForYarnV1(['publish']);
 }
@@ -180,7 +220,7 @@ async function main() {
     return;
   }
 
-  ensureDefaultBranch();
+  ensureBranches();
 
   const releasePlan = getReleasePlan();
   if (!releasePlan || releasePlan.releases.length === 0) {
@@ -190,6 +230,14 @@ async function main() {
 
   // Process changeset files and update package changelogs
   runChangesetWithWorkspacesHackForYarnV1(['version']);
+
+  if (env.DRY_RUN) {
+    console.log('Diff of changes that would be made if this were on the default branch:');
+    run('git', ['diff', '--color=always']);
+    console.log('The following packages would be released:');
+    printReleasePlan(releasePlan);
+    return;
+  }
 
   gitCommit();
 

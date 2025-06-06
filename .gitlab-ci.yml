@@ -29,6 +29,12 @@ default:
 .is-design-gitlab-com-default-branch: &is-design-gitlab-com-default-branch
   if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
 
+.is-design-gitlab-com-mr: &is-design-gitlab-com-mr
+  if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
+.is-merge-train: &is-merge-train
+  if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
+
 variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
@@ -177,22 +183,40 @@ review-app:
     url: "${CURRENT_PAGES_URL}"
     auto_stop_in: "2 weeks"
 
-# Do not use `needs` (https://docs.gitlab.com/ci/yaml/needs/) on this job.
-# It should only run if all previous stages have passed.
-publish_npm_packages:
+.publish_npm_packages:
   extends:
     - .node-job
-  # We need to run `publish` after pages, so that pages will get deployed
-  # properly, as the publish-to-npm step will create a new commit and this
-  # could lead to a side-effect where pages don't get published because of
-  # the commit being made before `pages` had a chance to run
   stage: publish
-  resource_group: publish_npm_packages
-  rules:
-    - <<: *is-design-gitlab-com-default-branch
+  variables:
+    # Force chalk to allow basic colors.
+    # See https://github.com/chalk/chalk/blob/v4.1.2/readme.md#chalksupportscolor
+    FORCE_COLOR: 1
   script:
     - ./scripts/publish_npm_packages.mjs
   artifacts:
     paths:
       # Expose release plan for debugging, or for retroactive release creation
       - .changeset/release_plan.json
+
+publish_npm_packages_dry_run:
+  extends:
+    - .publish_npm_packages
+  # As this is only a dry run, this doesn't need to wait for pages deploys.
+  needs: []
+  variables:
+    DRY_RUN: true
+  rules:
+    - <<: *is-design-gitlab-com-mr
+
+# Do not use `needs` (https://docs.gitlab.com/ci/yaml/needs/) on this job.
+# It should only run if all previous stages have passed.
+# We need to run this after pages deploys on main, so that pages will get deployed
+# properly, as the publish-to-npm step will create a new commit and this
+# could lead to a side-effect where pages don't get published because of
+# the commit being made before `pages` had a chance to run
+publish_npm_packages:
+  extends:
+    - .publish_npm_packages
+  resource_group: publish_npm_packages
+  rules:
+    - <<: *is-design-gitlab-com-default-branch
