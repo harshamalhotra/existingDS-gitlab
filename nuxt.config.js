@@ -13,9 +13,10 @@ const GITLAB_ANALYTICS_URL = GITLAB_ANALYTICS_ID
 
 const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL || false;
 
-const GITLAB_UI_URL = (
-  process.env.GITLAB_UI_URL || 'https://gitlab-org.gitlab.io/gitlab-ui'
-).replace(/\/+$/, '');
+const GITLAB_UI_URL = (process.env.GITLAB_UI_URL || 'https://design.gitlab.com/storybook').replace(
+  /\/+$/,
+  '',
+);
 
 const LOOKBOOK_URL = (
   process.env.LOOKBOOK_URL || 'https://gitlab-40159195-main-qv5xk62rgq-uc.a.run.app/lookbook'
