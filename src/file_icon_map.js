@@ -98,6 +98,7 @@ const fileExtensionIcons = {
   vsix: 'vscode',
   suo: 'visualstudio',
   sln: 'visualstudio',
+  slnx: 'visualstudio',
   csproj: 'visualstudio',
   vb: 'visualstudio',
   pdb: 'database',
