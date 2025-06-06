@@ -42,6 +42,15 @@ Default.args = generateProps({
 });
 Default.storyName = 'UI Link (Default)';
 
+export const DefaultExternal = Template.bind({});
+DefaultExternal.args = generateProps({
+  text: 'This is a UI link',
+  href: 'https://example.com',
+  showExternalIcon: true,
+  target: '_blank',
+});
+DefaultExternal.storyName = 'UI Link with external icon';
+
 export const InlineLink = Template.bind({});
 InlineLink.args = generateProps({
   text: 'This is an inline link',
@@ -51,7 +60,7 @@ InlineLink.args = generateProps({
 export const InlineExternalLink = Template.bind({});
 InlineExternalLink.args = generateProps({
   text: 'I have an arrow character because my target URL is external',
-  href: 'https://design.gitlab.com',
+  href: 'https://example.com',
   showExternalIcon: true,
   target: '_blank',
   variant: 'inline',
@@ -61,6 +70,15 @@ export const MetaLink = Template.bind({});
 MetaLink.args = generateProps({
   text: 'This is a meta link',
   variant: 'meta',
+});
+
+export const MetaLinkExternal = Template.bind({});
+MetaLinkExternal.args = generateProps({
+  text: 'This is a meta link',
+  href: 'https://example.com',
+  variant: 'meta',
+  showExternalIcon: true,
+  target: '_blank',
 });
 
 export const MentionLink = Template.bind({});
@@ -93,6 +111,9 @@ export default {
     target: {
       options: targetOptions,
       control: 'select',
+    },
+    showExternalIcon: {
+      control: 'boolean',
     },
   },
 };

@@ -25,6 +25,39 @@ and also Vue Router and Nuxt links.
 <gl-link href="#foo">Link</gl-link>
 ```
 
+## External link indicator
+
+The `show-external-icon` prop displays a "↗" character after the link text to indicate external links.
+This feature is available for **inline**, **UI (default)**, and **meta** variants only.
+
+```html
+<!-- External link with indicator -->
+<gl-link href="https://kubernetes.io/docs" target="_blank" show-external-icon>
+  Kubernetes documentation
+</gl-link>
+<!-- Renders as: Kubernetes documentation ↗ -->
+
+<!-- Different variants with external indicator -->
+<gl-link variant="inline" href="https://prometheus.io" target="_blank" show-external-icon>
+  Learn more about Prometheus monitoring
+</gl-link>
+
+<gl-link variant="meta" href="https://docker.com" target="_blank" show-external-icon>
+  Docker Hub
+</gl-link>
+```
+
+**Requirements for the external icon to appear:**
+
+- `show-external-icon` prop must be `true`.
+- `href` prop must be provided.
+- `target="_blank"` must be set.
+- Destination domain must be [determined as external](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/b5e4b0b4241455ed0fa45e0f6f5b83a3b76755ff/packages/gitlab-ui/src/directives/safe_link/safe_link.js#L12).
+- Link variant must be `inline`, `meta`, or default (UI).
+
+**Note:** The external icon is not available for `mention` or `unstyled` variants as these have
+specific design purposes that don't align with external link indication.
+
 ## Link type
 
 By specifying a value in the `href` prop, a standard link (`<a>`) element will be rendered. To

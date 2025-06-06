@@ -108,6 +108,34 @@ describe('link component', () => {
     expect(wrapper.classes()).toStrictEqual(expectedClass);
   });
 
+  it.each`
+    variant                      | shouldShowIcon | description
+    ${linkVariantInline}         | ${true}        | ${'shows'}
+    ${linkVariantMeta}           | ${true}        | ${'shows'}
+    ${null}                      | ${true}        | ${'shows'}
+    ${linkVariantMention}        | ${false}       | ${'does not show'}
+    ${linkVariantMentionCurrent} | ${false}       | ${'does not show'}
+    ${linkVariantUnstyled}       | ${false}       | ${'does not show'}
+  `(
+    '$description external icon for $variant variant when showExternalIcon=true',
+    ({ variant, shouldShowIcon }) => {
+      createWrapper({
+        propsData: {
+          variant,
+          href: 'https://example.com',
+          showExternalIcon: true,
+          target: '_blank',
+        },
+      });
+
+      if (shouldShowIcon) {
+        expect(wrapper.classes()).toContain('gl-link-external');
+      } else {
+        expect(wrapper.classes()).not.toContain('gl-link-external');
+      }
+    }
+  );
+
   describe('target blank', () => {
     it('should set secure rels for hrefs in a different domain', () => {
       createWrapper({

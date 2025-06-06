@@ -15,6 +15,7 @@ import { attemptFocus, attemptBlur } from '../../../vendor/bootstrap-vue/src/uti
 import {
   linkVariantOptions,
   linkVariantInline,
+  linkVariantMeta,
   linkVariantUnstyled,
   isVue3,
 } from '../../../utils/constants';
@@ -130,7 +131,7 @@ export default {
       default: null,
     },
     /**
-     * If inline variant, controls ↗ character visibility
+     * Controls ↗ character visibility for external links
      */
     showExternalIcon: {
       type: Boolean,
@@ -169,10 +170,11 @@ export default {
     isVue3RouterLink() {
       return this.tag === VUE_ROUTER_LINK_TAG && isVue3;
     },
-    isInlineAndHasExternalIcon() {
+    shouldShowExternalIcon() {
+      const allowedVariants = [linkVariantInline, linkVariantMeta, null]; // null represents default/UI variant
       return (
         this.showExternalIcon &&
-        this.variant === linkVariantInline &&
+        allowedVariants.includes(this.variant) &&
         this.href &&
         isExternalURL(this.target, this.href)
       );
@@ -247,7 +249,7 @@ export default {
         {
           disabled: this.disabled,
           active: this.active,
-          'gl-link-inline-external': this.isInlineAndHasExternalIcon,
+          'gl-link-external': this.shouldShowExternalIcon,
         },
       ];
     },
