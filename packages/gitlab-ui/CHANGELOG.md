@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.7.0
+
+### Minor Changes
+
+- a13fc40: GlLink: Extend variants that can show the external link icon.
+
 ## 114.6.0
 
 ### Minor Changes
