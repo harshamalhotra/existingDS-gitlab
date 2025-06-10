@@ -164,7 +164,7 @@ export default {
       class="gl-description-label gl-mb-3"
       data-testid="toggle-description"
     >
-      <!-- @slot A description text to be shown below the label. -->
+      <!-- @slot A description text to be shown below the label. Unavailable when the label is positioned on the left. -->
       <slot name="description">{{ description }}</slot>
     </span>
     <input v-if="name" :name="name" :value="value" type="hidden" />
@@ -189,7 +189,7 @@ export default {
       </span>
     </button>
     <span v-if="shouldRenderHelp" :id="helpId" class="gl-help-label" data-testid="toggle-help">
-      <!-- @slot A help text to be shown below the toggle. -->
+      <!-- @slot A help text to be shown below the toggle. Unavailable when the label is positioned on the left. -->
       <slot name="help">{{ help }}</slot>
     </span>
   </div>
