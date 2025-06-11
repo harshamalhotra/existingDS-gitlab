@@ -1,9 +1,9 @@
 /**
  * Adds two numbers together
- * @param {Number} a
- * @param {Number} b
+ * @param {Number|String} a
+ * @param {Number|String} b
  */
-export const addition = (a, b) => a + b;
+export const addition = (a, b) => Number(a) + Number(b);
 
 /**
  * Returns the sum of all arguments

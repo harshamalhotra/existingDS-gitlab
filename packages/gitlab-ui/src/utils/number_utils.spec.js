@@ -11,11 +11,19 @@ describe('number utils', () => {
     it('returns the sum of all arguments', () => {
       expect(numberUtils.sum(3, 6, 7, 8, 9, 10)).toBe(43);
     });
+
+    it('returns the sum with some string arguments', () => {
+      expect(numberUtils.sum('1.00', '2.00', 3)).toBe(6);
+    });
   });
 
   describe('average', () => {
     it('returns the average of all arguments', () => {
       expect(numberUtils.average(4, 6, 9, 12)).toBe(7.75);
+    });
+
+    it('returns the average with some string arguments', () => {
+      expect(numberUtils.average('1.00', '2.00', 3)).toBe(2);
     });
   });
 
