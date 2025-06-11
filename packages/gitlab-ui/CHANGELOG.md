@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.7.1
+
+### Patch Changes
+
+- 879c52a: GlChart: Fix legend averages when String values are used
+
 ## 114.7.0
 
 ### Minor Changes
