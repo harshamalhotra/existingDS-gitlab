@@ -1,5 +1,6 @@
 <script>
 import { iframeResize } from 'iframe-resizer';
+import { mapState } from 'vuex';
 import { GlLoadingIcon } from '../helpers/gitlab_ui';
 import { SkipOneTrustDirective } from '../directives/skip_one_trust_directive';
 
@@ -31,6 +32,7 @@ export default {
     };
   },
   computed: {
+    ...mapState('mode', ['isDarkMode']),
     iFrameClass() {
       return {
         'gl-opacity-0': !this.loaded,
@@ -44,10 +46,32 @@ export default {
       return options;
     },
   },
+  watch: {
+    isDarkMode(newValue) {
+      this.updateDarkModeClass(newValue);
+    },
+  },
+  mounted() {
+    window.addEventListener('message', this.handlePostMessageFromIframe);
+  },
+  beforeDestroy() {
+    window.removeEventListener('message', this.handlePostMessageFromIframe);
+  },
   methods: {
     iFrameLoaded({ target }) {
       iframeResize(this.iframeResizeOptions, target);
       this.loaded = true;
+      this.updateDarkModeClass(this.isDarkMode);
+    },
+    handlePostMessageFromIframe(event) {
+      if (event.data && event.data.type === 'REQUEST_DARK_MODE_STATE') {
+        event.source.postMessage({ isDarkMode: this.isDarkMode }, event.origin);
+      }
+    },
+    updateDarkModeClass(isDarkMode) {
+      if (this.$refs.iframe?.contentWindow) {
+        this.$refs.iframe.contentWindow.postMessage({ isDarkMode }, '*');
+      }
     },
   },
 };
@@ -64,6 +88,7 @@ export default {
     </div>
     <iframe
       v-skip-one-trust
+      ref="iframe"
       :src="url"
       :class="iFrameClass"
       class="responsive-iframe gl-min-w-full gl-border-none"
