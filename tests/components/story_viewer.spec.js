@@ -1,10 +1,15 @@
 import { GlCard } from '@gitlab/ui';
-import { mount, shallowMount } from '@vue/test-utils';
+import { mount, shallowMount, createLocalVue } from '@vue/test-utils';
+import Vuex from 'vuex';
 import StoryViewer from '../../components/story_viewer.vue';
 import StoryIframe from '../../components/story_iframe.vue';
 
+const localVue = createLocalVue();
+localVue.use(Vuex);
+
 describe('story viewer component', () => {
   let wrapper;
+  let store;
 
   // Props
   const component = 'base-component';
@@ -21,7 +26,17 @@ describe('story viewer component', () => {
   const getIFrameURL = () => findStoryIframe().props('url');
 
   const createComponent = (props = {}, mountFn = shallowMount) => {
+    store = new Vuex.Store({
+      state: {
+        isDarkMode: false,
+      },
+      getters: {
+        isDarkMode: (state) => state.isDarkMode,
+      },
+    });
     wrapper = mountFn(StoryViewer, {
+      localVue,
+      store,
       propsData: {
         component,
         ...props,
