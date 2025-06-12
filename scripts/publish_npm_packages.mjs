@@ -64,7 +64,8 @@ function isEnvironmentOkay() {
 
 function gitUrl() {
   const token = env.GITLAB_TOKEN || env.GITLAB_TOKEN_MR;
-  return `https://gitlab-bot:${token}@gitlab.com/${env.CI_PROJECT_PATH}.git`;
+  const projectUrl = env.CI_MERGE_REQUEST_SOURCE_PROJECT_PATH || env.CI_PROJECT_PATH;
+  return `https://gitlab-bot:${token}@gitlab.com/${projectUrl}.git`;
 }
 
 /**
@@ -86,7 +87,7 @@ function ensureBranches() {
 
   // Ensure HEAD points to the actual branch.
   run('git', ['fetch', gitUrl(), branch]);
-  run('git', ['checkout', branch]);
+  run('git', ['checkout', '-b', branch, 'FETCH_HEAD']);
 }
 
 function getReleasePlan() {
