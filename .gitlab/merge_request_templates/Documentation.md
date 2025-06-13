@@ -12,7 +12,6 @@ Follow the checklist in this template to use it appropriately.
 
 ### Does this MR meet the acceptance criteria?
 
-- [ ] The MR title and commit messages meet the [Pajamas commit conventions][commits].
 - [ ] The “What does this MR do?” section in the MR description is filled out, explaining the reasons for and scope of the proposed changes, per [“Say why not just what”][transparency].
   - For example, if the MR is focused on _usage guidelines_, addressing _accessibility challenges_ could be added in a separate MR.
 - [ ] Relevant label(s) are applied to the MR.
@@ -32,7 +31,6 @@ Follow the checklist in this template to use it appropriately.
 
 /label ~"Pajamas" ~"pajamas::define" ~"type::maintenance" ~component:
 
-[commits]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/commits.md
 [transparency]: https://about.gitlab.com/handbook/values/#say-why-not-just-what
 [writing-documentation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com#writing-component-documentation
 [page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md
