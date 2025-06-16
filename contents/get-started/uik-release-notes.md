@@ -2,6 +2,34 @@
 name: Release notes
 ---
 
+## 18.1
+
+<small>Published 2025-06-13</small>
+
+This release adds new highlight design tokens and animated product icon artifacts while cleaning up library dependencies and fixing deprecated components across the design system.
+
+### Changelog
+
+#### ➕ Additions
+
+- (Design tokens): Adds `highlight.*` design tokens. [Use highlight design tokens](https://design.gitlab.com/product-foundations/design-tokens-using#highlighting) to support drawing attention to matched results, identifying referenced elements, or visualizing relationships between content.
+
+#### 🔄 Changes
+
+- (Annotations): [Detaches icons](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?m=auto&node-id=2084-34&t=QVBj7GaHUeR2bQTs-1) to remove library dependency.
+  - Removes component library, design tokens, and product icons from enabled libraries in this file.
+
+- (Product Icons): Includes [animated icon artifacts](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto&node-id=7806-471&t=ZALoVOXK3nIFe8Ix-1). These static shapes are used to construct animated icons. Animated icons are not currently available in Figma, [see them in action in gitlab-ui](https://design.gitlab.com/storybook/?path=/docs/base-animated-icon--docs).
+
+#### 🛠️ Fixes
+
+- (Design tokens): Updates `feedback-info-background-color` [description](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Design-tokens?m=auto&node-id=2195-80&t=t81pCKYeLWLBkL0H-1).
+- (Data Visualization): Fixes [deprecated button instances](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?m=auto&node-id=3-0&t=ii1nxhS8vXe8Tlaw-1).
+
+#### Contributors
+
+Dan Mizzi-Harris, Jeremy Elder, Julia Miocene, Libor Vanc, Mark Unthank, Sascha Eggenberger
+
 ## 18.0
 
 <small>Published 2025-05-12</small>
