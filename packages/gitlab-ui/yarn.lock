@@ -10629,10 +10629,10 @@ meow@^13.2.0:
   resolved "https://registry.yarnpkg.com/meow/-/meow-13.2.0.tgz#6b7d63f913f984063b3cc261b6e8800c4cd3474f"
   integrity sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==
 
-merge-cobertura@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/merge-cobertura/-/merge-cobertura-1.0.2.tgz#16bed05d1c6bd4803ef8781275026ba7770b754f"
-  integrity sha512-SlKYojFjSfDNR6W7rDEPIcnox3W4nhhjp/EQpNeCFhA87Y7RlEGwXbzN68HUNotFKUVbmD+lV3x7VW3OIZVB2g==
+merge-cobertura@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/merge-cobertura/-/merge-cobertura-1.0.4.tgz#a821323be5cbd9f3c00caa47675a5c0fd557368e"
+  integrity sha512-vXy51GoV18lKNotdH3ZFTwMMRcITfQBWb8fnUVB3U1q7DG9uYEXKW8MN1CkJuEsv+1rI9eBxMT+Jb1p2wd6K7A==
   dependencies:
     fast-xml-parser "^4.4.1"
     minimist "^1.2.8"
