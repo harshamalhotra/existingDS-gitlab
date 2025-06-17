@@ -68,7 +68,37 @@ export default {
       }
     },
   },
+  mounted() {
+    document.addEventListener('keydown', this.slashKeyListener);
+  },
+  beforeDestroy() {
+    document.removeEventListener('keydown', this.slashKeyListener);
+  },
   methods: {
+    slashKeyListener(event) {
+      if (event.key === '/' || event.keyCode === 191) {
+        // Don't trigger if user is already typing in an input, textarea, or contenteditable
+        const { activeElement } = document;
+        const isInputActive =
+          activeElement &&
+          (activeElement.tagName === 'INPUT' ||
+            activeElement.tagName === 'TEXTAREA' ||
+            activeElement.contentEditable === 'true');
+
+        if (!isInputActive) {
+          event.preventDefault();
+          this.focusSearchInput();
+        }
+      }
+    },
+    focusSearchInput() {
+      if (this.$refs.input && this.$refs.input.$el) {
+        const input = this.$refs.input.$el.querySelector('input');
+        if (input) {
+          input.focus();
+        }
+      }
+    },
     addBodyListener() {
       document.body.addEventListener('mousedown', this.bodyListener);
     },
