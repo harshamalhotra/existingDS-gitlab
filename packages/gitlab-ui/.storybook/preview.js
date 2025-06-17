@@ -36,7 +36,7 @@ const decorators = [
           document.documentElement.classList.toggle('gl-dark', event.data.isDarkMode);
         }
       },
-    }
+    },
   }),
 ];
 
