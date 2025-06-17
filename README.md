@@ -22,7 +22,7 @@ All output is saved to the `dist` folder where it’s referenced from our main a
 - If you're adding a third-party logo or trademark, refer to [this section](#adding-third-party-logos-or-trademarks).
 - Review the following documentation:
   - [Iconography design guidelines](https://design.gitlab.com/product-foundations/iconography)
-  - [Illustration design guidelines](https://design.gitlab.com/product-foundations/illustration)
+  - [Illustration design guidelines](https://design.gitlab.com/product-foundations/illustration-creation-guide)
   - [Illustration contribution guidelines](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/doc/illustration-contribution.md)
 - Make sure you have the latest from the `main` branch in your local copy of the **gitlab-svgs** repository, then create a new local branch.
   ```bash
