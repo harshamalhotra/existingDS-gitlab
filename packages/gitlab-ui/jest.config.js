@@ -27,6 +27,13 @@ if (USE_VUE_3) {
   });
 }
 
+const transformIgnoreNodeModules = [
+  'bootstrap-vue',
+  '@storybook/.*\\.vue',
+  '@gitlab/svgs',
+  'gridstack',
+];
+
 module.exports = {
   ...extraJestConfig,
   verbose: true,
@@ -45,9 +52,7 @@ module.exports = {
     '.*\\.(vue)$': JEST_VUE_TRANSFORMER,
     '\\.(svg|html|md|png)$': '<rootDir>/tests/transformers/file_transformer.js',
   },
-  transformIgnorePatterns: [
-    '/node_modules(?![\\\\/]bootstrap-vue[\\\\/]|(/@storybook/.*\\.vue$)|(/@gitlab/svgs/))/',
-  ],
+  transformIgnorePatterns: [`node_modules/(?!(${transformIgnoreNodeModules.join('|')}))`],
   snapshotSerializers: [
     '<rootDir>/tests/html_string_serializer.js',
     '<rootDir>/tests/clean_html_element_serializer.js',

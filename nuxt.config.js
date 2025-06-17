@@ -238,6 +238,12 @@ export default {
       });
 
       config.module.rules.push({
+        test: /gridstack\/.*\.js$/,
+        include: /node_modules/,
+        loader: 'babel-loader',
+      });
+
+      config.module.rules.push({
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
