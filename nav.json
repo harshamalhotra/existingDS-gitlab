@@ -251,7 +251,24 @@
           },
           {
             "title": "Illustration",
-            "path": "illustration"
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "illustration"
+              },
+              {
+                "title": "Creating",
+                "path": "illustration-creation-guide"
+              },
+              {
+                "title": "Exporting",
+                "path": "illustration-export-guide"
+              },
+              {
+                "title": "All illustrations",
+                "path": "illustration-directory"
+              }
+            ]
           }
         ]
       },

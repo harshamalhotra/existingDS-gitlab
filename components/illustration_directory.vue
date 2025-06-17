@@ -1,6 +1,6 @@
 <script>
-import illustrations from '@gitlab/svgs/dist/illustrations.json';
-import SvgAlbum from '../../../components/svg_explorer/svg_album.vue';
+import illustrations from '@gitlab/svgs/dist/illustrations_individual.json';
+import SvgAlbum from './svg_explorer/svg_album.vue';
 
 /**
  * Load all illustration SVGs with webpack
