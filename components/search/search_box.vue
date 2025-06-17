@@ -230,6 +230,7 @@ export default {
       v-model="searchText"
       aria-label="Search"
       aria-haspopup="true"
+      aria-keyshortcuts="/"
       :aria-expanded="resultsVisible"
       autocomplete="off"
       spellcheck="false"
