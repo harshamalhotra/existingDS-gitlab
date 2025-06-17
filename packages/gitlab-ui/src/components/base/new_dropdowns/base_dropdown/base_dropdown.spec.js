@@ -377,6 +377,29 @@ describe('base dropdown', () => {
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toHaveLength(1);
     });
 
+    it('should modify Escape event from toggle when menu is open', async () => {
+      const toggle = findDefaultDropdownToggle();
+
+      await toggle.trigger('click');
+
+      const event = { stopPropagation: jest.fn(), preventDefault: jest.fn() };
+
+      await toggle.trigger('keydown.esc', event);
+
+      expect(event.stopPropagation).toHaveBeenCalled();
+      expect(event.preventDefault).toHaveBeenCalled();
+    });
+
+    it('should not modify Escape event from toggle when menu is closed', async () => {
+      const toggle = findDefaultDropdownToggle();
+
+      const event = { stopPropagation: jest.fn(), preventDefault: jest.fn() };
+      await toggle.trigger('keydown.esc', event);
+
+      expect(event.stopPropagation).not.toHaveBeenCalled();
+      expect(event.preventDefault).not.toHaveBeenCalled();
+    });
+
     describe('when the consumer takes over the focus', () => {
       let consumerButton;
 
