@@ -86,7 +86,7 @@
 
       @media (forced-colors: active) {
         background-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
-        border-color: LinKText; // stylelint-disable-line scale-unlimited/declaration-strict-value
+        border-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
       }
     }
 
@@ -135,7 +135,7 @@
       &::before {
         @media (forced-colors: active) {
           background-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
-          border-color: LinKText; // stylelint-disable-line scale-unlimited/declaration-strict-value
+          border-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
         }
       }
     }
@@ -147,7 +147,7 @@
 
         @media (forced-colors: active) {
           background-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
-          border-color: LinKText; // stylelint-disable-line scale-unlimited/declaration-strict-value
+          border-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
         }
       }
 
@@ -165,7 +165,7 @@
       .custom-control-input:not(:disabled):focus:indeterminate ~ .custom-control-label::before {
         @media (forced-colors: active) {
           background-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
-          border-color: LinKText; // stylelint-disable-line scale-unlimited/declaration-strict-value
+          border-color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
         }
       }
     }
