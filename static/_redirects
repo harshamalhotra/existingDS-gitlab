@@ -67,3 +67,6 @@
 /usability/saving-and-feedback /patterns/saving-and-feedback 301
 /usability/settings-management /patterns/settings-management 301
 /usability /patterns 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4354
+/product-foundations/illustration/illustrations /product-foundations/illustration-directory 301
