@@ -14,7 +14,7 @@ The Pajamas UI Kit is comprised of multiple Figma files that organize separate, 
 
 In addition to the links above, some files are available from the [GitLab Product Design](https://www.figma.com/@GitLabDesign) community page and the [project repository](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/ui-kit).
 
-### Dependencies
+## Dependencies
 
 - 📙 Component library uses Design tokens, GitLab Product Icons, and GitLab Product Illustrations.
 - GitLab Product Illustrations uses Design tokens.
