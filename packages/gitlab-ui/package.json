@@ -82,7 +82,7 @@
     "@floating-ui/dom": "1.7.0",
     "echarts": "^5.6.0",
     "iframe-resizer": "^4.3.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
     "vue-functional-data-merge": "^3.1.0",
