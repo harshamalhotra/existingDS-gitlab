@@ -205,7 +205,7 @@
     "tailwind-config-viewer": "2.0.4",
     "tailwindcss": "3.4.4",
     "vue": "2.7.16",
-    "vue-loader": "^15.8.3",
+    "vue-loader": "^15.11.1",
     "vue-loader-vue3": "npm:vue-loader@17",
     "vue-router": "^3.5.1",
     "vue-template-compiler": "2.7.16",
