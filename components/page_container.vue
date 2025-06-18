@@ -6,6 +6,11 @@ export default {
       required: false,
       default: 'div',
     },
+    maxWidth: {
+      type: String,
+      required: false,
+      default: '72rem',
+    },
   },
 };
 </script>
@@ -13,7 +18,7 @@ export default {
   <component
     :is="tag"
     class="gl-mx-auto gl-my-0 gl-w-full gl-px-5 sm:gl-px-7"
-    style="max-width: 54rem"
+    :style="{ 'max-width': maxWidth }"
   >
     <slot></slot>
   </component>

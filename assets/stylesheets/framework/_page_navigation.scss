@@ -1,0 +1,44 @@
+.page-navigation {
+  @apply gl-sticky;
+  @apply gl-top-0;
+  @apply gl-overflow-y-auto;
+  @apply gl-max-h-screen;
+  min-width: $sidebar-width;
+
+  ul {
+    @apply gl-m-0;
+    @apply gl-list-none;
+    @apply gl-p-0;
+  }
+
+  li {
+    @apply gl-m-0;
+  }
+
+  a {
+    @apply gl-flex;
+    @apply gl-gap-2;
+    @apply gl-rounded-base;
+    @apply gl-p-3;
+    @apply gl-pl-4;
+    @apply gl-no-underline;
+    @include gl-action-neutral-colors;
+
+    &.active {
+      @apply gl-relative;
+      background-color: var(--gl-action-neutral-background-color-active);
+
+      &::before {
+        content: '';
+        @apply gl-bg-purple-500;
+        @apply gl-rounded-base;
+        @apply gl-block;
+        @apply gl-absolute;
+        top: 3px;
+        left: 3px;
+        bottom: 3px;
+        width: 3px;
+      }
+    }
+  }
+}
