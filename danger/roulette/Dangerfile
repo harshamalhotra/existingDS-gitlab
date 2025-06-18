@@ -10,7 +10,11 @@ For a complete list of eligible and required reviewers, expand the
 
 You can also use the
 [GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/)
-to find other reviewers.
+to find other reviewers. Choose the
+[gitlab-ui](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=gitlab-ui)
+project in the dropdown for GitLab UI changes, or
+[design.gitlab.com](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=design.gitlab.com)
+for other changes.
 
 MARKDOWN
 
