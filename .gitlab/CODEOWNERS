@@ -1,5 +1,6 @@
-^[Engineering] @psimyn @gitlab-org/maintainers/frontend
+^[Engineering] @gitlab-org/maintainers/frontend
 *
+!/contents/
 
 [GitLab UI] @gitlab-org/maintainers/gitlab-ui
 /packages/gitlab-ui/
@@ -20,10 +21,6 @@
 /packages/gitlab-ui/src/tokens
 
 [UX maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @ameliabauerly @danmh @aregnery
-/contents/
-/pages/
-
-^[UX trainee maintainers]
 /contents/
 /pages/
 

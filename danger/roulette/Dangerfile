@@ -1,0 +1,67 @@
+# frozen_string_literal: true
+
+REVIEW_ROULETTE_SECTION = <<MARKDOWN
+## Reviewer roulette
+
+Here are some suggested reviewers for this merge request.
+
+For a complete list of eligible and required reviewers, expand the
+[approvals status merge request widget](https://docs.gitlab.com/user/project/merge_requests/approvals/#for-a-single-merge-request).
+
+You can also use the
+[GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/)
+to find other reviewers. Choose the
+[gitlab-ui](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=gitlab-ui)
+project in the dropdown for GitLab UI changes, or
+[design.gitlab.com](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=design.gitlab.com)
+for other changes.
+
+MARKDOWN
+
+CATEGORY_TABLE = <<MARKDOWN
+
+| Category | Reviewer |
+| -------- | -------- |
+MARKDOWN
+
+NO_SUGGESTIONS = <<MARKDOWN
+
+There are no reviewer and maintainer suggestions for the changes in this MR.
+MARKDOWN
+
+NOT_AVAILABLE_TEMPLATES = {
+  default: 'No %{role} available',
+}.freeze
+
+def note_for_spin_role(spin, role, category)
+  template = NOT_AVAILABLE_TEMPLATES[category] || NOT_AVAILABLE_TEMPLATES[:default]
+
+  note = spin.public_send(role)&.markdown_name(author: roulette.team_mr_author)
+
+  note || (template % { role: role })
+end
+
+def markdown_row_for_spin(category, spin)
+  # We ask for maintainers here, but it seems for codeowners approvals, we
+  # might get reviewers anyway? At least, passing :reviewer always results in
+  # "No reviewer available".
+  "| #{category} | #{note_for_spin_role(spin, :maintainer, category)} |"
+end
+
+changes = helper.changes_by_category
+
+categories = roulette.prepare_categories(changes.keys)
+
+if changes.any? || roulette.codeowners_approvals.any?
+  rows = roulette.codeowners_approvals.map do |approval|
+    markdown_row_for_spin(approval.category, approval.spin)
+  end
+
+  markdown(REVIEW_ROULETTE_SECTION)
+
+  if rows.empty?
+    markdown(NO_SUGGESTIONS)
+  else
+    markdown(CATEGORY_TABLE + rows.join("\n"))
+  end
+end
