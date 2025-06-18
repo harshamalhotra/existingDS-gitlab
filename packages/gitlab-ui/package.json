@@ -197,7 +197,7 @@
     "sass": "^1.49.9",
     "sass-loader": "^10.2.0",
     "sass-true": "^6.1.0",
-    "start-server-and-test": "^1.10.6",
+    "start-server-and-test": "^1.15.4",
     "storybook": "^7.6.20",
     "storybook-dark-mode": "4.0.2",
     "style-dictionary": "^4.3.3",
