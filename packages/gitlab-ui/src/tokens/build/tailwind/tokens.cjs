@@ -376,6 +376,14 @@ const backgroundColor = {
   ...statusBackgroundColors,
   ...feedbackBackgroundColors,
   dropdown: 'var(--gl-dropdown-background-color, var(--gl-background-color-overlap, #fff))',
+  control: {
+    default: 'var(--gl-control-background-color-default, var(--gl-color-neutral-0, #fff))',
+    disabled: 'var(--gl-control-background-color-disabled, var(--gl-color-neutral-10, #fbfafd))',
+    concatenation:
+      'var(--gl-control-background-color-concatenation, var(--gl-color-neutral-10, #fbfafd))',
+    readonly:
+      'var(--gl-control-background-color-readonly, var(--gl-color-alpha-dark-2, rgba(05, 05, 06, 0.02)))',
+  },
 };
 
 const borderColor = {
@@ -383,6 +391,11 @@ const borderColor = {
   ...borderColors,
   dropdown: 'var(--gl-dropdown-border-color, var(--gl-border-color-strong, #bfbfc3))',
   'dropdown-divider': 'var(--gl-dropdown-divider-color, var(--gl-border-color-default, #dcdcde))',
+  control: {
+    default: 'var(--gl-control-border-color-default, var(--gl-color-neutral-400, #89888d))',
+    disabled: 'var(--gl-control-border-color-disabled, var(--gl-color-neutral-100, #dcdcde))',
+    error: 'var(--gl-control-border-color-error, var(--gl-color-red-500, #dd2b0e))',
+  },
 };
 
 const outlineColor = {
@@ -406,6 +419,11 @@ const textColor = {
   primary: 'var(--gl-text-primary, #28272d)',
   secondary: 'var(--gl-text-secondary, #737278)',
   tertiary: 'var(--gl-text-tertiary, #89888d)',
+  control: {
+    placeholder: 'var(--gl-control-placeholder-color, var(--gl-text-color-disabled, #89888d))',
+    error: 'var(--gl-control-text-color-error, var(--gl-text-color-danger, #c02f12))',
+    valid: 'var(--gl-control-text-color-valid, var(--gl-text-color-success, #2f7549))',
+  },
 };
 
 module.exports = {

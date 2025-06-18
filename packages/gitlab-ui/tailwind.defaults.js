@@ -73,6 +73,15 @@ function addCustomDefinitions({ addComponents, addUtilities }) {
         },
       },
     },
+    '.bg-control': {
+      'background-color': 'var(--gl-control-background-color-default)',
+      '&:disabled': {
+        'background-color': 'var(--gl-control-background-color-disabled)',
+      },
+      '&:readonly': {
+        'background-color': 'var(--gl-control-background-color-readonly)',
+      },
+    },
     '.border': {
       'border-style': 'solid',
       'border-color': 'var(--gl-border-color-default)',
@@ -92,6 +101,18 @@ function addCustomDefinitions({ addComponents, addUtilities }) {
     '.border-l': {
       'border-left-style': 'solid',
       'border-left-color': 'var(--gl-border-color-default)',
+    },
+    '.border-control': {
+      'border-color': 'var(--gl-control-border-color-default)',
+      '&:hover': {
+        'border-color': 'var(--gl-control-border-color-hover)',
+      },
+      '&:focus': {
+        'border-color': 'var(--gl-control-border-color-focus)',
+      },
+      '&:disabled': {
+        'border-color': 'var(--gl-control-border-color-disabled)',
+      },
     },
     '.str-truncated': {
       display: 'inline-block',
