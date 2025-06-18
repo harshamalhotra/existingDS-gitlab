@@ -76,28 +76,31 @@ export default {
   },
   methods: {
     slashKeyListener(event) {
-      if (event.key === '/' || event.keyCode === 191) {
-        // Don't trigger if user is already typing in an input, textarea, or contenteditable
-        const { activeElement } = document;
-        const isInputActive =
-          activeElement &&
-          (activeElement.tagName === 'INPUT' ||
-            activeElement.tagName === 'TEXTAREA' ||
-            activeElement.contentEditable === 'true');
+      if (!this.isSlashKey(event)) return;
+      if (this.isUserTyping()) return;
 
-        if (!isInputActive) {
-          event.preventDefault();
-          this.focusSearchInput();
-        }
-      }
+      event.preventDefault();
+      this.focusSearchInput();
+    },
+    isSlashKey({ key, keyCode }) {
+      const SLASH_KEY_CODE = 191;
+      return key === '/' || keyCode === SLASH_KEY_CODE;
+    },
+    isUserTyping() {
+      const { activeElement } = document;
+      if (!activeElement) return false;
+
+      const { tagName, contentEditable } = activeElement;
+
+      const editableElements = ['INPUT', 'TEXTAREA'];
+      return editableElements.includes(tagName) || contentEditable === 'true';
     },
     focusSearchInput() {
-      if (this.$refs.input && this.$refs.input.$el) {
-        const input = this.$refs.input.$el.querySelector('input');
-        if (input) {
-          input.focus();
-        }
-      }
+      const inputElement = this.getSearchInputElement();
+      inputElement?.focus();
+    },
+    getSearchInputElement() {
+      return this.$refs.input?.$el?.querySelector('input') || null;
     },
     addBodyListener() {
       document.body.addEventListener('mousedown', this.bodyListener);
