@@ -56,7 +56,7 @@ or newer.
 git clone git@gitlab.com:gitlab-org/gitlab-services/design.gitlab.com.git
 
 # Navigate to the root of the project
-cd gitlab-ui
+cd design.gitlab.com/packages/gitlab-ui
 
 # Install all the dependencies of the project
 yarn # or yarn install
