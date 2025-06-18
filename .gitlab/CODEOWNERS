@@ -23,10 +23,6 @@
 /contents/
 /pages/
 
-^[UX trainee maintainers]
-/contents/
-/pages/
-
 ^[UX reviewers] @gitlab-com/gitlab-ux/designers
 /contents/
 /pages/
