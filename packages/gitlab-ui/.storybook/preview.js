@@ -16,11 +16,26 @@ const decorators = [
   () => ({
     template: '<story />',
     mounted() {
+      window.addEventListener('message', this.toggleDarkModeClass);
+
+      // Request initial dark mode state from parent
+      window.parent.postMessage({ type: 'REQUEST_DARK_MODE_STATE' }, '*');
+
       this.$nextTick()
         .then(() => {
           return this.$el.parentElement.classList.add('vue-component-mounted');
         })
         .catch(() => {});
+    },
+    beforeDestroy() {
+      window.removeEventListener('message', this.toggleDarkModeClass);
+    },
+    methods: {
+      toggleDarkModeClass(event) {
+        if (event.data && typeof event.data.isDarkMode === 'boolean') {
+          document.documentElement.classList.toggle('gl-dark', event.data.isDarkMode);
+        }
+      },
     },
   }),
 ];
