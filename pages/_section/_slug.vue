@@ -89,6 +89,9 @@ export default {
     hasComponents() {
       return Boolean(this.page?.components?.length);
     },
+    hidePageNavigation() {
+      return Boolean(this.page.hidePageNavigation);
+    },
     showTabs() {
       return Boolean(this.tabs.length);
     },
@@ -164,7 +167,11 @@ export default {
       :deprecated="page.deprecated"
     />
     <div class="gl-gap-7 lg:gl-flex">
-      <page-navigation class="gl-order-2" content-selector=".nuxt-content" />
+      <page-navigation
+        v-if="!hidePageNavigation"
+        class="gl-order-2"
+        content-selector=".nuxt-content"
+      />
       <div class="gl-order-1 gl-shrink gl-grow">
         <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
           <gl-nav-item
