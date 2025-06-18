@@ -22,20 +22,6 @@ export default {
     componentName() {
       return NAME_MAPPING[this.page.slug];
     },
-    inspectUrl() {
-      return `${this.$lookbookUrl}/inspect/pajamas/${this.componentName}`;
-    },
-    previewName() {
-      const capitalizedComponentName = this.componentName
-        .split('_')
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join('');
-      return `Pajamas::${capitalizedComponentName}ComponentPreview`;
-    },
-  },
-  async mounted() {
-    await this.$nextTick();
-    window.Lookbook.initEmbeds();
   },
 };
 </script>
@@ -43,7 +29,7 @@ export default {
 <template>
   <div class="gl-pb-4 gl-pt-0">
     <div v-if="componentName">
-      <lookbook-embed :app="$lookbookUrl" :preview="previewName" panels="params,notes,*" />
+      <lookbook-viewer :component="componentName" />
       <p class="gl-pt-4">
         <b>
           Find <a :href="inspectUrl">more scenarios</a> of the {{ componentName }} component in our
