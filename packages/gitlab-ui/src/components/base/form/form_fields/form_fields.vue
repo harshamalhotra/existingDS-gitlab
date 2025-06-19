@@ -175,6 +175,11 @@ export default {
     },
     onFieldValidationUpdate(fieldName, invalidFeedback) {
       this.fieldValidations = setObjectProperty(this.fieldValidations, fieldName, invalidFeedback);
+
+      this.$emit('field-validation', {
+        fieldName,
+        ...this.fieldValidationProps[fieldName],
+      });
     },
     onFieldBlur(fieldName) {
       this.setFieldDirty(fieldName);
