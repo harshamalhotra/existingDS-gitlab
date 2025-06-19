@@ -29,43 +29,41 @@ The same palettes are used for light and dark UI, though they may be applied dif
 
 ## UI
 
-### Chromatic
-
 We have five primary chromatic color ramps that include a total 55 colors for use across the application. These colors give flexibility during the design process, while also providing a harmonious palette that looks consistent and in-line with our brand styles.
 
 Though deciding which color to use depends on the situation, here are some general guidelines for using the chromatic hues:
 
-#### Blue
+### Blue
 
 Blue indicates a current or active state. It communicates management, progress, connectivity, or organization.
 
 <story-viewer component="tokens-color-constant" story="blue" title="Tokens"></story-viewer>
 
-#### Green
+### Green
 
 Green indicates success. It communicates save, create, add, available, done, approved, or resolved.
 
 <story-viewer component="tokens-color-constant" story="green" title="Tokens"></story-viewer>
 
-#### Orange
+### Orange
 
 Orange indicates attention is required. It communicates warning, pending, missing, or impeded progress.
 
 <story-viewer component="tokens-color-constant" story="orange" title="Tokens"></story-viewer>
 
-#### Red
+### Red
 
 Red indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
 
 <story-viewer component="tokens-color-constant" story="red" title="Tokens"></story-viewer>
 
-#### Purple
+### Purple
 
 Purple is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
 <story-viewer component="tokens-color-constant" story="purple" title="Tokens"></story-viewer>
 
-#### Neutral
+### Neutral
 
 Neutrals are primarily used for surfaces and within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
 
