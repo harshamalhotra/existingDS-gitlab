@@ -7,6 +7,10 @@
     @apply gl-mt-7
   }
 
+  > h2:first-child {
+    @apply gl-mt-0;
+  }
+
   > h2,
   > h3 {
     @apply gl-mt-6;
