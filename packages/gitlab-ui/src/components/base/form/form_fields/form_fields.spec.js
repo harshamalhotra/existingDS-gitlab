@@ -172,6 +172,16 @@ describe('GlFormFields', () => {
 
       await nextTick();
 
+      expect(wrapper.emitted('field-validation')).toEqual([
+        [
+          {
+            fieldName: 'username',
+            invalidFeedback: 'User name is required',
+            state: false,
+          },
+        ],
+      ]);
+
       expect(findFormGroupsAsData()).toMatchObject([
         {
           label: TEST_FIELDS.username.label,
@@ -257,6 +267,25 @@ describe('GlFormFields', () => {
               id: 'gl-form-field-testunique',
             }),
           },
+        ]);
+      });
+
+      it('emits field-validation for each input', () => {
+        expect(wrapper.emitted('field-validation')).toEqual([
+          [
+            {
+              fieldName: 'username',
+              invalidFeedback: 'User name is required',
+              state: false,
+            },
+          ],
+          [
+            {
+              fieldName: 'evenCount',
+              invalidFeedback: 'Count is required',
+              state: false,
+            },
+          ],
         ]);
       });
 
