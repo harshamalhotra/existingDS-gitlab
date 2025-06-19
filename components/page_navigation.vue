@@ -73,14 +73,16 @@ export default {
   <nav v-if="headings.length" aria-labelledby="page-navigation-title" class="page-navigation">
     <h2 id="page-navigation-title" class="gl-sr-only">On this page</h2>
     <ul>
-      <li
-        v-for="{ id, text, level } in headings"
-        :key="id"
-        :class="{
-          '!gl-ml-5': level === 3,
-        }"
-      >
-        <a :href="`#${id}`" :class="{ active: activeHeading === id }" @click.prevent="scrollTo(id)">
+      <li v-for="{ id, text, level } in headings" :key="id">
+        <a
+          :href="`#${id}`"
+          :aria-current="String(activeHeading === id)"
+          :class="{
+            active: activeHeading === id,
+            '!gl-pl-6': level === 3,
+          }"
+          @click.prevent="scrollTo(id)"
+        >
           {{ text }}
         </a>
       </li>

@@ -161,18 +161,18 @@ export default {
 
 <template>
   <page-container class="gl-py-7">
-    <page-header
-      :heading="page.name"
-      :description="page.description"
-      :deprecated="page.deprecated"
-    />
-    <div class="gl-gap-7 lg:gl-flex">
+    <div class="gl-flex gl-flex-col gl-items-start gl-gap-7 lg:gl-flex-row">
       <page-navigation
         v-if="!hidePageNavigation"
-        class="gl-order-2"
+        class="lg:gl-order-2"
         content-selector=".nuxt-content"
       />
-      <div class="gl-order-1 gl-shrink gl-grow">
+      <div class="gl-shrink gl-grow lg:gl-order-1">
+        <page-header
+          :heading="page.name"
+          :description="page.description"
+          :deprecated="page.deprecated"
+        />
         <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
           <gl-nav-item
             v-for="tab in tabs"

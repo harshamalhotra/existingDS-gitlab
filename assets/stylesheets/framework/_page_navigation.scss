@@ -1,9 +1,13 @@
 .page-navigation {
-  @apply gl-sticky;
-  @apply gl-top-0;
-  @apply gl-overflow-y-auto;
-  @apply gl-max-h-screen;
-  min-width: $sidebar-width;
+  @apply gl-w-full;
+  @apply lg:gl-sticky;
+  @apply lg:gl-top-0;
+  @apply lg:gl-border-l;
+  @apply lg:gl-overflow-y-auto;
+  @apply lg:gl-max-h-screen;
+  @apply lg:gl-w-30;
+  @apply lg:gl-grow-0;
+  @apply lg:gl-shrink-0;
 
   ul {
     @apply gl-m-0;
@@ -16,29 +20,21 @@
   }
 
   a {
-    @apply gl-flex;
-    @apply gl-gap-2;
-    @apply gl-rounded-base;
+    @apply gl-block;
     @apply gl-p-3;
-    @apply gl-pl-4;
     @apply gl-no-underline;
+    @apply gl-border-l-4;
+    @apply gl-border-l-solid;
+    @apply gl-border-l-transparent;
     @include gl-action-neutral-colors;
 
-    &.active {
-      @apply gl-relative;
-      background-color: var(--gl-action-neutral-background-color-active);
+    &:focus {
+      @apply gl-focus-inset;
+    }
 
-      &::before {
-        content: '';
-        @apply gl-bg-purple-500;
-        @apply gl-rounded-base;
-        @apply gl-block;
-        @apply gl-absolute;
-        top: 3px;
-        left: 3px;
-        bottom: 3px;
-        width: 3px;
-      }
+    &.active {
+      @apply gl-font-bold;
+      @apply gl-border-l-purple-500;
     }
   }
 }
