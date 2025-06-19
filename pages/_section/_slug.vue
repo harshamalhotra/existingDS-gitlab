@@ -167,7 +167,7 @@ export default {
         :key="tab.route"
         exact
         :to="{ name: tab.route, params: $route.params }"
-        link-classes="gl-tab-nav-item"
+        :link-classes="['gl-tab-nav-item']"
         active-class="gl-tab-nav-item-active"
       >
         {{ tab.title }}
