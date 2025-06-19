@@ -55,6 +55,11 @@ export const CustomActions = () => ({
 CustomActions.tags = ['skip-visual-test'];
 ```
 
+## Testing appearance modes
+
+Automated visual regression testing only applies to light mode. Changes that impact dark
+mode must be manually tested.
+
 ## Simulating user interactions
 
 Some stories might not showcase relevant states by only mounting components. It is sometimes
