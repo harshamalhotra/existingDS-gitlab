@@ -2,6 +2,7 @@
 import { GlNav, GlNavItem } from '../../helpers/gitlab_ui';
 import PageContainer from '../../components/page_container.vue';
 import PageHeader from '../../components/page_header.vue';
+import PageNavigation from '../../components/page_navigation.vue';
 import { buildMeta } from '../../helpers/seo';
 
 /*
@@ -32,6 +33,7 @@ export default {
     GlNavItem,
     PageContainer,
     PageHeader,
+    PageNavigation,
   },
   scrollToTop: true,
   editThisPage: {
@@ -86,6 +88,9 @@ export default {
     },
     hasComponents() {
       return Boolean(this.page?.components?.length);
+    },
+    hidePageNavigation() {
+      return Boolean(this.page.hidePageNavigation);
     },
     showTabs() {
       return Boolean(this.tabs.length);
@@ -156,30 +161,39 @@ export default {
 
 <template>
   <page-container class="gl-py-7">
-    <page-header
-      :heading="page.name"
-      :description="page.description"
-      :deprecated="page.deprecated"
-    />
-    <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
-      <gl-nav-item
-        v-for="tab in tabs"
-        :key="tab.route"
-        exact
-        :to="{ name: tab.route, params: $route.params }"
-        :link-classes="['gl-tab-nav-item']"
-        active-class="gl-tab-nav-item-active"
-      >
-        {{ tab.title }}
-      </gl-nav-item>
-    </gl-nav>
-    <nuxt-child
-      :page="page"
-      :component-label="componentLabel"
-      :foundation-label="page.foundationLabel"
-    />
-    <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">
-      Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
-    </p>
+    <div class="gl-flex gl-flex-col gl-items-start gl-gap-7 lg:gl-flex-row">
+      <page-navigation
+        v-if="!hidePageNavigation"
+        class="lg:gl-order-2"
+        content-selector=".nuxt-content"
+      />
+      <div class="gl-shrink gl-grow lg:gl-order-1">
+        <page-header
+          :heading="page.name"
+          :description="page.description"
+          :deprecated="page.deprecated"
+        />
+        <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
+          <gl-nav-item
+            v-for="tab in tabs"
+            :key="tab.route"
+            exact
+            :to="{ name: tab.route, params: $route.params }"
+            :link-classes="['gl-tab-nav-item']"
+            active-class="gl-tab-nav-item-active"
+          >
+            {{ tab.title }}
+          </gl-nav-item>
+        </gl-nav>
+        <nuxt-child
+          :page="page"
+          :component-label="componentLabel"
+          :foundation-label="page.foundationLabel"
+        />
+        <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">
+          Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
+        </p>
+      </div>
+    </div>
   </page-container>
 </template>

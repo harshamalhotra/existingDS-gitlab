@@ -23,7 +23,7 @@ If a component is not part of a variant container, numerically prefixing the bre
 
 Lastly, when you create a component variant in Figma it automatically adds a border radius and dashed purple border to the frame. Remove both the border radius and border.
 
-### Examples
+## Examples
 
 **Icons**
 

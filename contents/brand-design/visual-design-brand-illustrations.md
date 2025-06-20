@@ -15,7 +15,7 @@ Our marketing illustrations are an extension of our custom iconography system, a
 - **Combining elements** shows collaboration and how multiple systems are working alongside one another.
 - **Inviting elements**, such as color and diversity, add vibrancy and life to the story.
 
-### Construction
+## Construction
 
 When building illustrations, adhere to the following guidelines to maintain visual consistency:
 
