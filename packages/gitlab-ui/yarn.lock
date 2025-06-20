@@ -1660,7 +1660,7 @@
     jest-haste-map "^29.7.0"
     slash "^3.0.0"
 
-"@jest/test-sequencer@^30.0.0":
+"@jest/test-sequencer@^30.0.2":
   version "30.0.2"
   resolved "https://registry.yarnpkg.com/@jest/test-sequencer/-/test-sequencer-30.0.2.tgz#2693692d285b1c929ed353f7f0b7cbea51c57515"
   integrity sha512-fbyU5HPka0rkalZ3MXVvq0hwZY8dx3Y6SCqR64zRmh+xXlDeFl0IdL4l9e7vp4gxEXTYHbwLFA1D+WW5CucaSw==
