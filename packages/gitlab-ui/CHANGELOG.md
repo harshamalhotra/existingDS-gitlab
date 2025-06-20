@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.8.0
+
+### Minor Changes
+
+- 4df8645: GlCollapsibleListbox: give search input an explicit color
+
 ## 114.7.1
 
 ### Patch Changes
