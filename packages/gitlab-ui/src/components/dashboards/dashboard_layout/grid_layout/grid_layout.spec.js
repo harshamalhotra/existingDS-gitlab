@@ -1,9 +1,9 @@
 import { nextTick } from 'vue';
 import { GridStack } from 'gridstack';
 import { shallowMount } from '@vue/test-utils';
+import pickBy from 'lodash/pickBy';
 import { breakpoints } from '../../../../utils/breakpoints';
 import { waitForAnimationFrame } from '../../../../utils/test_utils';
-import { getPanelGridItemConfig } from '../../utils';
 import { dashboard, mockPanel } from '../../mock_data';
 import GridLayout from './grid_layout.vue';
 
@@ -78,7 +78,7 @@ describe('GlGridLayout', () => {
           alwaysShowResizeHandle: true,
           staticGrid: true,
           animate: true,
-          margin: 8,
+          margin: '8px',
           handle: '.grid-stack-item-handle',
           cellHeight: '125px',
           minRow: 1,
@@ -92,11 +92,28 @@ describe('GlGridLayout', () => {
     it('loads the parsed dashboard config', () => {
       expect(mockGridLoad).toHaveBeenCalledWith(
         dashboard.panels.map((panel) => {
-          const { gridAttributes, ...panelWithoutGridAttributes } = panel;
+          const { id, gridAttributes, ...panelWithoutGridAttributes } = panel;
+          const { xPos, yPos, width, height, minWidth, minHeight, maxWidth, maxHeight } =
+            gridAttributes;
+
+          const filterUndefinedValues = (obj) => pickBy(obj, (value) => value !== undefined);
 
           return {
-            ...getPanelGridItemConfig(panel),
-            props: panelWithoutGridAttributes,
+            ...filterUndefinedValues({
+              x: xPos,
+              y: yPos,
+              w: width,
+              h: height,
+              minH: minHeight,
+              minW: minWidth,
+              maxH: maxHeight,
+              maxW: maxWidth,
+              id,
+            }),
+            props: {
+              id,
+              ...panelWithoutGridAttributes,
+            },
           };
         })
       );

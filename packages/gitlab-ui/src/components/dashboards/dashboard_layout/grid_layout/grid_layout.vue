@@ -2,31 +2,9 @@
 import { GridStack } from 'gridstack';
 import cloneDeep from 'lodash/cloneDeep';
 import pickBy from 'lodash/pickBy';
-import { getPanelGridItemConfig } from '../../utils';
 import { breakpoints } from '../../../../utils/breakpoints';
 
 const CURSOR_GRABBING_CLASS = '!gl-cursor-grabbing';
-
-const GRIDSTACK_MARGIN = 8;
-const GRIDSTACK_CSS_HANDLE = '.grid-stack-item-handle';
-
-/* Magic number 125px:
- * After allowing for padding, and the panel title row, this leaves us with minimum 48px height for the cell content.
- * This means text/content with our spacing scale can fit up to 49px without scrolling.
- */
-const GRIDSTACK_CELL_HEIGHT = '125px';
-const GRIDSTACK_MIN_ROW = 1;
-
-const GRIDSTACK_BASE_CONFIG = {
-  margin: GRIDSTACK_MARGIN,
-  handle: GRIDSTACK_CSS_HANDLE,
-  cellHeight: GRIDSTACK_CELL_HEIGHT,
-  minRow: GRIDSTACK_MIN_ROW,
-  columnOpts: { breakpoints: [{ w: breakpoints.md, c: 1 }] },
-  alwaysShowResizeHandle: true,
-  animate: true,
-  float: true,
-};
 
 export default {
   name: 'GlGridLayout',
@@ -53,7 +31,7 @@ export default {
         const { gridAttributes, ...otherProps } = panel;
 
         return {
-          ...getPanelGridItemConfig(panel),
+          ...this.getPanelGridItemConfig(panel),
           props: otherProps,
         };
       });
@@ -86,7 +64,7 @@ export default {
           const panel = this.gridPanels.find((p) => p.id === updatedPanel.id);
 
           if (panel) {
-            // Exclude `gridAttributes` from being updated
+            // Exclude `gridAttributes` from being included in the panel props as it's not a valid prop for the panel component
             const panelPropsWithoutGridAttributes = pickBy(
               updatedPanel,
               (k) => k !== 'gridAttributes'
@@ -107,6 +85,8 @@ export default {
     this.grid?.destroy(removeDom);
   },
   methods: {
+    // TODO: Refactor this to use render methods once Vue 3 migration is complete
+    // https://gitlab.com/gitlab-org/gitlab/-/issues/549095
     async mountGridComponents(panels, options = { scrollIntoView: false }) {
       // Ensure new panels are always rendered first
       await this.$nextTick();
@@ -139,9 +119,26 @@ export default {
       this.mountGridComponents(this.gridPanels);
     },
     initGridStack() {
+      // See https://github.com/gridstack/gridstack.js/tree/master/doc#grid-options
       this.grid = GridStack.init(
         {
-          ...GRIDSTACK_BASE_CONFIG,
+          // Uniform gap between panels
+          margin: '8px',
+          // CSS Selector for finding the drag handle element
+          handle: '.grid-stack-item-handle',
+          /* Magic number 125px:
+           * After allowing for padding, and the panel title row, this leaves us with minimum 48px height for the cell content.
+           * This means text/content with our spacing scale can fit up to 49px without scrolling.
+           */
+          cellHeight: '125px',
+          // Setting 1 in minRow prevents the grid collapsing when all panels are removed
+          minRow: 1,
+          // Define the number of columns for anything below a set width, defaults to fill the available space
+          columnOpts: { breakpoints: [{ w: breakpoints.md, c: 1 }] },
+          alwaysShowResizeHandle: true,
+          animate: true,
+          float: true,
+          // Toggles user-customization of grid layout
           staticGrid: this.isStatic,
         },
         this.$refs.grid
@@ -168,6 +165,25 @@ export default {
         this.removeGridPanels(items);
       });
     },
+    getPanelGridItemConfig({
+      gridAttributes: { xPos, yPos, width, height, minHeight, minWidth, maxHeight, maxWidth },
+      id,
+    }) {
+      const filterUndefinedValues = (obj) => pickBy(obj, (value) => value !== undefined);
+
+      // GridStack renders undefined layout values so we need to filter them out.
+      return filterUndefinedValues({
+        x: xPos,
+        y: yPos,
+        w: width,
+        h: height,
+        minH: minHeight,
+        minW: minWidth,
+        maxH: maxHeight,
+        maxW: maxWidth,
+        id,
+      });
+    },
     convertToGridAttributes(gridStackItem) {
       return {
         yPos: gridStackItem.y,
@@ -192,8 +208,10 @@ export default {
     },
     emitLayoutChanges(items) {
       const newValue = cloneDeep(this.value);
+
       items.forEach((item) => {
         const panel = newValue.panels.find((p) => p.id === item.id);
+
         panel.gridAttributes = {
           ...panel.gridAttributes,
           ...this.convertToGridAttributes(item),

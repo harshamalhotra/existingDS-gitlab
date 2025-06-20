@@ -1,26 +1,6 @@
-import { getUniquePanelId } from './utils';
+import uniqueId from 'lodash/uniqueId';
 
-export const createVisualization = () => ({
-  version: 1,
-  type: 'LineChart',
-  slug: 'test_visualization',
-  data: {
-    type: 'cube_analytics',
-    query: {
-      measures: ['TrackedEvents.count'],
-      timeDimensions: [
-        {
-          dimension: 'TrackedEvents.utcTime',
-          granularity: 'day',
-        },
-      ],
-      limit: 100,
-      timezone: 'UTC',
-      filters: [],
-      dimensions: [],
-    },
-  },
-});
+export const getUniquePanelId = () => uniqueId('panel-');
 
 export const dashboard = {
   id: 'analytics_overview',
@@ -31,14 +11,12 @@ export const dashboard = {
   panels: [
     {
       title: 'Test A',
-      gridAttributes: { width: 3, height: 3 },
-      visualization: createVisualization(),
+      gridAttributes: { width: 3, height: 3, xPos: 0, yPos: 0 },
       id: getUniquePanelId(),
     },
     {
       title: 'Test B',
-      gridAttributes: { width: 2, height: 4, minHeight: 2, minWidth: 2 },
-      visualization: createVisualization(),
+      gridAttributes: { width: 2, height: 4, xPos: 1, yPos: 1, minHeight: 2, minWidth: 2 },
       id: getUniquePanelId(),
     },
   ],
@@ -58,6 +36,5 @@ export const mockPanel = {
     maxWidth: 1,
     maxHeight: 2,
   },
-  visualization: createVisualization(),
   id: getUniquePanelId(),
 };
