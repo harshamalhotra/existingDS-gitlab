@@ -1,5 +1,7 @@
 <script>
 import { slugify } from '../helpers/slugify';
+import { debounceByAnimationFrame } from '../helpers/gitlab_ui';
+import { getActiveHeadingIndex, mapHeadingPositionsToScrollTops } from './page_navigation_utils';
 
 export default {
   name: 'PageNavigation',
@@ -13,24 +15,64 @@ export default {
   data: () => ({
     headings: [],
     activeHeading: null,
-    observer: null,
   }),
+  created() {
+    // Begin non-reactive properties.
+    this.resizeObserver = null;
+    this.contentElement = null;
+    this.preventScrollUpdatingActiveHeading = false;
+    this.realHeadingPositions = [];
+    this.destroyFns = [];
+    this.isScrollEndSupported = false;
+    // End non-reactive properties.
+  },
   mounted() {
     this.init();
   },
   beforeDestroy() {
-    this.observer?.disconnect();
+    for (const destroyFn of this.destroyFns) {
+      destroyFn();
+    }
   },
   methods: {
     init() {
+      this.isScrollEndSupported = 'onscrollend' in window;
+      this.contentElement = document.querySelector(this.contentSelector);
+
+      if (!this.contentElement) return;
+
       this.extractHeadings();
-      if (this.headings.length) this.setupScrollObserver();
+
+      if (this.headings.length === 0) return;
+
+      this.measureHeadings();
+
+      this.onScroll();
+      const onScrollDebounced = debounceByAnimationFrame(this.onScroll);
+      document.addEventListener('scroll', onScrollDebounced);
+      this.destroyFns.push(() => {
+        document.removeEventListener('scroll', onScrollDebounced);
+      });
+
+      if (this.isScrollEndSupported) {
+        document.addEventListener('scrollend', this.onScrollEnd);
+        this.destroyFns.push(() => {
+          document.removeEventListener('scrollend', this.onScrollEnd);
+        });
+      }
+
+      const measureHeadingsDebounced = debounceByAnimationFrame(this.measureHeadings);
+      this.resizeObserver = new ResizeObserver(() => {
+        measureHeadingsDebounced();
+        onScrollDebounced();
+      });
+      this.resizeObserver.observe(this.contentElement);
+      this.destroyFns.push(() => {
+        this.resizeObserver?.disconnect();
+      });
     },
     extractHeadings() {
-      const content = document.querySelector(this.contentSelector);
-      if (!content) return;
-
-      this.headings = [...content.querySelectorAll('h2, h3')].map((el) => {
+      this.headings = [...this.contentElement.querySelectorAll('h2, h3')].map((el) => {
         const text = el.textContent.trim();
         const id = el.id || slugify(text);
 
@@ -44,27 +86,56 @@ export default {
         };
       });
     },
-    setupScrollObserver() {
-      this.observer = new IntersectionObserver(
-        (entries) => {
-          const intersecting = entries.find((e) => e.isIntersecting);
-          if (intersecting) {
-            const heading = this.headings.find((h) => h.element === intersecting.target);
-            if (heading) this.activeHeading = heading.id;
-          }
-        },
-        { threshold: 0, rootMargin: '0% 0% -100% 0%' },
-      );
+    getScrollAndPositionData() {
+      const { clientHeight, scrollHeight } = document.documentElement;
 
-      this.headings.forEach((h) => this.observer.observe(h.element));
+      return {
+        headingPositions: this.realHeadingPositions,
+        documentScrollHeight: scrollHeight,
+        viewportHeight: clientHeight,
+      };
+    },
+    measureHeadings() {
+      const { scrollTop } = document.documentElement;
+
+      this.realHeadingPositions = this.headings.map(({ element }) => {
+        const { top } = element.getBoundingClientRect();
+        return top + scrollTop;
+      });
+    },
+    onScroll() {
+      if (this.preventScrollUpdatingActiveHeading) return;
+
+      const headingIndex = getActiveHeadingIndex({
+        documentScrollTop: document.documentElement.scrollTop,
+        ...this.getScrollAndPositionData(),
+      });
+
+      const activeHeading = this.headings[headingIndex];
+
+      if (activeHeading) this.activeHeading = activeHeading.id;
+    },
+    onScrollEnd() {
+      this.preventScrollUpdatingActiveHeading = false;
     },
     scrollTo(id) {
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      document.getElementById(id)?.scrollIntoView({
-        behavior: prefersReducedMotion ? 'auto' : 'smooth',
-        block: 'start',
+      const headingIndex = this.headings.findIndex((heading) => id === heading.id);
+
+      if (headingIndex === -1) return;
+
+      this.activeHeading = id;
+      this.preventScrollUpdatingActiveHeading = this.isScrollEndSupported;
+
+      const top = mapHeadingPositionsToScrollTops({
+        ...this.getScrollAndPositionData(),
+      })[headingIndex];
+
+      window.scrollTo({
+        top,
+        behavior: 'smooth',
       });
-      window.history.replaceState?.(null, null, `#${id}`);
+
+      window.history.replaceState(null, '', `#${id}`);
     },
   },
 };
