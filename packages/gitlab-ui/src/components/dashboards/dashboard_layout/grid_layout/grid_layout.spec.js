@@ -15,7 +15,7 @@ const mockScrollIntoView = jest.fn();
 
 jest.mock('gridstack');
 
-describe('GridLayout', () => {
+describe('GlGridLayout', () => {
   let wrapper;
 
   const createWrapper = (props = {}) => {

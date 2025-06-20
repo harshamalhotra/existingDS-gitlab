@@ -29,7 +29,7 @@ const GRIDSTACK_BASE_CONFIG = {
 };
 
 export default {
-  name: 'GridLayout',
+  name: 'GlGridLayout',
   props: {
     value: {
       type: Object,
