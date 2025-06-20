@@ -71,7 +71,7 @@ export default {
     },
     /**
      * Data flow:
-     * 1. Initial: created/mounted → mountedWithCss becomes true → initGridStack() → grid.load(gridConfig) →
+     * 1. Initial: mounted → initGridStack() → grid.load(gridConfig) →
      *    grid.getGridItems() → initGridPanelSlots → gridPanels populated with DOM references
      * 2. Updates: value.panels changes → two parallel paths:
      *    a. gridConfig changes → grid.load() updates grid layout (but not gridPanels)
