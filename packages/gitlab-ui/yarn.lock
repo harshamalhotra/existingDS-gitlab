@@ -4068,7 +4068,7 @@
     loupe "^2.3.6"
     pretty-format "^29.5.0"
 
-"@vue/compat@^3.5.16":
+"@vue/compat@^3.5.17":
   version "3.5.17"
   resolved "https://registry.yarnpkg.com/@vue/compat/-/compat-3.5.17.tgz#a773242493df345979ea3dacac7acf6ba84f4b3e"
   integrity sha512-o95xqA4tIIXbimPEBBsw94iXI5kp880Gpby8dct2EC7qPYHwQis5Bb/HxoPd8H56HIzxtiiZpMwOOWOs79KVRw==
@@ -4107,7 +4107,7 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
-"@vue/compiler-sfc@^3.2.0", "@vue/compiler-sfc@^3.5.16":
+"@vue/compiler-sfc@^3.2.0", "@vue/compiler-sfc@^3.5.17":
   version "3.5.17"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.5.17.tgz#c518871276e26593612bdab36f3f5bcd053b13bf"
   integrity sha512-rQQxbRJMgTqwRugtjw0cnyQv9cP4/4BxWfTdRBkqsTfLOHWykLzbOc3C4GGzAmdMDxhzU/1Ija5bTjMVrddqww==
@@ -4162,7 +4162,7 @@
     sass "^1.18.0"
     stylus "^0.54.5"
 
-"@vue/server-renderer@^3.5.16":
+"@vue/server-renderer@^3.5.17":
   version "3.5.17"
   resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.5.17.tgz#9b8fd6a40a3d55322509fafe78ac841ede649fbe"
   integrity sha512-BOHhm8HalujY6lmC3DbqF6uXN/K00uWiEeF22LfEsm9Q93XeJ/plHTepGwf6tqFcF7GA5oGSSAAUock3VvzaCA==
