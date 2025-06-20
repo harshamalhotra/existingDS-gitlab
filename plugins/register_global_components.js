@@ -5,6 +5,7 @@ import IllustrationDirectory from '../components/illustration_directory.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
 import FigureImg from '../components/figure_img.vue';
+import LookbookViewer from '../components/lookbook_viewer.vue';
 import StoryViewer from '../components/story_viewer.vue';
 import Note from '../components/note.vue';
 import Todo from '../components/todo.vue';
@@ -17,6 +18,7 @@ Object.entries({
   Do,
   Dont,
   FigureImg,
+  LookbookViewer,
   StoryViewer,
   Note,
   Todo,

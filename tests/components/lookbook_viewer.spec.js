@@ -1,15 +1,15 @@
 import { shallowMount } from '@vue/test-utils';
-import Lookbook from '../../pages/_section/_slug/lookbook.vue';
+import LookbookViewer from '../../components/lookbook_viewer.vue';
 
 window.Lookbook = { initEmbeds: () => {} };
 
-describe('lookbook component', () => {
+describe('lookbook viewer component', () => {
   let wrapper;
 
   const createComponent = () => {
-    wrapper = shallowMount(Lookbook, {
+    wrapper = shallowMount(LookbookViewer, {
       propsData: {
-        page: { slug: 'progress-bar' },
+        component: 'alert',
       },
       stubs: {
         'lookbook-embed': true,
@@ -29,21 +29,15 @@ describe('lookbook component', () => {
   });
 
   describe('computed properties', () => {
-    describe('componentName', () => {
-      it('maps the page slug to a component name', () => {
-        expect(wrapper.vm.componentName).toBe('progress');
-      });
-    });
-
     describe('inspectUrl', () => {
       it('returns the correct URL of the Lookbook server', () => {
-        expect(wrapper.vm.inspectUrl).toBe('https://lookbook.example.com/inspect/pajamas/progress');
+        expect(wrapper.vm.inspectUrl).toBe('https://lookbook.example.com/inspect/pajamas/alert');
       });
     });
 
     describe('previewName', () => {
       it('returns the name of the Lookbook component preview class', () => {
-        expect(wrapper.vm.previewName).toBe('Pajamas::ProgressComponentPreview');
+        expect(wrapper.vm.previewName).toBe('Pajamas::AlertComponentPreview');
       });
     });
   });
