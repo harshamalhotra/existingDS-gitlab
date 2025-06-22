@@ -9,7 +9,7 @@
 
 # Execute the security scanners immediately
 .ui:playwright:
-  image: mcr.microsoft.com/playwright:v1.52.0-jammy
+  image: mcr.microsoft.com/playwright:v1.53.1-jammy
 
 .ui:node:
   image: node:22.15.1-bookworm
