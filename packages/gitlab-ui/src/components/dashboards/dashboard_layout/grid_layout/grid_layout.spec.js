@@ -283,6 +283,7 @@ describe('GlGridLayout', () => {
         ...dashboard.panels[0],
         loading: true,
       };
+      const { gridAttributes, ...updatedPanelProps } = updatedPanel;
 
       mockPanelSlots.mockClear();
 
@@ -306,7 +307,8 @@ describe('GlGridLayout', () => {
       );
 
       expect(updatedPanelCall).toBeDefined();
-      expect(updatedPanelCall[0].panel).toMatchObject(updatedPanel);
+
+      expect(updatedPanelCall[0].panel).toMatchObject(updatedPanelProps);
       expect(updatedPanelCall[0].panel.loading).toBe(true);
     });
   });

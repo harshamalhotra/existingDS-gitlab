@@ -1,6 +1,5 @@
 <script>
 import { GridStack } from 'gridstack';
-import cloneDeep from 'lodash/cloneDeep';
 import pickBy from 'lodash/pickBy';
 import { breakpoints } from '../../../../utils/breakpoints';
 
@@ -67,7 +66,7 @@ export default {
             // Exclude `gridAttributes` from being included in the panel props as it's not a valid prop for the panel component
             const panelPropsWithoutGridAttributes = pickBy(
               updatedPanel,
-              (k) => k !== 'gridAttributes'
+              (_, k) => k !== 'gridAttributes'
             );
 
             panel.props = { ...panelPropsWithoutGridAttributes };
@@ -92,7 +91,7 @@ export default {
       await this.$nextTick();
 
       panels.forEach((panel) => {
-        const wrapper = this.$refs.panelWrappers.find((w) => w.id === panel.id);
+        const wrapper = this.$refs.panelWrappers?.find((w) => w.id === panel.id);
         const widgetContentEl = panel.el.querySelector('.grid-stack-item-content');
 
         if (wrapper && widgetContentEl) {
@@ -207,10 +206,18 @@ export default {
       this.mountGridComponents(newPanels, { scrollIntoView: true });
     },
     emitLayoutChanges(items) {
-      const newValue = cloneDeep(this.value);
+      /**
+       * Uses JSON parse and stringify to remove object references.
+       * Lodash's `cloneDeep` retains circular references.
+       * See https://github.com/lodash/lodash/issues/4710#issuecomment-606892867 for details on cloneDeep circular references
+       * See https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm for the underlying mechanism used by Lodash
+       */
+      const newValue = JSON.parse(JSON.stringify(this.value));
 
       items.forEach((item) => {
         const panel = newValue.panels.find((p) => p.id === item.id);
+
+        if (!panel) return;
 
         panel.gridAttributes = {
           ...panel.gridAttributes,
