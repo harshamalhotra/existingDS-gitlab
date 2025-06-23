@@ -12,8 +12,7 @@ export default {
     <nuxt-child />
     <section aria-labelledby="skipTarget" class="homepage-hero gl-m-5">
       <page-container
-        class="gl-grid gl-min-h-48 gl-place-items-center gl-text-center"
-        max-width="54rem"
+        class="gl-grid gl-min-h-48 !gl-max-w-4xl gl-place-items-center gl-text-center"
       >
         <div>
           <img src="../assets/pajamas-logo.svg" alt="" width="56" height="96" />
@@ -28,7 +27,7 @@ export default {
     </section>
 
     <section aria-label="Content" class="gl-my-8">
-      <page-container max-width="54rem">
+      <page-container class="!gl-max-w-4xl">
         <div class="gl-grid gl-gap-7 gl-p-0 lg:gl-grid-cols-2">
           <div>
             <h2>Brand</h2>
@@ -50,7 +49,7 @@ export default {
     </section>
 
     <section aria-labelledby="contribute" class="gl-my-8">
-      <page-container max-width="54rem">
+      <page-container class="!gl-max-w-4xl">
         <div
           class="gl-rounded-lg gl-border-1 gl-border-solid gl-border-default gl-bg-subtle gl-p-5 lg:-gl-mx-5"
         >
