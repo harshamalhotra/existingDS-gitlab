@@ -68,7 +68,40 @@ export default {
       }
     },
   },
+  mounted() {
+    document.addEventListener('keydown', this.slashKeyListener);
+  },
+  beforeDestroy() {
+    document.removeEventListener('keydown', this.slashKeyListener);
+  },
   methods: {
+    slashKeyListener(event) {
+      if (!this.isSlashKey(event)) return;
+      if (this.isUserTyping()) return;
+
+      event.preventDefault();
+      this.focusSearchInput();
+    },
+    isSlashKey({ key, keyCode }) {
+      const SLASH_KEY_CODE = 191;
+      return key === '/' || keyCode === SLASH_KEY_CODE;
+    },
+    isUserTyping() {
+      const { activeElement } = document;
+      if (!activeElement) return false;
+
+      const { tagName, contentEditable } = activeElement;
+
+      const editableElements = ['INPUT', 'TEXTAREA'];
+      return editableElements.includes(tagName) || contentEditable === 'true';
+    },
+    focusSearchInput() {
+      const inputElement = this.getSearchInputElement();
+      inputElement?.focus();
+    },
+    getSearchInputElement() {
+      return this.$refs.input?.$el?.querySelector('input') || null;
+    },
     addBodyListener() {
       document.body.addEventListener('mousedown', this.bodyListener);
     },
@@ -200,6 +233,7 @@ export default {
       v-model="searchText"
       aria-label="Search"
       aria-haspopup="true"
+      aria-keyshortcuts="/"
       :aria-expanded="resultsVisible"
       autocomplete="off"
       spellcheck="false"
