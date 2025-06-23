@@ -59,8 +59,9 @@ export default {
       this.headings.forEach((h) => this.observer.observe(h.element));
     },
     scrollTo(id) {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       document.getElementById(id)?.scrollIntoView({
-        behavior: 'smooth',
+        behavior: prefersReducedMotion ? 'auto' : 'smooth',
         block: 'start',
       });
       window.history.replaceState?.(null, null, `#${id}`);
