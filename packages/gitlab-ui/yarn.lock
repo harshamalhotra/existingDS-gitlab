@@ -1391,10 +1391,10 @@
     stylelint-declaration-strict-value "1.10.4"
     stylelint-scss "6.0.0"
 
-"@gitlab/svgs@3.131.0":
-  version "3.131.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.131.0.tgz#65ae8c79dd3b3880296d4d6bcf7a8173bef173c3"
-  integrity sha512-AVWts6hg9XU0mWPW2J1E5LcPKFVC5CHLJouMBOq0Gn4ILFVdsiHZygQ2KD1qV1zZPsga9m4cPj71aQnal1hxBA==
+"@gitlab/svgs@3.136.0":
+  version "3.136.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.136.0.tgz#fb1eb618321651c096368f9606fdfd49113b1956"
+  integrity sha512-ddSpPyz4Wa3TX1ZQaJA9ar0u+oIDYeJGccLSDNBXIIL5XJLY4tqaARtZd9w0t6gArSaH7O80i/RselmL1Vmn1w==
 
 "@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
   version "9.3.0"
