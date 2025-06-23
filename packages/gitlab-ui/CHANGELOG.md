@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 114.8.1
+
+### Patch Changes
+
+- bb05d85: GlCollapsibleListbox: Use text.color.default on listbox search input
+
 ## 114.8.0
 
 ### Minor Changes
