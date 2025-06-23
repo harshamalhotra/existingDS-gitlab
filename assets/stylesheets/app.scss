@@ -8,7 +8,6 @@
 @import 'framework/skip_link';
 @import 'framework/one_trust';
 @import 'framework/page';
-@import 'framework/page_navigation';
 @import 'framework/main';
 @import 'framework/markdown';
 @import 'framework/logo';
@@ -17,3 +16,7 @@
 @import 'framework/typography';
 
 @import 'pages/homepage';
+
+.gl-action-neutral-colors {
+  @include gl-action-neutral-colors;
+}

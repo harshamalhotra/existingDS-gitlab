@@ -70,15 +70,20 @@ export default {
 </script>
 
 <template>
-  <nav v-if="headings.length" aria-labelledby="page-navigation-title" class="page-navigation">
+  <nav
+    v-if="headings.length"
+    aria-labelledby="page-navigation-title"
+    class="gl-w-full lg:gl-border-l lg:gl-sticky lg:gl-top-0 lg:gl-max-h-screen lg:gl-w-30 lg:gl-shrink-0 lg:gl-grow-0 lg:gl-overflow-y-auto"
+  >
     <h2 id="page-navigation-title" class="gl-sr-only">On this page</h2>
-    <ul>
-      <li v-for="{ id, text, level } in headings" :key="id">
+    <ul class="gl-m-0 gl-list-none gl-p-0">
+      <li v-for="{ id, text, level } in headings" :key="id" class="gl-m-0">
         <a
           :href="`#${id}`"
           :aria-current="String(activeHeading === id)"
+          class="gl-action-neutral-colors gl-block gl-border-l-4 gl-border-l-transparent gl-p-3 !gl-no-underline gl-border-l-solid focus:gl-focus-inset"
           :class="{
-            active: activeHeading === id,
+            'gl-border-l-purple-500 gl-font-bold': activeHeading === id,
             '!gl-pl-6': level === 3,
           }"
           @click.prevent="scrollTo(id)"
