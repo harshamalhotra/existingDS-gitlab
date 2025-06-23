@@ -115,9 +115,6 @@ export default glob
         }),
         resolve(),
         commonjs({
-          namedExports: {
-            echarts: ['echarts'],
-          },
           ignore: ['@gitlab/svgs/dist/icons.json'],
         }),
         {
