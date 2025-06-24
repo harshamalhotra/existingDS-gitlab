@@ -83,7 +83,7 @@
     "sass-loader": "^10.5.2",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16",
-    "eslint-plugin-import": "2.31.0"
+    "eslint-plugin-import": "2.32.0"
   },
   "jest": {
     "globals": {

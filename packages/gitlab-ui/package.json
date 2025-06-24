@@ -103,7 +103,7 @@
     "postcss": "8.5.3",
     "json5": "2.2.3",
     "rollup-plugin-vue/@vue/component-compiler/postcss-modules-sync/generic-names/loader-utils": "1.4.2",
-    "eslint-plugin-import": "2.31.0"
+    "eslint-plugin-import": "2.32.0"
   },
   "devDependencies": {
     "@babel/core": "^7.27.4",
