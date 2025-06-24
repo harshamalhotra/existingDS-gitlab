@@ -1,10 +1,20 @@
 import readme from './card.md';
 import GlCard from './card.vue';
 
-const generateProps = ({ headerClass, bodyClass, footerClass } = {}) => ({
+const generateProps = ({
   headerClass,
   bodyClass,
   footerClass,
+  headerContent = 'This is a custom header',
+  bodyContent = 'Hello World',
+  footerContent = 'This is a custom footer',
+} = {}) => ({
+  headerClass,
+  bodyClass,
+  footerClass,
+  headerContent,
+  bodyContent,
+  footerContent,
 });
 
 const Template = (args, { argTypes }) => ({
@@ -12,16 +22,17 @@ const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
       <gl-card :header-class="headerClass" :body-class="bodyClass" :footer-class="footerClass">
-        <template #header>
-          <h3 class="gl-my-0 gl-font-bold gl-text-lg">This is a custom header</h3>
+        <template v-if="headerContent" #header>
+          <h3 class="gl-my-0 gl-font-heading gl-heading-scale-500">{{ headerContent }}</h3>
         </template>
         <template #default>
-          Hello World
+          {{ bodyContent }}
         </template>
-        <template #footer>
-          <span>This is a custom footer</span>
+        <template v-if="footerContent" #footer>
+          {{ footerContent }}
         </template>
-      </gl-card>`,
+      </gl-card>
+    `,
 });
 
 export const Default = Template.bind({});
@@ -41,6 +52,19 @@ export default {
     headerClass: { control: 'text' },
     bodyClass: { control: 'text' },
     footerClass: { control: 'text' },
+    headerContent: {
+      control: 'text',
+      description:
+        'Text content for the card header (wrapped in h3 with gl-my-0 gl-font-heading gl-heading-scale-500 classes)',
+    },
+    bodyContent: {
+      control: 'text',
+      description: 'Plain text content for the card body',
+    },
+    footerContent: {
+      control: 'text',
+      description: 'Plain text content for the card footer',
+    },
     header: { control: { disable: true } },
     default: { control: { disable: true } },
     footer: { control: { disable: true } },
