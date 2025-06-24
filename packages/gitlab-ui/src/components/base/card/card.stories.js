@@ -23,7 +23,7 @@ const Template = (args, { argTypes }) => ({
   template: `
       <gl-card :header-class="headerClass" :body-class="bodyClass" :footer-class="footerClass">
         <template v-if="headerContent" #header>
-          <h3 class="gl-my-0 gl-font-heading gl-heading-scale-500">{{ headerContent }}</h3>
+          <h3 class="gl-heading-scale-500 gl-mb-0">{{ headerContent }}</h3>
         </template>
         <template #default>
           {{ bodyContent }}
@@ -53,16 +53,13 @@ export default {
     bodyClass: { control: 'text' },
     footerClass: { control: 'text' },
     headerContent: {
-      control: 'text',
       description:
         'Text content for the card header (wrapped in h3 with gl-my-0 gl-font-heading gl-heading-scale-500 classes)',
     },
     bodyContent: {
-      control: 'text',
       description: 'Plain text content for the card body',
     },
     footerContent: {
-      control: 'text',
       description: 'Plain text content for the card footer',
     },
     header: { control: { disable: true } },
