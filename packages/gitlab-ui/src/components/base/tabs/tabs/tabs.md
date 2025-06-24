@@ -41,7 +41,8 @@ tab, when active, will reveal it’s own unique content.
 
 ## Adding Action Buttons to the Tabs
 
-Action buttons are rendered in separate toolbar slots (`#toolbar-start` & `#toolbar-end`) and can be populated via props: `action-primary`, `action-secondary` and
+Action buttons are rendered in separate toolbar slots (`#toolbar-start` & `#toolbar-end`) and can
+be populated via props: `action-primary`, `action-secondary` and
 `action-tertiary`. These props allow you to handle how a primary, secondary and tertiary button will
 behave and look. The props receive an object as such:
 

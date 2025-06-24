@@ -238,4 +238,5 @@ export default {
     queryParamName: { control: { disable: true } },
     value: { control: { disable: true } },
   },
+  excludeStories: ['withActions'],
 };
