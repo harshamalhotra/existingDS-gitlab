@@ -132,7 +132,7 @@ export default {
 
       window.scrollTo({
         top,
-        behavior: 'smooth',
+        behavior: 'auto',
       });
 
       window.history.replaceState(null, '', `#${id}`);

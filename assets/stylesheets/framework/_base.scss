@@ -7,6 +7,14 @@ html {
   @apply gl-m-0;
 }
 
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   @apply gl-text-base;
 }
