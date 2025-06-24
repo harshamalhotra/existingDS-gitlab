@@ -100,7 +100,7 @@
     "chokidar": "^3.6.0",
     "sane": "^5.0.1",
     "jackspeak": "2.1.1",
-    "postcss": "8.5.3",
+    "postcss": "8.5.6",
     "json5": "2.2.3",
     "rollup-plugin-vue/@vue/component-compiler/postcss-modules-sync/generic-names/loader-utils": "1.4.2",
     "eslint-plugin-import": "2.31.0"
@@ -181,7 +181,7 @@
     "pikaday": "^1.8.0",
     "playwright": "^1.53.1",
     "playwright-core": "^1.53.1",
-    "postcss": "8.5.3",
+    "postcss": "8.5.6",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
     "prettier": "3.5.3",
