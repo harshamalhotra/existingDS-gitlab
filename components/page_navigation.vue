@@ -84,7 +84,7 @@ export default {
           :aria-current="String(activeHeading === id)"
           class="gl-action-neutral-colors gl-block gl-border-l-4 gl-border-l-transparent gl-p-3 !gl-no-underline gl-border-l-solid focus:gl-focus-inset"
           :class="{
-            'gl-border-l-purple-500 gl-font-bold': activeHeading === id,
+            '!gl-border-l-purple-500 gl-font-bold': activeHeading === id,
             '!gl-pl-6': level === 3,
           }"
           @click.prevent="scrollTo(id)"
