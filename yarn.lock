@@ -1288,10 +1288,10 @@
     lodash "^4.17.21"
     vue-eslint-parser "^9.4.3"
 
-"@gitlab/svgs@^3.136.0":
-  version "3.136.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.136.0.tgz#fb1eb618321651c096368f9606fdfd49113b1956"
-  integrity sha512-ddSpPyz4Wa3TX1ZQaJA9ar0u+oIDYeJGccLSDNBXIIL5XJLY4tqaARtZd9w0t6gArSaH7O80i/RselmL1Vmn1w==
+"@gitlab/svgs@^3.137.0":
+  version "3.137.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.137.0.tgz#4c72fd69376ba0d294a29b465f1d2e0386d8bbd4"
+  integrity sha512-cNUNTRijXo68uxjgBnqr45BXGK6Mr4wWz6DoZI71hDhGQSauE0n8+z8SPxSWC7SCh8OU4aVa0B9K8QFAzxjjCw==
 
 "@gitlab/ui@^115.0.0":
   version "115.0.0"
