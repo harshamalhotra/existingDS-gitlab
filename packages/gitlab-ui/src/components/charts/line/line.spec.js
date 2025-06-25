@@ -211,6 +211,22 @@ describe('line component', () => {
         formatTooltipText,
       );
     });
+
+    it('defaults "clickToPinTooltip" to false', async () => {
+      await createShallowWrapper();
+
+      expect(findDataTooltip().props('clickToPin')).toBe(false);
+    });
+
+    it('passes "clickToPinTooltip" prop to data tooltip when provided', async () => {
+      await createShallowWrapper({
+        props: {
+          clickToPinTooltip: true,
+        },
+      });
+
+      expect(findDataTooltip().props('clickToPin')).toBe(true);
+    });
   });
 
   describe('legend', () => {
