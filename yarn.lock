@@ -1247,19 +1247,19 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@floating-ui/core@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.0.tgz#1aff27a993ea1b254a586318c29c3b16ea0f4d0a"
-  integrity sha512-FRdBLykrPPA6P76GGGqlex/e7fbe0F1ykgxHYNXQsH/iTEtjMj/f9bpY5oQqbjt5VgZvgz/uKXbGuROijh3VLA==
+"@floating-ui/core@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.1.tgz#1abc6b157d4a936174f9dbd078278c3a81c8bc6b"
+  integrity sha512-azI0DrjMMfIug/ExbBaeDVJXcY0a7EPvPjb2xAJPa4HeimBX+Z18HK8QQR3jb6356SnDDdxx+hinMLcJEDdOjw==
   dependencies:
     "@floating-ui/utils" "^0.2.9"
 
-"@floating-ui/dom@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.7.0.tgz#f9f83ee4fee78ac23ad9e65b128fc11a27857532"
-  integrity sha512-lGTor4VlXcesUMh1cupTUTDoCxMb0V6bm3CnxHzQcw8Eaf1jQbgQX4i02fYgT0vJ82tb5MZ4CZk1LRGkktJCzg==
+"@floating-ui/dom@1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.7.1.tgz#76a4e3cbf7a08edf40c34711cf64e0cc8053d912"
+  integrity sha512-cwsmW/zyw5ltYTUeeYJ60CnQuPqmGwuGVhG9w0PRaRKkAyi38BT5CKrpIbb+jtahSwUl04cWzSx9ZOIxeS6RsQ==
   dependencies:
-    "@floating-ui/core" "^1.7.0"
+    "@floating-ui/core" "^1.7.1"
     "@floating-ui/utils" "^0.2.9"
 
 "@floating-ui/utils@^0.2.9":
@@ -1293,15 +1293,15 @@
   resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.136.0.tgz#fb1eb618321651c096368f9606fdfd49113b1956"
   integrity sha512-ddSpPyz4Wa3TX1ZQaJA9ar0u+oIDYeJGccLSDNBXIIL5XJLY4tqaARtZd9w0t6gArSaH7O80i/RselmL1Vmn1w==
 
-"@gitlab/ui@^114.7.1":
-  version "114.7.1"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-114.7.1.tgz#8e6492db172a89b88b0c5716eef56b0c5ad618ba"
-  integrity sha512-KeUkxEWDHqYZXpvNzAhVH2lmuO7nilc3vGf/SKq2l/UPvqqOcCiZ61JBQ7J1CrIOQxUDSxLJGe54QVYteAn/OA==
+"@gitlab/ui@^115.0.0":
+  version "115.0.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-115.0.0.tgz#41e82f6fb4a70d698281fa8722e8f42b30210508"
+  integrity sha512-JeA1b5S++SlCurSiDerfMcKbQyqRm8zN0isQsWt/NzyTfs+zMEAJIqAi9kI93VDbDILOAe1CqITrVkQc/eD66w==
   dependencies:
-    "@floating-ui/dom" "1.7.0"
+    "@floating-ui/dom" "1.7.1"
     echarts "^5.6.0"
-    iframe-resizer "^4.3.2"
-    lodash "^4.17.20"
+    iframe-resizer "^4.4.5"
+    lodash "^4.17.21"
     popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
@@ -5852,7 +5852,7 @@ iferr@^0.1.5:
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha512-DUNFN5j7Tln0D+TxzloUjKB+CtVu6myn0JEFak6dG18mNt9YkQ6lzGCdafwofISZ1lLF3xRHJ98VKy9ynkcFaA==
 
-iframe-resizer@^4.3.2:
+iframe-resizer@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.4.5.tgz#f5048636e7f2fb5d9a09cc2ae78eb2da55ad555c"
   integrity sha512-U8bCywf/Gh07O69RXo6dXAzTtODQrxaHGHRI7Nt4ipXsuq6EMxVsOP/jjaP43YtXz/ibESS0uSVDN3sOGCzSmw==
