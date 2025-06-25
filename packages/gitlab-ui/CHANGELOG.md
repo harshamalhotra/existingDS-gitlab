@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.0.1
+
+### Patch Changes
+
+- 6521c20: GlBaseDropdown: Fix to allow esc key press on dropdown toggle when it is closed
+
 ## 115.0.0
 
 ### Major Changes
