@@ -8,7 +8,6 @@ import yargs from 'yargs';
 import { format, resolveConfig } from 'prettier';
 import { sync as globbySync } from 'globby';
 import * as tailwindPlugin from 'prettier-plugin-tailwindcss';
-import { tailwindEquivalents } from './lib/tailwind_equivalents.mjs';
 import { parseMigrations, runSCSSMigrations, runMigrations } from './lib/tailwind_migrations.mjs';
 
 function isFrontendFile(file) {
@@ -120,8 +119,6 @@ async function getFilesAndDirectories(directories, dryRun) {
 }
 
 function getArgsParser() {
-  const NO_EQUIVALENTS = Symbol('no-equivalents');
-
   return yargs(hideBin(process.argv))
     .usage(
       'Usage: $0 [--migrations <path>] [--tailwind-config <path>] [--directory <path...>] [--from-stdin] [--dry-run]'
@@ -143,12 +140,8 @@ function getArgsParser() {
       type: 'string',
       describe:
         'Optional. Path to migrations JSON file, with { oldClass: newClass, ... } structure',
-      default: NO_EQUIVALENTS,
       defaultDescription: 'Defaults to definitions from @gitlab/ui',
       coerce: async (value) => {
-        if (value === NO_EQUIVALENTS) {
-          return tailwindEquivalents;
-        }
         return JSON.parse(await readFile(value, 'utf-8'));
       },
     })
