@@ -41,7 +41,8 @@ tab, when active, will reveal it’s own unique content.
 
 ## Adding Action Buttons to the Tabs
 
-Tabs start and end slot can be populated via props: `action-primary`, `action-secondary` and
+Action buttons are rendered in separate toolbar slots (`#toolbar-start` & `#toolbar-end`) and can
+be populated via props: `action-primary`, `action-secondary` and
 `action-tertiary`. These props allow you to handle how a primary, secondary and tertiary button will
 behave and look. The props receive an object as such:
 
@@ -70,7 +71,10 @@ component. This is a separate Vue component because of some limitations:
 exceptions).
 
 ~~~html
-<gl-scrollable-tabs>
+<gl-scrollable-tabs
+  scroll-left-label="Custom scroll left text"
+  scroll-right-label="Custom scroll right text"
+>
   <gl-tab v-for="tab in tabs" :key="tab.key" :title="tab.title"> {{ tab.content }} </gl-tab>
 </gl-scrollable-tabs>
 ~~~

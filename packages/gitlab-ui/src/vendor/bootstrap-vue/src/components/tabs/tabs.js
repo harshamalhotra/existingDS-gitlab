@@ -29,6 +29,8 @@ import {
   SLOT_NAME_EMPTY,
   SLOT_NAME_TABS_END,
   SLOT_NAME_TABS_START,
+  SLOT_NAME_TOOLBAR_END,
+  SLOT_NAME_TOOLBAR_START,
   SLOT_NAME_TITLE
 } from '../../constants/slots'
 import { arrayIncludes } from '../../utils/array'
@@ -623,7 +625,11 @@ export const BTabs = /*#__PURE__*/ extend({
         class: this.navWrapperClass,
         key: 'bv-tabs-nav'
       },
-      [$nav]
+      [
+        this.normalizeSlot(SLOT_NAME_TOOLBAR_START) || h(),
+        $nav,
+        this.normalizeSlot(SLOT_NAME_TOOLBAR_END) || h()
+      ]
     )
 
     const $children = this.normalizeSlot() || []

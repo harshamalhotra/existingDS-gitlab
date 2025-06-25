@@ -185,14 +185,14 @@ describe('tabs component', () => {
           },
           options: {
             slots: {
-              'tabs-start': `<div class="tabs-start-slot"></div>`,
-              'tabs-end': `<div class="tabs-end-slot"></div>`,
+              'toolbar-start': `<div class="toolbar-start-slot"></div>`,
+              'toolbar-end': `<div class="toolbar-end-slot"></div>`,
             },
           },
         });
 
-        expect(wrapper.find('.tabs-start-slot').exists()).toBe(false);
-        expect(wrapper.find('.tabs-end-slot').exists()).toBe(false);
+        expect(wrapper.find('.toolbar-start-slot').exists()).toBe(false);
+        expect(wrapper.find('.toolbar-end-slot').exists()).toBe(false);
       });
     });
   });

@@ -35,4 +35,6 @@ export default {
   'GlSorting.sortAscending': 'Sort direction: ascending',
   'GlSorting.sortDescending': 'Sort direction: descending',
   'GlToken.closeButtonTitle': 'Remove',
+  'GlTabs.GlScrollableTabs.scrollLeftLabel': 'Scroll left',
+  'GlTabs.GlScrollableTabs.scrollRightLabel': 'Scroll right',
 };

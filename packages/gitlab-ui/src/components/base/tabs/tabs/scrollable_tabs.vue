@@ -2,6 +2,7 @@
 import debounce from 'lodash/debounce';
 import { GlResizeObserverDirective } from '../../../../directives/resize_observer/resize_observer';
 import GlIcon from '../../icon/icon.vue';
+import { translate } from '../../../../utils/i18n';
 import GlTabs from './tabs.vue';
 
 const NAV_CLASS = 'gl-scrollable-tabs-nav';
@@ -16,6 +17,24 @@ export default {
     GlResizeObserverDirective,
   },
   inheritAttrs: false,
+  props: {
+    /**
+     * The aria-label that will be rendered inside for the scroll to left button.
+     */
+    scrollLeftLabel: {
+      type: String,
+      required: false,
+      default: translate('GlTabs.GlScrollableTabs.scrollLeftLabel', 'Scroll left'),
+    },
+    /**
+     * The aria-label that will be rendered inside for the scroll to right button.
+     */
+    scrollRightLabel: {
+      type: String,
+      required: false,
+      default: translate('GlTabs.GlScrollableTabs.scrollRightLabel', 'Scroll right'),
+    },
+  },
   data() {
     return {
       width: 0,
@@ -112,29 +131,27 @@ export default {
     <template v-for="slot in Object.keys($slots)" #[slot]>
       <slot :name="slot"></slot>
     </template>
-    <template #tabs-start>
-      <li v-show="displayScrollLeft" class="gl-tabs-fade gl-tabs-fade-left">
+    <template #toolbar-start>
+      <div v-show="displayScrollLeft" class="gl-tabs-fade gl-tabs-fade-left">
         <button
           class="gl-tabs-fade-icon-button"
-          aria-label="Scroll left"
-          tabindex="-1"
+          :aria-label="scrollLeftLabel"
           @click="scrollTabsLeft"
         >
           <gl-icon :size="16" name="chevron-lg-left" />
         </button>
-      </li>
+      </div>
     </template>
-    <template #tabs-end>
-      <li v-show="displayScrollRight" class="gl-tabs-fade gl-tabs-fade-right">
+    <template #toolbar-end>
+      <div v-show="displayScrollRight" class="gl-tabs-fade gl-tabs-fade-right">
         <button
           class="gl-tabs-fade-icon-button"
-          aria-label="Scroll right"
-          tabindex="-1"
+          :aria-label="scrollRightLabel"
           @click="scrollTabsRight"
         >
           <gl-icon :size="16" name="chevron-lg-right" />
         </button>
-      </li>
+      </div>
     </template>
   </gl-tabs>
 </template>

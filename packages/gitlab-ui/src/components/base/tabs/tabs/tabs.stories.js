@@ -116,7 +116,7 @@ export const ContentlessTab = (_args, { argTypes }) => ({
       <p>Another tab's content.</p>
     </gl-tab>
     <template #tabs-end>
-      <li class="gl-tab-nav-item">
+      <li role="tab" class="gl-tab-nav-item">
         Contentless tab
       </li>
     </template>`),
@@ -198,6 +198,26 @@ export const WithScrollAndGrowing = (_args, { argTypes }) => ({
 });
 WithScrollAndGrowing.tags = ['skip-visual-test'];
 
+export const withActions = (_args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components,
+  template: `<gl-tabs
+    :action-secondary="{ text: 'Secondary' }"
+    :action-primary="{ text: 'Primary' }"
+    :action-tertiary="{ text: 'Tertiary' }">
+      <gl-tab title="Tab 1">
+        Tab panel 1
+      </gl-tab>
+      <gl-tab title="Tab 2">
+        Tab panel 2
+      </gl-tab>
+      <gl-tab title="Tab 3">
+        Tab panel 3
+      </gl-tab>
+    </gl-tabs>`,
+});
+withActions.args = generateProps({ justified: true });
+
 export default {
   title: 'base/tabs',
   component: GlTabs,
@@ -218,4 +238,5 @@ export default {
     queryParamName: { control: { disable: true } },
     value: { control: { disable: true } },
   },
+  excludeStories: ['withActions'],
 };
