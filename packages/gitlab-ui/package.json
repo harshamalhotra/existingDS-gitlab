@@ -121,7 +121,7 @@
     "@jest/test-sequencer": "^30.0.2",
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
-    "@rollup/plugin-replace": "^2.4.2",
+    "@rollup/plugin-replace": "^3.1.0",
     "@storybook/addon-a11y": "^7.6.20",
     "@storybook/addon-docs": "^7.6.20",
     "@storybook/addon-essentials": "^7.6.20",
