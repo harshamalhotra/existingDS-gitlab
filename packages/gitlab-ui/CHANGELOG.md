@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.0.0
+
+### Major Changes
+
+- 398785b: Fixing aria roles for GlTabs and moving actions to a new #toolbar slot
+
 ## 114.8.1
 
 ### Patch Changes
