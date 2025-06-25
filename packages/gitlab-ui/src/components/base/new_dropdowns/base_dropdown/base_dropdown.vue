@@ -21,6 +21,7 @@ import {
   GL_DROPDOWN_HIDDEN,
   GL_DROPDOWN_BEFORE_CLOSE,
   GL_DROPDOWN_FOCUS_CONTENT,
+  KEY_CODE_ESCAPE,
   ENTER,
   SPACE,
   ARROW_DOWN,
@@ -28,7 +29,12 @@ import {
   POSITION_ABSOLUTE,
   POSITION_FIXED,
 } from '../constants';
-import { logWarning, isElementTabbable, isElementFocusable } from '../../../../utils/utils';
+import {
+  logWarning,
+  isElementTabbable,
+  isElementFocusable,
+  stopEvent,
+} from '../../../../utils/utils';
 import { OutsideDirective } from '../../../../directives/outside/outside';
 import GlButton from '../../button/button.vue';
 import GlIcon from '../../icon/icon.vue';
@@ -500,9 +506,21 @@ export default {
     },
     onKeydown(event) {
       const {
+        keyCode,
         code,
         target: { tagName },
       } = event;
+
+      // Use keyCode because @vue/test-utils doesn't correctly set the
+      // `code` and `key` KeyboardEvent properties. This is only needed in this case because:
+      //  - We are not using the @keydown.esc template syntax, which under Vue 2 checks against `keyCode` anyway.
+      //  - The `.trigger('keydown.esc')` shorthand @vue/test-utils provides is useful.
+      // See https://github.com/vuejs/vue-test-utils/issues/2096
+      if (keyCode === KEY_CODE_ESCAPE && this.visible) {
+        stopEvent(event);
+        this.close();
+        return;
+      }
 
       let toggleOnEnter = true;
       let toggleOnSpace = true;
@@ -547,7 +565,6 @@ export default {
       ref="toggle"
       data-testid="base-dropdown-toggle"
       v-on="toggleListeners"
-      @keydown.esc.stop.prevent="close"
     >
       <!-- @slot Custom toggle button content -->
       <slot name="toggle">
