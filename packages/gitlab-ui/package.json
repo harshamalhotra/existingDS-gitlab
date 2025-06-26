@@ -87,7 +87,7 @@
     "portal-vue": "^2.1.7",
     "vue-functional-data-merge": "^3.1.0",
     "vue-runtime-helpers": "^1.1.2",
-    "gridstack": "^12.1.2"
+    "gridstack": "^12.2.1"
   },
   "peerDependencies": {
     "@gitlab/svgs": "^1.116.0 || ^2.0.0 || ^3.0.0",
