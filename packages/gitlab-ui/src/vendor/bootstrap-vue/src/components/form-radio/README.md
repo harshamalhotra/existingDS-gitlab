@@ -264,8 +264,7 @@ checked.
 
 The `v-model` of both `<b-form-radio>` and `<b-form-radio-group>` binds to the `checked` prop. To
 pre-check a radio, you must set the `v-model` value to the one of the radio's value (i.e. must match
-the value of specified on one of the the radio's `value` prop). Do not use the `checked` prop
-directly. Each radio in a radio group _must_ have a unique value.
+the value of specified on one of the the radio's `value` prop). Each radio in a radio group _must_ have a unique value.
 
 Radios support values of many types, such as a `string`, `boolean`, `number`, or a plain `object`.
 
