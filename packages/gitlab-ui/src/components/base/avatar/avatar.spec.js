@@ -88,4 +88,18 @@ describe('GlAvatar', () => {
       expect(wrapper.find('.gl-avatar-identicon').exists()).toBe(false);
     });
   });
+
+  describe('aria-hidden property', () => {
+    it('sets aria-hidden to true when there is no src', () => {
+      createWrapper();
+
+      expect(wrapper.attributes('aria-hidden')).toBe('true');
+    });
+
+    it('does not set aria-hidden when src is provided', () => {
+      createWrapper({ src: 'foo.jpg' });
+
+      expect(wrapper.attributes('aria-hidden')).toBe(undefined);
+    });
+  });
 });
