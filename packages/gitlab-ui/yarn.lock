@@ -3451,12 +3451,12 @@
     ts-dedent "^2.0.0"
     type-fest "~2.19"
 
-"@studiometa/stylelint-formatter-gitlab@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@studiometa/stylelint-formatter-gitlab/-/stylelint-formatter-gitlab-0.0.1.tgz#53d0c51412068e9d4fe36879570cfec3fe7b6925"
-  integrity sha512-V6IO8cmvjJvOUztOgl9Rpi6IeaU1C+RKqP50sSUmYw7N0wjQejHpd4hL8TVi0Qo9OCBX9HGKeaAqtfPd9+L9hw==
+"@studiometa/stylelint-formatter-gitlab@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@studiometa/stylelint-formatter-gitlab/-/stylelint-formatter-gitlab-1.0.2.tgz#24017fde4426e17f04f5a49496c778c25fb65400"
+  integrity sha512-QiFMouLNgRnQp6gF9iwPWrXdrQ6m7Sv7cJOAVOK+ugczVH0zICxEO+NohJvqKRTUg7+uEi0g4eUb64RG95ARCA==
   dependencies:
-    chalk "^5.3.0"
+    chalk "^5.4.1"
     jest-diff "^29.7.0"
     js-yaml "^4.1.0"
 
@@ -5439,10 +5439,10 @@ chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.2.0, chalk@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
-  integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
+chalk@^5.2.0, chalk@^5.3.0, chalk@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.4.1.tgz#1b48bf0963ec158dce2aacf69c093ae2dd2092d8"
+  integrity sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==
 
 change-case@^5.3.0:
   version "5.4.4"
