@@ -37,6 +37,9 @@ describe('GlDashboardPanel', () => {
   const findPanelTitlePopover = () => wrapper.find('[data-testid="panel-title-popover"]');
   const findPanelTitlePopoverLink = () => findPanelTitlePopover().findComponent(GlLink);
   const findPanelActionsDropdown = () => wrapper.findComponent(GlDisclosureDropdown);
+  const findPanelActionsFiltersContainer = () =>
+    wrapper.find('[data-testid="panel-actions-filters-container"]');
+  const findPanelFiltersContainer = () => wrapper.find('[data-testid="panel-filters-container"]');
   const findPanelActionsDropdownItems = () =>
     findPanelActionsDropdown()
       .findAllComponents(GlDisclosureDropdownItem)
@@ -73,6 +76,14 @@ describe('GlDashboardPanel', () => {
 
     it('does not render the title popover icon', () => {
       expect(findPanelTitlePopoverIcon().exists()).toBe(false);
+    });
+
+    it('does not render the actions-filters container', () => {
+      expect(findPanelActionsFiltersContainer().exists()).toBe(false);
+    });
+
+    it('does not render the filters container', () => {
+      expect(findPanelFiltersContainer().exists()).toBe(false);
     });
   });
 
@@ -133,6 +144,29 @@ describe('GlDashboardPanel', () => {
 
     it('renders the panel body', () => {
       expect(wrapper.find('[data-testid="panel-body-slot"]').exists()).toBe(true);
+    });
+  });
+
+  describe('with a filters slot', () => {
+    beforeEach(() => {
+      createWrapper({
+        slots: {
+          filters: '<div data-testid="panel-filters-slot">Filter Button</div>',
+        },
+      });
+    });
+
+    it('renders the panel filters', () => {
+      expect(wrapper.find('[data-testid="panel-filters-slot"]').exists()).toBe(true);
+      expect(wrapper.find('[data-testid="panel-filters-slot"]').text()).toBe('Filter Button');
+    });
+
+    it('renders the filters container', () => {
+      expect(findPanelFiltersContainer().exists()).toBe(true);
+    });
+
+    it('renders the actions-filters container', () => {
+      expect(findPanelActionsFiltersContainer().exists()).toBe(true);
     });
   });
 
@@ -299,6 +333,10 @@ describe('GlDashboardPanel', () => {
           text: x.text,
         })),
       );
+    });
+
+    it('renders the actions-filters container', () => {
+      expect(findPanelActionsFiltersContainer().exists()).toBe(true);
     });
   });
 });

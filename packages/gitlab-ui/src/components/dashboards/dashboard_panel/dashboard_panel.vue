@@ -178,25 +178,40 @@ export default {
           </template>
         </div>
 
-        <gl-disclosure-dropdown
-          v-if="shouldShowActions"
-          :items="actions"
-          icon="ellipsis_v"
-          :toggle-text="actionsToggleText"
-          text-sr-only
-          no-caret
-          placement="bottom-end"
-          fluid-width
-          toggle-class="gl-ml-1"
-          category="tertiary"
-          positioning-strategy="fixed"
-          @shown="$emit('dropdownOpen')"
-          @hidden="$emit('dropdownClosed')"
+        <div
+          v-if="shouldShowActions || $scopedSlots.filters"
+          data-testid="panel-actions-filters-container"
+          class="gl-flex gl-flex-col gl-items-end gl-gap-2"
         >
-          <template #list-item="{ item }">
-            <span> <gl-icon :name="item.icon" /> {{ item.text }}</span>
-          </template>
-        </gl-disclosure-dropdown>
+          <gl-disclosure-dropdown
+            v-if="shouldShowActions"
+            :items="actions"
+            icon="ellipsis_v"
+            :toggle-text="actionsToggleText"
+            text-sr-only
+            no-caret
+            placement="bottom-end"
+            fluid-width
+            toggle-class="gl-ml-1"
+            category="tertiary"
+            positioning-strategy="fixed"
+            @shown="$emit('dropdownOpen')"
+            @hidden="$emit('dropdownClosed')"
+          >
+            <template #list-item="{ item }">
+              <span> <gl-icon :name="item.icon" /> {{ item.text }}</span>
+            </template>
+          </gl-disclosure-dropdown>
+
+          <div
+            v-if="$scopedSlots.filters"
+            class="gl-flex gl-items-center gl-justify-end gl-pb-2"
+            data-testid="panel-filters-container"
+          >
+            <!-- @slot  The filter section to add additional UI elements for filtering, grouping, etc. -->
+            <slot name="filters"></slot>
+          </div>
+        </div>
       </div>
       <div :class="bodyClasses">
         <template v-if="loading">
