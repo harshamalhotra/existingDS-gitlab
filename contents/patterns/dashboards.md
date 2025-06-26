@@ -9,17 +9,29 @@ description: A dashboard is a root level container that has multiple panels, and
 - **Grid**: Rows and columns used to align and snap elements based on sequence and position.
 - **Panel**: The basic building block of a dashboard. Each panel is composed of a title, description, and visualization which can be configured or modified through options. Panels can be moved and resized to arrange them within a dashboard.
 
-<todo>Add visual examples for dashboard and panel content and concepts.</todo>
+## Structure
+
+<figure-img alt="Numbered diagram of a dashboard structure" label="Dashboard structure" src="/img/dashboard-structure.svg"></figure-img>
+
+1. **Title**: Displays the dashboard name and purpose.
+2. **Description** (optional): Provides context about the dashboard's objectives and key questions it addresses.
+3. **Settings menu**: Enables authorized users to configure dashboard-level settings.
+4. **Filters** (optional): Applies dashboard-wide filtering that affects multiple panels.
+5. **Grid**: Contains all panels within a 12-column responsive grid with unlimited rows that collapses to a single column at the medium breakpoint.
+6. **Actions**: Contains administrative controls (Save, Add Panel, Cancel) visible to authorized users during edit mode.
 
 ## Guidelines
 
 ### When to use
 
 - Display panels of content and data for analysis-oriented tasks.
+- Create customizable, analytical workspaces for different user roles or use cases.
+- Consolidate related metrics into a unified analytical interface.
 
 ### When not to use
 
-- If content is action-oriented and presented in a list, table, or board, then a general landing page may be more appropriate.
+- If the interface is action-oriented where content is presented as a list, table, or board that requires use action, then consider a more general page layout.
+- If a chart or metric doesn't benefit from the overhead or features of the dashboard framework, then it can be a standalone visualization.
 
 ### Behavior
 
@@ -27,6 +39,7 @@ The following interactions are available:
 
 - **Alerting**: Enable a panel to notify a user, so they can act on data from their existing data sources.
 - **Archive**: Remove something from a current view to be organized and managed in a separate view. This change is recorded in the versioning area.
+- **Edit**: Edit the dashboard title, description, and grid composition.
 - **Make a copy**: Create an identical copy of any dashboard or panel.
 - **Embed**: Insert panels into different mediums.
 - **Export**: Make data available as CSV file, static image of a visualization being shown, or static PDF of a visualization/dashboard (important for data analysis and accessibility).
