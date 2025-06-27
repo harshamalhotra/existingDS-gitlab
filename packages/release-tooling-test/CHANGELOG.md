@@ -1,5 +1,11 @@
 # @gitlab-org/release-tooling-test
 
+## 1.0.5
+
+### Patch Changes
+
+- 73aeb9d: No changes.
+
 ## 1.0.4
 
 ### Patch Changes
