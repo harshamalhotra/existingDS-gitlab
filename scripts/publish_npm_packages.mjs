@@ -3,16 +3,12 @@ import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import defaultChangelogFunctions from '@changesets/changelog-git';
 import chalk from 'chalk';
-import {
-  ROOT,
-  printDiagnostics,
-  run,
-  runChangesetWithWorkspacesHackForYarnV1,
-} from './lib/shared.mjs';
+import { ROOT, printDiagnostics, run } from './lib/shared.mjs';
 
 const { env } = process;
 
 const CHANGESET_DIR = join(ROOT, '.changeset');
+const CHANGESET_BIN = join(ROOT, 'node_modules', '.bin', 'changeset');
 
 // Changesets fails if this is an absolute path.
 const CHANGESET_RELEASE_PLAN_FILE = relative(
@@ -106,7 +102,7 @@ function getReleasePlan() {
   }
 
   // We know there are changeset files, so we expect this command to succeed.
-  runChangesetWithWorkspacesHackForYarnV1(['status', `--output=${CHANGESET_RELEASE_PLAN_FILE}`]);
+  run(CHANGESET_BIN, ['status', `--output=${CHANGESET_RELEASE_PLAN_FILE}`]);
 
   const releasePlan = JSON.parse(readFileSync(CHANGESET_RELEASE_PLAN_FILE, 'utf8'));
 
@@ -212,7 +208,8 @@ function publish() {
     'set',
     `//gitlab.com/api/v4/projects/4456656/packages/npm/:_authToken=${env.GITLAB_TOKEN}`,
   ]);
-  runChangesetWithWorkspacesHackForYarnV1(['publish']);
+
+  run(CHANGESET_BIN, ['publish']);
 }
 
 async function main() {
@@ -230,7 +227,7 @@ async function main() {
   }
 
   // Process changeset files and update package changelogs
-  runChangesetWithWorkspacesHackForYarnV1(['version']);
+  run(CHANGESET_BIN, ['version']);
 
   if (env.DRY_RUN) {
     console.log('Diff of changes that would be made if this were on the default branch:');
