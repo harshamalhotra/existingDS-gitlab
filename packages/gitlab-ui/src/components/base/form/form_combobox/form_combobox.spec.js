@@ -35,18 +35,19 @@ describe('GlFormCombobox', () => {
     matchValueToAttr = undefined,
     actionList = [],
   } = {}) => {
-    wrapper = mount({
-      data() {
-        return {
-          inputVal: '',
-          tokens,
-          labelText,
-          matchValueToAttr,
-          actionList,
-        };
-      },
-      components: { GlFormCombobox },
-      template: `
+    wrapper = mount(
+      {
+        data() {
+          return {
+            inputVal: '',
+            tokens,
+            labelText,
+            matchValueToAttr,
+            actionList,
+          };
+        },
+        components: { GlFormCombobox },
+        template: `
         <div>
           <gl-form-combobox
             v-model="inputVal"
@@ -57,7 +58,11 @@ describe('GlFormCombobox', () => {
           />
         </div>
       `,
-    });
+      },
+      {
+        attachTo: document.body,
+      }
+    );
   };
 
   // needs new selector now
