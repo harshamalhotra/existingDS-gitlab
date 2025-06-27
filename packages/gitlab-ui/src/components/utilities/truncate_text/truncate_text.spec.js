@@ -35,9 +35,7 @@ describe('GlTruncateText', () => {
     it('the content has style variables for `lines` and `mobile-lines` with the correct values', () => {
       const { style } = findContentEl();
 
-      expect(style).toContain('--lines');
       expect(style.getPropertyValue('--lines')).toBe('3');
-      expect(style).toContain('--mobile-lines');
       expect(style.getPropertyValue('--mobile-lines')).toBe('10');
     });
 
