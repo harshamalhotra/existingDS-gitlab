@@ -1,6 +1,6 @@
-import { GlCard } from '@gitlab/ui';
 import { mount, shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
+import { GlCard } from '../../helpers/gitlab_ui';
 import StoryViewer from '../../components/story_viewer.vue';
 import StoryIframe from '../../components/story_iframe.vue';
 

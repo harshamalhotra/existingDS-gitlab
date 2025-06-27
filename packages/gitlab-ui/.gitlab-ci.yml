@@ -25,12 +25,13 @@
 # could mean changing something in our caching logic
 .ui:cache-template: &ui-cache-template
   paths:
-    - packages/gitlab-ui/node_modules/
+    - packages/*/node_modules/
+    - node_modules/
   key:
     files:
       - packages/gitlab-ui/.gitlab-ci.yml
-      - packages/gitlab-ui/yarn.lock
-    prefix: node_modules
+      - yarn.lock
+    prefix: ui_node_modules
 
 .ui:yarn_install:
   variables:
@@ -38,10 +39,12 @@
     # and makes all other jobs potentially slower, if no cache exists
     CYPRESS_INSTALL_BINARY: 0
   before_script:
-    - cd packages/gitlab-ui
     - apt-get update
     - apt-get install -y make
     - yarn install --frozen-lockfile
+    # We do a yarn install in the _root_ directory
+    # so that e.g. `patch-package` works properly
+    - cd packages/gitlab-ui
   cache:
     <<: *ui-cache-template
     policy: pull
@@ -56,18 +59,6 @@
       when: manual
       allow_failure: true
 
-ui:untamper-my-lockfile:
-  extends: untamper-my-lockfile
-  script:
-    - untamper-my-lockfile --lockfile packages/gitlab-ui/yarn.lock
-  rules:
-    - if: $CI_MERGE_REQUEST_IID
-      changes:
-        - packages/gitlab-ui/yarn.lock
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-      changes:
-        - packages/gitlab-ui/yarn.lock
-
 # As we are caching based on the contents of our CI config and dependency lock file
 # We only need to execute when these change. However, we give a manual job as an escape hatch
 ui:populate_npm_cache:
@@ -81,22 +72,10 @@ ui:populate_npm_cache:
   rules:
     - changes:
         - packages/gitlab-ui/.gitlab-ci.yml
-        - packages/gitlab-ui/yarn.lock
+        - .gitlab-ci.yml
+        - yarn.lock
       when: always
     - when: never
-
-ui:yarn_deduplicate:
-  extends: [.ui:node, .ui:yarn_install]
-  stage: test
-  needs: []
-  script:
-    - yarn yarn-deduplicate --strategy fewer --list --fail
-  rules:
-    - changes:
-        - packages/gitlab-ui/.gitlab-ci.yml
-        - packages/gitlab-ui/package.json
-        - packages/gitlab-ui/yarn.lock
-      when: always
 
 .ui:build_test_storybook:
   extends: [.ui:node, .ui:yarn_install]

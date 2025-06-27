@@ -5,20 +5,20 @@ otherwise
 
 Simply add more components if you need them!
  */
-export { default as GlAlert } from '@gitlab/ui/dist/components/base/alert/alert';
-export { default as GlBadge } from '@gitlab/ui/dist/components/base/badge/badge';
-export { default as GlDropdownItem } from '@gitlab/ui/dist/components/base/dropdown/dropdown_item';
-export { default as GlSearchBoxByType } from '@gitlab/ui/dist/components/base/search_box_by_type/search_box_by_type';
-export { default as GlIcon } from '@gitlab/ui/dist/components/base/icon/icon';
-export { default as GlLoadingIcon } from '@gitlab/ui/dist/components/base/loading_icon/loading_icon';
-export { default as GlCard } from '@gitlab/ui/dist/components/base/card/card';
-export { default as GlLink } from '@gitlab/ui/dist/components/base/link/link';
-export { default as GlNav } from '@gitlab/ui/dist/components/base/nav/nav';
-export { default as GlNavItem } from '@gitlab/ui/dist/components/base/nav/nav_item';
-export { default as GlButton } from '@gitlab/ui/dist/components/base/button/button';
-export { default as GlFormGroup } from '@gitlab/ui/dist/components/base/form/form_group/form_group';
-export { default as GlFormSelect } from '@gitlab/ui/dist/components/base/form/form_select/form_select';
-export { default as GlEmptyState } from '@gitlab/ui/dist/components/regions/empty_state/empty_state';
+export { default as GlAlert } from '@gitlab/ui/src/components/base/alert/alert.vue';
+export { default as GlBadge } from '@gitlab/ui/src/components/base/badge/badge.vue';
+export { default as GlDropdownItem } from '@gitlab/ui/src/components/base/dropdown/dropdown_item.vue';
+export { default as GlSearchBoxByType } from '@gitlab/ui/src/components/base/search_box_by_type/search_box_by_type.vue';
+export { default as GlIcon } from '@gitlab/ui/src/components/base/icon/icon.vue';
+export { default as GlLoadingIcon } from '@gitlab/ui/src/components/base/loading_icon/loading_icon.vue';
+export { default as GlCard } from '@gitlab/ui/src/components/base/card/card.vue';
+export { default as GlLink } from '@gitlab/ui/src/components/base/link/link.vue';
+export { default as GlNav } from '@gitlab/ui/src/components/base/nav/nav.vue';
+export { default as GlNavItem } from '@gitlab/ui/src/components/base/nav/nav_item.vue';
+export { default as GlButton } from '@gitlab/ui/src/components/base/button/button.vue';
+export { default as GlFormGroup } from '@gitlab/ui/src/components/base/form/form_group/form_group.vue';
+export { default as GlFormSelect } from '@gitlab/ui/src/components/base/form/form_select/form_select.vue';
+export { default as GlEmptyState } from '@gitlab/ui/src/components/regions/empty_state/empty_state.vue';
 
 // Utilities
 export { debounceByAnimationFrame } from '@gitlab/ui/src/utils/utils';

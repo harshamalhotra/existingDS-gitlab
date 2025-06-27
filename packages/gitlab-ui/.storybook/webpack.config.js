@@ -27,7 +27,10 @@ const VUE_LOADER_OPTIONS = USE_VUE_3
 const sassLoaderOptions = {
   implementation: sass,
   sassOptions: {
-    includePaths: [path.resolve(ROOT_DIR, 'node_modules')],
+    includePaths: [
+      path.resolve(ROOT_DIR, 'node_modules'),
+      path.resolve(ROOT_DIR, '../../node_modules'),
+    ],
     silenceDeprecations: ['import', 'legacy-js-api', 'color-functions'],
   },
 };
