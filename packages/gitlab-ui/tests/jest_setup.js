@@ -4,12 +4,16 @@ const { matcherHint, printReceived, printExpected } = require('jest-matcher-util
 const { default: setConfigs, defaultConfig } = require('../src/config');
 const { useMockResizeObserver } = require('./__helpers__/mock_dom_observer');
 const { createMockDirective: mockDirectiveCreator } = require('./__helpers__/vue_mock_directive');
+const { setWindowLocation } = require('./__helpers__/set_window_location');
+const { TEST_HOST } = require('./__helpers__/constants');
 
 VTU.enableAutoDestroy?.(afterEach);
 
 beforeEach(() => {
   // Reset global configuration
   defaultConfig.firstDayOfWeek = undefined;
+
+  setWindowLocation(TEST_HOST);
 
   setConfigs();
 });

@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
+import { setWindowLocation } from '~helpers/set_window_location';
 import GlButton from '../../button/button.vue';
 import { tabsButtonDefaults } from '../../../../utils/constants';
 import GlTab from '../tab/tab.vue';
@@ -198,13 +199,12 @@ describe('tabs component', () => {
   });
 
   describe('`syncActiveTabWithQueryParams` prop', () => {
+    beforeEach(() => {
+      setWindowLocation('https://localhost');
+    });
+
     describe('when set to `true`', () => {
       jest.spyOn(window.history, 'pushState');
-
-      beforeEach(() => {
-        delete window.location;
-        window.location = new URL('https://localhost');
-      });
 
       afterEach(() => {
         window.history.pushState.mockClear();
@@ -222,7 +222,7 @@ describe('tabs component', () => {
         'when `queryParamName` prop is $queryParamName and query string is $queryString',
         ({ queryParamName, queryString, expectedActiveTabText, expectedActiveTabIndex }) => {
           it('sets active tab based on query string when component is mounted', async () => {
-            window.location.search = queryString;
+            setWindowLocation(queryString);
 
             buildTabs({
               props: { syncActiveTabWithQueryParams: true, queryParamName },
@@ -253,7 +253,7 @@ describe('tabs component', () => {
           'when `queryParamName` prop is $queryParamName and "$tabTitleToActivate" tab is activated',
           ({ queryParamName, tabTitleToActivate, expectedQueryString }) => {
             beforeEach(() => {
-              window.location.search = '?foo-bar=baz';
+              setWindowLocation('?foo-bar=baz');
             });
 
             it(`sets query string to ${expectedQueryString}`, async () => {
@@ -279,7 +279,7 @@ describe('tabs component', () => {
 
           await nextTick();
 
-          window.location.search = '?tab=1';
+          setWindowLocation('?tab=1');
           window.dispatchEvent(new PopStateEvent('popstate', {}));
         });
 
@@ -311,7 +311,7 @@ describe('tabs component', () => {
 
       describe('when component is mounted', () => {
         it('emits `input` event', async () => {
-          window.location.search = '?tab=1';
+          setWindowLocation('?tab=1');
 
           buildTabs({
             props: { syncActiveTabWithQueryParams: true },

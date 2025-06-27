@@ -1,3 +1,4 @@
+const { TEST_HOST } = require('./tests/__helpers__/constants');
 const { USE_VUE_3, JEST_VUE_TRANSFORMER } = require('./use_vue3');
 
 const reporters = ['default'];
@@ -59,7 +60,10 @@ module.exports = {
   ],
   setupFilesAfterEnv,
   reporters,
-  testEnvironment: 'jsdom',
+  testEnvironment: '<rootDir>/tests/environment.js',
+  testEnvironmentOptions: {
+    url: TEST_HOST,
+  },
   testRunner: 'jest-circus/runner',
   snapshotFormat: {
     printBasicPrototype: true,

@@ -29,7 +29,7 @@ describe('v-b-modal directive', () => {
     const $button = wrapper.find('button')
     await $button.trigger('click')
     expect(spy).toHaveBeenCalledTimes(1)
-    expect(spy).toBeCalledWith('test', $button.element)
+    expect(spy).toHaveBeenCalledWith('test', $button.element)
 
     wrapper.destroy()
   })
@@ -65,7 +65,7 @@ describe('v-b-modal directive', () => {
     const $link = wrapper.find('a')
     await $link.trigger('click')
     expect(spy).toHaveBeenCalledTimes(1)
-    expect(spy).toBeCalledWith('test', $link.element)
+    expect(spy).toHaveBeenCalledWith('test', $link.element)
     expect(wrapper.find('a').attributes('role')).toBe('button')
     expect(wrapper.find('a').attributes('tabindex')).toBeUndefined()
 
@@ -103,7 +103,7 @@ describe('v-b-modal directive', () => {
     const $span = wrapper.find('span')
     await $span.trigger('click')
     expect(spy).toHaveBeenCalledTimes(1)
-    expect(spy).toBeCalledWith('test', $span.element)
+    expect(spy).toHaveBeenCalledWith('test', $span.element)
     expect(wrapper.find('span').attributes('role')).toBe('button')
 
     // Test updating component. should maintain role attribute
@@ -147,7 +147,7 @@ describe('v-b-modal directive', () => {
     const $span = wrapper.find('span')
     await $span.trigger('keydown.space')
     expect(spy).toHaveBeenCalledTimes(1)
-    expect(spy).toBeCalledWith('test', $span.element)
+    expect(spy).toHaveBeenCalledWith('test', $span.element)
     expect(wrapper.find('span').attributes('role')).toBe('button')
 
     wrapper.destroy()
@@ -183,7 +183,7 @@ describe('v-b-modal directive', () => {
     const $span = wrapper.find('span')
     await $span.trigger('keydown.enter')
     expect(spy).toHaveBeenCalledTimes(1)
-    expect(spy).toBeCalledWith('test', $span.element)
+    expect(spy).toHaveBeenCalledWith('test', $span.element)
     expect(wrapper.find('span').attributes('role')).toBe('button')
 
     wrapper.destroy()
