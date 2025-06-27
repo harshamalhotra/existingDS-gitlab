@@ -81,13 +81,13 @@
   "dependencies": {
     "@floating-ui/dom": "1.7.1",
     "echarts": "^5.6.0",
+    "gridstack": "^12.2.1",
     "iframe-resizer": "^4.4.5",
     "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
     "vue-functional-data-merge": "^3.1.0",
-    "vue-runtime-helpers": "^1.1.2",
-    "gridstack": "^12.2.1"
+    "vue-runtime-helpers": "^1.1.2"
   },
   "peerDependencies": {
     "@gitlab/svgs": "^1.116.0 || ^2.0.0 || ^3.0.0",
