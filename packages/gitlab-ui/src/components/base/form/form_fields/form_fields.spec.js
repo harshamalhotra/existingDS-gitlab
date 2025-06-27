@@ -74,7 +74,8 @@ describe('GlFormFields', () => {
       input: {
         // Ensure that "value" is present even if undefined
         value: input.attributes('value'),
-        ...input.attributes(),
+        id: input.attributes('id'),
+        type: input.attributes('type'),
       },
     };
   };
