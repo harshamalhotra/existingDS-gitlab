@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { join, relative } from 'node:path';
 import { globSync } from 'glob';
 import { format, resolveConfig } from 'prettier';
@@ -385,9 +384,7 @@ StyleDictionary.registerAction({
     config.files.forEach(async (file) => {
       const filePath = `${config.buildPath}${file.destination}`;
       const fileContent = fs.readFileSync(filePath, 'utf8');
-      const options = await resolveConfig(
-        fileURLToPath(new URL('../.prettierrc', import.meta.url)),
-      );
+      const options = await resolveConfig(filePath);
       const formattedOutput = await format(fileContent, { ...options, parser: 'babel' });
       fs.writeFileSync(filePath, formattedOutput);
     });
