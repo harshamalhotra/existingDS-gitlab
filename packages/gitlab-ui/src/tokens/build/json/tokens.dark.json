@@ -4545,6 +4545,11 @@
           "$value": "#fff",
           "$type": "color",
           "$description": "Used for the title color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          },
           "filePath": "src/tokens/contextual/alert.tokens.json",
           "isSource": true,
           "original": {
@@ -4554,6 +4559,11 @@
             },
             "$type": "color",
             "$description": "Used for the title color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "TEXT_FILL"
+              ]
+            },
             "key": "{alert.neutral.title.color}"
           },
           "name": "ALERT_NEUTRAL_TITLE_COLOR",
@@ -4572,6 +4582,12 @@
           "$value": "#28272d",
           "$type": "color",
           "$description": "Used for the background color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          },
           "filePath": "src/tokens/contextual/alert.tokens.json",
           "isSource": true,
           "original": {
@@ -4581,6 +4597,12 @@
             },
             "$type": "color",
             "$description": "Used for the background color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            },
             "key": "{alert.neutral.background.color}"
           },
           "name": "ALERT_NEUTRAL_BACKGROUND_COLOR",
@@ -4600,6 +4622,11 @@
             "$value": "#89888d",
             "$type": "color",
             "$description": "Used for the border center color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            },
             "filePath": "src/tokens/contextual/alert.tokens.json",
             "isSource": true,
             "original": {
@@ -4609,6 +4636,11 @@
               },
               "$type": "color",
               "$description": "Used for the border center color of a neutral alert.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              },
               "key": "{alert.neutral.border.top.color}"
             },
             "name": "ALERT_NEUTRAL_BORDER_TOP_COLOR",
@@ -4628,12 +4660,22 @@
             "$value": "transparent",
             "$type": "color",
             "$description": "Used for the border bottom color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            },
             "filePath": "src/tokens/contextual/alert.tokens.json",
             "isSource": true,
             "original": {
               "$value": "{color.alpha.0}",
               "$type": "color",
               "$description": "Used for the border bottom color of a neutral alert.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              },
               "key": "{alert.neutral.border.bottom.color}"
             },
             "name": "ALERT_NEUTRAL_BORDER_BOTTOM_COLOR",

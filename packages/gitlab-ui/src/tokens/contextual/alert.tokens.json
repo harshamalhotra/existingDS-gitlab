@@ -8,7 +8,12 @@
             "dark": "{text.color.heading}"
           },
           "$type": "color",
-          "$description": "Used for the title color of a neutral alert."
+          "$description": "Used for the title color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -18,7 +23,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of a neutral alert."
+          "$description": "Used for the background color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -29,14 +40,24 @@
               "dark": "{color.neutral.400}"
             },
             "$type": "color",
-            "$description": "Used for the border center color of a neutral alert."
+            "$description": "Used for the border center color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
           "color": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border bottom color of a neutral alert."
+            "$description": "Used for the border bottom color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
