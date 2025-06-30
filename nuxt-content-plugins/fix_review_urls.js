@@ -27,6 +27,7 @@ module.exports = function transform() {
       visit(tree, elementsWhichNeedSourceFixing, (node) => {
         const src = node?.properties?.src;
         if (src?.startsWith('/')) {
+          // eslint-disable-next-line no-param-reassign
           node.properties.src = fixUrlInReviewApp(src);
         }
       });

@@ -227,6 +227,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config) {
+      // eslint-disable-next-line no-param-reassign
       config.resolve.alias.vue$ = 'vue/dist/vue.esm.js'; // Full Vue version for being able to use dynamic templates
 
       config.module.rules.splice(0, 1);
@@ -273,6 +274,7 @@ export default {
     https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1754
     */
     'vue-renderer:ssr:templateParams': (params) => {
+      // eslint-disable-next-line no-param-reassign
       params.HEAD = params.HEAD.replace(/<base.+?>/, '');
     },
   },

@@ -15,6 +15,7 @@ export default function NuxtContentExtension() {
       const filePath = path.join(baseDir, document.path + document.extension);
 
       try {
+        // eslint-disable-next-line no-param-reassign
         document.lastGitUpdate = execSync(
           `git log -1 --pretty=format:%aI "${filePath}"`,
         ).toString();
