@@ -20,7 +20,6 @@ export default [
   ...compat.extends('plugin:@gitlab/default'),
   {
     rules: {
-      'filenames/match-regex': 'off',
       'import/no-extraneous-dependencies': 'off',
     },
   },
