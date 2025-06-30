@@ -1,13 +1,11 @@
 import path from 'node:path';
 
-import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 import pluginCypress from 'eslint-plugin-cypress';
 import pluginStorybook from 'eslint-plugin-storybook';
 
-const filename = fileURLToPath(import.meta.url);
-const dirname = path.dirname(filename);
+const { dirname } = import.meta;
 const compat = new FlatCompat({
   baseDirectory: dirname,
   recommendedConfig: js.configs.recommended,
