@@ -7,8 +7,7 @@ module.exports = {
     './contents/**/*.md',
     './layouts/**/*.vue',
     './pages/**/*.vue',
-    // Scan GitLab UI's own assets
-    './node_modules/@gitlab/ui/dist/**/*.js',
+    './packages/**/*.{vue,js}',
   ],
   presets: [tailwindDefaults],
 };
