@@ -22,6 +22,11 @@ export default [
     rules: {
       'filenames/match-regex': 'off',
       'import/no-extraneous-dependencies': 'off',
+    },
+  },
+  {
+    files: ['pages/**/*.vue', 'components/**/*.vue', 'layouts/**/*.vue'],
+    rules: {
       'vue/multi-word-component-names': 'off',
     },
   },
