@@ -58,7 +58,7 @@ describe('hover load directive', () => {
     expect(target.removeEventListener).toHaveBeenCalledWith(
       'mouseover',
       expect.any(Function),
-      true
+      true,
     );
   });
 });

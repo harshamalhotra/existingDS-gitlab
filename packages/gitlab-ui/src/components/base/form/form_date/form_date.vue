@@ -56,7 +56,7 @@ export default {
   computed: {
     ariaDescribedBy() {
       return [this.valueAsDate && this.outputId, this.isInvalid && this.invalidFeedbackId].join(
-        ' '
+        ' ',
       );
     },
     isLessThanMin() {

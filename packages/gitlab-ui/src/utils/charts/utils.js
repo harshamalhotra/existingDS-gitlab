@@ -12,7 +12,7 @@ export const seriesHasAnnotations = (series = []) =>
   (series || []).filter(
     (seriesData) =>
       seriesData.name === ANNOTATIONS_SERIES_NAME &&
-      seriesData[ANNOTATIONS_COMPONENT_TYPE]?.data?.length
+      seriesData[ANNOTATIONS_COMPONENT_TYPE]?.data?.length,
   ).length !== 0;
 
 /**

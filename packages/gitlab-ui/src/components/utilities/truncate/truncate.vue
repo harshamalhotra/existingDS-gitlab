@@ -55,10 +55,10 @@ export default {
       const collapsibleWhitespaceChar = /^[ \n\t\r\f]$/;
       const { text, middleIndex } = this;
       const lastCharOfFirstIsCollapsibleWhitespace = collapsibleWhitespaceChar.test(
-        text.charAt(middleIndex - 1)
+        text.charAt(middleIndex - 1),
       );
       const firstCharOfLastIsCollapsibleWhitespace = collapsibleWhitespaceChar.test(
-        text.charAt(middleIndex)
+        text.charAt(middleIndex),
       );
 
       return lastCharOfFirstIsCollapsibleWhitespace && !firstCharOfLastIsCollapsibleWhitespace;

@@ -227,7 +227,7 @@ describe('GlTable', () => {
           'bar',
           'gl-table-th-align-right',
         ]);
-      }
+      },
     );
   });
 });

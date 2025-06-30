@@ -21,6 +21,6 @@ testFiles.forEach((file) => {
     {
       describe,
       it,
-    }
+    },
   );
 });

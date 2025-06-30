@@ -8,7 +8,7 @@ const patchHook = (hook) => (el, bindings, vnode) => {
       ...bindings,
       arg: bindings.arg || getGlTooltipDefaultContainer(),
     },
-    vnode
+    vnode,
   );
 };
 

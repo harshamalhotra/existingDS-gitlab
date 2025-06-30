@@ -49,7 +49,7 @@ function mapStoriesToSourceFile() {
       const base = file.replace(/\.stories\.js/, '');
       // A story might be for a vue file, a js file or JSON (design token)
       const match = allFiles.find(
-        (f) => f.endsWith(`${base}.vue`) || f.endsWith(`${base}.js`) || f.endsWith(`${base}.json`)
+        (f) => f.endsWith(`${base}.vue`) || f.endsWith(`${base}.js`) || f.endsWith(`${base}.json`),
       );
       if (!match && !process.env.CI) {
         // eslint-disable-next-line no-console
@@ -141,7 +141,7 @@ module.exports = ({ config }) => {
   config.plugins.push(
     new webpack.EnvironmentPlugin({
       IS_VISUAL_TEST: false,
-    })
+    }),
   );
 
   // eslint-disable-next-line no-param-reassign
@@ -155,7 +155,7 @@ module.exports = ({ config }) => {
   if (process.env.NODE_ENV === 'test') {
     // eslint-disable-next-line no-param-reassign
     config.entry = config.entry.filter(
-      (singleEntry) => !singleEntry.includes('/webpack-hot-middleware/')
+      (singleEntry) => !singleEntry.includes('/webpack-hot-middleware/'),
     );
   }
 
@@ -163,18 +163,18 @@ module.exports = ({ config }) => {
   if (process.env.CI) {
     // eslint-disable-next-line no-console
     console.log(
-      'Webpack compilation will start soon - ProgressPlugin disabled on CI due to too much output'
+      'Webpack compilation will start soon - ProgressPlugin disabled on CI due to too much output',
     );
     // eslint-disable-next-line no-param-reassign
     config.plugins = config.plugins.filter(
-      (plugin) => plugin.constructor.name !== 'ProgressPlugin'
+      (plugin) => plugin.constructor.name !== 'ProgressPlugin',
     );
   }
 
   config.plugins.push(
     new webpack.DefinePlugin({
       STORY_TO_SOURCE_MAP: JSON.stringify(mapStoriesToSourceFile()),
-    })
+    }),
   );
 
   return config;

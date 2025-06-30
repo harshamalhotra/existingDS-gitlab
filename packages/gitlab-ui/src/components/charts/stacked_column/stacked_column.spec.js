@@ -229,7 +229,7 @@ describe('stacked column chart component', () => {
               data: undefined,
               yAxisIndex: 0,
             },
-          ])
+          ]),
         );
       });
     });
@@ -283,7 +283,7 @@ describe('stacked column chart component', () => {
       });
 
       const tooltipContentEntries = Object.entries(
-        findTooltipDefaultFormat().props('tooltipContent')
+        findTooltipDefaultFormat().props('tooltipContent'),
       );
 
       expect(tooltipContentEntries).toEqual([
@@ -360,7 +360,7 @@ describe('stacked column chart component', () => {
       });
 
       expect(findChart().props('options').xAxis.axisPointer.label.formatter).toBe(
-        formatTooltipText
+        formatTooltipText,
       );
     });
   });

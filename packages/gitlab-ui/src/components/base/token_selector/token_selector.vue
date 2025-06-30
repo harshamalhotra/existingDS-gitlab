@@ -162,7 +162,7 @@ export default {
     filteredDropdownItems() {
       return this.dropdownItems.filter(
         (dropdownItem) =>
-          this.selectedTokens.findIndex((token) => token.id === dropdownItem.id) === -1
+          this.selectedTokens.findIndex((token) => token.id === dropdownItem.id) === -1,
       );
     },
     dropdownHasNoItems() {
@@ -341,7 +341,7 @@ export default {
        */
       this.$emit(
         'input',
-        this.selectedTokens.filter((selectedToken) => selectedToken.id !== token.id)
+        this.selectedTokens.filter((selectedToken) => selectedToken.id !== token.id),
       );
       /**
        * Fired when a token is removed

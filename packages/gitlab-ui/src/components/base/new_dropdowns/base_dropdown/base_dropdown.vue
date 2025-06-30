@@ -117,7 +117,7 @@ export default {
         if (['left', 'center', 'right'].includes(value)) {
           logWarning(
             `GlDisclosureDropdown/GlCollapsibleListbox: "${value}" placement is deprecated.
-            Use ${dropdownPlacements[value]} instead.`
+            Use ${dropdownPlacements[value]} instead.`,
           );
         }
 
@@ -312,7 +312,7 @@ export default {
                 {
                   maxHeight: `${Math.max(contentsAvailableHeight, 0)}px`,
                 },
-                maxWidth
+                maxWidth,
               );
             },
           }),
@@ -344,7 +344,7 @@ export default {
         logWarning(
           `GlDisclosureDropdown/GlCollapsibleListbox: Toggle is missing a 'tabindex' and cannot be focused.
           Use 'a' or 'button' element instead or make sure to add 'role="button"' along with 'tabindex' otherwise.`,
-          this.$el
+          this.$el,
         );
       }
     },
@@ -383,7 +383,7 @@ export default {
         const result = await computePosition(
           this.toggleElement,
           this.$refs.content,
-          this.floatingUIConfig
+          this.floatingUIConfig,
         );
 
         /**

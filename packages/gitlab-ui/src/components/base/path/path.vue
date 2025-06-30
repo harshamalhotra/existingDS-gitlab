@@ -114,7 +114,7 @@ export default {
     },
     scrollPathRight() {
       const nextItemToScollTo = this.$refs.pathListItems.find(
-        (listItem) => listItem.offsetLeft + listItem.offsetWidth > this.rightHandBoundary
+        (listItem) => listItem.offsetLeft + listItem.offsetWidth > this.rightHandBoundary,
       );
       let scrollTo = nextItemToScollTo.offsetLeft - BOUNDARY_WIDTH;
 

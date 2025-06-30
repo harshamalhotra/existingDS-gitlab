@@ -73,7 +73,7 @@ export class Tree {
           node.setCheckedState(
             this.optionHasSomeChildrenChecked(node)
               ? CHECKED_STATE.INDETERMINATE
-              : node.checkedState
+              : node.checkedState,
           );
           removeIndices.push(nodeIndex);
         }

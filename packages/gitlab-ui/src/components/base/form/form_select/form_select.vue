@@ -43,7 +43,7 @@ export default {
           ...(defaultWidth ? [`gl-form-select-${defaultWidth}`] : []),
           ...Object.entries(nonDefaultWidths).map(
             // eslint-disable-next-line @gitlab/tailwind-no-interpolation -- Not a CSS utility
-            ([breakpoint, width]) => `gl-${breakpoint}-form-select-${width}`
+            ([breakpoint, width]) => `gl-${breakpoint}-form-select-${width}`,
           ),
         ];
       }

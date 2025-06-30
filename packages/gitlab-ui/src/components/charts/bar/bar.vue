@@ -157,7 +157,7 @@ export default {
           },
         },
         this.option,
-        dataZoomAdjustments(this.option.dataZoom)
+        dataZoomAdjustments(this.option.dataZoom),
       );
       // All chart options can be merged but series
       // needs to be handled specially
@@ -207,7 +207,7 @@ export default {
         {
           yLabels: [],
           tooltipContent: {},
-        }
+        },
       );
 
       return { yLabels, tooltipContent };

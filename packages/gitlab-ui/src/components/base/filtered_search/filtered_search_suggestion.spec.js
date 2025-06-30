@@ -60,7 +60,7 @@ describe('Filtered search suggestion component', () => {
     listMock.activeItem = wrapper.vm;
     return wrapper.vm.$nextTick(() => {
       expect(wrapper.findComponent(GlDropdownItem).classes()).toContain(
-        'gl-filtered-search-suggestion-active'
+        'gl-filtered-search-suggestion-active',
       );
     });
   });

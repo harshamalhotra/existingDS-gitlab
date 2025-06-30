@@ -89,7 +89,7 @@ export const Connected = Template.bind(
         />
       </div>
       `,
-  }
+  },
 );
 Connected.tags = ['skip-visual-test'];
 

@@ -69,7 +69,7 @@ describe('Icon component', () => {
       expect(validateName(badName)).toBe(false);
 
       expect(consoleSpy).toHaveBeenCalledWith(
-        `Icon '${badName}' is not a known icon of @gitlab/svgs`
+        `Icon '${badName}' is not a known icon of @gitlab/svgs`,
       );
     });
 

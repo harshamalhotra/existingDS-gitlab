@@ -145,8 +145,8 @@ describe('GlTokenContainer', () => {
 
       expect(
         tokenWrappers.wrappers.every(
-          (tokenWrapper, index) => `Token id: ${tokens[index].id}` === tokenWrapper.text()
-        )
+          (tokenWrapper, index) => `Token id: ${tokens[index].id}` === tokenWrapper.text(),
+        ),
       ).toBe(true);
     });
 
@@ -194,7 +194,7 @@ describe('GlTokenContainer', () => {
             return { focusedTokenIndex };
           },
         },
-        true
+        true,
       );
 
       const focusedToken = findTokenByName(tokens[focusedTokenIndex].name);

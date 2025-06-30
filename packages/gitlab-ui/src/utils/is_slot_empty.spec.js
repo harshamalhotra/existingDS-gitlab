@@ -111,9 +111,9 @@ describe('is slot empty', () => {
         wrapper = mount(PassesComment);
 
         expect(
-          isSlotEmpty(wrapper.findComponent(TestComponent).vm, 'default', { shouldRender })
+          isSlotEmpty(wrapper.findComponent(TestComponent).vm, 'default', { shouldRender }),
         ).toBe(!shouldRender);
-      }
+      },
     );
   });
 });

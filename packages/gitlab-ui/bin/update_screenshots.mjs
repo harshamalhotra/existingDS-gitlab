@@ -38,7 +38,7 @@ async function loadUsedScreenshots() {
       console.warn(`Read ${path.basename(file)}, found ${content.length} used screenshots`);
 
       return content;
-    })
+    }),
   );
   return (await allFiles).flat();
 }
@@ -57,7 +57,7 @@ try {
 } catch (e) {
   if (e.code === 'ENOENT') {
     console.warn(
-      `${UPDATED_SCREENSHOT_DIR} doesn't exist, so likely no screenshots needed updating`
+      `${UPDATED_SCREENSHOT_DIR} doesn't exist, so likely no screenshots needed updating`,
     );
   } else {
     console.error('Uncaught exception occurred...');
@@ -70,7 +70,7 @@ const usedScreenshots = await loadUsedScreenshots();
 
 if (usedScreenshots.length) {
   console.warn(
-    `The visual specs used ${usedScreenshots.length} screenshots. Checking whether we have unused ones...`
+    `The visual specs used ${usedScreenshots.length} screenshots. Checking whether we have unused ones...`,
   );
   for (const screenshot of checkedInScreenshots) {
     if (!usedScreenshots.includes(screenshot)) {

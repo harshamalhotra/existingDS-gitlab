@@ -287,7 +287,7 @@ describe('empty state component', () => {
         });
 
         expect(findContentContainer().classes()).toEqual(expectedClasses);
-      }
+      },
     );
   });
 });

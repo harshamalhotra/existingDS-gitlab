@@ -85,7 +85,7 @@ describe('GlGridLayout', () => {
           columnOpts: { breakpoints: [{ w: breakpoints.md, c: 1 }] },
           float: true,
         },
-        findGrid().element
+        findGrid().element,
       );
     });
 
@@ -115,7 +115,7 @@ describe('GlGridLayout', () => {
               ...panelWithoutGridAttributes,
             },
           };
-        })
+        }),
       );
     });
 
@@ -194,7 +194,7 @@ describe('GlGridLayout', () => {
 
           expect(findGridStackPanels().at(index).element.parentElement).toBe(gridItem.element);
         });
-      }
+      },
     );
   });
 
@@ -208,7 +208,7 @@ describe('GlGridLayout', () => {
         expect.objectContaining({
           staticGrid: false,
         }),
-        findGrid().element
+        findGrid().element,
       );
     });
 
@@ -303,7 +303,7 @@ describe('GlGridLayout', () => {
 
       // Check that the slot was called with updated data
       const updatedPanelCall = mockPanelSlots.mock.calls.find(
-        (call) => call[0].panel.id === updatedPanel.id
+        (call) => call[0].panel.id === updatedPanel.id,
       );
 
       expect(updatedPanelCall).toBeDefined();

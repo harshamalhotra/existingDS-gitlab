@@ -107,7 +107,7 @@ export const CustomListItem = (args, { argTypes }) => ({
       bindingOverrides: {
         class: '!gl-block gl-text-center',
       },
-    }
+    },
   ),
 });
 
@@ -172,7 +172,7 @@ export const CustomGroupsAndItems = (args, { argTypes }) => ({
           <gl-badge pill variant="neutral">{{ item.count }}</gl-badge>
         </span>
       </template>
-    `
+    `,
   ),
 });
 
@@ -239,7 +239,7 @@ export const CustomGroupsItemsAndToggle = makeGroupedExample({
         <textarea class="gl-w-full">Tell us what you think!</textarea>
       </gl-modal>
     `,
-    }
+    },
   ),
   data() {
     return {
@@ -326,7 +326,7 @@ export const MiscellaneousContent = (args, { argTypes }) => ({
   template: template(
     `
       <div class="gl-p-3">A disclosure dropdown is a button that toggles a panel containing a list of items and/or links.</div>
-    `
+    `,
   ),
 });
 

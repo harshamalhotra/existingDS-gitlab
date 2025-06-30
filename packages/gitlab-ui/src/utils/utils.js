@@ -187,7 +187,7 @@ export function logWarning(message = '', element = '') {
  */
 export function stopEvent(
   event,
-  { preventDefault = true, stopPropagation = true, stopImmediatePropagation = false } = {}
+  { preventDefault = true, stopPropagation = true, stopImmediatePropagation = false } = {},
 ) {
   if (preventDefault) {
     event.preventDefault();

@@ -167,7 +167,7 @@ export default {
           symbolSize,
           lineStyle,
           series,
-          getThresholdConfig(this.thresholds)
+          getThresholdConfig(this.thresholds),
         );
       });
       // if annotation series exists, append it
@@ -212,13 +212,13 @@ export default {
         lineChartOptions,
         this.formatTooltipText ? deprecatedTooltipFormatterOptions : {},
         this.option,
-        dataZoomAdjustments(this.option.dataZoom)
+        dataZoomAdjustments(this.option.dataZoom),
       );
       // All chart options can be merged but series
       // needs to be handled specially
       return mergeSeriesToOptions(
         mergeAnnotationAxisToOptions(mergedOptions, this.hasAnnotations),
-        this.series
+        this.series,
       );
     },
     /**

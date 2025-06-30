@@ -130,7 +130,7 @@ describe('GlCollapsibleListbox', () => {
     it('should provide `toggleId` to the base dropdown and reference it in`aria-labelledby` attribute of the list container`', async () => {
       await buildWrapper({ items: mockOptions });
       expect(findBaseDropdown().props('toggleId')).toBe(
-        findListContainer().attributes('aria-labelledby')
+        findListContainer().attributes('aria-labelledby'),
       );
     });
 
@@ -158,7 +158,7 @@ describe('GlCollapsibleListbox', () => {
     `('announces correct text when $busyState', ({ props, expectedText }) => {
       buildWrapper({ items: mockOptions, ...props });
       expect(wrapper.find('[data-testid="listbox-loading-announcement"]').text()).toBe(
-        expectedText
+        expectedText,
       );
     });
   });
@@ -189,7 +189,7 @@ describe('GlCollapsibleListbox', () => {
         await nextTick();
         expect(wrapper.emitted('select')[0][0]).toEqual(
           // The first three items should now be selected.
-          expect.arrayContaining(mockOptions.slice(0, 3).map(({ value }) => value))
+          expect.arrayContaining(mockOptions.slice(0, 3).map(({ value }) => value)),
         );
       });
     });
@@ -445,7 +445,7 @@ describe('GlCollapsibleListbox', () => {
       buildWrapper({ headerText: headerContent, items: mockOptions });
 
       expect(findListContainer().attributes('aria-labelledby')).toBe(
-        findHeaderText().attributes('id')
+        findHeaderText().attributes('id'),
       );
     });
 
@@ -491,7 +491,7 @@ describe('GlCollapsibleListbox', () => {
       const groups = findListboxGroups();
 
       const expectedTextSrOnlyProps = mockGroupsWithTextSrOnly.map(
-        (group) => group.textSrOnly ?? false
+        (group) => group.textSrOnly ?? false,
       );
       const actualTextSrOnlyProps = groups.wrappers.map((group) => group.props('textSrOnly'));
 
@@ -563,7 +563,7 @@ describe('GlCollapsibleListbox', () => {
       expect(() => {
         buildWrapper({ resetButtonLabel: 'Unassign' });
       }).toThrow(
-        'The reset button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the resetButtonLabel prop.'
+        'The reset button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the resetButtonLabel prop.',
       );
       expect(wrapper).toHaveLoggedVueErrors();
     });
@@ -583,7 +583,7 @@ describe('GlCollapsibleListbox', () => {
         });
 
         expect(findResetButton().exists()).toBe(true);
-      }
+      },
     );
 
     it('shows the button if the label is provided and only one option is selected in multi select', () => {
@@ -661,7 +661,7 @@ describe('GlCollapsibleListbox', () => {
           });
 
           expect(findResetButton().exists()).toBe(true);
-        }
+        },
       );
     });
   });
@@ -671,7 +671,7 @@ describe('GlCollapsibleListbox', () => {
       expect(() => {
         buildWrapper({ showSelectAllButtonLabel: 'Select all' });
       }).toThrow(
-        'The select all button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the showSelectAllButtonLabel prop.'
+        'The select all button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the showSelectAllButtonLabel prop.',
       );
       expect(wrapper).toHaveLoggedVueErrors();
     });
@@ -702,7 +702,7 @@ describe('GlCollapsibleListbox', () => {
         it(`${resetVisible ? 'shows' : 'does not show'} the Reset button`, () => {
           expect(findResetButton().exists()).toBe(resetVisible);
         });
-      }
+      },
     );
 
     it('when label is provided and one option is selected in multiselect', () => {
@@ -813,7 +813,7 @@ describe('GlCollapsibleListbox', () => {
       });
 
       expect(consoleWarnSpy).toHaveBeenCalledWith(
-        'When using grouped options infinite scroll can only be used on the last group.'
+        'When using grouped options infinite scroll can only be used on the last group.',
       );
     });
 
@@ -948,7 +948,7 @@ describe('GlCollapsibleListbox', () => {
       'sets the test ID for %s',
       (option) => {
         expect(wrapper.find(`[data-testid="listbox-item-${option.value}"]`).exists()).toBe(true);
-      }
+      },
     );
   });
 
@@ -973,7 +973,7 @@ describe('GlCollapsibleListbox', () => {
         buildWrapper({ positioningStrategy });
 
         expect(findBaseDropdown().props('positioningStrategy')).toBe(positioningStrategy);
-      }
+      },
     );
   });
 

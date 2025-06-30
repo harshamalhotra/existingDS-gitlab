@@ -249,14 +249,14 @@ export default {
             0,
             0,
             this.getPageItem(1, this.labelFirstPage),
-            this.getEllipsisItem('left')
+            this.getEllipsisItem('left'),
           );
         }
 
         if (this.shouldCollapseRightSide) {
           items.push(
             this.getEllipsisItem('right'),
-            this.getPageItem(this.totalPages, this.labelLastPage)
+            this.getPageItem(this.totalPages, this.labelLastPage),
           );
         }
       }

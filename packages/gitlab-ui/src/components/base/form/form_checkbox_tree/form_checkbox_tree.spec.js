@@ -139,7 +139,7 @@ describe('GlFormCheckboxTree', () => {
           expectCheckboxIndeterminate(findCheckboxByValue(box));
         });
       });
-    }
+    },
   );
 
   describe.each`
@@ -177,7 +177,7 @@ describe('GlFormCheckboxTree', () => {
       beforeEach(async () => {
         createWrapper({ options: getOptions(shape) });
         await Promise.allSettled(
-          boxesToCheck.map((box) => findCheckboxInput(findCheckboxByValue(box)).setChecked())
+          boxesToCheck.map((box) => findCheckboxInput(findCheckboxByValue(box)).setChecked()),
         );
       });
 
@@ -193,7 +193,7 @@ describe('GlFormCheckboxTree', () => {
           expectCheckboxChecked(findCheckboxByValue(checkedParent));
         });
       });
-    }
+    },
   );
 
   describe.each`
@@ -209,7 +209,9 @@ describe('GlFormCheckboxTree', () => {
       beforeEach(async () => {
         createWrapper({ options: getOptions(shape), [V_MODEL.PROP]: initiallyChecked });
         await Promise.allSettled(
-          boxesToUncheck.map((box) => findCheckboxInput(findCheckboxByValue(box)).setChecked(false))
+          boxesToUncheck.map((box) =>
+            findCheckboxInput(findCheckboxByValue(box)).setChecked(false),
+          ),
         );
       });
 
@@ -225,7 +227,7 @@ describe('GlFormCheckboxTree', () => {
           expectCheckboxIndeterminate(findCheckboxByValue(indeterminateBox));
         });
       });
-    }
+    },
   );
 
   describe.each`
@@ -260,6 +262,6 @@ describe('GlFormCheckboxTree', () => {
           expect(findCheckboxInput(checkbox).element.indeterminate).toBe(false);
         });
       });
-    }
+    },
   );
 });

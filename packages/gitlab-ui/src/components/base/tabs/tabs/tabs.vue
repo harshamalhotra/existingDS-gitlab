@@ -134,7 +134,7 @@ export default {
       await this.$nextTick();
       const queryParamValue = this.getQueryParamValue();
       const tabIndexToActivate = this.getTabs().findIndex(
-        (tab, tabIndex) => this.getTabQueryParamValue(tabIndex) === queryParamValue
+        (tab, tabIndex) => this.getTabQueryParamValue(tabIndex) === queryParamValue,
       );
       this.activeTabIndex = tabIndexToActivate !== -1 ? tabIndexToActivate : 0;
     },

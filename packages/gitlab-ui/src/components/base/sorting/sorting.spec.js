@@ -145,7 +145,7 @@ describe('sorting component', () => {
       });
 
       expect(selectDirectionButton().classes()).toEqual(
-        expect.arrayContaining(['sorting-direction-button', 'foo-bar'])
+        expect.arrayContaining(['sorting-direction-button', 'foo-bar']),
       );
     });
 

@@ -62,7 +62,7 @@ describe('Path', () => {
 
       it('sets the correct background color', () => {
         expect(pathNav().style.getPropertyValue('--path-bg-color')).toBe(
-          BACKGROUND_COLOR_LIGHT_GRAY
+          BACKGROUND_COLOR_LIGHT_GRAY,
         );
       });
     });

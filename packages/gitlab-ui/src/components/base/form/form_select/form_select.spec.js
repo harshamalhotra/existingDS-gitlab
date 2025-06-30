@@ -28,7 +28,7 @@ describe('GlFormSelect', () => {
       createComponent({ state });
 
       expect(findSelect().classes().sort()).toEqual(
-        [...DEFAULT_SELECT_CLASSES, ...expectedClasses].sort()
+        [...DEFAULT_SELECT_CLASSES, ...expectedClasses].sort(),
       );
     });
   });
@@ -41,7 +41,7 @@ describe('GlFormSelect', () => {
       createComponent({ width });
 
       expect(wrapper.classes().sort()).toEqual(
-        [SELECT_WRAPPER_CLASS, `gl-form-select-${width}`].sort()
+        [SELECT_WRAPPER_CLASS, `gl-form-select-${width}`].sort(),
       );
     });
 

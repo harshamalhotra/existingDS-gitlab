@@ -35,8 +35,8 @@ function renderTitle(h, toast, options) {
             click: (e) => options.action.onClick(e, toast),
           },
         },
-        options.action.text
-      )
+        options.action.text,
+      ),
     );
   }
   return nodes;

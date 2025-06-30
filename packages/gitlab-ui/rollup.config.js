@@ -90,7 +90,7 @@ export default glob
   .concat(
     glob.sync('src/vendor/bootstrap-vue/src/**/*.js', {
       ignore: ['**/*.spec.js', '**/*.stories.js'],
-    })
+    }),
   )
   .map((input) => {
     const outputFilename = input.replace(/^src\//, '').replace(/\.(vue|js)$/, '');

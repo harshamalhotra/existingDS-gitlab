@@ -43,7 +43,7 @@ const spacing = {
       88: 88,
     }).map(([scale, factor]) => {
       return [scale, `${factor * gridSize}rem`];
-    })
+    }),
   ),
 };
 

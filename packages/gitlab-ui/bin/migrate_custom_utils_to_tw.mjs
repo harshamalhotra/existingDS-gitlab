@@ -121,7 +121,7 @@ async function getFilesAndDirectories(directories, dryRun) {
 function getArgsParser() {
   return yargs(hideBin(process.argv))
     .usage(
-      'Usage: $0 [--migrations <path>] [--tailwind-config <path>] [--directory <path...>] [--from-stdin] [--dry-run]'
+      'Usage: $0 [--migrations <path>] [--tailwind-config <path>] [--directory <path...>] [--from-stdin] [--dry-run]',
     )
     .option('directories', {
       alias: 'd',
@@ -204,7 +204,7 @@ async function main() {
   } else {
     const filesAndDirectories = await getFilesAndDirectories(
       program.directories ?? [],
-      program.dryRun
+      program.dryRun,
     );
     files = filesAndDirectories.files;
     const { pattern, directories } = filesAndDirectories;
@@ -213,7 +213,7 @@ async function main() {
         [`Running on %d files across %d directories`, `(using pattern: %s).`].join('\n'),
         files.length,
         directories.length,
-        pattern
+        pattern,
       );
 
       console.warn('Directories searched:');

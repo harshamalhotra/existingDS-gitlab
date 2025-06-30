@@ -26,7 +26,7 @@ describe('Intersperse Component', () => {
         // eslint-disable-next-line unicorn/no-array-callback-reference
         expect(wrapper.find(selector).exists()).toBe(true);
       });
-    }
+    },
   );
 
   it('renders an empty span if no children are given', () => {
@@ -64,7 +64,7 @@ describe('Intersperse Component', () => {
       createComponent(defaultSlotContent, { propsData: { separator } });
 
       expect(wrapper.text()).toBe(expectedText);
-    }
+    },
   );
 
   it.each`
@@ -79,7 +79,7 @@ describe('Intersperse Component', () => {
       createComponent(defaultSlotContent, { propsData: { separator, lastSeparator } });
 
       expect(wrapper.text()).toBe(expectedText);
-    }
+    },
   );
 
   it.each`
@@ -96,7 +96,7 @@ describe('Intersperse Component', () => {
       createComponent(defaultSlotContent);
 
       expect(wrapper.text()).toBe('Foo, Bar');
-    }
+    },
   );
 
   it.each`
@@ -111,7 +111,7 @@ describe('Intersperse Component', () => {
       createComponent(defaultSlotContent);
 
       expect(wrapper.text()).toBe(expectedText);
-    }
+    },
   );
 
   it.each`
@@ -124,6 +124,6 @@ describe('Intersperse Component', () => {
       createComponent(defaultSlotContent);
 
       expect(wrapper.text()).toBe(expectedText);
-    }
+    },
   );
 });

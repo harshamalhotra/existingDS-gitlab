@@ -150,7 +150,7 @@ export default {
         const token = tokens[key];
         if (token.$value) {
           tokensArray.push(
-            this.transformTokenToTableColumns({ ...token, context: [...context, key] })
+            this.transformTokenToTableColumns({ ...token, context: [...context, key] }),
           );
         } else if (key !== 'colors') {
           tokensArray.push(...this.transformTokensToTableRows(token, [...context, key]));

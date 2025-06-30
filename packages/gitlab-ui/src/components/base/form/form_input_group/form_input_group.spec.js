@@ -61,7 +61,7 @@ describe('Input Group', () => {
       });
 
       expect(wrapper.findComponent(GlFormInput).classes()).toEqual(
-        expect.arrayContaining(['foo-bar', 'baz'])
+        expect.arrayContaining(['foo-bar', 'baz']),
       );
     });
   });

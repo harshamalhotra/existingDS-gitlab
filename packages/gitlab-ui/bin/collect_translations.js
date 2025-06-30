@@ -60,9 +60,9 @@ const buildTranslationsObject = (files) => {
         const translationValue = getDefaultValueAsJavaScript(node);
         findings.push(`'${translationKey}': ${translationValue},`);
         console.warn(
-          `Found translation key '${translationKey}' in ${path.relative(process.cwd(), file)}`
+          `Found translation key '${translationKey}' in ${path.relative(process.cwd(), file)}`,
         );
-      }
+      },
     );
 
     return findings;

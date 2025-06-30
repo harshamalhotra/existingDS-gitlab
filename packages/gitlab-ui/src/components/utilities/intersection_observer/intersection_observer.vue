@@ -7,7 +7,7 @@ const getObserver = memoize(
       entries.forEach((entry) => {
         entry.target.$_gl_intersectionHandler(entry);
       });
-    }, options || {})
+    }, options || {}),
 );
 
 export default {

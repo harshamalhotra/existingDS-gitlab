@@ -75,7 +75,7 @@ describe('GlTokenSelector', () => {
     const dropdownItemWrappers = wrapper.findAllComponents(GlDropdownItem);
 
     return dropdownItemWrappers.wrappers.find(
-      (dropdownItemWrapper) => dropdownItemWrapper.text() === name
+      (dropdownItemWrapper) => dropdownItemWrapper.text() === name,
     );
   };
 
@@ -144,10 +144,10 @@ describe('GlTokenSelector', () => {
         });
         it('passes correct prop to `gl-token-selector-dropdown` component', () => {
           expect(
-            wrapper.findComponent(GlTokenSelectorDropdown).props('userDefinedTokenCanBeAdded')
+            wrapper.findComponent(GlTokenSelectorDropdown).props('userDefinedTokenCanBeAdded'),
           ).toBe(expected);
         });
-      }
+      },
     );
 
     describe('loading', () => {
@@ -244,7 +244,7 @@ describe('GlTokenSelector', () => {
         });
 
         expect(wrapper.findAllComponents(GlToken).at(0).classes()).not.toContain(
-          'gl-bg-data-viz-blue-500'
+          'gl-bg-data-viz-blue-500',
         );
         expect(wrapper.findAllComponents(GlToken).at(4).classes()).toEqual(
           expect.arrayContaining([
@@ -253,7 +253,7 @@ describe('GlTokenSelector', () => {
             'gl-token-default-variant',
             'gl-text-white',
             'gl-bg-data-viz-blue-500',
-          ])
+          ]),
         );
       });
     });
@@ -421,7 +421,7 @@ describe('GlTokenSelector', () => {
 
       it('adds focus class to main container', () => {
         expect(wrapper.find('.gl-token-selector').classes()).toContain(
-          'gl-token-selector-focus-glow'
+          'gl-token-selector-focus-glow',
         );
       });
 
@@ -447,7 +447,7 @@ describe('GlTokenSelector', () => {
 
       it('removes focus class from main container', () => {
         expect(wrapper.find('.gl-token-selector').classes()).not.toContain(
-          'gl-token-selector-focus-glow'
+          'gl-token-selector-focus-glow',
         );
       });
 
@@ -523,7 +523,7 @@ describe('GlTokenSelector', () => {
             },
             stubs: { 'gl-token-container': GlTokenContainer },
           },
-          true
+          true,
         );
 
         textInput = findTextInput();

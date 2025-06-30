@@ -36,7 +36,7 @@ function getRange(series) {
       if (value > acc.max) acc.max = value;
       return acc;
     },
-    { min: 0, max: 0 }
+    { min: 0, max: 0 },
   );
 }
 
@@ -197,7 +197,7 @@ export default {
             },
           },
         },
-        this.option
+        this.option,
       );
     },
     legendStyle() {

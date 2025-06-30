@@ -25,7 +25,7 @@ const generateGradient = (colors) => {
     colors.map((color, index) => {
       const offset = index / (colors.length - 1);
       return { offset, color };
-    })
+    }),
   );
 };
 

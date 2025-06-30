@@ -60,7 +60,7 @@ describe('Truncate component', () => {
   const triggerResizeObserver = async () => {
     const callback = getBinding(
       wrapper.find('.gl-truncate-component').element,
-      'gl-resize-observer'
+      'gl-resize-observer',
     ).value;
 
     callback();
@@ -81,7 +81,7 @@ describe('Truncate component', () => {
         expect(element.attributes('title')).toBeUndefined();
         expect(element.attributes('class')).toBe('gl-truncate-component');
         expect(removeSpecialChar(wrapper.text())).toBe(defaultProps.text);
-      }
+      },
     );
 
     it('should have the default position', () => {
@@ -90,7 +90,7 @@ describe('Truncate component', () => {
 
     it('disables the tooltip by default', () => {
       expect(
-        getBinding(wrapper.find('.gl-truncate-component').element, 'gl-tooltip').value.disabled
+        getBinding(wrapper.find('.gl-truncate-component').element, 'gl-tooltip').value.disabled,
       ).toBe(true);
     });
   });
@@ -105,7 +105,7 @@ describe('Truncate component', () => {
       await triggerResizeObserver();
 
       expect(
-        getBinding(wrapper.find('.gl-truncate-component').element, 'gl-tooltip').value.disabled
+        getBinding(wrapper.find('.gl-truncate-component').element, 'gl-tooltip').value.disabled,
       ).toBe(false);
     });
 

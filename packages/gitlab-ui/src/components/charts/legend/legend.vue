@@ -149,7 +149,7 @@ export default {
     },
     suppressLastActiveSeriesLabelToggle({ selected }) {
       const selectedSeriesLabels = Object.entries(selected).filter(([, isSelected]) =>
-        Boolean(isSelected)
+        Boolean(isSelected),
       );
 
       this.lastActiveSeriesLabel = null;

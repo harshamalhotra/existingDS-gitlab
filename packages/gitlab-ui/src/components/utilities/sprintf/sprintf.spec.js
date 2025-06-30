@@ -4,7 +4,7 @@ import sprintf from './sprintf.vue';
 describe('sprintf component', () => {
   let wrapper;
   const objectPrototypeNames = Object.getOwnPropertyNames(Object.prototype).filter((name) =>
-    /^[a-z]/i.test(name)
+    /^[a-z]/i.test(name),
   );
 
   const createComponent = (template = '', data = () => ({})) => {
@@ -58,7 +58,7 @@ describe('sprintf component', () => {
         <template #author_name>
           <span>Author Name</span>
         </template>
-      </sprintf>`
+      </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe(html);
@@ -70,11 +70,11 @@ describe('sprintf component', () => {
         <template #author>
           <span>Author</span>
         </template>
-      </sprintf>`
+      </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe(
-        '<span>Author</span> is an excellent <span>Author</span>'
+        '<span>Author</span> is an excellent <span>Author</span>',
       );
     });
 
@@ -82,7 +82,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="Written by %{author}">
         <template #author>Author</template>
-      </sprintf>`
+      </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Written by Author');
@@ -101,14 +101,14 @@ describe('sprintf component', () => {
           createComponent(`<sprintf message="%{${prototypeName}}"></sprintf>`);
 
           expect(wrapper.element.innerHTML).toBe(`%{${prototypeName}}`);
-        }
+        },
       );
 
       it.each(objectPrototypeNames)('can use provided slot named "%s"', (prototypeName) => {
         createComponent(
           `<sprintf message="%{${prototypeName}}">
              <template #${prototypeName}>${prototypeName} OK!</template>
-           </sprintf>`
+           </sprintf>`,
         );
 
         expect(wrapper.element.innerHTML).toBe(`${prototypeName} OK!`);
@@ -123,7 +123,7 @@ describe('sprintf component', () => {
            <template #link="{ content }">
              <a href="#">{{ content }}</a>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Click <a href="#">here</a>, please');
@@ -133,7 +133,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="Foo %{defaultStart}default%{defaultEnd} baz">
            <template #default="{ content }">{{ content }}</template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Foo default baz');
@@ -145,7 +145,7 @@ describe('sprintf component', () => {
            <template #link>
              <a href="#">foo</a>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Click <a href="#">foo</a>, please');
@@ -160,7 +160,7 @@ describe('sprintf component', () => {
            <template #qux="{ content }">
              <b>{{ content }}</b>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Foo <a>bar</a> <b>qux</b> baz');
@@ -178,7 +178,7 @@ describe('sprintf component', () => {
            <template #barEnd>
              <i>barEnd</i>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('Foo <i>barEnd</i>bar<b>barStart</b> qux');
@@ -188,7 +188,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="%{fooStart}bar%{fooEnd}">
            <template #foo="{ content }"><b>{{ content }}</b></template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('<b>bar</b>');
@@ -198,7 +198,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="foo %{barStart} baz">
            <template #barStart>start</template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('foo start baz');
@@ -208,7 +208,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="foo %{barEnd} baz">
            <template #barEnd>end</template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('foo end baz');
@@ -220,11 +220,11 @@ describe('sprintf component', () => {
            <template #span="{ content }"><span>{{ content }}</span></template>
            <template #baz>baz</template>
            <template #strong="{ content }"><strong>{{ content }}</strong></template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe(
-        'foo <span>foo %{baz} %{strongStart}strong%{strongEnd}</span>'
+        'foo <span>foo %{baz} %{strongStart}strong%{strongEnd}</span>',
       );
     });
 
@@ -232,7 +232,7 @@ describe('sprintf component', () => {
       createComponent(
         `<sprintf message="foo %{barStart}%{barEnd} baz">
            <template #bar="{ content }"><i>{{ content }}</i></template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe('foo <i></i> baz');
@@ -255,11 +255,11 @@ describe('sprintf component', () => {
                rel="noopener noreferrer"
              >{{ content }}</a>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe(
-        'Learn more about <a href="https://cloud.google.com/compute/docs/regions-zones/regions-zones" target="_blank" rel="noopener noreferrer">zones</a>'
+        'Learn more about <a href="https://cloud.google.com/compute/docs/regions-zones/regions-zones" target="_blank" rel="noopener noreferrer">zones</a>',
       );
     });
 
@@ -269,11 +269,11 @@ describe('sprintf component', () => {
            <template #link="{ content }">
              <a href="#">{{ content }}</a>
            </template>
-         </sprintf>`
+         </sprintf>`,
       );
 
       expect(wrapper.element.innerHTML).toBe(
-        'Click <a href="#">&lt;script&gt;alert(\'hello\')&lt;/script&gt;</a>, please'
+        'Click <a href="#">&lt;script&gt;alert(\'hello\')&lt;/script&gt;</a>, please',
       );
     });
 
@@ -282,20 +282,20 @@ describe('sprintf component', () => {
         'does not use Object.prototype.%s as slot if slot is not provided',
         (prototypeName) => {
           createComponent(
-            `<sprintf message="%{${prototypeName}Start} foo %{${prototypeName}End}"></sprintf>`
+            `<sprintf message="%{${prototypeName}Start} foo %{${prototypeName}End}"></sprintf>`,
           );
 
           expect(wrapper.element.innerHTML).toBe(
-            `%{${prototypeName}Start} foo %{${prototypeName}End}`
+            `%{${prototypeName}Start} foo %{${prototypeName}End}`,
           );
-        }
+        },
       );
 
       it.each(objectPrototypeNames)('can use provided slot named "%s"', (prototypeName) => {
         createComponent(
           `<sprintf message="%{${prototypeName}Start}foo%{${prototypeName}End}">
                <template #${prototypeName}="{ content }">{{ content }}</template>
-             </sprintf>`
+             </sprintf>`,
         );
 
         expect(wrapper.element.innerHTML).toBe('foo');
@@ -326,11 +326,11 @@ describe('sprintf component', () => {
             () => ({
               message,
               placeholders,
-            })
+            }),
           );
 
           expect(wrapper.element.innerHTML).toBe(expectedHtml);
-        }
+        },
       );
     });
   });

@@ -69,7 +69,7 @@ export const TextLinks = (_args, { viewMode, argTypes }) => ({
     <template>
       A popover is used to provide supplemental, useful, unique information about an element. This one has a link to <a class="gl-link" href="https://design.gitlab.com/components/popover">learn more about popovers.</a>
     </template>
-  `
+  `,
   ),
 });
 TextLinks.args = generateProps({
@@ -87,7 +87,7 @@ export const OnClick = (_args, { viewMode, argTypes }) => ({
     <template #title>
       <span data-testid="popover-title">Popover title</span>
     </template>
-  `
+  `,
   ),
 });
 OnClick.args = generateProps({

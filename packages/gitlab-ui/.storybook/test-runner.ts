@@ -15,7 +15,7 @@ const customSnapshotsDir = join(ROOT_DIR, `/tests/__image_snapshots__`);
 const customReceivedDir = join(customSnapshotsDir, '__updated_screenshots__');
 const seenSnapshotsFile = join(
   customSnapshotsDir,
-  `__used_screenshots_${env?.CI_NODE_INDEX ?? '0'}`
+  `__used_screenshots_${env?.CI_NODE_INDEX ?? '0'}`,
 );
 
 const defaultFailureThresholdType = 'pixel';
@@ -63,7 +63,7 @@ const runA11y = async (page, context) => {
         },
       },
       false,
-      'v2'
+      'v2',
     );
   }
 };

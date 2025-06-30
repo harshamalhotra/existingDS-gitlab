@@ -107,7 +107,7 @@ describe('number utils', () => {
 
     it('should use the options if they are provided', () => {
       expect(numberUtils.formatNumberToLocale('222222.233', { minimumFractionDigits: 4 })).toEqual(
-        '222,222.2330'
+        '222,222.2330',
       );
     });
 

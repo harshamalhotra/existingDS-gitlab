@@ -365,7 +365,7 @@ export default {
       default: translatePlural(
         'GlCollapsibleListbox.srOnlyResultsLabel',
         '%d result',
-        '%d results'
+        '%d results',
       ),
     },
   },
@@ -513,7 +513,7 @@ export default {
       if (this.infiniteScrollLoading) {
         return translate(
           'GlCollapsibleListbox.loadingAnnouncementText.loadingMoreItems',
-          'Loading more items'
+          'Loading more items',
         );
       }
       if (this.searching) {
@@ -522,7 +522,7 @@ export default {
       if (this.loading) {
         return translate(
           'GlCollapsibleListbox.loadingAnnouncementText.loadingItems',
-          'Loading items'
+          'Loading items',
         );
       }
       return '';
@@ -568,7 +568,7 @@ export default {
             handler(newResetButtonLabel) {
               if (newResetButtonLabel && !this.headerText) {
                 throw new Error(
-                  'The reset button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the resetButtonLabel prop.'
+                  'The reset button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the resetButtonLabel prop.',
                 );
               }
             },
@@ -578,7 +578,7 @@ export default {
             handler(showSelectAllButtonLabel) {
               if (showSelectAllButtonLabel && !this.headerText) {
                 throw new Error(
-                  'The select all button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the showSelectAllButtonLabel prop.'
+                  'The select all button cannot be rendered without a header. Either provide a header via the headerText prop, or do not provide the showSelectAllButtonLabel prop.',
                 );
               }
             },
@@ -589,7 +589,7 @@ export default {
               if (newValue && this.items.some((item) => !isOption(item))) {
                 // eslint-disable-next-line no-console
                 console.warn(
-                  'When using grouped options infinite scroll can only be used on the last group.'
+                  'When using grouped options infinite scroll can only be used on the last group.',
                 );
               }
             },
@@ -793,7 +793,7 @@ export default {
       } else {
         this.$emit(
           'select',
-          this.selectedValues.filter((selectedValue) => selectedValue !== value)
+          this.selectedValues.filter((selectedValue) => selectedValue !== value),
         );
       }
     },

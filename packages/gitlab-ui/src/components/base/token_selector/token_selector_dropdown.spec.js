@@ -213,8 +213,8 @@ describe('GlTokenSelectorDropdown', () => {
       expect(
         dropdownItemWrappers.wrappers.every(
           (dropdownItem, index) =>
-            `Dropdown item id: ${dropdownItems[index].id}` === dropdownItem.text()
-        )
+            `Dropdown item id: ${dropdownItems[index].id}` === dropdownItem.text(),
+        ),
       ).toBe(true);
     });
 
@@ -232,7 +232,7 @@ describe('GlTokenSelectorDropdown', () => {
       });
 
       expect(wrapper.find('#custom-user-defined-token-content').text()).toBe(
-        'Add "example.com" to domain allowlist'
+        'Add "example.com" to domain allowlist',
       );
     });
 
@@ -310,7 +310,7 @@ describe('GlTokenSelectorDropdown', () => {
             {
               propsData: { registerDropdownEventHandlers, show: true, userDefinedTokenCanBeAdded },
             },
-            false
+            false,
           );
 
           await setup({
@@ -327,7 +327,7 @@ describe('GlTokenSelectorDropdown', () => {
         it('scrolls focused dropdown item into view', () => {
           expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
         });
-      }
+      },
     );
 
     describe.each`
@@ -349,7 +349,7 @@ describe('GlTokenSelectorDropdown', () => {
             {
               propsData: { registerDropdownEventHandlers, show: true, userDefinedTokenCanBeAdded },
             },
-            false
+            false,
           );
 
           await setup({
@@ -366,7 +366,7 @@ describe('GlTokenSelectorDropdown', () => {
         it('scrolls focused dropdown item into view', () => {
           expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
         });
-      }
+      },
     );
 
     describe.each`
@@ -388,7 +388,7 @@ describe('GlTokenSelectorDropdown', () => {
             {
               propsData: { registerDropdownEventHandlers, show: true, userDefinedTokenCanBeAdded },
             },
-            false
+            false,
           );
 
           await setup({
@@ -406,7 +406,7 @@ describe('GlTokenSelectorDropdown', () => {
         it('scrolls focused dropdown item into view', () => {
           expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
         });
-      }
+      },
     );
 
     describe.each`
@@ -428,7 +428,7 @@ describe('GlTokenSelectorDropdown', () => {
             {
               propsData: { registerDropdownEventHandlers, show: true, userDefinedTokenCanBeAdded },
             },
-            false
+            false,
           );
 
           await setup({
@@ -446,7 +446,7 @@ describe('GlTokenSelectorDropdown', () => {
         it('scrolls focused dropdown item into view', () => {
           expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
         });
-      }
+      },
     );
 
     describe('when show is false', () => {
@@ -455,7 +455,7 @@ describe('GlTokenSelectorDropdown', () => {
           {
             propsData: { registerDropdownEventHandlers, show: false },
           },
-          false
+          false,
         );
       });
 

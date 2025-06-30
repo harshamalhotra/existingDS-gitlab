@@ -69,7 +69,7 @@ describe('GlSegmentedControl', () => {
 
           expect(wrapper.emitted('input')).toEqual([[value]]);
         });
-      }
+      },
     );
   });
 
@@ -92,11 +92,11 @@ describe('GlSegmentedControl', () => {
         {},
         {
           'button-content': `<template #button-content="option">In a slot - {{ option.text }}</template>`,
-        }
+        },
       );
 
       expect(findButtonsData().map((x) => x.text)).toEqual(
-        DEFAULT_OPTIONS.map((x) => `In a slot - ${x.text}`)
+        DEFAULT_OPTIONS.map((x) => `In a slot - ${x.text}`),
       );
     });
   });

@@ -116,7 +116,7 @@ export default {
     checkAndCollapseSiblingAccordionItems(newVisible) {
       if (this.autoCollapse() && newVisible) {
         this.$parent.$el.dispatchEvent(
-          new CustomEvent(COLLAPSE_EVENT, { detail: this.accordionItemId })
+          new CustomEvent(COLLAPSE_EVENT, { detail: this.accordionItemId }),
         );
       }
     },

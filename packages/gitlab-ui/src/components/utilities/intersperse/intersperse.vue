@@ -8,7 +8,7 @@ import { intersperse, insert } from '../../../utils/data_utils';
 import { isVnodeEmpty } from '../../../utils/is_slot_empty';
 
 const filterEmptyNodesVue2 = filter(
-  (vNode) => typeof vNode.tag === 'string' || vNode.text.trim() !== ''
+  (vNode) => typeof vNode.tag === 'string' || vNode.text.trim() !== '',
 );
 
 const { Fragment } = Vue;
@@ -67,7 +67,7 @@ export default {
     const filterAndSeparate = compose(
       addLastSeparator(lastSeparator),
       intersperse(separator),
-      filterEmptyNodes
+      filterEmptyNodes,
     );
 
     return createElement('span', data, filterAndSeparate(slots().default));

@@ -22,7 +22,7 @@ describe('drawer component', () => {
         mountWithOpts({ props: { open: true, headerHeight } });
 
         expect(wrapper.find('aside').attributes('style')).toBe(
-          `top: ${headerHeight}; z-index: 10; max-height: calc(100vh - ${headerHeight});`
+          `top: ${headerHeight}; z-index: 10; max-height: calc(100vh - ${headerHeight});`,
         );
       });
     });

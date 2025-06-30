@@ -29,6 +29,6 @@ describe('Tab component', () => {
       });
 
       expect(wrapper.findComponent(BTab).props('titleLinkClass')).toStrictEqual(expectedProp);
-    }
+    },
   );
 });

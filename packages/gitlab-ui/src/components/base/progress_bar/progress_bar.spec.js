@@ -84,7 +84,7 @@ describe('GlProgressBar', () => {
           'gl-progress',
           `gl-progress-bar-${variant}`,
         ]);
-      }
+      },
     );
   });
 

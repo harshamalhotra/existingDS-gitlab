@@ -83,7 +83,7 @@ export default {
         `gl-avatar-s${defaultSize || avatarSizeOptions[1]}`,
         ...Object.entries(nonDefaultSizes).map(
           // eslint-disable-next-line @gitlab/tailwind-no-interpolation -- Not a CSS utility
-          ([breakpoint, size]) => `gl-${breakpoint}-avatar-s${size}`
+          ([breakpoint, size]) => `gl-${breakpoint}-avatar-s${size}`,
         ),
       ];
     },

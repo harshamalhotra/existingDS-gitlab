@@ -111,7 +111,7 @@ export default {
           this.actionSecondary ||
           this.actionPrimary ||
           // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
-          this.$slots['modal-footer']
+          this.$slots['modal-footer'],
       );
     },
   },
@@ -119,7 +119,7 @@ export default {
     if (!this.ariaLabel && !this.title) {
       logWarning(
         '[gl-modal]: Accessible name for modal missing. Please add title prop or aria-label.',
-        this.$el
+        this.$el,
       );
     }
   },

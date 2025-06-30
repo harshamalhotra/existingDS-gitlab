@@ -114,7 +114,7 @@ export default {
           return type === CHART_TYPE_LINE
             ? generateLineSeries({ color, name, data, yAxisIndex: 1 })
             : generateBarSeries({ color, name, data, yAxisIndex: 1, stack });
-        }
+        },
       );
     },
     series() {
@@ -158,7 +158,7 @@ export default {
             : yAxisPrimary,
         },
         this.option,
-        dataZoomAdjustments(this.option.dataZoom)
+        dataZoomAdjustments(this.option.dataZoom),
       );
       // All chart options can be merged but series
       // needs to be handled specially

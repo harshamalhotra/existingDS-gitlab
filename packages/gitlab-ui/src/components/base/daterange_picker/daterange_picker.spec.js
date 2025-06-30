@@ -102,7 +102,7 @@ describe('Daterange Picker', () => {
               const events = violation ? 0 : 1;
               expect(Object.keys(wrapper.emitted())).toHaveLength(events);
             });
-          }
+          },
         );
       });
 

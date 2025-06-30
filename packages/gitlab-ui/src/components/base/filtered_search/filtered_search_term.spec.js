@@ -130,7 +130,7 @@ describe('Filtered search term', () => {
       if (payload !== undefined) {
         expect(wrapper.emitted(emittedEvent)[0][0]).toEqual(payload);
       }
-    }
+    },
   );
 
   it('passes `searchInputAttributes`, `isLastToken`, `currentValue` & `viewOnly` props to `GlFilteredSearchTokenSegment`', () => {
@@ -155,7 +155,7 @@ describe('Filtered search term', () => {
         isLastToken,
         currentValue,
         viewOnly,
-      })
+      }),
     );
   });
 
@@ -212,7 +212,7 @@ describe('Filtered search term', () => {
     it(`${viewOnly ? 'clears' : 'does not clear'} the suggestions`, async () => {
       await nextTick();
       expect(findTokenSegmentComponent().props('options')).toEqual(
-        viewOnly ? [] : expect.any(Array)
+        viewOnly ? [] : expect.any(Array),
       );
     });
   });

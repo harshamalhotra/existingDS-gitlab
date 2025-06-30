@@ -118,7 +118,7 @@ describe('base dropdown', () => {
               }),
               shift(),
             ],
-          }
+          },
         );
       });
 
@@ -140,7 +140,7 @@ describe('base dropdown', () => {
               }),
               shift(),
             ],
-          }
+          },
         );
       });
 
@@ -162,7 +162,7 @@ describe('base dropdown', () => {
               }),
               shift(),
             ],
-          }
+          },
         );
       });
 
@@ -184,7 +184,7 @@ describe('base dropdown', () => {
               }),
               shift(),
             ],
-          }
+          },
         );
       });
 
@@ -203,7 +203,7 @@ describe('base dropdown', () => {
             placement: 'bottom-end',
             strategy: 'absolute',
             middleware: [offset(customOffset), autoPlacement(expect.any(Object)), shift()],
-          }
+          },
         );
       });
 
@@ -219,7 +219,7 @@ describe('base dropdown', () => {
             findDropdownMenu().element,
             expect.objectContaining({
               strategy: 'absolute',
-            })
+            }),
           );
           expect(findDropdownMenu().classes()).toContain('gl-absolute');
         });
@@ -237,7 +237,7 @@ describe('base dropdown', () => {
             findDropdownMenu().element,
             expect.objectContaining({
               strategy: 'fixed',
-            })
+            }),
           );
           expect(findDropdownMenu().classes()).toContain('gl-fixed');
         });
@@ -292,7 +292,7 @@ describe('base dropdown', () => {
 
     it(`class is inherited from toggle class of type ${type}`, () => {
       expect(findDefaultDropdownToggle().classes().sort()).toEqual(
-        expect.arrayContaining(expectedClasses.sort())
+        expect.arrayContaining(expectedClasses.sort()),
       );
     });
   });
@@ -628,7 +628,7 @@ describe('base dropdown', () => {
     it('applies custom aria-labelledby', () => {
       buildWrapper({ ariaLabelledby: 'label' });
       expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
-        'label dropdown-toggle-btn-1'
+        'label dropdown-toggle-btn-1',
       );
     });
 
