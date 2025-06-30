@@ -8,7 +8,11 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     // Scan GitLab UI's own assets
-    './node_modules/@gitlab/ui/dist/**/*.js',
+    './packages/gitlab-ui/src/**/*.{vue,js}',
+    // Ignore specs and stories
+    '!./packages/gitlab-ui/src/**/*.{spec,stories}.js',
+    // Ignore all node_modules
+    '!./**/node_modules/**',
   ],
   presets: [tailwindDefaults],
 };
