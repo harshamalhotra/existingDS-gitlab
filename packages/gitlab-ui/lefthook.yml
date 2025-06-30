@@ -5,10 +5,6 @@ pre-push:
       files: git diff --name-only --diff-filter=d origin/main...HEAD
       glob: '*.{js,vue}'
       run: ./node_modules/.bin/eslint {files}
-    prettier:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{js,vue}'
-      run: ./node_modules/.bin/prettier --check {files}
     stylelint:
       files: git diff --name-only --diff-filter=d origin/main...HEAD
       glob: '*.{scss}'
