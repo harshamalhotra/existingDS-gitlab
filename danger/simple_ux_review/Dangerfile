@@ -4,10 +4,8 @@
 # https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/issues/31
 FOUNDATION_UX_REVIEWERS = %w[
   chrismicek
-  aregnery
   jeldergl
   danmh
-  igloude
 ].freeze
 
 COMPONENT_UX_MAP = {
