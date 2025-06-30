@@ -38,7 +38,6 @@ export default [
     rules: {
       'import/no-extraneous-dependencies': 'off',
       'import/no-relative-packages': 'off',
-      'import/no-deprecated': 'off',
       '@gitlab/tailwind-no-interpolation': 'error',
 
       'no-restricted-imports': [
