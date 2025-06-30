@@ -19,7 +19,7 @@
     "start:full": "concurrently 'yarn start:docs-local-gitlab-ui' 'yarn start:gitlab-ui'",
     "buildsingle": "nuxt build",
     "build": "bash ./scripts/build.sh",
-    "eslint": "eslint --report-unused-disable-directives .",
+    "eslint": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "eslint:fix": "yarn run eslint --fix",
     "lint:prettier": "prettier --list-different '**/*.{js,mjs,cjs,ts,vue}'",
     "lint:prettier:fix": "yarn run lint:prettier --write",
