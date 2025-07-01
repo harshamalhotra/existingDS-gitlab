@@ -48,10 +48,6 @@ related:
 - The size of an avatar varies depending upon its context.
 - **Available sizes** (in pixels): 16, 24, 32, 48, 64, 96.
 
-### Behavior
-
-- A standalone avatar without adjacent descriptive text must use a [tooltip](/components/tooltip) clarifying what it represents.
-
 ### Content
 
 - An avatar image is added to a profile, group, or project by a user.
@@ -83,5 +79,7 @@ The following only applies to circle avatars.
 
 ### Accessibility
 
-- A standalone avatar image should use a descriptive `alt` tag where the content matches that of the tooltip. See the [behavior](#behavior) section for more about the use of a tooltip.
+- A standalone avatar image should use a descriptive `alt` tag.
 - If an avatar image is adjacent to descriptive text, like a user or project name, it should use an empty `alt` tag so it can be ignored by a screen reader.
+- If an avatar has a [tooltip](/components/tooltip) or a [popover](/components/popover) it must also be [focusable via keyboard](/accessibility/keyboard-only) to ensure the content is available for assistive technology. Tooltip content should match that of the `alt` attribute.
+- The single text character in the fallback (identicon) has no semantic meaning and uses `aria-hidden="true"` to prevent it from being announced.
