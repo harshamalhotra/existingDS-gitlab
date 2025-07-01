@@ -11,7 +11,6 @@ if (USE_VUE_3) {
   moduleAlias.addAlias('vue/compiler-sfc', '@vue/compiler-sfc');
 }
 
-// eslint-disable-next-line import/no-default-export
 export default {
   framework: {
     name: STORYBOOK_VUE_FRAMEWORK,

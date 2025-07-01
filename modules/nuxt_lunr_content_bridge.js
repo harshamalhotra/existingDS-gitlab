@@ -1,4 +1,3 @@
-/* eslint-disable import/no-default-export */
 import startCase from 'lodash/startCase';
 import MarkdownParser from '@nuxt/content/parsers/markdown/index';
 

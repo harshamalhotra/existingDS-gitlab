@@ -1,4 +1,3 @@
-/* eslint-disable import/no-default-export */
 export const toggleSidebar = (state) => {
   state.sidebarOpen = !state.sidebarOpen;
 };

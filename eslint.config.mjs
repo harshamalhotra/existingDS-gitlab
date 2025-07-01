@@ -1,4 +1,3 @@
-/* eslint-disable import/no-default-export */
 import path from 'node:path';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -103,7 +102,15 @@ export default [
     },
   },
   {
-    files: [JEST_MOCKS],
+    files: [
+      JEST_MOCKS,
+      'eslint.config.mjs',
+      'nuxt.config.js',
+      'middleware/*',
+      'modules/*',
+      'plugins/*',
+      'store/*',
+    ],
 
     rules: {
       'import/no-default-export': 'off',
@@ -204,7 +211,7 @@ export default [
       },
     },
     {
-      files: ['**/config.js', '**/rollup.config.js', '**/index.js', '**/*.stories.js'],
+      files: ['**/config.js', '**/rollup.config.js', '**/*.stories.js', '.storybook/*'],
 
       rules: {
         'import/no-default-export': 'off',

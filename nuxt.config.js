@@ -42,7 +42,6 @@ const cspPolicies = [
   `connect-src 'self' https://sentry.gitlab.net ${GITLAB_ANALYTICS_URL} https://cdn.cookielaw.org https://geolocation.onetrust.com  https://gitlab-requests.my.onetrust.com`,
 ];
 
-// eslint-disable-next-line import/no-default-export
 export default {
   target: 'static',
   /*
