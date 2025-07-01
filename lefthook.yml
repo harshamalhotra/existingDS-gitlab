@@ -29,7 +29,7 @@ test-in-ci:
     eslint:
       run: yarn run lint:eslint --format gitlab
     markdownlint:
-      run: yarn run markdown-lint
+      run: yarn run lint:markdownlint
     prettier:
       run: yarn run lint:prettier
     unit_tests:
