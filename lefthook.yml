@@ -23,6 +23,6 @@ test-in-ci:
     markdownlint:
       run: yarn run markdown-lint
     prettier:
-      run: yarn run prettier
+      run: yarn run lint:prettier
     unit_tests:
       run: yarn run test:unit
