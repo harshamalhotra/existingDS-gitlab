@@ -89,7 +89,7 @@ You might have noticed that GitLab UI also contains component examples, and that
 identical to the ones in this repo. That's because we've started migrating GitLab UI's examples to
 `design.gitlab.com`. We will eventually start removing GitLab UI examples altogether. From now on,
 please write all examples here in `design.gitlab.com`. At the moment, the best place to read about
-this decision in this GitLab UI issue: https://gitlab.com/gitlab-org/gitlab-ui/-/issues/978.
+this decision in [this GitLab UI issue](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/978).
 
 ### I have created some examples in GitLab UI and want to move them to design.gitlab.com, what are my options?
 

@@ -84,8 +84,7 @@ make them render as links. Otherwise, they will be buttons. Provide an `action`
 function to items to be called when they are pressed, or, listen for the
 `action` event on the top-level component. Both will receive the given item as
 an argument.
-A <!-- markdownlint-disable-next-line line-length -->
-[validation error](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/6cbff4f908b429cc01f17a4cc2868e881db1aa31/src/components/base/new_dropdowns/disclosure/utils.js#L1)
+A [validation error](https://gitlab.com/gitlab-org/gitlab-ui/-/blob/6cbff4f908b429cc01f17a4cc2868e881db1aa31/src/components/base/new_dropdowns/disclosure/utils.js#L1)
 will be triggered if neither field is set.
 
 Below are the expected shapes of these objects:

@@ -94,11 +94,11 @@ itself, `Vue` and `ViewComponent`, without undue or repeated effort.
   directive. Read more about those decisions in RFCs [#2](https://gitlab.com/gitlab-org/frontend/rfcs/issues/2)
   and [#4](https://gitlab.com/gitlab-org/frontend/rfcs/issues/4).
 - Shortly after approving [RFC #4](https://gitlab.com/gitlab-org/frontend/rfcs/issues/4), we noticed
-  how it caused the CSS to grow uncontrollably. We decided to switch to `@include`, which kept the
-  CSS growth under control. The switch was discussed [here](https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/623#note_192269009).
+  how it caused the CSS to grow uncontrollably. We [decided](https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/623#note_192269009)
+  to switch to `@include`, which kept the CSS growth under control.
 - In 2022, we started using `ViewComponent` to re-implement GitLab UI components in Ruby in GitLab.
-  This improved upon our previous approach that relied more heavily on HAML templating. Learn more
-  about how we use `ViewComponent` [here](https://docs.gitlab.com/ee/development/fe_guide/view_component.html).
+  This improved upon our previous approach that relied more heavily on HAML templating. [Learn more
+  about how we use `ViewComponent`](https://docs.gitlab.com/ee/development/fe_guide/view_component.html).
 - Still in 2022, we created [RFC #107](https://gitlab.com/gitlab-org/frontend/rfcs/-/issues/107) to propose
   a switch from our custom-built CSS utilities library to Tailwind CSS. We had noticed many flaws with
   the way we were building out our utils library, which could be alleviated for the most part by

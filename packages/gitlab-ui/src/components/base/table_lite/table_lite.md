@@ -27,7 +27,7 @@ The `GlTableLite` component provides all of the styling and formatting features 
 To ensure we internationalize field labels, always pass an array of objects for the `fields` prop,
 like mentioned in the implementation example.
 
-_Full documentation for the `field` prop [here.](https://bootstrap-vue.org/docs/components/table#fields-column-definitions)_
+[Learn more about the `field` prop](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/2e88af62966265cb725ca3f65f4b175e2494734b/packages/gitlab-ui/src/vendor/bootstrap-vue/src/components/table/README.md#L137).
 
 ## Implementation example
 
