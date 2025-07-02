@@ -9,9 +9,6 @@ pre-push:
       files: git diff --name-only --diff-filter=d origin/main...HEAD
       glob: '*.{scss}'
       run: ./node_modules/.bin/stylelint {files}
-    markdown-lint:
-      glob: '*.md'
-      run: yarn markdownlint
     yarn-deduplicate:
       glob: 'yarn.lock'
       run: yarn yarn-deduplicate --strategy fewer --list --fail

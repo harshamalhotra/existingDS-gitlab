@@ -93,7 +93,7 @@ For more background on the desired HTML structure, refer to ["How do you figure?
 
 ### Linting
 
-We control code quality with automatic linting tools like `eslint` and `prettier`.
+We control code quality with automatic linting tools like `eslint`, `prettier` and `markdownlint`.
 
 If you change something in the code, you can run `yarn test` to see if your changes are up-to-code. A lot of failures are auto-fixable, so simply run `yarn run lint:fix` to fix errors automatically.
 
