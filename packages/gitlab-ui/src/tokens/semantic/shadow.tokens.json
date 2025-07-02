@@ -7,7 +7,12 @@
           "dark": "{color.alpha.dark.40}"
         },
         "$type": "color",
-        "$description": "Used for the default shadow color."
+        "$description": "Used for the default shadow color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "EFFECT_COLOR"
+          ]
+        }
       }
     }
   }

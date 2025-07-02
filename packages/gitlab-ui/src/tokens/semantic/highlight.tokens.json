@@ -8,7 +8,13 @@
             "dark": "{color.orange.200}"
           },
           "$type": "color",
-          "$description": "Used for temporary visual emphasis of backgrounds of matched search terms, filtered results, or autocomplete suggestions without implying any particular state or meaning."
+          "$description": "Used for temporary visual emphasis of backgrounds of matched search terms, filtered results, or autocomplete suggestions without implying any particular state or meaning.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -18,7 +24,12 @@
             "dark": "{color.neutral.950}"
           },
           "$type": "color",
-          "$description": "Used for text within temporarily highlighted matches to maintain readability while drawing attention without conveying status."
+          "$description": "Used for text within temporarily highlighted matches to maintain readability while drawing attention without conveying status.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -30,7 +41,13 @@
             "dark": "{color.blue.950}"
           },
           "$type": "color",
-          "$description": "Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action."
+          "$description": "Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -40,7 +57,12 @@
             "dark": "{color.blue.700}"
           },
           "$type": "color",
-          "$description": "Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states."
+          "$description": "Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     }

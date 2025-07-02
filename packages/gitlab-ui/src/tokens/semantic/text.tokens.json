@@ -7,6 +7,11 @@
       },
       "$type": "color",
       "$description": "Use text.color.default instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
       "deprecated": true
     },
     "secondary": {
@@ -16,6 +21,11 @@
       },
       "$type": "color",
       "$description": "Use text.color.subtle instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
       "deprecated": true
     },
     "tertiary": {
@@ -25,6 +35,11 @@
       },
       "$type": "color",
       "$description": "Use text.color.disabled instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
       "deprecated": true
     },
     "color": {
@@ -34,7 +49,12 @@
           "dark": "{color.neutral.50}"
         },
         "$type": "color",
-        "$description": "Used for the default text color."
+        "$description": "Used for the default text color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "subtle": {
         "$value": {
@@ -42,7 +62,12 @@
           "dark": "{color.neutral.200}"
         },
         "$type": "color",
-        "$description": "Used for supplemental text that doesn't need to be as prominent as other text."
+        "$description": "Used for supplemental text that doesn't need to be as prominent as other text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "strong": {
         "$value": {
@@ -50,7 +75,12 @@
           "dark": "{color.neutral.0}"
         },
         "$type": "color",
-        "$description": "Used for text with the highest contrast."
+        "$description": "Used for text with the highest contrast.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "heading": {
         "$value": {
@@ -58,7 +88,12 @@
           "dark": "{color.neutral.0}"
         },
         "$type": "color",
-        "$description": "Used for headings level 1-6."
+        "$description": "Used for headings level 1-6.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "link": {
         "$value": {
@@ -66,7 +101,12 @@
           "dark": "{color.blue.200}"
         },
         "$type": "color",
-        "$description": "Used for default text links."
+        "$description": "Used for default text links.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "warning": {
         "$value": {
@@ -74,7 +114,12 @@
           "dark": "{color.orange.300}"
         },
         "$type": "color",
-        "$description": "Used for text that requires caution or careful attention."
+        "$description": "Used for text that requires caution or careful attention.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "danger": {
         "$value": {
@@ -82,7 +127,12 @@
           "dark": "{color.red.300}"
         },
         "$type": "color",
-        "$description": "Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination."
+        "$description": "Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "success": {
         "$value": {
@@ -90,7 +140,12 @@
           "dark": "{color.green.300}"
         },
         "$type": "color",
-        "$description": "Used for text indicating success, completion, approval, addition, or validity."
+        "$description": "Used for text indicating success, completion, approval, addition, or validity.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       },
       "disabled": {
         "$value": {
@@ -98,7 +153,12 @@
           "dark": "{color.neutral.400}"
         },
         "$type": "color",
-        "$description": "Used for disabled text."
+        "$description": "Used for disabled text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
       }
     }
   }
