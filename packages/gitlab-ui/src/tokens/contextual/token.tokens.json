@@ -4,7 +4,13 @@
       "color": {
         "$value": "{text.color.default}",
         "$type": "color",
-        "$description": "Used for the token foreground color."
+        "$description": "Used for the token foreground color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
       }
     },
     "background": {
@@ -14,7 +20,13 @@
           "dark": "{color.neutral.800}"
         },
         "$type": "color",
-        "$description": "Used for the token background color."
+        "$description": "Used for the token background color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
       }
     }
   }

@@ -7,7 +7,13 @@
           "dark": "{color.neutral.900}"
         },
         "$type": "color",
-        "$description": "Used for the background color of datepicker."
+        "$description": "Used for the background color of datepicker.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
       }
     },
     "date": {
@@ -16,7 +22,12 @@
           "selected": {
             "$value": "{control.indicator.color.selected}",
             "$type": "color",
-            "$description": "Used for the datepicker date text color state indicators."
+            "$description": "Used for the datepicker date text color state indicators.",
+            "$extensions": {
+              "com.figma.scope": [
+                "TEXT_FILL"
+              ]
+            }
           }
         }
       }
