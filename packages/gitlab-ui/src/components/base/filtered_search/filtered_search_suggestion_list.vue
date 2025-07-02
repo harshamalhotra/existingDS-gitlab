@@ -33,7 +33,7 @@ export default {
   computed: {
     initialActiveIdx() {
       return this.registeredItems.findIndex((item) =>
-        this.valuesMatch(item.value, this.initialValue)
+        this.valuesMatch(item.value, this.initialValue),
       );
     },
     initialActiveItem() {

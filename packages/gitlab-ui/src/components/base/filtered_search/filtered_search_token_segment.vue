@@ -250,7 +250,7 @@ export default {
       }
 
       const [firstWord, ...otherWords] = splitOnQuotes(newValue).filter(
-        (w, idx, arr) => Boolean(w) || idx === arr.length - 1
+        (w, idx, arr) => Boolean(w) || idx === arr.length - 1,
       );
       this.$emit('input', firstWord);
 
@@ -279,7 +279,7 @@ export default {
       return this.options?.find((option) =>
         loose
           ? match(option[this.optionTextField], inputValue)
-          : option[this.optionTextField] === inputValue
+          : option[this.optionTextField] === inputValue,
       );
     },
 
@@ -324,7 +324,7 @@ export default {
       if (!this.multiSelect) {
         this.$emit(
           'input',
-          formattedSuggestedValue === TERM_TOKEN_TYPE ? this.inputValue : formattedSuggestedValue
+          formattedSuggestedValue === TERM_TOKEN_TYPE ? this.inputValue : formattedSuggestedValue,
         );
         this.$emit('complete', formattedSuggestedValue);
       }

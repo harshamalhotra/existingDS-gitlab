@@ -72,7 +72,7 @@ WithObjectValue.play = async ({ canvasElement }) => {
   userEvent.type(combobox, 'g');
 
   await waitFor(() =>
-    expect(within(document).getByRole('option', { name: '1 giraffe' })).toBeVisible()
+    expect(within(document).getByRole('option', { name: '1 giraffe' })).toBeVisible(),
   );
   await waitFor(() => expect(combobox).toHaveFocus());
 };

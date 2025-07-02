@@ -255,26 +255,26 @@ export function getThresholdConfig(thresholds) {
           generateMarkArea({
             min: threshold,
             max: Infinity,
-          })
+          }),
         );
       } else if (LESS_THAN.includes(operator)) {
         acc.areas.push(
           generateMarkArea({
             min: Number.NEGATIVE_INFINITY,
             max: threshold,
-          })
+          }),
         );
       }
 
       acc.lines.push(
         generateMarkLines({
           max: threshold,
-        })
+        }),
       );
 
       return acc;
     },
-    { lines: [], areas: [] }
+    { lines: [], areas: [] },
   );
 
   return {
@@ -314,7 +314,7 @@ export const parseAnnotations = (annotations) =>
       acc.areas.push(generateMarkArea(annotation, 'xAxis'));
       return acc;
     },
-    { areas: [], lines: [], points: [] }
+    { areas: [], lines: [], points: [] },
   );
 
 /**
@@ -379,7 +379,7 @@ export const generateAnnotationSeries = (annotations, yAxisIndex = 1) => {
       type: 'scatter',
       data: [],
     },
-    getAnnotationsConfig(annotations)
+    getAnnotationsConfig(annotations),
   );
 };
 
@@ -507,7 +507,7 @@ export const getDefaultTooltipContent = (params, yAxisTitle = null) => {
     {
       xLabels: [],
       tooltipContent: {},
-    }
+    },
   );
 
   return { xLabels, tooltipContent };

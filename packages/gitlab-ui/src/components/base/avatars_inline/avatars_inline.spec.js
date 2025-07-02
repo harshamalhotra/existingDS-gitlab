@@ -117,7 +117,7 @@ describe('avatars inline', () => {
       buildWrapper({ avatars, maxVisible: 1, collapsed: true, avatarSize: 32 });
 
       expect(
-        wrapper.find('[data-testid="collapsed-avatars-badge"]').attributes('aria-hidden')
+        wrapper.find('[data-testid="collapsed-avatars-badge"]').attributes('aria-hidden'),
       ).toBe('true');
     });
   });

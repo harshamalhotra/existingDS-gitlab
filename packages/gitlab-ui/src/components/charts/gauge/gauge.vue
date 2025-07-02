@@ -108,7 +108,7 @@ export default {
             axisColor: this.axisColor,
           }),
         },
-        this.option
+        this.option,
       );
 
       return mergedOptions;

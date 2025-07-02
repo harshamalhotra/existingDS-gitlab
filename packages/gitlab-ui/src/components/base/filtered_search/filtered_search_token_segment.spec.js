@@ -159,7 +159,7 @@ describe('Filtered search token segment', () => {
         applySuggestion: expect.any(Function),
         inputValue: 'something',
         suggestedValue: undefined,
-      })
+      }),
     );
   });
 
@@ -185,7 +185,7 @@ describe('Filtered search token segment', () => {
     await wrapper.setProps({ active: false });
 
     expect(wrapper.findComponent(GlFilteredSearchTokenSegment).emitted().input[0][0]).toBe(
-      originalValue
+      originalValue,
     );
   });
 
@@ -350,7 +350,7 @@ describe('Filtered search token segment', () => {
       it('does not add `searchInputAttributes` prop to search token segment', () => {
         expect(wrapper.attributes('data-prop')).toBe(undefined);
       });
-    }
+    },
   );
 
   describe('when `active` is `false`, `isLastToken` is `true` and there is one or more tokens', () => {
@@ -374,7 +374,7 @@ describe('Filtered search token segment', () => {
       createComponent({ active: true, value: 'something', searchInputAttributes });
 
       expect(wrapper.find('input').attributes('data-prop')).toBe(
-        searchInputAttributes['data-prop']
+        searchInputAttributes['data-prop'],
       );
     });
 
@@ -399,7 +399,7 @@ describe('Filtered search token segment', () => {
 
         await wrapper.setProps({ value: 'foo', active: false });
         expect(wrapper.emitted('input')).toEqual(eventPayloads);
-      }
+      },
     );
   });
 });

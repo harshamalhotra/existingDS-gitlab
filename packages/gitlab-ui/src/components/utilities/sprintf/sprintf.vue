@@ -69,7 +69,7 @@ export default {
       validator: (value) =>
         Object.values(value).every(
           // eslint-disable-next-line unicorn/no-array-callback-reference
-          (tagPair) => Array.isArray(tagPair) && tagPair.length === 2 && tagPair.every(isString)
+          (tagPair) => Array.isArray(tagPair) && tagPair.length === 2 && tagPair.every(isString),
         ),
     },
   },

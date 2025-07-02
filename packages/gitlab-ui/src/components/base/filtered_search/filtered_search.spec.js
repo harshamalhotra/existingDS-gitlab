@@ -170,7 +170,7 @@ describe('Filtered search', () => {
       await nextTick();
 
       expect(
-        wrapper.findAllComponents({ ref: 'tokens' }).filter((w) => w.props('active') === true)
+        wrapper.findAllComponents({ ref: 'tokens' }).filter((w) => w.props('active') === true),
       ).toHaveLength(0);
     });
 
@@ -506,7 +506,7 @@ describe('Filtered search', () => {
     const fakeTokenInstance = wrapper.findComponent(FakeToken);
     expect(fakeTokenInstance.exists()).toBe(true);
     expect(Object.keys(fakeTokenInstance.attributes())).toEqual(
-      expect.arrayContaining(['current-value', 'index', 'config', 'value'])
+      expect.arrayContaining(['current-value', 'index', 'config', 'value']),
     );
   });
 
@@ -542,7 +542,7 @@ describe('Filtered search', () => {
     await nextTick();
 
     expect(wrapper.findComponent(GlFilteredSearchTerm).props('searchInputAttributes')).toEqual(
-      searchInputAttributes
+      searchInputAttributes,
     );
   });
 
@@ -590,7 +590,7 @@ describe('Filtered search', () => {
         createViewOnlyComponent(viewOnly);
 
         expect(wrapper.findComponent(GlFilteredSearchTerm).props('viewOnly')).toBe(viewOnly);
-      }
+      },
     );
 
     describe('when view-only is true', () => {
@@ -627,7 +627,7 @@ describe('Filtered search', () => {
       createComponent({ showSearchButton: true });
 
       expect(wrapper.find('.gl-filtered-search-scrollable-container').classes()).toContain(
-        'gl-filtered-search-scrollable-container-with-search-button'
+        'gl-filtered-search-scrollable-container-with-search-button',
       );
     });
 
@@ -635,7 +635,7 @@ describe('Filtered search', () => {
       createComponent({ showSearchButton: false });
 
       expect(wrapper.find('.gl-filtered-search-scrollable-container').classes()).not.toContain(
-        'gl-filtered-search-scrollable-container-with-search-button'
+        'gl-filtered-search-scrollable-container-with-search-button',
       );
     });
   });
@@ -728,7 +728,7 @@ describe('Filtered search integration tests', () => {
       const suggestions = wrapper.findComponent(GlFilteredSearchSuggestionList);
       expect(suggestions.exists()).toBe(true);
       expect(suggestions.findAllComponents(GlFilteredSearchSuggestion)).toHaveLength(
-        testTokens.filter((t) => !t.disabled).length
+        testTokens.filter((t) => !t.disabled).length,
       );
     });
 
@@ -890,13 +890,13 @@ describe('Filtered search integration tests', () => {
     await nextTick();
 
     expect(
-      wrapper.findAllComponents(GlFilteredSearchToken).wrappers.map((cmp) => cmp.props('active'))
+      wrapper.findAllComponents(GlFilteredSearchToken).wrappers.map((cmp) => cmp.props('active')),
     ).toEqual([false, false, false]);
 
     await wrapper.find('.gl-token-close').trigger('click');
 
     expect(
-      wrapper.findAllComponents(GlFilteredSearchToken).wrappers.map((cmp) => cmp.props('active'))
+      wrapper.findAllComponents(GlFilteredSearchToken).wrappers.map((cmp) => cmp.props('active')),
     ).toEqual([false, false]);
   });
 

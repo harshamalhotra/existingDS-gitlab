@@ -110,7 +110,7 @@ describe('button component', () => {
       });
 
       expect(wrapper.classes()).toContain(expectedClass);
-    }
+    },
   );
 
   describe('link button', () => {

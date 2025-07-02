@@ -625,7 +625,7 @@ const createSearchable = () => ({
       // eslint-disable-next-line no-restricted-globals
       this.timeoutId = setTimeout(() => {
         this.filteredItems = this.items.filter(({ text }) =>
-          text.toLowerCase().includes(searchTerm.toLowerCase())
+          text.toLowerCase().includes(searchTerm.toLowerCase()),
         );
         this.searchInProgress = false;
       }, 2000);
@@ -753,7 +753,7 @@ export const SearchableGroups = (args, { argTypes }) => ({
             return {
               text,
               options: options.filter((option) =>
-                option.text.toLowerCase().includes(searchTerm.toLowerCase())
+                option.text.toLowerCase().includes(searchTerm.toLowerCase()),
               ),
             };
           })
@@ -788,7 +788,7 @@ const departmentsPage2 = mockOptions.slice(10, 12);
 
 export const InfiniteScroll = (
   args,
-  { argTypes: { infiniteScroll, infiniteScrollLoading, items, ...argTypes } }
+  { argTypes: { infiniteScroll, infiniteScrollLoading, items, ...argTypes } },
 ) => ({
   props: Object.keys(argTypes),
   components: {
@@ -832,7 +832,7 @@ InfiniteScroll.decorators = [makeContainer({ height: LISTBOX_CONTAINER_HEIGHT })
 
 export const InfiniteScrollGroups = (
   args,
-  { argTypes: { infiniteScroll, infiniteScrollLoading, items, ...argTypes } }
+  { argTypes: { infiniteScroll, infiniteScrollLoading, items, ...argTypes } },
 ) => ({
   props: Object.keys(argTypes),
   components: {

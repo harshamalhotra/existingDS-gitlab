@@ -39,7 +39,7 @@ const generateTemplate = ({ props = {}, slots = {} } = {}) => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       ${Object.entries(slots).map(
-        ([slot, contents]) => `<template #${slot}>${contents}</template>`
+        ([slot, contents]) => `<template #${slot}>${contents}</template>`,
       )}
       </gl-modal>
     </div>
@@ -69,9 +69,9 @@ Default.args = generateProps();
 Default.play = play(() =>
   waitFor(() =>
     expect(
-      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' })
-    ).toHaveFocus()
-  )
+      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' }),
+    ).toHaveFocus(),
+  ),
 );
 
 export const WithScrollingContent = Template.bind({});
@@ -82,9 +82,9 @@ WithScrollingContent.args = generateProps({
 WithScrollingContent.play = play(() =>
   waitFor(() =>
     expect(
-      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' })
-    ).toHaveFocus()
-  )
+      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' }),
+    ).toHaveFocus(),
+  ),
 );
 
 export const WithAHeader = (args, { argTypes, viewMode }) => ({
@@ -102,9 +102,9 @@ WithAHeader.args = generateProps();
 WithAHeader.play = play(() =>
   waitFor(() =>
     expect(
-      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' })
-    ).toHaveFocus()
-  )
+      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Cancel' }),
+    ).toHaveFocus(),
+  ),
 );
 
 export const WithoutAFooter = (args, { argTypes, viewMode }) => ({
@@ -120,9 +120,9 @@ WithoutAFooter.args = generateProps();
 WithoutAFooter.play = play(() =>
   waitFor(() =>
     expect(
-      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Close' })
-    ).toHaveFocus()
-  )
+      within(within(document).getByRole('dialog')).getByRole('button', { name: 'Close' }),
+    ).toHaveFocus(),
+  ),
 );
 
 export const WithoutFocus = Template.bind({});

@@ -37,7 +37,7 @@ describe('loading icon component', () => {
       const supportedColors = ['dark', 'light'];
       const sizeColorCombinations = supportedSizes.reduce(
         (combinations, size) => combinations.concat(supportedColors.map((color) => [size, color])),
-        []
+        [],
       );
 
       it('should render the loader css class by default', () => {
@@ -72,7 +72,7 @@ describe('loading icon component', () => {
           expect(loaderClasses).toContain(baseCssClass);
           expect(loaderClasses).toContain(`${baseCssClass}-${size}`);
           expect(loaderClasses).toContain(`${baseCssClass}-${color}`);
-        }
+        },
       );
     });
 

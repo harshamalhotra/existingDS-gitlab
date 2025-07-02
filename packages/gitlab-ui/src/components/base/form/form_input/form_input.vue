@@ -311,7 +311,7 @@ export default {
           ...(defaultWidth ? [`gl-form-input-${defaultWidth}`] : []),
           ...Object.entries(nonDefaultWidths).map(
             // eslint-disable-next-line @gitlab/tailwind-no-interpolation -- Not a CSS utility
-            ([breakpoint, width]) => `gl-${breakpoint}-form-input-${width}`
+            ([breakpoint, width]) => `gl-${breakpoint}-form-input-${width}`,
           ),
         ];
       }

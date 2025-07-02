@@ -21,7 +21,7 @@ const generateProps = (
     avatarSize = 24,
     badgeTooltipProp = '',
     badgeSrOnlyText = `${avatars.length - maxVisible} additional users`,
-  } = {}
+  } = {},
 ) => ({
   maxVisible,
   collapsed,
@@ -61,7 +61,7 @@ WithLinksAndTooltips.args = generateProps(
     href: '//gitlab.com',
     tooltip: `Avatar ${index}`,
   })),
-  { badgeTooltipProp: 'tooltip', badgeSrOnlyText: 'screen reader only text' }
+  { badgeTooltipProp: 'tooltip', badgeSrOnlyText: 'screen reader only text' },
 );
 
 export default {

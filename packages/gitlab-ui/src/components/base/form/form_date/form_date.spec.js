@@ -26,7 +26,7 @@ describe('GlFormDate', () => {
         createComponent({ [propName]: value });
 
         expect(findInput().attributes(attribute)).toBe(expectedValue);
-      }
+      },
     );
 
     it('when `id` prop is not passed sets a unique input `id` attribute', async () => {
@@ -49,7 +49,7 @@ describe('GlFormDate', () => {
         createComponent();
 
         expect(findInput().attributes(attribute)).toBe(expectedValue);
-      }
+      },
     );
   });
 
@@ -60,7 +60,7 @@ describe('GlFormDate', () => {
           min: '2020-01-01',
           value: '2019-01-01',
         },
-        mount
+        mount,
       );
 
       expect(findInput().attributes('aria-describedby')).toMatch('form-date-invalid-feedback-');
@@ -74,7 +74,7 @@ describe('GlFormDate', () => {
           max: '2020-01-01',
           value: '2021-01-01',
         },
-        mount
+        mount,
       );
 
       expect(findInput().attributes('aria-describedby')).toMatch('form-date-invalid-feedback-');

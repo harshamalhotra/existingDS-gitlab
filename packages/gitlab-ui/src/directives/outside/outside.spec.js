@@ -33,11 +33,11 @@ describe('outside directive', () => {
           },
           template: defaultTemplate,
         },
-        component
+        component,
       ),
       {
         attachTo: document.body,
-      }
+      },
     );
   };
 
@@ -61,7 +61,7 @@ describe('outside directive', () => {
         find(target).trigger('click');
 
         expect(onClick.mock.calls).toEqual(expectedCalls);
-      }
+      },
     );
   });
 
@@ -79,7 +79,7 @@ describe('outside directive', () => {
         find(target).trigger('focusin');
 
         expect(onFocusin.mock.calls).toEqual(expectedCalls);
-      }
+      },
     );
   });
 
@@ -114,7 +114,7 @@ describe('outside directive', () => {
 
         expect(onClick.mock.calls).toEqual(onClickCalls);
         expect(onClickSibling.mock.calls).toEqual(onClickSiblingCalls);
-      }
+      },
     );
   });
 
@@ -129,7 +129,7 @@ describe('outside directive', () => {
         createComponent({
           data: () => ({ foo: null }),
           template: '<div v-outside="foo"></div>',
-        })
+        }),
       ).rejects.toThrow('must be a function');
 
       expect(wrapper).toHaveLoggedVueErrors();
@@ -140,7 +140,7 @@ describe('outside directive', () => {
       await expect(
         createComponent({
           template: '<div v-outside:click="onFocusin"></div>',
-        })
+        }),
       ).rejects.toThrow('Arguments are not supported.');
 
       expect(wrapper).toHaveLoggedVueErrors();
@@ -241,19 +241,19 @@ describe('outside directive', () => {
             template: `<div data-testid="outside">
               <div v-outside.${eventType}="onClick" data-testid="bound"></div>
             </div>`,
-          })
+          }),
         ).rejects.toThrow(`Cannot bind ${eventType} events`);
 
         expect(wrapper).toHaveLoggedVueErrors();
         expect(document.addEventListener).not.toHaveBeenCalled();
-      }
+      },
     );
 
     it('only prints unsupported modifiers in the error message', async () => {
       await expect(
         createComponent({
           template: templateWitModifiersForFocusIn(['focusin', 'mouseup', 'click', 'mousedown']),
-        })
+        }),
       ).rejects.toThrow(`Cannot bind mouseup, mousedown events`);
 
       expect(wrapper).toHaveLoggedVueErrors();

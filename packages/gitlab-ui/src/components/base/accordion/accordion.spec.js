@@ -28,7 +28,7 @@ describe('GlAccordion', () => {
               Bin
             </gl-accordion-item>
           </gl-accordion>`,
-      })
+      }),
     );
   };
 

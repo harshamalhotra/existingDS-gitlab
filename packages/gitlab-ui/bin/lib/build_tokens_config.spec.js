@@ -38,7 +38,7 @@ describe('buildTokens', () => {
         stripDescriptionsPreprocessor({
           path: ['color', 'alpha', '0'],
           numbers: [0, 1, 2],
-        })
+        }),
       ).toEqual({
         path: ['color', 'alpha', '0'],
         numbers: [0, 1, 2],
@@ -49,7 +49,7 @@ describe('buildTokens', () => {
       expect(
         stripDescriptionsPreprocessor({
           component: { theme: { token1, token2 } },
-        })
+        }),
       ).toEqual({
         component: {
           theme: {

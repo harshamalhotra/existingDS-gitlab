@@ -172,7 +172,7 @@ describe('GlDisclosureDropdownItem', () => {
         });
 
         expect(findItem().classes()).toEqual(expectedClasses);
-      }
+      },
     );
 
     it('sets tabIndex on link element', () => {

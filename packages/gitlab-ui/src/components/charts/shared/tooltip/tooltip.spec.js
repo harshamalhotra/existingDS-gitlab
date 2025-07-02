@@ -212,7 +212,7 @@ describe('ChartTooltip', () => {
                   </div>`,
               },
             },
-          }
+          },
         );
       });
 

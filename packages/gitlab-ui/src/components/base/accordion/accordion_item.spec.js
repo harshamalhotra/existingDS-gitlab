@@ -76,7 +76,7 @@ describe('GlAccordionItem', () => {
       createComponent({ headerClass: customClassProp }, { defaultHeaderLevel: 3 });
 
       expect(findHeader().classes()).toContain('custom-header-class');
-    }
+    },
   );
 
   it('renders slot text', () => {
@@ -152,7 +152,7 @@ describe('GlAccordionItem', () => {
       await waitForAnimationFrame();
 
       expect(dispatchSpy).toHaveBeenCalledWith(
-        new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' })
+        new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' }),
       );
     });
   });
@@ -192,7 +192,7 @@ describe('GlAccordionItem', () => {
         await waitForAnimationFrame();
 
         expect(dispatchSpy).toHaveBeenCalledWith(
-          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' })
+          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' }),
         );
       });
     });
@@ -205,7 +205,7 @@ describe('GlAccordionItem', () => {
         await nextTick();
 
         wrapper.vm.$parent.$el.dispatchEvent(
-          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' })
+          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-1' }),
         );
 
         await waitForAnimationFrame();
@@ -223,7 +223,7 @@ describe('GlAccordionItem', () => {
         await nextTick();
 
         wrapper.vm.$parent.$el.dispatchEvent(
-          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-2' })
+          new CustomEvent(COLLAPSE_EVENT, { detail: 'accordion-item-2' }),
         );
 
         await waitForAnimationFrame();

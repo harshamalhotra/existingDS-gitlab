@@ -366,7 +366,7 @@ export const AllVariantsAndCategories = (args, { argTypes = {} }) => ({
   props: Object.keys(argTypes),
   components,
   variants: Object.keys(buttonVariantOptions).filter(
-    (variant) => !buttonVariantOptions[variant].includes('deprecated')
+    (variant) => !buttonVariantOptions[variant].includes('deprecated'),
   ),
   categories: buttonCategoryOptions,
   style: {

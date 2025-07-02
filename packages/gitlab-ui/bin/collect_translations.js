@@ -60,9 +60,9 @@ const buildTranslationsObject = (files) => {
         const translationValue = getDefaultValueAsJavaScript(node);
         findings.push(`'${translationKey}': ${translationValue},`);
         console.warn(
-          `Found translation key '${translationKey}' in ${path.relative(process.cwd(), file)}`
+          `Found translation key '${translationKey}' in ${path.relative(process.cwd(), file)}`,
         );
-      }
+      },
     );
 
     return findings;
@@ -77,8 +77,8 @@ const buildTranslationsObject = (files) => {
 
 const main = async () => {
   const filesToParse = await getFilesToParse();
-  const output = await buildTranslationsObject(filesToParse);
-  const options = await prettier.resolveConfig(path.join(__dirname, '../.prettierrc'));
+  const output = buildTranslationsObject(filesToParse);
+  const options = await prettier.resolveConfig(filesToParse[0]);
   const formattedOutput = await prettier.format(output, { ...options, parser: 'babel' });
   process.stdout.write(formattedOutput);
 };

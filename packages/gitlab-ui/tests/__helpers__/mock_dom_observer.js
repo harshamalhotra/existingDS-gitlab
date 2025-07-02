@@ -30,7 +30,7 @@ class MockObserver {
 
   $_hasObserver(node, options = {}) {
     return this.$_observers.some(
-      ([obvNode, obvOptions]) => node === obvNode && isMatch(options, obvOptions)
+      ([obvNode, obvOptions]) => node === obvNode && isMatch(options, obvOptions),
     );
   }
 }

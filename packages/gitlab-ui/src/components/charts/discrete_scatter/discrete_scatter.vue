@@ -90,7 +90,7 @@ export default {
               color: getColor('itemStyle'),
             },
           },
-          series
+          series,
         );
       });
     },
@@ -125,7 +125,7 @@ export default {
           },
         },
         this.option,
-        dataZoomAdjustments(this.option.dataZoom)
+        dataZoomAdjustments(this.option.dataZoom),
       );
       // All chart options can be merged but series
       // needs to be handled specially

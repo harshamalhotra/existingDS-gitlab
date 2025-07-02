@@ -199,7 +199,6 @@ ui:lint:
     ESLINT_CODE_QUALITY_REPORT: 'gl-code-quality-report-eslint.json'
   script:
     - yarn eslint --format gitlab
-    - yarn prettier
     - yarn markdownlint
     - >
       grep -r -i '<style' --include \*.vue src/components

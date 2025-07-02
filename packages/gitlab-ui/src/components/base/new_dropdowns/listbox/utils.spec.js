@@ -6,7 +6,7 @@ describe('isOption', () => {
     'isOption(%p) === false',
     (notAnOption) => {
       expect(isOption(notAnOption)).toBe(false);
-    }
+    },
   );
 
   it.each([

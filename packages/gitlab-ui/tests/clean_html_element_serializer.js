@@ -9,7 +9,7 @@ const BOOLEAN_ATTRIBUTES = new Set(
     'muted,nohref,noresize,noshade,novalidate,nowrap,open,pauseonexit,readonly,' +
     'required,reversed,scoped,seamless,selected,sortable,' +
     'truespeed,typemustmatch,visible'
-  ).split(',')
+  ).split(','),
 );
 
 const visited = new WeakSet();
@@ -39,7 +39,7 @@ export function serialize(received, config, indentation, depth, refs, printer) {
   const iterator = document.createNodeIterator(
     clone,
     // eslint-disable-next-line no-bitwise
-    NodeFilter.SHOW_COMMENT | NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT
+    NodeFilter.SHOW_COMMENT | NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT,
   );
   const ignorableNodes = [];
 

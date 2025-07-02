@@ -74,7 +74,7 @@ export default {
         if (!isOk) {
           // eslint-disable-next-line no-console
           console.warn(
-            'You are using Vue3. In Vue3 each token component passed to filtered search must be wrapped into markRaw'
+            'You are using Vue3. In Vue3 each token component passed to filtered search must be wrapped into markRaw',
           );
         }
 

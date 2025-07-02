@@ -61,7 +61,7 @@ describe('GlFormCombobox', () => {
       },
       {
         attachTo: document.body,
-      }
+      },
     );
   };
 
@@ -227,7 +227,7 @@ describe('GlFormCombobox', () => {
             expect(findInputValue()).toBe(partialTokenMatch[partialTokenMatch.length - 1]);
           } else {
             expect(findInputValue()).toBe(
-              partialTokenMatch[partialTokenMatch.length - 1][matchValueToAttr]
+              partialTokenMatch[partialTokenMatch.length - 1][matchValueToAttr],
             );
           }
         });

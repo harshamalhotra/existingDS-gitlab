@@ -66,7 +66,7 @@ export default {
             // Exclude `gridAttributes` from being included in the panel props as it's not a valid prop for the panel component
             const panelPropsWithoutGridAttributes = pickBy(
               updatedPanel,
-              (_, k) => k !== 'gridAttributes'
+              (_, k) => k !== 'gridAttributes',
             );
 
             panel.props = { ...panelPropsWithoutGridAttributes };
@@ -140,7 +140,7 @@ export default {
           // Toggles user-customization of grid layout
           staticGrid: this.isStatic,
         },
-        this.$refs.grid
+        this.$refs.grid,
       ).load(this.gridConfig);
 
       // Sync Vue components array with gridstack items

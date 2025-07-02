@@ -133,7 +133,7 @@ describe('link component', () => {
       } else {
         expect(wrapper.classes()).not.toContain('gl-link-external');
       }
-    }
+    },
   );
 
   describe('target blank', () => {
@@ -479,7 +479,7 @@ describe('link component', () => {
       const links = wrapper.findAll('a');
       expect(links.length).toBe(3);
       expect(
-        links.wrappers.map((link) => link.findComponent({ name: 'RouterLink' }).exists())
+        links.wrappers.map((link) => link.findComponent({ name: 'RouterLink' }).exists()),
       ).toStrictEqual([true, false, true]);
     });
 
@@ -549,9 +549,9 @@ describe('link component', () => {
         });
 
         expect(wrapper.find('a').classes()).toEqual(
-          expect.arrayContaining(['active', 'exact-active'])
+          expect.arrayContaining(['active', 'exact-active']),
         );
-      }
+      },
     );
 
     it('passes prefetch prop `<router-link>` component when set to a boolean', () => {
@@ -588,7 +588,7 @@ describe('link component', () => {
                     click: clickHandlerMock,
                   },
                 },
-                'to-a'
+                'to-a',
               ),
             ]);
           },
@@ -626,7 +626,7 @@ describe('link component', () => {
                     click: [clickHandlerMock1, clickHandlerMock2],
                   },
                 },
-                'to-a'
+                'to-a',
               ),
             ]);
           },

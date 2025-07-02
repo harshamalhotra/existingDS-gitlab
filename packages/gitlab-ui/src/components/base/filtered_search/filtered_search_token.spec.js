@@ -253,7 +253,7 @@ describe('Filtered search token', () => {
       value: { operator: '=', data: 'something' },
     });
     expect(findDataSegment().props().searchInputAttributes).toStrictEqual(
-      dataSegmentInputAttributes
+      dataSegmentInputAttributes,
     );
   });
 
@@ -325,7 +325,7 @@ describe('Filtered search token', () => {
       expect(wrapper.emitted()).toEqual({});
 
       const beforeDataInputButton = wrapper.find(
-        `[data-testid="${TEST_ID_BEFORE_DATA_SEGMENT_INPUT_BUTTON}"]`
+        `[data-testid="${TEST_ID_BEFORE_DATA_SEGMENT_INPUT_BUTTON}"]`,
       );
       beforeDataInputButton.trigger('click');
 
@@ -434,7 +434,7 @@ describe('Filtered search token', () => {
           expect(findDataSegment().props('viewOnly')).toBe(propValue);
           expect(findOperatorSegment().props('viewOnly')).toBe(propValue);
         });
-      }
+      },
     );
   });
 
@@ -451,7 +451,7 @@ describe('Filtered search token', () => {
         mountComponent({ value: { operator }, showFriendlyText });
 
         expect(findOperatorSegment().text()).toBe(text);
-      }
+      },
     );
   });
 });

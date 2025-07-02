@@ -63,7 +63,7 @@ describe('GlSingleStat', () => {
 
         const el = findAnimatedNumber();
         expect(el.exists()).toBe(shouldUseAnimatedComponent);
-      }
+      },
     );
 
     describe('units visibility', () => {
@@ -99,7 +99,7 @@ describe('GlSingleStat', () => {
           expect(el.exists()).toBe(true);
           expect(el.props('name')).toBe(metaIcon);
           expect(el.classes()).toContain(
-            variantSpecified ? variantCssColorMap[variant] : variantCssColorMap.muted
+            variantSpecified ? variantCssColorMap[variant] : variantCssColorMap.muted,
           );
         });
 
@@ -163,9 +163,9 @@ describe('GlSingleStat', () => {
           });
 
           expect(findItemByTestId('title-icon').classes()).toEqual(
-            expect.arrayContaining(['title-icon-class'])
+            expect.arrayContaining(['title-icon-class']),
           );
-        }
+        },
       );
     });
 

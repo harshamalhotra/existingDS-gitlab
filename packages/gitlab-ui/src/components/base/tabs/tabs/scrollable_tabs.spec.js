@@ -144,7 +144,7 @@ describe('GlScrollableTabs', () => {
 
     it('ignores actions', () => {
       expect(wrapper.findComponent(GlTabs).props()).toMatchObject(
-        mapValues(ACTION_PROPS, () => null)
+        mapValues(ACTION_PROPS, () => null),
       );
     });
   });
@@ -236,7 +236,7 @@ describe('GlScrollableTabs', () => {
 
               return wrapper.vm.$nextTick();
             }),
-          Promise.resolve()
+          Promise.resolve(),
         );
       });
 

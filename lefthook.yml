@@ -7,7 +7,7 @@ pre-commit:
       glob: "*.{js,vue}"
       run: ./node_modules/.bin/eslint {staged_files}
     prettier:
-      glob: "*.{js,vue}"
+      glob: "*.{js,mjs,cjs,ts,vue}'"
       run: ./node_modules/.bin/prettier --check {staged_files}
     markdown-lint:
       glob: "*.md"
@@ -23,6 +23,6 @@ test-in-ci:
     markdownlint:
       run: yarn run markdown-lint
     prettier:
-      run: yarn run prettier
+      run: yarn run lint:prettier
     unit_tests:
       run: yarn run test:unit

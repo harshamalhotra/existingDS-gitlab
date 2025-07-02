@@ -79,6 +79,6 @@ describe('GlDisclosureDropdownGroup', () => {
     ({ bordered, borderPosition, classes }) => {
       buildWrapper({ propsData: { bordered, borderPosition } });
       expect(wrapper.classes()).toEqual(classes);
-    }
+    },
   );
 });

@@ -102,7 +102,7 @@ describe('new dropdown', () => {
       const classes = findSplitButton().classes().sort();
 
       expect(classes).toEqual(
-        expect.arrayContaining([...DEFAULT_BTN_CLASSES, ...splitClasses].sort())
+        expect.arrayContaining([...DEFAULT_BTN_CLASSES, ...splitClasses].sort()),
       );
     });
 
@@ -111,8 +111,8 @@ describe('new dropdown', () => {
 
       expect(classes).toEqual(
         expect.arrayContaining(
-          [...DEFAULT_BTN_TOGGLE_CLASSES, 'dropdown-toggle-split', ...toggleClasses].sort()
-        )
+          [...DEFAULT_BTN_TOGGLE_CLASSES, 'dropdown-toggle-split', ...toggleClasses].sort(),
+        ),
       );
     });
   });
@@ -149,7 +149,7 @@ describe('new dropdown', () => {
 
     it('updates split button classes', () => {
       expect(findSplitButton().classes().sort()).toEqual(
-        expect.arrayContaining([...DEFAULT_BTN_CLASSES, 'split-content-button'])
+        expect.arrayContaining([...DEFAULT_BTN_CLASSES, 'split-content-button']),
       );
     });
   });
@@ -169,7 +169,7 @@ describe('new dropdown', () => {
 
     it(`class is inherited from toggle class of type ${type}`, () => {
       expect(findDropdownToggle().classes().sort()).toEqual(
-        expect.arrayContaining(expectedClasses.sort())
+        expect.arrayContaining(expectedClasses.sort()),
       );
     });
   });

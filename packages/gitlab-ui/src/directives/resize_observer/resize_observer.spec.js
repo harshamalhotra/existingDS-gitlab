@@ -119,7 +119,7 @@ describe('resize observer directive', () => {
           wrapper = shallowMount(testComponentWithoutHandler);
         }).toThrow(TypeError);
         expect(wrapper).toHaveLoggedVueErrors();
-      }
+      },
     );
   });
 });

@@ -94,19 +94,19 @@ function parseBinding({ arg, value, modifiers }) {
 
     if (typeof arg !== 'undefined') {
       throw new Error(
-        `[GlOutsideDirective] Arguments are not supported. Consider using modifiers instead.`
+        `[GlOutsideDirective] Arguments are not supported. Consider using modifiers instead.`,
       );
     }
 
     const unsupportedModifiers = modifiersList.filter(
-      (modifier) => !supportedEventTypes.includes(modifier)
+      (modifier) => !supportedEventTypes.includes(modifier),
     );
 
     if (unsupportedModifiers.length > 0) {
       throw new Error(
         `[GlOutsideDirective] Cannot bind ${unsupportedModifiers.join(', ')} events; supported event types are: ${supportedEventTypes.join(
-          ', '
-        )}`
+          ', ',
+        )}`,
       );
     }
   }

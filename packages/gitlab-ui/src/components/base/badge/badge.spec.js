@@ -52,7 +52,7 @@ describe('badge', () => {
         it('sets aria-label', () => {
           expect(wrapper.attributes('aria-label')).toBe(expectedAriaLabel);
         });
-      }
+      },
     );
   });
 
@@ -123,7 +123,7 @@ describe('badge', () => {
         createComponent({ propsData: { variant } });
 
         expect(wrapper.classes(`badge-${variant}`)).toBe(true);
-      }
+      },
     );
 
     it('sets "!gl-px-2" class when no child content is set', () => {

@@ -376,7 +376,7 @@ describe('GlFormFields', () => {
             ],
           ]);
         });
-      }
+      },
     );
 
     describe('when there is a server validation message', () => {
@@ -390,7 +390,7 @@ describe('GlFormFields', () => {
 
       it('renders error message', () => {
         expect(
-          findFormGroupFromLabel(TEST_FIELDS.username.label).attributes('invalid-feedback')
+          findFormGroupFromLabel(TEST_FIELDS.username.label).attributes('invalid-feedback'),
         ).toBe('Username has already been taken.');
       });
     });
@@ -409,7 +409,7 @@ describe('GlFormFields', () => {
             'input(evenCount)':
               '<button data-testid="test-custom-input" @click="props.input(props.value + 1)" @blur="props.blur">{{ props.value }}</button>',
           },
-        }
+        },
       );
     });
 
@@ -422,14 +422,14 @@ describe('GlFormFields', () => {
       // what: We'll test this by emitting the "blur" we attached in the scopedSlot
       //       and asserting that validation was ran.
       expect(
-        findFormGroupFromLabel(TEST_FIELDS.evenCount.label).attributes('invalid-feedback')
+        findFormGroupFromLabel(TEST_FIELDS.evenCount.label).attributes('invalid-feedback'),
       ).toBe('');
 
       findCustomInputFromLabel(TEST_FIELDS.evenCount.label).trigger('blur');
       await nextTick();
 
       expect(
-        findFormGroupFromLabel(TEST_FIELDS.evenCount.label).attributes('invalid-feedback')
+        findFormGroupFromLabel(TEST_FIELDS.evenCount.label).attributes('invalid-feedback'),
       ).toBe('Count must be even');
     });
 
@@ -457,13 +457,13 @@ describe('GlFormFields', () => {
             'group(username)-description': '<div data-testid="group-description-slot"></div>',
           },
         },
-        mount
+        mount,
       );
 
       expect(
         findFormGroupFromLabel(TEST_FIELDS.username.label)
           .find('[data-testid="group-description-slot"]')
-          .exists()
+          .exists(),
       ).toBe(true);
     });
 
@@ -475,7 +475,7 @@ describe('GlFormFields', () => {
             'group(username)-label': `<div data-testid="group-label-slot">${TEST_FIELDS.username.label}</div>`,
           },
         },
-        mount
+        mount,
       );
 
       expect(
@@ -483,7 +483,7 @@ describe('GlFormFields', () => {
           .findAllComponents(GlFormGroup)
           .wrappers.find((x) => x.text().includes(TEST_FIELDS.username.label))
           .find('[data-testid="group-label-slot"]')
-          .exists()
+          .exists(),
       ).toBe(true);
     });
 
@@ -496,13 +496,13 @@ describe('GlFormFields', () => {
               '<div data-testid="group-label-description-slot"></div>',
           },
         },
-        mount
+        mount,
       );
 
       expect(
         findFormGroupFromLabel(TEST_FIELDS.username.label)
           .find('[data-testid="group-label-description-slot"]')
-          .exists()
+          .exists(),
       ).toBe(true);
     });
   });
@@ -515,15 +515,15 @@ describe('GlFormFields', () => {
           scopedSlots: {
             'after(username)': '<div data-testid="after-slot"></div>',
           },
-        }
+        },
       );
     });
 
     it('renders after slot', () => {
       expect(
         findFormGroupFromLabel(TEST_FIELDS.username.label).element.nextElementSibling.getAttribute(
-          'data-testid'
-        )
+          'data-testid',
+        ),
       ).toBe('after-slot');
     });
   });

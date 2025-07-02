@@ -79,7 +79,7 @@ describe('GlAnimatedNumber', () => {
 
           expect(wrapper.text()).toBe(expectedInitialOnUpdate);
         });
-      }
+      },
     );
   });
 
@@ -105,7 +105,7 @@ describe('GlAnimatedNumber', () => {
 
           expect(wrapper.text()).toBe(expectedEnd);
         });
-      }
+      },
     );
   });
 

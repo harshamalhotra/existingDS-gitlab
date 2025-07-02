@@ -6,7 +6,7 @@ describe('isItem', () => {
     'isItem(%p) === false',
     (notAnItem) => {
       expect(isItem(notAnItem)).toBe(false);
-    }
+    },
   );
 
   it.each([
@@ -31,7 +31,7 @@ describe('isGroup', () => {
     'isGroup(%p) === false',
     (notAGroup) => {
       expect(isGroup(notAGroup)).toBe(false);
-    }
+    },
   );
 
   it.each([

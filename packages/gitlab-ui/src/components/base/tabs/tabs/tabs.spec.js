@@ -137,7 +137,7 @@ describe('tabs component', () => {
 
           expect(wrapper.find(`[data-testid="${testId}"]`).exists()).toBe(true);
           expect(wrapper.find(`[data-testid="${testId}"]`).props()).toMatchObject(
-            tabsButtonDefaults[`action${buttonType}`]
+            tabsButtonDefaults[`action${buttonType}`],
           );
         });
       });
@@ -240,7 +240,7 @@ describe('tabs component', () => {
               expect(wrapper.emitted('input')[1]).toBeUndefined();
             }
           });
-        }
+        },
       );
 
       describe('when active tab is changed', () => {
@@ -267,7 +267,7 @@ describe('tabs component', () => {
               expect(window.history.pushState).toHaveBeenCalledWith({}, '', expectedQueryString);
               expect(window.history.pushState).toHaveBeenCalledTimes(1);
             });
-          }
+          },
         );
       });
 

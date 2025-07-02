@@ -18,7 +18,7 @@ export const Default = () => ({
     change() {
       this.iteration += 1;
       this.items = Array.from({ length: 3 + Math.floor(Math.random() * 5) }).map(
-        (_, idx) => `item-${idx}-iteration-${this.iteration}`
+        (_, idx) => `item-${idx}-iteration-${this.iteration}`,
       );
     },
   },

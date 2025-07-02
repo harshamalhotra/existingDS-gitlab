@@ -44,7 +44,7 @@ describe('avatar labeled', () => {
   it('displays `meta` slot', () => {
     buildWrapper(
       { label, subLabel },
-      { meta: '<span data-testid="user-meta" class="gl-p-1">Foo Bar</span>' }
+      { meta: '<span data-testid="user-meta" class="gl-p-1">Foo Bar</span>' },
     );
 
     expect(wrapper.find('[data-testid="user-meta"]').exists()).toBe(true);
@@ -53,7 +53,7 @@ describe('avatar labeled', () => {
   it('displays `default` slot', () => {
     buildWrapper(
       { label, subLabel },
-      { default: '<span data-testid="default-slot">Foo Bar</span>' }
+      { default: '<span data-testid="default-slot">Foo Bar</span>' },
     );
 
     expect(wrapper.find('[data-testid="default-slot"]').exists()).toBe(true);

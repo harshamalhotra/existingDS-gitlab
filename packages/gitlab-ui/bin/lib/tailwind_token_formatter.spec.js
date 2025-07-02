@@ -343,25 +343,25 @@ describe('Tailwind Token Formatter', () => {
     describe('#cssCustomPropertyWithValue', () => {
       it('returns CSS custom property with default value of #000', () => {
         expect(f.cssCustomPropertyWithValue(tokens.color.constant)).toBe(
-          'var(--color-constant, #000)'
+          'var(--color-constant, #000)',
         );
       });
 
       it('returns CSS custom property with default value of var(--color-constant)', () => {
         expect(f.cssCustomPropertyWithValue(tokens.color.alias)).toBe(
-          'var(--color-alias, var(--color-constant, #000))'
+          'var(--color-alias, var(--color-constant, #000))',
         );
       });
 
       it('returns CSS custom property with prefix and default value of #000', () => {
         expect(f.cssCustomPropertyWithValue(tokens.color.prefixConstant)).toBe(
-          'var(--gl-color-prefixConstant, #000)'
+          'var(--gl-color-prefixConstant, #000)',
         );
       });
 
       it('returns CSS custom property with default value of var(--gl-color-constant)', () => {
         expect(f.cssCustomPropertyWithValue(tokens.color.prefixAlias)).toBe(
-          'var(--gl-color-prefixAlias, var(--gl-color-prefixConstant, #000))'
+          'var(--gl-color-prefixAlias, var(--gl-color-prefixConstant, #000))',
         );
       });
     });

@@ -139,7 +139,7 @@ describe('search box by click component', () => {
     it('displays disabled history dropdown', () => {
       expect(wrapper.findComponent({ ref: 'historyDropdown' }).exists()).toBe(true);
       expect(
-        wrapper.findComponent({ ref: 'historyDropdown' }).attributes('disabled')
+        wrapper.findComponent({ ref: 'historyDropdown' }).attributes('disabled'),
       ).toBeDefined();
     });
 
@@ -198,7 +198,7 @@ describe('search box by click component', () => {
 
       it('does not add *-with-search-button css modifier', () => {
         expect(wrapper.find('.gl-search-box-by-click').classes()).not.toContain(
-          'gl-search-box-by-click-with-search-button'
+          'gl-search-box-by-click-with-search-button',
         );
       });
     });
@@ -218,7 +218,7 @@ describe('search box by click component', () => {
 
       it('adds *-with-search-button css modifier', () => {
         expect(wrapper.find('.gl-search-box-by-click').classes()).toContain(
-          'gl-search-box-by-click-with-search-button'
+          'gl-search-box-by-click-with-search-button',
         );
       });
     });

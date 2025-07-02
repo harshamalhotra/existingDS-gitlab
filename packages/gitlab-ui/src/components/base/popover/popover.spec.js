@@ -87,7 +87,7 @@ describe('GlPopover', () => {
             },
             props: ['customClass'],
           },
-        }
+        },
       );
     };
 

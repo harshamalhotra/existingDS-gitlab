@@ -335,7 +335,7 @@ export default {
     if (!this.$slots.default && !this.$attrs['aria-label'] && !this.$props.label) {
       logWarning(
         '[gl-button]: Accessible name missing. Please add inner text or aria-label.',
-        this.$el
+        this.$el,
       );
     }
   },

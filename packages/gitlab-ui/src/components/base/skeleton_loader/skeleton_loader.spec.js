@@ -146,6 +146,6 @@ describe('GlSkeletonLoader', () => {
       const gradient = wrapper.find('linearGradient');
 
       expect(gradient.exists()).toBe(!reducedMotion);
-    }
+    },
   );
 });

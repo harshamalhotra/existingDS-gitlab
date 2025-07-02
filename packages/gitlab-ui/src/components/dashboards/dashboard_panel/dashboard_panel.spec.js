@@ -148,7 +148,7 @@ describe('GlDashboardPanel', () => {
     it('renders the panel alert message', () => {
       expect(wrapper.find('[data-testid="panel-alert-message-slot"]').exists()).toBe(true);
       expect(wrapper.find('[data-testid="panel-alert-message-slot"]').text()).toContain(
-        'gl-dashboard-panel-id-'
+        'gl-dashboard-panel-id-',
       );
     });
   });
@@ -297,7 +297,7 @@ describe('GlDashboardPanel', () => {
         actions.map((x) => ({
           icon: x.icon,
           text: x.text,
-        }))
+        })),
       );
     });
   });

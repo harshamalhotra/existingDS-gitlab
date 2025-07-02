@@ -91,7 +91,7 @@ describe('GlListboxItem', () => {
 
       it('should not center check icon by default', () => {
         expect(findCheckIcon().classes()).toEqual(
-          expect.arrayContaining(['gl-mt-3', 'gl-self-start'])
+          expect.arrayContaining(['gl-mt-3', 'gl-self-start']),
         );
       });
     });
@@ -102,7 +102,7 @@ describe('GlListboxItem', () => {
       });
       it('should center the check icon', () => {
         expect(findCheckIcon().classes()).not.toEqual(
-          expect.arrayContaining(['gl-mt-3', 'gl-self-start'])
+          expect.arrayContaining(['gl-mt-3', 'gl-self-start']),
         );
       });
     });

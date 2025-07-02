@@ -29,7 +29,7 @@ const generateStaticContent = (number = 1) =>
           <code>job2: script: "execute-script-for-job2"</code>
         </gl-markdown>
       </div>
-    `
+    `,
   ).join('');
 
 const generateDrawerContent = (items) =>
@@ -40,7 +40,7 @@ const generateDrawerContent = (items) =>
       <strong class="gl-inline-block gl-mb-2">${str}</strong>
       <div>Content…</div>
     </div>
-    `
+    `,
     )
     .join('');
 
@@ -132,7 +132,7 @@ export const Default = (_args, { viewMode }) => ({
         <template #title>Example title</template>
         ${drawerContent}
       `,
-        { extraBindings: { '@opened': 'opened' } }
+        { extraBindings: { '@opened': 'opened' } },
       )}
     </div>`,
 });

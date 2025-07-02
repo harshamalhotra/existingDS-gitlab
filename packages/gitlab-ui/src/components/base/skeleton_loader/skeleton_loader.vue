@@ -94,7 +94,7 @@ export default {
 
       return propValueOrDefault(
         'height',
-        props.lines * DEFAULT_LINE_HEIGHT + (props.lines - 1) * DEFAULT_LINE_SPACING
+        props.lines * DEFAULT_LINE_HEIGHT + (props.lines - 1) * DEFAULT_LINE_SPACING,
       );
     };
 
@@ -154,8 +154,8 @@ export default {
                       height: DEFAULT_LINE_HEIGHT,
                       rx: 4,
                     },
-                  })
-                )
+                  }),
+                ),
           ),
           !reducedMotion &&
             createElement(
@@ -183,7 +183,7 @@ export default {
                         repeatCount: 'indefinite',
                       },
                     }),
-                  ]
+                  ],
                 ),
                 createElement(
                   'stop',
@@ -202,7 +202,7 @@ export default {
                         repeatCount: 'indefinite',
                       },
                     }),
-                  ]
+                  ],
                 ),
                 createElement(
                   'stop',
@@ -221,12 +221,12 @@ export default {
                         repeatCount: 'indefinite',
                       },
                     }),
-                  ]
+                  ],
                 ),
-              ]
+              ],
             ),
         ]),
-      ]
+      ],
     );
 
     if (slotIsSet()) {
@@ -242,7 +242,7 @@ export default {
           height: props.height !== null ? `${props.height}px` : null,
         },
       },
-      [svg]
+      [svg],
     );
   },
 };

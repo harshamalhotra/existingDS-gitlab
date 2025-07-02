@@ -65,7 +65,7 @@ const generateColorMap = (
   tokens,
   variants,
   parent,
-  properties = ['background', 'text', 'fill']
+  properties = ['background', 'text', 'fill'],
   // eslint-disable-next-line max-params
 ) => {
   return properties.reduce((acc, property) => {
@@ -76,7 +76,7 @@ const generateColorMap = (
       variants.map((variant) => [
         `${parent}-${variant}`,
         tokens[property][parent][variant].cssWithValue,
-      ])
+      ]),
     );
 
     return acc;

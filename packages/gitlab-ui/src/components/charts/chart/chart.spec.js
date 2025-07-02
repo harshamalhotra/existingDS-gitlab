@@ -48,7 +48,7 @@ describe('chart component', () => {
         renderer: wrapper.props().renderer,
         width: 300,
         height: 400,
-      }
+      },
     );
   });
 

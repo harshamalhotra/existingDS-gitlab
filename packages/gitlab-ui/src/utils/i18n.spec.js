@@ -35,13 +35,21 @@ describe('i18n', () => {
     describe('when the translation is not configured', () => {
       it('returns the fallback singular label', () => {
         expect(
-          translatePlural('ThisKeyIsNotProvided', FALLBACK_SINGULAR_VALUE, FALLBACK_PLURAL_VALUE)(1)
+          translatePlural(
+            'ThisKeyIsNotProvided',
+            FALLBACK_SINGULAR_VALUE,
+            FALLBACK_PLURAL_VALUE,
+          )(1),
         ).toBe(FALLBACK_SINGULAR_VALUE);
       });
 
       it('returns the fallback plural label', () => {
         expect(
-          translatePlural('ThisKeyIsNotProvided', FALLBACK_SINGULAR_VALUE, FALLBACK_PLURAL_VALUE)(0)
+          translatePlural(
+            'ThisKeyIsNotProvided',
+            FALLBACK_SINGULAR_VALUE,
+            FALLBACK_PLURAL_VALUE,
+          )(0),
         ).toBe(FALLBACK_PLURAL_VALUE);
       });
     });
@@ -52,8 +60,8 @@ describe('i18n', () => {
           translatePlural(
             [PLURAL_TRANSLATION_KEY],
             FALLBACK_SINGULAR_VALUE,
-            FALLBACK_PLURAL_VALUE
-          )(1)
+            FALLBACK_PLURAL_VALUE,
+          )(1),
         ).toBe(CONFIGURED_SINGULAR_VALUE);
       });
 
@@ -62,8 +70,8 @@ describe('i18n', () => {
           translatePlural(
             [PLURAL_TRANSLATION_KEY],
             FALLBACK_SINGULAR_VALUE,
-            FALLBACK_PLURAL_VALUE
-          )(0)
+            FALLBACK_PLURAL_VALUE,
+          )(0),
         ).toBe(CONFIGURED_PLURAL_VALUE);
       });
     });

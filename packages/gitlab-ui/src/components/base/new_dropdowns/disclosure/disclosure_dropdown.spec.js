@@ -89,7 +89,7 @@ describe('GlDisclosureDropdown', () => {
     it('should provide `toggleId` to the base dropdown and reference it in`aria-labelledby` attribute of the list container`', async () => {
       await buildWrapper({ items: mockItems });
       expect(findBaseDropdown().props('toggleId')).toBe(
-        findDisclosureContent().attributes('aria-labelledby')
+        findDisclosureContent().attributes('aria-labelledby'),
       );
     });
 
@@ -160,7 +160,7 @@ describe('GlDisclosureDropdown', () => {
     it('should move the focus from toggle and down the list of items on `ARROW_DOWN` and stop on the last item', async () => {
       findBaseDropdown().vm.$emit(
         GL_DROPDOWN_FOCUS_CONTENT,
-        new KeyboardEvent('keydown', { code: ARROW_DOWN })
+        new KeyboardEvent('keydown', { code: ARROW_DOWN }),
       );
       expect(firstItem.element).toHaveFocus();
       await firstItem.trigger('keydown', { code: ARROW_DOWN });
@@ -188,7 +188,7 @@ describe('GlDisclosureDropdown', () => {
     it('should move focus to the last item on `END` keydown', async () => {
       findBaseDropdown().vm.$emit(
         GL_DROPDOWN_FOCUS_CONTENT,
-        new KeyboardEvent('keydown', { code: ARROW_DOWN })
+        new KeyboardEvent('keydown', { code: ARROW_DOWN }),
       );
       expect(firstItem.element).toHaveFocus();
       await firstItem.trigger('keydown', { code: END });
@@ -215,7 +215,7 @@ describe('GlDisclosureDropdown', () => {
       it('should skip over it', async () => {
         findBaseDropdown().vm.$emit(
           GL_DROPDOWN_FOCUS_CONTENT,
-          new KeyboardEvent('keydown', { code: ARROW_DOWN })
+          new KeyboardEvent('keydown', { code: ARROW_DOWN }),
         );
         expect(firstItem.element).toHaveFocus();
         await firstItem.trigger('keydown', { code: ARROW_DOWN });
@@ -271,7 +271,7 @@ describe('GlDisclosureDropdown', () => {
             'group-label': ({ group }) => h('em', {}, `Group: ${group.name}`),
             'list-item': ({ item }) => h('em', {}, `Item: ${item.text}`),
           },
-        }
+        },
       );
 
       const texts = wrapper.findAll('em').wrappers.map((em) => em.text());
@@ -431,7 +431,7 @@ describe('GlDisclosureDropdown', () => {
         buildWrapper({ positioningStrategy });
 
         expect(findBaseDropdown().props('positioningStrategy')).toBe(positioningStrategy);
-      }
+      },
     );
   });
   describe('startOpened', () => {

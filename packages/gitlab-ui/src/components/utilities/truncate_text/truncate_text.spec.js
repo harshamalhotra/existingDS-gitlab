@@ -100,7 +100,7 @@ describe('GlTruncateText', () => {
       it(`the "aria-expanded" property is set to ${ariaExpanded}`, () => {
         expect(findContent().attributes('aria-expanded')).toBe(ariaExpanded);
       });
-    }
+    },
   );
 
   describe('when resizing and the scroll height is greater than the offset height', () => {

@@ -32,7 +32,7 @@ async function ensureEnvironment(project, options) {
 async function getGitLabUIVersionFromYarnLock(project, ref = 'master') {
   const { data: file } = await gitlabAPI.get(
     `/projects/${project}/repository/files/yarn.lock/raw`,
-    { params: { ref } }
+    { params: { ref } },
   );
   const json = lockfile.parse(file);
   if (json.type === 'success') {

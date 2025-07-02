@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { join, relative } from 'node:path';
 import { globSync } from 'glob';
 import { format, resolveConfig } from 'prettier';
@@ -164,7 +163,7 @@ StyleDictionary.registerFormat({
         variants.map((variant) => [
           `${variant}`,
           formatToken(COMPILED_TOKENS[parent][variant][property].color),
-        ])
+        ]),
       );
 
     const baseColors = baseColorVariants.reduce((acc, color) => {
@@ -247,11 +246,11 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const COLOR_TOKENS = COMPILED_TOKENS.colors;
 
   const baseColorsTokens = Object.fromEntries(
-    baseColorVariants.map((color) => [color, COLOR_TOKENS[color]])
+    baseColorVariants.map((color) => [color, COLOR_TOKENS[color]]),
   );
 
   const brandColorsTokens = Object.fromEntries(
-    brandVariants.map((brand) => [brand, COLOR_TOKENS[brand]])
+    brandVariants.map((brand) => [brand, COLOR_TOKENS[brand]]),
   );
 
   const neutralColors = Object.fromEntries(
@@ -260,7 +259,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
       .map(([, token]) => [
         token.path.filter((segment) => segment !== 'color').join('-'),
         token.cssWithValue,
-      ])
+      ]),
   );
 
   const baseColors = generateBaseColors(baseColorsTokens);
@@ -385,9 +384,7 @@ StyleDictionary.registerAction({
     config.files.forEach(async (file) => {
       const filePath = `${config.buildPath}${file.destination}`;
       const fileContent = fs.readFileSync(filePath, 'utf8');
-      const options = await resolveConfig(
-        fileURLToPath(new URL('../.prettierrc', import.meta.url))
-      );
+      const options = await resolveConfig(filePath);
       const formattedOutput = await format(fileContent, { ...options, parser: 'babel' });
       fs.writeFileSync(filePath, formattedOutput);
     });
@@ -621,7 +618,7 @@ async function main() {
   try {
     // Clean build directories first to prevent loose files.
     await Promise.all(
-      [BUILD_PATH, DIST_PATH].map((path) => fs.promises.rm(path, { recursive: true, force: true }))
+      [BUILD_PATH, DIST_PATH].map((path) => fs.promises.rm(path, { recursive: true, force: true })),
     );
 
     // Build tokens using StyleDictionary

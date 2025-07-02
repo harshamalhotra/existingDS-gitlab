@@ -122,7 +122,7 @@ export const DefaultWithOverflowingFixedContainerHeight = () => {
     {
       height: 'auto',
       class: 'gl-grow', // line, area, heatmap etc charts all have gl-grow on the <gl-chart> element in auto height mode
-    }
+    },
   );
 
   return storyOptions;
@@ -153,7 +153,7 @@ export const WithTabularOverflowingFixedContainerHeight = () => {
     {
       height: 'auto',
       class: 'gl-grow', // line, area, heatmap etc charts all have gl-grow on the <gl-chart> element in auto height mode
-    }
+    },
   );
 
   return storyOptions;

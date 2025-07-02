@@ -33,7 +33,7 @@ describe('Form group component', () => {
       });
 
       expect(wrapper.findComponent(BFormGroup).props('labelClass')).toEqual(expectedProp);
-    }
+    },
   );
 
   describe('label-description slot', () => {
@@ -58,9 +58,9 @@ describe('Form group component', () => {
         });
 
         expect(findLabelDescription().text()).toContain(
-          `label-description from ${labelDescriptionFrom}`
+          `label-description from ${labelDescriptionFrom}`,
         );
-      }
+      },
     );
   });
 
@@ -91,7 +91,7 @@ describe('Form group component', () => {
 
         expect(wrapper.text()).toContain(`label from ${labelFrom}`);
         expect(findOptionalLabel().exists()).toBe(expectedOptional);
-      }
+      },
     );
 
     it('renders optionalText when `optional` is true', () => {

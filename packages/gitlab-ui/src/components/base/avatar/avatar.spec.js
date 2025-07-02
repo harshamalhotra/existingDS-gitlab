@@ -51,7 +51,7 @@ describe('GlAvatar', () => {
         expect(wrapper.classes()).toContain(
           'gl-avatar-s16',
           'gl-md-avatar-s32',
-          'gl-lg-avatar-s64'
+          'gl-lg-avatar-s64',
         );
       });
     });

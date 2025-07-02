@@ -81,7 +81,7 @@ const setConfigs = ({ translations, firstDayOfWeek } = {}) => {
       if (undefinedTranslationKeys.length) {
         /* eslint-disable no-console */
         console.warn(
-          '[@gitlab/ui] The following translations have not been given, so will fall back to their default US English strings:'
+          '[@gitlab/ui] The following translations have not been given, so will fall back to their default US English strings:',
         );
         console.table(undefinedTranslationKeys);
         /* eslint-enable no-console */

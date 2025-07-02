@@ -85,7 +85,7 @@ describe('pagination component', () => {
         scopedSlots: {
           'page-number': '<span slot-scope="{ page }">custom_page_number_slot_{{ page }}</span>',
         },
-      }
+      },
     );
     const items = findPaginationItems();
     expect(findPrev().text()).toBe('custom_prev_slot');
@@ -370,7 +370,7 @@ describe('pagination component', () => {
         });
         const items = findListItems();
         expect(items.length).toBe(2);
-      }
+      },
     );
 
     it('disables prev when on first page', () => {

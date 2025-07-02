@@ -12,7 +12,7 @@ export default (tooltipRefName) => ({
      * https://bootstrap-vue.org/docs/components/tooltip#programmatically-show-and-hide-tooltip
      */
     tooltipActionEvents.forEach((event) =>
-      this.$on(event, () => this.$refs[tooltipRefName].$emit(event))
+      this.$on(event, () => this.$refs[tooltipRefName].$emit(event)),
     );
   },
   beforeDestroy() {

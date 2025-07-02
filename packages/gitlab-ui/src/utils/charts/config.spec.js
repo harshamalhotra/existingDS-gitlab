@@ -355,7 +355,7 @@ describe('chart config helpers', () => {
         generateBarSeries({
           ...barDefaultParams,
           [param]: value,
-        })
+        }),
       ).toMatchObject(result);
     });
   });
@@ -377,7 +377,7 @@ describe('chart config helpers', () => {
         generateLineSeries({
           ...lineDefaultParams,
           [param]: value,
-        })
+        }),
       ).toMatchObject(result);
     });
   });
@@ -391,7 +391,7 @@ describe('chart config helpers', () => {
       expect(
         getTooltipTitle({
           seriesData: [{ value: ['Value 1', 99] }],
-        })
+        }),
       ).toBe('Value 1');
     });
 
@@ -399,7 +399,7 @@ describe('chart config helpers', () => {
       expect(
         getTooltipTitle({
           seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 2', 100] }],
-        })
+        }),
       ).toBe('Value 1, Value 2');
     });
 
@@ -407,7 +407,7 @@ describe('chart config helpers', () => {
       expect(
         getTooltipTitle({
           seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 1', 99] }],
-        })
+        }),
       ).toBe('Value 1');
     });
 
@@ -417,8 +417,8 @@ describe('chart config helpers', () => {
           {
             seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 2', 100] }],
           },
-          'Time'
-        )
+          'Time',
+        ),
       ).toBe('Value 1, Value 2 (Time)');
     });
   });
@@ -432,7 +432,7 @@ describe('chart config helpers', () => {
       expect(
         getTooltipContent({
           seriesData: [{ value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' }],
-        })
+        }),
       ).toEqual({ 'Series 1': { color: '', value: 99 } });
     });
 
@@ -442,8 +442,8 @@ describe('chart config helpers', () => {
           {
             seriesData: [{ value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' }],
           },
-          'Amount'
-        )
+          'Amount',
+        ),
       ).toEqual({ Amount: { color: '', value: 99 } });
     });
 
@@ -454,7 +454,7 @@ describe('chart config helpers', () => {
             { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
             { value: ['Value 2', 99], seriesName: 'Series 2', color: '#bbb' },
           ],
-        })
+        }),
       ).toEqual({
         'Series 1': { color: '#aaa', value: 99 },
         'Series 2': { color: '#bbb', value: 99 },
@@ -468,7 +468,7 @@ describe('chart config helpers', () => {
             { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
             { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
           ],
-        })
+        }),
       ).toEqual({ 'Series 1': { color: '#aaa', value: 99 } });
     });
   });

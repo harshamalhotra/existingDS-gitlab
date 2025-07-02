@@ -113,7 +113,7 @@ function wrap(template, containerHeight, cssClass) {
     >
       ${template}
     </gl-dropdown>`,
-    containerHeight
+    containerHeight,
   );
 }
 
@@ -137,7 +137,7 @@ export const Default = (_args, { argTypes }) => ({
     <gl-dropdown-item>Ninth item</gl-dropdown-item>
     <gl-dropdown-item>Tenth item</gl-dropdown-item>
     <gl-dropdown-item>Eleventh item</gl-dropdown-item>`,
-    340
+    340,
   ),
   mounted() {
     clickDropdown(this);
@@ -197,7 +197,7 @@ export const WithDivider = (args, { argTypes }) => ({
     <gl-dropdown-divider />
     <gl-dropdown-item>Third item</gl-dropdown-item>
     <gl-dropdown-item>Fourth item</gl-dropdown-item>`,
-    200
+    200,
   ),
   mounted() {
     clickDropdown(this);
@@ -228,7 +228,7 @@ export const WithHeaderAndFooter = (args, { argTypes }) => ({
       <gl-dropdown-item>First footer item</gl-dropdown-item>
       <gl-dropdown-item>Second footer item</gl-dropdown-item>
     </template>`,
-    340
+    340,
   ),
   mounted() {
     clickDropdown(this);
@@ -258,7 +258,7 @@ export const WithSectionHeader = (args, { argTypes }) => ({
     <gl-dropdown-section-header>I am a really long header title which should wrap</gl-dropdown-section-header>
     <gl-dropdown-item>Third item</gl-dropdown-item>
     <gl-dropdown-item>Fourth item</gl-dropdown-item>`,
-    300
+    300,
   ),
   mounted() {
     clickDropdown(this);
@@ -357,7 +357,7 @@ export const WithIcons = (args, { argTypes }) => ({
     >
       Status manual
     </gl-dropdown-item>`,
-    200
+    200,
   ),
   mounted() {
     clickDropdown(this);
@@ -521,7 +521,7 @@ export const WithHighlightedItems = (args, { argTypes }) => ({
     <gl-dropdown-item>Third item</gl-dropdown-item>
     <gl-dropdown-item>Fourth item</gl-dropdown-item>
     `,
-    200
+    200,
   ),
   mounted() {
     clickDropdown(this);
@@ -548,7 +548,7 @@ export const OnRightEdge = (args, { argTypes }) => ({
     <gl-dropdown-item>Fourth item</gl-dropdown-item>
     `,
     200,
-    '!gl-block gl-text-right'
+    '!gl-block gl-text-right',
   ),
   mounted() {
     clickDropdown(this);

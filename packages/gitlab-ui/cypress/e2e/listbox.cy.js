@@ -290,6 +290,6 @@ describe('GlCollapsibleListbox', () => {
           elementDoesNotOverflowVertically($el[0], newHeight);
         });
       });
-    }
+    },
   );
 });

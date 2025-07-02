@@ -129,7 +129,7 @@ describe('datepicker component', () => {
       const wrapper = mountWithOptions();
 
       expect(wrapper.vm.$refs.calendarTriggerBtn.$el.isSameNode(pikadayConfig().trigger)).toBe(
-        true
+        true,
       );
     });
 
@@ -305,7 +305,7 @@ describe('datepicker component', () => {
       config[calendarEvent](...params);
 
       expect(wrapper.emitted(componentEvent)[0]).toEqual(params);
-    }
+    },
   );
 
   it.each`
@@ -322,7 +322,7 @@ describe('datepicker component', () => {
 
       await wrapper.vm.$nextTick();
       expect(Pikaday.prototype[calendarSetter]).toHaveBeenCalledWith(currentDate, ...extraParams);
-    }
+    },
   );
 
   describe('when open event is emitted', () => {
@@ -348,13 +348,13 @@ describe('datepicker component', () => {
 
     it('adds month label', () => {
       expect(mockElement.querySelector('.pika-select-month').getAttribute('aria-label')).toBe(
-        'Month'
+        'Month',
       );
     });
 
     it('adds year label', () => {
       expect(mockElement.querySelector('.pika-select-year').getAttribute('aria-label')).toBe(
-        'Year'
+        'Year',
       );
     });
   });
@@ -438,7 +438,7 @@ describe('datepicker component', () => {
       const wrapper = mountWithOptions();
 
       expect(findInput(wrapper).attributes(attribute)).toBe(expectedValue);
-    }
+    },
   );
 
   it.each`
@@ -458,7 +458,7 @@ describe('datepicker component', () => {
       });
 
       expect(findInput(wrapper).attributes(attribute)).toBe(expectedValue);
-    }
+    },
   );
 
   it.each`

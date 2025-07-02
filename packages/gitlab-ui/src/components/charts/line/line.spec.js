@@ -208,7 +208,7 @@ describe('line component', () => {
       });
 
       expect(findChart().props('options').xAxis.axisPointer.label.formatter).toBe(
-        formatTooltipText
+        formatTooltipText,
       );
     });
   });

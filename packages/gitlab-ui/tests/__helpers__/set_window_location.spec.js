@@ -30,7 +30,7 @@ describe('helpers/set_window_location_helper', () => {
           setWindowLocation(url);
 
           expect(window.location[property]).toBe(value);
-        }
+        },
       );
     });
 
@@ -80,7 +80,7 @@ describe('helpers/set_window_location_helper', () => {
       (invalidUrl) => {
         expect(() => setWindowLocation(invalidUrl)).toThrow();
         expect(window.location.href).toBe(originalLocation);
-      }
+      },
     );
 
     describe('affects links', () => {
@@ -102,7 +102,7 @@ describe('helpers/set_window_location_helper', () => {
           link.setAttribute('href', hrefAttr);
 
           expect(link.href).toBe(expectedHref);
-        }
+        },
       );
     });
   });

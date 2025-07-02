@@ -45,7 +45,7 @@ describe('dropdown item', () => {
           'gl-dropdown-item-check-icon',
           ...expectedClasses,
         ]);
-      }
+      },
     );
   });
 

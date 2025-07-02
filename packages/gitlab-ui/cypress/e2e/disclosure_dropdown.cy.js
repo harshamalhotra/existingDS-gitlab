@@ -13,6 +13,6 @@ describe('Disclosure dropdown', () => {
       cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'true');
       cy.get(`${testId('disclosure-dropdown-item')}:first button`).realClick();
       cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'false');
-    }
+    },
   );
 });

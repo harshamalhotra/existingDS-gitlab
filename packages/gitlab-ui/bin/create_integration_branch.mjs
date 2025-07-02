@@ -46,7 +46,7 @@ async function remoteBranchExists() {
     buildApiUrl(API_ENDPOINT_REPOSITORY_BRANCH, {
       id: FORK_PROJECT_ID,
       branch: encodeURIComponent(INTEGRATION_BRANCH_NAME),
-    })
+    }),
   );
   return response.status === 200;
 }
@@ -62,8 +62,8 @@ async function pullFileFromProject(file, project, branch) {
       },
       {
         ref: branch,
-      }
-    )
+      },
+    ),
   );
   const json = await response.json();
   const localFilePath = path.join(TMP_DIR, file);
@@ -103,28 +103,28 @@ async function pushChangesToFork(createBranch = true) {
         'PRIVATE-TOKEN': GITLAB_INTEGRATION_REST_TOKEN,
         'Content-Type': 'application/json',
       },
-    }
+    },
   );
 
   const createMRLink = `https://gitlab.com/${FORK_PROJECT}/-/merge_requests/new?merge_request%5Bsource_branch%5D=${INTEGRATION_BRANCH_NAME}`;
 
   if (createBranch && res.status === 201) {
     console.log(
-      `Integration branch created successfully. Follow this link to create an MR: ${createMRLink}.`
+      `Integration branch created successfully. Follow this link to create an MR: ${createMRLink}.`,
     );
     return;
   }
 
   if (!createBranch && res.status === 201) {
     console.log(
-      `Integration branch updated successfully. If you haven't created an MR yet, follow this link to create one: ${createMRLink}.`
+      `Integration branch updated successfully. If you haven't created an MR yet, follow this link to create one: ${createMRLink}.`,
     );
     return;
   }
 
   if (!createBranch && res.status === 400) {
     console.warn(
-      `The integration branch is already up-to-date. If you haven't created an MR yet, follow this link to create one: ${createMRLink}.`
+      `The integration branch is already up-to-date. If you haven't created an MR yet, follow this link to create one: ${createMRLink}.`,
     );
     return;
   }
@@ -138,7 +138,7 @@ try {
 
   if (branchExists) {
     console.log(
-      `The branch \`${INTEGRATION_BRANCH_NAME}\` exists on the remote so we will update it.`
+      `The branch \`${INTEGRATION_BRANCH_NAME}\` exists on the remote so we will update it.`,
     );
   } else {
     console.log(`A new branch \`${INTEGRATION_BRANCH_NAME}\` will be created on the remote.`);
@@ -149,7 +149,7 @@ try {
 
   createTemporaryDirectory();
   await Promise.all(
-    TRACKED_FILES.map((file) => pullFileFromProject(file, sourceProject, sourceBranch))
+    TRACKED_FILES.map((file) => pullFileFromProject(file, sourceProject, sourceBranch)),
   );
   installGitLabUIDevBuild();
   await pushChangesToFork(!branchExists);
