@@ -155,7 +155,6 @@
     "jest-circus": "30.0.2",
     "jest-environment-jsdom": "30.0.2",
     "jest-image-snapshot": "^6.5.1",
-    "lefthook": "^1.11.14",
     "merge-cobertura": "^1.0.4",
     "mockdate": "^2.0.5",
     "module-alias": "^2.2.3",

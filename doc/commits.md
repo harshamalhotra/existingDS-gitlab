@@ -61,11 +61,4 @@ If your commit command is erroring out, you likely need to fix some formatting i
 Inspect the command's output to find out what needs fixing, apply and stage the required changes,
 then try committing again.
 
-If you'd like to bypass the verification step when committing, you can do so by setting the
-`LEFTHOOK` env variable to `0` when running the `git` command. For example:
-
-```sh
-LEFTHOOK=0 git commit -m "Implement GlFoo component"
-```
-
-[lefthook]: https://www.npmjs.com/package/@arkweid/lefthook
+[Learn more about `lefthook`](../README.md#lefthook).
