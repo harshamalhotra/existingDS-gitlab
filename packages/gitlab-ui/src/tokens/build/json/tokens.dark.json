@@ -17675,6 +17675,7 @@
         "$description": "Used for the border of a dropdown.",
         "$extensions": {
           "com.figma.scope": [
+            "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
         },
@@ -17689,6 +17690,7 @@
           "$description": "Used for the border of a dropdown.",
           "$extensions": {
             "com.figma.scope": [
+              "EFFECT_COLOR",
               "STROKE_COLOR"
             ]
           },
@@ -17711,6 +17713,7 @@
         "$description": "Used for the divider of a dropdown.",
         "$extensions": {
           "com.figma.scope": [
+            "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
         },
@@ -17725,6 +17728,7 @@
           "$description": "Used for the divider of a dropdown.",
           "$extensions": {
             "com.figma.scope": [
+              "EFFECT_COLOR",
               "STROKE_COLOR"
             ]
           },
