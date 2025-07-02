@@ -8,17 +8,27 @@
             "dark": "#e3e3e8"
           },
           "$type": "color",
-          "$description": "Default stroke color to define shape and provide essential detail."
+          "$description": "Default stroke color to define shape and provide essential detail.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
         }
       },
-      "width" : {
+      "width": {
         "default": {
           "$value": {
             "default": "2",
             "dark": "1.5"
           },
           "$type": "dimension",
-          "$description": "Default stroke width to define shape and provide essential detail."
+          "$description": "Default stroke width to define shape and provide essential detail.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_FLOAT"
+            ]
+          }
         }
       }
     },
@@ -30,7 +40,12 @@
             "dark": "#423f4f"
           },
           "$type": "color",
-          "$description": "Default fill color for an element where specific meaning or emphasis is not required."
+          "$description": "Default fill color for an element where specific meaning or emphasis is not required.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL"
+            ]
+          }
         }
       }
     },
@@ -43,7 +58,12 @@
               "dark": "#6f6796"
             },
             "$type": "color",
-            "$description": "Used as a fill to convey a concept which is neither positive or negative."
+            "$description": "Used as a fill to convey a concept which is neither positive or negative.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "success": {
             "$value": {
@@ -51,7 +71,12 @@
               "dark": "#3b8581"
             },
             "$type": "color",
-            "$description": "Used as a fill to convey a success or active concept, has a positive connotation."
+            "$description": "Used as a fill to convey a success or active concept, has a positive connotation.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "warning": {
             "$value": {
@@ -59,7 +84,12 @@
               "dark": "#ab752f"
             },
             "$type": "color",
-            "$description": "Used as a fill to convey a caution or warning concept, has a slightly negative connotation."
+            "$description": "Used as a fill to convey a caution or warning concept, has a slightly negative connotation.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "danger": {
             "$value": {
@@ -67,7 +97,12 @@
               "dark": "#aa563a"
             },
             "$type": "color",
-            "$description": "Used as a fill to convey a critical or danger concept, has a negative connotation."
+            "$description": "Used as a fill to convey a critical or danger concept, has a negative connotation.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       }
@@ -81,7 +116,12 @@
               "dark": "#e3865f"
             },
             "$type": "color",
-            "$description": "Used for orange accent stroke detail on an object or attention-drawing element."
+            "$description": "Used for orange accent stroke detail on an object or attention-drawing element.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "teal": {
             "$value": {
@@ -89,7 +129,12 @@
               "dark": "#6baea3"
             },
             "$type": "color",
-            "$description": "Used for teal accent stroke detail on an object or attention-drawing element."
+            "$description": "Used for teal accent stroke detail on an object or attention-drawing element.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "strong": {
             "$value": {
@@ -97,7 +142,12 @@
               "dark": "#aea5d6"
             },
             "$type": "color",
-            "$description": "Used for dark accent stroke detail on an object or attention-drawing element."
+            "$description": "Used for dark accent stroke detail on an object or attention-drawing element.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       },
@@ -109,7 +159,12 @@
               "dark": "#5c5371"
             },
             "$type": "color",
-            "$description": "Used to add depth to a secondary element and supporting surface."
+            "$description": "Used to add depth to a secondary element and supporting surface.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "strong": {
             "$value": {
@@ -117,7 +172,12 @@
               "dark": "#6f6796"
             },
             "$type": "color",
-            "$description": "Used for an element requiring visual emphasis without competing with primary content or status indicators."
+            "$description": "Used for an element requiring visual emphasis without competing with primary content or status indicators.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "orange": {
             "$value": {
@@ -125,7 +185,12 @@
               "dark": "#aa563a"
             },
             "$type": "color",
-            "$description": "Used to add orange to a secondary element and supporting surface."
+            "$description": "Used to add orange to a secondary element and supporting surface.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           },
           "teal": {
             "$value": {
@@ -133,7 +198,12 @@
               "dark": "#3b8581"
             },
             "$type": "color",
-            "$description": "Used to add teal to a secondary element and supporting surface."
+            "$description": "Used to add teal to a secondary element and supporting surface.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       }
@@ -146,7 +216,12 @@
             "dark": "#32303c"
           },
           "$type": "color",
-          "$description": "Used for the consistent background shape present across all illustrations. Provides a unified foundation that visually grounds each illustration while maintaining system cohesion."
+          "$description": "Used for the consistent background shape present across all illustrations. Provides a unified foundation that visually grounds each illustration while maintaining system cohesion.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL"
+            ]
+          }
         }
       }
     },
@@ -159,7 +234,12 @@
               "dark": "#e3e3e8"
             },
             "$type": "color",
-            "$description": "Default stroke color to define shape and provide essential detail in isometric illustration."
+            "$description": "Default stroke color to define shape and provide essential detail in isometric illustration.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "width": {
@@ -169,7 +249,12 @@
               "dark": "1.5"
             },
             "$type": "dimension",
-            "$description": "Default stroke width to define shape and provide essential detail in isometric illustration."
+            "$description": "Default stroke width to define shape and provide essential detail in isometric illustration.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_FLOAT"
+              ]
+            }
           }
         }
       },
@@ -182,7 +267,12 @@
                 "dark": "#5a566c"
               },
               "$type": "color",
-              "$description": "Used for the top face of isometric text and number elements."
+              "$description": "Used for the top face of isometric text and number elements.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -194,7 +284,12 @@
                 "dark": "#423f4f"
               },
               "$type": "color",
-              "$description": "Used for the front face of isometric text and number elements."
+              "$description": "Used for the front face of isometric text and number elements.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -206,7 +301,12 @@
                 "dark": "#373441"
               },
               "$type": "color",
-              "$description": "Used for the side face of isometric text and number elements."
+              "$description": "Used for the side face of isometric text and number elements.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -218,7 +318,13 @@
                 "dark": "#292730"
               },
               "$type": "color",
-              "$description": "Used for the shadow of isometric text and number elements."
+              "$description": "Used for the shadow of isometric text and number elements.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "EFFECT_COLOR",
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         }
@@ -232,7 +338,12 @@
                 "dark": "#aa563a"
               },
               "$type": "color",
-              "$description": "Used for the top face of an isometric object or symbol."
+              "$description": "Used for the top face of an isometric object or symbol.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -244,7 +355,12 @@
                 "dark": "#a54623"
               },
               "$type": "color",
-              "$description": "Used for the front face of an isometric object or symbol."
+              "$description": "Used for the front face of an isometric object or symbol.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -256,7 +372,12 @@
                 "dark": "#8f4424"
               },
               "$type": "color",
-              "$description": "Used for the side face of an isometric object or symbol."
+              "$description": "Used for the side face of an isometric object or symbol.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -268,7 +389,12 @@
                 "dark": "#423f4f"
               },
               "$type": "color",
-              "$description": "Used for the face of an isometric object or symbol that requires maximum distinction from other elements."
+              "$description": "Used for the face of an isometric object or symbol that requires maximum distinction from other elements.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -280,7 +406,13 @@
                 "dark": "#3d2b2a"
               },
               "$type": "color",
-              "$description": "Used for the shadow of an isometric object or symbol."
+              "$description": "Used for the shadow of an isometric object or symbol.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "EFFECT_COLOR",
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         }
@@ -294,7 +426,12 @@
                 "dark": "#6d6972"
               },
               "$type": "color",
-              "$description": "Used for the top face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content."
+              "$description": "Used for the top face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -306,7 +443,12 @@
                 "dark": "#49474d"
               },
               "$type": "color",
-              "$description": "Used for the front face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content."
+              "$description": "Used for the front face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -318,7 +460,12 @@
                 "dark": "#212023"
               },
               "$type": "color",
-              "$description": "Used for the side face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content."
+              "$description": "Used for the side face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         }
@@ -332,7 +479,12 @@
                 "dark": "#32303c"
               },
               "$type": "color",
-              "$description": "Used for the top surface of an isometric base platform."
+              "$description": "Used for the top surface of an isometric base platform.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -344,7 +496,12 @@
                 "dark": "#2b2932"
               },
               "$type": "color",
-              "$description": "Used for the front face of an isometric base platform."
+              "$description": "Used for the front face of an isometric base platform.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -356,7 +513,12 @@
                 "dark": "#23222b"
               },
               "$type": "color",
-              "$description": "Used for the side face of an isometric base platform."
+              "$description": "Used for the side face of an isometric base platform.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         }
