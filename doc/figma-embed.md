@@ -7,6 +7,7 @@ Figma embeds should be avoided in cases where [component examples](/doc/componen
 ## Embedding process
 
 When [embedding Figma files](https://www.figma.com/developers/embed), make sure you:
+
 1. Add a link to the Figma file above the embed. This will act as a fallback if the browser blocks the embed.
 1. Use the `<figma-embed>` component. This will apply the styles needed for the embed to resize fluidly.
 1. Include `label="Embed description"`. The content of `label` should concisely describe the contents — similar to how alt text would for an image. The content within the embedded iframe uses the `canvas` element and isn’t accessible for screen reader or keyboard-only users so treating the entire embed as an image with description provides a better experience.

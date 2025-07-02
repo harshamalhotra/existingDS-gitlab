@@ -11,13 +11,13 @@ Many times, you will need to squash or amend your commit message(s).
 There are multipe ways to squash commits. One typical workflow is as follows:
 
 1. First, ensure the `main` branch is up to date.
-  1. Enter `git checkout main`
-  1. Enter `git pull origin main`
+   1. Enter `git checkout main`
+   1. Enter `git pull origin main`
 1. Enter `git checkout your-branch-name`. This will switch to your branch.
-1. Assuming you’ve made all your commits, start by entering `git rebase -i main`. 
+1. Assuming you’ve made all your commits, start by entering `git rebase -i main`.
 1. This will bring up a prompt that shows your commits. If using Vim, type `i` to start editing the contents of this prompt.
 1. In order to squash your commits, change `pick` to `f` for all commits except your first one. `f` stands for `fixup` and will move the contents of that commit to the previous commit.
-    - **Hot tip:** You can replace all lines at once by placing your cursor at the beginning of the first line you want to be squashed and:
+   - **Hot tip:** You can replace all lines at once by placing your cursor at the beginning of the first line you want to be squashed and:
       1. `Ctrl-cv` (Press `Ctrl-c`, release `c` and press `v`)
       1. With the arrows, select all occurrences of `pick` that you want to change to `f`
       1. Press `c`
@@ -39,9 +39,9 @@ A typical workflow is as follows:
 1. Once you have updated your commit, save your changes by first hitting `esc` to get out of edit mode and then `:wq` to save the changes.
 1. After amending your commit, you will need to force push your changes up to your branch using `git push --force-with-lease origin [BRANCH NAME]`. If your branch on GitLab has changes that your local branch does not know about, you will first need to fetch or pull the remote changes.
 
-* **Hot tip:** If you need to squash and amend your commits at the same time, you can do so by using the `r` option in the interactive rebase prompt. For example, if you have five commits and you want to squash three of them and amend two of them, you can do so by utilizing `f` to fixup the commits you want to squash and `r` to indicate that you want to rewrite your commit message.
+- **Hot tip:** If you need to squash and amend your commits at the same time, you can do so by using the `r` option in the interactive rebase prompt. For example, if you have five commits and you want to squash three of them and amend two of them, you can do so by utilizing `f` to fixup the commits you want to squash and `r` to indicate that you want to rewrite your commit message.
 
-```
+```gitrebase
 r f2df58f Commit 1 
 f c8b3bb3 Commit 2 
 r f26d071 Commit 3 

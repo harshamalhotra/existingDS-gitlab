@@ -1,3 +1,5 @@
+# Contributing guidelines
+
 ## Developer Certificate of Origin + License
 
 By contributing to GitLab Inc., You accept and agree to the following terms and

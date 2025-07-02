@@ -26,11 +26,11 @@ The following instructions walk you through setup of an instance of Windows 10 w
 ### Contents
 
 - [Install and configure VirtualBox](#install-and-configure-virtualbox)
-   - [Guest Additions](#guest-additions)
-   - [Shared clipboard](#shared-clipboard)
-   - [Screen resize](#screen-resize)
+  - [Guest Additions](#guest-additions)
+  - [Shared clipboard](#shared-clipboard)
+  - [Screen resize](#screen-resize)
 - [Install Chrome](#install-chrome)
-   - [Extensions and bookmarklets](#extensions-and-bookmarklets)
+  - [Extensions and bookmarklets](#extensions-and-bookmarklets)
 - [Install NVDA](#install-nvda)
 - [Install Karabiner-Elements](#install-karabiner-elements)
 
@@ -48,7 +48,7 @@ The following instructions walk you through setup of an instance of Windows 10 w
    ![VirtualBox new machine settings](images/nvda-2-vb-setup.png)
 1. You can start off with less space than default, here **30 GB** has been entered. Choose the "Fixed size" option. Using a predetermined size should help with performance since it won’t have to dynamically be allocated. Select **Create** to continue.
    ![imgVirtualBox new machine size](images/nvda-3-vb-size.png)
-1. Select the **Settings** button and a new window will open. Go to the **Storage** tab. 
+1. Select the **Settings** button and a new window will open. Go to the **Storage** tab.
 1. In the left pane, choose the item with the CD icon. Then on the right, choose the CD icon and locate the ISO file you downloaded earlier. Select **OK** to continue.
    ![VirtualBox locate ISO file](images/nvda-4-vb-disc.png)
 1. Back in the main VirtualBox window, double-click the name of your virtual machine to start it. A window will open where the ISO file should be selected to start from. Select the **Start** button.
@@ -79,7 +79,7 @@ There are several screen resize options, and you can choose what suites your pre
 
 ### Install Chrome
 
-1. Using the default browser, Edge, navigate to https://www.google.com/chrome/ and download the Chrome browser.
+1. Using the default browser, Edge, [download the Chrome browser](https://www.google.com/chrome/).
 1. Run the **ChromeSetup.exe** file.
 1. You will be able to set up Chrome as your preferred browser, as well as sign in to the account you prefer to use.
 
@@ -98,7 +98,7 @@ The following utilities are not required, but can help when testing certain aspe
 
 NVDA (NonVisual Desktop Access) is a fully functional screen reader that is free, and open-source. You can also choose to add a donation at the time of download.
 
-1. Navigate to https://www.nvaccess.org/download/ and download NVDA.
+1. [Download NVDA](https://www.nvaccess.org/download/).
 1. Run the **nvda_2020.4.exe** file (your version may be a little different depending on what is available).
 1. Unless you want NVDA running all the time, uncheck the "Use NVDA during sign-in" checkbox and continue with the install.
 1. In the **Welcome to NVDA** window you can leave the default options as-is. Select **OK** to continue.

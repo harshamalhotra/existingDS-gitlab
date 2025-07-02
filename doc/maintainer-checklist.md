@@ -1,6 +1,7 @@
 # Pajamas UX maintainer review checklist
 
 ## General guidance
+
 - Focus your review on content, website user experience, and information architecture (IA).
 - If you know of any related or similar issues/MRs, note them and verify the proposed changes all work together seamlessly.
 - It's okay (and preferred) to ask others for help when you don't know something yourself.
@@ -10,10 +11,11 @@
 - Add related components as applicable (alternative components or components that are usually paired).
 - If the status page is being updated, ensure the related content pages match the updated status. (For example, complete vue docs should not have the banner that states the component does not conform to pajamas. A separate issue/MR should be created to remove the banner if we are updating the status to complete. Complete usage docs should also not have todo banners.)
 - Component accessibility:
-   - Keyboard navigation is documented.
-   - Text to be read out loud by screen readers is documented.
+  - Keyboard navigation is documented.
+  - Text to be read out loud by screen readers is documented.
 
 ## In the copy, ensure
+
 - There are no grammar or spelling errors.
 - Writing follows our [voice and tone guidelines](https://docs.gitlab.com/ee/development/documentation/styleguide/).
 - Text follows the [punctuation guidelines](https://docs.gitlab.com/ee/development/documentation/styleguide/#punctuation/). Don't forget those Oxford commas!
@@ -32,4 +34,5 @@
 - Extra spaces and comments have been removed.
 
 ## For the MR itself, ensure
+
 - That you review the MR locally, either through checking out the branch or looking at the review app to ensure the content is formatted appropriately.

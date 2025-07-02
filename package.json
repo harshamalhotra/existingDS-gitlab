@@ -23,7 +23,7 @@
     "lint:eslint:fix": "yarn run lint:eslint --fix",
     "lint:prettier": "prettier --list-different '**/*.{js,mjs,cjs,ts,vue}'",
     "lint:prettier:fix": "yarn run lint:prettier --write",
-    "markdown-lint": "markdownlint-cli2 'contents/**/*.md'",
+    "lint:markdownlint": "markdownlint-cli2",
     "test": "node_modules/.bin/lefthook run test-in-ci --no-tty --colors true",
     "test:unit": "jest",
     "lint:fix": "yarn run lint:eslint:fix && yarn run lint:prettier:fix",

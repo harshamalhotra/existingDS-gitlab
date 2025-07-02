@@ -11,7 +11,15 @@ pre-commit:
       run: ./node_modules/.bin/prettier --check {staged_files}
     markdown-lint:
       glob: "*.md"
-      run: yarn markdown-lint
+      exclude:
+        # This list should be kept in sync with the negated globs in
+        # .markdownlint-cli2.yaml.
+        - '.gitlab/**/*.md'
+        - 'packages/gitlab-ui/src/vendor/**/*.md'
+        - 'pages/components/template.md'
+        - '**/node_modules/**'
+        - '**/CHANGELOG*.md'
+      run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
 
 # This is a non git-hook-target which we use in CI
 # in order to parallelize linting / spec execution
@@ -21,7 +29,7 @@ test-in-ci:
     eslint:
       run: yarn run lint:eslint --format gitlab
     markdownlint:
-      run: yarn run markdown-lint
+      run: yarn run lint:markdownlint
     prettier:
       run: yarn run lint:prettier
     unit_tests:

@@ -22,7 +22,7 @@ Ensure you have [Node](https://nodejs.org/en/) 12.x and [Yarn](https://yarnpkg.c
 1. Install [yarn](https://yarnpkg.com/en/docs/install)
 1. Run `yarn install`
 1. Run `yarn start` to start build & watch changes
-1. Open http://localhost:2018
+1. Open <http://localhost:2018>
 
 Alternatively, you can also [open this repository in Gitpod](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/) to make and preview changes directly in your browser.
 
@@ -62,6 +62,7 @@ Each component should have a corresponding [label](https://gitlab.com/gitlab-org
 In the 'Contribute' tab found on a component page, issues and merge requests are automatically linked to the correct component label. However, in some instances the label may not be a 1:1 and need to be manually referenced in the component page frontmatter. To do this, add `componentLabel:` followed by the label name without 'component:' to the frontmatter. For example, `componentLabel: dropdown-disclosure` will correctly reference items using the 'component:dropdown-disclosure' label.
 
 Communicate widely any additions or changes to these labels, as other projects and tools rely on them and may need to be updated. Such projects and tools include:
+
 - [Pajamas Adoption Scanner](https://gitlab.com/gitlab-org/frontend/pajamas-adoption-scanner)
 - [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui)
 - User bookmarks
@@ -92,7 +93,7 @@ For more background on the desired HTML structure, refer to ["How do you figure?
 
 ### Linting
 
-We control code quality with automatic linting tools like `eslint` and `prettier`.
+We control code quality with automatic linting tools like `eslint`, `prettier` and `markdownlint`.
 
 If you change something in the code, you can run `yarn test` to see if your changes are up-to-code. A lot of failures are auto-fixable, so simply run `yarn run lint:fix` to fix errors automatically.
 

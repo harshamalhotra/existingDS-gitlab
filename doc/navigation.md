@@ -86,7 +86,7 @@ When configuring paths in the navigation, make sure that they match the Markdown
 
 For example, if you had the following structure in the `contents/` directory:
 
-```
+```text
 .
 └── foo
     └── bar.md  
@@ -94,7 +94,7 @@ For example, if you had the following structure in the `contents/` directory:
 
 Nuxt would generate the following structure:
 
-```
+```text
 .
 └── foo
     └── bar
