@@ -86,7 +86,7 @@
     "webpack": "^4.47.0"
   },
   "resolutions": {
-    "chokidar": "4.0.3",
+    "chokidar": "3.6.0",
     "sass-loader": "^10.5.2",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16",
