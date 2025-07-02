@@ -4969,7 +4969,7 @@
     ts-dedent "^2.0.0"
     type-fest "~2.19"
 
-"@studiometa/stylelint-formatter-gitlab@^1.0.2":
+"@studiometa/stylelint-formatter-gitlab@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@studiometa/stylelint-formatter-gitlab/-/stylelint-formatter-gitlab-1.0.2.tgz#24017fde4426e17f04f5a49496c778c25fb65400"
   integrity sha512-QiFMouLNgRnQp6gF9iwPWrXdrQ6m7Sv7cJOAVOK+ugczVH0zICxEO+NohJvqKRTUg7+uEi0g4eUb64RG95ARCA==

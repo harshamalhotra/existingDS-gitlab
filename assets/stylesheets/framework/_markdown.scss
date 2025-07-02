@@ -50,6 +50,6 @@
     @apply gl-pl-5;
     @apply gl-border-l-2;
     @apply gl-border-l-solid;
-    @apply gl-border-purple-500;
+    @apply gl-border-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
   }
 }

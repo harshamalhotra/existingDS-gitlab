@@ -6,7 +6,7 @@ GitLab Sans variable font.
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
-  font-named-instance: 'Regular'; /* stylelint-disable property-no-unknown */
+  font-named-instance: 'Regular'; /* stylelint-disable-line property-no-unknown */
   src: url('~@gitlab/fonts/gitlab-sans/GitLabSans.woff2') format('woff2');
 }
 
@@ -15,7 +15,7 @@ GitLab Sans variable font.
   font-weight: 100 900;
   font-display: swap;
   font-style: italic;
-  font-named-instance: 'Regular'; /* stylelint-disable property-no-unknown */
+  font-named-instance: 'Regular'; /* stylelint-disable-line property-no-unknown */
   src: url('~@gitlab/fonts/gitlab-sans/GitLabSans-Italic.woff2') format('woff2');
 }
 

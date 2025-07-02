@@ -20,6 +20,9 @@ pre-commit:
         - '**/node_modules/**'
         - '**/CHANGELOG*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
+    stylelint:
+      glob: '**/*.{scss}'
+      run: ./node_modules/.bin/stylelint {staged_files}
     generate_translations:
       files: git diff --name-only --staged
       glob: 'packages/gitlab-ui/**/*.{js,vue}'
@@ -35,10 +38,6 @@ pre-push:
     yarn-deduplicate:
       glob: 'yarn.lock'
       run: yarn yarn-deduplicate --strategy fewer --list --fail
-    stylelint:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: 'packages/gitlab-ui/**/*.{scss}'
-      run: ./node_modules/.bin/stylelint {files}
 
 # This is a non git-hook-target which we use in CI
 # in order to parallelize linting / spec execution
@@ -51,6 +50,8 @@ test-in-ci:
       run: yarn run lint:markdownlint
     prettier:
       run: yarn run lint:prettier
+    stylelint:
+      run: yarn run lint:stylelint --custom-formatter=@studiometa/stylelint-formatter-gitlab
     unit_tests:
       run: yarn run test:unit
     yarn-deduplicate:

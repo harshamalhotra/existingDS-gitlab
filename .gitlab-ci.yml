@@ -131,11 +131,15 @@ lint_and_test:
   needs: []
   variables:
     ESLINT_CODE_QUALITY_REPORT: gl-code-quality-report-eslint.json
+    STYLELINT_CODE_QUALITY_REPORT: gl-code-quality-report-stylelint.json
   script:
-    - yarn test
+    - apk add --no-cache jq
+    - yarn test || exit_code=$?
+    - jq --slurp flatten "$ESLINT_CODE_QUALITY_REPORT" "$STYLELINT_CODE_QUALITY_REPORT" > gl-code-quality-report.json
+    - exit $exit_code
   artifacts:
     reports:
-      codequality: gl-code-quality-report-eslint.json
+      codequality: gl-code-quality-report.json
 
 .pages:
   extends:

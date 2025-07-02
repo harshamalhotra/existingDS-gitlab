@@ -52,7 +52,7 @@
 
     &::before {
       content: '';
-      @apply gl-bg-purple-500;
+      @apply gl-bg-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
       @apply gl-rounded-base;
       @apply gl-block;
       @apply gl-absolute;

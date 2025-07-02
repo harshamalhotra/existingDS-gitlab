@@ -1,0 +1,3 @@
+packages/gitlab-ui/dist/
+packages/gitlab-ui/src/vendor/
+packages/gitlab-ui/src/tokens/build/
