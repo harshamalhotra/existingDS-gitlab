@@ -20,6 +20,12 @@ pre-commit:
         - '**/node_modules/**'
         - '**/CHANGELOG*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
+pre-push:
+  parallel: true
+  commands:
+    yarn-deduplicate:
+      glob: 'yarn.lock'
+      run: yarn yarn-deduplicate --strategy fewer --list --fail
 
 # This is a non git-hook-target which we use in CI
 # in order to parallelize linting / spec execution
@@ -34,3 +40,5 @@ test-in-ci:
       run: yarn run lint:prettier
     unit_tests:
       run: yarn run test:unit
+    yarn-deduplicate:
+      run: yarn yarn-deduplicate --strategy fewer --list --fail
