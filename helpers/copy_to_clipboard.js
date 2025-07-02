@@ -1,5 +1,4 @@
-/* eslint-disable-next-line import/no-default-export */
-export default (text) => {
+export const copyToClipboard = (text) => {
   const textArea = document.createElement('textarea');
   textArea.value = text;
   textArea.style.position = 'fixed';

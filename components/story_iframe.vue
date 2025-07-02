@@ -87,8 +87,8 @@ export default {
       Loading story...
     </div>
     <iframe
-      v-skip-one-trust
       ref="iframe"
+      v-skip-one-trust
       :src="url"
       :class="iFrameClass"
       class="responsive-iframe gl-min-w-full gl-border-none"

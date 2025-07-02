@@ -143,8 +143,13 @@ lint_and_test:
     - .node-job
   stage: test
   needs: []
+  variables:
+    ESLINT_CODE_QUALITY_REPORT: gl-code-quality-report-eslint.json
   script:
     - yarn test
+  artifacts:
+    reports:
+      codequality: gl-code-quality-report-eslint.json
 
 .pages:
   extends:

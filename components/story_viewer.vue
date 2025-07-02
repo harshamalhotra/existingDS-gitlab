@@ -1,5 +1,5 @@
 <script>
-import { camelCase } from 'lodash';
+import camelCase from 'lodash/camelCase';
 import { GlCard, GlIcon, GlLink } from '../helpers/gitlab_ui';
 import StoryIframe from './story_iframe.vue';
 

@@ -19,7 +19,7 @@ test-in-ci:
   parallel: true
   commands:
     eslint:
-      run: yarn run eslint
+      run: yarn run lint:eslint --format gitlab
     markdownlint:
       run: yarn run markdown-lint
     prettier:

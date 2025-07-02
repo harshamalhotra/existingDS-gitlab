@@ -1,6 +1,6 @@
 <script>
 import { GlButton, GlCard } from '../../helpers/gitlab_ui';
-import copyToClipboard from '../../helpers/copy_to_clipboard';
+import { copyToClipboard } from '../../helpers/copy_to_clipboard';
 import { bytesToKiloBytes } from '../../helpers/unit_utils';
 
 export default {

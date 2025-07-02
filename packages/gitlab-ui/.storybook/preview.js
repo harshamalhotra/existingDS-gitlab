@@ -110,5 +110,4 @@ if (process.env.IS_VISUAL_TEST) {
   parameters.docs = { page };
 }
 
-// eslint-disable-next-line import/no-default-export
 export default { decorators, parameters };
