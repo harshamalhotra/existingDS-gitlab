@@ -7,6 +7,9 @@
           "dark": "#133a03"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -17,6 +20,9 @@
           "dark": "#1a4500"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -27,6 +33,9 @@
           "dark": "#275600"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -37,6 +46,9 @@
           "dark": "#366800"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -47,6 +59,9 @@
           "dark": "#4e7f0e"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -57,6 +72,9 @@
           "dark": "#619025"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -67,6 +85,9 @@
           "dark": "#81ac41"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -77,6 +98,9 @@
           "dark": "#94c25e"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -87,6 +111,9 @@
           "dark": "#b0d97b"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -97,6 +124,9 @@
           "dark": "#c6ed94"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -107,6 +137,9 @@
           "dark": "#ddfab7"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -119,6 +152,9 @@
           "dark": "#00344b"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -129,6 +165,9 @@
           "dark": "#004059"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -139,6 +178,9 @@
           "dark": "#00516c"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -149,6 +191,9 @@
           "dark": "#006381"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -159,6 +204,9 @@
           "dark": "#007b9b"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -169,6 +217,9 @@
           "dark": "#0090b1"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -179,6 +230,9 @@
           "dark": "#00acc4"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -189,6 +243,9 @@
           "dark": "#32c5d2"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -199,6 +256,9 @@
           "dark": "#5edee3"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -209,6 +269,9 @@
           "dark": "#93f2ef"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -219,6 +282,9 @@
           "dark": "#b5fefd"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -231,6 +297,9 @@
           "dark": "#2a2b59"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -241,6 +310,9 @@
           "dark": "#303470"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -251,6 +323,9 @@
           "dark": "#374291"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -261,6 +336,9 @@
           "dark": "#3f51ae"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -271,6 +349,9 @@
           "dark": "#4e65cd"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -281,6 +362,9 @@
           "dark": "#617ae2"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -291,6 +375,9 @@
           "dark": "#7992f5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -301,6 +388,9 @@
           "dark": "#97acff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -311,6 +401,9 @@
           "dark": "#b7c6ff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -321,6 +414,9 @@
           "dark": "#d2dcff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -331,6 +427,9 @@
           "dark": "#e9ebff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -343,6 +442,9 @@
           "dark": "#541d31"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -353,6 +455,9 @@
           "dark": "#661e3a"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -363,6 +468,9 @@
           "dark": "#7c214f"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -373,6 +481,9 @@
           "dark": "#9a2e5d"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -383,6 +494,9 @@
           "dark": "#b93d71"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -393,6 +507,9 @@
           "dark": "#cf4d81"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -403,6 +520,9 @@
           "dark": "#e86e9a"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -413,6 +533,9 @@
           "dark": "#f88aaf"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -423,6 +546,9 @@
           "dark": "#fcacc5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -433,6 +559,9 @@
           "dark": "#ffccdb"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -443,6 +572,9 @@
           "dark": "#ffe3eb"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -455,6 +587,9 @@
           "dark": "#4b2707"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -465,6 +600,9 @@
           "dark": "#5e2f05"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -475,6 +613,9 @@
           "dark": "#6f3500"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -485,6 +626,9 @@
           "dark": "#92430a"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -495,6 +639,9 @@
           "dark": "#b14f18"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -505,6 +652,9 @@
           "dark": "#c95d2e"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -515,6 +665,9 @@
           "dark": "#e07e41"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -525,6 +678,9 @@
           "dark": "#e99b60"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -535,6 +691,9 @@
           "dark": "#eebd8c"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -545,6 +704,9 @@
           "dark": "#f5d6b3"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -555,6 +717,9 @@
           "dark": "#fae8d1"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -572,6 +737,9 @@
           "dark": "#14143d"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -582,6 +750,9 @@
           "dark": "#222261"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -592,6 +763,9 @@
           "dark": "#303083"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -602,6 +776,9 @@
           "dark": "#41419f"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -612,6 +789,9 @@
           "dark": "#5252b5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -622,6 +802,9 @@
           "dark": "#6666c4"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -632,6 +815,9 @@
           "dark": "#8181d7"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -642,6 +828,9 @@
           "dark": "#a2a2e6"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -652,6 +841,9 @@
           "dark": "#c7c7f2"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -662,6 +854,9 @@
           "dark": "#dbdbf8"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -672,6 +867,9 @@
           "dark": "#f1f1ff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -682,6 +880,9 @@
           "dark": "#f8f8ff"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -694,6 +895,9 @@
           "dark": "#04101c"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -704,6 +908,9 @@
           "dark": "#0b2640"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -714,6 +921,9 @@
           "dark": "#153c63"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -724,6 +934,9 @@
           "dark": "#235180"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -734,6 +947,9 @@
           "dark": "#346596"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -744,6 +960,9 @@
           "dark": "#4977a5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -754,6 +973,9 @@
           "dark": "#628eb9"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -764,6 +986,9 @@
           "dark": "#81a5c9"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -774,6 +999,9 @@
           "dark": "#a6bdd5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -784,6 +1012,9 @@
           "dark": "#b9cadc"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -794,6 +1025,9 @@
           "dark": "#cdd8e3"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -804,6 +1038,9 @@
           "dark": "#e6ecf0"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -816,6 +1053,9 @@
           "dark": "#0a3764"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -826,6 +1066,9 @@
           "dark": "#0c4277"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -836,6 +1079,9 @@
           "dark": "#0e4d8d"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -846,6 +1092,9 @@
           "dark": "#145aa1"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -856,6 +1105,9 @@
           "dark": "#2268ae"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -866,6 +1118,9 @@
           "dark": "#3476b9"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -876,6 +1131,9 @@
           "dark": "#4f8bc7"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -886,6 +1144,9 @@
           "dark": "#74a3d3"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -896,6 +1157,9 @@
           "dark": "#a0bedc"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -906,6 +1170,9 @@
           "dark": "#c1d4e6"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -916,6 +1183,9 @@
           "dark": "#dde6ee"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -926,6 +1196,9 @@
           "dark": "#eef3f7"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -938,6 +1211,9 @@
           "dark": "#052e19"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -948,6 +1224,9 @@
           "dark": "#0e4328"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -958,6 +1237,9 @@
           "dark": "#155635"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -968,6 +1250,9 @@
           "dark": "#1b653f"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -978,6 +1263,9 @@
           "dark": "#25744c"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -988,6 +1276,9 @@
           "dark": "#308258"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -998,6 +1289,9 @@
           "dark": "#499767"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1008,6 +1302,9 @@
           "dark": "#69af7d"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1018,6 +1315,9 @@
           "dark": "#8cc497"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1028,6 +1328,9 @@
           "dark": "#b1d6b5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1038,6 +1341,9 @@
           "dark": "#dde9de"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1048,6 +1354,9 @@
           "dark": "#eef4ef"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1060,6 +1369,9 @@
           "dark": "#380700"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1070,6 +1382,9 @@
           "dark": "#580d02"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1080,6 +1395,9 @@
           "dark": "#761405"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1090,6 +1408,9 @@
           "dark": "#8f2110"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1100,6 +1421,9 @@
           "dark": "#a13322"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1110,6 +1434,9 @@
           "dark": "#ad4a3b"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1120,6 +1447,9 @@
           "dark": "#c66e60"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1130,6 +1460,9 @@
           "dark": "#d59086"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1140,6 +1473,9 @@
           "dark": "#e3bab5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1150,6 +1486,9 @@
           "dark": "#ecd3d0"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1160,6 +1499,9 @@
           "dark": "#f4e9e7"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1170,6 +1512,9 @@
           "dark": "#faf4f3"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1182,6 +1527,9 @@
           "dark": "#5c1105"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1192,6 +1540,9 @@
           "dark": "#751709"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1202,6 +1553,9 @@
           "dark": "#8b2212"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1212,6 +1566,9 @@
           "dark": "#a02e1c"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1222,6 +1579,9 @@
           "dark": "#b53a26"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1232,6 +1592,9 @@
           "dark": "#c24b38"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1242,6 +1605,9 @@
           "dark": "#d36250"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1252,6 +1618,9 @@
           "dark": "#e07f6f"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1262,6 +1631,9 @@
           "dark": "#ebada2"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1272,6 +1644,9 @@
           "dark": "#f6d9d5"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1282,6 +1657,9 @@
           "dark": "#faf2f1"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1292,6 +1670,9 @@
           "dark": "#fdf9f8"
         },
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "themeable": true,
         "prefix": false,
         "deprecated": true
@@ -1307,12 +1688,13 @@
       "dark": "#fff"
     },
     "$type": "color",
+    "$extensions": {
+      "com.figma.scope": [],
+      "com.gitlab.deprecated": true
+    },
     "themeable": true,
     "prefix": false,
-    "deprecated": true,
-    "$extensions": {
-      "com.gitlab.deprecated": true
-    }
+    "deprecated": true
   },
   "white": {
     "$value": {
@@ -1320,12 +1702,13 @@
       "dark": "#28272d"
     },
     "$type": "color",
+    "$extensions": {
+      "com.figma.scope": [],
+      "com.gitlab.deprecated": true
+    },
     "themeable": true,
     "prefix": false,
-    "deprecated": true,
-    "$extensions": {
-      "com.gitlab.deprecated": true
-    }
+    "deprecated": true
   },
   "blue": {
     "50": {
@@ -1334,6 +1717,9 @@
         "dark": "#033464"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1344,6 +1730,9 @@
         "dark": "#064787"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1354,6 +1743,9 @@
         "dark": "#0b5cad"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1364,6 +1756,9 @@
         "dark": "#1068bf"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1374,6 +1769,9 @@
         "dark": "#1f75cb"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1384,6 +1782,9 @@
         "dark": "#428fdc"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1394,6 +1795,9 @@
         "dark": "#63a6e9"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1404,6 +1808,9 @@
         "dark": "#9dc7f1"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1414,6 +1821,9 @@
         "dark": "#cbe2f9"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1424,6 +1834,9 @@
         "dark": "#e9f3fc"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1434,6 +1847,9 @@
         "dark": "#f2f9ff"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1449,6 +1865,9 @@
         "dark": "#18171d"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1459,6 +1878,9 @@
         "dark": "#28272d"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1469,6 +1891,9 @@
         "dark": "#3a383f"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1479,6 +1904,9 @@
         "dark": "#4c4b51"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1489,6 +1917,9 @@
         "dark": "#626168"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1499,6 +1930,9 @@
         "dark": "#737278"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1509,6 +1943,9 @@
         "dark": "#89888d"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1519,6 +1956,9 @@
         "dark": "#a4a3a8"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1529,6 +1969,9 @@
         "dark": "#bfbfc3"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1539,6 +1982,9 @@
         "dark": "#dcdcde"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1549,6 +1995,9 @@
         "dark": "#ececef"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1559,6 +2008,9 @@
         "dark": "#fbfafd"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1574,6 +2026,9 @@
         "dark": "#0a4020"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1584,6 +2039,9 @@
         "dark": "#0d532a"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1594,6 +2052,9 @@
         "dark": "#24663b"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1604,6 +2065,9 @@
         "dark": "#217645"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1614,6 +2078,9 @@
         "dark": "#108548"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1624,6 +2091,9 @@
         "dark": "#2da160"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1634,6 +2104,9 @@
         "dark": "#52b87a"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1644,6 +2117,9 @@
         "dark": "#91d4a8"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1654,6 +2130,9 @@
         "dark": "#c3e6cd"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1664,6 +2143,9 @@
         "dark": "#ecf4ee"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1674,6 +2156,9 @@
         "dark": "#f1fdf6"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1689,6 +2174,9 @@
         "dark": "#5c2900"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1699,6 +2187,9 @@
         "dark": "#703800"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1709,6 +2200,9 @@
         "dark": "#8f4700"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1719,6 +2213,9 @@
         "dark": "#9e5400"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1729,6 +2226,9 @@
         "dark": "#ab6100"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1739,6 +2239,9 @@
         "dark": "#c17d10"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1749,6 +2252,9 @@
         "dark": "#d99530"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1759,6 +2265,9 @@
         "dark": "#e9be74"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1769,6 +2278,9 @@
         "dark": "#f5d9a8"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1779,6 +2291,9 @@
         "dark": "#fdf1dd"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1789,6 +2304,9 @@
         "dark": "#fff4e1"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1804,6 +2322,9 @@
         "dark": "#232150"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1814,6 +2335,9 @@
         "dark": "#2f2a6b"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1824,6 +2348,9 @@
         "dark": "#453894"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1834,6 +2361,9 @@
         "dark": "#5943b6"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1844,6 +2374,9 @@
         "dark": "#694cc0"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1854,6 +2387,9 @@
         "dark": "#7b58cf"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1864,6 +2400,9 @@
         "dark": "#9475db"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1874,6 +2413,9 @@
         "dark": "#ac93e6"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1884,6 +2426,9 @@
         "dark": "#cbbbf2"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1894,6 +2439,9 @@
         "dark": "#e1d8f9"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1904,6 +2452,9 @@
         "dark": "#f4f0ff"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1919,6 +2470,9 @@
         "dark": "#660e00"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1929,6 +2483,9 @@
         "dark": "#8d1300"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1939,6 +2496,9 @@
         "dark": "#ae1800"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1949,6 +2509,9 @@
         "dark": "#c91c00"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1959,6 +2522,9 @@
         "dark": "#dd2b0e"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1969,6 +2535,9 @@
         "dark": "#ec5941"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1979,6 +2548,9 @@
         "dark": "#f57f6c"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1989,6 +2561,9 @@
         "dark": "#fcb5aa"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -1999,6 +2574,9 @@
         "dark": "#fdd4cd"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -2009,6 +2587,9 @@
         "dark": "#fcf1ef"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -2019,6 +2600,9 @@
         "dark": "#fff4f3"
       },
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "themeable": true,
       "prefix": false,
       "deprecated": true
@@ -2031,6 +2615,9 @@
     "charcoal": {
       "$value": "#171321",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.brand-charcoal instead.",
       "themeable": true,
       "prefix": false,
@@ -2040,6 +2627,9 @@
       "01": {
         "$value": "#fca326",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-orange.01p instead.",
         "themeable": true,
         "prefix": false,
@@ -2048,6 +2638,9 @@
       "02": {
         "$value": "#fc6d26",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-orange.02p instead.",
         "themeable": true,
         "prefix": false,
@@ -2056,6 +2649,9 @@
       "03": {
         "$value": "#e24329",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-orange.03p instead.",
         "themeable": true,
         "prefix": false,
@@ -2066,6 +2662,9 @@
       "01": {
         "$value": "#a989f5",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.purple.01p instead.",
         "themeable": true,
         "prefix": false,
@@ -2074,6 +2673,9 @@
       "02": {
         "$value": "#7759c2",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.purple.02p instead.",
         "themeable": true,
         "prefix": false,
@@ -2084,6 +2686,9 @@
       "01": {
         "$value": "#d1d0d3",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-gray.01 instead.",
         "themeable": true,
         "prefix": false,
@@ -2092,6 +2697,9 @@
       "02": {
         "$value": "#a2a1a6",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-gray.02 instead.",
         "themeable": true,
         "prefix": false,
@@ -2100,6 +2708,9 @@
       "03": {
         "$value": "#74717a",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-gray.03 instead.",
         "themeable": true,
         "prefix": false,
@@ -2108,6 +2719,9 @@
       "04": {
         "$value": "#45424d",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-gray.04 instead.",
         "themeable": true,
         "prefix": false,
@@ -2116,6 +2730,9 @@
       "05": {
         "$value": "#2b2838",
         "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        },
         "$description": "Use color.brand-gray.05 instead.",
         "themeable": true,
         "prefix": false,
@@ -2130,6 +2747,9 @@
     "16": {
       "$value": "rgba(05, 05, 06, 0.16)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.16 instead.",
       "themeable": true,
       "prefix": false,
@@ -2138,6 +2758,9 @@
     "24": {
       "$value": "rgba(05, 05, 06, 0.24)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.24 instead.",
       "themeable": true,
       "prefix": false,
@@ -2146,6 +2769,9 @@
     "02": {
       "$value": "rgba(05, 05, 06, 0.02)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.2 instead.",
       "themeable": true,
       "prefix": false,
@@ -2154,6 +2780,9 @@
     "04": {
       "$value": "rgba(05, 05, 06, 0.04)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.4 instead.",
       "themeable": true,
       "prefix": false,
@@ -2162,6 +2791,9 @@
     "06": {
       "$value": "rgba(05, 05, 06, 0.06)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.6 instead.",
       "themeable": true,
       "prefix": false,
@@ -2170,6 +2802,9 @@
     "08": {
       "$value": "rgba(05, 05, 06, 0.08)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.dark.8 instead.",
       "themeable": true,
       "prefix": false,
@@ -2183,6 +2818,9 @@
     "16": {
       "$value": "rgba(255, 255, 255, 0.16)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.16 instead.",
       "themeable": true,
       "prefix": false,
@@ -2191,6 +2829,9 @@
     "24": {
       "$value": "rgba(255, 255, 255, 0.24)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.24 instead.",
       "themeable": true,
       "prefix": false,
@@ -2199,6 +2840,9 @@
     "36": {
       "$value": "rgba(255, 255, 255, 0.36)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.36 instead.",
       "themeable": true,
       "prefix": false,
@@ -2207,6 +2851,9 @@
     "02": {
       "$value": "rgba(255, 255, 255, 0.02)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.2 instead.",
       "themeable": true,
       "prefix": false,
@@ -2215,6 +2862,9 @@
     "04": {
       "$value": "rgba(255, 255, 255, 0.04)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.4 instead.",
       "themeable": true,
       "prefix": false,
@@ -2223,6 +2873,9 @@
     "06": {
       "$value": "rgba(255, 255, 255, 0.06)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.6 instead.",
       "themeable": true,
       "prefix": false,
@@ -2231,6 +2884,9 @@
     "08": {
       "$value": "rgba(255, 255, 255, 0.08)",
       "$type": "color",
+      "$extensions": {
+        "com.figma.scope": []
+      },
       "$description": "Use color.alpha.light.8 instead.",
       "themeable": true,
       "prefix": false,
