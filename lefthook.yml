@@ -31,12 +31,8 @@ pre-commit:
       files: git diff --name-only --staged
       glob: 'packages/gitlab-ui/**/*.tokens.json'
       run: cd packages/gitlab-ui && make tokens && git add ./src/tokens/build
-
-pre-push:
-  parallel: true
-  commands:
     yarn-deduplicate:
-      glob: 'yarn.lock'
+      glob: '{yarn.lock,packages/*/package.json}'
       run: yarn yarn-deduplicate --strategy fewer --list --fail
 
 # This is a non git-hook-target which we use in CI
