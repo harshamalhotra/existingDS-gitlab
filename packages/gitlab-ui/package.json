@@ -72,7 +72,7 @@
     "tailwind-config-viewer:export": "tailwind-config-viewer export ./tailwind-config-viewer-static"
   },
   "dependencies": {
-    "@floating-ui/dom": "1.7.1",
+    "@floating-ui/dom": "1.7.2",
     "echarts": "^5.6.0",
     "gridstack": "^12.2.1",
     "iframe-resizer": "^4.4.5",
