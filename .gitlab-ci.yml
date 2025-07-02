@@ -114,20 +114,6 @@ gitlab-advanced-sast:
         - node_modules/
       policy: $CACHE_POLICY
 
-yarn_deduplicate:
-  extends: [.build_cache, .node-job]
-  stage: test
-  needs: []
-  script:
-    - yarn yarn-deduplicate --strategy fewer --list --fail
-  rules:
-    - changes:
-        - packages/*/package.json
-        - .gitlab-ci.yml
-        - package.json
-        - yarn.lock
-      when: always
-
 check_links:
   extends:
     - .node-job

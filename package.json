@@ -87,7 +87,8 @@
     "start-server-and-test": "^2.0.12",
     "unist-util-visit": "^5.0.0",
     "vue-template-compiler": "2.7.16",
-    "webpack": "^4.47.0"
+    "webpack": "^4.47.0",
+    "yarn-deduplicate": "^6.0.2"
   },
   "resolutions": {
     "chokidar": "4.0.3",
