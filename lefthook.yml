@@ -21,11 +21,19 @@ pre-commit:
         - '**/CHANGELOG*.md'
         - '.changeset/*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
-pre-push:
-  parallel: true
-  commands:
+    stylelint:
+      glob: '**/*.{scss}'
+      run: ./node_modules/.bin/stylelint {staged_files}
+    generate_translations:
+      files: git diff --name-only --staged
+      glob: 'packages/gitlab-ui/**/*.{js,vue}'
+      run: cd packages/gitlab-ui && yarn translations:collect && git add ./translations.js
+    build_tokens:
+      files: git diff --name-only --staged
+      glob: 'packages/gitlab-ui/**/*.tokens.json'
+      run: cd packages/gitlab-ui && make tokens && git add ./src/tokens/build
     yarn-deduplicate:
-      glob: 'yarn.lock'
+      glob: '{yarn.lock,packages/*/package.json}'
       run: yarn yarn-deduplicate --strategy fewer --list --fail
 
 # This is a non git-hook-target which we use in CI
@@ -39,6 +47,8 @@ test-in-ci:
       run: yarn run lint:markdownlint
     prettier:
       run: yarn run lint:prettier
+    stylelint:
+      run: yarn run lint:stylelint --custom-formatter=@studiometa/stylelint-formatter-gitlab
     unit_tests:
       run: yarn run test:unit
     yarn-deduplicate:

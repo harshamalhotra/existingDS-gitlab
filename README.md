@@ -97,6 +97,27 @@ We control code quality with automatic linting tools like `eslint`, `prettier` a
 
 If you change something in the code, you can run `yarn test` to see if your changes are up-to-code. A lot of failures are auto-fixable, so simply run `yarn run lint:fix` to fix errors automatically.
 
+#### Lefthook
+
+You can use [lefthook](https://www.npmjs.com/package/lefthook) to setup Git hooks so that changed files are linted upon
+committing changes. To install `lefthook`, run the following command:
+
+```sh
+yarn lefthook install
+```
+
+It is recommended to use `lefthook` as it might help you catch formatting issues before they make it
+to the remote and trigger a timely and costly pipeline that is guaranteed to fail.
+
+##### Bypassing lefthook
+
+If you'd like to bypass the verification step when committing, you can do so by setting the
+`LEFTHOOK` variable to `0` when running the `git` command. For example:
+
+```sh
+LEFTHOOK=0 git commit -m "Implement GlFoo component"
+```
+
 ### Reviewing
 
 Each merge request for this repository will generate a [review app](https://docs.gitlab.com/ee/ci/review_apps/). Review apps create a new environment (dynamically) for each one of your branches. A Review App is then visible as a link when you visit the merge request relevant to the branch. That way, you are able to see live all changes introduced by the merge request changes.
