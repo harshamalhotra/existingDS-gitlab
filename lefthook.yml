@@ -19,6 +19,7 @@ pre-commit:
         - 'pages/components/template.md'
         - '**/node_modules/**'
         - '**/CHANGELOG*.md'
+        - '.changeset/*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
 pre-push:
   parallel: true
