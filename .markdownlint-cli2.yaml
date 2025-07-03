@@ -8,6 +8,7 @@ globs:
   - '!pages/components/template.md'
   - '!**/node_modules/**'
   - '!**/CHANGELOG*.md'
+  - '!.changeset/*.md'
 config:
   default: true
   line-length: false
