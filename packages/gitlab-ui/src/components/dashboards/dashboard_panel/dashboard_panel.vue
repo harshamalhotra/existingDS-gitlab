@@ -26,6 +26,11 @@ export default {
       required: false,
       default: '',
     },
+    bodyContentClass: {
+      type: String,
+      required: false,
+      default: '',
+    },
     borderColorClass: {
       type: String,
       required: false,
@@ -94,6 +99,11 @@ export default {
     },
     containerClasses() {
       return `${this.containerClass} ${this.borderClass}`;
+    },
+    bodyClasses() {
+      return this.loading
+        ? 'gl-flex gl-flex-wrap gl-content-center gl-text-center'
+        : `gl-grow gl-overflow-y-auto gl-overflow-x-hidden ${this.bodyContentClass}`;
     },
     hasTitleIcon() {
       return Boolean(this.titleIcon);
@@ -188,10 +198,7 @@ export default {
           </template>
         </gl-disclosure-dropdown>
       </div>
-      <div
-        class="gl-grow gl-overflow-y-auto gl-overflow-x-hidden"
-        :class="{ 'gl-flex gl-flex-wrap gl-content-center gl-text-center': loading }"
-      >
+      <div :class="bodyClasses">
         <template v-if="loading">
           <gl-loading-icon size="lg" class="gl-min-h-8 gl-w-full" />
           <div
