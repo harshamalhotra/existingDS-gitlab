@@ -1,87 +1,70 @@
 ---
 name: Card
-description: A card displays a single group of content within a set of similar groups.
+description: A card is a flexible container that groups related content and actions in a consistent visual structure.
 components:
   - base-card
-related:
-  - table
 ---
 
 ## Examples
 
 <story-viewer component="base-card" title="Default card"></story-viewer>
 
-<todo>Provide additional card examples.</todo>
-
-<todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1446">Complete [design specs](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1427) after use case and requirements are finalized.</todo>
+[View in Pajamas UI Kit →](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=131231-5825&t=mR0m2eSiFjcFxri4-1&mode=design)
 
 ## Structure
 
-<todo>Add structure diagram based on design specs.</todo>
+<figure-img alt="Numbered diagram of a card structure" label="Card structure" src="/img/card-structure.svg"></figure-img>
 
-1. **Container**: Wraps the content.
-1. **Header** (optional): Contains the title.
-1. **Title** (optional): Conveys the purpose of the card.
-1. **Picture** (optional): Visual indication about the content of the card
-1. **Content**: Contains a wide variety of content types and controls depending on the purpose.
-1. **Actions** (optional): Buttons or links used to provide explicit action(s) the user can take related to the card content.
+1. **Container**: Wraps the card content.
+1. **Header** (optional): Contains the title and any supplementary elements or actions.
+1. **Body**: Contains the primary content of the card.
+1. **Footer** (optional): Includes supplemental content related to the card content.
 
 ## Guidelines
 
 ### When to use
 
-- Display a single, concise group of content within a set of similar, related groups. As a set, each card is meaningful on its own, but also in relationship and comparison to other cards.
+- Group related information that benefits from visual separation from other content on the page.
+- Help a user scan and compare similar content by displaying each as a separate card.
+- Present a self-contained unit of content with its own actions or interactions.
+- Create a repeatable visual structure for similar content throughout the interface.
 
 ### When not to use
 
-- A card shouldn't be used for the sole purpose of styling a single block of content. Use available [utility classes](https://unpkg.com/browse/@gitlab/ui/src/scss/utilities.scss) instead.
-- If you're only displaying static text or items that don't require comparison or additional grouping, consider using a semantic HTML list instead.
-- If you need to present or compare data, consider using a [table](/components/table) instead.
-- If you need to show a high level overview of a single data point, use a [single stat](/data-visualization/single-stat) component.
+- For a single block of content without logical grouping or a prescribed visual structure, use [design tokens](/product-foundations/design-tokens) or utility classes instead as ["unboxing the UI"](https://handbook.gitlab.com/handbook/product/ux/product-designer/#unboxing-the-ui) is the preferred approach.
+- For displaying a simple list of static text, use semantic HTML lists.
+- For a complex data comparison with multiple columns, use a [table](/components/table) instead.
+- For displaying an individual metric, use a [single stat](/data-visualization/single-stat) component.
+- For a complex form, use form components directly rather than nesting them in cards.
 
-### Variants
+### Appearance
 
-There are two different variants for the cards: vertical and horizontal.
-
-1. **Horizontal**: Horizontal cards work well on larger screens. They can be used in a maximum of 2 columns due to their larger width.
-1. **Vertical**: Vertical cards work well on smaller screens and increase readability. They can be used in a maximum of 3 colums due to their smaller width.
-
-### Behavior
-
-- Card width is fluid by default.
-- A card can be static or draggable when there is an option to reorder it within a set of other cards.
-  - When dragging a card, any adjacent cards should remain visible.
-  - For touch devices, there should be a longer hold on the card to avoid collision with the act of scrolling.
-  - When a card is currently being dragged, there should be an indication it's in a draggable state.
-- If a card contains an action, a button or link inside the card should trigger the action, not the entire card.
+A card uses [section design tokens](/product-foundations/design-tokens-using#sections) by default to visually identify it as a contained content region.
 
 ### Content
 
-- All copy within a card should be short, actionable, and use clear language.
-- A card should utilize the [skeleton loader](/components/skeleton-loader/) pattern when possible to represent loading content within.
+- Use the [skeleton loader](/components/skeleton-loader/) pattern when possible for loading content within a card.
+- Follow button [alignment](/components/button#alignment) and [order](/components/button#order) guidelines when including actions.
 
-#### Title
+#### Header
 
-- Be brief and keep it to a single line by utilizing a sentence fragment.
-- Avoid using punctuation such as periods, commas, or semicolons.
-- Use a full stop only when it's a full sentence.
+- Provides context for the card content and helps users quickly understand the card's purpose.
+- Keep headers concise and consistent across similar cards to improve scannability.
+- Include a title, supplementary information (metadata, badges, icons), or contextual actions as needed.
+- Use appropriate heading levels that respect the document's semantic structure.
 
 #### Body content
 
-- Since a card can be used for many purposes, body content can be just about anything from an image to meta information and plain text.
-- Body content for each card within a set should follow a similar pattern and structure so that the cards are scannable and consistent.
+- Contains the primary content and serves as the focal point of the card.
+- Accommodates various content types: from images and meta information, to data and plain text.
+- Maintain similar patterns and structure for body content across cards within a set to improve scannability and consistency.
 
-#### Image
+#### Footer
 
-- For horizontal layout, the image should be top/left-aligned with the content container.
-- For vertical layout, the image should be center-aligned with the content container.
-
-#### Button
-
-- Buttons are left aligned, except in right-to-left languages where they are right aligned and should follow the [alignment and order guidelines for buttons](https://design.gitlab.com/components/button#alignment).
-- Contains the primary and secondary action (if applicable) for a card.
-- Located below the content.
+- Provides a consistent location for supplementary elements related to the card content.
 
 ### Accessibility
 
-<todo>Add accessibility guidelines.</todo>
+- A card is visually a styled container with no particular semantic meaning as a landmark region.
+- Use an appropriate heading level for a card title that aligns with the page hierarchy.
+- When displaying a collection of related cards, structure them as a parent `<ul>` with `<li>` elements that each contain a single card.
