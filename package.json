@@ -13,8 +13,8 @@
   },
   "scripts": {
     "postinstall": "patch-package --error-on-fail --error-on-warn",
-    "start": "HOST=0.0.0.0 PORT=${PORT:=2018} nuxt",
-    "start:docs-local-gitlab-ui": "HOST=0.0.0.0 PORT=${PORT:=2018} GITLAB_UI_URL=http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001} nuxt",
+    "start": "HOST=${HOST:=localhost} PORT=${PORT:=2018} nuxt",
+    "start:docs-local-gitlab-ui": "HOST=${HOST:=localhost} PORT=${PORT:=2018} GITLAB_UI_URL=http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001} nuxt",
     "start:gitlab-ui": "cd packages/gitlab-ui && yarn && yarn storybook",
     "start:full": "concurrently 'yarn start:docs-local-gitlab-ui' 'yarn start:gitlab-ui'",
     "buildsingle": "nuxt build",
@@ -91,7 +91,7 @@
     "yarn-deduplicate": "^6.0.2"
   },
   "resolutions": {
-    "chokidar": "4.0.3",
+    "chokidar": "3.6.0",
     "sass-loader": "^10.5.2",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16",
