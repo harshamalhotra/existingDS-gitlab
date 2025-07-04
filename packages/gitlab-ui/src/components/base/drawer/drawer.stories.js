@@ -11,7 +11,7 @@ const generateStaticContent = (number = 1) =>
   Array.from(
     Array(number),
     (_, index) => `
-      <div class="gl-mb-8">
+      <div tabindex="0" class="gl-mb-8">
         <h4 class="gl-mb-4">View jobs in a pipeline ${index}</h4>
         <p>
           Pipeline configuration begins with jobs. Jobs are the most fundamental element of a .gitlab-ci.yml file.
@@ -36,7 +36,8 @@ const generateDrawerContent = (items) =>
   items
     .map(
       (str) => `
-    <div>
+    <div tabindex="0">
+      <!-- tabindex avoid false positive 'scrollable-region-focusable' violation -->
       <strong class="gl-inline-block gl-mb-2">${str}</strong>
       <div>Content…</div>
     </div>
