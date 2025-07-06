@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.1.0
+
+### Minor Changes
+
+- 4d89ab9: Add Figma extension properties to design tokens
+
 ## 115.0.1
 
 ### Patch Changes
