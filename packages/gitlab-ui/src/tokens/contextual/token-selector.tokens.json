@@ -10,7 +10,13 @@
                 "dark": "{color.neutral.600}"
               },
               "$type": "color",
-              "$description": "Used for the background color of a token in a token-selector when it's token-container is in the focus state."
+              "$description": "Used for the background color of a token in a token-selector when it's token-container is in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         }

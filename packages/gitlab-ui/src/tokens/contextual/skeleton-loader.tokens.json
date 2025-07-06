@@ -7,7 +7,12 @@
           "dark": "{color.neutral.800}"
         },
         "$type": "color",
-        "$description": "Used for the skeleton loader background color."
+        "$description": "Used for the skeleton loader background color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL"
+          ]
+        }
       }
     },
     "shimmer": {
@@ -17,7 +22,12 @@
           "dark": "{color.neutral.700}"
         },
         "$type": "color",
-        "$description": "Used for the animated shimmer effect in a skeleton loader."
+        "$description": "Used for the animated shimmer effect in a skeleton loader.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL"
+          ]
+        }
       }
     }
   }

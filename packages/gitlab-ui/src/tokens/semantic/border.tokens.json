@@ -7,7 +7,12 @@
           "dark": "{color.neutral.700}"
         },
         "$type": "color",
-        "$description": "Used for the default border color."
+        "$description": "Used for the default border color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
       },
       "subtle": {
         "$value": {
@@ -15,7 +20,12 @@
           "dark": "{color.neutral.800}"
         },
         "$type": "color",
-        "$description": "Used for a subtle border in combination with the default background."
+        "$description": "Used for a subtle border in combination with the default background.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
       },
       "strong": {
         "$value": {
@@ -23,7 +33,12 @@
           "dark": "{color.neutral.600}"
         },
         "$type": "color",
-        "$description": "Used for a distinct border that emphasizes an edge or boundaries."
+        "$description": "Used for a distinct border that emphasizes an edge or boundaries.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
       },
       "section": {
         "$value": {
@@ -31,12 +46,22 @@
           "dark": "{background.color.default}"
         },
         "$type": "color",
-        "$description": "Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page."
+        "$description": "Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
       },
       "transparent": {
         "$value": "{color.alpha.0}",
         "$type": "color",
-        "$description": "Used when a border needs to be present, but not visibly perceived."
+        "$description": "Used when a border needs to be present, but not visibly perceived.",
+        "$extensions": {
+          "com.figma.scope": [
+            "ALL_SCOPES"
+          ]
+        }
       }
     }
   }

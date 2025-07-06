@@ -5,28 +5,50 @@
         "color": {
           "$value": "{color.neutral.800}",
           "$type": "color",
-          "$description": "Used for a background associated with strong feedback like a tooltip or toast message."
+          "$description": "Used for a background associated with strong feedback like a tooltip or toast message.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
         "color": {
           "$value": "{color.neutral.0}",
           "$type": "color",
-          "$description": "Used for text on a strong feedback background."
+          "$description": "Used for text on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
         "color": {
           "$value": "{color.neutral.0}",
           "$type": "color",
-          "$description": "Used for an icon on a strong feedback background."
+          "$description": "Used for an icon on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "link": {
         "color": {
           "$value": "{color.blue.300}",
           "$type": "color",
-          "$description": "Used for a link on a strong feedback background."
+          "$description": "Used for a link on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -38,7 +60,13 @@
             "dark": "{color.neutral.900}"
           },
           "$type": "color",
-          "$description": "Used for the background of a neutral feedback item when there isn't a specific meaning or urgency."
+          "$description": "Used for the background of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -48,7 +76,12 @@
             "dark": "{color.neutral.200}"
           },
           "$type": "color",
-          "$description": "Used for the text of a neutral feedback item when there isn't a specific meaning or urgency."
+          "$description": "Used for the text of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
@@ -58,7 +91,13 @@
             "dark": "{color.neutral.300}"
           },
           "$type": "color",
-          "$description": "Used for the icon of a neutral feedback item when there isn't a specific meaning or urgency."
+          "$description": "Used for the icon of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -70,7 +109,13 @@
             "dark": "{color.blue.950}"
           },
           "$type": "color",
-          "$description": "Used for the background of an informational feedback item when highlighting new information or a change that doesn't require immediate action."
+          "$description": "Used for the background of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -80,7 +125,12 @@
             "dark": "{color.blue.200}"
           },
           "$type": "color",
-          "$description": "Used for the text of an informational feedback item when highlighting new information or a change that doesn't require immediate action."
+          "$description": "Used for the text of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
@@ -90,7 +140,13 @@
             "dark": "{color.blue.300}"
           },
           "$type": "color",
-          "$description": "Used for the icon of an informational feedback item when highlighting new information or a change that doesn't require immediate action."
+          "$description": "Used for the icon of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -102,7 +158,13 @@
             "dark": "{color.green.900}"
           },
           "$type": "color",
-          "$description": "Used for the background of a success feedback item when confirming the successful completion of a user-initiated action."
+          "$description": "Used for the background of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -112,7 +174,12 @@
             "dark": "{color.green.200}"
           },
           "$type": "color",
-          "$description": "Used for the text of a success feedback item when confirming the successful completion of a user-initiated action."
+          "$description": "Used for the text of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
@@ -122,7 +189,13 @@
             "dark": "{color.green.300}"
           },
           "$type": "color",
-          "$description": "Used for the icon of a success feedback item when confirming the successful completion of a user-initiated action."
+          "$description": "Used for the icon of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -134,7 +207,13 @@
             "dark": "{color.orange.900}"
           },
           "$type": "color",
-          "$description": "Used for the background of a warning feedback item when notifying about a potential issue or sensitive information."
+          "$description": "Used for the background of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -144,7 +223,12 @@
             "dark": "{color.orange.200}"
           },
           "$type": "color",
-          "$description": "Used for the text of a warning feedback item when notifying about a potential issue or sensitive information."
+          "$description": "Used for the text of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
@@ -154,7 +238,13 @@
             "dark": "{color.orange.300}"
           },
           "$type": "color",
-          "$description": "Used for the icon of a warning feedback item when notifying about a potential issue or sensitive information."
+          "$description": "Used for the icon of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     },
@@ -166,7 +256,13 @@
             "dark": "{color.red.900}"
           },
           "$type": "color",
-          "$description": "Used for the background of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention."
+          "$description": "Used for the background of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "text": {
@@ -176,7 +272,12 @@
             "dark": "{color.red.200}"
           },
           "$type": "color",
-          "$description": "Used for the text of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention."
+          "$description": "Used for the text of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "icon": {
@@ -186,7 +287,13 @@
             "dark": "{color.red.300}"
           },
           "$type": "color",
-          "$description": "Used for the icon of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention."
+          "$description": "Used for the icon of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     }

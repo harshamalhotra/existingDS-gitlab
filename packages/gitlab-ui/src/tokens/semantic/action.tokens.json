@@ -8,7 +8,13 @@
             "dark": "{color.neutral.500}"
           },
           "$type": "color",
-          "$description": "Used for the foreground of a disabled action."
+          "$description": "Used for the foreground of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -18,7 +24,13 @@
             "dark": "{color.neutral.900}"
           },
           "$type": "color",
-          "$description": "Used for the background of a disabled action."
+          "$description": "Used for the background of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -28,7 +40,12 @@
             "dark": "{color.neutral.800}"
           },
           "$type": "color",
-          "$description": "Used for the border of a disabled action."
+          "$description": "Used for the border of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
         }
       }
     },
@@ -41,22 +58,46 @@
               "dark": "{color.neutral.950}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a selected action in the default state."
+            "$description": "Used for the foreground of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.selected.foreground.color.default}",
             "$type": "color",
-            "$description": "Used for the foreground of a selected action in the hover state."
+            "$description": "Used for the foreground of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.selected.foreground.color.hover}",
             "$type": "color",
-            "$description": "Used for the foreground of a selected action in the focus state."
+            "$description": "Used for the foreground of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "active": {
             "$value": "{action.selected.foreground.color.focus}",
             "$type": "color",
-            "$description": "Used for the foreground of a selected action in the active state."
+            "$description": "Used for the foreground of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           }
         }
       },
@@ -68,7 +109,13 @@
               "dark": "{color.blue.300}"
             },
             "$type": "color",
-            "$description": "Used for the background of a selected action in the default state."
+            "$description": "Used for the background of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -76,12 +123,24 @@
               "dark": "{color.blue.200}"
             },
             "$type": "color",
-            "$description": "Used for the background of a selected action in the hover state."
+            "$description": "Used for the background of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.selected.background.color.hover}",
             "$type": "color",
-            "$description": "Used for the background of a selected action in the focus state."
+            "$description": "Used for the background of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -89,7 +148,13 @@
               "dark": "{color.blue.100}"
             },
             "$type": "color",
-            "$description": "Used for the background of a selected action in the active state."
+            "$description": "Used for the background of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       },
@@ -98,22 +163,42 @@
           "default": {
             "$value": "{action.selected.background.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a selected action in the default state."
+            "$description": "Used for the border of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.selected.background.color.hover}",
             "$type": "color",
-            "$description": "Used for the border of a selected action in the hover state."
+            "$description": "Used for the border of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.selected.background.color.focus}",
             "$type": "color",
-            "$description": "Used for the border of a selected action in the focus state."
+            "$description": "Used for the border of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "active": {
             "$value": "{action.selected.background.color.active}",
             "$type": "color",
-            "$description": "Used for the border of a selected action in the active state."
+            "$description": "Used for the border of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -127,22 +212,46 @@
               "dark": "{color.neutral.50}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a neutral action in the default state."
+            "$description": "Used for the foreground of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.neutral.foreground.color.default}",
             "$type": "color",
-            "$description": "Used for the foreground of a neutral action in the hover state."
+            "$description": "Used for the foreground of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.neutral.foreground.color.default}",
             "$type": "color",
-            "$description": "Used for the foreground of a neutral action in the focus state."
+            "$description": "Used for the foreground of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "active": {
             "$value": "{action.neutral.foreground.color.default}",
             "$type": "color",
-            "$description": "Used for the foreground of a neutral action in the active state."
+            "$description": "Used for the foreground of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           }
         }
       },
@@ -154,7 +263,13 @@
               "dark": "rgba(137, 136, 141, 0.0)"
             },
             "$type": "color",
-            "$description": "Used for the background of a neutral action in the default state."
+            "$description": "Used for the background of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -162,12 +277,24 @@
               "dark": "rgba(137, 136, 141, 0.4)"
             },
             "$type": "color",
-            "$description": "Used for the background of a neutral action in the hover state."
+            "$description": "Used for the background of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.neutral.background.color.hover}",
             "$type": "color",
-            "$description": "Used for the background of a neutral action in the focus state."
+            "$description": "Used for the background of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -175,7 +302,13 @@
               "dark": "rgba(137, 136, 141, 0.16)"
             },
             "$type": "color",
-            "$description": "Used for the background of a neutral action in the active state."
+            "$description": "Used for the background of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       },
@@ -184,22 +317,42 @@
           "default": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border of a neutral action in the default state."
+            "$description": "Used for the border of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.neutral.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a neutral action in the hover state."
+            "$description": "Used for the border of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.neutral.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a neutral action in the focus state."
+            "$description": "Used for the border of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "active": {
             "$value": "{action.neutral.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a neutral action in the active state."
+            "$description": "Used for the border of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -213,7 +366,13 @@
               "dark": "{color.blue.200}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a confirm (positive) action in the default state."
+            "$description": "Used for the foreground of a confirm (positive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -221,12 +380,24 @@
               "dark": "{color.blue.100}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a confirm (positive) action in the hover state."
+            "$description": "Used for the foreground of a confirm (positive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.confirm.foreground.color.hover}",
             "$type": "color",
-            "$description": "Used for the foreground of a confirm (positive) action in the focus state."
+            "$description": "Used for the foreground of a confirm (positive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -234,7 +405,13 @@
               "dark": "{color.blue.100}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a confirm (positive) action in the active state."
+            "$description": "Used for the foreground of a confirm (positive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           }
         }
       },
@@ -246,7 +423,13 @@
               "dark": "rgba(66, 143, 220, 0.0)"
             },
             "$type": "color",
-            "$description": "Used for the background of a confirm (positive) action in the default state."
+            "$description": "Used for the background of a confirm (positive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -254,12 +437,24 @@
               "dark": "rgba(66, 143, 220, 0.4)"
             },
             "$type": "color",
-            "$description": "Used for the background of a confirm (positive) action in the hover state."
+            "$description": "Used for the background of a confirm (positive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.confirm.background.color.hover}",
             "$type": "color",
-            "$description": "Used for the background of a confirm (positive) action in the focus state."
+            "$description": "Used for the background of a confirm (positive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -267,7 +462,13 @@
               "dark": "rgba(66, 143, 220, 0.16)"
             },
             "$type": "color",
-            "$description": "Used for the background of a confirm (positive) action in the active state."
+            "$description": "Used for the background of a confirm (positive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       },
@@ -276,22 +477,42 @@
           "default": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border of a confirm action in the default state."
+            "$description": "Used for the border of a confirm action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.confirm.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a confirm action in the hover state."
+            "$description": "Used for the border of a confirm action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.confirm.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a confirm action in the focus state."
+            "$description": "Used for the border of a confirm action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "active": {
             "$value": "{action.confirm.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a confirm action in the active state."
+            "$description": "Used for the border of a confirm action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -305,7 +526,13 @@
               "dark": "{color.red.200}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a danger (destructive) action in the default state."
+            "$description": "Used for the foreground of a danger (destructive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -313,12 +540,24 @@
               "dark": "{color.red.100}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a danger (destructive) action in the hover state."
+            "$description": "Used for the foreground of a danger (destructive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.danger.foreground.color.hover}",
             "$type": "color",
-            "$description": "Used for the foreground of a danger (destructive) action in the focus state."
+            "$description": "Used for the foreground of a danger (destructive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -326,7 +565,13 @@
               "dark": "{color.red.100}"
             },
             "$type": "color",
-            "$description": "Used for the foreground of a danger (destructive) action in the active state."
+            "$description": "Used for the foreground of a danger (destructive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
           }
         }
       },
@@ -338,7 +583,13 @@
               "dark": "rgba(236, 89, 65, 0.0)"
             },
             "$type": "color",
-            "$description": "Used for the background of a danger (destructive) action in the default state."
+            "$description": "Used for the background of a danger (destructive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "hover": {
             "$value": {
@@ -346,12 +597,24 @@
               "dark": "rgba(236, 89, 65, 0.4)"
             },
             "$type": "color",
-            "$description": "Used for the background of a danger (destructive) action in the hover state."
+            "$description": "Used for the background of a danger (destructive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.danger.background.color.hover}",
             "$type": "color",
-            "$description": "Used for the background of a danger (destructive) action in the focus state."
+            "$description": "Used for the background of a danger (destructive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           },
           "active": {
             "$value": {
@@ -359,7 +622,13 @@
               "dark": "rgba(236, 89, 65, 0.16)"
             },
             "$type": "color",
-            "$description": "Used for the background of a danger (destructive) action in the active state."
+            "$description": "Used for the background of a danger (destructive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       },
@@ -368,22 +637,42 @@
           "default": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border of a danger action in the default state."
+            "$description": "Used for the border of a danger action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "hover": {
             "$value": "{action.danger.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a danger action in the hover state."
+            "$description": "Used for the border of a danger action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "focus": {
             "$value": "{action.danger.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a danger action in the focus state."
+            "$description": "Used for the border of a danger action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           },
           "active": {
             "$value": "{action.danger.border.color.default}",
             "$type": "color",
-            "$description": "Used for the border of a danger action in the active state."
+            "$description": "Used for the border of a danger action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -398,7 +687,13 @@
                 "dark": "{color.blue.300}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong confirm action in the default state."
+              "$description": "Used for the background of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "hover": {
               "$value": {
@@ -406,12 +701,24 @@
                 "dark": "{color.blue.200}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong confirm action in the hover state."
+              "$description": "Used for the background of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "focus": {
               "$value": "{action.strong.confirm.background.color.hover}",
               "$type": "color",
-              "$description": "Used for the background of a strong confirm action in the focus state."
+              "$description": "Used for the background of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "active": {
               "$value": {
@@ -419,7 +726,13 @@
                 "dark": "{color.blue.400}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong confirm action in the active state."
+              "$description": "Used for the background of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -431,22 +744,46 @@
                 "dark": "{color.neutral.950}"
               },
               "$type": "color",
-              "$description": "Used for the foreground of a strong confirm action in the default state."
+              "$description": "Used for the foreground of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "hover": {
               "$value": "{action.strong.confirm.foreground.color.default}",
               "$type": "color",
-              "$description": "Used for the foreground of a strong confirm action in the hover state."
+              "$description": "Used for the foreground of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "focus": {
               "$value": "{action.strong.confirm.foreground.color.hover}",
               "$type": "color",
-              "$description": "Used for the foreground of a strong confirm action in the focus state."
+              "$description": "Used for the foreground of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "active": {
               "$value": "{action.strong.confirm.foreground.color.focus}",
               "$type": "color",
-              "$description": "Used for the foreground of a strong confirm action in the active state."
+              "$description": "Used for the foreground of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             }
           }
         },
@@ -455,22 +792,42 @@
             "default": {
               "$value": "{color.alpha.0}",
               "$type": "color",
-              "$description": "Used for the border of a strong confirm action in the default state."
+              "$description": "Used for the border of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "hover": {
               "$value": "{action.strong.confirm.border.color.default}",
               "$type": "color",
-              "$description": "Used for the border of a strong confirm action in the hover state."
+              "$description": "Used for the border of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "focus": {
               "$value": "{action.strong.confirm.border.color.hover}",
               "$type": "color",
-              "$description": "Used for the border of a strong confirm action in the focus state."
+              "$description": "Used for the border of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "active": {
               "$value": "{action.strong.confirm.border.color.focus}",
               "$type": "color",
-              "$description": "Used for the border of a strong confirm action in the active state."
+              "$description": "Used for the border of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             }
           }
         }
@@ -484,7 +841,13 @@
                 "dark": "{color.neutral.700}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong neutral action in the default state."
+              "$description": "Used for the background of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "hover": {
               "$value": {
@@ -492,12 +855,24 @@
                 "dark": "{color.neutral.600}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong neutral action in the hover state."
+              "$description": "Used for the background of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "focus": {
               "$value": "{action.strong.neutral.background.color.hover}",
               "$type": "color",
-              "$description": "Used for the background of a strong neutral action in the focus state."
+              "$description": "Used for the background of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             },
             "active": {
               "$value": {
@@ -505,7 +880,13 @@
                 "dark": "{color.neutral.500}"
               },
               "$type": "color",
-              "$description": "Used for the background of a strong neutral action in the active state."
+              "$description": "Used for the background of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
             }
           }
         },
@@ -517,7 +898,13 @@
                 "dark": "{color.neutral.50}"
               },
               "$type": "color",
-              "$description": "Used for the foreground of a strong neutral action in the default state."
+              "$description": "Used for the foreground of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "hover": {
               "$value": {
@@ -525,7 +912,13 @@
                 "dark": "{color.neutral.0}"
               },
               "$type": "color",
-              "$description": "Used for the foreground of a strong neutral action in the hover state."
+              "$description": "Used for the foreground of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "focus": {
               "$value": {
@@ -533,7 +926,13 @@
                 "dark": "{color.neutral.0}"
               },
               "$type": "color",
-              "$description": "Used for the foreground of a strong neutral action in the focus state."
+              "$description": "Used for the foreground of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             },
             "active": {
               "$value": {
@@ -541,7 +940,13 @@
                 "dark": "{color.neutral.0}"
               },
               "$type": "color",
-              "$description": "Used for the foreground of a strong neutral action in the active state."
+              "$description": "Used for the foreground of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
             }
           }
         },
@@ -550,22 +955,42 @@
             "default": {
               "$value": "{color.alpha.0}",
               "$type": "color",
-              "$description": "Used for the border of a strong neutral action in the default state."
+              "$description": "Used for the border of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "hover": {
               "$value": "{action.strong.neutral.border.color.default}",
               "$type": "color",
-              "$description": "Used for the border of a strong neutral action in the hover state."
+              "$description": "Used for the border of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "focus": {
               "$value": "{action.strong.neutral.border.color.hover}",
               "$type": "color",
-              "$description": "Used for the border of a strong neutral action in the focus state."
+              "$description": "Used for the border of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             },
             "active": {
               "$value": "{action.strong.neutral.border.color.focus}",
               "$type": "color",
-              "$description": "Used for the border of a strong neutral action in the active state."
+              "$description": "Used for the border of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
             }
           }
         }

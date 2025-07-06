@@ -4,7 +4,12 @@
       "color": {
         "$value": "{color.neutral.400}",
         "$type": "color",
-        "$description": "Used for the breadcrumb level separator."
+        "$description": "Used for the breadcrumb level separator.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
       }
     }
   }

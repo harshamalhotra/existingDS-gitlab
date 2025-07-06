@@ -9,7 +9,13 @@
               "dark": "{color.blue.400}"
             },
             "$type": "color",
-            "$description": "Used for the selected indicator of a tab."
+            "$description": "Used for the selected indicator of a tab.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       }

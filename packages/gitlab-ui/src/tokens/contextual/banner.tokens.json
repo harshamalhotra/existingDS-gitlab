@@ -8,7 +8,12 @@
             "dark": "{color.blue.700}"
           },
           "$type": "color",
-          "$description": "Used for the border of an info banner."
+          "$description": "Used for the border of an info banner.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
         }
       }
     },
@@ -20,7 +25,13 @@
             "dark": "{color.purple.950}"
           },
           "$type": "color",
-          "$description": "Used for the background of a promo banner."
+          "$description": "Used for the background of a promo banner.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -30,7 +41,12 @@
             "dark": "{color.purple.700}"
           },
           "$type": "color",
-          "$description": "Used for the border of a promo banner."
+          "$description": "Used for the border of a promo banner.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
         }
       }
     }

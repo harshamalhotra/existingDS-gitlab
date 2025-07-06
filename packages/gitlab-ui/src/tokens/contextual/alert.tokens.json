@@ -8,7 +8,12 @@
             "dark": "{text.color.heading}"
           },
           "$type": "color",
-          "$description": "Used for the title color of a neutral alert."
+          "$description": "Used for the title color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -18,7 +23,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of a neutral alert."
+          "$description": "Used for the background color of a neutral alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -29,14 +40,24 @@
               "dark": "{color.neutral.400}"
             },
             "$type": "color",
-            "$description": "Used for the border center color of a neutral alert."
+            "$description": "Used for the border center color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
           "color": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border bottom color of a neutral alert."
+            "$description": "Used for the border bottom color of a neutral alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -49,7 +70,12 @@
             "dark": "{color.blue.300}"
           },
           "$type": "color",
-          "$description": "Used for the title color of an info alert."
+          "$description": "Used for the title color of an info alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -59,7 +85,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of an info alert."
+          "$description": "Used for the background color of an info alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -70,7 +102,12 @@
               "dark": "{color.blue.400}"
             },
             "$type": "color",
-            "$description": "Used for the border color of an info alert."
+            "$description": "Used for the border color of an info alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
@@ -90,7 +127,12 @@
             "dark": "{color.green.300}"
           },
           "$type": "color",
-          "$description": "Used for the title color of a success alert."
+          "$description": "Used for the title color of a success alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -100,7 +142,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of a success alert."
+          "$description": "Used for the background color of a success alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -111,14 +159,24 @@
               "dark": "{color.green.400}"
             },
             "$type": "color",
-            "$description": "Used for the border color of a success alert."
+            "$description": "Used for the border color of a success alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
           "color": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border bottom color of a success alert."
+            "$description": "Used for the border bottom color of a success alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -131,7 +189,12 @@
             "dark": "{color.orange.300}"
           },
           "$type": "color",
-          "$description": "Used for the title color of a warning alert."
+          "$description": "Used for the title color of a warning alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -141,7 +204,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of a warning alert."
+          "$description": "Used for the background color of a warning alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -152,14 +221,24 @@
               "dark": "{color.orange.400}"
             },
             "$type": "color",
-            "$description": "Used for the border color of a warning alert."
+            "$description": "Used for the border color of a warning alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
           "color": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border bottom color of a warning alert."
+            "$description": "Used for the border bottom color of a warning alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }
@@ -172,7 +251,12 @@
             "dark": "{color.red.300}"
           },
           "$type": "color",
-          "$description": "Used for the title color of a danger alert."
+          "$description": "Used for the title color of a danger alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
         }
       },
       "background": {
@@ -182,7 +266,13 @@
             "dark": "{background.color.subtle}"
           },
           "$type": "color",
-          "$description": "Used for the background color of a danger alert."
+          "$description": "Used for the background color of a danger alert.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
         }
       },
       "border": {
@@ -193,14 +283,24 @@
               "dark": "{color.red.400}"
             },
             "$type": "color",
-            "$description": "Used for the border color of a danger alert."
+            "$description": "Used for the border color of a danger alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         },
         "bottom": {
           "color": {
             "$value": "{color.alpha.0}",
             "$type": "color",
-            "$description": "Used for the border bottom color of a danger alert."
+            "$description": "Used for the border bottom color of a danger alert.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
           }
         }
       }

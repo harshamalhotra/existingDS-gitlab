@@ -6,7 +6,13 @@
           "hover": {
             "$value": "{background.color.subtle}",
             "$type": "color",
-            "$description": "Used for the background of a table row in hover state."
+            "$description": "Used for the background of a table row in hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
           }
         }
       }
@@ -16,7 +22,13 @@
         "color": {
           "$value": "{text.color.heading}",
           "$type": "color",
-          "$description": "Used for the color of the sorting icons in the column headers."
+          "$description": "Used for the color of the sorting icons in the column headers.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
         }
       }
     }
