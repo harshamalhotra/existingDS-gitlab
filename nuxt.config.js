@@ -142,7 +142,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['../assets/stylesheets/app.scss'],
+  css: ['../assets/stylesheets/app.scss', 'vue-live/lib/vue-live.esm.css'],
 
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'last' }],
@@ -155,6 +155,7 @@ export default {
     { src: '~/plugins/expose_env_vars.js' },
     { src: '~/plugins/load_dark_mode.js' },
     { src: '~/plugins/register_global_components.js' },
+    { src: '~/plugins/live_examples.js', mode: 'client' },
     GITLAB_ANALYTICS_ID ? { src: '~/plugins/analytics.js', mode: 'client' } : false,
   ].filter(Boolean),
 

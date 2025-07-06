@@ -1,0 +1,26 @@
+diff --git a/node_modules/vue-live/lib/vue-live.common.js b/node_modules/vue-live/lib/vue-live.common.js
+index b398acb..b73555b 100644
+--- a/node_modules/vue-live/lib/vue-live.common.js
++++ b/node_modules/vue-live/lib/vue-live.common.js
+@@ -8,7 +8,7 @@ var vueInbrowserCompiler = require('vue-inbrowser-compiler');
+ var _slicedToArray = require('@babel/runtime/helpers/slicedToArray');
+ var _toConsumableArray = require('@babel/runtime/helpers/toConsumableArray');
+ var compilerDom = require('@vue/compiler-dom');
+-var compilerCore_cjs = require('@vue/compiler-core/dist/compiler-core.cjs');
++var compilerCore_cjs = require('@vue/compiler-core/dist/compiler-core.cjs.js');
+ var acorn = require('acorn');
+ var recast = require('recast');
+ var vuePrismEditor = require('vue-prism-editor');
+diff --git a/node_modules/vue-live/lib/vue-live.esm.js b/node_modules/vue-live/lib/vue-live.esm.js
+index f94b93a..626c6c5 100644
+--- a/node_modules/vue-live/lib/vue-live.esm.js
++++ b/node_modules/vue-live/lib/vue-live.esm.js
+@@ -4,7 +4,7 @@ import { compile, isCodeVueSfc, adaptCreateElement, concatenate, addScopedStyle
+ import _slicedToArray from '@babel/runtime/helpers/slicedToArray';
+ import _toConsumableArray from '@babel/runtime/helpers/toConsumableArray';
+ import { parse } from '@vue/compiler-dom';
+-import { createCompilerError } from '@vue/compiler-core/dist/compiler-core.cjs';
++import { createCompilerError } from '@vue/compiler-core/dist/compiler-core.cjs.js';
+ import { parse as parse$1 } from 'acorn';
+ import { visit } from 'recast';
+ import { PrismEditor } from 'vue-prism-editor';
