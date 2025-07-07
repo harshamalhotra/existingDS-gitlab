@@ -58,6 +58,54 @@ The p HTML element represents a paragraph. Paragraphs are usually represented in
 | Table cell   | Table cell   | Table cell   |
 | Table cell   | Table cell   | Table cell   |
 
+### Live example
+
+```html
+<!-- live-example -->
+<gl-alert
+  title="Example"
+  variant="info"
+  primary-button-text="Okay"
+  secondary-button-text="Cancel"
+>
+  Here's an example informational alert.
+</gl-alert>
+```
+
+### Syntax highlighting
+
+```js
+// Single line comment
+import { module } from 'library';
+
+/* Multi-line comment */
+const CONSTANT = 'value';
+let variable = null;
+
+// Class definition
+class Example {
+  constructor(param) {
+    this.property = param;
+  }
+
+  async method(arg = 42) {
+    try {
+      const result = await func(`template ${this.property}`);
+      return result.data;
+    } catch (error) {
+      console.log('Error:', error);
+      return false;
+    }
+  }
+}
+
+// Function with regex
+const validate = (input) => {
+  const pattern = /^[a-z]+$/;
+  return pattern.test(input);
+};
+```
+
 ## Components
 
 ### Figure image

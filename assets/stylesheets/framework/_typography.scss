@@ -67,15 +67,6 @@ code {
   word-wrap: normal;
 }
 
-pre[class*="language-"],
-:not(pre) > code[class*="language-"] {
-  @apply gl-border;
-  @apply gl-rounded-base;
-  @apply gl-bg-subtle #{!important};
-  text-shadow: none !important;
-
-  code {
-    @apply gl-p-0;
-    @apply gl-bg-subtle #{!important};
-  }
+pre {
+  @apply gl-text-strong;
 }
