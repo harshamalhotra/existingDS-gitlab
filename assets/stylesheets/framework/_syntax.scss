@@ -1,0 +1,140 @@
+:root {
+  --syntax-comment: #998;
+  --syntax-keyword: #8959a8;
+  --syntax-string: #718c00;
+  --syntax-number: #f5871f;
+  --syntax-function: #4271ae;
+  --syntax-operator: #3e999f;
+  --syntax-punctuation: #4d4d4c;
+  --syntax-property: #c82829;
+  --syntax-variable: #eab700;
+}
+
+:root.gl-dark {
+  --syntax-comment: #969896;
+  --syntax-keyword: #b294bb;
+  --syntax-string: #b5bd68;
+  --syntax-number: #de935f;
+  --syntax-function: #81a2be;
+  --syntax-operator: #8abeb7;
+  --syntax-punctuation: #c5c8c6;
+  --syntax-property: #f0c674;
+  --syntax-variable: #c66;
+}
+
+.nuxt-content {
+  /* Base styles */
+  pre[class*="language-"],
+  :not(pre) > code[class*="language-"] {
+    @apply gl-border;
+    @apply gl-rounded-base;
+    @apply gl-font-monospace;
+    @apply gl-text-strong;
+    @apply gl-bg-subtle;
+    @apply gl-text-base;
+    @apply gl-text-left;
+    @apply gl-whitespace-pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+
+    code {
+      @apply gl-p-0;
+      @apply gl-bg-subtle;
+      text-shadow: none;
+    }
+  }
+
+  pre[class*="language-"] {
+    @apply gl-p-3;
+    @apply gl-my-3;
+    @apply gl-overflow-auto;
+    @apply gl-rounded-base;
+  }
+
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em 0.3em;
+    @apply gl-rounded-base;
+    white-space: normal;
+  }
+
+  /* Token styles */
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: var(--syntax-comment);
+    font-style: italic;
+  }
+
+  .token.punctuation {
+    color: var(--syntax-punctuation);
+  }
+
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: var(--syntax-property);
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: var(--syntax-string);
+  }
+
+  .token.operator {
+    background-color: transparent;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    color: var(--syntax-operator);
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: var(--syntax-keyword);
+  }
+
+  .token.function,
+  .token.class-name {
+    color: var(--syntax-function);
+  }
+
+  .token.regex,
+  .token.important,
+  .token.variable {
+    color: var(--syntax-variable);
+  }
+
+  .token.number {
+    color: var(--syntax-number);
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+}
