@@ -9540,10 +9540,10 @@ domutils@^2.5.2, domutils@^2.8.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-domutils@^3.0.1, domutils@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.1.0.tgz#c47f551278d3dc4b0b1ab8cbb42d751a6f0d824e"
-  integrity sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==
+domutils@^3.0.1, domutils@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.2.2.tgz#edbfe2b668b0c1d97c24baf0f1062b132221bc78"
+  integrity sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==
   dependencies:
     dom-serializer "^2.0.0"
     domelementtype "^2.3.0"
@@ -11904,6 +11904,16 @@ html-webpack-plugin@^5.5.0:
     pretty-error "^4.0.0"
     tapable "^2.0.0"
 
+htmlparser2@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-10.0.0.tgz#77ad249037b66bf8cc99c6e286ef73b83aeb621d"
+  integrity sha512-TwAZM+zE5Tq3lrEHvOlvwgj1XLWQCtaaibSN11Q+gGBAS7Y1uZSWwXXRe4iF6OXnaq1riyQAPFOBtYc77Mxq0g==
+  dependencies:
+    domelementtype "^2.3.0"
+    domhandler "^5.0.3"
+    domutils "^3.2.1"
+    entities "^6.0.0"
+
 htmlparser2@^3.9.2:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
@@ -11925,16 +11935,6 @@ htmlparser2@^6.1.0:
     domhandler "^4.0.0"
     domutils "^2.5.2"
     entities "^2.0.0"
-
-htmlparser2@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-9.0.0.tgz#e431142b7eeb1d91672742dea48af8ac7140cddb"
-  integrity sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==
-  dependencies:
-    domelementtype "^2.3.0"
-    domhandler "^5.0.3"
-    domutils "^3.1.0"
-    entities "^4.5.0"
 
 http-assert@^1.3.0:
   version "1.5.0"
@@ -14349,16 +14349,16 @@ linkify-it@^5.0.0:
   dependencies:
     uc.micro "^2.0.0"
 
-linkinator@^6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-6.1.2.tgz#0cc25d934685d740f8cd3ccb95127ec1345a7605"
-  integrity sha512-PndSrQe21Hf4sn2vZldEzJmD0EUJbIsEy4jcZLcHd6IZfQ6rC6iv+Fwo666TWM9DcXjbCrHpxnVX6xaGrcJ/eA==
+linkinator@^6.1.4:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/linkinator/-/linkinator-6.1.4.tgz#9a2fb961ad38c7041d907ecd72d34d32a5b06e8e"
+  integrity sha512-7DXjwFiJ6rqye8OawwWi/CyDdKdIb69HLCbPhRI6tGSNnGruWFw8qucNsoWFXybel/I960UujFHefjvprhhvYA==
   dependencies:
     chalk "^5.0.0"
     escape-html "^1.0.3"
     gaxios "^6.0.0"
     glob "^10.3.10"
-    htmlparser2 "^9.0.0"
+    htmlparser2 "^10.0.0"
     marked "^13.0.0"
     meow "^13.0.0"
     mime "^4.0.0"
