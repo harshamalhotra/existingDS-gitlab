@@ -19962,10 +19962,10 @@ strnum@^1.0.5:
   resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.5.tgz#5c4e829fe15ad4ff0d20c3db5ac97b73c9b072db"
   integrity sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==
 
-style-dictionary@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.0.0.tgz#6b5f577b01cb0472cfdcee64e711f3bd5e389267"
-  integrity sha512-ORuqKamQe4nL2B9ASmmz5LxKBDuiqHvP8jj4lQ+5kE1XJyagJVvgSz5VpTAG3dRheqlqN5++vtVmK1S6ZZyy/A==
+style-dictionary@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.0.1.tgz#1b42caccbcb49fb4462e9dac406b4024632c5fac"
+  integrity sha512-j+yQ4hM7a52iUQg5LVC8bnRkem4sU+unIY2qsyjoikPVzaxjkHd4ER7bnK+znW/Rhha69t4Fi5O46UHg6w8jFQ==
   dependencies:
     "@bundled-es-modules/deepmerge" "^4.3.1"
     "@bundled-es-modules/glob" "^10.4.2"
