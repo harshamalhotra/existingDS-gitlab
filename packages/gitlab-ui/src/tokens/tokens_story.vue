@@ -63,7 +63,7 @@ export default {
           {{ getTokenName(token) }}
         </code>
         <div class="gl-flex gl-items-center gl-gap-3">
-          <gl-badge v-if="token.deprecated" v-gl-tooltip :title="token.comment" variant="danger">
+          <gl-badge v-if="token.$deprecated" v-gl-tooltip :title="token.comment" variant="danger">
             Deprecated
           </gl-badge>
           <code class="gl-text-inherit">{{ token.$value }}</code>
