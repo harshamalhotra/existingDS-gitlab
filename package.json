@@ -49,7 +49,9 @@
     "@nuxtjs/sentry": "^8.0.8",
     "iframe-resizer": "^4.4.5",
     "nuxt": "^2.18.1",
-    "pikaday": "1.8.0"
+    "pikaday": "1.8.0",
+    "prismjs": "^1.23.0",
+    "vue-live": "1.x"
   },
   "devDependencies": {
     "@babel/core": "7.27.7",
