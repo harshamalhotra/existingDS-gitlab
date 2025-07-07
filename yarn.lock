@@ -2093,6 +2093,18 @@
     jest-util "30.0.2"
     slash "^3.0.0"
 
+"@jest/console@30.0.4":
+  version "30.0.4"
+  resolved "https://registry.yarnpkg.com/@jest/console/-/console-30.0.4.tgz#943a62c3c8e3f495290f2e2c3749b7b4516c3e93"
+  integrity sha512-tMLCDvBJBwPqMm4OAiuKm2uF5y5Qe26KgcMn+nrDSWpEW+eeFmqA0iO4zJfL16GP7gE3bUUQ3hIuUJ22AqVRnw==
+  dependencies:
+    "@jest/types" "30.0.1"
+    "@types/node" "*"
+    chalk "^4.1.2"
+    jest-message-util "30.0.2"
+    jest-util "30.0.2"
+    slash "^3.0.0"
+
 "@jest/console@^29.7.0":
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-29.7.0.tgz#cd4822dbdb84529265c5a2bdb529a3c9cc950ffc"
@@ -2416,6 +2428,16 @@
     "@types/istanbul-lib-coverage" "^2.0.6"
     collect-v8-coverage "^1.0.2"
 
+"@jest/test-result@30.0.4":
+  version "30.0.4"
+  resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-30.0.4.tgz#0b1c4e8256e3f9ebb9452ede22d4b04b31ea54fe"
+  integrity sha512-Mfpv8kjyKTHqsuu9YugB6z1gcdB3TSSOaKlehtVaiNlClMkEHY+5ZqCY2CrEE3ntpBMlstX/ShDAf84HKWsyIw==
+  dependencies:
+    "@jest/console" "30.0.4"
+    "@jest/types" "30.0.1"
+    "@types/istanbul-lib-coverage" "^2.0.6"
+    collect-v8-coverage "^1.0.2"
+
 "@jest/test-result@^29.7.0":
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-29.7.0.tgz#8db9a80aa1a097bb2262572686734baed9b1657c"
@@ -2432,6 +2454,16 @@
   integrity sha512-fbyU5HPka0rkalZ3MXVvq0hwZY8dx3Y6SCqR64zRmh+xXlDeFl0IdL4l9e7vp4gxEXTYHbwLFA1D+WW5CucaSw==
   dependencies:
     "@jest/test-result" "30.0.2"
+    graceful-fs "^4.2.11"
+    jest-haste-map "30.0.2"
+    slash "^3.0.0"
+
+"@jest/test-sequencer@30.0.4":
+  version "30.0.4"
+  resolved "https://registry.yarnpkg.com/@jest/test-sequencer/-/test-sequencer-30.0.4.tgz#4ef749c994beca340e274e67a4c90f0154482e5f"
+  integrity sha512-bj6ePmqi4uxAE8EHE0Slmk5uBYd9Vd/PcVt06CsBxzH4bbA8nGsI1YbXl/NH+eii4XRtyrRx+Cikub0x8H4vDg==
+  dependencies:
+    "@jest/test-result" "30.0.4"
     graceful-fs "^4.2.11"
     jest-haste-map "30.0.2"
     slash "^3.0.0"
