@@ -12,7 +12,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true
+      "$deprecated": true
     },
     "secondary": {
       "$value": {
@@ -26,7 +26,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true
+      "$deprecated": true
     },
     "tertiary": {
       "$value": {
@@ -40,7 +40,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true
+      "$deprecated": true
     },
     "color": {
       "default": {

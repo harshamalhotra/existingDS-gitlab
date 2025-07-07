@@ -317,24 +317,6 @@ type from Figma's Plugin API.
 }
 ```
 
-#### com.gitlab.deprecated
-
-Indicates that a token is slated to be removed in the future and should
-no longer be used in new contexts.  
-It helps teams identify which tokens are outdated and plan for their eventual removal.
-
-```json
-{
-  "button": {
-    "$value": "#c0ffee",
-    "$type": "color",
-    "$extensions": {
-      "com.gitlab.deprecated": true,
-    }
-  }
-}
-```
-
 #### com.gitlab.locked
 
 Indicates that a token has a restricted scope of use and should not be
@@ -754,5 +736,5 @@ _and so on…_
 
 ## Deprecation
 
-Add `"deprecated": true` to deprecated token JSON. When all tokens in a file are deprecated move to
-a `deprecated.*.json` file.
+Add [`"$deprecated": true`](https://tr.designtokens.org/format/#deprecated) to deprecated token
+JSON. When all tokens in a file are deprecated move to a `deprecated.*.json` file.

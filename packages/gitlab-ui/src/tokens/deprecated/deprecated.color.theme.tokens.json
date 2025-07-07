@@ -12,7 +12,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -25,7 +25,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -38,7 +38,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -51,7 +51,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -64,7 +64,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -77,7 +77,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -90,7 +90,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -103,7 +103,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -116,7 +116,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -129,7 +129,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -142,7 +142,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -155,7 +155,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     },
     "blue": {
@@ -170,7 +170,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -183,7 +183,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -196,7 +196,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -209,7 +209,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -222,7 +222,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -235,7 +235,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -248,7 +248,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -261,7 +261,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -274,7 +274,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -287,7 +287,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -300,7 +300,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -313,7 +313,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     },
     "light-blue": {
@@ -328,7 +328,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -341,7 +341,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -354,7 +354,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -367,7 +367,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -380,7 +380,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -393,7 +393,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -406,7 +406,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -419,7 +419,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -432,7 +432,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -445,7 +445,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -458,7 +458,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -471,7 +471,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     },
     "green": {
@@ -486,7 +486,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -499,7 +499,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -512,7 +512,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -525,7 +525,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -538,7 +538,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -551,7 +551,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -564,7 +564,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -577,7 +577,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -590,7 +590,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -603,7 +603,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -616,7 +616,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -629,7 +629,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     },
     "red": {
@@ -644,7 +644,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -657,7 +657,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -670,7 +670,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -683,7 +683,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -696,7 +696,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -709,7 +709,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -722,7 +722,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -735,7 +735,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -748,7 +748,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -761,7 +761,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -774,7 +774,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -787,7 +787,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     },
     "light-red": {
@@ -802,7 +802,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "50": {
         "$value": {
@@ -815,7 +815,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "100": {
         "$value": {
@@ -828,7 +828,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "200": {
         "$value": {
@@ -841,7 +841,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "300": {
         "$value": {
@@ -854,7 +854,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "400": {
         "$value": {
@@ -867,7 +867,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "500": {
         "$value": {
@@ -880,7 +880,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "600": {
         "$value": {
@@ -893,7 +893,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "700": {
         "$value": {
@@ -906,7 +906,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "800": {
         "$value": {
@@ -919,7 +919,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "900": {
         "$value": {
@@ -932,7 +932,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       },
       "950": {
         "$value": {
@@ -945,7 +945,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true
+        "$deprecated": true
       }
     }
   }

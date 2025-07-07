@@ -100,7 +100,7 @@ export default {
         value: token.$value,
         valueLabel: this.getValueLabel(token),
         darkValueLabel: this.getDarkValueLabel(token),
-        deprecated: token.deprecated ? 'deprecated' : '',
+        deprecated: token.$deprecated ? 'deprecated' : '',
         description: token.$description,
         className: this.formatContextToClass(token.context),
         cssValue: token.cssWithValue,
@@ -189,7 +189,7 @@ export default {
           if (token.filePath.match('contextual')) {
             figmaPrefix = '🔒/';
           }
-          if (token.deprecated) {
+          if (token.$deprecated) {
             figmaPrefix = '⚠️ DEPRECATED/';
           }
           return `${figmaPrefix}${token.path.filter(Boolean).join('-')}`;

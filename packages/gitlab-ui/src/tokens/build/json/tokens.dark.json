@@ -21625,7 +21625,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21639,7 +21639,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.50}"
         },
         "name": "A_VIZ_GREEN_50",
@@ -21659,7 +21659,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21673,7 +21673,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.100}"
         },
         "name": "A_VIZ_GREEN_100",
@@ -21693,7 +21693,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21707,7 +21707,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.200}"
         },
         "name": "A_VIZ_GREEN_200",
@@ -21727,7 +21727,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21741,7 +21741,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.300}"
         },
         "name": "A_VIZ_GREEN_300",
@@ -21761,7 +21761,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21775,7 +21775,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.400}"
         },
         "name": "A_VIZ_GREEN_400",
@@ -21795,7 +21795,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21809,7 +21809,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.500}"
         },
         "name": "A_VIZ_GREEN_500",
@@ -21829,7 +21829,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21843,7 +21843,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.600}"
         },
         "name": "A_VIZ_GREEN_600",
@@ -21863,7 +21863,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21877,7 +21877,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.700}"
         },
         "name": "A_VIZ_GREEN_700",
@@ -21897,7 +21897,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21911,7 +21911,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.800}"
         },
         "name": "A_VIZ_GREEN_800",
@@ -21931,7 +21931,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21945,7 +21945,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.900}"
         },
         "name": "A_VIZ_GREEN_900",
@@ -21965,7 +21965,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -21979,7 +21979,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.green.950}"
         },
         "name": "A_VIZ_GREEN_950",
@@ -22001,7 +22001,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22015,7 +22015,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.50}"
         },
         "name": "A_VIZ_AQUA_50",
@@ -22035,7 +22035,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22049,7 +22049,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.100}"
         },
         "name": "A_VIZ_AQUA_100",
@@ -22069,7 +22069,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22083,7 +22083,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.200}"
         },
         "name": "A_VIZ_AQUA_200",
@@ -22103,7 +22103,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22117,7 +22117,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.300}"
         },
         "name": "A_VIZ_AQUA_300",
@@ -22137,7 +22137,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22151,7 +22151,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.400}"
         },
         "name": "A_VIZ_AQUA_400",
@@ -22171,7 +22171,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22185,7 +22185,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.500}"
         },
         "name": "A_VIZ_AQUA_500",
@@ -22205,7 +22205,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22219,7 +22219,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.600}"
         },
         "name": "A_VIZ_AQUA_600",
@@ -22239,7 +22239,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22253,7 +22253,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.700}"
         },
         "name": "A_VIZ_AQUA_700",
@@ -22273,7 +22273,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22287,7 +22287,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.800}"
         },
         "name": "A_VIZ_AQUA_800",
@@ -22307,7 +22307,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22321,7 +22321,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.900}"
         },
         "name": "A_VIZ_AQUA_900",
@@ -22341,7 +22341,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22355,7 +22355,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.aqua.950}"
         },
         "name": "A_VIZ_AQUA_950",
@@ -22377,7 +22377,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22391,7 +22391,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.50}"
         },
         "name": "A_VIZ_BLUE_50",
@@ -22411,7 +22411,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22425,7 +22425,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.100}"
         },
         "name": "A_VIZ_BLUE_100",
@@ -22445,7 +22445,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22459,7 +22459,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.200}"
         },
         "name": "A_VIZ_BLUE_200",
@@ -22479,7 +22479,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22493,7 +22493,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.300}"
         },
         "name": "A_VIZ_BLUE_300",
@@ -22513,7 +22513,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22527,7 +22527,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.400}"
         },
         "name": "A_VIZ_BLUE_400",
@@ -22547,7 +22547,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22561,7 +22561,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.500}"
         },
         "name": "A_VIZ_BLUE_500",
@@ -22581,7 +22581,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22595,7 +22595,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.600}"
         },
         "name": "A_VIZ_BLUE_600",
@@ -22615,7 +22615,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22629,7 +22629,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.700}"
         },
         "name": "A_VIZ_BLUE_700",
@@ -22649,7 +22649,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22663,7 +22663,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.800}"
         },
         "name": "A_VIZ_BLUE_800",
@@ -22683,7 +22683,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22697,7 +22697,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.900}"
         },
         "name": "A_VIZ_BLUE_900",
@@ -22717,7 +22717,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22731,7 +22731,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.blue.950}"
         },
         "name": "A_VIZ_BLUE_950",
@@ -22753,7 +22753,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22767,7 +22767,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.50}"
         },
         "name": "A_VIZ_MAGENTA_50",
@@ -22787,7 +22787,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22801,7 +22801,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.100}"
         },
         "name": "A_VIZ_MAGENTA_100",
@@ -22821,7 +22821,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22835,7 +22835,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.200}"
         },
         "name": "A_VIZ_MAGENTA_200",
@@ -22855,7 +22855,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22869,7 +22869,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.300}"
         },
         "name": "A_VIZ_MAGENTA_300",
@@ -22889,7 +22889,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22903,7 +22903,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.400}"
         },
         "name": "A_VIZ_MAGENTA_400",
@@ -22923,7 +22923,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22937,7 +22937,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.500}"
         },
         "name": "A_VIZ_MAGENTA_500",
@@ -22957,7 +22957,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -22971,7 +22971,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.600}"
         },
         "name": "A_VIZ_MAGENTA_600",
@@ -22991,7 +22991,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23005,7 +23005,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.700}"
         },
         "name": "A_VIZ_MAGENTA_700",
@@ -23025,7 +23025,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23039,7 +23039,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.800}"
         },
         "name": "A_VIZ_MAGENTA_800",
@@ -23059,7 +23059,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23073,7 +23073,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.900}"
         },
         "name": "A_VIZ_MAGENTA_900",
@@ -23093,7 +23093,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23107,7 +23107,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.magenta.950}"
         },
         "name": "A_VIZ_MAGENTA_950",
@@ -23129,7 +23129,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23143,7 +23143,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.50}"
         },
         "name": "A_VIZ_ORANGE_50",
@@ -23163,7 +23163,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23177,7 +23177,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.100}"
         },
         "name": "A_VIZ_ORANGE_100",
@@ -23197,7 +23197,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23211,7 +23211,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.200}"
         },
         "name": "A_VIZ_ORANGE_200",
@@ -23231,7 +23231,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23245,7 +23245,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.300}"
         },
         "name": "A_VIZ_ORANGE_300",
@@ -23265,7 +23265,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23279,7 +23279,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.400}"
         },
         "name": "A_VIZ_ORANGE_400",
@@ -23299,7 +23299,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23313,7 +23313,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.500}"
         },
         "name": "A_VIZ_ORANGE_500",
@@ -23333,7 +23333,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23347,7 +23347,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.600}"
         },
         "name": "A_VIZ_ORANGE_600",
@@ -23367,7 +23367,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23381,7 +23381,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.700}"
         },
         "name": "A_VIZ_ORANGE_700",
@@ -23401,7 +23401,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23415,7 +23415,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.800}"
         },
         "name": "A_VIZ_ORANGE_800",
@@ -23435,7 +23435,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23449,7 +23449,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.900}"
         },
         "name": "A_VIZ_ORANGE_900",
@@ -23469,7 +23469,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.data_viz.tokens.json",
         "isSource": true,
         "original": {
@@ -23483,7 +23483,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{data-viz.orange.950}"
         },
         "name": "A_VIZ_ORANGE_950",
@@ -23507,7 +23507,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23521,7 +23521,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.10}"
         },
         "name": "ME_INDIGO_10",
@@ -23541,7 +23541,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23555,7 +23555,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.50}"
         },
         "name": "ME_INDIGO_50",
@@ -23575,7 +23575,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23589,7 +23589,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.100}"
         },
         "name": "ME_INDIGO_100",
@@ -23609,7 +23609,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23623,7 +23623,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.200}"
         },
         "name": "ME_INDIGO_200",
@@ -23643,7 +23643,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23657,7 +23657,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.300}"
         },
         "name": "ME_INDIGO_300",
@@ -23677,7 +23677,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23691,7 +23691,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.400}"
         },
         "name": "ME_INDIGO_400",
@@ -23711,7 +23711,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23725,7 +23725,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.500}"
         },
         "name": "ME_INDIGO_500",
@@ -23745,7 +23745,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23759,7 +23759,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.600}"
         },
         "name": "ME_INDIGO_600",
@@ -23779,7 +23779,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23793,7 +23793,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.700}"
         },
         "name": "ME_INDIGO_700",
@@ -23813,7 +23813,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23827,7 +23827,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.800}"
         },
         "name": "ME_INDIGO_800",
@@ -23847,7 +23847,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23861,7 +23861,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.900}"
         },
         "name": "ME_INDIGO_900",
@@ -23881,7 +23881,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23895,7 +23895,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.indigo.950}"
         },
         "name": "ME_INDIGO_950",
@@ -23917,7 +23917,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23931,7 +23931,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.10}"
         },
         "name": "ME_BLUE_10",
@@ -23951,7 +23951,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23965,7 +23965,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.50}"
         },
         "name": "ME_BLUE_50",
@@ -23985,7 +23985,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -23999,7 +23999,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.100}"
         },
         "name": "ME_BLUE_100",
@@ -24019,7 +24019,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24033,7 +24033,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.200}"
         },
         "name": "ME_BLUE_200",
@@ -24053,7 +24053,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24067,7 +24067,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.300}"
         },
         "name": "ME_BLUE_300",
@@ -24087,7 +24087,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24101,7 +24101,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.400}"
         },
         "name": "ME_BLUE_400",
@@ -24121,7 +24121,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24135,7 +24135,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.500}"
         },
         "name": "ME_BLUE_500",
@@ -24155,7 +24155,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24169,7 +24169,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.600}"
         },
         "name": "ME_BLUE_600",
@@ -24189,7 +24189,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24203,7 +24203,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.700}"
         },
         "name": "ME_BLUE_700",
@@ -24223,7 +24223,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24237,7 +24237,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.800}"
         },
         "name": "ME_BLUE_800",
@@ -24257,7 +24257,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24271,7 +24271,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.900}"
         },
         "name": "ME_BLUE_900",
@@ -24291,7 +24291,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24305,7 +24305,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.blue.950}"
         },
         "name": "ME_BLUE_950",
@@ -24327,7 +24327,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24341,7 +24341,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.10}"
         },
         "name": "ME_LIGHT_BLUE_10",
@@ -24361,7 +24361,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24375,7 +24375,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.50}"
         },
         "name": "ME_LIGHT_BLUE_50",
@@ -24395,7 +24395,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24409,7 +24409,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.100}"
         },
         "name": "ME_LIGHT_BLUE_100",
@@ -24429,7 +24429,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24443,7 +24443,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.200}"
         },
         "name": "ME_LIGHT_BLUE_200",
@@ -24463,7 +24463,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24477,7 +24477,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.300}"
         },
         "name": "ME_LIGHT_BLUE_300",
@@ -24497,7 +24497,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24511,7 +24511,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.400}"
         },
         "name": "ME_LIGHT_BLUE_400",
@@ -24531,7 +24531,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24545,7 +24545,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.500}"
         },
         "name": "ME_LIGHT_BLUE_500",
@@ -24565,7 +24565,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24579,7 +24579,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.600}"
         },
         "name": "ME_LIGHT_BLUE_600",
@@ -24599,7 +24599,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24613,7 +24613,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.700}"
         },
         "name": "ME_LIGHT_BLUE_700",
@@ -24633,7 +24633,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24647,7 +24647,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.800}"
         },
         "name": "ME_LIGHT_BLUE_800",
@@ -24667,7 +24667,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24681,7 +24681,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.900}"
         },
         "name": "ME_LIGHT_BLUE_900",
@@ -24701,7 +24701,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24715,7 +24715,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-blue.950}"
         },
         "name": "ME_LIGHT_BLUE_950",
@@ -24737,7 +24737,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24751,7 +24751,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.10}"
         },
         "name": "ME_GREEN_10",
@@ -24771,7 +24771,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24785,7 +24785,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.50}"
         },
         "name": "ME_GREEN_50",
@@ -24805,7 +24805,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24819,7 +24819,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.100}"
         },
         "name": "ME_GREEN_100",
@@ -24839,7 +24839,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24853,7 +24853,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.200}"
         },
         "name": "ME_GREEN_200",
@@ -24873,7 +24873,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24887,7 +24887,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.300}"
         },
         "name": "ME_GREEN_300",
@@ -24907,7 +24907,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24921,7 +24921,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.400}"
         },
         "name": "ME_GREEN_400",
@@ -24941,7 +24941,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24955,7 +24955,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.500}"
         },
         "name": "ME_GREEN_500",
@@ -24975,7 +24975,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -24989,7 +24989,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.600}"
         },
         "name": "ME_GREEN_600",
@@ -25009,7 +25009,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25023,7 +25023,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.700}"
         },
         "name": "ME_GREEN_700",
@@ -25043,7 +25043,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25057,7 +25057,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.800}"
         },
         "name": "ME_GREEN_800",
@@ -25077,7 +25077,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25091,7 +25091,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.900}"
         },
         "name": "ME_GREEN_900",
@@ -25111,7 +25111,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25125,7 +25125,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.green.950}"
         },
         "name": "ME_GREEN_950",
@@ -25147,7 +25147,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25161,7 +25161,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.10}"
         },
         "name": "ME_RED_10",
@@ -25181,7 +25181,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25195,7 +25195,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.50}"
         },
         "name": "ME_RED_50",
@@ -25215,7 +25215,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25229,7 +25229,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.100}"
         },
         "name": "ME_RED_100",
@@ -25249,7 +25249,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25263,7 +25263,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.200}"
         },
         "name": "ME_RED_200",
@@ -25283,7 +25283,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25297,7 +25297,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.300}"
         },
         "name": "ME_RED_300",
@@ -25317,7 +25317,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25331,7 +25331,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.400}"
         },
         "name": "ME_RED_400",
@@ -25351,7 +25351,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25365,7 +25365,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.500}"
         },
         "name": "ME_RED_500",
@@ -25385,7 +25385,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25399,7 +25399,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.600}"
         },
         "name": "ME_RED_600",
@@ -25419,7 +25419,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25433,7 +25433,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.700}"
         },
         "name": "ME_RED_700",
@@ -25453,7 +25453,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25467,7 +25467,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.800}"
         },
         "name": "ME_RED_800",
@@ -25487,7 +25487,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25501,7 +25501,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.900}"
         },
         "name": "ME_RED_900",
@@ -25521,7 +25521,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25535,7 +25535,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.red.950}"
         },
         "name": "ME_RED_950",
@@ -25557,7 +25557,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25571,7 +25571,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.10}"
         },
         "name": "ME_LIGHT_RED_10",
@@ -25591,7 +25591,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25605,7 +25605,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.50}"
         },
         "name": "ME_LIGHT_RED_50",
@@ -25625,7 +25625,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25639,7 +25639,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.100}"
         },
         "name": "ME_LIGHT_RED_100",
@@ -25659,7 +25659,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25673,7 +25673,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.200}"
         },
         "name": "ME_LIGHT_RED_200",
@@ -25693,7 +25693,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25707,7 +25707,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.300}"
         },
         "name": "ME_LIGHT_RED_300",
@@ -25727,7 +25727,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25741,7 +25741,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.400}"
         },
         "name": "ME_LIGHT_RED_400",
@@ -25761,7 +25761,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25775,7 +25775,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.500}"
         },
         "name": "ME_LIGHT_RED_500",
@@ -25795,7 +25795,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25809,7 +25809,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.600}"
         },
         "name": "ME_LIGHT_RED_600",
@@ -25829,7 +25829,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25843,7 +25843,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.700}"
         },
         "name": "ME_LIGHT_RED_700",
@@ -25863,7 +25863,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25877,7 +25877,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.800}"
         },
         "name": "ME_LIGHT_RED_800",
@@ -25897,7 +25897,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25911,7 +25911,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.900}"
         },
         "name": "ME_LIGHT_RED_900",
@@ -25931,7 +25931,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.theme.tokens.json",
         "isSource": true,
         "original": {
@@ -25945,7 +25945,7 @@
           },
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{theme.light-red.950}"
         },
         "name": "ME_LIGHT_RED_950",
@@ -25967,7 +25967,7 @@
     },
     "themeable": true,
     "prefix": false,
-    "deprecated": true,
+    "$deprecated": true,
     "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
     "isSource": true,
     "original": {
@@ -25981,7 +25981,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "key": "{black}"
     },
     "name": "CK",
@@ -25999,7 +25999,7 @@
     },
     "themeable": true,
     "prefix": false,
-    "deprecated": true,
+    "$deprecated": true,
     "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
     "isSource": true,
     "original": {
@@ -26013,7 +26013,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "key": "{white}"
     },
     "name": "TE",
@@ -26032,7 +26032,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26046,7 +26046,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.50}"
       },
       "name": "E_50",
@@ -26065,7 +26065,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26079,7 +26079,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.100}"
       },
       "name": "E_100",
@@ -26098,7 +26098,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26112,7 +26112,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.200}"
       },
       "name": "E_200",
@@ -26131,7 +26131,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26145,7 +26145,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.300}"
       },
       "name": "E_300",
@@ -26164,7 +26164,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26178,7 +26178,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.400}"
       },
       "name": "E_400",
@@ -26197,7 +26197,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26211,7 +26211,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.500}"
       },
       "name": "E_500",
@@ -26230,7 +26230,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26244,7 +26244,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.600}"
       },
       "name": "E_600",
@@ -26263,7 +26263,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26277,7 +26277,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.700}"
       },
       "name": "E_700",
@@ -26296,7 +26296,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26310,7 +26310,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.800}"
       },
       "name": "E_800",
@@ -26329,7 +26329,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26343,7 +26343,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.900}"
       },
       "name": "E_900",
@@ -26362,7 +26362,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26376,7 +26376,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{blue.950}"
       },
       "name": "E_950",
@@ -26397,7 +26397,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26411,7 +26411,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.10}"
       },
       "name": "Y_10",
@@ -26430,7 +26430,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26444,7 +26444,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.50}"
       },
       "name": "Y_50",
@@ -26463,7 +26463,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26477,7 +26477,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.100}"
       },
       "name": "Y_100",
@@ -26496,7 +26496,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26510,7 +26510,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.200}"
       },
       "name": "Y_200",
@@ -26529,7 +26529,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26543,7 +26543,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.300}"
       },
       "name": "Y_300",
@@ -26562,7 +26562,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26576,7 +26576,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.400}"
       },
       "name": "Y_400",
@@ -26595,7 +26595,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26609,7 +26609,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.500}"
       },
       "name": "Y_500",
@@ -26628,7 +26628,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26642,7 +26642,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.600}"
       },
       "name": "Y_600",
@@ -26661,7 +26661,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26675,7 +26675,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.700}"
       },
       "name": "Y_700",
@@ -26694,7 +26694,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26708,7 +26708,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.800}"
       },
       "name": "Y_800",
@@ -26727,7 +26727,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26741,7 +26741,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.900}"
       },
       "name": "Y_900",
@@ -26760,7 +26760,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26774,7 +26774,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{gray.950}"
       },
       "name": "Y_950",
@@ -26795,7 +26795,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26809,7 +26809,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.50}"
       },
       "name": "EN_50",
@@ -26828,7 +26828,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26842,7 +26842,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.100}"
       },
       "name": "EN_100",
@@ -26861,7 +26861,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26875,7 +26875,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.200}"
       },
       "name": "EN_200",
@@ -26894,7 +26894,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26908,7 +26908,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.300}"
       },
       "name": "EN_300",
@@ -26927,7 +26927,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26941,7 +26941,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.400}"
       },
       "name": "EN_400",
@@ -26960,7 +26960,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -26974,7 +26974,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.500}"
       },
       "name": "EN_500",
@@ -26993,7 +26993,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27007,7 +27007,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.600}"
       },
       "name": "EN_600",
@@ -27026,7 +27026,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27040,7 +27040,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.700}"
       },
       "name": "EN_700",
@@ -27059,7 +27059,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27073,7 +27073,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.800}"
       },
       "name": "EN_800",
@@ -27092,7 +27092,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27106,7 +27106,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.900}"
       },
       "name": "EN_900",
@@ -27125,7 +27125,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27139,7 +27139,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{green.950}"
       },
       "name": "EN_950",
@@ -27160,7 +27160,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27174,7 +27174,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.50}"
       },
       "name": "NGE_50",
@@ -27193,7 +27193,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27207,7 +27207,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.100}"
       },
       "name": "NGE_100",
@@ -27226,7 +27226,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27240,7 +27240,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.200}"
       },
       "name": "NGE_200",
@@ -27259,7 +27259,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27273,7 +27273,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.300}"
       },
       "name": "NGE_300",
@@ -27292,7 +27292,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27306,7 +27306,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.400}"
       },
       "name": "NGE_400",
@@ -27325,7 +27325,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27339,7 +27339,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.500}"
       },
       "name": "NGE_500",
@@ -27358,7 +27358,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27372,7 +27372,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.600}"
       },
       "name": "NGE_600",
@@ -27391,7 +27391,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27405,7 +27405,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.700}"
       },
       "name": "NGE_700",
@@ -27424,7 +27424,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27438,7 +27438,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.800}"
       },
       "name": "NGE_800",
@@ -27457,7 +27457,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27471,7 +27471,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.900}"
       },
       "name": "NGE_900",
@@ -27490,7 +27490,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27504,7 +27504,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{orange.950}"
       },
       "name": "NGE_950",
@@ -27525,7 +27525,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27539,7 +27539,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.50}"
       },
       "name": "PLE_50",
@@ -27558,7 +27558,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27572,7 +27572,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.100}"
       },
       "name": "PLE_100",
@@ -27591,7 +27591,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27605,7 +27605,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.200}"
       },
       "name": "PLE_200",
@@ -27624,7 +27624,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27638,7 +27638,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.300}"
       },
       "name": "PLE_300",
@@ -27657,7 +27657,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27671,7 +27671,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.400}"
       },
       "name": "PLE_400",
@@ -27690,7 +27690,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27704,7 +27704,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.500}"
       },
       "name": "PLE_500",
@@ -27723,7 +27723,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27737,7 +27737,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.600}"
       },
       "name": "PLE_600",
@@ -27756,7 +27756,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27770,7 +27770,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.700}"
       },
       "name": "PLE_700",
@@ -27789,7 +27789,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27803,7 +27803,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.800}"
       },
       "name": "PLE_800",
@@ -27822,7 +27822,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27836,7 +27836,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.900}"
       },
       "name": "PLE_900",
@@ -27855,7 +27855,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27869,7 +27869,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{purple.950}"
       },
       "name": "PLE_950",
@@ -27890,7 +27890,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27904,7 +27904,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.50}"
       },
       "name": "_50",
@@ -27923,7 +27923,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27937,7 +27937,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.100}"
       },
       "name": "_100",
@@ -27956,7 +27956,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -27970,7 +27970,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.200}"
       },
       "name": "_200",
@@ -27989,7 +27989,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28003,7 +28003,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.300}"
       },
       "name": "_300",
@@ -28022,7 +28022,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28036,7 +28036,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.400}"
       },
       "name": "_400",
@@ -28055,7 +28055,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28069,7 +28069,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.500}"
       },
       "name": "_500",
@@ -28088,7 +28088,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28102,7 +28102,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.600}"
       },
       "name": "_600",
@@ -28121,7 +28121,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28135,7 +28135,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.700}"
       },
       "name": "_700",
@@ -28154,7 +28154,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28168,7 +28168,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.800}"
       },
       "name": "_800",
@@ -28187,7 +28187,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28201,7 +28201,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.900}"
       },
       "name": "_900",
@@ -28220,7 +28220,7 @@
       },
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28234,7 +28234,7 @@
         },
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{red.950}"
       },
       "name": "_950",
@@ -28256,7 +28256,7 @@
       "$description": "Use color.brand-charcoal instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
       "isSource": true,
       "original": {
@@ -28268,7 +28268,7 @@
         "$description": "Use color.brand-charcoal instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{brand.charcoal}"
       },
       "name": "ND_CHARCOAL",
@@ -28289,7 +28289,7 @@
         "$description": "Use color.brand-orange.01p instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28301,7 +28301,7 @@
           "$description": "Use color.brand-orange.01p instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.orange.01}"
         },
         "name": "ND_ORANGE_01",
@@ -28322,7 +28322,7 @@
         "$description": "Use color.brand-orange.02p instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28334,7 +28334,7 @@
           "$description": "Use color.brand-orange.02p instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.orange.02}"
         },
         "name": "ND_ORANGE_02",
@@ -28355,7 +28355,7 @@
         "$description": "Use color.brand-orange.03p instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28367,7 +28367,7 @@
           "$description": "Use color.brand-orange.03p instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.orange.03}"
         },
         "name": "ND_ORANGE_03",
@@ -28390,7 +28390,7 @@
         "$description": "Use color.purple.01p instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28402,7 +28402,7 @@
           "$description": "Use color.purple.01p instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.purple.01}"
         },
         "name": "ND_PURPLE_01",
@@ -28423,7 +28423,7 @@
         "$description": "Use color.purple.02p instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28435,7 +28435,7 @@
           "$description": "Use color.purple.02p instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.purple.02}"
         },
         "name": "ND_PURPLE_02",
@@ -28458,7 +28458,7 @@
         "$description": "Use color.brand-gray.01 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28470,7 +28470,7 @@
           "$description": "Use color.brand-gray.01 instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.gray.01}"
         },
         "name": "ND_GRAY_01",
@@ -28491,7 +28491,7 @@
         "$description": "Use color.brand-gray.02 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28503,7 +28503,7 @@
           "$description": "Use color.brand-gray.02 instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.gray.02}"
         },
         "name": "ND_GRAY_02",
@@ -28524,7 +28524,7 @@
         "$description": "Use color.brand-gray.03 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28536,7 +28536,7 @@
           "$description": "Use color.brand-gray.03 instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.gray.03}"
         },
         "name": "ND_GRAY_03",
@@ -28557,7 +28557,7 @@
         "$description": "Use color.brand-gray.04 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28569,7 +28569,7 @@
           "$description": "Use color.brand-gray.04 instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.gray.04}"
         },
         "name": "ND_GRAY_04",
@@ -28590,7 +28590,7 @@
         "$description": "Use color.brand-gray.05 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "filePath": "src/tokens/deprecated/deprecated.color.tokens.json",
         "isSource": true,
         "original": {
@@ -28602,7 +28602,7 @@
           "$description": "Use color.brand-gray.05 instead.",
           "themeable": true,
           "prefix": false,
-          "deprecated": true,
+          "$deprecated": true,
           "key": "{brand.gray.05}"
         },
         "name": "ND_GRAY_05",
@@ -28626,7 +28626,7 @@
       "$description": "Use color.alpha.dark.16 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28638,7 +28638,7 @@
         "$description": "Use color.alpha.dark.16 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.16}"
       },
       "name": "RAY_A_16",
@@ -28658,7 +28658,7 @@
       "$description": "Use color.alpha.dark.24 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28670,7 +28670,7 @@
         "$description": "Use color.alpha.dark.24 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.24}"
       },
       "name": "RAY_A_24",
@@ -28690,7 +28690,7 @@
       "$description": "Use color.alpha.dark.2 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28702,7 +28702,7 @@
         "$description": "Use color.alpha.dark.2 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.02}"
       },
       "name": "RAY_A_02",
@@ -28722,7 +28722,7 @@
       "$description": "Use color.alpha.dark.4 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28734,7 +28734,7 @@
         "$description": "Use color.alpha.dark.4 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.04}"
       },
       "name": "RAY_A_04",
@@ -28754,7 +28754,7 @@
       "$description": "Use color.alpha.dark.6 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28766,7 +28766,7 @@
         "$description": "Use color.alpha.dark.6 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.06}"
       },
       "name": "RAY_A_06",
@@ -28786,7 +28786,7 @@
       "$description": "Use color.alpha.dark.8 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28798,7 +28798,7 @@
         "$description": "Use color.alpha.dark.8 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-gray-a.08}"
       },
       "name": "RAY_A_08",
@@ -28820,7 +28820,7 @@
       "$description": "Use color.alpha.light.16 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28832,7 +28832,7 @@
         "$description": "Use color.alpha.light.16 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.16}"
       },
       "name": "HITE_A_16",
@@ -28852,7 +28852,7 @@
       "$description": "Use color.alpha.light.24 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28864,7 +28864,7 @@
         "$description": "Use color.alpha.light.24 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.24}"
       },
       "name": "HITE_A_24",
@@ -28884,7 +28884,7 @@
       "$description": "Use color.alpha.light.36 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28896,7 +28896,7 @@
         "$description": "Use color.alpha.light.36 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.36}"
       },
       "name": "HITE_A_36",
@@ -28916,7 +28916,7 @@
       "$description": "Use color.alpha.light.2 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28928,7 +28928,7 @@
         "$description": "Use color.alpha.light.2 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.02}"
       },
       "name": "HITE_A_02",
@@ -28948,7 +28948,7 @@
       "$description": "Use color.alpha.light.4 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28960,7 +28960,7 @@
         "$description": "Use color.alpha.light.4 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.04}"
       },
       "name": "HITE_A_04",
@@ -28980,7 +28980,7 @@
       "$description": "Use color.alpha.light.6 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -28992,7 +28992,7 @@
         "$description": "Use color.alpha.light.6 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.06}"
       },
       "name": "HITE_A_06",
@@ -29012,7 +29012,7 @@
       "$description": "Use color.alpha.light.8 instead.",
       "themeable": true,
       "prefix": false,
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/deprecated/deprecated.color.transparency.tokens.json",
       "isSource": true,
       "original": {
@@ -29024,7 +29024,7 @@
         "$description": "Use color.alpha.light.8 instead.",
         "themeable": true,
         "prefix": false,
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{t-white-a.08}"
       },
       "name": "HITE_A_08",
@@ -35009,7 +35009,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
@@ -35024,7 +35024,7 @@
             "TEXT_FILL"
           ]
         },
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{text.primary}"
       },
       "name": "TEXT_PRIMARY",
@@ -35044,7 +35044,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
@@ -35059,7 +35059,7 @@
             "TEXT_FILL"
           ]
         },
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{text.secondary}"
       },
       "name": "TEXT_SECONDARY",
@@ -35079,7 +35079,7 @@
           "TEXT_FILL"
         ]
       },
-      "deprecated": true,
+      "$deprecated": true,
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
@@ -35094,7 +35094,7 @@
             "TEXT_FILL"
           ]
         },
-        "deprecated": true,
+        "$deprecated": true,
         "key": "{text.tertiary}"
       },
       "name": "TEXT_TERTIARY",
