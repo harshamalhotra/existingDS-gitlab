@@ -21482,7 +21482,7 @@ vue-inbrowser-compiler@^4.42.0:
     vue-inbrowser-compiler-utils "^4.72.4"
     walkes "^0.2.1"
 
-vue-live@1.x:
+vue-live@1.17.2:
   version "1.17.2"
   resolved "https://registry.yarnpkg.com/vue-live/-/vue-live-1.17.2.tgz#e2083b55d7a4cec8a7f6d623f4aa8fad4cfc57ac"
   integrity sha512-sy3fxQy57UQ5/p8bDGuGA82zHFO8UOJDESYBggWsjVwW9Yt1gixOO2KJrhJ0E0B4OznsXCY4P180Vm+o04mX1Q==
