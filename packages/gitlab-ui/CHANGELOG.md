@@ -1,5 +1,15 @@
 # @gitlab/ui
 
+## 115.2.0
+
+### Minor Changes
+
+- 8b3a26a: Use design token $deprecated property from Design Token Format Module
+
+  Replace "deprecated" property with "$deprecated" property as per
+  Design Token Format Module spec
+  Remove custom com.gitlab deprecated extension property
+
 ## 115.1.0
 
 ### Minor Changes
