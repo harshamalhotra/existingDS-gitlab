@@ -6,7 +6,7 @@ import readline from 'node:readline/promises';
 import { hideBin } from 'yargs/helpers';
 import yargs from 'yargs';
 import { format, resolveConfig } from 'prettier';
-import { sync as globbySync } from 'globby';
+import { globbySync } from 'globby';
 import * as tailwindPlugin from 'prettier-plugin-tailwindcss';
 import { parseMigrations, runSCSSMigrations, runMigrations } from './lib/tailwind_migrations.mjs';
 
