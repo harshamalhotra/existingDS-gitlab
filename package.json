@@ -51,7 +51,7 @@
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0",
     "prismjs": "^1.23.0",
-    "vue-live": "1.x"
+    "vue-live": "1.17.2"
   },
   "devDependencies": {
     "@babel/core": "7.28.0",
