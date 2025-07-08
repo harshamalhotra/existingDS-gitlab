@@ -262,6 +262,7 @@ export default {
       // These need to be transpiled as they use some advanced syntax like the
       // optional chaining operator
       '@gitlab/ui',
+      'gridstack',
     ],
   },
 
