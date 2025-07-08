@@ -50,7 +50,7 @@
     "iframe-resizer": "^4.4.5",
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.30.0",
     "vue-live": "1.17.2"
   },
   "devDependencies": {
