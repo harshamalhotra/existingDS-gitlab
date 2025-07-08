@@ -8,11 +8,29 @@ const CURSOR_GRABBING_CLASS = '!gl-cursor-grabbing';
 export default {
   name: 'GlGridLayout',
   props: {
+    /**
+     * The grid configuration object.
+     *
+     * @typedef {Object} DashboardGrid
+     * @property {Array<Object>} panels - The dashboard panels. If empty, it will render an empty grid
+     * @property {string} panels[].id - Each panel must have a unique ID.
+     * @property {string} panels[].title - The panel title to render.
+     * @property {Object} panels[].gridAttributes - Layout settings for the panel.
+     * @property {number} panels[].gridAttributes.width - Width of the panel in grid units.
+     * @property {number} panels[].gridAttributes.height - Height of the panel in grid units.
+     * @property {number} panels[].gridAttributes.xPos - X position of the panel in the grid, expressed in grid units, starts from 0.
+     * @property {number} panels[].gridAttributes.yPos - Y position of the panel in the grid, expressed in grid units, starts from 0.
+     *
+     * @type {DashboardGrid}
+     */
     value: {
       type: Object,
       required: true,
     },
-    isStatic: {
+    /**
+     * Set to `false` to enable user-driven modification of the grid layout.
+     */
+    isStaticGrid: {
       type: Boolean,
       required: false,
       default: true,
@@ -37,7 +55,7 @@ export default {
     },
   },
   watch: {
-    isStatic(value) {
+    isStaticGrid(value) {
       this.grid?.setStatic(value);
     },
     gridConfig: {
@@ -138,7 +156,7 @@ export default {
           animate: true,
           float: true,
           // Toggles user-customization of grid layout
-          staticGrid: this.isStatic,
+          staticGrid: this.isStaticGrid,
         },
         this.$refs.grid,
       ).load(this.gridConfig);
@@ -238,7 +256,7 @@ export default {
       ref="panelWrappers"
       :key="panel.id"
       class="gl-h-full"
-      :class="{ 'gl-cursor-grab': !isStatic }"
+      :class="{ 'gl-cursor-grab': !isStaticGrid }"
       data-testid="gridstack-panel"
     >
       <slot name="panel" v-bind="{ panel: panel.props }"></slot>

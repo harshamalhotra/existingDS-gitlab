@@ -198,9 +198,9 @@ describe('GlGridLayout', () => {
     );
   });
 
-  describe('when isStatic = false', () => {
+  describe('when isStaticGrid = false', () => {
     beforeEach(() => {
-      createWrapper({ isStatic: false });
+      createWrapper({ isStaticGrid: false });
     });
 
     it('initializes GridStack with staticGrid = false', () => {
@@ -212,8 +212,8 @@ describe('GlGridLayout', () => {
       );
     });
 
-    it('calls GridStack.setStatic when the isStatic prop changes', async () => {
-      wrapper.setProps({ isStatic: true });
+    it('calls GridStack.setStatic when the isStaticGrid prop changes', async () => {
+      wrapper.setProps({ isStaticGrid: true });
 
       await nextTick();
       await waitForAnimationFrame();
