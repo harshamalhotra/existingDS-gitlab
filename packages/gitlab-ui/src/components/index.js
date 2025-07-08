@@ -99,6 +99,7 @@ export { default as GlAccordion } from './base/accordion/accordion.vue';
 export { default as GlAccordionItem } from './base/accordion/accordion_item.vue';
 
 // Dashboards
+export { default as GlDashboardLayout } from './dashboards/dashboard_layout/dashboard_layout.vue';
 export { default as GlDashboardPanel } from './dashboards/dashboard_panel/dashboard_panel.vue';
 
 // Experimental
