@@ -92,7 +92,7 @@
     "jackspeak": "2.1.1",
     "postcss": "8.5.6",
     "json5": "2.2.3",
-    "rollup-plugin-vue/@vue/component-compiler/postcss-modules-sync/generic-names/loader-utils": "2.0.4"
+    "rollup-plugin-vue/@vue/component-compiler/postcss-modules-sync/generic-names/loader-utils": "3.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
