@@ -1288,15 +1288,15 @@
     lodash "^4.17.21"
     vue-eslint-parser "^9.4.3"
 
-"@gitlab/svgs@^3.137.0":
-  version "3.137.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.137.0.tgz#4c72fd69376ba0d294a29b465f1d2e0386d8bbd4"
-  integrity sha512-cNUNTRijXo68uxjgBnqr45BXGK6Mr4wWz6DoZI71hDhGQSauE0n8+z8SPxSWC7SCh8OU4aVa0B9K8QFAzxjjCw==
+"@gitlab/svgs@^3.138.0":
+  version "3.138.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.138.0.tgz#5db6d76ceedcf3716e9ce624b272a58052d8d121"
+  integrity sha512-Jzd7GhmKxsQdCTttOe6C4AjqGvq8L91N6uUYnAmwnLGeY3aRD12BKBSgId5FrTH6rvk2w36o1+AwIqP+YuHV4g==
 
-"@gitlab/ui@^115.3.0":
-  version "115.3.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-115.3.0.tgz#555192ef763d9695bc4ec1d5f2f6512ecf5c01cc"
-  integrity sha512-XJE4JCVZFkWdApODVMf9/avvafj+rlnUz9KKdL6BxpEAP6a3Kd+yqqZOJB85qr4hCyYqfXvtQy2V/RhGuIv41Q==
+"@gitlab/ui@^115.4.0":
+  version "115.4.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-115.4.0.tgz#f5fb265560c0d7bc98e5537c82ca701318be72f0"
+  integrity sha512-IjeeXHFZdnXIUoGqACdwwAPXTDT7OZdJ2kVPDOTfvc66Yow4OIXRNsZr300Fd3dvItyyDy5f/hCqhbyLMWb9hQ==
   dependencies:
     "@floating-ui/dom" "1.7.2"
     echarts "^5.6.0"
