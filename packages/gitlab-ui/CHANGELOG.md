@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.4.0
+
+### Minor Changes
+
+- e722d63: Adds an additional prop to allow customizing the classes applied to the panel body.
+
 ## 115.3.0
 
 ### Minor Changes
