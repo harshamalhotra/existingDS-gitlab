@@ -20,7 +20,7 @@ export default {
      * @typedef {Object} Dashboard
      * @property {string} title - The dashboard title to render. Expected if no #title or #header slot is provided.
      * @property {string} description - Optional: The dashboard description to render.
-     * @property {DashboardGrid} panels - The grid configuration. Expected if no #panel slot is provided.
+     * @property {DashboardGrid} panels - The grid configuration.
      * @see GridLayout.vue
      *
      * @type {Dashboard}
