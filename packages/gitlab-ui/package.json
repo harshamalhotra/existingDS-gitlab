@@ -87,7 +87,7 @@
     "vue": "^2.7.16"
   },
   "resolutions": {
-    "chokidar": "^3.6.0",
+    "chokidar": "^4.0.3",
     "sane": "^5.0.1",
     "jackspeak": "2.1.1",
     "postcss": "8.5.6",
