@@ -20,14 +20,8 @@ export default {
      * @typedef {Object} Dashboard
      * @property {string} title - The dashboard title to render. Expected if no #title or #header slot is provided.
      * @property {string} description - Optional: The dashboard description to render.
-     * @property {Array<Object>} panels - Optional: The dashboard panels. The entire object is passed to the #panel slot.
-     * @property {string} panels[].id - Each panel must have a unique ID.
-     * @property {string} panels[].title - The panel title to render.
-     * @property {Object} panels[].gridAttributes - Layout settings for the panel.
-     * @property {number} panels[].gridAttributes.width - Width of the panel in grid units.
-     * @property {number} panels[].gridAttributes.height - Height of the panel in grid units.
-     * @property {number} panels[].gridAttributes.xPos - X position of the panel in the grid, expressed in grid units, starts from 0.
-     * @property {number} panels[].gridAttributes.yPos - Y position of the panel in the grid, expressed in grid units, starts from 0.
+     * @property {DashboardGrid} panels - Optional: The grid configuration.
+     * @see GridLayout.vue
      *
      * @type {Dashboard}
      */
@@ -112,7 +106,7 @@ export default {
         <grid-layout
           v-if="dashboardHasPanels"
           :value="config"
-          :is-static="isStaticGrid"
+          :is-static-grid="isStaticGrid"
           class="-gl-mx-3"
           @input="emitChanges"
         >

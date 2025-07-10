@@ -84,7 +84,7 @@ describe('GlDashboardLayout', () => {
     });
 
     it('has a static grid', () => {
-      expect(findGrid().props('isStatic')).toBe(true);
+      expect(findGrid().props('isStaticGrid')).toBe(true);
     });
   });
 
@@ -236,7 +236,7 @@ describe('GlDashboardLayout', () => {
     });
 
     it('renders the grid with static disabled', () => {
-      expect(findGrid().props('isStatic')).toBe(false);
+      expect(findGrid().props('isStaticGrid')).toBe(false);
     });
 
     it('emits the changed event when the grid input event is fired', () => {
