@@ -133,9 +133,19 @@ const plugin = Vue => {
       }
     })
     // Create a mount point (a DIV) and mount it (which triggers the show)
-    const div = document.createElement('div')
-    document.body.appendChild(div)
-    toast.$mount(div)
+    function createMountPoint() {
+      const div = document.createElement('div')
+      document.body.appendChild(div)
+      toast.$mount(div)
+    }
+
+    // ViewTransition fallback
+    if (!document.startViewTransition) {
+      createMountPoint()
+      return
+    }
+
+    document.startViewTransition(createMountPoint)
   }
 
   // Declare BvToast instance property class

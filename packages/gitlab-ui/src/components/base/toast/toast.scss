@@ -5,10 +5,14 @@
 .b-toaster {
   &.b-toaster-bottom-left {
     .b-toaster-slot {
+      @apply gl-w-auto;
+      @apply gl-flex;
       bottom: $gl-spacing-scale-6;
       left: $gl-spacing-scale-6;
       right: auto;
-      @apply gl-w-auto;
+      flex-direction: column-reverse;
+      gap: $gl-spacing-scale-4;
+      view-transition-name: gl-toast;
 
       @include media-breakpoint-down(xs) {
         @apply gl-w-full;
@@ -59,4 +63,9 @@
     @apply gl-ml-5;
     color: inherit !important;
   }
+}
+
+::view-transition-group(gl-toast) {
+  animation-duration: $gl-transition-duration-medium;
+  animation-timing-function: $gl-easing-out-cubic;
 }
