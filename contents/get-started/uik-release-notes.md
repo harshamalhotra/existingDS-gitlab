@@ -2,6 +2,45 @@
 name: Release notes
 ---
 
+## 18.2
+
+<small>Published 2025-07-11</small>
+
+We can't contain ourselves this release. Well actually, we can, now that we've added both the card and CRUD design assets to help designers structure content. Accessibility gets a boost with the addition of annotation assets, making it easier to communicate accessible design intent across your work. We've also enhanced link documentation with improved guidance, examples, and cross-component references. Elsewhere, visual refinements help maintain consistency with recent product changes.
+
+Full highlights:
+
+- New card component for flexible content containers.
+- CRUD component with starter product examples.
+- Accessibility blueline annotation assets to help communicate accessibility details.
+- Comprehensive link documentation improvements.
+- Merge request reports refinements to match product changes.
+
+**💡 Figma tip:** There are several ways to select layers, but one that's really helpful is being able to use the [Select Layer menu](https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects) to select those hard to find [locked and hidden layers](https://help.figma.com/hc/en-us/articles/360040449873-Select-layers-and-objects#h_01HNBC5A064H0Y0TJA9PT9J8H9) (on a trackpad use a two-finger click to reveal the Select Layers menu).
+
+### Changelog
+
+#### ➕ Additions
+
+- (Component Library): Adds simple [**❖&nbsp;Card**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=131231-5825&p=f&t=n4LGVP8W7mwDeQPi-11) component.
+- (Annotations): Adds [**accessibility bluelines**](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?node-id=2406-34&p=f&t=6MxraATsgKdBZTqJ-11) annotation assets (also available as a [community file](https://www.figma.com/community/file/779827094223635810/accessibility-bluelines)).
+- (Patterns & Page Templates): Adds [**CRUD component**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1845-34&p=f&t=7KuVcE1MKT3IwltD-11) pattern and product examples ("component" in the name relates to how this is set up in the product, it isn't constructed as a component in Figma).
+- (Product Illustrations): Adds [**error-429-lg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=~error-429-lg) illustration.
+- (Product Icons): Adds [**work-item-parent**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-parent), [**work-item-child**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-child), and [**recipe**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~recipe) icons.
+
+#### 🔄 Changes
+
+- (Component Library): Updates link concepts, component documentation, and examples:
+  - Adds [link section](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=72017-103312&t=kkXnciK7CA9NXjeU-11) under typography text styles with brief details about link use.
+  - Adds more [**❖&nbsp;Link**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=81916-116837&p=f&t=n4LGVP8W7mwDeQPi-11) product examples.
+  - Adds cross links between typography and link component pages.
+  - Updates [**❖&nbsp;Link/Meta**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=86229-117441&t=AfjkHZIudoOnsyj4-11) and [**❖&nbsp;Link/UI**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=86229-117440&t=AfjkHZIudoOnsyj4-11) descriptions to include external link guidance.
+- (Patterns & Page Templates): Increase [**merge request reports**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1-106&p=f&t=kqPheBmsas3bFZl8-11) border radius to match recent product changes along with additional border cleanup.
+
+#### Contributors
+
+Dan Mizzi-Harris, Graham Bachelder, Jeremy Elder, Julia Miocene, Libor Vanc
+
 ## 18.1
 
 <small>Published 2025-06-13</small>
@@ -18,7 +57,6 @@ This release adds new highlight design tokens and animated product icon artifact
 
 - (Annotations): [Detaches icons](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?m=auto&node-id=2084-34&t=QVBj7GaHUeR2bQTs-1) to remove library dependency.
   - Removes component library, design tokens, and product icons from enabled libraries in this file.
-
 - (Product Icons): Includes [animated icon artifacts](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?m=auto&node-id=7806-471&t=ZALoVOXK3nIFe8Ix-1). These static shapes are used to construct animated icons. Animated icons are not currently available in Figma, [see them in action in gitlab-ui](https://design.gitlab.com/storybook/?path=/docs/base-animated-icon--docs).
 
 #### 🛠️ Fixes
@@ -60,7 +98,7 @@ Full highlights:
 - (Design Tokens): Reduces saturation in the 600–950 chromatic hue values in order to have the colors work better in dark mode against darker surfaces.
 - (Design tokens): Moves [constant](/product-foundations/design-tokens#constant-design-tokens) color styles from [**📙&nbsp;Component&nbsp;library**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ) to [**Design&nbsp;tokens**](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD) library.
 - (Component Library): Updates [**❖&nbsp;Button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=122559-8763&t=ad6mk81EhMpPFpIH-4) selected styles.
-- (Component Library): Updates [**Dropdown**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14) component styles.
+- (Component Library): Updates [**❖&nbsp;Dropdown**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14) component styles.
 
 #### 🛠️ Fixes
 
