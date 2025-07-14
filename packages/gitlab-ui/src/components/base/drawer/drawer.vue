@@ -120,13 +120,18 @@ export default {
         </div>
         <slot name="header"></slot>
       </div>
-      <div class="gl-drawer-body" :class="{ 'gl-drawer-body-scrim': !shouldRenderFooter }">
+      <div
+        class="gl-drawer-body"
+        :class="{
+          'gl-drawer-body-shrink': headerSticky,
+          'gl-drawer-body-scrim': !shouldRenderFooter,
+        }"
+      >
         <slot></slot>
       </div>
       <div
         v-if="shouldRenderFooter"
-        class="gl-drawer-footer gl-drawer-footer-sticky"
-        :class="{ 'gl-drawer-body-scrim-on-footer': shouldRenderFooter }"
+        class="gl-drawer-footer gl-drawer-footer-sticky gl-drawer-body-scrim-on-footer"
         :style="{ zIndex }"
       >
         <slot name="footer"></slot>

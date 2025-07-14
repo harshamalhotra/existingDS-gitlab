@@ -31,8 +31,10 @@ describe('drawer component', () => {
       it('renders drawer header with sticky position', () => {
         mountWithOpts({ props: { open: true, headerSticky: true } });
         const header = wrapper.find('.gl-drawer-header');
+        const body = wrapper.find('.gl-drawer-body');
 
         expect(header.classes()).toContain('gl-drawer-header-sticky');
+        expect(body.classes()).toContain('gl-drawer-body-shrink');
         expect(header.attributes('style')).toBe('z-index: 10;');
       });
     });
