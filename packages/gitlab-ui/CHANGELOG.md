@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.5.0
+
+### Minor Changes
+
+- 105a0f6: Shrink drawer body only when headerSticky prop is present
+
 ## 115.4.0
 
 ### Minor Changes
