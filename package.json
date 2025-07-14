@@ -81,7 +81,7 @@
     "jest": "30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "jest-serializer-vue": "^3.1.0",
-    "lefthook": "^1.11.16",
+    "lefthook": "^1.12.2",
     "linkinator": "^6.1.4",
     "markdownlint-cli2": "^0.18.1",
     "patch-package": "^8.0.0",
