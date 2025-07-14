@@ -1984,10 +1984,10 @@
     "@snowplow/browser-plugin-performance-timing" "^4.3.0"
     "@snowplow/browser-tracker" "^4.3.0"
 
-"@gitlab/eslint-plugin@21.1.0":
-  version "21.1.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/eslint-plugin/-/eslint-plugin-21.1.0.tgz#4cbf2db8b424a93a68dd32be7116e8869e7c55d1"
-  integrity sha512-Va3LlxesMFSnENH6jkxUR6J4TXAdMsn+BmF1UWsr7mvUjkgZSkd4nUlkYxVYYuqRDcpZVcpFHKHa+TsTF4LCQQ==
+"@gitlab/eslint-plugin@21.2.0":
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/eslint-plugin/-/eslint-plugin-21.2.0.tgz#0b9b4c0c1e012f5262d172aeafdfe72a31c6fadf"
+  integrity sha512-m5mK6mMojp0Jclr0i6ipjv3YM76pJIw+Tsimbn5DNR+lVXSIz4i7gOP3RW4oMgu0ThSVA3klta8TKfdigKoh1g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^7.14.1"
     confusing-browser-globals "^1.0.11"
@@ -2103,18 +2103,6 @@
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
-
-"@jest/console@30.0.2":
-  version "30.0.2"
-  resolved "https://registry.yarnpkg.com/@jest/console/-/console-30.0.2.tgz#e2bf6c7703d45f9824d77c7332388c3e1685afd7"
-  integrity sha512-krGElPU0FipAqpVZ/BRZOy0MZh/ARdJ0Nj+PiH1ykFY1+VpBlYNLjdjVA5CFKxnKR6PFqFutO4Z7cdK9BlGiDA==
-  dependencies:
-    "@jest/types" "30.0.1"
-    "@types/node" "*"
-    chalk "^4.1.2"
-    jest-message-util "30.0.2"
-    jest-util "30.0.2"
-    slash "^3.0.0"
 
 "@jest/console@30.0.4":
   version "30.0.4"
@@ -2441,16 +2429,6 @@
     callsites "^3.0.0"
     graceful-fs "^4.2.9"
 
-"@jest/test-result@30.0.2":
-  version "30.0.2"
-  resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-30.0.2.tgz#786849e33da6060381c508986fa7309ff855a367"
-  integrity sha512-KKMuBKkkZYP/GfHMhI+cH2/P3+taMZS3qnqqiPC1UXZTJskkCS+YU/ILCtw5anw1+YsTulDHFpDo70mmCedW8w==
-  dependencies:
-    "@jest/console" "30.0.2"
-    "@jest/types" "30.0.1"
-    "@types/istanbul-lib-coverage" "^2.0.6"
-    collect-v8-coverage "^1.0.2"
-
 "@jest/test-result@30.0.4":
   version "30.0.4"
   resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-30.0.4.tgz#0b1c4e8256e3f9ebb9452ede22d4b04b31ea54fe"
@@ -2470,16 +2448,6 @@
     "@jest/types" "^29.6.3"
     "@types/istanbul-lib-coverage" "^2.0.0"
     collect-v8-coverage "^1.0.0"
-
-"@jest/test-sequencer@30.0.2":
-  version "30.0.2"
-  resolved "https://registry.yarnpkg.com/@jest/test-sequencer/-/test-sequencer-30.0.2.tgz#2693692d285b1c929ed353f7f0b7cbea51c57515"
-  integrity sha512-fbyU5HPka0rkalZ3MXVvq0hwZY8dx3Y6SCqR64zRmh+xXlDeFl0IdL4l9e7vp4gxEXTYHbwLFA1D+WW5CucaSw==
-  dependencies:
-    "@jest/test-result" "30.0.2"
-    graceful-fs "^4.2.11"
-    jest-haste-map "30.0.2"
-    slash "^3.0.0"
 
 "@jest/test-sequencer@30.0.4":
   version "30.0.4"
