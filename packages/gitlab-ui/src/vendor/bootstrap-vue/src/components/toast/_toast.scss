@@ -19,10 +19,6 @@
     background-color: rgba($toast-background-color, $b-toast-background-opacity);
   }
 
-  &:not(:last-child) {
-    margin-bottom: $toast-padding-x;
-  }
-
   &.b-toast-solid {
     .toast {
       background-color: rgba($toast-background-color, 1);
