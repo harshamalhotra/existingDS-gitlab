@@ -98,7 +98,7 @@ export default {
     tabs() {
       let { tabs = [] } = this.page;
 
-      if (this.componentLabel) {
+      if (this.hasComponents) {
         tabs = [
           {
             route: 'section-slug',
@@ -107,17 +107,15 @@ export default {
           ...tabs,
         ];
 
-        if (this.hasComponents) {
-          tabs.push({
-            route: 'section-slug-code',
-            title: 'Implementation (Vue.js)',
-          });
+        tabs.push({
+          route: 'section-slug-code',
+          title: 'Implementation (Vue.js)',
+        });
 
-          tabs.push({
-            route: 'section-slug-lookbook',
-            title: 'Implementation (Rails)',
-          });
-        }
+        tabs.push({
+          route: 'section-slug-lookbook',
+          title: 'Implementation (Rails)',
+        });
 
         tabs.push({
           route: 'section-slug-contribute',
