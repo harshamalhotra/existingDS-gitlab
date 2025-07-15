@@ -28,7 +28,11 @@ const isExternalModule = (moduleId) => {
      * Those are added as `modules` with an url like filename:
      * `component.js?rollup-plugin-vue=script.js`
      */
-    moduleId.includes('?rollup-plugin-vue=')
+    moduleId.includes('?rollup-plugin-vue=') ||
+    /**
+     * Our entrypoints should not be considered external
+     */
+    moduleId.match(/src\/.+\.(js|vue)$/)
   ) {
     return false;
   }
