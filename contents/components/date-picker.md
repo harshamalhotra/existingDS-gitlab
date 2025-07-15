@@ -1,10 +1,6 @@
 ---
 name: Date picker
 description: The date picker allows a user to choose and/or input a date by using a calendar dropdown or by typing the date into a text field.
-componentLabel: form-date-picker
-components:
-  - base-datepicker
-  - base-daterange-picker
 related:
   - text-input
 ---
@@ -90,3 +86,48 @@ Use the following guidelines to choose the right component in most cases:
 
 - In Adrian Roselli's article, _[Maybe You Don't Need a Date Picker](https://adrianroselli.com/2019/07/maybe-you-dont-need-a-date-picker.html)_, he states that "Users generally do not want a complex date picker every time you ask for any date. At least not users with a keyboard." He follows the [robustness principle](https://en.wikipedia.org/wiki/Robustness_principle) where you should "be conservative in what you do, be liberal in what you accept from others" in his exploration. A date picker can simply be overwhelming for something as simple as entering a familiar date, especially for keyboard-only users. Anecdotally he backs this up with 20 years of research. To be clear though, he also mentions that a plain text field will not work "if you need to see chosen dates, unavailable dates, weekends, holidays, date spans, date ranges, dates where counts from start or end dates matter, and so on."
 - In HTML5 an input with `type="date"` is available, but [accessibility support](https://a11ysupport.io/tech/html/input(type-date)_element) for screen readers and voice control is inconsistent.
+
+## Code reference
+
+### GlDatePicker
+
+Be careful when binding a date value using `value` prop. `value` is a watched property and Date
+picker will emit `input` event on _initial load_. Alternatively, use `defaultDate` to set the
+initial date then receive updated date values through `input` events.
+
+<story-viewer component="base-datepicker" title="GlDatePicker" view-mode="docs"></story-viewer>
+
+### GlDaterangePicker
+
+Daterange picker allows users to choose a date range by manually typing the start/end date
+into the input fields or by using a calendar-like dropdown.
+
+A `maxDateRange` can be specified in order to limit the maximum number of days the component
+will allow to be selected i.e. if the start date is `2020-08-01` and `maxDateRange` is set to `10`,
+the highest selectable end date would be `2020-08-11`. This value will be offset by `1` if
+`sameDaySelection` is set to `true`. A `defaultMaxDate` will need to be
+provided when making use of the `maxDateRange`.
+
+By default, the component does not allow selection of the same start and end date.
+In a scenario where this is required, the `sameDaySelection` property can be configured.
+This is specifically useful when a single day selection is being defined as `2020-01-01 00:00:00`
+to `2020-01-01 23:59:59` instead of `2020-01-01 00:00:00` to `2020-01-02 00:00:00`.
+
+When `maxDateRange` is set it's a good idea to set the `tooltip` specifying the date range limit
+and to indicate the number of days currently selected using the default slot. For example:
+
+```vue
+<template #default="{ daysSelected }">
+  <span v-if="daysSelected > -1">{{ daysSelected }} days selected</span>
+  <span v-else>No days selected</span>
+</template>
+```
+
+The `daysSelected` slot prop is the effective date range, thus the value is increased by one when
+`sameDaySelection` is set to `true`. When no date range has been selected the value is `-1`.
+
+### Note
+
+If specifying a maxDateRange, it is good practice to include a date range indicator and tooltip.
+
+<story-viewer component="base-daterange-picker" title="GlDaterangePicker" view-mode="docs"></story-viewer>

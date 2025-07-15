@@ -1,8 +1,6 @@
 ---
 name: Pagination
 description: Pagination breaks up content into multiple pages with controls for navigating those pages.
-components:
-  - base-pagination
 related:
   - button
   - button-group
@@ -83,6 +81,93 @@ Keyset pagination only has **Prev** and **Next** options and no page numbers. It
   - Use `aria-current="page"` on the active page link.
   - Each link should have `aria-label` to clarify what the page number means. For example, `<a href="/p3" aria-label="Page 3">3</a>`.
 - When navigating with pagination, the focus and scroll position should be at the top of the new page content so a user can continue moving through the results.
+
+## Code reference
+
+### GlPagination
+
+<story-viewer component="base-pagination" title="GlPagination" view-mode="docs"></story-viewer>
+
+#### Current page
+
+The current page's value should be bound using `v-model`, e.g.:
+
+```html
+<script>
+  export default {
+    data: () => ({
+      page: 2,
+    }),
+  };
+</script>
+
+<template>
+  <gl-pagination v-model="page" :per-page="10" :total-items="100" />
+</template>
+```
+
+#### Limits
+
+The `limits` prop is used to define pagination link limits based on Bootstrap's breakpoint sizes.
+It is strongly recommended you provide a 'default' property, even if you have accounted for all
+breakpoint sizes. While unlikely, it is possible breakpoints could change, thus, a default property
+ensures a graceful fallback.
+
+Here is `limits` default value:
+
+```js
+{
+  xs: 0,
+  sm: 3,
+  md: 9,
+  default: 9,
+}
+```
+
+<note>The component will not render any UI if the total items available for display is less than the max items per page.</note>
+
+### GlKeysetPagination
+
+<story-viewer component="base-keyset-pagination" title="GlKeysetPagination" view-mode="docs"></story-viewer>
+
+The simplest way to use `GlKeysetPagination` with a paginated GraphQL response
+is to `v-bind` to the
+[`PageInfo`](https://docs.gitlab.com/ee/api/graphql/reference/#pageinfo) type
+returned by the endpoint:
+
+```html
+<gl-keyset-pagination v-bind="pageInfo" />
+```
+
+This is possible because the default field names of the `PageInfo` type align
+with the `props` of this component.
+
+#### Dos and don'ts
+
+**✅ Do** provide the `prevText` and `nextText` props with translatable strings.
+The default strings ("Prev" and "Next") are hardcoded in this component and
+can't be translated.
+
+Example:
+
+```html
+<gl-keyset-pagination v-bind="pageInfo" :prev-text="__('Prev')" :next-text="__('Next')" />
+```
+
+**✅ Do** use this component for paginating GraphQL requests[^1] (or any
+endpoint that uses keyset pagination).
+
+**❌ Don't** use this component for paginating REST requests[^1] (or any
+endpoint that uses offset pagination).
+
+For offset pagination, use the [`GlPagination`
+component](/?path=/story/base-pagination--default) instead.
+
+For more information on the difference between offset and keyset pagination see
+[our documentation on GraphQL
+pagination](https://docs.gitlab.com/ee/development/graphql_guide/pagination.html).
+
+[^1]: There's no intrinsic reason why GraphQL endpoints can't support offset pagination (in fact, [the official documentation](https://graphql.org/learn/pagination/#pagination-and-edges) shows an example offset pagination implementation) or why REST endpoints can't support keyset pagination. This is simply how we've chosen to implement our REST and GraphQL endpoints at GitLab.
 
 ## Reference
 

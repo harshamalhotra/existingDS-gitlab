@@ -1,4 +1,3 @@
-import readme from './card.md';
 import GlCard from './card.vue';
 
 const generateProps = ({
@@ -41,13 +40,6 @@ Default.args = generateProps();
 export default {
   title: 'base/card',
   component: GlCard,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     headerClass: { control: 'text' },
     bodyClass: { control: 'text' },

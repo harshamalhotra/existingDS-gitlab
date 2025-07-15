@@ -1,8 +1,6 @@
 ---
 name: Popover
 description: A popover is used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements. It informs the user of additional information within the context of their original view, but without forcing them to act upon it like a modal.
-components:
-  - base-popover
 related:
   - tooltip
   - modal
@@ -75,3 +73,9 @@ When a popover is visible:
 
 - The focus can move to the next logical interactive element in the DOM and doesn't loop in the popover.
 - The content within is next in the reading order from the trigger element and not appended to the DOM.
+
+## Code reference
+
+### GlPopover
+
+<story-viewer component="base-popover" title="GlPopover" view-mode="docs"></story-viewer>

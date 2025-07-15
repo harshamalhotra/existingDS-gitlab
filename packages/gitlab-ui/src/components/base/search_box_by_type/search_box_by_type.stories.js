@@ -1,6 +1,5 @@
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import GlSearchBoxByType from './search_box_by_type.vue';
-import readme from './search_box_by_type.md';
 
 const template = `
   <gl-search-box-by-type
@@ -49,13 +48,6 @@ Borderless.args = generateProps({
 export default {
   title: 'base/search-box-by-type',
   component: GlSearchBoxByType,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls(['value']),
   },

@@ -2,7 +2,6 @@ import GlFormInput from '../form/form_input/form_input.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/table/README.md';
 import { makeContainer } from '../../../utils/story_decorators/container';
 import GlTable from './table.vue';
-import readme from './table.md';
 
 const components = { GlTable };
 
@@ -196,11 +195,6 @@ export default {
   parameters: {
     bootstrapComponent: 'b-table',
     bootstrapDocs: BVueReadme,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     stacked: {

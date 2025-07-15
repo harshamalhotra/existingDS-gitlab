@@ -1,7 +1,6 @@
 import GlButton from '../button/button.vue';
 import GlCard from '../card/card.vue';
 import GlCollapse from './collapse.vue';
-import readme from './collapse.md';
 
 const generateProps = ({ visible = false } = {}) => ({ visible });
 
@@ -37,11 +36,4 @@ Default.args = generateProps();
 export default {
   title: 'base/collapse',
   component: GlCollapse,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

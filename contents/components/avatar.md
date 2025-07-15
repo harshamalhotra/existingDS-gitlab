@@ -2,8 +2,6 @@
 name: Avatar
 description: An avatar represents a unique entity, like a person, group, or project.
 docs: in-progress
-components:
-  - base-avatar
 related:
   - badge
   - breadcrumb
@@ -83,3 +81,78 @@ The following only applies to circle avatars.
 - If an avatar image is adjacent to descriptive text, like a user or project name, it should use an empty `alt` tag so it can be ignored by a screen reader.
 - If an avatar has a [tooltip](/components/tooltip) or a [popover](/components/popover) it must also be [focusable via keyboard](/accessibility/keyboard-only) to ensure the content is available for assistive technology. Tooltip content should match that of the `alt` attribute.
 - The single text character in the fallback (identicon) has no semantic meaning and uses `aria-hidden="true"` to prevent it from being announced.
+
+## Code reference
+
+### GlAvatar
+
+<story-viewer component="base-avatar" story="image" title="GlAvatar" view-mode="docs"></story-viewer>
+
+### Pajamas::AvatarComponent
+
+<lookbook-viewer component="avatar"></lookbook-viewer>
+
+### GlAvatarLabelled
+
+<story-viewer component="base-avatar-labeled" title="GlAvatarLabelled" view-mode="docs"></story-viewer>
+
+### GlAvatarInline
+
+<story-viewer component="base-avatar-avatars-inline" title="GlAvatarInline" view-mode="docs"></story-viewer>
+
+Avatars may also be adjacent to a text alternative, such as a user or project name. In these cases,
+a null `alt` text should be used so that they can be ignored by assistive technologies.
+
+Use the `avatar-labeled` component in those scenarios. It will set a null `alt` text by default.
+It allows to display a `label` and/or a `sub-label` next to the avatar image. It accepts the same
+properties as the avatar component to modify the avatar’s shape and size.
+
+#### Using the component
+
+```html
+<gl-avatar-labeled
+  :shape="shape"
+  :size="size"
+  :src="src"
+  :label="label"
+  :sub-label="subLabel"
+/>
+```
+
+### GlAvatarLink
+
+<story-viewer component="base-avatar-avatar-link" story="GlAvatarLink" title="Avatar link" view-mode="docs"></story-viewer>
+
+`<gl-avatar-link>` decorates `<gl-avatar>` with hyperlink functionality. It accepts the same
+properties as the `<gl-link>` component and it works in the same way too. The main purpose of this
+component is to apply visual enhancements that makes evident that the user can interact with the
+avatar.
+
+#### Using the component
+
+When wrapping an `<gl-avatar>` component, `<gl-avatar-link>` darkens
+the border that surrounds the avatar image or fallback text when hovering over it.
+
+```vue
+<gl-avatar-link target="blank" href="https://gitlab.com/gitlab-org/gitlab">
+  <gl-avatar
+    :size="32"
+    :src="avatarUrl"
+  />
+</gl-avatar-link>
+```
+
+When wrapping an `<avatar-labeled>` component, `<avatar-link>` underlines
+the label and sub-label text when hovering over the avatar. It also applies the
+same effects described in the first example.
+
+```vue
+<gl-avatar-link target="blank" href="https://gitlab.com/gitlab-org/gitlab">
+  <gl-avatar-labeled
+    :size="32"
+    entity-name="GitLab"
+    label="GitLab User"
+    sub-label="@gitlab"
+  />
+</gl-avatar-link>
+```

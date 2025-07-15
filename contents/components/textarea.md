@@ -1,7 +1,6 @@
 ---
 name: Textarea
 description: A component for the HTML textarea element.
-componentLabel: form-textarea
 ---
 
 ## Examples
@@ -46,3 +45,13 @@ componentLabel: form-textarea
   <gl-form-textarea id="issue-description" v-model="description" />
 </gl-form-group>
 ```
+
+## Code reference
+
+### GlFormTextarea
+
+**Note:** This needs a `v-model` property to work correctly.
+See [this issue](https://github.com/bootstrap-vue/bootstrap-vue/issues/1915) on Bootstrap Vue for
+more information.
+
+<story-viewer component="base-form-form-textarea" title="GlFormTextarea" view-mode="docs"></story-viewer>

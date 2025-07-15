@@ -1,8 +1,6 @@
 ---
 name: Progress bar
 description: A progress bar indicates a percentage of completion.
-components:
-  - base-progress-bar
 related:
   - spinner
   - skeleton-loader
@@ -59,3 +57,36 @@ The progress indicator is a static representation of progress at a given point o
 ## Reference
 
 Although browser support is good for `<progress>`, screen readers handle them inconsistently. You may want to consider hiding it from screen readers and relying on visible text instead. For more details, read Scott O'Hara's post, [Styles Progress Bar](https://scottaohara.github.io/a11y_styled_form_controls/src/progress-bar/).
+
+## Code reference
+
+### GlProgressBar
+
+<story-viewer component="base-progress-bar" title="GlProgressBar" view-mode="docs"></story-viewer>
+
+#### Value
+
+The `value` prop can be a Number or String. If not given, it will default to `0`.
+
+#### Variants
+
+The following variants are available:
+
+1. 'primary' (default)
+2. 'success'
+3. 'warning'
+4. 'danger'
+
+#### Maximum
+
+A custom maximum can be set with the `max` prop. If not given, it will default to `100`.
+
+#### Width and Height
+
+The `GlProgressBar` will always expand to the maximum width of its parent container.
+The height can be controlled with the `height` prop. The value should be a standard
+CSS dimension (`px`, `rem`, `em`, etc.) and given as a String, e.g. `'20px'`.
+
+### Pajamas::ProgressComponent
+
+<lookbook-viewer component="progress"></lookbook-viewer>

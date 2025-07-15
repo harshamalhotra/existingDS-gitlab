@@ -1,6 +1,5 @@
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import GlSearchBoxByClick from './search_box_by_click.vue';
-import readme from './search_box_by_click.md';
 
 const template = `
   <gl-search-box-by-click
@@ -84,13 +83,6 @@ History.args = generateProps({
 export default {
   title: 'base/search-box-by-click',
   component: GlSearchBoxByClick,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls(['tooltipContainer']),
     historyItems: {

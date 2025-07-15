@@ -2,7 +2,6 @@ import avatarPath1 from '../../../../static/img/avatar_1.png';
 import avatarPath2 from '../../../../static/img/avatar_2.png';
 import { breadCrumbSizeOptions } from '../../../utils/constants';
 import GlBreadcrumb from './breadcrumb.vue';
-import readme from './breadcrumb.md';
 
 const template = `
     <gl-breadcrumb
@@ -72,13 +71,6 @@ const CollapsedTemplate = (args, { argTypes }) => ({
 export default {
   title: 'base/breadcrumb',
   component: GlBreadcrumb,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     size: {
       options: Object.keys(breadCrumbSizeOptions),

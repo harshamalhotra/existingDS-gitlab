@@ -1,8 +1,6 @@
 ---
 name: Path
 description: Paths are horizontal process flows composed of a series of stages.
-components:
-  - base-path
 related:
   - tabs
   - stepper
@@ -47,3 +45,42 @@ related:
 | <kbd>Tab</kbd>  | When focus is outside of the path, moves focus to the active stage. If focus is on the active stage, moves focus to the content within the content of that stage |
 | <kbd>→</kbd>    | Focuses and activates the next stage in the path. If the current tab is the last tab in the tab list, it activates the first tab. |
 | <kbd>←</kbd>    | Focuses and activates the previous stage in the path. If the current tab is the first tab in the tab list, it activates the last tab. |
+
+### GlPath
+
+<story-viewer component="base-path" title="GlPath" view-mode="docs"></story-viewer>
+
+#### Implemetation
+
+The component should be initialized with an array of data objects. By
+default, the first item in the array will be selected. This can be
+overridden by passing in an object with the selected property set to
+true.
+
+```js
+items: [
+  {
+    title: 'First',
+  },
+  {
+    title: 'Second',
+    selected: true
+  },
+  ...
+```
+
+Once an item has been selected the `selected` event will be emitted.
+The emitted event will include the entire object at the selected index.
+
+##### Customization
+
+Additional attributes can be configured via the `items` object. Currently
+support for `metric` and `icon` are provided. Please see the individual
+examples for further information on these.
+
+#### Additional information
+
+A `backgroundColor` property can be specified when using this component
+on different colored backgrounds.
+
+This component supports various themes and is mobile responsive.

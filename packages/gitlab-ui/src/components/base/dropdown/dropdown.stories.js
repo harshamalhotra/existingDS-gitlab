@@ -16,7 +16,6 @@ import GlDropdownItem from './dropdown_item.vue';
 import GlDropdownText from './dropdown_text.vue';
 import GlDropdownForm from './dropdown_form.vue';
 import GlDropdown from './dropdown.vue';
-import readme from './dropdown.md';
 
 const components = {
   GlAvatar,
@@ -572,12 +571,6 @@ export default {
   parameters: {
     bootstrapComponent: 'b-dropdown',
     bootstrapDocs: BVueReadme,
-
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     category: {

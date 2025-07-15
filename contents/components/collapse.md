@@ -1,8 +1,19 @@
+---
+name: Collapse
+description: Collapse is used to keep pages focused on the overview of what the user can do.
+---
+
 Collapse is used to keep pages focused on the overview of what the user can do. Details and
 additional actions are hidden in the fold, and can be opened if the user wants to interact with
 those elements.
 
-## `v-model` support
+## Examples
+
+<story-viewer component="base-collapse" title="Default collapse"></story-viewer>
+
+## Code reference
+
+### `v-model` support
 
 The component's collapsed (visible) state can be set with `v-model` which binds internally to
 the `visible` prop.
@@ -40,7 +51,7 @@ to the ID(s) of the target `<gl-collapse>` component(s).
 </script>
 ```
 
-## Troubleshooting
+### Troubleshooting
 
 When collapsing the container, padding on the collapse component causes
 complications with the height calculations.
@@ -62,3 +73,7 @@ simplifies the height calculations and removes the jumpiness.
     </div>
 </gl-collapse>
 ```
+
+### GlCollapse
+
+<story-viewer component="base-collapse" title="GlCollapse" view-mode="docs"></story-viewer>

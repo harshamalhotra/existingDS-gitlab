@@ -4,7 +4,6 @@ import { SafeHtmlDirective as SafeHtml } from '../../../directives/safe_html/saf
 import { colorThemes } from '../../../utils/constants';
 import GlBroadcastMessage from './broadcast_message.vue';
 import { TYPE_LIST, TYPE_NOTIFICATION } from './constants';
-import readme from './broadcast_message.md';
 
 const template = `
     <gl-broadcast-message
@@ -102,13 +101,6 @@ IncreasedSpacing.args = generateProps();
 export default {
   title: 'base/broadcast message',
   component: GlBroadcastMessage,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     iconName: {
       options: iconSpriteInfo.icons,

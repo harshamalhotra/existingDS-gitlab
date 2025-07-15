@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import { alignOptions } from '../../../utils/constants';
-import readme from './pagination.md';
 import GlPagination from './pagination.vue';
 
 const components = { GlPagination };
@@ -95,13 +94,6 @@ AlignRight.args = generateProps({ align: alignOptions.right });
 export default {
   title: 'base/pagination',
   component: GlPagination,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     align: {
       options: Object.values(alignOptions),

@@ -3,7 +3,6 @@ import { formInputWidths, formStateOptions } from '../../../../utils/constants';
 import GlFormGroup from '../form_group/form_group.vue';
 import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-select/README.md';
 import { formSelectOptions } from './constants';
-import readme from './form_select.md';
 import GlFormSelect from './form_select.vue';
 
 const data = () => ({
@@ -115,12 +114,6 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-select',
     bootstrapDocs: BVueReadme,
-
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     width: {

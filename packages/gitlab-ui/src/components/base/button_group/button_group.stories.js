@@ -9,7 +9,6 @@ import {
   buttonVariantOptions,
 } from '../../../utils/constants';
 import GlButtonGroup from './button_group.vue';
-import readme from './button_group.md';
 
 const defaultValue = propDefaultFactory(GlButton);
 
@@ -645,13 +644,6 @@ Object.assign(AllLegacyDropdownsVariants, {
 export default {
   title: 'base/button group',
   component: GlButtonGroup,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     category: {
       options: Object.keys(buttonCategoryOptions),

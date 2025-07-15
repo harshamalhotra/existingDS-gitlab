@@ -28,7 +28,6 @@ import {
 } from '../../../../utils/stories_constants';
 import { POSITION } from '../../../utilities/truncate/constants';
 import GlFormGroup from '../../form/form_group/form_group.vue';
-import readme from './listbox.md';
 import { mockOptions, mockGroups, mockGroupsWithTextSrOnly, mockUsers } from './mock_data';
 import { flattenedOptions } from './utils';
 import GlCollapsibleListbox from './listbox.vue';
@@ -460,13 +459,6 @@ GroupWithoutLabel.args = generateProps({
 export default {
   title: 'base/dropdown/collapsible-listbox',
   component: GlCollapsibleListbox,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     category: {
       control: 'select',

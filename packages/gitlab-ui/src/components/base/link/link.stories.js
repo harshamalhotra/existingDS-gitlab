@@ -1,7 +1,6 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import { linkVariantOptions, targetOptions } from '../../../utils/constants';
 import GlLink from './link.vue';
-import readme from './link.md';
 
 const defaultValue = propDefaultFactory(GlLink);
 
@@ -96,13 +95,6 @@ MentionLinkCurrentUser.args = generateProps({
 export default {
   title: 'base/link',
   component: GlLink,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: Object.keys(linkVariantOptions),

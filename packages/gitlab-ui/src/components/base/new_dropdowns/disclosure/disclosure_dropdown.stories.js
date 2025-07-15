@@ -15,7 +15,6 @@ import GlDisclosureDropdown from './disclosure_dropdown.vue';
 import GlDisclosureDropdownItem from './disclosure_dropdown_item.vue';
 import GlDisclosureDropdownGroup from './disclosure_dropdown_group.vue';
 import { DISCLOSURE_DROPDOWN_GROUP_BORDER_POSITIONS } from './constants';
-import readme from './disclosure_dropdown.md';
 import {
   mockItems,
   mockButtons,
@@ -375,13 +374,6 @@ ViewportPositioning.args = {
 export default {
   title: 'base/dropdown/disclosure-dropdown',
   component: GlDisclosureDropdown,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     category: {
       control: {

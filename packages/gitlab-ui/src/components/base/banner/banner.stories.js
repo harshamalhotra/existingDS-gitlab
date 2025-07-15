@@ -2,7 +2,6 @@ import emptyServiceDeskCallout from '@gitlab/svgs/dist/illustrations/service-des
 import GlButton from '../button/button.vue';
 import { bannerVariants } from '../../../utils/constants';
 import GlBanner from './banner.vue';
-import readme from './banner.md';
 
 const template = `
     <gl-banner
@@ -84,13 +83,6 @@ WithActions.args = generateProps({
 export default {
   title: 'base/banner',
   component: GlBanner,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: bannerVariants,

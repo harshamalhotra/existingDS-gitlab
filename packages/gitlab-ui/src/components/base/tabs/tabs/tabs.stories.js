@@ -7,7 +7,6 @@ import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/tabs/REA
 import BVueReadmeSizeProps from '../../../../vendor/bootstrap-vue/docs/markdown/reference/size-props/README.md';
 import GlScrollableTabs from './scrollable_tabs.vue';
 import GlTabs from './tabs.vue';
-import readme from './tabs.md';
 
 const components = {
   GlTabs,
@@ -225,11 +224,6 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme + BVueReadmeSizeProps,
     bootstrapComponent: 'b-tabs',
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     contentClass: { control: { disable: true } },

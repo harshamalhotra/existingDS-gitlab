@@ -1,6 +1,5 @@
 import { tooltipPlacements } from '../../../utils/constants';
 import GlLabel from './label.vue';
-import readme from './label.md';
 
 const template = `
   <div class="gl-flex">
@@ -57,13 +56,6 @@ WithoutTarget.args = generateProps({ target: '' });
 export default {
   title: 'base/label',
   component: GlLabel,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     backgroundColor: {
       control: 'color',

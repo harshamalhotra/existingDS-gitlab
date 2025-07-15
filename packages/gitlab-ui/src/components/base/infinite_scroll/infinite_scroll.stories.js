@@ -2,7 +2,6 @@ import { setStoryTimeout } from '../../../utils/test_utils';
 import { getA11yParameters } from '../../../utils/stories_utils';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import GlInfiniteScroll from './infinite_scroll.vue';
-import readme from './infinite_scroll.md';
 
 const ITEMS_BATCH_SIZE = 20;
 
@@ -88,10 +87,5 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['scrollable-region-focusable'] }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

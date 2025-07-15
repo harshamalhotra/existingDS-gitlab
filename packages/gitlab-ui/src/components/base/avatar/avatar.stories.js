@@ -2,7 +2,6 @@ import Vue from 'vue';
 import { GlTooltipDirective } from '../../../directives/tooltip/tooltip';
 import { avatarSizeOptions, avatarShapeOptions, tooltipPlacements } from '../../../utils/constants';
 import GlAvatar from './avatar.vue';
-import readme from './avatar.md';
 
 Vue.directive('gl-tooltip', GlTooltipDirective);
 
@@ -150,13 +149,6 @@ export const AllIdenticons = () => ({
 export default {
   title: 'base/avatar',
   component: GlAvatar,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     size: {
       options: avatarSizeOptions,

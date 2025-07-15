@@ -6,7 +6,7 @@ import GlAvatar from '../avatar/avatar.vue';
 import GlTooltip from '../tooltip/tooltip.vue';
 
 export default {
-  name: 'AvatarsInline',
+  name: 'GlAvatarsInline',
   components: {
     GlAvatar,
     GlTooltip,

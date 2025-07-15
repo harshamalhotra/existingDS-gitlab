@@ -1,6 +1,5 @@
 import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-radio/README.md';
 import GlFormRadio from './form_radio.vue';
-import readme from './form_radio.md';
 
 const defaultOptions = [
   { value: 'Option', name: 'radio-group' },
@@ -63,12 +62,6 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-radio',
     bootstrapDocs: BVueReadme,
-
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     checked: {

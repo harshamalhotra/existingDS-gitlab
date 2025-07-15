@@ -3,8 +3,6 @@ import GlAvatar from '../avatar/avatar.vue';
 import { tokenVariants } from '../../../utils/constants';
 import GlToken from './token.vue';
 
-import readme from './token.md';
-
 const defaultValue = propDefaultFactory(GlToken);
 
 const generateProps = ({
@@ -43,13 +41,6 @@ export const WithAvatar = () => ({
 export default {
   title: 'base/token',
   component: GlToken,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: tokenVariants,

@@ -1,10 +1,6 @@
 ---
 name: Search
 description: Search patterns enable users to find certain information by adding criteria that match their query.
-componentLabel: form-search
-components:
-  - base-search-box-by-click
-  - base-search-box-by-type
 related:
   - button
   - filter
@@ -57,3 +53,13 @@ Search by typing variant uses delayed feedback to reduce the server load. Use a 
 ### Content
 
 While search results aren't part of the component itself, the [Empty States](/patterns/empty-states#empty-search-results) page has additional guidance on what to display if the search returns no results.
+
+## Code reference
+
+### GlSearchBoxByClick
+
+<story-viewer component="base-search-box-by-click" title="GlSearchBoxByClick" view-mode="docs"></story-viewer>
+
+### GlSearchBoxByType
+
+<story-viewer component="base-search-box-by-type" title="GlSearchBoxByType" view-mode="docs"></story-viewer>

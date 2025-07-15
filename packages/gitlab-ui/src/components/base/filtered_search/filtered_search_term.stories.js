@@ -3,7 +3,6 @@ import Vue from 'vue';
 import { triggerBlurEvent } from '../../../utils/play_utils';
 import { getA11yParameters } from '../../../utils/stories_utils';
 import { provide } from './common_story_options';
-import readme from './filtered_search_term.md';
 import GlFilteredSearchTerm from './filtered_search_term.vue';
 
 Vue.use(PortalVue);
@@ -66,11 +65,6 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['aria-required-parent', 'list'] }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     active: { control: 'boolean' },

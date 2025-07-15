@@ -2,7 +2,6 @@ import iconSpriteInfo from '@gitlab/svgs/dist/icons.json';
 import { badgeVariantOptions, badgeIconSizeOptions } from '../../../utils/constants';
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import GlBadge from './badge.vue';
-import readme from './badge.md';
 
 const template = `
     <gl-badge
@@ -205,13 +204,6 @@ export const Truncated = (args, { argTypes }) => ({
 export default {
   title: 'base/badge',
   component: GlBadge,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: Object.keys(badgeVariantOptions),

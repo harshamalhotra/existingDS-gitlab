@@ -2,10 +2,6 @@
 name: Modal
 description: A modal is used to reveal critical information, show information without losing context, or when the system requires a user response.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A129
-docs: complete
-gitlab_ui: /components/modal/code
-components:
-  - base-modal
 related:
   - accordion
   - button
@@ -100,6 +96,39 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 - Focusing on a button or form element within can move a user past important contextual information or even scroll the start of the modal content out of view — it's also inconsistent from modal to modal. Therefore, it's recommended to initially place focus on the modal title and reference it by using the `aria-labelledby` attribute on the dialog. If there's no content before a control, except for the title, then focus can be placed on the control.
 - A modal must be labeled with `aria-label` or `aria-labelledby`.
 - See the [WAI-ARIA Dialog (Modal) documentation](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/) for more details.
+
+## Code reference
+
+### GlModal
+
+<story-viewer component="base-modal" title="GlModal" view-mode="docs"></story-viewer>
+
+#### VModel
+
+You can use the `v-model` directive to control the modal’s visibility. The `v-model`
+directive interfaces with the `visible` property and the `@change` event.
+
+#### Deprecation Warning
+
+We are deprecating the `modal-ok` and `modal-cancel` slots. We are also changing the way the
+`modal-footer` slot content is populated. This is in order to align this component with the design
+system.
+
+The `modal-footer` slot should only be populated via props: `action-primary`, `action-secondary` and
+`action-cancel`. These props allow you to handle how a primary, secondary and cancel button will
+behave in the modals footer. The props receive an object as such:
+
+```js
+{
+  text: 'Save Changes',
+  attributes: {
+    variant: 'confirm',
+    disabled: this.someState,
+    class: 'some-class',
+    ...
+  }
+}
+```
 
 ## Reference
 
