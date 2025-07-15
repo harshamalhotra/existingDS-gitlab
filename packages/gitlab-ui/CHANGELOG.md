@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 115.6.0
+
+### Minor Changes
+
+- e44a774: Update GlToast interaction
+
+  Add new toasts to the visual bottom of the list.
+  Add smooth animation for progressive enhancement.
+
 ## 115.5.0
 
 ### Minor Changes
