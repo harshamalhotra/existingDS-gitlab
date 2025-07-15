@@ -4,9 +4,6 @@ import { dashboardConfigValidator } from './validators';
 
 /**
  * The `DashboardLayout` component provides an easy way to render dashboards using a configuration, aligning with our [Pajamas guidelines](https://design.gitlab.com/patterns/dashboards).
- *
- * Please refer to the [documentation](https://docs.gitlab.com/development/fe_guide/dashboard_layout_framework) for more information.
- *
  */
 export default {
   name: 'GlDashboardLayout',
