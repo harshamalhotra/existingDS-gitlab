@@ -13,8 +13,6 @@ This component should be used when:
 - You want your dashboard to align with our [Pajamas guidelines](#pajamas-guidelines).
 - You want to benefit from features such as customizable layouts with resizable, draggable elements.
 
-For existing dashboards, follow the [migration guide](#migration-guide) below.
-
 ### Current limitations
 
 The `GlDashboardLayout` component is limited to rendering dashboards. As defined
@@ -141,23 +139,6 @@ export default {
   </gl-dashboard-layout>
 </template>
 ```
-
-### Migration guide
-
-Migrating an existing dashboard to `GlDashboardLayout` should be relatively straightforward.
-In most cases because you only need to replace the dashboard shell and can keep existing visualizations.
-A typical migration path could look like this:
-
-1. Create a feature flag to conditionally render your new dashboard.
-2. Create a new dashboard component using `GlDashboardLayout` and `GlDashboardPanel`.
-3. Create a new dashboard config object that mimics your old dashboard layout.
-4. Optionally, use `GlDashboardLayout`’s slots to render your dashboard’s filters, actions,
-or custom title or description.
-5. Ensure your new dashboard, panels, and visualizations render correctly.
-6. Remove the feature flag and your old dashboard.
-
-See the [basic implementation](#basic-implementation) example above on how to render
-existing visualization components using the dashboard layout component.
 
 ## Pajamas guidelines
 
