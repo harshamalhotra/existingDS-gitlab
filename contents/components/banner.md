@@ -121,7 +121,3 @@ Temporary dismissals should work as follows:
 ### GlBanner
 
 <story-viewer component="base-banner" title="GlBanner" view-mode="docs"></story-viewer>
-
-### Pajamas::BannerComponent
-
-<lookbook-viewer component="banner"></lookbook-viewer>
