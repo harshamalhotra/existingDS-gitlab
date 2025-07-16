@@ -17,10 +17,10 @@ const testFiles = fs
 
 testFiles.forEach((file) => {
   sassTrue.runSass(
-    { file },
     {
       describe,
       it,
     },
+    file,
   );
 });

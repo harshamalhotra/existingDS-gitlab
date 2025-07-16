@@ -74,7 +74,7 @@
     "iframe-resizer": "^4.4.5",
     "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
-    "portal-vue": "^2.1.7",
+    "portal-vue": "2.1.7",
     "vue-functional-data-merge": "^3.1.0",
     "vue-runtime-helpers": "^1.1.2"
   },
@@ -168,7 +168,7 @@
     "rollup-plugin-vue": "^5.1.9",
     "sass": "^1.89.2",
     "sass-loader": "^10.5.2",
-    "sass-true": "^6.1.0",
+    "sass-true": "^9",
     "start-server-and-test": "^2.0.12",
     "storybook": "^7.6.20",
     "storybook-dark-mode": "4.0.2",
