@@ -98,6 +98,6 @@ The prop `tag` will be ignored and the `BLink` component will be used instead.
 
 <story-viewer component="base-badge" title="GlBadge" view-mode="docs"></story-viewer>
 
-### Pajamas::AlertComponent
+### Pajamas::BadgeComponent
 
 <lookbook-viewer component="badge"></lookbook-viewer>
