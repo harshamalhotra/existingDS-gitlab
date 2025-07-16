@@ -8727,9 +8727,16 @@
     },
     "control": {
       "default": {
+        "key": "{control.background.color.default}",
         "$value": "rgba(05, 05, 06, 0.4)",
         "$type": "color",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default background.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -8738,7 +8745,14 @@
             "dark": "{color.alpha.dark.40}"
           },
           "$type": "color",
-          "$description": "Used for form control (input, radio button, checkbox, textarea) default background."
+          "$description": "Used for form control (input, radio button, checkbox, textarea) default background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          },
+          "key": "{control.background.color.default}"
         },
         "name": "CONTROL_BACKGROUND_COLOR_DEFAULT",
         "attributes": {},
@@ -8751,9 +8765,16 @@
         "cssWithValue": "var(--gl-control-background-color-default, var(--gl-color-neutral-0, rgba(05, 05, 06, 0.4)))"
       },
       "disabled": {
+        "key": "{control.background.color.disabled}",
         "$value": "rgba(255, 255, 255, 0.04)",
         "$type": "color",
         "$description": "Used for disabled form control (checkbox, input, radio button, textarea) background.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -8762,7 +8783,14 @@
             "dark": "{color.alpha.light.4}"
           },
           "$type": "color",
-          "$description": "Used for disabled form control (checkbox, input, radio button, textarea) background."
+          "$description": "Used for disabled form control (checkbox, input, radio button, textarea) background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          },
+          "key": "{control.background.color.disabled}"
         },
         "name": "CONTROL_BACKGROUND_COLOR_DISABLED",
         "attributes": {},
@@ -8775,9 +8803,16 @@
         "cssWithValue": "var(--gl-control-background-color-disabled, var(--gl-color-neutral-10, rgba(255, 255, 255, 0.04)))"
       },
       "concatenation": {
+        "key": "{control.background.color.concatenation}",
         "$value": "rgba(255, 255, 255, 0.04)",
         "$type": "color",
         "$description": "Used for the background of static content that prepends or appends a text input.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -8786,7 +8821,14 @@
             "dark": "{color.alpha.light.4}"
           },
           "$type": "color",
-          "$description": "Used for the background of static content that prepends or appends a text input."
+          "$description": "Used for the background of static content that prepends or appends a text input.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          },
+          "key": "{control.background.color.concatenation}"
         },
         "name": "CONTROL_BACKGROUND_COLOR_CONCATENATION",
         "attributes": {},
@@ -8799,9 +8841,16 @@
         "cssWithValue": "var(--gl-control-background-color-concatenation, var(--gl-color-neutral-10, rgba(255, 255, 255, 0.04)))"
       },
       "readonly": {
+        "key": "{control.background.color.readonly}",
         "$value": "rgba(255, 255, 255, 0.08)",
         "$type": "color",
         "$description": "Used for the background of static content that prepends or appends a text input.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -8810,7 +8859,14 @@
             "dark": "{color.alpha.light.8}"
           },
           "$type": "color",
-          "$description": "Used for the background of static content that prepends or appends a text input."
+          "$description": "Used for the background of static content that prepends or appends a text input.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          },
+          "key": "{control.background.color.readonly}"
         },
         "name": "CONTROL_BACKGROUND_COLOR_READONLY",
         "attributes": {},
@@ -17048,9 +17104,15 @@
     },
     "control": {
       "default": {
+        "key": "{control.border.color.default}",
         "$value": "#737278",
         "$type": "color",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default border.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -17059,7 +17121,13 @@
             "dark": "{color.neutral.500}"
           },
           "$type": "color",
-          "$description": "Used for form control (input, radio button, checkbox, textarea) default border."
+          "$description": "Used for form control (input, radio button, checkbox, textarea) default border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{control.border.color.default}"
         },
         "name": "CONTROL_BORDER_COLOR_DEFAULT",
         "attributes": {},
@@ -17072,9 +17140,15 @@
         "cssWithValue": "var(--gl-control-border-color-default, var(--gl-color-neutral-400, #737278))"
       },
       "disabled": {
+        "key": "{control.border.color.disabled}",
         "$value": "#3a383f",
         "$type": "color",
         "$description": "Used for disabled form control (input, radio button, checkbox, textarea) border.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -17083,7 +17157,13 @@
             "dark": "{color.neutral.800}"
           },
           "$type": "color",
-          "$description": "Used for disabled form control (input, radio button, checkbox, textarea) border."
+          "$description": "Used for disabled form control (input, radio button, checkbox, textarea) border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{control.border.color.disabled}"
         },
         "name": "CONTROL_BORDER_COLOR_DISABLED",
         "attributes": {},
@@ -17096,9 +17176,15 @@
         "cssWithValue": "var(--gl-control-border-color-disabled, var(--gl-color-neutral-100, #3a383f))"
       },
       "error": {
+        "key": "{control.border.color.error}",
         "$value": "#f6806d",
         "$type": "color",
         "$description": "Used for invalid form control (input, textarea) border.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
@@ -17107,7 +17193,13 @@
             "dark": "{color.red.300}"
           },
           "$type": "color",
-          "$description": "Used for invalid form control (input, textarea) border."
+          "$description": "Used for invalid form control (input, textarea) border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{control.border.color.error}"
         },
         "name": "CONTROL_BORDER_COLOR_ERROR",
         "attributes": {},
@@ -34698,15 +34790,27 @@
     },
     "control": {
       "placeholder": {
+        "key": "{control.placeholder.color}",
         "$value": "#89888d",
         "$type": "color",
         "$description": "Used for placeholder text within inputs.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
           "$value": "{text.color.disabled}",
           "$type": "color",
-          "$description": "Used for placeholder text within inputs."
+          "$description": "Used for placeholder text within inputs.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          },
+          "key": "{control.placeholder.color}"
         },
         "name": "CONTROL_PLACEHOLDER_COLOR",
         "attributes": {},
@@ -34718,15 +34822,27 @@
         "cssWithValue": "var(--gl-control-placeholder-color, var(--gl-text-color-disabled, #89888d))"
       },
       "error": {
+        "key": "{control.text.color.error}",
         "$value": "#f6806d",
         "$type": "color",
         "$description": "Used for the helper text when the input is invalid.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
           "$value": "{text.color.danger}",
           "$type": "color",
-          "$description": "Used for the helper text when the input is invalid."
+          "$description": "Used for the helper text when the input is invalid.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          },
+          "key": "{control.text.color.error}"
         },
         "name": "CONTROL_TEXT_COLOR_ERROR",
         "attributes": {},
@@ -34739,15 +34855,27 @@
         "cssWithValue": "var(--gl-control-text-color-error, var(--gl-text-color-danger, #f6806d))"
       },
       "valid": {
+        "key": "{control.text.color.valid}",
         "$value": "#52b87a",
         "$type": "color",
         "$description": "Used for the helper text when the input is valid.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        },
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
           "$value": "{text.color.success}",
           "$type": "color",
-          "$description": "Used for the helper text when the input is valid."
+          "$description": "Used for the helper text when the input is valid.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          },
+          "key": "{control.text.color.valid}"
         },
         "name": "CONTROL_TEXT_COLOR_VALID",
         "attributes": {},
