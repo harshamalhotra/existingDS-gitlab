@@ -168,7 +168,7 @@
     "rollup-plugin-vue": "^5.1.9",
     "sass": "^1.89.2",
     "sass-loader": "^10.5.2",
-    "sass-true": "^6.1.0",
+    "sass-true": "^9",
     "start-server-and-test": "^1.15.4",
     "storybook": "^7.6.20",
     "storybook-dark-mode": "4.0.2",
