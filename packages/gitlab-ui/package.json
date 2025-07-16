@@ -184,6 +184,6 @@
     "vue-template-compiler": "2.7.16",
     "vue-test-utils-compat": "^0.0.15",
     "webpack": "^5.99.9",
-    "yargs": "^17.7.2"
+    "yargs": "^18.0.0"
   }
 }
