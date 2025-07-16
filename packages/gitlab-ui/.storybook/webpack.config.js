@@ -103,9 +103,7 @@ module.exports = ({ config }) => {
         {
           loader: 'style-loader',
           options: {
-            insert: function insert(styles) {
-              document.head.appendChild(styles);
-            },
+            insert: require.resolve('./style_loader_insert.js'),
           },
         },
         'css-loader',
