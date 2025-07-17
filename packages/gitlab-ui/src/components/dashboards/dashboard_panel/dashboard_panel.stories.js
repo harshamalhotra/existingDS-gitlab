@@ -2,6 +2,8 @@ import GlLineChart from '../../charts/line/line.vue';
 import GlIcon from '../../base/icon/icon.vue';
 import GlPopover from '../../base/popover/popover.vue';
 import GlLink from '../../base/link/link.vue';
+import GlButton from '../../base/button/button.vue';
+import GlButtonGroup from '../../base/button_group/button_group.vue';
 import GlDashboardPanel from './dashboard_panel.vue';
 import readme from './dashboard_panel.md';
 
@@ -149,6 +151,152 @@ WithActions.args = {
       action: () => {},
     },
   ],
+};
+
+export const WithFilters = (args, { argTypes }) => ({
+  components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink, GlButton, GlButtonGroup },
+  props: Object.keys(argTypes),
+  ...chartProps,
+  dayChartData: [
+    {
+      name: 'Created MRs (Day)',
+      data: [
+        ['Mon', 1184],
+        ['Tue', 1346],
+        ['Wed', 1035],
+        ['Thu', 1226],
+        ['Fri', 1421],
+        ['Sat', 1347],
+        ['Sun', 1035],
+      ],
+    },
+    {
+      name: 'Closed MRs (Day)',
+      data: [
+        ['Mon', 1509],
+        ['Tue', 1275],
+        ['Wed', 1187],
+        ['Thu', 1287],
+        ['Fri', 1098],
+        ['Sat', 1457],
+        ['Sun', 1452],
+      ],
+    },
+  ],
+  weekChartData: [
+    {
+      name: 'Created MRs (Week)',
+      data: [
+        ['Week 1', 8500],
+        ['Week 2', 9200],
+        ['Week 3', 7800],
+        ['Week 4', 8900],
+      ],
+    },
+    {
+      name: 'Closed MRs (Week)',
+      data: [
+        ['Week 1', 9200],
+        ['Week 2', 8800],
+        ['Week 3', 9500],
+        ['Week 4', 8700],
+      ],
+    },
+  ],
+  monthsChartData: [
+    {
+      name: 'Created MRs (Month)',
+      data: [
+        ['Jan', 35000],
+        ['Feb', 32000],
+        ['Mar', 38000],
+        ['Apr', 36000],
+        ['May', 39000],
+        ['Jun', 37000],
+      ],
+    },
+    {
+      name: 'Closed MRs (Month)',
+      data: [
+        ['Jan', 36000],
+        ['Feb', 33000],
+        ['Mar', 37000],
+        ['Apr', 35000],
+        ['May', 38000],
+        ['Jun', 36000],
+      ],
+    },
+  ],
+  data() {
+    return {
+      selectedRange: 'day',
+    };
+  },
+  computed: {
+    currentChartData() {
+      return {
+        day: this.$options.dayChartData,
+        week: this.$options.weekChartData,
+        months: this.$options.monthsChartData,
+      }[this.selectedRange];
+    },
+  },
+  template: wrap(`
+    <template #filters>
+      <gl-button-group>
+        <gl-button
+          category="secondary"
+          variant="default"
+          size="small"
+          :selected="selectedRange === 'day'"
+          :disabled="loading || loadingDelayed"
+          @click="selectedRange = 'day'"
+        >
+          Day
+        </gl-button>
+        <gl-button
+          category="secondary"
+          variant="default"
+          size="small"
+          :selected="selectedRange === 'week'"
+          :disabled="loading || loadingDelayed"
+          @click="selectedRange = 'week'"
+        >
+          Week
+        </gl-button>
+        <gl-button
+          category="secondary"
+          variant="default"
+          size="small"
+          :selected="selectedRange === 'months'"
+          :disabled="loading || loadingDelayed"
+          @click="selectedRange = 'months'"
+        >
+          Months
+        </gl-button>
+      </gl-button-group>
+    </template>
+    <template #body>
+      <gl-line-chart :data="currentChartData" :option="$options.chartOptions" />
+    </template>
+  `),
+});
+WithFilters.args = {
+  ...Default.args,
+  title: 'Dashboard panel with filters',
+};
+
+export const WithFiltersAndActions = WithFilters.bind({});
+WithFiltersAndActions.args = {
+  ...WithFilters.args,
+  actions: [
+    {
+      text: 'Delete',
+      icon: 'remove',
+      action: () => {},
+    },
+  ],
+  title: 'Dashboard panel with filters and actions',
 };
 
 export const WithBorderColor = Template.bind({});
