@@ -80,7 +80,7 @@ export default {
         panels: [
           {
             // Each panel ID must be unique within the context of this dashboard obj
-            id: '1',
+            id: 'active-users-panel',
             dashboardPanelProps: {
               title: __('Active users over time'),
               // Any additional GlDashboardPanel props go here
@@ -99,7 +99,7 @@ export default {
           },
           {
             // Each panel ID must be unique within the context of this dashboard obj
-            id: '2',
+            id: 'events-over-time-panel',
             dashboardPanelProps: {
               title: __('Events over time'),
               // Any additional GlDashboardPanel props go here
