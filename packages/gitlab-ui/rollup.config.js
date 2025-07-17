@@ -108,10 +108,10 @@ export default glob
       },
       plugins: [
         replace({
-          delimiters: ['/* ', ' */'],
+          delimiters: ['', ''],
           include: 'src/index.js',
           values: {
-            'auto-inject-styles': "import './scss/gitlab_ui.scss';",
+            '/* auto-inject-styles */': "import './scss/gitlab_ui.scss';",
           },
         }),
         postCssPlugin(),
