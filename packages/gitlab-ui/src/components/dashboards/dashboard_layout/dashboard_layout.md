@@ -37,7 +37,7 @@ single column at the [medium breakpoint](https://design.gitlab.com/product-found
 
 The dashboard layout is not opinionated about the panel component used. You are free to choose
 whichever panel component best suits your needs. However, to ensure consistency with
-our design patterns, it’s strongly recommended that you use `GlDashboardPanel`.
+our design patterns, it's strongly recommended that you use `GlDashboardPanel`.
 
 ### Filters
 
