@@ -17,6 +17,8 @@ In general, the following guidelines apply to all text:
 - Default to sentence case, and refrain from using all-caps.
 - Keep text solid-filled, with the exception of motion graphics.
 - Default to white or Charcoal for copy; refer to the color guidelines for exceptions.
+- Turn ligatures on in the type style for all copy.
+- Turn hyphens off in the paragraph styles. We limit their usage to [hyphenated words](brand-messaging/style-formatting#hyphens) only.
 - If GitLab Sans is not available (such as Google applications), use Inter instead.
 
 Refer to the guidelines illustrated below to add hierarchy to your messaging:

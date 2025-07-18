@@ -66,6 +66,7 @@ Our brand colors can be categorized into three color families: *purple*, *orange
 - Start by selecting a color family. Then choose a color within the family.
 - From that color you can move either one or two tones away to select the second color for the gradient.
 - While the direction of the gradient can vary, the gradient should be set to linear.
+- To create a sense of motion, gradients can fade into the background by setting one color in the gradient to 0% opacity.
 - `NOTE:` our AI gradient is an exception from the usual one-step and two-step gradients. This linear gradient goes from Orange 01p to Purple 01p and should only be used for content focused on AI and/or GitLab Duo.
 
 <figure-img alt="Examples of approved linear gradients" label="One-step and two-step gradient examples" src="/img/brand/linear-gradients.svg"></figure-img>
