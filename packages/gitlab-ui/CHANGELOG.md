@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.6.1
+
+### Patch Changes
+
+- 505f949: GlBreadcrumbs: Add medium variant of collapse calculation
+
 ## 115.6.0
 
 ### Minor Changes
