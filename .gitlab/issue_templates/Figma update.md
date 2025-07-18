@@ -68,7 +68,7 @@ Once your file is in review, you should see a yellow "In review" badge to the ri
 <details><summary>Post review:</summary>
 Once the Reviewer and Maintainer have approved your update, consider the following tasks: 
 
-1. [ ] Follow the [release process][release-process] for publishing guidelines and be sure to add the update to the current [release notes](https://design.gitlab.com/get-started/uik-release-notes) draft MR. Ask a [Figma maintainer][figma-maintainer] if you need help.
+1. [ ] Follow the [release process][release-process] for publishing guidelines. Ask a [Figma maintainer][figma-maintainer] if you need help.
 1. [ ] When applicable, add or update relevant documentation and create an MR with your changes using the `Documentation` MR template. If you do not have the capacity, [create another issue using the `Component documentation` issue template][issue-component-template] so we don't forget about it. Mark the new issue as related to this one. Bring the issue to your team planning session for prioritization and scheduling. 
 1. [ ] When applicable, [create an issue using the `Component` issue template][issue-component-template] to build or update the component code. Mark the new issue as related to this one. Bring the issue to your team planning session for prioritization and scheduling. 
 1. [ ]  🎉 Congrats, you made it! You can now close this issue.
