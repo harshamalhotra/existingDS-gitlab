@@ -42,18 +42,6 @@ button {
   }
 }
 
-kbd {
-  padding: 3px 5px;
-  line-height: 1;
-  font-size: 0.875em;
-  @apply gl-text-subtle;
-  @apply gl-bg-subtle;
-  @apply gl-border;
-  border-image: none;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 var(--gl-border-color-default);
-}
-
 code {
   @apply gl-text-default #{!important};
   @apply gl-bg-strong;
