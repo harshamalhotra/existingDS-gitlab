@@ -108,6 +108,7 @@ export default glob
       },
       plugins: [
         replace({
+          preventAssignment: true,
           delimiters: ['', ''],
           include: 'src/index.js',
           values: {
