@@ -123,7 +123,7 @@ Note that in implementation the variables use rem values ([relative units](https
 
 ## Font weight
 
-GitLab uses contrasting font weights to support visual hierarchy within the application. Generally, three weights are used by default: **400**, **600**, and **700**.
+GitLab uses contrasting font weights to support visual hierarchy within the application. Generally, two weights are used by default: **400** and **600**.
 
 <table class="table-compact gl-mb-6">
 <thead>
@@ -140,10 +140,6 @@ GitLab uses contrasting font weights to support visual hierarchy within the appl
 <tr>
 <td style="font-weight:600;">600</td>
 <td>Headings and specific UI elements, such as an input label</td>
-</tr>
-<tr>
-<td style="font-weight:700;">700</td>
-<td>Inline with 400 for content of greater importance</td>
 </tr>
 </tbody>
 </table>
