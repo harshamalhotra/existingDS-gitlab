@@ -89,6 +89,7 @@ const fixImports = (code) => {
   );
 };
 
+/* eslint-disable-next-line import/no-default-export */
 export default glob
   .sync('src/**/*.{js,vue}', {
     ignore: ['**/*.spec.js', '**/*.stories.js', 'src/internal/**/*', 'src/vendor/**/*'],
