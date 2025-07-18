@@ -85,7 +85,7 @@ function validateMigrations(processedMigrations) {
   // Double-check we sorted classes correctly
   processedMigrations.forEach(({ from }, i, arr) => {
     const nextFrom = arr[i + 1]?.from;
-    if (from.length < nextFrom?.length ?? -Infinity) {
+    if (from.length < (nextFrom?.length ?? -Infinity)) {
       errors.push(`Incorrect ordering: ${from} followed by ${nextFrom}`);
     }
   });

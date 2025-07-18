@@ -1,12 +1,14 @@
-import path from 'path';
+import path from 'node:path';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
-import glob from 'glob';
+import { glob } from 'glob';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 import { string } from 'rollup-plugin-string';
 import vue from 'rollup-plugin-vue';
+
+const DIRNAME = path.join(import.meta.dirname, '.');
 
 /**
  * Returns true if an import is not considered for inlining into the current file.
@@ -58,8 +60,8 @@ const postCssPlugin = ({ useSass = true } = {}) =>
               'sass',
               {
                 includePaths: [
-                  path.resolve(__dirname, 'node_modules'),
-                  path.resolve(__dirname, '../../node_modules'),
+                  path.resolve(DIRNAME, 'node_modules'),
+                  path.resolve(DIRNAME, '../../node_modules'),
                 ],
               },
             ],
