@@ -54,7 +54,6 @@ Once the Reviewer or Maintainer has approved your illustration, consider the fol
 1. [ ] In a terminal window, run `yarn run dev` to preview the SVG library locally. Find the new illustration and ensure it is rendered accurately.
 1. [ ] After you’ve committed the changes and the pipeline passes, double-check your illustration in the review app and test that it matches your expectations.
 1. [ ] Assign the MR to a review by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
-1. [ ] Add a reference to the change in the [Pajamas UI Kit release notes](https://design.gitlab.com/get-started/uik-release-notes) by adding a commit to the current draft MR.
 
 If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/README.md) have been followed.
 
