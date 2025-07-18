@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="typography gl-flex gl-h-screen gl-max-h-screen gl-flex-col gl-items-center gl-gap-4 gl-p-7"
-  >
+  <div class="gl-flex gl-h-screen gl-max-h-screen gl-flex-col gl-items-center gl-gap-4 gl-p-7">
     <slot name="illustration">
       <svg
         xmlns="http://www.w3.org/2000/svg"

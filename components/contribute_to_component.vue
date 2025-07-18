@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="md typography">
+  <div class="md">
     <h2>Contribute to Pajamas components</h2>
     <p>
       Use an
