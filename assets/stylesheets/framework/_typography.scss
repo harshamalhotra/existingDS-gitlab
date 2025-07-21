@@ -1,6 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
   @apply gl-relative;
-  @apply gl-text-heading;
   @apply gl-font-bold;
 
   > a[aria-hidden] {
@@ -31,27 +30,11 @@ p {
   @apply gl-leading-24;
 }
 
-.typography a {
-  @apply gl-underline;
-}
-
 a,
 button {
   &:focus {
     @include gl-focus;
   }
-}
-
-kbd {
-  padding: 3px 5px;
-  line-height: 1;
-  font-size: 0.875em;
-  @apply gl-text-subtle;
-  @apply gl-bg-subtle;
-  @apply gl-border;
-  border-image: none;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 var(--gl-border-color-default);
 }
 
 code {
@@ -65,8 +48,4 @@ code {
   @apply gl-break-keep;
   font-size: 90% !important;
   word-wrap: normal;
-}
-
-pre {
-  @apply gl-text-strong;
 }

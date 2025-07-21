@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <div class="index typography">
+  <div class="index">
     <nuxt-child />
     <section aria-labelledby="skipTarget" class="homepage-hero gl-m-5">
       <page-container
@@ -34,14 +34,16 @@ export default {
             <p class="gl-mb-0 gl-text-base gl-leading-20">
               Guidelines, resources, and system behind the brand personality and visual identity of
               GitLab.
-              <nuxt-link to="/brand-introduction">Introduction →</nuxt-link>
+              <nuxt-link class="gl-underline" to="/brand-introduction">Introduction →</nuxt-link>
             </p>
           </div>
           <div>
             <h2>Product</h2>
             <p class="gl-mb-0 gl-text-base gl-leading-20">
               Foundations, components, patterns, content, and guidelines for building the GitLab UI.
-              <nuxt-link to="/get-started/navigating-pajamas">Get started →</nuxt-link>
+              <nuxt-link class="gl-underline" to="/get-started/navigating-pajamas">
+                Get started →
+              </nuxt-link>
             </p>
           </div>
         </div>
@@ -64,7 +66,7 @@ export default {
               <a
                 href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues"
                 target="_blank"
-                class="gl-block gl-p-3 gl-text-center"
+                class="gl-block gl-p-3 gl-text-center gl-underline"
               >
                 <img
                   src="../assets/images/resources/issues.svg"
@@ -78,7 +80,7 @@ export default {
               <a
                 href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
                 target="_blank"
-                class="gl-block gl-p-3 gl-text-center"
+                class="gl-block gl-p-3 gl-text-center gl-underline"
               >
                 <img src="../assets/images/resources/code.svg" class="gl-mx-auto gl-block" alt="" />
                 <span class="gl-mt-3 gl-block">Repository</span>
@@ -88,7 +90,7 @@ export default {
               <a
                 href="https://www.figma.com/community/file/781156790581391771/"
                 target="_blank"
-                class="gl-block gl-p-3 gl-text-center"
+                class="gl-block gl-p-3 gl-text-center gl-underline"
               >
                 <img
                   src="../assets/images/resources/figma.svg"

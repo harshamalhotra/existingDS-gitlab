@@ -27,6 +27,10 @@
     @apply last:gl-mb-0;
   }
 
+  a {
+    @apply gl-underline;
+  }
+
   > blockquote,
   > ul,
   > ol {

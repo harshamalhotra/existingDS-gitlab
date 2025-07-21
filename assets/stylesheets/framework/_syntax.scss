@@ -22,7 +22,7 @@
   --syntax-variable: #c66;
 }
 
-.nuxt-content {
+.md {
   /* Base styles */
   pre[class*="language-"],
   :not(pre) > code[class*="language-"] {
@@ -44,6 +44,7 @@
     code {
       @apply gl-p-0;
       @apply gl-bg-subtle;
+      @apply gl-text-strong;
       text-shadow: none;
     }
   }

@@ -16,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <div v-live-examples class="component md typography">
+    <div v-live-examples class="md">
       <nuxt-content :document="page" />
     </div>
     <related-pages :related="page.related" class="gl-mt-6" />
