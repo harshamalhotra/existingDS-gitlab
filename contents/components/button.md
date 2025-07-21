@@ -307,7 +307,7 @@ rendered as `<a>` elements and `<router-link>` (i.e. with the `href` or `to` pro
 
 ### Router link support
 
-Refer to the [Router support](?path=/docs/base-link--docs#router-links) reference docs for
+Refer to the [Router support](/components/link#router-links) reference docs for
 the various supported `<router-link>` related props.
 
 ### Accessibility

@@ -160,8 +160,7 @@ endpoint that uses keyset pagination).
 **❌ Don't** use this component for paginating REST requests[^1] (or any
 endpoint that uses offset pagination).
 
-For offset pagination, use the [`GlPagination`
-component](/?path=/story/base-pagination--default) instead.
+For offset pagination, use the [`GlPagination` component](#glpagination) instead.
 
 For more information on the difference between offset and keyset pagination see
 [our documentation on GraphQL
