@@ -5,11 +5,12 @@ import readme from './form_textarea.md';
 
 const template = `
   <gl-form-textarea
-    :value="value"
+    v-model="value"
     :placeholder="placeholder"
     :rows="rows"
     :no-resize="noResize"
     :character-count-limit="characterCountLimit"
+    :character-count-classes="characterCountClasses"
     @input="onInput"
   >
     <template #remaining-character-count-text="{ count }">{{ remainingCharacterCountText(count) }}</template>
@@ -22,12 +23,14 @@ const generateProps = ({
   placeholder = 'hello',
   noResize = GlFormTextarea.props.noResize.default,
   characterCountLimit = null,
+  characterCountClasses = null,
   rows = 4,
 } = {}) => ({
   value,
   placeholder,
   noResize,
   characterCountLimit,
+  characterCountClasses,
   rows,
 });
 
@@ -58,6 +61,18 @@ WithCharacterCount.args = generateProps({
   characterCountLimit: 100,
 });
 WithCharacterCount.parameters = {
+  // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
+  a11y: getA11yParameters({ temporarySkipRules: ['label-title-only'] }),
+};
+
+export const WithCharacterCountAndClasses = Template.bind({});
+WithCharacterCountAndClasses.args = generateProps({
+  value: '',
+  placeholder: 'type longer text to see over limit text',
+  characterCountLimit: 100,
+  characterCountClasses: 'gl-rounded-lg',
+});
+WithCharacterCountAndClasses.parameters = {
   // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
   a11y: getA11yParameters({ temporarySkipRules: ['label-title-only'] }),
 };

@@ -42,6 +42,14 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * Classes for textarea component when `characterCountLimit` is set.
+     */
+    characterCountClasses: {
+      type: [String, Object, Array],
+      required: false,
+      default: null,
+    },
     rows: {
       type: [Number, String],
       required: false,
@@ -104,8 +112,9 @@ export default {
 <template>
   <div v-if="showCharacterCount">
     <b-form-textarea
-      :aria-describedby="characterCountTextId"
       v-bind="bFormTextareaProps"
+      :aria-describedby="characterCountTextId"
+      :class="characterCountClasses"
       v-on="listeners"
       @[keypressEvent].native="handleKeyPress"
     />
