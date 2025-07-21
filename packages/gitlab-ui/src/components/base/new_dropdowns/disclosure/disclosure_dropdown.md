@@ -67,7 +67,7 @@ It's possible to close the disclosure dropdown programmatically by calling the `
 `close` methods on the disclosure dropdown via a template ref. For example:
 
 ```js
-this.$refs.disclosureDropdown.closeAndFocus()
+this.$refs.disclosureDropdown.closeAndFocus();
 ```
 
 The `closeAndFocus` method is preferred in most cases, especially when triggering it from some action
@@ -79,7 +79,8 @@ some other element. For example, closing the disclosure dropdown to focus a newl
 ## Setting disclosure dropdown items
 
 Use the `items` prop to provide actions/links to the disclosure dropdown. Each
-item can be either an item or a group. For `Item`s, provide an `href` or `to` string to
+item can be either an item or a group. For `Item`s, provide an `href` or `to` string or
+[`to` location descriptor object](https://v3.router.vuejs.org/api/#to) to
 make them render as links. Otherwise, they will be buttons. Provide an `action`
 function to items to be called when they are pressed, or, listen for the
 `action` event on the top-level component. Both will receive the given item as
@@ -96,7 +97,8 @@ type Item = {
   // href link
   href?: string;
   // or, a Vue router link with `to`
-  to?: string;
+  // See https://github.com/vuejs/vue-router/blob/v3.6.5/types/router.d.ts#L400-L408 for Location definition
+  to?: string | Location;
   // Item action
   action?: (item: Item) => void;
   // Set of extra attributes applied directly to the element

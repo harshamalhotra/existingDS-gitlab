@@ -24,6 +24,10 @@ export const mockItems = [
     },
   },
   {
+    text: 'Lock discussion',
+    to: { path: '/lock', query: { show: 1234 } },
+  },
+  {
     text: 'Close merge request',
     variant: 'danger',
     action: () => {

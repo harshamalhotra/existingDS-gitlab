@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     isLink() {
-      return typeof this.item?.href === 'string' || typeof this.item?.to === 'string';
+      return typeof this.item?.href === 'string' || typeof this.item?.to !== 'undefined';
     },
     isCustomContent() {
       return Boolean(this.$scopedSlots.default);

@@ -147,6 +147,7 @@ describe('GlDisclosureDropdown', () => {
     let secondItem;
     let thirdItem;
     let fourthItem;
+    let fifthItem;
 
     beforeEach(() => {
       buildWrapper({ items: mockItems });
@@ -155,6 +156,7 @@ describe('GlDisclosureDropdown', () => {
       secondItem = findListItem(1);
       thirdItem = findListItem(2);
       fourthItem = findListItem(3);
+      fifthItem = findListItem(4);
     });
 
     it('should move the focus from toggle and down the list of items on `ARROW_DOWN` and stop on the last item', async () => {
@@ -170,12 +172,20 @@ describe('GlDisclosureDropdown', () => {
       await thirdItem.trigger('keydown', { code: ARROW_DOWN });
       expect(fourthItem.element).toHaveFocus();
       await fourthItem.trigger('keydown', { code: ARROW_DOWN });
-      expect(fourthItem.element).toHaveFocus();
+      expect(fifthItem.element).toHaveFocus();
+      await fifthItem.trigger('keydown', { code: ARROW_DOWN });
+      expect(fifthItem.element).toHaveFocus();
     });
 
     it('should move the focus up the list of items on `ARROW_UP` and stop on the first item', async () => {
       await firstItem.trigger('keydown', { code: ARROW_DOWN });
       await secondItem.trigger('keydown', { code: ARROW_DOWN });
+      await thirdItem.trigger('keydown', { code: ARROW_DOWN });
+      await fourthItem.trigger('keydown', { code: ARROW_DOWN });
+      expect(fifthItem.element).toHaveFocus();
+      await fifthItem.trigger('keydown', { code: ARROW_UP });
+      expect(fourthItem.element).toHaveFocus();
+      await fourthItem.trigger('keydown', { code: ARROW_UP });
       expect(thirdItem.element).toHaveFocus();
       await thirdItem.trigger('keydown', { code: ARROW_UP });
       expect(secondItem.element).toHaveFocus();
@@ -192,9 +202,9 @@ describe('GlDisclosureDropdown', () => {
       );
       expect(firstItem.element).toHaveFocus();
       await firstItem.trigger('keydown', { code: END });
-      expect(fourthItem.element).toHaveFocus();
-      await fourthItem.trigger('keydown', { code: END });
-      expect(fourthItem.element).toHaveFocus();
+      expect(fifthItem.element).toHaveFocus();
+      await fifthItem.trigger('keydown', { code: END });
+      expect(fifthItem.element).toHaveFocus();
     });
 
     it('should move focus to the first item on `HOME` keydown', async () => {
