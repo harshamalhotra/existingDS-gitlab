@@ -32,7 +32,7 @@ export default {
     <template #title>Missing review app</template>
     <template #text>
       <p>It looks like you are missing a review app. It might have been deleted.</p>
-      <ol v-if="mergeRequestUrl" class="gl-leading-24">
+      <ol v-if="mergeRequestUrl" class="gl-text-left gl-leading-24">
         <li>
           Go back to <a :href="mergeRequestUrl">MR {{ mergeRequestIid }}</a
           >.
