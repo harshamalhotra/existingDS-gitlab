@@ -170,7 +170,8 @@ some other element. For example, closing the disclosure dropdown to focus a newl
 #### Setting disclosure dropdown items
 
 Use the `items` prop to provide actions/links to the disclosure dropdown. Each
-item can be either an item or a group. For `Item`s, provide an `href` or `to` string to
+item can be either an item or a group. For `Item`s, provide an `href` or `to` string or
+[`to` location descriptor object](https://v3.router.vuejs.org/api/#to) to
 make them render as links. Otherwise, they will be buttons. Provide an `action`
 function to items to be called when they are pressed, or, listen for the
 `action` event on the top-level component. Both will receive the given item as
