@@ -126,8 +126,6 @@ and to indicate the number of days currently selected using the default slot. Fo
 The `daysSelected` slot prop is the effective date range, thus the value is increased by one when
 `sameDaySelection` is set to `true`. When no date range has been selected the value is `-1`.
 
-### Note
-
-If specifying a maxDateRange, it is good practice to include a date range indicator and tooltip.
+<note>If specifying a maxDateRange, it is good practice to include a date range indicator and tooltip.</note>
 
 <story-viewer component="base-daterange-picker" title="GlDaterangePicker" view-mode="docs"></story-viewer>
