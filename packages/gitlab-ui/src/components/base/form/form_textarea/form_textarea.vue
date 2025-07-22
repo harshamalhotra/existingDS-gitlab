@@ -115,6 +115,7 @@ export default {
       v-bind="bFormTextareaProps"
       :aria-describedby="characterCountTextId"
       :class="textareaClasses"
+      class="form-control gl-form-input gl-form-textarea"
       v-on="listeners"
       @[keypressEvent].native="handleKeyPress"
     />
@@ -144,6 +145,7 @@ export default {
   <b-form-textarea
     v-else
     :class="textareaClasses"
+    class="form-control gl-form-input gl-form-textarea"
     v-bind="bFormTextareaProps"
     v-on="listeners"
     @[keypressEvent].native="handleKeyPress"
