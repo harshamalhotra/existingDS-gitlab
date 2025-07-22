@@ -10,11 +10,7 @@ const template = `
     :rows="rows"
     :no-resize="noResize"
     :character-count-limit="characterCountLimit"
-<<<<<<< HEAD
-    :character-count-classes="textareaClasses"
-=======
     :textarea-classes="textareaClasses"
->>>>>>> 90b3f9431 (Implemented reviewer notes)
   >
     <template #remaining-character-count-text="{ count }">{{ remainingCharacterCountText(count) }}</template>
     <template #character-count-over-limit-text="{ count }">{{ characterCountOverLimitText(count) }}</template>

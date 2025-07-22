@@ -92,7 +92,7 @@ export default {
     bFormTextareaProps() {
       return {
         ...this.$attrs,
-        class: 'gl-form-input gl-form-textarea',
+        class: ['gl-form-input gl-form-textarea', this.textareaClasses],
         noResize: this.noResize,
         value: this.value,
         rows: this.rows,
@@ -114,8 +114,6 @@ export default {
     <b-form-textarea
       v-bind="bFormTextareaProps"
       :aria-describedby="characterCountTextId"
-      :class="textareaClasses"
-      class="form-control gl-form-input gl-form-textarea"
       v-on="listeners"
       @[keypressEvent].native="handleKeyPress"
     />
@@ -144,8 +142,6 @@ export default {
   </div>
   <b-form-textarea
     v-else
-    :class="textareaClasses"
-    class="form-control gl-form-input gl-form-textarea"
     v-bind="bFormTextareaProps"
     v-on="listeners"
     @[keypressEvent].native="handleKeyPress"
