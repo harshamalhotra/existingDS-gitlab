@@ -87,8 +87,6 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 
 ## Code reference
 
-### GlDisclosureDropdown
-
 A disclosure dropdown is a button that toggles a panel containing a list of actions and/or links. Use
 [this decision tree](https://design.gitlab.com/components/dropdown-overview#when-to-use-either-component)
 to make sure this is the right dropdown component for you.
@@ -97,9 +95,7 @@ to make sure this is the right dropdown component for you.
 <gl-disclosure-dropdown toggle-text="Actions" :items="items" />
 ```
 
-<story-viewer component="base-dropdown-disclosure-dropdown" title="GlDisclosureDropdown" view-mode="docs"></story-viewer>
-
-#### Icon-only disclosure dropdown
+### Icon-only disclosure dropdown
 
 Icon-only disclosure dropdowns must have an accessible name.
 You can provide this with the combination of `toggleText` and `textSrOnly` props.
@@ -116,12 +112,12 @@ Optionally, you can use `no-caret` to remove the caret and `category="tertiary"`
 />
 ```
 
-#### Opening the disclosure dropdown
+### Opening the disclosure dropdown
 
 Disclosure dropdown will open on toggle button click (if it was previously closed).
 On open, `GlDisclosureDropdown` will emit the `shown` event.
 
-#### Closing the disclosure dropdown
+### Closing the disclosure dropdown
 
 The disclosure dropdown is closed by any of the following:
 
@@ -152,7 +148,7 @@ You can use the `preventDefault` to filter out events that are causing undesired
 
 After closing, `GlDisclosureDropdown` emits a `hidden` event.
 
-##### Closing the disclosure dropdown programmatically
+#### Closing the disclosure dropdown programmatically
 
 It's possible to close the disclosure dropdown programmatically by calling the `closeAndFocus` or
 `close` methods on the disclosure dropdown via a template ref. For example:
@@ -167,7 +163,7 @@ within the disclosure dropdown, because it will move focus back to the disclosur
 The `close` method should only be used when closing the disclosure dropdown and moving the focus to
 some other element. For example, closing the disclosure dropdown to focus a newly revealed text input.
 
-#### Setting disclosure dropdown items
+### Setting disclosure dropdown items
 
 Use the `items` prop to provide actions/links to the disclosure dropdown. Each
 item can be either an item or a group. For `Item`s, provide an `href` or `to` string or
@@ -209,7 +205,7 @@ type Group = {
 type ItemsProp = Array<Item> | Array<Group>;
 ```
 
-##### Actions/links
+#### Actions/links
 
 The `text` property is used to render the default disclosure dropdown item
 template. If you want to render a custom template for items, use the
@@ -226,7 +222,7 @@ template. If you want to render a custom template for items, use the
 </gl-disclosure-dropdown>
 ```
 
-##### Groups
+#### Groups
 
 Actions/links can be contained within groups. A group can have a `name`
 property, which will be used as the group header if present.
@@ -256,12 +252,12 @@ using the `border-position` property:
 </gl-disclosure-dropdown>
 ```
 
-##### Miscellaneous content
+#### Miscellaneous content
 
 Besides default components, disclosure dropdown can render miscellaneous content inside it.
 In this case the user is responsible for handling all events and navigation inside the disclosure.
 
-##### Dealing with long option texts
+#### Dealing with long option texts
 
 - Some options might have long non-wrapping text that would overflow the dropdown maximum width. In
   such cases, it's recommended to override the `#list-item` slot and to truncate the option text using
@@ -269,9 +265,13 @@ In this case the user is responsible for handling all events and navigation insi
 - If the toggle text reflects the selected option text, it might be necessary to truncate
   it too by overriding the `#toggle` slot.
 
-#### Split dropdown
+### Split dropdown
 
 See [button group documentation](/components/button-group).
+
+### GlDisclosureDropdown
+
+<story-viewer component="base-dropdown-disclosure-dropdown" title="GlDisclosureDropdown" view-mode="docs"></story-viewer>
 
 ## Reference
 

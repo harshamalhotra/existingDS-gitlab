@@ -99,16 +99,12 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 
 ## Code reference
 
-### GlModal
-
-<story-viewer component="base-modal" title="GlModal" view-mode="docs"></story-viewer>
-
-#### VModel
+### VModel
 
 You can use the `v-model` directive to control the modal’s visibility. The `v-model`
 directive interfaces with the `visible` property and the `@change` event.
 
-#### Deprecation Warning
+### Deprecation Warning
 
 We are deprecating the `modal-ok` and `modal-cancel` slots. We are also changing the way the
 `modal-footer` slot content is populated. This is in order to align this component with the design
@@ -129,6 +125,10 @@ behave in the modals footer. The props receive an object as such:
   }
 }
 ```
+
+### GlModal
+
+<story-viewer component="base-modal" title="GlModal" view-mode="docs"></story-viewer>
 
 ## Reference
 

@@ -86,8 +86,6 @@ Keyset pagination only has **Prev** and **Next** options and no page numbers. It
 
 ### GlPagination
 
-<story-viewer component="base-pagination" title="GlPagination" view-mode="docs"></story-viewer>
-
 #### Current page
 
 The current page's value should be bound using `v-model`, e.g.:
@@ -126,9 +124,9 @@ Here is `limits` default value:
 
 <note>The component will not render any UI if the total items available for display is less than the max items per page.</note>
 
-### GlKeysetPagination
+<story-viewer component="base-pagination" title="GlPagination" view-mode="docs"></story-viewer>
 
-<story-viewer component="base-keyset-pagination" title="GlKeysetPagination" view-mode="docs"></story-viewer>
+### GlKeysetPagination
 
 The simplest way to use `GlKeysetPagination` with a paginated GraphQL response
 is to `v-bind` to the
@@ -142,11 +140,11 @@ returned by the endpoint:
 This is possible because the default field names of the `PageInfo` type align
 with the `props` of this component.
 
-#### Dos and don'ts
+#### Translatable strings
 
-**✅ Do** provide the `prevText` and `nextText` props with translatable strings.
+<do>Provide the `prevText` and `nextText` props with translatable strings.
 The default strings ("Prev" and "Next") are hardcoded in this component and
-can't be translated.
+can't be translated.</do>
 
 Example:
 
@@ -154,19 +152,23 @@ Example:
 <gl-keyset-pagination v-bind="pageInfo" :prev-text="__('Prev')" :next-text="__('Next')" />
 ```
 
-**✅ Do** use this component for paginating GraphQL requests[^1] (or any
-endpoint that uses keyset pagination).
+#### GraphQL
 
-**❌ Don't** use this component for paginating REST requests[^1] (or any
-endpoint that uses offset pagination).
+<grid>
+<do>Use this component for paginating GraphQL requests (or any
+endpoint that uses keyset pagination).</do>
+<dont>Use this component for paginating REST requests (or any
+endpoint that uses offset pagination).</dont>
+</grid>
+
+There's no intrinsic reason why GraphQL endpoints can't support offset pagination (in fact, [the official documentation](https://graphql.org/learn/pagination/#pagination-and-edges) shows an example offset pagination implementation) or why REST endpoints can't support keyset pagination. This is simply how we've chosen to implement our REST and GraphQL endpoints at GitLab.
 
 For offset pagination, use the [`GlPagination` component](#glpagination) instead.
 
 For more information on the difference between offset and keyset pagination see
-[our documentation on GraphQL
-pagination](https://docs.gitlab.com/ee/development/graphql_guide/pagination.html).
+[our documentation on GraphQL pagination](https://docs.gitlab.com/ee/development/graphql_guide/pagination.html).
 
-[^1]: There's no intrinsic reason why GraphQL endpoints can't support offset pagination (in fact, [the official documentation](https://graphql.org/learn/pagination/#pagination-and-edges) shows an example offset pagination implementation) or why REST endpoints can't support keyset pagination. This is simply how we've chosen to implement our REST and GraphQL endpoints at GitLab.
+<story-viewer component="base-keyset-pagination" title="GlKeysetPagination" view-mode="docs"></story-viewer>
 
 ## Reference
 

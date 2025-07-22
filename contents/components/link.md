@@ -104,8 +104,6 @@ For mention links:
 
 ## Code reference
 
-### GlLink
-
 Use `<gl-link>` to render links. It can render standard `<a>` elements,
 and also Vue Router and Nuxt links.
 
@@ -113,9 +111,7 @@ and also Vue Router and Nuxt links.
 <gl-link href="#foo">Link</gl-link>
 ```
 
-<story-viewer component="base-link" title="GlLink" view-mode="docs"></story-viewer>
-
-#### External link indicator
+### External link indicator
 
 The `show-external-icon` prop displays a "↗" character after the link text to indicate external links.
 This feature is available for **inline**, **UI (default)**, and **meta** variants only.
@@ -148,12 +144,12 @@ This feature is available for **inline**, **UI (default)**, and **meta** variant
 **Note:** The external icon is not available for `mention` or `unstyled` variants as these have
 specific design purposes that don't align with external link indication.
 
-#### Link type
+### Link type
 
 By specifying a value in the `href` prop, a standard link (`<a>`) element will be rendered. To
 generate a `<router-link>` instead, specify the route location via the `to` prop.
 
-##### Router links
+#### Router links
 
 Router links support various additional props.
 
@@ -162,7 +158,7 @@ If your app is running under [Nuxt.js](https://nuxtjs.org), the
 `<router-link>`. The `<nuxt-link>` component supports all the same features as `<router-link>` (as
 it is a wrapper component for `<router-link>`) and more.
 
-###### `to`
+##### `to`
 
 - type: `string | Location`
 - required to generate a `<router-link>`
@@ -192,7 +188,7 @@ Denotes the target route of the link. When clicked, the value of the `to` prop w
 <gl-link href="/home">Home</gl-link>
 ```
 
-###### `replace`
+##### `replace`
 
 - type: `boolean`
 - default: `false`
@@ -204,7 +200,7 @@ navigation will not leave a history record.
 <gl-link :to="{ path: '/abc'}" replace></gl-link>
 ```
 
-###### `active-class`
+##### `active-class`
 
 - type: `string`
 - default: `'router-link-active'` (`'nuxt-link-active'` when using Nuxt.js)
@@ -217,7 +213,7 @@ With components that support router links (have a `to` prop), you will want to s
 `'active'` (or a space separated string that includes `'active'`) to apply Bootstrap's active
 styling on the component when the current route matches the `to` prop.
 
-###### `exact-active-class`
+##### `exact-active-class`
 
 - type: `string`
 - default: `'router-link-exact-active'` (`'nuxt-link-exact-active'` when using Nuxt.js)
@@ -231,7 +227,7 @@ With components that support router links (have a `to` prop), you will want to s
 `'active'` (or a space separated string that includes `'active'`) to apply Bootstrap's active
 styling on the component when the current route matches the `to` prop.
 
-#### Links with `href="#"`
+### Links with `href="#"`
 
 Typically `<a href="#">` will cause the document to scroll to the top of page when clicked.
 `<gl-link>` addresses this by preventing the default action (scroll to top) when `href` is set to
@@ -239,7 +235,7 @@ Typically `<a href="#">` will cause the document to scroll to the top of page wh
 
 If you need scroll to top behaviour, use a standard `<a href="#">...</a>` tag.
 
-#### Link disabled state
+### Link disabled state
 
 Disable link functionality by setting the `disabled` prop to true.
 
@@ -250,12 +246,12 @@ Disable link functionality by setting the `disabled` prop to true.
 Disabling a link handles stopping event propagation, preventing the default action from occurring,
 and removing the link from the document tab sequence (`tabindex="-1"`).
 
-#### Security
+### Security
 
 This component implements a few security measures to make it as safe as possible by default.
 See [SafeLinkDirective docs] for more details.
 
-##### Linking to an unsafe URL
+#### Linking to an unsafe URL
 
 If you're trying to link to a location considered unsafe by the `SafeLink` directive (when rendering
 a download link with a [Data URL] for example), you'll need to bypass the `href` attribute's
@@ -272,6 +268,10 @@ sanitization. This component exposes the `is-unsafe-link` prop for that purpose.
   Download
 </gl-link>
 ```
+
+### GlLink
+
+<story-viewer component="base-link" title="GlLink" view-mode="docs"></story-viewer>
 
 [SafeLinkDirective docs]: https://design.gitlab.com/storybook?path=/docs/directives-safe-link-directive--default
 [Data URL]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs

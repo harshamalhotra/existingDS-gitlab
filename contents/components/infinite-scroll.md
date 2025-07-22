@@ -53,11 +53,7 @@ Always display a counter that details how many items have already loaded and how
 
 ## Code reference
 
-### GlInfiniteScroll
-
-<story-viewer component="base-infinite-scroll" title="GlInfiniteScroll" view-mode="docs"></story-viewer>
-
-#### Usage
+### Usage
 
 The infinite scroll component wraps around a results list and emits a message
 (`bottomReached`) when the bottom of the viewport is reached, which should trigger
@@ -68,7 +64,7 @@ Additionally it emits a `topReached` message when the top of the viewport is rea
 can be useful to load items on top of the available data. If only `topReached` is present, the
 viewport will be scrolled to the bottom the first time this component is mounted.
 
-#### Public methods
+### Public methods
 
 Useful public methods you can call via `$refs`:
 
@@ -78,7 +74,7 @@ Useful public methods you can call via `$refs`:
   along the Y axis of the container. The scrolling behavior can also be specified,
   as per MDN spec (<https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo>)
 
-#### Implementation Example
+### Implementation Example
 
 This is how a full implementation would look like with paginated results from GitLab's
 `projects` API.
@@ -161,3 +157,7 @@ exportDefault {
   </gl-infinite-scroll>
 </template>
 ```
+
+### GlInfiniteScroll
+
+<story-viewer component="base-infinite-scroll" title="GlInfiniteScroll" view-mode="docs"></story-viewer>

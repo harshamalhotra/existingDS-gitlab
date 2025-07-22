@@ -51,8 +51,6 @@ related:
 
 ### GlSorting
 
-<story-viewer component="base-sorting" title="GlSorting" view-mode="docs"></story-viewer>
-
 The sorting component allows the user to select the field on which they would like to sort a list
 and whether to sort in ascending or descending order.
 
@@ -133,3 +131,5 @@ export default {
 }
 </script>
 ```
+
+<story-viewer component="base-sorting" title="GlSorting" view-mode="docs"></story-viewer>

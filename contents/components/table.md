@@ -190,8 +190,6 @@ Use proper semantic markup, so that users of screen readers can navigate through
 
 ### GlTable
 
-<story-viewer component="base-table-table" title="GlTable" view-mode="docs"></story-viewer>
-
 The `gl-table` component wraps BootstrapVue `b-table` component. `b-table` provides a variety of
 slots for custom data rendering. You can learn more about them in the
 [component documentation](https://bootstrap-vue.org/docs/components/table).
@@ -262,9 +260,9 @@ pagination, use `GlTableLite` which offers a subset of `GlTable` features.
 </template>
 ```
 
-### GlTableLite
+<story-viewer component="base-table-table" title="GlTable" view-mode="docs"></story-viewer>
 
-<story-viewer component="base-table-table-lite" title="GlTableLite" view-mode="docs"></story-viewer>
+### GlTableLite
 
 The `GlTableLite` component wraps BootstrapVue `BTableLite` component.
 `BTableLite` provides a variety of slots for custom data rendering. You can learn
@@ -332,6 +330,8 @@ export default {
   </gl-table-lite>
 </template>
 ```
+
+<story-viewer component="base-table-table-lite" title="GlTableLite" view-mode="docs"></story-viewer>
 
 ## Reference
 

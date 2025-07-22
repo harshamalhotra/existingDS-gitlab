@@ -62,8 +62,6 @@ Although browser support is good for `<progress>`, screen readers handle them in
 
 ### GlProgressBar
 
-<story-viewer component="base-progress-bar" title="GlProgressBar" view-mode="docs"></story-viewer>
-
 #### Value
 
 The `value` prop can be a Number or String. If not given, it will default to `0`.
@@ -86,6 +84,8 @@ A custom maximum can be set with the `max` prop. If not given, it will default t
 The `GlProgressBar` will always expand to the maximum width of its parent container.
 The height can be controlled with the `height` prop. The value should be a standard
 CSS dimension (`px`, `rem`, `em`, etc.) and given as a String, e.g. `'20px'`.
+
+<story-viewer component="base-progress-bar" title="GlProgressBar" view-mode="docs"></story-viewer>
 
 ### Pajamas::ProgressComponent
 

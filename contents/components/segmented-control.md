@@ -58,8 +58,6 @@ related:
 
 ### GlSegmentedControl
 
-<story-viewer component="base-segmented-control" title="GlSegmentedControl" view-mode="docs"></story-viewer>
-
 A customizable button group that displays a set of equal options, where only one
 option can be active at a time. This component includes the ability to disable
 specific options and dynamically modify button content using slots.
@@ -86,3 +84,5 @@ Optionally it can include:
 #### Notes
 
 - Ensure each value is unique within the options array for consistent behavior.
+
+<story-viewer component="base-segmented-control" title="GlSegmentedControl" view-mode="docs"></story-viewer>

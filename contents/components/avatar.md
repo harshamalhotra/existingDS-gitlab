@@ -88,13 +88,7 @@ The following only applies to circle avatars.
 
 <story-viewer component="base-avatar" story="image" title="GlAvatar" view-mode="docs"></story-viewer>
 
-### Pajamas::AvatarComponent
-
-<lookbook-viewer component="avatar"></lookbook-viewer>
-
 ### GlAvatarLabelled
-
-<story-viewer component="base-avatar-labeled" title="GlAvatarLabelled" view-mode="docs"></story-viewer>
 
 Avatars may also be adjacent to a text alternative, such as a user or project name. In these cases,
 a null `alt` text should be used so that they can be ignored by assistive technologies.
@@ -115,9 +109,9 @@ properties as the avatar component to modify the avatar’s shape and size.
 />
 ```
 
-### GlAvatarInline
+<story-viewer component="base-avatar-labeled" title="GlAvatarLabelled" view-mode="docs"></story-viewer>
 
-<story-viewer component="base-avatar-avatars-inline" title="GlAvatarInline" view-mode="docs"></story-viewer>
+### GlAvatarInline
 
 Use `<avatars-inline />` to display multiple avatars organized in a single row.
 
@@ -158,9 +152,9 @@ when avatars are collapsed for screen reader users.
 
 `<avatars-inline>` supports avatars with `16`, `24`, or `32` size.
 
-### GlAvatarLink
+<story-viewer component="base-avatar-avatars-inline" title="GlAvatarInline" view-mode="docs"></story-viewer>
 
-<story-viewer component="base-avatar-avatar-link" story="GlAvatarLink" title="Avatar link" view-mode="docs"></story-viewer>
+### GlAvatarLink
 
 `<gl-avatar-link>` decorates `<gl-avatar>` with hyperlink functionality. It accepts the same
 properties as the `<gl-link>` component and it works in the same way too. The main purpose of this
@@ -195,3 +189,9 @@ same effects described in the first example.
   />
 </gl-avatar-link>
 ```
+
+<story-viewer component="base-avatar-avatar-link" story="GlAvatarLink" title="Avatar link" view-mode="docs"></story-viewer>
+
+### Pajamas::AvatarComponent
+
+<lookbook-viewer component="avatar"></lookbook-viewer>

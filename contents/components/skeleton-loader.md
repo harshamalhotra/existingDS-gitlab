@@ -66,10 +66,6 @@ To create a new skeleton loader:
 
 ## Code reference
 
-### GlSkeletonLoader
-
-<story-viewer component="base-skeleton-loader" title="GlSkeletonLoader" view-mode="docs"></story-viewer>
-
 Skeleton loaders are to be used when pages or sections can be progressively populated with content,
 such as text and images, as they become available. Generally speaking the first batch of content
 will be the lightest to load and is followed by secondary and tertiary content batches. Each loading
@@ -81,7 +77,7 @@ loading animation. Any skeleton state components should be created with
 `<gl-skeleton-loader></gl-skeleton-loader>`. If no shape is passed via the slot the default skeleton
 will be used. See "Default" and "Default With Custom Props" examples.
 
-#### The `.gl-animate-skeleton-loader` class
+### The `.gl-animate-skeleton-loader` class
 
 Skeleton loaders can also be composed with a `.gl-animate-skeleton-loader`
 CSS class. This CSS-based approach is easier to make responsive and match mocked elements.
@@ -128,15 +124,19 @@ More complex example (with different shapes and an animation delay for offset el
 </div>
 ```
 
-#### Progressive Loading
+### Progressive Loading
 
 Determine if progressive loading is available, if it is break apart the skeleton to load data as it
 becomes readily available. If progessive loading is not available, replace the entire skeleton when
 the data is available.
 
-#### Under the hood
+### Under the hood
 
 Skeleton Loader is a port of [vue-content-loader](https://github.com/egoist/vue-content-loader).
 Some changes have been made to the code to better suit our codebase, such as removing props and
 refactoring into a SFC. Please take a look at their documentation and a useful [UI tool](http://danilowoz.com/create-vue-content-loader/)
 for seeing the code output for `svg` shapes.
+
+### GlSkeletonLoader
+
+<story-viewer component="base-skeleton-loader" title="GlSkeletonLoader" view-mode="docs"></story-viewer>

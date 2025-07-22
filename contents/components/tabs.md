@@ -75,8 +75,6 @@ related:
 
 ### GlTabs
 
-<story-viewer component="base-tabs" title="GlTabs" view-mode="docs"></story-viewer>
-
 Tabs are used to divide content into meaningful, related sections. Tabs allow users to focus on one
 specific view at a time while maintaining sight of all the relevant content options available. Each
 tab, when active, will reveal it’s own unique content.
@@ -136,6 +134,8 @@ behave and look. The props receive an object as such:
   }
 }
 ```
+
+<story-viewer component="base-tabs" title="GlTabs" view-mode="docs"></story-viewer>
 
 ### GlScrollableTabs
 

@@ -48,8 +48,6 @@ related:
 
 ### GlPath
 
-<story-viewer component="base-path" title="GlPath" view-mode="docs"></story-viewer>
-
 #### Implemetation
 
 The component should be initialized with an array of data objects. By
@@ -84,3 +82,5 @@ A `backgroundColor` property can be specified when using this component
 on different colored backgrounds.
 
 This component supports various themes and is mobile responsive.
+
+<story-viewer component="base-path" title="GlPath" view-mode="docs"></story-viewer>

@@ -110,8 +110,6 @@ The following code snippet is a good example of an icon with a tooltip.
 
 ### GlTooltip
 
-<story-viewer component="base-tooltip" title="GlTooltip" view-mode="docs"></story-viewer>
-
 Using the tooltip component is recommended if you have HTML content.
 It is also currently required if the tooltip content needs to change while it's visible
 (see [this upstream issue][this upstream issue]). In all other cases, please use the directive.
@@ -160,6 +158,8 @@ export default {
 #### Under the hood
 
 Tooltip uses [`<b-tooltip>`][`<b-tooltip>`] and [`v-b-tooltip`][`v-b-tooltip`] internally.
+
+<story-viewer component="base-tooltip" title="GlTooltip" view-mode="docs"></story-viewer>
 
 [`<b-tooltip>`]: https://bootstrap-vue.org/docs/components/tooltip
 [`v-b-tooltip`]: https://bootstrap-vue.org/docs/directives/tooltip
