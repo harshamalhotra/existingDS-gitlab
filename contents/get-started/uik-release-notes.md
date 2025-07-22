@@ -1,6 +1,6 @@
 ---
 name: Release notes
-navigationHeadings: [2]
+navigationHeadingLevels: [2]
 ---
 
 ## 18.2
