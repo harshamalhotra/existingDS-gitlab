@@ -157,6 +157,8 @@ export default {
         width: `${this.xOffset * 2}px`,
 
         pointerEvents: this.isPinned ? 'auto' : 'none',
+
+        ...this.tooltipPosition,
       };
     },
     fixedPosition() {
@@ -200,7 +202,7 @@ export default {
     this.chart.getZr().on('mouseout', this.debouncedMouseHandler);
 
     if (this.clickToPin) {
-      document.addEventListener('keydown', this.handleEscapeKey);
+      document.addEventListener('keydown', this.keyDownHandler);
       this.chart.getZr().on('click', this.clickHandler);
     }
 
@@ -231,7 +233,7 @@ export default {
 
     if (this.clickToPin) {
       this.chart.getZr().off('click', this.clickHandler);
-      document.removeEventListener('keydown', this.handleEscapeKey);
+      document.removeEventListener('keydown', this.keyDownHandler);
     }
   },
   methods: {
@@ -299,7 +301,7 @@ export default {
         y: this.pointerCoords.y,
       });
     },
-    handleEscapeKey(event) {
+    keyDownHandler(event) {
       if (event.key === 'Escape' && this.isPinned) {
         this.unpinTooltip();
       }
@@ -310,14 +312,7 @@ export default {
 
 <template>
   <div v-if="chart">
-    <div
-      :id="targetId"
-      :style="{
-        ...tooltipPosition,
-        ...targetStyle,
-      }"
-      class="gl-chart-tooltip"
-    ></div>
+    <div :id="targetId" :style="targetStyle" class="gl-chart-tooltip"></div>
     <!--
       Is shown using `show` property directly so
       `triggers` are set to an empty string
