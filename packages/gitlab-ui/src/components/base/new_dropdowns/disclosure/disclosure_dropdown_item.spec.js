@@ -18,6 +18,8 @@ describe('GlDisclosureDropdownItem', () => {
   };
   const findItem = () => wrapper.find('[data-testid="disclosure-dropdown-item"]');
 
+  const actionItem = mockItems.find((mockItem) => typeof mockItem.action !== 'undefined');
+
   describe('when default slot content provided', () => {
     const content = 'This is an item';
     const slots = { default: content };
@@ -107,11 +109,10 @@ describe('GlDisclosureDropdownItem', () => {
   });
 
   describe('when item has an `action`', () => {
-    const item = mockItems[3];
-    const action = jest.spyOn(item, 'action');
+    const action = jest.spyOn(actionItem, 'action');
 
     beforeEach(() => {
-      buildWrapper({ item });
+      buildWrapper({ item: actionItem });
       action.mockClear();
     });
 
@@ -122,7 +123,7 @@ describe('GlDisclosureDropdownItem', () => {
     });
 
     it('should set correct attributes', () => {
-      const attrs = { ...item.extraAttrs };
+      const attrs = { ...actionItem.extraAttrs };
       delete attrs.class;
       expect(findButton().classes()).toContain('gl-new-dropdown-item-content');
       expect(findButton().attributes()).toMatchObject(attrs);
@@ -136,11 +137,11 @@ describe('GlDisclosureDropdownItem', () => {
       expect(actionThisArg).toBe(undefined);
 
       const actionArgs = action.mock.calls[0];
-      expect(actionArgs).toEqual([item]);
+      expect(actionArgs).toEqual([actionItem]);
 
       const emittedAction = wrapper.emitted('action');
       expect(emittedAction).toHaveLength(1);
-      expect(emittedAction).toEqual([[item]]);
+      expect(emittedAction).toEqual([[actionItem]]);
     });
 
     it.each`
@@ -150,11 +151,11 @@ describe('GlDisclosureDropdownItem', () => {
     `(`$event on parent will execute action and emit 'action' event`, ({ trigger }) => {
       trigger();
       expect(action).toHaveBeenCalledTimes(1);
-      expect(action.mock.calls[0]).toEqual([item]);
+      expect(action.mock.calls[0]).toEqual([actionItem]);
 
       const emittedAction = wrapper.emitted('action');
       expect(emittedAction).toHaveLength(1);
-      expect(emittedAction).toEqual([[item]]);
+      expect(emittedAction).toEqual([[actionItem]]);
     });
 
     it.each`
@@ -234,7 +235,7 @@ describe('GlDisclosureDropdownItem', () => {
     beforeEach(() => {
       buildWrapper({
         item: {
-          ...mockItems[3],
+          ...actionItem,
           extraAttrs,
         },
       });
