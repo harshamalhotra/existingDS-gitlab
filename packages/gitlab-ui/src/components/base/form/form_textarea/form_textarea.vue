@@ -45,7 +45,7 @@ export default {
     /**
      * Classes for textarea component when `characterCountLimit` is set.
      */
-    characterCountClasses: {
+    textareaClasses: {
       type: [String, Object, Array],
       required: false,
       default: null,
@@ -114,7 +114,7 @@ export default {
     <b-form-textarea
       v-bind="bFormTextareaProps"
       :aria-describedby="characterCountTextId"
-      :class="characterCountClasses"
+      :class="textareaClasses"
       v-on="listeners"
       @[keypressEvent].native="handleKeyPress"
     />
@@ -143,6 +143,7 @@ export default {
   </div>
   <b-form-textarea
     v-else
+    :class="textareaClasses"
     v-bind="bFormTextareaProps"
     v-on="listeners"
     @[keypressEvent].native="handleKeyPress"

@@ -256,13 +256,13 @@ describe('GlFormTextArea', () => {
     });
   });
 
-  describe('when `characterCountClasses` prop is set', () => {
+  describe('when `textareaClasses` prop is set', () => {
     describe('with string value', () => {
       beforeEach(() => {
         createComponent({
           value: 'test',
           characterCountLimit: 10,
-          characterCountClasses: 'gl-rounded-lg',
+          textareaClasses: 'gl-rounded-lg',
         });
       });
 
@@ -276,7 +276,7 @@ describe('GlFormTextArea', () => {
         createComponent({
           value: 'test',
           characterCountLimit: 10,
-          characterCountClasses: ['gl-rounded-lg', 'gl-border-solid'],
+          textareaClasses: ['gl-rounded-lg', 'gl-border-solid'],
         });
       });
 
@@ -291,7 +291,7 @@ describe('GlFormTextArea', () => {
         createComponent({
           value: 'test',
           characterCountLimit: 10,
-          characterCountClasses: {
+          textareaClasses: {
             'gl-rounded-lg': true,
             'gl-border-solid': false,
           },
@@ -302,19 +302,6 @@ describe('GlFormTextArea', () => {
         expect(findTextarea().classes()).toContain('gl-rounded-lg');
         expect(findTextarea().classes()).not.toContain('gl-border-solid');
       });
-    });
-  });
-
-  describe('when `characterCountClasses` prop is set without `characterCountLimit`', () => {
-    beforeEach(() => {
-      createComponent({
-        value: 'test',
-        characterCountClasses: 'gl-rounded-lg',
-      });
-    });
-
-    it('does not apply the class to the textarea', () => {
-      expect(findTextarea().classes()).not.toContain('gl-rounded-lg');
     });
   });
 });

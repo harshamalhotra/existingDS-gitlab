@@ -10,8 +10,7 @@ const template = `
     :rows="rows"
     :no-resize="noResize"
     :character-count-limit="characterCountLimit"
-    :character-count-classes="characterCountClasses"
-    @input="onInput"
+    :character-count-classes="textareaClasses"
   >
     <template #remaining-character-count-text="{ count }">{{ remainingCharacterCountText(count) }}</template>
     <template #character-count-over-limit-text="{ count }">{{ characterCountOverLimitText(count) }}</template>
@@ -23,24 +22,21 @@ const generateProps = ({
   placeholder = 'hello',
   noResize = GlFormTextarea.props.noResize.default,
   characterCountLimit = null,
-  characterCountClasses = null,
+  textareaClasses = null,
   rows = 4,
 } = {}) => ({
   value,
   placeholder,
   noResize,
   characterCountLimit,
-  characterCountClasses,
+  textareaClasses,
   rows,
 });
 
-const Template = (args, { updateArgs }) => ({
+const Template = (args) => ({
   components: { GlFormTextarea },
   props: Object.keys(args),
   methods: {
-    onInput(value) {
-      updateArgs({ ...args, value });
-    },
     remainingCharacterCountText(count) {
       return count === 1 ? `${count} character remaining.` : `${count} characters remaining.`;
     },
@@ -70,7 +66,7 @@ WithCharacterCountAndClasses.args = generateProps({
   value: '',
   placeholder: 'type longer text to see over limit text',
   characterCountLimit: 100,
-  characterCountClasses: 'gl-rounded-lg',
+  textareaClasses: 'gl-rounded-lg',
 });
 WithCharacterCountAndClasses.parameters = {
   // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
