@@ -166,7 +166,7 @@ export default {
         v-if="!hidePageNavigation"
         class="lg:gl-order-2"
         content-selector=".nuxt-content"
-        :heading-levels="page.navigationHeadings || [2, 3]"
+        :heading-levels="page.navigationHeadings"
       />
       <div class="gl-shrink gl-grow lg:gl-order-1">
         <page-header
