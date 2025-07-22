@@ -11,11 +11,23 @@ export default {
       required: false,
       default: '.nuxt-content',
     },
+    headingLevels: {
+      type: Array,
+      required: false,
+      default: () => [2, 3],
+      validator: (levels) =>
+        levels.every((level) => Number.isInteger(level) && level >= 1 && level <= 6),
+    },
   },
   data: () => ({
     headings: [],
     activeHeading: null,
   }),
+  computed: {
+    headingSelector() {
+      return this.headingLevels.map((level) => `h${level}`).join(', ');
+    },
+  },
   created() {
     // Begin non-reactive properties.
     this.resizeObserver = null;
@@ -72,7 +84,7 @@ export default {
       });
     },
     extractHeadings() {
-      this.headings = [...this.contentElement.querySelectorAll('h2, h3')].map((el) => {
+      this.headings = [...this.contentElement.querySelectorAll(this.headingSelector)].map((el) => {
         const text = el.textContent.trim();
         const id = el.id || slugify(text);
 
