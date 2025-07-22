@@ -88,3 +88,7 @@ Use proper semantic markup, so that users of screen readers are aware of the sta
 ### GlAccordion
 
 <story-viewer component="base-accordion" title="GlAccordion" view-mode="docs"></story-viewer>
+
+### GlAccordionItem
+
+Use `GlAccordionItem` to place the accordion item within your accordion.
