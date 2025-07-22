@@ -292,23 +292,33 @@ describe('Breadcrumb component', () => {
       });
     });
 
-    describe(`when there is NOT enough room to fit all items`, () => {
-      beforeEach(async () => {
-        createComponent();
-        mockSmallWrapperWidth();
-        mockItemsWidths();
-        await wrapper.vm.$nextTick();
-      });
+    describe.each([
+      ['sm', 'small', 40],
+      ['md', 'medium', 48],
+    ])(
+      'when size is "%s" and there is NOT enough room to fit all items',
+      (size, dropdownSize, buttonWidth) => {
+        beforeEach(async () => {
+          createComponent({ items, size });
+          mockSmallWrapperWidth();
+          mockItemsWidths();
+          await wrapper.vm.$nextTick();
+        });
 
-      it('should display overflow dropdown', () => {
-        expect(findOverflowDropdown().exists()).toBe(true);
-      });
+        it('should display overflow dropdown', () => {
+          expect(findOverflowDropdown().exists()).toBe(true);
+        });
 
-      it('moves the overflowing items into the dropdown', () => {
-        const fittingItems = findBreadcrumbItems().length;
-        const overflowingItems = wrapper.findAllComponents(GlDisclosureDropdownItem).length;
-        expect(fittingItems + overflowingItems).toEqual(items.length);
-      });
-    });
+        it(`should display overflow dropdown with ${dropdownSize} size`, () => {
+          expect(findOverflowDropdown().props('size')).toBe(dropdownSize);
+        });
+
+        it(`moves the overflowing items into the dropdown accounting for ${buttonWidth}px button width`, () => {
+          const fittingItems = findBreadcrumbItems().length;
+          const overflowingItems = wrapper.findAllComponents(GlDisclosureDropdownItem).length;
+          expect(fittingItems + overflowingItems).toEqual(items.length);
+        });
+      },
+    );
   });
 });
