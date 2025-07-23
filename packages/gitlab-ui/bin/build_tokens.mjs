@@ -198,6 +198,12 @@ StyleDictionary.registerFormat({
       status: generateTokenObject('status', statusVariants, 'background'),
       feedback: generateTokenObject('feedback', feedbackVariants, 'background'),
       dropdown: formatToken(COMPILED_TOKENS.dropdown.background.color),
+      control: {
+        default: formatToken(COMPILED_TOKENS.control.background.color.default),
+        disabled: formatToken(COMPILED_TOKENS.control.background.color.disabled),
+        concatenation: formatToken(COMPILED_TOKENS.control.background.color.concatenation),
+        readonly: formatToken(COMPILED_TOKENS.control.background.color.readonly),
+      },
     };
 
     const borderColors = {
@@ -205,7 +211,13 @@ StyleDictionary.registerFormat({
       color: formatTokens(COMPILED_TOKENS.border.color),
       dropdown: formatToken(COMPILED_TOKENS.dropdown.border.color),
       'dropdown-divider': formatToken(COMPILED_TOKENS.dropdown.divider.color),
+      control: {
+        default: formatToken(COMPILED_TOKENS.control.border.color.default),
+        disabled: formatToken(COMPILED_TOKENS.control.border.color.disabled),
+        error: formatToken(COMPILED_TOKENS.control.border.color.error),
+      },
     };
+
     const fillColors = {
       ...colorTokens,
       icon: formatTokens(COMPILED_TOKENS.icon.color, 'fill-icon'),
@@ -221,6 +233,11 @@ StyleDictionary.registerFormat({
       primary: formatToken(COMPILED_TOKENS.text.primary),
       secondary: formatToken(COMPILED_TOKENS.text.secondary),
       tertiary: formatToken(COMPILED_TOKENS.text.tertiary),
+      control: {
+        placeholder: formatToken(COMPILED_TOKENS.control.placeholder.color),
+        error: formatToken(COMPILED_TOKENS.control.text.color.error),
+        valid: formatToken(COMPILED_TOKENS.control.text.color.valid),
+      },
     };
 
     const outlineColor = {
@@ -323,6 +340,12 @@ const tailwindFormat = async ({ dictionary, file }) => {
     ...statusBackgroundColors,
     ...feedbackBackgroundColors,
     dropdown: '${COMPILED_TOKENS.background.dropdown.cssWithValue}',
+    control: {
+      default: '${COMPILED_TOKENS.background.control.default.cssWithValue}',
+      disabled: '${COMPILED_TOKENS.background.control.disabled.cssWithValue}',
+      concatenation: '${COMPILED_TOKENS.background.control.concatenation.cssWithValue}',
+      readonly: '${COMPILED_TOKENS.background.control.readonly.cssWithValue}',
+    },
   };
 
   const borderColor  = {
@@ -330,6 +353,11 @@ const tailwindFormat = async ({ dictionary, file }) => {
     ...borderColors,
     dropdown: '${COMPILED_TOKENS.border.dropdown.cssWithValue}',
     'dropdown-divider': '${COMPILED_TOKENS.border['dropdown-divider'].cssWithValue}',
+    control: {
+      default: '${COMPILED_TOKENS.border.control.default.cssWithValue}',
+      disabled: '${COMPILED_TOKENS.border.control.disabled.cssWithValue}',
+      error: '${COMPILED_TOKENS.border.control.error.cssWithValue}',
+    },
   };
 
   const outlineColor = {
@@ -353,6 +381,11 @@ const tailwindFormat = async ({ dictionary, file }) => {
     primary: '${COMPILED_TOKENS.text.primary.cssWithValue}',
     secondary: '${COMPILED_TOKENS.text.secondary.cssWithValue}',
     tertiary: '${COMPILED_TOKENS.text.tertiary.cssWithValue}',
+    control: {
+      placeholder: '${COMPILED_TOKENS.text.control.placeholder.cssWithValue}',
+      error: '${COMPILED_TOKENS.text.control.error.cssWithValue}',
+      valid: '${COMPILED_TOKENS.text.control.valid.cssWithValue}',
+    },
   };
 
   module.exports = {
