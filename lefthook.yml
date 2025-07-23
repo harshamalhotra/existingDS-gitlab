@@ -36,6 +36,16 @@ pre-commit:
       glob: '{yarn.lock,packages/*/package.json}'
       run: yarn yarn-deduplicate --strategy fewer --list --fail
 
+commit-msg:
+  skip:
+    - merge
+    - merge-commit
+    - rebase
+    - ref: main
+  commands:
+    commit_message_lint:
+      run: ./scripts/simple_commit_message_linter.mjs {0}
+
 # This is a non git-hook-target which we use in CI
 # in order to parallelize linting / spec execution
 test-in-ci:
