@@ -5,7 +5,6 @@ import {
   Description,
   Primary,
   ArgsTable,
-  Stories,
   PRIMARY_STORY,
   DocsContext,
 } from '@storybook/addon-docs';
@@ -26,7 +25,6 @@ export const page = () => {
       <ImportInfo />
       <Primary />
       <ArgsTable story={PRIMARY_STORY} />
-      <Stories />
       <Description />
       <BootstrapVueDescription />
     </div>

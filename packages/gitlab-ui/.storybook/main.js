@@ -36,7 +36,4 @@ export default {
     'storybook-dark-mode',
   ],
   staticDirs: ['../static'],
-  docs: {
-    autodocs: true,
-  },
 };
