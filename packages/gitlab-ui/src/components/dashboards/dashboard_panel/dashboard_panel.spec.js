@@ -2,7 +2,6 @@ import { shallowMount, mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
 import GlDisclosureDropdown from '~/components/base/new_dropdowns/disclosure/disclosure_dropdown.vue';
 import GlDisclosureDropdownItem from '~/components/base/new_dropdowns/disclosure/disclosure_dropdown_item.vue';
-import GlIcon from '~/components/base/icon/icon.vue';
 import GlLoadingIcon from '~/components/base/loading_icon/loading_icon.vue';
 import GlSprintf from '~/components/utilities/sprintf/sprintf.vue';
 import GlTruncate from '~/components/utilities/truncate/truncate.vue';
@@ -45,7 +44,6 @@ describe('GlDashboardPanel', () => {
       .findAllComponents(GlDisclosureDropdownItem)
       .wrappers.map((x) => ({
         text: x.text(),
-        icon: x.findComponent(GlIcon).props('name'),
       }));
 
   describe('default behaviour', () => {
@@ -305,7 +303,6 @@ describe('GlDashboardPanel', () => {
   describe('when there are actions', () => {
     const actions = [
       {
-        icon: 'pencil',
         text: 'Edit',
         action: () => {},
       },
@@ -329,7 +326,6 @@ describe('GlDashboardPanel', () => {
     it('renders the panel action dropdown item and icon', () => {
       expect(findPanelActionsDropdownItems()).toStrictEqual(
         actions.map((x) => ({
-          icon: x.icon,
           text: x.text,
         })),
       );

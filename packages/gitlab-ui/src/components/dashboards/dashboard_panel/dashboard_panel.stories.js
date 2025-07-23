@@ -160,8 +160,15 @@ WithActions.args = {
   ...Default.args,
   actions: [
     {
+      text: 'Configure',
+      action: () => {},
+    },
+    {
+      text: 'Make copy',
+      action: () => {},
+    },
+    {
       text: 'Delete',
-      icon: 'remove',
       action: () => {},
     },
   ],
@@ -306,7 +313,6 @@ ChartWithFiltersAndActions.args = {
   actions: [
     {
       text: 'Delete',
-      icon: 'remove',
       action: () => {},
     },
   ],
