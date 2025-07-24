@@ -31,10 +31,16 @@ Alternatively, you can also [open this repository in Gitpod](https://gitpod.io/#
 To develop with local GitLab UI components and see live component stories, use `yarn start:full`. This command:
 
 - Starts the documentation site on `http://localhost:2018`.
-- Starts GitLab UI's Storybook on `http://localhost:9001`.
+- Starts GitLab UI's Storybook on `http://localhost:9001` (with live reloading/hot module replacement _disabled_)
 - Automatically links the documentation site to use your local Storybook instance.
 
 This is useful when you're making changes to GitLab UI components and want to see how they appear in both Storybook and the documentation.
+
+If you want Storybook embeds to have live reload/hot module replacement, run
+`DISABLE_STORYBOOK_HMR=false yarn start:full`. Note that in pages with many
+Storybook embeds, some will fail to load. See
+[this thread](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4553#note_2635236122)
+for more information.
 
 ### Writing component documentation
 

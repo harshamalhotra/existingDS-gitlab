@@ -16,7 +16,7 @@
     "start": "HOST=${HOST:=localhost} PORT=${PORT:=2018} nuxt",
     "start:docs-local-gitlab-ui": "HOST=${HOST:=localhost} PORT=${PORT:=2018} GITLAB_UI_URL=http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001} nuxt",
     "start:gitlab-ui": "cd packages/gitlab-ui && yarn && yarn storybook",
-    "start:full": "concurrently 'yarn start:docs-local-gitlab-ui' 'yarn start:gitlab-ui'",
+    "start:full": "DISABLE_STORYBOOK_HMR=${DISABLE_STORYBOOK_HMR:=true} concurrently 'yarn start:docs-local-gitlab-ui' 'yarn start:gitlab-ui'",
     "buildsingle": "nuxt build",
     "build": "bash ./scripts/build.sh",
     "lint:eslint": "eslint --report-unused-disable-directives --max-warnings 0 .",

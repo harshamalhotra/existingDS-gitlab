@@ -148,9 +148,9 @@ module.exports = ({ config }) => {
   // eslint-disable-next-line no-param-reassign
   config.resolve.alias['@gitlab/ui'] = path.join(__dirname, 'src', 'index.js');
 
-  // disable HMR in test environment because this breaks playwright's networkidle setting
+  // disable HMR when explicitly disabled, or in test environment because this breaks playwright's networkidle setting
   // which is needed for visual regression tests to function
-  if (process.env.NODE_ENV === 'test') {
+  if (process.env.DISABLE_STORYBOOK_HMR === 'true' || process.env.NODE_ENV === 'test') {
     // eslint-disable-next-line no-param-reassign
     config.entry = config.entry.filter(
       (singleEntry) => !singleEntry.includes('/webpack-hot-middleware/'),
