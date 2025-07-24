@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.9.0
+
+### Minor Changes
+
+- ef46b21: Add tooltip click-to-pin feature to line chart
+
 ## 115.8.0
 
 ### Minor Changes
