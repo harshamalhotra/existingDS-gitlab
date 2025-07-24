@@ -323,7 +323,7 @@ describe('GlDashboardPanel', () => {
       expect(findPanelActionsDropdown().props('toggleText')).toContain('Actions');
     });
 
-    it('renders the panel action dropdown item and icon', () => {
+    it('renders the panel action dropdown item', () => {
       expect(findPanelActionsDropdownItems()).toStrictEqual(
         actions.map((x) => ({
           text: x.text,
