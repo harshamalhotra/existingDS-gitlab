@@ -63,6 +63,7 @@ const template = (content = '') => `<gl-line-chart
   :includeLegendAvgMax="includeLegendAvgMax"
   :showLegend="showLegend"
   :height="height"
+  :click-to-pin-tooltip="clickToPinTooltip"
   >
     ${content}
   </gl-line-chart>`;
@@ -75,6 +76,7 @@ const generateProps = ({
   includeLegendAvgMax = true,
   showLegend = true,
   height = null,
+  clickToPinTooltip = false,
 } = {}) => ({
   showLegend,
   includeLegendAvgMax,
@@ -83,6 +85,7 @@ const generateProps = ({
   annotations,
   data,
   height,
+  clickToPinTooltip,
 });
 
 const Template = (_args, { argTypes }) => ({
@@ -213,6 +216,21 @@ export const WithCustomTooltip = (_args, { argTypes }) => ({
 });
 WithCustomTooltip.args = generateProps();
 WithCustomTooltip.tags = ['skip-visual-test'];
+
+export const WithClickToPinTooltip = (_args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components,
+  template: template(`
+    <template #tooltip-title="{ params }">{{params && params.value}}</template>
+    <template #tooltip-content="{ params }">
+      <div v-for="p in params && params.seriesData"><strong>{{p.seriesName}}:</strong> <a href="javascript:void(0)">{{p.value[1]}}</a></div>
+    </template>
+  `),
+});
+WithClickToPinTooltip.args = generateProps({
+  clickToPinTooltip: true,
+});
+WithClickToPinTooltip.tags = ['skip-visual-test'];
 
 export default {
   title: 'charts/line-chart',

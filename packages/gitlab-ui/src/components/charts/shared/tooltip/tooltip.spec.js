@@ -29,6 +29,10 @@ describe('ChartTooltip', () => {
     await waitForAnimationFrame();
   };
 
+  const findMockCall = (eventType, method = 'on') =>
+    mockChartInstance.getZr()[method].mock.calls.find((call) => call[0] === eventType);
+  const findMockCallHandler = (eventType, method = 'on') => findMockCall(eventType, method).at(1);
+
   const createWrapper = (props = {}, options) => {
     mockChartInstance = {
       ...mockCreateChartInstance(),
@@ -275,6 +279,125 @@ describe('ChartTooltip', () => {
         expect(findPopover().text()).toBe('Value (Time)');
         expect(findTooltipDefaultFormat().props('tooltipContent')).toEqual({
           Amount: { color: '', value: 1 },
+        });
+      });
+    });
+  });
+
+  describe('click-to-pin', () => {
+    const triggerClickHandler = async (event) => {
+      findMockCallHandler('click')({ event });
+      await nextTick();
+    };
+
+    describe('when clickToPin is "false"', () => {
+      beforeEach(() => {
+        createWrapper({ clickToPin: false });
+      });
+
+      it('does not register the click handler', () => {
+        expect(findMockCall('click')).toBeUndefined();
+      });
+
+      it('does not clean up click handler on destroy', () => {
+        wrapper.destroy();
+        expect(findMockCall('click', 'off')).toBeUndefined();
+      });
+    });
+
+    describe('when clickToPin is "true"', () => {
+      const triggerClickToPin = async ({
+        mouseCoordinates = { zrX: 100, zrY: 200 },
+        outsideChart = false,
+      } = {}) => {
+        mockContainPixel.mockReturnValue(!outsideChart);
+        // move the mouse to the chart area
+        await triggerMouseHandler(mouseCoordinates);
+        // click on the chart area
+        await triggerClickHandler(mouseCoordinates);
+      };
+      const isPinned = () =>
+        findPopoverTarget().attributes('style').includes('pointer-events: auto');
+      const isUnpinned = () =>
+        findPopoverTarget().attributes('style').includes('pointer-events: none');
+
+      beforeEach(() => {
+        createWrapper({ clickToPin: true });
+      });
+
+      it('registers the click handler', () => {
+        expect(findMockCall('click')).toBeDefined();
+      });
+
+      it('cleans up the click handler on destroy', () => {
+        wrapper.destroy();
+        expect(findMockCall('click', 'off')).toBeDefined();
+      });
+
+      describe('click behavior', () => {
+        it('pins the tooltip when clicking inside the chart area', async () => {
+          const mouseCoordinates = { zrX: 100, zrY: 200 };
+          await triggerClickToPin({ mouseCoordinates });
+
+          expect(findPopover().attributes('show')).toBe('true');
+          expect(getPopoverTargetStyle('left')).toBe(`${mouseCoordinates.zrX}px`);
+          expect(getPopoverTargetStyle('top')).toBe(`${mouseCoordinates.zrY}px`);
+          expect(isPinned()).toBe(true);
+
+          // Assert setOption called with triggerOn: 'none'
+          expect(mockChartInstance.setOption).toHaveBeenCalledWith(
+            expect.objectContaining({
+              tooltip: expect.objectContaining({ triggerOn: 'none' }),
+            }),
+          );
+        });
+
+        it('does not pin the tooltip when clicking outside the chart area', async () => {
+          await triggerClickToPin({ outsideChart: true });
+
+          expect(findPopover().attributes('show')).toBe(undefined);
+          expect(isUnpinned()).toBe(true);
+        });
+      });
+
+      describe('unpinning behavior', () => {
+        beforeEach(async () => {
+          await triggerClickToPin();
+        });
+
+        it('does not unpin the tooltip when clicking inside the tooltip', async () => {
+          findPopoverTarget().trigger('click');
+
+          expect(isPinned()).toBe(true);
+        });
+
+        it('unpins the tooltip when clicking outside the tooltip but inside the chart', async () => {
+          const unpinCoords = { zrX: 200, zrY: 200 };
+          await triggerClickToPin({ mouseCoordinates: unpinCoords });
+
+          expect(isUnpinned()).toBe(true);
+
+          // Assert setOption called to restore triggerOn
+          expect(mockChartInstance.setOption).toHaveBeenCalledWith(
+            expect.objectContaining({
+              tooltip: expect.objectContaining({ triggerOn: 'mousemove', show: false }),
+            }),
+          );
+          // Assert dispatchAction called to show tooltip at click position
+          expect(mockChartInstance.dispatchAction).toHaveBeenCalledWith(
+            expect.objectContaining({
+              type: 'showTip',
+              x: unpinCoords.zrX,
+              y: unpinCoords.zrY,
+            }),
+          );
+        });
+
+        it('unpins the tooltip when Escape key is pressed', async () => {
+          document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+          await nextTick();
+
+          expect(isUnpinned()).toBe(true);
         });
       });
     });

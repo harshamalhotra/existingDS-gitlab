@@ -130,6 +130,14 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * Controls whether the tooltip should be pinned when clicked.
+     */
+    clickToPinTooltip: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   data() {
     // Part of the tooltip related data can be
@@ -349,6 +357,7 @@ export default {
       ref="dataTooltip"
       :chart="chart"
       :use-default-tooltip-formatter="!formatTooltipText"
+      :click-to-pin="clickToPinTooltip"
     >
       <template v-if="$scopedSlots['tooltip-title']" #title="scope">
         <slot name="tooltip-title" v-bind="scope"></slot>

@@ -117,11 +117,22 @@ export default {
       required: false,
       default: false,
     },
+    /**
+     * Set to true to enable click-to-pin functionality.
+     * When enabled, clicking on a chart point will keep the tooltip open, so the user can interact with the tooltip's content.
+     * The tooltip will unpin when clicking again on the chart and not on the tooltip.
+     */
+    clickToPin: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   data() {
     return {
-      pointerPosition: null,
+      pointerCoords: null,
       isPointerInChart: false,
+      pinnedPosition: null,
 
       debouncedMouseHandler: debounceByAnimationFrame(this.mouseHandler),
 
@@ -144,6 +155,10 @@ export default {
 
         marginLeft: `${-this.xOffset}px`,
         width: `${this.xOffset * 2}px`,
+
+        pointerEvents: this.isPinned ? 'auto' : 'none',
+
+        ...this.tooltipPosition,
       };
     },
     fixedPosition() {
@@ -153,16 +168,43 @@ export default {
       }
       return null;
     },
+    tooltipPosition() {
+      if (this.fixedPosition) {
+        return this.fixedPosition;
+      }
+      if (this.pinnedPosition) {
+        return this.pinnedPosition;
+      }
+      return this.pointerPosition;
+    },
     shouldShowPopover() {
       if (this.show !== null) {
         return this.show;
       }
-      return this.isPointerInChart;
+      return this.isPinned || this.isPointerInChart;
+    },
+    isPinned() {
+      return this.pinnedPosition !== null;
+    },
+    pointerPosition() {
+      if (!this.pointerCoords) {
+        return null;
+      }
+
+      return {
+        left: `${this.pointerCoords.x}px`,
+        top: `${this.pointerCoords.y}px`,
+      };
     },
   },
   created() {
     this.chart.getZr().on('mousemove', this.debouncedMouseHandler);
     this.chart.getZr().on('mouseout', this.debouncedMouseHandler);
+
+    if (this.clickToPin) {
+      document.addEventListener('keydown', this.keyDownHandler);
+      this.chart.getZr().on('click', this.clickHandler);
+    }
 
     if (this.useDefaultTooltipFormatter) {
       this.chart.setOption({
@@ -185,24 +227,83 @@ export default {
       });
     }
   },
-
   beforeDestroy() {
     this.chart.getZr().off('mousemove', this.debouncedMouseHandler);
     this.chart.getZr().off('mouseout', this.debouncedMouseHandler);
+
+    if (this.clickToPin) {
+      this.chart.getZr().off('click', this.clickHandler);
+      document.removeEventListener('keydown', this.keyDownHandler);
+    }
   },
   methods: {
+    getEventCoordsWithinChart({ event }) {
+      const { zrX, zrY } = event;
+      const x = Math.round(zrX);
+      const y = Math.round(zrY);
+
+      if (!Number.isFinite(x) || !Number.isFinite(y)) {
+        return null;
+      }
+
+      if (!this.chart.containPixel('grid', [x, y])) {
+        return null;
+      }
+
+      return { x, y };
+    },
     mouseHandler(event) {
-      let { zrX: x, zrY: y } = event.event;
+      const coords = this.getEventCoordsWithinChart(event);
+      if (!coords) {
+        this.isPointerInChart = false;
+        return;
+      }
 
-      if (Number.isFinite(x) && Number.isFinite(y)) {
-        x = Math.round(x);
-        y = Math.round(y);
+      this.pointerCoords = coords;
+      this.isPointerInChart = true;
+    },
+    clickHandler(event) {
+      if (!this.getEventCoordsWithinChart(event)) {
+        return;
+      }
 
-        this.pointerPosition = {
-          left: `${x}px`,
-          top: `${y}px`,
-        };
-        this.isPointerInChart = this.chart.containPixel('grid', [x, y]);
+      if (!this.isPinned) {
+        this.pinTooltip();
+      } else {
+        this.unpinTooltip(event.event);
+      }
+    },
+    pinTooltip() {
+      this.pinnedPosition = this.pointerPosition;
+
+      // prevents any axis pointers from being moved to a new position, they should also be pinned
+      this.chart.setOption({
+        tooltip: {
+          triggerOn: 'none',
+        },
+      });
+    },
+    unpinTooltip() {
+      this.pinnedPosition = null;
+
+      // restores the axis pointers to be unpinned and be triggered by mousemove
+      this.chart.setOption({
+        tooltip: {
+          triggerOn: 'mousemove',
+          show: false,
+        },
+      });
+
+      // shows the tooltip and axis pointer at the position of the click
+      this.chart.dispatchAction({
+        type: 'showTip',
+        x: this.pointerCoords.x,
+        y: this.pointerCoords.y,
+      });
+    },
+    keyDownHandler(event) {
+      if (event.key === 'Escape' && this.isPinned) {
+        this.unpinTooltip();
       }
     },
   },
@@ -210,12 +311,8 @@ export default {
 </script>
 
 <template>
-  <div v-if="chart" class="gl-pointer-events-none">
-    <div
-      :id="targetId"
-      :style="{ ...(fixedPosition || pointerPosition), ...targetStyle }"
-      class="gl-chart-tooltip"
-    ></div>
+  <div v-if="chart">
+    <div :id="targetId" :style="targetStyle" class="gl-chart-tooltip"></div>
     <!--
       Is shown using `show` property directly so
       `triggers` are set to an empty string
