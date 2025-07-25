@@ -2,7 +2,6 @@ import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import { makeContainer } from '../../../utils/story_decorators/container';
 import GlSorting from './sorting.vue';
-import readme from './sorting.md';
 
 const components = {
   GlSorting,
@@ -84,11 +83,4 @@ export default {
       alignItems: 'flex-start',
     }),
   ],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

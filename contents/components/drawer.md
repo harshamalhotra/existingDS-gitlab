@@ -2,10 +2,6 @@
 name: Drawer
 description: A drawer presents context-specific information and/or actions without leaving the current page.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=44560%3A56734
-docs: in-progress
-gitlab_ui: /components/drawer/code
-components:
-  - base-drawer
 related:
   - modal
   - toast
@@ -92,3 +88,21 @@ related:
 - Drawer states (expanded/collapsed) should be announced by a screen reader.
 - The focus should move to the drawer once opened. An intentional keyboard trap keeps tab order (looped) within the drawer until it is closed. This is so a user cannot focus on anything outside or under the drawer.
 - The <kbd>Esc</kbd> key should close the drawer along with activating the close icon button.
+
+## Code reference
+
+```html
+<gl-drawer :open="open" @close="close" @opened="opened">
+  <template #header>Your Title</template>
+  <template>
+   ...children
+  </template>
+</gl-drawer>
+```
+
+- `v-bind:open` will be a boolean you will pass to `gl-drawer` and `@close` is a listener that will be a function that will toggle open to `false`.
+- The component emits an `opened` event after the opening animation has finished.
+
+### GlDrawer
+
+<story-viewer component="base-drawer" title="GlDrawer" view-mode="docs"></story-viewer>

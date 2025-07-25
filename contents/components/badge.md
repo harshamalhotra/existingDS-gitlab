@@ -2,9 +2,6 @@
 name: Badge
 description: A badge highlights system generated metadata as an attribute of a larger object. 
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
-docs: complete
-components:
-  - base-badge
 related:
   - label
   - button
@@ -75,3 +72,32 @@ related:
 ## Reference
 
 Other terms that are commonly used to refer to a badge: counter, status, chip, tag, metadata, lozenge, pill, and bubble.
+
+## Code reference
+
+### Using icon-only badges
+
+When a badge only has an icon and no slot content, be sure to set the `aria-label` attribute of the
+badge for best accessibility.
+
+```html
+<!-- bad -->
+<gl-badge icon="eye" />
+
+<!-- good -->
+<gl-badge icon="eye" aria-label="Mark as confidential" />
+```
+
+### Link badges
+
+Badges can be made actionable and turn into links by providing the `href` prop,
+which can be used in combination with the props `rel`, `target`, `active`, and `disabled`.
+The prop `tag` will be ignored and the `BLink` component will be used instead.
+
+### GlBadge
+
+<story-viewer component="base-badge" title="GlBadge" view-mode="docs"></story-viewer>
+
+### Pajamas::BadgeComponent
+
+<lookbook-viewer component="badge"></lookbook-viewer>

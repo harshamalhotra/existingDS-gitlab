@@ -3,7 +3,6 @@ import { variantCssColorMap } from '../../../utils/constants';
 import { propDefaultFactory, getA11yParameters } from '../../../utils/stories_utils';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/dropdown/README.md';
 import GlDropdownItem from './dropdown_item.vue';
-import readme from './dropdown_item.md';
 
 const components = {
   GlDropdownItem,
@@ -99,12 +98,6 @@ export default {
     a11y: getA11yParameters({ temporarySkipRules: ['aria-required-parent', 'list'] }),
     bootstrapComponent: 'b-dropdown-item',
     bootstrapDocs: BVueReadme,
-
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     iconColor: {

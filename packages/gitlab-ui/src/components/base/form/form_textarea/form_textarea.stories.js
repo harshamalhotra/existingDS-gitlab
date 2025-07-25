@@ -1,7 +1,6 @@
 import { getA11yParameters } from '../../../../utils/stories_utils';
 import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-textarea/README.md';
 import GlFormTextarea from './form_textarea.vue';
-import readme from './form_textarea.md';
 
 const template = `
   <gl-form-textarea
@@ -68,10 +67,5 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-textarea',
     bootstrapDocs: BVueReadme,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

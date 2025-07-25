@@ -1,6 +1,5 @@
 import { getA11yParameters } from '../../../utils/stories_utils';
 import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
-import readme from './filtered_search_suggestion.md';
 
 const noop = () => {};
 
@@ -27,10 +26,5 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['aria-required-parent', 'list'] }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

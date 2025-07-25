@@ -6,7 +6,6 @@ import GlIcon from '../icon/icon.vue';
 import GlDatepicker from '../datepicker/datepicker.vue';
 import { provide } from './common_story_options';
 import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
-import readme from './filtered_search_token.md';
 import GlFilteredSearchToken from './filtered_search_token.vue';
 
 Vue.use(PortalVue);
@@ -193,10 +192,5 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['aria-required-parent', 'list'] }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

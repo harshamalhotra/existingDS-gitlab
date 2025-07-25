@@ -1,6 +1,5 @@
 import { formInputWidths } from '../../../../utils/constants';
 import GlFormGroup from '../form_group/form_group.vue';
-import readme from './form_input.md';
 import GlFormInput from './form_input.vue';
 
 const template = `
@@ -117,13 +116,6 @@ ResponsiveWidths.args = {};
 export default {
   title: 'base/form/form-input',
   component: GlFormInput,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     width: {
       options: formInputWidths,

@@ -1,4 +1,3 @@
-import readme from './keyset_pagination.md';
 import GlKeysetPagination from './keyset_pagination.vue';
 
 const generateProps = ({
@@ -57,10 +56,5 @@ export default {
   component: GlKeysetPagination,
   parameters: {
     bootstrapComponent: false,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

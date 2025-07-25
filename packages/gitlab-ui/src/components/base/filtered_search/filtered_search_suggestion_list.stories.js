@@ -3,7 +3,6 @@ import { getA11yParameters } from '../../../utils/stories_utils';
 import GlFilteredSearchSuggestionList from './filtered_search_suggestion_list.vue';
 import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
 import { provide } from './common_story_options';
-import readme from './filtered_search_suggestion_list.md';
 
 export const Default = () => ({
   components: { GlFilteredSearchSuggestionList, GlFilteredSearchSuggestion },
@@ -47,10 +46,5 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['aria-required-parent', 'list'] }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

@@ -1,8 +1,6 @@
 ---
 name: Toggle
 description: A toggle is a visual switch which acts as a boolean.
-components:
-  - base-toggle
 related:
   - checkbox
   - radio-button
@@ -92,3 +90,9 @@ related:
 ```html
 <gl-toggle v-model="notifications" :label="__('Notifications')" label-position="hidden" />
 ```
+
+## Code reference
+
+### GlToggle
+
+<story-viewer component="base-toggle" title="GlToggle" view-mode="docs"></story-viewer>

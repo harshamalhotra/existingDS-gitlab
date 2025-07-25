@@ -4,7 +4,6 @@ import GlButton from '../button/button.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/tooltip/README.md';
 import BVueReadmeAccessibility from '../../../vendor/bootstrap-vue/docs/markdown/reference/accessibility/README.md';
 import GlTooltip from './tooltip.vue';
-import readme from './tooltip.md';
 
 function makeTooltip(modifier = '') {
   return {
@@ -64,10 +63,5 @@ export default {
   parameters: {
     bootstrapComponent: 'b-tooltip',
     bootstrapDocs: BVueReadme + BVueReadmeAccessibility,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

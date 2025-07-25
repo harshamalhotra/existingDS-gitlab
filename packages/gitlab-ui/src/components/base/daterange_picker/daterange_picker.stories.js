@@ -1,6 +1,5 @@
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import { makeContainer } from '../../../utils/story_decorators/container';
-import readme from './daterange_picker.md';
 import GlDaterangePicker from './daterange_picker.vue';
 
 const currentYear = 2021;
@@ -124,13 +123,6 @@ export default {
   title: 'base/daterange-picker',
   component: GlDaterangePicker,
   decorators: [makeContainer({ height: '300px' })],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls([
       'i18n',

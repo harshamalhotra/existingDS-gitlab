@@ -15,7 +15,6 @@ import GlDisclosureDropdown from './disclosure_dropdown.vue';
 import GlDisclosureDropdownItem from './disclosure_dropdown_item.vue';
 import GlDisclosureDropdownGroup from './disclosure_dropdown_group.vue';
 import { DISCLOSURE_DROPDOWN_GROUP_BORDER_POSITIONS } from './constants';
-import readme from './disclosure_dropdown.md';
 import {
   mockItems,
   mockButtons,
@@ -344,7 +343,7 @@ export const ViewportPositioning = (args, { argTypes }) => ({
     GlDisclosureDropdown,
   },
   template: `
-    <div class="gl-h-screen gl-flex gl-flex-col gl-justify-between gl-pb-10">
+    <div class="gl-h-[768px] gl-flex gl-flex-col gl-justify-between gl-pb-10">
       <div class="gl-p-3">
         ${template('', { bindingOverrides: { ':placement': "'bottom-start'", toggleText: 'My arrow should be on the top and the dropdown left aligned.', ':block': true } })}
       </div>
@@ -375,13 +374,6 @@ ViewportPositioning.args = {
 export default {
   title: 'base/dropdown/disclosure-dropdown',
   component: GlDisclosureDropdown,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     category: {
       control: {

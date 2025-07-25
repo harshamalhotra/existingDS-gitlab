@@ -2,7 +2,7 @@
 import GlLink from '../link/link.vue';
 
 export default {
-  name: 'AvatarLink',
+  name: 'GlAvatarLink',
   components: {
     GlLink,
   },

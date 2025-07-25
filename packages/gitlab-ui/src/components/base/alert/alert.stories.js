@@ -2,7 +2,6 @@ import GlToggle from '../toggle/toggle.vue';
 import { alertVariantOptions } from '../../../utils/constants';
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlAlert from './alert.vue';
-import readme from './alert.md';
 
 const template = `
   <gl-alert
@@ -151,13 +150,6 @@ IncreasedSpacing.args = generateProps();
 export default {
   title: 'base/alert',
   component: GlAlert,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: alertVariantOptions,

@@ -89,6 +89,7 @@ export default {
   <div class="gl-mb-5">
     <story-iframe
       v-if="isDocsMode"
+      style="margin: 0 -20px"
       :url="iFrameUrl"
       :iframe-padding="iframePadding"
       :title="cardTitle"

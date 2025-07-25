@@ -14,7 +14,6 @@ import GlFilteredSearchSuggestionList from './filtered_search_suggestion_list.vu
 import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
 import GlFilteredSearchToken from './filtered_search_token.vue';
 import GlFilteredSearch from './filtered_search.vue';
-import readme from './filtered_search.md';
 
 const fakeUsers = [
   { id: 1, name: 'User Alpha', username: 'alpha' },
@@ -665,13 +664,6 @@ export default {
     GlFilteredSearchTerm,
     GlFilteredSearchTokenSegment,
     GlFilteredSearchToken,
-  },
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {},
 };

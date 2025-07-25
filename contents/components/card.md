@@ -1,8 +1,6 @@
 ---
 name: Card
 description: A card is a flexible container that groups related content and actions in a consistent visual structure.
-components:
-  - base-card
 ---
 
 ## Examples
@@ -68,3 +66,18 @@ A card uses [section design tokens](/product-foundations/design-tokens-using#sec
 - A card is visually a styled container with no particular semantic meaning as a landmark region.
 - Use an appropriate heading level for a card title that aligns with the page hierarchy.
 - When displaying a collection of related cards, structure them as a parent `<ul>` with `<li>` elements that each contain a single card.
+
+## Code reference
+
+Cards are a flexible component used to display content and actions in a variety of contexts.
+They are generally restricted to a single topic and it should be easy for users to scan relevant and
+actionable information. Content, such as images and text, should be positioned within them in a
+manner that demonstrates their intended hierarchy.
+
+### GlCard
+
+<story-viewer component="base-card" title="GlCard" view-mode="docs"></story-viewer>
+
+### Pajamas::CardComponent
+
+<lookbook-viewer component="card"></lookbook-viewer>

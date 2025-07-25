@@ -2,10 +2,6 @@
 name: Alert
 description: An alert is a system generated, contextual, and timely message to a user that may or may not result from their action.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A1
-docs: complete
-gitlab_ui: /components/alert/code
-components:
-  - base-alert
 related:
   - broadcast-message
   - toast
@@ -114,3 +110,45 @@ related:
 - An alert should receive focus and use `aria-live` to announce its presence and allow a user to interact with it immediately.
 - If sticky positioning is used, the user must still be able to access and view focusable elements the alert may be covering.
 - An alert is separate from, but complimentary to [validation](/patterns/forms#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.
+
+## Code reference
+
+### Dismissible alerts
+
+Alerts don't handle their own visibility, so it's the parent component's
+responsbility to listen for the `dismiss` event and hide the alert in some way.
+For example:
+
+```html
+<script>
+  ...
+  computed: {
+    shouldShowAlert() {
+      return !this.isAlertDismissed && this.someOtherCondition();
+    },
+  },
+  ...
+</script>
+
+<template>
+  ...
+  <gl-alert v-if="shouldShowAlert" @dismiss="isAlertDismissed = true">
+    An important message
+  </gl-alert>
+  ...
+</template>
+```
+
+### Sticky alerts
+
+Any alert can use `position: sticky`, however it should be limited to critical alerts where keeping
+the alert visually in context is necessary or when alerts are injected into a page and might
+otherwise go unnoticed.
+
+### GlAlert
+
+<story-viewer component="base-alert" title="GlAlert" view-mode="docs"></story-viewer>
+
+### Pajamas::AlertComponent
+
+<lookbook-viewer component="alert"></lookbook-viewer>

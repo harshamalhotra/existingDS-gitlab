@@ -1,9 +1,6 @@
 ---
 name: Token
 description: A token represents a keyword used to add or filter objects.
-componentLabel: form-token
-components:
-  - base-token
 related:
   - filter
   - badge
@@ -63,3 +60,9 @@ A token can be used to both add and filter content where:
 ### Accessibility
 
 <todo>Add accessibility requirements and considerations.</todo>
+
+## Code reference
+
+### GlToken
+
+<story-viewer component="base-token" title="GlToken" view-mode="docs"></story-viewer>

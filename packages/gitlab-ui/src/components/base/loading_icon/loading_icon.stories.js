@@ -1,7 +1,6 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import { viewModeOptions, loadingIconSizes, loadingIconVariants } from '../../../utils/constants';
 import GlLoadingIcon from './loading_icon.vue';
-import readme from './loading_icon.md';
 
 const template = `
   <div :class="['gl-p-3', 'gl-rounded-base', 'gl-text-center', { 'gl-bg-gray-950' : color === 'light' } ]" >
@@ -37,13 +36,6 @@ Default.args = generateProps();
 export default {
   title: 'base/loading icon',
   component: GlLoadingIcon,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     color: {
       options: viewModeOptions,

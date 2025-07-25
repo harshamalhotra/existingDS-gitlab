@@ -1,8 +1,6 @@
 ---
 name: Table
 description: Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
-components:
-  - base-table-table
 related:
   - card
   - tree
@@ -187,6 +185,153 @@ Use proper semantic markup, so that users of screen readers can navigate through
 - `<th>` should have a defined `scope` attribute to establish relationships between the table headings and rows/columns; for example, `<th scope="col">`.
 - `<caption>` must be used to provide a title for a table.
 - `<caption>` must be an immediate child element of `<table>`.
+
+## Code reference
+
+### GlTable
+
+The `gl-table` component wraps BootstrapVue `b-table` component. `b-table` provides a variety of
+slots for custom data rendering. You can learn more about them in the
+[component documentation](https://bootstrap-vue.org/docs/components/table).
+When using the component, pass in the `fields` prop as part of the `$options`, and give each table
+data and table head its own styles if necessary.
+
+#### Internationalization
+
+To ensure we internationalize field labels, always pass an array of objects for the `fields` prop,
+like mentioned in the implementation example.
+
+[Learn more about the `field` prop](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/2e88af62966265cb725ca3f65f4b175e2494734b/packages/gitlab-ui/src/vendor/bootstrap-vue/src/components/table/README.md#L137).
+
+#### Header text alignment
+
+To align a given `TH` element's text to the right, set the `thAlignRight` property to `true` in
+the fields definition. This will ensure that proper styling is applied, including when the column
+is sortable.
+
+```js
+const fields = [
+  {
+    key: "column_one",
+    label: __("First column"),
+    sortable: true,
+    thAlignRight: true,
+  },
+];
+```
+
+#### Use `GlTableLite` when possible
+
+If you don't need all the features of `GlTable`, like filtering, sorting, or
+pagination, use `GlTableLite` which offers a subset of `GlTable` features.
+
+#### Implementation Example
+
+```html
+<script>
+  export default {
+    fields: [
+      {
+        key: 'column_one',
+        label: __('First column'),
+        thClass: 'w-60p',
+        tdClass: 'table-col d-flex'
+      },
+      {
+        key: 'col_2',
+        label: __('Second column'),
+        thClass: 'w-15p',
+        tdClass: 'table-col d-flex'
+      },
+    ];
+  }
+</script>
+<template>
+  <gl-table :items="items" :fields="$options.fields">
+    <template #head(column_one)>
+      <div>First column</div>
+      <!-- This is the column head for the first object in `fields` -->
+    </template>
+
+    <template #cell(column_one)>
+      This is the template for column data belonging to the first object
+    </template>
+  </gl-table>
+</template>
+```
+
+<story-viewer component="base-table-table" title="GlTable" view-mode="docs"></story-viewer>
+
+### GlTableLite
+
+The `GlTableLite` component wraps BootstrapVue `BTableLite` component.
+`BTableLite` provides a variety of slots for custom data rendering. You can learn
+more about them in the
+[component documentation](https://bootstrap-vue.org/docs/components/table#light-weight-tables).
+
+#### `GlTable` vs. `GlTableLite`
+
+`GlTableLite` adds less payload to the pagebundle than `GlTable`.
+When possible `GlTableLite` should be preferred over `GlTable`.
+
+The `GlTableLite` component provides all of the styling and formatting features of
+`GlTable` (including row details and stacked support), while excluding the following features:
+
+- Filtering
+- Sorting
+- Pagination
+- Items provider support
+- Selectable rows
+- Busy table state and styling
+- Fixed top and bottom rows
+- Empty row support
+
+#### Internationalization
+
+To ensure we internationalize field labels, always pass an array of objects for the `fields` prop,
+like mentioned in the implementation example.
+
+[Learn more about the `field` prop](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/2e88af62966265cb725ca3f65f4b175e2494734b/packages/gitlab-ui/src/vendor/bootstrap-vue/src/components/table/README.md#L137).
+
+#### Implementation example
+
+```html
+<script>
+export default {
+  fields: [
+    {
+      key: 'column_one',
+      label: __('First column'),
+      thClass: 'w-60p',
+      tdClass: 'table-col d-flex'
+    },
+    {
+      key: 'col_2',
+      label: __('Second column'),
+      thClass: 'w-15p',
+      tdClass: 'table-col d-flex'
+    },
+  ];
+}
+</script>
+<template>
+  <gl-table-lite
+    :items="items"
+    :fields="$options.fields"
+  >
+    <template #head(column_one)>
+      <div>First column</div><!-- This is the column head for the first object in `fields` -->
+    </template>
+
+    <template #cell(column_one)>
+      This is the template for column data belonging to the first object
+    </template>
+
+  </gl-table-lite>
+</template>
+```
+
+<story-viewer component="base-table-table-lite" title="GlTableLite" view-mode="docs"></story-viewer>
 
 ## Reference
 

@@ -3,7 +3,6 @@ import { GlModalDirective } from '../../../directives/modal';
 import GlButton from '../button/button.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/modal/README.md';
 import GlModal from './modal.vue';
-import readme from './modal.md';
 
 const play =
   (expectFinalState = () => Promise.resolve()) =>
@@ -138,10 +137,5 @@ export default {
   parameters: {
     bootstrapComponent: 'b-modal',
     bootstrapDocs: BVueReadme,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

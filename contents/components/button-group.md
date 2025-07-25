@@ -2,10 +2,6 @@
 name: Button group
 description: A button group visually unites multiple related buttons into a single collection.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A7
-docs: in-progress
-gitlab_ui: /components/button/code
-components:
-  - base-button-group
 related:
   - button
   - pagination
@@ -90,3 +86,54 @@ Depending on whether a semantic button or link is used, and whether or not the p
 ## Reference
 
 - The button group replaces the [deprecated segmented control](https://gitlab.com/groups/gitlab-org/-/epics/7261).
+
+## Code reference
+
+Button groups are an easy way to group a series of buttons together.
+
+```html
+<gl-button-group>
+  <gl-button>Download</b-button>
+  <gl-button>Browse</b-button>
+  <gl-button variant="danger">Delete</b-button>
+</gl-button-group>
+```
+
+### Split dropdowns
+
+Both `GlCollapsibleListbox` and `GlDisclosureDropdown` can be added as the last
+child of a button group to produce a "split" dropdown.
+
+For the correct styling, the dropdown component must render a caret _only_.
+This means no icon, and no visible text. For accessbility, ensure the
+dropdown's `toggle-text` _and_ `text-sr-only` props are set.
+
+```html
+<gl-button-group>
+  <gl-button>Split listbox</gl-button>
+
+  <gl-collapsible-listbox
+    v-model="foo"
+    :items="items"
+    toggle-text="Choose button action"
+    text-sr-only
+  />
+</gl-button-group>
+```
+
+### Vertical variation
+
+Make a set of buttons appear vertically stacked rather than horizontally by setting the `vertical` prop.
+Split button dropdowns are not supported here.
+
+```html
+<gl-button-group vertical>
+  <gl-button>Top</b-button>
+  <gl-button>Middle</b-button>
+  <gl-button>Bottom</b-button>
+</gl-button-group>
+```
+
+### GlButtonGroup
+
+<story-viewer component="base-button-group" title="GlButtonGroup" view-mode="docs"></story-viewer>

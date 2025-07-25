@@ -3,7 +3,6 @@ import Vue from 'vue';
 import GlButton from '../button/button.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/toast/README.md';
 import GlToast from './toast';
-import readme from './toast.md';
 
 Vue.use(GlToast);
 
@@ -93,10 +92,5 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'toast',
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

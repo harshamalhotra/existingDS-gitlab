@@ -1,7 +1,6 @@
 import GlFormRadio from '../form_radio/form_radio.vue';
 import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-radio/README.md';
 import GlFormRadioGroup from './form_radio_group.vue';
-import readme from './form_radio_group.md';
 
 const defaultOptions = [
   { value: 'pizza', text: 'Pizza' },
@@ -51,11 +50,6 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'b-form-radio-group',
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     options: {

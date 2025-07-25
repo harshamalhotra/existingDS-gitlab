@@ -1,8 +1,6 @@
 ---
 name: Accordion
 description: An accordion is used to show and hide content. 
-components:
-  - base-accordion
 related:
 - modal
 - tree
@@ -84,3 +82,13 @@ Use proper semantic markup, so that users of screen readers are aware of the sta
 - [Smashing Magazine - Designing The Perfect Accordion](https://www.smashingmagazine.com/2017/06/designing-perfect-accordion-checklist/#top)
 - [NN/G: Accordions Are Not Always the Answer for Complex Content on Desktops](https://www.nngroup.com/articles/accordions-complex-content/)
 - [Viget - Testing Accordion Menu Designs & Iconography](https://www.viget.com/articles/testing-accordion-menu-designs-iconography/)
+
+## Code reference
+
+### GlAccordion
+
+<story-viewer component="base-accordion" title="GlAccordion" view-mode="docs"></story-viewer>
+
+### GlAccordionItem
+
+Use `GlAccordionItem` to place the accordion item within your accordion.

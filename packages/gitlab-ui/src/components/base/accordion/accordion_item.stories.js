@@ -1,5 +1,4 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
-import readme from './accordion_item.md';
 import GlAccordionItem from './accordion_item.vue';
 
 const template = `
@@ -41,13 +40,6 @@ export default {
   title: 'base/accordion/accordion-item',
   component: GlAccordionItem,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     headerLevel: {
       options: [1, 2, 3, 4, 5, 6],

@@ -1,6 +1,5 @@
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/table/README.md';
 import { makeContainer } from '../../../utils/story_decorators/container';
-import readme from './table_lite.md';
 import GlTableLite from './table_lite.vue';
 
 const fieldsMock = [
@@ -77,11 +76,6 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'b-table-lite',
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     stickyHeader: {

@@ -3,7 +3,6 @@ import GlButton from '../button/button.vue';
 import GlMarkdown from '../markdown/markdown.vue';
 import { drawerVariants } from '../../../utils/constants';
 import GlDrawer from './drawer.vue';
-import readme from './drawer.md';
 
 const components = { GlDrawer, GlButton, GlMarkdown };
 
@@ -262,13 +261,6 @@ export default {
     variant: {
       options: Object.keys(drawerVariants),
       control: 'select',
-    },
-  },
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
     },
   },
 };

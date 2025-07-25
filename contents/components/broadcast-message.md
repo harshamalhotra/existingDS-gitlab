@@ -2,9 +2,6 @@
 name: Broadcast message
 description: A broadcast message delivers an instance level message from the admin to all users.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A6
-docs: complete
-components:
-  - base-broadcast-message
 related:
   - alert
 ---
@@ -56,3 +53,36 @@ Contains a small amount of text content that uses the container width when user 
 
 - Part of the DOM order on load, and should flow in the natural reading order.
 - The dismiss button uses `aria-label="Dismiss"`.
+
+## Code reference
+
+Broadcast messages provide an efficient and prominent way to deliver critical messages at the
+instance level to all users. For example, a broadcast message can be used when an admin wants to
+announce that their platform will experience downtime during a specific period.
+
+In comparison with an alert, broadcast messages are created by an admin and not triggered by the
+system.
+
+### Dismiss a broadcast message
+
+The `GlBroadcastMessage` component deals with users dismissal the same way `GlAlert` does, meaning
+it does not handle its own visibility but emits a `dismiss` event that the parent component should
+listen to in order to hide the message. Example:
+
+```html
+<template>
+  ...
+  <gl-broadcast-message v-if="!dismissed" @dismiss="dismissed = true">
+    An important message
+  </gl-broadcast-message>
+  ...
+</template>
+```
+
+### GlBroadcastMessage
+
+<story-viewer component="base-broadcast-message" title="GlBroadcastMessage" view-mode="docs"></story-viewer>
+
+### Pajamas::BroadcastBannerComponent
+
+<lookbook-viewer component="broadcast_banner"></lookbook-viewer>

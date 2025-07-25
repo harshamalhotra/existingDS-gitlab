@@ -1,8 +1,6 @@
 ---
 name: Spinner
 description: A spinner is an animated element that appears after a user's action to indicate that saving or loading is in progress.
-components:
-  - base-loading-icon
 related:
   - skeleton-loader
   - button
@@ -61,3 +59,13 @@ The default visible `Loading...` text isn't part of the component itself. Howeve
 - Since the spinner contains no text content, `aria-label` is used to provide a short message, for example, `aria-label="Loading"`.
 - The spinner animation is currently not changed by `perfers-reduced-motion` because it can be considered essential to understanding the state of the application. See _Note 4_ in [Understanding WCAG SC 2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html).
 - See the [WAI-ARIA `status` documentation](https://www.w3.org/TR/wai-aria-1.1/#status) for more details.
+
+## Code reference
+
+### GlLoadingIcon
+
+<story-viewer component="base-loading-icon" title="GlLoadingIcon" view-mode="docs"></story-viewer>
+
+### Pajamas::SpinnerComponent
+
+<lookbook-viewer component="spinner"></lookbook-viewer>

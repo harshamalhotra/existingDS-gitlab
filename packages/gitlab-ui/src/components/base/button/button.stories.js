@@ -11,7 +11,6 @@ import { propDefaultFactory, getA11yParameters } from '../../../utils/stories_ut
 import GlBadge from '../badge/badge.vue';
 import GlButtonGroup from '../button_group/button_group.vue';
 import GlButton from './button.vue';
-import readme from './button.md';
 
 const components = { GlButton };
 
@@ -489,13 +488,6 @@ BadgeWithSROnlyText.parameters = { controls: { disable: true } };
 export default {
   title: 'base/button',
   component: GlButton,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     category: {
       options: Object.keys(buttonCategoryOptions),

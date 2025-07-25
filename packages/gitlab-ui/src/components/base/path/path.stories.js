@@ -2,7 +2,6 @@ import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlPopover from '../popover/popover.vue';
 import GlPath from './path.vue';
 import { mockPathItems } from './data';
-import readme from './path.md';
 
 const defaultValue = propDefaultFactory(GlPath);
 
@@ -63,13 +62,6 @@ AllOptions.parameters = { controls: { disable: true } };
 export default {
   title: 'base/path',
   component: GlPath,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     backgroundColor: {
       control: 'color',

@@ -1,9 +1,6 @@
 ---
 name: Checkbox
 description: A checkbox form element represents a boolean option.
-componentLabel: form-checkbox
-components:
-  - base-form-form-checkbox
 related:
   - radio-button
   - toggle
@@ -123,3 +120,9 @@ Using `GlFormCheckboxGroup`:
   <gl-form-checkbox-group v-model="selected" :options="options" />
 </gl-form-group>
 ```
+
+## Code reference
+
+### GlFormCheckbox
+
+<story-viewer component="base-form-form-checkbox" title="GlFormCheckbox" view-mode="docs"></story-viewer>

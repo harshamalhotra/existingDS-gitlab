@@ -1,7 +1,6 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import { makeContainer } from '../../../utils/story_decorators/container';
 import GlSkeletonLoader from './skeleton_loader.vue';
-import readme from './skeleton_loader.md';
 
 const defaultValue = propDefaultFactory(GlSkeletonLoader);
 
@@ -110,11 +109,4 @@ Object.assign(ReducedMotion, {
 export default {
   title: 'base/skeleton-loader',
   component: GlSkeletonLoader,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

@@ -1,7 +1,6 @@
 import { toggleLabelPosition } from '../../../utils/constants';
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import GlToggle from './toggle.vue';
-import readme from './toggle.md';
 
 const defaultValue = propDefaultFactory(GlToggle);
 
@@ -80,13 +79,6 @@ LabelPositionLeft.args = generateProps({
 export default {
   title: 'base/toggle',
   component: GlToggle,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls(['name']),
     labelPosition: {

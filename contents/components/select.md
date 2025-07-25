@@ -1,7 +1,6 @@
 ---
 name: Select
 description: An HTML element, typically used in a form.
-componentLabel: form-select
 ---
 
 ## Examples
@@ -56,3 +55,9 @@ componentLabel: form-select
   <gl-form-select id="issue-status" v-model="status" :options="options" />
 </gl-form-group>
 ```
+
+## Code reference
+
+### GlFormSelect
+
+<story-viewer component="base-form-form-select" title="GlFormSelect" view-mode="docs"></story-viewer>
