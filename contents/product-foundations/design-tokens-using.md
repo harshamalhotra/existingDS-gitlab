@@ -126,9 +126,74 @@ Use status design tokens when:
 
 Examples of custom status elements:
 
-- A color-coded indicator showing task urgency, or the current state of a CI pipline.
+- A color-coded indicator showing task urgency, or the current state of a CI pipeline.
 - A small icon representing the confidentiality level of a document, or the visibility of a repository.
 - Text communicating code test coverage as a percentage.
+
+### Containers
+
+The following combinations are commonly used to visually wrap content. Each combination has a noticeable difference between the border and background. Container presentation is covered more in the section on how to [visually define content areas](/product-foundations/layout#visually-define-content-areas).
+
+<table>
+  <thead>
+    <tr>
+      <th>Appearance</th>
+      <th>Design tokens</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border gl-border-default gl-bg-default"><br></div></td>
+      <td class="!gl-pt-6">
+       <code>background.color.default</code><br><code>border.color.default</code>
+      </td>
+      <td class="!gl-pt-6">Default combination when a background and border is needed</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-default"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.default</code><br><code>border.color.subtle</code>
+      </td>
+      <td class="!gl-pt-6">Container with visually less prominent borders on default background</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-default"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.default</code><br><code>border.color.strong</code>
+      </td>
+      <td class="!gl-pt-6">Container with visually pronounced borders on default background</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-subtle"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.subtle</code><br><code>border.color.subtle</code>
+      </td>
+      <td class="!gl-pt-6">Container with visually subdued border and background</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-strong"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.strong</code><br><code>border.color.strong</code>
+      </td>
+      <td class="!gl-pt-6">Container with visually emphasized border and background</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-section gl-bg-section"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.section</code><br><code>border.color.section</code>
+      </td>
+      <td class="!gl-pt-6">Container with mode-dependent visual presentation</td>
+    </tr>
+    <tr>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-disabled"><br></div></td>
+      <td class="!gl-pt-6">
+        <code>background.color.disabled</code><br><code>border.color.subtle</code>
+      </td>
+      <td class="!gl-pt-6">Disabled container with visually muted appearance</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Considerations
 
@@ -205,78 +270,6 @@ Additional considerations:
 1. Active processes: For ongoing processes (like 'in progress' or 'syncing'), consider using status, as these represent the current state even though they're dynamic.
 
 When in doubt, consider whether the information represents the current state of something (status) or is communicating a change or the result of an event (feedback). Remember that the primary goal is to provide clear, consistent, and meaningful information to the user in the context of GitLab.
-
-### Visually defining content areas
-
-A region is the loosest form of visual organization through boundaries formed by white space, typography, backgrounds, and dividers. A container creates more explicit grouping with backgrounds and borders to define clear bounds and aid visual hierarchy. Regions and containers can both be nested to create the desired hierarchy in a given layout.
-
-- Presentational attributes such as `subtle` and `strong` establish visual hierarchy without specific meaning.
-- Semantic attributes such as `section`, `overlap`, and `disabled` indicate a container's purpose in the interface.
-
-#### Generic containers
-
-The following combinations ensure a noticeable difference between the border and background of containers:
-
-<table>
-  <thead>
-    <tr>
-      <th>Appearance</th>
-      <th>Design tokens</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border gl-border-default gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-       <code>border.color.default</code><br><code>background.color.default</code>
-      </td>
-      <td class="!gl-pt-6">Default combination when a background and border is needed</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>border.color.subtle</code><br><code>background.color.default</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually less prominent borders on default background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>border.color.strong</code><br><code>background.color.default</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually pronounced borders on default background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-subtle"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>border.color.subtle</code><br><code>background.color.subtle</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually subdued border and background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-strong"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>border.color.strong</code><br><code>background.color.strong</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually emphasized border and background</td>
-    </tr>
-  </tbody>
-</table>
-
-#### Sections
-
-A section is a specific type of container that completely encloses its content. Sections must:
-
-- Include borders on all sides using `border.color.section`.
-- Use `background.color.section` as its background color.
-- Only include `section` borders within its boundaries.
-- Not include nested sections.
-
-Optionally, sections can also:
-
-- Use `background.color.subtle` for nested containers when visual hierarchy is needed.
-- Use `feedback` and `status` backgrounds for feedback and status regions.
 
 ### Patterns and matching
 

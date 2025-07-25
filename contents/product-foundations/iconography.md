@@ -306,15 +306,37 @@ Existing [GitLab SVGs icons](http://gitlab-org.gitlab.io/gitlab-svgs/) haven't h
 
 Icons are used to stress visual weight for elements with a high priority or to explain the universal knowledge in a simple way.
 
-The level of visual weight from heavy to light is: **Icon + label > Icon > label.**
+The level of visual weight from heavy to light is: **Icon and label → Icon → label.**
 
 ### Color inheritance
 
 Icons inherit the color of their parent element. This aligns with the web's default behavior and creates a more consistent implementation across the product. Use explicit color variants for icons only when they require a color that differs from the parent element.
 
-### Referencing icons in code
+### Code reference
+
+<story-viewer component="base-icon" title="GlIcon" view-mode="docs"></story-viewer>
 
 For more information on how icons are referenced in the product, go to [GitLab Docs - Icons and SVG Illustrations](https://docs.gitlab.com/ee/development/fe_guide/icons.html).
+
+### Accessibility
+
+- `gl-icon` icons are hidden from screen readers by default, as usages of icons are commonly decorative.
+- If the icon is not decorative, add an `aria-label` attribute to `gl-icon` to give it an accessible name. This label is read out by screen readers.
+- If the icon is clickable, use `gl-button` instead of `gl-icon` because a clickable element should semantically be a button.
+
+```html
+<!-- icon, which is hidden from screen readers by default  -->
+<gl-icon name="rocket" />
+
+<!-- icon, which has an accessible name "Confidential issue" that is read out by screen readers -->
+<gl-icon name="eye-slash" :aria-label="__('Confidential issue')" />
+
+<!-- clickable icon, which is borderless and padding-less -->
+<gl-button icon="close" category="tertiary" class="!gl-p-0" aria-label="Close" />
+```
+
+For more information about icons within GitLab, visit the
+[GitLab accessibility guidelines](https://docs.gitlab.com/ee/development/fe_guide/accessibility#icons).
 
 ## Resources
 

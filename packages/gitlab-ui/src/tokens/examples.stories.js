@@ -23,11 +23,9 @@ export const Surfaces = () => ({
   `,
 });
 
-export const Borders = () => ({
+export const GenericContainers = () => ({
   template: `
   <div class="gl-text-base">
-    <h2 class="gl-heading-2">Borders on containers</h2>
-    <h3 class="gl-heading-4 gl-my-5">Generic (presentational)</h3>
     <div class="gl-grid gl-grid-cols-3 gl-gap-5">
       <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-default">default + default</div>
       <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-subtle">default + subtle</div>
@@ -35,12 +33,39 @@ export const Borders = () => ({
       <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-subtle">subtle + subtle</div>
       <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong gl-border gl-border-strong">strong + strong</div>
     </div>
-    <h3 class="gl-heading-4 gl-my-5">Semantic</h3>
+  </div>
+  `,
+});
+
+export const SemanticContainers = () => ({
+  template: `
+  <div class="gl-text-base">
     <div class="gl-grid gl-grid-cols-3 gl-gap-5">
       <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section gl-border gl-border-section">section + section</div>
+      <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-section">subtle + section</div>
+      <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-border gl-border-default">overlap + default</div>
+      <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-disabled gl-border gl-border-subtle gl-text-subtle">disabled + subtle</div>
     </div>
-    <h2 class="gl-heading-2 gl-mt-5">Borders as dividers</h2>
-    <h3 class="gl-heading-4 gl-my-5">Generic (presentational)</h3>
+  </div>
+  `,
+});
+
+export const Section = () => ({
+  template: `
+    <div class="gl-border gl-border-section gl-rounded-lg gl-overflow-hidden gl-text-base">
+      <div class="gl-border-b gl-border-b-section gl-bg-section gl-p-5">
+        background.color.section
+      </div>
+      <div class="gl-bg-subtle gl-p-5">
+        background.color.subtle
+      </div>
+    </div>
+  `,
+});
+
+export const Borders = () => ({
+  template: `
+  <div class="gl-text-base">
     <div class="gl-grid gl-grid-cols-3 gl-gap-5">
       <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default">
         on default
@@ -64,7 +89,6 @@ export const Borders = () => ({
         <div class="gl-w-full gl-border-b gl-border-section"></div>
       </div>
     </div>
-    <h3 class="gl-heading-4 gl-my-5">Semantic</h3>
     <div class="gl-grid gl-grid-cols-3 gl-gap-5">
       <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap">
         on overlap
@@ -82,19 +106,6 @@ export const Borders = () => ({
       </div>
     </div>
   </div>
-  `,
-});
-
-export const Section = () => ({
-  template: `
-    <div class="gl-border gl-border-section gl-rounded-lg gl-overflow-hidden gl-text-base">
-      <div class="gl-border-b gl-border-b-section gl-bg-section gl-p-5">
-        background.color.section
-      </div>
-      <div class="gl-bg-subtle gl-p-5">
-        background.color.subtle
-      </div>
-    </div>
   `,
 });
 

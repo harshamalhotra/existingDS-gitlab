@@ -1,5 +1,4 @@
 import { getA11yParameters } from '../../../utils/stories_utils';
-import readme from './markdown.md';
 import GlMarkdown from './markdown.vue';
 import markdownTypescaleDemoContent from './markdown_typescale_demo.html';
 
@@ -29,10 +28,5 @@ export default {
     a11y: getA11yParameters({
       temporarySkipRules: ['scrollable-region-focusable'],
     }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };
