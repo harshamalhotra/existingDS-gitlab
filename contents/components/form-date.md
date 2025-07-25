@@ -1,14 +1,47 @@
+---
+name: Form date
+description: 
+---
+
+## Examples
+
+<story-viewer component="base-form-form-date" title="GlFormDate"></story-viewer>
+
+## Structure
+
+<todo>Add structure image.</todo>
+
+## Guidelines
+
+<todo>Add guidelines.</todo>
+
+### Appearance
+
+<todo>Add appearance.</todo>
+
+### Behavior
+
+<todo>Add behavior.</todo>
+
+### Accessibility
+
+<todo>Add accessibility.</todo>
+
+## Code reference
+
+### GlFormDate
+
 `GlFormDate` allows users to choose and input a date using a keyboard by by using
 browser implemented calendar controls, where available.
 
 `GlFormDate` extends `<input type="date">` with an `<output>` for audible announcement
 of selected date, in full format, by screen-readers.
 
-## Usage
+#### Usage
 
 On `change` the value is emitted in `YYYY-MM-DD` format.
 
-## Accessibility
+#### Accessibility
 
 `GlFormDate` is a form `<input>` and should have an accessible name using a `<label>`.
 
@@ -24,3 +57,5 @@ On `change` the value is emitted in `YYYY-MM-DD` format.
   />
 </gl-form-group>
 ```
+
+<story-viewer component="base-form-form-date" title="GlFormDate" view-mode="docs"></story-viewer>

@@ -1,13 +1,44 @@
-## Usage
+---
+name: Character count
+description: 
+---
+
+## Examples
+
+<story-viewer component="base-form-form-character-count" title="GlFormCharacterCount"></story-viewer>
+
+## Structure
+
+<todo>Add structure image.</todo>
+
+## Guidelines
+
+<todo>Add guidelines.</todo>
+
+### Appearance
+
+<todo>Add appearance.</todo>
+
+### Behavior
+
+<todo>Add behavior.</todo>
+
+### Accessibility
+
+<todo>Add accessibility.</todo>
+
+## Code reference
+
+### GlFormCharacterCount
 
 `GlFormCharacterCount` can be used to add a character count to an input.
 If you are using `GlFormTextarea` on its own see [with character count example](https://design.gitlab.com/storybook?path=/story/base-form-form-textarea--with-character-count).
 If you are wrapping your input, such as in a markdown component, and need the character
 count separate from the input, use `GlFormCharacterCount`.
 
-## Example
+#### Example
 
-```html
+```vue
 <script>
   import { GlFormCharacterCount, GlFormInput, GlFormGroup } from '@gitlab/ui'
 
@@ -51,3 +82,5 @@ count separate from the input, use `GlFormCharacterCount`.
   </gl-form-group>
 <template>
 ```
+
+<story-viewer component="base-form-form-character-count" title="GlFormCharacterCount" view-mode="docs"></story-viewer>

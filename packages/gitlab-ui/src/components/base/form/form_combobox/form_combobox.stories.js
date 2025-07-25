@@ -1,7 +1,6 @@
 import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { makeContainer } from '../../../../utils/story_decorators/container';
 import { stringTokenList, labelText, objectTokenList, actionsList } from './constants';
-import readme from './form_combobox.md';
 import GlFormCombobox from './form_combobox.vue';
 
 const template = `
@@ -104,11 +103,4 @@ WithActions.play = async ({ canvasElement }) => {
 export default {
   title: 'base/form/form-combobox',
   component: GlFormCombobox,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

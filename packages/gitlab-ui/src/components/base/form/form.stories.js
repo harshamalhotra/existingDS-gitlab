@@ -6,7 +6,6 @@ import GlFormGroup from './form_group/form_group.vue';
 import GlFormInput from './form_input/form_input.vue';
 import GlFormSelect from './form_select/form_select.vue';
 import GlFormCheckbox from './form_checkbox/form_checkbox.vue';
-import readme from './form.md';
 
 export const Default = (args) => ({
   components: {
@@ -96,11 +95,4 @@ export const Default = (args) => ({
 export default {
   title: 'base/form/form',
   component: GlForm,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

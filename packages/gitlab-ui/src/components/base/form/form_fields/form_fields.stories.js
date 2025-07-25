@@ -9,7 +9,6 @@ import GlFormCheckbox from '../form_checkbox/form_checkbox.vue';
 import { setStoryTimeout } from '../../../../utils/test_utils';
 import { getA11yParameters } from '../../../../utils/stories_utils';
 import GlFormFields from './form_fields.vue';
-import readme from './form_fields.md';
 import { required } from './validators';
 import { mapToNumber } from './mappers';
 
@@ -169,11 +168,6 @@ export default {
     a11y: getA11yParameters({ temporarySkipRules: ['color-contrast'] }),
     knobs: {
       disable: true,
-    },
-    docs: {
-      description: {
-        component: readme,
-      },
     },
   },
   argTypes: {},

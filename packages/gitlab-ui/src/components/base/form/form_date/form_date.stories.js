@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../../utils/stories_utils';
 import GlFormGroup from '../form_group/form_group.vue';
-import readme from './form_date.md';
 import GlFormDate from './form_date.vue';
 
 const defaultValue = propDefaultFactory(GlFormDate);
@@ -99,11 +98,4 @@ InvalidDate.args = generateProps({
 export default {
   title: 'base/form/form-date',
   component: GlFormDate,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

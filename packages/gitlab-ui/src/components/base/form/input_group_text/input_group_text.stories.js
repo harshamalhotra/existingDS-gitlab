@@ -1,4 +1,3 @@
-import readme from './input_group_text.md';
 import GlInputGroupText from './input_group_text.vue';
 
 const generateProps = (props = {}) => ({
@@ -21,10 +20,5 @@ export default {
   component: GlInputGroupText,
   parameters: {
     controls: { disable: true },
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

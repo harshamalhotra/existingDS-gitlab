@@ -367,6 +367,14 @@
             "title": "Form elements",
             "items": [
               {
+                "title": "Form",
+                "path": "form"
+              },
+              {
+                "title": "Character count",
+                "path": "character-count"
+              },
+              {
                 "title": "Checkbox",
                 "path": "checkbox"
               },
@@ -377,6 +385,30 @@
               {
                 "title": "Filter",
                 "path": "filter"
+              },
+              {
+                "title": "Form combobox",
+                "path": "form-combobox"
+              },
+              {
+                "title": "Form date",
+                "path": "form-date"
+              },
+              {
+                "title": "Form fields",
+                "path": "form-fields"
+              },
+              {
+                "title": "Form group",
+                "path": "form-group"
+              },
+              {
+                "title": "Form input group",
+                "path": "form-input-group"
+              },
+              {
+                "title": "Input group text",
+                "path": "input-group-text"
               },
               {
                 "title": "Radio button",

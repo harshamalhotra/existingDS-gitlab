@@ -1,7 +1,6 @@
 import GlInputGroupText from '../input_group_text/input_group_text.vue';
 import { propDefaultFactory, disableControls } from '../../../../utils/stories_utils';
 import GlFormInputGroup from './form_input_group.vue';
-import readme from './form_input_group.md';
 
 const template = `
   <gl-form-input-group
@@ -60,13 +59,6 @@ PredefinedOptions.args = generateProps({
 export default {
   title: 'base/form/form-input-group',
   component: GlFormInputGroup,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls(['value']),
     prepend: {

@@ -1,7 +1,6 @@
 import GlFormInput from '../form_input/form_input.vue';
 import GlFormGroup from '../form_group/form_group.vue';
 import GlFormCharacterCount from './form_character_count.vue';
-import readme from './form_character_count.md';
 
 const template = `
   <gl-form-group label="Form input with character count" :label-for="$options.inputId">
@@ -47,12 +46,5 @@ Default.args = generateProps();
 export default {
   title: 'base/form/form-character-count',
   component: GlFormCharacterCount,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {},
 };
