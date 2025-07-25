@@ -46,3 +46,7 @@ description: The Animated Icon component is used to display animated visual repr
 - Use `aria-label` to describe the purpose of the animation for screen readers.
 - Ensure that animations are subtle and do not trigger motion sensitivity issues.
 - Allow users to disable animations where necessary.
+
+## Code reference
+
+<story-viewer component="base-animated-icon" title="Animated icons" view-mode="docs"></story-viewer>

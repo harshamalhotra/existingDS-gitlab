@@ -14,7 +14,6 @@ import GlAnimatedSortIcon from './animated_sort_icon.vue';
 import GlAnimatedStarIcon from './animated_star_icon.vue';
 import GlAnimatedTodoIcon from './animated_todo_icon.vue';
 import GlAnimatedUploadIcon from './animated_upload_icon.vue';
-import readme from './animated_icon.md';
 
 const MorphTemplate = (args, { argTypes }) => ({
   components: {
@@ -119,13 +118,6 @@ export default {
   title: 'base/animated-icon',
   tags: ['skip-visual-test'],
   component: GlBaseAnimatedIcon,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     isOn: {
       control: { disable: true },

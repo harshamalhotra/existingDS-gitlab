@@ -41,7 +41,7 @@ These breakpoints define specifications for different screens, devices, and orie
 - **`lg`**: ≥992px
 - **`xl`**: ≥1200px
 
-### Page containers
+### Layout behavior
 
 Users can choose between two kinds of [layout width](https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width) which set the behavior of page containers: **fixed** (default) or **fluid**.
 
@@ -61,9 +61,75 @@ In the fixed layout, there are three possible maximum widths for page containers
 
 We recommend that you first try and use **`990px`** unless another width is more suited. A width can also be chosen based on consistency between similar views in different pages, even if another width would have been more suitable.
 
-## Sticky containers
+## Visually define content areas
 
-A sticky container is a div that sticks to the top or bottom of it's parent container. It contains actions or links that are relevant to the task someone is performing. Sticky containers are useful for long pages that contain lots of content that would push buttons or actions above or below the viewport. For example, when editing a wiki, the save changes button will always be visible even if the wiki content extends below the viewport.
+A region is the loosest form of visual organization through boundaries formed by white space, typography, backgrounds, borders, and dividers. A container creates more explicit grouping with backgrounds and borders to define clear bounds and aid visual hierarchy. Regions and containers can both be nested to create the desired hierarchy in a given layout.
+
+- Presentational attributes such as `subtle` and `strong` establish visual hierarchy without specific meaning.
+- Semantic attributes such as `section`, `overlap`, and `disabled` indicate a container's purpose in the interface.
+
+### Generic (presentational) containers
+
+<story-viewer component="tokens-examples" story="generic-containers" title="Background + border combinations"></story-viewer>
+
+A presentational container creates a noticeable difference between its border and background. This makes the container stand out from the page background or other content.
+
+Acceptable background and combinations are:
+
+- Default background with default, subtle, or strong border for varying degrees of visual prominence.
+- Subtle background with subtle border for a visually subdued container.
+- Strong background with strong border for a visually emphasized container.
+
+### Semantic containers
+
+<story-viewer component="tokens-examples" story="semantic-containers" title="Background + border combinations"></story-viewer>
+
+#### Section
+
+A section is a specific type of container that completely encloses its content and is visually distinct from the default page background only when necessary to maintain affordance and hierarchy in different modes. A section must:
+
+- Be enclosed in a section border.
+- Use the section background color.
+- Only include section borders within its boundaries.
+- Not include nested sections.
+
+Optionally, a section can also:
+
+- Use subtle backgrounds for nested containers when visual hierarchy is needed.
+- Use feedback and status backgrounds for feedback and status regions.
+
+#### Overlap
+
+An overlap container is useful for components and content that overlaps other content. For example, a tooltip, drawer, or sticky header. Any generic border can be used in combination.
+
+#### Disabled
+
+A disabled container is visually subdued to infer unavailability or non-interaction. Consider pairing with other disabled styles and a subtle border.
+
+### Borders and dividers
+
+<story-viewer component="tokens-examples" story="borders" title="Borders on difference surfaces"></story-viewer>
+
+Borders on one or more edge(s) of an element and dividers between content help define boundaries and separate content areas. They provide visual structure and improve the scanability of information when used with discretion.
+
+- A default border or divider provides visual separation without drawing excessive attention. Use the default in most places where visual separation is needed.
+- A subtle border or divider creates minimal visual separation and is best used when division needs to be present but minimal.
+- A strong border or divider creates pronounced separation and emphasis. Use sparingly to highlight distinct elements.
+- A section border should only be used with a [section](#section) container.
+
+#### Considerations
+
+- Consider using white space as an alternative when possible.
+- A horizontal divider separates content sections within the same region or container.
+- A vertical divider separates content or actions that are horizontally adjacent to help define groups and relationships.
+- Apply borders consistently within similar contexts.
+- Avoid using too many borders in close proximity as this can create visual noise.
+
+<note>Some borders may not be visible on surfaces in both modes, test accordingly.</note>
+
+### Sticky
+
+A "sticky" container is visually defined (along with a [shadow](/product-foundations/elevation#medium)) by sticking to the top or bottom of its parent container. It has actions or links that are relevant to the task someone is performing. Sticky containers are useful for long pages that contain lots of content that would push actions out of the viewport. For example, when editing a wiki, the save changes button will always be visible even if the wiki content extends below the viewport.
 
 Use sticky containers with caution as they can easily crowd the interface and make it difficult to navigate the page by shrinking the content area.
 

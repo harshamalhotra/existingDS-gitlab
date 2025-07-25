@@ -5,9 +5,16 @@ related:
   - /product-foundations/type-markdown
 ---
 
-## Example
+## Heading levels
 
-<todo>Add visual example</todo>
+<!-- Using spans to prevent headings impacting floating nav and page hierarchy -->
+<span class="gl-heading-display">Heading display</span><br>
+<span class="gl-heading-1">Heading 1</span><br>
+<span class="gl-heading-2">Heading 2</span><br>
+<span class="gl-heading-3">Heading 3</span><br>
+<span class="gl-heading-4">Heading 4</span><br>
+<span class="gl-heading-5">Heading 5</span><br>
+<span class="gl-heading-6">Heading 6</span><br>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=72017-103312&mode=design&t=CutnGvd6oRdmrYue-4)
 
@@ -26,8 +33,17 @@ related:
 
 By default, heading levels are mapped to the heading scale. However, in some cases, visual hierarchy can be established aside from [semantics](#semantics). For example:
 
-- In an [alert](/components/alert), its container already has sectioning affordances like color, spacing, and iconography. Because of this, a level 2 heading in the alert doesn't need the same emphasis as a level 2 heading for a content section elsewhere on the page.
+- In an [alert](/components/alert), its container already has sectioning affordances like color, spacing, and iconography. Because of this, a level 2 heading in the alert doesn't need the same emphasis as a level 2 heading for a content section elsewhere on the page.<br>
+  
+  ```html
+   <h2 class="gl-alert-title">...</h2> <!-- has size override -->
+   ```
+
 - Similarly, in a [card](/components/card), the properties of the card itself indicate a section. Because of this, a level 3 heading may not require the same sectioning effect as a level 3 heading in body content.
+  
+  ```html
+   <h2 class="gl-heading-scale-500">...</h2> <!-- has size override -->
+   ```
 
 When in doubt, use the scale by default, consider the full page context, and reference existing patterns.
 
@@ -35,11 +51,11 @@ When in doubt, use the scale by default, consider the full page context, and ref
 
 A display style can be applied to a level 1 heading to emphasize the text in a more promotional manner. The larger size and weight creates a stronger visual anchor compared to other text on the page.
 
-<todo>Provide more guidelines and examples of scale overrides.</todo>
+```html
+<h1 class="gl-heading-display">...</h1> <!-- has size override -->
+```
 
-## Implementation
-
-### Classes
+## Code reference
 
 Heading mixins and utility classes:
 
@@ -47,7 +63,7 @@ Heading mixins and utility classes:
 - `gl-heading-display` class is available to create a [display heading](#display-heading).
 - `gl-heading-scale-{100-800}` mixins and classes are available for [contextual adjustments](#contextual-adjustments) where the semantic heading scale doesn't provide the desired visual hierarchy. However, the recommendation is to use the default scale and avoid contextual adjustments as much as possible.
 
-#### Margins
+Margins:
 
 The `gl-heading-{1-6}` and `gl-heading-display` mixins and classes provide a default `margin-bottom` and remove `margin-top`. In order to opt-out of the margin, add a `!gl-mb-0` class:
 

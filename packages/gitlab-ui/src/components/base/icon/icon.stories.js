@@ -2,7 +2,6 @@ import iconSpriteInfo from '@gitlab/svgs/dist/icons.json';
 import { iconSizeOptions, iconVariantOptions } from '../../../utils/constants';
 import { propDefaultFactory, disableControls } from '../../../utils/stories_utils';
 import GlIcon from './icon.vue';
-import readme from './icon.md';
 
 const components = {
   GlIcon,
@@ -37,13 +36,6 @@ export default {
   title: 'base/icon',
   component: GlIcon,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls(['useDeprecatedSizes']),
     name: {

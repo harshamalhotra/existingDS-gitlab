@@ -6,91 +6,55 @@ Elevation addresses dimensional hierarchy and content relationships — not just
 
 ## Shadows
 
+<story-viewer component="tokens-examples" story="shadows" title="Shadows"></story-viewer>
+
 ### Small
-
-<figure-img label="Small shadow example with elevation" src="/img/layers/layers-shadow-small.png"></figure-img>
-
-#### Definition
 
 Surfaces that need an indication they can be manually interacted with. For example, cards in issue boards.
 
-#### Components
-
-* [Card](/components/card)
-* *Components with shadow boundaries*
-
-#### Attributes
-
-* Passive, defines surface bounds when on a white backgrounds.
+* Passive, defines surface bounds when on a default background.
 * Indicates surface can be interacted with.
 
-#### Style
+```html
+<div class="gl-shadow-sm">…</div>
+```
 
-`box-shadow:`<br>`0px 1px 2px rgba(0, 0, 0, 0.1)`
+**Used in:** Elements with shadow boundaries
 
 ### Medium
 
-<figure-img label="Medium shadow example with elevation" src="/img/layers/layers-shadow-medium.png"></figure-img>
-
-#### Definition
-
 Surfaces that need boundary definition and appear on hover. For example, [popovers](/components/popover).
-
-#### Components
-
-* [Popover](/components/popover)
-* [Date picker](/components/date-picker)
-* Dropdown
-  * [Disclosure](/components/dropdown-disclosure)
-  * [Combobox](/components/dropdown-combobox)
-* *Nagivation: Flyout Menus*
-* *Stacked elevation components*
-* *Cards when dragged*
-
-#### Attributes
 
 * Surfaces that appear on hover.
 * Components layered above other components. Stacked layers and static components that have content that scrolls beneath.
 
-#### Style
+```html
+<div class="gl-shadow-md">…</div>
+```
 
-`box-shadow:`<br>`0px 2px 8px rgba(0, 0, 0, 0.16),`<br>`0px 0px 2px rgba(0, 0, 0, 0.16);`
+**Used in:** [popover](/components/popover), [date picker](/components/date-picker), [dropdown disclosure](/components/dropdown-disclosure), [dropdown combobox](/components/dropdown-combobox)
+, navigation flyouts, stacked elevation components, cards when dragged
 
 ### Large
 
-<figure-img label="Large shadow example with elevation" src="/img/layers/layers-shadow-large.png"></figure-img>
-
-#### Definition
-
 Large surfaces that present additional context to the user.
-
-#### Components
-
-* [Modal](/components/modal)
-* [Drawer](/components/drawer)
-
-#### Attributes
 
 * Passive, defines large surfaces presented as additional context to the user.
 
-#### Style
+```html
+<div class="gl-shadow-lg">…</div>
+```
 
-`box-shadow:`<br>`0px 4px 12px rgba(0, 0, 0, 0.16),`<br>`0px 0px 4px rgba(0, 0, 0, 0.16);`
+**Used in:** [modal](/components/modal), [drawer](/components/drawer)
 
 ## Stacking & overflowing layers
 
-Layers that need to appear above a layer with an existing elevation should follow the stacking guidelines. By default, these stacked layers will use the md-shadow.
-
-### Use case
-
-* Content scrolls beneath static elements
+A layer that appears above another with an existing elevation should follow the stacking guidelines. By default, a stacked layer will use the medium shadow when content scrolls beneath it.
 
 <figure-img label="Stacking layers example with elevation" src="/img/layers/layers-scrolling.png"></figure-img>
 
 ## Interactive layers
 
-Layers that can be moved or dragged by the user use the large shadow to create a greater sense of depth in the UI and define the element from other elements that may have an existing elevation.
-
-### Use case
+A layer that's being moved or dragged uses the large shadow to create a greater sense of depth in the UI and differentiates the element from other elements that may have an existing elevation.
 
 <figure-img label="Interactive layers example with elevation" src="/img/layers/layers-interactive.png"></figure-img>

@@ -10,9 +10,7 @@ Text is the primary way of communicating within GitLab. A thoughtful use of sema
 
 ## Typefaces
 
-GitLab Sans, based on [Inter](https://rsms.me/inter/), is used for most user interface (UI) elements, with system fonts used as a back-up. GitLab Mono, based on [JetBrains Mono](https://www.jetbrains.com/lp/mono/), is used for code-related elements, for example, code blocks, branch names, commit IDs, and pipeline IDs. The fonts are available to download in [this package](https://www.npmjs.com/package/@gitlab/fonts).
-
-The decision to use custom typefaces supports a consistent core experience for users, regardless of their device. A finer control of font size, variable weight, and other attributes like disambiguation enable greater optimization of usability and polish.
+Custom typefaces support a consistent core experience for users, regardless of their device. A finer control of font size, variable weight, and other attributes like disambiguation enable greater optimization of usability and polish.
 
 The typefaces were chosen because:
 
@@ -21,6 +19,12 @@ The typefaces were chosen because:
 - Balanced and complementary pairing that supports the [GitLab brand expression](/brand/overview).
 - Open source.
 
+### GitLab Sans
+
+GitLab Sans, based on [Inter](https://rsms.me/inter/), is used for most user interface (UI) elements, with system fonts used as a back-up.
+
+<span class="gl-text-lg">The quick orange tanuki jumps over the lazy dog. 1234567890</span>
+
 **Sans serif font stack**
 
 ```css
@@ -28,6 +32,12 @@ font-family: 'GitLab Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
   Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol', 'Noto Color Emoji';
 ```
+
+<h3 class="gl-font-monospace">GitLab Mono</h3>
+
+ GitLab Mono, based on [JetBrains Mono](https://www.jetbrains.com/lp/mono/), is used for code-related elements, for example, code blocks, branch names, commit IDs, and pipeline IDs. The fonts are available to download in [this package](https://www.npmjs.com/package/@gitlab/fonts).
+
+<span class="gl-font-monospace gl-text-lg">The quick orange tanuki jumps over the lazy dog. 1234567890</span>
 
 **Monospace font stack**
 
@@ -121,6 +131,28 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 
 Note that in implementation the variables use rem values ([relative units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units)) instead of pixels ([absolute units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#absolute_length_units)), so that text respects browser settings for size and scale.
 
+## Font-size
+
+Text size is determined by the following parameters:
+
+- Content type:
+  - UI: default
+  - Markdown: `markdown`
+  - Compact Markdown: `compact-markdown`
+- Media breakpoints:
+  - `min-width: 0`: default
+  - `min-width: 768px`: `md`
+  - `min-width: 992px`: `lg`
+  - `min-width: 1200px`: `xl`
+- Font family:
+  - Regular: default
+  - Monospace: `monospace`
+- Element type:
+  - small paragraph / UI text: `sm`
+  - medium paragraph / UI text: default
+  - large paragraph / UI text: `lg`
+  - headers: `h1..h6`
+
 ## Font weight
 
 GitLab uses contrasting font weights to support visual hierarchy within the application. Generally, two weights are used by default: **400** and **600**.
@@ -143,6 +175,10 @@ GitLab uses contrasting font weights to support visual hierarchy within the appl
 </tr>
 </tbody>
 </table>
+
+## Line-height
+
+<todo>Add line height details.</todo>
 
 ## Text color
 
