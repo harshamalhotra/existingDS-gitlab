@@ -96,3 +96,9 @@ not to use the slots at all. In the latter, the component will fallback
 to simple `GlFormInput`.
 
 <story-viewer component="base-form-form-input-group" title="GlFormInputGroup" view-mode="docs"></story-viewer>
+
+### GlInputGroupText
+
+GlInputGroupText components are used to add text to an input group.
+
+<story-viewer component="base-form-input-group-text" title="GlInputGroupText" view-mode="docs"></story-viewer>

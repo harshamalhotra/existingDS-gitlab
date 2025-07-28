@@ -407,10 +407,6 @@
                 "path": "form-input-group"
               },
               {
-                "title": "Input group text",
-                "path": "input-group-text"
-              },
-              {
                 "title": "Radio button",
                 "path": "radio-button"
               },
