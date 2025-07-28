@@ -37,6 +37,7 @@ const Template = (args) => ({
 
 export const Default = Template.bind({});
 Default.args = generateProps();
+Default.decorators = [makeContainer({ height: '200px' })];
 
 export const WithObjectValue = (args, { argTypes }) => ({
   components: { GlFormCombobox },
