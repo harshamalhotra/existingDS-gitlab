@@ -367,10 +367,6 @@
             "title": "Form elements",
             "items": [
               {
-                "title": "Form",
-                "path": "form"
-              },
-              {
                 "title": "Character count",
                 "path": "character-count"
               },
