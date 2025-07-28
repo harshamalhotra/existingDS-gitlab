@@ -1,6 +1,6 @@
 ---
 name: Form fields
-description: 
+description: Form fields provides a way to build forms using configuration.
 ---
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 name: Form
-description: 
+description: A form is a wrapper element for form elements that supports validation and submission events.
 ---
 
 ## Examples

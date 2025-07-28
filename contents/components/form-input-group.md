@@ -1,6 +1,6 @@
 ---
 name: Form input group
-description: 
+description: A form input group allows prepending or appending content to text inputs.
 ---
 
 ## Examples

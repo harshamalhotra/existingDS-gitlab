@@ -1,6 +1,6 @@
 ---
 name: Character count
-description: 
+description: A character count displays the current and maximum number of characters allowed in a text input or textarea.
 ---
 
 ## Examples

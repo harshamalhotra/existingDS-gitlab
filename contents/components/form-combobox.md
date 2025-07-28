@@ -1,6 +1,6 @@
 ---
 name: Form combobox
-description: 
+description: A form combobox combines a text input with a list of options for autocomplete functionality.
 ---
 
 ## Examples
