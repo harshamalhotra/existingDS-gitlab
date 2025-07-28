@@ -391,10 +391,6 @@
                 "path": "form-combobox"
               },
               {
-                "title": "Form date",
-                "path": "form-date"
-              },
-              {
                 "title": "Form fields",
                 "path": "form-fields"
               },
