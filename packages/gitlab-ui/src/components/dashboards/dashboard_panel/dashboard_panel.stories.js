@@ -170,6 +170,7 @@ WithActions.args = {
     {
       text: 'Delete',
       action: () => {},
+      variant: 'danger',
     },
   ],
 };

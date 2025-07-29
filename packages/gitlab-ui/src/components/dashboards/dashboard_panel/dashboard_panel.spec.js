@@ -44,6 +44,7 @@ describe('GlDashboardPanel', () => {
       .findAllComponents(GlDisclosureDropdownItem)
       .wrappers.map((x) => ({
         text: x.text(),
+        variant: x.props('item').variant,
       }));
 
   describe('default behaviour', () => {
@@ -306,6 +307,11 @@ describe('GlDashboardPanel', () => {
         text: 'Edit',
         action: () => {},
       },
+      {
+        text: 'Delete',
+        variant: 'danger',
+        action: () => {},
+      },
     ];
 
     beforeEach(() => {
@@ -327,6 +333,7 @@ describe('GlDashboardPanel', () => {
       expect(findPanelActionsDropdownItems()).toStrictEqual(
         actions.map((x) => ({
           text: x.text,
+          variant: x.variant,
         })),
       );
     });
