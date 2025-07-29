@@ -4,7 +4,7 @@
       "background": {
         "color": {
           "hover": {
-            "$value": "{background.color.subtle}",
+            "$value": "{highlight.target.background.color}",
             "$type": "color",
             "$description": "Used for the background of a table row in hover state.",
             "$extensions": {

@@ -21052,7 +21052,7 @@
         "color": {
           "hover": {
             "key": "{table.row.background.color.hover}",
-            "$value": "#28272d",
+            "$value": "#1d283e",
             "$type": "color",
             "$description": "Used for the background of a table row in hover state.",
             "$extensions": {
@@ -21064,7 +21064,7 @@
             "filePath": "src/tokens/contextual/table.tokens.json",
             "isSource": true,
             "original": {
-              "$value": "{background.color.subtle}",
+              "$value": "{highlight.target.background.color}",
               "$type": "color",
               "$description": "Used for the background of a table row in hover state.",
               "$extensions": {
