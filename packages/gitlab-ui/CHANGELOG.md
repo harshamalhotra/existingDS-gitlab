@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.9.1
+
+### Patch Changes
+
+- acab084: Fix variable for striped table styles
+
 ## 115.9.0
 
 ### Minor Changes
