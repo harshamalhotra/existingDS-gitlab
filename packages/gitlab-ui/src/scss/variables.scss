@@ -317,7 +317,7 @@ $spacers: (
   9: $gl-spacing-scale-11,
 );
 
-$table-accent-bg: $gl-background-color-strong;
+$table-accent-bg: var(--gl-background-color-subtle);
 $card-border-color: $gl-border-color-default;
 $card-cap-bg: $gl-background-color-subtle !default;
 
