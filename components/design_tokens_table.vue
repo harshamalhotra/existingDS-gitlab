@@ -271,8 +271,8 @@ export default {
       fixed
       stacked="sm"
     >
-      <template #cell(sample)="{ item: { cssName, type } }">
-        <color-chip v-if="type === 'color'" :color="cssName" size="lg" />
+      <template #cell(sample)="{ item: { name, type, cssName } }">
+        <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
       </template>
       <template
         #cell(name)="{

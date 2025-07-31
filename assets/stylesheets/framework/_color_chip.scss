@@ -1,6 +1,8 @@
 .color-chip {
   @apply gl-border;
-  @apply gl-inline-block;
+  @apply gl-inline-grid;
+  @apply gl-place-content-center;
+  @apply gl-overflow-hidden;
   @apply gl-shrink-0;
   @apply gl-rounded-base;
   @apply gl-align-middle;
@@ -12,21 +14,4 @@
     linear-gradient(135deg, transparent 75%, var(--gl-background-color-strong) 75%);
   background-size: 50% 50%;
   background-position: 0 0, 50% 0, 50% -50%, 0 50%;
-}
-
-.color-chip-sm {
-  @apply gl-w-5;
-  @apply gl-h-5;
-}
-
-.color-chip-lg {
-  @apply gl-w-10;
-  @apply gl-h-10;
-}
-
-.color-chip-swatch {
-  @apply gl-inline-block;
-  @apply gl-w-full;
-  @apply gl-h-full;
-  @apply gl-rounded-base;
 }
