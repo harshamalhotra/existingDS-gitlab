@@ -27,7 +27,7 @@
     @apply last:gl-mb-0;
   }
 
-  a {
+  a:where(:not([class])) {
     @apply gl-underline;
   }
 

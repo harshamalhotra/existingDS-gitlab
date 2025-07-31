@@ -37,7 +37,7 @@ button {
   }
 }
 
-code {
+code:where(:not([class])) {
   @apply gl-text-default #{!important};
   @apply gl-bg-strong;
   @apply gl-rounded-base;

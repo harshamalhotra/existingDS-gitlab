@@ -1,26 +1,30 @@
 import Vue from 'vue';
-import FigmaEmbed from '../components/figma_embed.vue';
-import Grid from '../components/grid.vue';
-import IllustrationDirectory from '../components/illustration_directory.vue';
+import DesignToken from '../components/design_token.vue';
+import DesignTokensTable from '../components/design_tokens_table.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
+import FigmaEmbed from '../components/figma_embed.vue';
 import FigureImg from '../components/figure_img.vue';
+import Grid from '../components/grid.vue';
+import IllustrationDirectory from '../components/illustration_directory.vue';
 import LookbookViewer from '../components/lookbook_viewer.vue';
-import StoryViewer from '../components/story_viewer.vue';
 import Note from '../components/note.vue';
+import StoryViewer from '../components/story_viewer.vue';
 import Todo from '../components/todo.vue';
 import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
-  FigmaEmbed,
-  Grid,
-  IllustrationDirectory,
+  DesignToken,
+  DesignTokensTable,
   Do,
   Dont,
+  FigmaEmbed,
   FigureImg,
+  Grid,
+  IllustrationDirectory,
   LookbookViewer,
-  StoryViewer,
   Note,
+  StoryViewer,
   Todo,
   VimeoPlayer,
 }).forEach(([componentName, component]) => Vue.component(componentName, component));

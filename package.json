@@ -47,6 +47,7 @@
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/lunr-module": "^0.3.2",
     "@nuxtjs/sentry": "^8.0.8",
+    "fuse.js": "^7.1.0",
     "iframe-resizer": "^4.4.5",
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0",
