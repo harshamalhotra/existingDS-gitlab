@@ -67,11 +67,7 @@ const chartProps = {
   },
 };
 
-const bodySlot = `
-  <template #body>
-    <gl-line-chart :data="$options.chartData" :option="$options.chartOptions" />
-  </template>
-`;
+const marginTop = 'margin-top: 100px;';
 
 const alertMessageSlot = `
 <template #alert-message="{ panelId }">
@@ -90,9 +86,8 @@ const alertMessageSlot = `
 </template>
 `;
 
-const wrap = (template) => `
-  <!-- Margin top added to give space for the popover -->
-  <div style="margin-top: 100px;" class="gl-text-base">
+const wrap = (template, style = '') => `
+  <div style="${style}" class="gl-text-base">
     <gl-dashboard-panel v-bind="$props" style="min-height: 7rem;">
       ${template}
     </gl-dashboard-panel>
@@ -103,7 +98,26 @@ const Template = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
   props: Object.keys(argTypes),
   ...chartProps,
-  template: wrap(bodySlot),
+  template: wrap(`
+    <template #body>
+      <p class="gl-text-tertiary">Your visualization here</p>
+    </template>
+  `),
+});
+
+const PopoverTemplate = (args, { argTypes }) => ({
+  components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
+  props: Object.keys(argTypes),
+  ...chartProps,
+  // Margin top added to give space for the popover
+  template: wrap(
+    `
+    <template #body>
+      <p class="gl-text-tertiary">Your visualization here</p>
+    </template>
+  `,
+    marginTop,
+  ),
 });
 
 export const Default = Template.bind({});
@@ -119,7 +133,7 @@ Default.args = {
   actionsToggleText: 'Actions',
 };
 
-export const WithTitlePopover = Template.bind({});
+export const WithTitlePopover = PopoverTemplate.bind({});
 WithTitlePopover.args = {
   ...Default.args,
   titlePopover: {
@@ -153,7 +167,7 @@ WithActions.args = {
   ],
 };
 
-export const WithFilters = (args, { argTypes }) => ({
+export const ChartWithFilters = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink, GlButton, GlButtonGroup },
   props: Object.keys(argTypes),
   ...chartProps,
@@ -281,14 +295,14 @@ export const WithFilters = (args, { argTypes }) => ({
     </template>
   `),
 });
-WithFilters.args = {
+ChartWithFilters.args = {
   ...Default.args,
-  title: 'Dashboard panel with filters',
+  title: 'Dashboard panel with filters and example visualization',
 };
 
-export const WithFiltersAndActions = WithFilters.bind({});
-WithFiltersAndActions.args = {
-  ...WithFilters.args,
+export const ChartWithFiltersAndActions = ChartWithFilters.bind({});
+ChartWithFiltersAndActions.args = {
+  ...ChartWithFilters.args,
   actions: [
     {
       text: 'Delete',
@@ -296,7 +310,7 @@ WithFiltersAndActions.args = {
       action: () => {},
     },
   ],
-  title: 'Dashboard panel with filters and actions',
+  title: 'Dashboard panel with filters, actions and example visualization',
 };
 
 export const WithBorderColor = Template.bind({});
@@ -312,7 +326,7 @@ WithTitleIcon.args = {
   titleIconClass: 'gl-text-red-500',
 };
 
-export const WithLongTitle = Template.bind({});
+export const WithLongTitle = PopoverTemplate.bind({});
 WithLongTitle.args = {
   ...Default.args,
   containerClass: 'gl-max-w-48',
@@ -324,13 +338,16 @@ export const WithAlertMessage = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
   props: Object.keys(argTypes),
   ...chartProps,
-  template: wrap(`
+  template: wrap(
+    `
     <template #body>
       <span data-testid="alert-body" class="gl-text-subtle">
         Something went wrong.
       </span>
     </template>
-    ${alertMessageSlot}`),
+    ${alertMessageSlot}`,
+    marginTop,
+  ),
 });
 WithAlertMessage.args = {
   ...Default.args,
