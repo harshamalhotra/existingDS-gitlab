@@ -950,7 +950,7 @@ $gl-progress-bar-indicator-color-default: $gl-status-info-icon-color; // Used fo
 $gl-progress-bar-indicator-color-success: $gl-status-success-icon-color; // Used for the indicator color for the success progress-bar variant.
 $gl-progress-bar-indicator-color-warning: $gl-status-warning-icon-color; // Used for the indicator color for the warning progress-bar variant.
 $gl-progress-bar-indicator-color-danger: $gl-status-danger-icon-color; // Used for the indicator color for the danger progress-bar variant.
-$gl-table-row-background-color-hover: $gl-background-color-subtle; // Used for the background of a table row in hover state.
+$gl-table-row-background-color-hover: $gl-highlight-target-background-color; // Used for the background of a table row in hover state.
 $gl-table-sorting-icon-color: $gl-text-color-heading; // Used for the color of the sorting icons in the column headers.
 $gl-toggle-switch-icon-color-unchecked-default: $gl-action-strong-neutral-background-color-default; // Used for the icon color of an unchecked toggle switch in the default state.
 $gl-toggle-switch-icon-color-unchecked-hover: $gl-action-strong-neutral-background-color-hover; // Used for the icon color of an unchecked toggle switch in the hover state.
