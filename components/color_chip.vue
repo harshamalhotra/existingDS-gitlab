@@ -39,7 +39,7 @@ export default {
     sizeClass() {
       return {
         'gl-h-5 gl-w-5': this.size === 'sm',
-        'gl-h-10 gl-w-10': this.size === 'lg',
+        'gl-h-9 gl-w-9': this.size === 'lg',
       };
     },
   },
@@ -55,7 +55,7 @@ export default {
       :style="{ 'border-color': color }"
     ></span>
     <gl-icon v-else-if="isIconColor" name="smiley" :size="32" :style="{ color: color }" />
-    <span v-else-if="isTextColor" :style="{ color: color, 'font-size': '250%' }">Aa</span>
+    <span v-else-if="isTextColor" :style="{ color: color, 'font-size': '200%' }">Aa</span>
     <span
       v-else
       class="gl-inline-block"

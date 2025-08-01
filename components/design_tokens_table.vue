@@ -281,7 +281,7 @@ export default {
       >
         <div class="gl-mb-3">
           <div class="gl-mb-2 gl-flex gl-items-center gl-gap-3">
-            <code class="gl-text-sm gl-font-bold gl-text-strong">
+            <code class="gl-text-base gl-font-bold gl-text-strong">
               {{ isTailwind ? className : name }}
             </code>
             <gl-button
@@ -300,7 +300,7 @@ export default {
         </div>
         <ul class="!gl-m-0 gl-flex gl-list-none gl-flex-col !gl-p-0">
           <li v-if="isTailwind" class="gl-text-sm">
-            <strong class="gl-inline-block gl-w-8">Token:</strong> {{ name }}
+            <span class="gl-inline-block gl-w-8">Token:</span> {{ name }}
             <gl-button
               v-gl-tooltip
               title="Copy token name value to clipboard"
@@ -312,7 +312,7 @@ export default {
             />
           </li>
           <li class="gl-text-sm">
-            <strong class="gl-inline-block gl-w-8">Figma:</strong> {{ figmaName }}
+            <span class="gl-inline-block gl-w-8">Figma:</span> {{ figmaName }}
             <gl-button
               v-gl-tooltip
               title="Copy Figma value to clipboard"
@@ -324,7 +324,7 @@ export default {
             />
           </li>
           <li class="gl-text-sm">
-            <strong class="gl-inline-block gl-w-8">CSS:</strong> {{ cssName }}
+            <span class="gl-inline-block gl-w-8">CSS:</span> {{ cssName }}
             <gl-button
               v-gl-tooltip
               title="Copy CSS value to clipboard"
@@ -336,7 +336,7 @@ export default {
             />
           </li>
           <li class="gl-text-sm">
-            <strong class="gl-inline-block gl-w-8">SCSS:</strong> {{ scssName }}
+            <span class="gl-inline-block gl-w-8">SCSS:</span> {{ scssName }}
             <gl-button
               v-gl-tooltip
               title="Copy SCSS value to clipboard"
@@ -349,12 +349,9 @@ export default {
           </li>
         </ul>
       </template>
-      <template #cell(value)="{ item: { type, value, valueLabel, darkValueLabel, cssName } }">
+      <template #cell(value)="{ item: { type, valueLabel, darkValueLabel, cssName } }">
         <ul class="!gl-m-0 gl-flex gl-list-none gl-flex-col gl-gap-3 !gl-p-0">
-          <li v-if="typeof value === 'string'">
-            <design-token :css-name="cssName" :type="type" :value="valueLabel" />
-          </li>
-          <li v-if="value.default">
+          <li>
             <design-token
               :css-name="cssName"
               :type="type"
@@ -362,7 +359,7 @@ export default {
               class="gl-light-scope"
             />
           </li>
-          <li v-if="value.dark">
+          <li>
             <design-token
               :css-name="cssName"
               :type="type"
