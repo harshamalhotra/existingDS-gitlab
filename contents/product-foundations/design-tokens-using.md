@@ -63,6 +63,8 @@ Interactivity can be communicated through implementing states such as `hover`, `
 
 Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), and [tabs](/components/tabs)) that already implement action design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
 
+<design-tokens-table group="action"></design-tokens-table>
+
 ### Controls
 
 Controls enable user input and selection, typically within a [form](/patterns/forms). `control.*` design tokens apply consistent styling to form elements across the GitLab UI. They're also used for elements that appear or function like a form control, even though the underlying code or semantics may not always match a native HTML form element.
@@ -76,6 +78,8 @@ Control design tokens support implementations of:
 - Form element validation, readonly, and disabled states.
 
 Consider using existing GitLab components (such as [checkbox](/components/checkbox), [radio button](/components/radio-button), [select](/components/select), [textarea](/components/textarea), and [text input](/components/text-input)) that already implement control design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
+
+<design-tokens-table group="control"></design-tokens-table>
 
 ### Feedback
 
@@ -92,6 +96,8 @@ Examples of custom feedback elements:
 - A notice that alerts about unusual performance patterns, or an available dependancy update.
 - An inline update providing compliance check feedback, or discovery of a new vulnerability.
 - An addition to a collaboration activity stream.
+
+<design-tokens-table group="feedback"></design-tokens-table>
 
 ### Highlighting
 
@@ -114,6 +120,8 @@ Examples of highlight elements:
 - Highlighting a row on hover to emphasize the relationship of content within.
 - Indicating which element is related to another that currently has the user's attention.
 
+<design-tokens-table group="highlight"></design-tokens-table>
+
 ### Status
 
 `status.*` design tokens represent the current state or condition of an element or system. A status item provides static information that doesn't typically require immediate action.
@@ -129,6 +137,8 @@ Examples of custom status elements:
 - A color-coded indicator showing task urgency, or the current state of a CI pipeline.
 - A small icon representing the confidentiality level of a document, or the visibility of a repository.
 - Text communicating code test coverage as a percentage.
+
+<design-tokens-table group="status"></design-tokens-table>
 
 ### Containers
 

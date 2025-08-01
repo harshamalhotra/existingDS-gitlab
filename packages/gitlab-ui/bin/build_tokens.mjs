@@ -450,6 +450,9 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
           {
             destination: 'tokens.css',
             format: 'css/variables',
+            options: {
+              selector: ':root, .gl-light-scope',
+            },
           },
         ],
       },

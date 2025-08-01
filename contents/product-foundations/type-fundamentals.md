@@ -71,7 +71,7 @@ GitLab utilizes two type scales: **dynamic** and **fixed**.
 </thead>
 <tbody>
 <tr>
-<td><code class="gl-whitespace-nowrap">$size-text-100</code></td>
+<td><code>$size-text-100</code></td>
 <td>12px</td>
 <td>12px</td>
 <td>12px</td>
@@ -184,6 +184,6 @@ GitLab uses contrasting font weights to support visual hierarchy within the appl
 
 There are a number of text colors defined in GitLab. Color choice depends on the location and purpose of the text.
 
-<story-viewer component="tokens-text" story="default" title="Tokens"></story-viewer>
+<design-tokens-table group="text"></design-tokens-table>
 
 The disabled text color has a 3.52 contrast ratio on white, which falls short of the 4.5:1 ratio needed to pass [WCAG 2.2 SC 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Disabled (inactive) elements are not required to have sufficient contrast, but we try to get as close as possible while still visually differentiating active and inactive text. Refer to the [forms](/patterns/forms#form-elements) pattern details for more information about placeholder text.
