@@ -1,5 +1,6 @@
 import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { getA11yParameters } from '../../../utils/stories_utils';
+import { makeContainer } from '../../../utils/story_decorators/container';
 import GlTokenSelector from './token_selector.vue';
 
 const template = `
@@ -14,33 +15,34 @@ const template = `
   </div>
 `;
 
+const dropdownItems = [
+  {
+    id: 1,
+    name: 'Vue.js',
+  },
+  {
+    id: 2,
+    name: 'Ruby On Rails',
+    class: '!gl-text-white !gl-bg-data-viz-magenta-950',
+  },
+  {
+    id: 3,
+    name: 'GraphQL',
+  },
+  {
+    id: 4,
+    name: 'Redis',
+    class: '!gl-text-white !gl-bg-data-viz-green-700',
+  },
+  {
+    id: 5,
+    name: 'CSS',
+    class: '!gl-text-red-700 !gl-bg-red-50',
+  },
+];
+
 const generateProps = (props) => ({
-  dropdownItems: [
-    {
-      id: 1,
-      name: 'Vue.js',
-    },
-    {
-      id: 2,
-      name: 'Ruby On Rails',
-      class: '!gl-text-white !gl-bg-data-viz-magenta-950',
-    },
-    {
-      id: 3,
-      name: 'GraphQL',
-    },
-    {
-      id: 4,
-      name: 'Redis',
-      class: '!gl-text-white !gl-bg-data-viz-green-700',
-    },
-    {
-      id: 5,
-      name: 'CSS',
-      class: '!gl-text-red-500',
-      style: { backgroundColor: '#97acff' },
-    },
-  ],
+  dropdownItems,
   ...props,
 });
 
@@ -52,7 +54,7 @@ const Template = (args, { argTypes }) => ({
     return {
       filteredDropdownItems: [],
       inputText: '',
-      selectedTokens: [
+      selectedTokens: args.selectedTokens || [
         {
           id: 1,
           name: 'Vue.js',
@@ -143,3 +145,19 @@ UserDefinedTokensShowAddNewAlways.args = generateProps({
   allowUserDefinedTokens: true,
   showAddNewAlways: true,
 });
+
+export const Clearable = Template.bind({});
+Clearable.parameters = {
+  docs: {
+    description: {
+      story: 'Allows user to bulk delete tokens.',
+    },
+  },
+};
+Clearable.decorators = [makeContainer({ width: '300px' })];
+// TODO: turn on visual testing again once https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2950 is resolved
+Clearable.tags = ['skip-visual-test'];
+Clearable.args = {
+  ...generateProps({ allowClearAll: true }),
+  selectedTokens: dropdownItems,
+};
