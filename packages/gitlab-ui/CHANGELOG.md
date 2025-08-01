@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.9.2
+
+### Patch Changes
+
+- 5b58260: Update table hover token to use target highlight
+
 ## 115.9.1
 
 ### Patch Changes
