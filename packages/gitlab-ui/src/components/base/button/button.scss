@@ -640,3 +640,11 @@
     @apply gl-shadow-none;
   }
 }
+
+// fixes sr-only elements positioning issue
+// when positioned inside a drawer the visually hidden element might stick to the very bottom of the drawer
+// extending the drawer size and introducing scrolling
+// context: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4866
+.gl-button-text:has(.gl-sr-only) {
+  position: relative;
+}
