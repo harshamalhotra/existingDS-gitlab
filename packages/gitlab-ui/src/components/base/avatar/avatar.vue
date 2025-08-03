@@ -144,6 +144,7 @@ export default {
       sizeClasses,
       identiconBackgroundClass,
     ]"
+    aria-hidden="true"
     v-on="$listeners"
   >
     {{ identiconText }}
