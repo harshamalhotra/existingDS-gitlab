@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.9.3
+
+### Patch Changes
+
+- 0b20037: Fix accessibility of initials-only avatars
+
 ## 115.9.2
 
 ### Patch Changes
