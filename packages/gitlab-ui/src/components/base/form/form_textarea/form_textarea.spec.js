@@ -255,4 +255,53 @@ describe('GlFormTextArea', () => {
       itUpdatesDebouncedScreenReaderText(expectedText);
     });
   });
+
+  describe('when `textareaClasses` prop is set', () => {
+    describe('with string value', () => {
+      beforeEach(() => {
+        createComponent({
+          value: 'test',
+          characterCountLimit: 10,
+          textareaClasses: 'gl-rounded-lg',
+        });
+      });
+
+      it('applies the class to the textarea', () => {
+        expect(findTextarea().classes()).toContain('gl-rounded-lg');
+      });
+    });
+
+    describe('with array value', () => {
+      beforeEach(() => {
+        createComponent({
+          value: 'test',
+          characterCountLimit: 10,
+          textareaClasses: ['gl-rounded-lg', 'gl-border-solid'],
+        });
+      });
+
+      it('applies all classes to the textarea', () => {
+        expect(findTextarea().classes()).toContain('gl-rounded-lg');
+        expect(findTextarea().classes()).toContain('gl-border-solid');
+      });
+    });
+
+    describe('with object value', () => {
+      beforeEach(() => {
+        createComponent({
+          value: 'test',
+          characterCountLimit: 10,
+          textareaClasses: {
+            'gl-rounded-lg': true,
+            'gl-border-solid': false,
+          },
+        });
+      });
+
+      it('applies classes based on object values', () => {
+        expect(findTextarea().classes()).toContain('gl-rounded-lg');
+        expect(findTextarea().classes()).not.toContain('gl-border-solid');
+      });
+    });
+  });
 });

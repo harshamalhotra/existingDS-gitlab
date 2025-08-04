@@ -42,6 +42,14 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * Classes for textarea component when `characterCountLimit` is set.
+     */
+    textareaClasses: {
+      type: [String, Object, Array],
+      required: false,
+      default: null,
+    },
     rows: {
       type: [Number, String],
       required: false,
@@ -84,7 +92,7 @@ export default {
     bFormTextareaProps() {
       return {
         ...this.$attrs,
-        class: 'gl-form-input gl-form-textarea',
+        class: ['gl-form-input gl-form-textarea', this.textareaClasses],
         noResize: this.noResize,
         value: this.value,
         rows: this.rows,
@@ -104,8 +112,8 @@ export default {
 <template>
   <div v-if="showCharacterCount">
     <b-form-textarea
-      :aria-describedby="characterCountTextId"
       v-bind="bFormTextareaProps"
+      :aria-describedby="characterCountTextId"
       v-on="listeners"
       @[keypressEvent].native="handleKeyPress"
     />
