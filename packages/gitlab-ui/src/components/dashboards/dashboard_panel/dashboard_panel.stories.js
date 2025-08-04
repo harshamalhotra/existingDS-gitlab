@@ -109,13 +109,13 @@ const PopoverTemplate = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
   props: Object.keys(argTypes),
   ...chartProps,
-  // Margin top added to give space for the popover
   template: wrap(
     `
     <template #body>
       <p class="gl-text-tertiary">Your visualization here</p>
     </template>
   `,
+    // Margin top added to give space for the popover
     marginTop,
   ),
 });
@@ -346,6 +346,7 @@ export const WithAlertMessage = (args, { argTypes }) => ({
       </span>
     </template>
     ${alertMessageSlot}`,
+    // Margin top added to give space for the alert popover
     marginTop,
   ),
 });

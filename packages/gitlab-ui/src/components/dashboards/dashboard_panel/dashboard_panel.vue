@@ -70,10 +70,12 @@ export default {
       default: '',
     },
     /**
-     * Configuration object for the title popover.
-     * @property {string} description - The popover text content with interpolation placeholders.
-     *   Uses %{linkStart} and %{linkEnd} as markers for where a link should be inserted.
-     * @property {string} descriptionLink - The URL that will be used for the link portion
+     * Configuration object for the title popover. Expected structure:
+     *
+     * - `description`: The popover text content with interpolation placeholders.
+     *   Uses `%{linkStart}` and `%{linkEnd}` as markers for where a link should be inserted.
+     *
+     * - `descriptionLink`: The URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
      */
     titlePopover: {

@@ -1,33 +1,34 @@
 ## Dashboard panel
 
 The `GlDashboardPanel` component is a container that provides consistent UI structure
-for content within dashboards and other analytics interfaces. It is a foundational building
-block used to wrap query results with standardized styling, loading states, actions,
-and metadata display as outlined by our [Pajamas guidelines](#pajamas-guidelines).
+for analytics. It is primarily designs for dashboards, but can be used in other analytics
+interfaces. It is a foundational building block that wraps query results with standardized
+styling, loading states, actions, and metadata as outlined by our [Pajamas guidelines](#pajamas-guidelines).
 
 ### When to use
 
 This component should be used when:
 
-- You need a container for dashboards, reports, or other analytics focused interfaces.
+- You need a standardized container for individual results in dashboards, reports,
+or other analytics-focused interfaces.
 - You want to wrap a single visualization of query results, such as charts, markdown,
 single stats, or tables.
 - You want to benefit from easy integration with the dashboard layout component.
 
-### Known limitations
+## The component
+
+The component is a flexible container that can render any type of content.
+While not opinionated about its contents, it's designed as a container
+for a single query result visualization. It also provides useful ways to communicate
+the query state, metadata, available actions to our users as outlined by our [Pajamas guidelines](#pajamas-guidelines).
+
+### What this component doesn't do
 
 The panel component is UI focused and intentionally does not:
 
 - Manage data states or data fetching.
 - Handle filter logic or filter state management.
 - Process, transform, or visualize data in any way.
-
-## The component
-
-The component is a flexible container that can render any type of content.
-While not opinionated about what you put inside it, it's designed as a container
-for a single query result visualization. It also provides useful ways to communicate
-the query state, metadata, available actions to our users as outlined by our [Pajamas guidelines](#pajamas-guidelines).
 
 ### Loading states
 
