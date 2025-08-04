@@ -1,4 +1,3 @@
-import readme from './gauge.md';
 import GlGauge from './gauge.vue';
 
 const template = `
@@ -84,11 +83,4 @@ WithToolbox.args = generateProps({
 export default {
   title: 'charts/gauge-chart',
   component: GlGauge,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

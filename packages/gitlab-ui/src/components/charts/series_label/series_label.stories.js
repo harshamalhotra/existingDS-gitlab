@@ -6,7 +6,6 @@ import {
   SERIES_NAME_LONG,
   SERIES_NAME_LONG_WITHOUT_SPACES,
 } from '../../../utils/stories_constants';
-import readme from './series_label.md';
 
 const generateProps = ({
   color = colorPaletteDefault[0],
@@ -63,13 +62,6 @@ WithColorAndLongNameWithNoSpaces.args = generateProps({
 export default {
   title: 'charts/chart-series-label',
   component: GlChartSeriesLabel,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     color: {
       control: 'color',

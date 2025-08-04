@@ -6,7 +6,6 @@ import {
 } from '../../../../utils/stories_constants';
 
 import GlChartTooltip from './tooltip.vue';
-import readme from './tooltip.md';
 
 const components = {
   GlChart,
@@ -83,10 +82,5 @@ export default {
   parameters: {
     bootstrapComponent: 'b-popover',
     controls: { disable: true },
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

@@ -1,7 +1,6 @@
 import GlTabs from '../../base/tabs/tabs/tabs.vue';
 import GlTab from '../../base/tabs/tab/tab.vue';
 import GlChart from './chart.vue';
-import readme from './chart.md';
 
 const generateProps = ({ options } = {}) => ({
   options: {
@@ -41,7 +40,7 @@ export const Tab = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
   <gl-tabs>
-    <gl-tab title="Chart"> 
+    <gl-tab title="Chart">
       <gl-chart :options="options" />
     </gl-tab>
   </gl-tabs>
@@ -97,11 +96,6 @@ export default {
   title: 'charts/chart',
   component: GlChart,
   parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
     controls: { disable: true },
   },
 };

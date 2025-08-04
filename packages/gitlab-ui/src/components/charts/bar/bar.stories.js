@@ -1,6 +1,5 @@
 import { GlBarChart } from '../../../charts';
 import { makeContainer } from '../../../utils/story_decorators/container';
-import readme from './bar.md';
 
 const Template = (args, { argTypes }) => ({
   components: { GlBarChart },
@@ -62,11 +61,4 @@ Object.assign(AutoHeight, {
 export default {
   title: 'charts/bar-chart',
   component: GlBarChart,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

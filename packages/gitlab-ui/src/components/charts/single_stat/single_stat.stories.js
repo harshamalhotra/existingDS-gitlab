@@ -1,7 +1,6 @@
 import iconSpriteInfo from '@gitlab/svgs/dist/icons.json';
 import { GlSingleStat } from '../../../charts';
 import { badgeVariantOptions } from '../../../utils/constants';
-import readme from './single_stat.md';
 
 const generateProps = ({
   variant = GlSingleStat.props.variant.default,
@@ -72,13 +71,6 @@ WithDelimiters.args = generateProps({ value: '10000', useDelimiters: true });
 export default {
   title: 'charts/single-stat',
   component: GlSingleStat,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     variant: {
       options: Object.values(badgeVariantOptions),

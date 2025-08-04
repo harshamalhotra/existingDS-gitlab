@@ -1,7 +1,6 @@
 import { GlSparklineChart } from '../../../charts';
 import { colorFromDefaultPalette } from '../../../utils/charts/theme';
 import { makeContainer } from '../../../utils/story_decorators/container';
-import readme from './sparkline.md';
 
 const chartData = [
   ['Mon', 10],
@@ -78,11 +77,4 @@ Object.assign(AutoHeight, {
 export default {
   title: 'charts/sparkline-chart',
   component: GlSparklineChart,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

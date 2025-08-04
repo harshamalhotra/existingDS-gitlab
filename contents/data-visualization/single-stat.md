@@ -1,14 +1,12 @@
 ---
 name: Single stat
-figma: https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=275%3A731
-docs: complete
-a11y: upcoming
-gitlab_ui: /components/single-stat/code
-components:
-  - charts-single-stat
 ---
 
 The single stat component displays the title and value of a metric.
+
+## Examples
+
+<story-viewer component="charts-single-stat" title="GlSingleStat"></story-viewer>
 
 ## Usage
 
@@ -59,3 +57,18 @@ A single stat that navigates to detailed information about a metric.
 ## Design specifications
 
 Color, spacing, dimension, and layout information can be viewed in the [Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=275%3A731)
+
+## Code reference
+
+The single stat component is used to show a single value. The color of the meta icon / badge is
+determined by the **variant** prop, which can be one of "success", "warning", "danger", "info",
+"neutral" or "muted" (default).
+
+### Hover state
+
+You can make the component focusable by adding a `tabindex=0` attribute to it. This will also apply
+a hover state to the component.
+
+### GlSingleStat
+
+<story-viewer component="charts-single-stat" title="GlSingleStat" view-mode="docs"></story-viewer>
