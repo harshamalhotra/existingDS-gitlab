@@ -9,7 +9,6 @@ export { default as GlNav } from './base/nav/nav.vue';
 export { default as GlNavItem } from './base/nav/nav_item.vue';
 export { default as GlFormCheckboxTree } from './base/form/form_checkbox_tree/form_checkbox_tree.vue';
 export { default as GlMarkdown } from './base/markdown/markdown.vue';
-export { default as GlIntersectionObserver } from './utilities/intersection_observer/intersection_observer.vue';
 export { default as GlLink, default as GlDeprecatedLink } from './base/link/link.vue';
 export { default as GlIcon } from './base/icon/icon.vue';
 export { default as GlAnimatedChevronRightDownIcon } from './base/animated_icon/animated_chevron_right_down_icon.vue';
@@ -108,6 +107,7 @@ export { default as GlExperimentBadge } from './experimental/experiment_badge/ex
 // Utilities
 export { default as GlAnimatedNumber } from './utilities/animated_number/animated_number.vue';
 export { default as GlFriendlyWrap } from './utilities/friendly_wrap/friendly_wrap.vue';
+export { default as GlIntersectionObserver } from './utilities/intersection_observer/intersection_observer.vue';
 export { default as GlIntersperse } from './utilities/intersperse/intersperse.vue';
 export { default as GlSprintf } from './utilities/sprintf/sprintf.vue';
 export { default as GlTruncate } from './utilities/truncate/truncate.vue';

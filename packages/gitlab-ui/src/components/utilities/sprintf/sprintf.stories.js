@@ -1,7 +1,6 @@
 import GlButton from '../../base/button/button.vue';
 import GlLink from '../../base/link/link.vue';
 import GlSprintf from './sprintf.vue';
-import readme from './sprintf.md';
 
 const generateProps = ({ message = 'Written by %{author}', placeholders } = {}) => ({
   message,
@@ -94,11 +93,4 @@ Object.assign(BasicButtonPlaceholder, {
 export default {
   title: 'utilities/sprintf',
   component: GlSprintf,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

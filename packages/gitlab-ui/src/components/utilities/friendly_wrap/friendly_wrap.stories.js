@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlFriendlyWrap from './friendly_wrap.vue';
-import readme from './friendly_wrap.md';
 
 const components = {
   GlFriendlyWrap,
@@ -47,11 +46,4 @@ MultipleSymbols.args = generateProps({
 export default {
   title: 'utilities/friendly-wrap',
   component: GlFriendlyWrap,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

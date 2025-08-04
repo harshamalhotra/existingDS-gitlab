@@ -1,18 +1,15 @@
-The friendly-wrap component lets you wrap text in a predictable way by appending [`<wbr>`] elements
-to specific break-symbols.
+---
+name: Friendly Wrap
+description: The friendly-wrap component lets you wrap text in a predictable way.
+---
 
-[`<wbr>`]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+## Examples
 
-## Internet Explorer 11
+<story-viewer component="utilities-friendly-wrap" title="GlFriendlyWrap"></story-viewer>
 
-IE11 doesn't support the `<wbr>` element: <https://caniuse.com/#search=wbr>
-To use this component on IE11, you'll need some CSS to preserve its behaviour:
+## Code reference
 
-```css
-wbr {
-  display: inline-block;
-}
-```
+The friendly-wrap component lets you wrap text in a predictable way by appending [`<wbr>`] elements to specific break-symbols.
 
 ## Usage
 
@@ -64,3 +61,9 @@ Which renders to:
 ```html
 <span class="text-break">it goes on and<wbr> on and<wbr> on and<wbr> on</span>
 ```
+
+### GlFriendlyWrap
+
+<story-viewer component="utilities-friendly-wrap" title="GlFriendlyWrap" view-mode="docs"></story-viewer>
+
+[`<wbr>`]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr

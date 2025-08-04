@@ -1,5 +1,4 @@
 import GlIntersperse from './intersperse.vue';
-import readme from './intersperse.md';
 
 const template = `
   <div>
@@ -33,13 +32,6 @@ Default.args = generateProps();
 export default {
   title: 'utilities/intersperse',
   component: GlIntersperse,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
 
 export const CustomSeparator = Template.bind({});

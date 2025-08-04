@@ -1,5 +1,4 @@
 import GlIntersectionObserver from './intersection_observer.vue';
-import readme from './intersection_observer.md';
 
 const components = {
   GlIntersectionObserver,
@@ -152,11 +151,4 @@ export default {
   title: 'utilities/intersection-observer',
   component: GlIntersectionObserver,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
