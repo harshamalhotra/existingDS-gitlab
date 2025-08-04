@@ -29,4 +29,9 @@ export { default as GlTable } from '@gitlab/ui/src/components/base/table/table.v
 export { GlTooltipDirective } from '@gitlab/ui/src/directives/tooltip/tooltip';
 
 // Utilities
-export { debounceByAnimationFrame } from '@gitlab/ui/src/utils/utils';
+export { HEX_REGEX } from '@gitlab/ui/src/utils/constants';
+export {
+  colorFromBackground,
+  debounceByAnimationFrame,
+  getColorContrast,
+} from '@gitlab/ui/src/utils/utils';
