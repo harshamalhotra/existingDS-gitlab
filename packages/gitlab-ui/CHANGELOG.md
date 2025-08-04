@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.10.0
+
+### Minor Changes
+
+- 9509832: Added class property to form:textarea that is applied to textarea element when character count is being used
+
 ## 115.9.3
 
 ### Patch Changes
