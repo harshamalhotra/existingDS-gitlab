@@ -11,3 +11,14 @@ $sidebar-width: 16rem;
 
 $z-nav-skip-link: 500;
 $z-sidebar: 400;
+
+/*
+ * Feature flags
+ */
+
+/**
+ * Make sure GlButtonGroups render correctly, particularly ones which use the `selected` prop.
+ * The flag was introduced in https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/4506.
+ * This should be removed when that flag no longer exists in GitLab UI.
+ */
+$feature-button-border: true;
