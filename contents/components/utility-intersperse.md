@@ -9,9 +9,6 @@ description: The intersperse component separates a list of elements by a given c
 
 ## Code reference
 
-The intersperse component separates a list of elements
-by a given character (the default is `, `).
-
 It takes all direct descendants of its default slot and inserts
 the given separator between each item:
 
