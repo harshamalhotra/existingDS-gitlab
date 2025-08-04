@@ -1,6 +1,13 @@
-A Vue Directive to sanitize HTML to avoid any XSS vulnerabilities.
+---
+name: Safe HTML
+description: A Vue Directive to sanitize HTML to avoid any XSS vulnerabilities.
+---
 
-## Usage
+## Examples
+
+<story-viewer component="directives-safe-html-directive" title="GlSafeHtmlDirective"></story-viewer>
+
+## Code reference
 
 This directive can be used to sanitize HTML code which may contain user input, to prevent cross-site
 scripting (XSS) vulnerabilities.
@@ -13,7 +20,7 @@ DOMPurify will strip out dangerous HTML and will keep the safe HTML. You can ref
 [1]: https://github.com/cure53/DOMPurify/blob/main/src/tags.js
 [2]: https://github.com/cure53/DOMPurify/blob/main/src/attrs.js
 
-## Example
+### Example
 
 ```html
 <script>
@@ -36,7 +43,7 @@ export default {
 </template>
 ```
 
-## Advanced configuration
+### Advanced configuration
 
 ```js
 // It allows only <b> tags
@@ -52,7 +59,11 @@ const config = { ALLOWED_TAGS: [] };
 
 For advanced configuration options, please refer to [DOMPurify's documentation](https://github.com/cure53/DOMPurify#can-i-configure-dompurify).
 
-### Notes
+#### Notes
 
 1. `target` attribute is not allowed by default - See <https://gitlab.com/gitlab-org/gitlab-ui/-/issues/1427>.
 1. To know more about other tips & caveats - See <https://gitlab.com/groups/gitlab-org/-/epics/4273#caveats>.
+
+### GlSafeHtmlDirective
+
+<story-viewer component="directives-safe-html-directive" title="GlSafeHtmlDirective" view-mode="docs"></story-viewer>

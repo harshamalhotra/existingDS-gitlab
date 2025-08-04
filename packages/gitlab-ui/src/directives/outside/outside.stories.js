@@ -1,6 +1,5 @@
 import GlButton from '../../components/base/button/button.vue';
 import { OutsideDirective } from './outside';
-import readme from './outside.md';
 
 export const Default = () => ({
   components: {
@@ -25,11 +24,4 @@ Default.tags = ['skip-visual-test'];
 export default {
   title: 'directives/outside-directive',
   component: OutsideDirective,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

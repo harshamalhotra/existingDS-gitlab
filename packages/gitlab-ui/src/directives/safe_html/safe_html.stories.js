@@ -1,6 +1,5 @@
 import DOMPurify from 'dompurify';
 import { SafeHtmlDirective as SafeHtml } from './safe_html';
-import readme from './safe_html.md';
 
 const { sanitize } = DOMPurify;
 
@@ -50,11 +49,4 @@ export default {
   title: 'directives/safe-html-directive',
   component: SafeHtml,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

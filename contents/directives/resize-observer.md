@@ -1,3 +1,14 @@
+---
+name: Resize Observer
+description: A Vue Directive to get notified whenever a given element's size changes.
+---
+
+## Examples
+
+<story-viewer component="directives-resize-observer-directive" title="GlResizeObserverDirective"></story-viewer>
+
+## Code reference
+
 This directive can be used to get notified whenever a given element's size (width or height) changes
 and to retrieve the updated dimensions.
 
@@ -52,3 +63,7 @@ export default {
   <div v-gl-resize-observer-directive[shouldObserve]="handleResize"></div>
 </template>
 ```
+
+### GlResizeObserverDirective
+
+<story-viewer component="directives-resize-observer-directive" title="GlResizeObserverDirective" view-mode="docs"></story-viewer>
