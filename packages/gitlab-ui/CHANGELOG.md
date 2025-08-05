@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 115.11.0
+
+### Minor Changes
+
+- 53fbcb7: Fix sr-only elements position inside a drawer
+
 ## 115.10.0
 
 ### Minor Changes
