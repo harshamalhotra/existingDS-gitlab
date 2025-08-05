@@ -2,18 +2,16 @@
 import { colorFromBackground } from '../utils/utils';
 import { GlTooltipDirective } from '../directives/tooltip/tooltip';
 import GlBadge from '../components/base/badge/badge.vue';
-import GlColorContrast from '../internal/color_contrast/color_contrast.vue';
 
 export default {
   name: 'TokensStory',
   components: {
     GlBadge,
-    GlColorContrast,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
   },
-  inject: ['isBackgroundColorStory', 'lightBackground', 'darkBackground', 'containerClass'],
+  inject: ['isBackgroundColorStory', 'containerClass'],
   props: {
     tokens: {
       type: Object,
@@ -67,16 +65,6 @@ export default {
             Deprecated
           </gl-badge>
           <code class="gl-text-inherit">{{ token.$value }}</code>
-          <gl-color-contrast
-            v-if="isHex(token.$value)"
-            :foreground="token.$value"
-            :background="darkBackground"
-          />
-          <gl-color-contrast
-            v-if="isHex(token.$value)"
-            :foreground="token.$value"
-            :background="lightBackground"
-          />
         </div>
       </li>
     </ul>

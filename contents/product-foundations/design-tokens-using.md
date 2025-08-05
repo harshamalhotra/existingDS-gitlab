@@ -97,6 +97,36 @@ Examples of custom feedback elements:
 - An inline update providing compliance check feedback, or discovery of a new vulnerability.
 - An addition to a collaboration activity stream.
 
+```html
+<!-- live-example -->
+<div class="gl-grid gl-gap-3 gl-text-base">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-strong gl-text-feedback-strong">
+    <gl-icon class="gl-fill-feedback-strong" name="error" />
+    <span class="gl-flex-1">feedback.strong</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-neutral gl-text-feedback-neutral">
+    <gl-icon class="gl-fill-feedback-neutral" name="error" />
+    <span class="gl-flex-1">feedback.neutral</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-info gl-text-feedback-info">
+    <gl-icon class="gl-fill-feedback-info" name="error" />
+    <span class="gl-flex-1">feedback.info</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-success gl-text-feedback-success">
+    <gl-icon class="gl-fill-feedback-success" name="error" />
+    <span class="gl-flex-1">feedback.success</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-warning gl-text-feedback-warning">
+    <gl-icon class="gl-fill-feedback-warning" name="error" />
+    <span class="gl-flex-1">feedback.warning</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-danger gl-text-feedback-danger">
+    <gl-icon class="gl-fill-feedback-danger" name="error" />
+    <span class="gl-flex-1">feedback.danger</span>
+  </div>
+</div>
+```
+
 <design-tokens-table group="feedback"></design-tokens-table>
 
 ### Highlighting
@@ -137,6 +167,37 @@ Examples of custom status elements:
 - A color-coded indicator showing task urgency, or the current state of a CI pipeline.
 - A small icon representing the confidentiality level of a document, or the visibility of a repository.
 - Text communicating code test coverage as a percentage.
+
+
+```html
+<!-- live-example -->
+ <div class="gl-grid gl-gap-3 gl-text-base">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-neutral gl-text-status-neutral">
+    <gl-icon class="gl-fill-status-neutral" name="error" />
+    <span class="gl-flex-1">status.neutral</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-info gl-text-status-info">
+    <gl-icon class="gl-fill-status-info" name="error" />
+    <span class="gl-flex-1">status.info</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-success gl-text-status-success">
+    <gl-icon class="gl-fill-status-success" name="error" />
+    <span class="gl-flex-1">status.success</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-warning gl-text-status-warning">
+    <gl-icon class="gl-fill-status-warning" name="error" />
+    <span class="gl-flex-1">status.warning</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-danger gl-text-status-danger">
+    <gl-icon class="gl-fill-status-danger" name="error" />
+    <span class="gl-flex-1">status.danger</span>
+  </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-brand gl-text-status-brand">
+    <gl-icon class="gl-fill-status-brand" name="error" />
+    <span class="gl-flex-1">status.brand</span>
+  </div>
+</div>
+```
 
 <design-tokens-table group="status"></design-tokens-table>
 
