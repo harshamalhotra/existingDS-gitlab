@@ -22,7 +22,7 @@ export default {
   },
   props: {
     /**
-     * The styles to apply to the panel container.
+     * CSS classes to apply to the panel container.
      */
     containerClass: {
       type: String,
@@ -30,7 +30,7 @@ export default {
       default: '',
     },
     /**
-     * Additional styles to apply to the `#body` slot container.
+     * Additional CSS classes to apply to the `#body` slot container.
      */
     bodyContentClass: {
       type: String,

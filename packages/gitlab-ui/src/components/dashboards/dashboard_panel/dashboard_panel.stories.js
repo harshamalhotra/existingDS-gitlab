@@ -100,7 +100,7 @@ const Template = (args, { argTypes }) => ({
   ...chartProps,
   template: wrap(`
     <template #body>
-      <p class="gl-text-tertiary">Your visualization here</p>
+      <p class="gl-text-subtle">Your visualization here</p>
     </template>
   `),
 });
@@ -112,7 +112,7 @@ const PopoverTemplate = (args, { argTypes }) => ({
   template: wrap(
     `
     <template #body>
-      <p class="gl-text-tertiary">Your visualization here</p>
+      <p class="gl-text-subtle">Your visualization here</p>
     </template>
   `,
     // Margin top added to give space for the popover
