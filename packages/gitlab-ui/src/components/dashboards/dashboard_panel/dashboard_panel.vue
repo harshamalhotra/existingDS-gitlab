@@ -75,7 +75,7 @@ export default {
      * - `description`: The popover text content with interpolation placeholders.
      *   Uses `%{linkStart}` and `%{linkEnd}` as markers for where a link should be inserted.
      *
-     * - `descriptionLink`: The URL that will be used for the link portion
+     * - `descriptionLink`: The optional URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
      */
     titlePopover: {
