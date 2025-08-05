@@ -79,7 +79,7 @@ Alpha colors are used only to effectively shade an element in relation to the su
 
 #### Light
 
-<design-tokens-color-palette group="alpha" subgroup="light" container-class="gl-bg-neutral-950 gl-text-neutral-0"></design-tokens-color-palette>
+<design-tokens-color-palette group="alpha" subgroup="light" class="gl-bg-neutral-950 gl-text-neutral-0"></design-tokens-color-palette>
 
 ## Themes
 

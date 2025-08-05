@@ -1,4 +1,5 @@
 <script>
+import { GL_COLOR_NEUTRAL_0 } from '@gitlab/ui/src/tokens/build/js/tokens';
 import { HEX_REGEX, getColorContrast } from '../helpers/gitlab_ui';
 
 export default {
@@ -19,16 +20,21 @@ export default {
     isValidColorCombination() {
       return HEX_REGEX.test(this.foreground) && HEX_REGEX.test(this.background);
     },
+    hasPassingContrast() {
+      return getColorContrast(GL_COLOR_NEUTRAL_0, this.background).score > 4.5;
+    },
     classes() {
       if (!this.isValidColorCombination) return 'gl-text-neutral-950';
-      const { grade } = this.contrast.level;
-      const isFail = grade === 'F';
-      const contrastScore = getColorContrast('#fff', this.background).score > 4.5;
-      const textClass = contrastScore ? 'gl-text-neutral-0' : 'gl-text-neutral-950';
-      const failClasses = contrastScore
-        ? 'gl-shadow-inner-1-red-300 gl-text-red-300'
-        : 'gl-shadow-inner-1-red-500 gl-text-red-500';
-      return [isFail ? failClasses : textClass];
+
+      const isFail = this.contrast.level.grade === 'F';
+
+      if (isFail) {
+        return this.hasPassingContrast
+          ? 'gl-light-scope gl-shadow-inner-1-red-300 gl-text-red-300'
+          : 'gl-light-scope gl-shadow-inner-1-red-500 gl-text-red-500';
+      }
+
+      return this.hasPassingContrast ? 'gl-text-neutral-0' : 'gl-text-neutral-950';
     },
     contrast() {
       return getColorContrast(this.foreground, this.background);
