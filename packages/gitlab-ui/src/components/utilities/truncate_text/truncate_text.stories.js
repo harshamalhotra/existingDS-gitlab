@@ -1,5 +1,4 @@
 import GlTruncateText from './truncate_text.vue';
-import readme from './truncate_text.md';
 
 const generateProps = ({
   showMoreText = 'Show more',
@@ -35,11 +34,4 @@ export default {
   title: 'utilities/truncate-text',
   component: GlTruncateText,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

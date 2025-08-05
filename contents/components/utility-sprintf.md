@@ -1,16 +1,22 @@
-## Overview
+---
+name: Sprintf
+description: Sprintf lets you do sprintf-style string interpolation with child components.
+---
+
+## Examples
+
+<story-viewer component="utilities-sprintf" story="sentence-with-link" title="GlSprintf"></story-viewer>
+
+## Code reference
 
 The `GlSprintf` component lets you do `sprintf`-style string interpolation with
 child components. Each placeholder in the translated string, provided via the
 `message` prop, becomes a slot that you can use to insert any components or
 markup in the rendered output.
 
-> NOTE: `gl-sprintf` does not translate the message for you; you must provide
-> it already translated. In the following examples, it is assumed that
-> a `gettext`-style `__` translation function is available in your Vue
-> templates.
+<note>`gl-sprintf` does not translate the message for you; you must provide it already translated. In the following examples, it is assumed that a `gettext`-style `__` translation function is available in your Vue templates.</note>
 
-## Displaying messages with text between placeholders (e.g., links, buttons)
+### Displaying messages with text between placeholders (e.g., links, buttons)
 
 Sentences should not be split up into different messages, otherwise they may
 not be translatable into certain languages. To help with this, `GlSprintf`
@@ -100,7 +106,7 @@ This can be useful if you are migrating an existing string to `GlSprintf` that
 uses different placeholder naming conventions, and don't want invalidate
 existing translations.
 
-## Displaying components within a message
+### Displaying components within a message
 
 Use slots to replace placeholders in the message with the slots' contents.
 There is a slot for every placeholder in the message. For example, the `author`
@@ -134,9 +140,7 @@ The example above renders to this HTML:
 <div>Written by <span>Some author</span></div>
 ```
 
-## Usage caveats
-
-### White space
+### White space caveats
 
 `GlSprintf` does not handle white space in scoped slots specially; it is passed
 through and rendered just like regular text. This means that white space in the
@@ -195,7 +199,7 @@ white space in the template, or use `v-text`:
 </div>
 ```
 
-### Miscellaneous
+### Miscellaneous caveats
 
 While there are a lot of caveats here, you don't need to worry about reading
 them _unless_ you find `GlSprintf` isn't rendering what you'd expect.
@@ -233,11 +237,8 @@ them _unless_ you find `GlSprintf` isn't rendering what you'd expect.
     `%{author}`, `%{author_name}`, `%{authorName}` or `%{author-name-100}` are
     all valid placeholders.
 
-## Internet Explorer 11
-
-This component uses [`String.prototype.startsWith()`] and [`String.prototype.endsWith()`] under the
-hood. Make sure those methods are polyfilled if you plan on using the component on IE11.
-
 [1]: https://www.w3.org/TR/css-text-3/#white-space-phase-1
-[`String.prototype.startsWith()`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-[`String.prototype.endsWith()`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+
+### GlSprintf
+
+<story-viewer component="utilities-sprintf" title="GlSprintf" view-mode="docs"></story-viewer>

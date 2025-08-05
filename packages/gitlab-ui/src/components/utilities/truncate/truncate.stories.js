@@ -1,7 +1,6 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlTruncate from './truncate.vue';
 import { POSITION } from './constants';
-import readme from './truncate.md';
 
 const template = `
   <gl-truncate
@@ -73,11 +72,6 @@ export default {
   title: 'utilities/truncate',
   component: GlTruncate,
   parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
     viewport: {
       defaultViewport: 'breakpointSmall',
     },

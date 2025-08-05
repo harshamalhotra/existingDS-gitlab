@@ -1,5 +1,4 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
-import readme from './animated_number.md';
 import GlAnimatedNumber from './animated_number.vue';
 
 const template = `
@@ -52,13 +51,6 @@ Default.args = generateProps();
 export default {
   title: 'utilities/animated-number',
   component: GlAnimatedNumber,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {},
   tags: ['skip-visual-test'],
 };

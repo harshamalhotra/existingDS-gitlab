@@ -475,6 +475,39 @@
           {
             "title": "Tree",
             "path": "tree"
+          },
+          {
+            "title": "Utilities",
+            "items": [
+              {
+                "title": "Animated Number",
+                "path": "utility-animated-number"
+              },
+              {
+                "title": "Friendly Wrap",
+                "path": "utility-friendly-wrap"
+              },
+              {
+                "title": "Intersection Observer",
+                "path": "utility-intersection-observer"
+              },
+              {
+                "title": "Intersperse",
+                "path": "utility-intersperse"
+              },
+              {
+                "title": "Sprintf",
+                "path": "utility-sprintf"
+              },
+              {
+                "title": "Truncate",
+                "path": "utility-truncate"
+              },
+              {
+                "title": "Truncate Text",
+                "path": "utility-truncate-text"
+              }
+            ]
           }
         ]
       },

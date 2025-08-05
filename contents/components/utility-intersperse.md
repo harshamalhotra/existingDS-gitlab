@@ -1,5 +1,13 @@
-The intersperse component separates a list of elements
-by a given character (the default is `, `).
+---
+name: Intersperse
+description: The intersperse component separates a list of elements by a given character.
+---
+
+## Examples
+
+<story-viewer component="utilities-intersperse" title="GlIntersperse"></story-viewer>
+
+## Code reference
 
 It takes all direct descendants of its default slot and inserts
 the given separator between each item:
@@ -20,15 +28,13 @@ The component provides an inline context since the result is wrapped in a `span`
 Also, whitespace elements that are direct children of the default-slot get removed to ensure
 consistent formatting.
 
-## Usage
-
 ### Default
 
 ```html
 <gl-intersperse>
-    <span>Item 1</span>
-    <span>Item 2</span>
-    <span>Item 3</span>
+  <span>Item 1</span>
+  <span>Item 2</span>
+  <span>Item 3</span>
 </gl-intersperse>
 ```
 
@@ -44,9 +50,9 @@ A custom separator can be defined via the `separator` prop:
 
 ```html
 <gl-intersperse separator="/">
-    <span>Item 1</span>
-    <span>Item 2</span>
-    <span>Item 3</span>
+  <span>Item 1</span>
+  <span>Item 2</span>
+  <span>Item 3</span>
 </gl-intersperse>
 ```
 
@@ -62,9 +68,9 @@ A custom last separator can be defined via the `lastSeparator` prop:
 
 ```html
 <gl-intersperse last-separator=" and ">
-    <span>Item 1</span>
-    <span>Item 2</span>
-    <span>Item 3</span>
+  <span>Item 1</span>
+  <span>Item 2</span>
+  <span>Item 3</span>
 </gl-intersperse>
 ```
 
@@ -78,8 +84,8 @@ A custom last separator used on two items will only place `lastSeparator` betwee
 
 ```html
 <gl-intersperse last-separator=" and ">
-    <span>Item 1</span>
-    <span>Item 2</span>
+  <span>Item 1</span>
+  <span>Item 2</span>
 </gl-intersperse>
 ```
 
@@ -88,3 +94,7 @@ This renders to the following HTML:
 ```html
 <span><span>Item 1</span> and <span>Item 2</span></span>
 ```
+
+### GlIntersperse
+
+<story-viewer component="utilities-intersperse" title="GlIntersperse" view-mode="docs"></story-viewer>
