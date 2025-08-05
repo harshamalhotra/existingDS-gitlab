@@ -37,37 +37,37 @@ Though deciding which color to use depends on the situation, here are some gener
 
 Blue indicates a current or active state. It communicates management, progress, connectivity, or organization.
 
-<story-viewer component="tokens-color-constant" story="blue" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="blue"></design-tokens-color-palette>
 
 ### Green
 
 Green indicates success. It communicates save, create, add, available, done, approved, or resolved.
 
-<story-viewer component="tokens-color-constant" story="green" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="green"></design-tokens-color-palette>
 
 ### Orange
 
 Orange indicates attention is required. It communicates warning, pending, missing, or impeded progress.
 
-<story-viewer component="tokens-color-constant" story="orange" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="orange"></design-tokens-color-palette>
 
 ### Red
 
 Red indicates a problem. It communicates a critical state, destructive action, error, failure, removal, stop, or decline.
 
-<story-viewer component="tokens-color-constant" story="red" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="red"></design-tokens-color-palette>
 
 ### Purple
 
 Purple is not assigned meaning in the same way the other chromatic hues are, and instead is associated with the GitLab brand. It communicates an affinity with the brand, and is used for things like illustrations or company-related announcements in the product.
 
-<story-viewer component="tokens-color-constant" story="purple" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="purple"></design-tokens-color-palette>
 
 ### Neutral
 
 Neutrals are primarily used for surfaces and within components to help differentiate hierarchy. Use shades of gray as backgrounds, borders, and shadows to emphasize areas or set them apart.
 
-<story-viewer component="tokens-color-constant" story="neutral" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="neutral"></design-tokens-color-palette>
 
 ### Alpha
 
@@ -75,11 +75,11 @@ Alpha colors are used only to effectively shade an element in relation to the su
 
 #### Dark
 
-<story-viewer component="tokens-color-alpha" story="dark" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="alpha" subgroup="dark"></design-tokens-color-palette>
 
 #### Light
 
-<story-viewer component="tokens-color-alpha" story="light" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="alpha" subgroup="light" class="gl-bg-neutral-950 gl-text-neutral-0"></design-tokens-color-palette>
 
 ## Themes
 
@@ -89,29 +89,29 @@ A user may choose between ten different themes to customize the appearance of th
 
 Indigo and light indigo share the same `color.theme-indigo.*` design tokens.
 
-<story-viewer component="tokens-color-constant" story="theme-indigo" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-indigo"></design-tokens-color-palette>
 
 ### Green / Light green
 
 Green and light green share the same `color.theme-green.*` design tokens.
 
-<story-viewer component="tokens-color-constant" story="theme-green" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-green"></design-tokens-color-palette>
 
 ### Blue
 
-<story-viewer component="tokens-color-constant" story="theme-blue" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-blue"></design-tokens-color-palette>
 
 ### Light blue
 
-<story-viewer component="tokens-color-constant" story="theme-light-blue" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-light-blue"></design-tokens-color-palette>
 
 ### Red
 
-<story-viewer component="tokens-color-constant" story="theme-red" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-red"></design-tokens-color-palette>
 
 ### Light red
 
-<story-viewer component="tokens-color-constant" story="theme-light-red" title="Tokens"></story-viewer>
+<design-tokens-color-palette group="theme-light-red"></design-tokens-color-palette>
 
 ### Dark / Light
 

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import DesignToken from '../components/design_token.vue';
 import DesignTokensTable from '../components/design_tokens_table.vue';
+import DesignTokensColorPalette from '../components/design_tokens_color_palette.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
 import FigmaEmbed from '../components/figma_embed.vue';
@@ -16,6 +17,7 @@ import VimeoPlayer from '../components/vimeo_player.vue';
 Object.entries({
   DesignToken,
   DesignTokensTable,
+  DesignTokensColorPalette,
   Do,
   Dont,
   FigmaEmbed,

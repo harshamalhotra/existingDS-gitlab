@@ -141,7 +141,7 @@ const validate = (input) => {
 
 ### Story viewer
 
-<story-viewer component="tokens-color-constant" story="blue" title="Tokens"></story-viewer>
+<story-viewer component="base-button" story="block-button" title="Block button"></story-viewer>
 
 ### Vimeo player
 
