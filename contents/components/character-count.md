@@ -38,15 +38,13 @@ count separate from the input, use `GlFormCharacterCount`.
 
 #### Example
 
-```vue
+```html
+<!-- live-example -->
 <script>
-  import { GlFormCharacterCount, GlFormInput, GlFormGroup } from '@gitlab/ui'
-
   export default {
     inputId: 'form-input-with-character-count',
     countTextId: 'character-count-text',
     limit: 100,
-    components: { GlFormCharacterCount, GlFormInput, GlFormGroup },
     data() {
       return {
         value: '',
@@ -54,14 +52,14 @@ count separate from the input, use `GlFormCharacterCount`.
     },
     methods: {
       remainingCountText(count) {
-        return  n__('%d character remaining.', '%d characters remaining.', count)
+        return `${count} characters remaining.`;
       },
       overLimitText(count) {
-        return n__('%d character over limit.', '%d characters over limit.', count);
+        return `${count} characters over limit.`;
       },
     },
-  }
-<script>
+  };
+</script>
 
 <template>
   <gl-form-group label="Form input with character count" :label-for="$options.inputId">
@@ -80,7 +78,7 @@ count separate from the input, use `GlFormCharacterCount`.
       <template #over-limit-text="{ count }">{{ overLimitText(count) }}</template>
     </gl-form-character-count>
   </gl-form-group>
-<template>
+</template>
 ```
 
 <story-viewer component="base-form-form-character-count" title="GlFormCharacterCount" view-mode="docs"></story-viewer>
