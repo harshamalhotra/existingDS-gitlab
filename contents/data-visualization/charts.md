@@ -1,12 +1,5 @@
 ---
 name: Charts
-docs: complete
-components:
-  - charts-area-chart
-  - charts-line-chart
-  - charts-column-chart
-  - charts-stacked-column-chart
-  - charts-gauge-chart
 related:
   - popover
 ---
@@ -65,6 +58,12 @@ The bars on a column chart are presented vertically rather than horizontally, an
 
 It may sometimes be necessary to stack values in a column or to have groups of columns within your chart, for example when there are two dimensions of data (one nested within another) moving across time. Stacked columns can be either symmetric or asymmetric, meaning the number of stacks may or may not be equal across groups.
 
+The `presentation` property allows you to change between a stacked and tiled presentation style. It is only setup to accept `stacked` or `tiled` as values, the default value is `stacked`.
+
+The `stacked` presentation allows to view multiple series of the same stack as a single column, while `tiled` presents the information in multiple columns for each series of a stack.
+
+`groupBy` is a property that defines how the data is going to be grouped by for each of the series that the `data` property provides. For example if the `data` property has a total of 3 series, with 7 elements each, `groupBy` could use a 7 element array to show 7 stacked bars or 7 groups of bars depending on the preference set by the `presentation` property.
+
 <story-viewer component="charts-stacked-column-chart" story="stacked" title="Stacked Column Chart"></story-viewer>
 
 #### Color in stacked and grouped charts
@@ -117,6 +116,15 @@ Scatter charts give a sense of the distribution and relative size of values.
 
 Gauge charts highlight the current value within the range of possible values for the metric.
 
+Some layout problems can be encountered with this component. Specifically, when the gauge chart's
+axis labels or detail text have larger widths, they can overlap with the chart elements.
+
+Also, when the containing element of the gauge chart has either of a small calculated `width` and
+`height`, its axis width could become bulkier in relation to other chart elements. This is because
+at this time [eCharts only allows for setting the axis line width in absolute units](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.width).
+
+This issue is to be addressed by [https://gitlab.com/gitlab-org/gitlab-ui/-/issues/916](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/916).
+
 <story-viewer component="charts-gauge-chart" title="Gauge Chart"></story-viewer>
 
 ## Sparkline charts
@@ -124,6 +132,16 @@ Gauge charts highlight the current value within the range of possible values for
 Sparkline charts give a quick indication of trend and a summary of the current value. They are particularly useful when space is limited.
 
 <story-viewer component="charts-sparkline-chart" title="Sparkline Chart"></story-viewer>
+
+## Heatmaps
+
+**Note** This component uses `<gl-legend>`, which should allow a user to click on any data point(s)
+in the legend and make the corresponding data point(s) on the chart rendered disappear.
+_See [area chart](https://design.gitlab.com/storybook?path=/story/charts-area-chart--default)
+for an example_ For this particular chart, there is a [known issue](https://gitlab.com/gitlab-org/gitlab-ui/issues/352)
+with the functionality of the legend, where clicking on it does nothing.
+
+<story-viewer component="charts-heatmap" title="Heatmap Chart"></story-viewer>
 
 ## Interaction
 
@@ -144,9 +162,38 @@ The max-width of chart popovers is `512px`, with long chart values wrapping rath
 
 Chart data can be toggled on and off by clicking its related item in the legend.
 
+### Disabling Legends
+
+By default, to prevent the chart from disappearing, all legends can't be toggled off – the last
+active legend will be disabled. To manually disable a legend, pass it the
+`disabled` property in `seriesInfo`:
+
+```js
+seriesInfo = [
+  {
+    name: 'Example Legend',
+    color: 'blue',
+    disabled: true,
+    type: 'line'
+  }
+]
+```
+
 ### More options menu
 
 A "more options" menu (vertical ellipses) can be used in the top righthand corner of charts. This provides users with access to additional chart functionality (such as copying chart embed code) which isn't directly displayed on or near the chart.
+
+### Series label
+
+Displays chart data series name as a label for chart legend, tooltip, etc.
+
+<story-viewer component="charts-chart-series-label" story="with-color" title="Series label"></story-viewer>
+
+### Tooltip
+
+Uses GitLab UI's `popover` component in lieu of echart's tooltip.
+
+<story-viewer component="charts-chart-tooltip" title="Tooltip"></story-viewer>
 
 ### Zoom bar
 
@@ -161,6 +208,25 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 [Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=3%3A0)
 
 [Line chart in Pajamas UI Kit →](https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=63%3A697)
+
+## Code reference
+
+### ECharts Wrapper
+
+The chart component is a Vue component wrapper around [Apache ECharts](https://echarts.apache.org/en/api.html#echarts).
+The chart component accepts width and height props in order to allow the user to make it responsive.
+
+<note>When implementing a chart type that does not already have a GitLab UI component, you can use this component alonside the [ECharts options](https://echarts.apache.org/en/api.html#echarts) to build your chart. Each type of chart should still follow the general guidelines in the [pajamas documentation](https://design.gitlab.com/data-visualization/charts).</note>
+
+### EChart Lifecycle
+
+This component emits the following events during the ECharts lifecycle:
+
+- `created`: emitted after calling `echarts.init`
+- `updated`: emitted after calling `echarts.setOption`
+
+In all cases, the event payload is the
+[echart instance](https://echarts.apache.org/en/api.html#echartsInstance).
 
 ## Related
 

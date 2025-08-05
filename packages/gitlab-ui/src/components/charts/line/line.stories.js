@@ -3,7 +3,6 @@ import { mockAnnotationsSeries, mockAnnotationsConfigs } from '../../../utils/ch
 import { timeSeriesDateFormatter } from '../../../utils/charts/utils';
 import { generateTimeSeries } from '../../../utils/data_utils';
 import { disableControls } from '../../../utils/stories_utils';
-import readme from './line.md';
 
 const components = {
   GlLineChart,
@@ -235,13 +234,6 @@ WithClickToPinTooltip.tags = ['skip-visual-test'];
 export default {
   title: 'charts/line-chart',
   component: GlLineChart,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     ...disableControls([
       'formatTooltipText',

@@ -6,7 +6,6 @@ import {
   SERIES_NAME_LONG,
   SERIES_NAME_LONG_WITHOUT_SPACES,
 } from '../../../utils/stories_constants';
-import readme from './legend.md';
 
 const generateOptions = (seriesLength, seriesNameType) => {
   return {
@@ -164,10 +163,5 @@ export default {
   component: GlChartLegend,
   parameters: {
     controls: { disable: true },
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
 };

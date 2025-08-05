@@ -11,7 +11,6 @@ import {
   GL_COLOR_DATA_GREEN_600,
   GL_COLOR_DATA_MAGENTA_500,
 } from '../../../tokens/build/js/tokens';
-import readme from './stacked_column.md';
 
 const components = { GlStackedColumnChart };
 
@@ -157,11 +156,4 @@ WithCustomTooltipValue.tags = ['skip-visual-test'];
 export default {
   title: 'charts/stacked-column-chart',
   component: GlStackedColumnChart,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
