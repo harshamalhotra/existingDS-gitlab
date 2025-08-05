@@ -1,9 +1,10 @@
 ## Dashboard panel
 
-The `GlDashboardPanel` component is a container that provides consistent UI structure
+The `GlDashboardPanel` component wraps any type of content in a consistent UI structure
 for analytics. It is primarily designs for dashboards, but can be used in other analytics
-interfaces. It is a foundational building block that wraps query results with standardized
+interfaces. It is a foundational building block designed to wrap query results with standardized
 styling, loading states, actions, and metadata as outlined by our [Pajamas guidelines](#pajamas-guidelines).
+It does not manage data states and fetching, or handle filter state managment.
 
 ### When to use
 
@@ -17,18 +18,9 @@ single stats, or tables.
 
 ## The component
 
-The component is a flexible container that can render any type of content.
 While not opinionated about its contents, it's designed as a container
 for a single query result visualization. It also provides useful ways to communicate
 the query state, metadata, available actions to our users as outlined by our [Pajamas guidelines](#pajamas-guidelines).
-
-### What this component doesn't do
-
-The panel component is UI focused and intentionally does not:
-
-- Manage data states or data fetching.
-- Handle filter logic or filter state management.
-- Process, transform, or visualize data in any way.
 
 ### Loading states
 
