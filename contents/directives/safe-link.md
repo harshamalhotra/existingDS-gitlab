@@ -1,14 +1,23 @@
-A Vue directive to make the hyperlinks secure by default.
+---
+name: Safe Link
+description: A Vue directive to make the hyperlinks secure by default.
+---
 
-## Security measures
+## Examples
 
-### rel
+<story-viewer component="directives-safe-link-directive" title="GlSafeLinkDirective"></story-viewer>
+
+## Code reference
+
+### Security measures
+
+#### `rel`
 
 When setting target to `_blank`, the rel attribute gets set automatically to `noopener noreferrer`,
 this is done to avoid the `window.opener` [API exploit]. If you set the `rel` attribute manually,
 this will overwrite the aforementioned logic.
 
-### href
+#### `href`
 
 This directive enforces "safe" URLs. What this means is that, if the provided `href`
 doesn't point to a safe protocol (one of `http:`, `https:`, `mailto:` or `ftp:`), then it is
@@ -35,3 +44,7 @@ export default {
 
 [API exploit]: https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
 [URL injections]: https://vuejs.org/v2/guide/security.html#Injecting-URLs
+
+### GlSafeLinkDirective
+
+<story-viewer component="directives-safe-link-directive" title="GlSafeLinkDirective" view-mode="docs"></story-viewer>

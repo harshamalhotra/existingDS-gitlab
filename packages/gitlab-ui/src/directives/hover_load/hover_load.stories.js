@@ -1,5 +1,4 @@
 import { HoverLoadDirective } from './hover_load';
-import readme from './hover_load.md';
 
 const generateProps = ({ endpoint = 'some/endpoint' } = {}) => ({
   endpoint,
@@ -38,11 +37,4 @@ export default {
   title: 'directives/hover-load-directive',
   component: HoverLoadDirective,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };

@@ -512,6 +512,32 @@
         ]
       },
       {
+        "title": "Directives",
+        "path": "directives",
+        "items": [
+          {
+            "title": "Hover Load",
+            "path": "hover-load"
+          },
+          {
+            "title": "Outside",
+            "path": "outside"
+          },
+          {
+            "title": "Resize Observer",
+            "path": "resize-observer"
+          },
+          {
+            "title": "Safe HTML",
+            "path": "safe-html"
+          },
+          {
+            "title": "Safe Link",
+            "path": "safe-link"
+          }
+        ]
+      },
+      {
         "title": "Patterns",
         "path": "patterns",
         "items": [

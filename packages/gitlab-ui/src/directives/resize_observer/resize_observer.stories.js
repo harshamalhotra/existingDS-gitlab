@@ -1,5 +1,4 @@
 import { GlResizeObserverDirective } from './resize_observer';
-import readme from './resize_observer.md';
 
 const generateProps = ({ elementWidth = '100%', elementHeight = '100%' } = {}) => ({
   elementWidth,
@@ -62,13 +61,6 @@ export default {
   title: 'directives/resize-observer-directive',
   component: GlResizeObserverDirective,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {
     elementWidth: makeControl(),
     elementHeight: makeControl(),

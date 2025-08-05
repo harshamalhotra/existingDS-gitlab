@@ -1,9 +1,18 @@
+---
+name: Outside
+description: A Vue Directive to call a callback when a supported event type occurs outside of the element the directive is bound to.
+---
+
+## Examples
+
+<story-viewer component="directives-outside-directive" title="GlOutsideDirective"></story-viewer>
+
+## Code reference
+
 A Vue Directive to call a callback when a supported event type occurs *outside* of the element
 the directive is bound to. Any events on the element or any descendant elements are ignored.
 The directive supports the event types `click` and `focusin` and can be configured in several ways.
 If no event type is set, `click` is the default.
-
-## Usage
 
 ### Default
 
@@ -100,7 +109,7 @@ export default {
 </template>
 ```
 
-## Caveats
+### Caveats
 
 * Clicks cannot be detected across document boundaries (e.g., across an
   `iframe` boundary), in either direction.
@@ -138,3 +147,7 @@ export default {
       <div v-outside.click.focusin="closeDropdown">...</div>
     </template>
   ```
+
+### GlOutsideDirective
+
+<story-viewer component="directives-outside-directive" title="GlOutsideDirective" view-mode="docs"></story-viewer>

@@ -1,5 +1,4 @@
 import { SafeLinkDirective as SafeLink } from './safe_link';
-import readme from './safe_link.md';
 
 const directives = {
   SafeLink,
@@ -29,11 +28,4 @@ export default {
   title: 'directives/safe-link-directive',
   component: SafeLink,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
