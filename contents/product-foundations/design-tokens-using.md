@@ -168,7 +168,6 @@ Examples of custom status elements:
 - A small icon representing the confidentiality level of a document, or the visibility of a repository.
 - Text communicating code test coverage as a percentage.
 
-
 ```html
 <!-- live-example -->
  <div class="gl-grid gl-gap-3 gl-text-base">
