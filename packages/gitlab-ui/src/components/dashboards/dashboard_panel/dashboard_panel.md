@@ -1,9 +1,8 @@
 ## Dashboard panel
 
-The `GlDashboardPanel` component wraps any type of content in a consistent UI structure
-for analytics. It is primarily designed for dashboards, but can be used in other analytics
-interfaces. It is a foundational building block designed to wrap query results with standardized
-styling, loading states, actions, and metadata as outlined by our [Pajamas guidelines](#pajamas-guidelines).
+The `GlDashboardPanel` component is a foundational building block for dashboards but it can also be
+used in other analytics interfaces. It is desinged to wrap a query result with standardized styling,
+loading states, actions, and metadata as outlined by our [Pajamas guidelines](https://design.gitlab.com/patterns/dashboards).
 It does not manage data states and fetching, or handle filter state managment.
 
 ### When to use
@@ -12,15 +11,14 @@ This component should be used when:
 
 - You need a standardized container for individual results in dashboards, reports,
 or other analytics-focused interfaces.
-- You want to wrap a single visualization of query results, such as charts, markdown,
+- You want to wrap a single visualization of query results, such as charts,d markdown,
 single stats, or tables.
 - You want to benefit from easy integration with the dashboard layout component.
 
 ## The component
 
-While not opinionated about its contents, it's designed as a container
-for a single query result visualization. It also provides useful ways to communicate
-the query state, metadata, available actions to our users as outlined by our [Pajamas guidelines](#pajamas-guidelines).
+While not opinionated about its content, the component is designed to wrap a single query result
+visualization.
 
 ### Loading states
 
@@ -28,7 +26,7 @@ Panels provide built-in loading state management. When content is loading:
 
 - Set the `loading` prop to `true` to show a loading spinner.
 - Use `loadingDelayed` and `loadingDelayedText` for long-running operations.
-- The panel handles the visual loading state while your content handles the actual data loading.
+- The panel handles the visual loading state while you handle the actual data loading.
 
 ### Filters
 
@@ -66,7 +64,3 @@ export default {
   </gl-dashboard-panel>
 </template>
 ```
-
-## Pajamas guidelines
-
-- [Pajamas dashboards pattern](https://design.gitlab.com/patterns/dashboards)
