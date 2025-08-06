@@ -64,7 +64,7 @@ The `stacked` presentation allows to view multiple series of the same stack as a
 
 `groupBy` is a property that defines how the data is going to be grouped by for each of the series that the `data` property provides. For example if the `data` property has a total of 3 series, with 7 elements each, `groupBy` could use a 7 element array to show 7 stacked bars or 7 groups of bars depending on the preference set by the `presentation` property.
 
-<story-viewer component="charts-stacked-column-chart" story="stacked" title="Stacked Column Chart"></story-viewer>
+<story-viewer component="charts-stacked-column-chart" story="default" title="Stacked Column Chart"></story-viewer>
 
 #### Color in stacked and grouped charts
 
@@ -216,7 +216,7 @@ Color, spacing, dimension, and layout specific information pertaining to this co
 The chart component is a Vue component wrapper around [Apache ECharts](https://echarts.apache.org/en/api.html#echarts).
 The chart component accepts width and height props in order to allow the user to make it responsive.
 
-<note>When implementing a chart type that does not already have a GitLab UI component, you can use this component alonside the [ECharts options](https://echarts.apache.org/en/api.html#echarts) to build your chart. Each type of chart should still follow the general guidelines in the [pajamas documentation](https://design.gitlab.com/data-visualization/charts).</note>
+<note>When implementing a chart type that does not already have a GitLab UI component, you can use this component alonside the [ECharts options](https://echarts.apache.org/en/api.html#echarts) to build your chart. Each type of chart should still follow the general guidelines on this page.</note>
 
 ### EChart Lifecycle
 
