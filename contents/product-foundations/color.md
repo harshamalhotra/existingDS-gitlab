@@ -148,12 +148,12 @@ If a specific hex value is desired, use a solid color instead of approximating i
 
 At GitLab, we are dedicated to continually improving the accessibility of the application. Pajamas satisfies the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast) AA level for normal text. Learn more in [Accessibility](/accessibility/a11y).
 
-- **Normal text** - Must have a contrast ratio of at least 4.5:1.
-- **Large text** - Defined as `14pt` Bold (`18.5px`) or `18pt` (`24px`) and must have a contrast ratio of at least 3:1.
+- **Normal text** - Text that is smaller than `18pt` (`24px`) or `14pt` bold (`18.5px`) and must have a contrast ratio of at least 4.5:1.
+- **Large text** - Text that is at least `18pt` (`24px`) or `14pt` bold (`18.5px`) and must have a contrast ratio of at least 3:1.
 - **AAA** - Pass 7:1+.
 - **AA** - Pass 4.5:1+.
 - **AA+** - Pass, large text only 3:1+.
-- **F** - Doesn’t pass.
+- **F** - Doesn't pass.
 
 Contrast ratios for each color step are calculated against light (`color.neutral.0`/`#fff`) and dark (`color.neutral.950`/`#18171d`) foreground colors. The `50–400` steps all meet a 4.5:1 contrast ratio or higher against `color.neutral.950` (`#18171d`) or darker, while the `500–950` steps all meet a 4.5:1 contrast ratio against `color.neutral.10` (`#fbfafd`) or lighter.
 
