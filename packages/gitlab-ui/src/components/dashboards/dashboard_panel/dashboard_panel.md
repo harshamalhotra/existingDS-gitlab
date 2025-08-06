@@ -1,8 +1,8 @@
 ## Dashboard panel
 
 The `GlDashboardPanel` component is a foundational building block for dashboards but it can also be
-used in other analytics interfaces. It is desinged to wrap a query result with standardized styling,
-loading states, actions, and metadata as outlined by our [Pajamas guidelines](https://design.gitlab.com/patterns/dashboards).
+used in other analytics interfaces. It is desinged to wrap a query result visualization with standardized
+styling, loading states, actions, and metadata as outlined by our [Pajamas guidelines](https://design.gitlab.com/patterns/dashboards).
 It does not manage data states and fetching, or handle filter state managment.
 
 ### When to use
@@ -17,8 +17,8 @@ single stats, or tables.
 
 ## The component
 
-While not opinionated about its content, the component is designed to wrap a single query result
-visualization.
+The component is designed to wrap a single data visualization, but it's not opinionated about its content
+and can be used for example to wrap other content types such as rendered markdown.
 
 ### Loading states
 
