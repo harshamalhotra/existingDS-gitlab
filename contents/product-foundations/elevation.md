@@ -6,7 +6,20 @@ Elevation addresses dimensional hierarchy and content relationships — not just
 
 ## Shadows
 
-<story-viewer component="tokens-examples" story="shadows" title="Shadows"></story-viewer>
+```html
+<!-- live-example -->
+<div class="gl-grid md:gl-grid-cols-3 gl-gap-5 gl-text-base gl-p-8 gl-bg-subtle">
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-shadow-sm">
+    sm
+  </div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-shadow-md">
+    md
+  </div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-shadow-lg">
+    lg
+  </div>
+</div>
+```
 
 ### Small
 

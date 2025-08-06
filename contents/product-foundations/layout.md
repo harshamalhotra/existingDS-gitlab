@@ -70,7 +70,16 @@ A region is the loosest form of visual organization through boundaries formed by
 
 ### Generic (presentational) containers
 
-<story-viewer component="tokens-examples" story="generic-containers" title="Background + border combinations"></story-viewer>
+```html
+<!-- live-example -->
+<div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-default">default + default</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-subtle">default + subtle</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-strong">default + strong</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-subtle">subtle + subtle</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong gl-border gl-border-strong">strong + strong</div>
+</div>
+```
 
 A presentational container creates a noticeable difference between its border and background. This makes the container stand out from the page background or other content.
 
@@ -82,9 +91,29 @@ Acceptable background and combinations are:
 
 ### Semantic containers
 
-<story-viewer component="tokens-examples" story="semantic-containers" title="Background + border combinations"></story-viewer>
+```html
+<!-- live-example -->
+<div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section gl-border gl-border-section">section + section</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-section">subtle + section</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-border gl-border-default">overlap + default</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-disabled gl-border gl-border-subtle gl-text-subtle">disabled + subtle</div>
+</div>
+```
 
 #### Section
+
+```html
+<!-- live-example -->
+<div class="gl-border gl-border-section gl-rounded-lg gl-overflow-hidden gl-text-base">
+  <div class="gl-border-b gl-border-b-section gl-bg-section gl-p-5">
+    background.color.section
+  </div>
+  <div class="gl-bg-subtle gl-p-5">
+    background.color.subtle
+  </div>
+</div>
+```
 
 A section is a specific type of container that completely encloses its content and is visually distinct from the default page background only when necessary to maintain affordance and hierarchy in different modes. A section must:
 
@@ -108,7 +137,48 @@ A disabled container is visually subdued to infer unavailability or non-interact
 
 ### Borders and dividers
 
-<story-viewer component="tokens-examples" story="borders" title="Borders on difference surfaces"></story-viewer>
+```html
+<!-- live-example -->
+<div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
+  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default">
+    on default
+    <div class="gl-w-full gl-border-b gl-border-default"></div>
+    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
+    <div class="gl-w-full gl-border-b gl-border-strong"></div>
+    <div class="gl-w-full gl-border-b gl-border-section"></div>
+  </div>
+  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle">
+    on subtle
+    <div class="gl-w-full gl-border-b gl-border-default"></div>
+    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
+    <div class="gl-w-full gl-border-b gl-border-strong"></div>
+    <div class="gl-w-full gl-border-b gl-border-section"></div>
+  </div>
+  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong">
+    on strong
+    <div class="gl-w-full gl-border-b gl-border-default"></div>
+    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
+    <div class="gl-w-full gl-border-b gl-border-strong"></div>
+    <div class="gl-w-full gl-border-b gl-border-section"></div>
+  </div>
+</div>
+<div class="gl-grid gl-grid-cols-3 gl-gap-5">
+  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap">
+    on overlap
+    <div class="gl-w-full gl-border-b gl-border-default"></div>
+    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
+    <div class="gl-w-full gl-border-b gl-border-strong"></div>
+    <div class="gl-w-full gl-border-b gl-border-section"></div>
+  </div>
+  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section">
+    on section
+    <div class="gl-w-full gl-border-b gl-border-default"></div>
+    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
+    <div class="gl-w-full gl-border-b gl-border-strong"></div>
+    <div class="gl-w-full gl-border-b gl-border-section"></div>
+  </div>
+</div>
+```
 
 Borders on one or more edge(s) of an element and dividers between content help define boundaries and separate content areas. They provide visual structure and improve the scanability of information when used with discretion.
 
