@@ -1,3 +1,34 @@
+---
+name: Form combobox
+description: A form combobox combines a text input with a list of options for autocomplete functionality.
+---
+
+## Examples
+
+<story-viewer component="base-form-form-combobox" title="GlFormCombobox"></story-viewer>
+
+## Structure
+
+<todo>Add structure image.</todo>
+
+## Guidelines
+
+<todo>Add guidelines.</todo>
+
+### Appearance
+
+<todo>Add appearance.</todo>
+
+### Behavior
+
+<todo>Add behavior.</todo>
+
+### Accessibility
+
+<todo>Add accessibility.</todo>
+
+## Code reference
+
 Use this component to add a [`FormInput`](/?path=/story/base-form-form-input--default) component
 with synchronous autocomplete dropdown. It behaves as follows:
 
@@ -12,7 +43,7 @@ This behavior based on
 [this w3c pattern](https://www.w3.org/TR/wai-aria-practices/examples/combobox/aria1.1pattern/listbox-combo.html)
 and [this accessible combobox example](https://alligator.io/vuejs/vue-a11y-autocomplete/).
 
-## Usage
+### Usage
 
 The combobox accepts an array of string tokens, a `v-model`, and label text. Internally, it generates
 unique element IDs so multiple can be used on one page without clashing.
@@ -31,16 +62,16 @@ consumption by parent components.
 It does not have a loading state nor does it accept tokens other than strings. It allows for one
 selected value.
 
-### What if I need to load the options asynchronously?
+#### What if I need to load the options asynchronously?
 
 You may want to look at [`GlSearchBoxByType`] or [`GlSearchBoxByClick`].
 
-### What if I need multiple options?
+#### What if I need multiple options?
 
 The [`GlTokenSelector`] may be what you need. Alternately, [`GlFilteredSearch`] will let you search
 and include tokens.
 
-## Edge cases
+### Edge cases
 
 The algorithm to match tokens with the input is very naive. If you need to use the component with a
 very large list of matches, you may want to update the implementation or use one of the search
@@ -50,3 +81,7 @@ inputs, like [`GlSearchBoxByType`], [`GlSearchBoxByClick`], or [`GlFilteredSearc
 [`GlSearchBoxByClick`]: https://design.gitlab.com/storybook?path=/story/base-search-box-by-click--default
 [`GlTokenSelector`]: https://design.gitlab.com/storybook?path=/story/base-token-selector--default
 [`GlFilteredSearch`]: https://design.gitlab.com/storybook?path=/story/base-filtered-search--default
+
+### GlFormCombobox
+
+<story-viewer component="base-form-form-combobox" title="GlFormCombobox" view-mode="docs"></story-viewer>

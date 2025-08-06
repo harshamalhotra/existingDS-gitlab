@@ -2,11 +2,6 @@
 name: Forms
 summary: Guidelines for creating structured interfaces to capture, validate, and submit manual user input.
 description: A form is for capturing and submitting user input.
-components:
-  - base-form-form
-  - base-form-form-group
-  - base-form-form-input
-  - base-form-form-textarea
 related:
   - date-picker
   - color-picker
@@ -16,6 +11,8 @@ related:
 ---
 
 ## Examples
+
+<story-viewer component="base-form-form" title="Default form"></story-viewer>
 
 <story-viewer component="base-form-form-group" title="Default form group"></story-viewer>
 
@@ -231,3 +228,12 @@ Error messages can be used in the following scenarios:
 
 - When keyboard focus is inside an input field, pressing the <kbd>Enter</kbd> key should submit the form (provided there are no validation errors). This doesn't apply to mutli-line fields, such as Markdown editors, since these controls need to support the input of new lines.
 - There are some cases in which the submit-on-Enter behavior should be disabled. For example, if a form has a dropdown control that includes a search bar, pressing <kbd>Enter</kbd> inside the search bar should **not** submit the form. In general, this behavior should be disabled for input elements that do not directly edit a form’s data.
+
+## Code reference
+
+### GlForm
+
+A wrapper element for `gl-form-*` input elements. Supports `@submit` and `@reset` events.
+To disable native HTML validation pass the `novalidate` attribute.
+
+<story-viewer component="base-form-form" title="GlForm" view-mode="docs"></story-viewer>

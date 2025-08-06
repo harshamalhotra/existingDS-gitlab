@@ -1,25 +1,35 @@
-The `GlFormInputGroup` component allows one to build more advanced text
-input fields than generic `GlFormInput` when one needs that flexibility.
-Basic usage of the component:
+---
+name: Form input group
+description: A form input group allows prepending or appending content to text inputs.
+---
 
-```html
-<div>
-  <gl-form-input-group>
-    <template #prepend>
-      <!-- Content to prepend your text input field -->
-    </template>
-    <template #append>
-      <!-- Content to append your text input field -->
-    </template>
-  </gl-form-input-group>
-</div>
-```
+## Examples
 
-One can use any other component (custom or `<gl-*>`) in both slots or
-not to use the slots at all. In the latter, the component will fallback
-to simple `GlFormInput`.
+<story-viewer component="base-form-form-input-group" title="GlFormInputGroup"></story-viewer>
 
-## Predefined options
+## Structure
+
+<todo>Add structure image.</todo>
+
+## Guidelines
+
+<todo>Add guidelines.</todo>
+
+### Appearance
+
+<todo>Add appearance.</todo>
+
+### Behavior
+
+<todo>Add behavior.</todo>
+
+### Accessibility
+
+<todo>Add accessibility.</todo>
+
+## Code reference
+
+### Predefined options
 
 Sometimes custom text input from the user isn't desired. Instead, the
 user should pick one of the predefined options that will automatically
@@ -44,10 +54,6 @@ is selected, the input field is automatically populated with the
 option's `value`. Check the "Examples" section below for "With
 predefined options" example.
 
-### Pro tips
-
-Read some useful tips below about specific usage of the component.
-
 ### Readonly input
 
 Often you want to make sure user doesn't mess up the predefined content
@@ -65,3 +71,34 @@ the `select-on-click` param to `true`. You can play with
 `Readonly`, `Select text on click`, and `Switch to predefined input`
 altogether. And, probably, remove `Prepend text`. Or leave it. It's your
 call. :)
+
+### GlFormInputGroup
+
+The `GlFormInputGroup` component allows one to build more advanced text
+input fields than generic `GlFormInput` when one needs that flexibility.
+Basic usage of the component:
+
+```html
+<div>
+  <gl-form-input-group>
+    <template #prepend>
+      <!-- Content to prepend your text input field -->
+    </template>
+    <template #append>
+      <!-- Content to append your text input field -->
+    </template>
+  </gl-form-input-group>
+</div>
+```
+
+One can use any other component (custom or `<gl-*>`) in both slots or
+not to use the slots at all. In the latter, the component will fallback
+to simple `GlFormInput`.
+
+<story-viewer component="base-form-form-input-group" title="GlFormInputGroup" view-mode="docs"></story-viewer>
+
+### GlInputGroupText
+
+GlInputGroupText components are used to add text to an input group.
+
+<story-viewer component="base-form-input-group-text" title="GlInputGroupText" view-mode="docs"></story-viewer>

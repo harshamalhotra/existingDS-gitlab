@@ -10,7 +10,6 @@ import GlInputGroupText from '../input_group_text/input_group_text.vue';
 import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-group/README.md';
 import BVueReadmeLayout from '../../../../vendor/bootstrap-vue/src/components/layout/README.md';
 import BVueReadmeSettings from '../../../../vendor/bootstrap-vue/docs/markdown/reference/settings/README.md';
-import readme from './form_group.md';
 import GlFormGroup from './form_group.vue';
 
 Vue.directive('gl-tooltip', GlTooltipDirective);
@@ -203,11 +202,6 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-group',
     bootstrapDocs: BVueReadme + BVueReadmeLayout + BVueReadmeSettings,
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     ...disableControls(['labelClass']),

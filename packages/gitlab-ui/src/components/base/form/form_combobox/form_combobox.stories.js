@@ -1,7 +1,6 @@
 import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { makeContainer } from '../../../../utils/story_decorators/container';
 import { stringTokenList, labelText, objectTokenList, actionsList } from './constants';
-import readme from './form_combobox.md';
 import GlFormCombobox from './form_combobox.vue';
 
 const template = `
@@ -38,6 +37,7 @@ const Template = (args) => ({
 
 export const Default = Template.bind({});
 Default.args = generateProps();
+Default.decorators = [makeContainer({ height: '200px' })];
 
 export const WithObjectValue = (args, { argTypes }) => ({
   components: { GlFormCombobox },
@@ -104,11 +104,4 @@ WithActions.play = async ({ canvasElement }) => {
 export default {
   title: 'base/form/form-combobox',
   component: GlFormCombobox,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
