@@ -35,7 +35,7 @@ font-family: 'GitLab Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
 
 <h3 class="gl-font-monospace">GitLab Mono</h3>
 
- GitLab Mono, based on [JetBrains Mono](https://www.jetbrains.com/lp/mono/), is used for code-related elements, for example, code blocks, branch names, commit IDs, and pipeline IDs. The fonts are available to download in [this package](https://www.npmjs.com/package/@gitlab/fonts).
+GitLab Mono, based on [JetBrains Mono](https://www.jetbrains.com/lp/mono/), is used for code-related elements, for example, code blocks, branch names, commit IDs, and pipeline IDs. The fonts are available to download in [this package](https://www.npmjs.com/package/@gitlab/fonts).
 
 <span class="gl-font-monospace gl-text-lg">The quick orange tanuki jumps over the lazy dog. 1234567890</span>
 
