@@ -1,10 +1,10 @@
 <script>
-import GlDropdownItem from '../dropdown/dropdown_item.vue';
+import GlIcon from '../icon/icon.vue';
 
 export default {
   name: 'GlFilteredSearchSuggestion',
   components: {
-    GlDropdownItem,
+    GlIcon,
   },
   inject: ['filteredSearchSuggestionListInstance'],
   inheritAttrs: false,
@@ -12,11 +12,17 @@ export default {
     /**
      * Value that will be emitted if this suggestion is selected.
      */
+    iconName: {
+      type: String,
+      required: false,
+      default: '',
+    },
     value: {
       required: true,
       validator: () => true,
     },
   },
+  emits: ['suggestion'],
   computed: {
     isActive() {
       return this.filteredSearchSuggestionListInstance.activeItem === this;
@@ -26,7 +32,7 @@ export default {
     isActive(newValue) {
       if (newValue) {
         window.requestAnimationFrame(() => {
-          this.$refs.item?.$el?.scrollIntoView({ block: 'nearest', inline: 'end' });
+          this.$el?.scrollIntoView({ block: 'nearest', inline: 'end' });
         });
       }
     },
@@ -48,17 +54,29 @@ export default {
 </script>
 
 <template>
-  <gl-dropdown-item
-    ref="item"
-    class="gl-filtered-search-suggestion"
-    data-testid="filtered-search-suggestion"
+  <li
+    role="presentation"
+    class="gl-dropdown-item gl-filtered-search-suggestion"
     :class="{ 'gl-filtered-search-suggestion-active': isActive }"
-    tabindex="-1"
-    v-bind="$attrs"
-    href="#"
-    @mousedown.native.prevent="emitValue"
   >
-    <!-- @slot The suggestion content. -->
-    <slot></slot>
-  </gl-dropdown-item>
+    <button
+      data-testid="filtered-search-suggestion"
+      tabindex="-1"
+      role="menuitem"
+      class="dropdown-item"
+      @mousedown.prevent="emitValue"
+    >
+      <gl-icon
+        v-if="iconName"
+        :name="iconName"
+        class="gl-dropdown-item-icon gl-fill-icon-default"
+      />
+      <div class="gl-dropdown-item-text-wrapper">
+        <p class="gl-dropdown-item-text-primary">
+          <!-- @slot The suggestion content. -->
+          <slot></slot>
+        </p>
+      </div>
+    </button>
+  </li>
 </template>

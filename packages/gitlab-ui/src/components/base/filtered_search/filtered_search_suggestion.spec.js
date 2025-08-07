@@ -1,20 +1,27 @@
 import { shallowMount } from '@vue/test-utils';
-import Vue from 'vue';
-import GlDropdownItem from '../dropdown/dropdown_item.vue';
+import Vue, { nextTick } from 'vue';
+import GlIcon from '../icon/icon.vue';
+import { waitForAnimationFrame } from '../../../utils/test_utils';
 import FilteredSearchSuggestion from './filtered_search_suggestion.vue';
 
 describe('Filtered search suggestion component', () => {
   let wrapper;
   let listMock;
 
-  const createComponent = (value) => {
+  const createComponent = ({ props, ...options } = {}) => {
     wrapper = shallowMount(FilteredSearchSuggestion, {
-      propsData: { value },
+      propsData: {
+        value: 'myValue',
+        ...props,
+      },
       provide: {
         filteredSearchSuggestionListInstance: listMock,
       },
+      ...options,
     });
   };
+
+  const findSuggestion = () => wrapper.find("[data-testid='filtered-search-suggestion']");
 
   beforeEach(() => {
     listMock = Vue.observable({
@@ -27,7 +34,7 @@ describe('Filtered search suggestion component', () => {
 
   beforeAll(() => {
     if (!HTMLElement.prototype.scrollIntoView) {
-      HTMLElement.prototype.scrollIntoView = jest.fn();
+      HTMLElement.prototype.scrollIntoView = () => {};
     }
   });
 
@@ -48,20 +55,40 @@ describe('Filtered search suggestion component', () => {
     expect(listMock.unregister).toHaveBeenCalledWith(wrapper.vm);
   });
 
-  it('emits suggestion event on list instance when clicked', () => {
+  it('emits suggestion event on list instance when clicked', async () => {
     const value = 'demo';
-    createComponent(value);
-    wrapper.findComponent(GlDropdownItem).trigger('mousedown');
+    createComponent({ props: { value } });
+    await findSuggestion().trigger('mousedown');
+
     expect(listMock.$emit).toHaveBeenCalledWith('suggestion', value);
   });
 
-  it('adds active class to dropdown when active in list', () => {
-    createComponent();
-    listMock.activeItem = wrapper.vm;
-    return wrapper.vm.$nextTick(() => {
-      expect(wrapper.findComponent(GlDropdownItem).classes()).toContain(
-        'gl-filtered-search-suggestion-active',
-      );
+  describe('when is active item', () => {
+    let mockScollIntoView;
+
+    beforeEach(() => {
+      createComponent();
+      mockScollIntoView = jest.spyOn(wrapper.element, 'scrollIntoView');
+      listMock.activeItem = wrapper.vm;
     });
+
+    it('adds active class', async () => {
+      await nextTick();
+
+      expect(wrapper.classes()).toContain('gl-filtered-search-suggestion-active');
+    });
+
+    it('scrolls element into view', async () => {
+      await waitForAnimationFrame();
+
+      expect(mockScollIntoView).toHaveBeenCalledTimes(1);
+      expect(mockScollIntoView).toHaveBeenCalledWith({ block: 'nearest', inline: 'end' });
+    });
+  });
+
+  it('renders icon', () => {
+    createComponent({ props: { iconName: 'pause' } });
+
+    expect(wrapper.findComponent(GlIcon).props('name')).toBe('pause');
   });
 });
