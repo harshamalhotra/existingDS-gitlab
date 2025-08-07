@@ -22,5 +22,5 @@ export const Purple = createDesignTokenStory({ tokens: COMPILED_TOKENS.purple })
 
 // eslint-disable-next-line storybook/csf-component
 export default {
-  title: 'tokens/color/deprecated/base/dark',
+  title: 'tokens/deprecated/base/dark',
 };

@@ -68,5 +68,5 @@ export const BrandPink = createDesignTokenStory({
 
 // eslint-disable-next-line storybook/csf-component
 export default {
-  title: 'tokens/color/constant',
+  title: 'tokens/constant',
 };

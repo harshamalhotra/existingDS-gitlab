@@ -10,5 +10,5 @@ export const Light = createDesignTokenStory({
 
 // eslint-disable-next-line storybook/csf-component
 export default {
-  title: 'tokens/color/alpha',
+  title: 'tokens/constant/alpha',
 };

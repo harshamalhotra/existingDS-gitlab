@@ -11,7 +11,7 @@ export default {
   directives: {
     GlTooltip: GlTooltipDirective,
   },
-  inject: ['isBackgroundColorStory', 'containerClass'],
+  inject: ['containerClass'],
   props: {
     tokens: {
       type: Object,
@@ -28,20 +28,12 @@ export default {
     },
     getClasses(value) {
       if (!this.isHex(value)) return '';
-      if (!this.isBackgroundColorStory) return '';
 
       const textColorVariant = colorFromBackground(value, 4.5);
       return {
         'gl-text-neutral-950': textColorVariant === 'dark',
         'gl-text-neutral-0': textColorVariant === 'light',
       };
-    },
-    getStyle(value) {
-      if (this.isBackgroundColorStory) {
-        return { backgroundColor: value };
-      }
-
-      return { color: value };
     },
   },
 };
@@ -55,7 +47,7 @@ export default {
         :key="token.name"
         class="gl-flex gl-flex-wrap gl-items-center gl-justify-between gl-gap-3 gl-p-3"
         :class="getClasses(token.$value)"
-        :style="getStyle(token.$value)"
+        :style="{ backgroundColor: token.$value }"
       >
         <code v-gl-tooltip :title="token.comment" class="gl-text-inherit">
           {{ getTokenName(token) }}
