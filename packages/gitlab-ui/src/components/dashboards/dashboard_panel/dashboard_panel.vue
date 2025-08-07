@@ -21,62 +21,104 @@ export default {
     GlTruncate,
   },
   props: {
+    /**
+     * CSS classes to apply to the panel container.
+     */
     containerClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Additional CSS classes to apply to the `#body` slot container.
+     */
     bodyContentClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Used to set the color of the panel border.
+     */
     borderColorClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * The string to render as the panel title.
+     */
     title: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * The name of the icon to render next to the panel title.
+     */
     titleIcon: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * The CSS classes to apply to the title icon.
+     */
     titleIconClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Configuration object for the title popover. Expected structure:
+     *
+     * - `description`: The popover text content with interpolation placeholders.
+     *   Uses `%{linkStart}` and `%{linkEnd}` as markers for where a link should be inserted.
+     *
+     * - `descriptionLink`: The optional URL that will be used for the link portion
+     *   of the description text between the linkStart and linkEnd markers.
+     */
     titlePopover: {
       type: Object,
       required: false,
       default: () => ({}),
     },
+    /**
+     * Set to `true` to show the loading state.
+     */
     loading: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Set to `true` for long-running operations.
+     */
     loadingDelayed: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * The string to render while loading is delayed.
+     */
     loadingDelayedText: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Array of `GlDisclosureDropdown` items to display in the dropdown.
+     */
     actions: {
       type: Array,
       required: false,
       default: () => [],
       validator: (actions) => actions.every((a) => isObject(a)),
     },
+    /**
+     * The toggle text for the `GlDisclosureDropdown` dropdown.
+     */
     actionsToggleText: {
       type: String,
       required: false,
