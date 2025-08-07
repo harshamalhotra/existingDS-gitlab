@@ -46,6 +46,8 @@ font-family: 'GitLab Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Con
   'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace;
 ```
 
+[Download the GitLab fonts ↗︎](https://gitlab-org.gitlab.io/frontend/fonts/)
+
 ## Type scales
 
 GitLab utilizes two type scales: **dynamic** and **fixed**.
