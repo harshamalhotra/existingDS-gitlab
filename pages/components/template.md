@@ -16,15 +16,6 @@
 name: Component name
 summary: 1-2 sentence description to display on the collection page.
 description: 1–2 sentence description of the component (including the description here keeps it visible above the Usage and Implementation tabs). Used as fallback on the collection page if no summary is present.
-vueComponents:
-  - Vue component name
-<!--
-  `vueComponents` is used to pull the component from Storybook in order to generate the Implementation tab. Removing this will remove the Implementation tab for the component. List in alphabetical order.
-
-  EXAMPLE:
-  vueComponents:
-    - GlAlert
--->
 related:
   - Related component or pattern name
 <!--
