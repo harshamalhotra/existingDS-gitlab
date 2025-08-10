@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-  <ul class="!gl-m-0 gl-list-none !gl-p-0">
+  <ul class="background-checkered-pattern !gl-m-0 gl-list-none !gl-p-0">
     <li
       v-for="token in tokens"
       :key="token.name"
