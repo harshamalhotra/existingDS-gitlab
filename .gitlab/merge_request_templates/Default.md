@@ -75,8 +75,8 @@ authentication methods and other items described in [the security review guideli
 
 If this MR adds or modifies a component, take a few moments to review the following:
 
-- [ ] All actions and functionality can be done with a [keyboard](https://design.gitlab.com/accessibility-audits/2-keyboard-only).
-- [ ] Links, buttons, and controls have a visible [focus state](https://design.gitlab.com/accessibility-audits/2-keyboard-only#focus-states).
+- [ ] All actions and functionality can be done with a [keyboard](https://design.gitlab.com/accessibility/keyboard-only).
+- [ ] Links, buttons, and controls have a visible [focus state](https://design.gitlab.com/accessibility/keyboard-only#focus-states).
 - [ ] All content is presented in text or with a text equivalent. For example, alt text for SVG, or
       `aria-label` for icons that have meaning or perform actions.
 - [ ] Changes in a component’s state are announced by a screen reader. For example, changing
@@ -87,11 +87,11 @@ If this MR adds or modifies a component, take a few moments to review the follow
 
 /assign me
 
-[contributing]: https://gitlab.com/gitlab-org/gitlab-ui/-/blob/main/CONTRIBUTING.md
+[contributing]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/CONTRIBUTING.md
 [transparency]: https://about.gitlab.com/handbook/values/#say-why-not-just-what
 [writing-documentation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com#writing-component-documentation
 [page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md
-[voice-and-tone]: https://design.gitlab.com/content/voice-tone
+[voice-and-tone]: https://design.gitlab.com/brand-messaging/brand-voice
 [style-guide]: https://docs.gitlab.com/ee/development/documentation/styleguide/index.html
 [related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md#L27-36
 [design-reviewer]: https://about.gitlab.com/handbook/engineering/ux/pajamas-design-system/design-review/#reviewer
