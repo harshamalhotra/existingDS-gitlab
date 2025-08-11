@@ -80,7 +80,7 @@ describe('GlGridLayout', () => {
           animate: true,
           margin: '8px',
           handle: '.grid-stack-item-handle',
-          cellHeight: '125px',
+          cellHeight: '137px',
           minRow: 1,
           columnOpts: { breakpoints: [{ w: breakpoints.md, c: 1 }] },
           float: true,

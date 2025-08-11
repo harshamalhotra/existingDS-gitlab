@@ -143,11 +143,11 @@ export default {
           margin: '8px',
           // CSS Selector for finding the drag handle element
           handle: '.grid-stack-item-handle',
-          /* Magic number 125px:
+          /* Magic number:
            * After allowing for padding, and the panel title row, this leaves us with minimum 48px height for the cell content.
            * This means text/content with our spacing scale can fit up to 49px without scrolling.
            */
-          cellHeight: '125px',
+          cellHeight: '137px',
           // Setting 1 in minRow prevents the grid collapsing when all panels are removed
           minRow: 1,
           // Define the number of columns for anything below a set width, defaults to fill the available space

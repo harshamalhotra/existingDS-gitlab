@@ -172,7 +172,7 @@ export default {
 <template>
   <div
     :id="panelId"
-    class="gl-border gl-h-full !gl-overflow-visible gl-rounded-base gl-bg-white gl-p-4"
+    class="gl-border gl-h-full !gl-overflow-visible gl-rounded-lg gl-bg-white gl-p-5"
     :class="containerClasses"
   >
     <div class="gl-flex gl-h-full gl-flex-col">
@@ -180,7 +180,7 @@ export default {
         <div class="gl-flex gl-items-center gl-overflow-hidden gl-pb-3">
           <gl-icon
             v-if="hasTitleIcon"
-            class="gl-mr-1"
+            class="gl-mr-2"
             :class="titleIconClass"
             :name="titleIcon"
             data-testid="panel-title-icon"
@@ -237,11 +237,12 @@ export default {
             toggle-class="gl-ml-1"
             category="tertiary"
             positioning-strategy="fixed"
+            size="small"
             @shown="$emit('dropdownOpen')"
             @hidden="$emit('dropdownClosed')"
           >
             <template #list-item="{ item }">
-              <span> <gl-icon :name="item.icon" /> {{ item.text }}</span>
+              <span>{{ item.text }}</span>
             </template>
           </gl-disclosure-dropdown>
 
