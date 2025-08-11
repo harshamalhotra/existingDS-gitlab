@@ -140,7 +140,7 @@ whenever a user has inputted text, regardless if results are found.
       v-model="selectedTokens"
       :dropdown-items="dropdownItems"
       allow-user-defined-items
-      show-ad-new-always
+      show-add-new-always
       @input="onTokenUpdate"
     />
     {{ selectedTokens }}
