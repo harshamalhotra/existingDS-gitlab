@@ -1,5 +1,4 @@
 <script>
-import { GlNav, GlNavItem } from '../../helpers/gitlab_ui';
 import PageContainer from '../../components/page_container.vue';
 import PageHeader from '../../components/page_header.vue';
 import PageNavigation from '../../components/page_navigation.vue';
@@ -7,8 +6,6 @@ import { buildMeta } from '../../helpers/seo';
 
 /*
 We only need the "section" and "slug" of the routes to find the file.
-Currently the "third" component is the "tab" (e.g. implementation on component pages)
-and that is handled inside `componentinfo.vue` until we have better routing:
 https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1293
 */
 const getPathFromRoute = (route) => {
@@ -16,21 +13,8 @@ const getPathFromRoute = (route) => {
   return [section, slug].filter(Boolean).join('/');
 };
 
-const componentNameToLabelMap = {
-  dropdowns: 'dropdown',
-  forms: 'form',
-  labels: 'label',
-  modals: 'modal',
-  'radio-button': 'radio',
-  tables: 'table',
-  tabs: 'tab',
-  toggles: 'toggle',
-};
-
 export default {
   components: {
-    GlNav,
-    GlNavItem,
     PageContainer,
     PageHeader,
     PageNavigation,
@@ -76,68 +60,8 @@ export default {
     };
   },
   computed: {
-    componentLabel() {
-      const { section, slug } = this.$route.params;
-      if (section !== 'components') {
-        return null;
-      }
-      if (this.page.componentLabel !== undefined) {
-        return this.page.componentLabel;
-      }
-      return componentNameToLabelMap[slug] || slug;
-    },
-    hasComponents() {
-      return Boolean(this.page?.components?.length);
-    },
     hidePageNavigation() {
       return Boolean(this.page.hidePageNavigation);
-    },
-    showTabs() {
-      return Boolean(this.tabs.length);
-    },
-    tabs() {
-      let { tabs = [] } = this.page;
-
-      if (this.hasComponents) {
-        tabs = [
-          {
-            route: 'section-slug',
-            title: 'Usage',
-          },
-          ...tabs,
-        ];
-
-        tabs.push({
-          route: 'section-slug-code',
-          title: 'Implementation (Vue.js)',
-        });
-
-        tabs.push({
-          route: 'section-slug-lookbook',
-          title: 'Implementation (Rails)',
-        });
-
-        tabs.push({
-          route: 'section-slug-contribute',
-          title: 'Contribute',
-        });
-      }
-
-      if (this.page.foundationLabel) {
-        tabs = [
-          {
-            route: 'section-slug',
-            title: 'Overview',
-          },
-          ...tabs,
-        ];
-
-        tabs.push({
-          route: 'section-slug-contribute',
-          title: 'Contribute',
-        });
-      }
-      return tabs;
     },
     lastUpdatedAt() {
       const { lastGitUpdate } = this.page || {};
@@ -172,23 +96,7 @@ export default {
           :description="page.description"
           :deprecated="page.deprecated"
         />
-        <gl-nav v-if="showTabs" class="gl-tabs-nav !gl-mb-5">
-          <gl-nav-item
-            v-for="tab in tabs"
-            :key="tab.route"
-            exact
-            :to="{ name: tab.route, params: $route.params }"
-            :link-classes="['gl-tab-nav-item']"
-            active-class="gl-tab-nav-item-active"
-          >
-            {{ tab.title }}
-          </gl-nav-item>
-        </gl-nav>
-        <nuxt-child
-          :page="page"
-          :component-label="componentLabel"
-          :foundation-label="page.foundationLabel"
-        />
+        <nuxt-child :page="page" />
         <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">
           Last updated at:&nbsp;<time :datetime="lastUpdatedAt">{{ lastUpdatedAt }}</time>
         </p>

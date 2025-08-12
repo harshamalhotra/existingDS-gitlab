@@ -7,6 +7,7 @@ import Dont from '../components/dont.vue';
 import FigmaEmbed from '../components/figma_embed.vue';
 import FigureImg from '../components/figure_img.vue';
 import Grid from '../components/grid.vue';
+import IconographyDirectory from '../components/iconography_directory.vue';
 import IllustrationDirectory from '../components/illustration_directory.vue';
 import LookbookViewer from '../components/lookbook_viewer.vue';
 import Note from '../components/note.vue';
@@ -23,6 +24,7 @@ Object.entries({
   FigmaEmbed,
   FigureImg,
   Grid,
+  IconographyDirectory,
   IllustrationDirectory,
   LookbookViewer,
   Note,

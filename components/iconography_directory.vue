@@ -1,8 +1,8 @@
 <script>
 import iconData from '@gitlab/svgs/dist/icons.json';
-import { GlIcon } from '../../../helpers/gitlab_ui';
-import SvgAlbum from '../../../components/svg_explorer/svg_album.vue';
-import { bytesToKiloBytes } from '../../../helpers/unit_utils';
+import { GlIcon } from '../helpers/gitlab_ui';
+import { bytesToKiloBytes } from '../helpers/unit_utils';
+import SvgAlbum from './svg_explorer/svg_album.vue';
 
 const sizeOptions = [
   { value: 8, text: '8' },

@@ -255,6 +255,10 @@
               {
                 "title": "Animated icons",
                 "path": "iconography-animated"
+              },
+              {
+                "title": "All icons",
+                "path": "iconography-directory"
               }
             ]
           },
