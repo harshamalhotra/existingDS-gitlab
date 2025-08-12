@@ -7,14 +7,16 @@ related:
 
 ## Heading levels
 
-<!-- Using spans to prevent headings impacting floating nav and page hierarchy -->
-<span class="gl-heading-display">Heading display</span><br>
-<span class="gl-heading-1">Heading 1</span><br>
-<span class="gl-heading-2">Heading 2</span><br>
-<span class="gl-heading-3">Heading 3</span><br>
-<span class="gl-heading-4">Heading 4</span><br>
-<span class="gl-heading-5">Heading 5</span><br>
-<span class="gl-heading-6">Heading 6</span><br>
+```html
+<!-- live-example -->
+<h1 class="gl-heading-display">Heading display</h1>
+<h1 class="gl-heading-1">Heading 1</h1>
+<h2 class="gl-heading-2">Heading 2</h2>
+<h3 class="gl-heading-3">Heading 3</h3>
+<h4 class="gl-heading-4">Heading 4</h4>
+<h5 class="gl-heading-5">Heading 5</h5>
+<h6 class="gl-heading-6">Heading 6</h6>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=72017-103312&mode=design&t=CutnGvd6oRdmrYue-4)
 

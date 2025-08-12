@@ -20,6 +20,10 @@ caption {
   @apply gl-text-subtle;
 }
 
+pre {
+  @apply gl-text-strong;
+}
+
 kbd {
   @apply gl-inline-block gl-text-default gl-bg-subtle gl-border gl-border-b-strong gl-leading-1;
   font-size: 87.5%;
