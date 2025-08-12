@@ -135,7 +135,7 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 
 <story-viewer component="regions-empty-state"></story-viewer>
 
-[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48911-75349&mode=design)
+[View in Pajamas UI Kit →](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1-105)
 
 ## Implementation
 
