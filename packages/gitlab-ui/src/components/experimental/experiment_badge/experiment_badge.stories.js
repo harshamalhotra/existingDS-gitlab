@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlExperimentBadge from './experiment_badge.vue';
-import readme from './experiment_badge.md';
 
 const defaultValue = propDefaultFactory(GlExperimentBadge);
 
@@ -45,12 +44,5 @@ export default {
   title: 'experimental/experiment_badge',
   component: GlExperimentBadge,
   tags: ['skip-visual-test'],
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
   argTypes: {},
 };
