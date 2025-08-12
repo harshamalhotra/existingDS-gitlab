@@ -1,8 +1,6 @@
 ---
 name: Empty States
 summary: Informative and actionable regions aimed at improving feature adoption and usability when no content exists yet.
-components:
-  - regions-empty-state
 related:
   - banner
   - button
@@ -142,6 +140,17 @@ If you're unable to come up with a solution to achieve one of the [3 goals of an
 ## Implementation
 
 Create an issue and [follow the Empty state issue template](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Empty%20state).
+
+## Code reference
+
+### GlEmptyState
+
+#### Buttons
+
+You can either have a primary button, a secondary button, or both.
+Buttons require both text and a link in order for the button to render.
+
+<story-viewer component="regions-empty-state" title="GlEmptyState" view-mode="docs"></story-viewer>
 
 ## References
 

@@ -2,7 +2,6 @@ import productivityAnalyticsEmptyStateSvg from '@gitlab/svgs/dist/illustrations/
 import issuesSvg from '@gitlab/svgs/dist/illustrations/rocket-launch-md.svg';
 import GlButton from '../../base/button/button.vue';
 import GlEmptyState from './empty_state.vue';
-import readme from './empty_state.md';
 
 const template = `
   <gl-empty-state
@@ -150,11 +149,4 @@ SlottedDescription.args = generateProps({
 export default {
   title: 'regions/empty-state',
   component: GlEmptyState,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
