@@ -60,7 +60,7 @@
     "@changesets/changelog-git": "^0.2.1",
     "@changesets/cli": "^2.29.5",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.32.0",
+    "@eslint/js": "^9.33.0",
     "@gitlab/eslint-plugin": "21.2.0",
     "@gitlab/stylelint-config": "6.2.2",
     "@nuxtjs/tailwindcss": "^6.14.0",
