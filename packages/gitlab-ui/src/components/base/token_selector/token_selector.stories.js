@@ -1,6 +1,5 @@
 import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { getA11yParameters } from '../../../utils/stories_utils';
-import readme from './token_selector.md';
 import GlTokenSelector from './token_selector.vue';
 
 const template = `
@@ -111,11 +110,6 @@ export default {
         'label',
       ],
     }),
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
   },
   argTypes: {
     state: {
