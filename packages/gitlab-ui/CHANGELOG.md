@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 117.0.1
+
+### Patch Changes
+
+- 7df7f15: Use semantic design color token for `pre` elements.
+
+  The previous color was the static `$gray-900`. Now it's `color.neutral.950`
+  (light mode), `color.neutral.0` (dark mode).
+
 ## 117.0.0
 
 ### Major Changes
