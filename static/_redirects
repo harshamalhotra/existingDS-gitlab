@@ -70,3 +70,6 @@
 
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4354
 /product-foundations/illustration/illustrations /product-foundations/illustration-directory 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4901
+/product-foundations/iconography/icons /product-foundations/iconography-directory 301

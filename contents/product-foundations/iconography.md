@@ -1,6 +1,5 @@
 ---
 name: Iconography
-foundationLabel: iconography
 tabs:
   - route: section-slug-icons
     title: Icon explorer (beta)

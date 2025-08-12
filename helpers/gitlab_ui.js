@@ -19,8 +19,6 @@ export { default as GlFormSelect } from '@gitlab/ui/src/components/base/form/for
 export { default as GlIcon } from '@gitlab/ui/src/components/base/icon/icon.vue';
 export { default as GlLink } from '@gitlab/ui/src/components/base/link/link.vue';
 export { default as GlLoadingIcon } from '@gitlab/ui/src/components/base/loading_icon/loading_icon.vue';
-export { default as GlNav } from '@gitlab/ui/src/components/base/nav/nav.vue';
-export { default as GlNavItem } from '@gitlab/ui/src/components/base/nav/nav_item.vue';
 export { default as GlPagination } from '@gitlab/ui/src/components/base/pagination/pagination.vue';
 export { default as GlSearchBoxByType } from '@gitlab/ui/src/components/base/search_box_by_type/search_box_by_type.vue';
 export { default as GlTable } from '@gitlab/ui/src/components/base/table/table.vue';
