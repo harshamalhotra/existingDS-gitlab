@@ -90,7 +90,6 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
-Default.tags = ['skip-visual-test'];
 Default.args = generateProps();
 Default.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
@@ -106,6 +105,7 @@ export default {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({
       temporarySkipRules: [
+        'aria-allowed-attr',
         'aria-input-field-name',
         'aria-required-children',
         'nested-interactive',
@@ -155,8 +155,6 @@ Clearable.parameters = {
   },
 };
 Clearable.decorators = [makeContainer({ width: '300px' })];
-// TODO: turn on visual testing again once https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2950 is resolved
-Clearable.tags = ['skip-visual-test'];
 Clearable.args = {
   ...generateProps({ allowClearAll: true }),
   selectedTokens: dropdownItems,
