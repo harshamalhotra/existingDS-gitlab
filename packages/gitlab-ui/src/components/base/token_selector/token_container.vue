@@ -129,48 +129,50 @@ export default {
 
 <template>
   <div class="gl-flex gl-w-full gl-flex-nowrap gl-items-start">
-    <div
-      ref="tokenContainer"
-      class="-gl-mx-1 -gl-my-1 gl-flex gl-w-auto gl-list-none gl-flex-wrap gl-items-center gl-p-0"
-      role="listbox"
-      aria-multiselectable="false"
-      aria-orientation="horizontal"
-      :aria-invalid="state === false && 'true'"
-      aria-label="token list"
-      @keydown.left="handleLeftArrow"
-      @keydown.right="handleRightArrow"
-      @keydown.home="handleHome"
-      @keydown.end="handleEnd"
-      @keydown.delete="handleDelete"
-      @keydown.esc="handleEscape"
-      @keydown.tab.exact.prevent="handleTab"
-    >
+    <div class="gl-flex gl-grow gl-flex-wrap gl-items-start">
       <div
-        v-for="(token, index) in tokens"
-        ref="tokens"
-        :key="token.id"
-        :data-token-id="token.id"
-        class="gl-token-selector-token-container gl-px-1 gl-py-2 gl-outline-none"
-        role="option"
-        tabindex="-1"
-        @focus="bindFocusEvent ? handleTokenFocus(index) : null"
+        ref="tokenContainer"
+        class="-gl-mx-1 -gl-my-1 gl-flex gl-w-auto gl-list-none gl-flex-wrap gl-items-center gl-p-0"
+        role="listbox"
+        aria-multiselectable="false"
+        aria-orientation="horizontal"
+        :aria-invalid="state === false && 'true'"
+        aria-label="token list"
+        @keydown.left="handleLeftArrow"
+        @keydown.right="handleRightArrow"
+        @keydown.home="handleHome"
+        @keydown.end="handleEnd"
+        @keydown.delete="handleDelete"
+        @keydown.esc="handleEscape"
+        @keydown.tab.exact.prevent="handleTab"
       >
-        <gl-token
-          class="gl-cursor-default"
-          :class="token.class"
-          :style="token.style"
-          :view-only="viewOnly"
-          @close="handleClose(token)"
+        <div
+          v-for="(token, index) in tokens"
+          ref="tokens"
+          :key="token.id"
+          :data-token-id="token.id"
+          class="gl-token-selector-token-container gl-px-1 gl-py-2 gl-outline-none"
+          role="option"
+          tabindex="-1"
+          @focus="bindFocusEvent ? handleTokenFocus(index) : null"
         >
-          <slot name="token-content" :token="token">
-            <span>
-              {{ token.name }}
-            </span>
-          </slot>
-        </gl-token>
+          <gl-token
+            class="gl-cursor-default"
+            :class="token.class"
+            :style="token.style"
+            :view-only="viewOnly"
+            @close="handleClose(token)"
+          >
+            <slot name="token-content" :token="token">
+              <span>
+                {{ token.name }}
+              </span>
+            </slot>
+          </gl-token>
+        </div>
       </div>
+      <slot name="text-input"></slot>
     </div>
-    <slot name="text-input"></slot>
     <div v-if="showClearAllButton" class="gl-ml-3 gl-p-1">
       <gl-button
         size="small"
