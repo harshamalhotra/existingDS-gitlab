@@ -414,12 +414,11 @@ export default {
         @cancel-focus="cancelTokenFocus"
         @clear-all="clearAll"
       >
-        <template #token-content="{ token }">
-          <!-- @slot Content to pass to the token component slot. Can be used
-            to add an avatar to the token. Default content is "{{ token.name }}".
-               @binding {object} token
-          -->
-          <slot name="token-content" :token="token"></slot>
+        <template #token-content="{ token }"
+          ><!--
+            @slot Content to pass to the token component slot. Can be used to add an avatar to the token. Default content is "{{ token.name }}".
+            @binding {object} token
+          --><slot name="token-content" :token="token"></slot>
         </template>
         <template #text-input>
           <!-- Can't use `v-model` due to this bug: -->
@@ -465,34 +464,32 @@ export default {
       @dropdown-item-click="addToken"
       @show="openDropdown"
     >
-      <template #loading-content>
-        <!-- @slot Content to display when `loading` prop is `true`. Default
-          content is "Searching..." -->
-        <slot name="loading-content"></slot>
+      <template #loading-content
+        ><!--
+          @slot Content to display when `loading` prop is `true`. Default content is "Searching..."
+        --><slot name="loading-content"></slot>
       </template>
-      <template #user-defined-token-content>
-        <!-- @slot Content to display when adding a user defined token. Default content is 'Add "{{ inputText }}"'.
-             @binding {string} inputText
-        -->
-        <slot name="user-defined-token-content" :input-text="inputText"></slot>
+      <template #user-defined-token-content
+        ><!--
+          @slot Content to display when adding a user defined token. Default content is 'Add "{{ inputText }}"'.
+          @binding {string} inputText
+        --><slot name="user-defined-token-content" :input-text="inputText"></slot>
       </template>
-      <template #no-results-content>
-        <!-- @slot Content to display when `dropdown-items` is empty and
-          both `allow-user-defined-tokens` and `show-add-new-always` is `false`. Default content is "No matches found". -->
-        <slot name="no-results-content"></slot>
+      <template #no-results-content
+        ><!--
+          @slot Content to display when `dropdown-items` is empty and both `allow-user-defined-tokens` and `show-add-new-always` is `false`. Default content is "No matches found".
+        --><slot name="no-results-content"></slot>
       </template>
-      <template #dropdown-item-content="{ dropdownItem }">
-        <!-- @slot Dropdown item content. Default content is "{{ dropdownItem.name }}".
-             @binding {object} dropdownItem
-        -->
-        <slot name="dropdown-item-content" :dropdown-item="dropdownItem"></slot>
+      <template #dropdown-item-content="{ dropdownItem }"
+        ><!--
+          @slot Dropdown item content. Default content is "{{ dropdownItem.name }}".
+          @binding {object} dropdownItem
+        --><slot name="dropdown-item-content" :dropdown-item="dropdownItem"></slot>
       </template>
-      <template #dropdown-footer>
-        <!-- @slot Content to add to the bottom of the dropdown.
-          Can be used in conjunction with `gl-intersection-observer` to load
-          more items as the user scrolls.
-        -->
-        <slot name="dropdown-footer"></slot>
+      <template #dropdown-footer
+        ><!--
+          @slot Content to add to the bottom of the dropdown. Can be used in conjunction with `gl-intersection-observer` to load more items as the user scrolls.
+        --><slot name="dropdown-footer"></slot>
       </template>
     </gl-token-selector-dropdown>
   </div>
