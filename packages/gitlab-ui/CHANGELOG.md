@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 117.0.2
+
+### Patch Changes
+
+- 8baa444: Improve `GlTokenSelector` line wrapping of tokens and its input.
+
 ## 117.0.1
 
 ### Patch Changes
