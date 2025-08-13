@@ -55,7 +55,7 @@ Experiment and beta features are subject to legal terms, which must be displayed
 
 <figure-img label="Example of legal disclaimer" src="/img/legal-disclaimer-exp-beta.svg"></figure-img>
 
-Similar to higher tier features, feature versions like experiment and beta should be easily identifiable, using the [`GlExperimentBadge`](#glexperimentbadge) component. It comes with a popover that explains what experiment or beta means, and links to [Support for features in different stages of development](https://docs.gitlab.com/ee/policy/development_stages_support.html) for more information.
+Similar to higher tier features, feature versions like experiment and beta should be easily identifiable, using the [`GlExperimentBadge`](#glexperimentbadge) component. It comes with a popover that explains what experiment or beta means, and links to [Support for features in different stages of development](https://docs.gitlab.com/policy/development_stages_support/) for more information.
 
 #### GlExperimentBadge
 
