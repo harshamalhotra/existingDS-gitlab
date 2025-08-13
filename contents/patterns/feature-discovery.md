@@ -29,7 +29,7 @@ Implicit discovery patterns are the preferred approach to integrate features int
 
 ### Contextual discovery
 
-Before you consider contextual discovery, you should explore solutions where the feature is not actively promoted (see [implicit discovery](#implicit-discovery)). Contextual notices are subtle UI elements that draw attention or explain a feature, such as additional text, a [badge](/components/badge), or an [icon](/components/icon). These notices should be positioned near the relevant context of the user’s task and avoid disrupting the user's workflow.
+Before you consider contextual discovery, you should explore solutions where the feature is not actively promoted (see [implicit discovery](#implicit-discovery)). Contextual notices are subtle UI elements that draw attention or explain a feature, such as additional text, a [badge](/components/badge), or an [icon](/product-foundations/iconography-directory). These notices should be positioned near the relevant context of the user’s task and avoid disrupting the user's workflow.
 
 <figure-img alt="Under the button to create a project, a static notice shows that it's also possible to create a project with the command line." label="A static notice informs the user of an alternate way to use the feature." src="/img/create-project.svg"></figure-img>
 

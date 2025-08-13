@@ -26,7 +26,7 @@ Higher tier features should be easy to identify from the rest of the interface. 
 
 #### Specification
 
-- Component name: [`GlBadge`](https://design.gitlab.com/components/badge/code)
+- Component name: [`GlBadge`](https://design.gitlab.com/components/badge)
 - Variant: `Tier`
 - Icon: `16`
 

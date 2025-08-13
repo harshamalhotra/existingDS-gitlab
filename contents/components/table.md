@@ -66,7 +66,7 @@ related:
 - The **label** [text styles](/product-foundations/type-fundamentals#type-scales) are used for product tables since the content is more data rich and requires less line height.
 - The **paragraph** [text styles](/product-foundations/type-fundamentals#type-scales) are used for Markdown tables in GitLab issues, merge requests, and documentation.
 - In some circumstances, right-aligning the text content helps with readability. For example, right-align the numeric data with a consistent number of decimal places to improve scannability.
-- Tables may switch their alignment for right-to-left audiences when designing for [internationalization](/content/i18n).
+- Tables may switch their alignment for right-to-left audiences when designing for internationalization.
 - Use white space in tables to improve [scannability](https://www.nngroup.com/articles/how-users-read-on-the-web/), visually separating data elements so that each can be individually identified and read as separate from the others.
 - To help with styling, use horizontal lines between rows to visually separate content, including the last row item. Avoid any border or frame surrounding the table. Do not style tables to look like nets, with every number enclosed.
 - Do not apply vertical lines between columns. In general, tables without vertical lines look better and are easier to scan and read.
