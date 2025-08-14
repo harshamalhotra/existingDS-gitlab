@@ -50,6 +50,10 @@ export default [
       `${PACKAGE_GITLAB_UI}/**/.cypress_cache`,
       `${PACKAGE_GITLAB_UI}/src/vendor/`,
       `${PACKAGE_GITLAB_UI}/.storybook/docs/`,
+
+      // Do not lint tailwind-documentation files for the initial stage of the merge.
+      // This should eventually be removed as it is more integrated into the monorepo.
+      'packages/tailwind-documentation/',
     ],
   },
   ...pluginStorybook.configs['flat/csf'],

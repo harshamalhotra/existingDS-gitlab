@@ -36,7 +36,8 @@
     "yarn": "^1.22.22"
   },
   "workspaces": [
-    "packages/*"
+    "packages/gitlab-ui",
+    "packages/release-tooling-test"
   ],
   "dependencies": {
     "@gitlab/application-sdk-browser": "^0.3.4",
