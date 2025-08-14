@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 117.1.0
+
+### Minor Changes
+
+- e7cf43f: Update GlSkeletonLoader to inherit class names.
+
+  See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4899.
+
 ## 117.0.2
 
 ### Patch Changes
