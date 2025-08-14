@@ -11640,10 +11640,10 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridstack@^12.2.2:
-  version "12.2.2"
-  resolved "https://registry.yarnpkg.com/gridstack/-/gridstack-12.2.2.tgz#a9ec300cefc93516bcb8dd966510a728027be358"
-  integrity sha512-eK9XAbBWQp+QniqL6ipvofWSrCelm46j5USag73LNq8tOWSL2DeeGBWU9mTibLI6i66n0r7xYS+1/g2qqTqKcw==
+gridstack@^12.3.0:
+  version "12.3.2"
+  resolved "https://registry.yarnpkg.com/gridstack/-/gridstack-12.3.2.tgz#c07ed3720d7e6d58234f9a7286d3b5e49cf2d49d"
+  integrity sha512-NWVpKO27vkivcP4pzVAyrrip4njrTEB2hNQGLxfgGM/kGBA/GnBWwqo3etnRtODMAxQj7iN3yX3ildmsciLC8Q==
 
 gunzip-maybe@^1.4.2:
   version "1.4.2"
