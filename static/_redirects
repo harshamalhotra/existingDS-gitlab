@@ -73,3 +73,8 @@
 
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4901
 /product-foundations/iconography/icons /product-foundations/iconography-directory 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4914
+/brand-design/marketing-illustrations /brand-design/visual-design-brand-illustrations 301
+/components/icon /product-foundations/iconography-directory 301
+/brand/overview /brand-introduction 301

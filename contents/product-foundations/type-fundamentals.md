@@ -16,7 +16,7 @@ The typefaces were chosen because:
 
 - Tall x-height that improves legibility at small sizes and readability of mixed- and lower-case text.
 - Features that include character disambiguation and [OpenType Font Variations](https://learn.microsoft.com/en-us/typography/opentype/spec/otvaroverview).
-- Balanced and complementary pairing that supports the [GitLab brand expression](/brand/overview).
+- Balanced and complementary pairing that supports the [GitLab brand expression](/brand-introduction).
 - Open source.
 
 ### GitLab Sans

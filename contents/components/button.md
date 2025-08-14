@@ -5,7 +5,6 @@ figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=
 related:
   - button-group
   - dropdown-disclosure
-  - dropdown-menu
   - pagination
   - tooltip
   - spinner
@@ -93,7 +92,7 @@ Use the visual style (variant) in combination with an icon or label to identify 
 
 - **Medium** (default): The medium button size is sufficient in most cases and provides the largest possible click target size.
 - **Small**: Decrease the size of a button to prevent it from competing with a primary button, or to decrease the overall size of a group or string of buttons. Although it's possible to use the small size for an icon-only button, using the default medium size is encouraged to provide a larger click target.
-- **Block**: Expand the width of a button to fill the parent container which can help provide balance in mobile ([`xs` breakpoint](/layout#breakpoints)) layouts.
+- **Block**: Expand the width of a button to fill the parent container which can help provide balance in mobile ([`xs` breakpoint](/product-foundations/layout#breakpoints)) layouts.
 
 ### States
 
@@ -152,7 +151,7 @@ Multiple alignments can be combined within a single screen, but not within an in
   </grid>
 - **Center alignment**: Only used for empty states where content is promotional or the actions are the only ones available in context.
   <figure-img alt="Centered buttons at the bottom of empty state content" label="Center-aligned buttons in an empty state" src="/img/buttons-center-alignment.png" width="332"></figure-img>
-- **Right to left languages**: Reverse button alignment for [right-to-left languages](/content/i18n) while maintaining the same order.
+- **Right to left languages**: Reverse button alignment for right-to-left languages while maintaining the same order.
 - **Additional considerations:**
   <grid>
     <do>
@@ -199,14 +198,14 @@ Buttons can contain different content depending on the situation. For example, s
 
 ### Dropdown buttons
 
-- A dropdown button triggers a [dropdown](/components/dropdown-overview) and uses the [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
+- A dropdown button triggers a [dropdown](/components/dropdown-overview) and uses the [chevron-down](/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label. The chevron is the only icon that should be present with a text label.
 - A dropdown button is split when additional related actions are available. The left half displays the default action and the additional related actions are contained within the attached dropdown on the right half. The options available in the dropdown perform the action on click.
 
 ### Icon-only buttons
 
 - An icon can be used in place of text.
-- Use a [tooltip](/components/tooltip) to provide context, unless the action may be universally understood, like a closing action using the [close icon](/product-foundations/iconography/icons?q=%7Eclose).
-- An icon-only button shouldn't be used to toggle between two states. If the icon and action of the button change after clicking it, it can be difficult to determine if the icon represents the current or future state. For example, a button that uses the [eye](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~eye) icon and changes to [eye-slash](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~eye-slash) when clicked doesn't make it clear on its own whether or not it represents that an object _is_ confidential or _will be_ as a result of clicking. Use a [toggle](/components/toggle) or [checkbox](/components/checkbox) with a label to more clearly indicate alternating states. Note that this scenario is different than an icon-only button with a [selected state](#states), as there the icon doesn't change.
+- Use a [tooltip](/components/tooltip) to provide context, unless the action may be universally understood, like a closing action using the [close icon](/product-foundations/iconography-directory?q=~close).
+- An icon-only button shouldn't be used to toggle between two states. If the icon and action of the button change after clicking it, it can be difficult to determine if the icon represents the current or future state. For example, a button that uses the [eye](/product-foundations/iconography-directory?q=~eye) icon and changes to [eye-slash](/product-foundations/iconography-directory?q=~eye-slash) when clicked doesn't make it clear on its own whether or not it represents that an object _is_ confidential or _will be_ as a result of clicking. Use a [toggle](/components/toggle) or [checkbox](/components/checkbox) with a label to more clearly indicate alternating states. Note that this scenario is different than an icon-only button with a [selected state](#states), as there the icon doesn't change.
 
 ### Ellipsis
 
@@ -247,7 +246,7 @@ button variant.
 
 A button link is a link that is styled to look like a button, semantically speaking it's a `<a>` tag
 with the necessary classes added to make it look like a button, it shares the same functionality as
-[<gl-link>](?path=/docs/base-link--docs)
+[<gl-link>](/components/link#gllink)
 
 <note>Setting a `target` attribute without a `href` attribute, will not create any side effects. Without the presence of a `href` attribute, this component will render a `<button>`.</note>
 

@@ -8,7 +8,7 @@ The motion guidelines follow a sleek, clean aesthetic allowing video producers t
 
 ### Illustration
 
-Video producers can create large-scale, custom illustrations as part of a video concept. The illustrations should adhere to brand guidelines and match the [marketing illustration](/brand-design/marketing-illustrations) style.
+Video producers can create large-scale, custom illustrations as part of a video concept. The illustrations should adhere to brand guidelines and match the [marketing illustration](/brand-design/visual-design-brand-illustrations) style.
 
 - Illustrations are assembled from multiple layers revealed in sequence.
 - Each layer can have its own unique motion type which combine to create harmony.

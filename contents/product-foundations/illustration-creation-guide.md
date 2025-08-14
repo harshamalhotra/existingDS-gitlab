@@ -2,7 +2,7 @@
 name: Creating illustrations
 ---
 
-Product illustration style derives from the [GitLab Brand Design marketing illustrations](/brand-design/marketing-illustrations) guidelines. It's designed to work in both light and dark UI by placing most objects in or above containers with solid fills.
+Product illustration style derives from the [GitLab Brand Design marketing illustrations](/brand-design/visual-design-brand-illustrations) guidelines. It's designed to work in both light and dark UI by placing most objects in or above containers with solid fills.
 
 Use [brand colors](/brand-design/color) to create continuity with the larger GitLab brand. White, charcoal, and purple are used most frequently; the remaining colors are used to highlight and accent objects within an illustration. Specific uses are listed below.
 
