@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, mount } from '@vue/test-utils';
 import GlSkeletonLoader from './skeleton_loader.vue';
 
 describe('GlSkeletonLoader', () => {
@@ -7,15 +7,18 @@ describe('GlSkeletonLoader', () => {
   const findDefaultLines = () => wrapper.findAll('clipPath rect');
   const findSvg = () => wrapper.find('svg');
 
-  const createComponent = ({ propsData, slots, reducedMotion } = {}) => {
+  const setupMatchMedia = (reducedMotion = false) => {
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
       value: jest.fn().mockImplementation(() => ({
         matches: reducedMotion,
       })),
     });
+  };
 
-    wrapper = shallowMount(GlSkeletonLoader, { propsData, slots });
+  const createComponent = ({ propsData, slots, reducedMotion, attrs } = {}) => {
+    setupMatchMedia(reducedMotion);
+    wrapper = shallowMount(GlSkeletonLoader, { propsData, slots, attrs });
   };
 
   describe('when default skeleton is used', () => {
@@ -26,6 +29,30 @@ describe('GlSkeletonLoader', () => {
 
       expect(svgClasses).toContain('gl-w-full');
       expect(svgClasses).toContain('gl-h-full');
+    });
+
+    it('applies classes to root element', () => {
+      setupMatchMedia();
+
+      const ParentComponent = {
+        template: '<gl-skeleton-loader class="static-class" :class="classNames" />',
+        components: { GlSkeletonLoader },
+        data() {
+          return {
+            classNames: ['gl-mb-3', 'gl-mt-3'],
+          };
+        },
+      };
+
+      wrapper = mount(ParentComponent);
+      const loader = wrapper.findComponent(GlSkeletonLoader);
+
+      const classNames = loader.classes();
+
+      expect(classNames).toContain('static-class');
+      expect(classNames).toContain('gl-mb-3');
+      expect(classNames).toContain('gl-mt-3');
+      expect(classNames).toContain('gl-skeleton-loader-default-container');
     });
 
     it('renders 3 lines by default', () => {

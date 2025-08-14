@@ -73,11 +73,16 @@ export default {
       required: false,
     },
   },
-  render(createElement, { props, slots }) {
+  render(createElement, { props, slots, data }) {
     const slotIsSet = () => slots().default;
 
     const propValueOrDefault = (name, defaultValue) =>
       props[name] !== null ? props[name] : defaultValue;
+
+    const inheritedClasses =
+      data.class || // Vue 3
+      data.attrs?.class || // Vue 2
+      '';
 
     const width = () => {
       if (slotIsSet()) {
@@ -236,7 +241,8 @@ export default {
     return createElement(
       'div',
       {
-        class: 'gl-skeleton-loader-default-container gl-max-w-full',
+        staticClass: data.staticClass, // Vue 2
+        class: ['gl-skeleton-loader-default-container gl-max-w-full', inheritedClasses],
         style: {
           width: props.width !== null ? `${props.width}px` : null,
           height: props.height !== null ? `${props.height}px` : null,
