@@ -17,6 +17,7 @@ export { default as GlEmptyState } from '@gitlab/ui/src/components/regions/empty
 export { default as GlFormGroup } from '@gitlab/ui/src/components/base/form/form_group/form_group.vue';
 export { default as GlFormSelect } from '@gitlab/ui/src/components/base/form/form_select/form_select.vue';
 export { default as GlIcon } from '@gitlab/ui/src/components/base/icon/icon.vue';
+export { default as GlIllustration } from '@gitlab/ui/src/components/base/illustration/illustration.vue';
 export { default as GlLink } from '@gitlab/ui/src/components/base/link/link.vue';
 export { default as GlLoadingIcon } from '@gitlab/ui/src/components/base/loading_icon/loading_icon.vue';
 export { default as GlPagination } from '@gitlab/ui/src/components/base/pagination/pagination.vue';

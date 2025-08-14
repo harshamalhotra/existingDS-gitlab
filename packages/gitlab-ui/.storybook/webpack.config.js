@@ -117,6 +117,13 @@ module.exports = ({ config }) => {
       ],
     },
     {
+      test: /@gitlab\/svgs\/dist\/illustrations\.svg$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/[name][ext]',
+      },
+    },
+    {
       test: /@gitlab\/svgs\/dist\/(icons|illustrations\/.+)\.svg$/,
       type: 'asset/resource',
     },
