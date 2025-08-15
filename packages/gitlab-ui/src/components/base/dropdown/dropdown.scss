@@ -96,21 +96,11 @@
       @include mask-chevron-down;
     }
 
-    @if $feature-button-border {
-      &.gl-button {
+    &.gl-button {
+      @apply gl-px-0;
+
+      &.btn-sm {
         @apply gl-px-0;
-
-        &.btn-sm {
-          @apply gl-px-0;
-        }
-      }
-    } @else {
-      &.gl-button {
-        @apply gl-px-3;
-
-        &.btn-sm {
-          @apply gl-px-2;
-        }
       }
     }
   }
@@ -167,10 +157,8 @@
   }
 
   .dropdown-icon-only {
-    @if $feature-button-border {
-      &.dropdown-toggle-no-caret {
-        padding: 0 !important;
-      }
+    &.dropdown-toggle-no-caret {
+      padding: 0 !important;
     }
 
     .dropdown-icon,

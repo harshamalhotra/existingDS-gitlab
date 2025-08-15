@@ -49,10 +49,8 @@ $breadcrumb-max-width: $grid-size * 16;
     }
   }
 
-  @if $feature-button-border {
-    .gl-new-dropdown-icon-only.gl-button.btn-icon {
-      min-height: auto;
-    }
+  .gl-new-dropdown-icon-only.gl-button.btn-icon {
+    min-height: auto;
   }
 }
 
