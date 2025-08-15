@@ -3,6 +3,45 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.3
+
+<small>Published 2025-08-15</small>
+
+This release fixes library access issues (thanks for reporting Katie!) and adds some recent icon and illustration updates.
+We've resolved publishing settings that prevented some teams from accessing Annotations, Product Illustrations, and Patterns & Page Templates.
+Plus, a new icon, a new illustration, and a fix for a nasty icon bug that was breaking instance swapping.
+
+Full highlights:
+
+- Annotations, Product Illustrations, and Patterns & Page Templates libaries now properly published to the whole GitLab Organization.
+- New empty-ai-catalog-md illustration for AI catalog empty states.
+- Fixed broken status icon rotation when instance swapping.
+- Update UI kit files to use the latest assets.
+
+### Changelog
+
+#### ➕ Additions
+
+- (Product Illustrations): Adds [**empty-ai-catalog-md**](https://design.gitlab.com/product-foundations/illustration-directory/?q=~illustrations/empty-state/empty-ai-catalog-md.svg) illustration.
+- (Product Icons): Adds [**kind**](https://design.gitlab.com/product-foundations/iconography-directory?q=~kind) icon.
+
+#### 🔄 Changes
+
+- (Component Library): Use latest assets from the Design tokens and Product Illustrations libraries.
+- (Patterns & Page Templates): Use latest assets from the Product Illustrations library.
+- (Patterns & Page Templates): Unpublish components that were internal to the file.
+- (Patterns & Page Templates): Publish to GitLab (Organization), previously was only visible to members of the GitLab Product Design Figma team.
+- (Annotations): Publish to GitLab (Organization), previously was only visible to members of the GitLab Product Design Figma team.
+- (Product Illustrations): Publish to GitLab (Organization), previously was only visible to members of the GitLab Product Design Figma team.
+
+#### 🛠️ Fixes
+
+- (Product Icons): Fixes [**status**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=835-1110&t=hqZ5q8sxGP7as4DR-4) icon rotation that impacted instance swapping.
+
+#### Contributors
+
+Annabel Gray, Dan Mizzi-Harris, Jeremy Elder, Julia Miocene, Libor Vanc, Nick Leonard, Sascha Eggenberger, Taylor Vanderhelm
+
 ## 18.2
 
 <small>Published 2025-07-11</small>
