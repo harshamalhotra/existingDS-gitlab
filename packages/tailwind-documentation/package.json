@@ -3,7 +3,6 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "build:ci": "NUXT_APP_BASE_URL=/frontend/tailwind-documentation/ nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
