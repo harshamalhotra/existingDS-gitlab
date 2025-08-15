@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 118.0.0
+
+### Major Changes
+
+- f958c0a: Remove feature-button-border feature flag
+
 ## 117.1.0
 
 ### Minor Changes
