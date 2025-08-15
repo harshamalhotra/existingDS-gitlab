@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.20",
     "hotkeys-js": "^3.13.7",
     "lodash": "^4.17.21",
-    "minisearch": "^7.1.0",
+    "minisearch": "^7.1.2",
     "nuxt": "^3.13.0",
     "nuxt-svgo": "^4.0.6",
     "postcss": "^8.4.45",
