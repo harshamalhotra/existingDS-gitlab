@@ -32,6 +32,6 @@ const route = useRoute();
 
 const pageSourceHref = computed(
   () =>
-    `https://gitlab.com/gitlab-org/frontend/tailwind-documentation/-/blob/main/pages${route.path}.vue`,
+    `https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/tailwind-documentation/pages${route.path}.vue`,
 );
 </script>

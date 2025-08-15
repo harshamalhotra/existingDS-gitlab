@@ -5,6 +5,8 @@ import resolveTailwindUtils from "./resolve-tailwind-utils.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
+const basePath = process.env.CI_PAGES_URL ? new URL(process.env.CI_PAGES_URL).pathname : '/';
+
 function resolveTailwindUtilsVite() {
   const virtualModuleId = "virtual:tailwind-utils";
   const resolvedVirtualModuleId = "\0" + virtualModuleId;
@@ -32,6 +34,7 @@ function resolveTailwindUtilsVite() {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    baseURL: basePath,
     head: {
       bodyAttrs: {
         class: "gl-h-full",
@@ -43,7 +46,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: `${process.env.NUXT_APP_BASE_URL || ""}/favicon.svg`,
+          href: path.join(basePath, 'favicon.svg'),
         },
       ],
     },
