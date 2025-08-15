@@ -8,6 +8,7 @@ export { default as GlTokenSelector } from './base/token_selector/token_selector
 export { default as GlMarkdown } from './base/markdown/markdown.vue';
 export { default as GlLink, default as GlDeprecatedLink } from './base/link/link.vue';
 export { default as GlIcon } from './base/icon/icon.vue';
+export { default as GlIllustration } from './base/illustration/illustration.vue';
 export { default as GlAnimatedChevronRightDownIcon } from './base/animated_icon/animated_chevron_right_down_icon.vue';
 export { default as GlAnimatedChevronLgRightDownIcon } from './base/animated_icon/animated_chevron_lg_right_down_icon.vue';
 export { default as GlAnimatedChevronDownUpIcon } from './base/animated_icon/animated_chevron_down_up_icon.vue';

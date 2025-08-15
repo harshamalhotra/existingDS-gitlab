@@ -31,6 +31,14 @@ By combining a multipurpose mindset with reusable components, the time it takes 
 - **Small** ("spot" illustration): **72px × 72px** frame size. Used for banners and when space is limited.
 - **Extra small**: **36px × 36px** frame size. Used for individual illustration elements that are combined with other elements to form a larger composition, or to connect other elements in the UI.
 
+## Code reference
+
+The `GlIllustration` component renders illustrations from a sprite sheet with built-in sizing and automatic theme adaptation. Each illustration maintains its predefined dimensions, removing the need for manual size configuration.
+
+### GlIllustration
+
+<story-viewer component="base-illustration" title="GlIllustration" view-mode="docs"></story-viewer>
+
 ## Resources
 
 - [View the illustration file in Figma](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/WIP%3A-Illustration-library?node-id=441%3A2008).
