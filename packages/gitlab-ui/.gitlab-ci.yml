@@ -1,0 +1,406 @@
+.ui:is-design-gitlab-com-default-branch: &ui-is-design-gitlab-com-default-branch
+  if: !reference [.is-design-gitlab-com-default-branch, if]
+
+.ui:is-design-gitlab-com-mr: &ui-is-design-gitlab-com-mr
+  if: !reference [.is-design-gitlab-com-mr, if]
+
+.ui:is-merge-train: &ui-is-merge-train
+  if: !reference [.is-merge-train, if]
+
+# Execute the security scanners immediately
+.ui:playwright:
+  image: mcr.microsoft.com/playwright:v1.54.2-jammy
+
+.ui:node:
+  image: node:22.17.1-bookworm
+
+.ui:use_vue3:
+  variables:
+    VUE_VERSION: '3'
+
+# This is a cache template for caching node_modules
+# As a cache key we are using a SHA of .gitlab-ci.yml and yarn.lock
+# The latter is obvious, because it updates when we update dependencies
+# The former is to invalidate caches, in case we touch our CI config, which
+# could mean changing something in our caching logic
+.ui:cache-template: &ui-cache-template
+  paths:
+    - packages/*/node_modules/
+    - node_modules/
+  key:
+    files:
+      - packages/gitlab-ui/.gitlab-ci.yml
+      - yarn.lock
+    prefix: ui_node_modules
+
+.ui:yarn_install:
+  variables:
+    # Per default we do not want to download cypress binaries, as this blows up the cache
+    # and makes all other jobs potentially slower, if no cache exists
+    CYPRESS_INSTALL_BINARY: 0
+  before_script:
+    - apt-get update
+    - apt-get install -y make
+    - yarn install --frozen-lockfile
+    # We do a yarn install in the _root_ directory
+    # so that e.g. `patch-package` works properly
+    - cd packages/gitlab-ui
+  cache:
+    <<: *ui-cache-template
+    policy: pull
+
+.rules:ui:design-gitlab-com-mr:
+  rules:
+    - <<: *ui-is-design-gitlab-com-mr
+
+.rules:ui:design-gitlab-com-mr-manual:
+  rules:
+    - <<: *ui-is-design-gitlab-com-mr
+      when: manual
+      allow_failure: true
+
+# As we are caching based on the contents of our CI config and dependency lock file
+# We only need to execute when these change. However, we give a manual job as an escape hatch
+ui:populate_npm_cache:
+  extends: [.ui:node, .ui:yarn_install]
+  stage: pre-build
+  script:
+    - echo "successfully installed dependencies"
+  cache:
+    <<: *ui-cache-template
+    policy: push
+  rules:
+    - changes:
+        - packages/gitlab-ui/.gitlab-ci.yml
+        - .gitlab-ci.yml
+        - yarn.lock
+      when: always
+    - when: never
+
+.ui:build_test_storybook:
+  extends: [.ui:node, .ui:yarn_install]
+  stage: pre-build
+  script:
+    - yarn storybook:build:test
+  artifacts:
+    when: always
+    paths:
+      - packages/gitlab-ui/storybook/
+
+ui:build_test_storybook:
+  extends: [.ui:build_test_storybook]
+
+ui:build_test_storybook_vue3:
+  extends: [.ui:use_vue3, .ui:build_test_storybook]
+
+ui:build_package:
+  extends: [.ui:node, .ui:yarn_install]
+  variables:
+    TAR_ARCHIVE_NAME: gitlab-ui.$CI_COMMIT_REF_SLUG.tgz
+  needs: []
+  stage: build
+  script:
+    - yarn build
+    - npm pack
+    - mv *.tgz $TAR_ARCHIVE_NAME
+    - DEPENDENCY_URL="$CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw/packages/gitlab-ui/$TAR_ARCHIVE_NAME"
+    - echo "The package.json dependency URL is $DEPENDENCY_URL"
+    - echo "DEPENDENCY_URL=$DEPENDENCY_URL" > build_package.env
+  artifacts:
+    when: always
+    reports:
+      dotenv: packages/gitlab-ui/build_package.env
+    paths:
+      - packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
+      - packages/gitlab-ui/dist
+      - packages/gitlab-ui/$TAR_ARCHIVE_NAME
+
+.ui:build_storybook:
+  extends: [.ui:node, .ui:yarn_install]
+  needs: []
+  stage: build
+  script:
+    - bin/build-storybook-static.sh
+  artifacts:
+    paths:
+      - packages/gitlab-ui/public
+
+.ui:pages:
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+  pages:
+    path_prefix: '$PAGES_PREFIX'
+    expire_in: never
+    publish: packages/gitlab-ui/public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+
+.ui:pages-review:
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+  pages:
+    # Review App: /review-mr-1234
+    # SB review app: /review-mr-1234-storybook
+    path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
+    expire_in: "2 weeks"
+  environment:
+    name: "$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}"
+    url: "${CURRENT_PAGES_URL}"
+    auto_stop_in: "2 weeks"
+
+ui:pages_storybook:
+  extends: [.ui:build_storybook, .ui:pages]
+  variables:
+    PAGES_PREFIX: 'storybook'
+
+ui:pages_storybook_review:
+  extends: [ui:pages_storybook, .ui:pages-review]
+
+ui:pages_storybook_vue3:
+  extends: [.ui:build_storybook, .ui:use_vue3, .ui:pages]
+  variables:
+    PAGES_PREFIX: 'storybook-vue3'
+
+ui:pages_storybook_vue3_review:
+  extends: [ui:pages_storybook_vue3, .ui:pages-review]
+
+ui:pages_tailwind_config_viewer:
+  extends: [.ui:node, .ui:yarn_install, .ui:pages]
+  needs: []
+  stage: build
+  script:
+    - yarn tailwind-config-viewer:export
+  artifacts:
+    paths:
+      - packages/gitlab-ui/tailwind-config-viewer-static
+  pages:
+    publish: packages/gitlab-ui/tailwind-config-viewer-static
+  variables:
+    PAGES_PREFIX: 'tailwind'
+
+ui:pages_tailwind_config_viewer_review:
+  extends: [ui:pages_tailwind_config_viewer, .ui:pages-review]
+
+ui:lint:
+  extends: [.ui:node, .ui:yarn_install]
+  needs: []
+  stage: test
+  script:
+    - >
+      grep -r -i '<style' --include \*.vue src/components
+      && echo "Vue components should not contain <style tags"
+      && exit 1
+      || echo "No Vue component contains <style tags"
+
+ui:check_translations_dictionary:
+  extends: [.ui:node, '.ui:yarn_install']
+  needs: []
+  script:
+    - ./bin/check_translations_dict.sh
+
+ui:check_tokens_build:
+  extends: [.ui:node, '.ui:yarn_install']
+  needs: []
+  script:
+    - ./bin/check_tokens_build.sh
+
+.ui:visual:
+  extends:
+    - .ui:playwright
+    - .ui:yarn_install
+  needs: [ui:build_test_storybook]
+  parallel: 2
+  stage: test
+  script:
+    - yarn test:visual
+  rules:
+    - <<: *ui-is-design-gitlab-com-default-branch
+    - <<: *ui-is-merge-train
+      when: always
+    - if: '$CI_MERGE_REQUEST_IID'
+      when: always
+  artifacts:
+    when: always
+    paths:
+      - packages/gitlab-ui/tests/__image_snapshots__/
+      - packages/gitlab-ui/tests/results.json
+
+ui:visual:
+  extends: [.ui:visual]
+
+ui:visual_vue3:
+  needs: [ui:build_test_storybook_vue3]
+  extends: [.ui:visual, .ui:use_vue3]
+
+.ui:integration_tests:
+  image: cypress/browsers:node-22.17.1-chrome-138.0.7204.157-1-ff-140.0.4-edge-138.0.3351.83-1
+  extends: [.ui:node, .ui:yarn_install]
+  variables:
+    # Allow these jobs to install cypress binaries
+    CYPRESS_INSTALL_BINARY: ''
+  needs: [ui:build_test_storybook]
+  parallel:
+    matrix:
+      - SUITE: ['cy:edge', 'cy:run']
+  stage: test
+  script:
+    - yarn cypress install --force
+    - "yarn test:integration:server 'yarn run $SUITE'"
+  artifacts:
+    when: on_failure
+    expire_in: 1 week
+    paths:
+      - packages/gitlab-ui/cypress
+
+ui:integration_tests:
+  extends: [.ui:integration_tests]
+
+ui:integration_tests_vue3:
+  extends: [.ui:integration_tests, .ui:use_vue3]
+  needs: [ui:build_test_storybook_vue3]
+
+ui:bootstrap-vue:
+  extends: [.ui:node]
+  needs: []
+  stage: test
+  script:
+    - cd packages/gitlab-ui/src/vendor/bootstrap-vue
+    - yarn install --check-files --frozen-lockfile --non-interactive
+    - yarn run test
+
+ui:bootstrap-vue_vue3:
+  extends: [ui:bootstrap-vue, .ui:use_vue3]
+
+.ui:unit_tests:
+  extends: [.ui:node, .ui:yarn_install]
+  needs: []
+  stage: test
+  variables:
+    ARTIFACT_NAME: 'coverage'
+    COVERAGE_DIR: 'coverage'
+  script:
+    - yarn test:unit:coverage --coverageReporters=cobertura --coverageDirectory=$COVERAGE_DIR
+  artifacts:
+    name: $ARTIFACT_NAME
+    expire_in: 7d
+    when: always
+    paths:
+      - packages/gitlab-ui/$COVERAGE_DIR/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: packages/gitlab-ui/$COVERAGE_DIR/cobertura-coverage.xml
+
+ui:unit_tests_vue2:
+  extends: [.ui:unit_tests]
+  variables:
+    ARTIFACT_NAME: 'coverage-vue2'
+    COVERAGE_DIR: 'coverage/vue2'
+
+ui:unit_tests_vue3:
+  extends: [.ui:unit_tests, .ui:use_vue3]
+  variables:
+    ARTIFACT_NAME: 'coverage-vue3'
+    COVERAGE_DIR: 'coverage/vue3'
+
+ui:merge_coverage_reports:
+  extends: [.ui:node, .ui:yarn_install]
+  needs:
+    - ui:unit_tests_vue2
+    - ui:unit_tests_vue3
+  script:
+    - yarn run merge-cobertura -o coverage/cobertura-coverage.xml package1=coverage/vue2/cobertura-coverage.xml package2=coverage/vue3/cobertura-coverage.xml
+  artifacts:
+    name: coverage
+    when: always
+    paths:
+      - packages/gitlab-ui/coverage/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: packages/gitlab-ui/coverage/cobertura-coverage.xml
+
+# Manual jobs cannot depend on failing jobs
+# So we need to introduce an intermediary job which re-exposes the artifacts
+# See also: https://gitlab.com/groups/gitlab-org/-/epics/6788
+ui:screenshot_collector:
+  stage: manual
+  variables:
+    GIT_STRATEGY: none
+  when: always
+  script:
+    - cd packages/gitlab-ui
+    - find tests
+  needs:
+    - job: ui:visual
+  artifacts:
+    when: always
+    paths:
+      - packages/gitlab-ui/tests/
+
+ui:update_screenshots:
+  extends:
+    - .ui:node
+    - .rules:ui:design-gitlab-com-mr-manual
+  when: manual
+  needs:
+    - job: ui:screenshot_collector
+  stage: manual
+  script:
+    - cd packages/gitlab-ui
+    - ./bin/update-screenshots.sh
+
+ui:create_integration_branch:
+  extends:
+    - .ui:node
+    - .rules:ui:design-gitlab-com-mr-manual
+  stage: manual
+  needs:
+    - ui:build_package
+  script:
+    - cd packages/gitlab-ui
+    - bin/create_integration_branch.mjs
+
+ui:duo_job:
+  extends: [.ui:node, .ui:yarn_install]
+  stage: deploy
+  needs:
+    - ui:build_package
+  script:
+    - node bin/build_duo_ui.mjs
+  rules:
+    - if: '$CI_MERGE_REQUEST_LABELS =~ /duo-ui-allowed-to-fail/'
+      when: always
+      allow_failure: true
+    - if: '$CI_MERGE_REQUEST_IID'
+      when: always
+      allow_failure: false
+
+ui:update_deployments:
+  extends: [.ui:node, .ui:yarn_install]
+  stage: manual
+  allow_failure: true
+  needs:
+    - job: publish_to_npm
+      optional: true
+  script:
+    - bin/update_deployments.mjs
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: manual
+      changes:
+        paths:
+          - packages/gitlab-ui/bin/update_deployments.mjs
+        compare_to: 'refs/heads/main'

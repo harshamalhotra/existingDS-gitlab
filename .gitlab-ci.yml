@@ -1,0 +1,233 @@
+stages:
+  - pre-build
+  - test
+  - build
+  - deploy
+  # The publish stage must always be the last stage containing non-manual jobs.
+  # See the publish_npm_packages job.
+  - publish
+  - manual
+
+workflow:
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+      variables:
+        CACHE_PREFIX: '${CI_MERGE_REQUEST_IID}'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      variables:
+        CACHE_PREFIX: 'main'
+    - when: never
+
+default:
+  image: alpine:latest
+  interruptible: true
+  artifacts:
+    expire_in: 30 days
+  tags:
+    - gitlab-org
+
+.is-design-gitlab-com-default-branch: &is-design-gitlab-com-default-branch
+  if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
+.is-design-gitlab-com-mr: &is-design-gitlab-com-mr
+  if: '$CI_MERGE_REQUEST_IID && $CI_PROJECT_PATH == "gitlab-org/gitlab-services/design.gitlab.com"'
+
+.is-merge-train: &is-merge-train
+  if: '$CI_MERGE_REQUEST_EVENT_TYPE == "merge_train"'
+
+variables:
+  # We should double-check whether the remaining Docker in Docker jobs need the following
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
+  GITLAB_ADVANCED_SAST_ENABLED: 'true'
+
+include:
+  - local: packages/gitlab-ui/.gitlab-ci.yml
+    rules:
+      - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+        when: always
+      - changes:
+          - packages/gitlab-ui/**/*
+          - yarn.lock
+  - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
+  - template: Jobs/SAST.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml
+  - template: Jobs/Secret-Detection.latest.gitlab-ci.yml
+  # TODO: untamper-my-lockfile can be removed completely once we move away from yarn@1.x
+  - project: gitlab-org/frontend/untamper-my-lockfile
+    file: 'templates/merge_request_pipelines.yml'
+  - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@2.1.0
+    inputs:
+      job_stage: "pre-build"
+      gitlab_dangerfiles_version: "4.9.0"
+
+###############
+#
+## Overrides for jobs from templates
+#
+###############
+
+# TODO: Remove this override for danger-review once GitLab UI is merged.
+danger-review:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_LABELS =~ /pipeline:skip-danger/
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+code_quality:
+  tags:
+    - gitlab-org-docker
+  rules:
+    - when: always
+
+gemnasium-dependency_scanning:
+  needs: []
+
+secret_detection:
+  needs: []
+
+semgrep-sast:
+  needs: []
+
+gitlab-advanced-sast:
+  needs: []
+
+###############
+#
+## Custom Jobs
+#
+###############
+.node-job:
+  image: node:22.18-alpine
+  before_script:
+    - apk add --no-cache bash git
+    - yarn install --frozen-lockfile
+
+.build_cache:
+  variables:
+    CACHE_POLICY: pull
+  cache:
+    - key: "${CACHE_PREFIX}-nuxt"
+      fallback_keys:
+        - main-nuxt
+      paths:
+        - packages/*/node_modules/
+        - node_modules/
+      policy: $CACHE_POLICY
+
+check_links:
+  extends:
+    - .node-job
+    - .build_cache
+  stage: test
+  needs: []
+  allow_failure: true
+  script:
+    - yarn check-links
+
+lint_and_test:
+  extends:
+    - .node-job
+  stage: test
+  needs: []
+  variables:
+    ESLINT_CODE_QUALITY_REPORT: gl-code-quality-report-eslint.json
+    STYLELINT_CODE_QUALITY_REPORT: gl-code-quality-report-stylelint.json
+  script:
+    - apk add --no-cache jq
+    - yarn test || exit_code=$?
+    - jq --slurp flatten "$ESLINT_CODE_QUALITY_REPORT" "$STYLELINT_CODE_QUALITY_REPORT" > gl-code-quality-report.json
+    - exit $exit_code
+  artifacts:
+    reports:
+      codequality: gl-code-quality-report.json
+
+.pages:
+  extends:
+    - .node-job
+    - .build_cache
+  stage: deploy
+  needs: []
+  publish: public
+  variables:
+    CACHE_POLICY: pull-push
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+    GITLAB_UI_URL: "${CI_PAGES_URL}/storybook"
+  script:
+    - apk add --no-cache gzip brotli
+    - bash ./scripts/build.sh
+    - ls -a public
+    - echo "${CI_ENVIRONMENT_URL}" > environment_url.txt
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+  artifacts:
+    paths:
+      - public/*
+      - environment_url.txt
+
+production:
+  extends:
+    - .pages
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  pages:
+    expire_in: never
+  environment:
+    name: "pages"
+    url: "${CURRENT_PAGES_URL}"
+
+review-app:
+  extends:
+    - .pages
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'
+  variables:
+    # Review App: /review-mr-1234
+    # SB review app: /review-mr-1234-storybook
+    GITLAB_UI_URL: "${CI_PAGES_URL}-storybook"
+  pages:
+    path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}'
+    expire_in: "2 weeks"
+  environment:
+    name: "pages-review/MR-${CI_MERGE_REQUEST_IID}"
+    url: "${CURRENT_PAGES_URL}"
+    auto_stop_in: "2 weeks"
+
+.publish_npm_packages:
+  extends:
+    - .node-job
+  stage: publish
+  variables:
+    # Force chalk to allow basic colors.
+    # See https://github.com/chalk/chalk/blob/v4.1.2/readme.md#chalksupportscolor
+    FORCE_COLOR: 1
+  script:
+    - ./scripts/publish_npm_packages.mjs
+  artifacts:
+    paths:
+      # Expose release plan for debugging, or for retroactive release creation
+      - .changeset/release_plan.json
+
+publish_npm_packages_dry_run:
+  extends:
+    - .publish_npm_packages
+  # As this is only a dry run, this doesn't need to wait for pages deploys.
+  needs: []
+  variables:
+    DRY_RUN: true
+  rules:
+    - <<: *is-design-gitlab-com-mr
+
+# Do not use `needs` (https://docs.gitlab.com/ci/yaml/needs/) on this job.
+# It should only run if all previous stages have passed.
+# We need to run this after pages deploys on main, so that pages will get deployed
+# properly, as the publish-to-npm step will create a new commit and this
+# could lead to a side-effect where pages don't get published because of
+# the commit being made before `pages` had a chance to run
+publish_npm_packages:
+  extends:
+    - .publish_npm_packages
+  resource_group: publish_npm_packages
+  rules:
+    - <<: *is-design-gitlab-com-default-branch

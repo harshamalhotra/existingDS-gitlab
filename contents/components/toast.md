@@ -1,0 +1,118 @@
+---
+name: Toast
+description: A toast displays a short system message as a result of a user's action.
+related:
+  - alert
+  - modal
+  - popover
+  - tooltip
+---
+
+## Examples
+
+<story-viewer component="base-toast" title="Toast" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
+
+<story-viewer component="base-toast" story="with-actions" title="With action" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
+
+<story-viewer component="base-toast" story="with-long-content" title="With long content" args-action="false" iframe-padding="1rem 1rem 240px 1rem"></story-viewer>
+
+[View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-139&mode=design)
+
+## Structure
+
+<figure-img alt="Numbered diagram of a toast structure" label="Toast structure" src="/img/toast-structure.svg"></figure-img>
+
+1. **Container**: Wraps the content.
+1. **Message**: Text content indicating the purpose and potential next steps.
+1. **Action** (optional): A single text action a user can take based on the content of the toast.
+1. **Dismiss button**: Removes the toast for a user.
+
+## Guidelines
+
+### When to use
+
+- Provide a contextual message based on a user's action in the same view the action took place.
+
+### When not to use
+
+- If you need to communicate an error to a user, consider using a [danger or warning alert](/components/alert#variants) instead.
+- If there's a page refresh, or a message needs to be communicated after a user visits a new page, consider using an [alert](/components/alert) instead.
+- If the action is irreversible, consider using a [modal](/components/modal) instead.
+
+### Behavior
+
+- A toast appears with an ease-in animation from the bottom of the viewport after a user's action.
+- A user can dismiss the toast by clicking the “dismiss” icon button.
+- If left alone, a toast without an action will disappear after five seconds.
+- Hovering over a toast causes it to remain until the cursor is moved.
+- A toast with an action is only dismissed when a user does one of the following:
+  - Clicks the action.
+  - Clicks the dismiss button.
+  - Navigates to another page.
+
+### Content
+
+- The message should be a concise full sentence that ends with a period.
+
+### Placement
+
+- Centered at the bottom of the viewport for smaller breakpoints and bottom left of the viewport for larger breakpoints.
+- Multiple toasts stack vertically from top to bottom with the oldest on top.
+
+### Accessibility
+
+<todo>Add accessibility requirements and considerations.</todo>
+
+## Code reference
+
+### GlToast
+
+Toasts are used to display system messages. The messages are short and straightforward. It may
+contain a dismiss button, and an action button depending on the situation.
+
+#### Using the plugin
+
+In order to use the plugin, it needs to be included in your application with `Vue.use`.
+
+```js
+// myApp.js
+
+import { GlToast } from '@gitlab/ui';
+
+// Note, this has to be done before `Vue.new()`
+Vue.use(GlToast);
+```
+
+Once included in your application, the toast plugin is globally available.
+
+```js
+// myComponent.vue
+
+this.$toast.show('Hello GitLab!');
+```
+
+Below is an example with options
+
+```js
+// myComponent.vue
+
+this.$toast.show('This is a toast with an option.', {
+  action: {
+    text: 'Undo',
+    onClick: () => { ... },
+  },
+});
+```
+
+##### Options
+
+Below are the options you can pass to create a toast
+
+| **Option**    | **Type**      | **Default** | **Description**                          |
+| ------------- | ------------- | ----------- | ---------------------------------------- |
+| autoHideDelay | Number        | 5000        | Display time of the toast in millisecond |
+| action        | Object        | close       | Add single actions to toast              |
+| toastClass    | String, Array | 'gl-toast'  | Custom css class name of the toast       |
+| onComplete    | Function      | null        | Trigger when toast is completed          |
+
+<story-viewer component="base-toast" title="GlToast" view-mode="docs"></story-viewer>

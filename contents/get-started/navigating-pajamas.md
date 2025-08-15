@@ -1,0 +1,33 @@
+---
+name: Navigating Pajamas
+---
+
+Our design system is broken down into the following sections:
+
+## [Foundations](/product-foundations)
+
+Foundational items communicate the opinionated way in which basic visual design attributes, elements, and concepts come together to create a distinct GitLab personality that's expressed in the UI. For example, [color](/product-foundations/color), [typography](/product-foundations/type-fundamentals), and [iconography](/product-foundations/iconography).
+
+## [Components](/components)
+
+A component is a UI element that serves a singular purpose or function. Two or more simple components can combine to form a composite component that still has a single function. For example, an [avatar](/components/avatar), [button](/components/button), or [combobox](/components/dropdown-combobox).
+
+## [Directives](/directives)
+
+Directives are reusable Vue.js instructions that extend HTML elements with custom behavior. They provide common functionality like detecting clicks outside elements, preloading resources on hover, or sanitizing HTML content. For example, the [Outside](/directives/outside) directive or [Safe HTML](/directives/safe-html) directive.
+
+## [Patterns](/patterns)
+
+Patterns help users accomplish tasks effectively by using elements in predictable combinations and creating repeatable interaction flows.
+
+## [Objects](/objects)
+
+An [object](/objects/overview) is a conceptual building block or concept that defines how we think about something independent of its visual representation or interaction model. For example, a [job](/objects/job), [merge request](/objects/merge-request), or repository.
+
+## [Data visualization](/data-visualization/)
+
+A data visualization pulls insights from a data set into a narrative, allowing a user to explore data and discover insights.
+
+## [Content](/content)
+
+Content includes documentation relating to our writing style. This includes the tone and voice of the brand, as well as common grammar guidelines.

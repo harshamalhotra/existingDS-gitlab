@@ -1,0 +1,9 @@
+.page {
+  @include media-sm-up {
+    padding-left: $sidebar-width;
+  }
+
+  @include media-sm-down {
+    padding-top: $navbar-height;
+  }
+}

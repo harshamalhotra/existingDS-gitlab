@@ -1,0 +1,25 @@
+@import 'variables';
+@import '@gitlab/ui/src/scss/gitlab_ui';
+
+@import 'utilities/mixins';
+
+@import 'framework/fonts';
+@import 'framework/base';
+@import 'framework/background';
+@import 'framework/color_chip';
+@import 'framework/skip_link';
+@import 'framework/one_trust';
+@import 'framework/page';
+@import 'framework/main';
+@import 'framework/markdown';
+@import 'framework/logo';
+@import 'framework/sidebar';
+@import 'framework/syntax';
+@import 'framework/table';
+@import 'framework/typography';
+
+@import 'pages/homepage';
+
+.gl-action-neutral-colors {
+  @include gl-action-neutral-colors;
+}

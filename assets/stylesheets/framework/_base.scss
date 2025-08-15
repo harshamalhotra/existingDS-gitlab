@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  @apply gl-box-border;
+}
+
+body,
+html {
+  @apply gl-leading-normal;
+  @apply gl-font-regular;
+  @apply gl-m-0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply gl-text-base;
+}
+
+* {
+  font-synthesis: none !important;
+}
+
+[tabindex="-1"]:focus:not(.focus-visible) {
+  outline: 0 !important;
+}

@@ -1,0 +1,38 @@
+:root {
+  --background-checkered-pattern-color: var(--gl-color-neutral-50);
+  --background-example-pattern-color: var(--gl-color-neutral-50);
+}
+
+:root.gl-dark {
+  --background-checkered-pattern-color: var(--gl-color-neutral-900);
+  --background-example-pattern-color: var(--gl-color-neutral-900);
+}
+
+.background-checkered-pattern {
+  background-image:
+    linear-gradient(45deg, var(--background-checkered-pattern-color) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--background-checkered-pattern-color) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--background-checkered-pattern-color) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--background-checkered-pattern-color) 75%);
+  background-size: 1.5rem 1.5rem;
+  background-position: 0 0, 0 0.75rem, 0.75rem -0.75rem, -0.75rem 0;
+}
+
+.background-example-pattern {
+  position: relative;
+}
+
+.background-example-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-example-pattern-color);
+  mask: url("data:image/svg+xml,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 7v10M7 12h10' stroke='black' stroke-width='1' fill='none'/></svg>") repeat;
+  mask-size: 24px 24px;
+  mask-position: center top;
+  pointer-events: none;
+  z-index: -1;
+}

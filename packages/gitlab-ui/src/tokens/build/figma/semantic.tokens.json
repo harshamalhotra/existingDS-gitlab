@@ -1,0 +1,2430 @@
+{
+  "action": {
+    "disabled": {
+      "foreground": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.400}",
+            "dark": "{color.neutral.500}"
+          },
+          "$type": "color",
+          "$description": "Used for the foreground of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.50}",
+            "dark": "{color.neutral.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.100}",
+            "dark": "{color.neutral.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a disabled action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      }
+    },
+    "selected": {
+      "foreground": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "{color.neutral.0}",
+              "dark": "{color.neutral.950}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.selected.foreground.color.default}",
+            "$type": "color",
+            "$description": "Used for the foreground of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.selected.foreground.color.hover}",
+            "$type": "color",
+            "$description": "Used for the foreground of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.selected.foreground.color.focus}",
+            "$type": "color",
+            "$description": "Used for the foreground of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "{color.blue.500}",
+              "dark": "{color.blue.300}"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.selected.background.color.hover}",
+            "$type": "color",
+            "$description": "Used for the background of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "{color.blue.800}",
+              "dark": "{color.blue.100}"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "default": {
+            "$value": "{action.selected.background.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a selected action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.selected.background.color.hover}",
+            "$type": "color",
+            "$description": "Used for the border of a selected action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.selected.background.color.focus}",
+            "$type": "color",
+            "$description": "Used for the border of a selected action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.selected.background.color.active}",
+            "$type": "color",
+            "$description": "Used for the border of a selected action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "neutral": {
+      "foreground": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "{color.neutral.900}",
+              "dark": "{color.neutral.50}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.neutral.foreground.color.default}",
+            "$type": "color",
+            "$description": "Used for the foreground of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.neutral.foreground.color.default}",
+            "$type": "color",
+            "$description": "Used for the foreground of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.neutral.foreground.color.default}",
+            "$type": "color",
+            "$description": "Used for the foreground of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "rgba(164, 163, 168, 0.0)",
+              "dark": "rgba(137, 136, 141, 0.0)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "rgba(164, 163, 168, 0.16)",
+              "dark": "rgba(137, 136, 141, 0.4)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.neutral.background.color.hover}",
+            "$type": "color",
+            "$description": "Used for the background of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "rgba(83, 81, 88, 0.24)",
+              "dark": "rgba(137, 136, 141, 0.16)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "default": {
+            "$value": "{color.alpha.0}",
+            "$type": "color",
+            "$description": "Used for the border of a neutral action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.neutral.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a neutral action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.neutral.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a neutral action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.neutral.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a neutral action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "confirm": {
+      "foreground": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "{color.blue.500}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a confirm (positive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.100}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a confirm (positive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.confirm.foreground.color.hover}",
+            "$type": "color",
+            "$description": "Used for the foreground of a confirm (positive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "{color.blue.900}",
+              "dark": "{color.blue.100}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a confirm (positive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "rgba(99, 166, 233, 0.0)",
+              "dark": "rgba(66, 143, 220, 0.0)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a confirm (positive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "rgba(99, 166, 233, 0.16)",
+              "dark": "rgba(66, 143, 220, 0.4)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a confirm (positive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.confirm.background.color.hover}",
+            "$type": "color",
+            "$description": "Used for the background of a confirm (positive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "rgba(11, 92, 173, 0.24)",
+              "dark": "rgba(66, 143, 220, 0.16)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a confirm (positive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "default": {
+            "$value": "{color.alpha.0}",
+            "$type": "color",
+            "$description": "Used for the border of a confirm action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.confirm.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a confirm action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.confirm.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a confirm action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.confirm.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a confirm action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "danger": {
+      "foreground": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "{color.red.500}",
+              "dark": "{color.red.200}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a danger (destructive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "{color.red.700}",
+              "dark": "{color.red.100}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a danger (destructive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.danger.foreground.color.hover}",
+            "$type": "color",
+            "$description": "Used for the foreground of a danger (destructive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "{color.red.900}",
+              "dark": "{color.red.100}"
+            },
+            "$type": "color",
+            "$description": "Used for the foreground of a danger (destructive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "SHAPE_FILL",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "background": {
+        "color": {
+          "default": {
+            "$value": {
+              "default": "rgba(245, 127, 108, 0.0)",
+              "dark": "rgba(236, 89, 65, 0.0)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a danger (destructive) action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "rgba(245, 127, 108, 0.16)",
+              "dark": "rgba(236, 89, 65, 0.4)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a danger (destructive) action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.danger.background.color.hover}",
+            "$type": "color",
+            "$description": "Used for the background of a danger (destructive) action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "active": {
+            "$value": {
+              "default": "rgba(174, 24, 0, 0.24)",
+              "dark": "rgba(236, 89, 65, 0.16)"
+            },
+            "$type": "color",
+            "$description": "Used for the background of a danger (destructive) action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "default": {
+            "$value": "{color.alpha.0}",
+            "$type": "color",
+            "$description": "Used for the border of a danger action in the default state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "hover": {
+            "$value": "{action.danger.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a danger action in the hover state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "focus": {
+            "$value": "{action.danger.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a danger action in the focus state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "active": {
+            "$value": "{action.danger.border.color.default}",
+            "$type": "color",
+            "$description": "Used for the border of a danger action in the active state.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "strong": {
+      "confirm": {
+        "background": {
+          "color": {
+            "default": {
+              "$value": {
+                "default": "{color.blue.500}",
+                "dark": "{color.blue.300}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$value": {
+                "default": "{color.blue.600}",
+                "dark": "{color.blue.200}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "focus": {
+              "$value": "{action.strong.confirm.background.color.hover}",
+              "$type": "color",
+              "$description": "Used for the background of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "active": {
+              "$value": {
+                "default": "{color.blue.700}",
+                "dark": "{color.blue.400}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          }
+        },
+        "foreground": {
+          "color": {
+            "default": {
+              "$value": {
+                "default": "{color.neutral.0}",
+                "dark": "{color.neutral.950}"
+              },
+              "$type": "color",
+              "$description": "Used for the foreground of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$value": "{action.strong.confirm.foreground.color.default}",
+              "$type": "color",
+              "$description": "Used for the foreground of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "focus": {
+              "$value": "{action.strong.confirm.foreground.color.hover}",
+              "$type": "color",
+              "$description": "Used for the foreground of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "active": {
+              "$value": "{action.strong.confirm.foreground.color.focus}",
+              "$type": "color",
+              "$description": "Used for the foreground of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        },
+        "border": {
+          "color": {
+            "default": {
+              "$value": "{color.alpha.0}",
+              "$type": "color",
+              "$description": "Used for the border of a strong confirm action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "hover": {
+              "$value": "{action.strong.confirm.border.color.default}",
+              "$type": "color",
+              "$description": "Used for the border of a strong confirm action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "focus": {
+              "$value": "{action.strong.confirm.border.color.hover}",
+              "$type": "color",
+              "$description": "Used for the border of a strong confirm action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "active": {
+              "$value": "{action.strong.confirm.border.color.focus}",
+              "$type": "color",
+              "$description": "Used for the border of a strong confirm action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "neutral": {
+        "background": {
+          "color": {
+            "default": {
+              "$value": {
+                "default": "{color.neutral.600}",
+                "dark": "{color.neutral.700}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$value": {
+                "default": "{color.neutral.700}",
+                "dark": "{color.neutral.600}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "focus": {
+              "$value": "{action.strong.neutral.background.color.hover}",
+              "$type": "color",
+              "$description": "Used for the background of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            },
+            "active": {
+              "$value": {
+                "default": "{color.neutral.800}",
+                "dark": "{color.neutral.500}"
+              },
+              "$type": "color",
+              "$description": "Used for the background of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ]
+              }
+            }
+          }
+        },
+        "foreground": {
+          "color": {
+            "default": {
+              "$value": {
+                "default": "{color.neutral.0}",
+                "dark": "{color.neutral.50}"
+              },
+              "$type": "color",
+              "$description": "Used for the foreground of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "hover": {
+              "$value": {
+                "default": "{action.strong.neutral.foreground.color.default}",
+                "dark": "{color.neutral.0}"
+              },
+              "$type": "color",
+              "$description": "Used for the foreground of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "focus": {
+              "$value": {
+                "default": "{action.strong.neutral.foreground.color.hover}",
+                "dark": "{color.neutral.0}"
+              },
+              "$type": "color",
+              "$description": "Used for the foreground of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            },
+            "active": {
+              "$value": {
+                "default": "{action.strong.neutral.foreground.color.focus}",
+                "dark": "{color.neutral.0}"
+              },
+              "$type": "color",
+              "$description": "Used for the foreground of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        },
+        "border": {
+          "color": {
+            "default": {
+              "$value": "{color.alpha.0}",
+              "$type": "color",
+              "$description": "Used for the border of a strong neutral action in the default state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "hover": {
+              "$value": "{action.strong.neutral.border.color.default}",
+              "$type": "color",
+              "$description": "Used for the border of a strong neutral action in the hover state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "focus": {
+              "$value": "{action.strong.neutral.border.color.hover}",
+              "$type": "color",
+              "$description": "Used for the border of a strong neutral action in the focus state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            },
+            "active": {
+              "$value": "{action.strong.neutral.border.color.focus}",
+              "$type": "color",
+              "$description": "Used for the border of a strong neutral action in the active state.",
+              "$extensions": {
+                "com.figma.scope": [
+                  "STROKE_COLOR"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "background": {
+    "color": {
+      "default": {
+        "$value": {
+          "default": "{color.neutral.0}",
+          "dark": "{color.neutral.950}"
+        },
+        "$type": "color",
+        "$description": "Used for the default background color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "subtle": {
+        "$value": {
+          "default": "{color.neutral.10}",
+          "dark": "{color.neutral.900}"
+        },
+        "$type": "color",
+        "$description": "Used to slightly differentiate the background from the default.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "strong": {
+        "$value": {
+          "default": "{color.neutral.50}",
+          "dark": "{color.neutral.800}"
+        },
+        "$type": "color",
+        "$description": "Used to make the background easily stand out from the default.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "disabled": {
+        "$value": {
+          "default": "{color.neutral.10}",
+          "dark": "{color.neutral.900}"
+        },
+        "$type": "color",
+        "$description": "Used to identify a disabled section.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "overlap": {
+        "$value": {
+          "default": "{color.neutral.0}",
+          "dark": "{color.neutral.900}"
+        },
+        "$type": "color",
+        "$description": "Used for components, like tooltips and drawers, and content, like a sticky header, that overlap other content.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "section": {
+        "$value": {
+          "default": "{color.neutral.0}",
+          "dark": "{color.neutral.800}"
+        },
+        "$type": "color",
+        "$description": "Used for containers, like a card header, that are visually distinct from the default page background only when necessary to maintain affordance and hierarchy in different modes.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      },
+      "overlay": {
+        "$value": {
+          "default": "{color.alpha.dark.24}",
+          "dark": "rgba(0,0,0,0.64)"
+        },
+        "$type": "color",
+        "$description": "Used for an overlay that covers other content.",
+        "$extensions": {
+          "com.figma.scope": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        }
+      }
+    }
+  },
+  "border": {
+    "color": {
+      "default": {
+        "$value": {
+          "default": "{color.neutral.100}",
+          "dark": "{color.neutral.700}"
+        },
+        "$type": "color",
+        "$description": "Used for the default border color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      },
+      "subtle": {
+        "$value": {
+          "default": "{color.neutral.50}",
+          "dark": "{color.neutral.800}"
+        },
+        "$type": "color",
+        "$description": "Used for a subtle border in combination with the default background.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      },
+      "strong": {
+        "$value": {
+          "default": "{color.neutral.200}",
+          "dark": "{color.neutral.600}"
+        },
+        "$type": "color",
+        "$description": "Used for a distinct border that emphasizes an edge or boundaries.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      },
+      "section": {
+        "$value": {
+          "default": "{border.color.default}",
+          "dark": "{background.color.default}"
+        },
+        "$type": "color",
+        "$description": "Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      },
+      "transparent": {
+        "$value": "{color.alpha.0}",
+        "$type": "color",
+        "$description": "Used when a border needs to be present, but not visibly perceived.",
+        "$extensions": {
+          "com.figma.scope": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    }
+  },
+  "control": {
+    "background": {
+      "color": {
+        "default": {
+          "$value": {
+            "default": "{color.neutral.0}",
+            "dark": "{color.alpha.dark.40}"
+          },
+          "$type": "color",
+          "$description": "Used for form control (input, radio button, checkbox, textarea) default background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "disabled": {
+          "$value": {
+            "default": "{color.neutral.10}",
+            "dark": "{color.alpha.light.4}"
+          },
+          "$type": "color",
+          "$description": "Used for disabled form control (checkbox, input, radio button, textarea) background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "concatenation": {
+          "$value": {
+            "default": "{color.neutral.10}",
+            "dark": "{color.alpha.light.4}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of static content that prepends or appends a text input.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "readonly": {
+          "$value": {
+            "default": "{color.alpha.dark.2}",
+            "dark": "{color.alpha.light.8}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of static content that prepends or appends a text input.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "selected": {
+          "default": {
+            "$value": {
+              "default": "{color.blue.500}",
+              "dark": "{color.blue.300}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background on hover.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          },
+          "focus": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background on hover.",
+            "$extensions": {
+              "com.figma.scope": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "border": {
+      "color": {
+        "default": {
+          "$value": {
+            "default": "{color.neutral.400}",
+            "dark": "{color.neutral.500}"
+          },
+          "$type": "color",
+          "$description": "Used for form control (input, radio button, checkbox, textarea) default border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        },
+        "hover": {
+          "$value": {
+            "default": "{color.neutral.600}",
+            "dark": "{color.neutral.300}"
+          },
+          "$type": "color",
+          "$description": "Used for form control (input, radio button, checkbox, textarea) border on hover.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        },
+        "focus": {
+          "$value": {
+            "default": "{color.neutral.900}",
+            "dark": "{color.neutral.50}"
+          },
+          "$type": "color",
+          "$description": "Used for form control (input, radio button, checkbox, textarea) border on focus.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        },
+        "disabled": {
+          "$value": {
+            "default": "{color.neutral.100}",
+            "dark": "{color.neutral.800}"
+          },
+          "$type": "color",
+          "$description": "Used for disabled form control (input, radio button, checkbox, textarea) border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        },
+        "error": {
+          "$value": {
+            "default": "{color.red.500}",
+            "dark": "{color.red.300}"
+          },
+          "$type": "color",
+          "$description": "Used for invalid form control (input, textarea) border.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        },
+        "selected": {
+          "default": {
+            "$value": {
+              "default": "{color.blue.500}",
+              "dark": "{color.blue.400}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "hover": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border on hover.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          },
+          "focus": {
+            "$value": {
+              "default": "{color.blue.700}",
+              "dark": "{color.blue.200}"
+            },
+            "$type": "color",
+            "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border on focus.",
+            "$extensions": {
+              "com.figma.scope": [
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "color": {
+        "error": {
+          "$value": "{text.color.danger}",
+          "$type": "color",
+          "$description": "Used for the helper text when the input is invalid.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        },
+        "valid": {
+          "$value": "{text.color.success}",
+          "$type": "color",
+          "$description": "Used for the helper text when the input is valid.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "placeholder": {
+      "color": {
+        "$value": "{text.color.disabled}",
+        "$type": "color",
+        "$description": "Used for placeholder text within inputs.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      }
+    },
+    "indicator": {
+      "color": {
+        "selected": {
+          "$value": {
+            "default": "{color.neutral.0}",
+            "dark": "{color.neutral.950}"
+          },
+          "$type": "color",
+          "$description": "Used for checkbox and radio button state indicators.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        },
+        "disabled": {
+          "$value": {
+            "default": "{color.neutral.500}",
+            "dark": "{color.neutral.400}"
+          },
+          "$type": "color",
+          "$description": "Used for disabled checkbox and radio button state indicators.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "feedback": {
+    "strong": {
+      "background": {
+        "color": {
+          "$value": "{color.neutral.800}",
+          "$type": "color",
+          "$description": "Used for a background associated with strong feedback like a tooltip or toast message.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": "{color.neutral.0}",
+          "$type": "color",
+          "$description": "Used for text on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": "{color.neutral.0}",
+          "$type": "color",
+          "$description": "Used for an icon on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "link": {
+        "color": {
+          "$value": "{color.blue.300}",
+          "$type": "color",
+          "$description": "Used for a link on a strong feedback background.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "neutral": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.50}",
+            "dark": "{color.neutral.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.700}",
+            "dark": "{color.neutral.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.600}",
+            "dark": "{color.neutral.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "info": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.50}",
+            "dark": "{color.blue.950}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.700}",
+            "dark": "{color.blue.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.600}",
+            "dark": "{color.blue.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "success": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.green.50}",
+            "dark": "{color.green.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.green.700}",
+            "dark": "{color.green.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.green.600}",
+            "dark": "{color.green.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "warning": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.50}",
+            "dark": "{color.orange.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.700}",
+            "dark": "{color.orange.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.600}",
+            "dark": "{color.orange.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "danger": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.red.50}",
+            "dark": "{color.red.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.red.700}",
+            "dark": "{color.red.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.red.600}",
+            "dark": "{color.red.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "focus-ring": {
+    "outer": {
+      "color": {
+        "$value": {
+          "default": "{color.blue.500}",
+          "dark": "{color.blue.400}"
+        },
+        "$type": "color",
+        "$description": "Used for the outer color portion of the focus ring.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      }
+    },
+    "inner": {
+      "color": {
+        "$value": "{background.color.default}",
+        "$type": "color",
+        "$description": "Used for the inner neutral portion of the focus ring.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        }
+      }
+    }
+  },
+  "highlight": {
+    "match": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.500}",
+            "dark": "{color.orange.200}"
+          },
+          "$type": "color",
+          "$description": "Used for temporary visual emphasis of backgrounds of matched search terms, filtered results, or autocomplete suggestions without implying any particular state or meaning.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.0}",
+            "dark": "{color.neutral.950}"
+          },
+          "$type": "color",
+          "$description": "Used for text within temporarily highlighted matches to maintain readability while drawing attention without conveying status.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "target": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.50}",
+            "dark": "{color.blue.950}"
+          },
+          "$type": "color",
+          "$description": "Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.200}",
+            "dark": "{color.blue.700}"
+          },
+          "$type": "color",
+          "$description": "Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "icon": {
+    "color": {
+      "default": {
+        "$value": "{text.color.default}",
+        "$type": "color",
+        "$description": "Used for the default icon color. Can be paired with default text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "subtle": {
+        "$value": "{text.color.subtle}",
+        "$type": "color",
+        "$description": "Used for a static or decorational icon. Can be paired with subtle text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "strong": {
+        "$value": "{text.color.strong}",
+        "$type": "color",
+        "$description": "Used for an icon with the highest contrast.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "disabled": {
+        "$value": "{text.color.disabled}",
+        "$type": "color",
+        "$description": "Used for an icon within a disabled section.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "link": {
+        "$value": "{text.color.link}",
+        "$type": "color",
+        "$description": "Used for an icon within a link.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "info": {
+        "$value": {
+          "default": "{color.blue.700}",
+          "dark": "{color.blue.200}"
+        },
+        "$type": "color",
+        "$description": "Used for an icon associated with information or help.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "warning": {
+        "$value": "{text.color.warning}",
+        "$type": "color",
+        "$description": "Used for an icon associated with a warning.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "danger": {
+        "$value": "{text.color.danger}",
+        "$type": "color",
+        "$description": "Used for an icon associated with an error or danger.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "success": {
+        "$value": "{text.color.success}",
+        "$type": "color",
+        "$description": "Used for an icon associated with success or validity.",
+        "$extensions": {
+          "com.figma.scope": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ]
+        }
+      }
+    }
+  },
+  "shadow": {
+    "color": {
+      "default": {
+        "$value": {
+          "default": "{color.alpha.dark.16}",
+          "dark": "{color.alpha.dark.40}"
+        },
+        "$type": "color",
+        "$description": "Used for the default shadow color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "EFFECT_COLOR"
+          ]
+        }
+      }
+    }
+  },
+  "status": {
+    "neutral": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.100}",
+            "dark": "{color.neutral.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.700}",
+            "dark": "{color.neutral.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.500}",
+            "dark": "{color.neutral.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "info": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.100}",
+            "dark": "{color.blue.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of an informational status item when indicating a noteworthy ongoing condition or a state of active progress.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.700}",
+            "dark": "{color.blue.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of an informational status item when indicating a noteworthy ongoing condition or a state of active progress.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.500}",
+            "dark": "{color.blue.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of an informational status item when indicating a noteworthy ongoing condition or a state of active progress.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "success": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.green.100}",
+            "dark": "{color.green.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a success status item when indicating a positive outcome, completion, or desired state. Clearly conveys a positive connotation.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.green.700}",
+            "dark": "{color.green.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a success status item when indicating a positive outcome, completion, or desired state. Clearly conveys a positive connotation.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.green.500}",
+            "dark": "{color.green.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a success status item when indicating a positive outcome, completion, or desired state. Clearly conveys a positive connotation.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "warning": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.100}",
+            "dark": "{color.orange.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a warning status item when indicating a state that requires heightened awareness or caution, but is not necessarily problematic. Represents a state that warrants extra attention or care when interacting with the item.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.700}",
+            "dark": "{color.orange.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a warning status item when indicating a state that requires heightened awareness or caution, but is not necessarily problematic. Represents a state that warrants extra attention or care when interacting with the item.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.500}",
+            "dark": "{color.orange.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a warning status item when indicating a state that requires heightened awareness or caution, but is not necessarily problematic. Represents a state that warrants extra attention or care when interacting with the item.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "danger": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.red.100}",
+            "dark": "{color.red.800}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a danger status item when indicating a critical or severely problematic current state. Clearly conveys a negative connotation, representing a serious, ongoing issue or undesired condition.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.red.700}",
+            "dark": "{color.red.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a danger status item when indicating a critical or severely problematic current state. Clearly conveys a negative connotation, representing a serious, ongoing issue or undesired condition.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.red.500}",
+            "dark": "{color.red.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a danger status item when indicating a critical or severely problematic current state. Clearly conveys a negative connotation, representing a serious, ongoing issue or undesired condition.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    },
+    "brand": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.100}",
+            "dark": "{color.purple.900}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a brand-related status item when highlighting the state of unique features or elements specific to the GitLab brand identity. Helps distinguish and emphasize brand-specific elements within the interface.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.700}",
+            "dark": "{color.purple.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a brand-related status item when highlighting the state of unique features or elements specific to the GitLab brand identity. Helps distinguish and emphasize brand-specific elements within the interface.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.500}",
+            "dark": "{color.purple.500}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a brand-related status item when highlighting the state of unique features or elements specific to the GitLab brand identity. Helps distinguish and emphasize brand-specific elements within the interface.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "text": {
+    "primary": {
+      "$value": {
+        "default": "#28272d",
+        "dark": "#ececef"
+      },
+      "$type": "color",
+      "$description": "Use text.color.default instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
+      "$deprecated": true
+    },
+    "secondary": {
+      "$value": {
+        "default": "#737278",
+        "dark": "#89888d"
+      },
+      "$type": "color",
+      "$description": "Use text.color.subtle instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
+      "$deprecated": true
+    },
+    "tertiary": {
+      "$value": {
+        "default": "#89888d",
+        "dark": "#737278"
+      },
+      "$type": "color",
+      "$description": "Use text.color.disabled instead.",
+      "$extensions": {
+        "com.figma.scope": [
+          "TEXT_FILL"
+        ]
+      },
+      "$deprecated": true
+    },
+    "color": {
+      "default": {
+        "$value": {
+          "default": "{color.neutral.800}",
+          "dark": "{color.neutral.50}"
+        },
+        "$type": "color",
+        "$description": "Used for the default text color.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "subtle": {
+        "$value": {
+          "default": "{color.neutral.600}",
+          "dark": "{color.neutral.200}"
+        },
+        "$type": "color",
+        "$description": "Used for supplemental text that doesn't need to be as prominent as other text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "strong": {
+        "$value": {
+          "default": "{color.neutral.950}",
+          "dark": "{color.neutral.0}"
+        },
+        "$type": "color",
+        "$description": "Used for text with the highest contrast.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "heading": {
+        "$value": {
+          "default": "{color.neutral.950}",
+          "dark": "{color.neutral.0}"
+        },
+        "$type": "color",
+        "$description": "Used for headings level 1-6.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "link": {
+        "$value": {
+          "default": "{color.blue.700}",
+          "dark": "{color.blue.200}"
+        },
+        "$type": "color",
+        "$description": "Used for default text links.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "warning": {
+        "$value": {
+          "default": "{color.orange.600}",
+          "dark": "{color.orange.300}"
+        },
+        "$type": "color",
+        "$description": "Used for text that requires caution or careful attention.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "danger": {
+        "$value": {
+          "default": "{color.red.600}",
+          "dark": "{color.red.300}"
+        },
+        "$type": "color",
+        "$description": "Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "success": {
+        "$value": {
+          "default": "{color.green.600}",
+          "dark": "{color.green.300}"
+        },
+        "$type": "color",
+        "$description": "Used for text indicating success, completion, approval, addition, or validity.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      },
+      "disabled": {
+        "$value": {
+          "default": "{color.neutral.400}",
+          "dark": "{color.neutral.400}"
+        },
+        "$type": "color",
+        "$description": "Used for disabled text.",
+        "$extensions": {
+          "com.figma.scope": [
+            "TEXT_FILL"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.skip-link {
+  @apply gl-bg-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
+  @apply gl-rounded-base;
+  @apply gl-text-neutral-0;
+  @apply hover:gl-text-neutral-0;
+  @apply gl-block;
+  @apply gl-top-3;
+  @apply gl-left-3;
+  @apply gl-p-4;
+  @apply gl-fixed;
+  @apply gl-text-center;
+  @apply gl-no-underline;
+  width: $sidebar-width - ($gl-spacing-scale-3 * 2);
+  z-index: $z-nav-skip-link;
+
+  &:not(:focus):not(:active) {
+    @apply gl-sr-only;
+  }
+}

@@ -1,0 +1,11 @@
+packages/gitlab-ui/storybook/
+packages/gitlab-ui/public/
+packages/gitlab-ui/dist/
+packages/gitlab-ui/scss_to_js/scss_variables.js
+packages/gitlab-ui/.cypress_cache
+packages/gitlab-ui/src/vendor/
+packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
+
+# Do not lint tailwind-documentation files for the initial stage of the merge.
+# This should eventually be removed as it is more integrated into the monorepo.
+packages/tailwind-documentation/

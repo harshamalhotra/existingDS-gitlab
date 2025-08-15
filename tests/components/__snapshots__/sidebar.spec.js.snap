@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sidebar component renders sidebar properly 1`] = `
+<nav
+  aria-labelledby="nav-heading"
+  class="sidebar__nav"
+>
+  <h2
+    class="gl-sr-only"
+    id="nav-heading"
+  >
+    Main navigation
+  </h2>
+   
+  <ul
+    class="gl-m-0 gl-pl-0"
+  >
+    <li
+      class="gl-m-0 gl-list-none gl-p-0"
+    >
+      <div
+        aria-hidden="true"
+        class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
+      >
+        
+    Top-level item 1
+  
+      </div>
+       
+      <ul
+        aria-label="Top-level item 1"
+        class="gl-m-0 gl-pl-0"
+      >
+        <li
+          class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
+        >
+          <nuxt-link-stub
+            class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+            to="/top1/second1"
+          >
+            
+    Second-level item 1
+  
+          </nuxt-link-stub>
+        </li>
+        <li
+          class="gl-m-0 gl-list-none gl-p-0"
+        >
+          <button
+            aria-controls="item-second-level-item-2-1"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+          >
+            <span
+              class="gl-flex gl-items-center gl-gap-2"
+            >
+              <span
+                class="gl-shrink gl-grow"
+              >
+                Second-level item 2
+              </span>
+               
+              <svg
+                aria-hidden="true"
+                class="gl-icon s16 gl-fill-current"
+                data-testid="chevron-right-icon"
+                role="img"
+              >
+                <use
+                  href="#chevron-right"
+                />
+              </svg>
+            </span>
+          </button>
+           
+          <ul
+            aria-label="Second-level item 2"
+            class="gl-m-0 gl-pl-0"
+            id="item-second-level-item-2-1"
+            style="display: none;"
+          >
+            <li
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                to="/top1/second2/third1"
+              >
+                
+    Third-level item 1
+  
+              </nuxt-link-stub>
+            </li>
+            <li
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                to="/top1/second2/third2"
+              >
+                
+    Third-level item 2
+  
+              </nuxt-link-stub>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li
+      class="gl-m-0 gl-list-none gl-p-0"
+    >
+      <div
+        aria-hidden="true"
+        class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold"
+      >
+        
+    Top-level item 2
+  
+      </div>
+       
+      <ul
+        aria-label="Top-level item 2"
+        class="gl-m-0 gl-pl-0"
+      >
+        <li
+          class="gl-m-0 gl-list-none gl-p-0"
+        >
+          <button
+            aria-controls="item-second-level-item-without-path-2"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+          >
+            <span
+              class="gl-flex gl-items-center gl-gap-2"
+            >
+              <span
+                class="gl-shrink gl-grow"
+              >
+                Second-level item without path
+              </span>
+               
+              <svg
+                aria-hidden="true"
+                class="gl-icon s16 gl-fill-current"
+                data-testid="chevron-right-icon"
+                role="img"
+              >
+                <use
+                  href="#chevron-right"
+                />
+              </svg>
+            </span>
+          </button>
+           
+          <ul
+            aria-label="Second-level item without path"
+            class="gl-m-0 gl-pl-0"
+            id="item-second-level-item-without-path-2"
+            style="display: none;"
+          >
+            <li
+              class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
+            >
+              <nuxt-link-stub
+                class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                to="/top2/third2"
+              >
+                
+    Third-level item 3
+  
+              </nuxt-link-stub>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+`;

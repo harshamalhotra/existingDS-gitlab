@@ -1,0 +1,37 @@
+^[Engineering] @gitlab-org/maintainers/frontend
+*
+!/contents/
+
+[GitLab UI] @gitlab-org/maintainers/gitlab-ui
+/packages/gitlab-ui/
+
+^[GitLab UI Charts] @svedova
+/packages/gitlab-ui/src/components/charts/
+
+[GitLab UI UX] @gitlab-com/gitlab-ux/designers
+/packages/gitlab-ui/tests/__image_snapshots__/
+
+[GitLab UI Design Tokens] @gitlab-org/foundations/design-system
+/packages/gitlab-ui/src/tokens
+
+[Design system maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian
+/contents/
+/pages/
+
+^[Design system reviewers] @gitlab-com/gitlab-ux/designers
+/contents/
+/pages/
+
+# [Figma]
+# While no Figma files are committed to this repo, the following maintainers are available to support any needs related to Figma:
+# @jeldergl @lvanc @seggenberger @danmh @katiemacoy
+
+[Technical Writing][1] @fneill @sselhorn
+/contents/content/
+
+^[Objects] @pedroms
+/contents/objects/
+
+^[AI] @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/ai-human-interaction.md
+/contents/patterns/duo-*

@@ -1,0 +1,74 @@
+{
+  "line-height": {
+    "12": {
+      "$value": "0.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "16": {
+      "$value": "1rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "20": {
+      "$value": "1.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "24": {
+      "$value": "1.5rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "28": {
+      "$value": "1.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "32": {
+      "$value": "2rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "36": {
+      "$value": "2.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "42": {
+      "$value": "2.625rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "44": {
+      "$value": "2.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "52": {
+      "$value": "3.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    }
+  }
+}

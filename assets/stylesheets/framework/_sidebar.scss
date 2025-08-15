@@ -1,0 +1,65 @@
+.sidebar {
+  @apply gl-bg-subtle;
+  @apply gl-flex;
+  @apply gl-flex-col;
+  @apply gl-h-full;
+  @apply gl-left-0;
+  @apply gl-fixed;
+  @apply gl-w-full;
+  z-index: $z-sidebar;
+
+  @include media-sm-up {
+    @apply gl-border-r;
+    @apply gl-top-0;
+    width: $sidebar-width;
+  }
+
+  @include media-sm-down {
+    @apply gl-hidden;
+    top: $navbar-height;
+
+    &.sidebar--open {
+      @apply gl-flex;
+    }
+  }
+}
+
+.sidebar__nav {
+  > ul > li + li {
+    &::before {
+      @apply gl-block;
+      @apply gl-m-3;
+      @apply gl-border-t;
+      content: '';
+    }
+  }
+}
+
+.sidebar__nav-anchor,
+.sidebar__nav-toggle {
+  @include gl-action-neutral-colors;
+}
+
+.sidebar__nav-option,
+.sidebar__nav-toggle {
+  margin-bottom: 1px !important;
+}
+
+.sidebar__nav-anchor {
+  &.nuxt-link-active {
+    @apply gl-relative;
+    background-color: var(--gl-action-neutral-background-color-active);
+
+    &::before {
+      content: '';
+      @apply gl-bg-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
+      @apply gl-rounded-base;
+      @apply gl-block;
+      @apply gl-absolute;
+      top: 3px;
+      left: 3px;
+      bottom: 3px;
+      width: 3px;
+    }
+  }
+}
