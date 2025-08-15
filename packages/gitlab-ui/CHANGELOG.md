@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 118.1.0
+
+### Minor Changes
+
+- 5543fe1: Add GlIllustration component
+
 ## 118.0.0
 
 ### Major Changes
