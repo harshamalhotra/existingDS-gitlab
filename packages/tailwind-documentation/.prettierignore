@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.data
+.env
+dist
