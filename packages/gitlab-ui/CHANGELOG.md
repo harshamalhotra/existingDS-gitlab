@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 118.1.1
+
+### Patch Changes
+
+- d3ede83: Add headerLevel prop to GlEmptyState component
+
 ## 118.1.0
 
 ### Minor Changes
