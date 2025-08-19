@@ -1,4 +1,4 @@
-import tailwindDefaults from "../gitlab-ui/tailwind.defaults";
+import tailwindDefaults from "@gitlab/ui/tailwind.defaults";
 
 /** @type {import('tailwindcss').Config} */
 export default {
