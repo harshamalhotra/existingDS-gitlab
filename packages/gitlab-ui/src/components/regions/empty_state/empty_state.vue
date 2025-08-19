@@ -18,12 +18,12 @@ export default {
     /**
      * The header tag used in the empty state component (h1/h2/h3/h4/h5/h6).
      * For accessibility this should be set to an appropriate value in the context where the component is used.
-     * Defaults to `h3`
+     * Defaults to `h2`
      */
     headerLevel: {
       type: Number,
       required: false,
-      default: 3,
+      default: 2,
       validator(value) {
         return value > 0 && value <= 6;
       },

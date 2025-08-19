@@ -28,7 +28,7 @@ describe('empty state component', () => {
     });
 
     it('should render the title', () => {
-      const title = component.find('h3');
+      const title = component.find('h2');
       expect(title.text()).toBe(props.title);
     });
 
@@ -156,7 +156,7 @@ describe('empty state component', () => {
         },
       });
 
-      const title = component.find('h3');
+      const title = component.find('h2');
       expect(title.text()).toBe(props.title);
     });
 
@@ -202,7 +202,7 @@ describe('empty state component', () => {
       });
 
       const title = component.find('#slotted');
-      const propTitle = component.find('h3');
+      const propTitle = component.find('h2');
 
       expect(title.text()).toBe(slotTitle);
       expect(propTitle.exists()).toBe(false);
