@@ -1288,19 +1288,19 @@
     lodash "^4.17.21"
     vue-eslint-parser "^9.4.3"
 
-"@gitlab/svgs@^3.143.0":
-  version "3.143.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.143.0.tgz#8cd8d8a1ece3c397ce612d164871b110b3f2be9f"
-  integrity sha512-7bEUgcGGYfQ4caulLPJeTiDBkzqLy1TCMZqqhN+P1Tw5Fz/Rl8YngJN3mqDbpPLUJVlR+bIoX/wRkmI9roIHLw==
+"@gitlab/svgs@^3.144.0":
+  version "3.144.0"
+  resolved "https://registry.yarnpkg.com/@gitlab/svgs/-/svgs-3.144.0.tgz#d2d559602679783f86107930505561f1f7f345f3"
+  integrity sha512-FmXRifh62epT36a+4XPSKBbzl0N7IEWxcSMu1RPuzXw9DXsmyQWgSz3J5ESNE7NlgBdN7rvA/V1a1sNrPYhy7Q==
 
-"@gitlab/ui@^118.1.0":
-  version "118.1.0"
-  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-118.1.0.tgz#6a8e622562d7057bf64e5d52cdb0f3f3e1b0c7fa"
-  integrity sha512-vBZXGPY1U6SRBgjqprYkfvITNJItJMSWP0BFi5iux3rfSLP9g1FElorWKlpUWs0mHAaenjujj+jIseQdJm9fBQ==
+"@gitlab/ui@^118.1.1":
+  version "118.1.1"
+  resolved "https://registry.yarnpkg.com/@gitlab/ui/-/ui-118.1.1.tgz#4dddd8aad63a98184e76cdb855a2ec56bdee8223"
+  integrity sha512-9UZvUBBkmeoFW8NoeUoaLSqwjVWylbCjL1H4LhMEEf09x4B5AFBqtAH82zsikmOSs1t5NfJsaDR0qAB5JIgkkw==
   dependencies:
     "@floating-ui/dom" "1.7.3"
     echarts "^5.6.0"
-    gridstack "^12.3.0"
+    gridstack "^12.3.3"
     iframe-resizer "^4.4.5"
     lodash "^4.17.21"
     popper.js "^1.16.1"
@@ -5510,7 +5510,7 @@ graphemer@^1.4.0:
   resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
-gridstack@^12.3.0:
+gridstack@^12.3.3:
   version "12.3.3"
   resolved "https://registry.yarnpkg.com/gridstack/-/gridstack-12.3.3.tgz#0c4fc3cdf6e1c16e6095bc79ff7240a590d2c200"
   integrity sha512-Bboi4gj7HXGnx1VFXQNde4Nwi5srdUSuCCnOSszKhFjBs8EtMEWhsKX02BjIKkErq/FjQUkNUbXUYeQaVMQ0jQ==
