@@ -16,6 +16,19 @@ export default {
       default: null,
     },
     /**
+     * The header tag used in the empty state component (h1/h2/h3/h4/h5/h6).
+     * For accessibility this should be set to an appropriate value in the context where the component is used.
+     * Defaults to `h2`
+     */
+    headerLevel: {
+      type: Number,
+      required: false,
+      default: 2,
+      validator(value) {
+        return value > 0 && value <= 6;
+      },
+    },
+    /**
      * The illustration's URL.
      */
     svgPath: {
@@ -94,6 +107,10 @@ export default {
     },
   },
   computed: {
+    headerComponent() {
+      const level = this.headerLevel;
+      return `h${level}`;
+    },
     height() {
       return this.shouldPreventImageReflow ? this.svgHeight : null;
     },
@@ -141,12 +158,13 @@ export default {
           Overrides the `title` prop.
         -->
       <slot ref="title" name="title">
-        <h1
+        <component
+          :is="headerComponent"
           class="gl-mb-0 gl-mt-0 gl-text-size-h-display gl-leading-36"
           :class="compact ? 'h5' : 'h4'"
         >
           {{ title }}
-        </h1>
+        </component>
       </slot>
       <p
         v-if="description || $scopedSlots.description"

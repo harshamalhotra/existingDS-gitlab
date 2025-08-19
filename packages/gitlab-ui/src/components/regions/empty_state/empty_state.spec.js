@@ -28,7 +28,7 @@ describe('empty state component', () => {
     });
 
     it('should render the title', () => {
-      const title = component.find('h1');
+      const title = component.find('h2');
       expect(title.text()).toBe(props.title);
     });
 
@@ -156,7 +156,19 @@ describe('empty state component', () => {
         },
       });
 
-      const title = component.find('h1');
+      const title = component.find('h2');
+      expect(title.text()).toBe(props.title);
+    });
+
+    it('should render heading level from prop', () => {
+      component = shallowMount(EmptyState, {
+        propsData: {
+          ...props,
+          headerLevel: 4,
+        },
+      });
+
+      const title = component.find('h4');
       expect(title.text()).toBe(props.title);
     });
 
@@ -190,7 +202,7 @@ describe('empty state component', () => {
       });
 
       const title = component.find('#slotted');
-      const propTitle = component.find('h1');
+      const propTitle = component.find('h2');
 
       expect(title.text()).toBe(slotTitle);
       expect(propTitle.exists()).toBe(false);
