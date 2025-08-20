@@ -71,6 +71,7 @@ export default {
       overflowingItems: [], // array of items that didn't fit and were put in a dropdown instead
       totalBreadcrumbsWidth: 0, // the total width of all breadcrumb items combined
       widthPerItem: [], // array with the individual widths of each breadcrumb item
+      dropdownWidth: 0, // the width of the breadcrumb item containing the dropdown toggle
       resizeDone: false, // to apply some CSS only during/after resizing
     };
   },
@@ -140,6 +141,9 @@ export default {
         this.widthPerItem[index] = width;
       });
 
+      // The dropdown gets rendered during `!resizeDone` so we can mesuare its real width here.
+      this.dropdownWidth = this.$refs.dropdown.clientWidth;
+
       this.makeBreadcrumbsFit();
     },
     makeBreadcrumbsFit() {
@@ -147,7 +151,6 @@ export default {
       this.resetItems();
 
       const containerWidth = this.$el.clientWidth;
-      const buttonWidth = this.size === 'sm' ? 40 : 48; // px
 
       if (this.totalBreadcrumbsWidth > containerWidth) {
         // Not all breadcrumb items fit. Start moving items over to the dropdown.
@@ -165,7 +168,7 @@ export default {
           widthNeeded -= this.widthPerItem[index];
 
           // Does it fit now? Then stop.
-          if (widthNeeded + buttonWidth < containerWidth) break;
+          if (widthNeeded + this.dropdownWidth < containerWidth) break;
         }
       }
 
@@ -201,7 +204,11 @@ export default {
 <template>
   <nav class="gl-breadcrumbs" :aria-label="ariaLabel" :style="breadcrumbStyle">
     <ol class="gl-breadcrumb-list breadcrumb" v-bind="$attrs" v-on="$listeners">
-      <li v-if="hasCollapsible" :class="`gl-breadcrumb-item gl-breadcrumb-item-${size}`">
+      <li
+        v-if="hasCollapsible || !resizeDone"
+        ref="dropdown"
+        :class="`gl-breadcrumb-item gl-breadcrumb-item-${size}`"
+      >
         <gl-disclosure-dropdown
           :items="overflowingItems"
           :toggle-text="showMoreLabel"
