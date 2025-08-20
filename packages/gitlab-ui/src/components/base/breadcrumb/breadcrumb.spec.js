@@ -321,4 +321,17 @@ describe('Breadcrumb component', () => {
       },
     );
   });
+
+  describe('dropdown width measurement', () => {
+    it('measures and uses actual dropdown width instead of hardcoded value', async () => {
+      createComponent();
+      mockSmallWrapperWidth();
+      mockItemsWidths();
+      mockElementWidth(wrapper.vm.$refs.dropdown, 666);
+
+      await wrapper.vm.$nextTick();
+
+      expect(wrapper.vm.dropdownWidth).toBe(666);
+    });
+  });
 });
