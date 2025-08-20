@@ -29,7 +29,7 @@
   @apply gl-text-center;
   @apply gl-border-1;
   @apply gl-border-solid;
-  @include gl-action-neutral-colors;
+  @apply gl-action-neutral-colors;
   @include gl-prefers-reduced-motion-transition;
 
   &:hover {

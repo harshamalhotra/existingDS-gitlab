@@ -1,4 +1,4 @@
 .logo {
-  @include gl-action-neutral-colors;
+  @apply gl-action-neutral-colors;
   @apply hover:gl-no-underline;
 }

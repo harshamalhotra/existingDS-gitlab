@@ -37,7 +37,7 @@
 
 .sidebar__nav-anchor,
 .sidebar__nav-toggle {
-  @include gl-action-neutral-colors;
+  @apply gl-action-neutral-colors;
 }
 
 .sidebar__nav-option,

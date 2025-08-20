@@ -49,6 +49,26 @@ const spacing = {
 
 function addCustomDefinitions({ addComponents, addUtilities }) {
   addComponents({
+    '.action-neutral-colors': {
+      color: 'var(--gl-action-neutral-foreground-color-default)',
+      'background-color': 'var(--gl-action-neutral-background-color-default)',
+      'border-color': 'var(--gl-action-neutral-border-color-default)',
+      '&:hover': {
+        color: 'var(--gl-action-neutral-foreground-color-hover)',
+        'background-color': 'var(--gl-action-neutral-background-color-hover)',
+        'border-color': 'var(--gl-action-neutral-border-color-hover)',
+      },
+      '&:focus': {
+        color: 'var(--gl-action-neutral-foreground-color-focus)',
+        'background-color': 'var(--gl-action-neutral-background-color-focus)',
+        'border-color': 'var(--gl-action-neutral-border-color-focus)',
+      },
+      '&:active': {
+        color: 'var(--gl-action-neutral-foreground-color-active)',
+        'background-color': 'var(--gl-action-neutral-background-color-active)',
+        'border-color': 'var(--gl-action-neutral-border-color-active)',
+      },
+    },
     '.animate-skeleton-loader': {
       overflow: 'hidden',
       'max-width': '32rem',
