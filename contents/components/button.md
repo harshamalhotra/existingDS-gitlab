@@ -85,7 +85,6 @@ Use the visual style (variant) in combination with an icon or label to identify 
 - **Default**: Use for an action that doesn’t warrant prominence, typically when a primary variant is already used in the same context.
 - **Confirm**: Indicate a positive or negative non-destructive action that is confirmation of what the user desires to take place.
 - **Danger**: Highlight an action that is destructive and undoable or has potentially detrimental consequences. In a long list of items where each contains a destructive action, use the `default` variant to avoid having many danger buttons overwhelm the page. Any final confirmation that is destructive must use the `danger` variant (unless a browser dialog is used).
-- **Dashed**: Highlight an action to indicate an object has yet to be created.
 - **Link**: Visually style an action like an anchor link when using a [link](/components/link) isn't possible.
 
 ### Sizes
@@ -283,7 +282,7 @@ Defaults to `primary`.
 
 ### Variants
 
-Use the `variant` prop to set the button variant to `default`, `confirm`, `danger`, `dashed`, or `link`.
+Use the `variant` prop to set the button variant to `default`, `confirm`, `danger`, or `link`.
 Defaults to `default`.
 
 ### Block level buttons

@@ -41,20 +41,6 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
     }
   }
 
-  // Button separators
-  .btn-dashed {
-    &::before {
-      @apply gl-bg-transparent;
-      border-left: 1px dashed var(--gl-button-dashed-border-color-default);
-    }
-
-    &.disabled::before,
-    &[disabled]::before {
-      @apply gl-bg-transparent;
-      border-left: 1px dashed var(--gl-button-disabled-border-color);
-    }
-  }
-
   // GlButton confirm and danger variants have transparent gap between items
   .btn-confirm,
   .btn-danger {
@@ -128,20 +114,6 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
   .btn-danger {
     &:not(.disabled):not([disabled])::before {
       @apply gl-bg-transparent;
-    }
-  }
-
-  // Dashed button
-  > .gl-button.btn-dashed:not(:first-child),
-  > .btn-group:not(:first-child) > .gl-button.btn-dashed,
-  > .gl-new-dropdown:not(:first-child) > .gl-button.btn-dashed {
-    &::before {
-      border-top: 1px dashed var(--gl-button-dashed-border-color-default);
-    }
-
-    &.disabled::before,
-    &[disabled]::before {
-      border-top: 1px dashed var(--gl-button-disabled-border-color);
     }
   }
 }

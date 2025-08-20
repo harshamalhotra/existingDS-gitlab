@@ -196,8 +196,7 @@
     }
   }
 
-  &.btn-default-tertiary,
-  &.btn-dashed {
+  &.btn-default-tertiary {
     @include gl-button-theme(
       $color: var(--gl-button-default-tertiary-foreground-color-default),
       $background-color: var(--gl-button-default-tertiary-background-color-default),
@@ -317,7 +316,6 @@
   }
 
   &.btn-default-secondary,
-  &.btn-dashed-secondary,
   &.btn-confirm-secondary,
   &.btn-danger-secondary,
   &.btn-reset-secondary,
@@ -329,7 +327,6 @@
   }
 
   &.btn-default,
-  &.btn-dashed,
   &.btn-confirm,
   &.btn-danger {
     &-tertiary {
@@ -360,25 +357,6 @@
 
     gl-emoji {
       @apply gl-text-sm;
-    }
-  }
-
-  &.btn-dashed,
-  &.btn-dashed-tertiary {
-    border-style: dashed;
-    border-color: var(--gl-button-dashed-border-color-default);
-
-    &:hover {
-      border-color: var(--gl-button-dashed-border-color-hover);
-    }
-
-    &:focus {
-      border-color: var(--gl-button-dashed-border-color-focus);
-    }
-
-    &:active,
-    &.active {
-      border-color: var(--gl-button-dashed-border-color-active);
     }
   }
 

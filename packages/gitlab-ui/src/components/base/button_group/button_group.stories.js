@@ -184,17 +184,6 @@ export const AllDefaultVariants = (args, { argTypes }) => ({
       </gl-button-group>
 
       <gl-button-group :vertical="vertical">
-        <gl-button category="primary" :size="size" variant="dashed" :disabled="disabled">Dashed primary</gl-button>
-        <gl-button category="primary" :size="size" variant="dashed" :disabled="disabled">Button 2</gl-button>
-        <gl-button category="primary" :size="size" variant="dashed" :disabled="disabled">Button 3</gl-button>
-      </gl-button-group>
-      <gl-button-group :vertical="vertical">
-        <gl-button category="secondary" :size="size" variant="dashed" :disabled="disabled">Dashed secondary</gl-button>
-        <gl-button category="secondary" :size="size" variant="dashed" :disabled="disabled">Button 2</gl-button>
-        <gl-button category="secondary" :size="size" variant="dashed" :disabled="disabled">Button 3</gl-button>
-      </gl-button-group>
-
-      <gl-button-group :vertical="vertical">
         <gl-button category="primary" :size="size" variant="reset" :disabled="disabled">Reset primary</gl-button>
         <gl-button category="primary" :size="size" variant="reset" :disabled="disabled">Button 2</gl-button>
         <gl-button category="primary" :size="size" variant="reset" :disabled="disabled">Button 3</gl-button>
@@ -439,43 +428,6 @@ export const AllSplitDropdownsVariants = (args, { argTypes }) => ({
           :disabled="disabled"
           category="secondary"
           :size="size"
-          variant="dashed"
-        >Dashed primary</gl-button>
-
-        <gl-disclosure-dropdown
-          :disabled="disabled"
-          :items="items"
-          toggle-text="Other actions"
-          text-sr-only
-          category="secondary"
-          :size="size"
-          variant="dashed"
-        />
-      </gl-button-group>
-      <gl-button-group>
-        <gl-button
-          :disabled="disabled"
-          category="secondary"
-          :size="size"
-          variant="dashed"
-        >Dashed secondary</gl-button>
-
-        <gl-disclosure-dropdown
-          :disabled="disabled"
-          :items="items"
-          toggle-text="Other actions"
-          text-sr-only
-          category="secondary"
-          :size="size"
-          variant="dashed"
-        />
-      </gl-button-group>
-
-      <gl-button-group>
-        <gl-button
-          :disabled="disabled"
-          category="secondary"
-          :size="size"
           variant="reset"
         >Reset primary</gl-button>
 
@@ -587,28 +539,6 @@ export const AllLegacyDropdownsVariants = (args, { argTypes }) => ({
       >
         <gl-dropdown-item>Dropdown item</gl-dropdown-item>
       </gl-dropdown>
-
-      <gl-dropdown
-        split
-        text="Dashed primary"
-        category="primary"
-        variant="dashed"
-        :size="size"
-        :disabled="disabled"
-      >
-        <gl-dropdown-item>Dropdown item</gl-dropdown-item>
-      </gl-dropdown>
-      <gl-dropdown
-        split
-        text="Dashed secondary"
-        category="secondary"
-        variant="dashed"
-        :size="size"
-        :disabled="disabled"
-      >
-        <gl-dropdown-item>Dropdown item</gl-dropdown-item>
-      </gl-dropdown>
-
       <gl-dropdown
         split
         text="Reset primary"

@@ -108,7 +108,6 @@ export const buttonVariantOptions = {
   default: 'default',
   confirm: 'confirm',
   danger: 'danger',
-  dashed: 'dashed',
   link: 'link',
   /**
    * The "reset" variant can be used when customization of GlButton styles is required
