@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 118.1.2
+
+### Patch Changes
+
+- 37eed8f: Move gl-action-neutral-colors mixin to Tailwind utility
+
+  Remove `gl-action-neutral-colors` SCSS mixin
+  Update `@include` usage to `@apply`
+
 ## 118.1.1
 
 ### Patch Changes
