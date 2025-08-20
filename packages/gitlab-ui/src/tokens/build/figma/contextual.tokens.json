@@ -3774,7 +3774,8 @@
               "com.figma.scope": [
                 "STROKE_COLOR"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "hover": {
             "$value": "{button.dashed.border.color.default}",
@@ -3784,7 +3785,8 @@
               "com.figma.scope": [
                 "STROKE_COLOR"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "focus": {
             "$value": "{button.dashed.border.color.default}",
@@ -3794,7 +3796,8 @@
               "com.figma.scope": [
                 "STROKE_COLOR"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -3807,7 +3810,8 @@
               "com.figma.scope": [
                 "STROKE_COLOR"
               ]
-            }
+            },
+            "$deprecated": true
           }
         }
       }
