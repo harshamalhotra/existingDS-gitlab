@@ -1,5 +1,17 @@
 # @gitlab/ui
 
+## 119.0.0
+
+### Major Changes
+
+- 5676341: GlButton: Removed dashed variant.
+
+  Use the default variant instead.
+
+### Patch Changes
+
+- eb334bf: GlBreadcrumb: Improve resize calculation by measuring the dropdown width
+
 ## 118.1.2
 
 ### Patch Changes
