@@ -155,7 +155,6 @@ If you want to add extra tabs that do not have any content, you can put them in 
   <b-tabs>
     <!-- Add your b-tab components here -->
     <template #tabs-end>
-      <b-nav-item href="#" role="presentation" @click="() => {}">Another tab</b-nav-item>
       <li role="presentation" class="nav-item align-self-center">Plain text</li>
     </template>
   </b-tabs>
@@ -167,7 +166,7 @@ If you want to add extra tabs that do not have any content, you can put them in 
 Use the `tabs-start` slot to place extra tab buttons before the content tab buttons, and use the
 `tabs-end` slot to place extra tab buttons after the content tab buttons.
 
-**Note:** extra (contentless) tab buttons should be a `<b-nav-item>` or have a root element of
+**Note:** extra (contentless) tab buttons should  have a root element of
 `<li>` and class `nav-item` for proper rendering and semantic markup.
 
 ## Add custom content to tab title
@@ -390,7 +389,9 @@ It is recommended to use the `disabled` attribute on the `<b-tab>` component ins
 
       <!-- New Tab Button (Using tabs-end slot) -->
       <template #tabs-end>
-        <b-nav-item role="presentation" @click.prevent="newTab" href="#"><b>+</b></b-nav-item>
+        <li role="presentation" class="nav-item align-self-center">
+          <button type="button" @click="newTab">+</button>
+        </li>
       </template>
 
       <!-- Render this if no tabs -->
