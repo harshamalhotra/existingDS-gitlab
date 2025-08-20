@@ -9,7 +9,6 @@ import {
 import GlIcon from '../icon/icon.vue';
 
 const variantClass = {
-  [badgeVariantOptions.muted]: 'badge-muted',
   [badgeVariantOptions.neutral]: 'badge-neutral',
   [badgeVariantOptions.info]: 'badge-info',
   [badgeVariantOptions.success]: 'badge-success',
@@ -30,7 +29,7 @@ export default {
      */
     variant: {
       type: String,
-      default: badgeVariantOptions.muted,
+      default: badgeVariantOptions.neutral,
       validator(value) {
         return badgeVariantOptions[value] !== undefined;
       },

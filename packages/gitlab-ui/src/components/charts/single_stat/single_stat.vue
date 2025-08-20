@@ -37,7 +37,7 @@ export default {
     variant: {
       type: String,
       required: false,
-      default: badgeVariantOptions.muted,
+      default: badgeVariantOptions.neutral,
       validator: (variant) => Object.values(badgeVariantOptions).includes(variant),
     },
     titleIcon: {

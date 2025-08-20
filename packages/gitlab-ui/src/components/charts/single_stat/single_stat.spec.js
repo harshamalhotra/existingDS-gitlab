@@ -99,7 +99,7 @@ describe('GlSingleStat', () => {
           expect(el.exists()).toBe(true);
           expect(el.props('name')).toBe(metaIcon);
           expect(el.classes()).toContain(
-            variantSpecified ? variantCssColorMap[variant] : variantCssColorMap.muted,
+            variantSpecified ? variantCssColorMap[variant] : variantCssColorMap.neutral,
           );
         });
 
@@ -129,7 +129,7 @@ describe('GlSingleStat', () => {
           expect(badge.exists()).toBe(true);
           expect(badge.text()).toBe(metaText);
           expect(badge.props('icon')).toBe(iconSpecified ? metaIcon : null);
-          expect(badge.props('variant')).toBe(variantSpecified ? variant : 'muted');
+          expect(badge.props('variant')).toBe(variantSpecified ? variant : 'neutral');
         });
       });
     });
