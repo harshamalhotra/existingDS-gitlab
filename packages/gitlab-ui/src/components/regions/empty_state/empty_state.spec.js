@@ -1,5 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 import Button from '~/components/base/button/button.vue';
+import Illustration from '~/components/base/illustration/illustration.vue';
 import EmptyState from './empty_state.vue';
 
 describe('empty state component', () => {
@@ -9,6 +10,7 @@ describe('empty state component', () => {
     description: 'Empty state description.',
     svgPath: 'https://www.example.com/test.jpg',
     svgHeight: 144,
+    illustrationName: 'empty-issues-md',
     primaryButtonText: 'Primary Button',
     primaryButtonLink: 'http://example.com/primary',
     secondaryButtonText: 'Secondary Button',
@@ -21,8 +23,6 @@ describe('empty state component', () => {
         propsData: {
           title: props.title,
           description: props.description,
-          svgPath: props.svgPath,
-          svgHeight: props.svgHeight,
         },
       });
     });
@@ -36,15 +36,33 @@ describe('empty state component', () => {
       const description = component.find('p');
       expect(description.text()).toBe(props.description);
     });
+  });
 
-    it('should pass through the SVG path', () => {
+  describe('with illustration', () => {
+    it('should render img element', () => {
+      component = shallowMount(EmptyState, {
+        propsData: {
+          title: props.title,
+          svgPath: props.svgPath,
+          svgHeight: props.svgHeight,
+        },
+      });
+
       const image = component.find('img');
       expect(image.attributes().src).toBe(props.svgPath);
+      expect(image.attributes().height).toBe(props.svgHeight.toString());
     });
 
-    it('should pass through the SVG height integer', () => {
-      const image = component.find('img');
-      expect(image.attributes().height).toBe(props.svgHeight.toString());
+    it('should render GlIllustration component', () => {
+      component = shallowMount(EmptyState, {
+        propsData: {
+          title: props.title,
+          illustrationName: props.illustrationName,
+        },
+      });
+
+      const illustration = component.findComponent(Illustration);
+      expect(illustration.exists()).toBe(true);
     });
   });
 

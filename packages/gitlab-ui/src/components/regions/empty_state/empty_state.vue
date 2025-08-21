@@ -1,10 +1,12 @@
 <script>
 import GlButton from '../../base/button/button.vue';
+import GlIllustration from '../../base/illustration/illustration.vue';
 
 export default {
   name: 'GlEmptyState',
   components: {
     GlButton,
+    GlIllustration,
   },
   props: {
     /**
@@ -27,6 +29,14 @@ export default {
       validator(value) {
         return value > 0 && value <= 6;
       },
+    },
+    /**
+     * The illustration's name.
+     */
+    illustrationName: {
+      type: String,
+      required: false,
+      default: null,
     },
     /**
      * The illustration's URL.
@@ -115,7 +125,7 @@ export default {
       return this.shouldPreventImageReflow ? this.svgHeight : null;
     },
     shouldPreventImageReflow() {
-      return Boolean(this.svgHeight);
+      return Boolean(this.svgHeight) && !this.illustrationName;
     },
     shouldRenderPrimaryButton() {
       return Boolean(this.primaryButtonLink && this.primaryButtonText);
@@ -147,6 +157,7 @@ export default {
         class="gl-max-w-full"
         :height="height"
       />
+      <gl-illustration v-else-if="illustrationName" :name="illustrationName" />
     </div>
     <div
       class="gl-empty-state-content gl-mx-auto gl-my-0"
