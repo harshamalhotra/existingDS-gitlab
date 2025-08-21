@@ -237,7 +237,7 @@ export default {
         'button-ellipsis-horizontal': this.hasIconOnly && this.icon === 'ellipsis_h',
         selected: this.selected,
         'btn-block': this.displayBlock,
-        disabled: this.disabled,
+        disabled: this.isButtonDisabled,
       });
 
       if (this.label) {
@@ -282,11 +282,13 @@ export default {
         // Type only used for "real" buttons
         type: this.isButton ? this.type : null,
         // Disabled only set on "real" buttons
-        disabled: this.isButton ? this.isButtonDisabled : null,
+        disabled: this.isButton ? this.disabled : null,
         // We add a role of button when the tag is not a link or button or when link has `href` of `#`
         role: this.isNonStandardTag || this.isHashLink ? 'button' : this.$attrs?.role,
         // We set the `aria-disabled` state for non-standard tags
         ...(this.isNonStandardTag ? { 'aria-disabled': String(this.disabled) } : {}),
+        // We set the `aria-disabled` state for buttons while loading
+        ...(this.isButton && this.loading ? { 'aria-disabled': String(this.loading) } : {}),
         tabindex: this.tabindex,
       };
 
@@ -312,10 +314,12 @@ export default {
       return { ...this.$attrs, ...base };
     },
     computedListeners() {
+      const { click, ...otherListeners } = this.$listeners;
+
       return {
         click: this.onClick,
         keydown: this.onKeydown,
-        ...this.$listeners,
+        ...otherListeners,
       };
     },
     componentIs() {
@@ -341,10 +345,10 @@ export default {
   },
   methods: {
     onKeydown(event) {
-      // Skip if disabled
+      // Skip if button is disabled
       // Add SPACE keydown handler for link has `href` of `#`
       // Add ENTER handler for non-standard tags
-      if (!this.disabled && (this.isNonStandardTag || this.isHashLink)) {
+      if (!this.isButtonDisabled && (this.isNonStandardTag || this.isHashLink)) {
         const { code } = event;
 
         if (code === SPACE || (code === ENTER && this.isNonStandardTag)) {
@@ -355,9 +359,11 @@ export default {
       }
     },
     onClick(event) {
-      if (this.disabled && isEvent(event)) {
+      if (this.isButtonDisabled && isEvent(event)) {
         stopEvent(event);
+        return;
       }
+      this.$emit('click', event);
     },
   },
 };

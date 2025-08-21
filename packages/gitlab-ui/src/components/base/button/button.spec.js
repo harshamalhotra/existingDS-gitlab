@@ -363,6 +363,18 @@ describe('button component', () => {
     expect(wrapper.attributes('aria-disabled')).toBeUndefined();
   });
 
+  it('button has aria-disabled attribute when loading set', () => {
+    buildWrapper({
+      propsData: {
+        loading: true,
+      },
+    });
+
+    expect(wrapper.attributes('disabled')).toBeUndefined();
+    expect(wrapper.classes()).toContain('disabled');
+    expect(wrapper.attributes('aria-disabled')).toBe('true');
+  });
+
   it('link has aria-disabled attribute when disabled set', () => {
     buildWrapper({
       propsData: {
@@ -451,6 +463,22 @@ describe('button component', () => {
     buildWrapper({
       propsData: {
         disabled: true,
+      },
+      listeners: {
+        click: onClick,
+      },
+    });
+
+    await wrapper.trigger('click');
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('should not emit click event when clicked and loading', async () => {
+    const onClick = jest.fn();
+
+    buildWrapper({
+      propsData: {
+        loading: true,
       },
       listeners: {
         click: onClick,
