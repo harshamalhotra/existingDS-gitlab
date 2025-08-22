@@ -11,6 +11,7 @@ import {
   GlPagination,
   GlTooltipDirective,
 } from '../helpers/gitlab_ui';
+import BorderRadius from './border_radius.vue';
 import ColorChip from './color_chip.vue';
 import DesignToken from './design_token.vue';
 import DimensionScale from './dimension_scale.vue';
@@ -24,6 +25,7 @@ export default {
     GlSearchBoxByType,
     GlTable,
     GlPagination,
+    BorderRadius,
     ColorChip,
     DesignToken,
     DimensionScale,
@@ -275,7 +277,11 @@ export default {
     >
       <template #cell(sample)="{ item: { name, type, cssName } }">
         <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
-        <dimension-scale v-if="type === 'dimension'" direction="col" :value="cssName" />
+        <border-radius
+          v-if="type === 'dimension' && name.includes('border.radius')"
+          :value="cssName"
+        />
+        <dimension-scale v-else-if="type === 'dimension'" direction="col" :value="cssName" />
       </template>
       <template
         #cell(name)="{
