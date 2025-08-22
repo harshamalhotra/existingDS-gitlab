@@ -63,5 +63,11 @@ export default {
   parameters: {
     bootstrapComponent: 'b-tooltip',
     bootstrapDocs: BVueReadme + BVueReadmeAccessibility,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/tooltip) for usage and implementation details.',
+      },
+    },
   },
 };

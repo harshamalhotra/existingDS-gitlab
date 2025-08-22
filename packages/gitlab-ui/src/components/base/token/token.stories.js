@@ -41,6 +41,14 @@ export const WithAvatar = () => ({
 export default {
   title: 'base/token',
   component: GlToken,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/token) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: tokenVariants,

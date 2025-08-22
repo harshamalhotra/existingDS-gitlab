@@ -574,6 +574,14 @@ Object.assign(AllLegacyDropdownsVariants, {
 export default {
   title: 'base/button group',
   component: GlButtonGroup,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/button-group) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     category: {
       options: Object.keys(buttonCategoryOptions),

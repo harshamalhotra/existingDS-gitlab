@@ -46,5 +46,13 @@ Default.args = generateProps();
 export default {
   title: 'base/form/form-character-count',
   component: GlFormCharacterCount,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/character-count) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {},
 };

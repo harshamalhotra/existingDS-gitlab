@@ -45,6 +45,12 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['color-contrast'] }),
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/accordion) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     headerLevel: {

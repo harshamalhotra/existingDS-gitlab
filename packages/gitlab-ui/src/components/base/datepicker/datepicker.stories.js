@@ -110,6 +110,14 @@ Widths.args = generateProps();
 export default {
   title: 'base/datepicker',
   component: GlDatepicker,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/date-picker) for usage and implementation details.',
+      },
+    },
+  },
   decorators: [makeContainer({ height: '280px' })],
   argTypes: {
     ...disableControls([

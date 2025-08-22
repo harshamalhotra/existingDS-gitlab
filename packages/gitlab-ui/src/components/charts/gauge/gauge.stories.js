@@ -83,4 +83,12 @@ WithToolbox.args = generateProps({
 export default {
   title: 'charts/gauge-chart',
   component: GlGauge,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

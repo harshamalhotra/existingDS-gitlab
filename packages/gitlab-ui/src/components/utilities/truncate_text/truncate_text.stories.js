@@ -33,5 +33,13 @@ Default.args = generateProps();
 export default {
   title: 'utilities/truncate-text',
   component: GlTruncateText,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-truncate-text) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
 };

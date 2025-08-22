@@ -63,5 +63,11 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-checkbox',
     bootstrapDocs: BVueReadme,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/checkbox) for usage and implementation details.',
+      },
+    },
   },
 };

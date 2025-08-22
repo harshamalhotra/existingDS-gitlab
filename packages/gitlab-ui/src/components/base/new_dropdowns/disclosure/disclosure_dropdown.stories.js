@@ -374,6 +374,14 @@ ViewportPositioning.args = {
 export default {
   title: 'base/dropdown/disclosure-dropdown',
   component: GlDisclosureDropdown,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/dropdown-disclosure) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     category: {
       control: {

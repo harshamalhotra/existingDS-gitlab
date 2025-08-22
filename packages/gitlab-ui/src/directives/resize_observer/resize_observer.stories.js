@@ -60,6 +60,14 @@ const makeControl = () => ({
 export default {
   title: 'directives/resize-observer-directive',
   component: GlResizeObserverDirective,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/directives/resize-observer) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
   argTypes: {
     elementWidth: makeControl(),

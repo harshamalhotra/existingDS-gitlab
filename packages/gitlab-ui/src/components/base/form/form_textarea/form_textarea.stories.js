@@ -78,5 +78,11 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-textarea',
     bootstrapDocs: BVueReadme,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/textarea) for usage and implementation details.',
+      },
+    },
   },
 };

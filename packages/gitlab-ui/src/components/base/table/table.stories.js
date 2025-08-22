@@ -195,6 +195,12 @@ export default {
   parameters: {
     bootstrapComponent: 'b-table',
     bootstrapDocs: BVueReadme,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/table) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     stacked: {

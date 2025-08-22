@@ -137,5 +137,11 @@ export default {
   parameters: {
     bootstrapComponent: 'b-modal',
     bootstrapDocs: BVueReadme,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/modal) for usage and implementation details.',
+      },
+    },
   },
 };

@@ -101,6 +101,14 @@ IncreasedSpacing.args = generateProps();
 export default {
   title: 'base/broadcast message',
   component: GlBroadcastMessage,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/broadcast-message) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     iconName: {
       options: iconSpriteInfo.icons,

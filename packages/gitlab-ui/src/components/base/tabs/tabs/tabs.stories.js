@@ -224,6 +224,12 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme + BVueReadmeSizeProps,
     bootstrapComponent: 'b-tabs',
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/tabs) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     contentClass: { control: { disable: true } },

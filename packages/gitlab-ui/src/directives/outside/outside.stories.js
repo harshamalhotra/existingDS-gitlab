@@ -24,4 +24,12 @@ Default.tags = ['skip-visual-test'];
 export default {
   title: 'directives/outside-directive',
   component: OutsideDirective,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/directives/outside) for usage and implementation details.',
+      },
+    },
+  },
 };

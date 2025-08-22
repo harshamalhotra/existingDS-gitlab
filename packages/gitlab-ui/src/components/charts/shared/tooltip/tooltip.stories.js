@@ -82,5 +82,11 @@ export default {
   parameters: {
     bootstrapComponent: 'b-popover',
     controls: { disable: true },
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
   },
 };

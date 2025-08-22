@@ -61,4 +61,12 @@ WithZoomAndScroll.args = generateProps({
 export default {
   title: 'charts/discrete-scatter-chart',
   component: GlDiscreteScatterChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

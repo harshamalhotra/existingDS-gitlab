@@ -59,6 +59,14 @@ PredefinedOptions.args = generateProps({
 export default {
   title: 'base/form/form-input-group',
   component: GlFormInputGroup,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/form-input-group) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls(['value']),
     prepend: {

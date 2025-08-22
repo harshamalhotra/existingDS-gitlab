@@ -40,6 +40,14 @@ Variants.parameters = { controls: { disable: true } };
 export default {
   title: 'base/progress-bar',
   component: GlProgressBar,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/progress-bar) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: progressBarVariantOptions,

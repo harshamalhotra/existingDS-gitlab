@@ -36,6 +36,14 @@ Default.args = generateProps();
 export default {
   title: 'base/loading icon',
   component: GlLoadingIcon,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/spinner) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     color: {
       options: viewModeOptions,

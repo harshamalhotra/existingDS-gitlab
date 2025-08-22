@@ -101,6 +101,12 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'b-popover',
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/popover) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     placement: {

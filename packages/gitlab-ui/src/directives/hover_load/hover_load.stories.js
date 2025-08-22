@@ -36,5 +36,13 @@ Default.args = generateProps();
 export default {
   title: 'directives/hover-load-directive',
   component: HoverLoadDirective,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/directives/hover-load) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
 };

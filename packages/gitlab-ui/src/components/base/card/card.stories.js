@@ -40,6 +40,14 @@ Default.args = generateProps();
 export default {
   title: 'base/card',
   component: GlCard,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/card) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     headerClass: { control: 'text' },
     bodyClass: { control: 'text' },

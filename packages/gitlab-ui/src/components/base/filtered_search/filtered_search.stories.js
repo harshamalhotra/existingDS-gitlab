@@ -658,6 +658,14 @@ export default {
   // Make room for suggestion lists
   decorators: [makeContainer({ height: '250px' })],
   component: GlFilteredSearch,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/filter) for usage and implementation details.',
+      },
+    },
+  },
   subcomponents: {
     GlFilteredSearchSuggestion,
     GlFilteredSearchSuggestionList,

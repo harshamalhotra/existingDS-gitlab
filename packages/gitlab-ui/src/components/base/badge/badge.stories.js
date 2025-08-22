@@ -204,6 +204,14 @@ export const Truncated = (args, { argTypes }) => ({
 export default {
   title: 'base/badge',
   component: GlBadge,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/badge) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: Object.keys(badgeVariantOptions),

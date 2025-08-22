@@ -92,5 +92,11 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'toast',
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/toast) for usage and implementation details.',
+      },
+    },
   },
 };

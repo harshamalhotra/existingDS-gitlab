@@ -118,6 +118,14 @@ export default {
   title: 'base/animated-icon',
   tags: ['skip-visual-test'],
   component: GlBaseAnimatedIcon,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/product-foundations/iconography-animated) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     isOn: {
       control: { disable: true },

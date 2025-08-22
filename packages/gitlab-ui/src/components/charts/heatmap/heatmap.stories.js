@@ -65,6 +65,14 @@ WithToolbox.args = generateProps({ option: { toolbox: { show: true } } });
 export default {
   title: 'charts/heatmap',
   component: GlHeatmap,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls([
       'dataSeries',

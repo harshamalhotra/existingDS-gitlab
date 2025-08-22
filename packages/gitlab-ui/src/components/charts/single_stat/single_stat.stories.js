@@ -71,6 +71,14 @@ WithDelimiters.args = generateProps({ value: '10000', useDelimiters: true });
 export default {
   title: 'charts/single-stat',
   component: GlSingleStat,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/single-stat) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: Object.values(badgeVariantOptions),

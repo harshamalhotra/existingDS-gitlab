@@ -35,6 +35,14 @@ Default.args = generateProps();
 export default {
   title: 'base/icon',
   component: GlIcon,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/product-foundations/iconography) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
   argTypes: {
     ...disableControls(['useDeprecatedSizes']),

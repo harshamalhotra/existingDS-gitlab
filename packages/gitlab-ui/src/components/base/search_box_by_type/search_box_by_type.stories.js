@@ -48,6 +48,14 @@ Borderless.args = generateProps({
 export default {
   title: 'base/search-box-by-type',
   component: GlSearchBoxByType,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/search) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls(['value']),
   },

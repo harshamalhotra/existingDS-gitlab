@@ -65,6 +65,14 @@ WithNoImageAvatar.args = { ...generateDefaultProps({}), ...generateLabelsProps({
 export default {
   title: 'base/avatar/avatar-link',
   component: GlAvatarLink,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/avatar) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     shape: {
       options: avatarShapeOptions,
