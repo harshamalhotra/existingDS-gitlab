@@ -514,7 +514,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "hover": {
             "$value": "{badge.muted.background.color.default}",
@@ -525,7 +526,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "focus": {
             "$value": "{badge.muted.background.color.hover}",
@@ -536,7 +538,8 @@
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -637,7 +640,8 @@
               "com.figma.scope": [
                 "TEXT_FILL"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -693,7 +697,8 @@
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
-            }
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {

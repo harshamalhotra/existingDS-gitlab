@@ -11,33 +11,27 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
-            }
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
+            },
+            "$deprecated": true
           },
           "hover": {
             "$value": "{badge.muted.background.color.default}",
             "$type": "color",
             "$description": "Used for the background of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
-            }
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
+            },
+            "$deprecated": true
           },
           "focus": {
             "$value": "{badge.muted.background.color.hover}",
             "$type": "color",
             "$description": "Used for the background of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
-            }
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -47,10 +41,7 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -62,9 +53,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -75,9 +64,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -85,9 +72,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -95,9 +80,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -112,9 +95,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -125,9 +106,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -135,10 +114,9 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
-            }
+              "com.figma.scope": ["TEXT_FILL"]
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -148,9 +126,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -165,10 +141,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -179,10 +152,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -190,11 +160,9 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
-            }
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
+            },
+            "$deprecated": true
           },
           "active": {
             "$value": {
@@ -204,10 +172,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -224,10 +189,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -235,10 +197,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -246,10 +205,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -260,10 +216,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -275,9 +228,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -288,9 +239,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -298,9 +247,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -308,9 +255,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -325,9 +270,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -338,9 +281,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -348,9 +289,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -361,9 +300,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -378,10 +315,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -392,10 +326,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -403,10 +334,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -417,10 +345,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -437,10 +362,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -448,10 +370,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -459,10 +378,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -473,10 +389,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -488,9 +401,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -501,9 +412,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -511,9 +420,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -521,9 +428,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -538,9 +443,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -551,9 +454,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -561,9 +462,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -574,9 +473,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -591,10 +488,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -605,10 +499,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -616,10 +507,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -630,10 +518,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -650,10 +535,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -661,10 +543,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -672,10 +551,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -686,10 +562,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -701,9 +574,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -714,9 +585,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -724,9 +593,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -734,9 +601,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -751,9 +616,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -764,9 +627,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -774,9 +635,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -787,9 +646,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -804,10 +661,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -818,10 +672,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -829,10 +680,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -843,10 +691,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -863,10 +708,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -874,10 +716,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -885,10 +724,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -899,10 +735,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -914,9 +747,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -927,9 +758,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -937,9 +766,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -947,9 +774,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -964,9 +789,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -977,9 +800,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -987,9 +808,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -1000,9 +819,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -1017,10 +834,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -1031,10 +845,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -1042,10 +853,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -1056,10 +864,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -1076,10 +881,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -1087,10 +889,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -1098,10 +897,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -1112,10 +908,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -1127,9 +920,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -1140,9 +931,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -1150,9 +939,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -1160,9 +947,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -1177,9 +962,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -1190,9 +973,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -1200,9 +981,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -1213,9 +992,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -1230,10 +1007,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -1244,10 +1018,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -1255,10 +1026,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -1269,10 +1037,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
@@ -1289,10 +1054,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "hover": {
@@ -1300,10 +1062,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "focus": {
@@ -1311,10 +1070,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           },
           "active": {
@@ -1325,10 +1081,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "FRAME_FILL",
-                "SHAPE_FILL"
-              ]
+              "com.figma.scope": ["FRAME_FILL", "SHAPE_FILL"]
             }
           }
         }
@@ -1340,9 +1093,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "hover": {
@@ -1353,9 +1104,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "focus": {
@@ -1363,9 +1112,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           },
           "active": {
@@ -1373,9 +1120,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "STROKE_COLOR"
-              ]
+              "com.figma.scope": ["STROKE_COLOR"]
             }
           }
         }
@@ -1390,9 +1135,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "hover": {
@@ -1403,9 +1146,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "focus": {
@@ -1413,9 +1154,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           },
           "active": {
@@ -1426,9 +1165,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["TEXT_FILL"]
             }
           }
         }
@@ -1443,10 +1180,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "hover": {
@@ -1457,10 +1191,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "focus": {
@@ -1468,10 +1199,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           },
           "active": {
@@ -1482,10 +1210,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
-                "SHAPE_FILL",
-                "TEXT_FILL"
-              ]
+              "com.figma.scope": ["SHAPE_FILL", "TEXT_FILL"]
             }
           }
         }
