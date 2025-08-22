@@ -386,6 +386,23 @@ const spacingScale = {
   '2-5': 'var(--gl-spacing-scale-2-5, 0.375rem)',
   '11-5': 'var(--gl-spacing-scale-11-5, 4.5rem)',
 };
+const borderRadius = {
+  6: 'var(--gl-border-radius-6, var(--gl-spacing-scale-6, 1.5rem))',
+  7: 'var(--gl-border-radius-7, var(--gl-spacing-scale-7, 2rem))',
+  none: 'var(--gl-border-radius-none, var(--gl-spacing-scale-0, 0))',
+  base: 'var(--gl-border-radius-base, var(--gl-spacing-scale-2, 0.25rem))',
+  xs: 'var(--gl-border-radius-xs, var(--gl-spacing-scale-px, 1px))',
+  sm: 'var(--gl-border-radius-sm, var(--gl-spacing-scale-1, 0.125rem))',
+  md: 'var(--gl-border-radius-md, var(--gl-spacing-scale-2, 0.25rem))',
+  lg: 'var(--gl-border-radius-lg, var(--gl-spacing-scale-3, 0.5rem))',
+  xl: 'var(--gl-border-radius-xl, var(--gl-spacing-scale-4, 0.75rem))',
+  '2xl': 'var(--gl-border-radius-2xl, var(--gl-spacing-scale-5, 1rem))',
+  '3xl': 'var(--gl-border-radius-3xl, var(--gl-spacing-scale-6, 1.5rem))',
+  small: 'var(--gl-border-radius-small, var(--gl-spacing-scale-1, 0.125rem))',
+  large: 'var(--gl-border-radius-large, var(--gl-spacing-scale-3, 0.5rem))',
+  pill: 'var(--gl-border-radius-pill, var(--gl-spacing-scale-4, 0.75rem))',
+  full: 'var(--gl-border-radius-full, 9999px)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -460,10 +477,6 @@ const textColor = {
   },
 };
 
-const spacing = {
-  ...spacingScale,
-};
-
 module.exports = {
   colors,
   backgroundColor,
@@ -471,5 +484,6 @@ module.exports = {
   outlineColor,
   textColor,
   fill,
-  spacing,
+  spacing: spacingScale,
+  borderRadius,
 };
