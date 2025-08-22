@@ -14,6 +14,12 @@ For each of these graphics, there are specific stylistic approaches we take to a
 - The radius of curved corners should be applied consistently throughout an asset.
 - Visual elements should work together to convey speed and movement. Gradients and colors can achieve this effect, and graphics should move from left to right to capture a sense of forward motion.
 
+## Foundational shapes
+
+The foundational shapes of our brand are derived from the geometry of the Tanuki, our logomark. These shapes are often incorporated into icons and illustrations, used as accents, and extended into patterns. When applying rounded edges to these shapes, the corner radius should be about 10-20% of the length of one of the sides and consistently applied to each corner.
+
+<figure-img alt="A visual of the tanuki and its geometry, followed by the foundational shapes and the designs that can be built from them" label="The foundational shapes that comprise the geometry of the tanuki" src="/img/brand/core-foundational-shapes.png"></figure-img>
+
 ## DevOps loop
 
 The brand and product are built on DevOps, which is why this symbol has taken a key role, even in our logo. As such, the loop is used often, especially to convey general concepts in marketing materials. The tanuki and devops loop can also appear together to further drive brand awareness. The top of the loop should overlap the bottom to show depth and movement.
