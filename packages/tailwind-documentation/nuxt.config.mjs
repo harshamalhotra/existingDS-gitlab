@@ -5,7 +5,20 @@ import resolveTailwindUtils from "./resolve-tailwind-utils.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
-const basePath = process.env.CI_PAGES_URL ? new URL(process.env.CI_PAGES_URL).pathname : '/';
+const NODE_ENV_TEST ='test'
+const NODE_ENV_PRODUCTION = 'production'
+
+function baseURL() {
+  if (process.env.NODE_ENV === NODE_ENV_TEST) {
+    return '/'
+  }
+
+  if (process.env.CI_PAGES_URL) {
+    return new URL(process.env.CI_PAGES_URL).pathname
+  }
+
+  return '/'
+}
 
 function resolveTailwindUtilsVite() {
   const virtualModuleId = "virtual:tailwind-utils";
@@ -33,8 +46,9 @@ function resolveTailwindUtilsVite() {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  telemetry: false,
   app: {
-    baseURL: basePath,
+    baseURL: baseURL(),
     head: {
       bodyAttrs: {
         class: "gl-h-full",
@@ -46,14 +60,14 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: path.join(basePath, 'favicon.svg'),
+          href: path.join(baseURL(), 'favicon.svg'),
         },
       ],
     },
   },
   runtimeConfig: {
     public: {
-      isProduction: ["production", "test"].includes(process.env.NODE_ENV),
+      isProduction: [NODE_ENV_PRODUCTION, NODE_ENV_TEST].includes(process.env.NODE_ENV),
     },
   },
   devtools: { enabled: true },

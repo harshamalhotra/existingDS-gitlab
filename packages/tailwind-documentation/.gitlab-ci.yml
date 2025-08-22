@@ -18,7 +18,6 @@ tw:eslint:
   extends:
     - .tw:common
   script:
-    - yarn build
     - yarn lint
 
 tw:vitest:
@@ -28,9 +27,6 @@ tw:vitest:
     - .tw:common
   script:
     - yarn test
-  # This job can fail for unclear reasons. It's not important enough to block pipelines, so allow it to fail.
-  # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4964#note_2694894215
-  allow_failure: true
 
 .tw:pages:
   extends:
