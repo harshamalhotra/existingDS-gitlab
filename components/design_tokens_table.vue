@@ -13,6 +13,7 @@ import {
 } from '../helpers/gitlab_ui';
 import ColorChip from './color_chip.vue';
 import DesignToken from './design_token.vue';
+import DimensionScale from './dimension_scale.vue';
 
 export default {
   name: 'DesignTokensTable',
@@ -25,6 +26,7 @@ export default {
     GlPagination,
     ColorChip,
     DesignToken,
+    DimensionScale,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
@@ -273,6 +275,7 @@ export default {
     >
       <template #cell(sample)="{ item: { name, type, cssName } }">
         <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
+        <dimension-scale v-if="type === 'dimension'" direction="col" :value="cssName" />
       </template>
       <template
         #cell(name)="{
