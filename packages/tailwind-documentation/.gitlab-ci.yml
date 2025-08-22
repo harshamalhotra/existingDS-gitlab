@@ -32,6 +32,7 @@ tw:vitest:
   extends:
     - .tw:common
   stage: deploy
+  needs: []
   variables:
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
     # CURRENT_PAGES_URL is set in the canonical project
@@ -56,7 +57,6 @@ tw:pages:
 tw:pages-review:
   extends:
     - .tw:pages
-  needs: []
   pages:
     path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
     expire_in: "2 weeks"
