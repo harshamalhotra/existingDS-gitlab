@@ -4,7 +4,7 @@ name: Logomark
 
 ## Tanuki
 
-The logomark personifies GitLab’s values, culture, and stewardship of open source, taking inspiration from the tanuki – a raccoon dog native to Japan.
+The logomark is thoughtfully integrated as a symbolic element of our brand that represents GitLab’s values, culture, and stewardship of open source, taking inspiration from the tanuki – a raccoon dog native to Japan.
 
 The tanuki is known for being fast, efficient, and collaborative. It is thought to symbolize trustworthiness, agility, and preparedness. Known for its transformational powers and collaborative nature, the tanuki works with others to achieve a common goal – a behavior that is also embodied by GitLab’s mission that everyone can contribute.
 
@@ -14,9 +14,7 @@ The tanuki logomark can be used when the core logo has already been presented to
 
 ## Construction
 
-DevOps is at our core, and the logomark represents adaptability, iteration, development, and – like the DevOps loop – momentum.
-
-The construction of the GitLab tanuki was based on an infinity loop, representing the limitless possibilities of The DevSecOps Platform.
+Our tanuki centers DevSecOps at the core of its construction, making it a tactical brand device representing the limitless possibilities of our platform. The logomark represents adaptability, iteration, development, and – like the DevOps loop – momentum.
 
 <figure-img label="Logomark construction" src="/img/brand/tanuki-construction.svg" width="480"></figure-img>
 
@@ -26,7 +24,7 @@ Like the logo, the clear space for the tanuki logomark is measured by the x-heig
 
 Ensuring proper clear space between the logomark and surrounding elements preserves the visual integrity of our brand; this area should be kept free of any visual elements, including text, graphics, borders, patterns, and other logos.
 
-<figure-img label="Clear space around the logomark equal to the lowercase 'a' from the wordmark" src="/img/brand/tanuki-clearspace.svg" width="480"></figure-img>
+<figure-img label="Clear space around the logomark equal to the lowercase 'a' from the wordmark" src="/img/brand/logomark-clearspace.svg" width="480"></figure-img>
 
 ## Variations
 
@@ -48,5 +46,6 @@ The logomark should be used in full color by default, but there are times when a
 1. Do not add any other graphic elements to the mark
 1. Do not distort the mark in any way
 1. Do not use the mark as a framing device for imagery
+1. Do not use or create mascots inspired by the tanuki. By preserving the mark in its intended form, we maintain brand authenticity, a focus on results for customers, and build deeper trust with our community who use GitLab daily to create software that powers our world.
 
 <figure-img label="Logomark incorrect usage" src="/img/brand/tanuki-incorrect-usage.svg"></figure-img>
