@@ -150,5 +150,13 @@ export const InfiniteScrolling = () => ({
 export default {
   title: 'utilities/intersection-observer',
   component: GlIntersectionObserver,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-intersection-observer) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
 };

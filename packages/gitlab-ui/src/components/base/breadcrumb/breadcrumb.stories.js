@@ -71,6 +71,14 @@ const CollapsedTemplate = (args, { argTypes }) => ({
 export default {
   title: 'base/breadcrumb',
   component: GlBreadcrumb,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/breadcrumb) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     size: {
       options: Object.keys(breadCrumbSizeOptions),

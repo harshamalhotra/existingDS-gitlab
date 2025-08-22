@@ -459,6 +459,14 @@ GroupWithoutLabel.args = generateProps({
 export default {
   title: 'base/dropdown/collapsible-listbox',
   component: GlCollapsibleListbox,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/dropdown-combobox) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     category: {
       control: 'select',

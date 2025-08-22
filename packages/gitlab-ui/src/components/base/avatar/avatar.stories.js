@@ -149,6 +149,14 @@ export const AllIdenticons = () => ({
 export default {
   title: 'base/avatar',
   component: GlAvatar,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/avatar) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     size: {
       options: avatarSizeOptions,

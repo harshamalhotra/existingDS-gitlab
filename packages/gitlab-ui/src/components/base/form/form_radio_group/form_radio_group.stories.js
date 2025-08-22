@@ -50,6 +50,12 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'b-form-radio-group',
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/radio-button) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     options: {

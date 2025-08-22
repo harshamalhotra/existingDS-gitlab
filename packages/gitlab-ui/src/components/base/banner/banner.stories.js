@@ -83,6 +83,14 @@ WithActions.args = generateProps({
 export default {
   title: 'base/banner',
   component: GlBanner,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/banner) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: bannerVariants,

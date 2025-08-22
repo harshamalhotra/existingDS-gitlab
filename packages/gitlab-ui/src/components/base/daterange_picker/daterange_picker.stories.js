@@ -122,6 +122,14 @@ WithDatesSelectedAndTooltip.args = generateProps({
 export default {
   title: 'base/daterange-picker',
   component: GlDaterangePicker,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/date-picker) for usage and implementation details.',
+      },
+    },
+  },
   decorators: [makeContainer({ height: '300px' })],
   argTypes: {
     ...disableControls([

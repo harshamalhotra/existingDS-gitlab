@@ -23,6 +23,14 @@ Default.args = generateProps();
 export default {
   title: 'base/illustration',
   component: GlIllustration,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/product-foundations/illustration) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
   argTypes: {
     name: {

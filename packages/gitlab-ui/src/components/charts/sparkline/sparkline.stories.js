@@ -77,4 +77,12 @@ Object.assign(AutoHeight, {
 export default {
   title: 'charts/sparkline-chart',
   component: GlSparklineChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

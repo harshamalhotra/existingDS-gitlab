@@ -95,4 +95,12 @@ export const Default = (args) => ({
 export default {
   title: 'base/form/form',
   component: GlForm,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/forms) for usage and implementation details.',
+      },
+    },
+  },
 };

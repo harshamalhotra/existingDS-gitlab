@@ -114,6 +114,12 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-select',
     bootstrapDocs: BVueReadme,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/select) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     width: {

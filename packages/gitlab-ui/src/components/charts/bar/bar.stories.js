@@ -61,4 +61,12 @@ Object.assign(AutoHeight, {
 export default {
   title: 'charts/bar-chart',
   component: GlBarChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

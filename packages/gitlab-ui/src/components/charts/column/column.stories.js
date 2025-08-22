@@ -103,4 +103,12 @@ WithCustomTooltip.tags = ['skip-visual-test'];
 export default {
   title: 'charts/column-chart',
   component: GlColumnChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

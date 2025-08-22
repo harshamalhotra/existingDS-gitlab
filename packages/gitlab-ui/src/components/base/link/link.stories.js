@@ -95,6 +95,14 @@ MentionLinkCurrentUser.args = generateProps({
 export default {
   title: 'base/link',
   component: GlLink,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/link) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: Object.keys(linkVariantOptions),

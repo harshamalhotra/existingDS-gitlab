@@ -66,6 +66,14 @@ WithLinksAndTooltips.args = generateProps(
 export default {
   title: 'base/avatar/avatars-inline',
   component: GlAvatarsInline,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/avatar) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     avatarSize: {
       options: avatarsInlineSizeOptions,

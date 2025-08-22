@@ -488,6 +488,14 @@ BadgeWithSROnlyText.parameters = { controls: { disable: true } };
 export default {
   title: 'base/button',
   component: GlButton,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/button) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     category: {
       options: Object.keys(buttonCategoryOptions),

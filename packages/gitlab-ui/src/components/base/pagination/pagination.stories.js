@@ -94,6 +94,14 @@ AlignRight.args = generateProps({ align: alignOptions.right });
 export default {
   title: 'base/pagination',
   component: GlPagination,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/pagination) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     align: {
       options: Object.values(alignOptions),

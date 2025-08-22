@@ -150,6 +150,14 @@ IncreasedSpacing.args = generateProps();
 export default {
   title: 'base/alert',
   component: GlAlert,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/alert) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     variant: {
       options: alertVariantOptions,

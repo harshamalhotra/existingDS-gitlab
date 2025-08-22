@@ -56,6 +56,14 @@ WithoutTarget.args = generateProps({ target: '' });
 export default {
   title: 'base/label',
   component: GlLabel,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/label) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     backgroundColor: {
       control: 'color',

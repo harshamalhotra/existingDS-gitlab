@@ -75,6 +75,12 @@ export default {
     viewport: {
       defaultViewport: 'breakpointSmall',
     },
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-truncate) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     text: {

@@ -166,6 +166,14 @@ WithLinks.args = generateProps({
 export default {
   title: 'base/avatar/labeled',
   component: GlAvatarLabeled,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/avatar) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     size: {
       options: avatarSizeOptions,

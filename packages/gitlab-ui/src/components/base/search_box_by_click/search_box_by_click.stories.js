@@ -83,6 +83,14 @@ History.args = generateProps({
 export default {
   title: 'base/search-box-by-click',
   component: GlSearchBoxByClick,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/search) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls(['tooltipContainer']),
     historyItems: {

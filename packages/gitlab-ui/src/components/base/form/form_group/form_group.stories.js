@@ -202,6 +202,12 @@ export default {
   parameters: {
     bootstrapComponent: 'b-form-group',
     bootstrapDocs: BVueReadme + BVueReadmeLayout + BVueReadmeSettings,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/form-group) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     ...disableControls(['labelClass']),

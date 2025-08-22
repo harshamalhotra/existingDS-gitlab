@@ -109,4 +109,12 @@ Object.assign(ReducedMotion, {
 export default {
   title: 'base/skeleton-loader',
   component: GlSkeletonLoader,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/skeleton-loader) for usage and implementation details.',
+      },
+    },
+  },
 };

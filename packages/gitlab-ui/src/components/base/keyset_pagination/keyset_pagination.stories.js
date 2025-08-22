@@ -56,5 +56,11 @@ export default {
   component: GlKeysetPagination,
   parameters: {
     bootstrapComponent: false,
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/pagination) for usage and implementation details.',
+      },
+    },
   },
 };

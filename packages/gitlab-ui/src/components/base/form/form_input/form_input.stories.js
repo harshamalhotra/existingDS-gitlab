@@ -116,6 +116,14 @@ ResponsiveWidths.args = {};
 export default {
   title: 'base/form/form-input',
   component: GlFormInput,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/text-input) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     width: {
       options: formInputWidths,

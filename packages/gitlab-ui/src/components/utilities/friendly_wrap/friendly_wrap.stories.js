@@ -46,4 +46,12 @@ MultipleSymbols.args = generateProps({
 export default {
   title: 'utilities/friendly-wrap',
   component: GlFriendlyWrap,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-friendly-wrap) for usage and implementation details.',
+      },
+    },
+  },
 };

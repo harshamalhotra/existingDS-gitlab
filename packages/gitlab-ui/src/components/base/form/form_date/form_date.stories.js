@@ -98,4 +98,12 @@ InvalidDate.args = generateProps({
 export default {
   title: 'base/form/form-date',
   component: GlFormDate,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/date-picker) for usage and implementation details.',
+      },
+    },
+  },
 };

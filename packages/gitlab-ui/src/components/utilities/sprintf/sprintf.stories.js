@@ -93,4 +93,12 @@ Object.assign(BasicButtonPlaceholder, {
 export default {
   title: 'utilities/sprintf',
   component: GlSprintf,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-sprintf) for usage and implementation details.',
+      },
+    },
+  },
 };

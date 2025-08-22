@@ -234,6 +234,14 @@ WithClickToPinTooltip.tags = ['skip-visual-test'];
 export default {
   title: 'charts/line-chart',
   component: GlLineChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls([
       'formatTooltipText',

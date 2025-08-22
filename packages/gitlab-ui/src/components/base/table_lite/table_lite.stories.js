@@ -76,6 +76,12 @@ export default {
   parameters: {
     bootstrapDocs: BVueReadme,
     bootstrapComponent: 'b-table-lite',
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/table) for usage and implementation details.',
+      },
+    },
   },
   argTypes: {
     stickyHeader: {

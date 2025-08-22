@@ -62,6 +62,14 @@ AllOptions.parameters = { controls: { disable: true } };
 export default {
   title: 'base/path',
   component: GlPath,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/path) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     backgroundColor: {
       control: 'color',

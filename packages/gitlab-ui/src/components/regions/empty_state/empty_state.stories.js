@@ -149,4 +149,12 @@ SlottedDescription.args = generateProps({
 export default {
   title: 'regions/empty-state',
   component: GlEmptyState,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/empty-states) for usage and implementation details.',
+      },
+    },
+  },
 };

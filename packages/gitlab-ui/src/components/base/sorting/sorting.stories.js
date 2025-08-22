@@ -75,6 +75,14 @@ Default.play = async ({ canvasElement }) => {
 export default {
   title: 'base/sorting',
   component: GlSorting,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/sorting) for usage and implementation details.',
+      },
+    },
+  },
   decorators: [
     makeContainer({
       height: '150px',

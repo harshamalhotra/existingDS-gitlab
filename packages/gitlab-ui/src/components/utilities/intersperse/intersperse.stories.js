@@ -32,6 +32,14 @@ Default.args = generateProps();
 export default {
   title: 'utilities/intersperse',
   component: GlIntersperse,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-intersperse) for usage and implementation details.',
+      },
+    },
+  },
 };
 
 export const CustomSeparator = Template.bind({});

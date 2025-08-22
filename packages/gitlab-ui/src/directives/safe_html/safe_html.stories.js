@@ -48,5 +48,13 @@ Default.args = generateProps();
 export default {
   title: 'directives/safe-html-directive',
   component: SafeHtml,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/directives/safe-html) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
 };

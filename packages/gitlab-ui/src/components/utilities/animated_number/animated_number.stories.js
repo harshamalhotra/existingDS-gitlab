@@ -51,6 +51,14 @@ Default.args = generateProps();
 export default {
   title: 'utilities/animated-number',
   component: GlAnimatedNumber,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/utility-animated-number) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {},
   tags: ['skip-visual-test'],
 };

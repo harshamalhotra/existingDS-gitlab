@@ -79,6 +79,14 @@ LabelPositionLeft.args = generateProps({
 export default {
   title: 'base/toggle',
   component: GlToggle,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/toggle) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     ...disableControls(['name']),
     labelPosition: {

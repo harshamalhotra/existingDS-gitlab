@@ -27,5 +27,13 @@ Default.args = generateProps();
 export default {
   title: 'directives/safe-link-directive',
   component: SafeLink,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/directives/safe-link) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
 };

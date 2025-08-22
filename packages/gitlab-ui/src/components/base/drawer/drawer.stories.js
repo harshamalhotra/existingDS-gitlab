@@ -254,6 +254,14 @@ StickyHeaderFooter.args = generateProps({
 export default {
   title: 'base/drawer',
   component: GlDrawer,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/drawer) for usage and implementation details.',
+      },
+    },
+  },
   argTypes: {
     open: {
       control: false,

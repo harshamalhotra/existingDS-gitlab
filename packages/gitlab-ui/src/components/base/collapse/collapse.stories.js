@@ -36,4 +36,12 @@ Default.args = generateProps();
 export default {
   title: 'base/collapse',
   component: GlCollapse,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/collapse) for usage and implementation details.',
+      },
+    },
+  },
 };

@@ -156,4 +156,12 @@ WithCustomTooltipValue.tags = ['skip-visual-test'];
 export default {
   title: 'charts/stacked-column-chart',
   component: GlStackedColumnChart,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/data-visualization/charts) for usage and implementation details.',
+      },
+    },
+  },
 };

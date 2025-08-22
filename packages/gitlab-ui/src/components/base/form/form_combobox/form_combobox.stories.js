@@ -104,4 +104,12 @@ WithActions.play = async ({ canvasElement }) => {
 export default {
   title: 'base/form/form-combobox',
   component: GlFormCombobox,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/form-combobox) for usage and implementation details.',
+      },
+    },
+  },
 };

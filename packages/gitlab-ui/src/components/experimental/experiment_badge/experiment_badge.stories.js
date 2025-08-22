@@ -43,6 +43,14 @@ CustomPlacement.args = {
 export default {
   title: 'experimental/experiment_badge',
   component: GlExperimentBadge,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/feature-management) for usage and implementation details.',
+      },
+    },
+  },
   tags: ['skip-visual-test'],
   argTypes: {},
 };
