@@ -423,7 +423,7 @@ export default {
             -->
           <slot name="previous" v-bind="{ page: value - 1, disabled: prevPageIsDisabled }">
             <gl-icon name="chevron-left" />
-            <span class="gl-hidden sm:gl-block">{{ prevText }}</span>
+            <span class="gl-hidden @sm:gl-block">{{ prevText }}</span>
           </slot>
         </component>
       </li>
@@ -488,7 +488,7 @@ export default {
             @binding {number} number
             -->
           <slot name="next" v-bind="{ page: value + 1, disabled: nextPageIsDisabled }">
-            <span class="gl-hidden sm:gl-block">{{ nextText }}</span>
+            <span class="gl-hidden @sm:gl-block">{{ nextText }}</span>
             <gl-icon name="chevron-right" />
           </slot>
         </component>

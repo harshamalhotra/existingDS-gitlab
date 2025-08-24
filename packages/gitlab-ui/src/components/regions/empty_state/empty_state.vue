@@ -138,7 +138,7 @@ export default {
       'gl-flex-row': compact,
     }"
   >
-    <div :class="{ 'gl-hidden gl-px-4 sm:gl-block': compact, 'gl-max-w-full': !compact }">
+    <div :class="{ 'gl-hidden gl-px-4 @sm:gl-block': compact, 'gl-max-w-full': !compact }">
       <img
         v-if="svgPath"
         :src="svgPath"

@@ -1,5 +1,6 @@
 const { range, round } = require('lodash');
 const plugin = require('tailwindcss/plugin');
+const { tailwindCQsMQsPlugin } = require('./tailwind_cqs_mqs_plugin');
 const {
   colors,
   backgroundColor,
@@ -8,6 +9,8 @@ const {
   fill,
   textColor,
 } = require('./src/tokens/build/tailwind/tokens.cjs');
+
+const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
 
 const gridSize = 0.5; // rem
 const spacing = {
@@ -489,7 +492,7 @@ module.exports = {
     ringColor: false,
     ringOffsetWidth: false,
   },
-  plugins: [plugin(addCustomDefinitions)],
+  plugins: [plugin(addCustomDefinitions), tailwindCQsMQsPlugin(buildCQs)],
   theme: {
     animation: {
       spin: 'spin 0.6s infinite linear',

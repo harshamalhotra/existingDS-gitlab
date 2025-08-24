@@ -113,7 +113,7 @@
   @apply gl-flex-col;
   @apply gl-grow-0;
   @apply gl-mt-3;
-  @apply md:gl-hidden;
+  @apply @md:gl-hidden;
 }
 
 .gl-actions-tabs-end {
@@ -123,15 +123,15 @@
   @apply gl-items-center;
   @apply gl-flex-row;
   @apply gl-mt-0;
-  @apply md:gl-flex;
+  @apply @md:gl-flex;
 }
 
 .gl-actions-tabs-start,
 .gl-actions-tabs-end {
   button {
     @apply gl-mb-3;
-    @apply md:gl-mr-3;
-    @apply md:gl-mb-0;
+    @apply @md:gl-mr-3;
+    @apply @md:gl-mb-0;
   }
 
   button:last-child {
