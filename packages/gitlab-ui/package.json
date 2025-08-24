@@ -25,6 +25,7 @@
     "dist",
     "translations.js",
     "tailwind.defaults.js",
+    "tailwind_cqs_mqs_plugin.js",
     "!src/vendor",
     "src/vendor/bootstrap-vue/src/**/*.{js,scss}",
     "src/vendor/bootstrap/scss/**/*.scss",

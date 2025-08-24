@@ -30,7 +30,7 @@ export default {
             <div class="dashboard-card-skeleton-info gl-w-full gl-bg-status-neutral gl-py-3"></div>
           </div>
 
-          <div class="col-sm-5 gl-hidden gl-self-center sm:gl-block">
+          <div class="col-sm-5 gl-hidden gl-self-center @sm:gl-block">
             <div class="dashboard-card-skeleton-info gl-w-full gl-bg-status-neutral gl-py-3"></div>
           </div>
         </div>

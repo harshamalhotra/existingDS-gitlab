@@ -10,8 +10,8 @@ const CONTAINER_CLASSES = [
   'gl-flex',
   'gl-items-baseline',
   'gl-flex-wrap',
-  'sm:gl-flex-nowrap',
-  'sm:gl-gap-3',
+  '@sm:gl-flex-nowrap',
+  '@sm:gl-gap-3',
 ];
 
 export default {
