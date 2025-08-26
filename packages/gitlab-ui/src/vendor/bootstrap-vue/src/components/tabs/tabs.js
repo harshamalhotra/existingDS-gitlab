@@ -43,14 +43,13 @@ import { looseEqual } from '../../utils/loose-equal'
 import { mathMax } from '../../utils/math'
 import { makeModelMixin } from '../../utils/model'
 import { toInteger } from '../../utils/number'
-import { omit, sortKeys } from '../../utils/object'
+import { sortKeys } from '../../utils/object'
 import { observeDom } from '../../utils/observe-dom'
 import { makeProp, makePropsConfigurable } from '../../utils/props'
 import { stableSort } from '../../utils/stable-sort'
 import { idMixin, props as idProps } from '../../mixins/id'
 import { normalizeSlotMixin } from '../../mixins/normalize-slot'
 import { BLink } from '../link/link'
-import { BNav, props as BNavProps } from '../nav/nav'
 
 // --- Constants ---
 
@@ -188,15 +187,20 @@ const BVTabButton = /*#__PURE__*/ extend({
 })
 
 // --- Props ---
-
-const navProps = omit(BNavProps, ['tabs', 'cardHeader'])
+const navProps = {
+  align: makeProp(PROP_TYPE_STRING),
+  fill: makeProp(PROP_TYPE_BOOLEAN, false),
+  justified: makeProp(PROP_TYPE_BOOLEAN, false),
+  pills: makeProp(PROP_TYPE_BOOLEAN, false),
+  small: makeProp(PROP_TYPE_BOOLEAN, false)
+}
 
 export const props = makePropsConfigurable(
   sortKeys({
     ...idProps,
     ...modelProps,
     ...navProps,
-    // Only applied to the currently active `<b-nav-item>`
+    // Only applied to the currently active `li`
     activeNavItemClass: makeProp(PROP_TYPE_ARRAY_OBJECT_STRING),
     // Only applied to the currently active `<b-tab>`
     // This prop is sniffed by the `<b-tab>` child
@@ -594,21 +598,29 @@ export const BTabs = /*#__PURE__*/ extend({
       })
     })
 
+    const computeJustifyContent = value => {
+      value = value === 'left' ? 'start' : value === 'right' ? 'end' : value
+      return `justify-content-${value}`
+    }
+
     let $nav = h(
-      BNav,
+      'ul',
       {
-        class: this.navClass,
+        staticClass: 'nav',
+        class: [
+          this.navClass,
+          {
+            'nav-tabs': !noNavStyle && !pills,
+            'nav-pills': !noNavStyle && pills,
+            'nav-fill': fill,
+            'nav-justified': justified,
+            [computeJustifyContent(align)]: align,
+            small
+          }
+        ],
         attrs: {
           role: 'tablist',
           id: this.safeId('_BV_tab_controls_')
-        },
-        props: {
-          fill,
-          justified,
-          align,
-          tabs: !noNavStyle && !pills,
-          pills: !noNavStyle && pills,
-          small
         },
         ref: 'nav'
       },
