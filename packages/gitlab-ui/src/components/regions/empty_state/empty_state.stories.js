@@ -1,3 +1,4 @@
+import issuesSvg from '@gitlab/svgs/dist/illustrations/rocket-launch-md.svg';
 import illustrationsSpriteInfo from '@gitlab/svgs/dist/illustrations.json';
 import GlButton from '../../base/button/button.vue';
 import GlEmptyState from './empty_state.vue';
@@ -5,6 +6,8 @@ import GlEmptyState from './empty_state.vue';
 const template = `
   <gl-empty-state
     :title="title"
+    :svg-path="svgPath"
+    :svg-height="svgHeight"
     :illustration-name="illustrationName"
     :description="description"
     :primary-button-text="primaryButtonText"
@@ -25,6 +28,8 @@ const Template = (args) => ({
 
 const generateProps = ({
   title = 'This state is empty',
+  svgPath = issuesSvg,
+  svgHeight = 144,
   illustrationName = 'status-nothing-md',
   description = 'The title and message should be clear, concise, and explain why the user is seeing this screen.',
   primaryButtonText = 'Something actionable',
@@ -35,6 +40,8 @@ const generateProps = ({
   contentClass = [],
 } = {}) => ({
   title,
+  svgPath,
+  svgHeight,
   illustrationName,
   description,
   primaryButtonText,
@@ -46,21 +53,33 @@ const generateProps = ({
 });
 
 export const Default = Template.bind({});
-Default.args = generateProps();
+Default.args = generateProps({
+  svgPath: null,
+});
 
 export const SingleButton = Template.bind({});
 SingleButton.args = generateProps({
   secondaryButtonText: null,
+  svgPath: null,
 });
 
 export const NoButtons = Template.bind({});
 NoButtons.args = generateProps({
   primaryButtonText: null,
   secondaryButtonText: null,
+  svgPath: null,
 });
 
 export const NoIllustration = Template.bind({});
 NoIllustration.args = generateProps({
+  illustrationName: null,
+  svgPath: null,
+});
+
+export const CustomIllustration = Template.bind({});
+CustomIllustration.args = generateProps({
+  title: 'This is a custom SVG asset',
+  description: 'This illustration does not adapt to theme and mode changes.',
   illustrationName: null,
 });
 
@@ -97,13 +116,16 @@ export const CustomActions = (args) => ({
     </gl-empty-state>
   `,
 });
-CustomActions.args = generateProps();
+CustomActions.args = generateProps({
+  svgPath: null,
+});
 
 export const NotFullscreen = Template.bind({});
 NotFullscreen.args = generateProps({
   compact: true,
   title: 'This is a compact empty state',
   description: 'It could be included in a settings page, or a list view',
+  svgPath: null,
 });
 
 export const SlottedDescription = (args) => ({
@@ -135,6 +157,7 @@ export const SlottedDescription = (args) => ({
 SlottedDescription.args = generateProps({
   title: 'Slotted description example',
   illustrationName: 'rocket-launch-md',
+  svgPath: null,
   primaryButtonText: 'Learn more',
   secondaryButtonText: null,
 });
