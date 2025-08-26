@@ -12,6 +12,7 @@ const Template = (args, { argTypes }) => ({
       :x-axis-title="xAxisTitle"
       :x-axis-type="xAxisType"
       :height="height"
+      :presentation="presentation"
     />
   `,
 });
@@ -31,6 +32,22 @@ const mockData = {
   ],
 };
 
+const mockMultipleSeriesData = {
+  ...mockData,
+  'Dunder Mifflin': [
+    [285, 'Jim'],
+    [420, 'Dwight'],
+    [195, 'Pam'],
+    [75, 'Ryan'],
+    [160, 'Kelly'],
+    [380, 'David'],
+    [240, 'Mike'],
+    [85, 'Andy'],
+    [310, 'Stanley'],
+    [145, 'Erin'],
+  ],
+};
+
 const generateProps = ({
   data = mockData,
   option = {},
@@ -38,6 +55,7 @@ const generateProps = ({
   yAxisTitle = 'User',
   xAxisType = 'value',
   height = null,
+  presentation,
 } = {}) => ({
   data,
   option,
@@ -45,6 +63,7 @@ const generateProps = ({
   yAxisTitle,
   xAxisType,
   height,
+  presentation,
 });
 
 export const Default = Template.bind({});
@@ -56,6 +75,21 @@ Object.assign(AutoHeight, {
     height: 'auto',
   }),
   decorators: [makeContainer({ height: '600px' })],
+});
+
+export const Stacked = Template.bind({});
+Object.assign(Stacked, {
+  args: generateProps({
+    data: mockMultipleSeriesData,
+  }),
+});
+
+export const Tiled = Template.bind({});
+Object.assign(Tiled, {
+  args: generateProps({
+    data: mockMultipleSeriesData,
+    presentation: 'tiled',
+  }),
 });
 
 export default {
