@@ -3,13 +3,14 @@
 import merge from 'lodash/merge';
 import truncate from 'lodash/truncate';
 import { grid, dataZoomAdjustments, mergeSeriesToOptions } from '../../../utils/charts/config';
-import { HEIGHT_AUTO_CLASSES } from '../../../utils/charts/constants';
+import { CHART_DEFAULT_SERIES_STACK, HEIGHT_AUTO_CLASSES } from '../../../utils/charts/constants';
 import { colorFromDefaultPalette } from '../../../utils/charts/theme';
 import { engineeringNotation } from '../../../utils/number_utils';
 import { hexToRgba } from '../../../utils/utils';
 import TooltipDefaultFormat from '../shared/tooltip/tooltip_default_format/tooltip_default_format.vue';
 import Chart from '../chart/chart.vue';
 import ChartTooltip from '../shared/tooltip/tooltip.vue';
+import { stackedPresentationOptions } from '../../../utils/constants';
 
 /**
  * `nameGap` in charts/config is set to 50 but it is not
@@ -97,6 +98,17 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * Controls how multiple series data are displayed in the chart –
+     * `stacked` stacks series horizontally, and
+     * `tiled` displays series as grouped bars.
+     */
+    presentation: {
+      type: String,
+      required: false,
+      default: stackedPresentationOptions.stacked,
+      validator: (value) => Object.values(stackedPresentationOptions).includes(value),
+    },
   },
   data() {
     return {
@@ -114,7 +126,10 @@ export default {
           name: key,
           data: this.data[key],
           type: 'bar',
-          stack: 'chart',
+          stack:
+            this.presentation === stackedPresentationOptions.tiled
+              ? null
+              : CHART_DEFAULT_SERIES_STACK,
           itemStyle: {
             color: hexToRgba(barColor, 0.2),
             borderColor: barColor,

@@ -82,6 +82,36 @@ describe('Bar chart component', () => {
     });
   });
 
+  describe('when multiple series data provided', () => {
+    const multipleSeriesData = {
+      ...defaultChartProps.data,
+      DunderMifflin: [
+        [200, 'Scranton Strangler'],
+        [500, 'Dwight'],
+      ],
+    };
+
+    beforeEach(() => {
+      createComponent({ data: multipleSeriesData });
+    });
+
+    it('should correctly render chart', () => {
+      expect(getOptions()).toMatchSnapshot();
+    });
+
+    describe('with tiled presentation', () => {
+      beforeEach(() => {
+        createComponent({ data: multipleSeriesData, presentation: 'tiled' });
+      });
+
+      it('should not stack series', () => {
+        getOptions().series.forEach(({ stack }) => {
+          expect(stack).toBeNull();
+        });
+      });
+    });
+  });
+
   describe('height', () => {
     expectHeightAutoClasses({
       createComponent,
