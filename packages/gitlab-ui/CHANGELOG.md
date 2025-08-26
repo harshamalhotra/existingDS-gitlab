@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 119.2.0
+
+### Minor Changes
+
+- 126887b: GlBarChart: Adds new `presentation` prop to control multi-series layout behavior.
+
 ## 119.1.0
 
 ### Minor Changes
