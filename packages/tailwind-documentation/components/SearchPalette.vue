@@ -36,16 +36,16 @@
             leave-to="gl-opacity-0 gl-scale-95"
           >
             <DialogPanel
-              class="gl-mx-auto gl-max-w-75 gl-transform gl-divide-y gl-divide-gray-100 gl-overflow-hidden gl-rounded-lg gl-bg-white gl-shadow gl-transition-all"
+              class="gl-mx-auto gl-max-w-75 gl-transform gl-divide-y gl-divide-default gl-overflow-hidden gl-rounded-lg gl-bg-default gl-shadow gl-transition-all"
             >
               <Combobox @update:modelValue="onSelect">
                 <div class="gl-relative">
                   <SearchIcon
-                    class="gl-pointer-events-none gl-absolute gl-left-5 gl-top-1/2 gl-h-6 gl-w-6 -gl-translate-y-1/2 gl-text-gray-400"
+                    class="gl-pointer-events-none gl-absolute gl-left-5 gl-top-1/2 gl-h-6 gl-w-6 -gl-translate-y-1/2 gl-text-control-placeholder"
                   />
                   <ComboboxInput
                     v-model="query"
-                    class="gl-h-10 gl-w-full gl-border-0 gl-bg-transparent gl-pl-10 gl-pr-4 placeholder:gl-text-gray-400 focus:gl-ring-0"
+                    class="gl-h-10 gl-w-full gl-border-0 gl-bg-transparent gl-pl-10 gl-pr-4 placeholder:gl-text-control-placeholder focus:gl-ring-0"
                     placeholder="Search..."
                     aria-label="Search..."
                     :displayValue="(searchResult) => searchResult.title"
@@ -56,7 +56,7 @@
                 <ComboboxOptions
                   v-if="searchResults.length > 0"
                   static
-                  class="gl-max-h-75 gl-scroll-py-2 gl-overflow-y-auto gl-py-3 gl-text-sm gl-text-gray-800"
+                  class="gl-max-h-75 gl-scroll-py-2 gl-overflow-y-auto gl-py-3 gl-text-sm gl-text-default"
                 >
                   <ComboboxOption
                     v-for="searchResult in searchResults"
@@ -67,8 +67,8 @@
                     <template #default="{ active }">
                       <li
                         :class="[
-                          'gl-cursor-default gl-select-none gl-px-4 gl-py-2 gl-text-base gl-font-normal gl-text-gray-700',
-                          active && 'gl-bg-gray-50 gl-text-purple-500',
+                          'gl-cursor-default gl-select-none gl-px-4 gl-py-2 gl-text-base gl-font-normal gl-text-subtle',
+                          { 'gl-bg-feedback-info gl-text-feedback-info': active },
                         ]"
                       >
                         {{ searchResult.title }}
@@ -79,7 +79,7 @@
 
                 <p
                   v-else-if="query !== ''"
-                  class="gl-p-4 gl-text-sm gl-text-gray-500"
+                  class="gl-p-4 gl-text-sm gl-text-subtle"
                 >
                   No results found.
                 </p>

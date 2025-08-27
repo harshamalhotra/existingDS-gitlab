@@ -41,12 +41,12 @@
               >
                 <button
                   type="button"
-                  class="gl-rounded-base gl-bg-white"
+                  class="gl-rounded-base gl-bg-default"
                   @click="closeSidebar"
                 >
                   <span class="gl-sr-only">Close sidebar</span>
                   <XMarkIcon
-                    class="gl-h-6 gl-w-6 gl-text-white"
+                    class="gl-h-6 gl-w-6 gl-text-strong"
                     aria-hidden="true"
                   />
                 </button>
@@ -54,7 +54,7 @@
             </TransitionChild>
             <!-- Sidebar component, swap this element with another sidebar if you like -->
             <div
-              class="gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-bg-white"
+              class="gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-bg-default"
             >
               <SidebarLogo :showSearchButton="false" />
               <SidebarItems
@@ -70,12 +70,12 @@
 
   <!-- Static sidebar for desktop -->
   <div
-    class="md:gl-z-50 gl-hidden md:gl-fixed md:gl-inset-y-0 md:gl-flex md:gl-w-34 md:gl-flex-col"
+    class="md:gl-z-50 gl-hidden md:gl-fixed md:gl-inset-y-0 md:gl-flex md:gl-w-[16rem] md:gl-flex-col"
     data-testid="desktopSidebar"
   >
     <!-- Sidebar component, swap this element with another sidebar if you like -->
     <div
-      class="gl-border-r gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-border-gray-200 gl-bg-white"
+      class="gl-border-r gl-flex gl-grow gl-flex-col gl-overflow-y-auto gl-bg-subtle"
     >
       <SidebarLogo :showSearchButton="isSearchReady" @openSearch="openSearch" />
       <SidebarItems
@@ -86,11 +86,11 @@
   </div>
 
   <div
-    class="gl-z-40 gl-fixed gl-top-0 gl-flex gl-h-[3.25rem] gl-w-full gl-items-center gl-justify-between gl-gap-x-6 gl-bg-white gl-px-4 gl-shadow-sm md:gl-hidden"
+    class="gl-z-40 gl-fixed gl-top-0 gl-flex gl-h-[3.25rem] gl-w-full gl-items-center gl-justify-between gl-gap-x-6 gl-bg-subtle gl-px-4 gl-shadow-sm md:gl-hidden"
   >
     <button
       type="button"
-      class="-gl-m-2 gl-p-2 gl-text-gray-700 md:gl-hidden"
+      class="-gl-m-2 gl-p-2 gl-text-strong md:gl-hidden"
       @click="openSidebar"
     >
       <span class="gl-sr-only">Open sidebar</span>

@@ -71,7 +71,10 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  css: ["~/assets/css/index.css"],
+  css: [
+    "@gitlab/ui/dist/index.css",
+    "~/assets/css/index.css"
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},

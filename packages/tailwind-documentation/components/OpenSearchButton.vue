@@ -1,11 +1,11 @@
 <template>
   <button
-    class="gl-group gl-flex gl-items-center gl-gap-x-2"
+    class="gl-group gl-flex gl-items-center gl-gap-2"
     @click="emit('openSearch')"
   >
-    <span>Search</span>
+    <span class="gl-text-sm gl-font-semibold">Search</span>
     <span
-      class="gl-border gl-inline-block gl-rounded-base gl-px-3 gl-py-1 gl-transition-all group-hover:gl-border-purple-300 group-hover:gl-text-purple-500"
+      class="gl-border gl-inline-block gl-rounded-base gl-px-2 gl-py-1 gl-transition-all group-hover:gl-border-strong"
       ><kbd>{{ modifierKey }}</kbd> <kbd>K</kbd></span
     >
   </button>
