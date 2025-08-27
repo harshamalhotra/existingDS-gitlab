@@ -1,28 +1,32 @@
 <template>
-  <nav class="gl-flex gl-flex-1 gl-flex-col gl-pb-8 gl-pt-5">
-    <ul role="list" class="gl-flex gl-flex-1 gl-flex-col gl-gap-y-4 gl-px-5">
+  <nav aria-labelledby="nav-heading" class="gl-flex gl-flex-1 gl-flex-col gl-px-2 gl-py-3">
+    <h2 id="nav-heading" class="gl-sr-only">Main navigation</h2>
+    <ul class="gl-flex gl-flex-1 gl-flex-col gl-gap-3">
       <li
-        v-for="(categoryItems, category) in sidebarItems"
+        v-for="(categoryItems, category, index) in sidebarItems"
         :key="category"
         class="gl-text-size-h2 gl-font-semibold"
       >
-        {{ category }}
-        <ul class="gl-mt-2 gl-flex gl-flex-1 gl-flex-col gl-gap-y-2">
+        <div aria-hidden="true" class="gl-py-2 gl-pl-4 gl-pr-3 gl-text-sm gl-font-bold">
+          {{ category }}
+        </div>
+        <ul :aria-label="category" class="gl-flex gl-flex-1 gl-flex-col gl-gap-1">
           <li v-for="categoryItem in categoryItems" :key="categoryItem.name">
             <RouterLink
               ref="routerLink"
               :to="categoryItem.path"
-              class="gl-leading-6 gl-group gl-relative gl-block gl-rounded-base gl-px-5 gl-py-2 gl-text-base gl-font-normal gl-text-gray-700 hover:gl-bg-gray-50 hover:gl-text-purple-500"
-              active-class="active-sidebar-link gl-bg-gray-50 gl-text-purple-500"
+              class="gl-action-neutral-colors gl-leading-6 gl-group gl-relative gl-block gl-rounded-base gl-leading-normal gl-p-3 gl-pl-4 gl-text-base !gl-no-underline gl-font-normal"
+              active-class="active-sidebar-link gl-bg-strong"
               @click="$emit('itemClick')"
             >
               <div
-                class="gl-absolute gl-bottom-0 gl-left-0 gl-top-0 gl-hidden gl-w-2 gl-rounded-bl-base gl-rounded-tl-base gl-bg-purple-500 group-[.active-sidebar-link]:gl-block"
+                class="gl-absolute gl-bottom-[3px] gl-left-[3px] gl-top-[3px] gl-hidden gl-w-[3px] gl-rounded-base gl-bg-purple-500 group-[.active-sidebar-link]:gl-block"
               />
               {{ categoryItem.meta.title }}
             </RouterLink>
           </li>
         </ul>
+        <div v-if="index !== Object.keys(sidebarItems).length - 1" class="gl-m-3 gl-border-b"></div>
       </li>
     </ul>
   </nav>

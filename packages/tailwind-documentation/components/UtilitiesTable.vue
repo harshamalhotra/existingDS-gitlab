@@ -1,40 +1,40 @@
 <template>
   <div class="gl-w-full gl-overflow-x-auto">
     <table
-      class="gl-w-full gl-table-auto gl-border-collapse gl-divide-y gl-divide-gray-300"
+      class="gl-w-full gl-table-auto gl-border-collapse gl-divide-y gl-divide-strong"
     >
       <thead>
         <tr>
           <th
             scope="col"
-            class="gl-p-5 gl-text-left gl-font-semibold gl-text-gray-900"
+            class="gl-p-4 gl-text-left gl-font-semibold gl-text-strong"
           >
             Class
           </th>
           <th
             scope="col"
-            class="gl-p-5 gl-text-left gl-font-semibold gl-text-gray-900"
+            class="gl-p-4 gl-text-left gl-font-semibold gl-text-strong"
           >
             Properties
           </th>
           <th
             v-if="props.showColorSwatch"
             scope="col"
-            class="gl-p-5 gl-text-left gl-font-semibold gl-text-gray-900"
+            class="gl-p-4 gl-text-left gl-font-semibold gl-text-strong"
           >
             Color
           </th>
         </tr>
       </thead>
-      <tbody class="gl-divide-y gl-divide-gray-200">
+      <tbody class="gl-divide-y gl-divide-default">
         <tr v-for="(properties, className) in utilities" :key="className">
           <td
-            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-blue-600 gl-font-monospace"
+            class="gl-whitespace-nowrap gl-p-4 gl-text-sm gl-text-link gl-font-bold gl-font-monospace"
           >
             {{ className }}
           </td>
           <td
-            class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-purple-600 gl-font-monospace"
+            class="gl-whitespace-nowrap gl-p-4 gl-text-sm gl-text-strong gl-font-monospace"
           >
             <div
               v-for="(value, property) in properties"
@@ -43,7 +43,7 @@
               {{ property }}: {{ value }}; <PixelValue :value="value" />
             </div>
           </td>
-          <td v-if="props.showColorSwatch" class="gl-p-5">
+          <td v-if="props.showColorSwatch" class="gl-p-4">
             <div
               :style="{ backgroundColor: Object.values(properties)[0] }"
               class="gl-inline-block gl-h-7 gl-w-7 gl-rounded-small gl-align-middle"

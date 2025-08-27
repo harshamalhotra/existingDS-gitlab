@@ -12,7 +12,7 @@ describe("SidebarItems", () => {
   it("renders categories and category items", async () => {
     await renderSuspended(SidebarItems, { props: defaultProps });
 
-    const categoryLayout = screen.getByText(CATEGORY_LAYOUT);
+    const categoryLayout = screen.getByRole("list", { name: CATEGORY_LAYOUT });
 
     expect(
       within(categoryLayout).getByRole("link", { name: "Aspect Ratio" }),
@@ -23,7 +23,7 @@ describe("SidebarItems", () => {
       }),
     ).toHaveAttribute("href", "/box-decoration-break");
 
-    const categoryFlexboxAndGrid = screen.getByText(CATEGORY_FLEXBOX_AND_GRID);
+    const categoryFlexboxAndGrid = screen.getByRole("list", { name: CATEGORY_FLEXBOX_AND_GRID });
 
     expect(
       within(categoryFlexboxAndGrid).getByRole("link", {

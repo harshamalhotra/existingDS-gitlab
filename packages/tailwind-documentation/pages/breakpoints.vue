@@ -3,36 +3,36 @@
     <PageTitle />
     <div class="gl-w-full gl-overflow-x-auto">
       <table
-        class="gl-w-full gl-table-auto gl-border-collapse gl-divide-y gl-divide-gray-300"
+        class="gl-w-full gl-table-auto gl-border-collapse gl-divide-y gl-divide-strong"
       >
         <thead>
           <tr>
             <th
               scope="col"
-              class="gl-p-5 gl-text-left gl-font-semibold gl-text-gray-900"
+              class="gl-p-4 gl-text-left gl-font-semibold gl-text-strong"
             >
               Breakpoint prefix
             </th>
             <th
               scope="col"
-              class="gl-p-5 gl-text-left gl-font-semibold gl-text-gray-900"
+              class="gl-p-4 gl-text-left gl-font-semibold gl-text-strong"
             >
               CSS
             </th>
           </tr>
         </thead>
-        <tbody class="gl-divide-y gl-divide-gray-200">
+        <tbody class="gl-divide-y gl-divide-default">
           <tr
             v-for="(css, breakpoint) in resolvedVariants.breakpoints"
             :key="breakpoint"
           >
             <td
-              class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-blue-600 gl-font-monospace"
+              class="gl-whitespace-nowrap gl-p-4 gl-text-sm gl-text-link gl-font-monospace"
             >
               {{ breakpoint }}
             </td>
             <td
-              class="gl-whitespace-nowrap gl-p-5 gl-text-sm gl-text-purple-600 gl-font-monospace"
+              class="gl-whitespace-nowrap gl-p-4 gl-text-sm gl-text-strong gl-font-monospace"
             >
               {{ css }}
             </td>

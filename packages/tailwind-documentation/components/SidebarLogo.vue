@@ -1,12 +1,12 @@
 <template>
   <div
-    class="gl-sticky gl-top-0 gl-z-1 gl-flex gl-items-center gl-justify-between gl-bg-white gl-px-5 gl-py-5"
+    class="gl-sticky gl-top-0 gl-z-1 gl-flex gl-items-center gl-justify-between gl-bg-subtle gl-p-3"
   >
     <RouterLink
       to="/aspect-ratio"
       class="gl-h-16 gl-flex gl-shrink-0 gl-items-center gl-gap-x-2"
     >
-      <GitLabLogo class="gl-w-8" />
+      <GitLabLogo class="gl-w-6" />
     </RouterLink>
     <OpenSearchButton
       v-if="props.showSearchButton"

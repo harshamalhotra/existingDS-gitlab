@@ -1,5 +1,5 @@
 <template>
-  <span v-if="isValueInRem" class="gl-text-purple-300"
+  <span v-if="isValueInRem" class="gl-text-subtle"
     >/* {{ valueAsPixel }}px */</span
   >
 </template>
