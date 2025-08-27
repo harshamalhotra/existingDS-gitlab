@@ -4,7 +4,6 @@ summary: Guidelines for creating structured interfaces to capture, validate, and
 description: A form is for capturing and submitting user input.
 related:
   - date-picker
-  - color-picker
   - search
   - button
   - stepper

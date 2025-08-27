@@ -343,10 +343,6 @@
             "path": "collapse"
           },
           {
-            "title": "Color picker",
-            "path": "color-picker"
-          },
-          {
             "title": "Drawer",
             "path": "drawer"
           },
