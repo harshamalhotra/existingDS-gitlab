@@ -149,15 +149,15 @@ export default {
     }"
   >
     <div :class="{ 'gl-hidden gl-px-4 @sm:gl-block': compact, 'gl-max-w-full': !compact }">
+      <gl-illustration v-if="illustrationName" :name="illustrationName" />
       <img
-        v-if="svgPath"
+        v-else-if="svgPath"
         :src="svgPath"
         alt=""
         :class="{ 'gl-dark-invert-keep-hue': invertInDarkMode }"
         class="gl-max-w-full"
         :height="height"
       />
-      <gl-illustration v-else-if="illustrationName" :name="illustrationName" />
     </div>
     <div
       class="gl-empty-state-content gl-mx-auto gl-my-0"

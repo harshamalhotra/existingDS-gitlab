@@ -45,7 +45,6 @@ export default {
   <svg
     :key="spriteHref"
     :data-testid="`${name}-illustration`"
-    :aria-label="null"
     role="presentation"
     :width="illustrationSize"
     :height="illustrationSize"
