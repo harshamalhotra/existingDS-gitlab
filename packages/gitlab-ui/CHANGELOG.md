@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 120.0.0
+
+### Major Changes
+
+- 66f437d: GlBadge: removed muted variant and made neutral default
+
 ## 119.2.0
 
 ### Minor Changes
