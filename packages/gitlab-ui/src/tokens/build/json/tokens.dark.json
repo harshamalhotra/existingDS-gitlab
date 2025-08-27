@@ -7237,6 +7237,7 @@
                 "SHAPE_FILL"
               ]
             },
+            "$deprecated": true,
             "filePath": "src/tokens/contextual/badge.tokens.json",
             "isSource": true,
             "original": {
@@ -7252,6 +7253,7 @@
                   "SHAPE_FILL"
                 ]
               },
+              "$deprecated": true,
               "key": "{badge.muted.background.color.default}"
             },
             "name": "BADGE_MUTED_BACKGROUND_COLOR_DEFAULT",
@@ -7275,6 +7277,7 @@
                 "SHAPE_FILL"
               ]
             },
+            "$deprecated": true,
             "filePath": "src/tokens/contextual/badge.tokens.json",
             "isSource": true,
             "original": {
@@ -7287,6 +7290,7 @@
                   "SHAPE_FILL"
                 ]
               },
+              "$deprecated": true,
               "key": "{badge.muted.background.color.hover}"
             },
             "name": "BADGE_MUTED_BACKGROUND_COLOR_HOVER",
@@ -7310,6 +7314,7 @@
                 "SHAPE_FILL"
               ]
             },
+            "$deprecated": true,
             "filePath": "src/tokens/contextual/badge.tokens.json",
             "isSource": true,
             "original": {
@@ -7322,6 +7327,7 @@
                   "SHAPE_FILL"
                 ]
               },
+              "$deprecated": true,
               "key": "{badge.muted.background.color.focus}"
             },
             "name": "BADGE_MUTED_BACKGROUND_COLOR_FOCUS",
@@ -7597,6 +7603,7 @@
                 "TEXT_FILL"
               ]
             },
+            "$deprecated": true,
             "filePath": "src/tokens/contextual/badge.tokens.json",
             "isSource": true,
             "original": {
@@ -7608,6 +7615,7 @@
                   "TEXT_FILL"
                 ]
               },
+              "$deprecated": true,
               "key": "{badge.muted.text.color.focus}"
             },
             "name": "BADGE_MUTED_TEXT_COLOR_FOCUS",
@@ -7747,6 +7755,7 @@
                 "TEXT_FILL"
               ]
             },
+            "$deprecated": true,
             "filePath": "src/tokens/contextual/badge.tokens.json",
             "isSource": true,
             "original": {
@@ -7759,6 +7768,7 @@
                   "TEXT_FILL"
                 ]
               },
+              "$deprecated": true,
               "key": "{badge.muted.icon.color.focus}"
             },
             "name": "BADGE_MUTED_ICON_COLOR_FOCUS",

@@ -44,7 +44,6 @@ export const badgeSizeOptions = {
 };
 
 export const badgeVariantOptions = {
-  muted: 'muted',
   neutral: 'neutral',
   info: 'info',
   success: 'success',

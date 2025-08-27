@@ -114,7 +114,7 @@ describe('badge', () => {
     it('sets default classes', () => {
       createComponent({ slots: { default: 'slot-content' } });
 
-      expect(wrapper.classes()).toMatchObject(['gl-badge', 'badge', 'badge-pill', 'badge-muted']);
+      expect(wrapper.classes()).toMatchObject(['gl-badge', 'badge', 'badge-pill', 'badge-neutral']);
     });
 
     it.each(Object.values(badgeVariantOptions))(

@@ -1,6 +1,6 @@
 ---
 name: Badge
-description: A badge highlights system generated metadata as an attribute of a larger object. 
+description: A badge highlights system generated metadata as an attribute of a larger object.
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A3
 related:
   - label
@@ -40,8 +40,7 @@ related:
 
 ### Variants
 
-- **Neutral muted** (default): Metadata that is stable and requires minimal emphasis. Has a neutral meaning.
-- **Neutral**: Metadata that is stable but special, or that requires moderate emphasis. Has a neutral meaning.
+- **Neutral** (default): Metadata that is stable but special, or that requires moderate emphasis. Has a neutral meaning.
 - **Info**: Metadata that is noteworthy, or communicates a state of active progress. Has a neutral to slightly positive meaning.
 - **Success**: Metadata that is positive or desired. Has a clearly positive connotation.
 - **Warning**: Metadata that is sub-optimal but not critical. Has a slightly negative meaning.
