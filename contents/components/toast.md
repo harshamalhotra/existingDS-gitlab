@@ -12,8 +12,6 @@ related:
 
 <story-viewer component="base-toast" title="Toast" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
 
-<story-viewer component="base-toast" story="with-actions" title="With action" iframe-padding="1rem 1rem 120px 1rem"></story-viewer>
-
 <story-viewer component="base-toast" story="with-long-content" title="With long content" args-action="false" iframe-padding="1rem 1rem 240px 1rem"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-139&mode=design)
@@ -24,7 +22,7 @@ related:
 
 1. **Container**: Wraps the content.
 1. **Message**: Text content indicating the purpose and potential next steps.
-1. **Action** (optional): A single text action a user can take based on the content of the toast.
+1. **Action** (optional): A single text action is available, but not recommended because it creates [accessibility](#accessibility) barriers. Consider [alternative patterns](#guidelines) for actionable notifications.
 1. **Dismiss button**: Removes the toast for a user.
 
 ## Guidelines
@@ -37,18 +35,14 @@ related:
 
 - If you need to communicate an error to a user, consider using a [danger or warning alert](/components/alert#variants) instead.
 - If there's a page refresh, or a message needs to be communicated after a user visits a new page, consider using an [alert](/components/alert) instead.
+- If a user needs to perform a follow‑up action (for example, "Undo" or "View details"), consider using a [modal](/components/modal), an [in-page alert](/component/alert#placement), or a persistent contextual action.
 - If the action is irreversible, consider using a [modal](/components/modal) instead.
 
 ### Behavior
 
 - A toast appears with an ease-in animation from the bottom of the viewport after a user's action.
+- A toast auto-dismisses after a short interval.
 - A user can dismiss the toast by clicking the “dismiss” icon button.
-- If left alone, a toast without an action will disappear after five seconds.
-- Hovering over a toast causes it to remain until the cursor is moved.
-- A toast with an action is only dismissed when a user does one of the following:
-  - Clicks the action.
-  - Clicks the dismiss button.
-  - Navigates to another page.
 
 ### Content
 
@@ -61,7 +55,8 @@ related:
 
 ### Accessibility
 
-<todo>Add accessibility requirements and considerations.</todo>
+- Auto-dismiss helps ensure that a toast works well for a screen reader or keyboard user, since they can listen to the announcement or continue navigating without needing to tab through many elements just to dismiss it.
+- Avoid using actions in a toast. Because a toast is added at the end of the DOM, it can be difficult for a screen reader or keyboard user to reach it before the timer expires or without a significant number of tab stops. Without reliable focus management, a user also can’t easily return to their original place, which can create a loss of context. These challenges can make actions in a toast unreliable and inaccessible.
 
 ## Code reference
 
