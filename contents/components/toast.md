@@ -35,7 +35,7 @@ related:
 
 - If you need to communicate an error to a user, consider using a [danger or warning alert](/components/alert#variants) instead.
 - If there's a page refresh, or a message needs to be communicated after a user visits a new page, consider using an [alert](/components/alert) instead.
-- If a user needs to perform a follow‑up action (for example, "Undo" or "View details"), consider using a [modal](/components/modal), an [in-page alert](/component/alert#placement), or a persistent contextual action.
+- If a user needs to perform a follow‑up action (for example, "Undo" or "View details"), consider using a [modal](/components/modal), an [in-page alert](/components/alert#placement), or a persistent contextual action.
 - If the action is irreversible, consider using a [modal](/components/modal) instead.
 
 ### Behavior
