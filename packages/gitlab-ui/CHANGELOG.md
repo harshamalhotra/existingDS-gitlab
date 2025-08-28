@@ -1,5 +1,15 @@
 # @gitlab/ui
 
+## 120.1.0
+
+### Minor Changes
+
+- 8e3d8ce: Update GlEmptyState to use GlIllustration
+
+### Patch Changes
+
+- 8003e57: Add role="presentation" to BPopover <h3> element
+
 ## 120.0.0
 
 ### Major Changes
