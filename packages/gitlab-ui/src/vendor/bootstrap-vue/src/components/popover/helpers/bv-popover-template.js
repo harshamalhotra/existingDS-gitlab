@@ -39,7 +39,15 @@ export const BVPopoverTemplate = /*#__PURE__*/ extend({
           }),
           isUndefinedOrNull($title) || $title === ''
             ? /* istanbul ignore next */ h()
-            : h('h3', { staticClass: 'popover-header', domProps: titleDomProps }, [$title]),
+            : h(
+                'h3',
+                {
+                  staticClass: 'popover-header',
+                  domProps: titleDomProps,
+                  attrs: { role: 'presentation' }
+                },
+                [$title]
+              ),
           isUndefinedOrNull($content) || $content === ''
             ? /* istanbul ignore next */ h()
             : h('div', { staticClass: 'popover-body', domProps: contentDomProps }, [$content])
