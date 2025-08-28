@@ -119,7 +119,11 @@ Alerts don't handle their own visibility, so it's the parent component's
 responsbility to listen for the `dismiss` event and hide the alert in some way.
 For example:
 
-```html
+<!--
+The below is intentionally *not* an HTML block.
+See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2953.
+-->
+```text
 <script>
   ...
   computed: {
