@@ -48,6 +48,7 @@ changes were analyzed for conformity with the project's guidelines, security and
 - [ ] Relevant label(s) are applied to the MR.
 - [ ] The MR is added to a milestone.
 - [ ] Added the `~"component:*"` label(s) if applicable.
+- [ ] A changeset is added when this MR will do a patch, minor, or major update. More information can be found in [`doc/publishing-packages.md`](doc/publishing-packages.md).
 
 ### Components
 
