@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 121.0.1
+
+### Patch Changes
+
+- f510582: GlButton: Allow array and object for buttonTextClasses prop
+
 ## 121.0.0
 
 ### Major Changes
