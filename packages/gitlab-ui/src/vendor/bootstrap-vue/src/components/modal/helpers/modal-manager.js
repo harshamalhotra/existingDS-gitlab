@@ -168,7 +168,7 @@ const ModalManager = /*#__PURE__*/ extend({
           setStyle(el, 'marginRight', `${toFloat(getCS(el).marginRight, 0) - scrollbarWidth}px`)
           body._marginChangedForModal.push(el)
         })
-        // Adjust <b-navbar-toggler> margin
+        // Adjust .navbar-toggler margin
         /* istanbul ignore next: difficult to test in JSDOM */
         selectAll(SELECTOR_NAVBAR_TOGGLER).forEach(el => /* istanbul ignore next */ {
           const actualMargin = getStyle(el, 'marginRight') || ''
