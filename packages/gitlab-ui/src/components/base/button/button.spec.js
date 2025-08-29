@@ -87,6 +87,58 @@ describe('button component', () => {
     });
   });
 
+  describe('custom button text classes', () => {
+    it('applies string classes to button text', () => {
+      buildWrapper({
+        propsData: {
+          buttonTextClasses: 'string-class another-class',
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const buttonText = wrapper.find('.gl-button-text');
+      expect(buttonText.classes()).toContain('string-class');
+      expect(buttonText.classes()).toContain('another-class');
+    });
+
+    it('applies array classes to button text', () => {
+      buildWrapper({
+        propsData: {
+          buttonTextClasses: ['array-class', 'another-class'],
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const buttonText = wrapper.find('.gl-button-text');
+      expect(buttonText.classes()).toContain('array-class');
+      expect(buttonText.classes()).toContain('another-class');
+    });
+
+    it('applies object classes to button text', () => {
+      buildWrapper({
+        propsData: {
+          buttonTextClasses: {
+            'object-class': true,
+            'inactive-class': false,
+            'another-class': true,
+          },
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const buttonText = wrapper.find('.gl-button-text');
+      expect(buttonText.classes()).toContain('object-class');
+      expect(buttonText.classes()).toContain('another-class');
+      expect(buttonText.classes()).not.toContain('inactive-class');
+    });
+  });
+
   it.each`
     variant      | category       | expectedClass
     ${'default'} | ${'primary'}   | ${'btn-default'}
