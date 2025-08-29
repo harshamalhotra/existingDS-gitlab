@@ -91,7 +91,7 @@ describe('button component', () => {
     it('applies string classes to button text', () => {
       buildWrapper({
         propsData: {
-          buttonTextClasses: 'custom-class another-class',
+          buttonTextClasses: 'string-class another-class',
         },
         slots: {
           default: 'Button text',
@@ -99,7 +99,22 @@ describe('button component', () => {
       });
 
       const buttonText = wrapper.find('.gl-button-text');
-      expect(buttonText.classes()).toContain('custom-class');
+      expect(buttonText.classes()).toContain('string-class');
+      expect(buttonText.classes()).toContain('another-class');
+    });
+
+    it('applies array classes to button text', () => {
+      buildWrapper({
+        propsData: {
+          buttonTextClasses: ['array-class', 'another-class'],
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const buttonText = wrapper.find('.gl-button-text');
+      expect(buttonText.classes()).toContain('array-class');
       expect(buttonText.classes()).toContain('another-class');
     });
 
@@ -107,7 +122,7 @@ describe('button component', () => {
       buildWrapper({
         propsData: {
           buttonTextClasses: {
-            'custom-class': true,
+            'object-class': true,
             'inactive-class': false,
             'another-class': true,
           },
@@ -118,7 +133,7 @@ describe('button component', () => {
       });
 
       const buttonText = wrapper.find('.gl-button-text');
-      expect(buttonText.classes()).toContain('custom-class');
+      expect(buttonText.classes()).toContain('object-class');
       expect(buttonText.classes()).toContain('another-class');
       expect(buttonText.classes()).not.toContain('inactive-class');
     });

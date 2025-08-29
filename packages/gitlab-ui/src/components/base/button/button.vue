@@ -86,7 +86,7 @@ export default {
      * CSS classes to add to the button text.
      */
     buttonTextClasses: {
-      type: [Object, String],
+      type: [Array, Object, String],
       required: false,
       default: '',
     },
