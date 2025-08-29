@@ -1,5 +1,23 @@
 # @gitlab/ui
 
+## 121.0.0
+
+### Major Changes
+
+- 16c6f10: Remove BFormCheckbox from GlFormCheckbox
+
+  Part of a larger migration to remove Bootstrap Vue from GitLab UI
+
+  BREAKING CHANGE: support for the following props have been dropped:
+  - autofocus
+  - button
+  - button-variant
+  - form
+  - switch
+  - inline
+  - plain
+  - size
+
 ## 120.1.0
 
 ### Minor Changes
