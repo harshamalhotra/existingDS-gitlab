@@ -1,4 +1,3 @@
-import BVueReadme from '../../../../vendor/bootstrap-vue/src/components/form-checkbox/README.md';
 import GlFormCheckbox from './form_checkbox.vue';
 import GlFormCheckboxGroup from './form_checkbox_group.vue';
 
@@ -9,7 +8,6 @@ const components = {
 
 const data = () => ({
   selected: ['checked-option', 'checked-disabled-option'],
-  indeterminate: true,
 });
 
 const template = `
@@ -44,6 +42,7 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
+Default.args = { indeterminate: true };
 
 const Single = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
@@ -61,8 +60,6 @@ export default {
   title: 'base/form/form checkbox',
   component: GlFormCheckbox,
   parameters: {
-    bootstrapComponent: 'b-form-checkbox',
-    bootstrapDocs: BVueReadme,
     docs: {
       description: {
         component:
