@@ -132,7 +132,11 @@ It is also currently required if the tooltip content needs to change while it's 
 
 You will need to import and register `GlTooltipDirective` before you can use it.
 
-```html
+<!--
+The below is intentionally *not* an HTML block.
+See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2953.
+-->
+```text
 <script>
 import { GlTooltipDirective } from '@gitlab/ui';
 
