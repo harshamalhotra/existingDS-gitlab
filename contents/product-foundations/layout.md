@@ -73,11 +73,11 @@ A region is the loosest form of visual organization through boundaries formed by
 ```html
 <!-- live-example -->
 <div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-default">default + default</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-subtle">default + subtle</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border gl-border-strong">default + strong</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-subtle">subtle + subtle</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong gl-border gl-border-strong">strong + strong</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border-1 gl-border-solid gl-border-default">default + default</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border-1 gl-border-solid gl-border-subtle">default + subtle</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default gl-border-1 gl-border-solid gl-border-strong">default + strong</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border-1 gl-border-solid gl-border-subtle">subtle + subtle</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong gl-border-1 gl-border-solid gl-border-strong">strong + strong</div>
 </div>
 ```
 
@@ -94,10 +94,10 @@ Acceptable background and combinations are:
 ```html
 <!-- live-example -->
 <div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section gl-border gl-border-section">section + section</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border gl-border-section">subtle + section</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-border gl-border-default">overlap + default</div>
-  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-disabled gl-border gl-border-subtle gl-text-subtle">disabled + subtle</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section gl-border-1 gl-border-solid gl-border-section">section + section</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle gl-border-1 gl-border-solid gl-border-section">subtle + section</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap gl-border-1 gl-border-solid gl-border-default">overlap + default</div>
+  <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-disabled gl-border-1 gl-border-solid gl-border-subtle gl-text-subtle">disabled + subtle</div>
 </div>
 ```
 
@@ -105,8 +105,8 @@ Acceptable background and combinations are:
 
 ```html
 <!-- live-example -->
-<div class="gl-border gl-border-section gl-rounded-lg gl-overflow-hidden gl-text-base">
-  <div class="gl-border-b gl-border-b-section gl-bg-section gl-p-5">
+<div class="gl-border-1 gl-border-solid gl-border-section gl-rounded-lg gl-overflow-hidden gl-text-base">
+  <div class="gl-border-b-1 gl-border-b-solid gl-border-b-section gl-bg-section gl-p-5">
     background.color.section
   </div>
   <div class="gl-bg-subtle gl-p-5">
