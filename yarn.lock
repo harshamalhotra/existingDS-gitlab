@@ -1127,15 +1127,14 @@
   dependencies:
     deepmerge "^4.3.1"
 
-"@bundled-es-modules/glob@^10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@bundled-es-modules/glob/-/glob-10.4.2.tgz#ef8f58b5d33ec8a1d4ca739bb49c09e5d0874bb5"
-  integrity sha512-740y5ofkzydsFao5EXJrGilcIL6EFEw/cmPf2uhTw9J6G1YOhiIFjNFCHdpgEiiH5VlU3G0SARSjlFlimRRSMA==
+"@bundled-es-modules/glob@^11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@bundled-es-modules/glob/-/glob-11.0.3.tgz#ce238c5d05d7841debdb215cb4837efd22a05d26"
+  integrity sha512-rt+1650YhlwRkkj67YMZQj5LXWZiavpHQg8K6jDcZBPbrBIooHbKOQvvxKJsKM80H1oHengEbIymfw3mn4FkUw==
   dependencies:
     buffer "^6.0.3"
     events "^3.3.0"
-    glob "^10.4.2"
-    patch-package "^8.0.0"
+    glob "^11.0.3"
     path "^0.12.7"
     stream "^0.0.3"
     string_decoder "^1.3.0"
@@ -5665,13 +5664,6 @@
   integrity sha512-fifKayi175wLyKyc5qUfyENhQ1dCNI1UNjp653d8kuYcPQN5JhX3dGuP/XmvPTg/xRBn1VTLpbmi+H/Mr7tLfQ==
   dependencies:
     undici-types "~5.26.4"
-
-"@types/node@^22.10.5":
-  version "22.15.32"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.32.tgz#c301cc2275b535a5e54bb81d516b1d2e9afe06e5"
-  integrity sha512-3jigKqgSjsH6gYZv2nEsqdXfZqIFGAV36XYYjf9KGZ3PSG+IhLecqPnI310RvjutyMwifE2hhhNEklOUrvx/wA==
-  dependencies:
-    undici-types "~6.21.0"
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.4"
@@ -11507,7 +11499,7 @@ glob-to-regexp@^0.4.1:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
-glob@11.0.3:
+glob@11.0.3, glob@^11.0.3:
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-11.0.3.tgz#9d8087e6d72ddb3c4707b1d2778f80ea3eaefcd6"
   integrity sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==
@@ -11519,7 +11511,7 @@ glob@11.0.3:
     package-json-from-dist "^1.0.0"
     path-scurry "^2.0.0"
 
-glob@^10.0.0, glob@^10.3.10, glob@^10.3.3, glob@^10.4.2:
+glob@^10.0.0, glob@^10.3.10, glob@^10.3.3:
   version "10.4.5"
   resolved "https://registry.yarnpkg.com/glob/-/glob-10.4.5.tgz#f4d9f0b90ffdbab09c9d77f5f29b4262517b0956"
   integrity sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==
@@ -20058,22 +20050,20 @@ strnum@^1.0.5:
   resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.5.tgz#5c4e829fe15ad4ff0d20c3db5ac97b73c9b072db"
   integrity sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==
 
-style-dictionary@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.0.2.tgz#d3d61263b9636939addcc4ebb5d1271bd58982ca"
-  integrity sha512-AlDpc9pvxz9EDSp2qduiQRDbI+I6IQ/bmKg+//JKD/xX3SEQGawAGUcKdbPsIkE2Po6eecUOg84uT026zbJCPQ==
+style-dictionary@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.0.4.tgz#12f750284c93f7ade7c64eb3245da3b50df7c9b5"
+  integrity sha512-+k82riDTHnCpOYzKz1Xa4W219dEOI8pc2a2jnWZuAFY11PHvRL1Ao55Lle3t/kQbiRU5QACdC3xeUNuByaKE3w==
   dependencies:
     "@bundled-es-modules/deepmerge" "^4.3.1"
-    "@bundled-es-modules/glob" "^10.4.2"
+    "@bundled-es-modules/glob" "^11.0.3"
     "@bundled-es-modules/memfs" "^4.9.4"
-    "@types/node" "^22.10.5"
     "@zip.js/zip.js" "^2.7.44"
     chalk "^5.3.0"
     change-case "^5.3.0"
     commander "^12.1.0"
     is-plain-obj "^4.1.0"
     json5 "^2.2.2"
-    patch-package "^8.0.0"
     path-unified "^0.2.0"
     prettier "^3.3.3"
     tinycolor2 "^1.6.0"
@@ -20964,11 +20954,6 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
-
-undici-types@~6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.21.0.tgz#691d00af3909be93a7faa13be61b3a5b50ef12cb"
-  integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
 
 unfetch@^5.0.0:
   version "5.0.0"
