@@ -182,29 +182,17 @@ export default {
         }
       });
 
-      tokensArray
-        // Sort tokensArray by id
-        .sort((a, b) => {
-          if (a.id < b.id) {
-            return -1;
-          }
-          if (a.id > b.id) {
-            return 1;
-          }
-          return 0;
-        })
-        // Sort tokensArray so deprecated items are last
-        .sort((a, b) => {
-          if (a.deprecated && !b.deprecated) {
-            return 1;
-          }
-          if (!a.deprecated && b.deprecated) {
-            return -1;
-          }
-          return 0;
-        });
+      // First separate deprecated and non-deprecated items
+      const deprecatedItems = tokensArray.filter((item) => item.deprecated);
+      const regularItems = tokensArray.filter((item) => !item.deprecated);
 
-      return tokensArray;
+      // Apply natural sort to regular items
+      regularItems.sort((a, b) => {
+        return a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' });
+      });
+
+      // Combine the arrays: regular items first, then deprecated
+      return [...regularItems, ...deprecatedItems];
     },
     formatTokenName(format, token) {
       let figmaPrefix = '';
