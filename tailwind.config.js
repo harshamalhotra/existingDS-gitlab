@@ -15,4 +15,5 @@ module.exports = {
     '!./**/node_modules/**',
   ],
   presets: [tailwindDefaults],
+  darkMode: ['variant', ['&:where(.dark *)']],
 };
