@@ -2,6 +2,8 @@
 name: Dashboards
 summary: Guidelines for designing interfaces that present multiple dashboard panels of content and data for analysis and decision-making.
 description: A dashboard is a structured interface that organizes multiple dashboard panels, and is analysis focused. Dashboards can be built-in to GitLab features or created and customized by a user.
+related:
+  - dashboard-panel
 ---
 
 ## Structure

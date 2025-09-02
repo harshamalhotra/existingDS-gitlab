@@ -343,6 +343,10 @@
             "path": "collapse"
           },
           {
+            "title": "Dashboard panel",
+            "path": "dashboard-panel"
+          },
+          {
             "title": "Drawer",
             "path": "drawer"
           },
