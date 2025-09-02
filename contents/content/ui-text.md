@@ -81,13 +81,13 @@ If the context isn’t clear enough, use an object.
 
 When something goes wrong, it's important for us to be clear about what happened, why it happened, and what the next steps to take may be. Vague messages frustrate users and can even block them from completing their task.
 
-When writing an error message, leave out extraneous words like "sorry" and "please." This makes errors easier to read and understand.
+When writing an error message, leave out extraneous words like "sorry" and "please." This makes errors easier to read and understand. If necessary, you can use "please" when the user has been inconvenienced.
 
 <grid>
   <do>Unable to complete your request. Enter a valid email address.</do>
   <dont>400 Bad Request</dont>
-  <do>Enter your email address to sign up with GitLab.</do>
-  <dont>Please enter your email address to sign up with GitLab.</dont>
+  <do>Connection timed out. Please try again.</do>
+  <dont>Something went wrong.</dont>
 </grid>
 
 ## Objective-focused
