@@ -23,8 +23,29 @@ const tableItems = [
   },
 ];
 
+const tableFields = [
+  {
+    key: 'column_one',
+    label: 'First column',
+    sortable: true,
+  },
+  {
+    key: 'col_2',
+    label: 'Second column',
+  },
+  {
+    key: 'col_three',
+    sortable: true,
+    label: 'Third column',
+    thAlignRight: true,
+    tdClass: 'gl-text-right',
+  },
+];
+
 const generateProps = ({
   stickyHeader = false,
+  items = [],
+  fields = null,
   fixed = false,
   footClone = false,
   stacked = false,
@@ -33,6 +54,8 @@ const generateProps = ({
   bordered = false,
 } = {}) => ({
   stickyHeader,
+  items,
+  fields,
   fixed,
   footClone,
   stacked,
@@ -47,8 +70,8 @@ export const Default = (args, { argTypes }) => ({
   template: `
   <gl-table
     :sticky-header="stickyHeader"
-    :items="$options.items"
-    :fields="$options.fields"
+    :items="items"
+    :fields="fields"
     :fixed="fixed"
     :stacked="stacked"
     :foot-clone="footClone"
@@ -65,30 +88,11 @@ export const Default = (args, { argTypes }) => ({
     </template>
   </gl-table>
 `,
-  fields: [
-    {
-      key: 'column_one',
-      label: 'First column',
-      sortable: true,
-      isRowHeader: false,
-    },
-    {
-      key: 'col_2',
-      label: 'Second column',
-      formatter: (value) => value,
-    },
-    {
-      key: 'col_three',
-      sortable: true,
-      label: 'Third column',
-      formatter: (value) => value,
-      thAlignRight: true,
-      tdClass: 'gl-text-right',
-    },
-  ],
-  items: tableItems,
 });
-Default.args = generateProps();
+Default.args = generateProps({
+  items: tableItems,
+  fields: tableFields,
+});
 
 export const Empty = (args, { argTypes }) => ({
   components,
@@ -107,8 +111,8 @@ export const WithFilter = (args, { argTypes }) => ({
       <br />
       <gl-table
               :sticky-header="stickyHeader"
-              :items="$options.items"
-              :fields="$options.fields"
+              :items="items"
+              :fields="fields"
               :fixed="fixed"
               :stacked="stacked"
               :foot-clone="footClone"
@@ -118,14 +122,16 @@ export const WithFilter = (args, { argTypes }) => ({
               selected-variant="primary"
           />
       </div>`,
-  items: tableItems,
   data() {
     return {
       filter: null,
     };
   },
 });
-WithFilter.args = generateProps();
+WithFilter.args = generateProps({
+  items: tableItems,
+  fields: tableFields,
+});
 
 export const WithStickyHeader = (args, { argTypes }) => ({
   components: { ...components, GlFormInput },
@@ -135,8 +141,8 @@ export const WithStickyHeader = (args, { argTypes }) => ({
       <br />
       <gl-table
               :sticky-header="stickyHeader"
-              :items="$options.items"
-              :fields="$options.fields"
+              :items="items"
+              :fields="fields"
               :fixed="fixed"
               :stacked="stacked"
               :foot-clone="footClone"
@@ -146,6 +152,14 @@ export const WithStickyHeader = (args, { argTypes }) => ({
               selected-variant="primary"
           />
       </div>`,
+  data() {
+    return {
+      filter: null,
+    };
+  },
+});
+WithStickyHeader.args = generateProps({
+  stickyHeader: true,
   items: [
     ...tableItems,
     ...tableItems,
@@ -158,25 +172,23 @@ export const WithStickyHeader = (args, { argTypes }) => ({
     ...tableItems,
     ...tableItems,
   ],
-  data() {
-    return {
-      filter: null,
-    };
-  },
+  fields: tableFields,
 });
-WithStickyHeader.args = generateProps({ stickyHeader: true });
 
 export const Stacked = (args, { argTypes }) => ({
   components,
   props: Object.keys(argTypes),
   template: `<gl-table
               :sticky-header="stickyHeader"
-              :items="$options.items"
-              :fields="$options.fields"
+              :items="items"
+              :fields="fields"
               :fixed="fixed"
               :stacked="stacked"
               :foot-clone="footClone"
             />`,
+});
+Stacked.args = generateProps({
+  stacked: true,
   items: [
     ...tableItems.slice(0, 2),
     {
@@ -185,8 +197,8 @@ export const Stacked = (args, { argTypes }) => ({
       col_three: 9101,
     },
   ],
+  fields: tableFields,
 });
-Stacked.args = generateProps({ stacked: true });
 Stacked.decorators = [makeContainer({ width: '300px' })];
 
 export default {

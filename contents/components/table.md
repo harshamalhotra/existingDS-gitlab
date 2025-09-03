@@ -150,7 +150,7 @@ A `<caption>` provides a meaningful description for a table.
 
 - A table header is the row at the top of the table that helps identify the columns below. The header provides clarity if data is non-descriptive or ambiguous.
 - Tables should always include table headers. For short tables and for tables whose data are self explanatory, column headers are sufficient. For long tables or tables where data may be confusing, it is best to include row and column headers.
-- Headers should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use title-case.
+- Headers should be short, descriptive, and relevant. Avoid headers that are too long for the content in the rows below, and use sentence case. There may be exceptions where title case is preferred from a design standpoint.
 
 #### Columns
 
