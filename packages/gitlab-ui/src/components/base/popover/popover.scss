@@ -4,10 +4,8 @@ $gl-popover-max-width: $grid-size * 35;
 
 .gl-popover {
   max-width: $gl-popover-max-width;
-  filter: drop-shadow(0 0 0.5px var(--gl-shadow-color-default))
-        drop-shadow(0 0.5px 1px var(--gl-shadow-color-default))
-        drop-shadow(0 1px 3px var(--gl-shadow-color-default));
   @apply gl-border-none;
+  @apply gl-drop-shadow-md;
   @apply gl-text-sm;
 
   &,

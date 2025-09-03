@@ -496,6 +496,13 @@ module.exports = {
       'x0-y2-b4-s0': '0 2px 4px 0 #0000001a',
     },
     colors,
+    dropShadow: {
+      md: [
+        '0 0 0.5px var(--gl-shadow-color-default, #05050629)',
+        '0 0.5px 1px  var(--gl-shadow-color-default, #05050629)',
+        '0 1px 3px var(--gl-shadow-color-default, #05050629)',
+      ],
+    },
     fill,
     fontFamily: {
       regular:
