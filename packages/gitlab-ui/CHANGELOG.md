@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 121.1.0
+
+### Minor Changes
+
+- bbf3e8d: Add labelLinkAttrs prop to GlAvatarLabeled
+
 ## 121.0.1
 
 ### Patch Changes
