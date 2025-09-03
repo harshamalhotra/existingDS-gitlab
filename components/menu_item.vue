@@ -97,9 +97,7 @@ export default {
     >
       <span class="gl-flex gl-items-center gl-gap-2">
         <span class="gl-min-w-0 gl-flex-1">{{ item.title }}</span>
-        <span class="gl-flex-shrink-0">
-          <gl-icon :class="{ 'gl-rotate-90': isExpanded }" name="chevron-right" />
-        </span>
+        <gl-icon :class="['gl-flex-shrink-0', { 'gl-rotate-90': isExpanded }]" name="chevron-right" />
       </span>
     </button>
     <ul v-show="isExpanded" :id="itemId" :aria-label="item.title" class="gl-m-0 gl-pl-0">
