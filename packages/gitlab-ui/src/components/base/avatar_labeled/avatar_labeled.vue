@@ -23,6 +23,16 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * Attributes to pass to the label link
+     */
+    labelLinkAttrs: {
+      type: Object,
+      required: false,
+      default() {
+        return {};
+      },
+    },
     subLabelLink: {
       type: String,
       required: false,
@@ -76,6 +86,7 @@ export default {
       <div class="-gl-mx-1 -gl-my-1 gl-flex gl-flex-wrap gl-items-center !gl-text-left">
         <gl-link
           v-if="hasLabelLink"
+          v-bind="labelLinkAttrs"
           ref="labelLink"
           :href="labelLink"
           class="gl-avatar-link"

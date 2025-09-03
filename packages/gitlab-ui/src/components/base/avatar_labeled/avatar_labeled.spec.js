@@ -69,7 +69,13 @@ describe('avatar labeled', () => {
 
   describe('with label links', () => {
     beforeEach(() => {
-      buildWrapper({ label, subLabel, labelLink: 'http://label', subLabelLink: 'http://subLabel' });
+      buildWrapper({
+        label,
+        subLabel,
+        labelLink: 'http://label',
+        labelLinkAttrs: { foo: 'bar' },
+        subLabelLink: 'http://subLabel',
+      });
     });
 
     describe('with label link', () => {
@@ -105,6 +111,10 @@ describe('avatar labeled', () => {
       const subLabelLink = wrapper.findAllComponents(GlLink).at(1);
       expect(subLabelLink.text()).toBe(subLabel);
       expect(subLabelLink.attributes('href')).toBe('http://subLabel');
+    });
+
+    it('passes labelLinkAttrs to link', () => {
+      expect(wrapper.findComponent(GlLink).attributes('foo')).toBe('bar');
     });
   });
 
