@@ -96,9 +96,9 @@ For more in-depth and technical details on the dashboard layout framework, see t
 
 The component supports interactive editing of panel position and size within the dashboard grid. Users can:
 
-- Resize panels: Drag panel corners or edges to adjust width and height within the 12-column grid constraints
-- Reposition panels: Drag panels to new locations within the grid, with automatic snapping to grid positions
-- Real-time updates: Changes to the dashboard configuration object are rendered immediately
+- Resize panels: Drag panel corners or edges to adjust width and height within the 12-column grid constraints.
+- Reposition panels: Drag panels to new locations within the grid, with automatic snapping to grid positions.
+- Real-time updates: Changes to the dashboard configuration object are rendered immediately.
 
 **Future development**: Full user-driven customization with support for users to create, modify, and persist custom dashboard configurations
 is currently being developed according to the
@@ -118,7 +118,7 @@ The component does not manage or sync filters and leaves it up to the consumer t
 We expect dashboards using the framework to implement two types of filters:
 
 - Dashboard filters: Applied to every panel and visualization in the dashboard.
-- Panel filters: Applied per panel to refine results available within the dashboard context
+- Panel filters: Applied per panel to refine results available within the dashboard context.
 
 ### Basic implementation
 
