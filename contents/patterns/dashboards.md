@@ -88,4 +88,128 @@ A customizable dashboard supports these additional interactions:
 
 ## Code reference
 
-<todo>Add dashboard example</todo>
+The `GlDashboardLayout` component provides an easy way to render grid-based dashboards using a configuration.
+For more in-depth and technical details on the dashboard layout framework, see the
+[dashboard layout architecture design document](https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/dashboard_layout_framework/).
+
+### Editing the grid
+
+The component supports interactive editing of panel position and size within the dashboard grid. Users can:
+
+- Resize panels: Drag panel corners or edges to adjust width and height within the 12-column grid constraints
+- Reposition panels: Drag panels to new locations within the grid, with automatic snapping to grid positions
+- Real-time updates: Changes to the dashboard configuration object are rendered immediately
+
+**Future development**: Full user-driven customization with support for users to create, modify, and persist custom dashboard configurations
+is currently being developed according to the
+[dashboard customization architecture design document](https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/dashboard_customization_framework/).
+
+### Dashboard panels
+
+The dashboard layout is not opinionated about the panel component used. You are free to choose
+whichever panel component best suits your needs. However, to ensure consistency with
+our design patterns, it's strongly recommended that you use `GlDashboardPanel`.
+
+### Filters
+
+The component provides a `#filters` slot to render your filters in the dashboard layout.
+The component does not manage or sync filters and leaves it up to the consumer to manage this state.
+
+We expect dashboards using the framework to implement two types of filters:
+
+- Dashboard filters: Applied to every panel and visualization in the dashboard.
+- Panel filters: Applied per panel to refine results available within the dashboard context
+
+### Basic implementation
+
+A basic implementation of a static dashboard using the `#panel` slot to render existing
+visualizations wrapped in `GlDashboardPanel`.
+
+<!--
+The below is intentionally *not* an HTML block.
+See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2953.
+-->
+```text
+<script>
+import { GlDashboardLayout, GlDashboardPanel } from '@gitlab/ui';
+
+// Your visualizations
+import UsersVisualization from './my_users_visualization.vue';
+import EventsVisualization from './my_events_visualization.vue';
+
+export default {
+  components: {
+    GlDashboardLayout,
+    GlDashboardPanel,
+    UsersVisualization,
+    EventsVisualization,
+  },
+  data() {
+    return {
+      dashboard: {
+        title: 'My dashboard title',
+        description: 'The dashboard description to render',
+        panels: [
+          {
+            // Each panel ID must be unique within the context of this dashboard object
+            id: 'active-users-panel',
+            dashboardPanelProps: {
+              title: 'Active users over time',
+              // Any additional GlDashboardPanel props go here
+            },
+            component: UsersVisualization,
+            componentProps: {
+              apiPath: '/example-users-api',
+              // Any props you want to pass to your component go here
+            },
+            gridAttributes: {
+              width: 6,
+              height: 4,
+              yPos: 0,
+              xPos: 0,
+            },
+          },
+          {
+            // Each panel ID must be unique within the context of this dashboard object
+            id: 'events-over-time-panel',
+            dashboardPanelProps: {
+              title: 'Events over time',
+              // Any additional GlDashboardPanel props go here
+            },
+            component: EventsVisualization,
+            componentProps: {
+              apiPath: '/example-events-api',
+              // Any props you want to pass to your component go here
+            },
+            gridAttributes: {
+              width: 6,
+              height: 4,
+              yPos: 0,
+              xPos: 6,
+            },
+          },
+        ],
+      },
+    }
+  },
+}
+</script>
+
+<template>
+  <gl-dashboard-layout :config="dashboard">
+    <template #panel="{ panel }">
+      <gl-dashboard-panel v-bind="panel.dashboardPanelProps">
+        <template #body>
+          <component
+            :is="panel.component"
+            class="gl-h-full gl-overflow-hidden"
+            v-bind="panel.componentProps"
+          />
+        </template>
+      </gl-dashboard-panel>
+    </template>
+  </gl-dashboard-layout>
+</template>
+```
+
+<story-viewer component="dashboards-dashboards-layout" title="GlDashboardLayout" view-mode="docs"></story-viewer>
