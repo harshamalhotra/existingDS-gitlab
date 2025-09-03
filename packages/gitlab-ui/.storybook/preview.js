@@ -44,7 +44,7 @@ setConfigs();
 
 const theme = {
   brandTitle: 'Pajamas Design System',
-  brandUrl: 'https://design.gitlab.com/',
+  brandUrl: 'https://design.gitlab.com',
 };
 
 const parameters = {
