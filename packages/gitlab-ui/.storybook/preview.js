@@ -43,8 +43,8 @@ const decorators = [
 setConfigs();
 
 const theme = {
-  brandTitle: 'GitLab UI',
-  brandUrl: 'https://gitlab.com/gitlab-org/gitlab-ui',
+  brandTitle: 'Pajamas Design System',
+  brandUrl: 'https://design.gitlab.com/',
 };
 
 const parameters = {
