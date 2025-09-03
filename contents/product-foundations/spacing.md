@@ -76,3 +76,5 @@ The table is based on the configuration of `1rem = 16px`.
 | `spacing-scale.15`   | `7.5rem`   | `120px`    |
 | `spacing-scale.18`   | `9rem`     | `144px`    |
 | `spacing-scale.20`   | `10rem`    | `160px`    |
+
+View the [design tokens directory](/product-foundations/design-tokens-directory) for spacing transforms and utilities.
