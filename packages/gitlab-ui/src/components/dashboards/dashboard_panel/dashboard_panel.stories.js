@@ -5,7 +5,6 @@ import GlLink from '../../base/link/link.vue';
 import GlButton from '../../base/button/button.vue';
 import GlButtonGroup from '../../base/button_group/button_group.vue';
 import GlDashboardPanel from './dashboard_panel.vue';
-import readme from './dashboard_panel.md';
 
 export default {
   title: 'dashboards/dashboards-panel',
@@ -13,7 +12,8 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/components/dashboard-panel) for usage and implementation details.',
       },
     },
   },
