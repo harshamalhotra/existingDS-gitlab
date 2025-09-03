@@ -54,4 +54,26 @@ We include 12px as one of our measures, but it should only be reserved for right
 
 The table is based on the configuration of `1rem = 16px`.
 
-<design-tokens-table group="spacing-scale"></design-tokens-table>
+| Design token         | Value      | Pixel size |
+| -------------------- | ---------- | ---------- |
+| `spacing-scale.0`    | `0`        | `0`        |
+| `spacing-scale.px`   | `1px`      | `1px`      |
+| `spacing-scale.1`    | `0.125rem` | `2px`      |
+| `spacing-scale.2`    | `0.25rem`  | `4px`      |
+| `spacing-scale.2-5`  | `0.375rem` | `6px`      |
+| `spacing-scale.3`    | `0.5rem`   | `8px`      |
+| `spacing-scale.4`    | `0.75rem`  | `12px`     |
+| `spacing-scale.5`    | `1rem`     | `16px`     |
+| `spacing-scale.6`    | `1.5rem`   | `24px`     |
+| `spacing-scale.7`    | `2rem`     | `32px`     |
+| `spacing-scale.8`    | `2.5rem`   | `40px`     |
+| `spacing-scale.9`    | `3rem`     | `48px`     |
+| `spacing-scale.10`   | `3.5rem`   | `56px`     |
+| `spacing-scale.11`   | `4rem`     | `64px`     |
+| `spacing-scale.11-5` | `4.5rem`   | `72px`     |
+| `spacing-scale.12`   | `5rem`     | `80px`     |
+| `spacing-scale.13`   | `6rem`     | `96px`     |
+| `spacing-scale.15`   | `7.5rem`   | `120px`    |
+| `spacing-scale.18`   | `9rem`     | `144px`    |
+| `spacing-scale.20`   | `10rem`    | `160px`    |
+
