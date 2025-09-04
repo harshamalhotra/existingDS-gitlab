@@ -1,5 +1,35 @@
 # @gitlab/ui
 
+## 122.0.0
+
+### Major Changes
+
+- c3c6b62: Drop Bootstrap's jumbotron component
+
+  We don't use the jumbotron component anywhere, so it can be removed
+  altogether.
+
+- 008f805: Drop Bootstrap's dropdowns responsive styles
+
+  This removes some of Bootstrap's dropdowns responsive styles which we
+  don't use anywhere. This lets us get rid of some media queries which we
+  are moving away from.
+
+- f6487be: Drop Bootstrap's horizontal list groups
+
+  Removes styles for Bootstrap's horizontal list groups which we don't
+  use.
+
+- cc604a1: Remove support for some of Bootstrap's card styles
+
+  We are dropping support for the following Bootstrap card styles:
+  - `card-deck`
+  - `card-group`
+  - `card-columns`
+
+  We don't use these styles in any of our projects, and they leverage media
+  queries which we are moving away from.
+
 ## 121.1.0
 
 ### Minor Changes
