@@ -71,3 +71,9 @@ A layer that appears above another with an existing elevation should follow the 
 A layer that's being moved or dragged uses the large shadow to create a greater sense of depth in the UI and differentiates the element from other elements that may have an existing elevation.
 
 <figure-img label="Interactive layers example with elevation" src="/img/layers/layers-interactive.png"></figure-img>
+
+## Code reference
+
+Shadows can be applied with both `box-shadow` and `filter: drop-shadow()` CSS properties. `gl-shadow-*` utilities apply the `box-shadow` property, and `gl-drop-shadow-*` utilities apply the `filter` property.
+
+`gl-shadow-*` classes are preferred unless shadows are required on pseudo elements in which `gl-drop-shadow-*` can be used, for example tips on dropdowns, tooltips, and popovers.
