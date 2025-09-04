@@ -4,35 +4,6 @@
 
 // Layout
 $grid-size: px-to-rem(8px);
-$gl-spacing-scale-1: 0.25 * $grid-size;
-$gl-spacing-scale-2: 0.5 * $grid-size;
-$gl-spacing-scale-3: $grid-size;
-$gl-spacing-scale-4: 1.5 * $grid-size;
-$gl-spacing-scale-5: 2 * $grid-size;
-$gl-spacing-scale-6: 3 * $grid-size;
-$gl-spacing-scale-7: 4 * $grid-size;
-$gl-spacing-scale-8: 5 * $grid-size;
-$gl-spacing-scale-9: 6 * $grid-size;
-$gl-spacing-scale-10: 7 * $grid-size;
-$gl-spacing-scale-11: 8 * $grid-size;
-$gl-spacing-scale-11-5: 9 * $grid-size;
-$gl-spacing-scale-12: 10 * $grid-size;
-$gl-spacing-scale-13: 12 * $grid-size;
-$gl-spacing-scale-15: 15 * $grid-size;
-$gl-spacing-scale-18: 18 * $grid-size;
-$gl-spacing-scale-20: 20 * $grid-size;
-$gl-spacing-scale-26: 26 * $grid-size;
-$gl-spacing-scale-28: 28 * $grid-size;
-$gl-spacing-scale-30: 30 * $grid-size;
-$gl-spacing-scale-31: 31 * $grid-size;
-$gl-spacing-scale-33: 33 * $grid-size;
-$gl-spacing-scale-34: 34 * $grid-size;
-$gl-spacing-scale-37: 37 * $grid-size;
-$gl-spacing-scale-48: 48 * $grid-size;
-$gl-spacing-scale-62: 62 * $grid-size;
-$gl-spacing-scale-75: 75 * $grid-size;
-$gl-spacing-scale-80: 80 * $grid-size;
-$gl-spacing-scale-88: 88 * $grid-size;
 
 // Responsive breakpoints
 
@@ -201,14 +172,6 @@ $gl-border-size-3: 3px;
 $gl-border-size-4: 4px;
 $gl-border-size-5: 5px;
 $gl-border-size-8: 8px;
-
-// border roundness
-$gl-border-radius-small: $gl-spacing-scale-1;
-$gl-border-radius-base: $gl-spacing-scale-2;
-$gl-border-radius-large: $gl-spacing-scale-3;
-$gl-border-radius-6: $gl-spacing-scale-6;
-$gl-border-radius-7: $gl-spacing-scale-7;
-$gl-border-radius-full: 50%;
 
 // component height
 $gl-button-small-size: px-to-rem(24px);

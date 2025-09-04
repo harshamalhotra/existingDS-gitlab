@@ -1,4 +1,4 @@
-const tailwindDefaults = require('@gitlab/ui/tailwind.defaults');
+const tailwindDefaults = require('./packages/gitlab-ui/tailwind.defaults');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,4 +15,5 @@ module.exports = {
     '!./**/node_modules/**',
   ],
   presets: [tailwindDefaults],
+  darkMode: ['variant', ['&:where(.dark *)']],
 };
