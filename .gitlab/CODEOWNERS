@@ -5,33 +5,60 @@
 [GitLab UI] @gitlab-org/maintainers/gitlab-ui
 /packages/gitlab-ui/
 
-^[GitLab UI Charts] @svedova
-/packages/gitlab-ui/src/components/charts/
-
-[GitLab UI UX] @gitlab-com/gitlab-ux/designers
-/packages/gitlab-ui/tests/__image_snapshots__/
-
-[GitLab UI Design Tokens] @gitlab-org/foundations/design-system
+[Design System][1] @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian
+/contents/get-started/
+/contents/product-foundations/
+/contents/directives/
+/contents/components/
+/contents/patterns/
+/pages/
 /packages/gitlab-ui/src/tokens
 
-[Design system maintainers][1] @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian
-/contents/
-/pages/
+^[Accessibility] @trevorpierce
+/contents/accessibility/
 
-^[Design system reviewers] @gitlab-com/gitlab-ux/designers
-/contents/
-/pages/
+^[AI] @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/ai-human-interaction.md
+/contents/patterns/duo-*
+
+[Brand] @gitlab-com/gitlab-ux/designers
+/contents/brand-*
+/contents/resources.md
+/contents/style-guides.md
+
+[Components] @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/broadcast-message.md
+/contents/components/label.md
+/contents/components/path.md
+/contents/components/stepper.md
+/contents/components/tree.md
+/contents/components/utility-*
+
+^[Data Visualisation] @svedova
+/contents/data-visualization/
+/packages/gitlab-ui/src/components/charts/
 
 # [Figma]
 # While no Figma files are committed to this repo, the following maintainers are available to support any needs related to Figma:
 # @jeldergl @lvanc @seggenberger @danmh @katiemacoy
 
-[Technical Writing][1] @fneill @sselhorn
+^[Illustration] @jmiocene @jelder
+/contents/product-foundations/illustration*
+
+[Technical Writing][1] @gitlab-org/technical-writing
 /contents/content/
 
-^[Objects] @pedroms
+[UX] @gitlab-com/gitlab-ux/designers
+/contents/product-foundations/animation*
+/contents/product-foundations/iconography-animated.md
 /contents/objects/
-
-^[AI] @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
-/contents/patterns/ai-human-interaction.md
-/contents/patterns/duo-*
+/contents/patterns/dashboards.md
+/contents/patterns/drag-and-drop.md
+/contents/patterns/feature-discovery.md
+/contents/patterns/feature-management.md
+/contents/patterns/keyboard-shortcuts.md
+/contents/patterns/merge-request-reports.md
+/contents/patterns/navigation-sidebar.md
+/contents/patterns/notifications.md
+/contents/patterns/settings-management.md
+/packages/gitlab-ui/tests/__image_snapshots__/
