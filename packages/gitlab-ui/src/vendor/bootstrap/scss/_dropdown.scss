@@ -36,20 +36,14 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
-@each $breakpoint in map.keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+.dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
 
-    .dropdown-menu#{$infix}-left {
-      right: auto;
-      left: 0;
-    }
-
-    .dropdown-menu#{$infix}-right {
-      right: 0;
-      left: auto;
-    }
-  }
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
 }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
