@@ -76,4 +76,4 @@ A layer that's being moved or dragged uses the large shadow to create a greater 
 
 Shadows can be applied with both `box-shadow` and `filter: drop-shadow()` CSS properties. `gl-shadow-*` utilities apply the `box-shadow` property, and `gl-drop-shadow-*` utilities apply the `filter` property.
 
-`gl-shadow-*` classes are preferred unless shadows are required on pseudo elements in which `gl-drop-shadow-*` can be used, for example tips on dropdowns, tooltips, and popovers.
+`gl-shadow-*` classes are preferred unless shadows are required on pseudo elements in which `gl-drop-shadow-*` can be used, for example tips on [dropdown](/components/dropdown-overview), [tooltip](/components/tooltip), and [popover](/components/popover).
