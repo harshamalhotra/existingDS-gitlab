@@ -3,7 +3,6 @@ import GlFormGroup from '../../base/form/form_group/form_group.vue';
 import GlFormInput from '../../base/form/form_input/form_input.vue';
 import GlButton from '../../base/button/button.vue';
 import GlDashboardLayout from './dashboard_layout.vue';
-import readme from './dashboard_layout.md';
 
 export default {
   title: 'dashboards/dashboards-layout',
@@ -11,7 +10,8 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/dashboards) for usage and implementation details.',
       },
     },
   },
