@@ -21,6 +21,10 @@
 /contents/patterns/ai-human-interaction.md
 /contents/patterns/duo-*
 
+^[Animation] @jmiocene @jelder
+/contents/product-foundations/animation*
+/contents/product-foundations/iconography-animated.md
+
 [Brand] @gitlab-com/gitlab-ux/designers
 /contents/brand-*
 /contents/resources.md
@@ -34,7 +38,7 @@
 /contents/components/tree.md
 /contents/components/utility-*
 
-^[Data Visualisation] @svedova
+^[Data Visualisation] @svedova @lvanc @jiaan
 /contents/data-visualization/
 /packages/gitlab-ui/src/components/charts/
 
@@ -49,8 +53,6 @@
 /contents/content/
 
 [UX] @gitlab-com/gitlab-ux/designers
-/contents/product-foundations/animation*
-/contents/product-foundations/iconography-animated.md
 /contents/objects/
 /contents/patterns/dashboards.md
 /contents/patterns/drag-and-drop.md
