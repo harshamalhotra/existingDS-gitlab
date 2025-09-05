@@ -465,7 +465,8 @@ module.exports = {
     borderColor,
     borderRadius,
     boxShadow: {
-      DEFAULT: '0 1px 4px 0 #0000004d',
+      DEFAULT:
+        '0 0 1px var(--gl-shadow-color-default, #05050629), 0 0 2px var(--gl-shadow-color-default, #05050629), 0 2px 8px var(--gl-shadow-color-default, #05050629)',
       none: 'none',
       sm: '0 0 2px var(--gl-shadow-color-default, #05050629), 0 1px 4px var(--gl-shadow-color-default, #05050629)',
       md: '0 0 1px var(--gl-shadow-color-default, #05050629), 0 0 2px var(--gl-shadow-color-default, #05050629), 0 2px 8px var(--gl-shadow-color-default, #05050629)',
@@ -514,8 +515,8 @@ module.exports = {
       ],
       lg: [
         '0 0 1px var(--gl-shadow-color-default, #05050629)',
-        '0 0 1px var(--gl-shadow-color-default, #05050629)',
-        '0 2px 6px var(--gl-shadow-color-default, #05050629)',
+        '0 0 2px var(--gl-shadow-color-default, #05050629)',
+        '0 2px 8px var(--gl-shadow-color-default, #05050629)',
       ],
     },
     fill,
