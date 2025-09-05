@@ -1,6 +1,8 @@
 import { mount } from '@vue/test-utils';
 import GlFormCheckbox from './form_checkbox.vue';
 
+jest.mock('lodash/uniqueId', () => (prefix) => `${prefix}mock_unique_id`);
+
 describe('GlFormCheckbox', () => {
   let wrapper;
 
@@ -248,6 +250,16 @@ describe('GlFormCheckbox', () => {
     const input = findInput();
     expect(input.attributes('foo')).toBeDefined();
     expect(input.attributes('foo')).toBe('bar');
+  });
+
+  it.each(['', undefined, null])('falls back to a generated ID if the provided one is %s', (id) => {
+    createComponent({
+      propsData: {
+        id,
+      },
+    });
+
+    expect(findInput().attributes('id')).toBe('gitlab_ui_checkbox_mock_unique_id');
   });
 
   it('default has no input validation classes by default', () => {

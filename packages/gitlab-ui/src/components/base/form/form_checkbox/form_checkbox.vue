@@ -26,7 +26,7 @@ export default {
     id: {
       type: String,
       required: false,
-      default: () => uniqueId(),
+      default: undefined,
     },
     /**
      * The current value of the checkbox(es). Must be an array when there are multiple checkboxes bound to the same v-model.
@@ -112,6 +112,7 @@ export default {
   data() {
     const group = this.getGroup();
     return {
+      internalId: this.id ? this.id : uniqueId('gitlab_ui_checkbox_'),
       localChecked: group ? group.checked : this.checked,
     };
   },
@@ -172,7 +173,7 @@ export default {
 
       return {
         ...this.$attrs,
-        id: this.id,
+        id: this.internalId,
         name: this.computedName,
         disabled,
         required,
@@ -286,7 +287,7 @@ export default {
       :class="stateClass"
       @change="handleChange"
     />
-    <label :for="id" class="custom-control-label">
+    <label :for="internalId" class="custom-control-label">
       <slot></slot>
       <p v-if="Boolean($scopedSlots.help)" class="help-text">
         <slot name="help"></slot>
