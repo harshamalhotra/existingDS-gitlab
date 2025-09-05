@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 122.1.0
+
+### Minor Changes
+
+- c81d055: Define spacing-scale and border-radius design tokens
+
+  Adds `spacing-scale` design tokens
+  Adds `border.radius` design tokens
+
 ## 122.0.0
 
 ### Major Changes
