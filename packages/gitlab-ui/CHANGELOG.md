@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 122.1.1
+
+### Patch Changes
+
+- 65a7d84: `GlFormCheckbox`: use a unique ID if the provided one is falsey
+
+  This ensures that `GlFormCheckbox` generates a proper ID internally when the consumer provides an
+  empty string, or other falsey values as the ID.
+
 ## 122.1.0
 
 ### Minor Changes
