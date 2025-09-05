@@ -497,10 +497,25 @@ module.exports = {
     },
     colors,
     dropShadow: {
+      DEFAULT: [
+        '0 0 0.5px var(--gl-shadow-color-default, #05050629)',
+        '0 0.5px 1px var(--gl-shadow-color-default, #05050629)',
+        '0 1px 3px var(--gl-shadow-color-default, #05050629)',
+      ],
+      none: 'none',
+      sm: [
+        '0 0 1px var(--gl-shadow-color-default, #05050629)',
+        '0 0.5px 2px var(--gl-shadow-color-default, #05050629)',
+      ],
       md: [
         '0 0 0.5px var(--gl-shadow-color-default, #05050629)',
-        '0 0.5px 1px  var(--gl-shadow-color-default, #05050629)',
+        '0 0.5px 1px var(--gl-shadow-color-default, #05050629)',
         '0 1px 3px var(--gl-shadow-color-default, #05050629)',
+      ],
+      lg: [
+        '0 0 1px var(--gl-shadow-color-default, #05050629)',
+        '0 0 1px var(--gl-shadow-color-default, #05050629)',
+        '0 2px 6px var(--gl-shadow-color-default, #05050629)',
       ],
     },
     fill,
