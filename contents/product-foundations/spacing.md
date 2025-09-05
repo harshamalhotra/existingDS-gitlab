@@ -12,69 +12,57 @@ We use 8px as the base for determining our spacial system. In order to create a 
 
 We include 12px as one of our measures, but it should only be reserved for right and left padding of horizontal tabs, buttons, and form elements. This special padding amount allows for better alignment of stacked items while giving elements enough room to breathe. 12px should not be using for any other measurement other than those defined here.
 
+## Demo
+
+<todo>Add spacing class examples</todo>
+
 ## Standard spacing guidelines
 
 `2px` or `4px` is used for spacing within a component.
 
-```html
-<!-- live-example -->
-<dimension-scale size-class="gl-w-1"></dimension-scale>
-<dimension-scale size-class="gl-w-2"></dimension-scale>
-```
+<todo>Add example of 2px spacing</todo>
+
+<todo>Add example of 4px spacing</todo>
 
 `8px` is used to separate related elements.
 
-```html
-<!-- live-example -->
-<dimension-scale size-class="gl-w-3"></dimension-scale>
-```
+<todo>Add example of 8px spacing (buttons)</todo>
 
 `16px` is used to separate unrelated elements.
 
-```html
-<!-- live-example -->
-<dimension-scale size-class="gl-w-5"></dimension-scale>
-```
+<todo>Add example of 16px spacing</todo>
 
 `24px` is used to separate sub-sections of content.
 
-```html
-<!-- live-example -->
-<dimension-scale size-class="gl-w-6"></dimension-scale>
-```
+<todo>Add example of 24px spacing</todo>
 
 `32x` is used to separate sections of content.
 
-```html
-<!-- live-example -->
-<dimension-scale size-class="gl-w-7"></dimension-scale>
-```
+<todo>Add example of 32px spacing</todo>
 
-## Design tokens
+## GitLab UI spacing variable conversion
 
-The table is based on the configuration of `1rem = 16px`.
+The table below is a reference to assist with mapping the spacing rules to [gitlab-ui variables](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/src/scss/variables.scss).
 
-| Design token         | Value      | Pixel size |
-| -------------------- | ---------- | ---------- |
-| `spacing-scale.0`    | `0`        | `0`        |
-| `spacing-scale.px`   | `1px`      | `1px`      |
-| `spacing-scale.1`    | `0.125rem` | `2px`      |
-| `spacing-scale.2`    | `0.25rem`  | `4px`      |
-| `spacing-scale.2-5`  | `0.375rem` | `6px`      |
-| `spacing-scale.3`    | `0.5rem`   | `8px`      |
-| `spacing-scale.4`    | `0.75rem`  | `12px`     |
-| `spacing-scale.5`    | `1rem`     | `16px`     |
-| `spacing-scale.6`    | `1.5rem`   | `24px`     |
-| `spacing-scale.7`    | `2rem`     | `32px`     |
-| `spacing-scale.8`    | `2.5rem`   | `40px`     |
-| `spacing-scale.9`    | `3rem`     | `48px`     |
-| `spacing-scale.10`   | `3.5rem`   | `56px`     |
-| `spacing-scale.11`   | `4rem`     | `64px`     |
-| `spacing-scale.11-5` | `4.5rem`   | `72px`     |
-| `spacing-scale.12`   | `5rem`     | `80px`     |
-| `spacing-scale.13`   | `6rem`     | `96px`     |
-| `spacing-scale.15`   | `7.5rem`   | `120px`    |
-| `spacing-scale.18`   | `9rem`     | `144px`    |
-| `spacing-scale.20`   | `10rem`    | `160px`    |
+The table is based on the configuration of `1rem = 16px` and `$grid-size = 8px`.
 
-View the [design tokens directory](/product-foundations/design-tokens-directory) for spacing transforms and utilities.
+| Spacing variable name | Pixel size |
+| ------ | ------ |
+| $gl-spacing-scale-1 | 2 px |
+| $gl-spacing-scale-2 | 4 px |
+| $gl-spacing-scale-3 | 8 px |
+| $gl-spacing-scale-4 | 12 px |
+| $gl-spacing-scale-5 | 16 px |
+| $gl-spacing-scale-6 | 24 px |
+| $gl-spacing-scale-7 | 32 px |
+| $gl-spacing-scale-8 | 40 px |
+| $gl-spacing-scale-9 | 48 px |
+| $gl-spacing-scale-10 | 56 px |
+| $gl-spacing-scale-11 | 64 px |
+| $gl-spacing-scale-11-5 | 72 px |
+| $gl-spacing-scale-12 | 80 px |
+| $gl-spacing-scale-13 | 96 px |
+| $gl-spacing-scale-15 | 120 px |
+| $gl-spacing-scale-20 | 160 px |
+
+<note>Anytime you see a spacing variable, the number will correspond with the spacing scale here. For example, `.gl-pr-4` uses `$gl-spacing-scale-4` which equals `12px`.</note>
