@@ -106,7 +106,7 @@ See: https://gitlab.com/gitlab-org/gitlab/issues/30055
   @each $breakpointName, $breakpointSize in $gl-form-input-sizes {
     @if $breakpointName != xs {
       .gl-#{$breakpointName}-form-select-#{$name} {
-        @include gl-media-breakpoint-up($breakpointName) {
+        @include gl-container-width-up($breakpointName) {
           max-width: $size;
         }
       }

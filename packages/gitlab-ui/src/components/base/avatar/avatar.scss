@@ -103,109 +103,109 @@ $gl-avatar-identicon-texts: var(--gl-avatar-fallback-text-color-red),
 }
 
 .gl-sm-avatar-s16 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s16;
   }
 }
 
 .gl-md-avatar-s16 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s16;
   }
 }
 
 .gl-lg-avatar-s16 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s16;
   }
 }
 
 .gl-sm-avatar-s24 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s24;
   }
 }
 
 .gl-md-avatar-s24 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s24;
   }
 }
 
 .gl-lg-avatar-s24 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s24;
   }
 }
 
 .gl-sm-avatar-s32 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s32;
   }
 }
 
 .gl-md-avatar-s32 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s32;
   }
 }
 
 .gl-lg-avatar-s32 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s32;
   }
 }
 
 .gl-sm-avatar-s48 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s48;
   }
 }
 
 .gl-md-avatar-s48 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s48;
   }
 }
 
 .gl-lg-avatar-s48 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s48;
   }
 }
 
 .gl-sm-avatar-s64 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s64;
   }
 }
 
 .gl-md-avatar-s64 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s64;
   }
 }
 
 .gl-lg-avatar-s64 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s64;
   }
 }
 
 .gl-sm-avatar-s96 {
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @include gl-avatar-s96;
   }
 }
 
 .gl-md-avatar-s96 {
-  @include gl-media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     @include gl-avatar-s96;
   }
 }
 
 .gl-lg-avatar-s96 {
-  @include gl-media-breakpoint-up(lg) {
+  @include gl-container-width-up(lg) {
     @include gl-avatar-s96;
   }
 }
