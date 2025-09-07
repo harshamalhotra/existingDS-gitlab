@@ -145,6 +145,56 @@
   }
 }
 
+@mixin gl-container-width-up($name, $containerName: '', $includeMQFallback: true) {
+  $min: map.get($breakpoints, $name);
+  @if $min == null {
+    @error "#{$name} is not a valid breakpoint for this @container query.";
+  }
+  @if $min != 0 {
+    @container #{$containerName} (min-width: #{$min}) {
+      body.with-gl-container-queries & {
+        @content;
+      }
+    }
+    @if $includeMQFallback {
+      @media (min-width: $min) {
+        body:not(.with-gl-container-queries) & {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin gl-container-width-down($name, $containerName: '', $includeMQFallback: true) {
+  $max: map.get($breakpoints, $name);
+  @if ($max == null or $max == 0) {
+    @error "#{$name} is not a valid breakpoint for this @container query.";
+  }
+  // The maximum value is reduced by 0.02px to work around the limitations of
+  // `min-` and `max-` prefixes and with fractional container sizes.
+  // See: https://www.w3.org/TR/mediaqueries-4/#mq-min-max
+  // Use 0.02px rather than 0.01px to work around a current rounding bug in Safari.
+  // See https://bugs.webkit.org/show_bug.cgi?id=178261
+  $breakpoint-max-range-precision: 0.02px;
+  $max: $max - $breakpoint-max-range-precision;
+
+  @container #{$containerName} (max-width: #{$max}) {
+    body.with-gl-container-queries & {
+      @content;
+    }
+  }
+  @if $includeMQFallback {
+    @media (max-width: $max) {
+      body:not(.with-gl-container-queries) & {
+        @content;
+      }
+    }
+  }
+}
+
 /**
 * Helper function to resolve font-size value from $gl-font-sizes and
 * $gl-font-sizes-fixed maps.
