@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 122.2.0
+
+### Minor Changes
+
+- 7dbac99: Use filter CSS property for popover, tooltips, and dropdowns drop shadow
+
+  Use `filter: drop-shadow(...)` CSS property instead of `box-shadow` to
+  include tip pseudo elements in popovers, tooltips, and dropdowns
+
 ## 122.1.2
 
 ### Patch Changes
