@@ -77,6 +77,8 @@ export default {
      *
      * - `descriptionLink`: The optional URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
+     *
+     * Note: The `title-popover-content` and `title-popover-title` slots take precedence over this prop when provided.
      */
     titlePopover: {
       type: Object,
@@ -153,8 +155,18 @@ export default {
     hasTitle() {
       return Boolean(this.title);
     },
+    hasTitlePopoverContentSlot() {
+      return Boolean(this.$scopedSlots['title-popover-content']);
+    },
+    hasTitlePopoverTitleSlot() {
+      return Boolean(this.$scopedSlots['title-popover-title']);
+    },
     hasTitlePopover() {
-      return Boolean(this.titlePopover?.description);
+      return (
+        Boolean(this.titlePopover?.description) ||
+        this.hasTitlePopoverContentSlot ||
+        this.hasTitlePopoverTitleSlot
+      );
     },
     hasTitlePopoverLink() {
       return Boolean(this.titlePopover?.descriptionLink);
@@ -206,15 +218,26 @@ export default {
               boundary="viewport"
               :target="titlePopoverId"
             >
-              <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
-                <template #link="{ content }">
-                  <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
-                    content
-                  }}</gl-link>
+              <template v-if="hasTitlePopoverTitleSlot" #title>
+                <slot name="title-popover-title"></slot>
+              </template>
+
+              <template v-if="hasTitlePopoverContentSlot" #default>
+                <slot name="title-popover-content"></slot>
+              </template>
+
+              <!-- Fallback to prop-based content when no slot is provided -->
+              <template v-if="!hasTitlePopoverContentSlot">
+                <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
+                  <template #link="{ content }">
+                    <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
+                      content
+                    }}</gl-link>
+                  </template>
+                </gl-sprintf>
+                <template v-else>
+                  {{ titlePopover.description }}
                 </template>
-              </gl-sprintf>
-              <template v-else>
-                {{ titlePopover.description }}
               </template>
             </gl-popover>
           </template>

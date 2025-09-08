@@ -142,6 +142,46 @@ WithTitlePopover.args = {
   },
 };
 
+export const WithTitlePopoverContent = (args, { argTypes }) => ({
+  components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
+  props: Object.keys(argTypes),
+  ...chartProps,
+  template: wrap(
+    `
+    <template #title-popover-title>Panel Details</template>
+    <template #title-popover-content>
+        <p class="gl-mb-3">This panel demonstrates HTML content using both title-popover slots.</p>
+        <ul class="gl-mb-3 gl-pl-4">
+          <li><strong>HTML formatting</strong> is supported</li>
+          <li><gl-link href="https://design.gitlab.com" target="_blank">External links</gl-link></li>
+          <li>Complex content layouts</li>
+        </ul>
+        <div class="gl-p-3 gl-bg-gray-50 gl-rounded-base">
+          <gl-icon name="information-o" class="gl-text-blue-500 gl-mr-2" />
+          <span class="gl-text-sm">Both <code>title-popover-title</code> and <code>title-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
+        </div>
+    </template>
+    <template #body>
+      <p class="gl-text-subtle">Your visualization here</p>
+    </template>
+  `,
+    // Margin top added to give space for the popover
+    marginTop,
+  ),
+});
+WithTitlePopoverContent.args = {
+  ...Default.args,
+  title: 'Dashboard panel',
+};
+WithTitlePopoverContent.parameters = {
+  docs: {
+    description: {
+      story:
+        'This story demonstrates both the `title-popover-title` and `title-popover-content` slots which allow for HTML content in the title popover. These slots take precedence over the `titlePopover` prop when provided.',
+    },
+  },
+};
+
 export const WithLoading = Template.bind({});
 WithLoading.args = {
   ...Default.args,
