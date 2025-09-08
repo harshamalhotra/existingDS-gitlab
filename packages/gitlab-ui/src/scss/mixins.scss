@@ -152,13 +152,13 @@
   }
   @if $min != 0 {
     @container #{$containerName} (min-width: #{$min}) {
-      body.with-gl-container-queries & {
+      :where(body.with-gl-container-queries) & {
         @content;
       }
     }
     @if $includeMQFallback {
       @media (min-width: $min) {
-        body:not(.with-gl-container-queries) & {
+        :where(body:not(.with-gl-container-queries)) & {
           @content;
         }
       }
@@ -182,13 +182,13 @@
   $max: $max - $breakpoint-max-range-precision;
 
   @container #{$containerName} (max-width: #{$max}) {
-    body.with-gl-container-queries & {
+    :where(body.with-gl-container-queries) & {
       @content;
     }
   }
   @if $includeMQFallback {
     @media (max-width: $max) {
-      body:not(.with-gl-container-queries) & {
+      :where(body:not(.with-gl-container-queries)) & {
         @content;
       }
     }
