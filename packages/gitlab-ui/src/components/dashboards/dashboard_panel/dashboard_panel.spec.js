@@ -307,7 +307,7 @@ describe('GlDashboardPanel', () => {
     });
   });
 
-  describe('with title popover slots', () => {
+  describe('with title-popover slots', () => {
     const findCustomPopoverContent = () => findByTestId('custom-popover-content');
     const findCustomPopoverTitle = () => findByTestId('custom-popover-title');
     const titlePopoverSlotContent =
@@ -341,6 +341,10 @@ describe('GlDashboardPanel', () => {
         createWrapper({
           props: {
             title: 'Panel Title',
+            titlePopover: {
+              description: 'This should be shown, %{linkStart}learn more%{linkEnd}',
+              descriptionLink: '/foo',
+            },
           },
           slots: {
             'title-popover-title': titlePopoverSlotTitle,
@@ -355,6 +359,11 @@ describe('GlDashboardPanel', () => {
       it('renders the custom popover title', () => {
         expect(findCustomPopoverTitle().exists()).toBe(true);
         expect(findCustomPopoverTitle().text()).toBe('Custom Title');
+      });
+
+      it('renders the prop-based content', () => {
+        expect(findPanelTitlePopover().text()).toContain('This should be shown');
+        expect(findPanelTitlePopoverLink().attributes('href')).toBe('/foo');
       });
     });
 
@@ -400,12 +409,16 @@ describe('GlDashboardPanel', () => {
         });
       });
 
-      it('renders the slot content instead of prop-based content', () => {
+      it('renders the popover icon', () => {
         expect(findPanelTitlePopoverIcon().exists()).toBe(true);
+      });
+
+      it('renders the slot content', () => {
         expect(findCustomPopoverContent().exists()).toBe(true);
         expect(findCustomPopoverContent().text()).toBe('Custom popover content');
+      });
 
-        // Should not render the prop-based content
+      it('does not render the prop-based content', () => {
         expect(findPanelTitlePopover().text()).not.toContain('This should not be shown');
         expect(findPanelTitlePopoverLink().exists()).toBe(false);
       });

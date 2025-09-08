@@ -218,15 +218,16 @@ export default {
               boundary="viewport"
               :target="titlePopoverId"
             >
+              <!-- @slot The title of the popover -->
               <template v-if="hasTitlePopoverTitleSlot" #title>
                 <slot name="title-popover-title"></slot>
               </template>
 
-              <template v-if="hasTitlePopoverContentSlot" #default>
+              <!-- @slot The content of the popover. -->
+              <template v-if="hasTitlePopoverContentSlot">
                 <slot name="title-popover-content"></slot>
               </template>
 
-              <!-- Fallback to prop-based content when no slot is provided -->
               <template v-if="!hasTitlePopoverContentSlot">
                 <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
                   <template #link="{ content }">
@@ -235,9 +236,7 @@ export default {
                     }}</gl-link>
                   </template>
                 </gl-sprintf>
-                <template v-else>
-                  {{ titlePopover.description }}
-                </template>
+                <template v-else> {{ titlePopover.description }} </template>
               </template>
             </gl-popover>
           </template>
