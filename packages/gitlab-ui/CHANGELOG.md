@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 122.3.0
+
+### Minor Changes
+
+- e0afad0: Change `checked` type to `undefined`
+
 ## 122.2.1
 
 ### Patch Changes
