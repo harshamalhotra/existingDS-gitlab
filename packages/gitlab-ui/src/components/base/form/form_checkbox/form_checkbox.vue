@@ -32,7 +32,7 @@ export default {
      * The current value of the checkbox(es). Must be an array when there are multiple checkboxes bound to the same v-model.
      */
     checked: {
-      type: [Array, Boolean, String],
+      type: undefined,
       required: false,
       default: null,
     },
