@@ -19,4 +19,12 @@ Default.args = generateProps();
 export default {
   title: 'regions/dashboard-skeleton',
   component: GlDashboardSkeleton,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/dashboards) for usage and implementation details.',
+      },
+    },
+  },
 };
