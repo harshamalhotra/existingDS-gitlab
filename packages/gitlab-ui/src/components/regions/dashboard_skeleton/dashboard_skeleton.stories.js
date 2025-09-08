@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlDashboardSkeleton from './dashboard_skeleton.vue';
-import readme from './dashboard_skeleton.md';
 
 const defaultValue = propDefaultFactory(GlDashboardSkeleton);
 
@@ -20,11 +19,4 @@ Default.args = generateProps();
 export default {
   title: 'regions/dashboard-skeleton',
   component: GlDashboardSkeleton,
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
-      },
-    },
-  },
 };
