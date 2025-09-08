@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 122.2.1
+
+### Patch Changes
+
+- e132332: Fix edge case of @max classes
+
+  Media and container queries generated with the `@max-` prefix (e.g. `@max-sm`)
+  should consider sizes up to a given value **without** including that value.
+
 ## 122.2.0
 
 ### Minor Changes
