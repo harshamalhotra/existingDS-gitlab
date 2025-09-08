@@ -78,8 +78,8 @@ const tailwindCQsMQsPlugin = (buildCQs = false) =>
 
       matchVariant(
         ...buildVariantMatcher('@max', {
-          cqBuilder: (modifier, value) => `@container ${modifier ?? ''} (max-width: ${value})`,
-          mqBuilder: (value) => `@media (max-width: ${value})`,
+          cqBuilder: (modifier, value) => `@container ${modifier ?? ''} (width < ${value})`,
+          mqBuilder: (value) => `@media (width < ${value})`,
         }),
       );
     },
