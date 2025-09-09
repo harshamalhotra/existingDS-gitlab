@@ -153,12 +153,12 @@
   @if $min != 0 {
     @container #{$containerName} (min-width: #{$min}) {
       @if & {
-        :where(body.with-gl-container-queries) & {
+        :where(html.with-gl-container-queries) & {
           @content
         }
       }
       @else {
-        :where(body.with-gl-container-queries) {
+        :where(html.with-gl-container-queries) {
           @content
         }
       }
@@ -166,12 +166,12 @@
     @if $includeMQFallback {
       @media (min-width: $min) {
         @if & {
-          :where(body:not(.with-gl-container-queries)) & {
+          :where(html:not(.with-gl-container-queries)) & {
             @content;
           }
         }
         @else {
-          :where(body:not(.with-gl-container-queries))  {
+          :where(html:not(.with-gl-container-queries))  {
             @content
           }
         }
