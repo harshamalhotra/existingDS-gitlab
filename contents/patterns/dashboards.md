@@ -88,11 +88,13 @@ A customizable dashboard supports these additional interactions:
 
 ## Code reference
 
+### GlDashboardLayout
+
 The `GlDashboardLayout` component provides an easy way to render grid-based dashboards using a configuration.
 For more in-depth and technical details on the dashboard layout framework, see the
 [dashboard layout architecture design document](https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/dashboard_layout_framework/).
 
-### Editing the grid
+#### Editing the grid
 
 The component supports interactive editing of panel position and size within the dashboard grid. Users can:
 
@@ -104,13 +106,13 @@ The component supports interactive editing of panel position and size within the
 is currently being developed according to the
 [dashboard customization architecture design document](https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/dashboard_customization_framework/).
 
-### Dashboard panels
+#### Dashboard panels
 
 The dashboard layout is not opinionated about the panel component used. You are free to choose
 whichever panel component best suits your needs. However, to ensure consistency with
 our design patterns, it's strongly recommended that you use `GlDashboardPanel`.
 
-### Filters
+#### Filters
 
 The component provides a `#filters` slot to render your filters in the dashboard layout.
 The component does not manage or sync filters and leaves it up to the consumer to manage this state.
@@ -120,7 +122,7 @@ We expect dashboards using the framework to implement two types of filters:
 - Dashboard filters: Applied to every panel and visualization in the dashboard.
 - Panel filters: Applied per panel to refine results available within the dashboard context.
 
-### Basic implementation
+#### Basic implementation
 
 A basic implementation of a static dashboard using the `#panel` slot to render existing
 visualizations wrapped in `GlDashboardPanel`.
@@ -213,3 +215,10 @@ export default {
 ```
 
 <story-viewer component="dashboards-dashboards-layout" title="GlDashboardLayout" view-mode="docs"></story-viewer>
+
+### GlDashboardSkeleton
+
+This is a skeleton loading component for a dashboards page. Renders three cards, but can be adjusted
+based on the `cards` prop.
+
+<story-viewer component="regions-dashboard-skeleton" title="GlDashboardSkeleton" view-mode="docs"></story-viewer>

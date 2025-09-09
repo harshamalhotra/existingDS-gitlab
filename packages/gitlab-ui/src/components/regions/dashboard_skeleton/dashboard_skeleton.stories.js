@@ -1,6 +1,5 @@
 import { propDefaultFactory } from '../../../utils/stories_utils';
 import GlDashboardSkeleton from './dashboard_skeleton.vue';
-import readme from './dashboard_skeleton.md';
 
 const defaultValue = propDefaultFactory(GlDashboardSkeleton);
 
@@ -23,7 +22,8 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: readme,
+        component:
+          'See [Pajamas Design System documentation](https://design.gitlab.com/patterns/dashboards) for usage and implementation details.',
       },
     },
   },
