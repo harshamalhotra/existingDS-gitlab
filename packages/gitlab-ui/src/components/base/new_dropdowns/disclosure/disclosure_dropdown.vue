@@ -348,7 +348,9 @@ export default {
       if (
         this.autoClose &&
         e.target.closest(ITEM_SELECTOR) &&
-        e.target.closest(DROPDOWN_SELECTOR) === this.$refs.baseDropdown.$el
+        (e.target.closest(DROPDOWN_SELECTOR) === this.$refs.baseDropdown ||
+          e.target.closest('.gl-new-dropdown-container') ===
+            this.$refs.baseDropdown.$refs.dropdownContainer)
       ) {
         this.closeAndFocus();
       }

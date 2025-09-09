@@ -39,6 +39,11 @@ describe('GlCollapsibleListbox', () => {
     wrapper = mount(GlCollapsibleListbox, {
       propsData,
       slots,
+      stubs: {
+        MountingPortal: {
+          template: '<div><slot /></div>',
+        },
+      },
       attachTo: document.body,
     });
   };

@@ -41,6 +41,11 @@ describe('GlDisclosureDropdown', () => {
         GlDisclosureDropdownGroup,
         GlCollapsibleListbox,
       },
+      stubs: {
+        MountingPortal: {
+          template: '<div><slot /></div>',
+        },
+      },
       attachTo: document.body,
       ...options,
     });

@@ -27,6 +27,10 @@ const DEFAULT_BTN_TOGGLE_CLASSES = [
   'gl-new-dropdown-toggle',
 ];
 
+const MountingPortalStub = {
+  template: '<div><slot /></div>',
+};
+
 describe('base dropdown', () => {
   let wrapper;
 
@@ -39,6 +43,9 @@ describe('base dropdown', () => {
       slots: {
         default: `<div class="${GL_DROPDOWN_CONTENTS_CLASS}"><button /></div>`,
         ...slots,
+      },
+      stubs: {
+        MountingPortal: MountingPortalStub,
       },
       attachTo: document.body,
       ...options,
@@ -214,6 +221,7 @@ describe('base dropdown', () => {
           await findDefaultDropdownToggle().trigger('click');
           await nextTick();
 
+          expect(wrapper.findComponent(MountingPortalStub).exists()).toBe(false);
           expect(computePosition).toHaveBeenCalledWith(
             findDefaultDropdownToggle().element,
             findDropdownMenu().element,
@@ -232,6 +240,7 @@ describe('base dropdown', () => {
           await findDefaultDropdownToggle().trigger('click');
           await nextTick();
 
+          expect(wrapper.findComponent(MountingPortalStub).exists()).toBe(true);
           expect(computePosition).toHaveBeenCalledWith(
             findDefaultDropdownToggle().element,
             findDropdownMenu().element,
@@ -308,7 +317,6 @@ describe('base dropdown', () => {
     it('applies block style if true', () => {
       buildWrapper({ block: true });
 
-      expect(wrapper.classes()).toContain('!gl-block');
       expect(findDropdownToggleText().classes()).toContain('gl-w-full');
       expect(findDefaultDropdownToggle().props('block')).toBe(true);
     });

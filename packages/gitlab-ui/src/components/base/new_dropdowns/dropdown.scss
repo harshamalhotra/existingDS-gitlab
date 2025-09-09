@@ -2,18 +2,6 @@
   @apply gl-inline-flex;
   @apply gl-align-middle;
 
-  .gl-new-dropdown-arrow {
-    width: 8px;
-    height: 8px;
-
-    // blend in with the dropdown background
-    background: var(--gl-dropdown-background-color);
-    // these create the 45deg cutoff angle at the base of the caret
-    border-bottom: 1px solid var(--gl-dropdown-background-color);
-    border-right: 1px solid var(--gl-dropdown-background-color);
-    position: absolute;
-  }
-
   .gl-new-dropdown-custom-toggle {
     *:first-child {
       @apply gl-cursor-pointer;
@@ -21,42 +9,6 @@
       &:focus {
         @apply gl-focus;
       }
-    }
-  }
-
-  .gl-new-dropdown-panel {
-    @apply gl-hidden;
-    @apply gl-bg-dropdown;
-    border-radius: var(--gl-dropdown-border-radius);
-    @apply gl-drop-shadow-md;
-    top: 0;
-    left: 0;
-    min-width: $gl-new-dropdown-min-width;
-    max-width: $gl-new-dropdown-max-width;
-    z-index: 1000;
-  }
-
-  .gl-new-dropdown-inner {
-    @apply gl-flex;
-    @apply gl-flex-col;
-    max-height: $gl-max-dropdown-max-height;
-  }
-
-  .gl-new-dropdown-contents {
-    position: relative;
-    @apply gl-grow;
-    @apply gl-overflow-y-auto;
-    @apply gl-pl-0;
-    @apply gl-mb-0;
-    @apply gl-py-2;
-    @apply gl-list-none;
-
-    &:focus-visible {
-      @apply gl-focus;
-    }
-
-    ul {
-      @apply gl-list-none;
     }
   }
 
@@ -135,6 +87,57 @@
 
     &.btn-sm {
       @apply gl-pl-0;
+    }
+  }
+}
+
+.gl-new-dropdown-container {
+  .gl-new-dropdown-arrow {
+    width: 8px;
+    height: 8px;
+
+    // blend in with the dropdown background
+    background: var(--gl-dropdown-background-color);
+    // these create the 45deg cutoff angle at the base of the caret
+    border-bottom: 1px solid var(--gl-dropdown-background-color);
+    border-right: 1px solid var(--gl-dropdown-background-color);
+
+    position: absolute;
+  }
+
+  .gl-new-dropdown-panel {
+    @apply gl-hidden;
+    @apply gl-bg-dropdown;
+    border-radius: var(--gl-dropdown-border-radius);
+    @apply gl-drop-shadow-md;
+    top: 0;
+    left: 0;
+    min-width: $gl-new-dropdown-min-width;
+    max-width: $gl-new-dropdown-max-width;
+    z-index: 1000;
+  }
+
+  .gl-new-dropdown-inner {
+    @apply gl-flex;
+    @apply gl-flex-col;
+    max-height: $gl-max-dropdown-max-height;
+  }
+
+  .gl-new-dropdown-contents {
+    position: relative;
+    @apply gl-grow;
+    @apply gl-overflow-y-auto;
+    @apply gl-pl-0;
+    @apply gl-mb-0;
+    @apply gl-py-2;
+    @apply gl-list-none;
+
+    &:focus-visible {
+      @apply gl-focus;
+    }
+
+    ul {
+      @apply gl-list-none;
     }
   }
 
