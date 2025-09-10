@@ -13,6 +13,7 @@ import {
 } from '../helpers/gitlab_ui';
 import ColorChip from './color_chip.vue';
 import DesignToken from './design_token.vue';
+import DimensionScale from './dimension_scale.vue';
 
 export default {
   name: 'DesignTokensTable',
@@ -25,6 +26,7 @@ export default {
     GlPagination,
     ColorChip,
     DesignToken,
+    DimensionScale,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
@@ -178,29 +180,17 @@ export default {
         }
       });
 
-      tokensArray
-        // Sort tokensArray by id
-        .sort((a, b) => {
-          if (a.id < b.id) {
-            return -1;
-          }
-          if (a.id > b.id) {
-            return 1;
-          }
-          return 0;
-        })
-        // Sort tokensArray so deprecated items are last
-        .sort((a, b) => {
-          if (a.deprecated && !b.deprecated) {
-            return 1;
-          }
-          if (!a.deprecated && b.deprecated) {
-            return -1;
-          }
-          return 0;
-        });
+      // First separate deprecated and non-deprecated items
+      const deprecatedItems = tokensArray.filter((item) => item.deprecated);
+      const regularItems = tokensArray.filter((item) => !item.deprecated);
 
-      return tokensArray;
+      // Apply natural sort to regular items
+      regularItems.sort((a, b) => {
+        return a.id.localeCompare(b.id, undefined, { numeric: true, sensitivity: 'base' });
+      });
+
+      // Combine the arrays: regular items first, then deprecated
+      return [...regularItems, ...deprecatedItems];
     },
     formatTokenName(format, token) {
       let figmaPrefix = '';
@@ -273,6 +263,7 @@ export default {
     >
       <template #cell(sample)="{ item: { name, type, cssName } }">
         <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
+        <dimension-scale v-else-if="type === 'dimension'" direction="col" :value="cssName" />
       </template>
       <template
         #cell(name)="{
