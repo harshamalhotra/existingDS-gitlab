@@ -5,7 +5,7 @@
   >
     <span class="gl-text-sm gl-font-semibold">Search</span>
     <span
-      class="gl-border gl-inline-block gl-rounded-base gl-px-2 gl-py-1 gl-transition-all group-hover:gl-border-strong"
+      class="gl-border gl-inline-block gl-rounded-default gl-px-2 gl-py-1 gl-transition-all group-hover:gl-border-strong"
       ><kbd>{{ modifierKey }}</kbd> <kbd>K</kbd></span
     >
   </button>

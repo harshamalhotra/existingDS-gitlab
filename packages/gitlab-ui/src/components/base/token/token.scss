@@ -1,7 +1,7 @@
 .gl-token {
   color: var(--gl-token-foreground-color);
   background-color: var(--gl-token-background-color);
-  @apply gl-rounded-small;
+  @apply gl-rounded-sm;
   @apply gl-pl-3;
   @apply gl-inline-flex;
   @apply gl-flex-col;

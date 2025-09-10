@@ -56,7 +56,7 @@ export default {
 <template>
   <figure
     :aria-label="label"
-    class="gl-mx-auto gl-my-7 gl-block gl-rounded-base gl-text-center"
+    class="gl-rounded-default gl-mx-auto gl-my-7 gl-block gl-text-center"
     :class="{
       'gl-mb-7 gl-bg-neutral-950 gl-px-5 gl-py-6 gl-text-neutral-0': dark,
     }"

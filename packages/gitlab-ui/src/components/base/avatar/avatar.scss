@@ -36,21 +36,21 @@ $gl-avatar-identicon-texts: var(--gl-avatar-fallback-text-color-red),
   @apply gl-w-5;
   @apply gl-h-5;
   font-size: map.get($gl-font-sizes, 100);
-  @apply gl-rounded-small;
+  @apply gl-rounded-sm;
 }
 
 @mixin gl-avatar-s24 {
   @apply gl-w-6;
   @apply gl-h-6;
   font-size: map.get($gl-font-sizes, 400);
-  @apply gl-rounded-base;
+  @apply gl-rounded-md;
 }
 
 @mixin gl-avatar-s32 {
   @apply gl-w-7;
   @apply gl-h-7;
   font-size: map.get($gl-font-sizes, 500);
-  @apply gl-rounded-base;
+  @apply gl-rounded-md;
 }
 
 @mixin gl-avatar-s48 {

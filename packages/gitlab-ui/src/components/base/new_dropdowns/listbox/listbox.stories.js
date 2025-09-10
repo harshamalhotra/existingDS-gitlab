@@ -317,7 +317,7 @@ export const CustomToggle = (args, { argTypes }) => ({
   template: template({
     content: `
     <template #toggle>
-     <button class="gl-rounded-base gl-border-none gl-p-2 gl-bg-strong">
+     <button class="gl-rounded-default gl-border-none gl-p-2 gl-bg-strong">
        <span class="gl-sr-only">
           {{selected}}
        </span>

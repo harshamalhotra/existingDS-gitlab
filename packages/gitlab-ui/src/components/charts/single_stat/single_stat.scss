@@ -5,7 +5,7 @@
 
   &:hover[tabindex='0'] {
     @apply gl-bg-strong;
-    @apply gl-rounded-base;
+    @apply gl-rounded-default;
   }
 
   .gl-single-stat-number {

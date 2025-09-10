@@ -81,7 +81,7 @@
   }
 
   .idiff {
-    @apply gl-rounded-base;
+    @apply gl-rounded-default;
     @apply gl-inline-flex;
     @apply gl-px-2;
   }
@@ -95,7 +95,7 @@
   }
 
   code {
-    @apply gl-rounded-base;
+    @apply gl-rounded-default;
     @apply gl-bg-strong;
     @apply gl-text-strong;
     @apply gl-px-2;
@@ -103,7 +103,7 @@
   }
 
   pre {
-    @apply gl-rounded-base;
+    @apply gl-rounded-default;
     @apply gl-py-3;
     @apply gl-px-4;
     box-shadow: inset 0 0 0 $gl-border-size-1 var(--gl-border-color-default);

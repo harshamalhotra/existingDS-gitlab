@@ -89,7 +89,7 @@ export default {
   </li>
   <li v-else-if="hasChildren" class="gl-m-0 gl-list-none gl-p-0">
     <button
-      class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-base gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+      class="sidebar__nav-toggle gl-rounded-default gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
       :class="depthClass"
       :aria-expanded="isExpanded"
       :aria-controls="itemId"
@@ -117,7 +117,7 @@ export default {
       :href="path"
       target="_blank"
       rel="noopener"
-      class="sidebar__nav-anchor gl-flex gl-gap-2 gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+      class="sidebar__nav-anchor gl-rounded-default gl-flex gl-gap-2 gl-p-3 gl-pl-4 !gl-no-underline"
       :class="depthClass"
     >
       <span>{{ item.title }}</span>
@@ -126,7 +126,7 @@ export default {
     <nuxt-link
       v-else
       :to="path"
-      class="sidebar__nav-anchor gl-flex gl-rounded-base gl-p-3 gl-pl-4 !gl-no-underline"
+      class="sidebar__nav-anchor gl-rounded-default gl-flex gl-p-3 gl-pl-4 !gl-no-underline"
       :class="depthClass"
       @click.prevent="navTree.activateNode(item)"
     >

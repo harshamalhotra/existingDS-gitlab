@@ -37,43 +37,43 @@ const MorphTemplate = (args, { argTypes }) => ({
   },
   template: `
   <div class="gl-flex gl-gap-5 gl-flex-wrap hover:gl-cursor-pointer gl-select-none" @click="animationsOn = !animationsOn">
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-todo-icon :variant="variant" :aria-label="ariaLabel" name="todo" :isOn="animationsOn" />
       todo
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-star-icon :variant="variant" :aria-label="ariaLabel" name="star" :isOn="animationsOn" />
       star
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-sort-icon :variant="variant" :aria-label="ariaLabel" name="sort" :isOn="animationsOn" />
       sort
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-smile-icon :variant="variant" :aria-label="ariaLabel" name="smile" :isOn="animationsOn" />
       smile
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-sidebar-icon :variant="variant" :aria-label="ariaLabel" name="sidebar" :isOn="animationsOn" />
       sidebar
     </div>
-    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-notification-icon :variant="variant" :aria-label="ariaLabel" name="notifications" :isOn="animationsOn" />
       notifications
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-chevron-right-down-icon :variant="variant" :aria-label="ariaLabel" name="chevron_right_down" :isOn="animationsOn" />
       chevron-right-down
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-chevron-lg-right-down-icon :variant="variant" :aria-label="ariaLabel" name="chevron_lg_right_down" :isOn="animationsOn" />
       chevron-lg-right-down
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-chevron-down-up-icon :variant="variant" :aria-label="ariaLabel" name="chevron_down_up" :isOn="animationsOn" />
       chevron-down-up
     </div>
-    <div class="gl-p-4 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2">
+    <div class="gl-p-4 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2">
       <gl-animated-chevron-lg-down-up-icon :variant="variant" :aria-label="ariaLabel" name="chevron_lg_down_up" :isOn="animationsOn" />
       chevron-lg-down-up
     </div>
@@ -97,15 +97,15 @@ const InfiniteTemplate = (args, { argTypes }) => ({
   },
   template: `
   <div class="gl-flex gl-gap-5 gl-flex-wrap gl-select-none">
-    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
+    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
       <gl-animated-upload-icon :variant="variant" :aria-label="ariaLabel" name="upload" :isOn="animationsOn" />
       upload
     </div>
-    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
+    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
       <gl-animated-duo-chat-icon :variant="variant" :aria-label="ariaLabel" name="duo_chat" :isOn="animationsOn" />
       duo-chat
     </div>
-    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-base gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
+    <div class="gl-py-4 gl-px-5 gl-border gl-rounded-default gl-flex gl-flex-col gl-items-center gl-gap-2" @mouseenter="animationsOn = true" @mouseleave="animationsOn = false">
       <gl-animated-loader-icon :variant="variant" :aria-label="ariaLabel" name="loader" :isOn="animationsOn" />
       loader
     </div>

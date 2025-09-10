@@ -16,7 +16,7 @@ export default {
 <template>
   <div class="row dashboard-cards">
     <div v-for="index in cards" :key="index" class="col-12 col-md-6 col-xl-4 gl-px-3">
-      <div class="gl-rounded-t-base gl-bg-status-neutral gl-py-6"></div>
+      <div class="gl-rounded-t-default gl-bg-status-neutral gl-py-6"></div>
       <div class="dashboard-card-body card-body gl-bg-gray-50">
         <div class="row">
           <div class="col-1 gl-self-center">
