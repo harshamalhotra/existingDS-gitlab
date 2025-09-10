@@ -537,7 +537,6 @@ $gl-action-confirm-background-color-active: rgba(11, 92, 173, 0.24); // Used for
 $gl-action-danger-background-color-default: rgba(245, 127, 108, 0.0); // Used for the background of a danger (destructive) action in the default state.
 $gl-action-danger-background-color-hover: rgba(245, 127, 108, 0.16); // Used for the background of a danger (destructive) action in the hover state.
 $gl-action-danger-background-color-active: rgba(174, 24, 0, 0.24); // Used for the background of a danger (destructive) action in the active state.
-$gl-border-radius-full: 9999px;
 $gl-text-primary: #28272d; // Use text.color.default instead.
 $gl-text-secondary: #737278; // Use text.color.subtle instead.
 $gl-text-tertiary: #89888d; // Use text.color.disabled instead.
@@ -825,20 +824,6 @@ $gl-border-color-default: $gl-color-neutral-100; // Used for the default border 
 $gl-border-color-subtle: $gl-color-neutral-50; // Used for a subtle border in combination with the default background.
 $gl-border-color-strong: $gl-color-neutral-200; // Used for a distinct border that emphasizes an edge or boundaries.
 $gl-border-color-transparent: $gl-color-alpha-0; // Used when a border needs to be present, but not visibly perceived.
-$gl-border-radius-6: $gl-spacing-scale-6;
-$gl-border-radius-7: $gl-spacing-scale-7;
-$gl-border-radius-none: $gl-spacing-scale-0;
-$gl-border-radius-base: $gl-spacing-scale-2;
-$gl-border-radius-xs: $gl-spacing-scale-px;
-$gl-border-radius-sm: $gl-spacing-scale-1;
-$gl-border-radius-md: $gl-spacing-scale-2;
-$gl-border-radius-lg: $gl-spacing-scale-3;
-$gl-border-radius-xl: $gl-spacing-scale-4;
-$gl-border-radius-2xl: $gl-spacing-scale-5;
-$gl-border-radius-3xl: $gl-spacing-scale-6;
-$gl-border-radius-small: $gl-spacing-scale-1;
-$gl-border-radius-large: $gl-spacing-scale-3;
-$gl-border-radius-pill: $gl-spacing-scale-4;
 $gl-control-background-color-default: $gl-color-neutral-0; // Used for form control (input, radio button, checkbox, textarea) default background.
 $gl-control-background-color-disabled: $gl-color-neutral-10; // Used for disabled form control (checkbox, input, radio button, textarea) background.
 $gl-control-background-color-concatenation: $gl-color-neutral-10; // Used for the background of static content that prepends or appends a text input.
