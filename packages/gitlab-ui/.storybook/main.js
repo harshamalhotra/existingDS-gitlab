@@ -11,7 +11,7 @@ if (USE_VUE_3) {
   moduleAlias.addAlias('vue/compiler-sfc', '@vue/compiler-sfc');
 }
 
-export default {
+module.exports = {
   framework: {
     name: STORYBOOK_VUE_FRAMEWORK,
     options: {
