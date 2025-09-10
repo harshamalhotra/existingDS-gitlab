@@ -2,6 +2,21 @@
  * Do not edit directly, this file was auto-generated.
  */
 
+export const GL_BORDER_RADIUS_NONE = '0';
+export const GL_BORDER_RADIUS_XS = '1px';
+export const GL_BORDER_RADIUS_SM = '0.125rem';
+export const GL_BORDER_RADIUS_MD = '0.25rem';
+export const GL_BORDER_RADIUS_LG = '0.5rem';
+export const GL_BORDER_RADIUS_XL = '0.75rem';
+export const GL_BORDER_RADIUS_2XL = '1rem';
+export const GL_BORDER_RADIUS_3XL = '1.5rem';
+export const GL_BORDER_RADIUS_FULL = '9999px';
+export const GL_BORDER_RADIUS_DEFAULT = '0.25rem';
+export const GL_BORDER_COLOR_DEFAULT = '#4c4b51';
+export const GL_BORDER_COLOR_SUBTLE = '#3a383f';
+export const GL_BORDER_COLOR_STRONG = '#626168';
+export const GL_BORDER_COLOR_SECTION = '#18171d';
+export const GL_BORDER_COLOR_TRANSPARENT = 'transparent';
 export const GL_COLOR_ALPHA_0 = 'transparent';
 export const GL_COLOR_ALPHA_DARK_2 = 'rgba(05, 05, 06, 0.02)';
 export const GL_COLOR_ALPHA_DARK_4 = 'rgba(05, 05, 06, 0.04)';
@@ -991,11 +1006,6 @@ export const GL_BACKGROUND_COLOR_DISABLED = '#28272d';
 export const GL_BACKGROUND_COLOR_OVERLAP = '#28272d';
 export const GL_BACKGROUND_COLOR_SECTION = '#3a383f';
 export const GL_BACKGROUND_COLOR_OVERLAY = 'rgba(0,0,0,0.64)';
-export const GL_BORDER_COLOR_DEFAULT = '#4c4b51';
-export const GL_BORDER_COLOR_SUBTLE = '#3a383f';
-export const GL_BORDER_COLOR_STRONG = '#626168';
-export const GL_BORDER_COLOR_SECTION = '#18171d';
-export const GL_BORDER_COLOR_TRANSPARENT = 'transparent';
 export const GL_CONTROL_BACKGROUND_COLOR_DEFAULT = 'rgba(05, 05, 06, 0.4)';
 export const GL_CONTROL_BACKGROUND_COLOR_DISABLED = 'rgba(255, 255, 255, 0.04)';
 export const GL_CONTROL_BACKGROUND_COLOR_CONCATENATION = 'rgba(255, 255, 255, 0.04)';

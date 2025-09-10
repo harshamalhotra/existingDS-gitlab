@@ -1,4 +1,98 @@
 {
+  "border": {
+    "radius": {
+      "none": {
+        "$value": "{spacing-scale.0}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "xs": {
+        "$value": "{spacing-scale.px}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "sm": {
+        "$value": "{spacing-scale.1}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "md": {
+        "$value": "{spacing-scale.2}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "lg": {
+        "$value": "{spacing-scale.3}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "xl": {
+        "$value": "{spacing-scale.4}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "2xl": {
+        "$value": "{spacing-scale.5}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "3xl": {
+        "$value": "{spacing-scale.6}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      },
+      "full": {
+        "$value": "9999px",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    }
+  },
   "color": {
     "alpha": {
       "0": {

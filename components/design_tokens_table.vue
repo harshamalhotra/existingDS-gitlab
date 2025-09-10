@@ -14,6 +14,7 @@ import {
 import ColorChip from './color_chip.vue';
 import DesignToken from './design_token.vue';
 import DimensionScale from './dimension_scale.vue';
+import BorderRadius from './border_radius.vue';
 
 export default {
   name: 'DesignTokensTable',
@@ -27,6 +28,7 @@ export default {
     ColorChip,
     DesignToken,
     DimensionScale,
+    BorderRadius,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
@@ -263,6 +265,7 @@ export default {
     >
       <template #cell(sample)="{ item: { name, type, cssName } }">
         <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
+        <border-radius v-if="name.includes('radius')" :value="cssName" />
         <dimension-scale v-else-if="type === 'dimension'" direction="col" :value="cssName" />
       </template>
       <template

@@ -3,6 +3,7 @@
  */
 
 :root.gl-dark, .gl-dark-scope {
+  --gl-border-radius-full: 9999px;
   --gl-color-alpha-0: transparent;
   --gl-color-alpha-dark-2: rgba(05, 05, 06, 0.02);
   --gl-color-alpha-dark-4: rgba(05, 05, 06, 0.04);
@@ -542,6 +543,18 @@
   --gl-text-primary: #ececef; /** Use text.color.default instead. */
   --gl-text-secondary: #89888d; /** Use text.color.subtle instead. */
   --gl-text-tertiary: #737278; /** Use text.color.disabled instead. */
+  --gl-border-radius-none: var(--gl-spacing-scale-0);
+  --gl-border-radius-xs: var(--gl-spacing-scale-px);
+  --gl-border-radius-sm: var(--gl-spacing-scale-1);
+  --gl-border-radius-md: var(--gl-spacing-scale-2);
+  --gl-border-radius-lg: var(--gl-spacing-scale-3);
+  --gl-border-radius-xl: var(--gl-spacing-scale-4);
+  --gl-border-radius-2xl: var(--gl-spacing-scale-5);
+  --gl-border-radius-3xl: var(--gl-spacing-scale-6);
+  --gl-border-color-default: var(--gl-color-neutral-700); /** Used for the default border color. */
+  --gl-border-color-subtle: var(--gl-color-neutral-800); /** Used for a subtle border in combination with the default background. */
+  --gl-border-color-strong: var(--gl-color-neutral-600); /** Used for a distinct border that emphasizes an edge or boundaries. */
+  --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
   --gl-alert-neutral-border-top-color: var(--gl-color-neutral-400); /** Used for the border center color of a neutral alert. */
   --gl-alert-neutral-border-bottom-color: var(--gl-color-alpha-0); /** Used for the border bottom color of a neutral alert. */
   --gl-alert-info-border-top-color: var(--gl-color-blue-400); /** Used for the border color of an info alert. */
@@ -822,10 +835,6 @@
   --gl-background-color-overlap: var(--gl-color-neutral-900); /** Used for components, like tooltips and drawers, and content, like a sticky header, that overlap other content. */
   --gl-background-color-section: var(--gl-color-neutral-800); /** Used for containers, like a card header, that are visually distinct from the default page background only when necessary to maintain affordance and hierarchy in different modes. */
   --gl-background-color-overlay: rgba(0,0,0,0.64); /** Used for an overlay that covers other content. */
-  --gl-border-color-default: var(--gl-color-neutral-700); /** Used for the default border color. */
-  --gl-border-color-subtle: var(--gl-color-neutral-800); /** Used for a subtle border in combination with the default background. */
-  --gl-border-color-strong: var(--gl-color-neutral-600); /** Used for a distinct border that emphasizes an edge or boundaries. */
-  --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
   --gl-control-background-color-default: var(--gl-color-alpha-dark-40); /** Used for form control (input, radio button, checkbox, textarea) default background. */
   --gl-control-background-color-disabled: var(--gl-color-alpha-light-4); /** Used for disabled form control (checkbox, input, radio button, textarea) background. */
   --gl-control-background-color-concatenation: var(--gl-color-alpha-light-4); /** Used for the background of static content that prepends or appends a text input. */
@@ -896,6 +905,8 @@
   --gl-text-color-danger: var(--gl-color-red-300); /** Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination. */
   --gl-text-color-success: var(--gl-color-green-300); /** Used for text indicating success, completion, approval, addition, or validity. */
   --gl-text-color-disabled: var(--gl-color-neutral-400); /** Used for disabled text. */
+  --gl-border-radius-default: var(--gl-border-radius-md);
+  --gl-border-color-section: var(--gl-background-color-default); /** Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page. */
   --gl-alert-neutral-title-color: var(--gl-text-color-heading); /** Used for the title color of a neutral alert. */
   --gl-alert-neutral-background-color: var(--gl-feedback-neutral-background-color); /** Used for the background color of a neutral alert. */
   --gl-alert-info-title-color: var(--gl-color-blue-300); /** Used for the title color of an info alert. */
@@ -1019,7 +1030,6 @@
   --gl-action-strong-neutral-background-color-focus: var(--gl-action-strong-neutral-background-color-hover); /** Used for the background of a strong neutral action in the focus state. */
   --gl-action-strong-neutral-foreground-color-hover: var(--gl-color-neutral-0); /** Used for the foreground of a strong neutral action in the hover state. */
   --gl-action-strong-neutral-border-color-hover: var(--gl-action-strong-neutral-border-color-default); /** Used for the border of a strong neutral action in the hover state. */
-  --gl-border-color-section: var(--gl-background-color-default); /** Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page. */
   --gl-control-text-color-error: var(--gl-text-color-danger); /** Used for the helper text when the input is invalid. */
   --gl-control-text-color-valid: var(--gl-text-color-success); /** Used for the helper text when the input is valid. */
   --gl-control-placeholder-color: var(--gl-text-color-disabled); /** Used for placeholder text within inputs. */
