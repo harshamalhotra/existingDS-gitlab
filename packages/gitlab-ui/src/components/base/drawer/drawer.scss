@@ -28,7 +28,7 @@ $gl-drawer-scrim-gradient: linear-gradient(
 }
 
 .gl-drawer-default {
-  @include media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     width: $gl-drawer-width;
   }
 
@@ -39,7 +39,7 @@ $gl-drawer-scrim-gradient: linear-gradient(
 }
 
 .gl-drawer-sidebar {
-  @include media-breakpoint-up(md) {
+  @include gl-container-width-up(md) {
     width: $gl-sidebar-width;
   }
 

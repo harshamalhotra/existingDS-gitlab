@@ -101,7 +101,7 @@ $gl-alert-top-border-size: 2px;
 .gl-alert-actions {
   @apply gl-flex gl-flex-col gl-flex-wrap gl-gap-y-3;
   @apply gl-mt-3;
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @apply gl-flex-row;
   }
 }
@@ -110,7 +110,7 @@ $gl-alert-top-border-size: 2px;
   @apply gl-mr-0 gl-w-full;
   @apply gl-text-base;
   @apply gl-leading-normal;
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     @apply gl-mr-3 gl-w-auto;
   }
 }

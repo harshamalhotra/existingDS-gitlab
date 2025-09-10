@@ -8,7 +8,7 @@
   -webkit-line-clamp: var(--mobile-lines);
   -webkit-box-orient: vertical;
 
-  @include gl-media-breakpoint-up(sm) {
+  @include gl-container-width-up(sm) {
     -webkit-line-clamp: var(--lines);
   }
 }

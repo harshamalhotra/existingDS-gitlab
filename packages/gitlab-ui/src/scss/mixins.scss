@@ -145,6 +145,77 @@
   }
 }
 
+@mixin gl-container-width-up($name, $containerName: '', $includeMQFallback: true) {
+  $min: map.get($breakpoints, $name);
+  @if $min == null {
+    @error "#{$name} is not a valid breakpoint for this @container query.";
+  }
+  @if $min != 0 {
+    @container #{$containerName} (min-width: #{$min}) {
+      @if & {
+        :where(html.with-gl-container-queries) & {
+          @content
+        }
+      }
+      @else {
+        :where(html.with-gl-container-queries) {
+          @content
+        }
+      }
+    }
+    @if $includeMQFallback {
+      @media (min-width: $min) {
+        @if & {
+          :where(html:not(.with-gl-container-queries)) & {
+            @content;
+          }
+        }
+        @else {
+          :where(html:not(.with-gl-container-queries))  {
+            @content
+          }
+        }
+      }
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin gl-container-width-down($name, $containerName: '', $includeMQFallback: true) {
+  $max: map.get($breakpoints, $name);
+  @if ($max == null or $max == 0) {
+    @error "#{$name} is not a valid breakpoint for this @container query.";
+  }
+
+  @container #{$containerName} (width < #{$max}) {
+    @if & {
+      :where(html.with-gl-container-queries) & {
+        @content;
+      }
+    }
+    @else {
+      :where(html.with-gl-container-queries) {
+        @content;
+      }
+    }
+  }
+  @if $includeMQFallback {
+    @media (width < $max) {
+      @if & {
+        :where(html:not(.with-gl-container-queries)) & {
+          @content;
+        }
+      }
+      @else {
+        :where(html:not(.with-gl-container-queries)) {
+          @content;
+        }
+      }
+    }
+  }
+}
+
 /**
 * Helper function to resolve font-size value from $gl-font-sizes and
 * $gl-font-sizes-fixed maps.
