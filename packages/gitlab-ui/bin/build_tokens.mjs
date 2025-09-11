@@ -245,7 +245,10 @@ StyleDictionary.registerFormat({
     };
 
     const spacingScale = formatTokens(COMPILED_TOKENS['spacing-scale']);
-    const borderRadius = formatTokens(COMPILED_TOKENS.border.radius);
+    const borderRadiuses = {
+      ...formatTokens(COMPILED_TOKENS.border.radius),
+      control: formatToken(COMPILED_TOKENS.control.border.radius),
+    };
 
     const tokens = {
       background: backgroundColors,
@@ -255,7 +258,7 @@ StyleDictionary.registerFormat({
       outline: outlineColor,
       colors: colorTokens,
       spacing: spacingScale,
-      borderRadius,
+      borderRadius: borderRadiuses,
     };
 
     // Format as JSON
