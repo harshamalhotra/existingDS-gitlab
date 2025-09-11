@@ -1,6 +1,11 @@
 ---
 name: AI-human interaction
 summary: Design AI-powered features that balance user needs, transparency, and ethical considerations.
+extendedNotice:
+  owners: group::ai framework
+  contacts:
+    - text: '#ux-ai-integration'
+      url: 'https://gitlab.slack.com/channels/ux-ai-integration'
 related:
   - /patterns/contextual-help
   - /patterns/destructive-actions

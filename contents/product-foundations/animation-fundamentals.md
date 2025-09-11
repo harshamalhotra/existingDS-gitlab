@@ -1,5 +1,7 @@
 ---
 name: Animation fundamentals
+extendedNotice:
+  contactPreset: animation
 ---
 
 Animation is a tool to help convey important relationships, changes, or transitions between elements. It's used sparingly and intentionally, highlighting the right elements at the right moment.

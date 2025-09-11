@@ -1,6 +1,11 @@
 ---
 name: Label
 description: Labels are editable objects that allow users to manually categorize other objects, like issues, merge requests, and epics. They have a name, description, and a customizable color. They provide a quick way to recognize which categories the labeled object belongs to.
+extendedNotice:
+  owners: group::project management
+  contacts:
+    - text: '#g_project-management on slack'
+      url: 'https://gitlab.slack.com/channels/g_project-management'
 related:
   - badge
 ---

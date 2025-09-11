@@ -3,6 +3,10 @@ name: Overview
 docs: in-progress
 components:
   - charts-heatmap
+extendedNotice:
+  scope: Data visualization
+  owners: group::platform insights
+  contactPreset: custom-dashboards-foundation
 related:
   - /data-visualization/charts
 ---

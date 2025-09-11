@@ -4,6 +4,13 @@ description: A broadcast message delivers an instance level message from the adm
 figma: https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit?node-id=425%3A6
 related:
   - alert
+extendedNotice:
+  owners: group::engagement
+  contacts:
+    - text: '#g_engagement on slack'
+      url: 'https://gitlab.slack.com/channels/g_engagement'
+    - text: '@gitlab-org/growth/engagement on GitLab'
+      url: 'https://gitlab.com/groups/gitlab-org/growth/engagement/-/group_members?with_inherited_permissions=exclude'
 ---
 
 ## Examples

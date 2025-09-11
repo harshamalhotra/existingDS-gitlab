@@ -4,6 +4,7 @@ import DesignTokensTable from '../components/design_tokens_table.vue';
 import DesignTokensColorPalette from '../components/design_tokens_color_palette.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
+import ExtendedNotice from '../components/extended_notice.vue';
 import FigmaEmbed from '../components/figma_embed.vue';
 import FigureImg from '../components/figure_img.vue';
 import Grid from '../components/grid.vue';
@@ -21,6 +22,7 @@ Object.entries({
   DesignTokensColorPalette,
   Do,
   Dont,
+  ExtendedNotice,
   FigmaEmbed,
   FigureImg,
   Grid,

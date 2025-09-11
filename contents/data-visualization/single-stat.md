@@ -1,5 +1,8 @@
 ---
 name: Single stat
+extendedNotice:
+  owners: group::platform insights
+  contactPreset: custom-dashboards-foundation
 ---
 
 The single stat component displays the title and value of a metric.

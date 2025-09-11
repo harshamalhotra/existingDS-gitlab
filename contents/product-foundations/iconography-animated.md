@@ -1,6 +1,8 @@
 ---
 name: Animated icon
 description: The Animated Icon component is used to display animated visual representations that enhance user experience by conveying actions, statuses, or interactive elements more effectively than static icons. It is intended for dynamic visual feedback in the UI.
+extendedNotice:
+  contactPreset: animation
 ---
 
 ## Examples

@@ -4,6 +4,8 @@ summary: Improve user productivity and accessibility by optimizing flows with a 
 related:
   - button
   - tooltip
+extendedNotice:
+  contactPreset: ux-designers
 ---
 
 Keyboard shortcuts can help improve accessibility and the user's productivity. While not every action needs a keyboard shortcut, consider if it could optimize a frequent workflow.

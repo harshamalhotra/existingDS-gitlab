@@ -1,6 +1,8 @@
 ---
 name: Settings management
 summary: Empower users to control product behavior and appearance while maintaining system-wide consistency.
+extendedNotice:
+  contactPreset: ux-designers
 related:
   - tooltip
   - popover

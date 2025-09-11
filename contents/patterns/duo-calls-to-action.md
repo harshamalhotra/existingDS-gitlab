@@ -1,6 +1,11 @@
 ---
 name: Calls to action for GitLab Duo
 summary: Guidelines for designing and implementing AI-specific interactive elements that prompt user actions within GitLab.
+extendedNotice:
+  owners: group::ai framework
+  contacts:
+    - text: '#ux-ai-integration'
+      url: 'https://gitlab.slack.com/channels/ux-ai-integration'
 related:
   - /patterns/ai-human-interaction
   - /patterns/feature-management

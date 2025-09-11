@@ -1,6 +1,14 @@
 ---
 name: Navigation sidebar
 summary: Follow the guidance on the structure and behavior of the navigation sidebar to improve user orientation and workflow.
+extendedNotice:
+  scope: The navigation sidebar
+  owners: group::engagement
+  contacts:
+    - text: '#g_engagement on slack'
+      url: 'https://gitlab.slack.com/channels/g_engagement'
+    - text: '@gitlab-org/growth/engagement on GitLab'
+      url: 'https://gitlab.com/groups/gitlab-org/growth/engagement/-/group_members?with_inherited_permissions=exclude'
 ---
 
 The navigation namely refers to the persistent left sidebar where a user can access different sections of the application. In order to ensure a familiar user experience, minimize disruption, and properly introduce changes we utilize the following resources to guide any change to this region:

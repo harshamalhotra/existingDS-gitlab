@@ -1,10 +1,10 @@
 ---
 name: Mini pipeline graph
-figma: https://www.figma.com/file/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=1006%3A1674
-docs: complete
-a11y: upcoming
-gitlab_ui: upcoming
-
+extendedNotice:
+  owners: group::pipeline execution
+  contacts:
+    - text: '#g_pipeline-execution on slack'
+      url: 'https://gitlab.slack.com/channels/g_pipeline-execution'
 ---
 
 A mini pipeline graph is a visualization of a CI/CD pipeline.
