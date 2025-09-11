@@ -35,7 +35,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
           class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
         >
           <nuxt-link-stub
-            class="sidebar__nav-anchor gl-rounded-default gl-flex gl-p-3 gl-pl-4 !gl-no-underline"
+            class="sidebar__nav-anchor gl-flex gl-rounded-default gl-p-3 gl-pl-4 !gl-no-underline"
             to="/top1/second1"
           >
             
@@ -48,7 +48,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
         >
           <button
             aria-controls="item-second-level-item-2-1"
-            class="sidebar__nav-toggle gl-rounded-default gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-default gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
               class="gl-flex gl-items-center gl-gap-2"
@@ -82,7 +82,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
               class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor gl-rounded-default gl-flex gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                class="sidebar__nav-anchor gl-flex gl-rounded-default gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top1/second2/third1"
               >
                 
@@ -94,7 +94,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
               class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor gl-rounded-default gl-flex gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                class="sidebar__nav-anchor gl-flex gl-rounded-default gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top1/second2/third2"
               >
                 
@@ -127,7 +127,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
         >
           <button
             aria-controls="item-second-level-item-without-path-2"
-            class="sidebar__nav-toggle gl-rounded-default gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
+            class="sidebar__nav-toggle gl-block gl-w-full gl-cursor-pointer gl-appearance-none gl-rounded-default gl-border-none gl-bg-transparent gl-p-3 gl-pl-4 gl-text-left gl-font-regular gl-text-base"
           >
             <span
               class="gl-flex gl-items-center gl-gap-2"
@@ -161,7 +161,7 @@ exports[`sidebar component renders sidebar properly 1`] = `
               class="sidebar__nav-option gl-m-0 gl-list-none gl-p-0"
             >
               <nuxt-link-stub
-                class="sidebar__nav-anchor gl-rounded-default gl-flex gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
+                class="sidebar__nav-anchor gl-flex gl-rounded-default gl-p-3 gl-pl-4 !gl-no-underline gl-pl-6"
                 to="/top2/third2"
               >
                 
