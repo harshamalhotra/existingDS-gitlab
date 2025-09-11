@@ -982,6 +982,7 @@
   --gl-datepicker-date-text-color-selected: var(--gl-control-indicator-color-selected); /** Used for the datepicker date text color state indicators. */
   --gl-dropdown-background-color: var(--gl-background-color-overlap); /** Used for the background of a dropdown. */
   --gl-dropdown-border-color: var(--gl-border-color-default); /** Used for the border of a dropdown. */
+  --gl-dropdown-border-radius: var(--gl-border-radius-lg); /** Used for the border radius of a dropdown. */
   --gl-dropdown-divider-color: var(--gl-border-color-subtle); /** Used for the divider of a dropdown. */
   --gl-dropdown-option-text-color-default: var(--gl-action-neutral-foreground-color-default); /** Used for the text of a dropdown option in the default state. */
   --gl-dropdown-option-text-color-disabled: var(--gl-action-disabled-foreground-color); /** Used for the text of a dropdown option in the disabled state. */
@@ -1042,6 +1043,7 @@
   --gl-icon-color-warning: var(--gl-text-color-warning); /** Used for an icon associated with a warning. */
   --gl-icon-color-danger: var(--gl-text-color-danger); /** Used for an icon associated with an error or danger. */
   --gl-icon-color-success: var(--gl-text-color-success); /** Used for an icon associated with success or validity. */
+  --gl-alert-border-radius: var(--gl-border-radius-default); /** Used for alert border radius. */
   --gl-badge-muted-background-color-focus: var(--gl-badge-muted-background-color-hover); /** Used for the background of a muted badge in the focus state. */
   --gl-badge-neutral-background-color-focus: var(--gl-badge-neutral-background-color-hover); /** Used for the background of a neutral badge in the focus state. */
   --gl-badge-info-background-color-focus: var(--gl-badge-info-background-color-hover); /** Used for the background of an informational badge in the focus state. */
@@ -1049,6 +1051,8 @@
   --gl-badge-warning-background-color-focus: var(--gl-badge-warning-background-color-hover); /** Used for the background of a warning badge in the focus state. */
   --gl-badge-danger-background-color-focus: var(--gl-badge-danger-background-color-hover); /** Used for the background of a danger badge in the focus state. */
   --gl-badge-tier-background-color-focus: var(--gl-badge-tier-background-color-hover); /** Used for the background of a tier related badge in the focus state. */
+  --gl-broadcast-banner-border-radius: var(--gl-border-radius-default); /** Used for broadcast banner border radius. */
+  --gl-button-border-radius: var(--gl-border-radius-default); /** Used for button border radius. */
   --gl-button-default-tertiary-foreground-color-hover: var(--gl-action-neutral-foreground-color-hover); /** Used for the foreground of a default borderless, tertiary button in the hover state. */
   --gl-button-default-tertiary-foreground-color-focus: var(--gl-action-neutral-foreground-color-focus); /** Used for the foreground of a default borderless, tertiary button in the focus state. */
   --gl-button-default-tertiary-foreground-color-active: var(--gl-action-neutral-foreground-color-active); /** Used for the foreground of a default borderless, tertiary button in the active state. */
@@ -1072,11 +1076,13 @@
   --gl-button-selected-foreground-color-focus: var(--gl-color-neutral-950); /** Used for the foreground of a selected button in the focus state. */
   --gl-button-selected-foreground-color-active: var(--gl-color-neutral-950); /** Used for the foreground of a selected button in the active state. */
   --gl-button-selected-background-color-focus: var(--gl-color-neutral-200); /** Used for the background of a selected button in the focus state. */
+  --gl-card-border-radius: var(--gl-border-radius-default); /** Used for card border radius. */
   --gl-chart-axis-pointer-color: var(--gl-icon-color-subtle); /** Used in charts for the color of the reference line and axis value under mouse pointer. */
   --gl-chart-zoom-handle-color: var(--gl-icon-color-subtle); /** Used in charts for the handle color when zooming in on a specific area of data. */
   --gl-dropdown-option-text-color-hover: var(--gl-action-neutral-foreground-color-hover); /** Used for the text of a dropdown option in the hover state. */
   --gl-dropdown-option-text-color-focus: var(--gl-action-neutral-foreground-color-focus); /** Used for the text of a dropdown option in the focus state. */
   --gl-dropdown-option-text-color-active: var(--gl-action-neutral-foreground-color-active); /** Used for the text of a dropdown option in the active state. */
+  --gl-modal-border-radius: var(--gl-border-radius-default); /** Used for modal border radius. */
   --gl-toggle-switch-icon-color-unchecked-focus: var(--gl-action-strong-neutral-background-color-focus); /** Used for the icon color of an unchecked toggle switch in the focus state. */
   --gl-toggle-switch-icon-color-checked-focus: var(--gl-action-strong-confirm-background-color-focus); /** Used for the icon color of a checked toggle switch in the focus state. */
   --gl-action-selected-foreground-color-focus: var(--gl-action-selected-foreground-color-hover); /** Used for the foreground of a selected action in the focus state. */
@@ -1085,6 +1091,7 @@
   --gl-action-strong-confirm-border-color-focus: var(--gl-action-strong-confirm-border-color-hover); /** Used for the border of a strong confirm action in the focus state. */
   --gl-action-strong-neutral-foreground-color-focus: var(--gl-action-strong-neutral-foreground-color-hover); /** Used for the foreground of a strong neutral action in the focus state. */
   --gl-action-strong-neutral-border-color-focus: var(--gl-action-strong-neutral-border-color-hover); /** Used for the border of a strong neutral action in the focus state. */
+  --gl-control-border-radius: var(--gl-border-radius-default); /** Used for form control (input, radio button, checkbox, textarea) default border radius. */
   --gl-button-confirm-primary-foreground-color-focus: var(--gl-action-strong-confirm-foreground-color-focus); /** Used for the foreground of a confirm (positive) primary button in the focus state. */
   --gl-action-selected-foreground-color-active: var(--gl-action-selected-foreground-color-focus); /** Used for the foreground of a selected action in the active state. */
   --gl-action-strong-confirm-foreground-color-active: var(--gl-action-strong-confirm-foreground-color-focus); /** Used for the foreground of a strong confirm action in the active state. */

@@ -212,6 +212,16 @@
             }
           }
         }
+      },
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
       }
     },
     "text": {

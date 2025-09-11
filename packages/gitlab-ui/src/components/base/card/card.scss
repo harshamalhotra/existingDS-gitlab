@@ -1,12 +1,12 @@
 .gl-card {
   @apply gl-bg-subtle;
   @apply gl-border-solid;
-  @apply gl-rounded-default;
   @apply gl-flex;
   @apply gl-flex-col;
   @apply gl-break-words;
   @apply gl-relative;
   @apply gl-text-base;
+  border-radius: var(--gl-card-border-radius);
 }
 
 .gl-card,

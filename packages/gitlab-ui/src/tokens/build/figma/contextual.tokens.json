@@ -1,5 +1,17 @@
 {
   "alert": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for alert border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "neutral": {
       "title": {
         "color": {
@@ -2289,6 +2301,16 @@
               ]
             }
           }
+        },
+        "radius": {
+          "$value": "{border.radius.default}",
+          "$type": "dimension",
+          "$description": "Used for broadcast banner border radius.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          }
         }
       },
       "icon": {
@@ -2515,6 +2537,18 @@
     }
   },
   "button": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for button border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "default": {
       "primary": {
         "foreground": {
@@ -4099,6 +4133,23 @@
       "com.gitlab.locked": true
     }
   },
+  "card": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for card border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "$extensions": {
+      "com.gitlab.locked": true
+    }
+  },
   "chart": {
     "axis": {
       "pointer": {
@@ -4269,6 +4320,16 @@
           ]
         },
         "$deprecated": true
+      },
+      "radius": {
+        "$value": "{border.radius.lg}",
+        "$type": "dimension",
+        "$description": "Used for the border radius of a dropdown.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
       }
     },
     "divider": {
@@ -5408,6 +5469,23 @@
               ]
             }
           }
+        }
+      }
+    },
+    "$extensions": {
+      "com.gitlab.locked": true
+    }
+  },
+  "modal": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for modal border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
         }
       }
     },
