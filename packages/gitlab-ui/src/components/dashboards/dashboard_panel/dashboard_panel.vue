@@ -78,7 +78,7 @@ export default {
      * - `descriptionLink`: The optional URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
      *
-     * Note: The `title-popover-content` and `title-popover-title` slots take precedence over this prop when provided.
+     * Note: The `info-popover-content` and `info-popover-title` slots take precedence over this prop when provided.
      */
     titlePopover: {
       type: Object,
@@ -155,17 +155,17 @@ export default {
     hasTitle() {
       return Boolean(this.title);
     },
-    hasTitlePopoverContentSlot() {
-      return Boolean(this.$scopedSlots['title-popover-content']);
+    hasInfoPopoverContentSlot() {
+      return Boolean(this.$scopedSlots['info-popover-content']);
     },
-    hasTitlePopoverTitleSlot() {
-      return Boolean(this.$scopedSlots['title-popover-title']);
+    hasInfoPopoverTitleSlot() {
+      return Boolean(this.$scopedSlots['info-popover-title']);
     },
     hasTitlePopover() {
       return (
         Boolean(this.titlePopover?.description) ||
-        this.hasTitlePopoverContentSlot ||
-        this.hasTitlePopoverTitleSlot
+        this.hasInfoPopoverContentSlot ||
+        this.hasInfoPopoverTitleSlot
       );
     },
     hasTitlePopoverLink() {
@@ -218,17 +218,17 @@ export default {
               boundary="viewport"
               :target="titlePopoverId"
             >
-              <!-- @slot The title of the popover -->
-              <template v-if="hasTitlePopoverTitleSlot" #title>
-                <slot name="title-popover-title"></slot>
+              <!-- @slot The title of the info popover. -->
+              <template v-if="hasInfoPopoverTitleSlot" #title>
+                <slot name="info-popover-title"></slot>
               </template>
 
-              <!-- @slot The content of the popover. -->
-              <template v-if="hasTitlePopoverContentSlot">
-                <slot name="title-popover-content"></slot>
+              <!-- @slot The content of the info popover. -->
+              <template v-if="hasInfoPopoverContentSlot">
+                <slot name="info-popover-content"></slot>
               </template>
 
-              <template v-if="!hasTitlePopoverContentSlot">
+              <template v-if="!hasInfoPopoverContentSlot">
                 <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
                   <template #link="{ content }">
                     <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{

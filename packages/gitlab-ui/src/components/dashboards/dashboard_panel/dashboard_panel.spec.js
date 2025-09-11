@@ -307,21 +307,21 @@ describe('GlDashboardPanel', () => {
     });
   });
 
-  describe('with title-popover slots', () => {
-    const findCustomPopoverContent = () => findByTestId('custom-popover-content');
-    const findCustomPopoverTitle = () => findByTestId('custom-popover-title');
-    const titlePopoverSlotContent =
+  describe('with info-popover slots', () => {
+    const findInfoPopoverContent = () => findByTestId('custom-popover-content');
+    const findInfoPopoverTitle = () => findByTestId('custom-popover-title');
+    const infoPopoverSlotContent =
       '<div data-testid="custom-popover-content">Custom popover content</div>';
-    const titlePopoverSlotTitle = '<div data-testid="custom-popover-title">Custom Title</div>';
+    const infoPopoverSlotTitle = '<div data-testid="custom-popover-title">Custom Title</div>';
 
-    describe('with title-popover-content slot only', () => {
+    describe('with info-popover-content slot only', () => {
       beforeEach(() => {
         createWrapper({
           props: {
             title: 'Panel Title',
           },
           slots: {
-            'title-popover-content': titlePopoverSlotContent,
+            'info-popover-content': infoPopoverSlotContent,
           },
         });
       });
@@ -331,12 +331,12 @@ describe('GlDashboardPanel', () => {
       });
 
       it('renders the custom popover content', () => {
-        expect(findCustomPopoverContent().exists()).toBe(true);
-        expect(findCustomPopoverContent().text()).toBe('Custom popover content');
+        expect(findInfoPopoverContent().exists()).toBe(true);
+        expect(findInfoPopoverContent().text()).toBe('Custom popover content');
       });
     });
 
-    describe('with title-popover-title slot only', () => {
+    describe('with info-popover-title slot only', () => {
       beforeEach(() => {
         createWrapper({
           props: {
@@ -347,7 +347,7 @@ describe('GlDashboardPanel', () => {
             },
           },
           slots: {
-            'title-popover-title': titlePopoverSlotTitle,
+            'info-popover-title': infoPopoverSlotTitle,
           },
         });
       });
@@ -357,8 +357,8 @@ describe('GlDashboardPanel', () => {
       });
 
       it('renders the custom popover title', () => {
-        expect(findCustomPopoverTitle().exists()).toBe(true);
-        expect(findCustomPopoverTitle().text()).toBe('Custom Title');
+        expect(findInfoPopoverTitle().exists()).toBe(true);
+        expect(findInfoPopoverTitle().text()).toBe('Custom Title');
       });
 
       it('renders the prop-based content', () => {
@@ -367,15 +367,15 @@ describe('GlDashboardPanel', () => {
       });
     });
 
-    describe('with both title-popover-title and title-popover-content slots', () => {
+    describe('with both info-popover-title and info-popover-content slots', () => {
       beforeEach(() => {
         createWrapper({
           props: {
             title: 'Panel Title',
           },
           scopedSlots: {
-            'title-popover-title': titlePopoverSlotTitle,
-            'title-popover-content': titlePopoverSlotContent,
+            'info-popover-title': infoPopoverSlotTitle,
+            'info-popover-content': infoPopoverSlotContent,
           },
         });
       });
@@ -404,7 +404,7 @@ describe('GlDashboardPanel', () => {
             },
           },
           slots: {
-            'title-popover-content': titlePopoverSlotContent,
+            'info-popover-content': infoPopoverSlotContent,
           },
         });
       });
@@ -414,8 +414,8 @@ describe('GlDashboardPanel', () => {
       });
 
       it('renders the slot content', () => {
-        expect(findCustomPopoverContent().exists()).toBe(true);
-        expect(findCustomPopoverContent().text()).toBe('Custom popover content');
+        expect(findInfoPopoverContent().exists()).toBe(true);
+        expect(findInfoPopoverContent().text()).toBe('Custom popover content');
       });
 
       it('does not render the prop-based content', () => {

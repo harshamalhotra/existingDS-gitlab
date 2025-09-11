@@ -142,15 +142,15 @@ WithTitlePopover.args = {
   },
 };
 
-export const WithTitlePopoverContent = (args, { argTypes }) => ({
+export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
   props: Object.keys(argTypes),
   ...chartProps,
   template: wrap(
     `
-    <template #title-popover-title>Panel Details</template>
-    <template #title-popover-content>
-        <p class="gl-mb-3">This panel demonstrates HTML content using both title-popover slots.</p>
+    <template #info-popover-title>Panel Details</template>
+    <template #info-popover-content>
+        <p class="gl-mb-3">This panel demonstrates HTML content using both info-popover slots.</p>
         <ul class="gl-mb-3 gl-pl-4">
           <li><strong>HTML formatting</strong> is supported</li>
           <li><gl-link href="https://design.gitlab.com" target="_blank">External links</gl-link></li>
@@ -158,7 +158,7 @@ export const WithTitlePopoverContent = (args, { argTypes }) => ({
         </ul>
         <div class="gl-p-3 gl-bg-gray-50 gl-rounded-base">
           <gl-icon name="information-o" class="gl-text-blue-500 gl-mr-2" />
-          <span class="gl-text-sm">Both <code>title-popover-title</code> and <code>title-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
+          <span class="gl-text-sm">Both <code>info-popover-title</code> and <code>info-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
         </div>
     </template>
     <template #body>
@@ -169,15 +169,15 @@ export const WithTitlePopoverContent = (args, { argTypes }) => ({
     marginTop,
   ),
 });
-WithTitlePopoverContent.args = {
+WithInfoPopoverSlotsContent.args = {
   ...Default.args,
   title: 'Dashboard panel',
 };
-WithTitlePopoverContent.parameters = {
+WithInfoPopoverSlotsContent.parameters = {
   docs: {
     description: {
       story:
-        'This story demonstrates both the `title-popover-title` and `title-popover-content` slots which allow for HTML content in the title popover. These slots take precedence over the `titlePopover` prop when provided.',
+        'This story demonstrates both the `info-popover-title` and `info-popover-content` slots which allow for HTML content in the title popover. These slots take precedence over the `titlePopover` prop when provided.',
     },
   },
 };
