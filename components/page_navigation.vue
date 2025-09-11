@@ -168,7 +168,10 @@ export default {
           class="gl-action-neutral-colors gl-block gl-border-l-4 gl-border-l-transparent gl-p-3 !gl-no-underline gl-border-l-solid focus:gl-focus-inset"
           :class="{
             '!gl-border-l-purple-500 gl-font-bold': activeHeading === id,
-            '!gl-pl-6': level === 3,
+            'gl-pl-6': level === 3,
+            'gl-pl-7': level === 4,
+            'gl-pl-8': level === 5,
+            'gl-pl-9': level === 6,
           }"
           @click.prevent="scrollTo(id)"
         >
