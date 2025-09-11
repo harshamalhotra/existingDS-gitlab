@@ -7,7 +7,7 @@ export default {
   },
   async asyncData({ $content }) {
     const patternList = await $content('patterns')
-      .only(['name', 'summary', 'description', 'path'])
+      .only(['name', 'summary', 'description', 'path', 'extendedNotice'])
       .sortBy('name')
       .fetch();
 

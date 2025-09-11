@@ -7,7 +7,7 @@ export default {
   },
   async asyncData({ $content }) {
     const foundationsList = await $content('product-foundations')
-      .only(['name', 'summary', 'description', 'path'])
+      .only(['name', 'summary', 'description', 'path', 'extendedNotice'])
       .sortBy('name')
       .fetch();
 

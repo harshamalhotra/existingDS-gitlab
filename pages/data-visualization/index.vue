@@ -7,7 +7,7 @@ export default {
   },
   async asyncData({ $content }) {
     const dataVizList = await $content('data-visualization')
-      .only(['name', 'summary', 'description', 'path'])
+      .only(['name', 'summary', 'description', 'path', 'extendedNotice'])
       .sortBy('name')
       .fetch();
 
