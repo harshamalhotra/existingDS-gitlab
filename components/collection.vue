@@ -38,6 +38,12 @@ export default {
         >
           <span class="gl-block gl-font-bold gl-text-strong">{{ item.name }}</span>
           <span
+            v-if="item.extendedNotice"
+            class="gl-block gl-text-base gl-italic gl-leading-20 gl-text-subtle"
+            >Part of the extended design system layer</span
+          >
+
+          <span
             v-if="item.summary || item.description"
             class="gl-mb-0 gl-block gl-text-base gl-leading-20"
           >
