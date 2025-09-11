@@ -45,7 +45,7 @@ export default {
 
 <template>
   <code
-    class="gl-rounded-default gl-w-10 gl-p-2 gl-text-center gl-text-xs"
+    class="gl-w-10 gl-rounded-default gl-p-2 gl-text-center gl-text-xs"
     :class="classes"
     :style="{ backgroundColor: background }"
   >

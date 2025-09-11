@@ -50,7 +50,7 @@ export default {
   <span aria-hidden="true" class="color-chip" :class="sizeClass">
     <span
       v-if="isBorderColor"
-      class="gl-rounded-default gl-inline-block gl-border-4 gl-border-solid"
+      class="gl-inline-block gl-rounded-default gl-border-4 gl-border-solid"
       :class="sizeClass"
       :style="{ 'border-color': color }"
     ></span>

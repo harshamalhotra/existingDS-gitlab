@@ -32,11 +32,11 @@ export default {
 </script>
 
 <template>
-  <div class="gl-rounded-default gl-border gl-mb-5 gl-flex gl-flex-col">
+  <div class="gl-border gl-mb-5 gl-flex gl-flex-col gl-rounded-default">
     <div class="background-example-pattern gl-grow gl-basis-0 gl-p-4">
       <slot name="preview"></slot>
     </div>
-    <div class="gl-rounded-b-default gl-border-t gl-bg-subtle">
+    <div class="gl-border-t gl-rounded-b-default gl-bg-subtle">
       <div class="gl-px-3 gl-py-2">
         <gl-button
           ref="toggleButton"
