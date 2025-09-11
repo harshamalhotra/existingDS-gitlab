@@ -468,7 +468,6 @@ module.exports = {
       6: '1.5rem',
       base: '.25rem',
       small: '.125rem',
-      lg: '.5rem',
       pill: '.75rem',
     },
     boxShadow: {
