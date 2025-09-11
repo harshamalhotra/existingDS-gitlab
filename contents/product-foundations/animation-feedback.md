@@ -1,7 +1,9 @@
 ---
 name: Feedback animation
+extendedNotice:
+  contactPreset: animation
 ---
-  
+
 Feedback animation is used to confirm a user interaction with an interactive element.
 
 ## Examples

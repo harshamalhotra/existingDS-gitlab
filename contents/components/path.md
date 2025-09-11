@@ -1,6 +1,8 @@
 ---
 name: Path
 description: Paths are horizontal process flows composed of a series of stages.
+extendedNotice:
+  contactPreset: ux-designers-and-gitlab-ui
 related:
   - tabs
   - stepper

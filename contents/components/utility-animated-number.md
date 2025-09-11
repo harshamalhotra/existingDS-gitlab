@@ -1,6 +1,8 @@
 ---
 name: Animated Number
 description: Animated numbers provide a signifier that values are being changed.
+extendedNotice:
+  contactPreset: ux-designers-and-gitlab-ui
 ---
 
 ## Examples

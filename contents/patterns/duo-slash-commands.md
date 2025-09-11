@@ -1,6 +1,13 @@
 ---
 name: Slash commands in GitLab Duo Chat
 summary: A method for communicating with and discovering GitLab Duo Chat functionality.
+extendedNotice:
+  owners: group::duo chat
+  contacts:
+    - text: '#ux-ai-integration'
+      url: 'https://gitlab.slack.com/channels/ux-ai-integration'
+    - text: '#g_duo_chat'
+      url: 'https://gitlab.slack.com/channels/g_duo_chat'
 related:
   - /patterns/ai-human-interaction
 ---

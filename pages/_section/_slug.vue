@@ -2,6 +2,7 @@
 import PageContainer from '../../components/page_container.vue';
 import PageHeader from '../../components/page_header.vue';
 import PageNavigation from '../../components/page_navigation.vue';
+import ExtendedNotice from '../../components/extended_notice.vue';
 import { buildMeta } from '../../helpers/seo';
 
 /*
@@ -18,6 +19,7 @@ export default {
     PageContainer,
     PageHeader,
     PageNavigation,
+    ExtendedNotice,
   },
   scrollToTop: true,
   editThisPage: {
@@ -77,6 +79,9 @@ export default {
         minute: 'numeric',
       });
     },
+    hasExtendedNotice() {
+      return Boolean(this.page.extendedNotice);
+    },
   },
 };
 </script>
@@ -95,6 +100,13 @@ export default {
           :heading="page.name"
           :description="page.description"
           :deprecated="page.deprecated"
+        />
+        <extended-notice
+          v-if="hasExtendedNotice"
+          :scope="page.extendedNotice.scope || page.title"
+          :contact-preset="page.extendedNotice.contactPreset"
+          :owners="page.extendedNotice.owners"
+          :contacts="page.extendedNotice.contacts"
         />
         <nuxt-child :page="page" />
         <p v-if="lastUpdatedAt" class="gl-mb-0 gl-mt-5 gl-text-center">

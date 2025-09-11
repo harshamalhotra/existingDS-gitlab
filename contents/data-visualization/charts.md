@@ -1,5 +1,8 @@
 ---
 name: Charts
+extendedNotice:
+  owners: group::platform insights
+  contactPreset: custom-dashboards-foundation
 related:
   - popover
 ---
@@ -174,9 +177,9 @@ seriesInfo = [
     name: 'Example Legend',
     color: 'blue',
     disabled: true,
-    type: 'line'
-  }
-]
+    type: 'line',
+  },
+];
 ```
 
 ### More options menu

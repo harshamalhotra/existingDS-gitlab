@@ -1,6 +1,8 @@
 ---
 name: Feature discovery
 summary: Introduce and promote new functionality, emphasizing user context, motivation, and value to ensure effective adoption.
+extendedNotice:
+  contactPreset: ux-designers
 related:
   - banner
   - popover

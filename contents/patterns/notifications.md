@@ -2,6 +2,11 @@
 name: Notifications
 summary: Recommendations for timely and relevant system-generated updates to keep users informed.
 description: A notification is a user or system-generated update pushed to users.
+extendedNotice:
+  owners: group::project management
+  contacts:
+    - text: '#g_project-management on slack'
+      url: 'https://gitlab.slack.com/channels/g_project-management'
 ---
 
 ## Structure

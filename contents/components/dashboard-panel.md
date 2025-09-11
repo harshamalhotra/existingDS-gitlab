@@ -1,6 +1,11 @@
 ---
 name: Dashboard panel
 description: A dashboard panel displays content and data for analysis and decision-making. It's the basic building blocks of a dashboard, but can also be used on its own. In a customizable dashboard, it can be moved and resized by a user to create their preferred layout.
+extendedNotice:
+  owners: group::platform insights
+  contacts:
+    - text: '#g_analytics_platform_insights'
+      url: 'https://gitlab.slack.com/channels/g_analytics_platform_insights'
 related:
   - dashboards
 ---

@@ -1,5 +1,13 @@
 ---
 name: Feedback
+extendedNotice:
+  scope: Calls to action for GitLab Duo
+  owners: group::duo chat
+  contacts:
+    - text: '#ux-ai-integration'
+      url: 'https://gitlab.slack.com/channels/ux-ai-integration'
+    - text: '#g_duo_chat'
+      url: 'https://gitlab.slack.com/channels/g_duo_chat'
 related:
   - /components/button
   - /components/link

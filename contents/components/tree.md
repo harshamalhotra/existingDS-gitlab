@@ -1,9 +1,11 @@
 ---
 name: Tree
 description: A tree component structures parent and child nodes into a meaningful hierarchy.
+extendedNotice:
+  contactPreset: ux-designers-and-gitlab-ui
 related:
-- accordion
-- breadcrumb
+  - accordion
+  - breadcrumb
 ---
 
 ## Examples

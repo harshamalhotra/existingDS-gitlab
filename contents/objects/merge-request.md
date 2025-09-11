@@ -1,5 +1,11 @@
 ---
 name: Merge request
+extendedNotice:
+  scope: The merge request object
+  owners: group::code review
+  contacts:
+    - text: '#g_create_code-review on slack'
+      url: 'https://gitlab.slack.com/channels/g_create_code-review'
 ---
 
 A merge request (MR) is one of the core product objects, where users collaborate on proposed changes to source code.

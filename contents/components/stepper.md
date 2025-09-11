@@ -1,6 +1,8 @@
 ---
 name: Stepper
 description: A stepper separates structured workflows into meaningful, ordered steps.
+extendedNotice:
+  contactPreset: ux-designers-and-gitlab-ui
 related:
   - progress-bar
   - path
