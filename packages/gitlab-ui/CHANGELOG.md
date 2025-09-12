@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 122.5.0
+
+### Minor Changes
+
+- dc09a77: GlBarChart: Add scoped slots for tooltip customization
+
+  Introduces `tooltip-title`, `tooltip-content` and `tooltip-value` scoped slots to allow consumers to customize the chart's tooltip.
+
 ## 122.4.0
 
 ### Minor Changes
