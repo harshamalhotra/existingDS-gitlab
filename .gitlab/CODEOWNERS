@@ -5,7 +5,7 @@
 [GitLab UI] @gitlab-org/maintainers/gitlab-ui
 /packages/gitlab-ui/
 
-[Design System][1] @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian
+[Design System][1] @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer 
 /contents/get-started/
 /contents/product-foundations/
 /contents/directives/
