@@ -1,10 +1,7 @@
 import { GlBarChart } from '../../../charts';
 import { makeContainer } from '../../../utils/story_decorators/container';
 
-const Template = (args, { argTypes }) => ({
-  components: { GlBarChart },
-  props: Object.keys(argTypes),
-  template: `
+const template = (content) => `
     <gl-bar-chart
       :data="data"
       :option="option"
@@ -13,8 +10,15 @@ const Template = (args, { argTypes }) => ({
       :x-axis-type="xAxisType"
       :height="height"
       :presentation="presentation"
-    />
-  `,
+    >
+      ${content}
+    </gl-bar-chart>
+`;
+
+const Template = (args, { argTypes }) => ({
+  components: { GlBarChart },
+  props: Object.keys(argTypes),
+  template: template(),
 });
 
 const mockData = {
@@ -91,6 +95,29 @@ Object.assign(Tiled, {
     presentation: 'tiled',
   }),
 });
+
+export const WithCustomTooltip = (_args, { argTypes }) => ({
+  components: { GlBarChart },
+  props: Object.keys(argTypes),
+  template: template(`
+    <template #tooltip-title="{ params }">Character: {{params && params.value}}</template>
+    <template #tooltip-content="{ params }">
+      <div v-for="p in params && params.seriesData">Pushes: {{p.value[0]}}</div>
+    </template>
+  `),
+});
+WithCustomTooltip.args = generateProps();
+WithCustomTooltip.tags = ['skip-visual-test'];
+
+export const WithCustomTooltipValue = (_args, { argTypes }) => ({
+  components: { GlBarChart },
+  props: Object.keys(argTypes),
+  template: template(`
+    <template #tooltip-value="{ value }">{{ value.toFixed(2) }}</template>
+  `),
+});
+WithCustomTooltipValue.args = generateProps();
+WithCustomTooltipValue.tags = ['skip-visual-test'];
 
 export default {
   title: 'charts/bar-chart',

@@ -196,9 +196,19 @@ describe('ChartTooltip', () => {
   });
 
   describe('is customized via slots', () => {
-    const triggerFormatter = (params) => {
-      const { formatter } = mockChartInstance.setOption.mock.calls[0][0].xAxis.axisPointer.label;
+    const triggerFormatter = (params, dimensionAxis = 'xAxis') => {
+      const { formatter } =
+        mockChartInstance.setOption.mock.calls[0][0][dimensionAxis].axisPointer.label;
       formatter(params);
+    };
+
+    const GlPopoverStub = {
+      template: `
+        <div>
+          <slot name="title"></slot>
+          <slot></slot>
+        </div>
+      `,
     };
 
     describe('formats tooltip', () => {
@@ -209,12 +219,7 @@ describe('ChartTooltip', () => {
           },
           {
             stubs: {
-              GlPopover: {
-                template: `<div>
-                  <slot name="title"></slot>
-                    <slot></slot>
-                  </div>`,
-              },
+              GlPopover: GlPopoverStub,
             },
           },
         );
@@ -279,6 +284,90 @@ describe('ChartTooltip', () => {
         expect(findPopover().text()).toBe('Value (Time)');
         expect(findTooltipDefaultFormat().props('tooltipContent')).toEqual({
           Amount: { color: '', value: 1 },
+        });
+      });
+
+      describe('dimensionAxis = `yAxis`', () => {
+        beforeEach(() => {
+          createWrapper(
+            {
+              useDefaultTooltipFormatter: true,
+              dimensionAxis: 'yAxis',
+            },
+            {
+              stubs: {
+                GlPopover: GlPopoverStub,
+              },
+            },
+          );
+        });
+
+        it('sets tooltip formatter function', () => {
+          expect(mockChartInstance.setOption).toHaveBeenCalledWith({
+            yAxis: {
+              axisPointer: {
+                label: {
+                  formatter: expect.any(Function),
+                },
+                show: true,
+              },
+            },
+          });
+        });
+
+        it('formats tooltip', async () => {
+          expect(findTooltipDefaultFormat().props('tooltipContent')).toEqual({});
+
+          triggerFormatter(
+            {
+              seriesData: [
+                {
+                  seriesName: 'Series 1',
+                  value: [1, 'Value'],
+                  color: '#aaa',
+                },
+                {
+                  seriesName: 'Series 2',
+                  value: [2, 'Value'],
+                  color: '#bbb',
+                },
+              ],
+            },
+            'yAxis',
+          );
+          await nextTick();
+
+          expect(findPopover().text()).toBe('Value');
+          expect(findTooltipDefaultFormat().props('tooltipContent')).toEqual({
+            'Series 1': { color: '#aaa', value: 1 },
+            'Series 2': { color: '#bbb', value: 2 },
+          });
+        });
+
+        it('formats tooltip with axis names', async () => {
+          mockChartInstance.getOption.mockReturnValueOnce({
+            xAxis: [{ name: 'Time' }],
+            yAxis: [{ name: 'Amount' }],
+          });
+
+          triggerFormatter(
+            {
+              seriesData: [
+                {
+                  seriesName: 'Series 1',
+                  value: [1, 'Value'],
+                  color: '#aaa',
+                },
+              ],
+            },
+            'yAxis',
+          );
+          await nextTick();
+
+          expect(findPopover().text()).toBe('Value (Amount)');
+          expect(findTooltipDefaultFormat().props('tooltipContent')).toEqual({
+            Time: { color: '', value: 1 },
+          });
         });
       });
     });

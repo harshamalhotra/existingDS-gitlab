@@ -432,22 +432,36 @@ export const generateLineSeries = ({ name, color, data = [], yAxisIndex = 0 }) =
   itemStyle: { color },
 });
 
-export const getTooltipTitle = (params = null, titleAxisName = null) => {
+export const getTooltipAxisConfig = (dimensionAxis) => {
+  if (!['xAxis', 'yAxis'].includes(dimensionAxis)) {
+    throw new Error(`\`dimensionAxis\` must be "xAxis" or "yAxis", received ${dimensionAxis}`);
+  }
+
+  if (dimensionAxis === 'xAxis') {
+    return { dimensionIndex: 0, metricIndex: 1, valueAxis: 'yAxis' };
+  }
+
+  return { dimensionIndex: 1, metricIndex: 0, valueAxis: 'xAxis' };
+};
+
+export const getTooltipTitle = (params = null, titleAxisName = null, dimensionIndex = 0) => {
   if (!params) return '';
 
   const title = params.seriesData
     .reduce((acc, { value }) => {
-      if (acc.includes(value[0])) {
+      const dimension = value[dimensionIndex];
+
+      if (acc.includes(dimension)) {
         return acc;
       }
-      return [...acc, value[0]];
+      return [...acc, dimension];
     }, [])
     .join(', ');
 
   return titleAxisName ? `${title} (${titleAxisName})` : title;
 };
 
-export const getTooltipContent = (params = null, valueAxisName = null) => {
+export const getTooltipContent = (params = null, valueAxisName = null, metricIndex = 1) => {
   if (!params) {
     return {};
   }
@@ -455,22 +469,19 @@ export const getTooltipContent = (params = null, valueAxisName = null) => {
   const { seriesData } = params;
 
   if (seriesData.length === 1) {
-    const {
-      value: [, yValue],
-      seriesName,
-    } = seriesData[0];
+    const { value, seriesName } = seriesData[0];
 
     return {
       [valueAxisName || seriesName]: {
-        value: yValue,
+        value: value[metricIndex],
         color: '', // ignore color when showing a single series
       },
     };
   }
 
   return seriesData.reduce((acc, { value, seriesName, color }) => {
-    const yValue = value[1];
-    acc[seriesName] = { value: yValue, color };
+    acc[seriesName] = { value: value[metricIndex], color };
+
     return acc;
   }, {});
 };

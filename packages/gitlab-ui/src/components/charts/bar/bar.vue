@@ -7,7 +7,6 @@ import { CHART_DEFAULT_SERIES_STACK, HEIGHT_AUTO_CLASSES } from '../../../utils/
 import { colorFromDefaultPalette } from '../../../utils/charts/theme';
 import { engineeringNotation } from '../../../utils/number_utils';
 import { hexToRgba } from '../../../utils/utils';
-import TooltipDefaultFormat from '../shared/tooltip/tooltip_default_format/tooltip_default_format.vue';
 import Chart from '../chart/chart.vue';
 import ChartTooltip from '../shared/tooltip/tooltip.vue';
 import { stackedPresentationOptions } from '../../../utils/constants';
@@ -64,7 +63,6 @@ export default {
   components: {
     Chart,
     ChartTooltip,
-    TooltipDefaultFormat,
   },
   inheritAttrs: false,
   props: {
@@ -113,8 +111,6 @@ export default {
   data() {
     return {
       chart: null,
-      tooltipTitle: '',
-      tooltipContent: {},
     };
   },
   computed: {
@@ -162,13 +158,6 @@ export default {
             axisTick: {
               show: true,
             },
-            axisPointer: {
-              show: true,
-              type: 'none',
-              label: {
-                formatter: this.onLabelChange,
-              },
-            },
           },
         },
         this.option,
@@ -187,46 +176,6 @@ export default {
       this.chart = chart;
       this.$emit('created', chart);
     },
-    onLabelChange(params) {
-      const { yLabels, tooltipContent } = this.getTooltipContent(params, this.xAxisTitle);
-
-      this.$set(this, 'tooltipContent', tooltipContent);
-      this.tooltipTitle = yLabels.join(', ');
-    },
-    /**
-     * For bar charts, the tooltip should be against x-axis values.
-     * This method will be removed after https://gitlab.com/gitlab-org/gitlab-ui/-/issues/674
-     *
-     * @param {Object} params series data
-     * @param {String} xAxisTitle x-axis title
-     * @returns {Object} tooltip title and content
-     */
-    getTooltipContent(params, xAxisTitle = null) {
-      const seriesDataLength = params.seriesData.length;
-      const { yLabels, tooltipContent } = params.seriesData.reduce(
-        (acc, chartItem) => {
-          const [value, title] = chartItem.value || [];
-          // The x axis title is used instead of y axis
-          const seriesName =
-            seriesDataLength === 1 && xAxisTitle ? xAxisTitle : chartItem.seriesName;
-          const color = seriesDataLength === 1 ? '' : chartItem.color;
-          acc.tooltipContent[seriesName] = {
-            value,
-            color,
-          };
-          if (!acc.yLabels.includes(title)) {
-            acc.yLabels.push(title);
-          }
-          return acc;
-        },
-        {
-          yLabels: [],
-          tooltipContent: {},
-        },
-      );
-
-      return { yLabels, tooltipContent };
-    },
   },
   HEIGHT_AUTO_CLASSES,
 };
@@ -242,11 +191,21 @@ export default {
       v-on="$listeners"
       @created="onCreated"
     />
-    <chart-tooltip v-if="chart" :chart="chart">
-      <template #title>
-        <div>{{ tooltipTitle }} ({{ yAxisTitle }})</div>
+    <chart-tooltip
+      v-if="chart"
+      :chart="chart"
+      :use-default-tooltip-formatter="true"
+      dimension-axis="yAxis"
+    >
+      <template v-if="$scopedSlots['tooltip-title']" #title="scope">
+        <slot name="tooltip-title" v-bind="scope"></slot>
       </template>
-      <tooltip-default-format :tooltip-content="tooltipContent" />
+      <template v-if="$scopedSlots['tooltip-content']" #default="scope">
+        <slot name="tooltip-content" v-bind="scope"></slot>
+      </template>
+      <template v-if="$scopedSlots['tooltip-value']" #tooltip-value="scope">
+        <slot name="tooltip-value" v-bind="scope"></slot>
+      </template>
     </chart-tooltip>
   </div>
 </template>

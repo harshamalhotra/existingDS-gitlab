@@ -5,7 +5,11 @@ import { uid, debounceByAnimationFrame } from '../../../../utils/utils';
 import GlPopover from '../../../base/popover/popover.vue';
 import { popoverPlacements } from '../../../../utils/constants';
 import { TOOLTIP_LEFT_OFFSET, TOOLTIP_TOP_OFFSET } from '../../../../utils/charts/constants';
-import { getTooltipTitle, getTooltipContent } from '../../../../utils/charts/config';
+import {
+  getTooltipTitle,
+  getTooltipContent,
+  getTooltipAxisConfig,
+} from '../../../../utils/charts/config';
 
 import TooltipDefaultFormat from './tooltip_default_format/tooltip_default_format.vue';
 
@@ -127,6 +131,20 @@ export default {
       required: false,
       default: false,
     },
+    /**
+     * Specifies which axis contains the dimensional data used in the tooltip.
+     * When `xAxis`, x-axis value becomes the tooltip's title and
+     * y-axis values become the tooltip's values.
+     * When `yAxis`, roles are reversed.
+     */
+    dimensionAxis: {
+      type: String,
+      required: false,
+      default: 'xAxis',
+      validator(value) {
+        return value === 'xAxis' || value === 'yAxis';
+      },
+    },
   },
   data() {
     return {
@@ -208,17 +226,22 @@ export default {
 
     if (this.useDefaultTooltipFormatter) {
       this.chart.setOption({
-        xAxis: {
+        [this.dimensionAxis]: {
           axisPointer: {
             show: true,
             label: {
               formatter: (params) => {
                 const options = this.chart.getOption();
-                const titleAxisName = options.xAxis?.[0]?.name;
-                const valueAxisName = options.yAxis?.[0]?.name;
 
-                this.title = getTooltipTitle(params, titleAxisName);
-                this.content = getTooltipContent(params, valueAxisName);
+                const { dimensionIndex, metricIndex, valueAxis } = getTooltipAxisConfig(
+                  this.dimensionAxis,
+                );
+
+                const titleAxisName = options[this.dimensionAxis]?.[0]?.name;
+                const valueAxisName = options[valueAxis]?.[0]?.name;
+
+                this.title = getTooltipTitle(params, titleAxisName, dimensionIndex);
+                this.content = getTooltipContent(params, valueAxisName, metricIndex);
                 this.params = params;
               },
             },
