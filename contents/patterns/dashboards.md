@@ -81,6 +81,40 @@ A customizable dashboard supports these additional interactions:
 - **Lock**: One or more elements are temporarily unavailable for changes to be made.
 - **Remove**: Delete a dashboard.
 
+### Filtering
+
+A dashboard can implement one of the following filter configurations:
+
+- **No filtering**: Each dashboard panel has a fixed query, most commonly with a predefined date range.
+- **Dashboard-level filtering**: A global filter allowing a user to change parameters across all dashboard panels.
+- **Visualization-level filtering**: An individual filter on a specific dashboard panel to display a smaller or different subset of the data.
+- **Combined dashboard-level and visualization-level filtering**: A dashboard-level filter provides a global context that dashboard panels inherit by default, while a visualization-level filter adds a refinement option to an individual dashboard panel within this context.
+
+#### Dashboard filter hierarchy
+
+A dashboard panel inherits dashboard-level filters by default. When a dashboard panel requires additional filtering capabilities, this visualization-level filter should refine, not replace, the dashboard-level context.
+
+<grid>
+  <do>
+    <figure-img alt="Part of a dashboard showing open severity trends. A dashboard filter shows 'Date range: Last 90 days'. The open severity trends dashboard panel shows a filter to switch between critical, high, and medium. Critical is selected. Arrows with dotted lines connect the dashboard filter and visualization filter through a green circle with a checkmark." label="Make dashboard-level and visualization-level filters work together. The severity level visualization filter narrows, not replaces, dashboard-level date range context." src="/img/dashboard-filtering-do.svg"></figure-img>
+  </do>
+  <dont>
+    <figure-img alt="Part of a dashboard showing open severity trends. A dashboard filter shows 'Date range: Last 90 days'. The open severity trends dashboard panel shows a filter with a predefined date range'. 'Last 7 days' is selected. Arrows with dotted lines connect the dashboard filter and visualization filter through a red circle with an x through it." label="The visualization-level filters should not override the date filter that is set at the dashboard-level." src="/img/dashboard-filtering-dont.svg"></figure-img>
+  </dont>
+</grid>
+
+#### Exceptions
+
+The following special cases exist when a dashboard-level filter either does not affect a dashboard panel or when there is no data for the dashboard-level scope:
+
+- **Fixed date range**: When a dashboard panel uses a fixed date range that isn't affected by dashboard-level filters, the specific date range should be clearly visible beneath the dashboard panel title.
+- **No results**: When no data is available for the dashboard-level filter scope, follow the [empty search results](/patterns/empty-states#empty-search-results) guidelines.
+
+<grid>
+    <figure-img alt="Dashboard panel example showing a fixed date range using text below the dashboard panel title." label="Fixed date range: When dashboard-level filters don't affect a panel, clearly display the date range being used below the panel title." src="/img/dashboard-filtering-fixed.svg"></figure-img>
+    <figure-img alt="Dashboard panel example showing no results due to a filter change." label="No results: When no data is available for the dashboard-level filter scope, display an appropriate empty state." src="/img/dashboard-filtering-no-results.svg"></figure-img>
+</grid>
+
 ## Considerations
 
 - **Organize hierarchically**: Place high-level information at the top and detailed information towards the bottom.
@@ -90,6 +124,7 @@ A customizable dashboard supports these additional interactions:
 - **Show progression**: Display trends and a comparison over time, not just a current snapshot.
 - **Facilitate exporting**: Format data and visuals for easy inclusion in presentations.
 - **Maintain simplicity**: Limit a dashboard panel to one visualization for better UI scalability and easier configuration.
+- ****Limit filtering**: Avoid overwhelming users with too many filter options.
 
 ## Code reference
 
