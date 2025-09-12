@@ -39,7 +39,9 @@ const decorators = [
   }),
 ];
 
-setConfigs();
+setConfigs({
+  focusableLoadingButton: true,
+});
 
 const theme = {
   brandTitle: 'Pajamas Design System',

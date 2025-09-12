@@ -14,6 +14,7 @@ import { isEvent } from '../../../vendor/bootstrap-vue/src/utils/inspect';
 import GlIcon from '../icon/icon.vue';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { ENTER, SPACE } from '../new_dropdowns/constants';
+import { glButtonConfig } from '../../../config';
 
 export default {
   name: 'GlButton',
@@ -225,6 +226,9 @@ export default {
     isButtonDisabled() {
       return this.disabled || this.loading;
     },
+    isButtonAriaDisabled() {
+      return glButtonConfig.focusableLoadingButton && this.isButton && this.loading;
+    },
     buttonClasses() {
       const classes = ['btn', 'gl-button', `btn-${this.variant}`, `btn-${this.buttonSize}`];
 
@@ -237,8 +241,14 @@ export default {
         'button-ellipsis-horizontal': this.hasIconOnly && this.icon === 'ellipsis_h',
         selected: this.selected,
         'btn-block': this.displayBlock,
-        disabled: this.isButtonDisabled,
+        disabled: this.disabled,
       });
+
+      if (this.isButtonAriaDisabled) {
+        classes.push({
+          disabled: true,
+        });
+      }
 
       if (this.label) {
         classes.push('btn', 'btn-label');
@@ -282,14 +292,14 @@ export default {
         // Type only used for "real" buttons
         type: this.isButton ? this.type : null,
         // Disabled only set on "real" buttons
-        disabled: this.isButton ? this.disabled : null,
+        disabled: this.isButton ? this.isButtonDisabled : null,
         // We add a role of button when the tag is not a link or button or when link has `href` of `#`
         role: this.isNonStandardTag || this.isHashLink ? 'button' : this.$attrs?.role,
         // We set the `aria-disabled` state for non-standard tags
         ...(this.isNonStandardTag ? { 'aria-disabled': String(this.disabled) } : {}),
-        // We set the `aria-disabled` state for buttons while loading
-        ...(this.isButton && this.loading ? { 'aria-disabled': String(this.loading) } : {}),
         tabindex: this.tabindex,
+        // We set the `aria-disabled` state for buttons while loading
+        ...(this.isButtonAriaDisabled ? { 'aria-disabled': 'true', disabled: null } : {}),
       };
 
       if (this.isLink) {
@@ -314,12 +324,17 @@ export default {
       return { ...this.$attrs, ...base };
     },
     computedListeners() {
-      const { click, ...otherListeners } = this.$listeners;
-
+      if (this.isButtonAriaDisabled) {
+        const { click, ...otherListeners } = this.$listeners;
+        return {
+          keydown: this.onKeydown,
+          ...otherListeners,
+        };
+      }
       return {
         click: this.onClick,
         keydown: this.onKeydown,
-        ...otherListeners,
+        ...this.$listeners,
       };
     },
     componentIs() {
@@ -345,10 +360,10 @@ export default {
   },
   methods: {
     onKeydown(event) {
-      // Skip if button is disabled
+      // Skip if disabled
       // Add SPACE keydown handler for link has `href` of `#`
       // Add ENTER handler for non-standard tags
-      if (!this.isButtonDisabled && (this.isNonStandardTag || this.isHashLink)) {
+      if (!this.disabled && (this.isNonStandardTag || this.isHashLink)) {
         const { code } = event;
 
         if (code === SPACE || (code === ENTER && this.isNonStandardTag)) {
@@ -359,11 +374,9 @@ export default {
       }
     },
     onClick(event) {
-      if (this.isButtonDisabled && isEvent(event)) {
+      if (this.disabled && isEvent(event)) {
         stopEvent(event);
-        return;
       }
-      this.$emit('click', event);
     },
   },
 };

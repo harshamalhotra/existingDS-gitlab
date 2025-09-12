@@ -15,7 +15,9 @@ beforeEach(() => {
 
   setWindowLocation(TEST_HOST);
 
-  setConfigs();
+  setConfigs({
+    focusableLoadingButton: true,
+  });
 });
 
 // Tooltips require complex DOM setup

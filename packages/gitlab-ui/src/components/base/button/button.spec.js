@@ -1,6 +1,7 @@
 import { mount } from '@vue/test-utils';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { SPACE, ENTER } from '../new_dropdowns/constants';
+import setConfigs from '../../../config';
 import GlLink from '../link/link.vue';
 import GlButton from './button.vue';
 
@@ -487,5 +488,26 @@ describe('button component', () => {
 
     await wrapper.trigger('click');
     expect(onClick).not.toHaveBeenCalled();
+  });
+
+  describe('with `focusableLoadingButton` config disabled', () => {
+    beforeEach(() => {
+      setConfigs({
+        focusableLoadingButton: false,
+        resetConfig: true,
+      });
+    });
+
+    it('button has disabled attribute when loading set', () => {
+      buildWrapper({
+        propsData: {
+          loading: true,
+        },
+      });
+
+      expect(wrapper.attributes('disabled')).toBe('disabled');
+      expect(wrapper.classes()).not.toContain('disabled');
+      expect(wrapper.attributes('aria-disabled')).toBeUndefined();
+    });
   });
 });
