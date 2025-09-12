@@ -244,6 +244,8 @@ StyleDictionary.registerFormat({
       focus: formatToken(COMPILED_TOKENS['focus-ring'].outer.color),
     };
 
+    const spacingScale = formatTokens(COMPILED_TOKENS['spacing-scale']);
+
     const tokens = {
       background: backgroundColors,
       border: borderColors,
@@ -251,6 +253,7 @@ StyleDictionary.registerFormat({
       text: textColors,
       outline: outlineColor,
       colors: colorTokens,
+      spacing: spacingScale,
     };
 
     // Format as JSON
@@ -290,6 +293,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const alphaLightColors = getScalesAndCSSCustomProperties(COLOR_TOKENS.alpha.light);
   const borderColors = getScalesAndCSSCustomProperties(COMPILED_TOKENS.border.color);
   const brandColors = getScalesAndCSSCustomProperties(brandColorsTokens);
+  const spacingScale = getScalesAndCSSCustomProperties(COMPILED_TOKENS.spacing);
 
   const statusColorObjects = generateColorMap(COMPILED_TOKENS, statusVariants, 'status');
   const feedbackColorObjects = generateColorMap(COMPILED_TOKENS, feedbackVariants, 'feedback');
@@ -316,6 +320,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const feedbackBackgroundColors = ${JSON.stringify(feedbackBackgroundColors)};
   const feedbackTextColors = ${JSON.stringify(feedbackTextColors)};
   const feedbackIconColors = ${JSON.stringify(feedbackFillColors)};
+  const spacingScale = ${JSON.stringify(spacingScale)};
 
   const colors = {
     inherit: 'inherit',
@@ -395,6 +400,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
     outlineColor,
     textColor,
     fill,
+    spacing: spacingScale,
   }
   `;
 };

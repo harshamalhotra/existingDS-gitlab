@@ -2,6 +2,7 @@ import Vue from 'vue';
 import DesignToken from '../components/design_token.vue';
 import DesignTokensTable from '../components/design_tokens_table.vue';
 import DesignTokensColorPalette from '../components/design_tokens_color_palette.vue';
+import DimensionScale from '../components/dimension_scale.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
 import ExtendedNotice from '../components/extended_notice.vue';
@@ -20,6 +21,7 @@ Object.entries({
   DesignToken,
   DesignTokensTable,
   DesignTokensColorPalette,
+  DimensionScale,
   Do,
   Dont,
   ExtendedNotice,
