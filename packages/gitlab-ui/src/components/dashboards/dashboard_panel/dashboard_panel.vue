@@ -71,6 +71,7 @@ export default {
     },
     /**
      * Configuration object for the title popover. Expected structure:
+     * **Deprecated:** Use slots `#info-popover-content` and `#info-popover-title` instead.
      *
      * - `description`: The popover text content with interpolation placeholders.
      *   Uses `%{linkStart}` and `%{linkEnd}` as markers for where a link should be inserted.
@@ -78,7 +79,7 @@ export default {
      * - `descriptionLink`: The optional URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
      *
-     * Note: The `info-popover-content` and `info-popover-title` slots take precedence over this prop when provided.
+     * @deprecated Use slots `#info-popover-content` and `#info-popover-title` instead.
      */
     titlePopover: {
       type: Object,
