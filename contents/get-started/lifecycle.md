@@ -1,107 +1,61 @@
 ---
-name: Component lifecycle
+name: Contribution lifecycle
 ---
 
-The component lifecycle is a flexible set of guidelines to help product teams efficiently and iteratively add components to Pajamas. The goal of this process is to make it easy to submit new designs (including documentation), propose changes to existing designs, and translate component designs into built components.
+The contribution lifecycle explains the scope of changes needed to keep Pajamas healthy. Every update should consider design, code, and documentation together. When these stay in sync, Pajamas remains reliable, consistent, and ensures quality. The lifecycle is a flexible guide that shows the kinds of steps most contributions go through. Not every change will follow every stage in the same way.
 
-The component lifecycle has the following stages (identified by labels):
+Why this matters:
 
-- **Define:** A need for a component or a gap within an existing component is identified and usage guidelines are written/updated within [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com). <gl-label background-color="#8C73A1" title="pajamas::define" scoped />
-- **Design:** The component is added to or modified in the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit) in Figma. <gl-label background-color="#7CA189" title="pajamas::design" scoped />
-- **Build:** The component is added to [Gitlab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui), including
-  documentation. The component is styled according to design specs found
-  in [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit).
-  Components function correctly, match usage guidelines, and are added to Pajamas. <gl-label background-color="#6787BB" title="pajamas::build" scoped />
-- **Integrate:** The documented component is integrated into [GitLab the
-  product](https://gitlab.com/gitlab-org/gitlab). This stage could involve removing old HAML components
-  in order to replace them with the newly defined Vue components. <gl-label background-color="#A17A73" title="pajamas::integrate" scoped />
+- **Parity prevents confusion:** a change in Figma without code, or code without documentation, creates gaps that slow teams down.
+- **Consistency builds trust:** knowing that the design system is accurate and up to date allows teams to apply it with confidence.
+- **Quality is sustained:** addressing all parts of a change together keeps the design system complete rather than filled with partial improvements.
 
-Stages may happen in tandem and in different orders, depending on how mature the component currently
-is. For example:
+## Lifecycle stages
 
-- If the component is already in GitLab and widely used, the **build** stage would involve migrating styles from GitLab to gitlab-ui. The **define** and **design** stages may occur at the same time, or even sometimes after.
-- If a component is brand new, the **define** and **design** stages may need some revisions as the
-  **build** stage progresses.
-- If a component is built in GitLab UI and included in Pajamas, it may be partially
-  **integrated** into the product, even if not all variants needed exist in Pajamas yet.
+The contribution lifecycle has the following stages:
 
-## Creating or updating a component
+- **Define:** Clarify what change is needed and why. This could be identifying a gap, reporting a bug, suggesting an adjustment, or proposing a new element. The goal is to make the need visible and start orienting toward a solution.
+- **Design:** Create or update the design assets in the [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit). This might mean adding a new element, updating an existing one, or creating a new template. The goal is to make sure designers can apply the change consistently.
+- **Build:** Implement the change in [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui). This may involve adding a new component, updating an existing one, or fixing a bug. The goal is to implement the change so it matches the design, functions correctly, and is covered by tests.
+- **Document:** Add or update Pajamas documentation with guidelines, examples, and references. The goal is to provide clear guidance so the change can be adopted with confidence.
 
-There are three distinct areas that should be reviewed when adding or updating a component:
+Not every contribution requires the same depth in each stage. A documentation fix may only touch the document stage. A small style adjustment may involve only the design and build stages. The lifecycle ensures that changes to Pajamas are stay aligned across all assets. Stages may happen in tandem and in different orders, depending on how mature the contribution currently is. Changes in one stage may necessitate updates in another.
 
-1. [Pajamas](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)
-1. [Pajamas UI Kit (Figma)](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit)
-1. [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui)
+Some contributions may also require an [integration step](#integration) before they are implemented in the GitLab product.
 
-The following diagram outlines the various component lifecycle stages and is available to help
-determine how to add or update a component in Pajamas, based on the current state
-of the component. This diagram is meant to be a guide and is flexible to account for the needs
-of your team.
+## Determining whether something belongs in Pajamas
 
-<figma-embed label="Component lifecycle diagram depicting the various stages of contributing to Pajamas." src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fsd0mmLWaejswQUSJ3ei3kj%2FComponent-Lifecycle%3Fpage-id%3D0%253A1%26node-id%3D77%253A2122%26viewport%3D-2283%252C1047%252C0.36993077397346497%26scaling%3Dscale-down"></figma-embed>
+Adding or updating items in Pajamas should be a deliberate choice. Ask these questions to guide the decision:
 
-[View component lifecycle in Figma →](https://www.figma.com/file/sd0mmLWaejswQUSJ3ei3kj/Component-Lifecycle?node-id=77%3A2122)
+- Is this a new element or a variation of an existing one?
+- Why do existing elements not support this need?
+- Will this be useful beyond a single use case?
+- Is it feasible to maintain alongside other Pajamas assets?
 
-## Determining whether a component should be included in Pajamas
+If the answers suggest the change is only relevant in a single area, it should stay local. If it is unclear whether there will be reuse, wait until more evidence emerges before adding it.
 
-Adding, or not adding, a component to Pajamas should be a deliberate choice. To
-help facilitate this decision, you should be able to answer the following questions:
+If the answer points to reuse across multiple domains, the contribution likely belongs in Pajamas. Many new components and patterns will begin in the extended layer, which makes it possible to share useful solutions across teams without requiring global adoption. When in doubt, follow [the contribution process](/get-started/contributing) and open an issue to propose a change. The Design System team will help determine whether it belongs in Pajamas.
 
-- Is this a new component or a variation of an existing one?
-- Why do existing components not support this use case?
-- Will this component be reused beyond the current scope? Is it relevant to multiple
-  use cases?
-- Is the proposed component technically feasible?
+## Integration
 
-Not all components belong in the design system. These are occasional instances
-where a component may live in only one area of the application and is not included
-as part of Pajamas. The design system is here to help build reusable interfaces,
-but not be limiting in terms of how to solve user needs.
+Not every Pajamas element is immediately reflected in the GitLab product. Integration covers how changes in Pajamas move into GitLab, and how we handle elements that are partially adopted or technically complex.
 
-If you are able to answer the above questions and are still unsure about whether
-a component should be added to Pajamas, use the following to help you make a
-decision:
+### Viewing changes in Pajamas
 
-- If it's unknown whether the component will be used, then wait until we do know
-  before putting it in Pajamas.
-- If the component is _only_ relevant in one place (and we suspect it will only
-  ever be relevant in one place), do not add to Pajamas.
-- If we validate that it’s useful in more than just one place, add it to Pajamas.
+When a change to GitLab UI is made, it will not be reflected in Pajamas until the package is updated. See [Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/doc/updating-gitlab-ui-packages.md) for details.
 
-We may find over time that a component we once considered unique is more broadly
-relevant. In that case, we reevaluate the component to ensure it’s scalable, and
-we add it in.
+### Component status
 
-## Viewing changes in Pajamas
+Not all Pajamas components are fully integrated within the GitLab product at this time. Some components may be partially integrated and others have been migrated from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui).
 
-When a change to GitLab UI is made, it will not be reflected in
-Pajamas until the package is updated. See
-[Updating Gitlab Packages](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/doc/updating-gitlab-ui-packages.md) for details.
+GitLab UI components should be used within GitLab even if they do not yet fully conform to design specs.
 
-## Component status
+### Complex components
 
-Not all Pajamas components are fully integrated within the GitLab product at this
-time. Some components may be partially integrated and others have been migrated
-from [GitLab](https://gitlab.com/gitlab-org/gitlab) to [GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-ui).
+There are a few cases where components have been migrated from GitLab to GitLab UI, but are not yet reflected in Pajamas documentation.
 
-GitLab UI components should be used within GitLab even if they do not yet fully
-conform to design specs.
-
-## Complex components
-
-There are a few cases where components have been migrated from GitLab to
-GitLab UI, but do not yet reflect Pajamas documentation. When a complex component
-is difficult to style or update because many features use it, we recommend creating a migration plan and coordinating with the [Foundations team](https://about.gitlab.com/company/team/?department=fe-ux-foundations-team) on its rollout.
+When a complex component is difficult to style or update because many features use it, we recommend creating a migration plan and coordinating with the Design System team on its rollout.
 
 In the past, a `New` version of the component has been created to allow the team to build and
 style the component according to design specs without causing inadvertent side effects to features
 that are already using the migrated Vue component. However, this has led to confusion about which components to use; technical debt involved in migrating the component and not allowing them both to flourish; and follow-on effects keeping other complex components up-to-date. Until there is an officially determined path, we recommend coordinating a plan with the wider group.
-
-## Completing a component
-
-A completed component should not have the warning alert on the **Implementation** tab.
-
-An MR should be created to add any necessary demos to the **Usage** tab. To prevent confusion, we should omit demos until the build phase is complete and the component matches style and usage documentation.
-
-Once a component is complete, add it to the [Engineering Week in Review](https://docs.google.com/document/d/1Oglq0-rLbPFRNbqCDfHT0-Y3NkVEiHj6UukfYijHyUs/edit)
-in order to keep the department informed.
