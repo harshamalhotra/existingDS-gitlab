@@ -1,5 +1,19 @@
 # @gitlab/ui
 
+## 122.6.0
+
+### Minor Changes
+
+- 4e0ba3d: Define spacing-scale design tokens
+
+  Adds `spacing-scale` design tokens
+
+- 8712811: This change enhances the dashboard panel component by adding support for custom HTML content to be shown within the title popover.
+
+  Previously, the popover could only display simple text from a configuration property. Now developers can use special slots (template sections) called `info-popover-title` and `info-popover-content` to insert HTML content like formatted text, links, and complex layouts into the popover.
+
+  When these slots are provided, they take priority over the basic text configuration.
+
 ## 122.5.0
 
 ### Minor Changes
