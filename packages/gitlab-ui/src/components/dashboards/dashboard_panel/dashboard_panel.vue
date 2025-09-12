@@ -71,12 +71,15 @@ export default {
     },
     /**
      * Configuration object for the title popover. Expected structure:
+     * **Deprecated:** Use slots `#info-popover-content` and `#info-popover-title` instead.
      *
      * - `description`: The popover text content with interpolation placeholders.
      *   Uses `%{linkStart}` and `%{linkEnd}` as markers for where a link should be inserted.
      *
      * - `descriptionLink`: The optional URL that will be used for the link portion
      *   of the description text between the linkStart and linkEnd markers.
+     *
+     * @deprecated Use slots `#info-popover-content` and `#info-popover-title` instead.
      */
     titlePopover: {
       type: Object,
@@ -153,8 +156,18 @@ export default {
     hasTitle() {
       return Boolean(this.title);
     },
+    hasInfoPopoverContentSlot() {
+      return Boolean(this.$scopedSlots['info-popover-content']);
+    },
+    hasInfoPopoverTitleSlot() {
+      return Boolean(this.$scopedSlots['info-popover-title']);
+    },
     hasTitlePopover() {
-      return Boolean(this.titlePopover?.description);
+      return (
+        Boolean(this.titlePopover?.description) ||
+        this.hasInfoPopoverContentSlot ||
+        this.hasInfoPopoverTitleSlot
+      );
     },
     hasTitlePopoverLink() {
       return Boolean(this.titlePopover?.descriptionLink);
@@ -206,15 +219,25 @@ export default {
               boundary="viewport"
               :target="titlePopoverId"
             >
-              <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
-                <template #link="{ content }">
-                  <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
-                    content
-                  }}</gl-link>
-                </template>
-              </gl-sprintf>
-              <template v-else>
-                {{ titlePopover.description }}
+              <!-- @slot The title of the info popover. -->
+              <template v-if="hasInfoPopoverTitleSlot" #title>
+                <slot name="info-popover-title"></slot>
+              </template>
+
+              <!-- @slot The content of the info popover. -->
+              <template v-if="hasInfoPopoverContentSlot">
+                <slot name="info-popover-content"></slot>
+              </template>
+
+              <template v-if="!hasInfoPopoverContentSlot">
+                <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
+                  <template #link="{ content }">
+                    <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
+                      content
+                    }}</gl-link>
+                  </template>
+                </gl-sprintf>
+                <template v-else> {{ titlePopover.description }} </template>
               </template>
             </gl-popover>
           </template>

@@ -23,22 +23,30 @@ describe('GlDashboardPanel', () => {
       },
       slots,
       scopedSlots,
-      stubs: { GlSprintf, GlTruncate },
+      stubs: {
+        GlSprintf,
+        GlTruncate,
+        GlPopover: {
+          template: `<div>
+            <slot name="title"></slot>
+            <slot></slot>
+          </div>`,
+        },
+      },
     });
   };
 
-  const findPanelTitle = () => wrapper.find('[data-testid="panel-title"]');
-  const findPanelTitleIcon = () => wrapper.find('[data-testid="panel-title-icon"]');
+  const findByTestId = (testId) => wrapper.find(`[data-testid="${testId}"]`);
+  const findPanelTitle = () => findByTestId('panel-title');
+  const findPanelTitleIcon = () => findByTestId('panel-title-icon');
   const findLoadingIcon = () => wrapper.findComponent(GlLoadingIcon);
-  const findLoadingDelayedIndicator = () =>
-    wrapper.find('[data-testid="panel-loading-delayed-indicator"]');
-  const findPanelTitlePopoverIcon = () => wrapper.find('[data-testid="panel-title-popover-icon"]');
-  const findPanelTitlePopover = () => wrapper.find('[data-testid="panel-title-popover"]');
+  const findLoadingDelayedIndicator = () => findByTestId('panel-loading-delayed-indicator');
+  const findPanelTitlePopoverIcon = () => findByTestId('panel-title-popover-icon');
+  const findPanelTitlePopover = () => findByTestId('panel-title-popover');
   const findPanelTitlePopoverLink = () => findPanelTitlePopover().findComponent(GlLink);
   const findPanelActionsDropdown = () => wrapper.findComponent(GlDisclosureDropdown);
-  const findPanelActionsFiltersContainer = () =>
-    wrapper.find('[data-testid="panel-actions-filters-container"]');
-  const findPanelFiltersContainer = () => wrapper.find('[data-testid="panel-filters-container"]');
+  const findPanelActionsFiltersContainer = () => findByTestId('panel-actions-filters-container');
+  const findPanelFiltersContainer = () => findByTestId('panel-filters-container');
   const findPanelActionsDropdownItems = () =>
     findPanelActionsDropdown()
       .findAllComponents(GlDisclosureDropdownItem)
@@ -142,7 +150,7 @@ describe('GlDashboardPanel', () => {
     });
 
     it('renders the panel body', () => {
-      expect(wrapper.find('[data-testid="panel-body-slot"]').exists()).toBe(true);
+      expect(findByTestId('panel-body-slot').exists()).toBe(true);
     });
   });
 
@@ -156,8 +164,8 @@ describe('GlDashboardPanel', () => {
     });
 
     it('renders the panel filters', () => {
-      expect(wrapper.find('[data-testid="panel-filters-slot"]').exists()).toBe(true);
-      expect(wrapper.find('[data-testid="panel-filters-slot"]').text()).toBe('Filter Button');
+      expect(findByTestId('panel-filters-slot').exists()).toBe(true);
+      expect(findByTestId('panel-filters-slot').text()).toBe('Filter Button');
     });
 
     it('renders the filters container', () => {
@@ -179,10 +187,8 @@ describe('GlDashboardPanel', () => {
     });
 
     it('renders the panel alert message', () => {
-      expect(wrapper.find('[data-testid="panel-alert-message-slot"]').exists()).toBe(true);
-      expect(wrapper.find('[data-testid="panel-alert-message-slot"]').text()).toContain(
-        'gl-dashboard-panel-id-',
-      );
+      expect(findByTestId('panel-alert-message-slot').exists()).toBe(true);
+      expect(findByTestId('panel-alert-message-slot').text()).toContain('gl-dashboard-panel-id-');
     });
   });
 
@@ -225,7 +231,7 @@ describe('GlDashboardPanel', () => {
     });
 
     it('does not render the panel body', () => {
-      expect(wrapper.find('[data-testid="panel-body-slot"]').exists()).toBe(false);
+      expect(findByTestId('panel-body-slot').exists()).toBe(false);
     });
   });
 
@@ -297,6 +303,124 @@ describe('GlDashboardPanel', () => {
 
       it('does not render the panel title popover icon', () => {
         expect(findPanelTitlePopoverIcon().exists()).toBe(false);
+      });
+    });
+  });
+
+  describe('with info-popover slots', () => {
+    const findInfoPopoverContent = () => findByTestId('custom-popover-content');
+    const findInfoPopoverTitle = () => findByTestId('custom-popover-title');
+    const infoPopoverSlotContent =
+      '<div data-testid="custom-popover-content">Custom popover content</div>';
+    const infoPopoverSlotTitle = '<div data-testid="custom-popover-title">Custom Title</div>';
+
+    describe('with info-popover-content slot only', () => {
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+          },
+          slots: {
+            'info-popover-content': infoPopoverSlotContent,
+          },
+        });
+      });
+
+      it('renders the panel title popover icon', () => {
+        expect(findPanelTitlePopoverIcon().exists()).toBe(true);
+      });
+
+      it('renders the custom popover content', () => {
+        expect(findInfoPopoverContent().exists()).toBe(true);
+        expect(findInfoPopoverContent().text()).toBe('Custom popover content');
+      });
+    });
+
+    describe('with info-popover-title slot only', () => {
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+            titlePopover: {
+              description: 'This should be shown, %{linkStart}learn more%{linkEnd}',
+              descriptionLink: '/foo',
+            },
+          },
+          slots: {
+            'info-popover-title': infoPopoverSlotTitle,
+          },
+        });
+      });
+
+      it('renders the panel title popover icon', () => {
+        expect(findPanelTitlePopoverIcon().exists()).toBe(true);
+      });
+
+      it('renders the custom popover title', () => {
+        expect(findInfoPopoverTitle().exists()).toBe(true);
+        expect(findInfoPopoverTitle().text()).toBe('Custom Title');
+      });
+
+      it('renders the prop-based content', () => {
+        expect(findPanelTitlePopover().text()).toContain('This should be shown');
+        expect(findPanelTitlePopoverLink().attributes('href')).toBe('/foo');
+      });
+    });
+
+    describe('with both info-popover-title and info-popover-content slots', () => {
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+          },
+          scopedSlots: {
+            'info-popover-title': infoPopoverSlotTitle,
+            'info-popover-content': infoPopoverSlotContent,
+          },
+        });
+      });
+
+      it('renders the panel title popover icon', () => {
+        expect(findPanelTitlePopoverIcon().exists()).toBe(true);
+      });
+
+      it('renders both custom popover title and content', () => {
+        expect(findByTestId('custom-popover-title').exists()).toBe(true);
+        expect(findByTestId('custom-popover-title').text()).toBe('Custom Title');
+
+        expect(findByTestId('custom-popover-content').exists()).toBe(true);
+        expect(findByTestId('custom-popover-content').text()).toBe('Custom popover content');
+      });
+    });
+
+    describe('slots take precedence over titlePopover prop', () => {
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+            titlePopover: {
+              description: 'This should not be shown',
+              descriptionLink: '/foo',
+            },
+          },
+          slots: {
+            'info-popover-content': infoPopoverSlotContent,
+          },
+        });
+      });
+
+      it('renders the popover icon', () => {
+        expect(findPanelTitlePopoverIcon().exists()).toBe(true);
+      });
+
+      it('renders the slot content', () => {
+        expect(findInfoPopoverContent().exists()).toBe(true);
+        expect(findInfoPopoverContent().text()).toBe('Custom popover content');
+      });
+
+      it('does not render the prop-based content', () => {
+        expect(findPanelTitlePopover().text()).not.toContain('This should not be shown');
+        expect(findPanelTitlePopoverLink().exists()).toBe(false);
       });
     });
   });
