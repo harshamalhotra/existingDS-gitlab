@@ -103,15 +103,15 @@
             "path": "navigating-pajamas"
           },
           {
-            "title": "Contributing",
-            "path": "contributing"
-          },
-          {
             "title": "Principles",
             "path": "principles"
           },
           {
-            "title": "Component lifecycle",
+            "title": "Contributing",
+            "path": "contributing"
+          },
+          {
+            "title": "Contribution lifecycle",
             "path": "lifecycle"
           },
           {
