@@ -1,5 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
-import { mockCreateChartInstance } from '~helpers/chart_stubs';
+import { nextTick } from 'vue';
+import {
+  mockCreateChartInstance,
+  ChartTooltipStub,
+  chartTooltipStubData,
+} from '~helpers/chart_stubs';
 import { expectHeightAutoClasses } from '~helpers/chart_height';
 import Chart from '../chart/chart.vue';
 import ChartTooltip from '../shared/tooltip/tooltip.vue';
@@ -32,14 +37,23 @@ describe('Bar chart component', () => {
   const getOptions = () => findChart().props('options');
   const emitChartCreated = () => findChart().vm.$emit('created', mockChartInstance);
 
-  const createComponent = (props = {}) => {
+  const createComponent = ({ props = {}, stubs = {}, scopedSlots = {}, height } = {}) => {
     wrapper = shallowMount(BarChart, {
-      propsData: { ...defaultChartProps, ...props },
+      propsData: { ...defaultChartProps, ...props, height },
+      stubs: {
+        'chart-tooltip': ChartTooltipStub,
+        ...stubs,
+      },
+      scopedSlots,
     });
   };
 
   beforeEach(() => {
     mockChartInstance = mockCreateChartInstance();
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
   });
 
   describe('when mounted', () => {
@@ -73,13 +87,6 @@ describe('Bar chart component', () => {
 
       defaultChartProps.data.Office.map(([, name]) => expect(formatter(name)).toMatchSnapshot());
     });
-
-    it('configures chart tooltip', () => {
-      expect(findChartTooltip().props()).toMatchObject({
-        chart: mockChartInstance,
-        useDefaultTooltipFormatter: false,
-      });
-    });
   });
 
   describe('when multiple series data provided', () => {
@@ -92,7 +99,7 @@ describe('Bar chart component', () => {
     };
 
     beforeEach(() => {
-      createComponent({ data: multipleSeriesData });
+      createComponent({ props: { data: multipleSeriesData } });
     });
 
     it('should correctly render chart', () => {
@@ -101,7 +108,7 @@ describe('Bar chart component', () => {
 
     describe('with tiled presentation', () => {
       beforeEach(() => {
-        createComponent({ data: multipleSeriesData, presentation: 'tiled' });
+        createComponent({ props: { data: multipleSeriesData, presentation: 'tiled' } });
       });
 
       it('should not stack series', () => {
@@ -117,6 +124,70 @@ describe('Bar chart component', () => {
       createComponent,
       findContainer: () => wrapper,
       findChart,
+    });
+  });
+
+  describe('tooltip', () => {
+    beforeEach(() => {
+      createComponent();
+      emitChartCreated();
+    });
+
+    it('is initialized', () => {
+      expect(findChartTooltip().props()).toMatchObject({
+        chart: mockChartInstance,
+        useDefaultTooltipFormatter: true,
+        dimensionAxis: 'yAxis',
+      });
+    });
+
+    describe('customized via slots', () => {
+      const { title, params, content } = chartTooltipStubData;
+
+      it('customizes tooltip title', async () => {
+        const tooltipTitleSlot = jest.fn().mockReturnValue('Custom title');
+
+        createComponent({
+          scopedSlots: {
+            'tooltip-title': tooltipTitleSlot,
+          },
+        });
+        emitChartCreated();
+        await nextTick();
+
+        expect(tooltipTitleSlot).toHaveBeenCalledWith({ title, params });
+        expect(findChartTooltip().text()).toContain('Custom title');
+      });
+
+      it('customizes tooltip value', async () => {
+        const tooltipValueSlot = jest.fn().mockReturnValue('Custom tooltip value');
+
+        createComponent({
+          scopedSlots: {
+            'tooltip-value': tooltipValueSlot,
+          },
+        });
+        emitChartCreated();
+        await nextTick();
+
+        expect(tooltipValueSlot).toHaveBeenCalledWith({ value: 9 });
+        expect(findChartTooltip().text()).toContain('Custom tooltip value');
+      });
+
+      it('customizes tooltip content', async () => {
+        const tooltipContentSlot = jest.fn().mockReturnValue('Custom content');
+
+        createComponent({
+          scopedSlots: {
+            'tooltip-content': tooltipContentSlot,
+          },
+        });
+        emitChartCreated();
+        await nextTick();
+
+        expect(tooltipContentSlot).toHaveBeenCalledWith({ params, content });
+        expect(findChartTooltip().text()).toContain('Custom content');
+      });
     });
   });
 });

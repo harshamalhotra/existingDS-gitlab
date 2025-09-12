@@ -9,6 +9,7 @@ import {
   parseAnnotations,
   generateBarSeries,
   generateLineSeries,
+  getTooltipAxisConfig,
   getTooltipTitle,
   getTooltipContent,
 } from './config';
@@ -382,7 +383,33 @@ describe('chart config helpers', () => {
     });
   });
 
+  describe('getTooltipAxisConfig', () => {
+    it.each([undefined, 'invalidAxis'])(
+      'throws an error when `dimensionAxis` is %s',
+      (dimensionAxis) => {
+        expect(() => getTooltipAxisConfig(dimensionAxis)).toThrow(
+          `\`dimensionAxis\` must be "xAxis" or "yAxis", received ${dimensionAxis}`,
+        );
+      },
+    );
+
+    it.each`
+      dimensionAxis | expectedResult
+      ${'xAxis'}    | ${{ dimensionIndex: 0, metricIndex: 1, valueAxis: 'yAxis' }}
+      ${'yAxis'}    | ${{ dimensionIndex: 1, metricIndex: 0, valueAxis: 'xAxis' }}
+    `(
+      'returns the tooltip axis config as expected when dimensionAxis=$dimensionAxis',
+      ({ dimensionAxis, expectedResult }) => {
+        expect(getTooltipAxisConfig(dimensionAxis)).toEqual(expectedResult);
+      },
+    );
+  });
+
   describe('getTooltipTitle', () => {
+    const singleSeries = [{ value: ['Value 1', 99] }];
+    const multipleSeries = [{ value: ['Value 1', 99] }, { value: ['Value 2', 100] }];
+    const multipleRepeatedSeries = [{ value: ['Value 1', 99] }, { value: ['Value 1', 99] }];
+
     it('returns an empty value', () => {
       expect(getTooltipTitle()).toBe('');
     });
@@ -390,7 +417,7 @@ describe('chart config helpers', () => {
     it('returns title for single series', () => {
       expect(
         getTooltipTitle({
-          seriesData: [{ value: ['Value 1', 99] }],
+          seriesData: singleSeries,
         }),
       ).toBe('Value 1');
     });
@@ -398,7 +425,7 @@ describe('chart config helpers', () => {
     it('returns title for multiple series', () => {
       expect(
         getTooltipTitle({
-          seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 2', 100] }],
+          seriesData: multipleSeries,
         }),
       ).toBe('Value 1, Value 2');
     });
@@ -406,7 +433,7 @@ describe('chart config helpers', () => {
     it('returns title for multiple repeated series', () => {
       expect(
         getTooltipTitle({
-          seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 1', 99] }],
+          seriesData: multipleRepeatedSeries,
         }),
       ).toBe('Value 1');
     });
@@ -415,15 +442,75 @@ describe('chart config helpers', () => {
       expect(
         getTooltipTitle(
           {
-            seriesData: [{ value: ['Value 1', 99] }, { value: ['Value 2', 100] }],
+            seriesData: multipleSeries,
           },
           'Time',
         ),
       ).toBe('Value 1, Value 2 (Time)');
     });
+
+    describe('dimensionIndex = 1', () => {
+      it('returns title for single series', () => {
+        expect(
+          getTooltipTitle(
+            {
+              seriesData: singleSeries,
+            },
+            undefined,
+            1,
+          ),
+        ).toBe('99');
+      });
+
+      it('returns title for multiple series', () => {
+        expect(
+          getTooltipTitle(
+            {
+              seriesData: multipleSeries,
+            },
+            undefined,
+            1,
+          ),
+        ).toBe('99, 100');
+      });
+
+      it('returns title for multiple repeated series', () => {
+        expect(
+          getTooltipTitle(
+            {
+              seriesData: multipleRepeatedSeries,
+            },
+            undefined,
+            1,
+          ),
+        ).toBe('99');
+      });
+
+      it('returns title for multiple series with an axis name', () => {
+        expect(
+          getTooltipTitle(
+            {
+              seriesData: multipleSeries,
+            },
+            'Time',
+            1,
+          ),
+        ).toBe('99, 100 (Time)');
+      });
+    });
   });
 
   describe('getTooltipContent', () => {
+    const singleSeries = [{ value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' }];
+    const multipleSeries = [
+      { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
+      { value: ['Value 2', 99], seriesName: 'Series 2', color: '#bbb' },
+    ];
+    const multipleRepeatedSeries = [
+      { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
+      { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
+    ];
+
     it('returns an empty value', () => {
       expect(getTooltipContent()).toEqual({});
     });
@@ -431,7 +518,7 @@ describe('chart config helpers', () => {
     it('returns content for single series', () => {
       expect(
         getTooltipContent({
-          seriesData: [{ value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' }],
+          seriesData: singleSeries,
         }),
       ).toEqual({ 'Series 1': { color: '', value: 99 } });
     });
@@ -440,7 +527,7 @@ describe('chart config helpers', () => {
       expect(
         getTooltipContent(
           {
-            seriesData: [{ value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' }],
+            seriesData: singleSeries,
           },
           'Amount',
         ),
@@ -450,10 +537,7 @@ describe('chart config helpers', () => {
     it('returns content for multiple series', () => {
       expect(
         getTooltipContent({
-          seriesData: [
-            { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
-            { value: ['Value 2', 99], seriesName: 'Series 2', color: '#bbb' },
-          ],
+          seriesData: multipleSeries,
         }),
       ).toEqual({
         'Series 1': { color: '#aaa', value: 99 },
@@ -464,12 +548,65 @@ describe('chart config helpers', () => {
     it('returns content for multiple repeated series', () => {
       expect(
         getTooltipContent({
-          seriesData: [
-            { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
-            { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
-          ],
+          seriesData: multipleRepeatedSeries,
         }),
       ).toEqual({ 'Series 1': { color: '#aaa', value: 99 } });
+    });
+
+    describe('metricIndex = 0', () => {
+      it('returns content for single series', () => {
+        expect(
+          getTooltipContent(
+            {
+              seriesData: singleSeries,
+            },
+            undefined,
+            0,
+          ),
+        ).toEqual({ 'Series 1': { color: '', value: 'Value 1' } });
+      });
+
+      it('returns content for single series with an axis name', () => {
+        expect(
+          getTooltipContent(
+            {
+              seriesData: singleSeries,
+            },
+            'Amount',
+            0,
+          ),
+        ).toEqual({ Amount: { color: '', value: 'Value 1' } });
+      });
+
+      it('returns content for multiple series', () => {
+        expect(
+          getTooltipContent(
+            {
+              seriesData: multipleSeries,
+            },
+            undefined,
+            0,
+          ),
+        ).toEqual({
+          'Series 1': { color: '#aaa', value: 'Value 1' },
+          'Series 2': { color: '#bbb', value: 'Value 2' },
+        });
+      });
+
+      it('returns content for multiple repeated series', () => {
+        expect(
+          getTooltipContent(
+            {
+              seriesData: [
+                { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
+                { value: ['Value 1', 99], seriesName: 'Series 1', color: '#aaa' },
+              ],
+            },
+            undefined,
+            0,
+          ),
+        ).toEqual({ 'Series 1': { color: '#aaa', value: 'Value 1' } });
+      });
     });
   });
 });
