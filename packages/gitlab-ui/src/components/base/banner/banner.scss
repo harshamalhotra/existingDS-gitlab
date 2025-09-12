@@ -11,7 +11,7 @@
     max-width: $grid-size * 15;
   }
 
-  @include gl-container-width-down(sm) {
+  @include gl-container-width-down(md) {
     display: none;
   }
 }
