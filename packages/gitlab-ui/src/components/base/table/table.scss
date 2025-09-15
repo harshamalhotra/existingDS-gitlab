@@ -1,3 +1,5 @@
+@use "sass:map";
+
 table.gl-table {
   background-color: var(--gl-color-alpha-0);
   @apply gl-text-default;
@@ -96,22 +98,18 @@ table.gl-table {
     }
   }
 
-  $stacked-table-breakpoints: (
-    'sm': 'xs',
-    'md': 'sm',
-    'lg': 'md',
-    'xl': 'lg',
-  );
-
   &.b-table {
     &.b-table-stacked {
       @include gl-tmp-stacked-override();
     }
 
-    @each $class, $mq in $stacked-table-breakpoints {
-      &.b-table-stacked-#{$class} {
-        @include media-breakpoint-down(#{$mq}) {
-          @include gl-tmp-stacked-override();
+    @each $breakpoint in map.keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      @if ($next != null) {
+        &.b-table-stacked-#{$next} {
+          @include gl-container-width-down(#{$next}) {
+            @include gl-tmp-stacked-override();
+          }
         }
       }
     }

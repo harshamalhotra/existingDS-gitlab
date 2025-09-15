@@ -7,9 +7,11 @@
 @import '../vendor/bootstrap/scss/variables';
 @import '../vendor/bootstrap/scss/mixins';
 
+@import 'mixins';
+
+@import 'bootstrap';
 @import 'bootstrap_vue';
 
-@import 'mixins';
 
 @import 'fonts';
 
