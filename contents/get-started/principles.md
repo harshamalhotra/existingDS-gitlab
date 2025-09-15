@@ -15,118 +15,121 @@ Though we take inspiration from other companies, our principles are defined by l
 
 GitLab is a product that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product: we make thoughtful choices that streamline complex workflows and functionality. These choices help the user stay focused on what matters most.
 
-There are three principles that help support us in this work.
+### Design for natural developer flow
 
-### Prioritize the product
+**Enable users to move seamlessly through tasks without context switching.**
 
-Though the product is made of many tools, everything should function seamlessly together. Design with this mindset to ensure that you are creating a more connected and coherent experience across the product.
+When designing any features, ask: Are we maintaining a seamless workflow without context switches?
 
-<grid>
-  <do>
+- Prioritize workflow continuity over feature isolation
+- Connect related tasks across different modules (issues > code > review > deploy)
+- Maintain context as users move through their work
 
-  Optimize connections between capabilities.
+_Example in practice_: A developer investigating a failed pipeline can click directly from the error message to the exact line of code, see the commit that introduced it, view related issues, and create a fix all through connected interfaces. They never need to copy-paste IDs between systems or lose their place in the investigation.
 
-  </do>
-  <dont>
-  
-  Optimize for an isolated use of tools.
-  
-  </dont>
-  <do>
+### Start simple, reveal complexity gradually
 
-  Use patterns consistently across the product.
+**Show only what users need now, with advanced features discoverable when needed.**
 
-  </do>
-  <dont>
-  
-  Use different patterns based on product area.
-  
-  </dont>
-  <do>
+When designing any feature, ask: Is the simple version immediately useful with advanced features discoverable?
 
-  Optimize the broader user journey, even when it crosses product groups, or when you're focused on a particular step of that journey.
+- Zero-configuration setup for common use cases
+- Clear pathways from beginner to advanced usage
+- Hide complexity without limiting power users
 
-  </do>
-  <dont>
-  
-  Optimize for individual interactions or features.
-  
-  </dont>
-</grid>
+_Example in practice_: A new user creates their first CI pipeline with a visual editor in a guided way, with recommendations for choices that make sense for their context. As they gain confidence, they discover YAML editing, then parallel jobs, then matrix builds, and eventually complex DAG pipelines, each capabilitiy appearing in the UI only when they start exploring features that would benefit from it.
 
-### Support learning
+### Make everything feel like one product
 
-Design to promote the user's learning and proficiency as they interact and explore. Seek to help them minimize mistakes.
+**Use consistent patterns so learning transfers across all features.**
 
-<grid>
-  <do>
+When designing any feature, ask: Does this feel like part of one unified product?
 
-  Clearly explain how recommendations are generated, especially with [AI features](/patterns/ai-human-interaction#be-transparent).
+- Unified design system across all features
+- Consistent terminology and concepts
+- Predictable interaction patterns
 
-  </do>
-  <dont>
-  
-  Omit explanations for recommendations to simplify the experience.
-  
-  </dont>
-  <do>
+_Example in practice_: Whether someone is reviewing code, managing issues, checking deployments, or analyzing metrics, they see the same navigation structure, the same search syntax works everywhere (filtering by `author` works in MRs, issues, and commits), and keyboard shortcut `Shift+t` always goes to your ToDo list.
 
-  Communicate the status of processes that happen in the background.
+### Make every interaction feel instant
 
-  </do>
-  <dont>
-  
-  Only communicate about processes that happen in the foreground, as a direct result of the user's actions
-  
-  </dont>
-  <do>
+**Design for speed from the start.**
 
-  Ensure the user has all the information needed to proceed with confidence.
+When designing any feature, ask: Will every interaction feel immediate, even at scale?
 
-  </do>
-  <dont>
-  
-  Delegate key information to the documentation to minimize the UI.
-  
-  </dont>
-</grid>
+- Sub-second response for common actions
+- Progressive loading for complex operations
+- Perceived performance through optimistic UI updates
 
-### Focus on outcomes
+_Example in practice_: Clicking between files in a merge request feels instant because adjacent files pre-load in the background. The diff view updates immediately with optimistic rendering while calculations happen asynchronously. Large repositories feel as fast as small ones.
 
-Empathy for the user starts with a deep understanding of their needs and goals. Design for the broader outcomes that the user seeks to achieve, instead of the isolated actions or discrete features used to complete specific tasks.
+### Show what's happening and why
 
-<grid>
-  <do>
+**Users should always understand system status and how to fix problems.**
 
-  Let the user's needs and intended outcomes drive the change.
+When designing any feature, ask: Can users understand what's happening and why?
 
-  </do>
-  <dont>
-  
-  Let the popularity or impressiveness of a feature or technology drive the change.
-  
-  </dont>
-  <do>
+- Clear system status and progress indicators
+- Comprehensive logs and audit trails
+- Intuitive debugging interfaces
 
-  Prioritize user value.
+_Example in practice_: During a complex deployment, developers see a real-time visualization of which stage is running, what's queued, and estimated completion times. If something fails, they get the exact error, the last successful run for comparison, and a "View Full Log" that highlights the failure point with surrounding context automatically expanded.
 
-  </do>
-  <dont>
-  
-  Prioritize technical feasibility or development speed.
-  
-  </dont>
-  <do>
+### Build for teams, not just individuals
 
-  Design for current essential needs.
-  
-  </do>
-  <dont>
-  
-  Design to accommodate future, potential needs.
-  
-  </dont>
-</grid>
+**Make sharing, discussing, and collaborating effortless.**
+
+When designing any feature, ask: How does this facilitate collaboration and sharing?
+
+_Example in practice_: When a developer pushes code that affects another team's service, the system automatically suggests those team members as reviewers based on code ownership rules. Comments on the MR notify relevant people, threading keeps discussions organized, and anyone can see the full context of decisions made, even months later.
+
+### Always provide a clear next step
+
+**Never show problems without solutions or data without actions.**
+
+When designing any feature, ask: Is the next step always clear and obvious?
+
+- Smart recommendations based on patterns
+- Predictive suggestions that prevent problems
+- Clear next steps for every state
+
+_Example in practice_: A failing test doesn't just show "Test failed," it shows the specific assertion that failed, a diff of expected vs actual, a "Re-run Test" button, a link to recent changes that might have caused it, and suggestions like "This test failed in 3 other recent MRs, view pattern."
+
+### Enable customization within guardrails
+
+**Let teams work their way while maintaining platform coherence.**
+
+When designing any feature, ask: Can teams customize this without breaking coherence?
+
+- Flexible configuration with smart defaults
+- Clean inheritance and override patterns
+- Template-based standardization options
+
+_Example in practice_: Teams can create custom issue templates and workflows that match their process (bug triage, feature requests, retrospectives), but they all inherit the organization's required fields for tracking and compliance. Teams can add stages to CI pipelines but can't remove mandated quality gates.
+
+### Design for scale and compliance always
+
+**Build in governance, security, and audit capabilities from the start.**
+
+When designing any features, ask: Is governance, compliance, and scale built in?
+
+- Role-based access control throughout
+- Complete audit trails and reporting
+- Multi-tenancy and data isolation
+
+_Example in practice_: Project permissions automatically cascade correctly. Adding someone to a group gives them appropriate access to all projects, with clear visibility of what access they're getting. Audit logs capture not just what changed, but why (linking to the issue that justified the change), and reports can span from single projects to entire organizational hierarchies.
+
+### Make it a joy to use
+
+**Craft delightful experiences that developers will champion.**
+
+When designing any features, ask: Will this be delightful to use daily?
+
+- Keyboard shortcuts for power users
+- Dark mode and accessibility features
+- Thoughtful micro-interactions and polish
+
+_Example in practice_: Completing a code review or merging code reveals a satisfying animation of progress toward accomplishing the user's todos. Markdown shortcuts appear as gentle hints while typing. Even routine tasks like updating dependencies feel polished with clear visual feedback and smart defaults that usually guess right.
 
 ## References
 
