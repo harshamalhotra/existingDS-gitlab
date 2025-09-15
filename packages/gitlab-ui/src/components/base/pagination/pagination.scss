@@ -3,7 +3,7 @@
   @apply gl-text-nowrap;
 
   ul {
-    border-radius: var(--gl-button-border-radius);
+    border-radius: var(--gl-action-border-radius);
     @apply gl-flex;
     @apply gl-pl-0;
     @apply gl-list-none;
@@ -15,7 +15,7 @@
 }
 
 .gl-pagination-item {
-  border-radius: var(--gl-button-border-radius);
+  border-radius: var(--gl-action-border-radius);
   transition: color $gl-transition-duration-medium $gl-easing-out-cubic,
               background-color $gl-transition-duration-medium $gl-easing-out-cubic,
               border-color $gl-transition-duration-medium $gl-easing-out-cubic,

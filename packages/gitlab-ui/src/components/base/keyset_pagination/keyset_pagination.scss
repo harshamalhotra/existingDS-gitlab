@@ -3,6 +3,6 @@
   // for the reasoning behind the double .gl-button.gl-button
   .gl-button.gl-button {
     @apply gl-px-3;
-    border-radius: var(--gl-button-border-radius);
+    border-radius: var(--gl-action-border-radius);
   }
 }

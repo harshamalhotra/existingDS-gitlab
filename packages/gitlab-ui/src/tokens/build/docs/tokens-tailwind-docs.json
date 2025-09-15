@@ -44025,6 +44025,38 @@
         "default"
       ],
       "cssWithValue": "var(--gl-border-radius-default, var(--gl-border-radius-md, 0.25rem))"
+    },
+    "control": {
+      "key": "{control.border.radius}",
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/semantic/control.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{control.border.radius}"
+      },
+      "name": "CONTROL_BORDER_RADIUS",
+      "attributes": {},
+      "path": [
+        "control",
+        "border",
+        "radius"
+      ],
+      "cssWithValue": "var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))"
     }
   }
 }

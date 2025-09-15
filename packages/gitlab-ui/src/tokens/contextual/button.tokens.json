@@ -2,7 +2,7 @@
   "button": {
     "border": {
       "radius": {
-        "$value": "{border.radius.default}",
+        "$value": "{action.border.radius}",
         "$type": "dimension",
         "$description": "Used for button border radius.",
         "$extensions": {

@@ -1050,7 +1050,6 @@ $gl-badge-warning-background-color-focus: $gl-badge-warning-background-color-hov
 $gl-badge-danger-background-color-focus: $gl-badge-danger-background-color-hover; // Used for the background of a danger badge in the focus state.
 $gl-badge-tier-background-color-focus: $gl-badge-tier-background-color-hover; // Used for the background of a tier related badge in the focus state.
 $gl-broadcast-banner-border-radius: $gl-border-radius-default; // Used for broadcast banner border radius.
-$gl-button-border-radius: $gl-border-radius-default; // Used for button border radius.
 $gl-button-default-tertiary-foreground-color-hover: $gl-action-neutral-foreground-color-hover; // Used for the foreground of a default borderless, tertiary button in the hover state.
 $gl-button-default-tertiary-foreground-color-focus: $gl-action-neutral-foreground-color-focus; // Used for the foreground of a default borderless, tertiary button in the focus state.
 $gl-button-default-tertiary-foreground-color-active: $gl-action-neutral-foreground-color-active; // Used for the foreground of a default borderless, tertiary button in the active state.
@@ -1083,6 +1082,7 @@ $gl-dropdown-option-text-color-active: $gl-action-neutral-foreground-color-activ
 $gl-modal-border-radius: $gl-border-radius-default; // Used for modal border radius.
 $gl-toggle-switch-icon-color-unchecked-focus: $gl-action-strong-neutral-background-color-focus; // Used for the icon color of an unchecked toggle switch in the focus state.
 $gl-toggle-switch-icon-color-checked-focus: $gl-action-strong-confirm-background-color-focus; // Used for the icon color of a checked toggle switch in the focus state.
+$gl-action-border-radius: $gl-border-radius-default; // Used for the border radius of an action.
 $gl-action-selected-foreground-color-focus: $gl-action-selected-foreground-color-hover; // Used for the foreground of a selected action in the focus state.
 $gl-action-selected-border-color-focus: $gl-action-selected-background-color-focus; // Used for the border of a selected action in the focus state.
 $gl-action-strong-confirm-foreground-color-focus: $gl-action-strong-confirm-foreground-color-hover; // Used for the foreground of a strong confirm action in the focus state.
@@ -1090,6 +1090,7 @@ $gl-action-strong-confirm-border-color-focus: $gl-action-strong-confirm-border-c
 $gl-action-strong-neutral-foreground-color-focus: $gl-action-strong-neutral-foreground-color-hover; // Used for the foreground of a strong neutral action in the focus state.
 $gl-action-strong-neutral-border-color-focus: $gl-action-strong-neutral-border-color-hover; // Used for the border of a strong neutral action in the focus state.
 $gl-control-border-radius: $gl-border-radius-default; // Used for form control (input, radio button, checkbox, textarea) default border radius.
+$gl-button-border-radius: $gl-action-border-radius; // Used for button border radius.
 $gl-button-confirm-primary-foreground-color-focus: $gl-action-strong-confirm-foreground-color-focus; // Used for the foreground of a confirm (positive) primary button in the focus state.
 $gl-action-selected-foreground-color-active: $gl-action-selected-foreground-color-focus; // Used for the foreground of a selected action in the active state.
 $gl-action-strong-confirm-foreground-color-active: $gl-action-strong-confirm-foreground-color-focus; // Used for the foreground of a strong confirm action in the active state.

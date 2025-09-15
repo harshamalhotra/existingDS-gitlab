@@ -397,6 +397,7 @@ const borderRadius = {
   '3xl': 'var(--gl-border-radius-3xl, var(--gl-spacing-scale-6, 1.5rem))',
   full: 'var(--gl-border-radius-full, 9999px)',
   default: 'var(--gl-border-radius-default, var(--gl-border-radius-md, 0.25rem))',
+  control: 'var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))',
 };
 
 const colors = {

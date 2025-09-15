@@ -14224,7 +14224,7 @@
         "filePath": "src/tokens/contextual/button.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{action.border.radius}",
           "$type": "dimension",
           "$description": "Used for button border radius.",
           "$extensions": {
@@ -30508,6 +30508,39 @@
     }
   },
   "action": {
+    "border": {
+      "radius": {
+        "key": "{action.border.radius}",
+        "$value": "0.25rem",
+        "$type": "dimension",
+        "$description": "Used for the border radius of an action.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "filePath": "src/tokens/semantic/action.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{border.radius.default}",
+          "$type": "dimension",
+          "$description": "Used for the border radius of an action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          },
+          "key": "{action.border.radius}"
+        },
+        "name": "ACTION_BORDER_RADIUS",
+        "attributes": {},
+        "path": [
+          "action",
+          "border",
+          "radius"
+        ]
+      }
+    },
     "disabled": {
       "foreground": {
         "color": {

@@ -187,7 +187,7 @@ $pd-week-color: var(--gl-text-color-subtle);
   }
 
   .pika-button {
-    border-radius: var(--gl-button-border-radius);
+    border-radius: var(--gl-action-border-radius);
     @apply gl-shadow-none;
     @apply gl-py-3;
     @apply gl-text-center;
