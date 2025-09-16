@@ -100,12 +100,12 @@
           }
         }
         @include expect {
-          @container (min-width: 576px) {
+          @container (width >= 576px) {
             :where(html.with-gl-container-queries) & {
               color: $gl-color-red-100;
             }
           }
-          @media (min-width: 576px) {
+          @media (width >= 576px) {
             :where(html:not(.with-gl-container-queries)) & {
               color: $gl-color-red-100;
             }
@@ -122,12 +122,12 @@
           }
         }
         @include expect {
-          @container myContainer (min-width: 576px) {
+          @container myContainer (width >= 576px) {
             :where(html.with-gl-container-queries) & {
               color: $gl-color-red-100;
             }
           }
-          @media (min-width: 576px) {
+          @media (width >= 576px) {
             :where(html:not(.with-gl-container-queries)) & {
               color: $gl-color-red-100;
             }
@@ -144,7 +144,7 @@
           }
         }
         @include expect {
-          @container (min-width: 576px) {
+          @container (width >= 576px) {
             :where(html.with-gl-container-queries) & {
               color: $gl-color-red-100;
             }
