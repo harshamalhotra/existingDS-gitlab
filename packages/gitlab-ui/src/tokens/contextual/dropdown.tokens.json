@@ -26,7 +26,8 @@
             "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
-        }
+        },
+        "$deprecated": true
       }
     },
     "divider": {
@@ -261,7 +262,7 @@
         "color": {
           "$value": {
             "default": "{color.alpha.dark.2}",
-            "dark": "{color.alpha.dark.24}"
+            "dark": "{color.alpha.dark.16}"
           },
           "$type": "color",
           "$description": "Used for the background of a search input in a dropdown listbox.",

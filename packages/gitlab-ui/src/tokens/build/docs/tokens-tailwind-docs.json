@@ -17039,6 +17039,7 @@
           "STROKE_COLOR"
         ]
       },
+      "$deprecated": true,
       "filePath": "src/tokens/contextual/dropdown.tokens.json",
       "isSource": true,
       "original": {
@@ -17054,6 +17055,7 @@
             "STROKE_COLOR"
           ]
         },
+        "$deprecated": true,
         "key": "{dropdown.border.color}"
       },
       "name": "DROPDOWN_BORDER_COLOR",
