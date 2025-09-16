@@ -298,6 +298,7 @@ const fileExtensionIcons = {
   vhd: 'verilog',
   sv: 'verilog',
   svh: 'verilog',
+  veryl: 'verilog',
   nb: 'mathematica',
   wl: 'wolframlanguage',
   wls: 'wolframlanguage',
