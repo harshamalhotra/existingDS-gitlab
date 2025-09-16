@@ -58,4 +58,5 @@ Complete the following items for each release:
 **Wrap up:**
 
 - [ ] Ask a [Figma admin](https://handbook.gitlab.com/handbook/product/ux/ux-resources/#tools) to publish update to the **📙 Component library** [community file](https://help.figma.com/hc/en-us/articles/360040035974-Publish-files-to-the-Community#01H8CZTYDFRRNCR4VR7FT95J39). Keep the existing metadata.
+- [ ] Export the **Design tokens**, **:orange_book: Component library**, and **Data Visualization** libraries for Figma Make.
 - [ ] Create a merge request to back up **.fig** files of any changed UI kit file to the [**/ui-kit**](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/ui-kit) folder in the Pajamas project.
