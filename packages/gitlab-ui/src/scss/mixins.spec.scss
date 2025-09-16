@@ -152,6 +152,19 @@
         }
       }
     }
+
+    @include it('returns the content as is for xs') {
+      @include assert {
+        @include output {
+          @include gl-container-width-up(xs) {
+            color: $gl-color-red-100;
+          }
+        }
+        @include expect {
+          color: $gl-color-red-100;
+        }
+      }
+    }
   }
 
   @include describe('gl-container-width-down') {
