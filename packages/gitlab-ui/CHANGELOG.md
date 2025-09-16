@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 122.8.0
+
+### Minor Changes
+
+- b3b41f4: Remove dropdown border from panel and tip
+
 ## 122.7.0
 
 ### Minor Changes
