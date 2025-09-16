@@ -6,8 +6,9 @@ Contributions are welcome to the [Pajamas UI Kit](/get-started/uik-file-structur
 
 ## Before You Start
 
-1. Check the [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues) for an existing issue.
-1. If no issue exists, [create a new issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Figma%20update) using the `Figma update` template. This template provides a helpful checklist to guide your work.
+1. Please review the [design system contribution process](/get-started/contributing).
+1. Check whether an [existing issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues) already covers your contribution.
+1. If one exists, add your work there; if not, [create a new issue with the Figma update template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Figma%20update). The template provides a checklist to guide your updates and ensures your work stays aligned with the design system process.
 1. Refer to the [component](/get-started/uik-components) and [breaking change](/get-started/uik-breaking-changes) guides while working.
 
 ## Review requests

@@ -2,89 +2,116 @@
 name: Contributing
 ---
 
-Thank you for your interest in contributing to the Pajamas Design System! We
-welcome all feedback regarding designs, guidelines, and implementation. The
-following details how to contribute easily and efficiently.
-You can also read through the [category direction for the design system](https://about.gitlab.com/direction/foundations/design_system/)
-for broader focus areas that you can contribute to.
+Contributing to the GitLab design system, Pajamas, keeps it healthy and effective. Every contribution, large or small, helps teams move faster, deliver a cohesive experience, and reduce duplicate effort.
+The Design System team maintains and evolves Pajamas in partnership with contributors. Our goal is to make contributing straightforward and collaborative. Proposals should feel welcome, and contributors can expect constructive, timely feedback.
 
-## Contribute an issue
+<!-- If you have suggestions for improving the process, please share them [link to feedback issue]. -->
 
-If you are interested in contributing to our design system, the first step is
-ensuring that an issue exists in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues).
-There are many applications that an issue can have, including:
+Contributions can start in design, code, or both. However they begin, what matters is making the work visible early, opening it up for feedback, and aligning before merging. To guide this work, Pajamas is organized into two layers:
 
-- Submitting feature proposals
-- Asking questions
-- Reporting bugs and malfunctions
-- Obtaining support
-- Enhancing code implementations
+- **The core layer** represents the shared building blocks of the GitLab product. It includes widely used foundational elements, components, patterns, and guidelines that the Design System team directly owns.
+- **The extended layer** provides space for reusable components and patterns that are valuable in more than one place, even if they don't need to scale across the entire product. The teams who create extended contributions own them.
 
-If you were unable to find a related issue in our [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues),
-begin by creating a new one. Creating an issue for each change allows us to
-easily track all proposals in one place. For changes that affect visual designs
-or user experiences, it can be helpful to include a mockup.
+Both layers depend on active contributions, and we encourage proposals of any size or scope. Contributions may involve reporting bugs, suggesting documentation changes, highlighting emerging patterns, sharing design explorations, or even asking questions that spark discussion.
 
-To contribute an issue, follow one of these paths depending on its nature:
+<!-- [Describe how people can recognize elements in the core and extended layer on design.gitlab.com]. -->
 
-1. **Component**: Get familiar with our [Component lifecycle](/get-started/lifecycle/).
-1. **Object**: Create an issue with the [“Object documentation” template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Object%20documentation) and follow its instructions.
-1. Everything else: [Create an issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new) with no template.
+## Contribution process
 
-### UX proposals
+The contribution process provides structure for moving work from idea to adoption.
 
-If your proposal involves a new guideline or UX paradigm, ping a
-[UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-to review and provide feedback.
+### 1. Create an issue or open a merge request
 
-### Frontend proposals
+Start by ensuring that an issue or merge request exists. Search the [issue tracker](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues) for related work before creating a new one. While discussion can happen in many places, the formal process begins once the work is in GitLab.
 
-If your proposal involves a change to the frontend implementation, ping a
-[frontend reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-to review and provide feedback.
+- **Open a merge request** when you are proposing a specific change.
+- **Create an issue** when the outcome is unclear, for example to raise a question, report a bug, or explore an idea. When in doubt, default to an issue.
 
-## Contribute a merge request
+### 2. Classify as core or extended
 
-To make changes within our Design System, follow these instructions:
+After you open an issue or merge request, the Design System team will classify the contribution as core, extended, or out of scope for the design system. If you are discussing or modifying an existing element, we will continue to use its current classification. In some cases, a contribution may not have enough information to make a clear decision. These will be marked as pending classification and revisited once more details are available.
 
-1. Choose an issue to work on. If one does not exist, please review the
-   contribution guidelines regarding creating a new one. This opens the conversation
-   and allows feedback to happen early, preventing risks such as duplicated or
-   unnecessary work. It can be helpful to comment in the issue to verify that no one
-   is working on it and that the issue is still relevant.
-1. Fork [this project](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com).
-1. Make changes reflecting the issue you’ve chosen to work on.
-1. Follow GitLab's
-   [commit message guidelines](https://docs.gitlab.com/development/contributing/merge_request_workflow/#commit-messages-guidelines).
-1. Create a merge request using the `Documentation` template. The earlier you
-   open a merge request, the sooner you can get feedback. You can mark it as a
-   draft to signal that you’re not done yet.
-1. Get your merge request approved. If your changes involved a new guideline or
-   UX paradigm, then ping a [UX reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-   to approve your changes. If your changes involve an update to frontend implementation,
-   ping a [frontend reviewer or maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com)
-   to approve. Some merge requests will require both a UX and frontend approver.
-1. Get your changes merged! After the necessary approvals have been added, a UX
-   or frontend maintainer can then merge your merge request. 🙌
+<table>
+   <thead>
+      <tr>
+         <th>Core layer</th>
+         <th>Extended layer</th>
+      </tr>
+   </thead>
+      <tr>
+         <td>
+            <p>Criteria (should meet most or all):</p>
+            <ul>
+               <li> Broad usage across multiple domains and Design System consumers.</li>
+               <li> Not clearly owned by a single domain team.</li>
+               <li> Sets the system-wide standard for consistent use across domains.</li>
+               <li> Mature and stable design and implementation.</li>
+               <li> High risk if implemented inconsistently.</li>
+            </ul>
+         </td>
+         <td>
+            <p>Criteria (meets one or more):</p>
+            <ul>
+               <li> Reusable in more than one place, but not necessarily across multiple domains.</li>
+               <li> May be primarily domain-owned, but valuable to share across teams.</li>
+               <li> An early-stage or evolving component or pattern.</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Requirements:</p>
+            <ul>
+               <li> Fully conforms to accessibility requirements.</li>
+               <li> Supports current and future requirements of teams.</li>
+               <li> Includes design specs, Figma assets, code assets, and documentation.</li>
+               <li> The Design System team has capacity and capability for ongoing maintenance and long-term improvement.</li>
+            </ul>
+         </td>
+         <td>
+            <p>Requirements:</p>
+            <ul>
+               <li> Solves current needs, but is not expected to scale across all product teams.</li>
+               <li> Includes documentation and code (Figma assets and design specs optional). Code-only assets are excluded from the extended layer. </li>
+               <li> The Design System team does not provide ongoing or long-term support.</li>
+            </ul>
+         </td>
+      </tr>
+</table>
 
-## Contribute to design
+### 3. Define level of support
 
-Everyone can contribute to GitLab, including our UI design library in Figma. To contribute to our Pajamas UI Kit, follow these steps:
+To guide contributors, the Design System team will identify an initial level of support:
 
-1. [Create an issue](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/issues/new) (or assign yourself an existing one) for the work you’re doing. To create a new component or update an existing one, use the [Figma component issue template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=Figma%20update).
-1. Choose one of the following based on your contribution:
-   - If you’re making updates or breaking changes to an existing component in the Pajamas UI Kit, start with a [branch](https://www.figma.com/best-practices/branching-in-figma/) of the UI kit. Prefix the branch name with the issue, MR, or epic number, and add your GitLab username as the suffix. For example, **#860-table-component-updates-lvanc**.
-   - To create a new component, duplicate our [component template](https://www.figma.com/file/OmvFfWkqEsdGhXAND133ou/Component-template?node-id=0%3A1) to your drafts.
-   - For all other changes, create a new file in your drafts.
-1. Review the **Figma Guides** section to learn about how we structure and document our work within Figma.
-1. Share a link to your branch or draft in the issue.
-1. High-five yourself and go brew some coffee while you wait for the review. Thanks!
+- **No support:** the contributor owns execution with no involvement from the Design System team. This is the default level of support for contributions to the extended layer.
+- **Consult and review:** the contributor leads execution while the Design System team provides feedback, advice, and review. This is the default level of support for contributions to the core layer.
+- **Task-specific:** the Design system team takes responsibility for a specific part of the process and provides feedback and/or deliverables (for example, producing UI kit assets or writing documentation)
+- **End-to-end:** the Design System team leads execution through completion, working closely with the contributor and providing feedback, guidance, and review at every stage of the process.
 
-We accept contributions from wider community members who share a Figma [draft](https://help.figma.com/hc/en-us/articles/360041543473#drafts) with proposed changes.
+If you request a higher level of support for a contribution, it will be triaged and, if accepted, incorporated into milestone planning.
 
-We also encourage design contributions/improvements to GitLab itself — use its [issue tracker](https://gitlab.com/gitlab-org/gitlab/-/issues) to add your ideas to an existing or new issue and refer to this guide on [design and user interface changes](https://docs.gitlab.com/ee/development/contributing/design.html#design-and-user-interface-changes).
+#### Supporting contributions to the core layer
 
-For the design of GitLab, please see this guide on [design and user interface changes](https://docs.gitlab.com/ee/development/contributing/design.html#design-and-user-interface-changes).
+Any changes to the core layer require review and approval from members of the Design System team. When a contribution is classified as core, a point of contact will be assigned to work with you. This person is available to guide you through the process, help ensure changes align with guidelines and system-wide quality, and prepare the work for long-term ownership and maintenance by the Design System team.
+
+#### Contributing to the extended layer
+
+Extended items are generally owned by the team that created them, though in some cases they may be owned by a broader group of maintainers. When a contribution is classified as extended, the Design System team will check in to understand what support, if any, you need. You can also reference the reviewer list or proposal template to find who to engage. As the contributor, it is your responsibility to move the work forward, with optional guidance available from the Design System team.
+
+#### Reviewing our level of support
+
+The Design System team will review our level of support every milestone. During these reviews we may continue support if the work is progressing, or scale back or remove our involvement if the work has stalled. This helps keep our capacity focused on active contributions.
+
+### 4. Merge your changes
+
+After the necessary approvals, the respective owner of the layer or element can merge the change. If there are any significant changes, please share them with the wider UX and Engineering groups.
+
+Rolling out changes is typically handled by the contributor, but the Design System team will coordinate when a change to the core layer has broad or breaking impact.
+
+## Resources
+
+- [Contribute to the Pajamas UI Kit](/get-started/uik-contributing)
+- [Guides for contributing to GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/CONTRIBUTING.md)
 
 ## Code of conduct
 

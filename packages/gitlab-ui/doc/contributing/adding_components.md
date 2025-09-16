@@ -1,6 +1,8 @@
 # Adding a new component to GitLab UI
 
-The following provides guidance for engineers adding new components to GitLab UI.
+The following provides guidance for engineers adding new components to GitLab
+ UI. Before beginning, please review the [design system contribution
+ process](https://design.gitlab.com/get-started/contributing).
 
 ## Merge Request guidelines
 
@@ -21,12 +23,6 @@ New components are usually introduced in a single, large MR.
 
 To simplify the review process, create a principal feature branch based on the project's main branch.
 Then, create smaller branches targeting the principal branch to iterate through smaller changes.
-
-## Working on a Pajamas-documented component
-
-If you are adding or updating a component documented in the
-[Pajamas design system](https://design.gitlab.com), you should comply with the
-[component lifecycle workflow](https://design.gitlab.com/get-started/lifecycle).
 
 ## Testing your new component in GitLab
 
