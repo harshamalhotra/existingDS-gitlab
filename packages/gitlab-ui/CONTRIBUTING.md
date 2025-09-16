@@ -14,7 +14,10 @@ Here are a few resources to guide you through contributing to GitLab UI.
 
 Questions? Head to our [FAQ](./FAQ.md) where you might find some answers.
 
-## GitLab's contribution guidelines
+## GitLab contribution guidelines
+
+Please review the [design system contribution process](https://design.gitlab.com/get-started/contributing)
+for an overview of how to contribute to Pajamas.
 
 Please refer to [gitlab's CONTRIBUTING.md](https://gitlab.com/gitlab-org/gitlab/blob/master/CONTRIBUTING.md)
 for details on our guidelines.

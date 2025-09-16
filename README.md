@@ -131,11 +131,11 @@ changesets and publish packages](/doc/publishing-packages.md).
 ## Contributing
 
 GitLab is an open source project and we are very happy to accept community
-contributions. Please refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for details.
+contributions. Please refer to the [contribution process](https://design.gitlab.com/get-started/contributing) for details.
 
 ### Pajamas UI Kit
 
-To contribute to our [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit), [review our contributing guidelines](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/pajamas-ui-kit.md).
+To contribute to our [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Pajamas-UI-Kit), [review our contributing guidelines](https://design.gitlab.com/get-started/uik-contributing).
 
 ## Why is the design system called Pajamas?
 

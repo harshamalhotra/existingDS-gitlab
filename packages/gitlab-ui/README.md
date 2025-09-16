@@ -132,8 +132,11 @@ To publish new versions of GitLab UI, see [publishing packages](../../doc/publis
 
 ## Contributing guide
 
-Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to add new components and
-contribute in general to GitLab UI.
+Please review the [design system contribution process](https://design.gitlab.com/get-started/contributing)
+for an overview of how to contribute to Pajamas.
+
+For GitLab UI–specific details, refer to [Contributing to GitLab UI](CONTRIBUTING.md) for
+additional resources and guides.
 
 ### FAQs
 
