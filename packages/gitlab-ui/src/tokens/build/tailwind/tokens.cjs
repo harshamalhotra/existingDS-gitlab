@@ -412,6 +412,15 @@ const opacity = {
   9: 'var(--gl-opacity-9, .9)',
   10: 'var(--gl-opacity-10, 1)',
 };
+const zindexes = {
+  0: 'var(--gl-zindex-0, 0)',
+  1: 'var(--gl-zindex-1, 1)',
+  2: 'var(--gl-zindex-2, 2)',
+  3: 'var(--gl-zindex-3, 3)',
+  4: 'var(--gl-zindex-4, 4)',
+  200: 'var(--gl-zindex-200, 200)',
+  9999: 'var(--gl-zindex-9999, 9999)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -496,4 +505,5 @@ module.exports = {
   spacing: spacingScale,
   borderRadius,
   opacity,
+  zIndex: zindexes,
 };

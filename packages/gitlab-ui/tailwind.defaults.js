@@ -11,6 +11,7 @@ const {
   spacing,
   borderRadius,
   opacity,
+  zIndex,
 } = require('./src/tokens/build/tailwind/tokens.cjs');
 
 const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
@@ -583,15 +584,7 @@ module.exports = {
       ease: 'ease',
       linear: 'linear',
     },
-    zIndex: {
-      0: '0',
-      1: '1',
-      2: '2',
-      3: '3',
-      4: '4',
-      200: '200',
-      9999: '9999',
-    },
+    zIndex,
     extend: {
       borderWidth: {
         1: '1px',
