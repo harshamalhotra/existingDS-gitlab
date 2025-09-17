@@ -29,6 +29,13 @@ describe('avatar labeled', () => {
     expect(wrapper.findComponent(Avatar).props('alt')).not.toEqual(altText);
   });
 
+  it('pass attributes to avatar and does not set on parent', () => {
+    buildWrapper({ itemprop: 'logo' });
+
+    expect(wrapper.findComponent(Avatar).attributes('itemprop')).toBe('logo');
+    expect(wrapper.element.getAttribute('itemprop')).toBeNull();
+  });
+
   it('displays the avatar label', () => {
     buildWrapper({ label });
 

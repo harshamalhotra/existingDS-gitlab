@@ -8,6 +8,7 @@ export default {
     GlAvatar,
     GlLink,
   },
+  inheritAttrs: false,
   props: {
     label: {
       type: String,
