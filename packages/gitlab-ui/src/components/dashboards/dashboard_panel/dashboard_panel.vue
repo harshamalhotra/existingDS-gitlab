@@ -201,7 +201,7 @@ export default {
 
           <gl-truncate
             v-if="hasTitle"
-            class="gl-font-bold gl-text-default"
+            class="gl-min-w-0 gl-font-bold gl-text-default"
             :text="title"
             with-tooltip
           />
@@ -209,7 +209,7 @@ export default {
           <template v-if="hasTitlePopover">
             <gl-icon
               :id="titlePopoverId"
-              class="gl-ml-2"
+              class="gl-ml-2 gl-min-w-5"
               data-testid="panel-title-popover-icon"
               name="information-o"
               variant="info"
