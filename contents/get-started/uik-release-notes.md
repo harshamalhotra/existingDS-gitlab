@@ -3,6 +3,60 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.4
+
+<small>Published 2025-09-15</small>
+
+For this release we're keeping up with the times by adding a few AI-related icons and a new page template for paneled views. Data revealed that the data visualization elements needed some updates, so we've addressed those too. Lastly, this release included some other maintenance that keeps the UI kit assets up-to-date with code counterparts. And one more thing, AI features are now enabled in Figma, which unlocks some new capabilities and tools. Keep on!
+
+Full highlights:
+
+- New paneled views page template for more flexible layouts.
+- AI product icons added: flow and agent-ai.
+- Updated data visualizations to use current component versions.
+- Various maintenance and fixes to restore missing components and broken style references.
+
+**💡 Figma tip:** With the enablement of the AI features in Figma, you'll want to [take a look at all of the capabilities](https://help.figma.com/hc/en-us/articles/24039793359767-About-Figma-AI)!
+
+### Changelog
+
+#### ➕ Additions
+
+- (Design Tokens): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
+- (Component Library): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
+- (Patterns & Page Templates): Adds [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120&p=f&t=TwmTgXdN5ngbUoXj-11) page template.
+- (Product Icons): Adds [**flow**](https://gitlab-org.gitlab.io/?q=~flow-ai) and [**agent-ai**](https://gitlab-org.gitlab.io/?q=~agent-ai) icons.
+
+#### 🔄 Changes
+
+- (Product Icons): Updates [**copy-to-clipboard**](https://gitlab-org.gitlab.io/?q=~copy-to-clipboard) icon to new design.
+- (Component Library): Breaking(medium): Set [**❖&nbsp;Toast**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-139&p=f&t=5UaNq5ViAdUg70VA-11) width to hug and adds max width to variants. In some instances this will cause the toast to be ~20px wider with longer content.
+- (Component Library): Updates [**❖&nbsp;Drawer**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=125418-1519&t=5UaNq5ViAdUg70VA-11) to use the `gl-shadow-lg`.
+- (Component Library): Changes [**Drawer example**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150-59211&t=5UaNq5ViAdUg70VA-11) to better support scrim.
+
+- (Data Visualization): Breaking(medium): Updates [**pan and zoom**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=490-47&t=y8vks0pCrqD1GQXy-4) to use the current version of [**❖&nbsp;Badge**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121748-37&p=f&t=5UaNq5ViAdUg70VA-11).
+- (Data Visualization): Breaking(medium): Updates [**mini pipeline graph**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=1006-1674&p=f&t=y8vks0pCrqD1GQXy-11) to use the current version of [**❖&nbsp;Badge**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121748-37&p=f&t=5UaNq5ViAdUg70VA-11).
+- (Data Visualization): Updates [**contribution chart**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=2347-5837&p=f&t=y8vks0pCrqD1GQXy-11) to no longer use deprecated layer style.
+- (Data Visualization): Updates [**mini pipeline graph**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=1006-1674&p=f&t=y8vks0pCrqD1GQXy-11) instances to no longer use deprecated effect style.
+- (Data Visualization): Updates the [**line chart**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=47-0&p=f&t=y8vks0pCrqD1GQXy-11) example to use the most recent versions of components.
+
+#### 🛠️ Fixes
+
+- (Data Visualization): Restores components used in the file that had been removed.
+- (Data Visualization): Removes style references to libraries that no longer exist.
+- (Data Visualization): Updates [**color chip**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=17-1413&t=y8vks0pCrqD1GQXy-4) to use the styles from the correct library.
+
+#### ⚠️ Deprecations
+
+- (Component Library): Deprecates muted badge (use [**❖&nbsp;neutral badge**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121748-1095&t=5UaNq5ViAdUg70VA-11) instead).
+- (Component Library): Deprecates the dashed button variant (use [**❖&nbsp;default button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7&p=f&t=5UaNq5ViAdUg70VA-11) instead).
+- (Patterns & Page Templates): Deprecates legacy page templates and components.
+- (Product Icons): Deprecates 'duplicate' icon.
+
+#### Contributors
+
+Annabel Gray, Dan Mizzi-Harris, Jeremy Elder, Julia Miocene, Libor Vanc, Sascha Eggenberger
+
 ## 18.3
 
 <small>Published 2025-08-15</small>
