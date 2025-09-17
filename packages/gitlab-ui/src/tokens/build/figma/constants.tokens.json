@@ -1797,6 +1797,85 @@
       }
     }
   },
+  "opacity": {
+    "0": {
+      "$value": "0",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "1": {
+      "$value": ".1",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "2": {
+      "$value": ".2",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "3": {
+      "$value": ".3",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "4": {
+      "$value": ".4",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "5": {
+      "$value": ".5",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "6": {
+      "$value": ".6",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "7": {
+      "$value": ".7",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "8": {
+      "$value": ".8",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "9": {
+      "$value": ".9",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "10": {
+      "$value": "1",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    }
+  },
   "spacing-scale": {
     "0": {
       "$value": "0",

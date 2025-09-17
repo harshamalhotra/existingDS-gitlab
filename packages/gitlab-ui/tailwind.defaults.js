@@ -10,6 +10,7 @@ const {
   textColor,
   spacing,
   borderRadius,
+  opacity,
 } = require('./src/tokens/build/tailwind/tokens.cjs');
 
 const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
@@ -561,19 +562,7 @@ module.exports = {
       36: '2.25rem',
       42: '2.625rem',
     },
-    opacity: {
-      0: '0',
-      1: '.1',
-      2: '.2',
-      3: '.3',
-      4: '.4',
-      5: '.5',
-      6: '.6',
-      7: '.7',
-      8: '.8',
-      9: '.9',
-      10: '1',
-    },
+    opacity,
     outlineColor,
     screens: {
       sm: '576px',

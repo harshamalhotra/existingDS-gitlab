@@ -399,6 +399,19 @@ const borderRadius = {
   default: 'var(--gl-border-radius-default, var(--gl-border-radius-md, 0.25rem))',
   control: 'var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))',
 };
+const opacity = {
+  0: 'var(--gl-opacity-0, 0)',
+  1: 'var(--gl-opacity-1, .1)',
+  2: 'var(--gl-opacity-2, .2)',
+  3: 'var(--gl-opacity-3, .3)',
+  4: 'var(--gl-opacity-4, .4)',
+  5: 'var(--gl-opacity-5, .5)',
+  6: 'var(--gl-opacity-6, .6)',
+  7: 'var(--gl-opacity-7, .7)',
+  8: 'var(--gl-opacity-8, .8)',
+  9: 'var(--gl-opacity-9, .9)',
+  10: 'var(--gl-opacity-10, 1)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -482,4 +495,5 @@ module.exports = {
   fill,
   spacing: spacingScale,
   borderRadius,
+  opacity,
 };

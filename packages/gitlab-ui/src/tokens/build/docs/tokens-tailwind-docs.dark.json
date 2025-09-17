@@ -44058,5 +44058,282 @@
       ],
       "cssWithValue": "var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))"
     }
+  },
+  "opacity": {
+    "0": {
+      "key": "{opacity.0}",
+      "$value": "0",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "0",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.0}"
+      },
+      "name": "OPACITY_0",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "0"
+      ],
+      "cssWithValue": "var(--gl-opacity-0, 0)"
+    },
+    "1": {
+      "key": "{opacity.1}",
+      "$value": ".1",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".1",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.1}"
+      },
+      "name": "OPACITY_1",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "1"
+      ],
+      "cssWithValue": "var(--gl-opacity-1, .1)"
+    },
+    "2": {
+      "key": "{opacity.2}",
+      "$value": ".2",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".2",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.2}"
+      },
+      "name": "OPACITY_2",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "2"
+      ],
+      "cssWithValue": "var(--gl-opacity-2, .2)"
+    },
+    "3": {
+      "key": "{opacity.3}",
+      "$value": ".3",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".3",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.3}"
+      },
+      "name": "OPACITY_3",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "3"
+      ],
+      "cssWithValue": "var(--gl-opacity-3, .3)"
+    },
+    "4": {
+      "key": "{opacity.4}",
+      "$value": ".4",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".4",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.4}"
+      },
+      "name": "OPACITY_4",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "4"
+      ],
+      "cssWithValue": "var(--gl-opacity-4, .4)"
+    },
+    "5": {
+      "key": "{opacity.5}",
+      "$value": ".5",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".5",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.5}"
+      },
+      "name": "OPACITY_5",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "5"
+      ],
+      "cssWithValue": "var(--gl-opacity-5, .5)"
+    },
+    "6": {
+      "key": "{opacity.6}",
+      "$value": ".6",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".6",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.6}"
+      },
+      "name": "OPACITY_6",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "6"
+      ],
+      "cssWithValue": "var(--gl-opacity-6, .6)"
+    },
+    "7": {
+      "key": "{opacity.7}",
+      "$value": ".7",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".7",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.7}"
+      },
+      "name": "OPACITY_7",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "7"
+      ],
+      "cssWithValue": "var(--gl-opacity-7, .7)"
+    },
+    "8": {
+      "key": "{opacity.8}",
+      "$value": ".8",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".8",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.8}"
+      },
+      "name": "OPACITY_8",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "8"
+      ],
+      "cssWithValue": "var(--gl-opacity-8, .8)"
+    },
+    "9": {
+      "key": "{opacity.9}",
+      "$value": ".9",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": ".9",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.9}"
+      },
+      "name": "OPACITY_9",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "9"
+      ],
+      "cssWithValue": "var(--gl-opacity-9, .9)"
+    },
+    "10": {
+      "key": "{opacity.10}",
+      "$value": "1",
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/opacity.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1",
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{opacity.10}"
+      },
+      "name": "OPACITY_10",
+      "attributes": {},
+      "path": [
+        "opacity",
+        "10"
+      ],
+      "cssWithValue": "var(--gl-opacity-10, 1)"
+    }
   }
 }
