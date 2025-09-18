@@ -40,7 +40,7 @@ button {
 code:where(:not([class])) {
   @apply gl-text-default #{!important};
   @apply gl-bg-strong;
-  @apply gl-rounded-base;
+  @apply gl-rounded-default;
   @apply gl-font-monospace;
   @apply gl-px-2;
   @apply gl-py-1;

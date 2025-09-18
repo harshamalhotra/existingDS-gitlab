@@ -46,7 +46,7 @@
           <td v-if="props.showColorSwatch" class="gl-p-4">
             <div
               :style="{ backgroundColor: Object.values(properties)[0] }"
-              class="gl-inline-block gl-h-7 gl-w-7 gl-rounded-small gl-align-middle"
+              class="gl-inline-block gl-h-7 gl-w-7 gl-rounded-sm gl-align-middle"
               data-testid="colorSwatch"
             />
           </td>

@@ -41,8 +41,8 @@ $gl-alert-top-border-size: 2px;
   @apply gl-text-base;
   position: relative;
   padding-inline: calc(#{$gl-spacing-scale-9} + #{$gl-alert-padding-x});
+  border-radius: var(--gl-alert-border-radius);
   @apply gl-py-5;
-  @apply gl-rounded-base;
 
   @media (forced-colors: active) {
     border: 1px solid transparent;

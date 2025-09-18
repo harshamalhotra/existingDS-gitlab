@@ -99,11 +99,11 @@ $gl-broadcast-message-padding-x: var(--gl-broadcast-message-padding-x, 0px);
   }
 
   &.notification {
-    @apply gl-rounded-base;
     @apply gl-border;
     @apply gl-shadow-md;
     @apply gl-bg-overlap;
     @apply gl-text-default;
+    border-radius: var(--gl-broadcast-banner-border-radius);
     max-width: $gl-broadcast-message-notification-max-width;
   }
 

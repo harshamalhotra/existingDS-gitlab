@@ -51,7 +51,7 @@
 .gl-link-mention,
 .gl-link-mention-current {
   @apply gl-px-1;
-  @apply gl-rounded-base;
+  @apply gl-rounded-default;
   @apply gl-no-underline;
 
   &:hover {

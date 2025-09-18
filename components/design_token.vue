@@ -25,7 +25,7 @@ export default {
 
 <template>
   <code
-    class="gl-inline-flex gl-gap-2 gl-rounded-base gl-bg-strong gl-px-2 gl-py-1 gl-text-sm gl-text-strong"
+    class="gl-inline-flex gl-gap-2 gl-rounded-default gl-bg-strong gl-px-2 gl-py-1 gl-text-sm gl-text-strong"
   >
     <color-chip v-if="type === 'color'" :color="cssName" />
     <span class="gl-inline-block">{{ value }}</span>

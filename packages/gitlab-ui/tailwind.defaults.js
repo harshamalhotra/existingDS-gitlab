@@ -9,6 +9,7 @@ const {
   fill,
   textColor,
   spacing,
+  borderRadius,
 } = require('./src/tokens/build/tailwind/tokens.cjs');
 
 const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
@@ -463,12 +464,10 @@ module.exports = {
     backgroundColor,
     borderColor,
     borderRadius: {
-      none: '0',
+      ...borderRadius,
       6: '1.5rem',
       base: '.25rem',
-      full: '50%', // Tailwind gl-rounded-full is 9999px
       small: '.125rem',
-      lg: '.5rem',
       pill: '.75rem',
     },
     boxShadow: {

@@ -386,6 +386,19 @@ const spacingScale = {
   '2-5': 'var(--gl-spacing-scale-2-5, 0.375rem)',
   '11-5': 'var(--gl-spacing-scale-11-5, 4.5rem)',
 };
+const borderRadius = {
+  none: 'var(--gl-border-radius-none, var(--gl-spacing-scale-0, 0))',
+  xs: 'var(--gl-border-radius-xs, var(--gl-spacing-scale-px, 1px))',
+  sm: 'var(--gl-border-radius-sm, var(--gl-spacing-scale-1, 0.125rem))',
+  md: 'var(--gl-border-radius-md, var(--gl-spacing-scale-2, 0.25rem))',
+  lg: 'var(--gl-border-radius-lg, var(--gl-spacing-scale-3, 0.5rem))',
+  xl: 'var(--gl-border-radius-xl, var(--gl-spacing-scale-4, 0.75rem))',
+  '2xl': 'var(--gl-border-radius-2xl, var(--gl-spacing-scale-5, 1rem))',
+  '3xl': 'var(--gl-border-radius-3xl, var(--gl-spacing-scale-6, 1.5rem))',
+  full: 'var(--gl-border-radius-full, 9999px)',
+  default: 'var(--gl-border-radius-default, var(--gl-border-radius-md, 0.25rem))',
+  control: 'var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -468,4 +481,5 @@ module.exports = {
   textColor,
   fill,
   spacing: spacingScale,
+  borderRadius,
 };

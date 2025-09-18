@@ -217,6 +217,16 @@
               ]
             }
           }
+        },
+        "radius": {
+          "$value": "{border.radius.default}",
+          "$type": "dimension",
+          "$description": "Used for broadcast banner border radius.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          }
         }
       },
       "icon": {

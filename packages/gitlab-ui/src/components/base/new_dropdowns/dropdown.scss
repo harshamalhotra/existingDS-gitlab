@@ -27,7 +27,7 @@
   .gl-new-dropdown-panel {
     @apply gl-hidden;
     @apply gl-bg-dropdown;
-    @apply gl-rounded-lg;
+    border-radius: var(--gl-dropdown-border-radius);
     @apply gl-drop-shadow-md;
     top: 0;
     left: 0;

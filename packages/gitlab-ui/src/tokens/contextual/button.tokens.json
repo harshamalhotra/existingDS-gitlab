@@ -1,5 +1,17 @@
 {
   "button": {
+    "border": {
+      "radius": {
+        "$value": "{action.border.radius}",
+        "$type": "dimension",
+        "$description": "Used for button border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "default": {
       "primary": {
         "foreground": {

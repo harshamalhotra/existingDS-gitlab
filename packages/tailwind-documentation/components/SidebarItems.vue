@@ -15,12 +15,12 @@
             <RouterLink
               ref="routerLink"
               :to="categoryItem.path"
-              class="gl-action-neutral-colors gl-leading-6 gl-group gl-relative gl-block gl-rounded-base gl-leading-normal gl-p-3 gl-pl-4 gl-text-base !gl-no-underline gl-font-normal"
+              class="gl-action-neutral-colors gl-leading-6 gl-group gl-relative gl-block gl-rounded-default gl-leading-normal gl-p-3 gl-pl-4 gl-text-base !gl-no-underline gl-font-normal"
               active-class="active-sidebar-link gl-bg-strong"
               @click="$emit('itemClick')"
             >
               <div
-                class="gl-absolute gl-bottom-[3px] gl-left-[3px] gl-top-[3px] gl-hidden gl-w-[3px] gl-rounded-base gl-bg-purple-500 group-[.active-sidebar-link]:gl-block"
+                class="gl-absolute gl-bottom-[3px] gl-left-[3px] gl-top-[3px] gl-hidden gl-w-[3px] gl-rounded-default gl-bg-purple-500 group-[.active-sidebar-link]:gl-block"
               />
               {{ categoryItem.meta.title }}
             </RouterLink>

@@ -39,8 +39,8 @@ $pd-week-color: var(--gl-text-color-subtle);
 .gl-datepicker-theme {
   @apply gl-font-regular;
   @apply gl-border-none;
-  @apply gl-rounded-base;
   @apply gl-mt-3;
+  border-radius: var(--gl-dropdown-border-radius);
   background-color: var(--gl-datepicker-background-color);
 
   &.is-bound {
@@ -56,7 +56,7 @@ $pd-week-color: var(--gl-text-color-subtle);
     @apply gl-pt-5;
     @apply gl-px-3;
     @apply gl-pb-3;
-    @apply gl-rounded-base;
+    @apply gl-rounded-default;
   }
 
   .pika-title {
@@ -187,7 +187,7 @@ $pd-week-color: var(--gl-text-color-subtle);
   }
 
   .pika-button {
-    @apply gl-rounded-base;
+    border-radius: var(--gl-action-border-radius);
     @apply gl-shadow-none;
     @apply gl-py-3;
     @apply gl-text-center;

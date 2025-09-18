@@ -92,9 +92,9 @@ CSS-based approach:
 
 ```html
 <div>
-  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-base gl-my-3 !gl-max-w-20"></div>
-  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-base gl-my-3 !gl-max-w-30"></div>
-  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-base gl-my-3 !gl-max-w-26"></div>
+  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-default gl-my-3 !gl-max-w-20"></div>
+  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-default gl-my-3 !gl-max-w-30"></div>
+  <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-default gl-my-3 !gl-max-w-26"></div>
 </div>
 ```
 
@@ -109,15 +109,15 @@ More complex example (with different shapes and an animation delay for offset el
 
 ```html
 <div class="gl-display-flex gl-flex-direction-column gl-gap-2 gl-w-30">
-  <div class="gl-animate-skeleton-loader gl-h-8 gl-rounded-base gl-mb-4"></div>
+  <div class="gl-animate-skeleton-loader gl-h-8 gl-rounded-default gl-mb-4"></div>
   <div class="gl-display-flex gl-flex-direction-row gl-gap-2">
     <div class="gl-animate-skeleton-loader gl-h-8 gl-w-8 gl-rounded-full"></div>
     <div class="gl-flex-grow-1" style="animation-delay: 100ms">
-      <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-base gl-my-2"></div>
-      <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-base gl-my-2"></div>
-      <div class="gl-animate-skeleton-loader gl-display-inline-block gl-h-4 gl-w-10 gl-rounded-base gl-my-2"></div>
+      <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-default gl-my-2"></div>
+      <div class="gl-animate-skeleton-loader gl-h-4 gl-rounded-default gl-my-2"></div>
+      <div class="gl-animate-skeleton-loader gl-display-inline-block gl-h-4 gl-w-10 gl-rounded-default gl-my-2"></div>
       <div
-        class="gl-animate-skeleton-loader gl-display-inline-block gl-h-4 gl-w-10 gl-rounded-base gl-my-2"
+        class="gl-animate-skeleton-loader gl-display-inline-block gl-h-4 gl-w-10 gl-rounded-default gl-my-2"
         style="animation-delay: 250ms"></div>
     </div>
   </div>

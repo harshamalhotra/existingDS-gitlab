@@ -48,7 +48,7 @@
   }
 
   &:focus {
-    border-radius: $gl-border-radius-base;
+    @apply gl-rounded-default;
   }
 
   &.disabled {

@@ -1,5 +1,17 @@
 {
   "action": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for the border radius of an action.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "disabled": {
       "foreground": {
         "color": {
@@ -1163,6 +1175,18 @@
           ]
         }
       }
+    },
+    "radius": {
+      "default": {
+        "$value": "{border.radius.md}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
     }
   },
   "control": {
@@ -1377,6 +1401,16 @@
               ]
             }
           }
+        }
+      },
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
         }
       }
     },

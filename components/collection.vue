@@ -33,7 +33,7 @@ export default {
     <ul class="gl-m-0 gl-grid gl-list-none gl-gap-5 !gl-p-0 lg:gl-grid-cols-3">
       <li v-for="item in items" :key="item.path" class="gl-flex">
         <nuxt-link
-          class="gl-flex gl-w-full gl-flex-col gl-gap-3 gl-rounded-base gl-border-1 gl-border-solid gl-border-section gl-bg-section gl-p-5 !gl-text-default !gl-no-underline hover:gl-border-strong"
+          class="gl-flex gl-w-full gl-flex-col gl-gap-3 gl-rounded-default gl-border-1 gl-border-solid gl-border-section gl-bg-section gl-p-5 !gl-text-default !gl-no-underline hover:gl-border-strong"
           :to="item.path"
         >
           <span class="gl-block gl-font-bold gl-text-strong">{{ item.name }}</span>

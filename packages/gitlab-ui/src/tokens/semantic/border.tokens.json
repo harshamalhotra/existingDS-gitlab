@@ -63,6 +63,18 @@
           ]
         }
       }
+    },
+    "radius": {
+      "default": {
+        "$value": "{border.radius.md}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
     }
   }
 }

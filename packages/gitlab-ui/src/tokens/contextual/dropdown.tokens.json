@@ -28,6 +28,16 @@
           ]
         },
         "$deprecated": true
+      },
+      "radius": {
+        "$value": "{border.radius.lg}",
+        "$type": "dimension",
+        "$description": "Used for the border radius of a dropdown.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
       }
     },
     "divider": {

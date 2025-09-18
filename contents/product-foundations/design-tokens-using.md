@@ -214,49 +214,49 @@ The following combinations are commonly used to visually wrap content. Each comb
   </thead>
   <tbody>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border gl-border-default gl-bg-default"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border gl-border-default gl-bg-default"><br></div></td>
       <td class="!gl-pt-6">
        <code>background.color.default</code><br><code>border.color.default</code>
       </td>
       <td class="!gl-pt-6">Default combination when a background and border is needed</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-default"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-default"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.default</code><br><code>border.color.subtle</code>
       </td>
       <td class="!gl-pt-6">Container with visually less prominent borders on default background</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-default"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-strong gl-bg-default"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.default</code><br><code>border.color.strong</code>
       </td>
       <td class="!gl-pt-6">Container with visually pronounced borders on default background</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-subtle"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-subtle"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.subtle</code><br><code>border.color.subtle</code>
       </td>
       <td class="!gl-pt-6">Container with visually subdued border and background</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-strong gl-bg-strong"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-strong gl-bg-strong"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.strong</code><br><code>border.color.strong</code>
       </td>
       <td class="!gl-pt-6">Container with visually emphasized border and background</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-section gl-bg-section"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-section gl-bg-section"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.section</code><br><code>border.color.section</code>
       </td>
       <td class="!gl-pt-6">Container with mode-dependent visual presentation</td>
     </tr>
     <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-base gl-border !gl-border-subtle gl-bg-disabled"><br></div></td>
+      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-disabled"><br></div></td>
       <td class="!gl-pt-6">
         <code>background.color.disabled</code><br><code>border.color.subtle</code>
       </td>

@@ -1,12 +1,12 @@
 .gl-card {
   @apply gl-bg-subtle;
   @apply gl-border-solid;
-  @apply gl-rounded-base;
   @apply gl-flex;
   @apply gl-flex-col;
   @apply gl-break-words;
   @apply gl-relative;
   @apply gl-text-base;
+  border-radius: var(--gl-card-border-radius);
 }
 
 .gl-card,
@@ -25,15 +25,15 @@
 
 .gl-card-header {
   @apply gl-border-b-solid;
-  border-top-left-radius: calc($gl-border-radius-base - $gl-border-size-1);
-  border-top-right-radius: calc($gl-border-radius-base - $gl-border-size-1);
+  border-top-left-radius: calc(var(--gl-card-border-radius) - $gl-border-size-1);
+  border-top-right-radius: calc(var(--gl-card-border-radius) - $gl-border-size-1);
   @apply gl-text-heading;
 }
 
 .gl-card-footer {
   @apply gl-border-t-solid;
-  border-bottom-left-radius: calc($gl-border-radius-base - $gl-border-size-1);
-  border-bottom-right-radius: calc($gl-border-radius-base - $gl-border-size-1);
+  border-bottom-left-radius: calc(var(--gl-card-border-radius) - $gl-border-size-1);
+  border-bottom-right-radius: calc(var(--gl-card-border-radius) - $gl-border-size-1);
 }
 
 .gl-card-header,

@@ -270,7 +270,7 @@ export default {
         ref="input"
         v-model="currentValue"
         class="gl-search-box-by-click-input"
-        :class="{ '!gl-rounded-base': !showSearchButton }"
+        :class="{ '!gl-rounded-control': !showSearchButton }"
         v-bind="inputAttributes"
         :disabled="disabled"
         @focus="isFocused = true"

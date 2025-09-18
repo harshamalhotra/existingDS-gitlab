@@ -43704,5 +43704,359 @@
       ],
       "cssWithValue": "var(--gl-spacing-scale-11-5, 4.5rem)"
     }
+  },
+  "borderRadius": {
+    "none": {
+      "key": "{border.radius.none}",
+      "$value": "0",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.0}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.none}"
+      },
+      "name": "BORDER_RADIUS_NONE",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "none"
+      ],
+      "cssWithValue": "var(--gl-border-radius-none, var(--gl-spacing-scale-0, 0))"
+    },
+    "xs": {
+      "key": "{border.radius.xs}",
+      "$value": "1px",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.px}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.xs}"
+      },
+      "name": "BORDER_RADIUS_XS",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "xs"
+      ],
+      "cssWithValue": "var(--gl-border-radius-xs, var(--gl-spacing-scale-px, 1px))"
+    },
+    "sm": {
+      "key": "{border.radius.sm}",
+      "$value": "0.125rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.1}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.sm}"
+      },
+      "name": "BORDER_RADIUS_SM",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "sm"
+      ],
+      "cssWithValue": "var(--gl-border-radius-sm, var(--gl-spacing-scale-1, 0.125rem))"
+    },
+    "md": {
+      "key": "{border.radius.md}",
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.2}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.md}"
+      },
+      "name": "BORDER_RADIUS_MD",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "md"
+      ],
+      "cssWithValue": "var(--gl-border-radius-md, var(--gl-spacing-scale-2, 0.25rem))"
+    },
+    "lg": {
+      "key": "{border.radius.lg}",
+      "$value": "0.5rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.3}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.lg}"
+      },
+      "name": "BORDER_RADIUS_LG",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "lg"
+      ],
+      "cssWithValue": "var(--gl-border-radius-lg, var(--gl-spacing-scale-3, 0.5rem))"
+    },
+    "xl": {
+      "key": "{border.radius.xl}",
+      "$value": "0.75rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.4}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.xl}"
+      },
+      "name": "BORDER_RADIUS_XL",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "xl"
+      ],
+      "cssWithValue": "var(--gl-border-radius-xl, var(--gl-spacing-scale-4, 0.75rem))"
+    },
+    "2xl": {
+      "key": "{border.radius.2xl}",
+      "$value": "1rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.5}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.2xl}"
+      },
+      "name": "BORDER_RADIUS_2XL",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "2xl"
+      ],
+      "cssWithValue": "var(--gl-border-radius-2xl, var(--gl-spacing-scale-5, 1rem))"
+    },
+    "3xl": {
+      "key": "{border.radius.3xl}",
+      "$value": "1.5rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{spacing-scale.6}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.3xl}"
+      },
+      "name": "BORDER_RADIUS_3XL",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "3xl"
+      ],
+      "cssWithValue": "var(--gl-border-radius-3xl, var(--gl-spacing-scale-6, 1.5rem))"
+    },
+    "full": {
+      "key": "{border.radius.full}",
+      "$value": "9999px",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/constant/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "9999px",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.full}"
+      },
+      "name": "BORDER_RADIUS_FULL",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "full"
+      ],
+      "cssWithValue": "var(--gl-border-radius-full, 9999px)"
+    },
+    "default": {
+      "key": "{border.radius.default}",
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/semantic/border.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{border.radius.md}",
+        "$type": "dimension",
+        "$description": "",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{border.radius.default}"
+      },
+      "name": "BORDER_RADIUS_DEFAULT",
+      "attributes": {},
+      "path": [
+        "border",
+        "radius",
+        "default"
+      ],
+      "cssWithValue": "var(--gl-border-radius-default, var(--gl-border-radius-md, 0.25rem))"
+    },
+    "control": {
+      "key": "{control.border.radius}",
+      "$value": "0.25rem",
+      "$type": "dimension",
+      "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/semantic/control.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{control.border.radius}"
+      },
+      "name": "CONTROL_BORDER_RADIUS",
+      "attributes": {},
+      "path": [
+        "control",
+        "border",
+        "radius"
+      ],
+      "cssWithValue": "var(--gl-control-border-radius, var(--gl-border-radius-default, 0.25rem))"
+    }
   }
 }

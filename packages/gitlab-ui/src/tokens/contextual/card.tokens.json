@@ -1,0 +1,16 @@
+{
+  "card": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for card border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    }
+  }
+}

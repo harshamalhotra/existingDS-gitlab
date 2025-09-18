@@ -41,7 +41,7 @@
               >
                 <button
                   type="button"
-                  class="gl-rounded-base gl-bg-default"
+                  class="gl-rounded-default gl-bg-default"
                   @click="closeSidebar"
                 >
                   <span class="gl-sr-only">Close sidebar</span>

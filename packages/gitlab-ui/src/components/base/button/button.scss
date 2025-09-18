@@ -64,7 +64,7 @@
 }
 
 .gl-button.gl-button {
-  @apply gl-rounded-base;
+  border-radius: var(--gl-button-border-radius);
   @apply gl-px-4;
   background-color: var(--gl-button-default-primary-background-color-default);
   @apply gl-leading-normal;

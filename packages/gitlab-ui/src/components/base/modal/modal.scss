@@ -35,20 +35,20 @@ body.modal-open {
   }
 
   .modal-content {
-    @apply gl-rounded-base;
     @apply gl-border-0;
     @apply gl-shadow-lg;
     @apply gl-text-default;
     @apply gl-bg-overlap;
+    border-radius: var(--gl-modal-border-radius);
 
     > :first-child {
-      @apply gl-rounded-tl-base;
-      @apply gl-rounded-tr-base;
+      border-top-left-radius: var(--gl-modal-border-radius);
+      border-top-right-radius: var(--gl-modal-border-radius);
     }
 
     > :last-child {
-      @apply gl-rounded-bl-base;
-      @apply gl-rounded-br-base;
+      border-bottom-left-radius: var(--gl-modal-border-radius);
+      border-bottom-right-radius: var(--gl-modal-border-radius);
     }
   }
 

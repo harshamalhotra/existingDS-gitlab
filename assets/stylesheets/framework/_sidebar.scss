@@ -53,7 +53,7 @@
     &::before {
       content: '';
       @apply gl-bg-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
-      @apply gl-rounded-base;
+      @apply gl-rounded-default;
       @apply gl-block;
       @apply gl-absolute;
       top: 3px;

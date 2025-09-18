@@ -3,10 +3,10 @@
   @apply gl-text-nowrap;
 
   ul {
+    border-radius: var(--gl-action-border-radius);
     @apply gl-flex;
     @apply gl-pl-0;
     @apply gl-list-none;
-    @apply gl-rounded-base;
   }
 
   a {
@@ -15,6 +15,7 @@
 }
 
 .gl-pagination-item {
+  border-radius: var(--gl-action-border-radius);
   transition: color $gl-transition-duration-medium $gl-easing-out-cubic,
               background-color $gl-transition-duration-medium $gl-easing-out-cubic,
               border-color $gl-transition-duration-medium $gl-easing-out-cubic,
@@ -23,7 +24,6 @@
   @apply gl-justify-center;
   @apply gl-p-3;
   @apply gl-leading-normal;
-  @apply gl-rounded-base;
   @apply gl-no-underline;
   @apply gl-min-w-7;
   @apply gl-text-center;
