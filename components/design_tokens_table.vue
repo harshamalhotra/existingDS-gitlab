@@ -39,6 +39,11 @@ export default {
       required: false,
       default: null,
     },
+    subgroup: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   fields: [
     {
@@ -76,7 +81,13 @@ export default {
       if (this.isTailwind) {
         return COMPILED_TAILWIND_TOKENS;
       }
-      return this.group ? COMPILED_TOKENS[this.group] : COMPILED_TOKENS;
+      if (this.group && this.subgroup) {
+        return COMPILED_TOKENS[this.group][this.subgroup];
+      }
+      if (this.group) {
+        return COMPILED_TOKENS[this.group];
+      }
+      return COMPILED_TOKENS;
     },
   },
   watch: {
