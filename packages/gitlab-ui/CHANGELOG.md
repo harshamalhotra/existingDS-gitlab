@@ -1,5 +1,21 @@
 # @gitlab/ui
 
+## 122.9.0
+
+### Minor Changes
+
+- dcc09da: Define border-radius design tokens
+
+  Adds constant border radius design tokens
+  Updates Tailwind defaults with constant border radius design tokens
+  Adds semantic border radius design for action and control
+  Adds control border radius to form inputs and select
+  Adds context border radius design tokens for components
+
+### Patch Changes
+
+- 0c2e415: Fix truncated dashboard panel title icon
+
 ## 122.8.0
 
 ### Minor Changes
