@@ -24,12 +24,11 @@ import {
   dropdownPlacements,
   dropdownVariantOptions,
 } from '../../../../utils/constants';
-import GlBaseDropdown, { BASE_DROPDOWN_CLASS } from '../base_dropdown/base_dropdown.vue';
+import GlBaseDropdown from '../base_dropdown/base_dropdown.vue';
 import GlDisclosureDropdownItem, { ITEM_CLASS } from './disclosure_dropdown_item.vue';
 import GlDisclosureDropdownGroup from './disclosure_dropdown_group.vue';
 import { itemsValidator, isItem, hasOnlyListItems } from './utils';
 
-export const DROPDOWN_SELECTOR = `.${BASE_DROPDOWN_CLASS}`;
 export const ITEM_SELECTOR = `.${ITEM_CLASS}`;
 
 export default {
@@ -348,9 +347,7 @@ export default {
       if (
         this.autoClose &&
         e.target.closest(ITEM_SELECTOR) &&
-        (e.target.closest(DROPDOWN_SELECTOR) === this.$refs.baseDropdown ||
-          e.target.closest('.gl-new-dropdown-container') ===
-            this.$refs.baseDropdown.$refs.dropdownContainer)
+        this.$refs.baseDropdown.containsElement(e.target)
       ) {
         this.closeAndFocus();
       }

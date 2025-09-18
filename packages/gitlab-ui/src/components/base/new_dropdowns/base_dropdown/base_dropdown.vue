@@ -41,10 +41,12 @@ import GlIcon from '../../icon/icon.vue';
 import DropdownContainer from './dropdown_container';
 import { ARROW_X_MINIMUM, DEFAULT_OFFSET, FIXED_WIDTH_CLASS } from './constants';
 
-export const BASE_DROPDOWN_CLASS = 'gl-new-dropdown';
+const BASE_DROPDOWN_CLASS = 'gl-new-dropdown';
+const DROPDOWN_CONTAINER_CLASS = 'gl-new-dropdown-container';
 
 export default {
   name: 'BaseDropdown',
+  expose: ['open', 'close', 'closeAndFocus', 'containsElement'],
   BASE_DROPDOWN_CLASS,
   components: {
     DropdownContainer,
@@ -564,6 +566,12 @@ export default {
       const scrollableAreaBoundingBox = scrollableArea.getBoundingClientRect();
       this.nonScrollableContentHeight =
         floatingElementBoundingBox.height - scrollableAreaBoundingBox.height;
+    },
+    containsElement(element) {
+      return (
+        element.closest(`.${BASE_DROPDOWN_CLASS}`) === this.$el ||
+        element.closest(`.${DROPDOWN_CONTAINER_CLASS}`) === this.$refs.dropdownContainer
+      );
     },
   },
 };
