@@ -151,7 +151,7 @@
     @error "#{$name} is not a valid breakpoint for this @container query.";
   }
   @if $min != 0 {
-    @container #{$containerName} (min-width: #{$min}) {
+    @container #{$containerName} (width >= #{$min}) {
       @if & {
         :where(html.with-gl-container-queries) & {
           @content
@@ -164,7 +164,7 @@
       }
     }
     @if $includeMQFallback {
-      @media (min-width: $min) {
+      @media (width >= $min) {
         @if & {
           :where(html:not(.with-gl-container-queries)) & {
             @content;
