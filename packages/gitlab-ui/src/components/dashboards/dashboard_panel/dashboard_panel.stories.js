@@ -381,6 +381,18 @@ WithLongTitle.args = {
     'Very long title that will be truncated and the tooltip will be displayed to reveal the full text.',
 };
 
+export const WithLongTitleAndTitlePopover = PopoverTemplate.bind({});
+WithLongTitleAndTitlePopover.args = {
+  ...Default.args,
+  containerClass: 'gl-max-w-48',
+  title:
+    'Very long title that will be truncated and the tooltip will be displayed to reveal the full text.',
+  titlePopover: {
+    description: 'Find out %{linkStart}more%{linkEnd}',
+    descriptionLink: 'http://test.com',
+  },
+};
+
 export const WithAlertMessage = (args, { argTypes }) => ({
   components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
   props: Object.keys(argTypes),
