@@ -243,6 +243,19 @@ export const GL_COLOR_BRAND_GRAY_03 = '#74717a';
 export const GL_COLOR_BRAND_GRAY_04 = '#45424d';
 export const GL_COLOR_BRAND_GRAY_05 = '#2b2838';
 export const GL_COLOR_BRAND_PINK_01G = '#ffb9c9';
+export const GL_FONT_FAMILY_REGULAR =
+  "var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'";
+export const GL_FONT_FAMILY_MONOSPACE =
+  "var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace";
+export const GL_FONT_SIZE_XS = '0.625rem';
+export const GL_FONT_SIZE_SM = '0.75rem';
+export const GL_FONT_SIZE_BASE = '0.875rem';
+export const GL_FONT_SIZE_LG = '1rem';
+export const GL_FONT_WEIGHT_100 = '100';
+export const GL_FONT_WEIGHT_300 = '300';
+export const GL_FONT_WEIGHT_NORMAL = '400';
+export const GL_FONT_WEIGHT_SEMIBOLD = '500';
+export const GL_FONT_WEIGHT_BOLD = '600';
 export const GL_LINE_HEIGHT_12 = '0.75rem';
 export const GL_LINE_HEIGHT_16 = '1rem';
 export const GL_LINE_HEIGHT_20 = '1.25rem';

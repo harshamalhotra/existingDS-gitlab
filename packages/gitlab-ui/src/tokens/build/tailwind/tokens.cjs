@@ -420,6 +420,37 @@ const boxShadow = {
   md: 'var(--gl-shadow-md)',
   lg: 'var(--gl-shadow-lg)',
 };
+const lineHeight = {
+  12: 'var(--gl-line-height-12, 0.75rem)',
+  16: 'var(--gl-line-height-16, 1rem)',
+  20: 'var(--gl-line-height-20, 1.25rem)',
+  24: 'var(--gl-line-height-24, 1.5rem)',
+  28: 'var(--gl-line-height-28, 1.75rem)',
+  32: 'var(--gl-line-height-32, 2rem)',
+  36: 'var(--gl-line-height-36, 2.25rem)',
+  42: 'var(--gl-line-height-42, 2.625rem)',
+  44: 'var(--gl-line-height-44, 2.75rem)',
+  52: 'var(--gl-line-height-52, 3.25rem)',
+};
+const fontFamily = {
+  regular:
+    "var(--gl-font-family-regular, var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji')",
+  monospace:
+    "var(--gl-font-family-monospace, var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace)",
+};
+const fontSize = {
+  xs: 'var(--gl-font-size-xs, 0.625rem)',
+  sm: 'var(--gl-font-size-sm, 0.75rem)',
+  base: 'var(--gl-font-size-base, 0.875rem)',
+  lg: 'var(--gl-font-size-lg, 1rem)',
+};
+const fontWeight = {
+  100: 'var(--gl-font-weight-100, 100)',
+  300: 'var(--gl-font-weight-300, 300)',
+  normal: 'var(--gl-font-weight-normal, 400)',
+  semibold: 'var(--gl-font-weight-semibold, 500)',
+  bold: 'var(--gl-font-weight-bold, 600)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -504,4 +535,8 @@ module.exports = {
   opacity,
   zIndex: zindexes,
   boxShadow,
+  lineHeight,
+  fontFamily,
+  fontSize,
+  fontWeight,
 };

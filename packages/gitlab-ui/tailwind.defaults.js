@@ -13,6 +13,10 @@ const {
   opacity,
   zIndex,
   boxShadow,
+  lineHeight,
+  fontFamily,
+  fontSize,
+  fontWeight,
 } = require('./src/tokens/build/tailwind/tokens.cjs');
 
 const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
@@ -526,15 +530,9 @@ module.exports = {
       ],
     },
     fill,
-    fontFamily: {
-      regular:
-        'var(--default-regular-font, "GitLab Sans"), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-    },
+    fontFamily,
     fontSize: {
-      xs: '0.625rem',
-      sm: '0.75rem',
-      base: '0.875rem',
-      lg: '1rem',
+      ...fontSize,
       'size-h-display': '1.75rem',
       'size-h1': '1.4375rem',
       'size-h2': '1.1875rem',
@@ -542,24 +540,13 @@ module.exports = {
       'size-h2-xl': '1.4375rem',
       'size-reset': 'inherit',
     },
-    fontWeight: {
-      100: 100,
-      300: 300,
-      normal: 400,
-      semibold: 500,
-      bold: 600,
-    },
+    fontWeight,
     lineHeight: {
       reset: 'inherit',
       0: '0',
       1: '1',
       normal: '1rem',
-      20: '1.25rem',
-      24: '1.5rem',
-      28: '1.75rem',
-      32: '2rem',
-      36: '2.25rem',
-      42: '2.625rem',
+      ...lineHeight,
     },
     opacity,
     outlineColor,

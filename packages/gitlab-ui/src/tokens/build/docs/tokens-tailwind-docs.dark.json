@@ -41586,5 +41586,549 @@
       ],
       "cssWithValue": "var(--gl-shadow-lg)"
     }
+  },
+  "lineHeight": {
+    "12": {
+      "key": "{line-height.12}",
+      "$value": "0.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.12}"
+      },
+      "name": "LINE_HEIGHT_12",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "12"
+      ],
+      "cssWithValue": "var(--gl-line-height-12, 0.75rem)"
+    },
+    "16": {
+      "key": "{line-height.16}",
+      "$value": "1rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.16}"
+      },
+      "name": "LINE_HEIGHT_16",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "16"
+      ],
+      "cssWithValue": "var(--gl-line-height-16, 1rem)"
+    },
+    "20": {
+      "key": "{line-height.20}",
+      "$value": "1.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1.25rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.20}"
+      },
+      "name": "LINE_HEIGHT_20",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "20"
+      ],
+      "cssWithValue": "var(--gl-line-height-20, 1.25rem)"
+    },
+    "24": {
+      "key": "{line-height.24}",
+      "$value": "1.5rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1.5rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.24}"
+      },
+      "name": "LINE_HEIGHT_24",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "24"
+      ],
+      "cssWithValue": "var(--gl-line-height-24, 1.5rem)"
+    },
+    "28": {
+      "key": "{line-height.28}",
+      "$value": "1.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1.75rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.28}"
+      },
+      "name": "LINE_HEIGHT_28",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "28"
+      ],
+      "cssWithValue": "var(--gl-line-height-28, 1.75rem)"
+    },
+    "32": {
+      "key": "{line-height.32}",
+      "$value": "2rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "2rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.32}"
+      },
+      "name": "LINE_HEIGHT_32",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "32"
+      ],
+      "cssWithValue": "var(--gl-line-height-32, 2rem)"
+    },
+    "36": {
+      "key": "{line-height.36}",
+      "$value": "2.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "2.25rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.36}"
+      },
+      "name": "LINE_HEIGHT_36",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "36"
+      ],
+      "cssWithValue": "var(--gl-line-height-36, 2.25rem)"
+    },
+    "42": {
+      "key": "{line-height.42}",
+      "$value": "2.625rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "2.625rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.42}"
+      },
+      "name": "LINE_HEIGHT_42",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "42"
+      ],
+      "cssWithValue": "var(--gl-line-height-42, 2.625rem)"
+    },
+    "44": {
+      "key": "{line-height.44}",
+      "$value": "2.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "2.75rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.44}"
+      },
+      "name": "LINE_HEIGHT_44",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "44"
+      ],
+      "cssWithValue": "var(--gl-line-height-44, 2.75rem)"
+    },
+    "52": {
+      "key": "{line-height.52}",
+      "$value": "3.25rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "3.25rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{line-height.52}"
+      },
+      "name": "LINE_HEIGHT_52",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "52"
+      ],
+      "cssWithValue": "var(--gl-line-height-52, 3.25rem)"
+    }
+  },
+  "fontFamily": {
+    "regular": {
+      "key": "{font.family.regular}",
+      "$value": "var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+      "$type": "fontFamily",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+        "$type": "fontFamily",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.family.regular}"
+      },
+      "name": "FONT_FAMILY_REGULAR",
+      "attributes": {},
+      "path": [
+        "font",
+        "family",
+        "regular"
+      ],
+      "cssWithValue": "var(--gl-font-family-regular, var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji')"
+    },
+    "monospace": {
+      "key": "{font.family.monospace}",
+      "$value": "var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace",
+      "$type": "fontFamily",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace",
+        "$type": "fontFamily",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.family.monospace}"
+      },
+      "name": "FONT_FAMILY_MONOSPACE",
+      "attributes": {},
+      "path": [
+        "font",
+        "family",
+        "monospace"
+      ],
+      "cssWithValue": "var(--gl-font-family-monospace, var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace)"
+    }
+  },
+  "fontSize": {
+    "xs": {
+      "key": "{font.size.xs}",
+      "$value": "0.625rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "0.625rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.size.xs}"
+      },
+      "name": "FONT_SIZE_XS",
+      "attributes": {},
+      "path": [
+        "font",
+        "size",
+        "xs"
+      ],
+      "cssWithValue": "var(--gl-font-size-xs, 0.625rem)"
+    },
+    "sm": {
+      "key": "{font.size.sm}",
+      "$value": "0.75rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.size.sm}"
+      },
+      "name": "FONT_SIZE_SM",
+      "attributes": {},
+      "path": [
+        "font",
+        "size",
+        "sm"
+      ],
+      "cssWithValue": "var(--gl-font-size-sm, 0.75rem)"
+    },
+    "base": {
+      "key": "{font.size.base}",
+      "$value": "0.875rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.size.base}"
+      },
+      "name": "FONT_SIZE_BASE",
+      "attributes": {},
+      "path": [
+        "font",
+        "size",
+        "base"
+      ],
+      "cssWithValue": "var(--gl-font-size-base, 0.875rem)"
+    },
+    "lg": {
+      "key": "{font.size.lg}",
+      "$value": "1rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.size.lg}"
+      },
+      "name": "FONT_SIZE_LG",
+      "attributes": {},
+      "path": [
+        "font",
+        "size",
+        "lg"
+      ],
+      "cssWithValue": "var(--gl-font-size-lg, 1rem)"
+    }
+  },
+  "fontWeight": {
+    "100": {
+      "key": "{font.weight.100}",
+      "$value": "100",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "100",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.weight.100}"
+      },
+      "name": "FONT_WEIGHT_100",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "100"
+      ],
+      "cssWithValue": "var(--gl-font-weight-100, 100)"
+    },
+    "300": {
+      "key": "{font.weight.300}",
+      "$value": "300",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "300",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.weight.300}"
+      },
+      "name": "FONT_WEIGHT_300",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "300"
+      ],
+      "cssWithValue": "var(--gl-font-weight-300, 300)"
+    },
+    "normal": {
+      "key": "{font.weight.normal}",
+      "$value": "400",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "400",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.weight.normal}"
+      },
+      "name": "FONT_WEIGHT_NORMAL",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "normal"
+      ],
+      "cssWithValue": "var(--gl-font-weight-normal, 400)"
+    },
+    "semibold": {
+      "key": "{font.weight.semibold}",
+      "$value": "500",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "500",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.weight.semibold}"
+      },
+      "name": "FONT_WEIGHT_SEMIBOLD",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "semibold"
+      ],
+      "cssWithValue": "var(--gl-font-weight-semibold, 500)"
+    },
+    "bold": {
+      "key": "{font.weight.bold}",
+      "$value": "600",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "600",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.weight.bold}"
+      },
+      "name": "FONT_WEIGHT_BOLD",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "bold"
+      ],
+      "cssWithValue": "var(--gl-font-weight-bold, 600)"
+    }
   }
 }
