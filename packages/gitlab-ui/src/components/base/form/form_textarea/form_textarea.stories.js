@@ -65,7 +65,7 @@ WithCharacterCountAndClasses.args = generateProps({
   value: '',
   placeholder: 'type longer text to see over limit text',
   characterCountLimit: 100,
-  textareaClasses: 'gl-rounded-lg gl-border-2',
+  textareaClasses: '!gl-rounded-lg gl-border-2',
 });
 WithCharacterCountAndClasses.parameters = {
   // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
