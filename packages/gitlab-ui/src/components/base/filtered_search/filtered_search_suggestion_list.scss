@@ -19,7 +19,7 @@
   .gl-filtered-search-suggestion,
   .gl-filtered-search-suggestion > a,
   .gl-filtered-search-suggestion > button {
-    border-radius: $gl-border-radius-base !important;
+    @apply gl-rounded-default #{!important};
   }
 
   .gl-dropdown-divider {
