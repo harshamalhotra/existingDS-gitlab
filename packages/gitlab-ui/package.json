@@ -64,9 +64,7 @@
     "test:visual": "./bin/run-visual-tests.sh 'test-storybook --browsers firefox --verbose --url http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001}'",
     "test:visual:update": "./bin/run-visual-tests.sh 'test-storybook -u --browsers firefox --verbose --url http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001}'",
     "test:visual:internal": "NODE_ENV=test IS_VISUAL_TEST=true start-test storybook:run http-get://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001}/iframe.html",
-    "translations:collect": "make translations.js",
-    "tailwind-config-viewer:start": "tailwind-config-viewer -o",
-    "tailwind-config-viewer:export": "tailwind-config-viewer export ./tailwind-config-viewer-static"
+    "translations:collect": "make translations.js"
   },
   "dependencies": {
     "@floating-ui/dom": "1.7.4",
@@ -173,7 +171,6 @@
     "storybook-dark-mode": "4.0.2",
     "style-dictionary": "^5.0.4",
     "style-loader": "^4",
-    "tailwind-config-viewer": "2.0.4",
     "tailwindcss": "3.4.17",
     "vue": "2.7.16",
     "vue-docgen-loader": "1.5.1",
