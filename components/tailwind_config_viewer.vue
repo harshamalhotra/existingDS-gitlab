@@ -181,7 +181,7 @@ export default {
       <grid columns="4">
         <li v-for="item in opacity" :key="item.key">
           <div
-            class="dark:gl-neutral-0 gl-h-8 gl-rounded-default gl-bg-neutral-1000"
+            class="gl-h-8 gl-rounded-default gl-bg-neutral-1000 dark:gl-bg-neutral-0"
             :style="{ opacity: item.value }"
           ></div>
           <tailwind-class-value :prefix="prefix" property="opacity" :item="item" />
