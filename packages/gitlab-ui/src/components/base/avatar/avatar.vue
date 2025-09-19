@@ -3,22 +3,32 @@
 import isNumber from 'lodash/isNumber';
 import { avatarShapeOptions, avatarSizeOptions } from '../../../utils/constants';
 import { getAvatarChar } from '../../../utils/string_utils';
+import { avatarSizeValidator } from './utils';
 
 const IDENTICON_BG_COUNT = 7;
 
 export default {
   name: 'GlAvatar',
   props: {
+    /**
+     * ID of the entity, used to generate a unique placeholder avatar.
+     */
     entityId: {
       type: Number,
       required: false,
       default: 0,
     },
+    /**
+     * Name of the entity, used to generate a unique placeholder avatar.
+     */
     entityName: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Avatar image src.
+     */
     src: {
       type: String,
       required: false,
@@ -32,32 +42,28 @@ export default {
       required: false,
       default: false,
     },
+    /**
+     * Alt text for the img tag.
+     */
     alt: {
       type: String,
       required: false,
       default: 'avatar',
     },
+    /**
+     * Size of the avatar.
+     * Available sizes are 96, 64, 48, 32, 24, 16.
+     */
     size: {
       type: [Number, Object],
       required: false,
       default: avatarSizeOptions[1],
-      validator: (value) => {
-        const sizes = isNumber(value) ? [value] : Object.values(value);
-
-        const areValidSizes = sizes.every((size) => {
-          const isValidSize = avatarSizeOptions.includes(size);
-
-          if (!isValidSize) {
-            /* eslint-disable-next-line no-console */
-            console.error(`Avatar size should be one of [${avatarSizeOptions}], received: ${size}`);
-          }
-
-          return isValidSize;
-        });
-
-        return areValidSizes;
-      },
+      validator: avatarSizeValidator,
     },
+    /**
+     * Shape of the avatar.
+     * Available shapes are `circle` and `rect`.
+     */
     shape: {
       type: String,
       required: false,

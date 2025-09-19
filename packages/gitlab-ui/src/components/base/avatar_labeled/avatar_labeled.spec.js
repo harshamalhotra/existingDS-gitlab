@@ -134,4 +134,19 @@ describe('avatar labeled', () => {
       expect(wrapper.findAllComponents(GlLink).exists()).toBe(false);
     });
   });
+
+  it('passes avatar props to Avatar component', () => {
+    const avatarProps = {
+      entityId: 1,
+      entityName: 'foo',
+      src: 'foo.jpg',
+      fallbackOnError: true,
+      size: 48,
+      shape: 'circle',
+    };
+
+    buildWrapper(avatarProps);
+
+    expect(wrapper.findComponent(Avatar).props()).toMatchObject(avatarProps);
+  });
 });
