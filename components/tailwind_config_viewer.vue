@@ -9,7 +9,6 @@ export default {
   data() {
     return {
       prefix: tailwindDefaults.prefix,
-      colors: this.flattenThemeObject(tailwindDefaults.theme.colors),
       backgroundColor: this.flattenThemeObject(tailwindDefaults.theme.backgroundColor),
       borderColor: this.flattenThemeObject(tailwindDefaults.theme.borderColor),
       textColor: this.flattenThemeObject(tailwindDefaults.theme.textColor),
