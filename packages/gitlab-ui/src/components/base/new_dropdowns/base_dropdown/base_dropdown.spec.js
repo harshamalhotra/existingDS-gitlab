@@ -34,7 +34,10 @@ const MountingPortalStub = {
 describe('base dropdown', () => {
   let wrapper;
 
-  const buildWrapper = (propsData, { component = GlBaseDropdown, slots = {}, ...options } = {}) => {
+  const buildWrapper = (
+    propsData,
+    { component = GlBaseDropdown, slots = {}, stubs = {}, ...options } = {},
+  ) => {
     wrapper = mount(component, {
       propsData: {
         toggleId: 'dropdown-toggle-btn-1',
@@ -46,6 +49,7 @@ describe('base dropdown', () => {
       },
       stubs: {
         MountingPortal: MountingPortalStub,
+        ...stubs,
       },
       attachTo: document.body,
       ...options,
@@ -643,6 +647,38 @@ describe('base dropdown', () => {
     it('does not apply default aria-labelledby', () => {
       buildWrapper();
       expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(undefined);
+    });
+  });
+
+  describe('containsElement', () => {
+    it('returns `true` if the panel contains the given DOM element', () => {
+      buildWrapper();
+      const el = wrapper.vm.$el.querySelector(`.${GL_DROPDOWN_CONTENTS_CLASS}`);
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `true` if the component contains the given DOM element', () => {
+      buildWrapper();
+      const el = wrapper.vm.$refs.toggle.$el;
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `true` if the panel contains the given DOM element and the dropdown is fixed-positioned', async () => {
+      buildWrapper({ positioningStrategy: 'fixed' }, { stubs: { MountingPortal: false } });
+      await nextTick();
+      const el = document.querySelector(`.${GL_DROPDOWN_CONTENTS_CLASS}`);
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `false` if the given DOM element is outside of the component', () => {
+      buildWrapper();
+      const el = document.createElement('div');
+      document.body.appendChild(el);
+
+      expect(wrapper.vm.containsElement(el)).toBe(false);
     });
   });
 });

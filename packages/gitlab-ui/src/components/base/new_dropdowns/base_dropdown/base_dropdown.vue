@@ -48,6 +48,7 @@ export default {
   name: 'BaseDropdown',
   expose: ['open', 'close', 'closeAndFocus', 'containsElement'],
   BASE_DROPDOWN_CLASS,
+  DROPDOWN_CONTAINER_CLASS,
   components: {
     DropdownContainer,
     GlButton,
@@ -611,7 +612,7 @@ export default {
       <div
         ref="dropdownContainer"
         v-outside.click.focusin="handleClickOutside"
-        class="gl-new-dropdown-container"
+        :class="$options.DROPDOWN_CONTAINER_CLASS"
       >
         <div
           :id="baseDropdownId"
