@@ -194,10 +194,6 @@
                 "path": "design-tokens-technical-implementation"
               },
               {
-                "title": "Tailwind classes",
-                "path": "design-tokens-tailwind"
-              },
-              {
                 "title": "All design tokens",
                 "path": "design-tokens-directory"
               }
@@ -286,6 +282,10 @@
                 "path": "illustration-directory"
               }
             ]
+          },
+          {
+            "title": "Tailwind utilities",
+            "path": "tailwind-utilities"
           }
         ]
       },

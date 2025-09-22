@@ -40,6 +40,11 @@ export default {
 
     <section v-if="backgroundColor.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Background Color</h3>
+      <note>
+        See
+        <a href="/product-foundations/layout#content-containers">layout content containers</a> for
+        background color usage.
+      </note>
       <grid columns="4">
         <li v-for="item in backgroundColor" :key="item.key">
           <div class="gl-h-8 gl-rounded-default" :style="{ 'background-color': item.value }"></div>
@@ -50,6 +55,11 @@ export default {
 
     <section v-if="textColor.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Text Color</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-fundamentals#text-color">typography fundamentals</a> for
+        text color usage.
+      </note>
       <grid columns="4">
         <li v-for="item in textColor" :key="item.key">
           <div class="gl-text-[2rem] gl-leading-1" :style="{ color: item.value }">Aa</div>
@@ -62,6 +72,11 @@ export default {
 
     <section v-if="borderColor.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Border Color</h3>
+      <note>
+        See
+        <a href="/product-foundations/layout#borders-and-dividers">layout borders and dividers</a>
+        for border color usage.
+      </note>
       <grid columns="4">
         <li v-for="item in borderColor" :key="item.key">
           <div
@@ -90,6 +105,10 @@ export default {
 
     <section v-if="spacing.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Padding</h3>
+      <note>
+        See
+        <a href="/product-foundations/spacing">spacing</a> for padding usage.
+      </note>
       <grid columns="1">
         <li v-for="item in spacing" :key="item.key">
           <div
@@ -103,6 +122,10 @@ export default {
 
     <section v-if="spacing.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Margin</h3>
+      <note>
+        See
+        <a href="/product-foundations/spacing">spacing</a> for margin usage.
+      </note>
       <grid columns="1">
         <li v-for="item in spacing" :key="item.key">
           <div
@@ -118,6 +141,11 @@ export default {
 
     <section v-if="fontFamily.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Font Family</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-fundamentals#typefaces">typography fundamentals</a> for
+        font-family usage.
+      </note>
       <grid columns="1">
         <li v-for="item in fontFamily" :key="item.key">
           <div class="gl-leading-1" :style="{ 'font-family': item.value }">
@@ -130,6 +158,11 @@ export default {
 
     <section v-if="fontSize.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Font Size</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-fundamentals#type-scales">typography fundamentals</a> for
+        font-size usage.
+      </note>
       <grid columns="1">
         <li v-for="item in fontSize" :key="item.key">
           <div class="gl-leading-1" :style="{ 'font-size': item.value }">
@@ -142,6 +175,11 @@ export default {
 
     <section v-if="fontWeight.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Font Weight</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-fundamentals#font-weight">typography fundamentals</a> for
+        font-weight usage.
+      </note>
       <grid columns="1">
         <li v-for="item in fontWeight" :key="item.key">
           <div :style="{ 'font-weight': item.value }">
@@ -154,6 +192,11 @@ export default {
 
     <section v-if="lineHeight.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Line Height</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-fundamentals#line-height">typography fundamentals</a> for
+        line-height usage.
+      </note>
       <grid columns="1">
         <li v-for="item in lineHeight" :key="item.key">
           <div :style="{ 'line-height': item.value }">
@@ -167,6 +210,10 @@ export default {
 
     <section v-if="boxShadow.length" class="gl-mb-7">
       <h2 class="gl-heading-2">Box Shadow</h2>
+      <note>
+        See
+        <a href="/product-foundations/elevation">elevation</a> for box shadow usage.
+      </note>
       <grid columns="4">
         <li v-for="item in boxShadow" :key="item.key">
           <div class="gl-h-8 gl-rounded-default" :style="{ 'box-shadow': item.value }"></div>
