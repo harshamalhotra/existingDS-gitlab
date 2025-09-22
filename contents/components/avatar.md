@@ -3,6 +3,7 @@ name: Avatar
 description: An avatar represents a unique entity, like a person, group, or project.
 docs: in-progress
 related:
+  - avatar-group
   - badge
   - breadcrumb
 ---
@@ -12,10 +13,6 @@ related:
 <story-viewer component="base-avatar" story="image" title="Avatar image"></story-viewer>
 
 <story-viewer component="base-avatar-labeled" title="Labeled avatar"></story-viewer>
-
-<story-viewer component="base-avatar-avatars-inline" title="Group" :args-collapsed="false"></story-viewer>
-
-<story-viewer component="base-avatar-avatars-inline" title="Stack"></story-viewer>
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-2&mode=design)
 
@@ -35,6 +32,7 @@ related:
 ### When not to use
 
 - An avatar only represents a user, project, or group. Consider an [icon](/product-foundations/iconography) to visually represent interactive elements or other metaphors.
+- For multiple user avatars, use the [avatar group](/components/avatar-group) component instead.
 
 ### Variants
 
@@ -53,27 +51,6 @@ related:
   - A square avatar uses a text fallback (identicon) where the text character is an abbreviation of the object it represents.
 - A text label identifies the subject of the avatar.
 - A text sub-label provides content or metadata for the label.
-
-### Multiple avatars
-
-The following only applies to circle avatars.
-
-#### Group
-
-- A collection of avatars without labels can be grouped.
-- When the group wraps to more than one line use a text action to show and hide additional avatars.
-  - Use "+{#} more" to expand the group. Replace "#" with the number of avatars that aren't visible.
-  - Use "- show less" to collapse the group.
-
-<figure-img alt="Two avatar group examples, one collapsed with an action to show more, and the other expanded with an action to show less." label="Collapsed and expanded avatar group" src="/img/avatar-group.svg"></figure-img>
-
-#### Stack
-
-- Avatars form a horizontal stack when space is especially limited.
-- The number of avatars in a stack is variable, but should never cause wrapping.
-- Use a [badge](/components/badge) after the last avatar to display the number of avatars that aren't visible. It can optionally be an action that leads a user to more context for all associated avatars. The badge and avatar sizes should be the same.
-
-<figure-img alt="Three avatars slightly overlap each other in a horizontal row. A badge at the end includes the number of additional avatars that aren't visible" label="A horizontal avatar stack" src="/img/avatar-stack.svg"></figure-img>
 
 ### Accessibility
 
@@ -100,59 +77,10 @@ properties as the avatar component to modify the avatar’s shape and size.
 #### Using the component
 
 ```html
-<gl-avatar-labeled
-  :shape="shape"
-  :size="size"
-  :src="src"
-  :label="label"
-  :sub-label="subLabel"
-/>
+<gl-avatar-labeled :shape="shape" :size="size" :src="src" :label="label" :sub-label="subLabel" />
 ```
 
 <story-viewer component="base-avatar-labeled" title="GlAvatarLabelled" view-mode="docs"></story-viewer>
-
-### GlAvatarInline
-
-Use `<avatars-inline />` to display multiple avatars organized in a single row.
-
-#### Basic usage
-
-The `avatars` property accepts an array of objects that contains the avatar properties. By default,
-`<avatars-inline />` expects each object contained in the array to have the same shape as the
-properties of the `<avatar />` component. You can customize the display of each avatar by
-overriding the default slot:
-
-```html
-<gl-avatars-inline :avatars="avatars">
-  <template #avatar="{ avatar }">
-    <gl-avatar-link v-gl-tooltip target="blank" :href="avatar.href" :title="avatar.tooltip">
-      <gl-avatar :src="avatar.src" :size="32" />
-    </gl-avatar-link>
-  </template>
-</gl-avatars-inline>
-```
-
-In the example above, the avatars displayed inside `<avatars-inline />` are links pointing to a URL
-stored in each avatar object. Each avatar also displays a tooltip. If you override
-`<inline-avatars />` default display, you can pass an array of objects with any desired shape to
-the `avatars` property.
-
-#### Collapsing
-
-When the `collapse` property value is `true` and the `maxVisible` property value is a number less
-than the length of the `avatars` property array, `<avatars-inline>` will hide the overflown avatars
-and display a badge instead.
-
-#### Badge description in screen readers
-
-The `badgeSrOnlyText` property provides a meaningful description of the badge that appears
-when avatars are collapsed for screen reader users.
-
-#### Supported sizes
-
-`<avatars-inline>` supports avatars with `16`, `24`, or `32` size.
-
-<story-viewer component="base-avatar-avatars-inline" title="GlAvatarInline" view-mode="docs"></story-viewer>
 
 ### GlAvatarLink
 
