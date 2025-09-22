@@ -1,4 +1,5 @@
-import emptyServiceDeskCallout from '@gitlab/svgs/dist/illustrations/service-desk-sm.svg';
+import customIllustrationPath from '@gitlab/svgs/dist/illustrations/status/status-success-sm.svg';
+import illustrationsSpriteInfo from '@gitlab/svgs/dist/illustrations.json';
 import GlButton from '../button/button.vue';
 import { bannerVariants } from '../../../utils/constants';
 import GlBanner from './banner.vue';
@@ -10,6 +11,7 @@ const template = `
       :button-text="buttonText"
       :button-link="buttonLink"
       :svg-path="svgPath"
+      :illustration-name="illustrationName"
       :variant="variant"
     >
       <p>GitLab Service Desk is a simple way to allow people to create issues in your GitLab instance without needing their own user account. It provides a unique email address for end users to create issues in a project, and replies can be sent either though the GitLab interface or by email. End users will only see the thread though email.</p>
@@ -21,7 +23,8 @@ const generateProps = ({
   buttonAttributes = { target: '_blank' },
   buttonText = 'Upgrade your plan',
   buttonLink = 'https://gitlab.com',
-  svgPath = emptyServiceDeskCallout,
+  svgPath = customIllustrationPath,
+  illustrationName = 'service-desk-sm',
   variant = GlBanner.props.variant.default,
 } = {}) => ({
   title,
@@ -29,6 +32,7 @@ const generateProps = ({
   buttonText,
   buttonLink,
   svgPath,
+  illustrationName,
   variant,
 });
 
@@ -45,11 +49,18 @@ Default.args = generateProps();
 export const NoImage = Template.bind({});
 NoImage.args = generateProps({
   svgPath: null,
+  illustrationName: null,
+});
+
+export const CustomIllustration = Template.bind({});
+CustomIllustration.args = generateProps({
+  svgPath: customIllustrationPath,
+  illustrationName: null,
 });
 
 export const Introduction = Template.bind({});
 Introduction.args = generateProps({
-  svgPath: emptyServiceDeskCallout,
+  illustrationName: 'service-desk-sm',
   variant: bannerVariants[1],
 });
 
@@ -66,6 +77,7 @@ export const WithActions = (args, { argTypes }) => ({
       :button-text="buttonText"
       :button-link="buttonLink"
       :svg-path="svgPath"
+      :illustration-name="illustrationName"
       :variant="variant"
     >
       <p>There should be a primary button and a link button below this text.</p>
@@ -78,6 +90,7 @@ WithActions.args = generateProps({
   title: 'Button with actions banner',
   buttonText: 'Primary Button',
   svgPath: null,
+  illustrationName: null,
 });
 
 export default {
@@ -98,6 +111,10 @@ export default {
     },
     svgPath: {
       control: 'text',
+    },
+    illustrationName: {
+      options: illustrationsSpriteInfo.icons.map((obj) => obj.name),
+      control: 'select',
     },
   },
 };

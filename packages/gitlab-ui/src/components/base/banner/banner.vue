@@ -4,6 +4,7 @@ import { translate } from '../../../utils/i18n';
 import CloseButton from '../../shared_components/close_button/close_button.vue';
 import GlButton from '../button/button.vue';
 import GlCard from '../card/card.vue';
+import GlIllustration from '../illustration/illustration.vue';
 
 export default {
   name: 'GlBanner',
@@ -11,6 +12,7 @@ export default {
     CloseButton,
     GlButton,
     GlCard,
+    GlIllustration,
   },
   props: {
     /**
@@ -39,6 +41,14 @@ export default {
      * Link for the submit button.
      */
     buttonLink: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    /**
+     * The illustration's name.
+     */
+    illustrationName: {
       type: String,
       required: false,
       default: null,
@@ -107,8 +117,9 @@ export default {
     }"
     body-class="gl-flex !gl-p-0"
   >
-    <div v-if="svgPath" class="gl-banner-illustration">
-      <img :src="svgPath" alt="" />
+    <div v-if="svgPath || illustrationName" class="gl-banner-illustration">
+      <gl-illustration v-if="illustrationName" :name="illustrationName" />
+      <img v-else-if="svgPath" :src="svgPath" alt="" />
     </div>
     <div class="gl-banner-content">
       <h2 class="gl-banner-title">{{ title }}</h2>
