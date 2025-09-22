@@ -298,8 +298,17 @@
             "path": "alert"
           },
           {
-            "title": "Avatar",
-            "path": "avatar"
+            "title": "Avatars",
+            "items": [
+              {
+                "title": "Avatar",
+                "path": "avatar"
+              },
+              {
+                "title": "Avatar group",
+                "path": "avatar-group"
+              }
+            ]
           },
           {
             "title": "Badge",
