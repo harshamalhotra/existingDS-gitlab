@@ -54,14 +54,14 @@ exports[`sidebar component renders sidebar properly 1`] = `
               class="gl-flex gl-items-center gl-gap-2"
             >
               <span
-                class="gl-shrink gl-grow"
+                class="gl-min-w-0 gl-flex-1"
               >
                 Second-level item 2
               </span>
                
               <svg
                 aria-hidden="true"
-                class="gl-icon s16 gl-fill-current"
+                class="gl-icon s16 gl-fill-current gl-flex-shrink-0"
                 data-testid="chevron-right-icon"
                 role="img"
               >
@@ -133,14 +133,14 @@ exports[`sidebar component renders sidebar properly 1`] = `
               class="gl-flex gl-items-center gl-gap-2"
             >
               <span
-                class="gl-shrink gl-grow"
+                class="gl-min-w-0 gl-flex-1"
               >
                 Second-level item without path
               </span>
                
               <svg
                 aria-hidden="true"
-                class="gl-icon s16 gl-fill-current"
+                class="gl-icon s16 gl-fill-current gl-flex-shrink-0"
                 data-testid="chevron-right-icon"
                 role="img"
               >
