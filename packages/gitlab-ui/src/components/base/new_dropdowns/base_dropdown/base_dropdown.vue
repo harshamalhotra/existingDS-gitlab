@@ -567,6 +567,13 @@ export default {
       this.nonScrollableContentHeight =
         floatingElementBoundingBox.height - scrollableAreaBoundingBox.height;
     },
+    /**
+     * Public method which returns `true` if the given element is in the DOM tree of this component,
+     * and `false` otherwise.
+     *
+     * Useful for checking whether an event was dispatched against something in this dropdown,
+     * e.g., pressing <kbd>Esc</kbd>.
+     */
     containsElement(element) {
       return (
         element.closest(`.${BASE_DROPDOWN_CLASS}`) === this.$el ||
