@@ -126,6 +126,7 @@ Default.args = {
   borderColorClass: null,
   title: 'Dashboard panel',
   titlePopover: null,
+  titlePopoverClasses: [],
   loading: false,
   loadingDelayed: false,
   loadingDelayedText: 'Still loading...',
@@ -150,6 +151,7 @@ export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
     `
     <template #info-popover-title>Panel Details</template>
     <template #info-popover-content>
+      <div class="gl-min-w-[300px]">
         <p class="gl-mb-3">This panel demonstrates HTML content using both info-popover slots.</p>
         <ul class="gl-mb-3 gl-pl-4">
           <li><strong>HTML formatting</strong> is supported</li>
@@ -160,6 +162,7 @@ export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
           <gl-icon name="information-o" class="gl-text-blue-500 gl-mr-2" />
           <span class="gl-text-sm">Both <code>info-popover-title</code> and <code>info-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
         </div>
+      </div>
     </template>
     <template #body>
       <p class="gl-text-subtle">Your visualization here</p>
@@ -172,6 +175,7 @@ export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
 WithInfoPopoverSlotsContent.args = {
   ...Default.args,
   title: 'Dashboard panel',
+  titlePopoverClasses: ['gl-min-w-[400px]'],
 };
 WithInfoPopoverSlotsContent.parameters = {
   docs: {

@@ -86,6 +86,11 @@ export default {
       required: false,
       default: () => ({}),
     },
+    titlePopoverClasses: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
     /**
      * Set to `true` to show the loading state.
      */
@@ -218,6 +223,7 @@ export default {
               data-testid="panel-title-popover"
               boundary="viewport"
               :target="titlePopoverId"
+              :css-classes="titlePopoverClasses"
             >
               <!-- @slot The title of the info popover. -->
               <template v-if="hasInfoPopoverTitleSlot" #title>
