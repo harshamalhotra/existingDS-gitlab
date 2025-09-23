@@ -93,9 +93,9 @@ export const Default = Template.bind({});
 Default.args = generateProps();
 Default.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
-  const button = canvas.getByRole('textbox');
+  const button = canvas.getByRole('combobox');
   await userEvent.click(button);
-  await waitFor(() => expect(canvas.getByRole('menu')).toBeVisible());
+  await waitFor(() => expect(canvas.getByRole('listbox')).toBeVisible());
 };
 
 export default {
@@ -104,13 +104,7 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({
-      temporarySkipRules: [
-        'aria-allowed-attr',
-        'aria-input-field-name',
-        'aria-required-children',
-        'nested-interactive',
-        'label',
-      ],
+      temporarySkipRules: ['label'],
     }),
     docs: {
       description: {

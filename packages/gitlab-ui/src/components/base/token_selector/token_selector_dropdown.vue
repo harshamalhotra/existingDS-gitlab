@@ -199,10 +199,10 @@ export default {
 <template>
   <div class="dropdown b-dropdown gl-dropdown gl-relative" :class="{ show }">
     <ul
+      :id="componentId"
       ref="dropdownMenu"
-      role="menu"
+      role="listbox"
       class="dropdown-menu gl-absolute"
-      :aria-activedescendant="dropdownItemIdAttribute(focusedDropdownItem)"
       :class="[{ show }, menuClass]"
     >
       <gl-dropdown-item v-if="loading" disabled>
@@ -216,7 +216,9 @@ export default {
         :key="dropdownItem.id"
         :data-dropdown-item-id="dropdownItem.id"
         :active="dropdownItemIsFocused(dropdownItem)"
+        :aria-selected="dropdownItemIsFocused(dropdownItem).toString()"
         active-class="is-focused"
+        role="option"
         tabindex="-1"
         @click="handleDropdownItemClick(dropdownItem)"
       >
