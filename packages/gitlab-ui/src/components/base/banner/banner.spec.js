@@ -1,5 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 import GlButton from '../button/button.vue';
+import GlIllustration from '../illustration/illustration.vue';
 import GlBanner from './banner.vue';
 
 describe('banner component', () => {
@@ -9,6 +10,7 @@ describe('banner component', () => {
     buttonLink: 'http://gitlab.com',
   };
   const svgPath = 'https://about.gitlab.com/images/press/logo/svg/gitlab-icon-rgb.svg';
+  const illustrationName = 'status-success-sm';
   let wrapper;
 
   const createWrapper = ({ props, slots = {} } = {}) => {
@@ -19,6 +21,7 @@ describe('banner component', () => {
   };
 
   const findButton = () => wrapper.findComponent(GlButton);
+  const findIllustration = () => wrapper.findComponent(GlIllustration);
 
   describe('Promotion', () => {
     describe('with only the required props', () => {
@@ -39,6 +42,7 @@ describe('banner component', () => {
 
       it('should not render the illustration', () => {
         expect(wrapper.find('img').exists()).toBe(false);
+        expect(findIllustration().exists()).toBe(false);
       });
 
       it('should emit a `close` event after the close button is clicked', () => {
@@ -55,14 +59,22 @@ describe('banner component', () => {
     });
 
     describe('with image', () => {
-      beforeEach(() => {
+      it('should render GlIllustration component', () => {
+        createWrapper({
+          props: { illustrationName },
+        });
+
+        expect(findIllustration().exists()).toBe(true);
+        expect(wrapper.find('img').exists()).toBe(false);
+      });
+
+      it('should render the custom illustration', () => {
         createWrapper({
           props: { svgPath },
         });
-      });
 
-      it('should render the illustration', () => {
         expect(wrapper.find('img').exists()).toBe(true);
+        expect(findIllustration().exists()).toBe(false);
       });
     });
 
