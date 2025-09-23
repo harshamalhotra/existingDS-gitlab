@@ -27,6 +27,9 @@ describe('GlDashboardPanel', () => {
         GlSprintf,
         GlTruncate,
         GlPopover: {
+          props: {
+            cssClasses: [],
+          },
           template: `<div>
             <slot name="title"></slot>
             <slot></slot>
@@ -424,6 +427,45 @@ describe('GlDashboardPanel', () => {
       it('does not render the prop-based content', () => {
         expect(findPanelTitlePopover().text()).not.toContain('This should not be shown');
         expect(findPanelTitlePopoverLink().exists()).toBe(false);
+      });
+    });
+  });
+
+  describe('titlePopoverClasses prop', () => {
+    describe('when no titlePopoverClasses are provided', () => {
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+            titlePopover: {
+              description: 'This is just information.',
+            },
+          },
+        });
+      });
+
+      it('passes an empty array to the popover css-classes prop', () => {
+        expect(findPanelTitlePopover().props('cssClasses')).toEqual([]);
+      });
+    });
+
+    describe('when titlePopoverClasses are provided', () => {
+      const customClasses = ['custom-popover-class', 'another-class'];
+
+      beforeEach(() => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+            titlePopover: {
+              description: 'This is just information.',
+            },
+            titlePopoverClasses: customClasses,
+          },
+        });
+      });
+
+      it('passes the custom classes to the popover css-classes prop', () => {
+        expect(findPanelTitlePopover().props('cssClasses')).toEqual(customClasses);
       });
     });
   });

@@ -151,17 +151,15 @@ export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
     `
     <template #info-popover-title>Panel Details</template>
     <template #info-popover-content>
-      <div class="gl-min-w-[300px]">
-        <p class="gl-mb-3">This panel demonstrates HTML content using both info-popover slots.</p>
-        <ul class="gl-mb-3 gl-pl-4">
-          <li><strong>HTML formatting</strong> is supported</li>
-          <li><gl-link href="https://design.gitlab.com" target="_blank">External links</gl-link></li>
-          <li>Complex content layouts</li>
-        </ul>
-        <div class="gl-p-3 gl-bg-gray-50 gl-rounded-base">
-          <gl-icon name="information-o" class="gl-text-blue-500 gl-mr-2" />
-          <span class="gl-text-sm">Both <code>info-popover-title</code> and <code>info-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
-        </div>
+      <p class="gl-mb-3">This panel demonstrates HTML content using both info-popover slots.</p>
+      <ul class="gl-mb-3 gl-pl-4">
+        <li><strong>HTML formatting</strong> is supported</li>
+        <li><gl-link href="https://design.gitlab.com" target="_blank">External links</gl-link></li>
+        <li>Complex content layouts</li>
+      </ul>
+      <div class="gl-p-3 gl-bg-gray-50 gl-rounded-base">
+        <gl-icon name="information-o" class="gl-text-blue-500 gl-mr-2" />
+        <span class="gl-text-sm">Both <code>info-popover-title</code> and <code>info-popover-content</code> slots take precedence over the <code>titlePopover</code> prop.</span>
       </div>
     </template>
     <template #body>
@@ -175,7 +173,6 @@ export const WithInfoPopoverSlotsContent = (args, { argTypes }) => ({
 WithInfoPopoverSlotsContent.args = {
   ...Default.args,
   title: 'Dashboard panel',
-  titlePopoverClasses: ['gl-min-w-[400px]'],
 };
 WithInfoPopoverSlotsContent.parameters = {
   docs: {
