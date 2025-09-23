@@ -12,6 +12,8 @@ body.modal-open {
 }
 
 .gl-modal {
+  @apply gl-@container/gl-modal;
+
   .modal-dialog-scrollable {
     @include media-breakpoint-up(sm) {
       max-height: calc(100% - #{$gl-spacing-scale-11 * 2});
