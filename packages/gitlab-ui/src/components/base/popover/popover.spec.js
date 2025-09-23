@@ -133,4 +133,29 @@ describe('GlPopover', () => {
       });
     });
   });
+
+  describe('cssClasses prop', () => {
+    it('accepts an array of classes', () => {
+      createWrapper({ cssClasses: ['gl-min-w-[400px]', 'gl-max-w-[600px]'] });
+
+      expect(findBVPopover().props('customClass')).toContain('gl-min-w-[400px] gl-max-w-[600px]');
+    });
+
+    it('accepts a string of classes', () => {
+      createWrapper({ cssClasses: 'gl-min-w-[400px] gl-max-w-[600px]' });
+
+      expect(findBVPopover().props('customClass')).toContain(
+        'gl-popover gl-min-w-[400px] gl-max-w-[600px]',
+      );
+    });
+
+    it('accepts an object of classes and filters out false values', () => {
+      createWrapper({
+        cssClasses: { 'gl-min-w-[400px]': true, 'gl-max-w-[600px]': true, 'do-not-show': false },
+      });
+
+      expect(findBVPopover().props('customClass')).toContain('gl-min-w-[400px] gl-max-w-[600px]');
+      expect(findBVPopover().props('customClass')).not.toContain('do-not-show');
+    });
+  });
 });
