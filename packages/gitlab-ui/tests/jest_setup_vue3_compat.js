@@ -57,6 +57,13 @@ if (global.document) {
   }).mount(document.createElement('div'));
 
   Vue.configureCompat(compatConfig);
-  installVTUCompat(VTU, fullCompatConfig, compatH);
+  installVTUCompat(
+    VTU,
+    {
+      ...fullCompatConfig,
+      WRAPPER_ATTRIBUTES_FROM_ATTRS: false,
+    },
+    compatH,
+  );
   VTU.config.global.renderStubDefaultSlot = true;
 }

@@ -33,7 +33,7 @@ describe('avatar labeled', () => {
     buildWrapper({ itemprop: 'logo' });
 
     expect(wrapper.findComponent(Avatar).attributes('itemprop')).toBe('logo');
-    expect(wrapper.element.getAttribute('itemprop')).toBeNull();
+    expect(wrapper.attributes('itemprop')).not.toEqual(expect.any(String));
   });
 
   it('displays the avatar label', () => {
