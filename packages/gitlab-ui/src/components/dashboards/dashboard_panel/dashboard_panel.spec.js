@@ -28,7 +28,11 @@ describe('GlDashboardPanel', () => {
         GlTruncate,
         GlPopover: {
           props: {
-            cssClasses: [],
+            cssClasses: {
+              type: Array,
+              required: false,
+              default: () => [],
+            },
           },
           template: `<div>
             <slot name="title"></slot>
