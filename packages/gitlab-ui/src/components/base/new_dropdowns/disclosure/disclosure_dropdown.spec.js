@@ -426,32 +426,32 @@ describe('GlDisclosureDropdown', () => {
   describe('auto closing', () => {
     it('closes the dropdown when `autoClose` is set on item click', async () => {
       buildWrapper({ items: mockItems, startOpened: true });
-      wrapper.vm.$refs.baseDropdown.$refs.toggle.$el.focus();
-      const focusSpy = jest.spyOn(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el, 'focus');
+      const listItemElement = findListItem(0).element;
+      listItemElement.focus();
 
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
-      expect(focusSpy).not.toHaveBeenCalled();
+      expect(document.activeElement).toBe(listItemElement);
 
       findListItem(0).trigger('click');
       await nextTick();
 
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toHaveLength(1);
-      expect(focusSpy).toHaveBeenCalled();
+      expect(document.activeElement).toBe(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el);
     });
 
     it('does not close the dropdown  on item click when `autoClose` is set to `false`', async () => {
       buildWrapper({ items: mockItems, autoClose: false, startOpened: true });
-      wrapper.vm.$refs.baseDropdown.$refs.toggle.$el.focus();
-      const focusSpy = jest.spyOn(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el, 'focus');
+      const listItemElement = findListItem(0).element;
+      listItemElement.focus();
 
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
-      expect(focusSpy).not.toHaveBeenCalled();
+      expect(document.activeElement).toBe(listItemElement);
 
       findListItem(0).trigger('click');
       await nextTick();
 
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
-      expect(focusSpy).not.toHaveBeenCalled();
+      expect(document.activeElement).not.toBe(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el);
     });
   });
 
