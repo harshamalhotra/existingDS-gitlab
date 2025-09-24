@@ -1,5 +1,20 @@
 # @gitlab/ui
 
+## 122.12.1
+
+### Patch Changes
+
+- d4b817e: Portal fixed dropdowns to the root
+
+  Fixed dropdowns can be mispositioned when they are within a container
+  context. To circumvent the issue, we can portal them to the root
+  (assuming it's not a container), so that Floating UI can properly
+  compute their position.
+
+- b46f90e: GlFormGroup: Fix spacing for label description
+
+  Reduces margin-top from gl-mt-3 to gl-mt-2 for better visual alignment.
+
 ## 122.12.0
 
 ### Minor Changes
