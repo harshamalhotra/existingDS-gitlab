@@ -1,12 +1,12 @@
 <script>
-import { GlUniqueId } from '../../../utils/unique_id';
+import uniqueId from 'lodash/uniqueId';
 import { tokensValidator } from './helpers';
 import GlTokenContainer from './token_container.vue';
 import GlTokenSelectorDropdown from './token_selector_dropdown.vue';
 
 export default {
   name: 'GlTokenSelector',
-  componentId: `token-selector-${GlUniqueId()}`,
+  componentId: uniqueId('token-selector'),
   components: {
     GlTokenContainer,
     GlTokenSelectorDropdown,
@@ -75,7 +75,7 @@ export default {
       default: '',
     },
     /**
-     * The HTML5 autocomplete attribute value for the underlying `input` element.
+     * The autocomplete attribute value for the underlying `input` element
      */
     autocomplete: {
       type: String,
@@ -83,21 +83,7 @@ export default {
       default: 'off',
     },
     /**
-     * The `aria-label` attribute value for the underlying `input` element.
-     * Input must have an aria-label or aria-labelledby prop or it will be inaccessible.
-     *
-     * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label
-     */
-    ariaLabel: {
-      type: String,
-      required: false,
-      default: null,
-    },
-    /**
-     * The `aria-labelledby` attribute value for the underlying `input` element.
-     * String must match the unique ID on a text element to create an accessible label.
-     *
-     * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby
+     * The `aria-labelledby` attribute value for the underlying `input` element
      */
     ariaLabelledby: {
       type: String,
@@ -396,13 +382,6 @@ export default {
       this.$emit('input', []);
       this.focusTextInput();
     },
-    handleAriaInvalid() {
-      const { state } = this;
-      return state === false ? 'true' : null;
-    },
-    handleAriaActiveDescendent(value) {
-      return value ? `${this.$options.componentId}-dropdown-item-${value.id}` : null;
-    },
   },
 };
 </script>
@@ -449,17 +428,10 @@ export default {
             type="text"
             class="gl-token-selector-input gl-h-auto gl-w-4/10 gl-grow gl-border-none gl-bg-transparent gl-px-1 gl-font-regular gl-text-base gl-leading-normal gl-text-default gl-outline-none"
             :value="inputText"
-            :aria-activedescendant="handleAriaActiveDescendent(focusedDropdownItem)"
             :autocomplete="autocomplete"
-            :aria-controls="$options.componentId"
-            :aria-expanded="dropdownIsOpen.toString()"
-            :aria-invalid="handleAriaInvalid()"
-            :aria-label="ariaLabelledby ? null : ariaLabel"
             :aria-labelledby="ariaLabelledby"
             :placeholder="placeholder"
             :disabled="viewOnly"
-            aria-autocomplete="list"
-            role="combobox"
             v-bind="textInputAttrs"
             @input="inputText = $event.target.value"
             @focus="handleFocus"
@@ -490,7 +462,6 @@ export default {
       :register-dropdown-event-handlers="registerDropdownEventHandlers"
       :register-reset-focused-dropdown-item="registerResetFocusedDropdownItem"
       @dropdown-item-click="addToken"
-      @input="handleAriaActiveDescendent"
       @show="openDropdown"
     >
       <template #loading-content
