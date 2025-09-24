@@ -1,67 +1,64 @@
-^[Engineering] @gitlab-org/maintainers/frontend
-*
+# Engineering
+* @gitlab-org/maintainers/frontend
 !/contents/
 
-[GitLab UI] @gitlab-org/maintainers/gitlab-ui
-/packages/gitlab-ui/
+# GitLab UI Package
+/packages/gitlab-ui/ @gitlab-org/maintainers/gitlab-ui
+/packages/gitlab-ui/tests/__image_snapshots__/ @gitlab-com/gitlab-ux/designers
 
-[Design System][1]
-# Core
+# Design System
 /contents/get-started/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 /contents/product-foundations/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 /contents/directives/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 /contents/components/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 /contents/patterns/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 /pages/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+
+# Design Tokens
 /packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
 
-# Extended
+# Accessibility
+/contents/accessibility/ @trevorpierce
+
+# AI Patterns
+/contents/patterns/ai-human-interaction.md @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/duo-* @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+
+# Animation
+/contents/product-foundations/animation* @jmiocene @jelder
+/contents/product-foundations/iconography-animated.md @jmiocene @jelder
+
+# Brand
+/contents/brand-* @gitlab-com/gitlab-ux/designers
+/contents/resources.md @gitlab-com/gitlab-ux/designers
+/contents/style-guides.md @gitlab-com/gitlab-ux/designers
+
+# Data Visualization
+/contents/data-visualization/ @svedova @lvanc @jiaan
+/packages/gitlab-ui/src/components/charts/ @svedova @lvanc @jiaan
+
+# Illustration
+/contents/product-foundations/illustration* @jmiocene @jelder
+
+# Technical Writing
+/contents/content/ @gitlab-org/technical-writing
+
+# UX patterns
+/contents/objects/ @gitlab-com/gitlab-ux/designers
+/contents/patterns/dashboards.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/drag-and-drop.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/feature-discovery.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/feature-management.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/keyboard-shortcuts.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/merge-request-reports.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/navigation-sidebar.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/notifications.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/settings-management.md @gitlab-com/gitlab-ux/designers
+
+# Extended Components
 /contents/components/broadcast-message.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/label.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/path.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/stepper.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/tree.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/utility-* @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
-
-^[Accessibility] @trevorpierce
-/contents/accessibility/
-
-^[AI] @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
-/contents/patterns/ai-human-interaction.md
-/contents/patterns/duo-*
-
-^[Animation] @jmiocene @jelder
-/contents/product-foundations/animation*
-/contents/product-foundations/iconography-animated.md
-
-^[Brand] @gitlab-com/gitlab-ux/designers
-/contents/brand-*
-/contents/resources.md
-/contents/style-guides.md
-
-^[Data Visualisation] @svedova @lvanc @jiaan
-/contents/data-visualization/
-/packages/gitlab-ui/src/components/charts/
-
-# [Figma]
-# While no Figma files are committed to this repo, the following maintainers are available to support any needs related to Figma:
-# @jeldergl @lvanc @seggenberger @danmh @katiemacoy
-
-^[Illustration] @jmiocene @jelder
-/contents/product-foundations/illustration*
-
-[Technical Writing][1] @gitlab-org/technical-writing
-/contents/content/
-
-[UX] @gitlab-com/gitlab-ux/designers
-/contents/objects/
-/contents/patterns/dashboards.md
-/contents/patterns/drag-and-drop.md
-/contents/patterns/feature-discovery.md
-/contents/patterns/feature-management.md
-/contents/patterns/keyboard-shortcuts.md
-/contents/patterns/merge-request-reports.md
-/contents/patterns/navigation-sidebar.md
-/contents/patterns/notifications.md
-/contents/patterns/settings-management.md
-/packages/gitlab-ui/tests/__image_snapshots__/
