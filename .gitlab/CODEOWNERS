@@ -7,15 +7,15 @@
 /packages/gitlab-ui/tests/__image_snapshots__/ @gitlab-com/gitlab-ux/designers
 
 # Design System
-/contents/get-started/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
-/contents/product-foundations/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
-/contents/directives/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
-/contents/components/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
-/contents/patterns/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
-/pages/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/contents/get-started/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/contents/product-foundations/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/contents/directives/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/contents/components/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/contents/patterns/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/pages/ @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
 
 # Design Tokens
-/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
 
 # Accessibility
 /contents/accessibility/ @trevorpierce
