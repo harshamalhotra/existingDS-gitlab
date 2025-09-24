@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 122.12.0
+
+### Minor Changes
+
+- 4d4dc0c: Define opacity design tokens
+
 ## 122.11.0
 
 ### Minor Changes
