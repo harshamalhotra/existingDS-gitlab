@@ -13,6 +13,11 @@ export default {
       validator: tokensValidator,
       required: true,
     },
+    state: {
+      type: Boolean,
+      required: false,
+      default: null,
+    },
     registerFocusOnToken: {
       type: Function,
       required: true,
@@ -128,6 +133,11 @@ export default {
       <div
         ref="tokenContainer"
         class="-gl-mx-1 -gl-my-1 gl-flex gl-w-auto gl-list-none gl-flex-wrap gl-items-center gl-p-0"
+        role="listbox"
+        aria-multiselectable="false"
+        aria-orientation="horizontal"
+        :aria-invalid="state === false && 'true'"
+        aria-label="token list"
         @keydown.left="handleLeftArrow"
         @keydown.right="handleRightArrow"
         @keydown.home="handleHome"
@@ -142,7 +152,7 @@ export default {
           :key="token.id"
           :data-token-id="token.id"
           class="gl-token-selector-token-container gl-px-1 gl-py-2 gl-outline-none"
-          data-testid="gl-token-selector-tokens"
+          role="option"
           tabindex="-1"
           @focus="bindFocusEvent ? handleTokenFocus(index) : null"
         >
