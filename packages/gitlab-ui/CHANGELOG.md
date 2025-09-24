@@ -1,5 +1,19 @@
 # @gitlab/ui
 
+## 122.13.0
+
+### Minor Changes
+
+- 00ed526: Pass CSS classes to dashboard panel tooltip
+
+  This change adds the ability to customize the styling of dashboard panel popovers.
+
+  It does this by adding a new prop to the panel and passing it on to the title tooltip's css-classes prop.
+
+### Patch Changes
+
+- d7bea48: Reverts GlTokenSelector combobox widget update
+
 ## 122.12.1
 
 ### Patch Changes
