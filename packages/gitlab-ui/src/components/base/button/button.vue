@@ -14,7 +14,6 @@ import { isEvent } from '../../../vendor/bootstrap-vue/src/utils/inspect';
 import GlIcon from '../icon/icon.vue';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { ENTER, SPACE } from '../new_dropdowns/constants';
-import { glButtonConfig } from '../../../config';
 
 export default {
   name: 'GlButton',
@@ -79,6 +78,14 @@ export default {
      * Set the loading state of the button.
      */
     loading: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    /**
+     * Set the loading state of the button.
+     */
+    focusableLoading: {
       type: Boolean,
       required: false,
       default: false,
@@ -227,7 +234,7 @@ export default {
       return this.disabled || this.loading;
     },
     isButtonAriaDisabled() {
-      return glButtonConfig.focusableLoadingButton && this.isButton && this.loading;
+      return this.isButton && this.focusableLoading;
     },
     buttonClasses() {
       const classes = ['btn', 'gl-button', `btn-${this.variant}`, `btn-${this.buttonSize}`];
@@ -270,6 +277,9 @@ export default {
     },
     isButton() {
       return this.componentIs === 'button';
+    },
+    isLoading() {
+      return this.loading || this.focusableLoading;
     },
     isNonStandardTag() {
       if (this.label) {
@@ -389,8 +399,8 @@ export default {
     :class="buttonClasses"
     v-on="computedListeners"
   >
-    <gl-loading-icon v-if="loading" inline class="gl-button-icon gl-button-loading-indicator" />
-    <gl-icon v-if="hasIcon && !(hasIconOnly && loading)" class="gl-button-icon" :name="icon" />
+    <gl-loading-icon v-if="isLoading" inline class="gl-button-icon gl-button-loading-indicator" />
+    <gl-icon v-if="hasIcon && !(hasIconOnly && isLoading)" class="gl-button-icon" :name="icon" />
     <slot name="emoji"></slot>
     <span v-if="!hasIconOnly" :class="buttonTextClasses" class="gl-button-text"><slot></slot></span>
   </component>

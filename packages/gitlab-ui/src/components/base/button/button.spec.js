@@ -1,7 +1,6 @@
 import { mount } from '@vue/test-utils';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { SPACE, ENTER } from '../new_dropdowns/constants';
-import setConfigs from '../../../config';
 import GlLink from '../link/link.vue';
 import GlButton from './button.vue';
 
@@ -71,20 +70,26 @@ describe('button component', () => {
   });
 
   describe('loading indicator', () => {
-    beforeEach(() => {
-      buildWrapper({
-        propsData: {
-          loading: true,
-        },
+    describe.each`
+      prop                  | value
+      ${'loading'}          | ${true}
+      ${'focusableLoading'} | ${true}
+    `('when $prop prop is set', ({ prop, value }) => {
+      beforeEach(() => {
+        buildWrapper({
+          propsData: {
+            [prop]: value,
+          },
+        });
       });
-    });
 
-    it('should render the loading indicator', () => {
-      expect(findLoadingIcon().exists()).toBe(true);
-    });
+      it('should render the loading indicator', () => {
+        expect(findLoadingIcon().exists()).toBe(true);
+      });
 
-    it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
-      expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
+      it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
+        expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
+      });
     });
   });
 
@@ -364,10 +369,10 @@ describe('button component', () => {
     expect(wrapper.attributes('aria-disabled')).toBeUndefined();
   });
 
-  it('button has aria-disabled attribute when loading set', () => {
+  it('button has aria-disabled attribute when focusableLoading set', () => {
     buildWrapper({
       propsData: {
-        loading: true,
+        focusableLoading: true,
       },
     });
 
@@ -474,12 +479,12 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('should not emit click event when clicked and loading', async () => {
+  it('should not emit click event when clicked and focusableLoading', async () => {
     const onClick = jest.fn();
 
     buildWrapper({
       propsData: {
-        loading: true,
+        focusableLoading: true,
       },
       listeners: {
         click: onClick,
@@ -488,26 +493,5 @@ describe('button component', () => {
 
     await wrapper.trigger('click');
     expect(onClick).not.toHaveBeenCalled();
-  });
-
-  describe('with `focusableLoadingButton` config disabled', () => {
-    beforeEach(() => {
-      setConfigs({
-        focusableLoadingButton: false,
-        resetConfig: true,
-      });
-    });
-
-    it('button has disabled attribute when loading set', () => {
-      buildWrapper({
-        propsData: {
-          loading: true,
-        },
-      });
-
-      expect(wrapper.attributes('disabled')).toBe('disabled');
-      expect(wrapper.classes()).not.toContain('disabled');
-      expect(wrapper.attributes('aria-disabled')).toBeUndefined();
-    });
   });
 });
