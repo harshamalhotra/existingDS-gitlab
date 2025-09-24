@@ -87,6 +87,14 @@ export default {
       default: () => ({}),
     },
     /**
+     * CSS classes to apply to the title popover (gets passed to the `css-classes` prop of the `GlPopover` component).
+     */
+    titlePopoverClasses: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    /**
      * Set to `true` to show the loading state.
      */
     loading: {
@@ -218,6 +226,7 @@ export default {
               data-testid="panel-title-popover"
               boundary="viewport"
               :target="titlePopoverId"
+              :css-classes="titlePopoverClasses"
             >
               <!-- @slot The title of the info popover. -->
               <template v-if="hasInfoPopoverTitleSlot" #title>
