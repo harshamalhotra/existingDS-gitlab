@@ -229,6 +229,10 @@
             "path": "layout"
           },
           {
+            "title": "Border",
+            "path": "border"
+          },
+          {
             "title": "Elevation",
             "path": "elevation"
           },
