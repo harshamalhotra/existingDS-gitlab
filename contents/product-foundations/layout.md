@@ -60,7 +60,7 @@ The layout system typically uses media queries to support major layout changes t
 
 Building blocks work together to create organized, intuitive interfaces that help a user find and use what they need. A user can quickly understand and navigate content when related items are grouped through proximity, similar elements show clear relationships, and boundaries create distinct areas. Primary content should be immediately visible, secondary content easily accessible, and supporting information available through progressive disclosure.
 
-The building blocks that follow provide the tools to create this clarity: alignment creates structure and order, containers define relationships between content, and borders establish boundaries. Each building block serves a specific purpose in making a user's workflow more organized and efficient.
+The building blocks that follow provide the tools to create this clarity: alignment creates structure and order while containers define relationships between content. Each building block serves a specific purpose in making a user's workflow more organized and efficient.
 
 ### Alignment
 
@@ -85,7 +85,7 @@ Choose alignment based on content characteristics:
 
 ### Content containers
 
-Content containers define content boundaries within a layout. They group related content using background surfaces, borders, and whitespace to create clear groupings that help a user understand content relationships and navigate complex interfaces. Because content is already within a panel, use content containers sparingly to avoid the effect of too many nested boxes. There's a range of container types and visual presentation. The two container categories are:
+Content containers define content boundaries within a layout. They group related content using background surfaces, [borders](/product-foundations/border), and whitespace to create clear groupings that help a user understand content relationships and navigate complex interfaces. Because content is already within a panel, use content containers sparingly to avoid the effect of too many nested boxes. There's a range of container types and visual presentation. The two container categories are:
 
 - **Generic (presentational):** Establish visual hierarchy without specific meaning.
 - **Semantic:** Associated with a container's purpose in the interface.
@@ -181,70 +181,6 @@ A disabled container is visually subdued to infer unavailability or non-interact
 <!-- live-example -->
 <div class="gl-text-base">
   <div class="gl-grid gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-disabled gl-border gl-border-subtle gl-text-subtle">disabled + subtle</div>
-</div>
-```
-
-### Borders and dividers
-
-Borders on one or more edge(s) of an element and dividers between content help define boundaries and separate content areas. They provide visual structure and improve the scanability of information when used with discretion.
-
-- A default border or divider provides visual separation without drawing excessive attention. Use the default in most places where visual separation is needed.
-- A subtle border or divider creates minimal visual separation and is best used when division needs to be present but minimal.
-- A strong border or divider creates pronounced separation and emphasis. Use sparingly to highlight distinct elements.
-- A section border should only be used with a [section](#section) container.
-
-When visually defining content areas, keep the following in mind:
-
-- Consider using white space as an alternative when possible.
-- A horizontal divider separates content sections within the same region or container.
-- A vertical divider separates content or actions that are horizontally adjacent to help define groups and relationships.
-- Apply borders consistently within similar contexts.
-- Avoid using too many borders in close proximity as this can create visual noise.
-
-The following examples demonstrate how borders appear on different backgrounds.
-
-<note>Some borders may not be visible on surfaces in both modes, test accordingly.</note>
-
-```html
-<!-- live-example -->
-<div class="gl-text-base gl-grid gl-grid-cols-3 gl-gap-5">
-  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-default">
-    on default
-    <div class="gl-w-full gl-border-b gl-border-default"></div>
-    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
-    <div class="gl-w-full gl-border-b gl-border-strong"></div>
-    <div class="gl-w-full gl-border-b gl-border-section"></div>
-  </div>
-  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-subtle">
-    on subtle
-    <div class="gl-w-full gl-border-b gl-border-default"></div>
-    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
-    <div class="gl-w-full gl-border-b gl-border-strong"></div>
-    <div class="gl-w-full gl-border-b gl-border-section"></div>
-  </div>
-  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-strong">
-    on strong
-    <div class="gl-w-full gl-border-b gl-border-default"></div>
-    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
-    <div class="gl-w-full gl-border-b gl-border-strong"></div>
-    <div class="gl-w-full gl-border-b gl-border-section"></div>
-  </div>
-</div>
-<div class="gl-grid gl-grid-cols-3 gl-gap-5">
-  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-overlap">
-    on overlap
-    <div class="gl-w-full gl-border-b gl-border-default"></div>
-    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
-    <div class="gl-w-full gl-border-b gl-border-strong"></div>
-    <div class="gl-w-full gl-border-b gl-border-section"></div>
-  </div>
-  <div class="gl-grid gl-gap-5 gl-place-items-center gl-p-5 gl-rounded-lg gl-bg-section">
-    on section
-    <div class="gl-w-full gl-border-b gl-border-default"></div>
-    <div class="gl-w-full gl-border-b gl-border-subtle"></div>
-    <div class="gl-w-full gl-border-b gl-border-strong"></div>
-    <div class="gl-w-full gl-border-b gl-border-section"></div>
-  </div>
 </div>
 ```
 
