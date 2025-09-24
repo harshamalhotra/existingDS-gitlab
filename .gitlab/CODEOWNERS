@@ -5,14 +5,23 @@
 [GitLab UI] @gitlab-org/maintainers/gitlab-ui
 /packages/gitlab-ui/
 
-[Design System][1] @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer 
-/contents/get-started/
-/contents/product-foundations/
-/contents/directives/
-/contents/components/
-/contents/patterns/
-/pages/
-/packages/gitlab-ui/src/tokens
+[Design System][1]
+# Core
+/contents/get-started/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/contents/product-foundations/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/contents/directives/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/contents/components/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/contents/patterns/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/pages/ @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @pedroms @tauriedavis @rayana @jeldergl @danmh @aregnery @sdejonge @markrian @thutterer
+
+# Extended
+/contents/components/broadcast-message.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/label.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/path.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/stepper.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/tree.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/utility-* @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 
 ^[Accessibility] @trevorpierce
 /contents/accessibility/
@@ -25,18 +34,10 @@
 /contents/product-foundations/animation*
 /contents/product-foundations/iconography-animated.md
 
-[Brand] @gitlab-com/gitlab-ux/designers
+^[Brand] @gitlab-com/gitlab-ux/designers
 /contents/brand-*
 /contents/resources.md
 /contents/style-guides.md
-
-[Components] @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
-/contents/components/broadcast-message.md
-/contents/components/label.md
-/contents/components/path.md
-/contents/components/stepper.md
-/contents/components/tree.md
-/contents/components/utility-*
 
 ^[Data Visualisation] @svedova @lvanc @jiaan
 /contents/data-visualization/
