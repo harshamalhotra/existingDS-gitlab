@@ -32,6 +32,9 @@ describe('GlDashboardPanel', () => {
             <slot></slot>
           </div>`,
         },
+        MountingPortal: {
+          template: '<div><slot /></div>',
+        },
       },
     });
   };

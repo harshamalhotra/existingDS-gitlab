@@ -41,6 +41,11 @@ describe('GlDisclosureDropdown', () => {
         GlDisclosureDropdownGroup,
         GlCollapsibleListbox,
       },
+      stubs: {
+        MountingPortal: {
+          template: '<div><slot /></div>',
+        },
+      },
       attachTo: document.body,
       ...options,
     });
@@ -419,18 +424,34 @@ describe('GlDisclosureDropdown', () => {
   });
 
   describe('auto closing', () => {
-    it('closes the dropdown when `autoClose` is set on item click', () => {
-      buildWrapper({ items: mockItems });
-      const closeSpy = jest.spyOn(wrapper.vm.$refs.baseDropdown, 'closeAndFocus');
+    it('closes the dropdown when `autoClose` is set on item click', async () => {
+      buildWrapper({ items: mockItems, startOpened: true });
+      const listItemElement = findListItem(0).element;
+      listItemElement.focus();
+
+      expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
+      expect(document.activeElement).toBe(listItemElement);
+
       findListItem(0).trigger('click');
-      expect(closeSpy).toHaveBeenCalled();
+      await nextTick();
+
+      expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toHaveLength(1);
+      expect(document.activeElement).toBe(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el);
     });
 
-    it('does not close the dropdown  on item click when `autoClose` is set to `false`', () => {
-      buildWrapper({ items: mockItems, autoClose: false });
-      const closeSpy = jest.spyOn(wrapper.vm.$refs.baseDropdown, 'closeAndFocus');
+    it('does not close the dropdown  on item click when `autoClose` is set to `false`', async () => {
+      buildWrapper({ items: mockItems, autoClose: false, startOpened: true });
+      const listItemElement = findListItem(0).element;
+      listItemElement.focus();
+
+      expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
+      expect(document.activeElement).toBe(listItemElement);
+
       findListItem(0).trigger('click');
-      expect(closeSpy).not.toHaveBeenCalled();
+      await nextTick();
+
+      expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toBeUndefined();
+      expect(document.activeElement).not.toBe(wrapper.vm.$refs.baseDropdown.$refs.toggle.$el);
     });
   });
 

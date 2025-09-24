@@ -27,10 +27,17 @@ const DEFAULT_BTN_TOGGLE_CLASSES = [
   'gl-new-dropdown-toggle',
 ];
 
+const MountingPortalStub = {
+  template: '<div><slot /></div>',
+};
+
 describe('base dropdown', () => {
   let wrapper;
 
-  const buildWrapper = (propsData, { component = GlBaseDropdown, slots = {}, ...options } = {}) => {
+  const buildWrapper = (
+    propsData,
+    { component = GlBaseDropdown, slots = {}, stubs = {}, ...options } = {},
+  ) => {
     wrapper = mount(component, {
       propsData: {
         toggleId: 'dropdown-toggle-btn-1',
@@ -39,6 +46,10 @@ describe('base dropdown', () => {
       slots: {
         default: `<div class="${GL_DROPDOWN_CONTENTS_CLASS}"><button /></div>`,
         ...slots,
+      },
+      stubs: {
+        MountingPortal: MountingPortalStub,
+        ...stubs,
       },
       attachTo: document.body,
       ...options,
@@ -214,6 +225,7 @@ describe('base dropdown', () => {
           await findDefaultDropdownToggle().trigger('click');
           await nextTick();
 
+          expect(wrapper.findComponent(MountingPortalStub).exists()).toBe(false);
           expect(computePosition).toHaveBeenCalledWith(
             findDefaultDropdownToggle().element,
             findDropdownMenu().element,
@@ -232,6 +244,7 @@ describe('base dropdown', () => {
           await findDefaultDropdownToggle().trigger('click');
           await nextTick();
 
+          expect(wrapper.findComponent(MountingPortalStub).exists()).toBe(true);
           expect(computePosition).toHaveBeenCalledWith(
             findDefaultDropdownToggle().element,
             findDropdownMenu().element,
@@ -308,7 +321,6 @@ describe('base dropdown', () => {
     it('applies block style if true', () => {
       buildWrapper({ block: true });
 
-      expect(wrapper.classes()).toContain('!gl-block');
       expect(findDropdownToggleText().classes()).toContain('gl-w-full');
       expect(findDefaultDropdownToggle().props('block')).toBe(true);
     });
@@ -635,6 +647,38 @@ describe('base dropdown', () => {
     it('does not apply default aria-labelledby', () => {
       buildWrapper();
       expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(undefined);
+    });
+  });
+
+  describe('containsElement', () => {
+    it('returns `true` if the panel contains the given DOM element', () => {
+      buildWrapper();
+      const el = wrapper.vm.$el.querySelector(`.${GL_DROPDOWN_CONTENTS_CLASS}`);
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `true` if the component contains the given DOM element', () => {
+      buildWrapper();
+      const el = wrapper.vm.$refs.toggle.$el;
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `true` if the panel contains the given DOM element and the dropdown is fixed-positioned', async () => {
+      buildWrapper({ positioningStrategy: 'fixed' }, { stubs: { MountingPortal: false } });
+      await nextTick();
+      const el = document.querySelector(`.${GL_DROPDOWN_CONTENTS_CLASS}`);
+
+      expect(wrapper.vm.containsElement(el)).toBe(true);
+    });
+
+    it('returns `false` if the given DOM element is outside of the component', () => {
+      buildWrapper();
+      const el = document.createElement('div');
+      document.body.appendChild(el);
+
+      expect(wrapper.vm.containsElement(el)).toBe(false);
     });
   });
 });

@@ -38,14 +38,19 @@ import {
 import { OutsideDirective } from '../../../../directives/outside/outside';
 import GlButton from '../../button/button.vue';
 import GlIcon from '../../icon/icon.vue';
+import DropdownContainer from './dropdown_container';
 import { ARROW_X_MINIMUM, DEFAULT_OFFSET, FIXED_WIDTH_CLASS } from './constants';
 
-export const BASE_DROPDOWN_CLASS = 'gl-new-dropdown';
+const BASE_DROPDOWN_CLASS = 'gl-new-dropdown';
+const DROPDOWN_CONTAINER_CLASS = 'gl-new-dropdown-container';
 
 export default {
   name: 'BaseDropdown',
+  expose: ['open', 'close', 'closeAndFocus', 'containsElement'],
   BASE_DROPDOWN_CLASS,
+  DROPDOWN_CONTAINER_CLASS,
   components: {
+    DropdownContainer,
     GlButton,
     GlIcon,
   },
@@ -477,7 +482,21 @@ export default {
       if (!this.visible) {
         return;
       }
+
       this.toggle(event);
+    },
+    clickedToggle(event) {
+      return (
+        this.$refs.toggle.contains?.(event.target) ||
+        this.$refs.toggle.$el?.contains?.(event.target)
+      );
+    },
+    handleClickOutside(event) {
+      // Ignore "click outside" events if the toggle was clicked
+      if (this.clickedToggle(event)) {
+        return;
+      }
+      this.close(event);
     },
     /**
      * Closes the dropdown and returns the focus to the toggle unless it has has moved outside
@@ -549,15 +568,25 @@ export default {
       this.nonScrollableContentHeight =
         floatingElementBoundingBox.height - scrollableAreaBoundingBox.height;
     },
+    /**
+     * Public method which returns `true` if the given element is in the DOM tree of this component,
+     * and `false` otherwise.
+     *
+     * Useful for checking whether an event was dispatched against something in this dropdown,
+     * e.g., pressing <kbd>Esc</kbd>.
+     */
+    containsElement(element) {
+      return (
+        element.closest(`.${BASE_DROPDOWN_CLASS}`) === this.$el ||
+        element.closest(`.${DROPDOWN_CONTAINER_CLASS}`) === this.$refs.dropdownContainer
+      );
+    },
   },
 };
 </script>
 
 <template>
-  <div
-    v-outside.click.focusin="close"
-    :class="[$options.BASE_DROPDOWN_CLASS, { '!gl-block': block }]"
-  >
+  <div :class="[$options.BASE_DROPDOWN_CLASS, { '!gl-block': block }]">
     <component
       :is="toggleComponent"
       v-bind="toggleAttributes"
@@ -579,18 +608,26 @@ export default {
       </slot>
     </component>
 
-    <div
-      :id="baseDropdownId"
-      ref="content"
-      data-testid="base-dropdown-menu"
-      class="gl-new-dropdown-panel"
-      :class="panelClasses"
-      @keydown.esc.stop.prevent="closeAndFocus"
-    >
-      <div ref="dropdownArrow" class="gl-new-dropdown-arrow"></div>
-      <div class="gl-new-dropdown-inner">
-        <slot :visible="visible"></slot>
+    <dropdown-container :positioning-strategy="positioningStrategy">
+      <div
+        ref="dropdownContainer"
+        v-outside.click.focusin="handleClickOutside"
+        :class="$options.DROPDOWN_CONTAINER_CLASS"
+      >
+        <div
+          :id="baseDropdownId"
+          ref="content"
+          data-testid="base-dropdown-menu"
+          class="gl-new-dropdown-panel"
+          :class="panelClasses"
+          @keydown.esc.stop.prevent="closeAndFocus"
+        >
+          <div ref="dropdownArrow" class="gl-new-dropdown-arrow"></div>
+          <div class="gl-new-dropdown-inner">
+            <slot :visible="visible"></slot>
+          </div>
+        </div>
       </div>
-    </div>
+    </dropdown-container>
   </div>
 </template>

@@ -87,6 +87,28 @@ Default.args = {
 };
 Default.decorators = [makeContainer({ height: '200px' })];
 
+export const FixedDropdown = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: {
+    GlDisclosureDropdown,
+    GlTooltip,
+  },
+  template: `
+    <div class="gl-overflow-auto gl-@container">
+      ${template()}
+    </div>
+  `,
+});
+FixedDropdown.args = {
+  items: mockItems,
+  icon: 'ellipsis_v',
+  noCaret: true,
+  toggleText: 'Disclosure',
+  textSrOnly: true,
+  positioningStrategy: 'fixed',
+};
+FixedDropdown.decorators = [makeContainer({ height: '200px' })];
+
 export const CustomListItem = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: {
