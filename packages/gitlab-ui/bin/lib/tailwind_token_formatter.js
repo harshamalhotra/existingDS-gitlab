@@ -94,77 +94,7 @@ const getTokenCssCustomProperty = (token) => {
   return `var(--${path.join('-')})`;
 };
 
-class TailwindFormatter {
-  constructor(tokens) {
-    this.allTokens = tokens;
-  }
-
-  /**
-   * Original token object of alias from COMPILED_TOKENS
-   *
-   * @param {string|object} value token.original.value
-   * @returns {object} original token object
-   */
-  getAliasedToken = (value) => {
-    const keys = value.slice(1, -1).split('.');
-    return keys.reduce((obj, key) => obj && obj[key], this.allTokens);
-  };
-
-  /**
-   * CSS custom property from alias token path.
-   * Include prefix if original token does not have `"prefix": false`
-   *
-   * @param {string|object} originalValue The original untransformed token value
-   * @param {string|object} fallbackValue The transformed token value for fallback
-   * @returns {string} CSS custom property with default value
-   */
-  aliasToCSSCustomProperty = (originalValue, fallbackValue) => {
-    const aliasedToken =
-      typeof originalValue === 'string'
-        ? this.getAliasedToken(originalValue)
-        : this.getAliasedToken(originalValue.default);
-    const prefix = aliasedToken.prefix !== false ? 'gl' : false;
-    return `var(--${[prefix, ...aliasedToken.path].filter(Boolean).join('-')}, ${fallbackValue})`;
-  };
-
-  /**
-   * CSS custom property with default value
-   *
-   * @param {object} token
-   * @param {object} originalValue The original untransformed token value
-   * @param {string|object} fallbackValue The transformed token value for fallback
-   * @returns {string} CSS custom property with default value
-   */
-  getTokenCssCustomPropertyWithFallbackValue = (
-    token,
-    originalValue = token.original.$value,
-    fallbackValue = token.$value,
-  ) => {
-    const path = [token.prefix !== false ? 'gl' : false, ...token.path].filter(Boolean);
-    const value = hasAliases(originalValue)
-      ? this.aliasToCSSCustomProperty(originalValue, fallbackValue)
-      : fallbackValue;
-    return `var(--${path.join('-')}, ${value})`;
-  };
-
-  /**
-   * CSS custom property with default value
-   *
-   * @param {object} token
-   * @returns {string} CSS custom property with default value
-   */
-  getCssCustomProperty = (token) => {
-    switch (token.$type) {
-      case 'shadow':
-        return getTokenCssCustomProperty(token);
-      default:
-        return this.getTokenCssCustomPropertyWithFallbackValue(token);
-    }
-  };
-}
-
 module.exports = {
-  TailwindTokenFormatter: TailwindFormatter,
   hasAliases,
   isAliasValue,
   getScalesAndCSSCustomProperties,
