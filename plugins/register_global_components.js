@@ -14,6 +14,7 @@ import IllustrationDirectory from '../components/illustration_directory.vue';
 import LookbookViewer from '../components/lookbook_viewer.vue';
 import Note from '../components/note.vue';
 import StoryViewer from '../components/story_viewer.vue';
+import TailwindConfigViewer from '../components/tailwind_config_viewer.vue';
 import Todo from '../components/todo.vue';
 import VimeoPlayer from '../components/vimeo_player.vue';
 
@@ -33,6 +34,7 @@ Object.entries({
   LookbookViewer,
   Note,
   StoryViewer,
+  TailwindConfigViewer,
   Todo,
   VimeoPlayer,
 }).forEach(([componentName, component]) => Vue.component(componentName, component));

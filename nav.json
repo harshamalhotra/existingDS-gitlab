@@ -286,6 +286,10 @@
                 "path": "illustration-directory"
               }
             ]
+          },
+          {
+            "title": "Tailwind utilities",
+            "path": "tailwind-utilities"
           }
         ]
       },

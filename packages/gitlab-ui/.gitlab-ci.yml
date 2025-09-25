@@ -174,23 +174,6 @@ ui:pages_storybook_vue3:
 ui:pages_storybook_vue3_review:
   extends: [ui:pages_storybook_vue3, .ui:pages-review]
 
-ui:pages_tailwind_config_viewer:
-  extends: [.ui:node, .ui:yarn_install, .ui:pages]
-  needs: []
-  stage: build
-  script:
-    - yarn tailwind-config-viewer:export
-  artifacts:
-    paths:
-      - packages/gitlab-ui/tailwind-config-viewer-static
-  pages:
-    publish: packages/gitlab-ui/tailwind-config-viewer-static
-  variables:
-    PAGES_PREFIX: 'tailwind'
-
-ui:pages_tailwind_config_viewer_review:
-  extends: [ui:pages_tailwind_config_viewer, .ui:pages-review]
-
 ui:lint:
   extends: [.ui:node, .ui:yarn_install]
   needs: []
