@@ -78,3 +78,6 @@
 /brand-design/marketing-illustrations /brand-design/visual-design-brand-illustrations 301
 /components/icon /product-foundations/iconography-directory 301
 /brand/overview /brand-introduction 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/5108
+/tailwind /product-foundations/tailwind-utilities 301
