@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 122.14.0
+
+### Minor Changes
+
+- 677809f: Define zindex design tokens
+
 ## 122.13.0
 
 ### Minor Changes
