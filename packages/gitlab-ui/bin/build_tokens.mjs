@@ -250,6 +250,7 @@ StyleDictionary.registerFormat({
       control: formatToken(COMPILED_TOKENS.control.border.radius),
     };
     const opacity = formatTokens(COMPILED_TOKENS.opacity);
+    const zindexes = formatTokens(COMPILED_TOKENS.zindex);
 
     const tokens = {
       background: backgroundColors,
@@ -261,6 +262,7 @@ StyleDictionary.registerFormat({
       spacing: spacingScale,
       borderRadius: borderRadiuses,
       opacity,
+      zIndex: zindexes,
     };
 
     // Format as JSON
@@ -303,6 +305,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const spacingScale = getScalesAndCSSCustomProperties(COMPILED_TOKENS.spacing);
   const borderRadius = getScalesAndCSSCustomProperties(COMPILED_TOKENS.borderRadius);
   const opacity = getScalesAndCSSCustomProperties(COMPILED_TOKENS.opacity);
+  const zindexes = getScalesAndCSSCustomProperties(COMPILED_TOKENS.zIndex);
 
   const statusColorObjects = generateColorMap(COMPILED_TOKENS, statusVariants, 'status');
   const feedbackColorObjects = generateColorMap(COMPILED_TOKENS, feedbackVariants, 'feedback');
@@ -332,6 +335,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const spacingScale = ${JSON.stringify(spacingScale)};
   const borderRadius = ${JSON.stringify(borderRadius)};
   const opacity = ${JSON.stringify(opacity)};
+  const zindexes = ${JSON.stringify(zindexes)};
 
   const colors = {
     inherit: 'inherit',
@@ -414,6 +418,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
     spacing: spacingScale,
     borderRadius,
     opacity,
+    zIndex: zindexes,
   }
   `;
 };
