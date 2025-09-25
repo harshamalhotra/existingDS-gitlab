@@ -571,6 +571,7 @@ $gl-border-color-default: $gl-color-neutral-100; // Used for the default border 
 $gl-border-color-subtle: $gl-color-neutral-50; // Used for a subtle border in combination with the default background.
 $gl-border-color-strong: $gl-color-neutral-200; // Used for a distinct border that emphasizes an edge or boundaries.
 $gl-border-color-transparent: $gl-color-alpha-0; // Used when a border needs to be present, but not visibly perceived.
+$gl-shadow-color-default: $gl-color-alpha-dark-16; // Used for the default shadow color.
 $gl-alert-neutral-border-top-color: $gl-color-alpha-0; // Used for the border center color of a neutral alert.
 $gl-alert-neutral-border-bottom-color: $gl-color-alpha-0; // Used for the border bottom color of a neutral alert.
 $gl-alert-info-border-top-color: $gl-color-alpha-0; // Used for the border color of an info alert.
@@ -893,7 +894,6 @@ $gl-highlight-match-text-color: $gl-color-neutral-0; // Used for text within tem
 $gl-highlight-target-background-color: $gl-color-blue-50; // Used for temporary visual emphasis for backgrounds of referenced elements (for example URL anchors, hover states) or to show relationships between content without implying status or requiring action.
 $gl-highlight-target-border-color: $gl-color-blue-200; // Used to provide additional visual emphasis for borders of temporarily targeted elements or when visualizing connections between related content, distinct from persistent states.
 $gl-icon-color-info: $gl-color-blue-700; // Used for an icon associated with information or help.
-$gl-shadow-color-default: $gl-color-alpha-dark-16; // Used for the default shadow color.
 $gl-status-neutral-background-color: $gl-color-neutral-100; // Used for the background of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.
 $gl-status-neutral-text-color: $gl-color-neutral-700; // Used for the text of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.
 $gl-status-neutral-icon-color: $gl-color-neutral-500; // Used for the icon of a neutral status item when the status is neither positive nor negative, or when indicating a special but stable state.
@@ -923,6 +923,9 @@ $gl-text-color-success: $gl-color-green-600; // Used for text indicating success
 $gl-text-color-disabled: $gl-color-neutral-400; // Used for disabled text.
 $gl-border-radius-default: $gl-border-radius-md;
 $gl-border-color-section: $gl-border-color-default; // Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page.
+$gl-shadow-sm: 0 0 2px $gl-shadow-color-default, 0 1px 4px $gl-shadow-color-default; // Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.
+$gl-shadow-md: 0 0 1px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 2px 8px $gl-shadow-color-default; // Used for surfaces that need boundary definition and appear on hover. For example, popovers.
+$gl-shadow-lg: 0 0 2px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 4px 12px $gl-shadow-color-default; // Used for large surfaces that present additional context to the user.
 $gl-alert-neutral-title-color: $gl-text-color-heading; // Used for the title color of a neutral alert.
 $gl-alert-neutral-background-color: $gl-feedback-neutral-background-color; // Used for the background color of a neutral alert.
 $gl-alert-info-title-color: $gl-text-color-heading; // Used for the title color of an info alert.

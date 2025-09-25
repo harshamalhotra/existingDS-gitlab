@@ -4,6 +4,7 @@ import {
   getScalesAndCSSCustomProperties,
   generateBaseColors,
   generateColorMap,
+  getTokenCssCustomProperty,
   TailwindTokenFormatter,
 } from './tailwind_token_formatter';
 
@@ -321,6 +322,18 @@ describe('Tailwind Token Formatter', () => {
     });
   });
 
+  describe('getTokenCssCustomProperty', () => {
+    it('returns CSS custom property', () => {
+      expect(getTokenCssCustomProperty(tokens.color.constant)).toBe('var(--color-constant)');
+    });
+
+    it('returns CSS custom property with prefix', () => {
+      expect(getTokenCssCustomProperty(tokens.color.prefixConstant)).toBe(
+        'var(--gl-color-prefixConstant)',
+      );
+    });
+  });
+
   describe('TailwindTokenFormatter', () => {
     let f;
 
@@ -336,31 +349,33 @@ describe('Tailwind Token Formatter', () => {
 
     describe('#aliasToCSSCustomProperty', () => {
       it('returns CSS custom property of alias', () => {
-        expect(f.aliasToCSSCustomProperty(tokens.color.alias)).toBe('var(--color-constant, #000)');
+        expect(
+          f.aliasToCSSCustomProperty(tokens.color.alias.original.$value, tokens.color.alias.$value),
+        ).toBe('var(--color-constant, #000)');
       });
     });
 
-    describe('#cssCustomPropertyWithValue', () => {
+    describe('#getTokenCssCustomPropertyWithFallbackValue', () => {
       it('returns CSS custom property with default value of #000', () => {
-        expect(f.cssCustomPropertyWithValue(tokens.color.constant)).toBe(
+        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.constant)).toBe(
           'var(--color-constant, #000)',
         );
       });
 
       it('returns CSS custom property with default value of var(--color-constant)', () => {
-        expect(f.cssCustomPropertyWithValue(tokens.color.alias)).toBe(
+        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.alias)).toBe(
           'var(--color-alias, var(--color-constant, #000))',
         );
       });
 
       it('returns CSS custom property with prefix and default value of #000', () => {
-        expect(f.cssCustomPropertyWithValue(tokens.color.prefixConstant)).toBe(
+        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.prefixConstant)).toBe(
           'var(--gl-color-prefixConstant, #000)',
         );
       });
 
       it('returns CSS custom property with default value of var(--gl-color-constant)', () => {
-        expect(f.cssCustomPropertyWithValue(tokens.color.prefixAlias)).toBe(
+        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.prefixAlias)).toBe(
           'var(--gl-color-prefixAlias, var(--gl-color-prefixConstant, #000))',
         );
       });

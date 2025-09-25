@@ -83,6 +83,17 @@ const generateColorMap = (
   }, {});
 };
 
+/**
+ * Return string CSS custom property for token object
+ *
+ * @param {object} token
+ * @returns {string} CSS custom property
+ */
+const getTokenCssCustomProperty = (token) => {
+  const path = [token.prefix !== false ? 'gl' : false, ...token.path].filter(Boolean);
+  return `var(--${path.join('-')})`;
+};
+
 class TailwindFormatter {
   constructor(tokens) {
     this.allTokens = tokens;
@@ -103,17 +114,37 @@ class TailwindFormatter {
    * CSS custom property from alias token path.
    * Include prefix if original token does not have `"prefix": false`
    *
-   * @param {object} token
+   * @param {string|object} originalValue The original untransformed token value
+   * @param {string|object} fallbackValue The transformed token value for fallback
    * @returns {string} CSS custom property with default value
    */
-  aliasToCSSCustomProperty = (token) => {
-    const { $value } = token.original;
+  aliasToCSSCustomProperty = (originalValue, fallbackValue) => {
     const aliasedToken =
-      typeof $value === 'string'
-        ? this.getAliasedToken($value)
-        : this.getAliasedToken($value.default);
+      typeof originalValue === 'string'
+        ? this.getAliasedToken(originalValue)
+        : this.getAliasedToken(originalValue.default);
     const prefix = aliasedToken.prefix !== false ? 'gl' : false;
-    return `var(--${[prefix, ...aliasedToken.path].filter(Boolean).join('-')}, ${token.$value})`;
+    return `var(--${[prefix, ...aliasedToken.path].filter(Boolean).join('-')}, ${fallbackValue})`;
+  };
+
+  /**
+   * CSS custom property with default value
+   *
+   * @param {object} token
+   * @param {object} originalValue The original untransformed token value
+   * @param {string|object} fallbackValue The transformed token value for fallback
+   * @returns {string} CSS custom property with default value
+   */
+  getTokenCssCustomPropertyWithFallbackValue = (
+    token,
+    originalValue = token.original.$value,
+    fallbackValue = token.$value,
+  ) => {
+    const path = [token.prefix !== false ? 'gl' : false, ...token.path].filter(Boolean);
+    const value = hasAliases(originalValue)
+      ? this.aliasToCSSCustomProperty(originalValue, fallbackValue)
+      : fallbackValue;
+    return `var(--${path.join('-')}, ${value})`;
   };
 
   /**
@@ -122,12 +153,13 @@ class TailwindFormatter {
    * @param {object} token
    * @returns {string} CSS custom property with default value
    */
-  cssCustomPropertyWithValue = (token) => {
-    const path = [token.prefix !== false ? 'gl' : false, ...token.path].filter(Boolean);
-    const value = hasAliases(token.original.$value)
-      ? this.aliasToCSSCustomProperty(token)
-      : token.$value;
-    return `var(--${path.join('-')}, ${value})`;
+  getCssCustomProperty = (token) => {
+    switch (token.$type) {
+      case 'shadow':
+        return getTokenCssCustomProperty(token);
+      default:
+        return this.getTokenCssCustomPropertyWithFallbackValue(token);
+    }
   };
 }
 
@@ -138,4 +170,5 @@ module.exports = {
   getScalesAndCSSCustomProperties,
   generateBaseColors,
   generateColorMap,
+  getTokenCssCustomProperty,
 };

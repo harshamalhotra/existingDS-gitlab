@@ -264,6 +264,69 @@ export const GL_OPACITY_7 = '.7';
 export const GL_OPACITY_8 = '.8';
 export const GL_OPACITY_9 = '.9';
 export const GL_OPACITY_10 = '1';
+export const GL_SHADOW_SM = [
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: 0,
+    blur: '2px',
+    spread: 0,
+  },
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: '1px',
+    blur: '4px',
+    spread: 0,
+  },
+];
+export const GL_SHADOW_MD = [
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: 0,
+    blur: '1px',
+    spread: 0,
+  },
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: 0,
+    blur: '2px',
+    spread: 0,
+  },
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: '2px',
+    blur: '8px',
+    spread: 0,
+  },
+];
+export const GL_SHADOW_LG = [
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: 0,
+    blur: '2px',
+    spread: 0,
+  },
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: 0,
+    blur: '2px',
+    spread: 0,
+  },
+  {
+    color: 'rgba(05, 05, 06, 0.4)',
+    offsetX: 0,
+    offsetY: '4px',
+    blur: '12px',
+    spread: 0,
+  },
+];
+export const GL_SHADOW_COLOR_DEFAULT = 'rgba(05, 05, 06, 0.4)';
 export const GL_SPACING_SCALE_0 = '0';
 export const GL_SPACING_SCALE_1 = '0.125rem';
 export const GL_SPACING_SCALE_2 = '0.25rem';
@@ -1086,7 +1149,6 @@ export const GL_ICON_COLOR_INFO = '#9dc7f1';
 export const GL_ICON_COLOR_WARNING = '#d99530';
 export const GL_ICON_COLOR_DANGER = '#f6806d';
 export const GL_ICON_COLOR_SUCCESS = '#52b87a';
-export const GL_SHADOW_COLOR_DEFAULT = 'rgba(05, 05, 06, 0.4)';
 export const GL_STATUS_NEUTRAL_BACKGROUND_COLOR = '#3a383f';
 export const GL_STATUS_NEUTRAL_TEXT_COLOR = '#bfbfc3';
 export const GL_STATUS_NEUTRAL_ICON_COLOR = '#a4a3a8';

@@ -1,0 +1,87 @@
+{
+  "shadow": {
+    "sm": {
+      "$value": [
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": "1px",
+          "blur": "4px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "md": {
+      "$value": [
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "1px",
+          "spread": 0
+        },
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": "2px",
+          "blur": "8px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for surfaces that need boundary definition and appear on hover. For example, popovers.",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    },
+    "lg": {
+      "$value": [
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "{shadow.color.default}",
+          "offsetX": 0,
+          "offsetY": "4px",
+          "blur": "12px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for large surfaces that present additional context to the user.",
+      "$extensions": {
+        "com.figma.scope": []
+      }
+    }
+  }
+}
