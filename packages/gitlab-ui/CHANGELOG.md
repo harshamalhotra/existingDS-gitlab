@@ -1,5 +1,12 @@
 # @gitlab/ui
 
+## 123.0.0
+
+### Major Changes
+
+- 81fbcea: Breaking change. Root element of GlAvatarLabeled no longer inherits attributes.
+  The attributes are now explicitly defined as props and passed to the GlAvatar component.
+
 ## 122.14.0
 
 ### Minor Changes
