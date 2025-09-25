@@ -29,6 +29,13 @@ describe('avatar labeled', () => {
     expect(wrapper.findComponent(Avatar).props('alt')).not.toEqual(altText);
   });
 
+  it('pass attributes to avatar and does not set on parent', () => {
+    buildWrapper({ itemprop: 'logo' });
+
+    expect(wrapper.findComponent(Avatar).attributes('itemprop')).toBe('logo');
+    expect(wrapper.attributes('itemprop')).not.toEqual(expect.any(String));
+  });
+
   it('displays the avatar label', () => {
     buildWrapper({ label });
 
@@ -126,5 +133,20 @@ describe('avatar labeled', () => {
     it('does not display any link', () => {
       expect(wrapper.findAllComponents(GlLink).exists()).toBe(false);
     });
+  });
+
+  it('passes avatar props to Avatar component', () => {
+    const avatarProps = {
+      entityId: 1,
+      entityName: 'foo',
+      src: 'foo.jpg',
+      fallbackOnError: true,
+      size: 48,
+      shape: 'circle',
+    };
+
+    buildWrapper(avatarProps);
+
+    expect(wrapper.findComponent(Avatar).props()).toMatchObject(avatarProps);
   });
 });
