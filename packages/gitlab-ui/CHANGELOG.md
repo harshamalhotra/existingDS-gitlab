@@ -1,5 +1,16 @@
 # @gitlab/ui
 
+## 123.1.0
+
+### Minor Changes
+
+- d68c10e: Define shadow design tokens
+
+  Add box shadow design tokens to Tailwind config
+  Update StyleDictionary transform groups with `gitlab/` namespace
+  Add `shadow/css/shorthand` transform to CSS/SCSS transform groups
+  Add `getTokenCssCustomProperty` utility to Tailwind token formatter
+
 ## 123.0.0
 
 ### Major Changes
