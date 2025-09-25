@@ -14557,7 +14557,7 @@ lefthook-windows-x64@1.13.4:
   resolved "https://registry.yarnpkg.com/lefthook-windows-x64/-/lefthook-windows-x64-1.13.4.tgz#821ee4a1d100a2e0635c3c89ece6c25458004494"
   integrity sha512-p2YfWuj/43gUT0nHJ6j0pTRpLLwX9n2bio60POuXOrr3RVxdv5MEaQchdRhqYG5uWj7Zsm86K9FWkNuxPG81IA==
 
-lefthook@^1.13.2:
+lefthook@^1.13.4:
   version "1.13.4"
   resolved "https://registry.yarnpkg.com/lefthook/-/lefthook-1.13.4.tgz#49a8ff76e55876aaac193d43271ab9b72d1fac91"
   integrity sha512-4EJfkcNlZW69ISxyEuBzkyivER/XIVCJcGYTemVBf5DWlBwK97hSrbgDH8O5JuHiCR5lW83hDa1T5TW/dRfnGg==
