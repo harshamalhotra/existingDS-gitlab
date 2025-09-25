@@ -44512,5 +44512,206 @@
       ],
       "cssWithValue": "var(--gl-zindex-9999, 9999)"
     }
+  },
+  "boxShadow": {
+    "sm": {
+      "key": "{shadow.sm}",
+      "$value": [
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": "1px",
+          "blur": "4px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/shadow.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": [
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": 0,
+            "blur": "2px",
+            "spread": 0
+          },
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": "1px",
+            "blur": "4px",
+            "spread": 0
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{shadow.sm}"
+      },
+      "name": "SHADOW_SM",
+      "attributes": {},
+      "path": [
+        "shadow",
+        "sm"
+      ],
+      "cssWithValue": "var(--gl-shadow-sm)"
+    },
+    "md": {
+      "key": "{shadow.md}",
+      "$value": [
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "1px",
+          "spread": 0
+        },
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": "2px",
+          "blur": "8px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for surfaces that need boundary definition and appear on hover. For example, popovers.",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/shadow.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": [
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": 0,
+            "blur": "1px",
+            "spread": 0
+          },
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": 0,
+            "blur": "2px",
+            "spread": 0
+          },
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": "2px",
+            "blur": "8px",
+            "spread": 0
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Used for surfaces that need boundary definition and appear on hover. For example, popovers.",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{shadow.md}"
+      },
+      "name": "SHADOW_MD",
+      "attributes": {},
+      "path": [
+        "shadow",
+        "md"
+      ],
+      "cssWithValue": "var(--gl-shadow-md)"
+    },
+    "lg": {
+      "key": "{shadow.lg}",
+      "$value": [
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": 0,
+          "blur": "2px",
+          "spread": 0
+        },
+        {
+          "color": "rgba(05, 05, 06, 0.16)",
+          "offsetX": 0,
+          "offsetY": "4px",
+          "blur": "12px",
+          "spread": 0
+        }
+      ],
+      "$type": "shadow",
+      "$description": "Used for large surfaces that present additional context to the user.",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/constant/shadow.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": [
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": 0,
+            "blur": "2px",
+            "spread": 0
+          },
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": 0,
+            "blur": "2px",
+            "spread": 0
+          },
+          {
+            "color": "{shadow.color.default}",
+            "offsetX": 0,
+            "offsetY": "4px",
+            "blur": "12px",
+            "spread": 0
+          }
+        ],
+        "$type": "shadow",
+        "$description": "Used for large surfaces that present additional context to the user.",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{shadow.lg}"
+      },
+      "name": "SHADOW_LG",
+      "attributes": {},
+      "path": [
+        "shadow",
+        "lg"
+      ],
+      "cssWithValue": "var(--gl-shadow-lg)"
+    }
   }
 }

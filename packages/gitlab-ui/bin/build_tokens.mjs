@@ -49,7 +49,7 @@ const hasDefaultAndDarkValues = (token) =>
  * https://styledictionary.com/reference/api/#registertransform
  */
 StyleDictionary.registerTransform({
-  name: 'name/stripPrefix',
+  name: 'gitlab/name/stripPrefix',
   type: 'name',
   filter: (token) => {
     // Prefix is added by `name/*` transform.
@@ -62,7 +62,7 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransform({
-  name: 'value/default',
+  name: 'gitlab/value/default',
   type: 'value',
   transitive: true,
   filter: (token) => {
@@ -74,7 +74,7 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransform({
-  name: 'value/dark',
+  name: 'gitlab/value/dark',
   type: 'value',
   transitive: true,
   filter: (token) => {
@@ -91,22 +91,32 @@ StyleDictionary.registerTransform({
  */
 StyleDictionary.registerTransformGroup({
   name: 'css/default',
-  transforms: ['value/default', 'name/kebab', 'name/stripPrefix'],
+  transforms: [
+    'gitlab/value/default',
+    'name/kebab',
+    'gitlab/name/stripPrefix',
+    'shadow/css/shorthand',
+  ],
 });
 
 StyleDictionary.registerTransformGroup({
   name: 'js/default',
-  transforms: ['value/default', 'name/constant', 'name/stripPrefix'],
+  transforms: ['gitlab/value/default', 'name/constant', 'gitlab/name/stripPrefix'],
 });
 
 StyleDictionary.registerTransformGroup({
   name: 'css/dark',
-  transforms: ['value/dark', 'name/kebab', 'name/stripPrefix'],
+  transforms: [
+    'gitlab/value/dark',
+    'name/kebab',
+    'gitlab/name/stripPrefix',
+    'shadow/css/shorthand',
+  ],
 });
 
 StyleDictionary.registerTransformGroup({
   name: 'js/dark',
-  transforms: ['value/dark', 'name/constant', 'name/stripPrefix'],
+  transforms: ['gitlab/value/dark', 'name/constant', 'gitlab/name/stripPrefix'],
 });
 
 /**
@@ -143,7 +153,7 @@ StyleDictionary.registerFormat({
     const formatToken = (token) => {
       return {
         ...token,
-        cssWithValue: f.cssCustomPropertyWithValue(token),
+        cssWithValue: f.getCssCustomProperty(token),
       };
     };
 
@@ -252,6 +262,12 @@ StyleDictionary.registerFormat({
     const opacity = formatTokens(COMPILED_TOKENS.opacity);
     const zindexes = formatTokens(COMPILED_TOKENS.zindex);
 
+    const boxShadow = {
+      sm: formatToken(COMPILED_TOKENS.shadow.sm),
+      md: formatToken(COMPILED_TOKENS.shadow.md),
+      lg: formatToken(COMPILED_TOKENS.shadow.lg),
+    };
+
     const tokens = {
       background: backgroundColors,
       border: borderColors,
@@ -263,6 +279,7 @@ StyleDictionary.registerFormat({
       borderRadius: borderRadiuses,
       opacity,
       zIndex: zindexes,
+      boxShadow,
     };
 
     // Format as JSON
@@ -306,6 +323,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const borderRadius = getScalesAndCSSCustomProperties(COMPILED_TOKENS.borderRadius);
   const opacity = getScalesAndCSSCustomProperties(COMPILED_TOKENS.opacity);
   const zindexes = getScalesAndCSSCustomProperties(COMPILED_TOKENS.zIndex);
+  const boxShadow = getScalesAndCSSCustomProperties(COMPILED_TOKENS.boxShadow);
 
   const statusColorObjects = generateColorMap(COMPILED_TOKENS, statusVariants, 'status');
   const feedbackColorObjects = generateColorMap(COMPILED_TOKENS, feedbackVariants, 'feedback');
@@ -336,6 +354,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const borderRadius = ${JSON.stringify(borderRadius)};
   const opacity = ${JSON.stringify(opacity)};
   const zindexes = ${JSON.stringify(zindexes)};
+  const boxShadow = ${JSON.stringify(boxShadow)};
 
   const colors = {
     inherit: 'inherit',
@@ -419,6 +438,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
     borderRadius,
     opacity,
     zIndex: zindexes,
+    boxShadow,
   }
   `;
 };

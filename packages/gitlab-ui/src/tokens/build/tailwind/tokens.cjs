@@ -421,6 +421,11 @@ const zindexes = {
   200: 'var(--gl-zindex-200, 200)',
   9999: 'var(--gl-zindex-9999, 9999)',
 };
+const boxShadow = {
+  sm: 'var(--gl-shadow-sm)',
+  md: 'var(--gl-shadow-md)',
+  lg: 'var(--gl-shadow-lg)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -506,4 +511,5 @@ module.exports = {
   borderRadius,
   opacity,
   zIndex: zindexes,
+  boxShadow,
 };
