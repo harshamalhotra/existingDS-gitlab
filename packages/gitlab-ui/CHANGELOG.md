@@ -1,5 +1,16 @@
 # @gitlab/ui
 
+## 123.2.0
+
+### Minor Changes
+
+- 1127169: Make gl-popover customClasses flexible
+
+  Previously, the `<gl-popover>` `customClasses` prop only accepted arrays.
+
+  This change adds the option to additionaly pass in both Strings and Objects, so the API for adding
+  custom classes across all components stays consistent.
+
 ## 123.1.0
 
 ### Minor Changes
