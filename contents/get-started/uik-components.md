@@ -235,7 +235,7 @@ Moving styles between libraries differs significantly from moving components. Yo
 ### Recommended workflow
 
 1. Open source and destination files, not in a branch.
-1. Cut style from source library branch, paste in destination library branch. Avoid style changes to simplify migration.
+1. Cut style from source library, paste in destination library. Avoid style changes to simplify migration.
 1. Publish destination library with 'Move to this file' option.
 1. Check source library for publish options. The moved component should not be there.
    - **⚠️ If it is, STOP. Something has gone wrong.**
