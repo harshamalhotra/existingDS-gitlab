@@ -90,9 +90,9 @@ export default {
      * CSS classes to apply to the title popover (gets passed to the `css-classes` prop of the `GlPopover` component).
      */
     titlePopoverClasses: {
-      type: Array,
+      type: [Array, String, Object],
       required: false,
-      default: () => [],
+      default: '',
     },
     /**
      * Set to `true` to show the loading state.

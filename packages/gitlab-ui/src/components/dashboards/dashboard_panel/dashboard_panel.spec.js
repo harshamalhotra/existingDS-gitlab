@@ -29,9 +29,9 @@ describe('GlDashboardPanel', () => {
         GlPopover: {
           props: {
             cssClasses: {
-              type: Array,
+              type: [Array, String, Object],
               required: false,
-              default: () => [],
+              default: '',
             },
           },
           template: `<div>
@@ -435,24 +435,23 @@ describe('GlDashboardPanel', () => {
     });
   });
 
-  describe('when titlePopoverClasses are provided', () => {
-    const customClasses = ['custom-popover-class', 'another-class'];
-
-    beforeEach(() => {
-      createWrapper({
-        props: {
-          title: 'Panel Title',
-          titlePopover: {
-            description: 'This is just information.',
+  describe('with titlePopoverClasses', () => {
+    it.each(['custom-popover-class', ['custom-popover-class'], { 'custom-popover-class': true }])(
+      'passes the custom classes to the popover css-classes prop',
+      (customClasses) => {
+        createWrapper({
+          props: {
+            title: 'Panel Title',
+            titlePopover: {
+              description: 'This is just information.',
+            },
+            titlePopoverClasses: customClasses,
           },
-          titlePopoverClasses: customClasses,
-        },
-      });
-    });
+        });
 
-    it('passes the custom classes to the popover css-classes prop', () => {
-      expect(findPanelTitlePopover().props('cssClasses')).toEqual(customClasses);
-    });
+        expect(findPanelTitlePopover().props('cssClasses')).toEqual(customClasses);
+      },
+    );
   });
 
   describe('when there are actions', () => {

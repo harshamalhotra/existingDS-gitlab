@@ -85,7 +85,7 @@ export default {
       show-close-button
       :placement="popoverPlacement"
       :target="triggerId"
-      :css-classes="['!gl-z-9999']"
+      css-classes="!gl-z-9999"
       :title="activeType.POPOVER_TITLE"
     >
       <gl-sprintf :message="activeType.POPOVER_CONTENT">

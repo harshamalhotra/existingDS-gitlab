@@ -17,9 +17,9 @@ export default {
   inheritAttrs: false,
   props: {
     cssClasses: {
-      type: Array,
+      type: [Array, String, Object],
       required: false,
-      default: () => [],
+      default: '',
     },
     /**
      * Space-separated triggers for the popover.
@@ -61,7 +61,7 @@ export default {
         'gl-popover',
         this.hasTitle && 'has-title',
         this.showCloseButton && 'has-close-button',
-        ...this.cssClasses,
+        ...this.normalizedCssClasses(this.cssClasses),
       ]
         .filter(Boolean)
         .join(' ');
@@ -71,6 +71,24 @@ export default {
     },
   },
   methods: {
+    /**
+     * `cssClasses can be a string, an array, or an object. This method normalizes it to an array
+     */
+    normalizedCssClasses(cssClasses) {
+      if (Array.isArray(cssClasses)) {
+        return cssClasses;
+      }
+
+      if (typeof cssClasses === 'string') {
+        return cssClasses.trim() ? cssClasses.trim().split(/\s+/) : [];
+      }
+
+      if (cssClasses && typeof cssClasses === 'object') {
+        return Object.keys(cssClasses).filter((key) => cssClasses[key]);
+      }
+
+      return [];
+    },
     close(e) {
       this.$refs[popoverRefName].doClose();
       /**
