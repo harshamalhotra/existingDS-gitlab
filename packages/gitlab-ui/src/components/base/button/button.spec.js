@@ -268,6 +268,139 @@ describe('button component', () => {
     expect(wrapper.classes()).toContain('btn-icon');
   });
 
+  describe('count prop', () => {
+    it('renders count when count is provided', () => {
+      buildWrapper({
+        propsData: {
+          count: 5,
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const countElement = wrapper.find('.gl-button-count');
+      expect(countElement.exists()).toBe(true);
+      expect(countElement.text()).toBe('5');
+    });
+
+    it('does not render count when count is null', () => {
+      buildWrapper({
+        propsData: {
+          count: null,
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const countElement = wrapper.find('.gl-button-count');
+      expect(countElement.exists()).toBe(false);
+    });
+
+    it('does not render count when count is undefined', () => {
+      buildWrapper({
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const countElement = wrapper.find('.gl-button-count');
+      expect(countElement.exists()).toBe(false);
+    });
+
+    it('renders count when count is 0', () => {
+      buildWrapper({
+        propsData: {
+          count: 0,
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const countElement = wrapper.find('.gl-button-count');
+      expect(countElement.exists()).toBe(true);
+      expect(countElement.text()).toBe('0');
+    });
+
+    it('renders screen reader text when countSrText is provided', () => {
+      buildWrapper({
+        propsData: {
+          count: 3,
+          countSrText: 'pending comments',
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const srElement = wrapper.find('.gl-sr-only');
+      expect(srElement.exists()).toBe(true);
+      expect(srElement.text()).toBe('pending comments');
+    });
+
+    it('does not render screen reader text when countSrText is not provided', () => {
+      buildWrapper({
+        propsData: {
+          count: 3,
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const srElement = wrapper.find('.gl-sr-only');
+      expect(srElement.exists()).toBe(false);
+    });
+
+    it('does not render screen reader text when count is not provided', () => {
+      buildWrapper({
+        propsData: {
+          countSrText: 'pending comments',
+        },
+        slots: {
+          default: 'Button text',
+        },
+      });
+
+      const srElement = wrapper.find('.gl-sr-only');
+      expect(srElement.exists()).toBe(false);
+    });
+
+    it('does not treat button as icon-only when count is present', () => {
+      buildWrapper({
+        propsData: {
+          icon: 'star-o',
+          count: 3,
+        },
+      });
+
+      expect(wrapper.classes()).not.toContain('btn-icon');
+    });
+
+    it('treats button as icon-only when count is null', () => {
+      buildWrapper({
+        propsData: {
+          icon: 'star-o',
+          count: null,
+        },
+      });
+
+      expect(wrapper.classes()).toContain('btn-icon');
+    });
+
+    it('treats button as icon-only when count is undefined', () => {
+      buildWrapper({
+        propsData: {
+          icon: 'star-o',
+        },
+      });
+
+      expect(wrapper.classes()).toContain('btn-icon');
+    });
+  });
+
   it('passes link props to GlLink', () => {
     buildWrapper({
       propsData: {

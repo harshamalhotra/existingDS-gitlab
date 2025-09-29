@@ -772,6 +772,7 @@ $gl-button-selected-border-color-active: $gl-color-alpha-0; // Used for the bord
 $gl-button-disabled-foreground-color: $gl-color-neutral-400; // Used for the foreground of a disabled button.
 $gl-button-disabled-background-color: rgba(137, 136, 141, 0.16); // Used for the background of a disabled button.
 $gl-button-disabled-border-color: $gl-color-alpha-0; // Used for the border of a disabled button.
+$gl-button-count-background-color: $gl-color-alpha-light-16; // Used for the background of a button count element.
 $gl-chart-axis-line-color: $gl-color-neutral-700; // Used in charts for axis line color.
 $gl-chart-threshold-line-color: $gl-color-red-600; // Used in charts to divide a threshold area in a chart from other data.
 $gl-chart-zoom-filler-color: $gl-color-alpha-light-16; // Used in charts for the overlay color when zooming in on a specific area of data.

@@ -1591,6 +1591,24 @@
           }
         }
       }
+    },
+    "count": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.alpha.dark.8}",
+            "dark": "{color.alpha.light.16}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a button count element.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      }
     }
   }
 }

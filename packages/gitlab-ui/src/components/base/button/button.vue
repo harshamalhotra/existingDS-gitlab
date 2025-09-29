@@ -214,13 +214,29 @@ export default {
       // so we must set it as `null` here to be a true tri-state prop
       default: null,
     },
+    /**
+     * Display a count badge next to the button text.
+     */
+    count: {
+      type: Number,
+      required: false,
+      default: null,
+    },
+    /**
+     * Screen reader text to provide context for the count value.
+     */
+    countSrText: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   computed: {
     hasIcon() {
       return this.icon !== '';
     },
     hasIconOnly() {
-      return isSlotEmpty(this, 'default') && this.hasIcon;
+      return isSlotEmpty(this, 'default') && this.hasIcon && this.count == null;
     },
     isButtonDisabled() {
       return this.disabled || this.loading;
@@ -329,6 +345,9 @@ export default {
 
       return this.tag;
     },
+    hasCount() {
+      return this.count != null && this.count >= 0;
+    },
   },
   mounted() {
     // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
@@ -373,6 +392,12 @@ export default {
     <gl-loading-icon v-if="loading" inline class="gl-button-icon gl-button-loading-indicator" />
     <gl-icon v-if="hasIcon && !(hasIconOnly && loading)" class="gl-button-icon" :name="icon" />
     <slot name="emoji"></slot>
-    <span v-if="!hasIconOnly" :class="buttonTextClasses" class="gl-button-text"><slot></slot></span>
+    <span v-if="!hasIconOnly" :class="buttonTextClasses" class="gl-button-text">
+      <slot></slot>
+      <span v-if="hasCount" class="gl-button-count">
+        {{ count }}
+        <span v-if="countSrText" class="gl-sr-only">{{ countSrText }}</span>
+      </span>
+    </span>
   </component>
 </template>

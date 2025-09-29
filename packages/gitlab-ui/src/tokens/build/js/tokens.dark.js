@@ -678,6 +678,7 @@ export const GL_BUTTON_SELECTED_BORDER_COLOR_ACTIVE = 'transparent';
 export const GL_BUTTON_DISABLED_FOREGROUND_COLOR = '#89888d';
 export const GL_BUTTON_DISABLED_BACKGROUND_COLOR = 'rgba(137, 136, 141, 0.16)';
 export const GL_BUTTON_DISABLED_BORDER_COLOR = 'transparent';
+export const GL_BUTTON_COUNT_BACKGROUND_COLOR = 'rgba(255, 255, 255, 0.16)';
 export const GL_CARD_BORDER_RADIUS = '0.25rem';
 export const GL_CHART_AXIS_POINTER_COLOR = '#bfbfc3';
 export const GL_CHART_AXIS_LINE_COLOR = '#4c4b51';

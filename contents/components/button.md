@@ -32,7 +32,11 @@ related:
 
 <story-viewer component="base-button" story="label-button" title="Label button"></story-viewer>
 
-<story-viewer component="base-button" story="badges" title="Buttons with badges"></story-viewer>
+<story-viewer component="base-button" story="button-with-count" title="Buttons with counts"></story-viewer>
+
+<story-viewer component="base-button" story="button-with-badge" title="Buttons with badges"></story-viewer>
+
+<story-viewer component="base-button" story="badge-with-sr-only-text" title="Badge with screen reader text"></story-viewer>
 
 <story-viewer component="base-button" story="dropdown-button" title="Dropdown button" iframe-padding="0 0 50px 0"></story-viewer>
 
@@ -52,7 +56,7 @@ related:
 1. **Label**: Text clarifying the action.
 1. **Dropdown**: [chevron-down](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-down) icon indicating a dropdown menu.
 1. **Emoji**: Pictogram character.
-1. **Badge** (optional): Counts the number of items or provides a status related to the action.
+1. **Count** or **Badge** (optional): Display the number of items or provide a status related to the action.
 
 ## Guidelines
 
@@ -124,12 +128,31 @@ Use either an icon or text in buttons, not both, as neither should require the o
 - Only use icons from [GitLab's SVG library](http://gitlab-org.gitlab.io/gitlab-svgs/).
 - Icons use the default size (16×16px).
 
+#### Count
+
+A button can display a numeric count next to the button label. Use the `count-sr-text` prop to provide screen reader context for the count value. For example "pending comments" or "unread notifications" and so on. Counts are intended for quantities and numeric values.
+
+```html
+<!-- live-example -->
+<!-- Basic count -->
+<gl-button :count="5">Things</gl-button>
+
+<!-- Count with accessibility context -->
+<gl-button variant="confirm" :count="3" count-sr-text="pending comments">Your review</gl-button>
+```
+
 #### Badges
 
-- A single [badge](/components/badge) can be used to the right of a text label to indicate status or a numeric count.
-- A badge that includes a numeric count should be followed by a `<span>` with the `sr-only` class providing a text description of what's being counted.
-- The badge variant should match the button variant. For example, a danger badge within a danger button.
-- The badge size should match the button size. For example, a small badge within a small button.
+- A single [badge](/components/badge) can be added to the right of the button label to indicate status or provide additional context beyond simple counts.
+- The badge variant should complement the button variant for visual harmony. Note: Not all button and badge combinations work together in all modes.
+
+```html
+<!-- live-example -->
+<gl-button buttonTextClasses="gl-flex gl-items-center">
+  Find my bug
+  <gl-badge variant="info" class="gl-ml-3">Zap</gl-badge>
+</gl-button>
+```
 
 ### Alignment
 
@@ -138,39 +161,39 @@ Multiple alignments can be combined within a single screen, but not within an in
 
 - **Left alignment**: In page content and forms where the content is typically unconstrained other than by the grid layout. In these instances an F-pattern (top to bottom and left to right in a horizontal movement) is common for reading flow, and buttons align with other content on the page like headings, lists, input labels, and form labels. Left alignment is a benefit for [accessibility](/accessibility/best-practices) in many ways, including reading flow, focus order, and page zoom where right-aligned buttons may be initially off screen.
   <grid>
-    <figure-img alt="A group of two buttons aligned to the left at the bottom of a form" label="Left-aligned buttons in a form" src="/img/buttons-left-alignment.png" width="332"></figure-img>
-    <figure-img alt="A page flow where several sets of buttons are aligned to the left of the page" label="Left-aligned buttons in a page flow" src="/img/buttons-left-alignment-2.png" width="332"></figure-img>
+  <figure-img alt="A group of two buttons aligned to the left at the bottom of a form" label="Left-aligned buttons in a form" src="/img/buttons-left-alignment.png" width="332"></figure-img>
+  <figure-img alt="A page flow where several sets of buttons are aligned to the left of the page" label="Left-aligned buttons in a page flow" src="/img/buttons-left-alignment-2.png" width="332"></figure-img>
   </grid>
 - **Right alignment**: In constrained containers like modals and dialogs, flows that continue in a progressive direction, actions with a global impact, and toolbars. In these instances a Z-pattern (top to bottom and left to right with a diagonal, scanning movement) is common for reading flow. In these instances a user may be taking a progressive action, like affirming a modal, or an action upon a section, like formatting text in a comment.
   <grid>
-    <figure-img alt="A group of two buttons aligned to the right in a modal" label="Right-aligned buttons in a modal" src="/img/buttons-right-alignment.png" width="332"></figure-img>
-    <figure-img alt="A sidebar with stacked sections of settings where each section has an edit button on the right" label="Right-aligned buttons in a sidebar with multiple settings" src="/img/buttons-right-alignment-2.png" width="332"></figure-img>
-    <figure-img alt="A group of two buttons aligned to the top right of a page" label="Right-aligned buttons as global actions" src="/img/buttons-right-alignment-3.png" width="332"></figure-img>
-    <figure-img alt="Two unique toolbars with actions above and to the right of the content they act upon" label="Right-aligned buttons in toolbars" src="/img/buttons-right-alignment-4.png" width="332"></figure-img>
+  <figure-img alt="A group of two buttons aligned to the right in a modal" label="Right-aligned buttons in a modal" src="/img/buttons-right-alignment.png" width="332"></figure-img>
+  <figure-img alt="A sidebar with stacked sections of settings where each section has an edit button on the right" label="Right-aligned buttons in a sidebar with multiple settings" src="/img/buttons-right-alignment-2.png" width="332"></figure-img>
+  <figure-img alt="A group of two buttons aligned to the top right of a page" label="Right-aligned buttons as global actions" src="/img/buttons-right-alignment-3.png" width="332"></figure-img>
+  <figure-img alt="Two unique toolbars with actions above and to the right of the content they act upon" label="Right-aligned buttons in toolbars" src="/img/buttons-right-alignment-4.png" width="332"></figure-img>
   </grid>
 - **Center alignment**: Only used for empty states where content is promotional or the actions are the only ones available in context.
   <figure-img alt="Centered buttons at the bottom of empty state content" label="Center-aligned buttons in an empty state" src="/img/buttons-center-alignment.png" width="332"></figure-img>
 - **Right to left languages**: Reverse button alignment for right-to-left languages while maintaining the same order.
 - **Additional considerations:**
   <grid>
-    <do>
-      <figure-img class="!gl-my-0" alt="Buttons in a group" label="Keep buttons visually grouped" src="/img/buttons-do-group.svg"></figure-img>
-    </do>
-    <dont>
-      <figure-img class="!gl-my-0" alt="Buttons that should be in a group are separated" label="Separate buttons or mix alignment." src="/img/buttons-dont-separate.svg"></figure-img>
-    </dont>
-    <do>
-      <figure-img class="!gl-my-0" alt="Destructive button separated from other actions" label="Keep destructive buttons separate" src="/img/buttons-with-danger-do-separate.svg"></figure-img>
-    </do>
-    <dont>
-      <figure-img class="!gl-my-0" alt="Destructive button between other buttons" label="Group destructive buttons with confirmation buttons" src="/img/buttons-with-danger-dont-group.svg"></figure-img>
-    </dont>
-    <do>
-      <figure-img class="!gl-my-0" alt="Buttons presented inline" label="Keep buttons inline when space allows" src="/img/buttons-do-inline.svg"></figure-img>
-    </do>
-    <dont>
-      <figure-img class="!gl-my-0" alt="Buttons wrapping to a new line when there’s room to keep them inline" label="Stack buttons vertically if there is space to place them inline" src="/img/buttons-dont-wrap.svg"></figure-img>
-    </dont>
+  <do>
+  <figure-img class="!gl-my-0" alt="Buttons in a group" label="Keep buttons visually grouped" src="/img/buttons-do-group.svg"></figure-img>
+  </do>
+  <dont>
+  <figure-img class="!gl-my-0" alt="Buttons that should be in a group are separated" label="Separate buttons or mix alignment." src="/img/buttons-dont-separate.svg"></figure-img>
+  </dont>
+  <do>
+  <figure-img class="!gl-my-0" alt="Destructive button separated from other actions" label="Keep destructive buttons separate" src="/img/buttons-with-danger-do-separate.svg"></figure-img>
+  </do>
+  <dont>
+  <figure-img class="!gl-my-0" alt="Destructive button between other buttons" label="Group destructive buttons with confirmation buttons" src="/img/buttons-with-danger-dont-group.svg"></figure-img>
+  </dont>
+  <do>
+  <figure-img class="!gl-my-0" alt="Buttons presented inline" label="Keep buttons inline when space allows" src="/img/buttons-do-inline.svg"></figure-img>
+  </do>
+  <dont>
+  <figure-img class="!gl-my-0" alt="Buttons wrapping to a new line when there’s room to keep them inline" label="Stack buttons vertically if there is space to place them inline" src="/img/buttons-dont-wrap.svg"></figure-img>
+  </dont>
   </grid>
 
 ### Order
@@ -178,14 +201,14 @@ Multiple alignments can be combined within a single screen, but not within an in
 - Affirmative actions are positioned to the outer edge of a container. This means that on left-aligned buttons the affirmative action is the left-most action, and on right-aligned buttons, the affirmative action is the right-most action.
 - An affirmative action is something that takes the users further in their journey (for example, Save or Delete), while a dismissive action takes a user back (for example, Cancel). Depending on the context, an affirmative action may be destructive.
   <grid>
-    <figure-img alt="Two buttons with the affirmative one on the left" label="Affirmative action on left edge for left alignment" src="/img/buttons-order-left.png" width="332"></figure-img>
-    <figure-img alt="Two buttons with the affirmative one on the right" label="Affirmative action on right edge for right alignment" src="/img/buttons-order-right.png" width="332"></figure-img>
+  <figure-img alt="Two buttons with the affirmative one on the left" label="Affirmative action on left edge for left alignment" src="/img/buttons-order-left.png" width="332"></figure-img>
+  <figure-img alt="Two buttons with the affirmative one on the right" label="Affirmative action on right edge for right alignment" src="/img/buttons-order-right.png" width="332"></figure-img>
   </grid>
 - The visual hierarchy is primary buttons on the outer edge, followed by secondary buttons, and so on.
 - One exception to the visual hierarchy is an ellipsis button. When using an ellipsis button, place it on the outer edge.
   <grid>
-    <figure-img alt="Button hierarchy from left to right for left alignment" label="Hierarchy from left to right for left alignment" src="/img/buttons-hierarchy-left.png" width="332"></figure-img>
-    <figure-img alt="Button hierarchy from right to left for right alignment" label="Hierarchy from right to left for right alignment" src="/img/buttons-hierarchy-right.png" width="332"></figure-img>
+  <figure-img alt="Button hierarchy from left to right for left alignment" label="Hierarchy from left to right for left alignment" src="/img/buttons-hierarchy-left.png" width="332"></figure-img>
+  <figure-img alt="Button hierarchy from right to left for right alignment" label="Hierarchy from right to left for right alignment" src="/img/buttons-hierarchy-right.png" width="332"></figure-img>
   </grid>
 
 ### Combinations
@@ -344,7 +367,10 @@ sanitization. This component exposes the `is-unsafe-link` prop for that purpose.
 <gl-button
   is-unsafe-link
   download="file.txt"
-  href="data:text/plain;charset=utf-8,GitLab%20is%20awesome">Download</gl-button>
+  href="data:text/plain;charset=utf-8,GitLab%20is%20awesome"
+>
+  Download
+</gl-button>
 ```
 
 [SafeLinkDirective docs]: https://design.gitlab.com/storybook?path=/docs/directives-safe-link-directive--default
