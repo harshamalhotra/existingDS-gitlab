@@ -13,6 +13,9 @@
 # Technical Writing
 /contents/content/ @gitlab-org/technical-writing
 
+# Allow any maintainer to approve changeset files
+/.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
 ##################
 # END Core layer #
 ##################
