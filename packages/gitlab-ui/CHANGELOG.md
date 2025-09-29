@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.3.0
+
+### Minor Changes
+
+- 53c5bc6: Add count and countSrText prop to GlButton
+
 ## 123.2.0
 
 ### Minor Changes
