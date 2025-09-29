@@ -55,6 +55,8 @@ export const Default = (args, { argTypes = {} }) => ({
         :disabled="disabled"
         :loading="loading"
         :selected="selected"
+        :count="count"
+        :count-sr-text="countSrText"
       >
         This is a button
       </gl-button>
@@ -441,7 +443,25 @@ export const Sizes = (args, { argTypes = {} }) => ({
 });
 Sizes.parameters = { controls: { disable: true } };
 
-export const Badges = (args, { argTypes = {} }) => ({
+export const ButtonWithCount = (args, { argTypes = {} }) => ({
+  props: Object.keys(argTypes),
+  components: { GlButton },
+  template: `
+    <div>
+      <gl-button :count="5">Button with count</gl-button>
+      <gl-button variant="confirm" :count="12" class="gl-ml-3">Confirm with count</gl-button>
+      <gl-button variant="danger" category="secondary" :count="0" class="gl-ml-3">Zero count</gl-button>
+      <gl-button size="small" :count="99" class="gl-ml-3">Small with count</gl-button>
+      <div class="gl-mt-3">
+        <gl-button icon="star-o" :count="3">Icon with count</gl-button>
+        <gl-button icon="notifications" :count="7" class="gl-ml-3">Notifications</gl-button>
+      </div>
+    </div>
+  `,
+});
+ButtonWithCount.parameters = { controls: { disable: true } };
+
+export const ButtonWithBadge = (args, { argTypes = {} }) => ({
   props: Object.keys(argTypes),
   components: { GlButton, GlBadge },
   variants: Object.keys(badgeForButtonOptions),
@@ -463,23 +483,23 @@ export const Badges = (args, { argTypes = {} }) => ({
               <div v-for="category in $options.categories" :key="variant + category">
                   <gl-button :key="category" :category="category" :variant="variant" buttonTextClasses="gl-flex gl-items-center">
                       {{ category }} {{ variant }}
-                      <gl-badge :variant="getBadgeVariant(variant)" class="gl-ml-2">00</gl-badge>
+                      <gl-badge :variant="getBadgeVariant(variant)" class="gl-ml-2">Badge</gl-badge>
                   </gl-button>
               </div>
           </template>
       </div>
   `,
 });
-Badges.parameters = { controls: { disable: true } };
+ButtonWithBadge.parameters = { controls: { disable: true } };
 
 export const BadgeWithSROnlyText = (args, { argTypes = {} }) => ({
   props: Object.keys(argTypes),
   components: { GlButton, GlBadge },
   template: `
-      <gl-button variant="confirm" buttonTextClasses="gl-flex gl-items-center">
-          Submit review
-          <gl-badge variant="info" class="gl-ml-2">2</gl-badge>
-          <span class="gl-sr-only">pending comments</span>
+      <gl-button variant="default" buttonTextClasses="gl-flex gl-items-center">
+          Button
+          <gl-badge variant="neutral" class="gl-ml-2">Ready</gl-badge>
+          <span class="gl-sr-only">begin process</span>
       </gl-button>
   `,
 });
@@ -512,6 +532,14 @@ export default {
     target: {
       options: targetOptions,
       control: 'select',
+    },
+    count: {
+      control: 'number',
+      description: 'Display a count badge next to the button label',
+    },
+    countSrText: {
+      control: 'text',
+      description: 'Screen reader text to provide context for the count value',
     },
   },
 };
