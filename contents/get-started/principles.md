@@ -11,6 +11,8 @@ There are two kinds of principles:
 
 Though we take inspiration from other companies, our principles are defined by looking inward. This perspective ensures they are actionable and effective. Just like the rest of our work, we continually adjust our principles and always strive to make them better. Everyone is welcome to suggest improvements by opening an issue and creating a merge request in our [repository](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com)!
 
+📄 <a href="/files/gitlab-design-principles-quick-reference-guide.pdf" target="_blank" rel="noopener">**Download Design Principles Quick Reference Guide (PDF)**</a> - A condensed version of these principles for easy reference.
+
 ## Sophisticated simplicity
 
 GitLab is a product that supports people in their daily work. We respect the importance of their efforts and avoid unnecessary gimmicks. To that end, we work towards [sophisticated simplicity](https://handbook.gitlab.com/handbook/product/ux/product-designer/#aiming-towards-sophisticated-simplicity) in our product: we make thoughtful choices that streamline complex workflows and functionality. These choices help the user stay focused on what matters most.
