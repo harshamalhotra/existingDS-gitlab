@@ -26,10 +26,10 @@ export default {
 
 <template>
   <div class="gl-mt-3">
-    <div class="gl-text-sm gl-text-strong gl-font-monospace">
+    <div class="gl-font-monospace gl-text-sm gl-text-strong">
       {{ className }}
     </div>
-    <div class="gl-mt-1 gl-text-sm gl-text-subtle gl-font-monospace">
+    <div class="gl-mt-1 gl-font-monospace gl-text-sm gl-text-subtle">
       {{ item.value }}
     </div>
   </div>
