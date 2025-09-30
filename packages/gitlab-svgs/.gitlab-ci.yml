@@ -13,20 +13,6 @@ include:
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
-.rules:exclude-fork-mrs:
-  rules:
-    - if: $CI_MERGE_REQUEST_SOURCE_PROJECT_ID && $CI_MERGE_REQUEST_PROJECT_ID != $CI_MERGE_REQUEST_SOURCE_PROJECT_ID
-      when: never
-
-workflow:
-  rules:
-    - if: $CI_MERGE_REQUEST_IID
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
-default:
-  tags:
-    - gitlab-org
-
 .node:
   image: node:20.19.5-bookworm
   cache: &global_cache
@@ -48,32 +34,11 @@ build-and-check:
     - bash ./build_scripts/build-svgs.sh
     - echo "Starting Checks"
     - bash ./build_scripts/svg-lint.sh
-    - yarn run lint
+    # Temporarily disable linting. This will be re-enabled when ESLint is hoisted to the root.
+    # - yarn run lint
   artifacts:
     paths:
       - dist
-
-.publish:
-  extends: .semantic-release
-  needs:
-    - build-and-check
-  stage: deploy
-  before_script:
-    - apk add --update-cache --no-cache bash
-
-publish-to-npm:
-  extends: .publish
-
-publish-to-npm-dry-run:
-  extends:
-    - .publish
-  rules:
-    # Semantic release checks the target repository for the current branch,
-    # which only exists on the source repository, causing a failure.
-    - !reference ['.rules:exclude-fork-mrs', rules]
-    - !reference ['.rules:only-mrs', rules]
-  script:
-    - semantic-release --branches "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" --dry-run --no-ci
 
 .pages:
   extends:
