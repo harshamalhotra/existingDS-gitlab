@@ -18,6 +18,7 @@ const cypressConfig = pluginCypress.configs.recommended;
 cypressConfig.languageOptions.ecmaVersion = 'latest';
 
 const PACKAGE_GITLAB_UI = 'packages/gitlab-ui';
+const PACKAGE_GITLAB_SVGS = 'packages/gitlab-svgs';
 
 const JEST_MOCKS = 'tests/__mocks__/**/*.js';
 
@@ -51,6 +52,9 @@ export default [
       `${PACKAGE_GITLAB_UI}/src/vendor/`,
       `${PACKAGE_GITLAB_UI}/.storybook/docs/`,
       `${PACKAGE_GITLAB_UI}/bin/migrate_custom_utils_to_tw.bundled.mjs`,
+
+      // Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
+      `${PACKAGE_GITLAB_SVGS}/`,
 
       // Do not lint tailwind-documentation files for the initial stage of the merge.
       // This should eventually be removed as it is more integrated into the monorepo.
