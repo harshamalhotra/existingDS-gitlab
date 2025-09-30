@@ -5,15 +5,13 @@ include:
     file: /semantic-release/.gitlab-ci-template.rules.yml
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.2.0
 
-.rules:only-mrs:
-  rules:
-    - if: $CI_MERGE_REQUEST_IID
+.svgs:is-design-gitlab-com-default-branch: &svgs-is-design-gitlab-com-default-branch
+  if: !reference [.is-design-gitlab-com-default-branch, if]
 
-.rules:only-default-branch:
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+.svgs:is-design-gitlab-com-mr: &svgs-is-design-gitlab-com-mr
+  if: !reference [.is-design-gitlab-com-mr, if]
 
-.node:
+.svgs:node:
   image: node:20.19.5-bookworm
   cache: &global_cache
     paths:
@@ -22,10 +20,9 @@ include:
   before_script:
     - yarn install --frozen-lockfile
 
-
-build-and-check:
+svgs:build-and-check:
   extends:
-    - .node
+    - .svgs:node
   stage: build
   cache:
     <<: *global_cache
@@ -40,12 +37,12 @@ build-and-check:
     paths:
       - dist
 
-.pages:
+.svgs:pages:
   extends:
-    - .node
+    - .svgs:node
   stage: deploy
   needs:
-    - build-and-check
+    - svgs:build-and-check
   script:
     # Move static assets to svgpreviewer directory
     - cp -r dist/ svgpreviewer/static/
@@ -66,22 +63,22 @@ build-and-check:
     paths:
       - public
 
-pages:
+svgs:pages:
   extends:
-    - .pages
-    - .rules:only-default-branch
+    - .svgs:pages
   pages:
     expire_in: never
-  environment:
-    name: 'pages'
+  rules:
+    - <<: *svgs-is-design-gitlab-com-default-branch
 
-review-app:
+svgs:review-app:
   extends:
-    - .pages
-    - .rules:only-mrs
+    - .svgs:pages
   pages:
     path_prefix: '$CI_ENVIRONMENT_SLUG'
     expire_in: '2 weeks'
   environment:
     name: 'review/mr-$CI_MERGE_REQUEST_IID'
     auto_stop_in: '2 weeks'
+  rules:
+    - <<: *svgs-is-design-gitlab-com-mr
