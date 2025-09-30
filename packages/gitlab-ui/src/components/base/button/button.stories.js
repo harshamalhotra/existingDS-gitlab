@@ -278,6 +278,7 @@ export const FocusableLoadingButton = (args, { argTypes }) => ({
         :size="size"
         :block="block"
         :disabled="disabled"
+        loading="true"
         :focusable-loading="focusableLoading"
         :selected="selected"
       >

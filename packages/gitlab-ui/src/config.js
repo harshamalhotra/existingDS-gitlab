@@ -39,6 +39,8 @@ export const defaultConfig = {
   firstDayOfWeek: 0, // Defaults to 0 (Sunday)
 };
 
+export const glButtonConfig = {};
+
 let configured = false;
 
 /**
@@ -51,7 +53,7 @@ let configured = false;
  * @property {undefined | boolean} resetConfig Reset the configuration. Useful for tests.
  *
  */
-const setConfigs = ({ translations, firstDayOfWeek } = {}) => {
+const setConfigs = ({ translations, firstDayOfWeek, focusableLoadingButton } = {}) => {
   if (configured) {
     if (process.env.NODE_ENV === 'development') {
       throw new Error('GitLab UI can only be configured once!');
@@ -91,6 +93,23 @@ const setConfigs = ({ translations, firstDayOfWeek } = {}) => {
     }
 
     Object.assign(i18n, translations);
+  }
+
+  // Temporary flag to enable the focusable loading button feature.
+  // This flag allows the feature to be opt-in during the rollout phase,
+  // giving us the flexibility to test and validate its impact on user experience.
+
+  // The global variable `focusableLoadingButton` is set to a boolean value
+  // to indicate whether the button should be disabled while loading.
+
+  // Future Plan:
+  // Once the focusable loading button feature is validated and stable,
+  // we will remove this temporary flag and make the feature the default behavior.
+  // At that point, there will be no need for opt-in or opt-out mechanisms for this feature.
+  if (typeof focusableLoadingButton === 'boolean') {
+    Object.assign(glButtonConfig, {
+      focusableLoadingButton,
+    });
   }
 };
 

@@ -372,6 +372,7 @@ describe('button component', () => {
   it('button has aria-disabled attribute when focusableLoading set', () => {
     buildWrapper({
       propsData: {
+        loading: true,
         focusableLoading: true,
       },
     });
@@ -484,6 +485,7 @@ describe('button component', () => {
 
     buildWrapper({
       propsData: {
+        loading: true,
         focusableLoading: true,
       },
       listeners: {
@@ -493,5 +495,35 @@ describe('button component', () => {
 
     await wrapper.trigger('click');
     expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('does not call the submit method when focusableLoading is set on button and form is submitted via `Enter` command', async () => {
+    const handleSubmit = jest.fn();
+
+    wrapper = mount(
+      {
+        components: {
+          GlButton,
+        },
+        template: `
+          <form @submit.prevent="handleSubmit">
+            <gl-button
+              type="submit"
+              loading
+              focusable-loading
+            >Submit</gl-button>
+          </form>
+        `,
+        methods: {
+          handleSubmit,
+        },
+      },
+      {
+        attachTo: document.body,
+      },
+    );
+
+    await wrapper.find('button').trigger('click');
+    expect(handleSubmit).not.toHaveBeenCalled();
   });
 });

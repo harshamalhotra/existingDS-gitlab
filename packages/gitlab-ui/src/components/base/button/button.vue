@@ -14,6 +14,7 @@ import { isEvent } from '../../../vendor/bootstrap-vue/src/utils/inspect';
 import GlIcon from '../icon/icon.vue';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { ENTER, SPACE } from '../new_dropdowns/constants';
+import { glButtonConfig } from '../../../config';
 
 export default {
   name: 'GlButton',
@@ -88,7 +89,7 @@ export default {
     focusableLoading: {
       type: Boolean,
       required: false,
-      default: false,
+      default: () => glButtonConfig.focusableLoadingButton,
     },
     /**
      * CSS classes to add to the button text.
@@ -234,7 +235,7 @@ export default {
       return this.disabled || this.loading;
     },
     isButtonAriaDisabled() {
-      return this.isButton && this.focusableLoading;
+      return this.focusableLoading && this.isButton && this.loading;
     },
     buttonClasses() {
       const classes = ['btn', 'gl-button', `btn-${this.variant}`, `btn-${this.buttonSize}`];
@@ -337,6 +338,9 @@ export default {
       if (this.isButtonAriaDisabled) {
         const { click, ...otherListeners } = this.$listeners;
         return {
+          click: (event) => {
+            event.preventDefault();
+          },
           keydown: this.onKeydown,
           ...otherListeners,
         };
