@@ -3,9 +3,13 @@
 # We could get these easily if the team was exposed on the roulette object
 # https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/issues/31
 FOUNDATION_UX_REVIEWERS = %w[
+  annabeldunstone
+  clavimoniere
   chrismicek
-  jeldergl
   danmh
+  jeldergl
+  jmiocene
+  seggenberger
 ].freeze
 
 COMPONENT_UX_MAP = {
@@ -85,6 +89,6 @@ if component_labels.any?
   end
 
   markdown("## UX Review")
-  markdown(TABLE_HEADER + rows.join("\n")) unless rows.empty?
+  # markdown(TABLE_HEADER + rows.join("\n")) unless rows.empty?
   markdown(UX_REVIEW_MESSAGE) unless rows.empty?
 end
