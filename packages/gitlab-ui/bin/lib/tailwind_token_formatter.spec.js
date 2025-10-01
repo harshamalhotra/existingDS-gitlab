@@ -5,7 +5,6 @@ import {
   generateBaseColors,
   generateColorMap,
   getTokenCssCustomProperty,
-  TailwindTokenFormatter,
 } from './tailwind_token_formatter';
 
 const tokens = {
@@ -331,54 +330,6 @@ describe('Tailwind Token Formatter', () => {
       expect(getTokenCssCustomProperty(tokens.color.prefixConstant)).toBe(
         'var(--gl-color-prefixConstant)',
       );
-    });
-  });
-
-  describe('TailwindTokenFormatter', () => {
-    let f;
-
-    beforeEach(() => {
-      f = new TailwindTokenFormatter(tokens);
-    });
-
-    describe('#getAliasedToken', () => {
-      it('returns original object of alias', () => {
-        expect(f.getAliasedToken(tokens.color.alias.original.$value)).toBe(tokens.color.constant);
-      });
-    });
-
-    describe('#aliasToCSSCustomProperty', () => {
-      it('returns CSS custom property of alias', () => {
-        expect(
-          f.aliasToCSSCustomProperty(tokens.color.alias.original.$value, tokens.color.alias.$value),
-        ).toBe('var(--color-constant, #000)');
-      });
-    });
-
-    describe('#getTokenCssCustomPropertyWithFallbackValue', () => {
-      it('returns CSS custom property with default value of #000', () => {
-        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.constant)).toBe(
-          'var(--color-constant, #000)',
-        );
-      });
-
-      it('returns CSS custom property with default value of var(--color-constant)', () => {
-        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.alias)).toBe(
-          'var(--color-alias, var(--color-constant, #000))',
-        );
-      });
-
-      it('returns CSS custom property with prefix and default value of #000', () => {
-        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.prefixConstant)).toBe(
-          'var(--gl-color-prefixConstant, #000)',
-        );
-      });
-
-      it('returns CSS custom property with default value of var(--gl-color-constant)', () => {
-        expect(f.getTokenCssCustomPropertyWithFallbackValue(tokens.color.prefixAlias)).toBe(
-          'var(--gl-color-prefixAlias, var(--gl-color-prefixConstant, #000))',
-        );
-      });
     });
   });
 });

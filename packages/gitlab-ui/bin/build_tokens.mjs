@@ -9,10 +9,10 @@ import { fileHeader } from 'style-dictionary/utils';
 import merge from 'lodash/merge.js';
 import { stripDescriptionsPreprocessor } from './lib/build_tokens_config.js';
 import {
-  TailwindTokenFormatter,
   getScalesAndCSSCustomProperties,
   generateBaseColors,
   generateColorMap,
+  getTokenCssCustomProperty,
 } from './lib/tailwind_token_formatter.js';
 
 /**
@@ -147,13 +147,12 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'docs',
   async format({ dictionary }) {
-    const f = new TailwindTokenFormatter(dictionary.tokens);
     const COMPILED_TOKENS = dictionary.tokens;
 
     const formatToken = (token) => {
       return {
         ...token,
-        cssWithValue: f.getCssCustomProperty(token),
+        cssWithValue: getTokenCssCustomProperty(token),
       };
     };
 
