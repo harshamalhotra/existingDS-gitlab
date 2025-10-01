@@ -1,5 +1,15 @@
 # @gitlab/ui
 
+## 123.3.1
+
+### Patch Changes
+
+- 41c2dac: Guard base dropdown's `containsElement` method
+
+  This ensures that consumers' specs don't fail due to not having access
+  to the containsElement method that the BaseDropdown component
+  exposes.
+
 ## 123.3.0
 
 ### Minor Changes
