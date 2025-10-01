@@ -607,6 +607,10 @@
             "path": "drag-and-drop"
           },
           {
+            "title": "Embedded lists",
+            "path": "embedded-lists"
+          },
+          {
             "title": "Empty States",
             "path": "empty-states"
           },
