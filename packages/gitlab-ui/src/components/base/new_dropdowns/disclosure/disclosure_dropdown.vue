@@ -347,7 +347,14 @@ export default {
       if (
         this.autoClose &&
         e.target.closest(ITEM_SELECTOR) &&
-        this.$refs.baseDropdown.containsElement(e.target)
+        // The optional chaining here is to accommodate specs that use shallow mounting.
+        // Ideally, those specs would either:
+        //  - stub out the `BaseDropdown` component to include a stub `containsElement` method, or
+        //  - use a full mount.
+        //
+        // Unfortunately, GitLab has many specs which do neither of these. So the simpler thing to do
+        // is to optionally chain the method call here.
+        this.$refs.baseDropdown.containsElement?.(e.target)
       ) {
         this.closeAndFocus();
       }
