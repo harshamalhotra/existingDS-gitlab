@@ -53,7 +53,7 @@ let configured = false;
  * @property {undefined | boolean} resetConfig Reset the configuration. Useful for tests.
  *
  */
-const setConfigs = ({ translations, firstDayOfWeek, accessibleLoadingButton } = {}) => {
+const setConfigs = ({ translations, firstDayOfWeek, accessibleLoadingButton = false } = {}) => {
   if (configured) {
     if (process.env.NODE_ENV === 'development') {
       throw new Error('GitLab UI can only be configured once!');

@@ -70,27 +70,21 @@ describe('button component', () => {
   });
 
   describe('loading indicator', () => {
-    describe.each([false, true])(
-      'when loading is true and focusableLoading is %p',
-      (focusableLoading) => {
-        beforeEach(() => {
-          buildWrapper({
-            propsData: {
-              loading: true,
-              focusableLoading,
-            },
-          });
-        });
+    beforeEach(() => {
+      buildWrapper({
+        propsData: {
+          loading: true,
+        },
+      });
 
-        it('should render the loading indicator', () => {
-          expect(findLoadingIcon().exists()).toBe(true);
-        });
+      it('should render the loading indicator', () => {
+        expect(findLoadingIcon().exists()).toBe(true);
+      });
 
-        it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
-          expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
-        });
-      },
-    );
+      it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
+        expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
+      });
+    });
   });
 
   describe('custom button text classes', () => {

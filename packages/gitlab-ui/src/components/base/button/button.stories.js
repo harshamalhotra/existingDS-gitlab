@@ -278,7 +278,7 @@ export const AccessibleLoadingButton = (args, { argTypes }) => ({
         :size="size"
         :block="block"
         :disabled="disabled"
-        loading="true"
+        :loading="true"
         :accessible-loading="accessibleLoading"
         :selected="selected"
       >
