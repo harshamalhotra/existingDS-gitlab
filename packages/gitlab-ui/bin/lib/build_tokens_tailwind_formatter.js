@@ -1,27 +1,4 @@
 /**
- * Returns if value is an alias to another token
- * name e.g. {text.color.default}
- *
- * @param {string} value
- * @returns {boolean}
- */
-const isAliasValue = (value) => typeof value === 'string' && value.includes('{');
-
-/**
- * Returns if the original token value is an alias to another token or
- * is an object which has strings that alias to another token
- *
- * @param {string|object} value token.original.value
- * @returns {boolean}
- */
-const hasAliases = (value) => {
-  if (typeof value === 'object') {
-    return Object.values(value).some((val) => isAliasValue(val) || hasAliases(val));
-  }
-  return isAliasValue(value);
-};
-
-/**
  * Returns key/value pairs of token scales and CSS custom properties
  * @param {object} tokens
  * @returns {object} { example: 'var(--gl-token-example, #000)' }
@@ -95,8 +72,6 @@ const getTokenCssCustomProperty = (token) => {
 };
 
 module.exports = {
-  hasAliases,
-  isAliasValue,
   getScalesAndCSSCustomProperties,
   generateBaseColors,
   generateColorMap,

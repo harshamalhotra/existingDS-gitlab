@@ -5,7 +5,7 @@ import {
   generateBaseColors,
   generateColorMap,
   getTokenCssCustomProperty,
-} from './tailwind_token_formatter';
+} from './build_tokens_tailwind_formatter';
 
 const tokens = {
   color: {
