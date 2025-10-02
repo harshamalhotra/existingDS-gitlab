@@ -1907,14 +1907,23 @@
           "color": "{shadow.color.default}",
           "offsetX": 0,
           "offsetY": 0,
-          "blur": "2px",
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
           "spread": 0
         },
         {
           "color": "{shadow.color.default}",
           "offsetX": 0,
-          "offsetY": "1px",
-          "blur": "4px",
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 4,
+            "unit": "px"
+          },
           "spread": 0
         }
       ],
@@ -1930,21 +1939,33 @@
           "color": "{shadow.color.default}",
           "offsetX": 0,
           "offsetY": 0,
-          "blur": "1px",
+          "blur": {
+            "value": 1,
+            "unit": "px"
+          },
           "spread": 0
         },
         {
           "color": "{shadow.color.default}",
           "offsetX": 0,
           "offsetY": 0,
-          "blur": "2px",
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
           "spread": 0
         },
         {
           "color": "{shadow.color.default}",
           "offsetX": 0,
-          "offsetY": "2px",
-          "blur": "8px",
+          "offsetY": {
+            "value": 2,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 8,
+            "unit": "px"
+          },
           "spread": 0
         }
       ],
@@ -1960,21 +1981,33 @@
           "color": "{shadow.color.default}",
           "offsetX": 0,
           "offsetY": 0,
-          "blur": "2px",
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
           "spread": 0
         },
         {
           "color": "{shadow.color.default}",
           "offsetX": 0,
           "offsetY": 0,
-          "blur": "2px",
+          "blur": {
+            "value": 2,
+            "unit": "px"
+          },
           "spread": 0
         },
         {
           "color": "{shadow.color.default}",
           "offsetX": 0,
-          "offsetY": "4px",
-          "blur": "12px",
+          "offsetY": {
+            "value": 4,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 12,
+            "unit": "px"
+          },
           "spread": 0
         }
       ],
