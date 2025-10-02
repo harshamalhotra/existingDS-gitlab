@@ -491,7 +491,7 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('does not call the submit method when accessibleLoading is set on button and form is submitted via `Enter` command', async () => {
+  it('does not call the submit method when accessibleLoading is set on button and form is submitted via button click', async () => {
     const handleSubmit = jest.fn();
 
     wrapper = mount(

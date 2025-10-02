@@ -50,7 +50,7 @@ let configured = false;
  * @template TValue=string
  * @property {undefined | Object} translations Generic translations for component labels to fall back to.
  * @property {undefined | Number} firstDayOfWeek Configured first day of the week, from 0 (Sunday) to 6 (Saturday).
- * @property {undefined | boolean} resetConfig Reset the configuration. Useful for tests.
+ * @property {boolean} [accessibleLoadingButton] Temporary flag to enable accessible loading button.
  *
  */
 const setConfigs = ({ translations, firstDayOfWeek, accessibleLoadingButton = false } = {}) => {
