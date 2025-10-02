@@ -1721,70 +1721,100 @@
   },
   "line-height": {
     "12": {
-      "$value": "0.75rem",
+      "$value": {
+        "value": 0.75,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "16": {
-      "$value": "1rem",
+      "$value": {
+        "value": 1,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "20": {
-      "$value": "1.25rem",
+      "$value": {
+        "value": 1.25,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "24": {
-      "$value": "1.5rem",
+      "$value": {
+        "value": 1.5,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "28": {
-      "$value": "1.75rem",
+      "$value": {
+        "value": 1.75,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "32": {
-      "$value": "2rem",
+      "$value": {
+        "value": 2,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "36": {
-      "$value": "2.25rem",
+      "$value": {
+        "value": 2.25,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "42": {
-      "$value": "2.625rem",
+      "$value": {
+        "value": 2.625,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "44": {
-      "$value": "2.75rem",
+      "$value": {
+        "value": 2.75,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
       }
     },
     "52": {
-      "$value": "3.25rem",
+      "$value": {
+        "value": 3.25,
+        "unit": "rem"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scope": []
