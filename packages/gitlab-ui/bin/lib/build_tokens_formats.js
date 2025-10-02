@@ -254,61 +254,39 @@ const tailwindFormat = async ({ dictionary, file }) => {
       ]),
   );
 
-  const baseColors = generateBaseColors(baseColorsTokens);
-  const themeColors = generateBaseColors(dictionary.tokens.colors.theme);
-  const dataVizColors = generateBaseColors(dictionary.tokens.colors['data-viz']);
-
-  const textColors = getScalesAndCSSCustomProperties(dictionary.tokens.text.color);
-  const backgroundColors = getScalesAndCSSCustomProperties(dictionary.tokens.background.color);
-  const iconColors = getScalesAndCSSCustomProperties(dictionary.tokens.fill.icon);
-  const alphaDarkColors = getScalesAndCSSCustomProperties(dictionary.tokens.colors.alpha.dark);
-  const alphaLightColors = getScalesAndCSSCustomProperties(dictionary.tokens.colors.alpha.light);
-  const borderColors = getScalesAndCSSCustomProperties(dictionary.tokens.border.color);
-  const brandColors = getScalesAndCSSCustomProperties(brandColorsTokens);
-  const spacingScale = getScalesAndCSSCustomProperties(dictionary.tokens.spacing);
-  const borderRadius = getScalesAndCSSCustomProperties(dictionary.tokens.borderRadius);
-  const opacity = getScalesAndCSSCustomProperties(dictionary.tokens.opacity);
-  const zindexes = getScalesAndCSSCustomProperties(dictionary.tokens.zIndex);
-  const boxShadow = getScalesAndCSSCustomProperties(dictionary.tokens.boxShadow);
-  const lineHeight = getScalesAndCSSCustomProperties(dictionary.tokens.lineHeight);
-  const fontFamily = getScalesAndCSSCustomProperties(dictionary.tokens.fontFamily);
-  const fontSize = getScalesAndCSSCustomProperties(dictionary.tokens.fontSize);
-  const fontWeight = getScalesAndCSSCustomProperties(dictionary.tokens.fontWeight);
-
-  const statusColorObjects = generateColorMap(dictionary.tokens, STATUS_VARIANTS, 'status');
   const feedbackColorObjects = generateColorMap(dictionary.tokens, FEEDBACK_VARIANTS, 'feedback');
-
-  const { statusBackgroundColors, statusTextColors, statusFillColors } = statusColorObjects;
-
   const { feedbackBackgroundColors, feedbackTextColors, feedbackFillColors } = feedbackColorObjects;
 
+  const statusColorObjects = generateColorMap(dictionary.tokens, STATUS_VARIANTS, 'status');
+  const { statusBackgroundColors, statusTextColors, statusFillColors } = statusColorObjects;
+
   return `${await fileHeader({ file })}
-  const baseColors = ${JSON.stringify(baseColors)};
-  const themeColors = ${JSON.stringify(themeColors)};
-  const dataVizColors = ${JSON.stringify(dataVizColors)};
+  const baseColors = ${JSON.stringify(generateBaseColors(baseColorsTokens))};
+  const themeColors = ${JSON.stringify(generateBaseColors(dictionary.tokens.colors.theme))};
+  const dataVizColors = ${JSON.stringify(generateBaseColors(dictionary.tokens.colors['data-viz']))};
   const neutralColors = ${JSON.stringify(neutralColors)};
-  const textColors = ${JSON.stringify(textColors)};
-  const backgroundColors = ${JSON.stringify(backgroundColors)};
-  const borderColors = ${JSON.stringify(borderColors)};
-  const iconColors = ${JSON.stringify(iconColors)};
-  const alphaDarkColors = ${JSON.stringify(alphaDarkColors)};
-  const alphaLightColors = ${JSON.stringify(alphaLightColors)};
-  const brandColors = ${JSON.stringify(brandColors)};
+  const textColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.text.color))};
+  const backgroundColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.background.color))};
+  const borderColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.border.color))};
+  const iconColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.fill.icon))};
+  const alphaDarkColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.colors.alpha.dark))};
+  const alphaLightColors = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.colors.alpha.light))};
+  const brandColors = ${JSON.stringify(getScalesAndCSSCustomProperties(brandColorsTokens))};
   const statusBackgroundColors = ${JSON.stringify(statusBackgroundColors)};
   const statusTextColors = ${JSON.stringify(statusTextColors)};
   const statusIconColors = ${JSON.stringify(statusFillColors)};
   const feedbackBackgroundColors = ${JSON.stringify(feedbackBackgroundColors)};
   const feedbackTextColors = ${JSON.stringify(feedbackTextColors)};
   const feedbackIconColors = ${JSON.stringify(feedbackFillColors)};
-  const spacingScale = ${JSON.stringify(spacingScale)};
-  const borderRadius = ${JSON.stringify(borderRadius)};
-  const opacity = ${JSON.stringify(opacity)};
-  const zindexes = ${JSON.stringify(zindexes)};
-  const boxShadow = ${JSON.stringify(boxShadow)};
-  const lineHeight = ${JSON.stringify(lineHeight)};
-  const fontFamily = ${JSON.stringify(fontFamily)};
-  const fontSize = ${JSON.stringify(fontSize)};
-  const fontWeight = ${JSON.stringify(fontWeight)};
+  const spacingScale = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.spacing))};
+  const borderRadius = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.borderRadius))};
+  const opacity = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.opacity))};
+  const zindexes = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.zIndex))};
+  const boxShadow = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.boxShadow))};
+  const lineHeight = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.lineHeight))};
+  const fontFamily = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.fontFamily))};
+  const fontSize = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.fontSize))};
+  const fontWeight = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.fontWeight))};
 
   const colors = {
     inherit: 'inherit',
