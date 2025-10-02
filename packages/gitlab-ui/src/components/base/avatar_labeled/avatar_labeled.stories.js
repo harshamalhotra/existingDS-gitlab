@@ -4,7 +4,7 @@ import GlButton from '../button/button.vue';
 import GlIcon from '../icon/icon.vue';
 import { GlTooltipDirective } from '../../../directives/tooltip/tooltip';
 import { avatarSizeOptions, avatarShapeOptions, tooltipPlacements } from '../../../utils/constants';
-import avatarPath from '../../../../static/img/avatar.png';
+import avatarPath from '../../../../static/img/avatar_1.png';
 import GlAvatarLabeled from './avatar_labeled.vue';
 
 Vue.directive('gl-tooltip', GlTooltipDirective);
@@ -13,7 +13,7 @@ const components = { GlAvatarLabeled };
 
 const generateProps = ({
   label = 'GitLab User',
-  subLabel = '@gitlab',
+  subLabel = '@gitlab-user',
   size = 32,
   shape = 'circle',
   src = avatarPath,
@@ -156,6 +156,7 @@ export const WithLinks = (args, { argTypes }) => ({
     `,
 });
 WithLinks.args = generateProps({
+  src: './img/avatar.png',
   size: 48,
   shape: 'rect',
   label: 'GitLab.org / GitLab',

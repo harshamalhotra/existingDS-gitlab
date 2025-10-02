@@ -1,5 +1,5 @@
-import avatarPath1 from '../../../../static/img/avatar_1.png';
-import avatarPath2 from '../../../../static/img/avatar_2.png';
+import avatarPath1 from '../../../../static/img/avatar.png';
+import avatarPath2 from '../../../../static/img/avatar_pajamas.png';
 import { breadCrumbSizeOptions } from '../../../utils/constants';
 import GlBreadcrumb from './breadcrumb.vue';
 
