@@ -12,7 +12,7 @@ import {
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
-} from './lib/build_tokens_config.js';
+} from './lib/build_tokens_preprocessors.js';
 import {
   getScalesAndCSSCustomProperties,
   generateBaseColors,

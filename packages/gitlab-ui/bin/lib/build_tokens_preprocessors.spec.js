@@ -3,7 +3,7 @@ import {
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
-} from './build_tokens_config';
+} from './build_tokens_preprocessors';
 
 describe('buildTokens', () => {
   describe('stripDescriptionsPreprocessor', () => {
