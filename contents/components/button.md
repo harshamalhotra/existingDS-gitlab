@@ -104,8 +104,10 @@ States change visually and/or programmatically depending on user interaction or 
 - **Loading**: Place a button in the loading state with the `loading` property. The loading status is indicated by the use of a [spinner](/components/spinner), and the button is disabled while the state persists.
   - For [buttons containing text](#combinations), the spinner is added to the left of the button, before the icon or label.
   - For icon buttons, the spinner replaces the icon.
-- **Focusable Loading**: Place a button in the loading state with the `focusableLoading` property. The loading status is indicated by the use of a [spinner](/components/spinner), and the button _acts_ disabled while the state persists.
-  - Unlike **Loading** state, the button is still focusable, `aria-disabled` is set to `true` and events are not emitted.
+- **Accessible Loading**: When both `loading` and `accessibleLoading` are `true`, the button _appears_ disabled and in the loading state `loading`, but remains focusable. In this state:
+  - the Vue `click` event is never fired.
+  - the default behaviour of native `click` events are prevented, and the events are stopped from bubbling.
+  - the `aria-disabled` attribute is set to `true`, and the `disabled` attribute is unset.
 - **Selected**: Acts like a toggle that indicate whether or not an option is in a selected state. To indicate to screen readers that the button functions as a toggle it should have `aria-pressed="true"` to align with the visually selected state, otherwise `aria-pressed="false"`.
 
 ### Content

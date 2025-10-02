@@ -1,6 +1,7 @@
 import { useArgs } from '@storybook/preview-api';
 
 import 'iframe-resizer/js/iframeResizer.contentWindow.min';
+import setConfigs from '../src/config';
 import logoWithBlackText from '../static/img/_logo_with_black_text.svg';
 import logoWithWhiteText from '../static/img/_logo_with_white_text.svg';
 
@@ -37,6 +38,8 @@ const decorators = [
     },
   }),
 ];
+
+setConfigs();
 
 const theme = {
   brandTitle: 'Pajamas Design System',

@@ -26,7 +26,7 @@ const generateProps = ({
   block = false,
   disabled = defaultValue('disabled'),
   loading = defaultValue('loading'),
-  focusableLoading = defaultValue('focusableLoading'),
+  accessibleLoading = defaultValue('accessibleLoading'),
   selected = defaultValue('selected'),
 } = {}) => ({
   category,
@@ -35,7 +35,7 @@ const generateProps = ({
   block,
   disabled,
   loading,
-  focusableLoading,
+  accessibleLoading,
   selected,
   ...(withLink && {
     href,
@@ -268,7 +268,7 @@ export const LoadingButton = (args, { argTypes }) => ({
 });
 LoadingButton.args = generateProps({ loading: true });
 
-export const FocusableLoadingButton = (args, { argTypes }) => ({
+export const AccessibleLoadingButton = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components,
   template: `
@@ -279,14 +279,14 @@ export const FocusableLoadingButton = (args, { argTypes }) => ({
         :block="block"
         :disabled="disabled"
         loading="true"
-        :focusable-loading="focusableLoading"
+        :accessible-loading="accessibleLoading"
         :selected="selected"
       >
         Loading button
       </gl-button>
     `,
 });
-FocusableLoadingButton.args = generateProps({ focusableLoading: true });
+AccessibleLoadingButton.args = generateProps({ accessibleLoading: true });
 
 export const LinkButton = (args, { argTypes }) => ({
   props: Object.keys(argTypes),

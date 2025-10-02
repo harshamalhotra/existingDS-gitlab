@@ -70,27 +70,27 @@ describe('button component', () => {
   });
 
   describe('loading indicator', () => {
-    describe.each`
-      prop                  | value
-      ${'loading'}          | ${true}
-      ${'focusableLoading'} | ${true}
-    `('when $prop prop is set', ({ prop, value }) => {
-      beforeEach(() => {
-        buildWrapper({
-          propsData: {
-            [prop]: value,
-          },
+    describe.each([false, true])(
+      'when loading is true and focusableLoading is %p',
+      (focusableLoading) => {
+        beforeEach(() => {
+          buildWrapper({
+            propsData: {
+              loading: true,
+              focusableLoading,
+            },
+          });
         });
-      });
 
-      it('should render the loading indicator', () => {
-        expect(findLoadingIcon().exists()).toBe(true);
-      });
+        it('should render the loading indicator', () => {
+          expect(findLoadingIcon().exists()).toBe(true);
+        });
 
-      it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
-        expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
-      });
-    });
+        it('should render the loading indicator with the `gl-button-loading-indicator` class', () => {
+          expect(findLoadingIcon().classes()).toContain('gl-button-loading-indicator');
+        });
+      },
+    );
   });
 
   describe('custom button text classes', () => {
@@ -369,11 +369,11 @@ describe('button component', () => {
     expect(wrapper.attributes('aria-disabled')).toBeUndefined();
   });
 
-  it('button has aria-disabled attribute when focusableLoading set', () => {
+  it('button has aria-disabled attribute when accessibleLoading set', () => {
     buildWrapper({
       propsData: {
         loading: true,
-        focusableLoading: true,
+        accessibleLoading: true,
       },
     });
 
@@ -480,13 +480,13 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('should not emit click event when clicked and focusableLoading', async () => {
+  it('should not emit click event when clicked and accessibleLoading', async () => {
     const onClick = jest.fn();
 
     buildWrapper({
       propsData: {
         loading: true,
-        focusableLoading: true,
+        accessibleLoading: true,
       },
       listeners: {
         click: onClick,
@@ -497,7 +497,7 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('does not call the submit method when focusableLoading is set on button and form is submitted via `Enter` command', async () => {
+  it('does not call the submit method when accessibleLoading is set on button and form is submitted via `Enter` command', async () => {
     const handleSubmit = jest.fn();
 
     wrapper = mount(
@@ -510,7 +510,7 @@ describe('button component', () => {
             <gl-button
               type="submit"
               loading
-              focusable-loading
+              accessible-loading
             >Submit</gl-button>
           </form>
         `,
@@ -523,7 +523,14 @@ describe('button component', () => {
       },
     );
 
+    const eventPromise = new Promise((resolve) => {
+      wrapper.find('button').element.addEventListener('click', resolve);
+    });
+
     await wrapper.find('button').trigger('click');
+    const event = await eventPromise;
+
     expect(handleSubmit).not.toHaveBeenCalled();
+    expect(event.defaultPrevented).toBe(true);
   });
 });
