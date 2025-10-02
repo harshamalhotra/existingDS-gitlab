@@ -5,7 +5,6 @@
         "key": "{border.radius.none}",
         "$value": "0",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -16,7 +15,6 @@
         "original": {
           "$value": "{spacing-scale.0}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -36,7 +34,6 @@
         "key": "{border.radius.xs}",
         "$value": "1px",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -47,7 +44,6 @@
         "original": {
           "$value": "{spacing-scale.px}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -67,7 +63,6 @@
         "key": "{border.radius.sm}",
         "$value": "0.125rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -78,7 +73,6 @@
         "original": {
           "$value": "{spacing-scale.1}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -98,7 +92,6 @@
         "key": "{border.radius.md}",
         "$value": "0.25rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -109,7 +102,6 @@
         "original": {
           "$value": "{spacing-scale.2}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -129,7 +121,6 @@
         "key": "{border.radius.lg}",
         "$value": "0.5rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -140,7 +131,6 @@
         "original": {
           "$value": "{spacing-scale.3}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -160,7 +150,6 @@
         "key": "{border.radius.xl}",
         "$value": "0.75rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -171,7 +160,6 @@
         "original": {
           "$value": "{spacing-scale.4}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -191,7 +179,6 @@
         "key": "{border.radius.2xl}",
         "$value": "1rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -202,7 +189,6 @@
         "original": {
           "$value": "{spacing-scale.5}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -222,7 +208,6 @@
         "key": "{border.radius.3xl}",
         "$value": "1.5rem",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -233,7 +218,6 @@
         "original": {
           "$value": "{spacing-scale.6}",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
@@ -253,7 +237,6 @@
         "key": "{border.radius.full}",
         "$value": "9999px",
         "$type": "dimension",
-        "$description": "",
         "$extensions": {
           "com.figma.scope": [
             "CORNER_RADIUS"
@@ -264,7 +247,6 @@
         "original": {
           "$value": "9999px",
           "$type": "dimension",
-          "$description": "",
           "$extensions": {
             "com.figma.scope": [
               "CORNER_RADIUS"
