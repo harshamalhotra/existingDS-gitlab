@@ -14,6 +14,7 @@ import { isEvent } from '../../../vendor/bootstrap-vue/src/utils/inspect';
 import GlIcon from '../icon/icon.vue';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { ENTER, SPACE } from '../new_dropdowns/constants';
+import { glButtonConfig } from '../../../config';
 
 export default {
   name: 'GlButton',
@@ -81,6 +82,14 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+    /**
+     * Keep the button accessible when `loading` is `true`.
+     */
+    accessibleLoading: {
+      type: Boolean,
+      required: false,
+      default: () => glButtonConfig.accessibleLoadingButton,
     },
     /**
      * CSS classes to add to the button text.
@@ -241,6 +250,9 @@ export default {
     isButtonDisabled() {
       return this.disabled || this.loading;
     },
+    isButtonAriaDisabled() {
+      return this.accessibleLoading && this.isButton && this.loading;
+    },
     buttonClasses() {
       const classes = ['btn', 'gl-button', `btn-${this.variant}`, `btn-${this.buttonSize}`];
 
@@ -253,7 +265,7 @@ export default {
         'button-ellipsis-horizontal': this.hasIconOnly && this.icon === 'ellipsis_h',
         selected: this.selected,
         'btn-block': this.displayBlock,
-        disabled: this.disabled,
+        disabled: this.disabled || this.isButtonAriaDisabled,
       });
 
       if (this.label) {
@@ -304,6 +316,8 @@ export default {
         // We set the `aria-disabled` state for non-standard tags
         ...(this.isNonStandardTag ? { 'aria-disabled': String(this.disabled) } : {}),
         tabindex: this.tabindex,
+        // We set the `aria-disabled` state for buttons while loading
+        ...(this.isButtonAriaDisabled ? { 'aria-disabled': 'true', disabled: null } : {}),
       };
 
       if (this.isLink) {
@@ -328,11 +342,14 @@ export default {
       return { ...this.$attrs, ...base };
     },
     computedListeners() {
-      return {
-        click: this.onClick,
-        keydown: this.onKeydown,
+      const listeners = {
         ...this.$listeners,
       };
+
+      if (this.isButtonAriaDisabled) {
+        delete listeners.click;
+      }
+      return listeners;
     },
     componentIs() {
       if (this.label) {
@@ -373,8 +390,8 @@ export default {
         }
       }
     },
-    onClick(event) {
-      if (this.disabled && isEvent(event)) {
+    maybeStopEvent(event) {
+      if (this.isButtonAriaDisabled && isEvent(event)) {
         stopEvent(event);
       }
     },
@@ -387,6 +404,8 @@ export default {
     v-bind="computedPropsAndAttributes"
     v-safe-link:[safeLinkConfig]
     :class="buttonClasses"
+    @click="maybeStopEvent"
+    @keydown="onKeydown"
     v-on="computedListeners"
   >
     <gl-loading-icon v-if="loading" inline class="gl-button-icon gl-button-loading-indicator" />

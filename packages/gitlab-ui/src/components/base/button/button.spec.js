@@ -496,6 +496,19 @@ describe('button component', () => {
     expect(wrapper.attributes('aria-disabled')).toBeUndefined();
   });
 
+  it('button has aria-disabled attribute when accessibleLoading set', () => {
+    buildWrapper({
+      propsData: {
+        loading: true,
+        accessibleLoading: true,
+      },
+    });
+
+    expect(wrapper.attributes('disabled')).toBeUndefined();
+    expect(wrapper.classes()).toContain('disabled');
+    expect(wrapper.attributes('aria-disabled')).toBe('true');
+  });
+
   it('link has aria-disabled attribute when disabled set', () => {
     buildWrapper({
       propsData: {
@@ -592,5 +605,59 @@ describe('button component', () => {
 
     await wrapper.trigger('click');
     expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('should not emit click event when clicked and accessibleLoading', async () => {
+    const onClick = jest.fn();
+
+    buildWrapper({
+      propsData: {
+        loading: true,
+        accessibleLoading: true,
+      },
+      listeners: {
+        click: onClick,
+      },
+    });
+
+    await wrapper.trigger('click');
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+  it('does not call the submit method when accessibleLoading is set on button and form is submitted via button click', async () => {
+    const handleSubmit = jest.fn();
+
+    wrapper = mount(
+      {
+        components: {
+          GlButton,
+        },
+        template: `
+          <form @submit.prevent="handleSubmit">
+            <gl-button
+              type="submit"
+              loading
+              accessible-loading
+            >Submit</gl-button>
+          </form>
+        `,
+        methods: {
+          handleSubmit,
+        },
+      },
+      {
+        attachTo: document.body,
+      },
+    );
+
+    const eventPromise = new Promise((resolve) => {
+      wrapper.find('button').element.addEventListener('click', resolve);
+    });
+
+    await wrapper.find('button').trigger('click');
+    const event = await eventPromise;
+
+    expect(handleSubmit).not.toHaveBeenCalled();
+    expect(event.defaultPrevented).toBe(true);
   });
 });
