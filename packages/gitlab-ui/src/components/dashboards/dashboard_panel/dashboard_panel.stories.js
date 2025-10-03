@@ -86,9 +86,9 @@ const alertMessageSlot = `
 </template>
 `;
 
-const wrap = (template, style = '') => `
+const wrap = (template, style = '', panelStyle = '') => `
   <div style="${style}" class="gl-text-base">
-    <gl-dashboard-panel v-bind="$props" style="min-height: 7rem;">
+    <gl-dashboard-panel v-bind="$props" style="min-height: 7rem; ${panelStyle}">
       ${template}
     </gl-dashboard-panel>
   </div>
@@ -182,13 +182,18 @@ WithInfoPopoverSlotsContent.parameters = {
   },
 };
 
-export const WithLoading = Template.bind({});
+export const WithLoading = (args, { argTypes }) => ({
+  components: { GlDashboardPanel, GlLineChart, GlIcon, GlPopover, GlLink },
+  props: Object.keys(argTypes),
+  ...chartProps,
+  template: wrap('', '', 'height: 400px;'),
+});
 WithLoading.args = {
   ...Default.args,
   loading: true,
 };
 
-export const WithLoadingDelayed = Template.bind({});
+export const WithLoadingDelayed = WithLoading.bind({});
 WithLoadingDelayed.args = {
   ...Default.args,
   loading: true,

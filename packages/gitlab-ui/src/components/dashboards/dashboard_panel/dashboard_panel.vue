@@ -155,7 +155,7 @@ export default {
     },
     bodyClasses() {
       return this.loading
-        ? 'gl-flex gl-flex-wrap gl-content-center gl-text-center'
+        ? 'gl-flex gl-flex-wrap gl-content-center gl-text-center gl-flex-grow'
         : `gl-grow gl-overflow-y-auto gl-overflow-x-hidden ${this.bodyContentClass}`;
     },
     hasTitleIcon() {
