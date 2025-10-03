@@ -31,7 +31,7 @@
           "com.figma.scope": []
         }
       },
-      "base": {
+      "md": {
         "$value": "0.875rem",
         "$type": "dimension",
         "$extensions": {

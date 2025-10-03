@@ -41611,7 +41611,7 @@
         "line-height",
         "12"
       ],
-      "cssWithValue": "var(--gl-line-height-12, 0.75rem)"
+      "cssWithValue": "var(--gl-line-height-12)"
     },
     "16": {
       "key": "{line-height.16}",
@@ -41636,7 +41636,7 @@
         "line-height",
         "16"
       ],
-      "cssWithValue": "var(--gl-line-height-16, 1rem)"
+      "cssWithValue": "var(--gl-line-height-16)"
     },
     "20": {
       "key": "{line-height.20}",
@@ -41661,7 +41661,7 @@
         "line-height",
         "20"
       ],
-      "cssWithValue": "var(--gl-line-height-20, 1.25rem)"
+      "cssWithValue": "var(--gl-line-height-20)"
     },
     "24": {
       "key": "{line-height.24}",
@@ -41686,7 +41686,7 @@
         "line-height",
         "24"
       ],
-      "cssWithValue": "var(--gl-line-height-24, 1.5rem)"
+      "cssWithValue": "var(--gl-line-height-24)"
     },
     "28": {
       "key": "{line-height.28}",
@@ -41711,7 +41711,7 @@
         "line-height",
         "28"
       ],
-      "cssWithValue": "var(--gl-line-height-28, 1.75rem)"
+      "cssWithValue": "var(--gl-line-height-28)"
     },
     "32": {
       "key": "{line-height.32}",
@@ -41736,7 +41736,7 @@
         "line-height",
         "32"
       ],
-      "cssWithValue": "var(--gl-line-height-32, 2rem)"
+      "cssWithValue": "var(--gl-line-height-32)"
     },
     "36": {
       "key": "{line-height.36}",
@@ -41761,7 +41761,7 @@
         "line-height",
         "36"
       ],
-      "cssWithValue": "var(--gl-line-height-36, 2.25rem)"
+      "cssWithValue": "var(--gl-line-height-36)"
     },
     "42": {
       "key": "{line-height.42}",
@@ -41786,7 +41786,7 @@
         "line-height",
         "42"
       ],
-      "cssWithValue": "var(--gl-line-height-42, 2.625rem)"
+      "cssWithValue": "var(--gl-line-height-42)"
     },
     "44": {
       "key": "{line-height.44}",
@@ -41811,7 +41811,7 @@
         "line-height",
         "44"
       ],
-      "cssWithValue": "var(--gl-line-height-44, 2.75rem)"
+      "cssWithValue": "var(--gl-line-height-44)"
     },
     "52": {
       "key": "{line-height.52}",
@@ -41836,7 +41836,7 @@
         "line-height",
         "52"
       ],
-      "cssWithValue": "var(--gl-line-height-52, 3.25rem)"
+      "cssWithValue": "var(--gl-line-height-52)"
     }
   },
   "fontFamily": {
@@ -41864,7 +41864,7 @@
         "family",
         "regular"
       ],
-      "cssWithValue": "var(--gl-font-family-regular, var(--default-regular-font, 'GitLab Sans'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji')"
+      "cssWithValue": "var(--gl-font-family-regular)"
     },
     "monospace": {
       "key": "{font.family.monospace}",
@@ -41890,7 +41890,7 @@
         "family",
         "monospace"
       ],
-      "cssWithValue": "var(--gl-font-family-monospace, var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace)"
+      "cssWithValue": "var(--gl-font-family-monospace)"
     }
   },
   "fontSize": {
@@ -41918,7 +41918,7 @@
         "size",
         "xs"
       ],
-      "cssWithValue": "var(--gl-font-size-xs, 0.625rem)"
+      "cssWithValue": "var(--gl-font-size-xs)"
     },
     "sm": {
       "key": "{font.size.sm}",
@@ -41944,10 +41944,10 @@
         "size",
         "sm"
       ],
-      "cssWithValue": "var(--gl-font-size-sm, 0.75rem)"
+      "cssWithValue": "var(--gl-font-size-sm)"
     },
-    "base": {
-      "key": "{font.size.base}",
+    "md": {
+      "key": "{font.size.md}",
       "$value": "0.875rem",
       "$type": "dimension",
       "$extensions": {
@@ -41961,16 +41961,16 @@
         "$extensions": {
           "com.figma.scope": []
         },
-        "key": "{font.size.base}"
+        "key": "{font.size.md}"
       },
-      "name": "FONT_SIZE_BASE",
+      "name": "FONT_SIZE_MD",
       "attributes": {},
       "path": [
         "font",
         "size",
-        "base"
+        "md"
       ],
-      "cssWithValue": "var(--gl-font-size-base, 0.875rem)"
+      "cssWithValue": "var(--gl-font-size-md)"
     },
     "lg": {
       "key": "{font.size.lg}",
@@ -41996,7 +41996,33 @@
         "size",
         "lg"
       ],
-      "cssWithValue": "var(--gl-font-size-lg, 1rem)"
+      "cssWithValue": "var(--gl-font-size-lg)"
+    },
+    "base": {
+      "key": "{font.size.base}",
+      "$value": "0.875rem",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": []
+      },
+      "filePath": "src/tokens/semantic/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{font.size.md}",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": []
+        },
+        "key": "{font.size.base}"
+      },
+      "name": "FONT_SIZE_BASE",
+      "attributes": {},
+      "path": [
+        "font",
+        "size",
+        "base"
+      ],
+      "cssWithValue": "var(--gl-font-size-base)"
     }
   },
   "fontWeight": {
@@ -42024,7 +42050,7 @@
         "weight",
         "100"
       ],
-      "cssWithValue": "var(--gl-font-weight-100, 100)"
+      "cssWithValue": "var(--gl-font-weight-100)"
     },
     "300": {
       "key": "{font.weight.300}",
@@ -42050,7 +42076,7 @@
         "weight",
         "300"
       ],
-      "cssWithValue": "var(--gl-font-weight-300, 300)"
+      "cssWithValue": "var(--gl-font-weight-300)"
     },
     "normal": {
       "key": "{font.weight.normal}",
@@ -42076,7 +42102,7 @@
         "weight",
         "normal"
       ],
-      "cssWithValue": "var(--gl-font-weight-normal, 400)"
+      "cssWithValue": "var(--gl-font-weight-normal)"
     },
     "semibold": {
       "key": "{font.weight.semibold}",
@@ -42102,7 +42128,7 @@
         "weight",
         "semibold"
       ],
-      "cssWithValue": "var(--gl-font-weight-semibold, 500)"
+      "cssWithValue": "var(--gl-font-weight-semibold)"
     },
     "bold": {
       "key": "{font.weight.bold}",
@@ -42128,7 +42154,7 @@
         "weight",
         "bold"
       ],
-      "cssWithValue": "var(--gl-font-weight-bold, 600)"
+      "cssWithValue": "var(--gl-font-weight-bold)"
     }
   }
 }

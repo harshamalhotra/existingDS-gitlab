@@ -234,7 +234,7 @@
   --gl-font-family-monospace: var(--default-mono-font, 'GitLab Mono'), 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace;
   --gl-font-size-xs: 0.625rem;
   --gl-font-size-sm: 0.75rem;
-  --gl-font-size-base: 0.875rem;
+  --gl-font-size-md: 0.875rem;
   --gl-font-size-lg: 1rem;
   --gl-font-weight-100: 100;
   --gl-font-weight-300: 300;
@@ -595,6 +595,7 @@
   --gl-border-color-subtle: var(--gl-color-neutral-800); /** Used for a subtle border in combination with the default background. */
   --gl-border-color-strong: var(--gl-color-neutral-600); /** Used for a distinct border that emphasizes an edge or boundaries. */
   --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
+  --gl-font-size-base: var(--gl-font-size-md);
   --gl-shadow-color-default: var(--gl-color-alpha-dark-40); /** Used for the default shadow color. */
   --gl-alert-neutral-border-top-color: var(--gl-color-neutral-400); /** Used for the border center color of a neutral alert. */
   --gl-alert-neutral-border-bottom-color: var(--gl-color-alpha-0); /** Used for the border bottom color of a neutral alert. */
