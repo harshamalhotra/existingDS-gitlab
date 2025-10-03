@@ -9,7 +9,7 @@ import { badgeTypeValidator } from './constants';
 export const i18n = {
   experiment: {
     BADGE: 'Experiment',
-    HELP_PAGE_URL: 'https://docs.gitlab.com/ee/policy/development_stages_support.html#experiment',
+    HELP_PAGE_URL: 'https://docs.gitlab.com/policy/development_stages_support/#experiment',
     POPOVER_TITLE: "What's an experiment?",
     POPOVER_CONTENT:
       'An %{linkStart}experiment%{linkEnd} is not yet production-ready, but is released for initial testing and feedback during development.%{line-breakStart}Experiments:%{line-breakEnd} %{bullets}',
@@ -21,7 +21,7 @@ export const i18n = {
   },
   beta: {
     BADGE: 'Beta',
-    HELP_PAGE_URL: 'https://docs.gitlab.com/ee/policy/development_stages_support.html#beta',
+    HELP_PAGE_URL: 'https://docs.gitlab.com/policy/development_stages_support/#beta',
     POPOVER_TITLE: "What's a beta?",
     POPOVER_CONTENT:
       "A %{linkStart}beta%{linkEnd} feature is not yet production-ready, but is ready for testing and unlikely to change significantly before it's released.%{line-breakStart}Beta features:%{line-breakEnd} %{bullets}",
