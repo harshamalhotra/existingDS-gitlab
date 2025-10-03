@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.5.0
+
+### Minor Changes
+
+- 63559d3: Add prop to keep GlButton accessible when loading
+
 ## 123.4.0
 
 ### Minor Changes
