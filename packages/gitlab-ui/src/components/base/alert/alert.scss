@@ -38,11 +38,11 @@ $gl-alert-top-border-size: 2px;
 }
 
 .gl-alert {
-  @apply gl-text-base;
-  position: relative;
-  padding-inline: calc(#{$gl-spacing-scale-9} + #{$gl-alert-padding-x});
-  border-radius: var(--gl-alert-border-radius);
   @apply gl-py-5;
+  @apply gl-text-base;
+  border-radius: var(--gl-alert-border-radius);
+  padding-inline: calc(#{$gl-spacing-scale-9} + #{$gl-alert-padding-x});
+  position: relative;
 
   @media (forced-colors: active) {
     border: 1px solid transparent;

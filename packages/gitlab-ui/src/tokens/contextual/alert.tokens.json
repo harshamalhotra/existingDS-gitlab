@@ -2,7 +2,7 @@
   "alert": {
     "border": {
       "radius": {
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.lg}",
         "$type": "dimension",
         "$description": "Used for alert border radius.",
         "$extensions": {

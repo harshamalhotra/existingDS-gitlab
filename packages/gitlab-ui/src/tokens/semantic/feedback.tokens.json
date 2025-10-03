@@ -1,5 +1,17 @@
 {
   "feedback": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.lg}",
+        "$type": "dimension",
+        "$description": "Used for the border radius of a feedback element.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "strong": {
       "background": {
         "color": {

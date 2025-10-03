@@ -4,14 +4,11 @@ $gl-popover-max-width: $grid-size * 35;
 
 .gl-popover {
   max-width: $gl-popover-max-width;
+  @apply gl-bg-overlap;
   @apply gl-border-none;
   @apply gl-drop-shadow-md;
   @apply gl-text-sm;
-
-  &,
-  .popover-header {
-    @apply gl-bg-overlap;
-  }
+  @apply gl-rounded-feedback;
 
   .popover-body {
     @apply gl-text-default;

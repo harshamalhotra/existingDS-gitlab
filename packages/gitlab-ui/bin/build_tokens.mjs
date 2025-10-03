@@ -257,6 +257,7 @@ StyleDictionary.registerFormat({
     const borderRadiuses = {
       ...formatTokens(COMPILED_TOKENS.border.radius),
       control: formatToken(COMPILED_TOKENS.control.border.radius),
+      feedback: formatToken(COMPILED_TOKENS.feedback.border.radius),
     };
     const opacity = formatTokens(COMPILED_TOKENS.opacity);
     const zindexes = formatTokens(COMPILED_TOKENS.zindex);

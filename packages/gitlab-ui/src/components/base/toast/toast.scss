@@ -23,7 +23,6 @@
   }
 
   .gl-toast {
-    @apply gl-rounded-default;
     @apply gl-text-base;
     @apply gl-py-5;
     @apply gl-px-6;
@@ -32,6 +31,7 @@
     @apply gl-items-center;
     @apply gl-justify-between;
     @apply gl-shadow-md;
+    @apply gl-rounded-feedback;
     background-color: var(--gl-feedback-strong-background-color);
     color: var(--gl-feedback-strong-text-color);
   }

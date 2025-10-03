@@ -300,10 +300,8 @@ $gl-form-input-sizes: (
   xl: $grid-size * 70,
 );
 
-$popover-bg: $gl-background-color-default !default;
 $popover-arrow-width: 0.5rem;
 $popover-arrow-height: 0.25rem;
-$popover-arrow-color: $popover-bg;
 $popover-arrow-outer-color: $gl-border-color-default;
 
 $tooltip-opacity: 1;
