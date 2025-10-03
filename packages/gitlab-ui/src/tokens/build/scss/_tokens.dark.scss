@@ -927,6 +927,7 @@ $gl-border-color-section: $gl-background-color-default; // Used for the border c
 $gl-shadow-sm: 0 0 2px $gl-shadow-color-default, 0 1px 4px $gl-shadow-color-default; // Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.
 $gl-shadow-md: 0 0 1px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 2px 8px $gl-shadow-color-default; // Used for surfaces that need boundary definition and appear on hover. For example, popovers.
 $gl-shadow-lg: 0 0 2px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 4px 12px $gl-shadow-color-default; // Used for large surfaces that present additional context to the user.
+$gl-alert-border-radius: $gl-border-radius-lg; // Used for alert border radius.
 $gl-alert-neutral-title-color: $gl-text-color-heading; // Used for the title color of a neutral alert.
 $gl-alert-neutral-background-color: $gl-feedback-neutral-background-color; // Used for the background color of a neutral alert.
 $gl-alert-info-title-color: $gl-color-blue-300; // Used for the title color of an info alert.
@@ -1054,6 +1055,7 @@ $gl-action-strong-neutral-border-color-hover: $gl-action-strong-neutral-border-c
 $gl-control-text-color-error: $gl-text-color-danger; // Used for the helper text when the input is invalid.
 $gl-control-text-color-valid: $gl-text-color-success; // Used for the helper text when the input is valid.
 $gl-control-placeholder-color: $gl-text-color-disabled; // Used for placeholder text within inputs.
+$gl-feedback-border-radius: $gl-border-radius-lg; // Used for the border radius of a feedback element.
 $gl-focus-ring-inner-color: $gl-background-color-default; // Used for the inner neutral portion of the focus ring.
 $gl-icon-color-default: $gl-text-color-default; // Used for the default icon color. Can be paired with default text.
 $gl-icon-color-subtle: $gl-text-color-subtle; // Used for a static or decorational icon. Can be paired with subtle text.
@@ -1063,7 +1065,6 @@ $gl-icon-color-link: $gl-text-color-link; // Used for an icon within a link.
 $gl-icon-color-warning: $gl-text-color-warning; // Used for an icon associated with a warning.
 $gl-icon-color-danger: $gl-text-color-danger; // Used for an icon associated with an error or danger.
 $gl-icon-color-success: $gl-text-color-success; // Used for an icon associated with success or validity.
-$gl-alert-border-radius: $gl-border-radius-default; // Used for alert border radius.
 $gl-badge-muted-background-color-focus: $gl-badge-muted-background-color-hover; // Used for the background of a muted badge in the focus state.
 $gl-badge-neutral-background-color-focus: $gl-badge-neutral-background-color-hover; // Used for the background of a neutral badge in the focus state.
 $gl-badge-info-background-color-focus: $gl-badge-info-background-color-hover; // Used for the background of an informational badge in the focus state.

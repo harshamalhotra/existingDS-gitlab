@@ -929,6 +929,7 @@
   --gl-shadow-sm: 0 0 2px var(--gl-shadow-color-default), 0 1px 4px var(--gl-shadow-color-default); /** Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board. */
   --gl-shadow-md: 0 0 1px var(--gl-shadow-color-default), 0 0 2px var(--gl-shadow-color-default), 0 2px 8px var(--gl-shadow-color-default); /** Used for surfaces that need boundary definition and appear on hover. For example, popovers. */
   --gl-shadow-lg: 0 0 2px var(--gl-shadow-color-default), 0 0 2px var(--gl-shadow-color-default), 0 4px 12px var(--gl-shadow-color-default); /** Used for large surfaces that present additional context to the user. */
+  --gl-alert-border-radius: var(--gl-border-radius-lg); /** Used for alert border radius. */
   --gl-alert-neutral-title-color: var(--gl-text-color-heading); /** Used for the title color of a neutral alert. */
   --gl-alert-neutral-background-color: var(--gl-feedback-neutral-background-color); /** Used for the background color of a neutral alert. */
   --gl-alert-info-title-color: var(--gl-color-blue-300); /** Used for the title color of an info alert. */
@@ -1056,6 +1057,7 @@
   --gl-control-text-color-error: var(--gl-text-color-danger); /** Used for the helper text when the input is invalid. */
   --gl-control-text-color-valid: var(--gl-text-color-success); /** Used for the helper text when the input is valid. */
   --gl-control-placeholder-color: var(--gl-text-color-disabled); /** Used for placeholder text within inputs. */
+  --gl-feedback-border-radius: var(--gl-border-radius-lg); /** Used for the border radius of a feedback element. */
   --gl-focus-ring-inner-color: var(--gl-background-color-default); /** Used for the inner neutral portion of the focus ring. */
   --gl-icon-color-default: var(--gl-text-color-default); /** Used for the default icon color. Can be paired with default text. */
   --gl-icon-color-subtle: var(--gl-text-color-subtle); /** Used for a static or decorational icon. Can be paired with subtle text. */
@@ -1065,7 +1067,6 @@
   --gl-icon-color-warning: var(--gl-text-color-warning); /** Used for an icon associated with a warning. */
   --gl-icon-color-danger: var(--gl-text-color-danger); /** Used for an icon associated with an error or danger. */
   --gl-icon-color-success: var(--gl-text-color-success); /** Used for an icon associated with success or validity. */
-  --gl-alert-border-radius: var(--gl-border-radius-default); /** Used for alert border radius. */
   --gl-badge-muted-background-color-focus: var(--gl-badge-muted-background-color-hover); /** Used for the background of a muted badge in the focus state. */
   --gl-badge-neutral-background-color-focus: var(--gl-badge-neutral-background-color-hover); /** Used for the background of a neutral badge in the focus state. */
   --gl-badge-info-background-color-focus: var(--gl-badge-info-background-color-hover); /** Used for the background of an informational badge in the focus state. */

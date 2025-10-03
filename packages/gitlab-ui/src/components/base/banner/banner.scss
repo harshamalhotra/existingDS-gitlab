@@ -1,4 +1,5 @@
 .gl-banner {
+  @apply gl-rounded-feedback;
   background-color: var(--gl-banner-promo-background-color);
   border-color: var(--gl-banner-promo-border-color);
 }

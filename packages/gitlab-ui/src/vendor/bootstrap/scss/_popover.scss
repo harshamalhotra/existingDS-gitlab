@@ -12,10 +12,8 @@
   @include font-size($popover-font-size);
   // Allow breaking very long words so they don't overflow the popover's bounds
   word-wrap: break-word;
-  background-color: $popover-bg;
   background-clip: padding-box;
   border: $popover-border-width solid $popover-border-color;
-  @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
 
   .arrow {
@@ -45,13 +43,11 @@
     &::before {
       bottom: 0;
       border-width: $popover-arrow-height ($popover-arrow-width * .5) 0;
-      border-top-color: $popover-arrow-outer-color;
     }
 
     &::after {
       bottom: $popover-border-width;
       border-width: $popover-arrow-height ($popover-arrow-width * .5) 0;
-      border-top-color: $popover-arrow-color;
     }
   }
 }
@@ -74,7 +70,6 @@
     &::after {
       left: $popover-border-width;
       border-width: ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5) 0;
-      border-right-color: $popover-arrow-color;
     }
   }
 }
@@ -94,7 +89,6 @@
     &::after {
       top: $popover-border-width;
       border-width: 0 ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5);
-      border-bottom-color: $popover-arrow-color;
     }
   }
 
@@ -129,7 +123,6 @@
     &::after {
       right: $popover-border-width;
       border-width: ($popover-arrow-width * .5) 0 ($popover-arrow-width * .5) $popover-arrow-height;
-      border-left-color: $popover-arrow-color;
     }
   }
 }
@@ -156,9 +149,9 @@
   margin-bottom: 0; // Reset the default from Reboot
   @include font-size($font-size-base);
   color: $popover-header-color;
-  background-color: $popover-header-bg;
+  // background-color: $popover-header-bg;
   border-bottom: $popover-border-width solid color.adjust($popover-header-bg, $lightness: -5%);
-  @include border-top-radius($popover-inner-border-radius);
+  // @include border-top-radius($popover-inner-border-radius);
 
   &:empty {
     display: none;

@@ -391,6 +391,7 @@ const borderRadius = {
   full: 'var(--gl-border-radius-full)',
   default: 'var(--gl-border-radius-default)',
   control: 'var(--gl-control-border-radius)',
+  feedback: 'var(--gl-feedback-border-radius)',
 };
 const opacity = {
   0: 'var(--gl-opacity-0)',

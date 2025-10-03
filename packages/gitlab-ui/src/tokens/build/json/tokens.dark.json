@@ -7880,7 +7880,7 @@
     "border": {
       "radius": {
         "key": "{alert.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for alert border radius.",
         "$extensions": {
@@ -7891,7 +7891,7 @@
         "filePath": "src/tokens/contextual/alert.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.lg}",
           "$type": "dimension",
           "$description": "Used for alert border radius.",
           "$extensions": {
@@ -35071,6 +35071,39 @@
     }
   },
   "feedback": {
+    "border": {
+      "radius": {
+        "key": "{feedback.border.radius}",
+        "$value": "0.5rem",
+        "$type": "dimension",
+        "$description": "Used for the border radius of a feedback element.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{border.radius.lg}",
+          "$type": "dimension",
+          "$description": "Used for the border radius of a feedback element.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          },
+          "key": "{feedback.border.radius}"
+        },
+        "name": "FEEDBACK_BORDER_RADIUS",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "border",
+          "radius"
+        ]
+      }
+    },
     "strong": {
       "background": {
         "color": {

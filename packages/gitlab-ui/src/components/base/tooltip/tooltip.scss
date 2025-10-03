@@ -4,11 +4,11 @@
 
   .tooltip-inner {
     @apply gl-drop-shadow-md;
-    @apply gl-rounded-default;
     @apply gl-leading-normal;
     @apply gl-font-normal;
     @apply gl-py-3;
     @apply gl-px-4;
+    @apply gl-rounded-feedback;
     background: var(--gl-feedback-strong-background-color);
     color: var(--gl-feedback-strong-text-color);
   }
