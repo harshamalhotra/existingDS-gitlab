@@ -18,7 +18,7 @@
  */
 const stripDescriptionsPreprocessor = (dictionary) => {
   function stripDescription(node) {
-    if (typeof node !== 'object') {
+    if (node === null || typeof node !== 'object') {
       return node;
     }
     if (Array.isArray(node)) {
@@ -55,12 +55,18 @@ const stripDescriptionsPreprocessor = (dictionary) => {
  */
 const resolveUnitsPreprocessor = (dictionary) => {
   function traverse(node) {
-    if (typeof node !== 'object') {
+    if (node === null || typeof node !== 'object') {
       return node;
     }
 
     // Convert unit objects to strings
-    if (node.value !== undefined && node.unit !== undefined && Object.keys(node).length === 2) {
+    if (
+      node.value !== undefined &&
+      node.unit !== undefined &&
+      (typeof node.value === 'number' || !Number.isNaN(Number(node.value))) &&
+      typeof node.unit === 'string' &&
+      node.unit.trim().length > 0
+    ) {
       return `${node.value}${node.unit}`;
     }
 
@@ -93,12 +99,12 @@ const resolveUnitsPreprocessor = (dictionary) => {
  */
 const selectDefaultValuePreprocessor = (dictionary) => {
   function traverse(node) {
-    if (typeof node !== 'object' || Array.isArray(node)) {
+    if (node === null || typeof node !== 'object' || Array.isArray(node)) {
       return node;
     }
 
     // If object has a "default" property, return its value
-    if (node.default !== undefined && node.dark !== undefined && Object.keys(node).length === 2) {
+    if (node.default != null && node.dark != null && Object.keys(node).length === 2) {
       return node.default;
     }
 
@@ -129,12 +135,12 @@ const selectDefaultValuePreprocessor = (dictionary) => {
  */
 const selectDarkValuePreprocessor = (dictionary) => {
   function traverse(node) {
-    if (typeof node !== 'object' || Array.isArray(node)) {
+    if (node === null || typeof node !== 'object' || Array.isArray(node)) {
       return node;
     }
 
     // If object has a "dark" property, return its value
-    if (node.default !== undefined && node.dark !== undefined && Object.keys(node).length === 2) {
+    if (node.default != null && node.dark != null && Object.keys(node).length === 2) {
       return node.dark;
     }
 
