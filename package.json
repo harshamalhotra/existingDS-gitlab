@@ -92,7 +92,7 @@
     "sass": "^1.93.2",
     "sass-loader": "^10.5.2",
     "start-server-and-test": "^2.1.2",
-    "stylelint": "16.24.0",
+    "stylelint": "16.25.0",
     "unist-util-visit": "^5.0.0",
     "vue-template-compiler": "2.7.16",
     "webpack": "^4.47.0",
