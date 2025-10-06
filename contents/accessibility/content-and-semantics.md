@@ -70,8 +70,8 @@ Well-structured content helps users find and understand information quickly, whe
 ## Resources
 
 - [Readability Analyzer](https://datayze.com/readability-analyzer.php)
-- [Federal Plain Language Guidelines](https://plainlanguage.gov/guidelines/)
-- [Plain Writing Page Template](https://www.plainlanguage.gov/law/page-template/)
-- [Plain Language Checklists](https://www.plainlanguage.gov/resources/checklists/)
+- [Federal Plain Language Guidelines](https://web.archive.org/web/20250930000635/https://plainlanguage.gov/guidelines/)
+- [Plain Writing Page Template](https://web.archive.org/web/20250919222225/https://www.plainlanguage.gov/law/page-template/)
+- [Plain Language Checklists](https://web.archive.org/web/20250919222218/https://www.plainlanguage.gov/resources/checklists/)
 - [WebAIM Screen Reader Survey Results](https://webaim.org/projects/screenreadersurvey10/)
 - [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
