@@ -52,9 +52,15 @@ Establish trust by ensuring the user always knows when they are interacting with
 
 #### Name
 
-The [GitLab Duo](https://docs.google.com/presentation/d/1G849KWal8XDAEdusoR5YN8ZrZlvcgFVnqr4Nsjdy9Rc/edit#slide=id.g249996547b6_0_20) name is an extension of our brand. It acts as an umbrella for all AI capabilities across GitLab, communicates the suite of AI capabilities, and helps identify specific AI-powered features. Include the GitLab Duo name for each AI-powered feature in onboarding or UI text, either _before_ or _after_ the user interaction. However, to ensure concise [call-to-action labels (CTA)](/patterns/duo-calls-to-action#label) and maintain clear, user-friendly interfaces, avoid using the words "GitLab Duo" or "AI" directly in the CTA text. For variations of the GitLab Duo name, such as features or add-ons, see the technical writing [word list](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html).
+The "GitLab Duo" name is an extension of our brand. It acts as an umbrella for all AI capabilities across GitLab, communicates the suite of AI capabilities, and helps identify specific AI-powered features. Learn more in the [GitLab Duo Usage Guide](https://docs.google.com/presentation/d/1G849KWal8XDAEdusoR5YN8ZrZlvcgFVnqr4Nsjdy9Rc/edit#slide=id.g249996547b6_0_20).
+
+Include "GitLab Duo" for each AI-powered feature, in their onboarding or UI text, either _before_ or _after_ the user interaction. However, to ensure concise [call-to-action labels (CTA)](/patterns/duo-calls-to-action#label) and maintain clear, user-friendly interfaces, avoid using the words "GitLab Duo" or "AI" directly in the CTA text. For variations of the GitLab Duo name, such as features or add-ons, see the [word list](https://docs.gitlab.com/development/documentation/styleguide/word_list/).
 
 <figure-img alt="'GitLab Duo' is used in supplemental UI copy." label="'GitLab Duo' is used in supplemental UI copy." src="/img/do-feature-maturity.svg"></figure-img>
+
+#### Calls to action
+
+To design buttons and links that trigger AI features, see the [CTA for GitLab Duo guidelines](/patterns/duo-calls-to-action).
 
 #### Disclaimer
 
