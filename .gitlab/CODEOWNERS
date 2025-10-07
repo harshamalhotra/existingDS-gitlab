@@ -121,7 +121,9 @@ packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui
 
 # Data Visualization
 /contents/data-visualization/ @svedova @lvanc @jiaan
+/contents/components/dashboard-panel.md @svedova @lvanc @jiaan
 /packages/gitlab-ui/src/components/charts/ @svedova @lvanc @jiaan
+/packages/gitlab-ui/src/components/dashboards/ @svedova @lvanc @jiaan
 
 # Illustration
 /contents/product-foundations/illustration* @jmiocene @jelder
