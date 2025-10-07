@@ -104,7 +104,18 @@ export default {
         return [];
       }
 
-      const tokens = this.availableTokens.filter((token) => match(token.title, this.value.data));
+      const tokens = this.availableTokens.filter((token) => {
+        if (typeof token.match === 'function') {
+          return token.match.call(null, {
+            query: this.value.data,
+            title: token.title,
+            defaultMatcher: match,
+          });
+        }
+
+        return match(token.title, this.value.data);
+      });
+
       if (this.termsAsTokens() && this.value.data) {
         tokens.push({
           ...termTokenDefinition,

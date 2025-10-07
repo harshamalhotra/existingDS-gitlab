@@ -653,6 +653,122 @@ export const WithMultiSelect = () => {
   };
 };
 
+export const WithSectionHeaders = () => {
+  const vulnerabilityMatcher = ({ query, title, defaultMatcher }) =>
+    [title, 'Vulnerability count'].some((text) => defaultMatcher(text, query));
+
+  return {
+    components,
+    data() {
+      return {
+        tokens: [
+          {
+            type: 'gl-filtered-search-suggestion-group-vulnerability-count',
+            title: 'Vulnerability count',
+            match: ({ query, title, defaultMatcher }) =>
+              [title, 'severity', 'critical', 'high', 'medium', 'low', 'info', 'unknown'].some(
+                (keyword) => defaultMatcher(keyword, query),
+              ),
+          },
+          {
+            type: 'severity-critical',
+            title: 'Severity critical',
+            segmentTitle: 'Vulnerability count critical',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'severity-high',
+            title: 'Severity high',
+            segmentTitle: 'Vulnerability count high',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'severity-medium',
+            title: 'Severity medium',
+            segmentTitle: 'Vulnerability count medium',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'severity-low',
+            title: 'Severity low',
+            segmentTitle: 'Vulnerability count low',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'severity-info',
+            title: 'Severity info',
+            segmentTitle: 'Vulnerability count info',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'severity-unknown',
+            title: 'Severity unknown',
+            segmentTitle: 'Vulnerability count unknown',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+            match: vulnerabilityMatcher,
+          },
+          {
+            type: 'gl-filtered-search-suggestion-group-tool-coverage',
+            title: 'Tool coverage',
+            match: ({ query, defaultMatcher }) =>
+              ['DAST', 'SAST', 'IaC'].some((keyword) => defaultMatcher(keyword, query)),
+          },
+          {
+            type: 'tool-ds',
+            title: 'Dependency Scanning (DS)',
+            segmentTitle: 'DS',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+          },
+          {
+            type: 'tool-sast',
+            title: 'Basic SAST (SAST)',
+            segmentTitle: 'SAST',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+          },
+          {
+            type: 'tool-dast',
+            title: 'Dynamic Application Security Testing (DAST)',
+            segmentTitle: 'DAST',
+            token: GlFilteredSearchToken,
+            unique: true,
+            operators: [{ value: '=', description: 'is' }],
+          },
+        ],
+        value: [],
+      };
+    },
+    template: `
+      <gl-filtered-search v-model="value" :available-tokens="tokens" />
+    `,
+  };
+};
+WithSectionHeaders.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  await userEvent.tab();
+  await waitFor(() => expect(canvas.getByRole('list')).toBeVisible());
+};
+
 export default {
   title: 'base/filtered-search',
   // Make room for suggestion lists

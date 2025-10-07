@@ -6,6 +6,18 @@ import FilteredSearchSuggestionList from './filtered_search_suggestion_list.vue'
 describe('Filtered search suggestion list component', () => {
   let wrapper;
 
+  beforeAll(() => {
+    if (!HTMLElement.prototype.scrollIntoView) {
+      HTMLElement.prototype.scrollIntoView = jest.fn();
+    }
+  });
+
+  afterAll(() => {
+    if (HTMLElement.prototype.scrollIntoView.mock) {
+      delete HTMLElement.prototype.scrollIntoView;
+    }
+  });
+
   describe('suggestions API', () => {
     const createComponent = ({ termsAsTokens = false } = {}) => {
       wrapper = shallowMount(FilteredSearchSuggestionList, {
@@ -151,18 +163,6 @@ describe('Filtered search suggestion list component', () => {
     };
 
     const findActiveSuggestion = () => wrapper.find('.gl-filtered-search-suggestion-active');
-
-    beforeAll(() => {
-      if (!HTMLElement.prototype.scrollIntoView) {
-        HTMLElement.prototype.scrollIntoView = jest.fn();
-      }
-    });
-
-    afterAll(() => {
-      if (HTMLElement.prototype.scrollIntoView.mock) {
-        delete HTMLElement.prototype.scrollIntoView;
-      }
-    });
 
     describe('with termsAsTokens = false', () => {
       beforeEach(() => {

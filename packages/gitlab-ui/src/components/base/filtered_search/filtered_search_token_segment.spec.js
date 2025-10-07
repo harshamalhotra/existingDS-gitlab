@@ -1,5 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 import GlFilteredSearchTokenSegment from './filtered_search_token_segment.vue';
+import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
 import { TERM_TOKEN_TYPE } from './filtered_search_utils';
 
 const OPTIONS = [
@@ -76,6 +77,10 @@ describe('Filtered search token segment', () => {
       stubs: { GlFilteredSearchTokenSegment },
     });
   };
+
+  const findFilteredSearchSuggestion = () => wrapper.findComponent(GlFilteredSearchSuggestion);
+  const findFilteredSearchSegment = () => wrapper.findComponent(GlFilteredSearchTokenSegment);
+  const findSectionHeader = () => wrapper.findAll('[data-testid="filtered-search-section-header"]');
 
   it('emits activate on left button click if inactive', () => {
     createComponent({ value: '' });
@@ -184,9 +189,7 @@ describe('Filtered search token segment', () => {
     await wrapper.setData({ value: 'invalid' });
     await wrapper.setProps({ active: false });
 
-    expect(wrapper.findComponent(GlFilteredSearchTokenSegment).emitted().input[0][0]).toBe(
-      originalValue,
-    );
+    expect(findFilteredSearchSegment().emitted().input[0][0]).toBe(originalValue);
   });
 
   it('leaves value as-is if options are provided and isTerm=true', async () => {
@@ -202,7 +205,7 @@ describe('Filtered search token segment', () => {
     await wrapper.setData({ value: 'invalid' });
     await wrapper.setProps({ active: false });
 
-    expect(wrapper.findComponent(GlFilteredSearchTokenSegment).emitted().input).toBe(undefined);
+    expect(findFilteredSearchSegment().emitted().input).toBe(undefined);
   });
 
   it('works as expected when the value is set to `null`', async () => {
@@ -401,5 +404,21 @@ describe('Filtered search token segment', () => {
         expect(wrapper.emitted('input')).toEqual(eventPayloads);
       },
     );
+
+    it('displays section header when option value starts with gl-filtered-search-suggestion-group-', () => {
+      createWrappedComponent({
+        value: 'test',
+        active: true,
+        options: [
+          {
+            title: 'My header',
+            value: 'gl-filtered-search-suggestion-group-test',
+          },
+        ],
+      });
+
+      expect(findFilteredSearchSuggestion().exists()).toBe(false);
+      expect(findSectionHeader().exists()).toBe(true);
+    });
   });
 });

@@ -6,6 +6,7 @@ import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
 import GlFilteredSearchSuggestionList from './filtered_search_suggestion_list.vue';
 import GlFilteredSearchTerm from './filtered_search_term.vue';
 import GlFilteredSearchToken from './filtered_search_token.vue';
+import GlFilteredSearchTokenSegment from './filtered_search_token_segment.vue';
 import { TERM_TOKEN_TYPE, INTENT_ACTIVATE_PREVIOUS } from './filtered_search_utils';
 
 jest.mock('~/directives/tooltip/tooltip');
@@ -648,6 +649,7 @@ describe('Filtered search integration tests', () => {
       icon: 'label',
       token: avoidReactivity(GlFilteredSearchToken),
       title: 'Static-token',
+      segmentTitle: 'Static',
       options: [
         { title: 'first', value: 'one' },
         { title: 'second', value: 'two' },
@@ -671,6 +673,15 @@ describe('Filtered search integration tests', () => {
       icon: 'document',
       title: 'Disabled-token',
       token: FakeToken,
+      disabled: true,
+    },
+    {
+      type: 'gl-filtered-search-suggestion-group-enabled',
+      title: 'Section-header-token',
+    },
+    {
+      type: 'gl-filtered-search-suggestion-group-disabled',
+      title: 'Disabled-section-header-token',
       disabled: true,
     },
   ];
@@ -728,7 +739,30 @@ describe('Filtered search integration tests', () => {
       const suggestions = wrapper.findComponent(GlFilteredSearchSuggestionList);
       expect(suggestions.exists()).toBe(true);
       expect(suggestions.findAllComponents(GlFilteredSearchSuggestion)).toHaveLength(
-        testTokens.filter((t) => !t.disabled).length,
+        testTokens.filter(
+          (t) => !t.type.startsWith('gl-filtered-search-suggestion-group-') && !t.disabled,
+        ).length,
+      );
+    });
+
+    it('renders enabled tokens without types as section headers', () => {
+      const suggestions = wrapper.findComponent(GlFilteredSearchSuggestionList);
+      const sectionHeaders = suggestions.findAll('[data-testid="filtered-search-section-header"]');
+      expect(sectionHeaders).toHaveLength(1);
+    });
+
+    it('renders customized segment text when provided', async () => {
+      const input = findInput();
+      input.trigger('keydown', { key: 'ArrowDown' });
+
+      await nextTick();
+
+      input.trigger('keydown', { key: 'Enter' });
+
+      await nextTick();
+
+      expect(wrapper.findAllComponents(GlFilteredSearchTokenSegment).at(0).props('value')).toBe(
+        'Static',
       );
     });
 

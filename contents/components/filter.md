@@ -108,6 +108,8 @@ Prepare array of available token configurations with the following fields:
   properties defined: `value: string`, `icon: string`, `title: string`,
   `component: Object` and `default: boolean`. If `component` is provided, it is
   is used to render the option in the suggestions list.
+- `segmentTitle`: (optional) title to use once the token has been selected (otherwise `title` will be used)
+- `match`: (optional) function that determines whether the token should be shown
 - `optionComponent`: (optional) A component used to render the token option
   itself when adding a new token or replacing an existing one
 - any additional fields required to configure your component
@@ -139,6 +141,21 @@ removes the need for quoting values with spaces and other workarounds.
 
 In future, this prop will be enabled by default and eventually removed. Opt in
 to this earlier rather than later to ease migration.
+
+#### Grouping tokens
+
+Tokens with a `type` that starts with "gl-filtered-search-suggestion-group-" are shown as section headers.
+Combine a match function with a section header to group tokens together. This match function will show the
+"Fruit" section header when any item in the section matches the `query` the user has typed:
+
+```js
+const match = ({query, title, defaultMatcher}) => [title, 'fruit'].some(text => defaultMatcher(text, query));
+const availableTokens = [
+  { type: 'gl-filtered-search-suggestion-group-example', title: 'Fruit', match },
+  { type: 'grouped-token-1', title: 'Apple', token: staticToken, match },
+  { type: 'grouped-token-2', title: 'Banana', token: staticToken, match },
+];
+```
 
 ### Examples
 

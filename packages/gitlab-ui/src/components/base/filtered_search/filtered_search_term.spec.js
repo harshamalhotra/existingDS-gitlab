@@ -10,6 +10,30 @@ const availableTokens = [
   { type: 'baz', title: 'test1-baz', token: 'stub', icon: 'eye' },
 ];
 
+const complexAvailableTokens = [
+  {
+    type: 'foo',
+    match: ({ query, defaultMatcher }) => defaultMatcher('my title in search term', query),
+    token: 'stub',
+    icon: 'eye',
+  },
+  {
+    type: 'bar',
+    match: ({ query, defaultMatcher }) => defaultMatcher('hide my bold title', query),
+    token: 'stub',
+    icon: 'eye',
+    disabled: true,
+  },
+  {
+    type: 'baz',
+    match: ({ query, defaultMatcher }) => defaultMatcher('show my title', query),
+    token: 'stub',
+    icon: 'eye',
+    disabled: false,
+  },
+  { type: 'qux', title: 'qux', token: 'stub', icon: 'eye' },
+];
+
 const pointerClass = 'gl-cursor-pointer';
 
 describe('Filtered search term', () => {
@@ -73,6 +97,17 @@ describe('Filtered search term', () => {
   it('renders input with placeholder if placeholder prop is provided', () => {
     createComponent({ placeholder: 'placeholder-stub' });
     expect(findSearchInput().attributes('placeholder')).toBe('placeholder-stub');
+  });
+
+  it('uses provided match functions to filter by input', async () => {
+    createComponent({
+      availableTokens: complexAvailableTokens,
+      active: true,
+      value: { data: 'title' },
+    });
+
+    await nextTick();
+    expect(findTokenSegmentComponent().props('options')).toHaveLength(3);
   });
 
   it('filters suggestions by input', async () => {
