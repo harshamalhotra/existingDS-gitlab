@@ -2,6 +2,12 @@
 # BEGIN Core layer #
 ####################
 
+# Package dependency files
+package.json @gitlab-org/maintainers/gitlab-ui
+yarn.lock @gitlab-org/maintainers/gitlab-ui
+packages/**/package.json @gitlab-org/maintainers/gitlab-ui
+packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui
+
 # If nothing else matches, fall back to the Design System team.
 # See later in the file for the Extended layer overrides.
 # See https://gitlab.com/groups/gitlab-org/-/epics/15334 for more information.
