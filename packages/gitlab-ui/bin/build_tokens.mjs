@@ -7,7 +7,12 @@ import { format, resolveConfig } from 'prettier';
 import StyleDictionary from 'style-dictionary';
 import { fileHeader } from 'style-dictionary/utils';
 import merge from 'lodash/merge.js';
-import { stripDescriptionsPreprocessor } from './lib/build_tokens_config.js';
+import {
+  stripDescriptionsPreprocessor,
+  resolveUnitsPreprocessor,
+  selectDefaultValuePreprocessor,
+  selectDarkValuePreprocessor,
+} from './lib/build_tokens_preprocessors.js';
 import {
   getScalesAndCSSCustomProperties,
   generateBaseColors,
@@ -37,12 +42,29 @@ const BUILD_PATH = join(ROOT, 'src', 'tokens', 'build');
 const DIST_PATH = join(ROOT, 'dist', 'tokens');
 
 /**
- * Utils
+ * Preprocessors
+ * https://styledictionary.com/reference/hooks/preprocessors/
  */
-const hasDefaultValue = (token) => token.original.$value.default;
-const hasDarkValue = (token) => token.original.$value.dark;
-const hasDefaultAndDarkValues = (token) =>
-  token.original.$value && hasDefaultValue(token) && hasDarkValue(token);
+StyleDictionary.registerPreprocessor({
+  // Descriptions are added as comments in some formats, remove those comments
+  name: 'gitlab/stripDescriptions',
+  preprocessor: stripDescriptionsPreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/resolve-units',
+  preprocessor: resolveUnitsPreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/select-default-value',
+  preprocessor: selectDefaultValuePreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/select-dark-value',
+  preprocessor: selectDarkValuePreprocessor,
+});
 
 /**
  * Transforms
@@ -61,72 +83,18 @@ StyleDictionary.registerTransform({
   },
 });
 
-StyleDictionary.registerTransform({
-  name: 'gitlab/value/default',
-  type: 'value',
-  transitive: true,
-  filter: (token) => {
-    return hasDefaultAndDarkValues(token);
-  },
-  transform: (token) => {
-    return token.$value.default;
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: 'gitlab/value/dark',
-  type: 'value',
-  transitive: true,
-  filter: (token) => {
-    return hasDefaultAndDarkValues(token);
-  },
-  transform: (token) => {
-    return token.$value.dark;
-  },
-});
-
 /**
  * Transform Groups
  * https://styledictionary.com/reference/api/#registertransformgroup
  */
 StyleDictionary.registerTransformGroup({
-  name: 'css/default',
-  transforms: [
-    'gitlab/value/default',
-    'name/kebab',
-    'gitlab/name/stripPrefix',
-    'shadow/css/shorthand',
-  ],
+  name: 'gitlab/css',
+  transforms: ['name/kebab', 'gitlab/name/stripPrefix', 'shadow/css/shorthand'],
 });
 
 StyleDictionary.registerTransformGroup({
-  name: 'js/default',
-  transforms: ['gitlab/value/default', 'name/constant', 'gitlab/name/stripPrefix'],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: 'css/dark',
-  transforms: [
-    'gitlab/value/dark',
-    'name/kebab',
-    'gitlab/name/stripPrefix',
-    'shadow/css/shorthand',
-  ],
-});
-
-StyleDictionary.registerTransformGroup({
-  name: 'js/dark',
-  transforms: ['gitlab/value/dark', 'name/constant', 'gitlab/name/stripPrefix'],
-});
-
-/**
- * Preprocessors
- * https://styledictionary.com/reference/hooks/preprocessors/
- */
-StyleDictionary.registerPreprocessor({
-  // Descriptions are added as comments in some formats, remove those comments
-  name: 'stripDescriptions',
-  preprocessor: stripDescriptionsPreprocessor,
+  name: 'gitlab/js',
+  transforms: ['name/constant', 'gitlab/name/stripPrefix'],
 });
 
 /**
@@ -482,11 +450,12 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
   return {
     include: ['src/tokens/**/*.tokens.json'],
     source: ['src/tokens/**/*.tokens.json'],
+    preprocessors: ['gitlab/select-default-value', 'gitlab/resolve-units'],
     platforms: {
       css: {
         prefix: PREFIX,
         buildPath: `${buildPath}/css/`,
-        transformGroup: 'css/default',
+        transformGroup: 'gitlab/css',
         options: {
           outputReferences: true,
         },
@@ -503,8 +472,8 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       js: {
         prefix: PREFIX,
         buildPath: `${buildPath}/js/`,
-        transformGroup: 'js/default',
-        preprocessors: ['stripDescriptions'],
+        transformGroup: 'gitlab/js',
+        preprocessors: ['gitlab/stripDescriptions'],
         actions: ['prettier'],
         files: [
           {
@@ -515,7 +484,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       },
       json: {
         buildPath: `${buildPath}/json/`,
-        transformGroup: 'js/default',
+        transformGroup: 'gitlab/js',
         files: [
           {
             destination: 'tokens.json',
@@ -526,7 +495,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       scss: {
         prefix: PREFIX,
         buildPath: `${buildPath}/scss/`,
-        transformGroup: 'css/default',
+        transformGroup: 'gitlab/css',
         options: {
           outputReferences: true,
         },
@@ -543,7 +512,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       },
       docs: {
         buildPath: `${buildPath}/docs/`,
-        transformGroup: 'js/default',
+        transformGroup: 'gitlab/js',
         files: [
           {
             destination: 'tokens-tailwind-docs.json',
@@ -581,9 +550,9 @@ const getStyleDictionaryConfigTailwind = (buildPath = 'dist/tokens') => {
  */
 const getStyleDictionaryConfigDarkMode = (buildPath) => {
   return merge(getStyleDictionaryConfigDefault(buildPath), {
+    preprocessors: ['gitlab/select-dark-value', 'gitlab/resolve-units'],
     platforms: {
       css: {
-        transformGroup: 'css/dark',
         files: [
           {
             destination: 'tokens.dark.css',
@@ -594,7 +563,6 @@ const getStyleDictionaryConfigDarkMode = (buildPath) => {
         ],
       },
       js: {
-        transformGroup: 'js/dark',
         files: [
           {
             destination: 'tokens.dark.js',
@@ -602,7 +570,6 @@ const getStyleDictionaryConfigDarkMode = (buildPath) => {
         ],
       },
       json: {
-        transformGroup: 'js/dark',
         files: [
           {
             destination: 'tokens.dark.json',
@@ -610,7 +577,6 @@ const getStyleDictionaryConfigDarkMode = (buildPath) => {
         ],
       },
       scss: {
-        transformGroup: 'css/dark',
         files: [
           {
             destination: '_tokens.dark.scss',
@@ -618,7 +584,6 @@ const getStyleDictionaryConfigDarkMode = (buildPath) => {
         ],
       },
       docs: {
-        transformGroup: 'js/dark',
         files: [
           {
             destination: 'tokens-tailwind-docs.dark.json',
