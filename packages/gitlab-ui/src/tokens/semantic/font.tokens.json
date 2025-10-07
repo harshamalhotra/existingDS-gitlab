@@ -5,7 +5,9 @@
         "$value": "{font.size.md}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
         }
       }
     }
