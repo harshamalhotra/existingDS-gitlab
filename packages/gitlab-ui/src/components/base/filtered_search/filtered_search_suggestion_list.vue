@@ -97,6 +97,7 @@ export default {
       ) {
         // The user wants to move past the end of the list, so ensure nothing is selected.
         this.activeIdx = NO_ACTIVE_ITEM;
+        this.$refs.top.scrollIntoView();
       } else {
         const index =
           this.activeIdx === DEFER_TO_INITIAL_VALUE
@@ -116,6 +117,7 @@ export default {
 </script>
 <template>
   <ul :class="listClasses">
+    <li ref="top"></li>
     <!-- @slot The suggestions (implemented with GlFilteredSearchSuggestion). -->
     <slot></slot>
   </ul>

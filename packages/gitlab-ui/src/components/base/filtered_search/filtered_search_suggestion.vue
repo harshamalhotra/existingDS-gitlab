@@ -55,14 +55,12 @@ export default {
 
 <template>
   <li
-    role="presentation"
     class="gl-dropdown-item gl-filtered-search-suggestion"
     :class="{ 'gl-filtered-search-suggestion-active': isActive }"
   >
     <button
       data-testid="filtered-search-suggestion"
       tabindex="-1"
-      role="menuitem"
       class="dropdown-item"
       @mousedown.prevent="emitValue"
     >

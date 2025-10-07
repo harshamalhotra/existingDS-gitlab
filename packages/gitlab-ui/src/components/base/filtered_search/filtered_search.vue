@@ -70,7 +70,7 @@ export default {
         }
 
         // eslint-disable-next-line no-underscore-dangle
-        const isOk = Array.isArray(value) && value.every(({ token }) => token.__v_skip);
+        const isOk = Array.isArray(value) && value.every(({ token }) => !token || token.__v_skip);
         if (!isOk) {
           // eslint-disable-next-line no-console
           console.warn(

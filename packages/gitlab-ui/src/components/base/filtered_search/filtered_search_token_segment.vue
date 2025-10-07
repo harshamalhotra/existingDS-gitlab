@@ -330,6 +330,10 @@ export default {
       }
     },
 
+    showHeader(option) {
+      return option.value?.toString().startsWith('gl-filtered-search-suggestion-group-');
+    },
+
     handleInputKeydown(e) {
       const { key } = e;
       const { suggestions, input } = this.$refs;
@@ -450,25 +454,42 @@ export default {
           v-if="hasOptionsOrSuggestions"
           :key="`operator-${_uid}`"
           ref="suggestions"
+          role="list"
+          tabindex="0"
           :initial-value="defaultSuggestedValue"
           @suggestion="applySuggestion"
         >
           <template v-if="options">
-            <gl-filtered-search-suggestion
-              v-for="(option, idx) in options"
-              :key="`${option.value}-${idx}`"
-              :value="option.value"
-              :icon-name="option.icon"
-            >
-              <slot name="option" v-bind="{ option }">
-                <template v-if="option.component">
-                  <component :is="option.component" :option="option" />
-                </template>
-                <template v-else>
-                  {{ option[optionTextField] }}
-                </template>
-              </slot>
-            </gl-filtered-search-suggestion>
+            <template v-for="(option, idx) in options">
+              <template v-if="showHeader(option)">
+                <li v-if="idx > 0" :key="`separator-${idx}`">
+                  <hr class="gl-border-t -gl-mx-2 gl-my-2" />
+                </li>
+                <li
+                  :key="`header-${idx}`"
+                  role="presentation"
+                  data-testid="filtered-search-section-header"
+                  class="gl-mx-0 gl-pb-2 gl-pl-5 gl-pt-3 gl-text-sm gl-font-bold gl-text-strong"
+                >
+                  {{ option.title }}
+                </li>
+              </template>
+              <gl-filtered-search-suggestion
+                v-else
+                :key="`${option.value}-${idx}`"
+                :value="option.value"
+                :icon-name="option.icon"
+              >
+                <slot name="option" v-bind="{ option }">
+                  <template v-if="option.component">
+                    <component :is="option.component" :option="option" />
+                  </template>
+                  <template v-else>
+                    {{ option[optionTextField] }}
+                  </template>
+                </slot>
+              </gl-filtered-search-suggestion>
+            </template>
           </template>
 
           <slot v-else name="suggestions"></slot>

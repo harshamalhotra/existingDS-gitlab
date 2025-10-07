@@ -344,7 +344,7 @@ export default {
 
     <gl-filtered-search-token-segment
       key="title-segment"
-      :value="config.title"
+      :value="config.segmentTitle || config.title"
       :active="isSegmentActive($options.segments.SEGMENT_TITLE)"
       :cursor-position="intendedCursorPosition"
       :options="availableTokensWithSelf"
