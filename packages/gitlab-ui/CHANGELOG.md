@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.7.0
+
+### Minor Changes
+
+- 177c05d: GlFilteredSearch: Allow grouping items in suggestions
+
 ## 123.6.1
 
 ### Patch Changes
