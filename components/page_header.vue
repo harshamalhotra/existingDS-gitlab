@@ -21,6 +21,16 @@ export default {
       required: false,
       default: false,
     },
+    section: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
+  computed: {
+    typeOfItem() {
+      return this.section === 'components' ? 'component' : 'pattern';
+    },
   },
 };
 </script>
@@ -32,7 +42,7 @@ export default {
     </h1>
     <div v-if="deprecated" class="gl-mb-3">
       <gl-alert :dismissible="false" variant="warning">
-        Please refrain from using this component - it is deprecated and will be removed.
+        Please refrain from using this {{ typeOfItem }} - it is deprecated and will be removed.
       </gl-alert>
     </div>
     <p v-if="description" class="gl-my-0 gl-max-w-prose gl-text-lg gl-leading-24">

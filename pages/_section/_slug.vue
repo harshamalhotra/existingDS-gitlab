@@ -14,6 +14,8 @@ const getPathFromRoute = (route) => {
   return [section, slug].filter(Boolean).join('/');
 };
 
+const getSectionFromRoute = (route) => route.params.section;
+
 export default {
   components: {
     PageContainer,
@@ -32,6 +34,7 @@ export default {
 
     try {
       page = await $content(path).fetch();
+      page.section = getSectionFromRoute(route);
     } catch (e) {
       error({ statusCode: 404, path, message: `${path} not found`, stack: e.stack });
     }
@@ -99,6 +102,7 @@ export default {
         <page-header
           :heading="page.name"
           :description="page.description"
+          :section="page.section"
           :deprecated="page.deprecated"
         />
         <extended-notice
