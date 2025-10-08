@@ -39,7 +39,7 @@ process easier to understand.
 
 Your development flow will look like this:
 
-1. Push your dsign system changes to GitLab UI
+1. Push your design system changes to GitLab UI
 1. Build a custom design system package using a manual CI job
 1. Create a new branch in GitLab and install the development package
 1. Do any required migration in your GitLab branch, push your branch and open an MR
@@ -67,12 +67,12 @@ the production version of GitLab UI as possible:
    # If you are creating a new branch
    # NEW_BRANCH_NAME should include an issue number when possible
 
-   git checkout -b NEW_BRANCH_NAME @gitlab/ui@CURRENT_RELEASE_NUMBER
+   git checkout -b NEW_BRANCH_NAME v{CURRENT_RELEASE_NUMBER}
 
    # If you created a branch previously
 
    git checkout YOUR_BRANCH_NAME
-   git rebase @gitlab/ui@CURRENT_RELEASE_NUMBER
+   git rebase v{CURRENT_RELEASE_NUMBER}
    ```
 
 1. Make your changes and push your GitLab UI branch
@@ -89,12 +89,12 @@ stores it on the forked GitLab mirror.
 
 After the `ui:create_integration_branch` CI job is complete, check the log files for a
 link to create a GitLab merge request. This merge request will help you test your GitLab
-UI changes and fix any test failures. Once you create the integration merge requst, add a
+UI changes and fix any test failures. Once you create the integration merge request, add a
 link to your GitLab UI merge request. This way, reviewers can run their own verifications.
 
 ![Integration branch link location](../images/integration_branch_job_log.png 'Integration branch link location')
 
-Opening a GitLab merge reqeust will do a few things for you:
+Opening a GitLab merge request will do a few things for you:
 
 1. The MR will reference your custom GitLab UI package in the mirrored frontend
 1. The GitLab CI will run automatically and notify you of any test failures
@@ -119,7 +119,7 @@ You may find some tests failing after the CI finishes running on your merge requ
    git remote add fork https://gitlab.com/gitlab-org/frontend/gitlab-ui-integrations.git
    ```
 
-1. Check our your mirrored feature branch
+1. Check out your mirrored feature branch
 
    ```bash
    git fetch
