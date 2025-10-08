@@ -15033,7 +15033,7 @@
     "border": {
       "radius": {
         "key": "{button.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for button border radius.",
         "$extensions": {
@@ -18720,6 +18720,40 @@
       }
     },
     "link": {
+      "border": {
+        "radius": {
+          "key": "{button.link.border.radius}",
+          "$value": "0.25rem",
+          "$type": "dimension",
+          "$description": "Used for link button border radius.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          },
+          "filePath": "src/tokens/contextual/button.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": "{border.radius.md}",
+            "$type": "dimension",
+            "$description": "Used for link button border radius.",
+            "$extensions": {
+              "com.figma.scope": [
+                "CORNER_RADIUS"
+              ]
+            },
+            "key": "{button.link.border.radius}"
+          },
+          "name": "BUTTON_LINK_BORDER_RADIUS",
+          "attributes": {},
+          "path": [
+            "button",
+            "link",
+            "border",
+            "radius"
+          ]
+        }
+      },
       "text": {
         "color": {
           "default": {
@@ -19442,7 +19476,7 @@
     "border": {
       "radius": {
         "key": "{card.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for card border radius.",
         "$extensions": {
@@ -19453,7 +19487,7 @@
         "filePath": "src/tokens/contextual/card.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.lg}",
           "$type": "dimension",
           "$description": "Used for card border radius.",
           "$extensions": {
@@ -22623,7 +22657,7 @@
     "border": {
       "radius": {
         "key": "{modal.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for modal border radius.",
         "$extensions": {
@@ -22634,7 +22668,7 @@
         "filePath": "src/tokens/contextual/modal.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.lg}",
           "$type": "dimension",
           "$description": "Used for modal border radius.",
           "$extensions": {
@@ -30433,7 +30467,7 @@
     "border": {
       "radius": {
         "key": "{action.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for the border radius of an action.",
         "$extensions": {
@@ -30444,7 +30478,7 @@
         "filePath": "src/tokens/semantic/action.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.lg}",
           "$type": "dimension",
           "$description": "Used for the border radius of an action.",
           "$extensions": {
@@ -33903,7 +33937,7 @@
       },
       "radius": {
         "key": "{control.border.radius}",
-        "$value": "0.25rem",
+        "$value": "0.5rem",
         "$type": "dimension",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
         "$extensions": {
@@ -33914,7 +33948,7 @@
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.lg}",
           "$type": "dimension",
           "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
           "$extensions": {

@@ -224,6 +224,7 @@ StyleDictionary.registerFormat({
     const spacingScale = formatTokens(COMPILED_TOKENS['spacing-scale']);
     const borderRadiuses = {
       ...formatTokens(COMPILED_TOKENS.border.radius),
+      action: formatToken(COMPILED_TOKENS.action.border.radius),
       control: formatToken(COMPILED_TOKENS.control.border.radius),
       feedback: formatToken(COMPILED_TOKENS.feedback.border.radius),
     };

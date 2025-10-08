@@ -415,8 +415,9 @@
     @apply gl-border-0;
     @apply gl-text-base;
     @apply gl-leading-normal;
-    color: var(--gl-button-link-text-color-default);
     @apply gl-px-0;
+    border-radius: var(--gl-button-link-border-radius);
+    color: var(--gl-button-link-text-color-default);
     min-height: auto;
     min-width: auto;
     text-decoration-thickness: auto;

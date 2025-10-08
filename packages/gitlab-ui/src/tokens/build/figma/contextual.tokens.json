@@ -3856,6 +3856,18 @@
       }
     },
     "link": {
+      "border": {
+        "radius": {
+          "$value": "{border.radius.md}",
+          "$type": "dimension",
+          "$description": "Used for link button border radius.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          }
+        }
+      },
       "text": {
         "color": {
           "default": {
@@ -4154,7 +4166,7 @@
   "card": {
     "border": {
       "radius": {
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.lg}",
         "$type": "dimension",
         "$description": "Used for card border radius.",
         "$extensions": {
@@ -5497,7 +5509,7 @@
   "modal": {
     "border": {
       "radius": {
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.lg}",
         "$type": "dimension",
         "$description": "Used for modal border radius.",
         "$extensions": {
