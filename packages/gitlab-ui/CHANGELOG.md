@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 123.8.0
+
+### Minor Changes
+
+- 20842cf: Add initial font-family, font-size, font-weight design tokens
+
+  Add `font.family`, `font.size`, and `font.weight` design tokens
+  Add `line-height` tokens to Tailwind config
+
 ## 123.7.0
 
 ### Minor Changes
