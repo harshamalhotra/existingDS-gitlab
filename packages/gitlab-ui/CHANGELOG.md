@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 123.9.1
+
+### Patch Changes
+
+- 775864e: Vertically align loading icon for dashboard panel
+
+  This change resolves an issue with the alignment of the dashboard-panel's loading icon, where the icon would sit on the very top instead of being vertically centered.
+
 ## 123.9.0
 
 ### Minor Changes
