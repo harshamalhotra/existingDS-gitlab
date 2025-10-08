@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.9.0
+
+### Minor Changes
+
+- 8d9cac6: Increase the border radius for some semantic design tokens and a set of components to implement changes based on Project Studio work.
+
 ## 123.8.0
 
 ### Minor Changes
