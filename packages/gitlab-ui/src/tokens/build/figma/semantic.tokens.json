@@ -1823,6 +1823,19 @@
       }
     }
   },
+  "font": {
+    "size": {
+      "base": {
+        "$value": "{font.size.md}",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
+        }
+      }
+    }
+  },
   "highlight": {
     "match": {
       "background": {

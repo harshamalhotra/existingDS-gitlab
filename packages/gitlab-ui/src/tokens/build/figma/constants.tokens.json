@@ -1719,6 +1719,140 @@
       }
     }
   },
+  "font": {
+    "family": {
+      "regular": {
+        "$value": [
+          "var(--default-regular-font, 'GitLab Sans')",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "'Segoe UI'",
+          "Roboto",
+          "'Noto Sans'",
+          "Ubuntu",
+          "Cantarell",
+          "'Helvetica Neue'",
+          "sans-serif",
+          "'Apple Color Emoji'",
+          "'Segoe UI Emoji'",
+          "'Segoe UI Symbol'",
+          "'Noto Color Emoji'"
+        ],
+        "$type": "fontFamily",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_FAMILY"
+          ]
+        }
+      },
+      "monospace": {
+        "$value": [
+          "var(--default-mono-font, 'GitLab Mono')",
+          "'JetBrains Mono'",
+          "Menlo",
+          "'DejaVu Sans Mono'",
+          "'Liberation Mono'",
+          "Consolas",
+          "'Ubuntu Mono'",
+          "'Courier New'",
+          "'andale mono'",
+          "'lucida console'",
+          "monospace"
+        ],
+        "$type": "fontFamily",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_FAMILY"
+          ]
+        }
+      }
+    },
+    "size": {
+      "xs": {
+        "$value": "0.625rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
+        }
+      },
+      "sm": {
+        "$value": "0.75rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
+        }
+      },
+      "md": {
+        "$value": "0.875rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
+        }
+      },
+      "lg": {
+        "$value": "1rem",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_SIZE"
+          ]
+        }
+      }
+    },
+    "weight": {
+      "100": {
+        "$value": "100",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      },
+      "300": {
+        "$value": "300",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      },
+      "normal": {
+        "$value": "400",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      },
+      "semibold": {
+        "$value": "500",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      },
+      "bold": {
+        "$value": "600",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      }
+    }
+  },
   "line-height": {
     "12": {
       "$value": {
@@ -1727,7 +1861,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "16": {
@@ -1737,7 +1873,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "20": {
@@ -1747,7 +1885,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "24": {
@@ -1757,7 +1897,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "28": {
@@ -1767,7 +1909,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "32": {
@@ -1777,7 +1921,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "36": {
@@ -1787,7 +1933,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "42": {
@@ -1797,7 +1945,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "44": {
@@ -1807,7 +1957,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "52": {
@@ -1817,7 +1969,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     }
   },

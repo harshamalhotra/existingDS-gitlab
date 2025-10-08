@@ -229,6 +229,10 @@ StyleDictionary.registerFormat({
     };
     const opacity = formatTokens(COMPILED_TOKENS.opacity);
     const zindexes = formatTokens(COMPILED_TOKENS.zindex);
+    const lineHeight = formatTokens(COMPILED_TOKENS['line-height']);
+    const fontFamily = formatTokens(COMPILED_TOKENS.font.family);
+    const fontSize = formatTokens(COMPILED_TOKENS.font.size);
+    const fontWeight = formatTokens(COMPILED_TOKENS.font.weight);
 
     const boxShadow = {
       sm: formatToken(COMPILED_TOKENS.shadow.sm),
@@ -248,6 +252,10 @@ StyleDictionary.registerFormat({
       opacity,
       zIndex: zindexes,
       boxShadow,
+      lineHeight,
+      fontFamily,
+      fontSize,
+      fontWeight,
     };
 
     // Format as JSON
@@ -292,6 +300,10 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const opacity = getScalesAndCSSCustomProperties(COMPILED_TOKENS.opacity);
   const zindexes = getScalesAndCSSCustomProperties(COMPILED_TOKENS.zIndex);
   const boxShadow = getScalesAndCSSCustomProperties(COMPILED_TOKENS.boxShadow);
+  const lineHeight = getScalesAndCSSCustomProperties(COMPILED_TOKENS.lineHeight);
+  const fontFamily = getScalesAndCSSCustomProperties(COMPILED_TOKENS.fontFamily);
+  const fontSize = getScalesAndCSSCustomProperties(COMPILED_TOKENS.fontSize);
+  const fontWeight = getScalesAndCSSCustomProperties(COMPILED_TOKENS.fontWeight);
 
   const statusColorObjects = generateColorMap(COMPILED_TOKENS, statusVariants, 'status');
   const feedbackColorObjects = generateColorMap(COMPILED_TOKENS, feedbackVariants, 'feedback');
@@ -323,6 +335,10 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const opacity = ${JSON.stringify(opacity)};
   const zindexes = ${JSON.stringify(zindexes)};
   const boxShadow = ${JSON.stringify(boxShadow)};
+  const lineHeight = ${JSON.stringify(lineHeight)};
+  const fontFamily = ${JSON.stringify(fontFamily)};
+  const fontSize = ${JSON.stringify(fontSize)};
+  const fontWeight = ${JSON.stringify(fontWeight)};
 
   const colors = {
     inherit: 'inherit',
@@ -407,6 +423,10 @@ const tailwindFormat = async ({ dictionary, file }) => {
     opacity,
     zIndex: zindexes,
     boxShadow,
+    lineHeight,
+    fontFamily,
+    fontSize,
+    fontWeight,
   }
   `;
 };

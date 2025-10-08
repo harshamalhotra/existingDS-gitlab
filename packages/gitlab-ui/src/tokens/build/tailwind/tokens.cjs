@@ -420,6 +420,36 @@ const boxShadow = {
   md: 'var(--gl-shadow-md)',
   lg: 'var(--gl-shadow-lg)',
 };
+const lineHeight = {
+  12: 'var(--gl-line-height-12)',
+  16: 'var(--gl-line-height-16)',
+  20: 'var(--gl-line-height-20)',
+  24: 'var(--gl-line-height-24)',
+  28: 'var(--gl-line-height-28)',
+  32: 'var(--gl-line-height-32)',
+  36: 'var(--gl-line-height-36)',
+  42: 'var(--gl-line-height-42)',
+  44: 'var(--gl-line-height-44)',
+  52: 'var(--gl-line-height-52)',
+};
+const fontFamily = {
+  regular: 'var(--gl-font-family-regular)',
+  monospace: 'var(--gl-font-family-monospace)',
+};
+const fontSize = {
+  xs: 'var(--gl-font-size-xs)',
+  sm: 'var(--gl-font-size-sm)',
+  md: 'var(--gl-font-size-md)',
+  lg: 'var(--gl-font-size-lg)',
+  base: 'var(--gl-font-size-base)',
+};
+const fontWeight = {
+  100: 'var(--gl-font-weight-100)',
+  300: 'var(--gl-font-weight-300)',
+  normal: 'var(--gl-font-weight-normal)',
+  semibold: 'var(--gl-font-weight-semibold)',
+  bold: 'var(--gl-font-weight-bold)',
+};
 
 const colors = {
   inherit: 'inherit',
@@ -504,4 +534,8 @@ module.exports = {
   opacity,
   zIndex: zindexes,
   boxShadow,
+  lineHeight,
+  fontFamily,
+  fontSize,
+  fontWeight,
 };

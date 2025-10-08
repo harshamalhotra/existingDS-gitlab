@@ -7,7 +7,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "16": {
@@ -17,7 +19,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "20": {
@@ -27,7 +31,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "24": {
@@ -37,7 +43,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "28": {
@@ -47,7 +55,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "32": {
@@ -57,7 +67,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "36": {
@@ -67,7 +79,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "42": {
@@ -77,7 +91,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "44": {
@@ -87,7 +103,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     },
     "52": {
@@ -97,7 +115,9 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
       }
     }
   }
