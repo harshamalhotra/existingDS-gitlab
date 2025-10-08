@@ -25,12 +25,17 @@ the following command `yalc publish --push`.
 
 ## Using the remote development package
 
-This approach relies on the development package that's built and published as an artifact by the
-`ui:build_package` CI job. This is especially useful if the changes you are making in GitLab UI require
-some code to be migrated in GitLab as you will be able to open a GitLab MR to preemptively integrate
-your changes before they are released with a new version of `@gitlab/ui`.
+This approach relies on the [development package](#the-gitlab-ui-integrations-fork) that's
+built and published as an artifact by the `ui:build_package` CI job. This is especially
+useful if the changes you are making in GitLab UI require some code to be migrated in
+GitLab as you will be able to open a GitLab MR to preemptively integrate your changes
+before they are released with a new version of `@gitlab/ui`.
 
-You will be using the [forked workflow](https://docs.gitlab.com/user/project/repository/forking_workflow/) to build and test your changes in a forked mirror of the GitLab product. If you are not familiar with forks, take a few minutes and read the linked article. It will give you a high-level understanding of how forks work and make this process easier to understand. 
+You will be using the [forked workflow](https://docs.gitlab.com/user/project/repository/forking_workflow/)
+to build and test your changes in a forked mirror of the GitLab
+product. If you are not familiar with forks, take a few minutes and read the linked
+article. It will give you a high-level understanding of how forks work and make this
+process easier to understand.
 
 Your development flow will look like this:
 
@@ -49,38 +54,43 @@ After your GitLab UI changes are merged:
 1. Get your GitLab MR merged
 
 ### Make your GitLab UI changes locally
-GitLab UI is a dynamic design system. The current release is often ahead of the release version being used in GitLab. Follow these steps to ensure your changeset is as close to the production version of GitLab UI as possible:
+
+GitLab UI is a dynamic design system. The current release is often ahead of the release
+version being used in GitLab. Follow these steps to ensure your changeset is as close to
+the production version of GitLab UI as possible:
 
 1. Review the GitLab `package.json` file for `@gitlab/ui` version
 1. Pull the latest `main` branch in GitLab UI to ensure you have access to the current tagged version
 1. Create a new feature branch by typing the following in your terminal:
 
    ```bash
-   # If you are starting fresh
-   # new-branch-name should include an issue number when possible
+   # If you are creating a new branch
+   # NEW_BRANCH_NAME should include an issue number when possible
 
-   git checkout -b new-branch-name @gitlab/ui@CURRENT_RELEASE_NUMBER
-   ```
+   git checkout -b NEW_BRANCH_NAME @gitlab/ui@CURRENT_RELEASE_NUMBER
 
-   ```bash
-   # If you have a branch already started
+   # If you created a branch previously
 
-   git checkout your-branch-name
+   git checkout YOUR_BRANCH_NAME
    git rebase @gitlab/ui@CURRENT_RELEASE_NUMBER
    ```
+
 1. Make your changes and push your GitLab UI branch
 1. Create a merge request
 
 ### Creating a remote development package
 
-Your GitLab UI merge request will kick off a number of automatic CI tasks. When those tasks have finished running, you will create a custom GitLab UI package on the mirrored GitLab frontend repository.
-
-To help with this process, GitLab UI exposes a `ui:create_integration_branch` manual CI job that will
-automatically create (or update) an integration branch and install the `@gitlab/ui` development build.
+Your GitLab UI merge request will kick off a number of automatic CI tasks. When those
+tasks have finished running, create your custom GitLab UI package by starting the manual
+`ui:create_integration_branch` CI job. This job builds a custom GitLab UI package and
+stores it on the forked GitLab mirror.
 
 ![Create integration branch CI job location](../images/create_integration_branch.png 'Create integration branch CI job location')
 
-After the `ui:create_integration_branch` CI job is complete, check the log files for a link to create a new GitLab merge request. This merge request will help you test your GitLab UI changes and ensure there are no failures. Once you create the GitLab integration merge requst, add a link to your GitLab UI merge request. This way, reviewers can run their own verifications.
+After the `ui:create_integration_branch` CI job is complete, check the log files for a
+link to create a GitLab merge request. This merge request will help you test your GitLab
+UI changes and fix any test failures. Once you create the integration merge requst, add a
+link to your GitLab UI merge request. This way, reviewers can run their own verifications.
 
 ![Integration branch link location](../images/integration_branch_job_log.png 'Integration branch link location')
 
@@ -88,15 +98,16 @@ Opening a GitLab merge reqeust will do a few things for you:
 
 1. The MR will reference your custom GitLab UI package in the mirrored frontend
 1. The GitLab CI will run automatically and notify you of any test failures
-1. The MR will provide you a feature branch to update tests, snapshots, etc.
+1. The MR will provide a feature branch to update tests, snapshots, etc.
 
 ### Making changes to GitLab on your feature branch
-You may find some tests failing after the GitLab CI finishes running against your merge request. Not to worry!
 
-1. Switch to your `gdk` repository on your local machine
-1. Run `gdk update` and `gdk reconfigure` in your terminal
+You may find some tests failing after the CI finishes running on your merge request. Not to worry!
+
+1. Open your terminal and navigate to the `gdk` repository on your local machine
+1. Run the `gdk update` and `gdk reconfigure` commands
 1. `cd` into the `gitlab` directory
-1. Add the mirrored GitLab frontend as a new remote
+1. Add the forked mirror as a new `gitlab` remote:
 
    ```bash
    # SSH
@@ -107,11 +118,14 @@ You may find some tests failing after the GitLab CI finishes running against you
    # Assume the new remote is named "fork"
    git remote add fork https://gitlab.com/gitlab-org/frontend/gitlab-ui-integrations.git
    ```
+
 1. Check our your mirrored feature branch
 
    ```bash
-   git fetch && git checkout gitlab-ui-integrations/YOUR_BRANCH_NAME
+   git fetch
+   git checkout gitlab-ui-integrations/YOUR_BRANCH_NAME
    ```
+
 1. Make changes as needed to get tests and snapshots passing
 1. Push your changes to your feature branch on the GitLab mirrored frontend
 
