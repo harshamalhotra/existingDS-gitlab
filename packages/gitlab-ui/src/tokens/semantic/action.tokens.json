@@ -2,7 +2,7 @@
   "action": {
     "border": {
       "radius": {
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.lg}",
         "$type": "dimension",
         "$description": "Used for the border radius of an action.",
         "$extensions": {

@@ -390,6 +390,7 @@ const borderRadius = {
   '3xl': 'var(--gl-border-radius-3xl)',
   full: 'var(--gl-border-radius-full)',
   default: 'var(--gl-border-radius-default)',
+  action: 'var(--gl-action-border-radius)',
   control: 'var(--gl-control-border-radius)',
   feedback: 'var(--gl-feedback-border-radius)',
 };

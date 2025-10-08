@@ -40867,9 +40867,41 @@
       ],
       "cssWithValue": "var(--gl-border-radius-default)"
     },
+    "action": {
+      "key": "{action.border.radius}",
+      "$value": "0.5rem",
+      "$type": "dimension",
+      "$description": "Used for the border radius of an action.",
+      "$extensions": {
+        "com.figma.scope": [
+          "CORNER_RADIUS"
+        ]
+      },
+      "filePath": "src/tokens/semantic/action.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{border.radius.lg}",
+        "$type": "dimension",
+        "$description": "Used for the border radius of an action.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "key": "{action.border.radius}"
+      },
+      "name": "ACTION_BORDER_RADIUS",
+      "attributes": {},
+      "path": [
+        "action",
+        "border",
+        "radius"
+      ],
+      "cssWithValue": "var(--gl-action-border-radius)"
+    },
     "control": {
       "key": "{control.border.radius}",
-      "$value": "0.25rem",
+      "$value": "0.5rem",
       "$type": "dimension",
       "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
       "$extensions": {
@@ -40880,7 +40912,7 @@
       "filePath": "src/tokens/semantic/control.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.lg}",
         "$type": "dimension",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
         "$extensions": {
