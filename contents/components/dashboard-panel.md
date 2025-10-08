@@ -20,7 +20,7 @@ related:
 1. **Info icon** (optional): Triggers a popover to add additional context about the data.
 1. **Badge** (optional): Communicates additional information (for example, [Beta](/patterns/feature-management/#highlighting-feature-versions) or [Experiment](/patterns/feature-management/#highlighting-feature-versions)).
 1. **Configuration menu**: Contains dashboard panel settings and actions.
-1. **Description** (optional): Specify the data time range, refresh frequency, and any exclusions (for example, Last 30 days, excludes weekends).
+1. **Subtitle** (optional): Specify the data time range, refresh frequency, and any exclusions (for example, Last 30 days, excludes weekends).
 1. **Filter** (optional): Adds refinement options to further narrow data beyond the page-level context.
 1. **Visualization**: A graphical representation of query results (for example, a chart, a table, or a list).
 1. **Resize**: For user-customizable dashboards, dashboard panels can be resized and repositioned on a dashboard using drag-and-drop.
