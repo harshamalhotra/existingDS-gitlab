@@ -2,12 +2,6 @@
 # BEGIN Core layer #
 ####################
 
-# Package dependency files
-package.json @gitlab-org/maintainers/gitlab-ui
-yarn.lock @gitlab-org/maintainers/gitlab-ui
-packages/**/package.json @gitlab-org/maintainers/gitlab-ui
-packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui
-
 # If nothing else matches, fall back to the Design System team.
 # See later in the file for the Extended layer overrides.
 # See https://gitlab.com/groups/gitlab-org/-/epics/15334 for more information.
@@ -19,8 +13,12 @@ packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui
 # Technical Writing
 /contents/content/ @gitlab-org/technical-writing
 
-# Allow any maintainer to approve changeset files
+# Allow any maintainer to approve changeset and dependency updates
 /.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+package.json @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+packages/**/package.json @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
 
 ##################
 # END Core layer #
