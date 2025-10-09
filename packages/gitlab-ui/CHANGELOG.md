@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.9.2
+
+### Patch Changes
+
+- cde3dbf: Update Filtered search border radius
+
 ## 123.9.1
 
 ### Patch Changes
