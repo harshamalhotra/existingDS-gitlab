@@ -361,6 +361,9 @@ describe('GlTokenSelectorDropdown', () => {
 
         it(`${testName}`, () => {
           expect(expectedFocusedDropdownItem.find('button').classes()).toContain('is-focused');
+          expect(expectedFocusedDropdownItem.find('button').attributes('aria-selected')).toBe(
+            'true',
+          );
         });
 
         it('scrolls focused dropdown item into view', () => {

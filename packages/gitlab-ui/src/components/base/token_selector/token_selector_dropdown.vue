@@ -106,7 +106,6 @@ export default {
     });
 
     this.registerResetFocusedDropdownItem(this.resetFocusedDropdownItem);
-
     this.$emit('input', this.focusedDropdownItem);
   },
   methods: {
@@ -199,13 +198,13 @@ export default {
 <template>
   <div class="dropdown b-dropdown gl-dropdown gl-relative" :class="{ show }">
     <ul
+      :id="componentId"
       ref="dropdownMenu"
-      role="menu"
+      role="listbox"
       class="dropdown-menu gl-absolute"
-      :aria-activedescendant="dropdownItemIdAttribute(focusedDropdownItem)"
       :class="[{ show }, menuClass]"
     >
-      <gl-dropdown-item v-if="loading" disabled>
+      <gl-dropdown-item v-if="loading" role="option" disabled>
         <slot name="loading-content">Searching...</slot>
       </gl-dropdown-item>
 
@@ -216,7 +215,9 @@ export default {
         :key="dropdownItem.id"
         :data-dropdown-item-id="dropdownItem.id"
         :active="dropdownItemIsFocused(dropdownItem)"
+        :aria-selected="dropdownItemIsFocused(dropdownItem).toString()"
         active-class="is-focused"
+        role="option"
         tabindex="-1"
         @click="handleDropdownItemClick(dropdownItem)"
       >
@@ -234,6 +235,7 @@ export default {
         :data-dropdown-item-id="userDefinedToken.id"
         :active="dropdownItemIsFocused(userDefinedToken)"
         active-class="is-focused"
+        role="option"
         tabindex="-1"
         @click="handleDropdownItemClick(userDefinedToken)"
       >
@@ -247,7 +249,7 @@ export default {
         </div>
       </gl-dropdown-item>
 
-      <gl-dropdown-item v-else-if="!dropdownItems.length" disabled>
+      <gl-dropdown-item v-else-if="!dropdownItems.length" role="option" disabled>
         <slot name="no-results-content">No matches found</slot>
       </gl-dropdown-item>
 

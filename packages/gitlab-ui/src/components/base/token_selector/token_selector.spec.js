@@ -260,10 +260,12 @@ describe('GlTokenSelector', () => {
 
     describe('text input attributes', () => {
       it.each`
-        attribute            | value
-        ${'autocomplete'}    | ${'on'}
-        ${'placeholder'}     | ${'foo bar'}
-        ${'aria-labelledby'} | ${'input-label'}
+        attribute              | value
+        ${'aria-autocomplete'} | ${'list'}
+        ${'aria-labelledby'}   | ${'input-label'}
+        ${'aria-expanded'}     | ${'false'}
+        ${'placeholder'}       | ${'foo bar'}
+        ${'role'}              | ${'combobox'}
       `('renders `$attribute` on text input', ({ attribute, value }) => {
         createComponent({
           propsData: {
@@ -274,6 +276,7 @@ describe('GlTokenSelector', () => {
         const textInput = findTextInput();
 
         expect(textInput.attributes(attribute)).toBe(value);
+        expect(findTextInput().attributes('aria-controls')).not.toBeUndefined();
       });
     });
 
@@ -309,8 +312,8 @@ describe('GlTokenSelector', () => {
         });
       });
 
-      describe('when `state` is `null`', () => {
-        it('does not add `is-valid` or `is-invalid` CSS classes', () => {
+      describe('when `state` is handled', () => {
+        it('does not add `is-valid` or `is-invalid` CSS classes or aria-invalid when `null`', () => {
           createComponent({
             propsData: {
               state: null,
@@ -319,18 +322,33 @@ describe('GlTokenSelector', () => {
 
           expect(findContainer().classes()).not.toContain('is-valid');
           expect(findContainer().classes()).not.toContain('is-invalid');
+          expect(findTextInput().attributes('aria-invalid')).toBeUndefined();
+        });
+
+        it('adds `is-valid` CSS classes but not aria-invalid when `true`', () => {
+          createComponent({
+            propsData: {
+              state: true,
+            },
+          });
+
+          expect(findContainer().classes()).toContain('is-valid');
+          expect(findContainer().classes()).not.toContain('is-invalid');
+          expect(findTextInput().attributes('aria-invalid')).toBeUndefined();
+        });
+
+        it('adds `is-invalid` CSS classes and aria-invalid when `false`', () => {
+          createComponent({
+            propsData: {
+              state: false,
+            },
+          });
+
+          expect(findContainer().classes()).not.toContain('is-valid');
+          expect(findContainer().classes()).toContain('is-invalid');
+          expect(findTextInput().attributes('aria-invalid')).toBe('true');
         });
       });
-    });
-
-    it('passes prop to `token-container` component', () => {
-      createComponent({
-        propsData: {
-          state: true,
-        },
-      });
-
-      expect(findTokenContainer().props('state')).toBe(true);
     });
   });
 
@@ -570,6 +588,7 @@ describe('GlTokenSelector', () => {
           await textInput.trigger('keydown.enter');
 
           expect(wrapper.emitted('input')[0]).toEqual([[dropdownItems[0]]]);
+          expect(findTextInput().attributes('aria-activedescendant')).not.toBeUndefined();
         });
 
         it('adds a user defined token when `allowUserDefinedTokens` and `showAddNewAlways` are true', async () => {
