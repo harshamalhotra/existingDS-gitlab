@@ -3,6 +3,67 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.5
+
+<small>Published 2025-10-10</small>
+
+Focus on radius, radius on focus, focus on utilities? Yes! This release brings refined visual consistency across components with updated border radii and introduces a more flexible focus ring system. We've also reorganized our utility libraries for better maintainability and discoverability.
+
+Full highlights:
+
+- Visual refinements with updated border radii across 13+ components for a more modern, cohesive appearance throughout the design system.
+- A new, more versatile focus ring utility.
+- Better utility organization in dedicated files (UIK utilities, Annotations and utilities) for improved file performance and easier navigation.
+- Plenty of other cleanup to improve file organization while reducing circular dependencies.
+
+**💡 Figma tip:** Okay, cheating a bit on this one, but head over to [Figma Tips & Tricks](https://www.figma.com/best-practices/tips-and-tricks/) to learn a few things directly from the source. Did you know about [timed delays and overlays to simulate interactions](https://www.figma.com/best-practices/five-ways-to-improve-your-prototyping-workflow/#_3-timed-delays-and-overlays-to-simulate) in prototypes?
+
+### Changelog
+
+#### ➕ Additions
+
+- (Component Library): Adds `Rounded lg` variant to [**❖&nbsp;Focus&nbsp;ring**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=133592-3&t=2omnEPR2yDhSSgw2-11).
+- (Component Library): Adds basic keyset pagination component.
+- (UIK utilities): Adds new [**UIK utilities** library](https://www.figma.com/design/hNzYQqH44lSSdWCSvWNzwS/UIK-utilities?m=auto&node-id=1-2&t=4BraWMeLsASmZJuo-1) to contain utilities used to build the UI kit files. Don't use these in your designs.
+
+#### 🔄 Changes
+
+- (Component Library): Updates the border radius for the following components:
+  - [**❖&nbsp;Alert**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=124931-1309&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Banner**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=126604-7819&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Buttons**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Button&nbsp;group**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=117033-15878&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Date&nbsp;picker**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-13&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Forms**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=49840-75722&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Modal**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=125537-3862&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Pagination**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-130&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Popover**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=57879-91946&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Sorting**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123918-20385&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Toast**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=20171-225&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Token**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-141&p=f&t=2omnEPR2yDhSSgw2-11)
+  - [**❖&nbsp;Tooltip**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121178-28119&t=2omnEPR2yDhSSgw2-11)
+- (Component Library): Updates [**❖&nbsp;Dropdown**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14&p=f&t=2omnEPR2yDhSSgw2-11) to remove panel and tip borders.
+- (Component Library): Updates all instances of the focus ring to use the new [**❖&nbsp;Focus&nbsp;ring**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=133592-3&t=2omnEPR2yDhSSgw2-11) utility component that includes a `Rounded lg` variant to support increases border radius for many components.
+- (Component Library): Updates [**Elevation**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=49138-75722&p=f&t=2omnEPR2yDhSSgw2-11) page to be under the Foundations section to match the structure of the Pajamas site.
+- (Component Library): Migrates logo utilities away from this file into the [**GitLab Product Illustrations**](https://www.figma.com/design/1ui9w228X0S5WxaD0SRdIA/GitLab-Product-Illustrations?m=auto) file, UI kit documentation and cover utilities to a dedicated [**UIK utilities**](https://www.figma.com/design/hNzYQqH44lSSdWCSvWNzwS/UIK-utilities?m=auto&node-id=1-2&t=4BraWMeLsASmZJuo-1) file, and renames the page from "Utilities" to "Focus ring" to establish the pattern for more dedicated utility pages in the future.
+- (Component Library): Migrates utilities (cursors, spacers, layout blocks, placeholder image, and stickies) to the [**Annotations and utilities**](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?m=auto) file.
+- (Annotations): The library is enabled by default in new R&D workspace design files, making it easier to reach for helpful utilities like stickies and cursors.
+- (Product Illustrations): Updates page organization to make categorization more clear.
+
+#### ⚠️ Deprecations
+
+- (Component Library): Deprecates pagination compact variant.
+- (Component Library): Deprecates focus ring as this used a removed sub component. Use new [**❖&nbsp;Focus&nbsp;ring**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=133592-3&t=2omnEPR2yDhSSgw2-11).
+
+#### 🗑️ Removals
+
+- (Component Library): Removes spacing page as content was outdated and [Spacing](https://design.gitlab.com/product-foundations/spacing) foundation content is the source of truth.
+- (Component Library): Removes layout section (placeholder page) as [Layout](https://design.gitlab.com/product-foundations/layout) is its own foundation concept.
+
+#### Contributors
+
+Dan Mizzi-Harris, Jeremy Elder, Libor Vanc, Michael Le
+
 ## 18.4
 
 <small>Published 2025-09-15</small>
