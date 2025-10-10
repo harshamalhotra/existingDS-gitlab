@@ -107,7 +107,38 @@ related:
 
 ### Accessibility
 
-- An alert should receive focus and use `aria-live` to announce its presence and allow a user to interact with it immediately.
+#### Informational announcements without required action
+
+For a status update or confirmation that doesn't require user action, use an ARIA live region with `aria-live="polite"`. The live region container must exist in the DOM at page load for changes to be announced automatically.
+
+```html
+<!-- This must exist in the initial HTML, before Vue mounts -->
+<div aria-live="polite" aria-atomic="true"></div>
+```
+
+Screen readers will announce changes at the next natural break in narration without interrupting the user or moving focus.
+
+**Note:** An alert in an ARIA live region is announced as a single text string, meaning headings, links, and other semantic elements within the alert will be read as plain text rather than being identified by their individual roles.
+
+#### Informational announcements with required action
+
+For an announcement that requires user action (such as "An error occurred while adding webhook. Try again."), place the alert where it makes sense contextually and set keyboard focus on it. This ensures screen readers announce the alert, but be mindful that focus will move to the alert's location on the page.
+
+#### Critical or time-sensitive announcements
+
+For an urgent notification that requires immediate attention or action (such as a critical error), use both `aria-live="assertive"` and `role="alert"` on the container. Both attributes are typically needed for reliable announcement across screen readers. These announcements will interrupt screen reader narration even when added dynamically.
+
+```html
+<div role="alert" aria-live="assertive" aria-atomic="true">
+  <!-- Alert content -->
+</div>
+```
+
+Consider also setting keyboard focus on critical alerts to allow users to interact with them immediately.
+
+#### Additional considerations
+
+- Use `aria-atomic="true"` when you want screen readers to announce the entire alert message, which is appropriate for most alerts. Use `aria-atomic="false"` (or omit the attribute, as this is the default) when only partial updates to the alert content should be announced, such as progress updates where only the changed portion needs to be read.
 - If sticky positioning is used, the user must still be able to access and view focusable elements the alert may be covering.
 - An alert is separate from, but complimentary to [validation](/patterns/forms#validation) error messages. In this way an alert announces that there are validation errors and links a user to each instance.
 
@@ -123,6 +154,7 @@ For example:
 The below is intentionally *not* an HTML block.
 See https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2953.
 -->
+
 ```text
 <script>
   ...
