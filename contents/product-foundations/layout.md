@@ -43,6 +43,25 @@ Panels help a user navigate complex workflows by organizing related content and 
 1. **Dynamic panel** (optional) that adapts to the primary context
 1. **AI panel** for intelligent features
 
+#### Names for external communication
+
+Use these names to refer to parts of the UI in UI text messages, documentation, and marketing materials:
+
+<figure-img alt="Wireframe of a typical GitLab application page composition" label="Application names for external use" src="/img/layout-external-names.svg"></figure-img>
+
+1. **Top bar**
+1. **Left sidebar**
+1. **{currentContext} panel** based on the primary context, for example, if the context is a merge request, refer to it as the "merge request panel"
+1. **Details panel** supports the primary context
+1. **GitLab Duo panel** to match and enforce a user's mental model; it's not just any AI
+1. **GitLab Duo sidebar**
+
+Do not use the following terms externally as they're less descriptive and could cause confusion:
+
+- AI panel
+- Nav (or navigation)
+- Chrome
+
 ### Media and container queries
 
 The layout system uses different parameters to determine when and how content should adapt to varying contexts and constraints.
