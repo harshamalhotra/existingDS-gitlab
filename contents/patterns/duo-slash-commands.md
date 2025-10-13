@@ -10,6 +10,7 @@ extendedNotice:
       url: 'https://gitlab.slack.com/channels/g_duo_chat'
 related:
   - /patterns/ai-human-interaction
+deprecated: true
 ---
 
 ## Overview
