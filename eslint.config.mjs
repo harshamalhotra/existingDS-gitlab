@@ -260,14 +260,5 @@ export default [
         'no-console': 'off',
       },
     },
-    {
-      rules: {
-        // TODO: Remove this once packages/gitlab-svgs is a workspace. The root
-        // lint_and_test CI job fails without this, as certain dependencies
-        // aren't installed in the root, only in packages/gitlab-svgs. This is
-        // why workspaces will solve this.
-        'import/no-unresolved': 'off',
-      },
-    },
   ]),
 ];
