@@ -15,7 +15,6 @@ pre-commit:
         # This list should be kept in sync with the negated globs in
         # .markdownlint-cli2.yaml.
         - '.gitlab/**/*.md'
-        - 'packages/gitlab-svgs/.tmp/**/*.md'
         - 'packages/gitlab-svgs/dist/**/*.md'
         - 'packages/gitlab-ui/src/vendor/**/*.md'
         - 'pages/components/template.md'
