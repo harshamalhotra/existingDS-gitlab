@@ -12,7 +12,7 @@
 
 **After all of the following tasks are complete you can close this issue:**
 
-### Assignee tasks:
+### Assignee tasks
 
 <details><summary>See tasks:</summary>
 
@@ -24,7 +24,7 @@
 
 </details>
 
-### Reviewer tasks:
+### Reviewer tasks
 
 <details><summary>See tasks:</summary>
 
@@ -32,7 +32,7 @@
 
 </details>
 
-### Maintainer tasks:
+### Maintainer tasks
 
 <details><summary>See tasks:</summary>
 
@@ -40,7 +40,7 @@
 
 </details>
 
-### Library addition tasks:
+### Library addition tasks
 
 Once the Reviewer or Maintainer has approved your illustration, consider the following tasks to add it to the `gitlab-svgs` library.
 

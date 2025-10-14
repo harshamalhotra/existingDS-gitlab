@@ -4,13 +4,13 @@ globs:
 
   # This list should be kept in sync with the exclusions in lefthook.yml.
   - '!.gitlab/**/*.md'
+  - '!packages/gitlab-svgs/.tmp/**/*.md'
+  - '!packages/gitlab-svgs/dist/**/*.md'
   - '!packages/gitlab-ui/src/vendor/**/*.md'
   - '!pages/components/template.md'
   - '!**/node_modules/**'
   - '!**/CHANGELOG*.md'
   - '!.changeset/*.md'
-  # Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
-  - '!packages/gitlab-svgs/**/*.md'
 config:
   default: true
   line-length: false

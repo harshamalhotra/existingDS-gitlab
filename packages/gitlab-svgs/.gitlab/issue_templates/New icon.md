@@ -18,12 +18,12 @@
 
 **After all of the following tasks are complete you can close this issue:**
 
-### Assignee tasks:
+### Assignee tasks
 
 <details><summary>See tasks:</summary>
 
 1. [ ] Create or update an icon
-    - If you’re a community contributor, please fork the [GitLab Product Icons file](https://www.figma.com/community/file/1051267829358377715) when updating or creating an icon. 
+    - If you’re a community contributor, please fork the [GitLab Product Icons file](https://www.figma.com/community/file/1051267829358377715) when updating or creating an icon.
     - If you’re a GitLab team member, please create a [branch](https://www.figma.com/best-practices/branching-in-figma/) of the [GitLab Product Icons file](https://www.figma.com/file/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons). Prefix the branch name with the issue, MR, or epic number, and add your GitLab username as the suffix. For example, `#860-new-icon-lvanc`. Then update or create an icon.
 1. [ ] Update the link to the working file under the **Figma link** section above.
 1. [ ] If work was not done in a branch (a merged branch will automatically be archived), move your working file to the shared Figma project:
@@ -36,16 +36,16 @@
 
 </details>
 
-### Reviewer tasks:
+### Reviewer tasks
 
 <details><summary>See tasks:</summary>
 
-1. [ ] Review the icon in the author’s branch. Add design-specific comments in Figma to maintain context. Add general comments to this issue, including your approval status.    
-1. [ ] Once review is approved, assign to a [Figma maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com) for final review.  
+1. [ ] Review the icon in the author’s branch. Add design-specific comments in Figma to maintain context. Add general comments to this issue, including your approval status.
+1. [ ] Once review is approved, assign to a [Figma maintainer](https://about.gitlab.com/handbook/engineering/projects/#design.gitlab.com) for final review.
 
 </details>
 
-### Maintainer tasks:
+### Maintainer tasks
 
 <details><summary>See tasks:</summary>
 
@@ -55,7 +55,7 @@
 
 </details>
 
-### Library addition tasks:
+### Library addition tasks
 
 Once the Reviewer or Maintainer has approved your icon design, consider the following tasks to add the icon the `gitlab-svgs` library.
 
@@ -69,7 +69,7 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 1. [ ] In Figma, export the icon component from the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file. The parent frame of the icon should not have "Clip content" checked in the Design panel. Consider using the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin to export an optimized SVG file (the plugin settings can also control what attributes are included or removed).
 1. [ ] In the Web IDE, upload the file to the **/sprite_icons** folder. The file name should be lowercase, and use hyphens as a separator between terms.
 1. [ ] Open the icon file and:
-   - Ensure that the `viewBox` attribute is present and matches the icon frame dimensions (either `viewBox="0 0 12 12"` or `viewBox="0 0 16 16"`). 
+   - Ensure that the `viewBox` attribute is present and matches the icon frame dimensions (either `viewBox="0 0 12 12"` or `viewBox="0 0 16 16"`).
    - Remove any `desc` or `clipPath` attributes.
    - Remove the `fill="none"` attribute from the `<svg>` element.
 1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app by changing settings in the **Icon configuration** panel of the site. The icon should change color and size with no issues.

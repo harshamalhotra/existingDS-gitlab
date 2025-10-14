@@ -27,7 +27,7 @@ We accept contributions from wider community members who share a Figma [draft](h
 
 ### Subpixel antialiasing
 
-Even though we’re working with vector objects, illustrations will still be displayed on screens comprised of pixels. Vector is great for resolution _independence_, but we still want illustrations to look as crisp as possible in the original state.
+Even though we’re working with vector objects, illustrations will still be displayed on screens comprised of pixels. Vector is great for resolution *independence*, but we still want illustrations to look as crisp as possible in the original state.
 
 Illustration elements are aligned to whole pixels to avoid subpixel antialiasing and be as crisp as possible on all screens and resolutions. Elements within an illustration, such as curves or diagonal lines, might not always align exactly to a whole pixel, and in these instances it’s better for the element to feel natural rather than forced.
 
@@ -57,20 +57,20 @@ An illustration shouldn't replace content, but compliment it. It’s critical to
 
 Example:
 
-```
+```html
 <img src="circle.svg" alt="I’m a plain circle." role="img">
 ```
 
 **For inline SVG:**
 
-- Within the SVG code add `title` and `desc` (optional) elements. They _must_ be the first nested items within the SVG.
+- Within the SVG code add `title` and `desc` (optional) elements. They *must* be the first nested items within the SVG.
 - Add unique IDs to the `title` and `desc`; for example, `<title id="uniqueTitleID">SVG Title</title>`.
 - On the `<svg>`, add an `aria-labelledby="uniqueTitleID uniqueDescID"` attribute.
 - Lastly, on the `<svg>`, add `role="img"` to prevent browsers from traversing the SVG.
 
 Example:
 
-```
+```svg
 <svg id="circle" viewBox="0 0 64 64" aria-labeledby="circleTitle circleDesc" role="img">
   <title id="circleTitle">Circle</title>
   <desc id="circleDesc">I’m a plain circle.</desc>
@@ -82,7 +82,7 @@ For illustrations that are purely decoration and add no value to the content, us
 
 Example:
 
-```
+```svg
 <svg viewBox="0 0 64 64" aria-hidden="true">
   <circle cx="32" cy="32" r="32" fill="#222" fill-rule="evenodd"/>
 </svg>

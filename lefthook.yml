@@ -15,13 +15,13 @@ pre-commit:
         # This list should be kept in sync with the negated globs in
         # .markdownlint-cli2.yaml.
         - '.gitlab/**/*.md'
+        - 'packages/gitlab-svgs/.tmp/**/*.md'
+        - 'packages/gitlab-svgs/dist/**/*.md'
         - 'packages/gitlab-ui/src/vendor/**/*.md'
         - 'pages/components/template.md'
         - '**/node_modules/**'
         - '**/CHANGELOG*.md'
         - '.changeset/*.md'
-        # Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
-        - 'packages/gitlab-svgs/**/*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
     stylelint:
       glob: '**/*.{scss}'
