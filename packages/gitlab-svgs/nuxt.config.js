@@ -3,7 +3,6 @@ import sass from 'sass';
 import webpack from 'webpack';
 import fixUrlInReviewApp from './svgpreviewer/helpers/fix_url_in_review_app';
 
-/* eslint-disable import/no-commonjs */
 // Remove after update to webpack@5:
 // https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/347
 import './build_scripts/patched_crypto';

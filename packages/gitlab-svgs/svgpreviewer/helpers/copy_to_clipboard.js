@@ -15,7 +15,7 @@ export default (text) => {
 
   try {
     success = document.execCommand('copy');
-  } catch (err) {
+  } catch {
     // noop
   }
 

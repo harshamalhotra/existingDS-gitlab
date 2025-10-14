@@ -53,8 +53,7 @@ export default [
       `${PACKAGE_GITLAB_UI}/.storybook/docs/`,
       `${PACKAGE_GITLAB_UI}/bin/migrate_custom_utils_to_tw.bundled.mjs`,
 
-      // Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
-      `${PACKAGE_GITLAB_SVGS}/`,
+      `${PACKAGE_GITLAB_SVGS}/.tmp/`,
 
       // Do not lint tailwind-documentation files for the initial stage of the merge.
       // This should eventually be removed as it is more integrated into the monorepo.
@@ -251,6 +250,23 @@ export default [
       rules: {
         // Ignore vendored bootstrap-vue imports
         'import/no-relative-packages': 'off',
+      },
+    },
+  ]),
+  ...setBasePath(PACKAGE_GITLAB_SVGS, [
+    {
+      files: ['build_scripts/**/*.{js,mjs,cjs}'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
+    {
+      rules: {
+        // TODO: Remove this once packages/gitlab-svgs is a workspace. The root
+        // lint_and_test CI job fails without this, as certain dependencies
+        // aren't installed in the root, only in packages/gitlab-svgs. This is
+        // why workspaces will solve this.
+        'import/no-unresolved': 'off',
       },
     },
   ]),

@@ -33,8 +33,6 @@ svgs:build-and-check:
     - bash ./build_scripts/build-svgs.sh
     - echo "Starting Checks"
     - bash ./build_scripts/svg-lint.sh
-    # Temporarily disable linting. This will be re-enabled when ESLint is hoisted to the root.
-    # - yarn run lint
   artifacts:
     paths:
       - packages/gitlab-svgs/dist

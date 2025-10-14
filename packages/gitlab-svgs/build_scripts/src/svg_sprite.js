@@ -5,7 +5,6 @@ const mkdirp = require('mkdirp');
 const SVGSpriter = require('svg-sprite');
 const { getFilesizeInBytes } = require('./utils');
 
-// eslint-disable-next-line max-params
 const createSvgSprite = ({
   destPath,
   globPatterns,

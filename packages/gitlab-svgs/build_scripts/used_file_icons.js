@@ -15,7 +15,6 @@ uniqueIcons.add('folder-git'); // Used for submodules types
 
 const usedFileIcons = [...uniqueIcons].sort();
 
-// eslint-disable-next-line no-restricted-syntax
 for (const icon of usedFileIcons) {
   console.log(icon);
 }
