@@ -13,7 +13,8 @@ include:
   image: node:20.19.5-bookworm
   cache: &global_cache
     paths:
-      - packages/gitlab-svgs/node_modules
+      - packages/*/node_modules/
+      - node_modules/
     policy: pull
   before_script:
     - cd packages/gitlab-svgs
