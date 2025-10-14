@@ -44,6 +44,11 @@ svgs:build-and-check:
   stage: deploy
   needs:
     - svgs:build-and-check
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: '$CI_PAGES_URL'
+    PAGES_PREFIX: 'svgs'
   script:
     # Move static assets to svgpreviewer directory
     - cp -r dist/ svgpreviewer/static/
@@ -56,10 +61,10 @@ svgs:build-and-check:
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|json\|css\|svg\|xml\)$' -exec gzip --force --keep '{}' \;
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|json\|css\|svg\|xml\)$' -exec brotli --force --keep '{}' \;
     - ls -alth public/
-  environment:
-    url: '${CI_PAGES_URL}'
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
   pages:
-    publish: public
+    publish: packages/gitlab-svgs/public
   artifacts:
     paths:
       - packages/gitlab-svgs/public
@@ -68,6 +73,7 @@ svgs:pages:
   extends:
     - .svgs:pages
   pages:
+    path_prefix: '$PAGES_PREFIX'
     expire_in: never
   rules:
     - <<: *svgs-is-design-gitlab-com-default-branch
@@ -76,10 +82,11 @@ svgs:review-app:
   extends:
     - .svgs:pages
   pages:
-    path_prefix: '$CI_ENVIRONMENT_SLUG'
+    path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-${PAGES_PREFIX}'
     expire_in: '2 weeks'
   environment:
-    name: 'review/mr-$CI_MERGE_REQUEST_IID'
+    name: '${PAGES_PREFIX}-review/mr-${CI_MERGE_REQUEST_IID}'
+    url: '$CURRENT_PAGES_URL'
     auto_stop_in: '2 weeks'
   rules:
     - <<: *svgs-is-design-gitlab-com-mr
