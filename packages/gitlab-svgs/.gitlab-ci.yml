@@ -25,6 +25,7 @@ svgs:build-and-check:
   extends:
     - .svgs:node
   stage: build
+  needs: []
   cache:
     <<: *global_cache
     policy: pull-push
