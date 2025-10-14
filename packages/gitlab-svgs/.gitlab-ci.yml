@@ -15,9 +15,10 @@ include:
   image: node:20.19.5-bookworm
   cache: &global_cache
     paths:
-      - node_modules/
+      - packages/gitlab-svgs/node_modules
     policy: pull
   before_script:
+    - cd packages/gitlab-svgs
     - yarn install --frozen-lockfile
 
 svgs:build-and-check:
@@ -35,7 +36,7 @@ svgs:build-and-check:
     # - yarn run lint
   artifacts:
     paths:
-      - dist
+      - packages/gitlab-svgs/dist
 
 .svgs:pages:
   extends:
@@ -61,7 +62,7 @@ svgs:build-and-check:
     publish: public
   artifacts:
     paths:
-      - public
+      - packages/gitlab-svgs/public
 
 svgs:pages:
   extends:
