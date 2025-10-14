@@ -12,10 +12,11 @@
   "private": false,
   "license": "MIT",
   "scripts": {
-    "svg": "build_scripts/build-svgs.sh",
-    "dev": "yarn run svg && nuxt",
+    "svg": "make svgs",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "prepare": "yarn run svg",
     "generate": "nuxt generate"
   },
   "devDependencies": {

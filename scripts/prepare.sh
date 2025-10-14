@@ -3,6 +3,8 @@ set -euo pipefail
 IFS=$'\n\t'
 
 if [ "${CI:-}" != "true" ]; then
-  echo "Not in CI, running lefthook install"
   yarn lefthook install
 fi
+
+# Ensure that dist files are available to other packages in the workspace
+yarn workspace @gitlab/svgs svg
