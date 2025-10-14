@@ -36,6 +36,7 @@
     "yarn": "^1.22.22"
   },
   "workspaces": [
+    "packages/gitlab-svgs",
     "packages/gitlab-ui",
     "packages/release-tooling-test"
   ],
