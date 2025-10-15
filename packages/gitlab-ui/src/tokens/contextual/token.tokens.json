@@ -1,5 +1,17 @@
 {
   "token": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.default}",
+        "$type": "dimension",
+        "$description": "Used for token border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
     "foreground": {
       "color": {
         "$value": "{text.color.default}",

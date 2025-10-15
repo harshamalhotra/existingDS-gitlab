@@ -1125,6 +1125,7 @@
   --gl-dropdown-option-text-color-active: var(--gl-action-neutral-foreground-color-active); /** Used for the text of a dropdown option in the active state. */
   --gl-toggle-switch-icon-color-unchecked-focus: var(--gl-action-strong-neutral-background-color-focus); /** Used for the icon color of an unchecked toggle switch in the focus state. */
   --gl-toggle-switch-icon-color-checked-focus: var(--gl-action-strong-confirm-background-color-focus); /** Used for the icon color of a checked toggle switch in the focus state. */
+  --gl-token-border-radius: var(--gl-border-radius-default); /** Used for token border radius. */
   --gl-action-selected-foreground-color-focus: var(--gl-action-selected-foreground-color-hover); /** Used for the foreground of a selected action in the focus state. */
   --gl-action-selected-border-color-focus: var(--gl-action-selected-background-color-focus); /** Used for the border of a selected action in the focus state. */
   --gl-action-strong-confirm-foreground-color-focus: var(--gl-action-strong-confirm-foreground-color-hover); /** Used for the foreground of a strong confirm action in the focus state. */
