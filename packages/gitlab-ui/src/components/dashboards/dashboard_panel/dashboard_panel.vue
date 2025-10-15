@@ -193,7 +193,7 @@ export default {
 <template>
   <div
     :id="panelId"
-    class="gl-border gl-h-full !gl-overflow-visible gl-rounded-lg gl-bg-white gl-p-5"
+    class="gl-border gl-h-full !gl-overflow-visible gl-rounded-lg gl-bg-default gl-p-5"
     :class="containerClasses"
   >
     <div class="gl-flex gl-h-full gl-flex-col">
