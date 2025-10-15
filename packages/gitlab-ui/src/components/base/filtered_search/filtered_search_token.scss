@@ -47,9 +47,9 @@
 
   &.gl-filtered-search-token-data {
     @apply gl-h-6;
-    @apply gl-rounded-tr-small;
-    @apply gl-rounded-br-small;
     background-color: var(--gl-filtered-search-token-data-background-color-default);
+    border-top-right-radius: var(--gl-token-border-radius);
+    border-bottom-right-radius: var(--gl-token-border-radius);
 
     .gl-filtered-search-token-data-content {
       @apply gl-inline-flex;
