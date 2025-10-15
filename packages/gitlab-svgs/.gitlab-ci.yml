@@ -10,7 +10,7 @@ include:
   if: !reference [.is-design-gitlab-com-mr, if]
 
 .svgs:node:
-  image: node:20.19.5-bookworm
+  image: $NODE_IMAGE
   cache: &global_cache
     paths:
       - packages/*/node_modules/

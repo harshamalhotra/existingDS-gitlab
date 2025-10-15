@@ -12,7 +12,7 @@
   image: mcr.microsoft.com/playwright:v1.55.1-jammy
 
 .ui:node:
-  image: node:22.17.1-bookworm
+  image: $NODE_IMAGE
 
 .ui:use_vue3:
   variables:
