@@ -2,12 +2,12 @@
 name: Dashboard panel
 description: A dashboard panel displays content and data for analysis and decision-making. It's the basic building blocks of a dashboard, but can also be used on its own. In a customizable dashboard, it can be moved and resized by a user to create their preferred layout.
 extendedNotice:
-  owners: group::platform insights
-  contacts:
-    - text: '#g_analytics_platform_insights'
-      url: 'https://gitlab.slack.com/channels/g_analytics_platform_insights'
+ owners: group::platform insights
+ contacts:
+ - text: '#g_analytics_platform_insights'
+ url: 'https://gitlab.slack.com/channels/g_analytics_platform_insights'
 related:
-  - dashboards
+ - dashboards
 ---
 
 ## Structure
@@ -44,32 +44,32 @@ related:
 Keep to one line using sentence fragments:
 
 <grid>
-  <do>Pending reviews this week</do>
-  <dont>Merge requests that have been open for more than 7 days and are awaiting review</dont>
+ <do>Pending reviews this week</do>
+ <dont>Merge requests that have been open for more than 7 days and are awaiting review</dont>
 </grid>
 
 Avoid punctuation except full stops for complete sentences:
 
 <grid>
-  <do>Open merge requests by team</do>
-  <dont>Open merge requests: sorted by team</dont>
+ <do>Open merge requests by team</do>
+ <dont>Open merge requests: sorted by team</dont>
 </grid>
 
 <grid>
-  <do>Merge requests including drafts</do>
-  <dont>Merge requests (including drafts)</dont>
+ <do>Merge requests including drafts</do>
+ <dont>Merge requests (including drafts)</dont>
 </grid>
 
 <grid>
-  <do>Open MRs last 30 days</do>
-  <dont>Open MRs - last 30 days</dont>
+ <do>Open MRs last 30 days</do>
+ <dont>Open MRs - last 30 days</dont>
 </grid>
 
 Avoid conversational tone:
 
 <grid>
-  <do>Average time to merge</do>
-  <dont>How long did merge requests take to merge?</dont>
+ <do>Average time to merge</do>
+ <dont>How long did merge requests take to merge?</dont>
 </grid>
 
 ### Considerations
@@ -81,6 +81,8 @@ Limit each dashboard panel to one visualization for better scalability and easie
 #### Limit filters
 
 Keep dashboard panel-level filter options minimal. Too many filters create analysis paralysis and increases the likelihood of a user creating a misleading or incorrect data view. Minimal filters reduce cognitive load and help maintain focus on the most important data dimensions. This also improves dashboard performance, since fewer filter combinations result in more predictable query patterns and better caching opportunities. Additionally, minimal dashboard panel-level filter options ensure consistency across user experiences and reduce the risk of a user getting lost in edge-case filter combinations that may not provide meaningful insights.
+
+[View in Pajamas UI Kit →](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3058-394)
 
 ## Code reference
 
@@ -108,27 +110,27 @@ import { GlDashboardPanel } from '@gitlab/ui';
 import MyVisualization from './my_visualization.vue';
 
 export default {
-  components: {
-    GlDashboardPanel,
-    MyVisualization,
-  },
-  data() {
-    return {
-      isLoading: false,
-    };
-  },
+ components: {
+ GlDashboardPanel,
+ MyVisualization,
+ },
+ data() {
+ return {
+ isLoading: false,
+ };
+ },
 };
 </script>
 
 <template>
-  <gl-dashboard-panel
-    title="My Content Title"
-    :loading="isLoading"
-  >
-    <template #body>
-      <my-visualization />
-    </template>
-  </gl-dashboard-panel>
+ <gl-dashboard-panel
+ title="My Content Title"
+ :loading="isLoading"
+ >
+ <template #body>
+ <my-visualization />
+ </template>
+ </gl-dashboard-panel>
 </template>
 ```
 
