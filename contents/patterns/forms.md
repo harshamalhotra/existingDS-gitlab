@@ -71,7 +71,7 @@ Forms may include a variety of elements. By default all information in forms is 
 
 #### Field
 
-- **Text input**: The `<input type="text">` element is the default input type,  used for a single line of text.
+- **Text input**: The `<input type="text">` element is the default input type, used for a single line of text.
 - **Text area**: The `<textarea>` is used for multi-line text.
 
 #### Checkbox
@@ -96,7 +96,11 @@ The `<select>` element creates a dropdown of options. See the dropdown component
 
 ### Layout
 
-By default a form flows top to bottom in a single, left-aligned column. Inline inputs in a vertical form are only acceptable when they’re related, for example, name and surname. In a tabular layout, a form can use both columns and rows.
+By default a form flows top to bottom in a single, left-aligned column (an "F-pattern").
+Inline inputs in a vertical form are only acceptable when they’re related, for example, name and surname.
+In a tabular layout, a form can use both columns and rows.
+
+For more on the alignment of form buttons, see [button alignment](/components/button#alignment).
 
 In rare cases, a `<label>` can be placed to the left of the input. For example, in a [filter](/components/filter) section or a [date picker](/components/date-picker).
 
