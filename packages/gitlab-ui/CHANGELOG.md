@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.10.1
+
+### Patch Changes
+
+- 06552bc: Dashboard panel background to default
+
 ## 123.10.0
 
 ### Minor Changes
