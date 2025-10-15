@@ -117,14 +117,20 @@ module.exports = ({ config }) => {
       ],
     },
     {
-      test: /@gitlab\/svgs\/dist\/illustrations\.svg$/,
+      // Note: because @gitlab/svgs is a workspace package, it is symlinked into node_modules.
+      // Webpack tests against the resolved, real path of the module, not its symlink. So, the test
+      // should match the actual workspace path, *not* the module specifier or node_modules location.
+      // See https://webpack.js.org/configuration/module/#rule-conditions.
+      test: /packages\/gitlab-svgs\/dist\/illustrations\.svg$/,
       type: 'asset/resource',
       generator: {
         filename: 'static/[name][ext]',
       },
     },
     {
-      test: /@gitlab\/svgs\/dist\/(icons|illustrations\/.+)\.svg$/,
+      // Note: See above.
+      // See https://webpack.js.org/configuration/module/#rule-conditions.
+      test: /packages\/gitlab-svgs\/dist\/(icons|illustrations\/.+)\.svg$/,
       type: 'asset/resource',
     },
     {
