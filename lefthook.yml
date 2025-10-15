@@ -1,0 +1,67 @@
+# Lefthook guide:
+# https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: '*.{js,vue}'
+      run: ./node_modules/.bin/eslint {staged_files}
+    prettier:
+      glob: '*.{js,mjs,cjs,ts,vue}'
+      run: ./node_modules/.bin/prettier --check {staged_files}
+    markdown-lint:
+      glob: '*.md'
+      exclude:
+        # This list should be kept in sync with the negated globs in
+        # .markdownlint-cli2.yaml.
+        - '.gitlab/**/*.md'
+        - 'packages/gitlab-ui/src/vendor/**/*.md'
+        - 'pages/components/template.md'
+        - '**/node_modules/**'
+        - '**/CHANGELOG*.md'
+        - '.changeset/*.md'
+        # Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
+        - 'packages/gitlab-svgs/**/*.md'
+      run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
+    stylelint:
+      glob: '**/*.{scss}'
+      run: ./node_modules/.bin/stylelint --allow-empty-input {staged_files}
+    generate_translations:
+      files: git diff --name-only --staged
+      glob: 'packages/gitlab-ui/**/*.{js,vue}'
+      run: cd packages/gitlab-ui && yarn translations:collect && git add ./translations.js
+    build_tokens:
+      files: git diff --name-only --staged
+      glob: 'packages/gitlab-ui/**/*.tokens.json'
+      run: cd packages/gitlab-ui && make tokens && git add ./src/tokens/build
+    yarn-deduplicate:
+      glob: '{yarn.lock,packages/*/package.json}'
+      run: yarn yarn-deduplicate --strategy fewer --list --fail
+
+commit-msg:
+  skip:
+    - merge
+    - merge-commit
+    - rebase
+    - ref: main
+  commands:
+    commit_message_lint:
+      run: ./scripts/simple_commit_message_linter.mjs {0}
+
+# This is a non git-hook-target which we use in CI
+# in order to parallelize linting / spec execution
+test-in-ci:
+  parallel: true
+  commands:
+    eslint:
+      run: yarn run lint:eslint --format gitlab
+    markdownlint:
+      run: yarn run lint:markdownlint
+    prettier:
+      run: yarn run lint:prettier
+    stylelint:
+      run: yarn run lint:stylelint --custom-formatter=@studiometa/stylelint-formatter-gitlab
+    unit_tests:
+      run: yarn run test:unit
+    yarn-deduplicate:
+      run: yarn yarn-deduplicate --strategy fewer --list --fail

@@ -1,0 +1,160 @@
+####################
+# BEGIN Core layer #
+####################
+
+# Package dependency files
+package.json @gitlab-org/maintainers/gitlab-ui
+yarn.lock @gitlab-org/maintainers/gitlab-ui
+packages/**/package.json @gitlab-org/maintainers/gitlab-ui
+packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui
+
+# If nothing else matches, fall back to the Design System team.
+# See later in the file for the Extended layer overrides.
+# See https://gitlab.com/groups/gitlab-org/-/epics/15334 for more information.
+* @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+# Accessibility
+/contents/accessibility/ @trevorpierce
+
+# Technical Writing
+/contents/content/ @gitlab-org/technical-writing
+
+# Allow any maintainer to approve changeset files
+/.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+##################
+# END Core layer #
+##################
+
+#############################
+# BEGIN GitLab UI overrides #
+#############################
+
+# Give GitLab UI maintainers default ownership of all GitLab UI files.
+/packages/gitlab-ui/ @gitlab-org/maintainers/gitlab-ui
+
+# Give designers default ownership of all GitLab UI screenshots.
+/packages/gitlab-ui/tests/__image_snapshots__/ @gitlab-com/gitlab-ux/designers
+
+# Reinstate Design System team as owners of Core components
+/packages/gitlab-ui/src/components/base/accordion @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/alert @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/animated_icon @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/avatar @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/avatar_labeled @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/avatar_link @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/avatars_inline @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/badge @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/banner @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/breadcrumb @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/button @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/button_group @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/card @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/collapse @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/datepicker @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/daterange_picker @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/drawer @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/dropdown @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/filtered_search @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/form @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/icon @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/illustration @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/infinite_scroll @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/keyset_pagination @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/link @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/loading_icon @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/markdown @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/modal @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/new_dropdowns @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/pagination @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/popover @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/progress_bar @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/search_box_by_click @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/search_box_by_type @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/segmented_control @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/skeleton_loader @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/sorting @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/table @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/table_lite @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/tabs @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/toast @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/toggle @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/token @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/token_selector @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/base/tooltip @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/regions/empty_state @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+# Reinstate Design System team as owners of Core utilities
+/packages/gitlab-ui/src/components/utilities/friendly_wrap @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/utilities/intersection_observer @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/utilities/intersperse @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/utilities/sprintf @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/utilities/truncate @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+/packages/gitlab-ui/src/components/utilities/truncate_text @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+# Reinstate Design System team as owners of Core directives
+/packages/gitlab-ui/src/directives @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+# Reinstate Design System team as owners of Design Tokens
+/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
+
+###########################
+# END GitLab UI overrides #
+###########################
+
+##################################
+# BEGIN Extended layer overrides #
+##################################
+
+# AI Patterns
+/contents/patterns/ai-human-interaction.md @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/duo-* @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+
+# Animation
+/contents/product-foundations/animation* @jmiocene @jelder
+/contents/product-foundations/iconography-animated.md @jmiocene @jelder
+
+# Brand
+/contents/brand-* @gitlab-com/gitlab-ux/designers
+/contents/resources.md @gitlab-com/gitlab-ux/designers
+/contents/style-guides.md @gitlab-com/gitlab-ux/designers
+
+# Data Visualization
+/contents/data-visualization/ @svedova @lvanc @jiaan
+/contents/components/dashboard-panel.md @svedova @lvanc @jiaan
+/packages/gitlab-ui/src/components/charts/ @svedova @lvanc @jiaan
+/packages/gitlab-ui/src/components/dashboards/ @svedova @lvanc @jiaan
+
+# Illustration
+/contents/product-foundations/illustration* @jmiocene @jelder
+
+# UX patterns
+/contents/objects/ @gitlab-com/gitlab-ux/designers
+/contents/patterns/dashboards.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/drag-and-drop.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/feature-discovery.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/feature-management.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/keyboard-shortcuts.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/merge-request-reports.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/navigation-sidebar.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/notifications.md @gitlab-com/gitlab-ux/designers
+/contents/patterns/settings-management.md @gitlab-com/gitlab-ux/designers
+
+# Extended Components
+/contents/components/broadcast-message.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/label.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/path.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/stepper.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/tree.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/utility-* @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+
+##################################
+# END Extended layer overrides #
+##################################
+
+########################
+# BEGIN Named sections #
+########################
+
+# At the moment, there are no named sections. If we ever have any, they belong
+# here at the end of the file.

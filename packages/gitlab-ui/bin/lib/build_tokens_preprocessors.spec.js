@@ -1,0 +1,324 @@
+import {
+  stripDescriptionsPreprocessor,
+  resolveUnitsPreprocessor,
+  selectDefaultValuePreprocessor,
+  selectDarkValuePreprocessor,
+} from './build_tokens_preprocessors';
+
+describe('buildTokens', () => {
+  describe('stripDescriptionsPreprocessor', () => {
+    const token1 = {
+      $value: '#cbbbf23d',
+      $type: 'color',
+      $description: 'Purple background.',
+    };
+    const token2 = {
+      $value: { default: '{color.red.600}', dark: '{color.red.300}' },
+      $type: 'color',
+      $description: 'Indicates a problem.',
+    };
+
+    it('strips description from token', () => {
+      expect(stripDescriptionsPreprocessor(token1)).toEqual({
+        $value: '#cbbbf23d',
+        $type: 'color',
+      });
+    });
+
+    it('strips description from array of tokens', () => {
+      expect(stripDescriptionsPreprocessor([token1, token2])).toEqual([
+        {
+          $value: '#cbbbf23d',
+          $type: 'color',
+        },
+        {
+          $value: { default: '{color.red.600}', dark: '{color.red.300}' },
+          $type: 'color',
+        },
+      ]);
+    });
+
+    it('preserves arrays of primitives', () => {
+      expect(
+        stripDescriptionsPreprocessor({
+          path: ['color', 'alpha', '0'],
+          numbers: [0, 1, 2],
+        }),
+      ).toEqual({
+        path: ['color', 'alpha', '0'],
+        numbers: [0, 1, 2],
+      });
+    });
+
+    it('strips description from deeply nested tokens', () => {
+      expect(
+        stripDescriptionsPreprocessor({
+          component: { theme: { token1, token2 } },
+        }),
+      ).toEqual({
+        component: {
+          theme: {
+            token1: { $type: 'color', $value: '#cbbbf23d' },
+            token2: {
+              $type: 'color',
+              $value: { dark: '{color.red.300}', default: '{color.red.600}' },
+            },
+          },
+        },
+      });
+    });
+  });
+
+  describe('resolveUnitsPreprocessor', () => {
+    it('converts unit objects to string values', () => {
+      const input = {
+        spacing: {
+          small: { value: 8, unit: 'px' },
+          medium: { value: 16, unit: 'px' },
+        },
+      };
+
+      const expected = {
+        spacing: {
+          small: '8px',
+          medium: '16px',
+        },
+      };
+
+      expect(resolveUnitsPreprocessor(input)).toEqual(expected);
+    });
+
+    it('handles different unit types', () => {
+      const input = {
+        fontSize: { value: 1.5, unit: 'rem' },
+        duration: { value: 300, unit: 'ms' },
+      };
+
+      const expected = {
+        fontSize: '1.5rem',
+        duration: '300ms',
+      };
+
+      expect(resolveUnitsPreprocessor(input)).toEqual(expected);
+    });
+
+    it('preserves objects that are not unit objects', () => {
+      const input = {
+        color: { red: '#ff0000', blue: '#0000ff' },
+        config: { value: 'test', type: 'string', other: 'prop' },
+      };
+
+      expect(resolveUnitsPreprocessor(input)).toEqual(input);
+    });
+
+    it('handles arrays with unit objects', () => {
+      const input = [{ value: 4, unit: 'px' }, { value: 8, unit: 'px' }, 'regular-string'];
+
+      const expected = ['4px', '8px', 'regular-string'];
+
+      expect(resolveUnitsPreprocessor(input)).toEqual(expected);
+    });
+
+    it('handles deeply nested structures', () => {
+      const input = {
+        theme: {
+          spacing: {
+            padding: { value: 12, unit: 'px' },
+            margin: { value: 24, unit: 'px' },
+          },
+        },
+      };
+
+      const expected = {
+        theme: {
+          spacing: {
+            padding: '12px',
+            margin: '24px',
+          },
+        },
+      };
+
+      expect(resolveUnitsPreprocessor(input)).toEqual(expected);
+    });
+  });
+
+  describe('selectDefaultValuePreprocessor', () => {
+    it('selects default value from theme objects', () => {
+      const input = {
+        color: {
+          primary: { default: '#000000', dark: '#ffffff' },
+          secondary: { default: '#333333', dark: '#cccccc' },
+        },
+      };
+
+      const expected = {
+        color: {
+          primary: '#000000',
+          secondary: '#333333',
+        },
+      };
+
+      expect(selectDefaultValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('preserves objects without default/dark structure', () => {
+      const input = {
+        color: { red: '#ff0000', blue: '#0000ff' },
+        spacing: { small: '8px', large: '24px' },
+      };
+
+      expect(selectDefaultValuePreprocessor(input)).toEqual(input);
+    });
+
+    it('handles mixed structures', () => {
+      const input = {
+        colors: {
+          themed: { default: '#ffffff', dark: '#000000' },
+          static: '#ff0000',
+        },
+        spacing: { value: '16px' },
+      };
+
+      const expected = {
+        colors: {
+          themed: '#ffffff',
+          static: '#ff0000',
+        },
+        spacing: { value: '16px' },
+      };
+
+      expect(selectDefaultValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('handles deeply nested theme objects', () => {
+      const input = {
+        component: {
+          button: {
+            background: { default: '#333333', dark: '#cccccc' },
+            text: { default: '#000000', dark: '#ffffff' },
+          },
+        },
+      };
+
+      const expected = {
+        component: {
+          button: {
+            background: '#333333',
+            text: '#000000',
+          },
+        },
+      };
+
+      expect(selectDefaultValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('preserves arrays and primitive values', () => {
+      const input = {
+        array: [1, 2, 3],
+        string: 'test',
+        number: 42,
+      };
+
+      expect(selectDefaultValuePreprocessor(input)).toEqual(input);
+    });
+
+    it('handles objects with additional properties', () => {
+      const input = {
+        color: { default: '#ffffff', dark: '#000000', type: 'color' },
+      };
+
+      // Should not transform because it has more than 2 properties
+      expect(selectDefaultValuePreprocessor(input)).toEqual(input);
+    });
+  });
+
+  describe('selectDarkValuePreprocessor', () => {
+    it('selects dark value from theme objects', () => {
+      const input = {
+        color: {
+          primary: { default: '#000000', dark: '#ffffff' },
+          secondary: { default: '#333333', dark: '#cccccc' },
+        },
+      };
+
+      const expected = {
+        color: {
+          primary: '#ffffff',
+          secondary: '#cccccc',
+        },
+      };
+
+      expect(selectDarkValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('preserves objects without default/dark structure', () => {
+      const input = {
+        color: { red: '#ff0000', blue: '#0000ff' },
+        spacing: { small: '8px', large: '24px' },
+      };
+
+      expect(selectDarkValuePreprocessor(input)).toEqual(input);
+    });
+
+    it('handles mixed structures', () => {
+      const input = {
+        colors: {
+          themed: { default: '#ffffff', dark: '#000000' },
+          static: '#ff0000',
+        },
+        spacing: { value: '16px' },
+      };
+
+      const expected = {
+        colors: {
+          themed: '#000000',
+          static: '#ff0000',
+        },
+        spacing: { value: '16px' },
+      };
+
+      expect(selectDarkValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('handles deeply nested theme objects', () => {
+      const input = {
+        component: {
+          button: {
+            background: { default: '#333333', dark: '#cccccc' },
+            text: { default: '#000000', dark: '#ffffff' },
+          },
+        },
+      };
+
+      const expected = {
+        component: {
+          button: {
+            background: '#cccccc',
+            text: '#ffffff',
+          },
+        },
+      };
+
+      expect(selectDarkValuePreprocessor(input)).toEqual(expected);
+    });
+
+    it('preserves arrays and primitive values', () => {
+      const input = {
+        array: [1, 2, 3],
+        string: 'test',
+        number: 42,
+      };
+
+      expect(selectDarkValuePreprocessor(input)).toEqual(input);
+    });
+
+    it('handles objects with additional properties', () => {
+      const input = {
+        color: { default: '#ffffff', dark: '#000000', type: 'color' },
+      };
+
+      // Should not transform because it has more than 2 properties
+      expect(selectDarkValuePreprocessor(input)).toEqual(input);
+    });
+  });
+});

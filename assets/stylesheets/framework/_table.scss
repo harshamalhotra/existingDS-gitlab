@@ -1,0 +1,47 @@
+table:not(.pika-table):not(.gl-table) {
+  @apply gl-w-full;
+  @apply gl-text-default;
+  @apply gl-border;
+  @apply gl-border-collapse;
+  @apply gl-text-left;
+  @apply gl-mb-6;
+
+  thead {
+    @apply gl-bg-subtle;
+
+    th {
+      @apply gl-font-bold;
+    }
+  }
+
+  th,
+  td {
+    @apply gl-border;
+    @apply gl-p-3;
+    @apply gl-font-normal;
+
+    &.header {
+      @apply gl-font-bold;
+      @apply gl-bg-subtle;
+    }
+  }
+}
+
+th,
+td {
+  @apply gl-align-top;
+}
+
+// Compact table
+.table-compact {
+  p,
+  ul {
+    @apply gl-text-base;
+    @apply gl-leading-normal;
+    @apply gl-mb-3;
+  }
+
+  ul {
+    @apply gl-mt-0;
+  }
+}

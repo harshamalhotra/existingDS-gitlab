@@ -1,0 +1,115 @@
+{
+  "color": {
+    "alpha": {
+      "0": {
+        "$value": "transparent",
+        "$type": "color",
+        "$extensions": {
+          "com.figma.scope": []
+        }
+      },
+      "dark": {
+        "2": {
+          "$value": "rgba(05, 05, 06, 0.02)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "4": {
+          "$value": "rgba(05, 05, 06, 0.04)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "6": {
+          "$value": "rgba(05, 05, 06, 0.06)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "8": {
+          "$value": "rgba(05, 05, 06, 0.08)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "16": {
+          "$value": "rgba(05, 05, 06, 0.16)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "24": {
+          "$value": "rgba(05, 05, 06, 0.24)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "40": {
+          "$value": "rgba(05, 05, 06, 0.4)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        }
+      },
+      "light": {
+        "2": {
+          "$value": "rgba(255, 255, 255, 0.02)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "4": {
+          "$value": "rgba(255, 255, 255, 0.04)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "6": {
+          "$value": "rgba(255, 255, 255, 0.06)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "8": {
+          "$value": "rgba(255, 255, 255, 0.08)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "16": {
+          "$value": "rgba(255, 255, 255, 0.16)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "24": {
+          "$value": "rgba(255, 255, 255, 0.24)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        },
+        "36": {
+          "$value": "rgba(255, 255, 255, 0.36)",
+          "$type": "color",
+          "$extensions": {
+            "com.figma.scope": []
+          }
+        }
+      }
+    }
+  }
+}

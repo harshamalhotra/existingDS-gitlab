@@ -1,0 +1,68 @@
+.tw:common:
+  image: node:23.0.0
+  before_script:
+    - cd packages/tailwind-documentation
+    - echo 'yarn-offline-mirror ".yarn-cache/"' >> .yarnrc
+    - echo 'yarn-offline-mirror-pruning true' >> .yarnrc
+    - yarn install --frozen-lockfile --no-progress
+  cache:
+    key:
+      files:
+        - packages/tailwind-documentation/yarn.lock
+    paths:
+      - packages/tailwind-documentation/.yarn-cache/
+
+tw:eslint:
+  stage: test
+  needs: []
+  extends:
+    - .tw:common
+  script:
+    - yarn lint
+
+tw:vitest:
+  stage: test
+  needs: []
+  extends:
+    - .tw:common
+  script:
+    - yarn test
+
+.tw:pages:
+  extends:
+    - .tw:common
+  stage: deploy
+  needs: []
+  variables:
+    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
+    # CURRENT_PAGES_URL is set in the canonical project
+    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+    PAGES_PREFIX: 'tailwind-documentation'
+  pages:
+    publish: packages/tailwind-documentation/.output/public
+  script:
+    - yarn build
+  after_script:
+    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
+
+tw:pages:
+  extends:
+    - .tw:pages
+  pages:
+    path_prefix: '$PAGES_PREFIX'
+    expire_in: never
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+
+tw:pages-review:
+  extends:
+    - .tw:pages
+  pages:
+    path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
+    expire_in: "2 weeks"
+  environment:
+    name: "$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}"
+    url: "${CURRENT_PAGES_URL}"
+    auto_stop_in: "2 weeks"
+  rules:
+    - if: '$CI_MERGE_REQUEST_IID'

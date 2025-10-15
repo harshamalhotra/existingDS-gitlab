@@ -1,0 +1,143 @@
+{
+  "name": "design.gitlab.com",
+  "version": "1.0.0",
+  "description": "Resources, components, and design guidelines behind GitLab",
+  "author": "GitLab",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues"
+  },
+  "scripts": {
+    "postinstall": "patch-package --error-on-fail --error-on-warn",
+    "start": "HOST=${HOST:=localhost} PORT=${PORT:=2018} nuxt",
+    "start:docs-local-gitlab-ui": "HOST=${HOST:=localhost} PORT=${PORT:=2018} GITLAB_UI_URL=http://${STORYBOOK_HOST:-localhost}:${STORYBOOK_PORT:-9001} nuxt",
+    "start:gitlab-ui": "cd packages/gitlab-ui && yarn && yarn storybook",
+    "start:full": "DISABLE_STORYBOOK_HMR=${DISABLE_STORYBOOK_HMR:=true} concurrently 'yarn start:docs-local-gitlab-ui' 'yarn start:gitlab-ui'",
+    "buildsingle": "nuxt build",
+    "build": "bash ./scripts/build.sh",
+    "lint:eslint": "eslint --report-unused-disable-directives --max-warnings 0 .",
+    "lint:eslint:fix": "yarn run lint:eslint --fix",
+    "lint:prettier": "prettier --list-different '**/*.{js,mjs,cjs,ts,vue}'",
+    "lint:prettier:fix": "yarn run lint:prettier --write",
+    "lint:markdownlint": "markdownlint-cli2",
+    "lint:stylelint": "stylelint '**/*.scss'",
+    "test": "node_modules/.bin/lefthook run test-in-ci --no-tty --colors true",
+    "test:unit": "jest",
+    "lint:fix": "yarn run lint:eslint:fix && yarn run lint:prettier:fix",
+    "prepare": "if [[ ! \"$CI\" = \"true\" ]]; then yarn lefthook install; fi",
+    "check-links": "start-server-and-test 'http-server ./public -c-1 --silent' 8080 'node ./scripts/check_links.mjs'",
+    "precheck-links": "yarn build"
+  },
+  "engines": {
+    "yarn": "^1.22.22"
+  },
+  "workspaces": [
+    "packages/gitlab-ui",
+    "packages/release-tooling-test"
+  ],
+  "dependencies": {
+    "@gitlab/application-sdk-browser": "^0.3.4",
+    "@gitlab/fonts": "^1.3.1",
+    "@gitlab/nuxt-edit-this-page": "1.0.0",
+    "@gitlab/svgs": "3.148.0",
+    "@gitlab/ui": "*",
+    "@nuxt/content": "^1.15.1",
+    "@nuxtjs/lunr-module": "^0.3.2",
+    "@nuxtjs/sentry": "^8.0.8",
+    "fuse.js": "^7.1.0",
+    "iframe-resizer": "^4.4.5",
+    "nuxt": "^2.18.1",
+    "pikaday": "1.8.0",
+    "prismjs": "^1.30.0",
+    "vue-live": "1.17.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.28.4",
+    "@babel/preset-env": "7.28.3",
+    "@changesets/changelog-git": "^0.2.1",
+    "@changesets/cli": "^2.29.7",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.37.0",
+    "@gitlab/eslint-plugin": "21.2.1",
+    "@gitlab/stylelint-config": "6.2.2",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@studiometa/stylelint-formatter-gitlab": "1.0.2",
+    "@vue/test-utils": "1.3.6",
+    "@vue/vue2-jest": "^29.2.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "8.4.1",
+    "chalk": "^5.6.2",
+    "concurrently": "^9.2.1",
+    "css-loader": "5.2.7",
+    "dompurify": "^3.2.6",
+    "eslint": "9.37.0",
+    "eslint-formatter-gitlab": "^6.0.1",
+    "eslint-import-resolver-jest": "3.0.2",
+    "eslint-plugin-cypress": "5.2.0",
+    "eslint-plugin-storybook": "0.12.0",
+    "http-server": "^14.1.1",
+    "jest": "30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jest-serializer-vue": "^3.1.0",
+    "lefthook": "^1.13.6",
+    "linkinator": "^6.3.0",
+    "markdownlint-cli2": "^0.18.1",
+    "patch-package": "^8.0.1",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "sass": "^1.93.2",
+    "sass-loader": "^10.5.2",
+    "start-server-and-test": "^2.1.2",
+    "stylelint": "16.25.0",
+    "unist-util-visit": "^5.0.0",
+    "vue-template-compiler": "2.7.16",
+    "webpack": "^4.47.0",
+    "yarn-deduplicate": "^6.0.2"
+  },
+  "resolutions": {
+    "chokidar": "3.6.0",
+    "sass-loader": "^10.5.2",
+    "stylus": "npm:@gitlab/noop@1.0.1",
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16",
+    "eslint-plugin-import": "2.32.0"
+  },
+  "jest": {
+    "globals": {
+      "vue-jest": {
+        "templateCompiler": {
+          "prettify": false
+        }
+      }
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|css)$": "<rootDir>/tests/__mocks__/file_mock.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.vue$": "@vue/vue2-jest",
+      ".*\\.(js)$": "babel-jest"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/test_setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/packages/"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!@gitlab/ui)"
+    ],
+    "testEnvironment": "jsdom"
+  }
+}

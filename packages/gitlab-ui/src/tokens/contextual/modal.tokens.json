@@ -1,0 +1,16 @@
+{
+  "modal": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.lg}",
+        "$type": "dimension",
+        "$description": "Used for modal border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    }
+  }
+}

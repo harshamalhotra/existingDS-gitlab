@@ -1,0 +1,816 @@
+[
+  {
+    "title": "Brand",
+    "items": [
+      {
+        "title": "Introduction",
+        "path": "brand-introduction"
+      },
+      {
+        "title": "Messaging",
+        "path": "brand-messaging",
+        "items": [
+          {
+            "title": "Brand voice",
+            "path": "brand-voice"
+          },
+          {
+            "title": "Style and formatting",
+            "path": "style-formatting"
+          }
+        ]
+      },
+      {
+        "title": "GitLab Logo",
+        "path": "brand-logo",
+        "items": [
+          {
+            "title": "Core logo",
+            "path": "core-logo"
+          },
+          {
+            "title": "Logomark",
+            "path": "logomark"
+          },
+          {
+            "title": "Branded lockups",
+            "path": "branded-lockups"
+          }
+        ]
+      },
+      {
+        "title": "Design",
+        "path": "brand-design",
+        "items": [
+          {
+            "title": "Color",
+            "path": "color"
+          },
+          {
+            "title": "Typography",
+            "path": "typography"
+          },
+          {
+            "title": "Visual design",
+            "items": [
+              {
+                "title": "Core elements",
+                "path": "visual-design-core-elements"
+              },
+              {
+                "title": "Icons and Patterns",
+                "path": "visual-design-brand-icons-and-patterns"
+              },
+              {
+                "title": "Illustrations",
+                "path": "visual-design-brand-illustrations"
+              },
+              {
+                "title": "Diagrams",
+                "path": "visual-design-diagrams-infographics"
+              }
+            ]
+          },
+          {
+            "title": "Motion",
+            "path": "motion"
+          },
+          {
+            "title": "Photography",
+            "path": "photography"
+          }
+        ]
+      },
+      {
+        "title": "Style guides",
+        "path": "style-guides"
+      },
+      {
+        "title": "Resources",
+        "path": "resources"
+      }
+    ]
+  },
+  {
+    "title": "Product",
+    "items": [
+      {
+        "title": "Get started",
+        "path": "get-started",
+        "items": [
+          {
+            "title": "Navigating Pajamas",
+            "path": "navigating-pajamas"
+          },
+          {
+            "title": "Principles",
+            "path": "principles"
+          },
+          {
+            "title": "Contributing",
+            "path": "contributing"
+          },
+          {
+            "title": "Contribution lifecycle",
+            "path": "lifecycle"
+          },
+          {
+            "title": "Pajamas UI Kit (Figma)",
+            "items": [
+              {
+                "title": "Contributing",
+                "path": "uik-contributing"
+              },
+              {
+                "title": "File structure",
+                "path": "uik-file-structure"
+              },
+              {
+                "title": "Release notes",
+                "path": "uik-release-notes"
+              },
+              {
+                "title": "Release process",
+                "path": "uik-release-process"
+              }
+            ]
+          },
+          {
+            "title": "Figma guides",
+            "items": [
+              {
+                "title": "Components",
+                "path": "uik-components"
+              },
+              {
+                "title": "Libraries",
+                "path": "uik-libraries"
+              },
+              {
+                "title": "Annotation",
+                "path": "uik-annotation"
+              },
+              {
+                "title": "Sharing",
+                "path": "uik-sharing"
+              },
+              {
+                "title": "Breaking changes",
+                "path": "uik-breaking-changes"
+              }
+            ]
+          },
+          {
+            "title": "Resources",
+            "path": "resources"
+          },
+          {
+            "title": "Repository",
+            "path": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+          }
+        ]
+      },
+      {
+        "title": "Foundations",
+        "path": "product-foundations",
+        "items": [
+          {
+            "title": "Design tokens",
+            "items": [
+              {
+                "title": "Overview",
+                "path": "design-tokens"
+              },
+              {
+                "title": "Reading guide",
+                "path": "design-tokens-reading"
+              },
+              {
+                "title": "Usage guide",
+                "path": "design-tokens-using"
+              },
+              {
+                "title": "Technical implementation",
+                "path": "design-tokens-technical-implementation"
+              },
+              {
+                "title": "All design tokens",
+                "path": "design-tokens-directory"
+              }
+            ]
+          },
+          {
+            "title": "Color",
+            "path": "color"
+          },
+          {
+            "title": "Typography",
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "type-fundamentals"
+              },
+              {
+                "title": "Headings",
+                "path": "type-headings"
+              },
+              {
+                "title": "Markdown",
+                "path": "type-markdown"
+              }
+            ]
+          },
+          {
+            "title": "Spacing",
+            "path": "spacing"
+          },
+          {
+            "title": "Layout",
+            "path": "layout"
+          },
+          {
+            "title": "Border",
+            "path": "border"
+          },
+          {
+            "title": "Elevation",
+            "path": "elevation"
+          },
+          {
+            "title": "Animation",
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "animation-fundamentals"
+              },
+              {
+                "title": "Feedback",
+                "path": "animation-feedback"
+              }
+            ]
+          },
+          {
+            "title": "Iconography",
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "iconography"
+              },
+              {
+                "title": "Animated icons",
+                "path": "iconography-animated"
+              },
+              {
+                "title": "All icons",
+                "path": "iconography-directory"
+              }
+            ]
+          },
+          {
+            "title": "Illustration",
+            "items": [
+              {
+                "title": "Fundamentals",
+                "path": "illustration"
+              },
+              {
+                "title": "Creating",
+                "path": "illustration-creation-guide"
+              },
+              {
+                "title": "Exporting",
+                "path": "illustration-export-guide"
+              },
+              {
+                "title": "All illustrations",
+                "path": "illustration-directory"
+              }
+            ]
+          },
+          {
+            "title": "Tailwind utilities",
+            "path": "tailwind-utilities"
+          }
+        ]
+      },
+      {
+        "title": "Components",
+        "path": "components",
+        "items": [
+          {
+            "title": "Accordion",
+            "path": "accordion"
+          },
+          {
+            "title": "Alert",
+            "path": "alert"
+          },
+          {
+            "title": "Avatars",
+            "items": [
+              {
+                "title": "Avatar",
+                "path": "avatar"
+              },
+              {
+                "title": "Avatar group",
+                "path": "avatar-group"
+              }
+            ]
+          },
+          {
+            "title": "Badge",
+            "path": "badge"
+          },
+          {
+            "title": "Banner",
+            "path": "banner"
+          },
+          {
+            "title": "Breadcrumb",
+            "path": "breadcrumb"
+          },
+          {
+            "title": "Broadcast message",
+            "path": "broadcast-message"
+          },
+          {
+            "title": "Buttons",
+            "items": [
+              {
+                "title": "Button",
+                "path": "button"
+              },
+              {
+                "title": "Button group",
+                "path": "button-group"
+              },
+              {
+                "title": "Sorting",
+                "path": "sorting"
+              }
+            ]
+          },
+          {
+            "title": "Card",
+            "path": "card"
+          },
+          {
+            "title": "Collapse",
+            "path": "collapse"
+          },
+          {
+            "title": "Dashboard panel",
+            "path": "dashboard-panel"
+          },
+          {
+            "title": "Drawer",
+            "path": "drawer"
+          },
+          {
+            "title": "Dropdown",
+            "items": [
+              {
+                "title": "Overview",
+                "path": "dropdown-overview"
+              },
+              {
+                "title": "Disclosure",
+                "path": "dropdown-disclosure"
+              },
+              {
+                "title": "Combobox",
+                "path": "dropdown-combobox"
+              }
+            ]
+          },
+          {
+            "title": "Form elements",
+            "items": [
+              {
+                "title": "Character count",
+                "path": "character-count"
+              },
+              {
+                "title": "Checkbox",
+                "path": "checkbox"
+              },
+              {
+                "title": "Date picker",
+                "path": "date-picker"
+              },
+              {
+                "title": "Filter",
+                "path": "filter"
+              },
+              {
+                "title": "Form combobox",
+                "path": "form-combobox"
+              },
+              {
+                "title": "Form fields",
+                "path": "form-fields"
+              },
+              {
+                "title": "Form group",
+                "path": "form-group"
+              },
+              {
+                "title": "Form input group",
+                "path": "form-input-group"
+              },
+              {
+                "title": "Radio button",
+                "path": "radio-button"
+              },
+              {
+                "title": "Search",
+                "path": "search"
+              },
+              {
+                "title": "Select",
+                "path": "select"
+              },
+              {
+                "title": "Textarea",
+                "path": "textarea"
+              },
+              {
+                "title": "Text input",
+                "path": "text-input"
+              },
+              {
+                "title": "Token",
+                "path": "token"
+              }
+            ]
+          },
+          {
+            "title": "Infinite scroll",
+            "path": "infinite-scroll"
+          },
+          {
+            "title": "Label",
+            "path": "label"
+          },
+          {
+            "title": "Link",
+            "path": "link"
+          },
+          {
+            "title": "Modal",
+            "path": "modal"
+          },
+          {
+            "title": "Pagination",
+            "path": "pagination"
+          },
+          {
+            "title": "Path",
+            "path": "path"
+          },
+          {
+            "title": "Popover",
+            "path": "popover"
+          },
+          {
+            "title": "Progress bar",
+            "path": "progress-bar"
+          },
+          {
+            "title": "Skeleton loader",
+            "path": "skeleton-loader"
+          },
+          {
+            "title": "Socks",
+            "path": "socks"
+          },
+          {
+            "title": "Spinner",
+            "path": "spinner"
+          },
+          {
+            "title": "Stepper",
+            "path": "stepper"
+          },
+          {
+            "title": "Table",
+            "path": "table"
+          },
+          {
+            "title": "Tabs",
+            "path": "tabs"
+          },
+          {
+            "title": "Toast",
+            "path": "toast"
+          },
+          {
+            "title": "Toggle",
+            "path": "toggle"
+          },
+          {
+            "title": "Tooltip",
+            "path": "tooltip"
+          },
+          {
+            "title": "Tree",
+            "path": "tree"
+          },
+          {
+            "title": "Utilities",
+            "items": [
+              {
+                "title": "Animated Number",
+                "path": "utility-animated-number"
+              },
+              {
+                "title": "Friendly Wrap",
+                "path": "utility-friendly-wrap"
+              },
+              {
+                "title": "Intersection Observer",
+                "path": "utility-intersection-observer"
+              },
+              {
+                "title": "Intersperse",
+                "path": "utility-intersperse"
+              },
+              {
+                "title": "Sprintf",
+                "path": "utility-sprintf"
+              },
+              {
+                "title": "Truncate",
+                "path": "utility-truncate"
+              },
+              {
+                "title": "Truncate Text",
+                "path": "utility-truncate-text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Directives",
+        "path": "directives",
+        "items": [
+          {
+            "title": "Hover Load",
+            "path": "hover-load"
+          },
+          {
+            "title": "Outside",
+            "path": "outside"
+          },
+          {
+            "title": "Resize Observer",
+            "path": "resize-observer"
+          },
+          {
+            "title": "Safe HTML",
+            "path": "safe-html"
+          },
+          {
+            "title": "Safe Link",
+            "path": "safe-link"
+          }
+        ]
+      },
+      {
+        "title": "Patterns",
+        "path": "patterns",
+        "items": [
+          {
+            "title": "AI-human interaction",
+            "path": "ai-human-interaction"
+          },
+          {
+            "title": "Affordance",
+            "path": "affordance"
+          },
+          {
+            "title": "Contextual help and info",
+            "path": "contextual-help"
+          },
+          {
+            "title": "Dashboards",
+            "path": "dashboards"
+          },
+          {
+            "title": "Destructive actions",
+            "path": "destructive-actions"
+          },
+          {
+            "title": "Drag and drop",
+            "path": "drag-and-drop"
+          },
+          {
+            "title": "Embedded lists",
+            "path": "embedded-lists"
+          },
+          {
+            "title": "Empty States",
+            "path": "empty-states"
+          },
+          {
+            "title": "Feature discovery",
+            "path": "feature-discovery"
+          },
+          {
+            "title": "Feature management",
+            "path": "feature-management"
+          },
+          {
+            "title": "Filtering",
+            "path": "filtering"
+          },
+          {
+            "title": "Forms",
+            "path": "forms"
+          },
+          {
+            "title": "GitLab Duo",
+            "items": [
+              {
+                "title": "Calls to action",
+                "path": "duo-calls-to-action"
+              },
+              {
+                "title": "Feedback",
+                "path": "duo-feedback"
+              },
+              {
+                "title": "Slash commands in GitLab Duo Chat",
+                "path": "duo-slash-commands"
+              }
+            ]
+          },
+          {
+            "title": "Keyboard shortcuts",
+            "path": "keyboard-shortcuts"
+          },
+          {
+            "title": "Loading",
+            "path": "loading"
+          },
+          {
+            "title": "Merge request reports",
+            "path": "merge-request-reports"
+          },
+          {
+            "title": "Navigation sidebar",
+            "path": "navigation-sidebar"
+          },
+          {
+            "title": "Notifications",
+            "path": "notifications"
+          },
+          {
+            "title": "Obfuscation",
+            "path": "obfuscation"
+          },
+          {
+            "title": "Progressive disclosure",
+            "path": "progressive-disclosure"
+          },
+          {
+            "title": "Saving and feedback",
+            "path": "saving-and-feedback"
+          },
+          {
+            "title": "Searching",
+            "path": "searching"
+          },
+          {
+            "title": "Settings management",
+            "path": "settings-management"
+          }
+        ]
+      },
+      {
+        "title": "Objects",
+        "path": "objects",
+        "items": [
+          {
+            "title": "Overview",
+            "path": "overview"
+          },
+          {
+            "title": "Job",
+            "path": "job"
+          },
+          {
+            "title": "Merge request",
+            "path": "merge-request"
+          }
+        ]
+      },
+      {
+        "title": "Data visualization",
+        "path": "data-visualization",
+        "items": [
+          {
+            "title": "Overview",
+            "path": "overview"
+          },
+          {
+            "title": "Color",
+            "path": "color"
+          },
+          {
+            "title": "Charts",
+            "path": "charts"
+          },
+          {
+            "title": "Single stat",
+            "path": "single-stat"
+          },
+          {
+            "title": "Mini pipeline graph",
+            "path": "mini-pipeline-graph"
+          }
+        ]
+      },
+      {
+        "title": "Content",
+        "path": "content",
+        "items": [
+          {
+            "title": "UI text",
+            "path": "ui-text"
+          },
+          {
+            "title": "Verb tenses",
+            "path": "verb-tenses"
+          },
+          {
+            "title": "Punctuation",
+            "path": "punctuation"
+          },
+          {
+            "title": "Date and time",
+            "path": "date-and-time"
+          }
+        ]
+      },
+      {
+        "title": "Accessibility",
+        "path": "accessibility",
+        "items": [
+          {
+            "title": "Statement of compliance",
+            "path": "a11y"
+          },
+          {
+            "title": "Inclusive design principles",
+            "path": "inclusive-design-principles"
+          },
+          {
+            "title": "Best practices",
+            "path": "best-practices"
+          },
+          {
+            "title": "GitLab accessibility conformance report",
+            "items": [
+              {
+                "title": "Section 508 Edition",
+                "path": "508"
+              },
+              {
+                "title": "WCAG Edition",
+                "path": "wcag"
+              }
+            ]
+          },
+          {
+            "title": "Evaluating accessibility",
+            "items": [
+              {
+                "title": "Overview",
+                "path": "evaluation"
+              },
+              {
+                "title": "Visual",
+                "path": "visual"
+              },
+              {
+                "title": "Content and semantics",
+                "path": "content-and-semantics"
+              },
+              {
+                "title": "Keyboard-only",
+                "path": "keyboard-only"
+              },
+              {
+                "title": "Screen readers",
+                "path": "screen-readers"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
