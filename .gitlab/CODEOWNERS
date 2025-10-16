@@ -20,6 +20,9 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 packages/**/package.json @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
 packages/**/yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @aregnery @clavimoniere @danmh @jeldergl @jmiocene @markrian @pedroms @rayana @sdejonge @seggenberger @tauriedavis @thutterer
 
+# Design System team members must approve code owner changes
+/.gitlab/CODEOWNERS @gitlab-org/foundations/design-system
+
 ##################
 # END Core layer #
 ##################
