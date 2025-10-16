@@ -56,8 +56,8 @@ After your GitLab UI changes are merged:
 ### Make your GitLab UI changes locally
 
 GitLab UI is a dynamic design system. The current release is often ahead of the release
-version being used in GitLab. Follow these steps to ensure your changeset is as close to
-the production version of GitLab UI as possible:
+version being used in GitLab. Follow these steps to ensure your local version includes only
+your changes on top of what is currently used in production:
 
 1. Review the GitLab `package.json` file for `@gitlab/ui` version
 1. Pull the latest `main` branch in GitLab UI to ensure you have access to the current tagged version
@@ -107,7 +107,7 @@ You may find some tests failing after the CI finishes running on your merge requ
 1. Open your terminal and navigate to the `gdk` repository on your local machine
 1. Run the `gdk update` and `gdk reconfigure` commands
 1. `cd` into the `gitlab` directory
-1. Add the forked mirror as a new `gitlab` remote:
+1. Add the forked mirror as a new remote:
 
    ```bash
    # SSH
@@ -130,7 +130,7 @@ You may find some tests failing after the CI finishes running on your merge requ
 1. Push your changes to your feature branch on the GitLab mirrored frontend
 
    ```bash
-   git push --set-upstream fork gitlab-ui-integrations/YOUR_BRANCH_NAME
+   git push --set-upstream gitlab-ui-integrations YOUR_BRANCH_NAME
    ```
 
 ## The GitLab UI Integrations fork
