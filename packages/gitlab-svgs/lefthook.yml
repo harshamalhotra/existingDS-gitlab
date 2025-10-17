@@ -6,6 +6,3 @@ pre-commit:
     eslint:
       glob: '*.{js,vue}'
       run: yarn run eslint --ext .js,.vue {staged_files}
-    prettier:
-      glob: '*.{js,vue}'
-      run: ./node_modules/.bin/prettier --check {staged_files}

@@ -31,8 +31,6 @@
     "mkdirp": "^0.5.1",
     "nuxt": "^2.18.1",
     "pikaday": "1.8.0",
-    "prettier": "3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
     "rimraf": "^2.6.2",
     "sass": "^1.85.1",
     "sass-loader": "^10.5.2",
