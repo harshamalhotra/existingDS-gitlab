@@ -1,6 +1,6 @@
 # Gitlab SVGs
 
-This repository manages all SVG Assets for GitLab by creating SVG sprites out of icons, and optimizing SVG illustrations.
+This package manages all SVG Assets for GitLab by creating SVG sprites out of icons, and optimizing SVG illustrations.
 
 ## Previewing the SVG library
 
@@ -10,6 +10,7 @@ Visit the [GitLab SVG Previewer](https://design.gitlab.com/svgs) website to see,
 
 - You’ll need [**yarn**](https://yarnpkg.com/en/) and [**node**](https://nodejs.org/en/download/) installed. On a Mac, you can install yarn with `brew install yarn`.
 - For the first time, or after updating from the `main` branch, use `yarn install` to install the latest dependencies.
+- Make sure you are in the `packages/gitlab-svgs` subdirectory.
 
 ## Commands
 
