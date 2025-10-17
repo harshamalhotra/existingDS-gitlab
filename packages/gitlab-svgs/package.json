@@ -44,24 +44,5 @@
     "sass-loader": "^10.5.2",
     "vue": "2.7.16",
     "vue-server-renderer": "2.7.16"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      [
-        "@semantic-release/exec",
-        {
-          "analyzeCommitsCmd": "./build_scripts/analyze-commits.sh ${lastRelease.gitTag}",
-          "generateNotesCmd": "./build_scripts/generate-notes.sh ${lastRelease.gitTag} ${nextRelease.version}"
-        }
-      ],
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/gitlab"
-    ],
-    "success": false,
-    "fail": false
   }
 }

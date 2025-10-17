@@ -110,7 +110,9 @@ During the CI build, the following steps are done:
 
 ## Publishing a new version
 
-Every time a file is added, deleted, modified or renamed within the `sprite_icons` or `illustrations` folders and the change is merged into the `main` branch, a new minor version of the package is published.
+To publish new versions of packages, like `@gitlab/svgs`, we use
+[changesets](https://github.com/changesets/changesets). Learn how to [create
+changesets and publish packages](../../doc/publishing-packages.md).
 
 ## Contributing
 
