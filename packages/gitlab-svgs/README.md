@@ -25,35 +25,43 @@ All output is saved to the `dist` folder where it’s referenced from our main a
   - [Illustration design guidelines](https://design.gitlab.com/product-foundations/illustration-creation-guide)
   - [Illustration contribution guidelines](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/doc/illustration-contribution.md)
 - Make sure you have the latest from the `main` branch in your local copy of the **gitlab-svgs** repository, then create a new local branch.
+
   ```bash
   # Retrieve the latest updates
   git pull
   # Create a new local branch
   git checkout -b new-branch-name
   ```
+
 - Make sure that your dependencies are up to date by running `yarn install`.
 - Export the icons or illustrations as a `.svg` file where:
   - Icons are placed in the `sprite_icons` folder. [Read instructions below on exporting icons](#exporting-icons-from-figma).
   - Illustrations are placed in the `illustrations/` folder. There are subfolders for illustration categories, like empty states or logos.
 - If you are not compressing an SVG during export, you can use [SVGO](https://github.com/svg/svgo) to optimize it after you export.
+
   ```bash
   # Optimize our `huge_test.svg` file
   yarn run svgo ./path/to/huge_test.svg
   ```
-- After adding the new SVGs, execute the following commands to verify your changes locally at http://localhost:3333/
+
+- After adding the new SVGs, execute the following commands to verify your changes locally at <http://localhost:3333/>
+
   ```bash
    # Starts a local server to preview your changes
    yarn run dev
   ```
+
 - Test icons by changing the settings in the **Icon configuration** panel of the local preview site and ensuring that the icon changes color and size (there are a few icons that intentionally don’t change color).
 
   ![Icon configuration panel](./doc/icon-configuration-panel.png)
 
 - If you are happy with the new/modified SVG, commit and push all changes (including the ones to the `dist` folder) and create a merge request.
+
   ```bash
   # After committing your changes, use this to create a remote branch. A link will then be available to create the merge request.
   git push -u origin new-branch-name
   ```
+
 - Assign the merge request to a maintainer of the **GitLab SVGs** project.
   You can find the maintainers on the [GitLab project overview page](https://about.gitlab.com/handbook/engineering/projects#gitlab-svgs).
 
@@ -72,7 +80,8 @@ Icons should only be exported after they have been added to the Pajamas UI Kit i
    1. Install the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260/Advanced-SVG-Export) plugin. The plugin uses [SVGO](https://github.com/svg/svgo) under the hood. Use the default settings.
    1. Select the icon and run the plugin, exporting to the `sprite_icons` folder.
    1. Open the resulting SVG file in your text editor and remove `fill="none"` from the main `<svg>` element.
-1. After adding the new SVGs, execute the following commands to verify your changes locally at http://localhost:3333/
+1. After adding the new SVGs, execute the following commands to verify your changes locally at <http://localhost:3333/>
+
    ```bash
    # Starts a local server to preview your changes
    yarn run dev
