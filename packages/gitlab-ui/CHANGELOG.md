@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.11.0
+
+### Minor Changes
+
+- f66a7da: Increase token component border radius.
+
 ## 123.10.1
 
 ### Patch Changes
