@@ -21,7 +21,7 @@ export default {
     :items="items"
     layout="illustrations"
     image-sprite="dist/illustrations.svg"
-    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
+    source-path="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/illustrations"
     :sprite-size="spriteSize"
     title="Illustration"
     copy-message="Click an illustration to copy the path"

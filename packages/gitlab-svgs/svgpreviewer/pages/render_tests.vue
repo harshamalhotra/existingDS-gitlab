@@ -27,7 +27,7 @@ export default {
       </li>
       <li>
         Issue in GitLab SVG:
-        <a href="https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/167"
+        <a href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/3081"
           >Support to use SVGs in CSS</a
         >
       </li>

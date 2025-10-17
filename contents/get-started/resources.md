@@ -25,6 +25,6 @@ For more information about the UX Design department, check out the following lin
 
 ## GitLab SVG project
 
-All GitLab SVG assets (icons and illustrations) are managed in the [GitLab SVG](https://gitlab.com/gitlab-org/gitlab-svgs) project. This project automates creating an SVG sprite out of icons and optimizing SVG based illustrations.
+All GitLab SVG assets (icons and illustrations) are managed in the [GitLab SVGs package](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs) of the project. This project automates creating an SVG sprite out of icons and optimizing SVG based illustrations.
 
-We built an [online viewer](http://gitlab-org.gitlab.io/gitlab-svgs/) of our GitLab SVGs that allows exploring and searching our icon library.
+We built an [online viewer](https://design.gitlab.com/svgs) of our GitLab SVGs that allows exploring and searching our icon library.

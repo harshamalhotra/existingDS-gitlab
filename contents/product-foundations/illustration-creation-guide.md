@@ -39,7 +39,7 @@ There are two container shapes: leaf and round.
 
 <figure-img alt="Example of the leaf and round container shapes, colored with Purple 02s, one of the recommended colors for background fills. The leaf shape is a square with rounded top-right and bottom-left corners. The round shape is a circle." label="Container shapes: leaf and round" src="/img/illus-shapes.svg"></figure-img>
 
-<todo>Define shapes usage, see https://gitlab-org.gitlab.io/gitlab-svgs/illustrations for current exploration.</todo>
+<todo>Define shapes usage, see https://design.gitlab.com/svgs/illustrations for current exploration.</todo>
 
 ## Border radius
 

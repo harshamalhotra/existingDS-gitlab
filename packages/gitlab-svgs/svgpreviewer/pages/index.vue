@@ -25,7 +25,7 @@ export default {
     :items="items"
     :size-options="sizeOptions"
     image-sprite="dist/icons.svg"
-    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
+    source-path="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/sprite_icons/"
     :sprite-size="spriteSize"
     title="Icon"
     copy-message="Click an icon to copy the name"

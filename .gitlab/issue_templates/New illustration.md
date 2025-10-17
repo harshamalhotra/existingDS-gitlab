@@ -55,7 +55,7 @@ Once the Reviewer or Maintainer has approved your illustration, consider the fol
 1. [ ] After you’ve committed the changes and the pipeline passes, double-check your illustration in the review app and test that it matches your expectations.
 1. [ ] Assign the MR to a review by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
 
-If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/README.md) have been followed.
+If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-svgs/README.md) have been followed.
 
 </details>
 

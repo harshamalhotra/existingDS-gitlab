@@ -76,7 +76,7 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 1. [ ] Assign the MR to be reviewed and merged by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
 1. [ ] Add a reference to the change in the [Pajamas UI Kit release notes](https://design.gitlab.com/get-started/uik-release-notes) by adding a commit to the current draft MR.
 
-If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/README.md) have been followed.
+If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-svgs/README.md) have been followed.
 
 </details>
 

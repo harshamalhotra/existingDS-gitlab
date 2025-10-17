@@ -4,7 +4,7 @@ This repository manages all SVG Assets for GitLab by creating SVG sprites out of
 
 ## Previewing the SVG library
 
-Visit the [GitLab SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/) website to see, reference, and search through all available icons and illustrations.
+Visit the [GitLab SVG Previewer](https://design.gitlab.com/svgs) website to see, reference, and search through all available icons and illustrations.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ All output is saved to the `dist` folder where it’s referenced from our main a
 - Review the following documentation:
   - [Iconography design guidelines](https://design.gitlab.com/product-foundations/iconography)
   - [Illustration design guidelines](https://design.gitlab.com/product-foundations/illustration-creation-guide)
-  - [Illustration contribution guidelines](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/doc/illustration-contribution.md)
+  - [Illustration contribution guidelines](doc/illustration-contribution.md)
 - Make sure you have the latest from the `main` branch in your local copy of the **gitlab-svgs** repository, then create a new local branch.
 
   ```bash
