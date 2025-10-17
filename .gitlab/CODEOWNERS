@@ -5,7 +5,7 @@
 # If nothing else matches, fall back to the Design System team.
 # See later in the file for the Extended layer overrides.
 # See https://gitlab.com/groups/gitlab-org/-/epics/15334 for more information.
-* @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+* @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 # Accessibility
 /contents/accessibility/ @trevorpierce
@@ -14,12 +14,15 @@
 /contents/content/ @gitlab-org/technical-writing
 
 # Allow any maintainer to approve changeset and dependency updates
-/.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-package.json @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+/.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+package.json @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 # Design System team members must approve code owner changes
-/.gitlab/CODEOWNERS @gitlab-org/foundations/design-system
+/.gitlab/CODEOWNERS @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer
+
+# For testing purposes
+/.gitlab/code_owners_test_file @gitlab-org/foundations/design-system
 
 ##################
 # END Core layer #
@@ -36,66 +39,66 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /packages/gitlab-ui/tests/__image_snapshots__/ @gitlab-com/gitlab-ux/designers
 
 # Reinstate Design System team as owners of Core components
-/packages/gitlab-ui/src/components/base/accordion @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/alert @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/animated_icon @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/avatar @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/avatar_labeled @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/avatar_link @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/avatars_inline @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/badge @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/banner @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/breadcrumb @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/button @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/button_group @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/card @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/collapse @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/datepicker @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/daterange_picker @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/drawer @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/dropdown @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/filtered_search @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/form @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/icon @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/illustration @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/infinite_scroll @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/keyset_pagination @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/link @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/loading_icon @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/markdown @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/modal @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/new_dropdowns @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/pagination @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/popover @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/progress_bar @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/search_box_by_click @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/search_box_by_type @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/segmented_control @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/skeleton_loader @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/sorting @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/table @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/table_lite @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/tabs @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/toast @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/toggle @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/token @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/token_selector @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/base/tooltip @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/regions/empty_state @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/accordion @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/alert @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/animated_icon @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/avatar @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/avatar_labeled @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/avatar_link @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/avatars_inline @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/badge @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/banner @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/breadcrumb @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/button @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/button_group @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/card @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/collapse @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/datepicker @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/daterange_picker @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/drawer @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/dropdown @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/filtered_search @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/form @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/icon @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/illustration @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/infinite_scroll @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/keyset_pagination @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/link @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/loading_icon @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/markdown @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/modal @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/new_dropdowns @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/pagination @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/popover @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/progress_bar @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/search_box_by_click @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/search_box_by_type @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/segmented_control @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/skeleton_loader @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/sorting @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/table @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/table_lite @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/tabs @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/toast @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/toggle @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/token @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/token_selector @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/base/tooltip @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/regions/empty_state @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 # Reinstate Design System team as owners of Core utilities
-/packages/gitlab-ui/src/components/utilities/friendly_wrap @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/utilities/intersection_observer @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/utilities/intersperse @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/utilities/sprintf @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/utilities/truncate @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
-/packages/gitlab-ui/src/components/utilities/truncate_text @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/friendly_wrap @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/intersection_observer @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/intersperse @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/sprintf @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/truncate @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/components/utilities/truncate_text @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 # Reinstate Design System team as owners of Core directives
-/packages/gitlab-ui/src/directives @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/directives @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 # Reinstate Design System team as owners of Design Tokens
-/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
+/packages/gitlab-ui/src/tokens @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer @tauriedavis @rayana @aregnery @pedroms
 
 ###########################
 # END GitLab UI overrides #
