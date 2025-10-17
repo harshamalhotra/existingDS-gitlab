@@ -9,6 +9,8 @@ globs:
   - '!**/node_modules/**'
   - '!**/CHANGELOG*.md'
   - '!.changeset/*.md'
+  # Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
+  - '!packages/gitlab-svgs/**/*.md'
 config:
   default: true
   line-length: false

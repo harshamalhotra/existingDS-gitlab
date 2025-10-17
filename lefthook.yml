@@ -20,6 +20,8 @@ pre-commit:
         - '**/node_modules/**'
         - '**/CHANGELOG*.md'
         - '.changeset/*.md'
+        # Temporary ignore, see https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2936
+        - 'packages/gitlab-svgs/**/*.md'
       run: ./node_modules/.bin/markdownlint-cli2 {staged_files} --no-globs
     stylelint:
       glob: '**/*.{scss}'

@@ -7,6 +7,9 @@ packages/gitlab-ui/src/vendor/
 packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
 packages/gitlab-ui/src/tokens/contextual/badge.tokens.json
 
+# Ignore gitlab-svgs for now, until its prettier config is hoisted.
+packages/gitlab-svgs/
+
 # Do not lint tailwind-documentation files for the initial stage of the merge.
 # This should eventually be removed as it is more integrated into the monorepo.
 packages/tailwind-documentation/
