@@ -21,6 +21,9 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 # Design System team members must approve code owner changes
 /.gitlab/CODEOWNERS @gitlab-org/foundations/design-system @annabeldunstone @clavimoniere @chrismicek @danmh @jeldergl @jmiocene @markrian @paintedbicycle-gitlab @seggenberger @sdejonge @thutterer
 
+# For testing purposes
+/.gitlab/code_owners_test_file @gitlab-org/foundations/design-system
+
 ##################
 # END Core layer #
 ##################
