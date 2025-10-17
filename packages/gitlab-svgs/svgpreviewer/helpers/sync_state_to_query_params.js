@@ -49,7 +49,6 @@ export const mapQueryFieldsToComputed = (fields) =>
         this.$data[`$${field}_${param}`] = val;
 
         const query = {};
-        // eslint-disable-next-line no-restricted-syntax
         for (const queryField of array) {
           if (this[queryField.field] !== queryField.default) {
             query[queryField.param] = this[queryField.field];
