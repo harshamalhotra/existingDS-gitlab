@@ -8,7 +8,6 @@ packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
 packages/gitlab-ui/src/tokens/contextual/badge.tokens.json
 
 packages/gitlab-svgs/.nuxt
-packages/gitlab-svgs/.tmp
 packages/gitlab-svgs/public
 packages/gitlab-svgs/svgpreviewer/static/dist
 packages/gitlab-svgs/dist

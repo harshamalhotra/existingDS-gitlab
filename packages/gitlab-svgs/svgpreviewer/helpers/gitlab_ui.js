@@ -5,9 +5,9 @@ otherwise
 
 Simply add more components if you need them!
  */
-export { default as GlButton } from '@gitlab/ui/dist/components/base/button/button';
-export { default as GlCard } from '@gitlab/ui/dist/components/base/card/card';
-export { default as GlEmptyState } from '@gitlab/ui/dist/components/regions/empty_state/empty_state';
-export { default as GlFormGroup } from '@gitlab/ui/dist/components/base/form/form_group/form_group';
-export { default as GlFormSelect } from '@gitlab/ui/dist/components/base/form/form_select/form_select';
-export { default as GlSearchBoxByType } from '@gitlab/ui/dist/components/base/search_box_by_type/search_box_by_type';
+export { default as GlButton } from '@gitlab/ui/src/components/base/button/button.vue';
+export { default as GlCard } from '@gitlab/ui/src/components/base/card/card.vue';
+export { default as GlEmptyState } from '@gitlab/ui/src/components/regions/empty_state/empty_state.vue';
+export { default as GlFormGroup } from '@gitlab/ui/src/components/base/form/form_group/form_group.vue';
+export { default as GlFormSelect } from '@gitlab/ui/src/components/base/form/form_select/form_select.vue';
+export { default as GlSearchBoxByType } from '@gitlab/ui/src/components/base/search_box_by_type/search_box_by_type.vue';

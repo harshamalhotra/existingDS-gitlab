@@ -6,8 +6,7 @@ module.exports = {
     './svgpreviewer/components/**/*.{vue,js}',
     './svgpreviewer/layouts/**/*.vue',
     './svgpreviewer/pages/**/*.vue',
-    // Scan GitLab UI's own assets
-    './node_modules/@gitlab/ui/dist/**/*.js',
+    './node_modules/@gitlab/ui/src/**/*.{vue,js}',
   ],
   presets: [tailwindDefaults],
 };

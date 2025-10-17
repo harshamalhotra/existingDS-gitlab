@@ -13,6 +13,10 @@ SCRIPT_PATH=$(realpath $SCRIPT_PATH)
 FILE_ICONS_VERSION=$(cat "$SCRIPT_PATH/file_icons_version")
 TMP_PATH="$SCRIPT_PATH/../.tmp"
 
+cleanup() {
+  rm -rf "$TMP_PATH"
+}
+
 function download_file_icons {
   echo "Download vscode-material-icon-theme File Icons"
 
@@ -46,6 +50,8 @@ function download_file_icons {
   # Overwrite GitLab Logo with latest version
   cp -f illustrations/gitlab_logo.svg file_icons/gitlab.svg
 }
+
+trap cleanup EXIT
 
 download_file_icons
 
