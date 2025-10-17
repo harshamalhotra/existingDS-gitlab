@@ -43,9 +43,6 @@ svgs:build-and-check:
   needs:
     - svgs:build-and-check
   variables:
-    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
-    # CURRENT_PAGES_URL is set in the canonical project
-    CURRENT_PAGES_URL: '$CI_PAGES_URL'
     PAGES_PREFIX: 'svgs'
   script:
     # Move static assets to svgpreviewer directory
@@ -84,7 +81,7 @@ svgs:review-app:
     expire_in: '2 weeks'
   environment:
     name: '${PAGES_PREFIX}-review/mr-${CI_MERGE_REQUEST_IID}'
-    url: '$CURRENT_PAGES_URL'
+    url: '$CI_PAGES_URL'
     auto_stop_in: '2 weeks'
   rules:
     - <<: *svgs-is-design-gitlab-com-mr

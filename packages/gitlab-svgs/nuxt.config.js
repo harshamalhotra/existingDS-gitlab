@@ -7,8 +7,6 @@ import fixUrlInReviewApp from './svgpreviewer/helpers/fix_url_in_review_app';
 // https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/347
 import './build_scripts/patched_crypto';
 
-const CI_ENVIRONMENT_URL = process.env.CI_ENVIRONMENT_URL || false;
-
 // eslint-disable-next-line import/no-default-export
 export default {
   server: {
@@ -64,7 +62,7 @@ export default {
   },
 
   router: {
-    base: CI_ENVIRONMENT_URL ? new URL(CI_ENVIRONMENT_URL).pathname : '/',
+    base: process.env.CI_PAGES_URL ? new URL(process.env.CI_PAGES_URL).pathname : '/',
   },
 
   /*
