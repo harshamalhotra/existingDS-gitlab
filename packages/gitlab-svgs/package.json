@@ -11,6 +11,11 @@
   "author": "GitLab",
   "private": false,
   "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "index.js"
+  ],
   "scripts": {
     "svg": "make svgs",
     "dev": "nuxt",
