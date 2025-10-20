@@ -113,8 +113,8 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /contents/patterns/duo-* @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
 
 # Animation
-/contents/product-foundations/animation* @jmiocene @jelder
-/contents/product-foundations/iconography-animated.md @jmiocene @jelder
+/contents/product-foundations/animation* @jmiocene @jeldergl
+/contents/product-foundations/iconography-animated.md @jmiocene @jeldergl
 
 # Brand
 /contents/brand-* @gitlab-com/gitlab-ux/designers
@@ -128,7 +128,7 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /packages/gitlab-ui/src/components/dashboards/ @svedova @lvanc @jiaan
 
 # Illustration
-/contents/product-foundations/illustration* @jmiocene @jelder
+/contents/product-foundations/illustration* @jmiocene @jeldergl
 
 # UX patterns
 /contents/objects/ @gitlab-com/gitlab-ux/designers
