@@ -116,7 +116,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: undefined,
           input: {
-            id: expect.stringMatching(/gl-form-field-\d+/),
+            id: 'gl-form-field-username',
             type: 'text',
             value: '',
           },
@@ -127,7 +127,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: TEST_FIELDS.evenCount.groupAttrs.class,
           input: {
-            id: expect.stringMatching(/gl-form-field-\d+/),
+            id: 'gl-form-field-even-count',
             value: '0',
             ...TEST_FIELDS.evenCount.inputAttrs,
           },
@@ -140,7 +140,7 @@ describe('GlFormFields', () => {
           input: {
             value: '',
             type: 'text',
-            id: expect.stringMatching(/gl-form-field-\d+/),
+            id: 'gl-form-field-all-caps',
           },
         },
         {
@@ -270,7 +270,7 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: expect.stringMatching(/gl-form-field-\d+/),
+              id: 'gl-form-field-username',
             }),
           },
           {
@@ -280,7 +280,7 @@ describe('GlFormFields', () => {
             class: TEST_FIELDS.evenCount.groupAttrs.class,
             input: expect.objectContaining({
               value: '0',
-              id: expect.stringMatching(/gl-form-field-\d+/),
+              id: 'gl-form-field-even-count',
             }),
           },
           {
@@ -290,7 +290,7 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: expect.stringMatching(/gl-form-field-\d+/),
+              id: 'gl-form-field-all-caps',
             }),
           },
           {
@@ -354,7 +354,7 @@ describe('GlFormFields', () => {
         class: TEST_FIELDS.evenCount.groupAttrs.class,
         input: {
           ...TEST_FIELDS.evenCount.inputAttrs,
-          id: expect.stringMatching(/gl-form-field-\d+/),
+          id: 'gl-form-field-even-count',
           value: '7',
         },
       });
