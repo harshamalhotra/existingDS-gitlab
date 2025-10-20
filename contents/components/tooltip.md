@@ -81,7 +81,7 @@ Here's an example of a tooltip directive with a `0ms` delay (instant) on `show`:
 
 ### Content
 
-- Should be short and concise.
+- Should be short and concise. Complete sentences are not required.
 - Shouldn’t repeat information that is shown near the referring element.
 
 ### Accessibility
