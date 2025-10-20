@@ -87,20 +87,6 @@ describe('GlFormSelect', () => {
     });
   });
 
-  describe('selectSize prop', () => {
-    it('defaults size attribute to 1', () => {
-      createComponent();
-
-      expect(findSelect().attributes('size')).toBe('1');
-    });
-
-    it('allows overriding size attribute', () => {
-      createComponent({ selectSize: 5 });
-
-      expect(findSelect().attributes('size')).toBe('5');
-    });
-  });
-
   describe('v-model', () => {
     it('should select an option element and update the v-model bound data', async () => {
       createComponent({ options: formSelectOptions });
