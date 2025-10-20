@@ -239,11 +239,11 @@ const backgroundColors = {
   overlay: 'var(--gl-background-color-overlay)',
 };
 const borderColors = {
+  transparent: 'var(--gl-border-color-transparent)',
   default: 'var(--gl-border-color-default)',
   subtle: 'var(--gl-border-color-subtle)',
   strong: 'var(--gl-border-color-strong)',
   section: 'var(--gl-border-color-section)',
-  transparent: 'var(--gl-border-color-transparent)',
 };
 const iconColors = {
   default: 'var(--gl-icon-color-default)',

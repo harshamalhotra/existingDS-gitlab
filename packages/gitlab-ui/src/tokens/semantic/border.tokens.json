@@ -52,16 +52,6 @@
             "STROKE_COLOR"
           ]
         }
-      },
-      "transparent": {
-        "$value": "{color.alpha.0}",
-        "$type": "color",
-        "$description": "Used when a border needs to be present, but not visibly perceived.",
-        "$extensions": {
-          "com.figma.scope": [
-            "ALL_SCOPES"
-          ]
-        }
       }
     },
     "radius": {
