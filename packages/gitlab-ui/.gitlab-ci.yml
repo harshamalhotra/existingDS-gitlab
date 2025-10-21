@@ -129,7 +129,7 @@ ui:build_package:
   variables:
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
     # CURRENT_PAGES_URL is set in the canonical project
-    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+    CURRENT_PAGES_URL: '${CI_PAGES_URL}'
   after_script:
     - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
   pages:
@@ -143,7 +143,7 @@ ui:build_package:
   variables:
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
     # CURRENT_PAGES_URL is set in the canonical project
-    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
+    CURRENT_PAGES_URL: '${CI_PAGES_URL}'
   after_script:
     - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
   rules:
@@ -152,11 +152,11 @@ ui:build_package:
     # Review App: /review-mr-1234
     # SB review app: /review-mr-1234-storybook
     path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
-    expire_in: "2 weeks"
+    expire_in: '2 weeks'
   environment:
-    name: "$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}"
-    url: "${CURRENT_PAGES_URL}"
-    auto_stop_in: "2 weeks"
+    name: '$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}'
+    url: '${CURRENT_PAGES_URL}'
+    auto_stop_in: '2 weeks'
 
 ui:pages_storybook:
   extends: [.ui:build_storybook, .ui:pages]

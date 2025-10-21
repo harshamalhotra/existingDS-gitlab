@@ -38,7 +38,7 @@ default:
 variables:
   # We should double-check whether the remaining Docker in Docker jobs need the following
   DOCKER_DRIVER: overlay2
-  DOCKER_TLS_CERTDIR: ""  # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
+  DOCKER_TLS_CERTDIR: '' # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
   GITLAB_ADVANCED_SAST_ENABLED: 'true'
   NODE_IMAGE: node:22.20.0-trixie
 
@@ -63,17 +63,17 @@ include:
         when: always
       - changes:
           - packages/tailwind-documentation/**/*
-  - template: Jobs/Code-Quality.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
-  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
-  - template: Jobs/SAST.latest.gitlab-ci.yml  # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml
+  - template: Jobs/Code-Quality.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Code-Quality.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/Dependency-Scanning.latest.gitlab-ci.yml
+  - template: Jobs/SAST.latest.gitlab-ci.yml # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml
   - template: Jobs/Secret-Detection.latest.gitlab-ci.yml
   # TODO: untamper-my-lockfile can be removed completely once we move away from yarn@1.x
   - project: gitlab-org/frontend/untamper-my-lockfile
     file: 'templates/merge_request_pipelines.yml'
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@2.1.0
     inputs:
-      job_stage: "pre-build"
-      gitlab_dangerfiles_version: "4.9.0"
+      job_stage: 'pre-build'
+      gitlab_dangerfiles_version: '4.9.0'
 
 ###############
 #
@@ -120,7 +120,7 @@ gitlab-advanced-sast:
   variables:
     CACHE_POLICY: pull
   cache:
-    - key: "${CACHE_PREFIX}-nuxt"
+    - key: '${CACHE_PREFIX}-nuxt'
       fallback_keys:
         - main-nuxt
       paths:
@@ -167,8 +167,8 @@ lint_and_test:
     CACHE_POLICY: pull-push
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
     # CURRENT_PAGES_URL is set in the canonical project
-    CURRENT_PAGES_URL: "${CI_PAGES_URL}"
-    GITLAB_UI_URL: "${CI_PAGES_URL}/storybook"
+    CURRENT_PAGES_URL: '${CI_PAGES_URL}'
+    GITLAB_UI_URL: '${CI_PAGES_URL}/storybook'
   script:
     - apt update
     - apt install -y brotli
@@ -189,8 +189,8 @@ production:
   pages:
     expire_in: never
   environment:
-    name: "pages"
-    url: "${CURRENT_PAGES_URL}"
+    name: 'pages'
+    url: '${CURRENT_PAGES_URL}'
 
 review-app:
   extends:
@@ -200,14 +200,14 @@ review-app:
   variables:
     # Review App: /review-mr-1234
     # SB review app: /review-mr-1234-storybook
-    GITLAB_UI_URL: "${CI_PAGES_URL}-storybook"
+    GITLAB_UI_URL: '${CI_PAGES_URL}-storybook'
   pages:
     path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}'
-    expire_in: "2 weeks"
+    expire_in: '2 weeks'
   environment:
-    name: "pages-review/MR-${CI_MERGE_REQUEST_IID}"
-    url: "${CURRENT_PAGES_URL}"
-    auto_stop_in: "2 weeks"
+    name: 'pages-review/MR-${CI_MERGE_REQUEST_IID}'
+    url: '${CURRENT_PAGES_URL}'
+    auto_stop_in: '2 weeks'
 
 .publish_npm_packages:
   extends:
