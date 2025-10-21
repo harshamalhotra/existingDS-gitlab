@@ -55,7 +55,7 @@ export const mapQueryFieldsToComputed = (fields) =>
           }
         }
 
-        const url = new URL(this.$route.path, window.location);
+        const url = new URL(window.location);
         url.search = new URLSearchParams(query).toString();
         window.history.pushState({}, '', url);
       },
