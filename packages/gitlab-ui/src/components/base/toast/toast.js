@@ -23,19 +23,21 @@ function renderTitle(h, toast, options) {
     }),
   ];
   if (options.action) {
-    nodes.splice(
-      0,
-      0,
+    const { onClick, text, href } = options.action;
+    nodes.unshift(
       h(
         'a',
         {
-          role: 'button',
+          attrs: {
+            role: href ? undefined : 'button',
+            href,
+          },
           class: ['gl-toast-action'],
           on: {
-            click: (e) => options.action.onClick(e, toast),
+            click: (e) => onClick(e, toast),
           },
         },
-        options.action.text,
+        text,
       ),
     );
   }
