@@ -104,6 +104,26 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 # END GitLab UI overrides #
 ###########################
 
+###############################
+# BEGIN GitLab SVGs overrides #
+###############################
+
+# Engineering
+/packages/gitlab-svgs/ @slashmanov @gitlab-org/maintainers/frontend
+
+# UX
+/packages/gitlab-svgs/illustrations/ @tauriedavis @jeldergl @jmiocene
+/packages/gitlab-svgs/sprite_icons/ @tauriedavis @jeldergl @jmiocene
+
+# Figma
+#
+# While no Figma files are committed to this repo, the following Figma maintainers are available to support any needs related to icons and illustrations in Figma:
+# @jeldergl @jmiocene
+
+#############################
+# END GitLab SVGs overrides #
+#############################
+
 ##################################
 # BEGIN Extended layer overrides #
 ##################################

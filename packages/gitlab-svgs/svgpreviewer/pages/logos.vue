@@ -19,7 +19,7 @@ export default {
   <svg-album
     :items="items"
     layout="illustrations"
-    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/"
+    source-path="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/illustrations/logos"
     title="Logo"
     copy-message="Click a logo to copy the path"
   />

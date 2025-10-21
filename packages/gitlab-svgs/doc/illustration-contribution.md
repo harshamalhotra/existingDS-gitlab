@@ -17,8 +17,8 @@
 
 Everyone can contribute to GitLab, including our [product illustration][illustration-file] in Figma. To contribute, follow these steps:
 
-1. Determine if an existing illustration from the [SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/illustrations) or [illustration file in Figma][illustration-file] already satisfies your need before creating a new one.
-1. [Create an issue with the "New illustration" template](https://gitlab.com/gitlab-org/gitlab-svgs/-/issues/new?issuable_template=New%20illustration) (or assign yourself an existing issue) and complete the steps outlined in the issue.
+1. Determine if an existing illustration from the [SVG Previewer](https://design.gitlab.com/svgs/illustrations) or [illustration file in Figma][illustration-file] already satisfies your need before creating a new one.
+1. [Create an issue with the "New illustration" template](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/new?issuable_template=New%20illustration) (or assign yourself an existing issue) and complete the steps outlined in the issue.
 1. High-five yourself and go brew some coffee while you wait for the review. Thanks!
 
 We accept contributions from wider community members who share a Figma [draft](https://help.figma.com/hc/en-us/articles/360041543473#drafts) with proposed changes. We also encourage design contributions/improvements to GitLab itself — use its [issue tracker](https://gitlab.com/gitlab-org/gitlab/issues) to add your ideas to an existing or new issue.

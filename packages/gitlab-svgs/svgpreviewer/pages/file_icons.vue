@@ -20,7 +20,7 @@ export default {
   <svg-album
     :items="items"
     image-sprite="dist/file_icons/file_icons.svg"
-    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/file_icons/"
+    source-path="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/file_icons"
     :sprite-size="spriteSize"
     title="File icon"
     copy-message="Click a file icon to copy the name"

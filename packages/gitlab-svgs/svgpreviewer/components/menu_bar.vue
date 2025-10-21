@@ -54,7 +54,10 @@ export default {
               </nuxt-link>
             </li>
             <li>
-              <gl-button category="tertiary" href="https://gitlab.com/gitlab-org/gitlab-svgs">
+              <gl-button
+                category="tertiary"
+                href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/"
+              >
                 Repo ↗︎
               </gl-button>
             </li>

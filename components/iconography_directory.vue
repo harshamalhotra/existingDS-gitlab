@@ -34,7 +34,7 @@ export default {
   <svg-album
     :elements="Object.freeze($options.icons)"
     :size-options="$options.sizeOptions"
-    source-path="https://gitlab.com/gitlab-org/gitlab-svgs/blob/main/sprite_icons/"
+    source-path="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/packages/gitlab-svgs/sprite_icons/"
   >
     <template #header>{{ $options.icons.length }} Icons ({{ kbSize }})</template>
     <template #figure="{ entry, size }">

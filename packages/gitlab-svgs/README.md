@@ -1,15 +1,16 @@
 # Gitlab SVGs
 
-This repository manages all SVG Assets for GitLab by creating SVG sprites out of icons, and optimizing SVG illustrations.
+This package manages all SVG Assets for GitLab by creating SVG sprites out of icons, and optimizing SVG illustrations.
 
 ## Previewing the SVG library
 
-Visit the [GitLab SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/) website to see, reference, and search through all available icons and illustrations.
+Visit the [GitLab SVG Previewer](https://design.gitlab.com/svgs) website to see, reference, and search through all available icons and illustrations.
 
 ## Requirements
 
 - You’ll need [**yarn**](https://yarnpkg.com/en/) and [**node**](https://nodejs.org/en/download/) installed. On a Mac, you can install yarn with `brew install yarn`.
 - For the first time, or after updating from the `main` branch, use `yarn install` to install the latest dependencies.
+- Make sure you are in the `packages/gitlab-svgs` subdirectory.
 
 ## Commands
 
@@ -23,7 +24,7 @@ All output is saved to the `dist` folder where it’s referenced from our main a
 - Review the following documentation:
   - [Iconography design guidelines](https://design.gitlab.com/product-foundations/iconography)
   - [Illustration design guidelines](https://design.gitlab.com/product-foundations/illustration-creation-guide)
-  - [Illustration contribution guidelines](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/doc/illustration-contribution.md)
+  - [Illustration contribution guidelines](doc/illustration-contribution.md)
 - Make sure you have the latest from the `main` branch in your local copy of the **gitlab-svgs** repository, then create a new local branch.
 
   ```bash
@@ -110,7 +111,9 @@ During the CI build, the following steps are done:
 
 ## Publishing a new version
 
-Every time a file is added, deleted, modified or renamed within the `sprite_icons` or `illustrations` folders and the change is merged into the `main` branch, a new minor version of the package is published.
+To publish new versions of packages, like `@gitlab/svgs`, we use
+[changesets](https://github.com/changesets/changesets). Learn how to [create
+changesets and publish packages](../../doc/publishing-packages.md).
 
 ## Contributing
 
