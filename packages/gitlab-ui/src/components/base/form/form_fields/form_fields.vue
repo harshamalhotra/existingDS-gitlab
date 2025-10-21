@@ -1,7 +1,7 @@
 <script>
 import isFunction from 'lodash/isFunction';
 import mapValues from 'lodash/mapValues';
-import kebabCase from 'lodash/kebabCase';
+import uniqueId from 'lodash/uniqueId';
 import GlFormGroup from '../form_group/form_group.vue';
 import GlFormInput from '../form_input/form_input.vue';
 import { setObjectProperty } from '../../../../utils/set_utils';
@@ -67,6 +67,7 @@ export default {
     return {
       fieldDirtyStatuses: {},
       fieldValidations: {},
+      fieldIds: {},
     };
   },
   computed: {
@@ -98,8 +99,7 @@ export default {
     },
     fieldsToRender() {
       return mapValues(this.fields, (field, fieldName) => {
-        // eslint-disable-next-line @gitlab/tailwind-no-interpolation
-        const id = field.id || `gl-form-field-${kebabCase(fieldName)}`;
+        const id = this.memoizeAndReturnFieldId(field, fieldName);
 
         const inputSlotName = `input(${fieldName})`;
         const groupPassthroughSlotName = `group(${fieldName})-`;
@@ -173,6 +173,18 @@ export default {
       }
 
       return val;
+    },
+    memoizeAndReturnFieldId(field, fieldName) {
+      const memoizedId = this.fieldIds[fieldName];
+
+      if (memoizedId) {
+        return memoizedId;
+      }
+
+      const id = field.id || uniqueId('gl-form-field-');
+      this.fieldIds[fieldName] = id;
+
+      return id;
     },
     onFieldValidationUpdate(fieldName, invalidFeedback) {
       this.fieldValidations = setObjectProperty(this.fieldValidations, fieldName, invalidFeedback);
