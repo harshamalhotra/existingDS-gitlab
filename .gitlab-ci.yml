@@ -245,7 +245,7 @@ publish_npm_packages:
     - .publish_npm_packages
   id_tokens:
     NPM_ID_TOKEN:
-      aud: "npm:registry.npmjs.org"
+      aud: 'npm:registry.npmjs.org'
   resource_group: publish_npm_packages
   rules:
     - <<: *is-design-gitlab-com-default-branch
