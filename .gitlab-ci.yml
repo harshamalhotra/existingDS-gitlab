@@ -40,7 +40,7 @@ variables:
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: '' # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
   GITLAB_ADVANCED_SAST_ENABLED: 'true'
-  NODE_IMAGE: node:24.10.0-trixie
+  NODE_IMAGE: node:22.20.0-trixie
 
 include:
   - local: packages/gitlab-svgs/.gitlab-ci.yml
@@ -218,6 +218,7 @@ review-app:
     # See https://github.com/chalk/chalk/blob/v4.1.2/readme.md#chalksupportscolor
     FORCE_COLOR: 1
   script:
+    - npm install --global npm@11.6.2
     - ./scripts/publish_npm_packages.mjs
   artifacts:
     paths:
