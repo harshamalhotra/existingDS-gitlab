@@ -46,8 +46,8 @@ function isEnvironmentOkay() {
       messages.push('GITLAB_TOKEN is not defined.');
     }
 
-    if (!env.NPM_TOKEN) {
-      messages.push('NPM_TOKEN is not defined.');
+    if (!env.NPM_ID_TOKEN) {
+      messages.push('NPM_ID_TOKEN is not defined.');
     }
   }
 
@@ -202,7 +202,6 @@ function gitPush() {
 }
 
 function publish() {
-  run('npm', ['config', 'set', `//registry.npmjs.org/:_authToken=${env.NPM_TOKEN}`]);
   run('npm', [
     'config',
     'set',

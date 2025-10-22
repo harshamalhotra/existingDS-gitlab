@@ -40,7 +40,7 @@ variables:
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: '' # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
   GITLAB_ADVANCED_SAST_ENABLED: 'true'
-  NODE_IMAGE: node:22.20.0-trixie
+  NODE_IMAGE: node:24.10.0-trixie
 
 include:
   - local: packages/gitlab-svgs/.gitlab-ci.yml
@@ -243,6 +243,9 @@ publish_npm_packages_dry_run:
 publish_npm_packages:
   extends:
     - .publish_npm_packages
+  id_tokens:
+    NPM_ID_TOKEN:
+      aud: 'npm:registry.npmjs.org'
   resource_group: publish_npm_packages
   rules:
     - <<: *is-design-gitlab-com-default-branch
