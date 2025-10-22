@@ -47,6 +47,8 @@ include:
     rules:
       - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
         when: always
+      - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_LABELS =~ /pipeline:include-svgs/
+        when: always
       - changes:
           - packages/gitlab-svgs/**/*
           - yarn.lock
@@ -54,12 +56,16 @@ include:
     rules:
       - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
         when: always
+      - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_LABELS =~ /pipeline:include-ui/
+        when: always
       - changes:
           - packages/gitlab-ui/**/*
           - yarn.lock
   - local: packages/tailwind-documentation/.gitlab-ci.yml
     rules:
       - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+        when: always
+      - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_LABELS =~ /pipeline:include-tw/
         when: always
       - changes:
           - packages/tailwind-documentation/**/*
