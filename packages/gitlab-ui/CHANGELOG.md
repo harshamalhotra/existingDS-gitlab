@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 123.11.1
+
+### Patch Changes
+
+- 2d1e0f3: Fix rendering bug in GlFormFields due to missing key.
+  Focus was lost when adding fields. Also the ID associated with
+  fields would be incremented when it should stay constant.
+
 ## 123.11.0
 
 ### Minor Changes
