@@ -126,8 +126,8 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 ##################################
 
 # AI Patterns
-/contents/patterns/ai-human-interaction.md @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
-/contents/patterns/duo-* @aregnery @emilybauman @jackib @nicollem @pedroms @timnoah
+/contents/patterns/ai-human-interaction.md @aregnery @emilybauman @jackib @pedroms @timnoah
+/contents/patterns/duo-* @aregnery @emilybauman @jackib @pedroms @timnoah
 
 # Animation
 /contents/product-foundations/animation* @jmiocene @jeldergl
