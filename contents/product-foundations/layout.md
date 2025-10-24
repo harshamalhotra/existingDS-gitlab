@@ -56,6 +56,8 @@ Use these names to refer to parts of the UI in UI text messages, documentation, 
 1. **GitLab Duo panel** to match and enforce a user's mental model; it's not just any AI
 1. **GitLab Duo sidebar**
 
+With the exception of **GitLab Duo**, use lowercase for all terms.
+
 Do not use the following terms externally as they're less descriptive and could cause confusion:
 
 - AI panel
