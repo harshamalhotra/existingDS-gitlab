@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.11.2
+
+### Patch Changes
+
+- ab4727b: Revert https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/5223 to fix layout rendering bug due to adding an extra `div`.
+
 ## 123.11.1
 
 ### Patch Changes
