@@ -6,10 +6,9 @@ import GlFormGroup from '../form_group/form_group.vue';
 import GlInput from '../form_input/form_input.vue';
 import GlFormFields from './form_fields.vue';
 import GlFormFieldValidator from './form_field_validator.vue';
+import GlFormFieldsLoop from './form_fields_loop.vue';
 import * as formMappers from './mappers';
 import * as formValidators from './validators';
-
-jest.mock('lodash/uniqueId', () => (val) => `${val}testunique`);
 
 const TEST_FIELDS = {
   username: {
@@ -30,6 +29,7 @@ const TEST_FIELDS = {
     label: 'All caps (optional)',
     mapValue: (x) => x?.toUpperCase(),
   },
+  fieldWithCustomId: { label: 'Field with custom ID', id: 'custom-id' },
 };
 const TEST_VALUES = {
   username: 'root',
@@ -56,6 +56,7 @@ describe('GlFormFields', () => {
       },
       stubs: {
         GlFormFieldValidator,
+        GlFormFieldsLoop,
         ...options.stubs,
       },
       ...options,
@@ -117,7 +118,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: undefined,
           input: {
-            id: 'gl-form-field-testunique',
+            id: expect.stringMatching(/gl-form-field-\d+/),
             type: 'text',
             value: '',
           },
@@ -128,7 +129,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: TEST_FIELDS.evenCount.groupAttrs.class,
           input: {
-            id: 'gl-form-field-testunique',
+            id: expect.stringMatching(/gl-form-field-\d+/),
             value: '0',
             ...TEST_FIELDS.evenCount.inputAttrs,
           },
@@ -141,10 +142,32 @@ describe('GlFormFields', () => {
           input: {
             value: '',
             type: 'text',
-            id: 'gl-form-field-testunique',
+            id: expect.stringMatching(/gl-form-field-\d+/),
+          },
+        },
+        {
+          label: TEST_FIELDS.fieldWithCustomId.label,
+          state: undefined,
+          invalidFeedback: '',
+          class: undefined,
+          input: {
+            id: 'custom-id',
+            type: 'text',
+            value: '',
           },
         },
       ]);
+    });
+
+    describe('when component re-renders', () => {
+      it('does not change the input id attributes', async () => {
+        const input = findInputFromLabel(TEST_FIELDS.username.label);
+        const inputIdAttribute = input.attributes('id');
+
+        await wrapper.setProps({ fields: { ...TEST_FIELDS, newField: { label: 'New field' } } });
+
+        expect(inputIdAttribute).toBe(input.attributes('id'));
+      });
     });
 
     it('emits initial values on mount', () => {
@@ -197,6 +220,10 @@ describe('GlFormFields', () => {
           label: TEST_FIELDS.allCaps.label,
           invalidFeedback: '',
         },
+        {
+          label: TEST_FIELDS.fieldWithCustomId.label,
+          invalidFeedback: '',
+        },
       ]);
     });
 
@@ -245,7 +272,7 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: 'gl-form-field-testunique',
+              id: expect.stringMatching(/gl-form-field-\d+/),
             }),
           },
           {
@@ -255,7 +282,7 @@ describe('GlFormFields', () => {
             class: TEST_FIELDS.evenCount.groupAttrs.class,
             input: expect.objectContaining({
               value: '0',
-              id: 'gl-form-field-testunique',
+              id: expect.stringMatching(/gl-form-field-\d+/),
             }),
           },
           {
@@ -265,7 +292,17 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: 'gl-form-field-testunique',
+              id: expect.stringMatching(/gl-form-field-\d+/),
+            }),
+          },
+          {
+            label: TEST_FIELDS.fieldWithCustomId.label,
+            invalidFeedback: '',
+            state: undefined,
+            class: undefined,
+            input: expect.objectContaining({
+              value: '',
+              id: 'custom-id',
             }),
           },
         ]);
@@ -319,7 +356,7 @@ describe('GlFormFields', () => {
         class: TEST_FIELDS.evenCount.groupAttrs.class,
         input: {
           ...TEST_FIELDS.evenCount.inputAttrs,
-          id: 'gl-form-field-testunique',
+          id: expect.stringMatching(/gl-form-field-\d+/),
           value: '7',
         },
       });

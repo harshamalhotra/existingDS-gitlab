@@ -6,6 +6,7 @@ import GlFormGroup from '../form_group/form_group.vue';
 import GlFormInput from '../form_input/form_input.vue';
 import { setObjectProperty } from '../../../../utils/set_utils';
 import GlFormFieldValidator from './form_field_validator.vue';
+import GlFormFieldsLoop from './form_fields_loop.vue';
 
 export default {
   name: 'GlFormFields',
@@ -13,6 +14,7 @@ export default {
     GlFormGroup,
     GlFormInput,
     GlFormFieldValidator,
+    GlFormFieldsLoop,
   },
   model: {
     prop: 'values',
@@ -67,6 +69,7 @@ export default {
     return {
       fieldDirtyStatuses: {},
       fieldValidations: {},
+      fieldIds: {},
     };
   },
   computed: {
@@ -98,7 +101,7 @@ export default {
     },
     fieldsToRender() {
       return mapValues(this.fields, (field, fieldName) => {
-        const id = uniqueId('gl-form-field-');
+        const id = this.memoizeAndReturnFieldId(field, fieldName);
 
         const inputSlotName = `input(${fieldName})`;
         const groupPassthroughSlotName = `group(${fieldName})-`;
@@ -173,6 +176,18 @@ export default {
 
       return val;
     },
+    memoizeAndReturnFieldId(field, fieldName) {
+      const memoizedId = this.fieldIds[fieldName];
+
+      if (memoizedId) {
+        return memoizedId;
+      }
+
+      const id = field.id || uniqueId('gl-form-field-');
+      this.fieldIds[fieldName] = id;
+
+      return id;
+    },
     onFieldValidationUpdate(fieldName, invalidFeedback) {
       this.fieldValidations = setObjectProperty(this.fieldValidations, fieldName, invalidFeedback);
 
@@ -220,11 +235,11 @@ export default {
 </script>
 
 <template>
-  <div>
-    <template v-for="(field, fieldName) in fieldsToRender">
-      <!-- eslint-disable-next-line vue/valid-v-for -->
+  <gl-form-fields-loop :fields="fieldsToRender">
+    <template #default="{ field, fieldName }">
       <gl-form-group
         v-bind="field.groupAttrs"
+        :key="field.id"
         :label="field.label"
         :label-for="field.id"
         :invalid-feedback="fieldValidationProps[fieldName].invalidFeedback"
@@ -259,5 +274,5 @@ export default {
       <!-- @slot Can be used to add content the form group of a field. The name of the slot is `after(<fieldName>)`.-->
       <slot :name="field.afterSlotName"></slot>
     </template>
-  </div>
+  </gl-form-fields-loop>
 </template>
