@@ -67,7 +67,6 @@ export default {
     return {
       fieldDirtyStatuses: {},
       fieldValidations: {},
-      fieldIds: {},
     };
   },
   computed: {
@@ -99,7 +98,7 @@ export default {
     },
     fieldsToRender() {
       return mapValues(this.fields, (field, fieldName) => {
-        const id = this.memoizeAndReturnFieldId(field, fieldName);
+        const id = uniqueId('gl-form-field-');
 
         const inputSlotName = `input(${fieldName})`;
         const groupPassthroughSlotName = `group(${fieldName})-`;
@@ -174,18 +173,6 @@ export default {
 
       return val;
     },
-    memoizeAndReturnFieldId(field, fieldName) {
-      const memoizedId = this.fieldIds[fieldName];
-
-      if (memoizedId) {
-        return memoizedId;
-      }
-
-      const id = field.id || uniqueId('gl-form-field-');
-      this.fieldIds[fieldName] = id;
-
-      return id;
-    },
     onFieldValidationUpdate(fieldName, invalidFeedback) {
       this.fieldValidations = setObjectProperty(this.fieldValidations, fieldName, invalidFeedback);
 
@@ -234,7 +221,8 @@ export default {
 
 <template>
   <div>
-    <div v-for="(field, fieldName) in fieldsToRender" :key="field.id">
+    <template v-for="(field, fieldName) in fieldsToRender">
+      <!-- eslint-disable-next-line vue/valid-v-for -->
       <gl-form-group
         v-bind="field.groupAttrs"
         :label="field.label"
@@ -270,6 +258,6 @@ export default {
       </gl-form-group>
       <!-- @slot Can be used to add content the form group of a field. The name of the slot is `after(<fieldName>)`.-->
       <slot :name="field.afterSlotName"></slot>
-    </div>
+    </template>
   </div>
 </template>
