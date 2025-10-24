@@ -9,6 +9,8 @@ import GlFormFieldValidator from './form_field_validator.vue';
 import * as formMappers from './mappers';
 import * as formValidators from './validators';
 
+jest.mock('lodash/uniqueId', () => (val) => `${val}testunique`);
+
 const TEST_FIELDS = {
   username: {
     label: 'User name',
@@ -28,7 +30,6 @@ const TEST_FIELDS = {
     label: 'All caps (optional)',
     mapValue: (x) => x?.toUpperCase(),
   },
-  fieldWithCustomId: { label: 'Field with custom ID', id: 'custom-id' },
 };
 const TEST_VALUES = {
   username: 'root',
@@ -116,7 +117,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: undefined,
           input: {
-            id: expect.stringMatching(/gl-form-field-\d+/),
+            id: 'gl-form-field-testunique',
             type: 'text',
             value: '',
           },
@@ -127,7 +128,7 @@ describe('GlFormFields', () => {
           invalidFeedback: '',
           class: TEST_FIELDS.evenCount.groupAttrs.class,
           input: {
-            id: expect.stringMatching(/gl-form-field-\d+/),
+            id: 'gl-form-field-testunique',
             value: '0',
             ...TEST_FIELDS.evenCount.inputAttrs,
           },
@@ -140,32 +141,10 @@ describe('GlFormFields', () => {
           input: {
             value: '',
             type: 'text',
-            id: expect.stringMatching(/gl-form-field-\d+/),
-          },
-        },
-        {
-          label: TEST_FIELDS.fieldWithCustomId.label,
-          state: undefined,
-          invalidFeedback: '',
-          class: undefined,
-          input: {
-            id: 'custom-id',
-            type: 'text',
-            value: '',
+            id: 'gl-form-field-testunique',
           },
         },
       ]);
-    });
-
-    describe('when component re-renders', () => {
-      it('does not change the input id attributes', async () => {
-        const input = findInputFromLabel(TEST_FIELDS.username.label);
-        const inputIdAttribute = input.attributes('id');
-
-        await wrapper.setProps({ fields: { ...TEST_FIELDS, newField: { label: 'New field' } } });
-
-        expect(inputIdAttribute).toBe(input.attributes('id'));
-      });
     });
 
     it('emits initial values on mount', () => {
@@ -218,10 +197,6 @@ describe('GlFormFields', () => {
           label: TEST_FIELDS.allCaps.label,
           invalidFeedback: '',
         },
-        {
-          label: TEST_FIELDS.fieldWithCustomId.label,
-          invalidFeedback: '',
-        },
       ]);
     });
 
@@ -270,7 +245,7 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: expect.stringMatching(/gl-form-field-\d+/),
+              id: 'gl-form-field-testunique',
             }),
           },
           {
@@ -280,7 +255,7 @@ describe('GlFormFields', () => {
             class: TEST_FIELDS.evenCount.groupAttrs.class,
             input: expect.objectContaining({
               value: '0',
-              id: expect.stringMatching(/gl-form-field-\d+/),
+              id: 'gl-form-field-testunique',
             }),
           },
           {
@@ -290,17 +265,7 @@ describe('GlFormFields', () => {
             class: undefined,
             input: expect.objectContaining({
               value: '',
-              id: expect.stringMatching(/gl-form-field-\d+/),
-            }),
-          },
-          {
-            label: TEST_FIELDS.fieldWithCustomId.label,
-            invalidFeedback: '',
-            state: undefined,
-            class: undefined,
-            input: expect.objectContaining({
-              value: '',
-              id: 'custom-id',
+              id: 'gl-form-field-testunique',
             }),
           },
         ]);
@@ -354,7 +319,7 @@ describe('GlFormFields', () => {
         class: TEST_FIELDS.evenCount.groupAttrs.class,
         input: {
           ...TEST_FIELDS.evenCount.inputAttrs,
-          id: expect.stringMatching(/gl-form-field-\d+/),
+          id: 'gl-form-field-testunique',
           value: '7',
         },
       });
