@@ -572,6 +572,10 @@
   --gl-text-primary: #28272d; /** Use text.color.default instead. */
   --gl-text-secondary: #737278; /** Use text.color.subtle instead. */
   --gl-text-tertiary: #89888d; /** Use text.color.disabled instead. */
+  --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
+  --gl-border-color-default: var(--gl-color-neutral-100); /** Used for the default border color. */
+  --gl-border-color-subtle: var(--gl-color-neutral-50); /** Used for a subtle border in combination with the default background. */
+  --gl-border-color-strong: var(--gl-color-neutral-200); /** Used for a distinct border that emphasizes an edge or boundaries. */
   --gl-border-radius-none: var(--gl-spacing-scale-0);
   --gl-border-radius-xs: var(--gl-spacing-scale-px);
   --gl-border-radius-sm: var(--gl-spacing-scale-1);
@@ -580,10 +584,6 @@
   --gl-border-radius-xl: var(--gl-spacing-scale-4);
   --gl-border-radius-2xl: var(--gl-spacing-scale-5);
   --gl-border-radius-3xl: var(--gl-spacing-scale-6);
-  --gl-border-color-default: var(--gl-color-neutral-100); /** Used for the default border color. */
-  --gl-border-color-subtle: var(--gl-color-neutral-50); /** Used for a subtle border in combination with the default background. */
-  --gl-border-color-strong: var(--gl-color-neutral-200); /** Used for a distinct border that emphasizes an edge or boundaries. */
-  --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
   --gl-font-size-base: var(--gl-font-size-md);
   --gl-shadow-color-default: var(--gl-color-alpha-dark-16); /** Used for the default shadow color. */
   --gl-alert-neutral-border-top-color: var(--gl-color-alpha-0); /** Used for the border center color of a neutral alert. */
@@ -936,8 +936,8 @@
   --gl-text-color-danger: var(--gl-color-red-600); /** Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination. */
   --gl-text-color-success: var(--gl-color-green-600); /** Used for text indicating success, completion, approval, addition, or validity. */
   --gl-text-color-disabled: var(--gl-color-neutral-400); /** Used for disabled text. */
-  --gl-border-radius-default: var(--gl-border-radius-md);
   --gl-border-color-section: var(--gl-border-color-default); /** Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page. */
+  --gl-border-radius-default: var(--gl-border-radius-md);
   --gl-shadow-sm: 0 0 2px var(--gl-shadow-color-default), 0 1px 4px var(--gl-shadow-color-default); /** Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board. */
   --gl-shadow-md: 0 0 1px var(--gl-shadow-color-default), 0 0 2px var(--gl-shadow-color-default), 0 2px 8px var(--gl-shadow-color-default); /** Used for surfaces that need boundary definition and appear on hover. For example, popovers. */
   --gl-shadow-lg: 0 0 2px var(--gl-shadow-color-default), 0 0 2px var(--gl-shadow-color-default), 0 4px 12px var(--gl-shadow-color-default); /** Used for large surfaces that present additional context to the user. */

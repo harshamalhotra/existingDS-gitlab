@@ -15613,6 +15613,38 @@
       "cssWithValue": "var(--black)"
     },
     "color": {
+      "transparent": {
+        "key": "{border.color.transparent}",
+        "$value": "transparent",
+        "$type": "color",
+        "$description": "Used when a border needs to be present, but not visibly perceived.",
+        "$extensions": {
+          "com.figma.scope": [
+            "ALL_SCOPES"
+          ]
+        },
+        "filePath": "src/tokens/constant/border.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.alpha.0}",
+          "$type": "color",
+          "$description": "Used when a border needs to be present, but not visibly perceived.",
+          "$extensions": {
+            "com.figma.scope": [
+              "ALL_SCOPES"
+            ]
+          },
+          "key": "{border.color.transparent}"
+        },
+        "name": "BORDER_COLOR_TRANSPARENT",
+        "attributes": {},
+        "path": [
+          "border",
+          "color",
+          "transparent"
+        ],
+        "cssWithValue": "var(--gl-border-color-transparent)"
+      },
       "default": {
         "key": "{border.color.default}",
         "$value": "#4c4b51",
@@ -15740,38 +15772,6 @@
           "section"
         ],
         "cssWithValue": "var(--gl-border-color-section)"
-      },
-      "transparent": {
-        "key": "{border.color.transparent}",
-        "$value": "transparent",
-        "$type": "color",
-        "$description": "Used when a border needs to be present, but not visibly perceived.",
-        "$extensions": {
-          "com.figma.scope": [
-            "ALL_SCOPES"
-          ]
-        },
-        "filePath": "src/tokens/semantic/border.tokens.json",
-        "isSource": true,
-        "original": {
-          "$value": "{color.alpha.0}",
-          "$type": "color",
-          "$description": "Used when a border needs to be present, but not visibly perceived.",
-          "$extensions": {
-            "com.figma.scope": [
-              "ALL_SCOPES"
-            ]
-          },
-          "key": "{border.color.transparent}"
-        },
-        "name": "BORDER_COLOR_TRANSPARENT",
-        "attributes": {},
-        "path": [
-          "border",
-          "color",
-          "transparent"
-        ],
-        "cssWithValue": "var(--gl-border-color-transparent)"
       }
     },
     "dropdown": {
