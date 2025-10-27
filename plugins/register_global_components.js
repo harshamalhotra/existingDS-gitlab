@@ -1,8 +1,7 @@
 import Vue from 'vue';
-import DesignToken from '../components/design_token.vue';
+import DesignTokenDimension from '../components/design_tokens_dimension.vue';
 import DesignTokensTable from '../components/design_tokens_table.vue';
 import DesignTokensColorPalette from '../components/design_tokens_color_palette.vue';
-import DimensionScale from '../components/dimension_scale.vue';
 import Do from '../components/do.vue';
 import Dont from '../components/dont.vue';
 import ExtendedNotice from '../components/extended_notice.vue';
@@ -19,10 +18,9 @@ import Todo from '../components/todo.vue';
 import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
-  DesignToken,
+  DesignTokenDimension,
   DesignTokensTable,
   DesignTokensColorPalette,
-  DimensionScale,
   Do,
   Dont,
   ExtendedNotice,

@@ -11,10 +11,11 @@ import {
   GlPagination,
   GlTooltipDirective,
 } from '../helpers/gitlab_ui';
-import ColorChip from './color_chip.vue';
-import DesignToken from './design_token.vue';
-import DimensionScale from './dimension_scale.vue';
-import BorderRadius from './border_radius.vue';
+import DesignTokenBorderRadius from './design_token_border_radius.vue';
+import DesignTokenColor from './design_token_color.vue';
+import DesignTokenDimension from './design_tokens_dimension.vue';
+import DesignTokenTypography from './design_token_typography.vue';
+import DesignTokenValue from './design_token_value.vue';
 
 export default {
   name: 'DesignTokensTable',
@@ -25,10 +26,11 @@ export default {
     GlSearchBoxByType,
     GlTable,
     GlPagination,
-    ColorChip,
-    DesignToken,
-    DimensionScale,
-    BorderRadius,
+    DesignTokenBorderRadius,
+    DesignTokenColor,
+    DesignTokenDimension,
+    DesignTokenTypography,
+    DesignTokenValue,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
@@ -111,17 +113,26 @@ export default {
       }
       return value;
     },
-    getValueLabel(value, mode = 'default') {
+    getValueLabel(value, type, mode = 'default') {
       if (this.isAliasObject(value)) {
         return this.getAliasValueName(value[mode]);
       }
       if (this.isAliasValue(value)) {
         return this.getAliasValueName(value);
       }
-      if (typeof value === 'object') {
-        return value[mode];
+      switch (type) {
+        case 'color':
+          // Get color value for mode
+          return typeof value === 'object' ? value[mode] : value;
+        case 'fontFamily':
+          return value.join(', ');
+        case 'shadow':
+        case 'typography':
+          // Return null for composite tokens as values don't represent CSS output
+          return null;
+        default:
+          return value;
       }
-      return value;
     },
     transformTokenToTableColumns(token) {
       return {
@@ -130,11 +141,11 @@ export default {
         type: token.$type,
         hex: token.value,
         value: token.original.$value,
-        valueLabel: this.getValueLabel(token.original.$value),
-        darkValueLabel: this.getValueLabel(token.original.$value, 'dark'),
+        valueLabel: this.getValueLabel(token.original.$value, token.original.$type),
+        darkValueLabel: this.getValueLabel(token.original.$value, token.original.$type, 'dark'),
         deprecated: token.$deprecated ? 'deprecated' : '',
         description: token.$description,
-        className: this.isTailwind ? this.formatContextToClass(token.context) : null,
+        className: this.formatContextToClass(token.context),
         cssValue: token.cssWithValue,
         figmaName: this.formatTokenName('figma', token),
         cssName: this.formatTokenName('css', token),
@@ -176,10 +187,21 @@ export default {
       }
     },
     transformTokensToTableRows(tokens, context = []) {
+      // Add null/undefined check
+      if (!tokens || typeof tokens !== 'object') {
+        return [];
+      }
+
       const tokensArray = [];
 
       Object.keys(tokens).forEach((key) => {
         const token = tokens[key];
+
+        // Skip if token is null/undefined
+        if (!token || typeof token !== 'object') {
+          return;
+        }
+
         if (this.isTailwind && token.$value) {
           tokensArray.push(
             this.transformTokenToTableColumns({ ...token, context: [...context, key] }),
@@ -189,7 +211,15 @@ export default {
         } else if (token.$value) {
           tokensArray.push(this.transformTokenToTableColumns(token));
         } else {
-          tokensArray.push(...this.transformTokensToTableRows(token));
+          // Only recurse if the token has properties that could contain more tokens
+          const hasNestedTokens = Object.values(token).some(
+            (value) =>
+              value && typeof value === 'object' && (value.$value || Object.keys(value).length > 0),
+          );
+
+          if (hasNestedTokens) {
+            tokensArray.push(...this.transformTokensToTableRows(token, context));
+          }
         }
       });
 
@@ -226,10 +256,20 @@ export default {
       }
     },
     formatContextToClass(context) {
+      if (!this.isTailwind) return null;
+
       const cleanContext = context.filter((segment) => segment !== 'color');
-      if (cleanContext[0] === 'background') {
-        cleanContext[0] = 'bg';
-      }
+      const tailwindContextMap = {
+        background: 'bg',
+        borderRadius: 'rounded',
+        boxShadow: 'shadow',
+        fontFamily: 'font',
+        fontSize: 'text',
+        fontWeight: 'font',
+        lineHeight: 'leading',
+      };
+
+      cleanContext[0] = tailwindContextMap[cleanContext[0]] || cleanContext[0];
       // eslint-disable-next-line @gitlab/tailwind-no-interpolation
       return `gl-${cleanContext.join('-')}`;
     },
@@ -275,17 +315,20 @@ export default {
       stacked="sm"
     >
       <template #cell(sample)="{ item: { name, type, cssName } }">
-        <color-chip v-if="type === 'color'" :color="cssName" :name="name" size="lg" />
-        <border-radius v-if="name.includes('radius')" :value="cssName" />
-        <dimension-scale v-else-if="type === 'dimension'" direction="col" :value="cssName" />
+        <design-token-border-radius v-if="name.includes('radius')" :value="cssName" />
+        <design-token-color v-else-if="type === 'color'" :color="cssName" :name="name" size="lg" />
+        <design-token-typography v-else-if="type === 'fontFamily'" :family="cssName" />
+        <design-token-typography v-else-if="name.includes('font.size')" :size="cssName" />
+        <design-token-typography v-else-if="type === 'fontWeight'" :weight="cssName" />
+        <design-token-dimension v-else-if="type === 'dimension'" direction="col" :value="cssName" />
       </template>
       <template
         #cell(name)="{
-          item: { name, deprecated, description, className, figmaName, cssName, scssName },
+          item: { name, deprecated, description, className, figmaName, cssName, scssName, type },
         }"
       >
         <div class="gl-mb-3">
-          <div class="gl-mb-2 gl-flex gl-items-center gl-gap-3">
+          <div class="gl-flex gl-items-center gl-gap-3">
             <code class="gl-text-base gl-font-bold gl-text-strong">
               {{ isTailwind ? className : name }}
             </code>
@@ -303,7 +346,10 @@ export default {
             {{ description }}
           </p>
         </div>
-        <ul class="!gl-m-0 gl-flex gl-list-none gl-flex-col !gl-p-0">
+        <ul
+          v-if="type !== 'typography'"
+          class="gl-mb-0 gl-ml-0 gl-mt-2 gl-flex gl-list-none gl-flex-col !gl-p-0"
+        >
           <li v-if="isTailwind" class="gl-text-sm">
             <span class="gl-inline-block gl-w-8">Token:</span> {{ name }}
             <gl-button
@@ -355,9 +401,12 @@ export default {
         </ul>
       </template>
       <template #cell(value)="{ item: { type, valueLabel, darkValueLabel, cssName } }">
-        <ul class="!gl-m-0 gl-flex gl-list-none gl-flex-col gl-gap-3 !gl-p-0">
+        <ul
+          v-if="valueLabel || darkValueLabel"
+          class="!gl-m-0 gl-flex gl-list-none gl-flex-col gl-gap-3 !gl-p-0"
+        >
           <li>
-            <design-token
+            <design-token-value
               :css-name="cssName"
               :type="type"
               :value="valueLabel"
@@ -365,7 +414,7 @@ export default {
             />
           </li>
           <li>
-            <design-token
+            <design-token-value
               :css-name="cssName"
               :type="type"
               :value="darkValueLabel"
