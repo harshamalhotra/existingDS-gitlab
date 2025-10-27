@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'DimensionScale',
+  name: 'DesignTokenDimension',
   props: {
     direction: {
       type: String,

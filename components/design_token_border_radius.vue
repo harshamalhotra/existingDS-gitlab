@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BorderRadius',
+  name: 'DesignTokenBorderRadius',
   props: {
     value: {
       type: String,

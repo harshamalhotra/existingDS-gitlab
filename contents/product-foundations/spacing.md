@@ -18,36 +18,36 @@ We include 12px as one of our measures, but it should only be reserved for right
 
 ```html
 <!-- live-example -->
-<dimension-scale size-class="gl-w-1"></dimension-scale>
-<dimension-scale size-class="gl-w-2"></dimension-scale>
+<design-token-dimension size-class="gl-w-1"></design-token-dimension>
+<design-token-dimension size-class="gl-w-2"></design-token-dimension>
 ```
 
 `8px` is used to separate related elements.
 
 ```html
 <!-- live-example -->
-<dimension-scale size-class="gl-w-3"></dimension-scale>
+<design-token-dimension size-class="gl-w-3"></design-token-dimension>
 ```
 
 `16px` is used to separate unrelated elements.
 
 ```html
 <!-- live-example -->
-<dimension-scale size-class="gl-w-5"></dimension-scale>
+<design-token-dimension size-class="gl-w-5"></design-token-dimension>
 ```
 
 `24px` is used to separate sub-sections of content.
 
 ```html
 <!-- live-example -->
-<dimension-scale size-class="gl-w-6"></dimension-scale>
+<design-token-dimension size-class="gl-w-6"></design-token-dimension>
 ```
 
 `32x` is used to separate sections of content.
 
 ```html
 <!-- live-example -->
-<dimension-scale size-class="gl-w-7"></dimension-scale>
+<design-token-dimension size-class="gl-w-7"></design-token-dimension>
 ```
 
 ## Design tokens

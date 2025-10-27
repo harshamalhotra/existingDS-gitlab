@@ -2,7 +2,7 @@
 import { GlIcon } from '../helpers/gitlab_ui';
 
 export default {
-  name: 'ColorChip',
+  name: 'DesignTokenColor',
   components: {
     GlIcon,
   },
