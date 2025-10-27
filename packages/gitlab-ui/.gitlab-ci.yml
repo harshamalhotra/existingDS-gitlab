@@ -40,7 +40,7 @@
     CYPRESS_INSTALL_BINARY: 0
   before_script:
     - apt-get update
-    - apt-get install -y make unzip curl
+    - apt-get install -y make unzip curl bzip2
     - yarn install --frozen-lockfile
     # We do a yarn install in the _root_ directory
     # so that e.g. `patch-package` works properly
