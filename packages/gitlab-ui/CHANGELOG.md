@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.11.3
+
+### Patch Changes
+
+- 5e1f960: Move border.color.transparent design token to constants
+
 ## 123.11.2
 
 ### Patch Changes
