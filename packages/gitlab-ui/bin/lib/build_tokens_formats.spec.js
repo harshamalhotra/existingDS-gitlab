@@ -1,11 +1,13 @@
 import {
-  isAliasValue,
-  hasAliases,
   getScalesAndCSSCustomProperties,
   generateBaseColors,
   generateColorMap,
   getTokenCssCustomProperty,
-} from './tailwind_token_formatter';
+} from './build_tokens_formats';
+
+jest.mock('style-dictionary/utils', () => ({
+  fileHeader: jest.fn().mockResolvedValue('// Mock header\n'),
+}));
 
 const tokens = {
   color: {
@@ -64,35 +66,7 @@ const tokens = {
   },
 };
 
-describe('Tailwind Token Formatter', () => {
-  describe('isAliasValue', () => {
-    it('returns true when value is alias', () => {
-      expect(isAliasValue('{color.alias}')).toBe(true);
-    });
-
-    it('returns false when value is string', () => {
-      expect(isAliasValue('#fff')).toBe(false);
-    });
-  });
-
-  describe('hasAliases', () => {
-    it('returns true when original value is alias', () => {
-      expect(hasAliases(tokens.color.alias.original.$value)).toBe(true);
-    });
-
-    it('returns false when original value is string', () => {
-      expect(hasAliases(tokens.color.constant.original.$value)).toBe(false);
-    });
-
-    it('returns true when original value property contains alias in a nested object', () => {
-      expect(hasAliases(tokens.color.aliasObject.original.$value)).toBe(true);
-    });
-
-    it('returns false when original value property contains strings in a nested object', () => {
-      expect(hasAliases(tokens.color.constantObject.original.$value)).toBe(false);
-    });
-  });
-
+describe('Build tokens formats', () => {
   describe('getScalesAndCSSCustomProperties', () => {
     it('should correctly extract cssWithValue property from tokens', () => {
       const colorsTokens = {
