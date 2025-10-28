@@ -343,7 +343,7 @@ ui:update_screenshots:
     - cd packages/gitlab-ui
     - ./bin/update-screenshots.sh
 
-ui:create_integration_branch:
+ui:create_integration_merge_request:
   extends:
     - .ui:node
     - .rules:ui:design-gitlab-com-mr-manual
@@ -352,7 +352,7 @@ ui:create_integration_branch:
     - ui:build_package
   script:
     - cd packages/gitlab-ui
-    - bin/create_integration_branch.mjs
+    - bin/create_integration_merge_request.mjs
 
 ui:duo_job:
   extends: [.ui:node, .ui:yarn_install]
