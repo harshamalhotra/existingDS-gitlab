@@ -64,7 +64,7 @@ const Template = () => ({
         },
         acknowledge: {
           label: 'I acknowledge that...',
-          validators: [(val) => (val ? '' : required('Acknowledge before submitting!'))],
+          validators: [(val) => (val === true ? '' : 'Acknowledge before submitting!')],
         },
       },
       formValues: {},
