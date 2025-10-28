@@ -60,7 +60,7 @@ export const Default = makeStory({
   toastShowArgs: ['This is the default toast.'],
 });
 
-export const WithActions = makeStory({
+export const WithButtonAction = makeStory({
   buttonText: 'Show toast with actions',
   toastShowArgs: [
     'This is a toast with an action.',
@@ -68,6 +68,19 @@ export const WithActions = makeStory({
       action: {
         text: 'Undo',
         onClick: () => {},
+      },
+    },
+  ],
+});
+
+export const WithHrefAction = makeStory({
+  buttonText: 'Show toast with a link',
+  toastShowArgs: [
+    'This is a toast with a link.',
+    {
+      action: {
+        text: 'Follow the rabbit',
+        href: 'some-url',
       },
     },
   ],

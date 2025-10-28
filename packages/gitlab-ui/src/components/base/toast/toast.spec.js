@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { mount } from '@vue/test-utils';
 import { waitForAnimationFrame } from '../../../utils/test_utils';
+import { TEST_HOST } from '../../../../tests/__helpers__/constants';
 import GlToast from './toast';
 
 Vue.use(GlToast);
@@ -13,8 +14,8 @@ describe('GlToast', () => {
 
   const findToasts = () => document.body.querySelectorAll('.gl-toast');
 
-  async function showToast() {
-    const toast = wrapper.vm.$toast.show('foo');
+  async function showToast(message = 'foo', options) {
+    const toast = wrapper.vm.$toast.show(message, options);
 
     await waitForAnimationFrame();
     await wrapper.vm.$nextTick();
@@ -48,6 +49,53 @@ describe('GlToast', () => {
     });
 
     expect(findToasts()).toHaveLength(1);
+  });
+
+  describe('action', () => {
+    it('shows href', async () => {
+      expect(findToasts()).toHaveLength(0);
+
+      const onClick = jest.fn();
+      const href = '/link';
+      const text = 'action';
+
+      const { id } = await showToast('with action', {
+        action: {
+          onClick,
+          href,
+          text,
+        },
+      });
+
+      const toast = document.getElementById(id);
+      const action = toast.querySelector('a');
+      action.click();
+      expect(onClick).toHaveBeenCalled();
+      expect(action.href).toBe(`${TEST_HOST}${href}`);
+      expect(action.textContent).toBe(text);
+      expect(action.role).toBe(null);
+    });
+
+    it('shows button', async () => {
+      expect(findToasts()).toHaveLength(0);
+
+      const onClick = jest.fn();
+      const text = 'action';
+
+      const { id } = await showToast('with action', {
+        action: {
+          onClick,
+          text,
+        },
+      });
+
+      const toast = document.getElementById(id);
+      const action = toast.querySelector('a');
+      action.click();
+      expect(onClick).toHaveBeenCalled();
+      expect(action.textContent).toBe(text);
+      expect(action.role).toBe('button');
+    });
   });
 
   it('closes the toast when clicking on the close button', async () => {
