@@ -9,7 +9,6 @@ const defaultValue = propDefaultFactory(GlPagination);
 const generateProps = ({
   value = 3,
   align = defaultValue('align'),
-  disabled = defaultValue('disabled'),
   linkGen = defaultValue('linkGen'),
   nextPage = defaultValue('nextPage'),
   nextText = defaultValue('nextText'),
@@ -20,7 +19,6 @@ const generateProps = ({
 } = {}) => ({
   value,
   align,
-  disabled,
   linkGen,
   nextPage,
   nextText,
@@ -34,7 +32,6 @@ const template = `
   <gl-pagination
     v-model="currentPage"
     :align="align"
-    :disabled="disabled"
     :link-gen="linkGen"
     :next-page="nextPage"
     :next-text="nextText"
