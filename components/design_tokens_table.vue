@@ -1,6 +1,7 @@
 <script>
 import Fuse from 'fuse.js';
 import COMPILED_TOKENS from '@gitlab/ui/src/tokens/build/json/tokens.json';
+import COMPILED_DARK_TOKENS from '@gitlab/ui/src/tokens/build/json/tokens.dark.json';
 import COMPILED_TAILWIND_TOKENS from '@gitlab/ui/src/tokens/build/docs/tokens-tailwind-docs.json';
 import {
   GlBadge,
@@ -113,17 +114,14 @@ export default {
       }
       return value;
     },
-    getValueLabel(value, type, mode = 'default') {
+    getValueLabel(value, type) {
       if (this.isAliasObject(value)) {
-        return this.getAliasValueName(value[mode]);
+        return this.getAliasValueName(value);
       }
       if (this.isAliasValue(value)) {
         return this.getAliasValueName(value);
       }
       switch (type) {
-        case 'color':
-          // Get color value for mode
-          return typeof value === 'object' ? value[mode] : value;
         case 'fontFamily':
           return value.join(', ');
         case 'shadow':
@@ -134,6 +132,16 @@ export default {
           return value;
       }
     },
+    getDarkValueLabel(tokenPath, type) {
+      const darkToken = this.getTokenByPath(COMPILED_DARK_TOKENS, tokenPath);
+      if (!darkToken) return null;
+      return this.getValueLabel(darkToken.original.$value, type);
+    },
+    getTokenByPath(tokens, path) {
+      return path.reduce((current, segment) => {
+        return current && current[segment];
+      }, tokens);
+    },
     transformTokenToTableColumns(token) {
       return {
         id: token.path.filter(Boolean).join('-'),
@@ -142,7 +150,7 @@ export default {
         hex: token.value,
         value: token.original.$value,
         valueLabel: this.getValueLabel(token.original.$value, token.original.$type),
-        darkValueLabel: this.getValueLabel(token.original.$value, token.original.$type, 'dark'),
+        darkValueLabel: this.getDarkValueLabel(token.path, token.original.$type),
         deprecated: token.$deprecated ? 'deprecated' : '',
         description: token.$description,
         className: this.formatContextToClass(token.context),
