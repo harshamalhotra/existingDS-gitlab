@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 123.12.0
+
+### Minor Changes
+
+- a8c40ad: Add support for href inside toast title
+
 ## 123.11.3
 
 ### Patch Changes
