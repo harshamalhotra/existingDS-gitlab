@@ -781,6 +781,10 @@
               {
                 "title": "WCAG Edition",
                 "path": "wcag"
+              },
+              {
+                "title": "GitLab 18 VPAT",
+                "path": "vpat-gitlab-18"
               }
             ]
           },
