@@ -230,10 +230,23 @@ $gl-color-brand-gray-05: #2b2838;
 $gl-color-brand-pink-01g: #ffb9c9;
 $gl-font-family-regular: var(--default-regular-font, 'GitLab Sans'),-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans',Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 $gl-font-family-monospace: var(--default-mono-font, 'GitLab Mono'),'JetBrains Mono',Menlo,'DejaVu Sans Mono','Liberation Mono',Consolas,'Ubuntu Mono','Courier New','andale mono','lucida console',monospace;
+$gl-font-size-100: 0.75rem; // Used for meta text and small labels.
+$gl-font-size-200: 0.8125rem; // Used for level 6 headings.
+$gl-font-size-300: 0.875rem; // Used for level 5 headings, body text, input labels, and help text.
+$gl-font-size-400: 1rem; // Used for level 4 headings, large body text.
+$gl-font-size-500: clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem); // Used for responsive level 3 headings.
+$gl-font-size-600: clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem); // Used for responsive level 2 headings.
+$gl-font-size-700: clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem); // Used for responsive level 1 headings
+$gl-font-size-800: clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem); // Used for a responsive display option that can be applied to a level 1 heading to increase its prominence.
 $gl-font-size-xs: 0.625rem;
-$gl-font-size-sm: 0.75rem;
-$gl-font-size-md: 0.875rem;
-$gl-font-size-lg: 1rem;
+$gl-font-size-100-fixed: 0.75rem; // Used for meta text and small labels.
+$gl-font-size-200-fixed: 0.8125rem; // Used for level 6 headings.
+$gl-font-size-300-fixed: 0.875rem; // Used for level 5 headings, body text, input labels, and help text.
+$gl-font-size-400-fixed: 1rem; // Used for level 4 headings, large body text.
+$gl-font-size-500-fixed: 1.125rem; // Used for level 3 headings.
+$gl-font-size-600-fixed: 1.3125rem; // Used for level 2 headings.
+$gl-font-size-700-fixed: 1.5rem; // Used for level 1 headings
+$gl-font-size-800-fixed: 1.75rem; // Used for a display option that can be applied to a level 1 heading to increase its prominence.
 $gl-font-weight-100: 100;
 $gl-font-weight-300: 300;
 $gl-font-weight-normal: 400;
@@ -582,7 +595,9 @@ $gl-border-radius-lg: $gl-spacing-scale-3;
 $gl-border-radius-xl: $gl-spacing-scale-4;
 $gl-border-radius-2xl: $gl-spacing-scale-5;
 $gl-border-radius-3xl: $gl-spacing-scale-6;
-$gl-font-size-base: $gl-font-size-md;
+$gl-font-size-sm: $gl-font-size-100;
+$gl-font-size-md: $gl-font-size-300;
+$gl-font-size-lg: $gl-font-size-400;
 $gl-shadow-color-default: $gl-color-alpha-dark-16; // Used for the default shadow color.
 $gl-alert-neutral-border-top-color: $gl-color-alpha-0; // Used for the border center color of a neutral alert.
 $gl-alert-neutral-border-bottom-color: $gl-color-alpha-0; // Used for the border bottom color of a neutral alert.
@@ -936,6 +951,7 @@ $gl-text-color-success: $gl-color-green-600; // Used for text indicating success
 $gl-text-color-disabled: $gl-color-neutral-400; // Used for disabled text.
 $gl-border-color-section: $gl-border-color-default; // Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page.
 $gl-border-radius-default: $gl-border-radius-md;
+$gl-font-size-base: $gl-font-size-md;
 $gl-shadow-sm: 0 0 2px $gl-shadow-color-default, 0 1px 4px $gl-shadow-color-default; // Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.
 $gl-shadow-md: 0 0 1px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 2px 8px $gl-shadow-color-default; // Used for surfaces that need boundary definition and appear on hover. For example, popovers.
 $gl-shadow-lg: 0 0 2px $gl-shadow-color-default, 0 0 2px $gl-shadow-color-default, 0 4px 12px $gl-shadow-color-default; // Used for large surfaces that present additional context to the user.
