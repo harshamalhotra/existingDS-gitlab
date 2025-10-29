@@ -90,7 +90,13 @@ export default {
       required: false,
       default: false,
     },
-    // only set to 'assertive' if alert requires immediate user action, otherwise use a default value
+    /**
+     * Set the aria-live attribute on the alert.
+     *
+     * Only set to 'assertive' if alert requires immediate user action.
+     * Otherwise, rely on the default value.
+     *
+     */
     politeness: {
       type: String,
       required: false,
@@ -196,6 +202,8 @@ export default {
 
 <template>
   <div
+    :role="role"
+    :aria-live="politeness"
     :class="[
       'gl-alert',
       { 'gl-alert-sticky': sticky },
@@ -208,7 +216,7 @@ export default {
     <div v-if="showIcon" class="gl-alert-icon-container">
       <gl-icon :name="iconName" class="gl-alert-icon" />
     </div>
-    <div class="gl-alert-content" :role="role" :aria-live="politeness">
+    <div class="gl-alert-content">
       <h2 v-if="title" class="gl-alert-title">{{ title }}</h2>
 
       <div class="gl-alert-body">
