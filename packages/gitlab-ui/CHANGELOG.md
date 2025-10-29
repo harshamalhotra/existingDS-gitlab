@@ -1,5 +1,19 @@
 # @gitlab/ui
 
+## 124.0.0
+
+### Major Changes
+
+- 68e7d61: Remove 'disabled' prop on GlPagination
+
+### Patch Changes
+
+- 4d6396a: GlAlert: Move role and aria-live attributes to container element for better accessibility
+- 7fa20fe: Fix rendering bug in GlFormFields due to missing key.
+  Focus was lost when adding fields. Also the ID associated with
+  fields would be incremented when it should stay constant.
+  Also make it possible to pass a custom ID attribute.
+
 ## 123.12.0
 
 ### Minor Changes
