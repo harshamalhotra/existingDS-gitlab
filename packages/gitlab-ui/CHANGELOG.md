@@ -1,5 +1,18 @@
 # @gitlab/ui
 
+## 124.1.0
+
+### Minor Changes
+
+- 8f0bab9: Add font size scale design tokens
+
+  Adds `font.size.*` design tokens for `100` to `800` scales
+  and `100-fixed` to `800-fixed` scales
+  Update `font.size.sm` to use `font.size.100`
+  Update `font.size.md` to use `font.size.300`
+  Update `font.size.lg` to use `font.size.400`
+  Update documentation with design token path references
+
 ## 124.0.0
 
 ### Major Changes
