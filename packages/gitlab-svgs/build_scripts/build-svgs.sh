@@ -35,11 +35,11 @@ function download_file_icons {
     mv vscode-material-icon-theme-*/icons/"$icon.svg" ../file_icons
   done
 
-  # Overwrite Kotlin logo with monospace version
+  # Overwrite Kotlin logo with up to date version
   curl --location --output kotlin_logos.zip --fail \
     "https://resources.jetbrains.com/storage/products/kotlin/docs/kotlin_logos.zip"
   unzip kotlin_logos
-  KOTLIN_LOGO="Digital/Mark/One Color/Kotlin One Color Logo Mark RGB.svg"
+  KOTLIN_LOGO="Kotlin Ecosystem Logos/Kotlin/Primary/Kotlin icon.svg"
   test -f "$KOTLIN_LOGO"
   mv "$KOTLIN_LOGO" ../file_icons/kotlin.svg
 
