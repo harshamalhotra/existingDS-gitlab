@@ -272,10 +272,26 @@ export const GL_FONT_FAMILY_MONOSPACE = [
   "'lucida console'",
   'monospace',
 ];
+export const GL_FONT_SIZE_100 = '0.75rem';
+export const GL_FONT_SIZE_200 = '0.8125rem';
+export const GL_FONT_SIZE_300 = '0.875rem';
+export const GL_FONT_SIZE_400 = '1rem';
+export const GL_FONT_SIZE_500 = 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)';
+export const GL_FONT_SIZE_600 = 'clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)';
+export const GL_FONT_SIZE_700 = 'clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)';
+export const GL_FONT_SIZE_800 = 'clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)';
 export const GL_FONT_SIZE_XS = '0.625rem';
 export const GL_FONT_SIZE_SM = '0.75rem';
 export const GL_FONT_SIZE_MD = '0.875rem';
 export const GL_FONT_SIZE_LG = '1rem';
+export const GL_FONT_SIZE_100_FIXED = '0.75rem';
+export const GL_FONT_SIZE_200_FIXED = '0.8125rem';
+export const GL_FONT_SIZE_300_FIXED = '0.875rem';
+export const GL_FONT_SIZE_400_FIXED = '1rem';
+export const GL_FONT_SIZE_500_FIXED = '1.125rem';
+export const GL_FONT_SIZE_600_FIXED = '1.3125rem';
+export const GL_FONT_SIZE_700_FIXED = '1.5rem';
+export const GL_FONT_SIZE_800_FIXED = '1.75rem';
 export const GL_FONT_SIZE_BASE = '0.875rem';
 export const GL_FONT_WEIGHT_100 = '100';
 export const GL_FONT_WEIGHT_300 = '300';

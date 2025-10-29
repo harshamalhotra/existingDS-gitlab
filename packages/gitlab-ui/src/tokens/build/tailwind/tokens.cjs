@@ -438,10 +438,26 @@ const fontFamily = {
   monospace: 'var(--gl-font-family-monospace)',
 };
 const fontSize = {
+  100: 'var(--gl-font-size-100)',
+  200: 'var(--gl-font-size-200)',
+  300: 'var(--gl-font-size-300)',
+  400: 'var(--gl-font-size-400)',
+  500: 'var(--gl-font-size-500)',
+  600: 'var(--gl-font-size-600)',
+  700: 'var(--gl-font-size-700)',
+  800: 'var(--gl-font-size-800)',
   xs: 'var(--gl-font-size-xs)',
   sm: 'var(--gl-font-size-sm)',
   md: 'var(--gl-font-size-md)',
   lg: 'var(--gl-font-size-lg)',
+  '100-fixed': 'var(--gl-font-size-100-fixed)',
+  '200-fixed': 'var(--gl-font-size-200-fixed)',
+  '300-fixed': 'var(--gl-font-size-300-fixed)',
+  '400-fixed': 'var(--gl-font-size-400-fixed)',
+  '500-fixed': 'var(--gl-font-size-500-fixed)',
+  '600-fixed': 'var(--gl-font-size-600-fixed)',
+  '700-fixed': 'var(--gl-font-size-700-fixed)',
+  '800-fixed': 'var(--gl-font-size-800-fixed)',
   base: 'var(--gl-font-size-base)',
 };
 const fontWeight = {
