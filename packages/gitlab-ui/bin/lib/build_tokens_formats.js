@@ -110,6 +110,66 @@ const scssCustomPropertiesFormat = async ({ dictionary, file }) => {
 };
 
 /**
+ * Generates Tailwind CSS component classes from composite design tokens
+ *
+ * This formatter creates CSS component classes that use CSS custom properties
+ * for composite tokens. Each token becomes a CSS class with properties mapped
+ * to their corresponding CSS custom property variables.
+ *
+ *
+ * @param {Object} options - The formatter options
+ * @param {Object} options.dictionary - The Style Dictionary containing all tokens
+ * @param {Array} options.dictionary.allTokens - Array of all processed tokens
+ * @param {Object} options.file - The file being generated
+ * @returns {Promise<string>} A JavaScript module string that exports Tailwind components
+ *
+ * @example
+ * // Output example:
+ * // module.exports = {
+ * //   typographyComponents: {
+ * //     '.heading-1': {
+ * //       'font-weight': 'var(--gl-heading-1-font-weight)',
+ * //       'margin-top': 'var(--gl-heading-1-margin-top)',
+ * //       'font-size': 'var(--gl-heading-1-font-size)',
+ * //       'letter-spacing': 'var(--gl-heading-1-letter-spacing)',
+ * //       'line-height': 'var(--gl-heading-1-line-height)',
+ * //       'margin-bottom': 'var(--gl-heading-1-margin-bottom)',
+ * //       color: 'var(--gl-heading-1-color)',
+ * //     },
+ * //   }
+ * // }
+ */
+const tailwindComponentsFormat = async ({ dictionary, file }) => {
+  const tokens = dictionary.allTokens;
+  const components = {};
+
+  const propertyMap = {
+    fontFamily: 'font-family',
+    marginTop: 'margin-top',
+    fontSize: 'font-size',
+    fontWeight: 'font-weight',
+    letterSpacing: 'letter-spacing',
+    lineHeight: 'line-height',
+    marginBottom: 'margin-bottom',
+    color: 'color',
+  };
+
+  tokens.forEach((token) => {
+    components[`.${token.path.join('-')}`] = Object.entries(token.$value).reduce(
+      // eslint-disable-next-line no-unused-vars
+      (acc, [prop, _]) => {
+        const cssProperty = propertyMap[prop];
+        if (cssProperty) acc[cssProperty] = `var(--${token.name}-${cssProperty})`;
+        return acc;
+      },
+      {},
+    );
+  });
+
+  return `${await fileHeader({ file })}module.exports = ${JSON.stringify({ typographyComponents: components }, null, 2)};`;
+};
+
+/**
  * Generates a JSON representation of design tokens formatted for Tailwind documentation
  *
  * This formatter transforms the Style Dictionary tokens into a structured JSON format
@@ -455,6 +515,7 @@ module.exports = {
   generateColorMap,
   getTokenCssCustomProperty,
   scssCustomPropertiesFormat,
+  tailwindComponentsFormat,
   tailwindDocsFormat,
   tailwindFormat,
 };

@@ -8,6 +8,7 @@ import StyleDictionary from 'style-dictionary';
 import merge from 'lodash/merge.js';
 import {
   scssCustomPropertiesFormat,
+  tailwindComponentsFormat,
   tailwindDocsFormat,
   tailwindFormat,
 } from './lib/build_tokens_formats.js';
@@ -83,6 +84,11 @@ StyleDictionary.registerTransformGroup({
   transforms: ['name/constant', 'gitlab/name/stripPrefix'],
 });
 
+StyleDictionary.registerTransformGroup({
+  name: 'gitlab/tailwind',
+  transforms: ['name/kebab'],
+});
+
 /**
  * Formats
  * https://styledictionary.com/reference/api/#registerformat
@@ -90,6 +96,11 @@ StyleDictionary.registerTransformGroup({
 StyleDictionary.registerFormat({
   name: 'scss/customProperties',
   format: scssCustomPropertiesFormat,
+});
+
+StyleDictionary.registerFormat({
+  name: 'tailwind/components',
+  format: tailwindComponentsFormat,
 });
 
 StyleDictionary.registerFormat({
@@ -134,6 +145,13 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
     include: ['src/tokens/**/*.tokens.json'],
     source: ['src/tokens/**/*.tokens.json'],
     preprocessors: ['gitlab/select-default-value', 'gitlab/resolve-units'],
+    hooks: {
+      filters: {
+        isTypographyDesignToken: (token) => {
+          return token.$type === 'typography';
+        },
+      },
+    },
     platforms: {
       css: {
         prefix: PREFIX,
@@ -141,6 +159,9 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
         transformGroup: 'gitlab/css',
         options: {
           outputReferences: true,
+        },
+        expand: {
+          include: ['typography'],
         },
         files: [
           {
@@ -158,6 +179,9 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
         transformGroup: 'gitlab/js',
         preprocessors: ['gitlab/stripDescriptions'],
         actions: ['prettier'],
+        expand: {
+          include: ['typography'],
+        },
         files: [
           {
             destination: 'tokens.js',
@@ -182,6 +206,9 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
         options: {
           outputReferences: true,
         },
+        expand: {
+          include: ['typography'],
+        },
         files: [
           {
             destination: '_tokens.scss',
@@ -200,6 +227,19 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
           {
             destination: 'tokens-tailwind-docs.json',
             format: 'docs',
+          },
+        ],
+      },
+      tailwind: {
+        prefix: PREFIX,
+        buildPath: `${buildPath}/tailwind/`,
+        transformGroup: 'gitlab/tailwind',
+        actions: ['prettier'],
+        files: [
+          {
+            destination: 'components.cjs',
+            format: 'tailwind/components',
+            filter: 'isTypographyDesignToken',
           },
         ],
       },

@@ -254,6 +254,7 @@
   --gl-font-weight-normal: 400;
   --gl-font-weight-semibold: 500;
   --gl-font-weight-bold: 600;
+  --gl-heading-default-margin-top: 0;
   --gl-line-height-12: 0.75rem;
   --gl-line-height-16: 1rem;
   --gl-line-height-20: 1.25rem;
@@ -264,6 +265,7 @@
   --gl-line-height-42: 2.625rem;
   --gl-line-height-44: 2.75rem;
   --gl-line-height-52: 3.25rem;
+  --gl-line-height-heading: 1.25;
   --gl-opacity-0: 0;
   --gl-opacity-1: .1;
   --gl-opacity-2: .2;
@@ -582,9 +584,31 @@
   --gl-action-danger-background-color-default: rgba(245, 127, 108, 0.0); /** Used for the background of a danger (destructive) action in the default state. */
   --gl-action-danger-background-color-hover: rgba(245, 127, 108, 0.16); /** Used for the background of a danger (destructive) action in the hover state. */
   --gl-action-danger-background-color-active: rgba(174, 24, 0, 0.24); /** Used for the background of a danger (destructive) action in the active state. */
+  --gl-letter-spacing-heading: -0.01em;
   --gl-text-primary: #28272d; /** Use text.color.default instead. */
   --gl-text-secondary: #737278; /** Use text.color.subtle instead. */
   --gl-text-tertiary: #89888d; /** Use text.color.disabled instead. */
+  --gl-heading-3-letter-spacing: inherit;
+  --gl-heading-4-letter-spacing: inherit;
+  --gl-heading-5-letter-spacing: inherit;
+  --gl-heading-6-letter-spacing: inherit;
+  --gl-heading-scale-100-letter-spacing: inherit;
+  --gl-heading-scale-200-letter-spacing: inherit;
+  --gl-heading-scale-300-letter-spacing: inherit;
+  --gl-heading-scale-400-letter-spacing: inherit;
+  --gl-heading-scale-500-letter-spacing: inherit;
+  --gl-heading-scale-800-line-height: 1.125;
+  --gl-heading-scale-100-fixed-letter-spacing: inherit;
+  --gl-heading-scale-200-fixed-letter-spacing: inherit;
+  --gl-heading-scale-300-fixed-letter-spacing: inherit;
+  --gl-heading-scale-400-fixed-letter-spacing: inherit;
+  --gl-heading-scale-500-fixed-letter-spacing: inherit;
+  --gl-heading-scale-800-fixed-line-height: 1.125;
+  --gl-heading-display-line-height: 1.125;
+  --gl-heading-3-fixed-letter-spacing: inherit;
+  --gl-heading-4-fixed-letter-spacing: inherit;
+  --gl-heading-5-fixed-letter-spacing: inherit;
+  --gl-heading-6-fixed-letter-spacing: inherit;
   --gl-border-color-transparent: var(--gl-color-alpha-0); /** Used when a border needs to be present, but not visibly perceived. */
   --gl-border-color-default: var(--gl-color-neutral-100); /** Used for the default border color. */
   --gl-border-color-subtle: var(--gl-color-neutral-50); /** Used for a subtle border in combination with the default background. */
@@ -600,6 +624,8 @@
   --gl-font-size-sm: var(--gl-font-size-100);
   --gl-font-size-md: var(--gl-font-size-300);
   --gl-font-size-lg: var(--gl-font-size-400);
+  --gl-font-weight-heading: var(--gl-font-weight-bold);
+  --gl-heading-default-margin-bottom: var(--gl-spacing-scale-5);
   --gl-shadow-color-default: var(--gl-color-alpha-dark-16); /** Used for the default shadow color. */
   --gl-alert-neutral-border-top-color: var(--gl-color-alpha-0); /** Used for the border center color of a neutral alert. */
   --gl-alert-neutral-border-bottom-color: var(--gl-color-alpha-0); /** Used for the border bottom color of a neutral alert. */
@@ -951,6 +977,102 @@
   --gl-text-color-danger: var(--gl-color-red-600); /** Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination. */
   --gl-text-color-success: var(--gl-color-green-600); /** Used for text indicating success, completion, approval, addition, or validity. */
   --gl-text-color-disabled: var(--gl-color-neutral-400); /** Used for disabled text. */
+  --gl-heading-1-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-1-font-size: var(--gl-font-size-700);
+  --gl-heading-1-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-1-line-height: var(--gl-line-height-heading);
+  --gl-heading-2-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-2-font-size: var(--gl-font-size-600);
+  --gl-heading-2-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-2-line-height: var(--gl-line-height-heading);
+  --gl-heading-3-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-3-font-size: var(--gl-font-size-500);
+  --gl-heading-3-line-height: var(--gl-line-height-heading);
+  --gl-heading-4-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-4-font-size: var(--gl-font-size-400);
+  --gl-heading-4-line-height: var(--gl-line-height-heading);
+  --gl-heading-5-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-5-font-size: var(--gl-font-size-300);
+  --gl-heading-5-line-height: var(--gl-line-height-heading);
+  --gl-heading-6-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-6-font-size: var(--gl-font-size-200);
+  --gl-heading-6-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-100-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-100-font-size: var(--gl-font-size-100);
+  --gl-heading-scale-100-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-200-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-200-font-size: var(--gl-font-size-200);
+  --gl-heading-scale-200-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-300-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-300-font-size: var(--gl-font-size-300);
+  --gl-heading-scale-300-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-400-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-400-font-size: var(--gl-font-size-400);
+  --gl-heading-scale-400-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-500-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-500-font-size: var(--gl-font-size-500);
+  --gl-heading-scale-500-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-600-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-600-font-size: var(--gl-font-size-600);
+  --gl-heading-scale-600-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-scale-600-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-700-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-700-font-size: var(--gl-font-size-700);
+  --gl-heading-scale-700-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-scale-700-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-800-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-800-font-size: var(--gl-font-size-800);
+  --gl-heading-scale-800-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-scale-100-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-100-fixed-font-size: var(--gl-font-size-100-fixed);
+  --gl-heading-scale-100-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-200-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-200-fixed-font-size: var(--gl-font-size-200-fixed);
+  --gl-heading-scale-200-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-300-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-300-fixed-font-size: var(--gl-font-size-300-fixed);
+  --gl-heading-scale-300-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-400-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-400-fixed-font-size: var(--gl-font-size-400-fixed);
+  --gl-heading-scale-400-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-500-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-500-fixed-font-size: var(--gl-font-size-500-fixed);
+  --gl-heading-scale-500-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-600-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-600-fixed-font-size: var(--gl-font-size-600-fixed);
+  --gl-heading-scale-600-fixed-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-scale-600-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-700-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-700-fixed-font-size: var(--gl-font-size-700-fixed);
+  --gl-heading-scale-700-fixed-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-scale-700-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-scale-800-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-scale-800-fixed-font-size: var(--gl-font-size-800-fixed);
+  --gl-heading-scale-800-fixed-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-display-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-display-font-size: var(--gl-font-size-800);
+  --gl-heading-display-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-display-margin-bottom: var(--gl-spacing-scale-6);
+  --gl-heading-1-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-1-fixed-font-size: var(--gl-font-size-700-fixed);
+  --gl-heading-1-fixed-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-1-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-2-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-2-fixed-font-size: var(--gl-font-size-600-fixed);
+  --gl-heading-2-fixed-letter-spacing: var(--gl-letter-spacing-heading);
+  --gl-heading-2-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-3-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-3-fixed-font-size: var(--gl-font-size-500-fixed);
+  --gl-heading-3-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-4-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-4-fixed-font-size: var(--gl-font-size-400-fixed);
+  --gl-heading-4-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-5-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-5-fixed-font-size: var(--gl-font-size-300-fixed);
+  --gl-heading-5-fixed-line-height: var(--gl-line-height-heading);
+  --gl-heading-6-fixed-margin-top: var(--gl-heading-default-margin-top);
+  --gl-heading-6-fixed-font-size: var(--gl-font-size-200-fixed);
+  --gl-heading-6-fixed-line-height: var(--gl-line-height-heading);
   --gl-border-color-section: var(--gl-border-color-default); /** Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page. */
   --gl-border-radius-default: var(--gl-border-radius-md);
   --gl-font-size-base: var(--gl-font-size-md);
@@ -1100,6 +1222,76 @@
   --gl-icon-color-warning: var(--gl-text-color-warning); /** Used for an icon associated with a warning. */
   --gl-icon-color-danger: var(--gl-text-color-danger); /** Used for an icon associated with an error or danger. */
   --gl-icon-color-success: var(--gl-text-color-success); /** Used for an icon associated with success or validity. */
+  --gl-heading-1-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-1-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-1-color: var(--gl-text-color-heading);
+  --gl-heading-2-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-2-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-2-color: var(--gl-text-color-heading);
+  --gl-heading-3-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-3-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-3-color: var(--gl-text-color-heading);
+  --gl-heading-4-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-4-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-4-color: var(--gl-text-color-heading);
+  --gl-heading-5-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-5-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-5-color: var(--gl-text-color-heading);
+  --gl-heading-6-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-6-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-6-color: var(--gl-text-color-heading);
+  --gl-heading-scale-100-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-100-color: var(--gl-text-color-heading);
+  --gl-heading-scale-200-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-200-color: var(--gl-text-color-heading);
+  --gl-heading-scale-300-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-300-color: var(--gl-text-color-heading);
+  --gl-heading-scale-400-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-400-color: var(--gl-text-color-heading);
+  --gl-heading-scale-500-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-500-color: var(--gl-text-color-heading);
+  --gl-heading-scale-600-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-600-color: var(--gl-text-color-heading);
+  --gl-heading-scale-700-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-700-color: var(--gl-text-color-heading);
+  --gl-heading-scale-800-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-800-color: var(--gl-text-color-heading);
+  --gl-heading-scale-100-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-100-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-200-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-200-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-300-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-300-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-400-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-400-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-500-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-500-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-600-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-600-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-700-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-700-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-scale-800-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-scale-800-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-display-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-display-color: var(--gl-text-color-heading);
+  --gl-heading-1-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-1-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-1-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-2-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-2-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-2-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-3-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-3-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-3-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-4-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-4-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-4-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-5-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-5-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-5-fixed-color: var(--gl-text-color-heading);
+  --gl-heading-6-fixed-font-weight: var(--gl-font-weight-heading);
+  --gl-heading-6-fixed-margin-bottom: var(--gl-heading-default-margin-bottom);
+  --gl-heading-6-fixed-color: var(--gl-text-color-heading);
   --gl-badge-muted-background-color-focus: var(--gl-badge-muted-background-color-hover); /** Used for the background of a muted badge in the focus state. */
   --gl-badge-neutral-background-color-focus: var(--gl-badge-neutral-background-color-hover); /** Used for the background of a neutral badge in the focus state. */
   --gl-badge-info-background-color-focus: var(--gl-badge-info-background-color-hover); /** Used for the background of an informational badge in the focus state. */
