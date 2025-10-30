@@ -1,5 +1,5 @@
 .gl-link {
-  text-underline-offset: 0.125em;
+  text-underline-offset: var(--gl-spacing-scale-1);
 
   &:hover {
     @apply gl-cursor-pointer;

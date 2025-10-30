@@ -30,16 +30,10 @@ $breadcrumb-max-width: $grid-size * 16;
     @apply gl-inline-block;
     @apply gl-rounded-default;
     @apply gl-text-subtle;
-    text-decoration-thickness: auto;
-    text-decoration-style: solid;
-    text-decoration-color: transparent;
-    transition:
-      box-shadow $gl-transition-duration-medium $gl-easing-out-cubic,
-      text-decoration-color $gl-transition-duration-medium $gl-easing-out-cubic;
-    @include gl-prefers-reduced-motion-transition;
+    text-underline-offset: var(--gl-spacing-scale-1);
 
     &:hover {
-      text-decoration-color: currentColor;
+      @apply gl-underline;
     }
 
     &:active,
