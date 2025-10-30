@@ -22,7 +22,7 @@
 
 ## Evaluation Methods Used
 
-A combination of automated and manual testing techniques was employed for the accessibility assessment. Manual assessment was performed using Chrome 131.0.6778.205 on Windows 11 and included exclusive use of the keyboard. Automated tools used included axe Auditor and the axe Dev Tools browser extension. Assistive technologies employed included NVDA v.2024.4
+A combination of automated and manual testing techniques was employed for the accessibility assessment. Manual assessment was performed using [Chrome](https://www.google.com/chrome/dr/download/) 131.0.6778.205 on Windows 11 and included exclusive use of the keyboard. Automated tools used included [axe Auditor](https://www.deque.com/axe/auditor-accessibility-testing/) and the [axe Dev Tools](https://www.deque.com/axe/devtools/) browser extension. Assistive technologies employed included [NVDA](https://www.nvaccess.org/download/) v.2024.4
 
 ## Applicable Standards/Guidelines
 
@@ -136,7 +136,10 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>11.8.2 (Authoring Tool)</li>
           <li>12.1.2 (Product Docs)</li>
           <li>12.2.4 (Support Docs)</li>
-          <li>Revised Section 508 501 (Web)(Software)</li>
+        </ul>
+        <p>Revised Section 508</p>
+        <ul>
+          <li>501 (Web)(Software)</li>
           <li>504.2 (Authoring Tool)</li>
           <li>602.3 (Support Docs)</li>
         </ul>
@@ -871,16 +874,18 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
       <td>
         <p>
           <a href="https://www.w3.org/TR/WCAG22/#redundant-entry" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.7 Redundant Entry</strong></a> (Level A 2.2 only)
-          EN 301 549 Criteria – Does not apply
-          Revised Section 508 – Does not apply</td>
         </p>
+        <p>EN 301 549 Criteria – Does not apply</p>
+        <p>Revised Section 508 – Does not apply</p>
+      </td>
       <td><p>Web: Supports</p></td>
       <td><p>Web: If information previously entered by, or provided to, the user is required to be entered again in the same process, that information is either automatically populated or available for the user to select unless the previously entered information is no longer valid or re-entering the information is essential or required to ensure security.</p></td>
     </tr>
     <tr>
       <td>
         <p><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses" rel="nofollow noopener noreferrer" target="_blank"><strong>4.1.1 Parsing</strong></a> (Level A)</p>
-        <p>Also applies to: WCAG 2.0 and 2.1 – Always answer "Supports"</p>
+        <p>Also applies to:</p>
+        <p>WCAG 2.0 and 2.1 – Always answer "Supports"</p>
         <p>WCAG 2.2 (obsolete and removed) - Does not apply</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1063,9 +1068,9 @@ Notes:
     </tr>
     <tr>
       <td>
-        <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.3 Contrast (Minimum)</strong></a> (Level AA)
-        Also applies to:
-        EN 301 549 Criteria
+        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.3 Contrast (Minimum)</strong></a> (Level AA)</p>
+        <p>Also applies to:</p>
+        <p>EN 301 549 Criteria</p>
         <ul>
           <li>9.1.4.3 (Web)</li>
           <li>10.1.4.3 (Non-web document)</li>
@@ -1391,7 +1396,7 @@ Notes:
           <li>602.3 (Support Docs)</li>
         </ul>
       </td>
-      <td>Web: Partially Supports</td>
+      <td><p>Web: Partially Supports</p></td>
       <td>
         <p>Web: On most pages, the language of each section of content that is different from the default language of the page is correctly identified and can be determined programmatically. The following exceptions exist:</p>
         <ul>
@@ -1463,9 +1468,9 @@ Notes:
         </ul>
         <p>Revised Section 508</p>
         <ul>
-          <li>501 (Web)(Software) – Does not apply to non-web software</li>
+          <li>501 (Web)(Software)</li>
           <li>504.2 (Authoring Tool)</li>
-          <li>602.3 (Support Docs) – Does not apply to non-web docs</li>
+          <li>602.3 (Support Docs)</li>
         </ul>
       </td>
       <td><p>Web: Supports</p></td>
@@ -1518,6 +1523,7 @@ Notes:
           <li>12.1.2 (Product Docs)</li>
           <li>12.2.4 (Support Docs)</li>
         </ul>
+        <p>Revised Section 508 – Does not apply</p>
       </td>
       <td><p>Web: Does Not Support</p></td>
       <td>
@@ -1535,8 +1541,6 @@ Notes:
 Notes: Not evaluated
 
 ## Revised Section 508 Report
-
-Notes:
 
 ### Chapter 3: [Functional Performance Criteria](https://www.access-board.gov/ict/#chapter-3-functional-performance-criteria) (FPC)
 
@@ -1568,6 +1572,7 @@ Notes:
           <li>3.1.1 Language of Page</li>
           <li>3.1.2 Language of Parts</li>
           <li>3.2.2 On Input</li>
+          <li>4.1.2 Name, Role, Value</li>
         </ul>
       </td>
     </tr>
@@ -1612,9 +1617,9 @@ Notes:
       </td>
     </tr>
     <tr>
-      <td>302.4 Without Hearing</td>
-      <td>Supports</td>
-      <td>All functionality in the website is usable without hearing.</td>
+      <td><p>302.4 Without Hearing</p></td>
+      <td><p>Supports</p></td>
+      <td><p>All functionality in the website is usable without hearing.</p></td>
     </tr>
     <tr>
       <td><p>302.5 With Limited Hearing</p></td>
@@ -1684,8 +1689,6 @@ Notes: The ICT covered by this report is not hardware. As such, the requirements
 
 ### Chapter 5: [Software](https://www.access-board.gov/ict/#chapter-5-software)
 
-Notes:
-
 <table class="gl-mb-6 table-compact">
   <thead>
     <tr>
@@ -1697,7 +1700,7 @@ Notes:
   <tbody>
     <tr>
       <td><p>501.1 Scope – Incorporation of WCAG 2.0 AA</p></td>
-      <td><p>See WCAG 2.2 section</p></td>
+      <td><p>See <a href="#wcag-22-report">WCAG 2.2</a> section</p></td>
       <td><p>See information in WCAG 2.2 section</p></td>
     </tr>
     <tr>
@@ -1711,9 +1714,9 @@ Notes:
       <td><p>This Web site is not platform software, so this requirement does not apply.</p></td>
     </tr>
     <tr>
-      <td>502.2.2 No Disruption of Accessibility Features</td>
-      <td>Not Applicable</td>
-      <td>This website does not have accessibility features.</td>
+      <td><p>502.2.2 No Disruption of Accessibility Features</p></td>
+      <td><p>Not Applicable</p></td>
+      <td><p>This website does not have accessibility features.</p></td>
     </tr>
     <tr>
       <td><strong><em><p>502.3 Accessibility Services</p></em></strong></td>
@@ -1724,7 +1727,7 @@ Notes:
       <td><p>502.3.1 Object Information</p></td>
       <td><p>Web: Does Not Support</p></td>
       <td>
-        <p>Web: he role, state(s), properties, boundary, name, and description of most, if not all, objects cannot be programmatically determined, so those attributes cannot be perceived and conveyed by assistive technology. Examples are noted in:</p>
+        <p>Web: The role, state(s), properties, boundary, name, and description of most, if not all, objects cannot be programmatically determined, so those attributes cannot be perceived and conveyed by assistive technology. Examples are noted in:</p>
         <ul>  
           <li>4.1.2. Name, Role, Value</li>
         </ul>
@@ -1840,9 +1843,7 @@ Notes:
     </tr>
     <tr>
       <td><p>502.4 Platform Accessibility Features</p></td>
-      <p>
-        <td>Web: Not Applicable</td>
-      </p>
+      <td>Web: Not Applicable</td>
       <td><p>Web: The website is not platform software, so this requirement does not apply.</p></td>
     </tr>
     <tr>
@@ -1884,7 +1885,7 @@ Notes:
     </tr>
     <tr>
       <td><p>504.2 Content Creation or Editing</p></td>
-      <td><p>See WCAG 2.2 section</p></td>
+      <td><p>See <a href="#wcag-22-report">WCAG 2.2</a> section</p></td>
       <td><p>See information in WCAG 2.2 section</p></td>
     </tr>
     <tr>
@@ -1911,8 +1912,6 @@ Notes:
 </table>
 
 ### Chapter 6: [Support Documentation and Services](https://www.access-board.gov/ict/#chapter-6-support-documentation-and-services)
-
-Notes:
 
 <table class="gl-mb-6 table-compact">
   <thead>
@@ -1968,11 +1967,7 @@ Notes:
 
 ## EN 301 549 Report
 
-Notes:
-
 ### Chapter 4: [Functional Performance Statements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=20) (FPS)
-
-Notes:
 
 <table class="gl-mb-6 table-compact">
   <thead>
@@ -2149,8 +2144,6 @@ Notes:
 </table>
 
 ### Chapter [5: Generic Requirements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=23)
-
-Notes:
 
 <table class="gl-mb-6 table-compact">
   <thead>

@@ -775,16 +775,8 @@
             "title": "GitLab accessibility conformance report",
             "items": [
               {
-                "title": "Section 508 Edition",
-                "path": "508"
-              },
-              {
-                "title": "WCAG Edition",
-                "path": "wcag"
-              },
-              {
-                "title": "GitLab 18 VPAT",
-                "path": "vpat-gitlab-18"
+                "title": "International Edition",
+                "path": "international"
               }
             ]
           },
