@@ -37,23 +37,23 @@ This report covers the degree of conformance for the following accessibility sta
   </thead>
   <tbody>
     <tr>
-      <td><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211">Web Content Accessibility Guidelines 2.0</a></td>
+      <td><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211" rel="nofollow noopener noreferrer" target="_blank">Web Content Accessibility Guidelines 2.0</a></td>
       <td style="text-align: center;">Level A (Yes)<br>Level AA (Yes)<br>Level AAA (No)</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3.org/TR/WCAG21">Web Content Accessibility Guidelines 2.1</a></td>
+      <td><a href="https://www.w3.org/TR/WCAG21" rel="nofollow noopener noreferrer" target="_blank">Web Content Accessibility Guidelines 2.1</a></td>
       <td style="text-align: center;">Level A (Yes)<br>Level AA (Yes)<br>Level AAA (No)</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a></td>
+      <td><a href="https://www.w3.org/TR/WCAG22/" rel="nofollow noopener noreferrer" target="_blank">Web Content Accessibility Guidelines 2.2</a></td>
       <td style="text-align: center;">Level A (Yes)<br>Level AA (Yes)<br>Level AAA (No)</td>
     </tr>
     <tr>
-      <td><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines">Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018</a></td>
+      <td><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines" rel="nofollow noopener noreferrer" target="_blank">Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018</a></td>
       <td style="text-align: center;">(Yes)</td>
     </tr>
     <tr>
-      <td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf">EN 301 549 Accessibility requirements for ICT products and services - V3.1.1 (2019-11)</a>&nbsp;<br><em>AND</em> <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 Accessibility requirements for ICT products and services - V3.2.1 (2021-03)</a></td>
+      <td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf" rel="nofollow noopener noreferrer" target="_blank">EN 301 549 Accessibility requirements for ICT products and services - V3.1.1 (2019-11)</a>&nbsp;<br><em>AND</em> <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" rel="nofollow noopener noreferrer" target="_blank">EN 301 549 Accessibility requirements for ICT products and services - V3.2.1 (2021-03)</a></td>
       <td style="text-align: center;">(Yes)</td>
     </tr>
   </tbody>
@@ -92,7 +92,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
   <tbody>
     <tr>
       <td>
-        <p><strong><a href="http://www.w3.org/TR/WCAG20/#text-equiv-all">1.1.1 Non-text Content</a></strong> (Level A)</p>
+        <p><strong><a href="http://www.w3.org/TR/WCAG20/#text-equiv-all" rel="nofollow noopener noreferrer" target="_blank">1.1.1 Non-text Content</a></strong> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -125,7 +125,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"><strong>1.2.1 Audio-only and Video-only (Prerecorded)</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt" rel="nofollow noopener noreferrer" target="_blank"><strong>1.2.1 Audio-only and Video-only (Prerecorded)</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -146,7 +146,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-captions"><strong>1.2.2 Captions (Prerecorded)</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-captions" rel="nofollow noopener noreferrer" target="_blank"><strong>1.2.2 Captions (Prerecorded)</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -170,7 +170,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc"><strong>1.2.3 Audio Description or Media Alternative (Prerecorded)</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc" rel="nofollow noopener noreferrer" target="_blank"><strong>1.2.3 Audio Description or Media Alternative (Prerecorded)</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -194,7 +194,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"><strong>1.3.1 Info and Relationships</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic" rel="nofollow noopener noreferrer" target="_blank"><strong>1.3.1 Info and Relationships</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -237,7 +237,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"><strong>1.3.2 Meaningful Sequence</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence" rel="nofollow noopener noreferrer" target="_blank"><strong>1.3.2 Meaningful Sequence</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -271,7 +271,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"><strong>1.3.3 Sensory Characteristics</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding" rel="nofollow noopener noreferrer" target="_blank"><strong>1.3.3 Sensory Characteristics</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -295,7 +295,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"><strong>1.4.1 Use of Color</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.1 Use of Color</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -327,7 +327,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio"><strong>1.4.2 Audio Control</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.2 Audio Control</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -351,7 +351,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"><strong>2.1.1 Keyboard</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable" rel="nofollow noopener noreferrer" target="_blank"><strong>2.1.1 Keyboard</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -382,7 +382,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping"><strong>2.1.2 No Keyboard Trap</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping" rel="nofollow noopener noreferrer" target="_blank"><strong>2.1.2 No Keyboard Trap</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -406,7 +406,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts"><strong>2.1.4 Character Key Shortcuts</strong></a> (Level A 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts" rel="nofollow noopener noreferrer" target="_blank"><strong>2.1.4 Character Key Shortcuts</strong></a> (Level A 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -430,7 +430,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors"><strong>2.2.1 Timing Adjustable</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors" rel="nofollow noopener noreferrer" target="_blank"><strong>2.2.1 Timing Adjustable</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -459,7 +459,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#time-limits-pause"><strong>2.2.2 Pause, Stop, Hide</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#time-limits-pause" rel="nofollow noopener noreferrer" target="_blank"><strong>2.2.2 Pause, Stop, Hide</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -488,7 +488,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#seizure-does-not-violate"><strong>2.3.1 Three Flashes or Below Threshold</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#seizure-does-not-violate" rel="nofollow noopener noreferrer" target="_blank"><strong>2.3.1 Three Flashes or Below Threshold</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -512,7 +512,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip"><strong>2.4.1 Bypass Blocks</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.1 Bypass Blocks</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -536,7 +536,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title"><strong>2.4.2 Page Titled</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.2 Page Titled</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -565,7 +565,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order"><strong>2.4.3 Focus Order</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.3 Focus Order</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -598,7 +598,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs"><strong>2.4.4 Link Purpose (In Context)</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.4 Link Purpose (In Context)</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -627,7 +627,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#pointer-gestures"><strong>2.5.1 Pointer Gestures</strong></a> (Level A 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#pointer-gestures" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.1 Pointer Gestures</strong></a> (Level A 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -646,7 +646,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation"><strong>2.5.2 Pointer Cancellation</strong></a> (Level A 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.2 Pointer Cancellation</strong></a> (Level A 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -673,7 +673,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#label-in-name"><strong>2.5.3 Label in Name</strong></a> (Level A 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#label-in-name" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.3 Label in Name</strong></a> (Level A 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -698,7 +698,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#motion-actuation"><strong>2.5.4 Motion Actuation</strong></a> (Level A 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#motion-actuation" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.4 Motion Actuation</strong></a> (Level A 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -717,7 +717,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id"><strong>3.1.1 Language of Page</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id" rel="nofollow noopener noreferrer" target="_blank"><strong>3.1.1 Language of Page</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -746,7 +746,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"><strong>3.2.1 On Focus</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus" rel="nofollow noopener noreferrer" target="_blank"><strong>3.2.1 On Focus</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -770,7 +770,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change"><strong>3.2.2 On Input</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change" rel="nofollow noopener noreferrer" target="_blank"><strong>3.2.2 On Input</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -799,7 +799,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG22/#consistent-help"><strong>3.2.6 Consistent Help</strong></a> (Level A 2.2 only)</p>
+        <p><a href="https://www.w3.org/TR/WCAG22/#consistent-help" rel="nofollow noopener noreferrer" target="_blank"><strong>3.2.6 Consistent Help</strong></a> (Level A 2.2 only)</p>
         <p>EN 301 549 Criteria – Does not apply</p>
         <p>Revised Section 508 – Does not apply</p>
       </td>
@@ -808,7 +808,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-identified"><strong>3.3.1 Error Identification</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-identified" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.1 Error Identification</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -837,7 +837,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues"><strong>3.3.2 Labels or Instructions</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.2 Labels or Instructions</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -870,7 +870,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     <tr>
       <td>
         <p>
-          <a href="https://www.w3.org/TR/WCAG22/#redundant-entry"><strong>3.3.7 Redundant Entry</strong></a> (Level A 2.2 only)
+          <a href="https://www.w3.org/TR/WCAG22/#redundant-entry" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.7 Redundant Entry</strong></a> (Level A 2.2 only)
           EN 301 549 Criteria – Does not apply
           Revised Section 508 – Does not apply</td>
         </p>
@@ -879,7 +879,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses"><strong>4.1.1 Parsing</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses" rel="nofollow noopener noreferrer" target="_blank"><strong>4.1.1 Parsing</strong></a> (Level A)</p>
         <p>Also applies to: WCAG 2.0 and 2.1 – Always answer "Supports"</p>
         <p>WCAG 2.2 (obsolete and removed) - Does not apply</p>
         <p>EN 301 549 Criteria</p>
@@ -900,11 +900,11 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
         </ul>
       </td>
       <td><p>Web: Supports</p></td>
-      <td><p>Web: For WCAG 2.0, 2.1, EN 301 549, and Revised 508 Standards, the September 2023 errata update indicates this criterion is always supported. See the <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial">WCAG 2.0 Editorial Errata</a> and the <a href="https://www.w3.org/WAI/WCAG21/errata/#editorial">WCAG 2.1 Editorial Errata</a>. This criterion was removed from WCAG 2.2.</p></td>
+      <td><p>Web: For WCAG 2.0, 2.1, EN 301 549, and Revised 508 Standards, the September 2023 errata update indicates this criterion is always supported. See the <a href="https://www.w3.org/WAI/WCAG20/errata/#editorial" rel="nofollow noopener noreferrer" target="_blank">WCAG 2.0 Editorial Errata</a> and the <a href="https://www.w3.org/WAI/WCAG21/errata/#editorial" rel="nofollow noopener noreferrer" target="_blank">WCAG 2.1 Editorial Errata</a>. This criterion was removed from WCAG 2.2.</p></td>
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-rsv"><strong>4.1.2 Name, Role, Value</strong></a> (Level A)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-rsv" rel="nofollow noopener noreferrer" target="_blank"><strong>4.1.2 Name, Role, Value</strong></a> (Level A)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -971,7 +971,7 @@ Notes:
   <tbody>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions"><strong>1.2.4 Captions (Live)</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions" rel="nofollow noopener noreferrer" target="_blank"><strong>1.2.4 Captions (Live)</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -995,7 +995,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"><strong>1.2.5 Audio Description (Prerecorded)</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only" rel="nofollow noopener noreferrer" target="_blank"><strong>1.2.5 Audio Description (Prerecorded)</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1019,7 +1019,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#orientation"><strong>1.3.4 Orientation</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#orientation" rel="nofollow noopener noreferrer" target="_blank"><strong>1.3.4 Orientation</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1038,7 +1038,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"><strong>1.3.5 Identify Input Purpose</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose" rel="nofollow noopener noreferrer" target="_blank"><strong>1.3.5 Identify Input Purpose</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1063,7 +1063,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"><strong>1.4.3 Contrast (Minimum)</strong></a> (Level AA)
+        <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.3 Contrast (Minimum)</strong></a> (Level AA)
         Also applies to:
         EN 301 549 Criteria
         <ul>
@@ -1095,7 +1095,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"><strong>1.4.4 Resize text</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.4 Resize text</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1124,7 +1124,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation"><strong>1.4.5 Images of Text</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.5 Images of Text</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1148,7 +1148,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#reflow"><strong>1.4.10 Reflow</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#reflow" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.10 Reflow</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1174,7 +1174,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#non-text-contrast"><strong>1.4.11 Non-text Contrast</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#non-text-contrast" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.11 Non-text Contrast</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1202,7 +1202,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#text-spacing"><strong>1.4.12 Text Spacing</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#text-spacing" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.12 Text Spacing</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1221,7 +1221,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"><strong>1.4.13 Content on Hover or Focus</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus" rel="nofollow noopener noreferrer" target="_blank"><strong>1.4.13 Content on Hover or Focus</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1246,7 +1246,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc"><strong>2.4.5 Multiple Ways</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.5 Multiple Ways</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1270,7 +1270,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"><strong>2.4.6 Headings and Labels</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.6 Headings and Labels</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1300,7 +1300,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible"><strong>2.4.7 Focus Visible</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.7 Focus Visible</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1329,7 +1329,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum"><strong>2.4.11 Focus Not Obscured (Minimum)</strong></a> (Level AA 2.2 only)</p>
+        <p><a href="https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum" rel="nofollow noopener noreferrer" target="_blank"><strong>2.4.11 Focus Not Obscured (Minimum)</strong></a> (Level AA 2.2 only)</p>
         <p>EN 301 549 Criteria – Does not apply</p>
         <p>Revised Section 508 – Does not apply</p>
       </td>
@@ -1343,7 +1343,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG22/#dragging-movements"><strong>2.5.7 Dragging Movements</strong></a> (Level AA 2.2 only)</p>
+        <p><a href="https://www.w3.org/TR/WCAG22/#dragging-movements" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.7 Dragging Movements</strong></a> (Level AA 2.2 only)</p>
         <p>EN 301 549 Criteria – Does not apply</p>
         <p>Revised Section 508 – Does not apply</p>
       </td>
@@ -1357,7 +1357,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG22/#target-size-minimum"><strong>2.5.8 Target Size (Minimum)</strong></a> (Level AA 2.2 only)</p>
+        <p><a href="https://www.w3.org/TR/WCAG22/#target-size-minimum" rel="nofollow noopener noreferrer" target="_blank"><strong>2.5.8 Target Size (Minimum)</strong></a> (Level AA 2.2 only)</p>
         <p>EN 301 549 Criteria – Does not apply</p>
         <p>Revised Section 508 – Does not apply</p>
       </td>
@@ -1372,7 +1372,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id"><strong>3.1.2 Language of Parts</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id" rel="nofollow noopener noreferrer" target="_blank"><strong>3.1.2 Language of Parts</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1401,7 +1401,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations"><strong>3.2.3 Consistent Navigation</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations" rel="nofollow noopener noreferrer" target="_blank"><strong>3.2.3 Consistent Navigation</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1425,7 +1425,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality"><strong>3.2.4 Consistent Identification</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality" rel="nofollow noopener noreferrer" target="_blank"><strong>3.2.4 Consistent Identification</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1449,7 +1449,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"><strong>3.3.3 Error Suggestion</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.3 Error Suggestion</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1473,7 +1473,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible"><strong>3.3.4 Error Prevention (Legal, Financial, Data)</strong></a> (Level AA)</p>
+        <p><a href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.4 Error Prevention (Legal, Financial, Data)</strong></a> (Level AA)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1497,7 +1497,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum"><strong>3.3.8 Accessible Authentication (Minimum)</strong></a> (Level AA 2.2 only)</p>
+        <p><a href="https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum" rel="nofollow noopener noreferrer" target="_blank"><strong>3.3.8 Accessible Authentication (Minimum)</strong></a> (Level AA 2.2 only)</p>
         <p>EN 301 549 Criteria – Does not apply</p>
         <p>Revised Section 508 – Does not apply</p>
       </td>
@@ -1506,7 +1506,7 @@ Notes:
     </tr>
     <tr>
       <td>
-        <p><a href="https://www.w3.org/TR/WCAG21/#status-messages"><strong>4.1.3 Status Messages</strong></a> (Level AA 2.1 and 2.2)</p>
+        <p><a href="https://www.w3.org/TR/WCAG21/#status-messages" rel="nofollow noopener noreferrer" target="_blank"><strong>4.1.3 Status Messages</strong></a> (Level AA 2.1 and 2.2)</p>
         <p>Also applies to:</p>
         <p>EN 301 549 Criteria</p>
         <ul>
@@ -1701,7 +1701,7 @@ Notes:
       <td><p>See information in WCAG 2.2 section</p></td>
     </tr>
     <tr>
-      <td><p><a href="https://www.access-board.gov/ict/#502-interoperability-assistive-technology"><strong><em>502 Interoperability with Assistive Technology</em></strong></a></p></td>
+      <td><p><a href="https://www.access-board.gov/ict/#502-interoperability-assistive-technology" rel="nofollow noopener noreferrer" target="_blank"><strong><em>502 Interoperability with Assistive Technology</em></strong></a></p></td>
       <td><p>Heading cell – no response required</p></td>
       <td><p>Heading cell – no response required</p></td>
     </tr>
@@ -1847,7 +1847,7 @@ Notes:
     </tr>
     <tr>
       <p>
-        <td><a href="https://www.access-board.gov/ict/#503-applications"><strong><em>503 Applications</em></strong></a></td>
+        <td><a href="https://www.access-board.gov/ict/#503-applications" rel="nofollow noopener noreferrer" target="_blank"><strong><em>503 Applications</em></strong></a></td>
       </p>
       <td><p>Heading cell – no response required</p></td>
       <td><p>Heading cell – no response required</p></td>
@@ -1878,7 +1878,7 @@ Notes:
       <td><p>Web: This website does not contain media with a video component that offers audio descriptions.</p></td>
     </tr>
     <tr>
-      <td><p><a href="https://www.access-board.gov/ict/#504-authoring-tools"><strong><em>504 Authoring Tools</em></strong></a></p></td>
+      <td><p><a href="https://www.access-board.gov/ict/#504-authoring-tools" rel="nofollow noopener noreferrer" target="_blank"><strong><em>504 Authoring Tools</em></strong></a></p></td>
       <td><p>Heading cell – no response required</p></td>
       <td><p>Heading cell – no response required</p></td>
     </tr>
@@ -1929,7 +1929,7 @@ Notes:
       <td><p>Heading cell – no response required</p></td>
     </tr>
     <tr>
-      <td><p><a href="https://www.access-board.gov/ict/#602-support-documentation"><strong><em>602 Support Documentation</em></strong></a></p></td>
+      <td><p><a href="https://www.access-board.gov/ict/#602-support-documentation" rel="nofollow noopener noreferrer" target="_blank"><strong><em>602 Support Documentation</em></strong></a></p></td>
       <td><p>Heading cell – no response required</p></td>
       <td><p>Heading cell – no response required</p></td>
     </tr>
@@ -1940,7 +1940,7 @@ Notes:
     </tr>
     <tr>
       <td><p>602.3 Electronic Support Documentation</p></td>
-      <td><p>See <a href="#wcag-2.2-report">WCAG 2.2</a> section</p></td>
+      <td><p>See <a href="#wcag-22-report">WCAG 2.2</a> section</p></td>
       <td><p>See information in WCAG 2.2 section</p></td>
     </tr>
     <tr>
@@ -1949,7 +1949,7 @@ Notes:
       <td></td>
     </tr>
     <tr>
-      <td><p><a href="https://www.access-board.gov/ict/#603-support-services"><strong><em>603 Support Services</em></strong></a></p></td>
+      <td><p><a href="https://www.access-board.gov/ict/#603-support-services" rel="nofollow noopener noreferrer" target="_blank"><strong><em>603 Support Services</em></strong></a></p></td>
       <td><p>Heading cell – no response required</p></td>
       <td><p>Heading cell – no response required</p></td>
     </tr>
