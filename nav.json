@@ -773,12 +773,7 @@
           },
           {
             "title": "GitLab accessibility conformance report",
-            "items": [
-              {
-                "title": "International Edition",
-                "path": "international"
-              }
-            ]
+            "path": "acr"
           },
           {
             "title": "Evaluating accessibility",

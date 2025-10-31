@@ -46,9 +46,6 @@
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3635
 /product-foundations/motion /product-foundations/animation-fundamentals 301
 
-# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3845
-/accessibility/vpat /accessibility/acr 301
-
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/4085
 /components/overview /components 301
 
@@ -81,3 +78,10 @@
 
 # https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/5108
 /tailwind /product-foundations/tailwind-utilities 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3845
+/accessibility/vpat /accessibility/acr 301
+
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/5289
+/accessibility/508 /accessibility/acr 301
+/accessibility/wcag /accessibility/acr 301
