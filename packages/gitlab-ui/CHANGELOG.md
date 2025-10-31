@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.2.0
+
+### Minor Changes
+
+- bca6ab3: Add clipboardButton to GlBreadcrumb for copying path
+
 ## 124.1.1
 
 ### Patch Changes
