@@ -2,10 +2,10 @@
 name: Embedded lists
 summary: Guidelines for creating and managing lists of items within a specific context, such as project settings or configuration pages.
 related:
-  - empty-states
-  - destructive-actions
-  - saving-and-feedback
-  - forms
+  - /patterns/empty-states
+  - /patterns/destructive-actions
+  - /patterns/saving-and-feedback
+  - /patterns/forms
   - button
   - table
   - pagination

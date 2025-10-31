@@ -7,7 +7,7 @@ extendedNotice:
  - text: '#g_analytics_platform_insights'
  url: 'https://gitlab.slack.com/channels/g_analytics_platform_insights'
 related:
- - dashboards
+ - /patterns/dashboards
 ---
 
 ## Structure
@@ -29,7 +29,7 @@ related:
 
 ### When to use
 
-- For a standardized container for individual results in a [dashboard](/patterns/dashboard), report, or other analytics-focused interface.
+- For a standardized container for individual results in a [dashboard](/patterns/dashboards), report, or other analytics-focused interface.
 - To wrap a single visualization of query results, such as a chart, markdown, single stat, or table.
 - Easy integration with `GlDashboardLayout`.
 
