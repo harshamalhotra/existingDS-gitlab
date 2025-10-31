@@ -43,6 +43,7 @@ related:
 - When space is limited, use an [ellipsis button](/components/button) to collapse links from left to right.
 - Collapsed items are revealed with a flat hierarchy in a [simple disclosure dropdown](/components/dropdown-disclosure) when selecting the ellipsis button.
 - All but the last breadcrumb item is truncated to 128px if there isn't enough horizontal space to fit them on one line.
+- The breadcrumb can include a button to copy the path.
 
 ### Content
 

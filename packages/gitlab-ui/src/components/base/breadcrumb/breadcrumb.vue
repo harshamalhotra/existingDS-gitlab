@@ -6,6 +6,7 @@ import GlAvatar from '../avatar/avatar.vue';
 import GlDisclosureDropdown from '../new_dropdowns/disclosure/disclosure_dropdown.vue';
 import { GlTooltipDirective } from '../../../directives/tooltip/tooltip';
 import { breadCrumbSizeOptions } from '../../../utils/constants';
+import ClipboardButton from '../../shared_components/clipboard_button/clipboard_button.vue';
 import GlBreadcrumbItem from './breadcrumb_item.vue';
 
 export default {
@@ -14,6 +15,7 @@ export default {
     GlBreadcrumbItem,
     GlAvatar,
     GlDisclosureDropdown,
+    ClipboardButton,
   },
   directives: {
     GlTooltip: GlTooltipDirective,
@@ -64,6 +66,30 @@ export default {
       default: breadCrumbSizeOptions.sm,
       validator: (value) => Object.keys(breadCrumbSizeOptions).includes(value),
     },
+    /**
+     * Copy to clipboard button for breadcrumbs path.
+     */
+    showClipboardButton: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    /**
+     * Custom path for copy to clipboard button. By default, it resolves to all items text values with `/` separator.
+     */
+    pathToCopy: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    /**
+     * Custom tooltip text for clipboard button.
+     */
+    clipboardTooltipText: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {
@@ -93,6 +119,12 @@ export default {
     },
     avatarSize() {
       return this.size === 'sm' ? 16 : 24;
+    },
+    clipboardButtonText() {
+      if (this.pathToCopy) return this.pathToCopy;
+
+      const items = Array.from(this.items, (item) => item.text);
+      return items.join('/');
     },
   },
   watch: {
@@ -230,16 +262,28 @@ export default {
         :size="size"
         :aria-current="getAriaCurrentAttr(index)"
         :class="[hideItemClass(item), itemClass]"
-        ><gl-avatar
-          v-if="item.avatarPath"
-          :src="item.avatarPath"
-          :size="avatarSize"
-          aria-hidden="true"
-          class="gl-breadcrumb-avatar-tile gl-border gl-mr-2 !gl-rounded-default"
-          shape="rect"
-          data-testid="avatar"
-        /><span class="gl-align-middle">{{ item.text }}</span>
+        ><template #default>
+          <gl-avatar
+            v-if="item.avatarPath"
+            :src="item.avatarPath"
+            :size="avatarSize"
+            aria-hidden="true"
+            class="gl-breadcrumb-avatar-tile gl-border gl-mr-2 !gl-rounded-default"
+            shape="rect"
+            data-testid="avatar"
+          /><span class="gl-align-middle">{{ item.text }}</span>
+        </template>
       </gl-breadcrumb-item>
+
+      <li v-if="showClipboardButton" class="gl-breadcrumb-clipboard-button">
+        <clipboard-button
+          data-testid="copy-to-clipboard-button"
+          class="gl-ml-2"
+          :text="clipboardButtonText"
+          v-bind="clipboardTooltipText ? { title: clipboardTooltipText } : {}"
+          :size="dropdownSize"
+        />
+      </li>
     </ol>
   </nav>
 </template>
