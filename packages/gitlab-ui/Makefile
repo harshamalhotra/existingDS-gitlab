@@ -25,11 +25,10 @@ $(translations_file): $(collect_translations_script) $(js_vue_files)
 # Design tokens
 tokens_src_dir := src/tokens
 tokens_built_dir := src/tokens/build
-tokens_dist_dir := dist/tokens
 tokens_src_files := $(shell find $(tokens_src_dir) -name '*.json' -not -path '$(tokens_built_dir)/*')
 # There are other targets, but since all are rewritten as part of every build,
 # we only need to check some.
-tokens_built_files := $(tokens_built_dir)/css/tokens.css $(tokens_dist_dir)/css/tokens.css
+tokens_built_files := $(tokens_built_dir)/css/tokens.css
 tokens_build_script := ./bin/build_tokens.mjs
 
 .PHONY: tokens
