@@ -1,6 +1,9 @@
 /* eslint-disable import/no-default-export */
 export default {
   'ClearIconButton.title': 'Clear',
+  'ClipboardButton.copied': 'Copied',
+  'ClipboardButton.error': 'Copy failed',
+  'ClipboardButton.title': 'Copy to clipboard',
   'CloseButton.title': 'Close',
   'GlAlert.closeButtonTitle': 'Dismiss',
   'GlBanner.closeButtonTitle': 'Dismiss',

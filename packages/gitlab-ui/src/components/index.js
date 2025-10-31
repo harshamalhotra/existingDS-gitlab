@@ -102,6 +102,9 @@ export { default as GlDashboardPanel } from './dashboards/dashboard_panel/dashbo
 // Experimental
 export { default as GlExperimentBadge } from './experimental/experiment_badge/experiment_badge.vue';
 
+// Shared components
+export { default as GlClipboardButton } from './shared_components/clipboard_button/clipboard_button.vue';
+
 // Utilities
 export { default as GlAnimatedNumber } from './utilities/animated_number/animated_number.vue';
 export { default as GlFriendlyWrap } from './utilities/friendly_wrap/friendly_wrap.vue';

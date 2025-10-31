@@ -1,6 +1,7 @@
 import avatarPath1 from '../../../../static/img/avatar.png';
 import avatarPath2 from '../../../../static/img/avatar_pajamas.png';
 import { breadCrumbSizeOptions } from '../../../utils/constants';
+import GlButton from '../button/button.vue';
 import GlBreadcrumb from './breadcrumb.vue';
 
 const template = `
@@ -10,6 +11,18 @@ const template = `
         :auto-resize="autoResize"
         :size="size"
     />
+  `;
+
+const templateWithClipboardButton = `
+    <gl-breadcrumb
+        :items="items"
+        :aria-label="ariaLabel"
+        :auto-resize="autoResize"
+        :size="size"
+        :show-clipboard-button="true"
+        clipboardTooltipText="Copy path"
+    >
+    </gl-breadcrumb>
   `;
 
 const collapsedTemplate = `
@@ -56,6 +69,15 @@ const Template = (args, { argTypes }) => ({
   },
   props: Object.keys(argTypes),
   template,
+});
+
+const TemplateWithClipboardButton = (args, { argTypes }) => ({
+  components: {
+    GlBreadcrumb,
+    GlButton,
+  },
+  props: Object.keys(argTypes),
+  template: templateWithClipboardButton,
 });
 export const Default = Template.bind({});
 Default.args = generateProps();
@@ -109,8 +131,14 @@ const extraItems = [
 export const CollapsedItems = CollapsedTemplate.bind({});
 CollapsedItems.args = generateProps({ items: [...defaultItems, ...extraItems] });
 
+export const WithClipboardButton = TemplateWithClipboardButton.bind({});
+WithClipboardButton.args = generateProps({ items: defaultItems, size: 'sm' });
+
 export const MediumSize = Template.bind({});
 MediumSize.args = generateProps({ items: defaultItems, size: 'md' });
 
 export const CollapsedMediumSize = CollapsedTemplate.bind({});
 CollapsedMediumSize.args = generateProps({ items: [...defaultItems, ...extraItems], size: 'md' });
+
+export const WithClipboardButtonMediumSize = TemplateWithClipboardButton.bind({});
+WithClipboardButtonMediumSize.args = generateProps({ items: defaultItems, size: 'md' });

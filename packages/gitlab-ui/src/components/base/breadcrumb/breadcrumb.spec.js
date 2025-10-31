@@ -1,6 +1,7 @@
 import { mount } from '@vue/test-utils';
 import avatarPath1 from '../../../../static/img/avatar.png';
 import avatarPath3 from '../../../../static/img/avatar_1.png';
+import ClipboardButton from '../../shared_components/clipboard_button/clipboard_button.vue';
 import GlDisclosureDropdown from '../new_dropdowns/disclosure/disclosure_dropdown.vue';
 import GlDisclosureDropdownItem from '../new_dropdowns/disclosure/disclosure_dropdown_item.vue';
 import GlBreadcrumb from './breadcrumb.vue';
@@ -30,6 +31,8 @@ describe('Breadcrumb component', () => {
   const findBreadcrumbItems = () => wrapper.findAllComponents(GlBreadcrumbItem);
   const findOverflowDropdown = () => wrapper.findComponent(GlDisclosureDropdown);
   const findOverflowingItems = () => wrapper.findAllComponents(GlDisclosureDropdownItem);
+  const findClipboardButtonListItem = () => wrapper.find('.gl-breadcrumb-clipboard-button');
+  const findClipboardButton = () => wrapper.findComponent(ClipboardButton);
 
   const findVisibleBreadcrumbItems = () =>
     findBreadcrumbItems().wrappers.filter((item) => item.isVisible());
@@ -332,6 +335,60 @@ describe('Breadcrumb component', () => {
       await wrapper.vm.$nextTick();
 
       expect(wrapper.vm.dropdownWidth).toBe(666);
+    });
+  });
+
+  describe('clipboardButton', () => {
+    it('does not render clipboard button by default', () => {
+      wrapper = mount(GlBreadcrumb, {
+        propsData: { items },
+        stubs: {
+          GlBreadcrumbItem,
+          GlDisclosureDropdown,
+        },
+      });
+
+      expect(findClipboardButtonListItem().exists()).toBe(false);
+      expect(findClipboardButton().exists()).toBe(false);
+    });
+
+    it('renders copy to clipboard button in a separate list item', () => {
+      wrapper = mount(GlBreadcrumb, {
+        propsData: { items, showClipboardButton: true },
+        stubs: {
+          GlBreadcrumbItem,
+          GlDisclosureDropdown,
+        },
+      });
+
+      expect(findClipboardButtonListItem().exists()).toBe(true);
+      expect(findClipboardButton().exists()).toBe(true);
+      expect(findClipboardButton().props('text')).toBe(
+        'first_breadcrumb/second_breadcrumb/third_breadcrumb',
+      );
+      expect(findClipboardButton().props('title')).toBe('Copy to clipboard');
+    });
+
+    it('renders copy to clipboard button with custom path and tooltip', () => {
+      wrapper = mount(GlBreadcrumb, {
+        propsData: {
+          items,
+          showClipboardButton: true,
+          pathToCopy:
+            'https://gitlab.com/myProject/first_breadcrumb/second_breadcrumb/third_breadcrumb',
+          clipboardTooltipText: 'Copy my breadcrumb text',
+        },
+        stubs: {
+          GlBreadcrumbItem,
+          GlDisclosureDropdown,
+        },
+      });
+
+      expect(findClipboardButton().exists()).toBe(true);
+      expect(findClipboardButton().props('text')).toBe(
+        'https://gitlab.com/myProject/first_breadcrumb/second_breadcrumb/third_breadcrumb',
+      );
+      expect(findClipboardButton().props('title')).toBe('Copy my breadcrumb text');
     });
   });
 });

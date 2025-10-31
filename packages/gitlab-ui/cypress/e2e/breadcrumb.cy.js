@@ -28,4 +28,49 @@ describe('GlBreadcrumb', () => {
       cy.contains('First item').should('be.visible');
     });
   });
+
+  describe('with clipboard button', () => {
+    describe('on a wide screen', () => {
+      beforeEach(() => {
+        cy.viewport(2000, 600);
+        cy.visitStory('base/breadcrumb', { story: 'with-clipboard-button' });
+      });
+
+      it('displays the clipboard button in the last breadcrumb item', () => {
+        cy.get('.gl-breadcrumbs')
+          .last()
+          .within(() => {
+            cy.get('[data-testid="copy-to-clipboard-button"]').should('be.visible');
+            cy.get('[data-testid="copy-to-clipboard-button"]').should(
+              'have.attr',
+              'aria-label',
+              'Copy path',
+            );
+          });
+      });
+    });
+
+    describe('on a small screen', () => {
+      beforeEach(() => {
+        cy.viewport(300, 600);
+        cy.visitStory('base/breadcrumb', { story: 'with-clipboard-button' });
+      });
+
+      it('maintains clipboard button in last item even when other items are collapsed', () => {
+        cy.get('.gl-breadcrumbs')
+          .last()
+          .within(() => {
+            cy.get('[data-testid="copy-to-clipboard-button"]').should('be.visible');
+          });
+      });
+
+      it('clipboard button remains functional when breadcrumbs are collapsed', () => {
+        cy.get('.gl-breadcrumbs')
+          .last()
+          .within(() => {
+            cy.get('[data-testid="copy-to-clipboard-button"]').should('be.visible').click();
+          });
+      });
+    });
+  });
 });
