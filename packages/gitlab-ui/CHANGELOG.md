@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.1.1
+
+### Patch Changes
+
+- 978ab70: Update link underlines for breadcrumb and link components
+
 ## 124.1.0
 
 ### Minor Changes
