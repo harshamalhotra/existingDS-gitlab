@@ -111,7 +111,6 @@ ui:build_package:
     reports:
       dotenv: packages/gitlab-ui/build_package.env
     paths:
-      - packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
       - packages/gitlab-ui/dist
       - packages/gitlab-ui/$TAR_ARCHIVE_NAME
 
