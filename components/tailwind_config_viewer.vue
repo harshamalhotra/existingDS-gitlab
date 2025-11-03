@@ -178,9 +178,7 @@ export default {
       </note>
       <grid columns="1">
         <li v-for="className in headingClasses" :key="className">
-          <div class="gl-leading-1" :class="className">
-            The quick brown fox jumps over the lazy dog
-          </div>
+          <div :class="className">The quick brown fox jumps over the lazy dog</div>
           <div class="gl-mt-3 gl-font-monospace gl-text-sm gl-text-strong">
             {{ className }}
           </div>
