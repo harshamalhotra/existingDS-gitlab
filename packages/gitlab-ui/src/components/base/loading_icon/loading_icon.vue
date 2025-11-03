@@ -15,13 +15,16 @@ export default {
   name: 'GlLoadingIcon',
   props: {
     /**
-     * Aria-label.
+     * Accessible label for screen readers.
      */
     label: {
       type: String,
       required: false,
       default: 'Loading',
     },
+    /**
+     * Size of the loading icon. Options: 'sm' (16px), 'md' (24px), 'lg' (32px), 'xl' (64px).
+     */
     size: {
       type: String,
       required: false,
@@ -30,6 +33,9 @@ export default {
         return sizes.indexOf(value) !== -1;
       },
     },
+    /**
+     * Color variant of the loading icon. Options: 'dark', 'light'.
+     */
     color: {
       type: String,
       required: false,
@@ -38,6 +44,9 @@ export default {
         return Object.keys(colors).includes(value);
       },
     },
+    /**
+     * Visual variant of the loading icon. Options: 'spinner', 'dots'.
+     */
     variant: {
       type: String,
       required: false,
@@ -47,7 +56,7 @@ export default {
       },
     },
     /**
-     * Wrap in a span or div.
+     * When true, wraps the loading icon in a span instead of a div for inline display.
      */
     inline: {
       type: Boolean,
