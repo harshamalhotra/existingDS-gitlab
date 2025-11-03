@@ -20,22 +20,37 @@ export default {
   },
   inheritAttrs: false,
   props: {
+    /**
+     * Additional CSS class(es) to apply to the table element.
+     */
     tableClass,
+    /**
+     * Array of field definitions for table columns. Each field can be a string (column key) or an object with properties like 'key', 'label', 'sortable', 'thClass', etc.
+     */
     fields: {
       type: Array,
       required: false,
       default: null,
     },
+    /**
+     * When true, makes the table header sticky so it remains visible when scrolling.
+     */
     stickyHeader: {
       type: Boolean,
       default: false,
       required: false,
     },
+    /**
+     * The field key to sort by.
+     */
     sortBy: {
       type: String,
       required: false,
       default: undefined,
     },
+    /**
+     * When true, sorts in descending order. When false, sorts in ascending order.
+     */
     sortDesc: {
       type: Boolean,
       required: false,
