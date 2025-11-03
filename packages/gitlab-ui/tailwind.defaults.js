@@ -24,7 +24,6 @@ const buildCQs = Boolean(process.env.USE_TAILWIND_CONTAINER_QUERIES);
 
 function addCustomDefinitions({ addComponents, addUtilities }) {
   addComponents({
-    ...typographyComponents,
     '.action-neutral-colors': {
       color: 'var(--gl-action-neutral-foreground-color-default)',
       'background-color': 'var(--gl-action-neutral-background-color-default)',
@@ -129,6 +128,7 @@ function addCustomDefinitions({ addComponents, addUtilities }) {
       },
       '-moz-appearance': 'textfield',
     },
+    ...typographyComponents,
   });
 
   addUtilities({
