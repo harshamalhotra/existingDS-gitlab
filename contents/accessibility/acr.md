@@ -4,7 +4,7 @@ name: GitLab Accessibility Conformance Report International Edition
 
 **Based on VPAT® Version 2.5, International Edition** [(template)](https://www.itic.org/policy/accessibility/vpat)<br>April 2025
 
-* **Name of Product/Version:** GitLab 18
+* **Name of Product/Version:** Self Managed GitLab Ultimate with GitLab Duo Enterprise version 18
 * **Report Date:** September 10, 2025
 * **Product Description:** GitLab is The DevSecOps Platform that empowers organizations to maximize the overall return on software development by delivering software faster and efficiently, while strengthening security and compliance. With GitLab, every team in your organization can collaboratively plan, build, secure, and deploy software to drive business outcomes faster with complete transparency, consistency, and traceability across [the DevSecOps lifecycle](https://about.gitlab.com/stages-devops-lifecycle/).
 * **Contact information:** [accessibility@gitlab.com](mailto:accessibility@gitlab.com)
