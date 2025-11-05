@@ -64,6 +64,14 @@ export default {
         return {};
       },
     },
+    /**
+     * Whether to validate fields on blur. When set to false, validation will only occur on form submission.
+     */
+    validateOnBlur: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
   data() {
     return {
@@ -197,7 +205,9 @@ export default {
       });
     },
     onFieldBlur(fieldName) {
-      this.setFieldDirty(fieldName);
+      if (this.validateOnBlur) {
+        this.setFieldDirty(fieldName);
+      }
     },
     onFieldInput(fieldName, inputValue) {
       const val = this.getMappedValue(fieldName, inputValue);
