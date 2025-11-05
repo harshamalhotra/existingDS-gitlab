@@ -120,10 +120,12 @@ States change visually and/or programmatically depending on user interaction or 
 
 - Use concise language that conveys what happens when the button is activated.
 - Use [sentence case](/content/punctuation).
-- Append an ellipsis (…) to the button label text when the action will require additional input from the user before final completion. Does not apply to [danger actions](#variants).
 - Try not to use text-only and icon-only buttons in the same context.
 - For destructive actions, use clear text and always indicate what is being destroyed. For example, use **Delete page** instead of just **Delete**.
 - For buttons that copy content to the clipboard, don't use **to clipboard**. For example, use **Copy branch name** instead of **Copy branch name to clipboard**.
+- Append an ellipsis (`…`) when any of these conditions are met:
+  - The action requires additional user input before completion. For example, "Export…" requires format/location selection.
+  - It's not obvious from context that additional steps will follow. For example, "Commit changes…" in the single file editor when the surrounding context doesn't clearly indicate a dialog will appear.
 
 #### Icons
 

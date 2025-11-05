@@ -189,7 +189,7 @@ Use punctuation to add clarity or be grammatically correct.
       <td>Ellipsis</td>
       <td><strong>…</strong></td>
       <td><code>&amp;hellip;</code></td>
-      <td>Use to indicate an action in progress (“Downloading…”), incomplete or truncated text, or the action will require additional input from the user, for example, in a <a href="/components/button/#labels">button label</a>. No space before the ellipsis.</td>
+      <td>Use to indicate an action in progress (“Downloading…”), incomplete or truncated text, or where an action continues on a subsequent step (for example, in a <a href="/components/button/#labels">button label</a>). No space before the ellipsis.</td>
     </tr>
     <tr>
       <td>Chevrons</td>
