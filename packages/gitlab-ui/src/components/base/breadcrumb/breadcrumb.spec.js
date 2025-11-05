@@ -390,5 +390,40 @@ describe('Breadcrumb component', () => {
       );
       expect(findClipboardButton().props('title')).toBe('Copy my breadcrumb text');
     });
+
+    describe('width calculation in auto-resize', () => {
+      it('initializes clipboard button width to 0 when not shown', () => {
+        createComponent({ items, showClipboardButton: false });
+
+        expect(wrapper.vm.clipboardButtonWidth).toBe(0);
+      });
+
+      it('measures clipboard button width on mount when shown', () => {
+        createComponent({ items, showClipboardButton: true });
+
+        const clipboardButtonElement = wrapper.vm.$refs.clipboardButton.$el;
+        mockElementWidth(clipboardButtonElement, 30);
+
+        wrapper.vm.clipboardButtonWidth = wrapper.vm.showClipboardButton
+          ? wrapper.vm.$refs.clipboardButton.$el.clientWidth
+          : 0;
+
+        expect(wrapper.vm.clipboardButtonWidth).toBe(30);
+      });
+
+      it('includes clipboard button width in total breadcrumbs width calculation', async () => {
+        createComponent({ items, showClipboardButton: true });
+
+        const clipboardButtonElement = wrapper.vm.$refs.clipboardButton.$el;
+        mockElementWidth(clipboardButtonElement, 30);
+        wrapper.vm.clipboardButtonWidth = 30;
+
+        mockItemsWidths();
+        await wrapper.vm.measureAndMakeBreadcrumbsFit();
+
+        // Total should be: (3 items * 100px) + 30px clipboard button width = 330px
+        expect(wrapper.vm.totalBreadcrumbsWidth).toBe(330);
+      });
+    });
   });
 });

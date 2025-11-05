@@ -98,6 +98,7 @@ export default {
       totalBreadcrumbsWidth: 0, // the total width of all breadcrumb items combined
       widthPerItem: [], // array with the individual widths of each breadcrumb item
       dropdownWidth: 0, // the width of the breadcrumb item containing the dropdown toggle
+      clipboardButtonWidth: 0, // the width of the clipboard button at the end of breadcrumbs
       resizeDone: false, // to apply some CSS only during/after resizing
     };
   },
@@ -146,6 +147,9 @@ export default {
     } else {
       this.resizeDone = true;
     }
+    this.clipboardButtonWidth = this.showClipboardButton
+      ? this.$refs.clipboardButton.$el.clientWidth
+      : 0;
   },
   beforeDestroy() {
     this.disableAutoResize();
@@ -173,7 +177,9 @@ export default {
         this.widthPerItem[index] = width;
       });
 
-      // The dropdown gets rendered during `!resizeDone` so we can mesuare its real width here.
+      this.totalBreadcrumbsWidth += this.clipboardButtonWidth;
+
+      // The dropdown gets rendered during `!resizeDone` so we can measure its real width here.
       this.dropdownWidth = this.$refs.dropdown.clientWidth;
 
       this.makeBreadcrumbsFit();
@@ -277,6 +283,7 @@ export default {
 
       <li v-if="showClipboardButton" class="gl-breadcrumb-clipboard-button">
         <clipboard-button
+          ref="clipboardButton"
           data-testid="copy-to-clipboard-button"
           class="gl-ml-2"
           :text="clipboardButtonText"
