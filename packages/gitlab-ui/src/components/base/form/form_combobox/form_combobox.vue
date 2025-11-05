@@ -248,7 +248,7 @@ export default {
       ref="suggestionsMenu"
       data-testid="combobox-dropdown"
       role="listbox"
-      class="dropdown-menu gl-form-combobox-inner gl-mb-0 gl-flex gl-w-full gl-list-none gl-flex-col gl-border-dropdown gl-bg-dropdown gl-pl-0"
+      class="gl-form-combobox-inner -gl-mt-3 gl-mb-0 gl-flex gl-w-full gl-list-none gl-flex-col gl-bg-dropdown gl-pl-0 gl-drop-shadow-md"
       @keydown.down="onArrowDown"
       @keydown.up="onArrowUp"
       @keydown.left="onArrowLeft"
