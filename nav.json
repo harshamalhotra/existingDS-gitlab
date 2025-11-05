@@ -773,16 +773,7 @@
           },
           {
             "title": "GitLab accessibility conformance report",
-            "items": [
-              {
-                "title": "Section 508 Edition",
-                "path": "508"
-              },
-              {
-                "title": "WCAG Edition",
-                "path": "wcag"
-              }
-            ]
+            "path": "acr"
           },
           {
             "title": "Evaluating accessibility",
