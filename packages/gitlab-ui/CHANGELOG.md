@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.3.0
+
+### Minor Changes
+
+- 52e9a8e: Update GlFormCombobox to use latest dropdown and option styles
+
 ## 124.2.0
 
 ### Minor Changes
