@@ -638,6 +638,10 @@
                 "path": "duo-calls-to-action"
               },
               {
+                "title": "GitLab Duo Chat Interface",
+                "path": "duo-chat"
+              },
+              {
                 "title": "Feedback",
                 "path": "duo-feedback"
               },
