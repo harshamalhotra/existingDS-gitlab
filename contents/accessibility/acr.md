@@ -517,6 +517,9 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>A complex image has a short text alternative that is not meaningful, so people who are blind and/or use a screen reader may not be able to understand the information available in the image. This occurs on the following page(s): Background jobs - Dashboard; Repository Analytics.</li>
           <li>A complex image does not have a text alternative, so people who are blind and/or use a screen reader will not be able to understand the information available in the image. This occurs on the following page(s): Security dashboard; CI/CD Analytics.</li>
           <li>Text alternative for the informative image is missing. This occurs on the following page(s):  Background jobs - Dashboard; Instance subscription.</li>
+          <li>Known instances are tracked in the <a
+            href="https://gitlab.com/groups/gitlab-org/-/epics/564"
+            rel="nofollow noopener noreferrer" target="_blank">&564</a> epic and will continue to be addressed.</li>
         </ul>
       </td>
     </tr>
@@ -632,6 +635,8 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>Content that is visually presented as a list is not properly marked up as a list, so the structure of the list is not correctly conveyed to assistive technologies and people who are blind and/or use a screen reader. This occurs on the following page(s): Issue Boards; Labels - All tab; Merge requests details - Overview tab.</li>
           <li>Group of radio buttons not associated with group label. This occurs on the following page(s):  Preferences; Issue Boards; Issue details; Merger Request; Create or import your first project; Schedule new pipeline; Welcome page; Create a blank Project.</li>
           <li>Group of checkboxes not associated with group label. This occurs on the following page(s):  Add new Access token; Merger Request; Create a blank Project.</li>
+          <li>Known instances are tracked in the <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/567" rel="nofollow noopener noreferrer" target="_blank">&567</a> epic and will continue to be addressed.</li>
         </ul>
       </td>
     </tr>
@@ -722,6 +727,8 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>Color is the only visual method used to identify a link, and a link text's contrast ratio with the color of the surrounding text is less than 3:1, so people who are colorblind or have low vision may not be able to identify the link. This occurs on the following page(s): Pipe Line Editor; Issue details; Environments; Kubernetes Cluster; Project Overview; Merge requests details - Overview tab; General; Create or import your first project; Projects Details; Monitor Settings; Activity - All Tab; Policies; Configure feature flags dialog; Account; Verify Screen; Help Flyout; Terraform init command dialog.</li>
           <li>Color is used as the only method to convey the state (such as "checked," "pressed," or "selected")  of a control, so that information will not be available to people who are colorblind and people who are blind and/or use a screen reader. This occurs on the following page(s): Users; Issue Boards; Vulnerability report; Branches; Search and Filter; Create or import your first project; Create a Cluster; Project audit events; Members.</li>
           <li>Color is the only visual method used to identify a link, and a link text's contrast ratio with the color of the surrounding text is less than 3:1, so people who are colorblind or have low vision may not be able to identify the link. This occurs on the following page(s): Login; GitLab Duo Chat; Pipe Line Editor; Jobs - All; Vulnerability report; Compare revisions; Run Pipe Line; Releases; Repository; Security configuration; Background - Corn; Edit Profile; Security dashboard; Learn Git Lab; Add new Access token; Issue details; Environments; GitLab is better with colleagues!' dialog; Integrations; DevOps Reports; New issue; Project Overview; Background jobs - Dashboard; Merge requests details - Overview tab; Email address; Merger Request; General; Container Registry; Admin Dashboard; Instance subscription; Monitor Settings; Web Hooks; Start your Free Ultimate Trial; Access Token; New Tag; Keyboard Shortcuts dialog; Billing; Usage Quotas; Create a Cluster; New Label; Dependencies; Create a blank Project; New project; Feature Flags; Security Capabilities; Help Flyout.</li>
+          <li>Known instances are tracked in the <a
+          href="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/2694" rel="nofollow noopener noreferrer" target="_blank">#2694</a> issue.</li>
         </ul>
       </td>
     </tr>
@@ -777,6 +784,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>An action cannot be performed when using a screen reader, so people who are blind and others who use a screen reader cannot perform this action. This occurs on the following page(s): Date Picker.</li>
           <li>A function cannot be performed using only the keyboard, so people who use the keyboard alone to navigate and operate content cannot use this function. This occurs on the following page(s): Users; Profile; Issue Boards; Pipe Line Editor; Issues list; Repository Graph; Rich text editor; Merge requests details - Changes tab; Security dashboard; Issue details; Labels - All tab; Background jobs - Dashboard; Merge requests details - Overview tab; CI/CD Analytics; Value Stream Analytics; Date Picker; Repository Analytics; Container Registry; Groups; Merge requests list - All tab; Sidebar; Dependencies.</li>
           <li>The content in a scrollable region cannot be accessed using a keyboard, so people who use a keyboard to navigate will not be able to view this content. This occurs on the following page(s): Repository Graph.</li>
+          <li>Know instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/565" rel="nofollow noopener noreferrer" target="_blank">&565</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -802,7 +810,12 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
         </ul>
       </td>
       <td><p>Web: Supports</p></td>
-      <td><p>Web: Keyboard focus is never locked or trapped in a particular area, and the user is able to navigate to and from all navigable elements using only a keyboard.</p></td>
+      <td>
+        <p>Web: Keyboard focus is never locked or trapped in a particular area, and the user is able to navigate to and from all navigable elements using only a keyboard.</p>
+        <ul>
+          <li>Known instances where a user cannot navigate away from focused file editors are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/627" rel="nofollow noopener noreferrer" target="_blank">&627</a> epic.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>
@@ -1022,6 +1035,8 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
         <p>Web: The purpose of most links can be determined from the link text alone or from the link text and its programmatic context.  The following exceptions exist:</p>
         <ul>
           <li>The purpose of the link is not made clear by its text or the context provided by the content that immediately surrounds it, so people who are blind and/or use a screen reader will not know where the link goes. This occurs on the following page(s): Dashboard; Preferences; Job Details; Vulnerability report; Environments; New issue; Merge requests details - Overview tab; CI/CD Analytics; Admin Dashboard; Explore Topics; Projects Details.</li>
+          <li>Known instances of unclear product links are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/620" rel="nofollow noopener noreferrer" target="_blank"
+        >&620</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1232,6 +1247,7 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
         <p>Web: For most form controls where an input error is automatically detected, a text message or alert is provided that identifies the field/control where the error was detected and describes the error. The following exceptions exist:</p>
         <ul>
           <li>A form field with an error is not identified in the text error message or a text alternative for an image, and the error message with the field name is not programmatically associated with the form field (so it is announced when a screen reader user navigates to the field), so people who are blind and/or use a screen reader will not be able to identify in which form field the error occurred. This occurs on the following page(s): Issue Boards; Create or import your first project.</li>
+          <li>Known instances where the identification and description of an error is not always combined programmatically to help assistive technologies to identify an error are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/7341" rel="nofollow noopener noreferrer" target="_blank">&7341</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1264,6 +1280,8 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>The label for a form field is missing, so the field's purpose is not clear. This occurs on the following page(s): Notifications; Vulnerability report; Compare revisions; Run Pipe Line; Background - Corn; Labels - All tab; Kubernetes Cluster; Merger Request; General; Value Stream Analytics; Schedule new pipeline; Get started with GitLab Pages; Pipeline; Milestones; Project audit events; Configure feature flags dialog; Members.</li>
           <li>Some visible Instructions for a form input field are not available for people who use assistive technology. This occurs on the following page(s): Get started with GitLab Pages.</li>
           <li>Select or dropdown control missing a visible label. This occurs on the following page(s):  Releases; Background - Corn; Search and Filter; Rich text editor; Background jobs - Dashboard; Date Picker.</li>
+          <li>Known instances where a label is not present are tracked in the <a
+          href="https://gitlab.com/groups/gitlab-org/-/epics/621" rel="nofollow noopener noreferrer" target="_blank">&621</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1351,7 +1369,8 @@ Note: When reporting on conformance with the WCAG 2.2 Success Criteria, the crit
           <li>The HTML code for a link or button is nested inside the code of another link or button, so assistive technologies may not be able to determine the function of the element. This occurs on the following page(s): Job Details; Issue Boards; Issue details; Usage Quotas.</li>
           <li>A form input element does not have a programmatic name, so people who are blind and/or use a screen reader or other assistive technology may not be able to determine the name of the element and may not understand its purpose or how to interact with it. This occurs on the following page(s): GitLab is better with colleagues!' dialog.</li>
           <li>A tooltip element does not have a programmatic name, so people who are blind and/or use a screen reader or other assistive technology may not be able to determine the name of the element and may not understand its purpose or the information it conveys. This occurs on the following page(s): Repository Analytics.</li>
-          <li>Authored Content (Rich text editor): The product does not allow authors to provide accessible name of the checkboxes. This occurs on the following page(s):  Rich text editor.</li>
+          <li>Authored Content (Rich text editor): The product does not allow authors to provide accessible name of the checkboxes. This occurs on the following page(s): Rich text editor.</li>
+          <li>Know instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/567" rel="nofollow noopener noreferrer" target="_blank">&567</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1492,6 +1511,7 @@ Notes:
           <li>The color contrast ratio between text and its background is less than 4.5:1, so people who are colorblind or have low vision may have difficulty reading the text. This occurs on the following page(s): Project wide; GitLab Duo Chat; Pipe Line Editor; Issues list; Issue details; GitLab is better with colleagues!' dialog; DevOps Reports; General; Get started with GitLab Pages.</li>
           <li>The color contrast ratio on hover or focus between a control's text label and its background is less than 4.5:1, so people who are colorblind or have low vision may have difficulty reading the text label of the control. This occurs on the following page(s): GitLab Duo Chat; Background - Corn; Rich text editor; Labels - All tab; New issue; Project Overview; Background jobs - Dashboard.</li>
           <li>The color contrast ratio between text and its background is less than 4.5:1 (or less than 3:1 for large text), so people who are colorblind or have low vision may have difficulty reading the text. This occurs on the following page(s): Preferences; Issue Boards; Issues list; Background - Corn; Merge requests details - Changes tab; Issue details; Labels - All tab; Background jobs - Dashboard; Merge requests details - Overview tab; Repository Analytics; Schedule new pipeline; New Merge Request; Get started with GitLab Pages.</li>
+          <li>Known instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/562" rel="nofollow noopener noreferrer" target="_blank">&562</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1521,6 +1541,7 @@ Notes:
         <p>Web: Most content is readable and functional when browser zoom is set to 200% of its initial size. The following exceptions exist:</p>
         <ul>
           <li>Content is lost, clipped, or obscured when the page is zoomed to 200%, so people who have low vision and need to enlarge text to read it may not have access to that content. This occurs on the following page(s): Pipe Line Editor; Learn Git Lab; DevOps Reports.</li>
+          <li>Known instances where text is clipped or inaccessible when zoomed are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/563" rel="nofollow noopener noreferrer" target="_blank">&563</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1546,7 +1567,12 @@ Notes:
         </ul>
       </td>
       <td><p>Web: Supports</p></td>
-      <td><p>Web: When content can be presented visually using only text, an image of text is not used to present that text.</p></td>
+      <td>
+        <p>Web: When content can be presented visually using only text, an image of text is not used to present that text.</p>
+        <ul>
+          <li>Known instances are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/10943" rel="nofollow noopener noreferrer" target="_blank">&10943</a> epic.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>
@@ -1599,6 +1625,7 @@ Notes:
           <li>The indicator for the state of an interactive element (like a checkbox or radio button) does not have a 3:1 color contrast ratio with the background, so people who are colorblind or have low vision may have difficulty perceiving the state of the interactive element. This occurs on the following page(s): Rich text editor; Merge requests details - Changes tab; New issue; Pipelines details.</li>
           <li>An image or graphic (like a chart) or part of the image/graphic required to understand its content does not have a 3:1 color contrast ratio with the background or adjacent colors, so people who are colorblind or have low vision may not be able understand the information presented by the image/graphic. This occurs on the following page(s): Profile.</li>
           <li>The focus indicator of an interactive element (like a button or input field) does not have a 3:1 color contrast ratio with the background, so people who are colorblind or have low vision may have difficulty perceiving when the interactive element is receiving focus. This occurs on the following page(s): GitLab Duo Chat.</li>
+          <li>Known instances are being tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/8763" rel="nofollow noopener noreferrer" target="_blank">&8763</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1740,6 +1767,7 @@ Notes:
         <p>Web: When most user interface components receive keyboard focus, each component is not entirely hidden due to author-created content. The following exceptions exist:</p>
         <ul>
           <li>A focused element is completely covered by other author-created content, which may cause people who use the keyboard to navigate content to become disoriented. This occurs on the following page(s): Users; GitLab Duo Chat; Jobs - All; Vulnerability report; Repository; Background - Corn; Issue details; Environments; New issue; Bulk Edit; Merge requests details - Overview tab; Admin Dashboard; Instance subscription; Pipelines details.</li>
+          <li>Known instances are being tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/14070" rel="nofollow noopener noreferrer" target="_blank">&14070</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1754,6 +1782,7 @@ Notes:
         <p>Web: Most functionality that uses a dragging movement can be achieved by a single pointer without dragging, unless dragging is essential or the functionality is determined by the user agent and not modified by the author. The following exceptions exist:</p>
         <ul>
           <li>Some functionality relies on a dragging movement with no single-pointer, single touch alternative, making it difficult or impossible for persons with motor difficulties and users of assistive technology to perform the gesture on the following page(s): Labels - All tab.</li>
+          <li>Known instances are being tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/14073" rel="nofollow noopener noreferrer" target="_blank">&14073</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1769,6 +1798,7 @@ Notes:
         <ul>
           <li>A target's hit area does not meet minimum 24x24 pixel size or spacing. making it difficult for users with hand tremors and those who have difficulty with fine motor movement to activate them accurately. This occurs on the following page(s): Issues list; Merge requests details - Overview tab; Merge requests list - All tab.</li>
           <li>A target's hit area does not meet minimum 24x24 pixel size or spacing. making it difficult for users with hand tremors and those who have difficulty with fine motor movement to activate them accurately on the following page(s): Users; Job Details; Issue Boards; Issues list; Vulnerability report; Background - Corn; Branches; Merge requests details - Changes tab; Issue details; Integrations; Project Overview; Merge requests details - Overview tab; Usage Quotas; Pipeline.</li>
+          <li>Known instances are being tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/14071" rel="nofollow noopener noreferrer" target="_blank">&14071</a> epic.</li>
         </ul>
       </td>
     </tr>
@@ -1871,7 +1901,12 @@ Notes:
         </ul>
       </td>
       <td><p>Web: Supports</p></td>
-      <td><p>Web: If input errors are automatically detected, suggestions are provided in text for correcting the input in a timely and accessible manner before the data is submitted to the server.</p></td>
+      <td>
+        <p>Web: If input errors are automatically detected, suggestions are provided in text for correcting the input in a timely and accessible manner before the data is submitted to the server.</p>
+        <ul>
+          <li>Known instances where error remedies are not provided or are not programmatically associated to help assistive technologies are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/7341" rel="nofollow noopener noreferrer" target="_blank">&7341</a> epic.</li>
+        </ul>  
+      </td>
     </tr>
     <tr>
       <td>
@@ -1927,6 +1962,7 @@ Notes:
         <p>Web: Most, if not all, status messages cannot be programmatically determined and presented by assistive technologies without receiving focus. The following issues exist:</p>
         <ul>
           <li>A status message is not automatically announced by the screen reader, so people who are blind and/or use a screen reader or other assistive technology may completely miss the status message or they may not hear it in a timely fashion. This occurs on the following page(s): Users; Project wide; Preferences; GitLab Duo Chat; Issue Boards; Pipe Line Editor; Issues list; Vulnerability report; Compare revisions; New Feature Flag; Repository; New value stream dialog; Repository Graph; Edit Profile; Search and Filter; Rich text editor; Merge requests details - Changes tab; Add new Access token; Kubernetes Cluster; GitLab is better with colleagues!' dialog; Integrations; New issue; Project Overview; Merge requests details - Pipelines tab; Merger Request; General; Repository Analytics; Create or import your first project; Schedule new pipeline; Explore Topics; Groups; Merge requests list - All tab; Monitor Settings; Give feedback; New Tag; Keyboard Shortcuts dialog; New Merge Request; Policies; Get started with GitLab Pages; Pipeline; Dependencies; Create a blank Project; Project audit events; Members; Verify Screen.</li>
+          <li>Known instances of visual responses to user actions that use a status message, but are not perceptive to assistive technologies are tracked in the <a href="https://gitlab.com/groups/gitlab-org/-/epics/8764" rel="nofollow noopener noreferrer" target="_blank">&8764</a> epic.</li>
         </ul>
       </td>
     </tr>
