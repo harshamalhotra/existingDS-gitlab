@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.3.1
+
+### Patch Changes
+
+- a489306: GlBreadcrumb: Include clipboard button in collapse calculation
+
 ## 124.3.0
 
 ### Minor Changes
