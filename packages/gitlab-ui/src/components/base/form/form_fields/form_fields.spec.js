@@ -597,4 +597,83 @@ describe('GlFormFields', () => {
       expect(validationSpy).toHaveBeenCalledWith('root');
     });
   });
+
+  describe('validateOnBlur prop', () => {
+    describe('when validateOnBlur is true (default)', () => {
+      beforeEach(() => {
+        createComponent();
+      });
+
+      it('validates field on blur', async () => {
+        const input = findInputFromLabel(TEST_FIELDS.username.label);
+        input.vm.$emit('blur');
+
+        await nextTick();
+
+        expect(wrapper.emitted('field-validation')).toEqual([
+          [
+            {
+              fieldName: 'username',
+              invalidFeedback: 'User name is required',
+              state: false,
+            },
+          ],
+        ]);
+
+        expect(findFormGroupsAsData()).toMatchObject([
+          {
+            label: TEST_FIELDS.username.label,
+            invalidFeedback: 'User name is required',
+          },
+          // why: Include others fields to assert that the validation is not run for them
+          {
+            label: TEST_FIELDS.evenCount.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.allCaps.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.fieldWithCustomId.label,
+            invalidFeedback: '',
+          },
+        ]);
+      });
+    });
+
+    describe('when validateOnBlur is false', () => {
+      beforeEach(() => {
+        createComponent({ validateOnBlur: false });
+      });
+
+      it('does not validate field on blur', async () => {
+        const input = findInputFromLabel(TEST_FIELDS.username.label);
+        input.vm.$emit('blur');
+
+        await nextTick();
+
+        expect(wrapper.emitted('field-validation')).toBeUndefined();
+
+        expect(findFormGroupsAsData()).toMatchObject([
+          {
+            label: TEST_FIELDS.username.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.evenCount.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.allCaps.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.fieldWithCustomId.label,
+            invalidFeedback: '',
+          },
+        ]);
+      });
+    });
+  });
 });

@@ -12,8 +12,10 @@ import GlFormFields from './form_fields.vue';
 import { required } from './validators';
 import { mapToNumber } from './mappers';
 
-const Template = () => ({
+// eslint-disable-next-line no-unused-vars
+export const Default = (args, { argTypes = {} }) => ({
   ITEMS: ['Pizza', 'Keyboards', 'Guitars', 'Rocket ships'].map((text) => ({ text, value: text })),
+  props: ['validateOnBlur'],
   components: {
     GlFormFields,
     GlButton,
@@ -118,7 +120,7 @@ const Template = () => ({
     <div>
       <h3>Fields</h3>
       <form :id="testFormId" @submit.prevent>
-        <gl-form-fields :fields="fields" v-model="formValues" :form-id="testFormId" :server-validations="serverValidations" @input-field="onInputField" @submit="onSubmit">
+        <gl-form-fields :fields="fields" v-model="formValues" :form-id="testFormId" :server-validations="serverValidations" :validate-on-blur="validateOnBlur" @input-field="onInputField" @submit="onSubmit">
           <template #group(confirmPassword)-label>
             <div class="gl-flex gl-items-center gl-gap-x-3">
               <span>Confirm Password</span>
@@ -158,7 +160,7 @@ const Template = () => ({
   `,
 });
 
-export const Default = Template.bind({});
+Default.args = { validateOnBlur: true };
 
 export default {
   title: 'base/form/form-fields',
@@ -166,9 +168,42 @@ export default {
   parameters: {
     // Skip known axe-core failures, skipped rules should be removed when underlying violation is resolved
     a11y: getA11yParameters({ temporarySkipRules: ['color-contrast'] }),
-    knobs: {
-      disable: true,
+  },
+  argTypes: {
+    fields: {
+      control: false,
+    },
+    formId: {
+      control: false,
+    },
+    serverValidations: {
+      control: false,
+    },
+    'v-model': {
+      table: {
+        disable: true,
+      },
+    },
+    input: {
+      control: false,
+    },
+    'field-validation': {
+      control: false,
+    },
+    'input-field': {
+      control: false,
+    },
+    submit: {
+      control: false,
+    },
+    slotName: {
+      control: false,
+    },
+    'field.inputSlot.slotName': {
+      control: false,
+    },
+    'field.afterSlotName': {
+      control: false,
     },
   },
-  argTypes: {},
 };
