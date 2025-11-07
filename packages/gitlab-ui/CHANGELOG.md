@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.4.0
+
+### Minor Changes
+
+- d6e2227: Add `validateOnBlur` prop to `GlFormFields`. Defaults to `true`. When set to `false` validation is only run when submitting the form.
+
 ## 124.3.1
 
 ### Patch Changes
