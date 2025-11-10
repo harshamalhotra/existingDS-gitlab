@@ -11,7 +11,7 @@ export default {
   inheritAttrs: false,
   props: {
     /**
-     * Maximum width of the Select
+     * Width of the select element.
      */
     width: {
       type: [String, Object],
@@ -23,11 +23,17 @@ export default {
         return widths.every((width) => Object.values(formInputWidths).includes(width));
       },
     },
+    /**
+     * Additional CSS class(es) to apply to the select element.
+     */
     selectClass: {
       type: [String, Object, Array],
       required: false,
       default: '',
     },
+    /**
+     * Number of visible options in the select dropdown. When greater than 1, displays as a scrollable list box.
+     */
     selectSize: {
       type: Number,
       required: false,
