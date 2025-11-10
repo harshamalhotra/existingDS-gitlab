@@ -65,7 +65,7 @@ related:
 
 <story-viewer component="base-avatar" story="image" title="GlAvatar" view-mode="docs"></story-viewer>
 
-### GlAvatarLabelled
+### GlAvatarLabeled
 
 Avatars may also be adjacent to a text alternative, such as a user or project name. In these cases,
 a null `alt` text should be used so that they can be ignored by assistive technologies.
@@ -80,7 +80,7 @@ properties as the avatar component to modify the avatar’s shape and size.
 <gl-avatar-labeled :shape="shape" :size="size" :src="src" :label="label" :sub-label="subLabel" />
 ```
 
-<story-viewer component="base-avatar-labeled" title="GlAvatarLabelled" view-mode="docs"></story-viewer>
+<story-viewer component="base-avatar-labeled" title="GlAvatarLabeled" view-mode="docs"></story-viewer>
 
 ### GlAvatarLink
 
