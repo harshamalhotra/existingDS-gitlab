@@ -141,7 +141,7 @@ export default {
       default: false,
     },
     /**
-     * Category of the dropdown button. Options: 'primary', 'secondary', 'tertiary'.
+     * Category of the dropdown button.
      */
     category: {
       type: String,
@@ -150,7 +150,7 @@ export default {
       validator: (value) => Object.keys(buttonCategoryOptions).includes(value),
     },
     /**
-     * Visual variant of the dropdown button. Options: 'default', 'confirm', 'danger', 'dashed', 'link'.
+     * Visual variant of the dropdown button.
      */
     variant: {
       type: String,
@@ -159,7 +159,7 @@ export default {
       validator: (value) => Object.keys(dropdownVariantOptions).includes(value),
     },
     /**
-     * Size of the dropdown button. Options: 'small', 'medium'.
+     * Size of the dropdown button.
      */
     size: {
       type: String,
