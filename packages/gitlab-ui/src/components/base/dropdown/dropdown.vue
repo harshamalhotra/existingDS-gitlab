@@ -52,119 +52,188 @@ export default {
   mixins: [ButtonMixin],
   inheritAttrs: false,
   props: {
+    /**
+     * Text to display in the dropdown header.
+     */
     headerText: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, hides the border below the dropdown header.
+     */
     hideHeaderBorder: {
       type: Boolean,
       required: false,
       default: true,
     },
+    /**
+     * When true, displays a "Clear all" button in the dropdown.
+     */
     showClearAll: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Text for the "Clear all" button.
+     */
     clearAllText: {
       type: String,
       required: false,
       default: 'Clear all',
     },
+    /**
+     * CSS class(es) to apply to the "Clear all" button text.
+     */
     clearAllTextClass: {
       type: String,
       required: false,
       default: 'gl-px-5',
     },
+    /**
+     * Text to display on the dropdown toggle button.
+     */
     text: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, displays a title above highlighted items.
+     */
     showHighlightedItemsTitle: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Title text to display above highlighted items.
+     */
     highlightedItemsTitle: {
       type: String,
       required: false,
       default: 'Selected',
     },
+    /**
+     * CSS class(es) to apply to the highlighted items title.
+     */
     highlightedItemsTitleClass: {
       type: String,
       required: false,
       default: 'gl-px-5',
     },
+    /**
+     * When true, visually hides the button text but keeps it accessible to screen readers.
+     */
     textSrOnly: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * When true, renders the dropdown as a split button with separate action and toggle areas.
+     */
     split: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Category of the dropdown button.
+     */
     category: {
       type: String,
       required: false,
       default: buttonCategoryOptions.primary,
       validator: (value) => Object.keys(buttonCategoryOptions).includes(value),
     },
+    /**
+     * Visual variant of the dropdown button.
+     */
     variant: {
       type: String,
       required: false,
       default: dropdownVariantOptions.default,
       validator: (value) => Object.keys(dropdownVariantOptions).includes(value),
     },
+    /**
+     * Size of the dropdown button.
+     */
     size: {
       type: String,
       required: false,
       default: 'medium',
       validator: (value) => Object.keys(buttonSizeOptions).includes(value),
     },
+    /**
+     * Icon name to display in the dropdown button.
+     */
     icon: {
       type: String,
       required: false,
       default: null,
     },
+    /**
+     * When true, renders the dropdown button at 100% width.
+     */
     block: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * When true, disables the dropdown button and prevents interaction.
+     */
     disabled: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * When true, displays a loading indicator in the dropdown button.
+     */
     loading: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * CSS class(es) to apply to the dropdown toggle button.
+     */
     toggleClass: {
       type: [String, Array, Object],
       required: false,
       default: null,
     },
+    /**
+     * When true, aligns the dropdown menu to the right.
+     */
     right: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Custom Popper.js options for dropdown positioning.
+     */
     popperOpts: {
       type: Object,
       required: false,
       default: null,
     },
+    /**
+     * When true, prevents the dropdown from flipping to fit in the viewport.
+     */
     noFlip: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * URL for the split button's main action (when split is true).
+     */
     splitHref: {
       type: String,
       required: false,

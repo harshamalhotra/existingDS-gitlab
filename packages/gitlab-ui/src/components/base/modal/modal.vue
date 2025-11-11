@@ -29,43 +29,67 @@ export default {
     event: 'change',
   },
   props: {
+    /**
+     * Unique identifier for the modal. Used to control the modal programmatically.
+     */
     modalId: {
       type: String,
       required: true,
     },
+    /**
+     * HTML tag to use for the modal title. Options: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'.
+     */
     titleTag: {
       type: String,
       required: false,
       default: 'h4',
     },
+    /**
+     * Title text to display in the modal header.
+     */
     title: {
       type: String,
       required: false,
       default: null,
     },
+    /**
+     * Additional CSS class(es) to apply to the modal.
+     */
     modalClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Configuration object for the primary action button. Should contain 'text' and optionally 'attributes' properties.
+     */
     actionPrimary: {
       type: Object,
       required: false,
       default: null,
       validator: (obj) => validatorHelper(obj),
     },
+    /**
+     * Configuration object for the secondary action button. Should contain 'text' and optionally 'attributes' properties.
+     */
     actionSecondary: {
       type: Object,
       required: false,
       default: null,
       validator: (obj) => validatorHelper(obj),
     },
+    /**
+     * Configuration object for the cancel button. Should contain 'text' and optionally 'attributes' properties.
+     */
     actionCancel: {
       type: Object,
       required: false,
       default: null,
       validator: (obj) => validatorHelper(obj),
     },
+    /**
+     * Size of the modal. Options: 'sm', 'md', 'lg'.
+     */
     size: {
       type: String,
       required: false,
@@ -80,16 +104,25 @@ export default {
       required: false,
       default: () => translate('GlModal.closeButtonTitle', 'Close'),
     },
+    /**
+     * Controls the visibility state of the modal.
+     */
     visible: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Accessible label for the modal. Used for the aria-label attribute.
+     */
     ariaLabel: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, prevents the modal from automatically focusing an element when shown.
+     */
     noFocusOnShow: {
       type: Boolean,
       required: false,
