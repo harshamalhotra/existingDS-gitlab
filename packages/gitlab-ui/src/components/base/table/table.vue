@@ -25,6 +25,14 @@ export default {
      */
     tableClass,
     /**
+     * Array of items displayed in the table as rows.
+     */
+    items: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    /**
      * Array of field definitions for table columns. Each field can be a string (column key) or an object with properties like 'key', 'label', 'sortable', 'thClass', etc.
      */
     fields: {
@@ -129,6 +137,7 @@ export default {
   <b-table
     :table-class="localTableClass"
     :fields="computedFields"
+    :items="items"
     :sort-by.sync="localSortBy"
     :sort-desc.sync="localSortDesc"
     no-sort-reset

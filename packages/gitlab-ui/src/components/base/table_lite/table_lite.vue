@@ -11,6 +11,14 @@ export default {
   inheritAttrs: false,
   props: {
     tableClass,
+    /**
+     * Array of items displayed in the table as rows.
+     */
+    items: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
     fields: {
       type: Array,
       required: false,
@@ -34,7 +42,13 @@ export default {
 </script>
 
 <template>
-  <b-table-lite :table-class="localTableClass" :fields="fields" v-bind="$attrs" v-on="$listeners">
+  <b-table-lite
+    :table-class="localTableClass"
+    :fields="fields"
+    :items="items"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
     <template v-for="slot in Object.keys($scopedSlots)" #[slot]="scope">
       <!-- @slot See https://bootstrap-vue.org/docs/components/table#comp-ref-b-table-lite-slots for available slots. -->
       <slot :name="slot" v-bind="scope"></slot>
