@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.4.1
+
+### Patch Changes
+
+- 5240acd: Adds "items" prop to table components for easier testing
+
 ## 124.4.0
 
 ### Minor Changes
