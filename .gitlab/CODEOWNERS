@@ -11,7 +11,7 @@
 /contents/accessibility/ @trevorpierce
 
 # Technical Writing
-/contents/content/ @gitlab-org/technical-writing
+/contents/content/ @fneill @kpaizee
 
 # Allow any maintainer to approve changeset and dependency updates
 /.changeset/*.md @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-system @tauriedavis @rayana @aregnery @pedroms
