@@ -48,7 +48,8 @@ $breadcrumb-max-width: $grid-size * 16;
   }
 }
 
-.gl-breadcrumb-item:last-child > a {
+.gl-breadcrumb-item:last-child > a,
+.gl-breadcrumb-item:has(+ .gl-breadcrumb-clipboard-button) > a {
   @apply gl-text-default;
   @apply gl-font-bold;
 }
