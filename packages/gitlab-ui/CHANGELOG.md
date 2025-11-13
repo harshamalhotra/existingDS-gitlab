@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 124.4.2
+
+### Patch Changes
+
+- 28074ff: GlBreadcrumb: restore bold font for last item
+
 ## 124.4.1
 
 ### Patch Changes
