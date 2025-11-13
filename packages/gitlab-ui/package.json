@@ -130,7 +130,7 @@
     "@yarnpkg/lockfile": "^1.1.0",
     "acorn": "^8.15.0",
     "acorn-walk": "^8.3.4",
-    "autoprefixer": "10.4.21",
+    "autoprefixer": "10.4.22",
     "axe-playwright": "^2.2.2",
     "babel-loader": "^9.2.1",
     "cypress": "14.5.4",
