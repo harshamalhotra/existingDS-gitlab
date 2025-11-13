@@ -1,5 +1,5 @@
 <script>
-import { badgeVariantOptions, variantCssColorMap } from '../../../utils/constants';
+import { badgeVariantOptions, badgeVariantToIconVariantMap } from '../../../utils/constants';
 import GlBadge from '../../base/badge/badge.vue';
 import GlIcon from '../../base/icon/icon.vue';
 import GlAnimatedNumber from '../../utilities/animated_number/animated_number.vue';
@@ -89,8 +89,8 @@ export default {
     showTitleIcon() {
       return Boolean(this.titleIcon);
     },
-    textColor() {
-      return variantCssColorMap[this.variant];
+    iconVariant() {
+      return badgeVariantToIconVariantMap[this.variant];
     },
     canAnimate() {
       return this.shouldAnimate && !Number.isNaN(Number(this.value));
@@ -117,7 +117,7 @@ export default {
 
 <template>
   <div class="gl-single-stat gl-flex gl-flex-col gl-p-2" v-bind="$attrs" v-on="$listeners">
-    <div class="gl-mb-2 gl-flex gl-items-center gl-text-gray-700">
+    <div class="gl-mb-2 gl-flex gl-items-center gl-text-heading">
       <gl-icon
         v-if="showTitleIcon"
         :name="titleIcon"
@@ -126,7 +126,7 @@ export default {
       />
       <span class="gl-text-base gl-font-normal" data-testid="title-text">{{ title }}</span>
     </div>
-    <div class="gl-single-stat-content gl-flex gl-items-baseline gl-font-bold gl-text-gray-900">
+    <div class="gl-single-stat-content gl-flex gl-items-baseline gl-font-bold gl-text-strong">
       <span
         class="gl-single-stat-number gl-leading-1"
         :class="{ 'gl-mr-2': !unit }"
@@ -149,7 +149,12 @@ export default {
         data-testid="unit"
         >{{ unit }}</span
       >
-      <gl-icon v-if="showMetaIcon" :class="textColor" :name="metaIcon" data-testid="meta-icon" />
+      <gl-icon
+        v-if="showMetaIcon"
+        :variant="iconVariant"
+        :name="metaIcon"
+        data-testid="meta-icon"
+      />
       <gl-badge v-if="showBadge" :variant="variant" :icon="metaIcon" data-testid="meta-badge">{{
         metaText
       }}</gl-badge>
