@@ -24,11 +24,17 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * When true, prevents the textarea from being resized by the user (hides the resize handle).
+     */
     noResize: {
       type: Boolean,
       required: false,
       default: true,
     },
+    /**
+     * When true, emits a submit event when Ctrl+Enter or Cmd+Enter is pressed.
+     */
     submitOnEnter: {
       type: Boolean,
       required: false,
@@ -43,13 +49,16 @@ export default {
       default: null,
     },
     /**
-     * Classes for textarea component when `characterCountLimit` is set.
+     * Additional CSS class(es) to apply to the textarea element.
      */
     textareaClasses: {
       type: [String, Object, Array],
       required: false,
       default: null,
     },
+    /**
+     * Number of visible text rows in the textarea.
+     */
     rows: {
       type: [Number, String],
       required: false,

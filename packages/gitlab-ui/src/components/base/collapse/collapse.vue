@@ -7,11 +7,17 @@ export default {
     event: 'input',
   },
   props: {
+    /**
+     * Controls the visibility state of the collapse.
+     */
     visible: {
       type: Boolean,
       default: false,
       required: false,
     },
+    /**
+     * HTML tag to use for the collapse container element.
+     */
     tag: {
       type: String,
       required: false,

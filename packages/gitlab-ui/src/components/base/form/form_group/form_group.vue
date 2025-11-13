@@ -10,21 +10,33 @@ export default {
   },
   inheritAttrs: false,
   props: {
+    /**
+     * Additional CSS class(es) to apply to the label element.
+     */
     labelClass: {
       type: [String, Array, Object],
       required: false,
       default: null,
     },
+    /**
+     * Descriptive text to display below the label.
+     */
     labelDescription: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, displays optional text next to the label.
+     */
     optional: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Text to display when the field is optional.
+     */
     optionalText: {
       type: String,
       required: false,

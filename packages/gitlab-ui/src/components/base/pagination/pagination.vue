@@ -22,6 +22,9 @@ export default {
     event: 'input',
   },
   props: {
+    /**
+     * The current page number. Must be greater than 0.
+     */
     value: {
       type: Number,
       required: false,
