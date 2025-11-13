@@ -25,7 +25,7 @@ export default {
       default: '',
     },
     /**
-     * When true, prevents the textarea from being resized by the user.
+     * When true, prevents the textarea from being resized by the user (hides the resize handle).
      */
     noResize: {
       type: Boolean,
