@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import { variantCssColorMap } from '../../../utils/constants';
+import { badgeVariantToIconVariantMap } from '../../../utils/constants';
 import GlAnimatedNumber from '../../utilities/animated_number/animated_number.vue';
 import GlSingleStat from './single_stat.vue';
 
@@ -27,6 +27,7 @@ describe('GlSingleStat', () => {
 
   const findItemByTestId = (testId) => wrapper.find(`[data-testid="${testId}"]`);
   const findAnimatedNumber = () => wrapper.findComponent(GlAnimatedNumber);
+  const findMetaIcon = () => findItemByTestId('meta-icon');
 
   describe('displays the correct default data', () => {
     beforeEach(() => createWrapper());
@@ -85,28 +86,38 @@ describe('GlSingleStat', () => {
 
   describe('optional data', () => {
     describe('meta information', () => {
-      describe.each`
-        scenario                                    | mockData
-        ${'with only a meta icon specified'}        | ${{ metaIcon }}
-        ${'with a meta icon and variant specified'} | ${{ metaIcon, variant }}
-      `('$scenario', ({ mockData }) => {
-        beforeEach(() => createWrapper(mockData));
+      describe('with only a meta icon specified', () => {
+        beforeEach(() => createWrapper({ metaIcon }));
 
         it('displays a standalone icon', () => {
-          const el = findItemByTestId('meta-icon');
-          const variantSpecified = Object.keys(mockData).includes('variant');
+          const el = findMetaIcon();
 
           expect(el.exists()).toBe(true);
           expect(el.props('name')).toBe(metaIcon);
-          expect(el.classes()).toContain(
-            variantSpecified ? variantCssColorMap[variant] : variantCssColorMap.neutral,
-          );
+          expect(el.props('variant')).toBe(badgeVariantToIconVariantMap.neutral);
         });
 
         it('does not display a badge', () => {
           expect(findItemByTestId('meta-badge').exists()).toBe(false);
         });
       });
+
+      it.each`
+        badgeVariant | iconVariant
+        ${'neutral'} | ${'default'}
+        ${'info'}    | ${'info'}
+        ${'success'} | ${'success'}
+        ${'warning'} | ${'warning'}
+        ${'danger'}  | ${'danger'}
+        ${'tier'}    | ${'default'}
+      `(
+        'applies the $iconVariant icon variant for the $badgeVariant badge variant',
+        ({ badgeVariant, iconVariant }) => {
+          createWrapper({ metaIcon, variant: badgeVariant });
+
+          expect(findMetaIcon().props('variant')).toBe(iconVariant);
+        },
+      );
 
       describe.each`
         scenario                                          | mockData
@@ -118,7 +129,7 @@ describe('GlSingleStat', () => {
         beforeEach(() => createWrapper(mockData));
 
         it("doesn't display a standalone icon", () => {
-          expect(findItemByTestId('meta-icon').exists()).toBe(false);
+          expect(findMetaIcon().exists()).toBe(false);
         });
 
         it('displays a badge', () => {

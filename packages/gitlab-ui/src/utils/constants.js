@@ -202,6 +202,19 @@ export const animatedIconVariantOptions = {
   success: 'gl-animated-icon-success',
 };
 
+/**
+ * Maps badge variants to their corresponding icon variants.
+ * Used by GlSingleStat to ensure icons match the semantic meaning of their badge variant.
+ */
+export const badgeVariantToIconVariantMap = {
+  neutral: 'default',
+  info: 'info',
+  success: 'success',
+  warning: 'warning',
+  danger: 'danger',
+  tier: 'default',
+};
+
 export const linkVariantInline = 'inline';
 export const linkVariantMeta = 'meta';
 export const linkVariantMention = 'mention';
