@@ -3,6 +3,44 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.6
+
+<small>Published 2025-11-14</small>
+
+This release brings focused refinements to the UI kit with updates to the Single Stat component and several updated product icons. We've enhanced the Single Stat with a more flexible slot-based approach, added link and sparkline support, and introduced additional visualization options. Elsewhere, icon updates improve visual consistency across add/new actions.
+
+Full highlights:
+
+- Enhanced Single Stat component with new slot-based architecture and expanded visualization options.
+- New passkey icon for authentication features.
+- Refined add/new icon sizing for better visual balance.
+- Various component fixes and deprecation cleanup.
+
+### Changelog
+
+#### ➕ Additions
+
+- (Patterns & Page Templates): Adds link to [**file diff**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2624-34) shared asset.
+- (Patterns & Page Templates): Adds [**dashboard panel**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3058-394) pattern.
+- (Product Icons): Adds [**passkey**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~passkey) icon.
+
+#### 🚀 Enhancements
+
+- (Data Visualization): Adds [**❖&nbsp;Single&nbsp;stat**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=6189-2243&t=W4y8vDb3MYCH3okj-4) component with a new slot-based approach that supports link options, additional icon choices, supplementary title text, and sparkline and progress bar visualizations for richer data presentation.
+
+#### 🔄 Changes
+
+- (Patterns & Page Templates): Updates [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120) AI panel button ordering.
+- (Product Icons): Increases the "+" size in add/new icons: [**work-item-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-new), [**todo-add**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~todo-add), [**folder-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~folder-new), [**doc-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~doc-new), and [**duo-chat-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~duo-chat-new).
+
+#### ⚠️ Deprecations
+
+- (Data Visualization): Deprecates **❖&nbsp;Single&nbsp;stat**. Use new [**❖&nbsp;Single&nbsp;stat**](https://www.figma.com/design/17NxNEMa7i28Is8sMetO2H/Data-Visualization?node-id=6189-2243&t=W4y8vDb3MYCH3okj-4) instead.
+
+#### Contributors
+
+Becka Lippert, Chad Lavimoniere, Dan Mizzi-Harris, Jeremy Elder, Julia Miocene, Sascha Eggenberger
+
 ## 18.5
 
 <small>Published 2025-10-10</small>
@@ -334,7 +372,7 @@ Spring is approaching in some parts of the world and we couldn't help but tidy u
 - (Patterns & Page Templates): Changes variables based on upstream library updates.
 - (Patterns & Page Templates): Migrates page template components to not use deprecated components.
 - (Product Icons): Updates [**issues**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11), [**issue-new**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11), and [**issue-type-issue**](https://www.figma.com/design/h4YjjttHL5YI0mXZfQ4uuU/GitLab-Product-Icons?node-id=1-234&t=54zN16OqLtNRmY3J-11) icons with new design.
-- (Product Illustrations):  Changes variables based on upstream library updates in a prior release.
+- (Product Illustrations): Changes variables based on upstream library updates in a prior release.
 
 #### 🛠️ Fixes
 
@@ -504,7 +542,6 @@ Dark mode is now fully supported in the component library. All components have b
   - Refactor form element construction to use latest auto layout features.
   - Refactor documentation and instances.
 - Applies design tokens to components, elements, and instances:
-
   - [**❖&nbsp;Alert**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=124931-1309&t=TBq7yrU2nclAcYSv-1)
   - [**❖&nbsp;Accordion**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=425-0&t=TBq7yrU2nclAcYSv-1) link text color and body content.
   - [**❖&nbsp;Banner**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=126604-7819&t=TBq7yrU2nclAcYSv-1)
@@ -619,7 +656,7 @@ Dark mode is now fully supported in the component library. All components have b
   - Seamless switching between 12(!) styles.
   - Four of your favorite button types - text, icon only, dropdown, and icon only dropdown.
   - Built-in icon picker for lightning-fast customization ⚡️
-  These changes make it easier to create and edit buttons while maintaining consistency across designs. The new Button component replaces several previous button components, offering a more streamlined and flexible approach to button use in your Figma artifacts.
+    These changes make it easier to create and edit buttons while maintaining consistency across designs. The new Button component replaces several previous button components, offering a more streamlined and flexible approach to button use in your Figma artifacts.
 - Breaking (high): Adds [**❖&nbsp;Split&nbsp;dropdown&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123024-2869), [**❖&nbsp;Emoji&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123515-16040), and [**❖&nbsp;Ellipsis&nbsp;button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123733-4517) for specialized button needs. Full features detailed in the [instances](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7).
 - Adds [**❖&nbsp;Sorting**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123918-20385). While button-like in appearance, this component is purpose-built for sorting interactions, offering a distinct set of features tailored for this specific use case.
 - Breaking (high): Adds [**❖&nbsp;Tab&nbsp;group**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123608-8100). Choose the number of tabs, current tab, justification style, and more from the property panel of this completely rearchitected component. Need something else? This release also adds [**❖&nbsp;Tab&nbsp;item**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123607-1296&t=AE3du9yzDlchT7UE-4) to allow you to go where tab group can't.
@@ -645,7 +682,7 @@ Dark mode is now fully supported in the component library. All components have b
 ### Deprecations
 
 - Deprecates **Button** components. Use new [**Button**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7) components instead. Components deprecated:
-  - **❖&nbsp;_Base Button**
+  - **❖&nbsp;\_Base Button**
   - **❖&nbsp;Button&nbsp;/&nbsp;Default**
   - **❖&nbsp;Button&nbsp;/&nbsp;Confirm**
   - **❖&nbsp;Button&nbsp;/&nbsp;Danger**
@@ -686,7 +723,7 @@ Dark mode is now fully supported in the component library. All components have b
 ### Additions
 
 - Breaking (high): Adds [**❖&nbsp;Badge**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121748-1095&t=ecNprMcPJ9xOuyYp-4). One size to rule them all! Also fixes an intermittent icon color bug.
-- Breaking (high): Adds [**❖&nbsp;Breadcrumb**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121134-113210&t=ecNprMcPJ9xOuyYp-4). Loafs more useful options, much butter avatars, and go with the grain with new quick presets  — it's the yeast we can do!
+- Breaking (high): Adds [**❖&nbsp;Breadcrumb**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121134-113210&t=ecNprMcPJ9xOuyYp-4). Loafs more useful options, much butter avatars, and go with the grain with new quick presets — it's the yeast we can do!
 - Breaking (high): Adds [**❖&nbsp;Tooltip**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=121178-28119&t=bv54MAp5zJRiIlrJ-4). New, shiny, informative. All the same features, but refactored to not use a base component.
 - Adds icons: [**duo-chat**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~duo-chat), [**duo-chat-off**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~duo-chat-off), and [**entity-blocking**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~entity-blocking).
 - Adds illustrations: [**catalog-sm**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/catalog-sm.svg), [**empty-catalog-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-catalog-md.svg), [**error-500-lg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations%2Ferror%2Ferror-500-lg.svg), [**error-502-lg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations%2Ferror%2Ferror-502-lg.svg), [**error-503-lg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations/?q=illustrations%2Ferror%2Ferror-503-lg.svg), and [**empty-secrets-md**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/empty-secrets-md.svg).
@@ -798,7 +835,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 ### Changes
 
-- Added an additional property to the **❖&nbsp;Navigation** sub-component [**❖&nbsp;_Page**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=107958%3A2360&t=BJeCsFnYIyQZulYc-1) to support different hover interactions.
+- Added an additional property to the **❖&nbsp;Navigation** sub-component [**❖&nbsp;\_Page**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=107958%3A2360&t=BJeCsFnYIyQZulYc-1) to support different hover interactions.
 
 ### Fixes
 
@@ -838,7 +875,7 @@ Dark mode is now fully supported in the component library. All components have b
 - Updated the [**❖&nbsp;Popover**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-91946&mode=design&t=zI9YVVtzzzJBTVVp-11) description to match Pajamas ([!3742](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/merge_requests/3742)) and [default instance](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-93337&mode=design&t=zI9YVVtzzzJBTVVp-11) text to match GitLab UI ([!3970](https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests/3970)).
 - Breaking (medium): Updated [❖❖&nbsp;Text/Multiline](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49888%3A76378&mode=design&t=Mya6LjBjoNEiXJh2-1) form element to display as four lines, up from one line.
 - Added `Size: SM`, `Type: Icon` and `Badge: True` variants to [**❖&nbsp;Button&nbsp;/&nbsp;Selected**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=78884-115024&mode=design&t=qRgcVzE9T0RdK8uf-4) to better support swapping with Default buttons.
-- Updated **Table** / [**_Base&nbsp;header&nbsp;cell**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48707-59823&mode=design&t=ETApnqRp7cnd70Dz-11) sortable variants to use glyphs (↑, ↓) instead of icon buttons. The glyph color is the same as the text. More details in [#1780](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1780).
+- Updated **Table** / [**\_Base&nbsp;header&nbsp;cell**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=48707-59823&mode=design&t=ETApnqRp7cnd70Dz-11) sortable variants to use glyphs (↑, ↓) instead of icon buttons. The glyph color is the same as the text. More details in [#1780](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1780).
 - Updated **❖&nbsp;Table** [Configuration: Sortable (on hover) instance](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49122-76749&mode=design&t=ETApnqRp7cnd70Dz-11) cell background so that it doesn't reflect a color change on hover. More details in [#1780](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1780).
 
 ### Fixes
@@ -958,7 +995,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 ### Additions
 
-- Added [**❖&nbsp;_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=design) for use in dropdown dividers. Removed an old link to a deprecated dividing line component as part of this change.
+- Added [**❖&nbsp;\_Base/Dividing&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=101961-16255&mode=design) for use in dropdown dividers. Removed an old link to a deprecated dividing line component as part of this change.
 
 ### Enhancements
 
@@ -973,7 +1010,7 @@ Dark mode is now fully supported in the component library. All components have b
 - Breaking (medium): Update [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=design) to have maximum line length. Some instances might now be taller if text wraps.
 - Update [**❖&nbsp;Avatar**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19910-0&mode=design) identicons and text fallbacks to use the [dynamic type scale](https://design.gitlab.com/product-foundations/type-fundamentals#type-scales).
 - Update [**❖&nbsp;Popover**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-91946&mode=design) titles to use styles from the heading scale. Component now follows property naming guidelines.
-- Update [**Dropdown&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=61256-135451&mode=design) dropdown element color for consistent borders in dropdowns. Now uses **❖&nbsp;_Base/Dividing&nbsp;line**.
+- Update [**Dropdown&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=61256-135451&mode=design) dropdown element color for consistent borders in dropdowns. Now uses **❖&nbsp;\_Base/Dividing&nbsp;line**.
 - Update [**Utility&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=72160-103548&mode=design) documentation utility component, removing an old link to a deprecated navigation dividing line component.
 - Refactor [**❖&nbsp;Option**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65765%3A98174&mode=design) to remove an unnecessary 2px spacing so that it's easier to align lists.
 
@@ -1026,8 +1063,8 @@ Dark mode is now fully supported in the component library. All components have b
   - Breaking (high): New components created for [headings](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94794-93366&mode=design). Existing skeleton loader heading variants have been deprecated.
   - Paragraph variants (representing lines of text) updated:
     - Added [**❖&nbsp;Text/Paragraph/1&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=94992-89&mode=design).
-    - Renamed **❖&nbsp;Text/Paragraph/Short** →  [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=design).
-    - Renamed **❖&nbsp;Text/Paragraph/Long** →  [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=design).
+    - Renamed **❖&nbsp;Text/Paragraph/Short** → [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=design).
+    - Renamed **❖&nbsp;Text/Paragraph/Long** → [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=design).
     - Breaking (medium): Updated [**❖&nbsp;Text/Paragraph/3&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-82&mode=design) and [**❖&nbsp;Text/Paragraph/5&nbsp;line**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=2844-86&mode=design) to use paragraph spacing and visual weight.
 - Breaking (medium): [**❖&nbsp;Tooltip**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19944-2&mode=design) updated to use Figma's new max-width auto layout feature — no more manually controlling width using line-breaks or resizing the component! This update changes the position of existing tooltips if they are longer than 1 line.
 - Breaking (low): The [**❖&nbsp;Banner**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=19944%3A6&mode=design), [**❖&nbsp;Drawer**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150%3A59274&mode=design), and [**❖&nbsp;Modal**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=4263%3A22&mode=design) component titles now have dedicated text styles that leverage the latest type scale updates. As a result of these changes, component instances may change height and design elements may need to be repositioned within your design files. More details for the reason behind the change in [!11014](https://gitlab.com/groups/gitlab-org/-/epics/11014). New styles:
@@ -1123,7 +1160,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 - Fix some dropdown instances using outdated text styles.
 - Fix issue where dropdown documentation would break outside its container.
-- Fix issue where the new fonts caused **❖&nbsp;_Base&nbsp;Button&nbsp;group** to break outside its container.
+- Fix issue where the new fonts caused **❖&nbsp;\_Base&nbsp;Button&nbsp;group** to break outside its container.
 
 ### Deprecations
 
@@ -1150,8 +1187,8 @@ Dark mode is now fully supported in the component library. All components have b
 ### Fixes
 
 - Fixed the pixel alignment of the [**table**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~table) icon.
-- [**❖&nbsp;Menu&nbsp;item**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=50570-81619&t=l2mFoV6DmqQb81L1-4), [**❖&nbsp;_Base&nbsp;Sidebar/Flyout&nbsp;menu/Menu&nbsp;items**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=43519-45367&t=l2mFoV6DmqQb81L1-4), and [stacked avatar instances](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=36196-30381&t=l2mFoV6DmqQb81L1-4) use the correct badge component.
-- [**❖&nbsp;_Base/Color&nbsp;swatch**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65858-133015&t=l2mFoV6DmqQb81L1-4) uses the correct checkbox component.
+- [**❖&nbsp;Menu&nbsp;item**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=50570-81619&t=l2mFoV6DmqQb81L1-4), [**❖&nbsp;\_Base&nbsp;Sidebar/Flyout&nbsp;menu/Menu&nbsp;items**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=43519-45367&t=l2mFoV6DmqQb81L1-4), and [stacked avatar instances](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=36196-30381&t=l2mFoV6DmqQb81L1-4) use the correct badge component.
+- [**❖&nbsp;\_Base/Color&nbsp;swatch**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=65858-133015&t=l2mFoV6DmqQb81L1-4) uses the correct checkbox component.
 
 ### Removals
 
