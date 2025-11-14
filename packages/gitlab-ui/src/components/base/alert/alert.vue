@@ -32,14 +32,6 @@ export default {
       default: true,
     },
     /**
-     * Shows icon based on variant.
-     */
-    showIcon: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-    /**
      * The close button's label, it is used for the button's aria-label attribute.
      */
     dismissLabel: {
@@ -208,12 +200,11 @@ export default {
       'gl-alert',
       { 'gl-alert-sticky': sticky },
       { 'gl-alert-not-dismissible': !dismissible },
-      { 'gl-alert-no-icon': !showIcon },
       { 'gl-alert-has-title': !!title },
       variantClass,
     ]"
   >
-    <div v-if="showIcon" class="gl-alert-icon-container">
+    <div class="gl-alert-icon-container">
       <gl-icon :name="iconName" class="gl-alert-icon" />
     </div>
     <div class="gl-alert-content">

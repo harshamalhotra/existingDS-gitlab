@@ -59,12 +59,6 @@ describe('Alert component', () => {
     });
   });
 
-  it('does not render a variant icon when showIcon = false', () => {
-    createComponent({ propsData: { showIcon: false } });
-
-    expect(findIcon().exists()).toBe(false);
-  });
-
   it('does not render a dismiss button when dismissible = false', () => {
     createComponent({ propsData: { dismissible: false } });
 

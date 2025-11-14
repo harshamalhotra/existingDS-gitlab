@@ -62,10 +62,6 @@ $gl-alert-top-border-size: 2px;
     padding-right: calc(#{$gl-spacing-scale-5} + #{$gl-alert-padding-x});
   }
 
-  &-no-icon {
-    padding-left: calc(#{$gl-spacing-scale-5} + #{$gl-alert-padding-x});
-  }
-
   .gl-link:not(.gl-label-link) {
     @apply gl-underline;
   }
