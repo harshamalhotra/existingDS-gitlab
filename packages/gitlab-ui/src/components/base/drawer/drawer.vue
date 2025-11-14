@@ -10,25 +10,40 @@ export default {
     GlButton,
   },
   props: {
+    /**
+     * Controls the visibility state of the drawer.
+     */
     open: {
       type: Boolean,
       required: true,
     },
+    /**
+     * Height of the header element (e.g., '64px'). Used to position the drawer below a fixed header.
+     */
     headerHeight: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, makes the drawer header sticky so it remains visible when scrolling the drawer content.
+     */
     headerSticky: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Z-index value for the drawer. Useful for controlling stacking order with other elements.
+     */
     zIndex: {
       type: Number,
       required: false,
       default: maxZIndex,
     },
+    /**
+     * Visual variant of the drawer.
+     */
     variant: {
       type: String,
       required: false,
@@ -93,6 +108,10 @@ export default {
       const ESC = 27;
 
       if (this.open && e.keyCode === ESC) {
+        /**
+         * Emits when drawer gets closed (by pressing ESC or clicking the close button).
+         * @event close
+         */
         this.$emit('close');
       }
     },
@@ -108,6 +127,7 @@ export default {
         :class="{ 'gl-drawer-header-sticky': headerSticky }"
       >
         <div class="gl-drawer-title">
+          <!-- @slot Content for the drawer title area in the header. -->
           <slot name="title"></slot>
           <gl-button
             category="tertiary"
@@ -118,6 +138,7 @@ export default {
             @click="$emit('close')"
           />
         </div>
+        <!-- @slot Additional content below the title in the header section. -->
         <slot name="header"></slot>
       </div>
       <div
@@ -127,6 +148,7 @@ export default {
           'gl-drawer-body-scrim': !shouldRenderFooter,
         }"
       >
+        <!-- @slot Main content of the drawer body. -->
         <slot></slot>
       </div>
       <div
@@ -134,6 +156,7 @@ export default {
         class="gl-drawer-footer gl-drawer-footer-sticky gl-drawer-body-scrim-on-footer"
         :style="{ zIndex }"
       >
+        <!-- @slot Content for the sticky footer at the bottom of the drawer. -->
         <slot name="footer"></slot>
       </div>
     </aside>

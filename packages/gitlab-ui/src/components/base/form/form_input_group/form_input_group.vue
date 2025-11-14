@@ -31,11 +31,17 @@ export default {
       default: () => [{ value: '', name: '' }],
       validator: (options) => options.every((opt) => Object.keys(opt).includes('name', 'value')),
     },
+    /**
+     * Accessible label for the input field. Used for the aria-label attribute.
+     */
     label: {
       type: String,
       required: false,
       default: undefined,
     },
+    /**
+     * Additional CSS class(es) to apply to the input element.
+     */
     inputClass: {
       type: [String, Array, Object],
       required: false,

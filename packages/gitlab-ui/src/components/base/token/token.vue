@@ -10,6 +10,9 @@ export default {
     CloseButton,
   },
   props: {
+    /**
+     * When true, hides the close button and makes the token non-removable.
+     */
     viewOnly: {
       type: Boolean,
       required: false,
@@ -60,6 +63,7 @@ export default {
 <template>
   <span :class="['gl-token', variantClass, viewOnlyClass]" v-on="$listeners">
     <span class="gl-token-content">
+      <!-- @slot Content to display inside the token -->
       <slot></slot>
       <close-button v-if="!viewOnly" class="gl-token-close" :label="removeLabel" @click="close" />
     </span>
