@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 125.0.0
+
+### Major Changes
+
+- f6f3e9e: Remove iconless alert variant
+
 ## 124.4.3
 
 ### Patch Changes
