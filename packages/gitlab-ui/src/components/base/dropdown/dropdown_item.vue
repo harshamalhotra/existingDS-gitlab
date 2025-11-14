@@ -15,51 +15,81 @@ export default {
   },
   inheritAttrs: false,
   props: {
+    /**
+     * URL for the avatar image to display
+     */
     avatarUrl: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Color variant for the icon
+     */
     iconColor: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Name of the icon to display on the left side
+     */
     iconName: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Aria label for the right icon button
+     */
     iconRightAriaLabel: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Name of the icon to display on the right side
+     */
     iconRightName: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Whether the dropdown item is checked
+     */
     isChecked: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Whether to show a check icon for this item
+     */
     isCheckItem: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Whether to center the check icon vertically
+     */
     isCheckCentered: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Secondary text to display below the main content
+     */
     secondaryText: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * ARIA role for the dropdown item
+     */
     role: {
       type: String,
       required: false,
@@ -93,6 +123,10 @@ export default {
   },
   methods: {
     handleClickIconRight() {
+      /**
+       * Emitted when right icon is clicked.
+       * @event handleClickIconRight
+       */
       this.$emit('click-icon-right');
     },
   },
@@ -115,6 +149,7 @@ export default {
     <gl-icon v-if="iconName" :name="iconName" :class="['gl-dropdown-item-icon', iconColorCss]" />
     <gl-avatar v-if="avatarUrl" :size="32" :src="avatarUrl" />
     <div class="gl-dropdown-item-text-wrapper">
+      <!-- @slot Main content of the dropdown item. -->
       <p class="gl-dropdown-item-text-primary"><slot></slot></p>
       <p v-if="secondaryText" class="gl-dropdown-item-text-secondary">{{ secondaryText }}</p>
     </div>

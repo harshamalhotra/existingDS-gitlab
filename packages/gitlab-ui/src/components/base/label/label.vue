@@ -16,41 +16,65 @@ export default {
     GlTooltip,
   },
   props: {
+    /**
+     * Background color of the label in hex, rgb, or rgba format
+     */
     backgroundColor: {
       type: String,
       required: true,
       validator: (value) => /^(#|rgb|rgba)/.test(value),
     },
+    /**
+     * Title text of the label
+     */
     title: {
       type: String,
       required: true,
       default: '',
     },
+    /**
+     * Description text shown in tooltip
+     */
     description: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Placement of the tooltip
+     */
     tooltipPlacement: {
       type: String,
       required: false,
       default: 'top',
     },
+    /**
+     * Target URL for the label link
+     */
     target: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Whether the label is scoped (uses :: separator)
+     */
     scoped: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Whether to show the close button
+     */
     showCloseButton: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Whether the label is disabled
+     */
     disabled: {
       type: Boolean,
       required: false,
@@ -98,19 +122,15 @@ export default {
   methods: {
     onClick(e) {
       /**
-       * Emitted when label is clicked
-       *
+       * Emitted when the label is clicked.
        * @event click
-       * @type {object}
        */
       this.$emit('click', e);
     },
     onClose(e) {
       /**
-       * Emitted when x is clicked
-       *
+       * Emitted when the close button is clicked.
        * @event close
-       * @type {object}
        */
       this.$emit('close', e);
     },

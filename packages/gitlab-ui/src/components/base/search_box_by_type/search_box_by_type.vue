@@ -27,11 +27,17 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * Whether to render the search box without borders
+     */
     borderless: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Title text for the clear button
+     */
     clearButtonTitle: {
       type: String,
       required: false,
@@ -104,6 +110,10 @@ export default {
       this.$refs.input.$el.focus();
     },
     onInput(value) {
+      /**
+       * Emitted when the input value changes or gets cleared.
+       * @event input
+       */
       this.$emit('input', value);
     },
     onFocusout(event) {
@@ -113,6 +123,10 @@ export default {
         return;
       }
 
+      /**
+       * Emitted when focus leaves the search box (input and clear button).
+       * @event focusout
+       */
       this.$emit('focusout', event);
     },
     onFocusin(event) {
@@ -122,6 +136,10 @@ export default {
         return;
       }
 
+      /**
+       * Emitted when focus enters the search box (input or clear button).
+       * @event focusin
+       */
       this.$emit('focusin', event);
     },
   },
