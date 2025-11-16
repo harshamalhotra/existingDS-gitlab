@@ -42,9 +42,9 @@ const noRestrictedImportsNoBarrelImports = {
 export default [
   {
     ignores: [
-      'public/',
-      '.nuxt/',
-      `${PACKAGE_GITLAB_UI}/node_modules/`,
+      '**/.nuxt/',
+      '**/_nuxt/',
+      `**/node_modules/`,
       `${PACKAGE_GITLAB_UI}/storybook/`,
       `${PACKAGE_GITLAB_UI}/dist/`,
       `${PACKAGE_GITLAB_UI}/public/`,
@@ -97,7 +97,8 @@ export default [
     files: ['**/*.spec.js', 'tests/jest_setup.js', JEST_MOCKS],
 
     rules: {
-      'promise/always-return': 'off',
+      // The runtime template compiler is available in specs.
+      '@gitlab/no-runtime-template-compiler': 'off',
 
       'jest/expect-expect': [
         'warn',
