@@ -15,7 +15,6 @@ describe('GlAccordion', () => {
         data() {
           return { headerLevel, autoCollapse };
         },
-        // eslint-disable-next-line @gitlab/no-runtime-template-compiler
         template: `
           <gl-accordion :header-level="headerLevel" :auto-collapse="autoCollapse">
             <gl-accordion-item title="Item 1">
