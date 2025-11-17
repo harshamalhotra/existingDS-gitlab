@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs';
-import { join, relative } from 'node:path';
+import { join } from 'node:path';
 import { globSync } from 'glob';
 import { format, resolveConfig } from 'prettier';
 import StyleDictionary from 'style-dictionary';
@@ -25,7 +25,6 @@ import {
 const PREFIX = 'gl';
 const ROOT = join(import.meta.dirname, '..');
 const BUILD_PATH = join(ROOT, 'src', 'tokens', 'build');
-const DIST_PATH = join(ROOT, 'dist', 'tokens');
 
 /**
  * Preprocessors
@@ -345,9 +344,7 @@ async function buildFigmaTokens(buildPath) {
 async function main() {
   try {
     // Clean build directories first to prevent loose files.
-    await Promise.all(
-      [BUILD_PATH, DIST_PATH].map((path) => fs.promises.rm(path, { recursive: true, force: true })),
-    );
+    await fs.promises.rm(BUILD_PATH, { recursive: true, force: true });
 
     // Build tokens using StyleDictionary
     const defaultMode = new StyleDictionary(getStyleDictionaryConfigDefault(BUILD_PATH));
@@ -361,10 +358,6 @@ async function main() {
 
     // Build tokens for Figma
     await buildFigmaTokens(BUILD_PATH);
-
-    // Finally, copy to DIST_PATH.
-    await fs.promises.cp(BUILD_PATH, DIST_PATH, { recursive: true });
-    console.log(`✔︎ Copied built tokens to ${relative(ROOT, DIST_PATH)}`);
   } catch (error) {
     console.error('🚨 Error building tokens:', error);
     process.exit(1);
