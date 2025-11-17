@@ -30,6 +30,7 @@ There are a number of ways to gradually reveal content in the UI, including:
 - Adding items to a table by filling out a form in a [modal](/components/modal) or new page
 - Displaying information in [accordions](/components/accordion)
 - Hiding navigation items behind a hamburger menu
+- Hiding actions behind a [more actions](/components/dropdown-disclosure#more-actions-dropdown) dropdown
 - [Truncating](/product-foundations/layout#truncation) content and previews
 - Enabling scrolling for overflow content
 - Using [skeleton loaders](/components/skeleton-loader) while lazy loading a page

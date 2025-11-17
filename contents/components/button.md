@@ -211,7 +211,7 @@ Multiple alignments can be combined within a single screen, but not within an in
   <figure-img alt="Two buttons with the affirmative one on the right" label="Affirmative action on right edge for right alignment" src="/img/buttons-order-right.png" width="332"></figure-img>
   </grid>
 - The visual hierarchy is primary buttons on the outer edge, followed by secondary buttons, and so on.
-- One exception to the visual hierarchy is an ellipsis button. When using an ellipsis button, place it on the outer edge.
+- One exception to the visual hierarchy is a [more actions](/components/dropdown-disclosure#more-actions-dropdown) dropdown. When using a more actions dropdown, place it on the outer edge.
   <grid>
   <figure-img alt="Button hierarchy from left to right for left alignment" label="Hierarchy from left to right for left alignment" src="/img/buttons-hierarchy-left.png" width="332"></figure-img>
   <figure-img alt="Button hierarchy from right to left for right alignment" label="Hierarchy from right to left for right alignment" src="/img/buttons-hierarchy-right.png" width="332"></figure-img>

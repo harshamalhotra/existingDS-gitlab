@@ -79,10 +79,8 @@ export const Default = (args, { argTypes }) => ({
 });
 Default.args = {
   items: mockItems,
-  icon: 'ellipsis_v',
-  noCaret: true,
-  toggleText: 'Disclosure',
-  textSrOnly: true,
+  toggleText: 'Merge request actions',
+  textSrOnly: false,
   toggleId: TOGGLE_ID,
 };
 Default.decorators = [makeContainer({ height: '200px' })];
@@ -101,13 +99,43 @@ export const FixedDropdown = (args, { argTypes }) => ({
 });
 FixedDropdown.args = {
   items: mockItems,
-  icon: 'ellipsis_v',
-  noCaret: true,
-  toggleText: 'Disclosure',
-  textSrOnly: true,
+  toggleText: 'Merge request actions',
+  textSrOnly: false,
   positioningStrategy: 'fixed',
 };
 FixedDropdown.decorators = [makeContainer({ height: '200px' })];
+
+export const MoreActionsDropdown = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: {
+    GlDisclosureDropdown,
+    GlTooltip,
+  },
+  template: `
+    <div>
+      ${template()}
+      <gl-tooltip :target="'more-actions-toggle'" placement="top">
+        More actions
+      </gl-tooltip>
+    </div>
+  `,
+});
+MoreActionsDropdown.args = {
+  items: [
+    { text: 'Edit', action: () => {} },
+    { text: 'Copy link', action: () => {} },
+    { text: 'Move', action: () => {} },
+    { text: 'Archive', action: () => {} },
+    { text: 'Delete', action: () => {}, variant: 'danger' },
+  ],
+  icon: 'ellipsis_v',
+  toggleText: 'More actions for merge request',
+  textSrOnly: true,
+  noCaret: true,
+  category: 'tertiary',
+  toggleId: 'more-actions-toggle',
+};
+MoreActionsDropdown.decorators = [makeContainer({ height: '200px' })];
 
 export const CustomListItem = (args, { argTypes }) => ({
   props: Object.keys(argTypes),

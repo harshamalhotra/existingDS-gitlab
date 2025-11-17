@@ -11,6 +11,8 @@ related:
 
 <story-viewer component="base-dropdown-disclosure-dropdown" title="Simple disclosure"></story-viewer>
 
+<story-viewer component="base-dropdown-disclosure-dropdown" story="more-actions-dropdown" title="More actions dropdown"></story-viewer>
+
 <story-viewer component="base-dropdown-disclosure-dropdown" story="custom-list-item" args-placement="left" title="Disclosure with custom list item"></story-viewer>
 
 <story-viewer component="base-dropdown-disclosure-dropdown" story="groups" title="Disclosure with groups"></story-viewer>
@@ -81,9 +83,20 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 - Text should be concise and clearly indicate the link destination or action it performs.
 - Destructive actions should be the last of the available options.
 
+### More actions dropdown
+
+Position the more actions button on the outer edge as an exception to the [standard button order](/components/button#Order).
+
+Use the `ellipsis_v` icon, 'More actions' for the tooltip text, and use `aria-label="More actions for ..."` to provide a contextual label.
+
 ### Accessibility
 
 - See the [WAI-ARIA Disclosure (Show/Hide) documentation](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/) for more details.
+- For simple disclosures, use `aria-label` to provide a contextual label. For more details, see [WCAG 4.1.2 Name, Role, Value (Level A)](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html). For example:
+
+```html
+<gl-button aria-label="More actions for ..." title="More actions" v-gl-tooltip icon="ellipsis_v" />
+```
 
 ## Code reference
 
@@ -92,7 +105,7 @@ A disclosure dropdown is a button that toggles a panel containing a list of acti
 to make sure this is the right dropdown component for you.
 
 ```html
-<gl-disclosure-dropdown toggle-text="Actions" :items="items" />
+<gl-disclosure-dropdown toggle-text="More actions" :items="items" />
 ```
 
 ### Icon-only disclosure dropdown
@@ -105,7 +118,7 @@ Optionally, you can use `no-caret` to remove the caret and `category="tertiary"`
 ```html
 <gl-disclosure-dropdown
   icon="ellipsis_v"
-  toggle-text="Actions"
+  toggle-text="More actions"
   text-sr-only
   category="tertiary"
   no-caret
@@ -154,7 +167,7 @@ It's possible to close the disclosure dropdown programmatically by calling the `
 `close` methods on the disclosure dropdown via a template ref. For example:
 
 ```js
-this.$refs.disclosureDropdown.closeAndFocus()
+this.$refs.disclosureDropdown.closeAndFocus();
 ```
 
 The `closeAndFocus` method is preferred in most cases, especially when triggering it from some action
