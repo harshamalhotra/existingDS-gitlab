@@ -432,6 +432,7 @@ const lineHeight = {
   42: 'var(--gl-line-height-42)',
   44: 'var(--gl-line-height-44)',
   52: 'var(--gl-line-height-52)',
+  heading: 'var(--gl-line-height-heading)',
 };
 const fontFamily = {
   regular: 'var(--gl-font-family-regular)',
@@ -466,6 +467,7 @@ const fontWeight = {
   normal: 'var(--gl-font-weight-normal)',
   semibold: 'var(--gl-font-weight-semibold)',
   bold: 'var(--gl-font-weight-bold)',
+  heading: 'var(--gl-font-weight-heading)',
 };
 
 const colors = {

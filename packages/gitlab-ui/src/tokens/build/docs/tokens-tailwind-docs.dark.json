@@ -41909,6 +41909,35 @@
         "52"
       ],
       "cssWithValue": "var(--gl-line-height-52)"
+    },
+    "heading": {
+      "key": "{line-height.heading}",
+      "$value": 1.25,
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
+      },
+      "filePath": "src/tokens/semantic/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": 1.25,
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "key": "{line-height.heading}"
+      },
+      "name": "LINE_HEIGHT_HEADING",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "heading"
+      ],
+      "cssWithValue": "var(--gl-line-height-heading)"
     }
   },
   "fontFamily": {
@@ -42841,6 +42870,36 @@
         "bold"
       ],
       "cssWithValue": "var(--gl-font-weight-bold)"
+    },
+    "heading": {
+      "key": "{font.weight.heading}",
+      "$value": "600",
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma.scope": [
+          "FONT_WEIGHT"
+        ]
+      },
+      "filePath": "src/tokens/semantic/font.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "{font.weight.bold}",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        },
+        "key": "{font.weight.heading}"
+      },
+      "name": "FONT_WEIGHT_HEADING",
+      "attributes": {},
+      "path": [
+        "font",
+        "weight",
+        "heading"
+      ],
+      "cssWithValue": "var(--gl-font-weight-heading)"
     }
   }
 }

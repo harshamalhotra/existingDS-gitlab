@@ -10,6 +10,17 @@
           ]
         }
       }
+    },
+    "weight": {
+      "heading": {
+        "$value": "{font.weight.bold}",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        }
+      }
     }
   }
 }

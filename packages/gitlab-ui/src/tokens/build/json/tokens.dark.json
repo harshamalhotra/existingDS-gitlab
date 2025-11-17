@@ -7067,7 +7067,1066 @@
           "weight",
           "bold"
         ]
+      },
+      "heading": {
+        "key": "{font.weight.heading}",
+        "$value": "600",
+        "$type": "fontWeight",
+        "$extensions": {
+          "com.figma.scope": [
+            "FONT_WEIGHT"
+          ]
+        },
+        "filePath": "src/tokens/semantic/font.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{font.weight.bold}",
+          "$type": "fontWeight",
+          "$extensions": {
+            "com.figma.scope": [
+              "FONT_WEIGHT"
+            ]
+          },
+          "key": "{font.weight.heading}"
+        },
+        "name": "FONT_WEIGHT_HEADING",
+        "attributes": {},
+        "path": [
+          "font",
+          "weight",
+          "heading"
+        ]
       }
+    }
+  },
+  "heading": {
+    "1": {
+      "key": "{heading.1}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)",
+        "letterSpacing": "-0.01em",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.700}",
+          "letterSpacing": "{letter-spacing.heading}",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.1}"
+      },
+      "name": "HEADING_1",
+      "attributes": {},
+      "path": [
+        "heading",
+        "1"
+      ]
+    },
+    "2": {
+      "key": "{heading.2}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)",
+        "letterSpacing": "-0.01em",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.600}",
+          "letterSpacing": "{letter-spacing.heading}",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.2}"
+      },
+      "name": "HEADING_2",
+      "attributes": {},
+      "path": [
+        "heading",
+        "2"
+      ]
+    },
+    "3": {
+      "key": "{heading.3}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.500}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.3}"
+      },
+      "name": "HEADING_3",
+      "attributes": {},
+      "path": [
+        "heading",
+        "3"
+      ]
+    },
+    "4": {
+      "key": "{heading.4}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "1rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.400}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.4}"
+      },
+      "name": "HEADING_4",
+      "attributes": {},
+      "path": [
+        "heading",
+        "4"
+      ]
+    },
+    "5": {
+      "key": "{heading.5}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "0.875rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.300}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.5}"
+      },
+      "name": "HEADING_5",
+      "attributes": {},
+      "path": [
+        "heading",
+        "5"
+      ]
+    },
+    "6": {
+      "key": "{heading.6}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "0.8125rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.200}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.6}"
+      },
+      "name": "HEADING_6",
+      "attributes": {},
+      "path": [
+        "heading",
+        "6"
+      ]
+    },
+    "scale": {
+      "100": {
+        "key": "{heading.scale.100}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.75rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.100}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.100}"
+        },
+        "name": "HEADING_SCALE_100",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "100"
+        ]
+      },
+      "200": {
+        "key": "{heading.scale.200}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.8125rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.200}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.200}"
+        },
+        "name": "HEADING_SCALE_200",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "200"
+        ]
+      },
+      "300": {
+        "key": "{heading.scale.300}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.875rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.300}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.300}"
+        },
+        "name": "HEADING_SCALE_300",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "300"
+        ]
+      },
+      "400": {
+        "key": "{heading.scale.400}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.400}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.400}"
+        },
+        "name": "HEADING_SCALE_400",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "400"
+        ]
+      },
+      "500": {
+        "key": "{heading.scale.500}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.500}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.500}"
+        },
+        "name": "HEADING_SCALE_500",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "500"
+        ]
+      },
+      "600": {
+        "key": "{heading.scale.600}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.600}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.600}"
+        },
+        "name": "HEADING_SCALE_600",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "600"
+        ]
+      },
+      "700": {
+        "key": "{heading.scale.700}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.700}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.700}"
+        },
+        "name": "HEADING_SCALE_700",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "700"
+        ]
+      },
+      "800": {
+        "key": "{heading.scale.800}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.125,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.800}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": 1.125,
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.800}"
+        },
+        "name": "HEADING_SCALE_800",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "800"
+        ]
+      },
+      "100-fixed": {
+        "key": "{heading.scale.100-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.75rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.100-fixed}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.100-fixed}"
+        },
+        "name": "HEADING_SCALE_100_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "100-fixed"
+        ]
+      },
+      "200-fixed": {
+        "key": "{heading.scale.200-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.8125rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.200-fixed}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.200-fixed}"
+        },
+        "name": "HEADING_SCALE_200_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "200-fixed"
+        ]
+      },
+      "300-fixed": {
+        "key": "{heading.scale.300-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "0.875rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.300-fixed}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.300-fixed}"
+        },
+        "name": "HEADING_SCALE_300_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "300-fixed"
+        ]
+      },
+      "400-fixed": {
+        "key": "{heading.scale.400-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.400-fixed}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.400-fixed}"
+        },
+        "name": "HEADING_SCALE_400_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "400-fixed"
+        ]
+      },
+      "500-fixed": {
+        "key": "{heading.scale.500-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1.125rem",
+          "letterSpacing": "inherit",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.500-fixed}",
+            "letterSpacing": "inherit",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.500-fixed}"
+        },
+        "name": "HEADING_SCALE_500_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "500-fixed"
+        ]
+      },
+      "600-fixed": {
+        "key": "{heading.scale.600-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1.3125rem",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.600-fixed}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.600-fixed}"
+        },
+        "name": "HEADING_SCALE_600_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "600-fixed"
+        ]
+      },
+      "700-fixed": {
+        "key": "{heading.scale.700-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1.5rem",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.25,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.700-fixed}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": "{line-height.heading}",
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.700-fixed}"
+        },
+        "name": "HEADING_SCALE_700_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "700-fixed"
+        ]
+      },
+      "800-fixed": {
+        "key": "{heading.scale.800-fixed}",
+        "$value": {
+          "fontWeight": "600",
+          "marginTop": 0,
+          "fontSize": "1.75rem",
+          "letterSpacing": "-0.01em",
+          "lineHeight": 1.125,
+          "color": "#fff"
+        },
+        "$type": "typography",
+        "filePath": "src/tokens/constant/heading.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": {
+            "fontWeight": "{font.weight.heading}",
+            "marginTop": "{heading.default.margin.top}",
+            "fontSize": "{font.size.800-fixed}",
+            "letterSpacing": "{letter-spacing.heading}",
+            "lineHeight": 1.125,
+            "color": "{text.color.heading}"
+          },
+          "$type": "typography",
+          "key": "{heading.scale.800-fixed}"
+        },
+        "name": "HEADING_SCALE_800_FIXED",
+        "attributes": {},
+        "path": [
+          "heading",
+          "scale",
+          "800-fixed"
+        ]
+      }
+    },
+    "default": {
+      "margin": {
+        "top": {
+          "key": "{heading.default.margin.top}",
+          "$value": 0,
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma.scope": []
+          },
+          "filePath": "src/tokens/semantic/heading.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": 0,
+            "$type": "dimension",
+            "$extensions": {
+              "com.figma.scope": []
+            },
+            "key": "{heading.default.margin.top}"
+          },
+          "name": "HEADING_DEFAULT_MARGIN_TOP",
+          "attributes": {},
+          "path": [
+            "heading",
+            "default",
+            "margin",
+            "top"
+          ]
+        },
+        "bottom": {
+          "key": "{heading.default.margin.bottom}",
+          "$value": "1rem",
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma.scope": []
+          },
+          "filePath": "src/tokens/semantic/heading.tokens.json",
+          "isSource": true,
+          "original": {
+            "$value": "{spacing-scale.5}",
+            "$type": "dimension",
+            "$extensions": {
+              "com.figma.scope": []
+            },
+            "key": "{heading.default.margin.bottom}"
+          },
+          "name": "HEADING_DEFAULT_MARGIN_BOTTOM",
+          "attributes": {},
+          "path": [
+            "heading",
+            "default",
+            "margin",
+            "bottom"
+          ]
+        }
+      }
+    },
+    "display": {
+      "key": "{heading.display}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)",
+        "letterSpacing": "-0.01em",
+        "lineHeight": 1.125,
+        "marginBottom": "1.5rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.800}",
+          "letterSpacing": "{letter-spacing.heading}",
+          "lineHeight": 1.125,
+          "marginBottom": "{spacing-scale.6}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.display}"
+      },
+      "name": "HEADING_DISPLAY",
+      "attributes": {},
+      "path": [
+        "heading",
+        "display"
+      ]
+    },
+    "1-fixed": {
+      "key": "{heading.1-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "1.5rem",
+        "letterSpacing": "-0.01em",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.700-fixed}",
+          "letterSpacing": "{letter-spacing.heading}",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.1-fixed}"
+      },
+      "name": "HEADING_1_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "1-fixed"
+      ]
+    },
+    "2-fixed": {
+      "key": "{heading.2-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "1.3125rem",
+        "letterSpacing": "-0.01em",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.600-fixed}",
+          "letterSpacing": "{letter-spacing.heading}",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.2-fixed}"
+      },
+      "name": "HEADING_2_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "2-fixed"
+      ]
+    },
+    "3-fixed": {
+      "key": "{heading.3-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "1.125rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.500-fixed}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.3-fixed}"
+      },
+      "name": "HEADING_3_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "3-fixed"
+      ]
+    },
+    "4-fixed": {
+      "key": "{heading.4-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "1rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.400-fixed}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.4-fixed}"
+      },
+      "name": "HEADING_4_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "4-fixed"
+      ]
+    },
+    "5-fixed": {
+      "key": "{heading.5-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "0.875rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.300-fixed}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.5-fixed}"
+      },
+      "name": "HEADING_5_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "5-fixed"
+      ]
+    },
+    "6-fixed": {
+      "key": "{heading.6-fixed}",
+      "$value": {
+        "fontWeight": "600",
+        "marginTop": 0,
+        "fontSize": "0.8125rem",
+        "letterSpacing": "inherit",
+        "lineHeight": 1.25,
+        "marginBottom": "1rem",
+        "color": "#fff"
+      },
+      "$type": "typography",
+      "filePath": "src/tokens/semantic/heading.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": {
+          "fontWeight": "{font.weight.heading}",
+          "marginTop": "{heading.default.margin.top}",
+          "fontSize": "{font.size.200-fixed}",
+          "letterSpacing": "inherit",
+          "lineHeight": "{line-height.heading}",
+          "marginBottom": "{heading.default.margin.bottom}",
+          "color": "{text.color.heading}"
+        },
+        "$type": "typography",
+        "key": "{heading.6-fixed}"
+      },
+      "name": "HEADING_6_FIXED",
+      "attributes": {},
+      "path": [
+        "heading",
+        "6-fixed"
+      ]
     }
   },
   "line-height": {
@@ -7349,6 +8408,34 @@
       "path": [
         "line-height",
         "52"
+      ]
+    },
+    "heading": {
+      "key": "{line-height.heading}",
+      "$value": 1.25,
+      "$type": "number",
+      "$extensions": {
+        "com.figma.scope": [
+          "LINE_HEIGHT"
+        ]
+      },
+      "filePath": "src/tokens/semantic/line_height.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": 1.25,
+        "$type": "number",
+        "$extensions": {
+          "com.figma.scope": [
+            "LINE_HEIGHT"
+          ]
+        },
+        "key": "{line-height.heading}"
+      },
+      "name": "LINE_HEIGHT_HEADING",
+      "attributes": {},
+      "path": [
+        "line-height",
+        "heading"
       ]
     }
   },
@@ -35900,6 +36987,36 @@
           "success"
         ]
       }
+    }
+  },
+  "letter-spacing": {
+    "heading": {
+      "key": "{letter-spacing.heading}",
+      "$value": "-0.01em",
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma.scope": [
+          "LETTER_SPACING"
+        ]
+      },
+      "filePath": "src/tokens/semantic/letter_spacing.tokens.json",
+      "isSource": true,
+      "original": {
+        "$value": "-0.01em",
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma.scope": [
+            "LETTER_SPACING"
+          ]
+        },
+        "key": "{letter-spacing.heading}"
+      },
+      "name": "LETTER_SPACING_HEADING",
+      "attributes": {},
+      "path": [
+        "letter-spacing",
+        "heading"
+      ]
     }
   },
   "status": {

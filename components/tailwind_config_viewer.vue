@@ -9,6 +9,37 @@ export default {
   data() {
     return {
       prefix: tailwindDefaults.prefix,
+      headingClasses: [
+        'gl-heading-display',
+        'gl-heading-1',
+        'gl-heading-1-fixed',
+        'gl-heading-2',
+        'gl-heading-2-fixed',
+        'gl-heading-3',
+        'gl-heading-3-fixed',
+        'gl-heading-4',
+        'gl-heading-4-fixed',
+        'gl-heading-5',
+        'gl-heading-5-fixed',
+        'gl-heading-6',
+        'gl-heading-6-fixed',
+        'gl-heading-scale-100',
+        'gl-heading-scale-100-fixed',
+        'gl-heading-scale-200',
+        'gl-heading-scale-200-fixed',
+        'gl-heading-scale-300',
+        'gl-heading-scale-300-fixed',
+        'gl-heading-scale-400',
+        'gl-heading-scale-400-fixed',
+        'gl-heading-scale-500',
+        'gl-heading-scale-500-fixed',
+        'gl-heading-scale-600',
+        'gl-heading-scale-600-fixed',
+        'gl-heading-scale-700',
+        'gl-heading-scale-700-fixed',
+        'gl-heading-scale-800',
+        'gl-heading-scale-800-fixed',
+      ],
       backgroundColor: this.flattenThemeObject(tailwindDefaults.theme.backgroundColor),
       borderColor: this.flattenThemeObject(tailwindDefaults.theme.borderColor),
       textColor: this.flattenThemeObject(tailwindDefaults.theme.textColor),
@@ -138,6 +169,22 @@ export default {
     </section>
 
     <h2 class="gl-heading-2">Typography</h2>
+
+    <section v-if="headingClasses.length" class="gl-mb-7">
+      <h3 class="gl-heading-3">Headings</h3>
+      <note>
+        See
+        <a href="/product-foundations/type-headings">typography headings</a> for heading usage.
+      </note>
+      <grid columns="1">
+        <li v-for="className in headingClasses" :key="className">
+          <div :class="className">The quick brown fox jumps over the lazy dog</div>
+          <div class="gl-mt-3 gl-font-monospace gl-text-sm gl-text-strong">
+            {{ className }}
+          </div>
+        </li>
+      </grid>
+    </section>
 
     <section v-if="fontFamily.length" class="gl-mb-7">
       <h3 class="gl-heading-3">Font Family</h3>
