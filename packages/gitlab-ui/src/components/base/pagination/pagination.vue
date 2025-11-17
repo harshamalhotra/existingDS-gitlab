@@ -82,28 +82,12 @@ export default {
       default: null,
     },
     /**
-     * Text for the previous button (overridden by "previous" slot)
-     */
-    prevText: {
-      type: String,
-      required: false,
-      default: translate('GlPagination.prevText', 'Previous'),
-    },
-    /**
      * When using the compact pagination, use this prop to pass the next page number
      */
     nextPage: {
       type: Number,
       required: false,
       default: null,
-    },
-    /**
-     * Text for the next button (overridden by "next" slot)
-     */
-    nextText: {
-      type: String,
-      required: false,
-      default: translate('GlPagination.nextText', 'Next'),
     },
     /**
      * Text for the ellipsis (overridden by "ellipsis-left" and "ellipsis-right" slots)
@@ -412,14 +396,13 @@ export default {
           @click="!prevPageIsDisabled ? handlePrevious($event, value - 1) : null"
         >
           <!--
-            @slot Content for the "previous" button. Overrides the "prevText" prop.
+            @slot Content for the "previous" button. Overrides the default icon.
             @binding {boolean} active
             @binding {boolean} disabled
             @binding {number} number
             -->
           <slot name="previous" v-bind="{ page: value - 1, disabled: prevPageIsDisabled }">
-            <gl-icon name="chevron-left" />
-            <span class="gl-hidden @sm:gl-block">{{ prevText }}</span>
+            <gl-icon name="chevron-lg-left" />
           </slot>
         </component>
       </li>
@@ -477,14 +460,13 @@ export default {
           @click="!nextPageIsDisabled ? handleNext($event, value + 1) : null"
         >
           <!--
-            @slot Content for the "next" button. Overrides the "nextText" prop.
+            @slot Content for the "next" button. Overrides the default icon.
             @binding {boolean} active
             @binding {boolean} disabled
             @binding {number} number
             -->
           <slot name="next" v-bind="{ page: value + 1, disabled: nextPageIsDisabled }">
-            <span class="gl-hidden @sm:gl-block">{{ nextText }}</span>
-            <gl-icon name="chevron-right" />
+            <gl-icon name="chevron-lg-right" />
           </slot>
         </component>
       </li>

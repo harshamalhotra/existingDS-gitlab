@@ -29,8 +29,6 @@ export default {
   'GlPagination.labelPage': 'Go to page %{page}',
   'GlPagination.labelPrevPage': 'Go to previous page',
   'GlPagination.nav': 'Pagination',
-  'GlPagination.nextText': 'Next',
-  'GlPagination.prevText': 'Previous',
   'GlProgressBar.ariaLabel': 'Progress bar',
   'GlSearchBoxByType.clearButtonTitle': 'Clear',
   'GlSearchBoxByType.input.placeholder': 'Search',
