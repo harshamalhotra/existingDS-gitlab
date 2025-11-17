@@ -122,7 +122,7 @@ fields: [
 - A table row can include additional actions in the far-right column.
 - Ensure that the column has a header with "Actions" as the visible text.
 - These actions should be visible at all times rather than showing on-hover.
-- If there are two or more actions in a table row, consider using a [button group](/components/button-group) or a [“more menu” button](/components/button#ellipsis) with a dropdown list option.
+- If there are two or more actions in a table row, consider using a [button group](/components/button-group) or a [more actions](/components/dropdown-disclosure#more-actions-dropdown) dropdown.
 
 #### Responsiveness
 
@@ -212,8 +212,8 @@ is sortable.
 ```js
 const fields = [
   {
-    key: "column_one",
-    label: __("First column"),
+    key: 'column_one',
+    label: __('First column'),
     sortable: true,
     thAlignRight: true,
   },
@@ -297,36 +297,33 @@ like mentioned in the implementation example.
 
 ```html
 <script>
-export default {
-  fields: [
-    {
-      key: 'column_one',
-      label: __('First column'),
-      thClass: 'w-60p',
-      tdClass: 'table-col d-flex'
-    },
-    {
-      key: 'col_2',
-      label: __('Second column'),
-      thClass: 'w-15p',
-      tdClass: 'table-col d-flex'
-    },
-  ];
-}
+  export default {
+    fields: [
+      {
+        key: 'column_one',
+        label: __('First column'),
+        thClass: 'w-60p',
+        tdClass: 'table-col d-flex'
+      },
+      {
+        key: 'col_2',
+        label: __('Second column'),
+        thClass: 'w-15p',
+        tdClass: 'table-col d-flex'
+      },
+    ];
+  }
 </script>
 <template>
-  <gl-table-lite
-    :items="items"
-    :fields="$options.fields"
-  >
+  <gl-table-lite :items="items" :fields="$options.fields">
     <template #head(column_one)>
-      <div>First column</div><!-- This is the column head for the first object in `fields` -->
+      <div>First column</div>
+      <!-- This is the column head for the first object in `fields` -->
     </template>
 
     <template #cell(column_one)>
       This is the template for column data belonging to the first object
     </template>
-
   </gl-table-lite>
 </template>
 ```
