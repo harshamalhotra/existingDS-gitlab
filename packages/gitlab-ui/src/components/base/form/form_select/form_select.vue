@@ -31,14 +31,6 @@ export default {
       required: false,
       default: '',
     },
-    /**
-     * Number of visible options in the select dropdown. When greater than 1, displays as a scrollable list box.
-     */
-    selectSize: {
-      type: Number,
-      required: false,
-      default: 1,
-    },
   },
   computed: {
     cssClasses() {
@@ -67,13 +59,7 @@ export default {
 </script>
 <template>
   <span class="gl-form-select-wrapper" :class="cssClasses">
-    <b-form-select
-      class="gl-form-select"
-      v-bind="$attrs"
-      :class="selectClass"
-      :select-size="selectSize"
-      v-on="$listeners"
-    >
+    <b-form-select class="gl-form-select" v-bind="$attrs" :class="selectClass" v-on="$listeners">
       <!-- eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots -->
       <template v-for="slot in Object.keys($slots)" #[slot]>
         <slot :name="slot"></slot>
