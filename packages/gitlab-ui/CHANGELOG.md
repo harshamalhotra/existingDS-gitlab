@@ -1,5 +1,30 @@
 # @gitlab/ui
 
+## 126.0.0
+
+### Major Changes
+
+- 4bb0b2c: Remove `dist/tokens` from package.
+
+  Tokens are still available under `src/tokens/build`.
+
+- 5766067: Remove Tailwind migration script.
+
+  If you need access to this script, use `@gitlab/ui@<126.0.0`.
+
+### Minor Changes
+
+- a118ed5: Add typography composite design tokens
+  - Add Tailwind component style-dictionary format to turn composite
+    design tokens into Tailwind components with a single class
+  - Add `expand` config to css, js, and scss style-dictionary platforms
+    to expand composite design token properties into individual property
+    output e.g. `--gl-heading-1-font-size`
+  - Add `heading.*` composite typography design token
+  - Add `font.weight.heading` semantic design token
+  - Add `letter-spacing.heading` semantic design token
+  - Add `line-height.heading` semantic design token
+
 ## 125.0.0
 
 ### Major Changes
