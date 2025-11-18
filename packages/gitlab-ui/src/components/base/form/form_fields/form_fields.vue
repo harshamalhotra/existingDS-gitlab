@@ -154,6 +154,10 @@ export default {
 
     this.formElement?.addEventListener('submit', this.onFormSubmission);
   },
+  created() {
+    this.batchedInputEvent = {};
+    this.isBatchedInputEventScheduled = false;
+  },
   destroyed() {
     this.formElement?.removeEventListener('submit', this.onFormSubmission);
   },
@@ -209,16 +213,8 @@ export default {
         this.setFieldDirty(fieldName);
       }
     },
-    onFieldInput(fieldName, inputValue) {
+    async onFieldInput(fieldName, inputValue) {
       const val = this.getMappedValue(fieldName, inputValue);
-
-      /**
-       * Emitted when any of the form values change. Used by `v-model`.
-       */
-      this.$emit('input', {
-        ...this.values,
-        [fieldName]: val,
-      });
 
       /**
        * Emitted when a form input emits the `input` event.
@@ -227,6 +223,30 @@ export default {
         name: fieldName,
         value: val,
       });
+
+      this.batchedInputEvent = {
+        ...this.batchedInputEvent,
+        [fieldName]: val,
+      };
+
+      // Return if a batched input event has already been scheduled
+      if (this.isBatchedInputEventScheduled) {
+        return;
+      }
+
+      this.isBatchedInputEventScheduled = true;
+      await this.$nextTick();
+
+      /**
+       * Emitted when any of the form values change. Used by `v-model`.
+       */
+      this.$emit('input', {
+        ...this.values,
+        ...this.batchedInputEvent,
+      });
+
+      this.batchedInputEvent = {};
+      this.isBatchedInputEventScheduled = false;
     },
     async onFormSubmission(e) {
       e.preventDefault();
