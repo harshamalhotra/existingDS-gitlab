@@ -676,4 +676,45 @@ describe('GlFormFields', () => {
       });
     });
   });
+
+  describe('when multiple fields emit input event in rapid succession', () => {
+    it('batches emitting input event', async () => {
+      const ParentComponent = {
+        name: 'ParentComponent',
+        TEST_FIELDS,
+        TEST_FORM_ID,
+        components: { GlFormFields },
+        data() {
+          return { formValues: {} };
+        },
+        template:
+          '<gl-form-fields v-model="formValues" :fields="$options.TEST_FIELDS" :form-id="$options.TEST_FORM_ID" />',
+      };
+
+      wrapper = mount(ParentComponent);
+      const formFieldsComponent = wrapper.findComponent(GlFormFields);
+
+      await nextTick();
+
+      const userNameInput = findInputFromLabel('User name');
+      const allCapsInput = findInputFromLabel('All caps (optional)');
+      const fieldWithCustomIdInput = findInputFromLabel('Field with custom ID');
+
+      userNameInput.setValue('foo');
+      allCapsInput.setValue('bar');
+      fieldWithCustomIdInput.setValue('baz');
+
+      // Wait for `input` event
+      await nextTick();
+      // Wait for `values` prop to be updated
+      await nextTick();
+
+      expect(formFieldsComponent.props('values')).toMatchObject({
+        username: 'foo',
+        evenCount: 0,
+        allCaps: 'BAR',
+        fieldWithCustomId: 'baz',
+      });
+    });
+  });
 });
