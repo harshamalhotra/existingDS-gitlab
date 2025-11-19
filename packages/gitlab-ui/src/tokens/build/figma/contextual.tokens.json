@@ -4321,6 +4321,23 @@
       "com.gitlab.locked": true
     }
   },
+  "drawer": {
+    "border": {
+      "radius": {
+        "$value": "{border.radius.2xl}",
+        "$type": "dimension",
+        "$description": "Used for drawer border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "$extensions": {
+      "com.gitlab.locked": true
+    }
+  },
   "dropdown": {
     "background": {
       "color": {

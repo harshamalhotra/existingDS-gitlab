@@ -1162,6 +1162,7 @@
   --gl-card-border-radius: var(--gl-border-radius-lg); /** Used for card border radius. */
   --gl-chart-axis-text-color: var(--gl-text-color-subtle); /** Used in charts for the text color of axis titles and labels. */
   --gl-datepicker-date-text-color-selected: var(--gl-control-indicator-color-selected); /** Used for the datepicker date text color state indicators. */
+  --gl-drawer-border-radius: var(--gl-border-radius-2xl); /** Used for drawer border radius. */
   --gl-dropdown-background-color: var(--gl-background-color-overlap); /** Used for the background of a dropdown. */
   --gl-dropdown-border-color: var(--gl-border-color-default); /** Used for the border of a dropdown. */
   --gl-dropdown-border-radius: var(--gl-border-radius-lg); /** Used for the border radius of a dropdown. */

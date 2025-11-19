@@ -749,6 +749,7 @@ export const GL_CHART_ZOOM_FILLER_COLOR = 'rgba(255, 255, 255, 0.16)';
 export const GL_CHART_ZOOM_HANDLE_COLOR = '#bfbfc3';
 export const GL_DATEPICKER_BACKGROUND_COLOR = '#28272d';
 export const GL_DATEPICKER_DATE_TEXT_COLOR_SELECTED = '#18171d';
+export const GL_DRAWER_BORDER_RADIUS = '1rem';
 export const GL_DROPDOWN_BACKGROUND_COLOR = '#28272d';
 export const GL_DROPDOWN_BORDER_COLOR = '#4c4b51';
 export const GL_DROPDOWN_BORDER_RADIUS = '0.5rem';
