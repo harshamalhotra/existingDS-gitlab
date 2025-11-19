@@ -1172,7 +1172,7 @@ $gl-dropdown-option-indicator-color-selected-focus: $gl-control-background-color
 $gl-dropdown-option-indicator-color-selected-active: $gl-control-background-color-selected-focus; // Used for the dropdown selected option indicator in the active state.
 $gl-dropdown-option-background-color-unselected-focus: $gl-action-neutral-background-color-focus; // Used for the background of an unselected dropdown option in the focus state.
 $gl-dropdown-option-background-color-selected-focus: $gl-dropdown-option-background-color-selected-hover; // Used for the background of a selected dropdown option in the focus state.
-$gl-modal-border-radius: $gl-border-radius-lg; // Used for modal border radius.
+$gl-modal-border-radius: $gl-border-radius-2xl; // Used for modal border radius.
 $gl-progress-bar-indicator-color-default: $gl-status-info-icon-color; // Used for the indicator color for the primary progress-bar variant.
 $gl-progress-bar-indicator-color-success: $gl-status-success-icon-color; // Used for the indicator color for the success progress-bar variant.
 $gl-progress-bar-indicator-color-warning: $gl-status-warning-icon-color; // Used for the indicator color for the warning progress-bar variant.

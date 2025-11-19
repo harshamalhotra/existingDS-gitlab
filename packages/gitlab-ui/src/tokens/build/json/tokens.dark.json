@@ -24240,7 +24240,7 @@
     "border": {
       "radius": {
         "key": "{modal.border.radius}",
-        "$value": "0.5rem",
+        "$value": "1rem",
         "$type": "dimension",
         "$description": "Used for modal border radius.",
         "$extensions": {
@@ -24251,7 +24251,7 @@
         "filePath": "src/tokens/contextual/modal.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.lg}",
+          "$value": "{border.radius.2xl}",
           "$type": "dimension",
           "$description": "Used for modal border radius.",
           "$extensions": {
