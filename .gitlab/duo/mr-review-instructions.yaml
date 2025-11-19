@@ -1,0 +1,44 @@
+---
+# Custom instructions for GitLab Duo Code Review
+# Based on the Pajamas UX maintainer review checklist
+# https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/maintainer-checklist.md
+
+# This file defines custom review criteria that will be applied to specific files
+# during merge request reviews. Instructions are grouped by name and can target
+# multiple file patterns using glob syntax.
+instructions:
+  - name: Content Quality and Writing Standards
+    fileFilters:
+      - 'contents/**/*.md'
+    instructions: |
+      1. Check for grammar and spelling errors.
+      1. Ensure writing follows GitLab's voice and tone guidelines: https://docs.gitlab.com/ee/development/documentation/styleguide/
+      1. Verify the text follows the GitLab documentation style guide, including the punctuation guidelines that recommend Oxford commas: https://docs.gitlab.com/ee/development/documentation/styleguide/#punctuation
+      1. Sections and paragraphs must be concise, avoiding unnecessary repetition or wordiness.
+      1. Verify _emphasis_ and **strong** markdown formatting is used sparingly.
+      1. Ensure text is simple and clear, understandable without additional background information.
+      1. Use "For example" instead of "e.g.".
+      1. Avoid "should" statements - use direct instructions instead.
+      1. Use full, descriptive sentences. For example, prefer "Use cross-column colors to highlight..." over "Use to highlight...".
+      1. Ensure similar or related content is grouped together.
+      1. Verify terminology (technical or GitLab-specific) is used correctly.
+      1. Use singular form when referencing components and users. For example: "A badge can have an icon" instead of "Badges can have an icon".
+      1. Check that unneeded spaces and comments are removed.
+
+  - name: Component Documentation Standards
+    fileFilters:
+      - 'contents/components/**/*.md'
+    instructions: |
+      1. Verify component documentation follows the component template: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/raw/main/pages/components/template.md
+      1. Ensure empty or incomplete required sections have a TODO for future completion.
+      1. Verify component demos are used whenever possible. If not possible, a TODO should be present.
+      1. Check that related components are added as applicable (alternative components or components that are usually paired). Related components should be listed in the frontmatter using the `related:` field with kebab-case slugs (for example, `alert`, `toast`, `broadcast-message`), not full paths or component titles.
+      1. Ensure keyboard navigation is documented in the accessibility section.
+      1. Verify text to be read by screen readers is documented in the accessibility section.
+
+  - name: Cross-References and Links
+    fileFilters:
+      - 'contents/**/*.md'
+    instructions: |
+      1. Verify all links are formatted correctly.
+      1. Ensure component mentions are cross-linked to their respective component pages. That is, a mention of an alert should link to the alert component page. For example: "If you need to communicate system status, consider using an [alert](/components/alert) instead."
