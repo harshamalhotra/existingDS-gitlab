@@ -19,11 +19,11 @@ Prompts to trigger the desired behavior succeed when motivation and ability are 
 
 ## Feature discovery patterns
 
-| Pattern              | Definition                                                                                                     | Examples                                                                                    | Recommendation         |
-| -------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------------------- |
+| Pattern              | Definition                                                                                                     | Examples                                                                                   | Recommendation         |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------- |
 | Implicit discovery   | Features are discovered naturally as the user interacts with the interface, without overt prompts or guidance. | [Navigation sidebar](/patterns/navigation-sidebar), [empty states](/patterns/empty-states) | Preferred              |
-| Contextual discovery | Features are highlighted in context, as the user reaches a point where the feature is relevant or useful.      | [Badge](/components/badge)                                                                  | Use with justification |
-| Disruptive discovery | Features or information are presented in a way that interrupts the user’s flow.                                | [Modal](/components/modal), [banner](/components/banner)                                    | Use rarely             |
+| Contextual discovery | Features are highlighted in context, as the user reaches a point where the feature is relevant or useful.      | [Badge](/components/badge)                                                                 | Use with justification |
+| Disruptive discovery | Features or information are presented in a way that interrupts the user’s flow.                                | [Modal](/components/modal), [banner](/components/banner)                                   | Use rarely             |
 
 ### Implicit discovery
 

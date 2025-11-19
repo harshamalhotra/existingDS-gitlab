@@ -2,7 +2,7 @@
 name: Color
 ---
 
-This page includes [color swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes) for our brand colors. The colors are denoted with a *p* for primary, and *s* for secondary. Default to the following applications when using primary and secondary colors:
+This page includes [color swatches](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/brand-product-marketing/brand-design/-/tree/e6e2bb24e899078935d1aeb0e65c226b6bf36a8b/brand/brand-assets/brand-color-palettes) for our brand colors. The colors are denoted with a _p_ for primary, and _s_ for secondary. Default to the following applications when using primary and secondary colors:
 
 - **Backgrounds** can use gradients or select solid colors: white, Charcoal, or purple
 - **Graphical elements** should default to colors in the primary palette; the colors in the secondary palette can be used as additional accents.
@@ -18,15 +18,15 @@ The primary palette features colors from our core logo and our signature purple.
 
 ### Primary color palette
 
-| **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**                        |
-| ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ------------------------------ |
-| <div class="gl-p-3" style="background-color:#ffffff;color:#171321;"><span class="variable">White</span> </div>                    | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0     | White                          |
-| <div class="gl-p-3" style="background-color:#171321;color:#ffffff;"><span class="variable">Charcoal</span> </div>   | #171321 | 23, 19, 33    | 90, 68, 41, 90 | 433 C / 4280 U                 |
-| <div class="gl-p-3" style="background-color:#FCA326;color:#171321;"><span class="variable">Orange 01p</span> </div>               | #FCA326 | 252, 161, 33  | 0, 40, 80, 5   | 143 C / 1365 U                 |
-| <div class="gl-p-3" style="background-color:#FC6D26;color:#171321;"><span class="variable">Orange 02p</span> </div>               | #FC6D26 | 252, 109, 38  | 0, 60, 80, 5   | 716 C / 144 U                  |
-| <div class="gl-p-3" style="background-color:#E24329;color:#ffffff;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41   | 0, 75, 80, 10  | 7417 C / 1665 U                |
-| <div class="gl-p-3" style="background-color:#A989F5;color:#171321;"><span class="variable">Purple 01p</span> </div>               | #A989F5 | 169, 137, 245 | 53, 55, 0, 0   | 2655 C / 2645 CU               |
-| <div class="gl-p-3" style="background-color:#7759C2;color:#ffffff;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194  | 64, 70, 0, 0   | 2665 C / 2593 U                |
+| **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**          |
+| ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ---------------- |
+| <div class="gl-p-3" style="background-color:#ffffff;color:#171321;"><span class="variable">White</span> </div>      | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0     | White            |
+| <div class="gl-p-3" style="background-color:#171321;color:#ffffff;"><span class="variable">Charcoal</span> </div>   | #171321 | 23, 19, 33    | 90, 68, 41, 90 | 433 C / 4280 U   |
+| <div class="gl-p-3" style="background-color:#FCA326;color:#171321;"><span class="variable">Orange 01p</span> </div> | #FCA326 | 252, 161, 33  | 0, 40, 80, 5   | 143 C / 1365 U   |
+| <div class="gl-p-3" style="background-color:#FC6D26;color:#171321;"><span class="variable">Orange 02p</span> </div> | #FC6D26 | 252, 109, 38  | 0, 60, 80, 5   | 716 C / 144 U    |
+| <div class="gl-p-3" style="background-color:#E24329;color:#ffffff;"><span class="variable">Orange 03p</span> </div> | #E24329 | 226, 67, 41   | 0, 75, 80, 10  | 7417 C / 1665 U  |
+| <div class="gl-p-3" style="background-color:#A989F5;color:#171321;"><span class="variable">Purple 01p</span> </div> | #A989F5 | 169, 137, 245 | 53, 55, 0, 0   | 2655 C / 2645 CU |
+| <div class="gl-p-3" style="background-color:#7759C2;color:#ffffff;"><span class="variable">Purple 02p</span> </div> | #7759C2 | 119, 89, 194  | 64, 70, 0, 0   | 2665 C / 2593 U  |
 
 ## Secondary colors
 
@@ -38,22 +38,22 @@ The secondary palette expands upon our oranges and purples to provide more color
 
 ### Secondary color palette
 
-| **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**                        |
-| ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ------------------------------ |
-| <div class="gl-p-3" style="background-color:#CEB3EF;color:#171321;"><span class="variable">Purple 01s</span> </div>                  | #CEB3EF | 206, 179, 239 | 24, 29, 0, 0    | 2635 C |
-| <div class="gl-p-3" style="background-color:#5943B6;color:#ffffff;"><span class="variable">Purple 02s</span> </div>                  | #5943B6 | 89, 67, 182 | 77, 82, 0, 0 | 2097 C                  |
-| <div class="gl-p-3" style="background-color:#2F2A6B;color:#ffffff;"><span class="variable">Purple 03s</span> </div>    | #2F2A6B | 47, 42, 107 | 98, 98, 27, 15 | 273 C                  |
-| <div class="gl-p-3" style="background-color:#232150;color:#ffffff;"><span class="variable">Purple 04s</span> </div>    | #232150 | 35, 33, 80    | 85, 82, 42, 38 | 275 C                 |
-| <div class="gl-p-3" style="background-color:#FDF1DD;color:#171321;"><span class="variable">Orange 01s</span> </div>    | #FDF1DD | 253, 241, 221    | 1, 4, 12, 0 | 7506 C             |
-| <div class="gl-p-3" style="background-color:#FFB9C9;color:#171321;"><span class="variable">Pink 01s</span> </div>    | #FFB9C9 | 255, 185, 201    | 0, 33, 10, 0 | 1767 C / 1767 U             |
-| <div class="gl-p-3" style="background-color:#C5F4EC;color:#171321;"><span class="variable">Teal 01s</span> </div>    | #C5F4EC | 197, 244, 236    | 20, 0, 11, 0 | 317 C             |
-| <div class="gl-p-3" style="background-color:#6FDAC9;color:#171321;"><span class="variable">Teal 02s</span> </div>                  | #6FDAC9 | 111, 218, 201 | 51, 0, 29, 0    | 3242 C |
-| <div class="gl-p-3" style="background-color:#10B1B1;color:#171321;"><span class="variable">Teal 03s</span> </div>                  | #10B1B1 | 16, 177, 177 | 75, 5, 35, 0 | 7710 C                  |
-| <div class="gl-p-3" style="background-color:#D1D0D3;color:#171321;"><span class="variable">Gray 01</span> </div>                  | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16    | Cool Gray 3 C /  Cool Gray 2 U |
-| <div class="gl-p-3" style="background-color:#A2A1A6;color:#171321;"><span class="variable">Gray 02</span> </div>                  | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U                  |
-| <div class="gl-p-3" style="background-color:#74717A;color:#ffffff;"><span class="variable">Gray 03</span> </div>    | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U                  |
-| <div class="gl-p-3" style="background-color:#45424D;color:#ffffff;"><span class="variable">Gray 04</span> </div>    | #45424D | 69, 66, 77    | 41, 28, 22, 70 | 7540 C / 419 U                 |
-| <div class="gl-p-3" style="background-color:#2B2838;color:#ffffff;"><span class="variable">Gray 05</span> </div>    | #2B2838 | 43, 40, 56    | 94, 77, 53, 94 | 426 C / Black 6 U              |
+| **Swatch**                                                                                                          | **HEX** | **RGB**       | **CMYK**       | **PMS**                       |
+| ------------------------------------------------------------------------------------------------------------------- | ------- | ------------- | -------------- | ----------------------------- |
+| <div class="gl-p-3" style="background-color:#CEB3EF;color:#171321;"><span class="variable">Purple 01s</span> </div> | #CEB3EF | 206, 179, 239 | 24, 29, 0, 0   | 2635 C                        |
+| <div class="gl-p-3" style="background-color:#5943B6;color:#ffffff;"><span class="variable">Purple 02s</span> </div> | #5943B6 | 89, 67, 182   | 77, 82, 0, 0   | 2097 C                        |
+| <div class="gl-p-3" style="background-color:#2F2A6B;color:#ffffff;"><span class="variable">Purple 03s</span> </div> | #2F2A6B | 47, 42, 107   | 98, 98, 27, 15 | 273 C                         |
+| <div class="gl-p-3" style="background-color:#232150;color:#ffffff;"><span class="variable">Purple 04s</span> </div> | #232150 | 35, 33, 80    | 85, 82, 42, 38 | 275 C                         |
+| <div class="gl-p-3" style="background-color:#FDF1DD;color:#171321;"><span class="variable">Orange 01s</span> </div> | #FDF1DD | 253, 241, 221 | 1, 4, 12, 0    | 7506 C                        |
+| <div class="gl-p-3" style="background-color:#FFB9C9;color:#171321;"><span class="variable">Pink 01s</span> </div>   | #FFB9C9 | 255, 185, 201 | 0, 33, 10, 0   | 1767 C / 1767 U               |
+| <div class="gl-p-3" style="background-color:#C5F4EC;color:#171321;"><span class="variable">Teal 01s</span> </div>   | #C5F4EC | 197, 244, 236 | 20, 0, 11, 0   | 317 C                         |
+| <div class="gl-p-3" style="background-color:#6FDAC9;color:#171321;"><span class="variable">Teal 02s</span> </div>   | #6FDAC9 | 111, 218, 201 | 51, 0, 29, 0   | 3242 C                        |
+| <div class="gl-p-3" style="background-color:#10B1B1;color:#171321;"><span class="variable">Teal 03s</span> </div>   | #10B1B1 | 16, 177, 177  | 75, 5, 35, 0   | 7710 C                        |
+| <div class="gl-p-3" style="background-color:#D1D0D3;color:#171321;"><span class="variable">Gray 01</span> </div>    | #D1D0D3 | 209, 208, 211 | 8, 5, 7, 16    | Cool Gray 3 C / Cool Gray 2 U |
+| <div class="gl-p-3" style="background-color:#A2A1A6;color:#171321;"><span class="variable">Gray 02</span> </div>    | #A2A1A6 | 162, 161, 166 | 19, 12, 13, 34 | 422 C / 422 U                 |
+| <div class="gl-p-3" style="background-color:#74717A;color:#ffffff;"><span class="variable">Gray 03</span> </div>    | #74717A | 116, 113, 122 | 30, 20, 19, 58 | 424 C / 425 U                 |
+| <div class="gl-p-3" style="background-color:#45424D;color:#ffffff;"><span class="variable">Gray 04</span> </div>    | #45424D | 69, 66, 77    | 41, 28, 22, 70 | 7540 C / 419 U                |
+| <div class="gl-p-3" style="background-color:#2B2838;color:#ffffff;"><span class="variable">Gray 05</span> </div>    | #2B2838 | 43, 40, 56    | 94, 77, 53, 94 | 426 C / Black 6 U             |
 
 ## Gradients
 
@@ -61,7 +61,7 @@ Gradients are an essential part of our brand and a key way that we incorporate c
 
 ### Linear gradients
 
-Our brand colors can be categorized into three color families: *purple*, *orange*, and *teal*. One-step or two-step gradients can be created within their respective color family, meaning that the hues within a single gradient are only one or two shades away from one another. Follow the steps below for creating these types of gradients:
+Our brand colors can be categorized into three color families: _purple_, _orange_, and _teal_. One-step or two-step gradients can be created within their respective color family, meaning that the hues within a single gradient are only one or two shades away from one another. Follow the steps below for creating these types of gradients:
 
 - Start by selecting a color family. Then choose a color within the family.
 - From that color you can move either one or two tones away to select the second color for the gradient.
