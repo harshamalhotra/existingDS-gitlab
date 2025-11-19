@@ -12,12 +12,19 @@ The absolute format clarifies the precise date and time that something occurred.
 
 We can either display a [localized time and date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) based on the user's location or use a non-localized format following the [ISO 8601 standard](https://www.iso.org/iso-8601-date-and-time-format.html).
 
-- Localized dates display the day, month, and full year by default (for example: Jan 3, 2022). The date can be shortened to the day and month when space is tight (Jan 3). If the date is shortened, show the full date and time data in a tooltip, along with the timezone (Jan 3, 2022 11:00am UTC-8).
+- Localized dates display the day, month, and full year by default (for example: Jan 3, 2022). The date can be shortened to the day and month when space is limited (Jan 3).
   - Use the `numeric` value of the `year` [parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters) to display the year in full (for example: 2022). The shortened version of the year may be used instead if there is limited space (22).
   - For the `month` parameter, use the `short` value (for example: Mar). Note that the API will auto-adjust to `full` if the language can't be shortened.
   - For the `day` parameter, use the `numeric` value. (For example: 1)
   - For `timeZoneName`, use either `short` (for example: UTC-8) or `long` (for example: Pacific Standard Time), depending on space and what is needed to make the time zone clear in context.
 - ISO 8601 format is displayed YYYY-MM-DD. Time can also be appended to the end of the date if necessary (HH:MM:SS).
+
+Dates are localized to each user's location. For dates shortened due to limited space, use a tooltip to show the full date, time, and timezone.
+
+| Location | Locale | Formatted display |
+| ------ | ------ | ------ |
+| New York City, US | en-US | Jan 3, 2022 11:00:00 UTC-5 |
+| London, UK | en-GB | 3 Jan 2022 16:00:00 GMT (UTC+0) |
 
 ### Relative format
 
