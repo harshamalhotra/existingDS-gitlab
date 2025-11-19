@@ -585,9 +585,6 @@
   --gl-action-danger-background-color-hover: rgba(245, 127, 108, 0.16); /** Used for the background of a danger (destructive) action in the hover state. */
   --gl-action-danger-background-color-active: rgba(174, 24, 0, 0.24); /** Used for the background of a danger (destructive) action in the active state. */
   --gl-letter-spacing-heading: -0.01em;
-  --gl-text-primary: #28272d; /** Use text.color.default instead. */
-  --gl-text-secondary: #737278; /** Use text.color.subtle instead. */
-  --gl-text-tertiary: #89888d; /** Use text.color.disabled instead. */
   --gl-heading-3-letter-spacing: inherit;
   --gl-heading-4-letter-spacing: inherit;
   --gl-heading-5-letter-spacing: inherit;
@@ -1222,6 +1219,9 @@
   --gl-icon-color-warning: var(--gl-text-color-warning); /** Used for an icon associated with a warning. */
   --gl-icon-color-danger: var(--gl-text-color-danger); /** Used for an icon associated with an error or danger. */
   --gl-icon-color-success: var(--gl-text-color-success); /** Used for an icon associated with success or validity. */
+  --gl-text-primary: var(--gl-text-color-default); /** Use text.color.default instead. */
+  --gl-text-secondary: var(--gl-text-color-subtle); /** Use text.color.subtle instead. */
+  --gl-text-tertiary: var(--gl-text-color-disabled); /** Use text.color.disabled instead. */
   --gl-heading-1-font-weight: var(--gl-font-weight-heading);
   --gl-heading-1-margin-bottom: var(--gl-heading-default-margin-bottom);
   --gl-heading-1-color: var(--gl-text-color-heading);

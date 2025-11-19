@@ -583,9 +583,6 @@ $gl-action-danger-background-color-default: rgba(245, 127, 108, 0.0); // Used fo
 $gl-action-danger-background-color-hover: rgba(245, 127, 108, 0.16); // Used for the background of a danger (destructive) action in the hover state.
 $gl-action-danger-background-color-active: rgba(174, 24, 0, 0.24); // Used for the background of a danger (destructive) action in the active state.
 $gl-letter-spacing-heading: -0.01em;
-$gl-text-primary: #28272d; // Use text.color.default instead.
-$gl-text-secondary: #737278; // Use text.color.subtle instead.
-$gl-text-tertiary: #89888d; // Use text.color.disabled instead.
 $gl-heading-3-letter-spacing: inherit;
 $gl-heading-4-letter-spacing: inherit;
 $gl-heading-5-letter-spacing: inherit;
@@ -1220,6 +1217,9 @@ $gl-icon-color-link: $gl-text-color-link; // Used for an icon within a link.
 $gl-icon-color-warning: $gl-text-color-warning; // Used for an icon associated with a warning.
 $gl-icon-color-danger: $gl-text-color-danger; // Used for an icon associated with an error or danger.
 $gl-icon-color-success: $gl-text-color-success; // Used for an icon associated with success or validity.
+$gl-text-primary: $gl-text-color-default; // Use text.color.default instead.
+$gl-text-secondary: $gl-text-color-subtle; // Use text.color.subtle instead.
+$gl-text-tertiary: $gl-text-color-disabled; // Use text.color.disabled instead.
 $gl-heading-1-font-weight: $gl-font-weight-heading;
 $gl-heading-1-margin-bottom: $gl-heading-default-margin-bottom;
 $gl-heading-1-color: $gl-text-color-heading;
