@@ -35,316 +35,122 @@ If you design outside the design system, use color styles from **📙&nbsp;Compo
 
 Use design tokens in code through these approaches, listed in order of preference:
 
-1. **[Pajamas components](/product-foundations/design-tokens-technical-implementation#pajamas-components)**: The primary way to implement design tokens in your UI.
-1. **[CSS utility classes](/product-foundations/design-tokens-technical-implementation#css-utilities)**: For custom styling needs not covered by Pajamas components.
-1. **[CSS custom properties](/product-foundations/design-tokens-technical-implementation#css-custom-properties)**: For precise control over specific CSS properties.
+1. **Components**: The primary way to implement design tokens in your UI.
+2. **CSS utilities**: For custom styling needs not covered by components.
+3. **CSS custom properties**: For precise control over specific CSS properties.
 
 If these options don't meet your needs, [reach out to the design system team](https://handbook.gitlab.com/handbook/engineering/development/dev/foundations/design-system/) to discuss potential improvements.
 
-Using design tokens in code is explained in more detail in [design tokens technical implementation](/product-foundations/design-tokens-technical-implementation).
+### Components
 
-## Concepts
+Components use design tokens by default and support color modes like dark mode.
 
-Our design tokens are organized into conceptual categories that reflect their purpose and usage within the user interface. These categories help create consistent, accessible, and meaningful user experiences across the product. Consider the context, user needs, and overall design consistency when designing custom elements that use design tokens. Use sufficient color contrast and provide text alternatives for all visual indicators.
+### CSS utilities
 
-### Actions
+CSS utilities using Tailwind use design token CSS custom properties for values. CSS utilities can be used for general styling with classes or `@apply` rules. When required, CSS utilities can be used to customize components. See the [documentation](https://gitlab-org.gitlab.io/frontend/tailwind-documentation) for available classes.
 
-Actions are interactive elements that trigger or represent user actions. `action.*` design tokens give a common visual style for interactive elements across the GitLab UI.
+For predictable styling between color modes use [semantic design token](/product-foundations/design-tokens#semantic-design-tokens) utilities, for example, `.gl-text-subtle` or `.gl-bg-default`.
 
-To create bespoke interactive elements, combine background, foreground, and border color design tokens. Note that in some modes, borders might not be visible by default. This is intentional to provide accessible boundaries in modes like Windows High Contrast Mode.
+<note>Using color scale values directly like `.gl-text-green-900` or `.gl-bg-white` with utilities is deprecated. [Constant design tokens](/product-foundations/design-tokens#constant-design-tokens) are not currently exposed as CSS utilities for use as they do not provide values for color modes.</note>
 
-Action design tokens support three contexts:
+### CSS custom properties
 
-- `neutral`: Default for most actions.
-- `confirm`: For positive outcome actions.
-- `danger`: For potentially destructive actions.
+GitLab UI provides all design tokens as CSS custom properties scoped to the `:root` element by default. In cases where CSS utilities don't provide appropriate styles, CSS custom properties can be used. For example, using a contextual design token like `button.default.primary.foreground.color.default` which is not provided as a CSS utility can be accessed as a CSS custom property:
 
-Interactivity can be communicated through implementing states such as `hover`, `focus`, and `active`.
-
-Consider using existing GitLab components (such as [button](/components/button), [pagination](/components/pagination), and [tabs](/components/tabs)) that already implement action design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
-
-<design-tokens-table group="action"></design-tokens-table>
-
-### Controls
-
-Controls enable user input and selection, typically within a [form](/patterns/forms). `control.*` design tokens apply consistent styling to form elements across the GitLab UI. They're also used for elements that appear or function like a form control, even though the underlying code or semantics may not always match a native HTML form element.
-
-Control design tokens support implementations of:
-
-- Input fields (text, email, password, and more).
-- Checkboxes and radio buttons.
-- Textareas and multiline inputs.
-- Select menus.
-- Form element validation, readonly, and disabled states.
-
-Consider using existing GitLab components (such as [checkbox](/components/checkbox), [radio button](/components/radio-button), [select](/components/select), [textarea](/components/textarea), and [text input](/components/text-input)) that already implement control design tokens. These provide consistent styling and behavior without custom implementation. For more information on available components, see the [components overview](/components).
-
-<design-tokens-table group="control"></design-tokens-table>
-
-### Feedback
-
-`feedback.*` design tokens are used to communicate dynamic information about the result of an action, event, or opportunity. Feedback often requires a user's attention or action.
-
-Use feedback design tokens when:
-
-- Notifying a user about a system event (for example, an error or successful action).
-- Promoting a new feature or important information.
-- Providing guidance or additional context.
-
-Examples of custom feedback elements:
-
-- A notice that alerts about unusual performance patterns, or an available dependancy update.
-- An inline update providing compliance check feedback, or discovery of a new vulnerability.
-- An addition to a collaboration activity stream.
-
-```html
-<!-- live-example -->
-<div class="gl-grid gl-gap-3 gl-text-base">
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-strong gl-text-feedback-strong">
-    <gl-icon class="gl-fill-feedback-strong" name="error" />
-    <span class="gl-flex-1">feedback.strong</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-neutral gl-text-feedback-neutral">
-    <gl-icon class="gl-fill-feedback-neutral" name="error" />
-    <span class="gl-flex-1">feedback.neutral</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-info gl-text-feedback-info">
-    <gl-icon class="gl-fill-feedback-info" name="error" />
-    <span class="gl-flex-1">feedback.info</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-success gl-text-feedback-success">
-    <gl-icon class="gl-fill-feedback-success" name="error" />
-    <span class="gl-flex-1">feedback.success</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-warning gl-text-feedback-warning">
-    <gl-icon class="gl-fill-feedback-warning" name="error" />
-    <span class="gl-flex-1">feedback.warning</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-danger gl-text-feedback-danger">
-    <gl-icon class="gl-fill-feedback-danger" name="error" />
-    <span class="gl-flex-1">feedback.danger</span>
-  </div>
-</div>
+```css
+.element-with-button-foreground-color {
+  color: var(--gl-button-default-primary-foreground-color-default);
+}
 ```
 
-<design-tokens-table group="feedback"></design-tokens-table>
+Remember to use them [semantically](/product-foundations/design-tokens#semantic-design-tokens). Don't use `info` if you only want the color `blue`. In different modes, `info` may be a different color. So only use that token if the element it applies to is an informational element.
 
-### Highlighting
+### Work with dark mode
 
-Highlighting is a way to emphasize or draw attention to content without implying any particular meaning. `highlight.*` design tokens help a user identify relevant information or relationships within the interface.
+Using [semantic](/product-foundations/design-tokens#semantic-design-tokens) design tokens provides support for color modes like dark mode.
 
-Highlight design tokens support two contexts:
+#### Dark mode overrides
 
-- `match`: Drawing attention to matched results.
-- `target`: Identifying referenced (targeted) elements or visualizing relationships between content or elements when one or more is the target.
+<note>Overrides will not reflect values when design tokens are updated, and do not scale as we add new modes. For instance, if we add a high contrast mode, we'd need a `high-contrast:` modifier in addition</note>
 
-Use highlight design tokens when:
+##### Using CSS utilities
 
-- Temporary visual emphasis is needed that is informational rather than interactive.
-- Visually connecting related elements without changing their meaning.
+If you must use an override, the preferred method is to use CSS utilities with the `dark:` modifier. For example, to override a subtle background in dark mode:
 
-Examples of highlight elements:
+<do>
 
-- Matched search terms, filtered results, or autocomplete suggestions.
-- Indicating which element is referenced in the URL.
-- Highlighting a row on hover to emphasize the relationship of content within.
-- Indicating which element is related to another that currently has the user's attention.
-
-<design-tokens-table group="highlight"></design-tokens-table>
-
-### Status
-
-`status.*` design tokens represent the current state or condition of an element or system. A status item provides static information that doesn't typically require immediate action.
-
-Use status design tokens when:
-
-- Indicating the current state of an item (for example, in progress or completed).
-- Showing a priority or importance level.
-- Representing system health or connection status.
-
-Examples of custom status elements:
-
-- A color-coded indicator showing task urgency, or the current state of a CI pipeline.
-- A small icon representing the confidentiality level of a document, or the visibility of a repository.
-- Text communicating code test coverage as a percentage.
+Override a semantic token with specific color token:
 
 ```html
-<!-- live-example -->
- <div class="gl-grid gl-gap-3 gl-text-base">
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-neutral gl-text-status-neutral">
-    <gl-icon class="gl-fill-status-neutral" name="error" />
-    <span class="gl-flex-1">status.neutral</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-info gl-text-status-info">
-    <gl-icon class="gl-fill-status-info" name="error" />
-    <span class="gl-flex-1">status.info</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-success gl-text-status-success">
-    <gl-icon class="gl-fill-status-success" name="error" />
-    <span class="gl-flex-1">status.success</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-warning gl-text-status-warning">
-    <gl-icon class="gl-fill-status-warning" name="error" />
-    <span class="gl-flex-1">status.warning</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-danger gl-text-status-danger">
-    <gl-icon class="gl-fill-status-danger" name="error" />
-    <span class="gl-flex-1">status.danger</span>
-  </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-brand gl-text-status-brand">
-    <gl-icon class="gl-fill-status-brand" name="error" />
-    <span class="gl-flex-1">status.brand</span>
-  </div>
-</div>
+<div class="gl-bg-subtle dark:gl-bg-neutral-900"></div>
 ```
 
-<design-tokens-table group="status"></design-tokens-table>
+</do>
 
-### Containers
+<dont>
 
-The following combinations are commonly used to visually wrap content. Each combination has a noticeable difference between the border and background. Container presentation is covered more in the section on how to [visually define content areas](/product-foundations/layout#visually-define-content-areas).
+Use constants or override a semantic token with another semantic token:
 
-<table>
-  <thead>
-    <tr>
-      <th>Appearance</th>
-      <th>Design tokens</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border gl-border-default gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-       <code>background.color.default</code><br><code>border.color.default</code>
-      </td>
-      <td class="!gl-pt-6">Default combination when a background and border is needed</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.default</code><br><code>border.color.subtle</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually less prominent borders on default background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-strong gl-bg-default"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.default</code><br><code>border.color.strong</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually pronounced borders on default background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-subtle"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.subtle</code><br><code>border.color.subtle</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually subdued border and background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-strong gl-bg-strong"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.strong</code><br><code>border.color.strong</code>
-      </td>
-      <td class="!gl-pt-6">Container with visually emphasized border and background</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-section gl-bg-section"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.section</code><br><code>border.color.section</code>
-      </td>
-      <td class="!gl-pt-6">Container with mode-dependent visual presentation</td>
-    </tr>
-    <tr>
-      <td class="!gl-p-6"><div class="gl-py-7 gl-px-12 gl-rounded-default gl-border !gl-border-subtle gl-bg-disabled"><br></div></td>
-      <td class="!gl-pt-6">
-        <code>background.color.disabled</code><br><code>border.color.subtle</code>
-      </td>
-      <td class="!gl-pt-6">Disabled container with visually muted appearance</td>
-    </tr>
-  </tbody>
-</table>
+```html
+<div class="gl-bg-neutral-10 dark:gl-bg-neutral-900"></div>
+<div class="gl-bg-subtle dark:gl-bg-section"></div>
+```
 
-## Considerations
+</dont>
 
-### Choosing between feedback and status
+##### Using `@apply`
 
-Use these factors to decide between using feedback and status design tokens:
+To apply CSS utilities in SCSS stylesheets use the [@apply method](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) to specify dark variants inline. For example, to override a subtle background in dark mode:
 
-<table>
-  <thead>
-    <tr>
-      <th>Characteristic</th>
-      <th>Feedback</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Purpose</td>
-      <td>Communicates changes or opportunities</td>
-      <td>Informs about current state</td>
-    </tr>
-    <tr>
-      <td>Timing</td>
-      <td>Triggered by events or changes</td>
-      <td>Always present</td>
-    </tr>
-    <tr>
-      <td>User attention</td>
-      <td>Often requires immediate action</td>
-      <td>Doesn't require immediate action</td>
-    </tr>
-    <tr>
-      <td>Persistence</td>
-      <td>Often temporary</td>
-      <td>Persistent until state changes</td>
-    </tr>
-    <tr>
-      <td>Scope</td>
-      <td>Can relate to entire system</td>
-      <td>Specific to particular element</td>
-    </tr>
-    <tr>
-      <td>Interactivity</td>
-      <td>May include interactive elements</td>
-      <td>Typically non-interactive</td>
-    </tr>
-    <tr>
-      <td>Examples</td>
-      <td>
-        <ul>
-          <li>Notice of a performance issue.</li>
-          <li>Dependency update alert.</li>
-          <li>Compliance check results.</li>
-          <li>New vulnerability notification.</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>Task urgency indicator.</li>
-          <li>CI pipeline state.</li>
-          <li>Repository visibility icon.</li>
-          <li>Code coverage percentage.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+```css
+.my-class {
+  @apply gl-bg-subtle dark:gl-bg-neutral-900;
+}
+```
 
-Additional considerations:
+See the [SCSS style guide](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html#2-apply-utility-classes-in-component-classes-when-necessary) for additional guidance on utility classes in HTML directly (preferred) vs. component classes (when necessary).
 
-1. Dynamic vs. static: Feedback is often dynamic and changing, while status tends to be more static, changing only when the underlying state changes.
-1. Context: Consider the broader context of the user interface. Status is often used within components or alongside specific elements, while feedback might appear separately or overlay other content.
-1. Combination use: In some cases, you might use both status and feedback design tokens together. For example, status design tokens to show the current state of a CI/CD pipeline, with feedback design tokens to communicate that a merged result pipeline has failed.
-1. Active processes: For ongoing processes (like 'in progress' or 'syncing'), consider using status, as these represent the current state even though they're dynamic.
+#### Bespoke dark mode solutions
 
-When in doubt, consider whether the information represents the current state of something (status) or is communicating a change or the result of an event (feedback). Remember that the primary goal is to provide clear, consistent, and meaningful information to the user in the context of GitLab.
+Design tokens are a product of the design system, not a store of every variable or style that changes across modes.
 
-### Patterns and matching
+If you cannot use an existing design token or override its value in dark mode, this is the preferred method for you to author and maintain your own styles that might change across modes.
 
-<todo issue="https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1816">Document token pairing for color patterns and token matching for conceptual patterns.</todo>
+Add your variables to a `root.css` file in your project, for example [root.scss](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/assets/stylesheets/root.scss) in GitLab, using the following structure:
 
-### Accessibility considerations
+```css
+:root {
 
-<todo>Document accessibility considerations when matching design tokens.</todo>
+  /**
+   * <Name of styles>
+   * Discussion: <#issue>
+   * Owner: <stage:group>
+   */
+  --example-icon-color: var(--gl-color-green-700);
+
+  &.gl-dark {
+    --example-icon-color: var(--gl-color-green-300);
+```
+
+This approach:
+
+- limits tech and design debt creation by making decisions visible.
+- centralizes information for the design systems team to inform our roadmap.
+- keeps teams moving quickly on fast-moving and experimental work.
+- simplifies the transition to design tokens if the attributes become part of the design system.
+
+##### Legacy `.gl-dark` Selector (Deprecated)
+
+Legacy styles use the `.gl-dark` selector to apply dark mode styles directly. This approach is deprecated as it doesn't scale for additional color modes and requires manual updates with parent CSS selectors:
+
+```scss
+.exampleSelector {
+  color: black;
+
+  .gl-dark & {
+    color: white;
+  }
+}
+```
+
+While you'll see this pattern in our codebase, we are actively phasing it out. If you believe you have a legitimate reason to use `.gl-dark`, reach out to the design system team — this likely indicates a gap in our design system that we need to fix.
