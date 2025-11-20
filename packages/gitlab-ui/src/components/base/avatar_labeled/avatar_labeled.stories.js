@@ -146,7 +146,8 @@ export const WithLinks = (args, { argTypes }) => ({
           <gl-icon
             v-gl-tooltip="'Public - The project can be accessed without any authentication.'"
             name="earth"
-            class="gl-text-secondary gl-ml-2"
+            variant="subtle"
+            class="gl-ml-2"
           />
         </template>
         <div class="gl-max-w-75">
