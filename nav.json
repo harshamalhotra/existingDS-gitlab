@@ -182,16 +182,16 @@
                 "path": "design-tokens"
               },
               {
+                "title": "Authoring guide",
+                "path": "design-tokens-authoring"
+              },
+              {
                 "title": "Reading guide",
                 "path": "design-tokens-reading"
               },
               {
                 "title": "Usage guide",
                 "path": "design-tokens-using"
-              },
-              {
-                "title": "Technical implementation",
-                "path": "design-tokens-technical-implementation"
               },
               {
                 "title": "All design tokens",
