@@ -32155,7 +32155,7 @@
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "#ececef",
+        "$value": "{text.color.default}",
         "$type": "color",
         "$description": "Use text.color.default instead.",
         "$extensions": {
@@ -32176,7 +32176,7 @@
     },
     "secondary": {
       "key": "{text.secondary}",
-      "$value": "#89888d",
+      "$value": "#bfbfc3",
       "$type": "color",
       "$description": "Use text.color.subtle instead.",
       "$extensions": {
@@ -32188,7 +32188,7 @@
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "#89888d",
+        "$value": "{text.color.subtle}",
         "$type": "color",
         "$description": "Use text.color.subtle instead.",
         "$extensions": {
@@ -32209,7 +32209,7 @@
     },
     "tertiary": {
       "key": "{text.tertiary}",
-      "$value": "#737278",
+      "$value": "#89888d",
       "$type": "color",
       "$description": "Use text.color.disabled instead.",
       "$extensions": {
@@ -32221,7 +32221,7 @@
       "filePath": "src/tokens/semantic/text.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "#737278",
+        "$value": "{text.color.disabled}",
         "$type": "color",
         "$description": "Use text.color.disabled instead.",
         "$extensions": {

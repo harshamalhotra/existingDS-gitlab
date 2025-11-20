@@ -2524,10 +2524,7 @@
   },
   "text": {
     "primary": {
-      "$value": {
-        "default": "#28272d",
-        "dark": "#ececef"
-      },
+      "$value": "{text.color.default}",
       "$type": "color",
       "$description": "Use text.color.default instead.",
       "$extensions": {
@@ -2538,10 +2535,7 @@
       "$deprecated": true
     },
     "secondary": {
-      "$value": {
-        "default": "#737278",
-        "dark": "#89888d"
-      },
+      "$value": "{text.color.subtle}",
       "$type": "color",
       "$description": "Use text.color.subtle instead.",
       "$extensions": {
@@ -2552,10 +2546,7 @@
       "$deprecated": true
     },
     "tertiary": {
-      "$value": {
-        "default": "#89888d",
-        "dark": "#737278"
-      },
+      "$value": "{text.color.disabled}",
       "$type": "color",
       "$description": "Use text.color.disabled instead.",
       "$extensions": {
