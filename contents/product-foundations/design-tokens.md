@@ -103,23 +103,23 @@ Examples of custom feedback elements:
 <!-- live-example -->
 <div class="gl-grid gl-gap-3 gl-text-base">
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-strong gl-border gl-border-feedback-strong gl-text-feedback-strong">
-    <gl-icon class="gl-fill-feedback-strong" name="error" />
+    <gl-icon class="gl-fill-feedback-strong" name="canceled-circle" />
     <span class="gl-flex-1">feedback.strong</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-neutral gl-border gl-border-feedback-neutral gl-text-feedback-neutral">
-    <gl-icon class="gl-fill-feedback-neutral" name="error" />
+    <gl-icon class="gl-fill-feedback-neutral" name="dash-circle" />
     <span class="gl-flex-1">feedback.neutral</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-info gl-border gl-border-feedback-info gl-text-feedback-info">
-    <gl-icon class="gl-fill-feedback-info" name="error" />
+    <gl-icon class="gl-fill-feedback-info" name="information-o" />
     <span class="gl-flex-1">feedback.info</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-success gl-border gl-border-feedback-success gl-text-feedback-success">
-    <gl-icon class="gl-fill-feedback-success" name="error" />
+    <gl-icon class="gl-fill-feedback-success" name="check-circle" />
     <span class="gl-flex-1">feedback.success</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-warning gl-border gl-border-feedback-warning gl-text-feedback-warning">
-    <gl-icon class="gl-fill-feedback-warning" name="error" />
+    <gl-icon class="gl-fill-feedback-warning" name="warning" />
     <span class="gl-flex-1">feedback.warning</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-danger gl-border gl-border-feedback-danger gl-text-feedback-danger">
@@ -174,19 +174,19 @@ Examples of custom status elements:
 <!-- live-example -->
  <div class="gl-grid gl-gap-3 gl-text-base">
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-neutral gl-text-status-neutral">
-    <gl-icon class="gl-fill-status-neutral" name="error" />
+    <gl-icon class="gl-fill-status-neutral" name="dash-circle" />
     <span class="gl-flex-1">status.neutral</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-info gl-text-status-info">
-    <gl-icon class="gl-fill-status-info" name="error" />
+    <gl-icon class="gl-fill-status-info" name="information-o" />
     <span class="gl-flex-1">status.info</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-success gl-text-status-success">
-    <gl-icon class="gl-fill-status-success" name="error" />
+    <gl-icon class="gl-fill-status-success" name="check-circle" />
     <span class="gl-flex-1">status.success</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-warning gl-text-status-warning">
-    <gl-icon class="gl-fill-status-warning" name="error" />
+    <gl-icon class="gl-fill-status-warning" name="warning" />
     <span class="gl-flex-1">status.warning</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-danger gl-text-status-danger">
@@ -194,7 +194,7 @@ Examples of custom status elements:
     <span class="gl-flex-1">status.danger</span>
   </div>
   <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-status-brand gl-text-status-brand">
-    <gl-icon class="gl-fill-status-brand" name="error" />
+    <gl-icon class="gl-fill-status-brand" name="tanuki" />
     <span class="gl-flex-1">status.brand</span>
   </div>
 </div>
