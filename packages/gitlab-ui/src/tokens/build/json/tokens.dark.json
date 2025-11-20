@@ -21412,6 +21412,41 @@
       }
     }
   },
+  "drawer": {
+    "border": {
+      "radius": {
+        "key": "{drawer.border.radius}",
+        "$value": "1rem",
+        "$type": "dimension",
+        "$description": "Used for drawer border radius.",
+        "$extensions": {
+          "com.figma.scope": [
+            "CORNER_RADIUS"
+          ]
+        },
+        "filePath": "src/tokens/contextual/drawer.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{border.radius.2xl}",
+          "$type": "dimension",
+          "$description": "Used for drawer border radius.",
+          "$extensions": {
+            "com.figma.scope": [
+              "CORNER_RADIUS"
+            ]
+          },
+          "key": "{drawer.border.radius}"
+        },
+        "name": "DRAWER_BORDER_RADIUS",
+        "attributes": {},
+        "path": [
+          "drawer",
+          "border",
+          "radius"
+        ]
+      }
+    }
+  },
   "dropdown": {
     "background": {
       "color": {
