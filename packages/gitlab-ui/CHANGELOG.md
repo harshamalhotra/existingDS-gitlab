@@ -1,5 +1,12 @@
 # @gitlab/ui
 
+## 126.1.0
+
+### Minor Changes
+
+- d4837bd: GlModal: Updates contextual border design tokens.
+- 3cfaa53: GlDrawer: Adds contextual border design tokens.
+
 ## 126.0.2
 
 ### Patch Changes
