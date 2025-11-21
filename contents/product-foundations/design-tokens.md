@@ -85,7 +85,7 @@ Consider using existing GitLab components (such as [checkbox](/components/checkb
 
 ### Feedback
 
-`feedback.*` design tokens are used to communicate dynamic information about the result of an action, event, or opportunity. Feedback often requires a user's attention or action.
+`feedback.*` design tokens are used to communicate dynamic information about the result of an action, event, or opportunity. Feedback often requires a user's attention or action. A border is optional but useful when applying feedback to existing bordered containers or when distinguishing feedback from other content.
 
 Use feedback design tokens when:
 
@@ -102,27 +102,27 @@ Examples of custom feedback elements:
 ```html
 <!-- live-example -->
 <div class="gl-grid gl-gap-3 gl-text-base">
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-strong gl-text-feedback-strong">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-strong gl-border gl-border-feedback-strong gl-text-feedback-strong">
     <gl-icon class="gl-fill-feedback-strong" name="error" />
     <span class="gl-flex-1">feedback.strong</span>
   </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-neutral gl-text-feedback-neutral">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-neutral gl-border gl-border-feedback-neutral gl-text-feedback-neutral">
     <gl-icon class="gl-fill-feedback-neutral" name="error" />
     <span class="gl-flex-1">feedback.neutral</span>
   </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-info gl-text-feedback-info">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-info gl-border gl-border-feedback-info gl-text-feedback-info">
     <gl-icon class="gl-fill-feedback-info" name="error" />
     <span class="gl-flex-1">feedback.info</span>
   </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-success gl-text-feedback-success">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-success gl-border gl-border-feedback-success gl-text-feedback-success">
     <gl-icon class="gl-fill-feedback-success" name="error" />
     <span class="gl-flex-1">feedback.success</span>
   </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-warning gl-text-feedback-warning">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-warning gl-border gl-border-feedback-warning gl-text-feedback-warning">
     <gl-icon class="gl-fill-feedback-warning" name="error" />
     <span class="gl-flex-1">feedback.warning</span>
   </div>
-  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-danger gl-text-feedback-danger">
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-danger gl-border gl-border-feedback-danger gl-text-feedback-danger">
     <gl-icon class="gl-fill-feedback-danger" name="error" />
     <span class="gl-flex-1">feedback.danger</span>
   </div>

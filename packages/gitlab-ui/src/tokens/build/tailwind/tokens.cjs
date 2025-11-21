@@ -329,6 +329,14 @@ const feedbackBackgroundColors = {
   'feedback-warning': 'var(--gl-feedback-warning-background-color)',
   'feedback-danger': 'var(--gl-feedback-danger-background-color)',
 };
+const feedbackBorderColors = {
+  'feedback-strong': 'var(--gl-feedback-strong-border-color)',
+  'feedback-neutral': 'var(--gl-feedback-neutral-border-color)',
+  'feedback-info': 'var(--gl-feedback-info-border-color)',
+  'feedback-success': 'var(--gl-feedback-success-border-color)',
+  'feedback-warning': 'var(--gl-feedback-warning-border-color)',
+  'feedback-danger': 'var(--gl-feedback-danger-border-color)',
+};
 const feedbackTextColors = {
   'feedback-strong': 'var(--gl-feedback-strong-text-color)',
   'feedback-neutral': 'var(--gl-feedback-neutral-text-color)',
@@ -504,6 +512,7 @@ const backgroundColor = {
 const borderColor = {
   ...colors,
   ...borderColors,
+  ...feedbackBorderColors,
   dropdown: 'var(--gl-dropdown-border-color)',
   'dropdown-divider': 'var(--gl-dropdown-divider-color)',
   control: {
