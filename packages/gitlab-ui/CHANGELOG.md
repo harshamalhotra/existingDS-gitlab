@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.1.1
+
+### Patch Changes
+
+- 765a1cd: Add feedback border color design tokens.
+
 ## 126.1.0
 
 ### Minor Changes
