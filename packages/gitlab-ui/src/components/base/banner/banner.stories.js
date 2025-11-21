@@ -7,7 +7,6 @@ import GlBanner from './banner.vue';
 const template = `
     <gl-banner
       :title="title"
-      :button-attributes="buttonAttributes"
       :button-text="buttonText"
       :button-link="buttonLink"
       :svg-path="svgPath"
@@ -20,7 +19,6 @@ const template = `
 
 const generateProps = ({
   title = 'Upgrade your plan to activate Service Desk',
-  buttonAttributes = { target: '_blank' },
   buttonText = 'Upgrade your plan',
   buttonLink = 'https://gitlab.com',
   svgPath = customIllustrationPath,
@@ -28,7 +26,6 @@ const generateProps = ({
   variant = GlBanner.props.variant.default,
 } = {}) => ({
   title,
-  buttonAttributes,
   buttonText,
   buttonLink,
   svgPath,
@@ -73,7 +70,6 @@ export const WithActions = (args, { argTypes }) => ({
   template: `
     <gl-banner
       :title="title"
-      :button-attributes="buttonAttributes"
       :button-text="buttonText"
       :button-link="buttonLink"
       :svg-path="svgPath"
@@ -97,6 +93,9 @@ export default {
   title: 'base/banner',
   component: GlBanner,
   parameters: {
+    controls: {
+      exclude: ['buttonAttributes'],
+    },
     docs: {
       description: {
         component:
