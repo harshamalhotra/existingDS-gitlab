@@ -264,6 +264,7 @@ const tailwindDocsFormat = async ({ dictionary }) => {
   const borderColors = {
     ...colorTokens,
     color: formatTokens(dictionary.tokens.border.color),
+    feedback: generateTokenObject('feedback', FEEDBACK_VARIANTS, 'border'),
     dropdown: formatToken(dictionary.tokens.dropdown.border.color),
     'dropdown-divider': formatToken(dictionary.tokens.dropdown.divider.color),
     control: {
@@ -381,8 +382,14 @@ const tailwindFormat = async ({ dictionary, file }) => {
       ]),
   );
 
-  const feedbackColorObjects = generateColorMap(dictionary.tokens, FEEDBACK_VARIANTS, 'feedback');
-  const { feedbackBackgroundColors, feedbackTextColors, feedbackFillColors } = feedbackColorObjects;
+  const feedbackColorObjects = generateColorMap(dictionary.tokens, FEEDBACK_VARIANTS, 'feedback', [
+    'background',
+    'text',
+    'fill',
+    'border',
+  ]);
+  const { feedbackBackgroundColors, feedbackTextColors, feedbackFillColors, feedbackBorderColors } =
+    feedbackColorObjects;
 
   const statusColorObjects = generateColorMap(dictionary.tokens, STATUS_VARIANTS, 'status');
   const { statusBackgroundColors, statusTextColors, statusFillColors } = statusColorObjects;
@@ -403,6 +410,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const statusTextColors = ${JSON.stringify(statusTextColors)};
   const statusIconColors = ${JSON.stringify(statusFillColors)};
   const feedbackBackgroundColors = ${JSON.stringify(feedbackBackgroundColors)};
+  const feedbackBorderColors = ${JSON.stringify(feedbackBorderColors)};
   const feedbackTextColors = ${JSON.stringify(feedbackTextColors)};
   const feedbackIconColors = ${JSON.stringify(feedbackFillColors)};
   const spacingScale = ${JSON.stringify(getScalesAndCSSCustomProperties(dictionary.tokens.spacing))};
@@ -449,6 +457,7 @@ const tailwindFormat = async ({ dictionary, file }) => {
   const borderColor  = {
     ...colors,
     ...borderColors,
+    ...feedbackBorderColors,
     dropdown: '${dictionary.tokens.border.dropdown.cssWithValue}',
     'dropdown-divider': '${dictionary.tokens.border['dropdown-divider'].cssWithValue}',
     control: {

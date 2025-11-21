@@ -1339,10 +1339,7 @@
           }
         },
         "error": {
-          "$value": {
-            "default": "{color.red.500}",
-            "dark": "{color.red.300}"
-          },
+          "$value": "{feedback.danger.border.color}",
           "$type": "color",
           "$description": "Used for invalid form control (input, textarea) border.",
           "$extensions": {
@@ -1500,6 +1497,21 @@
           }
         }
       },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.1000}",
+            "dark": "{color.neutral.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the border associated with strong feedback.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "text": {
         "color": {
           "$value": "{color.neutral.0}",
@@ -1555,6 +1567,21 @@
           }
         }
       },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.neutral.200}",
+            "dark": "{color.neutral.600}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "text": {
         "color": {
           "$value": {
@@ -1600,6 +1627,21 @@
             "com.figma.scope": [
               "FRAME_FILL",
               "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.blue.200}",
+            "dark": "{color.blue.600}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
             ]
           }
         }
@@ -1653,6 +1695,21 @@
           }
         }
       },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.green.200}",
+            "dark": "{color.green.600}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "text": {
         "color": {
           "$value": {
@@ -1702,6 +1759,21 @@
           }
         }
       },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.orange.200}",
+            "dark": "{color.orange.600}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "text": {
         "color": {
           "$value": {
@@ -1747,6 +1819,21 @@
             "com.figma.scope": [
               "FRAME_FILL",
               "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.red.500}",
+            "dark": "{color.red.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
             ]
           }
         }

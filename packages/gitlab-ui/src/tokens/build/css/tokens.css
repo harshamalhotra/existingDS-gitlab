@@ -916,29 +916,34 @@
   --gl-control-border-color-hover: var(--gl-color-neutral-600); /** Used for form control (input, radio button, checkbox, textarea) border on hover. */
   --gl-control-border-color-focus: var(--gl-color-neutral-900); /** Used for form control (input, radio button, checkbox, textarea) border on focus. */
   --gl-control-border-color-disabled: var(--gl-color-neutral-100); /** Used for disabled form control (input, radio button, checkbox, textarea) border. */
-  --gl-control-border-color-error: var(--gl-color-red-500); /** Used for invalid form control (input, textarea) border. */
   --gl-control-border-color-selected-default: var(--gl-color-blue-500); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border. */
   --gl-control-border-color-selected-hover: var(--gl-color-blue-700); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border on hover. */
   --gl-control-border-color-selected-focus: var(--gl-color-blue-700); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border on focus. */
   --gl-control-indicator-color-selected: var(--gl-color-neutral-0); /** Used for checkbox and radio button state indicators. */
   --gl-control-indicator-color-disabled: var(--gl-color-neutral-500); /** Used for disabled checkbox and radio button state indicators. */
   --gl-feedback-strong-background-color: var(--gl-color-neutral-800); /** Used for a background associated with strong feedback like a tooltip or toast message. */
+  --gl-feedback-strong-border-color: var(--gl-color-neutral-1000); /** Used for the border associated with strong feedback. */
   --gl-feedback-strong-text-color: var(--gl-color-neutral-0); /** Used for text on a strong feedback background. */
   --gl-feedback-strong-icon-color: var(--gl-color-neutral-0); /** Used for an icon on a strong feedback background. */
   --gl-feedback-strong-link-color: var(--gl-color-blue-300); /** Used for a link on a strong feedback background. */
   --gl-feedback-neutral-background-color: var(--gl-color-neutral-50); /** Used for the background of a neutral feedback item when there isn't a specific meaning or urgency. */
+  --gl-feedback-neutral-border-color: var(--gl-color-neutral-200); /** Used for the border of a neutral feedback item when there isn't a specific meaning or urgency. */
   --gl-feedback-neutral-text-color: var(--gl-color-neutral-700); /** Used for the text of a neutral feedback item when there isn't a specific meaning or urgency. */
   --gl-feedback-neutral-icon-color: var(--gl-color-neutral-600); /** Used for the icon of a neutral feedback item when there isn't a specific meaning or urgency. */
   --gl-feedback-info-background-color: var(--gl-color-blue-50); /** Used for the background of an informational feedback item when highlighting new information or a change that doesn't require immediate action. */
+  --gl-feedback-info-border-color: var(--gl-color-blue-200); /** Used for the border of an informational feedback item when highlighting new information or a change that doesn't require immediate action. */
   --gl-feedback-info-text-color: var(--gl-color-blue-700); /** Used for the text of an informational feedback item when highlighting new information or a change that doesn't require immediate action. */
   --gl-feedback-info-icon-color: var(--gl-color-blue-600); /** Used for the icon of an informational feedback item when highlighting new information or a change that doesn't require immediate action. */
   --gl-feedback-success-background-color: var(--gl-color-green-50); /** Used for the background of a success feedback item when confirming the successful completion of a user-initiated action. */
+  --gl-feedback-success-border-color: var(--gl-color-green-200); /** Used for the border of a success feedback item when confirming the successful completion of a user-initiated action. */
   --gl-feedback-success-text-color: var(--gl-color-green-700); /** Used for the text of a success feedback item when confirming the successful completion of a user-initiated action. */
   --gl-feedback-success-icon-color: var(--gl-color-green-600); /** Used for the icon of a success feedback item when confirming the successful completion of a user-initiated action. */
   --gl-feedback-warning-background-color: var(--gl-color-orange-50); /** Used for the background of a warning feedback item when notifying about a potential issue or sensitive information. */
+  --gl-feedback-warning-border-color: var(--gl-color-orange-200); /** Used for the border of a warning feedback item when notifying about a potential issue or sensitive information. */
   --gl-feedback-warning-text-color: var(--gl-color-orange-700); /** Used for the text of a warning feedback item when notifying about a potential issue or sensitive information. */
   --gl-feedback-warning-icon-color: var(--gl-color-orange-600); /** Used for the icon of a warning feedback item when notifying about a potential issue or sensitive information. */
   --gl-feedback-danger-background-color: var(--gl-color-red-50); /** Used for the background of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention. */
+  --gl-feedback-danger-border-color: var(--gl-color-red-500); /** Used for the border of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention. */
   --gl-feedback-danger-text-color: var(--gl-color-red-700); /** Used for the text of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention. */
   --gl-feedback-danger-icon-color: var(--gl-color-red-600); /** Used for the icon of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention. */
   --gl-focus-ring-outer-color: var(--gl-color-blue-500); /** Used for the outer color portion of the focus ring. */
@@ -1205,6 +1210,7 @@
   --gl-action-strong-neutral-background-color-focus: var(--gl-action-strong-neutral-background-color-hover); /** Used for the background of a strong neutral action in the focus state. */
   --gl-action-strong-neutral-foreground-color-hover: var(--gl-action-strong-neutral-foreground-color-default); /** Used for the foreground of a strong neutral action in the hover state. */
   --gl-action-strong-neutral-border-color-hover: var(--gl-action-strong-neutral-border-color-default); /** Used for the border of a strong neutral action in the hover state. */
+  --gl-control-border-color-error: var(--gl-feedback-danger-border-color); /** Used for invalid form control (input, textarea) border. */
   --gl-control-border-radius: var(--gl-border-radius-lg); /** Used for form control (input, radio button, checkbox, textarea) default border radius. */
   --gl-control-text-color-error: var(--gl-text-color-danger); /** Used for the helper text when the input is invalid. */
   --gl-control-text-color-valid: var(--gl-text-color-success); /** Used for the helper text when the input is valid. */

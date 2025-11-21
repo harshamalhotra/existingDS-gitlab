@@ -15774,6 +15774,206 @@
         "cssWithValue": "var(--gl-border-color-section)"
       }
     },
+    "feedback": {
+      "strong": {
+        "key": "{feedback.strong.border.color}",
+        "$value": "#a4a3a8",
+        "$type": "color",
+        "$description": "Used for the border associated with strong feedback.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.neutral.300}",
+          "$type": "color",
+          "$description": "Used for the border associated with strong feedback.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.strong.border.color}"
+        },
+        "name": "FEEDBACK_STRONG_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "strong",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-strong-border-color)"
+      },
+      "neutral": {
+        "key": "{feedback.neutral.border.color}",
+        "$value": "#626168",
+        "$type": "color",
+        "$description": "Used for the border of a neutral feedback item when there isn't a specific meaning or urgency.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.neutral.600}",
+          "$type": "color",
+          "$description": "Used for the border of a neutral feedback item when there isn't a specific meaning or urgency.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.neutral.border.color}"
+        },
+        "name": "FEEDBACK_NEUTRAL_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "neutral",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-neutral-border-color)"
+      },
+      "info": {
+        "key": "{feedback.info.border.color}",
+        "$value": "#2f68b4",
+        "$type": "color",
+        "$description": "Used for the border of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.blue.600}",
+          "$type": "color",
+          "$description": "Used for the border of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.info.border.color}"
+        },
+        "name": "FEEDBACK_INFO_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "info",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-info-border-color)"
+      },
+      "success": {
+        "key": "{feedback.success.border.color}",
+        "$value": "#2f7549",
+        "$type": "color",
+        "$description": "Used for the border of a success feedback item when confirming the successful completion of a user-initiated action.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.green.600}",
+          "$type": "color",
+          "$description": "Used for the border of a success feedback item when confirming the successful completion of a user-initiated action.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.success.border.color}"
+        },
+        "name": "FEEDBACK_SUCCESS_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "success",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-success-border-color)"
+      },
+      "warning": {
+        "key": "{feedback.warning.border.color}",
+        "$value": "#995715",
+        "$type": "color",
+        "$description": "Used for the border of a warning feedback item when notifying about a potential issue or sensitive information.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.orange.600}",
+          "$type": "color",
+          "$description": "Used for the border of a warning feedback item when notifying about a potential issue or sensitive information.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.warning.border.color}"
+        },
+        "name": "FEEDBACK_WARNING_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "warning",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-warning-border-color)"
+      },
+      "danger": {
+        "key": "{feedback.danger.border.color}",
+        "$value": "#f6806d",
+        "$type": "color",
+        "$description": "Used for the border of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+        "$extensions": {
+          "com.figma.scope": [
+            "STROKE_COLOR"
+          ]
+        },
+        "filePath": "src/tokens/semantic/feedback.tokens.json",
+        "isSource": true,
+        "original": {
+          "$value": "{color.red.300}",
+          "$type": "color",
+          "$description": "Used for the border of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          },
+          "key": "{feedback.danger.border.color}"
+        },
+        "name": "FEEDBACK_DANGER_BORDER_COLOR",
+        "attributes": {},
+        "path": [
+          "feedback",
+          "danger",
+          "border",
+          "color"
+        ],
+        "cssWithValue": "var(--gl-feedback-danger-border-color)"
+      }
+    },
     "dropdown": {
       "key": "{dropdown.border.color}",
       "$value": "#4c4b51",
@@ -15924,7 +16124,7 @@
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{color.red.300}",
+          "$value": "{feedback.danger.border.color}",
           "$type": "color",
           "$description": "Used for invalid form control (input, textarea) border.",
           "$extensions": {

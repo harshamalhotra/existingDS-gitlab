@@ -159,10 +159,7 @@
           }
         },
         "error": {
-          "$value": {
-            "default": "{color.red.500}",
-            "dark": "{color.red.300}"
-          },
+          "$value": "{feedback.danger.border.color}",
           "$type": "color",
           "$description": "Used for invalid form control (input, textarea) border.",
           "$extensions": {
