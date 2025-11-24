@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.2.0
+
+### Minor Changes
+
+- b006673: Adds feedback brand design tokens to prepare for status merging with feedback.
+
 ## 126.1.1
 
 ### Patch Changes
