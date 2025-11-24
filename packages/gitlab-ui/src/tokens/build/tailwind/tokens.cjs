@@ -328,6 +328,7 @@ const feedbackBackgroundColors = {
   'feedback-success': 'var(--gl-feedback-success-background-color)',
   'feedback-warning': 'var(--gl-feedback-warning-background-color)',
   'feedback-danger': 'var(--gl-feedback-danger-background-color)',
+  'feedback-brand': 'var(--gl-feedback-brand-background-color)',
 };
 const feedbackBorderColors = {
   'feedback-strong': 'var(--gl-feedback-strong-border-color)',
@@ -336,6 +337,7 @@ const feedbackBorderColors = {
   'feedback-success': 'var(--gl-feedback-success-border-color)',
   'feedback-warning': 'var(--gl-feedback-warning-border-color)',
   'feedback-danger': 'var(--gl-feedback-danger-border-color)',
+  'feedback-brand': 'var(--gl-feedback-brand-border-color)',
 };
 const feedbackTextColors = {
   'feedback-strong': 'var(--gl-feedback-strong-text-color)',
@@ -344,6 +346,7 @@ const feedbackTextColors = {
   'feedback-success': 'var(--gl-feedback-success-text-color)',
   'feedback-warning': 'var(--gl-feedback-warning-text-color)',
   'feedback-danger': 'var(--gl-feedback-danger-text-color)',
+  'feedback-brand': 'var(--gl-feedback-brand-text-color)',
 };
 const feedbackIconColors = {
   'feedback-strong': 'var(--gl-feedback-strong-icon-color)',
@@ -352,6 +355,7 @@ const feedbackIconColors = {
   'feedback-success': 'var(--gl-feedback-success-icon-color)',
   'feedback-warning': 'var(--gl-feedback-warning-icon-color)',
   'feedback-danger': 'var(--gl-feedback-danger-icon-color)',
+  'feedback-brand': 'var(--gl-feedback-brand-icon-color)',
 };
 const spacingScale = {
   0: 'var(--gl-spacing-scale-0)',

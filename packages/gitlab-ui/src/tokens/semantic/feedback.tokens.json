@@ -398,6 +398,70 @@
           }
         }
       }
+    },
+    "brand": {
+      "background": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.50}",
+            "dark": "{color.purple.950}"
+          },
+          "$type": "color",
+          "$description": "Used for the background of a brand-related feedback item when highlighting information that pertains to GitLab.",
+          "$extensions": {
+            "com.figma.scope": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "border": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.200}",
+            "dark": "{color.purple.600}"
+          },
+          "$type": "color",
+          "$description": "Used for the border of a brand-related feedback item when highlighting information that pertains to GitLab.",
+          "$extensions": {
+            "com.figma.scope": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "text": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.700}",
+            "dark": "{color.purple.200}"
+          },
+          "$type": "color",
+          "$description": "Used for the text of a brand-related feedback item when highlighting information that pertains to GitLab.",
+          "$extensions": {
+            "com.figma.scope": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$value": {
+            "default": "{color.purple.600}",
+            "dark": "{color.purple.300}"
+          },
+          "$type": "color",
+          "$description": "Used for the icon of a brand-related feedback item when highlighting information that pertains to GitLab.",
+          "$extensions": {
+            "com.figma.scope": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      }
     }
   }
 }

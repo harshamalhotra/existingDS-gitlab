@@ -1,7 +1,7 @@
 const { fileHeader } = require('style-dictionary/utils');
 
 const STATUS_VARIANTS = ['neutral', 'info', 'success', 'warning', 'danger', 'brand'];
-const FEEDBACK_VARIANTS = ['strong', 'neutral', 'info', 'success', 'warning', 'danger'];
+const FEEDBACK_VARIANTS = ['strong', 'neutral', 'info', 'success', 'warning', 'danger', 'brand'];
 const BRAND_VARIANTS = [
   'brand-white',
   'brand-charcoal',

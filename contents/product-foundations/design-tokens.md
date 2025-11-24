@@ -126,6 +126,10 @@ Examples of custom feedback elements:
     <gl-icon class="gl-fill-feedback-danger" name="error" />
     <span class="gl-flex-1">feedback.danger</span>
   </div>
+  <div class="gl-flex gl-gap-3 gl-items-center gl-p-3 gl-rounded-lg gl-bg-feedback-brand gl-border gl-border-feedback-brand gl-text-feedback-brand">
+    <gl-icon class="gl-fill-feedback-brand" name="tanuki" />
+    <span class="gl-flex-1">feedback.brand</span>
+  </div>
 </div>
 ```
 
