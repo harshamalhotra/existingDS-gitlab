@@ -2,6 +2,10 @@
 name: Navigating Pajamas
 ---
 
+Pajamas is primarily focused on the GitLab product: including GitLab.com, self-managed, and dedicated instances. All content, components, patterns, and guidelines are designed to serve this purpose. While Pajamas is available for use in different tools and internal projects, it's the responsibility of these other teams to determine which elements are applicable to their use case.
+
+## How our design system is structured
+
 Our design system is broken down into the following sections:
 
 ## [Foundations](/product-foundations)
