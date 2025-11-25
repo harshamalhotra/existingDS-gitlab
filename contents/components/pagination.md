@@ -141,13 +141,13 @@ with the `props` of this component.
 #### Translatable strings
 
 <do>Provide the `prevText` and `nextText` props with translatable strings.
-The default strings ("Prev" and "Next") are hardcoded in this component and
+The default strings ("Previous" and "Next") are hardcoded in this component and
 can't be translated.</do>
 
 Example:
 
 ```html
-<gl-keyset-pagination v-bind="pageInfo" :prev-text="__('Prev')" :next-text="__('Next')" />
+<gl-keyset-pagination v-bind="pageInfo" :prev-text="__('Previous')" :next-text="__('Next')" />
 ```
 
 #### GraphQL
