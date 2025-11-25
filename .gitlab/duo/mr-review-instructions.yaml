@@ -12,8 +12,7 @@ instructions:
       - 'contents/**/*.md'
     instructions: |
       1. Check for grammar and spelling errors.
-      1. Ensure writing follows GitLab's voice and tone guidelines: https://docs.gitlab.com/ee/development/documentation/styleguide/
-      1. Verify the text follows the GitLab documentation style guide, including the punctuation guidelines that recommend Oxford commas: https://docs.gitlab.com/ee/development/documentation/styleguide/#punctuation
+      1. Verify the text follows the GitLab documentation style guide. Pay special attention to the voice and tone guidelines, and the punctuation rules. https://gitlab.com/gitlab-org/gitlab/-/blob/master/doc/development/documentation/styleguide/_index.md
       1. Sections and paragraphs must be concise, avoiding unnecessary repetition or wordiness.
       1. Verify _emphasis_ and **strong** markdown formatting is used sparingly.
       1. Ensure text is simple and clear, understandable without additional background information.
