@@ -11,20 +11,16 @@ const generateProps = ({
   align = defaultValue('align'),
   linkGen = defaultValue('linkGen'),
   nextPage = defaultValue('nextPage'),
-  nextText = defaultValue('nextText'),
   perPage = 10, // Existing stories/shots used this value instead of the default
   prevPage = defaultValue('prevPage'),
-  prevText = defaultValue('prevText'),
   totalItems = 200, // The component's default value of 0 is for compact pagination, which most stories here do not use.
 } = {}) => ({
   value,
   align,
   linkGen,
   nextPage,
-  nextText,
   perPage,
   prevPage,
-  prevText,
   totalItems,
 });
 
@@ -34,10 +30,8 @@ const template = `
     :align="align"
     :link-gen="linkGen"
     :next-page="nextPage"
-    :next-text="nextText"
     :per-page="perPage"
     :prev-page="prevPage"
-    :prev-text="prevText"
     :total-items="totalItems"
   />
 `;

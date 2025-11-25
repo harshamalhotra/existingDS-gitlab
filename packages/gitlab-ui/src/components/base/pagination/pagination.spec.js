@@ -177,24 +177,24 @@ describe('pagination component', () => {
     it('shows all pages on desktop', () => {
       const items = findListItems();
       expect(items.length).toBe(6);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe('2');
       expect(items.at(3).text()).toBe('3');
       expect(items.at(4).text()).toBe('4');
-      expect(findNext().text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
 
     it('shows all pages mobile', () => {
       mockResizeWidth(breakpoints.sm);
       const items = findListItems();
       expect(items.length).toBe(6);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe('2');
       expect(items.at(3).text()).toBe('3');
       expect(items.at(4).text()).toBe('4');
-      expect(findNext().text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
   });
 
@@ -222,7 +222,7 @@ describe('pagination component', () => {
     it('shows first 5 pages and collapses right side on desktop', () => {
       const items = findListItems();
       expect(items.length).toBe(9);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe('2');
       expect(items.at(3).text()).toBe('3');
@@ -230,7 +230,7 @@ describe('pagination component', () => {
       expect(items.at(5).text()).toBe('5');
       expect(items.at(6).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(7).text()).toBe('15');
-      expect(items.at(8).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
 
     it('shows first 2 pages and collapses right side mobile', async () => {
@@ -240,12 +240,12 @@ describe('pagination component', () => {
 
       const items = findListItems();
       expect(items.length).toBe(6);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe('2');
       expect(items.at(3).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(4).text()).toBe('15');
-      expect(items.at(5).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
   });
 
@@ -262,7 +262,7 @@ describe('pagination component', () => {
     it('shows pages 4 to 12 and collapses both sides on desktop', () => {
       const items = findListItems();
       expect(items.length).toBe(15);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(3).text()).toBe('4');
@@ -270,7 +270,7 @@ describe('pagination component', () => {
       expect(items.at(11).text()).toBe('12');
       expect(items.at(12).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(13).text()).toBe('15');
-      expect(items.at(14).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
 
     it('shows page 8 and collapses both sides on mobile', async () => {
@@ -280,13 +280,13 @@ describe('pagination component', () => {
 
       const items = findListItems();
       expect(items.length).toBe(7);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(3).text()).toBe('8');
       expect(items.at(4).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(5).text()).toBe('15');
-      expect(items.at(6).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
   });
 
@@ -314,7 +314,7 @@ describe('pagination component', () => {
     it('shows pages 11 to 15 and collapses left side on desktop', () => {
       const items = findListItems();
       expect(items.length).toBe(9);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(3).text()).toBe('11');
@@ -322,7 +322,7 @@ describe('pagination component', () => {
       expect(items.at(5).text()).toBe('13');
       expect(items.at(6).text()).toBe('14');
       expect(items.at(7).text()).toBe('15');
-      expect(items.at(8).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
 
     it('shows pages 14 to 15 and collapses left side on mobile', async () => {
@@ -332,12 +332,12 @@ describe('pagination component', () => {
 
       const items = findListItems();
       expect(items.length).toBe(6);
-      expect(findPrev().text()).toBe(wrapper.vm.prevText);
+      expect(findPrev().exists()).toBe(true);
       expect(items.at(1).text()).toBe('1');
       expect(items.at(2).text()).toBe(wrapper.vm.ellipsisText);
       expect(items.at(3).text()).toBe('14');
       expect(items.at(4).text()).toBe('15');
-      expect(items.at(5).text()).toBe(wrapper.vm.nextText);
+      expect(findNext().exists()).toBe(true);
     });
   });
 

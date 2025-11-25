@@ -127,7 +127,7 @@ export default {
         <!-- @slot Used to customize the appearance of the "Prev" button -->
         <slot name="previous-button-content">
           <div class="gl-align-center gl-flex">
-            <gl-icon name="chevron-left" />
+            <gl-icon name="chevron-lg-left" class="gl-mr-2" />
             {{ prevText }}
           </div>
         </slot>
@@ -143,7 +143,7 @@ export default {
         <slot name="next-button-content">
           <div class="gl-align-center gl-flex">
             {{ nextText }}
-            <gl-icon name="chevron-right" />
+            <gl-icon name="chevron-lg-right" class="gl-ml-2" />
           </div>
         </slot>
       </gl-button>
