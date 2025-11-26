@@ -24,7 +24,7 @@ export default {
       default: '',
     },
     /**
-     * Color variant for the icon
+     * Color variant for the icon on the left side
      */
     iconColor: {
       type: String,
