@@ -12,33 +12,54 @@ export default {
     GlTooltip,
   },
   props: {
+    /**
+     * Array of avatar objects to display
+     */
     avatars: {
       type: Array,
       required: true,
     },
+    /**
+     * Maximum number of avatars to display before collapsing
+     */
     maxVisible: {
       type: Number,
       required: true,
     },
+    /**
+     * Size of each avatar in pixels
+     */
     avatarSize: {
       type: Number,
       required: true,
       validator: (value) => avatarsInlineSizeOptions.includes(value),
     },
+    /**
+     * Whether to show the avatars in collapsed state
+     */
     collapsed: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Screen reader text for the collapsed avatars badge
+     */
     badgeSrOnlyText: {
       type: String,
       required: true,
     },
+    /**
+     * Property name to extract tooltip text from each hidden avatar object
+     */
     badgeTooltipProp: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Maximum number of characters to display in the badge tooltip
+     */
     badgeTooltipMaxChars: {
       type: Number,
       required: false,
@@ -88,6 +109,7 @@ export default {
 <template>
   <div class="gl-avatars-inline" :class="`gl-avatars-inline-${badgeSize}`">
     <div v-for="(avatar, index) in visibleAvatars" :key="index" class="gl-avatars-inline-child">
+      <!-- @slot Custom avatar rendering. Provide avatar object as slot prop. -->
       <slot name="avatar" :avatar="avatar">
         <gl-avatar v-bind="avatar" :size="avatarSize" />
       </slot>
