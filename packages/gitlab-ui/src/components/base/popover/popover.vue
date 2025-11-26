@@ -16,6 +16,9 @@ export default {
   mixins: [tooltipMixin(popoverRefName)],
   inheritAttrs: false,
   props: {
+    /**
+     * Additional CSS class(es) to apply to the popover.
+     */
     cssClasses: {
       type: [Array, String, Object],
       required: false,
@@ -31,21 +34,33 @@ export default {
       required: false,
       default: 'hover focus',
     },
+    /**
+     * Title text to display in the popover header.
+     */
     title: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * When true, displays a close button in the popover header.
+     */
     showCloseButton: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Placement of the popover relative to the target element.
+     */
     placement: {
       type: String,
       required: false,
       default: popoverPlacements.top,
     },
+    /**
+     * Padding (in pixels) between the popover and the viewport boundary.
+     */
     boundaryPadding: {
       type: [Number, String],
       required: false,
@@ -113,6 +128,7 @@ export default {
     v-on="$listeners"
   >
     <template v-if="shouldShowTitle" #title>
+      <!-- @slot Custom content for the popover title -->
       <slot name="title">
         {{ title }}
       </slot>
@@ -124,6 +140,9 @@ export default {
         />
       </div>
     </template>
-    <template v-if="$scopedSlots.default" #default><slot></slot></template>
+    <template v-if="$scopedSlots.default" #default>
+      <!-- @slot Main content of the popover body-->
+      <slot></slot>
+    </template>
   </b-popover>
 </template>
