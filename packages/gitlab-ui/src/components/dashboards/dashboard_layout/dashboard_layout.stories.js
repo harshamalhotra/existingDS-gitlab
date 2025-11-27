@@ -167,6 +167,8 @@ DynamicGrid.parameters = {
 DynamicGrid.args = {
   config: { ...dashboardConfig },
   isStaticGrid: false,
+  cellHeight: 10,
+  minCellHeight: 10,
 };
 
 export const EmptyState = Template.bind({});

@@ -250,4 +250,28 @@ describe('GlDashboardLayout', () => {
       expect(wrapper.emitted('changed')).toEqual([[newConfig]]);
     });
   });
+
+  describe('when a dashboard has a custom cell height', () => {
+    const cellHeight = 50;
+
+    beforeEach(() => {
+      createWrapper({ cellHeight });
+    });
+
+    it('passes the cellHeight prop to the grid component', () => {
+      expect(findGrid().props('cellHeight')).toBe(cellHeight);
+    });
+  });
+
+  describe('when a dashboard has a custom minimum cell height', () => {
+    const minCellHeight = 50;
+
+    beforeEach(() => {
+      createWrapper({ minCellHeight });
+    });
+
+    it('passes the minCellHeight prop to the grid component', () => {
+      expect(findGrid().props('minCellHeight')).toBe(minCellHeight);
+    });
+  });
 });

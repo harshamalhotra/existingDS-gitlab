@@ -80,7 +80,7 @@ describe('GlGridLayout', () => {
           animate: true,
           margin: '8px',
           handle: '.grid-stack-item-handle',
-          cellHeight: '137px',
+          cellHeight: 137,
           minRow: 1,
           columnOpts: { breakpoints: [{ w: breakpoints.md, c: 1 }] },
           float: true,
@@ -99,6 +99,7 @@ describe('GlGridLayout', () => {
           const filterUndefinedValues = (obj) => pickBy(obj, (value) => value !== undefined);
 
           return {
+            minH: 1,
             ...filterUndefinedValues({
               x: xPos,
               y: yPos,
@@ -223,6 +224,60 @@ describe('GlGridLayout', () => {
 
     it('renders the grab cursor on grid panels', () => {
       expect(findGridStackPanels().at(0).classes()).toContain('gl-cursor-grab');
+    });
+  });
+
+  describe('when cellHeight is set', () => {
+    const cellHeight = 50;
+
+    beforeEach(() => {
+      createWrapper({ cellHeight });
+    });
+
+    it('initializes GridStack with the custom cellHeight', () => {
+      expect(GridStack.init).toHaveBeenCalledWith(
+        expect.objectContaining({ cellHeight }),
+        findGrid().element,
+      );
+    });
+  });
+
+  describe('when minCellHeight is set', () => {
+    const minCellHeight = 10;
+
+    beforeEach(() => {
+      createWrapper({ minCellHeight });
+    });
+
+    it('applies the custom minCellHeight to grid panels', () => {
+      expect(mockGridLoad).toHaveBeenCalledWith(
+        dashboard.panels.map((panel) => {
+          const { id, gridAttributes, ...panelWithoutGridAttributes } = panel;
+          const { xPos, yPos, width, height, minWidth, minHeight, maxWidth, maxHeight } =
+            gridAttributes;
+
+          const filterUndefinedValues = (obj) => pickBy(obj, (value) => value !== undefined);
+
+          return {
+            minH: minCellHeight,
+            ...filterUndefinedValues({
+              x: xPos,
+              y: yPos,
+              w: width,
+              h: height,
+              minH: minHeight,
+              minW: minWidth,
+              maxH: maxHeight,
+              maxW: maxWidth,
+              id,
+            }),
+            props: {
+              id,
+              ...panelWithoutGridAttributes,
+            },
+          };
+        }),
+      );
     });
   });
 
