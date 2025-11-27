@@ -149,6 +149,39 @@ JustifiedTabs.args = generateProps({ justified: true });
 
 export const WithCounterBadges = (_args, { argTypes }) => ({
   props: Object.keys(argTypes),
+  components,
+  data() {
+    return {
+      allCount: 42,
+      openCount: 15,
+      closedCount: 1,
+    };
+  },
+  computed: {
+    allSrText() {
+      return `${this.allCount} ${this.allCount === 1 ? 'issue' : 'issues'}`;
+    },
+    openSrText() {
+      return `${this.openCount} open ${this.openCount === 1 ? 'issue' : 'issues'}`;
+    },
+    closedSrText() {
+      return `${this.closedCount} closed ${this.closedCount === 1 ? 'issue' : 'issues'}`;
+    },
+  },
+  template: wrap(`
+    <gl-tab title="All" :tab-count="allCount" :tab-count-sr-text="allSrText">
+      <p>All issues content</p>
+    </gl-tab>
+    <gl-tab title="Open" :tab-count="openCount" :tab-count-sr-text="openSrText">
+      <p>Open issues content</p>
+    </gl-tab>
+    <gl-tab title="Closed" :tab-count="closedCount" :tab-count-sr-text="closedSrText">
+      <p>Closed issues content</p>
+    </gl-tab>`),
+});
+
+export const WithCounterBadgesLegacy = (_args, { argTypes }) => ({
+  props: Object.keys(argTypes),
   components: { ...components, GlBadge },
   template: wrap(`
     <gl-tab
