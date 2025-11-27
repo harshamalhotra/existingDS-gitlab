@@ -35,6 +35,33 @@ export default {
       required: false,
       default: true,
     },
+    /**
+     * Adjusts the cell height of the grid. Setting this too high can leave unwanted whitespace
+     * between grid panels. Reduce the number to allow for a more compact grid.
+     * For more information, see:
+     * https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/3051
+     */
+    cellHeight: {
+      type: Number,
+      required: false,
+
+      /* Magic number:
+       * After allowing for padding, and the panel title row, this leaves us with minimum 48px height for the cell content.
+       * This means text/content with our spacing scale can fit up to 49px without scrolling.
+       */
+      default: 137,
+      validator: (value) => value > 0,
+    },
+    /**
+     * Sets a default minimum height for grid panels. This can still be overriden on a per-panel
+     * basis by setting `value.panels[].gridAttributes.minHeight`
+     */
+    minCellHeight: {
+      type: Number,
+      required: false,
+      default: 1,
+      validator: (value) => value > 0,
+    },
   },
   computed: {
     dashboardHasPanels() {
@@ -104,6 +131,8 @@ export default {
           v-if="dashboardHasPanels"
           :value="config"
           :is-static-grid="isStaticGrid"
+          :cell-height="cellHeight"
+          :min-cell-height="minCellHeight"
           class="-gl-mx-3"
           @input="emitChanges"
         >
