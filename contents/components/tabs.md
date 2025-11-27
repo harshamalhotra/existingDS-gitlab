@@ -56,7 +56,7 @@ related:
 - Truncate longer labels, showing the full text in a [tooltip](/components/tooltip).
 - Each tab can include a [badge](/components/badge) with a count of how many items the related tab panel contains.
   - If an “All” tab exists, it should have a badge that is the sum of the other tab badges.
-  - A badge that includes a numeric count should be followed by a `<span>` with the `sr-only` class providing a text description of what's being counted.
+  - Tabs with a numeric count should include descriptive text for screen readers to provide context about what's being counted.
 - The label + badge (if present) determines individual tab width unless justified tabs are used (see [Alignment](#alignment)).
 
 ### Alignment
@@ -70,6 +70,7 @@ related:
 ### Accessibility
 
 - Tabs follow the [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel) guidelines for functionality.
+- Counter badges should include descriptive text for screen reader users to provide context about what's being counted (for example, "15 open issues" instead of just "15").
 
 ## Code reference
 
@@ -82,12 +83,25 @@ tab, when active, will reveal it’s own unique content.
 #### Using the component Vue
 
 ```html
+<!-- live-example -->
 <gl-tabs>
-  <gl-tab title="Tab 1">
-    Tab panel 1
-  </gl-tab>
-  <gl-tab title="Tab 2">
-    Tab panel 2
+  <gl-tab title="Tab 1"> Tab panel 1 </gl-tab>
+  <gl-tab title="Tab 2"> Tab panel 2 </gl-tab>
+</gl-tabs>
+```
+
+#### Tabs with counter badges
+
+Use the `tab-count` and `tab-count-sr-text` props to display counter badges.
+
+<note>Always provide `tab-count-sr-text` when using `tab-count` to ensure screen readers announce the full context (for example, "15 open issues" instead of just "15").</note>
+
+```html
+<!-- live-example -->
+<gl-tabs>
+  <gl-tab title="All" tab-count="9" tab-count-sr-text="9 issues"> All issues content </gl-tab>
+  <gl-tab title="Open" tab-count="3" tab-count-sr-text="3 open issues">
+    Open issues content
   </gl-tab>
 </gl-tabs>
 ```
@@ -103,7 +117,8 @@ tab, when active, will reveal it’s own unique content.
         target="_self"
         href="#"
         class="nav-link gl-tab-nav-item gl-tab-nav-item-active gl-tab-nav-item-active-indigo"
-      >Tab 1</a>
+        >Tab 1</a
+      >
     </li>
     <li role="presentation" class="nav-item">
       <a role="tab" target="_self" href="#" class="nav-link gl-tab-nav-item">Tab 2</a>
