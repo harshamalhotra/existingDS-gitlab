@@ -140,6 +140,7 @@ export const IconOnly = (args, { argTypes }) => ({
         :variant="variant"
         :icon="icon"
         :iconSize="iconSize"
+        aria-label="Scheduled"
       />
     </div>
   `,
