@@ -7,6 +7,7 @@ import {
   linkVariantUnstyled,
 } from '../../../utils/constants';
 import GlIcon from '../icon/icon.vue';
+import { logWarning } from '../../../utils/utils';
 
 const variantClass = {
   [badgeVariantOptions.neutral]: 'badge-neutral',
@@ -120,13 +121,6 @@ export default {
     role() {
       return this.hasIconOnly ? 'img' : undefined;
     },
-    ariaLabel() {
-      if (this.$attrs['aria-label']) {
-        return this.$attrs['aria-label'];
-      }
-
-      return this.role === 'img' ? this.icon : undefined;
-    },
     iconSizeComputed() {
       return badgeIconSizeOptions[this.iconSize];
     },
@@ -152,6 +146,14 @@ export default {
       ];
     },
   },
+  mounted() {
+    if (this.hasIconOnly && !this.$attrs['aria-label']) {
+      logWarning(
+        '[GlBadge] Icon-only badges require an aria-label for accessibility. The label should describe the metadata (e.g., "Due date", "Open issue"), not the icon name. See https://design.gitlab.com/components/badge#using-icon-only-badges',
+        this.$el,
+      );
+    }
+  },
 };
 </script>
 
@@ -161,7 +163,6 @@ export default {
     v-bind="computedProps"
     :class="classes"
     :role="role"
-    :aria-label="ariaLabel"
     v-on="$listeners"
   >
     <gl-icon

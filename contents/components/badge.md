@@ -63,7 +63,7 @@ related:
 
 ## Accessibility
 
-- When a badge only has an icon, the icon must use `aria-label` with text that identifies the metadata.
+- When a badge only has an icon, the badge must use `aria-label` with text that identifies the metadata. The badge will automatically receive `role="img"`.
 - When an icon is present with text it must use `aria-hidden="true"` to avoid being announced by a screen reader.
 - When a badge is used as meta information to support content it's inline with, ensure that its meaning is clear. If necessary, add `sr-only` text after the badge. For example, `<gl-badge>9</gl-badge><span class="sr-only">to-do's</span>` clarifies what "9" quantifies.
 - If a badge isn't inline with the content it supports, use `aria-describedby="badgeID"` to associate the content with the badge, where `badgeID` is the unique ID of the badge. Note that `aria-describedby` support is mostly on focusable elements and headings.
@@ -77,14 +77,32 @@ Other terms that are commonly used to refer to a badge: counter, status, chip, t
 ### Using icon-only badges
 
 When a badge only has an icon and no slot content, be sure to set the `aria-label` attribute of the
-badge for best accessibility.
+badge for best accessibility. The label should describe what the metadata represents, not just the icon name.
 
 ```html
-<!-- bad -->
+<!-- bad: missing aria-label -->
 <gl-badge icon="eye" />
 
-<!-- good -->
-<gl-badge icon="eye" aria-label="Mark as confidential" />
+<!-- bad: aria-label is just the icon name -->
+<gl-badge icon="calendar" aria-label="calendar" />
+
+<!-- good: aria-label describes the metadata -->
+<gl-badge icon="eye" aria-label="Confidential" />
+<gl-badge icon="calendar" aria-label="Due date" />
+```
+
+**Common examples:**
+
+```html
+<!-- Status badges -->
+<gl-badge variant="success" icon="issue-open-m" aria-label="Open" />
+<gl-badge variant="info" icon="issue-close" aria-label="Closed" />
+<gl-badge variant="warning" icon="status-alert" aria-label="Needs attention" />
+
+<!-- Metadata badges -->
+<gl-badge icon="calendar" aria-label="Scheduled" />
+<gl-badge icon="user" aria-label="Assigned" />
+<gl-badge icon="label" aria-label="Labeled" />
 ```
 
 ### Link badges
@@ -98,5 +116,35 @@ The prop `tag` will be ignored and the `BLink` component will be used instead.
 <story-viewer component="base-badge" title="GlBadge" view-mode="docs"></story-viewer>
 
 ### Pajamas::BadgeComponent
+
+#### Using icon-only badges in HAML
+
+When using `icon_only: true`, you must provide the `text` parameter. This text becomes the `aria-label` for the badge and is not displayed visually. The label should describe what the metadata represents, not just the icon name.
+
+```ruby
+# bad: missing text parameter
+= render Pajamas::BadgeComponent.new(icon: 'eye', icon_only: true)
+
+# bad: text is just the icon name
+= render Pajamas::BadgeComponent.new(icon: 'calendar', icon_only: true, text: 'calendar')
+
+# good: text describes the metadata
+= render Pajamas::BadgeComponent.new(icon: 'eye', icon_only: true, text: 'Confidential')
+= render Pajamas::BadgeComponent.new(icon: 'calendar', icon_only: true, text: 'Due date')
+```
+
+**Common examples:**
+
+```ruby
+# Status badges
+= render Pajamas::BadgeComponent.new(variant: :success, icon: 'issue-open-m', icon_only: true, text: 'Open')
+= render Pajamas::BadgeComponent.new(variant: :info, icon: 'issue-close', icon_only: true, text: 'Closed')
+= render Pajamas::BadgeComponent.new(variant: :warning, icon: 'status-alert', icon_only: true, text: 'Needs attention')
+
+# Metadata badges
+= render Pajamas::BadgeComponent.new(icon: 'calendar', icon_only: true, text: 'Scheduled')
+= render Pajamas::BadgeComponent.new(icon: 'user', icon_only: true, text: 'Assigned')
+= render Pajamas::BadgeComponent.new(icon: 'label', icon_only: true, text: 'Labeled')
+```
 
 <lookbook-viewer component="badge"></lookbook-viewer>

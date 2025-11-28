@@ -22,7 +22,7 @@ describe('badge', () => {
   describe('with "icon" prop', () => {
     describe.each`
       scenario                | hasSlot  | iconName     | iconSize | expectedIconSize | expectedRole | expectedAriaLabel
-      ${'icon-only'}          | ${false} | ${'warning'} | ${'md'}  | ${16}            | ${'img'}     | ${'warning'}
+      ${'icon-only'}          | ${false} | ${'warning'} | ${'md'}  | ${16}            | ${'img'}     | ${undefined}
       ${'16px icon and slot'} | ${true}  | ${'warning'} | ${'md'}  | ${16}            | ${undefined} | ${undefined}
       ${'12px icon and slot'} | ${true}  | ${'warning'} | ${'sm'}  | ${12}            | ${undefined} | ${undefined}
     `(
@@ -54,6 +54,15 @@ describe('badge', () => {
         });
       },
     );
+
+    it('applies custom aria-label when provided', () => {
+      createComponent({
+        propsData: { icon: 'calendar' },
+        attrs: { 'aria-label': 'Due date' },
+      });
+
+      expect(wrapper.attributes('aria-label')).toBe('Due date');
+    });
   });
 
   describe('without "icon" prop', () => {
