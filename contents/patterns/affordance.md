@@ -32,7 +32,7 @@ Highlight the target element when a user is able to navigate directly to part of
 
 Create a cohesive experience by coordinating visual highlights with scroll behavior, timing, and focus management based on your specific use case. Consider user context, page complexity, device constraints, and performance when designing the complete interaction.
 
-[Highlight design tokens](/product-foundations/design-tokens-using#highlighting) provide color styles to indicate the target element.
+[Highlight design tokens](/product-foundations/design-tokens#highlighting) provide color styles to indicate the target element.
 
 ## Highlight relationships
 
@@ -48,4 +48,4 @@ Ensure highlighted relationships remain clear across different devices and don't
 
 <todo>Example image showing concept using design tokens</todo>
 
-[Highlight design tokens](/product-foundations/design-tokens-using#highlighting) provide color styles to emphasise a relationship.
+[Highlight design tokens](/product-foundations/design-tokens#highlighting) provide color styles to emphasise a relationship.
