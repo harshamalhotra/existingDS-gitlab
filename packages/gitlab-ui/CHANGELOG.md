@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.3.1
+
+### Patch Changes
+
+- 5191abe: Improve accessibility for icon-only badges by removing fallback to icon names for aria-label and adding developer warnings when aria-label is missing.
+
 ## 126.3.0
 
 ### Minor Changes
