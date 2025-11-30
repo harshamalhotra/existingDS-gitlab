@@ -141,10 +141,10 @@ export default {
     shouldRenderModalFooter() {
       return Boolean(
         this.actionCancel ||
-          this.actionSecondary ||
-          this.actionPrimary ||
-          // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
-          this.$slots['modal-footer'],
+        this.actionSecondary ||
+        this.actionPrimary ||
+        // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
+        this.$slots['modal-footer'],
       );
     },
   },
