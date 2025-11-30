@@ -247,8 +247,8 @@ export default {
     isIconOnly() {
       return Boolean(
         this.icon &&
-          (!this.text?.length || this.textSrOnly) &&
-          !this.hasSlotContents('button-text'),
+        (!this.text?.length || this.textSrOnly) &&
+        !this.hasSlotContents('button-text'),
       );
     },
     isIconWithText() {
