@@ -1,14 +1,17 @@
 import { shallowMount } from '@vue/test-utils';
+import { logWarning } from '../../../utils/utils';
 import Illustration from './illustration.vue';
 
 const ILLUSTRATIONS_PATH = '/path/to/illustrations.svg';
 const TEST_NAME = 'add-user-sm';
 
 jest.mock('@gitlab/svgs/dist/illustrations.svg', () => '/path/to/illustrations.svg');
+jest.mock('../../../utils/utils', () => ({
+  logWarning: jest.fn(),
+}));
 
 describe('Illustration component', () => {
   let wrapper;
-  let consoleSpy;
 
   const createComponent = (props) => {
     wrapper = shallowMount(Illustration, {
@@ -20,12 +23,6 @@ describe('Illustration component', () => {
   };
 
   const validateName = (name) => Illustration.props.name.validator(name);
-
-  afterEach(() => {
-    if (consoleSpy) {
-      consoleSpy.mockRestore();
-    }
-  });
 
   it('has role=presentation', () => {
     createComponent();
@@ -46,12 +43,12 @@ describe('Illustration component', () => {
   describe('name validator', () => {
     it('fails with name that does not exist', () => {
       const badName = `${TEST_NAME}-bogus-zebra`;
-      consoleSpy = jest.spyOn(console, 'warn').mockImplementation();
 
       expect(validateName(badName)).toBe(false);
 
-      expect(consoleSpy).toHaveBeenCalledWith(
+      expect(logWarning).toHaveBeenCalledWith(
         `Illustration '${badName}' is not a known illustration of @gitlab/svgs`,
+        { name: 'GlIllustration' },
       );
     });
 

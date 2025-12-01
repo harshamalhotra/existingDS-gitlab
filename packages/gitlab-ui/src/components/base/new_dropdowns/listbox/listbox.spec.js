@@ -14,6 +14,7 @@ import {
   POSITION_ABSOLUTE,
   POSITION_FIXED,
 } from '../constants';
+import { logWarning } from '../../../../utils/utils';
 import GlIntersectionObserver from '../../../utilities/intersection_observer/intersection_observer.vue';
 import GlCollapsibleListbox, { ITEM_SELECTOR } from './listbox.vue';
 import GlListboxSearchInput from './listbox_search_input.vue';
@@ -28,6 +29,11 @@ import {
 } from './mock_data';
 
 jest.mock('@floating-ui/dom');
+jest.mock('../../../../utils/utils', () => ({
+  ...jest.requireActual('../../../../utils/utils'),
+  logWarning: jest.fn(),
+}));
+
 autoUpdate.mockImplementation(() => {
   return () => {};
 });
@@ -810,15 +816,14 @@ describe('GlCollapsibleListbox', () => {
 
   describe('when `infiniteScroll` prop is `true`', () => {
     it('should warn when items are groups', () => {
-      const consoleWarnSpy = jest.spyOn(console, 'warn');
-
       buildWrapper({
         items: mockGroups,
         infiniteScroll: true,
       });
 
-      expect(consoleWarnSpy).toHaveBeenCalledWith(
+      expect(logWarning).toHaveBeenCalledWith(
         'When using grouped options infinite scroll can only be used on the last group.',
+        { name: 'GlCollapsibleListbox' },
       );
     });
 

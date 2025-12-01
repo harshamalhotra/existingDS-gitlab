@@ -1,7 +1,12 @@
 import { shallowMount } from '@vue/test-utils';
 import { BTab } from '../../../../vendor/bootstrap-vue/src/components/tabs/tab';
 import { DEFAULT_TAB_TITLE_LINK_CLASS } from '../constants';
+import { logWarning } from '../../../../utils/utils';
 import GlTab from './tab.vue';
+
+jest.mock('../../../../utils/utils', () => ({
+  logWarning: jest.fn(),
+}));
 
 describe('Tab component', () => {
   let wrapper;
@@ -64,40 +69,28 @@ describe('Tab component', () => {
   });
 
   describe('development warnings', () => {
-    let consoleWarnSpy;
-    let originalEnv;
-
     beforeEach(() => {
-      originalEnv = process.env.NODE_ENV;
-      consoleWarnSpy = jest.spyOn(console, 'warn').mockImplementation();
+      jest.clearAllMocks();
     });
 
-    afterEach(() => {
-      consoleWarnSpy.mockRestore();
-      process.env.NODE_ENV = originalEnv;
-    });
-
-    it('warns when tabCount is used without tabCountSrText in development', () => {
-      process.env.NODE_ENV = 'development';
-
+    it('warns when tabCount is used without tabCountSrText', () => {
       createComponent({
         propsData: { tabCount: 5 },
         attrs: { title: 'Test' },
       });
 
-      expect(consoleWarnSpy).toHaveBeenCalledWith(expect.stringContaining('[GlTab]'));
-      expect(consoleWarnSpy).toHaveBeenCalledWith(expect.stringContaining('tab-count-sr-text'));
+      expect(logWarning).toHaveBeenCalledWith(expect.stringContaining('tab-count-sr-text'), {
+        name: 'GlTab',
+      });
     });
 
-    it('does not warn in production', () => {
-      process.env.NODE_ENV = 'production';
-
+    it('does not warn when tabCountSrText is provided', () => {
       createComponent({
-        propsData: { tabCount: 5 },
+        propsData: { tabCount: 5, tabCountSrText: '5 items' },
         attrs: { title: 'Test' },
       });
 
-      expect(consoleWarnSpy).not.toHaveBeenCalled();
+      expect(logWarning).not.toHaveBeenCalled();
     });
   });
 });

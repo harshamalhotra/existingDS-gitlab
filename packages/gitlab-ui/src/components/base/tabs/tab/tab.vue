@@ -3,6 +3,7 @@
 import isPlainObject from 'lodash/isPlainObject';
 import { BTab } from '../../../../vendor/bootstrap-vue/src/components/tabs/tab';
 import GlBadge from '../../badge/badge.vue';
+import { logWarning } from '../../../../utils/utils';
 
 import { DEFAULT_TAB_TITLE_LINK_CLASS } from '../constants';
 
@@ -63,10 +64,10 @@ export default {
     },
   },
   created() {
-    if (process.env.NODE_ENV !== 'production' && this.hasTabCount && !this.tabCountSrText) {
-      // eslint-disable-next-line no-console
-      console.warn(
-        '[GlTab] When using "tab-count", you should also provide "tab-count-sr-text" for screen reader accessibility. Example: :tab-count-sr-text="n__(\'%d item\', \'%d items\', count)"',
+    if (this.hasTabCount && !this.tabCountSrText) {
+      logWarning(
+        'When using "tab-count", you should also provide "tab-count-sr-text" for screen reader accessibility. Example: :tab-count-sr-text="n__(\'%d item\', \'%d items\', count)"',
+        { name: 'GlTab' },
       );
     }
   },

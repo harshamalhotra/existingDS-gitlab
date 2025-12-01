@@ -2,6 +2,7 @@
 <script>
 import iconsPath from '@gitlab/svgs/dist/icons.svg';
 import iconsInfo from '@gitlab/svgs/dist/icons.json';
+import { logWarning } from '../../../utils/utils';
 import { iconSizeOptions, iconVariantOptions } from '../../../utils/constants';
 
 const knownIcons = new Set(iconsInfo.icons);
@@ -36,8 +37,7 @@ export default {
         if (knownIcons.has(value)) {
           return true;
         }
-        // eslint-disable-next-line no-console
-        console.warn(`Icon '${value}' is not a known icon of @gitlab/svgs`);
+        logWarning(`Icon '${value}' is not a known icon of @gitlab/svgs`, { name: 'GlIcon' });
         return false;
       },
     },

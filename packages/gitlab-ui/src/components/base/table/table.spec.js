@@ -40,7 +40,10 @@ describe('GlTable', () => {
     factory();
     await waitForAnimationFrame();
 
-    expect(logWarning).toHaveBeenCalledWith(glTableLiteWarning, wrapper.element);
+    expect(logWarning).toHaveBeenCalledWith(glTableLiteWarning, {
+      name: 'GlTable',
+      element: wrapper.element,
+    });
   });
 
   it('should not log a warning when given a prop which qualifies for the usage of GlTable', async () => {

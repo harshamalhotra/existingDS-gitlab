@@ -149,8 +149,8 @@ export default {
   mounted() {
     if (this.hasIconOnly && !this.$attrs['aria-label']) {
       logWarning(
-        '[GlBadge] Icon-only badges require an aria-label for accessibility. The label should describe the metadata (e.g., "Due date", "Open issue"), not the icon name. See https://design.gitlab.com/components/badge#using-icon-only-badges',
-        this.$el,
+        'Icon-only badges require an aria-label for accessibility. The label should describe the metadata (e.g., "Due date", "Open issue"), not the icon name. See https://design.gitlab.com/components/badge#using-icon-only-badges',
+        { name: 'GlBadge', element: this.$el },
       );
     }
   },

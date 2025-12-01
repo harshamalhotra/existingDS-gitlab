@@ -2,7 +2,7 @@
 <script>
 import clamp from 'lodash/clamp';
 import uniqueId from 'lodash/uniqueId';
-import { stopEvent } from '../../../../utils/utils';
+import { stopEvent, logWarning } from '../../../../utils/utils';
 import {
   GL_DROPDOWN_SHOWN,
   GL_DROPDOWN_HIDDEN,
@@ -587,9 +587,9 @@ export default {
             immediate: true,
             handler(newValue) {
               if (newValue && this.items.some((item) => !isOption(item))) {
-                // eslint-disable-next-line no-console
-                console.warn(
+                logWarning(
                   'When using grouped options infinite scroll can only be used on the last group.',
+                  { name: 'GlCollapsibleListbox' },
                 );
               }
             },
