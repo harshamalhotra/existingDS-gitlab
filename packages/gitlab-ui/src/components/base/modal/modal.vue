@@ -150,10 +150,10 @@ export default {
   },
   mounted() {
     if (!this.ariaLabel && !this.title) {
-      logWarning(
-        '[gl-modal]: Accessible name for modal missing. Please add title prop or aria-label.',
-        this.$el,
-      );
+      logWarning('Accessible name for modal missing. Please add title prop or aria-label.', {
+        name: 'GlModal',
+        element: this.$el,
+      });
     }
   },
   methods: {

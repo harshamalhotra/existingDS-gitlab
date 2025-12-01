@@ -173,12 +173,17 @@ export function isDev() {
 
 /**
  * Prints a warning message to the console in non-test and non-production environments.
- * @param {string} message message to print to the console
- * @param {HTMLElement} element component that triggered the warning
+ * @param {string} message Message to print to the console.
+ * @param {Object} [context] Optional object with additional context.
+ * @param {string} [context.name] The name of the context of the message. Usually the component's name.
+ * @param {HTMLElement} [context.element] The element relevant to the message.
  */
-export function logWarning(message = '', element = '') {
-  if (message.length && isDev()) {
-    console.warn(message, element); // eslint-disable-line no-console
+export function logWarning(message, context = {}) {
+  if (isDev()) {
+    const { name, element } = context;
+    const formattedMessage = name ? `[${name}] ${message}` : message;
+    const args = element ? [formattedMessage, element] : [formattedMessage];
+    console.warn(...args); // eslint-disable-line no-console
   }
 }
 

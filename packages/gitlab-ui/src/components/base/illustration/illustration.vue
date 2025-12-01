@@ -2,6 +2,7 @@
 <script>
 import illustrationsPath from '@gitlab/svgs/dist/illustrations.svg';
 import illustrationsInfo from '@gitlab/svgs/dist/illustrations.json';
+import { logWarning } from '../../../utils/utils';
 
 const knownIllustrations = illustrationsInfo.icons;
 
@@ -24,8 +25,9 @@ export default {
         if (knownIllustrations.some((obj) => obj.name === value)) {
           return true;
         }
-        // eslint-disable-next-line no-console
-        console.warn(`Illustration '${value}' is not a known illustration of @gitlab/svgs`);
+        logWarning(`Illustration '${value}' is not a known illustration of @gitlab/svgs`, {
+          name: 'GlIllustration',
+        });
         return false;
       },
     },

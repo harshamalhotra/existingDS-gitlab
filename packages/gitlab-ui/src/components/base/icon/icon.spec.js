@@ -1,5 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 import { iconSizeOptions } from '~/utils/constants';
+import { logWarning } from '../../../utils/utils';
 import Icon from './icon.vue';
 
 const ICONS_PATH = '/path/to/icons.svg';
@@ -7,10 +8,12 @@ const TEST_SIZE = 8;
 const TEST_NAME = 'check-circle';
 
 jest.mock('@gitlab/svgs/dist/icons.svg', () => '/path/to/icons.svg');
+jest.mock('../../../utils/utils', () => ({
+  logWarning: jest.fn(),
+}));
 
 describe('Icon component', () => {
   let wrapper;
-  let consoleSpy;
 
   const createComponent = (props) => {
     wrapper = shallowMount(Icon, {
@@ -25,12 +28,6 @@ describe('Icon component', () => {
   const validateSize = (size) => Icon.props.size.validator(size);
   const validateName = (name) => Icon.props.name.validator(name);
   const validateVariant = (variant) => Icon.props.variant.validator(variant);
-
-  afterEach(() => {
-    if (consoleSpy) {
-      consoleSpy.mockRestore();
-    }
-  });
 
   it('has role=img', () => {
     createComponent();
@@ -64,12 +61,12 @@ describe('Icon component', () => {
   describe('name validator', () => {
     it('fails with name that does not exist', () => {
       const badName = `${TEST_NAME}-bogus-zebra`;
-      consoleSpy = jest.spyOn(console, 'warn').mockImplementation();
 
       expect(validateName(badName)).toBe(false);
 
-      expect(consoleSpy).toHaveBeenCalledWith(
+      expect(logWarning).toHaveBeenCalledWith(
         `Icon '${badName}' is not a known icon of @gitlab/svgs`,
+        { name: 'GlIcon' },
       );
     });
 

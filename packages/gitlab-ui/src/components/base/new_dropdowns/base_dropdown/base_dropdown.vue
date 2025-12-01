@@ -121,8 +121,8 @@ export default {
       validator: (value) => {
         if (['left', 'center', 'right'].includes(value)) {
           logWarning(
-            `GlDisclosureDropdown/GlCollapsibleListbox: "${value}" placement is deprecated.
-            Use ${dropdownPlacements[value]} instead.`,
+            `"${value}" placement is deprecated. Use ${dropdownPlacements[value]} instead.`,
+            { name: 'GlDisclosureDropdown/GlCollapsibleListbox' },
           );
         }
 
@@ -347,9 +347,12 @@ export default {
     checkToggleFocusable() {
       if (!isElementFocusable(this.toggleElement) && !isElementTabbable(this.toggleElement)) {
         logWarning(
-          `GlDisclosureDropdown/GlCollapsibleListbox: Toggle is missing a 'tabindex' and cannot be focused.
+          `Toggle is missing a 'tabindex' and cannot be focused.
           Use 'a' or 'button' element instead or make sure to add 'role="button"' along with 'tabindex' otherwise.`,
-          this.$el,
+          {
+            name: 'GlDisclosureDropdown/GlCollapsibleListbox',
+            element: this.$el,
+          },
         );
       }
     },

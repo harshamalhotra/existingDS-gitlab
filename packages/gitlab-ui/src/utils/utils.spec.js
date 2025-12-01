@@ -3,6 +3,7 @@ import {
   isElementTabbable,
   focusFirstFocusableElement,
   stopEvent,
+  logWarning,
 } from './utils';
 
 describe('isElementFocusable', () => {
@@ -152,5 +153,151 @@ describe('stopEvent', () => {
     expect(event.preventDefault).not.toHaveBeenCalled();
     expect(event.stopPropagation).not.toHaveBeenCalled();
     expect(event.stopImmediatePropagation).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('logWarning', () => {
+  let consoleWarnSpy;
+  let originalEnv;
+
+  beforeEach(() => {
+    originalEnv = process.env.NODE_ENV;
+    consoleWarnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    process.env.NODE_ENV = originalEnv;
+    consoleWarnSpy.mockRestore();
+  });
+
+  describe('in development environment', () => {
+    beforeEach(() => {
+      process.env.NODE_ENV = 'development';
+    });
+
+    it('logs a simple message without context', () => {
+      const message = 'This is a warning message';
+
+      logWarning(message);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('logs a message with component name context', () => {
+      const message = 'Component warning';
+      const context = { name: 'GlButton' };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith('[GlButton] Component warning');
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('logs a message with element context', () => {
+      const message = 'Element warning';
+      const element = document.createElement('div');
+      const context = { element };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message, element);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('logs a message with both name and element context', () => {
+      const message = 'Full context warning';
+      const element = document.createElement('button');
+      const context = { name: 'GlButton', element };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith('[GlButton] Full context warning', element);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles empty context object', () => {
+      const message = 'Empty context warning';
+
+      logWarning(message, {});
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles undefined context', () => {
+      const message = 'Undefined context warning';
+
+      logWarning(message, undefined);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles context with only name property', () => {
+      const message = 'Name only warning';
+      const context = { name: 'GlButton', someOtherProp: 'ignored' };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith('[GlButton] Name only warning');
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles context with only element property', () => {
+      const message = 'Element only warning';
+      const element = document.createElement('span');
+      const context = { element, someOtherProp: 'ignored' };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message, element);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles empty string as component name', () => {
+      const message = 'Empty name warning';
+      const context = { name: '' };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it('handles null values in context', () => {
+      const message = 'Null values warning';
+      const context = { name: null, element: null };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).toHaveBeenCalledWith(message);
+      expect(consoleWarnSpy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('in non-development environment', () => {
+    beforeEach(() => {
+      process.env.NODE_ENV = 'production';
+    });
+
+    it('does not log anything when not in development', () => {
+      const message = 'This should not be logged';
+      const context = { name: 'GlButton' };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).not.toHaveBeenCalled();
+    });
+
+    it('does not log with element context in non-dev environment', () => {
+      const message = 'Element warning';
+      const element = document.createElement('div');
+      const context = { name: 'Component', element };
+
+      logWarning(message, context);
+
+      expect(consoleWarnSpy).not.toHaveBeenCalled();
+    });
   });
 });

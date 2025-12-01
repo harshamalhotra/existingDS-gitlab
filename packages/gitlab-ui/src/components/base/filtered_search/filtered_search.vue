@@ -3,6 +3,7 @@ import isEqual from 'lodash/isEqual';
 import cloneDeep from 'lodash/cloneDeep';
 import { PortalTarget } from 'portal-vue';
 import { GlTooltipDirective } from '../../../directives/tooltip/tooltip';
+import { logWarning } from '../../../utils/utils';
 import GlIcon from '../icon/icon.vue';
 import GlSearchBoxByClick from '../search_box_by_click/search_box_by_click.vue';
 import GlFilteredSearchTerm from './filtered_search_term.vue';
@@ -72,9 +73,9 @@ export default {
         // eslint-disable-next-line no-underscore-dangle
         const isOk = Array.isArray(value) && value.every(({ token }) => !token || token.__v_skip);
         if (!isOk) {
-          // eslint-disable-next-line no-console
-          console.warn(
+          logWarning(
             'You are using Vue3. In Vue3 each token component passed to filtered search must be wrapped into markRaw',
+            { name: 'GlFilteredSearch' },
           );
         }
 
