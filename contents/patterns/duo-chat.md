@@ -11,7 +11,7 @@ related:
   - /patterns/duo-calls-to-action
   - /patterns/duo-feedback
   - /patterns/duo-slash-commands
-figma: https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=43494-1
+figma: https://www.figma.com/design/VqpH0V6joIOokfeXS71Yqz/Duo-Agent-Platform-Side-Panel?m=auto&node-id=921-14131&t=b19t7Zz2EQtiQR4j-1
 ---
 
 ## Overview
@@ -121,4 +121,4 @@ Input areas use contextual placeholder text like "Let's work through this togeth
 
 ## Resources
 
-- [Figma: SSOT Chat Panel](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=43494-1)
+- [Figma: SSOT Chat Panel](https://www.figma.com/design/VqpH0V6joIOokfeXS71Yqz/Duo-Agent-Platform-Side-Panel?m=auto&node-id=921-14131&t=CUeMczniyP6ESQ3a-1)
