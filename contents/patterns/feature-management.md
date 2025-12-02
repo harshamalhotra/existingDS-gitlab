@@ -22,15 +22,25 @@ Disabling unwanted [features is possible in projects](https://docs.gitlab.com/ee
 
 Higher tier features should be easy to identify from the rest of the interface. Consider using the following badge to highlight them:
 
-<figure-img alt="Premium feature badge" label="Higher tier feature badge" src="/img/higher-tier-feature-badges.svg"></figure-img>
-
-<todo>Replace badge image with live example or link once the new variant has been added to GitLab UI.</todo>
-
-#### Specification
-
-- Component name: [`GlBadge`](https://design.gitlab.com/components/badge)
-- Variant: `Tier`
-- Icon: `16`
+```html
+<!-- live-example -->
+<gl-badge
+  icon="license"
+  variant="tier"
+  href="https://about.gitlab.com/pricing/"
+  target="_blank"
+>
+  Premium
+</gl-badge>
+<gl-badge
+  id="icon-only-tier-badge"
+  icon="license"
+  variant="tier"
+  href="https://about.gitlab.com/pricing/"
+  target="_blank"
+/>
+<gl-tooltip target="icon-only-tier-badge">Premium</gl-tooltip>
+```
 
 #### How to use
 
@@ -42,9 +52,6 @@ Higher tier features should be easy to identify from the rest of the interface. 
 #### Behaviour
 
 - Links to [tiers details](https://about.gitlab.com/pricing/).
-- Can be removed from the UI via group or instance level settings.
-
-<todo>Add links to the documentation.</todo>
 
 ### Highlighting feature versions
 
@@ -59,13 +66,15 @@ Experiment and beta features are subject to legal terms, which must be displayed
 
 Similar to higher tier features, feature versions like experiment and beta should be easily identifiable, using the [`GlExperimentBadge`](#glexperimentbadge) component. It comes with a popover that explains what experiment or beta means, and links to [Support for features in different stages of development](https://docs.gitlab.com/policy/development_stages_support/) for more information.
 
-#### GlExperimentBadge
-
 - Position the badge close to the feature's name to establish a clear visual link. Avoid placing badges inside buttons to maintain button simplicity and clarity.
 - When placing the badge, consider the available space. The badge can be displayed either before or after the user interacts with the feature.
 - When the feature becomes Generally Available, make sure the badge is removed.
 
-<story-viewer component="experimental-experiment-badge" title="GlExperimentBadge" view-mode="docs"></story-viewer>
+```html
+<!-- live-example -->
+<gl-experiment-badge />
+<gl-experiment-badge type="beta" />
+```
 
 ## Visibility
 
@@ -81,3 +90,9 @@ Feature visibility is dependent on a user's permissions or subscription levels, 
 - When child-level settings are enabled from a parent level. In this scenario, a feature may be disabled or replaced with a read-only equivalent. There should be text explaining that the setting is configured at the parent level.
 - Exposing a message to explain why a feature is not available is preferable to disabling the feature. For example, instead of disabling the merge button on a merge request with outstanding approvals, the button is replaced with copy to explain the state, _Merge blocked: all required approvals must be given_.
   - If an element needs to be disabled, consider wrapping it in a focusable element that can trigger a [tooltip](/components/tooltip).
+
+## Code reference
+
+### GlExperimentBadge
+
+<story-viewer component="experimental-experiment-badge" title="GlExperimentBadge" view-mode="docs"></story-viewer>
