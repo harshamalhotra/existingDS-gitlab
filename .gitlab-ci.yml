@@ -41,6 +41,8 @@ variables:
   DOCKER_TLS_CERTDIR: '' # https://gitlab.com/gitlab-org/gitlab-runner/issues/4501
   GITLAB_ADVANCED_SAST_ENABLED: 'true'
   NODE_IMAGE: node:22.21.1-trixie
+  PRODUCTION_STORYBOOK_URL: 'https://design-system-pages-2b622b.gitlab.io/storybook'
+  PRODUCTION_STORYBOOK_VUE3_URL: 'https://design-system-pages-2b622b.gitlab.io/storybook-vue3'
 
 include:
   - local: packages/gitlab-svgs/.gitlab-ci.yml
@@ -171,7 +173,8 @@ lint_and_test:
     - .build_cache
   stage: deploy
   needs: []
-  publish: public
+  pages:
+    publish: public
   variables:
     CACHE_POLICY: pull-push
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
@@ -193,6 +196,8 @@ lint_and_test:
 production:
   extends:
     - .pages
+  variables:
+    GITLAB_UI_URL: $PRODUCTION_STORYBOOK_URL
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
   pages:
