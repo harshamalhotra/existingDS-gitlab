@@ -634,6 +634,10 @@
             "title": "GitLab Duo Agent Platform",
             "items": [
               {
+                "title": "Agents and Flows",
+                "path": "duo-agents-and-flows"
+              },
+              {
                 "title": "Calls to action",
                 "path": "duo-calls-to-action"
               },
