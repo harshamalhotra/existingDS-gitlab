@@ -359,7 +359,12 @@ ui:duo_job:
   needs:
     - ui:build_package
   script:
-    - node bin/build_duo_ui.mjs
+    - |
+      bin/trigger_pipeline.mjs \
+        --project-id=62039593 \
+        --token="$DUO_UI_PIPELINE_TRIGGER_TOKEN" \
+        --variable="UPSTREAM_GITLAB_UI_VERSION:$DEPENDENCY_URL" \
+        --variable="UPSTREAM_BRANCH_NAME:$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
   rules:
     - if: '$CI_MERGE_REQUEST_LABELS =~ /duo-ui-allowed-to-fail/'
       when: always
