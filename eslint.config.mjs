@@ -242,6 +242,7 @@ export default [
         'import/no-unresolved': 'off',
         'import/extensions': 'off',
         'no-param-reassign': 'off',
+        'no-continue': 'off',
       },
     },
     {
