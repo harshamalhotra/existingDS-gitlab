@@ -368,7 +368,7 @@ ui:create_integration_merge_request:
 
 ui:duo_job:
   extends: [.ui:node, .ui:yarn_install]
-  stage: deploy
+  stage: build
   needs:
     - ui:build_package
   script:
