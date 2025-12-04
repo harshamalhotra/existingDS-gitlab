@@ -95,6 +95,14 @@ export default {
       default: '',
     },
     /**
+     * The string to render as the panel subtitle.
+     */
+    subtitle: {
+      type: String,
+      required: false,
+      default: '',
+    },
+    /**
      * Set to `true` to show the loading state.
      */
     loading: {
@@ -198,7 +206,7 @@ export default {
   >
     <div class="gl-flex gl-h-full gl-flex-col">
       <div class="gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
-        <div class="gl-flex gl-items-center gl-overflow-hidden gl-pb-3">
+        <div class="gl-flex gl-items-center gl-overflow-hidden">
           <gl-icon
             v-if="hasTitleIcon"
             class="gl-mr-2"
@@ -288,7 +296,14 @@ export default {
           </div>
         </div>
       </div>
-      <div :class="bodyClasses">
+      <p
+        v-if="subtitle"
+        class="gl-mb-2 gl-mt-1 gl-text-sm gl-text-subtle"
+        data-testid="panel-subtitle"
+      >
+        {{ subtitle }}
+      </p>
+      <div class="gl-mt-3" :class="bodyClasses">
         <template v-if="loading">
           <gl-loading-icon size="lg" class="gl-min-h-8 gl-w-full" />
           <div
