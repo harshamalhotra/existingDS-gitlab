@@ -374,7 +374,7 @@ ui:duo_job:
   script:
     - |
       bin/trigger_pipeline.mjs \
-        --project-id=62039593 \
+        --project-id=gitlab-org%2Fduo-ui \
         --token="$DUO_UI_PIPELINE_TRIGGER_TOKEN" \
         --variable="UPSTREAM_GITLAB_UI_VERSION:$DEPENDENCY_URL" \
         --variable="UPSTREAM_BRANCH_NAME:$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
