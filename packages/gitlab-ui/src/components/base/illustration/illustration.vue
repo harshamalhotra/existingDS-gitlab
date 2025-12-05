@@ -16,7 +16,7 @@ export default {
   name: 'GlIllustration',
   props: {
     /**
-     * One of the illustrations from https://gitlab-org.gitlab.io/gitlab-svgs/ project
+     * One of the illustrations from https://design.gitlab.com/product-foundations/illustration-directory
      */
     name: {
       type: String,

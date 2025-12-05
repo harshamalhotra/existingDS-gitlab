@@ -28,7 +28,7 @@ export default {
       default: undefined,
     },
     /**
-     * One of the icons from https://gitlab-org.gitlab.io/gitlab-svgs/ project
+     * One of the icons from https://design.gitlab.com/product-foundations/iconography-directory
      */
     name: {
       type: String,

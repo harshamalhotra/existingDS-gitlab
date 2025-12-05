@@ -22,7 +22,7 @@ Full highlights:
 
 - (Patterns & Page Templates): Adds link to [**file diff**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2624-34) shared asset.
 - (Patterns & Page Templates): Adds [**dashboard panel**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3058-394) pattern.
-- (Product Icons): Adds [**passkey**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~passkey) icon.
+- (Product Icons): Adds [**passkey**](https://design.gitlab.com/product-foundations/iconography-directory?q=~passkey) icon.
 
 #### 🚀 Enhancements
 
@@ -31,7 +31,7 @@ Full highlights:
 #### 🔄 Changes
 
 - (Patterns & Page Templates): Updates [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120) AI panel button ordering.
-- (Product Icons): Increases the "+" size in add/new icons: [**work-item-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-new), [**todo-add**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~todo-add), [**folder-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~folder-new), [**doc-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~doc-new), and [**duo-chat-new**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~duo-chat-new).
+- (Product Icons): Increases the "+" size in add/new icons: [**work-item-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-new), [**todo-add**](https://design.gitlab.com/product-foundations/iconography-directory?q=~todo-add), [**folder-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~folder-new), [**doc-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~doc-new), and [**duo-chat-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~duo-chat-new).
 
 #### ⚠️ Deprecations
 
@@ -124,11 +124,11 @@ Full highlights:
 - (Design Tokens): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
 - (Component Library): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
 - (Patterns & Page Templates): Adds [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120&p=f&t=TwmTgXdN5ngbUoXj-11) page template.
-- (Product Icons): Adds [**flow**](https://gitlab-org.gitlab.io/?q=~flow-ai) and [**agent-ai**](https://gitlab-org.gitlab.io/?q=~agent-ai) icons.
+- (Product Icons): Adds [**flow**](https://design.gitlab.com/product-foundations/iconography-directory?q=~flow-ai) and [**agent-ai**](https://design.gitlab.com/product-foundations/iconography-directory?q=~agent-ai) icons.
 
 #### 🔄 Changes
 
-- (Product Icons): Updates [**copy-to-clipboard**](https://gitlab-org.gitlab.io/?q=~copy-to-clipboard) icon to new design.
+- (Product Icons): Updates [**copy-to-clipboard**](https://design.gitlab.com/product-foundations/iconography-directory?q=~copy-to-clipboard) icon to new design.
 - (Component Library): Breaking(medium): Set [**❖&nbsp;Toast**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-139&p=f&t=5UaNq5ViAdUg70VA-11) width to hug and adds max width to variants. In some instances this will cause the toast to be ~20px wider with longer content.
 - (Component Library): Updates [**❖&nbsp;Drawer**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=125418-1519&t=5UaNq5ViAdUg70VA-11) to use the `gl-shadow-lg`.
 - (Component Library): Changes [**Drawer example**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150-59211&t=5UaNq5ViAdUg70VA-11) to better support scrim.
@@ -218,8 +218,8 @@ Full highlights:
 - (Component Library): Adds simple [**❖&nbsp;Card**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=131231-5825&p=f&t=n4LGVP8W7mwDeQPi-11) component.
 - (Annotations): Adds [**accessibility bluelines**](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?node-id=2406-34&p=f&t=6MxraATsgKdBZTqJ-11) annotation assets (also available as a [community file](https://www.figma.com/community/file/779827094223635810/accessibility-bluelines)).
 - (Patterns & Page Templates): Adds [**CRUD component**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1845-34&p=f&t=7KuVcE1MKT3IwltD-11) pattern and product examples ("component" in the name relates to how this is set up in the product, it isn't constructed as a component in Figma).
-- (Product Illustrations): Adds [**error-429-lg**](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=~error-429-lg) illustration.
-- (Product Icons): Adds [**work-item-parent**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-parent), [**work-item-child**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~work-item-child), and [**recipe**](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~recipe) icons.
+- (Product Illustrations): Adds [**error-429-lg**](https://design.gitlab.com/product-foundations/illustration-directory?q=~error-429-lg) illustration.
+- (Product Icons): Adds [**work-item-parent**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-parent), [**work-item-child**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-child), and [**recipe**](https://design.gitlab.com/product-foundations/iconography-directory?q=~recipe) icons.
 
 #### 🔄 Changes
 
@@ -284,7 +284,7 @@ Full highlights:
 
 #### ➕ Additions
 
-- (Product Illustrations): Adds [**package-sm**](https://www.figma.com/design/1ui9w228X0S5WxaD0SRdIA/GitLab-Product-Illustrations?node-id=7320-1269&t=vP66JWHcINQDQM3H-4) illustration.
+- (Product Illustrations): Adds [**package-sm**](https://design.gitlab.com/product-foundations/illustration-directory?q=package-sm) illustration.
 
 #### 🔄 Changes
 
