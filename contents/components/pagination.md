@@ -24,13 +24,13 @@ related:
 
 <figure-img alt="Numbered diagram of pagination structure" label="Pagination structure" src="/img/pagination-structure.svg"></figure-img>
 
-1. **Previous icon**: A [chevron-left](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-left) icon as part of the "previous page" link.
+1. **Previous icon**: A [chevron-left](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-left) icon as part of the "previous page" link.
 1. **Previous label**: Text that indicates navigating to the previous page.
 1. **Page link**: Sequential page number.
 1. **Active page link**: Highlights current page.
 1. **Truncation**: Indicates more pages exist that can't be listed due to space.
 1. **Next label**: Text that indicates navigating to the next page.
-1. **Next icon**: A [chevron-right](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-right) icon as part of the "next page" link.
+1. **Next icon**: A [chevron-right](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-right) icon as part of the "next page" link.
 1. **Help text**: Text that indicates the current page and total number of pages.
 
 ## Guidelines

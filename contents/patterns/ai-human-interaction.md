@@ -71,7 +71,7 @@ To design buttons and links that trigger AI features, see the [CTA for GitLab Du
 
 #### Illustration
 
-The [`tanuki-ai-md`](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-md.svg) and [`tanuki-ai-sm`](https://gitlab-org.gitlab.io/gitlab-svgs/illustrations?q=illustrations/tanuki-ai-sm.svg) illustrations serve the purpose of promoting and associating AI related features within the UI.
+The [`tanuki-ai-md`](https://design.gitlab.com/product-foundations/illustration-directory?q=illustrations/tanuki-ai-md.svg) and [`tanuki-ai-sm`](https://design.gitlab.com/product-foundations/illustration-directory?q=illustrations/tanuki-ai-sm.svg) illustrations serve the purpose of promoting and associating AI related features within the UI.
 
 _The illustration is currently a [work in progress](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/3067), and its final version is still in development._
 

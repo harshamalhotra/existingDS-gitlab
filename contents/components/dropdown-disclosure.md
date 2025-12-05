@@ -54,9 +54,9 @@ related:
 
 A [button](/components/button) that triggers a dropdown panel comes in a few variants to fit different situations.
 
-- **Dropdown button**: A dropdown button has a [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
+- **Dropdown button**: A dropdown button has a [chevron-down](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
 - **Split dropdown button**: A split dropdown button is a [button](/components/button) with two segments. The left text button is for the most common option and an attached dropdown button to the right opens a panel with additional options.
-- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://gitlab-org.gitlab.io/gitlab-svgs/?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no text.
+- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://design.gitlab.com/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no text.
 
 ### Size
 

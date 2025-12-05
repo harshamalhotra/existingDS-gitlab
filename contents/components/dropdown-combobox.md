@@ -69,8 +69,8 @@ See [diagram](/components/dropdown-overview#when-to-use-either-component) for ad
 
 A [button](/components/button) that triggers a combobox comes in a few variants to fit different situations.
 
-- **Dropdown button**: A dropdown button has a [chevron-down](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
-- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://gitlab-org.gitlab.io/gitlab-svgs/?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no visible text.
+- **Dropdown button**: A dropdown button has a [chevron-down](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
+- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://design.gitlab.com/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no visible text.
 
 ### Size
 
@@ -110,7 +110,7 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 
 ### Content
 
-- Placeholder text in an input should only be used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) input, which includes a [search](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~search) icon to further clarify its purpose.
+- Placeholder text in an input should only be used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) input, which includes a [search](https://design.gitlab.com/product-foundations/iconography-directory?q=~search) icon to further clarify its purpose.
 - A header can provide context for the list of options.
 - Within a listbox:
   - Section titles can categorize options into meaningful groups.
@@ -256,7 +256,7 @@ template. If you want to render a custom template for items, use the
 <gl-collapsible-listbox :items="items">
   <template #list-item="{ item }">
     <span class="gl-flex gl-items-center">
-      <gl-avatar :size="32" class-="gl-mr-3"/>
+      <gl-avatar :size="32" class-="gl-mr-3" />
       <span class="gl-flex gl-flex-col">
         <span class="gl-font-bold gl-whitespace-nowrap">{{ item.text }}</span>
         <span class="gl-text-subtle"> {{ item.secondaryText }}</span>
@@ -292,14 +292,14 @@ To render custom group labels, use the `group-label` scoped slot:
 #### Dealing with long option texts
 
 - Some options might have long non-wrapping text that would overflow the dropdown maximum width. In
-such cases, it's recommended to override the `#list-item` slot and to truncate the option text using
-`GlTruncate`.
+  such cases, it's recommended to override the `#list-item` slot and to truncate the option text using
+  `GlTruncate`.
 - If the toggle text reflects the selected option text, it might be necessary to truncate
-it too by overriding the `#toggle` slot.
+  it too by overriding the `#toggle` slot.
 
 ### Search
 
-To filter out items by  search query set `searchable` property to `true`.
+To filter out items by search query set `searchable` property to `true`.
 Listbox will render the search field and will emit `search` event with the `searchQuery` value.
 Performing the search is the responsibility of the listbox's consumer component.
 When performing search set `searching` prop to `true` - this will render the loader

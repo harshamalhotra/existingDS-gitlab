@@ -76,7 +76,7 @@ Use the following guidelines to choose the right component in most cases:
 - The text field accepts all special characters and numbers.
 - The current month (MM) is the default month shown in the calendar dropdown.
 - The order of the “From” and “To” text fields should match the user’s reading language setting (left-to-right by default).
-- When the date range picker limits the number of selectable days, indicate it in the UI with text that summarizes the number of days currently selected, followed by an [info icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o). The tooltip on the info icon should clarify the date range limit.
+- When the date range picker limits the number of selectable days, indicate it in the UI with text that summarizes the number of days currently selected, followed by an [info icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~information-o). The tooltip on the info icon should clarify the date range limit.
 
 ### Accessibility
 
@@ -85,7 +85,7 @@ Use the following guidelines to choose the right component in most cases:
 ## Reference
 
 - In Adrian Roselli's article, _[Maybe You Don't Need a Date Picker](https://adrianroselli.com/2019/07/maybe-you-dont-need-a-date-picker.html)_, he states that "Users generally do not want a complex date picker every time you ask for any date. At least not users with a keyboard." He follows the [robustness principle](https://en.wikipedia.org/wiki/Robustness_principle) where you should "be conservative in what you do, be liberal in what you accept from others" in his exploration. A date picker can simply be overwhelming for something as simple as entering a familiar date, especially for keyboard-only users. Anecdotally he backs this up with 20 years of research. To be clear though, he also mentions that a plain text field will not work "if you need to see chosen dates, unavailable dates, weekends, holidays, date spans, date ranges, dates where counts from start or end dates matter, and so on."
-- In HTML5 an input with `type="date"` is available, but [accessibility support](https://a11ysupport.io/tech/html/input(type-date)_element) for screen readers and voice control is inconsistent.
+- In HTML5 an input with `type="date"` is available, but [accessibility support](https://a11ysupport.io/tech/html/input%28type-date%29_element) for screen readers and voice control is inconsistent.
 
 ## Code reference
 
