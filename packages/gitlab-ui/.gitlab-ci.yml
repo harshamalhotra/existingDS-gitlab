@@ -172,6 +172,7 @@ ui:pages_storybook_redirect:
   variables:
     REDIRECT_URL: $PRODUCTION_STORYBOOK_URL
   script:
+    - cd packages/gitlab-ui
     - bin/build_storybook_redirect_page
   pages:
     publish: /tmp/index.html
