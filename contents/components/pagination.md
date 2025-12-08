@@ -22,16 +22,24 @@ related:
 
 ## Structure
 
-<figure-img alt="Numbered diagram of pagination structure" label="Pagination structure" src="/img/pagination-structure.svg"></figure-img>
+### Offset pagination structure
 
-1. **Previous icon**: A [chevron-left](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-left) icon as part of the "previous page" link.
-1. **Previous label**: Text that indicates navigating to the previous page.
+<figure-img alt="Numbered diagram of pagination structure" label="Offset pagination structure" src="/img/pagination-structure.svg"></figure-img>
+
+1. **Previous link**: A link to the previous page, containing a [chevron-lg-left](/product-foundations/iconography-directory?q=~chevron-lg-left) icon. This link has an aria label to indicate navigating to the previous page.
+1. **Next link**: A link to the next page, containing a [chevron-lg-right](/product-foundations/iconography-directory?q=~chevron-lg-right) icon. This link has an aria label to indicate navigating to the next page.
 1. **Page link**: Sequential page number.
 1. **Active page link**: Highlights current page.
-1. **Truncation**: Indicates more pages exist that can't be listed due to space.
+1. **Truncation**: Indicates more pages exist that can't be listed due to space. See [Behavior](#behavior) below.
+
+### Keyset pagination structure
+
+<figure-img alt="Numbered diagram of keyset pagination structure" label="Keyset pagination structure" src="/img/keyset-pagination-structure.svg"></figure-img>
+
+1. **Previous icon**: A [chevron-lg-left](/product-foundations/iconography-directory?q=~chevron-lg-left) icon as part of the "previous page" link.
+1. **Previous label**: Text that indicates navigating to the previous page.
 1. **Next label**: Text that indicates navigating to the next page.
-1. **Next icon**: A [chevron-right](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-right) icon as part of the "next page" link.
-1. **Help text**: Text that indicates the current page and total number of pages.
+1. **Next icon**: A [chevron-lg-right](/product-foundations/iconography-directory?q=~chevron-lg-right) icon as part of the "next page" link.
 
 ## Guidelines
 
@@ -46,7 +54,7 @@ related:
 
 ### Appearance
 
-- There is 24px [spacing](/product-foundations/spacing#standard-spacing-guidelines) between pagination and the element it relates to.
+- There is 24px [spacing](/product-foundations/spacing#standard-spacing-guidelines) (1.5rem, or spacing scale `6`) between pagination and the element it relates to.
 
 ### Types of pagination
 
@@ -60,7 +68,7 @@ Because page numbers are visible, the first and last page links are not truncate
 
 #### Keyset pagination
 
-Keyset pagination only has **Prev** and **Next** options and no page numbers. It's ideal for paginating results that may have dynamic additions or subtractions as a user can only move to the previous or next set of results, regardless of where it is in the set. Keyset pagination is a good alternative to [infinite scroll](/components/infinite-scroll) since it can provide a more predictive and accessible experience.
+Keyset pagination only has **Previous** and **Next** options and no page numbers. The text labels for each button are shown in Keyset pagination. It's ideal for paginating results that may have dynamic additions or subtractions as a user can only move to the previous or next set of results, regardless of where it is in the set. Keyset pagination is a good alternative to [infinite scroll](/components/infinite-scroll) since it can provide a more predictive and accessible experience.
 
 ### States
 
