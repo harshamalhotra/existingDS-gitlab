@@ -119,10 +119,12 @@ ui:build_package:
   needs: []
   stage: build
   script:
+    - printf "$CI_JOB_ID" >"${CI_JOB_NAME}_job_id"
     - bin/build-storybook-static.sh
   artifacts:
     paths:
       - packages/gitlab-ui/public
+      - packages/gitlab-ui/${CI_JOB_NAME}_job_id
 
 .ui:pages-review:
   variables:
@@ -144,13 +146,15 @@ ui:build_package:
     url: '${CURRENT_PAGES_URL}'
     auto_stop_in: '2 weeks'
 
-# Important: Ensure this job's name and artifacts are kept in sync with what
+# Important: Ensure this job's artifacts are kept in sync with what
 # https://gitlab.com/gitlab-org/frontend/design-system-pages/ expects.
+# This job's name is also depended upon by the ui:trigger_design_system_pages job.
 ui:build_storybook:
   extends: .ui:build_storybook
 
-# Important: Ensure this job's name and artifacts are kept in sync with what
+# Important: Ensure this job's artifacts are kept in sync with what
 # https://gitlab.com/gitlab-org/frontend/design-system-pages/ expects.
+# This job's name is also depended upon by the ui:trigger_design_system_pages job.
 ui:build_storybook_vue3:
   extends: [.ui:build_storybook, .ui:use_vue3]
 
@@ -398,6 +402,8 @@ ui:trigger_design_system_pages:
       bin/trigger_pipeline.mjs \
         --project-id=gitlab-org%2Ffrontend%2Fdesign-system-pages \
         --token="$DESIGN_SYSTEM_PAGES_PIPELINE_TRIGGER_TOKEN" \
+        --variable="BUILD_STORYBOOK_JOB_ID:$(cat ui:build_storybook_job_id)" \
+        --variable="BUILD_STORYBOOK_VUE3_JOB_ID:$(cat ui:build_storybook_vue3_job_id)" \
         --timeout=300 \
         --poll-interval=20
   rules:
