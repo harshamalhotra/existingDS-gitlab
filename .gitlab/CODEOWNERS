@@ -109,8 +109,8 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /packages/gitlab-svgs/ @slashmanov @gitlab-org/maintainers/frontend
 
 # UX
-/packages/gitlab-svgs/illustrations/ @tauriedavis @jeldergl @jmiocene
-/packages/gitlab-svgs/sprite_icons/ @tauriedavis @jeldergl @jmiocene
+/packages/gitlab-svgs/illustrations/ @gitlab-org/foundations/design-system @tauriedavis
+/packages/gitlab-svgs/sprite_icons/ @gitlab-org/foundations/design-system @tauriedavis
 
 # Figma
 #
@@ -130,8 +130,8 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /contents/patterns/duo-* @aregnery @emilybauman @jackib @pedroms @timnoah
 
 # Animation
-/contents/product-foundations/animation* @jmiocene @jeldergl
-/contents/product-foundations/iconography-animated.md @jmiocene @jeldergl
+/contents/product-foundations/animation* @gitlab-org/foundations/design-system @tauriedavis
+/contents/product-foundations/iconography-animated.md @gitlab-org/foundations/design-system @tauriedavis
 
 # Brand
 /contents/brand-* @gitlab-com/gitlab-ux/designers
@@ -145,7 +145,7 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 /packages/gitlab-ui/src/components/dashboards/ @svedova @lvanc @jiaan
 
 # Illustration
-/contents/product-foundations/illustration* @jmiocene @jeldergl
+/contents/product-foundations/illustration* @gitlab-org/foundations/design-system @tauriedavis
 
 # UX patterns
 /contents/objects/ @gitlab-com/gitlab-ux/designers
