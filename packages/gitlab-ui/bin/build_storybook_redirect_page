@@ -1,6 +1,9 @@
 #!/bin/sh
+set -e
 
-cat >/tmp/index.html <<EOF
+mkdir -p storybook
+
+cat >storybook/index.html <<EOF
 <!doctype html>
 <html lang="en">
   <head>
