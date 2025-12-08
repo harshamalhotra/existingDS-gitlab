@@ -1,5 +1,11 @@
 # @gitlab/svgs
 
+## 3.152.0
+
+### Minor Changes
+
+- 7958bd1: Adds gitlab-credits icon to the icon library.
+
 ## 3.151.0
 
 ### Minor Changes
