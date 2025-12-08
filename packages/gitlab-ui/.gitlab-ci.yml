@@ -124,20 +124,6 @@ ui:build_package:
     paths:
       - packages/gitlab-ui/public
 
-.ui:pages:
-  variables:
-    # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
-    # CURRENT_PAGES_URL is set in the canonical project
-    CURRENT_PAGES_URL: '${CI_PAGES_URL}'
-  after_script:
-    - echo "Pages accessible through ${CI_ENVIRONMENT_URL}"
-  pages:
-    path_prefix: '$PAGES_PREFIX'
-    expire_in: never
-    publish: packages/gitlab-ui/public
-  rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-
 .ui:pages-review:
   variables:
     # Setting the default CURRENT_PAGES_URL, in order to make pages work for forks
@@ -152,26 +138,53 @@ ui:build_package:
     # SB review app: /review-mr-1234-storybook
     path_prefix: 'review-mr-${CI_MERGE_REQUEST_IID}-$PAGES_PREFIX'
     expire_in: '2 weeks'
+    publish: packages/gitlab-ui/public
   environment:
     name: '$PAGES_PREFIX-review/MR-${CI_MERGE_REQUEST_IID}'
     url: '${CURRENT_PAGES_URL}'
     auto_stop_in: '2 weeks'
 
-ui:pages_storybook:
-  extends: [.ui:build_storybook, .ui:pages]
+# Important: Ensure this job's name and artifacts are kept in sync with what
+# https://gitlab.com/gitlab-org/frontend/design-system-pages/ expects.
+ui:build_storybook:
+  extends: .ui:build_storybook
+
+# Important: Ensure this job's name and artifacts are kept in sync with what
+# https://gitlab.com/gitlab-org/frontend/design-system-pages/ expects.
+ui:build_storybook_vue3:
+  extends: [.ui:build_storybook, .ui:use_vue3]
+
+ui:pages_storybook_review:
+  stage: deploy
+  extends: [.ui:build_storybook, .ui:pages-review]
   variables:
     PAGES_PREFIX: 'storybook'
 
-ui:pages_storybook_review:
-  extends: [ui:pages_storybook, .ui:pages-review]
-
-ui:pages_storybook_vue3:
-  extends: [.ui:build_storybook, .ui:use_vue3, .ui:pages]
+ui:pages_storybook_vue3_review:
+  stage: deploy
+  extends: [.ui:build_storybook, .ui:use_vue3, .ui:pages-review]
   variables:
     PAGES_PREFIX: 'storybook-vue3'
 
-ui:pages_storybook_vue3_review:
-  extends: [ui:pages_storybook_vue3, .ui:pages-review]
+ui:pages_storybook_redirect:
+  stage: deploy
+  needs: []
+  variables:
+    REDIRECT_URL: $PRODUCTION_STORYBOOK_URL
+  script:
+    - bin/build_storybook_redirect_page
+  pages:
+    publish: /tmp/index.html
+    path_prefix: storybook
+  rules:
+    - <<: *ui-is-design-gitlab-com-default-branch
+
+ui:pages_storybook_vue3_redirect:
+  extends: ui:pages_storybook_redirect
+  variables:
+    REDIRECT_URL: $PRODUCTION_STORYBOOK_VUE3_URL
+  pages:
+    path_prefix: storybook-vue3
 
 ui:lint:
   extends: [.ui:node, .ui:yarn_install]
@@ -355,13 +368,13 @@ ui:create_integration_merge_request:
 
 ui:duo_job:
   extends: [.ui:node, .ui:yarn_install]
-  stage: deploy
+  stage: build
   needs:
     - ui:build_package
   script:
     - |
       bin/trigger_pipeline.mjs \
-        --project-id=62039593 \
+        --project-id=gitlab-org%2Fduo-ui \
         --token="$DUO_UI_PIPELINE_TRIGGER_TOKEN" \
         --variable="UPSTREAM_GITLAB_UI_VERSION:$DEPENDENCY_URL" \
         --variable="UPSTREAM_BRANCH_NAME:$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
@@ -372,6 +385,22 @@ ui:duo_job:
     - if: '$CI_MERGE_REQUEST_IID'
       when: always
       allow_failure: false
+
+ui:trigger_design_system_pages:
+  extends: [.ui:node, .ui:yarn_install]
+  stage: deploy
+  needs:
+    - ui:build_storybook
+    - ui:build_storybook_vue3
+  script:
+    - |
+      bin/trigger_pipeline.mjs \
+        --project-id=gitlab-org%2Ffrontend%2Fdesign-system-pages \
+        --token="$DESIGN_SYSTEM_PAGES_PIPELINE_TRIGGER_TOKEN" \
+        --timeout=300 \
+        --poll-interval=20
+  rules:
+    - <<: *ui-is-design-gitlab-com-default-branch
 
 ui:update_deployments:
   extends: [.ui:node, .ui:yarn_install]

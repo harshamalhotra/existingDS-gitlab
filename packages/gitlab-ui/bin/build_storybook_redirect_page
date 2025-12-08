@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cat >/tmp/index.html <<EOF
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Storybook</title>
+  </head>
+  <body>
+    <script>
+      const baseUrl = '${REDIRECT_URL}';
+      const search = window.location.search;
+      window.location.href = baseUrl + search;
+    </script>
+  </body>
+</html>
+EOF
