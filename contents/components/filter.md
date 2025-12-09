@@ -41,7 +41,7 @@ related:
 
 - Filters utilize the [search component](/components/search/) with three main [token](/components/token/) parts that form a query (see [Structure](#structure)).
 - Queries are positioned inline with the text cursor in the input field. The input field scrolls horizontally when the queries overflow the width.
-- Queries include a [remove icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~close) that removes the whole query from the search box when clicked.
+- Queries include a [remove icon](https://design.gitlab.com/product-foundations/iconography-directory/?q=~close) that removes the whole query from the search box when clicked.
 
 ### Behavior
 

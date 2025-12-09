@@ -28,11 +28,11 @@ As the largest of the four collections, comprising of several subcategories, the
 
 ### Status icons
 
-These smaller icons complement text or relevant content to indicate the general status, health, or the trend direction of an object. Due to their small size, these icons aren’t interactive unless paired with text or contained within an element, like a [badge](/components/badge) component, giving them a larger target size. These icons are prefixed with [status-](https://gitlab-org.gitlab.io/gitlab-svgs/?q=status-).
+These smaller icons complement text or relevant content to indicate the general status, health, or the trend direction of an object. Due to their small size, these icons aren’t interactive unless paired with text or contained within an element, like a [badge](/components/badge) component, giving them a larger target size. These icons are prefixed with [status-](https://design.gitlab.com/product-foundations/iconography-directory/?q=status-).
 
 ### Pipeline icons
 
-These icons represent the status of a pipeline, like running and pending. There are both bordered and borderless versions of each icon. They use a separate grid from all other icons and are also used to generate favicons associated with web pages. Although a pipeline status can overlap conceptually with status elsewhere in the product, these icons are strictly limited to the pipeline context. These icons are prefixed with [status_](https://gitlab-org.gitlab.io/gitlab-svgs/?q=status_).
+These icons represent the status of a pipeline, like running and pending. There are both bordered and borderless versions of each icon. They use a separate grid from all other icons and are also used to generate favicons associated with web pages. Although a pipeline status can overlap conceptually with status elsewhere in the product, these icons are strictly limited to the pipeline context. These icons are prefixed with [status_](https://design.gitlab.com/product-foundations/iconography-directory/?q=status_).
 
 ### File and folder type icons
 
@@ -121,7 +121,7 @@ Since icons use a **1.5px** stroke, there are a few alignment considerations:
 
 ## Fills
 
-Using a stroke (outline) is the default design approach, however a limited number of UI icons and all status icons use a solid fill instead. As a general rule, UI icons that use a solid fill have a specific reason for doing so. For example, the [clear](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~clear) (×) icon used to clear a text input requires extra visual weight to not be missed in the UI, and thus has a solid fill applied.
+Using a stroke (outline) is the default design approach, however a limited number of UI icons and all status icons use a solid fill instead. As a general rule, UI icons that use a solid fill have a specific reason for doing so. For example, the [clear](https://design.gitlab.com/product-foundations/iconography-directory/?q=~clear) (×) icon used to clear a text input requires extra visual weight to not be missed in the UI, and thus has a solid fill applied.
 
 ## Border radius
 
@@ -234,7 +234,7 @@ GitLab icons should reflect positive or neutral metaphors. Avoid concepts relate
 
 Using an icon consistently to represent a single concept or action helps with overall learnability for a user. For example, the icon used to represent a feature or an object shouldn't be used to refer to other unrelated concepts or actions in the UI.
 
-Avoid using different icons to refer to one specific meaning. For example, [pencil](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~pencil) should be used for editing or updating an item, rather than [pencil-square](https://gitlab-org.gitlab.io/gitlab-svgs/?q=pencil-square) which is used for composing.
+Avoid using different icons to refer to one specific meaning. For example, [pencil](https://design.gitlab.com/product-foundations/iconography-directory/?q=~pencil) should be used for editing or updating an item, rather than [pencil-square](https://design.gitlab.com/product-foundations/iconography-directory/?q=pencil-square) which is used for composing.
 
 <grid>
   <do>
@@ -258,8 +258,8 @@ There are, however, several icons whose design doesn't match a single metaphor, 
 - An 'eye' icon to indicate a confidential issue can also be used to show a password, or to view a preview of an object.
 - A 'chevron' icon in a [dropdown button](/components/button#dropdown-buttons) can also represent the expanded state of an [accordion](/components/accordion).
 - An '×' icon can indicate a failed status or, when used as a button, closing a modal window or removing a connection between objects.
-- A [remove](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~remove) icon typically represents permanently deleting an object or, in the case of tokens, revoking access.
-- A [lock](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~lock) icon represents editing restrictions (read-only, file locking) and access restriction (private projects, setting set by admin/parent group).
+- A [remove](https://design.gitlab.com/product-foundations/iconography-directory/?q=~remove) icon typically represents permanently deleting an object or, in the case of tokens, revoking access.
+- A [lock](https://design.gitlab.com/product-foundations/iconography-directory/?q=~lock) icon represents editing restrictions (read-only, file locking) and access restriction (private projects, setting set by admin/parent group).
 
 In addition to context, ensure that `aria-label` attributes and/or tooltips are used to communicate the icon meaning.
 
@@ -291,12 +291,12 @@ Try to avoid potentially antiquated concepts, especially when something more mod
 
 ### Naming
 
-Existing [GitLab SVGs icons](http://gitlab-org.gitlab.io/gitlab-svgs/) haven't historically followed a naming convention, so you may encounter different patterns until we're able to address them individually. Use the following guidelines for new icons:
+Existing [GitLab SVGs icons](https://design.gitlab.com/product-foundations/iconography-directory/) haven't historically followed a naming convention, so you may encounter different patterns until we're able to address them individually. Use the following guidelines for new icons:
 
 - When an icon represents a recognizable object, use the name of the object. For example, an icon of a pencil that represents editing is named 'pencil'.
 - When an icon represents an abstract metaphor or concept, choose a name that best represents the concept or use case. For example, an icon made of stacked shapes to represent an epic is named 'epic'.
 - The file name should be lowercase and use hyphens as a separator between terms. For example, 'cloud-gear'.
-- Icons in the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715) Figma file contain keywords and usage details in the component description (each icon is a component) to help unite naming with use and concepts. We hope to eventually have similar capabilities in the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) website.
+- Icons in the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715) Figma file contain keywords and usage details in the component description (each icon is a component) to help unite naming with use and concepts. We hope to eventually have similar capabilities in the [GitLab SVGs](https://design.gitlab.com/product-foundations/iconography-directory/) website.
 
 ## Usage
 
@@ -336,5 +336,5 @@ For more information about icons within GitLab, visit the
 
 ## Resources
 
-- You can view all of the current icons at the [GitLab SVGs](http://gitlab-org.gitlab.io/gitlab-svgs/) site.
+- You can view all of the current icons at the [GitLab SVGs](https://design.gitlab.com/product-foundations/iconography-directory/) site.
 - View the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715/GitLab-Product-Icons) Figma file.

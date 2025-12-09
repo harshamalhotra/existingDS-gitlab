@@ -54,7 +54,7 @@ related:
 
 1. **Icon**: Icon indicating or supporting the action.
 1. **Label**: Text clarifying the action.
-1. **Dropdown**: [chevron-down](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~chevron-down) icon indicating a dropdown menu.
+1. **Dropdown**: [chevron-down](https://design.gitlab.com/product-foundations/iconography-directory/?q=~chevron-down) icon indicating a dropdown menu.
 1. **Emoji**: Pictogram character.
 1. **Count** or **Badge** (optional): Display the number of items or provide a status related to the action.
 
@@ -131,7 +131,7 @@ States change visually and/or programmatically depending on user interaction or 
 
 Use either an icon or text in buttons, not both, as neither should require the other to be understood. While some buttons combine icon and text, this approach is generally not recommended. [Icon-only buttons](#icon-only-buttons) have additional considerations.
 
-- Only use icons from [GitLab's SVG library](http://gitlab-org.gitlab.io/gitlab-svgs/).
+- Only use icons from [GitLab's SVG library](https://design.gitlab.com/product-foundations/iconography-directory/).
 - Icons use the default size (16×16px).
 
 #### Count

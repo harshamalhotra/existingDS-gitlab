@@ -24,7 +24,7 @@ extendedNotice:
 <figure-img alt="Numbered diagram of the broadcast message structure" label="Broadcast message structure" src="/img/broadcast-message-structure.svg"></figure-img>
 
 1. **Container**: Wraps the content.
-1. **Icon**: The [bullhorn](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~bullhorn) icon indicates an announcement.
+1. **Icon**: The [bullhorn](https://design.gitlab.com/product-foundations/iconography-directory/?q=~bullhorn) icon indicates an announcement.
 1. **Message**: Text content indicating the purpose.
 1. **Dismiss button** (optional): Permanently removes the broadcast message for a user.
 

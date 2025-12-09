@@ -39,7 +39,7 @@ There are two container shapes: leaf and round.
 
 <figure-img alt="Example of the leaf and round container shapes, colored with Purple 02s, one of the recommended colors for background fills. The leaf shape is a square with rounded top-right and bottom-left corners. The round shape is a circle." label="Container shapes: leaf and round" src="/img/illus-shapes.svg"></figure-img>
 
-<todo>Define shapes usage, see https://design.gitlab.com/svgs/illustrations for current exploration.</todo>
+<todo>Define shapes usage, see https://design.gitlab.com/product-foundations/illustration-directory for current exploration.</todo>
 
 ## Border radius
 
@@ -99,6 +99,6 @@ Everyone can contribute to GitLab, including our product illustration in Figma G
 ## Resources
 
 - [View the illustration file in Figma](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/WIP%3A-Illustration-library?node-id=441%3A2008).
-- [Go to the SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/illustrations) to view all of the current illustrations.
+- [Go to the SVG Previewer](https://design.gitlab.com/product-foundations/illustration-directory) to view all of the current illustrations.
 - Learn more about [Creating Isometric Art](https://marmoset.co/posts/creating-isometric-art-hexels/).
 - Learn more about [Using the Rule of Thirds in Design](https://blog.thenounproject.com/using-the-rule-of-thirds-in-design/) and the [Effective Use of the Rule of Thirds in Design](https://web.archive.org/web/20220411034105/https://www.framer.com/dictionary/rule-of-thirds/).
