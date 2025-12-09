@@ -179,7 +179,7 @@ ui:pages_storybook_redirect:
     - cd packages/gitlab-ui
     - bin/build_storybook_redirect_page
   pages:
-    publish: packages/gitlab-ui/storybook/index.html
+    publish: packages/gitlab-ui/storybook
     path_prefix: storybook
   rules:
     - <<: *ui-is-design-gitlab-com-default-branch
