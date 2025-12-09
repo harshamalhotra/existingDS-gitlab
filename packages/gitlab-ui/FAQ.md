@@ -7,7 +7,7 @@ before it can run with the main Vue 3 build.
 
 ## What icons library do we use in GitLab UI?
 
-GitLab has its own SVG icons library, explore it here: <https://gitlab-org.gitlab.io/gitlab-svgs/>
+GitLab has its own SVG icons library, explore it here: <https://design.gitlab.com/product-foundations/iconography-directory/>
 
 ## How can I import icons from GitLab SVGs into GitLab UI components?
 

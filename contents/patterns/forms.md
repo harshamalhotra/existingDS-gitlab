@@ -88,10 +88,10 @@ The `<select>` element creates a dropdown of options. See the dropdown component
 
 #### Buttons
 
-- **Clear**: The [clear](https://design.gitlab.com/product-foundations/iconography-directory?q=~clear) icon is positioned on the right side of the field and clears the content. When the content is cleared, the button is removed.
-- **Search**: The [search](https://design.gitlab.com/product-foundations/iconography-directory?q=~search) icon submits a query. See the [search](/components/search) component page for details.
-- **Calendar**: The [calendar](https://design.gitlab.com/product-foundations/iconography-directory?q=~calendar) icon toggles a date picker. See the [date picker](/components/date-picker) component page for details.
-- **Show/hide**: Switching between the [eye](https://design.gitlab.com/product-foundations/iconography-directory?q=~eye) and [eye-slash](https://design.gitlab.com/product-foundations/iconography-directory?q=~eye-slash) icons toggles masked and unmasked appearance of content.
+- **Clear**: The [clear](https://design.gitlab.com/product-foundations/iconography-directory/?q=~clear) icon is positioned on the right side of the field and clears the content. When the content is cleared, the button is removed.
+- **Search**: The [search](https://design.gitlab.com/product-foundations/iconography-directory/?q=~search) icon submits a query. See the [search](/components/search) component page for details.
+- **Calendar**: The [calendar](https://design.gitlab.com/product-foundations/iconography-directory/?q=~calendar) icon toggles a date picker. See the [date picker](/components/date-picker) component page for details.
+- **Show/hide**: Switching between the [eye](https://design.gitlab.com/product-foundations/iconography-directory/?q=~eye) and [eye-slash](https://design.gitlab.com/product-foundations/iconography-directory/?q=~eye-slash) icons toggles masked and unmasked appearance of content.
 - **Submit**: Either `<input type="submit">` or a `<button>` element submits the form data. Both use the [confirm](/components/button#variants) button variant.
 
 ### Layout

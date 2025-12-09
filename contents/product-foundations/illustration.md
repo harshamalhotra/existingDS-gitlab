@@ -42,4 +42,4 @@ The `GlIllustration` component renders illustrations from a sprite sheet with bu
 ## Resources
 
 - [View the illustration file in Figma](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA/WIP%3A-Illustration-library?node-id=441%3A2008).
-- [Go to the SVG Previewer](http://gitlab-org.gitlab.io/gitlab-svgs/illustrations) to view all of the current illustrations.
+- [Go to the SVG Previewer](https://design.gitlab.com/product-foundations/illustration-directory) to view all of the current illustrations.

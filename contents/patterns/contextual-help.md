@@ -59,17 +59,17 @@ When linking to third-party documentation, outside the GitLab instance, make tha
 
 ### Help icon
 
-If link text is not possible and space is tight, use the [help icon](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) that, when hovered or focused on, shows the summary in a [popover](/components/popover). The popover title should be the question that is answered by the summary. A `Learn more` link can be added to the popover to associate additional, relevant information.
+If link text is not possible and space is tight, use the [help icon](https://design.gitlab.com/product-foundations/iconography-directory/?q=~question-o) that, when hovered or focused on, shows the summary in a [popover](/components/popover). The popover title should be the question that is answered by the summary. A `Learn more` link can be added to the popover to associate additional, relevant information.
 
 <grid>
   <do>
   
-  Use the outlined [question-o.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question-o) icon in `variant='info'` or `icon.color.info`
+  Use the outlined [question-o.svg](https://design.gitlab.com/product-foundations/iconography-directory/?q=~question-o) icon in `variant='info'` or `icon.color.info`
   
   </do>
   <dont>
   
-  Use the solid icon [question.svg](http://gitlab-org.gitlab.io/gitlab-svgs/?q=~question) or a variant other than info
+  Use the solid icon [question.svg](https://design.gitlab.com/product-foundations/iconography-directory/?q=~question) or a variant other than info
   
   </dont>
   <do>
@@ -82,7 +82,7 @@ If link text is not possible and space is tight, use the [help icon](http://gitl
 
 ### Info icon
 
-There are exceptions when an [info icon](https://gitlab-org.gitlab.io/gitlab-svgs/?q=~information-o) is used instead of the help icon. While the help icon unblocks a user by answering a question, the info icon provides additional details about the current context.
+There are exceptions when an [info icon](https://design.gitlab.com/product-foundations/iconography-directory/?q=~information-o) is used instead of the help icon. While the help icon unblocks a user by answering a question, the info icon provides additional details about the current context.
 
 ## Providing reference information
 
