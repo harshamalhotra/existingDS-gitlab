@@ -146,7 +146,7 @@
     }
 
     &:hover {
-      .gl-new-dropdown-item-content {
+      .gl-new-dropdown-item-content:not(:disabled):not(.disabled) {
         color: var(--gl-action-danger-foreground-color-hover);
         background-color: var(--gl-action-danger-background-color-hover);
       }
