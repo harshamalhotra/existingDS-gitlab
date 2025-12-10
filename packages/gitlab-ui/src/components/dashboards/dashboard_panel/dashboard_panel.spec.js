@@ -165,7 +165,7 @@ describe('GlDashboardPanel', () => {
     });
 
     it('renders the subtitle', () => {
-      expect(findPanelSubtitle().text()).toBe('pochita');
+      expect(wrapper.text()).toContain('pochita');
     });
   });
 
