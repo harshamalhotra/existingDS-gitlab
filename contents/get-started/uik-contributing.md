@@ -27,7 +27,7 @@ Contributions include bug fixes, component usability improvements, or updating c
 
 [Requesting a branch review](https://help.figma.com/hc/en-us/articles/5691414603543-Request-a-branch-review) from a [Figma maintainer](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/.gitlab/CODEOWNERS#L18) is part of the `Figma update` template.
 
-The review request description field is used to automatically generate [release notes](https://design.gitlab.com/get-started/uik-release-notes). Use [comments](https://help.figma.com/hc/en-us/articles/360039825314-Guide-to-comments-in-Figma) to add additional context for reviewers and link to the related issue.
+The review request description field is used to automatically generate [release notes](/get-started/uik-release-notes). Use [comments](https://help.figma.com/hc/en-us/articles/360039825314-Guide-to-comments-in-Figma) to add additional context for reviewers and link to the related issue.
 
 #### Description format rules
 

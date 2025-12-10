@@ -36,7 +36,7 @@ related:
 
 ### When not to use
 
-- For [icon buttons](/components/button) that may be universally understood, like a closing action using the [close icon](https://design.gitlab.com/product-foundations/iconography/icons?q=%7Eclose).
+- For [icon buttons](/components/button) that may be universally understood, like a closing action using the [close icon](/product-foundations/iconography-directory/?q=~close).
 
 Consider using a [popover](/components/popover) for the following scenarios:
 

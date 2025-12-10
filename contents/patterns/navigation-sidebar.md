@@ -41,7 +41,7 @@ Top-level item naming and positioning should remain consistent across similar co
 
 - The navigation sidebar is always available unless navigating is not needed or beneficial. The `minimal` page layout is an alternative option that removes the navigation elements.
 - The user's preference is set with a cookie to keep the navigation sidebar hidden or visible. It will be visible regardless of the cookie when the user needs the navigation sidebar to complete a task.
-- While hidden, hovering over the left edge of the page or the [sidebar icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~sidebar) button reveals the sidebar as an overlay that can lock in place or be used to navigate without disrupting the page content.
+- While hidden, hovering over the left edge of the page or the [sidebar icon](/product-foundations/iconography-directory?q=~sidebar) button reveals the sidebar as an overlay that can lock in place or be used to navigate without disrupting the page content.
 - Pinned items uniquely persist, allowing users to surface important links across groups and projects.
 
 ### Breakpoints
@@ -54,7 +54,7 @@ The navigation sidebar is visible by default, though users can choose to hide it
 
 #### Large, medium, small, and extra small viewports: `1199px` and below
 
-The navigation sidebar is hidden by default. When revealed by selecting the [sidebar icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~sidebar) button, it overlaps the page content with a semi-transparent overlay that covers the background. The user's cookie preference does not change within this breakpoint.
+The navigation sidebar is hidden by default. When revealed by selecting the [sidebar icon](/product-foundations/iconography-directory?q=~sidebar) button, it overlaps the page content with a semi-transparent overlay that covers the background. The user's cookie preference does not change within this breakpoint.
 
 ### Communicating changes to users
 

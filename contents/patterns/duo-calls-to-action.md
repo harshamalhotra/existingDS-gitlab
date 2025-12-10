@@ -21,7 +21,7 @@ A _call to action_ (CTA) is an interactive element that prompts users to take a 
 
 ### Icon
 
-When reasonable, use an AI-specific icon to set expectations about a CTA's relationship to AI. For Duo Chat features, use the [duo-chat icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~duo-chat). For other AI features, use the [tanuki-ai icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~tanuki-ai).
+When reasonable, use an AI-specific icon to set expectations about a CTA's relationship to AI. For Duo Chat features, use the [duo-chat icon](/product-foundations/iconography-directory?q=~duo-chat). For other AI features, use the [tanuki-ai icon](/product-foundations/iconography-directory?q=~tanuki-ai).
 
 <grid>
   <do>

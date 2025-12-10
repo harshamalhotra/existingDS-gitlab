@@ -109,7 +109,7 @@ Banner dismissal should work as follows:
 #### Temporary dismissal
 
 To introduce temporary dismissal, include a secondary or tertiary button placed alongside
-the primary action button. Follow the [button](https://design.gitlab.com/components/button#alignment)
+the primary action button. Follow the [button](/components/button#alignment)
 alignment and order guidelines.
 
 Temporary dismissals should work as follows:

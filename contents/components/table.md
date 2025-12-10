@@ -30,8 +30,8 @@ related:
 1. **Caption**: Provides a meaningful description for a table. A caption should only be optional when a heading directly precedes the table and provides clear enough context for it.
 1. **Header cell**: Can be used to sort table content.
 1. **Icon**: Indicates sort direction:
-   - [arrow-up](https://design.gitlab.com/product-foundations/iconography-directory/?q=~arrow-up) icon for sorting ascending.
-   - [arrow-down](https://design.gitlab.com/product-foundations/iconography-directory/?q=~arrow-down) icon for sorting descending.
+   - [arrow-up](/product-foundations/iconography-directory/?q=~arrow-up) icon for sorting ascending.
+   - [arrow-down](/product-foundations/iconography-directory/?q=~arrow-down) icon for sorting descending.
 1. **Body cell**: Supports text, buttons, links, and text accompanied by other common elements like an avatar or icon.
 
 ## Guidelines
@@ -95,7 +95,7 @@ When a new row is dynamically added by the system, the background color of the r
 #### Ordering & sorting
 
 - Sorting is designed as a native functionality of tables. Tables use column sorting rather than [list sorting](/components/sorting).
-- The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [arrow down](https://design.gitlab.com/product-foundations/iconography-directory/?q=arrow-down) and [arrow up](https://design.gitlab.com/product-foundations/iconography-directory/?q=arrow-up) icons.
+- The default sort direction of a table is usually ordered by one specific column attribute, such as status, last updated, or priority. Sorting is indicated in the table header using the [arrow down](/product-foundations/iconography-directory/?q=arrow-down) and [arrow up](/product-foundations/iconography-directory/?q=arrow-up) icons.
 - Clicking the column header will sort the rows based on the selected column, in ascending order first, and subsequently toggling between ascending and descending order.
 - Sorting can be disabled to prevent users from changing the sorting order of a column. The default order will utilize one specific attribute.
 - The sorting icon and functionality should not be visible on responsive tables.

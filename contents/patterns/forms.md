@@ -67,7 +67,7 @@ Forms may include a variety of elements. By default all information in forms is 
   - You can omit examples or expected format if the user typically copies an already validated value to paste into the input. For example, the user copies and pastes their Google Cloud project ID, which was validated when their project was created in Google Cloud.
   - May include a [help link](/patterns/contextual-help) when necessary.
   - For example: _Must be 11 digits including the country code. Example: `+1-234-567-8901`. Learn more._
-- **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](https://design.gitlab.com/product-foundations/iconography-directory?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
+- **Placeholder**: Only used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) component, which includes a [search](/product-foundations/iconography-directory?q=~search) icon to further clarify its purpose. For example, _Search or go to…_.
 
 #### Field
 
@@ -88,10 +88,10 @@ The `<select>` element creates a dropdown of options. See the dropdown component
 
 #### Buttons
 
-- **Clear**: The [clear](https://design.gitlab.com/product-foundations/iconography-directory/?q=~clear) icon is positioned on the right side of the field and clears the content. When the content is cleared, the button is removed.
-- **Search**: The [search](https://design.gitlab.com/product-foundations/iconography-directory/?q=~search) icon submits a query. See the [search](/components/search) component page for details.
-- **Calendar**: The [calendar](https://design.gitlab.com/product-foundations/iconography-directory/?q=~calendar) icon toggles a date picker. See the [date picker](/components/date-picker) component page for details.
-- **Show/hide**: Switching between the [eye](https://design.gitlab.com/product-foundations/iconography-directory/?q=~eye) and [eye-slash](https://design.gitlab.com/product-foundations/iconography-directory/?q=~eye-slash) icons toggles masked and unmasked appearance of content.
+- **Clear**: The [clear](/product-foundations/iconography-directory/?q=~clear) icon is positioned on the right side of the field and clears the content. When the content is cleared, the button is removed.
+- **Search**: The [search](/product-foundations/iconography-directory/?q=~search) icon submits a query. See the [search](/components/search) component page for details.
+- **Calendar**: The [calendar](/product-foundations/iconography-directory/?q=~calendar) icon toggles a date picker. See the [date picker](/components/date-picker) component page for details.
+- **Show/hide**: Switching between the [eye](/product-foundations/iconography-directory/?q=~eye) and [eye-slash](/product-foundations/iconography-directory/?q=~eye-slash) icons toggles masked and unmasked appearance of content.
 - **Submit**: Either `<input type="submit">` or a `<button>` element submits the form data. Both use the [confirm](/components/button#variants) button variant.
 
 ### Layout
@@ -218,7 +218,7 @@ Instead, use the same phrasal structure for all messages:
 Error messages can be used in the following scenarios:
 
 - Errors in forms: see [form validations](#validation).
-- Errors in the system or on a page: see [alert](https://design.gitlab.com/components/alert).
+- Errors in the system or on a page: see [alert](/components/alert).
 
 ### Accessibility
 

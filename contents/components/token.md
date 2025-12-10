@@ -41,7 +41,7 @@ related:
 
 ### Variants
 
-- **Interactive**: Include a [close](https://design.gitlab.com/product-foundations/iconography-directory/?q=~close) icon at the end of the token. When enabled, a user can click the icon to remove the token from the set.
+- **Interactive**: Include a [close](/product-foundations/iconography-directory/?q=~close) icon at the end of the token. When enabled, a user can click the icon to remove the token from the set.
 - **View-only**: Can't be removed.
 - **Avatar**: When querying for a user, project, or group, an avatar token should be used. These can be either interactive or view-only.
 

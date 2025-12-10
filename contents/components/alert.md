@@ -19,11 +19,11 @@ related:
 
 1. **Container**: Wraps the content.
 1. **Icon**: Supports the variant meaning.
-   - [error](https://design.gitlab.com/product-foundations/iconography-directory/?q=~error) icon for error and danger alerts.
-   - [warning](https://design.gitlab.com/product-foundations/iconography-directory/?q=~warning) icon for the warning alert.
-   - [check-circle](https://design.gitlab.com/product-foundations/iconography-directory/?q=~check-circle) icon for the success alert.
-   - [information-o](https://design.gitlab.com/product-foundations/iconography-directory/?q=~information-o) icon for the information alert.
-   - [bulb](https://design.gitlab.com/product-foundations/iconography-directory/?q=~bulb) icon for the tip alert.
+   - [error](/product-foundations/iconography-directory/?q=~error) icon for error and danger alerts.
+   - [warning](/product-foundations/iconography-directory/?q=~warning) icon for the warning alert.
+   - [check-circle](/product-foundations/iconography-directory/?q=~check-circle) icon for the success alert.
+   - [information-o](/product-foundations/iconography-directory/?q=~information-o) icon for the information alert.
+   - [bulb](/product-foundations/iconography-directory/?q=~bulb) icon for the tip alert.
 1. **Title** (optional): Conveys what event triggered the alert.
 1. **Dismissal** (optional): Permanently removes the alert for a user.
 1. **Message**: Text content indicating the purpose and potential next steps.
