@@ -60,8 +60,8 @@ Lastly, when you create a component variant in Figma it automatically adds a bor
 - **Layer:** Category=primary, Type=dropdown split, Size=md
 - **Result:** Button/Default
 
-| **Layers panel** | **Assets panel** |
-| ------ | ------ |
+| **Layers panel**                                             | **Assets panel**                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------- |
 | ![Component layer in the layers panel](/img/alert-layer.png) | ![Component listed in the assets panel](/img/alert-asset.png) |
 
 ## Building components
@@ -98,7 +98,7 @@ Apply this method selectively, as direct nesting may sometimes still be preferab
 - Check if the component already exists in the collection, otherwise, create a minimal set of Figma Variables for the component.
 - Group by component name, for example 'Tooltip' or 'Badge'.
 - Focus on values not controlled by other styles, like spacing or border radius (these properties may eventually be replaced with design tokens, but color is currently the only supported design token category).
-- Follow the [design token naming convention](https://design.gitlab.com/product-foundations/design-tokens-reading), though these are not design tokens. Only add a description where the name is ambiguous.
+- Follow the [design token naming convention](/product-foundations/design-tokens-reading), though these are not design tokens. Only add a description where the name is ambiguous.
 - [Hide variables from publishing](https://help.figma.com/hc/en-us/articles/360039238193-Hide-styles-components-and-variables-when-publishing#h_01HD20M7HS9044NHB2YBJNE9C2).
 
 As an example, [**❖&nbsp;Tab&nbsp;item**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=123607-1296) uses this technique for the optional badge element.
@@ -148,7 +148,7 @@ Always provide basic or example sub-component options for a component with slots
 
 ### Using Figma variables
 
-When building components, set properties with [design tokens](https://design.gitlab.com/product-foundations/design-tokens-using) where possible. Only create new [Figma variables](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma) in the UI kit to keep [integrated components](#integrated-components) in sync.
+When building components, set properties with [design tokens](/product-foundations/design-tokens-using) where possible. Only create new [Figma variables](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma) in the UI kit to keep [integrated components](#integrated-components) in sync.
 
 ### Naming properties
 

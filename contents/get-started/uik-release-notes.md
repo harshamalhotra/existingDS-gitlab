@@ -22,7 +22,7 @@ Full highlights:
 
 - (Patterns & Page Templates): Adds link to [**file diff**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2624-34) shared asset.
 - (Patterns & Page Templates): Adds [**dashboard panel**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3058-394) pattern.
-- (Product Icons): Adds [**passkey**](https://design.gitlab.com/product-foundations/iconography-directory?q=~passkey) icon.
+- (Product Icons): Adds [**passkey**](/product-foundations/iconography-directory?q=~passkey) icon.
 
 #### 🚀 Enhancements
 
@@ -31,7 +31,7 @@ Full highlights:
 #### 🔄 Changes
 
 - (Patterns & Page Templates): Updates [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120) AI panel button ordering.
-- (Product Icons): Increases the "+" size in add/new icons: [**work-item-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-new), [**todo-add**](https://design.gitlab.com/product-foundations/iconography-directory?q=~todo-add), [**folder-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~folder-new), [**doc-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~doc-new), and [**duo-chat-new**](https://design.gitlab.com/product-foundations/iconography-directory?q=~duo-chat-new).
+- (Product Icons): Increases the "+" size in add/new icons: [**work-item-new**](/product-foundations/iconography-directory?q=~work-item-new), [**todo-add**](/product-foundations/iconography-directory?q=~todo-add), [**folder-new**](/product-foundations/iconography-directory?q=~folder-new), [**doc-new**](/product-foundations/iconography-directory?q=~doc-new), and [**duo-chat-new**](/product-foundations/iconography-directory?q=~duo-chat-new).
 
 #### ⚠️ Deprecations
 
@@ -95,8 +95,8 @@ Full highlights:
 
 #### 🗑️ Removals
 
-- (Component Library): Removes spacing page as content was outdated and [Spacing](https://design.gitlab.com/product-foundations/spacing) foundation content is the source of truth.
-- (Component Library): Removes layout section (placeholder page) as [Layout](https://design.gitlab.com/product-foundations/layout) is its own foundation concept.
+- (Component Library): Removes spacing page as content was outdated and [Spacing](/product-foundations/spacing) foundation content is the source of truth.
+- (Component Library): Removes layout section (placeholder page) as [Layout](/product-foundations/layout) is its own foundation concept.
 
 #### Contributors
 
@@ -124,11 +124,11 @@ Full highlights:
 - (Design Tokens): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
 - (Component Library): As part of the release, the library is available in Figma Make and will be updated as part of the release from now on.
 - (Patterns & Page Templates): Adds [**paneled views**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=2344-14120&p=f&t=TwmTgXdN5ngbUoXj-11) page template.
-- (Product Icons): Adds [**flow**](https://design.gitlab.com/product-foundations/iconography-directory?q=~flow-ai) and [**agent-ai**](https://design.gitlab.com/product-foundations/iconography-directory?q=~agent-ai) icons.
+- (Product Icons): Adds [**flow**](/product-foundations/iconography-directory?q=~flow-ai) and [**agent-ai**](/product-foundations/iconography-directory?q=~agent-ai) icons.
 
 #### 🔄 Changes
 
-- (Product Icons): Updates [**copy-to-clipboard**](https://design.gitlab.com/product-foundations/iconography-directory?q=~copy-to-clipboard) icon to new design.
+- (Product Icons): Updates [**copy-to-clipboard**](/product-foundations/iconography-directory?q=~copy-to-clipboard) icon to new design.
 - (Component Library): Breaking(medium): Set [**❖&nbsp;Toast**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-139&p=f&t=5UaNq5ViAdUg70VA-11) width to hug and adds max width to variants. In some instances this will cause the toast to be ~20px wider with longer content.
 - (Component Library): Updates [**❖&nbsp;Drawer**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=125418-1519&t=5UaNq5ViAdUg70VA-11) to use the `gl-shadow-lg`.
 - (Component Library): Changes [**Drawer example**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=48150-59211&t=5UaNq5ViAdUg70VA-11) to better support scrim.
@@ -175,8 +175,8 @@ Full highlights:
 
 #### ➕ Additions
 
-- (Product Illustrations): Adds [**empty-ai-catalog-md**](https://design.gitlab.com/product-foundations/illustration-directory/?q=~illustrations/empty-state/empty-ai-catalog-md.svg) illustration.
-- (Product Icons): Adds [**kind**](https://design.gitlab.com/product-foundations/iconography-directory?q=~kind) icon.
+- (Product Illustrations): Adds [**empty-ai-catalog-md**](/product-foundations/illustration-directory/?q=~illustrations/empty-state/empty-ai-catalog-md.svg) illustration.
+- (Product Icons): Adds [**kind**](/product-foundations/iconography-directory?q=~kind) icon.
 
 #### 🔄 Changes
 
@@ -218,8 +218,8 @@ Full highlights:
 - (Component Library): Adds simple [**❖&nbsp;Card**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=131231-5825&p=f&t=n4LGVP8W7mwDeQPi-11) component.
 - (Annotations): Adds [**accessibility bluelines**](https://www.figma.com/design/dWP1ldkBU4jeUqx5rO3jrn/Annotations-and-utilities?node-id=2406-34&p=f&t=6MxraATsgKdBZTqJ-11) annotation assets (also available as a [community file](https://www.figma.com/community/file/779827094223635810/accessibility-bluelines)).
 - (Patterns & Page Templates): Adds [**CRUD component**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=1845-34&p=f&t=7KuVcE1MKT3IwltD-11) pattern and product examples ("component" in the name relates to how this is set up in the product, it isn't constructed as a component in Figma).
-- (Product Illustrations): Adds [**error-429-lg**](https://design.gitlab.com/product-foundations/illustration-directory?q=~error-429-lg) illustration.
-- (Product Icons): Adds [**work-item-parent**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-parent), [**work-item-child**](https://design.gitlab.com/product-foundations/iconography-directory?q=~work-item-child), and [**recipe**](https://design.gitlab.com/product-foundations/iconography-directory?q=~recipe) icons.
+- (Product Illustrations): Adds [**error-429-lg**](/product-foundations/illustration-directory?q=error-429-lg) illustration.
+- (Product Icons): Adds [**work-item-parent**](/product-foundations/iconography-directory?q=~work-item-parent), [**work-item-child**](/product-foundations/iconography-directory?q=~work-item-child), and [**recipe**](/product-foundations/iconography-directory?q=~recipe) icons.
 
 #### 🔄 Changes
 
@@ -244,7 +244,7 @@ This release adds new highlight design tokens and animated product icon artifact
 
 #### ➕ Additions
 
-- (Design tokens): Adds `highlight.*` design tokens. [Use highlight design tokens](https://design.gitlab.com/product-foundations/design-tokens-using#highlighting) to support drawing attention to matched results, identifying referenced elements, or visualizing relationships between content.
+- (Design tokens): Adds `highlight.*` design tokens. [Use highlight design tokens](/product-foundations/design-tokens-using#highlighting) to support drawing attention to matched results, identifying referenced elements, or visualizing relationships between content.
 
 #### 🔄 Changes
 
@@ -284,7 +284,7 @@ Full highlights:
 
 #### ➕ Additions
 
-- (Product Illustrations): Adds [**package-sm**](https://design.gitlab.com/product-foundations/illustration-directory?q=package-sm) illustration.
+- (Product Illustrations): Adds [**package-sm**](/product-foundations/illustration-directory?q=package-sm) illustration.
 
 #### 🔄 Changes
 
@@ -462,7 +462,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 **[Design tokens](https://www.figma.com/design/tiAetVi1j5MGP8WA5FswcD/Beta%3A-Design-tokens?m=auto)**
 
-- The design tokens library is now out of beta and will be available by default for all new files created under the R&D workspace. Learn more in [using design tokens in design](https://design.gitlab.com/product-foundations/design-tokens-using#in-design).
+- The design tokens library is now out of beta and will be available by default for all new files created under the R&D workspace. Learn more in [using design tokens in design](/product-foundations/design-tokens-using#in-design).
 
 **[Product illustrations (Figma)](https://www.figma.com/file/1ui9w228X0S5WxaD0SRdIA)**
 
@@ -784,7 +784,7 @@ Dark mode is now fully supported in the component library. All components have b
 - Updated [**Color**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=581-1&t=kEI3wvJ1158SVYZV-1) foundation:
   - Renamed "gray" color ramp styles to "neutral", "white" to "neutral-0", and "black" to "neutral-1000" to align with design token work
   - Updated hex values for neutral 700–1000 (see [#2751](https://gitlab.com/gitlab-org/gitlab-ui/-/issues/2751) for details)
-  - Removed contrast ratios from color chips since they are present in [Pajamas](https://design.gitlab.com/product-foundations/color) and plugins or native apps can also inspect ratios.
+  - Removed contrast ratios from color chips since they are present in [Pajamas](/product-foundations/color) and plugins or native apps can also inspect ratios.
   - Other miscellaneous auto layout and layer naming improvements
 - Breaking (low): Remove hidden title layer from the `Has title:false` **❖ Alert** variant.
 - Updated **❖&nbsp;Alert**, **❖&nbsp;Avatar**, **❖&nbsp;Avatar-labeled**, **❖&nbsp;Banner**, **❖&nbsp;Label**, and **❖&nbsp;Focus&nbsp;ring** to use design tokens.
@@ -978,7 +978,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 ### Enhancements
 
-- Improved organization of icons in the [**GitLab Product Icons**](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file to align with a recent Pajamas update to document [icon collections](https://design.gitlab.com/product-foundations/iconography#icon-collections).
+- Improved organization of icons in the [**GitLab Product Icons**](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file to align with a recent Pajamas update to document [icon collections](/product-foundations/iconography#icon-collections).
 
 ### Changes
 
@@ -1008,7 +1008,7 @@ Dark mode is now fully supported in the component library. All components have b
 ### Changes
 
 - Breaking (medium): Update [**❖&nbsp;Empty&nbsp;state**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=74155-103184&mode=design) to have maximum line length. Some instances might now be taller if text wraps.
-- Update [**❖&nbsp;Avatar**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19910-0&mode=design) identicons and text fallbacks to use the [dynamic type scale](https://design.gitlab.com/product-foundations/type-fundamentals#type-scales).
+- Update [**❖&nbsp;Avatar**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=19910-0&mode=design) identicons and text fallbacks to use the [dynamic type scale](/product-foundations/type-fundamentals#type-scales).
 - Update [**❖&nbsp;Popover**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=57879-91946&mode=design) titles to use styles from the heading scale. Component now follows property naming guidelines.
 - Update [**Dropdown&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=61256-135451&mode=design) dropdown element color for consistent borders in dropdowns. Now uses **❖&nbsp;\_Base/Dividing&nbsp;line**.
 - Update [**Utility&nbsp;>&nbsp;❖&nbsp;Divider**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=dev&node-id=72160-103548&mode=design) documentation utility component, removing an old link to a deprecated navigation dividing line component.
@@ -1243,7 +1243,7 @@ Dark mode is now fully supported in the component library. All components have b
 
 ### Additions
 
-- [Link components](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=81916-116837) are available for all four [link categories](https://design.gitlab.com/components/link#categories). A future update will add instructions for adding style overrides for inline use. Until then, copy the styles from the components, or reach out to a [Foundations designer](https://about.gitlab.com/handbook/product/categories/#foundations-group) for help.
+- [Link components](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=81916-116837) are available for all four [link categories](/components/link#categories). A future update will add instructions for adding style overrides for inline use. Until then, copy the styles from the components, or reach out to a [Foundations designer](https://about.gitlab.com/handbook/product/categories/#foundations-group) for help.
   - **❖&nbsp;Link&nbsp;/&nbsp;Inline&nbsp;text&nbsp;link**
   - **❖&nbsp;Link&nbsp;/&nbsp;UI&nbsp;link**
   - **❖&nbsp;Link&nbsp;/&nbsp;Meta&nbsp;link**
@@ -1268,7 +1268,7 @@ Dark mode is now fully supported in the component library. All components have b
   - Take care when switching the component as text overrides may be lost.
 - Breaking (medium impact): [**❖&nbsp;Dropdown**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-14&t=btf6j6JBlWUFtOkp-11) width has been decreased in support of the [navigation updates](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/1572). Upon updating locally the dropdown width will be 8px narrower and if you've used left or right (not centered or dynamic) tip placement it will reset to a default position. As part of the update several other resizing fixes and improvements have been made that aren't breaking changes.
 - Breaking (high impact): [**❖&nbsp;Breadcrumb**](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-5&t=btf6j6JBlWUFtOkp-11) current page now uses bold meta link style. The previous breadcrumb component has been deprecated, but will still be available for at least a milestone. In tests, swapping the component to use the new version kept all style and content overrides intact, but take care when swapping.
-- [Buttons](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7) renamed to have a "Button&nbsp;/" prefix. Doing so makes them easier to locate when searching for a component. **❖&nbsp;Button&nbsp;/&nbsp;Link** description also points towards the **❖&nbsp;Link&nbsp;/&nbsp;UI&nbsp;link** components. Take care when choosing between a [link](https://design.gitlab.com/components/link) (`<a>`) and a [button](https://design.gitlab.com/components/button) (`<button>`).
+- [Buttons](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-7) renamed to have a "Button&nbsp;/" prefix. Doing so makes them easier to locate when searching for a component. **❖&nbsp;Button&nbsp;/&nbsp;Link** description also points towards the **❖&nbsp;Link&nbsp;/&nbsp;UI&nbsp;link** components. Take care when choosing between a [link](/components/link) (`<a>`) and a [button](/components/button) (`<button>`).
   - **❖&nbsp;Button&nbsp;/&nbsp;Default**
   - **❖&nbsp;Button&nbsp;/&nbsp;Confirm**
   - **❖&nbsp;Button&nbsp;/&nbsp;Danger**

@@ -69,8 +69,8 @@ See [diagram](/components/dropdown-overview#when-to-use-either-component) for ad
 
 A [button](/components/button) that triggers a combobox comes in a few variants to fit different situations.
 
-- **Dropdown button**: A dropdown button has a [chevron-down](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
-- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://design.gitlab.com/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no visible text.
+- **Dropdown button**: A dropdown button has a [chevron-down](/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
+- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no visible text.
 
 ### Size
 
@@ -110,7 +110,7 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 
 ### Content
 
-- Placeholder text in an input should only be used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) input, which includes a [search](https://design.gitlab.com/product-foundations/iconography-directory?q=~search) icon to further clarify its purpose.
+- Placeholder text in an input should only be used for extra, non-essential information when the input purpose is still understood in its absence; it's not a replacement for a visible label. An exception is the [search](/components/search) input, which includes a [search](/product-foundations/iconography-directory?q=~search) icon to further clarify its purpose.
 - A header can provide context for the list of options.
 - Within a listbox:
   - Section titles can categorize options into meaningful groups.

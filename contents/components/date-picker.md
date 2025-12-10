@@ -76,7 +76,7 @@ Use the following guidelines to choose the right component in most cases:
 - The text field accepts all special characters and numbers.
 - The current month (MM) is the default month shown in the calendar dropdown.
 - The order of the “From” and “To” text fields should match the user’s reading language setting (left-to-right by default).
-- When the date range picker limits the number of selectable days, indicate it in the UI with text that summarizes the number of days currently selected, followed by an [info icon](https://design.gitlab.com/product-foundations/iconography-directory?q=~information-o). The tooltip on the info icon should clarify the date range limit.
+- When the date range picker limits the number of selectable days, indicate it in the UI with text that summarizes the number of days currently selected, followed by an [info icon](/product-foundations/iconography-directory?q=~information-o). The tooltip on the info icon should clarify the date range limit.
 
 ### Accessibility
 

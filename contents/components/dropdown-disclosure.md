@@ -54,9 +54,9 @@ related:
 
 A [button](/components/button) that triggers a dropdown panel comes in a few variants to fit different situations.
 
-- **Dropdown button**: A dropdown button has a [chevron-down](https://design.gitlab.com/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
+- **Dropdown button**: A dropdown button has a [chevron-down](/product-foundations/iconography-directory?q=~chevron-down) icon to the right of the text label to indicate it will toggle additional content.
 - **Split dropdown button**: A split dropdown button is a [button](/components/button) with two segments. The left text button is for the most common option and an attached dropdown button to the right opens a panel with additional options.
-- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](https://design.gitlab.com/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no text.
+- **Icon dropdown**: An icon button, like one that uses the vertical or horizontal [ellipsis icons](/product-foundations/iconography-directory?q=elli), functions similarly to other trigger buttons with the only difference being only an icon label with no text.
 
 ### Size
 
@@ -101,7 +101,7 @@ Use the `ellipsis_v` icon, 'More actions' for the tooltip text, and use `aria-la
 ## Code reference
 
 A disclosure dropdown is a button that toggles a panel containing a list of actions and/or links. Use
-[this decision tree](https://design.gitlab.com/components/dropdown-overview#when-to-use-either-component)
+[this decision tree](/components/dropdown-overview#when-to-use-either-component)
 to make sure this is the right dropdown component for you.
 
 ```html
