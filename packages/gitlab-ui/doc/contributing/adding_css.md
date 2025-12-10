@@ -99,10 +99,10 @@ itself, `Vue` and `ViewComponent`, without undue or repeated effort.
 - In 2022, we started using `ViewComponent` to re-implement GitLab UI components in Ruby in GitLab.
   This improved upon our previous approach that relied more heavily on HAML templating. [Learn more
   about how we use `ViewComponent`](https://docs.gitlab.com/ee/development/fe_guide/view_component.html).
-- Still in 2022, we created [RFC #107](https://gitlab.com/gitlab-org/frontend/rfcs/-/issues/107) to propose
-  a switch from our custom-built CSS utilities library to Tailwind CSS. We had noticed many flaws with
-  the way we were building out our utils library, which could be alleviated for the most part by
-  switching to a well-established open source tool.
+- Still in 2022, we created [RFC #107](https://gitlab.com/gitlab-org/frontend/rfcs/-/issues/107) to
+  propose a switch from our custom-built CSS utilities library to Tailwind CSS. We had noticed many
+  flaws with the way we were building out our utils library, which could be alleviated for the most
+  part by switching to a well-established open source tool.
 - In 2024, we started migrating away from our custom CSS utils in favor of Tailwind CSS.
 
 For more information about utility-first CSS, consider [a post from Mike Crittenden](https://critter.blog/2018/06/08/in-defense-of-functional-css/),
