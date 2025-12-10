@@ -288,7 +288,7 @@ export default {
 
           <div
             v-if="$scopedSlots.filters"
-            class="gl-flex gl-items-center gl-justify-end gl-pb-2"
+            class="gl-flex gl-items-center gl-justify-end"
             data-testid="panel-filters-container"
           >
             <!-- @slot  The filter section to add additional UI elements for filtering, grouping, etc. -->
