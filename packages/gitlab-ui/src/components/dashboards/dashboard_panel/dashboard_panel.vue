@@ -205,7 +205,7 @@ export default {
     :class="containerClasses"
   >
     <div class="gl-flex gl-h-full gl-flex-col">
-      <div class="gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
+      <div class="gl-mb-3 gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
         <div class="gl-flex gl-items-center gl-overflow-hidden">
           <gl-icon
             v-if="hasTitleIcon"
@@ -215,12 +215,22 @@ export default {
             data-testid="panel-title-icon"
           />
 
-          <gl-truncate
-            v-if="hasTitle"
-            class="gl-min-w-0 gl-font-bold gl-text-default"
-            :text="title"
-            with-tooltip
-          />
+          <div class="gl-min-w-0">
+            <gl-truncate
+              v-if="hasTitle"
+              class="gl-font-bold gl-text-default"
+              :text="title"
+              with-tooltip
+            />
+
+            <p
+              v-if="subtitle"
+              class="gl-mb-0 gl-mt-1 gl-text-sm gl-text-subtle"
+              data-testid="panel-subtitle"
+            >
+              {{ subtitle }}
+            </p>
+          </div>
 
           <template v-if="hasTitlePopover">
             <gl-icon
@@ -296,14 +306,7 @@ export default {
           </div>
         </div>
       </div>
-      <p
-        v-if="subtitle"
-        class="gl-mb-2 gl-mt-1 gl-text-sm gl-text-subtle"
-        data-testid="panel-subtitle"
-      >
-        {{ subtitle }}
-      </p>
-      <div class="gl-mt-3" :class="bodyClasses">
+      <div :class="bodyClasses">
         <template v-if="loading">
           <gl-loading-icon size="lg" class="gl-min-h-8 gl-w-full" />
           <div
