@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the skeleton loader background color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL"
           ]
         }
@@ -24,7 +24,7 @@
         "$type": "color",
         "$description": "Used for the animated shimmer effect in a skeleton loader.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL"
           ]
         }

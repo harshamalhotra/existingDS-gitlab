@@ -9,7 +9,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -19,7 +19,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -29,7 +29,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -39,7 +39,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -51,7 +51,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -61,7 +61,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -71,7 +71,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -81,7 +81,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -92,7 +92,7 @@
             "$type": "color",
             "$description": "Used for the icon color of a disabled toggle switch.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }

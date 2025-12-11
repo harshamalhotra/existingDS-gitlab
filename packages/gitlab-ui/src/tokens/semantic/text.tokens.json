@@ -5,7 +5,7 @@
       "$type": "color",
       "$description": "Use text.color.default instead.",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "TEXT_FILL"
         ]
       },
@@ -16,7 +16,7 @@
       "$type": "color",
       "$description": "Use text.color.subtle instead.",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "TEXT_FILL"
         ]
       },
@@ -27,7 +27,7 @@
       "$type": "color",
       "$description": "Use text.color.disabled instead.",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "TEXT_FILL"
         ]
       },
@@ -42,7 +42,7 @@
         "$type": "color",
         "$description": "Used for the default text color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -55,7 +55,7 @@
         "$type": "color",
         "$description": "Used for supplemental text that doesn't need to be as prominent as other text.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -68,7 +68,7 @@
         "$type": "color",
         "$description": "Used for text with the highest contrast.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -81,7 +81,7 @@
         "$type": "color",
         "$description": "Used for headings level 1-6.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -94,7 +94,7 @@
         "$type": "color",
         "$description": "Used for default text links.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -107,7 +107,7 @@
         "$type": "color",
         "$description": "Used for text that requires caution or careful attention.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -120,7 +120,7 @@
         "$type": "color",
         "$description": "Used for text indicating a problem, critical state, destructive action, error, failure, removal, stop, or declination.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -133,7 +133,7 @@
         "$type": "color",
         "$description": "Used for text indicating success, completion, approval, addition, or validity.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -146,7 +146,7 @@
         "$type": "color",
         "$description": "Used for disabled text.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }

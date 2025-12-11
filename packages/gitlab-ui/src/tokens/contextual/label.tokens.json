@@ -7,7 +7,7 @@
           "$type": "color",
           "$description": "Used for the label text color on a light background color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -21,7 +21,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a light background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -32,7 +32,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a light background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -47,7 +47,7 @@
               "$type": "color",
               "$description": "Used for the label remove button icon on a light background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -64,7 +64,7 @@
           "$type": "color",
           "$description": "Used for the label text color on a dark background color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -78,7 +78,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a dark background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -89,7 +89,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a dark background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -104,7 +104,7 @@
               "$type": "color",
               "$description": "Used for the label remove button icon on a dark background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -124,7 +124,7 @@
           "$type": "color",
           "$description": "Used for the scoped label text color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -141,7 +141,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button background in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -159,7 +159,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button icon in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -173,7 +173,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button icon in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]

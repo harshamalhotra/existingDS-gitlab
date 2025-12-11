@@ -10,7 +10,7 @@
           "$type": "color",
           "$description": "Used to define the edge of an avatar.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -23,7 +23,7 @@
           "$type": "color",
           "$description": "Used to increase the edge definition of an avatar in the hover state.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -41,7 +41,7 @@
             "$type": "color",
             "$description": "Red text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -54,7 +54,7 @@
             "$type": "color",
             "$description": "Purple text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -67,7 +67,7 @@
             "$type": "color",
             "$description": "Blue text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -80,7 +80,7 @@
             "$type": "color",
             "$description": "Green text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -93,7 +93,7 @@
             "$type": "color",
             "$description": "Orange text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -106,7 +106,7 @@
             "$type": "color",
             "$description": "Neutral text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -120,7 +120,7 @@
             "$type": "color",
             "$description": "Red background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -131,7 +131,7 @@
             "$type": "color",
             "$description": "Purple background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -142,7 +142,7 @@
             "$type": "color",
             "$description": "Blue background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -153,7 +153,7 @@
             "$type": "color",
             "$description": "Green background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -164,7 +164,7 @@
             "$type": "color",
             "$description": "Orange background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -175,7 +175,7 @@
             "$type": "color",
             "$description": "Neutral background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]

@@ -11,7 +11,7 @@
             "$type": "color",
             "$description": "Used for the selected indicator of a tab.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]

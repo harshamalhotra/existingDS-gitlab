@@ -8,7 +8,7 @@
             "$type": "color",
             "$description": "Used for the background of a table row in hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -24,7 +24,7 @@
           "$type": "color",
           "$description": "Used for the color of the sorting icons in the column headers.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]

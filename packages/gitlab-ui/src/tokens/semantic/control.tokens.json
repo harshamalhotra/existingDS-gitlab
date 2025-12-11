@@ -10,7 +10,7 @@
           "$type": "color",
           "$description": "Used for form control (input, radio button, checkbox, textarea) default background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -24,7 +24,7 @@
           "$type": "color",
           "$description": "Used for disabled form control (checkbox, input, radio button, textarea) background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -38,7 +38,7 @@
           "$type": "color",
           "$description": "Used for the background of static content that prepends or appends a text input.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -52,7 +52,7 @@
           "$type": "color",
           "$description": "Used for the background of static content that prepends or appends a text input.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -67,7 +67,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -81,7 +81,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background on hover.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -95,7 +95,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) background on hover.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -114,7 +114,7 @@
           "$type": "color",
           "$description": "Used for form control (input, radio button, checkbox, textarea) default border.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -127,7 +127,7 @@
           "$type": "color",
           "$description": "Used for form control (input, radio button, checkbox, textarea) border on hover.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -140,7 +140,7 @@
           "$type": "color",
           "$description": "Used for form control (input, radio button, checkbox, textarea) border on focus.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -153,7 +153,7 @@
           "$type": "color",
           "$description": "Used for disabled form control (input, radio button, checkbox, textarea) border.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -163,7 +163,7 @@
           "$type": "color",
           "$description": "Used for invalid form control (input, textarea) border.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -177,7 +177,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -190,7 +190,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border on hover.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -203,7 +203,7 @@
             "$type": "color",
             "$description": "Used for checked and indeterminate (selected) form control (checkbox, radio button) border on focus.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -215,7 +215,7 @@
         "$type": "dimension",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -228,7 +228,7 @@
           "$type": "color",
           "$description": "Used for the helper text when the input is invalid.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -238,7 +238,7 @@
           "$type": "color",
           "$description": "Used for the helper text when the input is valid.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -251,7 +251,7 @@
         "$type": "color",
         "$description": "Used for placeholder text within inputs.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "TEXT_FILL"
           ]
         }
@@ -267,7 +267,7 @@
           "$type": "color",
           "$description": "Used for checkbox and radio button state indicators.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -281,7 +281,7 @@
           "$type": "color",
           "$description": "Used for disabled checkbox and radio button state indicators.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]

@@ -6,7 +6,7 @@
         "$type": "color",
         "$description": "Used for the breadcrumb level separator.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }

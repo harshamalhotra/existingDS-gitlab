@@ -4,7 +4,7 @@
       "$value": "-0.01em",
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LETTER_SPACING"
         ]
       }

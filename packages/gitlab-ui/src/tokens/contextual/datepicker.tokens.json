@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the background color of datepicker.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL",
             "TEXT_FILL"
           ]
@@ -24,7 +24,7 @@
             "$type": "color",
             "$description": "Used for the datepicker date text color state indicators.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }

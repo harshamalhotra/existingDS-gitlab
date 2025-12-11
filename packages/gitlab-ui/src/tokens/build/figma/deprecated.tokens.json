@@ -8,7 +8,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -21,7 +21,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -34,7 +34,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -47,7 +47,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -60,7 +60,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -73,7 +73,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -86,7 +86,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -99,7 +99,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -112,7 +112,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -125,7 +125,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -138,7 +138,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -153,7 +153,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -166,7 +166,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -179,7 +179,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -192,7 +192,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -205,7 +205,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -218,7 +218,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -231,7 +231,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -244,7 +244,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -257,7 +257,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -270,7 +270,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -283,7 +283,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -298,7 +298,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -311,7 +311,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -324,7 +324,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -337,7 +337,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -350,7 +350,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -363,7 +363,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -376,7 +376,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -389,7 +389,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -402,7 +402,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -415,7 +415,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -428,7 +428,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -443,7 +443,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -456,7 +456,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -469,7 +469,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -482,7 +482,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -495,7 +495,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -508,7 +508,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -521,7 +521,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -534,7 +534,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -547,7 +547,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -560,7 +560,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -573,7 +573,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -588,7 +588,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -601,7 +601,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -614,7 +614,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -627,7 +627,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -640,7 +640,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -653,7 +653,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -666,7 +666,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -679,7 +679,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -692,7 +692,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -705,7 +705,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -718,7 +718,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -738,7 +738,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -751,7 +751,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -764,7 +764,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -777,7 +777,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -790,7 +790,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -803,7 +803,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -816,7 +816,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -829,7 +829,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -842,7 +842,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -855,7 +855,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -868,7 +868,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -881,7 +881,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -896,7 +896,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -909,7 +909,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -922,7 +922,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -935,7 +935,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -948,7 +948,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -961,7 +961,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -974,7 +974,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -987,7 +987,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1000,7 +1000,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1013,7 +1013,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1026,7 +1026,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1039,7 +1039,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1054,7 +1054,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1067,7 +1067,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1080,7 +1080,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1093,7 +1093,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1106,7 +1106,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1119,7 +1119,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1132,7 +1132,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1145,7 +1145,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1158,7 +1158,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1171,7 +1171,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1184,7 +1184,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1197,7 +1197,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1212,7 +1212,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1225,7 +1225,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1238,7 +1238,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1251,7 +1251,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1264,7 +1264,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1277,7 +1277,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1290,7 +1290,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1303,7 +1303,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1316,7 +1316,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1329,7 +1329,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1342,7 +1342,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1355,7 +1355,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1370,7 +1370,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1383,7 +1383,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1396,7 +1396,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1409,7 +1409,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1422,7 +1422,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1435,7 +1435,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1448,7 +1448,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1461,7 +1461,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1474,7 +1474,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1487,7 +1487,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1500,7 +1500,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1513,7 +1513,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1528,7 +1528,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1541,7 +1541,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1554,7 +1554,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1567,7 +1567,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1580,7 +1580,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1593,7 +1593,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1606,7 +1606,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1619,7 +1619,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1632,7 +1632,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1645,7 +1645,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1658,7 +1658,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1671,7 +1671,7 @@
         },
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "themeable": true,
         "prefix": false,
@@ -1689,7 +1689,7 @@
     },
     "$type": "color",
     "$extensions": {
-      "com.figma.scope": [],
+      "com.figma.scopes": [],
       "com.gitlab.deprecated": true
     },
     "themeable": true,
@@ -1703,7 +1703,7 @@
     },
     "$type": "color",
     "$extensions": {
-      "com.figma.scope": [],
+      "com.figma.scopes": [],
       "com.gitlab.deprecated": true
     },
     "themeable": true,
@@ -1718,7 +1718,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1731,7 +1731,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1744,7 +1744,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1757,7 +1757,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1770,7 +1770,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1783,7 +1783,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1796,7 +1796,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1809,7 +1809,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1822,7 +1822,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1835,7 +1835,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1848,7 +1848,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1866,7 +1866,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1879,7 +1879,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1892,7 +1892,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1905,7 +1905,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1918,7 +1918,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1931,7 +1931,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1944,7 +1944,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1957,7 +1957,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1970,7 +1970,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1983,7 +1983,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -1996,7 +1996,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2009,7 +2009,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2027,7 +2027,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2040,7 +2040,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2053,7 +2053,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2066,7 +2066,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2079,7 +2079,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2092,7 +2092,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2105,7 +2105,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2118,7 +2118,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2131,7 +2131,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2144,7 +2144,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2157,7 +2157,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2175,7 +2175,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2188,7 +2188,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2201,7 +2201,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2214,7 +2214,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2227,7 +2227,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2240,7 +2240,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2253,7 +2253,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2266,7 +2266,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2279,7 +2279,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2292,7 +2292,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2305,7 +2305,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2323,7 +2323,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2336,7 +2336,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2349,7 +2349,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2362,7 +2362,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2375,7 +2375,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2388,7 +2388,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2401,7 +2401,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2414,7 +2414,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2427,7 +2427,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2440,7 +2440,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2453,7 +2453,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2471,7 +2471,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2484,7 +2484,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2497,7 +2497,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2510,7 +2510,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2523,7 +2523,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2536,7 +2536,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2549,7 +2549,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2562,7 +2562,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2575,7 +2575,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2588,7 +2588,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2601,7 +2601,7 @@
       },
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "themeable": true,
       "prefix": false,
@@ -2616,7 +2616,7 @@
       "$value": "#171321",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.brand-charcoal instead.",
       "themeable": true,
@@ -2628,7 +2628,7 @@
         "$value": "#fca326",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-orange.01p instead.",
         "themeable": true,
@@ -2639,7 +2639,7 @@
         "$value": "#fc6d26",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-orange.02p instead.",
         "themeable": true,
@@ -2650,7 +2650,7 @@
         "$value": "#e24329",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-orange.03p instead.",
         "themeable": true,
@@ -2663,7 +2663,7 @@
         "$value": "#a989f5",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.purple.01p instead.",
         "themeable": true,
@@ -2674,7 +2674,7 @@
         "$value": "#7759c2",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.purple.02p instead.",
         "themeable": true,
@@ -2687,7 +2687,7 @@
         "$value": "#d1d0d3",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-gray.01 instead.",
         "themeable": true,
@@ -2698,7 +2698,7 @@
         "$value": "#a2a1a6",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-gray.02 instead.",
         "themeable": true,
@@ -2709,7 +2709,7 @@
         "$value": "#74717a",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-gray.03 instead.",
         "themeable": true,
@@ -2720,7 +2720,7 @@
         "$value": "#45424d",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-gray.04 instead.",
         "themeable": true,
@@ -2731,7 +2731,7 @@
         "$value": "#2b2838",
         "$type": "color",
         "$extensions": {
-          "com.figma.scope": []
+          "com.figma.scopes": []
         },
         "$description": "Use color.brand-gray.05 instead.",
         "themeable": true,
@@ -2748,7 +2748,7 @@
       "$value": "rgba(05, 05, 06, 0.16)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.16 instead.",
       "themeable": true,
@@ -2759,7 +2759,7 @@
       "$value": "rgba(05, 05, 06, 0.24)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.24 instead.",
       "themeable": true,
@@ -2770,7 +2770,7 @@
       "$value": "rgba(05, 05, 06, 0.02)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.2 instead.",
       "themeable": true,
@@ -2781,7 +2781,7 @@
       "$value": "rgba(05, 05, 06, 0.04)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.4 instead.",
       "themeable": true,
@@ -2792,7 +2792,7 @@
       "$value": "rgba(05, 05, 06, 0.06)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.6 instead.",
       "themeable": true,
@@ -2803,7 +2803,7 @@
       "$value": "rgba(05, 05, 06, 0.08)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.dark.8 instead.",
       "themeable": true,
@@ -2819,7 +2819,7 @@
       "$value": "rgba(255, 255, 255, 0.16)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.16 instead.",
       "themeable": true,
@@ -2830,7 +2830,7 @@
       "$value": "rgba(255, 255, 255, 0.24)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.24 instead.",
       "themeable": true,
@@ -2841,7 +2841,7 @@
       "$value": "rgba(255, 255, 255, 0.36)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.36 instead.",
       "themeable": true,
@@ -2852,7 +2852,7 @@
       "$value": "rgba(255, 255, 255, 0.02)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.2 instead.",
       "themeable": true,
@@ -2863,7 +2863,7 @@
       "$value": "rgba(255, 255, 255, 0.04)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.4 instead.",
       "themeable": true,
@@ -2874,7 +2874,7 @@
       "$value": "rgba(255, 255, 255, 0.06)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.6 instead.",
       "themeable": true,
@@ -2885,7 +2885,7 @@
       "$value": "rgba(255, 255, 255, 0.08)",
       "$type": "color",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       },
       "$description": "Use color.alpha.light.8 instead.",
       "themeable": true,

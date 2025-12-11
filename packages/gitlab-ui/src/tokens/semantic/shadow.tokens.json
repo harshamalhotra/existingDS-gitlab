@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the default shadow color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "EFFECT_COLOR"
           ]
         }

@@ -6,7 +6,7 @@
         "$type": "color",
         "$description": "Used when a border needs to be present, but not visibly perceived.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "ALL_SCOPES"
           ]
         }
@@ -17,7 +17,7 @@
         "$value": "{spacing-scale.0}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -26,7 +26,7 @@
         "$value": "{spacing-scale.px}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -35,7 +35,7 @@
         "$value": "{spacing-scale.1}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -44,7 +44,7 @@
         "$value": "{spacing-scale.2}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -53,7 +53,7 @@
         "$value": "{spacing-scale.3}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -62,7 +62,7 @@
         "$value": "{spacing-scale.4}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -71,7 +71,7 @@
         "$value": "{spacing-scale.5}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -80,7 +80,7 @@
         "$value": "{spacing-scale.6}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -92,7 +92,7 @@
         },
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }

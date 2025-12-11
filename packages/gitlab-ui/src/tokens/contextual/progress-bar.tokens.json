@@ -7,7 +7,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the primary progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -18,7 +18,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the success progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -29,7 +29,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the warning progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -40,7 +40,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the danger progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -57,7 +57,7 @@
         "$type": "color",
         "$description": "Used for the track color for all progress-bar variants.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]

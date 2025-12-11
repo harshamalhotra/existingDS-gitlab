@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the default background color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -23,7 +23,7 @@
         "$type": "color",
         "$description": "Used to slightly differentiate the background from the default.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -37,7 +37,7 @@
         "$type": "color",
         "$description": "Used to make the background easily stand out from the default.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -51,7 +51,7 @@
         "$type": "color",
         "$description": "Used to identify a disabled section.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -65,7 +65,7 @@
         "$type": "color",
         "$description": "Used for components, like tooltips and drawers, and content, like a sticky header, that overlap other content.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -79,7 +79,7 @@
         "$type": "color",
         "$description": "Used for containers, like a card header, that are visually distinct from the default page background only when necessary to maintain affordance and hierarchy in different modes.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -93,7 +93,7 @@
         "$type": "color",
         "$description": "Used for an overlay that covers other content.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
