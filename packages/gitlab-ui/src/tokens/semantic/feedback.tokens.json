@@ -6,7 +6,7 @@
         "$type": "dimension",
         "$description": "Used for the border radius of a feedback element.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -19,7 +19,7 @@
           "$type": "color",
           "$description": "Used for a background associated with strong feedback like a tooltip or toast message.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -35,7 +35,7 @@
           "$type": "color",
           "$description": "Used for the border associated with strong feedback.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -47,7 +47,7 @@
           "$type": "color",
           "$description": "Used for text on a strong feedback background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -59,7 +59,7 @@
           "$type": "color",
           "$description": "Used for an icon on a strong feedback background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -72,7 +72,7 @@
           "$type": "color",
           "$description": "Used for a link on a strong feedback background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -89,7 +89,7 @@
           "$type": "color",
           "$description": "Used for the background of a neutral feedback item when there isn't a specific meaning or urgency.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -105,7 +105,7 @@
           "$type": "color",
           "$description": "Used for the border of a neutral feedback item when there isn't a specific meaning or urgency.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -120,7 +120,7 @@
           "$type": "color",
           "$description": "Used for the text of a neutral feedback item when there isn't a specific meaning or urgency.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -135,7 +135,7 @@
           "$type": "color",
           "$description": "Used for the icon of a neutral feedback item when there isn't a specific meaning or urgency.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -153,7 +153,7 @@
           "$type": "color",
           "$description": "Used for the background of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -169,7 +169,7 @@
           "$type": "color",
           "$description": "Used for the border of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -184,7 +184,7 @@
           "$type": "color",
           "$description": "Used for the text of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -199,7 +199,7 @@
           "$type": "color",
           "$description": "Used for the icon of an informational feedback item when highlighting new information or a change that doesn't require immediate action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -217,7 +217,7 @@
           "$type": "color",
           "$description": "Used for the background of a success feedback item when confirming the successful completion of a user-initiated action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -233,7 +233,7 @@
           "$type": "color",
           "$description": "Used for the border of a success feedback item when confirming the successful completion of a user-initiated action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -248,7 +248,7 @@
           "$type": "color",
           "$description": "Used for the text of a success feedback item when confirming the successful completion of a user-initiated action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -263,7 +263,7 @@
           "$type": "color",
           "$description": "Used for the icon of a success feedback item when confirming the successful completion of a user-initiated action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -281,7 +281,7 @@
           "$type": "color",
           "$description": "Used for the background of a warning feedback item when notifying about a potential issue or sensitive information.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -297,7 +297,7 @@
           "$type": "color",
           "$description": "Used for the border of a warning feedback item when notifying about a potential issue or sensitive information.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -312,7 +312,7 @@
           "$type": "color",
           "$description": "Used for the text of a warning feedback item when notifying about a potential issue or sensitive information.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -327,7 +327,7 @@
           "$type": "color",
           "$description": "Used for the icon of a warning feedback item when notifying about a potential issue or sensitive information.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -345,7 +345,7 @@
           "$type": "color",
           "$description": "Used for the background of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -361,7 +361,7 @@
           "$type": "color",
           "$description": "Used for the border of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -376,7 +376,7 @@
           "$type": "color",
           "$description": "Used for the text of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -391,7 +391,7 @@
           "$type": "color",
           "$description": "Used for the icon of a danger feedback item when notifying about a critical issue that has just occurred and requires immediate attention.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -409,7 +409,7 @@
           "$type": "color",
           "$description": "Used for the background of a brand-related feedback item when highlighting information that pertains to GitLab.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -425,7 +425,7 @@
           "$type": "color",
           "$description": "Used for the border of a brand-related feedback item when highlighting information that pertains to GitLab.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -440,7 +440,7 @@
           "$type": "color",
           "$description": "Used for the text of a brand-related feedback item when highlighting information that pertains to GitLab.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -455,7 +455,7 @@
           "$type": "color",
           "$description": "Used for the icon of a brand-related feedback item when highlighting information that pertains to GitLab.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]

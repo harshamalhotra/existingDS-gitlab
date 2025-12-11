@@ -7,7 +7,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -19,7 +19,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -31,7 +31,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -43,7 +43,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -55,7 +55,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -67,7 +67,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -79,7 +79,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -91,7 +91,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -103,7 +103,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
@@ -115,7 +115,7 @@
       },
       "$type": "dimension",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }

@@ -8,7 +8,7 @@
             "$type": "color",
             "$description": "Used for the background for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -19,7 +19,7 @@
             "$type": "color",
             "$description": "Used for the background for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -30,7 +30,7 @@
             "$type": "color",
             "$description": "Used for the background for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -41,7 +41,7 @@
             "$type": "color",
             "$description": "Used for the background for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -52,7 +52,7 @@
             "$type": "color",
             "$description": "Used for the background for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -63,7 +63,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -74,7 +74,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -85,7 +85,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -96,7 +96,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -107,7 +107,7 @@
             "$type": "color",
             "$description": "Used for the background for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -122,7 +122,7 @@
             "$type": "color",
             "$description": "Used for the border for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -132,7 +132,7 @@
             "$type": "color",
             "$description": "Used for the border for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -142,7 +142,7 @@
             "$type": "color",
             "$description": "Used for the border for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -152,7 +152,7 @@
             "$type": "color",
             "$description": "Used for the border for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -162,7 +162,7 @@
             "$type": "color",
             "$description": "Used for the border for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -172,7 +172,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -182,7 +182,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -192,7 +192,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -202,7 +202,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -212,7 +212,7 @@
             "$type": "color",
             "$description": "Used for the border for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -223,7 +223,7 @@
           "$type": "dimension",
           "$description": "Used for broadcast banner border radius.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "CORNER_RADIUS"
             ]
           }
@@ -236,7 +236,7 @@
             "$type": "color",
             "$description": "Used for the icon for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -247,7 +247,7 @@
             "$type": "color",
             "$description": "Used for the icon for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -258,7 +258,7 @@
             "$type": "color",
             "$description": "Used for the icon for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -269,7 +269,7 @@
             "$type": "color",
             "$description": "Used for the icon for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -280,7 +280,7 @@
             "$type": "color",
             "$description": "Used for the icon for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -291,7 +291,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -302,7 +302,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -313,7 +313,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -324,7 +324,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -335,7 +335,7 @@
             "$type": "color",
             "$description": "Used for the icon for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -350,7 +350,7 @@
             "$type": "color",
             "$description": "Used for the text for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -360,7 +360,7 @@
             "$type": "color",
             "$description": "Used for the text for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -370,7 +370,7 @@
             "$type": "color",
             "$description": "Used for the text for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -380,7 +380,7 @@
             "$type": "color",
             "$description": "Used for the text for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -390,7 +390,7 @@
             "$type": "color",
             "$description": "Used for the text for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -400,7 +400,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -410,7 +410,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -420,7 +420,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -430,7 +430,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -440,7 +440,7 @@
             "$type": "color",
             "$description": "Used for the text for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }

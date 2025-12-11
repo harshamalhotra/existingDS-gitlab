@@ -11,7 +11,7 @@
             "$type": "color",
             "$description": "Used for the mention link text color.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -24,7 +24,7 @@
             "$type": "color",
             "$description": "Used for the mention link text color when referencing the current user.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -41,7 +41,7 @@
             "$type": "color",
             "$description": "Used for the mention link default background.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -55,7 +55,7 @@
             "$type": "color",
             "$description": "Used for the mention link background when referencing the current user.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]

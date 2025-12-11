@@ -6,7 +6,7 @@
         "$type": "dimension",
         "$description": "Used for the border radius of an action.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -22,7 +22,7 @@
           "$type": "color",
           "$description": "Used for the foreground of a disabled action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -38,7 +38,7 @@
           "$type": "color",
           "$description": "Used for the background of a disabled action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -54,7 +54,7 @@
           "$type": "color",
           "$description": "Used for the border of a disabled action.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -72,7 +72,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -83,7 +83,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -94,7 +94,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -105,7 +105,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -123,7 +123,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -137,7 +137,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -148,7 +148,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -162,7 +162,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -177,7 +177,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -187,7 +187,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -197,7 +197,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -207,7 +207,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -226,7 +226,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a neutral action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -237,7 +237,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a neutral action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -248,7 +248,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a neutral action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -259,7 +259,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a neutral action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -277,7 +277,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -291,7 +291,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -302,7 +302,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -316,7 +316,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -331,7 +331,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -341,7 +341,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -351,7 +351,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -361,7 +361,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -380,7 +380,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a confirm (positive) action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -394,7 +394,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a confirm (positive) action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -405,7 +405,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a confirm (positive) action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -419,7 +419,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a confirm (positive) action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -437,7 +437,7 @@
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -451,7 +451,7 @@
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -462,7 +462,7 @@
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -476,7 +476,7 @@
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -491,7 +491,7 @@
             "$type": "color",
             "$description": "Used for the border of a confirm action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -501,7 +501,7 @@
             "$type": "color",
             "$description": "Used for the border of a confirm action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -511,7 +511,7 @@
             "$type": "color",
             "$description": "Used for the border of a confirm action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -521,7 +521,7 @@
             "$type": "color",
             "$description": "Used for the border of a confirm action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -540,7 +540,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a danger (destructive) action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -554,7 +554,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a danger (destructive) action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -565,7 +565,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a danger (destructive) action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -579,7 +579,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a danger (destructive) action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -597,7 +597,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -611,7 +611,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -622,7 +622,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -636,7 +636,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -651,7 +651,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger action in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -661,7 +661,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger action in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -671,7 +671,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger action in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -681,7 +681,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger action in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -701,7 +701,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong confirm action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -715,7 +715,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong confirm action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -726,7 +726,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong confirm action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -740,7 +740,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong confirm action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -758,7 +758,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong confirm action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -769,7 +769,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong confirm action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -780,7 +780,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong confirm action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -791,7 +791,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong confirm action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -806,7 +806,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong confirm action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -816,7 +816,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong confirm action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -826,7 +826,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong confirm action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -836,7 +836,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong confirm action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -855,7 +855,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong neutral action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -869,7 +869,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong neutral action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -880,7 +880,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong neutral action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -894,7 +894,7 @@
               "$type": "color",
               "$description": "Used for the background of a strong neutral action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -912,7 +912,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong neutral action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -926,7 +926,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong neutral action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -940,7 +940,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong neutral action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -954,7 +954,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a strong neutral action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -969,7 +969,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong neutral action in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -979,7 +979,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong neutral action in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -989,7 +989,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong neutral action in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -999,7 +999,7 @@
               "$type": "color",
               "$description": "Used for the border of a strong neutral action in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }

@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the default border color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -22,7 +22,7 @@
         "$type": "color",
         "$description": "Used for a subtle border in combination with the default background.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -35,7 +35,7 @@
         "$type": "color",
         "$description": "Used for a distinct border that emphasizes an edge or boundaries.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -48,7 +48,7 @@
         "$type": "color",
         "$description": "Used for the border color that surrounds content or elements when they appear as a closed container or closed section of the page.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -60,7 +60,7 @@
         "$type": "dimension",
         "$description": "",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }

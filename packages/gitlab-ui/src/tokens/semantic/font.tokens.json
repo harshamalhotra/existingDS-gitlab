@@ -5,7 +5,7 @@
         "$value": "{font.size.md}",
         "$type": "dimension",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FONT_SIZE"
           ]
         }
@@ -16,7 +16,7 @@
         "$value": "{font.weight.bold}",
         "$type": "fontWeight",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FONT_WEIGHT"
           ]
         }

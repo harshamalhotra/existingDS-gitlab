@@ -6,7 +6,7 @@
         "$type": "dimension",
         "$description": "Used for alert border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -22,7 +22,7 @@
           "$type": "color",
           "$description": "Used for the title color of a neutral alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -37,7 +37,7 @@
           "$type": "color",
           "$description": "Used for the background color of a neutral alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -54,7 +54,7 @@
             "$type": "color",
             "$description": "Used for the border center color of a neutral alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -66,7 +66,7 @@
             "$type": "color",
             "$description": "Used for the border bottom color of a neutral alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -84,7 +84,7 @@
           "$type": "color",
           "$description": "Used for the title color of an info alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -99,7 +99,7 @@
           "$type": "color",
           "$description": "Used for the background color of an info alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -116,7 +116,7 @@
             "$type": "color",
             "$description": "Used for the border color of an info alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -141,7 +141,7 @@
           "$type": "color",
           "$description": "Used for the title color of a success alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -156,7 +156,7 @@
           "$type": "color",
           "$description": "Used for the background color of a success alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -173,7 +173,7 @@
             "$type": "color",
             "$description": "Used for the border color of a success alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -185,7 +185,7 @@
             "$type": "color",
             "$description": "Used for the border bottom color of a success alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -203,7 +203,7 @@
           "$type": "color",
           "$description": "Used for the title color of a warning alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -218,7 +218,7 @@
           "$type": "color",
           "$description": "Used for the background color of a warning alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -235,7 +235,7 @@
             "$type": "color",
             "$description": "Used for the border color of a warning alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -247,7 +247,7 @@
             "$type": "color",
             "$description": "Used for the border bottom color of a warning alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -265,7 +265,7 @@
           "$type": "color",
           "$description": "Used for the title color of a danger alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -280,7 +280,7 @@
           "$type": "color",
           "$description": "Used for the background color of a danger alert.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -297,7 +297,7 @@
             "$type": "color",
             "$description": "Used for the border color of a danger alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -309,7 +309,7 @@
             "$type": "color",
             "$description": "Used for the border bottom color of a danger alert.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -332,7 +332,7 @@
           "$type": "color",
           "$description": "Used to define the edge of an avatar.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -345,7 +345,7 @@
           "$type": "color",
           "$description": "Used to increase the edge definition of an avatar in the hover state.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -363,7 +363,7 @@
             "$type": "color",
             "$description": "Red text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -376,7 +376,7 @@
             "$type": "color",
             "$description": "Purple text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -389,7 +389,7 @@
             "$type": "color",
             "$description": "Blue text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -402,7 +402,7 @@
             "$type": "color",
             "$description": "Green text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -415,7 +415,7 @@
             "$type": "color",
             "$description": "Orange text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -428,7 +428,7 @@
             "$type": "color",
             "$description": "Neutral text color for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -442,7 +442,7 @@
             "$type": "color",
             "$description": "Red background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -453,7 +453,7 @@
             "$type": "color",
             "$description": "Purple background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -464,7 +464,7 @@
             "$type": "color",
             "$description": "Blue background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -475,7 +475,7 @@
             "$type": "color",
             "$description": "Green background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -486,7 +486,7 @@
             "$type": "color",
             "$description": "Orange background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -497,7 +497,7 @@
             "$type": "color",
             "$description": "Neutral background for avatar fallback with no particular meaning.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -522,7 +522,7 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -534,7 +534,7 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -546,7 +546,7 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -561,7 +561,7 @@
             "$type": "color",
             "$description": "Used for the background of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -576,7 +576,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -589,7 +589,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -599,7 +599,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -609,7 +609,7 @@
             "$type": "color",
             "$description": "Used for the border of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -626,7 +626,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -639,7 +639,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -649,7 +649,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             },
@@ -663,7 +663,7 @@
             "$type": "color",
             "$description": "Used for the text of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -680,7 +680,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -694,7 +694,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -705,7 +705,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -720,7 +720,7 @@
             "$type": "color",
             "$description": "Used for the icon of a muted badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -740,7 +740,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -751,7 +751,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -762,7 +762,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -776,7 +776,7 @@
             "$type": "color",
             "$description": "Used for the background of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -791,7 +791,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -804,7 +804,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -814,7 +814,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -824,7 +824,7 @@
             "$type": "color",
             "$description": "Used for the border of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -841,7 +841,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -854,7 +854,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -864,7 +864,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -877,7 +877,7 @@
             "$type": "color",
             "$description": "Used for the text of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -894,7 +894,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -908,7 +908,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -919,7 +919,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -933,7 +933,7 @@
             "$type": "color",
             "$description": "Used for the icon of a neutral badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -953,7 +953,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -964,7 +964,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -975,7 +975,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -989,7 +989,7 @@
             "$type": "color",
             "$description": "Used for the background of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1004,7 +1004,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1017,7 +1017,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1027,7 +1027,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1037,7 +1037,7 @@
             "$type": "color",
             "$description": "Used for the border of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1054,7 +1054,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1067,7 +1067,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1077,7 +1077,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1090,7 +1090,7 @@
             "$type": "color",
             "$description": "Used for the text of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1107,7 +1107,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1121,7 +1121,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1132,7 +1132,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1146,7 +1146,7 @@
             "$type": "color",
             "$description": "Used for the icon of an informational badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1166,7 +1166,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1177,7 +1177,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1188,7 +1188,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1202,7 +1202,7 @@
             "$type": "color",
             "$description": "Used for the background of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1217,7 +1217,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1230,7 +1230,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1240,7 +1240,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1250,7 +1250,7 @@
             "$type": "color",
             "$description": "Used for the border of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1267,7 +1267,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1280,7 +1280,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1290,7 +1290,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1303,7 +1303,7 @@
             "$type": "color",
             "$description": "Used for the text of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1320,7 +1320,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1334,7 +1334,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1345,7 +1345,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1359,7 +1359,7 @@
             "$type": "color",
             "$description": "Used for the icon of a success badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1379,7 +1379,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1390,7 +1390,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1401,7 +1401,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1415,7 +1415,7 @@
             "$type": "color",
             "$description": "Used for the background of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1430,7 +1430,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1443,7 +1443,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1453,7 +1453,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1463,7 +1463,7 @@
             "$type": "color",
             "$description": "Used for the border of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1480,7 +1480,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1493,7 +1493,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1503,7 +1503,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1516,7 +1516,7 @@
             "$type": "color",
             "$description": "Used for the text of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1533,7 +1533,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1547,7 +1547,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1558,7 +1558,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1572,7 +1572,7 @@
             "$type": "color",
             "$description": "Used for the icon of a warning badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1592,7 +1592,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1603,7 +1603,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1614,7 +1614,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1628,7 +1628,7 @@
             "$type": "color",
             "$description": "Used for the background of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1643,7 +1643,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1656,7 +1656,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1666,7 +1666,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1676,7 +1676,7 @@
             "$type": "color",
             "$description": "Used for the border of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1693,7 +1693,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1706,7 +1706,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1716,7 +1716,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1729,7 +1729,7 @@
             "$type": "color",
             "$description": "Used for the text of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1746,7 +1746,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1760,7 +1760,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1771,7 +1771,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1785,7 +1785,7 @@
             "$type": "color",
             "$description": "Used for the icon of a danger badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1805,7 +1805,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1816,7 +1816,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1827,7 +1827,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1841,7 +1841,7 @@
             "$type": "color",
             "$description": "Used for the background of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -1856,7 +1856,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1869,7 +1869,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1879,7 +1879,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1889,7 +1889,7 @@
             "$type": "color",
             "$description": "Used for the border of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -1906,7 +1906,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1919,7 +1919,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1929,7 +1929,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1942,7 +1942,7 @@
             "$type": "color",
             "$description": "Used for the text of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -1959,7 +1959,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge when static or the default state when linked.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1973,7 +1973,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1984,7 +1984,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -1998,7 +1998,7 @@
             "$type": "color",
             "$description": "Used for the icon of a tier related badge in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2022,7 +2022,7 @@
           "$type": "color",
           "$description": "Used for the border of an info banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -2039,7 +2039,7 @@
           "$type": "color",
           "$description": "Used for the background of a promo banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -2055,7 +2055,7 @@
           "$type": "color",
           "$description": "Used for the border of a promo banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -2073,7 +2073,7 @@
         "$type": "color",
         "$description": "Used for the breadcrumb level separator.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -2092,7 +2092,7 @@
             "$type": "color",
             "$description": "Used for the background for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2103,7 +2103,7 @@
             "$type": "color",
             "$description": "Used for the background for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2114,7 +2114,7 @@
             "$type": "color",
             "$description": "Used for the background for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2125,7 +2125,7 @@
             "$type": "color",
             "$description": "Used for the background for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2136,7 +2136,7 @@
             "$type": "color",
             "$description": "Used for the background for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2147,7 +2147,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2158,7 +2158,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2169,7 +2169,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2180,7 +2180,7 @@
             "$type": "color",
             "$description": "Used for the background for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2191,7 +2191,7 @@
             "$type": "color",
             "$description": "Used for the background for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -2206,7 +2206,7 @@
             "$type": "color",
             "$description": "Used for the border for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2216,7 +2216,7 @@
             "$type": "color",
             "$description": "Used for the border for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2226,7 +2226,7 @@
             "$type": "color",
             "$description": "Used for the border for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2236,7 +2236,7 @@
             "$type": "color",
             "$description": "Used for the border for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2246,7 +2246,7 @@
             "$type": "color",
             "$description": "Used for the border for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2256,7 +2256,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2266,7 +2266,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2276,7 +2276,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2286,7 +2286,7 @@
             "$type": "color",
             "$description": "Used for the border for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2296,7 +2296,7 @@
             "$type": "color",
             "$description": "Used for the border for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -2307,7 +2307,7 @@
           "$type": "dimension",
           "$description": "Used for broadcast banner border radius.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "CORNER_RADIUS"
             ]
           }
@@ -2320,7 +2320,7 @@
             "$type": "color",
             "$description": "Used for the icon for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2331,7 +2331,7 @@
             "$type": "color",
             "$description": "Used for the icon for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2342,7 +2342,7 @@
             "$type": "color",
             "$description": "Used for the icon for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2353,7 +2353,7 @@
             "$type": "color",
             "$description": "Used for the icon for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2364,7 +2364,7 @@
             "$type": "color",
             "$description": "Used for the icon for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2375,7 +2375,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2386,7 +2386,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2397,7 +2397,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2408,7 +2408,7 @@
             "$type": "color",
             "$description": "Used for the icon for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2419,7 +2419,7 @@
             "$type": "color",
             "$description": "Used for the icon for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -2434,7 +2434,7 @@
             "$type": "color",
             "$description": "Used for the text for the blue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2444,7 +2444,7 @@
             "$type": "color",
             "$description": "Used for the text for the dark banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2454,7 +2454,7 @@
             "$type": "color",
             "$description": "Used for the text for the green banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2464,7 +2464,7 @@
             "$type": "color",
             "$description": "Used for the text for the indigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2474,7 +2474,7 @@
             "$type": "color",
             "$description": "Used for the text for the light banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2484,7 +2484,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightblue banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2494,7 +2494,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightgreen banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2504,7 +2504,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightindigo banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2514,7 +2514,7 @@
             "$type": "color",
             "$description": "Used for the text for the lightred banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2524,7 +2524,7 @@
             "$type": "color",
             "$description": "Used for the text for the red banner type.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -2543,7 +2543,7 @@
         "$type": "dimension",
         "$description": "Used for button border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -2561,7 +2561,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2572,7 +2572,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2583,7 +2583,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2594,7 +2594,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2612,7 +2612,7 @@
               "$type": "color",
               "$description": "Used for the background of an default primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2626,7 +2626,7 @@
               "$type": "color",
               "$description": "Used for the background of an default primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2637,7 +2637,7 @@
               "$type": "color",
               "$description": "Used for the background of an default primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2651,7 +2651,7 @@
               "$type": "color",
               "$description": "Used for the background of an default primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2669,7 +2669,7 @@
               "$type": "color",
               "$description": "Used for the border of an default primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2682,7 +2682,7 @@
               "$type": "color",
               "$description": "Used for the border of an default primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2692,7 +2692,7 @@
               "$type": "color",
               "$description": "Used for the border of an default primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2705,7 +2705,7 @@
               "$type": "color",
               "$description": "Used for the border of an default primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2721,7 +2721,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default borderless, tertiary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2732,7 +2732,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default borderless, tertiary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2743,7 +2743,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default borderless, tertiary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2754,7 +2754,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a default borderless, tertiary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2769,7 +2769,7 @@
               "$type": "color",
               "$description": "Used for the background of a default borderless, tertiary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2780,7 +2780,7 @@
               "$type": "color",
               "$description": "Used for the background of a default borderless, tertiary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2791,7 +2791,7 @@
               "$type": "color",
               "$description": "Used for the background of a default borderless, tertiary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2802,7 +2802,7 @@
               "$type": "color",
               "$description": "Used for the background of a default borderless, tertiary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2817,7 +2817,7 @@
               "$type": "color",
               "$description": "Used for the border of a default borderless, tertiary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2827,7 +2827,7 @@
               "$type": "color",
               "$description": "Used for the border of a default borderless, tertiary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2837,7 +2837,7 @@
               "$type": "color",
               "$description": "Used for the border of a default borderless, tertiary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2847,7 +2847,7 @@
               "$type": "color",
               "$description": "Used for the border of a default borderless, tertiary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2868,7 +2868,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2879,7 +2879,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2890,7 +2890,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2901,7 +2901,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -2916,7 +2916,7 @@
               "$type": "color",
               "$description": "Used for the background of a confirm (positive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2927,7 +2927,7 @@
               "$type": "color",
               "$description": "Used for the background of a confirm (positive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2938,7 +2938,7 @@
               "$type": "color",
               "$description": "Used for the background of a confirm (positive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2949,7 +2949,7 @@
               "$type": "color",
               "$description": "Used for the background of a confirm (positive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -2967,7 +2967,7 @@
               "$type": "color",
               "$description": "Used for the border of a confirm (positive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2980,7 +2980,7 @@
               "$type": "color",
               "$description": "Used for the border of a confirm (positive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -2990,7 +2990,7 @@
               "$type": "color",
               "$description": "Used for the border of a confirm (positive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3003,7 +3003,7 @@
               "$type": "color",
               "$description": "Used for the border of a confirm (positive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3022,7 +3022,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3036,7 +3036,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3047,7 +3047,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3061,7 +3061,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3079,7 +3079,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3093,7 +3093,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3104,7 +3104,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3118,7 +3118,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3136,7 +3136,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3149,7 +3149,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3159,7 +3159,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3172,7 +3172,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3188,7 +3188,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3199,7 +3199,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3210,7 +3210,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3221,7 +3221,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3236,7 +3236,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3247,7 +3247,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3258,7 +3258,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3269,7 +3269,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3284,7 +3284,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary confirm (positive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3294,7 +3294,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary confirm (positive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3304,7 +3304,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary confirm (positive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3314,7 +3314,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary confirm (positive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3335,7 +3335,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3346,7 +3346,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3357,7 +3357,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3368,7 +3368,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3386,7 +3386,7 @@
               "$type": "color",
               "$description": "Used for the background of a danger (destructive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3400,7 +3400,7 @@
               "$type": "color",
               "$description": "Used for the background of a danger (destructive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3411,7 +3411,7 @@
               "$type": "color",
               "$description": "Used for the background of a danger (destructive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3425,7 +3425,7 @@
               "$type": "color",
               "$description": "Used for the background of a danger (destructive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3443,7 +3443,7 @@
               "$type": "color",
               "$description": "Used for the border of a danger (destructive) primary button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3456,7 +3456,7 @@
               "$type": "color",
               "$description": "Used for the border of a danger (destructive) primary button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3466,7 +3466,7 @@
               "$type": "color",
               "$description": "Used for the border of a danger (destructive) primary button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3479,7 +3479,7 @@
               "$type": "color",
               "$description": "Used for the border of a danger (destructive) primary button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3498,7 +3498,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3512,7 +3512,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3523,7 +3523,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3537,7 +3537,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3555,7 +3555,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3569,7 +3569,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3580,7 +3580,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3594,7 +3594,7 @@
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3612,7 +3612,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3625,7 +3625,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3635,7 +3635,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3648,7 +3648,7 @@
               "$type": "color",
               "$description": "Used for the border of an outlined danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3664,7 +3664,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3675,7 +3675,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3686,7 +3686,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3697,7 +3697,7 @@
               "$type": "color",
               "$description": "Used for the foreground of a borderless, tertiary danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -3712,7 +3712,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3723,7 +3723,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3734,7 +3734,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3745,7 +3745,7 @@
               "$type": "color",
               "$description": "Used for the background of a borderless, tertiary danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -3760,7 +3760,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary danger (destructive) button in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3770,7 +3770,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary danger (destructive) button in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3780,7 +3780,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary danger (destructive) button in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3790,7 +3790,7 @@
               "$type": "color",
               "$description": "Used for the border of a borderless, tertiary danger (destructive) button in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "STROKE_COLOR"
                 ]
               }
@@ -3810,7 +3810,7 @@
             "$type": "color",
             "$description": "Used for the border of a dashed button in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             },
@@ -3821,7 +3821,7 @@
             "$type": "color",
             "$description": "Used for the border of a dashed button in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             },
@@ -3832,7 +3832,7 @@
             "$type": "color",
             "$description": "Used for the border of a dashed button in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             },
@@ -3846,7 +3846,7 @@
             "$type": "color",
             "$description": "Used for the border of a dashed button in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             },
@@ -3862,7 +3862,7 @@
           "$type": "dimension",
           "$description": "Used for link button border radius.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "CORNER_RADIUS"
             ]
           }
@@ -3875,7 +3875,7 @@
             "$type": "color",
             "$description": "Used for the text of a link button in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3886,7 +3886,7 @@
             "$type": "color",
             "$description": "Used for the text of a link button in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3897,7 +3897,7 @@
             "$type": "color",
             "$description": "Used for the text of a link button in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3908,7 +3908,7 @@
             "$type": "color",
             "$description": "Used for the text of a link button in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3928,7 +3928,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected button in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3942,7 +3942,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected button in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3956,7 +3956,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected button in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3970,7 +3970,7 @@
             "$type": "color",
             "$description": "Used for the foreground of a selected button in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL",
                 "TEXT_FILL"
               ]
@@ -3988,7 +3988,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected button in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -4002,7 +4002,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected button in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -4016,7 +4016,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected button in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -4030,7 +4030,7 @@
             "$type": "color",
             "$description": "Used for the background of a selected button in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -4048,7 +4048,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected button in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4061,7 +4061,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected button in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4071,7 +4071,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected button in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4084,7 +4084,7 @@
             "$type": "color",
             "$description": "Used for the border of a selected button in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4102,7 +4102,7 @@
           "$type": "color",
           "$description": "Used for the foreground of a disabled button.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -4118,7 +4118,7 @@
           "$type": "color",
           "$description": "Used for the background of a disabled button.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -4134,7 +4134,7 @@
           "$type": "color",
           "$description": "Used for the border of a disabled button.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -4151,7 +4151,7 @@
           "$type": "color",
           "$description": "Used for the background of a button count element.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -4170,7 +4170,7 @@
         "$type": "dimension",
         "$description": "Used for card border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -4188,7 +4188,7 @@
           "$type": "color",
           "$description": "Used in charts for the color of the reference line and axis value under mouse pointer.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4203,7 +4203,7 @@
           "$type": "color",
           "$description": "Used in charts for axis line color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4215,7 +4215,7 @@
           "$type": "color",
           "$description": "Used in charts for the text color of axis titles and labels.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4229,7 +4229,7 @@
           "$type": "color",
           "$description": "Used in charts to delineate a threshold area in a chart.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4244,7 +4244,7 @@
           "$type": "color",
           "$description": "Used in charts to divide a threshold area in a chart from other data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4261,7 +4261,7 @@
           "$type": "color",
           "$description": "Used in charts for the overlay color when zooming in on a specific area of data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4273,7 +4273,7 @@
           "$type": "color",
           "$description": "Used in charts for the handle color when zooming in on a specific area of data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -4294,7 +4294,7 @@
         "$type": "color",
         "$description": "Used for the background color of datepicker.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL",
             "TEXT_FILL"
           ]
@@ -4309,7 +4309,7 @@
             "$type": "color",
             "$description": "Used for the datepicker date text color state indicators.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4328,7 +4328,7 @@
         "$type": "dimension",
         "$description": "Used for drawer border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -4345,7 +4345,7 @@
         "$type": "color",
         "$description": "Used for the background of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -4361,7 +4361,7 @@
         "$type": "color",
         "$description": "Used for the border of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
@@ -4373,7 +4373,7 @@
         "$type": "dimension",
         "$description": "Used for the border radius of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -4388,7 +4388,7 @@
         "$type": "color",
         "$description": "Used for the divider of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
@@ -4403,7 +4403,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4413,7 +4413,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4423,7 +4423,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4433,7 +4433,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4443,7 +4443,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the disabled state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -4458,7 +4458,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -4469,7 +4469,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -4480,7 +4480,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -4491,7 +4491,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -4508,7 +4508,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4519,7 +4519,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4530,7 +4530,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4541,7 +4541,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4557,7 +4557,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4571,7 +4571,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4582,7 +4582,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4596,7 +4596,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4616,7 +4616,7 @@
           "$type": "color",
           "$description": "Used for the background of a search input in a dropdown listbox.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -4641,7 +4641,7 @@
               "$type": "color",
               "$description": "Used for the filtered search type token background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4655,7 +4655,7 @@
               "$type": "color",
               "$description": "Used for the filtered search type token background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4675,7 +4675,7 @@
               "$type": "color",
               "$description": "Used for the filtered search data background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4689,7 +4689,7 @@
               "$type": "color",
               "$description": "Used for the filtered search data token background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4709,7 +4709,7 @@
               "$type": "color",
               "$description": "Used for the filtered search operator background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4723,7 +4723,7 @@
               "$type": "color",
               "$description": "Used for the filtered search operator token background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -4748,7 +4748,7 @@
           "$type": "color",
           "$description": "Default stroke color to define shape and provide essential detail.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -4763,7 +4763,7 @@
           "$type": "dimension",
           "$description": "Default stroke width to define shape and provide essential detail.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_FLOAT"
             ]
           }
@@ -4780,7 +4780,7 @@
           "$type": "color",
           "$description": "Default fill color for an element where specific meaning or emphasis is not required.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -4798,7 +4798,7 @@
             "$type": "color",
             "$description": "Used as a fill to convey a concept which is neither positive or negative.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4811,7 +4811,7 @@
             "$type": "color",
             "$description": "Used as a fill to convey a success or active concept, has a positive connotation.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4824,7 +4824,7 @@
             "$type": "color",
             "$description": "Used as a fill to convey a caution or warning concept, has a slightly negative connotation.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4837,7 +4837,7 @@
             "$type": "color",
             "$description": "Used as a fill to convey a critical or danger concept, has a negative connotation.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4856,7 +4856,7 @@
             "$type": "color",
             "$description": "Used for orange accent stroke detail on an object or attention-drawing element.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4869,7 +4869,7 @@
             "$type": "color",
             "$description": "Used for teal accent stroke detail on an object or attention-drawing element.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4882,7 +4882,7 @@
             "$type": "color",
             "$description": "Used for dark accent stroke detail on an object or attention-drawing element.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4899,7 +4899,7 @@
             "$type": "color",
             "$description": "Used to add depth to a secondary element and supporting surface.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4912,7 +4912,7 @@
             "$type": "color",
             "$description": "Used for an element requiring visual emphasis without competing with primary content or status indicators.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4925,7 +4925,7 @@
             "$type": "color",
             "$description": "Used to add orange to a secondary element and supporting surface.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4938,7 +4938,7 @@
             "$type": "color",
             "$description": "Used to add teal to a secondary element and supporting surface.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -4956,7 +4956,7 @@
           "$type": "color",
           "$description": "Used for the consistent background shape present across all illustrations. Provides a unified foundation that visually grounds each illustration while maintaining system cohesion.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -4974,7 +4974,7 @@
             "$type": "color",
             "$description": "Default stroke color to define shape and provide essential detail in isometric illustration.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_COLOR"
               ]
             }
@@ -4989,7 +4989,7 @@
             "$type": "dimension",
             "$description": "Default stroke width to define shape and provide essential detail in isometric illustration.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "STROKE_FLOAT"
               ]
             }
@@ -5007,7 +5007,7 @@
               "$type": "color",
               "$description": "Used for the top face of isometric text and number elements.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5024,7 +5024,7 @@
               "$type": "color",
               "$description": "Used for the front face of isometric text and number elements.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5041,7 +5041,7 @@
               "$type": "color",
               "$description": "Used for the side face of isometric text and number elements.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5058,7 +5058,7 @@
               "$type": "color",
               "$description": "Used for the shadow of isometric text and number elements.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "EFFECT_COLOR",
                   "SHAPE_FILL"
                 ]
@@ -5078,7 +5078,7 @@
               "$type": "color",
               "$description": "Used for the top face of an isometric object or symbol.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5095,7 +5095,7 @@
               "$type": "color",
               "$description": "Used for the front face of an isometric object or symbol.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5112,7 +5112,7 @@
               "$type": "color",
               "$description": "Used for the side face of an isometric object or symbol.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5129,7 +5129,7 @@
               "$type": "color",
               "$description": "Used for the face of an isometric object or symbol that requires maximum distinction from other elements.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5146,7 +5146,7 @@
               "$type": "color",
               "$description": "Used for the shadow of an isometric object or symbol.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "EFFECT_COLOR",
                   "SHAPE_FILL"
                 ]
@@ -5166,7 +5166,7 @@
               "$type": "color",
               "$description": "Used for the top face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5183,7 +5183,7 @@
               "$type": "color",
               "$description": "Used for the front face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5200,7 +5200,7 @@
               "$type": "color",
               "$description": "Used for the side face of a supporting isometric element. Provides subtle dimensional variation without competing with primary content.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5219,7 +5219,7 @@
               "$type": "color",
               "$description": "Used for the top surface of an isometric base platform.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5236,7 +5236,7 @@
               "$type": "color",
               "$description": "Used for the front face of an isometric base platform.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5253,7 +5253,7 @@
               "$type": "color",
               "$description": "Used for the side face of an isometric base platform.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5274,7 +5274,7 @@
           "$type": "color",
           "$description": "Used for the label text color on a light background color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -5288,7 +5288,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a light background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5299,7 +5299,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a light background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5314,7 +5314,7 @@
               "$type": "color",
               "$description": "Used for the label remove button icon on a light background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -5331,7 +5331,7 @@
           "$type": "color",
           "$description": "Used for the label text color on a dark background color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -5345,7 +5345,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a dark background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5356,7 +5356,7 @@
               "$type": "color",
               "$description": "Used for the label remove button background on a dark background color in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5371,7 +5371,7 @@
               "$type": "color",
               "$description": "Used for the label remove button icon on a dark background color in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -5391,7 +5391,7 @@
           "$type": "color",
           "$description": "Used for the scoped label text color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "TEXT_FILL"
             ]
           }
@@ -5408,7 +5408,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button background in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5426,7 +5426,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button icon in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -5440,7 +5440,7 @@
               "$type": "color",
               "$description": "Used for the scoped label remove button icon in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -5466,7 +5466,7 @@
             "$type": "color",
             "$description": "Used for the mention link text color.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -5479,7 +5479,7 @@
             "$type": "color",
             "$description": "Used for the mention link text color when referencing the current user.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -5496,7 +5496,7 @@
             "$type": "color",
             "$description": "Used for the mention link default background.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -5510,7 +5510,7 @@
             "$type": "color",
             "$description": "Used for the mention link background when referencing the current user.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -5530,7 +5530,7 @@
         "$type": "dimension",
         "$description": "Used for modal border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -5548,7 +5548,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the primary progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -5559,7 +5559,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the success progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -5570,7 +5570,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the warning progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -5581,7 +5581,7 @@
           "$type": "color",
           "$description": "Used for the indicator color for the danger progress-bar variant.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -5598,7 +5598,7 @@
         "$type": "color",
         "$description": "Used for the track color for all progress-bar variants.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -5619,7 +5619,7 @@
         "$type": "color",
         "$description": "Used for the skeleton loader background color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL"
           ]
         }
@@ -5634,7 +5634,7 @@
         "$type": "color",
         "$description": "Used for the animated shimmer effect in a skeleton loader.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL"
           ]
         }
@@ -5655,7 +5655,7 @@
           "$type": "color",
           "$description": "Used for the static track (background) of a loading spinner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -5665,7 +5665,7 @@
           "$type": "color",
           "$description": "Used for the static track (background) of a loading spinner on a dark background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -5682,7 +5682,7 @@
           "$type": "color",
           "$description": "Used for the animated segment of a loading spinner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -5692,7 +5692,7 @@
           "$type": "color",
           "$description": "Used for the animated segment of a loading spinner on a dark background.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL"
             ]
           }
@@ -5712,7 +5712,7 @@
             "$type": "color",
             "$description": "Used for the background of a table row in hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -5728,7 +5728,7 @@
           "$type": "color",
           "$description": "Used for the color of the sorting icons in the column headers.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "SHAPE_FILL",
               "TEXT_FILL"
             ]
@@ -5752,7 +5752,7 @@
             "$type": "color",
             "$description": "Used for the selected indicator of a tab.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
               ]
@@ -5775,7 +5775,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5785,7 +5785,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5795,7 +5795,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5805,7 +5805,7 @@
               "$type": "color",
               "$description": "Used for the icon color of an unchecked toggle switch in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5817,7 +5817,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5827,7 +5827,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5837,7 +5837,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5847,7 +5847,7 @@
               "$type": "color",
               "$description": "Used for the icon color of a checked toggle switch in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL"
                 ]
               }
@@ -5858,7 +5858,7 @@
             "$type": "color",
             "$description": "Used for the icon color of a disabled toggle switch.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "SHAPE_FILL"
               ]
             }
@@ -5883,7 +5883,7 @@
               "$type": "color",
               "$description": "Used for the background color of a token in a token-selector when it's token-container is in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -5904,7 +5904,7 @@
         "$type": "dimension",
         "$description": "Used for token border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -5916,7 +5916,7 @@
         "$type": "color",
         "$description": "Used for the token foreground color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "SHAPE_FILL",
             "TEXT_FILL"
           ]
@@ -5932,7 +5932,7 @@
         "$type": "color",
         "$description": "Used for the token background color.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]

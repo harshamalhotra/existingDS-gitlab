@@ -6,14 +6,14 @@
           "$value": 0,
           "$type": "dimension",
           "$extensions": {
-            "com.figma.scope": []
+            "com.figma.scopes": []
           }
         },
         "bottom": {
           "$value": "{spacing-scale.5}",
           "$type": "dimension",
           "$extensions": {
-            "com.figma.scope": []
+            "com.figma.scopes": []
           }
         }
       }

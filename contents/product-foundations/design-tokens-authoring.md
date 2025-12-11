@@ -164,7 +164,7 @@ const GL_TEXT_COLOR_HEADING = '#18171d';
 
 [Extensions](https://www.designtokens.org/tr/2025.10/format/#extensions), are custom properties that provide additional metadata or functionality.
 
-The `com.figma.scope` extension indicates a token's scope within Figma. Value is an array (even for tokens with a single scope) and should follow the [VariableScope](https://www.figma.com/plugin-docs/api/VariableScope/) type from Figma's Plugin API.
+The `com.figma.scopes` extension indicates a token's scope within Figma. Value is an array (even for tokens with a single scope) and should follow the [VariableScope](https://www.figma.com/plugin-docs/api/VariableScope/) type from Figma's Plugin API.
 
 ```json
 {
@@ -172,7 +172,7 @@ The `com.figma.scope` extension indicates a token's scope within Figma. Value is
     "$value": "#000",
     "$type": "color",
     "$extensions": {
-      "com.figma.scope": [
+      "com.figma.scopes": [
         "TEXT_FILL"
       ],
     }
@@ -181,7 +181,7 @@ The `com.figma.scope` extension indicates a token's scope within Figma. Value is
     "$value": "#333",
     "$type": "color",
     "$extensions": {
-      "com.figma.scope": [
+      "com.figma.scopes": [
         "SHAPE_FILL",
         "STROKE_COLOR"
       ],

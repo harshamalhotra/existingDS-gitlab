@@ -10,7 +10,7 @@
           "$type": "color",
           "$description": "Used for the border of an info banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }
@@ -27,7 +27,7 @@
           "$type": "color",
           "$description": "Used for the background of a promo banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]
@@ -43,7 +43,7 @@
           "$type": "color",
           "$description": "Used for the border of a promo banner.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "STROKE_COLOR"
             ]
           }

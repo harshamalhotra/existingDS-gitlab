@@ -7,7 +7,7 @@
           "$type": "color",
           "$description": "Used in charts for the color of the reference line and axis value under mouse pointer.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -22,7 +22,7 @@
           "$type": "color",
           "$description": "Used in charts for axis line color.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -34,7 +34,7 @@
           "$type": "color",
           "$description": "Used in charts for the text color of axis titles and labels.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -48,7 +48,7 @@
           "$type": "color",
           "$description": "Used in charts to delineate a threshold area in a chart.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -63,7 +63,7 @@
           "$type": "color",
           "$description": "Used in charts to divide a threshold area in a chart from other data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -80,7 +80,7 @@
           "$type": "color",
           "$description": "Used in charts for the overlay color when zooming in on a specific area of data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }
@@ -92,7 +92,7 @@
           "$type": "color",
           "$description": "Used in charts for the handle color when zooming in on a specific area of data.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "ALL_SCOPES"
             ]
           }

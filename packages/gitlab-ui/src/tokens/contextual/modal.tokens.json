@@ -6,7 +6,7 @@
         "$type": "dimension",
         "$description": "Used for modal border radius.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }

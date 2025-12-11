@@ -9,7 +9,7 @@
         "$type": "color",
         "$description": "Used for the outer color portion of the focus ring.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }
@@ -21,7 +21,7 @@
         "$type": "color",
         "$description": "Used for the inner neutral portion of the focus ring.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "STROKE_COLOR"
           ]
         }

@@ -6,7 +6,7 @@
         "$type": "color",
         "$description": "Used for the background of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "FRAME_FILL",
             "SHAPE_FILL"
           ]
@@ -22,7 +22,7 @@
         "$type": "color",
         "$description": "Used for the border of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
@@ -34,7 +34,7 @@
         "$type": "dimension",
         "$description": "Used for the border radius of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "CORNER_RADIUS"
           ]
         }
@@ -49,7 +49,7 @@
         "$type": "color",
         "$description": "Used for the divider of a dropdown.",
         "$extensions": {
-          "com.figma.scope": [
+          "com.figma.scopes": [
             "EFFECT_COLOR",
             "STROKE_COLOR"
           ]
@@ -64,7 +64,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the default state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -74,7 +74,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the hover state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -84,7 +84,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the focus state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -94,7 +94,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the active state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -104,7 +104,7 @@
             "$type": "color",
             "$description": "Used for the text of a dropdown option in the disabled state.",
             "$extensions": {
-              "com.figma.scope": [
+              "com.figma.scopes": [
                 "TEXT_FILL"
               ]
             }
@@ -119,7 +119,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -130,7 +130,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -141,7 +141,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -152,7 +152,7 @@
               "$type": "color",
               "$description": "Used for the dropdown selected option indicator in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "SHAPE_FILL",
                   "TEXT_FILL"
                 ]
@@ -169,7 +169,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -180,7 +180,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -191,7 +191,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -202,7 +202,7 @@
               "$type": "color",
               "$description": "Used for the background of an unselected dropdown option in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -218,7 +218,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the default state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -232,7 +232,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the hover state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -243,7 +243,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the focus state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -257,7 +257,7 @@
               "$type": "color",
               "$description": "Used for the background of a selected dropdown option in the active state.",
               "$extensions": {
-                "com.figma.scope": [
+                "com.figma.scopes": [
                   "FRAME_FILL",
                   "SHAPE_FILL"
                 ]
@@ -277,7 +277,7 @@
           "$type": "color",
           "$description": "Used for the background of a search input in a dropdown listbox.",
           "$extensions": {
-            "com.figma.scope": [
+            "com.figma.scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
             ]

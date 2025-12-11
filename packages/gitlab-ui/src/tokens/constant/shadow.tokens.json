@@ -29,7 +29,7 @@
       "$type": "shadow",
       "$description": "Used for surfaces that need to indicate users can manually interact with them. For example, cards in issue board.",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       }
     },
     "md": {
@@ -71,7 +71,7 @@
       "$type": "shadow",
       "$description": "Used for surfaces that need boundary definition and appear on hover. For example, popovers.",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       }
     },
     "lg": {
@@ -113,7 +113,7 @@
       "$type": "shadow",
       "$description": "Used for large surfaces that present additional context to the user.",
       "$extensions": {
-        "com.figma.scope": []
+        "com.figma.scopes": []
       }
     }
   }

@@ -4,7 +4,7 @@
       "$value": 1.25,
       "$type": "number",
       "$extensions": {
-        "com.figma.scope": [
+        "com.figma.scopes": [
           "LINE_HEIGHT"
         ]
       }
