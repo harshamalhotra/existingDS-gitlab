@@ -3,6 +3,38 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.7
+
+<small>Published 2025-12-12</small>
+
+This release introduces **application chrome** layout templates to support full-page designs and adds visual refinements from the recent UI updates to core components.
+
+Full highlights:
+
+- New application chrome pattern with three panel types (static, dynamic, and AI) for organizing complex interfaces.
+- Updated drawer and modal border radius styling.
+- New gitlab-credits icon for credit representation in the product.
+
+**Note:** Application chrome is a new structural pattern for product interfaces—review the design assets to understand the panel system and its intended use cases.
+
+**💡 Figma tip:** You can have split tabs in Figma and even have different file types, like Figma Design and FigJam, next to each other. [Take a look at Figma's guide for details](https://help.figma.com/hc/en-us/articles/5601429983767-Guide-to-the-Figma-desktop-app).
+
+### Changelog
+
+#### ➕ Additions
+
+- (Patterns & Page Templates): Adds [**application chrome**](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3353-152&p=f&m=dev) design assets.
+- (Product Icons): Adds [**gitlab-credits**](https://design.gitlab.com/product-foundations/iconography-directory?q=~gitlab-credits) icon.
+
+#### 🔄 Changes
+
+- (Component Library): Updates the [**❖&nbsp;Drawer**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=44560-56734&p=f&t=Ca69VzszO3DuOVnH-11) to use a border radius on the top left and bottom left, reflecting the changes introduced in Project Studio.
+- (Component Library): Updates the [**❖&nbsp;Modal**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=425-129&p=f&t=Ca69VzszO3DuOVnH-11) to use an increased border radius, reflecting the changes introduced in Project Studio.
+
+#### Contributors
+
+Austin Regnery, Chad Lavimoniere, Dan Mizzi-Harris, Jeremy Elder, Nick Leonard, Sascha Eggenberger, Tim Noah
+
 ## 18.6
 
 <small>Published 2025-11-14</small>
