@@ -106,6 +106,13 @@ export const mockDefaultStackedBarData = [
   { name: 'Fun 4', data: [8, 9, 5, 40, 13, 19, 58, 21, 47, 59, 23, 46] },
 ];
 
+export const mockMultiStackBarData = [
+  { name: 'Fun 1', data: [58, 49, 38, 23, 27, 68, 38, 35, 7, 64, 65, 31], stack: 'stack-1' },
+  { name: 'Fun 2', data: [8, 6, 34, 19, 9, 7, 17, 25, 14, 7, 10, 32], stack: 'stack-1' },
+  { name: 'Fun 3', data: [67, 60, 66, 32, 61, 54, 13, 50, 16, 11, 47, 28], stack: 'stack-2' },
+  { name: 'Fun 4', data: [8, 9, 5, 40, 13, 19, 58, 21, 47, 59, 23, 46], stack: 'stack-2' },
+];
+
 export const mockDefaultStackedLineData = [
   { name: 'Stacked median line', data: [67, 60, 66, 32, 61, 54, 13, 50, 16, 11, 47, 28] },
 ];

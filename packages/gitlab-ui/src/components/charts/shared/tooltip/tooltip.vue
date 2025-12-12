@@ -9,6 +9,7 @@ import {
   getTooltipTitle,
   getTooltipContent,
   getTooltipAxisConfig,
+  getTooltipParams,
 } from '../../../../utils/charts/config';
 
 import TooltipDefaultFormat from './tooltip_default_format/tooltip_default_format.vue';
@@ -242,7 +243,7 @@ export default {
 
                 this.title = getTooltipTitle(params, titleAxisName, dimensionIndex);
                 this.content = getTooltipContent(params, valueAxisName, metricIndex);
-                this.params = params;
+                this.params = getTooltipParams(params, options);
               },
             },
           },

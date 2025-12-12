@@ -12,6 +12,7 @@ import {
   getTooltipAxisConfig,
   getTooltipTitle,
   getTooltipContent,
+  getTooltipParams,
 } from './config';
 import {
   mockDefaultDataZoomConfig,
@@ -607,6 +608,58 @@ describe('chart config helpers', () => {
           ),
         ).toEqual({ 'Series 1': { color: '#aaa', value: 'Value 1' } });
       });
+    });
+  });
+
+  describe('getTooltipParams', () => {
+    const mockChartOptions = {
+      series: [
+        { name: 'Series 1', stack: 'stack-1' },
+        { name: 'Series 2', stack: 'stack-1' },
+        { name: 'Series 3', stack: null },
+      ],
+    };
+
+    const mockChartParams = {
+      value: 'January',
+      seriesData: [
+        { seriesName: 'Series 1', seriesIndex: 0, value: 10, color: 'red' },
+        { seriesName: 'Series 2', seriesIndex: 1, value: 20, color: 'blue' },
+        {
+          seriesName: 'Series 3',
+          seriesIndex: 2,
+          value: 30,
+          color: 'green',
+        },
+      ],
+    };
+
+    it('adds stack to seriesData items', () => {
+      expect(getTooltipParams(mockChartParams, mockChartOptions)).toEqual({
+        value: 'January',
+        seriesData: [
+          {
+            ...mockChartParams.seriesData[0],
+            stack: 'stack-1',
+          },
+          {
+            ...mockChartParams.seriesData[1],
+            stack: 'stack-1',
+          },
+          {
+            ...mockChartParams.seriesData[2],
+            stack: null,
+          },
+        ],
+      });
+    });
+
+    it('returns null when params are null', () => {
+      expect(getTooltipParams(null, mockChartOptions)).toBeNull();
+    });
+
+    it('returns original params when options are null', () => {
+      expect(getTooltipParams(mockChartParams, null)).toEqual(mockChartParams);
     });
   });
 });

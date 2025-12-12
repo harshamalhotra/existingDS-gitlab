@@ -3,6 +3,7 @@ import {
   mockDefaultStackedLineData,
   mockDefaultStackedBarData,
   mockSecondaryData,
+  mockMultiStackBarData,
 } from '../../../utils/charts/mock_data';
 import { stackedPresentationOptions } from '../../../utils/constants';
 import {
@@ -77,6 +78,11 @@ Default.args = generateProps();
 
 export const Tiled = Template.bind({});
 Tiled.args = generateProps({ presentation: stackedPresentationOptions.tiled });
+
+export const WithMultipleStacks = Template.bind({});
+WithMultipleStacks.args = generateProps({
+  bars: mockMultiStackBarData,
+});
 
 export const StackedWithLineData = Template.bind({});
 StackedWithLineData.args = generateProps({ lines: mockDefaultStackedLineData });
