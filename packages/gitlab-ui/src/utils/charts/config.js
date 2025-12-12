@@ -487,6 +487,34 @@ export const getTooltipContent = (params = null, valueAxisName = null, metricInd
 };
 
 /**
+ * Enriches tooltip parameters with stack information for proper series ordering.
+ *
+ * In stacked column charts, series are grouped by their `stack` property to determine
+ * visual stacking and tooltip display order. ECharts doesn't provide stack data
+ * in tooltip params by default, so this function manually adds it by mapping
+ * series names to their configured stack values.
+ *
+ * @param {Object} params - Tooltip parameters from ECharts
+ * @param {Object} options - Chart configuration with series definitions
+ * @returns {Object} Enhanced tooltip parameters with stack data
+ */
+export const getTooltipParams = (params = null, options) => {
+  if (!params) return null;
+
+  const { series: optionsSeries = [] } = options ?? {};
+
+  const seriesStacks = Object.fromEntries(optionsSeries.map(({ name, stack }) => [name, stack]));
+
+  return {
+    ...params,
+    seriesData: params.seriesData.map((series) => ({
+      ...series,
+      stack: seriesStacks[series.seriesName],
+    })),
+  };
+};
+
+/**
  * The method works well if tooltip content should be against y-axis values.
  * However, for bar charts, the tooltip should be against x-axis values.
  * This method should be updated to work with all types of visualizations.

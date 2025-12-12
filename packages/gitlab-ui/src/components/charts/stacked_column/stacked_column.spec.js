@@ -1,6 +1,7 @@
 import { nextTick } from 'vue';
 import { shallowMount } from '@vue/test-utils';
 
+import { stackedPresentationOptions } from '@gitlab/ui/src/utils/constants';
 import {
   mockCreateChartInstance,
   ChartTooltipStub,
@@ -12,6 +13,7 @@ import {
   mockDefaultStackedLineData,
   mockDefaultStackedBarData,
   mockSecondaryData,
+  mockMultiStackBarData,
 } from '../../../utils/charts/mock_data';
 import Chart from '../chart/chart.vue';
 import ChartLegend from '../legend/legend.vue';
@@ -267,6 +269,27 @@ describe('stacked column chart component', () => {
   });
 
   describe('tooltip', () => {
+    const {
+      params: { seriesData: chartTooltipStubSeriesData },
+    } = chartTooltipStubData;
+
+    const seriesDataWithStack = chartTooltipStubSeriesData.map((series) => ({
+      ...series,
+      stack: 'default-series-stack',
+    }));
+
+    const StackedColumnChartTooltipStub = (seriesData = seriesDataWithStack) => ({
+      ...ChartTooltipStub,
+      data() {
+        return {
+          ...chartTooltipStubData,
+          params: {
+            seriesData,
+          },
+        };
+      },
+    });
+
     beforeEach(() => {
       createShallowWrapper();
     });
@@ -278,6 +301,7 @@ describe('stacked column chart component', () => {
     it('inverts order of series in tooltip and uses border color', async () => {
       await createShallowWrapper({
         stubs: {
+          'chart-tooltip': StackedColumnChartTooltipStub(),
           TooltipDefaultFormat,
         },
       });
@@ -290,6 +314,107 @@ describe('stacked column chart component', () => {
         ['Apples (2)', { color: 'red2', value: ['Count', 10] }],
         ['Oranges (1)', { color: 'orange2', value: ['Count', 9] }],
       ]);
+    });
+
+    it('uses `color` if `borderColor` is not set', async () => {
+      const seriesDataWithColor = seriesDataWithStack.map(({ borderColor, ...series }, idx) => ({
+        ...series,
+        color: `red-${idx}`,
+      }));
+
+      await createShallowWrapper({
+        stubs: {
+          'chart-tooltip': StackedColumnChartTooltipStub(seriesDataWithColor),
+          TooltipDefaultFormat,
+        },
+      });
+
+      const tooltipContentEntries = Object.entries(
+        findTooltipDefaultFormat().props('tooltipContent'),
+      );
+
+      expect(tooltipContentEntries).toEqual([
+        ['Apples (2)', { color: 'red-1', value: ['Count', 10] }],
+        ['Oranges (1)', { color: 'red-0', value: ['Count', 9] }],
+      ]);
+    });
+
+    describe('with multiple stacks', () => {
+      const mockMultiStackSeriesData = [
+        {
+          seriesIndex: 0,
+          seriesName: 'Apples (1)',
+          value: ['Count', 30],
+          borderColor: 'red2',
+          stack: 'fruits',
+        },
+        {
+          seriesIndex: 1,
+          seriesName: 'Oranges (2)',
+          value: ['Count', 25],
+          borderColor: 'orange2',
+          stack: 'fruits',
+        },
+        {
+          seriesIndex: 2,
+          seriesName: 'Carrots (3)',
+          value: ['Count', 18],
+          borderColor: 'blue2',
+          stack: 'vegetables',
+        },
+        {
+          seriesIndex: 3,
+          seriesName: 'Broccoli (4)',
+          value: ['Count', 14],
+          borderColor: 'green2',
+          stack: 'vegetables',
+        },
+      ];
+
+      it('inverts order within each stack group independently in tooltip', async () => {
+        await createShallowWrapper({
+          props: {
+            bars: mockMultiStackBarData,
+          },
+          stubs: {
+            'chart-tooltip': StackedColumnChartTooltipStub(mockMultiStackSeriesData),
+            TooltipDefaultFormat,
+          },
+        });
+
+        const tooltipContentEntries = Object.entries(
+          findTooltipDefaultFormat().props('tooltipContent'),
+        );
+
+        expect(tooltipContentEntries).toEqual([
+          ['Oranges (2)', { color: 'orange2', value: ['Count', 25] }],
+          ['Apples (1)', { color: 'red2', value: ['Count', 30] }],
+          ['Broccoli (4)', { color: 'green2', value: ['Count', 14] }],
+          ['Carrots (3)', { color: 'blue2', value: ['Count', 18] }],
+        ]);
+      });
+    });
+
+    describe('with data provided in tiled style', () => {
+      beforeEach(async () => {
+        await createShallowWrapper({
+          props: { presentation: stackedPresentationOptions.tiled },
+          stubs: {
+            TooltipDefaultFormat,
+          },
+        });
+      });
+
+      it('maintains original order of series in tooltip', async () => {
+        const tooltipContentEntries = Object.entries(
+          findTooltipDefaultFormat().props('tooltipContent'),
+        );
+
+        expect(tooltipContentEntries).toEqual([
+          ['Oranges (1)', { color: 'orange2', value: ['Count', 9] }],
+          ['Apples (2)', { color: 'red2', value: ['Count', 10] }],
+        ]);
+      });
     });
 
     describe('is customized via slots', () => {

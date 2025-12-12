@@ -1,5 +1,6 @@
 <script>
 import merge from 'lodash/merge';
+import groupBy from 'lodash/groupBy';
 import {
   defaultChartOptions,
   grid,
@@ -310,12 +311,22 @@ export default {
     getTooltipContent({ params }) {
       if (!params) return {};
 
-      const tooltipContentEntries = params.seriesData
-        .toSorted((a, b) => b.seriesIndex - a.seriesIndex) // Invert stacking order so it matches chart (see https://github.com/apache/echarts/issues/14700)
-        .map(({ seriesName = '', value, borderColor }) => [
+      // Group by stack and invert order within so it matches `stacked` presentation (see https://github.com/apache/echarts/issues/14700).
+      const seriesDataGroupedByStack = groupBy(
+        params.seriesData,
+        ({ stack, seriesIndex }) => stack ?? seriesIndex,
+      );
+
+      const sortedSeriesData = Object.values(seriesDataGroupedByStack).flatMap((seriesDataStack) =>
+        seriesDataStack.toSorted((a, b) => b.seriesIndex - a.seriesIndex),
+      );
+
+      const tooltipContentEntries = sortedSeriesData.map(
+        ({ seriesName = '', value, borderColor, color }) => [
           seriesName,
-          { value, color: borderColor },
-        ]);
+          { value, color: borderColor ?? color },
+        ],
+      );
 
       return Object.fromEntries(tooltipContentEntries);
     },
