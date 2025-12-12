@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.3.4
+
+### Patch Changes
+
+- 2541a70: GlStackedColumnChart: Fix tooltip item order for `tiled` presentation
+
 ## 126.3.3
 
 ### Patch Changes
