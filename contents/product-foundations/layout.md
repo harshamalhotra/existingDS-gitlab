@@ -35,13 +35,13 @@ The application chrome is the lowest layer of the interface. It integrates sever
 
 ### Panel-based layout
 
-Panels help a user navigate complex workflows by organizing related content and functionality into focused, manageable areas. This structure maintains clear context and relationships between different tasks, allowing a user to work more efficiently. One to three panels are simultaneously displayed. The interface is organized into distinct panel types:
+Panels help a user navigate complex workflows by organizing related content and functionality into focused, manageable areas. This structure maintains clear context and relationships between different tasks, allowing a user to work more efficiently. The interface is organized into three distinct panel types. Up to one panel of each type can be open simultaneously, for a total of 1–3 panels at any time:
 
 <figure-img alt="Wireframe with markers to identify the three possible panels" label="Panels" src="/img/layout-panels.svg"></figure-img>
 
 1. **Static panel** for the primary context
 1. **Dynamic panel** (optional) that adapts to the primary context
-1. **AI panel** for intelligent features
+1. **AI panel** (collapsible) for intelligent features
 
 #### Names for external communication
 
