@@ -18,6 +18,9 @@ export default {
     GlButton,
   },
   props: {
+    /**
+     * The title text to display in the alert header.
+     */
     title: {
       type: String,
       required: false,
@@ -39,6 +42,9 @@ export default {
       required: false,
       default: () => translate('GlAlert.closeButtonTitle', 'Dismiss'),
     },
+    /**
+     * The variant of the alert.
+     */
     variant: {
       type: String,
       required: false,
@@ -77,6 +83,9 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * When true, the alert stays fixed at the top of its container.
+     */
     sticky: {
       type: Boolean,
       required: false,

@@ -24,111 +24,177 @@ export default {
     GlTooltip: GlTooltipDirective,
   },
   props: {
+    /**
+     * Label text for the start date picker.
+     */
     fromLabel: {
       type: String,
       required: false,
       default: 'From',
     },
+    /**
+     * Label text for the end date picker.
+     */
     toLabel: {
       type: String,
       required: false,
       default: 'To',
     },
+    /**
+     * Accessible label for the start date input.
+     */
     fromAriaLabel: {
       type: String,
       required: false,
       default: 'From date',
     },
+    /**
+     * Accessible label for the end date input.
+     */
     toAriaLabel: {
       type: String,
       required: false,
       default: 'To date',
     },
+    /**
+     * The selected date range object containing `startDate` and `endDate` properties.
+     */
     value: {
       type: Object,
       required: false,
       default: null,
     },
+    /**
+     * Internationalization object for Pikaday labels and month/day names.
+     */
     i18n: {
       type: Object,
       required: false,
       default: null,
     },
+    /**
+     * The earliest selectable date for the start date picker.
+     */
     defaultMinDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * The latest selectable date for the end date picker.
+     */
     defaultMaxDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * Initial value for the start date.
+     */
     defaultStartDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * Initial value for the end date.
+     */
     defaultEndDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * Maximum number of days allowed between start and end date. Set to 0 for no limit.
+     */
     maxDateRange: {
       type: Number,
       required: false,
       default: 0,
     },
+    /**
+     * Additional CSS class(es) for the start date picker container.
+     */
     startPickerClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Selector of element that triggers the start date picker.
+     */
     startPickerTarget: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * DOM node selector to render the start date calendar into.
+     */
     startPickerContainer: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Validation state for the start date picker input.
+     */
     startPickerState: {
       type: Boolean,
       required: false,
       default: null,
     },
+    /**
+     * Additional CSS class(es) for the end date picker container.
+     */
     endPickerClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Selector of element that triggers the end date picker.
+     */
     endPickerTarget: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * DOM node selector to render the end date calendar into.
+     */
     endPickerContainer: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Validation state for the end date picker input.
+     */
     endPickerState: {
       type: Boolean,
       required: false,
       default: null,
     },
+    /**
+     * Additional CSS class(es) for the label elements.
+     */
     labelClass: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Additional CSS class for the Pikaday calendar theme.
+     */
     theme: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Whether to allow selecting the same date for start and end.
+     */
     sameDaySelection: {
       type: Boolean,
       required: false,
@@ -150,13 +216,16 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * Whether the start date picker should be open on mount.
+     */
     startOpened: {
       type: Boolean,
       required: false,
       default: false,
     },
     /**
-     * Maximum width of the Datepicker
+     * Maximum width of the Datepicker.
      */
     width: {
       type: String,

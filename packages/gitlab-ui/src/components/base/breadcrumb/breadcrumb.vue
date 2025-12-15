@@ -36,6 +36,9 @@ export default {
         });
       },
     },
+    /**
+     * Accessible label for the breadcrumb navigation.
+     */
     ariaLabel: {
       type: String,
       required: false,
