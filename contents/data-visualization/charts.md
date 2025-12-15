@@ -5,6 +5,7 @@ extendedNotice:
   contactPreset: custom-dashboards-foundation
 related:
   - popover
+  - /data-visualization/single-stat
 ---
 
 Charts help users quickly digest, visualize and see trends in their data.
@@ -230,7 +231,3 @@ This component emits the following events during the ECharts lifecycle:
 
 In all cases, the event payload is the
 [echart instance](https://echarts.apache.org/en/api.html#echartsInstance).
-
-## Related
-
-- [Single stat](/data-visualization/single-stat)

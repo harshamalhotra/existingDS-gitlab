@@ -3,6 +3,8 @@ name: Drag and drop
 summary: Provide an intuitive way for users to reorganize content, enhancing control over layout and order.
 extendedNotice:
   contactPreset: ux-designers
+related:
+  - table
 ---
 
 To move and reorder items in a collection or across similar collections, users can press and drag them to a new position.
@@ -53,8 +55,3 @@ Be cautious when allowing drag and drop in a large collection with dozens or hun
 ## Design specifications
 
 <todo>Add design specs link</todo>
-
-## Related patterns
-
-- [Table](/components/table)
-- List
