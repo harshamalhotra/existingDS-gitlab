@@ -33,14 +33,10 @@ To understand the risk of an AI-powered feature, assess the _probability_ of err
 
 In GitLab, an example of a _low risk_ situation is an AI-generated issue summary, which quickly gives context to the user about the issue. The potential cost is low, as the user usually does not take action based on the summary alone.
 
-An example of a _high risk_ situation is an AI-generated fix for a security vulnerability, which helps the user resolve it faster.
-To mitigate the risk and ensure the vulnerability is resolved, the user should be encouraged to review the suggested fix and run all security checks before they accept it.
-But if the fix unintentionally worsens the security, the cost might outweight the benefit. The potential cost increases in high-risk applications, such as critical infrastructure.
-
 To mitigate high risk situations:
 
 - [Set the right expectations](#set-the-right-expectations).
-- Design for potential negative impact. For example, a user should explicitly opt in to a high risk AI-powered feature. For more information, see [destructive actions](/patterns/destructive-actions).
+- Design for potential negative impact. For more information, see [destructive actions](/patterns/destructive-actions).
 
 ### Communicate confidence
 
@@ -82,12 +78,10 @@ The interface should clearly communicate AI capabilities, limitations, and the s
 - Clearly highlight if a feature is an [experiment or beta](/patterns/feature-management#highlighting-feature-versions).
 - Follow the [disclaimer guidelines](#disclaimer).
 - Use clear, simple language to explain what the system is doing and how it arrived at its recommendations.
-- Explain what data the system is trained on and what it's optimized for.
-- Tell the user how their data is used and processed.
 
 ### Give the user control
 
-The user should be able to decide whether to follow the AI's recommendations or not. There should be an easy way to undo system actions. Do not collect user data without asking the user's permission.
+Customers should retain control over their deployment processes and governance frameworks. There should be an easy way to undo system actions. Do not collect user data without asking the user's permission. Also, clearly state in the UI whether there are any privacy considerations, such as whether or not inputs that contain personal data will go to third-parties and whether third-parties will use inputted personal data in unexpected ways.
 
 ### Fail gracefully
 
