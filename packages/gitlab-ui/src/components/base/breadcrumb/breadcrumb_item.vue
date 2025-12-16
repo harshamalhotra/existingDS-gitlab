@@ -9,21 +9,33 @@ export default {
   },
   inheritAttrs: false,
   props: {
+    /**
+     * The text content to display in the breadcrumb item.
+     */
     text: {
       type: String,
       required: false,
       default: null,
     },
+    /**
+     * Vue Router location object or path string for navigation.
+     */
     to: {
       type: [String, Object],
       required: false,
       default: null,
     },
+    /**
+     * URL for the breadcrumb link when not using Vue Router.
+     */
     href: {
       type: String,
       required: false,
       default: null,
     },
+    /**
+     * Indicates the current page within the breadcrumb trail for accessibility.
+     */
     ariaCurrent: {
       type: [String, Boolean],
       required: false,
@@ -32,6 +44,9 @@ export default {
         return [false, 'page'].indexOf(value) !== -1;
       },
     },
+    /**
+     * The size variant of the breadcrumb item.
+     */
     size: {
       type: String,
       required: false,

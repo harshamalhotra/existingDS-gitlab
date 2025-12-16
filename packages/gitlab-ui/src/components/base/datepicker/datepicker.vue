@@ -85,26 +85,41 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * The currently selected date.
+     */
     value: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * The earliest selectable date.
+     */
     minDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * The latest selectable date.
+     */
     maxDate: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * Start date for range selection highlighting.
+     */
     startRange: {
       type: Date,
       required: false,
       default: null,
     },
+    /**
+     * End date for range selection highlighting.
+     */
     endRange: {
       type: Date,
       required: false,
@@ -118,16 +133,25 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * First day of the week (0 = Sunday, 1 = Monday, etc.).
+     */
     firstDay: {
       type: Number,
       required: false,
       default: () => defaultConfig.firstDayOfWeek || 0, // Defaults to 0 (Sunday)
     },
+    /**
+     * Accessible label for the datepicker.
+     */
     ariaLabel: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Placeholder text for the input field.
+     */
     placeholder: {
       type: String,
       required: false,
@@ -141,16 +165,25 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * Whether the datepicker is disabled.
+     */
     disabled: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * Whether to display the default input field.
+     */
     displayField: {
       type: Boolean,
       required: false,
       default: true,
     },
+    /**
+     * Whether the datepicker should be open on mount.
+     */
     startOpened: {
       type: Boolean,
       required: false,
@@ -164,31 +197,49 @@ export default {
       required: false,
       default: null,
     },
+    /**
+     * Internationalization object for Pikaday labels and month/day names.
+     */
     i18n: {
       type: Object,
       required: false,
       default: null,
     },
+    /**
+     * Additional CSS class for the Pikaday calendar theme.
+     */
     theme: {
       type: String,
       required: false,
       default: '',
     },
+    /**
+     * Whether to show a clear button when a date is selected.
+     */
     showClearButton: {
       type: Boolean,
       required: false,
       default: false,
     },
+    /**
+     * The id attribute for the input element.
+     */
     inputId: {
       type: String,
       required: false,
       default: null,
     },
+    /**
+     * Accessible label for the input element.
+     */
     inputLabel: {
       type: String,
       required: false,
       default: 'Enter date',
     },
+    /**
+     * The name attribute for the input element.
+     */
     inputName: {
       type: String,
       required: false,
@@ -203,6 +254,9 @@ export default {
       default: null,
       validator: (value) => Object.keys(datepickerWidthOptionsMap).includes(value),
     },
+    /**
+     * Validation state of the input. `true` for valid, `false` for invalid, `null` for no validation styling.
+     */
     state: {
       type: Boolean,
       required: false,
