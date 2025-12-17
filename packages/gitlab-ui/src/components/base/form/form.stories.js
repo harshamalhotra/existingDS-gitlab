@@ -84,9 +84,9 @@ export const Default = (args) => ({
         </gl-form-checkbox-group>
       </gl-form-group>
 
-      <div class="gl-flex gl-justify-end">
-        <gl-button type="reset" class="gl-mr-3">Cancel</gl-button>
+      <div class="gl-flex gl-gap-3">
         <gl-button type="submit" variant="confirm">Submit</gl-button>
+        <gl-button type="reset">Cancel</gl-button>
       </div>
     </gl-form>
   `,
