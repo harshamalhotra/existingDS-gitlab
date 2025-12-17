@@ -181,6 +181,7 @@ ui:pages_storybook_redirect:
   pages:
     publish: packages/gitlab-ui/storybook
     path_prefix: storybook
+    expire_in: never
   rules:
     - <<: *ui-is-design-gitlab-com-default-branch
 
