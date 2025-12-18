@@ -1,5 +1,5 @@
 import { createLocalVue } from '@vue/test-utils'
-import { isVue3 } from '../../src/vue'
+import { isGlobalVue3 } from '../../src/vue'
 import { ToastPlugin } from '../../src/components/toast'
 import { BVConfigPlugin } from '../../src/bv-config'
 import { setConfig, resetConfig } from './config-set'
@@ -71,7 +71,7 @@ describe('utils/config', () => {
     expect(getConfig()).toEqual({})
   })
 
-  if (!isVue3) {
+  if (!isGlobalVue3) {
     it('config via Vue.use(ComponentPlugin) works', async () => {
       const localVue = createLocalVue()
       const config = {

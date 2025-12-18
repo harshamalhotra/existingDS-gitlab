@@ -1,12 +1,12 @@
-import { isVue3 } from '../vue'
+import { isGlobalVue3 } from '../vue'
 
 let registry = null
-if (isVue3) {
+if (isGlobalVue3) {
   registry = new WeakMap()
 }
 
 export const registerElementToInstance = (element, instance) => {
-  if (!isVue3) {
+  if (!isGlobalVue3) {
     return
   }
 
@@ -14,7 +14,7 @@ export const registerElementToInstance = (element, instance) => {
 }
 
 export const removeElementToInstance = element => {
-  if (!isVue3) {
+  if (!isGlobalVue3) {
     return
   }
 
@@ -22,7 +22,7 @@ export const removeElementToInstance = element => {
 }
 
 export const getInstanceFromElement = element => {
-  if (!isVue3) {
+  if (!isGlobalVue3) {
     return element.__vue__
   }
 

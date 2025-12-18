@@ -1,4 +1,4 @@
-import { Vue, extend, isVue3 } from '../../vue'
+import { Vue, extend, isGlobalVue3 } from '../../vue'
 import { NAME_TRANSPORTER, NAME_TRANSPORTER_TARGET } from '../../constants/components'
 import { IS_BROWSER } from '../../constants/env'
 import {
@@ -199,4 +199,4 @@ const BVTransporterVue3 = /*#__PURE__*/ extend({
   }
 })
 
-export const BVTransporter = isVue3 ? BVTransporterVue3 : BVTransporterVue2
+export const BVTransporter = isGlobalVue3 ? BVTransporterVue3 : BVTransporterVue2

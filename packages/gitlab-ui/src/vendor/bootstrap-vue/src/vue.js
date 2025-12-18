@@ -4,9 +4,9 @@ import { mergeData } from 'vue-functional-data-merge'
 // --- Constants ---
 const COMPONENT_UID_KEY = '_uid'
 
-const isVue3 = Vue.version.startsWith('3')
+const isGlobalVue3 = Vue.version.startsWith('3')
 
-export const REF_FOR_KEY = isVue3 ? 'ref_for' : 'refInFor'
+export const REF_FOR_KEY = isGlobalVue3 ? 'ref_for' : 'refInFor'
 
 const ALLOWED_FIELDS_IN_DATA = [
   'class',
@@ -27,7 +27,7 @@ const ALLOWED_FIELDS_IN_DATA = [
 
 let extend = Vue.extend.bind(Vue)
 
-if (isVue3) {
+if (isGlobalVue3) {
   const { extend: originalExtend } = Vue
   const KNOWN_COMPONENTS = ['router-link', 'transition', 'transition-group']
   const originalVModelDynamicCreated = Vue.vModelDynamic.created
@@ -141,4 +141,6 @@ if (isVue3) {
 
 const nextTick = Vue.nextTick
 
-export { COMPONENT_UID_KEY, Vue, mergeData, isVue3, nextTick, extend }
+const isVue3 = (instance) => Boolean(instance.$)
+
+export { COMPONENT_UID_KEY, Vue, mergeData, isGlobalVue3, isVue3, nextTick, extend }

@@ -86,7 +86,7 @@ const parseBindings = (bindings, vnode) => /* istanbul ignore next: not easy to 
   // If title is not provided, try title attribute
   if (isUndefined(config.title)) {
     // Try attribute
-    const attrs = isVue3 ? vnode.props : (vnode.data || {}).attrs
+    const attrs = isVue3(getInstanceFromDirective(vnode, bindings)) ? vnode.props : (vnode.data || {}).attrs
     config.title = attrs && !isUndefinedOrNull(attrs.title) ? attrs.title : undefined
   }
 

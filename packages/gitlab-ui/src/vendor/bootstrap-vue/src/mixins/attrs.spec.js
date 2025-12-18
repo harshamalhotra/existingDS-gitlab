@@ -1,4 +1,4 @@
-import { isVue3 } from '../vue'
+import { isGlobalVue3 } from '../vue'
 import { mount } from '@vue/test-utils'
 import { attrsMixin } from './attrs'
 
@@ -160,7 +160,7 @@ describe('mixins > attrs', () => {
     await wrapper1.setProps({ value1: 'foo' })
     expect($inputs1.at(0).vm.value).toBe('foo')
     expect($inputs1.at(1).vm.value).toBe(undefined)
-    if (!isVue3) {
+    if (!isGlobalVue3) {
       // Both `Input1`'s are re-rendered (See: https://github.com/vuejs/vue/issues/7257)
       expect(input1RenderCount).toBe(4)
     }
@@ -169,7 +169,7 @@ describe('mixins > attrs', () => {
     await wrapper1.setProps({ value2: 'bar' })
     expect($inputs1.at(0).vm.value).toBe('foo')
     expect($inputs1.at(1).vm.value).toBe('bar')
-    if (!isVue3) {
+    if (!isGlobalVue3) {
       // Both `Input1`'s are re-rendered (See: https://github.com/vuejs/vue/issues/7257)
       expect(input1RenderCount).toBe(6)
     }
