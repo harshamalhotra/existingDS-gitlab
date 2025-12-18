@@ -141,6 +141,6 @@ if (isGlobalVue3) {
 
 const nextTick = Vue.nextTick
 
-const isVue3 = (instance) => Boolean(instance.$)
+const isVue3 = instance => Boolean(instance.$)
 
 export { COMPONENT_UID_KEY, Vue, mergeData, isGlobalVue3, isVue3, nextTick, extend }

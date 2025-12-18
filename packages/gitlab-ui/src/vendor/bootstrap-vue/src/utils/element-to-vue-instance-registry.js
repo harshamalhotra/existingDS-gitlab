@@ -15,7 +15,7 @@ export const removeElementToInstance = element => {
 }
 
 export const getInstanceFromElement = element => {
-  if (element .__vue__) {
+  if (element.__vue__) {
     return element.__vue__
   }
 
