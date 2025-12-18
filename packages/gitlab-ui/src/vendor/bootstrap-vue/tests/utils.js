@@ -1,5 +1,3 @@
-import { isVue3 } from '../src/vue'
-
 // --- Utils for testing ---
 
 export const wrapWithMethods = (Component, methods) => ({
@@ -43,5 +41,4 @@ export const ensureEventEmitted = (wrapper, event, count = 1) => {
   })
 }
 
-export const getInstanceFromVNode = vnode =>
-  isVue3 ? vnode.__vueParentComponent.ctx : vnode.__vue__
+export const getInstanceFromVNode = vnode => vnode.__vueParentComponent?.ctx || vnode.__vue__
