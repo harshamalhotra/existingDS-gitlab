@@ -1,4 +1,4 @@
-import { isGlobalVue3 } from '../vue'
+import { isVue3 } from '../vue'
 
 export const EVENT_NAME_ACTIVATE_TAB = 'activate-tab'
 export const EVENT_NAME_BLUR = 'blur'
@@ -45,8 +45,10 @@ export const EVENT_NAME_SORT_CHANGED = 'sort-changed'
 export const EVENT_NAME_TOGGLE = 'toggle'
 export const EVENT_NAME_UPDATE = 'update'
 
-export const HOOK_EVENT_NAME_BEFORE_DESTROY = isGlobalVue3 ? 'vnodeBeforeUnmount' : 'hook:beforeDestroy'
-export const HOOK_EVENT_NAME_DESTROYED = isGlobalVue3 ? 'vNodeUnmounted' : 'hook:destroyed'
+export const getHookEventNameBeforeDestroy = instance =>
+  isVue3(instance) ? 'vnodeBeforeUnmount' : 'hook:beforeDestroy'
+export const getHookEventNameDestroyed = instance =>
+  isVue3(instance) ? 'vNodeUnmounted' : 'hook:destroyed'
 
 export const MODEL_EVENT_NAME_PREFIX = 'update:'
 

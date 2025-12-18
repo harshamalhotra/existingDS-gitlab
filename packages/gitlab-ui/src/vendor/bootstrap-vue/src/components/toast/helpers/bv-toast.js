@@ -8,7 +8,7 @@ import {
   EVENT_NAME_HIDDEN,
   EVENT_NAME_HIDE,
   EVENT_NAME_SHOW,
-  HOOK_EVENT_NAME_DESTROYED
+  getHookEventNameDestroyed
 } from '../../../constants/events'
 import { useParentMixin } from '../../../mixins/use-parent'
 import { concat } from '../../../utils/array'
@@ -93,7 +93,7 @@ const plugin = Vue => {
         })
       }
       // Self destruct if parent destroyed
-      this.bvParent.$once(HOOK_EVENT_NAME_DESTROYED, handleDestroy)
+      this.bvParent.$once(getHookEventNameDestroyed(this.bvParent), handleDestroy)
       // Self destruct after hidden
       this.$once(EVENT_NAME_HIDDEN, handleDestroy)
       // Self destruct when toaster is destroyed
