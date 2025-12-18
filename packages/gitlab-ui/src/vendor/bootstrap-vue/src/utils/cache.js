@@ -1,4 +1,4 @@
-import { extend } from '../vue'
+import { extend, isVue3 } from '../vue'
 import { cloneDeep } from './clone-deep'
 import { looseEqual } from './loose-equal'
 import { hasOwnProperty, keys } from './object'
@@ -25,13 +25,33 @@ export const makePropWatcher = propName => ({
   }
 })
 
-export const makePropCacheMixin = (propName, proxyPropName) =>
-  extend({
+export const getInternalPropName = proxyPropName => `bv_internal__${proxyPropName}`
+
+export const makePropCacheMixin = (propName, proxyPropName) => {
+  const internalPropName = getInternalPropName(proxyPropName)
+  return extend({
     data() {
-      return { [proxyPropName]: cloneDeep(this[propName]) }
+      return { [internalPropName]: isVue3(this) ? null : cloneDeep(this[propName] || {}) }
     },
-    watch: {
-      // Work around unwanted re-renders: https://github.com/vuejs/vue/issues/10115
-      [propName]: makePropWatcher(proxyPropName)
+    computed: {
+      [proxyPropName]() {
+        if (internalPropName in this && this[internalPropName]) {
+          return this[internalPropName]
+        }
+        const result = { ...this[propName] }
+        Object.keys(result).forEach(key => {
+          if (result[key] === undefined) {
+            delete result[key]
+          }
+        })
+        return result
+      }
+    },
+    created() {
+      if (!isVue3(this)) {
+        // Work around unwanted re-renders: https://github.com/vuejs/vue/issues/10115
+        this.$watch(propName, makePropWatcher(internalPropName).handler)
+      }
     }
   })
+}
