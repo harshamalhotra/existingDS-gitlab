@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Vue, { nextTick } from 'vue';
+import { nextTick } from 'vue';
 import { waitForAnimationFrame } from '../../../utils/test_utils';
 import GlButton from '../button/button.vue';
 import GlAccordion from './accordion.vue';
@@ -9,26 +9,30 @@ describe('GlAccordion', () => {
   let wrapper;
 
   const createComponent = ({ headerLevel = 3, autoCollapse = false } = {}) => {
-    wrapper = mount(
-      Vue.extend({
-        components: { GlAccordion, GlAccordionItem },
-        data() {
-          return { headerLevel, autoCollapse };
-        },
-        template: `
-          <gl-accordion :header-level="headerLevel" :auto-collapse="autoCollapse">
-            <gl-accordion-item title="Item 1">
-              Foo
-            </gl-accordion-item>
-            <gl-accordion-item title="Item 2">
-              Bar
-            </gl-accordion-item>
-            <gl-accordion-item title="Item 3">
-              Bin
-            </gl-accordion-item>
-          </gl-accordion>`,
-      }),
-    );
+    wrapper = mount({
+      components: {
+        GlAccordion,
+        GlAccordionItem,
+      },
+      data() {
+        return {
+          headerLevel,
+          autoCollapse,
+        };
+      },
+      template: `
+        <gl-accordion :header-level="headerLevel" :auto-collapse="autoCollapse">
+          <gl-accordion-item title="Item 1">
+            Foo
+          </gl-accordion-item>
+          <gl-accordion-item title="Item 2">
+            Bar
+          </gl-accordion-item>
+          <gl-accordion-item title="Item 3">
+            Bin
+          </gl-accordion-item>
+        </gl-accordion>`,
+    });
   };
 
   const findAccordionItems = () => wrapper.findAllComponents(GlAccordionItem);
