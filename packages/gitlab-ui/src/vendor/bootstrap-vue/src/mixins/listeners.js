@@ -1,24 +1,24 @@
-import { makePropCacheMixin } from '../utils/cache'
-import { extend, isGlobalVue3 } from '../vue'
+import { isVue3 } from '../vue'
+import { makePropCacheMixin, getInternalPropName } from '../utils/cache'
 
-const listenersMixinVue2 = makePropCacheMixin('$listeners', 'bvListeners')
-
-const listenersMixinVue3 = extend({
-  data() {
-    return {
-      bvListeners: {}
-    }
-  },
+const internalPropName = getInternalPropName('bvListeners')
+export const listenersMixin = makePropCacheMixin('$listeners', 'bvListeners').extend({
   created() {
-    this.bvListeners = {
+    if (!isVue3(this)) {
+      return
+    }
+
+    this[internalPropName] = {
+      // bug: this.$listeners is non-reactive in Vue.js 3 compat
       ...this.$listeners
     }
   },
   beforeUpdate() {
-    this.bvListeners = {
+    if (!isVue3(this)) {
+      return
+    }
+    this[internalPropName] = {
       ...this.$listeners
     }
   }
 })
-
-export const listenersMixin = isGlobalVue3 ? listenersMixinVue3 : listenersMixinVue2
