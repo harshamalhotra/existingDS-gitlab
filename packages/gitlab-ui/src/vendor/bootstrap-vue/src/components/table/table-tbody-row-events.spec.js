@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import { isVue3 } from '../../vue'
+import { isGlobalVue3 } from '../../vue'
 import { waitNT } from '../../../tests/utils'
 import { BTable } from './table'
 
@@ -246,7 +246,7 @@ describe('table > tbody row events', () => {
   })
 
   it('should not emit row-hovered event when a row is hovered and no listener', async () => {
-    if (isVue3) {
+    if (isGlobalVue3) {
       // We can't track if we have an event listener in vue3 so we skip this test for vue 3
       return
     }
@@ -315,7 +315,7 @@ describe('table > tbody row events', () => {
   })
 
   it('should not emit row-unhovered event when a row is hovered and no listener', async () => {
-    if (isVue3) {
+    if (isGlobalVue3) {
       // We can't track if we have an event listener in vue3 so we skip this test for vue 3
       return
     }

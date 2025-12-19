@@ -1,4 +1,4 @@
-import { isVue3 } from '../vue'
+import { isGlobalVue3 } from '../vue'
 import { mount } from '@vue/test-utils'
 import { listenersMixin } from './listeners'
 
@@ -197,7 +197,7 @@ describe('mixins > listeners', () => {
     expect(wrapper1.emitted().focus1).toBeTruthy()
     expect(wrapper1.emitted().focus2).not.toBeTruthy()
     // Both `Input1`'s are re-rendered (See: https://github.com/vuejs/vue/issues/7257)
-    expect(input1RenderCount).toBe(isVue3 ? 2 : 4)
+    expect(input1RenderCount).toBe(isGlobalVue3 ? 2 : 4)
 
     // Enable focus events for the second input and trigger it
     await wrapper1.setProps({ listenFocus2: true })
@@ -205,7 +205,7 @@ describe('mixins > listeners', () => {
     expect(wrapper1.emitted().focus1).toBeTruthy()
     expect(wrapper1.emitted().focus2).toBeTruthy()
     // Both `Input1`'s are re-rendered (See: https://github.com/vuejs/vue/issues/7257)
-    expect(input1RenderCount).toBe(isVue3 ? 2 : 6)
+    expect(input1RenderCount).toBe(isGlobalVue3 ? 2 : 6)
 
     // --- `Input2` tests ---
 

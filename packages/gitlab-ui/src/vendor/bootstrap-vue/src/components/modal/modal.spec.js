@@ -1,5 +1,5 @@
 import { createWrapper, mount } from '@vue/test-utils'
-import { isVue3 } from '../../vue'
+import { isGlobalVue3 } from '../../vue'
 import { waitNT, waitRAF, getInstanceFromVNode } from '../../../tests/utils'
 import { BModal } from './modal'
 import { BvModalEvent } from './helpers/bv-modal-event.class'
@@ -177,7 +177,7 @@ describe('modal', () => {
       expect(outer).not.toBe(null)
 
       expect(getInstanceFromVNode(outer)).toBeDefined() // Target
-      if (!isVue3) {
+      if (!isGlobalVue3) {
         expect(getInstanceFromVNode(outer).$options.name).toBe('BVTransporterTarget')
       }
       expect(outer.parentElement).toBeDefined()

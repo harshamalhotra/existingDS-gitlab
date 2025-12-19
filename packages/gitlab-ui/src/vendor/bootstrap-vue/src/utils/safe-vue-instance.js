@@ -1,7 +1,7 @@
 import { isVue3 } from '../vue'
 
 export function safeVueInstance(target) {
-  if (!isVue3) {
+  if (!isVue3(target)) {
     return target
   }
 

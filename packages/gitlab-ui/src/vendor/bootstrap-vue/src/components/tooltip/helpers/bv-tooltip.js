@@ -19,8 +19,8 @@ import {
   EVENT_NAME_SHOW,
   EVENT_NAME_SHOWN,
   EVENT_OPTIONS_NO_CAPTURE,
-  HOOK_EVENT_NAME_BEFORE_DESTROY,
-  HOOK_EVENT_NAME_DESTROYED
+  getHookEventNameBeforeDestroy,
+  getHookEventNameDestroyed
 } from '../../../constants/events'
 import { useParentMixin } from '../../../mixins/use-parent'
 import { arrayIncludes, concat, from as arrayFrom } from '../../../utils/array'
@@ -250,7 +250,7 @@ export const BVTooltip = /*#__PURE__*/ extend({
 
     // Destroy ourselves when the parent is destroyed
     if (this.bvParent) {
-      this.bvParent.$once(HOOK_EVENT_NAME_BEFORE_DESTROY, () => {
+      this.bvParent.$once(getHookEventNameBeforeDestroy(this.bvParent), () => {
         this.$nextTick(() => {
           // In a `requestAF()` to release control back to application
           requestAF(() => {
@@ -358,7 +358,7 @@ export const BVTooltip = /*#__PURE__*/ extend({
       // When the template has completed hiding
       $tip.$once(EVENT_NAME_HIDDEN, this.onTemplateHidden)
       // When the template gets destroyed for any reason
-      $tip.$once(HOOK_EVENT_NAME_DESTROYED, this.destroyTemplate)
+      $tip.$once(getHookEventNameDestroyed($tip), this.destroyTemplate)
       // Convenience events from template
       // To save us from manually adding/removing DOM
       // listeners to tip element when it is open

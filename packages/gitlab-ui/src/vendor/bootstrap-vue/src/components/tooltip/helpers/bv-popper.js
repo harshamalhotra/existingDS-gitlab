@@ -13,7 +13,7 @@ import {
   EVENT_NAME_HIDE,
   EVENT_NAME_SHOW,
   EVENT_NAME_SHOWN,
-  HOOK_EVENT_NAME_DESTROYED
+  getHookEventNameDestroyed
 } from '../../../constants/events'
 import {
   PROP_TYPE_ARRAY_STRING,
@@ -150,7 +150,7 @@ export const BVPopper = /*#__PURE__*/ extend({
       })
     }
     // Self destruct if parent destroyed
-    this.bvParent.$once(HOOK_EVENT_NAME_DESTROYED, handleDestroy)
+    this.bvParent.$once(getHookEventNameDestroyed(this.bvParent), handleDestroy)
     // Self destruct after hidden
     this.$once(EVENT_NAME_HIDDEN, handleDestroy)
   },

@@ -1,12 +1,9 @@
 import { isVue3 } from '../vue'
 
-let registry = null
-if (isVue3) {
-  registry = new WeakMap()
-}
+const registry = new WeakMap()
 
 export const registerElementToInstance = (element, instance) => {
-  if (!isVue3) {
+  if (!isVue3(instance)) {
     return
   }
 
@@ -14,15 +11,11 @@ export const registerElementToInstance = (element, instance) => {
 }
 
 export const removeElementToInstance = element => {
-  if (!isVue3) {
-    return
-  }
-
   registry.delete(element)
 }
 
 export const getInstanceFromElement = element => {
-  if (!isVue3) {
+  if (element.__vue__) {
     return element.__vue__
   }
 

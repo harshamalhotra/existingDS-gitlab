@@ -9,7 +9,7 @@ import { isArray, isUndefined } from '../utils/inspect'
 export const hasListenerMixin = extend({
   methods: {
     hasListener(name) {
-      if (isVue3) {
+      if (isVue3(this)) {
         return true
       }
       // Only includes listeners registered via `v-on:name`
