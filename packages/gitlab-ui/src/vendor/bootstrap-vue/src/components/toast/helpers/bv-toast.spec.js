@@ -1,5 +1,5 @@
+import Vue from 'vue'
 import { createWrapper, mount } from '@vue/test-utils'
-import { Vue } from '../../../vue'
 import { waitNT, waitRAF } from '../../../../tests/utils'
 import { ToastPlugin } from '../index'
 

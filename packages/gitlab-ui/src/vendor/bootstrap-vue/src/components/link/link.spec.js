@@ -1,7 +1,7 @@
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { createLocalVue, mount } from '@vue/test-utils'
 import { BLink } from './link'
-import { Vue } from '../../vue'
 
 Vue.use(VueRouter)
 

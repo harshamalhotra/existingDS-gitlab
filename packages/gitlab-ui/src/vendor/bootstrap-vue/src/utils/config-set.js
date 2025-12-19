@@ -1,5 +1,4 @@
-import { Vue as OurVue } from '../vue'
-import { NAME, PROP_NAME } from '../constants/config'
+import { NAME } from '../constants/config'
 import { cloneDeep } from './clone-deep'
 import { getRaw } from './get'
 import { isArray, isPlainObject, isString, isUndefined } from './inspect'
@@ -61,20 +60,26 @@ class BvConfig {
   }
 }
 
+// Module-level singleton instance
+let bvConfig = null
+
+// Get or create the config instance
+export const getConfigInstance = () => {
+  if (!bvConfig) {
+    bvConfig = new BvConfig()
+  }
+  return bvConfig
+}
+
 // Method for applying a global config
-export const setConfig = (config = {}, Vue = OurVue) => {
-  // Ensure we have a `$bvConfig` Object on the Vue prototype
-  // We set on Vue and OurVue just in case consumer has not set an alias of `vue`
-  Vue.prototype[PROP_NAME] = OurVue.prototype[PROP_NAME] =
-    Vue.prototype[PROP_NAME] || OurVue.prototype[PROP_NAME] || new BvConfig()
-  // Apply the config values
-  Vue.prototype[PROP_NAME].setConfig(config)
+export const setConfig = (config = {}) => {
+  getConfigInstance().setConfig(config)
 }
 
 // Method for resetting the user config
 // Exported for testing purposes only
 export const resetConfig = () => {
-  if (OurVue.prototype[PROP_NAME] && OurVue.prototype[PROP_NAME].resetConfig) {
-    OurVue.prototype[PROP_NAME].resetConfig()
+  if (bvConfig) {
+    bvConfig.resetConfig()
   }
 }
