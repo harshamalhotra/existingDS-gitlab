@@ -116,7 +116,15 @@
       "background": {
         "color": {
           "red": {
-            "$value": "#fcb5aa3d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.9882352941176471,
+                0.7098039215686275,
+                0.6666666666666666
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Red background for avatar fallback with no particular meaning.",
             "$extensions": {
@@ -127,7 +135,15 @@
             }
           },
           "purple": {
-            "$value": "#cbbbf23d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.796078431372549,
+                0.7333333333333333,
+                0.9490196078431372
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Purple background for avatar fallback with no particular meaning.",
             "$extensions": {
@@ -138,7 +154,15 @@
             }
           },
           "blue": {
-            "$value": "#9dc7f13d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.615686274509804,
+                0.7803921568627451,
+                0.9450980392156862
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Blue background for avatar fallback with no particular meaning.",
             "$extensions": {
@@ -149,7 +173,15 @@
             }
           },
           "green": {
-            "$value": "#91d4a83d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.5686274509803921,
+                0.8313725490196079,
+                0.6588235294117647
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Green background for avatar fallback with no particular meaning.",
             "$extensions": {
@@ -160,7 +192,15 @@
             }
           },
           "orange": {
-            "$value": "#e9be743d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.9137254901960784,
+                0.7450980392156863,
+                0.4549019607843137
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Orange background for avatar fallback with no particular meaning.",
             "$extensions": {
@@ -171,7 +211,15 @@
             }
           },
           "neutral": {
-            "$value": "#bfbfc33d",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.7490196078431373,
+                0.7490196078431373,
+                0.7647058823529411
+              ],
+              "alpha": 0.23921568627450981
+            },
             "$type": "color",
             "$description": "Neutral background for avatar fallback with no particular meaning.",
             "$extensions": {

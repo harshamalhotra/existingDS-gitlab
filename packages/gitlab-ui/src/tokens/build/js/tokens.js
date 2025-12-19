@@ -2,7 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-export const GL_BORDER_COLOR_TRANSPARENT = 'transparent';
+export const GL_BORDER_COLOR_TRANSPARENT = 'rgba(0, 0, 0, 0)';
 export const GL_BORDER_COLOR_DEFAULT = '#dcdcde';
 export const GL_BORDER_COLOR_SUBTLE = '#ececef';
 export const GL_BORDER_COLOR_STRONG = '#bfbfc3';
@@ -17,14 +17,14 @@ export const GL_BORDER_RADIUS_2XL = '1rem';
 export const GL_BORDER_RADIUS_3XL = '1.5rem';
 export const GL_BORDER_RADIUS_FULL = '9999px';
 export const GL_BORDER_RADIUS_DEFAULT = '0.25rem';
-export const GL_COLOR_ALPHA_0 = 'transparent';
-export const GL_COLOR_ALPHA_DARK_2 = 'rgba(05, 05, 06, 0.02)';
-export const GL_COLOR_ALPHA_DARK_4 = 'rgba(05, 05, 06, 0.04)';
-export const GL_COLOR_ALPHA_DARK_6 = 'rgba(05, 05, 06, 0.06)';
-export const GL_COLOR_ALPHA_DARK_8 = 'rgba(05, 05, 06, 0.08)';
-export const GL_COLOR_ALPHA_DARK_16 = 'rgba(05, 05, 06, 0.16)';
-export const GL_COLOR_ALPHA_DARK_24 = 'rgba(05, 05, 06, 0.24)';
-export const GL_COLOR_ALPHA_DARK_40 = 'rgba(05, 05, 06, 0.4)';
+export const GL_COLOR_ALPHA_0 = 'rgba(0, 0, 0, 0)';
+export const GL_COLOR_ALPHA_DARK_2 = 'rgba(5, 5, 6, 0.02)';
+export const GL_COLOR_ALPHA_DARK_4 = 'rgba(5, 5, 6, 0.04)';
+export const GL_COLOR_ALPHA_DARK_6 = 'rgba(5, 5, 6, 0.06)';
+export const GL_COLOR_ALPHA_DARK_8 = 'rgba(5, 5, 6, 0.08)';
+export const GL_COLOR_ALPHA_DARK_16 = 'rgba(5, 5, 6, 0.16)';
+export const GL_COLOR_ALPHA_DARK_24 = 'rgba(5, 5, 6, 0.24)';
+export const GL_COLOR_ALPHA_DARK_40 = 'rgba(5, 5, 6, 0.4)';
 export const GL_COLOR_ALPHA_LIGHT_2 = 'rgba(255, 255, 255, 0.02)';
 export const GL_COLOR_ALPHA_LIGHT_4 = 'rgba(255, 255, 255, 0.04)';
 export const GL_COLOR_ALPHA_LIGHT_6 = 'rgba(255, 255, 255, 0.06)';
@@ -325,14 +325,14 @@ export const GL_OPACITY_9 = '.9';
 export const GL_OPACITY_10 = '1';
 export const GL_SHADOW_SM = [
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: 0,
     blur: '2px',
     spread: 0,
   },
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: '1px',
     blur: '4px',
@@ -341,21 +341,21 @@ export const GL_SHADOW_SM = [
 ];
 export const GL_SHADOW_MD = [
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: 0,
     blur: '1px',
     spread: 0,
   },
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: 0,
     blur: '2px',
     spread: 0,
   },
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: '2px',
     blur: '8px',
@@ -364,28 +364,28 @@ export const GL_SHADOW_MD = [
 ];
 export const GL_SHADOW_LG = [
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: 0,
     blur: '2px',
     spread: 0,
   },
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: 0,
     blur: '2px',
     spread: 0,
   },
   {
-    color: 'rgba(05, 05, 06, 0.16)',
+    color: 'rgba(5, 5, 6, 0.16)',
     offsetX: 0,
     offsetY: '4px',
     blur: '12px',
     spread: 0,
   },
 ];
-export const GL_SHADOW_COLOR_DEFAULT = 'rgba(05, 05, 06, 0.16)';
+export const GL_SHADOW_COLOR_DEFAULT = 'rgba(5, 5, 6, 0.16)';
 export const GL_SPACING_SCALE_0 = '0';
 export const GL_SPACING_SCALE_1 = '0.125rem';
 export const GL_SPACING_SCALE_2 = '0.25rem';
@@ -428,46 +428,49 @@ export const GL_ZINDEX_9999 = '9999';
 export const GL_ALERT_BORDER_RADIUS = '0.5rem';
 export const GL_ALERT_NEUTRAL_TITLE_COLOR = '#18171d';
 export const GL_ALERT_NEUTRAL_BACKGROUND_COLOR = '#ececef';
-export const GL_ALERT_NEUTRAL_BORDER_TOP_COLOR = 'transparent';
-export const GL_ALERT_NEUTRAL_BORDER_BOTTOM_COLOR = 'transparent';
+export const GL_ALERT_NEUTRAL_BORDER_TOP_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_ALERT_NEUTRAL_BORDER_BOTTOM_COLOR = 'rgba(0, 0, 0, 0)';
 export const GL_ALERT_INFO_TITLE_COLOR = '#18171d';
 export const GL_ALERT_INFO_BACKGROUND_COLOR = '#e9f3fc';
-export const GL_ALERT_INFO_BORDER_TOP_COLOR = 'transparent';
-export const GL_ALERT_INFO_BORDER_BOTTOM_COLOR = 'transparent';
+export const GL_ALERT_INFO_BORDER_TOP_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_ALERT_INFO_BORDER_BOTTOM_COLOR = 'rgba(0, 0, 0, 0)';
 export const GL_ALERT_SUCCESS_TITLE_COLOR = '#18171d';
 export const GL_ALERT_SUCCESS_BACKGROUND_COLOR = '#ecf4ee';
-export const GL_ALERT_SUCCESS_BORDER_TOP_COLOR = 'transparent';
-export const GL_ALERT_SUCCESS_BORDER_BOTTOM_COLOR = 'transparent';
+export const GL_ALERT_SUCCESS_BORDER_TOP_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_ALERT_SUCCESS_BORDER_BOTTOM_COLOR = 'rgba(0, 0, 0, 0)';
 export const GL_ALERT_WARNING_TITLE_COLOR = '#18171d';
 export const GL_ALERT_WARNING_BACKGROUND_COLOR = '#fdf1dd';
-export const GL_ALERT_WARNING_BORDER_TOP_COLOR = 'transparent';
-export const GL_ALERT_WARNING_BORDER_BOTTOM_COLOR = 'transparent';
+export const GL_ALERT_WARNING_BORDER_TOP_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_ALERT_WARNING_BORDER_BOTTOM_COLOR = 'rgba(0, 0, 0, 0)';
 export const GL_ALERT_DANGER_TITLE_COLOR = '#18171d';
 export const GL_ALERT_DANGER_BACKGROUND_COLOR = '#fcf1ef';
-export const GL_ALERT_DANGER_BORDER_TOP_COLOR = 'transparent';
-export const GL_ALERT_DANGER_BORDER_BOTTOM_COLOR = 'transparent';
-export const GL_AVATAR_BORDER_COLOR_DEFAULT = 'rgba(05, 05, 06, 0.08)';
-export const GL_AVATAR_BORDER_COLOR_HOVER = 'rgba(05, 05, 06, 0.24)';
+export const GL_ALERT_DANGER_BORDER_TOP_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_ALERT_DANGER_BORDER_BOTTOM_COLOR = 'rgba(0, 0, 0, 0)';
+export const GL_AVATAR_BORDER_COLOR_DEFAULT = 'rgba(5, 5, 6, 0.08)';
+export const GL_AVATAR_BORDER_COLOR_HOVER = 'rgba(5, 5, 6, 0.24)';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_RED = '#812713';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_PURPLE = '#493c83';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_BLUE = '#284779';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_GREEN = '#225131';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_ORANGE = '#693c14';
 export const GL_AVATAR_FALLBACK_TEXT_COLOR_NEUTRAL = '#3a383f';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_RED = '#fcb5aa3d';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_PURPLE = '#cbbbf23d';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_BLUE = '#9dc7f13d';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_GREEN = '#91d4a83d';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_ORANGE = '#e9be743d';
-export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_NEUTRAL = '#bfbfc33d';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_RED = 'rgba(252, 181, 170, 0.23921568627450981)';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_PURPLE =
+  'rgba(203, 187, 242, 0.23921568627450981)';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_BLUE = 'rgba(157, 199, 241, 0.23921568627450981)';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_GREEN = 'rgba(145, 212, 168, 0.23921568627450981)';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_ORANGE =
+  'rgba(233, 190, 116, 0.23921568627450981)';
+export const GL_AVATAR_FALLBACK_BACKGROUND_COLOR_NEUTRAL =
+  'rgba(191, 191, 195, 0.23921568627450981)';
 export const GL_BADGE_MUTED_BACKGROUND_COLOR_DEFAULT = '#ececef';
 export const GL_BADGE_MUTED_BACKGROUND_COLOR_HOVER = '#ececef';
 export const GL_BADGE_MUTED_BACKGROUND_COLOR_FOCUS = '#ececef';
 export const GL_BADGE_MUTED_BACKGROUND_COLOR_ACTIVE = '#dcdcde';
-export const GL_BADGE_MUTED_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_MUTED_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_MUTED_BORDER_COLOR_HOVER = '#bfbfc3';
-export const GL_BADGE_MUTED_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_MUTED_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_MUTED_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_MUTED_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_MUTED_TEXT_COLOR_DEFAULT = '#626168';
 export const GL_BADGE_MUTED_TEXT_COLOR_HOVER = '#4c4b51';
 export const GL_BADGE_MUTED_TEXT_COLOR_FOCUS = '#4c4b51';
@@ -480,10 +483,10 @@ export const GL_BADGE_NEUTRAL_BACKGROUND_COLOR_DEFAULT = '#dcdcde';
 export const GL_BADGE_NEUTRAL_BACKGROUND_COLOR_HOVER = '#dcdcde';
 export const GL_BADGE_NEUTRAL_BACKGROUND_COLOR_FOCUS = '#dcdcde';
 export const GL_BADGE_NEUTRAL_BACKGROUND_COLOR_ACTIVE = '#bfbfc3';
-export const GL_BADGE_NEUTRAL_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_NEUTRAL_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_NEUTRAL_BORDER_COLOR_HOVER = '#bfbfc3';
-export const GL_BADGE_NEUTRAL_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_NEUTRAL_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_NEUTRAL_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_NEUTRAL_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_NEUTRAL_TEXT_COLOR_DEFAULT = '#4c4b51';
 export const GL_BADGE_NEUTRAL_TEXT_COLOR_HOVER = '#3a383f';
 export const GL_BADGE_NEUTRAL_TEXT_COLOR_FOCUS = '#3a383f';
@@ -496,10 +499,10 @@ export const GL_BADGE_INFO_BACKGROUND_COLOR_DEFAULT = '#cbe2f9';
 export const GL_BADGE_INFO_BACKGROUND_COLOR_HOVER = '#cbe2f9';
 export const GL_BADGE_INFO_BACKGROUND_COLOR_FOCUS = '#cbe2f9';
 export const GL_BADGE_INFO_BACKGROUND_COLOR_ACTIVE = '#9dc7f1';
-export const GL_BADGE_INFO_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_INFO_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_INFO_BORDER_COLOR_HOVER = '#9dc7f1';
-export const GL_BADGE_INFO_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_INFO_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_INFO_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_INFO_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_INFO_TEXT_COLOR_DEFAULT = '#2f5ca0';
 export const GL_BADGE_INFO_TEXT_COLOR_HOVER = '#284779';
 export const GL_BADGE_INFO_TEXT_COLOR_FOCUS = '#284779';
@@ -512,10 +515,10 @@ export const GL_BADGE_SUCCESS_BACKGROUND_COLOR_DEFAULT = '#c3e6cd';
 export const GL_BADGE_SUCCESS_BACKGROUND_COLOR_HOVER = '#c3e6cd';
 export const GL_BADGE_SUCCESS_BACKGROUND_COLOR_FOCUS = '#c3e6cd';
 export const GL_BADGE_SUCCESS_BACKGROUND_COLOR_ACTIVE = '#91d4a8';
-export const GL_BADGE_SUCCESS_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_SUCCESS_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_SUCCESS_BORDER_COLOR_HOVER = '#91d4a8';
-export const GL_BADGE_SUCCESS_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_SUCCESS_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_SUCCESS_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_SUCCESS_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_SUCCESS_TEXT_COLOR_DEFAULT = '#306440';
 export const GL_BADGE_SUCCESS_TEXT_COLOR_HOVER = '#225131';
 export const GL_BADGE_SUCCESS_TEXT_COLOR_FOCUS = '#225131';
@@ -528,10 +531,10 @@ export const GL_BADGE_WARNING_BACKGROUND_COLOR_DEFAULT = '#f5d9a8';
 export const GL_BADGE_WARNING_BACKGROUND_COLOR_HOVER = '#f5d9a8';
 export const GL_BADGE_WARNING_BACKGROUND_COLOR_FOCUS = '#f5d9a8';
 export const GL_BADGE_WARNING_BACKGROUND_COLOR_ACTIVE = '#e9be74';
-export const GL_BADGE_WARNING_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_WARNING_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_WARNING_BORDER_COLOR_HOVER = '#e9be74';
-export const GL_BADGE_WARNING_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_WARNING_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_WARNING_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_WARNING_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_WARNING_TEXT_COLOR_DEFAULT = '#894b16';
 export const GL_BADGE_WARNING_TEXT_COLOR_HOVER = '#693c14';
 export const GL_BADGE_WARNING_TEXT_COLOR_FOCUS = '#693c14';
@@ -544,10 +547,10 @@ export const GL_BADGE_DANGER_BACKGROUND_COLOR_DEFAULT = '#fdd4cd';
 export const GL_BADGE_DANGER_BACKGROUND_COLOR_HOVER = '#fdd4cd';
 export const GL_BADGE_DANGER_BACKGROUND_COLOR_FOCUS = '#fdd4cd';
 export const GL_BADGE_DANGER_BACKGROUND_COLOR_ACTIVE = '#fcb5aa';
-export const GL_BADGE_DANGER_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_DANGER_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_DANGER_BORDER_COLOR_HOVER = '#fcb5aa';
-export const GL_BADGE_DANGER_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_DANGER_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_DANGER_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_DANGER_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_DANGER_TEXT_COLOR_DEFAULT = '#a32c12';
 export const GL_BADGE_DANGER_TEXT_COLOR_HOVER = '#812713';
 export const GL_BADGE_DANGER_TEXT_COLOR_FOCUS = '#812713';
@@ -560,10 +563,10 @@ export const GL_BADGE_TIER_BACKGROUND_COLOR_DEFAULT = '#e1d8f9';
 export const GL_BADGE_TIER_BACKGROUND_COLOR_HOVER = '#e1d8f9';
 export const GL_BADGE_TIER_BACKGROUND_COLOR_FOCUS = '#e1d8f9';
 export const GL_BADGE_TIER_BACKGROUND_COLOR_ACTIVE = '#cbbbf2';
-export const GL_BADGE_TIER_BORDER_COLOR_DEFAULT = 'transparent';
+export const GL_BADGE_TIER_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_TIER_BORDER_COLOR_HOVER = '#cbbbf2';
-export const GL_BADGE_TIER_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BADGE_TIER_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BADGE_TIER_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BADGE_TIER_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BADGE_TIER_TEXT_COLOR_DEFAULT = '#5c47a6';
 export const GL_BADGE_TIER_TEXT_COLOR_HOVER = '#493c83';
 export const GL_BADGE_TIER_TEXT_COLOR_FOCUS = '#493c83';
@@ -634,14 +637,14 @@ export const GL_BUTTON_DEFAULT_TERTIARY_FOREGROUND_COLOR_DEFAULT = '#28272d';
 export const GL_BUTTON_DEFAULT_TERTIARY_FOREGROUND_COLOR_HOVER = '#28272d';
 export const GL_BUTTON_DEFAULT_TERTIARY_FOREGROUND_COLOR_FOCUS = '#28272d';
 export const GL_BUTTON_DEFAULT_TERTIARY_FOREGROUND_COLOR_ACTIVE = '#28272d';
-export const GL_BUTTON_DEFAULT_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(164, 163, 168, 0.0)';
+export const GL_BUTTON_DEFAULT_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(164, 163, 168, 0)';
 export const GL_BUTTON_DEFAULT_TERTIARY_BACKGROUND_COLOR_HOVER = 'rgba(164, 163, 168, 0.16)';
 export const GL_BUTTON_DEFAULT_TERTIARY_BACKGROUND_COLOR_FOCUS = 'rgba(164, 163, 168, 0.16)';
 export const GL_BUTTON_DEFAULT_TERTIARY_BACKGROUND_COLOR_ACTIVE = 'rgba(83, 81, 88, 0.24)';
-export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_HOVER = 'transparent';
-export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DEFAULT_TERTIARY_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BUTTON_CONFIRM_PRIMARY_FOREGROUND_COLOR_DEFAULT = '#fff';
 export const GL_BUTTON_CONFIRM_PRIMARY_FOREGROUND_COLOR_HOVER = '#fff';
 export const GL_BUTTON_CONFIRM_PRIMARY_FOREGROUND_COLOR_FOCUS = '#fff';
@@ -670,14 +673,14 @@ export const GL_BUTTON_CONFIRM_TERTIARY_FOREGROUND_COLOR_DEFAULT = '#1f75cb';
 export const GL_BUTTON_CONFIRM_TERTIARY_FOREGROUND_COLOR_HOVER = '#2f5ca0';
 export const GL_BUTTON_CONFIRM_TERTIARY_FOREGROUND_COLOR_FOCUS = '#2f5ca0';
 export const GL_BUTTON_CONFIRM_TERTIARY_FOREGROUND_COLOR_ACTIVE = '#213454';
-export const GL_BUTTON_CONFIRM_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(99, 166, 233, 0.0)';
+export const GL_BUTTON_CONFIRM_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(99, 166, 233, 0)';
 export const GL_BUTTON_CONFIRM_TERTIARY_BACKGROUND_COLOR_HOVER = 'rgba(99, 166, 233, 0.16)';
 export const GL_BUTTON_CONFIRM_TERTIARY_BACKGROUND_COLOR_FOCUS = 'rgba(99, 166, 233, 0.16)';
 export const GL_BUTTON_CONFIRM_TERTIARY_BACKGROUND_COLOR_ACTIVE = 'rgba(11, 92, 173, 0.24)';
-export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_HOVER = 'transparent';
-export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_CONFIRM_TERTIARY_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BUTTON_DANGER_PRIMARY_FOREGROUND_COLOR_DEFAULT = '#fff';
 export const GL_BUTTON_DANGER_PRIMARY_FOREGROUND_COLOR_HOVER = '#fff';
 export const GL_BUTTON_DANGER_PRIMARY_FOREGROUND_COLOR_FOCUS = '#fff';
@@ -706,14 +709,14 @@ export const GL_BUTTON_DANGER_TERTIARY_FOREGROUND_COLOR_DEFAULT = '#dd2b0e';
 export const GL_BUTTON_DANGER_TERTIARY_FOREGROUND_COLOR_HOVER = '#a32c12';
 export const GL_BUTTON_DANGER_TERTIARY_FOREGROUND_COLOR_FOCUS = '#a32c12';
 export const GL_BUTTON_DANGER_TERTIARY_FOREGROUND_COLOR_ACTIVE = '#582014';
-export const GL_BUTTON_DANGER_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(245, 127, 108, 0.0)';
+export const GL_BUTTON_DANGER_TERTIARY_BACKGROUND_COLOR_DEFAULT = 'rgba(245, 127, 108, 0)';
 export const GL_BUTTON_DANGER_TERTIARY_BACKGROUND_COLOR_HOVER = 'rgba(245, 127, 108, 0.16)';
 export const GL_BUTTON_DANGER_TERTIARY_BACKGROUND_COLOR_FOCUS = 'rgba(245, 127, 108, 0.16)';
 export const GL_BUTTON_DANGER_TERTIARY_BACKGROUND_COLOR_ACTIVE = 'rgba(174, 24, 0, 0.24)';
-export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_HOVER = 'transparent';
-export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_BUTTON_DANGER_TERTIARY_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BUTTON_DASHED_BORDER_COLOR_DEFAULT = '#89888d';
 export const GL_BUTTON_DASHED_BORDER_COLOR_HOVER = '#89888d';
 export const GL_BUTTON_DASHED_BORDER_COLOR_FOCUS = '#89888d';
@@ -738,14 +741,14 @@ export const GL_BUTTON_SELECTED_BORDER_COLOR_ACTIVE = '#626168';
 export const GL_BUTTON_DISABLED_FOREGROUND_COLOR = '#737278';
 export const GL_BUTTON_DISABLED_BACKGROUND_COLOR = '#fbfafd';
 export const GL_BUTTON_DISABLED_BORDER_COLOR = '#dcdcde';
-export const GL_BUTTON_COUNT_BACKGROUND_COLOR = 'rgba(05, 05, 06, 0.08)';
+export const GL_BUTTON_COUNT_BACKGROUND_COLOR = 'rgba(5, 5, 6, 0.08)';
 export const GL_CARD_BORDER_RADIUS = '0.5rem';
 export const GL_CHART_AXIS_POINTER_COLOR = '#626168';
 export const GL_CHART_AXIS_LINE_COLOR = '#bfbfc3';
 export const GL_CHART_AXIS_TEXT_COLOR = '#626168';
-export const GL_CHART_THRESHOLD_AREA_COLOR = 'rgba(221,43,14,0.1)';
+export const GL_CHART_THRESHOLD_AREA_COLOR = 'rgba(221, 43, 14, 0.1)';
 export const GL_CHART_THRESHOLD_LINE_COLOR = '#dd2b0e';
-export const GL_CHART_ZOOM_FILLER_COLOR = 'rgba(05, 05, 06, 0.08)';
+export const GL_CHART_ZOOM_FILLER_COLOR = 'rgba(5, 5, 6, 0.08)';
 export const GL_CHART_ZOOM_HANDLE_COLOR = '#626168';
 export const GL_DATEPICKER_BACKGROUND_COLOR = '#fff';
 export const GL_DATEPICKER_DATE_TEXT_COLOR_SELECTED = '#fff';
@@ -763,7 +766,7 @@ export const GL_DROPDOWN_OPTION_INDICATOR_COLOR_SELECTED_DEFAULT = '#1f75cb';
 export const GL_DROPDOWN_OPTION_INDICATOR_COLOR_SELECTED_HOVER = '#2f5ca0';
 export const GL_DROPDOWN_OPTION_INDICATOR_COLOR_SELECTED_FOCUS = '#2f5ca0';
 export const GL_DROPDOWN_OPTION_INDICATOR_COLOR_SELECTED_ACTIVE = '#2f5ca0';
-export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_UNSELECTED_DEFAULT = 'rgba(164, 163, 168, 0.0)';
+export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_UNSELECTED_DEFAULT = 'rgba(164, 163, 168, 0)';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_UNSELECTED_HOVER = 'rgba(164, 163, 168, 0.16)';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_UNSELECTED_FOCUS = 'rgba(164, 163, 168, 0.16)';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_UNSELECTED_ACTIVE = 'rgba(83, 81, 88, 0.24)';
@@ -771,7 +774,7 @@ export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_SELECTED_DEFAULT = '#ececef';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_SELECTED_HOVER = '#dcdcde';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_SELECTED_FOCUS = '#dcdcde';
 export const GL_DROPDOWN_OPTION_BACKGROUND_COLOR_SELECTED_ACTIVE = '#bfbfc3';
-export const GL_DROPDOWN_SEARCH_BACKGROUND_COLOR = 'rgba(05, 05, 06, 0.02)';
+export const GL_DROPDOWN_SEARCH_BACKGROUND_COLOR = 'rgba(5, 5, 6, 0.02)';
 export const GL_FILTERED_SEARCH_TOKEN_TYPE_BACKGROUND_COLOR_DEFAULT = '#ececef';
 export const GL_FILTERED_SEARCH_TOKEN_TYPE_BACKGROUND_COLOR_HOVER = '#dcdcde';
 export const GL_FILTERED_SEARCH_TOKEN_DATA_BACKGROUND_COLOR_DEFAULT = '#dcdcde';
@@ -811,11 +814,11 @@ export const GL_ILLUSTRATION_ISOMETRIC_BASE_TOP_FILL_COLOR = '#e7e4f2';
 export const GL_ILLUSTRATION_ISOMETRIC_BASE_FRONT_FILL_COLOR = '#d5d0e8';
 export const GL_ILLUSTRATION_ISOMETRIC_BASE_SIDE_FILL_COLOR = '#aea5d6';
 export const GL_LABEL_LIGHT_TEXT_COLOR = '#18171d';
-export const GL_LABEL_LIGHT_BUTTON_BACKGROUND_COLOR_DEFAULT = 'transparent';
+export const GL_LABEL_LIGHT_BUTTON_BACKGROUND_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_LABEL_LIGHT_BUTTON_BACKGROUND_COLOR_HOVER = '#18171d';
 export const GL_LABEL_LIGHT_BUTTON_ICON_COLOR_DEFAULT = '#18171d';
 export const GL_LABEL_DARK_TEXT_COLOR = '#fff';
-export const GL_LABEL_DARK_BUTTON_BACKGROUND_COLOR_DEFAULT = 'transparent';
+export const GL_LABEL_DARK_BUTTON_BACKGROUND_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
 export const GL_LABEL_DARK_BUTTON_BACKGROUND_COLOR_HOVER = '#fff';
 export const GL_LABEL_DARK_BUTTON_ICON_COLOR_DEFAULT = '#fff';
 export const GL_LABEL_SCOPED_TEXT_COLOR = '#18171d';
@@ -1061,12 +1064,12 @@ export const BRAND_GRAY_02 = '#a2a1a6';
 export const BRAND_GRAY_03 = '#74717a';
 export const BRAND_GRAY_04 = '#45424d';
 export const BRAND_GRAY_05 = '#2b2838';
-export const T_GRAY_A_16 = 'rgba(05, 05, 06, 0.16)';
-export const T_GRAY_A_24 = 'rgba(05, 05, 06, 0.24)';
-export const T_GRAY_A_02 = 'rgba(05, 05, 06, 0.02)';
-export const T_GRAY_A_04 = 'rgba(05, 05, 06, 0.04)';
-export const T_GRAY_A_06 = 'rgba(05, 05, 06, 0.06)';
-export const T_GRAY_A_08 = 'rgba(05, 05, 06, 0.08)';
+export const T_GRAY_A_16 = 'rgba(5, 5, 6, 0.16)';
+export const T_GRAY_A_24 = 'rgba(5, 5, 6, 0.24)';
+export const T_GRAY_A_02 = 'rgba(5, 5, 6, 0.02)';
+export const T_GRAY_A_04 = 'rgba(5, 5, 6, 0.04)';
+export const T_GRAY_A_06 = 'rgba(5, 5, 6, 0.06)';
+export const T_GRAY_A_08 = 'rgba(5, 5, 6, 0.08)';
 export const T_WHITE_A_16 = 'rgba(255, 255, 255, 0.16)';
 export const T_WHITE_A_24 = 'rgba(255, 255, 255, 0.24)';
 export const T_WHITE_A_36 = 'rgba(255, 255, 255, 0.36)';
@@ -1094,38 +1097,38 @@ export const GL_ACTION_NEUTRAL_FOREGROUND_COLOR_DEFAULT = '#28272d';
 export const GL_ACTION_NEUTRAL_FOREGROUND_COLOR_HOVER = '#28272d';
 export const GL_ACTION_NEUTRAL_FOREGROUND_COLOR_FOCUS = '#28272d';
 export const GL_ACTION_NEUTRAL_FOREGROUND_COLOR_ACTIVE = '#28272d';
-export const GL_ACTION_NEUTRAL_BACKGROUND_COLOR_DEFAULT = 'rgba(164, 163, 168, 0.0)';
+export const GL_ACTION_NEUTRAL_BACKGROUND_COLOR_DEFAULT = 'rgba(164, 163, 168, 0)';
 export const GL_ACTION_NEUTRAL_BACKGROUND_COLOR_HOVER = 'rgba(164, 163, 168, 0.16)';
 export const GL_ACTION_NEUTRAL_BACKGROUND_COLOR_FOCUS = 'rgba(164, 163, 168, 0.16)';
 export const GL_ACTION_NEUTRAL_BACKGROUND_COLOR_ACTIVE = 'rgba(83, 81, 88, 0.24)';
-export const GL_ACTION_NEUTRAL_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_ACTION_NEUTRAL_BORDER_COLOR_HOVER = 'transparent';
-export const GL_ACTION_NEUTRAL_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_ACTION_NEUTRAL_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_ACTION_NEUTRAL_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_NEUTRAL_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_NEUTRAL_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_NEUTRAL_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_ACTION_CONFIRM_FOREGROUND_COLOR_DEFAULT = '#1f75cb';
 export const GL_ACTION_CONFIRM_FOREGROUND_COLOR_HOVER = '#2f5ca0';
 export const GL_ACTION_CONFIRM_FOREGROUND_COLOR_FOCUS = '#2f5ca0';
 export const GL_ACTION_CONFIRM_FOREGROUND_COLOR_ACTIVE = '#213454';
-export const GL_ACTION_CONFIRM_BACKGROUND_COLOR_DEFAULT = 'rgba(99, 166, 233, 0.0)';
+export const GL_ACTION_CONFIRM_BACKGROUND_COLOR_DEFAULT = 'rgba(99, 166, 233, 0)';
 export const GL_ACTION_CONFIRM_BACKGROUND_COLOR_HOVER = 'rgba(99, 166, 233, 0.16)';
 export const GL_ACTION_CONFIRM_BACKGROUND_COLOR_FOCUS = 'rgba(99, 166, 233, 0.16)';
 export const GL_ACTION_CONFIRM_BACKGROUND_COLOR_ACTIVE = 'rgba(11, 92, 173, 0.24)';
-export const GL_ACTION_CONFIRM_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_ACTION_CONFIRM_BORDER_COLOR_HOVER = 'transparent';
-export const GL_ACTION_CONFIRM_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_ACTION_CONFIRM_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_ACTION_CONFIRM_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_CONFIRM_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_CONFIRM_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_CONFIRM_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_ACTION_DANGER_FOREGROUND_COLOR_DEFAULT = '#dd2b0e';
 export const GL_ACTION_DANGER_FOREGROUND_COLOR_HOVER = '#a32c12';
 export const GL_ACTION_DANGER_FOREGROUND_COLOR_FOCUS = '#a32c12';
 export const GL_ACTION_DANGER_FOREGROUND_COLOR_ACTIVE = '#582014';
-export const GL_ACTION_DANGER_BACKGROUND_COLOR_DEFAULT = 'rgba(245, 127, 108, 0.0)';
+export const GL_ACTION_DANGER_BACKGROUND_COLOR_DEFAULT = 'rgba(245, 127, 108, 0)';
 export const GL_ACTION_DANGER_BACKGROUND_COLOR_HOVER = 'rgba(245, 127, 108, 0.16)';
 export const GL_ACTION_DANGER_BACKGROUND_COLOR_FOCUS = 'rgba(245, 127, 108, 0.16)';
 export const GL_ACTION_DANGER_BACKGROUND_COLOR_ACTIVE = 'rgba(174, 24, 0, 0.24)';
-export const GL_ACTION_DANGER_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_ACTION_DANGER_BORDER_COLOR_HOVER = 'transparent';
-export const GL_ACTION_DANGER_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_ACTION_DANGER_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_ACTION_DANGER_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_DANGER_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_DANGER_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_DANGER_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_ACTION_STRONG_CONFIRM_BACKGROUND_COLOR_DEFAULT = '#1f75cb';
 export const GL_ACTION_STRONG_CONFIRM_BACKGROUND_COLOR_HOVER = '#2f68b4';
 export const GL_ACTION_STRONG_CONFIRM_BACKGROUND_COLOR_FOCUS = '#2f68b4';
@@ -1134,10 +1137,10 @@ export const GL_ACTION_STRONG_CONFIRM_FOREGROUND_COLOR_DEFAULT = '#fff';
 export const GL_ACTION_STRONG_CONFIRM_FOREGROUND_COLOR_HOVER = '#fff';
 export const GL_ACTION_STRONG_CONFIRM_FOREGROUND_COLOR_FOCUS = '#fff';
 export const GL_ACTION_STRONG_CONFIRM_FOREGROUND_COLOR_ACTIVE = '#fff';
-export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_HOVER = 'transparent';
-export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_CONFIRM_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_ACTION_STRONG_NEUTRAL_BACKGROUND_COLOR_DEFAULT = '#626168';
 export const GL_ACTION_STRONG_NEUTRAL_BACKGROUND_COLOR_HOVER = '#4c4b51';
 export const GL_ACTION_STRONG_NEUTRAL_BACKGROUND_COLOR_FOCUS = '#4c4b51';
@@ -1146,21 +1149,21 @@ export const GL_ACTION_STRONG_NEUTRAL_FOREGROUND_COLOR_DEFAULT = '#fff';
 export const GL_ACTION_STRONG_NEUTRAL_FOREGROUND_COLOR_HOVER = '#fff';
 export const GL_ACTION_STRONG_NEUTRAL_FOREGROUND_COLOR_FOCUS = '#fff';
 export const GL_ACTION_STRONG_NEUTRAL_FOREGROUND_COLOR_ACTIVE = '#fff';
-export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_DEFAULT = 'transparent';
-export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_HOVER = 'transparent';
-export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_FOCUS = 'transparent';
-export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_ACTIVE = 'transparent';
+export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_HOVER = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_FOCUS = 'rgba(0, 0, 0, 0)';
+export const GL_ACTION_STRONG_NEUTRAL_BORDER_COLOR_ACTIVE = 'rgba(0, 0, 0, 0)';
 export const GL_BACKGROUND_COLOR_DEFAULT = '#fff';
 export const GL_BACKGROUND_COLOR_SUBTLE = '#fbfafd';
 export const GL_BACKGROUND_COLOR_STRONG = '#ececef';
 export const GL_BACKGROUND_COLOR_DISABLED = '#fbfafd';
 export const GL_BACKGROUND_COLOR_OVERLAP = '#fff';
 export const GL_BACKGROUND_COLOR_SECTION = '#fff';
-export const GL_BACKGROUND_COLOR_OVERLAY = 'rgba(05, 05, 06, 0.24)';
+export const GL_BACKGROUND_COLOR_OVERLAY = 'rgba(5, 5, 6, 0.24)';
 export const GL_CONTROL_BACKGROUND_COLOR_DEFAULT = '#fff';
 export const GL_CONTROL_BACKGROUND_COLOR_DISABLED = '#fbfafd';
 export const GL_CONTROL_BACKGROUND_COLOR_CONCATENATION = '#fbfafd';
-export const GL_CONTROL_BACKGROUND_COLOR_READONLY = 'rgba(05, 05, 06, 0.02)';
+export const GL_CONTROL_BACKGROUND_COLOR_READONLY = 'rgba(5, 5, 6, 0.02)';
 export const GL_CONTROL_BACKGROUND_COLOR_SELECTED_DEFAULT = '#1f75cb';
 export const GL_CONTROL_BACKGROUND_COLOR_SELECTED_HOVER = '#2f5ca0';
 export const GL_CONTROL_BACKGROUND_COLOR_SELECTED_FOCUS = '#2f5ca0';

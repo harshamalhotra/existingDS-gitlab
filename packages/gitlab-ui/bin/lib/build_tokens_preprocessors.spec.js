@@ -3,6 +3,7 @@ import {
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
+  selectColorValuePreprocessor,
 } from './build_tokens_preprocessors';
 
 describe('buildTokens', () => {
@@ -319,6 +320,56 @@ describe('buildTokens', () => {
 
       // Should not transform because it has more than 2 properties
       expect(selectDarkValuePreprocessor(input)).toEqual(input);
+    });
+  });
+
+  describe('selectColorValuePreprocessor', () => {
+    it('should return hex value when hex property is provided', () => {
+      const input = {
+        colorSpace: 'srgb',
+        components: [0.89, 0.157, 0.157],
+        alpha: 1,
+        hex: '#e32828',
+      };
+
+      const result = selectColorValuePreprocessor(input);
+
+      expect(result).toBe('#e32828');
+    });
+
+    it('should return rgba string when hex property is not provided', () => {
+      const input = {
+        colorSpace: 'srgb',
+        components: [0.643, 0.639, 0.659],
+        alpha: 0.16,
+      };
+
+      const result = selectColorValuePreprocessor(input);
+
+      expect(result).toBe('rgba(164, 163, 168, 0.16)');
+    });
+
+    it('should return original value for non-srgb colorSpace', () => {
+      const input = {
+        colorSpace: 'p3',
+        components: [0.5, 0.5, 0.5],
+        alpha: 1,
+      };
+
+      const result = selectColorValuePreprocessor(input);
+
+      expect(result).toEqual(input);
+    });
+
+    it('should return original value when colorSpace is missing', () => {
+      const input = {
+        components: [0.5, 0.5, 0.5],
+        alpha: 1,
+      };
+
+      const result = selectColorValuePreprocessor(input);
+
+      expect(result).toEqual(input);
     });
   });
 });

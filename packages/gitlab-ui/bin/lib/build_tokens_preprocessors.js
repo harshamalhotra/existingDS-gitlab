@@ -151,9 +151,51 @@ const selectDarkValuePreprocessor = (dictionary) => {
   return traverse(dictionary);
 };
 
+/**
+ * Selects the value from design tokens color formats
+ *
+ * A preprocessor function that returns a string value for colors
+ *
+ * Usage:
+ *
+ * ```javascript
+ * StyleDictionary.registerPreprocessor({
+ *   name: 'gitlab/select-color-value',
+ *   preprocessor: selectColorValuePreprocessor,
+ * });
+ * ```
+ *
+ * @param {Object} dictionary - StyleDictionary's dictionary object
+ * @returns {Object} - Modified dictionary object with color string values
+ */
+const selectColorValuePreprocessor = (dictionary) => {
+  function traverse(node) {
+    if (node === null || typeof node !== 'object' || Array.isArray(node)) {
+      return node;
+    }
+
+    // Return HEX property if provided
+    if (node.colorSpace === 'srgb' && node.hex) {
+      return node.hex;
+    }
+
+    // Return CSS RGBA format if hex property not provided
+    if (node.colorSpace === 'srgb' && node.components && node.alpha !== undefined) {
+      const [r, g, b] = node.components.map((component) => Math.round(component * 255));
+      return `rgba(${r}, ${g}, ${b}, ${node.alpha})`;
+    }
+
+    // Recursively handle nested objects
+    return Object.fromEntries(Object.entries(node).map(([k, v]) => [k, traverse(v)]));
+  }
+
+  return traverse(dictionary);
+};
+
 module.exports = {
   stripDescriptionsPreprocessor,
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
+  selectColorValuePreprocessor,
 };

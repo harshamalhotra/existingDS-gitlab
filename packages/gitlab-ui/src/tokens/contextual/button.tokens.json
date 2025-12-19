@@ -70,7 +70,15 @@
             "default": {
               "$value": {
                 "default": "{color.neutral.0}",
-                "dark": "rgba(137, 136, 141, 0.4)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.5372549019607843,
+                    0.5333333333333333,
+                    0.5529411764705883
+                  ],
+                  "alpha": 0.4
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an default primary button in the default state.",
@@ -84,7 +92,15 @@
             "hover": {
               "$value": {
                 "default": "{color.neutral.50}",
-                "dark": "rgba(137, 136, 141, 0.64)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.5372549019607843,
+                    0.5333333333333333,
+                    0.5529411764705883
+                  ],
+                  "alpha": 0.64
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an default primary button in the hover state.",
@@ -109,7 +125,15 @@
             "active": {
               "$value": {
                 "default": "{color.neutral.100}",
-                "dark": "rgba(137, 136, 141, 0.32)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.5372549019607843,
+                    0.5333333333333333,
+                    0.5529411764705883
+                  ],
+                  "alpha": 0.32
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an default primary button in the active state.",
@@ -537,7 +561,15 @@
             "default": {
               "$value": {
                 "default": "{color.neutral.0}",
-                "dark": "rgba(66, 143, 220, 0.4)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.25882352941176473,
+                    0.5607843137254902,
+                    0.8627450980392157
+                  ],
+                  "alpha": 0.4
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the default state.",
@@ -551,7 +583,15 @@
             "hover": {
               "$value": {
                 "default": "{color.blue.50}",
-                "dark": "rgba(66, 143, 220, 0.64)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.25882352941176473,
+                    0.5607843137254902,
+                    0.8627450980392157
+                  ],
+                  "alpha": 0.64
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the hover state.",
@@ -576,7 +616,15 @@
             "active": {
               "$value": {
                 "default": "{color.blue.100}",
-                "dark": "rgba(66, 143, 220, 0.32)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.25882352941176473,
+                    0.5607843137254902,
+                    0.8627450980392157
+                  ],
+                  "alpha": 0.32
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined confirm (positive) button in the active state.",
@@ -1013,7 +1061,15 @@
             "default": {
               "$value": {
                 "default": "{color.neutral.0}",
-                "dark": "rgba(236, 89, 65, 0.40)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.9254901960784314,
+                    0.34901960784313724,
+                    0.2549019607843137
+                  ],
+                  "alpha": 0.4
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the default state.",
@@ -1027,7 +1083,15 @@
             "hover": {
               "$value": {
                 "default": "{color.red.50}",
-                "dark": "rgba(236, 89, 65, 0.64)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.9254901960784314,
+                    0.34901960784313724,
+                    0.2549019607843137
+                  ],
+                  "alpha": 0.64
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the hover state.",
@@ -1052,7 +1116,15 @@
             "active": {
               "$value": {
                 "default": "{color.red.100}",
-                "dark": "rgba(236, 89, 65, 0.32)"
+                "dark": {
+                  "colorSpace": "srgb",
+                  "components": [
+                    0.9254901960784314,
+                    0.34901960784313724,
+                    0.2549019607843137
+                  ],
+                  "alpha": 0.32
+                }
               },
               "$type": "color",
               "$description": "Used for the background of an outlined danger (destructive) button in the active state.",
@@ -1576,7 +1648,15 @@
         "color": {
           "$value": {
             "default": "{color.neutral.10}",
-            "dark": "rgba(137, 136, 141, 0.16)"
+            "dark": {
+              "colorSpace": "srgb",
+              "components": [
+                0.5372549019607843,
+                0.5333333333333333,
+                0.5529411764705883
+              ],
+              "alpha": 0.16
+            }
           },
           "$type": "color",
           "$description": "Used for the background of a disabled button.",

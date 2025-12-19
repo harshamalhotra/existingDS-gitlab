@@ -195,7 +195,7 @@
       "dark": {
         "2": {
           "key": "{color.alpha.dark.2}",
-          "$value": "rgba(05, 05, 06, 0.02)",
+          "$value": "rgba(5, 5, 6, 0.02)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -203,7 +203,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.02)",
+            "$value": "rgba(5, 5, 6, 0.02)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -222,7 +222,7 @@
         },
         "4": {
           "key": "{color.alpha.dark.4}",
-          "$value": "rgba(05, 05, 06, 0.04)",
+          "$value": "rgba(5, 5, 6, 0.04)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -230,7 +230,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.04)",
+            "$value": "rgba(5, 5, 6, 0.04)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -249,7 +249,7 @@
         },
         "6": {
           "key": "{color.alpha.dark.6}",
-          "$value": "rgba(05, 05, 06, 0.06)",
+          "$value": "rgba(5, 5, 6, 0.06)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -257,7 +257,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.06)",
+            "$value": "rgba(5, 5, 6, 0.06)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -276,7 +276,7 @@
         },
         "8": {
           "key": "{color.alpha.dark.8}",
-          "$value": "rgba(05, 05, 06, 0.08)",
+          "$value": "rgba(5, 5, 6, 0.08)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -284,7 +284,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.08)",
+            "$value": "rgba(5, 5, 6, 0.08)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -303,7 +303,7 @@
         },
         "16": {
           "key": "{color.alpha.dark.16}",
-          "$value": "rgba(05, 05, 06, 0.16)",
+          "$value": "rgba(5, 5, 6, 0.16)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -311,7 +311,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.16)",
+            "$value": "rgba(5, 5, 6, 0.16)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -330,7 +330,7 @@
         },
         "24": {
           "key": "{color.alpha.dark.24}",
-          "$value": "rgba(05, 05, 06, 0.24)",
+          "$value": "rgba(5, 5, 6, 0.24)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -338,7 +338,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.24)",
+            "$value": "rgba(5, 5, 6, 0.24)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -357,7 +357,7 @@
         },
         "40": {
           "key": "{color.alpha.dark.40}",
-          "$value": "rgba(05, 05, 06, 0.4)",
+          "$value": "rgba(5, 5, 6, 0.4)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -365,7 +365,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.4)",
+            "$value": "rgba(5, 5, 6, 0.4)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -7592,7 +7592,7 @@
       },
       "overlay": {
         "key": "{background.color.overlay}",
-        "$value": "rgba(0,0,0,0.64)",
+        "$value": "rgba(0, 0, 0, 0.64)",
         "$type": "color",
         "$description": "Used for an overlay that covers other content.",
         "$extensions": {
@@ -7604,7 +7604,7 @@
         "filePath": "src/tokens/semantic/background.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "rgba(0,0,0,0.64)",
+          "$value": "rgba(0, 0, 0, 0.64)",
           "$type": "color",
           "$description": "Used for an overlay that covers other content.",
           "$extensions": {
@@ -8121,7 +8121,7 @@
     "control": {
       "default": {
         "key": "{control.background.color.default}",
-        "$value": "rgba(05, 05, 06, 0.4)",
+        "$value": "rgba(5, 5, 6, 0.4)",
         "$type": "color",
         "$description": "Used for form control (input, radio button, checkbox, textarea) default background.",
         "$extensions": {
@@ -8457,7 +8457,7 @@
       "dark": {
         "2": {
           "key": "{color.alpha.dark.2}",
-          "$value": "rgba(05, 05, 06, 0.02)",
+          "$value": "rgba(5, 5, 6, 0.02)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8465,7 +8465,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.02)",
+            "$value": "rgba(5, 5, 6, 0.02)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8484,7 +8484,7 @@
         },
         "4": {
           "key": "{color.alpha.dark.4}",
-          "$value": "rgba(05, 05, 06, 0.04)",
+          "$value": "rgba(5, 5, 6, 0.04)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8492,7 +8492,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.04)",
+            "$value": "rgba(5, 5, 6, 0.04)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8511,7 +8511,7 @@
         },
         "6": {
           "key": "{color.alpha.dark.6}",
-          "$value": "rgba(05, 05, 06, 0.06)",
+          "$value": "rgba(5, 5, 6, 0.06)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8519,7 +8519,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.06)",
+            "$value": "rgba(5, 5, 6, 0.06)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8538,7 +8538,7 @@
         },
         "8": {
           "key": "{color.alpha.dark.8}",
-          "$value": "rgba(05, 05, 06, 0.08)",
+          "$value": "rgba(5, 5, 6, 0.08)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8546,7 +8546,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.08)",
+            "$value": "rgba(5, 5, 6, 0.08)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8565,7 +8565,7 @@
         },
         "16": {
           "key": "{color.alpha.dark.16}",
-          "$value": "rgba(05, 05, 06, 0.16)",
+          "$value": "rgba(5, 5, 6, 0.16)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8573,7 +8573,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.16)",
+            "$value": "rgba(5, 5, 6, 0.16)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8592,7 +8592,7 @@
         },
         "24": {
           "key": "{color.alpha.dark.24}",
-          "$value": "rgba(05, 05, 06, 0.24)",
+          "$value": "rgba(5, 5, 6, 0.24)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8600,7 +8600,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.24)",
+            "$value": "rgba(5, 5, 6, 0.24)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -8619,7 +8619,7 @@
         },
         "40": {
           "key": "{color.alpha.dark.40}",
-          "$value": "rgba(05, 05, 06, 0.4)",
+          "$value": "rgba(5, 5, 6, 0.4)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -8627,7 +8627,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.4)",
+            "$value": "rgba(5, 5, 6, 0.4)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -15650,7 +15650,7 @@
     "color": {
       "transparent": {
         "key": "{border.color.transparent}",
-        "$value": "transparent",
+        "$value": "rgba(0, 0, 0, 0)",
         "$type": "color",
         "$description": "Used when a border needs to be present, but not visibly perceived.",
         "$extensions": {
@@ -16410,7 +16410,7 @@
       "dark": {
         "2": {
           "key": "{color.alpha.dark.2}",
-          "$value": "rgba(05, 05, 06, 0.02)",
+          "$value": "rgba(5, 5, 6, 0.02)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16418,7 +16418,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.02)",
+            "$value": "rgba(5, 5, 6, 0.02)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16437,7 +16437,7 @@
         },
         "4": {
           "key": "{color.alpha.dark.4}",
-          "$value": "rgba(05, 05, 06, 0.04)",
+          "$value": "rgba(5, 5, 6, 0.04)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16445,7 +16445,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.04)",
+            "$value": "rgba(5, 5, 6, 0.04)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16464,7 +16464,7 @@
         },
         "6": {
           "key": "{color.alpha.dark.6}",
-          "$value": "rgba(05, 05, 06, 0.06)",
+          "$value": "rgba(5, 5, 6, 0.06)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16472,7 +16472,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.06)",
+            "$value": "rgba(5, 5, 6, 0.06)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16491,7 +16491,7 @@
         },
         "8": {
           "key": "{color.alpha.dark.8}",
-          "$value": "rgba(05, 05, 06, 0.08)",
+          "$value": "rgba(5, 5, 6, 0.08)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16499,7 +16499,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.08)",
+            "$value": "rgba(5, 5, 6, 0.08)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16518,7 +16518,7 @@
         },
         "16": {
           "key": "{color.alpha.dark.16}",
-          "$value": "rgba(05, 05, 06, 0.16)",
+          "$value": "rgba(5, 5, 6, 0.16)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16526,7 +16526,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.16)",
+            "$value": "rgba(5, 5, 6, 0.16)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16545,7 +16545,7 @@
         },
         "24": {
           "key": "{color.alpha.dark.24}",
-          "$value": "rgba(05, 05, 06, 0.24)",
+          "$value": "rgba(5, 5, 6, 0.24)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16553,7 +16553,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.24)",
+            "$value": "rgba(5, 5, 6, 0.24)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -16572,7 +16572,7 @@
         },
         "40": {
           "key": "{color.alpha.dark.40}",
-          "$value": "rgba(05, 05, 06, 0.4)",
+          "$value": "rgba(5, 5, 6, 0.4)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -16580,7 +16580,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.4)",
+            "$value": "rgba(5, 5, 6, 0.4)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24564,7 +24564,7 @@
       "dark": {
         "2": {
           "key": "{color.alpha.dark.2}",
-          "$value": "rgba(05, 05, 06, 0.02)",
+          "$value": "rgba(5, 5, 6, 0.02)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24572,7 +24572,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.02)",
+            "$value": "rgba(5, 5, 6, 0.02)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24591,7 +24591,7 @@
         },
         "4": {
           "key": "{color.alpha.dark.4}",
-          "$value": "rgba(05, 05, 06, 0.04)",
+          "$value": "rgba(5, 5, 6, 0.04)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24599,7 +24599,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.04)",
+            "$value": "rgba(5, 5, 6, 0.04)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24618,7 +24618,7 @@
         },
         "6": {
           "key": "{color.alpha.dark.6}",
-          "$value": "rgba(05, 05, 06, 0.06)",
+          "$value": "rgba(5, 5, 6, 0.06)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24626,7 +24626,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.06)",
+            "$value": "rgba(5, 5, 6, 0.06)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24645,7 +24645,7 @@
         },
         "8": {
           "key": "{color.alpha.dark.8}",
-          "$value": "rgba(05, 05, 06, 0.08)",
+          "$value": "rgba(5, 5, 6, 0.08)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24653,7 +24653,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.08)",
+            "$value": "rgba(5, 5, 6, 0.08)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24672,7 +24672,7 @@
         },
         "16": {
           "key": "{color.alpha.dark.16}",
-          "$value": "rgba(05, 05, 06, 0.16)",
+          "$value": "rgba(5, 5, 6, 0.16)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24680,7 +24680,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.16)",
+            "$value": "rgba(5, 5, 6, 0.16)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24699,7 +24699,7 @@
         },
         "24": {
           "key": "{color.alpha.dark.24}",
-          "$value": "rgba(05, 05, 06, 0.24)",
+          "$value": "rgba(5, 5, 6, 0.24)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24707,7 +24707,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.24)",
+            "$value": "rgba(5, 5, 6, 0.24)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -24726,7 +24726,7 @@
         },
         "40": {
           "key": "{color.alpha.dark.40}",
-          "$value": "rgba(05, 05, 06, 0.4)",
+          "$value": "rgba(5, 5, 6, 0.4)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -24734,7 +24734,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.4)",
+            "$value": "rgba(5, 5, 6, 0.4)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -32907,7 +32907,7 @@
       "dark": {
         "2": {
           "key": "{color.alpha.dark.2}",
-          "$value": "rgba(05, 05, 06, 0.02)",
+          "$value": "rgba(5, 5, 6, 0.02)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -32915,7 +32915,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.02)",
+            "$value": "rgba(5, 5, 6, 0.02)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -32934,7 +32934,7 @@
         },
         "4": {
           "key": "{color.alpha.dark.4}",
-          "$value": "rgba(05, 05, 06, 0.04)",
+          "$value": "rgba(5, 5, 6, 0.04)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -32942,7 +32942,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.04)",
+            "$value": "rgba(5, 5, 6, 0.04)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -32961,7 +32961,7 @@
         },
         "6": {
           "key": "{color.alpha.dark.6}",
-          "$value": "rgba(05, 05, 06, 0.06)",
+          "$value": "rgba(5, 5, 6, 0.06)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -32969,7 +32969,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.06)",
+            "$value": "rgba(5, 5, 6, 0.06)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -32988,7 +32988,7 @@
         },
         "8": {
           "key": "{color.alpha.dark.8}",
-          "$value": "rgba(05, 05, 06, 0.08)",
+          "$value": "rgba(5, 5, 6, 0.08)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -32996,7 +32996,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.08)",
+            "$value": "rgba(5, 5, 6, 0.08)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -33015,7 +33015,7 @@
         },
         "16": {
           "key": "{color.alpha.dark.16}",
-          "$value": "rgba(05, 05, 06, 0.16)",
+          "$value": "rgba(5, 5, 6, 0.16)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -33023,7 +33023,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.16)",
+            "$value": "rgba(5, 5, 6, 0.16)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -33042,7 +33042,7 @@
         },
         "24": {
           "key": "{color.alpha.dark.24}",
-          "$value": "rgba(05, 05, 06, 0.24)",
+          "$value": "rgba(5, 5, 6, 0.24)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -33050,7 +33050,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.24)",
+            "$value": "rgba(5, 5, 6, 0.24)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -33069,7 +33069,7 @@
         },
         "40": {
           "key": "{color.alpha.dark.40}",
-          "$value": "rgba(05, 05, 06, 0.4)",
+          "$value": "rgba(5, 5, 6, 0.4)",
           "$type": "color",
           "$extensions": {
             "com.figma.scopes": []
@@ -33077,7 +33077,7 @@
           "filePath": "src/tokens/constant/color.alpha.tokens.json",
           "isSource": true,
           "original": {
-            "$value": "rgba(05, 05, 06, 0.4)",
+            "$value": "rgba(5, 5, 6, 0.4)",
             "$type": "color",
             "$extensions": {
               "com.figma.scopes": []
@@ -41759,14 +41759,14 @@
       "key": "{shadow.sm}",
       "$value": [
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": 0,
           "blur": "2px",
           "spread": 0
         },
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": "1px",
           "blur": "4px",
@@ -41816,21 +41816,21 @@
       "key": "{shadow.md}",
       "$value": [
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": 0,
           "blur": "1px",
           "spread": 0
         },
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": 0,
           "blur": "2px",
           "spread": 0
         },
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": "2px",
           "blur": "8px",
@@ -41887,21 +41887,21 @@
       "key": "{shadow.lg}",
       "$value": [
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": 0,
           "blur": "2px",
           "spread": 0
         },
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": 0,
           "blur": "2px",
           "spread": 0
         },
         {
-          "color": "rgba(05, 05, 06, 0.4)",
+          "color": "rgba(5, 5, 6, 0.4)",
           "offsetX": 0,
           "offsetY": "4px",
           "blur": "12px",
