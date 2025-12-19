@@ -1,4 +1,4 @@
-import { Vue, extend, isGlobalVue3 } from '../../vue'
+import { isVue3, extend } from '../../vue'
 import { NAME_TRANSPORTER, NAME_TRANSPORTER_TARGET } from '../../constants/components'
 import { IS_BROWSER } from '../../constants/env'
 import {
@@ -79,7 +79,7 @@ export const props = {
 // --- Main component ---
 
 // @vue/component
-const BVTransporterVue2 = /*#__PURE__*/ extend({
+export const BVTransporter = /*#__PURE__*/ extend({
   name: NAME_TRANSPORTER,
   mixins: [normalizeSlotMixin],
   props,
@@ -87,28 +87,41 @@ const BVTransporterVue2 = /*#__PURE__*/ extend({
     disabled: {
       immediate: true,
       handler(disabled) {
+        // Vue 2 only: manage manual portaling
+        if (isVue3(this)) return
+
         disabled ? this.unmountTarget() : this.$nextTick(this.mountTarget)
       }
     }
   },
   created() {
-    // Create private non-reactive props
+    // Vue 2 only: create private non-reactive props
+    if (isVue3(this)) return
+
     this.$_defaultFn = null
     this.$_target = null
   },
   beforeMount() {
+    // Vue 2 only
+    if (isVue3(this)) return
+
     this.mountTarget()
   },
   updated() {
+    // Vue 2 only
     // We need to make sure that all children have completed updating
     // before rendering in the target
     // `vue-simple-portal` has the this in a `$nextTick()`,
     // while `portal-vue` doesn't
     // Just trying to see if the `$nextTick()` delay is required or not
     // Since all slots in Vue 2.6.x are always functions
+    if (isVue3(this)) return
     this.updateTarget()
   },
   beforeDestroy() {
+    // Vue 2 only
+    if (isVue3(this)) return
+
     this.unmountTarget()
     this.$_defaultFn = null
   },
@@ -167,7 +180,27 @@ const BVTransporterVue2 = /*#__PURE__*/ extend({
     }
   },
   render(h) {
-    // This component has no root element, so only a single VNode is allowed
+    if (isVue3(this)) {
+      // Vue 3: use native Teleport
+      if (this.disabled) {
+        const $nodes = concat(this.normalizeSlot()).filter(identity)
+        if ($nodes.length > 0) {
+          return $nodes[0]
+        }
+      }
+
+      const { Teleport } = this.$.appContext.config.globalProperties.constructor
+
+      return h(
+        Teleport,
+        {
+          to: this.container
+        },
+        this.normalizeSlot()
+      )
+    }
+
+    // Vue 2: this component has no root element, so only a single VNode is allowed
     if (this.disabled) {
       const $nodes = concat(this.normalizeSlot()).filter(identity)
       if ($nodes.length > 0 && !$nodes[0].text) {
@@ -177,26 +210,3 @@ const BVTransporterVue2 = /*#__PURE__*/ extend({
     return h()
   }
 })
-
-const BVTransporterVue3 = /*#__PURE__*/ extend({
-  name: NAME_TRANSPORTER,
-  mixins: [normalizeSlotMixin],
-  props,
-  render(h) {
-    if (this.disabled) {
-      const $nodes = concat(this.normalizeSlot()).filter(identity)
-      if ($nodes.length > 0) {
-        return $nodes[0]
-      }
-    }
-    return h(
-      Vue.Teleport,
-      {
-        to: this.container
-      },
-      this.normalizeSlot()
-    )
-  }
-})
-
-export const BVTransporter = isGlobalVue3 ? BVTransporterVue3 : BVTransporterVue2
