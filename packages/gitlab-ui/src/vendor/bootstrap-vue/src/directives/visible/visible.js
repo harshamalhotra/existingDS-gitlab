@@ -36,12 +36,12 @@ import { requestAF } from '../../utils/dom'
 import { isFunction } from '../../utils/inspect'
 import { looseEqual } from '../../utils/loose-equal'
 import { clone, keys } from '../../utils/object'
-import { nextTick } from '../../vue'
+import { getInstanceFromDirective } from '../../utils/get-instance-from-directive'
 
 const OBSERVER_PROP_NAME = '__bv__visibility_observer'
 
 class VisibilityObserver {
-  constructor(el, options) {
+  constructor(el, options, instance) {
     this.el = el
     this.callback = options.callback
     this.margin = options.margin || 0
@@ -49,6 +49,7 @@ class VisibilityObserver {
     this.observer = null
     this.visible = undefined
     this.doneOnce = false
+    this.instance = instance
     // Create the observer instance (if possible)
     this.createObserver()
   }
@@ -88,7 +89,7 @@ class VisibilityObserver {
 
     // Start observing in a `$nextTick()` (to allow DOM to complete rendering)
     /* istanbul ignore next: IntersectionObserver not supported in JSDOM */
-    nextTick(() => {
+    this.instance.$nextTick(() => {
       requestAF(() => {
         // Placed in an `if` just in case we were destroyed before
         // this `requestAnimationFrame` runs
@@ -128,7 +129,8 @@ const destroy = el => {
   delete el[OBSERVER_PROP_NAME]
 }
 
-const bind = (el, { value, modifiers }) => {
+const bind = (el, bindings, vnode) => {
+  const { value, modifiers } = bindings
   // `value` is the callback function
   const options = {
     margin: '0px',
@@ -147,26 +149,28 @@ const bind = (el, { value, modifiers }) => {
   // Destroy any previous observer
   destroy(el)
   // Create new observer
-  el[OBSERVER_PROP_NAME] = new VisibilityObserver(el, options)
+  const instance = getInstanceFromDirective(vnode, bindings)
+  el[OBSERVER_PROP_NAME] = new VisibilityObserver(el, options, instance)
   // Store the current modifiers on the object (cloned)
   el[OBSERVER_PROP_NAME]._prevModifiers = clone(modifiers)
 }
 
 // When the directive options may have been updated (or element)
-const componentUpdated = (el, { value, oldValue, modifiers }, vnode) => {
+const componentUpdated = (el, bindings, vnode) => {
+  const { value, oldValue, modifiers } = bindings
   // Compare value/oldValue and modifiers to see if anything has changed
   // and if so, destroy old observer and create new observer
   /* istanbul ignore next */
-  modifiers = clone(modifiers)
+  const clonedModifiers = clone(modifiers)
   /* istanbul ignore next */
   if (
     el &&
     (value !== oldValue ||
       !el[OBSERVER_PROP_NAME] ||
-      !looseEqual(modifiers, el[OBSERVER_PROP_NAME]._prevModifiers))
+      !looseEqual(clonedModifiers, el[OBSERVER_PROP_NAME]._prevModifiers))
   ) {
     // Re-bind on element
-    bind(el, { value, modifiers }, vnode)
+    bind(el, bindings, vnode)
   }
 }
 

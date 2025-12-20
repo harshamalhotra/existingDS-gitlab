@@ -2,7 +2,7 @@ import { NAME_TOOLTIP } from '../../constants/components'
 import { IS_BROWSER } from '../../constants/env'
 import { EVENT_NAME_SHOW } from '../../constants/events'
 import { concat } from '../../utils/array'
-import { isVue3, nextTick } from '../../vue'
+import { isVue3 } from '../../vue'
 import { getComponentConfig } from '../../utils/config'
 import { getScopeId } from '../../utils/get-scope-id'
 import { identity } from '../../utils/identity'
@@ -262,7 +262,7 @@ export const VBTooltip = {
   // waits until the containing component and children have finished updating
   componentUpdated(el, bindings, vnode) {
     // Performed in a `$nextTick()` to prevent render update loops
-    nextTick(() => {
+    getInstanceFromDirective(vnode, bindings).$nextTick(() => {
       applyTooltip(el, bindings, vnode)
     })
   },

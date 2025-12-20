@@ -1,29 +1,5 @@
-import { Vue as OurVue } from '../vue'
-import { HAS_WINDOW_SUPPORT, IS_JSDOM } from '../constants/env'
+import { HAS_WINDOW_SUPPORT } from '../constants/env'
 import { setConfig } from './config-set'
-import { warn } from './warn'
-
-/**
- * Checks if there are multiple instances of Vue, and warns (once) about possible issues.
- * @param {object} Vue
- */
-export const checkMultipleVue = (() => {
-  let checkMultipleVueWarned = false
-
-  const MULTIPLE_VUE_WARNING = [
-    'Multiple instances of Vue detected!',
-    'You may need to set up an alias for Vue in your bundler config.',
-    'See: https://bootstrap-vue.org/docs#using-module-bundlers'
-  ].join('\n')
-
-  return Vue => {
-    /* istanbul ignore next */
-    if (!checkMultipleVueWarned && OurVue !== Vue && !IS_JSDOM) {
-      warn(MULTIPLE_VUE_WARNING)
-    }
-    checkMultipleVueWarned = true
-  }
-})()
 
 /**
  * Plugin install factory function.
@@ -37,7 +13,6 @@ export const installFactory = ({ components, directives, plugins } = {}) => {
       return
     }
     install.installed = true
-    checkMultipleVue(Vue)
     setConfig(config, Vue)
     registerComponents(Vue, components)
     registerDirectives(Vue, directives)

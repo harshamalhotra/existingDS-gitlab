@@ -1,7 +1,7 @@
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { mount } from '@vue/test-utils'
 import { waitRAF } from '../../../tests/utils'
-import { Vue } from '../../vue'
 import { BDropdownItem } from './dropdown-item'
 
 Vue.use(VueRouter)

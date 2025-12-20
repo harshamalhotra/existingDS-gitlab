@@ -151,6 +151,4 @@ const extend = function patchedBootstrapVueExtend(definition) {
   return originalExtend.call(this, definition)
 }.bind(Vue)
 
-const nextTick = Vue.nextTick
-
-export { COMPONENT_UID_KEY, Vue, mergeData, isGlobalVue3, isVue3, nextTick, extend }
+export { COMPONENT_UID_KEY, mergeData, isGlobalVue3, isVue3, extend }
