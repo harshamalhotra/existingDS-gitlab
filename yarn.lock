@@ -9201,10 +9201,10 @@ cypress-real-events@^1.15.0:
   resolved "https://registry.yarnpkg.com/cypress-real-events/-/cypress-real-events-1.15.0.tgz#b84ed97455238139ac3d0c8f803991b30f22fc8a"
   integrity sha512-in98xxTnnM9Z7lZBvvVozm99PBT2eEOjXRG5LKWyYvQnj9mGWXMiPNpfw7e7WiraBFh7XlXIxnE9Cu5o+52kQQ==
 
-cypress@15.7.1:
-  version "15.7.1"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-15.7.1.tgz#5ff5101a07b2627809adbaba86a66ff0dc499e88"
-  integrity sha512-U3sYnJ+Cnpgr6IPycxsznTg//mGVXfPGeGV+om7VQCyp5XyVkhG4oPr3X3hTq1+OB0Om0O5DxusYmt7cbvwqMQ==
+cypress@15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-15.8.1.tgz#48fcb0859b8b656534c9bb3f3abbf37554a2bb2d"
+  integrity sha512-ogc62stTQGh1395ipKxfCE5hQuSApTzeH5e0d9U6m7wYO9HQeCpgnkYtBtd0MbkN2Fnch5Od2mX9u4hoTlrH4Q==
   dependencies:
     "@cypress/request" "^3.0.9"
     "@cypress/xvfb" "^1.2.4"
@@ -9243,7 +9243,7 @@ cypress@15.7.1:
     proxy-from-env "1.0.0"
     request-progress "^3.0.0"
     supports-color "^8.1.1"
-    systeminformation "5.27.7"
+    systeminformation "^5.27.14"
     tmp "~0.2.4"
     tree-kill "1.2.2"
     untildify "^4.0.0"
@@ -20601,10 +20601,10 @@ synckit@^0.11.8:
   dependencies:
     "@pkgr/core" "^0.2.4"
 
-systeminformation@5.27.7:
-  version "5.27.7"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.27.7.tgz#4dc9d436419948cd5e5f076779a1298220d19a72"
-  integrity sha512-saaqOoVEEFaux4v0K8Q7caiauRwjXC4XbD2eH60dxHXbpKxQ8kH9Rf7Jh+nryKpOUSEFxtCdBlSUx0/lO6rwRg==
+systeminformation@^5.27.14:
+  version "5.27.14"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.27.14.tgz#9f2b181521c151dad4972d47936ebb49a3271e9d"
+  integrity sha512-3DoNDYSZBLxBwaJtQGWNpq0fonga/VZ47HY1+7/G3YoIPaPz93Df6egSzzTKbEMmlzUpy3eQ0nR9REuYIycXGg==
 
 table@^6.9.0:
   version "6.9.0"

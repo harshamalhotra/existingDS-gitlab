@@ -131,7 +131,7 @@
     "autoprefixer": "10.4.22",
     "axe-playwright": "^2.2.2",
     "babel-loader": "^9.2.1",
-    "cypress": "15.7.1",
+    "cypress": "15.8.1",
     "cypress-real-events": "^1.15.0",
     "dompurify": "^3.1.2",
     "emoji-regex": "^10.6.0",
