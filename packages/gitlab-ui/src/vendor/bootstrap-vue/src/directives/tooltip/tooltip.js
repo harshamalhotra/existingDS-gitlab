@@ -18,7 +18,7 @@ import {
 import { looseEqual } from '../../utils/loose-equal'
 import { toInteger } from '../../utils/number'
 import { keys } from '../../utils/object'
-import { createNewChildComponent } from '../../utils/create-new-child-component'
+import { createNewChildComponent, eventProp } from '../../utils/create-new-child-component'
 import { BVTooltip } from '../../components/tooltip/helpers/bv-tooltip'
 
 // Key which we use to store tooltip object on element
@@ -197,17 +197,19 @@ const applyTooltip = (el, bindings, vnode) => {
     const parent = getInstanceFromDirective(vnode, bindings)
     el[BV_TOOLTIP] = createNewChildComponent(parent, BVTooltip, {
       // Add the parent's scoped style attribute data
-      _scopeId: getScopeId(parent, undefined)
-    })
-    el[BV_TOOLTIP].__bv_prev_data__ = {}
-    el[BV_TOOLTIP].$on(EVENT_NAME_SHOW, () => /* istanbul ignore next: for now */ {
-      // Before showing the tooltip, we update the title if it is a function
-      if (isFunction(config.title)) {
-        el[BV_TOOLTIP].updateData({
-          title: config.title(el)
-        })
+      _scopeId: getScopeId(parent, undefined),
+      propsData: {
+        [eventProp(EVENT_NAME_SHOW)]: () => /* istanbul ignore next: for now */ {
+          // Before showing the tooltip, we update the title if it is a function
+          if (isFunction(config.title)) {
+            el[BV_TOOLTIP].updateData({
+              title: config.title(el)
+            })
+          }
+        }
       }
     })
+    el[BV_TOOLTIP].__bv_prev_data__ = {}
   }
   const data = {
     title: config.title,
