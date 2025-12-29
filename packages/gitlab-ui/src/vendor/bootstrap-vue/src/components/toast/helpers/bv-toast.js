@@ -3,12 +3,7 @@
  */
 
 import { NAME_TOAST, NAME_TOASTER, NAME_TOAST_POP } from '../../../constants/components'
-import {
-  EVENT_NAME_DESTROYED,
-  EVENT_NAME_HIDDEN,
-  EVENT_NAME_HIDE,
-  EVENT_NAME_SHOW
-} from '../../../constants/events'
+import { EVENT_NAME_DESTROYED, EVENT_NAME_HIDE, EVENT_NAME_SHOW } from '../../../constants/events'
 import { onInstanceDestroy } from '../../../utils/on-instance-destroy'
 import { useParentMixin } from '../../../mixins/use-parent'
 import { concat } from '../../../utils/array'
@@ -77,8 +72,8 @@ const plugin = Vue => {
       }
     },
     mounted() {
-      // Self destruct handler
-      const handleDestroy = () => {
+      // Self destruct handler (stored as instance property for use in onAfterLeave)
+      this.$_handleDestroy = () => {
         // Ensure the toast has been force hidden
         this.localShow = false
         this.doRender = false
@@ -93,16 +88,23 @@ const plugin = Vue => {
         })
       }
       // Self destruct if parent destroyed
-      onInstanceDestroy(this.bvParent, handleDestroy)
-      // Self destruct after hidden
-      this.$once(EVENT_NAME_HIDDEN, handleDestroy)
+      onInstanceDestroy(this.bvParent, this.$_handleDestroy)
       // Self destruct when toaster is destroyed
       this.listenOnRoot(getRootEventName(NAME_TOASTER, EVENT_NAME_DESTROYED), toaster => {
         /* istanbul ignore next: hard to test */
         if (toaster === this.toaster) {
-          handleDestroy()
+          this.$_handleDestroy()
         }
       })
+    },
+    methods: {
+      // Override parent's onAfterLeave to self-destruct after hidden
+      onAfterLeave() {
+        // Call parent's implementation
+        BToast.options.methods.onAfterLeave.call(this)
+        // Self destruct after hidden
+        this.$_handleDestroy()
+      }
     }
   })
 

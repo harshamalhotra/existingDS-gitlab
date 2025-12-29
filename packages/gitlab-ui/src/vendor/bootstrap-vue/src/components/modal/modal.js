@@ -386,7 +386,7 @@ export const BModal = /*#__PURE__*/ extend({
       if (this.isClosing) {
         // If we are in the process of closing, wait until hidden before re-opening
         /* istanbul ignore next */
-        this.$once(EVENT_NAME_HIDDEN, this.show)
+        this.$_showOnHidden = true
         /* istanbul ignore next */
         return
       }
@@ -545,6 +545,11 @@ export const BModal = /*#__PURE__*/ extend({
         // TODO: Need to find a way to pass the `trigger` property
         //       to the `hidden` event, not just only the `hide` event
         this.emitEvent(this.buildEvent(EVENT_NAME_HIDDEN))
+        // Handle pending show request (show was called while closing)
+        if (this.$_showOnHidden) {
+          this.$_showOnHidden = false
+          this.show()
+        }
       })
     },
     emitEvent(bvEvent) {
