@@ -18,11 +18,23 @@ describe('GlPopover', () => {
   const findBVPopover = () => wrapper.findComponent({ ref: 'bPopover' });
   const findCloseButton = () => findBVPopover().find('[data-testid="close-button"]');
 
-  it.each(tooltipActionEvents)('passes through the %s event to the bvPopover instance', (event) => {
-    createWrapper();
+  it.each(tooltipActionEvents)('passes through the %s event to call bvPopover method', (event) => {
+    const methodMock = jest.fn();
+    createWrapper(
+      {},
+      {
+        BPopover: {
+          template: '<div></div>',
+          methods: {
+            [event]: methodMock,
+          },
+        },
+      },
+    );
+
     wrapper.vm.$emit(event);
 
-    expect(findBVPopover().emitted(event)).toHaveLength(1);
+    expect(methodMock).toHaveBeenCalled();
   });
 
   it('does not have the `has-close-button` class where there is no close button', () => {
@@ -70,7 +82,7 @@ describe('GlPopover', () => {
   });
 
   describe('close button', () => {
-    let doCloseMock;
+    let closeMock;
 
     const createWrapperWithCloseButton = (title = '') => {
       createWrapper(
@@ -83,7 +95,7 @@ describe('GlPopover', () => {
             </div>
           `,
             methods: {
-              doClose: doCloseMock,
+              close: closeMock,
             },
             props: ['customClass'],
           },
@@ -92,7 +104,7 @@ describe('GlPopover', () => {
     };
 
     beforeEach(() => {
-      doCloseMock = jest.fn();
+      closeMock = jest.fn();
     });
 
     describe('when there is no title', () => {
@@ -109,10 +121,10 @@ describe('GlPopover', () => {
         expect(findCloseButton().classes()).toContain('gl-float-right');
       });
 
-      it("calls BPopover's doClose method when clicking on the close button", () => {
+      it("calls BPopover's close method when clicking on the close button", () => {
         findCloseButton().vm.$emit('click');
 
-        expect(doCloseMock).toHaveBeenCalled();
+        expect(closeMock).toHaveBeenCalled();
       });
 
       it('emits close-button-clicked event when clicking on the close button', () => {

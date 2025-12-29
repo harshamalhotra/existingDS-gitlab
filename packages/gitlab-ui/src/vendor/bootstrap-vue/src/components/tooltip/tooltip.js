@@ -141,9 +141,9 @@ export const BTooltip = /*#__PURE__*/ extend({
     },
     [MODEL_PROP_NAME_ENABLED](newValue) {
       if (newValue) {
-        this.doDisable()
+        this[EVENT_NAME_DISABLE]()
       } else {
-        this.doEnable()
+        this[EVENT_NAME_ENABLE]()
       }
     },
     localShow(newValue) {
@@ -172,11 +172,6 @@ export const BTooltip = /*#__PURE__*/ extend({
     this.$nextTick(this.updateContent)
   },
   beforeDestroy() {
-    // Shutdown our local event listeners
-    this.$off(EVENT_NAME_OPEN, this.doOpen)
-    this.$off(EVENT_NAME_CLOSE, this.doClose)
-    this.$off(EVENT_NAME_DISABLE, this.doDisable)
-    this.$off(EVENT_NAME_ENABLE, this.doEnable)
     // Destroy the tip instance
     if (this.$_toolpop) {
       this.$_toolpop.$destroy()
@@ -211,16 +206,8 @@ export const BTooltip = /*#__PURE__*/ extend({
       // Initially disabled?
       if (this[MODEL_PROP_NAME_ENABLED]) {
         // Initially disabled
-        this.doDisable()
+        this[EVENT_NAME_DISABLE]()
       }
-      // Listen to open signals from others
-      this.$on(EVENT_NAME_OPEN, this.doOpen)
-      // Listen to close signals from others
-      this.$on(EVENT_NAME_CLOSE, this.doClose)
-      // Listen to disable signals from others
-      this.$on(EVENT_NAME_DISABLE, this.doDisable)
-      // Listen to enable signals from others
-      this.$on(EVENT_NAME_ENABLE, this.doEnable)
       // Initially show tooltip?
       if (this.localShow) {
         $toolpop.show()
@@ -292,17 +279,17 @@ export const BTooltip = /*#__PURE__*/ extend({
         this.$emit(EVENT_NAME_ENABLED, bvEvent)
       }
     },
-    // --- Local event listeners ---
-    doOpen() {
+    // --- Public methods for programmatic control ---
+    [EVENT_NAME_OPEN]() {
       !this.localShow && this.$_toolpop && this.$_toolpop.show()
     },
-    doClose() {
+    [EVENT_NAME_CLOSE]() {
       this.localShow && this.$_toolpop && this.$_toolpop.hide()
     },
-    doDisable() {
+    [EVENT_NAME_DISABLE]() {
       this.$_toolpop && this.$_toolpop.disable()
     },
-    doEnable() {
+    [EVENT_NAME_ENABLE]() {
       this.$_toolpop && this.$_toolpop.enable()
     }
   },

@@ -104,8 +104,8 @@ export default {
 
       return [];
     },
-    close(e) {
-      this.$refs[popoverRefName].doClose();
+    closePopover(e) {
+      this.$refs[popoverRefName].close();
       /**
        * Emitted when the close button is clicked (requires showCloseButton to be `true`).
        */
@@ -136,7 +136,7 @@ export default {
         <close-button
           :class="{ 'gl-float-right gl-mt-2': !hasTitle }"
           data-testid="close-button"
-          @click="close"
+          @click="closePopover"
         />
       </div>
     </template>
