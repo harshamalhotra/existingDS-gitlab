@@ -8,10 +8,11 @@ const ONCE_SUFFIX = 'Once'
  * Converts an event name to a handler prop name.
  * Use as computed property key with event constants: [eventProp(EVENT_NAME_HIDDEN)]
  * @param {string} eventName - The event name (e.g., 'hidden', 'show', 'mouseenter')
- * @param {boolean} once - If true, returns the "once" variant (e.g., 'onHiddenOnce')
+ * @param {Object} options - Options object
+ * @param {boolean} options.once - If true, returns the "once" variant (e.g., 'onHiddenOnce')
  * @returns {string} The handler prop name (e.g., 'onHidden', 'onHiddenOnce')
  */
-export const eventProp = (eventName, once = false) => {
+export const eventProp = (eventName, { once = false } = {}) => {
   const capitalized = eventName.charAt(0).toUpperCase() + eventName.slice(1)
   return `on${capitalized}${once ? ONCE_SUFFIX : ''}`
 }
