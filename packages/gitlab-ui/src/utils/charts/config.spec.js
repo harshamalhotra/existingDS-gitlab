@@ -191,6 +191,7 @@ describe('chart config helpers', () => {
   describe('getDataZoomConfig', () => {
     describe('on large viewports (lg, xl)', () => {
       it('creates a basic dataZoomConfig with inside scrolling being disabled', () => {
+        jest.spyOn(GlBreakpointInstance, 'getBreakpointSize').mockImplementationOnce(() => 'lg');
         const actual = getDataZoomConfig();
         const expected = mockDefaultDataZoomConfig;
 
@@ -216,7 +217,7 @@ describe('chart config helpers', () => {
             disabled: false,
           },
         ];
-        const expected = merge(mockDefaultDataZoomConfig, {
+        const expected = merge({}, mockDefaultDataZoomConfig, {
           dataZoom: dataZoomWithInsideEnabled,
         });
 
@@ -242,7 +243,7 @@ describe('chart config helpers', () => {
           disabled: true,
         },
       ];
-      const expected = merge(mockDefaultDataZoomConfig, {
+      const expected = merge({}, mockDefaultDataZoomConfig, {
         dataZoom: dataZoomWithFilter,
       });
 

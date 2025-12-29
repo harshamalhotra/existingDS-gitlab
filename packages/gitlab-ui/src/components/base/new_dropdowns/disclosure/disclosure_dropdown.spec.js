@@ -59,7 +59,9 @@ describe('GlDisclosureDropdown', () => {
     findDisclosureItems(root).at(index).findComponent(ITEM_SELECTOR);
   const findDropdownMenu = (root = wrapper) => root.find("[data-testid='base-dropdown-menu']");
 
-  jest.spyOn(utils, 'filterVisible').mockImplementation((items) => items);
+  beforeEach(() => {
+    jest.spyOn(utils, 'filterVisible').mockImplementation((items) => items);
+  });
 
   it('passes custom offset to the base dropdown', () => {
     const dropdownOffset = { mainAxis: 10, crossAxis: 40 };
@@ -183,6 +185,7 @@ describe('GlDisclosureDropdown', () => {
     });
 
     it('should move the focus up the list of items on `ARROW_UP` and stop on the first item', async () => {
+      firstItem.element.focus();
       await firstItem.trigger('keydown', { code: ARROW_DOWN });
       await secondItem.trigger('keydown', { code: ARROW_DOWN });
       await thirdItem.trigger('keydown', { code: ARROW_DOWN });
@@ -213,6 +216,7 @@ describe('GlDisclosureDropdown', () => {
     });
 
     it('should move focus to the first item on `HOME` keydown', async () => {
+      firstItem.element.focus();
       await firstItem.trigger('keydown', { code: ARROW_DOWN });
       await secondItem.trigger('keydown', { code: ARROW_DOWN });
       expect(thirdItem.element).toHaveFocus();

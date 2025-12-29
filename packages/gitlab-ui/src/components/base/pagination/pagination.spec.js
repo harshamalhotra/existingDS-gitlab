@@ -69,6 +69,7 @@ describe('pagination component', () => {
   });
 
   it('supports slots customization', () => {
+    mockResizeWidth(breakpoints.lg);
     createComponent(
       {
         ...propsData,

@@ -1,12 +1,17 @@
 import { shallowMount } from '@vue/test-utils';
 import { useMockResizeObserver } from '~helpers/mock_dom_observer';
-import { GlResizeObserverDirective } from './resize_observer';
+import { GlResizeObserverDirective, resetObserver } from './resize_observer';
 
 describe('resize observer directive', () => {
   const { trigger, observersCount, observesElement } = useMockResizeObserver();
 
   const mockHandleResize = jest.fn();
   let wrapper;
+
+  beforeEach(() => {
+    // Reset the directive's shared observer to ensure test isolation
+    resetObserver();
+  });
 
   const createComponent = ({ template, data = {} } = {}) => {
     const defaultTemplate = `<div v-resize-observer="handleResize"></div>`;

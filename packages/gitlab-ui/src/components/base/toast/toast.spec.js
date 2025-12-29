@@ -1,5 +1,6 @@
-import Vue from 'vue';
+import Vue, { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
+import { Wormhole } from 'portal-vue';
 import { waitForAnimationFrame } from '../../../utils/test_utils';
 import { TEST_HOST } from '../../../../tests/__helpers__/constants';
 import GlToast from './toast';
@@ -8,6 +9,22 @@ Vue.use(GlToast);
 const Component = {
   template: `<div />`,
 };
+
+function cleanupWormhole() {
+  // Clear pending transports (portal content)
+  Object.keys(Wormhole.transports).forEach((target) => {
+    Wormhole.transports[target] = [];
+  });
+  // Clear registered targets
+  Object.keys(Wormhole.targets).forEach((target) => {
+    Wormhole.unregisterTarget(target);
+  });
+}
+
+function cleanupDom() {
+  document.body.querySelectorAll('.gl-toast').forEach((el) => el.remove());
+  document.body.querySelectorAll('.b-toaster').forEach((el) => el.remove());
+}
 
 describe('GlToast', () => {
   let wrapper;
@@ -25,12 +42,17 @@ describe('GlToast', () => {
     return toast;
   }
 
-  beforeEach(() => {
-    wrapper = mount(Component);
-  });
+  beforeEach(async () => {
+    // Flush pending microtasks and animation frames from previous tests
+    await nextTick();
+    await waitForAnimationFrame();
+    await nextTick();
+    // Ensure clean DOM state regardless of test order
+    cleanupDom();
+    // Clear portal-vue wormhole state to prevent duplicate registrations
+    cleanupWormhole();
 
-  afterEach(async () => {
-    findToasts().forEach((toast) => toast.remove());
+    wrapper = mount(Component);
   });
 
   it('attaches $toast property', () => {
@@ -108,6 +130,8 @@ describe('GlToast', () => {
     expect(closeButton).not.toBeNull();
 
     closeButton.click();
+    await waitForAnimationFrame();
+    await wrapper.vm.$nextTick();
     await waitForAnimationFrame();
     await wrapper.vm.$nextTick();
 

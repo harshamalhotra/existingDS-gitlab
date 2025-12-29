@@ -25,6 +25,17 @@ jest.mock('../src/directives/tooltip/tooltip.js', () => ({
   GlTooltipDirective: mockDirectiveCreator('gl-tooltip'),
 }));
 
+// Mock lodash/uniqueId to return deterministic values for snapshot tests
+let mockUniqueIdCounter = 0;
+jest.mock('lodash/uniqueId', () => (prefix = '') => {
+  mockUniqueIdCounter += 1;
+  return `${prefix}${mockUniqueIdCounter}`;
+});
+
+beforeEach(() => {
+  mockUniqueIdCounter = 0;
+});
+
 VTU.config.deprecationWarningHandler = (method, message) => {
   throw new Error(`[vue-test-utils] ${method}: ${message}`);
 };

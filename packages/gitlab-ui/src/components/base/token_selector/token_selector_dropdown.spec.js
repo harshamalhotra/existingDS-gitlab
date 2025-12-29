@@ -57,16 +57,19 @@ describe('GlTokenSelectorDropdown', () => {
 
   const findDropdownMenu = () => wrapper.findComponent({ ref: 'dropdownMenu' });
 
+  let originalScrollIntoView;
+
   beforeAll(() => {
-    if (!HTMLElement.prototype.scrollIntoView) {
-      HTMLElement.prototype.scrollIntoView = jest.fn();
-    }
+    originalScrollIntoView = HTMLElement.prototype.scrollIntoView;
+    HTMLElement.prototype.scrollIntoView = jest.fn();
   });
 
   afterAll(() => {
-    if (HTMLElement.prototype.scrollIntoView.mock) {
-      delete HTMLElement.prototype.scrollIntoView;
-    }
+    HTMLElement.prototype.scrollIntoView = originalScrollIntoView;
+  });
+
+  beforeEach(() => {
+    HTMLElement.prototype.scrollIntoView.mockClear();
   });
 
   describe('props', () => {
@@ -283,6 +286,9 @@ describe('GlTokenSelectorDropdown', () => {
       handlerArgs,
     } = {}) => {
       wrapper.setData({ focusedDropdownItemIndex });
+      await nextTick();
+      // Clear mock after setData as it may have triggered scrollIntoView via the watcher
+      HTMLElement.prototype.scrollIntoView.mockClear();
       dropdownEventHandlers[handler](handlerArgs);
 
       expectedFocusedDropdownItem = wrapper
@@ -292,17 +298,18 @@ describe('GlTokenSelectorDropdown', () => {
     };
 
     describe.each`
-      testName                                                                                                  | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex
-      ${'starting at bottom, focuses on previous dropdown item'}                                                | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex - 1}
-      ${'does not change focus if there is no previous dropdown item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}
-      ${'starting on user defined dropdown item, focuses on the previous dropdown item'}                        | ${true}                    | ${userDefinedTokenIndex}  | ${lastDropdownItemIndex}
-      ${'with user defined dropdown item in list, does not change focus if there is no previous dropdown item'} | ${true}                    | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}
+      testName                                                                                                  | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex | expectedScrollCalls
+      ${'starting at bottom, focuses on previous dropdown item'}                                                | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex - 1}     | ${1}
+      ${'does not change focus if there is no previous dropdown item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}        | ${0}
+      ${'starting on user defined dropdown item, focuses on the previous dropdown item'}                        | ${true}                    | ${userDefinedTokenIndex}  | ${lastDropdownItemIndex}         | ${1}
+      ${'with user defined dropdown item in list, does not change focus if there is no previous dropdown item'} | ${true}                    | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}        | ${0}
     `(
       'when up arrow is pressed',
       ({
         userDefinedTokenCanBeAdded,
         focusedDropdownItemIndex,
         expectedFocusedDropdownItemIndex,
+        expectedScrollCalls,
         testName,
       }) => {
         beforeEach(async () => {
@@ -325,23 +332,26 @@ describe('GlTokenSelectorDropdown', () => {
         });
 
         it('scrolls focused dropdown item into view', () => {
-          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
+          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalledTimes(
+            expectedScrollCalls,
+          );
         });
       },
     );
 
     describe.each`
-      testName                                                                                     | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex
-      ${'starting at top, focuses on next dropdown item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${1}
-      ${'does not change focus if there is no next dropdown item'}                                 | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex}
-      ${'with user defined dropdown item in list, starting at top, focuses on next dropdown item'} | ${true}                    | ${firstDropdownItemIndex} | ${1}
-      ${'starting on last created token, changes focus to the user defined dropdown item'}         | ${true}                    | ${lastDropdownItemIndex}  | ${userDefinedTokenIndex}
+      testName                                                                                     | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex | expectedScrollCalls
+      ${'starting at top, focuses on next dropdown item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${1}                             | ${1}
+      ${'does not change focus if there is no next dropdown item'}                                 | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex}         | ${0}
+      ${'with user defined dropdown item in list, starting at top, focuses on next dropdown item'} | ${true}                    | ${firstDropdownItemIndex} | ${1}                             | ${1}
+      ${'starting on last created token, changes focus to the user defined dropdown item'}         | ${true}                    | ${lastDropdownItemIndex}  | ${userDefinedTokenIndex}         | ${1}
     `(
       'when down arrow is pressed',
       ({
         userDefinedTokenCanBeAdded,
         focusedDropdownItemIndex,
         expectedFocusedDropdownItemIndex,
+        expectedScrollCalls,
         testName,
       }) => {
         beforeEach(async () => {
@@ -367,23 +377,26 @@ describe('GlTokenSelectorDropdown', () => {
         });
 
         it('scrolls focused dropdown item into view', () => {
-          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
+          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalledTimes(
+            expectedScrollCalls,
+          );
         });
       },
     );
 
     describe.each`
-      testName                                                                                     | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex
-      ${'starting at bottom, focuses on first dropdown item'}                                      | ${false}                   | ${lastDropdownItemIndex}  | ${firstDropdownItemIndex}
-      ${'does not change focus if already on first item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}
-      ${'starting on the user defined dropdown item, focuses on first dropdown item'}              | ${true}                    | ${userDefinedTokenIndex}  | ${firstDropdownItemIndex}
-      ${'with user defined dropdown item in list, does not change focus if already on first item'} | ${true}                    | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}
+      testName                                                                                     | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex | expectedScrollCalls
+      ${'starting at bottom, focuses on first dropdown item'}                                      | ${false}                   | ${lastDropdownItemIndex}  | ${firstDropdownItemIndex}        | ${1}
+      ${'does not change focus if already on first item'}                                          | ${false}                   | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}        | ${0}
+      ${'starting on the user defined dropdown item, focuses on first dropdown item'}              | ${true}                    | ${userDefinedTokenIndex}  | ${firstDropdownItemIndex}        | ${1}
+      ${'with user defined dropdown item in list, does not change focus if already on first item'} | ${true}                    | ${firstDropdownItemIndex} | ${firstDropdownItemIndex}        | ${0}
     `(
       'when home key is pressed',
       ({
         userDefinedTokenCanBeAdded,
         focusedDropdownItemIndex,
         expectedFocusedDropdownItemIndex,
+        expectedScrollCalls,
         testName,
       }) => {
         beforeEach(async () => {
@@ -407,23 +420,26 @@ describe('GlTokenSelectorDropdown', () => {
         });
 
         it('scrolls focused dropdown item into view', () => {
-          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
+          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalledTimes(
+            expectedScrollCalls,
+          );
         });
       },
     );
 
     describe.each`
-      testName                                                            | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex
-      ${'starting at top, focuses on last dropdown item'}                 | ${false}                   | ${firstDropdownItemIndex} | ${lastDropdownItemIndex}
-      ${'does not change focus if already on last item'}                  | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex}
-      ${'starting at top, focuses the user defined dropdown item'}        | ${true}                    | ${firstDropdownItemIndex} | ${userDefinedTokenIndex}
-      ${'does not change focus if already on user defined dropdown item'} | ${true}                    | ${userDefinedTokenIndex}  | ${userDefinedTokenIndex}
+      testName                                                            | userDefinedTokenCanBeAdded | focusedDropdownItemIndex  | expectedFocusedDropdownItemIndex | expectedScrollCalls
+      ${'starting at top, focuses on last dropdown item'}                 | ${false}                   | ${firstDropdownItemIndex} | ${lastDropdownItemIndex}         | ${1}
+      ${'does not change focus if already on last item'}                  | ${false}                   | ${lastDropdownItemIndex}  | ${lastDropdownItemIndex}         | ${0}
+      ${'starting at top, focuses the user defined dropdown item'}        | ${true}                    | ${firstDropdownItemIndex} | ${userDefinedTokenIndex}         | ${1}
+      ${'does not change focus if already on user defined dropdown item'} | ${true}                    | ${userDefinedTokenIndex}  | ${userDefinedTokenIndex}         | ${0}
     `(
       'when end key is pressed',
       ({
         userDefinedTokenCanBeAdded,
         focusedDropdownItemIndex,
         expectedFocusedDropdownItemIndex,
+        expectedScrollCalls,
         testName,
       }) => {
         beforeEach(async () => {
@@ -447,7 +463,9 @@ describe('GlTokenSelectorDropdown', () => {
         });
 
         it('scrolls focused dropdown item into view', () => {
-          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalled();
+          expect(expectedFocusedDropdownItem.vm.$el.scrollIntoView).toHaveBeenCalledTimes(
+            expectedScrollCalls,
+          );
         });
       },
     );

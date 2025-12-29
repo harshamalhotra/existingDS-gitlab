@@ -2,6 +2,11 @@ import isFunction from 'lodash/isFunction';
 
 let observer = null;
 
+// Exported for testing purposes only
+export const resetObserver = () => {
+  observer = null;
+};
+
 const attachObserver = (el, resizeHandler) => {
   if (!isFunction(resizeHandler)) {
     throw TypeError('directive value must be a function');
