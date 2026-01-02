@@ -226,12 +226,14 @@ describe('utils/router', () => {
 
   // computeTag() utility method
   describe('computeTag()', () => {
+    const resolveComponentName = cmp => cmp._name ?? cmp.name ?? cmp
+
     it('works', async () => {
       const context1 = { $router: {} }
       const context2 = { $router: {}, $nuxt: {} }
       const context3 = {}
 
-      expect(computeTag({ to: '/foo' }, context1)).toBe('router-link')
+      expect(resolveComponentName(computeTag({ to: '/foo' }, context1))).toBe('router-link')
       expect(computeTag({ to: '/foo' }, context2)).toBe('nuxt-link')
       expect(computeTag({ to: '/foo' }, context3)).toBe('a')
       expect(computeTag({}, context1)).toBe('a')
