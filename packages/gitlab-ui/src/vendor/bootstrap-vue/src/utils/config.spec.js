@@ -21,7 +21,9 @@ describe('utils/config', () => {
    * We needed to adjust this test to have it reflect the @gitlab/ui defaults
    */
   it('getConfig() works and has @gitlab/ui defaults', async () => {
-    expect(getConfig()).toEqual({
+    // Ensure defaults are set regardless of test order
+    // (setConfigs() in jest_setup only runs once due to configured flag)
+    const expectedDefaults = {
       BPopover: {
         delay: {
           hide: 150,
@@ -36,10 +38,15 @@ describe('utils/config', () => {
           show: 500
         }
       }
-    })
+    }
+    setConfig(expectedDefaults)
+    expect(getConfig()).toEqual(expectedDefaults)
   })
 
   it('setConfig() works', async () => {
+    // Ensure we start with empty config regardless of test order
+    resetConfig()
+
     const config = {
       BButton: { variant: 'danger' }
     }
@@ -73,6 +80,9 @@ describe('utils/config', () => {
 
   if (!isGlobalVue3) {
     it('config via Vue.use(ComponentPlugin) works', async () => {
+      // Ensure we start with empty config regardless of test order
+      resetConfig()
+
       const localVue = createLocalVue()
       const config = {
         BButton: { variant: 'foobar' }
@@ -89,6 +99,9 @@ describe('utils/config', () => {
     })
 
     it('config via Vue.use(BVConfig) works', async () => {
+      // Ensure we start with empty config regardless of test order
+      resetConfig()
+
       const localVue = createLocalVue()
       const config = {
         BButton: { variant: 'foobar' }

@@ -13,7 +13,7 @@ describe('Path', () => {
   const createComponent = (props = {}, options = {}) => {
     return shallowMount(GlPath, {
       propsData: {
-        items: mockPathItems,
+        items: mockPathItems(),
         ...props,
       },
       ...options,
@@ -70,19 +70,22 @@ describe('Path', () => {
 
   describe('renders the list of items', () => {
     it('renders the correct number of items', () => {
-      expect(listItems().length).toBe(mockPathItems.length);
+      expect(listItems().length).toBe(mockPathItems().length);
     });
 
     it('renders the items in the correct order', () => {
-      expect(pathItemTextAt(0)).toContain(mockPathItems[0].title);
-      expect(pathItemTextAt(4)).toContain(mockPathItems[4].title);
-      expect(pathItemTextAt(9)).toContain(mockPathItems[9].title);
+      const items = mockPathItems();
+      expect(pathItemTextAt(0)).toContain(items[0].title);
+      expect(pathItemTextAt(4)).toContain(items[4].title);
+      expect(pathItemTextAt(9)).toContain(items[9].title);
     });
 
     describe('with metrics', () => {
+      const testMetric = '12d';
+
       beforeEach(() => {
-        const data = mockPathItems;
-        data[0].metric = '12d';
+        const data = mockPathItems();
+        data[0].metric = testMetric;
 
         wrapper = createComponent({ items: data });
       });
@@ -92,8 +95,8 @@ describe('Path', () => {
       });
 
       it('renders the inline metric', () => {
-        expect(pathItemTextAt(0)).toContain(mockPathItems[0].title);
-        expect(pathItemTextAt(0)).toContain(mockPathItems[0].metric);
+        expect(pathItemTextAt(0)).toContain(mockPathItems()[0].title);
+        expect(pathItemTextAt(0)).toContain(testMetric);
       });
     });
 
@@ -101,7 +104,7 @@ describe('Path', () => {
       const iconName = 'home';
 
       beforeEach(() => {
-        const data = mockPathItems;
+        const data = mockPathItems();
         data[0].icon = iconName;
 
         wrapper = createComponent({ items: data });
@@ -127,7 +130,7 @@ describe('Path', () => {
       });
 
       it('updates the selected item when props change', async () => {
-        const items = JSON.parse(JSON.stringify(mockPathItems));
+        const items = mockPathItems();
         items[3].selected = true;
 
         wrapper.setProps({ items });
@@ -140,7 +143,7 @@ describe('Path', () => {
 
     describe('with a specifically selected item passed in', () => {
       beforeEach(() => {
-        const data = mockPathItems;
+        const data = mockPathItems();
         data[3].selected = true;
 
         wrapper = createComponent({ items: data });
@@ -153,7 +156,7 @@ describe('Path', () => {
 
     describe('with multiple selected items passed in', () => {
       beforeEach(() => {
-        const data = mockPathItems;
+        const data = mockPathItems();
         data[3].selected = true;
         data[5].selected = true;
 
@@ -170,15 +173,12 @@ describe('Path', () => {
   describe('event handling', () => {
     describe('when an item is clicked', () => {
       it('emits the selected event with the correct data', () => {
+        const items = mockPathItems();
         clickItemAt(1);
         clickItemAt(4);
         clickItemAt(6);
 
-        expect(wrapper.emitted('selected')).toEqual([
-          [mockPathItems[1]],
-          [mockPathItems[4]],
-          [mockPathItems[6]],
-        ]);
+        expect(wrapper.emitted('selected')).toEqual([[items[1]], [items[4]], [items[6]]]);
       });
     });
 
@@ -207,7 +207,7 @@ describe('Path', () => {
     });
 
     it('contains all elements passed into the default slot', () => {
-      mockPathItems.forEach((item, index) => {
+      mockPathItems().forEach((item, index) => {
         const pathItem = wrapper.findAll('[data-testid="path-item-slot-content"]').at(index);
 
         expect(pathItem.text()).toBe(item.title);

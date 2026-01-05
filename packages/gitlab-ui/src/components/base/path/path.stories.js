@@ -6,7 +6,7 @@ import { mockPathItems } from './data';
 const defaultValue = propDefaultFactory(GlPath);
 
 const generateProps = ({
-  items = mockPathItems,
+  items = mockPathItems(),
   backgroundColor = defaultValue('backgroundColor'),
 } = {}) => ({
   items,

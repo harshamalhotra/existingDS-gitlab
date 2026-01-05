@@ -1,4 +1,4 @@
-export const mockPathItems = [
+export const mockPathItems = () => [
   {
     title: 'First',
     metric: '1d',

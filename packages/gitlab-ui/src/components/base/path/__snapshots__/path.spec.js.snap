@@ -224,7 +224,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button gl-path-active-item"
-        id="path-12-item-0"
+        id="path-2-item-0"
       >
         <gl-icon-stub
           class="gl-mr-2"
@@ -237,7 +237,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
         <span
           class="gl-pl-2 gl-font-normal"
         >
-          12d
+          1d
         </span>
       </button>
     </li>
@@ -246,7 +246,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-1"
+        id="path-2-item-1"
       >
         Second
         <span
@@ -261,7 +261,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-2"
+        id="path-2-item-2"
       >
         Third
         <span
@@ -276,7 +276,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-3"
+        id="path-2-item-3"
       >
         Fourth
         <span
@@ -291,7 +291,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-4"
+        id="path-2-item-4"
       >
         Fifth
         <span
@@ -306,7 +306,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-5"
+        id="path-2-item-5"
       >
         Sixth
         <span
@@ -321,7 +321,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-6"
+        id="path-2-item-6"
       >
         Seventh
         <span
@@ -338,7 +338,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
         category="tertiary"
         class="gl-path-button"
         disabled=""
-        id="path-12-item-7"
+        id="path-2-item-7"
       >
         Eighth
         <span
@@ -353,7 +353,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-8"
+        id="path-2-item-8"
       >
         Ninth
         <span
@@ -368,7 +368,7 @@ exports[`Path renders the list of items with icons matches the snapshot 1`] = `
     >
       <button
         class="gl-path-button"
-        id="path-12-item-9"
+        id="path-2-item-9"
       >
         Tenth
         <span
@@ -426,7 +426,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button gl-path-active-item"
-        id="path-8-item-0"
+        id="path-2-item-0"
       >
         First
         <span
@@ -441,7 +441,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-1"
+        id="path-2-item-1"
       >
         Second
         <span
@@ -456,7 +456,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-2"
+        id="path-2-item-2"
       >
         Third
         <span
@@ -471,7 +471,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-3"
+        id="path-2-item-3"
       >
         Fourth
         <span
@@ -486,7 +486,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-4"
+        id="path-2-item-4"
       >
         Fifth
         <span
@@ -501,7 +501,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-5"
+        id="path-2-item-5"
       >
         Sixth
         <span
@@ -516,7 +516,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-6"
+        id="path-2-item-6"
       >
         Seventh
         <span
@@ -533,7 +533,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
         category="tertiary"
         class="gl-path-button"
         disabled=""
-        id="path-8-item-7"
+        id="path-2-item-7"
       >
         Eighth
         <span
@@ -548,7 +548,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-8"
+        id="path-2-item-8"
       >
         Ninth
         <span
@@ -563,7 +563,7 @@ exports[`Path renders the list of items with metrics matches the snapshot 1`] = 
     >
       <button
         class="gl-path-button"
-        id="path-8-item-9"
+        id="path-2-item-9"
       >
         Tenth
         <span
