@@ -122,9 +122,18 @@ export const iconOpticallyAligned = (args, { argTypes }) => ({
   components: { GlBadge },
   props: Object.keys(argTypes),
   template: `
-    <div class="gl-flex gl-gap-3">
-      <gl-badge variant="neutral" icon="dash-circle" icon-optically-aligned>Status pending</gl-badge>
-      <gl-badge variant="success" icon="check-circle" icon-optically-aligned>Status complete</gl-badge>
+    <div class="gl-flex gl-flex-wrap gl-gap-3">
+      <gl-badge variant="neutral" icon="status_canceled" icon-optically-aligned>Canceled</gl-badge>
+      <gl-badge variant="neutral" icon="status_created" icon-optically-aligned>Created</gl-badge>
+      <gl-badge variant="danger" icon="status_failed" icon-optically-aligned>Failed</gl-badge>
+      <gl-badge variant="neutral" icon="status_manual" icon-optically-aligned>Manual</gl-badge>
+      <gl-badge variant="success" icon="status_success" icon-optically-aligned>Passed</gl-badge>
+      <gl-badge variant="warning" icon="status_pending" icon-optically-aligned>Pending</gl-badge>
+      <gl-badge variant="neutral" icon="status_preparing" icon-optically-aligned>Preparing</gl-badge>
+      <gl-badge variant="info" icon="status_running" icon-optically-aligned>Running</gl-badge>
+      <gl-badge variant="neutral" icon="status_scheduled" icon-optically-aligned>Scheduled</gl-badge>
+      <gl-badge variant="neutral" icon="status_skipped" icon-optically-aligned>Skipped</gl-badge>
+      <gl-badge variant="neutral" icon="status-waiting" icon-optically-aligned>Waiting for resource</gl-badge>
     </div>
   `,
 });
