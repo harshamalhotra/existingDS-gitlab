@@ -4,6 +4,7 @@ let observer = null;
 
 // Exported for testing purposes only
 export const resetObserver = () => {
+  observer?.disconnect();
   observer = null;
 };
 
