@@ -17,7 +17,7 @@ Follow the checklist in this template to use it appropriately.
 - [ ] Relevant label(s) are applied to the MR.
 - [ ] The MR is added to a milestone.
 - [ ] If creating a new component page [from scratch][writing-documentation], it follows the [page template structure][page-template].
-- [ ] Content follows the [Pajamas voice and tone guidelines][voice-and-tone], falling back on the [GitLab Documentation Style Guide][style-guide] when needed.
+- [ ] Content follows the [GitLab Documentation Style Guide][style-guide] when appropriate.
 - [ ] Related pages are cross-linked, where helpful. Component pages have [related components and patterns][related] defined in their Markdown front matter.
 - [ ] If [embedding a Figma file][figma-embed], it follows the [Figma embed guide][figma-embed-guide].
 - [ ] Review requested from any [GitLab designer][design-reviewer] or directly from a [maintainer or trainee maintainer][pajamas-assignments].
@@ -34,7 +34,6 @@ Follow the checklist in this template to use it appropriately.
 [transparency]: https://about.gitlab.com/handbook/values/#say-why-not-just-what
 [writing-documentation]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com#writing-component-documentation
 [page-template]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md
-[voice-and-tone]: https://design.gitlab.com/content/voice-tone
 [style-guide]: https://docs.gitlab.com/ee/development/documentation/styleguide/index.html
 [related]: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/pages/components/template.md#L27-36
 [design-reviewer]: https://about.gitlab.com/handbook/engineering/ux/pajamas-design-system/design-review/#reviewer
