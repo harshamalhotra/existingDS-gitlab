@@ -77,6 +77,28 @@ describe('Modal component', () => {
     });
   });
 
+  describe('props', () => {
+    const tagName = 'h1';
+
+    it.each`
+      headerTag  | footerTag  | propName
+      ${tagName} | ${null}    | ${'headerTag'}
+      ${null}    | ${tagName} | ${'footerTag'}
+    `(
+      'passes tag name provided by $propName prop to the nested BModal component',
+      ({ headerTag, footerTag, propName }) => {
+        createComponent({
+          props: { headerTag, footerTag },
+          stubModal: false,
+        });
+
+        const bootstrapModalComponent = wrapper.findComponent(BModal);
+
+        expect(bootstrapModalComponent.props(propName)).toBe(tagName);
+      },
+    );
+  });
+
   describe('slots', () => {
     const title = 'A custom title';
     const slot = `<h4 class="custom-title">${title}</h4>`;
