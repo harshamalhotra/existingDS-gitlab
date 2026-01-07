@@ -1,6 +1,4 @@
 include:
-  - project: gitlab-org/frontend/frontend-build-images
-    file: /semantic-release/.gitlab-ci-template.rules.yml
   - component: ${CI_SERVER_FQDN}/gitlab-org/components/danger-review/danger-review@1.2.0
 
 .svgs:is-design-gitlab-com-default-branch: &svgs-is-design-gitlab-com-default-branch
