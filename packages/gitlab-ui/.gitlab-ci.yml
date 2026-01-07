@@ -385,6 +385,8 @@ ui:duo_job:
         --variable="UPSTREAM_GITLAB_UI_VERSION:$DEPENDENCY_URL" \
         --variable="UPSTREAM_BRANCH_NAME:$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
   rules:
+    - if: !reference [.ui:is-merge-train, if]
+      when: never
     - if: '$CI_MERGE_REQUEST_LABELS =~ /duo-ui-allowed-to-fail/'
       when: always
       allow_failure: true
