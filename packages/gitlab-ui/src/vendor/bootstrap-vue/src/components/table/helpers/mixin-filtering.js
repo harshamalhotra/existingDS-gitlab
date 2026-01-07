@@ -142,6 +142,10 @@ export const filteringMixin = extend({
       }
       if (isFiltered) {
         this.$emit(EVENT_NAME_FILTERED, filteredItems, filteredItems.length)
+        // Clear selection on filter change if selectable (defined in mixin-selectable.js)
+        if (this.hasSelectableRowClick) {
+          this.clearSelected()
+        }
       }
       this.isFiltered = isFiltered
     },
@@ -151,6 +155,10 @@ export const filteringMixin = extend({
         // `false` so that users can update their pagination controls
         const { localItems } = this
         this.$emit(EVENT_NAME_FILTERED, localItems, localItems.length)
+        // Clear selection on filter change if selectable (defined in mixin-selectable.js)
+        if (this.hasSelectableRowClick) {
+          this.clearSelected()
+        }
       }
     }
   },

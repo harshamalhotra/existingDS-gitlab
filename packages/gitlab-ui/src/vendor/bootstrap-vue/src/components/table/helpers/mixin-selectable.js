@@ -1,10 +1,5 @@
 import { extend } from '../../../vue'
-import {
-  EVENT_NAME_CONTEXT_CHANGED,
-  EVENT_NAME_FILTERED,
-  EVENT_NAME_ROW_CLICKED,
-  EVENT_NAME_ROW_SELECTED
-} from '../../../constants/events'
+import { EVENT_NAME_ROW_SELECTED } from '../../../constants/events'
 import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../../../constants/props'
 import { arrayIncludes, createArray } from '../../../utils/array'
 import { identity } from '../../../utils/identity'
@@ -104,16 +99,14 @@ export const selectableMixin = extend({
         this.clearSelected()
       }
     },
-    selectable(newValue) {
+    selectable() {
       this.clearSelected()
-      this.setSelectionHandlers(newValue)
     },
     selectMode() {
       this.clearSelected()
     },
-    hasSelectableRowClick(newValue) {
+    hasSelectableRowClick() {
       this.clearSelected()
-      this.setSelectionHandlers(!newValue)
     },
     selectedRows(selectedRows, oldValue) {
       if (this.isSelectable && !looseEqual(selectedRows, oldValue)) {
@@ -126,12 +119,6 @@ export const selectableMixin = extend({
         })
         this.$emit(EVENT_NAME_ROW_SELECTED, items)
       }
-    }
-  },
-  beforeMount() {
-    // Set up handlers if needed
-    if (this.isSelectable) {
-      this.setSelectionHandlers(true)
     }
   },
   methods: {
@@ -192,14 +179,6 @@ export const selectableMixin = extend({
       return {
         'aria-selected': !this.isSelectable ? null : this.isRowSelected(index) ? 'true' : 'false'
       }
-    },
-    setSelectionHandlers(on) {
-      const method = on && !this.noSelectOnClick ? '$on' : '$off'
-      // Handle row-clicked event
-      this[method](EVENT_NAME_ROW_CLICKED, this.selectionHandler)
-      // Clear selection on filter, pagination, and sort changes
-      this[method](EVENT_NAME_FILTERED, this.clearSelected)
-      this[method](EVENT_NAME_CONTEXT_CHANGED, this.clearSelected)
     },
     selectionHandler(item, index, event) {
       /* istanbul ignore if: should never happen */

@@ -71,12 +71,18 @@ export const tbodyMixin = extend({
     },
     // Emits a row event, with the item object, row index and original event
     emitTbodyRowEvent(type, event) {
-      if (type && this.hasListener(type) && event && event.target) {
+      if (type && event && event.target) {
         const rowIndex = this.getTbodyTrIndex(event.target)
         if (rowIndex > -1) {
           // The array of TRs correlate to the `computedItems` array
           const item = this.computedItems[rowIndex]
-          this.$emit(type, item, rowIndex, event)
+          if (this.hasListener(type)) {
+            this.$emit(type, item, rowIndex, event)
+          }
+          // Call selectionHandler directly if selectable (defined in mixin-selectable.js)
+          if (type === EVENT_NAME_ROW_CLICKED && this.hasSelectableRowClick) {
+            this.selectionHandler(item, rowIndex, event)
+          }
         }
       }
     },
