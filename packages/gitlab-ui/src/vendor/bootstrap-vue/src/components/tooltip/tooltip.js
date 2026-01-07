@@ -28,7 +28,7 @@ import { getScopeId } from '../../utils/get-scope-id'
 import { isUndefinedOrNull } from '../../utils/inspect'
 import { pick } from '../../utils/object'
 import { makeProp, makePropsConfigurable } from '../../utils/props'
-import { createNewChildComponent } from '../../utils/create-new-child-component'
+import { createNewChildComponent, eventProp } from '../../utils/create-new-child-component'
 import { normalizeSlotMixin } from '../../mixins/normalize-slot'
 import { BVTooltip } from './helpers/bv-tooltip'
 
@@ -197,17 +197,18 @@ export const BTooltip = /*#__PURE__*/ extend({
       // Create the instance
       const $toolpop = (this.$_toolpop = createNewChildComponent(this, Component, {
         // Pass down the scoped style ID
-        _scopeId: scopeId || undefined
+        _scopeId: scopeId || undefined,
+        propsData: {
+          [eventProp(EVENT_NAME_SHOW)]: this.onShow,
+          [eventProp(EVENT_NAME_SHOWN)]: this.onShown,
+          [eventProp(EVENT_NAME_HIDE)]: this.onHide,
+          [eventProp(EVENT_NAME_HIDDEN)]: this.onHidden,
+          [eventProp(EVENT_NAME_DISABLED)]: this.onDisabled,
+          [eventProp(EVENT_NAME_ENABLED)]: this.onEnabled
+        }
       }))
       // Set the initial data
       $toolpop.updateData(this.templateData)
-      // Set listeners
-      $toolpop.$on(EVENT_NAME_SHOW, this.onShow)
-      $toolpop.$on(EVENT_NAME_SHOWN, this.onShown)
-      $toolpop.$on(EVENT_NAME_HIDE, this.onHide)
-      $toolpop.$on(EVENT_NAME_HIDDEN, this.onHidden)
-      $toolpop.$on(EVENT_NAME_DISABLED, this.onDisabled)
-      $toolpop.$on(EVENT_NAME_ENABLED, this.onEnabled)
       // Initially disabled?
       if (this[MODEL_PROP_NAME_ENABLED]) {
         // Initially disabled

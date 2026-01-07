@@ -65,7 +65,7 @@ import { toInteger } from '../../../utils/number'
 import { keys } from '../../../utils/object'
 import { warn } from '../../../utils/warn'
 import { BvEvent } from '../../../utils/bv-event.class'
-import { createNewChildComponent } from '../../../utils/create-new-child-component'
+import { createNewChildComponent, eventProp } from '../../../utils/create-new-child-component'
 import { listenOnRootMixin } from '../../../mixins/listen-on-root'
 import { BVTooltipTemplate } from './bv-tooltip-template'
 
@@ -343,29 +343,24 @@ export const BVTooltip = /*#__PURE__*/ extend({
           // Ensure the following are integers
           offset: toInteger(this.offset, 0),
           arrowPadding: toInteger(this.arrowPadding, 0),
-          boundaryPadding: toInteger(this.boundaryPadding, 0)
+          boundaryPadding: toInteger(this.boundaryPadding, 0),
+          // Template transition phase events (handled once only)
+          [eventProp(EVENT_NAME_SHOW, true)]: this.onTemplateShow,
+          [eventProp(EVENT_NAME_SHOWN, true)]: this.onTemplateShown,
+          [eventProp(EVENT_NAME_HIDE, true)]: this.onTemplateHide,
+          [eventProp(EVENT_NAME_HIDDEN, true)]: this.onTemplateHidden,
+          // Convenience events from template
+          [eventProp(EVENT_NAME_FOCUSIN)]: this.handleEvent,
+          [eventProp(EVENT_NAME_FOCUSOUT)]: this.handleEvent,
+          [eventProp(EVENT_NAME_MOUSEENTER)]: this.handleEvent,
+          [eventProp(EVENT_NAME_MOUSELEAVE)]: this.handleEvent
         }
       }))
       // We set the initial reactive data (values that can be changed while open)
       this.handleTemplateUpdate()
-      // Template transition phase events (handled once only)
-      // When the template has mounted, but not visibly shown yet
-      $tip.$once(EVENT_NAME_SHOW, this.onTemplateShow)
-      // When the template has completed showing
-      $tip.$once(EVENT_NAME_SHOWN, this.onTemplateShown)
-      // When the template has started to hide
-      $tip.$once(EVENT_NAME_HIDE, this.onTemplateHide)
-      // When the template has completed hiding
-      $tip.$once(EVENT_NAME_HIDDEN, this.onTemplateHidden)
       // When the template gets destroyed for any reason
+      // (kept as explicit subscription since event name differs between Vue 2/3)
       $tip.$once(getHookEventNameDestroyed($tip), this.destroyTemplate)
-      // Convenience events from template
-      // To save us from manually adding/removing DOM
-      // listeners to tip element when it is open
-      $tip.$on(EVENT_NAME_FOCUSIN, this.handleEvent)
-      $tip.$on(EVENT_NAME_FOCUSOUT, this.handleEvent)
-      $tip.$on(EVENT_NAME_MOUSEENTER, this.handleEvent)
-      $tip.$on(EVENT_NAME_MOUSELEAVE, this.handleEvent)
       // Mount (which triggers the `show`)
       $tip.$mount(container.appendChild(document.createElement('div')))
       // Template will automatically remove its markup from DOM when hidden
