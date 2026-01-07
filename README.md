@@ -76,6 +76,7 @@ Add graphics and images to optionally support, but not replace, text content. Ac
 
 - Use JPEG and PNG formats for photography and complex images. Optimize images through a tool like [ImageOptim](https://imageoptim.com/mac) before uploading.
 - Use SVG for illustration, iconography, small vector-based graphics, and simple UI representation. Optimize graphics through a tool like [SVGOMG](https://jakearchibald.github.io/svgomg/) or the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin for Figma.
+- Save your image file in the `/static/img/` directory of this repository. The image will then be available in the docs site at `/img/path/to/your/image.png` (note that the leading slash is required).
 
 When adding images to documentation, use the `<figure-img>` component to:
 
@@ -86,7 +87,7 @@ When adding images to documentation, use the `<figure-img>` component to:
 For more background on the desired HTML structure, refer to ["How do you figure?"](https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html), by Scott O'Hara.
 
 ```js
-<figure-img src="/path/to/image.png" alt="Alt text" label="Label text" width="360"></figure-img>
+<figure-img src="/img/path/to/image.png" alt="Alt text" label="Label text" width="360"></figure-img>
 ```
 
 ### Linting
