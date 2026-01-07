@@ -86,6 +86,10 @@ export const BVTransition = /*#__PURE__*/ extend({
 
     const dataCopy = { ...data }
     delete dataCopy.props
+    Object.keys(props).forEach(key => {
+      delete dataCopy[key]
+    })
+
     return h(
       'transition',
       // Any transition event listeners will get merged here

@@ -1,4 +1,5 @@
 import { RX_ENCODED_COMMA, RX_ENCODE_REVERSE, RX_PLUS, RX_QUERY_START } from '../constants/regex'
+import { isVue3 } from '../vue'
 import { isTag } from './dom'
 import { isArray, isNull, isPlainObject, isString, isUndefined } from './inspect'
 import { keys } from './object'
@@ -86,6 +87,16 @@ export const parseQuery = query => {
 
 export const isLink = props => !!(props.href || props.to)
 
+const routerLink = {
+  functional: true,
+  _name: 'router-link',
+  render(h, ctx) {
+    // $hasNormal is Vue.js 2 legacy way to check if default slot is scoped or not
+    // in bootstrap-vue codebase we never use scoped slots router-link rendering
+    return h('router-link', ctx.data, { ...ctx.children, $hasNormal: true })
+  }
+}
+
 export const isRouterLink = tag => !!(tag && !isTag(tag, 'a'))
 
 export const computeTag = ({ to, disabled, routerComponentName }, thisOrParent) => {
@@ -103,7 +114,8 @@ export const computeTag = ({ to, disabled, routerComponentName }, thisOrParent) 
   //   exists = names.some(name => !!thisOrParent.$options.components[name])
   //   And may want to cache the result for performance or we just let the render fail
   //   if the component is not registered
-  return routerComponentName || (hasNuxt ? 'nuxt-link' : 'router-link')
+  const actualRouterLink = isVue3(thisOrParent) ? routerLink : 'router-link'
+  return routerComponentName || (hasNuxt ? 'nuxt-link' : actualRouterLink)
 }
 
 export const computeRel = ({ target, rel } = {}) =>
