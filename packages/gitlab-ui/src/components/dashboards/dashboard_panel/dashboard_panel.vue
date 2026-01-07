@@ -95,6 +95,14 @@ export default {
       default: '',
     },
     /**
+     * The string to render as the panel subtitle.
+     */
+    subtitle: {
+      type: String,
+      required: false,
+      default: '',
+    },
+    /**
      * Set to `true` to show the loading state.
      */
     loading: {
@@ -197,8 +205,8 @@ export default {
     :class="containerClasses"
   >
     <div class="gl-flex gl-h-full gl-flex-col">
-      <div class="gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
-        <div class="gl-flex gl-items-center gl-overflow-hidden gl-pb-3">
+      <div class="gl-mb-3 gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
+        <div class="gl-flex gl-items-center gl-overflow-hidden">
           <gl-icon
             v-if="hasTitleIcon"
             class="gl-mr-2"
@@ -207,12 +215,22 @@ export default {
             data-testid="panel-title-icon"
           />
 
-          <gl-truncate
-            v-if="hasTitle"
-            class="gl-min-w-0 gl-font-bold gl-text-default"
-            :text="title"
-            with-tooltip
-          />
+          <div class="gl-min-w-0">
+            <gl-truncate
+              v-if="hasTitle"
+              class="gl-font-bold gl-text-default"
+              :text="title"
+              with-tooltip
+            />
+
+            <p
+              v-if="subtitle"
+              class="gl-mb-0 gl-mt-1 gl-text-sm gl-text-subtle"
+              data-testid="panel-subtitle"
+            >
+              {{ subtitle }}
+            </p>
+          </div>
 
           <template v-if="hasTitlePopover">
             <gl-icon
@@ -280,7 +298,7 @@ export default {
 
           <div
             v-if="$scopedSlots.filters"
-            class="gl-flex gl-items-center gl-justify-end gl-pb-2"
+            class="gl-flex gl-items-center gl-justify-end"
             data-testid="panel-filters-container"
           >
             <!-- @slot  The filter section to add additional UI elements for filtering, grouping, etc. -->

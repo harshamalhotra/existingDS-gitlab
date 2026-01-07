@@ -49,6 +49,7 @@ describe('GlDashboardPanel', () => {
   const findByTestId = (testId) => wrapper.find(`[data-testid="${testId}"]`);
   const findPanelTitle = () => findByTestId('panel-title');
   const findPanelTitleIcon = () => findByTestId('panel-title-icon');
+  const findPanelSubtitle = () => findByTestId('panel-subtitle');
   const findLoadingIcon = () => wrapper.findComponent(GlLoadingIcon);
   const findLoadingDelayedIndicator = () => findByTestId('panel-loading-delayed-indicator');
   const findPanelTitlePopoverIcon = () => findByTestId('panel-title-popover-icon');
@@ -80,6 +81,10 @@ describe('GlDashboardPanel', () => {
 
     it('does not render a title', () => {
       expect(findPanelTitle().text()).toBe('');
+    });
+
+    it('does not render a subtitle', () => {
+      expect(findPanelSubtitle().exists()).toBe(false);
     });
 
     it('does not render a loading icon', () => {
@@ -147,6 +152,20 @@ describe('GlDashboardPanel', () => {
     it('renders the panel title icon', () => {
       expect(findPanelTitleIcon().props('name')).toBe('error');
       expect(findPanelTitleIcon().classes()).toContain('gl-text-red-500');
+    });
+  });
+
+  describe('with a subtitle', () => {
+    beforeEach(() => {
+      createWrapper({
+        props: {
+          subtitle: 'pochita',
+        },
+      });
+    });
+
+    it('renders the subtitle', () => {
+      expect(wrapper.text()).toContain('pochita');
     });
   });
 

@@ -133,6 +133,12 @@ Default.args = {
   actionsToggleText: 'Actions',
 };
 
+export const WithSubtitle = Template.bind({});
+WithSubtitle.args = {
+  ...Default.args,
+  subtitle: 'Custom panel subtitle',
+};
+
 export const WithTitlePopover = PopoverTemplate.bind({});
 WithTitlePopover.args = {
   ...Default.args,
