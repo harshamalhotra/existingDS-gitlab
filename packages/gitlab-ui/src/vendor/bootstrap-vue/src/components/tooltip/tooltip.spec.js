@@ -615,7 +615,7 @@ describe('b-tooltip', () => {
       attachTo: document.body,
       propsData: {
         triggers: 'click',
-        show: true,
+        show: false,
         disabled: false,
         titleAttr: 'ignored'
       },
@@ -635,6 +635,15 @@ describe('b-tooltip', () => {
     // The trigger button
     const $button = wrapper.find('button')
     expect($button.exists()).toBe(true)
+
+    // <b-tooltip> wrapper
+    const $tipHolder = wrapper.findComponent(BTooltip)
+    expect($tipHolder.exists()).toBe(true)
+
+    // Show tooltip
+    await wrapper.setProps({ show: true })
+    await ensureEventEmitted($tipHolder, 'shown')
+
     expect($button.attributes('id')).toBeDefined()
     expect($button.attributes('id')).toEqual('foo')
     expect($button.attributes('title')).toBeDefined()
@@ -644,10 +653,6 @@ describe('b-tooltip', () => {
     expect($button.attributes('aria-describedby')).toBeDefined()
     // ID of the tooltip that will be in the body
     const adb = $button.attributes('aria-describedby')
-
-    // <b-tooltip> wrapper
-    const $tipHolder = wrapper.findComponent(BTooltip)
-    expect($tipHolder.exists()).toBe(true)
 
     // Find the tooltip element in the document
     const tip = document.getElementById(adb)
@@ -673,7 +678,7 @@ describe('b-tooltip', () => {
       attachTo: document.body,
       propsData: {
         triggers: 'click',
-        show: true,
+        show: false,
         disabled: false,
         titleAttr: 'ignored'
       },
@@ -693,6 +698,15 @@ describe('b-tooltip', () => {
     // The trigger button
     const $button = wrapper.find('button')
     expect($button.exists()).toBe(true)
+
+    // b-tooltip wrapper
+    const $tipHolder = wrapper.findComponent(BTooltip)
+    expect($tipHolder.exists()).toBe(true)
+
+    // Show tooltip
+    await wrapper.setProps({ show: true })
+    await ensureEventEmitted($tipHolder, 'shown')
+
     expect($button.attributes('id')).toBeDefined()
     expect($button.attributes('id')).toEqual('foo')
     expect($button.attributes('title')).toBeDefined()
@@ -703,10 +717,6 @@ describe('b-tooltip', () => {
     // ID of the tooltip that will be in the body
     const adb = $button.attributes('aria-describedby')
 
-    // b-tooltip wrapper
-    const $tipHolder = wrapper.findComponent(BTooltip)
-    expect($tipHolder.exists()).toBe(true)
-
     // Find the tooltip element in the document
     const tip = document.getElementById(adb)
     expect(tip).not.toBe(null)
@@ -716,11 +726,7 @@ describe('b-tooltip', () => {
 
     // Tooltip should ignore when ID is not its own
     wrapper.vm.$root.$emit('bv::hide::tooltip', 'wrong-id')
-    //TODO: No event in.
-    await waitNT(wrapper.vm)
-    await waitRAF()
-    await waitNT(wrapper.vm)
-    await waitRAF()
+    // No event expected - tooltip should stay open
     await waitNT(wrapper.vm)
     await waitRAF()
 
@@ -736,7 +742,7 @@ describe('b-tooltip', () => {
       attachTo: document.body,
       propsData: {
         triggers: 'click',
-        show: true,
+        show: false,
         disabled: false,
         titleAttr: 'ignored'
       },
@@ -756,6 +762,15 @@ describe('b-tooltip', () => {
     // The trigger button
     const $button = wrapper.find('button')
     expect($button.exists()).toBe(true)
+
+    // <b-tooltip> wrapper
+    const $tipHolder = wrapper.findComponent(BTooltip)
+    expect($tipHolder.exists()).toBe(true)
+
+    // Show tooltip
+    await wrapper.setProps({ show: true })
+    await ensureEventEmitted($tipHolder, 'shown')
+
     expect($button.attributes('id')).toBeDefined()
     expect($button.attributes('id')).toEqual('foo')
     expect($button.attributes('title')).toBeDefined()
@@ -766,10 +781,6 @@ describe('b-tooltip', () => {
 
     // ID of the tooltip that will be in the body
     const adb = $button.attributes('aria-describedby')
-
-    // <b-tooltip> wrapper
-    const $tipHolder = wrapper.findComponent(BTooltip)
-    expect($tipHolder.exists()).toBe(true)
 
     // Find the tooltip element in the document
     const tip = document.getElementById(adb)
@@ -795,7 +806,7 @@ describe('b-tooltip', () => {
       attachTo: document.body,
       propsData: {
         triggers: 'click',
-        show: true,
+        show: false,
         disabled: false,
         titleAttr: 'ignored'
       },
@@ -816,6 +827,15 @@ describe('b-tooltip', () => {
     // The trigger button
     const $button = wrapper.find('button')
     expect($button.exists()).toBe(true)
+
+    // b-tooltip wrapper
+    const $tipHolder = wrapper.findComponent(BTooltip)
+    expect($tipHolder.exists()).toBe(true)
+
+    // Show tooltip
+    await wrapper.setProps({ show: true })
+    await ensureEventEmitted($tipHolder, 'shown')
+
     expect($button.attributes('id')).toBeDefined()
     expect($button.attributes('id')).toEqual('foo')
     expect($button.attributes('title')).toBeDefined()
@@ -826,10 +846,6 @@ describe('b-tooltip', () => {
     // ID of the tooltip that will be in the body
     const adb = $button.attributes('aria-describedby')
 
-    // b-tooltip wrapper
-    const $tipHolder = wrapper.findComponent(BTooltip)
-    expect($tipHolder.exists()).toBe(true)
-
     // Find the tooltip element in the document
     const tip = document.getElementById(adb)
     expect(tip).not.toBe(null)
@@ -837,12 +853,9 @@ describe('b-tooltip', () => {
     expect(tip.tagName).toEqual('DIV')
     expect(tip.classList.contains('tooltip')).toBe(true)
 
-    // Tooltip should ignore when ID is not its own
+    // Tooltip should stay open - not inside a modal
     wrapper.vm.$root.$emit(MODAL_CLOSE_EVENT, 'some-modal')
-    await waitNT(wrapper.vm)
-    await waitRAF()
-    await waitNT(wrapper.vm)
-    await waitRAF()
+    // No event expected - tooltip should stay open
     await waitNT(wrapper.vm)
     await waitRAF()
 
@@ -858,7 +871,7 @@ describe('b-tooltip', () => {
       attachTo: document.body,
       propsData: {
         triggers: 'click',
-        show: true,
+        show: false,
         disabled: false,
         titleAttr: 'ignored',
         isModal: true
@@ -880,6 +893,15 @@ describe('b-tooltip', () => {
     // The trigger button
     const $button = wrapper.find('button')
     expect($button.exists()).toBe(true)
+
+    // b-tooltip wrapper
+    const $tipHolder = wrapper.findComponent(BTooltip)
+    expect($tipHolder.exists()).toBe(true)
+
+    // Show tooltip
+    await wrapper.setProps({ show: true })
+    await ensureEventEmitted($tipHolder, 'shown')
+
     expect($button.attributes('id')).toBeDefined()
     expect($button.attributes('id')).toEqual('foo')
     expect($button.attributes('title')).toBeDefined()
@@ -890,10 +912,6 @@ describe('b-tooltip', () => {
     // ID of the tooltip that will be in the body
     const adb = $button.attributes('aria-describedby')
 
-    // b-tooltip wrapper
-    const $tipHolder = wrapper.findComponent(BTooltip)
-    expect($tipHolder.exists()).toBe(true)
-
     // Find the tooltip element in the document
     const tip = document.getElementById(adb)
     expect(tip).not.toBe(null)
@@ -901,7 +919,7 @@ describe('b-tooltip', () => {
     expect(tip.tagName).toEqual('DIV')
     expect(tip.classList.contains('tooltip')).toBe(true)
 
-    // Tooltip should ignore when ID is not its own
+    // Tooltip inside modal should close on modal hidden event
     wrapper.vm.$root.$emit(MODAL_CLOSE_EVENT, 'some-modal')
     await ensureEventEmitted($tipHolder, 'hidden')
 

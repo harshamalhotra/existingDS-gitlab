@@ -18,10 +18,9 @@ import {
   EVENT_NAME_MOUSELEAVE,
   EVENT_NAME_SHOW,
   EVENT_NAME_SHOWN,
-  EVENT_OPTIONS_NO_CAPTURE,
-  getHookEventNameBeforeDestroy,
-  getHookEventNameDestroyed
+  EVENT_OPTIONS_NO_CAPTURE
 } from '../../../constants/events'
+import { onInstanceDestroy } from '../../../utils/on-instance-destroy'
 import { useParentMixin } from '../../../mixins/use-parent'
 import { arrayIncludes, concat, from as arrayFrom } from '../../../utils/array'
 import { getInstanceFromElement } from '../../../utils/element-to-vue-instance-registry'
@@ -250,7 +249,7 @@ export const BVTooltip = /*#__PURE__*/ extend({
 
     // Destroy ourselves when the parent is destroyed
     if (this.bvParent) {
-      this.bvParent.$once(getHookEventNameBeforeDestroy(this.bvParent), () => {
+      onInstanceDestroy(this.bvParent, () => {
         this.$nextTick(() => {
           // In a `requestAF()` to release control back to application
           requestAF(() => {
@@ -345,10 +344,10 @@ export const BVTooltip = /*#__PURE__*/ extend({
           arrowPadding: toInteger(this.arrowPadding, 0),
           boundaryPadding: toInteger(this.boundaryPadding, 0),
           // Template transition phase events (handled once only)
-          [eventProp(EVENT_NAME_SHOW, true)]: this.onTemplateShow,
-          [eventProp(EVENT_NAME_SHOWN, true)]: this.onTemplateShown,
-          [eventProp(EVENT_NAME_HIDE, true)]: this.onTemplateHide,
-          [eventProp(EVENT_NAME_HIDDEN, true)]: this.onTemplateHidden,
+          [eventProp(EVENT_NAME_SHOW, { once: true })]: this.onTemplateShow,
+          [eventProp(EVENT_NAME_SHOWN, { once: true })]: this.onTemplateShown,
+          [eventProp(EVENT_NAME_HIDE, { once: true })]: this.onTemplateHide,
+          [eventProp(EVENT_NAME_HIDDEN, { once: true })]: this.onTemplateHidden,
           // Convenience events from template
           [eventProp(EVENT_NAME_FOCUSIN)]: this.handleEvent,
           [eventProp(EVENT_NAME_FOCUSOUT)]: this.handleEvent,
@@ -359,8 +358,7 @@ export const BVTooltip = /*#__PURE__*/ extend({
       // We set the initial reactive data (values that can be changed while open)
       this.handleTemplateUpdate()
       // When the template gets destroyed for any reason
-      // (kept as explicit subscription since event name differs between Vue 2/3)
-      $tip.$once(getHookEventNameDestroyed($tip), this.destroyTemplate)
+      onInstanceDestroy($tip, this.destroyTemplate)
       // Mount (which triggers the `show`)
       $tip.$mount(container.appendChild(document.createElement('div')))
       // Template will automatically remove its markup from DOM when hidden
