@@ -8,6 +8,13 @@ const FAILURE_CODES = [404];
 const SITE_HOST = 'localhost:8080';
 const ALLOWED_HOST_PATTERNS = [SITE_HOST, /gitlab\.io$/, /gitlab\.com$/];
 
+// Patterns for URLs to skip checking
+const SKIP_URL_PATTERNS = [
+  /\/storybook[/?]/, // Skip all Storybook URLs
+  /\/svgs$/, // Skip /svgs path
+  /\/tailwind-documentation$/, // Skip /tailwind-documentation path
+];
+
 async function checkLinks() {
   const checker = new LinkChecker();
 
@@ -27,7 +34,16 @@ async function checkLinks() {
     ],
     linksToSkip: async (rawUrl) => {
       const url = new URL(rawUrl);
-      return !ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
+
+      // Skip if host is not in allowed patterns
+      const isAllowedHost = ALLOWED_HOST_PATTERNS.some((pattern) => url.host.match(pattern));
+      if (!isAllowedHost) {
+        return true;
+      }
+
+      // Skip if URL matches any exception pattern
+      const shouldSkip = SKIP_URL_PATTERNS.some((pattern) => pattern.test(rawUrl));
+      return shouldSkip;
     },
   });
 
