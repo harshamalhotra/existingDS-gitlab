@@ -44,6 +44,18 @@ function addCustomDefinitions({ addComponents, addUtilities }) {
         'border-color': 'var(--gl-action-neutral-border-color-active)',
       },
     },
+    '.bg-action-neutral': {
+      'background-color': 'var(--gl-action-neutral-background-color-default)',
+      '&:hover': {
+        'background-color': 'var(--gl-action-neutral-background-color-hover)',
+      },
+      '&:focus': {
+        'background-color': 'var(--gl-action-neutral-background-color-focus)',
+      },
+      '&:active': {
+        'background-color': 'var(--gl-action-neutral-background-color-active)',
+      },
+    },
     '.animate-skeleton-loader': {
       overflow: 'hidden',
       'max-width': '32rem',
