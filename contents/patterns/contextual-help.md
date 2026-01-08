@@ -30,7 +30,7 @@ Help links open in a new tab to ensure:
 - The result of clicking links is predictable.
 - The user does not need to navigate away from their task.
 
-To learn how to link to GitLab documentation in various programming languages, see [Linking to /help](https://docs.gitlab.com/ee/development/documentation/#linking-to-help).
+For linking to documentation from the GitLab app, see [linking to `/help`](https://docs.gitlab.com/development/documentation/help/#linking-to-help).
 
 ### Link text
 
