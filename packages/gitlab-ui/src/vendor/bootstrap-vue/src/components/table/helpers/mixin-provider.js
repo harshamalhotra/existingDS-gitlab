@@ -101,15 +101,15 @@ export const providerMixin = extend({
   },
   methods: {
     refresh() {
-      const { items, refresh, computedBusy } = safeVueInstance(this)
+      const { items, computedBusy } = safeVueInstance(this)
 
       // Public Method: Force a refresh of the provider function
-      this.$off(EVENT_NAME_REFRESHED, refresh)
+      this.$_pendingRefresh = false
       if (computedBusy) {
         // Can't force an update when forced busy by user (busy prop === true)
         if (this.localBusy && this.hasProvider) {
           // But if provider running (localBusy), re-schedule refresh once `refreshed` emitted
-          this.$on(EVENT_NAME_REFRESHED, refresh)
+          this.$_pendingRefresh = true
         }
       } else {
         this.clearSelected()
@@ -129,6 +129,11 @@ export const providerMixin = extend({
       // New root emit
       if (this.id) {
         this.emitOnRoot(ROOT_EVENT_NAME_REFRESHED, this.id)
+      }
+      // Handle pending refresh request
+      if (this.$_pendingRefresh) {
+        this.$_pendingRefresh = false
+        this.refresh()
       }
     },
     _providerUpdate() {
@@ -180,7 +185,7 @@ export const providerMixin = extend({
           // and clear the busy state
           warn(`Provider function error [${e.name}] ${e.message}.`, NAME_TABLE)
           this.localBusy = false
-          this.$off(EVENT_NAME_REFRESHED, this.refresh)
+          this.$_pendingRefresh = false
         }
       })
     }

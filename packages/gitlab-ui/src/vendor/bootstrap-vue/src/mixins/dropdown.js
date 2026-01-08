@@ -142,7 +142,7 @@ export const dropdownMixin = extend({
           this.visibleChangePrevented = true
           this.visible = oldValue
           // Just in case a child element triggered `this.hide(true)`
-          this.$off(EVENT_NAME_HIDDEN, this.focusToggler)
+          this.$_focusOnHidden = false
           return
         }
         if (newValue) {
@@ -223,6 +223,11 @@ export const dropdownMixin = extend({
       this.emitOnRoot(ROOT_EVENT_NAME_HIDDEN, this)
       this.$emit(EVENT_NAME_HIDDEN)
       this.destroyPopper()
+      // Handle pending focus request
+      if (this.$_focusOnHidden) {
+        this.$_focusOnHidden = false
+        this.focusToggler()
+      }
     },
     createPopper(element) {
       this.destroyPopper()
@@ -299,7 +304,7 @@ export const dropdownMixin = extend({
       this.visible = false
       if (refocus) {
         // Child element is closing the dropdown on click
-        this.$once(EVENT_NAME_HIDDEN, this.focusToggler)
+        this.$_focusOnHidden = true
       }
     },
     // Called only by a button that toggles the menu
@@ -361,7 +366,7 @@ export const dropdownMixin = extend({
         this.visible = false
         stopEvent(event)
         // Return focus to original trigger button
-        this.$once(EVENT_NAME_HIDDEN, this.focusToggler)
+        this.$_focusOnHidden = true
       }
     },
     // Called only in split button mode, for the split button

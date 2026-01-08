@@ -59,6 +59,10 @@ export const theadMixin = extend({
       }
       stopEvent(event)
       this.$emit(EVENT_NAME_HEAD_CLICKED, field.key, field, event, isFoot)
+      // Call handleSort directly if sortable (defined in mixin-sorting.js)
+      if (this.isSortable) {
+        this.handleSort(field.key, field, event, isFoot)
+      }
     },
     renderThead(isFoot = false) {
       const {

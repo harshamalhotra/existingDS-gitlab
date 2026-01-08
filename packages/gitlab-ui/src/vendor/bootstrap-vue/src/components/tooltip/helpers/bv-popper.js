@@ -136,12 +136,8 @@ export const BVPopper = /*#__PURE__*/ extend({
     this.$_popper = null
     // Ensure we show as we mount
     this.localShow = true
-    // Create popper instance before shown
-    this.$on(EVENT_NAME_SHOW, el => {
-      this.popperCreate(el)
-    })
-    // Self destruct handler
-    const handleDestroy = () => {
+    // Self destruct handler (stored as instance property for use in afterLeave)
+    this.$_handleDestroy = () => {
       this.$nextTick(() => {
         // In a `requestAF()` to release control back to application
         requestAF(() => {
@@ -150,9 +146,7 @@ export const BVPopper = /*#__PURE__*/ extend({
       })
     }
     // Self destruct if parent destroyed
-    onInstanceDestroy(this.bvParent, handleDestroy)
-    // Self destruct after hidden
-    this.$once(EVENT_NAME_HIDDEN, handleDestroy)
+    onInstanceDestroy(this.bvParent, this.$_handleDestroy)
   },
   beforeMount() {
     // Ensure that the attachment position is correct before mounting
@@ -236,10 +230,17 @@ export const BVPopper = /*#__PURE__*/ extend({
         props: { appear: true, noFade },
         on: {
           // Events used by parent component/instance
-          beforeEnter: el => this.$emit(EVENT_NAME_SHOW, el),
+          beforeEnter: el => {
+            this.popperCreate(el)
+            this.$emit(EVENT_NAME_SHOW, el)
+          },
           afterEnter: el => this.$emit(EVENT_NAME_SHOWN, el),
           beforeLeave: el => this.$emit(EVENT_NAME_HIDE, el),
-          afterLeave: el => this.$emit(EVENT_NAME_HIDDEN, el)
+          afterLeave: el => {
+            this.$emit(EVENT_NAME_HIDDEN, el)
+            // Self destruct after hidden
+            this.$_handleDestroy()
+          }
         }
       },
       [this.localShow ? this.renderTemplate(h) : h()]

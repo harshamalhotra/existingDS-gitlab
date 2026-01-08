@@ -1,9 +1,5 @@
 import { extend } from '../../../vue'
-import {
-  EVENT_NAME_HEAD_CLICKED,
-  EVENT_NAME_SORT_CHANGED,
-  MODEL_EVENT_NAME_PREFIX
-} from '../../../constants/events'
+import { EVENT_NAME_SORT_CHANGED, MODEL_EVENT_NAME_PREFIX } from '../../../constants/events'
 import {
   PROP_TYPE_ARRAY_STRING,
   PROP_TYPE_BOOLEAN,
@@ -140,16 +136,6 @@ export const sortingMixin = extend({
     }
   },
   watch: {
-    /* istanbul ignore next: pain in the butt to test */
-    isSortable(newValue) {
-      if (newValue) {
-        if (this.isSortable) {
-          this.$on(EVENT_NAME_HEAD_CLICKED, this.handleSort)
-        }
-      } else {
-        this.$off(EVENT_NAME_HEAD_CLICKED, this.handleSort)
-      }
-    },
     [MODEL_PROP_NAME_SORT_DESC](newValue) {
       /* istanbul ignore next */
       if (newValue === this.localSortDesc) {
@@ -175,11 +161,6 @@ export const sortingMixin = extend({
       if (newValue !== oldValue) {
         this.$emit(MODEL_EVENT_NAME_SORT_BY, newValue)
       }
-    }
-  },
-  created() {
-    if (this.isSortable) {
-      this.$on(EVENT_NAME_HEAD_CLICKED, this.handleSort)
     }
   },
   methods: {

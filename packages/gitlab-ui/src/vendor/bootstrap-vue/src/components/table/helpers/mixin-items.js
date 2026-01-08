@@ -127,6 +127,10 @@ export const itemsMixin = extend({
       // Emit context information for external paging/filtering/sorting handling
       if (!looseEqual(newValue, oldValue)) {
         this.$emit(EVENT_NAME_CONTEXT_CHANGED, newValue)
+        // Clear selection on context change if selectable (defined in mixin-selectable.js)
+        if (this.hasSelectableRowClick) {
+          this.clearSelected()
+        }
       }
     }
   },
