@@ -587,10 +587,6 @@
         "path": "patterns",
         "items": [
           {
-            "title": "AI-human interaction",
-            "path": "ai-human-interaction"
-          },
-          {
             "title": "Affordance",
             "path": "affordance"
           },
@@ -637,6 +633,10 @@
           {
             "title": "GitLab Duo Agent Platform",
             "items": [
+              {
+                "title": "AI-human interaction",
+                "path": "ai-human-interaction"
+              },
               {
                 "title": "Agents and Flows",
                 "path": "duo-agents-and-flows"
