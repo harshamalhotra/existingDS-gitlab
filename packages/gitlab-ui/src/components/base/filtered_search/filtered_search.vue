@@ -408,7 +408,7 @@ export default {
     :search-button-attributes="searchButtonAttributes"
     :show-search-button="showSearchButton"
     :disabled="viewOnly"
-    data-testid="filtered-search-input"
+    :wrapper-attributes="{ 'data-testid': 'filtered-search-input' }"
     @submit="submit"
     @input="applyNewValue"
     @history-item-selected="$emit('history-item-selected', $event)"

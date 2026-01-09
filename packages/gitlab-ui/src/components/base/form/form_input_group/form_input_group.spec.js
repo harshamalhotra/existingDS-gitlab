@@ -49,6 +49,17 @@ describe('Input Group', () => {
     expect(wrapper.emitted('input')).toBeUndefined();
   });
 
+  describe('`wrapperAttributes` prop', () => {
+    it('applies attributes to the wrapper element', () => {
+      createWrapper({
+        propsData: { wrapperAttributes: { 'data-testid': 'my-input-group', 'aria-label': 'Test' } },
+      });
+
+      expect(wrapper.attributes('data-testid')).toBe('my-input-group');
+      expect(wrapper.attributes('aria-label')).toBe('Test');
+    });
+  });
+
   describe('`inputClass` prop', () => {
     it.each`
       inputClass
