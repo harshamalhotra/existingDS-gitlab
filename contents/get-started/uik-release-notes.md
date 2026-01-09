@@ -3,6 +3,27 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.8
+
+<small>Published 2026-01-09</small>
+
+No major updates due to the 🎄 holidays.
+
+This release updates the application chrome layout templates to reflect the latest visual refinements from the product.
+
+### Changelog
+
+#### 🔄 Changes
+
+- (Patterns & Page Templates): [Application chrome](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3353-152) adjustments:
+
+  - Updates AI navigation width and spacing.
+  - Adjusts GitLab Duo panel spacing at small breakpoint.
+
+#### Contributors
+
+Dan Mizzi-Harris, Jeremy Elder, Sascha Eggenberger
+
 ## 18.7
 
 <small>Published 2025-12-12</small>
