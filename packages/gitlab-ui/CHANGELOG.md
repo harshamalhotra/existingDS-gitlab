@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.4.0
+
+### Minor Changes
+
+- 99272c2: Add wrapperAttributes prop to GlFormInputGroup and GlSearchBoxByClick to support explicit attribute passing
+
 ## 126.3.4
 
 ### Patch Changes
