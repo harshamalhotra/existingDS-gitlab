@@ -51,8 +51,8 @@ describe('Filtered search', () => {
       stubs: {
         GlSearchBoxByClick: {
           name: 'GlSearchBoxByClickStub',
-          props: ['clearable', 'searchButtonAttributes', 'showSearchButton'],
-          template: '<div><slot name="input"></slot></div>',
+          props: ['clearable', 'searchButtonAttributes', 'showSearchButton', 'wrapperAttributes'],
+          template: '<div v-bind="wrapperAttributes"><slot name="input"></slot></div>',
         },
       },
     });
@@ -968,5 +968,13 @@ describe('Filtered search integration tests', () => {
     expect(termComponents.map((termComponent) => termComponent.props('value'))).toEqual([
       { data: '' },
     ]);
+  });
+
+  it('has data-testid attribute on the form input group wrapper', () => {
+    mountComponent();
+
+    const formInputGroup = wrapper.find('[role="group"]');
+    expect(formInputGroup.exists()).toBe(true);
+    expect(formInputGroup.attributes('data-testid')).toBe('filtered-search-input');
   });
 });

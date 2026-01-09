@@ -47,6 +47,14 @@ export default {
       required: false,
       default: '',
     },
+    /**
+     * HTML attributes to apply to the wrapper element.
+     */
+    wrapperAttributes: {
+      type: Object,
+      required: false,
+      default: () => ({}),
+    },
   },
   data() {
     return {
@@ -68,7 +76,7 @@ export default {
 };
 </script>
 <template>
-  <div role="group" class="input-group">
+  <div role="group" class="input-group" v-bind="wrapperAttributes">
     <div v-if="activeOption || $scopedSlots.prepend" class="input-group-prepend">
       <!-- @slot Is rendered in front of the input field. -->
       <slot name="prepend"></slot>

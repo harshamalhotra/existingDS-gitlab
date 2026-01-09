@@ -125,6 +125,14 @@ export default {
       required: false,
       default: true,
     },
+    /**
+     * HTML attributes to apply to the wrapper element.
+     */
+    wrapperAttributes: {
+      type: Object,
+      required: false,
+      default: () => ({}),
+    },
   },
   data() {
     return {
@@ -206,6 +214,7 @@ export default {
   <gl-form-input-group
     class="gl-search-box-by-click"
     :class="{ 'gl-search-box-by-click-with-search-button': showSearchButton }"
+    :wrapper-attributes="wrapperAttributes"
   >
     <template v-if="historyItems" #prepend>
       <gl-disclosure-dropdown

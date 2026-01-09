@@ -6,8 +6,9 @@ import GlFormInput from '../form/form_input/form_input.vue';
 import SearchBoxByClick from './search_box_by_click.vue';
 
 const GlFormInputGroupStub = {
+  props: ['wrapperAttributes'],
   template: `
-    <div>
+    <div v-bind="wrapperAttributes">
       <slot name="prepend"></slot>
       <slot></slot>
       <slot name="append"></slot>
@@ -180,6 +181,14 @@ describe('search box by click component', () => {
     createComponent({ searchButtonAttributes });
 
     expect(findSearchButton().attributes('data-prop')).toBe(searchButtonAttributes['data-prop']);
+  });
+
+  it('passes `wrapperAttributes` prop to the form input group', () => {
+    const wrapperAttributes = { 'data-testid': 'my-search-box' };
+
+    createComponent({ wrapperAttributes });
+
+    expect(wrapper.attributes('data-testid')).toBe('my-search-box');
   });
 
   describe('showSearchButton', () => {
