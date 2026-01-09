@@ -32,9 +32,9 @@ describe('dashboardConfigValidator', () => {
     ${'dashboardNoDesc'}                | ${dashboardNoDesc}                | ${true}
     ${'dashboardNoPanel'}               | ${dashboardNoPanel}               | ${true}
     ${'dashboardNoPanelId'}             | ${dashboardNoPanelId}             | ${false}
-    ${'dashboardNoPanelGridAttrs'}       | ${dashboardNoPanelGridAttrs}       | ${false}
-    ${'dashboardWithDuplicatePanelIds'}  | ${dashboardWithDuplicatePanelIds}  | ${false}
-    ${'dashboardWithUniquePanelIds'}     | ${dashboardWithUniquePanelIds}     | ${true}
+    ${'dashboardNoPanelGridAttrs'}      | ${dashboardNoPanelGridAttrs}      | ${false}
+    ${'dashboardWithDuplicatePanelIds'} | ${dashboardWithDuplicatePanelIds} | ${false}
+    ${'dashboardWithUniquePanelIds'}    | ${dashboardWithUniquePanelIds}    | ${true}
   `('returns $expected when config is $scenario', ({ config, expected }) => {
     const result = dashboardConfigValidator(config);
 
