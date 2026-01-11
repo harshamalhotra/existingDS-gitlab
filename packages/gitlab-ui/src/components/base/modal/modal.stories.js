@@ -30,6 +30,8 @@ const generateTemplate = ({ props = {}, slots = {} } = {}) => {
         :action-cancel="{text: 'Cancel'}"
         :scrollable="scrollable"
         :no-focus-on-show="noFocusOnShow"
+        :header-tag="headerTag"
+        :footer-tag="footerTag"
         modal-id="test-modal-id"
         title="Example title"
         no-fade

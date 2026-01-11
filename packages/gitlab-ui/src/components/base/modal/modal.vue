@@ -45,6 +45,14 @@ export default {
       default: 'h4',
     },
     /**
+     * HTML tag to use for the modal header. Default is 'div' for accessibility reasons.
+     */
+    headerTag: {
+      type: String,
+      required: false,
+      default: 'div',
+    },
+    /**
      * Title text to display in the modal header.
      */
     title: {
@@ -59,6 +67,14 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+    /**
+     * HTML tag to use for the modal footer. Default is 'div' for accessibility reasons.
+     */
+    footerTag: {
+      type: String,
+      required: false,
+      default: 'div',
     },
     /**
      * Configuration object for the primary action button. Should contain 'text' and optionally 'attributes' properties.
@@ -228,6 +244,8 @@ export default {
     :size="size"
     :visible="visible"
     :aria-label="ariaLabel || title"
+    :header-tag="headerTag"
+    :footer-tag="footerTag"
     v-bind="$attrs"
     lazy
     :modal-class="['gl-modal', modalClass]"
