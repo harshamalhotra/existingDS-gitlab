@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 126.5.0
+
+### Minor Changes
+
+- d06f37c: Default header and footer slots of GlModal to use semantic `<div>` and provide props to override this.
+
 ## 126.4.0
 
 ### Minor Changes
