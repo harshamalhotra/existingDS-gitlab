@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import merge from 'lodash/merge';
 import isNil from 'lodash/isNil';

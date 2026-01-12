@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import merge from 'lodash/merge';
 import { GL_COLOR_NEUTRAL_0, GL_COLOR_NEUTRAL_100 } from '../../../tokens/build/js/tokens';

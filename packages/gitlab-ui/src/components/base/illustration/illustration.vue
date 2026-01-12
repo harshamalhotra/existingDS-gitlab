@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import illustrationsPath from '@gitlab/svgs/dist/illustrations.svg';
 import illustrationsInfo from '@gitlab/svgs/dist/illustrations.json';

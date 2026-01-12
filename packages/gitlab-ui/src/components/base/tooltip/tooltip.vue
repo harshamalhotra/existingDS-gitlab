@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import { BTooltip } from '../../../vendor/bootstrap-vue/src/components/tooltip/tooltip';
 import { tooltipDelay } from '../../../utils/constants';

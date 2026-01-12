@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 /**
  * Area charts as of %12.10 support annotations.

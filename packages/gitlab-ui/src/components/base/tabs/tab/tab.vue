@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import isPlainObject from 'lodash/isPlainObject';
 import { BTab } from '../../../../vendor/bootstrap-vue/src/components/tabs/tab';

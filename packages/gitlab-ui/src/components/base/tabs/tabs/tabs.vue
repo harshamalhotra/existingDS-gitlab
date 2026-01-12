@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import { BTabs } from '../../../../vendor/bootstrap-vue/src/components/tabs/tabs';
 import { tabsButtonDefaults } from '../../../../utils/constants';

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import * as echarts from 'echarts';
 import { defaultFontSize } from '../../../utils/charts/config';

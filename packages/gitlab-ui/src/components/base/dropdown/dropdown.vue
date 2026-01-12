@@ -1,4 +1,4 @@
-<!-- eslint-disable vue/multi-word-component-names vue/one-component-per-file -->
+<!-- eslint-disable vue/one-component-per-file -->
 <script>
 import Vue from 'vue';
 import merge from 'lodash/merge';

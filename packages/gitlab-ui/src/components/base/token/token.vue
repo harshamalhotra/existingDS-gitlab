@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import { tokenVariants } from '../../../utils/constants';
 import { translate } from '../../../utils/i18n';

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import { BPopover } from '../../../vendor/bootstrap-vue/src/components/popover/popover';
 import tooltipMixin from '../../mixins/tooltip_mixin';
