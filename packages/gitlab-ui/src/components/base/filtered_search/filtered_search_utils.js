@@ -9,6 +9,8 @@ export const INTENT_ACTIVATE_PREVIOUS = 'intent-activate-previous';
 
 export const TOKEN_CLOSE_SELECTOR = '.gl-token-close';
 
+export const DROPDOWN_CLASS = 'gl-filtered-search-suggestion-list';
+
 export function isEmptyTerm(token) {
   return token.type === TERM_TOKEN_TYPE && token.value.data.trim() === '';
 }

@@ -4,7 +4,13 @@ import { Portal } from 'portal-vue';
 import { LEFT_MOUSE_BUTTON } from '../../../utils/constants';
 import GlFilteredSearchSuggestion from './filtered_search_suggestion.vue';
 import GlFilteredSearchSuggestionList from './filtered_search_suggestion_list.vue';
-import { splitOnQuotes, wrapTokenInQuotes, match, TERM_TOKEN_TYPE } from './filtered_search_utils';
+import {
+  splitOnQuotes,
+  wrapTokenInQuotes,
+  match,
+  TERM_TOKEN_TYPE,
+  DROPDOWN_CLASS,
+} from './filtered_search_utils';
 
 // We need some helpers to ensure @vue/compat compatibility
 // @vue/compat will render comment nodes for v-if and comments in HTML
@@ -410,7 +416,17 @@ export default {
       });
     },
 
-    handleBlur() {
+    handleBlur(e) {
+      // Check if the blur is caused by clicking within the same component
+      // (e.g., scrollbar in suggestions dropdown)
+      const { relatedTarget } = e;
+
+      if (relatedTarget?.classList.contains(DROPDOWN_CLASS)) {
+        // Move focus back to input
+        this.$refs.input?.focus();
+        return;
+      }
+
       if (this.multiSelect) {
         this.$emit('complete');
       } else if (this.active) {
