@@ -1,5 +1,14 @@
 # @gitlab/ui
 
+## 127.0.0
+
+### Major Changes
+
+- 6207f57: Text must now be supplied for all items in a `GlBreadcrumb`.
+
+  Makes `text` a required key on items in the `GlBreadcrumb` component and
+  removes now-unnecessary hiding mechanism for textless items.
+
 ## 126.5.0
 
 ### Minor Changes
