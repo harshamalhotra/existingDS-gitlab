@@ -32,7 +32,9 @@ export default {
       validator: (items) => {
         return items.every((item) => {
           const keys = Object.keys(item);
-          return keys.includes('text') && (keys.includes('href') || keys.includes('to'));
+          return (
+            keys.includes('text') && item.text && (keys.includes('href') || keys.includes('to'))
+          );
         });
       },
     },
@@ -233,12 +235,6 @@ export default {
       }
       this.resetItems();
     },
-    hideItemClass(item) {
-      // TODO once https://gitlab.com/gitlab-org/gitlab/-/issues/520089 is addressed:
-      // - Remove this hiding of empty breadcrumbs.
-      // - Tighten `items` validator to require non-empty `text`.
-      return !item.text ? 'gl-hidden' : '';
-    },
   },
 };
 </script>
@@ -270,7 +266,7 @@ export default {
         :to="item.to"
         :size="size"
         :aria-current="getAriaCurrentAttr(index)"
-        :class="[hideItemClass(item), itemClass]"
+        :class="itemClass"
         ><template #default>
           <gl-avatar
             v-if="item.avatarPath"
