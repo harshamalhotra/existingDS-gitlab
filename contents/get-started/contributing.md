@@ -27,6 +27,8 @@ Start by ensuring that an issue or merge request exists. Search the [issue track
 - **Open a merge request** when you are proposing a specific change.
 - **Create an issue** when the outcome is unclear, for example to raise a question, report a bug, or explore an idea. When in doubt, default to an issue.
 
+Before opening a merge request, be sure to read this project's [README.md](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/README.md) for development and documentation guidance.
+
 ### 2. Classify as core or extended
 
 After you open an issue or merge request, the Design System team will classify the contribution as core, extended, or out of scope for the design system. If you are discussing or modifying an existing element, we will continue to use its current classification. In some cases, a contribution may not have enough information to make a clear decision. These will be marked as pending classification and revisited once more details are available.
@@ -110,6 +112,7 @@ Rolling out changes is typically handled by the contributor, but the Design Syst
 
 ## Resources
 
+- This project's [README.md](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/README.md) provides various technical details for contributing to our documentation.
 - [Contribute to the Pajamas UI Kit](/get-started/uik-contributing)
 - [Guides for contributing to GitLab UI](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-ui/CONTRIBUTING.md)
 
