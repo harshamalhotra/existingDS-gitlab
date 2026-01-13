@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 127.1.0
+
+### Minor Changes
+
+- 930c5cd: Add gl-bg-action-neutral Tailwind utility
+
 ## 127.0.0
 
 ### Major Changes
