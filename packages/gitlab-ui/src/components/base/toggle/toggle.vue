@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import uniqueId from 'lodash/uniqueId';
 

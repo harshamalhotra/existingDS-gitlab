@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import Vue from 'vue';
 import compose from 'lodash/fp/compose';

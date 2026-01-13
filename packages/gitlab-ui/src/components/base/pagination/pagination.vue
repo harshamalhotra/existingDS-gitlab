@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import debounce from 'lodash/debounce';
 import isFunction from 'lodash/isFunction';
@@ -12,7 +11,7 @@ import GlLink from '../link/link.vue';
 const pageRange = (from, to) => range(from, to + 1, 1);
 
 export default {
-  name: 'Pagination',
+  name: 'GlPagination',
   components: {
     GlLink,
     GlIcon,

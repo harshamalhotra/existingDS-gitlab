@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 /* eslint-disable no-continue */
 import has from 'lodash/has';

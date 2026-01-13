@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import iconsPath from '@gitlab/svgs/dist/icons.svg';
 import iconsInfo from '@gitlab/svgs/dist/icons.json';

@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import isFunction from 'lodash/isFunction';
 import isString from 'lodash/isString';

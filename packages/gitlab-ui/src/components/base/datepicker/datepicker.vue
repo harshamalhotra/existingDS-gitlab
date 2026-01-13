@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import isString from 'lodash/isString';
 import Pikaday from 'pikaday';

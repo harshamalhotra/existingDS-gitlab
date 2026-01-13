@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 import debounce from 'lodash/debounce';
 import { translate } from '../../../utils/i18n';
