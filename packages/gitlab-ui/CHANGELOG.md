@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 127.1.1
+
+### Patch Changes
+
+- ccfd22d: GlToast: Add animation workaround for Firefox
+
 ## 127.1.0
 
 ### Minor Changes
