@@ -1,5 +1,5 @@
 <script>
-import { stepIndexAndWrap } from './filtered_search_utils';
+import { stepIndexAndWrap, FILTERED_SEARCH_SUGGESTIONS_CLASS } from './filtered_search_utils';
 
 const DEFER_TO_INITIAL_VALUE = -1;
 const NO_ACTIVE_ITEM = -2;
@@ -45,7 +45,7 @@ export default {
       return this.registeredItems[this.activeIdx];
     },
     listClasses() {
-      return [this.suggestionsListClass(), 'dropdown-menu gl-filtered-search-suggestion-list'];
+      return [this.suggestionsListClass(), `dropdown-menu ${FILTERED_SEARCH_SUGGESTIONS_CLASS}`];
     },
   },
 
