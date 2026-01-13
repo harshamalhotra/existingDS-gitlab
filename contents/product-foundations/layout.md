@@ -43,6 +43,8 @@ Panels help a user navigate complex workflows by organizing related content and 
 1. **Dynamic panel** (optional) that adapts to the primary context
 1. **AI panel** (collapsible) for intelligent features
 
+A dynamic panel is tied to the static panel and only appears while viewing that page. When the static panel updates, the dynamic panel updates or is removed accordingly. Navigating away removes the dynamic panel.
+
 #### Names for external communication
 
 Use these names to refer to parts of the UI in UI text messages, documentation, and marketing materials:
