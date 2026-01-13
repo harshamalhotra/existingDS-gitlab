@@ -9,6 +9,7 @@ const DEFAULT_OPTIONS = {
   toastClass: 'gl-toast',
   isStatus: true,
   toaster: 'b-toaster-bottom-left',
+  appendToast: true,
 };
 
 let toastsCount = 0;
