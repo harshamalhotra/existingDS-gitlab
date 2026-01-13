@@ -9,7 +9,7 @@ import {
   wrapTokenInQuotes,
   match,
   TERM_TOKEN_TYPE,
-  DROPDOWN_CLASS,
+  FILTERED_SEARCH_SUGGESTIONS_CLASS,
 } from './filtered_search_utils';
 
 // We need some helpers to ensure @vue/compat compatibility
@@ -417,12 +417,9 @@ export default {
     },
 
     handleBlur(e) {
-      // Check if the blur is caused by clicking within the same component
-      // (e.g., scrollbar in suggestions dropdown)
-      const { relatedTarget } = e;
-
-      if (relatedTarget?.classList.contains(DROPDOWN_CLASS)) {
-        // Move focus back to input
+      // Keep focus on input when blur event is on same element
+      // (e.g. scrollbar in filtered search suggestions list)
+      if (e.relatedTarget?.classList.contains(FILTERED_SEARCH_SUGGESTIONS_CLASS)) {
         this.$refs.input?.focus();
         return;
       }
