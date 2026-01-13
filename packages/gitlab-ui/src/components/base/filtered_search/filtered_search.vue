@@ -24,6 +24,11 @@ function initialState() {
   return [createTerm()];
 }
 
+function computeTokens(value, termsAsTokens) {
+  const resolved = value?.length ? cloneDeep(value) : initialState();
+  return needDenormalization(resolved) ? denormalizeTokens(resolved, termsAsTokens) : resolved;
+}
+
 export default {
   name: 'GlFilteredSearch',
   components: {
@@ -174,7 +179,7 @@ export default {
   },
   data() {
     return {
-      tokens: initialState(),
+      tokens: computeTokens(this.value, this.termsAsTokens),
       activeTokenIdx: null,
       suggestionsStyle: {},
       intendedCursorPosition: 'end',
@@ -239,20 +244,16 @@ export default {
     value: {
       handler(newValue, oldValue) {
         if (!isEqual(newValue, oldValue)) {
-          const value = newValue.length ? newValue : initialState();
-          this.applyNewValue(cloneDeep(value));
+          this.applyNewValue(newValue);
         }
       },
       deep: true,
-      immediate: true,
     },
   },
 
   methods: {
     applyNewValue(newValue) {
-      this.tokens = needDenormalization(newValue)
-        ? denormalizeTokens(newValue, this.termsAsTokens)
-        : newValue;
+      this.tokens = computeTokens(newValue, this.termsAsTokens);
     },
 
     isActiveToken(idx) {
