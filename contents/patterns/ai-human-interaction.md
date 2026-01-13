@@ -21,22 +21,36 @@ This page is divided into two main sections: [Guidelines](#guidelines) and [Fram
 
 ### Start with the user, not the technology
 
-AI technology should be leveraged to enhance the user experience, rather than be the primary focus. Design with a deep understanding of the user's needs, goals, and pain points. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to **\_**?", ask yourself "How might we help users **\_**?".
+Design with a deep understanding of the user's needs, goals, and pain points. Whether building AI features or platform capabilities that enable users to create their own AI solutions, ensure you are solving real problems. If you aren't aligned with a user's need, you are building a system that does not solve a problem. Instead of asking "Can we use AI to?", ask yourself "How might we help users?". Consider not just what the AI can do, but where and how users encounter AI assistance in their existing tasks. This includes direct conversation with agents, automated flows triggered by their actions, or contextual suggestions within their existing tasks.
 
-### Understand when to automate
+Design AI to be collaborative, not autonomous. AI should suggest and assist while users remain in control. Respect human judgment by ensuring AI acknowledges uncertainty and defers to user expertise when appropriate. Consider not just what the AI can do, but where and how users encounter AI assistance in their existing tasks. This includes direct conversation with agents, automated flows triggered by their actions, or contextual suggestions within their existing tasks.
 
-Understand if a task is a good fit for AI or if it is better done by a human. First, understand if a user's need will be helped by automation. Users may not want automation in [high risk tasks](#understand-risk) where they will be held responsible for the result, or tasks that they enjoy doing. Tasks that are a good fit for automation are tedious, error-prone, boring, low risk, and free up the user's time. If a user benefits from automation, consider if the problem could be addressed with pre-defined rules (_if this, then that_). Understand the strengths and weaknesses of AI. It can be helpful for processing large amounts of information, pattern finding, prediction, classification, and recommendations. Given good training data, AI can be more accurate and faster than a human at completing tasks. It is less helpful for tasks requiring empathy, emotional intelligence, morality, common sense, predictability, contextual understanding, intuition, and creativity.
+### Understand when to use AI assistance
+
+Understand if a task is a good fit for AI assistance or automation, and what level of automation is appropriate. First, understand if a user's need will be helped by AI intervention.
+
+**Conversational assistance (agents)** is well-suited for tasks requiring exploration, explanation, or iterative problem-solving, such as debugging issues, generating content, or answering questions about complex topics. Users maintain full control and can guide the conversation as needed.
+
+**Automated workflows (flows)** are appropriate for tasks that are tedious, error-prone, repetitive, low risk, and free up the user's time. Users may not want automation in [high risk tasks](#understand-risk) where they will be held responsible for the result, or tasks that they enjoy doing.
+
+Build trust gradually. Start with small helpful actions and expand capabilities as users gain confidence with the system. Use non-threatening visual language that makes AI agents feel like supportive teammates rather than autonomous systems taking control. Consider if the problem could be addressed with pre-defined rules (_if this, then that_) before adding AI.
+
+Understand the strengths and weaknesses of AI. It can be helpful for processing large amounts of information, pattern finding, prediction, classification, and recommendations. Given good training data, AI can be more accurate and faster than a human at completing tasks. It is less helpful for tasks requiring empathy, emotional intelligence, morality, common sense, predictability, contextual understanding, intuition, and creativity.
 
 ### Understand risk
 
 To understand the risk of an AI-powered feature, assess the _probability_ of error and _impact_ of that error, where _impact_ is a comparison of potential _cost_ and _benefits_. Costs can be financial, emotional, reputational, opportunity, time, compliance, or others.
 
-In GitLab, an example of a _low risk_ situation is an AI-generated issue summary, which quickly gives context to the user about the issue. The potential cost is low, as the user usually does not take action based on the summary alone.
+In GitLab, an example of a _low risk_ situation is an agent providing explanations about GitLab features or helping debug configuration issues. The potential cost is low, as the user typically reviews and validates information before acting on it.
+
+An example of a _medium risk_ situation is a flow that automatically assigns labels or milestones to work items based on content analysis. If incorrect, the cost is primarily time spent correcting the assignments.
+
+An example of a _high risk_ situation is a flow that automatically creates merge requests with security fixes. While this helps users resolve vulnerabilities faster, incorrect changes could introduce new security issues or break functionality. The potential cost increases in high-risk applications, such as critical infrastructure.
 
 To mitigate high risk situations:
 
 - [Set the right expectations](#set-the-right-expectations).
-- Design for potential negative impact. For more information, see [destructive actions](/patterns/destructive-actions).
+- Design for potential negative impact. Consider how users can understand and manage the consequences of AI actions. Be transparent but unobtrusive. Users should always understand what AI is doing, but it shouldn't demand constant attention. Implement concrete safeguards such as requiring opt-in for high-risk actions and showing users a review step before execution. For more information, see [destructive actions](/patterns/destructive-actions).
 
 ### Communicate confidence
 
