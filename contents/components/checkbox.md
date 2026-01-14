@@ -173,44 +173,6 @@ const options = [
 If `value` is missing, then `text` will be used as both the `value` and `text` fields. If you use
 the `html` property, you must supply a `value` property.
 
-#### Changing the option field names
-
-If you want to customize the field property names (for example using `name` field for display
-`text`) you can easily change them by setting the `text-field`, `html-field`, `value-field`, and
-`disabled-field` props to a string that contains the property name you would like to use:
-
-```html
-<template>
-  <div>
-    <gl-form-checkbox-group
-      v-model="selected"
-      :options="options"
-      class="mb-3"
-      value-field="item"
-      text-field="name"
-      disabled-field="notEnabled"
-    ></gl-form-checkbox-group>
-    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
-  </div>
-</template>
-
-<script>
-  export default {
-    data() {
-      return {
-        selected: [],
-        options: [
-          { item: 'A', name: 'Option A' },
-          { item: 'B', name: 'Option B' },
-          { item: 'D', name: 'Option C', notEnabled: true },
-          { item: { d: 1 }, name: 'Option D' }
-        ]
-      }
-    }
-  }
-</script>
-```
-
 ### `<gl-form-checkbox>` as child of `<gl-form-checkbox-group>`
 
 Instead of using the `options` prop, you can also manually place `<gl-form-checkbox>` in
