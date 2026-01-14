@@ -41,10 +41,11 @@ autoUpdate.mockImplementation(() => {
 describe('GlCollapsibleListbox', () => {
   let wrapper;
 
-  const buildWrapper = (propsData, slots = {}) => {
+  const buildWrapper = (propsData, slots = {}, provide = {}) => {
     wrapper = mount(GlCollapsibleListbox, {
       propsData,
       slots,
+      provide,
       stubs: {
         MountingPortal: {
           template: '<div><slot /></div>',
@@ -72,6 +73,7 @@ describe('GlCollapsibleListbox', () => {
   const findIntersectionObserver = () => wrapper.findComponent(GlIntersectionObserver);
   const findDropdownMenu = () => wrapper.find("[data-testid='base-dropdown-menu']");
   const findDropdownToggle = () => wrapper.find("[data-testid='base-dropdown-toggle'");
+  const findDropdownTextSpan = () => wrapper.find('[data-testid="base-dropdown-span"]');
 
   it('passes custom offset to the base dropdown', () => {
     const dropdownOffset = { mainAxis: 10, crossAxis: 40 };
@@ -1012,5 +1014,65 @@ describe('GlCollapsibleListbox', () => {
     findListItem(1).trigger('keydown.esc');
     await nextTick();
     expect(findDropdownToggle().element).toHaveFocus();
+  });
+
+  describe('ID placements in listbox', () => {
+    describe('internal label ID placement', () => {
+      it('places toggleId on button when a searchable combobox', () => {
+        buildWrapper({
+          searchable: true,
+          toggleId: 'my-toggle',
+        });
+        const toggle = findDropdownToggle();
+        const span = findDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId on span when a non-searchable combobox', () => {
+        buildWrapper({
+          toggleId: 'my-toggle',
+        });
+        const toggle = findDropdownToggle();
+        const span = findDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBeUndefined();
+        expect(span.attributes('id')).toBe('my-toggle');
+      });
+    });
+
+    describe('external label ID placement', () => {
+      it('places toggleId on button when a searchable combobox', () => {
+        buildWrapper(
+          {
+            searchable: true,
+            toggleId: 'my-toggle',
+          },
+          {},
+          { isInFormGroup: true },
+        );
+        const toggle = findDropdownToggle();
+        const span = findDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId and listboxId when a non-searchable combobox', () => {
+        buildWrapper(
+          {
+            toggleId: 'my-toggle',
+          },
+          {},
+          { isInFormGroup: true },
+        );
+        const toggle = findDropdownToggle();
+        const span = findDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBe('my-toggle-span');
+      });
+    });
   });
 });

@@ -11,6 +11,7 @@ import {
   ARROW_DOWN,
   ARROW_UP,
   GL_DROPDOWN_CONTENTS_CLASS,
+  GL_DROPDOWN_FOCUS_CONTENT,
   POSITION_ABSOLUTE,
   POSITION_FIXED,
 } from '../constants';
@@ -53,6 +54,7 @@ export default {
   events: {
     GL_DROPDOWN_SHOWN,
     GL_DROPDOWN_HIDDEN,
+    GL_DROPDOWN_FOCUS_CONTENT,
   },
   components: {
     GlBaseDropdown,
@@ -63,6 +65,11 @@ export default {
     GlListboxSearchInput,
     GlLoadingIcon,
     GlIntersectionObserver,
+  },
+  inject: {
+    isInFormGroup: {
+      default: false,
+    },
   },
   model: {
     prop: 'selected',
@@ -211,7 +218,7 @@ export default {
     },
     /**
      * The `aria-labelledby` attribute value for the toggle button
-     * Provide the string of ids seperated by space
+     * Provide the string of IDs seperated by space
      */
     toggleAriaLabelledBy: {
       type: String,
@@ -220,7 +227,7 @@ export default {
     },
     /**
      * The `aria-labelledby` attribute value for the list of options
-     * Provide the string of ids seperated by space
+     * Provide the string of IDs seperated by space
      */
     listAriaLabelledBy: {
       type: String,
@@ -382,14 +389,41 @@ export default {
     };
   },
   computed: {
-    ariaLabelledByID() {
-      if (this.searchable) {
-        return this.searchInputId;
-      }
+    /**
+     * Determines the `aria-labelledby` attribute value for the listbox by
+     * evaluating a series of conditions in priority order. The returned ID
+     * references the element that best describes the listbox content, with
+     * preference given to headers in searchable lists, followed by search
+     * input, form labels, and finally fallback options.
+     */
+    listboxAriaLabelledByID() {
+      // Listbox is labelled by closest heading, creating a meaningful relationship
+      if (this.headerId && this.searchable) return `${this.headerId}`;
+
+      // Listbox is labelled by the search input with role="combobox"
+      if (this.searchable) return this.searchInputId;
+
+      // Listbox is labelledy by the text inside an externally labelled button
+      if (this.isInFormGroup) return this.listboxIdComputed;
+
+      // Fallback. Return a header ID or the toggle button ID.
       return this.listAriaLabelledBy || this.headerId || this.toggleIdComputed;
     },
     toggleIdComputed() {
       return this.toggleId || uniqueId('dropdown-toggle-btn-');
+    },
+    // Generate a custom listbox ID when inside GlFormGroup
+    listboxIdComputed() {
+      if (this.isInFormGroup) {
+        if (this.listAriaLabelledBy) {
+          return this.listAriaLabelledBy;
+        }
+        if (this.toggleId) {
+          return `${this.toggleId}-span`;
+        }
+        return uniqueId('dropdown-toggle-span-');
+      }
+      return undefined;
     },
     listboxTag() {
       if (!this.hasItems || isOption(this.items[0])) return 'ul';
@@ -606,6 +640,10 @@ export default {
     this.scrollObserver?.disconnect();
   },
   methods: {
+    onFocusContent(event) {
+      event.preventDefault();
+      this.open();
+    },
     open() {
       this.$refs.baseDropdown.open();
     },
@@ -922,8 +960,12 @@ export default {
   <gl-base-dropdown
     ref="baseDropdown"
     aria-haspopup="listbox"
+    :active-item-id="activeItemId"
     :aria-labelledby="toggleAriaLabelledBy"
     :block="block"
+    :has-searchable-listbox="searchable"
+    :has-external-label="isInFormGroup"
+    :listbox-id="listboxIdComputed"
     :toggle-id="toggleIdComputed"
     :toggle-text="listboxToggleText"
     :toggle-class="toggleButtonClasses"
@@ -939,12 +981,13 @@ export default {
     :offset="dropdownOffset"
     :fluid-width="fluidWidth"
     :positioning-strategy="positioningStrategy"
+    @[$options.events.GL_DROPDOWN_FOCUS_CONTENT]="onFocusContent"
     @[$options.events.GL_DROPDOWN_SHOWN]="onShow"
     @[$options.events.GL_DROPDOWN_HIDDEN]="onHide"
   >
-    <template v-if="hasCustomToggle" #toggle>
+    <template v-if="hasCustomToggle" #toggle="slotProps">
       <!-- @slot Custom toggle content -->
-      <slot name="toggle"></slot>
+      <slot name="toggle" v-bind="slotProps"></slot>
     </template>
 
     <template #default="{ visible }">
@@ -1013,7 +1056,7 @@ export default {
         :id="listboxId"
         ref="list"
         :aria-busy="isBusy"
-        :aria-labelledby="ariaLabelledByID"
+        :aria-labelledby="listboxAriaLabelledByID"
         :aria-multiselectable="multiple ? 'true' : undefined"
         role="listbox"
         class="gl-new-dropdown-contents gl-new-dropdown-contents-with-scrim-overlay"

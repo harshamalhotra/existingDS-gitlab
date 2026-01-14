@@ -105,6 +105,18 @@ describe('GlDisclosureDropdown', () => {
       await buildWrapper({ items: mockItems, listAriaLabelledBy });
       expect(findDisclosureContent().attributes('aria-labelledby')).toBe(listAriaLabelledBy);
     });
+
+    it('should have aria-expanded on the toggle button', () => {
+      buildWrapper({ items: mockItems });
+      const toggleButton = wrapper.find('[data-testid="base-dropdown-toggle"]');
+      expect(toggleButton.attributes('aria-expanded')).toBe('false');
+    });
+
+    it('should not have role="combobox" on the toggle button', () => {
+      buildWrapper({ items: mockItems });
+      const toggleButton = wrapper.find('[data-testid="base-dropdown-toggle"]');
+      expect(toggleButton.attributes('role')).toBeUndefined();
+    });
   });
 
   describe('onShow', () => {

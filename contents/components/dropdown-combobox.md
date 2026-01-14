@@ -159,8 +159,10 @@ Optionally, you can use `no-caret` to remove the caret and `category="tertiary"`
 
 ### Labeling the listbox
 
-The `toggleId` prop sets the `id` of the toggle element. This is useful for associating a label
-element with the toggle.
+#### Default toggle
+
+- The `toggleId` prop sets the `id` of the toggle element. The `toggleId` value must match the form group's `labelFor` value to associate the label and toggle correctly.
+- Prefer using `toggleId` over `toggleAriaLabelledBy`, as it is more similar to how label elements are associated with other form components.
 
 ```html
 <gl-form-group label="Department" label-for="department-picker">
@@ -171,12 +173,143 @@ element with the toggle.
 </gl-form-group>
 ```
 
-Prefer using `toggleId` over `toggleAriaLabelledBy`, as it is more similar to how
-label elements are associated with other form components.
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        items: [
+          { value: 'jane-doe', text: 'Jane Doe' },
+          { value: 'christine-calamary', text: 'Christine Calamary' },
+          { value: 'spenser-griffin', text: 'Spenser Griffin' },
+        ],
+        selected: 'jane-doe',
+      };
+    },
+  };
+</script>
 
-**Note:** Do not use the `toggleId` prop in conjunction with the `toggle` slot.
-Instead, set the `id` directly on the custom toggle element, and pass the same
-value to `GlFormGroup`'s `labelFor` prop.
+<template>
+  <div style="min-height: 12rem;">
+    <gl-form-group label="Assignee" label-for="unique-id-form-1" id="unique-form-label-1">
+      <gl-collapsible-listbox
+        :items="items"
+        toggle-id="unique-id-form-1"
+        v-model="selected"
+      >
+        {{ selected }}
+      </gl-collapsible-listbox>
+    </gl-form-group>
+  </div>
+</template>
+```
+
+#### Custom toggle
+
+- Set the `toggleId` as defined in the [Default toggle section](/components/dropdown-combobox#default-toggle)
+- Destructure the `accessibilityAttributes` object onto the `#toggle` template
+- Bind the accessibility attributes to the first child element in your custom toggle
+
+```html
+<template #toggle="{ accessibilityAttributes }">
+  <button v-bind="accessibilityAttributes">
+    // Custom toggle details
+  </button>
+</template>
+```
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        items: [
+          { value: 'jane-doe', text: 'Jane Doe' },
+          { value: 'christine-calamary', text: 'Christine Calamary' },
+          { value: 'spenser-griffin', text: 'Spenser Griffin' },
+        ],
+        selected: 'jane-doe',
+      };
+    },
+  };
+</script>
+
+<template>
+  <div style="min-height: 12rem;">
+    <gl-form-group label="Custom assignee" label-for="unique-id-form-2">
+      <gl-collapsible-listbox
+        :items="items"
+        toggle-id="unique-id-form-2"
+        v-model="selected"
+      >
+        <template #toggle="{ accessibilityAttributes }">
+          <button class="gl-rounded-action gl-border-none gl-p-2 gl-bg-strong" v-bind="accessibilityAttributes">
+            <span class="gl-sr-only">
+              {{ selected }}
+            </span>
+            <gl-avatar :size="32" :entity-name="selected"/>
+          </button>
+        </template>
+      </gl-collapsible-listbox>
+    </gl-form-group>
+  </div>
+</template>
+```
+
+### Custom toggle
+
+Override the default toggle button using the `#toggle` scoped slot. Use the `accessibilityAttributes` slot prop to make sure the component is accessible for keyboard and screen reader users. Ensure the `id` prop is placed on a text container inside the `#toggle` slot. The text container must not be the toggle button itself, due to constraints of the `combobox` role that is applied to the button.
+  
+```html
+<template #toggle="{ accessibilityAttributes: { id, ...accessibilityAttributes } }">
+  <button v-bind="accessibilityAttributes">
+    <span :id="id">
+      // Custom toggle details
+    </span>
+  </button>
+</template>
+```
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        items: [
+          { value: 'jane-doe', text: 'Jane Doe' },
+          { value: 'christine-calamary', text: 'Christine Calamary' },
+          { value: 'spenser-griffin', text: 'Spenser Griffin' },
+        ],
+        selected: 'jane-doe',
+      }
+    },
+  };
+</script>
+
+<template>
+  <div style="min-height: 12rem;">
+    <gl-collapsible-listbox
+      :items="items"
+      v-model="selected"
+    >
+      <template #toggle="{ accessibilityAttributes: { id, ...accessibilityAttributes } }">
+        <button
+          class="gl-rounded-action gl-border-none gl-p-2 gl-bg-strong"
+          v-bind="accessibilityAttributes"
+        >
+          <span class="gl-sr-only" :id="id">
+            {{selected}}
+          </span>
+          <gl-avatar :size="32" :entity-name="selected" />
+        </button>
+      </template>
+    </gl-collapsible-listbox>
+  </div>
+</template>
+```
 
 ### Opening the listbox
 

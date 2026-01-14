@@ -389,14 +389,15 @@ export default {
     :fluid-width="fluidWidth"
     :positioning-strategy="positioningStrategy"
     class="gl-disclosure-dropdown"
+    is-disclosure
     @[$options.events.GL_DROPDOWN_SHOWN]="onShow"
     @[$options.events.GL_DROPDOWN_HIDDEN]="onHide"
     @[$options.events.GL_DROPDOWN_BEFORE_CLOSE]="onBeforeClose"
     @[$options.events.GL_DROPDOWN_FOCUS_CONTENT]="onKeydown"
   >
-    <template v-if="hasCustomToggle" #toggle>
+    <template v-if="hasCustomToggle" #toggle="slotProps">
       <!-- @slot Custom toggle content -->
-      <slot name="toggle"></slot>
+      <slot name="toggle" v-bind="slotProps"></slot>
     </template>
 
     <!-- @slot Content to display in dropdown header -->

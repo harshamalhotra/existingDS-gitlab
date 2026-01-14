@@ -66,6 +66,7 @@ const generateProps = ({
   fluidWidth,
   positioningStrategy,
   srOnlyResultsLabel,
+  listboxId,
 } = {}) => ({
   items,
   category,
@@ -98,6 +99,7 @@ const generateProps = ({
   fluidWidth,
   positioningStrategy,
   srOnlyResultsLabel,
+  listboxId,
 });
 
 const makeBindings = (overrides = {}) =>
@@ -316,13 +318,16 @@ export const CustomToggle = (args, { argTypes }) => ({
   },
   template: template({
     content: `
-    <template #toggle>
-     <button class="gl-rounded-action gl-border-none gl-p-2 gl-bg-strong">
-       <span class="gl-sr-only">
+    <template #toggle="{ accessibilityAttributes: { id, ...accessibilityAttributes } }">
+      <button
+        class="gl-rounded-action gl-border-none gl-p-2 gl-bg-strong"
+        v-bind="accessibilityAttributes"
+      >
+        <span class="gl-sr-only" :id="id">
           {{selected}}
-       </span>
-       <gl-avatar :size="32" :entity-name="selected" aria-hidden="true"/>
-     </button>
+        </span>
+        <gl-avatar :size="32" :entity-name="selected" aria-hidden="true"/>
+      </button>
     </template>
     <template #list-item="{ item }">
       <span class="gl-flex gl-items-center">
@@ -904,9 +909,9 @@ export const WithLongContent = (args, { argTypes }) => ({
   },
   template: template({
     content: `
-    <template #toggle>
-      <gl-button class="gl-w-30">
-        <gl-truncate :text="customToggleText" />
+    <template #toggle="{ accessibilityAttributes: { id, ...accessibilityAttributes } }">
+      <gl-button class="gl-w-30" v-bind="accessibilityAttributes">
+        <gl-truncate :id="id" :text="customToggleText" />
       </gl-button>
     </template>
     <template #list-item="{ item }">
@@ -938,10 +943,48 @@ export const InFormGroup = (args, { argTypes }) => ({
     };
   },
   template: `
-    <gl-form-group label="Department" label-for="${args.toggleId}">
+    <gl-form-group label="Department" label-for="department-picker">
       ${template()}
     </gl-form-group>
   `,
 });
-InFormGroup.args = generateProps({ toggleId: 'department-picker' });
+InFormGroup.args = generateProps({
+  toggleId: 'department-picker',
+});
 InFormGroup.decorators = [makeContainer({ height: LISTBOX_CONTAINER_HEIGHT })];
+
+export const InFormGroupSearchable = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: {
+    GlCollapsibleListbox,
+    GlFormGroup,
+  },
+  data() {
+    return {
+      selected: mockOptions[1].value,
+      filteredItems: mockOptions,
+      searchInProgress: false,
+      timeoutId: null,
+    };
+  },
+  ...createSearchable(),
+  template: `
+    <gl-form-group label="Department" label-for="${args.toggleId}">
+      <gl-collapsible-listbox
+        v-model="selected"
+        :toggle-id="toggleId"
+        :items="filteredItems"
+        :header-text="headerText"
+        :searching="searchInProgress"
+        :start-opened="startOpened"
+        searchable
+        @search="handleSearch"
+      />
+    </gl-form-group>
+  `,
+});
+InFormGroupSearchable.args = generateProps({
+  headerText: 'Assign to department',
+  toggleId: 'department-picker',
+});
+InFormGroupSearchable.decorators = [makeContainer({ height: LISTBOX_CONTAINER_HEIGHT })];
