@@ -4,12 +4,13 @@ summary: Interface patterns for GitLab's specialized AI assistance - Agents for 
 extendedNotice:
   owners: group::workflow catalog
   contacts:
-    - text: "#ux-ai-integration"
-      url: "https://gitlab.slack.com/channels/ux-ai-integration"
+    - text: '#ux-ai-integration'
+      url: 'https://gitlab.slack.com/channels/ux-ai-integration'
 related:
   - /patterns/ai-human-interaction
   - /patterns/duo-calls-to-action
   - /patterns/duo-slash-commands
+  - /patterns/duo-chat
 ---
 
 These patterns define how to design interfaces for GitLab's specialized AI assistance. Agents for domain-specific conversational help, and flows for automated, repeatable processes.
@@ -42,7 +43,7 @@ Don't use the agents when designing for:
 #### Chat-exclusive interaction model
 
 Agents are currently only accessible through the Duo Chat interface due to current technical constraints, though future iterations may expand interaction models to other aspects of the platform. When designing agent experiences, prioritize conversational patterns that minimize the number of decisions users need to make by predicting their needs and delegating decisions to the AI where it performs well.
-*Design agent experiences around multi-turn dialogues that allow users to refine their requests and build context over time.*
+_Design agent experiences around multi-turn dialogues that allow users to refine their requests and build context over time._
 
 #### Agent selection and identification
 
@@ -117,7 +118,7 @@ Don't use flows when designing for:
 - Simple, single-step actions that don't require orchestration
 - Workflows where variability and human judgment are more important than consistency
 
-Note: The key distinction is interaction control, *agents require user guidance throughout the process, while flows operate autonomously with minimal user direction after initiation*.
+Note: The key distinction is interaction control, _agents require user guidance throughout the process, while flows operate autonomously with minimal user direction after initiation_.
 
 ### Flow behavior
 
@@ -202,7 +203,7 @@ Display flow states across four primary UI locations
 
 #### On flow creation
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Makes flow activity visible to all collaborators on the item, provides a persistent record beyond the sessions UI, establishes an initial comment that will be updated as flow progresses
 
@@ -254,7 +255,7 @@ Content:
 
 #### On flow execution
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Provides a clean, consolidated view of flow progress, prevents work items and MRs from becoming cluttered with updates
 
@@ -296,11 +297,11 @@ Content:
 
 **Notifications**
 
-*Skip notifications during normal execution to avoid excessive noise*
+_Skip notifications during normal execution to avoid excessive noise_
 
 #### Flow needs input from user
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Signals a clear transition from "flow working" to "human action required", ensures critical decision points don't get lost
 
@@ -353,7 +354,7 @@ Content:
 
 #### Flow is paused
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Document that flow execution has been paused
 
@@ -406,7 +407,7 @@ Content:
 
 #### Flow is restarted
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Confirm that flow execution has resumed
 
@@ -444,11 +445,11 @@ Content:
 
 **Notifications**
 
-*Don't send a notification when the user resumes a flow*
+_Don't send a notification when the user resumes a flow_
 
 ##### Flow is complete
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Provide a clear summary of what the flow accomplished
 
@@ -504,7 +505,7 @@ Content:
 
 #### Flow failed
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Document that flow execution failed
 
@@ -562,7 +563,7 @@ Content:
 
 #### Flow is cancelled by user
 
-**Comments and activity timeline** *(Only appears when flow is triggered from a work item or MR)*
+**Comments and activity timeline** _(Only appears when flow is triggered from a work item or MR)_
 
 Goal: Provide clear record of user-initiated cancellation
 
@@ -657,10 +658,3 @@ When designing for external agent integration:
 - Provider identification: Clearly indicate the external service and its capabilities
 - Integration boundaries: Communicate what data and features are available through the integration
 - Security transparency: Clearly communicate data sharing and privacy implications
-
-## Related patterns
-
-- [AI-human interaction](/patterns/ai-human-interaction) - For general AI interaction guidelines
-- [Duo calls to action](/patterns/duo-calls-to-action) - For AI feature triggers
-- [Duo slash commands](/patterns/duo-slash-commands) - For command interfaces
-- [Duo Chat](/patterns/duo-chat) - Chat interface patterns (where agents operate)
