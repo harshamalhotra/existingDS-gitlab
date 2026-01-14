@@ -25,7 +25,9 @@ If a destructive action is difficult to undo or data will be lost permanently, s
 - Body content can use [bold styling](/product-foundations/type-fundamentals/#font-weight) and/or [danger feedback design tokens](/product-foundations/design-tokens#feedback) to draw attention to the consequences of the destructive action.
 - Avoid using [alerts](/components/alert) to emphasize the content inside a modal.
 
-<todo>Add an example of a high severity modal confirmation.</todo>
+The following example demonstrates one way that a modal can handle a destructive action. The critical part of the text uses danger feedback design tokens. There's also an input that must be validated in order for the destructive action to be enabled.
+
+<story-viewer component="base-modal" story="destructive" title="Modal with destructive action" iframe-padding="240px 0px"></story-viewer>
 
 ### Medium severity
 
