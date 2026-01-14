@@ -8,6 +8,9 @@ export default {
   components: {
     BFormGroup,
   },
+  provide: {
+    isInFormGroup: true,
+  },
   inheritAttrs: false,
   props: {
     /**

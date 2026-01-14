@@ -235,8 +235,8 @@ CustomGroupsAndItems.decorators = [makeContainer({ height: '200px' })];
 export const CustomGroupsItemsAndToggle = makeGroupedExample({
   template: template(
     `
-      <template #toggle>
-     <button class="gl-rounded-default gl-border-none gl-p-2 gl-bg-strong">
+    <template #toggle="{ accessibilityAttributes }">
+      <button class="gl-rounded-default gl-border-none gl-p-2 gl-bg-strong" v-bind="accessibilityAttributes">
         <span class="gl-sr-only">
           Orange Fox user's menu
         </span>

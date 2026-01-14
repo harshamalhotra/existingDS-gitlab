@@ -125,6 +125,54 @@ Optionally, you can use `no-caret` to remove the caret and `category="tertiary"`
 />
 ```
 
+### Custom toggle
+
+Override the default toggle button using the `#toggle` scoped slot. Use the `accessibilityAttributes` slot prop to make sure the component is accessible for keyboard and screen reader users.
+
+```html
+<template #toggle="{ accessibilityAttributes }">
+  <button v-bind="accessibilityAttributes">
+    // Custom toggle details
+  </button>
+</template>
+```
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        items: [
+          { value: 'jane-doe', text: 'Jane Doe' },
+          { value: 'christine-calamary', text: 'Christine Calamary' },
+          { value: 'spenser-griffin', text: 'Spenser Griffin' },
+        ],
+        selected: 'jane-doe',
+      }
+    },
+  };
+</script>
+
+<template>
+  <div style="min-height: 12rem;">
+    <gl-disclosure-dropdown
+      :items="items"
+      v-model="selected"
+    >
+      <template #toggle="{ accessibilityAttributes }">
+        <button class="gl-rounded-action gl-border-none gl-p-2 gl-bg-strong" v-bind="accessibilityAttributes">
+          <span class="gl-sr-only">
+            {{ selected }}
+          </span>
+          <gl-avatar :size="32" :entity-name="selected"/>
+        </button>
+      </template>
+    </gl-disclosure-dropdown>
+  </div>
+</template>
+```
+
 ### Opening the disclosure dropdown
 
 Disclosure dropdown will open on toggle button click (if it was previously closed).

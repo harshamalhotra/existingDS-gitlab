@@ -138,12 +138,41 @@ export default {
         return ['menu', 'listbox', 'tree', 'grid', 'dialog', true, false].includes(value);
       },
     },
+    activeItemId: {
+      type: String,
+      required: false,
+      default: undefined,
+    },
+    hasExternalLabel: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    hasSearchableListbox: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    isDisclosure: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
     /**
      * Id that will be referenced by `aria-labelledby` attribute of the dropdown content`
      */
     toggleId: {
       type: String,
       required: true,
+    },
+    /**
+     * Span Id that will be referenced by listbox `aria-labelledby` if there's an external label.
+     * This prop will only be defined by `GlCollapsibleListbox` when `isInFormGroup` injected is true.
+     */
+    listboxId: {
+      type: String,
+      required: false,
+      default: undefined,
     },
     /**
      * The `aria-labelledby` attribute value for the  toggle `button`
@@ -187,6 +216,10 @@ export default {
     };
   },
   computed: {
+    ariaActiveDescendant() {
+      if (!this.isDisclosure && this.visible) return this.activeItemId;
+      return undefined;
+    },
     hasNoVisibleToggleText() {
       return !this.toggleText?.length || this.textSrOnly;
     },
@@ -199,12 +232,47 @@ export default {
     isCaretOnly() {
       return !this.noCaret && !this.icon && this.hasNoVisibleToggleText;
     },
-    ariaAttributes() {
+    isDefaultToggle() {
+      return !this.$scopedSlots.toggle;
+    },
+    isToggleCombobox() {
+      if (this.hasSearchableListbox || this.isDisclosure) {
+        return false;
+      }
+      return true;
+    },
+    isToggleLabelledExternally() {
+      if (this.hasExternalLabel && this.toggleId) return true;
+      return false;
+    },
+    computedToggleId() {
+      if (this.isDisclosure) {
+        return this.isDefaultToggle ? this.toggleId : undefined;
+      }
+      if (this.isToggleLabelledExternally) {
+        return this.isDefaultToggle ? this.toggleId : undefined;
+      }
+      if (this.hasSearchableListbox) {
+        return this.toggleId;
+      }
+      return undefined;
+    },
+    computedToggleInnerId() {
+      if (this.isToggleCombobox && !this.isToggleLabelledExternally) {
+        return this.toggleId;
+      }
+      if (this.isToggleCombobox && this.isToggleLabelledExternally) {
+        return this.listboxId;
+      }
+      return undefined;
+    },
+    toggleAriaAttributes() {
       return {
-        'aria-haspopup': this.ariaHaspopup,
-        'aria-expanded': String(this.visible),
         'aria-controls': this.baseDropdownId,
+        'aria-expanded': String(this.visible),
+        'aria-haspopup': this.ariaHaspopup,
         'aria-labelledby': this.toggleLabelledBy,
+        'aria-activedescendant': this.ariaActiveDescendant,
       };
     },
     toggleButtonClasses() {
@@ -223,10 +291,28 @@ export default {
       return this.block ? 'gl-w-full' : '';
     },
     toggleLabelledBy() {
+      if (this.isToggleCombobox) {
+        if (this.ariaLabelledby) {
+          return `${this.ariaLabelledby} ${this.toggleId}`;
+        }
+        return this.toggleId;
+      }
+
+      // For non-combobox toggles, combine IDs or use the button's own text
       return this.ariaLabelledby ? `${this.ariaLabelledby} ${this.toggleId}` : undefined;
     },
-    isDefaultToggle() {
-      return !this.$scopedSlots.toggle;
+    toggleRole() {
+      if (this.isToggleCombobox) {
+        return 'combobox';
+      }
+      return undefined;
+    },
+    toggleAccessibilityAttributes() {
+      return {
+        ...this.toggleAriaAttributes,
+        id: this.toggleId,
+        role: this.toggleRole,
+      };
     },
     toggleOptions() {
       if (this.isDefaultToggle) {
@@ -241,7 +327,8 @@ export default {
           disabled: this.disabled,
           loading: this.loading,
           class: this.toggleButtonClasses,
-          ...this.ariaAttributes,
+          role: this.toggleRole,
+          ...this.toggleAriaAttributes,
           listeners: {
             keydown: (event) => this.onKeydown(event),
             click: (event) => this.toggle(event),
@@ -264,7 +351,6 @@ export default {
 
     toggleAttributes() {
       const { listeners, is, ...attributes } = this.toggleOptions;
-
       return attributes;
     },
     toggleComponent() {
@@ -323,18 +409,6 @@ export default {
           }),
         ],
       };
-    },
-  },
-  watch: {
-    ariaAttributes: {
-      deep: true,
-      handler(ariaAttributes) {
-        if (this.$scopedSlots.toggle) {
-          Object.keys(ariaAttributes).forEach((key) => {
-            this.toggleElement.setAttribute(key, ariaAttributes[key]);
-          });
-        }
-      },
     },
   },
   mounted() {
@@ -593,14 +667,19 @@ export default {
     <component
       :is="toggleComponent"
       v-bind="toggleAttributes"
-      :id="toggleId"
+      :id="computedToggleId"
       ref="toggle"
       data-testid="base-dropdown-toggle"
       v-on="toggleListeners"
     >
       <!-- @slot Custom toggle button content -->
-      <slot name="toggle">
-        <span class="gl-new-dropdown-button-text" :class="{ 'gl-sr-only': textSrOnly }">
+      <slot name="toggle" :accessibility-attributes="toggleAccessibilityAttributes">
+        <span
+          :id="computedToggleInnerId"
+          class="gl-new-dropdown-button-text"
+          :class="{ 'gl-sr-only': textSrOnly }"
+          data-testid="base-dropdown-span"
+        >
           {{ toggleText }}
         </span>
         <gl-icon

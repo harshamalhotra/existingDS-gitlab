@@ -65,6 +65,7 @@ describe('base dropdown', () => {
   });
 
   const findDefaultDropdownToggle = () => wrapper.find('.btn.gl-new-dropdown-toggle');
+  const findDefaultDropdownTextSpan = () => wrapper.find('[data-testid="base-dropdown-span"]');
   const findCustomDropdownToggle = () => wrapper.find('.gl-new-dropdown-custom-toggle');
   const findDropdownToggleText = () => findDefaultDropdownToggle().find('.gl-button-text');
   const findDropdownMenu = () => wrapper.find('.gl-new-dropdown-panel');
@@ -503,7 +504,7 @@ describe('base dropdown', () => {
 
   describe('Custom toggle', () => {
     const customToggleTestId = 'custom-toggle';
-    const toggleContent = `<button data-testid="${customToggleTestId}">Custom toggle</button>`;
+    const toggleContent = `<button data-testid="${customToggleTestId}" aria-controls="base-dropdown-1" aria-expanded="false" role="combobox">Custom toggle</button>`;
     const findFirstToggleElement = () =>
       findCustomDropdownToggle().find(`[data-testid="${customToggleTestId}"]`);
 
@@ -532,19 +533,16 @@ describe('base dropdown', () => {
 
       it('should toggle menu visibility on toggle click', async () => {
         const toggle = findCustomDropdownToggle();
-        const firstToggleChild = findFirstToggleElement();
         const menu = findDropdownMenu();
         // open menu clicking toggle btn
         await toggle.trigger('click');
         expect(menu.classes('!gl-block')).toBe(true);
-        expect(firstToggleChild.attributes('aria-expanded')).toBe('true');
         await waitForAnimationFrame();
         expect(wrapper.emitted(GL_DROPDOWN_SHOWN)).toHaveLength(1);
 
         // close menu clicking toggle btn again
         await toggle.trigger('click');
         expect(menu.classes('!gl-block')).toBe(false);
-        expect(firstToggleChild.attributes('aria-expanded')).toBe('false');
         expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toHaveLength(1);
       });
 
@@ -644,9 +642,92 @@ describe('base dropdown', () => {
       );
     });
 
-    it('does not apply default aria-labelledby', () => {
+    it('applies default aria-labelledby', () => {
       buildWrapper();
-      expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(undefined);
+      expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+        'dropdown-toggle-btn-1',
+      );
+    });
+  });
+
+  describe('conditional toggle role and ARIA attributes', () => {
+    it('should have role="combobox" when base_dropdown is not a disclosure and not searchable listbox', () => {
+      buildWrapper({
+        hasSearchableListbox: false,
+      });
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('role')).toBe('combobox');
+    });
+
+    it('should not have role="combobox" base_dropdown is a disclosure', () => {
+      buildWrapper({
+        hasSearchableListbox: false,
+        isDisclosure: true,
+      });
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('role')).toBeUndefined();
+    });
+
+    it('should not have role="combobox" base_dropdown is a searchable listbox', () => {
+      buildWrapper({
+        hasSearchableListbox: true,
+      });
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('role')).toBeUndefined();
+    });
+
+    it('should have an aria-expanded attribute', async () => {
+      buildWrapper();
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('aria-expanded')).toBeDefined();
+      expect(toggleButton.attributes('aria-expanded')).toBe('false');
+
+      await toggleButton.trigger('click');
+
+      expect(toggleButton.attributes('aria-expanded')).toBeDefined();
+      expect(toggleButton.attributes('aria-expanded')).toBe('true');
+    });
+
+    it('should have an aria-controls attribute', () => {
+      buildWrapper();
+      const toggleButton = findDefaultDropdownToggle();
+
+      expect(toggleButton.attributes('aria-controls')).toBeDefined();
+      expect(toggleButton.attributes('aria-controls')).toBe('base-dropdown-1');
+    });
+
+    it('should have an aria-haspopup attribute if base_dropdown is a listbox', async () => {
+      buildWrapper({
+        ariaHaspopup: 'listbox',
+      });
+      const toggleButton = findDefaultDropdownToggle();
+
+      await toggleButton.trigger('click');
+
+      expect(toggleButton.attributes('aria-haspopup')).toBeDefined();
+      expect(toggleButton.attributes('aria-haspopup')).toBe('listbox');
+    });
+
+    it('should have an aria-activedescendant attribute if base_dropdown is a listbox', async () => {
+      buildWrapper({ activeItemId: 'item-1' });
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('aria-activedescendant')).toBeUndefined();
+
+      await toggleButton.trigger('click');
+
+      const menu = findDropdownMenu();
+      expect(menu.classes('!gl-block')).toBe(true);
+
+      moveFocusWithinDropdown();
+
+      expect(toggleButton.attributes('aria-activedescendant')).toBeDefined();
+      expect(toggleButton.attributes('aria-activedescendant')).toBe('item-1');
+    });
+
+    it('should not have an aria-activedescendant attribute if base_dropdown is a disclosure', () => {
+      buildWrapper({ isDisclosure: true });
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.attributes('aria-activedescendant')).toBeUndefined();
     });
   });
 
@@ -679,6 +760,89 @@ describe('base dropdown', () => {
       document.body.appendChild(el);
 
       expect(wrapper.vm.containsElement(el)).toBe(false);
+    });
+  });
+
+  describe('ID placements in template', () => {
+    describe('internal label ID placement', () => {
+      it('places toggleId on button when a disclosure', () => {
+        buildWrapper({
+          hasSearchableListbox: false,
+          toggleId: 'my-toggle',
+          isDisclosure: true,
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId on button when a searchable combobox', () => {
+        buildWrapper({
+          hasSearchableListbox: true,
+          toggleId: 'my-toggle',
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId on span when a non-searchable combobox', () => {
+        buildWrapper({
+          hasSearchableListbox: false,
+          toggleId: 'my-toggle',
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBeUndefined();
+        expect(span.attributes('id')).toBe('my-toggle');
+      });
+    });
+
+    describe('external label ID placement', () => {
+      it('places toggleId on button when a disclosure', () => {
+        buildWrapper({
+          hasExternalLabel: true,
+          toggleId: 'my-toggle',
+          isDisclosure: true,
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId on button when a searchable combobox', () => {
+        buildWrapper({
+          hasSearchableListbox: true,
+          hasExternalLabel: true,
+          toggleId: 'my-toggle',
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBeUndefined();
+      });
+
+      it('places toggleId and listboxId when a non-searchable combobox', () => {
+        buildWrapper({
+          hasExternalLabel: true,
+          toggleId: 'my-toggle',
+          listboxId: 'my-toggle-span',
+          isSearchable: false,
+        });
+        const toggle = findDefaultDropdownToggle();
+        const span = findDefaultDropdownTextSpan();
+
+        expect(toggle.attributes('id')).toBe('my-toggle');
+        expect(span.attributes('id')).toBe('my-toggle-span');
+      });
     });
   });
 });
