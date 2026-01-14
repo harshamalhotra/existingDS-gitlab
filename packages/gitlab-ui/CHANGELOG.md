@@ -1,5 +1,44 @@
 # @gitlab/ui
 
+## 128.0.0
+
+### Major Changes
+
+- 6ef5323: Refactor GlCollapsibleListbox button to combobox role
+
+  ## Reason for this change
+
+  The GlCollapsibleListbox component wasn't announcing itself as a
+  combobox to screen readers. The component was also missing an
+  aria-activdescendant attribute.
+
+  ## Breaking change updates
+
+  There are two breaking changes with this update. Both of these changes
+  affect screen reader usability and may cause automated accessibility
+  tests to fail in the future if not implemented:
+  1. See the [Custom toggle](https://design.gitlab.com/components/dropdown-combobox#custom-toggle-1) docs for details.
+  2. See the [Labeling the listbox](https://design.gitlab.com/components/dropdown-combobox#labeling-the-listbox) docs for details.
+
+- 67b1e1f: Remove BFormCheckboxGroup from GlFormCheckboxGroup
+
+  Part of a larger migration to remove Bootstrap Vue from GitLab UI
+
+  BREAKING CHANGE: support for the following props have been dropped:
+  - autofocus
+  - button-variant
+  - buttons
+  - disabled-field
+  - form
+  - html-field
+  - plain
+  - size
+  - stacked
+  - switches
+  - text-field
+  - value-field
+  - validated
+
 ## 127.1.1
 
 ### Patch Changes
