@@ -496,11 +496,10 @@ describe('button component', () => {
     expect(wrapper.attributes('aria-disabled')).toBeUndefined();
   });
 
-  it('button has aria-disabled attribute when accessibleLoading set', () => {
+  it('button has aria-disabled attribute when loading set', () => {
     buildWrapper({
       propsData: {
         loading: true,
-        accessibleLoading: true,
       },
     });
 
@@ -607,13 +606,12 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('should not emit click event when clicked and accessibleLoading', async () => {
+  it('should not emit click event when clicked and loading', async () => {
     const onClick = jest.fn();
 
     buildWrapper({
       propsData: {
         loading: true,
-        accessibleLoading: true,
       },
       listeners: {
         click: onClick,
@@ -624,7 +622,7 @@ describe('button component', () => {
     expect(onClick).not.toHaveBeenCalled();
   });
 
-  it('does not call the submit method when accessibleLoading is set on button and form is submitted via button click', async () => {
+  it('does not call the submit method when loading is set on button and form is submitted via button click', async () => {
     const handleSubmit = jest.fn();
 
     wrapper = mount(
@@ -637,7 +635,6 @@ describe('button component', () => {
             <gl-button
               type="submit"
               loading
-              accessible-loading
             >Submit</gl-button>
           </form>
         `,
