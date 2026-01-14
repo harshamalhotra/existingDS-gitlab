@@ -6,7 +6,6 @@ import { looseEqual } from '../utils/loose-equal'
 import { makeModelMixin } from '../utils/model'
 import { omit, pick, sortKeys } from '../utils/object'
 import { makeProp, makePropsConfigurable } from '../utils/props'
-import { BFormCheckbox } from '../components/form-checkbox/form-checkbox'
 import { BFormRadio } from '../components/form-radio/form-radio'
 import { formControlMixin, props as formControlProps } from './form-control'
 import { formCustomMixin, props as formCustomProps } from './form-custom'
@@ -99,7 +98,7 @@ export const formRadioCheckGroupMixin = extend({
   render(h) {
     const { isRadioGroup } = this
     const attrs = pick(this.$attrs, PASS_DOWN_ATTRS)
-    const optionComponent = isRadioGroup ? BFormRadio : BFormCheckbox
+    const optionComponent = BFormRadio
 
     const $inputs = this.formOptions.map((option, index) => {
       const key = `BV_option_${index}`

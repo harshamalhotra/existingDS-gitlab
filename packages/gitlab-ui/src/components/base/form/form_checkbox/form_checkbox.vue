@@ -8,9 +8,6 @@ export default {
   name: 'GlFormCheckbox',
   inject: {
     getGroup: {
-      // When we remove BFormCheckboxGroup from GlFormCheckboxGroup, we can rename
-      // the `getBvCheckGroup` provide to `getCheckGroup`.
-      from: 'getBvCheckGroup',
       default: () => () => null,
     },
   },
