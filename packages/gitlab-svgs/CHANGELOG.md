@@ -1,5 +1,11 @@
 # @gitlab/svgs
 
+## 3.153.0
+
+### Minor Changes
+
+- 0c8c6e9: Adds artifacts empty state
+
 ## 3.152.0
 
 ### Minor Changes
