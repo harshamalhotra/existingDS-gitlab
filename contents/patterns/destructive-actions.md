@@ -22,7 +22,7 @@ If a destructive action is difficult to undo or data will be lost permanently, s
 - A [modal](/components/modal) used for confirming a destructive action should use the danger [button](/components/button/#variants) variant to confirm the action.
 - Require input confirmation of the deleted object's name when the action removes additional resources within. For example, when deleting a project.
 - All caps text should not be used in the modal header or body, unless the all caps styling is typical in the context (for example, README).
-- Body content can use [bold styling](/product-foundations/type-fundamentals/#font-weight) to draw attention to the consequences of the destructive action.
+- Body content can use [bold styling](/product-foundations/type-fundamentals/#font-weight) and/or [danger feedback design tokens](/product-foundations/design-tokens#feedback) to draw attention to the consequences of the destructive action.
 - Avoid using [alerts](/components/alert) to emphasize the content inside a modal.
 
 <todo>Add an example of a high severity modal confirmation.</todo>

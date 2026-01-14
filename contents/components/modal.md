@@ -89,6 +89,7 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 - There should be no more than 3 actions and no fewer than 1. Actions should always be located within an action bar at the bottom of the modal. Button order and positioning should follow our [guidelines for buttons](/components/button).
 - When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use "Set status" and "Remove status" instead of simply, "Save" and "Delete".
 - There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important as some modals can be tall and we want to avoid making the user scroll up to close a modal.
+- Follow the [destructive actions high severity](/patterns/destructive-actions#high-severity) guidance when the action is destructive or difficult to recover from.
 
 ### Accessibility
 
