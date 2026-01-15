@@ -2,6 +2,11 @@
 name: Saving and feedback
 summary: Discover strategies for preserving user progress and communicating system responses effectively.
 status: in-progress
+related:
+  - button
+  - /patterns/forms
+  - spinner
+  - toast
 ---
 
 Giving appropriate and timely feedback for user-made changes is vital to making GitLab user-friendly.
@@ -79,10 +84,3 @@ In general, consider using:
 - A slower `500ms` debounce period when the performance impact could be high, or the additional delay benefits the user based on the situation and content being entered. This could be helpful for [form validation](/patterns/forms#validation).
 
 These are just suggestions, however, and you may find that you need faster or slower debounce periods in some cases.
-
-## Related patterns
-
-- [Buttons](/components/button)
-- [Forms](/patterns/forms)
-- [Spinner](/components/spinner)
-- [Toast](/components/toast)
