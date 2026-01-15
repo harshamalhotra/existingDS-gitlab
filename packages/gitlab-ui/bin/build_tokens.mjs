@@ -17,6 +17,7 @@ import {
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
+  selectColorValuePreprocessor,
 } from './lib/build_tokens_preprocessors.js';
 
 /**
@@ -50,6 +51,11 @@ StyleDictionary.registerPreprocessor({
 StyleDictionary.registerPreprocessor({
   name: 'gitlab/select-dark-value',
   preprocessor: selectDarkValuePreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/select-color-value',
+  preprocessor: selectColorValuePreprocessor,
 });
 
 /**
@@ -143,7 +149,11 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
   return {
     include: ['src/tokens/**/*.tokens.json'],
     source: ['src/tokens/**/*.tokens.json'],
-    preprocessors: ['gitlab/select-default-value', 'gitlab/resolve-units'],
+    preprocessors: [
+      'gitlab/select-default-value',
+      'gitlab/select-color-value',
+      'gitlab/resolve-units',
+    ],
     hooks: {
       filters: {
         isTypographyDesignToken: (token) => {
@@ -272,7 +282,11 @@ const getStyleDictionaryConfigTailwind = (buildPath = 'dist/tokens') => {
  */
 const getStyleDictionaryConfigDarkMode = (buildPath) => {
   return merge(getStyleDictionaryConfigDefault(buildPath), {
-    preprocessors: ['gitlab/select-dark-value', 'gitlab/resolve-units'],
+    preprocessors: [
+      'gitlab/select-dark-value',
+      'gitlab/select-color-value',
+      'gitlab/resolve-units',
+    ],
     platforms: {
       css: {
         files: [

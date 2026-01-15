@@ -4,14 +4,14 @@
 
 :root, .gl-light-scope {
   --gl-border-radius-full: 9999px;
-  --gl-color-alpha-0: transparent;
-  --gl-color-alpha-dark-2: rgba(05, 05, 06, 0.02);
-  --gl-color-alpha-dark-4: rgba(05, 05, 06, 0.04);
-  --gl-color-alpha-dark-6: rgba(05, 05, 06, 0.06);
-  --gl-color-alpha-dark-8: rgba(05, 05, 06, 0.08);
-  --gl-color-alpha-dark-16: rgba(05, 05, 06, 0.16);
-  --gl-color-alpha-dark-24: rgba(05, 05, 06, 0.24);
-  --gl-color-alpha-dark-40: rgba(05, 05, 06, 0.4);
+  --gl-color-alpha-0: rgba(0, 0, 0, 0);
+  --gl-color-alpha-dark-2: rgba(5, 5, 6, 0.02);
+  --gl-color-alpha-dark-4: rgba(5, 5, 6, 0.04);
+  --gl-color-alpha-dark-6: rgba(5, 5, 6, 0.06);
+  --gl-color-alpha-dark-8: rgba(5, 5, 6, 0.08);
+  --gl-color-alpha-dark-16: rgba(5, 5, 6, 0.16);
+  --gl-color-alpha-dark-24: rgba(5, 5, 6, 0.24);
+  --gl-color-alpha-dark-40: rgba(5, 5, 6, 0.4);
   --gl-color-alpha-light-2: rgba(255, 255, 255, 0.02);
   --gl-color-alpha-light-4: rgba(255, 255, 255, 0.04);
   --gl-color-alpha-light-6: rgba(255, 255, 255, 0.06);
@@ -316,13 +316,13 @@
   --gl-zindex-4: 4;
   --gl-zindex-200: 200;
   --gl-zindex-9999: 9999;
-  --gl-avatar-fallback-background-color-red: #fcb5aa3d; /** Red background for avatar fallback with no particular meaning. */
-  --gl-avatar-fallback-background-color-purple: #cbbbf23d; /** Purple background for avatar fallback with no particular meaning. */
-  --gl-avatar-fallback-background-color-blue: #9dc7f13d; /** Blue background for avatar fallback with no particular meaning. */
-  --gl-avatar-fallback-background-color-green: #91d4a83d; /** Green background for avatar fallback with no particular meaning. */
-  --gl-avatar-fallback-background-color-orange: #e9be743d; /** Orange background for avatar fallback with no particular meaning. */
-  --gl-avatar-fallback-background-color-neutral: #bfbfc33d; /** Neutral background for avatar fallback with no particular meaning. */
-  --gl-chart-threshold-area-color: rgba(221,43,14,0.1); /** Used in charts to delineate a threshold area in a chart. */
+  --gl-avatar-fallback-background-color-red: rgba(252, 181, 170, 0.23921568627450981); /** Red background for avatar fallback with no particular meaning. */
+  --gl-avatar-fallback-background-color-purple: rgba(203, 187, 242, 0.23921568627450981); /** Purple background for avatar fallback with no particular meaning. */
+  --gl-avatar-fallback-background-color-blue: rgba(157, 199, 241, 0.23921568627450981); /** Blue background for avatar fallback with no particular meaning. */
+  --gl-avatar-fallback-background-color-green: rgba(145, 212, 168, 0.23921568627450981); /** Green background for avatar fallback with no particular meaning. */
+  --gl-avatar-fallback-background-color-orange: rgba(233, 190, 116, 0.23921568627450981); /** Orange background for avatar fallback with no particular meaning. */
+  --gl-avatar-fallback-background-color-neutral: rgba(191, 191, 195, 0.23921568627450981); /** Neutral background for avatar fallback with no particular meaning. */
+  --gl-chart-threshold-area-color: rgba(221, 43, 14, 0.1); /** Used in charts to delineate a threshold area in a chart. */
   --gl-illustration-stroke-color-default: #171321; /** Default stroke color to define shape and provide essential detail. */
   --gl-illustration-stroke-width-default: 2; /** Default stroke width to define shape and provide essential detail. */
   --gl-illustration-fill-color-default: #fff; /** Default fill color for an element where specific meaning or emphasis is not required. */
@@ -562,12 +562,12 @@
   --brand-gray-03: #74717a; /** Use color.brand-gray.03 instead. */
   --brand-gray-04: #45424d; /** Use color.brand-gray.04 instead. */
   --brand-gray-05: #2b2838; /** Use color.brand-gray.05 instead. */
-  --t-gray-a-16: rgba(05, 05, 06, 0.16); /** Use color.alpha.dark.16 instead. */
-  --t-gray-a-24: rgba(05, 05, 06, 0.24); /** Use color.alpha.dark.24 instead. */
-  --t-gray-a-02: rgba(05, 05, 06, 0.02); /** Use color.alpha.dark.2 instead. */
-  --t-gray-a-04: rgba(05, 05, 06, 0.04); /** Use color.alpha.dark.4 instead. */
-  --t-gray-a-06: rgba(05, 05, 06, 0.06); /** Use color.alpha.dark.6 instead. */
-  --t-gray-a-08: rgba(05, 05, 06, 0.08); /** Use color.alpha.dark.8 instead. */
+  --t-gray-a-16: rgba(5, 5, 6, 0.16); /** Use color.alpha.dark.16 instead. */
+  --t-gray-a-24: rgba(5, 5, 6, 0.24); /** Use color.alpha.dark.24 instead. */
+  --t-gray-a-02: rgba(5, 5, 6, 0.02); /** Use color.alpha.dark.2 instead. */
+  --t-gray-a-04: rgba(5, 5, 6, 0.04); /** Use color.alpha.dark.4 instead. */
+  --t-gray-a-06: rgba(5, 5, 6, 0.06); /** Use color.alpha.dark.6 instead. */
+  --t-gray-a-08: rgba(5, 5, 6, 0.08); /** Use color.alpha.dark.8 instead. */
   --t-white-a-16: rgba(255, 255, 255, 0.16); /** Use color.alpha.light.16 instead. */
   --t-white-a-24: rgba(255, 255, 255, 0.24); /** Use color.alpha.light.24 instead. */
   --t-white-a-36: rgba(255, 255, 255, 0.36); /** Use color.alpha.light.36 instead. */
@@ -575,13 +575,13 @@
   --t-white-a-04: rgba(255, 255, 255, 0.04); /** Use color.alpha.light.4 instead. */
   --t-white-a-06: rgba(255, 255, 255, 0.06); /** Use color.alpha.light.6 instead. */
   --t-white-a-08: rgba(255, 255, 255, 0.08); /** Use color.alpha.light.8 instead. */
-  --gl-action-neutral-background-color-default: rgba(164, 163, 168, 0.0); /** Used for the background of a neutral action in the default state. */
+  --gl-action-neutral-background-color-default: rgba(164, 163, 168, 0); /** Used for the background of a neutral action in the default state. */
   --gl-action-neutral-background-color-hover: rgba(164, 163, 168, 0.16); /** Used for the background of a neutral action in the hover state. */
   --gl-action-neutral-background-color-active: rgba(83, 81, 88, 0.24); /** Used for the background of a neutral action in the active state. */
-  --gl-action-confirm-background-color-default: rgba(99, 166, 233, 0.0); /** Used for the background of a confirm (positive) action in the default state. */
+  --gl-action-confirm-background-color-default: rgba(99, 166, 233, 0); /** Used for the background of a confirm (positive) action in the default state. */
   --gl-action-confirm-background-color-hover: rgba(99, 166, 233, 0.16); /** Used for the background of a confirm (positive) action in the hover state. */
   --gl-action-confirm-background-color-active: rgba(11, 92, 173, 0.24); /** Used for the background of a confirm (positive) action in the active state. */
-  --gl-action-danger-background-color-default: rgba(245, 127, 108, 0.0); /** Used for the background of a danger (destructive) action in the default state. */
+  --gl-action-danger-background-color-default: rgba(245, 127, 108, 0); /** Used for the background of a danger (destructive) action in the default state. */
   --gl-action-danger-background-color-hover: rgba(245, 127, 108, 0.16); /** Used for the background of a danger (destructive) action in the hover state. */
   --gl-action-danger-background-color-active: rgba(174, 24, 0, 0.24); /** Used for the background of a danger (destructive) action in the active state. */
   --gl-letter-spacing-heading: -0.01em;

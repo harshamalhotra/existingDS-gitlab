@@ -2,14 +2,14 @@
 // Do not edit directly, this file was auto-generated.
 
 $gl-border-radius-full: 9999px;
-$gl-color-alpha-0: transparent;
-$gl-color-alpha-dark-2: rgba(05, 05, 06, 0.02);
-$gl-color-alpha-dark-4: rgba(05, 05, 06, 0.04);
-$gl-color-alpha-dark-6: rgba(05, 05, 06, 0.06);
-$gl-color-alpha-dark-8: rgba(05, 05, 06, 0.08);
-$gl-color-alpha-dark-16: rgba(05, 05, 06, 0.16);
-$gl-color-alpha-dark-24: rgba(05, 05, 06, 0.24);
-$gl-color-alpha-dark-40: rgba(05, 05, 06, 0.4);
+$gl-color-alpha-0: rgba(0, 0, 0, 0);
+$gl-color-alpha-dark-2: rgba(5, 5, 6, 0.02);
+$gl-color-alpha-dark-4: rgba(5, 5, 6, 0.04);
+$gl-color-alpha-dark-6: rgba(5, 5, 6, 0.06);
+$gl-color-alpha-dark-8: rgba(5, 5, 6, 0.08);
+$gl-color-alpha-dark-16: rgba(5, 5, 6, 0.16);
+$gl-color-alpha-dark-24: rgba(5, 5, 6, 0.24);
+$gl-color-alpha-dark-40: rgba(5, 5, 6, 0.4);
 $gl-color-alpha-light-2: rgba(255, 255, 255, 0.02);
 $gl-color-alpha-light-4: rgba(255, 255, 255, 0.04);
 $gl-color-alpha-light-6: rgba(255, 255, 255, 0.06);
@@ -314,23 +314,23 @@ $gl-zindex-3: 3;
 $gl-zindex-4: 4;
 $gl-zindex-200: 200;
 $gl-zindex-9999: 9999;
-$gl-avatar-fallback-background-color-red: #fcb5aa3d; // Red background for avatar fallback with no particular meaning.
-$gl-avatar-fallback-background-color-purple: #cbbbf23d; // Purple background for avatar fallback with no particular meaning.
-$gl-avatar-fallback-background-color-blue: #9dc7f13d; // Blue background for avatar fallback with no particular meaning.
-$gl-avatar-fallback-background-color-green: #91d4a83d; // Green background for avatar fallback with no particular meaning.
-$gl-avatar-fallback-background-color-orange: #e9be743d; // Orange background for avatar fallback with no particular meaning.
-$gl-avatar-fallback-background-color-neutral: #bfbfc33d; // Neutral background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-red: rgba(252, 181, 170, 0.23921568627450981); // Red background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-purple: rgba(203, 187, 242, 0.23921568627450981); // Purple background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-blue: rgba(157, 199, 241, 0.23921568627450981); // Blue background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-green: rgba(145, 212, 168, 0.23921568627450981); // Green background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-orange: rgba(233, 190, 116, 0.23921568627450981); // Orange background for avatar fallback with no particular meaning.
+$gl-avatar-fallback-background-color-neutral: rgba(191, 191, 195, 0.23921568627450981); // Neutral background for avatar fallback with no particular meaning.
 $gl-button-default-primary-background-color-default: rgba(137, 136, 141, 0.4); // Used for the background of an default primary button in the default state.
 $gl-button-default-primary-background-color-hover: rgba(137, 136, 141, 0.64); // Used for the background of an default primary button in the hover state.
 $gl-button-default-primary-background-color-active: rgba(137, 136, 141, 0.32); // Used for the background of an default primary button in the active state.
 $gl-button-confirm-secondary-background-color-default: rgba(66, 143, 220, 0.4); // Used for the background of an outlined confirm (positive) button in the default state.
 $gl-button-confirm-secondary-background-color-hover: rgba(66, 143, 220, 0.64); // Used for the background of an outlined confirm (positive) button in the hover state.
 $gl-button-confirm-secondary-background-color-active: rgba(66, 143, 220, 0.32); // Used for the background of an outlined confirm (positive) button in the active state.
-$gl-button-danger-secondary-background-color-default: rgba(236, 89, 65, 0.40); // Used for the background of an outlined danger (destructive) button in the default state.
+$gl-button-danger-secondary-background-color-default: rgba(236, 89, 65, 0.4); // Used for the background of an outlined danger (destructive) button in the default state.
 $gl-button-danger-secondary-background-color-hover: rgba(236, 89, 65, 0.64); // Used for the background of an outlined danger (destructive) button in the hover state.
 $gl-button-danger-secondary-background-color-active: rgba(236, 89, 65, 0.32); // Used for the background of an outlined danger (destructive) button in the active state.
 $gl-button-disabled-background-color: rgba(137, 136, 141, 0.16); // Used for the background of a disabled button.
-$gl-chart-threshold-area-color: rgba(221,43,14,0.1); // Used in charts to delineate a threshold area in a chart.
+$gl-chart-threshold-area-color: rgba(221, 43, 14, 0.1); // Used in charts to delineate a threshold area in a chart.
 $gl-illustration-stroke-color-default: #e3e3e8; // Default stroke color to define shape and provide essential detail.
 $gl-illustration-stroke-width-default: 1.5; // Default stroke width to define shape and provide essential detail.
 $gl-illustration-fill-color-default: #423f4f; // Default fill color for an element where specific meaning or emphasis is not required.
@@ -570,12 +570,12 @@ $brand-gray-02: #a2a1a6 !default; // Use color.brand-gray.02 instead.
 $brand-gray-03: #74717a !default; // Use color.brand-gray.03 instead.
 $brand-gray-04: #45424d !default; // Use color.brand-gray.04 instead.
 $brand-gray-05: #2b2838 !default; // Use color.brand-gray.05 instead.
-$t-gray-a-16: rgba(05, 05, 06, 0.16) !default; // Use color.alpha.dark.16 instead.
-$t-gray-a-24: rgba(05, 05, 06, 0.24) !default; // Use color.alpha.dark.24 instead.
-$t-gray-a-02: rgba(05, 05, 06, 0.02) !default; // Use color.alpha.dark.2 instead.
-$t-gray-a-04: rgba(05, 05, 06, 0.04) !default; // Use color.alpha.dark.4 instead.
-$t-gray-a-06: rgba(05, 05, 06, 0.06) !default; // Use color.alpha.dark.6 instead.
-$t-gray-a-08: rgba(05, 05, 06, 0.08) !default; // Use color.alpha.dark.8 instead.
+$t-gray-a-16: rgba(5, 5, 6, 0.16) !default; // Use color.alpha.dark.16 instead.
+$t-gray-a-24: rgba(5, 5, 6, 0.24) !default; // Use color.alpha.dark.24 instead.
+$t-gray-a-02: rgba(5, 5, 6, 0.02) !default; // Use color.alpha.dark.2 instead.
+$t-gray-a-04: rgba(5, 5, 6, 0.04) !default; // Use color.alpha.dark.4 instead.
+$t-gray-a-06: rgba(5, 5, 6, 0.06) !default; // Use color.alpha.dark.6 instead.
+$t-gray-a-08: rgba(5, 5, 6, 0.08) !default; // Use color.alpha.dark.8 instead.
 $t-white-a-16: rgba(255, 255, 255, 0.16) !default; // Use color.alpha.light.16 instead.
 $t-white-a-24: rgba(255, 255, 255, 0.24) !default; // Use color.alpha.light.24 instead.
 $t-white-a-36: rgba(255, 255, 255, 0.36) !default; // Use color.alpha.light.36 instead.
@@ -583,16 +583,16 @@ $t-white-a-02: rgba(255, 255, 255, 0.02) !default; // Use color.alpha.light.2 in
 $t-white-a-04: rgba(255, 255, 255, 0.04) !default; // Use color.alpha.light.4 instead.
 $t-white-a-06: rgba(255, 255, 255, 0.06) !default; // Use color.alpha.light.6 instead.
 $t-white-a-08: rgba(255, 255, 255, 0.08) !default; // Use color.alpha.light.8 instead.
-$gl-action-neutral-background-color-default: rgba(137, 136, 141, 0.0); // Used for the background of a neutral action in the default state.
+$gl-action-neutral-background-color-default: rgba(137, 136, 141, 0); // Used for the background of a neutral action in the default state.
 $gl-action-neutral-background-color-hover: rgba(137, 136, 141, 0.4); // Used for the background of a neutral action in the hover state.
 $gl-action-neutral-background-color-active: rgba(137, 136, 141, 0.16); // Used for the background of a neutral action in the active state.
-$gl-action-confirm-background-color-default: rgba(66, 143, 220, 0.0); // Used for the background of a confirm (positive) action in the default state.
+$gl-action-confirm-background-color-default: rgba(66, 143, 220, 0); // Used for the background of a confirm (positive) action in the default state.
 $gl-action-confirm-background-color-hover: rgba(66, 143, 220, 0.4); // Used for the background of a confirm (positive) action in the hover state.
 $gl-action-confirm-background-color-active: rgba(66, 143, 220, 0.16); // Used for the background of a confirm (positive) action in the active state.
-$gl-action-danger-background-color-default: rgba(236, 89, 65, 0.0); // Used for the background of a danger (destructive) action in the default state.
+$gl-action-danger-background-color-default: rgba(236, 89, 65, 0); // Used for the background of a danger (destructive) action in the default state.
 $gl-action-danger-background-color-hover: rgba(236, 89, 65, 0.4); // Used for the background of a danger (destructive) action in the hover state.
 $gl-action-danger-background-color-active: rgba(236, 89, 65, 0.16); // Used for the background of a danger (destructive) action in the active state.
-$gl-background-color-overlay: rgba(0,0,0,0.64); // Used for an overlay that covers other content.
+$gl-background-color-overlay: rgba(0, 0, 0, 0.64); // Used for an overlay that covers other content.
 $gl-letter-spacing-heading: -0.01em;
 $gl-heading-3-letter-spacing: inherit;
 $gl-heading-4-letter-spacing: inherit;

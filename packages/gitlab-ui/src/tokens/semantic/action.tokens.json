@@ -271,8 +271,24 @@
         "color": {
           "default": {
             "$value": {
-              "default": "rgba(164, 163, 168, 0.0)",
-              "dark": "rgba(137, 136, 141, 0.0)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.6431372549019608,
+                  0.6392156862745098,
+                  0.6588235294117647
+                ],
+                "alpha": 0
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.5372549019607843,
+                  0.5333333333333333,
+                  0.5529411764705883
+                ],
+                "alpha": 0
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a neutral action in the default state.",
@@ -285,8 +301,24 @@
           },
           "hover": {
             "$value": {
-              "default": "rgba(164, 163, 168, 0.16)",
-              "dark": "rgba(137, 136, 141, 0.4)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.6431372549019608,
+                  0.6392156862745098,
+                  0.6588235294117647
+                ],
+                "alpha": 0.16
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.5372549019607843,
+                  0.5333333333333333,
+                  0.5529411764705883
+                ],
+                "alpha": 0.4
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a neutral action in the hover state.",
@@ -310,8 +342,24 @@
           },
           "active": {
             "$value": {
-              "default": "rgba(83, 81, 88, 0.24)",
-              "dark": "rgba(137, 136, 141, 0.16)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.3254901960784314,
+                  0.3176470588235294,
+                  0.34509803921568627
+                ],
+                "alpha": 0.24
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.5372549019607843,
+                  0.5333333333333333,
+                  0.5529411764705883
+                ],
+                "alpha": 0.16
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a neutral action in the active state.",
@@ -431,8 +479,24 @@
         "color": {
           "default": {
             "$value": {
-              "default": "rgba(99, 166, 233, 0.0)",
-              "dark": "rgba(66, 143, 220, 0.0)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.38823529411764707,
+                  0.6509803921568628,
+                  0.9137254901960784
+                ],
+                "alpha": 0
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.25882352941176473,
+                  0.5607843137254902,
+                  0.8627450980392157
+                ],
+                "alpha": 0
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the default state.",
@@ -445,8 +509,24 @@
           },
           "hover": {
             "$value": {
-              "default": "rgba(99, 166, 233, 0.16)",
-              "dark": "rgba(66, 143, 220, 0.4)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.38823529411764707,
+                  0.6509803921568628,
+                  0.9137254901960784
+                ],
+                "alpha": 0.16
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.25882352941176473,
+                  0.5607843137254902,
+                  0.8627450980392157
+                ],
+                "alpha": 0.4
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the hover state.",
@@ -470,8 +550,24 @@
           },
           "active": {
             "$value": {
-              "default": "rgba(11, 92, 173, 0.24)",
-              "dark": "rgba(66, 143, 220, 0.16)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.043137254901960784,
+                  0.3607843137254902,
+                  0.6784313725490196
+                ],
+                "alpha": 0.24
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.25882352941176473,
+                  0.5607843137254902,
+                  0.8627450980392157
+                ],
+                "alpha": 0.16
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a confirm (positive) action in the active state.",
@@ -591,8 +687,24 @@
         "color": {
           "default": {
             "$value": {
-              "default": "rgba(245, 127, 108, 0.0)",
-              "dark": "rgba(236, 89, 65, 0.0)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9607843137254902,
+                  0.4980392156862745,
+                  0.4235294117647059
+                ],
+                "alpha": 0
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9254901960784314,
+                  0.34901960784313724,
+                  0.2549019607843137
+                ],
+                "alpha": 0
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the default state.",
@@ -605,8 +717,24 @@
           },
           "hover": {
             "$value": {
-              "default": "rgba(245, 127, 108, 0.16)",
-              "dark": "rgba(236, 89, 65, 0.4)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9607843137254902,
+                  0.4980392156862745,
+                  0.4235294117647059
+                ],
+                "alpha": 0.16
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9254901960784314,
+                  0.34901960784313724,
+                  0.2549019607843137
+                ],
+                "alpha": 0.4
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the hover state.",
@@ -630,8 +758,24 @@
           },
           "active": {
             "$value": {
-              "default": "rgba(174, 24, 0, 0.24)",
-              "dark": "rgba(236, 89, 65, 0.16)"
+              "default": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.6823529411764706,
+                  0.09411764705882353,
+                  0
+                ],
+                "alpha": 0.24
+              },
+              "dark": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.9254901960784314,
+                  0.34901960784313724,
+                  0.2549019607843137
+                ],
+                "alpha": 0.16
+              }
             },
             "$type": "color",
             "$description": "Used for the background of a danger (destructive) action in the active state.",

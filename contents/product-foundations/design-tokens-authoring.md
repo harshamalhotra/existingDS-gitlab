@@ -21,8 +21,8 @@ Design tokens are defined in `*.token.json` files, and must include a:
 ```json
 {
   "token-name": {
-    "$value": "#000",
-    "$type": "color"
+    "$value": 1.25,
+    "$type": "number"
   }
 }
 ```
@@ -46,38 +46,81 @@ Principles:
 
 ### Value
 
-Name and `$value` are the minimum required properties of a design token, `$value` is a reserved
-word.
+A design token value can be an object, number, string, or [alias](#aliases), for example:
+
+#### Color
 
 ```json
 {
-  "token name": {
-    "$value": "16"
+  "color-token": {
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 1, 1],
+      "alpha": 1,
+      "hex": "#fff"
+    },
+    "$type": "color"
+  },
+}
+```
+
+#### Dimension
+
+```json
+{
+  "dimension-token": {
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$type": "dimension"
   }
 }
 ```
 
-A design token value can be an object, string, number, or [alias](#aliases), for example:
+#### Number
 
-| Example       | Value                    |
-| ------------- | ------------------------ |
-| color         | `"#18171d"`              |
-| font weight   | `"bold"`                 |
-| spacing scale | `16`                     |
-| easing        | `"ease-out"`             |
-| duration      | `200`                    |
-| alias         | `"{text.color.default}"` |
+```json
+{
+  "number-token": {
+    "$value": 1.25,
+    "$type": "number"
+  }
+}
+```
+
+#### String
+
+```json
+{
+  "string-token": {
+    "$value": "bold",
+    "$type": "fontWeight"
+  }
+}
+```
+
+#### Alias
+
+```json
+{
+  "alias-token": {
+    "$value": "{string-value}",
+    "$type": "fontWeight"
+  }
+}
+```
 
 ### Aliases
 
 [Aliases](https://www.designtokens.org/tr/2025.10/format/#alias-reference) allow a design token value to
-reference to another token, for example the alias token `custom-token` has the value
-`{text.color.heading}`:
+reference to another token, for example:
 
 ```json
 {
-  "custom-token": {
-    "$value": "{text.color.heading}"
+  "alias-token": {
+    "$value": "{text.color.heading}",
+    "$type": "color"
   }
 }
 ```
@@ -105,9 +148,9 @@ The [$type](https://www.designtokens.org/tr/2025.10/format/#type) property is us
 
 ```json
 {
-  "color-token": {
-    "$value": "#000",
-    "$type": "color"
+  "number-token": {
+    "$value": 1.25,
+    "$type": "number"
   },
   "dimension-token": {
     "$value": {
@@ -115,7 +158,16 @@ The [$type](https://www.designtokens.org/tr/2025.10/format/#type) property is us
       "unit": "px"
     },
     "$type": "dimension"
-  }
+  },
+  "color-token": {
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 1, 1],
+      "alpha": 1,
+      "hex": "#fff"
+    },
+    "$type": "color"
+  },
 }
 ```
 
@@ -125,11 +177,11 @@ The [$type](https://www.designtokens.org/tr/2025.10/format/#type) property is us
 
 ```json
 {
-  "text": {
-    "color": {
+  "line": {
+    "height": {
       "heading": {
-        "$value": "#18171d",
-        "$type": "color"
+        "$value": 1.25,
+        "$type": "number"
       }
     }
   }
@@ -144,20 +196,20 @@ Group names prepend design token names in generated output, for example:
 
 ```css
 :root {
-  --gl-text-color-heading: #18171d;
+  --gl-line-height-heading: 1.25;
 }
 ```
 
 **SCSS:**
 
 ```scss
-$gl-text-color-heading: #18171d;
+$gl-line-height-heading: 1.25;
 ```
 
 **JavaScript:**
 
 ```javascript
-const GL_TEXT_COLOR_HEADING = '#18171d';
+const GL_LINE_HEIGHT_HEADING = '1.25';
 ```
 
 ### Extensions
@@ -169,7 +221,7 @@ The `com.figma.scopes` extension indicates a token's scope within Figma. Value i
 ```json
 {
   "text": {
-    "$value": "#000",
+    "$value": {...},
     "$type": "color",
     "$extensions": {
       "com.figma.scopes": [
@@ -178,7 +230,7 @@ The `com.figma.scopes` extension indicates a token's scope within Figma. Value i
     }
   },
   "icon": {
-    "$value": "#333",
+    "$value": {...},
     "$type": "color",
     "$extensions": {
       "com.figma.scopes": [
@@ -187,6 +239,29 @@ The `com.figma.scopes` extension indicates a token's scope within Figma. Value i
       ],
     }
   }
+}
+```
+
+## Color
+
+Color design tokens are authored with the [Design Tokens Color Module](https://www.designtokens.org/tr/2025.10/) and contain:
+
+- `colorSpace` (required): A string that specifies the color space or color model. See [supported color spaces](https://www.designtokens.org/tr/2025.10/color/#supported-color-spaces).
+- `components` (required): An array representing the color components. The number of components depends on the color space.
+- `alpha` (optional): A number that represents the alpha value of the color. This value is between 0 and 1, where 0 is fully transparent and 1 is fully opaque. If omitted, the alpha value of the color MUST be assumed to be 1 (fully opaque).
+- `hex` (optional): A string that represents a fallback value of the color. The fallback color MUST be formatted in 6 digit CSS hex color notation format to avoid conflicts with the provided alpha value.
+
+```json
+{
+  "color-token": {
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [1, 1, 1],
+      "alpha": 1,
+      "hex": "#fff"
+    },
+    "$type": "color"
+  },
 }
 ```
 
@@ -236,8 +311,18 @@ Modes are defined as an object in the `$value` property:
 {
   "color-token": {
     "$value": {
-      "default": "#000",
-      "dark": "#fff"
+      "default": {
+        "colorSpace": "srgb",
+        "components": [0, 0, 0],
+        "alpha": 1,
+        "hex": "#000"
+      },
+      "dark": {
+        "colorSpace": "srgb",
+        "components": [1, 1, 1],
+        "alpha": 1,
+        "hex": "#fff"
+      }
     },
     "$type": "color"
   }
