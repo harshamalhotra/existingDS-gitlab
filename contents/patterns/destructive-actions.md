@@ -25,9 +25,71 @@ If a destructive action is difficult to undo or data will be lost permanently, s
 - Body content can use [bold styling](/product-foundations/type-fundamentals/#font-weight) and/or [danger feedback design tokens](/product-foundations/design-tokens#feedback) to draw attention to the consequences of the destructive action.
 - Avoid using [alerts](/components/alert) to emphasize the content inside a modal.
 
-The following example demonstrates one way that a modal can handle a destructive action. The critical part of the text uses danger feedback design tokens. There's also an input that must be validated in order for the destructive action to be enabled.
+The following example demonstrates one way that a modal can handle a destructive action. The critical part of the text uses danger feedback design tokens. There's also an input that must be validated in order for the destructive action to be enabled. Click the **Delete project** button to open the modal. Note that the input validation logic is not implemented in this static example, so the delete button remains disabled.
 
-<story-viewer component="base-modal" story="destructive" title="Modal with destructive action" iframe-padding="240px 0px"></story-viewer>
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        modalVisible: false,
+        renderKey: 0,
+      }
+    },
+    watch: {
+      modalVisible(newVal) {
+        if (newVal) {
+          this.renderKey += 1;
+        }
+      },
+    },
+  };
+</script>
+
+<template>
+  <div>
+    <gl-button @click="modalVisible = true" category="primary" variant="danger">
+      Delete project
+    </gl-button>
+    <gl-modal
+      v-model="modalVisible"
+      modal-id="destructive-modal-id"
+      title="Confirm project deletion"
+      :action-primary="{text: 'Yes, delete project', attributes: { variant: 'danger', disabled: true }}"
+      :action-cancel="{text: 'Cancel, keep project'}"
+      no-fade
+    >
+      <div class="gl-text-feedback-danger">
+        <p class="gl-font-bold gl-mb-3">
+          You're about to delete this project containing:
+        </p>
+        <ul class="gl-mb-5">
+          <li>40 issues</li>
+          <li>16 merge requests</li>
+          <li>0 forks</li>
+          <li>0 stars</li>
+        </ul>
+        <p class="gl-mb-5">
+          This project is <strong>not</strong> a fork. This process deletes the project repository and all related resources.
+        </p>
+      </div>
+      <gl-form-group
+        :key="renderKey"
+        label="Enter the following to confirm:"
+        label-for="project-path"
+        label-description="gitlab-org/gitlab-test"
+        class="gl-mb-5"
+      >
+        <gl-form-input id="project-path" />
+        <template #description>
+          This project can be restored until 2025-11-28, <a href="#" class="gl-link">learn more</a>.
+        </template>
+      </gl-form-group>
+    </gl-modal>
+  </div>
+</template>
+```
 
 ### Medium severity
 

@@ -2,8 +2,6 @@ import { userEvent, within, waitFor, expect } from '@storybook/test';
 import { GlModalDirective } from '../../../directives/modal';
 import GlButton from '../button/button.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/modal/README.md';
-import GlFormGroup from '../form/form_group/form_group.vue';
-import GlFormInput from '../form/form_input/form_input.vue';
 import GlModal from './modal.vue';
 
 const play =
@@ -133,68 +131,6 @@ WithoutFocus.args = generateProps({
   noFocusOnShow: true,
 });
 WithoutFocus.play = play();
-
-export const Destructive = (args, { argTypes, viewMode }) => ({
-  components: { GlModal, GlButton, GlFormGroup, GlFormInput },
-  directives: { GlModalDirective },
-  props: Object.keys(argTypes),
-  data() {
-    return {
-      modalVisible: true,
-      renderKey: 0,
-    };
-  },
-  watch: {
-    modalVisible(newVal) {
-      if (newVal) {
-        this.renderKey += 1;
-      }
-    },
-  },
-  template: `
-    <div>
-      <gl-button @click="modalVisible = true" category="primary" variant="danger">
-        Delete project
-      </gl-button>
-      <gl-modal
-        v-model="modalVisible"
-        modal-id="destructive-modal-id"
-        title="Confirm project deletion"
-        :action-primary="{text: 'Yes, delete project', attributes: { variant: 'danger', disabled: true }}"
-        :action-cancel="{text: 'Cancel, keep project'}"
-        no-fade
-      >
-        <div class="gl-text-feedback-danger">
-          <p class="gl-font-bold gl-mb-3">
-            You're about to delete this project containing:
-          </p>
-          <ul class="gl-mb-5">
-            <li>40 issues</li>
-            <li>16 merge requests</li>
-            <li>0 forks</li>
-            <li>0 stars</li>
-          </ul>
-          <p class="gl-mb-5">
-            This project is <strong>not</strong> a fork. This process deletes the project repository and all related resources.
-          </p>
-        </div>
-        <gl-form-group
-          :key="renderKey"
-          label="Enter the following to confirm:"
-          label-for="project-path"
-          label-description="gitlab-org/gitlab-test"
-          class="gl-mb-5"
-        >
-          <gl-form-input id="project-path" />
-          <template #description>
-            This project can be restored until 2025-11-28, <a href="#" class="gl-link">learn more</a>.
-          </template>
-        </gl-form-group>
-      </gl-modal>
-    </div>
-  `,
-  viewMode,
-});
 
 export default {
   title: 'base/modal',
