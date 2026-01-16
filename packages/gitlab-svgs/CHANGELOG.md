@@ -1,5 +1,11 @@
 # @gitlab/svgs
 
+## 3.154.0
+
+### Minor Changes
+
+- 44ce524: Add sun and moon icons for color mode toggle
+
 ## 3.153.0
 
 ### Minor Changes

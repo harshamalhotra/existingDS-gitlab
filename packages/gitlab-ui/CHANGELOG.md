@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.2.0
+
+### Minor Changes
+
+- 44ce524: Add GlColorModeToggle component for toggling between light and dark modes
+
 ## 128.1.0
 
 ### Minor Changes
