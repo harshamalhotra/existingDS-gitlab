@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import DesignTokenColorGenerator from '../components/design_token_color_generator.vue';
 import DesignTokenDimension from '../components/design_tokens_dimension.vue';
 import DesignTokensTable from '../components/design_tokens_table.vue';
 import DesignTokensColorPalette from '../components/design_tokens_color_palette.vue';
@@ -18,6 +19,7 @@ import Todo from '../components/todo.vue';
 import VimeoPlayer from '../components/vimeo_player.vue';
 
 Object.entries({
+  DesignTokenColorGenerator,
   DesignTokenDimension,
   DesignTokensTable,
   DesignTokensColorPalette,

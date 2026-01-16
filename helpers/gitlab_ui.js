@@ -15,6 +15,8 @@ export { default as GlCard } from '@gitlab/ui/src/components/base/card/card.vue'
 export { default as GlDropdownItem } from '@gitlab/ui/src/components/base/dropdown/dropdown_item.vue';
 export { default as GlEmptyState } from '@gitlab/ui/src/components/regions/empty_state/empty_state.vue';
 export { default as GlFormGroup } from '@gitlab/ui/src/components/base/form/form_group/form_group.vue';
+export { default as GlFormInput } from '@gitlab/ui/src/components/base/form/form_input/form_input.vue';
+export { default as GlFormTextarea } from '@gitlab/ui/src/components/base/form/form_textarea/form_textarea.vue';
 export { default as GlFormSelect } from '@gitlab/ui/src/components/base/form/form_select/form_select.vue';
 export { default as GlIcon } from '@gitlab/ui/src/components/base/icon/icon.vue';
 export { default as GlIllustration } from '@gitlab/ui/src/components/base/illustration/illustration.vue';

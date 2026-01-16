@@ -265,6 +265,10 @@ Color design tokens are authored with the [Design Tokens Color Module](https://w
 }
 ```
 
+### Color `$value` generator
+
+<design-token-color-generator></design-token-color-generator>
+
 ## Deprecation
 
 Add [`"$deprecated": true`](https://www.designtokens.org/tr/2025.10/format/#deprecated) to deprecated token
