@@ -17,6 +17,8 @@ export default {
   'GlCollapsibleListbox.loadingAnnouncementText.loadingMoreItems': 'Loading more items',
   'GlCollapsibleListbox.loadingAnnouncementText.searching': 'Searching',
   'GlCollapsibleListbox.srOnlyResultsLabel': null,
+  'GlColorModeToggle.darkLabel': 'Dark mode',
+  'GlColorModeToggle.lightLabel': 'Light mode',
   'GlDatepicker.monthLabel': 'Month',
   'GlDatepicker.yearLabel': 'Year',
   'GlKeysetPagination.navigationLabel': 'Pagination',

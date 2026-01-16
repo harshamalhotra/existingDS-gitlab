@@ -12,6 +12,7 @@ export { default as GlBadge } from '@gitlab/ui/src/components/base/badge/badge.v
 export { default as GlButton } from '@gitlab/ui/src/components/base/button/button.vue';
 export { default as GlButtonGroup } from '@gitlab/ui/src/components/base/button_group/button_group.vue';
 export { default as GlCard } from '@gitlab/ui/src/components/base/card/card.vue';
+export { default as GlColorModeToggle } from '@gitlab/ui/src/components/base/color_mode_toggle/color_mode_toggle.vue';
 export { default as GlDropdownItem } from '@gitlab/ui/src/components/base/dropdown/dropdown_item.vue';
 export { default as GlEmptyState } from '@gitlab/ui/src/components/regions/empty_state/empty_state.vue';
 export { default as GlFormGroup } from '@gitlab/ui/src/components/base/form/form_group/form_group.vue';

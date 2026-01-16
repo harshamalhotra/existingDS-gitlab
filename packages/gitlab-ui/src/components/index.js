@@ -77,6 +77,7 @@ export { default as GlLabel } from './base/label/label.vue';
 export { default as GlDatepicker } from './base/datepicker/datepicker.vue';
 export { default as GlDaterangePicker } from './base/daterange_picker/daterange_picker.vue';
 export { default as GlToggle } from './base/toggle/toggle.vue';
+export { default as GlColorModeToggle } from './base/color_mode_toggle/color_mode_toggle.vue';
 export { default as GlSorting } from './base/sorting/sorting.vue';
 export { default as GlInfiniteScroll } from './base/infinite_scroll/infinite_scroll.vue';
 export { default as GlAlert } from './base/alert/alert.vue';
