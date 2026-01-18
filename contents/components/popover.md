@@ -74,6 +74,11 @@ When a popover is visible:
 - The focus can move to the next logical interactive element in the DOM and doesn't loop in the popover.
 - The content within is next in the reading order from the trigger element and not appended to the DOM.
 
+To reach interactive elements inside a popover with a keyboard:
+
+- Set an `id` attribute on the interactive element that triggers the popover.
+- Reference that `id` as `:container="id"` on `GlPopover`.
+
 ## Code reference
 
 ### GlPopover
