@@ -61,7 +61,13 @@ A [button](/components/button) that triggers a dropdown panel comes in a few var
 ### Size
 
 - **Trigger**: The [button](/components/button) width is determined by its available properties.
-- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger button and to keep panels consistent throughout the UI. The height of the panel is initially set to the height of its content (dynamic height) when less than the maximum, but can optionally be set to always use a fixed height.
+- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger button and to keep panels consistent throughout the UI. The height of the panel is initially set to the height of its content (dynamic height) when less than the maximum, but can optionally be set to always use a fixed height. See [Fluid width](#fluid-width) for guidance on when to allow the panel to resize based on content.
+
+#### Fluid width
+
+The `fluid-width` prop is useful for a dropdown with variable-length content like action labels, dynamic menu items, or user-generated text.
+
+Use it when avoiding truncation is more important than maintaining consistent widths across multiple dropdown components.
 
 ### Behavior
 
