@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.2.1
+
+### Patch Changes
+
+- a0a5052: GlDashboardPanel: Fix titlePopover icon with subtitle alignment
+
 ## 128.2.0
 
 ### Minor Changes
