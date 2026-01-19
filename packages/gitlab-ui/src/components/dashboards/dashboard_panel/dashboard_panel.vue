@@ -206,22 +206,59 @@ export default {
   >
     <div class="gl-flex gl-h-full gl-flex-col">
       <div class="gl-mb-3 gl-flex gl-items-start gl-justify-between" data-testid="panel-title">
-        <div class="gl-flex gl-items-center gl-overflow-hidden">
+        <div class="gl-flex gl-items-center gl-gap-2 gl-overflow-hidden">
           <gl-icon
             v-if="hasTitleIcon"
-            class="gl-mr-2"
             :class="titleIconClass"
             :name="titleIcon"
             data-testid="panel-title-icon"
           />
 
           <div class="gl-min-w-0">
-            <gl-truncate
-              v-if="hasTitle"
-              class="gl-font-bold gl-text-default"
-              :text="title"
-              with-tooltip
-            />
+            <div class="gl-flex gl-items-center gl-gap-2">
+              <gl-truncate
+                v-if="hasTitle"
+                class="gl-min-w-0 gl-font-bold gl-text-default"
+                :text="title"
+                with-tooltip
+              />
+              <template v-if="hasTitlePopover">
+                <gl-icon
+                  :id="titlePopoverId"
+                  class="gl-min-w-5"
+                  data-testid="panel-title-popover-icon"
+                  name="information-o"
+                  variant="info"
+                />
+                <gl-popover
+                  data-testid="panel-title-popover"
+                  boundary="viewport"
+                  :target="titlePopoverId"
+                  :css-classes="titlePopoverClasses"
+                >
+                  <!-- @slot The title of the info popover. -->
+                  <template v-if="hasInfoPopoverTitleSlot" #title>
+                    <slot name="info-popover-title"></slot>
+                  </template>
+
+                  <!-- @slot The content of the info popover. -->
+                  <template v-if="hasInfoPopoverContentSlot">
+                    <slot name="info-popover-content"></slot>
+                  </template>
+
+                  <template v-if="!hasInfoPopoverContentSlot">
+                    <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
+                      <template #link="{ content }">
+                        <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
+                          content
+                        }}</gl-link>
+                      </template>
+                    </gl-sprintf>
+                    <template v-else> {{ titlePopover.description }} </template>
+                  </template>
+                </gl-popover>
+              </template>
+            </div>
 
             <p
               v-if="subtitle"
@@ -231,43 +268,6 @@ export default {
               {{ subtitle }}
             </p>
           </div>
-
-          <template v-if="hasTitlePopover">
-            <gl-icon
-              :id="titlePopoverId"
-              class="gl-ml-2 gl-min-w-5"
-              data-testid="panel-title-popover-icon"
-              name="information-o"
-              variant="info"
-            />
-            <gl-popover
-              data-testid="panel-title-popover"
-              boundary="viewport"
-              :target="titlePopoverId"
-              :css-classes="titlePopoverClasses"
-            >
-              <!-- @slot The title of the info popover. -->
-              <template v-if="hasInfoPopoverTitleSlot" #title>
-                <slot name="info-popover-title"></slot>
-              </template>
-
-              <!-- @slot The content of the info popover. -->
-              <template v-if="hasInfoPopoverContentSlot">
-                <slot name="info-popover-content"></slot>
-              </template>
-
-              <template v-if="!hasInfoPopoverContentSlot">
-                <gl-sprintf v-if="hasTitlePopoverLink" :message="titlePopover.description">
-                  <template #link="{ content }">
-                    <gl-link :href="titlePopover.descriptionLink" class="gl-text-sm">{{
-                      content
-                    }}</gl-link>
-                  </template>
-                </gl-sprintf>
-                <template v-else> {{ titlePopover.description }} </template>
-              </template>
-            </gl-popover>
-          </template>
         </div>
 
         <div
