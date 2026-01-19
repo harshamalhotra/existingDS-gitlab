@@ -38,7 +38,7 @@ All empty state solutions should include usage analytics so you and your team ca
 
 Generally, an empty state message consists of a:
 
-- **Title** that describes the problem. Try to limit to 5 words (not counting articles or prepositions). Don't end with a period.
+- **Title** that describes the empty state or motivates action, depending on the type (see specific guidance below). Try to limit to 5 words (not counting articles or prepositions). Don't end with a period.
 - **Description** that explains in full sentences what actions the user can take.
 - (Optional) **Button** that serves as a call to action (CTA) and directs the user to take an action.
 
