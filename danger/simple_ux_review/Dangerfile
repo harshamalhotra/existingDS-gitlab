@@ -3,7 +3,6 @@
 # We could get these easily if the team was exposed on the roulette object
 # https://gitlab.com/gitlab-org/ruby/gems/gitlab-dangerfiles/-/issues/31
 FOUNDATION_UX_REVIEWERS = %w[
-  annabeldunstone
   clavimoniere
   chrismicek
   danmh
@@ -30,7 +29,7 @@ COMPONENT_UX_MAP = {
   filter: %w[jeldergl],
   icon: %w[jeldergl],
   'infinite-scroll': %w[beckalippert],
-  label: %w[annabeldunstone],
+  label: %w[seggenberger],
   link: %w[jeldergl],
   modal: %w[aregnery],
   pagination: %w[andyvolpe],
@@ -43,7 +42,7 @@ COMPONENT_UX_MAP = {
   tab: %w[aregnery],
   table: %w[lvanc],
   toggle: %w[pedroms],
-  token: %w[annabeldunstone],
+  token: %w[seggenberger],
   tooltip: %w[rayana],
   tree: %w[rayana]
 }.freeze
