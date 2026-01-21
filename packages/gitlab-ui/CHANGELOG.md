@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 128.2.2
+
+### Patch Changes
+
+- 297920d: GlDisclosureDropdown: Improve list container tag detection.
+
+  The component was incorrectly wrapping dropdown items in a `DIV` in a few cases instead of in a `UL`.
+
 ## 128.2.1
 
 ### Patch Changes
