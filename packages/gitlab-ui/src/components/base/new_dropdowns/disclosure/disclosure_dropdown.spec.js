@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import { autoUpdate } from '@floating-ui/dom';
-import { nextTick, h } from 'vue';
+import Vue, { nextTick, h } from 'vue';
 import * as utils from '../../../../utils/utils';
 import { useMockIntersectionObserver } from '../../../../utils/use_mock_intersection_observer';
 import GlBaseDropdown from '../base_dropdown/base_dropdown.vue';
@@ -373,6 +373,89 @@ describe('GlDisclosureDropdown', () => {
 
       buildWrapper({}, { slots });
       expect(findDisclosureContent().element.tagName).toBe('UL');
+    });
+
+    it('should render `ul` as content tag when default slot contains falsy v-if', () => {
+      const slots = {
+        default: `
+          <gl-disclosure-dropdown-item>Item</gl-disclosure-dropdown-item>
+          <gl-disclosure-dropdown-item>Item</gl-disclosure-dropdown-item>
+          <gl-disclosure-dropdown-item v-if="false">Item</gl-disclosure-dropdown-item>
+          <gl-disclosure-dropdown-item>Item</gl-disclosure-dropdown-item>
+        `,
+      };
+
+      buildWrapper({}, { slots });
+      expect(findDisclosureContent().element.tagName).toBe('UL');
+    });
+
+    describe('when used with extension slot', () => {
+      const buildExternalWrapper = (options = {}) => {
+        const wrapperComponent = {
+          components: {
+            GlDisclosureDropdown,
+            GlDisclosureDropdownItem,
+            GlDisclosureDropdownGroup,
+            GlCollapsibleListbox,
+          },
+          template: `
+            <gl-disclosure-dropdown>
+              <gl-disclosure-dropdown-item>Item</gl-disclosure-dropdown-item>
+              <slot name="extensions"></slot>
+            </gl-disclosure-dropdown>
+          `,
+        };
+
+        wrapper = mount(wrapperComponent, {
+          stubs: {
+            MountingPortal: {
+              template: '<div><slot /></div>',
+            },
+          },
+          attachTo: document.body,
+          ...options,
+        });
+      };
+
+      it('should render `ul` a content tag when slot is present but empty', () => {
+        buildExternalWrapper();
+        expect(findDisclosureContent().element.tagName).toBe('UL');
+      });
+
+      it('should render `ul` as content tag when slot is present but has only acceptable items', () => {
+        buildExternalWrapper({
+          scopedSlots: {
+            extensions: () => [
+              h(GlDisclosureDropdownItem, {}, 'Item'),
+              h(GlDisclosureDropdownItem, {}, 'Item'),
+            ],
+          },
+        });
+        expect(findDisclosureContent().element.tagName).toBe('UL');
+      });
+
+      it('should render `ul` as content tag when slot is present and has v-if inside', () => {
+        const createComment = Vue.createCommentVNode || (() => null);
+        buildExternalWrapper({
+          scopedSlots: {
+            extensions: () => [
+              h(GlDisclosureDropdownItem, {}, 'Item'),
+              createComment(),
+              h(GlDisclosureDropdownItem, {}, 'Item'),
+            ],
+          },
+        });
+        expect(findDisclosureContent().element.tagName).toBe('UL');
+      });
+
+      it('should render `div` as content tag when slot is present but has unacceptable items', () => {
+        buildExternalWrapper({
+          scopedSlots: {
+            extensions: () => h('div', {}, 'EE'),
+          },
+        });
+        expect(findDisclosureContent().element.tagName).toBe('DIV');
+      });
     });
 
     it('should render `div` as content tag when default slot does not contain valid list item', () => {
