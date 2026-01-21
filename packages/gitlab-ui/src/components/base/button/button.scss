@@ -345,24 +345,12 @@
     }
   }
 
-  &.btn-default,
-  &.btn-confirm,
-  &.btn-danger {
-    &-tertiary {
-      @media (forced-colors: active) {
-        color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
-        mix-blend-mode: initial;
-        border: 0;
-      }
-    }
-  }
-
   &.btn-default-tertiary,
   &.btn-confirm-tertiary,
   &.btn-danger-tertiary {
     @media (forced-colors: active) {
-      /* stylelint-disable-next-line color-named */
-      color: black; // stylelint-disable-line scale-unlimited/declaration-strict-value
+      color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
+      mix-blend-mode: initial;
       border: 0;
     }
   }
@@ -445,6 +433,10 @@
     &[disabled] {
       @apply gl-bg-transparent;
       @apply gl-shadow-none;
+    }
+
+    @media (forced-colors: active) {
+      color: LinkText; // stylelint-disable-line scale-unlimited/declaration-strict-value
     }
   }
 
