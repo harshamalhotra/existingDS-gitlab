@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.2.3
+
+### Patch Changes
+
+- 1673e0c: Update button for forced colors mode (WHCM)
+
 ## 128.2.2
 
 ### Patch Changes
