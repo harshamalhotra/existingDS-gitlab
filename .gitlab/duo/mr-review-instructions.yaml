@@ -41,3 +41,9 @@ instructions:
     instructions: |
       1. Verify all links are formatted correctly.
       1. Ensure component mentions are cross-linked to their respective component pages. That is, a mention of an alert should link to the alert component page. For example: "If you need to communicate system status, consider using an [alert](/components/alert) instead."
+
+  - name: Changesets
+    fileFilters:
+      - '.changeset/*.md'
+    instructions: |
+      1. Ensure changesets follow the guidelines in https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/publishing-packages.md.
