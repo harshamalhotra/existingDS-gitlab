@@ -298,11 +298,15 @@ export default {
     toggleButtonTextClasses() {
       return this.block ? 'gl-w-full' : '';
     },
-    toggleLabelledBy() {
+    toggleLabelledBy() { // Sets the aria-labelledby property with one or more ID strings
       if (this.isToggleCombobox) {
         if (this.ariaLabelledby) {
           return `${this.ariaLabelledby} ${this.toggleId}`;
         }
+        // Toggle combobox with external label and not searchable
+        // if (this.isToggleCombobox && this.isToggleLabelledExternally && !this.hasSearchableListbox) {
+        // return `${this.passedLabelId} ${this.toggleId}`;
+        // }
         return this.toggleId;
       }
 

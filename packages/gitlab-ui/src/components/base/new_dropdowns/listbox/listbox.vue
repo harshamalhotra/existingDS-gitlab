@@ -70,6 +70,9 @@ export default {
     isInFormGroup: {
       default: false,
     },
+    formGroupLabelState: {
+      default: null,
+    },
   },
   model: {
     prop: 'selected',

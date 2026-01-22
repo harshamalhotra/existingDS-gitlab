@@ -8,8 +8,11 @@ export default {
   components: {
     BFormGroup,
   },
-  provide: {
-    isInFormGroup: true,
+  provide() {
+    return {
+      isInFormGroup: true,
+      formGroupLabelState: this.formGroupLabelState,
+    };
   },
   inheritAttrs: false,
   props: {
@@ -46,6 +49,13 @@ export default {
       default: '(optional)',
     },
   },
+  data() {
+    return {
+      formGroupLabelState: {
+        id: null,
+      },
+    };
+  },
   computed: {
     actualLabelClass() {
       const { labelClass } = this;
@@ -66,6 +76,16 @@ export default {
       // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
       return Boolean(this.labelDescription || this.$slots['label-description']);
     },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      // BFormGroup stores the generated ID in its safeId() method
+      // Access it via the component's internal state
+      const labelId = this.$refs.bFormGroup?.safeId('_BV_label_');
+      if (labelId) {
+        this.formGroupLabelState.id = labelId;
+      }
+    });
   },
 };
 </script>
