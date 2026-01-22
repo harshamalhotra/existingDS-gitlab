@@ -1,3 +1,5 @@
+const testId = (id) => `[data-testid="${id}"]`;
+
 describe('GlCollapsibleListbox', () => {
   const toggleSelector = 'button[aria-haspopup="listbox"]';
   const dropdownMenuSelector = '[role="listbox"]';
@@ -292,4 +294,37 @@ describe('GlCollapsibleListbox', () => {
       });
     },
   );
+
+  describe('Collapsible dropdown in form group', () => {
+    beforeEach(() => {
+      cy.visitStory('base/dropdown/collapsible-listbox', {
+        story: 'in-form-group',
+        args: {
+          startOpened: false,
+        },
+      });
+    });
+
+    it(
+      'opens dropdown when form label is clicked',
+      // Real events are not supported on firefox
+      { browser: '!firefox' },
+      () => {
+        cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'false');
+        cy.get('label[for="department-picker"]').realClick();
+        cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'true');
+      },
+    );
+
+    it(
+      'opens searchable dropdown when form label is clicked',
+      // Real events are not supported on firefox
+      { browser: '!firefox' },
+      () => {
+        cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'false');
+        cy.get('label[for="department-picker"]').realClick();
+        cy.get(testId('base-dropdown-toggle')).should('have.attr', 'aria-expanded', 'true');
+      },
+    );
+  });
 });
