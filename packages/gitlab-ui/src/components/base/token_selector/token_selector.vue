@@ -1,5 +1,5 @@
 <script>
-import { GlUniqueId } from '../../../utils/unique_id';
+import uniqueId from 'lodash/uniqueId';
 import { tokensValidator } from './helpers';
 import GlTokenContainer from './token_container.vue';
 import GlTokenSelectorDropdown from './token_selector_dropdown.vue';
@@ -252,7 +252,7 @@ export default {
   },
   created() {
     // Each instance must have a unique ID for proper ARIA relationships
-    this.uniqueId = `token-selector-${GlUniqueId()}`;
+    this.uniqueId = uniqueId('token-selector-');
   },
   methods: {
     handleFocus(event) {
