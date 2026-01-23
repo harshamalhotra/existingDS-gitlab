@@ -18,6 +18,8 @@ import DesignTokenDimension from './design_tokens_dimension.vue';
 import DesignTokenTypography from './design_token_typography.vue';
 import DesignTokenValue from './design_token_value.vue';
 
+const QUERY_PARAMETER = 'q';
+
 export default {
   name: 'DesignTokensTable',
   components: {
@@ -94,9 +96,31 @@ export default {
     },
   },
   watch: {
-    filter: 'resetCurrentPage',
+    filter(newValue) {
+      this.resetCurrentPage();
+      this.updateUrlQuery(newValue);
+    },
+  },
+  mounted() {
+    this.initializeFromUrl();
   },
   methods: {
+    initializeFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryParam = urlParams.get(QUERY_PARAMETER);
+      if (queryParam) {
+        this.filter = queryParam;
+      }
+    },
+    updateUrlQuery(searchTerm) {
+      const url = new URL(window.location);
+      if (searchTerm) {
+        url.searchParams.set(QUERY_PARAMETER, searchTerm);
+      } else {
+        url.searchParams.delete(QUERY_PARAMETER);
+      }
+      window.history.replaceState({}, '', url);
+    },
     isColor(type) {
       return type === 'color';
     },
