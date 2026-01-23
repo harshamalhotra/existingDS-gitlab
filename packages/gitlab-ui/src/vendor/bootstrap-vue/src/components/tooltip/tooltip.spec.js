@@ -552,7 +552,7 @@ describe('b-tooltip', () => {
     expect($tipHolder.emitted('disabled').length).toBe(3)
   })
 
-  it('closes/opens on instance events', async () => {
+  it('closes/opens on instance methods', async () => {
     wrapper = mount(App, {
       attachTo: document.body,
       propsData: {
@@ -592,7 +592,7 @@ describe('b-tooltip', () => {
     expect(tip.classList.contains('b-tooltip')).toBe(true)
 
     expect($tipHolder.emitted('hidden')).toBeFalsy()
-    $tipHolder.vm.$emit('close')
+    $tipHolder.vm.close()
 
     await ensureEventEmitted($tipHolder, 'hidden')
     expect($button.attributes('aria-describedby')).toBeUndefined()
@@ -601,8 +601,8 @@ describe('b-tooltip', () => {
     expect(document.body.contains(tip)).toBe(false)
     expect(document.getElementById(adb)).toBe(null)
 
-    // Show the tooltip by emitting event on instance
-    $tipHolder.vm.$emit('open')
+    // Show the tooltip by calling method on instance
+    $tipHolder.vm.open()
     await ensureEventEmitted($tipHolder, 'shown')
 
     // Tooltip element should be in the document

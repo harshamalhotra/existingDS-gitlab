@@ -6,21 +6,31 @@ import GlTooltip from './tooltip.vue';
 describe('GlTooltip', () => {
   let wrapper;
 
-  const createWrapper = () => {
+  const createWrapper = (stubs = {}) => {
     wrapper = shallowMount(GlTooltip, {
       propsData: {
         target: document.body,
       },
+      stubs,
     });
   };
 
   const findBVTooltip = () => wrapper.findComponent({ ref: 'bvTooltip' });
 
-  it.each(tooltipActionEvents)('passes through the %s event to the bvTooltip instance', (event) => {
-    createWrapper();
+  it.each(tooltipActionEvents)('passes through the %s event to call bvTooltip method', (event) => {
+    const methodMock = jest.fn();
+    createWrapper({
+      BTooltip: {
+        template: '<div></div>',
+        methods: {
+          [event]: methodMock,
+        },
+      },
+    });
+
     wrapper.vm.$emit(event);
 
-    expect(findBVTooltip().emitted(event)).toHaveLength(1);
+    expect(methodMock).toHaveBeenCalled();
   });
 
   it('respects custom default container', () => {
