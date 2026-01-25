@@ -69,7 +69,7 @@
     "echarts": "^5.6.0",
     "gridstack": "^12.4.2",
     "iframe-resizer": "^4.4.5",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "popper.js": "^1.16.1",
     "portal-vue": "2.1.7",
     "vue-functional-data-merge": "^3.1.0",
