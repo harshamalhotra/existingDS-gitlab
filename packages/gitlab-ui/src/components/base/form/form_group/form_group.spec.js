@@ -17,40 +17,19 @@ describe('Form group component', () => {
     });
   };
 
-  describe('provide', () => {
-    it('provides isInFormGroup as true to child components', () => {
-      createComponent();
+  it('provides isInFormGroup: true', () => {
+    const childComponent = {
+      inject: ['isInFormGroup'],
+      template: '<div>isInFormGroup: {{ isInFormGroup }}</div>',
+    };
 
-      const provideData =
-        typeof wrapper.vm.$options.provide === 'function'
-          ? wrapper.vm.$options.provide()
-          : wrapper.vm.$options.provide;
-
-      expect(provideData).toEqual({
-        isInFormGroup: true,
-      });
+    wrapper = mount(GlFormGroup, {
+      slots: {
+        default: childComponent,
+      },
     });
 
-    it('allows child components to inject isInFormGroup', () => {
-      const childComponent = {
-        inject: {
-          isInFormGroup: {
-            default: false,
-          },
-        },
-        template: '<div>{{ isInFormGroup }}</div>',
-      };
-
-      wrapper = mount(GlFormGroup, {
-        stubs: { BFormGroup },
-        slots: {
-          default: childComponent,
-        },
-      });
-
-      const injectedValue = wrapper.findComponent(childComponent).vm.isInFormGroup;
-      expect(injectedValue).toBe(true);
-    });
+    expect(wrapper.text()).toContain('isInFormGroup: true');
   });
 
   it.each`
