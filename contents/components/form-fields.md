@@ -44,7 +44,9 @@ Each value of `fields` prop is expected to be a `FieldDefinition`. See below for
 ```ts
 interface FieldDefinition<TValue> {
   // Label text to show for this field.
-  label: string;
+  // When explicitly set to null, the label is suppressed.
+  // When undefined or not provided, the field name is used as the label.
+  label?: string | null;
 
   // Collection of validator functions
   validators?: Array<(value: TValue) => string | undefined>;
@@ -58,8 +60,17 @@ interface FieldDefinition<TValue> {
 
   // Properties that are passed to the group wrapping this field.
   groupAttrs?: {};
+
+  // When true, renders the form group as a fieldset with legend instead of div with label.
+  fieldset?: boolean;
 }
 ```
+
+#### Label behavior
+
+- `label: "Custom Label"` - Renders the provided label
+- `label: null` - Suppresses the label (no label rendered)
+- `label: undefined` or not provided - Uses the field name as the label (default behavior)
 
 ### Slots
 

@@ -9,11 +9,16 @@ describe('Form group component', () => {
 
   const findLabelDescription = () => findByTestId('label-description');
   const findOptionalLabel = () => findByTestId('optional-label');
+  const findLabel = () => wrapper.find('label');
 
   const createComponent = (options) => {
     wrapper = shallowMount(GlFormGroup, {
       ...options,
       stubs: { BFormGroup },
+      attrs: {
+        label: 'Test label',
+        ...options?.attrs,
+      },
     });
   };
 
@@ -36,12 +41,52 @@ describe('Form group component', () => {
     },
   );
 
+  describe('label rendering', () => {
+    it('renders label element when $attrs.label is provided', () => {
+      createComponent({
+        attrs: { label: 'Test label from attrs', 'label-for': 'test-id' },
+      });
+
+      expect(findLabel().exists()).toBe(true);
+      expect(findLabel().text()).toContain('Test label from attrs');
+    });
+
+    it('renders label element when label slot is provided', () => {
+      createComponent({
+        slots: { label: 'Test label from slot' },
+        attrs: { 'label-for': 'test-id' },
+      });
+
+      expect(findLabel().exists()).toBe(true);
+      expect(findLabel().text()).toContain('Test label from slot');
+    });
+
+    it('renders label element when both $attrs.label and label slot are provided (slot takes precedence)', () => {
+      createComponent({
+        slots: { label: 'Label from slot' },
+        attrs: { label: 'Label from attrs', 'label-for': 'test-id' },
+      });
+
+      expect(findLabel().exists()).toBe(true);
+      expect(findLabel().text()).toContain('Label from slot');
+      expect(findLabel().text()).not.toContain('Label from attrs');
+    });
+
+    it('does not render label element when neither $attrs.label nor label slot is provided', () => {
+      createComponent();
+
+      expect(findLabel().exists()).toBe(false);
+    });
+  });
+
   describe('label-description slot', () => {
     const labelDescriptionFromPropOptions = {
       propsData: { labelDescription: 'label-description from props' },
+      attrs: { label: 'Test label' },
     };
     const labelDescriptionFromSlotOptions = {
       slots: { 'label-description': 'label-description from slots' },
+      attrs: { label: 'Test label' },
     };
 
     it.each`
@@ -102,6 +147,7 @@ describe('Form group component', () => {
           optional: true,
           optionalText,
         },
+        attrs: { label: 'Test label' },
       });
 
       expect(findOptionalLabel().text()).toBe(optionalText);

@@ -6,6 +6,7 @@ import GlAlert from '../../alert/alert.vue';
 import GlListbox from '../../new_dropdowns/listbox/listbox.vue';
 import GlIcon from '../../icon/icon.vue';
 import GlFormCheckbox from '../form_checkbox/form_checkbox.vue';
+import GlFormCheckboxGroup from '../form_checkbox/form_checkbox_group.vue';
 import { setStoryTimeout } from '../../../../utils/test_utils';
 import { getA11yParameters } from '../../../../utils/stories_utils';
 import GlFormFields from './form_fields.vue';
@@ -24,6 +25,7 @@ export const Default = (args, { argTypes = {} }) => ({
     GlAlert,
     GlIcon,
     GlFormCheckbox,
+    GlFormCheckboxGroup,
   },
   data() {
     return {
@@ -64,8 +66,19 @@ export const Default = (args, { argTypes = {} }) => ({
             'optional-text': '(optional)', // In GitLab.com translate this text with _('(optional)')
           },
         },
+        favoriteFood: {
+          label: 'Favorite Food',
+          fieldset: true,
+          groupAttrs: {
+            optional: true,
+            'optional-text': '(select all that apply)',
+          },
+          validators: [
+            (val) => (!val || val.length === 0 ? 'Please select at least one option' : ''),
+          ],
+        },
         acknowledge: {
-          label: 'I acknowledge that...',
+          label: null,
           validators: [(val) => (val === true ? '' : 'Acknowledge before submitting!')],
         },
       },
@@ -73,6 +86,11 @@ export const Default = (args, { argTypes = {} }) => ({
       testFormId: uniqueId('form_fields_story_'),
       serverValidations: {},
       loading: false,
+      foodOptions: [
+        { text: 'Burgers', value: 'Burgers' },
+        { text: 'Pizza', value: 'Pizza' },
+        { text: 'Sushi', value: 'Sushi' },
+      ],
     };
   },
   computed: {
@@ -142,6 +160,15 @@ export const Default = (args, { argTypes = {} }) => ({
           <template #group(favoriteItem)-label-description>
             Label description using <code>group(favoriteItem)-label-description</code> slot.
           </template>
+          <template #input(favoriteFood)="{ id, value, input, validation }">
+            <gl-form-checkbox-group
+              :id="id"
+              :options="foodOptions"
+              :checked="value || []"
+              :state="validation.state"
+              @input="input"
+            />
+          </template>
           <template #input(acknowledge)="{ id, input, validation, value }">
             <gl-form-checkbox
               :state="validation.state"
@@ -149,7 +176,7 @@ export const Default = (args, { argTypes = {} }) => ({
               :checked="value"
               @input="input"
             >
-              GlFormFields is awesome
+              I accept the terms and conditions
             </gl-form-checkbox>
           </template>
         </gl-form-fields>
