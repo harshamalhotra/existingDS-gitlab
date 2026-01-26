@@ -71,7 +71,7 @@ export default {
 </script>
 <template>
   <b-form-group v-bind="$attrs" class="gl-form-group" :label-class="actualLabelClass">
-    <template #label>
+    <template v-if="$attrs.label || $scopedSlots.label" #label>
       <slot name="label">
         {{ $attrs.label }}
         <span v-if="optional" class="optional-label" data-testid="optional-label">{{

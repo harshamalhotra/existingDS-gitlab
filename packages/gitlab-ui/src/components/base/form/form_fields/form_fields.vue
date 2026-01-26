@@ -27,11 +27,12 @@ export default {
      *
      * @typedef {object} FieldDefinition
      * @template TValue=string
-     * @property {string} label - Label text to show for this field.
+     * @property {string | null | undefined} label - Label text to show for this field. When explicitly set to null, the label is suppressed. When undefined or not provided, the field name is used as the label.
      * @property {undefined | Object} groupAttrs - Properties that are passed to the group wrapping this field.
      * @property {undefined | Object} inputAttrs - Properties that are passed to the actual input for this field.
      * @property {undefined | function(string): TValue} mapValue - Function that maps the inputted string value to the field's actual value (e.g. a Number).
      * @property {undefined | Array<function(TValue): string | undefined>=} validators - Collection of validator functions.
+     * @property {undefined | boolean} fieldset - When true, renders the form group as a fieldset with legend instead of div with label.
      *
      * @type {{ [key: string]: FieldDefinition }}
      */
@@ -140,7 +141,7 @@ export default {
         return {
           ...field,
           id,
-          label: field.label || fieldName,
+          label: this.getFieldLabel(field, fieldName),
           inputSlot,
           groupPassthroughSlots,
           afterSlotName,
@@ -178,6 +179,10 @@ export default {
       await this.$nextTick();
 
       return this.hasAllFieldsValid();
+    },
+    getFieldLabel(field, fieldName) {
+      if (field.label === null) return undefined;
+      return field.label || fieldName;
     },
     getMappedValue(fieldName, val) {
       const field = this.fields[fieldName];
@@ -271,7 +276,7 @@ export default {
         v-bind="field.groupAttrs"
         :key="field.id"
         :label="field.label"
-        :label-for="field.id"
+        :label-for="field.fieldset ? undefined : field.id"
         :invalid-feedback="fieldValidationProps[fieldName].invalidFeedback"
         :state="fieldValidationProps[fieldName].state"
       >

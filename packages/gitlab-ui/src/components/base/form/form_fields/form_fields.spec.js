@@ -30,6 +30,10 @@ const TEST_FIELDS = {
     mapValue: (x) => x?.toUpperCase(),
   },
   fieldWithCustomId: { label: 'Field with custom ID', id: 'custom-id' },
+  fieldset: {
+    label: 'Fieldset',
+    fieldset: true,
+  },
 };
 const TEST_VALUES = {
   username: 'root',
@@ -156,6 +160,17 @@ describe('GlFormFields', () => {
             value: '',
           },
         },
+        {
+          label: TEST_FIELDS.fieldset.label,
+          state: undefined,
+          invalidFeedback: '',
+          class: undefined,
+          input: {
+            value: '',
+            type: 'text',
+            id: expect.stringMatching(/gl-form-field-\d+/),
+          },
+        },
       ]);
     });
 
@@ -222,6 +237,10 @@ describe('GlFormFields', () => {
         },
         {
           label: TEST_FIELDS.fieldWithCustomId.label,
+          invalidFeedback: '',
+        },
+        {
+          label: TEST_FIELDS.fieldset.label,
           invalidFeedback: '',
         },
       ]);
@@ -303,6 +322,16 @@ describe('GlFormFields', () => {
             input: expect.objectContaining({
               value: '',
               id: 'custom-id',
+            }),
+          },
+          {
+            label: TEST_FIELDS.fieldset.label,
+            invalidFeedback: '',
+            state: undefined,
+            class: undefined,
+            input: expect.objectContaining({
+              value: '',
+              id: expect.stringMatching(/gl-form-field-\d+/),
             }),
           },
         ]);
@@ -544,6 +573,79 @@ describe('GlFormFields', () => {
     });
   });
 
+  describe('label prop', () => {
+    it('is null suppresses the label', () => {
+      createComponent(
+        {
+          fields: {
+            username: {
+              label: null,
+              validators: [formValidators.required('User name is required')],
+            },
+          },
+        },
+        {},
+        mount,
+      );
+
+      expect(wrapper.find('label').exists()).toBe(false);
+    });
+
+    it('is not provided falls back to field name', () => {
+      createComponent(
+        {
+          fields: {
+            username: {},
+          },
+        },
+        {},
+        mount,
+      );
+
+      expect(findFormGroupFromLabel('username').exists()).toBe(true);
+    });
+
+    it('is undefined falls back to field name', () => {
+      createComponent(
+        {
+          fields: { username: { label: undefined } },
+        },
+        {},
+        mount,
+      );
+
+      expect(findFormGroupFromLabel('username').exists()).toBe(true);
+    });
+
+    it('is a non-empty string', () => {
+      createComponent(
+        {
+          fields: {
+            username: {
+              label: 'Custom Username Label',
+            },
+          },
+        },
+        {},
+        mount,
+      );
+
+      expect(findFormGroupFromLabel('Custom Username Label').exists()).toBe(true);
+    });
+
+    it('is an empty string falls back to fieldName', () => {
+      createComponent(
+        {
+          fields: { username: { label: '' } },
+        },
+        {},
+        mount,
+      );
+
+      expect(findFormGroupFromLabel('username').exists()).toBe(true);
+    });
+  });
+
   describe('with after slot', () => {
     beforeEach(() => {
       createComponent(
@@ -638,6 +740,10 @@ describe('GlFormFields', () => {
             label: TEST_FIELDS.fieldWithCustomId.label,
             invalidFeedback: '',
           },
+          {
+            label: TEST_FIELDS.fieldset.label,
+            invalidFeedback: '',
+          },
         ]);
       });
     });
@@ -670,6 +776,10 @@ describe('GlFormFields', () => {
           },
           {
             label: TEST_FIELDS.fieldWithCustomId.label,
+            invalidFeedback: '',
+          },
+          {
+            label: TEST_FIELDS.fieldset.label,
             invalidFeedback: '',
           },
         ]);
@@ -715,6 +825,22 @@ describe('GlFormFields', () => {
         allCaps: 'BAR',
         fieldWithCustomId: 'baz',
       });
+    });
+  });
+
+  describe('with fieldset property', () => {
+    it('does not bind label-for prop on form group when fieldset is true', () => {
+      createComponent();
+      expect(
+        findFormGroupFromLabel(TEST_FIELDS.fieldset.label).attributes('label-for'),
+      ).toBeUndefined();
+    });
+
+    it('binds label-for prop on form group when fieldset is undefined', () => {
+      createComponent();
+      expect(findFormGroupFromLabel(TEST_FIELDS.username.label).attributes('label-for')).toMatch(
+        /gl-form-field-\d+/,
+      );
     });
   });
 });
