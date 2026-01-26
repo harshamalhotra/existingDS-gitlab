@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils';
+import { mount, shallowMount } from '@vue/test-utils';
 import { BFormGroup } from '../../../../vendor/bootstrap-vue/src/components/form-group/form-group';
 import GlFormGroup from './form_group.vue';
 
@@ -21,6 +21,21 @@ describe('Form group component', () => {
       },
     });
   };
+
+  it('provides isInFormGroup: true', () => {
+    const childComponent = {
+      inject: ['isInFormGroup'],
+      template: '<div>isInFormGroup: {{ isInFormGroup }}</div>',
+    };
+
+    wrapper = mount(GlFormGroup, {
+      slots: {
+        default: childComponent,
+      },
+    });
+
+    expect(wrapper.text()).toContain('isInFormGroup: true');
+  });
 
   it.each`
     labelClass                      | expectedProp

@@ -198,7 +198,7 @@ Optionally, you can use `no-caret` to remove the caret and `category="tertiary"`
 
 <template>
   <div style="min-height: 12rem;">
-    <gl-form-group label="Assignee" label-for="unique-id-form-1" id="unique-form-label-1">
+    <gl-form-group label="Assignee" label-for="unique-id-form-1">
       <gl-collapsible-listbox
         :items="items"
         toggle-id="unique-id-form-1"

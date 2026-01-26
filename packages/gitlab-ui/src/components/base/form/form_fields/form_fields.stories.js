@@ -155,7 +155,7 @@ export const Default = (args, { argTypes = {} }) => ({
             <button :id="id" @click="input(value + 1)" @blur="blur" type="button">{{value}}</button>
           </template>
           <template #input(favoriteItem)="{ id, value, input, blur }">
-            <gl-listbox :toggleId="id" :items="$options.ITEMS" :selected="value" :toggle-text="favoriteItemToggleText" @select="input" @hidden="blur" />
+            <gl-listbox :toggle-id="id" :items="$options.ITEMS" :selected="value" :toggle-text="favoriteItemToggleText" @select="input" @hidden="blur" />
           </template>
           <template #group(favoriteItem)-label-description>
             Label description using <code>group(favoriteItem)-label-description</code> slot.

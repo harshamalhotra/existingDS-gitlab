@@ -292,4 +292,42 @@ describe('GlCollapsibleListbox', () => {
       });
     },
   );
+
+  describe('Collapsible dropdown in form group', () => {
+    it(
+      'opens dropdown when form label is clicked',
+      // Real events are not supported on firefox
+      { browser: '!firefox' },
+      () => {
+        cy.visitStory('base/dropdown/collapsible-listbox', {
+          story: 'in-form-group',
+          args: {
+            startOpened: false,
+          },
+        });
+
+        dropdownMenu().should('not.be.visible');
+        cy.get('label[for="department-picker"]').realClick();
+        dropdownMenu().should('be.visible');
+      },
+    );
+
+    it(
+      'opens searchable dropdown when form label is clicked',
+      // Real events are not supported on firefox
+      { browser: '!firefox' },
+      () => {
+        cy.visitStory('base/dropdown/collapsible-listbox', {
+          story: 'in-form-group-searchable',
+          args: {
+            startOpened: false,
+          },
+        });
+
+        dropdownMenu().should('not.be.visible');
+        cy.get('label[for="department-picker"]').realClick();
+        dropdownMenu().should('be.visible');
+      },
+    );
+  });
 });

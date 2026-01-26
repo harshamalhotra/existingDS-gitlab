@@ -679,12 +679,10 @@ describe('base dropdown', () => {
     it('should have an aria-expanded attribute', async () => {
       buildWrapper();
       const toggleButton = findDefaultDropdownToggle();
-      expect(toggleButton.attributes('aria-expanded')).toBeDefined();
       expect(toggleButton.attributes('aria-expanded')).toBe('false');
 
       await toggleButton.trigger('click');
 
-      expect(toggleButton.attributes('aria-expanded')).toBeDefined();
       expect(toggleButton.attributes('aria-expanded')).toBe('true');
     });
 
@@ -692,7 +690,6 @@ describe('base dropdown', () => {
       buildWrapper();
       const toggleButton = findDefaultDropdownToggle();
 
-      expect(toggleButton.attributes('aria-controls')).toBeDefined();
       expect(toggleButton.attributes('aria-controls')).toBe('base-dropdown-1');
     });
 
@@ -704,7 +701,6 @@ describe('base dropdown', () => {
 
       await toggleButton.trigger('click');
 
-      expect(toggleButton.attributes('aria-haspopup')).toBeDefined();
       expect(toggleButton.attributes('aria-haspopup')).toBe('listbox');
     });
 
