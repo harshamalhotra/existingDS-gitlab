@@ -1,5 +1,20 @@
 # @gitlab/ui
 
+## 128.3.0
+
+### Minor Changes
+
+- 200e65c: `GlFormFields` can now render a fieldsets.
+  - Add `fieldset` property to `fields` prop in `GlFormFields` as a
+    condition for `label-for` binding on `GlFormGroup`.
+  - Update `GlFormFields` logic to only include label when `field.label`
+    is provided
+
+### Patch Changes
+
+- 200e65c: `GlFormGroup` no longer renders a `label` or `legend` element if there's
+  no `label` prop or slot.
+
 ## 128.2.3
 
 ### Patch Changes
