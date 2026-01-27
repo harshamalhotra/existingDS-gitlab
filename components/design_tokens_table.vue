@@ -106,6 +106,7 @@ export default {
   },
   methods: {
     initializeFromUrl() {
+      if (typeof window === 'undefined') return;
       const urlParams = new URLSearchParams(window.location.search);
       const queryParam = urlParams.get(QUERY_PARAMETER);
       if (queryParam) {
@@ -113,6 +114,7 @@ export default {
       }
     },
     updateUrlQuery(searchTerm) {
+      if (typeof window === 'undefined') return;
       const url = new URL(window.location);
       if (searchTerm) {
         url.searchParams.set(QUERY_PARAMETER, searchTerm);
