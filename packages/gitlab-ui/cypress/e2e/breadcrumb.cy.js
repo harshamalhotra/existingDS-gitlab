@@ -18,13 +18,17 @@ describe('GlBreadcrumb', () => {
   describe('on a small screen', () => {
     beforeEach(() => {
       cy.viewport(300, 600);
-      cy.visitStory('base/breadcrumb');
+      cy.visitStory('base/breadcrumb', {
+        story: 'collapsed-items',
+      });
     });
 
     it('moves overflowing breadcrumbs into a dropdown', () => {
-      cy.contains('Fourth item').should('be.visible');
+      cy.contains('Eighth item with a really long text to make it even longer').should(
+        'be.visible',
+      );
       cy.contains('First item').should('not.be.visible');
-      cy.get('[data-testid="base-dropdown-toggle"]').click();
+      cy.get('[data-testid="base-dropdown-toggle"]:first').click();
       cy.contains('First item').should('be.visible');
     });
   });

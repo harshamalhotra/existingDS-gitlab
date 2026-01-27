@@ -53,17 +53,29 @@ describe('Breadcrumb component', () => {
     });
   };
 
+  const mockOffsetWidth = (element, widthInPx) => {
+    Object.defineProperty(element, 'offsetWidth', {
+      get: () => widthInPx,
+    });
+  };
+
   const mockWideWrapperWidth = () => {
     mockElementWidth(wrapper.element, 1000);
   };
 
   const mockSmallWrapperWidth = () => {
-    mockElementWidth(wrapper.element, 1);
+    mockElementWidth(wrapper.element, 100);
   };
 
   const mockItemsWidths = () => {
     findBreadcrumbItems().wrappers.forEach((item) => {
       mockElementWidth(item.element, 100);
+    });
+  };
+
+  const mockLeftMargin = () => {
+    jest.spyOn(window, 'getComputedStyle').mockReturnValue({
+      marginLeft: '8px',
     });
   };
 
@@ -298,6 +310,17 @@ describe('Breadcrumb component', () => {
           const overflowingItems = wrapper.findAllComponents(GlDisclosureDropdownItem).length;
           expect(fittingItems + overflowingItems).toEqual(items.length);
         });
+
+        it('sets max-width of the last item using CSS variable', async () => {
+          const lastVisibleItem = findVisibleBreadcrumbItems().at(-1);
+          expect(lastVisibleItem.classes()).toContain('gl-breadcrumb-only-item');
+
+          // The CSS variable is set on the parent breadcrumb component
+          const cssVariable = wrapper.element.style.getPropertyValue(
+            '--gl-breadcrumb-truncated-item-max-width',
+          );
+          expect(cssVariable.length).not.toBe(0);
+        });
       },
     );
   });
@@ -375,31 +398,31 @@ describe('Breadcrumb component', () => {
         expect(wrapper.vm.clipboardButtonWidth).toBe(0);
       });
 
-      it('measures clipboard button width on mount when shown', () => {
+      it('measures clipboard button width including margin on mount when shown', () => {
         createComponent({ items, showClipboardButton: true });
 
         const clipboardButtonElement = wrapper.vm.$refs.clipboardButton.$el;
-        mockElementWidth(clipboardButtonElement, 30);
+        mockOffsetWidth(clipboardButtonElement, 30);
+        mockLeftMargin();
 
-        wrapper.vm.clipboardButtonWidth = wrapper.vm.showClipboardButton
-          ? wrapper.vm.$refs.clipboardButton.$el.clientWidth
-          : 0;
+        wrapper.vm.updateClipboardButtonWidth();
 
-        expect(wrapper.vm.clipboardButtonWidth).toBe(30);
+        expect(wrapper.vm.clipboardButtonWidth).toBe(38); // 30px width + 8px margin
       });
 
       it('includes clipboard button width in total breadcrumbs width calculation', async () => {
         createComponent({ items, showClipboardButton: true });
 
         const clipboardButtonElement = wrapper.vm.$refs.clipboardButton.$el;
-        mockElementWidth(clipboardButtonElement, 30);
-        wrapper.vm.clipboardButtonWidth = 30;
+        mockOffsetWidth(clipboardButtonElement, 30);
+        mockLeftMargin();
 
+        wrapper.vm.updateClipboardButtonWidth();
         mockItemsWidths();
         await wrapper.vm.measureAndMakeBreadcrumbsFit();
 
-        // Total should be: (3 items * 100px) + 30px clipboard button width = 330px
-        expect(wrapper.vm.totalBreadcrumbsWidth).toBe(330);
+        // Total should be: (3 items * 100px) + 38px clipboard button width (30px + 8px margin) = 338px
+        expect(wrapper.vm.totalBreadcrumbsWidth).toBe(338);
       });
     });
   });

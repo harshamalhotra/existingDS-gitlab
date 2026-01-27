@@ -60,8 +60,10 @@ $breadcrumb-max-width: $grid-size * 16;
 
 .gl-breadcrumb-item-md {
   @apply gl-text-base;
+}
 
-  /**
+.gl-breadcrumb-item {
+/**
    * If the last/only item, which is always visible, has a very long title,
    * it could overflow the breadcrumb component. This CSS makes sure it
    * shows an ellipsis instead.
@@ -69,7 +71,8 @@ $breadcrumb-max-width: $grid-size * 16;
    * would then not take the real unshrunk width of that item into account.
    */
   &.gl-breadcrumb-only-item {
-    @apply gl-max-w-full gl-shrink;
+    @apply gl-shrink;
+    max-width: var(--gl-breadcrumb-truncated-item-max-width, 100%);
 
     a {
       @apply gl-max-w-full gl-overflow-hidden gl-text-ellipsis gl-text-nowrap;
