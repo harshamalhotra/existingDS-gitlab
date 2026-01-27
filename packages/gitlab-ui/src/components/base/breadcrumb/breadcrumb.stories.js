@@ -33,6 +33,16 @@ const collapsedTemplate = `
         :auto-resize="autoResize"
         :size="size"
     />
+
+    <gl-breadcrumb
+        class="gl-mt-4"
+        aria-label="Breadcrumbs with copy path button"
+        :items="items"
+        :auto-resize="autoResize"
+        :size="size"
+        :show-clipboard-button="true"
+        clipboardTooltipText="Copy path"
+    />
   </div>
 `;
 
@@ -123,7 +133,7 @@ const extraItems = [
     href: '#',
   },
   {
-    text: 'Eighth item',
+    text: 'Eighth item with a really long text to make it even longer',
     href: '#',
   },
 ];

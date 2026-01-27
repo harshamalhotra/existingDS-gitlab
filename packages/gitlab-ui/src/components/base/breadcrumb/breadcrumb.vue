@@ -151,14 +151,22 @@ export default {
     } else {
       this.resizeDone = true;
     }
-    this.clipboardButtonWidth = this.showClipboardButton
-      ? this.$refs.clipboardButton.$el.clientWidth
-      : 0;
+    this.updateClipboardButtonWidth();
   },
   beforeDestroy() {
     this.disableAutoResize();
   },
   methods: {
+    updateClipboardButtonWidth() {
+      if (!this.showClipboardButton) {
+        this.clipboardButtonWidth = 0;
+        return;
+      }
+
+      const element = this.$refs.clipboardButton.$el;
+      const marginLeft = parseInt(getComputedStyle(element).marginLeft, 10);
+      this.clipboardButtonWidth = element.offsetWidth + marginLeft;
+    },
     resetItems() {
       this.fittingItems = [...this.items];
       this.overflowingItems = [];
@@ -213,6 +221,15 @@ export default {
           if (widthNeeded + this.dropdownWidth < containerWidth) break;
         }
       }
+
+      const truncatedItemMaxWidth = Math.max(
+        0,
+        containerWidth - (this.dropdownWidth + this.clipboardButtonWidth),
+      );
+      this.$el.style.setProperty(
+        '--gl-breadcrumb-truncated-item-max-width',
+        `${truncatedItemMaxWidth}px`,
+      );
 
       this.resizeDone = true;
     },
