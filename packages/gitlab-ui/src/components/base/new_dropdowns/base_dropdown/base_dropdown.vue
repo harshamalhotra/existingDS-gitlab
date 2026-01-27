@@ -55,6 +55,11 @@ export default {
     GlIcon,
   },
   directives: { Outside: OutsideDirective },
+  inject: {
+    formGroupLabelState: {
+      default: null,
+    },
+  },
   props: {
     toggleText: {
       type: String,
@@ -303,15 +308,30 @@ export default {
         if (this.ariaLabelledby) {
           return `${this.ariaLabelledby} ${this.toggleId}`;
         }
+
         // Toggle combobox with external label and not searchable
-        // if (this.isToggleCombobox && this.isToggleLabelledExternally && !this.hasSearchableListbox) {
-        // return `${this.passedLabelId} ${this.toggleId}`;
-        // }
+        if (this.formGroupLabelState && this.formGroupLabelState.id) {
+          return `${this.formGroupLabelState.id} ${this.toggleId}`;
+        }
+
+        return this.toggleId;
+      }
+
+      if (!this.isToggleCombobox) {
+        if (this.ariaLabelledby) {
+          return `${this.ariaLabelledby} ${this.toggleId}`;
+        }
+
+        // Toggle combobox with external label and not searchable
+        if (this.formGroupLabelState && this.formGroupLabelState.id) {
+          return `${this.formGroupLabelState.id} ${this.toggleId}`;
+        }
+
         return this.toggleId;
       }
 
       // For non-combobox toggles, combine IDs or use the button's own text
-      return this.ariaLabelledby ? `${this.ariaLabelledby} ${this.toggleId}` : undefined;
+      return undefined;
     },
     toggleRole() {
       if (this.isToggleCombobox) {
