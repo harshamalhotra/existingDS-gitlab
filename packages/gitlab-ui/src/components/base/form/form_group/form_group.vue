@@ -79,11 +79,11 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      // BFormGroup stores the generated ID in its safeId() method
+      // BFormGroup stores the generated ID in its safeId computed property
       // Access it via the component's internal state
-      const labelId = this.$refs.bFormGroup?.safeId('_BV_label_');
-      if (labelId) {
-        this.formGroupLabelState.id = labelId;
+      const bFormGroup = this.$refs?.bFormGroup;
+      if (bFormGroup && bFormGroup.safeId) {
+        this.formGroupLabelState.id = bFormGroup.safeId;
       }
     });
   },
