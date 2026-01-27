@@ -56,6 +56,9 @@ export default {
   },
   directives: { Outside: OutsideDirective },
   inject: {
+    isInFormGroup: {
+      default: false,
+    },
     formGroupLabelState: {
       default: null,
     },
@@ -303,34 +306,40 @@ export default {
     toggleButtonTextClasses() {
       return this.block ? 'gl-w-full' : '';
     },
-    toggleLabelledBy() { // Sets the aria-labelledby property with one or more ID strings
+    // Set the aria-labelledby property with one or more ID strings
+    toggleLabelledBy() {
       if (this.isToggleCombobox) {
+        // Comboboxes announce label and self value when aria-labelledby is label ID.
+        // Tested with VoiceOver, NVDA, JAWS, Narrator and preferred browsers.
         if (this.ariaLabelledby) {
-          return `${this.ariaLabelledby} ${this.toggleId}`;
+          return `${this.ariaLabelledby}`;
         }
 
-        // Toggle combobox with external label and not searchable
-        if (this.formGroupLabelState && this.formGroupLabelState.id) {
+        // Combobox inside `<gl-form-group>`
+        if (this.isInFormGroup && this.formGroupLabelState.id) {
           return `${this.formGroupLabelState.id} ${this.toggleId}`;
         }
 
+        // Fallback calculated toggleId value
         return this.toggleId;
       }
 
       if (!this.isToggleCombobox) {
+        // Disclosures or buttons with listbox require both IDs to announce correctly.
+        // Tested with VoiceOver, NVDA, JAWS, Narrator and preferred browsers.
         if (this.ariaLabelledby) {
           return `${this.ariaLabelledby} ${this.toggleId}`;
         }
 
-        // Toggle combobox with external label and not searchable
-        if (this.formGroupLabelState && this.formGroupLabelState.id) {
+        // Disclosure or button with listbox inside `<gl-form-group>`
+        if (this.isInFormGroup && this.formGroupLabelState.id) {
           return `${this.formGroupLabelState.id} ${this.toggleId}`;
         }
 
+        // Fallback calculated toggleId value
         return this.toggleId;
       }
 
-      // For non-combobox toggles, combine IDs or use the button's own text
       return undefined;
     },
     toggleRole() {

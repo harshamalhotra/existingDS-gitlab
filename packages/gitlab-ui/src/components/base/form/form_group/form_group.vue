@@ -90,7 +90,12 @@ export default {
 };
 </script>
 <template>
-  <b-form-group v-bind="$attrs" ref="bFormGroup" class="gl-form-group" :label-class="actualLabelClass">
+  <b-form-group
+    v-bind="$attrs"
+    ref="bFormGroup"
+    class="gl-form-group"
+    :label-class="actualLabelClass"
+  >
     <template v-if="$attrs.label || $scopedSlots.label" #label>
       <slot name="label">
         {{ $attrs.label }}

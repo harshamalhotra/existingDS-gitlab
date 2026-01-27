@@ -728,18 +728,135 @@ describe('base dropdown', () => {
   });
 
   describe('aria-labelledby', () => {
-    it('applies custom aria-labelledby', () => {
-      buildWrapper({ ariaLabelledby: 'label' });
-      expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
-        'label dropdown-toggle-btn-1',
-      );
+    describe('combobox toggle', () => {
+      it('applies custom aria-labelledby without toggleId for combobox', () => {
+        buildWrapper({
+          ariaLabelledby: 'label',
+          hasSearchableListbox: false,
+          isDisclosure: false,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe('label');
+      });
+
+      it('applies default aria-labelledby with toggleId for combobox', () => {
+        buildWrapper({
+          hasSearchableListbox: false,
+          isDisclosure: false,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'dropdown-toggle-btn-1',
+        );
+      });
+
+      it('applies form group label and toggleId for combobox inside form group', () => {
+        buildWrapper(
+          {
+            hasSearchableListbox: false,
+            isDisclosure: false,
+          },
+          {
+            provide: {
+              isInFormGroup: true,
+              formGroupLabelState: { id: 'form-group-label' },
+            },
+          },
+        );
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'form-group-label dropdown-toggle-btn-1',
+        );
+      });
+
+      it('prefers custom aria-labelledby over form group label for combobox', () => {
+        buildWrapper(
+          {
+            ariaLabelledby: 'custom-label',
+            hasSearchableListbox: false,
+            isDisclosure: false,
+          },
+          {
+            provide: {
+              isInFormGroup: true,
+              formGroupLabelState: { id: 'form-group-label' },
+            },
+          },
+        );
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe('custom-label');
+      });
     });
 
-    it('applies default aria-labelledby', () => {
-      buildWrapper();
-      expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
-        'dropdown-toggle-btn-1',
-      );
+    describe('non-combobox toggle (disclosure or listbox)', () => {
+      it('applies custom aria-labelledby with toggleId for disclosure', () => {
+        buildWrapper({
+          ariaLabelledby: 'label',
+          isDisclosure: true,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'label dropdown-toggle-btn-1',
+        );
+      });
+
+      it('applies default aria-labelledby with toggleId for disclosure', () => {
+        buildWrapper({
+          isDisclosure: true,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'dropdown-toggle-btn-1',
+        );
+      });
+
+      it('applies form group label and toggleId for disclosure inside form group', () => {
+        buildWrapper(
+          {
+            isDisclosure: true,
+          },
+          {
+            provide: {
+              isInFormGroup: true,
+              formGroupLabelState: { id: 'form-group-label' },
+            },
+          },
+        );
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'form-group-label dropdown-toggle-btn-1',
+        );
+      });
+
+      it('prefers custom aria-labelledby over form group label for disclosure', () => {
+        buildWrapper(
+          {
+            ariaLabelledby: 'custom-label',
+            isDisclosure: true,
+          },
+          {
+            provide: {
+              isInFormGroup: true,
+              formGroupLabelState: { id: 'form-group-label' },
+            },
+          },
+        );
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'custom-label dropdown-toggle-btn-1',
+        );
+      });
+
+      it('applies custom aria-labelledby with toggleId for searchable listbox', () => {
+        buildWrapper({
+          ariaLabelledby: 'label',
+          hasSearchableListbox: true,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'label dropdown-toggle-btn-1',
+        );
+      });
+
+      it('applies default aria-labelledby with toggleId for searchable listbox', () => {
+        buildWrapper({
+          hasSearchableListbox: true,
+        });
+        expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
+          'dropdown-toggle-btn-1',
+        );
+      });
     });
   });
 
