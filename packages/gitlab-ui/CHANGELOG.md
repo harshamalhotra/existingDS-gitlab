@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.4.0
+
+### Minor Changes
+
+- 4492d45: GlBreadcrumb: truncate the last item if collapsing does not provide enough space
+
 ## 128.3.0
 
 ### Minor Changes
