@@ -316,7 +316,7 @@ export default {
         }
 
         // Combobox inside `<gl-form-group>`
-        if (this.isInFormGroup && this.formGroupLabelState.id) {
+        if (this.isInFormGroup && this.formGroupLabelState?.id) {
           return `${this.formGroupLabelState.id} ${this.toggleId}`;
         }
 
@@ -332,7 +332,7 @@ export default {
         }
 
         // Disclosure or button with listbox inside `<gl-form-group>`
-        if (this.isInFormGroup && this.formGroupLabelState.id) {
+        if (this.isInFormGroup && this.formGroupLabelState?.id) {
           return `${this.formGroupLabelState.id} ${this.toggleId}`;
         }
 
