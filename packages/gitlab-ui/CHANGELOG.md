@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.5.0
+
+### Minor Changes
+
+- ce08768: Make GlButton accessible while loading
+
 ## 128.4.0
 
 ### Minor Changes
