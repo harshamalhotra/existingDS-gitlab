@@ -17,6 +17,14 @@ export default {
   inheritAttrs: false,
   props: {
     /**
+     * The ID of the form group. Used to generate accessible IDs for the label.
+     */
+    id: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    /**
      * Additional CSS class(es) to apply to the label element.
      */
     labelClass: {
@@ -54,6 +62,7 @@ export default {
       formGroupLabelState: {
         id: null,
       },
+      localId: null,
     };
   },
   computed: {
@@ -76,14 +85,24 @@ export default {
       // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
       return Boolean(this.labelDescription || this.$slots['label-description']);
     },
+    computedId() {
+      // Use provided id or fall back to generated localId
+      return this.id || this.localId;
+    },
+    labelId() {
+      // Generate label ID the same way BFormGroup does: id + '_BV_label_'
+      return this.computedId ? `${this.computedId}__BV_label_` : null;
+    },
   },
   mounted() {
     this.$nextTick(() => {
-      // BFormGroup stores the generated ID in its safeId computed property
-      // Access it via the component's internal state
-      const bFormGroup = this.$refs?.bFormGroup;
-      if (bFormGroup && bFormGroup.safeId) {
-        this.formGroupLabelState.id = bFormGroup.safeId;
+      // Generate a local ID if none was provided
+      if (!this.id) {
+        this.localId = `__BVID__${this._uid}`; // eslint-disable-line no-underscore-dangle
+      }
+      // Update formGroupLabelState with the computed label ID
+      if (this.labelId) {
+        this.formGroupLabelState.id = this.labelId;
       }
     });
   },
@@ -92,6 +111,7 @@ export default {
 <template>
   <b-form-group
     v-bind="$attrs"
+    :id="computedId"
     ref="bFormGroup"
     class="gl-form-group"
     :label-class="actualLabelClass"
