@@ -13,6 +13,7 @@ const SKIP_URL_PATTERNS = [
   /\/storybook[/?]/, // Skip all Storybook URLs
   /\/svgs$/, // Skip /svgs path
   /\/tailwind-documentation$/, // Skip /tailwind-documentation path
+  /https:\/\/gitlab-org\.gitlab\.io\/duo-ui\//, // Skip duo-ui URLs
 ];
 
 async function checkLinks() {
