@@ -39,8 +39,6 @@ export const defaultConfig = {
   firstDayOfWeek: 0, // Defaults to 0 (Sunday)
 };
 
-export const glButtonConfig = {};
-
 let configured = false;
 
 /**
@@ -53,7 +51,7 @@ let configured = false;
  * @property {boolean} [accessibleLoadingButton] Temporary flag to enable accessible loading button.
  *
  */
-const setConfigs = ({ translations, firstDayOfWeek, accessibleLoadingButton = false } = {}) => {
+const setConfigs = ({ translations, firstDayOfWeek } = {}) => {
   if (configured) {
     if (process.env.NODE_ENV === 'development') {
       throw new Error('GitLab UI can only be configured once!');
@@ -93,23 +91,6 @@ const setConfigs = ({ translations, firstDayOfWeek, accessibleLoadingButton = fa
     }
 
     Object.assign(i18n, translations);
-  }
-
-  // Temporary flag to enable the accessible loading button feature.
-  // This flag allows the feature to be opt-in during the rollout phase,
-  // giving us the flexibility to test and validate its impact on user experience.
-
-  // The global variable `accessibleLoadingButton` is set to a boolean value
-  // to indicate whether the button should be disabled while loading.
-
-  // Future Plan:
-  // Once the accessible loading button feature is validated and stable,
-  // we will remove this temporary flag and make the feature the default behavior.
-  // At that point, there will be no need for opt-in or opt-out mechanisms for this feature.
-  if (typeof accessibleLoadingButton === 'boolean') {
-    Object.assign(glButtonConfig, {
-      accessibleLoadingButton,
-    });
   }
 };
 

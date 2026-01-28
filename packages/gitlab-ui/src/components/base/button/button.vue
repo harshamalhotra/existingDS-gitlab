@@ -13,7 +13,6 @@ import { isEvent } from '../../../vendor/bootstrap-vue/src/utils/inspect';
 import GlIcon from '../icon/icon.vue';
 import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import { ENTER, SPACE } from '../new_dropdowns/constants';
-import { glButtonConfig } from '../../../config';
 
 export default {
   name: 'GlButton',
@@ -81,14 +80,6 @@ export default {
       type: Boolean,
       required: false,
       default: false,
-    },
-    /**
-     * Keep the button accessible when `loading` is `true`.
-     */
-    accessibleLoading: {
-      type: Boolean,
-      required: false,
-      default: () => glButtonConfig.accessibleLoadingButton,
     },
     /**
      * CSS classes to add to the button text.
@@ -247,10 +238,10 @@ export default {
       return isSlotEmpty(this, 'default') && this.hasIcon && this.count == null;
     },
     isButtonDisabled() {
-      return this.disabled || this.loading;
+      return this.disabled;
     },
     isButtonAriaDisabled() {
-      return this.accessibleLoading && this.isButton && this.loading;
+      return this.isButton && this.loading;
     },
     buttonClasses() {
       const classes = ['btn', 'gl-button', `btn-${this.variant}`, `btn-${this.buttonSize}`];
@@ -316,7 +307,7 @@ export default {
         ...(this.isNonStandardTag ? { 'aria-disabled': String(this.disabled) } : {}),
         tabindex: this.tabindex,
         // We set the `aria-disabled` state for buttons while loading
-        ...(this.isButtonAriaDisabled ? { 'aria-disabled': 'true', disabled: null } : {}),
+        ...(this.isButtonAriaDisabled ? { 'aria-disabled': 'true' } : {}),
       };
 
       if (this.isLink) {
