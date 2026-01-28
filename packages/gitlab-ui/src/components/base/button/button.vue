@@ -237,9 +237,6 @@ export default {
     hasIconOnly() {
       return isSlotEmpty(this, 'default') && this.hasIcon && this.count == null;
     },
-    isButtonDisabled() {
-      return this.disabled;
-    },
     isButtonAriaDisabled() {
       return this.isButton && this.loading;
     },
@@ -300,7 +297,7 @@ export default {
         // Type only used for "real" buttons
         type: this.isButton ? this.type : null,
         // Disabled only set on "real" buttons
-        disabled: this.isButton ? this.isButtonDisabled : null,
+        disabled: this.isButton ? this.disabled : null,
         // We add a role of button when the tag is not a link or button or when link has `href` of `#`
         role: this.isNonStandardTag || this.isHashLink ? 'button' : this.$attrs?.role,
         // We set the `aria-disabled` state for non-standard tags
