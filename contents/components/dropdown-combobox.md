@@ -75,13 +75,19 @@ A [button](/components/button) that triggers a combobox comes in a few variants 
 ### Size
 
 - **Trigger**: The [text input](/components/text-input) or [button](/components/button) width is determined by the properties available for each of those components.
-- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger and to keep panels consistent throughout the UI. The height of the panel is initially set to the height of its content (dynamic height) when less than the maximum, but can optionally be set to always use a fixed height. See [Fluid width](#fluid-width) for guidance on when to allow the panel to resize based on content.
+- **Panel**: Has a minimum and maximum width and a maximum height to keep content near the trigger and to keep panels consistent throughout the UI. The height of the panel is initially set to the height of its content (dynamic height) when less than the maximum, but can optionally be set to always use a fixed height. See [fluid width](#fluid-width) and [match trigger width](#match-trigger-width) for guidance on when to allow the panel width to resize based on content.
 
 #### Fluid width
 
 The `fluid-width` prop is useful for a dropdown with variable-length content like usernames, file paths, or user-generated text.
 
 Use it when avoiding truncation is more important than maintaining consistent widths across multiple dropdown components.
+
+#### Match trigger width
+
+The `panelMatchTriggerWidth` prop makes the dropdown panel match the width of its trigger element. This can be useful in focused flows like registration forms, wizards, or full-screen experiences where form fields are large (400-500px) and multiple dropdowns appear in close proximity.
+
+Use it in the rare occasions when visual consistency between the trigger and panel is critical. Avoid using it in constrained spaces, alongside other dropdown size variants, or for secondary UI controls like filters and sort dropdowns.
 
 ### Behavior
 
