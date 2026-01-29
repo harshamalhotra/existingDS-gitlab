@@ -347,6 +347,14 @@ export default {
       default: false,
     },
     /**
+     * Allows the dropdown panel to match the width of the trigger element
+     */
+    panelMatchTriggerWidth: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    /**
      * Strategy to be applied by computePosition. If the dropdown's container is too short for it to
      * fit in, setting this to fixed will let it position itself above its container.
      * https://floating-ui.com/docs/computePosition#strategy
@@ -980,6 +988,7 @@ export default {
     :placement="placement"
     :offset="dropdownOffset"
     :fluid-width="fluidWidth"
+    :panel-match-trigger-width="panelMatchTriggerWidth"
     :positioning-strategy="positioningStrategy"
     @[$options.events.GL_DROPDOWN_FOCUS_CONTENT]="onFocusContent"
     @[$options.events.GL_DROPDOWN_SHOWN]="onShow"

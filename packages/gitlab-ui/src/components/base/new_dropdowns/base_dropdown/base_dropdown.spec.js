@@ -1,6 +1,14 @@
 import { mount } from '@vue/test-utils';
 import { nextTick } from 'vue';
-import { computePosition, autoUpdate, offset, autoPlacement, shift } from '@floating-ui/dom';
+import {
+  computePosition,
+  autoUpdate,
+  offset,
+  autoPlacement,
+  shift,
+  arrow,
+  size,
+} from '@floating-ui/dom';
 import {
   ARROW_DOWN,
   GL_DROPDOWN_FOCUS_CONTENT,
@@ -10,14 +18,19 @@ import {
   GL_DROPDOWN_CONTENTS_CLASS,
 } from '../constants';
 import { waitForAnimationFrame } from '../../../../utils/test_utils';
-import { DEFAULT_OFFSET, FIXED_WIDTH_CLASS } from './constants';
+import { FIXED_WIDTH_CLASS } from './constants';
 import GlBaseDropdown from './base_dropdown.vue';
 
 jest.mock('@floating-ui/dom');
 const mockStopAutoUpdate = jest.fn();
-offset.mockImplementation((offsetOpts = {}) => ({ offsetOpts }));
-autoPlacement.mockImplementation((autoPlacementOpts = {}) => ({ autoPlacementOpts }));
-shift.mockImplementation((shiftOpts = {}) => ({ shiftOpts }));
+offset.mockImplementation((offsetOpts = {}) => ({ name: 'offset', offsetOpts }));
+autoPlacement.mockImplementation((autoPlacementOpts = {}) => ({
+  name: 'autoPlacement',
+  autoPlacementOpts,
+}));
+shift.mockImplementation((shiftOpts = {}) => ({ name: 'shift', shiftOpts }));
+arrow.mockImplementation((arrowOpts = {}) => ({ name: 'arrow', arrowOpts }));
+size.mockImplementation((sizeOpts = {}) => ({ name: 'size', fn: sizeOpts.apply }));
 
 const DEFAULT_BTN_TOGGLE_CLASSES = [
   'btn',
@@ -116,88 +129,83 @@ describe('base dropdown', () => {
         buildWrapper();
         await findDefaultDropdownToggle().trigger('click');
 
-        expect(computePosition).toHaveBeenCalledWith(
-          findDefaultDropdownToggle().element,
-          findDropdownMenu().element,
-          {
-            placement: 'bottom-start',
-            strategy: 'absolute',
-            middleware: [
-              offset({ mainAxis: DEFAULT_OFFSET }),
-              autoPlacement({
-                alignment: 'start',
-                allowedPlacements: ['bottom-start', 'top-start', 'bottom-end', 'top-end'],
-              }),
-              shift(),
-            ],
-          },
-        );
+        const [referenceElement, floatingElement, config] = computePosition.mock.calls[0];
+        expect(referenceElement).toBe(findDefaultDropdownToggle().element);
+        expect(floatingElement).toBe(findDropdownMenu().element);
+        expect(config.placement).toBe('bottom-start');
+        expect(config.strategy).toBe('absolute');
+        expect(config.middleware).toHaveLength(5);
+        expect(config.middleware[0].name).toBe('offset');
+        expect(config.middleware[1].name).toBe('autoPlacement');
+        expect(config.middleware[1].autoPlacementOpts.alignment).toBe('start');
+        expect(config.middleware[1].autoPlacementOpts.allowedPlacements).toEqual([
+          'bottom-start',
+          'top-start',
+          'bottom-end',
+          'top-end',
+        ]);
+        expect(config.middleware[2].name).toBe('shift');
       });
 
       it('initializes Floating UI with reference and floating elements and config for center-aligned menu', async () => {
         buildWrapper({ placement: 'center' });
         await findDefaultDropdownToggle().trigger('click');
 
-        expect(computePosition).toHaveBeenCalledWith(
-          findDefaultDropdownToggle().element,
-          findDropdownMenu().element,
-          {
-            placement: 'bottom',
-            strategy: 'absolute',
-            middleware: [
-              offset({ mainAxis: DEFAULT_OFFSET }),
-              autoPlacement({
-                alignment: undefined,
-                allowedPlacements: ['bottom', 'top'],
-              }),
-              shift(),
-            ],
-          },
-        );
+        const [referenceElement, floatingElement, config] = computePosition.mock.calls[0];
+        expect(referenceElement).toBe(findDefaultDropdownToggle().element);
+        expect(floatingElement).toBe(findDropdownMenu().element);
+        expect(config.placement).toBe('bottom');
+        expect(config.strategy).toBe('absolute');
+        expect(config.middleware).toHaveLength(5);
+        expect(config.middleware[0].name).toBe('offset');
+        expect(config.middleware[1].name).toBe('autoPlacement');
+        expect(config.middleware[1].autoPlacementOpts.alignment).toBeUndefined();
+        expect(config.middleware[1].autoPlacementOpts.allowedPlacements).toEqual(['bottom', 'top']);
+        expect(config.middleware[2].name).toBe('shift');
       });
 
       it('initializes Floating UI with reference and floating elements and config for right-aligned menu', async () => {
         buildWrapper({ placement: 'right' });
         await findDefaultDropdownToggle().trigger('click');
 
-        expect(computePosition).toHaveBeenCalledWith(
-          findDefaultDropdownToggle().element,
-          findDropdownMenu().element,
-          {
-            placement: 'bottom-end',
-            strategy: 'absolute',
-            middleware: [
-              offset({ mainAxis: DEFAULT_OFFSET }),
-              autoPlacement({
-                alignment: 'end',
-                allowedPlacements: ['bottom-start', 'top-start', 'bottom-end', 'top-end'],
-              }),
-              shift(),
-            ],
-          },
-        );
+        const [referenceElement, floatingElement, config] = computePosition.mock.calls[0];
+        expect(referenceElement).toBe(findDefaultDropdownToggle().element);
+        expect(floatingElement).toBe(findDropdownMenu().element);
+        expect(config.placement).toBe('bottom-end');
+        expect(config.strategy).toBe('absolute');
+        expect(config.middleware).toHaveLength(5);
+        expect(config.middleware[0].name).toBe('offset');
+        expect(config.middleware[1].name).toBe('autoPlacement');
+        expect(config.middleware[1].autoPlacementOpts.alignment).toBe('end');
+        expect(config.middleware[1].autoPlacementOpts.allowedPlacements).toEqual([
+          'bottom-start',
+          'top-start',
+          'bottom-end',
+          'top-end',
+        ]);
+        expect(config.middleware[2].name).toBe('shift');
       });
 
       it('initializes Floating UI with reference and floating elements and config for `right-start` aligned menu', async () => {
         buildWrapper({ placement: 'right-start' });
         await findDefaultDropdownToggle().trigger('click');
 
-        expect(computePosition).toHaveBeenCalledWith(
-          findDefaultDropdownToggle().element,
-          findDropdownMenu().element,
-          {
-            placement: 'right-start',
-            strategy: 'absolute',
-            middleware: [
-              offset({ mainAxis: DEFAULT_OFFSET }),
-              autoPlacement({
-                alignment: 'start',
-                allowedPlacements: ['right-start', 'right-end', 'left-start', 'left-end'],
-              }),
-              shift(),
-            ],
-          },
-        );
+        const [referenceElement, floatingElement, config] = computePosition.mock.calls[0];
+        expect(referenceElement).toBe(findDefaultDropdownToggle().element);
+        expect(floatingElement).toBe(findDropdownMenu().element);
+        expect(config.placement).toBe('right-start');
+        expect(config.strategy).toBe('absolute');
+        expect(config.middleware).toHaveLength(5);
+        expect(config.middleware[0].name).toBe('offset');
+        expect(config.middleware[1].name).toBe('autoPlacement');
+        expect(config.middleware[1].autoPlacementOpts.alignment).toBe('start');
+        expect(config.middleware[1].autoPlacementOpts.allowedPlacements).toEqual([
+          'right-start',
+          'right-end',
+          'left-start',
+          'left-end',
+        ]);
+        expect(config.middleware[2].name).toBe('shift');
       });
 
       it("passes custom offset to Floating UI's middleware", async () => {
@@ -208,15 +216,16 @@ describe('base dropdown', () => {
         });
         await findDefaultDropdownToggle().trigger('click');
 
-        expect(computePosition).toHaveBeenCalledWith(
-          findDefaultDropdownToggle().element,
-          findDropdownMenu().element,
-          {
-            placement: 'bottom-end',
-            strategy: 'absolute',
-            middleware: [offset(customOffset), autoPlacement(expect.any(Object)), shift()],
-          },
-        );
+        const [referenceElement, floatingElement, config] = computePosition.mock.calls[0];
+        expect(referenceElement).toBe(findDefaultDropdownToggle().element);
+        expect(floatingElement).toBe(findDropdownMenu().element);
+        expect(config.placement).toBe('bottom-end');
+        expect(config.strategy).toBe('absolute');
+        expect(config.middleware).toHaveLength(5);
+        expect(config.middleware[0].name).toBe('offset');
+        expect(config.middleware[0].offsetOpts).toEqual(customOffset);
+        expect(config.middleware[1].name).toBe('autoPlacement');
+        expect(config.middleware[2].name).toBe('shift');
       });
 
       describe('positioningStrategy', () => {
@@ -631,6 +640,90 @@ describe('base dropdown', () => {
       buildWrapper({ fluidWidth: true });
 
       expect(findDropdownMenu().classes()).not.toContain(FIXED_WIDTH_CLASS);
+    });
+  });
+
+  describe('panel match trigger width', () => {
+    beforeEach(() => {
+      autoUpdate.mockImplementation(jest.requireActual('@floating-ui/dom').autoUpdate);
+      computePosition.mockImplementation((_, __, options) => {
+        return Promise.resolve({
+          x: 0,
+          y: 0,
+          placement: options.placement,
+          strategy: options.strategy,
+          middlewareData: {},
+        });
+      });
+    });
+
+    it('panel does not match trigger width by default', async () => {
+      buildWrapper();
+      await findDefaultDropdownToggle().trigger('click');
+      await nextTick();
+
+      const sizeMiddleware = computePosition.mock.calls[0][2].middleware.find(
+        (m) => m.name === 'size',
+      );
+      expect(sizeMiddleware).toBeDefined();
+
+      const mockContentsEl = document.createElement('div');
+      const mockElements = {
+        floating: {
+          querySelector: jest.fn().mockReturnValue(mockContentsEl),
+        },
+      };
+
+      // Mock the toggleElement's getBoundingClientRect
+      const toggleElement = findDefaultDropdownToggle().element;
+      const originalGetBoundingClientRect = toggleElement.getBoundingClientRect;
+      toggleElement.getBoundingClientRect = jest.fn().mockReturnValue({ width: 200 });
+
+      sizeMiddleware.fn({
+        availableWidth: 500,
+        availableHeight: 400,
+        elements: mockElements,
+      });
+
+      // Restore original method
+      toggleElement.getBoundingClientRect = originalGetBoundingClientRect;
+
+      expect(mockContentsEl.style.width).toBe('');
+      expect(mockContentsEl.style.minWidth).toBe('');
+    });
+
+    it('panel matches trigger width when prop is true', async () => {
+      buildWrapper({ panelMatchTriggerWidth: true });
+      await findDefaultDropdownToggle().trigger('click');
+      await nextTick();
+
+      const sizeMiddleware = computePosition.mock.calls[0][2].middleware.find(
+        (m) => m.name === 'size',
+      );
+      expect(sizeMiddleware).toBeDefined();
+
+      const mockContentsEl = document.createElement('div');
+      const mockElements = {
+        floating: {
+          querySelector: jest.fn().mockReturnValue(mockContentsEl),
+        },
+      };
+
+      // Mock the toggleElement's getBoundingClientRect
+      const toggleElement = findDefaultDropdownToggle().element;
+      const originalGetBoundingClientRect = toggleElement.getBoundingClientRect;
+      toggleElement.getBoundingClientRect = jest.fn().mockReturnValue({ width: 200 });
+
+      sizeMiddleware.fn({
+        availableWidth: 500,
+        availableHeight: 400,
+        elements: mockElements,
+      });
+
+      // Restore original method
+      toggleElement.getBoundingClientRect = originalGetBoundingClientRect;
+
+      expect(mockContentsEl.style.minWidth).toBe('200px');
     });
   });
 

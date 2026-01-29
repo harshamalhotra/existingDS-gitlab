@@ -64,6 +64,7 @@ const generateProps = ({
   showSelectAllButtonLabel = defaultValue('showSelectAllButtonLabel'),
   startOpened = true,
   fluidWidth,
+  panelMatchTriggerWidth = defaultValue('panelMatchTriggerWidth'),
   positioningStrategy,
   srOnlyResultsLabel,
   listboxId,
@@ -97,6 +98,7 @@ const generateProps = ({
   showSelectAllButtonLabel,
   startOpened,
   fluidWidth,
+  panelMatchTriggerWidth,
   positioningStrategy,
   srOnlyResultsLabel,
   listboxId,
@@ -132,6 +134,7 @@ const makeBindings = (overrides = {}) =>
     ':reset-button-label': 'resetButtonLabel',
     ':show-select-all-button-label': 'showSelectAllButtonLabel',
     ':fluid-width': 'fluidWidth',
+    ':panel-match-trigger-width': 'panelMatchTriggerWidth',
     ':positioning-strategy': 'positioningStrategy',
     ':startOpened': 'startOpened',
     ':sr-only-results-label': 'srOnlyResultsLabel',
@@ -542,6 +545,11 @@ export default {
       },
     },
     fluidWidth: {
+      table: {
+        subcategory: ARG_TYPE_SUBCATEGORY_LOOK_AND_FEEL,
+      },
+    },
+    panelMatchTriggerWidth: {
       table: {
         subcategory: ARG_TYPE_SUBCATEGORY_LOOK_AND_FEEL,
       },
@@ -988,3 +996,22 @@ InFormGroupSearchable.args = generateProps({
   toggleId: 'department-picker',
 });
 InFormGroupSearchable.decorators = [makeContainer({ height: LISTBOX_CONTAINER_HEIGHT })];
+
+export const PanelMatchTriggerWidth = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: {
+    GlCollapsibleListbox,
+  },
+  data() {
+    return {
+      selected: mockOptions[1].value,
+    };
+  },
+  template: template(),
+});
+PanelMatchTriggerWidth.args = generateProps({
+  toggleText: 'Panel matches trigger width',
+  block: true,
+  panelMatchTriggerWidth: true,
+});
+PanelMatchTriggerWidth.decorators = [makeContainer({ height: LISTBOX_CONTAINER_HEIGHT })];

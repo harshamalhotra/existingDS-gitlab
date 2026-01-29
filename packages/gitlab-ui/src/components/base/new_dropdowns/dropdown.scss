@@ -112,9 +112,12 @@
     @apply gl-drop-shadow-md;
     top: 0;
     left: 0;
+    z-index: 1000;
+  }
+
+  .gl-new-dropdown-panel-fluid-width {
     min-width: $gl-new-dropdown-min-width;
     max-width: $gl-new-dropdown-max-width;
-    z-index: 1000;
   }
 
   .gl-new-dropdown-inner {

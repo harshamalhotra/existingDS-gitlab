@@ -978,6 +978,20 @@ describe('GlCollapsibleListbox', () => {
     });
   });
 
+  describe('panelMatchTriggerWidth', () => {
+    it('is disabled by default', () => {
+      buildWrapper();
+
+      expect(findBaseDropdown().props('panelMatchTriggerWidth')).toBe(false);
+    });
+
+    it('passes true to base dropdown when enabled', () => {
+      buildWrapper({ panelMatchTriggerWidth: true });
+
+      expect(findBaseDropdown().props('panelMatchTriggerWidth')).toBe(true);
+    });
+  });
+
   describe('positioningStrategy', () => {
     it.each([POSITION_ABSOLUTE, POSITION_FIXED])(
       'passes the %s positioning strategy to the base dropdown',
