@@ -25,7 +25,7 @@ const filterEmptyNodes = Vue.version.startsWith('3') ? filterEmptyNodesVue3 : fi
 // handles the addition of the lastSeparator in these two cases:
 // item1, item2, item3 => item1, item2, and item3
 // item1, item2 => item1 and item2
-const addLastSeparator = (lastSeparator) => (items) => {
+const addLastSeparator = (lastSeparator, items) => {
   if (!lastSeparator) {
     return items;
   }
@@ -65,7 +65,7 @@ export default {
     const slotContent = slots().default || [];
     const filtered = filterEmptyNodes(slotContent);
     const separated = intersperse(separator, filtered);
-    const withLastSeparator = addLastSeparator(lastSeparator)(separated);
+    const withLastSeparator = addLastSeparator(lastSeparator, separated);
 
     return createElement('span', data, withLastSeparator);
   },
