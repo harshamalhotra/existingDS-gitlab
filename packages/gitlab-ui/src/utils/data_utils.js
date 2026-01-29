@@ -1,5 +1,3 @@
-import curry from 'lodash/fp/curry';
-
 const getRepeatingValue = (index) => {
   const values = [
     100, 500, 400, 200, 100, 800, 400, 500, 600, 300, 800, 900, 110, 700, 400, 300, 500, 300, 400,
@@ -13,16 +11,16 @@ export const generateTimeSeries = () =>
 
 // takes an element and a list and `intersperses' that element between the elements of the list.
 // (',' ['a', 'b', 'c']) -> ['a', ',', 'b', ',', 'c']
-export const intersperse = curry((separator, items) => {
+export const intersperse = (separator, items) => {
   const [head, ...rest] = items;
   const separatorFactory = typeof separator === 'function' ? separator : () => separator;
   return [head, ...rest.flatMap((item) => [separatorFactory(), item], rest)];
-});
+};
 
 // inserts a value at a given index into an array
 // (1, 2, [1, 3, 4]) -> [1, 2, 3, 4]
-export const insert = curry((index, newItem, items) => [
+export const insert = (index, newItem, items) => [
   ...items.slice(0, index),
   newItem,
   ...items.slice(index),
-]);
+];

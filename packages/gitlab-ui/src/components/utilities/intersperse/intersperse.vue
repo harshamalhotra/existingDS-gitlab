@@ -1,14 +1,12 @@
 <script>
 import Vue from 'vue';
-import compose from 'lodash/fp/compose';
-import fill from 'lodash/fp/fill';
-import filter from 'lodash/fp/filter';
 import { intersperse, insert } from '../../../utils/data_utils';
 import { isVnodeEmpty } from '../../../utils/is_slot_empty';
 
-const filterEmptyNodesVue2 = filter(
-  (vNode) => typeof vNode.tag === 'string' || vNode.text.trim() !== '',
-);
+const filterEmptyNodesVue2 = (vNodes) =>
+  vNodes.filter(
+    (vNode) => typeof vNode.tag === 'string' || (vNode.text && vNode.text.trim() !== ''),
+  );
 
 const { Fragment } = Vue;
 const filterEmptyNodesVue3 = (vNode) => {
@@ -25,8 +23,6 @@ const filterEmptyNodesVue3 = (vNode) => {
 };
 
 const filterEmptyNodes = Vue.version.startsWith('3') ? filterEmptyNodesVue3 : filterEmptyNodesVue2;
-const insertAfterSecondLastItem = insert(-1);
-const replaceSecondLastItem = fill(-2, -1);
 
 // handles the addition of the lastSeparator in these two cases:
 // item1, item2, item3 => item1, item2, and item3
@@ -36,9 +32,14 @@ const addLastSeparator = (lastSeparator) => (items) => {
     return items;
   }
 
-  return items.length > 3
-    ? insertAfterSecondLastItem(lastSeparator, items)
-    : replaceSecondLastItem(lastSeparator, items);
+  if (items.length > 3) {
+    return insert(-1, lastSeparator, items);
+  }
+
+  // Replace the second-to-last item with lastSeparator
+  const result = [...items];
+  result[result.length - 2] = lastSeparator;
+  return result;
 };
 
 export default {
@@ -63,13 +64,12 @@ export default {
       data,
     } = context;
 
-    const filterAndSeparate = compose(
-      addLastSeparator(lastSeparator),
-      intersperse(separator),
-      filterEmptyNodes,
-    );
+    const slotContent = slots().default || [];
+    const filtered = filterEmptyNodes(slotContent);
+    const separated = intersperse(separator, filtered);
+    const withLastSeparator = addLastSeparator(lastSeparator)(separated);
 
-    return createElement('span', data, filterAndSeparate(slots().default));
+    return createElement('span', data, withLastSeparator);
   },
 };
 </script>
