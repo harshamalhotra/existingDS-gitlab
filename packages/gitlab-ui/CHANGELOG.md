@@ -1,5 +1,13 @@
 # @gitlab/ui
 
+## 128.5.1
+
+### Patch Changes
+
+- 63e445d: Drop dependency on `lodash/fp`.
+
+  This makes `@gitlab/ui` more ESM-compatible, e.g., with Vite.
+
 ## 128.5.0
 
 ### Minor Changes
