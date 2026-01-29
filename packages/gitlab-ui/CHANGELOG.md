@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.6.0
+
+### Minor Changes
+
+- 07eb4fc: Add prop to GlCollapsibleListbox to allow panel to match toggle width
+
 ## 128.5.1
 
 ### Patch Changes
