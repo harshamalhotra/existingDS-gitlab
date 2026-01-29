@@ -4,9 +4,7 @@ import { intersperse, insert } from '../../../utils/data_utils';
 import { isVnodeEmpty } from '../../../utils/is_slot_empty';
 
 const filterEmptyNodesVue2 = (vNodes) =>
-  vNodes.filter(
-    (vNode) => typeof vNode.tag === 'string' || (vNode.text && vNode.text.trim() !== ''),
-  );
+  vNodes.filter((vNode) => typeof vNode.tag === 'string' || vNode.text.trim() !== '');
 
 const { Fragment } = Vue;
 const filterEmptyNodesVue3 = (vNode) => {
