@@ -197,6 +197,14 @@ export default {
       default: false,
     },
     /**
+     * Allows the dropdown panel to match the width of the trigger element
+     */
+    panelMatchTriggerWidth: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    /**
      * Strategy to be applied by computePosition. If this is set to fixed, the dropdown's position
      * needs to be set to fixed in CSS as well.
      * https://floating-ui.com/docs/computePosition#strategy
@@ -362,7 +370,8 @@ export default {
     panelClasses() {
       return {
         '!gl-block': this.visible,
-        [FIXED_WIDTH_CLASS]: !this.fluidWidth,
+        [FIXED_WIDTH_CLASS]: !this.fluidWidth && !this.panelMatchTriggerWidth,
+        'gl-new-dropdown-panel-fluid-width': this.fluidWidth && !this.panelMatchTriggerWidth,
         'gl-fixed': this.openedYet && this.isFixed,
         'gl-absolute': this.openedYet && !this.isFixed,
       };
@@ -397,6 +406,11 @@ export default {
                     maxWidth: `${Math.max(0, availableWidth)}px`,
                   }
                 : {};
+              const triggerWidth = this.panelMatchTriggerWidth
+                ? {
+                    minWidth: `${this.toggleElement.getBoundingClientRect().width}px`,
+                  }
+                : {};
 
               Object.assign(
                 contentsEl.style,
@@ -404,6 +418,7 @@ export default {
                   maxHeight: `${Math.max(contentsAvailableHeight, 0)}px`,
                 },
                 maxWidth,
+                triggerWidth,
               );
             },
           }),
