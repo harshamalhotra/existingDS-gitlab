@@ -99,12 +99,16 @@
         "path": "get-started",
         "items": [
           {
-            "title": "Navigating Pajamas",
-            "path": "navigating-pajamas"
+            "title": "Philosophy",
+            "path": "design-system-philosophy"
           },
           {
             "title": "Principles",
             "path": "principles"
+          },
+          {
+            "title": "Navigating Pajamas",
+            "path": "navigating-pajamas"
           },
           {
             "title": "Contributing",
