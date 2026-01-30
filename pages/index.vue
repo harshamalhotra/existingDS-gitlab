@@ -41,7 +41,7 @@ export default {
             <h2>Product</h2>
             <p class="gl-mb-0 gl-text-base gl-leading-20">
               Foundations, components, patterns, content, and guidelines for building the GitLab UI.
-              <nuxt-link class="gl-underline" to="/get-started/navigating-pajamas">
+              <nuxt-link class="gl-underline" to="/get-started/design-system-philosophy">
                 Get started →
               </nuxt-link>
             </p>
