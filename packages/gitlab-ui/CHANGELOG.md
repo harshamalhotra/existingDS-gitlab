@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.7.0
+
+### Minor Changes
+
+- a778f69: Add GlMultiStepFormTemplate extended layer component
+
 ## 128.6.0
 
 ### Minor Changes
