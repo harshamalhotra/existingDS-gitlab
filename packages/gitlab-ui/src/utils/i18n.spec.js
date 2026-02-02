@@ -3,6 +3,8 @@ import { translate, translatePlural, sprintf } from './i18n';
 const TRANSLATION_KEY = 'TRANSLATION_KEY';
 const CONFIGURED_VALUE = 'CONFIGURED_VALUE';
 const PLURAL_TRANSLATION_KEY = 'PLURAL_TRANSLATION_KEY';
+const TEMPLATED_TRANSLATION_KEY = 'TEMPLATED_TRANSLATION_KEY';
+const TEMPLATED_TRANSLATION_VALUE = 'Step %{currentStep} of %{stepsTotal}';
 const CONFIGURED_SINGULAR_VALUE = '1 result';
 const CONFIGURED_PLURAL_VALUE = 'Multiple results';
 const CONFIGURED_PLURAL_HANDLER = (n) =>
@@ -12,6 +14,7 @@ jest.mock('../config', () => ({
   i18n: {
     [TRANSLATION_KEY]: CONFIGURED_VALUE,
     [PLURAL_TRANSLATION_KEY]: CONFIGURED_PLURAL_HANDLER,
+    [TEMPLATED_TRANSLATION_KEY]: TEMPLATED_TRANSLATION_VALUE,
   },
 }));
 
@@ -25,6 +28,15 @@ describe('i18n', () => {
 
     it('returns the label from the config if it is provided', () => {
       expect(translate(TRANSLATION_KEY, 'Fallback translation')).toBe(CONFIGURED_VALUE);
+    });
+
+    it('can accept named template replacements', () => {
+      expect(
+        translate(TEMPLATED_TRANSLATION_KEY, 'Step %{currentStep} of %{stepsTotal}', {
+          currentStep: 1,
+          stepsTotal: 2,
+        }),
+      ).toBe('Step 1 of 2');
     });
   });
 
