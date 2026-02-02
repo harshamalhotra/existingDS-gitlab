@@ -8,15 +8,6 @@ const defaultPluralHandler = (n, singleValue, pluralValue) => {
 };
 
 /**
- * Mark a label as translatable.
- *
- * @param {string} key Translation key to be leveraged by the consumer to provide a generic translation at configuration time.
- * @param {string} defaultValue A fallback value to be relied on if the consumer doesn't have translation capabilities.
- * @returns {string} The translated label.
- */
-export const translate = (key, defaultValue) => i18n[key] ?? defaultValue;
-
-/**
  * Marks a label as translatable and pluralized.
  *
  * @param {*} key Translation key to be leveraged by the consumer to provide a generic translation at configuration time.
@@ -60,3 +51,16 @@ export function sprintf(input, parameters, escapeParameters = true) {
 
   return output;
 }
+
+/**
+ * Mark a label as translatable.
+ *
+ * @param {string} key Translation key to be leveraged by the consumer to provide a generic translation at configuration time.
+ * @param {string} defaultValue A fallback value to be relied on if the consumer doesn't have translation capabilities.
+ * @param {Object.<string, string|number>} [parameters] - Optional object mapping parameter names to values for sprintf substitution.
+ * @returns {string} The translated label.
+ */
+export const translate = (key, defaultValue, parameters) => {
+  const translatedValue = i18n[key] ?? defaultValue;
+  return parameters ? sprintf(translatedValue, parameters) : translatedValue;
+};

@@ -114,3 +114,7 @@ export { default as GlIntersperse } from './utilities/intersperse/intersperse.vu
 export { default as GlSprintf } from './utilities/sprintf/sprintf.vue';
 export { default as GlTruncate } from './utilities/truncate/truncate.vue';
 export { default as GlTruncateText } from './utilities/truncate_text/truncate_text.vue';
+
+// Extended
+
+export { default as GlMultiStepFormTemplate } from './extended/multi_step_form_template/multi_step_form_template.vue';

@@ -25,6 +25,8 @@ export default {
   'GlKeysetPagination.nextText': 'Next',
   'GlKeysetPagination.prevText': 'Previous',
   'GlModal.closeButtonTitle': 'Close',
+  'GlMultiStepFormTemplate.stepX': 'Step %{currentStep}',
+  'GlMultiStepFormTemplate.stepXofY': 'Step %{currentStep} of %{stepsTotal}',
   'GlPagination.labelFirstPage': 'Go to first page',
   'GlPagination.labelLastPage': 'Go to last page',
   'GlPagination.labelNextPage': 'Go to next page',
