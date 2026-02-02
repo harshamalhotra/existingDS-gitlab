@@ -1,5 +1,5 @@
 ---
-name: Banner
+name: ⚠️ Banner
 description: A banner promotes awareness of a new feature or high-priority research initiative.
 related:
   - alert
@@ -7,6 +7,11 @@ related:
   - button
   - /patterns/empty-states
 ---
+
+<div class="gl-p-5 gl-rounded-feedback gl-bg-feedback-warning gl-sticky gl-top-10 md:gl-top-3 gl-z-1">
+  <h2 class="gl-heading-scale-400 gl-mb-3">⚠️ Component on hold</h2>
+  <p class="gl-mb-0">Do not add new usage of this component. It's temporarily restricted as part of our <a href="https://gitlab.com/groups/gitlab-org/-/work_items/20604">Banner cleanup initiative</a>.</p>
+</div>
 
 ## Examples
 
