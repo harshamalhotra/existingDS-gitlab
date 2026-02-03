@@ -87,6 +87,7 @@ Use it when avoiding truncation is more important than maintaining consistent wi
 ### Content
 
 - Text should be concise and clearly indicate the link destination or action it performs.
+- An icon can be used to help users identify a key action.
 - Destructive actions should be the last of the available options.
 
 ### More actions dropdown
