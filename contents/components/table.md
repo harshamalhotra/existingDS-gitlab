@@ -166,7 +166,7 @@ A table's empty state displays when there is no data, yet. [See empty states gui
 
 #### Null values
 
-Representing null values should be made on a case-by-case basis. Some ways of addressing this are:
+Decide how to represent null values on a case-by-case basis. Some ways of addressing this are:
 
 - Keep the cell empty. For example, if no data is returned.
 - Use text to indicate what is missing. For example, "Unassigned" if there is no assignee.
