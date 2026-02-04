@@ -65,7 +65,7 @@
     "translations:collect": "make translations.js"
   },
   "dependencies": {
-    "@floating-ui/dom": "1.7.4",
+    "@floating-ui/dom": "1.7.5",
     "echarts": "^5.6.0",
     "gridstack": "^12.4.2",
     "iframe-resizer": "^4.4.5",
