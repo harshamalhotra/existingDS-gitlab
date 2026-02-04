@@ -116,4 +116,4 @@ Once the Reviewer and Maintainer have approved your update, consider the followi
 
 <!-- Do not delete below this line -->
 
-/label ~"Category:Design System" ~"Pajamas UI Kit" ~devops::foundations ~"group::design system" ~"section::core platform" ~type::maintenance
+/label ~"Category:Design System" ~"Pajamas UI Kit" ~devops::foundations ~"group::design system" ~"section::core platform" ~type::maintenance ~Figma
