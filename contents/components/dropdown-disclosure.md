@@ -30,6 +30,7 @@ related:
 1. **Button**: Triggers the panel to open or close.
 1. **Panel**: Wraps the content.
 1. **Action**: Button or link styled as an option.
+1. **Icon**: (optional): Icon indicating or supporting a key action.
 1. **Scrim**: Gradient overlay when items overflow the panel.
 1. **Header** (optional): Provides more context for the actions.
 1. **Custom content** (optional): Custom content included in a slot.
