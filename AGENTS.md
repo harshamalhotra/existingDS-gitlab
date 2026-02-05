@@ -11,5 +11,5 @@ Shorthand references (`#123`, `!456`) cause pipeline failures.
 Fixes #123
 
 # Good
-Fixes https://gitlab.com/gitlab-org/gitlab/-/issues/123
+Fixes https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues/123
 ```
