@@ -192,6 +192,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
         isFigmaSupportedTypeAndNotConstantDesignToken: (token) => {
           return (
             FIGMA_SUPPORTED_TYPES.includes(token.$type) &&
+            !token.$deprecated &&
             token.filePath &&
             !token.filePath.includes('/constant/')
           );
