@@ -518,6 +518,125 @@ const tailwindFormat = async ({ dictionary, file }) => {
 // Prevents a warning about collision when building tokens
 tailwindFormat.nested = true;
 
+/**
+ * Checks if a value is a design token alias reference
+ * @param {*} value - The value to check for alias format
+ * @returns {boolean} True if the value is an alias reference, false otherwise
+ */
+function isAliasValue(value) {
+  return typeof value === 'string' && value.startsWith('{') && value.endsWith('}');
+}
+
+/**
+ * Converts alias values from dot notation to hyphen notation
+ * @param {*} value - The token value to process
+ * @returns {*} The processed value with flattened aliases
+ */
+function flattenAliasValue(value, withBrackets = true) {
+  const aliasPath = value.slice(1, -1); // Remove { and }
+  const flattenedPath = aliasPath.replace(/\./g, '-');
+  return withBrackets ? `{${flattenedPath}}` : flattenedPath;
+}
+
+/**
+ * Transforms design token values into Figma-compatible formats
+ *
+ * @param {Object} token - The design token object containing original value and type
+ * @param {Object} token.original - The original token definition
+ * @param {string} token.original.$type - The token type (fontFamily, number, dimension, etc.)
+ * @param {*} token.original.$value - The token value to be transformed
+ * @returns {*} The transformed value ready for Figma consumption
+ */
+function resolveFigmaValue(token) {
+  const type = token.original?.$type;
+  const value = token.original?.$value;
+
+  // Convert font family arrays to comma-separated strings
+  // Figma expects font families as a single string rather than an array
+  if (type === 'fontFamily') {
+    return value.join(', ');
+  }
+
+  // Ensure numeric values are proper JavaScript numbers
+  // Converts string representations of numbers to actual number types
+  if (type === 'number') {
+    return Number(value);
+  }
+
+  // Convert rem units to pixels for Figma compatibility
+  // Figma works primarily with pixel values, so we convert rem using 16px base
+  if (type === 'dimension' && value?.unit === 'rem') {
+    return {
+      value: parseFloat(value.value) * 16,
+      unit: 'px',
+    };
+  }
+
+  // Transform alias references to use flattened naming convention
+  // Converts dot-notation aliases (e.g., {color.red.500}) to hyphen-notation ({color-red-500})
+  // to match the flattened token key structure used in Figma
+  if (isAliasValue(value)) {
+    return flattenAliasValue(value);
+  }
+
+  // Return the original value unchanged for all other cases
+  return value;
+}
+
+/**
+ * Recursively flattens a nested design tokens structure into a flat object with grouping
+ *
+ * Traverses a nested token object and creates a flattened structure where
+ * each token's path becomes a hyphen-separated key. Organizes tokens into groups:
+ * - Regular tokens at root level
+ * - Deprecated tokens in group
+ * - Contextual tokens in group
+ *
+ * @param {Object} tokens - The nested tokens object to flatten
+ * @param {Object} result - The accumulator object for flattened tokens
+ * @param {Array} path - The current path array for building token keys
+ * @returns {Object} A flat object with grouped tokens
+ */
+function getFigmaFormattedTokens(tokens, result = {}, path = []) {
+  Object.entries(tokens).forEach(([key, token]) => {
+    const currentPath = [...path, key];
+
+    if (token && typeof token === 'object' && !token.$value) {
+      getFigmaFormattedTokens(token, result, currentPath);
+    } else {
+      const flatKey = currentPath.join('-');
+      const tokenData = {
+        $value: resolveFigmaValue(token),
+        $type: token.original?.$type,
+        $description: token.original?.$description,
+        $extensions: token.original?.$extensions,
+      };
+      result[flatKey] = tokenData;
+    }
+  });
+
+  return result;
+}
+
+/**
+ * Generates flattened JSON structure for Figma design tokens with grouping
+ *
+ * This formatter creates a flat object structure where nested token paths are
+ * joined with hyphens to create unique keys. Tokens are organized into groups:
+ * - Regular tokens at root level
+ * - Deprecated tokens under "DEPRECATED" group
+ * - Contextual tokens under "CONTEXTUAL" group
+ *
+ * @param {Object} options - The formatter options
+ * @param {Object} options.dictionary - The Style Dictionary containing all tokens
+ * @param {Object} options.dictionary.tokens - The nested tokens object to flatten
+ * @returns {Promise<string>} The formatted JSON output as a string with proper indentation
+ */
+const figmaFormat = async ({ dictionary }) => {
+  const flatTokens = getFigmaFormattedTokens(dictionary.tokens);
+  return `${JSON.stringify(flatTokens, null, 2)}\n`;
+};
+
 module.exports = {
   getScalesAndCSSCustomProperties,
   generateBaseColors,
@@ -527,4 +646,5 @@ module.exports = {
   tailwindComponentsFormat,
   tailwindDocsFormat,
   tailwindFormat,
+  figmaFormat,
 };
