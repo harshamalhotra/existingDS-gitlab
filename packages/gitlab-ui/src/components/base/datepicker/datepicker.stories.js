@@ -11,7 +11,8 @@ const defaults = {
   mixins: [useFakeDate()],
 };
 
-const currentYear = 2020;
+// The year is set manually to avoid snapshot changes.
+const currentYear = 2026;
 const defaultDate = new Date(currentYear, 0, 15);
 const defaultMinDate = new Date(currentYear, 0, 1);
 const defaultMaxDate = new Date(currentYear, 2, 31);
