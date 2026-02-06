@@ -28,6 +28,16 @@ import {
 const PREFIX = 'gl';
 const ROOT = join(import.meta.dirname, '..');
 const BUILD_PATH = join(ROOT, 'src', 'tokens', 'build');
+// https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables#h_01KAGZ9T9H4P7RXY11SG4QXFY2
+const FIGMA_SUPPORTED_TYPES = [
+  'color',
+  'dimension',
+  'fontWeight',
+  'fontFamily',
+  'duration',
+  'number',
+  'string',
+];
 
 /**
  * Preprocessors
@@ -171,11 +181,20 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
         isTypographyDesignToken: (token) => {
           return token.$type === 'typography';
         },
-        isConstantDesignToken: (token) => {
-          return !token.$deprecated && token.filePath && token.filePath.includes('/constant/');
+        isFigmaSupportedTypeAndConstantDesignToken: (token) => {
+          return (
+            FIGMA_SUPPORTED_TYPES.includes(token.$type) &&
+            !token.$deprecated &&
+            token.filePath &&
+            token.filePath.includes('/constant/')
+          );
         },
-        isNotConstantDesignToken: (token) => {
-          return token.filePath && !token.filePath.includes('/constant/');
+        isFigmaSupportedTypeAndNotConstantDesignToken: (token) => {
+          return (
+            FIGMA_SUPPORTED_TYPES.includes(token.$type) &&
+            token.filePath &&
+            !token.filePath.includes('/constant/')
+          );
         },
       },
     },
@@ -287,12 +306,12 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
           {
             destination: 'constants.json',
             format: 'figma',
-            filter: 'isConstantDesignToken',
+            filter: 'isFigmaSupportedTypeAndConstantDesignToken',
           },
           {
             destination: 'mode.json',
             format: 'figma',
-            filter: 'isNotConstantDesignToken',
+            filter: 'isFigmaSupportedTypeAndNotConstantDesignToken',
           },
         ],
       },
