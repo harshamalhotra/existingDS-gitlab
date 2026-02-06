@@ -314,6 +314,10 @@
             "path": "alert"
           },
           {
+            "title": "Attribute list",
+            "path": "attribute-list"
+          },
+          {
             "title": "Avatars",
             "items": [
               {
