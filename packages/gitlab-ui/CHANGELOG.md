@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.8.0
+
+### Minor Changes
+
+- 61050a2: Create GlAttributeList component
+
 ## 128.7.0
 
 ### Minor Changes
