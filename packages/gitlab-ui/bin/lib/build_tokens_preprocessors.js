@@ -192,10 +192,65 @@ const selectColorValuePreprocessor = (dictionary) => {
   return traverse(dictionary);
 };
 
+/**
+ * Resolves clamp string values to dimension objects
+ *
+ * A preprocessor function that clamp() strings to dimension objects
+ * with `value` and `unit` properties
+ * e.g., 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)'
+ * -> { value: 1.125, unit: 'rem' }.
+ *
+ * Usage:
+ *
+ * ```javascript
+ * StyleDictionary.registerPreprocessor({
+ *   name: 'gitlab/convert-clamp-string-to-dimension',
+ *   preprocessor: convertClampStringToDimension,
+ * });
+ * ```
+ *
+ * @param {Object} dictionary - StyleDictionary's dictionary object
+ * @returns {Object} - Modified dictionary object
+ */
+const convertClampStringToDimension = (dictionary) => {
+  function traverse(node) {
+    if (node === null || typeof node !== 'object' || Array.isArray(node)) {
+      return node;
+    }
+
+    if (node.$type === 'string' && typeof node.$value === 'string') {
+      const clampMatch = node.$value.match(/^clamp\s*\(\s*([^,]+),\s*[^,]+,\s*[^)]+\s*\)$/);
+
+      if (clampMatch) {
+        const firstValue = clampMatch[1].trim();
+        const valueMatch = firstValue.match(/^([\d.]+)(rem|px|)$/);
+
+        if (valueMatch) {
+          const [, value, unit] = valueMatch;
+          return {
+            ...node,
+            $type: 'dimension',
+            $value: {
+              value: parseFloat(value),
+              unit,
+            },
+          };
+        }
+      }
+    }
+
+    // Recursively handle nested objects
+    return Object.fromEntries(Object.entries(node).map(([k, v]) => [k, traverse(v)]));
+  }
+
+  return traverse(dictionary);
+};
+
 module.exports = {
   stripDescriptionsPreprocessor,
   resolveUnitsPreprocessor,
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
   selectColorValuePreprocessor,
+  convertClampStringToDimension,
 };

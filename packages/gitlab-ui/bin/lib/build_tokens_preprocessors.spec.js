@@ -4,6 +4,7 @@ import {
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
   selectColorValuePreprocessor,
+  convertClampStringToDimension,
 } from './build_tokens_preprocessors';
 
 describe('buildTokens', () => {
@@ -368,6 +369,76 @@ describe('buildTokens', () => {
       };
 
       const result = selectColorValuePreprocessor(input);
+
+      expect(result).toEqual(input);
+    });
+  });
+
+  describe('convertClampStringToDimension', () => {
+    it('converts clamp string to dimension with rem unit', () => {
+      const input = {
+        $value: 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)',
+        $type: 'string',
+      };
+
+      const result = convertClampStringToDimension(input);
+
+      expect(result).toEqual({
+        $value: { value: 1.125, unit: 'rem' },
+        $type: 'dimension',
+      });
+    });
+
+    it('converts clamp string to dimension with px unit', () => {
+      const input = {
+        $value: 'clamp(16px, 1rem + 2vw, 32px)',
+        $type: 'string',
+      };
+
+      const result = convertClampStringToDimension(input);
+
+      expect(result).toEqual({
+        $value: { value: 16, unit: 'px' },
+        $type: 'dimension',
+      });
+    });
+
+    it('preserves other token properties', () => {
+      const input = {
+        $value: 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)',
+        $type: 'string',
+        $description: 'Responsive font size',
+        $extensions: { com: { figma: { scopes: ['FONT_SIZE'] } } },
+      };
+
+      const result = convertClampStringToDimension(input);
+
+      expect(result).toEqual({
+        $value: { value: 1.125, unit: 'rem' },
+        $type: 'dimension',
+        $description: 'Responsive font size',
+        $extensions: { com: { figma: { scopes: ['FONT_SIZE'] } } },
+      });
+    });
+
+    it('does not convert non-clamp strings', () => {
+      const input = {
+        $value: 'some-other-string-value',
+        $type: 'string',
+      };
+
+      const result = convertClampStringToDimension(input);
+
+      expect(result).toEqual(input);
+    });
+
+    it('does not convert tokens with non-string $type', () => {
+      const input = {
+        $value: 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)',
+        $type: 'dimension',
+      };
+
+      const result = convertClampStringToDimension(input);
 
       expect(result).toEqual(input);
     });

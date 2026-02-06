@@ -18,6 +18,7 @@ import {
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
   selectColorValuePreprocessor,
+  convertClampStringToDimension,
 } from './lib/build_tokens_preprocessors.js';
 
 /**
@@ -56,6 +57,11 @@ StyleDictionary.registerPreprocessor({
 StyleDictionary.registerPreprocessor({
   name: 'gitlab/select-color-value',
   preprocessor: selectColorValuePreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/convert-clamp-string-to-dimension',
+  preprocessor: convertClampStringToDimension,
 });
 
 /**
@@ -275,6 +281,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       },
       figma: {
         buildPath: `${buildPath}/figma/`,
+        preprocessors: ['gitlab/convert-clamp-string-to-dimension'],
         transformGroup: 'gitlab/figma',
         files: [
           {

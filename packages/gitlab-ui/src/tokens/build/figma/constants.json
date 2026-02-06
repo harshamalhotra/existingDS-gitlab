@@ -3765,8 +3765,11 @@
     }
   },
   "font-size-500": {
-    "$value": "clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)",
-    "$type": "string",
+    "$value": {
+      "value": 18,
+      "unit": "px"
+    },
+    "$type": "dimension",
     "$description": "Used for responsive level 3 headings.",
     "$extensions": {
       "com.figma.scopes": [
@@ -3775,8 +3778,11 @@
     }
   },
   "font-size-600": {
-    "$value": "clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)",
-    "$type": "string",
+    "$value": {
+      "value": 21,
+      "unit": "px"
+    },
+    "$type": "dimension",
     "$description": "Used for responsive level 2 headings.",
     "$extensions": {
       "com.figma.scopes": [
@@ -3785,8 +3791,11 @@
     }
   },
   "font-size-700": {
-    "$value": "clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)",
-    "$type": "string",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$type": "dimension",
     "$description": "Used for responsive level 1 headings",
     "$extensions": {
       "com.figma.scopes": [
@@ -3795,8 +3804,11 @@
     }
   },
   "font-size-800": {
-    "$value": "clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)",
-    "$type": "string",
+    "$value": {
+      "value": 28,
+      "unit": "px"
+    },
+    "$type": "dimension",
     "$description": "Used for a responsive display option that can be applied to a level 1 heading to increase its prominence.",
     "$extensions": {
       "com.figma.scopes": [
