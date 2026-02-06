@@ -56,7 +56,7 @@ After you open an issue or merge request, the Design System team will classify t
             <ul>
                <li> Reusable in more than one place, but not necessarily across multiple domains.</li>
                <li> May be primarily domain-owned, but valuable to share across teams.</li>
-               <li> An early-stage or evolving component or pattern.</li>
+               <li> Experimental or product-specific components, patterns, or concepts that extend the core system.</li>
             </ul>
          </td>
       </tr>
