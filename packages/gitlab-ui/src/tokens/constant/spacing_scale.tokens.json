@@ -1,7 +1,10 @@
 {
   "spacing-scale": {
     "0": {
-      "$value": "0",
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
       "$type": "dimension",
       "$extensions": {
         "com.figma.scopes": []
