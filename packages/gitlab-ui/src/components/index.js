@@ -22,6 +22,7 @@ export { default as GlAnimatedSortIcon } from './base/animated_icon/animated_sor
 export { default as GlAnimatedStarIcon } from './base/animated_icon/animated_star_icon.vue';
 export { default as GlAnimatedTodoIcon } from './base/animated_icon/animated_todo_icon.vue';
 export { default as GlAnimatedUploadIcon } from './base/animated_icon/animated_upload_icon.vue';
+export { default as GlAttributeList } from './base/attribute_list/attribute_list.vue';
 export { default as GlLoadingIcon } from './base/loading_icon/loading_icon.vue';
 export { default as GlModal } from './base/modal/modal.vue';
 export { default as GlPagination } from './base/pagination/pagination.vue';
