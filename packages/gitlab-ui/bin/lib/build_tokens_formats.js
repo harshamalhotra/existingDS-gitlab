@@ -529,13 +529,11 @@ function isAliasValue(value) {
 
 /**
  * Converts alias values from dot notation to hyphen notation
- * @param {*} value - The token value to process
- * @returns {*} The processed value with flattened aliases
+ * @param {string} value - The token value to process (e.g., "{color.primary}")
+ * @returns {string} The processed value with flattened aliases (e.g., "{color-primary}")
  */
 function flattenAliasValue(value) {
-  const aliasPath = value.slice(1, -1); // Remove { and }
-  const flattenedPath = aliasPath.replace(/\./g, '-');
-  return `{${flattenedPath}}`;
+  return value.replace(/\./g, '-');
 }
 
 /**
