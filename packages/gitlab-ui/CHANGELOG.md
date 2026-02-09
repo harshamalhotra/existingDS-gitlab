@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.8.1
+
+### Patch Changes
+
+- 9c2342f: Add aria-current on current selected step in GlPath component
+
 ## 128.8.0
 
 ### Minor Changes
