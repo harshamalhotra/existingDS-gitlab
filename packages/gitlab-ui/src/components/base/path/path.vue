@@ -135,6 +135,9 @@ export default {
     pathId(index) {
       return `${this.pathUuid}-item-${index}`;
     },
+    getAriaCurrentAttr(index) {
+      return index === this.selectedIndex;
+    },
   },
 };
 </script>
@@ -161,6 +164,7 @@ export default {
         <button
           :id="pathId(index)"
           :class="pathItemClass(index)"
+          :aria-current="getAriaCurrentAttr(index)"
           :category="item.disabled ? 'tertiary' : undefined"
           :disabled="item.disabled"
           @click="onItemClicked(index)"
