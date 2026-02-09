@@ -144,7 +144,7 @@
     "jest-image-snapshot": "^6.5.1",
     "merge-cobertura": "^1.0.4",
     "mockdate": "^3.0.5",
-    "module-alias": "^2.2.3",
+    "module-alias": "^2.3.4",
     "pikaday": "^1.8.0",
     "playwright": "^1.58.1",
     "playwright-core": "^1.58.1",
