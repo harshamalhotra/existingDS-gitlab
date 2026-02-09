@@ -1,5 +1,11 @@
 # @gitlab/svgs
 
+## 3.156.0
+
+### Minor Changes
+
+- e111571: Adds replace and replace-all icons to be used in find and replace UI.
+
 ## 3.155.0
 
 ### Minor Changes
