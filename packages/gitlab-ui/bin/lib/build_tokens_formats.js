@@ -532,10 +532,9 @@ function isAliasValue(value) {
  * @param {*} value - The token value to process
  * @returns {*} The processed value with flattened aliases
  */
-function flattenAliasValue(value, withBrackets = true) {
+function flattenAliasValue(value) {
   const aliasPath = value.slice(1, -1); // Remove { and }
-  const flattenedPath = aliasPath.replace(/\./g, '-');
-  return withBrackets ? `{${flattenedPath}}` : flattenedPath;
+  return aliasPath.replace(/\./g, '-');
 }
 
 /**
