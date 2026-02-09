@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.8.2
+
+### Patch Changes
+
+- 4795e16: Export GlAttributeList component from @gitlab/ui package entry point
+
 ## 128.8.1
 
 ### Patch Changes
