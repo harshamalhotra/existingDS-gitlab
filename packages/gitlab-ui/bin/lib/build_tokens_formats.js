@@ -534,7 +534,8 @@ function isAliasValue(value) {
  */
 function flattenAliasValue(value) {
   const aliasPath = value.slice(1, -1); // Remove { and }
-  return aliasPath.replace(/\./g, '-');
+  const flattenedPath = aliasPath.replace(/\./g, '-');
+  return `{${flattenedPath}}`;
 }
 
 /**
