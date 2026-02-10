@@ -43059,7 +43059,7 @@
   "fontWeight": {
     "100": {
       "key": "{font.weight.100}",
-      "$value": "100",
+      "$value": 100,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
@@ -43069,7 +43069,7 @@
       "filePath": "src/tokens/constant/font.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "100",
+        "$value": 100,
         "$type": "fontWeight",
         "$extensions": {
           "com.figma.scopes": [
@@ -43089,7 +43089,7 @@
     },
     "300": {
       "key": "{font.weight.300}",
-      "$value": "300",
+      "$value": 300,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
@@ -43099,7 +43099,7 @@
       "filePath": "src/tokens/constant/font.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "300",
+        "$value": 300,
         "$type": "fontWeight",
         "$extensions": {
           "com.figma.scopes": [
@@ -43119,7 +43119,7 @@
     },
     "normal": {
       "key": "{font.weight.normal}",
-      "$value": "400",
+      "$value": 400,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
@@ -43129,7 +43129,7 @@
       "filePath": "src/tokens/constant/font.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "400",
+        "$value": 400,
         "$type": "fontWeight",
         "$extensions": {
           "com.figma.scopes": [
@@ -43149,7 +43149,7 @@
     },
     "semibold": {
       "key": "{font.weight.semibold}",
-      "$value": "500",
+      "$value": 500,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
@@ -43159,7 +43159,7 @@
       "filePath": "src/tokens/constant/font.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "500",
+        "$value": 500,
         "$type": "fontWeight",
         "$extensions": {
           "com.figma.scopes": [
@@ -43179,7 +43179,7 @@
     },
     "bold": {
       "key": "{font.weight.bold}",
-      "$value": "600",
+      "$value": 600,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
@@ -43189,7 +43189,7 @@
       "filePath": "src/tokens/constant/font.tokens.json",
       "isSource": true,
       "original": {
-        "$value": "600",
+        "$value": 600,
         "$type": "fontWeight",
         "$extensions": {
           "com.figma.scopes": [
@@ -43209,7 +43209,7 @@
     },
     "heading": {
       "key": "{font.weight.heading}",
-      "$value": "600",
+      "$value": 600,
       "$type": "fontWeight",
       "$extensions": {
         "com.figma.scopes": [
