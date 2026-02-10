@@ -49,7 +49,7 @@ Both variants respond to container width and adapt their layout in narrow spaces
 
 - Attribute list responds to container width and adapts its layout in narrow spaces.
 - Attributes stack vertically when space is limited.
-- Attribute focus order follows reading order; left to right, top to bottom.
+- Attribute focus order follows reading order; top to bottom per column.
 
 <todo> Add way to experience the layout adaptations as container size changes. </todo>
 
