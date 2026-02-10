@@ -756,13 +756,12 @@ describe('base dropdown', () => {
           },
           {
             provide: {
-              isInFormGroup: true,
-              formGroupLabelState: { id: 'form-group-label' },
+              getFormGroupInstance: () => ({ labelId: 'form-group-label-id' }),
             },
           },
         );
         expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
-          'form-group-label dropdown-toggle-btn-1',
+          'form-group-label-id dropdown-toggle-btn-1',
         );
       });
 
@@ -811,13 +810,12 @@ describe('base dropdown', () => {
           },
           {
             provide: {
-              isInFormGroup: true,
-              formGroupLabelState: { id: 'form-group-label' },
+              getFormGroupInstance: () => ({ labelId: 'form-group-label-id' }),
             },
           },
         );
         expect(findDefaultDropdownToggle().attributes('aria-labelledby')).toBe(
-          'form-group-label dropdown-toggle-btn-1',
+          'form-group-label-id dropdown-toggle-btn-1',
         );
       });
 

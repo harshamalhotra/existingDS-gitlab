@@ -22,10 +22,16 @@ describe('Form group component', () => {
     });
   };
 
-  it('provides isInFormGroup: true', () => {
+  it('provides getFormGroupInstance function that returns the component instance', () => {
     const childComponent = {
-      inject: ['isInFormGroup'],
-      template: '<div>isInFormGroup: {{ isInFormGroup }}</div>',
+      inject: ['getFormGroupInstance'],
+      template: '<div>{{ hasFormGroup }}</div>',
+      computed: {
+        hasFormGroup() {
+          const instance = this.getFormGroupInstance();
+          return instance && typeof instance.labelId === 'string';
+        },
+      },
     };
 
     wrapper = mount(GlFormGroup, {
@@ -34,7 +40,7 @@ describe('Form group component', () => {
       },
     });
 
-    expect(wrapper.text()).toContain('isInFormGroup: true');
+    expect(wrapper.text()).toContain('true');
   });
 
   it.each`

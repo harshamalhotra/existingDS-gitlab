@@ -1064,7 +1064,7 @@ describe('GlCollapsibleListbox', () => {
             toggleId: 'my-toggle',
           },
           {},
-          { isInFormGroup: true },
+          { getFormGroupInstance: () => ({ labelId: 'form-group-label-id' }) },
         );
         const toggle = findDropdownToggle();
         const span = findDropdownTextSpan();
@@ -1079,7 +1079,7 @@ describe('GlCollapsibleListbox', () => {
             toggleId: 'my-toggle',
           },
           {},
-          { isInFormGroup: true },
+          { getFormGroupInstance: () => ({ labelId: 'form-group-label-id' }) },
         );
         const toggle = findDropdownToggle();
         const span = findDropdownTextSpan();

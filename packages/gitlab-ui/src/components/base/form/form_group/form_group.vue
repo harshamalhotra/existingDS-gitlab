@@ -11,8 +11,7 @@ export default {
   },
   provide() {
     return {
-      isInFormGroup: true,
-      formGroupLabelState: this.formGroupLabelState,
+      getFormGroupInstance: () => this,
     };
   },
   inheritAttrs: false,
@@ -60,9 +59,6 @@ export default {
   },
   data() {
     return {
-      formGroupLabelState: {
-        id: null,
-      },
       formGroupId: null,
     };
   },
@@ -90,12 +86,9 @@ export default {
   created() {
     // Always generate an ID (use prop if provided, otherwise generate unique ID)
     this.formGroupId = this.id || uniqueId('gl-form-group-');
-    
+
     // Derive and expose the label ID (BFormGroup appends '__BV_label_' to the form group ID)
     this.labelId = `${this.formGroupId}__BV_label_`;
-    
-    // Update formGroupLabelState for child components
-    this.formGroupLabelState.id = this.labelId;
   },
 };
 </script>

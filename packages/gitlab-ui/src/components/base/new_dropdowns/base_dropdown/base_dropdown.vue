@@ -56,10 +56,7 @@ export default {
   },
   directives: { Outside: OutsideDirective },
   inject: {
-    isInFormGroup: {
-      default: false,
-    },
-    formGroupLabelState: {
+    getFormGroupInstance: {
       default: null,
     },
   },
@@ -251,6 +248,9 @@ export default {
     isDefaultToggle() {
       return !this.$scopedSlots.toggle;
     },
+    isInFormGroup() {
+      return Boolean(this.getFormGroupInstance?.());
+    },
     isToggleCombobox() {
       if (this.hasSearchableListbox || this.isDisclosure) {
         return false;
@@ -281,6 +281,9 @@ export default {
         return this.listboxId;
       }
       return undefined;
+    },
+    formGroupLabelId() {
+      return this.getFormGroupInstance?.()?.labelId;
     },
     toggleAriaAttributes() {
       return {
@@ -315,9 +318,9 @@ export default {
           return `${this.ariaLabelledby}`;
         }
 
-        // Combobox inside `<gl-form-group>`
-        if (this.isInFormGroup && this.formGroupLabelState?.id) {
-          return `${this.formGroupLabelState.id} ${this.toggleId}`;
+        // Combobox inside GlFormGroup
+        if (this.isInFormGroup && this.formGroupLabelId) {
+          return `${this.formGroupLabelId} ${this.toggleId}`;
         }
 
         // Fallback calculated toggleId value
@@ -331,9 +334,9 @@ export default {
           return `${this.ariaLabelledby} ${this.toggleId}`;
         }
 
-        // Disclosure or button with listbox inside `<gl-form-group>`
-        if (this.isInFormGroup && this.formGroupLabelState?.id) {
-          return `${this.formGroupLabelState.id} ${this.toggleId}`;
+        // Disclosure or button with listbox inside GlFormGroup
+        if (this.isInFormGroup && this.formGroupLabelId) {
+          return `${this.formGroupLabelId} ${this.toggleId}`;
         }
 
         // Fallback calculated toggleId value
