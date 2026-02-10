@@ -53,12 +53,24 @@ export default {
         'gl-attribute-list-vertical-items': this.layout === 'vertical',
       };
     },
+    rowCount() {
+      // Calculate rows needed when there is enough space for 2 column layout
+      const rows = Math.ceil(this.items.length / 2);
+      return {
+        '--attribute-list-row-count': rows,
+      };
+    },
   },
 };
 </script>
 
 <template>
-  <dl class="gl-attribute-list" :class="layoutClass" data-testid="gl-attribute-list">
+  <dl
+    class="gl-attribute-list"
+    :class="layoutClass"
+    :style="rowCount"
+    data-testid="gl-attribute-list"
+  >
     <div
       v-for="(item, index) in items"
       :key="index"

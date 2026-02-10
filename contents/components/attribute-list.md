@@ -62,7 +62,7 @@ Both variants respond to container width and adapt their layout in narrow spaces
 
 - Attribute list responds to container width and adapts its layout in narrow spaces.
 - Attributes stack vertically when space is limited.
-- Attribute focus order follows reading order; left to right, top to bottom.
+- Attribute focus order follows reading order; top to bottom per column.
 
 <grid>
     <figure-img alt="Wireframe of an attribute list with five attributes. The attributes are arranged in two columns. An orange arrow indicates reading order: down the left column, then to the right column, then down." label="Attribute order when there is enough space for two columns" src="/img/attribute-list-behavior-order-full-width.svg"></figure-img>
