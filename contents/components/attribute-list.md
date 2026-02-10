@@ -53,13 +53,21 @@ Both variants respond to container width and adapt their layout in narrow spaces
 1. **Horizontal** (default): Use when you have short, consistent labels and want to show many attributes efficiently.
 1. **Vertical**: Use when labels are long or you want each attribute to be clearly readable without scanning horizontally.
 
-<todo> Add visual representations of the variants. </todo>
+<grid>
+  <figure-img alt="Wireframe of an attribute list with five attributes. The attributes are arranged in two columns. In each column the icon and labels are to the left, the value is to the right." label="Horizontal layout variant" src="/img/attribute-list-variant-horizontal.svg"></figure-img>
+  <figure-img alt="Wireframe of an attribute list with five attributes. The attributes are arranged in two columns. The values are directly below the icon and labels." label="Vertical layout variant" src="/img/attribute-list-variant-vertical.svg"></figure-img>
+</grid>
 
 ### Behavior
 
 - Attribute list responds to container width and adapts its layout in narrow spaces.
 - Attributes stack vertically when space is limited.
 - Attribute focus order follows reading order; left to right, top to bottom.
+
+<grid>
+    <figure-img alt="Wireframe of an attribute list with five attributes. The attributes are arranged in two columns. An orange arrow indicates reading order: down the left column, then to the right column, then down." label="Attribute order when there is enough space for two columns" src="/img/attribute-list-behavior-order-full-width.svg"></figure-img>
+    <figure-img alt="Wireframe of an attribute list with five attributes. The attributes are arranged in a single column. An orange arrow indicates reading order: straight down from the top to the bottom of the column." label="Attribute order when there is only space for one column" src="/img/attribute-list-behavior-order-limited-width.svg"></figure-img>
+</grid>
 
 <todo> Add way to experience the layout adaptations as container size changes. </todo>
 
