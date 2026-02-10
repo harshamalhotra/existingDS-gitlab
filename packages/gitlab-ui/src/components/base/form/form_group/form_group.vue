@@ -1,6 +1,7 @@
 <script>
 import isString from 'lodash/isString';
 import isPlainObject from 'lodash/isPlainObject';
+import { uniqueId } from 'lodash';
 import { BFormGroup } from '../../../../vendor/bootstrap-vue/src/components/form-group/form-group';
 
 export default {
@@ -62,7 +63,7 @@ export default {
       formGroupLabelState: {
         id: null,
       },
-      localId: null,
+      formGroupId: null,
     };
   },
   computed: {
@@ -85,33 +86,23 @@ export default {
       // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
       return Boolean(this.labelDescription || this.$slots['label-description']);
     },
-    computedId() {
-      // Use provided id or fall back to generated localId
-      return this.id || this.localId;
-    },
-    labelId() {
-      // Generate label ID the same way BFormGroup does: id + '_BV_label_'
-      return this.computedId ? `${this.computedId}__BV_label_` : null;
-    },
   },
-  mounted() {
-    this.$nextTick(() => {
-      // Generate a local ID if none was provided
-      if (!this.id) {
-        this.localId = `__BVID__${this._uid}`; // eslint-disable-line no-underscore-dangle
-      }
-      // Update formGroupLabelState with the computed label ID
-      if (this.labelId) {
-        this.formGroupLabelState.id = this.labelId;
-      }
-    });
+  created() {
+    // Always generate an ID (use prop if provided, otherwise generate unique ID)
+    this.formGroupId = this.id || uniqueId('gl-form-group-');
+    
+    // Derive and expose the label ID (BFormGroup appends '__BV_label_' to the form group ID)
+    this.labelId = `${this.formGroupId}__BV_label_`;
+    
+    // Update formGroupLabelState for child components
+    this.formGroupLabelState.id = this.labelId;
   },
 };
 </script>
 <template>
   <b-form-group
     v-bind="$attrs"
-    :id="computedId"
+    :id="formGroupId"
     ref="bFormGroup"
     class="gl-form-group"
     :label-class="actualLabelClass"
