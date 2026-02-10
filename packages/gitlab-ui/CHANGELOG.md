@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.9.1
+
+### Patch Changes
+
+- ebc2e52: GlAttributeList change to column based reading order
+
 ## 128.9.0
 
 ### Minor Changes
