@@ -16,7 +16,7 @@ export const useFakeDate = () => {
   if (process.env.IS_VISUAL_TEST) {
     return {
       created() {
-        MockDate.set('2020-01-10', 0);
+        MockDate.set('2026-01-10', 0);
       },
       destroyed() {
         MockDate.reset();
