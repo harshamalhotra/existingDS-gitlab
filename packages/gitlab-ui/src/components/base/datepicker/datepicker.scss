@@ -32,7 +32,7 @@ $pd-week-color: var(--gl-text-color-subtle);
   @apply gl-px-2;
 
   .gl-button.gl-button {
-    border-radius: 0.0075rem;
+    @apply gl-rounded-md;
   }
 }
 
@@ -189,11 +189,15 @@ $pd-week-color: var(--gl-text-color-subtle);
   .pika-button {
     border-radius: var(--gl-action-border-radius);
     @apply gl-shadow-none;
-    @apply gl-py-3;
+    @apply gl-py-2;
     @apply gl-text-center;
     @apply gl-leading-normal;
     @apply gl-w-7;
+    @apply gl-h-7;
     @apply gl-text-base;
+    @apply gl-border-1;
+    @apply gl-border-solid;
+    @apply gl-border-transparent;
 
     &:hover {
       box-shadow: inset 0 0 0 $gl-border-size-1 var(--gl-control-border-color-hover);
@@ -206,6 +210,7 @@ $pd-week-color: var(--gl-text-color-subtle);
 
   .is-today > .pika-button {
     @apply gl-font-bold;
+    @apply gl-border-strong;
   }
 
   .is-selected > .pika-button {
@@ -220,6 +225,7 @@ $pd-week-color: var(--gl-text-color-subtle);
 
   .is-selected.is-today > .pika-button {
     @apply gl-font-bold;
+    @apply gl-border-transparent;
   }
 
   .is-disabled {
