@@ -82,6 +82,8 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
   - Clicking outside of it.
 - When dismissed, focus returns to the referring control.
 
+<figure-img alt="Diagram showing a modal positioned above all other page content" label="Modal in a layer above all other page content" src="/img/modal-position.svg"></figure-img>
+
 ### Content
 
 - The header is either a question, a descriptive phrase, or title. The header also contains the close icon in every instance.
