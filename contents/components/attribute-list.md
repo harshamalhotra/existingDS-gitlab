@@ -11,7 +11,17 @@ This component displays these attributes in a responsive grid layout, making the
 
 ## Examples
 
-<todo> Add examples </todo>
+```html
+<!-- live-example -->
+<gl-attribute-list
+  :items="[
+    { icon: 'calendar', label: 'Created', text: 'Feb 9, 2026' },
+    { icon: 'clock', label: 'Run started', text: '2:30 PM' },
+    { icon: 'hourglass', label: 'Runtime', text: '5 minutes 42 seconds' },
+    { icon: 'status-health', label: 'Health', text: 'Healthy' }
+  ]"
+></gl-attribute-list>
+```
 
 ## Structure
 
