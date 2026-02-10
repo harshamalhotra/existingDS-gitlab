@@ -98,4 +98,4 @@ Decide how to represent null values on a case-by-case basis. Some ways of addres
 
 The `GlAttributeList` component displays key-value pairs in a grid layout.
 
-<todo> Code reference docs </todo>
+<story-viewer component="base-attribute-list" title="GlAttributeList" view-mode="docs"></story-viewer>
