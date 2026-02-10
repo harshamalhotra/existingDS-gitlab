@@ -137,6 +137,50 @@ MoreActionsDropdown.args = {
 };
 MoreActionsDropdown.decorators = [makeContainer({ height: '200px' })];
 
+export const WithIcons = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: {
+    GlDisclosureDropdown,
+    GlTooltip,
+  },
+  template: `
+    <div>
+      ${template()}
+      <gl-tooltip :target="'more-actions-toggle'" placement="top">
+        More actions
+      </gl-tooltip>
+    </div>
+  `,
+});
+WithIcons.args = {
+  items: [
+    {
+      items: [
+        { text: 'Edit', icon: 'pencil' },
+        { text: 'Close', icon: 'issue-close' },
+        { text: 'Move' },
+      ],
+    },
+    {
+      items: [{ text: 'Copy link' }, { text: 'Lock discussion', icon: 'lock' }],
+    },
+    {
+      name: 'Report',
+      items: [{ text: 'Report abuse' }],
+    },
+    {
+      items: [{ text: 'Archive' }, { text: 'Delete', icon: 'remove', variant: 'danger' }],
+    },
+  ],
+  icon: 'ellipsis_v',
+  toggleText: 'More actions for merge request',
+  textSrOnly: true,
+  noCaret: true,
+  category: 'tertiary',
+  toggleId: 'more-actions-toggle',
+};
+WithIcons.decorators = [makeContainer({ height: '200px' })];
+
 export const CustomListItem = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: {
