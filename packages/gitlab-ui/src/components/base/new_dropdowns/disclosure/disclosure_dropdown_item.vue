@@ -1,5 +1,6 @@
 <script>
 import GlLink from '../../link/link.vue';
+import GlIcon from '../../icon/icon.vue';
 import { ENTER, SPACE } from '../constants';
 import { stopEvent } from '../../../../utils/utils';
 import { dropdownItemVariantOptions } from '../../../../utils/constants';
@@ -11,7 +12,7 @@ export const ITEM_CLASS = 'gl-new-dropdown-item';
 export default {
   name: DISCLOSURE_DROPDOWN_ITEM_NAME,
   ITEM_CLASS,
-  components: { GlLink },
+  components: { GlLink, GlIcon },
   props: {
     item: {
       type: Object,
@@ -28,6 +29,22 @@ export default {
       validator(value) {
         return dropdownItemVariantOptions[value] !== undefined;
       },
+      required: false,
+    },
+    /**
+     * The name of the icon to display in the dropdown item.
+     */
+    icon: {
+      type: String,
+      default: null,
+      required: false,
+    },
+    /**
+     * Does dropdown have icons
+     */
+    siblingsHaveIcons: {
+      type: Boolean,
+      default: false,
       required: false,
     },
   },
@@ -90,6 +107,9 @@ export default {
           : '',
       ];
     },
+    iconName() {
+      return this.icon || this.item?.icon;
+    },
     wrapperListeners() {
       const listeners = {
         keydown: this.onKeydown,
@@ -147,6 +167,9 @@ export default {
       >
         <span class="gl-new-dropdown-item-text-wrapper">
           <slot name="list-item">
+            <span v-if="iconName || siblingsHaveIcons" class="gl-new-dropdown-item-icon">
+              <gl-icon v-if="iconName" :name="iconName" variant="current" />
+            </span>
             {{ item.text }}
           </slot>
         </span>

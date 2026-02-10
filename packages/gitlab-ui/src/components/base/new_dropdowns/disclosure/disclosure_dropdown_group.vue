@@ -1,7 +1,7 @@
 <script>
 import uniqueId from 'lodash/uniqueId';
 import GlDisclosureDropdownItem from './disclosure_dropdown_item.vue';
-import { isGroup } from './utils';
+import { isGroup, doSomeItemsHaveIcon } from './utils';
 import {
   DISCLOSURE_DROPDOWN_GROUP_NAME,
   DISCLOSURE_DROPDOWN_GROUP_BORDER_POSITIONS as borderPositions,
@@ -60,6 +60,9 @@ export default {
     groupLabeledBy() {
       return this.showHeader ? this.nameId : null;
     },
+    siblingsHaveIcons() {
+      return doSomeItemsHaveIcon(this.group.items);
+    },
   },
   created() {
     this.nameId = uniqueId('gl-disclosure-dropdown-group-');
@@ -84,12 +87,16 @@ export default {
     >
       <slot name="group-label">{{ group.name }}</slot>
     </div>
-    <ul :aria-labelledby="groupLabeledBy" class="gl-mb-0 gl-list-none gl-pl-0">
+    <ul
+      :aria-labelledby="groupLabeledBy"
+      class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"
+    >
       <slot>
         <!-- eslint-disable vue/valid-v-for -->
         <gl-disclosure-dropdown-item
           v-for="item in group.items"
           :key="uniqueItemId()"
+          :siblings-have-icons="siblingsHaveIcons"
           :item="item"
           @action="handleAction"
         >

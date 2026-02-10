@@ -16,6 +16,10 @@ const isGroup = (group) =>
 // eslint-disable-next-line unicorn/no-array-callback-reference
 const itemsValidator = (items) => items.every(isItem) || items.every(isGroup);
 
+const doSomeItemsHaveIcon = (items) => {
+  return items.some((item) => item && typeof item === 'object' && 'icon' in item);
+};
+
 const isListItem = (tag) =>
   ['gl-disclosure-dropdown-group', 'gl-disclosure-dropdown-item', 'li'].includes(tag);
 
@@ -100,4 +104,4 @@ const hasOnlyListItems = (defaultSlot) => {
   return hasOnlyListItemsVue2(defaultSlot);
 };
 
-export { itemsValidator, isItem, isGroup, hasOnlyListItems };
+export { itemsValidator, isItem, isGroup, hasOnlyListItems, doSomeItemsHaveIcon };

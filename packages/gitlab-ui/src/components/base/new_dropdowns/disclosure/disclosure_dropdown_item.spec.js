@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils';
 import GlLink from '../../link/link.vue';
+import GlIcon from '../../icon/icon.vue';
 import { ENTER, SPACE } from '../constants';
 import { mockItems } from './mock_data';
 
@@ -178,6 +179,24 @@ describe('GlDisclosureDropdownItem', () => {
 
     it('sets tabIndex on link element', () => {
       expect(findButton().attributes('tabindex')).toBe('-1');
+    });
+  });
+
+  describe('when item has an `icon`', () => {
+    beforeEach(() => {
+      buildWrapper({
+        item: {
+          text: 'item with icon',
+          icon: 'close',
+        },
+      });
+    });
+
+    const findButton = () => wrapper.find('button[type="button"].gl-new-dropdown-item-content');
+
+    it('should render an icon', () => {
+      expect(findButton().findComponent(GlIcon).exists()).toBe(true);
+      expect(findButton().findComponent(GlIcon).props('name')).toBe('close');
     });
   });
 

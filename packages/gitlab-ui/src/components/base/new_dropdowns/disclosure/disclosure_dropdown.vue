@@ -26,7 +26,7 @@ import {
 import GlBaseDropdown from '../base_dropdown/base_dropdown.vue';
 import GlDisclosureDropdownItem, { ITEM_CLASS } from './disclosure_dropdown_item.vue';
 import GlDisclosureDropdownGroup from './disclosure_dropdown_group.vue';
-import { itemsValidator, isItem, hasOnlyListItems } from './utils';
+import { itemsValidator, isItem, hasOnlyListItems, doSomeItemsHaveIcon } from './utils';
 
 export const ITEM_SELECTOR = `.${ITEM_CLASS}`;
 
@@ -247,6 +247,9 @@ export default {
     hasCustomToggle() {
       return Boolean(this.$scopedSlots.toggle);
     },
+    siblingsHaveIcons() {
+      return doSomeItemsHaveIcon(this.items);
+    },
   },
   mounted() {
     if (this.startOpened) {
@@ -254,6 +257,7 @@ export default {
     }
   },
   methods: {
+    doSomeItemsHaveIcon,
     open() {
       this.$refs.baseDropdown.open();
     },
@@ -417,13 +421,19 @@ export default {
       <slot>
         <template v-for="(item, index) in items">
           <template v-if="isItem(item)">
-            <!-- eslint-disable-next-line vue/valid-v-for -->
-            <gl-disclosure-dropdown-item :key="uniqueItemId()" :item="item" @action="handleAction">
+            <!-- eslint-disable vue/valid-v-for -->
+            <gl-disclosure-dropdown-item
+              :key="uniqueItemId()"
+              :siblings-have-icons="siblingsHaveIcons"
+              :item="item"
+              @action="handleAction"
+            >
               <template v-if="'list-item' in $scopedSlots" #list-item>
                 <!-- @slot Custom template of the disclosure dropdown item -->
                 <slot name="list-item" :item="item"></slot>
               </template>
             </gl-disclosure-dropdown-item>
+            <!-- eslint-enable vue/valid-v-for -->
           </template>
 
           <template v-else>
@@ -443,6 +453,7 @@ export default {
                 <gl-disclosure-dropdown-item
                   v-for="groupItem in item.items"
                   :key="uniqueItemId()"
+                  :siblings-have-icons="doSomeItemsHaveIcon(item.items)"
                   :item="groupItem"
                   @action="handleAction"
                 >
