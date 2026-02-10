@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.8.3
+
+### Patch Changes
+
+- 33d8009: Datepicker: Adds a border to the current date
+
 ## 128.8.2
 
 ### Patch Changes
