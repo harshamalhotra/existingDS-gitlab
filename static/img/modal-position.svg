@@ -1,0 +1,56 @@
+<svg width="816" height="412" viewBox="0 0 816 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_40788_57)">
+<rect width="816" height="412" rx="8" fill="url(#paint0_radial_40788_57)"/>
+<rect x="8" y="42" width="52" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="58" width="44" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="74" width="52" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="90" width="44" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="106" width="52" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="122" width="44" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="138" width="52" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="154" width="44" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="354" width="52" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="8" y="370" width="44" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="9" y="387" width="16" height="16" rx="2" fill="white"/>
+<rect x="9" y="387" width="16" height="16" rx="2" stroke="#A4A3A8" stroke-width="2"/>
+<rect x="738" y="12" width="9.33333" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="755.333" y="12" width="9.33333" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="772.667" y="12" width="9.33333" height="8" rx="2" fill="#BFBFC3"/>
+<rect x="790.5" y="8.5" width="15" height="15" rx="7.5" fill="#E9F3FC"/>
+<rect x="790.5" y="8.5" width="15" height="15" rx="7.5" stroke="#BFBFC3"/>
+<rect x="789" y="35" width="16" height="16" rx="2" fill="white"/>
+<rect x="789" y="35" width="16" height="16" rx="2" stroke="#A4A3A8" stroke-width="2"/>
+<rect x="35" y="9" width="56" height="16" rx="2" fill="white"/>
+<rect x="35" y="9" width="56" height="16" rx="2" stroke="#A4A3A8" stroke-width="2"/>
+<rect x="295" y="9" width="226" height="16" rx="3" fill="white"/>
+<rect x="295" y="9" width="226" height="16" rx="3" stroke="#BFBFC3" stroke-width="2"/>
+<rect x="8" y="8" width="18" height="18" rx="2" fill="#89888D"/>
+<rect x="108.5" y="34.5" width="332" height="369" rx="7.5" fill="white"/>
+<rect x="108.5" y="34.5" width="332" height="369" rx="7.5" stroke="#BFBFC3"/>
+<rect x="449.5" y="34.5" width="199" height="369" rx="7.5" fill="white"/>
+<rect x="449.5" y="34.5" width="199" height="369" rx="7.5" stroke="#BFBFC3"/>
+<rect x="657.5" y="34.5" width="124" height="369" rx="7.5" fill="white"/>
+<rect x="657.5" y="34.5" width="124" height="369" rx="7.5" stroke="#BFBFC3"/>
+<rect width="816" height="412" fill="#050506" fill-opacity="0.24"/>
+<rect x="169" y="148" width="478" height="116" rx="6" fill="white"/>
+<rect x="579" y="230" width="54" height="18" rx="3" fill="#1F75CB"/>
+<rect x="474" y="231" width="43" height="16" rx="2" fill="white"/>
+<rect x="474" y="231" width="43" height="16" rx="2" stroke="#A4A3A8" stroke-width="2"/>
+<rect x="527" y="231" width="43" height="16" rx="2" fill="white"/>
+<rect x="527" y="231" width="43" height="16" rx="2" stroke="#1F75CB" stroke-width="2"/>
+<rect x="185" y="208" width="403" height="6" rx="2" fill="#89888D"/>
+<rect x="185" y="198" width="413" height="6" rx="2" fill="#89888D"/>
+<rect x="185" y="188" width="407" height="6" rx="2" fill="#89888D"/>
+<rect x="185" y="164" width="78" height="8" rx="2" fill="#535158"/>
+<path d="M630.625 164.375C630.124 163.875 629.313 163.875 628.812 164.375L627 166.188L625.188 164.375C624.687 163.875 623.876 163.875 623.375 164.375C622.875 164.876 622.875 165.687 623.375 166.188L625.188 168L623.375 169.812C622.875 170.313 622.875 171.124 623.375 171.625C623.876 172.125 624.687 172.125 625.188 171.625L627 169.812L628.812 171.625C629.313 172.125 630.124 172.125 630.625 171.625C631.125 171.124 631.125 170.313 630.625 169.812L628.812 168L630.625 166.188C631.125 165.687 631.125 164.876 630.625 164.375Z" fill="#737278"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_40788_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(408) rotate(90) scale(412 816)">
+<stop stop-color="#FBFAFD"/>
+<stop offset="1" stop-color="#ECECEF"/>
+</radialGradient>
+<clipPath id="clip0_40788_57">
+<rect width="816" height="412" rx="8" fill="white"/>
+</clipPath>
+</defs>
+</svg>
