@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.9.0
+
+### Minor Changes
+
+- b12d4f7: Adds icon prop to disclosure dropdown item
+
 ## 128.8.3
 
 ### Patch Changes
