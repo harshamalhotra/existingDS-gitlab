@@ -557,7 +557,7 @@ function resolveFigmaValue(token) {
 
   // Ensure numeric values are proper JavaScript numbers
   // Converts string representations of numbers to actual number types
-  if (type === 'number' || type === 'fontWeight') {
+  if (type === 'number') {
     return Number(value);
   }
 
