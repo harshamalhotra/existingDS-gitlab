@@ -4,6 +4,7 @@ describe('Sync Tokens Utilities', () => {
   describe('DTCGToFigmaColorFormat', () => {
     it('converts DTCG color with explicit alpha to Figma format', () => {
       const input = {
+        colorSpace: 'srgb',
         components: [255, 128, 0],
         alpha: 0.8,
       };
@@ -20,6 +21,7 @@ describe('Sync Tokens Utilities', () => {
 
     it('converts DTCG color without alpha (defaults to 1)', () => {
       const input = {
+        colorSpace: 'srgb',
         components: [0, 150, 255],
       };
 
@@ -35,6 +37,7 @@ describe('Sync Tokens Utilities', () => {
 
     it('handles alpha value of 0 (fully transparent)', () => {
       const input = {
+        colorSpace: 'srgb',
         components: [100, 200, 50],
         alpha: 0,
       };
@@ -51,6 +54,7 @@ describe('Sync Tokens Utilities', () => {
 
     it('handles decimal RGB values', () => {
       const input = {
+        colorSpace: 'srgb',
         components: [0.5, 0.8, 0.2],
         alpha: 0.6,
       };
@@ -67,6 +71,7 @@ describe('Sync Tokens Utilities', () => {
 
     it('handles edge case with alpha explicitly set to undefined', () => {
       const input = {
+        colorSpace: 'srgb',
         components: [255, 255, 255],
         alpha: undefined,
       };
@@ -83,6 +88,7 @@ describe('Sync Tokens Utilities', () => {
 
     it('throws error when components array is missing', () => {
       const input = {
+        colorSpace: 'srgb',
         alpha: 0.5,
       };
 
@@ -93,7 +99,7 @@ describe('Sync Tokens Utilities', () => {
   describe('convertValue', () => {
     it('should convert color tokens with components', () => {
       const token = {
-        $value: { components: [1, 0, 0], alpha: 1 },
+        $value: { colorSpace: 'srgb', components: [1, 0, 0], alpha: 1 },
         $type: 'color',
       };
 
