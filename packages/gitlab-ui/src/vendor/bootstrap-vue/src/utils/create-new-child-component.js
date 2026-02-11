@@ -61,12 +61,54 @@ const extractEventHandlers = config => {
   return { handlers, cleanConfig }
 }
 
+const getVue3Constructor = parent => {
+  return parent.$.appContext.config.globalProperties.constructor
+}
+
+const BUILTIN_DIRECTIVES = [
+  'show',
+  'model',
+  'bind',
+  'cloak',
+  'else',
+  'else-if',
+  'for',
+  'html',
+  'if',
+  'memo',
+  'on',
+  'once',
+  'pre',
+  'slot',
+  'text'
+]
+
+const resolveComponentOptions = Component => {
+  const opts =
+    typeof Component === 'function' && Component.options
+      ? { ...Component.options }
+      : { ...Component }
+
+  if (opts.directives) {
+    opts.directives = Object.fromEntries(
+      Object.entries(opts.directives).filter(([key]) => !BUILTIN_DIRECTIVES.includes(key))
+    )
+  }
+
+  return opts
+}
+
 export const createNewChildComponent = (parent, Component, config = {}) => {
   const bvEventRoot = parent.$root ? parent.$root.$options.bvEventRoot || parent.$root : null
 
-  // Vue 3: pass handlers as props directly (Vue 3 converts onXxx props to listeners)
+  // Vue 3: resolve component options and instantiate via the Vue constructor
+  // to ensure the component runs through the Vue 3 runtime path
   if (isVue3(parent)) {
-    return new Component({
+    const Vue = getVue3Constructor(parent)
+    const componentOptions = resolveComponentOptions(Component)
+
+    return new Vue({
+      ...componentOptions,
       ...config,
       parent,
       bvParent: parent,
