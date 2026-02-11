@@ -11,19 +11,12 @@ export default {
   },
   provide() {
     return {
+      // Only for internal use by @gitlab/ui components
       getFormGroupInstance: () => this,
     };
   },
   inheritAttrs: false,
   props: {
-    /**
-     * The ID of the form group. Used to generate accessible IDs for the label.
-     */
-    id: {
-      type: String,
-      required: false,
-      default: null,
-    },
     /**
      * Additional CSS class(es) to apply to the label element.
      */
@@ -59,7 +52,7 @@ export default {
   },
   data() {
     return {
-      formGroupId: null,
+      labelId: uniqueId('gl-form-group-label-'),
     };
   },
   computed: {
@@ -83,22 +76,14 @@ export default {
       return Boolean(this.labelDescription || this.$slots['label-description']);
     },
   },
-  created() {
-    // Always generate an ID (use prop if provided, otherwise generate unique ID)
-    this.formGroupId = this.id || uniqueId('gl-form-group-');
-
-    // Derive and expose the label ID (BFormGroup appends '__BV_label_' to the form group ID)
-    this.labelId = `${this.formGroupId}__BV_label_`;
-  },
 };
 </script>
 <template>
   <b-form-group
     v-bind="$attrs"
-    :id="formGroupId"
-    ref="bFormGroup"
     class="gl-form-group"
     :label-class="actualLabelClass"
+    :label-id="labelId"
   >
     <template v-if="$attrs.label || $scopedSlots.label" #label>
       <slot name="label">

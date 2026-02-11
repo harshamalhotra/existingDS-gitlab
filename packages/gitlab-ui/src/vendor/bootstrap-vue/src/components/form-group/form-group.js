@@ -74,6 +74,7 @@ export const generateProps = () =>
       label: makeProp(PROP_TYPE_STRING),
       labelClass: makeProp(PROP_TYPE_ARRAY_OBJECT_STRING),
       labelFor: makeProp(PROP_TYPE_STRING),
+      labelId: makeProp(PROP_TYPE_STRING),
       labelSize: makeProp(PROP_TYPE_STRING),
       labelSrOnly: makeProp(PROP_TYPE_BOOLEAN, false),
       tooltip: makeProp(PROP_TYPE_BOOLEAN, false),
@@ -241,7 +242,8 @@ export const BFormGroup = {
 
     let $label = h()
     const labelContent = normalizeSlot(SLOT_NAME_LABEL) || this.label
-    const labelId = labelContent ? safeId('_BV_label_') : null
+    // TODO: this needs a test
+    const labelId = labelContent ? (this.labelId || safeId('_BV_label_')) : null
     if (labelContent || isHorizontal) {
       const { labelSize, labelColProps } = this
       const labelTag = isFieldset ? 'legend' : 'label'
