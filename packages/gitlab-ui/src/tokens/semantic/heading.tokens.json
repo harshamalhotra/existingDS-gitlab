@@ -3,7 +3,7 @@
     "default": {
       "margin": {
         "top": {
-          "$value": 0,
+          "$value": "{spacing-scale.0}",
           "$type": "dimension",
           "$extensions": {
             "com.figma.scopes": []

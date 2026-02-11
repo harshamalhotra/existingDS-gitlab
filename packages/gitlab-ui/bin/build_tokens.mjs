@@ -2,7 +2,6 @@
 
 import fs from 'node:fs';
 import { join } from 'node:path';
-import { globSync } from 'glob';
 import { format, resolveConfig } from 'prettier';
 import StyleDictionary from 'style-dictionary';
 import merge from 'lodash/merge.js';
@@ -11,6 +10,7 @@ import {
   tailwindComponentsFormat,
   tailwindDocsFormat,
   tailwindFormat,
+  figmaFormat,
 } from './lib/build_tokens_formats.js';
 import {
   stripDescriptionsPreprocessor,
@@ -18,6 +18,7 @@ import {
   selectDefaultValuePreprocessor,
   selectDarkValuePreprocessor,
   selectColorValuePreprocessor,
+  convertClampStringToDimension,
 } from './lib/build_tokens_preprocessors.js';
 
 /**
@@ -27,6 +28,16 @@ import {
 const PREFIX = 'gl';
 const ROOT = join(import.meta.dirname, '..');
 const BUILD_PATH = join(ROOT, 'src', 'tokens', 'build');
+// https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables#h_01KAGZ9T9H4P7RXY11SG4QXFY2
+const FIGMA_SUPPORTED_TYPES = [
+  'color',
+  'dimension',
+  'fontWeight',
+  'fontFamily',
+  'duration',
+  'number',
+  'string',
+];
 
 /**
  * Preprocessors
@@ -56,6 +67,11 @@ StyleDictionary.registerPreprocessor({
 StyleDictionary.registerPreprocessor({
   name: 'gitlab/select-color-value',
   preprocessor: selectColorValuePreprocessor,
+});
+
+StyleDictionary.registerPreprocessor({
+  name: 'gitlab/convert-clamp-string-to-dimension',
+  preprocessor: convertClampStringToDimension,
 });
 
 /**
@@ -94,6 +110,11 @@ StyleDictionary.registerTransformGroup({
   transforms: ['name/kebab'],
 });
 
+StyleDictionary.registerTransformGroup({
+  name: 'gitlab/figma',
+  transforms: ['name/kebab'],
+});
+
 /**
  * Formats
  * https://styledictionary.com/reference/api/#registerformat
@@ -116,6 +137,11 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: 'tailwind',
   format: tailwindFormat,
+});
+
+StyleDictionary.registerFormat({
+  name: 'figma',
+  format: figmaFormat,
 });
 
 /**
@@ -149,15 +175,27 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
   return {
     include: ['src/tokens/**/*.tokens.json'],
     source: ['src/tokens/**/*.tokens.json'],
-    preprocessors: [
-      'gitlab/select-default-value',
-      'gitlab/select-color-value',
-      'gitlab/resolve-units',
-    ],
+    preprocessors: ['gitlab/select-default-value'],
     hooks: {
       filters: {
         isTypographyDesignToken: (token) => {
           return token.$type === 'typography';
+        },
+        isFigmaSupportedTypeAndConstantDesignToken: (token) => {
+          return (
+            FIGMA_SUPPORTED_TYPES.includes(token.$type) &&
+            !token.$deprecated &&
+            token.filePath &&
+            token.filePath.includes('/constant/')
+          );
+        },
+        isFigmaSupportedTypeAndNotConstantDesignToken: (token) => {
+          return (
+            FIGMA_SUPPORTED_TYPES.includes(token.$type) &&
+            !token.$deprecated &&
+            token.filePath &&
+            !token.filePath.includes('/constant/')
+          );
         },
       },
     },
@@ -165,6 +203,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       css: {
         prefix: PREFIX,
         buildPath: `${buildPath}/css/`,
+        preprocessors: ['gitlab/resolve-units', 'gitlab/select-color-value'],
         transformGroup: 'gitlab/css',
         options: {
           outputReferences: true,
@@ -185,8 +224,12 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       js: {
         prefix: PREFIX,
         buildPath: `${buildPath}/js/`,
+        preprocessors: [
+          'gitlab/resolve-units',
+          'gitlab/select-color-value',
+          'gitlab/stripDescriptions',
+        ],
         transformGroup: 'gitlab/js',
-        preprocessors: ['gitlab/stripDescriptions'],
         actions: ['prettier'],
         expand: {
           include: ['typography'],
@@ -200,6 +243,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       },
       json: {
         buildPath: `${buildPath}/json/`,
+        preprocessors: ['gitlab/resolve-units', 'gitlab/select-color-value'],
         transformGroup: 'gitlab/js',
         files: [
           {
@@ -211,6 +255,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       scss: {
         prefix: PREFIX,
         buildPath: `${buildPath}/scss/`,
+        preprocessors: ['gitlab/resolve-units', 'gitlab/select-color-value'],
         transformGroup: 'gitlab/css',
         options: {
           outputReferences: true,
@@ -231,6 +276,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       },
       docs: {
         buildPath: `${buildPath}/docs/`,
+        preprocessors: ['gitlab/resolve-units', 'gitlab/select-color-value'],
         transformGroup: 'gitlab/js',
         files: [
           {
@@ -242,6 +288,7 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
       tailwind: {
         prefix: PREFIX,
         buildPath: `${buildPath}/tailwind/`,
+        preprocessors: ['gitlab/resolve-units', 'gitlab/select-color-value'],
         transformGroup: 'gitlab/tailwind',
         actions: ['prettier'],
         files: [
@@ -249,6 +296,23 @@ const getStyleDictionaryConfigDefault = (buildPath) => {
             destination: 'components.cjs',
             format: 'tailwind/components',
             filter: 'isTypographyDesignToken',
+          },
+        ],
+      },
+      figma: {
+        buildPath: `${buildPath}/figma/`,
+        preprocessors: ['gitlab/convert-clamp-string-to-dimension'],
+        transformGroup: 'gitlab/figma',
+        files: [
+          {
+            destination: 'constants.json',
+            format: 'figma',
+            filter: 'isFigmaSupportedTypeAndConstantDesignToken',
+          },
+          {
+            destination: 'mode.json',
+            format: 'figma',
+            filter: 'isFigmaSupportedTypeAndNotConstantDesignToken',
           },
         ],
       },
@@ -282,11 +346,7 @@ const getStyleDictionaryConfigTailwind = (buildPath = 'dist/tokens') => {
  */
 const getStyleDictionaryConfigDarkMode = (buildPath) => {
   return merge(getStyleDictionaryConfigDefault(buildPath), {
-    preprocessors: [
-      'gitlab/select-dark-value',
-      'gitlab/select-color-value',
-      'gitlab/resolve-units',
-    ],
+    preprocessors: ['gitlab/select-dark-value', 'gitlab/resolve-units'],
     platforms: {
       css: {
         files: [
@@ -326,71 +386,19 @@ const getStyleDictionaryConfigDarkMode = (buildPath) => {
           },
         ],
       },
+      figma: {
+        files: [
+          {
+            destination: 'constants.dark.json',
+          },
+          {
+            destination: 'mode.dark.json',
+          },
+        ],
+      },
     },
   });
 };
-
-/**
- * Add extension(s) to the tokens
- * See https://tr.designtokens.org/format/#extensions
- */
-function addExtension(tokens, extension, extensionValue = true) {
-  Object.values(tokens).forEach((value) => {
-    value.$extensions ||= {};
-    value.$extensions[extension] = extensionValue;
-  });
-
-  return tokens;
-}
-
-/**
- * Load and concatenate token files from the tokens directory,
- * categorized into four groups by subdirectory.
- *
- * @param {string} outputDir Directory where to write the output files (will be created if it does not exist)
- */
-async function buildFigmaTokens(buildPath) {
-  const combineTokenFiles = (category) => {
-    const files = globSync(`./src/tokens/${category}/**/*.tokens.json`)
-      // Naive attempt to keep JSON output stable across builds. A more robust
-      // solution would be to use safe-stable-stringify or similar when writing
-      // the files.
-      .sort();
-
-    return files.reduce((acc, file) => {
-      const fileTokens = JSON.parse(fs.readFileSync(file, 'utf-8'));
-      return merge(acc, fileTokens);
-    }, {});
-  };
-
-  const tokenCategories = [
-    {
-      name: 'semantic.tokens.json',
-      tokens: combineTokenFiles('semantic'),
-    },
-    {
-      name: 'constants.tokens.json',
-      tokens: combineTokenFiles('constant'),
-    },
-    {
-      name: 'contextual.tokens.json',
-      tokens: addExtension(combineTokenFiles('contextual'), 'com.gitlab.locked'),
-    },
-    {
-      name: 'deprecated.tokens.json',
-      tokens: addExtension(combineTokenFiles('deprecated'), 'com.gitlab.deprecated'),
-    },
-  ];
-
-  const outputDir = join(buildPath, 'figma');
-  fs.mkdirSync(outputDir, { recursive: true });
-
-  for (const { name, tokens } of tokenCategories) {
-    fs.writeFileSync(join(outputDir, name), JSON.stringify(tokens, null, 2));
-  }
-
-  console.log('✔︎ Figma tokens built successfully');
-}
 
 /**
  * Build tokens from config
@@ -409,9 +417,6 @@ async function main() {
 
     const tailwindDictionary = new StyleDictionary(getStyleDictionaryConfigTailwind(BUILD_PATH));
     await tailwindDictionary.buildAllPlatforms();
-
-    // Build tokens for Figma
-    await buildFigmaTokens(BUILD_PATH);
   } catch (error) {
     console.error('🚨 Error building tokens:', error);
     process.exit(1);
