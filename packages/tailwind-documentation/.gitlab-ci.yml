@@ -1,10 +1,11 @@
 .tw:common:
   image: $NODE_IMAGE
   before_script:
+    - source scripts/utils.sh
     - cd packages/tailwind-documentation
     - echo 'yarn-offline-mirror ".yarn-cache/"' >> .yarnrc
     - echo 'yarn-offline-mirror-pruning true' >> .yarnrc
-    - yarn install --frozen-lockfile --no-progress
+    - retry yarn install --frozen-lockfile --no-progress
   cache:
     key:
       files:

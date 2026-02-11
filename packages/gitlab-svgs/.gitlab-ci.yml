@@ -15,8 +15,9 @@ include:
       - node_modules/
     policy: pull
   before_script:
+    - source scripts/utils.sh
     - cd packages/gitlab-svgs
-    - yarn install --frozen-lockfile
+    - retry yarn install --frozen-lockfile
 
 svgs:build-and-check:
   extends:
