@@ -474,6 +474,10 @@
             "path": "modal"
           },
           {
+            "title": "Multi-step form template",
+            "path": "multi-step-form-template"
+          },
+          {
             "title": "Pagination",
             "path": "pagination"
           },
