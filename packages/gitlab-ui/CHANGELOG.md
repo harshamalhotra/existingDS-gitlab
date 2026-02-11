@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.10.0
+
+### Minor Changes
+
+- 17b8c3d: Update GlToggle to allow showing help text regardless of layout
+
 ## 128.9.1
 
 ### Patch Changes

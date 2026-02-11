@@ -1,5 +1,11 @@
 # @gitlab/svgs
 
+## 3.157.0
+
+### Minor Changes
+
+- 9bcd880: Adds 'user-permissions' and 'token-permissions' icons.
+
 ## 3.156.0
 
 ### Minor Changes
