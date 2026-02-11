@@ -57,7 +57,7 @@ export default {
   directives: { Outside: OutsideDirective },
   inject: {
     getFormGroupInstance: {
-      default: null,
+      default: () => {},
     },
   },
   props: {
@@ -248,9 +248,6 @@ export default {
     isDefaultToggle() {
       return !this.$scopedSlots.toggle;
     },
-    isInFormGroup() {
-      return Boolean(this.getFormGroupInstance?.());
-    },
     isToggleCombobox() {
       if (this.hasSearchableListbox || this.isDisclosure) {
         return false;
@@ -282,9 +279,6 @@ export default {
       }
       return undefined;
     },
-    formGroupLabelId() {
-      return this.getFormGroupInstance?.()?.labelId;
-    },
     toggleAriaAttributes() {
       return {
         'aria-controls': this.baseDropdownId,
@@ -311,6 +305,8 @@ export default {
     },
     // Set the aria-labelledby property with one or more ID strings
     toggleLabelledBy() {
+      const formGroupLabelId = this.getFormGroupInstance()?.labelId;
+
       if (this.isToggleCombobox) {
         // Comboboxes announce label and self value when aria-labelledby is label ID.
         // Tested with VoiceOver, NVDA, JAWS, Narrator and preferred browsers.
@@ -319,8 +315,8 @@ export default {
         }
 
         // Combobox inside GlFormGroup
-        if (this.isInFormGroup && this.formGroupLabelId) {
-          return `${this.formGroupLabelId} ${this.toggleId}`;
+        if (formGroupLabelId) {
+          return `${formGroupLabelId} ${this.toggleId}`;
         }
 
         // Fallback calculated toggleId value
@@ -335,8 +331,8 @@ export default {
         }
 
         // Disclosure or button with listbox inside GlFormGroup
-        if (this.isInFormGroup && this.formGroupLabelId) {
-          return `${this.formGroupLabelId} ${this.toggleId}`;
+        if (formGroupLabelId) {
+          return `${formGroupLabelId} ${this.toggleId}`;
         }
 
         // Fallback calculated toggleId value
