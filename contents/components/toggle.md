@@ -24,10 +24,10 @@ related:
 <figure-img alt="Numbered diagram of a toggle structure" label="Toggle structure" src="/img/toggle-structure.svg"></figure-img>
 
 1. **Label**: Describes the control when the toggle is on.
-1. **Description**: (optional) Provides more context for the label.
+1. **Description** (optional): Provides more context for the label.
 1. **Switch**: Visual indication of whether the toggle is on or off.
 1. **Body**: Containing body for the switch to move on and off.
-1. **Help text**: Clarifies the outcome of changing the toggle state.
+1. **Help text** (optional): Clarifies the outcome of changing the toggle state.
 
 ## Guidelines
 
@@ -72,7 +72,6 @@ related:
 #### Help text
 
 - Clarifies the outcome of changing the toggle state.
-- Only available using a vertical layout.
 
 ### Accessibility
 
