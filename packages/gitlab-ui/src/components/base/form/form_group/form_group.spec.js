@@ -23,24 +23,21 @@ describe('Form group component', () => {
   };
 
   it('provides getFormGroupInstance function that returns the component instance', () => {
-    const childComponent = {
-      inject: ['getFormGroupInstance'],
-      template: '<div>{{ hasFormGroup }}</div>',
-      computed: {
-        hasFormGroup() {
-          const instance = this.getFormGroupInstance();
-          return instance && typeof instance.labelId === 'string';
-        },
-      },
-    };
+    let instance;
 
     wrapper = mount(GlFormGroup, {
       slots: {
-        default: childComponent,
+        default: {
+          inject: ['getFormGroupInstance'],
+          render() {
+            instance = this.getFormGroupInstance();
+            return null;
+          },
+        },
       },
     });
 
-    expect(wrapper.text()).toContain('true');
+    expect(instance).toBe(wrapper.vm);
   });
 
   it.each`

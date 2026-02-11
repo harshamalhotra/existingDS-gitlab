@@ -57,7 +57,7 @@ export default {
   directives: { Outside: OutsideDirective },
   inject: {
     getFormGroupInstance: {
-      default: () => {},
+      default: () => () => {},
     },
   },
   props: {

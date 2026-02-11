@@ -68,7 +68,7 @@ export default {
   },
   inject: {
     getFormGroupInstance: {
-      default: () => {},
+      default: () => () => {},
     },
   },
   model: {

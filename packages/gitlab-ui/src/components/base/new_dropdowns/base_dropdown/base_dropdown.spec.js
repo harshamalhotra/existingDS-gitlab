@@ -774,7 +774,6 @@ describe('base dropdown', () => {
           },
           {
             provide: {
-              isInFormGroup: true,
               formGroupLabelState: { id: 'form-group-label' },
             },
           },
@@ -827,7 +826,6 @@ describe('base dropdown', () => {
           },
           {
             provide: {
-              isInFormGroup: true,
               formGroupLabelState: { id: 'form-group-label' },
             },
           },

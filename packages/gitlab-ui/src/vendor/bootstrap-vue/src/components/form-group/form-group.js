@@ -242,8 +242,7 @@ export const BFormGroup = {
 
     let $label = h()
     const labelContent = normalizeSlot(SLOT_NAME_LABEL) || this.label
-    // TODO: this needs a test
-    const labelId = labelContent ? (this.labelId || safeId('_BV_label_')) : null
+    const labelId = labelContent ? this.labelId || safeId('_BV_label_') : null
     if (labelContent || isHorizontal) {
       const { labelSize, labelColProps } = this
       const labelTag = isFieldset ? 'legend' : 'label'
