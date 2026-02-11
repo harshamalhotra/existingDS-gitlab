@@ -37,6 +37,7 @@
     "prebuild": "yarn build-tokens",
     "copy-fonts": "make copy-fonts",
     "build-tokens": "make tokens",
+    "sync-tokens": "node --env-file=.env bin/sync_tokens_to_figma.mjs",
     "clean": "rm -r dist storybook",
     "cy:edge": "cypress run --browser edge --env grepTags=-@storybook",
     "cy:run": "cypress run --browser firefox --env grepTags=-@storybook",
