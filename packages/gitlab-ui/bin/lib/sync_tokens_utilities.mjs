@@ -22,6 +22,11 @@
  * // Returns: { r: 0, g: 150, b: 255, a: 1 }
  */
 export function DTCGToFigmaColorFormat($value) {
+  if ($value.colorSpace !== 'srgb' || $value.components.length !== 3) {
+    throw new Error(
+      'sRGB DTCG color components must be an array with exactly 3 elements [r, g, b]',
+    );
+  }
   const [r, g, b] = $value.components;
   const a = $value.alpha !== undefined ? $value.alpha : 1;
   return { r, g, b, a };
@@ -125,7 +130,13 @@ export function resolveValue(token, allTokens, variables, variableName = null) {
     if (typeof $value === 'number') {
       return $value;
     }
-    return parseFloat($value);
+    const parsedValue = parseFloat($value);
+
+    if (Number.isNaN(parsedValue)) {
+      throw new Error(`Cannot convert value "${$value}" to float for variable "${variableName}"`);
+    }
+
+    return parsedValue;
   }
 
   if (figmaType === 'STRING') {
