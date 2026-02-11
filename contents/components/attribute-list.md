@@ -23,6 +23,8 @@ This component displays these attributes in a responsive grid layout, making the
 ></gl-attribute-list>
 ```
 
+[View in Pajamas UI Kit →](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=136188-11)
+
 ## Structure
 
 <figure-img alt="Numbered diagram of an attribute list" label="Attribute list structure" src="/img/attribute-list-structure.svg"></figure-img>
