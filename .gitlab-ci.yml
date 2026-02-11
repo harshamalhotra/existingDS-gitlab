@@ -125,7 +125,8 @@ gitlab-advanced-sast:
 .node-job:
   image: $NODE_IMAGE
   before_script:
-    - yarn install --frozen-lockfile
+    - source scripts/utils.sh
+    - retry yarn install --frozen-lockfile
 
 .build_cache:
   variables:
