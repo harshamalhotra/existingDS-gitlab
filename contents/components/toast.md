@@ -50,7 +50,7 @@ related:
 
 ### Placement
 
-- Centered at the bottom of the viewport for smaller breakpoints and bottom left of the viewport for larger breakpoints.
+- Centered above all content at the bottom of the viewport for smaller breakpoints and bottom left of the viewport for larger breakpoints.
 - Multiple toasts stack vertically from top to bottom with the oldest on top.
 
 ### Accessibility

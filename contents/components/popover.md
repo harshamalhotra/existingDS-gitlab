@@ -42,7 +42,6 @@ related:
 
 ### Appearance
 
-- By default, a popover is placed above the referring element.
 - When there isn't enough space in the viewport, the popover is moved to the side or below as needed.
 - If a popover blocks related content, the placement can be manually set to avoid this.
 - To optimize for readability, content within a popover uses left-alignment.
@@ -66,6 +65,11 @@ related:
 - A popover can contain rich content like an [avatar](/components/avatar).
 - All copy within a popover should be short, actionable, and use clear language.
 - The copy in the header should be shorter and even more concise than the copy in the body of the popover.
+
+### Placement
+
+- By default, a popover is placed above the referring element.
+- Popover edge detection responds to the viewport and not the [panel](/product-foundations/layout/#panel-based-layout) bounds. This means that a popover can overlap multiple panels at once to ensure it's fully visible.
 
 ### Accessibility
 
