@@ -114,6 +114,8 @@ Input and selection controls can be any width that uses a [base-8 progression](/
 - **Large**: 320px
 - **Extra large**: 560px
 
+When capturing user input requires multiple focused steps, consider using a [multi-step form template](/components/form-multi-step).
+
 ### Behavior
 
 Form components may display the following behaviors:

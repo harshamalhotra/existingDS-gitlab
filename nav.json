@@ -432,6 +432,10 @@
                 "path": "form-input-group"
               },
               {
+                "title": "Multi-step form template",
+                "path": "form-multi-step"
+              },
+              {
                 "title": "Radio button",
                 "path": "radio-button"
               },
@@ -472,10 +476,6 @@
           {
             "title": "Modal",
             "path": "modal"
-          },
-          {
-            "title": "Multi-step form template",
-            "path": "multi-step-form-template"
           },
           {
             "title": "Pagination",
