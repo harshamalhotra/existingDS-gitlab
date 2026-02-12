@@ -49,11 +49,7 @@ related:
 
 ### Behavior
 
-- The drawer follows the [motion guidelines](/product-foundations/animation-fundamentals) and slides in from the right side of the viewport.
-  - `200ms` with an ease-in animation.
-  - By default, the drawer is above all page content.
-  - If full-width elements exist on the page and you do not want the drawer to cover them then you may specify the drawer to be embedded in the page and push some or all of the content rather than covering it.
-- Only one drawer can be open on a page at a time.
+- The drawer follows the [motion guidelines](/product-foundations/animation-fundamentals) and slides in from the right side of the parent container with a `200ms` (`$gl-transition-duration-medium`) ease-in animation.
 - A drawer should never take the user by surprise — let a user’s action open it.
 - A drawer can be closed with the close button or the <kbd>Esc</kbd> key.
 - When content overflows the drawer height, it scrolls vertically under the header.
@@ -82,6 +78,11 @@ related:
 #### Actions
 
 - Left aligned, except in right-to-left languages where they are right aligned and the order is the same. See button [alignment](/components/button#alignment) and [order](/components/button#order) for more details.
+
+### Placement
+
+- By default, the drawer is on the right side of its parent container and above all [panel](https://design.gitlab.com/product-foundations/layout/#panel-based-layout) or page content.
+- If full-width elements exist on the page and you do not want the drawer to cover them, then you may specify the drawer to be embedded and push some or all of the content rather than covering it.
 
 ### Accessibility
 

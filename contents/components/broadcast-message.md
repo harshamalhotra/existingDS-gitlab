@@ -41,19 +41,19 @@ extendedNotice:
 
 ### Appearance
 
-Background color is chosen by the admin from a set of swatches when creating the broadcast message.
+- Background color is chosen by the admin from a set of swatches when creating the broadcast message.
 
 ### Behavior
 
-Expires after a set period defined by the admin, but may also be dismissed by a user if the dismiss setting is enabled by the admin.
+- Expires after a set period defined by the admin, but may also be dismissed by a user if the dismiss setting is enabled by the admin.
 
 ### Content
 
-Contains a small amount of text content that uses the container width when user preference is set to use a [fixed width](https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width) layout.
+- Contains a small amount of text content that uses the container width when user preference is set to use a [fixed width](https://docs.gitlab.com/ee/user/profile/preferences.html#layout-width) layout.
 
 ### Placement
 
-- At the top of every page.
+- At the top of the [static panel](https://design.gitlab.com/product-foundations/layout/#panel-based-layout).
 - Multiple broadcast messages stack vertically.
 
 ### Accessibility

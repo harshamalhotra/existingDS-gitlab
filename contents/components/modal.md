@@ -66,9 +66,7 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 
 ### Behavior
 
-- Opens on top of all other content with a transparent backdrop behind to cover it.
-- Top-aligned at the extra-small (xs) breakpoint and otherwise vertically centered in the viewport.
-- Always center horizontally and scale down responsively when the page is narrower than the modal's max width.
+- Width scales down responsively when the page is narrower than the modal's max width.
 - The height of the modal is determined by the content.
   - When modal content extends below the viewport, the viewport remains scrollable.
   - If modal content exceeds the height of the viewport and impedes a user’s ability to maintain context or see important actions, the content within the modal can be made scrollable. However, this should be avoided, if possible, because doing so impacts the ability for [dropdowns](/components/dropdown-overview) and other popups ([tooltips](/components/tooltip) and [popovers](/components/popover)) to extend outside the boundary of the modal when necessary and to reposition as needed depending on available space.
@@ -82,8 +80,6 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
   - Clicking outside of it.
 - When dismissed, focus returns to the referring control.
 
-<figure-img alt="Diagram showing a modal positioned above all other page content" label="Modal in a layer above all other page content" src="/img/modal-position.svg"></figure-img>
-
 ### Content
 
 - The header is either a question, a descriptive phrase, or title. The header also contains the close icon in every instance.
@@ -93,6 +89,14 @@ Clicking the "edit" button places a user in an "edit mode" for this row, which u
 - When labeling your actions, let the user know what will happen for each possible decision you are affording to them and be specific. For example, when asking the user to set their status, use "Set status" and "Remove status" instead of simply, "Save" and "Delete".
 - There should always be multiple ways to close/dismiss this type of modal, including allowing the user to click outside of the modal area or use the escape key. This is important as some modals can be tall and we want to avoid making the user scroll up to close a modal.
 - Follow the [high severity destructive action](/patterns/destructive-actions#high-severity) guidance when the action is destructive or difficult to recover from.
+
+### Placement
+
+- Opens on top of all other content with a transparent backdrop behind it.
+- Top-aligned at the extra-small (xs) viewport size and otherwise vertically centered in the viewport.
+- Horizontally centered in the viewport.
+
+<figure-img alt="Diagram showing a modal positioned above all other page content" label="Modal in a layer above all other page content" src="/img/modal-position.svg"></figure-img>
 
 ### Accessibility
 
