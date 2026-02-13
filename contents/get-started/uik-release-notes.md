@@ -3,6 +3,38 @@ name: Release notes
 navigationHeadingLevels: [2]
 ---
 
+## 18.9
+
+<small>Published 2026-02-13</small>
+
+It's our first full release of the year and true to form we kicked it off with some cleanup. We've tidied up how content is labeled in the component library and added guidance for extended components, making the library easier to navigate at a glance.
+
+Full highlights:
+
+- New attribute list component for structured key-value content.
+- Banner is on hold while we focus on the [banner reduction initiative](https://gitlab.com/groups/gitlab-org/-/work_items/20604) — avoid using it for new work.
+- "Product examples" and "Instances" pages renamed to "Sticker sheet" and "How to use" across the library.
+
+**💡 Figma tip:** You can use the [Actions menu](https://help.figma.com/hc/en-us/articles/23570416033943-Use-the-actions-menu-in-Figma-Design) (<kbd>⌘K</kbd>) to quickly access AI features and productivity actions.
+
+### Changelog
+
+#### ➕ Additions
+
+- (Component Library): Adds [**❖&nbsp;Attribute list**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=136188-11&p=f&t=K83qOTQLEH93NAT5-11) component.
+- (Product Illustrations): Adds [**empty-artifacts-sm**](https://design.gitlab.com/product-foundations/illustration-directory?q=~empty-artifacts-sm) and [**empty-artifacts-md**](https://design.gitlab.com/product-foundations/illustration-directory?q=~empty-artifacts-md) illustrations.
+- (Product Icons): Adds [**user-permissions**](https://design.gitlab.com/product-foundations/iconography-directory?q=~user-permissions), [**token-permissions**](https://design.gitlab.com/product-foundations/iconography-directory?q=~token-permissions), [**replace**](https://design.gitlab.com/product-foundations/iconography-directory?q=~replace) and [**replace-all**](https://design.gitlab.com/product-foundations/iconography-directory?q=~replace-all) icons.
+
+#### 🔄 Changes
+
+- (Component Library): Adds on hold messaging to [**❖&nbsp;Banner**](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?node-id=126604-7807&p=f&t=K83qOTQLEH93NAT5-11) to prevent use while we focus on our [banner reduction initiative](https://gitlab.com/groups/gitlab-org/-/work_items/20604).
+- (Component Library): Renames "Product examples" to "Sticker sheet" and "Instances" to "How to use" to better identify the purpose of different content and artifacts.
+- (Component Library): Adds note in description for extended components to indicate at the point of use that they are [extended](https://design.gitlab.com/get-started/glossary#extended).
+
+#### Contributors
+
+Alex Fracazo, Dan Mizzi-Harris, Figma, Jeremy Elder, Julia Miocene, Sascha Eggenberger, Ilonah Pelaez
+
 ## 18.8
 
 <small>Published 2026-01-09</small>
@@ -16,7 +48,6 @@ This release updates the application chrome layout templates to reflect the late
 #### 🔄 Changes
 
 - (Patterns & Page Templates): [Application chrome](https://www.figma.com/design/Amn6vBN9edRtuaTgy6ygkl/Patterns-and-Page-Templates?node-id=3353-152) adjustments:
-
   - Updates AI navigation width and spacing.
   - Adjusts GitLab Duo panel spacing at small breakpoint.
 
