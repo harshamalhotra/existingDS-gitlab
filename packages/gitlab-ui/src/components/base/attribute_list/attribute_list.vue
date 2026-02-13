@@ -37,7 +37,7 @@ export default {
       default: '',
     },
     /**
-     * Layout of label and text: 'horizontal' for inline/flex or 'vertical' for block.
+     * Layout of label and text: 'horizontal' for line or 'vertical' for stacked
      */
     layout: {
       type: String,

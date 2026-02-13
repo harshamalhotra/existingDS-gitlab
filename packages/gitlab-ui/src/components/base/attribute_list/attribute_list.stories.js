@@ -26,7 +26,6 @@ const defaultItems = [
     icon: 'merge-request',
     label: 'Changes',
     text: 'package.json, src/index.js, src/utils.js',
-    count: 3,
   },
   { icon: 'calendar', label: 'Created', text: '1 month ago' },
   { icon: 'calendar', label: 'Updated', text: '15 min ago' },
@@ -84,7 +83,6 @@ export const WithSlots = (args, { argTypes }) => ({
       <template #label="{ item }">
         <gl-icon v-if="item.icon" class="gl-attribute-list-item-label-icon" :name="item.icon" variant="subtle" />
         <span>{{ item.label }}</span>
-        <gl-badge v-if="item.count">{{ item.count }}</gl-badge>
       </template>
 
       <template #description="{ item }">

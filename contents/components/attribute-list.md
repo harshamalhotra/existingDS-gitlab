@@ -118,4 +118,34 @@ Decide how to represent null values on a case-by-case basis. Some ways of addres
 
 The `GlAttributeList` component displays key-value pairs in a grid layout.
 
+#### Custom slot content
+
+```html
+<!-- live-example -->
+<gl-attribute-list
+  :items="[
+    { icon: 'work-item-issue', label: 'Issue', text: '#12345' },
+    { icon: 'merge-request', label: 'Merge request', text: '!12345' },
+    {
+      icon: 'commit',
+      label: 'Commit SHA',
+      text: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+    }
+  ]"
+>
+  <template #description="{ item }">
+    <gl-link v-if="item.label === 'Issue'" href="#">
+      {{ item.text }}
+    </gl-link>
+    <gl-badge v-else-if="item.label === 'Merge request'" href="#" icon="merge-request" variant="success">
+      {{ item.text }}
+    </gl-badge>
+    <div v-else-if="item.label === 'Commit SHA'" class="gl-truncate">
+      {{ item.text }}
+    </div>
+    <template v-else>{{ item.text }}</template>
+  </template>
+</gl-attribute-list>
+```
+
 <story-viewer component="base-attribute-list" title="GlAttributeList" view-mode="docs"></story-viewer>
