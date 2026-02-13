@@ -1,4 +1,4 @@
-import { syncConstants, syncMode } from './sync_tokens_collections.mjs';
+import { syncConstants, syncMode } from './figma_sync_tokens_collections.mjs';
 
 describe('Sync Tokens Collections', () => {
   describe('syncConstants', () => {

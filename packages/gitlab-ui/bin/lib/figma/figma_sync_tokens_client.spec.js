@@ -1,4 +1,4 @@
-import { FigmaClient } from './sync_tokens_figma_client.mjs';
+import { FigmaClient } from './figma_sync_tokens_client.mjs';
 
 global.fetch = jest.fn();
 

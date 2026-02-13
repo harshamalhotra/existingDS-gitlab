@@ -51,13 +51,21 @@ export function convertValue(token) {
   }
 
   // Handle numbers
-  if ($type === 'number' && typeof $value === 'number') {
-    return $value;
+  if ($type === 'number') {
+    return Number($value);
   }
 
   // Handle strings
-  if ($type === 'string' || $type === 'fontWeight') {
+  if ($type === 'string') {
     return String($value);
+  }
+
+  // Handle fontWeights
+  if ($type === 'fontWeight') {
+    if (typeof $value === 'string') {
+      return String($value);
+    }
+    return Number($value);
   }
 
   return $value;
@@ -65,6 +73,7 @@ export function convertValue(token) {
 
 /**
  * Get Figma variable type from token type
+ * https://developers.figma.com/docs/rest-api/variables-types/#variable-type
  * @param {string} tokenType - Token type (e.g., 'color', 'dimension')
  * @returns {string} Figma variable type (e.g., 'COLOR', 'FLOAT')
  */
@@ -74,7 +83,7 @@ export function getVariableType(tokenType) {
     dimension: 'FLOAT',
     number: 'FLOAT',
     string: 'STRING',
-    fontWeight: 'STRING',
+    fontWeight: 'FLOAT',
     lineHeight: 'FLOAT',
     letterSpacing: 'FLOAT',
     opacity: 'FLOAT',

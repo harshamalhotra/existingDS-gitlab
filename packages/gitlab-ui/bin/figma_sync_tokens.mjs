@@ -2,8 +2,8 @@
 
 import fs from 'node:fs';
 import { join } from 'node:path';
-import { FigmaClient } from './lib/sync_tokens_figma_client.mjs';
-import { syncConstants, syncMode } from './lib/sync_tokens_collections.mjs';
+import { FigmaClient } from './lib/figma/figma_sync_tokens_client.mjs';
+import { syncConstants, syncMode } from './lib/figma/figma_sync_tokens_collections.mjs';
 
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN || '';
 const FIGMA_FILE_ID = process.env.FIGMA_FILE_ID || '';

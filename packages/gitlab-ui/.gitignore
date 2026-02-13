@@ -14,3 +14,4 @@ yarn-error.log
 /static/fonts/
 /bin/temp
 /tailwind-config-viewer-static/
+.figma.env

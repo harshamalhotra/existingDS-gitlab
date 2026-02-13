@@ -1,9 +1,30 @@
-import { resolveValue, getVariableType } from './sync_tokens_utilities.mjs';
+import { resolveValue, getVariableType } from './figma_sync_tokens_utilities.mjs';
 import {
   extractExistingOrder,
   mergeVariableOrder,
   generateOrderedVariableIds,
-} from './sync_tokens_order.mjs';
+} from './figma_sync_tokens_order.mjs';
+
+/**
+ * Reorder variables in a collection if new variables were created
+ * @param {Array} creates - Array of created variable objects
+ * @param {Array} existingOrder - Existing variable order
+ * @param {FigmaClient} client - Figma API client
+ * @param {string} collectionId - Collection ID to reorder
+ * @returns {Promise<void>}
+ */
+// eslint-disable-next-line max-params
+async function reorderVariablesInExistingOrder(creates, existingOrder, client, collectionId) {
+  if (creates.length > 0) {
+    const newVariableNames = creates.map((c) => c.name);
+    const desiredOrder = mergeVariableOrder(existingOrder, newVariableNames);
+    const orderedIds = generateOrderedVariableIds(desiredOrder, client.variables);
+
+    if (orderedIds.length > 0) {
+      await client.reorderCollection(collectionId, orderedIds);
+    }
+  }
+}
 
 /**
  * Sync constants collection
@@ -81,15 +102,7 @@ export async function syncConstants(client, tokens) {
   }
 
   // Reorder variables if new ones were created
-  if (creates.length > 0) {
-    const newVariableNames = creates.map((c) => c.name);
-    const desiredOrder = mergeVariableOrder(existingOrder, newVariableNames);
-    const orderedIds = generateOrderedVariableIds(desiredOrder, client.variables);
-
-    if (orderedIds.length > 0) {
-      await client.reorderCollection(collection.id, orderedIds);
-    }
-  }
+  await reorderVariablesInExistingOrder(creates, existingOrder, client, collection.id);
 
   return { variablesCreated: creates.length };
 }
@@ -193,15 +206,7 @@ export async function syncMode(client, lightTokens, darkTokens) {
   }
 
   // Reorder variables if new ones were created
-  if (creates.length > 0) {
-    const newVariableNames = creates.map((c) => c.name);
-    const desiredOrder = mergeVariableOrder(existingOrder, newVariableNames);
-    const orderedIds = generateOrderedVariableIds(desiredOrder, client.variables);
-
-    if (orderedIds.length > 0) {
-      await client.reorderCollection(collection.id, orderedIds);
-    }
-  }
+  await reorderVariablesInExistingOrder(creates, existingOrder, client, collection.id);
 
   return { variablesCreated: creates.length };
 }

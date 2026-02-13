@@ -2,7 +2,7 @@ import {
   extractExistingOrder,
   mergeVariableOrder,
   generateOrderedVariableIds,
-} from './sync_tokens_order.mjs';
+} from './figma_sync_tokens_order.mjs';
 
 describe('Sync Tokens Order', () => {
   describe('extractExistingOrder', () => {

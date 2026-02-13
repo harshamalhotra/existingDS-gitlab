@@ -1,4 +1,8 @@
-import { DTCGToFigmaColorFormat, convertValue, getVariableType } from './sync_tokens_utilities.mjs';
+import {
+  DTCGToFigmaColorFormat,
+  convertValue,
+  getVariableType,
+} from './figma_sync_tokens_utilities.mjs';
 
 describe('Sync Tokens Utilities', () => {
   describe('DTCGToFigmaColorFormat', () => {

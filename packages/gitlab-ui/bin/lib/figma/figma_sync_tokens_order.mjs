@@ -13,7 +13,7 @@ export function extractExistingOrder(collection, variables) {
 
   collection.variableIds.forEach((varId) => {
     // Find the variable by ID
-    const variable = Array.from(variables.values()).find((v) => v.id === varId);
+    const variable = variables.values().find((v) => v.id === varId);
     if (variable) {
       orderedNames.push(variable.name);
     }
@@ -30,9 +30,9 @@ export function extractExistingOrder(collection, variables) {
  */
 export function mergeVariableOrder(existingOrder, newVariables) {
   // Filter out variables that already exist
-  const uniqueNewVariables = newVariables.filter((name) => !existingOrder.includes(name));
+  const uniqueNewVariables = new Set(newVariables).difference(new Set(existingOrder));
 
-  if (uniqueNewVariables.length === 0) {
+  if (uniqueNewVariables.size === 0) {
     return existingOrder;
   }
 
