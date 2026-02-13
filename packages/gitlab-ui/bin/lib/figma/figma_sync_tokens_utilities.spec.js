@@ -152,7 +152,7 @@ describe('Sync Tokens Utilities', () => {
       expect(getVariableType('dimension')).toBe('FLOAT');
       expect(getVariableType('number')).toBe('FLOAT');
       expect(getVariableType('string')).toBe('STRING');
-      expect(getVariableType('fontWeight')).toBe('STRING');
+      expect(getVariableType('fontWeight')).toBe('FLOAT');
     });
 
     it('should default to STRING for unknown types', () => {
