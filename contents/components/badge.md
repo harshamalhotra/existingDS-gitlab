@@ -10,11 +10,39 @@ related:
 
 ## Examples
 
-<story-viewer component="base-badge" story="variants" title="Badge variants"></story-viewer>
+### Badge variants
 
-<story-viewer component="base-badge" story="actionable" title="Actionable badges"></story-viewer>
+```html
+<!-- live-example -->
+<gl-badge variant="neutral">neutral</gl-badge>
+<gl-badge variant="info">info</gl-badge>
+<gl-badge variant="success">success</gl-badge>
+<gl-badge variant="warning">warning</gl-badge>
+<gl-badge variant="danger">danger</gl-badge>
+<gl-badge variant="tier">tier</gl-badge>
+```
 
-<story-viewer component="base-badge" story="badge-icon" title="With icons"></story-viewer>
+### Actionable badges
+
+```html
+<!-- live-example -->
+<gl-badge href="#foo" variant="neutral">neutral</gl-badge>
+<gl-badge href="#foo" variant="info">info</gl-badge>
+<gl-badge href="#foo" variant="success">success</gl-badge>
+<gl-badge href="#foo" variant="warning">warning</gl-badge>
+<gl-badge href="#foo" variant="danger">danger</gl-badge>
+<gl-badge href="#foo" variant="tier">tier</gl-badge>
+```
+
+### With icons
+
+```html
+<!-- live-example -->
+<gl-badge variant="tier" icon="license" icon-size="md">With icon</gl-badge>
+<gl-badge variant="success" icon="issue-open-m" icon-size="md">With status open</gl-badge>
+<gl-badge variant="info" icon="issue-close" icon-size="md">With status closed</gl-badge>
+<gl-badge variant="warning" icon="status-alert" icon-size="sm">With sm icon</gl-badge>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=59780-92312&mode=design)
 

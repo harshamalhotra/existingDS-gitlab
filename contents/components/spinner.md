@@ -9,7 +9,12 @@ related:
 
 ## Examples
 
-<story-viewer component="base-loading-icon" title="Default"></story-viewer>
+### Default
+
+```html
+<!-- live-example -->
+<gl-loading-icon label="Loading" />
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-137&mode=design)
 

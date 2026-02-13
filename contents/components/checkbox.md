@@ -10,9 +10,20 @@ related:
 
 ## Examples
 
-<story-viewer component="base-form-form-checkbox" title="Checkbox states"></story-viewer>
+### Checkbox states
 
-<story-viewer component="base-form-form-checkbox-tree" title="Checkbox tree"></story-viewer>
+```html
+<!-- live-example -->
+<gl-form-checkbox value="option">Option</gl-form-checkbox>
+<gl-form-checkbox value="slot-option">
+  Slot option
+  <template #help>With help text.</template>
+</gl-form-checkbox>
+<gl-form-checkbox value="checked-option" checked>Checked option</gl-form-checkbox>
+<gl-form-checkbox value="checked-disabled-option" checked disabled>Checked disabled option</gl-form-checkbox>
+<gl-form-checkbox value="disabled-option" disabled>Disabled option</gl-form-checkbox>
+<gl-form-checkbox value="indeterminate-option" indeterminate>Indeterminate option</gl-form-checkbox>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840-75722&mode=design)
 

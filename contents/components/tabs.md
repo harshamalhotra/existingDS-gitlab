@@ -8,11 +8,41 @@ related:
 
 ## Examples
 
-<story-viewer component="base-tabs"></story-viewer>
+```html
+<!-- live-example -->
+<gl-tabs>
+  <gl-tab title="Tab 1">Tab panel 1</gl-tab>
+  <gl-tab title="Tab 2">Tab panel 2</gl-tab>
+  <gl-tab title="Tab 3">Tab panel 3</gl-tab>
+</gl-tabs>
+```
 
-<story-viewer component="base-tabs" story="justified-tabs"></story-viewer>
+### Justified
 
-<story-viewer component="base-tabs" story="with-counter-badges"></story-viewer>
+```html
+<!-- live-example -->
+<gl-tabs justified>
+  <gl-tab title="Tab 1">Tab panel 1</gl-tab>
+  <gl-tab title="Tab 2">Tab panel 2</gl-tab>
+</gl-tabs>
+```
+
+### With counts
+
+```html
+<!-- live-example -->
+<gl-tabs>
+  <gl-tab title="All" :tab-count="42" tab-count-sr-text="42 issues">
+    All issues content
+  </gl-tab>
+  <gl-tab title="Open" :tab-count="15" tab-count-sr-text="15 open issues">
+    Open issues content
+  </gl-tab>
+  <gl-tab title="Closed" :tab-count="1" tab-count-sr-text="1 closed issue">
+    Closed issues content
+  </gl-tab>
+</gl-tabs>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-138&mode=design)
 

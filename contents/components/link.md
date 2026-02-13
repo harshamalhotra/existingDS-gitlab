@@ -7,17 +7,54 @@ related:
 
 ## Examples
 
-<story-viewer component="base-link" story="inline-link" title="Inline Text Link"></story-viewer>
+### Inline Text Link
 
-<story-viewer component="base-link" story="inline-external-link" title="Inline Text Link (external url)"></story-viewer>
+```html
+<!-- live-example -->
+<gl-link variant="inline" href="#">This is an inline link</gl-link>
+```
 
-<story-viewer component="base-link" story="default" title="UI Link"></story-viewer>
+### Inline Text Link (external url)
 
-<story-viewer component="base-link" story="meta-link" title="Meta Link"></story-viewer>
+```html
+<!-- live-example -->
+<gl-link
+  variant="inline"
+  href="https://example.com"
+  target="_blank"
+  show-external-icon
+>
+  I have an arrow character because my target URL is external
+</gl-link>
+```
 
-<story-viewer component="base-link" story="mention-link" title="Mention Link"></story-viewer>
+### UI Link
 
-<story-viewer component="base-link" story="mention-link-current-user" title="Mention Link (current user)"></story-viewer>
+```html
+<!-- live-example -->
+<gl-link href="#">This is a UI link</gl-link>
+```
+
+### Meta Link
+
+```html
+<!-- live-example -->
+<gl-link variant="meta" href="#">This is a meta link</gl-link>
+```
+
+### Mention Link
+
+```html
+<!-- live-example -->
+<gl-link variant="mention" href="#">@anotheruser</gl-link>
+```
+
+### Mention Link (current user)
+
+```html
+<!-- live-example -->
+<gl-link variant="mentionCurrent" href="#">@currentuser</gl-link>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=81916-116837&mode=design)
 

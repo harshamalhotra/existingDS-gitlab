@@ -9,7 +9,10 @@ related:
 
 ## Examples
 
-<story-viewer component="base-progress-bar"></story-viewer>
+```html
+<!-- live-example -->
+<gl-progress-bar :value="30" :max="100" />
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-132&mode=design)
 

@@ -5,7 +5,36 @@ description: An HTML element, typically used in a form.
 
 ## Examples
 
-<story-viewer component="base-form-form-select" title="Select"></story-viewer>
+```html
+<!-- live-example -->
+<gl-form-select
+  value=""
+  :options="[
+    { value: '', text: 'Please select an option', disabled: true },
+    { value: 'pizza', text: 'Pizza' },
+    { value: 'burger', text: 'Burger' },
+    { value: 'pasta', text: 'Pasta' }
+  ]"
+/>
+```
+
+### In form group
+
+```html
+<!-- live-example -->
+<gl-form-group label="Select" label-for="select-form-group">
+  <gl-form-select
+    id="select-form-group"
+    value=""
+    :options="[
+      { value: '', text: 'Please select an option', disabled: true },
+      { value: 'pizza', text: 'Pizza' },
+      { value: 'burger', text: 'Burger' },
+      { value: 'pasta', text: 'Pasta' }
+    ]"
+  />
+</gl-form-group>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840-75722&mode=design)
 

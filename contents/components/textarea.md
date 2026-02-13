@@ -5,7 +5,22 @@ description: A component for the HTML textarea element.
 
 ## Examples
 
-<story-viewer component="base-form-form-textarea" title="Textarea"></story-viewer>
+```html
+<!-- live-example -->
+<gl-form-textarea placeholder="Enter description" />
+```
+
+### In form group
+
+```html
+<!-- live-example -->
+<gl-form-group label="Textarea" label-for="textarea-form-group">
+  <gl-form-textarea
+    id="textarea-form-group"
+    placeholder="Enter description"
+  />
+</gl-form-group>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840-75722&mode=design)
 

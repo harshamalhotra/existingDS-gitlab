@@ -12,11 +12,40 @@ related:
 
 ## Examples
 
-<story-viewer component="base-label" title="Label"></story-viewer>
+### Label
 
-<story-viewer component="base-label" story="scoped" title="Scoped"></story-viewer>
+```html
+<!-- live-example -->
+<gl-label
+  background-color="#D9C2EE"
+  title="Label title"
+  target="#"
+/>
+```
 
-<story-viewer component="base-label" story="with-close-button" title="With close"></story-viewer>
+### Scoped
+
+```html
+<!-- live-example -->
+<gl-label
+  background-color="#D9C2EE"
+  title="scoped::label"
+  target="#"
+  scoped
+/>
+```
+
+### With close
+
+```html
+<!-- live-example -->
+<gl-label
+  background-color="#D9C2EE"
+  title="Label title"
+  target="#"
+  show-close-button
+/>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-127&mode=design)
 
