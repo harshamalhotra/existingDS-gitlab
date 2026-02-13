@@ -64,17 +64,16 @@ Once the Reviewer or Maintainer has approved your icon design, consider the foll
 <!-- This checklist helps streamline the process of getting an icon from Figma to the library. -->
 
 1. [ ] Create a new merge request (MR) from this issue.
-1. [ ] Assign a label to the MR, such as ~foundation::iconography, and any other relevant labels as needed.
-1. [ ] Open the branch in the Web IDE.
+1. [ ] Checkout the new branch locally or in the Web IDE.
 1. [ ] In Figma, export the icon component from the [GitLab Product Icons](https://www.figma.com/community/file/1051267829358377715/gitlab-product-icons) file. The parent frame of the icon should not have "Clip content" checked in the Design panel. Consider using the [Advanced SVG Export](https://www.figma.com/community/plugin/782713260363070260) plugin to export an optimized SVG file (the plugin settings can also control what attributes are included or removed).
-1. [ ] In the Web IDE, upload the file to the **/sprite_icons** folder. The file name should be lowercase, and use hyphens as a separator between terms.
+1. [ ] Add the file to the **/packages/gitlab-svgs/sprite_icons** folder. The file name should be lowercase, and use hyphens as a separator between terms.
 1. [ ] Open the icon file and:
    - Ensure that the `viewBox` attribute is present and matches the icon frame dimensions (either `viewBox="0 0 12 12"` or `viewBox="0 0 16 16"`).
    - Remove any `desc` or `clipPath` attributes.
    - Remove the `fill="none"` attribute from the `<svg>` element.
-1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app by changing settings in the **Icon configuration** panel of the site. The icon should change color and size with no issues.
+1. [ ] Include a [changeset](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/publishing-packages.md) for the `@gitlab/svgs` package with a minor bump.
+1. [ ] After you’ve committed the changes and the pipeline passes, double-check your icon in the review app by changing the icon size and the mode (light/dark) settings. The icon should change color and size with no issues.
 1. [ ] Assign the MR to be reviewed and merged by a [maintainer](https://about.gitlab.com/handbook/engineering/projects/#gitlab-svgs), and proceed with any changes.
-1. [ ] Add a reference to the change in the [Pajamas UI Kit release notes](https://design.gitlab.com/get-started/uik-release-notes) by adding a commit to the current draft MR.
 
 If you run into any problems, ensure that all other steps in the project [README](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/packages/gitlab-svgs/README.md) have been followed.
 
@@ -86,7 +85,7 @@ If you run into any problems, ensure that all other steps in the project [README
 
 <!-- Add external links and references if necessary -->
 
-/label ~"UX" ~"Pajamas UI Kit" ~"icon"
+/label ~"UX" ~"Pajamas UI Kit" ~"icon" ~foundation::iconography
 
 [foundations-team]: https://about.gitlab.com/company/team/?department=ecosystem-foundations-team
 [iconography]: https://design.gitlab.com/product-foundations/iconography
