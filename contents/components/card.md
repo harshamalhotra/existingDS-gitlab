@@ -5,7 +5,22 @@ description: A card is a flexible container that groups related content and acti
 
 ## Examples
 
-<story-viewer component="base-card" title="Default card"></story-viewer>
+### Default card
+
+```html
+<!-- live-example -->
+<gl-card>
+  <template #header>
+    <h3 class="gl-heading-scale-500 gl-mb-0">This is a custom header</h3>
+  </template>
+  <template #default>
+    Hello World
+  </template>
+  <template #footer>
+    This is a custom footer
+  </template>
+</gl-card>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/design/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?m=auto&node-id=131231-5825&t=mR0m2eSiFjcFxri4-1&mode=design)
 

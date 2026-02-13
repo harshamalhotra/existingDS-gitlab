@@ -5,7 +5,24 @@ description: A component for the HTML input type="text" element.
 
 ## Examples
 
-<story-viewer component="base-form-form-input" title="Text input"></story-viewer>
+```html
+<!-- live-example -->
+<gl-form-input
+  placeholder="Placeholder"
+/>
+```
+
+### In form group
+
+```html
+<!-- live-example -->
+<gl-form-group label="Text input" label-for="input-form-group">
+  <gl-form-input
+    id="input-form-group"
+    placeholder="Placeholder"
+  />
+</gl-form-group>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840-75722&mode=design)
 

@@ -9,13 +9,104 @@ related:
 
 ## Examples
 
-<story-viewer component="base-toggle" title="Toggle"></story-viewer>
+### Toggle
 
-<story-viewer component="base-toggle" title="Disabled Toggle" :args-disabled="true"></story-viewer>
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        toggleValue: true,
+      }
+    },
+  };
+</script>
 
-<story-viewer component="base-toggle" title="Loading Toggle" :args-is-loading="true"></story-viewer>
+<template>
+  <gl-toggle
+    v-model="toggleValue"
+    label="Dark mode"
+    label-id="dark-mode-toggle"
+    help="Toggle dark mode for the website."
+  />
+</template>
+```
 
-<story-viewer component="base-toggle" story="label-position-left" title="Label positioned left"></story-viewer>
+### Disabled Toggle
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        toggleValue: true,
+      }
+    },
+  };
+</script>
+
+<template>
+  <gl-toggle
+    v-model="toggleValue"
+    disabled
+    label="Dark mode"
+    label-id="disabled-toggle"
+    help="Toggle dark mode for the website."
+  />
+</template>
+```
+
+### Loading Toggle
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        toggleValue: true,
+      }
+    },
+  };
+</script>
+
+<template>
+  <gl-toggle
+    v-model="toggleValue"
+    is-loading
+    label="Dark mode"
+    label-id="loading-toggle"
+    help="Toggle dark mode for the website."
+  />
+</template>
+```
+
+### Label positioned left
+
+```html
+<!-- live-example -->
+<script>
+  export default {
+    data() {
+      return {
+        toggleValue: true,
+      }
+    },
+  };
+</script>
+
+<template>
+  <gl-toggle
+    v-model="toggleValue"
+    label="Dark mode"
+    label-id="left-toggle"
+    label-position="left"
+    help="Toggle dark mode for the website."
+  />
+</template>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=425-140&mode=design)
 

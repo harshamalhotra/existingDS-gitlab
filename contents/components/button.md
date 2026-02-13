@@ -14,21 +14,91 @@ related:
 
 ## Examples
 
-<story-viewer component="base-button" story="all-variants-and-categories" title="All variants and categories"></story-viewer>
+### All variants and categories
 
-<story-viewer component="base-button" story="sizes" title="All sizes"></story-viewer>
+```html
+<!-- live-example -->
+<gl-button category="primary" variant="default">primary default</gl-button>
+<gl-button category="primary" variant="confirm">primary confirm</gl-button>
+<gl-button category="primary" variant="danger">primary danger</gl-button>
 
-<story-viewer component="base-button" title="Selected button" :args-selected="true"></story-viewer>
+<gl-button category="secondary" variant="default" class="gl-mt-3">secondary default</gl-button>
+<gl-button category="secondary" variant="confirm" class="gl-mt-3">secondary confirm</gl-button>
+<gl-button category="secondary" variant="danger" class="gl-mt-3">secondary danger</gl-button>
 
-<story-viewer component="base-button" title="Loading button" :args-loading="true"></story-viewer>
+<gl-button category="tertiary" variant="default" class="gl-mt-3">tertiary default</gl-button>
+<gl-button category="tertiary" variant="confirm" class="gl-mt-3">tertiary confirm</gl-button>
+<gl-button category="tertiary" variant="danger" class="gl-mt-3">tertiary danger</gl-button>
+```
+
+### All sizes
+
+```html
+<!-- live-example -->
+<gl-button size="small">Small button</gl-button>
+<gl-button>Default button</gl-button>
+
+<gl-button size="small" block class="gl-mt-3">Full width small button</gl-button>
+
+<gl-button block class="gl-mt-3">Full width button</gl-button>
+```
+
+### Selected button
+
+```html
+<!-- live-example -->
+<gl-button selected>Selected button</gl-button>
+```
+
+### Loading button
+
+```html
+<!-- live-example -->
+<gl-button loading>Loading button</gl-button>
+```
 
 <todo>Add live component block with example of loading icon button</todo>
 
-<story-viewer component="base-button" title="Disabled button" :args-disabled="true"></story-viewer>
+### Disabled button
 
-<story-viewer component="base-button" story="icon-button" title="Icon buttons"></story-viewer>
+```html
+<!-- live-example -->
+<gl-button disabled>Disabled button</gl-button>
+```
 
-<story-viewer component="base-button" story="emojis" title="Emoji buttons"></story-viewer>
+### Icon buttons
+
+```html
+<!-- live-example -->
+<gl-button
+  category="primary"
+  variant="danger"
+  icon="star-o"
+  aria-label="Star icon button"
+/>
+<gl-button icon="star-o" aria-label="Star icon button" class="gl-mt-3" />
+<gl-button size="small" icon="star-o" aria-label="Star icon small button" class="gl-mt-3" />
+<gl-button icon="star-o" class="gl-mt-3">Icon text</gl-button>
+<gl-button size="small" icon="star-o" class="gl-mt-3">Icon text</gl-button>
+```
+
+### Emoji buttons
+
+```html
+<!-- live-example -->
+<gl-button selected>
+  <template #emoji>
+    <gl-emoji title="thumbs up sign" data-name="thumbsup" data-unicode-version="6.0">👍</gl-emoji>
+  </template>
+  1
+</gl-button>
+<gl-button>
+  <template #emoji>
+    <gl-emoji title="thumbs down sign" data-name="thumbsdown" data-unicode-version="6.0">👎</gl-emoji>
+  </template>
+  0
+</gl-button>
+```
 
 <story-viewer component="base-button" story="label-button" title="Label button"></story-viewer>
 

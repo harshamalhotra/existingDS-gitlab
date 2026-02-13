@@ -9,7 +9,57 @@ related:
 
 ## Examples
 
-<story-viewer component="base-alert" story="variants"></story-viewer>
+```html
+<!-- live-example -->
+<gl-alert
+  variant="danger"
+  title="Alert title"
+  primary-button-text="Primary"
+  secondary-button-text="Secondary"
+  class="gl-mb-3"
+>
+  Danger lorem ipsum dolor sit <gl-link href="#">text link</gl-link> amet
+</gl-alert>
+
+<gl-alert
+  variant="warning"
+  title="Alert title"
+  primary-button-text="Primary"
+  secondary-button-text="Secondary"
+  class="gl-mb-3"
+>
+  Warning lorem ipsum dolor sit <gl-link href="#">text link</gl-link> amet
+</gl-alert>
+
+<gl-alert
+  variant="success"
+  title="Alert title"
+  primary-button-text="Primary"
+  secondary-button-text="Secondary"
+  class="gl-mb-3"
+>
+  Success lorem ipsum dolor sit <gl-link href="#">text link</gl-link> amet
+</gl-alert>
+
+<gl-alert
+  variant="info"
+  title="Alert title"
+  primary-button-text="Primary"
+  secondary-button-text="Secondary"
+  class="gl-mb-3"
+>
+  Info lorem ipsum dolor sit <gl-link href="#">text link</gl-link> amet
+</gl-alert>
+
+<gl-alert
+  variant="tip"
+  title="Alert title"
+  primary-button-text="Primary"
+  secondary-button-text="Secondary"
+>
+  Tip lorem ipsum dolor sit <gl-link href="#">text link</gl-link> amet
+</gl-alert>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=95988-10021&mode=design)
 

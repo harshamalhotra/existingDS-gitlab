@@ -10,9 +10,41 @@ related:
 
 ## Examples
 
-<story-viewer component="base-form-form-radio" title="Radio button states"></story-viewer>
+### Radio button states
 
-<story-viewer component="base-form-form-radio-group" title="Radio button group"></story-viewer>
+```html
+<!-- live-example -->
+<gl-form-radio name="radio-group" value="option">Option</gl-form-radio>
+<gl-form-radio name="radio-group" value="slot-option">
+  Slot option
+  <template #help>With help text.</template>
+</gl-form-radio>
+<gl-form-radio name="radio-group" value="checked-option" checked>Checked option</gl-form-radio>
+<gl-form-radio name="radio-group" value="disabled-option" disabled>Disabled option</gl-form-radio>
+<gl-form-radio name="radio-group" value="checked-disabled-option" checked disabled>Checked disabled option</gl-form-radio>
+```
+
+### Radio button group
+
+```html
+<!-- live-example -->
+<gl-form-radio-group
+  :options="[
+    { value: 'pizza', text: 'Pizza' },
+    { value: 'tacos', text: 'Tacos' },
+    { value: 'burger', text: 'Burger', disabled: true }
+  ]"
+  name="radio-button-group"
+>
+  <template #first>
+    <gl-form-radio value="slot-option">
+      Slot option with help text
+      <template #help>Help text.</template>
+    </gl-form-radio>
+  </template>
+  <gl-form-radio value="last-option">Last option</gl-form-radio>
+</gl-form-radio-group>
+```
 
 [View in Pajamas UI Kit →](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/%F0%9F%93%99-Component-library?type=design&node-id=49840-75722&mode=design)
 
