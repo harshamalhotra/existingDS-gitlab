@@ -1,10 +1,41 @@
 import {
+  parseFloatWithPrecision,
   DTCGToFigmaColorFormat,
   convertValue,
   getVariableType,
 } from './figma_sync_tokens_utilities.mjs';
 
 describe('Sync Tokens Utilities', () => {
+  describe('parseFloatWithPrecision', () => {
+    it('should parse integer strings', () => {
+      expect(parseFloatWithPrecision('42')).toBe(42);
+      expect(parseFloatWithPrecision('0')).toBe(0);
+      expect(parseFloatWithPrecision('-15')).toBe(-15);
+    });
+
+    it('should parse decimal strings', () => {
+      expect(parseFloatWithPrecision('3.14')).toBe(3.14);
+      expect(parseFloatWithPrecision('0.5')).toBe(0.5);
+      expect(parseFloatWithPrecision('-2.7')).toBe(-2.7);
+    });
+
+    it('should parse numeric values', () => {
+      expect(parseFloatWithPrecision(42)).toBe(42);
+      expect(parseFloatWithPrecision(3.14)).toBe(3.14);
+      expect(parseFloatWithPrecision(-2.7)).toBe(-2.7);
+    });
+
+    it('should fix common floating-point precision issues', () => {
+      expect(parseFloatWithPrecision(0.1 + 0.2)).toBe(0.3);
+      expect(parseFloatWithPrecision(1.1)).toBe(1.1);
+      expect(parseFloatWithPrecision(0.10000000149011612)).toBe(0.1);
+    });
+
+    it('should throw error for non-numeric strings', () => {
+      expect(() => parseFloatWithPrecision('abc')).toThrow('Cannot convert "abc" to float');
+    });
+  });
+
   describe('DTCGToFigmaColorFormat', () => {
     it('converts DTCG color with explicit alpha to Figma format', () => {
       const input = {

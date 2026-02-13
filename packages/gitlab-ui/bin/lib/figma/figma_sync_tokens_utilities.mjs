@@ -1,4 +1,21 @@
 /**
+ * Parse and fix floating-point precision issues
+ * @param {*} value - Value to parse as float
+ * @param {string} [context] - Context for error messages
+ * @returns {number} Parsed float with precision fixed
+ * @throws {Error} If value cannot be parsed as a number
+ */
+export function parseFloatWithPrecision(value) {
+  const parsedValue = parseFloat(value);
+
+  if (Number.isNaN(parsedValue)) {
+    throw new Error(`Cannot convert "${value}" to float`);
+  }
+
+  return Number(parsedValue.toFixed(2));
+}
+
+/**
  * Converts DTCG (Design Token Community Group) color format to Figma's RGBA format
  *
  * @param {Object} $value - DTCG color value object
@@ -47,12 +64,12 @@ export function convertValue(token) {
 
   // Handle dimensions
   if ($type === 'dimension' && typeof $value === 'object' && $value.value !== undefined) {
-    return $value.value;
+    return parseFloatWithPrecision($value.value);
   }
 
   // Handle numbers
   if ($type === 'number') {
-    return Number($value);
+    return parseFloatWithPrecision($value);
   }
 
   // Handle strings
@@ -65,7 +82,7 @@ export function convertValue(token) {
     if (typeof $value === 'string') {
       return String($value);
     }
-    return Number($value);
+    return parseFloatWithPrecision($value);
   }
 
   return $value;
@@ -133,19 +150,9 @@ export function resolveValue(token, allTokens, variables, variableName = null) {
   }
 
   if (figmaType === 'FLOAT') {
-    if (typeof $value === 'object' && $value.value !== undefined) {
-      return $value.value;
-    }
-    if (typeof $value === 'number') {
-      return $value;
-    }
-    const parsedValue = parseFloat($value);
-
-    if (Number.isNaN(parsedValue)) {
-      throw new Error(`Cannot convert value "${$value}" to float for variable "${variableName}"`);
-    }
-
-    return parsedValue;
+    const isValueObject = typeof $value === 'object' && $value.value !== undefined;
+    const rawValue = isValueObject ? $value.value : $value;
+    return parseFloatWithPrecision(rawValue);
   }
 
   if (figmaType === 'STRING') {
