@@ -1,6 +1,8 @@
 import GlFormInput from '../form/form_input/form_input.vue';
+import GlLoadingIcon from '../loading_icon/loading_icon.vue';
 import BVueReadme from '../../../vendor/bootstrap-vue/src/components/table/README.md';
 import { makeContainer } from '../../../utils/story_decorators/container';
+import { getA11yParameters } from '../../../utils/stories_utils';
 import GlTable from './table.vue';
 
 const components = { GlTable };
@@ -52,6 +54,7 @@ const generateProps = ({
   caption = 'This is the table caption',
   selectable = false,
   bordered = false,
+  busy = false,
 } = {}) => ({
   stickyHeader,
   items,
@@ -62,6 +65,7 @@ const generateProps = ({
   caption,
   selectable,
   bordered,
+  busy,
 });
 
 export const Default = (args, { argTypes }) => ({
@@ -77,6 +81,7 @@ export const Default = (args, { argTypes }) => ({
     :foot-clone="footClone"
     :selectable="selectable"
     :bordered="bordered"
+    :busy="busy"
     sort-by="col_three"
     sort-desc
     sort-direction="desc"
@@ -201,6 +206,30 @@ Stacked.args = generateProps({
 });
 Stacked.decorators = [makeContainer({ width: '300px' })];
 
+export const WithTableBusySlot = (args, { argTypes }) => ({
+  components: { ...components, GlLoadingIcon },
+  props: Object.keys(argTypes),
+  template: `
+  <gl-table
+    :items="items"
+    :fields="fields"
+    :busy="busy"
+  >
+    <template #table-busy>
+      <gl-loading-icon size="lg" />
+    </template>
+  </gl-table>
+`,
+});
+WithTableBusySlot.args = generateProps({
+  items: tableItems,
+  fields: tableFields,
+  busy: true,
+});
+WithTableBusySlot.parameters = {
+  a11y: getA11yParameters({ temporarySkipRules: ['color-contrast'] }),
+};
+
 export default {
   title: 'base/table/table',
   component: GlTable,
@@ -221,6 +250,9 @@ export default {
     },
     stickyHeader: {
       options: [false, true],
+      control: 'boolean',
+    },
+    busy: {
       control: 'boolean',
     },
   },
