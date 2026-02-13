@@ -418,7 +418,7 @@ export default {
       return this.listAriaLabelledBy || this.headerId || this.toggleIdComputed;
     },
     isInFormGroup() {
-      return Boolean(this.getFormGroupInstance?.());
+      return Boolean(this.getFormGroupInstance());
     },
     toggleIdComputed() {
       return this.toggleId || uniqueId('dropdown-toggle-btn-');

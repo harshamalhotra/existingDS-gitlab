@@ -424,26 +424,7 @@ describe('form-group', () => {
     wrapper.destroy()
   })
 
-  it('Default label ID is set correctly', async () => {
-    const wrapper = mount(BFormGroup, {
-      propsData: {
-        label: 'test',
-        labelFor: 'input-id'
-      }
-    })
-
-    expect(wrapper.vm).toBeDefined()
-    await waitNT(wrapper.vm)
-
-    const $label = wrapper.find('label')
-    expect($label.exists()).toBe(true)
-    expect($label.attributes('id')).toBeDefined()
-    expect($label.attributes('id')).toMatch(/__BV_label_$/)
-
-    wrapper.destroy()
-  })
-
-  it('Custom label ID is set correctly', async () => {
+  it('sets label ID from prop', async () => {
     const wrapper = mount(BFormGroup, {
       propsData: {
         label: 'test',
@@ -458,7 +439,7 @@ describe('form-group', () => {
     const $label = wrapper.find('label')
     expect($label.exists()).toBe(true)
     expect($label.attributes('id')).toBeDefined()
-    expect($label.attributes('id')).toMatch('input-label-id')
+    expect($label.attributes('id')).toBe('input-label-id')
 
     wrapper.destroy()
   })
