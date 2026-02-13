@@ -986,7 +986,7 @@ export const InFormGroupSearchable = (args, { argTypes }) => ({
         :searching="searchInProgress"
         :start-opened="startOpened"
         searchable
-        @search="handleSearch"
+        @search="filterList"
       />
     </gl-form-group>
   `,

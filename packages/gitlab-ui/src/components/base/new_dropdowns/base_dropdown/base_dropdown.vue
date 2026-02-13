@@ -55,6 +55,11 @@ export default {
     GlIcon,
   },
   directives: { Outside: OutsideDirective },
+  inject: {
+    getFormGroupInstance: {
+      default: () => () => {},
+    },
+  },
   props: {
     toggleText: {
       type: String,
@@ -298,16 +303,43 @@ export default {
     toggleButtonTextClasses() {
       return this.block ? 'gl-w-full' : '';
     },
+    // Set the aria-labelledby property with one or more ID strings
     toggleLabelledBy() {
+      const formGroupLabelId = this.getFormGroupInstance()?.labelId;
+
       if (this.isToggleCombobox) {
+        // Comboboxes announce label and self value when aria-labelledby is label ID.
+        // Tested with VoiceOver, NVDA, JAWS, Narrator and preferred browsers.
         if (this.ariaLabelledby) {
-          return `${this.ariaLabelledby} ${this.toggleId}`;
+          return `${this.ariaLabelledby}`;
         }
+
+        // Combobox inside GlFormGroup
+        if (formGroupLabelId) {
+          return `${formGroupLabelId} ${this.toggleId}`;
+        }
+
+        // Fallback calculated toggleId value
         return this.toggleId;
       }
 
-      // For non-combobox toggles, combine IDs or use the button's own text
-      return this.ariaLabelledby ? `${this.ariaLabelledby} ${this.toggleId}` : undefined;
+      if (!this.isToggleCombobox) {
+        // Disclosures or buttons with listbox require both IDs to announce correctly.
+        // Tested with VoiceOver, NVDA, JAWS, Narrator and preferred browsers.
+        if (this.ariaLabelledby) {
+          return `${this.ariaLabelledby} ${this.toggleId}`;
+        }
+
+        // Disclosure or button with listbox inside GlFormGroup
+        if (formGroupLabelId) {
+          return `${formGroupLabelId} ${this.toggleId}`;
+        }
+
+        // Fallback calculated toggleId value
+        return this.toggleId;
+      }
+
+      return undefined;
     },
     toggleRole() {
       if (this.isToggleCombobox) {

@@ -67,8 +67,8 @@ export default {
     GlIntersectionObserver,
   },
   inject: {
-    isInFormGroup: {
-      default: false,
+    getFormGroupInstance: {
+      default: () => () => {},
     },
   },
   model: {
@@ -416,6 +416,9 @@ export default {
 
       // Fallback. Return a header ID or the toggle button ID.
       return this.listAriaLabelledBy || this.headerId || this.toggleIdComputed;
+    },
+    isInFormGroup() {
+      return Boolean(this.getFormGroupInstance());
     },
     toggleIdComputed() {
       return this.toggleId || uniqueId('dropdown-toggle-btn-');

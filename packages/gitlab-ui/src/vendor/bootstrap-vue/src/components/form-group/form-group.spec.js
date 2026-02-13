@@ -424,6 +424,26 @@ describe('form-group', () => {
     wrapper.destroy()
   })
 
+  it('sets label ID from prop', async () => {
+    const wrapper = mount(BFormGroup, {
+      propsData: {
+        label: 'test',
+        labelFor: 'input-id',
+        labelId: 'input-label-id'
+      }
+    })
+
+    expect(wrapper.vm).toBeDefined()
+    await waitNT(wrapper.vm)
+
+    const $label = wrapper.find('label')
+    expect($label.exists()).toBe(true)
+    expect($label.attributes('id')).toBeDefined()
+    expect($label.attributes('id')).toBe('input-label-id')
+
+    wrapper.destroy()
+  })
+
   it('Label gl-sr-only works', async () => {
     const wrapper = mount(BFormGroup, {
       propsData: {

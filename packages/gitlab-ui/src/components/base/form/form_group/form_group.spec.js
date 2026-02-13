@@ -22,19 +22,22 @@ describe('Form group component', () => {
     });
   };
 
-  it('provides isInFormGroup: true', () => {
-    const childComponent = {
-      inject: ['isInFormGroup'],
-      template: '<div>isInFormGroup: {{ isInFormGroup }}</div>',
-    };
+  it('provides getFormGroupInstance function that returns the component instance', () => {
+    let instance;
 
     wrapper = mount(GlFormGroup, {
       slots: {
-        default: childComponent,
+        default: {
+          inject: ['getFormGroupInstance'],
+          render() {
+            instance = this.getFormGroupInstance();
+            return null;
+          },
+        },
       },
     });
 
-    expect(wrapper.text()).toContain('isInFormGroup: true');
+    expect(instance).toBe(wrapper.vm);
   });
 
   it.each`

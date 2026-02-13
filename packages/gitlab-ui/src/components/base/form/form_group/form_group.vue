@@ -1,6 +1,7 @@
 <script>
 import isString from 'lodash/isString';
 import isPlainObject from 'lodash/isPlainObject';
+import { uniqueId } from 'lodash';
 import { BFormGroup } from '../../../../vendor/bootstrap-vue/src/components/form-group/form-group';
 
 export default {
@@ -8,8 +9,11 @@ export default {
   components: {
     BFormGroup,
   },
-  provide: {
-    isInFormGroup: true,
+  provide() {
+    return {
+      // Only for internal use by @gitlab/ui components
+      getFormGroupInstance: () => this,
+    };
   },
   inheritAttrs: false,
   props: {
@@ -46,6 +50,11 @@ export default {
       default: '(optional)',
     },
   },
+  data() {
+    return {
+      labelId: uniqueId('gl-form-group-label-'),
+    };
+  },
   computed: {
     actualLabelClass() {
       const { labelClass } = this;
@@ -70,7 +79,12 @@ export default {
 };
 </script>
 <template>
-  <b-form-group v-bind="$attrs" class="gl-form-group" :label-class="actualLabelClass">
+  <b-form-group
+    v-bind="$attrs"
+    class="gl-form-group"
+    :label-class="actualLabelClass"
+    :label-id="labelId"
+  >
     <template v-if="$attrs.label || $scopedSlots.label" #label>
       <slot name="label">
         {{ $attrs.label }}
