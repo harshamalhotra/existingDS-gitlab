@@ -63,6 +63,7 @@ export async function syncConstants(client, tokens) {
         name,
         type,
         resolvedType: type,
+        description: token.$description,
         variableCollectionId: collection.id,
       };
 
@@ -156,6 +157,7 @@ export async function syncMode(client, lightTokens, darkTokens) {
         name,
         type,
         resolvedType: type,
+        description: token.$description,
         variableCollectionId: collection.id,
       };
 
