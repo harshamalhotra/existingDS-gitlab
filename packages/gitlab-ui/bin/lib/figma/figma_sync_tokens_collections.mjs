@@ -57,13 +57,20 @@ export async function syncConstants(client, tokens) {
 
     if (!existing) {
       const type = getVariableType(token.$type);
-      creates.push({
+      const scopes = token.$extensions?.['com.figma.scopes'];
+      const variableChange = {
         action: 'CREATE',
         name,
         type,
         resolvedType: type,
         variableCollectionId: collection.id,
-      });
+      };
+
+      if (scopes && Array.isArray(scopes)) {
+        variableChange.scopes = scopes;
+      }
+
+      creates.push(variableChange);
     }
   });
 
@@ -143,13 +150,20 @@ export async function syncMode(client, lightTokens, darkTokens) {
 
     if (!existing) {
       const type = getVariableType(token.$type);
-      creates.push({
+      const scopes = token.$extensions?.['com.figma.scopes'];
+      const variableChange = {
         action: 'CREATE',
         name,
         type,
         resolvedType: type,
         variableCollectionId: collection.id,
-      });
+      };
+
+      if (scopes && Array.isArray(scopes)) {
+        variableChange.scopes = scopes;
+      }
+
+      creates.push(variableChange);
     }
   });
 
