@@ -27,13 +27,9 @@ Design AI to be collaborative, not autonomous. AI should suggest and assist whil
 
 ### Understand when to use AI assistance
 
-Understand if a task is a good fit for AI assistance or automation, and what level of automation is appropriate. First, understand if a user's need will be helped by AI intervention.
+Understand if a task is a good fit for AI assistance or automation, and what level of automation is appropriate. For guidance on when to use conversational agents versus automated flows, see [Agents and Flows](/patterns/duo-agents-and-flows).
 
-**Conversational assistance (agents)** is well-suited for tasks requiring exploration, explanation, or iterative problem-solving, such as debugging issues, generating content, or answering questions about complex topics. Users maintain full control and can guide the conversation as needed.
-
-**Automated workflows (flows)** are appropriate for tasks that are tedious, error-prone, repetitive, low risk, and free up the user's time. Users may not want automation in [high risk tasks](#understand-risk) where they will be held responsible for the result, or tasks that they enjoy doing.
-
-Build trust gradually. Start with small helpful actions and expand capabilities as users gain confidence with the system. Use non-threatening visual language that makes AI agents feel like supportive teammates rather than autonomous systems taking control. Consider if the problem could be addressed with pre-defined rules (_if this, then that_) before adding AI.
+Build trust gradually. Start with small helpful actions and expand capabilities as users gain confidence with the system. Use non-threatening visual language that makes AI agents and flows feel like supportive teammates rather than autonomous systems taking control. Consider if the problem could be addressed with pre-defined rules (_if this, then that_) before adding AI.
 
 Understand the strengths and weaknesses of AI. It can be helpful for processing large amounts of information, pattern finding, prediction, classification, and recommendations. Given good training data, AI can be more accurate and faster than a human at completing tasks. It is less helpful for tasks requiring empathy, emotional intelligence, morality, common sense, predictability, contextual understanding, intuition, and creativity.
 
@@ -60,7 +56,7 @@ Users rely on the system to make decisions, but they should not trust the system
 
 Establish trust by ensuring the user always knows when they are interacting with AI, and when content or recommendations come from AI. Such disclosures are often required by third party AI services and may soon be required in the European Union ([EU AI Act](https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence)).
 
-Ensure seamless agent integration, whether users are interacting with GitLab agents, external agents, or custom agents they've built, the experience should feel unified and coherent across all building blocks and touchpoints.
+The experience should feel unified across all agent types and automated flows.
 
 #### Name
 
@@ -68,7 +64,7 @@ The "GitLab Duo" name is an extension of our brand. It acts as an umbrella for a
 
 Include "GitLab Duo" for each AI-powered feature, in their onboarding or UI text, either _before_ or _after_ the user interaction. However, to ensure concise [call-to-action labels (CTA)](/patterns/duo-calls-to-action#label) and maintain clear, user-friendly interfaces, avoid using the words "GitLab Duo" or "AI" directly in the CTA text.
 
-For interactions within GitLab Duo Agent Platform, whether using GitLab agents, external agents, or custom user-built agents, clearly identify the agent or flow by name so users understand what system they're interacting with. This supports seamless agent integration while maintaining transparency about the source of AI assistance. See [Agents and Flows](https://design.gitlab.com/patterns/duo-agents-and-flows) for detailed guidance on naming conventions and identification patterns.
+For interactions within GitLab Duo Agent Platform, clearly identify the agent or flow by name so users understand what system they're interacting with. See [Agents and Flows](/patterns/duo-agents-and-flows) for detailed guidance on naming conventions and identification patterns.
 
 For variations of the GitLab Duo name, such as features or add-ons, see the [word list](https://docs.gitlab.com/development/documentation/styleguide/word_list/).
 
@@ -78,7 +74,7 @@ For variations of the GitLab Duo name, such as features or add-ons, see the [wor
 
 To design buttons and links that trigger AI features, see the [CTA for GitLab Duo guidelines](/patterns/duo-calls-to-action).
 
-For flows triggered through @ mentions and assignee actions, users can invoke flows by @ mentioning them in comments or assigning them to work items. These interactions should follow standard GitLab patterns for mentions and assignments while clearly indicating when the target is an AI flow rather than a human user.
+For flows triggered through @ mentions and assignee actions, see [Agents and Flows](/patterns/duo-agents-and-flows).
 
 #### Disclaimer
 
@@ -92,7 +88,7 @@ For flows triggered through @ mentions and assignee actions, users can invoke fl
 
 The [`tanuki-ai-md`](/product-foundations/illustration-directory?q=illustrations/tanuki-ai-md.svg) and [`tanuki-ai-sm`](/product-foundations/illustration-directory?q=illustrations/tanuki-ai-sm.svg) illustrations serve the purpose of promoting and associating AI related features within the UI.
 
-For agents and flows use the GitLab Duo Agent Platform avatar system to provide consistent visual identification. This helps users quickly recognize and differentiate between GitLab agents, external agents, and custom agents throughout the platform. The avatar system is currently a work in progress, and its final version is still in development.
+For agent and flow avatars, see [Agents and Flows](/patterns/duo-agents-and-flows).
 
 ### Set the right expectations
 
@@ -101,9 +97,8 @@ The interface should clearly communicate AI capabilities, limitations, and the s
 - Clearly highlight if a feature is an [experiment or beta](/patterns/feature-management#highlighting-feature-versions).
 - Follow the [disclaimer guidelines](#disclaimer).
 - Use clear, simple language to explain what the system is doing and how it arrived at its recommendations.
-- Provide natural language interaction options when appropriate and allow users to interact with AI and agents conversationally when they prefer this method of communication.
-- Clearly distinguish between agents and flows and help users understand when they're engaging with conversational agents for iterative problem-solving versus automated flows that execute specific tasks. Set appropriate expectations for the level of interaction and control available with each.
-- Set clear boundaries for different agent types and communicate what each agent can access and do. GitLab agents have different capabilities than external agents, and custom user-built agents may have different limitations than platform-provided ones.
+- Provide natural language interaction options when appropriate and allow users to interact with AI conversationally when they prefer this method of communication.
+- Clearly distinguish between agents and flows and help users understand when they're engaging with conversational agents for iterative problem-solving versus automated flows that execute specific tasks.
 
 ### Give the user control
 
@@ -117,63 +112,51 @@ Users control their AI experience by selecting which agents to use and when, cho
 
 When your system is not certain of the user's intent or has low confidence, make sure there is a path forward that does not rely on AI. Explain why the system was not able to provide a recommendation. Errors are also opportunities to learn more about your user's mental models and improve the system's ability to make recommendations. Consider designing a feedback mechanism that presents as a cue for adjustment rather than an error state.
 
+When agents cannot understand requests or flows encounter errors, provide clear explanations and alternative paths forward. Agent conversations should gracefully handle misunderstandings, while flows should offer users the ability to retry, manually intervene, or fall back to manual processes.
+
 ### Encourage feedback
 
-Design mechanisms to collect implicit and explicit feedback to improve the system.
+Design mechanisms to collect implicit and explicit feedback to improve the system. Support feedback across different DAP interactions. This includes conversational agent interfaces, flow completion states, and contextual triggers like @ mentions and assignments. Use collected feedback to continuously refine system performance while keeping feedback collection unobtrusive to avoid disrupting workflows.
 
 ### Keep UI text consistent
 
-When AI functionality is exposed in GitLab, UI text should primarily use third person following GitLab standards. For example:
+GitLab AI features primarily use third-person voice following GitLab standards. For example, "Use GitLab Duo to find vulnerabilities in your application," "Ask Amazon Q to upgrade Java," or "Troubleshoot your pipeline."
 
-- "Use GitLab Duo to find vulnerabilities in your application"
-- "Ask Amazon Q to upgrade Java"
-- "Troubleshoot your pipeline"
-
-For most AI features and functionality, including GitLab Duo Workflow, maintain this third-person approach to keep consistency with GitLab's voice.
-
-However, certain exceptions apply when interacting with GitLab Duo Chat or GitLab Duo with Amazon Q. These interactions are direct and conversational in nature, where first person may be appropriate. For example, GitLab Duo may respond with:
+**Exception for conversational agents:** When users directly interact with any agent (GitLab Duo Chat, Amazon Q, or custom agents), the agent's responses use first person to maintain a natural conversational experience:
 
 - "I'm working on your request."
 - "I could not find an answer to your question."
-
-The surrounding UI for these direct conversational features may also use first person. For example:
-
 - "I am GitLab Duo Chat. How can I help you today?"
 
-In all other AI-related interfaces and functionality, maintain third-person phrasing to align with GitLab's standard voice and tone.
+UI elements that describe or invoke these agents continue to use third person. This applies consistently across all agent types—GitLab agents, external agents, and custom user-built agents.
 
 ## Framework
 
-To help you put the [guidelines](#guidelines) into practice, the framework materializes them into standard patterns that address the most common UX challenges. Follow the progress in the [framework epic](https://gitlab.com/groups/gitlab-org/-/epics/10334).
+To help you put the [guidelines](#guidelines) into practice, the framework materializes them into standard patterns that address the most common UX challenges.
 
 ### Dimensions
 
 These dimensions can assist you in choosing the most appropriate pattern for the problem you are solving.
 
-- **Mode**: What's the emphasis and persistence of the AI-human interaction relative to the main context and the user journey?
-  - Focused: AI is the main context, with a dedicated focus.
-  - Supportive: AI complements the main context and accompanies users along their journey to help them achieve their goals.
-  - Integrated: AI is blended into specific moments of the users flow to help them complete small, discrete tasks.
-- **Approach**: What should AI focus on improving?
-  - Automate tasks: improve _efficiency_ by replacing human decision-making and actions, always done with human awareness and consent.
-  - Augment capabilities: improve _effectiveness_ by supporting and improving human decision-making and actions.
+- **Interaction Type**: How do users engage with AI assistance?
+  - Conversational: Direct chat-based interactions with agents for iterative problem-solving
+  - Contextual triggers: AI invoked through @ mentions, assignments, or contextual buttons
+  - Automated flows: Multi-step processes that execute with minimal user intervention
+- **Agent Source**: What type of AI system is providing assistance?
+  - GitLab agents: Built-in GitLab Duo agents with platform integration
+  - External agents: Third-party agents like Amazon Q integrated into GitLab
+  - Custom agents: User-built or organization-specific agents
+- **Mode**: What's the emphasis and persistence of the AI-human interaction relative to the main context?
+  - Focused: AI is the main context, with dedicated interface (e.g., chat)
+  - Supportive: AI complements the main context within existing workflows
+  - Integrated: AI is blended into specific workflow moments for discrete tasks
 - **Interactivity**: How does the system surface AI to engage with the user?
-  - Proactive: triggered without user interaction.
-  - Reactive: triggered by user interaction.
-- **Task**: What's the user task that AI can assist with?
-  - Classification: categorize, suggest, rank, match.
-  - Generation: summarize, explain, create.
-  - Prediction (or regression): forecast continuous, non-categorical data, like numerical values.
+  - Proactive: AI suggests actions or provides information automatically
+  - Reactive: AI responds to explicit user requests or triggers
 
 ### Patterns
 
-<todo>Add documented patterns. Follow the progress in the [framework epic](https://gitlab.com/groups/gitlab-org/-/epics/10334).</todo>
-
-While we don't have documented patterns, we share some potential patterns in this [video](https://youtu.be/UXCz2xst_zg) ([slides](https://docs.google.com/presentation/d/1rO2BpI2WZC9Dxhv7oVR6XHk8GMb77AswESYcDANnQhA/edit?usp=sharing) and [internal Figma file](https://www.figma.com/file/s4TP1i2Akd1VTh4jhbg234/AI-prioritized-prototypes?type=design&node-id=2766-82606&t=zllXY21ifWzgeCq1-4)).
-
-As inspiration for **integrated** mode patterns, you can find some explorations in [this Figma file](https://www.figma.com/file/s32hZcNQ0mQupGuEB5jUMH/Integrated-mode-AI-UX-patterns-design.gitlab.com%231615?type=design&node-id=1-2&mode=design):
-
-<figma-embed label="Examples of integrated mode patterns, showing how the AI-human interaction guidelines could be applied to a button, form, or static content." src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fs32hZcNQ0mQupGuEB5jUMH%2FIntegrated-mode-AI-UX-patterns-design.gitlab.com%25231615%3Ftype%3Ddesign%26node-id%3D1%253A2%26mode%3Ddesign%26t%3DeWpvomQy7PhbCp4J-1"></figma-embed>
+Documented patterns are in development. For specific agent and flow patterns, see [Agents and Flows](/patterns/duo-agents-and-flows).
 
 ## References
 
