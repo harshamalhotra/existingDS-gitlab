@@ -35,6 +35,14 @@
         width: auto;
       }
     }
+
+    &.is-invalid {
+      @apply gl-border-control-error;
+
+      &:focus {
+        @apply gl-border-control-error;
+      }
+    }
   }
 
   .gl-new-dropdown-button-text {

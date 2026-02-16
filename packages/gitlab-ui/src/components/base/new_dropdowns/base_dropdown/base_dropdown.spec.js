@@ -1047,4 +1047,30 @@ describe('base dropdown', () => {
       });
     });
   });
+
+  describe('validation', () => {
+    it('does not have is-valid or is-invalid classes when state is default', () => {
+      buildWrapper();
+
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.classes()).not.toContain('is-valid');
+      expect(toggleButton.classes()).not.toContain('is-invalid');
+    });
+
+    it('has class is-valid when state=true', () => {
+      buildWrapper({ state: true });
+
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.classes()).toContain('is-valid');
+      expect(toggleButton.classes()).not.toContain('is-invalid');
+    });
+
+    it('has class is-invalid when state=false', () => {
+      buildWrapper({ state: false });
+
+      const toggleButton = findDefaultDropdownToggle();
+      expect(toggleButton.classes()).toContain('is-invalid');
+      expect(toggleButton.classes()).not.toContain('is-valid');
+    });
+  });
 });

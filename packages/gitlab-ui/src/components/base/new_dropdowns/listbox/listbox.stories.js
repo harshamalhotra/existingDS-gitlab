@@ -65,6 +65,7 @@ const generateProps = ({
   startOpened = true,
   fluidWidth,
   panelMatchTriggerWidth = defaultValue('panelMatchTriggerWidth'),
+  state = defaultValue('state'),
   positioningStrategy,
   srOnlyResultsLabel,
   listboxId,
@@ -99,6 +100,7 @@ const generateProps = ({
   startOpened,
   fluidWidth,
   panelMatchTriggerWidth,
+  state,
   positioningStrategy,
   srOnlyResultsLabel,
   listboxId,
@@ -135,6 +137,7 @@ const makeBindings = (overrides = {}) =>
     ':show-select-all-button-label': 'showSelectAllButtonLabel',
     ':fluid-width': 'fluidWidth',
     ':panel-match-trigger-width': 'panelMatchTriggerWidth',
+    ':state': 'state',
     ':positioning-strategy': 'positioningStrategy',
     ':startOpened': 'startOpened',
     ':sr-only-results-label': 'srOnlyResultsLabel',
@@ -564,6 +567,12 @@ export default {
         subcategory: ARG_TYPE_SUBCATEGORY_STATE,
       },
     },
+    state: {
+      table: {
+        subcategory: ARG_TYPE_SUBCATEGORY_STATE,
+      },
+    },
+
     searchable: {
       table: {
         subcategory: ARG_TYPE_SUBCATEGORY_SEARCH,

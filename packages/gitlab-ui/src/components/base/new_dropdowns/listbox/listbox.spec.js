@@ -315,8 +315,9 @@ describe('GlCollapsibleListbox', () => {
       findBaseDropdown().vm.$emit(GL_DROPDOWN_HIDDEN);
     });
 
-    it('should re-emit the event', () => {
+    it('should re-emit the event and emit blur', () => {
       expect(wrapper.emitted(GL_DROPDOWN_HIDDEN)).toHaveLength(1);
+      expect(wrapper.emitted('blur')).toHaveLength(1);
     });
   });
 
