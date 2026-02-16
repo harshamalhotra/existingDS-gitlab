@@ -30,7 +30,7 @@ async function reorderVariablesInExistingOrder(creates, existingOrder, client, c
  * Sync constants collection
  * @param {FigmaClient} client - Figma API client
  * @param {Map} tokens - Flattened tokens
- * @returns {Promise<Object>} Object with variablesCreated count
+ * @returns {Promise<Object>} Object with variablesCreated and variablesUpdated counts
  */
 export async function syncConstants(client, tokens) {
   console.log('\n=== Syncing Constants ===');
@@ -50,6 +50,7 @@ export async function syncConstants(client, tokens) {
 
   const creates = [];
   const modeValues = [];
+  let updatedCount = 0;
 
   // Create variables
   tokens.forEach((token, name) => {
@@ -101,18 +102,23 @@ export async function syncConstants(client, tokens) {
         modeId: mode.modeId,
         value,
       });
+
+      // Count as updated if it already existed
+      if (!creates.find((c) => c.name === name)) {
+        updatedCount += 1;
+      }
     }
   });
 
   if (modeValues.length > 0) {
-    console.log(`Setting ${modeValues.length} variable values...`);
+    console.log(`Updating ${updatedCount} variables...`);
     await client.batchRequest(modeValues, 'variableModeValues');
   }
 
   // Reorder variables if new ones were created
   await reorderVariablesInExistingOrder(creates, existingOrder, client, collection.id);
 
-  return { variablesCreated: creates.length };
+  return { variablesCreated: creates.length, variablesUpdated: updatedCount };
 }
 
 /**
@@ -120,7 +126,7 @@ export async function syncConstants(client, tokens) {
  * @param {FigmaClient} client - Figma API client
  * @param {Map} lightTokens - Light mode tokens
  * @param {Map} darkTokens - Dark mode tokens
- * @returns {Promise<Object>} Object with variablesCreated count
+ * @returns {Promise<Object>} Object with variablesCreated and variablesUpdated counts
  */
 export async function syncMode(client, lightTokens, darkTokens) {
   console.log('\n=== Syncing Mode ===');
@@ -140,6 +146,7 @@ export async function syncMode(client, lightTokens, darkTokens) {
 
   const creates = [];
   const modeValues = [];
+  const updatedVariables = new Set();
 
   // Get union of all token names
   const allTokenNames = new Set([...lightTokens.keys(), ...darkTokens.keys()]);
@@ -213,16 +220,21 @@ export async function syncMode(client, lightTokens, darkTokens) {
           value: darkValue,
         });
       }
+
+      // Track updated variables (exclude newly created ones)
+      if (!creates.find((c) => c.name === name)) {
+        updatedVariables.add(name);
+      }
     }
   });
 
   if (modeValues.length > 0) {
-    console.log(`Setting ${modeValues.length} variable values...`);
+    console.log(`Updating ${updatedVariables.size} variables...`);
     await client.batchRequest(modeValues, 'variableModeValues');
   }
 
   // Reorder variables if new ones were created
   await reorderVariablesInExistingOrder(creates, existingOrder, client, collection.id);
 
-  return { variablesCreated: creates.length };
+  return { variablesCreated: creates.length, variablesUpdated: updatedVariables.size };
 }

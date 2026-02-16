@@ -22,13 +22,13 @@ Setup instructions:
 
 File ID can be found in the Figma URL: figma.com/file/{FILE_ID}`;
 
-const successMessage = (constantsCount, modeCount) => `
+const successMessage = (constantsResult, modeResult) => `
 ═══════════════════════════════════════
 ✓ Token sync completed successfully
 ═══════════════════════════════════════
-Constants: ${constantsCount} variables
-Mode:      ${modeCount} variables
-Total:     ${constantsCount + modeCount} variables
+Constants: ${constantsResult.variablesCreated} created, ${constantsResult.variablesUpdated} updated
+Mode:      ${modeResult.variablesCreated} created, ${modeResult.variablesUpdated} updated
+Total:     ${constantsResult.variablesCreated + modeResult.variablesCreated} created, ${constantsResult.variablesUpdated + modeResult.variablesUpdated} updated
 ═══════════════════════════════════════`;
 
 async function main() {
@@ -59,7 +59,7 @@ async function main() {
     const constantsResult = await syncConstants(client, flatConstants);
     const modeResult = await syncMode(client, flatMode, flatModeDark);
 
-    console.log(successMessage(constantsResult.variablesCreated, modeResult.variablesCreated));
+    console.log(successMessage(constantsResult, modeResult));
   } catch (error) {
     console.error('✗ Token sync failed:', error.message);
     process.exit(1);
