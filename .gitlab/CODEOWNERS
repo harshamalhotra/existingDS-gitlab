@@ -162,6 +162,7 @@ yarn.lock @gitlab-org/maintainers/gitlab-ui @gitlab-org/foundations/design-syste
 # Extended Components
 /contents/components/broadcast-message.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/label.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
+/contents/components/multi-step-form-template.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/path.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/stepper.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
 /contents/components/tree.md @gitlab-com/gitlab-ux/designers @gitlab-org/maintainers/gitlab-ui
