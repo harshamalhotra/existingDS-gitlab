@@ -95,7 +95,7 @@ export default {
     },
     shouldRenderHelp() {
       // eslint-disable-next-line @gitlab/vue-prefer-dollar-scopedslots
-      return Boolean(this.$slots.help || this.help);
+      return Boolean(this.$slots.help || this.help) && this.isVerticalLayout;
     },
     toggleClasses() {
       return [
@@ -139,56 +139,55 @@ export default {
 </script>
 
 <template>
-  <div class="gl-toggle-wrapper gl-flex gl-flex-col">
-    <div
-      class="gl-flex"
-      data-testid="toggle-wrapper"
-      :class="{
-        'gl-flex-col': isVerticalLayout,
-        'gl-toggle-label-inline': !isVerticalLayout,
-      }"
+  <div
+    class="gl-toggle-wrapper gl-mb-0 gl-flex"
+    :class="{
+      'gl-flex-col': isVerticalLayout,
+      'gl-toggle-label-inline': !isVerticalLayout,
+      'is-disabled': disabled,
+    }"
+    data-testid="toggle-wrapper"
+  >
+    <span
+      :id="labelId"
+      :class="toggleClasses"
+      class="gl-toggle-label gl-shrink-0"
+      data-testid="toggle-label"
     >
-      <span
-        :id="labelId"
-        :class="toggleClasses"
-        class="gl-toggle-label gl-shrink-0"
-        data-testid="toggle-label"
-      >
-        <!-- @slot The toggle's label. -->
-        <slot name="label">{{ label }}</slot>
+      <!-- @slot The toggle's label. -->
+      <slot name="label">{{ label }}</slot>
+    </span>
+    <span
+      v-if="shouldRenderDescription"
+      class="gl-description-label gl-mb-3"
+      data-testid="toggle-description"
+    >
+      <!-- @slot A description text to be shown below the label. Unavailable when the label is positioned on the left. -->
+      <slot name="description">{{ description }}</slot>
+    </span>
+    <input v-if="name" :name="name" :value="value" type="hidden" />
+    <button
+      role="switch"
+      :aria-checked="isChecked"
+      :aria-labelledby="labelId"
+      :aria-describedby="helpId"
+      :aria-disabled="disabled"
+      :class="{
+        'is-checked': value,
+        'is-disabled': disabled || isLoading,
+      }"
+      class="gl-toggle gl-shrink-0"
+      type="button"
+      :disabled="disabled"
+      @click.prevent="toggleFeature"
+    >
+      <gl-loading-icon v-if="isLoading" color="dark" class="toggle-loading" />
+      <span v-else class="toggle-icon">
+        <gl-icon :name="icon" :size="12" />
       </span>
-      <span
-        v-if="shouldRenderDescription"
-        class="gl-description-label gl-mb-3"
-        data-testid="toggle-description"
-      >
-        <!-- @slot A description text to be shown below the label. Unavailable when the label is positioned on the left. -->
-        <slot name="description">{{ description }}</slot>
-      </span>
-      <input v-if="name" :name="name" :value="value" type="hidden" />
-      <button
-        role="switch"
-        :aria-checked="isChecked"
-        :aria-labelledby="labelId"
-        :aria-describedby="helpId"
-        :aria-disabled="disabled"
-        :class="{
-          'is-checked': value,
-          'is-disabled': disabled || isLoading,
-        }"
-        class="gl-toggle gl-shrink-0"
-        type="button"
-        :disabled="disabled"
-        @click.prevent="toggleFeature"
-      >
-        <gl-loading-icon v-if="isLoading" color="dark" class="toggle-loading" />
-        <span v-else class="toggle-icon">
-          <gl-icon :name="icon" :size="12" />
-        </span>
-      </button>
-    </div>
+    </button>
     <span v-if="shouldRenderHelp" :id="helpId" class="gl-help-label" data-testid="toggle-help">
-      <!-- @slot A help text to be shown below the toggle. -->
+      <!-- @slot A help text to be shown below the toggle. Unavailable when the label is positioned on the left. -->
       <slot name="help">{{ help }}</slot>
     </span>
   </div>
