@@ -1,4 +1,4 @@
-import { resolveValue, getVariableType } from './figma_sync_tokens_utilities.mjs';
+import { valuesAreEqual, resolveValue, getVariableType } from './figma_sync_tokens_utilities.mjs';
 import {
   extractExistingOrder,
   mergeVariableOrder,
@@ -97,15 +97,22 @@ export async function syncConstants(client, tokens) {
         return;
       }
 
-      modeValues.push({
-        variableId: variable.id,
-        modeId: mode.modeId,
-        value,
-      });
+      // Get current value from Figma
+      const currentValue = variable.valuesByMode?.[mode.modeId];
+      const hasChanged = !valuesAreEqual(currentValue, value);
 
-      // Count as updated if it already existed
-      if (!creates.find((c) => c.name === name)) {
-        updatedCount += 1;
+      // Only add to batch if value has changed
+      if (hasChanged) {
+        modeValues.push({
+          variableId: variable.id,
+          modeId: mode.modeId,
+          value,
+        });
+
+        // Count as updated if it already existed
+        if (!creates.find((c) => c.name === name)) {
+          updatedCount += 1;
+        }
       }
     }
   });
@@ -206,23 +213,38 @@ export async function syncMode(client, lightTokens, darkTokens) {
         return;
       }
 
+      let hasChanges = false;
+
       if (lightValue !== null) {
-        modeValues.push({
-          variableId: variable.id,
-          modeId: lightMode.modeId,
-          value: lightValue,
-        });
+        const currentLightValue = variable.valuesByMode?.[lightMode.modeId];
+        const lightChanged = !valuesAreEqual(currentLightValue, lightValue);
+
+        if (lightChanged) {
+          modeValues.push({
+            variableId: variable.id,
+            modeId: lightMode.modeId,
+            value: lightValue,
+          });
+          hasChanges = true;
+        }
       }
+
       if (darkValue !== null) {
-        modeValues.push({
-          variableId: variable.id,
-          modeId: darkMode.modeId,
-          value: darkValue,
-        });
+        const currentDarkValue = variable.valuesByMode?.[darkMode.modeId];
+        const darkChanged = !valuesAreEqual(currentDarkValue, darkValue);
+
+        if (darkChanged) {
+          modeValues.push({
+            variableId: variable.id,
+            modeId: darkMode.modeId,
+            value: darkValue,
+          });
+          hasChanges = true;
+        }
       }
 
       // Track updated variables (exclude newly created ones)
-      if (!creates.find((c) => c.name === name)) {
+      if (hasChanges && !creates.find((c) => c.name === name)) {
         updatedVariables.add(name);
       }
     }
