@@ -124,25 +124,32 @@ The `GlAttributeList` component displays key-value pairs in a grid layout.
 <!-- live-example -->
 <gl-attribute-list
   :items="[
-    { icon: 'work-item-issue', label: 'Issue', text: '#12345' },
-    { icon: 'merge-request', label: 'Merge request', text: '!12345' },
     {
+      type: 'issue',
+      icon: 'work-item-issue',
+      label: 'Issue',
+      text: '#12345',
+    },
+    { type: 'merge-request', icon: 'merge-request', label: 'Merge request', text: '!12345' },
+    {
+      type: 'ref',
       icon: 'commit',
       label: 'Commit SHA',
       text: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
-    }
+    },
   ]"
 >
   <template #description="{ item }">
-    <gl-link v-if="item.label === 'Issue'" href="#">
-      {{ item.text }}
-    </gl-link>
-    <gl-badge v-else-if="item.label === 'Merge request'" href="#" icon="merge-request" variant="success">
+    <gl-link v-if="item.type === 'issue'" href="#">{{ item.text }}</gl-link>
+    <gl-badge
+      v-else-if="item.type === 'merge-request'"
+      href="#"
+      icon="merge-request"
+      variant="success"
+    >
       {{ item.text }}
     </gl-badge>
-    <div v-else-if="item.label === 'Commit SHA'" class="gl-truncate">
-      {{ item.text }}
-    </div>
+    <div v-else-if="item.type === 'ref'" class="gl-font-monospace gl-truncate">{{ item.text }}</div>
     <template v-else>{{ item.text }}</template>
   </template>
 </gl-attribute-list>
