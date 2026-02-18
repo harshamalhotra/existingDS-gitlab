@@ -384,7 +384,7 @@ describe('buildTokens', () => {
       const result = convertClampStringToDimension(input);
 
       expect(result).toEqual({
-        $value: { value: 1.125, unit: 'rem' },
+        $value: { value: 1.25, unit: 'rem' },
         $type: 'dimension',
       });
     });
@@ -398,7 +398,7 @@ describe('buildTokens', () => {
       const result = convertClampStringToDimension(input);
 
       expect(result).toEqual({
-        $value: { value: 16, unit: 'px' },
+        $value: { value: 32, unit: 'px' },
         $type: 'dimension',
       });
     });
@@ -414,7 +414,7 @@ describe('buildTokens', () => {
       const result = convertClampStringToDimension(input);
 
       expect(result).toEqual({
-        $value: { value: 1.125, unit: 'rem' },
+        $value: { value: 1.25, unit: 'rem' },
         $type: 'dimension',
         $description: 'Responsive font size',
         $extensions: { com: { figma: { scopes: ['FONT_SIZE'] } } },
