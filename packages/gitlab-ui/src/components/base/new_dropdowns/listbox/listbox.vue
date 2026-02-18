@@ -167,6 +167,14 @@ export default {
       default: false,
     },
     /**
+     * Controls the validation state appearance of the component. `true` for valid, `false` for invalid, or `null` for no validation state
+     */
+    state: {
+      type: Boolean,
+      required: false,
+      default: null,
+    },
+    /**
      * Set to "true" when dropdown content (items) is loading
      * It will render a small loader in the dropdown toggle and make it disabled
      */
@@ -687,7 +695,7 @@ export default {
        */
       this.$emit(GL_DROPDOWN_SHOWN);
     },
-    onHide() {
+    onHide(event) {
       /**
        * Emitted when dropdown is hidden
        *
@@ -695,6 +703,8 @@ export default {
        */
       this.$emit(GL_DROPDOWN_HIDDEN);
       this.nextFocusedItemIndex = null;
+      // Emit native blur event for form validation in FormGroup
+      this.$emit('blur', event);
     },
     getNextIndex(currentIndex, keyCode, totalLength) {
       // For UP: move up or wrap to end
@@ -977,6 +987,7 @@ export default {
     :has-searchable-listbox="searchable"
     :has-external-label="isInFormGroup"
     :listbox-id="listboxIdComputed"
+    :state="state"
     :toggle-id="toggleIdComputed"
     :toggle-text="listboxToggleText"
     :toggle-class="toggleButtonClasses"

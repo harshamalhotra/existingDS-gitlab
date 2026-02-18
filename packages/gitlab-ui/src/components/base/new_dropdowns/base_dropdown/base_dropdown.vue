@@ -1,5 +1,6 @@
 <script>
 import uniqueId from 'lodash/uniqueId';
+import isBoolean from 'lodash/isBoolean';
 import {
   arrow,
   computePosition,
@@ -118,6 +119,14 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+    /**
+     * Controls the validation state appearance of the component. `true` for valid, `false` for invalid, or `null` for no validation state
+     */
+    state: {
+      type: Boolean,
+      required: false,
+      default: null,
     },
     placement: {
       type: String,
@@ -245,6 +254,15 @@ export default {
     isCaretOnly() {
       return !this.noCaret && !this.icon && this.hasNoVisibleToggleText;
     },
+    computedState() {
+      // If not a boolean, ensure that value is null
+      return isBoolean(this.state) ? this.state : null;
+    },
+    stateClass() {
+      if (this.computedState === true) return 'is-valid';
+      if (this.computedState === false) return 'is-invalid';
+      return null;
+    },
     isDefaultToggle() {
       return !this.$scopedSlots.toggle;
     },
@@ -298,6 +316,7 @@ export default {
           'gl-new-dropdown-toggle-no-caret': this.noCaret,
           'gl-new-dropdown-caret-only btn-icon': this.isCaretOnly,
         },
+        this.stateClass,
       ];
     },
     toggleButtonTextClasses() {
@@ -590,7 +609,7 @@ export default {
         this.$emit(GL_DROPDOWN_SHOWN);
       } else {
         this.stopFloating();
-        this.$emit(GL_DROPDOWN_HIDDEN);
+        this.$emit(GL_DROPDOWN_HIDDEN, event);
       }
 
       // this is to check whether `toggle` was prevented or not
