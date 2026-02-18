@@ -3766,7 +3766,7 @@
   },
   "font-size-500": {
     "$value": {
-      "value": 18,
+      "value": 20,
       "unit": "px"
     },
     "$type": "dimension",
@@ -3779,7 +3779,7 @@
   },
   "font-size-600": {
     "$value": {
-      "value": 21,
+      "value": 25,
       "unit": "px"
     },
     "$type": "dimension",
@@ -3792,7 +3792,7 @@
   },
   "font-size-700": {
     "$value": {
-      "value": 24,
+      "value": 30,
       "unit": "px"
     },
     "$type": "dimension",
@@ -3805,7 +3805,7 @@
   },
   "font-size-800": {
     "$value": {
-      "value": 28,
+      "value": 36,
       "unit": "px"
     },
     "$type": "dimension",

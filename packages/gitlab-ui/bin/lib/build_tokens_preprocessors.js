@@ -198,7 +198,7 @@ const selectColorValuePreprocessor = (dictionary) => {
  * A preprocessor function that clamp() strings to dimension objects
  * with `value` and `unit` properties
  * e.g., 'clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)'
- * -> { value: 1.125, unit: 'rem' }.
+ * -> { value: 1.25, unit: 'rem' }.
  *
  * Usage:
  *
@@ -219,11 +219,11 @@ const convertClampStringToDimension = (dictionary) => {
     }
 
     if (node.$type === 'string' && typeof node.$value === 'string') {
-      const clampMatch = node.$value.match(/^clamp\s*\(\s*([^,]+),\s*[^,]+,\s*[^)]+\s*\)$/);
+      const clampMatch = node.$value.match(/^clamp\s*\(\s*[^,]+,\s*[^,]+,\s*([^)]+)\s*\)$/);
 
       if (clampMatch) {
-        const firstValue = clampMatch[1].trim();
-        const valueMatch = firstValue.match(/^([\d.]+)(rem|px|)$/);
+        const maxValue = clampMatch[1].trim();
+        const valueMatch = maxValue.match(/^([\d.]+)(rem|px|)$/);
 
         if (valueMatch) {
           const [, value, unit] = valueMatch;
