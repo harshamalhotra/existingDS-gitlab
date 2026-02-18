@@ -76,6 +76,38 @@ LabelPositionLeft.args = generateProps({
   labelPosition: 'left',
 });
 
+export const WithCustomClass = (args, { argTypes }) => ({
+  components: { GlToggle },
+  props: Object.keys(argTypes),
+  data() {
+    return {
+      localValue: this.value,
+    };
+  },
+  watch: {
+    value(newValue) {
+      this.localValue = newValue;
+    },
+  },
+  template: `
+  <div class="gl-text-base" style="width: 200px;">
+    <gl-toggle
+      class="gl-justify-between"
+      v-model="localValue"
+      :disabled="disabled"
+      :description="description"
+      :help="help"
+      :label-id="labelId"
+      :is-loading="isLoading"
+      :label="label"
+      :label-position="labelPosition"
+    />
+  </div>`,
+});
+WithCustomClass.args = generateProps({
+  labelPosition: 'left',
+});
+
 export default {
   title: 'base/toggle',
   component: GlToggle,
