@@ -74,8 +74,10 @@ related:
 
 ### Behavior
 
-- In a radio button group, only one option can be selected at a time and there must be a default selected option.
-- To pick an option, the user can select the radio button or its content.
+- Only one option in a radio button group can be selected at a time.
+- A common or recommended option is typically preselected, but no option needs to be selected initially.
+- An option is selected by clicking the radio button or its label.
+- Unlike a [checkbox](/components/checkbox) group, where all options can be unchecked, a radio button group must always have one option selected after a selection has been made.
 
 ### Content
 
