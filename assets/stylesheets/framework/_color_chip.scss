@@ -13,5 +13,9 @@
     linear-gradient(45deg, transparent 75%, var(--gl-background-color-strong) 75%),
     linear-gradient(135deg, transparent 75%, var(--gl-background-color-strong) 75%);
   background-size: 50% 50%;
-  background-position: 0 0, 50% 0, 50% -50%, 0 50%;
+  background-position:
+    0 0,
+    50% 0,
+    50% -50%,
+    0 50%;
 }

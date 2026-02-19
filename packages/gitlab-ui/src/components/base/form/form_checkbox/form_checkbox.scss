@@ -80,7 +80,7 @@
       border-color: var(--gl-control-border-color-focus);
     }
 
-    .custom-control-input:checked  ~ .custom-control-label::before {
+    .custom-control-input:checked ~ .custom-control-label::before {
       background-color: var(--gl-control-background-color-selected-default);
       border-color: var(--gl-control-border-color-selected-default);
 
@@ -118,7 +118,7 @@
 
     .custom-control-input:not(:disabled):checked ~ .custom-control-label:hover,
     .custom-control-input:not(:disabled):hover:checked ~ .custom-control-label {
-      &::before  {
+      &::before {
         background-color: var(--gl-control-background-color-selected-hover);
         border-color: var(--gl-control-border-color-selected-hover);
       }

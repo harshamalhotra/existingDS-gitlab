@@ -21,7 +21,7 @@
     "build": "bash ./scripts/build.sh",
     "lint:eslint": "eslint --report-unused-disable-directives --max-warnings 0 .",
     "lint:eslint:fix": "yarn run lint:eslint --fix",
-    "lint:prettier": "prettier --list-different '**/*.{js,mjs,cjs,ts,vue,yml,yaml}'",
+    "lint:prettier": "prettier --list-different '**/*.{js,mjs,cjs,ts,vue,yml,yaml,css,scss}'",
     "lint:prettier:fix": "yarn run lint:prettier --write",
     "lint:markdownlint": "markdownlint-cli2",
     "lint:stylelint": "stylelint '**/*.scss'",

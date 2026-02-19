@@ -28,11 +28,19 @@
   // Don't include the badge
   &:not(:last-child) {
     margin-right: var(--mask-offset);
-    mask: radial-gradient(circle at calc(var(--avatar-size) * 1.25) center, transparent var(--mask-cutout), white 0);
+    mask: radial-gradient(
+      circle at calc(var(--avatar-size) * 1.25) center,
+      transparent var(--mask-cutout),
+      white 0
+    );
 
-    &:hover+.gl-avatars-inline-child>.gl-avatar-link,
-    &:hover+.gl-avatars-inline-child>.gl-avatars-inline-badge {
-      mask: radial-gradient(circle at var(--mask-offset) center, transparent var(--mask-cutout), white 0);
+    &:hover + .gl-avatars-inline-child > .gl-avatar-link,
+    &:hover + .gl-avatars-inline-child > .gl-avatars-inline-badge {
+      mask: radial-gradient(
+        circle at var(--mask-offset) center,
+        transparent var(--mask-cutout),
+        white 0
+      );
     }
   }
 

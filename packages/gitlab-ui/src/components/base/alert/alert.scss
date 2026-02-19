@@ -22,7 +22,12 @@ $gl-alert-top-border-size: 2px;
     border-bottom: 1px solid $border-bottom-color;
 
     &::before {
-      background: linear-gradient(to right, transparent 0%, $border-top-color 50%, transparent 100%);
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        $border-top-color 50%,
+        transparent 100%
+      );
     }
 
     .gl-alert-title {
@@ -49,7 +54,7 @@ $gl-alert-top-border-size: 2px;
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: $gl-alert-top-border-size;
@@ -130,7 +135,7 @@ $gl-alert-top-border-size: 2px;
   $title-color: var(--gl-alert-danger-title-color),
   $border-top-color: var(--gl-alert-danger-border-top-color),
   $border-bottom-color: var(--gl-alert-danger-border-bottom-color),
-  $icon-color: var(--gl-feedback-danger-icon-color),
+  $icon-color: var(--gl-feedback-danger-icon-color)
 );
 
 @include gl-alert-variant(
@@ -139,7 +144,7 @@ $gl-alert-top-border-size: 2px;
   $title-color: var(--gl-alert-warning-title-color),
   $border-top-color: var(--gl-alert-warning-border-top-color),
   $border-bottom-color: var(--gl-alert-warning-border-bottom-color),
-  $icon-color: var(--gl-feedback-warning-icon-color),
+  $icon-color: var(--gl-feedback-warning-icon-color)
 );
 
 @include gl-alert-variant(
@@ -148,7 +153,7 @@ $gl-alert-top-border-size: 2px;
   $title-color: var(--gl-alert-neutral-title-color),
   $border-top-color: var(--gl-alert-neutral-border-top-color),
   $border-bottom-color: var(--gl-alert-neutral-border-bottom-color),
-  $icon-color: var(--gl-feedback-neutral-icon-color),
+  $icon-color: var(--gl-feedback-neutral-icon-color)
 );
 
 @include gl-alert-variant(
@@ -157,7 +162,7 @@ $gl-alert-top-border-size: 2px;
   $title-color: var(--gl-alert-info-title-color),
   $border-top-color: var(--gl-alert-info-border-top-color),
   $border-bottom-color: var(--gl-alert-info-border-bottom-color),
-  $icon-color: var(--gl-feedback-info-icon-color),
+  $icon-color: var(--gl-feedback-info-icon-color)
 );
 
 @include gl-alert-variant(
@@ -166,5 +171,5 @@ $gl-alert-top-border-size: 2px;
   $title-color: var(--gl-alert-success-title-color),
   $border-top-color: var(--gl-alert-success-border-top-color),
   $border-bottom-color: var(--gl-alert-success-border-bottom-color),
-  $icon-color: var(--gl-feedback-success-icon-color),
+  $icon-color: var(--gl-feedback-success-icon-color)
 );

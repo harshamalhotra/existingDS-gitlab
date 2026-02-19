@@ -16,7 +16,12 @@
   }
 
   .homepage-hero-heading {
-    background: linear-gradient(123deg, var(--gl-color-brand-orange-01p), var(--gl-color-brand-purple-01p) 45.5%, var(--gl-color-brand-purple-02p));
+    background: linear-gradient(
+      123deg,
+      var(--gl-color-brand-orange-01p),
+      var(--gl-color-brand-purple-01p) 45.5%,
+      var(--gl-color-brand-purple-02p)
+    );
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }

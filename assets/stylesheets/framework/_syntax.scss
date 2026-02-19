@@ -24,8 +24,8 @@
 
 .md {
   /* Base styles */
-  pre[class*="language-"],
-  :not(pre) > code[class*="language-"] {
+  pre[class*='language-'],
+  :not(pre) > code[class*='language-'] {
     @apply gl-border;
     @apply gl-rounded-default;
     @apply gl-font-monospace;
@@ -49,14 +49,14 @@
     }
   }
 
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     @apply gl-p-3;
     @apply gl-my-3;
     @apply gl-overflow-auto;
     @apply gl-rounded-default;
   }
 
-  :not(pre) > code[class*="language-"] {
+  :not(pre) > code[class*='language-'] {
     padding: 0.1em 0.3em;
     @apply gl-rounded-default;
     white-space: normal;

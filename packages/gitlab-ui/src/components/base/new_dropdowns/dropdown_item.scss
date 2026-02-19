@@ -38,7 +38,7 @@
     }
   }
 
-  &[aria-selected="true"] {
+  &[aria-selected='true'] {
     .gl-new-dropdown-item-content {
       background-color: var(--gl-dropdown-option-background-color-selected-default);
     }
@@ -101,8 +101,9 @@
   }
 
   .gl-new-dropdown-item-content {
-    transition: background-color $gl-transition-duration-fast $gl-easing-out-cubic,
-                box-shadow $gl-transition-duration-medium $gl-easing-out-cubic;
+    transition:
+      background-color $gl-transition-duration-fast $gl-easing-out-cubic,
+      box-shadow $gl-transition-duration-medium $gl-easing-out-cubic;
     @apply gl-rounded-default;
     @apply gl-border-0;
     @apply gl-w-full;

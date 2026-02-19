@@ -1,5 +1,15 @@
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   @apply gl-text-heading;
 }
 
@@ -25,7 +35,7 @@ pre {
 }
 
 kbd {
-  @apply gl-inline-block gl-text-default gl-bg-subtle gl-border gl-border-b-strong gl-leading-1;
+  @apply gl-border gl-inline-block gl-border-b-strong gl-bg-subtle gl-leading-1 gl-text-default;
   font-size: 87.5%;
   padding: 3px 5px;
   vertical-align: unset;
@@ -35,15 +45,15 @@ kbd {
 }
 
 .table {
-  @apply gl-w-full gl-mb-3 gl-text-default gl-bg-transparent;
+  @apply gl-mb-3 gl-w-full gl-bg-transparent gl-text-default;
 
   th,
   td {
-    @apply gl-p-4 gl-align-top gl-border-t;
+    @apply gl-border-t gl-p-4 gl-align-top;
   }
 
   thead th {
-    @apply gl-align-bottom gl-border-b gl-border-b-2;
+    @apply gl-border-b gl-border-b-2 gl-align-bottom;
   }
 
   tbody + tbody {

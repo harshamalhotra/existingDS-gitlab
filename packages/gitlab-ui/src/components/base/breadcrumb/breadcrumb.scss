@@ -63,7 +63,7 @@ $breadcrumb-max-width: $grid-size * 16;
 }
 
 .gl-breadcrumb-item {
-/**
+  /**
    * If the last/only item, which is always visible, has a very long title,
    * it could overflow the breadcrumb component. This CSS makes sure it
    * shows an ellipsis instead.

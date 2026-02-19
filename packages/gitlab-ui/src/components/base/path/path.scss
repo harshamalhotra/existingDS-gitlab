@@ -79,7 +79,9 @@ $path-chevron-right-margin: px-to-rem(14px);
       display: none;
       z-index: 2;
       right: calc(-0.75rem + 1px);
-      box-shadow: 0 0 0 1px var(--gl-focus-ring-inner-color), 0.5px -0.5px 0 2.5px var(--gl-focus-ring-outer-color);
+      box-shadow:
+        0 0 0 1px var(--gl-focus-ring-inner-color),
+        0.5px -0.5px 0 2.5px var(--gl-focus-ring-outer-color);
       clip-path: polygon(0% 0%, 0% -30%, 160% 0%, 75% 130%, 100% 100%);
       transform: rotate(45deg) skew(14deg, 14deg) scale(0.99);
     }
@@ -103,7 +105,10 @@ $path-chevron-right-margin: px-to-rem(14px);
     &:focus,
     &:focus:active {
       // Custom focus to account for path shape
-      box-shadow: 5px -3px 0 -2px var(--gl-focus-ring-inner-color), 5px 3px 0 -2px var(--gl-focus-ring-inner-color), 0 0 0 1px var(--gl-focus-ring-inner-color),
+      box-shadow:
+        5px -3px 0 -2px var(--gl-focus-ring-inner-color),
+        5px 3px 0 -2px var(--gl-focus-ring-inner-color),
+        0 0 0 1px var(--gl-focus-ring-inner-color),
         0 0 0 3px var(--gl-focus-ring-outer-color);
       outline: none;
       border-top-right-radius: 1px;

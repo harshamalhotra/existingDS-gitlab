@@ -6,6 +6,7 @@ packages/gitlab-ui/.cypress_cache
 packages/gitlab-ui/src/vendor/
 packages/gitlab-ui/bin/migrate_custom_utils_to_tw.bundled.mjs
 packages/gitlab-ui/src/tokens/contextual/badge.tokens.json
+packages/gitlab-ui/src/tokens/build/
 
 packages/gitlab-svgs/.nuxt
 packages/gitlab-svgs/public

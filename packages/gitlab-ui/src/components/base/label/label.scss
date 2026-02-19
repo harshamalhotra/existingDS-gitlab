@@ -24,7 +24,10 @@ $label-padding-horizontal-half: 0.375 * $grid-size;
   }
 
   &:has(*:first-child:focus) {
-    @include gl-focus($color: var(--label-background-color, var(--gl-background-color-default)), $important: true);
+    @include gl-focus(
+      $color: var(--label-background-color, var(--gl-background-color-default)),
+      $important: true
+    );
   }
 
   .gl-label-link {

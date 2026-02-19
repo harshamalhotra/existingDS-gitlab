@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply gl-relative;
   @apply gl-font-bold;
 
@@ -18,12 +23,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 { @apply gl-heading-1 }
-h2 { @apply gl-heading-2 }
-h3 { @apply gl-heading-3 }
-h4 { @apply gl-heading-4 }
-h5 { @apply gl-heading-5 }
-h6 { @apply gl-heading-6 }
+h1 {
+  @apply gl-heading-1;
+}
+
+h2 {
+  @apply gl-heading-2;
+}
+
+h3 {
+  @apply gl-heading-3;
+}
+
+h4 {
+  @apply gl-heading-4;
+}
+
+h5 {
+  @apply gl-heading-5;
+}
+
+h6 {
+  @apply gl-heading-6;
+}
 
 p {
   @apply gl-text-base;

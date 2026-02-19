@@ -1,5 +1,5 @@
 .gl-tabs-wrapper {
-  @apply gl-relative gl-flex gl-flex-wrap gl-border-b;
+  @apply gl-border-b gl-relative gl-flex gl-flex-wrap;
 }
 
 .gl-tabs-nav {
@@ -37,8 +37,9 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    &, &::before {
-      transition-duration: .01ms;
+    &,
+    &::before {
+      transition-duration: 0.01ms;
     }
   }
 
@@ -140,7 +141,7 @@
 }
 
 .gl-tabs-fade {
-  @apply gl-absolute gl-top-0 gl-bottom-0 gl-z-2;
+  @apply gl-absolute gl-bottom-0 gl-top-0 gl-z-2;
   @apply gl-w-8;
   @apply gl-p-2;
   @apply gl-flex;
@@ -152,7 +153,7 @@
 }
 
 .gl-tabs-fade-right {
-  @apply gl-justify-end gl-right-0;
+  @apply gl-right-0 gl-justify-end;
   @include gl-bg-gradient-blur(right, var(--gl-background-color-default));
 }
 

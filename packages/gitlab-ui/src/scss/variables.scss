@@ -50,11 +50,24 @@ $gl-font-weights: (
 );
 
 // Fonts
-$gl-monospace-font: 'GitLab Mono', 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono',
-  'Consolas', 'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace !default;
-$gl-regular-font: 'GitLab Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans',
-  Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$gl-monospace-font:
+  'GitLab Mono', 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas',
+  'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace !default;
+$gl-regular-font:
+  'GitLab Sans',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Noto Sans',
+  Ubuntu,
+  Cantarell,
+  'Helvetica Neue',
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji' !default;
 
 $gl-fonts: (
   'monospace': $gl-monospace-font,
@@ -195,9 +208,11 @@ $gl-easing-out-cubic: cubic-bezier(0.22, 0.61, 0.36, 1);
 $outline-offset: 1px;
 $outline-width: 2px;
 $outline: #{$outline-offset + $outline-width};
-$focus-ring: 0 0 0 $outline-offset var(--gl-focus-ring-inner-color),
+$focus-ring:
+  0 0 0 $outline-offset var(--gl-focus-ring-inner-color),
   0 0 0 #{$outline-offset + $outline-width} var(--gl-focus-ring-outer-color);
-$focus-ring-inset: inset 0 0 0 #{$outline-width + $outline-offset} var(--gl-focus-ring-inner-color),
+$focus-ring-inset:
+  inset 0 0 0 #{$outline-width + $outline-offset} var(--gl-focus-ring-inner-color),
   inset 0 0 0 $outline-offset var(--gl-focus-ring-inner-color);
 $focus-ring-outline: $outline-width solid var(--gl-focus-ring-outer-color);
 

@@ -12,7 +12,6 @@
 @import 'bootstrap';
 @import 'bootstrap_vue';
 
-
 @import 'fonts';
 
 @import 'body';
@@ -28,8 +27,8 @@
 }
 
 .bootstrap-vue-docs {
-  @import "../vendor/bootstrap-vue/docs/assets/css/docs.min";
-  @import "../vendor/bootstrap-vue/docs/assets/scss/styles";
+  @import '../vendor/bootstrap-vue/docs/assets/css/docs.min';
+  @import '../vendor/bootstrap-vue/docs/assets/scss/styles';
 }
 
 // This imports the tailwind.css file.

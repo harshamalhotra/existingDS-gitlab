@@ -10,24 +10,24 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
   > .gl-button:not(:first-child),
   > .btn-group:not(:first-child) > .gl-button,
   > .gl-new-dropdown:not(:first-child) > .gl-button {
-    @apply gl-border-l-0 gl-rounded-l-none;
+    @apply gl-rounded-l-none gl-border-l-0;
   }
 
   > .gl-button:not(:last-child):not(.dropdown-toggle),
   > .btn-group:not(:last-child) > .gl-button,
   > .gl-new-dropdown:not(:last-child) > .gl-button {
-    @apply gl-border-r-0 gl-rounded-r-none;
+    @apply gl-rounded-r-none gl-border-r-0;
   }
 
   // Pseudo element to mock border between buttons
   > .gl-button:not(:first-child),
   > .btn-group:not(:first-child) > .gl-button,
   > .gl-new-dropdown:not(:first-child) > .gl-button {
-    @apply gl-relative gl-ml-[1px] gl-isolate;
+    @apply gl-relative gl-isolate gl-ml-[1px];
 
     &::before {
       content: '';
-      @apply gl-absolute gl-block gl-top-[-1px] gl-bottom-[-1px] gl-left-[-1px] gl-w-[1px];
+      @apply gl-absolute gl-bottom-[-1px] gl-left-[-1px] gl-top-[-1px] gl-block gl-w-[1px];
       z-index: $gl-button-group-border-z-index;
     }
   }
@@ -87,13 +87,13 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
   > .gl-button:not(:first-child),
   > .btn-group:not(:first-child) > .gl-button,
   > .gl-new-dropdown:not(:first-child) > .gl-button {
-    @apply gl-border-t-0 gl-rounded-t-none;
+    @apply gl-rounded-t-none gl-border-t-0;
   }
 
   > .gl-button:not(:last-child):not(.dropdown-toggle),
   > .btn-group:not(:last-child) > .gl-button,
   > .gl-new-dropdown:not(:last-child) > .gl-button {
-    @apply gl-border-b-0 gl-rounded-b-none;
+    @apply gl-rounded-b-none gl-border-b-0;
   }
 
   // Pseudo element to mock border between buttons
@@ -104,7 +104,7 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
 
     &::before {
       content: '';
-      @apply gl-absolute gl-block gl-left-[-1px] gl-right-[-1px] gl-top-[-1px] gl-h-[1px];
+      @apply gl-absolute gl-left-[-1px] gl-right-[-1px] gl-top-[-1px] gl-block gl-h-[1px];
       z-index: $gl-button-group-border-z-index;
     }
   }
