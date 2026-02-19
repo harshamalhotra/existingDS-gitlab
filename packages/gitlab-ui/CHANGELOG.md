@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.13.0
+
+### Minor Changes
+
+- e9348cf: Add validation support for GlCollapsibleListbox
+
 ## 128.12.0
 
 ### Minor Changes
