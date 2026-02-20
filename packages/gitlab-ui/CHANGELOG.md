@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.13.1
+
+### Patch Changes
+
+- e9670fa: Figma style-dictionary format use max clamp value
+
 ## 128.13.0
 
 ### Minor Changes
