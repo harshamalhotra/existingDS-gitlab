@@ -18,8 +18,8 @@ describe('GlAccordionItem', () => {
   const createComponent = (props = {}, { defaultHeaderLevel = 3, autoCollapse = false } = {}) => {
     wrapper = mount(GlAccordionItem, {
       provide: {
-        defaultHeaderLevel: () => defaultHeaderLevel,
-        autoCollapse: () => autoCollapse,
+        defaultHeaderLevel,
+        autoCollapse,
       },
       propsData: {
         title: defaultTitle,

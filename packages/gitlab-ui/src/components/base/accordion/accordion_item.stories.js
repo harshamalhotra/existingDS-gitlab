@@ -28,8 +28,8 @@ const Template = (args) => ({
   props: Object.keys(args),
   template,
   provide: {
-    defaultHeaderLevel: () => defaultValue('headerLevel'),
-    autoCollapse: () => false,
+    defaultHeaderLevel: defaultValue('headerLevel'),
+    autoCollapse: false,
   },
 });
 
