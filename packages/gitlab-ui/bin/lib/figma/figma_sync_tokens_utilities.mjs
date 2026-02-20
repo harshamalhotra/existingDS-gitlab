@@ -122,17 +122,18 @@ export function resolveValue(token, allTokens, variables, variableName = null) {
   // If value is an alias reference, resolve it
   if (typeof $value === 'string' && $value.startsWith('{') && $value.endsWith('}')) {
     const aliasName = $value.slice(1, -1);
-    const aliasToken = allTokens.get(aliasName);
 
-    if (aliasToken) {
-      // Recursively resolve in case the alias points to another alias
-      return resolveValue(aliasToken, allTokens, variables, aliasName);
-    }
-
-    // If alias not found, return the variable alias reference
+    // Check if the alias target exists as a Figma variable first
     const variable = variables.get(aliasName);
     if (variable) {
       return { type: 'VARIABLE_ALIAS', id: variable.id };
+    }
+
+    // If not in Figma, try to resolve from tokens
+    const aliasToken = allTokens.get(aliasName);
+    if (aliasToken) {
+      // Recursively resolve in case the alias points to another alias
+      return resolveValue(aliasToken, allTokens, variables, aliasName);
     }
 
     // Fallback - shouldn't happen
