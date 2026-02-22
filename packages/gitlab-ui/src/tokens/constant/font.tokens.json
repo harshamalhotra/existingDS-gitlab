@@ -3,7 +3,7 @@
     "family": {
       "regular": {
         "$value": [
-          "var(--default-regular-font)",
+          "var(--default-regular-font, 'GitLab Sans')",
           "'GitLab Sans'",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -28,7 +28,7 @@
       },
       "monospace": {
         "$value": [
-          "var(--default-mono-font)",
+          "var(--default-mono-font, 'GitLab Mono')",
           "'GitLab Mono'",
           "'JetBrains Mono'",
           "Menlo",

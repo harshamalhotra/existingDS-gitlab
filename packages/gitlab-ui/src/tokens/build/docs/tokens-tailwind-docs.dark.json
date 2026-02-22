@@ -42280,7 +42280,7 @@
     "regular": {
       "key": "{font.family.regular}",
       "$value": [
-        "var(--default-regular-font)",
+        "var(--default-regular-font, 'GitLab Sans')",
         "'GitLab Sans'",
         "-apple-system",
         "BlinkMacSystemFont",
@@ -42306,7 +42306,7 @@
       "isSource": true,
       "original": {
         "$value": [
-          "var(--default-regular-font)",
+          "var(--default-regular-font, 'GitLab Sans')",
           "'GitLab Sans'",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -42342,7 +42342,7 @@
     "monospace": {
       "key": "{font.family.monospace}",
       "$value": [
-        "var(--default-mono-font)",
+        "var(--default-mono-font, 'GitLab Mono')",
         "'GitLab Mono'",
         "'JetBrains Mono'",
         "Menlo",
@@ -42365,7 +42365,7 @@
       "isSource": true,
       "original": {
         "$value": [
-          "var(--default-mono-font)",
+          "var(--default-mono-font, 'GitLab Mono')",
           "'GitLab Mono'",
           "'JetBrains Mono'",
           "Menlo",

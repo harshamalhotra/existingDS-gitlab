@@ -244,7 +244,7 @@ export const GL_COLOR_BRAND_GRAY_04 = '#45424d';
 export const GL_COLOR_BRAND_GRAY_05 = '#2b2838';
 export const GL_COLOR_BRAND_PINK_01G = '#ffb9c9';
 export const GL_FONT_FAMILY_REGULAR = [
-  'var(--default-regular-font)',
+  "var(--default-regular-font, 'GitLab Sans')",
   "'GitLab Sans'",
   '-apple-system',
   'BlinkMacSystemFont',
@@ -261,7 +261,7 @@ export const GL_FONT_FAMILY_REGULAR = [
   "'Noto Color Emoji'",
 ];
 export const GL_FONT_FAMILY_MONOSPACE = [
-  'var(--default-mono-font)',
+  "var(--default-mono-font, 'GitLab Mono')",
   "'GitLab Mono'",
   "'JetBrains Mono'",
   'Menlo',
