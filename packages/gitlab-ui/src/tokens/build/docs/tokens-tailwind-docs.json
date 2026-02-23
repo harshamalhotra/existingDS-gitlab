@@ -42281,6 +42281,7 @@
       "key": "{font.family.regular}",
       "$value": [
         "var(--default-regular-font, 'GitLab Sans')",
+        "'GitLab Sans'",
         "-apple-system",
         "BlinkMacSystemFont",
         "'Segoe UI'",
@@ -42306,6 +42307,7 @@
       "original": {
         "$value": [
           "var(--default-regular-font, 'GitLab Sans')",
+          "'GitLab Sans'",
           "-apple-system",
           "BlinkMacSystemFont",
           "'Segoe UI'",
@@ -42341,6 +42343,7 @@
       "key": "{font.family.monospace}",
       "$value": [
         "var(--default-mono-font, 'GitLab Mono')",
+        "'GitLab Mono'",
         "'JetBrains Mono'",
         "Menlo",
         "'DejaVu Sans Mono'",
@@ -42363,6 +42366,7 @@
       "original": {
         "$value": [
           "var(--default-mono-font, 'GitLab Mono')",
+          "'GitLab Mono'",
           "'JetBrains Mono'",
           "Menlo",
           "'DejaVu Sans Mono'",

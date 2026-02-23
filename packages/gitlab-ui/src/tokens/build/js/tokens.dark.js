@@ -245,6 +245,7 @@ export const GL_COLOR_BRAND_GRAY_05 = '#2b2838';
 export const GL_COLOR_BRAND_PINK_01G = '#ffb9c9';
 export const GL_FONT_FAMILY_REGULAR = [
   "var(--default-regular-font, 'GitLab Sans')",
+  "'GitLab Sans'",
   '-apple-system',
   'BlinkMacSystemFont',
   "'Segoe UI'",
@@ -261,6 +262,7 @@ export const GL_FONT_FAMILY_REGULAR = [
 ];
 export const GL_FONT_FAMILY_MONOSPACE = [
   "var(--default-mono-font, 'GitLab Mono')",
+  "'GitLab Mono'",
   "'JetBrains Mono'",
   'Menlo',
   "'DejaVu Sans Mono'",
