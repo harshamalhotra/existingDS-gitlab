@@ -1,4 +1,46 @@
 /**
+ * Compare two values for equality, handling different types
+ * @param {*} value1 - First value
+ * @param {*} value2 - Second value
+ * @returns {boolean} True if values are equal
+ */
+export function valuesAreEqual(value1, value2) {
+  // Handle null/undefined
+  if (value1 === value2) return true;
+  if (value1 == null || value2 == null) return false;
+
+  // Handle VARIABLE_ALIAS
+  if (value1?.type === 'VARIABLE_ALIAS' && value2?.type === 'VARIABLE_ALIAS') {
+    return value1.id === value2.id;
+  }
+
+  // Handle color objects (RGBA)
+  if (typeof value1 === 'object' && typeof value2 === 'object' && 'r' in value1 && 'r' in value2) {
+    // Compare with fixed precision to handle floating-point issues
+    const r1 = Number(value1.r.toFixed(2));
+    const r2 = Number(value2.r.toFixed(2));
+    const g1 = Number(value1.g.toFixed(2));
+    const g2 = Number(value2.g.toFixed(2));
+    const b1 = Number(value1.b.toFixed(2));
+    const b2 = Number(value2.b.toFixed(2));
+    const a1 = Number(value1.a.toFixed(2));
+    const a2 = Number(value2.a.toFixed(2));
+
+    return r1 === r2 && g1 === g2 && b1 === b2 && a1 === a2;
+  }
+
+  // Handle numbers with floating-point precision
+  if (typeof value1 === 'number' && typeof value2 === 'number') {
+    const v1 = Number(value1.toFixed(2));
+    const v2 = Number(value2.toFixed(2));
+    return v1 === v2;
+  }
+
+  // Handle primitives (strings, etc)
+  return value1 === value2;
+}
+
+/**
  * Parse and fix floating-point precision issues
  * @param {*} value - Value to parse as float
  * @param {string} [context] - Context for error messages

@@ -1,4 +1,5 @@
 import {
+  valuesAreEqual,
   parseFloatWithPrecision,
   DTCGToFigmaColorFormat,
   convertValue,
@@ -6,6 +7,71 @@ import {
 } from './figma_sync_tokens_utilities.mjs';
 
 describe('Sync Tokens Utilities', () => {
+  describe('valuesAreEqual', () => {
+    it('should handle null, undefined, and strict equality', () => {
+      expect(valuesAreEqual(null, null)).toBe(true);
+      expect(valuesAreEqual(undefined, undefined)).toBe(true);
+      expect(valuesAreEqual(42, 42)).toBe(true);
+      expect(valuesAreEqual('hello', 'hello')).toBe(true);
+      expect(valuesAreEqual(true, true)).toBe(true);
+    });
+
+    it('should return false for null/undefined mismatches', () => {
+      expect(valuesAreEqual(null, undefined)).toBe(false);
+      expect(valuesAreEqual(null, 0)).toBe(false);
+      expect(valuesAreEqual(undefined, '')).toBe(false);
+    });
+
+    it('should compare variable aliases by ID', () => {
+      const alias1 = { type: 'VARIABLE_ALIAS', id: 'var-123' };
+      const alias2 = { type: 'VARIABLE_ALIAS', id: 'var-123' };
+      const alias3 = { type: 'VARIABLE_ALIAS', id: 'var-456' };
+
+      expect(valuesAreEqual(alias1, alias2)).toBe(true);
+      expect(valuesAreEqual(alias1, alias3)).toBe(false);
+      expect(valuesAreEqual(alias1, 'string')).toBe(false);
+    });
+
+    it('should compare colors with floating-point precision', () => {
+      const color1 = { r: 255, g: 128, b: 0, a: 1 };
+      const color2 = { r: 255, g: 128, b: 0, a: 1 };
+      const color3 = { r: 255.001, g: 128.002, b: 0.003, a: 1.001 };
+      const color4 = { r: 254, g: 128, b: 0, a: 1 };
+
+      expect(valuesAreEqual(color1, color2)).toBe(true);
+      expect(valuesAreEqual(color1, color3)).toBe(true); // Minor differences
+      expect(valuesAreEqual(color1, color4)).toBe(false); // Significant difference
+      expect(valuesAreEqual(color1, 'red')).toBe(false);
+    });
+
+    it('should handle floating-point precision and special values', () => {
+      expect(valuesAreEqual(1.001, 1.002)).toBe(true);
+      expect(valuesAreEqual(0.1 + 0.2, 0.3)).toBe(true);
+      expect(valuesAreEqual(-1.001, -1.002)).toBe(true);
+      expect(valuesAreEqual(0, -0)).toBe(true);
+      expect(valuesAreEqual(Infinity, Infinity)).toBe(true);
+      expect(valuesAreEqual(-Infinity, -Infinity)).toBe(true);
+
+      expect(valuesAreEqual(1.0, 1.1)).toBe(false);
+      expect(valuesAreEqual(Infinity, -Infinity)).toBe(false);
+      expect(valuesAreEqual(NaN, NaN)).toBe(false); // NaN !== NaN
+    });
+
+    it('should handle strings and booleans', () => {
+      expect(valuesAreEqual('hello', 'hello')).toBe(true);
+      expect(valuesAreEqual(true, true)).toBe(true);
+      expect(valuesAreEqual('hello', 'world')).toBe(false);
+      expect(valuesAreEqual(true, false)).toBe(false);
+    });
+
+    it('should return false for different types', () => {
+      expect(valuesAreEqual('42', 42)).toBe(false);
+      expect(valuesAreEqual(true, 1)).toBe(false);
+      expect(valuesAreEqual({}, 'object')).toBe(false);
+      expect(valuesAreEqual([1, 2, 3], [1, 2, 3])).toBe(false);
+    });
+  });
+
   describe('parseFloatWithPrecision', () => {
     it('should parse integer strings', () => {
       expect(parseFloatWithPrecision('42')).toBe(42);
