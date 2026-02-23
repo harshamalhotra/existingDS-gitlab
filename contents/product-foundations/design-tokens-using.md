@@ -39,7 +39,7 @@ Use design tokens in code through these approaches, listed in order of preferenc
 2. **CSS utilities**: For custom styling needs not covered by components.
 3. **CSS custom properties**: For precise control over specific CSS properties.
 
-If these options don't meet your needs, [reach out to the design system team](https://handbook.gitlab.com/handbook/engineering/development/dev/foundations/design-system/) to discuss potential improvements.
+If these options don't meet your needs, reach out to the design system team to discuss potential improvements.
 
 ### Components
 
