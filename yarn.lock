@@ -20478,10 +20478,10 @@ strnum@^2.1.0:
   resolved "https://registry.yarnpkg.com/strnum/-/strnum-2.1.2.tgz#a5e00ba66ab25f9cafa3726b567ce7a49170937a"
   integrity sha512-l63NF9y/cLROq/yqKXSLtcMeeyOfnSQlfMSlzFt/K73oIaD8DGaQWd7Z34X9GPiKqP5rbSh84Hl4bOlLcjiSrQ==
 
-style-dictionary@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.3.1.tgz#83e0ac23c7f1d90f345413257a01b6ff3f021c45"
-  integrity sha512-JERfy+PNhIaG+EUSHyeznruSaaQpfHZO6kcxRYGPh3HZ3zNKiOJxp3tL4liQCzLTUBwf1geofMjQlVADR26vXA==
+style-dictionary@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-5.3.2.tgz#b3e0c421625d49fc484aeb71096e39e1f4780332"
+  integrity sha512-A/HPAdqyKWZxsiclqiq++fckbrkJ8a8+LbHJeieI2UYiZNHkNqLTa1jE3sZycxFPbPYQmQnu6u9vq5TH4aWjrQ==
   dependencies:
     "@bundled-es-modules/deepmerge" "^4.3.1"
     "@bundled-es-modules/glob" "^13.0.3"
