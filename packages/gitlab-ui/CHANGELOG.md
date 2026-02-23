@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.13.2
+
+### Patch Changes
+
+- 6b4aca1: Update font family to move GitLab fonts after CSS custom property
+
 ## 128.13.1
 
 ### Patch Changes
