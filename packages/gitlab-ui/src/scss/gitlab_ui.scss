@@ -1,21 +1,21 @@
-@import 'mixins';
+@import "mixins";
 
-@import 'bootstrap';
-@import 'bootstrap_vue';
+@import "bootstrap";
+@import "bootstrap_vue";
 
 // Design Tokens
-@import 'tokens';
+@import "tokens";
 
 // Settings
-@import 'functions';
-@import 'variables';
-@import 'typescale/index';
+@import "functions";
+@import "variables";
+@import "typescale/index";
 
 // Body
-@import 'body';
+@import "body";
 
 // Typography
-@import 'typography';
+@import "typography";
 
 // Components
-@import 'components';
+@import "components";

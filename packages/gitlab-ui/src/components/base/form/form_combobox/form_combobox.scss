@@ -105,7 +105,7 @@
       }
 
       // Selected state (if needed for multi-select scenarios)
-      &[aria-selected='true'] .dropdown-item {
+      &[aria-selected="true"] .dropdown-item {
         background-color: var(--gl-dropdown-option-background-color-selected-default);
 
         &:hover {

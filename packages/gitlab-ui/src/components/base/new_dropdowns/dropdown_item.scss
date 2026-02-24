@@ -38,7 +38,7 @@
     }
   }
 
-  &[aria-selected='true'] {
+  &[aria-selected="true"] {
     .gl-new-dropdown-item-content {
       background-color: var(--gl-dropdown-option-background-color-selected-default);
     }

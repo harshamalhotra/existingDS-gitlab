@@ -472,8 +472,8 @@
     }
   }
 
-  &.disabled[class*='-tertiary'],
-  &[disabled][class*='-tertiary'] {
+  &.disabled[class*="-tertiary"],
+  &[disabled][class*="-tertiary"] {
     @apply gl-bg-transparent;
     @apply gl-shadow-none;
   }

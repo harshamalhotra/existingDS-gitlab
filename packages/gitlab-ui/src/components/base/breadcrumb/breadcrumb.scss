@@ -23,7 +23,7 @@ $breadcrumb-max-width: $grid-size * 16;
   &:not(:last-child, :has(+ .gl-breadcrumb-clipboard-button))::after {
     color: var(--gl-breadcrumb-separator-color);
     @apply gl-px-3;
-    content: '/';
+    content: "/";
   }
 
   > a {

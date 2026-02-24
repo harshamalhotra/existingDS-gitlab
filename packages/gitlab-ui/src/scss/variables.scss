@@ -1,6 +1,6 @@
-@use 'sass:map';
-@import 'functions';
-@import '../tokens/build/scss/tokens';
+@use "sass:map";
+@import "functions";
+@import "../tokens/build/scss/tokens";
 
 // Layout
 $grid-size: px-to-rem(8px);
@@ -45,33 +45,33 @@ $gl-font-weight-semibold: 500;
 $gl-font-weight-bold: 600;
 
 $gl-font-weights: (
-  'normal': $gl-font-weight-normal,
-  'bold': $gl-font-weight-bold,
+  "normal": $gl-font-weight-normal,
+  "bold": $gl-font-weight-bold,
 );
 
 // Fonts
 $gl-monospace-font:
-  'GitLab Mono', 'JetBrains Mono', 'Menlo', 'DejaVu Sans Mono', 'Liberation Mono', 'Consolas',
-  'Ubuntu Mono', 'Courier New', 'andale mono', 'lucida console', monospace !default;
+  "GitLab Mono", "JetBrains Mono", "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas",
+  "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !default;
 $gl-regular-font:
-  'GitLab Sans',
+  "GitLab Sans",
   -apple-system,
   BlinkMacSystemFont,
-  'Segoe UI',
+  "Segoe UI",
   Roboto,
-  'Noto Sans',
+  "Noto Sans",
   Ubuntu,
   Cantarell,
-  'Helvetica Neue',
+  "Helvetica Neue",
   sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol',
-  'Noto Color Emoji' !default;
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
 
 $gl-fonts: (
-  'monospace': $gl-monospace-font,
-  'regular': $gl-regular-font,
+  "monospace": $gl-monospace-font,
+  "regular": $gl-regular-font,
 );
 
 // New UI type scale

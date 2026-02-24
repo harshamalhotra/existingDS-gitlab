@@ -17,7 +17,7 @@ $pd-day-selected-shadow: var(--gl-control-background-color-selected-default);
 $pd-day-disabled-color: var(--gl-text-color-disabled);
 $pd-week-color: var(--gl-text-color-subtle);
 
-@import 'pikaday/scss/pikaday';
+@import "pikaday/scss/pikaday";
 
 .gl-datepicker-actions {
   @apply gl-text-sm;
@@ -87,7 +87,7 @@ $pd-week-color: var(--gl-text-color-subtle);
         This is necessary because the parent element (which already has a border-radius)
         requires the ::before element to extend beyond its edges to ensure proper coverage. */
         @apply gl-rounded-lg;
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -132,21 +132,21 @@ $pd-week-color: var(--gl-text-color-subtle);
 
   .pika-next {
     &::before {
-      mask-image: url('#{$gl-icon-chevron-right}');
+      mask-image: url("#{$gl-icon-chevron-right}");
     }
 
     @media (forced-colors: active) {
-      background-image: url('#{$gl-icon-chevron-right}');
+      background-image: url("#{$gl-icon-chevron-right}");
     }
   }
 
   .pika-prev {
     &::before {
-      mask-image: url('#{$gl-icon-chevron-left}');
+      mask-image: url("#{$gl-icon-chevron-left}");
     }
 
     @media (forced-colors: active) {
-      background-image: url('#{$gl-icon-chevron-left}');
+      background-image: url("#{$gl-icon-chevron-left}");
     }
   }
 

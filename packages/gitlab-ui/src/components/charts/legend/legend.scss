@@ -23,7 +23,7 @@ $legend-body-h: $gl-spacing-scale-13 - $gl-spacing-scale-4;
       var(--gl-background-color-default)
     );
     bottom: 0;
-    content: '';
+    content: "";
     @apply gl-block;
     @apply gl-h-4;
     position: absolute;

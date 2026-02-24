@@ -1,5 +1,5 @@
-@use 'sass:math';
-@use 'sass:meta';
+@use "sass:math";
+@use "sass:meta";
 
 /*
 * SASS preserves units in arithmetic operations. For example:
@@ -12,7 +12,7 @@
 }
 
 @function strip-unit($number) {
-  @if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+  @if meta.type-of($number) == "number" and not math.is-unitless($number) {
     @return math.div($number, extract-unit($number));
   }
 
@@ -40,9 +40,9 @@
 }
 
 @function px-to-rem($px, $font-size-base: 16px) {
-  @if meta.type-of($px) == 'number' {
+  @if meta.type-of($px) == "number" {
     @return single-unit-rem($px, $font-size-base);
-  } @else if meta.type-of($px) == 'list' {
+  } @else if meta.type-of($px) == "list" {
     @return multiple-units-rem($px, $font-size-base);
   } @else {
     @return $px;
@@ -50,7 +50,7 @@
 }
 
 @function if-important($important) {
-  @return #{if($important, '!important', '')};
+  @return #{if($important, "!important", "")};
 }
 
 @function clamp-between($min, $max, $min-width: $breakpoint-md, $max-width: $breakpoint-xl) {

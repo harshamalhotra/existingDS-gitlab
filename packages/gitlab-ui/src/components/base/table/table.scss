@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 
 table.gl-table {
   background-color: var(--gl-color-alpha-0);
@@ -38,7 +38,7 @@ table.gl-table {
       }
     }
 
-    [name='sort-icon'] {
+    [name="sort-icon"] {
       user-select: none;
       color: var(--gl-table-sorting-icon-color);
     }
@@ -68,7 +68,7 @@ table.gl-table {
   @mixin gl-tmp-stacked-override {
     tbody > tr {
       &::after {
-        content: '';
+        content: "";
         @apply gl-h-6;
         @apply gl-w-full;
         @apply gl-block;
@@ -123,7 +123,7 @@ table.gl-table {
   thead th:hover {
     background-color: transparent !important;
 
-    [name='sort-icon'] {
+    [name="sort-icon"] {
       display: flex !important;
     }
   }

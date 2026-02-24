@@ -88,7 +88,7 @@
   .dropdown-toggle-split {
     &::after {
       @apply gl-border-0;
-      content: '';
+      content: "";
       @apply gl-block;
       @apply gl-w-5;
       @apply gl-h-5;

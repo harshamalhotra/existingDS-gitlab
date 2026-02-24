@@ -23,7 +23,7 @@
     border-radius $gl-transition-duration-fast $gl-easing-out-cubic;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     border-bottom: $gl-border-size-2 solid transparent;
     translate: 0 $gl-border-size-2;

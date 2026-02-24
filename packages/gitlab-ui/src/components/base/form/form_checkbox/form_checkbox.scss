@@ -90,9 +90,9 @@
       }
     }
 
-    .custom-control-input[type='checkbox']:checked ~ .custom-control-label,
-    .custom-control-input[type='checkbox']:indeterminate ~ .custom-control-label,
-    .custom-control-input[type='radio']:checked ~ .custom-control-label {
+    .custom-control-input[type="checkbox"]:checked ~ .custom-control-label,
+    .custom-control-input[type="checkbox"]:indeterminate ~ .custom-control-label,
+    .custom-control-input[type="radio"]:checked ~ .custom-control-label {
       &::after {
         background: 50% 50% no-repeat;
         background-color: var(--gl-control-indicator-color-selected);
@@ -101,19 +101,19 @@
       }
     }
 
-    .custom-control-input[type='checkbox']:checked ~ .custom-control-label::after {
+    .custom-control-input[type="checkbox"]:checked ~ .custom-control-label::after {
       background-color: var(--gl-control-indicator-color-selected);
-      mask-image: url('#{$gl-icon-check}');
+      mask-image: url("#{$gl-icon-check}");
     }
 
-    .custom-control-input[type='checkbox']:indeterminate ~ .custom-control-label::after {
+    .custom-control-input[type="checkbox"]:indeterminate ~ .custom-control-label::after {
       background-color: var(--gl-control-indicator-color-selected);
-      mask-image: url('#{$gl-icon-indeterminate}');
+      mask-image: url("#{$gl-icon-indeterminate}");
     }
 
-    .custom-control-input[type='radio']:checked ~ .custom-control-label::after {
+    .custom-control-input[type="radio"]:checked ~ .custom-control-label::after {
       background-color: var(--gl-control-indicator-color-selected);
-      mask-image: url('#{$gl-icon-radio}');
+      mask-image: url("#{$gl-icon-radio}");
     }
 
     .custom-control-input:not(:disabled):checked ~ .custom-control-label:hover,
@@ -185,7 +185,7 @@
     }
 
     .custom-control-input:checked:disabled ~ .custom-control-label,
-    .custom-control-input[type='checkbox']:indeterminate:disabled ~ .custom-control-label {
+    .custom-control-input[type="checkbox"]:indeterminate:disabled ~ .custom-control-label {
       &::before {
         background-color: var(--gl-control-background-color-disabled);
         border-color: var(--gl-control-border-color-disabled);

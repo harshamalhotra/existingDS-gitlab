@@ -26,7 +26,7 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
     @apply gl-relative gl-isolate gl-ml-[1px];
 
     &::before {
-      content: '';
+      content: "";
       @apply gl-absolute gl-bottom-[-1px] gl-left-[-1px] gl-top-[-1px] gl-block gl-w-[1px];
       z-index: $gl-button-group-border-z-index;
     }
@@ -103,7 +103,7 @@ $gl-button-group-border-z-index: $gl-button-group-focus-z-index + 1;
     @apply gl-relative gl-mt-[1px];
 
     &::before {
-      content: '';
+      content: "";
       @apply gl-absolute gl-left-[-1px] gl-right-[-1px] gl-top-[-1px] gl-block gl-h-[1px];
       z-index: $gl-button-group-border-z-index;
     }

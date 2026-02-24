@@ -1,4 +1,4 @@
-@mixin gl-typescale-ui($selector: 'body') {
+@mixin gl-typescale-ui($selector: "body") {
   #{$selector} {
     @apply gl-text-base;
     @apply gl-text-default;

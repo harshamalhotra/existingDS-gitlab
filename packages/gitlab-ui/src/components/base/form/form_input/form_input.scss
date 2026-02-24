@@ -23,7 +23,7 @@
   }
 
   &:not(.gl-form-input-not-readonly):not(:disabled):not(.form-control-plaintext):not(
-      [type='color']
+      [type="color"]
     ):read-only {
     background: var(--gl-control-background-color-readonly);
     box-shadow: none;

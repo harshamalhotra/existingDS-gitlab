@@ -54,7 +54,7 @@ $gl-alert-top-border-size: 2px;
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: $gl-alert-top-border-size;

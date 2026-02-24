@@ -70,9 +70,9 @@ See: https://gitlab.com/gitlab-org/gitlab/issues/30055
   width: 100%;
 
   &::after {
-    content: '';
+    content: "";
     background-color: var(--gl-icon-color-default);
-    mask-image: url('#{$gl-icon-select-chevron-down}');
+    mask-image: url("#{$gl-icon-select-chevron-down}");
     mask-repeat: no-repeat;
     mask-position: center center;
     pointer-events: none;

@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 
 @mixin str-truncated($max-width: 82%) {
   display: inline-block;
@@ -10,18 +10,18 @@
 }
 
 @mixin mask-chevron-down {
-  mask-image: url('#{$gl-icon-chevron-down}');
+  mask-image: url("#{$gl-icon-chevron-down}");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
 }
 
 @mixin gl-fluid-font-size($min, $max) {
-  @include gl-responsive-property('font-size', $min, $max);
+  @include gl-responsive-property("font-size", $min, $max);
 }
 
 @mixin gl-fluid-line-height($min, $max) {
-  @include gl-responsive-property('line-height', $min, $max);
+  @include gl-responsive-property("line-height", $min, $max);
 }
 
 /**
@@ -149,7 +149,7 @@
   }
 }
 
-@mixin gl-container-width-up($name, $containerName: '', $includeMQFallback: true) {
+@mixin gl-container-width-up($name, $containerName: "", $includeMQFallback: true) {
   $min: map.get($breakpoints, $name);
   @if $min == null {
     @error "#{$name} is not a valid breakpoint for this @container query.";
@@ -184,7 +184,7 @@
   }
 }
 
-@mixin gl-container-width-down($name, $containerName: '', $includeMQFallback: true) {
+@mixin gl-container-width-down($name, $containerName: "", $includeMQFallback: true) {
   $max: map.get($breakpoints, $name);
   @if ($max == null or $max == 0) {
     @error "#{$name} is not a valid breakpoint for this @container query.";
