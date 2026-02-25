@@ -259,7 +259,12 @@ export const BToast = /*#__PURE__*/ extend({
       }
 
       const { computedToaster } = this
-      if (!Wormhole.hasTarget(computedToaster)) {
+      const hasTarget = Wormhole.hasTarget(computedToaster)
+      const hasDOM = document.getElementById(computedToaster)
+      if (!hasTarget || !hasDOM) {
+        if (hasTarget && !hasDOM) {
+          Wormhole.unregisterTarget(computedToaster)
+        }
         const div = document.createElement('div')
         document.body.appendChild(div)
 

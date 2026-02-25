@@ -14,35 +14,37 @@ const DEFAULT_OPTIONS = {
 
 let toastsCount = 0;
 
-function renderTitle(h, toast, options) {
-  const nodes = [
-    h(CloseButton, {
-      class: ['gl-toast-close-button'],
-      on: {
-        click: toast.hide,
-      },
-    }),
-  ];
-  if (options.action) {
-    const { onClick, text, href } = options.action;
-    nodes.unshift(
-      h(
-        'a',
-        {
-          attrs: {
-            role: href ? undefined : 'button',
-            href,
-          },
-          class: ['gl-toast-action'],
-          on: {
-            click: (e) => onClick(e, toast),
-          },
+function renderTitle(toast, options) {
+  return (h) => {
+    const nodes = [
+      h(CloseButton, {
+        class: ['gl-toast-close-button'],
+        on: {
+          click: toast.hide,
         },
-        text,
-      ),
-    );
-  }
-  return nodes;
+      }),
+    ];
+    if (options.action) {
+      const { onClick, text, href } = options.action;
+      nodes.unshift(
+        h(
+          'a',
+          {
+            attrs: {
+              role: href ? undefined : 'button',
+              href,
+            },
+            class: ['gl-toast-action'],
+            on: {
+              click: (e) => onClick(e, toast),
+            },
+          },
+          text,
+        ),
+      );
+    }
+    return nodes;
+  };
 }
 
 function showToast(message, options = {}) {
@@ -73,7 +75,7 @@ function showToast(message, options = {}) {
     ...DEFAULT_OPTIONS,
     ...updatedAutoHideDelay,
     id,
-    title: renderTitle(this.$createElement, toast, options),
+    title: renderTitle(toast, options),
   });
   return toast;
 }

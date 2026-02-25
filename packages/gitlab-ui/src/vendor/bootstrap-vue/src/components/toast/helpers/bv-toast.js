@@ -10,7 +10,7 @@ import { concat } from '../../../utils/array'
 import { getComponentConfig } from '../../../utils/config'
 import { requestAF } from '../../../utils/dom'
 import { getRootEventName, getRootActionEventName } from '../../../utils/events'
-import { isUndefined } from '../../../utils/inspect'
+import { isUndefined, isFunction } from '../../../utils/inspect'
 import {
   assign,
   defineProperties,
@@ -24,6 +24,7 @@ import { pluginFactory } from '../../../utils/plugins'
 import { warn, warnNotClient } from '../../../utils/warn'
 import { createNewChildComponent } from '../../../utils/create-new-child-component'
 import { getEventRoot } from '../../../utils/get-event-root'
+import { isVue3 } from '../../../vue'
 import { BToast, props as toastProps } from '../toast'
 
 // --- Constants ---
@@ -129,9 +130,24 @@ const plugin = Vue => {
     })
     // Convert certain props to slots
     keys(propsToSlots).forEach(prop => {
-      const value = props[prop]
+      let value = props[prop]
       if (!isUndefined(value)) {
-        toast.$slots[propsToSlots[prop]] = concat(value)
+        if (isVue3(toast)) {
+          // In Vue 3 compat, $slots is readonly. Set slots on the internal
+          // instance as functions so VNodes are available during the
+          // component's render cycle. When the value is a render function,
+          // defer calling it until the slot is evaluated during render so
+          // that $createElement runs within an active component context.
+          const slotFn = isFunction(value)
+            ? () => concat(value(toast.$createElement))
+            : () => concat(value)
+          toast.$.slots[propsToSlots[prop]] = slotFn
+        } else {
+          if (isFunction(value)) {
+            value = value(toast.$createElement)
+          }
+          toast.$slots[propsToSlots[prop]] = concat(value)
+        }
       }
     })
     // Create a mount point (a DIV) and mount it (which triggers the show)
