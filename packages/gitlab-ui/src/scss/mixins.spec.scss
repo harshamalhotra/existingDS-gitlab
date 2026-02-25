@@ -1,9 +1,9 @@
-@import './mixins';
-@import './variables';
-@import 'true';
+@import "./mixins";
+@import "./variables";
+@import "true";
 
-@include describe('gl-fluid-font-size') {
-  @include it('returns fluid font-size') {
+@include describe("gl-fluid-font-size") {
+  @include it("returns fluid font-size") {
     @include assert {
       @include output {
         @include gl-fluid-font-size(2rem, 3.5rem);
@@ -16,8 +16,8 @@
   }
 }
 
-@include describe('gl-fluid-line-height') {
-  @include it('returns fluid line-height') {
+@include describe("gl-fluid-line-height") {
+  @include it("returns fluid line-height") {
     @include assert {
       @include output {
         @include gl-fluid-line-height(2rem, 3.5rem);
@@ -30,8 +30,8 @@
   }
 }
 
-@include describe('gl-media-breakpoint-up') {
-  @include it('returns no media query for xs') {
+@include describe("gl-media-breakpoint-up") {
+  @include it("returns no media query for xs") {
     @include assert {
       @include output {
         @include gl-media-breakpoint-up(xs) {
@@ -43,7 +43,7 @@
       }
     }
   }
-  @include it('returns min-width media query for sm') {
+  @include it("returns min-width media query for sm") {
     @include assert {
       @include output {
         @include gl-media-breakpoint-up(sm) {
@@ -51,7 +51,7 @@
         }
       }
       @include expect {
-        @media (min-width: '576px') {
+        @media (min-width: "576px") {
           color: $gl-color-blue-100;
         }
       }
@@ -59,8 +59,8 @@
   }
 }
 
-@include describe('gl-media-breakpoint-down') {
-  @include it('returns max-width media query for lg') {
+@include describe("gl-media-breakpoint-down") {
+  @include it("returns max-width media query for lg") {
     @include assert {
       @include output {
         // stylelint-disable-next-line @gitlab/no-gl-media-breakpoint-down
@@ -69,13 +69,13 @@
         }
       }
       @include expect {
-        @media (max-width: '991.98px') {
+        @media (max-width: "991.98px") {
           color: $gl-color-red-100;
         }
       }
     }
   }
-  @include it('returns max-width media query for md') {
+  @include it("returns max-width media query for md") {
     @include assert {
       @include output {
         // stylelint-disable-next-line @gitlab/no-gl-media-breakpoint-down
@@ -84,15 +84,15 @@
         }
       }
       @include expect {
-        @media (max-width: '767.98px') {
+        @media (max-width: "767.98px") {
           color: $gl-color-orange-100;
         }
       }
     }
   }
 
-  @include describe('gl-container-width-up') {
-    @include it('returns min width container query with a media query fallback for sm') {
+  @include describe("gl-container-width-up") {
+    @include it("returns min width container query with a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-up(sm) {
@@ -114,7 +114,7 @@
       }
     }
 
-    @include it('returns min width named container query with a media query fallback for sm') {
+    @include it("returns min width named container query with a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-up(sm, myContainer) {
@@ -136,7 +136,7 @@
       }
     }
 
-    @include it('returns min width container query without a media query fallback for sm') {
+    @include it("returns min width container query without a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-up(sm, $includeMQFallback: false) {
@@ -153,7 +153,7 @@
       }
     }
 
-    @include it('returns the content as is for xs') {
+    @include it("returns the content as is for xs") {
       @include assert {
         @include output {
           @include gl-container-width-up(xs) {
@@ -167,8 +167,8 @@
     }
   }
 
-  @include describe('gl-container-width-down') {
-    @include it('returns max width container query with a media query fallback for sm') {
+  @include describe("gl-container-width-down") {
+    @include it("returns max width container query with a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-down(sm) {
@@ -190,7 +190,7 @@
       }
     }
 
-    @include it('returns max width named container query with a media query fallback for sm') {
+    @include it("returns max width named container query with a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-down(sm, myContainer) {
@@ -212,7 +212,7 @@
       }
     }
 
-    @include it('returns max width container query without a media query fallback for sm') {
+    @include it("returns max width container query without a media query fallback for sm") {
       @include assert {
         @include output {
           @include gl-container-width-down(sm, $includeMQFallback: false) {

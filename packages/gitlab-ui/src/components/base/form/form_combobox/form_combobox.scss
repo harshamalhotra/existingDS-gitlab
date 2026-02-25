@@ -34,8 +34,9 @@
 
       // Target the actual Bootstrap dropdown item element
       .dropdown-item {
-        transition: background-color $gl-transition-duration-fast $gl-easing-out-cubic,
-                    box-shadow $gl-transition-duration-medium $gl-easing-out-cubic;
+        transition:
+          background-color $gl-transition-duration-fast $gl-easing-out-cubic,
+          box-shadow $gl-transition-duration-medium $gl-easing-out-cubic;
         @apply gl-rounded-default;
         @apply gl-border-0;
         @apply gl-w-full;

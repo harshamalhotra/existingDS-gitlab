@@ -17,7 +17,7 @@
       // Fallback for Firefox
       // Fixes a bug where the view transition
       // doesn’t work properly
-      @supports (-moz-appearance:none) {
+      @supports (-moz-appearance: none) {
         view-transition-name: unset;
       }
 
@@ -33,7 +33,7 @@
     // Fallback for Firefox
     // Fixes a bug where the view transition
     // doesn’t work properly
-    @supports (-moz-appearance:none) {
+    @supports (-moz-appearance: none) {
       transition: all $gl-transition-duration-medium $gl-easing-out-cubic;
     }
   }

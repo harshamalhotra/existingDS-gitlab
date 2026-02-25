@@ -8,18 +8,22 @@ $legend-body-h: $gl-spacing-scale-13 - $gl-spacing-scale-4;
 
 .gl-chart-h-auto {
   .gl-legend-inline {
-      // match the height of gl-legend-tabular (header + body)
-      max-height: $gl-line-height-24 + $legend-body-h;
-      @apply gl-overflow-auto;
+    // match the height of gl-legend-tabular (header + body)
+    max-height: $gl-line-height-24 + $legend-body-h;
+    @apply gl-overflow-auto;
   }
 }
 
 .gl-legend-tabular.gl-legend-b-fade,
 .gl-chart-h-auto .gl-legend-inline.gl-legend-b-fade {
   &::after {
-    background-image: linear-gradient(to bottom, $transparent-rgba, var(--gl-background-color-default));
+    background-image: linear-gradient(
+      to bottom,
+      $transparent-rgba,
+      var(--gl-background-color-default)
+    );
     bottom: 0;
-    content: '';
+    content: "";
     @apply gl-block;
     @apply gl-h-4;
     position: absolute;
@@ -28,9 +32,9 @@ $legend-body-h: $gl-spacing-scale-13 - $gl-spacing-scale-4;
 }
 
 .gl-legend-inline {
-    @apply gl-flex;
-    @apply gl-flex-wrap;
-    @apply gl-shrink-0;
+  @apply gl-flex;
+  @apply gl-flex-wrap;
+  @apply gl-shrink-0;
 
   .gl-legend-inline-series {
     @apply gl-flex;

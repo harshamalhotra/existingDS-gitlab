@@ -30,7 +30,7 @@
       @apply gl-block;
       @apply gl-m-3;
       @apply gl-border-t;
-      content: '';
+      content: "";
     }
   }
 }
@@ -51,7 +51,7 @@
     background-color: var(--gl-action-neutral-background-color-active);
 
     &::before {
-      content: '';
+      content: "";
       @apply gl-bg-purple-500; /* stylelint-disable-line @gitlab/no-gl-deprecated-design-tokens */
       @apply gl-rounded-default;
       @apply gl-block;

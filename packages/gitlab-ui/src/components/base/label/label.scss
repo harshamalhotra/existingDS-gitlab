@@ -1,5 +1,5 @@
 $label-max-width: 100%;
-$label-close-button: '.gl-label-close.gl-button';
+$label-close-button: ".gl-label-close.gl-button";
 $label-padding-horizontal: 0.75 * $grid-size;
 $label-padding-horizontal-half: 0.375 * $grid-size;
 
@@ -24,7 +24,10 @@ $label-padding-horizontal-half: 0.375 * $grid-size;
   }
 
   &:has(*:first-child:focus) {
-    @include gl-focus($color: var(--label-background-color, var(--gl-background-color-default)), $important: true);
+    @include gl-focus(
+      $color: var(--label-background-color, var(--gl-background-color-default)),
+      $important: true
+    );
   }
 
   .gl-label-link {

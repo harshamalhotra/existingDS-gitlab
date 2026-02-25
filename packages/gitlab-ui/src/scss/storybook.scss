@@ -1,23 +1,22 @@
-@import 'tokens';
+@import "tokens";
 
-@import 'functions';
-@import 'variables';
+@import "functions";
+@import "variables";
 
-@import '../vendor/bootstrap/scss/functions';
-@import '../vendor/bootstrap/scss/variables';
-@import '../vendor/bootstrap/scss/mixins';
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/variables";
+@import "../vendor/bootstrap/scss/mixins";
 
-@import 'mixins';
+@import "mixins";
 
-@import 'bootstrap';
-@import 'bootstrap_vue';
+@import "bootstrap";
+@import "bootstrap_vue";
 
+@import "fonts";
 
-@import 'fonts';
-
-@import 'body';
-@import 'typography';
-@import 'components';
+@import "body";
+@import "typography";
+@import "components";
 
 /**
  * Custom padding for docs pages. This improves the integration in Pajamas pages.
@@ -36,4 +35,4 @@
 // Note that adding `.css` here would break the inline import.
 // These utilities are imported last, because that's
 // what we do in GitLab as well.
-@import 'tailwind';
+@import "tailwind";

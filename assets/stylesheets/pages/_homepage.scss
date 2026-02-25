@@ -4,7 +4,7 @@
 
 :root:not(.gl-dark) {
   .homepage-hero {
-    background-image: url('~@/assets/images/cover-gradient.png');
+    background-image: url("~@/assets/images/cover-gradient.png");
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -16,7 +16,12 @@
   }
 
   .homepage-hero-heading {
-    background: linear-gradient(123deg, var(--gl-color-brand-orange-01p), var(--gl-color-brand-purple-01p) 45.5%, var(--gl-color-brand-purple-02p));
+    background: linear-gradient(
+      123deg,
+      var(--gl-color-brand-orange-01p),
+      var(--gl-color-brand-purple-01p) 45.5%,
+      var(--gl-color-brand-purple-02p)
+    );
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }

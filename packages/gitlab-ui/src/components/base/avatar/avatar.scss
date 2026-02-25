@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use 'sass:list';
+@use "sass:map";
+@use "sass:list";
 
 // Available background colors for the identicon fallback for avatars
 //
@@ -8,18 +8,17 @@
 // changed, resulting in changing the color of all identicons, because
 // we do a modulo division with the total number of colors on the
 // object's id to always give it the same "random" color.
-$gl-avatar-identicon-bgs: var(--gl-avatar-fallback-background-color-red),
+$gl-avatar-identicon-bgs:
+  var(--gl-avatar-fallback-background-color-red), var(--gl-avatar-fallback-background-color-purple),
   var(--gl-avatar-fallback-background-color-purple),
-  var(--gl-avatar-fallback-background-color-purple), var(--gl-avatar-fallback-background-color-blue),
-  var(--gl-avatar-fallback-background-color-green),
+  var(--gl-avatar-fallback-background-color-blue), var(--gl-avatar-fallback-background-color-green),
   var(--gl-avatar-fallback-background-color-orange),
   var(--gl-avatar-fallback-background-color-neutral);
 
-$gl-avatar-identicon-texts: var(--gl-avatar-fallback-text-color-red),
-  var(--gl-avatar-fallback-text-color-purple),
+$gl-avatar-identicon-texts:
+  var(--gl-avatar-fallback-text-color-red), var(--gl-avatar-fallback-text-color-purple),
   var(--gl-avatar-fallback-text-color-purple), var(--gl-avatar-fallback-text-color-blue),
-  var(--gl-avatar-fallback-text-color-green),
-  var(--gl-avatar-fallback-text-color-orange),
+  var(--gl-avatar-fallback-text-color-green), var(--gl-avatar-fallback-text-color-orange),
   var(--gl-avatar-fallback-text-color-neutral);
 
 @mixin gl-avatar {

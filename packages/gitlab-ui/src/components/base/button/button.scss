@@ -13,7 +13,7 @@
   $focus-border-color: null,
   $active-color: null,
   $active-background-color: null,
-  $active-border-color: null,
+  $active-border-color: null
 ) {
   color: $color;
   background-color: $background-color;
@@ -21,8 +21,9 @@
 
   &::before {
     background-color: $border-color;
-    transition: background-color $gl-transition-duration-medium $gl-easing-out-cubic,
-                border-color $gl-transition-duration-medium $gl-easing-out-cubic;
+    transition:
+      background-color $gl-transition-duration-medium $gl-easing-out-cubic,
+      border-color $gl-transition-duration-medium $gl-easing-out-cubic;
   }
 
   &:hover {
@@ -78,7 +79,8 @@
   border: $gl-border-size-1 solid var(--gl-button-default-primary-border-color-default);
   min-height: $gl-button-medium-size;
   min-width: $gl-button-medium-size;
-  transition: color $gl-transition-duration-medium $gl-easing-out-cubic,
+  transition:
+    color $gl-transition-duration-medium $gl-easing-out-cubic,
     background-color $gl-transition-duration-medium $gl-easing-out-cubic,
     border-color $gl-transition-duration-medium $gl-easing-out-cubic,
     box-shadow $gl-transition-duration-medium $gl-easing-out-cubic,
@@ -148,7 +150,7 @@
       $focus-border-color: var(--gl-button-default-primary-border-color-focus),
       $active-color: var(--gl-button-default-primary-foreground-color-active),
       $active-background-color: var(--gl-button-default-primary-background-color-active),
-      $active-border-color: var(--gl-button-default-primary-border-color-active),
+      $active-border-color: var(--gl-button-default-primary-border-color-active)
     );
 
     &.selected {
@@ -228,7 +230,7 @@
       $focus-border-color: var(--gl-button-default-tertiary-border-color-focus),
       $active-color: var(--gl-button-default-tertiary-foreground-color-active),
       $active-background-color: var(--gl-button-default-tertiary-background-color-active),
-      $active-border-color: var(--gl-button-default-tertiary-border-color-active),
+      $active-border-color: var(--gl-button-default-tertiary-border-color-active)
     );
   }
 
@@ -245,7 +247,7 @@
       $focus-border-color: var(--gl-button-confirm-primary-border-color-focus),
       $active-color: var(--gl-button-confirm-primary-foreground-color-active),
       $active-background-color: var(--gl-button-confirm-primary-background-color-active),
-      $active-border-color: var(--gl-button-confirm-primary-border-color-active),
+      $active-border-color: var(--gl-button-confirm-primary-border-color-active)
     );
   }
 
@@ -262,7 +264,7 @@
       $focus-border-color: var(--gl-button-confirm-secondary-border-color-focus),
       $active-color: var(--gl-button-confirm-secondary-foreground-color-active),
       $active-background-color: var(--gl-button-confirm-secondary-background-color-active),
-      $active-border-color: var(--gl-button-confirm-secondary-border-color-active),
+      $active-border-color: var(--gl-button-confirm-secondary-border-color-active)
     );
   }
 
@@ -279,7 +281,7 @@
       $focus-border-color: var(--gl-button-confirm-tertiary-border-color-focus),
       $active-color: var(--gl-button-confirm-tertiary-foreground-color-active),
       $active-background-color: var(--gl-button-confirm-tertiary-background-color-active),
-      $active-border-color: var(--gl-button-confirm-tertiary-border-color-active),
+      $active-border-color: var(--gl-button-confirm-tertiary-border-color-active)
     );
   }
 
@@ -296,7 +298,7 @@
       $focus-border-color: var(--gl-button-danger-primary-border-color-focus),
       $active-color: var(--gl-button-danger-primary-foreground-color-active),
       $active-background-color: var(--gl-button-danger-primary-background-color-active),
-      $active-border-color: var(--gl-button-danger-primary-border-color-active),
+      $active-border-color: var(--gl-button-danger-primary-border-color-active)
     );
   }
 
@@ -313,7 +315,7 @@
       $focus-border-color: var(--gl-button-danger-secondary-border-color-focus),
       $active-color: var(--gl-button-danger-secondary-foreground-color-active),
       $active-background-color: var(--gl-button-danger-secondary-background-color-active),
-      $active-border-color: var(--gl-button-danger-secondary-border-color-active),
+      $active-border-color: var(--gl-button-danger-secondary-border-color-active)
     );
   }
 
@@ -330,7 +332,7 @@
       $focus-border-color: var(--gl-button-danger-tertiary-border-color-focus),
       $active-color: var(--gl-button-danger-tertiary-foreground-color-active),
       $active-background-color: var(--gl-button-danger-tertiary-background-color-active),
-      $active-border-color: var(--gl-button-danger-tertiary-border-color-active),
+      $active-border-color: var(--gl-button-danger-tertiary-border-color-active)
     );
   }
 
@@ -470,8 +472,8 @@
     }
   }
 
-  &.disabled[class*='-tertiary'],
-  &[disabled][class*='-tertiary'] {
+  &.disabled[class*="-tertiary"],
+  &[disabled][class*="-tertiary"] {
     @apply gl-bg-transparent;
     @apply gl-shadow-none;
   }
