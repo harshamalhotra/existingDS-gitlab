@@ -549,10 +549,11 @@ function resolveFigmaValue(token) {
   const type = token.original?.$type;
   const value = token.original?.$value;
 
-  // Convert font family arrays to comma-separated strings
   // Figma expects font families as a single string rather than an array
+  // Select first font family name value, ignore first value CSS custom
+  // property in font stack
   if (type === 'fontFamily') {
-    return value.join(', ');
+    return value[1].replace(/'/g, '');
   }
 
   // Ensure numeric values are proper JavaScript numbers
