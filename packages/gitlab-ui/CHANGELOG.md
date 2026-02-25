@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.13.3
+
+### Patch Changes
+
+- 1ad2491: GlToast: Fixed toast rendering in Vue 3 compat mode by deferring VNode creation to the render cycle, setting slots on the internal Vue 3 instance, and recovering from stale toaster DOM state.
+
 ## 128.13.2
 
 ### Patch Changes
