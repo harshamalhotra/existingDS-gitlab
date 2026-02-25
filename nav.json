@@ -819,6 +819,10 @@
                 "path": "keyboard-only"
               },
               {
+                "title": "Focus management",
+                "path": "focus-management"
+              },
+              {
                 "title": "Screen readers",
                 "path": "screen-readers"
               }
