@@ -22,7 +22,7 @@ const Template = (args, { argTypes }) => ({
   template: `
       <gl-card :header-class="headerClass" :body-class="bodyClass" :footer-class="footerClass">
         <template v-if="headerContent" #header>
-          <h3 class="gl-heading-scale-500 gl-mb-0">{{ headerContent }}</h3>
+          <h3 class="gl-heading-scale-300 gl-mb-0">{{ headerContent }}</h3>
         </template>
         <template #default>
           {{ bodyContent }}

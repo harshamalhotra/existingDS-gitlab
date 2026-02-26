@@ -2,7 +2,7 @@
   "card": {
     "border": {
       "radius": {
-        "$value": "{border.radius.lg}",
+        "$value": "{border.radius.xl}",
         "$type": "dimension",
         "$description": "Used for card border radius.",
         "$extensions": {
