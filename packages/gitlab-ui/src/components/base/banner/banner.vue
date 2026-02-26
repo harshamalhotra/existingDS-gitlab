@@ -115,7 +115,7 @@ export default {
     :class="{
       'gl-banner-introduction': isIntroducing,
     }"
-    body-class="gl-flex !gl-p-0"
+    body-class="gl-flex gl-bg-transparent !gl-p-0"
   >
     <div v-if="svgPath || illustrationName" class="gl-banner-illustration">
       <gl-illustration v-if="illustrationName" :name="illustrationName" />

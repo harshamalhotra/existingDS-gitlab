@@ -21063,7 +21063,7 @@
     "border": {
       "radius": {
         "key": "{card.border.radius}",
-        "$value": "0.5rem",
+        "$value": "0.75rem",
         "$type": "dimension",
         "$description": "Used for card border radius.",
         "$extensions": {
@@ -21074,7 +21074,7 @@
         "filePath": "src/tokens/contextual/card.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{border.radius.lg}",
+          "$value": "{border.radius.xl}",
           "$type": "dimension",
           "$description": "Used for card border radius.",
           "$extensions": {
