@@ -3,6 +3,12 @@ import {
   generateBaseColors,
   generateColorMap,
   getTokenCssCustomProperty,
+  findDesignTokenByPath,
+  isContextualDesignToken,
+  createDesignTokenKey,
+  processDesignTokenAlias,
+  transformDesignTokenAlias,
+  getFigmaFormattedTokens,
 } from './build_tokens_formats';
 
 jest.mock('style-dictionary/utils', () => ({
@@ -63,6 +69,16 @@ const tokens = {
       },
       path: ['color', 'prefixAlias'],
     },
+  },
+};
+
+const mockAllTokens = {
+  color: {
+    semantic: { $value: '#000', filePath: '/semantic/color.json' },
+    contextual: { $value: '#fff', filePath: '/contextual/color.json' },
+  },
+  button: {
+    bg: { $value: '{color-primary}', filePath: '/contextual/button.json' },
   },
 };
 
@@ -304,6 +320,183 @@ describe('Build tokens formats', () => {
       expect(getTokenCssCustomProperty(tokens.color.prefixConstant)).toBe(
         'var(--gl-color-prefixConstant)',
       );
+    });
+  });
+
+  describe('findDesignTokenByPath', () => {
+    it('finds token by path array', () => {
+      const result = findDesignTokenByPath(mockAllTokens, ['color', 'semantic']);
+      expect(result).toEqual({ $value: '#000', filePath: '/semantic/color.json' });
+    });
+
+    it('returns null for invalid path', () => {
+      const result = findDesignTokenByPath(mockAllTokens, ['invalid', 'path']);
+      expect(result).toBeNull();
+    });
+
+    it('returns null for non-token object', () => {
+      const result = findDesignTokenByPath(mockAllTokens, ['color']);
+      expect(result).toBeNull();
+    });
+  });
+
+  describe('isContextualDesignToken', () => {
+    it('returns true for contextual tokens', () => {
+      const token = { filePath: '/contextual/colors.json' };
+      expect(isContextualDesignToken(token)).toBe(true);
+    });
+
+    it('returns false for regular tokens', () => {
+      const token = { filePath: '/tokens/colors.json' };
+      expect(isContextualDesignToken(token)).toBe(false);
+    });
+
+    it('returns false for tokens without filePath', () => {
+      expect(isContextualDesignToken({})).toBe(false);
+      expect(isContextualDesignToken(null)).toBe(false);
+    });
+  });
+
+  describe('createDesignTokenKey', () => {
+    it('creates regular token key', () => {
+      const result = createDesignTokenKey(['color', 'blue', '500'], false);
+      expect(result).toBe('color-blue-500');
+    });
+
+    it('creates contextual token key with prefix', () => {
+      const result = createDesignTokenKey(['button', 'primary'], true);
+      expect(result).toBe('🔒/button-primary');
+    });
+  });
+
+  describe('processDesignTokenAlias', () => {
+    it('returns alias unchanged if already has path separator', () => {
+      const result = processDesignTokenAlias(
+        '{color.primary}',
+        '{🔒/color-primary}',
+        mockAllTokens,
+      );
+      expect(result).toBe('{🔒/color-primary}');
+    });
+
+    it('adds contextual prefix when target is contextual', () => {
+      const result = processDesignTokenAlias(
+        '{color.contextual}',
+        '{color-contextual}',
+        mockAllTokens,
+      );
+      expect(result).toBe('{🔒/color-contextual}');
+    });
+
+    it('keeps alias unchanged when target is regular', () => {
+      const result = processDesignTokenAlias('{color.primary}', '{color-primary}', mockAllTokens);
+      expect(result).toBe('{color-primary}');
+    });
+  });
+
+  describe('transformDesignTokenAlias', () => {
+    it('processes contextual alias when token is contextual', () => {
+      const result = transformDesignTokenAlias('{color.primary}', true, mockAllTokens);
+      expect(result).toBe('{color-primary}');
+    });
+
+    it('returns flattened alias for non-contextual tokens', () => {
+      const result = transformDesignTokenAlias('{color.primary}', false, mockAllTokens);
+      expect(result).toBe('{color-primary}');
+    });
+
+    it('returns flattened alias when no allTokens provided', () => {
+      const result = transformDesignTokenAlias('{color.primary}', true, null);
+      expect(result).toBe('{color-primary}');
+    });
+  });
+
+  describe('getFigmaFormattedTokens', () => {
+    const nestedTokens = {
+      color: {
+        primary: {
+          $value: '#0066cc',
+          filePath: '/semantic/color.json',
+          original: { $value: '#0066cc', $type: 'color', $description: 'Primary color' },
+        },
+      },
+      button: {
+        background: {
+          $value: '#0066cc',
+          filePath: '/contextual/button.json',
+          original: { $value: '{color.primary}', $type: 'color', $description: 'Button bg' },
+        },
+        border: {
+          $value: '#333',
+          filePath: '/contextual/button.json',
+          original: { $value: '#333', $type: 'color', $description: 'Button border' },
+        },
+      },
+      badge: {
+        background: {
+          $value: '#0066cc',
+          filePath: '/contextual/badge.json',
+          original: {
+            $value: '{button.background}',
+            $type: 'color',
+            $description: 'Badge bg',
+          },
+        },
+      },
+      text: {
+        size: {
+          $value: '1rem',
+          filePath: '/semantic/text.json',
+          original: {
+            $value: { value: '1', unit: 'rem' },
+            $type: 'dimension',
+            $description: 'Text size',
+          },
+        },
+      },
+    };
+
+    it('flattens non-contextual tokens with plain keys', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['color-primary']).toBeDefined();
+      expect(result['color-primary'].$value).toBe('#0066cc');
+      expect(result['color-primary'].$type).toBe('color');
+    });
+
+    it('prefixes contextual tokens', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['🔒/button-background']).toBeDefined();
+      expect(result['🔒/button-border']).toBeDefined();
+      expect(result['🔒/badge-background']).toBeDefined();
+    });
+
+    it('does not prefix alias value when contextual token references a semantic token', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['🔒/button-background'].$value).toBe('{color-primary}');
+    });
+
+    it('prefixes alias value when contextual token references another contextual token', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['🔒/badge-background'].$value).toBe('{🔒/button-background}');
+    });
+
+    it('converts rem dimensions to px', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['text-size'].$value).toEqual({ value: 16, unit: 'px' });
+    });
+
+    it('preserves $description and $type on all tokens', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['color-primary'].$description).toBe('Primary color');
+      expect(result['🔒/button-border'].$description).toBe('Button border');
+      expect(result['🔒/button-border'].$type).toBe('color');
+    });
+
+    it('does not include unprefixed keys for contextual tokens', () => {
+      const result = getFigmaFormattedTokens(nestedTokens);
+      expect(result['button-background']).toBeUndefined();
+      expect(result['button-border']).toBeUndefined();
+      expect(result['badge-background']).toBeUndefined();
     });
   });
 });

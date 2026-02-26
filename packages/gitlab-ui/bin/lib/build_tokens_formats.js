@@ -1,5 +1,7 @@
 const { fileHeader } = require('style-dictionary/utils');
 
+const CONTEXTUAL_PREFIX = '🔒/';
+const CONTEXTUAL_DIRECTORY = '/contextual/';
 const STATUS_VARIANTS = ['neutral', 'info', 'success', 'warning', 'danger', 'brand'];
 const FEEDBACK_VARIANTS = ['strong', 'neutral', 'info', 'success', 'warning', 'danger', 'brand'];
 const BRAND_VARIANTS = [
@@ -537,15 +539,88 @@ function flattenAliasValue(value) {
 }
 
 /**
+ * Find a token in the nested tokens structure by its path
+ * @param {Object} tokens - The tokens object
+ * @param {Array} path - The path array (e.g., ['button', 'default', 'primary'])
+ * @returns {Object|null} The token object or null if not found
+ */
+function findDesignTokenByPath(tokens, path) {
+  let current = tokens;
+  for (const segment of path) {
+    if (current && typeof current === 'object' && segment in current) {
+      current = current[segment];
+    } else {
+      return null;
+    }
+  }
+  return current && typeof current === 'object' && '$value' in current ? current : null;
+}
+
+/**
+ * Checks if design token is in `/contextual` directory
+ * @param {Object} token - The design token object containing filePath
+ * @param {Object} token.filePath - The file path of design token definition JSON file
+ * @returns {boolean} True if design token is in `/contextual` directory, else false
+ */
+function isContextualDesignToken(token) {
+  return Boolean(token?.filePath?.includes(CONTEXTUAL_DIRECTORY));
+}
+
+/**
+ * Creates a flattened token key with contextual prefix for Figma tokens
+ * @param {string[]} path - Token path segments (e.g., ['color', 'blue', '500'])
+ * @param {boolean} isContextual - Whether token is from /contextual/ directory
+ * @returns {string} Flattened key, prefixed if contextual
+ */
+function createDesignTokenKey(path, isContextual) {
+  const flatKey = path.join('-');
+  return isContextual ? `${CONTEXTUAL_PREFIX}${flatKey}` : flatKey;
+}
+
+/**
+ * Processes alias references for contextual tokens adding prefix when needed
+ * @param {string} value - alias value (e.g., "{color.primary}")
+ * @param {string} flattenedAlias - Flattened alias value (e.g., "{color-primary}")
+ * @param {Object} allTokens - Complete tokens object to resolve alias targets
+ * @returns {string} Processed alias with contextual prefix if target is contextual
+ */
+function processDesignTokenAlias(value, flattenedAlias, allTokens) {
+  if (flattenedAlias.includes('/')) return flattenedAlias;
+
+  const aliasToken = findDesignTokenByPath(allTokens, value.slice(1, -1).split('.'));
+
+  return isContextualDesignToken(aliasToken)
+    ? `{${CONTEXTUAL_PREFIX}${flattenedAlias.slice(1, -1)}}`
+    : flattenedAlias;
+}
+
+/**
+ * Transforms alias values with proper contextual handling
+ * @param {string} value - The alias value to transform (e.g., "{color.primary}")
+ * @param {boolean} isContextual - Whether the current token is contextual
+ * @param {Object|null} allTokens - Complete tokens object for alias resolution
+ * @returns {string} Flattened alias, with contextual prefix if needed
+ */
+function transformDesignTokenAlias(value, isContextual, allTokens) {
+  const flattenedAlias = flattenAliasValue(value);
+
+  return isContextual && allTokens
+    ? processDesignTokenAlias(value, flattenedAlias, allTokens)
+    : flattenedAlias;
+}
+
+/**
  * Transforms design token values into Figma-compatible formats
  *
  * @param {Object} token - The design token object containing original value and type
  * @param {Object} token.original - The original token definition
  * @param {string} token.original.$type - The token type (fontFamily, number, dimension, etc.)
  * @param {*} token.original.$value - The token value to be transformed
+ * @param {boolean} isContextual - Whether this token is from the contextual folder
+ * @param {Object} allTokens - The complete tokens object to check if alias targets are contextual
  * @returns {*} The transformed value ready for Figma consumption
  */
-function resolveFigmaValue(token) {
+function resolveFigmaValue(token, isContextual = false, allTokens = null) {
   const type = token.original?.$type;
   const value = token.original?.$value;
 
@@ -573,9 +648,10 @@ function resolveFigmaValue(token) {
 
   // Transform alias references to use flattened naming convention
   // Converts dot-notation aliases (e.g., {color.red.500}) to hyphen-notation ({color-red-500})
-  // to match the flattened token key structure used in Figma
+  // to match the flattened token key structure used in Figma.
+  // If the token is contextual and the alias target is also contextual, add the contextual/ prefix
   if (isAliasValue(value)) {
-    return flattenAliasValue(value);
+    return transformDesignTokenAlias(value, isContextual, allTokens);
   }
 
   // Return the original value unchanged for all other cases
@@ -583,29 +659,35 @@ function resolveFigmaValue(token) {
 }
 
 /**
- * Recursively flattens a nested design tokens structure into a flat object with grouping
+ * Recursively flattens a nested design tokens structure into a flat object
  *
  * Traverses a nested token object and creates a flattened structure where
- * each token's path becomes a hyphen-separated key. Organizes tokens into groups:
- * - Regular tokens at root level
- * - Deprecated tokens in group
- * - Contextual tokens in group
+ * each token's path becomes a hyphen-separated key. Contextual tokens are
+ * prefixed to distinguish them from regular tokens.
  *
  * @param {Object} tokens - The nested tokens object to flatten
- * @param {Object} result - The accumulator object for flattened tokens
- * @param {Array} path - The current path array for building token keys
- * @returns {Object} A flat object with grouped tokens
+ * @param {Object} [result={}] - The accumulator object for flattened tokens
+ * @param {string[]} [path=[]] - The current path array for building token keys
+ * @param {Object|null} [allTokens=null] - Reference to root tokens for alias resolution
+ * @returns {Object} A flat object with contextual tokens properly prefixed
  */
-function getFigmaFormattedTokens(tokens, result = {}, path = []) {
+function getFigmaFormattedTokens(tokens, { result = {}, path = [], allTokens = null } = {}) {
+  // On first call, allTokens is null, so we set it to the root tokens object
+  if (allTokens === null) {
+    allTokens = tokens;
+  }
+
   Object.entries(tokens).forEach(([key, token]) => {
     const currentPath = [...path, key];
 
     if (token && typeof token === 'object' && !token.$value) {
-      getFigmaFormattedTokens(token, result, currentPath);
+      getFigmaFormattedTokens(token, { result, path: currentPath, allTokens });
     } else {
-      const flatKey = currentPath.join('-');
+      // Check if token is from contextual folder and add prefix
+      const isContextual = isContextualDesignToken(token);
+      const flatKey = createDesignTokenKey(currentPath, isContextual);
       const tokenData = {
-        $value: resolveFigmaValue(token),
+        $value: resolveFigmaValue(token, isContextual, allTokens),
         $type: token.original?.$type,
         $description: token.original?.$description,
         $extensions: token.original?.$extensions,
@@ -645,5 +727,11 @@ module.exports = {
   tailwindComponentsFormat,
   tailwindDocsFormat,
   tailwindFormat,
+  findDesignTokenByPath,
+  isContextualDesignToken,
+  createDesignTokenKey,
+  processDesignTokenAlias,
+  transformDesignTokenAlias,
+  getFigmaFormattedTokens,
   figmaFormat,
 };
