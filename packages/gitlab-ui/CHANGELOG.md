@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.14.0
+
+### Minor Changes
+
+- 910610c: Updates the card component’s design language to a more modern, minimal approach.
+
 ## 128.13.3
 
 ### Patch Changes
