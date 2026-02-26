@@ -35697,7 +35697,7 @@
     "placeholder": {
       "color": {
         "key": "{control.placeholder.color}",
-        "$value": "#89888d",
+        "$value": "#737278",
         "$type": "color",
         "$description": "Used for placeholder text within inputs.",
         "$extensions": {
@@ -35708,7 +35708,7 @@
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{text.color.disabled}",
+          "$value": "{color.neutral.500}",
           "$type": "color",
           "$description": "Used for placeholder text within inputs.",
           "$extensions": {

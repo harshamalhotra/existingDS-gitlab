@@ -5969,7 +5969,7 @@
     }
   },
   "control-placeholder-color": {
-    "$value": "{text-color-disabled}",
+    "$value": "{color-neutral-500}",
     "$type": "color",
     "$description": "Used for placeholder text within inputs.",
     "$extensions": {
