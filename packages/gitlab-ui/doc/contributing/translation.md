@@ -18,6 +18,8 @@ Here's how a translatable component might look like:
 
 ```html
 <script>
+import { translate, translatePlural } from '../../../utils/i18n';
+
 export default {
   name: 'GlBar',
   props: {
@@ -54,6 +56,8 @@ A composite component that leverages the above primitive component might then lo
 
 ```html
 <script>
+import { translate } from '../../../utils/i18n';
+
 export default {
   name: 'GlFoo',
   components: { GlBar },
