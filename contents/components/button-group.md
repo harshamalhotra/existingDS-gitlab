@@ -93,9 +93,9 @@ Button groups are an easy way to group a series of buttons together.
 
 ```html
 <gl-button-group>
-  <gl-button>Download</b-button>
-  <gl-button>Browse</b-button>
-  <gl-button variant="danger">Delete</b-button>
+  <gl-button>Download</gl-button>
+  <gl-button>Browse</gl-button>
+  <gl-button variant="danger">Delete</gl-button>
 </gl-button-group>
 ```
 
@@ -128,9 +128,9 @@ Split button dropdowns are not supported here.
 
 ```html
 <gl-button-group vertical>
-  <gl-button>Top</b-button>
-  <gl-button>Middle</b-button>
-  <gl-button>Bottom</b-button>
+  <gl-button>Top</gl-button>
+  <gl-button>Middle</gl-button>
+  <gl-button>Bottom</gl-button>
 </gl-button-group>
 ```
 
