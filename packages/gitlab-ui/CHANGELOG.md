@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.14.1
+
+### Patch Changes
+
+- 83848f1: GlPagination: Clean up window resize listener on component destroy.
+
 ## 128.14.0
 
 ### Minor Changes
