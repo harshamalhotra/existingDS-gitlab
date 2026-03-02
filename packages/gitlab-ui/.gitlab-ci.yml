@@ -245,7 +245,7 @@ ui:visual_vue3:
   extends: [.ui:visual, .ui:use_vue3]
 
 .ui:integration_tests:
-  image: cypress/browsers:node-24.11.1-chrome-143.0.7499.40-1-ff-145.0.2-edge-142.0.3595.94-1
+  image: cypress/browsers:node-24.14.0-chrome-145.0.7632.116-1-ff-148.0-edge-145.0.3800.70-1
   extends: [.ui:node, .ui:yarn_install]
   variables:
     # Allow these jobs to install cypress binaries
