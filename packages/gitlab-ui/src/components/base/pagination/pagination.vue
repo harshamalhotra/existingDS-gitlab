@@ -275,10 +275,11 @@ export default {
     },
   },
   created() {
-    window.addEventListener('resize', debounce(this.setBreakpoint, resizeDebounceTime));
+    this.resizeDebounced = debounce(this.setBreakpoint, resizeDebounceTime);
+    window.addEventListener('resize', this.resizeDebounced);
   },
   beforeDestroy() {
-    window.removeEventListener('resize', debounce(this.setBreakpoint, resizeDebounceTime));
+    window.removeEventListener('resize', this.resizeDebounced);
   },
   methods: {
     labelForPage(page) {
