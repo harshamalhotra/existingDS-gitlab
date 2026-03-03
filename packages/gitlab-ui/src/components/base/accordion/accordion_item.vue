@@ -70,7 +70,7 @@ export default {
   },
   computed: {
     headerComponent() {
-      const level = this.headerLevel || this.defaultHeaderLevel();
+      const level = this.headerLevel || this.defaultHeaderLevel;
       return `h${level}`;
     },
     buttonTitle() {
@@ -114,7 +114,7 @@ export default {
       this.checkAndCollapseSiblingAccordionItems(newLocalVisible);
     },
     checkAndCollapseSiblingAccordionItems(newVisible) {
-      if (this.autoCollapse() && newVisible) {
+      if (this.autoCollapse && newVisible) {
         this.$parent.$el.dispatchEvent(
           new CustomEvent(COLLAPSE_EVENT, { detail: this.accordionItemId }),
         );
