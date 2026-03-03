@@ -5,7 +5,7 @@
     "$description": "Used when a border needs to be present, but not visibly perceived.",
     "$extensions": {
       "com.figma.scopes": [
-        "ALL_SCOPES"
+        "STROKE_COLOR"
       ]
     }
   },
