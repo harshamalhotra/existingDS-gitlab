@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.14.3
+
+### Patch Changes
+
+- 499393b: Remove reactivity from GlAccordion provide properties
+
 ## 128.14.2
 
 ### Patch Changes
