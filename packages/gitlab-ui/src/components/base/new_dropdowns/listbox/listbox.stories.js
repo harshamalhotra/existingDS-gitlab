@@ -712,7 +712,7 @@ export const SearchableMulti = (args, { argTypes }) => ({
   },
   data() {
     return {
-      selected: [mockOptions[0].value, mockOptions[1].value],
+      selected: [mockOptions[0].value, mockOptions[1].value, mockOptions[3].value],
       filteredItems: mockOptions,
       searchInProgress: false,
       timeoutId: null,

@@ -444,6 +444,70 @@ describe('GlCollapsibleListbox', () => {
         });
       });
     });
+
+    describe('with disabled items', () => {
+      const itemsWithDisabled = [
+        { value: 'a', text: 'Item A' },
+        { value: 'b', text: 'Item B', disabled: true },
+        { value: 'c', text: 'Item C', disabled: true },
+        { value: 'd', text: 'Item D' },
+        { value: 'e', text: 'Item E' },
+      ];
+
+      beforeEach(() => {
+        buildWrapper({ items: itemsWithDisabled });
+        findBaseDropdown().vm.$emit(GL_DROPDOWN_SHOWN);
+      });
+
+      it('skips disabled items when navigating down with ARROW_DOWN', async () => {
+        const itemA = findListItem(0);
+        const itemD = findListItem(3);
+
+        expect(itemA.element).toHaveFocus();
+        await itemA.trigger('keydown', { code: ARROW_DOWN });
+        expect(itemD.element).toHaveFocus();
+      });
+
+      it('skips disabled items when navigating up with ARROW_UP', async () => {
+        const itemA = findListItem(0);
+        const itemE = findListItem(4);
+
+        expect(itemA.element).toHaveFocus();
+        await itemA.trigger('keydown', { code: ARROW_UP });
+        expect(itemE.element).toHaveFocus();
+      });
+
+      it('moves focus to last enabled item on END', async () => {
+        const itemA = findListItem(0);
+        const itemE = findListItem(4);
+
+        expect(itemA.element).toHaveFocus();
+        await itemA.trigger('keydown', { code: END });
+        expect(itemE.element).toHaveFocus();
+      });
+
+      it('moves focus to first enabled item on HOME', async () => {
+        const itemA = findListItem(0);
+        const itemD = findListItem(3);
+
+        await itemA.trigger('keydown', { code: ARROW_DOWN });
+        expect(itemD.element).toHaveFocus();
+        await itemD.trigger('keydown', { code: HOME });
+        expect(itemA.element).toHaveFocus();
+      });
+
+      it('does not emit select event when clicking a disabled item', async () => {
+        const disabledItem = findListItem(1);
+        await disabledItem.trigger('click');
+
+        expect(wrapper.emitted('select')).toBeUndefined();
+      });
+
+      it('applies disabled class to disabled items', () => {
+        const disabledItem = findListItem(1);
+        expect(disabledItem.classes()).toContain('disabled');
+      });
+    });
   });
 
   describe('when the header prop is provided', () => {

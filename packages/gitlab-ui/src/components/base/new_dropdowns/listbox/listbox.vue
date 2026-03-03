@@ -603,10 +603,10 @@ export default {
 
           /**
            * Every time the list of items changes, and there is a search string,
-           * we want to visually highlight the first item
+           * we want to visually highlight the first enabled item
            */
           if (this.searchHasOptions) {
-            this.nextFocusedItemIndex = 0;
+            this.nextFocusedItemIndex = this.getFirstEnabledIndex();
           } else {
             this.nextFocusedItemIndex = null;
           }
@@ -677,16 +677,22 @@ export default {
         this.focusSearchInput();
 
         /**
-         * If the search string is not empty, highlight the first item
+         * If the search string is not empty, highlight the first enabled item
          */
         if (this.searchHasOptions) {
-          this.nextFocusedItemIndex = 0;
-          // Set activeItemId for the first item
-          const firstItem = this.flattenedOptions[0];
+          const firstEnabledIndex = this.getFirstEnabledIndex();
+          this.nextFocusedItemIndex = firstEnabledIndex;
+          // Set activeItemId for the first enabled item
+          const firstItem = this.flattenedOptions[firstEnabledIndex];
           this.activeItemId = this.generateItemId(firstItem);
         }
       } else {
-        this.focusItem(this.selectedIndices[0] ?? 0, this.getFocusableListItemElements());
+        const selectedIndex = this.selectedIndices[0];
+        const initialIndex =
+          selectedIndex !== undefined && !this.flattenedOptions[selectedIndex]?.disabled
+            ? selectedIndex
+            : this.getFirstEnabledIndex();
+        this.focusItem(initialIndex, this.getFocusableListItemElements());
       }
       /**
        * Emitted when dropdown is shown
@@ -707,13 +713,26 @@ export default {
       this.$emit('blur', event);
     },
     getNextIndex(currentIndex, keyCode, totalLength) {
-      // For UP: move up or wrap to end
-      if (keyCode === ARROW_UP) {
-        return currentIndex > 0 ? currentIndex - 1 : totalLength - 1;
+      const direction = keyCode === ARROW_UP ? -1 : 1;
+      let nextIndex = currentIndex;
+
+      for (let i = 0; i < totalLength; i += 1) {
+        nextIndex += direction;
+        if (nextIndex < 0) nextIndex = totalLength - 1;
+        if (nextIndex >= totalLength) nextIndex = 0;
+
+        if (!this.flattenedOptions[nextIndex]?.disabled) {
+          return nextIndex;
+        }
       }
 
-      // For DOWN: move down or wrap to start
-      return currentIndex < totalLength - 1 ? currentIndex + 1 : 0;
+      return currentIndex;
+    },
+    getFirstEnabledIndex() {
+      return this.flattenedOptions.findIndex((item) => !item.disabled);
+    },
+    getLastEnabledIndex() {
+      return this.flattenedOptions.findLastIndex((item) => !item.disabled);
     },
     handleListNavigation(keyCode, elements) {
       const currentIndex = this.nextFocusedItemIndex ?? -1;
@@ -731,16 +750,16 @@ export default {
 
       switch (code) {
         case HOME:
-          // Jump to first item if searchable or not in search input
+          // Jump to first enabled item if searchable or not in search input
           if (this.searchable || !isSearchInput) {
-            this.focusItem(0, elements, this.searchable);
+            this.focusItem(this.getFirstEnabledIndex(), elements, this.searchable);
           }
           break;
 
         case END:
-          // Jump to last item if searchable or not in search input
+          // Jump to last enabled item if searchable or not in search input
           if (this.searchable || !isSearchInput) {
-            this.focusItem(elements.length - 1, elements, this.searchable);
+            this.focusItem(this.getLastEnabledIndex(), elements, this.searchable);
           }
           break;
 
@@ -753,9 +772,9 @@ export default {
           break;
 
         case ARROW_DOWN:
-          // Focus first item from search input, otherwise navigate down
+          // Focus first enabled item from search input, otherwise navigate down
           if (isSearchInput && !this.searchable) {
-            this.focusItem(0, elements);
+            this.focusItem(this.getFirstEnabledIndex(), elements);
           } else {
             this.handleListNavigation(ARROW_DOWN, elements);
           }
@@ -763,10 +782,12 @@ export default {
 
         case ENTER:
           if (isSearchInput) {
-            // Toggle selection of highlighted item if one exists
+            // Toggle selection of highlighted item if one exists and is not disabled
             if (elements.length > 0 && this.nextFocusedItemIndex !== null) {
               const highlightedItem = this.flattenedOptions[this.nextFocusedItemIndex];
-              this.onSelect(highlightedItem, !this.isSelected(highlightedItem));
+              if (!highlightedItem?.disabled) {
+                this.onSelect(highlightedItem, !this.isSelected(highlightedItem));
+              }
             }
           } else {
             stop = false;
@@ -833,6 +854,9 @@ export default {
     },
     isFocused(item) {
       return this.nextFocusedItemIndex === this.flattenedOptions.indexOf(item);
+    },
+    isDisabled(item) {
+      return item.disabled;
     },
     onSingleSelect(value, isSelected) {
       if (isSelected) {
@@ -1109,6 +1133,7 @@ export default {
               :is-selected="isSelected(item)"
               :is-focused="isFocused(item)"
               :is-check-centered="isCheckCentered"
+              :is-disabled="isDisabled(item)"
               v-bind="listboxItemMoreItemsAriaAttributes(index)"
               @select="onSelect(item, $event)"
             >
@@ -1140,6 +1165,7 @@ export default {
                 :is-selected="isSelected(option)"
                 :is-focused="isFocused(option)"
                 :is-check-centered="isCheckCentered"
+                :is-disabled="isDisabled(option)"
                 @select="onSelect(option, $event)"
               >
                 <!-- @slot Custom template of the listbox item -->

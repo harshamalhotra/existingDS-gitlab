@@ -14,14 +14,17 @@ export const mockOptions = [
   {
     value: 'leg',
     text: 'Legal',
+    disabled: true,
   },
   {
     value: 'eng',
     text: 'Engineering',
+    disabled: true,
   },
   {
     value: 'sales',
     text: 'Sales',
+    disabled: false,
   },
   {
     value: 'marketing',
@@ -30,6 +33,7 @@ export const mockOptions = [
   {
     value: 'acc',
     text: 'Accounting',
+    disabled: true,
   },
   {
     value: 'hr',
@@ -50,6 +54,7 @@ export const mockOptions = [
   {
     value: null,
     text: 'None',
+    disabled: true,
   },
 ];
 
@@ -133,6 +138,12 @@ export const mockUsers = [
     text: 'Olena Horal-Koretska',
     secondaryText: '@ohoral',
     icon: 'bar',
+  },
+  {
+    value: 'jdoe',
+    text: 'Jane Doe',
+    secondaryText: '@jdoe',
+    disabled: true,
   },
   {
     value: 'markian',

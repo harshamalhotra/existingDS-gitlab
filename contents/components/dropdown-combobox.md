@@ -377,6 +377,7 @@ objects:
 type Option = {
   value: string | number | null
   text?: string
+  disabled?: boolean
 }
 
 type Group = {
@@ -394,7 +395,12 @@ The `value` property of options must be unique across all options
 provided to the listbox, as it's used as a primary key.
 
 The optional `text` property is used to render the default listbox item
-template. If you want to render a custom template for items, use the
+template.
+
+Setting `disabled` to `true` prevents the option from being
+selected and skips it during keyboard navigation.
+
+If you want to render a custom template for items, use the
 `list-item` scoped slot:
 
 ```html

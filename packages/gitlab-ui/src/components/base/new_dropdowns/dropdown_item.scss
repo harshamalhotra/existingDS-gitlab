@@ -16,22 +16,22 @@
     @apply gl-mb-0;
   }
 
-  &:hover {
+  &:not(.disabled):hover {
     .gl-new-dropdown-item-content {
       color: var(--gl-dropdown-option-text-color-hover);
       background-color: var(--gl-dropdown-option-background-color-unselected-hover);
     }
   }
 
-  &:focus {
+  &:not(.disabled):focus {
     .gl-new-dropdown-item-content {
       color: var(--gl-dropdown-option-text-color-focus);
       background-color: var(--gl-dropdown-option-background-color-unselected-focus);
     }
   }
 
-  &:active,
-  &:focus:active {
+  &:not(.disabled):active,
+  &:not(.disabled):focus:active {
     .gl-new-dropdown-item-content {
       color: var(--gl-dropdown-option-text-color-active);
       background-color: var(--gl-dropdown-option-background-color-unselected-active);
@@ -43,7 +43,13 @@
       background-color: var(--gl-dropdown-option-background-color-selected-default);
     }
 
-    &:hover {
+    &.disabled {
+      .gl-new-dropdown-item-content {
+        background-color: var(--gl-background-color-disabled);
+      }
+    }
+
+    &:not(.disabled):hover {
       .gl-new-dropdown-item-content {
         background-color: var(--gl-dropdown-option-background-color-selected-hover);
       }
@@ -53,7 +59,7 @@
       }
     }
 
-    &:focus {
+    &:not(.disabled):focus {
       .gl-new-dropdown-item-content {
         background-color: var(--gl-dropdown-option-background-color-selected-focus);
       }
@@ -63,8 +69,8 @@
       }
     }
 
-    &:active,
-    &:focus:active {
+    &:not(.disabled):active,
+    &:not(.disabled):focus:active {
       .gl-new-dropdown-item-content {
         background-color: var(--gl-dropdown-option-background-color-selected-active);
       }
@@ -79,9 +85,9 @@
     outline: none;
   }
 
-  &:active,
-  &:focus,
-  &:focus:active {
+  &:not(.disabled):active,
+  &:not(.disabled):focus,
+  &:not(.disabled):focus:active {
     .gl-new-dropdown-item-content {
       @include gl-focus($inset: true);
     }
@@ -98,6 +104,20 @@
     color: var(--gl-dropdown-option-text-color-focus);
     background-color: var(--gl-dropdown-option-background-color-unselected-focus);
     @include gl-focus($inset: true);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    user-select: none;
+
+    .gl-new-dropdown-item-content {
+      color: var(--gl-text-color-disabled);
+      pointer-events: none;
+
+      .gl-new-dropdown-item-check-icon {
+        color: var(--gl-icon-color-disabled);
+      }
+    }
   }
 
   .gl-new-dropdown-item-content {
