@@ -129,4 +129,33 @@ describe('GlListboxItem', () => {
       expect(wrapper.text()).toContain(content);
     });
   });
+
+  describe('when disabled', () => {
+    beforeEach(() => {
+      buildWrapper({ isDisabled: true });
+    });
+
+    it('adds the disabled class', () => {
+      expect(findItem().classes()).toContain('disabled');
+    });
+
+    it('sets aria-disabled to true', () => {
+      expect(findItem().attributes('aria-disabled')).toBe('true');
+    });
+
+    it('does not emit select event on click', async () => {
+      await findItem().trigger('click');
+      expect(wrapper.emitted('select')).toBeUndefined();
+    });
+
+    it('does not emit select event on ENTER keydown', async () => {
+      await findItem().trigger('keydown', { code: ENTER });
+      expect(wrapper.emitted('select')).toBeUndefined();
+    });
+
+    it('does not emit select event on SPACE keydown', async () => {
+      await findItem().trigger('keydown', { code: SPACE });
+      expect(wrapper.emitted('select')).toBeUndefined();
+    });
+  });
 });

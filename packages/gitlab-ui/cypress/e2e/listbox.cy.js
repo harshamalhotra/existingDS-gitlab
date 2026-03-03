@@ -28,7 +28,8 @@ describe('GlCollapsibleListbox', () => {
       });
     });
 
-    const dropdownItemAtIndex = (i) => getDropdownItem(['Product', 'People', 'Finance', 'None'][i]);
+    const dropdownItemAtIndex = (i) =>
+      getDropdownItem(['Product', 'People', 'Finance', 'Support'][i]);
 
     it('clicking on the toggle shows the menu and hides on the next click', () => {
       dropdownMenu().should('not.be.visible');
@@ -40,7 +41,7 @@ describe('GlCollapsibleListbox', () => {
       toggleBtn().should('be.focused');
     });
 
-    it('navigates through the options on arrow up, arrow down, Home and End', () => {
+    it('navigates through enabled options, skipping disabled ones', () => {
       toggleBtn().click();
       dropdownMenu().should('be.visible');
       toggleBtn().should('not.be.focused');
@@ -171,15 +172,15 @@ describe('GlCollapsibleListbox', () => {
     });
 
     it('should toggle the first filtered option when Enter is pressed', () => {
-      toggleBtn().should('contain', 'Selected 2 departments');
-      searchInput().clear().type('pro');
-      getDropdownItem('Product').should('be.visible');
-      searchInput().type('{enter}');
-      toggleBtn().should('contain', 'People');
+      toggleBtn().should('contain', 'Selected 3 departments');
       searchInput().clear().type('pro');
       getDropdownItem('Product').should('be.visible');
       searchInput().type('{enter}');
       toggleBtn().should('contain', 'Selected 2 departments');
+      searchInput().clear().type('pro');
+      getDropdownItem('Product').should('be.visible');
+      searchInput().type('{enter}');
+      toggleBtn().should('contain', 'Selected 3 departments');
     });
   });
 

@@ -29,6 +29,11 @@ export default {
       default: false,
       required: false,
     },
+    isDisabled: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
   },
   computed: {
     checkedClasses() {
@@ -40,7 +45,13 @@ export default {
     },
   },
   methods: {
+    onMousedown(event) {
+      if (this.isDisabled) {
+        stopEvent(event);
+      }
+    },
     toggleSelection() {
+      if (this.isDisabled) return;
       this.$emit('select', !this.isSelected);
     },
     onKeydown(event) {
@@ -57,10 +68,18 @@ export default {
 
 <template>
   <li
-    :class="['gl-new-dropdown-item', { 'gl-new-dropdown-item-highlighted': isHighlighted }]"
+    :class="[
+      'gl-new-dropdown-item',
+      {
+        'gl-new-dropdown-item-highlighted': isHighlighted,
+        disabled: isDisabled,
+      },
+    ]"
     role="option"
     :tabindex="isFocused ? 0 : -1"
     :aria-selected="isSelected"
+    :aria-disabled="isDisabled"
+    @mousedown="onMousedown"
     @click="toggleSelection"
     @keydown="onKeydown"
   >
