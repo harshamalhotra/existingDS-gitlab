@@ -24,6 +24,7 @@ export default {
   'GlKeysetPagination.navigationLabel': 'Pagination',
   'GlKeysetPagination.nextText': 'Next',
   'GlKeysetPagination.prevText': 'Previous',
+  'GlLabel.removeButtonAriaLabel': 'Remove label - %{label}',
   'GlModal.closeButtonTitle': 'Close',
   'GlMultiStepFormTemplate.stepX': 'Step %{currentStep}',
   'GlMultiStepFormTemplate.stepXofY': 'Step %{currentStep} of %{stepsTotal}',
