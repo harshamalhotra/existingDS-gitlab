@@ -18,13 +18,9 @@ related:
 
 ```html
 <!-- live-example -->
-<gl-button category="primary" variant="default">primary default</gl-button>
-<gl-button category="primary" variant="confirm">primary confirm</gl-button>
-<gl-button category="primary" variant="danger">primary danger</gl-button>
-
-<gl-button category="secondary" variant="default" class="gl-mt-3">secondary default</gl-button>
-<gl-button category="secondary" variant="confirm" class="gl-mt-3">secondary confirm</gl-button>
-<gl-button category="secondary" variant="danger" class="gl-mt-3">secondary danger</gl-button>
+<gl-button variant="default">primary default</gl-button>
+<gl-button variant="confirm">primary confirm</gl-button>
+<gl-button variant="danger">primary danger</gl-button>
 
 <gl-button category="tertiary" variant="default" class="gl-mt-3">tertiary default</gl-button>
 <gl-button category="tertiary" variant="confirm" class="gl-mt-3">tertiary confirm</gl-button>
@@ -71,7 +67,6 @@ related:
 ```html
 <!-- live-example -->
 <gl-button
-  category="primary"
   variant="danger"
   icon="star-o"
   aria-label="Star icon button"
@@ -146,15 +141,14 @@ Choose a category based on the overall hierarchy on a given page, as well as the
 
 Note that contexts may be temporary, such as a modal.
 
-Too many secondary actions in a single view can flip the intended hierarchy. For example, a list of items where each has a secondary danger button can be overwhelming and distracting, especially when that action is repetitive and understood. In cases like these it may be better to use the tertiary category or the default variant in order to preserve the intended hierarchy.
-
-- **Primary**: Provide the strongest visual emphasis to an action with a solid background — one per context.
-- **Secondary**: Indicate a supplemental action with a border that matches the variant and a background that is close to, or the same as the page background color — one or more per context.
-- **Tertiary**: Incorporate a borderless action into the flow that has a background during interaction for affordance — one or more per context.
+- **Primary**: Provide the strongest visual emphasis to an action with a solid background.
+- **Tertiary**: Incorporate a borderless action into the flow that has a background during interaction for affordance.
 
 ### Variants
 
 Use the visual style (variant) in combination with an icon or label to identify the type of action performed and its importance compared to other actions in the same context.
+
+Too many danger actions in a single view can flip the intended hierarchy. For example, a list of items where each has a danger button can be overwhelming and distracting, especially when that action is repetitive and understood. In cases like these it may be better to use the default variant in order to preserve the intended hierarchy.
 
 - **Default**: Use for an action that doesn’t warrant prominence, typically when a primary variant is already used in the same context.
 - **Confirm**: Indicate a positive or negative non-destructive action that is confirmation of what the user desires to take place.
@@ -280,7 +274,7 @@ Multiple alignments can be combined within a single screen, but not within an in
   <figure-img alt="Two buttons with the affirmative one on the left" label="Affirmative action on left edge for left alignment" src="/img/buttons-order-left.png" width="332"></figure-img>
   <figure-img alt="Two buttons with the affirmative one on the right" label="Affirmative action on right edge for right alignment" src="/img/buttons-order-right.png" width="332"></figure-img>
   </grid>
-- The visual hierarchy is primary buttons on the outer edge, followed by secondary buttons, and so on.
+- The visual hierarchy is primary buttons on the outer edge, followed by tertiary buttons. When there is more than one primary or tertiary button, confirm or danger variants are on the outer edge of their category.
 - One exception to the visual hierarchy is a [more actions](/components/dropdown-disclosure#more-actions-dropdown) dropdown. When using a more actions dropdown, place it on the outer edge.
   <grid>
   <figure-img alt="Button hierarchy from left to right for left alignment" label="Hierarchy from left to right for left alignment" src="/img/buttons-hierarchy-left.png" width="332"></figure-img>
@@ -329,6 +323,7 @@ With three or more actions, show them in a [disclosure dropdown](/components/dro
 
 These variants have been deprecated, don‘t use in production:
 
+- **Secondary**: Previously used as an intermediate emphasis. Use the **primary** category or the **default** button variant where less emphasis is needed.
 - **Info**: Activation or informative processes, replaced by **confirm** variant.
 - **Success**: Positive actions such as the creation or addition of items, replaced by **confirm** variant.
 - **Warning**: Actions that can be undone or rectified but warrant caution, replaced by **confirm** or **default** variant depending on context.
@@ -376,7 +371,7 @@ Specify `small` or `medium` via the `size` prop. Defaults to `medium`.
 
 ### Categories
 
-Use the `category` prop to set the button category to `primary`, `secondary`, or `tertiary`.
+Use the `category` prop to set the button category to `primary` or `tertiary`.
 Defaults to `primary`.
 
 ### Variants
