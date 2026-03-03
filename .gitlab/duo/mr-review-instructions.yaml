@@ -42,6 +42,22 @@ instructions:
       1. Verify all links are formatted correctly.
       1. Ensure component mentions are cross-linked to their respective component pages. That is, a mention of an alert should link to the alert component page. For example: "If you need to communicate system status, consider using an [alert](/components/alert) instead."
 
+  - name: Changeset Reminder for gitlab-ui Package Changes
+    fileFilters:
+      - 'packages/gitlab-ui/src/**/*.vue'
+      - 'packages/gitlab-ui/src/**/*.scss'
+      - 'packages/gitlab-ui/src/**/*.css'
+      - 'packages/gitlab-ui/src/**/*.js'
+      - 'packages/gitlab-ui/translations.js'
+      - 'packages/gitlab-ui/tailwind.defaults.js'
+      - 'packages/gitlab-ui/tailwind_cqs_mqs_plugin.js'
+    instructions: |
+      1. These files are published as part of the `@gitlab/ui` npm package.
+      1. Check whether the merge request includes a changeset file in the `.changeset/` directory.
+      1. If no changeset is present, remind the author that a changeset is likely needed for these changes. Link to the guidelines: https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/blob/main/doc/publishing-packages.md
+      1. A changeset is NOT needed if the change is not observable in the published package (for example, code comments only, or refactoring with no behavior change).
+      1. Note: Changes to Storybook stories (`*.stories.js`), tests (`*.spec.js`, `*.spec.scss`), documentation (`packages/gitlab-ui/doc/`), and build or CI configuration are excluded from the published package and do not require a changeset.
+
   - name: Changesets
     fileFilters:
       - '.changeset/*.md'
