@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.14.2
+
+### Patch Changes
+
+- 4097025: GlLabel: Update remove button's aria-label to include the label name
+
 ## 128.14.1
 
 ### Patch Changes
