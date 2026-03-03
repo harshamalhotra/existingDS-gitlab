@@ -1,6 +1,7 @@
 <script>
 import { labelColorOptions } from '../../../utils/constants';
 import { colorFromBackground } from '../../../utils/utils';
+import { translate } from '../../../utils/i18n';
 import GlButton from '../button/button.vue';
 import GlIcon from '../icon/icon.vue';
 import GlLink from '../link/link.vue';
@@ -80,12 +81,12 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {
-      splitScopedLabelIndex: this.title.lastIndexOf('::'),
-    };
-  },
   computed: {
+    removeButtonAriaLabel() {
+      return translate('GlLabel.removeButtonAriaLabel', 'Remove label - %{label}', {
+        label: this.title,
+      });
+    },
     cssClasses() {
       const textColorVariant = colorFromBackground(this.backgroundColor);
       return {
@@ -100,6 +101,9 @@ export default {
         '--label-inset-border': `inset 0 0 0 2px ${this.backgroundColor}`,
       };
     },
+    splitScopedLabelIndex() {
+      return this.title.lastIndexOf('::');
+    },
     scopedKey() {
       return this.scoped ? this.title.slice(0, this.splitScopedLabelIndex) : this.title;
     },
@@ -111,11 +115,6 @@ export default {
     },
     tooltipTarget() {
       return this.target ? this.$refs.labelTitle.$el : this.$refs.labelTitle;
-    },
-  },
-  watch: {
-    title() {
-      this.splitScopedLabelIndex = this.title.lastIndexOf('::');
     },
   },
   methods: {
@@ -160,7 +159,7 @@ export default {
       category="tertiary"
       size="small"
       variant="reset"
-      aria-label="Remove label"
+      :aria-label="removeButtonAriaLabel"
       :disabled="disabled"
       @click="onClose"
     >

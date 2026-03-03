@@ -120,6 +120,14 @@ describe('Label component', () => {
         expect(findCloseButton().exists()).toBe(true);
       });
 
+      it('renders correct aria-label', () => {
+        const props = { ...defaultProps, showCloseButton: true };
+
+        createComponent(props);
+
+        expect(findCloseButton().attributes('aria-label')).toBe('Remove label - title');
+      });
+
       it('emits close when "x" is clicked', () => {
         const props = { ...defaultProps, showCloseButton: true };
 
