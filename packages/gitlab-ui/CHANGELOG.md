@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.15.0
+
+### Minor Changes
+
+- 95374b4: GlCollapsibleListbox: Add support for disabled listbox items.
+
 ## 128.14.3
 
 ### Patch Changes
