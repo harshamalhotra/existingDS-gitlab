@@ -10,7 +10,7 @@ description: Dates and times clarify when an event occurred. The way they are fo
 
 The absolute format clarifies the precise date and time that something occurred.
 
-We can either display a [localized time and date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) based on the user's location or use a non-localized format following the [ISO 8601 standard](https://www.iso.org/iso-8601-date-and-time-format.html).
+We can either display a [localized time and date format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat) based on the user's browser location, or use a non-localized format following the [ISO 8601 standard](https://www.iso.org/iso-8601-date-and-time-format.html).
 
 - Localized dates display the day, month, and full year by default (for example: Jan 3, 2022). The date can be shortened to the day and month when space is limited (Jan 3).
   - Use the `numeric` value of the `year` [parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters) to display the year in full (for example: 2022). The shortened version of the year may be used instead if there is limited space (22).
@@ -19,7 +19,7 @@ We can either display a [localized time and date format](https://developer.mozil
   - For `timeZoneName`, use either `short` (for example: UTC-8) or `long` (for example: Pacific Standard Time), depending on space and what is needed to make the time zone clear in context.
 - ISO 8601 format is displayed YYYY-MM-DD. Time can also be appended to the end of the date if necessary (HH:MM:SS).
 
-Dates are localized to each user's location. For dates shortened due to limited space, use a tooltip to show the full date, time, and timezone.
+Dates are localized to each user's browser location. For dates shortened due to limited space, use a tooltip to show the full date, time, and timezone.
 
 | Location | Locale | Formatted display |
 | ------ | ------ | ------ |
