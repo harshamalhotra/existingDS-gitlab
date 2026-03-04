@@ -13,7 +13,7 @@ Focus management is a core part of web accessibility. Common situations include:
 
 ## Setting focus deliberately
 
-Set focus deliberately to improve the user experience. Keyboard and mouth stick users benefit when focus is set on the next logical action instead of having to press <kbd>Tab</kbd> repeatedly. A sip and puff device user can navigate forms and links by triggering <kbd>Tab</kbd> with their breath. A screen reader user hears important cues that a change has occurred.
+Set focus deliberately to improve the user experience. Keyboard and mouth stick users benefit when focus is set on the next logical action, avoiding extra <kbd>Tab</kbd> presses. A sip and puff device user can navigate forms and links by triggering <kbd>Tab</kbd> with their breath. A screen reader user hears important cues that a change has occurred.
 
 ### What happens when focus is set?
 
@@ -41,23 +41,23 @@ The element may need a custom `:focus` style to orient users. Use the Pajamas SC
 
 ```html
 <style>
-    .gl-example { @apply gl-focus; }
+  .gl-example {
+    @apply gl-focus;
+  }
 </style>
 
-<div id="target-elem" class="gl-example" tabindex="-1">
-    Content to be announced or acted upon
-</div>
+<div id="target-elem" class="gl-example" tabindex="-1">Content to be announced or acted upon</div>
 
 <script>
-    const target = document.getElementById('target-elem');
-    // Screen readers will announce text inside target
-    target.focus();
+  const target = document.getElementById('target-elem');
+  // Screen readers will announce text inside target
+  target.focus();
 </script>
 ```
 
 ## When to use `autofocus`
 
-The HTML [autofocus attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus) can be applied to any interactive element. A browser may scroll to the element if it is not in view. Screen readers announce the element's accessible name immediately, skipping contextual clues like the page `<title>` or `<h1>` text.
+The HTML [autofocus attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus) can be applied to any interactive element. Browsers typically scroll to the element if it is not in view. Screen readers announce the element's accessible name immediately, skipping contextual clues like the page `<title>` or `<h1>` text.
 
 Autofocus can improve the user experience when immediate attention is called for:
 
