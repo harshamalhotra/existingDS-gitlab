@@ -141,6 +141,11 @@ export default {
     },
     localChecked(newValue, oldValue) {
       if (!looseEqual(newValue, oldValue)) {
+        /**
+         * Emitted when the checked value is changed.
+         *
+         * @event input
+         */
         this.$emit('input', newValue);
       }
     },
@@ -155,6 +160,7 @@ export default {
     tabindex="-1"
     class="gl-form-checkbox-group gl-outline-none"
   >
+    <!-- @slot Slot for GlFormCheckboxes that will appear before checkboxes generated from options prop -->
     <slot name="first"></slot>
     <gl-form-checkbox
       v-for="(option, idx) in formOptions"
@@ -166,6 +172,7 @@ export default {
       <span v-if="option.html" v-safe-html="option.html"></span>
       <span v-else>{{ option.text }}</span>
     </gl-form-checkbox>
+    <!-- @slot Slot for GlFormCheckboxes that will appear after checkboxes generated from options prop -->
     <slot></slot>
   </div>
 </template>

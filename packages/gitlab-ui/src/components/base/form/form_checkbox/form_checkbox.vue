@@ -208,6 +208,11 @@ export default {
     },
     computedLocalCheckedWatcher(newValue, oldValue) {
       if (!looseEqual(newValue, oldValue)) {
+        /**
+         * Emitted when checked state is changed.
+         *
+         * @event input
+         */
         this.$emit('input', newValue);
 
         const { input } = this.$refs;
@@ -237,11 +242,20 @@ export default {
 
       // Fire events in a `$nextTick()` to ensure the `v-model` is updated
       this.$nextTick(() => {
-        // Change is only emitted on user interaction
+        /**
+         * Emitted when selected value(s) is changed due to user interaction.
+         *
+         * @event change
+         */
         this.$emit('change', localChecked);
 
         // If this is a child of a group, we emit a change event on it as well
         if (this.isGroup) {
+          /**
+           * Emitted when selected value(s) is changed due to user interaction.
+           *
+           * @event change
+           */
           this.group.$emit('change', localChecked);
         }
 
@@ -285,8 +299,10 @@ export default {
       @change="handleChange"
     />
     <label :for="internalId" class="custom-control-label">
+      <!-- @slot The checkbox content to display. -->
       <slot></slot>
       <p v-if="Boolean($scopedSlots.help)" class="help-text">
+        <!-- @slot The help text to display. -->
         <slot name="help"></slot>
       </p>
     </label>
