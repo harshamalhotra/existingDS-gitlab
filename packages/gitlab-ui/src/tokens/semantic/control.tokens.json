@@ -247,7 +247,10 @@
     },
     "placeholder": {
       "color": {
-        "$value": "{text.color.disabled}",
+        "$value": {
+          "default": "{color.neutral.500}",
+          "dark": "{color.neutral.400}"
+        },
         "$type": "color",
         "$description": "Used for placeholder text within inputs.",
         "$extensions": {

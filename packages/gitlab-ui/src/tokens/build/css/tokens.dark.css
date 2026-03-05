@@ -936,6 +936,7 @@
   --gl-control-border-color-selected-default: var(--gl-color-blue-400); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border. */
   --gl-control-border-color-selected-hover: var(--gl-color-blue-200); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border on hover. */
   --gl-control-border-color-selected-focus: var(--gl-color-blue-200); /** Used for checked and indeterminate (selected) form control (checkbox, radio button) border on focus. */
+  --gl-control-placeholder-color: var(--gl-color-neutral-400); /** Used for placeholder text within inputs. */
   --gl-control-indicator-color-selected: var(--gl-color-neutral-950); /** Used for checkbox and radio button state indicators. */
   --gl-control-indicator-color-disabled: var(--gl-color-neutral-400); /** Used for disabled checkbox and radio button state indicators. */
   --gl-feedback-strong-background-color: var(--gl-color-neutral-800); /** Used for a background associated with strong feedback like a tooltip or toast message. */
@@ -1196,7 +1197,6 @@
   --gl-control-border-radius: var(--gl-border-radius-lg); /** Used for form control (input, radio button, checkbox, textarea) default border radius. */
   --gl-control-text-color-error: var(--gl-text-color-danger); /** Used for the helper text when the input is invalid. */
   --gl-control-text-color-valid: var(--gl-text-color-success); /** Used for the helper text when the input is valid. */
-  --gl-control-placeholder-color: var(--gl-text-color-disabled); /** Used for placeholder text within inputs. */
   --gl-feedback-border-radius: var(--gl-border-radius-lg); /** Used for the border radius of a feedback element. */
   --gl-focus-ring-inner-color: var(--gl-background-color-default); /** Used for the inner neutral portion of the focus ring. */
   --gl-icon-color-default: var(--gl-text-color-default); /** Used for the default icon color. Can be paired with default text. */

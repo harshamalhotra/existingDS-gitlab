@@ -32590,7 +32590,7 @@
         "filePath": "src/tokens/semantic/control.tokens.json",
         "isSource": true,
         "original": {
-          "$value": "{text.color.disabled}",
+          "$value": "{color.neutral.400}",
           "$type": "color",
           "$description": "Used for placeholder text within inputs.",
           "$extensions": {
