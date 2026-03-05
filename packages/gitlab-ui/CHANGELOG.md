@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.15.1
+
+### Patch Changes
+
+- 2690ec2: Increase placeholder contrast in light mode
+
 ## 128.15.0
 
 ### Minor Changes
