@@ -10968,10 +10968,10 @@ fast-xml-builder@^1.0.0:
   resolved "https://registry.yarnpkg.com/fast-xml-builder/-/fast-xml-builder-1.0.0.tgz#a485d7e8381f1db983cf006f849d1066e2935241"
   integrity sha512-fpZuDogrAgnyt9oDDz+5DBz0zgPdPZz6D4IR7iESxRXElrlGTRkHJ9eEt+SACRJwT0FNFrt71DFQIUFBJfX/uQ==
 
-fast-xml-parser@^5.3.7:
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-5.4.1.tgz#0c81b8ecfb3021e5ad83aa3df904af19a05bc601"
-  integrity sha512-BQ30U1mKkvXQXXkAGcuyUA/GA26oEB7NzOtsxCDtyu62sjGw5QraKFhx2Em3WQNjPw9PG6MQ9yuIIgkSDfGu5A==
+fast-xml-parser@^5.3.9:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-5.4.2.tgz#7fc66463b59260b0c5fd57edf46148a418bde68b"
+  integrity sha512-pw/6pIl4k0CSpElPEJhDppLzaixDEuWui2CUQQBH/ECDf7+y6YwA4Gf7Tyb0Rfe4DIMuZipYj4AEL0nACKglvQ==
   dependencies:
     fast-xml-builder "^1.0.0"
     strnum "^2.1.2"
@@ -15517,12 +15517,12 @@ meow@^13.0.0, meow@^13.2.0:
   resolved "https://registry.yarnpkg.com/meow/-/meow-13.2.0.tgz#6b7d63f913f984063b3cc261b6e8800c4cd3474f"
   integrity sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==
 
-merge-cobertura@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/merge-cobertura/-/merge-cobertura-1.0.6.tgz#5f58505830c2cda096927e9e6fb785731eebfbd7"
-  integrity sha512-mXTxBg1I+JTyYqbkqxeRpSyLtBZUbr4zlCphVaU5p4Dh7WUvNm+axDwMNu9YSFWMBd2W8Go25F7ilat9WVaCMA==
+merge-cobertura@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/merge-cobertura/-/merge-cobertura-1.0.7.tgz#a9c77f71b19fb504e28e2b187c1f975d0a9ff9c7"
+  integrity sha512-PGlifQJGK3XGR37bVlfuJeZxDzcp1Q81/iulZbGJfVyomgO8pt0jWvQmTQmeI4bdFpIQitlTgHelPdmi2CAgLA==
   dependencies:
-    fast-xml-parser "^5.3.7"
+    fast-xml-parser "^5.3.9"
     minimist "^1.2.8"
     source-map-support "^0.5.21"
 
