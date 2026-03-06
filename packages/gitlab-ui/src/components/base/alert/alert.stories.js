@@ -14,6 +14,7 @@ const template = `
     :primary-button-link="primaryButtonLink"
     :secondary-button-link="secondaryButtonLink"
     :sticky="sticky"
+    :header-level="headerLevel"
   >{{ message }}</gl-alert>`;
 
 const defaultValue = propDefaultFactory(GlAlert);
@@ -28,6 +29,7 @@ const generateProps = ({
   secondaryButtonText = defaultValue('secondaryButtonText'),
   secondaryButtonLink = defaultValue('secondaryButtonLink'),
   sticky = defaultValue('sticky'),
+  headerLevel = defaultValue('headerLevel'),
 } = {}) => ({
   title,
   message: 'Lorem ipsum dolor sit amet',
@@ -39,6 +41,7 @@ const generateProps = ({
   secondaryButtonText,
   secondaryButtonLink,
   sticky,
+  headerLevel,
 });
 
 const Template = (args, { argTypes }) => ({
