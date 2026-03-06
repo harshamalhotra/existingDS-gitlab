@@ -112,6 +112,13 @@ fields: [
 ]
 ```
 
+Null values should appear at the end of a sorted table in any sort direction. For example:
+
+- Ascending order: `0, 1, 2, 20, —`
+- Descending order: `20, 2, 1, 0, —`
+
+This keeps null values separate from the order and matches user expectations set by common data tools.
+
 #### Pagination
 
 - Tables displaying data sets with more than 20 items should use pagination. [See pagination guidelines](/components/pagination)
@@ -166,11 +173,48 @@ A table's empty state displays when there is no data, yet. [See empty states gui
 
 #### Null values
 
-Decide how to represent null values on a case-by-case basis. Some ways of addressing this are:
+Decide how to represent null values on a case-by-case basis, but prefer approaches that communicate _why_ data is missing rather than just _that_ it's missing. Make sure null values are significantly different from `0` values.
 
-- Keep the cell empty. For example, if no data is returned.
-- Use text to indicate what is missing. For example, "Unassigned" if there is no assignee.
-- Use a dash ("-"). For example, if there is no data and a text explanation is not applicable.
+##### Use descriptive text when possible
+
+Text labels are the most accessible and informative option. Use them when the absence of data is meaningful to the user's workflow.
+
+For example:
+
+- "Unassigned" if there is no assignee.
+- "Not applicable" if the field doesn't apply to that row.
+- "No value" if no data exists.
+
+##### Use an em dash as a fallback
+
+An em dash (—) is appropriate for dense data tables where descriptive text would create too much visual noise, especially in numeric columns.
+
+Accompany the em dash with a tooltip that explains why the data is unavailable. For example:
+
+- "Insufficient data to calculate median"
+- "Tracking not enabled for this flow"
+- "No activity in this time period"
+
+##### Use empty cells as a last resort
+
+If a cell must appear empty, pair it with visually hidden text so a screen reader can announce the state. Without this, some screen readers skip over an empty cell entirely, which can disorient a user navigating the table.
+
+##### Always provide screen reader context
+
+Some screen readers skip an empty cell or don't voice certain characters like a dash, which can disorient a user navigating the table. When using an em dash or leaving a cell visually empty, pair it with visually hidden text so the screen reader can announce the state.
+
+```html
+<!-- Em dash with screen reader context -->
+<td>
+  <span aria-hidden="true">—</span>
+  <span class="gl-sr-only">No data</span>
+</td>
+
+<!-- Visually empty cell with screen reader context -->
+<td>
+  <span class="gl-sr-only">No data</span>
+</td>
+```
 
 #### Long content
 
