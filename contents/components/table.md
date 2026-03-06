@@ -177,13 +177,13 @@ Decide how to represent null values on a case-by-case basis, but prefer approach
 
 ##### Use descriptive text when possible
 
-Text labels are the most accessible and informative option. Use them when the absence of data is meaningful to the user's workflow.
+A text label is the most accessible and informative option. Use a text label when the absence of data is meaningful to the user's workflow.
 
 For example:
 
-- "Unassigned" if there is no assignee.
-- "Not applicable" if the field doesn't apply to that row.
-- "No value" if no data exists.
+- "Unassigned" if there is no assignee for the item.
+- "Not applicable" if the field doesn't apply to that specific row.
+- "No value" if no data exists for that field.
 
 ##### Use an em dash as a fallback
 
@@ -201,7 +201,7 @@ If a cell must appear empty, pair it with visually hidden text so a screen reade
 
 ##### Always provide screen reader context
 
-Some screen readers skip an empty cell or don't voice certain characters like a dash, which can disorient a user navigating the table. When using an em dash or leaving a cell visually empty, pair it with visually hidden text so the screen reader can announce the state.
+A screen reader might skip an empty cell or not voice certain characters like a dash, which can disorient a user navigating the table. When using an em dash or leaving a cell visually empty, pair it with visually hidden text so the screen reader can announce the state.
 
 ```html
 <!-- Em dash with screen reader context -->
