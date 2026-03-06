@@ -91,6 +91,20 @@ export default {
       default: false,
     },
     /**
+     * The header level used in the alert (h1/h2/h3/h4/h5/h6).
+     *
+     * This overrides the value provided by GlAlert. For accessibility this should be set to an
+     * appropriate value in the context where the alert is used.
+     */
+    headerLevel: {
+      type: Number,
+      required: false,
+      default: 2,
+      validator(value) {
+        return [1, 2, 3, 4, 5, 6].includes(value);
+      },
+    },
+    /**
      * Set the aria-live attribute on the alert.
      *
      * Only set to 'assertive' if alert requires immediate user action.
@@ -107,6 +121,9 @@ export default {
     },
   },
   computed: {
+    headingComponent() {
+      return `h${this.headerLevel}`;
+    },
     role() {
       if (
         [
@@ -216,7 +233,7 @@ export default {
       <gl-icon :name="iconName" class="gl-alert-icon" />
     </div>
     <div class="gl-alert-content">
-      <h2 v-if="title" class="gl-alert-title">{{ title }}</h2>
+      <component :is="headingComponent" v-if="title" class="gl-alert-title">{{ title }}</component>
 
       <div class="gl-alert-body">
         <!-- @slot The alert message to display. -->

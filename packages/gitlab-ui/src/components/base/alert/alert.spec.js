@@ -65,15 +65,36 @@ describe('Alert component', () => {
     expect(findDismissButton().exists()).toBe(false);
   });
 
-  it('renders the provided title with heading level 2', () => {
+  it('renders the provided title with heading level 2 by default', () => {
     const title = 'foo';
     createComponent({ propsData: { title } });
 
     const titleWrapper = findTitle();
     expect(titleWrapper.exists()).toBe(true);
     expect(titleWrapper.text()).toContain(title);
-    // the title needs to be in a level 2 heading for accessibility reasons
     expect(titleWrapper.element.tagName).toEqual('H2');
+  });
+
+  it('renders heading level from headerLevel prop', () => {
+    const title = 'foo';
+    createComponent({ propsData: { title, headerLevel: 3 } });
+
+    const titleWrapper = findTitle();
+    expect(titleWrapper.element.tagName).toEqual('H3');
+  });
+
+  describe('headerLevel validator', () => {
+    const validateHeaderLevel = (value) => GlAlert.props.headerLevel.validator(value);
+
+    it('passes with valid heading levels', () => {
+      expect(validateHeaderLevel(1)).toBe(true);
+      expect(validateHeaderLevel(6)).toBe(true);
+    });
+
+    it('fails with invalid heading levels', () => {
+      expect(validateHeaderLevel(0)).toBe(false);
+      expect(validateHeaderLevel(7)).toBe(false);
+    });
   });
 
   describe('given primaryButtonText', () => {

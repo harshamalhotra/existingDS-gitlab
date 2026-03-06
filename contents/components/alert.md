@@ -186,6 +186,14 @@ For an urgent notification that requires immediate attention or action (such as 
 
 Consider also setting keyboard focus on critical alerts to allow users to interact with them immediately.
 
+#### Heading level
+
+The alert title renders as an `<h2>` by default. Use the `header-level` prop to set the appropriate heading level for the context where the alert is used, ensuring the page maintains a logical heading hierarchy ([WCAG 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)). For example, if the alert appears within a section that already has an `<h2>`, set `header-level` to `3`.
+
+```html
+<gl-alert title="Something went wrong" :header-level="3"> Alert within an h2 section </gl-alert>
+```
+
 #### Additional considerations
 
 - Use `aria-atomic="true"` when you want screen readers to announce the entire alert message, which is appropriate for most alerts. Use `aria-atomic="false"` (or omit the attribute, as this is the default) when only partial updates to the alert content should be announced, such as progress updates where only the changed portion needs to be read.
