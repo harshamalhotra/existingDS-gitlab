@@ -1,5 +1,11 @@
 # @gitlab/ui
 
+## 128.16.0
+
+### Minor Changes
+
+- 313b00c: GlAlert: Add headerLevel prop
+
 ## 128.15.1
 
 ### Patch Changes
