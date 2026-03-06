@@ -13,7 +13,7 @@ To publicly share a file or prototype:
 1. Open the file you want to share in Figma.
 1. Click the "Share" button in the top-right corner of the interface.
 1. In the sharing modal, select "Anyone with the link" to make it public.
-1. Copy the generated password.
+1. Copy the generated password. Note: the password cannot be retrieved after saving, so copy it now before proceeding.
 1. Set the expiration time for the link (default is 14 days, but can be shortened).
 1. Save the share settings.
 1. Copy the share link.
