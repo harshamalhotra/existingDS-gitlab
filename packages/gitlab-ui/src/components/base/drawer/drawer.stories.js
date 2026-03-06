@@ -11,7 +11,7 @@ const generateStaticContent = (number = 1) =>
     Array(number),
     (_, index) => `
       <div tabindex="0" class="gl-mb-8">
-        <h4 class="gl-mb-4">View jobs in a pipeline ${index}</h4>
+        <h3 class="gl-heading-3">View jobs in a pipeline ${index}</h3>
         <p>
           Pipeline configuration begins with jobs. Jobs are the most fundamental element of a .gitlab-ci.yml file.
         </p>
@@ -129,7 +129,7 @@ export const Default = (_args, { viewMode }) => ({
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(
         `
-        <template #title>Example title</template>
+        <template #title><h2 class="!gl-mb-0 gl-heading-scale-500">Example title</h2></template>
         ${drawerContent}
       `,
         { extraBindings: { '@opened': 'opened' } },
@@ -145,7 +145,7 @@ export const WithActions = (_args, { viewMode }) => ({
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(`
           <template #title>
-          <h3>custom-network-policy multiple lines headline</h3>
+          <h2 class="!gl-mb-0 gl-heading-scale-500">custom-network-policy multiple lines headline</h2>
         </template>
         <template #header>
             <div class="gl-mt-5">
@@ -165,7 +165,7 @@ export const WithStickyFooterShortContent = (_args, { viewMode }) => ({
     <div>
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(`
-        <template #title>List Settings</template>
+        <template #title><h2 class="!gl-mb-0 gl-heading-scale-500">List Settings</h2></template>
         ${drawerContentShortList}
         <template #footer>
           Drawer footer
@@ -182,7 +182,7 @@ export const WithStickyFooter = (_args, { viewMode }) => ({
     <div>
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(`
-        <template #title>List Settings</template>
+        <template #title><h2 class="!gl-mb-0 gl-heading-scale-500">List Settings</h2></template>
         ${drawerContent}
         <template #footer>
           Drawer footer
@@ -199,7 +199,7 @@ export const WithScrimAndStaticContent = (_args, { viewMode }) => ({
     <div>
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(`
-        <template #title>List Settings</template>
+        <template #title><h2 class="!gl-mb-0 gl-heading-scale-500">List Settings</h2></template>
         <div>
           ${generateStaticContent(3)}
         </div>
@@ -218,7 +218,7 @@ export const SidebarVariant = (_args, { viewMode }) => ({
       <gl-button @click="toggle">Toggle Drawer</gl-button>
       ${createSidebarTemplate(`
         <template #title>
-          <h3>Sidebar</h3>
+          <h2 class="!gl-mb-0 gl-heading-scale-500">Sidebar</h2>
         </template>
         <template #header>
           <div class="gl-mt-5">
@@ -239,7 +239,7 @@ export const StickyHeaderFooter = (_args, { viewMode }) => ({
   <div>
     <gl-button @click="toggle">Toggle Drawer</gl-button>
     ${createSidebarTemplate(`
-      <template #title>List Settings</template>
+      <template #title><h2 class="!gl-mb-0 gl-heading-scale-500">List Settings</h2></template>
       ${drawerContent}
       <template #footer>
          Drawer footer
